@@ -1,0 +1,763 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1863885",
+ "sanatci_id": "rosso-fiorentino",
+ "baslik": "Musa, Yitro'nun Kızlarını Savunurken",
+ "ozgun_baslik": "Moses Defends the Daughters of Jethro (Mosè difende le figlie di Jetro / Mos difende le figlie di Ietro)",
+ "kunye": {
+  "sanatci": "Giovanni Battista di Jacopo, known as Rosso Fiorentino",
+  "sanatci_yasam": "Floransa 1495 – Paris 1540 (Uffizi)",
+  "tarih": "c. 1523 (ihtilaflı)",
+  "tarih_belirsizlik": "D1 (C033): canlı Uffizi \"1523 - 1527\" ↔ 2022 arşiv \"1523 circa\" ↔ enwiki \"c. 1523–1524\" / itwiki \"1523-1524 circa\" ↔ WD 1523 (precision 9, P1480 yok); Goldschmidt–Pevsner \"probabilmente del periodo romano\". Kesinleştirilmedi.",
+  "teknik": "Tuval üzerine yağlıboya (Oil on canvas / olio su tela)",
+  "boyut_cm": {
+   "yukseklik": 160,
+   "genislik": 117
+  },
+  "muze": "Galleria degli Uffizi, Floransa",
+  "envanter": "1890 n. 2151 (1890 post); N. Cat. 00099571",
+  "edinim": "Giovanni Bandini siparişi (thought) → Francis I'e hediye → 1568–1588 Floransa'ya dönüş → Don Antonio de' Medici; Uffizi 1632 (wiki/Fossi)",
+  "konum": "D12. Pontormo - Rosso Fiorentino (canlı Uffizi; WD \"Room 27\" → C035 ihtilaflı)",
+  "telif_durumu": "Kamu malı (Rosso ö. 1540); iki Commons dosyası PD, AttributionRequired=false; WD P6216 yargı alanı \"countries with 100 years pma or shorter\" aynen"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Rosso_Fiorentino_-_Moses_defending_the_Daughters_of_Jethro_-_Web_Gallery_of_Art.jpg",
+  "kaynak": "Wikimedia Commons (Web Gallery of Art; WD P18); ikinci dosya Yorck Project",
+  "lisans": "Public domain (her iki dosya; AttributionRequired=false)",
+  "dogrulama": {
+   "yontem": "metadata only (2 dosya); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "WGA 831×1140 (163034 B); Yorck 1576×2167 (384298 B)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon/ikonografi/renk betimleri yalnız K1 (A) + K4/K5 (B) metninden; GZ TASLAK; insan editör görsel teyidi gerekli (C038). Doğrudan URL: WGA https://upload.wikimedia.org/wikipedia/commons/4/42/Rosso_Fiorentino_-_Moses_defending_the_Daughters_of_Jethro_-_Web_Gallery_of_Art.jpg ; Yorck https://upload.wikimedia.org/wikipedia/commons/e/e7/Rosso_Fiorentino_005.jpg"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 410
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1317
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2661
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-tek-ses-değildir"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-cascina-anghiari-bronzino-fontainebleau"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-biçim-ve-teknik-reflektografi-tuval-dikey-perspektifler"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tartışması-sürekli-anlatım-ve-mugnaini"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-biçim-ve-teknik-reflektografi-tuval-dikey-perspektifler"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#3-atıf-ve-orijinallik-kopya-hipotezi"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Uffizi birincil kaydı ve 2022 arşiv katalogla künyeyi (başlık, teknik, boyut, envanter, salon) doğrular.",
+  "Tarih ihtilafını (canlı 1523–1527 ↔ arşiv \"1523 circa\" ↔ wiki c. 1523–1524) kesinleştirmeden yönetir.",
+  "Atıf/orijinallik ihtilafını değerlendirir: Uffizi doğrudan atıf ↔ Natali \"copia fedelissima e coeva\" hipotezi ve reflektografi kanıtı.",
+  "Sürekli anlatımı ve ikonografi tartışmasını (Mugnaini ↔ \"most accredited interpretation\") kaynak betimleri içinde analiz eder.",
+  "Provenans zincirini (Bandini → Francis I → Don Antonio → Uffizi 1632) ve Vasari alıntısı çeviri farkını izler."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Maniyerizm (anti-klasik yön)",
+   "tanim": "16. yüzyılda dengeli Rönesans düzeni yerine üslup/yapaylığı öne çıkaran eğilim; bu eserde komplementer renkler, derinlik iptali, aşırı dinamizm.",
+   "kanit": [
+    "C022",
+    "C041"
+   ]
+  },
+  {
+   "ad": "Sürekli anlatım",
+   "tanim": "Aynı hikâyenin ardışık anlarının tek karede gösterimi; Musa önde ve arkada görünür.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Pendant",
+   "tanim": "Eş pano; burada 'Rebecca al pozzo' (Lappoli attr., Rosso'dan kopya; Pisa Palazzo Reale).",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "ad": "Reflektografi",
+   "tanim": "Alt çizimi gösteren infrared görüntüleme; 1995 incelemesi zayıf alt çizim buldu → kopya tartışması.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Scorcio",
+   "tanim": "Bedenin perspektifle kısaltılması; öndeki şiddetle scorcialı yatan figür Bronzino'ya kaynak oldu.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Resmî başlık (canlı Uffizi): \"Moses Defends the Daughters of Jethro\"; sanatçı \"Giovanni Battista di Jacopo, known as Rosso Fiorentino\"; kurum Galleria degli Uffizi, Floransa; arşiv katalog başlığı aynen \"Mos difende le figlie di Ietro\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Rosso Fiorentino: Florence 1495 – Paris 1540.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih (canlı resmî kayıt): \"1523 - 1527\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih (2022 arşiv resmî katalog): \"La datazione al 1523 circa\" (circa aynen).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: yağlıboya, tuval (\"Oil on canvas\" / \"olio su tela\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: 160 × 117 cm (Y×G); tüm kaynaklar uyumlu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter: \"1890 n. 2151\" / \"inv. 1890, 2151 (1890 post)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Genel katalog no: \"N. Cat. 00099571\" (WD P217 = 00099571).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Güncel konum: \"D12. Pontormo - Rosso Fiorentino\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenans (Uffizi, ihtiyat aynen): \"It is thought to have been commissioned by Giovanni Bandini\" (Medici karşıtı kanat) → Francis I'e hediye → \"Between 1568 and 1588, the canvas returned to Florence\" → Don Antonio de' Medici (Francesco + Bianca Cappello oğlu) koleksiyonu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Uffizi'ye giriş: 1632. Not: arşiv katalog metninde 1632 yok; atıf zinciri wiki→Fossi/katalog.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "1587'de Casino di San Marco'da, don Antonio de' Medici malları arasında; Vasari menzionesiyle ilk eşleştirme Gaetano Milanesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Vasari kaydı: Bandini için \"a painting of several beautiful nude figures, in a story of Moses when he kills the Egyptian… and I believe it was sent to France\" (K1 resmî çeviri; K5 Fossi İtalyan alıntısı uyumlu; K4 çevirisi farklı → C036). Vasari'nin kendi ihtiyatı \"credo\"/\"I believe\" aynen.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "1523 circa tarihlendirme, San Lorenzo'daki \"Sposalizio della Vergine\" ile stil/renk yakınlığına dayanır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Goldschmidt ve Pevsner daha geç, \"probabilmente del periodo romano\" / \"perhaps of the Roman period\" tarih önerdi (E8 aynen).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Natali hipotezi (arşiv katalog kritik notunda kayıtlı): dipinto \"copia fedelissima e coeva di un originale di Rosso acquistato in Francia\"; 1995 reflektografileri zayıf alt çizim, özet pasajlar (erkek bedenleri), dozzinale koyunlar, irrisolti geçişler (sol kenar çim/taş); tuval destek Fransa öncesi hiç kullanılmadı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kompozisyon, Michelangelo'nun kayıp \"Battaglia di Cascina\" kartonu ve Leonardo'nun kayıp \"Battaglia di Anghiari\"sinin etkisi altında; ikisi de Palazzo Vecchio, Salone dei Cinquecento içindi. K1 yalnız Cascina.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Konu: Exodus 2:16–22; Midyanlı rahip Yitro'nun yedi kızı kuyu başında su çeker, çobanlar taciz eder, Musa müdahale eder; ödül Zipporah ile evlilik. itwiki \"Esodo (I, 16-22)\" farklı (E10→C040); K1 \"an Israelite woman\" aynen (E12→C040).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Sürekli anlatım (K1 \"most accredited interpretation\"): önde yarı çıplak Herkülvari Musa çobanlarla boğuşur (yenik çobanlar yerde); kahraman arkada Zipporah'ya (müstakbel gelin, korkulu) koşarken yeniden görünür; kuyu arkada; diğer altı kız kardeş kente kaçar. K4/K5 ikinci görünüm \"Probably\"/\"Probabilmente\" (E6→C037).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Mugnaini (1994, Marchetti üzerinden): resim, Musa'nın Mısırlıyı öldürmesi (ES I, 11–12) ve iki Yahudi kavgasını ayırması (ES I, 13–15) dahil iki ek olayı içerir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Filone'nin \"Vita di Mosè\"si (I. yy) Floransa hümanist çevrelerinde dolaşıyordu; Marchetti: \"Rosso had to know the text, retaining its moralizing and philosophical connotation\". Kaynak çıkarımı; belge değil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Üç katmanlı tripartit düzen; komplementer renk juxtapozisyonu; derinlik/plastisite iptali; anti-klasik yön; ön plan cesurca scorcialı çıplak bedenler yumağı (sağda acı grimasi, solda rüzgârda velo — klasik alıntı); koyunlar + kuyu kenarı; sağ üstte evler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Ciardi (1994): \"enfatizzazione dei moti e dei panni e la concitata ferinità degli atti e delle espressioni\". Tam künye YOK (→C039).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Eserde Rosso'ya doğrudan bağlanamayan eller var; \"perhaps… to complete unfinished areas, or perhaps… a copy of a lost original by Rosso\" / \"forse… forse\" (E5 aynen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Pendant \"Rebecca al pozzo\": \"almost certainly a copy of Rosso attributed to Giovanni Antonio Lappoli\", Museo nazionale di Palazzo Reale, Pisa; Cavalcanti için; \"forse inviata alla corte di Enrico VIII\" (E7); Salviati eskizi Uffizi 14610F.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Öndeki şiddetle scorcialı yatan figür, Bronzino gibi Floransalı Maniyeristlere önemli ilham kaynağı oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "WD P571: +1523, precision 9 (yıl); P1480 (circa) qualifier YOK; ref P143 DBpedia (Q465).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "WD P276: \"Room 27, Pontormo and Rosso Fiorentino\" (Q113497514); ref P8335 slug \"rosso-fiorentino-moses\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6",
+    "K8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "WD diğer claim'ler: P186 oil/canvas (ref Commons 2018-07-03); P2048/2049 160/117 cm (ref Commons WGA 2018-06-29); P180 Moses Q9077 + Q132071453; P136 religious art; P170 ref P459 \"heuristic\" + Commons kategorisi (2024-12-08); P6216 PD, P1001 \"countries with 100 years pma or shorter\", P459 \"100 years or more after death\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6",
+    "K8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Her iki Commons dosyası Public domain (LicenseShortName \"Public domain\"; License \"pd\"; UsageTerms \"Public domain\"; AttributionRequired=false).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "data iddiaları çekilen kaynaklarda doğrulanmadı: \"Çoğu yorumcu onu Musa olarak görür\" niceliği yok; \"Rosso 1530'da Fransa'ya gidip Fontainebleau'da çalıştı\" — K1 Fransa/Francis I/Fontainebleau doğrular, yıl VERMEZ; K4/K5 \"around 1530\" eserin GÖNDERİLMESİ için.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K10",
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "enwiki iç tutarsızlığı: infobox \"c. 1523–1524\" iken [[Category:1524 paintings]] (E11; düzeltilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "D1 TARİH İHTİLAFI: K1 canlı \"1523 - 1527\" ↔ K2 arşiv (2022) \"1523 circa\" ↔ K4 \"c. 1523–1524\" / K5 \"1523-1524 circa\" ↔ K6 1523 (P1480 yok) ↔ data \"1523\"; Goldschmidt–Pevsner Roma dönemi. Resmî kayıt 2022→2026 farklı aralık; ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K5",
+    "K6",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D2 ATIF/ORİJİNALLİK İHTİLAFI: K4 \"(attribution)\" / K5 \"attribuito\" + K2 Natali \"copia fedelissima e coeva\" + K4/K5 \"possibly lost original\" ↔ K1 doğrudan atıf + \"believed… painted by Rosso just before he left Rome\" + arşiv belgesi; data ozeti kesin (\"yaptığı\"). ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K5",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D3 SALON İHTİLAFI: K1 \"D12. Pontormo - Rosso Fiorentino\" ↔ K6 P276 \"Room 27, Pontormo and Rosso Fiorentino\". Numaralandırma farkı; ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K6",
+    "K8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D4 VASARI ALINTISI ÇEVİRİ İHTİLAFI: K4 \"when he lived in Egypt… commissioned in France\" ↔ K5 \"quando ammazza l'Egizio… credo che in Francia fosse mandato\" ↔ K1 \"when he kills the Egyptian… sent to France\". K5+K1 uyumlu; K4 farklı. ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D5 İKONOGRAFİ İHTİLAFI: K4/K5 (Mugnaini) iki ek olay İÇERİR ↔ K1 \"most accredited interpretation\" yalnız önde Musa + arkada Zipporah'ya koşan Musa; data \"hangi figür Musa görüşler farklı\" ↔ K1 öndeki figür açıkça Musa; K4/K5 ikinci görünüm \"Probably\". ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız 2 Commons dosyası metadata (WGA 831×1140; Yorck 1576×2167; PD); betimler yalnız metin kaynaklı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Kitap metinlerine ERİŞİLMEDİ: Marchetti Letta 1994 (Scala, ISBN 88-8117-028-0), Fossi 2004 (Giunti, ISBN 88-09-03675-1), Natali 2006 (Silvana, ISBN 88-366-0631-8) — yalnız bibliyografya/ref; ISBN kayıttan aynen, doğrulanmadı; Ciardi 1994 / Mugnaini 1994 / Goldschmidt / Pevsner tam künye YOK; Yorck DVD erişilmedi; künye uydurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2",
+    "K4",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Kayıt tutarsızlıkları (düzeltilmedi): itwiki \"Esodo (I, 16-22)\" ↔ enwiki \"Exodus (2:16–22)\" (E10); K1 \"After killing an Egyptian who had mistreated an Israelite woman\" aynen (E12).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Rosso, Andrea del Sarto atölyesinde Pontormo ile yetişti; takma ad \"rosso\" (kırmızı) saç renginden; erken Floransa eserlerinde dengeli Rönesans çerçevesini kıran güçlü anti-klasik enerji, yenilikçi dramatik formal çözümler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "1524'te Roma'ya taşındı; aşırı ifade arayışı yerini sofistike, entelektüel form zarafetine bıraktı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "1527 Roma Yağması sonrası birçok İtalyan şehrini dolaştı, Fransa'ya ulaştı; Francis I sarayında Fontainebleau saray dekorasyonunu üstlendi; Galerisi uluslararası Maniyerizmin köşe taşı oldu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Uffizi: yakın zamanda yeniden keşfedilen arşiv belgesi Vasari'nin hikâyesini doğruluyor; tablo \"is believed to have been painted by Rosso just before he left Rome\" (ihtiyat aynen, E3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Uffizi biçim betimi: longitudinal kompozisyon; farklı dikey perspektiflere bölünmüş mekân mücadelenin şiddet etkisini artırır; Zipporah'nın duyusal esnekliği (zarif giysi, dar robe, bir göğüs açık) kavganın vahşetini dengeler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Uffizi: hediye, kültürlü entelektüel hami Francis I tarafından takdir edilirdi; ifade gücü + teatral jestler onun Fontainebleau Galerisi'nde hayran kalacağı özelliklerle aynı; Rosso bu eserdeki bazı çıplak pozları orada tekrarladı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Uffizi Galleries",
+   "belge": "Eser sayfası (metin: Monica Alderotti)",
+   "url": "https://www.uffizi.it/en/artworks/rosso-fiorentino-moses",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; canlı; ham HTML+metin cache",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Polo Museale Fiorentino / web.archive.org",
+   "belge": "scheda.asp nctn=00099571 arşiv kopyası",
+   "url": "https://web.archive.org/web/20220131092521/http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00099571&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200; ARŞİV TARİHİ 2022-01-31 09:25:21",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Polo Museale Fiorentino",
+   "belge": "scheda.asp nctn=00099571 (canlı katalog)",
+   "url": "http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00099571&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "522 (Cloudflare origin timeout); ERİŞİLEMEDİ; itwiki urlmorto=sì",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikipedia (en)",
+   "belge": "Moses Defends Jethro's Daughters wikitext (API action=parse)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext&formatversion=2&redirects=1&format=json&page=Moses%20Defends%20Jethro%27s%20Daughters",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikipedia (it)",
+   "belge": "Mosè difende le figlie di Jetro wikitext (API action=parse)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&prop=wikitext&formatversion=2&redirects=1&format=json&page=Mos%C3%A8%20difende%20le%20figlie%20di%20Jetro",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1863885.json",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1863885.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url, size, extmetadata), 2 dosya",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&formatversion=2&format=json&titles=File%3ARosso%20Fiorentino%20-%20Moses%20defending%20the%20Daughters%20of%20Jethro%20-%20Web%20Gallery%20of%20Art.jpg%7CFile%3ARosso%20Fiorentino%20005.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; yalnız metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (QID çözümleme)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&props=labels&languages=en%7Cit%7Ctr&format=json&ids=Q312617%7CQ296955%7CQ12321255%7CQ861259%7CQ51252%7CQ113497514%7CQ9077%7CQ132071453%7CQ2864737%7CQ19652%7CQ60332278%7CQ29940705%7CQ1981968%7CQ465%7CQ11920%7CQ565%7CQ174728%7CQ3305213",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikidata",
+   "belge": "P8335 \"Uffizi artwork ID\" property entity (P1630 formatter)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/P8335.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "Yerel repo (salt-okunur)",
+   "belge": "data/basyapitlar.json, sanatcilar.json, eserler_onbellek.json, eser_ayrintilari.json, eser_notlari.json, eser_konulari.json, eser_adlari_tr.json, ikonografi.json; DURUM.md",
+   "url": "(yerel)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "okundu; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Rebecca al pozzo (Rebecca at the Well)",
+   "sanatci": "Giovanni Antonio Lappoli (attr., Rosso'dan kopya)",
+   "kurum": "Museo nazionale di Palazzo Reale, Pisa",
+   "mufredat_ici": false,
+   "gerekce": "Pendant; iki kuyu sahnesi (Musa/Rebecca) tematik çift; kopya/orijinal ilişkisi.",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "eser": "Sposalizio della Vergine (Marriage of the Virgin)",
+   "sanatci": "Rosso Fiorentino",
+   "kurum": "Basilica di San Lorenzo, Floransa",
+   "mufredat_ici": false,
+   "gerekce": "1523 circa tarihlendirmenin stil/renk çıpası.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "eser": "Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık)",
+   "sanatci": "Agnolo Bronzino",
+   "kurum": "National Gallery, Londra",
+   "mufredat_ici": true,
+   "gerekce": "Öndeki şiddetle scorcialı yatan figürün Floransalı Maniyeristlere (Bronzino) etkisi.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Ham cache'ler (K1 Uffizi canlı, K2 arşiv 2022, K4/K5 en/it wikitext, K6 WD, K7 Commons metadata) yeniden okunup iddialarla karşılaştırıldı (aynı asistan turu; bağımsız haricî denetim DEĞİL). Künye/konu/provenance/kariyer doğrulandı; 5 ihtilaf D olarak açık; görsel İNCELENEMEDİ (C038), kitap metinleri erişilmedi (C039). Haricî model/insan editör denetimi BEKLİYOR.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar \"tarih\":\"1523\" (düz) ↔ D1 (C033): canlı \"1523 - 1527\", arşiv \"1523 circa\", wiki \"c. 1523–1524\"; özet \"1523 dolaylarında\" kısmen karşılıyor.",
+  "Atıf: data ozeti \"yaptığı\" (kesin) ↔ D2 (C034): wiki \"attribuito\"/\"attribution\", Natali \"copia fedelissima e coeva\" hipotezi.",
+  "1530 göç yılı: data \"Rosso 1530'da Fransa'ya gitti\" — K1 Fransa/Francis I/Fontainebleau doğrular, yıl VERMEZ; wiki \"around 1530\" eserin gönderilmesi (C031).",
+  "Bitmemiş/kopya: data \"bitmemiş\" iddiası wiki \"perhaps… unfinished… or perhaps… copy\" (C024) ile kısmen uyumlu; kopya hipotezi (C016) data'da yok.",
+  "Musa figürü: data \"Çoğu yorumcu… görüşler farklı\" ↔ K1 \"most accredited\" öndeki figür açıkça Musa (D5, C037); \"Çoğu yorumcu\" niceliği kaynaklarda yok (C031).",
+  "Görsel detaylar: data \"siyah kumaş, pembe pelerin, mavi elbiseli kadın, sarışın adam\" metin kaynaklarında yok; görsel incelenmedi (C038); insan editör teyidi gerekli.",
+  "Önbellek: data/eserler_onbellek \"yil\":1523 (düz); gorseller[0] WGA, \"l\":\"\" (lisans BOŞ; Commons PD C030); Yorck 1576×2167 daha yüksek çözünürlük; \"kaynaklar\":[\"wikidata\"] birincil yok.",
+  "Yazım: data/eser_notlari \"Yetro\" ↔ basyapitlar/eser_adlari_tr \"Yitro\"; kaynak biçimleri arşiv \"Ietro\", itwiki \"Jetro\", enwiki \"Jethro\" — özgün korundu.",
+  "Doğum yılı: data/sanatcilar \"dogum\":1494 ↔ K1 \"Florence, 1495\" (C002); ders birincili esas alır; data DEĞİŞTİRİLMEZ.",
+  "Uyumlu: data/eser_konulari dini/moses ↔ K6 P180 Moses + P136 religious art; DURUM.md satır 40 \"Araştırılmadı\" salt-okunur görüldü."
+ ]
+}

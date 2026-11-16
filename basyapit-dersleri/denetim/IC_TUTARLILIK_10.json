@@ -1,0 +1,62 @@
+[
+ {
+  "eser_id": "Q727875",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Resim 1538'de Titian'ın bottega'sından çıkmadan satılmıştır.",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "resim bottega'da kaldı; Guidobaldo başkasına satılmasın diye ödeme garantisi verdi; aylar sonra Urbino'ya gitti [C008].",
+  "aciklama": "DY03 ifadesi anahtar tarafından 'yanlış' işaretlenmiş; derslere göre satış (ödeme garantisi) resim bottega'dadayken gerçekleşmiş, resim ancak aylar sonra Urbino'ya gitmiş — 'bottega'dan çıkmadan satıldı' ifadesi ders anlatımıyla uyumlu olduğundan doğru cevap yanlış sayılıyor; 'çıkmadan' ifadesi iki türlü okunabildiğinden tek doğru cevap da savunulamaz.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q727875",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Yataktaki köpeği ve arka plandaki cassone hizmetçilerini bulun.",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "Yakın arka planda bir köpek vardır (genelde sadakat simgesi); daha uzakta iki hizmetçi bir cassone sandığında eşya karıştırır [C005].",
+  "aciklama": "GZ02 köpeği yatakta (orta derse göre yatak ön plandadır) aratır; başlangıç dersi aynı köpeği 'yakın arka planda' betimler — köpeğin yeri soru ile ders betimi arasında çelişiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q764831",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "\"B\": \"Seger Tierens 1743 satışı daha erken bir provenans halkasıdır; 1809 alıcısı Gevers'tir (S7).\",",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "varis A. L. Gevers'ten \"één ton gouds\" karşılığı, 137 resim → müze satın alma 1809 [C033][C034].",
+  "aciklama": "CS07'nin B şıkkı yanlış-gerekçesi '1809 alıcısı Gevers'tir' der; derslere göre 1809'da satın almayı yapan müzedir, Gevers satıcı/varistir (alıcı-satıcı rolleri ters yazılmış).",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q764831",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Yani eser 1743'te Lahey'de Seger Tierens satışında görünür, 1809'da Kabinet van Heteren'e girer [C032][C033].",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "Müze eseri 1809'da Kabinet van Heteren koleksiyonundan satın aldı; provenans zinciri 1743 Seger Tierens satışına kadar izlenir [C034][C032].",
+  "aciklama": "İleri ders eserin 1809'da Kabinet van Heteren'e (koleksiyona) GİRDİĞİNİ yazar; Başlangıç dersine (ve diğer tüm anlatımlara) göre 1809'da müze eseri bu koleksiyondan (Gevers'ten) satın aldı — 1809 olayının yönü ters anlatılmış.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q956541",
+  "tur": "E",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Arka planda koşan bir haberci, ele geçirilmiş fleur-de-lis'li Fransız bayrağını sallayarak zafer haberini getirir [C019].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Koşan haberci: bir elinde şapkasını sallar, ötekinde ele geçirilmiş fleur-de-lis'li Fransız bayrağı; zafer haberini ölmekte olan Wolfe'a ulaştırır.",
+  "aciklama": "Aynı haberci sahnesi iki farklı anlatım: Başlangıç dersi habercinin ele geçirilmiş Fransız bayrağını sallayarak zafer haberini getirdiğini yazar; DERS.json (C019) ve SORULAR.json GZ05 ipucu ise habercinin şapkasını sallayıp bayrağı öteki elinde taşıdığını söyler.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "bacon",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "\"C\": \"Isenheim Altarpiece, Picasso'nun 1932 çizimleriyle gelen ayrı bir kaynaktır; göz bağı bağlantısı Mocking of Christ içindir ve Bacon onu destekledi.\",",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Daha özel acı imgeleri olarak Picasso'nun *Crucifixion* (1930) tablosu ve Grünewald'ın *Isenheim Altarpiece*'inden (c.1512-16) iki yıl sonra yapılan çizimler anılır [C023][C024].",
+  "aciklama": "CS08'in C şıkkı yanlış-gerekçesi Isenheim Altarpiece kaynağını 'Picasso'nun 1932 çizimlerine' bağlar; derslere göre Isenheim sonrası çizimler Grünewald'a aittir, Picasso'nun katkısı ise 1930 tarihli Crucifixion tablosudur.",
+  "onem": "ORTA"
+ }
+]

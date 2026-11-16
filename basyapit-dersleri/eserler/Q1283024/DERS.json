@@ -1,0 +1,792 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1283024",
+ "sanatci_id": "william-adolphe-bouguereau",
+ "baslik": "Venüs'ün Doğuşu",
+ "ozgun_baslik": "Naissance de Vénus (La Naissance de Vénus / The Birth of Venus)",
+ "kunye": {
+  "sanatci": "William-Adolphe Bouguereau",
+  "sanatci_yasam": "1825–1905 (La Rochelle)",
+  "tarih": "1879",
+  "tarih_belirsizlik": "WD P571 precision=9 (yıl); imza 1879; zayıf kaynak S9 \"c1879\" (E7) — A ile aşılır",
+  "teknik": "Yağlıboya, tuval (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 300,
+   "genislik": 215
+  },
+  "muze": "Musée d'Orsay, Paris",
+  "envanter": "RF 253 (identifiant 16649)",
+  "edinim": "1879, sanatçıdan Devlet tarafından satın alma (Musée du Luxembourg için); 1979 Orsay affecté",
+  "konum": "Rez-de-chaussée, Salle 3 (2018 ve 2026 arşiv kayıtları; güncel salon değişebilir)",
+  "telif_durumu": "Kamu malı (ölüm 1905, >100 yıl pma); Commons PD; müze fotoğrafı © Musée d'Orsay, Dist. RMN-Grand Palais / Patrice Schmidt"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/William-Adolphe_Bouguereau_%281825-1905%29_-_The_Birth_of_Venus_%281879%29.jpg",
+  "kaynak": "Wikimedia Commons (preferred P18; credit www.musee-orsay.fr, notice 16649; müze fotoğrafı © Musée d'Orsay, Dist. RMN-Grand Palais / Patrice Schmidt)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S7 imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "preferred 4014×5670 (14.761.870 bayt); ikinci dosya 1239×1749",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; kompozisyon S5/S6 (A) + S8/S2 (B) metninden; data/eser_ayrintilari koordinatları doğrulanmadı; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 411
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1348
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2836
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-veri-hataları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-devlet-alımından-orsaya"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-akademik-ilke-ve-kariyer-1885-konferansı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-anadyomene-pozu-ve-kompozisyon"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-köpük-kabuk-yunus-inciler"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-akademik-yüzey"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Orsay birincil kaydıyla künyeyi (Naissance de Vénus, 1879, huile sur toile, 300×215, RF 253, Salle 3) doğrular.",
+  "Genişlik ihtilafını (215/218/217) birincil önceliğiyle yönetir; WD P973 yanlış eser hatasını (Cabanel 1863) tanır.",
+  "Venus Anadyomene ikonografisini ve poz soyunu (Botticelli → Ingres → Bouguereau; Nymphaeum aktarımı) analiz eder.",
+  "Salon 1879 resepsiyonunun iki yanlılığını (Devlet alımı + Huysmans eleştirisi) değerlendirir.",
+  "Görsel incelenmemiş alanları (GZ TASLAK) ve data terminoloji hatalarını (\"melekler ve periler\"; centaur/triton) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Venus Anadyomene",
+   "tanim": "\"Denizden çıkan Venüs\" tipi; ıslak saçını sıkma pozu; Hesiodos'un köpük doğuşu mitine dayanır.",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Contrapposto",
+   "tanim": "Ağırlığın bir bacağa verildiği, bedene S kıvrımı veren duruş; Bouguereau'nun Venüs'ünde \"S\" kıvrımı.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Salon",
+   "tanim": "Paris'in resmî sergisi; Société des artistes français, Palais des Champs-Élysées; bu eser 1879, livret N°376.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Provenans",
+   "tanim": "Sahiplik/tahsis zinciri; 1879 Devlet alımı → Luxembourg → Dépôt de l'Etat → Nantes → 1979 Orsay affecté.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Akademik sanat",
+   "tanim": "École des Beaux-Arts geleneği; antik doğa + idealize beden; 1885 Institut de France konferansı ilkesi.",
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Müze ana başlığı \"Naissance de Vénus\" (\"La\" yok; WD P1476/frwiki \"La Naissance de Vénus\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı William Bouguereau (William-Adolphe), La Rochelle 1825 – La Rochelle 1905.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih 1879 (WD P571 precision=9/yıl, P1480 yok; imzada da 1879).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Yağlıboya, tuval (\"huile sur toile\"; WD P186 oil paint + canvas, P518 painting support).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut H. 300,0 ; L. 215,0 cm (muzenin iki ayrı kaydı aynı; → C036 D1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Sol altta imza + tarih: \"S.D.b.g. : W. Bouguereau - 1879\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter RF 253; katalog identifiant 16649.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Musée d'Orsay, Paris; rez-de-chaussée (zemin kat), Salle 3 (2018 ve 2026 arşiv kayıtları; arşiv tarihi itibarıyla, E8).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "1879'da sanatçıdan Devlet tarafından satın alındı (Musée du Luxembourg için); \"Modalité d'acquisition achat\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenans: 1879 Louvre'a atfedildi; 1879–1920 Luxembourg; 1920 Dépôt de l'Etat; 1920–1979 Nantes; 1979 Orsay'a tahsis (affecté).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Salon 1879'da sergilendi (Société des artistes français, Palais des Champs-Élysées, Paris), livret N°376.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sergi geçmişi: 1984 Petit Palais (ayrıca Montréal, Hartford); 2010 Madrid/San Francisco/Nashville; 2015 Madrid \"El canto del cisne\" + Berlin \"The Botticelli Renaissance\"; 2017–18 Münih; 2019–20 Orsay + 2020–21 Strasbourg \"Huysmans critique d'art\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Müze konu index'i: scène mythologique; Vénus, Aphrodite, Cupidon, Eros; détails: naissance, dauphin, centaure, femme, nu, triton, mer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Müze görsel kredisi: © Musée d'Orsay, Dist. RMN-Grand Palais / Patrice Schmidt.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kayıt son değişiklik 2026-02-19 (snapshot 2026-04-23).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kayıtta anılan bibliyografya (metne erişilmedi): Henriot 1925; Crespelle 1966 p.90; Adhémar 1981 n°166; Lobstein 2006 pp.211-214; Guégan/Guyaux 2019 cat.10 pp.29-30,38,39,204; Salon livret 1879 n°376; Gaudieri/Burollet/Atkinson 1984 n°89; El canto del cisne 2015 n°64; Evans/Weppelmann 2015 cat.66 pp.210-211; MuMa 2018 fig.8 pp.26-28; Des cheveux & des poils 2023 fig.01 pp.108-116; Compin/Roquebert 1986 vol.3 p.86; Compin/Lacambre/Roquebert 1990 vol.1 p.74.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Venus Anadyomene tipi; saçını sıkma pozu; \"S\" kıvrımlı contrapposto; kompozisyon Venüs'ü deniz yaratıklarıyla çevreler (tez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Merkezdeki Venüs figürü, The Nymphaeum'daki bir bather'dan büyütülerek aktarıldı (enwiki: 1878, bir yıl önce).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Poz soyu: Botticelli Venüs → Ingres Venus Anadyomène (kollar yukarı) → Bouguereau; tez Ingres'i \"more erotic\", Bouguereau'yu \"less sensually erotic\" niteler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Mitolojik arka plan: Hesiodos Theogonia — Afrodit deniz köpüğünden doğar; Kythera ardından Kıbrıs (Kypros); Zephyros kabukla taşır; Horai karşılar; saç damlaları kabukta incilere dönüşür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Huysmans, Salon 1879'da eseri sert eleştirdi (L'Art moderne): \"une pauvreté qui n'a pas de nom\", \"chromos de boîtes à dragées\", \"peinture gazeuse\", \"léché flasque\"; Orsay kaydı Huysmans kataloğuna (cat.10) atıf verir, 2019–20 sergisinde eseri gösterir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Bouguereau'nun akademik sanat ilkesi (1885 Institut de France konferansı alıntısı): \"Antiquity reveals what an inexhaustible source of variegated inspiration nature is…\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Fransız akademik ressam; Bordeaux → Paris École des Beaux-Arts, İtalya bursu; zengin patronlarca kabul, Degas gibi çağdaşların eleştirisi; Impressionizmin gölgelemesi (kariyerini etkilemedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Venüs bir tarak (scallop) kabuğu üzerinde; yunus tarafından çekiliyor (temkin: \"almost appears to be pulled by a symbolic dolphin steered by Aros [Eros]\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Kamu malı (ölüm 1905, >100 yıl pma); Commons \"Public domain\", AttributionRequired false.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Kompozisyon Botticelli'nin Venüs'ün Doğuşu'na benzer (tez + enwiki); Raffaello/Galatea kolu atıfsız (→ C034 E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Cabanel'in Venüs'ün Doğuşu (1863, Orsay) karşılaştırma eseri: Salon 1863'te Napoléon III satın aldı; Gautier \"Salon of Venus\" dedi; tez bölüm 5 analiz eder; Cabanel \"subject is merely a pretext… an ideal\" sözü; S10 Zola eleştirisini aktarır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "İki figür conch/triton kabuğu üfleyerek Venüs'ün gelişini duyurur (kaynak betimi; figür kararı görsel ister, D3 → C038).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S9",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C046",
+   "ifade": "itwiki (atıfsız, \"fonti\" şablonlu) betimi: kıvrımlı/yumuşak çizgiler; açık renkler (beyaz/mavi) \"saflık/tanrısallık\" yorumu; merkeziyet diğer figürlerin gölgede bırakılmasıyla vurgulanır; \"oyuncu, uyumlu, canlı\" izlenim.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "D1 genişlik: Orsay (2018+2026) 215,0 ↔ WD P2049/enwiki/itwiki 218 (WD ref'i Commons, P143=Q565, P813=2018-06-24) ↔ frwiki 217; yükseklik 300 aynı. Birincil esas → 300×215.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D2 WD P973 yanlış eser: URL (la-naissance-de-venus-7082.html) 2019+2021 arşivde Cabanel 1863 yorum sayfası (H.130; L.225, Napoléon III, Zola). Bouguereau için KULLANILAMAZ; birincil S5/S6.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D3 centaur/triton: enwiki+S9 \"centaurs\" (kabuk üfleyenler); data \"tritonlar\"; Orsay index + WD P180 her ikisi (Q83203+Q148030). Figür kararı görsel inceleme gerektirir — yapılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S9",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D4 kabuk türü: enwiki/tez \"scallop\", WD P180 Pecten maximus ↔ S9 \"oyster shell\". Müze index'i tür belirtmez; \"tarak/deniz kabuğu\" B, oyster tercih edilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S1",
+    "S9",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D7 data terminolojisi: eser_notlari \"melekler ve periler\" HATALI; kaynaklarda putto/eros, nymph/nereid, triton/centaur; \"melek\" yok. data DEĞİŞTİRİLMEZ; düzeltilmiş terminoloji önerilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D8 resepsiyon tek yanlılığı: data \"Salon'da büyük beğeni\" ↔ Huysmans çok olumsuz (C021) + Devlet alımı (C009). Ders: resmî kabul + eleştirel muhalefet birlikte.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D9 WD kayıt düzeyi: P195 Louvre departmanı 1879–1979 nominal ↔ Orsay fiziksel tarihçe (Luxembourg/Nantes); P276 Orsay 1986 (açılış) ↔ 1979 affecté. Çelişki değil, kayıt düzeyi farkı; Orsay esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C026",
+   "ifade": "Doğuş anı değil, Venüs'ün kabukla Paphos'a (Kıbrıs) taşınması (en/itwiki atıfsız, S9 zayıf). D5: frwiki \"anadyomène\", müze \"Naissance\"; müze yorum metni yok (S10 yanlış eser). E olarak açık.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "15 putto (Cupid+Psyche dahil), nymphalar, centaur'lar (enwiki). \"Fifteen\" sayısı S9/S8'de YOK (D6); sayı desteksiz. Figür varlıkları yardımcı (WD P180; index Cupidon/Eros+centaure/triton).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S9",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Sol üst bulutlarda sanatçı silüeti olabilecek gölge (fırça tutan yumruk). S9 \"perhaps\", S2 \"It appears to be\" — temkin korunur (E1).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Model Marie Georgine, Princesse de Ligne (Sosthène de La Rochefoucauld ile evlenmeden önce); frwiki satır içi atıf YOK (E4).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Yanlardaki çiftlerde erkekler koyu, kadınlar açık tenli; aşkın tamamlayıcılığı (itwiki, atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "Hafif bulutlu gökyüzü fırtına habercisi \"ya da yalnızca optik bir düzeltme\" (itwiki \"o forse è solo una correzione ottica\") — iki yorum açık (E2).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "data \"pompier\", 1879 4. Empresyonist sergi, Raffaello/Galatea benzetmesi, geç 20. yy yeniden değerlendirme: erişilen kaynaklarda yok (E9). Tezde yalnız Impressionizm gölgelemesi var (C023).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Türkçe başlık \"Venüs'ün Doğuşu\" (WD labels.tr + data; yardımcı). Müze ana başlığı değil (C001).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Görsel İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük (S7: preferred 4014×5670 PD; ikinci 1239×1749 PD). data/eser_ayrintilari koordinatları doğrulanmadı. GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Literatür metinleri erişilmedi: Wissman 1996; Huysmans L'Art moderne \"Salon de 1879\"; Salon 1879 livret n°376; Orsay bibliyografya kitapları (Lobstein 2006; Compin/Roquebert 1986/1990; Gaudieri 1984; vb.) — \"kaynakçada anıldı, metne erişilmedi\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1283024 (P170/P571/P186/P2048-49/P195/P217/P276/P18/P6216/P973/P608/P127/P135/P136/P180 + sitelinks)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1283024.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "The Birth of Venus (Bouguereau) wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Birth%20of%20Venus%20(Bouguereau)&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia FR",
+   "belge": "La Naissance de Vénus (Bouguereau) wikitext (Huysmans alıntısı + model iddiası)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=La%20Naissance%20de%20V%C3%A9nus%20(Bouguereau)&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Nascita di Venere (Bouguereau) wikitext (\"fonti\" uyarı şablonlu)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Nascita%20di%20Venere%20(Bouguereau)&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée d'Orsay",
+   "belge": "Katalog notice n°16649 / RF 253 (eski site; URL itwiki dış bağlantısından). Canlı 403 → Wayback 2018-11-17",
+   "url": "https://web.archive.org/web/20181117193452id_/http://www.musee-orsay.fr/fr/collections/catalogue-des-oeuvres/notice.html?nnumid=16649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (snapshot 2018-11-17)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée d'Orsay",
+   "belge": "Güncel kayıt naissance-de-venus-16649 (son değişiklik 2026-02-19; URL 301→302 zincirinden). Canlı 403 → Wayback 2026-04-23 (gzip çözüldü)",
+   "url": "https://web.archive.org/web/20260423211330id_/https://www.musee-orsay.fr/fr/oeuvres/naissance-de-venus-16649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (snapshot 2026-04-23)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url|size|extmetadata), iki P18 dosyası; PD; İNCELENMEDİ",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:William-Adolphe%20Bouguereau%20(1825-1905)%20-%20The%20Birth%20of%20Venus%20(1879).jpg|File:The%20Birth%20of%20Venus%20by%20William-Adolphe%20Bouguereau%20(1879).jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "MINDS@UW (Univ. of Wisconsin–Superior)",
+   "belge": "Newberry, Jenna Marie. Venus Anadyomene: The Mythological Symbolism from Antiquity to the 19th Century. M.A. tezi, 2011, 30 yaprak; PDF metni çıkarıldı",
+   "url": "https://minds.wisc.edu/bitstreams/36c86f12-43dd-4dea-a81b-8918ac3caab1/download",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (landing + PDF)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "arts-crafts-hobbiesanddiy.com (zayıf)",
+   "belge": "William Bouguereau. The birth of Venus. La naissance de Venus c1879 (enwiki ref'i; orijinal ölü) → Wayback 2017-12-23",
+   "url": "https://web.archive.org/web/20171223025724id_/http://www.arts-crafts-hobbiesanddiy.com/venus-%20birth-goddess.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2017-12-23); orijinal ölü",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Musée d'Orsay (mobile)",
+   "belge": "WD P973 URL'si la-naissance-de-venus-7082.html — içerik CABANEL 1863 (H.130; L.225; Napoléon III; Zola). Q1283024 için KULLANILAMAZ (D2); yalnız Cabanel bağlamı",
+   "url": "https://web.archive.org/web/20210514180641id_/https://m.musee-orsay.fr/fr/oeuvres/commentaire_id/la-naissance-de-venus-7082.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2021-05-14 + 2019-04-16); yanlış eser",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümleme ×2 (yapısal + P180)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q483992|Q23402|Q189458|Q19652",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ×2",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wayback",
+   "belge": "CDX sorguları + 301/302 başlık kontrolleri (URL keşfi; tahmin yok)",
+   "url": "http://web.archive.org/cdx/search/cdx?url=musee-orsay.fr&matchType=domain&filter=urlkey:.*16649.*&limit=50",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Venüs'ün Doğuşu (The Birth of Venus)",
+   "sanatci": "Sandro Botticelli",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": false,
+   "gerekce": "Poz soyunun kaynağı; kompozisyon benzerliği (tez + enwiki).",
+   "kanit": [
+    "C019",
+    "C029"
+   ]
+  },
+  {
+   "eser": "Venüs'ün Doğuşu (La Naissance de Vénus, 1863)",
+   "sanatci": "Alexandre Cabanel",
+   "kurum": "Musée d'Orsay, Paris",
+   "mufredat_ici": false,
+   "gerekce": "Aynı tema, aynı müze; 1863 Salonu + Napoléon III alımı; tez bölüm 5 karşılaştırması.",
+   "kanit": [
+    "C045"
+   ]
+  },
+  {
+   "eser": "Venus Anadyomène",
+   "sanatci": "Jean-Auguste-Dominique Ingres",
+   "mufredat_ici": false,
+   "gerekce": "Poz soyunun ikinci halkası: yukarı kalkık kollar dönüşümü (tez + enwiki notu).",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Orsay birincil S5 (Wayback 2018-11-17) + S6 (Wayback 2026-04-23) ham cache'ten yeniden açıldı; künye/provenans/Salon/index/bibliyografya doğrulandı; iki kayıt birebir uyumlu (son değişiklik 2026-02-19). S8 tez PDF metni (Bölüm 1/5/6) yeniden okundu; Anadyomene/poz soyu/Nymphaeum/1885 konferansı/Cabanel teyit. S2/S3/S4 wikitext yeniden okundu; Huysmans alıntısı (frwiki) + Orsay cat.10 teyidi. S1 WD niteleyicileri (P195/P276/P127/P6216/P2048-49 ref) çözüldü; P973→S10 Cabanel 1863 (130×225, Napoléon III, Zola) teyit (D2). S7 Commons metadata PD. Görsel İNCELENMEDİ (C043); literatür metinleri erişilmedi (C044).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json: başlık/tarih/müze A ile uyumlu; \"büyük beğeni\" tek yanlı (D8); \"pompier\"/4. Empresyonist sergi/Raffaello-Galatea atıfsız (E9); özet \"doğuş\" ↔ en/it \"taşıma\" (D5).",
+  "data/eser_notlari.json: \"melekler ve periler\" terminoloji hatası (D7); putto/eros + nymph/nereid önerilir.",
+  "data/eser_ayrintilari.json: 6 koordinatlı nokta görsel olarak doğrulanmadı (C043); ok/yay yalnız WD P180 metadata.",
+  "data/eserler_onbellek.json: gorsel.l (lisans) boş; Commons PD teyitli (S7).",
+  "data/ders_kaynaklari.json: puan 0.6, iç referans; dış A/B zinciri bu dosyayla sağlandı (S5/S6 + S8).",
+  "data/ikonografi.json: birth-of-venus grup tanımı (Zephyros/Hora/güller) Botticelli'ye özgü; Bouguereau'ya uygulanmamalı.",
+  "WD: P973 yanlış eser (D2); P2049=218 müzeyle çelişkili (D1); P195 nominal Louvre (D9). WD'ye yazılmadı.",
+  "S5↔S6: 2010 SF/Nashville sergi adı varyantı (Exposition 1874 ↔ Birth of Impressionism); künye/index birebir aynı.",
+  "Görsel İNCELENMEDİ (C043); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

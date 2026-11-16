@@ -1,0 +1,687 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q63341",
+ "sanatci_id": "dirck-van-baburen",
+ "baslik": "Pezevenk Kadın",
+ "ozgun_baslik": "The Procuress / De koppelaarster",
+ "kunye": {
+  "sanatci": "Dirck van Baburen",
+  "sanatci_yasam": "1590 to 1595–1624 (MFA); Rijksmuseum 1594/95–1624",
+  "tarih": "1622",
+  "tarih_belirsizlik": "MFA düz 1622; en/fr \"c. 1622\" (D, C021); imza tarihi kısmen okunur \"16 [...]\"",
+  "teknik": "Yağlıboya, tuval (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 101.6,
+   "genislik": 107.6
+  },
+  "muze": "Museum of Fine Arts, Boston",
+  "envanter": "50.2721",
+  "edinim": "8 Haziran 1950; M. Theresa B. Hopkins Fund; $1960 (Thesiger)",
+  "konum": "Gallery 242, \"Art of the Netherlands in the 17th Century\" (yalnız 2019-03-29 arşiv kopyası; güncel salon bilinmiyor, C029)",
+  "telif_durumu": "Kamu malı (PD-Art, PD-old-100-expired; ölüm 1624)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_The_Procuress_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture / MFA Boston)",
+  "lisans": "Public domain (PD-Art | PD-old-100-expired | deathyear=1624)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo + dosya wikitext); GÖRSEL BU OTURUMDA İNCELENMEDİ",
+   "cozunurluk": "5101 × 4826 px; 9.239.229 bayt; JPEG",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnız kaynak metinlerinden (S7/S3/S10/S11); GZ TASLAK; insan editör görsel teyidi zorunlu; data hotspot ayrıntıları doğrulanmadı (C030)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 413
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1385
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2611
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-atıf-ve-provenance"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-üç-versiyon"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-vermeerin-arka-planları"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-üç-versiyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#4-thins-belgesi-ve-teşhis-ihtilafı",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri",
+   "SORULAR.json"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "MFA birincil kaydıyla künyeyi (1622, yağlıboya tuval, 101,6×107,6 cm, 50.2721) doğrular; \"c. 1622\" belirsizliğini korur.",
+  "Pazarlık sahnesinin ikonografisini ve Utrecht Caravaggist üslubu kaynak betimleriyle açıklar (görsel incelenmedi).",
+  "Vermeer bağlantısını doğru kurar: The Concert + Lady Seated at a Virginal; Milkmaid öncülünü düzeltir.",
+  "Üç versiyonu (Boston/Amsterdam/Courtauld) ayırır ve doğrulama rejimlerini (katalog, connoisseurship, kimyasal analiz) karşılaştırır.",
+  "Thins teşhis ihtilafını ve provenance \"possibly\" zincirini yönetir; negatif kanıtın sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Utrecht Caravaggizmi",
+   "tanim": "Roma'da Caravaggio ve takipçilerinden etkilenen Utrechtlilerin yakın plan, iri yarım boy figürler ve vurgulu ışık-gölge üslubu.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Bordeeltjes",
+   "tanim": "17. yüzyıl Hollanda resminde genelev sahnesi türü; Merry company sahneleriyle kısmen örtüşür.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Klarobskür (chiaroscuro)",
+   "tanim": "Vurgulu ışık-gölge karşıtlığıyla figür modelleme; Caravaggist üslubun temeli.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Resim içinde resim (mise en abyme)",
+   "tanim": "Bir tablonun başka bir tablonun arka planında betimlenmesi; Vermeer'in Concert ve Virginal'inde Baburen.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik/aktarım tarihi; MFA kaydında erken halkalar \"possibly\" işaretlidir.",
+   "kanit": [
+    "C027",
+    "C006"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Boston versiyonu künyesi: 1622, Dirck van Baburen (Dutch, 1590 to 1595–1624), Oil on canvas, 101.6×107.6 cm, env. 50.2721, MFA Boston.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Utrecht Caravaggisti: Roma'da Caravaggio ve takipçilerinden derin etki; yakın plan, iri yarım boy figürler, sağlam modelleme, vurgulu ışık-gölge karşıtlığı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İkonografi (MFA): âşık müşteri, sarıklı yaşlı kadınla neşeli genç kadının iltifatları için pazarlık eder; lavta (aşk sembolü) kompozisyon merkezinde; el hareketleri hikâyeyi anlatır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Üç figür: solda lavtalı fahişe, ortada sikkeli müşteri (kolu kadında), sağda avucunu gösteren pezevenk; tür \"Bordeeltjes\" (Merry company ile örtüşür); kırpılmış yakın plan + düz boş fon Utrecht Caravaggizmi tipik.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "İmza: sol altta, lavta gövdesi alt kenarında \"TBaburen f 16 [...]\" (T+B birleşik; tarih kısmen okunur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "20. yy provenance: 25 Şubat 1949 Sloane-Stanley satışı, Christie's Londra lot 52 (katalogda Honthorst) → Colnaghi/Thesiger → 1950 MFA $1960; kayıt 8 Haziran 1950; M. Theresa B. Hopkins Fund.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "MFA not 1: 27 Kasım 1641 mal paylaşım belgesi \"Een schilderije daer en coppelerste die in de hant wijst\"; Thins, Bolnes'ten 1641'de boşandı; Blankert 1978 (pp.145-146 doc.7) MFA ile teşhis; Franits şüphesi de aktarılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Vermeer bu tabloyu (veya muhtemelen bir kopyasını) iki tablosunun arka planına koydu: The Concert (about 1665–66, Gardner) ve A Lady Seated at the Virginals (about 1673–75, NG).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "NG: arka plan tablosu MFA Baburen The Procuress olarak teşhis; kopya Vermeer'in kayınvalidesine aitti; The Concert Gardner'dan çalındı; Concert'te iki genç kadın şarkı/klavsen + lavtalı adam.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Thins kopyası Vermeer'in kendi erken The Procuress'ini (1656) etkilemiş olabilir (\"may have been an influence\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Karşıtlık okuması: Baburen'in kaba gerçekçiliği arka planda, Vermeer'in zarif/erotik yüklü dünyası önde; müzik-aşk bağlantısı; Cole&Pardo 2005 p.206.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Amsterdam SK-C-612 = \"kopie naar Dirck van Baburen, na 1623\"; olieverf op doek; Amsterdam Belediyesi bruikleen (1898); 1 Haziran 1897 de Clercq satışı (F. Muller no.39, Honthorst), 1898 bağış.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "en Vikipedi: en az üç versiyon (Boston, Amsterdam, Courtauld); Boston+Amsterdam \"attributed to Dirck van Baburen or his studio\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Courtauld: 1960 Webb sundu; 2009 \"likely 17th-century\"; 2011 BBC Fake or Fortune? (3 Temmuz) Bakelite → modern sahte, van Meegeren (tekniği kullanan bilinen tek sahteci); muhtemelen Vermeer sahtelerinde prop; bugün sahte olarak daha değerli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "WD: Q63341 \"group of paintings\" (P31 Q18573970); P195/P217/boyut YOK, yalnız P276=Q49133; Boston nesnesi Q20539079 (P195=Q49133, P217=50.2721, MFA ref; P854=MFA URL).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C016",
+   "ifade": "Görsel kamu malı: PD-Art + PD-old-100-expired (deathyear 1624); Commons pageid 21997128; 5101×4826 px, 9.239.229 bayt JPEG; Google Arts & Culture SQGuBVNXxqSb2Q; imza ImageNote (x1569,y4440,w459,h265); wikidata=Q20539079.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Negatif: Süt Boşaltan Kadın (Q167605) arka planında bu tablo YOK; S12 Milkmaid wikitext Baburen/Procuress/Concert/Virginal = 0; pozitif kaynaklar yalnız The Concert + Lady Seated at a Virginal sayar.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C018",
+   "ifade": "data'daki \"Savurgan Oğul/meyhane geleneği\" bağlantısı erişilen hiçbir kaynakta yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Thins teşhis ihtilafı: Blankert 1978 (MFA aslı) ↔ Franits 2013 (cat. A23 pp.128-129; Thins ailesi replika sahibiydi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Atıf/versiyon ihtilafı: MFA düz \"Baburen\" ↔ enwiki \"attributed to… or his studio\" ↔ Rijksmuseum Amsterdam \"kopie naar… na 1623\"; versiyonlar karıştırılmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S3",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C021",
+   "ifade": "Tarih ihtilafı: MFA/nl/WD \"1622\" ↔ en/fr \"c. 1622\"; circa aynen korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S3",
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C022",
+   "ifade": "Vermeer arka plan tarihleri: Concert c.1664 (S3) ↔ about 1665–66 (S7); Lady Seated c.1670 (S3) ↔ about 1670–2 (S10) ↔ about 1673–75 (S7).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "Baburen biyografisi (Rijksmuseum/Bikker 2007): Wijk bij Duurstede 1594/95; 1611 Moreelse çırağı; Parma 1615 (kayıp St Sebastian); Roma Borghese+Giustiniani; David de Haen ile San Pietro in Montorio Pietà Şapeli; Entombment Caravaggio'ya borçlu; Caravaggio+Manfredi etkisi; 1620/21 Utrecht, ter Brugghen atölye; 1621 müzisyen + 1623 Granida ve Daifilo; 12 Şubat 1624 Buurkerk gömü (muhtemelen veba).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Rijksmuseum entry (Bikker 2007): Amsterdam 20. yy ilk yarısı otograf sanıldı; Boston aslı 1949'da yeniden keşfedildi, Gowing 1951; sert kalite Baburen elini dışlar; craquelü 17. yy/erken 18. yy; kopya yanlardan kırpılmamış, yaşlı pezevenki daha az gösterir; kataloglar 1903/1934 (Van Baburen) → 1976/2007 (kopya); Slatkes 1965 \"version A\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Amsterdam kopyası teknik notları (yalnız kopyaya ait): ince düz dokulu tuval, duble; koyu gri astar; kasnak izi (üst kenar değişikliği olasılığı); 1937 dublaj (Mertens, Jenner); durum fair (aşınma, düzleşme, vernik bozulması); rapor M. van de Laar 12 Ekim 2002.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "NG kataloğu (Virginal): about 1670–2, NG2568, Room 25, oil on canvas, 51.5×45.5 cm, Salting Bequest 1910; ışık önden (nadir); karanlık dışarı, mavi perde, siyah cam; arka plan ~1/4; bas viol; standing Virginal ile karşıt çift olabilir; \"fazla literal almayın\" uyarısı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "MFA provenance erken zinciri \"possibly\": 1641 possibly Maria Thins (y.1593–1680) → possibly Catharina Bolnes (1631–1688) + Vermeer (1632–1675) → possibly oğulları Johannes Johannesz. (y.1663–1713) → possibly Sir Hans Sloane (1660–1753) → possibly Sloane ailesi → Sloane-Stanley (1867–1949).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "MFA not 3–4: Vermeer mirası eserlerine ne olduğu kesin bilinmez; miras yöneticisi Leeuwenhoek; tablo Sloane belgelerinde yok; Sloane-Stanley soyu → aile aktarımı hipotezi; 1950 çerçevede eski İngilizce yazıt (18./erken 19. yy İngiltere); Broos 1990 cat.5; Thesiger→Constable mektup 15 Mart 1950.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "MFA canlı HTTP 403 (2026-11-14, iki UA); Gallery 242 \"Art of the Netherlands in the 17th Century\" yalnız 2019-03-29 arşiv kopyası için geçerli; güncel salon bilinmiyor; footer \"© 2019 MFA Boston\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ; data/eser_ayrintilari görsel ayrıntıları (tüylü siyah şapka, hardal pelerin, ışık yönü, renk alanları, hotspot koordinatları) metin kaynaklarıyla doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Kaynakçada anılan kitap/metinlerin asıllarına erişilmedi (Schneider, Montias, Cole&Pardo, Blankert, Franits, Broos; BBC/Telegraph/Independent çekilmedi); Boston için ayrı teknik rapor erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Yorum: sikke–avuç–kucaklayan kol üçgeni duygulanımı fiyat pazarlığına dönüştürür; lavta aşk sembolü merkeze konurken aşk ticari alışverişe araç olur; izleyici pazarlığın tanığı/onaylayıcısı/yargıcı; yakın plan sahneyi kişisel alana iter.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Yorum: Vermeer'de resim içinde resim duvarı değer yargısı sahnesine dönüştürür; kaba arka plan zarif ön planın karşıtı; izleyici iki aşk ekonomisini karşılaştırmaya davet edilir (Cole&Pardo estetik genişletmesi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Yorum: etik okuma — genç kadının dahil olduğu ticari alışveriş; modern okuma güç asimetrisi, 17. yy konvansiyonu komik/ahlaki çerçeve; sanatçı niyetine doğrudan erişim değil, anakronizm riski; \"eğlence + ahlaki uyarı\" yorumu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Yorum: eserin kimliği/değeri alımlama tarihinde kurulur — Boston+Amsterdam'ın Honthorst'a karıştırılması, 20. yy yeniden keşif, kopya/sahte statüleri ve Vermeer arka planındaki yansıma bu ağın parçalarıdır.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Yorum: ikonografik teşhisin sınırı — envanter kaydı ile tabloyu eşleştirmek için betimsel örtüşme gerekli ama yeterli değil; çok versiyonlu kompozisyonda örtüşme tek nesneyi işaret etmez (Blankert ↔ Franits).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q63341 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q63341.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q20539079 EntityData (Boston nesnesi)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q20539079.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia en",
+   "belge": "The Procuress (Dirck van Baburen) wikitext",
+   "url": "https://en.wikipedia.org/wiki/The_Procuress_(Dirck_van_Baburen)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia fr",
+   "belge": "L'Entremetteuse (Dirck van Baburen) wikitext",
+   "url": "https://fr.wikipedia.org/wiki/L%27Entremetteuse_(Dirck_van_Baburen)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia nl",
+   "belge": "De koppelaarster (Dirck van Baburen) wikitext",
+   "url": "https://nl.wikipedia.org/wiki/De_koppelaarster_(Dirck_van_Baburen)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "MFA Boston",
+   "belge": "canlı katalog (erişilemedi)",
+   "url": "http://www.mfa.org/collections/object/the-procuress-33414",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot/CDN engeli; iki UA)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "MFA Boston / Wayback",
+   "belge": "The Procuress katalog (arşiv 2019-03-29)",
+   "url": "http://web.archive.org/web/20190329083940/https://www.mfa.org/collections/object/the-procuress-33414",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv 2019-03-29)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_The_Procuress_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "dosya açıklama wikitext (action=parse)",
+   "url": "https://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_The_Procuress_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "National Gallery, Londra",
+   "belge": "A Young Woman seated at a Virginal (NG2568)",
+   "url": "https://www.nationalgallery.org.uk/paintings/johannes-vermeer-a-young-woman-seated-at-a-virginal",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Rijksmuseum, Amsterdam",
+   "belge": "SK-C-612 (Bikker 2007 katalog + teknik notlar)",
+   "url": "https://www.rijksmuseum.nl/nl/collectie/SK-C-612",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (kalıcı id.rijksmuseum.nl/20026523)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikipedia en",
+   "belge": "The Milkmaid (Vermeer) wikitext (negatif kontrol)",
+   "url": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API); Baburen/Procuress=0",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "etiket API (Q49133=MFA Boston)",
+   "url": "https://www.wikidata.org/wiki/Q49133",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "yerel",
+   "belge": "data/*.json + DURUM.md (salt-okunur)",
+   "url": "yerel dosya (data/)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Concert",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "Isabella Stewart Gardner Museum, Boston (çalındı)",
+   "mufredat_ici": false,
+   "gerekce": "Baburen'in tablosu arka planda asılı; karşıtlık okumasının birinci ayağı.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "eser": "A Young Woman seated at a Virginal",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "National Gallery, Londra",
+   "envanter": "NG2568",
+   "mufredat_ici": false,
+   "gerekce": "Arka planda Baburen; yüzeyin ~1/4'i; ışık ve karşıt çift analizi.",
+   "kanit": [
+    "C026",
+    "C009"
+   ]
+  },
+  {
+   "eser": "De koppelaarster (Amsterdam versiyonu)",
+   "sanatci": "Kopie naar Dirck van Baburen",
+   "kurum": "Rijksmuseum, Amsterdam",
+   "envanter": "SK-C-612",
+   "mufredat_ici": false,
+   "gerekce": "Kopya/atıf karşılaştırması; teknik inceleme ve craquelü.",
+   "kanit": [
+    "C012",
+    "C024"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "MFA Wayback 2019-03-29 (S7, canlı S6 403), NG (S10), Rijksmuseum (S11) birincil katalogları 14 Kasım 2026'da yeniden açıldı; künye/konu/provenance/imza/versiyonlar/teknik doğrulandı. en/fr/nl wikitext (S3/S4/S5) + Milkmaid negatif kontrol (S12, Baburen/Procuress=0) yeniden okundu. D1: Vermeer arka planı The Concert + Lady Seated at a Virginal; Milkmaid öncülü hatalı (C017). Thins Blankert↔Franits (C019), atıf (C020), tarih c.1622 (C021), Vermeer tarihleri (C022) D olarak açık. Görsel S8/S9 metadata only → İNCELENMEDİ (C030); GZ TASLAK. Kitap metinleri erişilmedi (C031).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D1 (kritik): MUFREDAT.md M7 \"44↔52\" bağı ve pilot karşılaştırma öncülü hatalı — Baburen tablosu Süt Boşaltan Kadın'da (Q167605) DEĞİL, The Concert + Lady Seated at a Virginal'de (C008/C009; C017 negatif). Düzeltme önerisi insan onayına; MUFREDAT/pilot/data dokunulmadı.",
+  "data/basyapitlar.json Q63341: 1622 + MFA + başlık uyumlu; \"Konser\" ve \"Virginal Başında Oturan Kadın\" zaten doğru; \"en tanınmış örneklerinden\" yorum (E).",
+  "data/eser_ayrintilari.json: \"Lavtadaki imza\" ✓ (C005); diğer görsel ayrıntılar (tüylü şapka, sarık rengi, ışık yönü, hotspot) doğrulanmadı (C030 E); görsel inceleme gerekli.",
+  "\"Savurgan Oğul/meyhane geleneği\" bağlantısı kaynaksız (C018 E); çıkarılması/etiketlenmesi önerilir.",
+  "data/eser_notlari.json: \"Vermeer ... arka plana yerleştirmiştir\" doğru ama tablo adı yok; The Concert + Lady Seated at a Virginal eklenmeli (C008).",
+  "data/eserler_onbellek.json: gorsel.l=\"\" (lisans boş) → PD-Art/PD-old-100-expired (C016); dosya adı P18 ile aynı.",
+  "data/ders_kaynaklari.json: Q63341 \"dogrulandi\" ama kaynak=basyapitlar.json (öz-referans); birincil zincir S7 ile kuruldu.",
+  "data/muze_numaralari.json: Q63341 girişi YOK; envanter 50.2721 (C001).",
+  "WD: Q63341 \"group of paintings\"; P195/P217 Q20539079'da (C015 E); müfredat QID'si insan incelemesinde gözden geçirilmeli.",
+  "MFA canlı 403; Gallery 242 yalnız 2019 arşivi için geçerli (C029 E)."
+ ]
+}

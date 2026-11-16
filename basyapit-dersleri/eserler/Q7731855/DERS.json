@@ -1,0 +1,934 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q7731855",
+ "sanatci_id": "claude-lorrain",
+ "baslik": "Saba Melikesi'nin Gemiye Binişi",
+ "ozgun_baslik": "Seaport with the Embarkation of the Queen of Sheba",
+ "kunye": {
+  "sanatci": "Claude (Claude Gellée, dit Le Lorrain)",
+  "sanatci_yasam": "1604/5? – 1682 (NG eser sayfası; Room 36: 1600–1682)",
+  "tarih": "1648",
+  "tarih_belirsizlik": "İmzalı ve tarihli; WD P571 precision=yıl, ref DBpedia",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 149.1,
+   "genislik": 196.7
+  },
+  "muze": "National Gallery, Londra",
+  "envanter": "NG14",
+  "edinim": "Bought, 1824 (John Julius Angerstein koleksiyonu)",
+  "konum": "Room 36 (Claude and Turner), Level 2; 2015 arşivinde Room 15",
+  "telif_durumu": "Kamu malı (PD-Art / PD-old-auto-expired, deathyear=1682)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Claude_Lorrain_008.jpg",
+  "kaynak": "Wikimedia Commons (File:Claude Lorrain 008.jpg; Credit: National Gallery)",
+  "lisans": "Public domain (PD-Art / PD-old-auto-expired, deathyear=1682)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S10/S11/S12); görsel BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "6000 × 4563 px (2020-04-05 sürümü, MrChrisWin); ~11,4 MiB",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; D2 (melike giysi rengi) ve E8 (görsel ayrıntılar) çözümsüz; kompozisyon NG (A) + wiki (B/C) metninden; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 430
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1310
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2633
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-önceliği"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenans-belirsizlik-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-turner"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-ışık-ve-kompozisyon-kaynak-betimi-ve-sınırı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-amblem-yazıt-ve-olasılık"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-malzeme-ve-katalog"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NG birincil kataloguyla künyeyi (1648, NG14, 149.1 × 196.7, oil on canvas, Room 36) doğrular.",
+  "Saba Melikesi ikonografisini, yazıtla teşhisi ve Bouillon kule amblemini açıklar.",
+  "Şafak ışığı, simetrik kompozisyon ve repoussoir/contre-jour'u kaynak betimi üzerinden analiz eder.",
+  "Provenans zincirini, Turner vasiyetini ve D ihtilaflarını (genişlik/giysi/vasiyet/Pamphili) yönetir.",
+  "Görsel incelenmeme sınırını, GZ TASLAK'ı ve frwiki anakronizmi gibi kaynak eleştirisi noktalarını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "İdeal manzara",
+   "tanim": "Doğayı topografik doğrulukla değil, düzenlenmiş klasik uyumla sunan tür; Claude'un idealize deniz manzaraları.",
+   "kanit": [
+    "C024",
+    "C025"
+   ]
+  },
+  {
+   "ad": "Repoussoir",
+   "tanim": "Ön plan öğeleriyle derinlik hissi veren katmanlı betim; renklerin uzaklaştıkça soğuması (frwiki, B).",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "ad": "Contre-jour",
+   "tanim": "Işık kaynağının izleyiciye dönük betimi; güneş ufuktaki kaçış noktasında, merkezde (B).",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Liber Veritatis",
+   "tanim": "Claude'un \"Book of Truth\" çizim derlemesi; tüm tablolarını kaydeder, özgünlük/taklit ayrımı sağlar.",
+   "kanit": [
+    "C056"
+   ]
+  },
+  {
+   "ad": "Capriccio",
+   "tanim": "Hayali mimari sahne; buradaki liman gerçek bir yer değil, klasik kurgu.",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Tam başlık \"Seaport with the Embarkation of the Queen of Sheba\"; kısa biçim \"The Embarkation of the Queen of Sheba\" (WD label / enwiki madde adı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Claude (Claude Gellée, \"le Lorrain\"); Fransız; uzun yıllar Roma'da çalıştı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1648'de imzalandı ve tarih atıldı (\"Signed; Dated and inscribed\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlıboya (oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut 149.1 × 196.7 cm (NG güncel + 2015 arşiv + Commons + enwiki aynı; WD 193.7 aykırı → C045/D1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S9",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "NG14; National Gallery, Londra; Main Collection; güncel konum Room 36 (2015 arşivinde Room 15).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "1824'te Angerstein koleksiyonundan satın alındı; NG'nin ilk edinimleri arasında; Angerstein'in evi galerinin bugünkü yerine yakındı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Angerstein koleksiyonundan alınan Claude sayısı \"beş\" (atıfsız; NG sayı vermiyor).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C009",
+   "ifade": "Çerçeve: 18. yüzyıl Fransız çerçevesi (\"18th-century French Frame\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Konu: Saba Melikesi'nin Kudüs'te Kral Süleyman'ı ziyarete gidiş için gemiye binişi; 1. Krallar 10:1–2.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Alışılmadık konu: buluşma sık resmedildi, gemiye biniş nadir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İncil'de yolculuk çölde deveyle; Claude denizden gönderir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Melike taçlı, sağdaki merdivenlerden iniyor. NG \"dressed in red\" der; wiki'ler \"pembe tunik + kraliyet mavisi pelerin\" (→ C046/D2); ders melikenin rengini belirtmez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Melike, kendisini büyük gemilere götürecek sandala binmek üzere; hangi gemi olduğu belirsiz (\"perhaps the ship partially concealed by the pillars to the left, or the one further out to sea, over the picture's vanishing point\"). Kürek hazırlığı kısmı A (C026).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C015",
+   "ifade": "Konu ancak yazıtla teşhis edilebilir; yazıt sağdaki taş basamakta zar zor görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "NG'nin sahip olduğu üç hayali liman sahnesinden biri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kompozisyon öncülleri: NG \"Embarkation of Saint Ursula\" (kompozisyon ters yönde) ve Louvre \"Seaport with Ulysses restoring Chrysalis to her Father\" [NG'nin \"Chrysalis\" yazımı korundu].",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Yuvarlak kule Bouillon dükünün başlıca amblemi (aile adı De la Tour d'Auvergne); kulede arma (detaylar zor görülür); dükle Godefroy de Bouillon (1060–1100, Kudüs'ün kısa süreli hükümdarı) arasında bağlantı kurulması olası (\"He may have meant\"); armadaki Ezgiler Ezgisi sözleri Süleyman bağlantısını pekiştirir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Solda Korint düzeni sütunlar (frwiki → Rubiés 2001 / Sureda 2001, metne erişilmedi; NG \"classical buildings\" der, düzen belirtmez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Sütunların taşıdığı, heykellerle bezeli balkondan figürler sahneyi izler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Köprüdeki seyirciler tek boya noktalarıyla verilir; alt kenarda çeşitli deniz kabukları (Claude'un ayrıntı dikkati).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Güneş ufuktaki kaçış noktasında, tablonun merkezinde (contre-jour); frwiki → Rubiés/Sureda + WD P180 \"contre-jour\" (ref'siz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "\"Yıkık tapınak\" (sol) / \"saray\" (sağ) / \"mazgallı kule\" / \"kırmızı pelerinli adam + türbanlı figür\" (sağ alt) gibi data görsel ayrıntıları erişilen metinlerde birebir yok; görsel incelenmedi (E8).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S11",
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Şafak (sabah güneşi) ışığı yumuşak ve sıcak; Claude'un idealize deniz manzaralarına tipik; suyun hafif dalgalanışını, bulutların altını, yaprakları ve teknelerin siluetlerini yakalar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "İki yandaki klasik yapılar simetrik ve dengeli sahne kurar; Roma yıllarının yansıması.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Ön planda iki adam sandık taşır; diğer figürler kürek hazırlığında; telaşeli etkinlik.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Repoussoir tekniği; uzaklaştıkça soğuyan tonlar; şafak renkleri (frwiki → Rubiés/Sureda, erişilmedi). frwiki \"blanc de titane\" anakronik → C053/E7; KULLANILMADI.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Perspektif çizgisi (merdivenler) ile güçlü dikeyin (portikonun sol sütunu) kesişimi gözü sağdaki figür grubuna çeker (S3 atıfsız; S4 NG ref'iyle tekrarlar ama NG metninde birebir yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Çift sipariş \"Bouillon Claudes\": NG14 + NG12 \"Landscape with the Marriage of Isaac and Rebekah ('The Mill')\" (1648, 152.3 × 200.6 cm, Room 36); sipariş 1647, tamamlanma 1648; hamil Frédéric-Maurice de La Tour d'Auvergne, duc de Bouillon (1605–1652), Papa ordusunda Fransız general.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Hamilinin adı sağ alt köşedeki son basamağa yazılı; konuya ilgisini gösterir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "18. yüzyıl boyunca Bouillon ailesinde kaldı; Fransız Devrimi'nde müsadere edilmedi (varis Jacques-Léopold Charles 1794'te hapsedildi, malları el kondu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Tam provenans zinciri (Wine 2001, NG alıntısı; belirsizlikler AYNEN korunur): hôtel de Bouillon, quai Malaquais — Dezallier d'Argenville 1745/1762, La Live de Jully 1764; \"probably\" Dulaure 1785; \"possibly\" 1787 Thiéry garde-meuble; 1792 hôtel, \"probably\" 1801 kaldırıldı, \"apparently\" M. Roy'a satıldı; Mireur 1805 210,400 frank \"but wrongly\" (Farington 3 Nisan 1803 Londra, Fiezenger ithal); Angerstein NG14 ile \"on that or the following day\" 8000 guineas (£8400) Erard's gallery Marlborough St; 1824 executors. NG14: \"possibly recorded in 1772\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "frwiki \"önce Kardinal Camillo Francesco Maria Pamphili için yapıldı, skandal sonrası Bouillon'a satıldı\" anlatısı NG birincil kaydıyla çelişir (NG: doğrudan Bouillon siparişi 1647); frwiki NG key-facts'i kaynak gösterir ama NG metninde Pamphili YOK (D4).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "Turner, Claude'un liman sahnelerine özenerek Dido'yu (1815, 155.5 × 230 cm, NG498) yaptı; ilk \"Claude'a denk olma\" denemesi; Dido, The Decline of the Carthaginian Empire (Tate) ile eşlenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Turner vasiyeti: Dido + Sun Rising through Vapour, NG'de iki Claude'un (\"Seaport\" ve \"Mill\") yanında \"in perpetuity\" asılacak; kabul/yerleştirme ölümünden (18 Aralık 1851) itibaren 12 ay içinde; koleksiyona giriş Court of Chancery, 19 Mart 1856. S7 in-depth: 1831 ikinci vasiyet (hangi eserler → C047/D3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Bugün Sheba + The Mill + Dido aynı odada: Room 36 \"Claude and Turner\" (Level 2); odada ayrıca Turner \"Dutch Boats in a Gale\"; S13 (NG ref'li) \"displayed to this day next to the Claude's painting, as was Turner's wish\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S5",
+    "S6",
+    "S7",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Turner 1799'da Angerstein'in evinde Sheba'nın önünde ağladı: \"Because I shall never be able to paint anything like that picture.\" (enwiki Dido → Bailey 1998, \"Standing in the Sun\", Pimlico, ISBN 0-7126-6604-4; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Sergiler: 2009 \"Turner and the Masters\", Tate Britain (23 Eylül 2009–31 Ocak 2010); 2012 \"Turner Inspired: In the Light of Claude\", NG (14 Mart–5 Haziran 2012). NG notu: sergi tarihleri 2009'dan itibaren.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Butor'un \"musée imaginaire\"ındaki 105 belirleyici eserden biri (frwiki → Michel Butor, Flammarion 2019, s.166–169, ISBN 978-2-08-145075-2; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "WD P528 katalog numaraları: John Smith catalogue raisonné (1837) no 114; \"Claude Lorrain catalogue raisonné, 1975\" (WD etiketi Dorothy Cecchi) no 182; Dillian Gordon \"100 great paintings\" (1981) no 46; \"The Most Famous Paintings of the World\" (1976) no 31. archive.org ref sayfaları çekilmedi; NG kaynakçası 1975 Milano'yu \"M. Röthlisberger\" olarak listeler → C053/E11.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C041",
+   "ifade": "Liber Veritatis no 114 (enwiki/frwiki atıfsız; NG LV çizimlerinin varlığını doğrular ama numara vermez; Kitson 1978 NG kaynakçasında, metne erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C042",
+   "ifade": "Iconclass 71I336; WD tür \"mythological painting\" + \"capriccio\" (ref'siz). NG konuyu \"Old Testament episode\" + \"imaginary seaport\" olarak sınıflar (C010/C016).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "\"İngiliz manzara resmini derinden etkiledi\" (Turner bağlantısı A/B: C034–C036); \"bahçe tasarımını etkiledi\" kısmı kanıtsız → C059/E9.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "\"Melike sahnenin küçük bir parçası\" yorumu (A desteği: C015 — konu ancak yazıtla teşhis edilir).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "D1 genişlik ihtilafı: WD P2049 = 193.7 cm (ref'siz) ↔ NG güncel 196.7 (S5) + NG 2015 arşiv 196.7 (S9) + enwiki 196.7 (S3) + Commons 196.7 (S11). NG birincil + 2 ikincil aynı → 196.7 esas; WD aykırı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S9",
+    "S3",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D2 melike giysisi ihtilafı: NG (iki kez) \"Crowned and dressed in red\" ↔ enwiki \"pink tunic, royal blue cloak, and golden crown\" / frwiki \"tunique rose, un manteau bleu royal et une couronne dorée\". Görsel incelenmediğinden çözümsüz; ders melikenin rengini belirtmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D3 Turner vasiyet kapsamı: NG (S5/S7) iki Turner = Dido + Sun Rising through Vapour, iki Claude = \"A Seaport\" + \"Marriage of Isaac and Rebekah\" ↔ enwiki/frwiki (Smith 2009 s.33–34 ref'li) iki Turner = Dido + The Decline of the Carthaginian Empire, \"Claude's pair of works\" yanında. Çekirdek koşul tüm kaynaklarda aynı; adlandırma ihtilaflı. Smith 2009 kısıtlı (S14); Sun Rising güncel Room 36 listesinde YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S3",
+    "S4",
+    "S8",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D5 \"aynı boyut\" gerilimi: NG seri yazısı \"These two works are the same size… two metres wide\" ↔ NG key facts Sheba 149.1 × 196.7, Mill 152.3 × 200.6. NG içi gerilim; \"same size\" yaklaşık; key facts esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D6 Dido boyutu (çevresel): NG 155.5 × 230 cm ↔ enwiki Dido infobox 155.5 × 260 cm. Turner eserine ilişkin; NG esas; bu dersin konusu değil, not.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans + çözünürlük (6000 × 4563). D2 ve E8 bu yüzden çözümsüz; GZ TASLAK; kompozisyon kaynak metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Erişilemeyen/erişilmeyen kaynaklar: Smith 2009 s.33–34 (S14 kısıtlı, okunamadı); Rubiés 2001, Sureda 2001, Butor 2019, Wine 2001 tam katalog, Kitson 1978, Röthlisberger, Davies, Mills/White 1980, Wyld 1980, Wilson 1980 vb. NG kaynakçasında anıldı, metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E5 frwiki yazıt transkripsiyonu \"CLAVDE GELE I V FAICT POUR SON ALTESSE LE DUC DE BVILLON À ROMAE 1648\" birebir doğrulanamadı; NG yalnız \"Signed; Dated and inscribed\" + hamil adının basamakta olduğunu doğrular.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E7 frwiki analiz pasajı şafak renklerini \"jaune ocre et blanc de titane\" (titanyum beyazı) ile açıklar — 17. yüzyıl için anakronik; bu pasaj KULLANILMADI; frwiki diğer iddiaları temkinle ele alınmalı (D4 ile). E11: WD 1975 kataloğunu \"Dorothy Cecchi\" etiketler, NG kaynakçası aynı yıl/Milano'yu \"M. Röthlisberger\" olarak listeler → katalog-yazar uyuşmazlığı, kitap metinleri erişilmediğinden çözülmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Görsel kamu malı (Public domain): PD-Art / PD-old-auto-expired (deathyear=1682); Commons LicenseShortName \"Public domain\", Copyrighted \"False\"; WD P6216=Q19652, P1001 \"countries with 100 years pma or shorter\", P459 \"100 years or more after death\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S11",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Sanatçı tarihleri: NG eser sayfası \"1604/5? – 1682\"; NG Room 36 sayfası \"(1600–1682)\"; data/sanatcilar.json 1600. Doğum yılı belirsiz; NG'nin kendi kuşku işareti (\"1604/5?\") korunur (E4).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Her iki Bouillon tablosunun çizimi Claude'un Liber Veritatis'inde (Latince \"Book of Truth\") yer alır; LV, Claude'un yaptığı tüm tabloları temsil eden çizim derlemesidir ve özgün eserleri taklit/öğrenci işlerinden ayırmayı mümkün kılar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "NG12'de (The Mill) hamil adı yazılı değildir (NG14'ün aksine); düğün konusu, dükün Eléanor-Catherine de Bergh ile mutlu evliliği nedeniyle ilgisini çekmiş olabilir (\"may have interested\"); aynı kompozisyonun yazıtsız bir başka versiyonu Roma Galleria Doria-Pamphilj'de \"The Mill\" olarak bilinir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Turner Dido'yu yaşamının başyapıtı (\"chef d'oeuvre\") saydı, satmayı reddetti ve ömür boyu sakladı; 1829 vasiyetinde bu tuvale sarılarak gömülmeyi istedi, sonra (Chantrey'in yorumu üzerine) vazgeçip NG'ye Claude'un yanında sergilenme koşuluyla bıraktı (enwiki Dido → Shanes 2004, Moorby 2025; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "E9 \"bahçe tasarımını etkiledi\" iddiası erişilen hiçbir kaynakta kanıtsız; ders dışında bırakıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q7731855 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q7731855.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 15:57:33Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities: 24 referans QID etiketi",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q105003187%7CQ465%7CQ8447%7CQ328",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 15:59:28Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Embarkation of the Queen of Sheba wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Embarkation%20of%20the%20Queen%20of%20Sheba&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 15:59:29Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (fr)",
+   "belge": "L'Embarquement de la reine de Saba wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=L%27Embarquement%20de%20la%20reine%20de%20Saba&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 15:59:31Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery",
+   "belge": "Eser sayfası: Sheba (Overview/In-depth/Key facts/Provenance/Exhibition/Bibliography/Bouillon Claudes)",
+   "url": "https://www.nationalgallery.org.uk/paintings/claude-seaport-with-the-embarkation-of-the-queen-of-sheba",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301→200 · 16:00:21Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "National Gallery",
+   "belge": "Eser sayfası: The Mill (NG12) + tam provenans (Wine 2001)",
+   "url": "https://www.nationalgallery.org.uk/paintings/claude-the-mill",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:01:40Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "National Gallery",
+   "belge": "Eser sayfası: Turner, Dido building Carthage (NG498) + vasiyet/provenans (Egerton 2000)",
+   "url": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-dido-building-carthage",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:03:19Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "National Gallery",
+   "belge": "Floorplan Room 36: Claude and Turner (Level 2) + oda listesi",
+   "url": "https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-36",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:03:41Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "National Gallery (Wayback)",
+   "belge": "2015 key-facts arşiv kopyası",
+   "url": "https://web.archive.org/web/20151110220024/http://www.nationalgallery.org.uk/paintings/claude-seaport-with-the-embarkation-of-the-queen-of-sheba/*/key-facts",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:01:41Z · arşiv 2015-11-10",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Claude Lorrain 008.jpg (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Claude%20Lorrain%20008.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:00:21Z · metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (Artwork + lisans)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:Claude%20Lorrain%20008.jpg&prop=wikitext&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:01:44Z · metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikimedia Commons",
+   "belge": "Sürüm geçmişi (iilimit=20)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Claude%20Lorrain%20008.jpg&prop=imageinfo&iiprop=timestamp%7Csize%7Cuser&iilimit=20",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:01:46Z",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikipedia (en)",
+   "belge": "Dido building Carthage wikitext (vasiyet, Room 36, Turner anekdotu)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Dido%20Building%20Carthage&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:03:03Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Internet Archive",
+   "belge": "Smith 2009, The National Gallery: A Short History kaydı",
+   "url": "https://archive.org/details/isbn_9780711230439/page/33/mode/2up",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "302→200 · 16:01:43Z · tam metin KISITLI (Access-restricted-item)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "yerel data/",
+   "belge": "Q7731855 salt-okunur snapshot (17 dosya)",
+   "url": ".qwen/tmp/parti3/Q7731855-data-snapshot.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel snapshot",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Landscape with the Marriage of Isaac and Rebekah ('The Mill')",
+   "sanatci": "Claude",
+   "kurum": "National Gallery, Londra",
+   "envanter": "NG12",
+   "mufredat_ici": false,
+   "gerekce": "Bouillon çiftinin öteki üyesi; tamamlayıcı tema (düğün/yolculuk, kırsal/kentsel).",
+   "kanit": [
+    "C029",
+    "C057"
+   ]
+  },
+  {
+   "eser": "Dido building Carthage",
+   "sanatci": "J.M.W. Turner",
+   "kurum": "National Gallery, Londra",
+   "envanter": "NG498",
+   "mufredat_ici": false,
+   "gerekce": "Turner'ın Claude'a özenme denemesi; vasiyetle Room 36'da yan yana.",
+   "kanit": [
+    "C034",
+    "C035",
+    "C036"
+   ]
+  },
+  {
+   "eser": "Seaport with the Embarkation of Saint Ursula",
+   "sanatci": "Claude",
+   "kurum": "National Gallery, Londra",
+   "mufredat_ici": false,
+   "gerekce": "Kompozisyon öncülü; aynı liman şeması ters yönde.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NG birincil S5 (Sheba), S6 (Mill/NG12), S7 (Dido/NG498), S8 (Room 36) + S9 (2015 Wayback) 14 Kasım 2026'da yeniden açıldı (hepsi 200); künye/konu/ışık/provenans/vasiyet/güncel konum doğrulandı. enwiki (S3), frwiki (S4), enwiki Dido (S13) wikitext yeniden okundu; WD (S1/S2) ve Commons metadata (S10/S11/S12) kontrol edildi. D1 genişlik (WD 193.7 ↔ NG 196.7), D2 giysi (red ↔ pink+blue), D3 vasiyet (Dido+Sun Rising ↔ Dido+Decline), D4 Pamphili, D5 same size, D6 Dido boyutu açık. frwiki titanyum beyazı anakronizmi (E7) ders dışı. Görsel metadata only → İNCELENEMEDİ (C050); GZ TASLAK. Smith 2009 (S14) kısıtlı; Rubiés/Sureda/Butor/Wine/Kitson metinleri erişilmedi (C051).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "kunye.json ve muze_numaralari.json: Q7731855 kaydı YOK; önerilen (A) 149.1 × 196.7 cm, oil on canvas, NG14.",
+  "basyapitlar.json: ozgun kısa biçim \"The Embarkation…\" (NG tam başlık \"Seaport with the Embarkation…\", C001); \"bahçe tasarımı etkisi\" kanıtsız (E9, C059); \"mazgallı kule / yıkık tapınak / saray / kırmızı pelerinli adam + türbanlı\" görsel ayrıntıları doğrulanamadı (E8, C023).",
+  "sanatcilar.json (claude-lorrain): dogum 1600 ↔ NG \"1604/5?\" (E4, C055); iki farklı TR başlık (tutarlılık notu).",
+  "WD P2049=193.7 aykırı (D1, C045); P528 katalog yazarı Cecchi ↔ NG Röthlisberger (E11, C053); ileride WD boyut ithalinde NG esas.",
+  "Commons location \"Sainsbury Wing Exhibition\" ↔ NG güncel Room 36 (E12); bayat sergi etiketi olabilir, NG esas.",
+  "eserler_onbellek.json kaynaklar [\"wikidata\"] → artık birincil NG (S5) mevcut; ders_kaynaklari kanit_adayı 283b1ad90b (\"Sandık yükleyen hamallar\") artık A (C026).",
+  "gorsel_oranlari.json 1.32 ≈ tablo oranı 1.3193; dosya oranı 1.3149 (küçük fark, hata değil).",
+  "Görsel İNCELENEMEDİ (C050); GZ TASLAK; insan editör görsel teyidi zorunlu (özellikle D2 giysi rengi)."
+ ]
+}

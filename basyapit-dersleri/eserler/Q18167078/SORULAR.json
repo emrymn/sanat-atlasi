@@ -1,0 +1,584 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18167078",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "NGV birincil künyesinde eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "(1743-1744)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız 1744"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 1743"
+    },
+    {
+     "harf": "D",
+     "metin": "1747"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 NGV başlığı \"(1743-1744)\" verir; birincil aralık esastır.",
+   "yanlis_gerekceleri": {
+    "B": "enwiki infobox 1744 der ama bu tekil ve ihtilaflıdır (D001); NGV aralığı esas.",
+    "C": "itwiki 1743 der (atıfsız); NGV aralığı esas.",
+    "D": "1747 Arkhangelskoye tuvallerinin tarihidir, Melbourne tuvalinin değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "NGV envanter numarası (Accession Number) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "103-4"
+    },
+    {
+     "harf": "B",
+     "metin": "NG6409"
+    },
+    {
+     "harf": "C",
+     "metin": "4409"
+    },
+    {
+     "harf": "D",
+     "metin": "2608"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Accession Number \"103-4\".",
+   "yanlis_gerekceleri": {
+    "B": "NG6409 Londra'daki ayrı eskizin envanteridir.",
+    "C": "4409 NGV work ID'dir (URL), envanter numarası değil.",
+    "D": "2608 arka yüzdeki yazıttır, envanter numarası değil."
+   },
+   "kanit": [
+    "C007",
+    "C011",
+    "C022",
+    "C041"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuval üzerine tempera"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Medium \"oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk Palazzo Labia versiyonudur (ayrı eser).",
+    "C": "Pano/tempera değil; NGV oil on canvas der.",
+    "D": "Tempera değil; yağlı boya."
+   },
+   "kanit": [
+    "C004",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "NGV birincil kaydına göre Kleopatra inciyi ne içinde çözer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sirke"
+    },
+    {
+     "harf": "B",
+     "metin": "Şarap"
+    },
+    {
+     "harf": "C",
+     "metin": "Su"
+    },
+    {
+     "harf": "D",
+     "metin": "Zeytinyağı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 About: \"dissolves the pearl in a glass of vinegar and drinks it\".",
+   "yanlis_gerekceleri": {
+    "B": "Şarap enwiki lead'in tekil aykırı değeridir (D004); NGV ve diğer tüm kaynaklar sirke der.",
+    "C": "Su değil; NGV sirke der.",
+    "D": "Zeytinyağı değil; NGV sirke der."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Melbourne tuvalinin modello'su nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris Musée Cognacq-Jay"
+    },
+    {
+     "harf": "B",
+     "metin": "Londra National Gallery"
+    },
+    {
+     "harf": "C",
+     "metin": "Stockholm Üniversitesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Venedik Accademia"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Christiansen 152): Melbourne modello'su Cognacq-Jay'de, Algarotti'nin ölümüne kadar onun mülkiyetinde.",
+   "yanlis_gerekceleri": {
+    "B": "Londra NG6409 ayrı bir eskizdir; Melbourne modello'su değil.",
+    "C": "Stockholm'daki Labia kompozisyonunun modello'sudur.",
+    "D": "Accademia'da Veronese'nin Levi'si var; Melbourne modello'su değil."
+   },
+   "kanit": [
+    "C021",
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "5 Mart 1744'te sanatçıya ne kadar ödendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "300 zecchini"
+    },
+    {
+     "harf": "B",
+     "metin": "£350"
+    },
+    {
+     "harf": "C",
+     "metin": "A£25,000"
+    },
+    {
+     "harf": "D",
+     "metin": "On milyon sesterces"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 çerçeve essay: 5 Mart 1744'te 300 zecchini, sonra Dresden'e sevk.",
+   "yanlis_gerekceleri": {
+    "B": "£350, 1955 Pollak çerçeve faturasıdır.",
+    "C": "A£25,000 NGV satın alma bedelidir (1932/33, ihtilaflı).",
+    "D": "On milyon sesterces Plinius'un bahsindeki ziyafet bedelidir."
+   },
+   "kanit": [
+    "C013",
+    "C056",
+    "C032",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Londra NG6409 için hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1740s, 46.3×66.7 cm, ayrı bir küçük eskiz"
+    },
+    {
+     "harf": "B",
+     "metin": "Melbourne tuvalinin aynısı"
+    },
+    {
+     "harf": "C",
+     "metin": "Palazzo Labia freski"
+    },
+    {
+     "harf": "D",
+     "metin": "Arkhangelskoye tuvali"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: NG6409 1740s, 46.3×66.7, Room 33, Alexander hediyesi 1972; ayrı eser.",
+   "yanlis_gerekceleri": {
+    "B": "Melbourne tuvali 250.3×357'dir; NG6409 küçük ayrı eskiz.",
+    "C": "Labia freski Venedik'te, ayrı eser.",
+    "D": "Arkhangelskoye tuvalleri 1747, 338×600; ayrı."
+   },
+   "kanit": [
+    "C022",
+    "C005",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1744'te eser nereye sevk edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dresden"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "St Petersburg"
+    },
+    {
+     "harf": "D",
+     "metin": "Melbourne"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: 300 zecchini ödemesinden sonra Dresden'e sevk; GAP aynası Royal Gallery Dresden 1744.",
+   "yanlis_gerekceleri": {
+    "B": "Paris modello'sunun (Cognacq-Jay) yeridir, tuvalin 1744 hedefi değil.",
+    "C": "St Petersburg'a 1796'da I. Pavel döneminde gitti.",
+    "D": "Melbourne'e 1933'te vardı."
+   },
+   "kanit": [
+    "C013",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "NGV credit line hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Felton Bequest, 1933"
+    },
+    {
+     "harf": "B",
+     "metin": "Alexander kardeşlerin hediyesi, 1972"
+    },
+    {
+     "harf": "C",
+     "metin": "II. Katerina satın alması, 1765"
+    },
+    {
+     "harf": "D",
+     "metin": "Colnaghi's hediyesi, 1932"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Credit Line \"National Gallery of Victoria, Melbourne · Felton Bequest, 1933\".",
+   "yanlis_gerekceleri": {
+    "B": "Alexander hediyesi 1972 Londra NG6409 içindir.",
+    "C": "Katerina edinimi Rusya dönemidir (1764/65 ihtilaflı); NGV credit değil.",
+    "D": "Colnaghi's satıcıdır (GAP), hediye değil; NGV credit Felton 1933."
+   },
+   "kanit": [
+    "C008",
+    "C022",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kompozisyonların açıkça borçlu olduğu Veronese ziyafet resimleri hangileridir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The Wedding at Cana (1563, Louvre) + Feast in the House of Levi (1573, Accademia)"
+    },
+    {
+     "harf": "B",
+     "metin": "The Wedding at Cana (1563, Accademia) + Feast in the House of Levi (1573, Louvre)"
+    },
+    {
+     "harf": "C",
+     "metin": "Mazzoni Banquet (1660) + Bassano Feast of Dives"
+    },
+    {
+     "harf": "D",
+     "metin": "Reynolds Kitty Fisher (1759) + Batoni Cleopatra (1773)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Christiansen 152–153): Cana 1563 Louvre, Levi 1573 Accademia; Venedik beğenisi onaylıyordu.",
+   "yanlis_gerekceleri": {
+    "B": "Kurumlar yer değiştirmiş: Cana Louvre'da, Levi Accademia'da.",
+    "C": "Bunlar Tomory'nin saydığı diğer öncüllerdir, Veronese değil.",
+    "D": "Bunlar sonraki alımlama eserleridir (Reynolds/Batoni), Veronese değil."
+   },
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Melbourne tuvali, Tiepolo'nun bu konudaki üç büyük resminin ilkidir.",
+   "dogru": true,
+   "aciklama": "Doğru (S2, Christiansen 152–153).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eserin boyutu tüm kaynaklarda aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: NGV/WD/enwiki 250.3×357.0, WGA 249×346 der (D002); birincil NGV esas.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "NGV birincil kaydına göre Kleopatra inciyi sirke içinde çözer ve içer.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 About).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Londra'daki NG6409, Melbourne tuvalinin modello'sudur.",
+   "dogru": false,
+   "aciklama": "Yanlış: Melbourne modello'su Paris Cognacq-Jay'dedir; NG6409 ayrı bir eskizdir, ilişkisi belirsiz (D005).",
+   "kanit": [
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "NGV'ye göre eser 2002–03'te temizlendi ve restore edildi.",
+   "dogru": true,
+   "aciklama": "Doğru (S4); The Age 2001/~3000 saat der, yıl nüansı (C058).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D003 edinim ihtilafını analiz edin: yıl (1932/1933), satıcı (Colnaghi's/İngiliz tüccar/Sovyet), bedel (A£25,000/£25,000). NGV credit line neden birincil?",
+   "beklenen_ogeler": [
+    "1932 GAP aynası",
+    "1933 NGV credit/ABC",
+    "Colnaghi's satıcı",
+    "Sovyet hükümeti (medya)",
+    "A£25,000 ↔ £25,000",
+    "NGV credit birincil korunur"
+   ],
+   "kanit": [
+    "C044",
+    "C008",
+    "C028",
+    "C032"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Versiyon ailesini (Melbourne/Labia/Arkhangelskoye/Londra/Paris/Stockholm) ayırt edin; WD P11807 karışıklığını açıklayın.",
+   "beklenen_ogeler": [
+    "Melbourne 1743-1744 tuval",
+    "Labia freski ayrı",
+    "Arkhangelskoye 1747 ayrı",
+    "Londra NG6409 ayrı eskiz",
+    "Paris Cognacq-Jay modello",
+    "P11807 çift WGA ID"
+   ],
+   "kanit": [
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C050"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "D004 sıvı ihtilafını değerlendirin: enwiki \"wine\" neden aykırı? Tomory'nin sirke/yutma yorumu olgu mudur?",
+   "beklenen_ogeler": [
+    "enwiki wine tekil aykırı",
+    "NGV+diğerleri sirke",
+    "birincil esas",
+    "Tomory imzalı yorum",
+    "olgu değil"
+   ],
+   "kanit": [
+    "C045",
+    "C015",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Teatralite okumasını (itwiki + Christiansen) illusionizm karşıtlığında tartışın; yorum/olgu sınırını çizin.",
+   "beklenen_ogeler": [
+    "itwiki atıfsız",
+    "sahnesel temsil",
+    "kostümlü aktörler",
+    "K3 theatricality (erişilmedi)",
+    "yorum, olgu değil"
+   ],
+   "kanit": [
+    "C034",
+    "C027",
+    "C024",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Provenance hipotez zincirini kesinlik dereceleriyle yazın: Smith \"possibly\" → Algarotti → Dresden; hangi halka belge hangisi varsayım?",
+   "beklenen_ogeler": [
+    "possibly Smith (GAP)",
+    "speculated (enwiki)",
+    "generally believed (Tomory)",
+    "Brühl mektubu 1744",
+    "belge yok",
+    "saf varsayım (Labia hediye)"
+   ],
+   "kanit": [
+    "C028",
+    "C029",
+    "C030",
+    "C053",
+    "C038"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği kompozisyonda açık hava/loggia mimarisini ve görünür gökyüzünü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Christiansen betimi: loggia, görkemli mimari, gökyüzü, arka teras.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Hizmetkârlar arasında siyah figürleri, cüceyi ve köpeği arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): WGA: \"moors, a dwarf and a dog\"; enwiki siyah hizmetkârlar (kölelik notu).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kleopatra'nın inci küpesini çıkarıp kadehe yöneldiği anı kaynak betimiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGV About: küpeden inci, sirke kadehi, içer; Plancus ikinci inciyi engeller.",
+   "kanit": [
+    "C015",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Mermer zemin deseninin derinlik etkisini ve arka terası inceleyin (Melbourne'de basamak yok).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Christiansen: Melbourne'de basamak yok, mermer zemin benzer etki.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Görkemli kostümleri, kapları ve yiyecek çeşitliliğini WGA betimiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): WGA: sumptuous costumes, magnificent receptacles, rich variety of foods; Veronese manner.",
+   "kanit": [
+    "C026",
+    "C025"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Banquet of Cleopatra; Giambattista Tiepolo (1696–1770); (1743-1744); oil on canvas; 250.3×357.0 cm; NGV Melbourne 103-4; Felton Bequest 1933; Level 2, 17.–18. yy Avrupa Galerisi.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + yazınsal kaynak?",
+   "arka": "Plinius Natural History (9.58.119–121) + Plutarkhos Lives (Antony 25.36.1); Kleopatra inci küpesini sirke içinde çözer/içer (NGV), Antonius bahsi kaybeder; hakem Lucius Plancus ikinci inciyi engeller.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Versiyon ailesi?",
+   "arka": "Melbourne tuvali üç büyük resmin ilki; modello Paris Cognacq-Jay; Labia freski (Venedik) + Arkhangelskoye (1747) ayrı; Londra NG6409 (1740s, 46.3×66.7) ayrı eskiz; Stockholm Labia modello'su.",
+   "kanit": [
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "c.1743 possibly Smith → Algarotti (Augustus III ajanı) → Dresden 1744 → Hubertusburg c.1746 → Amsterdam 1765 → Katerina (≤1796) → I. Pavel 1796 → Michael Castle tavan → Hermitage 1801 → Colnaghi's 1932 → Felton → Melbourne 1933.",
+   "kanit": [
+    "C028",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Konservasyon + çerçeve?",
+   "arka": "2002–03 temizlik/restorasyon (Villis+Payne; The Age 2001/~3000 saat nüansı); çerçeve Pollak Londra 1955 (£350, Canaletto tarzı); Buttery 1954/5 temizliği; arka yüz yazıtı 2608; özgün 1744 çerçevesi bilinmiyor.",
+   "kanit": [
+    "C014",
+    "C012",
+    "C056",
+    "C011",
+    "C057"
+   ]
+  }
+ ]
+}

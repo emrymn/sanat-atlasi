@@ -1,0 +1,553 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3793426",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kröller-Müller Museum, Otterlo"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Van Gogh Museum, Amsterdam"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil KMM canlı kaydı eseri Otterlo'da listeler (Houtkampweg 6).",
+   "yanlis_gerekceleri": {
+    "B": "Louvre (Paris) bu eserin birincil kaydı değildir; KMM sayfası Otterlo adresini verir.",
+    "C": "Musée d'Orsay (Paris) farklı kurumdur; eser KMM koleksiyonundadır.",
+    "D": "Van Gogh Museum (Amsterdam) farklıdır; birincil kayıt Kröller-Müller, Otterlo der."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Güncel envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "KM 103.098"
+    },
+    {
+     "harf": "B",
+     "metin": "KM 103.98"
+    },
+    {
+     "harf": "C",
+     "metin": "KM 3112"
+    },
+    {
+     "harf": "D",
+     "metin": "KM 50899"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM canlı + arşiv + CN: \"Identifier KM 103.098\".",
+   "yanlis_gerekceleri": {
+    "B": "KM 103.98 eski formattır (Commons 2017 / WD referanssız); güncel birincil KM 103.098.",
+    "C": "3112 müzenin eski web sayfa kimliğidir (page/3112), envanter numarası değildir.",
+    "D": "50899 Collectie Nederland agregasyon kayıt numarasıdır (kroller-muller/50899), envanter değildir."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre teknik nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Karton üzerine yağlıboya, panele monte"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya (Olio su tela)"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine pastel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM: \"Oil on cardboard mounted on panel\"; CN: \"olieverf op karton op paneel\".",
+   "yanlis_gerekceleri": {
+    "B": "itwiki \"Olio su tela\" der ama birincil KMM karton+panel verir; tuval iddiası hatalıdır.",
+    "C": "Fresk duvar resmidir; bu eser karton+panel üzerine yağlıboyadır.",
+    "D": "Pastel farklı tekniktir; birincil kayıt yağlıboya der."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "KMM güncel kaydı tarihi nasıl verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "c. 1914"
+    },
+    {
+     "harf": "B",
+     "metin": "1898 (kesin)"
+    },
+    {
+     "harf": "C",
+     "metin": "1895–1900"
+    },
+    {
+     "harf": "D",
+     "metin": "1914 (kesin, circa'sız)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM canlı + arşiv: \"Date c. 1914\"; circa korunur.",
+   "yanlis_gerekceleri": {
+    "B": "1898 enwiki kategorisi/alternatif yayılımdır; birincil kayıt \"c. 1914\" der.",
+    "C": "1895–1900 itwiki gövdesidir; birincil kaynakla çelişir.",
+    "D": "Birincil kayıt \"c.\" (circa) kullanır; kesin 1914 belirsizliği siler."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Galatea kimi tercih eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Nehir tanrısı Acis"
+    },
+    {
+     "harf": "B",
+     "metin": "Polyphemus"
+    },
+    {
+     "harf": "C",
+     "metin": "Zeus"
+    },
+    {
+     "harf": "D",
+     "metin": "Apollo"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM: \"Galathea prefers the river god Acis\"; aşk karşılıksızdır.",
+   "yanlis_gerekceleri": {
+    "B": "Polyphemus karşılıksız âşıktır; Galatea onu tercih etmez.",
+    "C": "Zeus bu mitin aşk üçgeninde değildir; KMM metni Acis'i verir.",
+    "D": "Apollo KMM konu metninde geçmez; tercih edilen Acis'tir."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Polyphemus, Galatea'yı nereden gözetler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yüksek bir dağın arkasından"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir mağaranın içinden"
+    },
+    {
+     "harf": "C",
+     "metin": "Denizin ortasından"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir ağacın arkasından"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM: \"spies on the sleeping Nereid Galathea from behind a tall mountain\".",
+   "yanlis_gerekceleri": {
+    "B": "KMM metni \"behind a tall mountain\" der; mağara değil.",
+    "C": "Deniz ortası KMM betiminde yoktur; dağ arkası gözetleme vardır.",
+    "D": "Ağaç arkası birincil metinde geçmez; dağ sırtı esastır."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Müze yorumuna göre göz Redon'da neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İnsan ruhunu ve gizemli iç dünyayı"
+    },
+    {
+     "harf": "B",
+     "metin": "Güneş ve ışığı"
+    },
+    {
+     "harf": "C",
+     "metin": "Nazar / kötü gözü"
+    },
+    {
+     "harf": "D",
+     "metin": "Kraliyet gücünü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM: göz \"a symbol of the human soul and of the mysterious, unknown inner world\".",
+   "yanlis_gerekceleri": {
+    "B": "Müze yorumu güneş/ışık değil, ruh ve iç dünya der.",
+    "C": "Nazar/kötü göz müze yorumunda yoktur; göz ruhun simgesidir.",
+    "D": "Kraliyet gücü müze metninde geçmez; göz iç dünyanın simgesidir."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Doğrulanmış boyut hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "65,8 × 52,7 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "64 × 51 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "52,7 × 65,8 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "65 × 52 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KMM arşiv + CN + GA&C + WD: 65,8 × 52,7 cm (canlı sayfada yok, üçgenlendi).",
+   "yanlis_gerekceleri": {
+    "B": "64×51 itwiki infoboxıdır; birincil arşiv+CN+GA&C 65,8×52,7 verir.",
+    "C": "Yükseklik/genişlik ters çevrilmiş; kayıt 65,8 (y) × 52,7 (g) der.",
+    "D": "Yuvarlanmış değer kayıtta yoktur; ölçü 65,8×52,7 cm'dir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Ruhrberg vd. (2000) kataloğuna atfen Commons'ın verdiği alternatif tarihleme nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "circa between 1898 and 1900"
+    },
+    {
+     "harf": "B",
+     "metin": "1895–1900"
+    },
+    {
+     "harf": "C",
+     "metin": "1914 (kesin)"
+    },
+    {
+     "harf": "D",
+     "metin": "1905–1910"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Commons (S8) Ruhrberg, Art of the 20th Century, Taschen 2000, s.34 atfıyla \"circa between 1898 and 1900\" der.",
+   "yanlis_gerekceleri": {
+    "B": "1895–1900 itwiki gövdesidir; Ruhrberg atfı 1898–1900 der.",
+    "C": "1914 KMM'nin circa tarihidir; Ruhrberg alternatifi değildir.",
+    "D": "1905–1910 erişilen hiçbir kaynakta geçmez."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Görselin lisans durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kamu malı (PD; ölüm 1916)"
+    },
+    {
+     "harf": "B",
+     "metin": "InC (telif korumalı)"
+    },
+    {
+     "harf": "C",
+     "metin": "CC BY-SA 4.0"
+    },
+    {
+     "harf": "D",
+     "metin": "Tüm hakları saklı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Commons PD-Art/PD-old-auto-expired, deathyear=1916; AttributionRequired=false.",
+   "yanlis_gerekceleri": {
+    "B": "InC, CN kaydının hak etiketidir; Commons görseli PD'dir (metadata uyuşmazlığı).",
+    "C": "CC BY-SA Commons lisansı değildir; dosya PD-Art/PD-old şablonludur.",
+    "D": "Tüm hakları saklı değildir; Redon 1916'da ölmüş, eser kamu malıdır."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Kröller-Müller Museum'da, Otterlo'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru: birincil KMM kaydı Houtkampweg 6, Otterlo adresini verir.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil kayıt tekniği \"tuval üzerine yağlıboya\" olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil \"Oil on cardboard mounted on panel\" der; tuval itwiki hatasıdır.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Müzenin güncel kaydı tarihi \"c. 1914\" olarak verir; circa korunur.",
+   "dogru": true,
+   "aciklama": "Doğru: KMM \"c. 1914\"; WD precision 9 + P1480 circa.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Müze metnine göre Galatea, Polyphemus'un aşkına karşılık verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: aşk karşılıksızdır; Galatea nehir tanrısı Acis'i tercih eder.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kröller-Müller Museum eseri \"sembolist sanatın başyapıtlarından biri\" sayar.",
+   "dogru": true,
+   "aciklama": "Doğru: KMM metni \"one of the masterpieces of symbolist art\" der.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (D001) değerlendirin: KMM c.1914 ↔ Ruhrberg 1898–1900 ↔ itwiki 1895–1900 ↔ enwiki yayılımı. Hangi kaynak hangi ağırlığı taşır?",
+   "beklenen_ogeler": [
+    "birincil üstünlüğü",
+    "circa korunması",
+    "Ruhrberg B (metin erişilmedi)",
+    "wiki iç çelişkisi",
+    "kesin yıl yok"
+   ],
+   "kanit": [
+    "C003",
+    "C017",
+    "C022",
+    "C020",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "itwiki'nin teknik ve boyut hatalarını (D002/D003) kaynak eleştirisiyle açıklayın.",
+   "beklenen_ogeler": [
+    "Olio su tela ↔ karton+panel",
+    "64×51 ↔ 65,8×52,7",
+    "birincil+CN+GA&C üçgenlemesi",
+    "itwiki hatalı"
+   ],
+   "kanit": [
+    "C023",
+    "C024",
+    "C004",
+    "C005",
+    "C030",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Provenance boşluğunu (E008) ve \"Now on display\" ibaresinin arşiv sınırını tartışın.",
+   "beklenen_ogeler": [
+    "eser-spesifik provenance yok",
+    "uydurma yok",
+    "2024-12-19 arşiv",
+    "güncel durum bilinmiyor",
+    "müze genel tarihi ≠ provenance"
+   ],
+   "kanit": [
+    "C035",
+    "C014",
+    "C039",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Göz motifinin sembolik okumasını (müze yorumu) ve \"utangaçlık\" yorumunu (Douglas W.) felsefi/estetik açıdan tartışın.",
+   "beklenen_ogeler": [
+    "ruh/iç dünya",
+    "It appears korunur",
+    "gözetleme/arızu",
+    "helpless/edilgenlik",
+    "yorum-olgu ayrımı"
+   ],
+   "kanit": [
+    "C012",
+    "C015",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "data/ notlarını değerlendirin: kesin \"1914\", muze_numaralari eksikliği, imza iddiası.",
+   "beklenen_ogeler": [
+    "c.1914 ↔ 1914",
+    "KM 103.098 işlenmemiş",
+    "imza görsel teyit bekler",
+    "noir anlatısı doğrulanmadı"
+   ],
+   "kanit": [
+    "C003",
+    "C006",
+    "C036",
+    "C040"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Müze metninin \"en dikkat çekici öğe\" dediği doğal olmayan büyüklükteki gözü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KMM: \"The unnaturally large eye is the most conspicuous part of the painting.\"",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Polyphemus'un arkasından gözetlediği yüksek dağı/sırtı belirleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KMM: \"from behind a tall mountain\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Uyuyan Nereid Galatea'yı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KMM: \"the sleeping Nereid Galathea\"; sağ-alt konumu enwiki betiminden (görsel teyit bekler).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Müzenin tehdidi güçlendirdiğini söylediği alışılmadık parlak renkleri inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KMM: \"unusual bright colours\" tehdidi güçlendirir.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tek gözün uyuyan bedene yönelen bakış yönünü izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KMM: \"spies on the sleeping Nereid\"; bakış yönü betimi kaynak metninden.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Le cyclope / The Cyclops (Kiklop); Odilon Redon (1840–1916); c. 1914; karton üzerine yağlıboya, panele monte; 65,8×52,7 cm; Kröller-Müller Museum, Otterlo; KM 103.098.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu?",
+   "arka": "Polyphemus, uyuyan Nereid Galatea'yı yüksek dağın arkasından gözetler; aşk karşılıksız, Galatea nehir tanrısı Acis'i tercih eder.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sembolizm + göz?",
+   "arka": "Redon tipik Sembolist (rüya dünyası, bilinçdışı); göz \"her şeye hükmeden bağımsız yaratık\", ruhun ve gizemli iç dünyanın simgesi (müze yorumu).",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Renk + değerlendirme?",
+   "arka": "Doğal olmayan büyük göz en dikkat çekici öğe; alışılmadık parlak renkler tehdidi güçlendirir; KMM: \"sembolist sanatın başyapıtlarından biri\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Tarih (birincil + alternatif)?",
+   "arka": "KMM c. 1914; Ruhrberg vd. (Taschen 2000, s.34, Commons atfı) \"circa between 1898 and 1900\"; kesin tek yıl iddia edilmez.",
+   "kanit": [
+    "C003",
+    "C017"
+   ]
+  }
+ ]
+}

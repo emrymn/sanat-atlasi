@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanat-atlasi.local/semalar/KANIT_SEMASI.json",
+  "title": "Resim Ansiklopedisi — Kanıt Kaydı Şeması (v1.0, 2026-11-15)",
+  "description": "kanit-kayitlari/<MADDE-ID>.json dosyaları. Her claim için birebir kanıt kaydı; iddia metni ve doğrulama sonucu madde JSON'uyla tutarlı olmalıdır (dogrula.py denetler).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["madde_id", "arastirma_tarihi", "ureten", "kayitlar"],
+  "properties": {
+    "madde_id": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}$" },
+    "arastirma_tarihi": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+    "ureten": { "type": "string", "description": "Araştırma/yazım ajanı veya oturum kimliği — bağımsız denetim DEĞİLDİR." },
+    "kayitlar": {
+      "type": "array", "minItems": 5,
+      "items": { "$ref": "#/$defs/kanitKaydi" }
+    }
+  },
+  "$defs": {
+    "kanitKaydi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id", "iddia", "iddia_turu", "kaynak_id", "kaynak_baslik",
+        "erisim", "pasaj", "pasaj_konum", "belirsizlik_ifadeleri",
+        "destek_duzeyi", "celisen_kaynaklar", "dogrulama_sonucu"
+      ],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^C[0-9]{3}$" },
+        "iddia": { "type": "string", "minLength": 15, "description": "Madde JSON'undaki claim.iddia ile birebir aynı." },
+        "iddia_turu": { "enum": ["OLGU", "TARIH", "TEKNIK_TANIM", "YORUM", "HIPOTEZ", "GELENEKSEL_ANLATI"] },
+        "kaynak_id": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}-K[0-9]{2}$" },
+        "kaynak_baslik": { "type": "string", "minLength": 2 },
+        "url": { "type": "string", "format": "uri" },
+        "erisim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["durum", "tarih", "yontem"],
+          "properties": {
+            "durum": { "enum": ["ERISILDI_OKUNDU", "WAYBACK_OKUNDU", "ERISILDI_KISMEN", "JS_KABUGU", "ENGELLI", "ERISILEMEDI"] },
+            "tarih": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+            "http_kod": { "type": "integer" },
+            "yontem": { "enum": ["CANLI", "WAYBACK", "API", "PDF", "DIGITAL_KITAP"] },
+            "arsiv_tarihi": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" }
+          }
+        },
+        "pasaj": {
+          "type": "string", "minLength": 20,
+          "description": "Gerçekten açılan kaynaktan kısa, telif sınırlarına uygun doğrudan alıntı veya sadık özet. Uydurma alıntı yasaktır."
+        },
+        "pasaj_konum": { "type": "string", "minLength": 2, "description": "Sayfa/bölüm/başlık konumu." },
+        "belirsizlik_ifadeleri": {
+          "type": "array", "items": { "type": "string" },
+          "description": "Kaynaktaki ihtiyatlı ifadeler aynen; yoksa boş dizi."
+        },
+        "destek_duzeyi": { "enum": ["DOGRUDAN_DESTEK", "DOLAYLI_DESTEK", "KISMEN_DESTEK", "DESTEKLEMIYOR"] },
+        "ikincil_kaynak_ids": {
+          "type": "array", "items": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}-K[0-9]{2}$" },
+          "description": "Bağımsız ikinci kaynaklar (Kural 7); tartışmalı iddialarda beklenir."
+        },
+        "celisen_kaynaklar": {
+          "type": "array", "items": { "type": "string" },
+          "description": "Çelişen kaynak ve çelişkinin niteliği; yoksa boş dizi."
+        },
+        "dogrulama_sonucu": { "enum": ["DOGRULANDI", "KISMEN_DESTEKLENIYOR", "DOGRULANAMADI", "CELISKILI", "HATALI"] },
+        "notlar": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,477 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q27978197",
+ "sanatci_id": "hans-baldung-grien",
+ "baslik": "Üç Çağ ve Ölüm",
+ "ozgun_baslik": "Die drei Lebensalter und der Tod (The three ages and death)",
+ "kunye": {
+  "sanatci": "Hans Baldung, genannt Grien",
+  "sanatci_yasam": "1484–1545",
+  "tarih": "y. 1509/1510",
+  "tarih_belirsizlik": "KHM \"um 1509/1510\"; WD 1509 prec7 circa",
+  "teknik": "Yağlıboya, ıhlamur ahşap (Lindenholz)",
+  "boyut_cm": {
+   "yukseklik": 48.2,
+   "genislik": 32.8
+  },
+  "muze": "Kunsthistorisches Museum, Viyana (Gemäldegalerie)",
+  "envanter": "GG_2636 (Gemäldegalerie 2636)",
+  "edinim": "1806 Galerie (Thun koleksiyonu, Salzburg; 1803 Residenz)",
+  "konum": "Gemäldegalerie Kabinett 16",
+  "telif_durumu": "Kamu malı (Baldung ö.1545); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Hans_Baldung,_gen._Grien,_Kunsthistorisches_Museum_Wien,_Gem%C3%A4ldegalerie_-_Die_drei_Lebensalter_und_der_Tod_-_GG_2636_-_Kunsthistorisches_Museum.jpg",
+  "kaynak": "Wikimedia Commons (KHM credit)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "özgün 1079×1613 indirildi; vision köprüsü transkripsiyonu (read_file) ile genel görünüm incelendi",
+   "cozunurluk": "1079×1613",
+   "incelenen_bolgeler": [
+    "genç kadın + el aynası",
+    "Ölüm + kum saati + örtü",
+    "yaşlı figür",
+    "çocuk + yan nesneler",
+    "arka plan yaprak/gökyüzü"
+   ],
+   "sinirlar": "transkripsiyon lossy/untrusted; çözünürlük 1079px ile sınırlı; çocuk yanındaki nesne kimliği (ok/elma ↔ Steckenpferd) kesin değil; imza/yazıt görünmez"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 439
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1304
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2604
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-vanitas-ve-eitelkeit-ahlaki-dilin-teolojisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-dürer-ve-donauschule-ikili-köken"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#3-ölümün-bedeni-ikonografik-bir-tercih"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-örtü-çocuk-ve-nesneler-gözlem-ile-betim-ayrımı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-üç-yaş-aynı-kadın-mı-farklı-kişiler-mi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "KHM birincil kaydıyla künyeyi (başlık, um 1509/1510, Lindenholz, 2636, Kabinett 16) doğrular.",
+  "Vanitas/Eitelkeit ahlaki dilini ve yedi günah bağlamını açıklar.",
+  "Görsel incelemeye dayanarak dört figür + ayna/kum saati/örtü üçlüsünü betimler.",
+  "Ölüm'ün çürüyen beden tasvirini iskelet/tırpan geleneğiyle karşılaştırır.",
+  "Figür kimliği ve boyut ihtilaflarını D; gözlem/betim ayrımını ve erişilemeyen literatürü E olarak yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Vanitas",
+   "tanim": "Her şeyin geçici olduğunu hatırlatan alegori; ayna/kum saati/örtü simgeleri.",
+   "kanit": [
+    "C014",
+    "C021"
+   ]
+  },
+  {
+   "ad": "Eitelkeit",
+   "tanim": "Kibir/gösteriş; Vanitas'ın ahlaki yüzü; yedi ölümcül günahın öncüsü.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Schleier der Jugend",
+   "tanim": "\"Gençlik örtüsü\"; KHM betiminde Ölüm'ün uzandığı, çocuğun saklandığı zar.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Donauschule",
+   "tanim": "Tuna Okulu; Baldung'un manzara dilindeki organik bağ (likenli ağaçlar).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "Steckenpferd",
+   "tanim": "Tahta at; dewiki'nin çocuk figürüne eşlik eden nesne betimi (görselden kesin değil).",
+   "kanit": [
+    "C013",
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "KHM: başlık \"Die drei Lebensalter und der Tod\"; Hans Baldung gen. Grien; \"um 1509/1510\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "KHM: Material/Technik Lindenholz (ıhlamur ahşap, yağlıboya); Bildmaß 48,2 × 32,8 × 2,4 cm; Rahmenmaße 61,3 × 46 × 4,5 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "KHM: Inv. Nr. Gemäldegalerie 2636; zu sehen Gemäldegalerie Kabinett 16.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "KHM betimi: Tod, aynasına dalmış genç kadının başı üstünde tükenen kum saatini tehditle tutar; soldaki yaşlı kadın Tod'u zar zor geri püskürtür; Tod, arkasında bir Knabe'nin saklandığı \"gençlik örtüsü\"ne (Schleier der Jugend) uzanır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "KHM provenance: Erzbischof Guidobald Graf Thun koleksiyonu Salzburg; 1803 Fürsterzbischöfliche Residenz Salzburg; 1806 Galerie'ye.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "dewiki: Ölfarbe auf Lindenholz; 48,2 × 32,5 cm; KHM Wien; ref Schütz 1996 (KHM Führer Nr.36, 5. Aufl., ISBN 3-85447-308-7, p.311).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Boyut genişliği ihtilafı: KHM/WD 32,8 cm ↔ dewiki 32,5 cm.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C008",
+   "ifade": "dewiki: Baldung, Dürer'de eğitim aldı ama Donauschule'ye de bağlıydı; arka plandaki likenli ağaçlar bunu gösterir; \"üç yaş ve ölüm\" tekrarlayan motif.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "dewiki: üç yaş figürü — altta küçük çocuk, ortada genç kadın, solda yaşlı kadın; her biri bir yaşam evresini temsil eder.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "dewiki: figürlerin aynı kadının farklı evreleri mi yoksa farklı yaşta kişiler mi olduğu \"nicht eindeutig\" (belirsiz); KHM kaynakları çocuğu açıkça Knabe (erkek çocuk) olarak tanımlar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C011",
+   "ifade": "dewiki: güzel, çıplak genç kadın uzun sarı saçını aynada hayranlıkla izler; ayna Vergänglichkeit (geçicilik) simgesidir; arkasındaki Tod'a dikkat etmez.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "dewiki: Tod, Skelett ya da Sensenmann olarak DEĞİL, çürüyen beden olarak; saç tutamları ve sarkan deri parçaları vardır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "dewiki: yaşlı kadın Tod'a enerjik ama boşuna karşı koyar; Steckenpferd (tahta at) ile yerdeki Knabe, sahneyi kadının gençlik örtüsü arkasından izler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "dewiki: Vanitas — hiçbir şey ebedi değil; Vanitas = \"Eitelkeit\" (kibir/gösteriş), kadında cisimleşir; Eitelkeit yedi ölümcül günahın öncüsüdür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "dewiki provenance (ref KHM objektdb/96): Thun koleksiyonu; 1803 Salzburg Residenz; 1806 KHM.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Görsel inceleme (K5): ortada çıplak genç kadın, uzun dalgalı açık saç; kırmızı saplı yuvarlak el aynası omuz hizasında; sol eli alnına kalkık; belinde şeffaf beyaz örtü, sağdaki figür tarafından tutulur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Görsel inceleme (K5): sağda Tod — zayıf/çürüyen beden, kafatası benzeri baş, seyrek saç, kaburga üzerinde gergin deri + çürüyen et parçaları; kalkık kolda kırmızı çerçeveli kum saati (kum görünür); diğer eli örtünün ucunu kavrar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Görsel inceleme (K5): solda dağınık ak saçlı kırışık yaşlı figür; altta örtüye dolanmış çıplak çocuk yukarı bakar; yanında küçük nesneler (transkripsiyon: kırık ok + kırmızı elma; Steckenpferd kimliği dewiki'den, görselden kesin değil).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel inceleme (K5): arka plan yoğun koyu yeşil yaprak/ağaç; üstte soluk mavi-yeşil gökyüzü; imza/yazıt görünmez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel kamu malı (Baldung ö.1545); Commons \"Public domain\"; credit KHM; özgün 1079×1613 px.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Yorum: ayna + kum saati + örtü üçlüsü, geçicilik/zaman/yaşam evreleri alegorisini (Vanitas) kurar.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Yorum: kadının aynaya bakıp Tod'u görmemesi, kendini beğenmişliğin ölümü körleştirmesi olarak okunur.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "WD: P170 Q164696; P571 1509 prec7 (circa 1509–1510); P186 oil+panel; P2048 48.2/P2049 32.8; P195/P276 KHM; P217 GG_2636; P6216 PD; P136 allegory+nude.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Schütz 1996 monografi metni ve Tuschka the-artinspector.de makalesi bu oturumda açılmadı; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C025",
+   "ifade": "Başlık çeşitliliği: data \"Üç Çağ ve Ölüm\"/\"The three ages and death\"; dewiki \"Die drei Lebensalter und der Tod\"; frwiki \"Les Trois Âges de la Vie et la Mort\"; WD en label \"The three ages and death\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Kunsthistorisches Museum",
+   "belge": "objektdb detail/96 — Die drei Lebensalter und der Tod",
+   "url": "https://www.khm.at/objektdb/detail/96/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML, katalog alanları çıkarıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Almanca Vikipedi",
+   "belge": "Die drei Lebensalter und der Tod — Schütz 1996 + Tuschka 2020 atıflı",
+   "url": "https://de.wikipedia.org/wiki/Die_drei_Lebensalter_und_der_Tod",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); Schütz/Tuschka metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "Les Trois Âges de la Vie et la Mort",
+   "url": "https://fr.wikipedia.org/wiki/Les_Trois_%C3%82ges_de_la_Vie_et_la_Mort",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q27978197",
+   "url": "https://www.wikidata.org/wiki/Q27978197",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Hans Baldung … Die drei Lebensalter und der Tod - GG 2636 - Kunsthistorisches Museum.jpg (KHM credit)",
+   "url": "https://commons.wikimedia.org/wiki/File:Hans_Baldung,_gen._Grien,_Kunsthistorisches_Museum_Wien,_Gem%C3%A4ldegalerie_-_Die_drei_Lebensalter_und_der_Tod_-_GG_2636_-_Kunsthistorisches_Museum.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; özgün 1079×1613 indirildi; vision köprüsüyle İNCELENDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Şövalye, Ölüm ve Şeytan",
+   "sanatci": "Albrecht Dürer",
+   "mufredat_ici": true,
+   "gerekce": "Kuzeyli ölüm imgelerinin karşılaştırması; Baldung Dürer'de eğitim aldı.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "eser": "Dünyevi Zevkler Bahçesi",
+   "sanatci": "Hieronymus Bosch",
+   "mufredat_ici": true,
+   "gerekce": "Günah/zevk ve ahlaki uyarı dilinin karşılaştırması.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "eser": "Üç Çağ ve Ölüm (öteki versiyonlar)",
+   "sanatci": "Hans Baldung Grien",
+   "gerekce": "Aynı motifin tekrarı; motif ekseni karşılaştırması.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil KHM objektdb/96 ham HTML yeniden açıldı (Parti 1 JS-kabuğu sorunu bu eserde yok); künye/envanter/boyut/malzeme/salon/betim/provenance iddialarla karşılaştırıldı. dewiki/frwiki wikitext yeniden okundu; boyut (C007) ve figür kimliği (C010) D olarak açık. Görsel K5 vision köprüsüyle incelendi; çocuk nesne kimliği görselden kesin değil → gözlem/betim ayrımı. Schütz/Tuschka metinleri erişilmedi (C024).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1509\" ↔ KHM \"um 1509/1510\"; öneri \"y. 1509/1510\" (C001).",
+  "Boyut: KHM 48,2×32,8 (A) ↔ dewiki 32,5 (D, C007).",
+  "Envanter GG_2636 ✓ (KHM Inv. Nr. + WD + Commons).",
+  "Salon Kabinett 16 (C003).",
+  "Figür kimliği aynı kadın mı farklı kişiler mi belirsiz (D, C010); KHM Knabe der.",
+  "Çocuk nesneleri: Steckenpferd (dewiki B) ↔ transkripsiyon ok/elma (kesin değil) (C013/C018).",
+  "Görsel İNCELENDİ; 1079px çözünürlük sınırı — insan editör yüksek çözünürlük teyidi önerilir."
+ ]
+}

@@ -1,0 +1,984 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q531329",
+ "sanatci_id": "jean-antoine-watteau",
+ "baslik": "Kythera Adası'na Yolculuk",
+ "ozgun_baslik": "Pèlerinage à l'île de Cythère",
+ "kunye": {
+  "sanatci": "Jean-Antoine Watteau",
+  "sanatci_yasam": "1684–1721 (Valenciennes – Nogent-sur-Marne)",
+  "tarih": "1717",
+  "tarih_belirsizlik": "Louvre versiyonu 1717 kesin (birincil; WD P571 precision=yıl, circa yok). Berlin versiyonu tarihi belirsiz (E): about 1718 or 1719 / 1718 / 1719.",
+  "teknik": "Tuval üzerine yağlıboya",
+  "boyut_cm": {
+   "yukseklik": 129,
+   "genislik": 194
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 8525",
+  "edinim": "Académie royale koleksiyonu → 1793 Muséum central des arts (saisie révolutionnaire); devlet malı",
+  "konum": "Aile Sully, 2. kat, Watteau salonu, Salle 917",
+  "telif_durumu": "Kamu malı (Watteau ö. 1721); Commons C2RMF dosyası PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg",
+  "kaynak": "Wikimedia Commons (C2RMF yüksek çözünürlük taraması, retouched)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata + lisans; BU OTURUMDA İNCELENEMEDİ (vision kotası)",
+   "cozunurluk": "19842×13013 px, ~93,6 MB JPEG",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; kompozisyon kaynak metinlerinden (S5/S6/S7/S10); C2RMF credit kaynak site ölü (2012 arşiv linki)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 416
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1310
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2611
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-akademi-süreci-ve-kariyer"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-ve-kompozisyon"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-yön-sorunu"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-hazırlık-ve-karşı-provalar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri",
+   "SORULAR.json"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil bildirisi ve Joconde ile künyeyi (1717, tuval/yağlıboya, 129×194, INV 8525, Salle 917) doğrular; üç versiyonu (Louvre/Berlin/Frankfurt) ayırır.",
+  "fête galante türünün bu eser için icadını ve kabul parçası statüsünü açıklar; kabul unvanı ihtilafını (D) yönetir.",
+  "Kaynak betimleriyle ikonografiyi (Venüs hermi, çiftler, putti, yaldızlı kayık) ve gidiş/dönüş açık sorusunu analiz eder (görsel incelenmedi).",
+  "Levey/Rosenberg/Ferraton/Glorieux yorumlarını ve alımlama tarihini (Romantikler, Devrim, La Caze) karşılaştırır.",
+  "Birincil arşiv kanıtının sınırını (canlı 404, collections URL yok) ve veri notlarını (karlı dağlar, Rubens+Leonardo↔Venedik) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Fête galante",
+   "tanim": "Bu eser için icat edilen, zarif açık hava aşk kutlaması türü; Watteau'nun tür kurucu rolü.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Morceau de réception",
+   "tanim": "Akademi'ye kabul için sunulan eser; Watteau 1717'de bu resimle kabul edildi.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Herm",
+   "tanim": "Alt kısmı sütuna dönüşen büst; burada gül çelenkli Venüs hermi; Levey'in dönüş tezinde adanak kanıtı.",
+   "kanit": [
+    "C012",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Atmosferik perspektif",
+   "tanim": "Uzaklaştıkça renklerin solup mavileşmesi; puslu uzak manzara (Rubens/Leonardo/Venedik etkileri).",
+   "kanit": [
+    "C015",
+    "C012"
+   ]
+  },
+  {
+   "ad": "Contre-épreuve (karşı-prova)",
+   "tanim": "Tuvalin çizgi aktarım aşamasından kâğıda alınan ters iz; hazırlık yöntemi ve ikinci versiyon niyetini belgeler.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Jean-Antoine Watteau (Valenciennes 1684 – Nogent-sur-Marne 1721).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih: 1717 (Louvre versiyonu; birincil kesin yıl; WD P571 precision=yıl, P1480 circa YOK).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik/malzeme: tuval üzerine yağlıboya (\"peinture à l'huile; toile\"; \"Oil on canvas\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 129 × 194 cm (H. 1,29 m; L. 1,94 m).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Louvre, Département des Peintures; envanter INV 8525; başlık Joconde \"PELERINAGE A L'ILE DE CYTHERE, DIT L'EMBARQUEMENT POUR CYTHERE\", cartel \"Pélerinage à l'île de Cythère\", EN \"Pilgrimage to the Isle of Cythera\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Konum: Aile Sully, 2e étage, Watteau, Salle 917.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Académie royale de peinture et de sculpture kabul parçası (morceau de réception), 1717.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Kabul günü 28 Ağustos 1717; Akademi kaydı \"Le pelerinage a l'isle de Cithère\" üstü çizilip \"une feste galante\" ile değiştirildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu o kadar yeniydi ki \"fête galante\" terimi bu eser için icat edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenans: Académie koleksiyonu → 1793 Muséum central des arts de la République (gelecekteki Louvre); \"Saisie révolutionnaire\"; \"propriété de l'Etat\"; WD P793 confiscation 1793-08, P127 French State 1793-08~.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "İkinci versiyon Jean de Julienne isteğiyle yapıldı; Frédéric II koleksiyonuna girdi; Berlin Charlottenburg Sarayı'nda.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S10",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İkonografi: aşk çiftleri, putti/cupidler, gül çelenkli Venüs heykeli/hermi, yaldızlı kayık, puslu uzak manzara; Joconde sujet \"départ, homme, femme, putti, galanterie; montagne, mer, feuillu, statue\"; Kythera Aphrodite'nin doğum yerlerinden.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Çiftlerin adaya gidişi mi dönüşü mü olduğu AÇIK SORU; Watteau bilerek cevap vermedi (\"The question is still open\" / \"sujet encore discuté\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Konu 17. yy operalarından veya Dancourt komedisinden (Les Trois Cousines, ilk sahneleniş 1700) esinlenmiş OLABİLİR (\"may/peut-être\" korunur); Joconde konu kaynağı alanına Dancourt'u doğrudan yazar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Louvre bildirisi: arka plan manzarası Rubens VE Leonardo da Vinci peyzajlarının etkisini taşır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Louvre bildirisi Rodin yorumunu yayımlar: üç sahne (galant iltifat → kalkmaya yardım → kucaklaşma/kayığa iniş); hacı pelerini, delik kalp işlemesi, hacı asası, \"bréviaire d'amour\"; \"peut-être feinte\" tereddüdü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Eser gravürle çoğaltılmıştır (Joconde genèse \"reproduit en gravure\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Louvre versiyonu Jullienne corpus'u için gravürlenmedi; Berlin versiyonu (o sırada Jullienne koleksiyonunda) gravürlendi; Louvre versiyonunu 19. yy ikinci yarısında Charles Joshua Chaplin gravürledi (Chalcographie Impériale).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Michael Levey (1961): hacılar adaya DEĞİL adadan ayrılıyor; Venüs hermine gül çelenkleri sunulmuş, çiftler kurulmuş, gün batımı başarılı gezinin sonu; \"Pèlerinage\" başlığı yöne nötr.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Pierre Rosenberg: \"her iki yorum da doğrudur\" — hem adaya gidiş hem adadan ayrılış, hem hacılık hem alegori.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Ferraton: Paris=gidiş/Berlin=dönüş (Eidelberg \"tendencious but not persuasive\"); Glorieux: Louvre=melankolik dönüş/Berlin=neşeli gidiş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Venedik etkisi: tepeler/Alp manzarası Titian ve Domenico Campagnola peyzaj çizimlerine borçlu; kale muhtemelen bir çizimden; Rubens etkisi: Crozat koleksiyonundaki Garden of Love çizimleri ve Miraculous Draught of Fishes kayıkçısı (muhtemelen bir çizim üzerinden).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "19. yy'ın büyük bölümünde Louvre'daki tek Watteau; durum 1869 La Caze bağışına kadar değişmedi; Romantik eleştirmenler umutsuz gidiş/batan güneş okudu; \"unique aura\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Devrim sonrası öğrenciler esere ekmek topu fırlattı (Bergeret anlatısı); korumak için 1816'ya kadar depoda; Watteau/Rokoko 1830'larda yeniden moda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Akademi kronolojisi: 5 Ocak 1714, 5 Ocak 1715, 25 Ocak 1716 hatırlatma; 9 Ocak 1717 ihtar + 6 ay ek süre; 28 Ağustos 1717 teslim; \"beş yıla yayılan\" kronoloji oeuvre'de eşsiz; fiilî çalışma muhtemelen 1717'den önce başlamadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sergiler: Washington/Paris/Berlin Watteau, 1684-1721 (1984) kat. P 61; Louvre-Lens Dansez, embrassez (2015) kat. 24.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Hazırlık çizimleri: BM RP 513 (kalkmaya yardım) ve RP 514 (tepedeki çift) özellikle bu resim için; Getty RP 466 oturan kadın \"değişiklik olmadan\" aktarıldı; iki yağlıboya karşı-prova (Edinburgh SNG; özel koleksiyon) ikinci versiyon planına işaret; liste değişken (Rosenberg 1984 ↔ Rosenberg/Prat 1996).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Erken versiyon Frankfurt Städel (1709–1710); Dancourt oyununun sahnelenmiş 2. perde finalini resmeder (Q19820267).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S10",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Debussy'nin L'isle joyeuse'ü (1904) resimden esinlenmiş OLABİLİR (\"may\" korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Berlin versiyonu ayrı WD maddesi: Q41637000, Charlottenburg, GK 1198; WD P571=1719; fr/it 1718; en \"about 1718 or 1719\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S3",
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Coypel (1732) Watteau'nun türünü tarih resminden ayıran eleştiri (enwiki satır içi ref, INHA s.14); alıntı metni DOĞRULANAMADI (JS görüntüleyici).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "\"MR 2726\" ikinci envanter numarası (WD P217 referanssız; birincil kayıtlarda geçmiyor).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Eser 1980 BBC Two dizisi 100 Great Paintings'de yer aldı (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Alain Jaubert'ün Palettes dizisi bölümü: \"Les secrets de la fête galante. Le pèlerinage à l'île de Cythère\" (1995) (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Eser Europeana 280 projesinde listelendi (WD P608 referanssız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Rodin yorumunun \"ortaçağ simultaneitesi\" çerçevesi yalnız frwiki'de (cineclubdecaen ref'li); Louvre bildirisi bu çerçeveyi İÇERMEZ, yalnız Rodin alıntısını verir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "Kamu malı (PD): yazar 1721'de öldü; Commons C2RMF dosyası Public domain; WD P6216 Q19652, P1001 \"100 years pma or shorter\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Poulenc iki piyano için \"L'Embarquement pour Cythere\" adlı parçayı yazdı (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C039",
+   "ifade": "Cythera hacılığı teması Tallemant Le Voyage de l'Ile d'Amour (1663/1713), Picart gravürleri (1708), Caullery/Gillot/Spoede geleneğiyle hazırdı; Watteau \"in all probability\" bazılarını biliyordu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "İHTİLAFLI kabul unvanı: \"peintre de fêtes galantes\" (Louvre birincil) ↔ \"peintre d'histoire\" (frwiki + Eidelberg 2021 \"factually incorrect legend\"); Akademi kaydı \"un tableau représentant une fête galante\" da der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S2",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "İHTİLAFLI agrément: 1712 (Louvre birincil \"Agréé en 1712\") ↔ 1714 (Grasselli zinciri); Eidelberg agrément yılını vermez, ilk hatırlatma 5 Ocak 1714.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S2",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "İHTİLAFLI yapım süresi: \"beş yıl\" (Louvre birincil) ↔ \"sekiz ay\" (Grasselli); idari süreç ↔ fiilî icra farklı şeyleri ölçüyor olabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S2",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "İHTİLAFLI Louvre'a giriş: 1793 (birincil + WD confiscation/Muséum central) ↔ 1795 (en/it Grasselli \"Louvre koleksiyonuna giriş\"); farklı olaylar olabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "İHTİLAFLI yön (başlık-yorum gerilimi): gidiş ↔ dönüş ↔ ikisi de; birincil \"soru açık\", Levey dönüş, Rosenberg ikisi de, Ferraton/Glorieux versiyonlara böler; tek doğru yorum YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S10",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası); yalnız metadata/lisans; GZ TASLAK; kompozisyon kaynak metinlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "data \"karlı dağlar\" KAYNAKSIZ: enwiki mevsim ipucu yok der; Eidelberg \"verdant hills and Alpine\"; frwiki pembe uzak dağlar; \"kar\" hiçbir kaynakta yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16",
+    "S2",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Berlin versiyonu tarihi BELİRSİZ: en \"about 1718 or 1719\" (Getlein 2005), fr/it 1718, WD 1719; Louvre 1717 sağlam.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "refs metinleri erişilmedi (Levey 1961 jstor 873302, Grasselli 1984, Coypel INHA metni, Grove, Cowart 2001 vb.); yalnız erişilen kayıtların bibliyografyasında anıldı; Eidelberg seçme kaynakçası Hédouin 1845 → Glorieux 2011.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S10",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Güncel collections.louvre.fr eser URL'si kanıt zincirinde BULUNAMADI (tahmin edilmedi); canlı louvre.fr 404, Joconde canlı err=1201; birincil kanıt Wayback arşiv kopyaları (EN 2015, FR 2019/2020, Joconde 2017).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Coğrafi tutarsızlık: frwiki Kythera \"mer Égée\" ↔ WD Q207239 \"Ionian Sea\"; Louvre yalnız \"Greek islands\"; frwiki \"Ege\" hatalı aday; künyeyi etkilemez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S13",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Son \"subversive\" okumalar: Plax Watteau'yu Akademi/Kral değerlerini baltalayan sanatçı olarak okur; Cowart genesis'i Paris balesi/absolutizm karşıtı tepkiye bağlar; Eidelberg \"theories\" der, saray/regent bağlantılarına (Caylus, Maintenon, duc d'Orléans) dikkat çeker.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "de Mirimonde ikonografi: kayık pruvası yatak gibi, gökyüzü cupidlerle dolu (bazıları meşaleli = tutku ateşi), resim bir \"gül kutlaması\" (Venüs herm'ine çelenkler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Biçimsel karşıtlık: Frankfurt düz/planar, katı pozlu; Louvre tam üç boyutlu, figürler önden arkaya diyagonal; Wölfflin Basic Principles Barok planlama örneği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Akademi konu seçimini sanatçıya bıraktı (\"à sa volonté\"); 6 ay teslim yükümlülüğü; tür hiyerarşisinde tarih resmi zirve, portre/tür altta, natürmort/peyzaj en altta; Watteau türü mitolojiyle yükseltmeye çalıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "fête galante tarihsel bağlamı: Louis XIV'ün ölümünden sonra Fransız aristokrasisinin açık hava aşk kutlaması; önceki saltanatın kasvetli son yıllarından sonra zevk/barış dönemi (Regency).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "İkincil manzara/ikonografi betimleri (görsel teyit YOK): enwiki puslu manzara mevsim/şafak-alacakaranlık ipucu vermez + cupidler çiftleri iter; frwiki istiridye kabuğu pruva (Aphrodite sembolü), pembe uzak dağlar, altın-pembe + yeşil/mavi, hafif dokunuşta hazırlık çizimleri/repentirler görünür (Moreau/Grasselli 1987 atfı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Marjinal yorumlar: Ostrowski macabre Dance of Death özdeşliği; Sloan kayık havada süzülen araç; Eidelberg ikisini \"unconvincing\" diye niteler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "frwiki yorumu: resim sosyal gerçekliği değil şiirsel temsili amaçlar; tiyatro evreni (commedia dell'arte); aristokrat/halk paralelliğinde sosyal karşıtlık yok.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "frwiki/Baridon estetik çerçevesi: perspektif \"omnipotence\"ini yitirir, renk geometri/oranı \"charm\" lehine geri plana iter; Roger de Piles \"la véritable peinture... nous appelle\"; rubenistes↔poussinistes kavgasının devamı (Baridon 1999 Persée atfı, metne erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C060",
+   "ifade": "Romantik alımlama: Goncourt'lar Watteau sanatına melankoli örtüsü geçirdi; iki yüzyıllık Romantik melankoli/hüzün örtüsü ve şiirsel/manevi aura arayışı Levey'in doğrudan okumasına direncin parçası; Eidelberg Levey'i \"en makul\" bulur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q531329 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q531329.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "The Embarkation for Cythera wikitext",
+   "url": "https://en.wikipedia.org/wiki/The_Embarkation_for_Cythera",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia FR",
+   "belge": "Le Pèlerinage à l'île de Cythère wikitext",
+   "url": "https://fr.wikipedia.org/wiki/Le_P%C3%A8lerinage_%C3%A0_l%27%C3%AEle_de_Cyth%C3%A8re",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Pellegrinaggio a Citera wikitext",
+   "url": "https://it.wikipedia.org/wiki/Pellegrinaggio_a_Citera",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée du Louvre",
+   "belge": "EN eser bildirisi (Vincent Pomarède) — Wayback 2015-11-28; canlı louvre.fr 404",
+   "url": "https://web.archive.org/web/20151128121602/http://www.louvre.fr/en/oeuvre-notices/pilgrimage-cythera",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2015-11-28); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée du Louvre",
+   "belge": "FR eser bildirisi (Vincent Pomarède) — Wayback 2019-04-10 + 2020-10-30; canlı 404",
+   "url": "https://web.archive.org/web/20201030175708/https://www.louvre.fr/oeuvre-notices/pelerinage-l-ile-de-cythere",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2019-04-10, 2020-10-30); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Fransa Kültür Bakanlığı / Joconde",
+   "belge": "Joconde tam kayıt 000PE002934 — Wayback 2017-10-06; canlı err=1201",
+   "url": "http://web.archive.org/web/20171006062633/http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=CHERCHER&FIELD_1=REF&VALUE_1=000PE002934",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2017-10-06); canlı 200 ama err=1201",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:L'Embarquement pour Cythère... C2RMF retouched.jpg imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "Category:Embarkation for Cythera by Watteau (Louvre) wikitext",
+   "url": "https://commons.wikimedia.org/wiki/Category:Embarkation_for_Cythera_by_Watteau_(Louvre)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Martin Eidelberg",
+   "belge": "A Watteau Abecedario, \"Le Pèlerinage à l'isle de Cythère\" (Entered July 2021) — Wayback 2021-07-05; canlı timeout",
+   "url": "https://web.archive.org/web/20210705123346/http://watteau-abecedario.org/Pelerinage_de_lisle_de_Cythere.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2021-07-05); canlı timeout",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikidata",
+   "belge": "etiket batch 1 (Q183221, Q3044768, Q337579, Q19019164, Q1185399, Q809825 vb.)",
+   "url": "https://www.wikidata.org/wiki/Q531329",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata",
+   "belge": "Q41637000 (Berlin versiyonu) + Q98960129 (Levey, Painting and sculpture in France 1700-1789)",
+   "url": "https://www.wikidata.org/wiki/Q41637000",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "Q19820267 (Frankfurt/Städel) + Q154996 (Charlottenburg) + Q207239 (Kythira)",
+   "url": "https://www.wikidata.org/wiki/Q19820267",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "INHA Bibliothèque numérique",
+   "belge": "Coypel, Discours sur la peinture (1732) görüntüleyici; alıntı metni JS'de, DOĞRULANAMADI",
+   "url": "https://bibliotheque-numerique.inha.fr/collection/item/6041-discours-sur-la-peinture-prononcez-dans-les-conferences-de-l-academie-royale-de-peinture-et-sculpture?offset=3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; içerik JS görüntüleyicide, metin doğrulanamadı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wayback CDX",
+   "belge": "FR/EN notice snapshot listeleri; collections.louvre.fr domain sorguları 503/504",
+   "url": "https://web.archive.org/cdx/search/cdx?url=louvre.fr/oeuvre-notices/pelerinage-l-ile-de-cythere",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (FR/EN) / 503+504 (domain)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "yerel",
+   "belge": "data/*.json (eser_ayrintilari, yerel_gorseller, gorsel_oranlari, ikonografi, eser_adlari_tr vb.) — SALT-OKUNUR",
+   "url": "yerel dosya (data/)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "yerel",
+   "belge": "denetim-asama3/basyapitlar.csv satır 60; DURUM.md satır 59; MUFREDAT.md — SALT-OKUNUR",
+   "url": "yerel dosya (basyapit-dersleri/)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Kythera Adası'na Yolculuk (ikinci versiyon)",
+   "sanatci": "Jean-Antoine Watteau",
+   "kurum": "Charlottenburg Sarayı, Berlin",
+   "envanter": "GK 1198",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun ikinci versiyonu; yön yorumu ve gravür tarihi için karşıt (Q41637000).",
+   "kanit": [
+    "C011",
+    "C030",
+    "C018"
+   ]
+  },
+  {
+   "eser": "L'Ile de Cythère (erken versiyon)",
+   "sanatci": "Jean-Antoine Watteau",
+   "kurum": "Städel, Frankfurt",
+   "mufredat_ici": false,
+   "gerekce": "1709–1710; Dancourt sahnesi; düz/planar ↔ Louvre 3D diyagonal (Q19820267).",
+   "kanit": [
+    "C028",
+    "C053"
+   ]
+  },
+  {
+   "eser": "Salıncak (L'Escarpolette)",
+   "sanatci": "Jean-Honoré Fragonard",
+   "kurum": "Wallace Collection, Londra",
+   "mufredat_ici": true,
+   "gerekce": "Rokoko aşk/oyun temasının sonraki aşaması; Watteau'nun açtığı yolun izleyicisi (Q2629559).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre EN (Wayback 2015-11-28) + FR (Wayback 2019/2020) + Joconde 000PE002934 (Wayback 2017-10-06) yeniden açıldı; künye/provenans/ikonografi/Rodin doğrulandı. Eidelberg Abecedario (Wayback 2021-07-05) yeniden okundu; kabul unvanı ihtilafı (D001), kronoloji, Levey/Rosenberg/Ferraton/Glorieux, çizimler/karşı-provalar, Venedik/Rubens etkisi doğrulandı. en/fr/it wikitext + WD + Commons metadata yeniden açıldı. Beş ihtilaf D olarak açık (C040–C044). Görsel metadata only, İNCELENMEDİ (C045); GZ TASLAK. refs metinleri erişilmedi (C048); collections URL bulunamadı (C049).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Başlık: data \"Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère)\" WD fr etiketi + P1476 ile birebir; Louvre cartel \"Pélerinage\" (é'li), Joconde \"DIT L'EMBARQUEMENT POUR CYTHERE\" ekler.",
+  "Görsel: hash bf5742ab3ec171f0 = Commons C2RMF retouched dosyası; PD, atıf zorunluluğu yok; oran 1.53 (19842/13013).",
+  "\"Rubens + Venedik\" (data): Louvre bildirisi (A) Rubens + Leonardo der; Venedik (Titian/Campagnola) Eidelberg (B) destekli. Data'nın Venedik vurgusu yanlış değil ama Leonardo data'da yok; ders her ikisini anar.",
+  "\"karlı dağlar\" (data): KAYNAKSIZ (E, C046); enwiki mevsim ipucu yok, Eidelberg verdant hills/Alp, frwiki pembe dağlar. Ders kesinleştirmez.",
+  "\"Rodin zamanda açılan tek an\" (data): Rodin alıntısı Louvre (A) mevcut; \"ortaçağ simultaneitesi\" çerçevesi yalnız frwiki (C, C036). Ders bu çerçeveyi frwiki'ye atfeder.",
+  "Versiyon: Louvre Q531329 ↔ Berlin Q41637000 (GK 1198) ↔ Frankfurt Q19820267; ikonografi.json Berlin'i listelemez (kapsam notu, hata değil).",
+  "Birincil sınır: canlı louvre.fr 404, Joconde err=1201; güncel collections.louvre.fr URL kanıtta yok (tahmin edilmedi); birincil kanıt Wayback arşiv (C049).",
+  "Görsel İNCELENMEDİ (C045); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

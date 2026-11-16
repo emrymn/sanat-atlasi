@@ -1,0 +1,559 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3212142",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede kalıcı olarak bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "C",
+     "metin": "Metropolitan Museum, New York"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée d'Orsay, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3/S4: eser Louvre Département des Peintures'te, mülkiyet Etat; güncel konum Sully Salle 919.",
+   "yanlis_gerekceleri": {
+    "B": "Prado Madrid, eserin 2011 gezici sergi durağıdır (C023); kalıcı yeri Louvre'dur.",
+    "C": "Met New York, 2000 sergi durağıdır (C023); eser orada kalıcı değildir.",
+    "D": "Orsay ayrı bir müzedir; birincil kayıtlar eseri Louvre'da gösterir."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin ana (principal) envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 3197"
+    },
+    {
+     "harf": "B",
+     "metin": "MR 1323"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 3198"
+    },
+    {
+     "harf": "D",
+     "metin": "MR 3197"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3: \"Numéro principal : INV 3197\"; Joconde da INV 3197 der.",
+   "yanlis_gerekceleri": {
+    "B": "MR 1323 \"diğer\" numaradır (autre numéro d'inventaire), ana numara değil.",
+    "C": "INV 3198, enwiki'deki Le Buffet (pendant) dosya adında geçer; bu eserin numarası değil.",
+    "D": "MR 3197, önek/sayıların yer değiştirmiş biçimidir; kayıtlarda INV 3197 + MR 1323 vardır."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin Académie royale'daki işlevi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Morceau de réception (kabul parçası)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kraliyet siparişi"
+    },
+    {
+     "harf": "C",
+     "metin": "Salon sergisi eseri"
+    },
+    {
+     "harf": "D",
+     "metin": "Lonca ustalık eseri (chef-d'œuvre)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3/S4: \"Morceau de réception à l'Académie, 1728\"; 25 Eylül 1728'te Le Buffet ile kabul (Rosenberg).",
+   "yanlis_gerekceleri": {
+    "B": "Kayıtlar kraliyet siparişi değil, Académie kabul parçası gösterir.",
+    "C": "Eser Salon'da değil Exposition de la Jeunesse + Académie kabulü bağlamında öne çıktı; \"Salon eseri\" çerçevesi doğrulanmadı.",
+    "D": "Morceau de réception, lonca chef-d'œuvre'ünün akademi karşılığıdır; ama bu bir lonca ustalık eseri değil, akademi kabul parçasıdır."
+   },
+   "kanit": [
+    "C010",
+    "C033"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin ilk kamusal gösterimi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Exposition de la Jeunesse, 3 Haziran 1728 (Place Dauphine)"
+    },
+    {
+     "harf": "B",
+     "metin": "1763 Salon"
+    },
+    {
+     "harf": "C",
+     "metin": "1796 Louvre açılışı"
+    },
+    {
+     "harf": "D",
+     "metin": "1979 Grand Palais retrospektifi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 (Rosenberg s.116): 3 Haziran 1728, Place Dauphine × Pont Neuf, birkaç saatlik açık hava sergisi; Joconde \"place Dauphine, Paris, 1728\".",
+   "yanlis_gerekceleri": {
+    "B": "1763, Diderot'un Salon yazısıdır (sonraki alımlama); ilk gösterim değil.",
+    "C": "1796, Louvre'da sergilenme kilometre taşıdır (provenance); ilk gösterim 1728'dir.",
+    "D": "1979 Grand Palais, modern bir retrospektiftir; ilk gösterim değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Birincil kayıtlara göre teknik/destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "B",
+     "metin": "Pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3 \"huile sur toile\"; S4 \"peinture à l'huile ; toile\".",
+   "yanlis_gerekceleri": {
+    "B": "Birincil kayıt tuval + yağ der; pano/tempera değil.",
+    "C": "Fresk duvar tekniğidir; eser tuvaldir.",
+    "D": "Suluboya/kâğıt değil; yağlı boya/tuval."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kaynak betimlerine göre solda hangi hayvan vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüyleri kabarmış bir kedi"
+    },
+    {
+     "harf": "B",
+     "metin": "Köpek"
+    },
+    {
+     "harf": "C",
+     "metin": "Maymun"
+    },
+    {
+     "harf": "D",
+     "metin": "Baykuş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Joconde konu listesi \"chat\"; S5 (Rosenberg s.118) sırtı kamburlaşmış, tüyleri diken diken kedi; S7 2014 \"petit chat au poil hérissé\".",
+   "yanlis_gerekceleri": {
+    "B": "Konu listesinde köpek yok; Joconde \"chat\" der.",
+    "C": "Maymun konu listesinde yok.",
+    "D": "Baykuş konu listesinde yok."
+   },
+   "kanit": [
+    "C014",
+    "C034"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Joconde konu listesinde hangi sebze geçer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pırasa (poireau)"
+    },
+    {
+     "harf": "B",
+     "metin": "Soğan"
+    },
+    {
+     "harf": "C",
+     "metin": "Lahana"
+    },
+    {
+     "harf": "D",
+     "metin": "Havuç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"nature morte (raie, chat, poireau, poisson, huître, marmite : cuivre, bouteille, pot)\" — listede pırasa (poireau) var.",
+   "yanlis_gerekceleri": {
+    "B": "Soğan Joconde konu listesinde yok.",
+    "C": "Lahana listede yok.",
+    "D": "Havuç listede yok."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "2014 Louvre notice'i eseri hangi tabloyla karşılaştırır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rembrandt, Le Boeuf écorché (Slaughtered Ox)"
+    },
+    {
+     "harf": "B",
+     "metin": "Rembrandt, Gece Devriyesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Snyders, bir mutfak natürmortu"
+    },
+    {
+     "harf": "D",
+     "metin": "Vermeer, Mutfak Hizmetçisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 (Pomarède): \"raie écorchée, évoquant Le Boeuf écorché de Rembrandt\"; Cohen 2004 (s.46–48) da karşılaştırır.",
+   "yanlis_gerekceleri": {
+    "B": "Notice Rembrandt'ın Gece Devriyesi'ni değil, yüzülmüş öküz tablosunu anar.",
+    "C": "Snyders/Fyt genel Flaman modeller olarak anılır; belirli karşılaştırma Rembrandt'ın öküzüyledir.",
+    "D": "Vermeer'in Mutfak Hizmetçisi erişilen kaynaklarda bu eserle anılmaz."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Vatozu \"çok renkli bir katedralin nefi\"ne (la nef d'une cathédrale polychrome) kim benzetir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Marcel Proust"
+    },
+    {
+     "harf": "B",
+     "metin": "Denis Diderot"
+    },
+    {
+     "harf": "C",
+     "metin": "Henri Matisse"
+    },
+    {
+     "harf": "D",
+     "metin": "Charles Baudelaire"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 (Proust, éd. 1971 s.375–376): \"comme la nef d'une cathédrale polychrome\"; S7 2014 Louvre de alıntılar.",
+   "yanlis_gerekceleri": {
+    "B": "Diderot \"iğrenç ama balığın eti/derisi/kanı\" der (1763); katedral benzetmesi Proust'un.",
+    "C": "Matisse Chardin'in tekniğini Louvre'da çalıştığını söyler; katedral benzetmesi onun değil.",
+    "D": "Baudelaire erişilen kaynaklarda bu eserle anılmaz."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Louvre güncel kaydı tarih olarak ne verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"2e quart du XVIIIe siècle (1728)\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"1727 vers\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Vers 1725 - 1726\""
+    },
+    {
+     "harf": "D",
+     "metin": "1755"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3 güncel notice: \"Date de création / fabrication : 2e quart du XVIIIe siècle (1728)\". (Tarih kurumlar arasında tartışmalıdır; bu soru güncel Louvre ifadesini sorar.)",
+   "yanlis_gerekceleri": {
+    "B": "\"1727 vers\" Joconde'un millésime ifadesidir; güncel Louvre 1728 der.",
+    "C": "\"Vers 1725 - 1726\" 2014 Louvre cartel'idir; güncel kayıt 1728 der.",
+    "D": "1755 hiçbir kaynakta bu eserin tarihi olarak geçmez."
+   },
+   "kanit": [
+    "C003"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eserin ana envanter numarası INV 3197'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (S2/S3/S4: \"Numéro principal : INV 3197\").",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser günümüzde Académie royale koleksiyonundadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Académie tarihsel sahiptir (1728); eser Devrim'de el konup Louvre'a girdi, bugün Louvre'da, mülkiyet Etat.",
+   "kanit": [
+    "C007",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser tuval üzerine yağlı boyadır.",
+   "dogru": true,
+   "aciklama": "Doğru (S2/S3 \"huile sur toile\"; S4 \"peinture à l'huile ; toile\").",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Vatoz, Chardin'in 1728'te Académie'ye kabul parçasıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (S2/S3/S4: \"Morceau de réception à l'Académie, 1728\").",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Yükseklik tüm kaynaklarda 114,5 cm olarak aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil 114,5 der ama en/fr infobox ve 2014 cartel 114 der (C028 ihtilaf); genişlik 146 ortaktır.",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (D001) analiz edin: üç birincil ifadeyi + WD/data değerlerini listeleyin; \"vers/circa\" neden korunmalıdır?",
+   "beklenen_ogeler": [
+    "Louvre güncel 1728",
+    "Joconde \"1727 vers\"",
+    "2014 \"Vers 1725-1726\"",
+    "WD preferred 1727 / circa 1725–1726",
+    "data 1727",
+    "kuşku işareti korunur, tek yıl dayatılmaz"
+   ],
+   "kanit": [
+    "C027",
+    "C003"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance kilometre taşlarını (1793 / 1796 / 1851) değerlendirin; her kaynak hangi olayı verir; uzlaştırma önerisi yazın.",
+   "beklenen_ogeler": [
+    "2014: 1793 giriş",
+    "güncel: Haziran 1796 sergileme",
+    "Joconde: 1851 maddi kayıt",
+    "farklı milestone",
+    "tek tarih dayatılmaz"
+   ],
+   "kanit": [
+    "C029",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Lajer-Burcharth'ın cinsiyetli okumasını ve Cottom'un yüz-rictus okumasını tartışın; yorumu olgudan ayırın.",
+   "beklenen_ogeler": [
+    "violence / maternal kitchen",
+    "eternal son",
+    "rictus of a grin",
+    "solungaç-göz",
+    "yorum ≠ olgu",
+    "tek doğru cevap yapılmaz"
+   ],
+   "kanit": [
+    "C022",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/ ayrıntılarını denetleyin: hangileri doğrulandı (pırasa/bakır), hangileri doğrulanmadı (kevgir/kepçe/sırlı testi/ışık yönü/salon izleyicisi); görsel teyidin rolü nedir?",
+   "beklenen_ogeler": [
+    "pırasa ✓ Joconde poireau",
+    "bakır ✓ marmite cuivre",
+    "kevgir/kepçe/sırlı testi/ışık yönü doğrulanmadı",
+    "salon izleyicisi çerçevesi doğrulanmadı",
+    "görsel teyit gerekli"
+   ],
+   "kanit": [
+    "C014",
+    "C026",
+    "C039"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Alımlama zincirini (Diderot → Proust → Matisse) izleyin; hangi halkalar atıflı, hangileri değil (1896 kopya / pastişler)?",
+   "beklenen_ogeler": [
+    "Diderot 1763 (atıflı)",
+    "Proust vers 1895/1954 (atıflı)",
+    "Matisse alıntısı (atıflı)",
+    "1896 kopya + Boudin/Soutine pastişleri atıfsız (E)",
+    "atıf zinciri / metne erişilmedi"
+   ],
+   "kanit": [
+    "C018",
+    "C019",
+    "C020",
+    "C041",
+    "C038"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Merkezde kancaya asılı vatozu bulun; elmas (rombus) biçimini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Rosenberg s.118 (kancaya asılı, kanlı alt yüz); Cottom (elmas/rombus).",
+   "kanit": [
+    "C034",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Soldaki tüyleri kabarmış kediyi ve açılmış istiridyeleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Joconde \"chat, huître\"; Rosenberg s.118 (sırtı kamburlaşmış kedi).",
+   "kanit": [
+    "C014",
+    "C034"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağda beyaz örtü üzerindeki metal kapları, sürahiyi, şişeyi, bıçağı inceleyin; pırasa ve bakır tencereyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Joconde \"poireau, marmite : cuivre, bouteille, pot\"; Rosenberg s.118 (beyaz örtü, iki metal tava).",
+   "kanit": [
+    "C014",
+    "C034"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Vatozun solungaç/ağız düzenindeki \"yüz\"ü arayın; bu kesin gözlem mi, yorum mu?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Cottom s.5 \"tragic rictus of a grin\"; Lajer-Burcharth s.99 (solungaç-göz).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Taş duvarın dikdörtgen grid'ini ve piramidal düzeni inceleyin; \"mortified geometry\" düzeni nerede bozar?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Cottom s.3,14 (elmas + grid, ağız açıklığı); Rosenberg s.117 (piramidal).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "La Raie (Intérieur de cuisine); Chardin (1699–1779); Louvre güncel 1728; tuval üzerine yağlı boya; 114,5×146 cm; Louvre INV 3197 / MR 1323, Sully Salle 919.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "İşlev + ilk gösterim?",
+   "arka": "Morceau de réception 1728; pendant Le Buffet; 3 Haziran 1728 Exposition de la Jeunesse (Place Dauphine); 25 Eylül 1728 kabul (aynı gün).",
+   "kanit": [
+    "C010",
+    "C011",
+    "C033"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Konu listesi?",
+   "arka": "Joconde: raie, chat, poireau, poisson, huître, marmite cuivre, bouteille, pot; solda kedi + istiridye, sağda beyaz örtü + kaplar.",
+   "kanit": [
+    "C014",
+    "C034"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Alımlama zinciri?",
+   "arka": "Diderot 1763 \"dégoûtant … chair même\"; Proust \"nef d'une cathédrale polychrome\" (vers 1895 / 1954); Matisse Louvre'da Chardin tekniğini çalıştı.",
+   "kanit": [
+    "C018",
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance + restorasyon?",
+   "arka": "Académie (1728) → Devrim saisie → Louvre Haziran 1796; 1798 Michau, 1952 Lepage rentoilage, 1953 Goulinat.",
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  }
+ ]
+}

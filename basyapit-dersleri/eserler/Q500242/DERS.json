@@ -1,0 +1,544 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q500242",
+ "sanatci_id": "michelangelo",
+ "baslik": "Âdem'in Yaratılışı",
+ "ozgun_baslik": "Creazione di Adamo (The Creation of Adam)",
+ "kunye": {
+  "sanatci": "Michelangelo Buonarroti",
+  "sanatci_yasam": "1475–1564",
+  "tarih": "y. 1511–1512",
+  "tarih_belirsizlik": "WD 1511 / en c.1512 / de-fr 1508–1512 / BM c.1511; birincil tarih yok (D)",
+  "teknik": "Fresk (affresco), tavan sıvası",
+  "boyut_cm": {
+   "yukseklik": 280,
+   "genislik": 570
+  },
+  "muze": "Vatikan Müzeleri, Sistina Şapeli tavanı (in situ)",
+  "envanter": "yok (in situ fresk)",
+  "edinim": "II. Julius siparişi (tavan 1508–1512)",
+  "konum": "Sistina volta, Zentrale Geschichten",
+  "telif_durumu": "Kamu malı (Michelangelo ö.1564); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:The_Creation_of_Adam_perspective_fix.jpg",
+  "kaynak": "Wikimedia Commons (perspektif düzeltmeli türev)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata; BU OTURUMDA İNCELENEMEDİ (vision bütçesi); P18 türev",
+   "cozunurluk": "3572×1663 (türev)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C027); GZ TASLAK; P18 \"laser mapping olmadan doğru reproduksiyon imkânsız\"; kompozisyon K1/K2+K4/K5 metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 411
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1300
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2484
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-sınırı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-belirsizliği-tek-yıl-mı-süreç-mi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-teknik-giornate-spolvero-rialzando-restorasyon"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-parmak-jesti-temas-mı-boşluk-mu"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-tanrı-grubundaki-figürler-havva-mı-ruh-mu"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-anatomik-hipotezler-beyin-rahim-kaburga-cameo"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Vatikan birincil kataloguyla konu/yer/ikonografiyi doğrular; birincilin künye sınırını beyan eder.",
+  "Tarih belirsizliğini (tavan ↔ sahne) ve parmak temas/boşluk tartışmasını yönetir.",
+  "Anatomik hipotezleri (beyin/rahim/kaburga/cameo) olgu değil yorum olarak sunar.",
+  "BM eskizi + fresk tekniği (giornate/spolvero/rialzando) ile üretim sürecini açıklar.",
+  "Üç ihtilafı (D) ve görsel/literatür sınırlarını (E) yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Fresk / giornate",
+   "tanim": "Islak sıva üzerine pigment; günlük sıva bölümü (16 giornate).",
+   "kanit": [
+    "C006",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Spolvero / incisione",
+   "tanim": "Çizim aktarma: delikli kâğıt+kömür tozu ↔ doğrudan kazıma.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Rialzando",
+   "tanim": "Taze intonaco kabartması; Âdem'in gözü boyalı değil kabartma.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "İnert / potentia",
+   "tanim": "Âdem yaratılmış ama hareketsiz; canlanma eşiği (potentia/actus).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "İmago Dei",
+   "tanim": "Tanrı suretinde insan; bedensel benzerlik + jest olarak görselleştirilir.",
+   "kanit": [
+    "C001",
+    "C003"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Konu: Genesis 1:26–27; Tanrı'nın Âdem'e yaşam vermesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Yer: Sistina Şapeli tavanı (volta), Vatikan Müzeleri; birincil sayfada tarih/boyut/sanatçı/envanter YOK.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İkonografi: Tanrı havada süzülür, meleklerce desteklenir, pelerinli; Âdem \"dinlenen atlet\" gibi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Dokuz Genesis sahnesinin dördüncüsü (sunak tarafından); Havva'nın Yaratılışı ile Kara/Su Ayrımı arasında.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "BM Âdem eskizi: 1926,1009.1; c.1511; koyu kırmızı tebeşir + stylus alt çizim; 193×259 mm kâğıt; verso genç başı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut 280 × 570 cm; fresk (affresco), tavan sıvası.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Tavanın tamamı ~4 yılda, 1508–1512'de boyandı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Sipariş II. Julius; önce 12 Havari planı, Michelangelo daha karmaşık şema önerdi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Alternatif başlık \"The Creation of Man\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Âdem zaten yaratılmış ama hareketsiz (inert); yaşam kıvılcımı parmakla aktarılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "İki işaret parmağı arasında küçük boşluk (~1,9 cm); \"tanrısal mükemmelliğin erişilmezliği\" yorumu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Tanrı'nın sol kolundaki figür kimliği tartışmalı: Havva (Pater yaygın) ↔ Meryem/Sophia/insan ruhu; diğer figürler doğmamış soy ruhları.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C013",
+   "ifade": "Beyin hipotezi: Tanrı grubu biçimi insan beynine benzer (Meshberger 1990 JAMA) — HİPOTEZ.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C014",
+   "ifade": "Rahim/doğum hipotezi: kırmızı örtü \"uterine mantle\", yeşil atkı göbek bağı; postpartum uterus çakıştırması (Stokes/Bruschini/Di Bella) — HİPOTEZ.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C015",
+   "ifade": "Gizli kaburga hipotezi: Âdem sol gövdesinde fazladan kaburga = Havva'nın kaburgası (Campos 2019) — HİPOTEZ.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C016",
+   "ifade": "Olası ilham: Augustus/Capricorn cameosu (Alnwick; Grimani) (Sutherland 2013) \"may have been\" — HİPOTEZ.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Âdem'in gözü boyalı değil; taze intonaco \"rialzando\" (kabartılarak) yapıldı (Angela 2013).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Atıf: Michelangelo — konsensüs; birincil sayfada ad yok → B.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "16 \"giornate\"; Tanrı/melek grubu spolvero, tunic + Âdem doğrudan kazıma (incisione) — itwiki atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "İskele 1510'da ilk yarıdan sökülüp 1511 sonbaharına kadar diğer yarıya kuruldu — itwiki atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Restorasyon 1994'te tamamlandı; öncesinde hayvan tutkalları + ağır yeniden boyamalarla kararmıştı — itwiki atıfsız; 1980 başlangıcı doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Âdem pozu, Jacopo della Quercia San Petronio (Bologna) Porta Magna formellasından esinlendi — itwiki atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Jest, Botticelli Cestello Annunciazione'sinden esinlenmiş OLABİLİR (\"forse\") — itwiki atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Tarih ihtilafı: WD 1511 ↔ itwiki 1511 circa ↔ enwiki c.1512 ↔ de/fr 1508–1512 ↔ BM c.1511; birincil sayfada tarih YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Parmak ihtilafı: birincil \"temas/contact\" (yaşam soluğu) ↔ ikincil fiziksel boşluk ~1,9 cm.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sayım ihtilafı: BM \"third bay\" ↔ itwiki \"sesta campata\"/bay4 ↔ fr/en \"4th scene\"; sahne sırası ↔ mimari bay farklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); P18 perspektif düzeltmeli türev (\"laser mapping olmadan doğru reproduksiyon imkânsız\"); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "refs monografi/makale metinleri erişilmedi (kaynakçada anıldı); itwiki Vasari alıntısı bakım etiketli/şüpheli → kullanılmadı; hipotezler olgu değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Vatikan Müzeleri",
+   "belge": "Erschaffung Adams katalog (de)",
+   "url": "https://www.museivaticani.va/content/museivaticani/de/collezioni/musei/cappella-sistina/volta/storie-centrali/creazione-di-adamo.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML; tarih/boyut/sanatçı/envanter yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Vatikan Müzeleri (eski, fr)",
+   "belge": "scheda CSNs_V_StCentr_06 (Wayback 2003-07-23)",
+   "url": "http://web.archive.org/web/20030723032832/http://mv.vatican.va:80/5_FR/pages/x-Schede/CSNs/CSNs_V_StCentr_06.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 000; arşiv 200 (2003-07-23)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Vatikan Müzeleri (eski, fr)",
+   "belge": "volta Histoires centrales (Wayback 2017-01-10)",
+   "url": "http://web.archive.org/web/20170110171008/http://mv.vatican.va:80/5_FR/pages/CSN/CSN_Volta_StCentr.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 000; arşiv 200 (2017-01-10)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Creation of Adam",
+   "url": "https://en.wikipedia.org/wiki/The_Creation_of_Adam",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Creazione di Adamo (Vasari alıntısı şüpheli)",
+   "url": "https://it.wikipedia.org/wiki/Creazione_di_Adamo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "British Museum",
+   "belge": "Adam eskizi 1926,1009.1 (Wayback 2020-02-02)",
+   "url": "https://web.archive.org/web/20200202013302/https://research.britishmuseum.org/research/collection_online/collection_object_details.aspx?images=true&museumno=1926,1009.1&objectId=716122&page=1&partId=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2020-02-02)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikidata",
+   "belge": "Q500242",
+   "url": "https://www.wikidata.org/wiki/Q500242",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikimedia Commons",
+   "belge": "The Creation of Adam perspective fix.jpg (+cropped/tam)",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Creation_of_Adam_perspective_fix.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ; perspektif türevi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "San Petronio Porta Magna formellası",
+   "sanatci": "Jacopo della Quercia",
+   "kurum": "Bologna",
+   "gerekce": "Âdem poz kaynağı (itwiki, atıfsız).",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "eser": "Cestello Annunciazione",
+   "sanatci": "Sandro Botticelli",
+   "gerekce": "Jest kaynağı olabilir (\"forse\", itwiki).",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Son Akşam Yemeği",
+   "sanatci": "Leonardo da Vinci",
+   "mufredat_ici": true,
+   "gerekce": "Yüksek Rönesans zirveleri; psikolojik an ↔ yaratılış anı.",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Vatikan resmî katalog (K1, de) ham HTML + arşiv scheda/volta (K2/K3) + BM eskiz (K6) yeniden açıldı; konu/yer/ikonografi/eskiz doğrulandı; birincilde tarih/boyut/sanatçı yok (C002). en/it wikitext yeniden okundu; üç ihtilaf (C024–C026) D; hipotezler C. Görsel K8 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C027); P18 türev; GZ TASLAK. Refs metinleri erişilmedi; Vasari alıntısı şüpheli → kullanılmadı (C028).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1511\" ↔ en c.1512/de-fr 1508–1512; öneri \"y. 1511–1512 (tavan 1508–1512)\" (C024).",
+  "Teknik: data'da teknik alanı YOK; fresk eklenmeli (C006).",
+  "Boyut 280×570 data'da yok (C006).",
+  "Envanter yok (in situ); beklenmemeli.",
+  "Üç ihtilaf D: C024–C026.",
+  "Görsel İNCELENEMEDİ (C027); P18 türev; GZ TASLAK; insan editör zorunlu.",
+  "Vasari alıntısı itwiki bakım etiketli → kullanılmadı (C028)."
+ ]
+}

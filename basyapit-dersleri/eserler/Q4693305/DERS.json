@@ -1,0 +1,829 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q4693305",
+ "sanatci_id": "francisco-de-zurbaran",
+ "baslik": "Tanrı'nın Kuzusu (Agnus Dei)",
+ "ozgun_baslik": "Agnus Dei (A lamb)",
+ "kunye": {
+  "sanatci": "Francisco de Zurbarán",
+  "sanatci_yasam": "1598–1664",
+  "tarih": "y. 1635–1640",
+  "tarih_belirsizlik": "İmzasız/tarihsiz; Prado \"most specify 1635-1640\" / \"la mayoría apuntan al período 1635-40\"; tahmin (E1). data tek yıl \"1635\".",
+  "teknik": "Yağlıboya, tuval üzerine (Oil on canvas / Óleo sobre lienzo)",
+  "boyut_cm": {
+   "yukseklik": 37.3,
+   "genislik": 62
+  },
+  "muze": "Museo del Prado, Madrid",
+  "envanter": "P007293",
+  "edinim": "Socorro markileri; Durán Subastas de Arte, Madrid, Şubat 1986 (subasta 200, lote 47), Estado derecho de tanteo, 26.400.000 pts (O.M. 26-II-1986); müzeye giriş 1-IV-1987",
+  "konum": "Sala 010A, Madrid (24-01-2025 kaydı); Londra National Gallery geçici sergi \"Zurbarán 2026-2027\" (02-06-2026 kaydı; D3)",
+  "telif_durumu": "Kamu malı (Zurbarán ö. 1664, >100 yıl pma); Commons PD (Yorck Project / Zenodot GFDL)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Francisco_de_Zurbar%C3%A1n_006.jpg",
+  "kaynak": "Wikimedia Commons (The Yorck Project / Zenodot Verlagsgesellschaft mbH); Credit: eski Prado galeri URL (S3)",
+  "lisans": "Public domain (PD-old-100 + PD-Art/Yorck Project; derleme GFDL Zenodot)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük; BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2952×1750 px; 5.783.471 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C048); GZ TASLAK; kompozisyon Prado (S1/S2/S3) + Met (S11) metninden; C028/E4 görsel iddiaları doğrulanmadı; Commons Artist \"Unknown author\" (E8)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 415
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1382
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2741
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-sürüm-farkları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri-ve-kayıt-çelişkileri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ve-üslup-bağlamı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-yalınlık-ve-kurban-duruşu"
+  ],
+  "5": [
+   "DERS_BASLANGIC.md#agnus-dei-ne-demek",
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-kuzu-kehaneti-zinciri-ve-temsil-sorunu"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-bodegón-çizgisi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyonlar-ailesi"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Prado birincil kaydıyla künyeyi (Zurbarán, y. 1635–1640, yağlıboya tuval, 37,3×62, P007293) doğrular.",
+  "Agnus Dei ikonografisini (Yuhanna 1:29, Yeşaya 53:7, 1 Petrus 1:19) ve Prado versiyonunun halesiz/yazıtsız oluşunu açıklar.",
+  "Eserin dini resim–natürmort (bodegón) sınırındaki yerini ve 'en üstün versiyon' değerlendirmesini analiz eder.",
+  "Başlık/boyut/konum/yüzey/versiyon sayısı ihtilaflarını (D1–D8) ve frwiki hale-yazıt karışıklığını yönetir.",
+  "Met 1987 kataloğunun cat. 52 = San Diego olduğunu, Prado için doğrudan künye kaynağı olamayacağını ayırt eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Agnus Dei",
+   "tanim": "Latince \"Tanrı'nın Kuzusu\"; Vaftizci Yahya'nın İsa için kullandığı unvan (Yuhanna 1:29); kurban simgesi.",
+   "kanit": [
+    "C021",
+    "C030"
+   ]
+  },
+  {
+   "ad": "Bodegón",
+   "tanim": "İspanyol natürmortu; motifin yalıtılması + hacim/doku aktarımı; dini resimle sınır komşusu.",
+   "kanit": [
+    "C020",
+    "C031"
+   ]
+  },
+  {
+   "ad": "Nimbo (hale)",
+   "tanim": "Kutsal figürün başı etrafındaki ışık halkası; Prado versiyonunda yok, San Diego/San Fernando'da var.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Tenebrizm",
+   "tanim": "Sert ışık-karanlık karşıtlığı; data'da geçen terim, erişilen Prado metninde bu ad yok (yorum).",
+   "kanit": [
+    "C026",
+    "C017"
+   ]
+  },
+  {
+   "ad": "Derecho de tanteo",
+   "tanim": "Devletin müzayedede öncelikli satın alma hakkı; 1986 Durán satışında Estado tarafından kullanıldı.",
+   "kanit": [
+    "C006"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Francisco de Zurbarán'a (Fuente de Cantos, Badajoz 1598 – Madrid 1664) aittir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarihlendirme 1635–1640 aralığıdır; eser imzasız ve tarihsizdir, tarih müze tahminidir (\"most specify 1635-1640\" / \"la mayoría apuntan al período 1635-40\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Yağlıboya, tuval üzerine (Oil on canvas / Óleo sobre lienzo).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 37,3 × 62 cm (güncel Prado ölçümü; yükseklik ihtilafı → C034).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Museo del Prado koleksiyonunda; envanter P007293 (eski kayıtta \"P07293\"); Nuevas Adquisiciones envanteri núm. 2168.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Socorro markileri koleksiyonundan; Şubat 1986 Durán müzayedesi (subasta nº 200, lote 47), Estado derecho de tanteo, 26.400.000 peseta (O.M. 26-II-1986); müzeye giriş 1-IV-1987.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Arka yüzde \"Rex Ferdinandus [con una llave y un trébol]\" balmumu mühürü; VII. Fernando'ya ait olduğu bilgisi (wiki B zinciri).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "İç Savaş dönemi \"Junta de Incautación y Protección del Patrimonio Artístico\" etiketi, no 3503/1, \"Exma. Sra. marquesa Vda. de Socorro\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "24-01-2025 kaydında Madrid Sala 010A teşhirde; 02-06-2026 güncellemesinde Londra National Gallery geçici sergi (\"Zurbarán 2026-2027\", 02.05–23.08.2026); sahiplik Prado'da sabit (→ C035).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Prado güncel EN başlığı \"A lamb\", ES \"Agnus Dei\"; 2014 EN galeri \"Agnus Dei (The Lamb of God)\"; 1986 envanter \"Carnero pequeño\" (→ C033).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Prado versiyonu kalite açısından en üstün kabul edilir (\"considered the finest of the five\" / \"se considera la de mayor calidad\"); teknik ustalık + betimleme + ifade + duygusal incelik sentezi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sergileme geçmişi (seçme): Seeing Salvation (Londra 2000), Caravaggio y la pintura realista europea (Barcelona 2005–06), El Prado en el Hermitage (2011), La belleza encerrada (2013), ¡Hola Prado! (Basel 2017), Banco de la República (Bogotá 2018), Rembrandt-Velázquez (Amsterdam 2019–20), Reencuentro/Reunited (Madrid 2020–21), Les Choses (Paris 2022–23), Zurbarán (Londra 2026).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Telif: kamu malı (yazar ölümü 1664; >100 yıl pma); WD P6216=Q19652 + Commons PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Tek motif: 8–12 aylık merino kuzu; hâlâ canlı; ayakları bir kordonla bağlı yatıyor; kurban duruşu (\"unmistakably sacrificial posture\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Koyu fon + gri masa (\"gray table\" / \"mesa gris\") resmin tek motifinin sahnesidir (yüzey ihtilafı → C036).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Duruş, Roma'daki Santa Cecilia bazilikasındaki Stefano Maderno'nun Santa Cecilia heykeli gibi şehit santo imgelerini anımsatır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Hesaplı ve yönlendirilmiş ışık, geniş gölge alanları, doku aktarımında titiz teknik; kuzu \"kaderine boyun eğmiş\" görünür (\"parece asumir con mansedumbre su destino fatal\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Prado versiyonunda hale (nimbo) ve yazıt YOKTUR; bunlar diğer bazı versiyonlarda vardır (→ C037).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Yazıtsız/halesiz olmasına rağmen çoğu araştırmacı eseri Agnus Dei olarak yorumlar; kuzu–Tanrı'nın Oğlu bağlantısı 17. yy İspanyasında o kadar yaygındı ki dinsel çağrışımdan soyutlamak \"resulta improbable\" (Portús).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Eser dini resim ile natürmortun sınırında durur; bodegón tarihi açısından önemlidir; motifin yalıtılması + hacim/doku aktarımı natürmort tipiktir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "\"Agnus Dei\" = Tanrı'nın Kuzusu; Yuhanna 1:29'da Vaftizci Yahya'nın İsa için kullandığı unvan (\"The Lamb of God who takes away the sin of the World\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S3",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Palomino 1724'te yazar: Sevilla'daki bir meraklı, Zurbarán'ın doğadan boyadığı kuzusunu \"yüz canlı koçtan\" daha çok değerler (\"más que cien carneros vivos\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Zurbarán'ın elinden beş başka versiyon daha bilinir; üçü 1631, 1632, 1639 tarihlidir; temsil \"probablemente privada\" bir clientele tarafından benimsenmiştir (→ C038, C043).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Diğer versiyon künyeleri: GMG Vakfı İsviçre (1631 imzalı, 84×116, cat. 39); Plandiura (1632 imzalı, 60×83, Barcelona, cat. 55; Bilbao 2004, El País 2015 \"inexportable\"); Madrid özel (37×58, c.1635–1640, cat. 105 bis, Díaz Padrón 1981); Ansorena 1996 (cat. 106, 2005 restorasyon); San Diego (35,56×52,07, Putnam, hale + \"TANQUAM AGNUS\", cat. 107); San Fernando (\"F.Z. 1639\", 47,6×55,9, 1999 Sotheby's NY, hale + \"TANQVAM AGNVS/IN OCCISIONE (M)\", cat. 149).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Adlandırma tartışması: Delenda'ya göre yedi versiyondan beşi \"Agnus Dei\" değil \"corderos/carneros con las patas atadas\"dır (boynuz varlığı + dinsel öznitelik yokluğu); uzmanlar \"Cordero de Dios\" adında uzlaşamamıştır (→ C042).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Kısıtlı palet (beyaz/krem/gri/siyah) listesi ve \"tenebrizm\" terimi data'ya özgüdür; erişilen Prado metinlerinde bu liste/terim yoktur (ışık-gölge betimi A: C017).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "Işık TEK kaynaktan gelir (2014 Prado galeri: \"brightly light by a single light source\" [sic]); \"soldan\" yönü erişilen metinlerde YOK (→ C044).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel ayrıntılar (gözler yarı kapalı, pembe burun, kıvrık boynuzlar, baş sekiye yaslı, toynaklar üst üste): görsel incelenmedi; erişilen metinlerde yok (boynuz hariç: S8 Delenda \"cuernos presentes\").",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "Met 1987 kataloğunda Agnus Dei girişi cat. 52 = SAN DIEGO versiyonu (ca. 1636–40; 35,6×52 cm; \"TANQUAM AGNUS\"; Putnam armağanı). Prado versiyonu katalog girişi DEĞİL; tartışma metninde \"Marquesa del Soccoro, Madrid\" kuzusu olarak anılır; San Diego ile \"two undated smaller paintings\"; Jerez Adoration of the Shepherds (1639) benzerliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "İkonografik zincir: 1 Petrus 1:19 (Fısıh kuzusu), Yuhanna 1:29, Yeşaya 53:7; 692 Konstantinopolis konsili (İsa'nın yalnız insan temsili); Luis de León, De los nombres de Cristo (1595, fol. 249–50); Vicente Carducho (1633; 1979 baskı s.348); açık simge içersin içermesin \"charged with symbolic meaning\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "İspanyol natürmort çizgisi: Juan Sánchez Cotán → Zurbarán 1633 Norton Simon bodegón; kuzu \"sacrificial block\" üzerinde, parlak ışıklı, koyu fon; \"neck resting on a table\", \"wool like tiny packets of granules\" (bu betim SAN DIEGO versiyonuna ait).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "San Diego kökeni: Alphonse Oudry (?), Oudry satışı Hôtel Drouot 16–17 Nisan 1869 no.129 (?); Arthur Kay (Edinburgh, 1943'e dek); Christie's 1929 ve 1943; 1947 Putnam armağanı. PDF bibliyografyası: Palomino 1724 (1947) s.938; Díaz Padrón 1981 (Goya 164–65, s.66–69); Angulo Íñiguez 1950b (Archivo español de arte 23, s.77–78).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Başlık ihtilafı (D1): S1 EN \"A lamb\" ↔ S2/WD/data \"Agnus Dei\" ↔ S3 (2014) \"Agnus Dei (The Lamb of God)\" ↔ 1986 envanter \"Carnero pequeño\"; hata değil sürüm farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "Yükseklik ihtilafı (D2): 37,3 cm (S1/S2 + WD) ↔ 38 cm (S7/S8/S9 + S5 Commons) ↔ 37,5 cm (1986 envanter); genişlik her yerde 62; güncel müze ölçümü 37,3 esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "Konum ihtilafı (D3): S2 (24-01-2025) Sala 010A Madrid ↔ S1 (02-06-2026) Londra NG geçici sergi; sahiplik Prado'da sabit, teşhir zamana bağlı; canlı 403 → bugünkü durum DOĞRULANAMADI.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "Yüzey ihtilafı (D4): S1/S2 \"gray table\"/\"mesa gris\" ↔ S3 (2014) \"windowsill\" (denizlik) ↔ data \"gri, taş bir seki\"/\"Taş seki bir sunağı çağrıştırır\"; \"TAŞ\" hiçbir erişilen kaynakta yok; WD P180 \"table\" güncel Prado ile uyumlu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Hale + yazıt ihtilafı (D5): S9 (frwiki) Acts 8:32 + \"TANQUAM AGNUS\" + \"nimbe crucifère\"i esere atfeder ↔ S2/S7/S8 Prado'da İKİSİ DE YOK; hale/yazıt yalnız San Diego + San Fernando; frwiki versiyonları karıştırmış, güvenilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Versiyon sayısı ihtilafı (D6): S1/S2 \"five other versions\" (toplam 6) ↔ S9 \"six versions\" (6) ↔ S8 \"al menos siete versiones\" (Delenda 2009: 7 autograf); Delenda metni erişilemedi (S10 ölü) → uzlaştırılamıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Atıf sayfası ihtilafı (D7): Delenda cat. 105 wiki \"page/346-347\" ↔ S1 \"T.I: 342-343 nº.105\" ↔ S2 \"pp. 342\"; Cano 2014 S9 \"passage=118\" ↔ S1/S2 \"pp. 10-29 [19]\"; baskı/sayfalama farkı olabilir; metinler erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "enwiki–Met notu ihtilafı (D8): S7 \"contains material on this painting (see index)\" ↔ S11 index \"Agnus Dei 52 ... San Diego Museum of Art\"; Prado katalog girişi değil, Socorro kuzusu olarak anılıyor; enwiki notu yanıltıcı; Baticle San Diego \"ca. 1636-40\" (S7/S8: 1635–1640).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Tarih belirsizliği (E1): imzasız/tarihsiz; S1 \"most specify 1635-1640\", S2 \"la mayoría apuntan al período 1635-40\", S7 \"the date has been estimated\" + \"{{Circa|1635|1640}}\"; data \"tarih\":\"1635\" tek yıl.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S7",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "Adlandırma belirsizliği (E2): Delenda doğa çalışması / \"carneros con las patas atadas\" (S8) ↔ Prado/Portús \"la mayoría de los estudiosos la han interpretado, certeramente, como un Agnus Dei\" (S2); uzlaşma yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Clientele belirsizliği (E3): S1 \"probably by private clients\"; S2 \"una clientela probablemente privada\" — kesinleştirilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Görsel yön belirsizliği (E4): \"Işık soldan\" (data) erişilen metinlerde yok (S3 \"single light source\" der, YÖN belirtmez); yarı kapalı göz, pembe burun, baş sekiye yaslı, toynaklar üst üste metinlerde yok, görsel İNCELENMEDİ.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "WD konum başlangıcı belirsizliği (E5): WD P276 P580=1986 (yıl) ↔ Prado edinme Şubat 1986, giriş 1-IV-1987; WD edinme yılını konum başlangıcı gibi kodlamış; \"1986'dan beri Prado'da\" giriş tarihiyle karıştırılmamalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "Baticle 1987 Socorro kaydı belirsizliği (E9): S11 Prado kuzusunu hâlâ \"in the collection of the Marquesa del Soccoro, Madrid\" diye anar ↔ S1/S2 Estado edinimi Şubat 1986, giriş 1-IV-1987; katalog metni edinimden önce yazılmış olabilir; uzlaştırılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "1631 versiyon yeri belirsizliği (E10): S11 \"1631 (private collection, Madrid)\" ↔ S7/S8 GMG Foundation İsviçre (84×116, imzalı 1631); taşınma ya da farklı versiyon olabilir; Delenda metni erişilmediğinden uzlaştırılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons PD (PD-old-100 + PD-Art/Yorck Project; derleme GFDL Zenodot Verlagsgesellschaft mbH); 2952×1750 px; GZ TASLAK; C028 görsel iddiaları doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "WD refsiz claim'ler (P170/P195/P136/P180/P140/P495) tek başına C (S1/S2 ile A); diğer versiyon doğrulanmamış ayrıntılar (S9 Gencat \"bien d'intérêt national\"; S8 San Fernando \"TANQVAM AGNVS/IN OCCISIONE (M)\"); Commons metadata (Artist \"Unknown author\"; ImageDescription \"38 cm × 62 cm\" → C034).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "EN katalog \"A lamb\" (güncelleme 02-06-2026)",
+   "url": "https://web.archive.org/web/20260906160208/https://www.museodelprado.es/en/the-collection/art-work/agnus-dei/795b841a-ec81-4d10-bd8b-0c7a870e327b",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (bot); Wayback 200 (arşiv 2026-09-06)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "ES katalog \"Agnus Dei\" (güncelleme 24-01-2025)",
+   "url": "https://web.archive.org/web/20250126080915/https://www.museodelprado.es/coleccion/obra-de-arte/wd/795b841a-ec81-4d10-bd8b-0c7a870e327b",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (bot); Wayback 200 (arşiv 2025-01-26)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "eski online galeri EN \"Agnus Dei (The Lamb of God)\" (© 2014)",
+   "url": "https://web.archive.org/web/20140428042525/https://www.museodelprado.es/en/the-collection/online-gallery/on-line-gallery/obra/agnus-dei-the-lamb-of-god/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "Wayback 200 (arşiv 2014-04-28); canlı denenmedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "eski galeri ES (eswiki external link)",
+   "url": "https://web.archive.org/web/20231121232150/http://www.museodelprado.es/coleccion/galeria-on-line/galeria-on-line/obra/agnus-dei/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "Wayback 200 ama içerik 404 (\"Página no encontrada\") → ÖLÜ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Francisco de Zurbarán 006.jpg imageinfo",
+   "url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_006.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata + lisans; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikidata",
+   "belge": "Q4693305 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4693305.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"Agnus Dei (Zurbarán)\" wikitext (pageid 35925810)",
+   "url": "https://en.wikipedia.org/wiki/Agnus_Dei_(Zurbar%C3%A1n)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikipedia (es)",
+   "belge": "\"Agnus Dei (Zurbarán)\" wikitext (pageid 1542942)",
+   "url": "https://es.wikipedia.org/wiki/Agnus_Dei_(Zurbar%C3%A1n)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikipedia (fr)",
+   "belge": "\"Agnus Dei (Zurbarán)\" wikitext (pageid 9457898; eswiki çevirisi rev 85427830)",
+   "url": "https://fr.wikipedia.org/wiki/Agnus_Dei_(Zurbar%C3%A1n)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wildenstein Plattner Institute",
+   "belge": "Delenda catálogo razonado cilt I (publitas pp. 346/347)",
+   "url": "https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_francisco_de_zurbaran_volume_i_wildenstein_institute/page/346%2F347",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 404; Wayback snapshot YOK; enwiki {{Dead link}}",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Metropolitan Museum of Art (kütüphane)",
+   "belge": "Zurbarán / Jeannine Baticle; sergi kataloğu (Met NY 1987; Grand Palais 1988), 352 s.",
+   "url": "https://libmma.contentdm.oclc.org/digital/collection/p15324coll10/id/63943",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "PDF TAM indirildi HTTP 200 (112.992.009 bayt); OCR pypdf; cat. 52 = San Diego",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Sanat Atlası (proje içi)",
+   "belge": "data/basyapitlar.json [47]; eser_ayrintilari [52]; ders_kaynaklari dersler[7]; sanatcilar [82]; yerel_gorseller; gorsel_oranlari",
+   "url": "https://www.wikidata.org/wiki/Q4693305",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel, salt-okunur",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Agnus Dei (San Diego versiyonu)",
+   "sanatci": "Francisco de Zurbarán",
+   "kurum": "San Diego Museum of Art",
+   "gerekce": "Hale + \"TANQUAM AGNUS\" yazıtlı versiyon; Met 1987 cat. 52; Prado'nun halesiz/yazıtsız betimiyle ikonografik karşıtlık.",
+   "kanit": [
+    "C029",
+    "C018"
+   ],
+   "mufredat_ici": false
+  },
+  {
+   "eser": "Bodegón (portakal çiçeği, portakal ve limon)",
+   "sanatci": "Francisco de Zurbarán",
+   "kurum": "Norton Simon Foundation, Pasadena",
+   "gerekce": "1633; Sánchez Cotán'ın başlattığı İspanyol natürmort çizgisi; kuzu betiminin bodegón bağlamı.",
+   "kanit": [
+    "C031"
+   ],
+   "mufredat_ici": false
+  },
+  {
+   "eser": "Santa Cecilia heykeli",
+   "sanatci": "Stefano Maderno",
+   "kurum": "Santa Cecilia bazilikası, Roma",
+   "gerekce": "Prado kaydının şehit santo duruşu benzetmesi; bağlı kuzunun kurban duruşuyla karşılaştırma.",
+   "kanit": [
+    "C016"
+   ],
+   "mufredat_ici": false
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Prado birincil EN (S1, Wayback 2026-09-06) + ES (S2, Wayback 2025-01-26) + eski galeri EN (S3, Wayback 2014-04-28) yeniden açıldı; künye/konu/provenance/mühür/konum/başlık/ikonografi doğrulandı. Met 1987 (S11) tam metin yeniden okundu: cat. 52 = San Diego, Prado Socorro kuzusu olarak anılıyor (D8). en/es/fr wikitext (S7/S8/S9) yeniden okundu: frwiki hale-yazıt karışıklığı (D5), versiyon sayısı (D6), atıf sayfaları (D7). Commons (S5) metadata + WD (S6) doğrulandı. Görsel İNCELENEMEDİ (C048); GZ TASLAK. Delenda (S10) erişilemez; diğer versiyon künyeleri atıf zinciriyle B.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1635\" tek yıl ↔ Prado/WD 1635–1640 (özet doğru); circa korunmalı (E1, C041).",
+  "Yüzey: data \"gri, taş bir seki\" + \"Taş seki bir sunağı çağrıştırır\" ↔ güncel Prado \"mesa gris\", 2014 \"windowsill\"; \"taş\" hiçbir erişilen kaynakta yok (D4, C036).",
+  "Işık: data \"ışık soldan\" ↔ S3 yalnız \"single light source\" (yön yok); görsel incelenmedi (E4, C044); önceki \"dogrulandi\" işaretine güvenilmedi.",
+  "Hale/yazıt: data \"Prado'da ikisi de yok\" S2 ile UYUMLU (A, C018); frwiki aksi iddiası D5/C037'de çürütüldü.",
+  "Konum: data \"Museo del Prado\" sahiplik doğru; S1 (02-06-2026) Londra NG geçici sergi (D3, C035); canlı 403 → bugünkü durum doğrulanamadı.",
+  "Envanter: P007293 data/muze_numaralari.json'da yok; WD P217 + S1/S2'den eklenebilir (bu brief ekleme YAPMAZ).",
+  "Met kataloğu: cat. 52 = San Diego (D8, C040); Prado için doğrudan künye kaynağı gösterilirse yanlış atıf olur.",
+  "Palet/tenebrizm: data \"beyaz/krem/gri/siyah\" + \"tenebrizm\" terimi erişilen Prado metninde yok (C026, C/yorum).",
+  "Görsel: İNCELENEMEDİ (C048); GZ TASLAK; Commons PD (Yorck Project/Zenodot GFDL); insan editör görsel teyidi zorunlu."
+ ]
+}

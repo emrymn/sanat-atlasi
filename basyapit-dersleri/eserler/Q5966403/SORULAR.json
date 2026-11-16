@@ -1,0 +1,549 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5966403",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergilenmektedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée d'Orsay, Paris (Salle 32)"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Galerie du Jeu de Paume, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée Marmottan Monet, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay FR/EN kaydı: \"Niveau supérieur, Salle 32\"; envanter RF 2849 (K1/K2).",
+   "yanlis_gerekceleri": {
+    "B": "Louvre, eserin 1930–1947 arasındaki kurumudur; 1986'dan beri Orsay'dadır (C007).",
+    "C": "Jeu de Paume, 1947–1986 arasındaki sergi mekânıdır; güncel konum değildir (C007).",
+    "D": "Marmottan Monet farklı bir müzedir; eser Orsay'dedir (C006)."
+   },
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 2849"
+    },
+    {
+     "harf": "B",
+     "metin": "000PE003996"
+    },
+    {
+     "harf": "C",
+     "metin": "n°104"
+    },
+    {
+     "harf": "D",
+     "metin": "M5060"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay \"Numéro d'inventaire RF 2849\"; POP INV \"RF 2849\" (K1/K4).",
+   "yanlis_gerekceleri": {
+    "B": "000PE003996 Joconde kayıt numarasıdır (REF), envanter değil (C019).",
+    "C": "n°104, 1874 sergisi katalog numarasıdır (C012).",
+    "D": "M5060, POP MUSEO kurum kodudur (C019)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Tablonun modelleri kimlerdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sanatçının ablası Edma Pontillon ve kızı Blanche"
+    },
+    {
+     "harf": "B",
+     "metin": "Morisot'nun kendisi ve kızı"
+    },
+    {
+     "harf": "C",
+     "metin": "Mary Cassatt ve kızı"
+    },
+    {
+     "harf": "D",
+     "metin": "Édouard Manet'nin eşi ve kızı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay Indexation: \"Pontillon Adolphe Mme, née Edma Morisot, soeur de Berthe Morisot (1839-1921)\" ve \"Pontillon Blanche, nièce de Berthe Morisot (1871-1941)\" (K1).",
+   "yanlis_gerekceleri": {
+    "B": "Kayıtlı modeller Edma ve Blanche Pontillon'dur; eser bir otoportre değildir (C009).",
+    "C": "Cassatt model değildir; Orsay Edma Pontillon'u kaydeder (C009).",
+    "D": "Manet'nin eşi ve kızı kayıtlı modeller değildir; modeller Pontillon anne-kızdır (C009)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun yapım yılı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1872"
+    },
+    {
+     "harf": "B",
+     "metin": "1874"
+    },
+    {
+     "harf": "C",
+     "metin": "1868"
+    },
+    {
+     "harf": "D",
+     "metin": "1886"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay \"Date 1872\"; POP MILL [\"1872\"] (K1/K4).",
+   "yanlis_gerekceleri": {
+    "B": "1874, ilk Empresyonist sergisinin yılıdır; yapım yılı değil (C012).",
+    "C": "1868, Manet'nin Ville-d'Avray anekdotunun yılıdır (C030).",
+    "D": "1886, eserin Orsay'a atfedildiği yıldır (C007)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tablonun tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya (huile sur toile)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Kâğıt üzerine pastel"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay \"huile sur toile\"; POP TECH [\"peinture à l'huile\",\"toile\"] (K1/K4).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; kayıt tuval/yağlıboya der (C004).",
+    "C": "Pastel bu eserin tekniği değildir; kayıt yağlıboya/tuvaldir (C004).",
+    "D": "Suluboya değil; Orsay ve POP yağlıboya/tuval kaydeder (C004)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Tablo 1874'te hangi sergide gösterildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlk Empresyonist sergi, Atelier Nadar, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Resmî Salon"
+    },
+    {
+     "harf": "C",
+     "metin": "Durand-Ruel 1896 sergisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Bernheim-Jeune 1919 sergisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay Expositions: \"Première exposition impressionniste - Atelier Nadar - Paris, 1874, n°104\" (K1).",
+   "yanlis_gerekceleri": {
+    "B": "İlk gösterim Atelier Nadar'daki bağımsız Empresyonist sergisidir; Salon kaydı yok (C012).",
+    "C": "1896 Durand-Ruel, ölüm sonrası sergidir (C021).",
+    "D": "1919 Bernheim-Jeune, ölüm sonrası sergidir (C021)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Orsay'ye göre tablonun Morisot sanatındaki yeri nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlk annelik (maternité) imgesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Son tablosu"
+    },
+    {
+     "harf": "C",
+     "metin": "Tek manzara resmi"
+    },
+    {
+     "harf": "D",
+     "metin": "İlk otoportresi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay: \"C'est la première apparition d'une image de maternité dans l'oeuvre de Morisot\" (K1).",
+   "yanlis_gerekceleri": {
+    "B": "Morisot 1895'te ölmüştür; 1872 tarihli bu eser son tablosu değildir (C001/C003).",
+    "C": "Konu indeksleri beşik/kadın/bebek/uyku'dur; manzara değil (C018).",
+    "D": "Modeller Edma ve Blanche'tır; otoportre değil (C009)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1874 sergisinden sonra tabloya ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Satılamadı, modelin ailesinde kaldı; 1930'da devlet satın aldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Hemen Louvre'a girdi"
+    },
+    {
+     "harf": "C",
+     "metin": "Yok oldu"
+    },
+    {
+     "harf": "D",
+     "metin": "Amerikalı bir koleksiyonere satıldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay: \"Après avoir cherché en vain à le vendre... restera dans la famille du modèle jusqu'à... 1930\" (K1).",
+   "yanlis_gerekceleri": {
+    "B": "Louvre'a giriş 1930'dadır, hemen değil (C007).",
+    "C": "Eser günümüze ulaşmıştır; Orsay'dedir (C006).",
+    "D": "Satış kaydı yok; Orsay \"boşuna satmaya çalıştı\" der (C015)."
+   },
+   "kanit": [
+    "C015",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Orsay commentaire'üne göre Edma'nın tül jesti ne yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tülü izleyici ile bebek arasına çeker; mahremiyet ve koruyucu sevgiyi güçlendirir"
+    },
+    {
+     "harf": "B",
+     "metin": "Beşiği tamamen kapatır"
+    },
+    {
+     "harf": "C",
+     "metin": "Bebeğin yüzüne dokunur"
+    },
+    {
+     "harf": "D",
+     "metin": "Pencereyi açar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay: \"Le geste d'Edma, qui tire le voilage du berceau entre le spectateur et le bébé... intimité et amour protecteur\" (K1).",
+   "yanlis_gerekceleri": {
+    "B": "Jest tülü araya çeker, tamamen kapatmaz; bebek tülün ardından seçilir (C017/C024).",
+    "C": "Kayıtlı jest tülle ilgilidir, bebeğin yüzüyle değil (C017).",
+    "D": "Commentaire'de pencere jesti yok; jest tül üzerinedir (C017)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eser ulusal koleksiyona nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1930'da satın alma (achat) ile"
+    },
+    {
+     "harf": "B",
+     "metin": "Bağış (donation) ile"
+    },
+    {
+     "harf": "C",
+     "metin": "Müsadere ile"
+    },
+    {
+     "harf": "D",
+     "metin": "Vasiyet (legs) ile"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Orsay \"Modalité d'acquisition: achat, Date 1930\"; POP STAT \"achat\", DACQ \"1930\" (K1/K4).",
+   "yanlis_gerekceleri": {
+    "B": "Bağış kaydı yok; kayıt \"achat\" (satın alma) der (C007).",
+    "C": "Müsadere kaydı yok; eser satın alınmıştır (C007).",
+    "D": "Vasiyet kaydı yok; edinim biçimi satın almadır (C007)."
+   },
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, Musée d'Orsay'de üst katta Salle 32'dedir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2): \"Niveau supérieur, Salle 32\".",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Beşikteki bebek, Morisot'nun kendi kızıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: bebek Blanche Pontillon, Edma'nın kızı ve Morisot'nun yeğenidir (K1 Indexation).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo 1874 sergisinde büyük başarı kazandı ve hemen satıldı.",
+   "dogru": false,
+   "aciklama": "Yanlış: Orsay \"à peine remarqué\" der; Morisot satamadı ve bir daha sergilemedi (K1).",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Güncel Orsay kaydı boyutu 56 × 46,5 cm (çerçeveli 80 × 71 cm) olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2). Not: Joconde/POP ve wiki kayıtları genişliği 46 verir; bu bir ihtilaftır (C041).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Morisot, 1874 ilk Empresyonist sergisine katılan tek kadındı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K9): \"première femme à exposer avec le groupe\" / \"la seule femme à y exposer\".",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Genişlik ihtilafını (46 ↔ 46,5) analiz edin: hangi kaydı neden esas alırsınız?",
+   "beklenen_ogeler": [
+    "güncel Orsay 46,5",
+    "Joconde/POP 46",
+    "eski IT 2017 46",
+    "yükseklik her yerde 56",
+    "güncel birincil esas; tercih beyanı"
+   ],
+   "kanit": [
+    "C005",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Yapım yeri ihtilafını (Paris ↔ Maurecourt) kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "Orsay commentaire Paris",
+    "POP LIEUX Maurecourt",
+    "iki birincil kayıt çelişir",
+    "çözülmedi",
+    "tek taraf kesinleştirilmez"
+   ],
+   "kanit": [
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "1874 eleştirel karşılama ihtilafını (\"à peine remarqué\" ↔ \"coro indignato\") tartışın.",
+   "beklenen_ogeler": [
+    "Orsay az dikkat + övgü",
+    "itwiki dramatik anlatı",
+    "Adorno yaşlı usta anekdotu",
+    "müze kaydıyla desteklenmiyor",
+    "TV5 Orsay ile uyumlu"
+   ],
+   "kanit": [
+    "C014",
+    "C045"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Data'daki \"çeneye dayanan el\" ve \"pembe kurdele\" betimlerini görsel doğrulama açısından değerlendirin.",
+   "beklenen_ogeler": [
+    "Orsay bükülü sol kol + sağ el tülde",
+    "Stuckey pembe noktalar",
+    "kurdele doğrulanmadı",
+    "görsel incelenmedi",
+    "insan editör teyidi"
+   ],
+   "kanit": [
+    "C047",
+    "C048",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "\"Kapanmışlık\" okumasını \"sans doute\" ihtiyatıyla tartışın; olgu ile yorumu ayırın.",
+   "beklenen_ogeler": [
+    "TV5 okuması",
+    "frwiki sans doute",
+    "yorum olgu değil",
+    "Edma evlilik sonrası bıraktı (B)",
+    "quiz cevabı yapılmaz"
+   ],
+   "kanit": [
+    "C033",
+    "C022",
+    "C063"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Anne ile bebeği bağlayan diyagonali bulun: bakış, bükülü kollar, kapalı gözler.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): annenin bakışı + sol kolu + bebeğin kolu + kapalı gözler; perde hareketi vurgular.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Edma'nın tülü izleyici ile bebek arasına çeken sağ elini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): \"tire le voilage du berceau entre le spectateur et le bébé\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Tüldeki özgür fırçayı ve kenardaki pembe noktaları inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Stuckey/Scott/Lindsay): \"blancs détrempés, gris frottés, petits points roses\".",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Bebeğin tombul yüzünü, bükülü kolunu ve saç kurdelesini tülün ardından seçin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Rey): \"visage potelé... un bras replié... un nœud dans les cheveux... robe blanche\".",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Annenin profilini, siyah kadife boyunluğunu ve çizgili ev elbisesini beyaz tülle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Rey): \"tour de cou de velours noir... robe d'intérieur à rayures bleu marine et noir\".",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Temel künye?",
+   "arka": "Le Berceau (The Cradle / Beşik); Berthe Morisot; 1872; tuval üzerine yağlıboya; 56 × 46,5 cm (güncel Orsay); Musée d'Orsay RF 2849, Salle 32.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Modeller?",
+   "arka": "Abla Edma Pontillon (née Morisot, 1839–1921) ve kızı Blanche (1871–1941, ileride Mme Pierre Forget), Morisot'nun yeğeni.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "1874 sergisi?",
+   "arka": "İlk Empresyonist sergi, Atelier Nadar, Paris, 15 Nisan – 15 Mayıs 1874, n°104; Morisot ilk/tek kadın; tablo az dikkat çekti, satılamadı.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenans?",
+   "arka": "Pontillon koleksiyonu → Mme Forget (Blanche) → 1930 Louvre için satın alma → 1947–1986 Jeu de Paume → 1986 Orsay.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Kompozisyon ve tema?",
+   "arka": "Diyagonal: annenin bakışı + bükülü kollar + kapalı gözler; Edma tülü izleyici ile bebek arasına çeker (mahremiyet, koruyucu sevgi); Morisot sanatındaki ilk annelik imgesi.",
+   "kanit": [
+    "C016",
+    "C017",
+    "C010"
+   ]
+  }
+ ]
+}

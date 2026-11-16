@@ -1,0 +1,651 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1091086",
+ "sanatci_id": "francisco-de-goya",
+ "baslik": "3 Mayıs 1808",
+ "ozgun_baslik": "El 3 de mayo en Madrid: Los fusilamientos de patriotas madrileños",
+ "kunye": {
+  "sanatci": "Francisco de Goya y Lucientes",
+  "sanatci_yasam": "1746–1828",
+  "tarih": "1814",
+  "tarih_belirsizlik": "Prado Cronología 1814; WD P571 yıl hassasiyeti (kesin yıl)",
+  "teknik": "Yağlıboya, tuval (óleo/lienzo)",
+  "boyut_cm": {
+   "yukseklik": 268,
+   "genislik": 347
+  },
+  "muze": "Museo Nacional del Prado, Madrid",
+  "envanter": "P00749",
+  "edinim": "Palacio Real 1814 → Prado (1834 öncesi; 1834 Depósito Grande); Regency siparişi + Fernando VII",
+  "konum": "Prado (Expuesto: Sí)",
+  "telif_durumu": "Kamu malı (Goya ö.1828, 100+ yıl pma); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg",
+  "kaynak": "Wikimedia Commons (Prado / Google Earth)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (2 dosya, Commons API); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Google Earth 30000×23131; Los fusilamientos 1814 3051×2328",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C011); GZ TASLAK; kompozisyon K1 (A) + K2 (B) metninden; şiddet akademik ayrıntısız"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 413
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1312
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2618
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-arşiv-birincil-ve-kaynak-zinciri"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-belge-zinciri-ve-alımlama",
+   "DERS_ILERI.md#3-sipariş-belgeleri-ve-bibliyografi-düzeltmesi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-teknik-eleştiri-ve-etki-zinciri"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-ikonografi-ve-ışığın-tersine-çevrilmesi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-ışığın-tersine-çevrilmesi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-eleştiri-ve-etki-zinciri"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#4-mekân-tartışması-príncipe-pío-mu-puerta-de-la-vega-mı"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Prado birincil kaydıyla (Wayback arşiv) künyeyi ve provenance zincirini doğrular.",
+  "Sipariş belgelerini (Regency, 1500 reales, Quarto del rey) ve iki↔dört düzeltmesini yönetir.",
+  "Kompozisyonu kaynak betiminden analiz eder; görsel inceleme sınırını beyan eder.",
+  "İkonografi yorumlarını (çarmıh/şehitlik, ışığın tersine çevrilmesi) olgulardan ayırır.",
+  "Etki zincirini (Manet/Picasso/Holtom) ve akademik tartışmaları (sipariş kökeni, mekân) değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Fusilamientos",
+   "tanim": "Kurşuna dizme/infaz; özgün başlıktaki terim (Los fusilamientos de patriotas madrileños).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "ad": "Pendant (kardeş pano)",
+   "tanim": "Eş eser; El 2 de mayo en Madrid (P00748), aynı boyut, birlikte provenance ve birbirini tamamlayan anlatı.",
+   "kanit": [
+    "C036",
+    "C006"
+   ]
+  },
+  {
+   "ad": "Chiaroscuro / tenebrizm",
+   "tanim": "Dramatik ışık-karanlık karşıtlığı; fener ışığı; Barok/Caravaggio geleneği.",
+   "kanit": [
+    "C009",
+    "C029"
+   ]
+  },
+  {
+   "ad": "Aquatint",
+   "tanim": "Tonalı gravür tekniği; Disasters of War baskı dizisi.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik/serüven zinciri; Palacio Real → Prado belge zinciri.",
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Künye: Goya y Lucientes, Francisco de (1746–1828); El 3 de mayo en Madrid: Los fusilamientos de patriotas madrileños; 1814; Óleo/Lienzo; 268×347 cm; P00749; Museo del Prado; Escuela Española; Tema Historia; Expuesto Sí.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Provenance: Palacio Real Madrid 1814 → Prado (colección real, kardeşiyle, antes de 1834; 1834 Depósito Grande); Gautier 1840 gördü/1843 betimledi; Clément de Ris 1850; Yriarte 1867 ilustrado monografi; Prado katalog 1872.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Sipariş bağlamı: savaş 1813 bitti; Fernando VII dönüşü Valençay ile Aralık 1813 biliniyordu; Regency koşulları (1812 Anayasası yemini); giriş 2 Mayıs ilk anmasıyla çakışacaktı; Şubat–Mart 1814 Regency başkanı infante don Luís María de Borbón y Vallabriga + Cortes + Ayuntamiento hazırlıkları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Çerçeve faturaları (Archivo del Palacio Real): iki tablo çerçeve imalatı, Quarto del rey gideri, Temmuz+Kasım 1814 → Fernando VII finanse, Palacio salonları, casi con seguridad Mayıs 1814 sonrası; 29 Kasım 1814 tamam; asılma belgesi yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Prado DÜZELTME: Goya yalnızca İKİ tablo yaptı (2+3 Mayıs), dört DEĞİL (faturalar iki çerçeve); kamusal/sokak destino yanlış; Palacio salonları için; Regency encargo + Fernando VII devamı, saray prosedürü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "enwiki: 1808 Madrid direnişi / Napolyon işgali / Peninsular War; kardeş The Second of May 1808 (Charge of the Mamelukes), aynı boyut, enwiki ikisinden iki ay önce tamamlandı der.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "enwiki: savaş dehşetinin arketipal/çığır açan imgesi; Hristiyan sanatı + geleneksel savaş betiminden kopuş; ilk modern resimlerden (Licht); Kenneth Clark her anlamda devrimci ilk büyük resim.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "enwiki etki: Holtom barış işareti; Manet Maximilian İdamı serisi (1867–69, çok versiyon; 1865 Prado olabilir, 1867 baskısı kesin; Fransa'da yaşamında sergilenemedi); Picasso Kore'de Katliam 1951 + Guernica 1937; Rockwell Murder in Mississippi 1965; 2006 Prado+Reina Sofía aynı oda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Kompozisyon (KAYNAK BETİMİ, görsel incelenmedi): dar alanda iki kütle; sağda arkadan yüzsüz monolitik manga (süngü+shako); solda dağınık kurbanlar; merkezde diz çökmüş beyaz gömlekli+sarı işçi kolları açık; yerde kare fener; dua eden keşiş; gece çan kuleli kent; arkada meşaleli kalabalık (belirsiz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Sipariş kökeni İHTİLAFI: enwiki Goya'nın kendi önerisi (Clark p.126) ↔ Prado Regency girişi (Gobernación/Álvarez Guerra); öneri mektubu (Archivo de Palacio) no se ha localizado (bugün bulunamadı); Pintor de Cámara için insólito.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C011",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons iki dosya PD (metadata); GZ TASLAK; kompozisyon kaynak metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C012",
+   "ifade": "Prado canlı 403 (Cloudflare); birincil Wayback 2012-10-15 açıldı (arşiv beyanı; 2012 anlık görüntüsü, güncel kayıtla fark olabilir).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C013",
+   "ifade": "YORUM: beyaz gömlekli figür çarmıh/şehit çağrışımı (sağ avuç stigmata-benzeri iz Licht p.121; Spivey p.195; Gethsemane Agony pozu; fener=Christ tutuklama attribute; sarı+beyaz=papalık heraldik); laik şehitlik, anonim kurban.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C014",
+   "ifade": "Ödeme: 24 Şubat 1814 Juan Álvarez Guerra (Gobernación) Goya koşullarını kabul: 1500 reales de vellón/ay + lienzos/aparejos/colores; gerekçe loable empresa/notoria capacidad + avanzada edad geçim.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "11 Mayıs 1814 (girişten iki gün önce) Fernando VII Regency bakanlarını tutukladı, infante Toledo sürgün, Anayasa iptal → sipariş durmuş olabilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Prado: iki tema birbirini tamamlar, ortak anlam: 2 Mayıs sabahı Murat birliklerine halk saldırısı + Fransız misillemesi; Goya gece/yağmurlu 3 Mayıs şafağını seçti (Fransızlar 2 Mayıs öğleden sonra Paseo del Prado gün ışığında başlamıştı) → daha fazla dramatik etki.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Prado: manga = granaderos de línea + marineros de la guardia, campaña üniforma + capote gris (gri palto); kurbanlar şehirden dalgalar halinde bitmeyen sırada; korku her birinde farklı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Mekân İHTİLAFI: Yriarte 1867 Príncipe Pío varsaydı (eski başlık montaña del Príncipe Pío); alternatif Moncloa desmonte (Afligidos/San Bernardino/Liria) veya Príncipe Pío–Palacio arası; Prado: Puerta de la Vega çıkışı (1820 yıkıldı, calle Mayor sonu) daha açık; kuleler belki San Ginés (atalaya de Madrid)/Santa María la Real; set Palacio yakını, Palacio sol dışarıda → Corona savunması iması (pudo haber insinuado); enwiki Debod Tapınağı yeri.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C019",
+   "ifade": "Prado: 2008 restorasyonu özgün parlaklığı (brillantez original) geri verdi; técnica directa y magistral izlenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "enwiki: iki tablo İç Savaş Valencia nakliye kamyon kazasında hasar (Madrid'den tek ayrılış gibi); Second of May sol boya kaybı 2008 iki yüzüncü yıl restorasyonuna kadar kasıtlı onarılmadı (Reuters).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "enwiki alımlama: ilk sergi bilinmiyor, çağdaş kayıt yok; Fernando VII neoklasik tercih (Tomlinson) + Bourbon halk isyanını uygun görmedi; 1814 anıtı durduruldu (Ford); 30–40 yıl depo anlatıları (Hughes); 1834 envanter; 1819 açılışta kraliyet koleksiyonu aktarıldı; Yriarte 1867 özel sergi; 1872 katalog Scene of the Third of May 1808.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Erken görülme İHTİLAFI: Prado Gautier 1840/1843 + Clément de Ris 1850 ↔ enwiki Gautier 1845 + 1858 ziyaretçi (ikisi 2 Mayıs der; belki Dos de Mayo tüm epizod).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "enwiki dört-tablo hipotezi (Tomlinson p.139): Caveda 1867 dört tablo; Ferriz iki konu daha (saray isyanı + topçu kışlası savunması); çağdaş baskılar öncül; kaybolma resmi hoşnutsuzluk olabilir. (→ C005 düzeltme.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "enwiki: Los desastres de la guerra (aquatint) çoğu 1810–1814, 1820 tamam; British Museum prova albümü; No se puede mirar pl.26 / Y no hay remedio pl.15 / Yo lo vi pl.44 kompozisyon akraba; en erken gruplar siparişten önce (Bareau).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "enwiki: Goya liberal, Devrim'in ilk amaçlarını destekledi; arkadaşları afrancesado (Meléndez Valdés, Moratín); Joseph altında saray ressamı (yemin); otoriteye antipati (Clark); işgalde az resim; çizimler → Disasters; 1798 Guillemardet portresi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "enwiki: Goya'nın 2/3 Mayıs'ı bizzat görüp görmediği BİLİNMİYOR (Licht p.112); olay yerinde gösteren sonraki anlatılar (Trueba → bahçıvan Isidoro) şüpheli/tartışmalı (Connell).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "enwiki: ilk tepkiler karışık; kahramansız betim olağandışı; erken eleştiri yassı perspektif/fazla yakın; Schickel (Connell) akademik uygunluk değil etki; Romantik çağdaşlar Géricault Medusa 1818–19 / Delacroix Özgürlük 1830 güzellik/idealize kahramanlık korudu (Licht p.124).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "enwiki kaynaklar: popüler baskı/broadsides; Gamborino 1813 Valencia Beş Keşiş baskısı kompozisyon kaynağı (Connell p.158, Hughes p.314): çarmıh pozlu beyaz kurban, diz çöken keşiş, ön plan figürü; David Horatii 1784 ironik geometri (Boime p.211); Gros Madrid Teslimi (Honour).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "YORUM (Licht): fener Barok dramatik ışık (Caravaggio); geleneksel chiaroscuro=Tanrı mevcudiyeti; burada fener mucize yok, yalnız manga işi + izleyici tanıklığı için ışık; ruhsal aracı rolü tersine çevrildi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "YORUM (Licht pp.122–124): kurban anonim, yakarış kişiliksiz mangaya; bireysel şehitlik asaleti → boşunalık/kitlesel kurban/anonimlik (modern durum); sürekli kafile cinayetin mekanik formalizasyonu; katharsis/yüce yok; zaman ilerleyişi öncülsüz.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "enwiki teknik/palet: fırça hoş değil; toprak tonları+siyah, beyaz+kızıl vurgular (akademik ayrıntısız); granüler pigment mat kumsu bitiş, sonraki eserleri önceler (Gudiol 1971 p.171); yöntem↔konu ayrılmaz; virtüözite yumuşatma yok (Licht).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "enwiki Boime tedbir HİPOTEZİ: kurban dağınıklığı ihtiyat olabilir — halk direnişi anılır ama Fernando VII'yi tehdit eden dayanışma gösterisi olmasın (Boime pp.299–300); kurbanlar alt sınıf+clergy (Murat, Boime p.297).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "enwiki: 2009 Prado 14 en önemli tablodan biri, Google Earth 14,000 megapiksel (Guardian); Commons dosyası 30000×23131 px metadata.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "enwiki: Huxley 1957 Rubens düzenli kompozisyon yok ama kendi ana dilinde maksimum güç/berraklık; Clark öz-eleştiri: bir zamanlar üstün gazetecilik sandım, baktıkça yanıldım (Clark p.123).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "YORUM (Danto): eser İspanyol izleyicide öfke/nefret uyandırmayı amaçladı; derinden duygusal epizodun son derece romantik resmi; Maximilian↔3 Mayıs.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Prado: kardeş El 2 de mayo en Madrid (P00748); provenance birlikte (con su compañero); iki tema birbirini tamamlar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "WD Q1091086 teyit: P170 Q5432 Goya; P571 1814 (yıl); P186 oil paint+canvas (support); P2048 268/P2049 347; P195 Prado (preferred); P217 P000749; P136 history painting; P135 Romanticism.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Kamu malı (PD): Goya ö.1828 (100+ yıl pma); WD P6216 Q19652 (P459 100 years or more after death, P1001 countries with 100 years pma or shorter); Commons iki dosya PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "WD P195 niteleyici İHTİLAFI: Palacio Real Q171517 1814–1900 (yüzyıl) ↔ Prado Q160112 1900– (yüzyıl) ↔ Prado birincil antes de 1834/1834 Depósito Grande. WD kaba/yardımcı; birincil esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Akademik kitap/makale metinleri ERİŞİLEMEDİ (Licht, Clark, Tomlinson, Boime, Connell, Hughes, Gudiol, Spivey, Stoichita, Bareau, Cowans, Baines, Ford, Honour, Brombert, Danto — yalnız K2 atıf zinciri); it/de wiki metinleri çekilmedi (sitelink).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "enwiki arka plan: 23,000 Fransız askeri Kasım 1807 direnişsiz girdi (Baines); Murat başkomutan, Joseph kral yapılacak; 2 Mayıs 1808 kraliyet ailesi Fransa'ya götürülecek haberiyle kışkırtıldı; Murat bildirisi silah elde yakalananlar vurulacak (Cowans); Second of May Puerta del Sol Mamelük hücumu (Licht p.112); beş yıl gerilla, Wellington.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "Galería online kaydı (Wayback 2012-10-15; eski galeria-on-line URL)",
+   "url": "https://web.archive.org/web/20121015054351/http://www.museodelprado.es/coleccion/galeria-on-line/galeria-on-line/obra/el-3-de-mayo-de-1808-en-madrid-los-fusilamientos-en-la-montana-del-principe-pio/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2012-10-15)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Third of May 1808 (Featured article; wikitext)",
+   "url": "https://en.wikipedia.org/wiki/The_Third_of_May_1808",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q1091086 EntityData",
+   "url": "https://www.wikidata.org/wiki/Q1091086",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Museo Nacional del Prado",
+   "belge": "güncel kayıt (canlı, EN)",
+   "url": "https://www.museodelprado.es/en/the-collection/art-work/the-3rd-of-may-1808-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (Cloudflare); ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Il 3 maggio 1808",
+   "url": "https://it.wikipedia.org/wiki/Il_3_maggio_1808",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "WD sitelink; metin ÇEKİLMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Almanca Vikipedi",
+   "belge": "Die Erschießung der Aufständischen",
+   "url": "https://de.wikipedia.org/wiki/Die_Erschie%C3%9Fung_der_Aufst%C3%A4ndischen",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "WD sitelink; metin ÇEKİLMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikimedia Commons",
+   "belge": "2 dosya (Google Earth / Los fusilamientos 1814)",
+   "url": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata 200 (PD); İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "El 2 de mayo en Madrid",
+   "sanatci": "Francisco de Goya",
+   "kurum": "Museo del Prado",
+   "envanter": "P00748",
+   "mufredat_ici": false,
+   "gerekce": "Kardeş pano; sabah saldırısı + gece misillemesi birbirini tamamlar, aynı boyut ve provenance.",
+   "kanit": [
+    "C036",
+    "C016"
+   ]
+  },
+  {
+   "eser": "Guernica",
+   "sanatci": "Pablo Picasso",
+   "kurum": "Museo Nacional Centro de Arte Reina Sofía, Madrid",
+   "mufredat_ici": true,
+   "gerekce": "Goya'nın savaş dehşeti hattının 20. yy devamı; 2006'da aynı odada sergilendi.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "eser": "İmparator Maximilian'ın İdamı",
+   "sanatci": "Édouard Manet",
+   "mufredat_ici": false,
+   "gerekce": "İlk yeniden yorum; infaz mangası kompozisyonu doğrudan Goya'dan beslenir (1867–69).",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Prado birincil Wayback 2012-10-15 (K1) yeniden açıldı; künye/provenance/sipariş belgeleri/düzeltmeler doğrulandı. Canlı Prado (K4) 403. enwiki wikitext (K2) yeniden okundu; etki/ikonografi/Disasters/alımlama doğrulandı; sipariş kökeni + görülme tarihleri ihtilafı D. WD (K3) EntityData + Commons (K7) metadata (2 dosya PD) doğrulandı; WD P195 kaba niteleyici D. Görsel İNCELENEMEDİ (vision kotası ana oturumda); GZ TASLAK. Akademik metinler erişilmedi (C040); it/de wiki yalnız sitelink.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Özgün başlık: data ozgun \"The Third of May, 1808\" (İngilizce) ↔ Prado İspanyolca \"El 3 de mayo en Madrid: Los fusilamientos de patriotas madrileños\" → düzeltme adayı.",
+  "data kaydında envanter (P00749), boyut (268×347), teknik (óleo/lienzo) alanı yok → ekleme adayı.",
+  "Sipariş kökeni: enwiki \"Goya önerisi\" ↔ Prado Regency (C010 D); data'da bu anlatı yok; ders birincili esas alır.",
+  "İçerik politikası: data \"bak\" hotspot'u kan ayrıntısı büyütüyor; ders akademik ayrıntısız betimler → editoryal inceleme adayı.",
+  "data \"fenerin aydınlanmaya ironik göndermesi\" yorumu erişilen kaynaklarda yok (Licht farklı okur) → editoryal inceleme adayı.",
+  "WD P217 \"P000749\" ↔ Prado \"P00749\" (format farkı); WD P195 yüzyıl precision kaba (C039 D), birincil \"1834 öncesi\" esas.",
+  "Görsel PD (C038); data'da lisans alanı yok; İNCELENEMEDİ (C011); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

@@ -1,0 +1,765 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3793426",
+ "sanatci_id": "odilon-redon",
+ "baslik": "Kiklop",
+ "ozgun_baslik": "Le cyclope (The Cyclops)",
+ "kunye": {
+  "sanatci": "Odilon Redon",
+  "sanatci_yasam": "1840–1916",
+  "tarih": "c. 1914",
+  "tarih_belirsizlik": "KMM \"c. 1914\" (birincil); Ruhrberg \"circa between 1898 and 1900\"; itwiki \"1895-1900\"; enwiki \"1898-1914\" yayılımı (D, C029). Kesin tek yıl iddia edilmez.",
+  "teknik": "Karton üzerine yağlıboya, panele monte (Oil on cardboard mounted on panel)",
+  "boyut_cm": {
+   "yukseklik": 65.8,
+   "genislik": 52.7
+  },
+  "muze": "Kröller-Müller Museum, Otterlo",
+  "envanter": "KM 103.098",
+  "edinim": "Eser-spesifik provenance erişilen kaynaklarda yok (C035); uydurulmadı.",
+  "konum": "Houtkampweg 6, Otterlo, The Netherlands",
+  "telif_durumu": "Kamu malı (Redon ö.1916; PD-old-70); Commons PD; CN InC etiketi metadata uyuşmazlığı (C037)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_The_Cyclops,_c._1914.jpg",
+  "kaynak": "Wikimedia Commons (credit: Google Arts & Culture; partner Kröller-Müller Museum)",
+  "lisans": "Public domain (PD-Art / PD-old-70-expired; deathyear=1916; atıf gerekmez)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (S7/S8); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2846×3579 px (4.608.022 bayt); ikincil Redon.cyclops.jpg 814×1033 px",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon kaynak metninden (C019); data imza/kompozisyon iddiaları görsel doğrulama bekler (C036); GZ TASLAK; CN InC metadata uyuşmazlığı (C037)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 436
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1312
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2633
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik-ve-katalog-kaydı",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-tutarlılığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam-sembolizm-ve-müze",
+   "DERS_ILERI.md#2-tarih-tartışması-ve-provenance-boşluğu"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-bağlamı-ve-göz-motifinin-sürekliliği"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-kaynak-betiminin-sınırları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi-polyphemus-galatea-acis",
+   "DERS_ILERI.md#5-ikonografi-ve-etik-okuma-gözetleme-arzu-utangaçlık"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-metadata-uyuşmazlıkları"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "KMM birincil kaydıyla künyeyi (c. 1914, karton+panel yağlıboya, KM 103.098, 65,8×52,7 cm) doğrular.",
+  "Tarih ihtilafını (c. 1914 ↔ 1898–1900) ve itwiki teknik/boyut hatalarını kaynak eleştirisiyle yönetir.",
+  "Polyphemus-Galatea-Acis mitini ve göz motifinin Sembolist okumasını analiz eder.",
+  "Kaynak betimi ile doğrudan görsel gözlemi ayırır; GZ TASLAK durumunu tanır.",
+  "Provenance boşluğunu ve data/ notlarını (kesin 1914, envanter eksik, imza iddiası) uydurmadan raporlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Sembolizm",
+   "tanim": "19. yy sonunda bilinçdışına, olağanüstüye ve açıklanamayana yönelen akım; Redon tipik temsilci (müze metni).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Nereid",
+   "tanim": "Yunan mitolojisinde deniz perisi; Galatea bir Nereid'dir (KMM).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Polyphemus",
+   "tanim": "Tek gözlü dev (Kiklop); Galatea'ya karşılıksız âşık, Acis rakip.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Circa (c.)",
+   "tanim": "\"Yaklaşık\"; tarih belirsizliği koruyan niteleyici (WD P1480).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "ad": "Göz motifi",
+   "tanim": "Redon'da \"bağımsız yaratık\"; ruhun ve gizemli iç dünyanın simgesi (müze yorumu).",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı \"Le cyclope\" / \"The Cyclops\" (Türkçe \"Kiklop\", proje çevirisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Odilon Redon (1840–1916).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih c. 1914 (\"circa\" aynen korunur; WD P571 precision 9 + P1480=Q5727902).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: karton üzerine yağlıboya, panele monte (\"Oil on cardboard mounted on panel\"; CN \"olieverf op karton op paneel\"; enwiki \"oil on cardboard, then mounted on wood\", Baqué 2020 zinciri).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut 65,8 × 52,7 cm (canlı sayfada YOK; S14 arşiv + S5 CN + S6 GA&C + S1 WD + S8 Commons; enwiki infobox da taşır).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S5",
+    "S6",
+    "S1",
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter no KM 103.098.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Kröller-Müller Museum, Houtkampweg 6, Otterlo, The Netherlands.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Tür \"Paintings\"; KMM arşiv \"History painting / 20th century\"; CN deelcollectie \"schilderkunst - 20e eeuw\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu: Kiklop Polyphemus, uyuyan Nereid Galatea'yı yüksek bir dağın arkasından gözetler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Aşk karşılıksızdır; Galatea nehir tanrısı Acis'i tercih eder.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Redon, Sembolizm'in tipik temsilcisidir (rüya dünyası: periler/canavarlar/ruhlar; 19. yy sonu; bilinçdışı, olağanüstü, açıklanamaz).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Göz motifi (müze yorumu): Redon'da göz \"her şeye hükmeden, bağımsız bir yaratık\", insan ruhunun ve gizemli iç dünyanın simgesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Doğal olmayan büyüklükteki göz resmin en dikkat çekici öğesi; alışılmadık parlak renkler gözün/devin tehdidini güçlendirir; KMM eseri \"sembolist sanatın başyapıtlarından biri\" sayar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Eser 2024-12-19 arşiv snapshot'ında \"Now on display\" (sergide) idi; ibare arşiv tarihine aittir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "\"It appears Polyphemus has hidden himself from the nymph behind the rocky terrain, too shy to directly confront her 'helpless' form\" (utangaçlık yorumu; \"It appears\" korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Konu, Redon'un büyüdüğü Aquitaine folklöründeki tek gözlü dev çağrışımları da taşıyor olabilir (\"may also carry overtones\" korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Alternatif tarihleme \"circa between 1898 and 1900\" (Ruhrberg vd., Art of the 20th Century, Taschen 2000, s.34; Commons atfı, metin erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Görsel kamu malı: PD-Art / PD-old-auto-expired, deathyear=1916; Commons \"Public domain\", AttributionRequired=false.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Kompozisyon (enwiki atıfsız betim): Galatea sağ altta uyur, çıplak bedeni çiçekli yamaçla kaynaşır; Polyphemus baş/omuz üst yarıda dağ sırtı üzerinde, tek göz \"naiad'a\" dönük. Konumlar birincilde YOK; görsel incelenmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "enwiki \"variously dated between 1898 and 1914\" (atıfsız) + kategori \"1898 paintings\" (infobox \"c. 1914\" ile çelişkili).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Mit kaynağı Ovidius, Metamorphoses XIII, 12. fabula (\"Galatea, Aci e Polifemo\"); itwiki blog refs (S16); KMM Acis'i doğrular ama Ovidius'a açık atıf yapmaz.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S16"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "itwiki gövde \"risalente al 1895-1900\" (atıfsız; kendi infobox'u 1914 ve birincil ile çelişir → C029).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "itwiki infobox teknik \"Olio su tela\" (tuval); birincil \"cardboard mounted on panel\" → C030.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "itwiki infobox boyut 64 × 51 cm; birincil/arşiv + CN + GA&C 65,8 × 52,7 → C031.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Akım \"Post-Impressionism\" (enwiki infobox + WD P135, blog refs S17); birincil yalnızca \"symbolism\" → C033.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S1",
+    "S17"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "WD P136 tür \"mythological painting\" + \"landscape painting\" (referanssız); KMM \"History painting\" → C034.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "WD P217 \"KM 103.98\" (referanssız) + S8 accession \"KM 103.98\"/references \"103.098\"; güncel birincil KM 103.098 → C032.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Müze genel tarihi: Helene Kröller-Müller (1869–1939), danışman H.P. Bremmer, ~11.500 obje, 1938 açılış. Eser-spesifik DEĞİL; provenance için kullanılamaz.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Tarih ihtilafı: KMM \"c. 1914\" ↔ Ruhrberg \"circa between 1898 and 1900\" ↔ itwiki \"1895-1900\" ↔ enwiki \"1898-1914\" + kategori \"1898\". Kesin tek yıl yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S5",
+    "S6",
+    "S1",
+    "S8",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Teknik ihtilafı: itwiki \"Olio su tela\" ↔ birincil \"Oil on cardboard mounted on panel\" + CN + enwiki. Birincil üstün; itwiki hatalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S14",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Boyut ihtilafı: itwiki 64 × 51 ↔ birincil arşiv + CN + GA&C + WD 65,8 × 52,7. Birincil üstün; itwiki hatalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S14",
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "Envanter formatı: \"KM 103.98\" (eski; Commons 2017/WD referanssız) ↔ \"KM 103.098\" (güncel birincil). Format farkı; güncel no esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S4",
+    "S14",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "Akım ihtilafı: birincil \"symbolism\" ↔ enwiki infobox/WD \"Post-Impressionism\" (blog refs). Sembolizm birincil (A); Post-İzlenimcilik ikincil etiket (C).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S1",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "Tür sınıflaması: KMM \"History painting\" ↔ WD P136 \"mythological + landscape painting\" (referanssız). Kurumsal sınıflama farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "Provenance: erişilen hiçbir kaynakta eser-spesifik provenance YOK; uydurma yapılmadı, edinim \"bilinmiyor\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "Görsel İNCELENEMEDİ (yalnız metadata+lisans); data/ kompozisyon/imza iddiaları (tek göz, uyuyan Galatea, mor dağ sırtı, sağ alt \"ODILON REDON\" imzası, hotspot koordinatları) DOĞRULANMADI; imza için metin kaynaklarında ifade yok. GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "Hak metadata uyuşmazlığı: CN \"InC\" ↔ Commons görsel PD. Eser kamu malı (ölüm 1916, C018); CN InC etiketi metadata uyuşmazlığı; insan incelemesi bekler.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Kitap metinleri erişilemedi (Ruhrberg s.34, Eisenman s.118, Baqué s.58; JS kabuğu, kimlik <title> doğrulandı); \"Douglas W.\" yazar adı eksik; Hauptman 2005/Prince of Dreams 1994 erişilmedi. \"Kaynakçada anıldı, metne erişilmedi.\"",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S11",
+    "S12",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Güncel sergi durumu bilinmiyor: \"Now on display\" yalnız 2024-12-19 arşivine ait (C014); canlı sayfada doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Proje verisi kariyer anlatısı (S19): Redon uzun yıllar siyah-beyaz \"noir\"lar (karakalem/litografi), 1890'lardan sonra renk; Kiklop geç dönem örneği. Bu turda bağımsız doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3793426",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3793426.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Cyclops (Redon) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Cyclops%20(Redon)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Il ciclope (Redon) wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Il%20ciclope%20(Redon)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Kröller-Müller Museum",
+   "belge": "Canlı eser sayfası (odilon-redon-the-cyclops-1 → collection/...-km-103-098)",
+   "url": "https://krollermuller.nl/en/odilon-redon-the-cyclops-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Collectie Nederland (dataprovider KMM)",
+   "belge": "Aggregation kroller-muller/50899 (WD P13172)",
+   "url": "https://data.collectienederland.nl/page/aggregation/kroller-muller/50899",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Google Arts & Culture (partner KMM)",
+   "belge": "Asset mAFMK3NTXaN_RQ",
+   "url": "https://artsandculture.google.com/asset/the-cyclops-odilon-redon-1840-1916/mAFMK3NTXaN_RQ?hl=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Odilon Redon - The Cyclops, c. 1914.jpg imageinfo (WD P18)",
+   "url": "https://commons.wikimedia.org/wiki/File:Odilon_Redon_-_The_Cyclops,_c._1914.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Redon.cyclops.jpg imageinfo + wikitext (Ruhrberg/KMM atıfları)",
+   "url": "https://commons.wikimedia.org/wiki/File:Redon.cyclops.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Google Books",
+   "belge": "Ruhrberg vd., Art of the 20th Century kaydı (S8 atıf zinciri)",
+   "url": "https://books.google.com/books?id=069rL6vA1BAC&pg=PA34",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; sayfa metni JS kabuğu → ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Google Books",
+   "belge": "Eisenman, The Temptation of Saint Redon kaydı (S2 atıf zinciri)",
+   "url": "https://books.google.com/books?id=FUk2fiY_XMUC&dq=%22The+Cyclops%22+Redon&pg=PA118",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; sayfa metni ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Google Books",
+   "belge": "Baqué, Bizarre et Bizarreries kaydı (S2 atıf zinciri)",
+   "url": "https://books.google.com/books?id=9d_WDwAAQBAJ&dq=%22Le+cyclope%22+Redon&pg=PA58",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; sayfa metni ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Kröller-Müller Museum (Wayback)",
+   "belge": "Eski sayfa /en/page/3112 (arşiv 20241219145624)",
+   "url": "https://web.archive.org/web/20241219145624/https://krollermuller.nl/en/page/3112",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 404; arşiv 200 (2024-12-19)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "lartedeipazzi.blog",
+   "belge": "itwiki Ovidius satır içi blog refs",
+   "url": "https://lartedeipazzi.blog/2018/11/23/ovidio-galatea-aci-e-polifemo/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "çekilmedi (S3'te anıldı; blog, düşük)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "beckchris.wordpress.com",
+   "belge": "WD P135/P1476/P170/P276 refs (Q97309629)",
+   "url": "https://beckchris.wordpress.com/visual-arts/art-history-101-part-v-1900-present-2/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "çekilmedi (S1'de anıldı; blog, düşük)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S19",
+   "kurum": "proje data/",
+   "belge": "basyapitlar[97], eser_ayrintilari[97], eser_adlari_tr, eser_konulari, eser_notlari, yerel_gorseller, muze_numaralari, ders_kaynaklari[21]",
+   "url": "data/ (salt-okunur proje dosyaları)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Çığlık (The Scream)",
+   "sanatci": "Edvard Munch",
+   "mufredat_ici": true,
+   "gerekce": "Sembolizm'in iç dünya ve görünmeyene yönelimini (C011) kaygı ifadesiyle karşılaştırma önerisi; yorum.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "eser": "Yıldızlı Gece",
+   "sanatci": "Vincent van Gogh",
+   "mufredat_ici": true,
+   "gerekce": "İfade edici, doğacı olmayan renk kullanımı (C013); KMM koleksiyonu Van Gogh'u da merkezine alır (C028); yorum.",
+   "kanit": [
+    "C013",
+    "C028"
+   ]
+  },
+  {
+   "eser": "The Apparition (Salome)",
+   "sanatci": "Gustave Moreau",
+   "mufredat_ici": false,
+   "gerekce": "Sembolizm'in rüya dünyası ve mitolojik/düşsel konularını (C011, C009) başka bir Sembolist ressamla karşılaştırma önerisi; yorum.",
+   "kanit": [
+    "C011",
+    "C009"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "KMM birincil canlı (S4, 200) + Wayback arşiv (S14, 2024-12-19) yeniden açıldı; künye/konu/Sembolizm/göz/renk doğrulandı. Boyut canlıda yok → S14+S5(CN)+S6(GA&C)+S1(WD) üçgenlemesiyle A. en/it wikitext (S2/S3) yeniden okundu; 6 ihtilaf D olarak açık (tarih/teknik/boyut/envanter/akım/tür). Görsel S7/S8 metadata only → İNCELENEMEDİ (C036); GZ TASLAK. Kitap metinleri (S11/S12/S13) erişilemedi (C038); provenance yok (C035); CN InC↔PD uyuşmazlığı (C037).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: basyapitlar[97] \"1914\" (kesin) + özet \"1914 tarihli\" ↔ birincil \"c. 1914\" (C003/C029); ders \"yaklaşık 1914\" kullanır, data/ değiştirilmedi.",
+  "ders_kaynaklari[21].gor[0].yil=1914 (sayısal, circa'sız) — aynı not.",
+  "Envanter eksik: muze_numaralari.json'da Q3793426 / hash 8906e5e8686fc219 kaydı YOK; KM 103.098 işlenmemiş (C006).",
+  "eser_adlari_tr \"Kiklop\" ✓ (WD tr etiket yok; proje çevirisi); eser_konulari {\"t\":\"mitoloji\",\"k\":\"galatea\"} ✓; eser_notlari KMM ile uyumlu.",
+  "Görsel iddiaları (bak + noktalar: tek göz, uyuyan Galatea sağ alt, mor dağ sırtı, sağ alt \"ODILON REDON\" imzası, hotspot koordinatları) bu turda DOĞRULANMADI; imza için metin kaynaklarında ifade yok (C036) → görsel doğrulama gerekir.",
+  "Ovidius atfı itwiki düzeyinde (C021, blog refs); KMM Ovidius'a açık atıf yapmaz; ders C021 seviyesinde kurar.",
+  "WD P217 ikili değeri (KM 103.98 / KM 103.098) data'ya yansımamış; güncel no KM 103.098 (C032).",
+  "Hak metadata: CN InC ↔ Commons PD uyuşmazlığı (C037); eser kamu malı (ölüm 1916)."
+ ]
+}

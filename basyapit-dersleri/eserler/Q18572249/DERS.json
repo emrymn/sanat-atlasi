@@ -1,0 +1,817 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18572249",
+ "sanatci_id": "francesco-salviati",
+ "baslik": "Aziz Thomas'ın Şüphesi",
+ "ozgun_baslik": "L'Incrédulité de saint Thomas",
+ "kunye": {
+  "sanatci": "Salviati (Francesco de' Rossi, dit)",
+  "sanatci_yasam": "Floransa 1510 – Roma 1563",
+  "tarih": "16. yüzyıl (Louvre); 2. çeyrek (Joconde); literatürde 1543–1547 (B)",
+  "tarih_belirsizlik": "Louvre \"XVIe siècle (1500-1600)\"; Joconde \"2e quart 16e siècle\" + \"commandé vers 1547\"; Elsig 2014 1543–1547 (B, metne erişilmedi); data/WD 1537 birincilde yok (D001/C029); WD precision=yüzyıl (E007)",
+  "teknik": "Yağlıboya; tahtadan tuvalse aktarma (transposition de bois sur toile; Joconde: 1806)",
+  "boyut_cm": {
+   "yukseklik": 275,
+   "genislik": 234
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 593 (ana); MR 472 (diğer)",
+  "edinim": "Saisie révolutionnaire 1790 (Lyon, église des Jacobins); Louvre'a giriş 1794",
+  "konum": "Salle 712, Aile Denon, Niveau 1 — Grande Galerie, 3e travée (güncel olmayabilir, E003)",
+  "telif_durumu": "Kamu malı (Salviati ö. 1563; PD-old-100); Commons PD-Art; Louvre/RMN fotoğrafları telifli (yeniden yayımlanmaz)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Francesco_salviati,_incredulit%C3%A0_di_san_tommaso.jpg",
+  "kaynak": "Wikimedia Commons (credit: Web Gallery of Art; kayıt 2016-03-05 Wayback arşivinden doğrulandı)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük; GÖRSEL İNCELENMEDİ (vision ana oturumda)",
+   "cozunurluk": "Ana dosya 1028×1200 px (zayıf); alternatif Shonagon 2765×3231 px PD; Sailko 5 dosya CC BY-SA 3.0",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnızca kaynak betimi (Joconde A + frwiki C); GZ TASLAK; Louvre/RMN görselleri telifli, kullanılmadı; insan editör görsel teyidi bekliyor"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 424
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1334
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2805
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaynakların-katmanları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-tartışması-ve-provenance-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçı-lyon-ve-siparişin-siyaseti",
+   "DERS_ILERI.md#6-alımlama-kopyalar-gravürler-vasari"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-ve-ikonografi-kaynak-betimlerinin-sınırları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-biçim-ve-ikonografi-kaynak-betimlerinin-sınırları"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-transposition-ve-malzeme-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre + Joconde birincil kayıtlarıyla künyeyi doğrular; tarih katmanlarını (yüzyıl / çeyrek + vers 1547 / 1543–1547) ayırt eder.",
+  "data/Wikidata \"1537\" ↔ birincil kaynak uyuşmazlığını (D001) kaynak eleştirisiyle yönetir; WD referans zincirindeki boşluğu gösterir.",
+  "Transposition tekniğini ve 1806 aktarımını açıklar; özgün ahşap destek ile bugünkü tuval yüzeyini ayırır.",
+  "İkonografi ve otoportre iddiasının kanıt düzeylerini ayırır: Joconde (A) ↔ frwiki \"serait\" (kuşku) ↔ figür kimliği eşlenmemiş (E).",
+  "Sipariş–provenance–alımlama zincirini kurar: Guadagni → Lyon → 1790 elkoyma → 1794 Louvre; gravürler ve San Marcello fresk kopyası."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Transposition",
+   "tanim": "Resmin destek değiştirme işlemi; burada tahtadan tuvalse aktarma (Joconde: 1806).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Apparition à Thomas",
+   "tanim": "Dirilmiş İsa'nın Thomas'a görünmesi; Joconde sujet kaydı, kaynak Nouveau Testament.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Périzonium",
+   "tanim": "İsa'nın bel örtüsü; frwiki betiminde geçer (kaynak betimi, görsel teyit yok).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Saisie révolutionnaire",
+   "tanim": "Fransız Devrimi'nin kilise mallarına elkoyması; eserin 1790'da alınması, 1794'te Louvre'a girişi.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Belle Maniera",
+   "tanim": "1998 Louvre sergisinin başlığı (\"Francesco Salviati ou la Belle Maniera\"); zarif üslup çerçevesi.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin Louvre başlığı \"L'Incrédulité de saint Thomas\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Salviati (Francesco de' Rossi, dit), \"Attribution actuelle\"; Floransa 1510 – Roma 1563; École de Italie.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Louvre üretim tarihi: \"XVIe siècle (1500 - 1600)\"; daha kesin tarih vermiyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Joconde dönemi: \"2e quart 16e siècle\" (1525–1550).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sipariş: \"commandé vers 1547 par Tomaso Guadagni, conseiller de François Ier, pour la chapelle des Florentins au couvent des jacobins de Lyon\" (\"vers\" aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Akademik tarihlendirme 1543–1547 (Elsig 2014 p.22; kitap metnine erişilmedi, kaynak zinciri notuyla).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S03"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Teknik: yağlıboya, tahtadan tuvalse aktarma (transposition); Joconde aktarma yılı \"transfert (bois 1806)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Boyut 275 × 234 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Aksesuar/çerçeve dahil 325 × 278 cm (\"Hauteur avec accessoire : 3,25 m ; Largeur avec accessoire : 2,78 m\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Envanter INV 593 (Numéro principal) + MR 472 (Autre numéro d'inventaire).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Département des Peintures, Musée du Louvre; mülkiyet Etat (\"propriété de l'Etat\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Şu an Louvre'da görünür: Salle 712, Aile Denon, Niveau 1; Grande Galerie, 3e travée (E003 güncellik uyarısıyla).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Köken: Lyon, Notre-Dame de Confort, chapelle des Guadagni (Iacono et Furone [1999] p.259-265 ref'li); saisie révolutionnaire 1790 (église des Jacobins, Lyon); Louvre'a giriş 1794; Joconde \"1794 Entrée matérielle\", anciennes appartenances \"clergé\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İmza \"FRANCESCO SALVIATO FLO. OPUS (S.B.D.)\" (Joconde transkripsiyonu); Joconde \"daté ; signé\" diyor (tarih transkripsiyonu yok → C036; Louvre inscriptions alanı boş → C032).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Konu (Joconde sujet): \"scène biblique (Apparition à Thomas, Les apôtres, bannière, draperie, effet de tissu, colonne, portrait, ?)\"; source \"Nouveau Testament\"; \"portrait, ?\" aynen korundu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Joconde sujet listesi üç çeyrek büst figürü Salviati'nin otoportresi olarak kaydeder: \"autoportrait (Salviati, en buste, de trois-quarts)\" (frwiki kuşkusu → C034).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "İkonografik betim (frwiki Description, satır içi atıfsız): dirilmiş İsa yalnız périzonium ile ayakta, Diriliş sancağı yanında; Thomas diz çökmüş böğür yarasına dokunuyor; havariler bol draperili. Görsel inceleme YOK; \"kaynakların betimlediği\" düzeyinde.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S03",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Konu seçimi, sipariş veren ve sanatçının paylaştığı anti-Medici siyasi görüşü yansıtır (Virassamynaïken 2015 p.208; Donato 2013 p.18-33; metinlere erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S03"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Vasari, Vite'de eseri anar; Lyon sanatı historiografik olarak silinirken az sayıda anılan eserden (Elsig 2014 p.10; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S03"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Anonim ve Landon (1832) tarafından gravürlendi; Roma San Marcello'da Vasari'ye \"attribuée à tort à Vasari\" yanlış atıflı, varyantlı fresk kopyası var.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Master CC gravürü dahil çeşitli kopyalar (BnF Est. Ed 4b rés. fol. raf işaretı; baskıya erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S02",
+    "S03"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Eser Lyon'a varışından itibaren popüler oldu, birçok sanatçı çeşitli ortamlarda kopyaladı (wiki anlatısı atıfsız; Joconde \"reproduit en gravure\" kısmi A destek).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "1998 \"Francesco Salviati ou la Belle Maniera\" sergisi (Louvre, Hall Napoléon, 27/04–29/06/1998).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Eser kamu malı (yazar ölümünden 100+ yıl; WD P6216 + P459); Commons PD-Art / PD-old-100-expired.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S01",
+    "S05"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Wikidata P571 = \"+1537\" (precision 7/yüzyıl; P1319 1525, P1326 1550; ref Joconde, erişim 2017-01-01); data/basyapitlar.json \"tarih\": \"1537\". Birincil kaynaklarda 1537 YOK → C029.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S01",
+    "S19"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "WGA arşiv kaydı (2016-03-05): \"1543-47\", \"Oil on wood transferred to canvas, 275 x 234 cm\", Louvre; sipariş \"Tommaso Guadani\" (ad varyantı → C031); Notre-Dame de Confort'ta aile cenaze şapeli; \"altarpiece\" nitelemesi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "enwiki sipariş cümlesi (Thomas II de Gadagne = Tomaso Guadagni, Francis I'in Floransalı danışmanı, Notre-Dame-de-Confort) satır içi atıfsız; Joconde (A) ve frwiki Pomarède 2005 p.312 (B) ile destekli.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S02",
+    "S10",
+    "S03"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Louvre notice güncelleme: HTML \"Dernière mise à jour le 19.02.2026\" ↔ JSON \"modified : 2026-08-11\" (aynı kaydın iki farklı tarihi; metadata olgusu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "D001 TARİH İHTİLAFI: data/WD \"1537\" ↔ Louvre \"XVIe siècle (1500 - 1600)\" ↔ Joconde \"2e quart 16e siècle\" + \"commandé vers 1547\" ↔ literatür/WGA \"1543–1547\". WD'nin Joconde referansında (S10/S16) 1537 GEÇMEZ; değer/precision uyuşmaz (E007); kesin yıl A ile desteklenemez, katmanlı verilmeli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S01",
+    "S02",
+    "S03",
+    "S08",
+    "S09",
+    "S10",
+    "S16",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "D002 DESTEK/TEKNİK: Wikidata P186 yalnız \"oil paint\" + \"canvas (support)\"; Louvre/Joconde \"tahtadan tuvalse aktarma\" (1806) der; WD'de özgün ahşap destek ve transposition yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S01",
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "D003 SİPARİŞ VEREN AD VARYANTLARI: \"Thomas II de Gadagne\" (enwiki) / \"Tomaso Guadagni\" (Joconde A) / \"Tommaso Guadani\" (WGA); şapel adı \"chapelle des Guadagni\" / \"chapelle des Florentins\" / \"funerary chapel of the Guadani family\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S10",
+    "S16",
+    "S18"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "D004 \"Notice du Louvre\" ATIF ZİNCİRİ KOPUK: en/fr wiki imza+otoportre için \"Notice du Louvre\" ref'i veriyor (URL'siz); güncel Louvre notice'ında inscriptions ve description alanları BOŞ; iddialar Joconde (A) ile destekli ama wiki'nin gösterdiği kaynak artık o ifadeleri içermiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "D005 ÖNCEKİ DENETİM ÇELİŞKİSİ: denetim-asama3/basyapitlar.csv \"Q18572249;…;1537;…;uyumlu\" birincil kaynaklarla çelişir; önceki \"uyumlu\" işaretine güvenilmemeli (ham kaynak esastır).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S19",
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "E002+E006 OTOPORTRE BELİRSİZLİĞİ: frwiki \"serait\" (koşullu); Joconde sujet \"portrait, ?\" (soru işareti aynen); otoportrenin hangi havari figürü olduğu erişilen birincil kayıtlarda yok; enwiki \"the apostle shown in three-quarter-profile\" der, figür eşlenmemiş.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S03",
+    "S10",
+    "S02"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "E003+E004 LOUVRE GÜNCELLİK UYARILARI: \"notamment leur localisation en salle - sont susceptibles de ne pas être à jour\" (Salle 712 güncel olmayabilir); \"Le contenu de cette notice ne reflète pas nécessairement le dernier état des connaissances\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "E005 \"DATÉ ; SIGNÉ\" BOŞLUĞU: Joconde \"daté ; signé\" der ama transkripsiyonda tarih yok (\"FRANCESCO SALVIATO FLO. OPUS (S.B.D.)\"); tarihli olduğu iddiası ile erişilen tarih metni arasındaki boşluk.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "E008 DATA \"ERKEN DÖNEM\": data/eser_notlari.json \"Salviati'nin erken dönem dinî kompozisyonlarından\" — atıfsız; 1543–1547 (B) ile uyumsuz (1510–1563; olgunluk). Doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S19",
+    "S02",
+    "S03"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "E009 DATA GÖRSEL BETİMLERİ: data/basyapitlar.json + eser_ayrintilari.json hotspot/betim iddiaları (kızıl saçlı Thomas, pembe-mor örtü, cangiante, silik haleler, kitaplı figür, koordinatlar) ve ders_kaynaklari.json \"dogrulandi\" işaretli renk cümlesi görsel İNCELENMEDİĞİ için doğrulanmadı; metinsel kısmi karşılık var; vision incelemesi gerekli.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S19",
+    "S10",
+    "S03"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "GÖRSEL İNCELENMEDİ: vision kullanılmadı; yalnızca metadata+lisans+çözünürlük (ana dosya 1028×1200 PD zayıf; Shonagon 2765×3231 PD; Sailko CC BY-SA 3.0). Louvre/RMN görselleri telifli (© GrandPalaisRmn / Arnaudet; © Louvre / Dequier), serbest değil, kullanılmadı. GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S05",
+    "S14",
+    "S09"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "ERİŞİLEMEDİ/ÖLÜ: utpictura18 403 (snapshot yok); WGA canlı+2023 arşiv placeholder; mistral canlı err=1201. Elsig 2014, Virassamynaïken 2015, Pomarède 2005, Monbeig-Goguel 1998, Miller 1998, Iacono & Furone [1999] ve öteki bibliyografya künyeleri yalnızca erişilen kayıtlarda anıldı; metne erişilmedi. BnF baskısına erişilmedi. itwiki sitelink yok. Uydurma bibliyografya yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S15",
+    "S17b"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S01",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q18572249 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18572249.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:43:22Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S02",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Incredulity of Saint Thomas (Salviati) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:44:19Z (action=parse)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S03",
+   "kurum": "Wikipedia (fr)",
+   "belge": "L'Incrédulité de saint Thomas (Salviati) wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:44Z (action=parse)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S04",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (19 QID)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:45Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S05",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo P18 ana dosya (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:45Z; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S06",
+   "kurum": "Wikipedia (en)",
+   "belge": "externallinks (işlenmiş)",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:46:42Z (URL keşfi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S07",
+   "kurum": "Wikipedia (fr)",
+   "belge": "externallinks (işlenmiş; Louvre ark + POP)",
+   "url": "https://fr.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:46:42Z (URL keşfi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S08",
+   "kurum": "Musée du Louvre",
+   "belge": "collections notice HTML, ark cl010059261",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010059261",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:46:44Z, 56343 B",
+   "tur": "birincil"
+  },
+  {
+   "id": "S09",
+   "kurum": "Musée du Louvre",
+   "belge": "notice JSON (sayfanın kendi Notice JSON linki)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010059261.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:47:38Z, 8380 B",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Ministère de la Culture / Joconde",
+   "belge": "POP notice 000PE027030 (güncelleme 10 février 2025)",
+   "url": "https://www.pop.culture.gouv.fr/notice/joconde/000PE027030",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:47Z, 140872 B",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Utpictura18 (Univ. Aix-Marseille)",
+   "belge": "node/19509",
+   "url": "https://utpictura18.univ-amu.fr/node/19509",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403, 14:47:41Z; Wayback snapshot YOK; ERİŞİLEMEDİ",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Web Gallery of Art",
+   "belge": "eski kayıt sayfası (canlı)",
+   "url": "http://www.wga.hu/html/s/salviati/incredul.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama \"moved\" placeholder — içerik ölü",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "kategori üyeleri (8 dosya)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:47Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikimedia Commons",
+   "belge": "diğer 7 dosyanın imageinfo'su",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, ~14:49Z; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wayback / WGA",
+   "belge": "WGA 2023-11-19 snapshot",
+   "url": "http://web.archive.org/web/20231119004048/https://www.wga.hu/html/s/salviati/incredul.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 — yine \"moved\" placeholder",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wayback / Joconde",
+   "belge": "eski mistral Joconde notice (arşiv 2016-03-24)",
+   "url": "http://web.archive.org/web/20160324145335/http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=CHERCHER&FIELD_1=REF&VALUE_1=000PE027030",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200, 14:49:42Z (canlı ölü S17b)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Wayback CDX",
+   "belge": "WGA snapshot listesi",
+   "url": "http://web.archive.org/cdx/search/cdx?url=wga.hu/html/s/salviati/incredul.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 14:51:02Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17b",
+   "kurum": "Ministère de la Culture",
+   "belge": "eski mistral URL canlı denemesi",
+   "url": "http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=CHERCHER&FIELD_1=REF&VALUE_1=000PE027030",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 + err=1201 \"Impossible d'ouvrir la base joconde\" — ÖLÜ (yerine S10+S16)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Wayback / WGA",
+   "belge": "WGA kayıt (arşiv 2016-03-05)",
+   "url": "http://web.archive.org/web/20160305065917/http://www.wga.hu/html/s/salviati/incredul.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200, 14:51:28Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S19",
+   "kurum": "Repo (salt-okunur)",
+   "belge": "data/basyapitlar.json, eserler_onbellek, eser_notlari, eser_ayrintilari, eser_konulari, eser_zorluk, eser_adlari_tr, ikonografi, ders_kaynaklari; denetim-asama3/basyapitlar.csv; zayif_eserler.csv; DURUM.md; MUFREDAT.md",
+   "url": "data/basyapitlar.json (yerel)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "okundu; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Varyantlı fresk kopya (San Marcello al Corso)",
+   "sanatci": "Anonim (Vasari'ye yanlış atıflı)",
+   "kurum": "San Marcello, Roma",
+   "mufredat_ici": false,
+   "gerekce": "Joconde'un belgelediği asıl–kopya ilişkisi; varyantlar ve atıf hatası karşılaştırması.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "eser": "Landon gravürü (1832) + anonim gravür",
+   "sanatci": "Landon / anonim",
+   "mufredat_ici": false,
+   "gerekce": "Eserin gravürle çoğaltılması; fotoğraf öncesi alımlama ve kompozisyon aktarımı karşılaştırması.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "eser": "Doubting Thomas (The Incredulity of Saint Thomas)",
+   "sanatci": "Caravaggio",
+   "mufredat_ici": false,
+   "gerekce": "Aynı ikonografik konu; Louvre kaydının bibliyografyasında Benay 2014 \"Touching is Believing: Caravaggio's Doubting Thomas in Counter-Reformatory Rome\" anılır (metne erişilmedi); öneri yorum düzeyindedir, eserin yeri bu brief'te doğrulanmadı.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil HTML+JSON (S08/S09) ve Joconde POP (S10) + 2016 arşiv (S16) ham cache'lerden yeniden açıldı; künye/köken/imza/sujet/gravür-kopya/transposition doğrulandı. en/fr wikitext (S02/S03), WGA 2016 arşiv (S18), Wikidata (S01), Commons metadata (S05/S14) yeniden okundu. Beş ihtilaf D (C029–C033) ve belirsizlikler E (C034–C040) açık; \"vers/serait/?/attribuée à tort\" aynen korundu. Görsel İNCELENMEDİ (C039); GZ TASLAK. Refs metinleri erişilmedi (C040).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar.json + eserler_onbellek \"1537\" ↔ birincil kaynaklar 1537 vermiyor (D001/C029); WD precision=yüzyıl (E007). Ders katmanlı tarih verir.",
+  "Lisans: data/eserler_onbellek.json gorseller[0].\"l\" BOŞ ↔ gerçek lisans Public domain (S05).",
+  "Dönem: data/eser_notlari.json \"erken dönem\" atıfsız; 1543–1547 (B) ile uyumsuz (E008/C037).",
+  "Hotspot: data/eser_ayrintilari.json 6 hotspot + koordinat → görsel inceleme gerekli (E009/C038); metinsel kısmi destek Joconde A.",
+  "Renk: data/ders_kaynaklari.json \"dogrulandi\" işaretli cangiante/renk cümlesi önceki işaret; görsel inceleme gerekli (C038).",
+  "Önceki denetim: denetim-asama3/basyapitlar.csv \"1537 … uyumlu\" ↔ D001 (D005/C033).",
+  "Fontainebleau: data özetindeki \"Fontainebleau çevresi akrabalık\" yorumu erişilen kaynaklarda yok; ders böyle bir bağ kurmaz.",
+  "Teknik: WD P186 yalnız oil+canvas; transposition (1806) birincilden (D002/C030).",
+  "Görsel: ana dosya zayıf (1028×1200); Shonagon PD alternatif (zayif_eserler.csv ile uyumlu); Louvre/RMN telifli; İNCELENMEDİ (C039); GZ TASLAK.",
+  "Uygun: data/eser_konulari.json \"dini/doubting-thomas\" + ikonografi listesi Joconde sujet (A) ile uyumlu."
+ ]
+}

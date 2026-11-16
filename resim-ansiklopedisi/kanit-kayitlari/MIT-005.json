@@ -1,0 +1,199 @@
+{
+  "madde_id": "MIT-005",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (MIT-005) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C005",
+      "iddia": "KOJIKI versiyonu: Amaterasu, İzanagi'nin ölüler ülkesine (Yomi) ziyaretinden sonra yaptığı arınma (misogi/harae) sırasında sol gözünü yıkamasıyla doğmuştur; sağ gözden Ay Tanrısı (Tsuki-yomi), burundan Susanoo doğmuştur.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K05",
+      "kaynak_baslik": "KO-JI-KI, or Records of Ancient Matters (çev. Basil Hall Chamberlain, 1882) — Sect. X",
+      "url": "https://en.wikisource.org/wiki/Kojiki_(Chamberlain,_1882)/Section_10",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "\"The name of the Deity that was born as he thereupon washed his left august eye was the Heaven-Shining-Great-August-Deity. The name of the Deity that was next born as he washed his right august eye was His Augustness Possessor [Tsuki-yomi].\"",
+      "pasaj_konum": "Sect. X, 'The Purification of the August Person'",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K01", "MIT-005-K07"],
+      "celisen_kaynaklar": [
+        "Nihon Shoki ana metni (K06 / K01 özeti) doğumu gözden değil, İzanagi ile İzanami'nin ortak kararından türetir — versiyon farkı, çelişki olarak değil ayrı anlatı olarak kaydedildi (bkz. C007)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkincil destek: K01 'According to Kojiki, Amaterasu came into being when Izanagi washed his left eye…'; K07 aynı arınma anlatısını özetler. Metin Chamberlain çevirisinden; Wikisource platformu kullanıcı katkılı transkripsiyondur, çeviri akademik kabul edilmiştir."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "NIHON SHOKI (ana metin) versiyonu: Ülkenin tüm kamilerini doğurduktan sonra İzanagi ve İzanami birlikte danışıp 'evrenin efendisi olacak birini' doğurmaya karar verir ve birlikte Güneş Tanrıçası'nı (Oho-hiru-me no muchi) meydana getirirler; çocuğun parlaklığı 'altı yönün tümünde' yayıldığı için onu derhâl Göğe gönderip gök işlerini ona emanet etmeye karar verirler. Bu versiyonda gözden doğma yoktur.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K01",
+      "kaynak_baslik": "Kokugakuin University, Encyclopedia of Shinto — 'Amaterasu' (Mori Mizue)",
+      "url": "https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9440",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Nihongi's main text states that Izanagi and Izanami made a deliberate decision to give birth to a 'lord of all'… they together produced the Hi no kami.\"",
+      "pasaj_konum": "EOS 'Amaterasu' maddesi, 3. paragraf",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K06"],
+      "celisen_kaynaklar": [
+        "Kojiki (K05) doğumu sol gözün yıkanmasına bağlar — ayrı versiyon, bkz. C005; iki anlatı birleştirilmedi."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief bu iddiada K06'yı (Aston çevirisi) birincil gösteriyordu; K06'nın erişim durumu ERISILDI_KISMEN (OCR düzensiz) olduğu ve Kural 9 DOGRULANDI için ERISILDI_OKUNDU/WAYBACK_OKUNDU şart koştuğu için birincil kaynak olarak tam okunan K01 alındı, Aston metni ikincil destek olarak kaydedildi. Aston pasajı (ikincil): \"After this Izanagi no Mikoto and Izanami no Mikoto consulted together, saying:—'We have now produced the Great-eight-island country… Why should we not produce someone who shall be lord of the universe?' They then together produced the Sun-Goddess, who was called Oho-hiru-me no muchi…\" — konum: 'Age of the Gods I', Aston s.18."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Cennete gelen Susanoo ile Amaterasu ukei (yeminle sınama) biçiminde bir yarışmaya girer; bu süreçte beş erkek ve üç kadın kami doğar ve Amaterasu, gerdanlığının 'tohumundan' (monozane) oluşan beş erkek kamiyi kendi tanrısal çocukları (mikogami) ilan eder.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K01",
+      "kaynak_baslik": "Kokugakuin University, Encyclopedia of Shinto — 'Amaterasu' (Mori Mizue)",
+      "url": "https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9440",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"The two kami engaged in a contest in the form of a trial by pledge (ukei), in the process giving birth to five male kami and three female kami; Amaterasu declared that the five male kami produced from the 'seed' (monozane) of her necklace were her own divine children, or mikogami.\"",
+      "pasaj_konum": "EOS 'Amaterasu' maddesi, 4. paragraf",
+      "belirsizlik_ifadeleri": ["undoubtedly (Kojiki metninde karakter konuşması, kaynağın ihtiyatı değil)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K05", "MIT-005-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkincil destek K05, Sect. XIV: \"As for the seed of the five male Deities born last, their birth was from things of mine; so undoubtedly they are my children.\" K07 (Britannica) da ukehi yarışmasını özetler. Üç kaynakla desteklenen iddia, mit anlatısı olduğu için GELENEKSEL_ANLATI türünde tutuldu."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "KOJIKI: Sekiz yüz myriad tanrı Göğün Sakin Irmağı'nın (Yasu no Kawara) yatağında toplanır; Omohi-kane'ye plan kurdurulur; 'sonsuz gecenin uzun ötüşlü kuşları' toplanıp öttürülür; demirci Ama-tsu-ma-ra çağrılır, I-shi-ko-ri-do-me'ye ayna, Jewel-Ancestor'a beş yüz eğri boncuk yaptırılır; beş yüz dallı sakaki ağacının üst dallarına boncuklar, orta dallarına sekiz ayak uzunluğundaki ayna asılır, alt dallarına beyaz ve mavi yatıştırıcı sunular bağlanır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K05",
+      "kaynak_baslik": "KO-JI-KI, or Records of Ancient Matters (çev. Basil Hall Chamberlain, 1882) — Sect. XVI",
+      "url": "https://en.wikisource.org/wiki/Kojiki_(Chamberlain,_1882)/Section_16",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "\"assembling the long-singing birds of eternal night and making them sing… charging Her Augustness I-shi-ko-ri-do-me to make a mirror… On its upper branches they hung an augustly complete [string] of curved jewels… taking and tying to the middle branches the mirror eight feet [long]\"",
+      "pasaj_konum": "Sect. XVI, 'The Door of the Heavenly Rock-Dwelling'",
+      "belirsizlik_ifadeleri": [
+        "Chamberlain dipnotu: yata-kagami okunuşu üzerine Motowori ile Moribe arasında tartışma ('eight feet' ↔ 'octangular' ↔ 'eightfold flowery pattern')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K06", "MIT-005-K07"],
+      "celisen_kaynaklar": [
+        "Nihon Shoki ana metni 'sekiz yüz myriad' yerine 'seksen myriad' sayısını kullanır (Aston dipnotu) — bu fark brief'te C019'da belgelenmiş, 8 iddia sınırı nedeniyle bu sürümde claim olarak taşınmamıştır."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkincil destek K06 (Aston, s.44): \"On its upper branches they hung an august five-hundred string of Yasaka jewels. On the middle branches they hung an eight-hand mirror.\" 'Uzun ötüşlü kuşların toplanması' sahnesi iki metinde de geçmekle birlikte, açılan kaynaklarda bu sahneye 'tori-ate' adı verilmemiştir; terim madde metninde kullanılmamıştır."
+    },
+    {
+      "claim_id": "C015",
+      "iddia": "KOJIKI'ye ÖZGÜ ayna/yansıma sahnesi: Ame-no-uzume 'Senden daha parlak bir tanrı olduğu için seviniyoruz' der; Ame-no-ko-yane ve Futo-tama aynayı öne sürüp saygıyla gösterir; Amaterasu kapıdan çıkıp aynaya bakar; gizlenmiş olan Ame-no-ta-jikara-o onu elinden tutup dışarı çeker; Futo-tama arkasından alttan bağlı ipi (shiri-kume-naha) çekerek 'Bundan geriye dönmemelisin!' der ve hem Gök Ovası hem de Kamış Ovaların Orta Ülkesi yeniden aydınlanır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K05",
+      "kaynak_baslik": "KO-JI-KI, or Records of Ancient Matters (çev. Basil Hall Chamberlain, 1882) — Sect. XVI",
+      "url": "https://en.wikisource.org/wiki/Kojiki_(Chamberlain,_1882)/Section_16",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "\"'We rejoice and are glad because there is a Deity more illustrious than Thine Augustness.' While she was thus speaking… pushed forward the mirror and respectfully showed it to the Heaven-Shining-Great-August-Deity, whereupon… she gradually came forth from the door and gazed upon it, whereupon the Heavenly-Hand-Strength-Male-Deity… took her august hand and drew her out…\"",
+      "pasaj_konum": "Sect. XVI, 'The Door of the Heavenly Rock-Dwelling'",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K07", "MIT-005-K11"],
+      "celisen_kaynaklar": [
+        "Nihon Shoki ana metninde aynanın gösterilmesi/yansıma sahnesi yer almaz (bkz. C018) — versiyon farkı; Britannica (K07) ise iki versiyonu tek anlatıda kaynaştırır."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkincil destek K11 (Cleveland Museum of Art küratoryal açıklaması): \"a mirror hung from a nearby tree made Amaterasu curious, bringing her to the entrance of the cave.\" Bu sahne, aynanın resim/baskı geleneğindeki görsel karşılığı için de temel oluşturur."
+    },
+    {
+      "claim_id": "C018",
+      "iddia": "NIHON SHOKI (ana metin) — VERSIYON FARKI: Ame no Uzume Eulalia otuyla sarılı bir mızrak alıp kaya mağaranın kapısı önünde 'ustalıkla bir mimik dans' icra eder, ters çevrilmiş bir fıçı koyar ve tanrısal esinli bir söz söyler; Amaterasu yalnızca Uzume'nin neşesini merak ederek kaya kapıyı daracık aralar ve dışarı bakar, bunun üzerine Ta-jikara-wo onu elinden tutup dışarı çıkarır. Nihongi ana metninde aynanın gösterilmesi / yansıma sahnesi yer almaz.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-005-K06",
+      "kaynak_baslik": "Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697, Cilt I (çev. W. G. Aston, 1896) — 'The Age of the Gods'",
+      "url": "https://archive.org/download/nihongi1asto/nihongi1asto_djvu.txt",
+      "erisim": {
+        "durum": "ERISILDI_KISMEN",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Ama no Uzume no Mikoto… took in her hand a spear wreathed with Eulalia grass, and standing before the door of the Rock-cave of Heaven, skilfully performed a mimic dance… she placed a tub bottom upwards, and gave forth a divinely-inspired utterance.\" / \"So with her august hand, she opened for a narrow space the Rock-door and peeped out. Then Ta-jikara-wo no Kami forthwith took Ama-terasu no Oho-kami by the hand, and led her out.\"",
+      "pasaj_konum": "'The Age of the Gods', Aston s.44–45",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K05"],
+      "celisen_kaynaklar": [
+        "Kojiki (K05) aynı sahnede aynanın gösterilmesini ve Amaterasu'nun yansımasına bakmasını anlatır (bkz. C015); Aston'ın dipnotları iki metin arasındaki bu tür farkları ayrıca kaydeder."
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Brief bu iddiayı DOGRULANDI olarak önermişti; ancak K06'nın erişim durumu ERISILDI_KISMEN (OCR düzensiz, dipnotlarda satır karışmaları) olduğundan Kural 9 gereği statü DOGRULANDI'ya yükseltilmedi. Ayrıca 'ayna sahnesi yer almaz' ifadesi ana metnin sessizliğine (yokluk gözlemi) dayanır; bu, Aston'ın dipnotlarında Kojiki–Nihongi farklarının kaydedilmesiyle uyumludur ama bağımsız ikinci bir tam-okunmuş kaynakla teyit edilmemiştir. Bağımsız denetimde gözden geçirilmelidir."
+    },
+    {
+      "claim_id": "C028",
+      "iddia": "Amaterasu'nun başlıca tapınım yeri, Japonya'nın önde gelen Şinto tapınağı olan Ise Büyük Tapınağı'dır; orada Japonya'nın üç İmparatorluk Hazinesi'nden biri olan bir aynada tezahür eder (diğer ikisi mücevherli bir gerdanlık ve bir kılıçtır).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-005-K07",
+      "kaynak_baslik": "Encyclopaedia Britannica — 'Amaterasu' (Last Updated: Nov 26, 2023)",
+      "url": "http://web.archive.org/web/20231128103345/https://www.britannica.com/topic/Amaterasu",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-11-28"
+      },
+      "pasaj": "\"Amaterasu's chief place of worship is the Grand Shrine of Ise, the foremost Shintō shrine in Japan. She is manifested there in a mirror that is one of the three Imperial Treasures of Japan (the other two being a jeweled necklace and a sword).\"",
+      "pasaj_konum": "Britannica 'Amaterasu' maddesi, son paragraf",
+      "belirsizlik_ifadeleri": [
+        "\"It is said to be this mirror which is worshipped at Ise as an emblem of the Sun-Goddess.\" (Aston/Chamberlain dipnotu, K06)",
+        "\"said to have belonged\" (Brooklyn Museum etiket metni, K12)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-005-K01", "MIT-005-K12"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Dört kaynakla desteklenir (K07, K01, K12, K06 dipnotu). Aynanın sembolik anlamı bu iddiada otomatik olarak atfedilmedi; Brooklyn etiketinin 'ayna imparatorun bilgeliğini temsil eder' biçimindeki yorumu (brief C029) 8 iddia sınırı nedeniyle claim olarak taşınmadı ve madde metnine evrensel bir atıf gibi yazılmadı."
+    },
+    {
+      "claim_id": "C036",
+      "iddia": "Temsil sınırlılığı (kurumsal tanıklık): Ise Jingū Müzesi, kendi koleksiyonundaki bir Amaterasu resmi için Batı'da İncil'in başlıca sahnelerini betimleyen dinî resimlerin çok olduğunu, ancak Japonya'nın dinî resminin büyük ölçüde Budist resmi olduğunu ve Japon mitolojisini betimleyenlerin nadir olduğunun söylenebileceğini yazar.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-005-K13",
+      "kaynak_baslik": "Jingū Chōkokan (Ise Jingū Museum) duyurusu: Itō Ryūgai imzalı 'Amaterasu Ōmikami' (9 Şubat 2019)",
+      "url": "https://museum.isejingu.or.jp/sp/news/f45wnyqq.html",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Özgün (Japonca): 「西欧ではバイブルの主要場面を描いた宗教画は多いですが、日本の宗教画は仏教画が殆どであり、日本神話を描いたものは珍しいといえます。」 Sadık çevirisi: Batı'da İncil'in başlıca sahnelerini betimleyen dinî resimler çoktur; ancak Japonya'nın dinî resmi büyük ölçüde Budist resmidir ve Japon mitolojisini betimleyenlerin nadir olduğu söylenebilir.",
+      "pasaj_konum": "Kurum duyurusu, 2. paragraf",
+      "belirsizlik_ifadeleri": ["「〜といえます」 ('söylenebilir')"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "TEK KAYNAK (kurum değerlendirmesi): 'Amaterasu Japon resminde yaygın betimlenir' iddiasını çürütür. Buna karşılık Tokyo National Museum eMuseum (HTTP 403) ve NICH ColBase (JS kabuğu) bu turda açılamadığı için 'Japon ulusal müzelerinde örnek yoktur' biçiminde olumsuz bir genel iddia da kurulamaz (K16 erişim notu)."
+    }
+  ]
+}

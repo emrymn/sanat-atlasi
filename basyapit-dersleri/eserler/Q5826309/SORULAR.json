@@ -1,0 +1,568 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5826309",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu baskının sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Utagawa Hiroshige"
+    },
+    {
+     "harf": "B",
+     "metin": "Katsushika Hokusai"
+    },
+    {
+     "harf": "C",
+     "metin": "Kitagawa Utamaro"
+    },
+    {
+     "harf": "D",
+     "metin": "Utagawa Hiroshige II"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6/S7/S14/S17: Utagawa Hiroshige (Andō, 1797–1858).",
+   "yanlis_gerekceleri": {
+    "B": "Hokusai çağdaş ukiyo-e manzara ustasıdır (Fugaku Sanjūrokkei); bu baskının sanatçısı değildir, kayıtlar Hiroshige der.",
+    "C": "Utamaro bijin-ga (güzel kadın) portreleriyle tanınır; bu manzara baskısının sanatçısı değildir.",
+    "D": "Hiroshige II, seriyi Hiroshige'nin 1858 ölümünden sonra tamamlayan ardıldır; bu baskı Hiroshige I'e aittir (C009)."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Baskı hangi seriye aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "One Hundred Famous Views of Edo (Meisho Edo hyakkei)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tōkaidō Gojūsan-tsugi"
+    },
+    {
+     "harf": "C",
+     "metin": "Kiso Kaidō Rokujūkyū-tsugi"
+    },
+    {
+     "harf": "D",
+     "metin": "Fugaku Sanjūrokkei"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6/S12/S14/S17 başlıkları: \"from the series One Hundred Famous Views of Edo\".",
+   "yanlis_gerekceleri": {
+    "B": "Tōkaidō Gojūsan-tsugi Hiroshige'nin 1832'de yayımladığı farklı seridir (C070); Shōno bu seridendir.",
+    "C": "Kiso Kaidō Rokujūkyū-tsugi Hiroshige'nin Eisen ile paylaştığı farklı seridir (C070).",
+    "D": "Fugaku Sanjūrokkei Hokusai'nin serisidir; Hiroshige'ye ait değildir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Özgün baskının tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ahşap baskı (nishiki-e); kâğıt üzerine mürekkep ve renk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Bakır levha gravür"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7 \"Woodblock print; ink and color on paper\"; S17 \"1 print : woodcut, color\".",
+   "yanlis_gerekceleri": {
+    "B": "Tuval üzerine yağlıboya Van Gogh kopyasının tekniğidir (C027); özgün baskı kâğıt üzerine ahşap baskıdır.",
+    "C": "Fresk duvar resmi tekniğidir; bu eser kâğıt baskıdır.",
+    "D": "Bakır levha gravür farklı bir baskı tekniğidir; kaynaklar ahşap baskı (woodblock/woodcut) der."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Brooklyn Museum kaydı baskıyı hangi tarihe koyar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1857, dokuzuncu ay (Ansei 4)"
+    },
+    {
+     "harf": "B",
+     "metin": "1856, üçüncü ay (Ansei 3)"
+    },
+    {
+     "harf": "C",
+     "metin": "1858, birinci ay"
+    },
+    {
+     "harf": "D",
+     "metin": "1855, dokuzuncu ay"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 Brooklyn: \"9th month of 1857\"; Met/Freer/Fuji de 1857 der.",
+   "yanlis_gerekceleri": {
+    "B": "1856 (Ansei 3) Bunka Isan Online'ın aynı Fuji nüshası için verdiği karşı tarihtir; Brooklyn 1857 der — tarih ihtilafı D002'de tartışılır (C049).",
+    "C": "1858 Hiroshige'nin ölüm yılıdır; baskı tarihi değildir.",
+    "D": "1855 Ansei Edo depremi yılıdır; baskı tarihi değildir (C023)."
+   },
+   "kanit": [
+    "C004",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "İmzanın yanındaki mühür kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yayıncı Uo-Ei (Shitaya Uoei)"
+    },
+    {
+     "harf": "B",
+     "metin": "Sansür memuru (aratame)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tarih mührü (Snake 9)"
+    },
+    {
+     "harf": "D",
+     "metin": "Sanatçı imzası (Hiroshige-ga)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"Publisher: Shitaya Uo Ei\"; S10 \"seal(publisher's.Uo-Ei)\" — imzanın yanında.",
+   "yanlis_gerekceleri": {
+    "B": "Aratame sansür mührüdür, sağ üstte bulunur; imza yanındaki yayıncı mührü değildir (C012).",
+    "C": "Snake 9 tarih mührüdür, sağ üstte oval biçimdedir; yayıncı mührü değildir (C012).",
+    "D": "Hiroshige-ga sanatçı imzasıdır, mühür değildir; sol alt kırmızı kartuşta yer alır (C011)."
+   },
+   "kanit": [
+    "C010",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Van Gogh kopyası bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Van Gogh Museum, Amsterdam"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Rijksmuseum, Amsterdam"
+    },
+    {
+     "harf": "D",
+     "metin": "Stedelijk Museum, Amsterdam"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation); 1 Temmuz 1994'ten beri.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay kopyayı 1988 \"Van Gogh à Paris\" sergisinde gösterdi; kalıcı koleksiyon değildir (C027 sergi listesi).",
+    "C": "Rijksmuseum Vincent van Gogh 1973–1994 arası adıydı; 1994'ten beri Van Gogh Museum (C032).",
+    "D": "Stedelijk Museum 2 Haziran 1973'e dek ödünç aldı; kalıcı kurum değildir (C032)."
+   },
+   "kanit": [
+    "C027",
+    "C032"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Van Gogh kopyası nerede ve ne zaman yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris, Ekim–Kasım 1887"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris, 1886"
+    },
+    {
+     "harf": "C",
+     "metin": "Amsterdam, 1887"
+    },
+    {
+     "harf": "D",
+     "metin": "Arles, 1888"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"Paris, October-November 1887\".",
+   "yanlis_gerekceleri": {
+    "B": "1886 Van Gogh'un görüntüyle Paris Illustré kapağında karşılaştığı yıldır (C031); kopya tarihi değildir.",
+    "C": "Amsterdam kopyanın bugünkü bulunduğu yerdir; yapıldığı yer Paris'tir (C027).",
+    "D": "Arles Van Gogh'un sonraki dönemine aittir; kopya Paris'te Ekim–Kasım 1887'de yapıldı (C027)."
+   },
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Yağmur baskıda nasıl betimlenmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki farklı açıda kesişen ince koyu çizgi katmanları"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek yönde paralel çizgiler"
+    },
+    {
+     "harf": "C",
+     "metin": "Bulanık renk lekeleri (wash)"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca noktacılık"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"overlay of black and gray lines at different angles\"; S2/S3 iki yönde kesişen çizgiler.",
+   "yanlis_gerekceleri": {
+    "B": "Tek yön yetersizdir; kaynaklar iki farklı açıda kesişen katmanlar der (C016).",
+    "C": "Bulanık wash değil keskin çizgi örgüsü betimlenir; bokashi bulutlar içindir (C017).",
+    "D": "Noktacılık (pointillizm) farklı bir tekniktir; kaynaklar çizgi katmanları der (C016)."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Koyu yağmur bulutları hangi teknikle verilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Atenashi bokashi"
+    },
+    {
+     "harf": "B",
+     "metin": "Aratame"
+    },
+    {
+     "harf": "C",
+     "metin": "Tanzaku"
+    },
+    {
+     "harf": "D",
+     "metin": "Gozabune"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S14: \"atenashi bokashi\" ile simsiyah yağmur bulutları, baskıcı eliyle.",
+   "yanlis_gerekceleri": {
+    "B": "Aratame sansür mührüdür, bulut tekniği değildir (C012).",
+    "C": "Tanzaku başlık kartuşunun şiir kâğıdı biçimidir; bulut tekniği değildir (C013).",
+    "D": "Gozabune Atakemaru gemisinin türlerinden biridir; bulut tekniği değildir (C056)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Gösterilen LoC nüshasının dijital kimliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "jpd.02950"
+    },
+    {
+     "harf": "B",
+     "metin": "30.1478.58"
+    },
+    {
+     "harf": "C",
+     "metin": "1948,0508,0.5"
+    },
+    {
+     "harf": "D",
+     "metin": "F1994.29"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S16/S17: LoC digital ID jpd.02950; LC-DIG-jpd-02950.",
+   "yanlis_gerekceleri": {
+    "B": "30.1478.58 Brooklyn nüshasının envanteridir (C039).",
+    "C": "1948,0508,0.5 BM nüshasının envanteridir (C042).",
+    "D": "F1994.29 Freer nüshasının envanteridir (C043)."
+   },
+   "kanit": [
+    "C045"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Bu eser tek bir \"orijinal\" değil, çok nüshalı bir ahşap baskıdır; kurumlar farklı nüshaları kataloglar.",
+   "dogru": true,
+   "aciklama": "Doğru: boyutlar ve envanterler nüshaya göre değişir (S5–S17).",
+   "kanit": [
+    "C007",
+    "C039"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Van Gogh kopyası tuval üzerine yağlıboyadır ve renkleri özgün baskıdan daha yoğundur.",
+   "dogru": true,
+   "aciklama": "Doğru (S9): oil on canvas; \"colours more intense than in the original\".",
+   "kanit": [
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Seri sıra numarası tüm kurumlarda aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: BM/LoC 52, Brooklyn 58, WD 53 der; numaralandırma gelenekleri farklıdır (D001).",
+   "kanit": [
+    "C039",
+    "C042"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "LoC katalog kaydı tarihi köşeli parantezle \"[1857]\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S17): \"[1857]\" — köşeli parantez tarihin sonradan verildiğini işaret eder.",
+   "kanit": [
+    "C045"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Yağmur çizgileri tek bir yönde paralel oyulmuştur.",
+   "dogru": false,
+   "aciklama": "Yanlış: iki farklı açıda kesişen çizgi katmanları (S5/S2/S3).",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Seri numaralandırma ihtilafını (D001) analiz edin: 52/58/53 hangi kurum/geleneğe dayanır?",
+   "beklenen_ogeler": [
+    "BM/LoC 52",
+    "Brooklyn 58",
+    "WD P1545 53 atıfsız",
+    "numaralandırma gelenekleri",
+    "tek numara dayatılmaz"
+   ],
+   "kanit": [
+    "C048",
+    "C039",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Tarih ihtilafını (D002) değerlendirin: aynı Fuji nüshası için 1857/1856; jawiki iç tutarsızlığı.",
+   "beklenen_ogeler": [
+    "Fuji Ansei 4 (1857)",
+    "Bunka Ansei 3 (1856)",
+    "LoC [1857]",
+    "jawiki gövde↔infobox",
+    "çözülmez"
+   ],
+   "kanit": [
+    "C049",
+    "C004",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Gösterilen nüsha uyuşmazlığını (D005) kaynak eleştirisiyle çözün: data BM ↔ hash LoC ↔ WD P195.",
+   "beklenen_ogeler": [
+    "hash 4016e12af98da014",
+    "Commons Credit jpd.02950",
+    "WD P195 LoC yok",
+    "data düzeltme önerisi"
+   ],
+   "kanit": [
+    "C052",
+    "C046",
+    "C045"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İlk baskı sürümü tartışmasını (D004) filolojik yöntemle değerlendirin: Forrer/Marks ↔ Bunka \"shohan de arō\".",
+   "beklenen_ogeler": [
+    "iki tekne + beyaz kayıkhane",
+    "Brooklyn erken nüsha",
+    "Bunka olasılık ifadesi",
+    "gönderge belirsiz",
+    "kesinleştirilmez"
+   ],
+   "kanit": [
+    "C051",
+    "C024",
+    "C068",
+    "C061"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Van Gogh kopyasını bir alımlama belgesi olarak analiz edin: bordür, renk, provenance, japonisme.",
+   "beklenen_ogeler": [
+    "karakter bordürü çerçeveleme",
+    "renk yoğunluğu",
+    "Theo→Jo→Vakıf→VGM",
+    "Paris Illustré 1886",
+    "Whistler/Buhot/Lepère"
+   ],
+   "kanit": [
+    "C027",
+    "C028",
+    "C032",
+    "C031",
+    "C033",
+    "C083"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Yağmur çizgilerinin iki farklı yönde kesiştiği bölgeleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: siyah+gri çizgiler farklı açılarda bindirilmiş (Brooklyn).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Nehirdeki kütük salını ve onu sırıkla iten tek salcıyı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"a solitary boatman poles his log raft\" (Brooklyn).",
+   "kanit": [
+    "C014",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sol alttaki kırmızı imza kartuşunu (\"Hiroshige-ga\") ve yanındaki yayıncı mührünü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: imza sol alt kırmızı kartuş; yayıncı Uo-Ei mührü yanında (Brooklyn/BM).",
+   "kanit": [
+    "C011",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ üstteki sansür (aratame) ve tarih (Snake 9) mühürlerini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: BM \"seal(censor's)\" + \"seal(date.Snake 9)\"; dewiki aratame yuvarlak, tarih oval.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Üstteki koyu yağmur bulutlarını ve karşı kıyıda silüet halindeki Atake'yi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: atenashi bokashi bulutlar (Fuji); Atake yağmurda yalnız silüet (Fuji).",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Utagawa Hiroshige (1797–1858); Sudden Shower over Shin-Ōhashi Bridge and Atake (Ōhashi atake no yūdachi); 1857 dokuzuncu ay (Ansei 4; LoC \"[1857]\"); ahşap baskı nishiki-e, kâğıt üzerine mürekkep+renk; ōban dikey.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Seri + bağlam?",
+   "arka": "Meisho Edo hyakkei (One Hundred Famous Views of Edo); 119 levha, 1856–1859, Hiroshige II tamamladı; 1855 Ansei depremi sonrası yeniden inşa bağlamı.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik?",
+   "arka": "Yağmur iki yönde kesişen ince çizgiler; bulutlar atenashi bokashi (baskıcı eliyle, nüshaya göre değişir); kiraz kalıp + Stege oyumu; 1842 yasası en çok 8 renk.",
+   "kanit": [
+    "C016",
+    "C017",
+    "C025",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Van Gogh kopyası?",
+   "arka": "Bridge in the Rain (after Hiroshige); Paris Ekim–Kasım 1887; yağlıboya 73.3×53.8; F0372/JH1297/s0114V1962; Van Gogh Museum; Kameido Plum Park ile birlikte kopyalandı; renkler daha yoğun + karakter bordürü.",
+   "kanit": [
+    "C027",
+    "C028",
+    "C030",
+    "C032"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Nüshalar + gösterilen?",
+   "arka": "Brooklyn 30.1478.58 (No.58); Met JP2522 + JP643; BM 1948,0508,0.5 (No.52); Freer F1994.29; Fuji; gösterilen LoC jpd.02950 (data \"British Museum\" der — D005).",
+   "kanit": [
+    "C039",
+    "C040",
+    "C042",
+    "C043",
+    "C045"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,582 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q956541",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Q956541 numaralı eser bugün hangi kurumda ve hangi envanter numarasıyla kayıtlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery of Canada, Ottawa — 8007"
+    },
+    {
+     "harf": "B",
+     "metin": "Royal Collection — RCIN 407297"
+    },
+    {
+     "harf": "C",
+     "metin": "National Trust, Ickworth — 851783"
+    },
+    {
+     "harf": "D",
+     "metin": "William L. Clements Library, Ann Arbor — 1776 sürümü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGC katalog kaydı (S6/S8): \"National Gallery of Canada\", \"Accession number 8007\". NT ve RCT kayıtları bu tuvali 1770 \"prime version\" olarak ayrı gösterir.",
+   "yanlis_gerekceleri": {
+    "B": "RCIN 407297, George III'ün 1771'de 300 guineas'a sipariş ettiği autograf tekrardır; bugün Spencer House'da ödünçtedir, NGC orijinali değildir.",
+    "C": "851783, Ickworth'teki 1779 imzalı-tarihli Bristol sürümüdür; 1956'da vergi karşılığı National Trust'a geçmiştir.",
+    "D": "Clements'teki sürüm 1776'da Waldeck prensi için yapılmıştır; ABD'deki tek tam boy orijinaldir ama Q956541 değildir."
+   },
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "NGC birincil kaydına göre tuvalin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "152.6 × 214.5 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "151 × 213 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "1525 × 2160 mm"
+    },
+    {
+     "harf": "D",
+     "metin": "153.5 × 245.9 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGC (S6/S8) \"Dimensions 152.6 x 214.5 cm\"; Wikidata P2048/P2049 aynı değeri NGC referansıyla (P813 2020-01-07) verir.",
+   "yanlis_gerekceleri": {
+    "B": "151 × 213 cm EN/IT Vikipedi infobox değeridir; birincil NGC kaydıyla uyuşmaz (D01) ve yuvarlanmış görünür.",
+    "C": "1525 × 2160 mm, Ickworth'teki 1779 sürümünün National Trust ölçüsüdür.",
+    "D": "153.5 × 245.9 cm, Royal Collection sürümünün eklemeler dahil dış ölçüsüdür (eklemeler hariç 153.5 × 213.5 cm)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Q956541'in versiyon kimliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1770 \"prime version\"; West'in kamuya açık sergilediği ilk resim"
+    },
+    {
+     "harf": "B",
+     "metin": "1771'de George III için yapılan autograf tekrar"
+    },
+    {
+     "harf": "C",
+     "metin": "1776'da Waldeck prensi için yapılan kopya"
+    },
+    {
+     "harf": "D",
+     "metin": "1779'da imzalanıp tarihlenen Bristol kopyası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "National Trust: \"The 1770 prime version which was the first painting the artist exhibited in public (RA 1771) is in the National Gallery of Canada, Ottawa.\"; RCT: \"West created the first version of this painting (National Gallery of Canada, Ottawa) in 1770\".",
+   "yanlis_gerekceleri": {
+    "B": "1771 sürümü Royal Collection'daki autograf tekrardır (RCIN 407297); NGC tuvalinden bir yıl sonra, Kral için yapılmıştır.",
+    "C": "1776 sürümü Clements Library'dedir; Friedrich, Prince of Waldeck siparişidir.",
+    "D": "1779 sürümü Ickworth'tedir (NT 851783), sol altta \"B. West 1779\" imza ve tarih taşır."
+   },
+   "kanit": [
+    "C005",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser ilk kez nerede ve ne zaman kamuya açık sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Royal Academy sergisi, 1771, Pall Mall, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "İlk Royal Academy sergisi, 1769 (Regulus ile birlikte)"
+    },
+    {
+     "harf": "C",
+     "metin": "Buckingham Palace Warm Room, 1774"
+    },
+    {
+     "harf": "D",
+     "metin": "Carleton University Art Gallery, 1993"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NT \"the first painting the artist exhibited in public (RA 1771)\"; RCT 1770'te yapılıp 1771'de RA'da sergilendiğini kaydeder; Stacey: \"West exhibited it at the Royal Academy in 1771\".",
+   "yanlis_gerekceleri": {
+    "B": "1769'daki ilk RA sergisinde Kral'ın talimatıyla The Departure of Regulus gösterildi; Wolfe bu sergide değil, 1771'de yer aldı.",
+    "C": "1774, George III kopyasının Warm Room'da kayıtlı olduğu yıldır; NGC orijinalinin ilk kamuya açık sergisi değildir.",
+    "D": "1993, Robert Houle'un Kanata yanıtlarının sergilendiği tarihtir; West'in tuvalinin ilk sergisiyle ilgisi yoktur."
+   },
+   "kanit": [
+    "C008",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "NGC credit line eserin Kanada'ya gelişini nasıl kaydeder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1918'de Canadian War Memorials'e hediye; 1921'de NGC'ye transfer"
+    },
+    {
+     "harf": "B",
+     "metin": "1956'da vergi karşılığı Hazine'den devir"
+    },
+    {
+     "harf": "C",
+     "metin": "1928'de William L. Clements'in hediyesi"
+    },
+    {
+     "harf": "D",
+     "metin": "1771'de George III'ün doğrudan satın alması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGC (S6/S8): \"Gift of the 2nd Duke of Westminster to the Canadian War Memorials, 1918; Transfer from the Canadian War Memorials, 1921\".",
+   "yanlis_gerekceleri": {
+    "B": "1956 \"in lieu of tax\" devri Ickworth sürümüne aittir (National Trust 851783).",
+    "C": "1928 hediyesi Clements Library'deki Waldeck sürümünün Ann Arbor'a gelişidir.",
+    "D": "George III orijinali satın almadı; 1771'de ayrı bir autograf tekrarı sipariş etti (RCT)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Stacey'ye göre \"West modern kıyafetli tarih resminde ilkti\" iddiasının durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çoktan çürütüldü; Romney yaklaşık yedi yıl önce, Edward Penny en az iki kez önceledi"
+    },
+    {
+     "harf": "B",
+     "metin": "DNB ve DAB tarafından doğrulanmış kesin bir önceliktir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca gravür alanında geçerlidir; tuvalde tartışmasızdır"
+    },
+    {
+     "harf": "D",
+     "metin": "Romney'den sonra ama Penny'den önce gelir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Stacey (NGC Bulletin 7, 1966): \"the story that West was the first to use modern dress in painting modern historical scenes has long been exploded\"; Romney yedi yıl önce (kayıp resim), Penny en az iki kez.",
+   "yanlis_gerekceleri": {
+    "B": "Stacey, DNB ve DAB'ın bu iddiayı taşıdığını ama iddianın \"long been exploded\" olduğunu söyler; yani bu sözlükler önceliği doğrulamaz.",
+    "C": "Stacey'nin itirazı tuval resminin kendisine yöneliktir; gravürle sınırlı bir istisna yoktur.",
+    "D": "Sıralama tersidir: Romney yaklaşık yedi yıl önce, Penny en az iki kez West'ten önce aynı biçimi kullanmıştır."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Stacey'ye göre resmin başlıca şöhreti hangi kanalla yayıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Woollett'in Boydell için yaptığı 1776 gravürü"
+    },
+    {
+     "harf": "B",
+     "metin": "NGC'nin 1921'deki transferi"
+    },
+    {
+     "harf": "C",
+     "metin": "1771 Royal Academy sergisi tek başına"
+    },
+    {
+     "harf": "D",
+     "metin": "Ickworth kopyasının 1956'da National Trust'a geçmesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Stacey: \"the picture acquired its chief reputation not by way of the original canvas but through the famous engraving made by William Woollett for Alderman Boydell\"; gravür Bağımsızlık Bildirgesi yılında basıldı.",
+   "yanlis_gerekceleri": {
+    "B": "1921 transferi eserin Kanada'daki kurumsal yerini belirler; Stacey şöhretin kaynağını gravürde görür.",
+    "C": "RA sergisi büyük ilgi gördü (kuyruklar kapıdan taşıyordu), ama Stacey \"chief reputation\"ı tuvalden değil gravürden kazandığını söyler.",
+    "D": "Ickworth sürümünün 1956 devri bir provenance olayıdır; şöhretin yayılma kanalı değildir."
+   },
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "National Trust kaydına göre Ickworth versiyonundaki Yerli savaşçı figürü için hangisi doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Belirli bir bireyin portresi olduğu bilinmiyor; kesesi sanatçının koleksiyonundan, Great Lakes Northeast Peoples yapımı"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir Mohawk şefinin doğrulanmış portresidir"
+    },
+    {
+     "harf": "C",
+     "metin": "Giysilerinin özgün örnekleri British Museum'da doğrulanmıştır"
+    },
+    {
+     "harf": "D",
+     "metin": "Wolfe'un ölüm anında yanında olduğu belgelenmiş bir tanıktır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NT 851783: \"The seated Indigenous warrior is not known to be the likeness of a particular individual. He wears a pouch from the artist's collection which was made by the Northeast Peoples of the Great Lakes.\"",
+   "yanlis_gerekceleri": {
+    "B": "Britannica figürü \"wholly fictional\" sayar ve \"possibly Mohawk\" der; bu bir olasılık ifadesidir, doğrulanmış portre değil.",
+    "C": "British Museum iddiası EN Vikipedi'de \"Failed verification\" etiketlidir; doğrulanamadı.",
+    "D": "Stacey, ölüm anında yanında bulunanların dört ya da muhtemelen beş kişiyi geçmediğini ve figürlerin çoğunun orada olmadığını söyler."
+   },
+   "kanit": [
+    "C017",
+    "C016",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Montcalm'ın vuruluşu hangi sürümlerde görünür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sonraki versiyonlarda (1771 Royal Collection kopyasında çok silik); NGC orijinalinde betimlenmez"
+    },
+    {
+     "harf": "B",
+     "metin": "NGC orijinalinde sağ arka planda belirgin biçimde"
+    },
+    {
+     "harf": "C",
+     "metin": "Bütün sürümlerde aynı belirginlikte"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca Woollett gravüründe"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "EN Vikipedi: \"Later versions also show General Montcalm … being shot from his horse in the far background\"; 1771 Royal Collection kopyasının alt yazısı \"a very faint depiction of the death of Montcalm\" der.",
+   "yanlis_gerekceleri": {
+    "B": "EN Vikipedi bu ayrıntıyı \"later versions\"a bağlar; NGC prime version için Montcalm betimlenmez.",
+    "C": "Sürümler arasında fark vardır: 1771 kopyasında ayrıntı \"very faint\" olarak nitelenir.",
+    "D": "Gravür tuval kompozisyonunun çoğaltmasıdır; Montcalm ayrıntısı sonraki tuval sürümlerine aittir."
+   },
+   "kanit": [
+    "C020",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Royal Collection sürümü için RCT kaydının verdiği sipariş yılı ve bedel nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1771; 300 guineas"
+    },
+    {
+     "harf": "B",
+     "metin": "1770; orijinalin satın alınması"
+    },
+    {
+     "harf": "C",
+     "metin": "1776; Waldeck prensi siparişi"
+    },
+    {
+     "harf": "D",
+     "metin": "1779; Bristol siparişi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT 407297: West ilk sürümü 1770'te yaptı, 1771'de RA'da sergiledi; \"the same year that the King commissioned this autograph repetition for 300 guineas\".",
+   "yanlis_gerekceleri": {
+    "B": "1770, NGC prime version'ının tarihidir; Kral orijinali satın almadı, ayrı bir tekrar sipariş etti.",
+    "C": "1776, Clements'teki Waldeck siparişinin tarihidir.",
+    "D": "1779, Ickworth'teki imzalı-tarihli Bristol sürümünün tarihidir."
+   },
+   "kanit": [
+    "C030",
+    "C005"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "NGC kaydı tekniği \"oil on canvas\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: S6/S8 \"Materials: oil on canvas\" (A).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "West, çağdaş kıyafetli tarih resminde ilk sanatçıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Stacey bu öykünün \"long been exploded\" olduğunu söyler; Romney yaklaşık yedi yıl önce (resim kayıp), Edward Penny en az iki kez öncelemiştir (B).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Resimdeki figürlerin çoğu Wolfe'un ölüm anında yanında değildi.",
+   "dogru": true,
+   "aciklama": "Doğru: Stacey'ye göre uzlaşı \"dört ya da muhtemelen beş kişiden fazla değil\" yönündedir; on üç figürden orta kesinlikle tanımlanan yalnızca Teğmen Henry Browne orada görünür (B).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Ickworth versiyonu 1779 tarihli ve imzalıdır; 1956'da vergi karşılığı Hazine'den National Trust'a devredilmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: NT \"Date 1779 (signed and dated)\", sol alt \"B. West 1779\"; \"accepted by HM Treasury in lieu of tax and transferred to the National Trust in 1956\" (A).",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "George III, NGC'deki orijinal tuvali 1770'te satın almıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: RCT, Kral'ın 1771'de ayrı bir autograf tekrarı 300 guineas'a sipariş ettiğini kaydeder (A); EN Vikipedi orijinali almadığını, Stacey resmin Lord Grosvenor'da kaldığını aktarır (B).",
+   "kanit": [
+    "C030",
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Stacey'nin \"belgesel olmayan tarih resmi\" eleştirisini figür anahtarları üzerinden değerlendirin: hangi figür için hangi tür kanıt var, ücret hipotezi neden kanıt değil?",
+   "beklenen_ogeler": [
+    "Browne (tek kesin figür)",
+    "Monckton yaralı/fırkateyn",
+    "Fraser savaşta değil",
+    "Barré yüzünden yaralı",
+    "Woollett 6 / Grosvenor 7 anahtarı",
+    "Hale £100 mektubu gravür bağlamında",
+    "\"we have to face the possibility\""
+   ],
+   "kanit": [
+    "C015",
+    "C054",
+    "C055",
+    "C056",
+    "C059",
+    "C081"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Versiyonlar arası farkları (Montcalm, haberci, astar/eklemeler) ve QID ayrımını yönetin; D02/D03/D12 uyuşmazlıklarını kaynak hiyerarşisiyle çözün.",
+   "beklenen_ogeler": [
+    "5 autograf ↔ Stacey 4 / Britannica 3 kopya",
+    "Ickworth 1779 sonradan eklendi",
+    "WD AGO ↔ ROM çelişkisi",
+    "P571=1776 Clements'e ait",
+    "RC lined/augmented",
+    "birincil kayıt esas"
+   ],
+   "kanit": [
+    "C029",
+    "C020",
+    "C031",
+    "C064",
+    "C065",
+    "C071"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Yerli figürün kurgusallığını noble savage ikonografisi ve Houle'un Kanata (1992) müdahalesi üzerinden tartışın; doğrulanamayan dayanakları işaretleyin.",
+   "beklenen_ogeler": [
+    "NT: birey portresi değil",
+    "Britannica: wholly fictional (possibly Mohawk)",
+    "kese: West koleksiyonu, Great Lakes Northeast Peoples",
+    "British Museum \"Failed verification\"",
+    "Fryd eksik künye",
+    "Kanata sepya + battaniye",
+    "1993 Carleton"
+   ],
+   "kanit": [
+    "C016",
+    "C017",
+    "C018",
+    "C035",
+    "C087",
+    "C080"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"Modern kıyafette ilk\" anlatısının nasıl kurulduğunu ve nasıl söküldüğünü analiz edin (DNB/DAB, Galt 1820, West'in kendi öyküsü, Stacey 1966, Romney/Penny).",
+   "beklenen_ogeler": [
+    "Reynolds/Drummond klasik giysi önerisi",
+    "West'in yanıtı ve [in realtà nel 1759] notu",
+    "\"long been exploded\"",
+    "Romney ~7 yıl / Penny ≥2",
+    "Galt'a atfen söz + Stacey şerhi",
+    "Reynolds \"rivoluzione nell'arte\"",
+    "George III anlatısı ihtilafı"
+   ],
+   "kanit": [
+    "C013",
+    "C014",
+    "C037",
+    "C038",
+    "C039",
+    "C070"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "data'daki \"sarı yelek\" ve ışık/dövme/başlık betimlerini kanıt seviyeleriyle değerlendirin: görsel inceleme olmadan ne söylenebilir, ne söylenemez?",
+   "beklenen_ogeler": [
+    "data \"sarı yelek\" ↔ EN wiki \"red waistcoat\" ↔ Stacey",
+    "D08 tartışma",
+    "görsel İNCELENMEDİ → GZ TASLAK",
+    "NT gökyüzü betimi Ickworth'e ait",
+    "data DEĞİŞTİRİLMEDİ",
+    "insan editör görsel teyidi"
+   ],
+   "kanit": [
+    "C067",
+    "C074",
+    "C076",
+    "C021"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre üçgen kompozisyonu ve apeksi oluşturan bayrak direğini/ucunu bulun; figür gruplarının hangi köşeleri tamamladığını işaretleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (EN/IT wiki): \"triangular composition, made by the top of the flag (as the apex)\"; merkezde Wolfe.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Wolfe'un kırmızı ceket/yelek/pantolonunu, beyaz gömleğini ve sol kolundaki siyah yas bandını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (EN wiki + Stacey): \"a red coat, a red waistcoat, red breeches and a white shirt\"; \"the black mourning band (for his father) on the left arm\". data \"sarı yelek\" der → D08 görsel teyit gerektirir.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Wolfe'un önünde yerde duran musket, fişeklik ve süngüyü bulun; generalin askerleri gibi silahlandığı iddiasını görselle sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (EN/IT wiki + Stacey): \"On the ground in front of Wolfe are his musket, cartridge box and bayonet\"; \"at his feet the 'fusil' and bayonet\".",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Solda çenesini yumruğuna dayamış oturan Yerli savaşçıyı bulun; (Ickworth versiyonunda) kesesini ve duruşunun \"düşünme\" işaretini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NT 851783 + EN/IT wiki): figür belirli bir bireyin portresi değil; kese sanatçının koleksiyonundan, Great Lakes Northeast Peoples yapımı. NGC ve Ickworth sürümleri ayrı görsellerdir.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka planda koşan haberciyi ve ele geçirilmiş fleur-de-lis'li bayrağı bulun; NGC orijinalinde Montcalm'ın vuruluşu görünüyor mu, sonraki sürümlerde nerede?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (EN/IT wiki): haberci şapkasını sallar, captured flag with the fleur-de-lis; \"Later versions also show General Montcalm … being shot from his horse in the far background\" (1771 kopyasında çok silik).",
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Death of General Wolfe; Benjamin West; 1770; oil on canvas; 152.6 × 214.5 cm; National Gallery of Canada, Ottawa, env. 8007; 1770 \"prime version\".",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Edinim zinciri?",
+   "arka": "Lord Grosvenor satın aldı → 2. Duke of Westminster, Beaverbrook aracılığıyla Kanada'ya (WWI tribute) → 1918 Canadian War Memorials'e hediye → 1921 NGC'ye transfer.",
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "\"İlk\" mi?",
+   "arka": "Hayır. Çağdaş kıyafet tartışmalıydı (Reynolds klasik önerdi, West reddetti); Stacey: \"long been exploded\" — Romney ~7 yıl önce (kayıp), Penny en az iki kez. West'e atfedilen söz: \"the same truth that guides the pen of the historian…\" + Stacey şerhi.",
+   "kanit": [
+    "C013",
+    "C014",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Şöhret kanalı + belgesellik?",
+   "arka": "Şöhret: Woollett'in Boydell için 1776 gravürü (Bağımsızlık Bildirgesi yılı). Belgesel değil: Stacey ≤4 ya da muhtemelen 5 kişi; 13 figürden yalnız Henry Browne kesin; maiyetten kimse için kanıt yok.",
+   "kanit": [
+    "C027",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Beş versiyon?",
+   "arka": "NGC 1770 (prime, 8007) · Royal Collection 1771 (RCIN 407297, 300 guineas, Spencer House loan) · Clements 1776 (Waldeck, 1928 hediye) · ROM/Monckton (Sigmund Samuel Gallery) · Ickworth 1779 (NT 851783, \"B. West 1779\", 1956 in lieu of tax). Sayı tartışmalı: Stacey 4, Britannica 3 kopya.",
+   "kanit": [
+    "C029",
+    "C030",
+    "C032",
+    "C033",
+    "C034"
+   ]
+  }
+ ]
+}

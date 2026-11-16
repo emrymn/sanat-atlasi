@@ -1,0 +1,931 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q28797801",
+ "sanatci_id": "jacques-louis-david",
+ "baslik": "Horas Kardeşlerin Yemini (Toledo replikası)",
+ "ozgun_baslik": "The Oath of the Horatii (Le Serment des Horaces)",
+ "kunye": {
+  "sanatci": "Jacques-Louis David (Toledo eMuseum); WD P170: Anne-Louis Girodet (\"after a work by\" David) — atıf ihtilaflı (D2)",
+  "sanatci_yasam": "David 1748–1825; Girodet 1767–1824",
+  "tarih": "1786",
+  "tarih_belirsizlik": "Toledo 1786 (kesin); orijinal (Q476458) imza 1784 ↔ Louvre \"probablement … juillet 1785\" (D3)",
+  "teknik": "oil on canvas (tuval üzerine yağlıboya)",
+  "boyut_cm": {
+   "yukseklik": 130.2,
+   "genislik": 166.7
+  },
+  "muze": "Toledo Museum of Art, Toledo, Ohio",
+  "envanter": "1950.308",
+  "edinim": "1950; Purchased with funds from the Libbey Endowment, Gift of Edward Drummond Libbey; önceki sahip Wildenstein (1937)",
+  "konum": "Not on View (Toledo eMuseum, Wayback 2025-09-01)",
+  "telif_durumu": "Kamu malı (PD-old-100-expired / PD-Art; WD P6216=public domain); Toledo eMuseum görsel lisansı sayfada yok (E11)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons / Google Art Project (Toledo Museum of Art taraması; dosya adı yanıltıcı — D5)",
+  "lisans": "Public domain (PD-old-100-expired; PD-Art)",
+  "dogrulama": {
+   "yontem": "metadata-only (imageinfo S13/S14); görsel bu oturumda İNCELENMEDİ (vision kotası)",
+   "cozunurluk": "GAP 6156×4800 px (5.772.683 bayt); INV 3692 (Louvre orijinali) 10051×7794 px",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon kaynak metinlerinden (S6/S7/S9); GZ TASLAK; insan editör görsel teyidi zorunlu; Toledo eMuseum görsel lisansı doğrulanamadı (E11); Louvre site görselleri telifli (C036)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 427
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1327
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3100
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-iki-ayrı-zaman-çizgisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-atölye-kariyer-ve-émulation"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-yeminin-geometrisi-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-icat-edilmiş-an-ve-jestin-yolculuğu"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-imza-boyut-restorasyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Q28797801'in Toledo replikası (1786, 1950.308) olduğunu, Louvre orijinalinden (Q476458, INV 3692) ayırt eder; data QID eşleme hatasını veri notu olarak formüle eder.",
+  "Birincil kaynaklarla (Louvre notice, Toledo eMuseum Wayback, Provenance PDF) künye/sipariş/provenans/imza doğrular; atıf (D2) ve tarih (D3) ihtilaflarını yönetir.",
+  "Horas kompozisyonunu, ikonografisini (yemin anının icadı, aile bağları, kirmen) ve Neoklasisizm manifestosu nitelemesini kaynak betimiyle analiz eder.",
+  "Orijinal ↔ replika karşılaştırmasını (ölçek, sipariş, imza, provenans) kurar; jestin Roman selamı/faşist sahiplenme yolculuğunu değerlendirir.",
+  "Görsel kimliği ihtilafını (D5) ve lisans sınırını (PD Commons ↔ telifli Louvre site) beyan eder; GZ TASLAK ve insan editör teyidi gereğini bilir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Répétition / replika",
+   "tanim": "Sanatçının kendi eserinden yaptığı yetkili yineleme; Louvre kaydı Toledo tuvalini \"répétition\" olarak doğrular.",
+   "kanit": [
+    "C028",
+    "C001"
+   ]
+  },
+  {
+   "ad": "Neoklasisizm",
+   "tanim": "Antik sadelik/düzeni örnek alan 18. yy akımı; Oath \"manifesto/paragon\" sayılır (alımlama yorumu, Crow zinciri).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Distaff (kirmen)",
+   "tanim": "Yün eğirme aleti; Toledo replikasına eklenen, \"originality\" iddiası taşıyan detay.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Roman Salute",
+   "tanim": "Öne uzatılmış, avuç içi aşağı kol jesti; Oath'tan faşist İtalya/Nazi selamına uzanan politik yolculuk.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Horatii / Curiatii",
+   "tanim": "Roma ve Alba Longa'nın üçer savaşçı kardeşleri; Livius I.24–26, Dionysios III, Corneille Horace.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Q28797801 = Toledo'daki 1786 replika (1950.308); Louvre orijinali değil. WD P195=Q1743116 Toledo, P217=1950.308, P571=1786; S9 \"Object number 1950.308\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Louvre orijinali Q476458; başlık \"Le serment des Horaces, entre les mains de leur père\"; David; INV 3692 / MR 1432; ilgili eskiz RF 47 (1784, relatedWork cl010066868).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Toledo kaydı: Artist \"Jacques-Louis David (French, 1748-1825)\", 1786, oil on canvas, Painting 130.2×166.7 cm (51 1/4×65 5/8 in.), Frame 165.1×201.3×10.8 cm, \"Not on View\"; Credit Line Libbey Endowment (1950).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Louvre: Hauteur 3,3 m / Largeur 4,25 m (avec accessoire 3,85×4,7 m); huile sur toile; imza sol altta \"L. David faciebat/ ROMAE anno/ MDCCLXXXIV.\"; David (Paris 1748 – Bruxelles 1825).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Toledo replikası sol altta \"J.L. David faciebat / Parisiis / anno MDCCLXXXVI\" imzalı (Paris, 1786) — ham zlib çıkarımı (E7).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Louvre: Salle 702 (Salle Daru, néoclassicisme), Denon, Niveau 1; Propriétaire Etat; affectataire Musée du Louvre Département des Peintures; edinim \"entrée - Collection de Louis XVI\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "WD Q28797801: P170 Girodet (Q433434) + P1877 \"after a work by\" David (Q83155); P571 1786 (ref eMuseum, P813 2019-12-16); P127 Wildenstein & Company (Q10288082) P585=1937; P195 P580=1950.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "WD Q476458: P195=Q3044768 (Department of Paintings of the Louvre), P217=INV 3692 / MR 1432, P276=Q4032340 (Room 702), P127=French State → Louvre kaydıyla birebir uyumlu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu: Roma–Alba Longa savaşında üç Horatii kardeşin üç Curiatii ile düellosu; Tullus Hostilius dönemi, MÖ 7. yy anlatısı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Yazınsal kaynaklar: Livius I.24–26; Dionysios Halikarnassos, Roman Antiquities III (S6 ← Marvin & Thomas 2006, Ashgate, s.102–103; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Corneille'in Horace trajedisi + Poussin etkisi; David'e atfedilen söz \"Se devo il tema a Corneille, devo il quadro a Poussin\" (S7 ← Sarpe 1984 + Sansoni 1964; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Yemin anı David'in kendi icadı (antik kaynaklarda bu sahne yok) (S6 ← Winkler 2009, The Roman Salute, s.42–56 + Crow 1985 s.213–214; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Toledo Label Text: kardeşler babaları önünde ölümüne dövüş yemini eder; \"rhythmic composition inspired by classical relief sculpture\"; erkeklerin gergin duruşu ↔ kadınların yaslı çöküşü (\"slumped in grief and resignation\"); Devrim öncesi \"restrained emotion, order, and the sacrifice of the individual for the good of the state\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Aile bağları: Sabina (Horatius'un eşi, Curiatii kız kardeşi), Camilla (Horatii kız kardeşi, Curiatii nişanlısı); sağ kalan kardeş Camilla'yı öldürür (resimde DEĞİL); David başlangıçta bu sahneyi düşünmüş, vazgeçmiş; Brutus (1789, kraliyet siparişi) benzer tema; Voltaire Brutus trajedisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Toledo replikası orijinalden farkı: kadınların ayakları dibinde iplik sarılı distaff (kirmen); PDF \"a detail to establish the originality of the picture\"; \"close to the original, except…\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kompozisyon: solda üç kardeş, ortada üç kılıç tutan baba, sağda üç kadın + iki çocuk; kaçış noktası kılıçların tutulduğu elin önünde; erkekler düz/sert, kadınlar eğri çizgiler (S6 ← Boston College web + S7 ← Cocchi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "itwiki: baba \"O Roma o morte\" der (kaynak gösterilmemiş).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Uzatılmış kol jesti (avuç içi aşağı) → Roman selamı → faşist İtalya ve Nazi Partisi sahiplenmesi (S6 ← Winkler 2009).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Neoklasisizmin \"manifesto\"/paragonu sayılması: itwiki lead (kaynaksız), enwiki \"paragon\" (BC web); akademik çıpa Crow 1978 (Art History, s.424–471) + Crow 1985 — Louvre bibliyografyasında ve enwiki ref'lerinde ANILDI, metne erişilmedi (zincir).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Teknik okumalar: görünmez fırça izleri, donuk renkler, üç sayısı simgesi, \"dondurulmuş\" an; iki eğri bir düz kılıç \"perhaps foreshadowing that only one brother would survive\" (E3 korundu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "itwiki: diyagonaller babanın sol yumruğunda birleşir; Caravaggio dersi ışık/gölge; soğuk ön plan ışığı; Rococo reddi; sütunlar Tuscan (\"non doriche\"); kahverengi/gri palet + kırmızı/azur/beyaz/sarı notalar; baba pelerini kırmızı (S7 ← Cocchi + Morante).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Kraliyet siparişi (ORİJİNAL): Louis XVI, d'Angiviller (1730–1809, directeur des Bâtiments du roi) aracılığıyla, 1781 sonu/1782 başı; özgün konu \"Horace vainqueur\" 330×330 cm, 25 Ağustos 1783 Salonu; David erteler (Andromaque kabul parçası 1783); Temmuz 1784 Roma izni; konu+boyut değiştirilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Toledo replikası kraliyet siparişi DEĞİL: \"a reduced replica ordered from David by the high-ranking courtier Comte de Vaudreuil\"; PDF \"Painted for the Comte de Vaudreuil, 1786\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "enwiki: sipariş \"allegory about loyalty to the state and therefore to the king\" niyetiyle; David agreed-upon scene'den ayrıldı (paragraf sonu {{Citation needed|date=April 2025}}).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "İcra: Roma'da \"probablement durant le premier semestre de l'année 1785 et achevé en juillet 1785\" (E2 korundu); Roma atölyesinde (Piazza del Popolo yakını) Ağustos 1785 ilk yarısı sergileme; Ağustos sonu/Eylül başı Paris'e nakil; Salon 1785, Salon carré, livret no.103: \"Ce tableau de 13 pieds de long, sur 10 de haut, est pour le Roi\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Roma'da ilk sergilemede Papa da izleme talebi; Salon 1785'e geç teslim (S6 ← Crow 1985, Painters and Public Life, s.213–214, Yale UP; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Salon'da önce kötü konuma asıldı, halk tepkisiyle taşındı (S6 {{Citation needed|date=February 2024}}).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "Louvre kaydı Toledo replikasını doğrular: \"repris par l'artiste à l'issue de l'exposition pour en faire une répétition (Toledo Museum of Art)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Orijinalin sonraki hayatı: David'in Louvre atölyesinde 1785 sonbahar–Ağustos 1791; Salon 1791 no.134; \"Brutus\" (INV 3693) ile birlikte; Muséum talepleri (1797, 1801×2, 1802, 1803); Lüksemburg 29 Ocak 1804; musée royal du Luxembourg 24 Nisan 1818; Louvre'a 7 Ocak 1826 nakil, Mart 1826 sergide; Temmuz 1948 Michel Zezzos restorasyonu (allégement du vernis).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Toledo provenans zinciri (PDF s.13): Vaudreuil 1786 → Lebrun açık artırma Paris 26 Kasım 1787 lot 107 (\"as by David\") → satıcı Lebrun → \"sold to Didot\" (1794'e dek) → Firmin-Didot ailesi → 1880 Hyacinthe Didot → 1913'e dek Louis Delamarre → Baronne Eugène d'Huart → Paul Roux et al satışı Paris 14 Aralık 1936 (lot no eksik, E7) → 1937 Wildenstein Paris/New York → 1950 Toledo.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Toledo sergileme tarihi: 1826 Galerie Lebrun no.40 (\"as by David, entirely retouched by him five years after 1786\"); 1913 Petit Palais \"David et ses élèves\" no.25 (\"as by Girodet, retouched by David\"); 1937 Chefs d'Oeuvres no.293; 1964 Cleveland no.114 (as by David); 1968 Royal Academy no.179 (as by David); 2005–06 Girodet cat.3; 2010–11 Antiquity Revived cat.89 (yalnız Houston).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Toledo'nun listelediği atıf literatürü ikiye bölünmüş: Landon 1814 \"excellent copy by Girodet\"; Chaussard 1824 \"as by David\"; Bellier de la Chavignerie 1868 \"as nearly wholly by Girodet\"; Jules David 1880 \"as by Girodet, retouched by David\"; Cantinelli 1930 / Hautecoeur 1954 \"as by Girodet\"; Holma 1940 \"as by David\"; Crow 1995 Emulation \"(as Girodet)\"; 1785 Dialogues sur le Salon \"une réduction … peinte par Girodet\"; Burlington 1965 Wittmann–Rosenblum mektuplaşması. Comparative References: Johnson 1989, Crow 1985, Wind 1940–41, Rosenblum 1970, Stewart 2001 (liste; metne erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Toledo label: Girodet katılımı \"reportedly assisted\" (kesin değil, E1 korundu): \"David's pupil Anne-Louis Girodet (1767–1824) reportedly assisted in making this version.\" ",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "GAP Commons dosyası Toledo kopyasının taraması: ObjectName \"Copy of the Oath of the Horatii - made by Girodet\"; ImageDescription \"Copy of the painting now in the Louvre made in 1786 to the Comte de Vaudreuil\"; Artist \"Anne-Louis Girodet / After Jacques-Louis David\"; 6156×4800; PD; Credit \"KwHkqyZxc2i04A at Google Cultural Institute\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "INV 3692 Commons dosyası Louvre orijinalinin fotoğrafı: \"photo Shonagon 2025-03-15\"; 10051×7794; PD-Art; DateTimeOriginal \"between 1784 and 1785\" (P1319=1784, P1326=1785).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Louvre'nun kendi site görselleri TELİFLİ: \"© 2018 GrandPalaisRmn (musée du Louvre) / Michel Urtado\" (+ © 2002 Angèle Dequier, © 1988 Blot/Jean).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "D1 KİMLİK ihtilafı: görev öncülü + data/ Q28797801'i \"David, 1784, Louvre\" kullanıyor ↔ S1/S9 Q28797801 = Toledo replikası (1786, 1950.308, WD Girodet); Louvre orijinali Q476458 (S5/S10); data'da iki QID aynı Türkçe başlıkla çift kayıtlı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D2 ATIF ihtilafı (Toledo tuvali): S9 Artist=\"David\" + label \"Girodet reportedly assisted\" ↔ S1 P170=Girodet (tek yaratıcı, \"after a work by\" David) ↔ S13 \"Anne-Louis Girodet / After Jacques-Louis David\" ↔ S6 altyazı \"painted in 1786 by David and his pupil Girodet\" ↔ S10 \"répétition\"ı David'e atfeder ↔ S15 Artist=\"DAVID, JACQUES-LOUIS\" (Girodet yok) ↔ S9 literatür ikiye bölünmüş (C032). Çözüm önerisi YOK; müze kaydı birincil, WD tek-atıf Girodet tartışmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S9",
+    "S10",
+    "S13",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D3 TARİH ihtilafı (orijinal): imza/resmî 1784 (S10 \"4e quart du XVIIIe siècle (1784)\", S11 startYear=1784, S7 \"realizzato nel 1784\") ↔ S10 Historique \"peint à Rome probablement … 1785 … achevé en juillet 1785\"; S6 \"painted in 1784 and 1785\"; S14 \"between 1784 and 1785\". data \"1784'te Roma'da tamamlayıp\" Louvre historique ile çelişir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S10",
+    "S11",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D4 BOYUT ihtilafı: Louvre S10 3,3×4,25 m ↔ S6 infobox 329.8×424.8 cm (~2 mm yuvarlama); Toledo S9 130.2×166.7 cm ↔ S15 (2012) 130.2×166.2 cm; inç her ikisinde 51 1/4×65 5/8 (=166.69 cm → 166.7 tutarlı; PDF olası dizgi hatası).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S10",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D5 GÖRSEL KİMLİĞİ ihtilafı: GAP dosya adı David/Louvre izlenimi verir ↔ S13 metadata Toledo/Girodet kopyası (ObjectName, ImageDescription, \"Google Art Project works in The Toledo Museum of Art\"); data/ bu dosyayı Louvre orijinali girişi için kullanıyor (yerel_gorseller hash da3c66750a298310) → uygulamanın \"Louvre başyapıtı\" görseli fiilen Toledo replikası.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D6 METADATA ihtilafı: S10 HTML \"Dernière mise à jour le 23.02.2026\" ↔ S11 JSON \"modified: 2026-08-11\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D7 İKONOGRAFİ ihtilafı (küçük): S7 \"non piangono neppure\" (kadınlar ağlamaz bile) ↔ S6 \"weeping and mourning\" / \"three women are weeping\" ↔ S9 \"slumped in grief and resignation\". İkincil kaynaklar arası yorum farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "E4: enwiki {{Citation needed}} (a) Enlightenment/Devrim gerilimi yorumu (April 2025), (b) David'in National Assembly'de XVI. Louis'nün idamına oy verdiği (April 2025) — kanıt yetersiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "E5: S10 site banner \"les informations … notamment leur localisation en salle … susceptibles de ne pas être à jour\"; altbilgi \"Le contenu de cette notice ne reflète pas nécessairement le dernier état des connaissances\". Salle 702 bu uyarıyla verilmeli.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E6: S7 lead \"manifesto importante del Neoclassicismo\" satır içi kaynaksız; \"O Roma o morte\" kaynaksız; S6 \"paragon\" yalnızca Boston College web'ine dayanır (üçüncül).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E7: S15 metni zlib ile ham çıkarıldı; imza \"MDC - CLXXXVI\" gibi bölünmüş; 14 Aralık 1936 Paul Roux satışının lot numarası çıkarımda boş; PDF görsel olarak doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E8: S3 Q476458 P571 referansı zayıf: beckchris.wordpress.com (blog) + Q97309629 (etiketi çözülemedi); P135 referansı da aynı blog. Tarih için S10 birincil alınmalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E9: Kitap/makaleler yalnızca erişilen kayıtların bibliyografya/ref'lerinde ANILDI, metne erişilmedi: Crow 1978/1985/1995, Winkler 2009, Marvin & Thomas 2006, Sarpe 1984, Sansoni 1964, Wind 1941, Johnson 1989, Stewart 2001, Rosenblum 1970.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E10: S1 Q28797801'de P186/P2048/P2049 yok; S13 kategorileri \"Artworks with Wikidata item missing dimensions/medium/genre\"; WD'den boyut/teknik çekilemez, birincil S9 kullanılmalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E11: S9 görselinin lisansı sayfada belirtilmemiş (\"Rights and Reproductions\" bağlantısı var); IIIF manifest (S17) arşivde yok, canlı host Cloudflare; Toledo görselinin kullanım hakkı doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S16",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Görseller bu oturumda İNCELENMEDİ (vision kotası); iki Commons dosyası PD metadata only; GZ TASLAK; kompozisyon kaynak metinlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "Erişim engelleri: S8 canlı eMuseum 403 (Cloudflare); S12 eski Louvre notice ölü yönlendirme (→ think-big); S17 IIIF arşivde yok; S9/S10/S11/S15 birincil arşiv/kayıt ile aşıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S12",
+    "S16",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "enwiki \"Comparisons\" galerisi yemin/kabartma öncüllerini listeler: Gavin Hamilton \"The Oath of Brutus\" (1763–64), Füssli \"Rütlischwur\" (1780), Parthenon frizi, Asur okçu kabartması (~MÖ 728), Lille PdBA David çizimi, Carnavalet saat versiyonu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Felsefi yorum (ödünç lens): Kantçı ödev↔eğilim çerçevesiyle kamusal görev ↔ özel duygu okuması; toplumsal cinsiyet lensiyle eril/dişil alan kodlanması; David'in bu düşünürlerden etkilendiği iddiası YOK.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C056",
+   "ifade": "Felsefi yorum (ödünç lens): Benjamin \"aura\" kavramıyla orijinal↔replika ilişkisi; kirmen detayının \"originality\" iddiası (C015) üzerinden kopyanın aura iddiası; Benjamin bu eser hakkında yazmamıştır, lens ödünç.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S9",
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C057",
+   "ifade": "David kariyeri: 1774 Prix de Rome; 1775–1780 Roma'da Fransız hükümeti öğrencisi; Paris dönüşü Diderot beğenisi; Louis XVI Louvre'da konut ayrıcalığı; Pecoul'un kızıyla evlilik; Roma'da Drouais ziyareti; Oath'ın başarısı ününü artırdı, kendi öğrencilerini alabildi (Girodet bu atölyenin öğrencisi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q28797801 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q28797801.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q83155 EntityData (David)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q83155.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikidata",
+   "belge": "Q476458 EntityData (Louvre orijinali)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q476458.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (30 sn backoff)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (18 QID + P1877)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q28797801",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→backoff→200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia EN",
+   "belge": "pageprops \"Oath of the Horatii\" (wikibase_item=Q476458)",
+   "url": "https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles=Oath%20of%20the%20Horatii",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia EN",
+   "belge": "\"Oath of the Horatii\" wikitext (Q476458)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Oath%20of%20the%20Horatii&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429×2→backoff→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia IT",
+   "belge": "\"Il giuramento degli Orazi\" wikitext (Q476458)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Il%20giuramento%20degli%20Orazi&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Toledo Museum of Art",
+   "belge": "eMuseum canlı sayfa",
+   "url": "https://emuseum.toledomuseum.org/objects/55069/the-oath-of-the-horatii",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (Cloudflare challenge); ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Toledo Museum of Art",
+   "belge": "eMuseum Wayback kopyası (arşiv 2025-09-01, ts 20250901121209)",
+   "url": "http://web.archive.org/web/20250901121209/https://emuseum.toledomuseum.org/objects/55069/the-oath-of-the-horatii",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (birincil arşiv)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Musée du Louvre",
+   "belge": "Collections notice HTML cl010062239",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010062239",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Musée du Louvre",
+   "belge": "Notice JSON cl010062239",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010062239.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Musée du Louvre",
+   "belge": "Eski oeuvre-notices URL (ölü yönlendirme)",
+   "url": "https://www.louvre.fr/en/oeuvre-notices/oath-horatii",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama → /en/explore/the-palace/think-big (notice ÖLÜ)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: GAP dosyası (Q28797801 P18)",
+   "url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→backoff→200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: INV 3692 dosyası (Q476458 P18)",
+   "url": "https://commons.wikimedia.org/wiki/File:Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S15",
+   "kurum": "Toledo Museum of Art",
+   "belge": "Provenance Report PDF, Wayback (arşiv 2012-12-24; s.13, 1950.308)",
+   "url": "https://web.archive.org/web/20121224083005if_/http://www.toledomuseum.org:80/wordpress/wp-content/uploads/Provenance-Research-lowres.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (1.903.464 bayt); zlib ham çıkarım",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "archive.org",
+   "belge": "Wayback availability API (eMuseum + IIIF)",
+   "url": "https://archive.org/wayback/available?url=emuseum.toledomuseum.org/objects/55069/the-oath-of-the-horatii",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200×2",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "Toledo Museum of Art",
+   "belge": "IIIF manifest (S9 sayfa içinden)",
+   "url": "https://emuseum.toledomuseum.org/apis/iiif/presentation/v2/1-objects-55069/manifest",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv kopyası YOK; canlı Cloudflare; ERİŞİLEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Le serment des Horaces (orijinal)",
+   "sanatci": "Jacques-Louis David",
+   "kurum": "Musée du Louvre",
+   "envanter": "INV 3692 / MR 1432",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyon/ikonografi; ölçek, sipariş, imza ve provenans farkı; Louvre \"répétition\" olarak doğrular. data Q476458 çift kayıtlı.",
+   "kanit": [
+    "C002",
+    "C004",
+    "C028"
+   ]
+  },
+  {
+   "eser": "The Lictors Bring to Brutus the Bodies of His Sons (Brutus)",
+   "sanatci": "Jacques-Louis David",
+   "kurum": "Musée du Louvre",
+   "envanter": "INV 3693",
+   "mufredat_ici": false,
+   "gerekce": "Kamusal görev ↔ özel duygu temasının devamı; Louvre historique ikisini birlikte anar.",
+   "kanit": [
+    "C029",
+    "C014"
+   ]
+  },
+  {
+   "eser": "The Oath of Brutus",
+   "sanatci": "Gavin Hamilton",
+   "kurum": "enwiki karşılaştırma galerisi",
+   "envanter": "",
+   "mufredat_ici": false,
+   "gerekce": "Yemin ikonografisi öncülü (1763–64); enwiki galerisi Füssli Rütlischwur ve antik kabartmalarla birlikte listeler.",
+   "kanit": [
+    "C054"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil cl010062239 (S10 HTML + S11 JSON, 200), Toledo eMuseum Wayback 2025-09-01 (S9, 200; canlı S8 403), Toledo Provenance PDF Wayback 2012-12-24 (S15, s.13) yeniden açıldı; künye/sipariş/provenans/imza/boyut doğrulandı. WD Q28797801/Q476458 (S1/S3) + en/it wikitext (S6/S7) + Commons imageinfo (S13/S14) yeniden okundu. Yedi ihtilaf D (C037–C043) açık; kimlik Q28797801=Toledo replikası, Q476458=Louvre orijinali teyit. Görsel metadata only, vision kotası → İNCELENMEDİ (C052); GZ TASLAK. Kitap/makale metinleri erişilmedi (C049).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D1/C037: data Q28797801'i \"David, 1784, Louvre\" kullanıyor; doğru orijinal QID Q476458. Anahtarların Q476458'e taşınması VEYA Q28797801 kaydının Toledo replikası olarak yeniden yazılması önerilir (karar ana oturumun). data DEĞİŞTİRİLMEDİ.",
+  "Çift kayıt: eser_adlari_tr/eser_konulari/eser_zorluk/ikonografi dosyalarında Q28797801 ve Q476458 aynı başlık/motifle listeli.",
+  "D5/C041: yerel_gorseller/eser_ayrintilari/eser_turleri GAP dosyasını (hash da3c66750a298310) Louvre girişi için kullanıyor; metadata Toledo replikası. Orijinal için INV 3692 dosyası (10051×7794, PD) kullanılmalı.",
+  "D3/C039: data \"1784'te Roma'da tamamlayıp\" ↔ Louvre historique \"probablement … juillet 1785\"; imza 1784. \"yaklaşık 1784\" kabul edilebilir, \"1784'te tamamlandı\" çelişkili.",
+  "Konum: harita_motifler \"Louvre'dadır\" → Q476458 için doğru (Salle 702, E5/C045 uyarısıyla); Q28797801 için yanlış (Toledo, Not on View).",
+  "Önceki doğrulama geçersiz: ders_kaynaklari kanit_adaylari id 5fd8ca5471 durum=\"dogrulandi\" — QID hatalı olduğundan bayrak geçersiz; yeniden kanıtlandı.",
+  "Eksik künye: kunye/muze_numaralari/gorsel_kaynagi/ders_dogrulama/eser_duzeltmeleri dosyalarında Q28797801/Q476458/INV 3692/1950.308 kaydı YOK.",
+  "Sipariş ayrımı (C022/C023): kraliyet siparişi yalnızca orijinal (Louis XVI/d'Angiviller); Q28797801 Vaudreuil siparişi.",
+  "E10/C050: WD Q28797801'de boyut/teknik yok; data birincil Toledo kaydından (S9) almalı.",
+  "data \"bak\" hotspot'u \"Yere bırakılmış yün eğirme aleti\" (distaff) tarif ediyor — bu Toledo replikasına özgü detay (C015); Louvre orijinalinde yok. Künye Louvre iddia ederken hotspot replikayı tarif ediyor (D1/D5 ek kanıt)."
+ ]
+}

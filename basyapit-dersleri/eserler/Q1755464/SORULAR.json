@@ -1,0 +1,547 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1755464",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Gravürün sanatçısı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Albrecht Dürer"
+    },
+    {
+     "harf": "B",
+     "metin": "Bosch"
+    },
+    {
+     "harf": "C",
+     "metin": "Bruegel"
+    },
+    {
+     "harf": "D",
+     "metin": "Holbein"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil künye (Met 43.106.2) ve enwiki: Albrecht Dürer.",
+   "yanlis_gerekceleri": {
+    "B": "Bosch Hollandalı bir ressamdır (Dünyevi Zevkler); bu Alman gravürü ona ait değildir.",
+    "C": "Bruegel de Hollandalıdır (Karda Avcılar); Dürer'in Meisterstiche üçlüsüyle karıştırılmamalıdır.",
+    "D": "Holbein (Elçiler) bir sonraki kuşaktır; gravürün sahibi Dürer'dir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Gravürün tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1513"
+    },
+    {
+     "harf": "B",
+     "metin": "1434"
+    },
+    {
+     "harf": "C",
+     "metin": "1565"
+    },
+    {
+     "harf": "D",
+     "metin": "1600"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met birincil künye ve tablet yazıtı: 1513.",
+   "yanlis_gerekceleri": {
+    "B": "1434, Van Eyck Arnolfini Portresi'nin tarihidir; bu gravürle karıştırılmamalıdır.",
+    "C": "1565, Bruegel'in Karda Avcılar tarihidir; Dürer gravürü değil.",
+    "D": "1600 doğru yanıt değildir; eser 1513'tür."
+   },
+   "kanit": [
+    "C001",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gravür (bakır levha)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Woodcut"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met birincil künye: engraving (bakır levha gravür).",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya tuval/pano tekniğidir; bu bir baskıdır.",
+    "C": "Fresk duvar resmidir; gravür kâğıt üzerine baskıdır.",
+    "D": "Woodcut (tahta baskı) Dürer'in bıraktığı tekniktir; bu eser bakır levha gravürdür."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser hangi üçlünün parçası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üç Meisterstiche"
+    },
+    {
+     "harf": "B",
+     "metin": "Mevsim serisi"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir fresk döngüsü"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir portre serisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "enwiki: üç Meisterstiche (usta baskı).",
+   "yanlis_gerekceleri": {
+    "B": "Mevsim serisi Bruegel'e aittir; Dürer'in üçlüsü tematik (cesaret/çalışma/melankoli) baskılardır.",
+    "C": "Fresk döngüsü değildir; üçü de gravürdür.",
+    "D": "Portre serisi değildir; alegorik/kompozisyonel baskılardır."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Ölüm figürü ne tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kum saati"
+    },
+    {
+     "harf": "B",
+     "metin": "Kılıç"
+    },
+    {
+     "harf": "C",
+     "metin": "Kitap"
+    },
+    {
+     "harf": "D",
+     "metin": "Taç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "enwiki betimi: Ölüm'ün çürüyen leşi kum saati tutar (memento mori).",
+   "yanlis_gerekceleri": {
+    "B": "Kılıç bir savaş atribütüdür; Ölüm burada zamanı (kum saati) simgeler.",
+    "C": "Kitap aziz/âlim atribütüdür (St Jerome); Ölüm figüründe yoktur.",
+    "D": "Taç hükümranlık simgesidir; Ölüm kum saatiyle ölümlülüğü hatırlatır."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Panofsky'ye göre eser hangi kaynaktan esinlenmiş?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Erasmus Enchiridion"
+    },
+    {
+     "harf": "B",
+     "metin": "Vasari"
+    },
+    {
+     "harf": "C",
+     "metin": "İncil sadece"
+    },
+    {
+     "harf": "D",
+     "metin": "Nietzsche"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Panofsky (1969): Erasmus'un Hristiyan Askerin Elkitabı (Enchiridion).",
+   "yanlis_gerekceleri": {
+    "B": "Vasari gravürü över ama esin kaynağı olarak gösterilmez; o bir alımlama tanığıdır.",
+    "C": "İncil imgeleri (Ephesians 6 zırh, Psalm 23 vadi) alegoriye katılır; Panofsky'nin işaret ettiği esin kaynağı Erasmus Elkitabı'dır, \"yalnız İncil\" bu bağlantıyı dışlar.",
+    "D": "Nietzsche 19. yy alımlamasıdır; esin kaynağı değil, sonraki bir yorumdur."
+   },
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Panofsky'ye göre köpek neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tanrı'ya sadakat"
+    },
+    {
+     "harf": "B",
+     "metin": "Tehdit"
+    },
+    {
+     "harf": "C",
+     "metin": "Ölüm"
+    },
+    {
+     "harf": "D",
+     "metin": "Şeytan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Panofsky'nin yorumu: köpek Tanrı'ya sadakatin (faithfulness) sembolüdür.",
+   "yanlis_gerekceleri": {
+    "B": "Tehdit şeytan/ölüm figürlerinde kodlanır; köpek sadık bir eşlikçidir.",
+    "C": "Ölüm kum saati tutan iskelet figürüdür; köpek değil.",
+    "D": "Şeytan keçi başlı yaratıktır; köpek onun karşıtı bir sadakat simgesidir."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Vasari gravürü nasıl över?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Daha iyisi yapılamaz\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Sıradan\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Zayıf\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Bitmemiş\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Vasari: \"öyle mükemmel birkaç levha ki daha iyisi yapılamaz\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Sıradan\" Vasari'nin övgüsüyle çelişir; o eseri doruk olarak görür.",
+    "C": "\"Zayıf\" bir eleştiridir; Vasari tekniği över.",
+    "D": "\"Bitmemiş\" ifadesi yoktur; Vasari eseri tamamlanmış bir ustalık örneği sayar."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Karling ve Ursula Meyer'e göre şövalye nasıl okunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Soyguncu şövalye (Raubritter)"
+    },
+    {
+     "harf": "B",
+     "metin": "Hristiyan asker"
+    },
+    {
+     "harf": "C",
+     "metin": "Aziz"
+    },
+    {
+     "harf": "D",
+     "metin": "İmparator"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Karling (1970) ve Meyer: \"Raubritter\" (soyguncu şövalye); tilki kuyruğu + Hristiyan simge yokluğu.",
+   "yanlis_gerekceleri": {
+    "B": "Hristiyan asker (miles Christianus) Panofsky'nin övgücü okumasıdır; Karling/Meyer buna karşı çıkar.",
+    "C": "Aziz okuması yoktur; figür dünyevi bir şövalyedir.",
+    "D": "İmparator (Maximilian) eserin bağlamıdır ama figürün kimliği değildir; Karling/Meyer onu soyguncu şövalye sayar."
+   },
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Thausing'e göre tabletteki \"S\" harfi neyi temsil eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sanguineus (dört mizaç)"
+    },
+    {
+     "harf": "B",
+     "metin": "Salus (kurtuluş)"
+    },
+    {
+     "harf": "C",
+     "metin": "Sanctus (kutsal)"
+    },
+    {
+     "harf": "D",
+     "metin": "Sultan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Thausing: dört mizaç döngüsünde sanguineus; \"S\" buradan gelir (enwiki Salus okumasına karşıt).",
+   "yanlis_gerekceleri": {
+    "B": "Salus, enwiki'nin verdiği okumadır; Thausing'in sanguineus okumasıyla tartışmalıdır — tek doğru değildir.",
+    "C": "Sanctus okuması kaynakta yoktur; uydurma bir çözümdür.",
+    "D": "Sultan okuması kaynakta yoktur; gravürün Alman bağlamıyla ilgisizdir."
+   },
+   "kanit": [
+    "C025",
+    "C004"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Gravür 1513 tarihli ve imzalıdır.",
+   "dogru": true,
+   "aciklama": "Doğru; Met birincil künye 1513, tablet \"S. 1513\" (K1/K4).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser üç Meisterstiche'den biridir.",
+   "dogru": true,
+   "aciklama": "Doğru; Knight + St Jerome + Melencolia I (K1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Şövalye dosdoğru ileri bakar; yanındaki şeytan ve Ölüm figürlerine bakmaz.",
+   "dogru": true,
+   "aciklama": "Doğru; enwiki betimi: binici yaratıklara bakmadan dosdoğru ilerler (K1). \"Küçümser/cesaret\" ise ayrı bir yorumdur (C006).",
+   "kanit": [
+    "C008",
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Ölüm figürü bir kum saati tutar.",
+   "dogru": true,
+   "aciklama": "Doğru; memento mori (K1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser bir sipariş üzerine yapıldı.",
+   "dogru": false,
+   "aciklama": "Yanlış; Maximilian hizmetindeyken yapıldı ama sipariş değildi (K1).",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Anlam tartışmasındaki akademik yorumları karşılaştırın: Panofsky, Thausing, Karling/Meyer, Getlein.",
+   "beklenen_ogeler": [
+    "Miles Christianus/Erasmus (Panofsky)",
+    "Dört mizaç/sanguineus (Thausing)",
+    "Raubritter (Karling/Meyer)",
+    "Obsolescence/teslimiyetçi (Getlein)"
+   ],
+   "kanit": [
+    "C020",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Hristiyan asker alegorisini (Erasmus + İncil) analiz edin.",
+   "beklenen_ogeler": [
+    "Enchiridion",
+    "Ephesians 6 zırh",
+    "Psalm 23 vadi",
+    "Köpek/zırh/kum saati (yorum)"
+   ],
+   "kanit": [
+    "C018",
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Cesaret ve ölümlülük temasını varoluşsal olarak tartışın.",
+   "beklenen_ogeler": [
+    "Tehdide rağmen kararlılık",
+    "Kum saati = ölümlülük",
+    "Bakış dosdoğru",
+    "İnancın direnci (yorum)"
+   ],
+   "kanit": [
+    "C019",
+    "C006",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Alımlama tarihini değerlendirin: Nietzsche (Schopenhauer), Wagner, Mann/Bertram, Nazi. Bir eser nasıl sahiplenilir?",
+   "beklenen_ogeler": [
+    "BT 1872 §20 Schopenhauer (umutsuz ama hakikat arayan)",
+    "1870 Wagner'e hediye",
+    "Mann/Bertram Almanya kaderi",
+    "Nazi Rosenberg 1927 / Nürnberg 1933; özgün bağlamdan kopuk (yorum)"
+   ],
+   "kanit": [
+    "C014",
+    "C026",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: Met API birincil künye (A) + web 429 (E) + görsel (E) + enwiki (B) + çok nüsha.",
+   "beklenen_ogeler": [
+    "Met API objects/336223 levha 24.3×18.8 (A)",
+    "Web sayfası 429 (E)",
+    "Görsel incelenemedi (E)",
+    "enwiki B; çok nüshalı gravür"
+   ],
+   "kanit": [
+    "C003",
+    "C021",
+    "C022",
+    "C015"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Zırhlı şövalyeyi, gururlu atı ve sadık köpeği bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim enwiki B): dar geçit; merkez figürler.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Keçi başlı şeytanı bulun.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): çok boynuzlu; saklanır.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kum saati tutan Ölüm figürünü izleyin.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): soluk at; çürüyen leş.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Şövalyenin dosdoğru bakışını izleyin.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): tehditlere bakmaz.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tepedeki şehri arayın.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): kompozisyonda şehir; Cennet Krallığı yorumu ayrıdır (C006).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut?",
+   "arka": "Şövalye, Ölüm ve Şeytan; Dürer; 1513 (tablet \"S. 1513\", S anlamı tartışmalı); gravür; levha 24.3×18.8 (Met 43.106.2); çok nüsha (Met/NGA/BM).",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Meisterstiche?",
+   "arka": "Üç usta baskı: Knight 1513, St Jerome 1514, Melencolia I 1514; aynı boy; ortak kafatası/köpek/kum saati.",
+   "kanit": [
+    "C002",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon?",
+   "arka": "Zırhlı şövalye + at + köpek; keçi başlı şeytan + soluk atta Ölüm (kum saati); dosdoğru bakış; tepedeki şehir.",
+   "kanit": [
+    "C005",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Alegori/Erasmus?",
+   "arka": "Miles Christianus (yorum); Erasmus Enchiridion; Ephesians 6 zırh + Psalm 23 vadi; köpek sadakat (Panofsky); üç düşman beden/Şeytan/dünya.",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Alımlama?",
+   "arka": "Vasari \"daha iyisi yapılamaz\"; Maximilian hizmeti (sipariş değil); Nietzsche BT 1872 §20 şövalye = Schopenhauer (umutsuz ama hakikat arayan); 1870 Wagner'e hediye; Nazi Rosenberg 1927 / Nürnberg 1933.",
+   "kanit": [
+    "C014",
+    "C013",
+    "C012",
+    "C026"
+   ]
+  }
+ ]
+}

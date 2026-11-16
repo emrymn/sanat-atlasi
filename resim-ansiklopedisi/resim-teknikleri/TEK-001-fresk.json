@@ -1,0 +1,308 @@
+{
+  "id": "TEK-001",
+  "slug": "fresk",
+  "turkce_ad": "Fresk (buon fresco / fresco secco)",
+  "ozgun_ad": "fresco (İtalyanca: 'taze'); buon fresco; fresco a secco; mezzo fresco",
+  "alternatif_adlar": [
+    "buon fresco / vero fresco (ıslak intonaco üzerine)",
+    "fresco a secco, secco (kuru yüzey üzerine, bağlayıcıyla)",
+    "mezzo fresco (neredeyse kuru intonaco üzerine)",
+    "al fresco / a fresco (İtalyanca kullanımlar)",
+    "duvar resmi (mural painting) — üst kavram, fresk onun bir türüdür"
+  ],
+  "ansiklopedi_turu": "RESIM_TEKNIGI",
+  "kategori": "baglayici-ve-medya",
+  "alt_kategori": "kirec-bagli-duvar-resmi",
+  "kisa_tanim": "Fresk, duvar yüzeyine sıva hâlâ ıslakken uygulanan bir duvar resmi türüdür; terim İtalyanca 'taze' (fresco) sözcüğünden gelir ve pigmentler ıslak sıvaya uygulandığında boya duvarın kendisiyle kimyasal olarak bağlanır [C001]. Uygulamada duvara ince sıva katmanları yayılır: sondan bir önceki katmana arriccio, en üstteki çok düzgün katmana intonaco denir [C002]. Buon freskte suyla inceltilmiş pigment ıslak intonaco üzerine sürülür; sıva kururken pigment sıvaya bağlanır ve renk duvar yüzeyinin ayrılmaz parçası olur [C003]. Duvara yalnız bir günde boyanabilecek kadar sıva sürülür; her günkü çalışma bölümüne giornata denir [C004]. Boya kuru yüzeye bir bağlayıcıyla uygulanırsa fresco a secco, neredeyse kuru intonaco üzerine uygulanırsa (National Galleries of Scotland sözlüğüne göre) mezzo fresco adını alır [C005] [C006].",
+  "ayrintili_aciklama": "TANIM VE KAVRAM SINIRI\nFresk, duvar yüzeyine sıva hâlâ ıslakken uygulanan bir duvar resmi türüdür; terim İtalyanca 'taze' (fresco) sözcüğünden gelir [C001]. National Gallery sözlüğü ile Smarthistory teknik sözlüğünün tanımları örtüşür: pigmentler (genellikle) ıslak sıvaya uygulanır, boya duvarın kendisiyle kimyasal olarak bağlanır [C001]. Bu maddede üç düzlem bilinçli olarak ayrılır: malzeme (kireç, kum, pigment, su ve secco'da ek bağlayıcı), uygulama tekniği (sıva katmanları, alt çizim/sinopia, giornata sistemi) ve görsel etki ile yüzey niteliği (kalıcılık, duvarla bütünleşme, neme hassasiyet). Fresk bir 'boyama etkisi' değil, bir duvar resmi ortamı ve tekniğidir; dolayısıyla freskten söz ederken malzeme ile görsel sonuç aynı cümlede özdeşleştirilmemelidir.\n\nSINIFLANDIRMA: BUON FRESCO, FRESCO A SECCO, MEZZO FRESCO\nBuon freskte suyla inceltilmiş pigment ıslak intonaco üzerine uygulanır; sıva kururken gerçekleşen kimyasal reaksiyon pigmenti sıvaya bağlar ve bu yöntem freski duvara bağlar [C003]. Britannica'nın ifadesiyle pigment parçacıkları kireç ve kum parçacıklarıyla birlikte bağlanır/çimentolaşır; bu, renklere büyük kalıcılık verir çünkü boya duvar yüzeyinin ayrılmaz parçasıdır, üstüne eklenmiş bir katman değildir [C003]. Fresco a secco'da ise boya kuru yüzeye — kurumuş buon fresco ya da kuru intonaco üzerine — uygulanır; tutkal veya yumurta sarısı gibi bir bağlayıcı gerektirir, daha az canlı renkler üretir ve çok daha az dayanıklıdır, çünkü boya zamanla dökülme eğilimindedir [C005]. Britannica secco uygulamasını biraz farklı betimler: kuru, bitmiş duvarlar kireç suyuyla (limewater) ıslatılır ve nemliyken boyanır; renkler sıvaya nüfuz etmez, yüzeyde bir film oluşturur [C005]. Aynı kaynak secco'nun ince işçilik ve buon fresco rötuşu için elverişli olduğunu belirtir [C005]. Bu iki tanım birbirini çürütmez; 'kuru yüzey' ile 'kireç suyuyla nemlendirilmiş yüzey' arasındaki fark, terimin kapsam genişliğinden gelir (bkz. akademik_tartismalar). Mezzo fresco, National Galleries of Scotland sözlüğüne göre neredeyse kuru intonaco üzerine yapılan, buon fresco ile secco arasında bir yöntemdir ve İtalyan Rönesansı'nda özellikle yaygındı; bu terim bu araştırmada açılan diğer kurumsal sözlüklerde geçmediği için tek kaynaklıdır ve madde ihtiyatla aktarır [C006].\n\nUYGULAMA SÜRECİ: KATMANLAR, SİNOPİA, GİORNATA\nHer iki yöntemde de duvara ince sıva katmanları yayılır; sondan bir önceki katmana arriccio denir ve karton (tasarım) bunun üzerine çizilir; en üstteki çok düzgün katman intonaco'dur [C002]. Metropolitan Museum denemesi aynı katman düzenini 'kaba kireç sıva katmanı (arriccio)' ifadesiyle verir [C002]. Tasarım aşamasında arriccio üzerine kırmızı toprak pigmentle çizilen ya da fırçalanan alt çizime sinopia denir; bileşimin tamamı giornata adı verilen bölümler hâlinde boyanır [C007]. National Galleries of Scotland sözlüğü sanatçıların önce kompozisyonu kömür ve sinopia ile ıslak sıva üzerine taslakladığını yazar [C007]. Duvara yalnız bir günde boyanabilecek kadar sıva sürülür; her günkü çalışma bölümüne giornata denir [C004]. Bu kural freskin hem zamanlamasını hem de yüzeydeki okunabilir izlerini belirler: günlük çalışma sınırları, kuruyan sıvanın birleşme yerlerinde fiziksel olarak görünür hâle gelir.\n\nMALZEMELER VE BİRİNCİL KAYNAK: CENNİNİ (y. 1390)\nCennino Cennini'nin Il libro dell'arte treatise'ı (y. 1390) fresk harcını ve sürecini ayrıntısıyla verir: kireç iyice yağlı ve taze ise iki kısım kum–bir kısım kireç alınır; karışım suyla yoğrulup birkaç gün dinlendirilir ('ateşi çıksın' diye); duvar süpürülüp iyice ıslatılır; aynı gün çalışmak 'en sağlam tempera ve en iyi yöntem'dir [C008]. Cennini pigmentleri de sınırlar: orpimento, cinabro, azzurro della Magna, minio, biacca, verderame ve lacca freskte (ıslak kireçte) çalışılamaz; giallorino, bianco sangiovanni, nero, ocria, cinabrese, sinopia, verdeterra ve amatisto ise freskte çalışılabilen renklerdir [C008]. Freskte çalışılamayan renkler secco'ya bırakılır; Cennini secco için iki bağlayıcı (tempera) verir: (1) yumurta akı ve sarısı ile incir sürgünü kesikleri, (2) saf yumurta sarısı — 'bu tempera evrenseldir: duvarda, panelde, demirde' [C008]. Cennini ayrıca aşırı tempera uyarısı yapar: çok fazla bağlayıcı verilirse renk patlar ve duvardan çatlayarak ayrılır [C008]. Bu reçete, duvar resmindeki secco bağlayıcısı ile panel resmindeki yumurta temperasının (TEK-002 maddesi) aynı malzeme ailesinden geldiğini gösteren birincil kanıttır [C008].\n\nAVANTAJLAR, SINIRLILIKLAR VE KORUMA\nBuon freskin başlıca avantajı kalıcılığıdır: boya duvar yüzeyinin ayrılmaz parçası hâline geldiği için üstüne eklenmiş bir katman gibi davranmaz [C003]. Sınırlılığı ise çalışma hızı ve nemdir: fresk neme karşı hassastır, serin-nemli bir ortamda zarar görebilir; kuru Akdeniz iklimi korunması için elverişlidir [C003]. Secco'nun sınırlılığı daha keskindir: bağlayıcıyla tutturulmuş boya katmanı zamanla dökülme eğilimindedir [C005]. Freskleri duvardan ayırıp yeni bir taşıyıcıya aktarma tekniği en azından 16. yüzyıldan beri bilinmektedir; bu, freskin 'duvara bağlılık' özelliğinin tarihsel olarak aşılmaya çalışıldığını gösterir [C009]. Bu maddede modern konservasyon kimyasına girilmemiştir: ICCROM/Getty koruma literatürünün temel başvurusu (Mora–Philippot–Blanc, Conservation of Wall Paintings) yalnız künye olarak kayıtlıdır, metnine erişilmemiştir ve hiçbir iddiaya dayanak yapılmamıştır.\n\nTARİHSEL GELİŞİM\nFresk antik çağdan bilinir: Girit'te Knossos'ta Minos uygarlığı ve Roma'da Pompeii örnekleri anılır [C009]. İtalyan Rönesansı freskin büyük dönemidir; Britannica bu dönemi Cimabue, Giotto, Masaccio, Fra Angelico, Correggio, Michelangelo ve Raphael adlarıyla birlikte verir [C009]. 16. yüzyıl ortasında freskin kullanımı büyük ölçüde yağlıboyaya bırakılmış, teknik 20. yüzyılda Diego Rivera ve diğer Meksikalı duvar ressamlarınca kısa süreli canlandırılmıştır; kaynağın 'büyük ölçüde' (largely) ve 'kısa süreli' (briefly) ihtiyat ifadeleri burada korunmuştur [C009].\n\nÖRNEKLER VE OTOMATİK ATFİ YÖNTEM NOTU\nMaddenin doğrulanmış resim örnekleri alanında kurumsal kayıtlarla eşleştirilmiş Rönesans döngüleri verilir: Michelangelo'nun Sistina Şapeli tavanı ve Son Yargı'sı, Giotto'nun Padova'daki Scrovegni (Arena) Şapeli döngüsü ve Masaccio'nun Floransa'daki Brancacci Şapeli'nde bulunan Tribute Money freski. Sistina tavanı için belgeli zincir şudur: II. Julius 8 Mayıs 1508 tarihli sözleşmeyle Michelangelo'ya tavanı sipariş etti; ilk tasarı pandantiflerde on iki havari idi, sanatçının talebiyle tam program serbestliği verildi; tavanın ilk yarısı Ağustos 1510'da bitmişti ve tamamı 31 Ekim 1512'ye kadar tamamlandı, çünkü Papa 1 Kasım'da şapelde ayin kutladı [C010]. National Gallery sözlüğü Michelangelo'nun tavanı Eski Ahit sahneleriyle fresklediğini, 'Son Yargı'nın ise 1535–1541 arasında mihrap üstü duvara yapıldığını belirtir; Britannica Sistina'daki bu resimleri 'tüm fresklerin en ünlüsü' diye anar [C010]. Buna karşılık bu araştırmada açılan kaynaklarda, Sistina tavanının veya Scrovegni döngüsünün belirli bölümlerinin secco olduğu yönünde bir tespit YOKTUR; Vatican Müzeleri'nin resmî tavan sayfası tekniği hiç anmaz, 'fresk' nitelendirmesi NG sözlüğü ve Britannica'dan gelir. Bu nedenle madde, 'şu bölüm secco'dur' türü eser-bölgesi iddiaları kurmaz. Scrovegni döngüsüne ilişkin tek teknik ayrıntı, Smarthistory'nin aktardığı istisnadır: Giotto Tanrı figürünü duvar resmi olarak değil, yerleştirilmiş bir panel resim olarak bırakmıştır — yani o bölüm fresk değildir (bu iddia claim üst sınırı nedeniyle ayrı bir iddia olarak taşınmadı, örnek kaydının bağlam alanında durmaktadır).",
+  "tarihsel_baglam": "Fresk, Akdeniz dünyasının antik duvar resmi geleneğinden gelir: Britannica tekniğin Girit'te Knossos'taki Minos uygarlığında ve Roma'da Pompeii'de kullanıldığını yazar [C009]. İtalyan Rönesansı freskin büyük dönemi olarak anılır ve Cimabue, Giotto, Masaccio, Fra Angelico, Correggio, Michelangelo, Raphael bu dönemin adlarıyla birlikte verilir [C009]. 16. yüzyıl ortasında fresk büyük ölçüde yağlıboyaya bırakılmış, 20. yüzyılda Diego Rivera ve diğer Meksikalı duvar ressamlarınca kısa süreli canlandırılmıştır [C009]. Dönemin çalışma bilgisinin birincil kaynağı Cennino Cennini'nin y. 1390'da yazdığı Il libro dell'arte'tır: harç oranı, duvarın ıslatılması, aynı gün çalışma kuralı, freskte çalışılamayan pigmentler ve secco bağlayıcıları bu treatise'ta tarif edilir [C008]. Papalık siparişleri tekniğin anıtsal ölçekte belgelendiği bağlamdır: Sistina Şapeli tavanı 8 Mayıs 1508 tarihli sözleşmeyle Michelangelo'ya verilmiş, ilk yarısı Ağustos 1510'da bitmiş, tamamı 31 Ekim 1512'ye kadar tamamlanmıştır [C010]. Aynı şapelde iki dönemli fresk uygulaması görülür: Son Yargı 1535–1541 arasında mihrap üstü duvara yapılmıştır [C010].",
+  "kulturel_baglam": "Fresk, kilise ve şapel duvarlarına bağlı anıtsal bir anlatı ortamıdır: Giornata sistemi, büyük dinî döngülerin birden çok ustanın çalıştığı uzun sipariş süreçlerinde bölümler hâlinde planlanmasını mümkün kılmıştır [C004]. Buon freskin kültürel tercih edilme nedeni malzeme davranışıyla doğrudan bağlantılıdır: boya duvar yüzeyinin ayrılmaz parçası hâline geldiği için büyük kalıcılık sağlar, üstüne eklenmiş bir katman gibi durmaz [C003]. Kuru Akdeniz iklimi bu döngülerin korunmasında elverişli bir ortam oluşturmuş, serin-nemli ortamlar ise zarar riski yaratmıştır [C003]. Secco, ince işçiliğe ve buon fresco rötuşuna elverişli olduğu için tamamlama ve ayrıntı katmanı olarak kullanılmış, ancak dökülmeye açık yapısı nedeniyle daha az dayanıklı bulunmuştur [C005]. Atölye bilgisi tarafında Cennini'nin reçetesi, duvar resmi ile panel resminin aynı bağlayıcı ailesini paylaştığını gösterir: saf yumurta sarısı tempera 'evrenseldir — duvarda, panelde, demirde' [C008].",
+  "resim_sanatiyla_iliskisi": "Fresk, resim sanatının duvara bağlı koludur: taşınabilir panel ya da tuval resminden farklı olarak yapıtla mimari yüzeyi birleştirir ve bu nedenle müze koleksiyonuna 'nesne' olarak değil, binanın parçası olarak girer. Buon freskte pigment ıslak sıvaya uygulandığı için boya duvarla kimyasal bağ kurar ve resim yüzeyinin ayrılmaz parçası olur [C001] [C003]. Bu özellik resim dilini de belirler: sanatçı her gün yalnız boyayabileceği kadar sıva üzerinde çalışabildiği için kompozisyon, giornata adı verilen günlük bölümler hâlinde tasarlanır ve alt çizim (sinopia) arriccio üzerine önceden yerleştirilir [C004] [C007]. Fresk aynı zamanda panel resmi tekniğiyle malzeme düzeyinde kesişir: Cennini'nin secco bağlayıcısı olarak verdiği saf yumurta sarısı tempera, panel resmindeki yumurta temperasının aynıdır (bkz. TEK-002) [C008]. Bu maddenin doğrulanmış örnekleri tümüyle duvar resmi döngüleridir: Sistina Şapeli tavanı ve Son Yargı (Vatikan), Scrovegni (Arena) Şapeli döngüsü (Padova) ve Brancacci Şapeli'ndeki Tribute Money (Floransa).",
+  "dogrulanmis_resim_ornekleri": [
+    {
+      "sanatci": "Michelangelo Buonarroti",
+      "eser": "Sistina Şapeli tavanı (Volta / Ceiling)",
+      "tarih": "1508–1512 (sözleşme 8 Mayıs 1508; ilk yarı Ağustos 1510'da bitmişti; tamamı 31 Ekim 1512'ye kadar tamamlandı)",
+      "koleksiyon": "Vatikan Müzeleri (Musei Vaticani), Roma — Sistina Şapeli",
+      "kaynak_id": "TEK-001-K06",
+      "baglam": "Buon fresco ile çalışılmış ünlü Rönesans tavan döngüsü. Resmî Vatican sayfası sözleşmeyi ve tarihleri verir; tekniği 'fresk' olarak niteleme NG sözlüğünden (TEK-001-K07) ve Britannica'dan (TEK-001-K03) gelir. Tavana özgü giornata analizi iddiası bu araştırmada kaynaklandırılmadığı için yazılmadı.",
+      "versiyon_notu": "Envanter numarası yok: mimariye bağlı duvar resmi döngüsüdür."
+    },
+    {
+      "sanatci": "Michelangelo Buonarroti",
+      "eser": "Son Yargı (Last Judgement), Sistina Şapeli mihrap duvarı",
+      "tarih": "1535–1541",
+      "koleksiyon": "Vatikan Müzeleri (Musei Vaticani), Roma — Sistina Şapeli",
+      "kaynak_id": "TEK-001-K07",
+      "baglam": "Aynı şapelde iki dönemli fresk uygulaması: tavandan yaklaşık yirmi yıl sonra mihrap üstü duvara yapılan döngü. National Gallery sözlüğü yapıtı mihrap üstü duvarda 1535–1541 arasında yapılmış olarak verir."
+    },
+    {
+      "sanatci": "Giotto di Bondone",
+      "eser": "Arena (Scrovegni) Şapeli fresk döngüsü",
+      "tarih": "y. 1305 (Smarthistory; UNESCO seri kaydında aralık 1302–1397)",
+      "koleksiyon": "Scrovegni (Arena) Şapeli, Padova (yerinde; UNESCO Dünya Mirası 'Padua's fourteenth-century fresco cycles' serisinin bileşeni)",
+      "kaynak_id": "TEK-001-K05",
+      "baglam": "UNESCO'ya göre döngü 'duvar resmi tarihinde devrimci bir gelişimin başlangıcı' olarak kabul edilir (kriter ii, 2021). Smarthistory'nin aktardığı teknik istisna: Giotto Tanrı figürünü duvar resmi olarak değil, yerleştirilmiş bir panel resim olarak bırakmıştır — o bölüm fresk değildir (tek yardımcı kaynak).",
+      "versiyon_notu": "Envanter numarası yok: şapel mimarisiyle bütün duvar resmi döngüsüdür. Kesin yıl ihtiyatlıdır ('c. 1305'); UNESCO kaydı seri için 1302–1397 aralığını verir."
+    },
+    {
+      "sanatci": "Masaccio (Tommaso di Ser Giovanni di Simone)",
+      "eser": "Tribute Money (Vergi parası), Brancacci Şapeli Aziz Petrus döngüsü",
+      "tarih": "y. 1424–27 (Smarthistory '1427, fresco'; MUS.E sayfası döngü siparişini 1420'lere yerleştirir)",
+      "koleksiyon": "Brancacci Şapeli, Santa Maria del Carmine, Floransa",
+      "kaynak_id": "TEK-001-K10",
+      "baglam": "Buon fresco döngüsü: Aziz Petrus hikâyeleri tüccar Felice Brancacci tarafından Masolino ve Masaccio'ya 1420'lerde sipariş edilmiştir; döngüye daha sonra Filippino Lippi eklemeler yapmıştır (Smarthistory, TEK-001-K09).",
+      "versiyon_notu": "Envanter numarası yok: duvar resmi. Filippino Lippi tamamlama tarihleri (1481–85) brief'te açılan sayfalarda birebir geçmediği için madde metnine yazılmadı."
+    }
+  ],
+  "ilgili_maddeler": [
+    "TEK-002"
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "iddia": "Fresk, duvar yüzeyine sıva hâlâ ıslakken uygulanan bir duvar resmi türüdür; terim İtalyanca 'taze' (fresco) sözcüğünden gelir ve pigmentler (genellikle) ıslak sıvaya uygulandığında boya duvarın kendisiyle kimyasal olarak bağlanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K01", "TEK-001-K12"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Her iki yöntemde de duvara ince sıva katmanları yayılır; sondan bir önceki katmana arriccio denir ve karton (tasarım) bunun üzerine çizilir; en üstteki çok düzgün katman intonaco'dur.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K01", "TEK-001-K02"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Buon freskte suyla inceltilmiş pigment ıslak intonaco üzerine uygulanır; sıva kururken kimyasal reaksiyon pigmenti sıvaya bağlar ve bu yöntem freski duvara bağlar; pigment parçacıkları kireç ve kum parçacıklarıyla birlikte bağlandığı/çimentolaştığı için renkler büyük kalıcılık kazanır — boya duvar yüzeyinin ayrılmaz parçasıdır, üstüne eklenmiş bir katman değildir; buna karşılık fresk neme karşı hassastır ve serin-nemli ortamda zarar görebilir, kuru Akdeniz iklimi korunması için elverişlidir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K01", "TEK-001-K02", "TEK-001-K03", "TEK-001-K12"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Duvara yalnız bir günde boyanabilecek kadar sıva sürülür; her günkü çalışma bölümüne giornata denir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K01", "TEK-001-K02", "TEK-001-K03", "TEK-001-K04"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Fresco a secco'da boya kuru yüzeye (kurumuş buon fresco ya da kuru intonaco üzerine) uygulanır; tutkal veya yumurta sarısı gibi bir bağlayıcı gerektirir, daha az canlı renkler üretir, çok daha az dayanıklıdır ve boya zamanla dökülme eğilimindedir; Britannica'ya göre secco'da kuru, bitmiş duvarlar kireç suyuyla (limewater) ıslatılır ve nemliyken boyanır, renkler sıvaya nüfuz etmeyip yüzeyde film oluşturur; secco ince işçilik ve buon fresco rötuşu için uygundur.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K01", "TEK-001-K02", "TEK-001-K11", "TEK-001-K03"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Mezzo fresco, neredeyse kuru intonaco üzerine yapılan, buon fresco ile secco arasında bir yöntemdir ve National Galleries of Scotland sözlüğüne göre İtalyan Rönesansı'nda özellikle yaygındı.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K11"],
+      "dogrulama_durumu": "KISMEN_DESTEKLENIYOR"
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Sinopia, arriccio üzerine kırmızı toprak pigmentle çizilen ya da fırçalanan tasarım (alt çizim) aşamasıdır; sanatçılar kompozisyonu önce kömür ve sinopia ile taslaklar ve bileşimin tamamı giornata denilen bölümler hâlinde boyanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K02", "TEK-001-K11", "TEK-001-K04"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Cennino Cennini (y. 1390) buon fresco harcını ve sürecini tarif eder: kireç iyice yağlı ve taze ise iki kısım kum–bir kısım kireç alınır, karışım suyla yoğrulup birkaç gün dinlendirilir, duvar süpürülüp iyice ıslatılır ve aynı gün çalışmak 'en sağlam tempera ve en iyi yöntem'dir; bazı pigmentler (orpimento, cinabro, azzurro della Magna, minio, biacca, verderame, lacca) freskte çalışılamaz ve secco'da kullanılır, freskte çalışılabilenler giallorino, bianco sangiovanni, nero, ocria, cinabrese, sinopia, verdeterra ve amatisto'dur; secco için iki bağlayıcı (tempera) verilir: yumurta akı ve sarısı ile incir sürgünü kesikleri ya da saf yumurta sarısı — 'bu tempera evrenseldir: duvarda, panelde, demirde'.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_ids": ["TEK-001-K04"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Fresk antik çağdan bilinir (Girit'te Knossos'ta Minos uygarlığı ve Roma'da Pompeii); İtalyan Rönesansı freskin büyük dönemidir (Cimabue, Giotto, Masaccio, Fra Angelico, Correggio, Michelangelo, Raphael); 16. yüzyıl ortasında kullanımı büyük ölçüde yağlıboyaya bırakılmış, 20. yüzyılda Diego Rivera ve diğer Meksikalı duvar ressamlarınca kısa süreli canlandırılmıştır; freskleri duvardan ayırıp yeni bir taşıyıcıya aktarma tekniği en azından 16. yüzyıldan beri bilinmektedir.",
+      "iddia_turu": "TARIH",
+      "kaynak_ids": ["TEK-001-K03", "TEK-001-K01"],
+      "dogrulama_durumu": "DOGRULANDI"
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Sistina Şapeli tavanı bir fresk döngüsüdür: II. Julius 8 Mayıs 1508 tarihli sözleşmeyle Michelangelo'ya tavanı sipariş etti (ilk tasarı pandantiflerde on iki havari idi, sanatçının talebiyle tam program serbestliği verildi); tavanın ilk yarısı Ağustos 1510'da bitmişti ve tamamı 31 Ekim 1512'ye kadar tamamlandı (Papa 1 Kasım'da şapelde ayin kutladı); National Gallery sözlüğüne göre Michelangelo tavanı Eski Ahit sahneleriyle freskledi ve 'Son Yargı' 1535–1541 arasında mihrap üstü duvara yapıldı; Britannica Sistina'daki bu resimleri 'tüm fresklerin en ünlüsü' olarak anar.",
+      "iddia_turu": "TARIH",
+      "kaynak_ids": ["TEK-001-K06", "TEK-001-K07", "TEK-001-K03"],
+      "dogrulama_durumu": "DOGRULANDI"
+    }
+  ],
+  "kaynaklar": [
+    {
+      "kaynak_id": "TEK-001-K01",
+      "kurum_yazar": "The National Gallery, London",
+      "baslik": "Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "kaynak_turu": "IKINCIL",
+      "hiyerarsi_seviyesi": 5,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, tam metin okundu. Tanım omurgası bu kaynaktan alındı; son paragraf fresk aktarma (detaching) tekniğini verir ve 'Related' bölümünde Correggio, Montagna, Spinello Aretino fresk fragmanlarını anar (bu bağlantılı kayıtlar ayrıca doğrulanmadı)."
+    },
+    {
+      "kaynak_id": "TEK-001-K02",
+      "kurum_yazar": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History; John Meagher (Eylül 2010)",
+      "baslik": "Italian Painting of the Later Middle Ages",
+      "url": "https://www.metmuseum.org/essays/italian-painting-of-the-later-middle-ages",
+      "kaynak_turu": "IKINCIL",
+      "hiyerarsi_seviyesi": 5,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2025-02-26",
+      "http_kod": 200,
+      "notlar": "Canlı erişim 429 (üç deneme, 2026-11-15) → Wayback snapshot 20250226013953 okundu. 'Fresco' bölümü arriccio, sinopia, giornata, kimyasal bağ ve nem hassasiyeti pasajlarını içerir; Cennini için 'composed about 1390' tarihini verir."
+    },
+    {
+      "kaynak_id": "TEK-001-K03",
+      "kurum_yazar": "Encyclopaedia Britannica (editörler; son güncelleme A. Zelazko)",
+      "baslik": "fresco painting",
+      "url": "https://www.britannica.com/art/fresco-painting",
+      "kaynak_turu": "IKINCIL",
+      "hiyerarsi_seviyesi": 5,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2024-12-24",
+      "http_kod": 200,
+      "notlar": "Canlı erişim bu oturumda denenmedi (proje kaydı: britannica.com sürekli 403) → doğrudan Wayback snapshot 20241224193520 tam metin okundu. 'fresco secco' bölümü limewater nüansını, tarih bölümü Minos/Pompeii–Rönesans–yağlıboya–Rivera zincirini verir; 'arriccio' terimini kullanmaz ('first two rough coats')."
+    },
+    {
+      "kaynak_id": "TEK-001-K04",
+      "kurum_yazar": "Cennino Cennini (G. ve C. Milanesi yay., Firenze Le Monnier 1859; Wikisource IT transkripsiyonu)",
+      "baslik": "Il libro dell'arte — Cap. LXVII ve Cap. LXXII (+ tam bölüm indeksi)",
+      "url": "https://it.wikisource.org/wiki/Il_libro_dell%27arte",
+      "kaynak_turu": "BIRINCIL",
+      "hiyerarsi_seviyesi": 4,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, sıralı Wikimedia çağrıları (429 yok). Bölüm sayfaları: .../Capitolo_LXVII (fresk harcı, duvarı ıslatma, aynı gün çalışma, sinopia ile modelleme) ve .../Capitolo_LXXII (freskte çalışılamayan renkler; secco için iki tempera). Treatise tarihi için Met 'composed about 1390' der; madde 'y. 1390' ihtiyatını kullanır."
+    },
+    {
+      "kaynak_id": "TEK-001-K05",
+      "kurum_yazar": "UNESCO World Heritage Centre",
+      "baslik": "Padua's fourteenth-century fresco cycles (Liste no. 1623)",
+      "url": "https://whc.unesco.org/en/list/1623/",
+      "kaynak_turu": "BIRINCIL",
+      "hiyerarsi_seviyesi": 1,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, resmî kayıt. Giotto'nun Scrovegni Şapeli döngüsünü 'duvar resmi tarihinde devrimci bir gelişimin başlangıcı' olarak anar; seri için 1302–1397 aralığını verir (tekil döngünün kesin yılı değil)."
+    },
+    {
+      "kaynak_id": "TEK-001-K06",
+      "kurum_yazar": "Vatican Museums (Musei Vaticani)",
+      "baslik": "Sistine Chapel — Ceiling (Volta)",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta.html",
+      "kaynak_turu": "BIRINCIL",
+      "hiyerarsi_seviyesi": 1,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, resmî sayfa. Sözleşme tarihi (8 Mayıs 1508), ilk tasarı (on iki havari), Ağustos 1510 ve 31 Ekim 1512 aşamalarını verir; sayfa programı anlatır ama tekniği ('fresco' sözcüğünü) hiç anmaz — teknik nitelendirme TEK-001-K07 ve TEK-001-K03'ten gelir."
+    },
+    {
+      "kaynak_id": "TEK-001-K07",
+      "kurum_yazar": "The National Gallery, London",
+      "baslik": "Glossary: Sistine Chapel",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/sistine-chapel",
+      "kaynak_turu": "IKINCIL",
+      "hiyerarsi_seviyesi": 5,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, tam metin. Tavanın Eski Ahit sahneleriyle 'fresklendiğini' ve Son Yargı'nın 1535–1541 arasında mihrap üstü duvara yapıldığını belirtir."
+    },
+    {
+      "kaynak_id": "TEK-001-K08",
+      "kurum_yazar": "Smarthistory; Dr. Steven Zucker ve Dr. Beth Harris",
+      "baslik": "Giotto, Arena (Scrovegni) Chapel (part 1 of 4)",
+      "url": "https://smarthistory.org/giotto-arena-scrovegni-chapel-part-1-of-4/",
+      "kaynak_turu": "YARDIMCI",
+      "hiyerarsi_seviyesi": 6,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2026-01-06",
+      "http_kod": 200,
+      "notlar": "Canlı erişim 403 → Wayback snapshot 20260106091452 okundu. 'c. 1305' tarihini, Enrico Scrovegni hamiliğini, arena arsasını, Tanrı figürünün panel istisnasını ve 'perhaps … to atone for the sin of usury' yorumunu verir. Yorum niteliğindeki pasajlar (usury motivasyonu) madde metnine alınmadı."
+    },
+    {
+      "kaynak_id": "TEK-001-K09",
+      "kurum_yazar": "Smarthistory; Dr. Steven Zucker ve Dr. Beth Harris (9 Ağustos 2015)",
+      "baslik": "Masaccio, The Tribute Money and Expulsion in the Brancacci Chapel",
+      "url": "https://smarthistory.org/masaccio-the-tribute-money-in-the-brancacci-chapel/",
+      "kaynak_turu": "YARDIMCI",
+      "hiyerarsi_seviyesi": 6,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2026-01-17",
+      "http_kod": 200,
+      "notlar": "Canlı erişim 403 → Wayback snapshot 20260117041655 okundu. 'Masaccio, The Tribute Money, 1427, fresco' künyesini, Filippino Lippi eklemelerini, sürekli anlatım ve dökme gölge ('perhaps the first artist since classical antiquity') yorumlarını içerir; bu yorum iddiaları claim üst sınırı nedeniyle maddeye taşınmadı."
+    },
+    {
+      "kaynak_id": "TEK-001-K10",
+      "kurum_yazar": "MUS.E / Comune di Firenze",
+      "baslik": "Cappella Brancacci (resmî müze sayfası, İtalyanca)",
+      "url": "https://musefirenze.it/musei/cappella-brancacci/",
+      "kaynak_turu": "BIRINCIL",
+      "hiyerarsi_seviyesi": 1,
+      "erisim_durumu": "ERISILDI_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "http_kod": 200,
+      "notlar": "CANLI, resmî kurum sayfası. Aziz Petrus döngüsünün tüccar Felice Brancacci tarafından Masolino ve Masaccio'ya 1420'lerde sipariş edildiğini verir. Brief hiyerarşiyi '1–2' aralığında göstermişti; resmî kurum sayfası olarak 1 alındı. Ayrı bir 'cappellabrancacci.it' resmî sitesi bulunamadı."
+    },
+    {
+      "kaynak_id": "TEK-001-K11",
+      "kurum_yazar": "National Galleries of Scotland",
+      "baslik": "Glossary: Fresco",
+      "url": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/fresco",
+      "kaynak_turu": "IKINCIL",
+      "hiyerarsi_seviyesi": 5,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2025-09-28",
+      "http_kod": 200,
+      "notlar": "Canlı erişim 403 → Wayback snapshot 20250928185932 okundu. Secco için bağlayıcı (tutkal veya yumurta sarısı) ve 'daha az canlı renkler' bilgisini, mezzo fresco tanımını ve 'arricciato/intonaco' terminoloji varyantını verir; bu varyant akademik_tartismalar alanında ayrıca ele alındı."
+    },
+    {
+      "kaynak_id": "TEK-001-K12",
+      "kurum_yazar": "Smarthistory",
+      "baslik": "Technique glossary: Fresco",
+      "url": "https://smarthistory.org/technique/fresco/",
+      "kaynak_turu": "YARDIMCI",
+      "hiyerarsi_seviyesi": 6,
+      "erisim_durumu": "WAYBACK_OKUNDU",
+      "erisim_tarihi": "2026-11-15",
+      "arsiv_tarihi": "2026-01-18",
+      "http_kod": 200,
+      "notlar": "Canlı erişim 403 → Wayback snapshot 20260118112811 okundu. 'chemically bonded to the wall itself' ifadesini verir; tanım girişinde '(usually)' ihtiyatı vardır ve madde metninde korunmuştur."
+    },
+    {
+      "kaynak_id": "TEK-001-K13",
+      "kurum_yazar": "P. Mora, P. Philippot, C. Blanc (ICCROM / Getty koruma literatürü)",
+      "baslik": "Conservation of Wall Paintings",
+      "url": "https://www.getty.edu/publications-reports/item/247AVT",
+      "kunye": "P. Mora, P. Philippot, C. Blanc, Conservation of Wall Paintings (ICCROM/Butterworth) — Getty Publications Virtual Library ilgili kaydı; metnine erişilmedi.",
+      "kaynak_turu": "BIBLIYOGRAFIK",
+      "hiyerarsi_seviyesi": 4,
+      "erisim_durumu": "ERISILEMEDI",
+      "erisim_tarihi": "2026-11-15",
+      "notlar": "ERISILEMEDI: getty.edu/publications-reports sayfası JavaScript olmadan çalışmıyor ('doesn't work properly without JavaScript' gövdesi alındı); eski virtual_library dizini açılamadı. Yalnız künye kaydıdır, metnine erişilmedi; hiçbir iddiaya dayanak yapılmadı (Kural 2 ve 12)."
+    }
+  ],
+  "akademik_tartismalar": "1) ARRICCIO / INTONACO TERMİNOLOJİSİ: National Gallery (TEK-001-K01) ve Metropolitan Museum (TEK-001-K02) boyanın son katman olan ıslak intonaco'ya uygulandığını söyler; National Galleries of Scotland (TEK-001-K11) ise pigmentin 'arricciato' adlı ıslak kireç/alçı katmanına uygulandığını belirtir ve intonaco'yu 'bir günlük iş için serilen ıslak sıva' olarak tanımlar. Britannica (TEK-001-K03) 'arriccio' terimini hiç kullanmaz, 'first two rough coats' der. Madde, NG/Met kullanımını esas alır; NGS varyantı tek başına 'doğru tanım' gibi sunulmaz. Kurumsal sözlükler arasında katman adlandırması farklıdır ve tek bir mutlak terminoloji yoktur.\n2) SECCO TANIMININ KAPSAMI: NG 'paint is applied dry' der; Britannica kuru duvarın kireç suyuyla (limewater) ıslatılıp nemliyken boyandığını, renklerin sıvaya nüfuz etmeyip yüzeyde film oluşturduğunu yazar. İkisi çelişen değil, farklı ayrıntı düzeyinde tanımlardır: 'kuru yüzey' ile 'kireç suyuyla nemlendirilmiş kuru yüzey' aynı uygulama ailesinin iki betimidir. Madde bu nüansı C005 içinde açıkça korur; CELISKILI statüsü verilmemiştir (tanım genişliği farkı).\n3) MEZZO FRESCO'NUN TEK KAYNAKLILIĞI: mezzo fresco terimi yalnız National Galleries of Scotland sözlüğünde tanımlıdır; bu araştırmada açılan NG, Britannica ve Met sayfalarında geçmemektedir. Bu nedenle iddia KISMEN_DESTEKLENIYOR olarak işaretlendi, madde metninde 'NGS sözlüğüne göre' atfıyla verildi ve yaygın dönem iddiası ('İtalyan Rönesansı'nda özellikle yaygındı') kesinleştirilmedi.\n4) SİNOPİA TANIMININ KAYNAĞI: NG sözlüğünde 'sinopia' girdisi YOKTUR (404, 2026-11-15). Sinopia tanımı Met (TEK-001-K02), NGS (TEK-001-K11) ve Cennini Cap. LXVII'den (TEK-001-K04) kurulmuştur. NGS'nin 'kömür ve sinopia' ifadesi ile Met'in 'kırmızı toprak pigment' ifadesi birlikte verilmiş; sinopia'nın hem pigment hem alt çizim aşaması anlamında kullanıldığı belirtilmiştir.\n5) ESER-BÖLGESİ TEKNİK İDDİALARININ YOKLUĞU: Sistina tavanının veya Scrovegni döngüsünün belirli bölümlerinin secco/mezzo olduğu yönündeki yaygın ifadeler, bu araştırmada açılan kurumsal kaynaklarda yer almamaktadır; Vatican'ın resmî tavan sayfası tekniği hiç anmaz. Bu nedenle madde 'şu bölüm secco'dur' türü iddia kurmaz. Scrovegni için kaynaklandırılabilen tek teknik ayrıntı, Smarthistory'nin aktardığı panel istisnasıdır (Tanrı figürü duvar resmi değil yerleştirilmiş panel) — tek yardımcı kaynaklıdır ve iddia listesine alınmamıştır.\n6) KORUMA LİTERATÜRÜNE ERİŞİM: Mora–Philippot–Blanc, Conservation of Wall Paintings (TEK-001-K13) yalnız künyeyle kayıtlıdır; metnine erişilmediği için fresk bozulması/aktarımı üzerine teknik ayrıntı yazılmadı. NG sözlüğünün verdiği 'aktarma tekniği en az 16. yüzyıldan beri biliniyor' bilgisi (TEK-001-K01) dışında koruma tarihi iddiası kurulmadı.\n7) KESİN TARİHLER: Scrovegni döngüsü için Smarthistory 'c. 1305' der, UNESCO seri kaydı 1302–1397 aralığını verir; masaccio Tribute Money için Smarthistory '1427', MUS.E sayfası siparişi '1420'lerde' olarak konumlandırır. Her iki durumda da ihtiyatlı biçimler ('y. 1305', 'y. 1424–27') kullanıldı.",
+  "dogrulama_durumu": {
+    "dogrulandi": 9,
+    "kismen_destekleniyor": 1,
+    "dogrulanamadi": 0,
+    "celiskili": 0,
+    "hatali": 0
+  },
+  "yayin_durumu": "BAGIMSIZ_DENETIM_BEKLIYOR",
+  "son_guncelleme": "2026-11-15",
+  "uretim_notu": "Brief'teki 24 aday iddiadan 10'u taşındı (claim üst sınırı 10). TAŞINMAYAN ADAY İDDİALAR: C013 (kalıcılık/duvarın ayrılmaz parçası → C003'e birleştirildi), C014 (nem hassasiyeti → C003'e birleştirildi), C015 (duvardan ayırma/aktarma → C009'a birleştirildi), C006 (Britannica limewater nüansı → C005'e birleştirildi), C010 ve C011 (Cennini pigment listesi ve secco bağlayıcıları → C008'e birleştirildi), C016/C017 (Sistina sözleşme tarihleri ve fresk döngüsü nitelendirmesi → C010'a birleştirildi), C018/C019 (UNESCO Scrovegni kaydı ve 'c. 1305'/Enrico Scrovegni → doğrulanmış resim örnekleri alanına taşındı), C020 (usury kefareti YORUMU — tek yardımcı kaynak, 'perhaps'li; maddeye alınmadı), C021 (Tanrı figürünün panel istisnası — tek yardımcı kaynak; örnek kaydının baglam/versiyon alanına alındı, ayrı iddia yapılmadı), C022 (Brancacci siparişi → örnek kaydına alındı), C023 (Masaccio sürekli anlatım/kaçış noktası/dökme gölge YORUMU — tek yardımcı kaynak ve madde kapsamı teknik olduğu için alınmadı), C024 (Michelangelo'nun Brancacci'de eskiz yapması — tek yardımcı kaynak, KISMEN; alınmadı).\nÇAPRAZ BAĞLAR: TEK-002 (yumurta temperası) eklendi — bağ, Cennini Cap. LXXII'deki secco bağlayıcısı ('rossume d'uovo … universale, in muro, in tavole, in ferro') üzerinden brief tarafından açıkça desteklenmektedir. TEK-003 (glaze) için TEK-001 brief'inde destekleyici kanıt yoktur → bağ EKLENMEDİ. TEK-004 (mürekkep resmi) ve TEK-005 (wasli) başka bir ajanda üretildiği ve bu yazım sırasında diskte olmadığı için bağ konmadı; birleştirme turunda ana oturum değerlendirebilir (IKO-001 uretim_notu'nda TEK-001'e Ajanta secco karşılaştırması için planlanmış bağ talebi vardır — bu madde tarafında karşılıklı bağ eklenmesi ana oturuma bırakıldı).\nDOĞRULAMA: dogrula.py --dosya ile kendi maddeleri koşuldu; 'hiçbir iddia bu kaynağı kullanmıyor' uyarıları TEK-001-K05/K08/K09/K10 için betikteki sıralama artefaktıdır (kaynaklar yalnız doğrulanmış resim örneklerinde kullanılıyor) ve TEK-001-K13 için bilinçli bibliyografik kayıttır.\nİNSAN İNCELEMESİ BEKLEYEN NOKTALAR: (a) arriccio/intonaco/arricciato terminoloji farkının bağımsız bir konservasyon kaynağıyla netleştirilmesi; (b) mezzo fresco için ikinci kurumsal kaynak; (c) Sistina ve Scrovegni döngülerinde secco/mezzo bölge tespitleri (konservasyon raporları); (d) Cennini pigment adlarının modern pigment-kimyası karşılıkları (ayrı analiz kaynağı gerektirir); (e) Mora–Philippot–Blanc metnine erişim."
+}

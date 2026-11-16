@@ -1,0 +1,682 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q27097122",
+ "sanatci_id": "charles-le-brun",
+ "baslik": "İskender'in Babil'e Girişi",
+ "ozgun_baslik": "Entrée d'Alexandre dans Babylone (Le Triomphe d'Alexandre / Alexander Entering Babylon)",
+ "kunye": {
+  "sanatci": "Charles Le Brun",
+  "sanatci_yasam": "Paris 1619 – Paris 1690",
+  "tarih": "y. 1664–1665",
+  "tarih_belirsizlik": "Louvre \"vers 1664 - 1665\" (imprecision \"vers\"); WD on yıl hassasiyeti (1660s) + 1664/1665 sınırları; data \"1664\" düzleştirme (D2, C036).",
+  "teknik": "Tuval üzerine yağlı boya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 450,
+   "genislik": 707
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 2898 (MR 1919)",
+  "edinim": "Collection de Louis XIV (entrée); ownedBy Etat; heldBy Louvre",
+  "konum": "Sully, Niveau 2, Salle 914 — Charles Le Brun (1619-1690) (E2: güncel olmayabilir)",
+  "telif_durumu": "Eser kamu malı (Le Brun ö.1690, 100+ yıl pma); Commons dosyası PD (PD-Art). Louvre sitesi fotoğrafları TELİFLİ © GrandPalaisRmn — kullanılmaz."
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Entr%C3%A9e_d%27Alexandre_dans_Babylone_-_Charles_Lebrun_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2898_%3B_MR_1919.jpg",
+  "kaynak": "Wikimedia Commons (photo Shonagon 2024-04-05)",
+  "lisans": "Public domain (PD-Art)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S8); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "10842×6854 px; 28.603.094 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C038); GZ TASLAK; kompozisyon Louvre birincil metninden (C012/C014/C013/C016/C017); Louvre sitesi fotoğrafları telifli (C023), kullanılmadı; data hotspot/renk detayları doğrulanmadı (C033)."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 482
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1436
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2690
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-başlık-ayrımı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-provenance-ve-eser-tarihi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ve-devlet-propagandası-yorum"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-antik-zafer-alayı-ve-friz"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-sémiramis-asma-bahçeler-quinte-curce"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-koruma-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (vers 1664–1665, huile sur toile, 4,5×7,07 m, INV 2898, Salle 914) doğrular.",
+  "Birincil betimden kompozisyonu (taçlı İskender + iki fil, Sémiramis heykeli, Asma Bahçeler, tripodlar) görsel sınırını beyan ederek okur.",
+  "Quinte-Curce edebi kaynağını ve Mantegna/antik kabartma/Polidoro biçimsel kaynaklarını ayırt eder.",
+  "D1/D2/D3/D4 uyuşmazlıklarını (fil sayısı, tarih, Rubens modeli, İskender başlığı/asa) kaynak hiyerarşisiyle yönetir.",
+  "Eser tarihini (Bernini 1665, Salon 1673, Audran 1676, 29 çizim, Paulet 1963) ve XIV. Louis bağlamını kurar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Peinture d'histoire (tarih resmi)",
+   "tanim": "Tarihsel/mitolojik/dinî konulu, akademik türler hiyerarşisinde en üst sayılan resim; bu eser bir tarih resmidir.",
+   "kanit": [
+    "C026",
+    "C028"
+   ]
+  },
+  {
+   "ad": "Triomphe à l'antique",
+   "tanim": "Louvre'un kompozisyonu tanımladığı antik usul zafer alayı: taçlı İskender, iki filin çektiği araba, yatay alay düzeni.",
+   "kanit": [
+    "C012",
+    "C017"
+   ]
+  },
+  {
+   "ad": "Quinte-Curce (Vaugelas çevirisi)",
+   "tanim": "İskender'in antik biyografisi; Le Brun'ün \"paraît\" izlediği edebi kaynak (1661 Vaugelas çevirisi, sayfa 256-258).",
+   "kanit": [
+    "C011",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Sémiramis / Pudicité Mattei",
+   "tanim": "Sur girişindeki anıtsal heykel (asa + nar, \"unité de l'État\"); model \"probablement\" Vatikan'daki Pudicité Mattei tipi.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Transpozisyon (tuval aktarımı)",
+   "tanim": "Boya katmanının yeni desteğe aktarılması; eser eski bir transpozisyon geçirdi, 1963'te Pierre Paulet restore etti.",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin birincil adı \"Entrée d'Alexandre dans Babylone\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Diğer adı \"Le Triomphe d'Alexandre\" (\"Autre titre\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Charles Le Brun (Paris 1619 – Paris 1690); \"Attribution actuelle\", şüphe alanı boş; ayrıca \"France, École de\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih: \"3e quart du XVIIe siècle (vers 1664 - 1665)\"; JSON imprecision \"vers\" (kesin yıl yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tuval üzerine yağlı boya (huile sur toile).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: 4,5 m × 7,07 m; aksesuarla (çerçeve) genişlik 7,52 m.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter: INV 2898 (Numéro principal) + MR 1919 (Autre numéro); Département des Peintures.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Sergide: Sully, Niveau 2, Salle 914 (\"Charles Le Brun\" salonu) — E2 şerhi (güncel olmayabilir).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "XIV. Louis koleksiyonundan giriş (entrée); mülkiyet Etat; tasarruf Louvre.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Tablo 1665'ten önce bitmişti; Gobelins'te Bernini (Cavalier Bernin) gördü (Chantelou, éd. 2001, p. 243).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Konu: Darius III'e karşı Arbelles zaferi (MÖ 331) sonrası Babil'e giriş; Le Brun \"paraît\" Quinte-Curce'u izledi (Vaugelas çev. 1661, s. 256-258).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İskender taçlı (\"couronné\"); arabası İKİ fil tarafından çekiliyor (\"char tiré par deux éléphants\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Asma Bahçeler Quinte-Curce anlatımından hayal edilerek betimlendi (éd. 1661, p. 258).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sur girişinde anıtsal Sémiramis heykeli: bir elde asa (sceptre), diğerinde nar (grenade, \"symbole de l'unité de l'État\"); model \"probablement\" Pudicité Mattei (Vatikan).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Önde emir veren figür \"serait\" Bagophanès (\"gouverneur de Babylone\") — Nivelon [v. 1697] éd. 2004, p. 322.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Gümüş tripodlar (tütsü dumanı) + yola serpilen çiçekler betimlendi (Quinte-Curce, éd. 1661, p. 256).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Biçimsel kaynaklar: Mantegna \"Triomphe de César\" (fil üstünde genç); antik Amour et Psyché / \"Lit de Polyclète\" (eski Ghiberti malı; solda arkadan kadın); brancard üstü anıtsal vazo → Polydore de Caravage (barok bolluk); Le Brun bu resimden kısa süre sonra gümüş mobilya (mobilier d'argent) için desenler verecek.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Salon de 1673'te sergilendi (Loire, 1992b, p. 39).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Louvre Arts graphiques fonunda kompozisyonla ilgili 29 çizim (Lydia Beauvais envanteri, Beauvais 2000).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "1676'da Girard Audran tarafından 4 plakayla gravür edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Eski bir transpozisyon (tuval aktarımı) geçirdi; 1963'te Pierre Paulet restore etti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "\"Histoire d'Alexandre\" devamı: INV 2894/2895/2897; ilgili kayıt INV 2968 (cl010056823) \"D'après\" Le Brun, halı modeli şeritler, Mobilier National/Gobelins'te.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Louvre sitesi fotoğrafları TELİFLİ © GrandPalaisRmn (Rabeau/Didierjean/Chan-Liat 2021; Dequier 2002; Ojéda 1995; Arnaudet/Blot 1989) — PD DEĞİL.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Commons dosyası: 10842×6854 px, 28.603.094 bayt, PD (PD-Art); Artist Charles Le Brun; Credit \"photo Shonagon 2024-04-05\"; AttributionRequired false.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "WD P571: on yıl hassasiyeti (precision 8, \"1660s\"); P1319 en erken 1664 / P1326 en geç 1665 (precision 9); ref P854 = Louvre cl010060585.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "WD P170/P186/P195 (Q3044768 + INV 2898)/P217 (INV 2898; MR 1919)/P136 (history painting)/P180 — \"stated in: Joconde\" (Q809825); Joconde'a doğrudan erişilmedi (C040).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "WD P276 = Room 914 (Q27097128); ref Atlas (Q7585771) + cartelfr idNotice=8790 (2016-10-05); eski URL bugün aynı Louvre kaydına yönlendiriyor; E2 şerhi geçerli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "frwiki çekirdek olguları (1664-1665, huile sur toile, peinture d'histoire, Darius zaferi sonrası giriş, Salon 1673, XIV. Louis satın aldı, Louvre) — tek satır içi ref → Louvre; çekirdek zaten A.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "WD P6216: public domain (P1001 100 yıl pma; P459 yazar ölümünden 100+); Commons PD-Art (C024) ile uyumlu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "frwiki değerlendirmesi: \"dont c'est sans doute le chef-d'œuvre\" (kuşkusuz başyapıt) — atıfsız estetik değerlendirme; \"sans doute\" korunur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "frwiki alegorik \"dört okuma\" (satır içi atıfsız): İskender=Louis XIV; Sémiramis=\"ou d'Ishtar ?\" + Anne d'Autriche naibliğinin sonu; Hephaestion \"peut être\" Colbert; couleuvre=Colbert arması; altın koç=Amon/Siwa + Séguier (\"devrait certainement être interprété\"); hazineler=Gobelins; lirli sanatçı \"pourrait être\" Le Brun; filin gözü=\"admoniteur\". Hedge'ler AYNEN.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Biçimsel kaynak ihtilafı (D3): frwiki Rubens \"Entrée triomphale d'Henri IV dans Paris\" (Uffizi) önerir (\"il semble que\", atıfsız); Louvre (C017) Mantegna + antik kabartma + Polidoro sayar, Rubens ANMAZ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "data görsel detayları (E7): \"altın bir vazo\" (Louvre \"vase monumental\"), İskender'de \"asa\"+\"tüylü miğfer\", \"kırmızı pelerinli atlı\", \"solda kadınlar ve çocuklar\", buhurdan tekil (Louvre çoğul tripod), hotspot koordinatları — görsel incelenmedi; destek kısmi/çelişkili.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "data biyografi/üslup: \"kralın baş ressamı\", \"Akademi yöneticisi\", \"Poussin + Barok\", halıların \"Avrupa'ya yayıldı\", \"sonraki kuşaklara model\" — bu partide ayrı kaynakla doğrulanmadı; halı modeli C022 ile kısmen destekli.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Fil sayısı ihtilafı (D1): data \"bir fil\" (tekil) ↔ Louvre \"deux éléphants\" (A, C012) + frwiki \"deux éléphants\". Görsel incelenmedi; birincil iki fil der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S4",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "Tarih düzleştirme (D2): data \"tarih\":\"1664\" + onbellek \"yil\":1664 (kesin) ↔ Louvre \"vers 1664 - 1665\" (A, C004) + WD on yıl hassasiyeti/1664-1665 (C025).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "İskender başlığı/asa (D4, çözümsüz): Louvre \"couronné\" (C012) ↔ WD P180 \"helmet\" (C026) + data \"tüylü miğfer + elinde asa\". Louvre'da asa Sémiramis heykelindedir (C014); İskender'de asa birincil metinde yok. Görsel gerekli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata+lisans+çözünürlük (S8); Commons PD; kompozisyon kaynak betiminden; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Louvre kaynakçasındaki basılı eserler + Quinte-Curce (Vaugelas 1661)/Nivelon ([v. 1697] 2004) birincil metinleri yalnız Louvre alıntısından biliniyor; metne erişilmedi; DOI/ISBN üretilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Joconde (Q809825) WD'de \"stated in\"; doğrudan URL verilmediği için erişilmedi (URL tahmini yasak).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "enwiki ve itwiki maddesi YOK (WD sitelinks ar/commonswiki/ja/he/fr); frwiki \"ébauche\" tek satır içi ref'li, geri kalanı atıfsız → tek başına A yapılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q27097122",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q27097122.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:01:25Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities (27 ilgili QID label/description; ham cache Q27097122-related-labels.json)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:02:36Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "fr.wikipedia",
+   "belge": "\"Entrée d'Alexandre dans Babylone\" wikitext (action=parse, redirects=1)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Entrée%20d%27Alexandre%20dans%20Babylone&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:02:36Z (ébauche; tek satır içi ref)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Musée du Louvre",
+   "belge": "Birincil katalog HTML (en arayüz; cl010060585)",
+   "url": "https://collections.louvre.fr/en/ark:/53355/cl010060585",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:02:37Z · 72.342 bayt",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée du Louvre",
+   "belge": "Aynı kaydın JSON'u (cl010060585.json)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010060585.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 13.590 bayt",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée du Louvre",
+   "belge": "İlgili kayıt INV 2968 JSON (cl010056823; \"D'après\", halı modeli)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010056823.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 2.695 bayt",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée du Louvre (eski Atlas/cartelfr)",
+   "belge": "WD P276 ref eski notice (idNotice=8790)",
+   "url": "http://cartelfr.louvre.fr/cartelfr/visite?srv=car_not_frame&idNotice=8790",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · yönlendirme → cl010060585",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url|size|extmetadata), P18 dosyası",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Entrée%20d%27Alexandre%20dans%20Babylone%20-%20Charles%20Lebrun%20-%20Musée%20du%20Louvre%20Peintures%20INV%202898%20;%20MR%201919.jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 16:02:37Z · metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "Kategori wikitext (Louvre INV 2898)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=Category:Entrée%20d%27Alexandre%20dans%20Babylone%20(Louvre%20INV%202898)&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "yerel (salt-okunur)",
+   "belge": "data/*.json (8 dosya) + DURUM.md, MUFREDAT.md",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel (salt-okunur)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Pers Kraliçeleri İskender'in Ayaklarında (Darius'un Çadırı)",
+   "sanatci": "Charles Le Brun",
+   "kurum": "Louvre (Q18683143)",
+   "gerekce": "Aynı sanatçının İskender dizisinden AYRI eser; başlık karışıklığını önlemek ve dizinin farklı anlarını karşılaştırmak için.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "eser": "Triomphe de César (Triumphs of Caesar)",
+   "sanatci": "Andrea Mantegna",
+   "gerekce": "Louvre'un açıkça andığı biçimsel kaynak: fil üstünde genç ve alay düzeni karşılaştırması.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "Entrée triomphale d'Henri IV dans Paris",
+   "sanatci": "Peter Paul Rubens",
+   "kurum": "Galleria degli Uffizi, Floransa (frwiki)",
+   "gerekce": "frwiki'nin \"il semble que\" ile önerdiği model (D3); Louvre Rubens anmaz — ihtilaflı hipotezi sınamak için karşılaştırma.",
+   "kanit": [
+    "C032",
+    "C017"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil HTML+JSON (S4/S5) + ilgili INV 2968 (S6) + eski cartelfr (S7) yeniden açıldı; künye/konu/kompozisyon/biçimsel kaynaklar/eser tarihi doğrulandı. frwiki (S3) wikitext, WD (S1/S2), Commons metadata (S8/S9) yeniden okundu. Dört ihtilaf D olarak açık (C032/C035/C036/C037). Görsel metadata only, vision kotası ana oturumda → İNCELENMEDİ (C038); GZ TASLAK. Joconde (C040) ve Louvre kaynakçası metinleri (C039) erişilmedi; enwiki/itwiki yok (C041).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D1 fil sayısı (C035): data \"bir fil\" (tekil) ↔ Louvre \"deux éléphants\" (A); ana oturumda iki fil düzeltmesi değerlendirilsin (data'ya bu agent yazmaz).",
+  "D2 tarih (C036): data \"tarih\":\"1664\" + onbellek \"yil\":1664 ↔ Louvre \"vers 1664 - 1665\"; \"y. 1664–1665\" önerilir (circa korunmalı).",
+  "D4 İskender başlığı/asa (C037): data \"tüylü miğfer + elinde asa\" ↔ Louvre \"couronné\" (asa Sémiramis heykelinde); görsel teyit gerekli, çözümsüz.",
+  "Lisans alanı boş: onbellek gorseller[0].l:\"\" (Commons). Commons metadata PD (C024) → doldurulabilir (ana oturum kararı). Louvre sitesi fotoğrafları telifli (C023), kullanılmaz.",
+  "Başlık ayrımı doğru: eser_adlari_tr Q27097122 ↔ Q18683143 (Pers Kraliçeleri) ayrı. Ek uyarı: Louvre INV 2968 (cl010056823) aynı başlıklı \"D'après\" kopya/halı modeli; INV 2898 ile karıştırılmamalı (C022).",
+  "Doğrulanmayan data (C033/C034): \"altın bir vazo\" (Louvre \"vase monumental\"), \"kırmızı pelerinli atlı\", \"solda kadınlar ve çocuklar\", buhurdan tekil (Louvre çoğul tripod), Le Brun biyografi/üslup unvanları, hotspot koordinatları.",
+  "Kapsam boşluğu: data Sémiramis heykelini (C014) ve Bernini 1665 Gobelins (C010), Salon 1673 (C018), Audran 1676 (C020), 29 çizim (C019), Paulet 1963 (C021) anmıyor; bu ders A seviyeli ekler.",
+  "Görsel İNCELENMEDİ (C038); GZ TASLAK; insan editör görsel teyidi zorunlu (özellikle D1/D4)."
+ ]
+}

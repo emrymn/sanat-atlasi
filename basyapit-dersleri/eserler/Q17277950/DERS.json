@@ -1,0 +1,866 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q17277950",
+ "sanatci_id": "paul-cezanne",
+ "baslik": "Kâğıt Oynayanlar (Courtauld versiyonu)",
+ "ozgun_baslik": "Les Joueurs de cartes (The Card Players)",
+ "kunye": {
+  "sanatci": "Paul Cézanne",
+  "sanatci_yasam": "1839–1906",
+  "tarih": "1892–1896",
+  "tarih_belirsizlik": "Courtauld 1892–1896; FWN 686 1891–96; Rewald 713 1893–96; Venturi 557 1890–92; data \"1893\" (D, C035)",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 60,
+   "genislik": 73
+  },
+  "muze": "Courtauld Gallery, London (Samuel Courtauld Trust)",
+  "envanter": "P.1932.SC.57",
+  "edinim": "Samuel Courtauld, Mart 1929 satın alma; Courtauld Gift 1932",
+  "konum": "On display (Courtauld Gallery)",
+  "telif_durumu": "Kamu malı (Cézanne ö.1906, 100+ yıl pma); app Commons PD-Art; Courtauld kendi fotoğrafı CC BY-NC 4.0"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne,_Les_joueurs_de_carte_(1892-95).jpg",
+  "kaynak": "Wikimedia Commons (PD-Art; credit cezannecatalogue.com FWN 686) — Courtauld versiyonu Q17277953",
+  "lisans": "Public domain (PD-Art, PD-old-100-expired); Courtauld'un kendi fotoğrafı CC BY-NC 4.0",
+  "dogrulama": {
+   "yontem": "metadata (9 dosya: url/size/lisans); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "app dosyası 1683×1385 (726384 b); yerel 0cc75df9a7033aab 400×329 (oran 1.216 ≈ Courtauld 73/60)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C042); GZ TASLAK; kompozisyon S9/S7/S8/S10 (A) + S4/S6 (B) metninden; \"şişe yok\" self-note vision teyidi bekler (C046); Courtauld kendi fotoğrafı CC BY-NC 4.0"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 413
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1378
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2641
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-seri-mi-tek-tablo-mu"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-otoriteler-arası-ihtilaf"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sıralama-tartışması-büyükten-küçüğe-mi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-indirgeme-ve-simetri"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-tür-resminin-yeniden-işlenmesi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-unconventional"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Courtauld birincil katalogu + FWN 686 ile künyeyi (60×73, oil on canvas, P.1932.SC.57, 1892–1896) doğrular.",
+  "Seri kimliğini (5 tablo) ve versiyon farklarını (Barnes 5 / Met 4 / Orsay-Courtauld-özel 2 figür) ayırt eder; QID karışıklığını yönetir.",
+  "Orsay (Joconde/FWN 684) ve Met (Wayback) birincil kayıtlarıyla provenance ve teknik analizi karşılaştırır.",
+  "Tür resmi motifinin yeniden işlenmesini ve \"unconventional\" tekniği kaynaklı yorumla açıklar.",
+  "D/E ihtilafları (boyut/tarih/sıralama/figür sayısı) ve görsel sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tür resmi (genre painting)",
+   "tanim": "Günlük yaşam sahneleri; 17. yy Hollanda/Fransız kâğıt oyunu motifi (Le Nain/Caravaggio/Chardin).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Catalogue raisonné (FWN)",
+   "tanim": "Société Paul Cezanne çevrimiçi katalog; FWN 686 Courtauld, FWN 684 Orsay.",
+   "kanit": [
+    "C002",
+    "C011"
+   ]
+  },
+  {
+   "ad": "Underdrawing / \"unconventional\" teknik",
+   "tanim": "Serbest elle alt çizim; eskizler aynı ölçekte değil; çizim boyama aşamasında sürer.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik zinciri; Vollard/Camondo/Courtauld/Clark hatları.",
+   "kanit": [
+    "C012",
+    "C021"
+   ]
+  },
+  {
+   "ad": "PD-Art / kamu malı",
+   "tanim": "2B kamu malı eserin sadık fotoğrafı PD; Cézanne ö.1906, 100+ yıl pma.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Kâğıt Oynayanlar, Cézanne'ın 1890'ların başında yaptığı BEŞ tabloluk bir seridir (Courtauld label \"five paintings\"; WD P2635=5).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Courtauld versiyonu 60×73 cm, oil on canvas, P.1932.SC.57, 1892–1896, Courtauld Gallery London (Samuel Courtauld Trust), FWN 686.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Courtauld versiyonu iki oyuncuyu gösterir; kompozisyon belirsiz mekânda masada karşılıklı iki adama indirgenmiştir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Modeller Cézanne'ın babasının mülkündeki (Jas de Bouffan) tarım işçileridir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Paulin Paulet (bahçıvan) Met versiyonundaki sol figür için poz verdi; 5 frank ödendi (Ireson & Wright 2010; Ratcliffe 1960).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Paulet, Orsay/Courtauld/özel 2 oyunculu versiyonlarda sağ figür için de poz vermiş OLABİLİR (\"may have\"; FWN \"unidentified sitter\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Met versiyonu 4 figürlüdür (3 oyuncu + arkada ayakta pipo içen izleyici); duvarda 4 pipo asılı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Met versiyonu 1890–92, 65.4×81.9 cm, 61.101.1, Bequest of Stephen C. Clark 1960, Gallery 826.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Teknik analiz (X-ray/IR) Met versiyonunun serideki İLK deneme olduğunu, Barnes'tan ÖNCE geldiğini gösterir (\"probably\"; sıralama tartışmalı C037).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Barnes versiyonu en büyük (5 figür); Met'ten sonra büyütülerek yapıldı; Léontine Paulet eklendi; raf/zeytin kavanozu/yaldızlı çerçeve katıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Orsay versiyonu 47.5×57 cm, RF 1969, \"1890 vers ; 1895 ET\", musée d'Orsay (1986'dan beri).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S8",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Orsay provenance: Vollard → Cochin → Durand-Ruel → Camondo (1907 satın alma, 1908 vasiyet) → Louvre 1911 → Jeu de Paume 1947–1986 → Orsay 1986.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Orsay versiyonu genellikle serinin SONUNCUSU sayılır (Murphy 1968 pp.119–20).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Schapiro, Orsay versiyonunu \"the most monumental and also the most refined\" diye tanımlar (Schapiro 1988 p.94).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "2 oyunculu versiyonlarda masanın ortasında tek bir şarap şişesi vardır; bölücü çizgi / simetrik denge merkezi (Rosenberg; Gaunt 1970; FWN \"bottle(s)\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Cézanne, 17. yy Hollanda/Fransız tür resmindeki (Le Nain, Caravaggio, Chardin) kâğıt motifiini sarhoş/gürültülü kumar yerine sessiz köylülerle yeniden işledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "İlham kaynağı Mathieu Le Nain'ın \"Les Joueurs de cartes\"i (Musée Granet, Aix, ~1635–40); Gasquet: \"Voilà comment je voudrais peindre!\" (atıf tartışmalı C041).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Cézanne beş tabloyu \"souvenirs of the museums\" diye adlandırdı; her öğleden sonra Louvre/Trocadéro'da eski ustaları kopyaladı (Vollard 1990/1914).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Mekân: Gasquet'ye göre Jas de Bouffan çiftlik evi mutfağı; Athanassoglou-Kallmyer \"meyhane gibi gösterilmiş bir oda\" der, 1890'lar kumar kısıtlamalarıyla ilişkilendirir. Provence oyun kâğıdı üretiminin en eski bölgelerindendi; kısıtlamalar kart üreticilerini tehdit etti (sosyalist Victor Leydet).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Cézanne'ın tekniği \"unconventional\": eskizler aynı ölçekte değil, serbest elle underdrawing, boyama aşamasında çizim devam eder (Burnstock et al. 2010 p.38).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Courtauld provenance: Paul Cassirer (Berlin) → Dr Julius Elias (Berlin) → J B Stang (Oslo) → Alfred Gold (Berlin) → Samuel Courtauld (Mart 1929) → Courtauld Gift 1932 (ilk sahip ihtilafı C034).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "2010–11 \"Cézanne's Card Players\" sergisi: Courtauld (21 Ekim 2010–16 Ocak 2011) + Met (Şubat–Mayıs 2011); seriye adanmış ilk sergi (Met başlangıç tarihi ihtilafı C039).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Barnes ve özel koleksiyon versiyonları sergide BASKI olarak gösterildi (Barnes ödünç vermez; özel koleksiyoner reddetti; Sheppard Reuters 2011).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Orsay versiyonu Ağustos 1961'de Aix gezici sergisinden çalınan 8 Cézanne'dan biriydi; fidyeyle kurtarıldı; Fransız hükümeti 4 renkli anma pulu bastı (Murphy 1968; FWN 684 1961 Aix no.12).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Özel koleksiyon versiyonu 2011'de Katar Kraliyet Ailesi'ne (Al-Thani) satıldı; TAHMİNİ 250–320 milyon $; George Embiricos koleksiyonundan; Salvator Mundi (Kasım 2017)'ye kadar rekor — yorum/kesin değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Eser(ler) kamu malı (public domain); Cézanne 1906'da öldü, 100+ yıl pma; Met Open Access; Commons PD-Art.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S13",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Courtauld label: figürler \"timeless, monumental and resolutely Provençal\"; Mont Sainte-Victoire manzaralarının insan karşılığı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Seri, Cézanne'ın Kübizm'e giden yolunu açan geç dönem yapıtlarının \"prelude\"ü sayılır (Dorment Telegraph 2010; frwiki \"précurseurs du cubisme\") — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Met versiyonunda arkada ayakta pipo içen figür \"le père Alexandre\" (Jas tarım işçisi) olarak tanımlandı (Rivière 1933).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "itwiki: bir hazırlık eskizi 1 Mayıs 2012'de 19.122.500 $'a satıldı — yalnız zayıf web ref (analisidellopera.it/libreriamo.it), birincil doğrulama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "D01: WD seri Q17277950 karışık — P31=\"painting series\" ama P195=Courtauld, P18=Courtauld görseli, P2048/49=47.5×57 (Orsay boyutu). Courtauld için doğru boyut 60×73.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S7",
+    "S9",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "D02: itwiki Courtauld görseli + \"conservata nel Courtauld\" diyor ama boyut 47,5×57 (Orsay) veriyor; kategori Orsay. enwiki/FWN 686/Courtauld/Met fig.3 = 60×73.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S7",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "D03: Orsay boyutları — Joconde 47.5×57 · FWN 684 47×56.5 · Met fig.2 47×56 · Vollard A 3338 46×55. Kesinleştirme yok; hepsi beyan.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11",
+    "S8",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D04: Courtauld provenance ilk sahip — Courtauld \"With Paul Cassirer\" ile başlar; FWN 686 \"Ambroise Vollard\" ile başlar, Elias \"(Dr. Julius Elias, Berlin?)\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D05: Courtauld tarihi — Courtauld 1892–1896 · FWN 686 1891–96 · Rewald 713 1893–96 · Venturi 557 1890–92 · enwiki 1892–1895 · WD 1894 (prec.8) · data \"1893\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S4",
+    "S2",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D06: Orsay tarihi — Joconde \"1890 vers ; 1895 ET\" · FWN 684 1893–96 · enwiki 1894–95 · WD 1890–1895 · Rewald 714 1893–96 · Venturi 558 1890–92 · Met fig.2 ca.1892–96.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11",
+    "S8",
+    "S4",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D07: Sıralama — geleneksel \"büyükten küçüğe\" (Barnes önce) vs Met teknik analiz \"Met Barnes'tan ÖNCE, muhtemelen ilk deneme\" (Rivière 1933; Burnstock 2010; Lewis WSJ 2011).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D08: Barnes boyut — enwiki 134.6×180.3 cm (53×71 in) · Met fig.1 53 1/4×71 5/8 in (~135.3×181.9). Barnes birincil kaydı çekilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D09: Met sergi başlangıç — enwiki/FWN/Met \"9 February 2011\" · Courtauld listesi \"07/02/2011\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S8",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D10: data/yuruyus.json Met'i \"beş figürlü\" diyor (yanlış: Met 4, Barnes 5); aynı kayıt \"Dört Provenceli köylü\" diyor (iç çelişki + Met/Barnes karışması).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S15",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D11: Le Nain atfı — Met fig.6 \"Mathieu Le Nain\"; frwiki \"Attribué à Mathieu Le Nain\"; enwiki \"one of the Le Nain brothers\". \"attribué à\" korunmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); app Commons dosyası PD-Art (Courtauld, Q17277953); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Oyunun adı \"écarté\" yalnız Commons kategorisinde (editoryal); Met/Courtauld/FWN oyun adını vermez → birincil teyitsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S10",
+    "S9",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Katar satış fiyatı \"estimated\" 250–320 M$ (kesin değil); WD seri P571=1893 prec.8 ref frwiki, Q1165042 ref Commons/Hollandaca wiki (zayıf).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "Kitap/monografi metinlerine erişilmedi (Schapiro, Murphy, Salinger, Gaunt, Burnstock, Ireson & Wright, House, Venturi, Rewald vb.); yalnız bibliyografyada anıldı. DOI/JSTOR (Salinger 10.2307/3258395) doğrulanmadı. enwiki Met sergi ref'i localhost:5000 bozuk.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S7",
+    "S8",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "app görselinin şişe içerip içermediği (basyapitlar.json \"Bu görselde şişe yok\") görsel teyit gerektirir; FWN/Courtauld/enwiki şişe der; yerel oran 1.216 Courtauld 73/60 ile uyumlu. Görsel İNCELENMEDİ.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15",
+    "S13",
+    "S7",
+    "S9",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Met katalogu kaynakları geniş tutar: Van Ostade \"The Family\" gravür kopyası, Meissonier \"The Card Players\" (1863, Met 25.110.39), Caillebotte \"Partie de bésique\" (1880), Raffaëlli/Huysmans; Apollinaire giysileri Giotto draperilerine benzetir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Barnes versiyonunda Wadley \"tension in opposites\" (renk/ışık/şapka/kumaş karşıtlığı), Rosenberg \"alienation\" en belirgin der; Cézanne seri için bir düzineden fazla eskiz yaptı, \"Man with a Pipe\" eşlikçi parçası Courtauld sergisinde yanında gösterildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q17277950 EntityData (SERİ)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q17277950.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q17277953 EntityData (Courtauld versiyon)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q17277953.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikidata",
+   "belge": "Q1165042 EntityData (Orsay versiyon)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1165042.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Card Players (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Card%20Players",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "I giocatori di carte (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=I%20giocatori%20di%20carte",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "Les Joueurs de cartes (Cézanne) (wikitext)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Les%20Joueurs%20de%20cartes%20(C%C3%A9zanne)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Société Paul Cezanne",
+   "belge": "Catalogue raisonné FWN 686 (Courtauld), entry id=691",
+   "url": "https://www.cezannecatalogue.com/catalogue/entry.php?id=691",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Société Paul Cezanne",
+   "belge": "Catalogue raisonné FWN 684 (Orsay), entry id=692",
+   "url": "https://www.cezannecatalogue.com/catalogue/entry.php?id=692",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Courtauld Gallery",
+   "belge": "Collection Online object-p-1932-sc-57",
+   "url": "https://gallerycollections.courtauld.ac.uk/object-p-1932-sc-57",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı; Retrieved 14/11/2026 19:04:16)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Metropolitan Museum",
+   "belge": "The Card Players, object 435868 (credit 110000301)",
+   "url": "https://www.metmuseum.org/art/collection/search/435868",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 429 → Wayback 200 (2024-08-11)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "POP / Joconde (Fr. Kültür Bakanlığı)",
+   "belge": "notice 000PE003753 (Orsay), günc. 2026-02-23",
+   "url": "https://pop.culture.gouv.fr/notice/joconde/000PE003753",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "JocondeLab",
+   "belge": "notice 57342 (Orsay)",
+   "url": "http://jocondelab.iri-research.org/jocondelab/notice/57342/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 502 → Wayback 200 (2025-09-14)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (9 dosya: url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikimedia Commons",
+   "belge": "dosya açıklama sayfaları + kategori wikitext",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=revisions",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S15",
+   "kurum": "Sanat Atlası data/",
+   "belge": "basyapitlar, eser_ayrintilari, yuruyus, eser_notlari, yerel_gorseller (salt-okunur)",
+   "url": "https://example.org/sanat-atlasi/data",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "okundu (yerel)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Art UK",
+   "belge": "the-card-players-207084 (WD P1679)",
+   "url": "https://artuk.org/discover/artworks/the-card-players-207084",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; Wayback timeout; ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Wikidata",
+   "belge": "versiyon QID etiketleri (wbgetentities)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Kâğıt Oynayanlar (Orsay versiyonu)",
+   "sanatci": "Paul Cézanne",
+   "kurum": "Musée d'Orsay, Paris",
+   "envanter": "RF 1969",
+   "gerekce": "Aynı seri, iki figür, en küçük; Schapiro \"en anıtsal ve en rafine\".",
+   "kanit": [
+    "C011",
+    "C014"
+   ]
+  },
+  {
+   "eser": "Kâğıt Oynayanlar (Met versiyonu)",
+   "sanatci": "Paul Cézanne",
+   "kurum": "Metropolitan Museum of Art, New York",
+   "envanter": "61.101.1",
+   "gerekce": "Dört figür; teknik analiz muhtemelen ilk deneme.",
+   "kanit": [
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "eser": "Les Joueurs de cartes",
+   "sanatci": "Mathieu Le Nain (atıf tartışmalı)",
+   "kurum": "Musée Granet, Aix-en-Provence",
+   "gerekce": "17. yy tür resmi motif kaynağı; Gasquet \"Voilà comment je voudrais peindre!\".",
+   "kanit": [
+    "C017",
+    "C016"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Courtauld canlı (S9), FWN 686+684 canlı (S7/S8), Met Wayback 2024-08-11 (S10), POP Joconde 000PE003753 canlı (S11), JocondeLab Wayback 2025 (S12) yeniden açıldı; Courtauld künye/provenance/label, Orsay künye/provenance, Met künye/teknik/tema doğrulandı. WD seri Q17277950 (P31 series/P195 Courtauld/P2048-49=47.5×57) ve Q17277953 (60×73) yeniden okundu → D01 kimlik karışıklığı teyit. en/fr/it wikitext yeniden okundu; 11 ihtilaf D, 6 belirsizlik E açık. Görsel metadata only, vision kotası ana oturumda → İNCELENMEDİ (C042); GZ TASLAK. Kitap/monografi metinleri erişilmedi (C045); Art UK erişilemedi (S16).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "N01: Q17277950 WD'de SERİ; app Courtauld versiyonu gibi kullanıyor (muze Courtauld, tarih 1893). Doğru Courtauld Q17277953/FWN 686/60×73 (C031/D01).",
+  "N02: basyapitlar.json self-note \"Bu görselde şişe yok\" — görsel teyit gerekli; FWN/Courtauld şişe der, yerel oran Courtauld ile uyumlu (C046/E09).",
+  "N03: yuruyus.json Met'i \"beş figürlü\" diyor (yanlış: Met 4, Barnes 5); aynı kayıt \"Dört Provenceli köylü\" (iç çelişki) (C040/D10).",
+  "N04: Aynı Q17277950 altında eser_ayrintilari/basyapitlar Courtauld görseli (0cc75df9a7033aab), yuruyus Met görseli (b585fab2a191d204) kullanıyor → versiyon tutarsızlığı.",
+  "N05/N06: eser_ayrintilari iki oyunculu kompozisyon + \"Aix köylüleri\" Courtauld/Orsay ile uyumlu; eser_notlari \"beş tabluluk seri... Kübizm\" uyumlu (C001/C004/C028).",
+  "N07: WD seri P2048/49=47.5×57 itwiki/hewiki kaynaklı; Courtauld için yanlış (60×73). WD düzeltmesi kapsam dışı (salt-okunur).",
+  "N08: enwiki Met sergi ref'i localhost:5000 bozuk; kullanılmadı, Met nesne sayfası (S10) esas alındı (C045/E07).",
+  "Görsel İNCELENMEDİ (C042); GZ TASLAK; Courtauld kendi fotoğrafı CC BY-NC 4.0, app Commons PD-Art; insan editör görsel teyidi ZORUNLU."
+ ]
+}

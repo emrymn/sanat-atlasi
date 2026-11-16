@@ -1,0 +1,831 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1430990",
+ "sanatci_id": "agnolo-bronzino",
+ "baslik": "Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık)",
+ "ozgun_baslik": "An Allegory with Venus and Cupid",
+ "kunye": {
+  "sanatci": "Agnolo Bronzino",
+  "sanatci_yasam": "1503–1572",
+  "tarih": "About 1545 (yaklaşık 1545)",
+  "tarih_belirsizlik": "NG \"About 1545\"; itwiki/Commons \"1540–1545\" (D, C033); WD P571 +1545 precision 9 + P1480 circa",
+  "teknik": "Oil on wood (tahta üzerine yağlı boya)",
+  "boyut_cm": {
+   "yukseklik": 146.1,
+   "genislik": 116.2
+  },
+  "muze": "National Gallery, London (Main Collection)",
+  "envanter": "NG651",
+  "edinim": "Bought, 1860 — Beaucousin koleksiyonuyla birlikte, Paris",
+  "konum": "Room 2",
+  "telif_durumu": "Kamu malı (PD-old-100; Bronzino ö.1572); Commons PD-Art; Art UK (S7) UK non-commercial istisna notu"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg",
+  "kaynak": "Wikimedia Commons (Yorck Project); Credit: National Gallery, London",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired / CC-PD-Mark)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S5); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "3349 × 4226 px; 4.636.022 bayt; yükleme 2019-10-13",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C041); GZ TASLAK; kompozisyon S4 (A) + S2/S3 metninden; Art UK görsel kullanım notu UK istisnası (S7)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 466
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1422
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2658
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-tanıklığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-üslup-ve-maniyerizm-kuramı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#6-üslup-ve-maniyerizm-kuramı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#3-figür-kimlikleri-tartışması-d-envanteri",
+   "DERS_ILERI.md#4-ikonografik-okumalar-iki-mesaj-ve-siyasi-katman"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-kanıt-pentimenti-ve-hızlı-üretim-hipotezi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#3-figür-kimlikleri-tartışması-d-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NG birincil kataloğuyla künyeyi (About 1545, Oil on wood, 146,1×116,2, NG651, Room 2, 1860 Beaucousin) doğrular.",
+  "Merkez grubu ve attribute'leri (altın elma, güvercinler, maskeler, ok, taç) kaynak betimiyle okur.",
+  "Figür kimliği ihtilaflarını (Jealousy/putto/Oblivion/eller) D olarak yönetir, kesinleştirmez.",
+  "Provenance hipotez zincirini (Vasari, Cosimo armağanı, Althorp–Spencer–Beaucousin ↔ Viyana) değerlendirir.",
+  "Maniyerist üslubu (emaye yüzey, ultramarin, rölyef mekân) ve pentimenti/hızlı üretim hipotezini açıklar; görsel sınırı beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Alegori",
+   "tanim": "Soyut bir fikri figürlerle anlatan sahne; burada aşkın hazları ve tehlikeleri.",
+   "kanit": [
+    "C002",
+    "C046"
+   ]
+  },
+  {
+   "ad": "Maniyerizm",
+   "tanim": "Yüksek Rönesans uyum/oran/doğalcılığına tepki; yapaylık, doğal olmayan zarafet, entelektüel incelik.",
+   "kanit": [
+    "C047",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Figura serpentinata",
+   "tanim": "Yılan gibi kıvrılan gövde pozu; tipik Maniyerist form (Venus, Cupid, putto).",
+   "kanit": [
+    "C051"
+   ]
+  },
+  {
+   "ad": "Cangiante",
+   "tanim": "Açıya göre renk değiştiren kumaş/renk efekti; hibrit figürün shot silk pelerini.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Pentimento",
+   "tanim": "Sanatçının kontur/karar değişikliği izleri; hızlı üretim hipotezinin kanıtı.",
+   "kanit": [
+    "C045"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Bronzino (Agnolo Bronzino), 1503–1572.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "NG resmî başlığı \"An Allegory with Venus and Cupid\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "NG tarih ifadesi \"About 1545\" (belirsizlik aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik \"Oil on wood\" (tahta üzerine yağlı boya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut 146.1 × 116.2 cm (NG ölçüsü).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter no NG651.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "1860'ta satın alındı; Beaucousin koleksiyonuyla birlikte, Paris.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "National Gallery, London; Main Collection; Room 2.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Çerçeve: 17. yüzyıl İtalyan çerçevesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Merkezde Venüs ve Cupid: Venüs oğlunu öperken sadakından ok çalar; Paris'in sunduğu altın elma; bir çift güvercin; Cupid tacı çalmaya çalışır. NG sahneyi \"sexually explicit\" olarak niteler (akademik aktarım).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Güllü putto: NG Overview \"could be Folly or Pleasure\"; In-depth \"foolish Pleasure\"; gül savurur; sağ ayağında diken; bileğinde çıngıraklı halhal.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Hibrit kız \"Fraud or Deceit\"; Cupid'e bal peteği sunar; gizli yılan gövdesi; cangiante (shot silk) pelerin.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Çığlık figürü: NG \"may be Jealousy\"; In-depth \"Suffering, Jealously [sic] and Syphilis\"; NG frengi karşı argümanı (\"the French disease\"). Kimlik aralığı; kesinleştirilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Kanatlı Father Time kum saatiyle tanımlanır; mavi örtü \"either to conceal or reveal\"; \"It is not easy to make out what he is doing\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Sol üst figür \"may represent Oblivion\"; başının arkası/içi yok; örtüyü o da tutar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Venüs'ün ayaklarındaki maskeler: şehvetin aldatmayı maskelemesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Vasari 1568 \"Life of Bronzino\" tablosu NG'ye göre \"likely\" bu eserdir; alıntıda Time anılmaz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Tablo \"probably\" Cosimo I'den I. François'ya armağan; Cosimo saray ressamı; Fransız kraliyet koleksiyonu kaydı yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Provenans: 1860 Beaucousin (kesin); \"Almost certainly\" Althorp 1742; \"Apparently\" Christie's Temmuz 1847 Spencer→Emery. Gould 1987 katalogundan çıkarılmış metin (erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Maniyerist üslup: emaye yüzey, yapay beyaz ışık, mermerimsi uzuvlar, ultramarin (lapis lazuli), rölyef gibi sığ mekân, klostrofobik; lüks nesnesi görünümü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "enwiki: Napolyon Paris→Viyana 1813; Keglević ← Kaunitz-Rietberg; 1860'tan beri Londra. Atıf: Böckh 1821 s.319; Haraszti-Takács 1968 s.29 (erişilmedi). S4 ile çelişir (D7).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Hibrit kız Panofsky \"Fraude\" yorumuyla ilişkili; enwiki \"may represent Pleasure and Fraud\". Panofsky 1962 ss.86–91 (1939); S2 atıflı, S4 bib.; metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Figür kimliklerinde uzlaşı yok: enwiki \"no consensus on these identifications\" (NG 2001 katalog atıflı); NG tereddütleri destekler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "itwiki: Cosimo→Francesco armağanı kesin anlatım; Carlo V/Eleonora di Toledo/Carnesecchi bağlamı. Atıfsız; NG \"probably\" ile gerilim.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C025",
+   "ifade": "itwiki: 19. yy sansürü (Venüs pubesi sarı örtü, Cupid natesi mersin dalı); 20. yy restorasyonunda kaldırıldı. Atıfsız; S4'te yok; Devich 1959 yalnızca bib.'de anılır.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "itwiki: sol üst figür \"la Verità ... che svela\"; alternatif başlık \"Lussuria smascherata\". Atıfsız; Oblivion ile çelişir (D5).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "itwiki: putto \"la Gioia\"; maskeler \"forse un satiro e una ninfa\"; \"la Disperazione\", \"la Follia o la Malattia\". Atıfsız; \"forse\" korundu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "itwiki künyesi: \"1540–1545 circa\"; 146 × 116 cm. Atıfsız; A ile çelişir (D1/D2).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C029",
+   "ifade": "Wikidata boyutu 147 × 117 cm (P2048/P2049; ref Commons WGA 2018). A ile çelişir (D2).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Zeri: erken Maniyerizmin en rafine başyapıtlarından; \"elaboratissima allegoria ... dell'Amore\"; uzun entelektüel elaborasyon. S3 satır içi (Rizzoli 1999, ISBN 8817863521); S4 bib. ss.119–25; metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Sol alt köşedeki ayak Monty Python \"Foot\"unun kaynağı. S2 ref: The Life of Python 1999 (AV); Gilliam YouTube 2024; bağımsız doğrulanmadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Kamu malı (PD-old-100): Bronzino ö.1572; S1 P6216=Q19652; S5 UsageTerms \"Public domain\" (PD-Art/PD-old-100-expired/CC-PD-Mark).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "D1 Tarih ihtilafı: NG \"About 1545\" = S2 \"c. 1545\" = S7 = S1 +1545 (circa) ↔ S3/S5/data \"1540–1545\". Tek yıl ↔ aralık; NG tek yılı destekler.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S7",
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D2 Boyut ihtilafı: S4/S7/S2 146.1×116.2 ↔ S1 147×117 (WGA/Commons 2018) ↔ S3 146×116.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S2",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D3 Çığlık figürü: NG \"may be Jealousy\"/\"Suffering, Jealously, Syphilis\" ↔ S3 \"la Disperazione\" ↔ S2 \"Jealousy/syphilis\" (her/he tutarsız) ↔ data \"Umutsuzluk\". \"Umutsuzluk/Despair\" NG'de yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D4 Güllü putto: NG Overview \"Folly or Pleasure\"/In-depth \"foolish Pleasure\" ↔ S2 \"often identified as Folly\" ↔ S3 \"la Gioia\" ↔ data \"Akılsızlık ya da Haz\". NG içi vurgu farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D5 Sol üst figür: NG \"may represent Oblivion\" ↔ S2 \"usually called Oblivion\" ↔ S3 \"la Verità\" ↔ data \"Unutuş ya da Gece\". \"Gece\" hiçbir erişilen kaynakta yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D6 Hibrit kızın elleri: S2 sağ el petek/sırtta akrep iğnesi ↔ S3 ters atama (sağ iğne, sol petek) ↔ S4 el belirtmez. S2 \"Pleasure and Fraud\" ↔ S4 \"Fraud or Deceit\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D7 Provenans/himaye: S4 \"probably\" Cosimo armağanı + Fransız kraliyet kaydı yok + Althorp/Spencer/Beaucousin ↔ S2 Cosimo ya da Salviati siparişi + Napolyon Viyana 1813 Keglević ↔ S3 kesin armağan + Viyana. Viyana anlatısı S4'te yok; atıflar erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D8 Başlık: S4 \"An Allegory with Venus and Cupid\" ↔ S2 \"Venus, Cupid, Folly and Time\" (+2 alternatif) ↔ S3 \"Allegoria del trionfo di Venere\" (+ \"Lussuria smascherata\") ↔ data \"An Allegory (Venus, Cupid, Time and Folly)\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük (S5: 3349×4226 px, PD); GZ TASLAK; kompozisyon S4+S2/S3 metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "Kaynakçada anılıp metnine erişilmeyenler: Gould 1962/1987; Panofsky 1939/1962; Böckh 1821; Haraszti-Takács 1968; Zeri 1999; Devich 1959; Plazzotta & Keith 1999; Conway 1986; Healy 1997; Frangenberg 1985; Keach 1978; Hope 1982; Smith 1981/1984; Cheney 1987; Bosch 1983/1990; Gaston 1991; Cox-Rearick 1994; Anderson 1994; Govier 2009; Auty 2019 vb. DOI/ISBN/sayfa doğrulanmadı; uydurma yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "NG: Bronzino, Pontormo'nun Venüs'ün Cupid'in okunu çaldığı tablosunu (Uffizi) \"may have recalled\" anımsamış olabilir; tablo Michelangelo çizimine dayanıyordu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "NG: Bronzino yetkin bir şairdi (Petrarchçı aşk lirikleri + müstehcen şiirler); anlamı çözme uğraşı çekiciliğin parçası; \"göze ve zihne birlikte hitap\" ikiliği şiirinde sıkça geçer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "NG: alışılmadık çoklukta kontur değişikliği/karar değişimi; saçını yolan figür başlangıçta daha aşağıda; Venüs'ün kolu daha geriye bükülmüştü; \"may have had to make it quickly\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "NG iki okuma: (a) Güzellik Tutku'yu dizginler, bizi Jealousy/Fraud/Folly'den korur, Zaman Oblivion'la savaşır; (b) haz ve aldatmanın başkanlık ettiği iffetsiz aşkın acı sonuçları. \"Its intended meaning is not entirely certain.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "NG: Maniyerizm Yüksek Rönesans uyum/oran/doğalcılığına tepki; entelektüel incelik, doğal olmayan zarafet, yapaylık, istikrarsızlık; Bronzino+Pontormo benimsedi; Alegori bu saray sanatını özetler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "NG: Rosso Fiorentino'nun 1530'da Fransız kralına gönderdiği Mars-Venüs zinası çizimi (Louvre) kralın İtalya savaş hırslarından vazgeçişini kutluyor olarak düşünülür; Bronzino Alegorisi \"perhaps\" benzer amaçlı; diplomatik armağansa siyasi anlam mümkün.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "NG Exhibition history: \"Sin\" sergisi, The National Gallery (London), 7 Ekim 2020 – 3 Ocak 2021.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "NG bibliyografyası (erişildi) tartışma literatürünü listeler (Panofsky, Devich, Gould, Frangenberg, Keach, Hope, Smith, Conway, Cheney, Bosch, Gaston, Mendelsohn, Moffitt, Anderson, Cox-Rearick, Healy, Plazzotta & Keith, Zeri, Baker & Henry vb.). Liste A; içerik iddiaları E (C042).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "enwiki: Venus/Cupid/putto figura serpentinata pozunda; kompozisyon karşıt hareketlerin karşıtlığı; soğuk kompozisyonda en ince işçilik yüzlerde; Bronzino portre ressamı, Medici portreleri (Haraszti-Takács 1968 atıflı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "enwiki: eser Iris Murdoch The Nice and the Good'da tartışılır (Ashworth makalesi atıflı); Painter/Davies/Mitchell eserlerinde anılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "enwiki: birçok araştırmacı Time jestini \"Time is fleeting...\" olarak okur; mavi kumaş ön/arka plan arasında perde. NG \"not easy to make out\" der (C014).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C054",
+   "ifade": "Wikidata P180: Venus/Cupid/Folly/nude/mascaron/wing/arrow/pigeon/pearl; Time/Jealousy/Oblivion YOK. Figür kimlikleri için P180 eksik; kullanılmamalı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Yorum: tablo \"çözülmesi gereken bilmece\" estetiğinin örneği; NG \"pleasure to both the eye and the intellect\" ifadesinden hareketle haz duyusal+bilişsel; kimlikler kapanmadıkça izleyici etkin. Kurum dışı estetik yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C056",
+   "ifade": "Yorum: gösterme/gizleme gerilimi (örtü, maskeler, saklı iğne) estetik kategori; erotik içerik ile ahlaki mesajın iç içeliği; soğuk cilalı yüzey arzuyu hem sunar hem yargılar. Kurum dışı estetik yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1430990 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1430990.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:33:27Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "Venus, Cupid, Folly and Time (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Venus,%20Cupid,%20Folly%20and%20Time&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:34:18Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Allegoria del trionfo di Venere (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Allegoria%20del%20trionfo%20di%20Venere&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:34:18Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "National Gallery, London",
+   "belge": "Resmî katalog (Overview/In-depth/Key facts/Provenance/Exhibition/Bibliography)",
+   "url": "https://www.nationalgallery.org.uk/paintings/bronzino-an-allegory-with-venus-and-cupid",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:34:42Z); ham HTML+TXT",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo — File:Angelo Bronzino - Venus, Cupid, Folly and Time - National Gallery, London.jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Angelo%20Bronzino%20-%20Venus,%20Cupid,%20Folly%20and%20Time%20-%20National%20Gallery,%20London.jpg&prop=imageinfo&iiprop=url|size|extmetadata&formatversion=2&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 (14:34:43Z); backoff sonrası 200 (14:36:09Z); metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Art UK",
+   "belge": "Canlı kayıt (an-allegory-with-venus-and-cupid-114276)",
+   "url": "https://artuk.org/discover/artworks/an-allegory-with-venus-and-cupid-114276",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (14:36:09Z) bot engeli; erişilemedi → S7",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Art UK (Wayback)",
+   "belge": "Arşiv kopyası, snapshot 2025-01-18T03:38:37Z",
+   "url": "http://web.archive.org/web/20250118033837/https://artuk.org/discover/artworks/an-allegory-with-venus-and-cupid-114276",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (14:36:35Z); NG verisini teyit",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümü (23 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1430990&props=labels&languages=en|it|tr",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:34:19Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability API (Art UK)",
+   "url": "https://archive.org/wayback/available?url=artuk.org/discover/artworks/an-allegory-with-venus-and-cupid-114276",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (14:36:21Z)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Venus and Cupid (Venüs'ün Cupid'in okunu çalması)",
+   "sanatci": "Pontormo",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": false,
+   "gerekce": "NG: Bronzino bu tabloyu \"may have recalled\" anımsamış olabilir; Michelangelo çizimine dayanır (model zinciri). Müfredatta Pontormo Deposition (Q3705703) var; eser bağı değil sanatçı bağı.",
+   "kanit": [
+    "C043"
+   ]
+  },
+  {
+   "eser": "Mars and Venus zinası çizimi",
+   "sanatci": "Rosso Fiorentino",
+   "kurum": "Louvre, Paris",
+   "mufredat_ici": false,
+   "gerekce": "1530'da Fransız kralına gönderildi; diplomatik armağan olarak siyasi alegori paralelliği (NG \"perhaps\"). Müfredatta Rosso Moses (Q1863885) var.",
+   "kanit": [
+    "C048"
+   ]
+  },
+  {
+   "eser": "Venus of Urbino (Urbino Venüsü)",
+   "sanatci": "Titian",
+   "kurum": "Uffizi, Floransa",
+   "envanter": "Q727875",
+   "mufredat_ici": true,
+   "gerekce": "Mitolojik/erotik nü karşıtlığı: Titian sıcak iç mekân ↔ Bronzino soğuk yapay bilmece (yorum); müfredat içi.",
+   "kanit": [
+    "C020",
+    "C046"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NG birincil (S4) + en/it wikitext (S2/S3) + Wikidata/Commons (S1/S5) + Art UK arşiv (S7) 14 Kasım 2026'da yeniden açıldı; künye/konu/provenance/üslup/pentimenti doğrulandı. Sekiz ihtilaf D (C033–C040) açık; NG Overview↔In-depth vurgu farkı not edildi. Görsel S5 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C041); GZ TASLAK. Refs metinleri erişilmedi (C042); itwiki atıfsız iddialar E (C024–C027).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"yaklaşık 1540–1545\" ↔ NG \"About 1545\" (D1, C033); onbellek yil 1545 ↔ tarih aralığı kendi içinde tutarsız.",
+  "Başlık: data ozgun \"An Allegory (Venus, Cupid, Time and Folly)\" ↔ NG resmî \"An Allegory with Venus and Cupid\" (D8, C040).",
+  "Sol üst figür: data \"Unutuş ya da Gece\" — \"Gece\" hiçbir erişilen kaynakta yok; itwiki \"Verità\" (D5, C037).",
+  "Venüs pozu: data \"diz çökmüş\" — NG Venüs'ün diz çöktüğünü belirtmez (\"Cupid squats\"); görsel incelenmedi → doğrulanamadı.",
+  "Güvercin: data \"beyaz güvercin\" (tekil) ↔ NG \"a pair of doves\" / itwiki \"due colombe\" (çift).",
+  "Çığlık figürü: data \"Kıskançlık ya da Umutsuzluk\" — \"Umutsuzluk\" NG'de yok, itwiki \"Disperazione\" (D3, C035).",
+  "Hibrit eller: data \"Elleri terstir\" ↔ enwiki \"her hands reversed\" uyumlu; itwiki sağ/sol petek-iğne ters (D6, C038).",
+  "Vasari/armağan: data NG \"probably\" ile uyumlu; ama NG \"no record ... French royal collection\" notu data'da yok (C018).",
+  "WD P180: Time/Jealousy/Oblivion yok (C054); figür kimlikleri için kullanılmamalı.",
+  "Görsel/lisans: İNCELENEMEDİ (C041); GZ TASLAK; Art UK (S7) UK non-commercial istisna; Commons PD-Art ayrı değerlendirilmeli; insan editör zorunlu.",
+  "Müfredat: Titian Urbino Venüsü Q727875 (içi); Pontormo Deposition Q3705703; Rosso Moses Q1863885 (karşılaştırma sanatçı düzeyinde)."
+ ]
+}

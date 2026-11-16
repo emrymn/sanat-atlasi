@@ -1,0 +1,82 @@
+[
+ {
+  "eser_id": "Q1759631",
+  "tur": "B",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "5. **Sipariş kronolojisi (B):** K2 \"resmî belge yok, dolaylı tanıklık\" der; 1424 başlangıç çıkarımdır [C003].",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "- **Tarih:** 1420'ler; başlangıç 1424 [C003].",
+  "aciklama": "Aynı olgu (başlangıç 1424): İleri dersi bunun resmî belgesi olmadığını, dolaylı tanıklığa dayalı bir çıkarım olduğunu açıkça yazıyor; Orta dersi \"itwiki başlangıcı 1424 verir\" diye atfediyor ve DERS.json C003 \"K2 resmî belge yok, dolaylı tanıklık\" notunu taşıyor. Buna karşılık Başlangıç dersi 1424'ü nitelemesiz kesin olgu olarak veriyor; SORULAR.json TK01 de \"1420'ler (1424)\" biçiminde hedge'siz. Kesinleşme: öğrenci başlangıç düzeyinde 1424'ü belgeli bir yıl gibi öğreniyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1759631",
+  "tur": "B",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Restorasyon tarihleri farkı (K3 1981–1990 ↔ K2 1983–1990), kaynakların küçük kronoloji uzlaşmazlığıdır; ders, aralığı \"1980'ler\" olarak sunar ve farkı not eder (yorum) [C010].",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "1746 Meucci overpaint; 1771 yangın; 1981–1990 restorasyon; a secco kayıplar; 1480'ler Filippino.",
+  "aciklama": "Aynı olgu (restorasyon tarih aralığı): İleri dersi 1981–1990 (K3) ile 1983–1990 (K2) arasında kaynak uzlaşmazlığı olduğunu beyan ediyor ve dersin bu yüzden aralığı \"1980'ler\" olarak sunduğunu yazıyor; SORULAR.json'daki DY03 ve AU05 de \"1980'ler\" kullanıyor. Ancak TK04 tekrar kartı tek kaynağın aralığını (1981–1990) nitelemesiz kesin olgu olarak veriyor — İleri'nin beyan ettiği ders politikasını izlemiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q17026577",
+  "tur": "B",
+  "dosya_1": "DERS.json",
+  "alinti_1": "object type \"painting\" (şablon hatası; eser posterdir) → görselin Bertarelli nüshasını gösterdiği çıkarımı.",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "P18 görseli Milano Bertarelli nüshasının bir fotoğrafıdır",
+  "aciklama": "Aynı olgu (WD P18 görselinin Bertarelli nüshasına ait olması): C040 iddiası (kullanim 'yorum') bunu Commons kurum alanına dayanan bir 'çıkarım' olarak kaydeder ve DERS_ORTA.md 'dosya sayfasının institution alanına dayanan bir çıkarımdır (yorum)' derken, DERS_ILERI.md §1 aynı eşleştirmeyi 'bir fotoğrafıdır' diyerek nitelemesiz kesin olgu gibi aktarır; hedge düşmüştür.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q17277950",
+  "tur": "B",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "bu iki ölçüm arasında küçük fark vardır ve Barnes birincil kaydı çekilmediği için kesinleştirilemez [C038] (tartışma).",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "134.6×180.3 cm Barnes versiyonunun boyutudur (en büyük, 5 figür).",
+  "aciklama": "Aynı olgu (Barnes versiyonunun boyutu): İleri ders Barnes ölçüsünün iki kaynak değeri (enwiki 134.6×180.3 ↔ Met fig.1 ~135.3×181.9) arasında kaldığını ve birincil kayıt çekilmediği için kesinleştirilemez olduğunu C038 tartışması olarak beyan eder; SORULAR.json CS01'in D seçeneği yanlış-gerekçesi ise aynı boyutu 'Barnes versiyonunun boyutudur' diye nitelemesiz tek kesin değer olarak verir — D düzeyi ihtilaf quiz'e sızmış.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1759631",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Şapel bir \"üslup müzesi\"dir: Masolino, Masaccio, Filippino — üç dil, tek duvarda [C009].",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "- **Masolino, Tabitha (karşı duvar):** aynı perspektif şeması ama kaçış noktasında anlamlı öğe yok; sahneler dağınık [C012].",
+  "aciklama": "İleri §8, Masolino-Masaccio-Filippino üç üslubun 'tek duvarda' olduğunu kesin olgu olarak söyler; Orta §8 (ve İleri §8'in kendi 'Tabitha, karşı duvar' cümlesi, C012 iddiası) Masolino'nun Tabitha sahnesinin Vergi Parası'nın karşı duvarında olduğunu belirtir. Masolino örneği karşı duvardaysa üç üslup tek duvarda toplanamaz — iki konum bilgisi uzlaşmaz.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1759631",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Ghirlandaio bu eserin sanatçısı değildir; doğru sanatçı Filippino Lippi.",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Şapeli 1480'lerde Filippino Lippi tamamladı; ama Vergi Parası, bütünüyle Masaccio'nun işi sayılır — gerçi İsa ve Petrus başlarının Masolino tarafından yapıldığı da söylenir (tartışma) [C019].",
+  "aciklama": "CS10'un ('Şapeli 1480'lerde kim tamamladı?') C ve D seçeneklerinin yanlış-gerekçeleri 'doğru sanatçı Filippino Lippi' der; derslere ve C002'ye göre eserin (Vergi Parası) sanatçısı Masaccio'dur, Filippino yalnızca şapeli tamamlayandır. Gerekçe 'tamamlayan' ile 'sanatçı'yı karıştırıyor ve ders metniyle çelişiyor; öğrenci Filippino'nun eserin ressamı olduğu izlenimine kapılabilir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1759631",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Vergi Parası, bu döngünün en ünlü sahnesidir [C012].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "İsa'nın başı = kaçış noktası; tek nokta perspektifinin ilk örneklerinden; karşı duvar Masolino Tabitha aynı şema ama anlamsız odak",
+  "aciklama": "Cümle sahnenin döngü içindeki ününü ('en ünlü sahne') iddia eder; [C012] etiketi ise kaçış noktası/perspektif konulu iddiaya gider ve ün hakkında hiçbir bilgi içermez. DERS.json'da üne dair başka iddia da yoktur — etiket bambaşka konudaki bir iddiaya gidiyor (D-durum 1).",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q185255",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "San Sebastiano, Veronese'nin 1570 tarihli başka bir Simone ziyafetinin yeridir (Hanson dipnot 22).",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "1573 davası: Hanson dipnotu, Veronese'nin Santi Giovanni e Paolo için yaptığı Son Akşam Yemeği'nin (sonradan Levi) Engizisyon'a konu olduğunu anar (Fehl 1961 atfı, metne erişilmedi) [C052].",
+  "aciklama": "CS05'in yanlış-seçenek B gerekçesi 'San Sebastiano'da 1570 tarihli bir Simone ziyafeti' bilgisini 'Hanson dipnot 22'ye atfeder; paketin kendi kaydına göre (C052, İleri §9) Hanson dipnot 22, 1573 Engizisyon davasını (Santi Giovanni e Paolo için yapılan, sonradan Levi adını alan Son Akşam Yemeği) anlatır — başka eser, başka kilise, başka yıl. Gerekçenin dipnot atfı dersle çelişiyor; 'San Sebastiano 1570' olgusu paketin hiçbir iddiasında (C001–C073) desteklenmiyor.",
+  "onem": "ORTA"
+ }
+]

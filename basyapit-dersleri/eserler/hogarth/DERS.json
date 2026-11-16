@@ -1,0 +1,896 @@
+{
+ "surum": "1.0",
+ "eser_id": "william-hogarth|Gin Lane",
+ "sanatci_id": "william-hogarth",
+ "baslik": "Cin Sokağı",
+ "ozgun_baslik": "Gin Lane",
+ "kunye": {
+  "sanatci": "William Hogarth",
+  "sanatci_yasam": "1697–1764",
+  "tarih": "1 Şubat 1751",
+  "tarih_belirsizlik": "NGA yalnız \"1751\" (yıl); MET/RA \"1 February 1751\" (gün); Commons GinLane.jpg \"February 1751\" (ay) — hassasiyet farkı (E5)",
+  "teknik": "Etching and engraving (oyma + asitle yedirme); baskı/gravür",
+  "muze": "National Gallery of Art, Washington (gösterilen nüsha)",
+  "envanter": "1944.5.87 (Rosenwald Collection; State iii/iv, Paulson 1965 no.186)",
+  "edinim": "Rosenwald Collection (NGA); MET nüshası Harris Brisbane Dick Fund 1932",
+  "konum": "Not on View (NGA)",
+  "telif_durumu": "Kamu malı (Hogarth ö.1764); NGA Open Access PD; MET PD; Commons NGA dosyası CC0"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:William_Hogarth,_Gin_Lane,_1751,_NGA_30433.jpg",
+  "iiif_url": "https://api.nga.gov/iiif/0661e377-90b8-4574-9765-50fbd9473107",
+  "kaynak": "National Gallery of Art, Washington (1944.5.87, Rosenwald); Commons NGA dosyası",
+  "lisans": "Kamu malı (NGA Open Access); Commons CC0",
+  "dogrulama": {
+   "yontem": "metadata + IIIF UUID teyidi (katalog data-zoom = data IIIF UUID); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "NGA IIIF 3544×4247; Commons NGA 3338×4000",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C046); GZ TASLAK; kompozisyon RA/enwiki metninden; slayt görseli Davenport kopyası (C044)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 431
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1339
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2612
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-nüsha-ve-state-sorunu"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam-gin-craze",
+   "DERS_ILERI.md#2-gin-craze-ve-gin-act-tarih-ve-yasa"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-hogarthın-hiciv-kariyeri-ve-kampanya"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-çöküşün-kompozisyonu"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-anne-bebek-ve-defour-davası"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-kalın-çizgi-ve-popüler-pazar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz-beer-street",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NGA/MET/RA birincil kataloglarıyla künyeyi (1 Şubat 1751, etching and engraving, NGA 1944.5.87 State iii/iv) doğrular.",
+  "Gösterilen nüsha ile diğer nüshaları (MET/RA/Vanderbilt) ve state sayımı ihtilafını ayırt eder.",
+  "Gin Craze bağlamını, Gin Act 1751'i ve Dillon↔Warner başarı tartışmasını yönetir.",
+  "Beer Street karşıtlığını, ikonografiyi (Gin Royal, Defour, Townley) ve kaynak betimi sınırını açıklar.",
+  "Slayt görseli (Davenport kopyası) ↔ NGA orijinali farkını, broşür başlığı ve WD/BM belirsizliklerini raporlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Gin Craze",
+   "tanim": "1720–1751 cin tüketim salgını; Gin Act'lerin bağlamı.",
+   "kanit": [
+    "C031",
+    "C010"
+   ]
+  },
+  {
+   "ad": "State (baskı durumu)",
+   "tanim": "Levhanın değişim aşaması; NGA iii/iv ↔ MET 3/3 ihtilafı.",
+   "kanit": [
+    "C005",
+    "C040"
+   ]
+  },
+  {
+   "ad": "Etching and engraving",
+   "tanim": "Asitle yedirme + oyma; kalın çizgi popüler pazar için.",
+   "kanit": [
+    "C004",
+    "C037"
+   ]
+  },
+  {
+   "ad": "Pendant / çift baskı",
+   "tanim": "Beer Street + Gin Lane; karşıt kompozisyon, birlikte izleme.",
+   "kanit": [
+    "C001",
+    "C025"
+   ]
+  },
+  {
+   "ad": "Sosyal hiciv / ahlakçı gravür",
+   "tanim": "Reform amaçlı popüler baskı; Townley dizeleri; Gin Act kampanyası.",
+   "kanit": [
+    "C010",
+    "C012",
+    "C037"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Gin Lane; Beer Street ile çift olarak yayımlandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı William Hogarth (1697–1764), İngiliz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Yayım tarihi 1 Şubat 1751 (NGA yalnız \"1751\" yazar).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S11",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: etching and engraving (oyma + asitle yedirme); baskı/gravür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Gösterilen nüsha NGA Washington 1944.5.87, Rosenwald Collection, State iii/iv (Paulson 1965 no.186); Not on View; IIIF UUID katalogla eşleşti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "MET nüshası 32.35(124), sheet 38.3×31.7 cm, \"third state of three\", Harris Brisbane Dick Fund 1932.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "RA nüshası 12/456, 350×302 mm; London'da Hogarth tarafından yayımlandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "İki sahnenin tablosu yok; doğrudan çizimlerden gravürlendi; ön eskizler var (Uglow p.499; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Reklam London Evening Post 14–16 Feb 1751; \"Price 1 s. each\", better manner 1s 6d; \"design'd and etch'd by Mr. Hogarth\"; Golden Head, Leicester-Fields; \"lower Class of People\" için ucuz (Paulson v3 p.17; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Baskılar Gin Act 1751'i desteklemek için yayımlandı; cin/bira karşıtlığı (RA: Act cin dükkânlarını azalttı; enwiki \"in support\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Four Stages of Cruelty izleyen hafta yayımlandı (reklam); enwiki lead \"issued together\" der (→ C045).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Alttaki dizeler Rev. James Townley tarafından yazıldı (her iki baskı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Mekân St Giles yoksul mahallesi (\"Ruins of St Giles\"); 1750'de konutların >1/4'ü cin dükkânı (RA setting; Loughrey & Treadwell p.14 stat).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Merkezde sarhoş anne enfiye alırken bebeği düşürür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Annenin bacaklarındaki yaralar frengi; fahişelik iması (atıfsız betimleme; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C016",
+   "ifade": "Judith Dufour/Defour 1734: kızını boğdu, giysileri satıp cin aldı; giysi parası 16 peni (1s 4d); suçlu bulundu, ölüm cezası (OBO t17340227-32).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Gin Royal yazıtı: \"Drunk for a Penny / Dead Drunk for two pence / Clean Straw for Nothing\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "İskelet balad satıcısı \"perhaps dead of starvation\"; sepette \"The Downfall of Mrs Gin\" broşürü; yanında cin; kara köpek (betimleme; \"perhaps\" korundu; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Yalnız rehinci (Gripe), damıtıcı (Kilman) ve cenazeci kazanır; marangoz testeresini, kadın tencerelerini rehin bırakır (betimleme; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Berber tavan arasında intihar eder; çöken binalar; tabuta konan ceset; kalabalıkta kargaşa (enwiki betimleme; RA kısmi; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Uzakta St George's Bloomsbury; rehinci tabelası kule için \"bozulmuş haç\" oluşturur (betimleme; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "2. state'te düşen çocuk daha yaşlı yüzlü; \"perhaps in an attempt to diminish the horror\" (Hogarth 1833 p.233; \"perhaps\" korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Benzersiz Gin Lane proof'u (Kilman çatısı altı boş) 1825 Baker satışında £15/15s (Hogarth 1833 p.233).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "19. yy kopyaları: Riepenhausen, Davenport, Adlard; Davenport dosyası c.1806–09 re-engraving, c.1880 reprint (Commons credit; yorum/kopya).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Beer Street: sağlıklı, çalışkan, müreffeh; tek iflas eden rehinci Pinch (Hogarth p.64; RA).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Beer Street 1./2. state: demirci Fransız'ı kaldırır; 1759 3. state: Fransız yerine koyun budu (RA); pavior/housemaid eklenir (enwiki).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Hogarth, Beer Street'in önce izlenmesini istedi (Gin Lane daha sarsıcı olsun) (atıfsız; yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Paulson: orta sınıf iyi/kötü karşıtlığı, işçi sınıfı Beer Street refahı–Gin Lane yoksulluğu bağlantısını okur; sedan chair kadını ↔ cinli anne (Paulson v3 pp.24–25).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Gin Act 1751 = Sale of Spirits Act 1750, 24 Geo. 2 c. 40; damıtıcıların lisanssız satıcılara satışı yasak, perakende lisansları mülk sahiplerine + yüksek harç (infobox; royal assent atıfsız → C050).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Cin üretimi 1751'de 7M → 1752'de 4.25M emperyal galon; Act \"başarılı kabul edildi\" (Dillon p.263; → C042).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Warner vd. 2001: üç Gin Act da yalnız kısa vadede başarılı; 1751 Act \"succeeded by accident rather than by design\"; salgın 1720–1751 (PMC özeti erişildi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Fielding'in Inquiry'si baskılardan ~1 ay önce; Paulson kampanyanın birlikte planlanmış olabileceğini düşünür (Paulson v3 p.17).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Etki: Bruegel, La Maigre Cuisine / La Grasse Cuisine (van der Heyden gravürü, 1563) (Bindman p.180; Paulson v3 p.24).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Lamb Gin Lane'i \"sublime\" buldu (The Reflector 1811); Hazlitt destekledi (Hazlitt p.301).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Modern yeniden yorumlar: Steve Bell (John Major), Rowson \"Cocaine Lane\" 2001 (Hallett p.37; Riding NYT); RSPH Thomas Moore 2016 (Foundling Museum; atıfsız).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Özgün bakır levhalar Metropolitan Museum of Art, New York (MET 21.55.3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Kalın çizgi: popüler pazar, çok nüsha baskı için bilinçli tercih (RA prospectus).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "NGA nüshası sergi geçmişi: 1967 \"William Hogarth\", Virginia Museum of Fine Arts, Richmond.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Görsel kamu malı: NGA Open Access, MET PD, Commons NGA dosyası CC0.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "State sayımı ihtilafı: MET \"third state of three\" ↔ NGA \"State iii/iv\" (Paulson) ↔ Vanderbilt \"state 3\"; kurumlar farklı state şeması kullanıyor; gösterilen NGA nüshası Paulson'a göre 3/4; kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S9",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Broşür başlığı ihtilafı: data/eser_ayrintilari \"Mr Gin'in düşüşü\" ↔ enwiki \"The Downfall of Mrs Gin\"; data/basyapitlar \"Madam Cin'in Çöküşü\" (data içi tutarsızlık).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Gin Act'in başarısı ihtilafı: enwiki/Dillon \"considered a success\" + üretim düşüşü ↔ Warner vd. 2001 \"successful in the short term only … by accident rather than by design\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Kompozit görselin tarihi: Commons Beer-street-and-Gin-lane.jpg DateTimeOriginal \"1751\" ↔ enwiki lead caption \"1759 versions\"; kompozit 1759 state'lerini gösteriyor olabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S15",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Kurs slaytı görseli ≠ gösterilen nüsha: data slayt commons_dosya \"William_Hogarth_-_Gin_Lane.jpg\" = Davenport re-engraving (c.1806–09), c.1880 reprint ↔ gösterilen NGA orijinali 1944.5.87.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S15",
+    "S17",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Four Stages of Cruelty zamanlaması: enwiki lead \"Issued together\" ↔ gövde/reklam \"following week\" (madde içi nüans).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); NGA IIIF 3544×4247 PD + Commons NGA 3338×4000 CC0; GZ TASLAK; kompozisyon kaynak betiminden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "British Museum Gin Lane nüshası: erişilen hiçbir kaynakta BM katalog URL'si yok; birincil URL bulunamadı, doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S15",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "WD Q4879965 P195 = V&A (P3452 \"imported\", zayıf); V&A nüshası katalogla doğrulanmadı; data NGA alanı gösterilen nüsha için DOĞRU.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Kitaplar (Paulson 1992/1993/2000, Uglow 1997, Dillon 2004, George 1985, Clerk 1812, Hallett & Riding 2006, Bindman 1981, Hogarth 1833, Lamb 1811, Hazlitt) enwiki kaynakçasında anıldı; metne erişilmedi; sayfa numaraları yalnız atıf zinciri. Warner 2001 istisna (PMC özeti).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Gin Act royal assent 25 Haziran 1751 / yürürlük 1 Temmuz 1751 (S8 infobox) satır içi atıfsız; yasa künyesi 24 Geo. 2 c. 40 infobox'ta.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Vanderbilt WD boyutu 21.25×17.25 in (refsiz) MET sheet'inden (38.3×31.7 cm) çok büyük; mount/çerçeve olabilir, doğrulanmadı; NGA kaydında boyut YOK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "data \"kral heykeli\", \"S. Gripe\", \"Kilman Distiller\" tabela metinleri erişilen kaynaklarda birebir YOK (enwiki \"Mr Gripe\", \"the aptly named Kilman\"); görsel incelenmedi → doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "İsim yazımı: enwiki \"Judith Dufour\" ↔ OBO \"Judith Defour\"; aynı kişi, t17340227-32 (yazım varyantı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Enfiye \"may be a reference to Fielding\" (Paulson 2000 p.284); olasılık, kesin değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "Beer Street sign-painter yorumları çözülmemiş: \"may be a subtle aside\", \"could equally reflect\", \"He may also be a resident of Gin Lane\"; Paulson \"Line of Beauty\"; Clerk 1812 Liotard önerisi (yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q4879965 \"Beer Street and Gin Lane\" EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4879965.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:09Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q65026919 (NGA nüsha) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q65026919.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:09Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikidata",
+   "belge": "Q97767985 (MET baskı) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q97767985.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:09Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikidata",
+   "belge": "Q97731741 (MET levha) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q97731741.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:09Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikidata",
+   "belge": "Q103300524 (Vanderbilt state 3) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q103300524.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:09Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia EN",
+   "belge": "\"Beer Street and Gin Lane\" wikitext (satır içi akademik atıflı)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Beer%20Street%20and%20Gin%20Lane&prop=wikitext&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:10Z (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia FR",
+   "belge": "\"Beer Street et Gin Lane\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Beer%20Street%20et%20Gin%20Lane&prop=wikitext&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:10Z (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikipedia EN",
+   "belge": "\"Gin Act 1751\" wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Gin%20Act%201751&prop=wikitext&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:11Z (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "National Gallery of Art",
+   "belge": "katalog art-object-page.30433 (Gin Lane, 1944.5.87)",
+   "url": "https://web.archive.org/web/20250407064331/https://www.nga.gov/collection/art-object-page.30433.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 Cloudflare; arşiv 200 (2025-04-07)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "katalog search/399847 (Gin Lane, 32.35(124))",
+   "url": "https://web.archive.org/web/20260217181635/https://www.metmuseum.org/art/collection/search/399847",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 429 Vercel; arşiv 200 (2026-02-17)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Royal Academy of Arts",
+   "belge": "gin-lane-1 (Gin Lane, 12/456)",
+   "url": "https://web.archive.org/web/20251103011402/https://www.royalacademy.org.uk/art-artists/work-of-art/gin-lane-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-11-03)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Royal Academy of Arts",
+   "belge": "beer-street-1 (Beer Street, 12/457)",
+   "url": "https://web.archive.org/web/20250928064023/https://www.royalacademy.org.uk/art-artists/work-of-art/beer-street-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-09-28)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Old Bailey Online",
+   "belge": "t17340227-32 Judith Defour davası (27 Feb 1734)",
+   "url": "https://web.archive.org/web/20171201131811/https://www.oldbaileyonline.org/browse.jsp?id=t17340227-32-off146&div=t17340227-32",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2017-12-01, v7.2 tam metin)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Am. J. Public Health / PMC",
+   "belge": "Warner, Her, Gmel, Rehm 2001 (PMC1446560; DOI 10.2105/ajph.91.3.375)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1446560/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:14Z; özet erişildi, tam PDF okunmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo + dosya wikitext (NGA / kompozit / GinLane / Davenport / MET)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:10–18:16Z; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S16",
+   "kurum": "National Gallery of Art IIIF",
+   "belge": "gösterilen görsel Image API info.json (0661e377-…)",
+   "url": "https://api.nga.gov/iiif/0661e377-90b8-4574-9765-50fbd9473107",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "303→200, 18:10Z; metadata",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S17",
+   "kurum": "data/ (salt-okunur)",
+   "belge": "basyapitlar / eser_ayrintilari / sanatcilar / yerel_gorseller / gorsel_kaynagi / eser_notlari / eser_adlari_tr",
+   "url": "https://example.org/local-data",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel; salt-okunur tarandı",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Beer Street",
+   "sanatci": "William Hogarth",
+   "kurum": "Royal Academy (12/457) / NGA (1944.5.86)",
+   "mufredat_ici": true,
+   "gerekce": "Pendant; karşıt kompozisyon (sağlık/refah ↔ cin/yoksulluk).",
+   "kanit": [
+    "C001",
+    "C025",
+    "C026"
+   ]
+  },
+  {
+   "eser": "The Four Stages of Cruelty",
+   "sanatci": "William Hogarth",
+   "kurum": "—",
+   "gerekce": "İzleyen hafta yayımlandı; aynı St Giles mekânı, Tom Nero arm badge.",
+   "kanit": [
+    "C011",
+    "C013"
+   ]
+  },
+  {
+   "eser": "La Maigre Cuisine / La Grasse Cuisine",
+   "sanatci": "Pieter Bruegel the Elder (van der Heyden gravürü, 1563)",
+   "kurum": "—",
+   "gerekce": "Öncül: iki öğün karşıtlığı; katmanlı ayrıntı.",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NGA/MET/RA birincil katalogları Wayback (2025-04-07 / 2026-02-17 / 2025-11-03 / 2025-09-28) + OBO (2017-12-01) + Warner 2001 PMC yeniden açıldı; künye/tarih/teknik/nüsha/state/dizeler/levhalar/mekân/Gin Royal/Defour doğrulandı. en/fr wikitext + Gin Act yeniden okundu; altı ihtilaf D olarak açık. Görsel metadata only (IIIF UUID teyit), vision kotası ana oturumda → İNCELENEMEDİ (C046); GZ TASLAK. Kitap metinleri erişilmedi (C049); BM URL bulunamadı (C047).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Gösterilen nüsha kurumu DOĞRU: basyapitlar muze \"National Gallery of Art, Washington\" — NGA 1944.5.87 (State iii/iv) teyitli (C005). WD V&A (C048) farklı nüsha iddiası; data değiştirilmemeli.",
+  "Künye/numara eksik: kunye.json ve muze_numaralari.json'da william-hogarth|Gin Lane / Q4879965 / Q65026919 kaydı YOK; 1944.5.87 data'da geçmiyor.",
+  "Tarih alanı: basyapitlar \"1700'lerin ortası (slaytta: c1730-)\" — doğrulanmış yayım 1 Şubat 1751 (C003); özet 1751 diyor, slayt tarihini yanıltıcı işaretliyor (tutarlı).",
+  "D2/C041: eser_ayrintilari \"Mr Gin'in düşüşü\" ↔ enwiki \"The Downfall of Mrs Gin\" (basyapitlar \"Madam Cin\" ile çelişiyor).",
+  "D5/C044: sanatcilar.json slayt commons_dosya \"William_Hogarth_-_Gin_Lane.jpg\" = Davenport kopyası (c.1806–09 / reprint c.1880); gösterilen detay görseli NGA orijinali. Slayt görseli orijinal değil.",
+  "E12/C052: \"kral heykeli\", \"S. Gripe\", \"Kilman Distiller\" birebir tabela metinleri erişilen kaynaklarda doğrulanmadı (görsel incelenmedi).",
+  "eser_notlari \"propaganda baskısı\" destekli (C010, C032, C037); \"frengi\" (C015) atıfsız betimleme → C işaretli.",
+  "E13: data \"aynı kalabalık\" (Beer Street) yorumu; kaynaklar farklı sokak/sakinler betimler; \"karşıt kompozisyon\" destekli, \"aynı kalabalık\" yorum.",
+  "yerel_gorseller.json: Gin Lane için NGA IIIF hash (77f3d102fdc54aed) + Davenport commons hash; NGA görseli b_yenilenen listesinde."
+ ]
+}

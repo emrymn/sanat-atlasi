@@ -1,0 +1,1085 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q185255",
+ "sanatci_id": "paolo-veronese",
+ "baslik": "Kana'da Düğün",
+ "ozgun_baslik": "Les Noces de Cana (The Wedding at Cana / Nozze di Cana)",
+ "kunye": {
+  "sanatci": "Paolo Caliari, dit Veronese",
+  "sanatci_yasam": "1528 (Vérone) – 1588 (Venise)",
+  "tarih": "1562–1563",
+  "tarih_belirsizlik": "Louvre objectHistory 'Peint en 1562-1563'; kayıt alanı 'XVIe siècle (1500-1600)'; 2021 notice '1563'; WD P571=1562 (on yıl) + P1319/P1326; teslim Eylül/Ekim/Kasım 1563 varyantları (D4/C042). Tek yıla indirgenmez.",
+  "teknik": "Huile sur toile (tuval üzerine yağlıboya)",
+  "boyut_cm": {
+   "yukseklik": 677,
+   "genislik": 994
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 142 ; MR 384",
+  "edinim": "Conquête militaire (savaş ganimeti); 1797'de söküldü, 1798'de Louvre'a taşındı; mülkiyet Etat (Fransız Devleti)",
+  "konum": "Salle 711 (Salle des États / Salle de la Joconde), Aile Denon, Niveau 1; Mona Lisa'nın karşısında (E7: salon bilgisi güncel olmayabilir)",
+  "telif_durumu": "Kamu malı (PD-Art; Veronese ö. 1588, PD-old-auto-expired); Commons fotoğrafı PD (Shonagon 2024)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_;_MR_384.jpg",
+  "kaynak": "Wikimedia Commons (foto: Shonagon, 2024-04-05; Fujifilm GFX100S, 65 mm, f/5)",
+  "lisans": "PD-Art (PD-old-70 + PD-old-auto-expired, deathyear=1588); kamu malı; AttributionRequired=false",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "10068 × 6742 px (~67,9 MP; 16.204.142 bayt JPEG)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C051); GZ TASLAK; kompozisyon S9/S12/S13/S4 metninden; en-boy oranı farkı (dosya 1,493 ↔ tablo 1,468) çerçeve/kırpma olabilir, sonuç çıkarılmadı; müze fotoğrafı ayrı (© 2010 Louvre / Angèle Dequier); görsel projeye kopyalanmadı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 410
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1305
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2621
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-tutarlılığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-sözleşme-ve-provenance-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-yemekhane-geleneği-ve-kariyer-eşiği"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-ziyafetin-dili-biçim-ve-kompozisyon-okuması"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-mucize-eucharistia-saat"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-pigment-ve-restorasyon-tartışması"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-iade-faksimile-orijinallik"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (INV 142 / MR 384, 6,77×9,94 m, huile sur toile, Salle 711) doğrular; itwiki boyut aykırılığını (D1) yönetir.",
+  "Sözleşme ve sipariş bağlamını (6 Haziran 1562, 324 dukat, Eylül 1563 hedefi) kaynak zinciriyle kurar; teslim tarihi varyantlarını (D4) tartışır.",
+  "Kompozisyon ve ikonografiyi kaynak betimleriyle okur (mucize anı, merkez ekseni, Rosand kum saati); görsel inceleme sınırını beyan eder.",
+  "Restorasyon tartışmasını (Louvre ↔ APIAH/Factum, D10) ve nesne biyografisini (1797→2007) değerlendirir.",
+  "Faksimile/iade/orijinallik tartışmasını ve Hanson'ın \"ziyafetin dili\" yaklaşımını akademik düzeyde ele alır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Refectory (yemekhane)",
+   "tanim": "Manastır yemek salonu; Benedikt Kuralı sessizlik; Palladio'nun San Giorgio Maggiore yemekhanesi, dip duvar + abbot masası üstü.",
+   "kanit": [
+    "C011",
+    "C060"
+   ]
+  },
+  {
+   "ad": "Scalco / trinciante",
+   "tanim": "Ziyafet kâhyası (scalco) / et kesen usta (trinciante); 16. yy profesyonelleşmesi; yeşil kâhya + beyaz şarap kâhyası + İsa üçgeni.",
+   "kanit": [
+    "C056",
+    "C062"
+   ]
+  },
+  {
+   "ad": "Sprezzatura",
+   "tanim": "Castiglione'nin \"zahmetsiz zarafet\"i; konuk jestleri (kürdan, çatal, peçete); lokma ağza götürülmez.",
+   "kanit": [
+    "C056"
+   ]
+  },
+  {
+   "ad": "Faksimile",
+   "tanim": "Birebir kopya; Factum Arte 2007, Cini siparişi; Louvre'daki MEVCUT durumun kopyası; \"iyi/kötü reprodüksiyon\" sorusu.",
+   "kanit": [
+    "C015",
+    "C065"
+   ]
+  },
+  {
+   "ad": "Conquête militaire",
+   "tanim": "Savaş ganimeti edinim; Louvre kayıt terimi; 1797 söküm / 1798 transport; Etat mülkiyeti.",
+   "kanit": [
+    "C003",
+    "C016"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Künye: Les Noces de Cana, Paolo Caliari dit Veronese (Vérone 1528 – Venise 1588), huile sur toile, H 6,77 m × L 9,94 m, INV 142 (principal) / MR 384 (autre), Département des Peintures.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih sunumu: kayıt alanı 'XVIe siècle (1500 - 1600)'; objectHistory 'Peint en 1562-1563 … prélevé en 1797 ; transporté au Louvre en 1798'; 2021 notice '1563'; WD P571=1562 (on yıl) + P1319=1562-06-06 / P1326=1563-10-06; enwiki/Hanson '1562–63' (E1: tek yıla indirgenmez).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S9",
+    "S1",
+    "S3",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Edinim: 'conquête militaire', 1798; mülkiyet 'Etat'; affectataire 'Musée du Louvre, Département des Peintures'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Güncel konum: Salle 711 (Salle des États / Salle de la Joconde), Aile Denon, Niveau 1; Mona Lisa'nın karşısında (E7: site uyarısı, salon güncel olmayabilir).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Louvre'un en büyük resmi: 'over 6 metres high and almost 10 metres wide … the biggest painting in the Louvre'; enwiki 67,29 m².",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Konu/kompozisyon: Kana'da Düğün mucizesi (Yuhanna 2:1–11), İsa'nın ilk mucizesi; İsa masanın merkezinde, Meryem yanında; gelin-damat SOL uçta (D2→C040); havariler, din adamları, prensler, Venedikli soylular, sarıklı 'Orientals', hizmetkârlar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S12",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Kalabalık: 'no less than 130 feast-goers' / 'some 130 different characters'; İncil figürleriyle çağdaş erkek/kadınlar karışık; köpekler, kuşlar, muhabbet kuşu, kedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S8",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Portre teşhisleri kesin DEĞİL: Louvre 'not really identifiable'; 18. yy efsanesine göre sanatçı beyaz giysili viola da gamba ile Titian ve Bassano yanında; sakallı tören yöneticisi 'could be Aretino' (E3/E4).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sembolizm: İsa üstünde balkonda et kesen uşak = 'body of Christ'; ayva (quinces) = evlilik sembolü, tatlıda; Passion sembolleri lüks 16. yy gümüş kaplarla yan yana; her konukta peçete+çatal+bıçak bireysel servis.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İki katmanlı kompozisyon (üstte bulutlu mavi gökyüzü, altta kalabalık); yivli sütunlar + Korint başlıkları Palladio'yu çağrıştırır; Doğu'dan gelen pahalı pigmentler: sarı-turuncular, canlı kırmızılar, lapis lazuli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sipariş: San Giorgio Maggiore Benediktenleri 1562; yemekhanenin tüm dip duvarı; yerden 2,5 m; '70 m²'lik iş 15 ay; 'most likely with the assistance of his brother Benedetto Caliari' (E2); kariyer dönüm noktası; Veronese 1553'te Venedik'e çağrılmıştı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Restorasyon 1989–1992, ICI France hamiliğinde; renkler güçlendi; tören yöneticisinin mantosu kırmızıdan yeşile döndü — Louvre'a göre 'its original hue'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "1815 takası: dönüş yolculuğunun büyük esere zarar vereceğinden korkuldu, Paris'te tutuldu; karşılığında Charles Le Brun'un 'The Feast in the House of Simon' tablosu Venedik'e gönderildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Savaş yıllarında iki kez taşındı: 1870 ve 1939.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Faksimile: 11 Eylül 2007, Fondazione Giorgio Cini siparişi, Factum Arte üretimi; Palladio yemekhanesinin dip duvarında açıldı; Louvre'daki MEVCUT durumun birebir faksimilesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "1797 sökümü: duvardan yatay şeritler halinde kesilip halı gibi sarıldı, savaş ganimeti olarak Paris'e gönderildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sözleşme konusu (üç keşiş imzalı): 'the history of the banquet of Christ's miracle at Cana in Galilee, creating the number of figures that can be fully accommodated'; İtalyan özgün metin Habert 1993, 89-90 üzerinden.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Ödeme: 324 dukat + bir fıçı şarap + çalıştığı yemekhanede yemek (Cooper 273; Chambers/Pullan/Fletcher 1992 çevirisi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Sözleşme: 'festa de la madona' için Eylül 1563 teslim; Palladio 1559'da yemekhaneyi tamamlamak üzere atanmıştı; en pahalı pigmentler (ultramarin dahil) şartı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Mucize anı: hizmetkârlar ve şarap kâhyası mucizevi şarabı EN SAĞDA döküp inceliyor, EN SOLDAKİ damada sunuyor.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Sözleşme tarihi 6 Haziran 1562 (WD P1319; Pignatti & Pedrocco 1995 c.1 s.250 ref, metne erişilmedi; itwiki '6 giugno 1562').",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Müzisyenler = Venedikli ressamlar geleneği: Boschini 1674 s.755 (S3 alıntısı, özgün metne erişilmedi); enwiki '17th-century legend'; teşhis kesin değil (E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Diego Ortiz hipotezi: beyaz giysili müzisyenin arkasındaki viola da gamba çalgıcısı Diego Ortiz (Napoli chapel master, müzik teorisyeni) olabilir (Lafarga vd. 2017/2018, kitaba erişilmedi; E5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Konuk teşhisleri (geleneksel/hipotetik): Eleanor of Austria, Francis I, Mary I, Kanuni, Charles V, Vittoria Colonna, Marcantonio & Daniele Barbaro, Giulia Gonzaga, Cardinal Pole, Triboulet, Sokollu (WD deprecated, E6); 'sarebbero riconoscibili' (E5).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "1815: Denon tablonun yolculuğa dayanamayacağını 'falsely claimed' / 'falsamente dichiarata' (Uglow NYRB 2021, erişilmedi); Canova iade listesinden çıkardı; S8 nötr çerçeve.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "11 Eylül 1797'de duvardan söküldü (S3/S4; S5 'prélevé en 1797'); parça sayısı → C041 (D3).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Haziran 1992 iki kaza: havalandırmadan yağmur suyu; iki gün sonra 1,5 tonluk tablo yükseltilirken çerçeve çöktü, 5 delik/yırtık yalnız mimari/arka planda (NYT Simons 1992, registration, erişilmedi; E10).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "APIAH protestosu: restorasyona sanatçı derneği karşı çıktı; APIAH'ye göre rouge marron üst boyayı Veronese'nin KENDİSİ yapmıştı; Factum ayrıntılı argüman (orpiment/realgar, erken kopyalar kırmızı, 'muhtemelen Veronese 1563').",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S13",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C029",
+   "ifade": "İade talepleri: 1994 Francesco Sisinni (MiBAC), 2010 Ettore Beggiatto (Carla Bruni'ye mektup), sonuçsuz; Fransa 1815 takasıyla yasal sahip sayıyor (Adnkronos/finestre, erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Peter Greenaway 2009 Venedik Bienali'nde faksimile üzerine çok ekranlı video enstalasyonu (6 Haziran – 13 Eylül 2009, San Giorgio yemekhanesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Alternatif kaynak-metin: Philipp Fehl, Aretino'nun 'Humanity of Christ' (Venedik 1535) metnini sahne ilhamı olarak önerdi; sol tarafta Aretino portresi savunusu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Kum saati = vanitas: müzisyenlerin önündeki kum saati insan kibirinin boşluğuna gönderme (Art Encyclopedia, üçüncül; S9'da yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Ziyafet serisi: öncesi 'Cena in casa di Simone' (Galleria Sabauda, Torino); sonrası Brera (Milano), Versailles, 'Convito in casa di Levi' (Accademia, Venedik).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Takas tablosu (Le Brun): 'Il convito dal fariseo con la Maddalena ai piedi di Gesù'; 'intorno al 1650' Paris rue Saint Jacques Karmelit kilisesi; 1792 Petit Augustins; 1810 30.000 frank; 1815 Venedik; bugün Gallerie dell'Accademia (MiC); 385×316 cm; 1962 foderato; konu Luka 7 (kayıt '7, 30-50' aynen, E14).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "data/ iddiaları bu brief'te KAYNAKSIZ: (a) 1573'te başka bir ziyafet tablosu için Engizisyon'a hesap verdi; (b) Rubens, Tiepolo, Delacroix renk/kalabalık düzeninden etkilendi (E11; ayrı doğrulama; Levi davası ayrı eser). Not: S12 dipnot 22 davayı anıyor → C052.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "Görsel kamu malı: PD-Art (PD-old-70 + PD-old-auto-expired, deathyear=1588); AttributionRequired=false; UsageTerms 'Public domain'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S11",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Salle des États: Hector Lefuel tasarımı, 1855–1857 inşa; II. Empire yasama oturumları; III. Cumhuriyet'te müzeye katıldı; WWII sonrası Fransız resimleri yerini Venedik resimlerine bıraktı; 2019 duvarlar gece yarısı mavisine boyandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Faksimile, yemekhane restorasyonunun gözden geçirilmesi gerektiğini gösterdi; Cini Coronelli gravürü + manastır kayıtlarına dayalı yeni restorasyon planlıyordu (2008 beyanı; güncel durum bilinmiyor).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "D1 boyut ihtilafı: itwiki infobox 666×990 cm ↔ Louvre 6,77×9,94 m + WD 677/994 + enwiki + Hanson Fig.1. Birincil Louvre esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6",
+    "S1",
+    "S3",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D2 gelin/damat konumu: enwiki 'right wing' ↔ Louvre 'left end' (A) + Hanson 'far left' (B) + Factum 'left hand corner' + data 'sol uç'. A+B+üretici SOL der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9",
+    "S12",
+    "S13",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D3 1797 kesim: itwiki 'tagliata in sette pezzi' (yedi parça; Marzo Magno Rai, erişilmedi) ↔ Factum/enwiki 'horizontal cuts … strip by strip … rolling like a carpet'. Kesim ortak; 'yedi' doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S13",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D4 teslim: enwiki Eylül 1563 teslim / Kasım Salute ↔ Hanson sözleşme hedefi 'festa de la madona' Eylül 1563 ↔ WD P1326 en geç 6 Ekim 1563. Eylül/Ekim/Kasım varyantları; bayram teşhisi belirsiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D5 çalgı/kadro: enwiki Veronese/Tintoretto viola da braccio, Bassano cornetto, Titian violone ↔ Louvre Veronese viola da gamba + Titian/Bassano (Tintoretto yok) ↔ itwiki Veronese viola da gamba, Titian contrabbasso ↔ Hanson Veronese/Tintoretto viola da braccio, Bassano flüt, Titian viola da gamba. Boschini Tintoretto 'Violino'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9",
+    "S4",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D6 geleneğin yüzyılı: enwiki '17th-century legend' (Boschini 1674) ↔ Louvre '18th-century legend'. İkisi de aynen korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D7 takas tablosu adı/tarihi: S8/S3 'The Feast in the House of Simon' (S3 '1653') ↔ S4/S14 'Il convito dal fariseo con la Maddalena ai piedi di Gesù' + 'intorno al 1650'. Aynı eser (Luka 7); MiC kaydı esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S4",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D8 söküm yılı çerçevesi: S8 'In 1798 … confiscated' ↔ S5/S6 'prélevé en 1797 ; transporté … 1798' + S3/S4 '11 September 1797'. Söküm 1797, edinim 1798; S8 sıkıştırıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S5",
+    "S6",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D9 yüzölçümü: enwiki 67,29 m² (6,77×9,94 uyumlu) ↔ Louvre notice '70 m²' (yuvarlanmış). Gerçek çelişki değil, yuvarlama; kaynak belirtilmeli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D10 manto rengi: Louvre yeşil 'its original hue', kırmızı üst boya kaldırıldı (A) ↔ APIAH/Factum rouge marron değişikliği Veronese'nin kendi müdahalesi (B). Restorasyon tartışmasının iki tarafı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D11 kayıt güncelleme metadata: S5 HTML 'Dernière mise à jour le 07.04.2025' ↔ S6 JSON 'modified 2026-07-22'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D12 NYT künye tarihi: Simons 'date=17 December 1992' ↔ URL '…/1992-11-17/…'. NYT metnine erişilmeden çözülemez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük (10068×6742). Oran farkı (1,493↔1,468) çerçeve/kırpma olabilir, sonuç yok. GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Hanson dipnot 22: 1573'te SS. Giovanni e Paolo için Son Akşam Yemeği (sonradan Levi) Engizisyon'a konu oldu (Fehl 1961 atfı, metne erişilmedi); Hanson Kana yorumlarının bu davayla aşırı renklendirildiğini savunur; Trento Konsili 1563'te sona erdi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Guidi şiiri (1565, tamamlanmadan iki yıl sonra): heykeltıraşlar/ressamlar 'üç, dört, altı kez' ziyarete gelir, 'PAOLO … eternal fame' (Cocke 2001 s.173 aktarımı); erken alımlama, manastır dışı ziyaretçiler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Yemekhane geleneği/kariyer: Gilbert modeli (Eucharistia 'gündelik' terimlerle); Leonardo Milano 1495; Veronese Simone 1556–60 Venedik öncüsü; Tintoretto Kana 1561; Salviati Kana ~1555 Roma (Cocke); sonraki on yıl Veronese/Titian/Tintoretto/Bassano; Villa Barbaro (Maser) Palladio işbirliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Hanson kompozisyon betimi: U masa kaide üzerinde; 4 kadın 21 erkek konuk; gelin-damat sol uçta Venedik giysili; İsa-Meryem-havariler merkezde sade; ortada hizmetkâr/soytarı/4 müzisyen; sağda keşişli konuklar; pembe mermer colonnat + merdiven; üst kat hizmetkârları; sakin mavi gökyüzü; ultramarin.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Hanson ziyafet protokolü: son kurs ayva/üzüm/hurma/şekerleme; Castiglione sprezzatura; kimse lokmayı ağzına götürmez; scalco yeşil (müzisyenlerin solunda), şarap kâhyası beyaz; scalco+kâhya+İsa üçgen odak.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Hanson mucize/servis: hizmetkârlar konukların ~2 katı; sağ ön planda altın giysili hizmetkâr taş sürahiden şarap döker, beyaz kâhya inceler; konuklar habersiz; Galenik hılt tıbbı, şarap sağlık, beyazdan kırmızıya ilerleme.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Rosand ekseni (Hanson aktarımı): carver + İsa'nın başı + kum saati (müzisyen masasında) → gelecek kurban; kum saati Yuhanna 'mine hour is not yet come'; Meryem İsa'nın sağında 'Christ'ın gelini', dünyevi-göksel kilise birliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Hanson decorum/ikon okuması: iki bağlı köpek (oturur/durur) sadakat/decorum; kedi urnu tırmalar, sağ masada küçük köpek; İsa-Meryem haleli, ikonik durağan, Bizans ikonu pozu, bakışlar izleyiciyle; 'gürültülü' tablo ↔ sessiz yemekhane.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C060",
+   "ifade": "SILENTIUM: giriş üstünde iki melek 'SILENTIUM' kartlı (bugün kayıp; Habert); Benedikt Kuralı sessiz yemek + okuma; tablo abbot masası üstünde, cornice çerçeve; yemekhane işlevi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "1562 Senato lüks (sumptuary) yasaları: ziyafet yemekleri sınırlı; tablodaki yemek nispeten sade; yasalar nadiren uygulandı; Sansovino 1581 patrici evleri gümüş teşhirleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Yemek kitabı kültürü: Platina ~1470, Messisbugo 1549, Romoli 1560, Scappi 1570, Cervio 1581; scalco/trinciante profesyonelleşmesi; Vasari 1550/1568 sanatçı yüceltmesi paralelliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Factum restorasyon tarihi: 1797 kesiminde boya kaybı; 18–19. yy müdahaleleri kayıtsız; 1850'ler Villot 'aşırı ovalama'; Planche 'hava perspektifi yıkımı, İsa ön plana süzülüyor'; Delacroix günlüğü 12 Ekim 1853 'the painting has been killed … Villot'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "1705 kısıtı: 17 Aralık 1705 keşişler kopyalamayı kraliyet talepleriyle sınırladı (Factum); manastır yemekhaneyi ziyaretçilere kapattı (Hanson/Priever 181); ~9 milyon/yıl ziyaretçi (2008 beyanı, Mona Lisa odası).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Factum orijinallik söylemi: 'iyi mi kötü mü reprodüksiyon?'; orijinallik nesnenin yörüngesi/kariyeri (sabit durum değil); kopya 'copious' etimoloji; faksimile 'nesne biyografisi' sergisi (en eski kopyalar, Le Brun, 1565–1892 metinleri, koruma tarihi); 'auratik' sorgulama.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C066",
+   "ifade": "E8: 'optimi colori' kalıbı S3'te Hanson'a atfediliyor ama erişilen S12 metninde YOK ('most costly and precious pigments' + ultramarin var); özgün sözleşme Cicogna 1824 erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "E9: faksimile '1,591 files' ayrıntısı S3'te (Caliari 2008 atfı) var, erişilen S13 arşiv kopyasında bulunamadı; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C068",
+   "ifade": "E13: S13 (2008) Louvre teşhiri 'huge gilt frame', alt '80 cm from the floor', 'dung brown' duvarlar ↔ S8 (2019) gece yarısı mavisi. Zamansal değişim; güncel çerçeve/asma yüksekliği doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C069",
+   "ifade": "itwiki betimi: merkezi perspektif, simetrik avlu; sağ/sol colonnatlar, arkada korkuluklu yükseltili alan; merkez dışı kule; mavi gökyüzü beyaz bulutlar; İsa-Meryem sakin, İsa izleyiciye dik bakar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Manastır + yemekhane bağlamı (Hanson): San Giorgio Maggiore zengin Benedikten manastırı, St. Stephen relicleri, Venedik piskoposundan bağımsız, ünlü alaylar; misafirperverlik → 16. yy renovasyon. Palladio yemekhanesi: cornice, beşik/çapraz tonoz, dikdörtgen pencereler; tablo abbot baş masasının üstünde, mekânın illüzyonist uzantısı. Cooper: seçim Palladio işbirliği (Villa Barbaro) + Verona Simone (1556) deneyimi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "Carver/trinciante ritüeli + yemek kitabı ayrıntıları (Hanson): eti/bıçağı havaya kaldırma, koreografik jest; Cervio 1581 (yumurta tutan çatal, hindi/tavus kuşu woodcut); Messisbugo 1549 (~300 tarif, woodcut), Romoli 1560 (görevler/hıltlar/aylık menü), Scappi 1570; cuochi/scalchi/trincianti el kitapları, yeniden baskılar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C072",
+   "ifade": "Lüks yasaları ayrıntıları + ziyafetin performatifliği (Hanson): 1562 Senato — bir kızartma + bir haşlama, yasak alabalık/mersin balığı/göl balığı/şekerlemeler, istiridye yalnız ≤20 kişilik özel yemek; aşçı/kâhya/terziye ceza; yasalar nadiren uygulandı, aileler ihlalle övündü. Ziyafet sosyal konumu pekiştiren performatif ritüel; Albala 'zarif yemek yiyeni zarifleştirir'; Bakhtin 'kapalı bedenler' ↔ grotesk (yorum).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "Factum geniş argüman (S13): yemekhane 1950'lerde değiştirilmişti (üst tiyatro, alt ahşap atölyesi, Speervari merdiven, Coronelli gravürü özgün karakteri gösterir), 50'lerde restore edildi; Cini 'yaşayan oda' (yemek/konferans/araştırma). Malraux 1958 San Giorgio konuşması + Cini iade talebi 'politically it could never be returned'; 'cultural rape' çerçevesi, Venediklilerin duygusal tepkisi; Dama de Elche / Thutmose III / Altamira / Nimrud faksimile paralelleri; ~9 milyon/yıl ziyaretçi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q185255 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q185255.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (65 QID, 2 çağrı)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia en",
+   "belge": "The Wedding at Cana (Veronese) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The_Wedding_at_Cana_(Veronese)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia it",
+   "belge": "Nozze di Cana (Veronese) wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Nozze_di_Cana_(Veronese)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée du Louvre",
+   "belge": "Collections notice HTML (ark cl010064382); \"Dernière mise à jour le 07.04.2025\"",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010064382",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée du Louvre",
+   "belge": "Aynı notice JSON (\"modified 2026-07-22\")",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010064382.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée du Louvre (eski katalog)",
+   "belge": "cartelfr idNotice=20370 → S5 yönlendirme",
+   "url": "http://cartelfr.louvre.fr/cartelfr/visite?srv=car_not_frame&idNotice=20370",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (redirect→S5)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Musée du Louvre",
+   "belge": "From the Mona Lisa to The Wedding Feast at Cana — The Salle des États",
+   "url": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (redirect)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Musée du Louvre / Wayback",
+   "belge": "Orijinal oeuvre-notices (Aline François), arşiv 2021-02-26",
+   "url": "http://web.archive.org/web/20210226014900/https://www.louvre.fr/en/oeuvre-notices/wedding-feast-cana",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2021-02-26)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url|size|extmetadata), P18 dosyası",
+   "url": "https://commons.wikimedia.org/wiki/File:Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_;_MR_384.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (source/permission)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_;_MR_384.jpg&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "InVisible Culture / Wayback",
+   "belge": "Hanson, Kate H. (2010) \"The Language of the Banquet\", Issue 14 (Winter 2010); arşiv 2018-02-14",
+   "url": "https://web.archive.org/web/20180214142235/https://ivc.lib.rochester.edu/the-language-of-the-banquet-reconsidering-paolo-veroneses-wedding-at-cana/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı dead; arşiv 200 (2018-02-14)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Factum Arte / Wayback",
+   "belge": "\"Returning Les Noces de Cana by Paolo Caliari\" (January 2008); arşiv 2020-01-08",
+   "url": "https://web.archive.org/web/20200108062111/http://www.factum-arte.com/pag/204/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 429; arşiv 200 (2020-01-08)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Art Bonus (MiC) / Wayback",
+   "belge": "Charles Le Brun — Il convito dal fariseo con la Maddalena ai piedi di Gesù (Accademia, Venezia); arşiv 2025-04-30",
+   "url": "http://web.archive.org/web/20250430074915/https://artbonus.gov.it/117-23-charles-le-brun-il-convito-dal-fariseo-con-la-maddalena-ai-piedi-di-ges%C3%B9.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 404; arşiv 200 (2025-04-30)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "yerel (data/)",
+   "belge": "data/*.json salt-okunur taraması (basyapitlar, eser_ayrintilari, ikonografi, gorsel_kaynagi, vb.)",
+   "url": "—",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel tarama",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wayback",
+   "belge": "availability API (S8 ve S14 URL)",
+   "url": "https://archive.org/wayback/available",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Il convito dal fariseo con la Maddalena ai piedi di Gesù (The Feast in the House of Simon)",
+   "sanatci": "Charles Le Brun",
+   "kurum": "Gallerie dell'Accademia, Venedik",
+   "mufredat_ici": false,
+   "gerekce": "1815 takasında Kana karşılığında Venedik'e gönderilen tablo; 'intorno al 1650', 385×316 cm, konu Luka 7. Venedik renkçiliği ↔ Fransız klasisizmi; nesne-değişiminin somut tanığı.",
+   "kanit": [
+    "C034",
+    "C013"
+   ]
+  },
+  {
+   "eser": "Convito in casa di Levi (Levi'nin Evinde Ziyafet)",
+   "sanatci": "Paolo Veronese",
+   "kurum": "Gallerie dell'Accademia, Venedik",
+   "mufredat_ici": false,
+   "gerekce": "Ziyafet serisinin sonraki halkası; 1573 Engizisyon davasına konu olan ayrı eser. Hanson, Kana yorumlarının bu davayla aşırı renklendirilmemesi gerektiğini savunur.",
+   "kanit": [
+    "C033",
+    "C052"
+   ]
+  },
+  {
+   "eser": "Son Akşam Yemeği (The Last Supper)",
+   "sanatci": "Leonardo da Vinci",
+   "kurum": "Santa Maria delle Grazie, Milano",
+   "mufredat_ici": true,
+   "gerekce": "Yemekhane (refectory) geleneğinin öncüsü: Leonardo 1495'te Milano'ya taşıdı (Hanson/Gilbert). Kana'nın yemekhane işlevi ve Eucharistia öncülüğü karşılaştırması.",
+   "kanit": [
+    "C054"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil (S5/S6 HTML+JSON, S8 Salle des États, S9 2021 notice arşivi) yeniden açıldı; künye/boyut/envanter/edinim/konum/restorasyon doğrulandı. Hanson 2010 (S12 arşiv) tam metin okundu: sözleşme/ödeme/kompozisyon/protokol/Rosand/dipnot 22 (1573 davası) teyit. Factum Arte (S13 arşiv) ve Art Bonus Le Brun (S14 arşiv) yeniden okundu. enwiki/itwiki wikitext (S3/S4) D1–D12 için tarandı. WD (S1) P217/P195/P186/P571/P793 kontrol. Commons (S10/S11) metadata+lisans; görsel İNCELENMEDİ → GZ TASLAK. Erişilmeyen atıf zincirleri (NYT/NYRB/kitaplar) E/B-belirsiz işaretli.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar.json '1562' → '1562–1563' önerisi (Louvre objectHistory + enwiki/Hanson); WD P571 on yıl hassasiyet; tek yıl kesinleştirme yok (E1). data DEĞİŞTİRİLMEDİ.",
+  "Gelin/damat 'sol uç' (data) Louvre/Hanson/Factum ile uyumlu; enwiki 'right wing' aykırı (D2/C040). data güçlü kaynak tarafında.",
+  "itwiki infobox boyut 666×990 aykırı (D1/C039); Louvre 677×994 esas. Yüzölçümü 67,29 ↔ 70 m² yuvarlama (D9/C047).",
+  "data '1573 Engizisyon': brief E11 'kaynaksız' der; Denetim B'de S12 (Hanson) dipnot 22'nin davayı anlattığı görüldü (C052 B, Hanson üzerinden; Fehl 1961 erişilmedi). data iddiası ayrı esere (Levi) ait; derslerde kesin olgu yapılmadı, insan editöre sunulur. 'Rubens/Tiepolo/Delacroix etkisi' erişilen kaynaklarda desteksiz (E, C035); Delacroix'ın 1853 günlük eleştirisi (C063) etki değil alımlama verisidir.",
+  "muze_numaralari.json'da Q185255 kaydı YOK (INV 142 / MR 384 birincil doğrulandı; boşluk, çelişki değil). kunye.json'da eser künyesi yok (yalnız sanatçı IPA).",
+  "eserler_onbellek.json gorseller[0].l (lisans) BOŞ; gerçek lisans PD-Art/kamu malı (C036). gorsel_kaynagi/yerel_gorseller hash 870f58ce77c32209 = WD P18 Commons dosyası (Shonagon 2024); 'muze' etiketi yok (müze görseli değil).",
+  "ikonografi.json 'marriage-at-cana' genel İncil girdisi (altı taş küp); tabloda kaplar süslü ewer/oenochoe (S9/S3). Derste tabloya özgü kap biçimi anlatıldı; genel girdi hatalı değil.",
+  "Restorasyon tarihi varyantı: S9/Louvre 1989–1992 (A, esas); WD P793 1990–1992; enwiki 1989 başlangıç; S13 '1989–91 cleaning' (temizlik aşaması ↔ kampanya farkı olabilir). Louvre tarihi esas alındı.",
+  "Erişilemeyenler: Factum canlı 429, ArtBonus canlı 404 (arşivleri açıldı); NYT Simons 1992 (registration), NYRB Uglow 2021 (abonelik); Joconde/RKD/GAC kayıt URL'leri yok; kitaplar (Pignatti/Pedrocco, Boschini, Cicogna, Habert, Volle, Cooper, Lafarga, Cocke, Priever, Rosand, Fehl) metne erişilmedi — kaynakçada anıldı.",
+  "Görsel İNCELENMEDİ (C051); GZ TASLAK; kompozisyon kaynak metninden; insan editör görsel teyidi zorunlu."
+ ]
+}

@@ -1,0 +1,552 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q212616",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Metropolitan Museum, New York"
+    },
+    {
+     "harf": "D",
+     "metin": "Museo del Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3/S4: Louvre, Département des Peintures, INV 4884, Salle 700.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay farklı bir kurumdur; eser Louvre'dadır (S3).",
+    "C": "Met New York'tadır; eser Louvre'dadır.",
+    "D": "Prado Madrid'dedir; eser Louvre'dadır."
+   },
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre ana envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 4884"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 1667"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 4885"
+    },
+    {
+     "harf": "D",
+     "metin": "000PE001303"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3: Numéro principal INV 4884.",
+   "yanlis_gerekceleri": {
+    "B": "RF 1667 bağlı eskiz kaydıdır, ana envanter değil.",
+    "C": "INV 4885 bu eserin numarası değildir; ana no INV 4884.",
+    "D": "000PE001303 Joconde (WD P347) kimliğidir, ana Louvre envanteri değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya (huile sur toile)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3: huile sur toile.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; eser tuvaldir.",
+    "C": "Pano/tempera değil; S3 huile sur toile der.",
+    "D": "Suluboya değil; yağlı boya."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Louvre'un kaydettiği Salon 1819 başlığı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "« Scène de naufrage »"
+    },
+    {
+     "harf": "B",
+     "metin": "« Le Radeau de la Méduse »"
+    },
+    {
+     "harf": "C",
+     "metin": "« La Méduse »"
+    },
+    {
+     "harf": "D",
+     "metin": "« Naufrage de la Méduse »"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 Ancien titre: Scène de naufrage (Titre du Salon de 1819).",
+   "yanlis_gerekceleri": {
+    "B": "Bu bugünkü addır; Salon 1819 başlığı farklıydı.",
+    "C": "Bu kayıtta geçen bir başlık değildir.",
+    "D": "Bu kayıtta geçen bir başlık değildir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Salı kurtaran gemi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Argus"
+    },
+    {
+     "harf": "B",
+     "metin": "Méduse"
+    },
+    {
+     "harf": "C",
+     "metin": "Loire"
+    },
+    {
+     "harf": "D",
+     "metin": "Écho"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3: brick Argus, 17 Temmuz 1816.",
+   "yanlis_gerekceleri": {
+    "B": "Méduse karaya oturan firkateyndir, kurtarıcı değil.",
+    "C": "Loire konvoydaki erzak gemisidir.",
+    "D": "Écho konvoydaki korvettir."
+   },
+   "kanit": [
+    "C013",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Yüzü aşağı, kolu uzanmış ön plan figürüne kim poz verdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eugène Delacroix"
+    },
+    {
+     "harf": "B",
+     "metin": "Louis-Alexis Jamar"
+    },
+    {
+     "harf": "C",
+     "metin": "Alexandre Corréard"
+    },
+    {
+     "harf": "D",
+     "metin": "Henri Savigny"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: Delacroix yüzü aşağı, kolu uzanmış ön plan figürüne poz verdi.",
+   "yanlis_gerekceleri": {
+    "B": "Jamar suya kayan ölü gence poz verdi.",
+    "C": "Corréard direğin dibinde canlı modeldir.",
+    "D": "Savigny direğin dibinde canlı modeldir."
+   },
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Tepede bez sallayan figür kim olarak tanımlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jean Charles (model Haitili Joseph)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kaptan Chaumareys"
+    },
+    {
+     "harf": "C",
+     "metin": "Cerrah Savigny"
+    },
+    {
+     "harf": "D",
+     "metin": "Mühendis Corréard"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: Jean Charles fıçı üstünde mendil sallar; model Haitili Joseph.",
+   "yanlis_gerekceleri": {
+    "B": "Chaumareys kaptandır, salda değildir.",
+    "C": "Savigny direğin dibinde modeldir.",
+    "D": "Corréard direğin dibinde modeldir."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Salon 1819'da eserin sonucu ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Altın madalya aldı ama ulusal koleksiyona seçilmedi"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre hemen satın aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Salon'dan yasaklandı"
+    },
+    {
+     "harf": "D",
+     "metin": "Hiç ödül almadı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: altın madalya; ulusal koleksiyona seçilmedi.",
+   "yanlis_gerekceleri": {
+    "B": "Satın alma yaşamında gerçekleşmedi (1824 posthume).",
+    "C": "Yasaklanmadı; sergilendi ve ödül aldı.",
+    "D": "Altın madalya aldı."
+   },
+   "kanit": [
+    "C032",
+    "C035"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Louvre eseri nasıl edindi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1824 posthume satış (Dedreux-Dorcy/Forbin)"
+    },
+    {
+     "harf": "B",
+     "metin": "Sanatçının 1819'da bağışı"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir İngiliz müzesinden satın alma"
+    },
+    {
+     "harf": "D",
+     "metin": "Louis XVIII'nin doğrudan siparişi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3: 2 Kasım 1824 posthume satış, 6005 fr, Dedreux-Dorcy/Forbin talimatı.",
+   "yanlis_gerekceleri": {
+    "B": "Bağış değil; yaşamında satış olmadı.",
+    "C": "İngiliz müzesinden alınmadı; posthume satış Paris'te.",
+    "D": "Sipariş değil; ölüm sonrası satış."
+   },
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eser neden \"Romantizm'in manifestosu\" sayılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Güncel olayı tarih resmi ölçeğinde sunup Neoklasik düzenle kopuşu"
+    },
+    {
+     "harf": "B",
+     "metin": "Mitolojik nü geleneği"
+    },
+    {
+     "harf": "C",
+     "metin": "Dini ikonografi"
+    },
+    {
+     "harf": "D",
+     "metin": "Kraliyet portresi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: manifeste du Romantisme; güncel olay, Neoklasik kopuş.",
+   "yanlis_gerekceleri": {
+    "B": "Mitolojik nü değil; güncel deniz felaketi.",
+    "C": "Dini ikonografi doğru yanıt değildir; doğru yanıt Güncel olayı tarih resmi ölçeğinde sunup Neoklasik düzenle kopuşu.",
+    "D": "Kraliyet portresi değil; sıradan insanlar."
+   },
+   "kanit": [
+    "C044"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Louvre'da, Denon kanadında Salle 700'de (Mollien) sergilenir.",
+   "dogru": true,
+   "aciklama": "Doğru (S3: Denon, Niveau 1, Salle 700 – Mollien).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser kamu malıdır; Commons kopyaları PD'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (S1 P6216; S9/S10 Public domain).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Salda açlık, susuzluk ve yamyamlık yaşandı (akademik betimleme).",
+   "dogru": true,
+   "aciklama": "Doğru (S5/S6; ayrıntısız akademik betim).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Géricault hazırlık için kurtulanlarla görüştü ve salın maketini yaptırdı.",
+   "dogru": true,
+   "aciklama": "Doğru (S5; S6 ayrıntı).",
+   "kanit": [
+    "C027",
+    "C061"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser, Géricault hayattayken Louvre tarafından satın alındı.",
+   "dogru": false,
+   "aciklama": "Yanlış: yaşamında satış gerçekleşmedi; Louvre 1824 posthume satışta aldı (S3).",
+   "kanit": [
+    "C035",
+    "C036"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil Louvre notice'inin kendi içindeki değişimi (güncel S3 ↔ eski S5: 12↔13 gün, 15↔10 kurtarılan) kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "S3 12 gün/15",
+    "S5 13 gün/10 vies",
+    "aynı kurum iç evrimi",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C013",
+    "C014",
+    "C049",
+    "C051"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Siyahi figürün umudun zirvesine yerleştirilmesini kölelik karşıtı okuma bağlamında tartışın (Berger & Johnson; Wedgwood emblemi karşıtlığı).",
+   "beklenen_ogeler": [
+    "Jean Charles/Joseph",
+    "hero of the scene",
+    "Wedgwood diz çökmüş emblem",
+    "aktif kahraman"
+   ],
+   "kanit": [
+    "C019",
+    "C020",
+    "C068",
+    "C077"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Ugolino göndermesini ve Fuseli etkisini hedge'leriyle değerlendirin.",
+   "beklenen_ogeler": [
+    "may be a reference",
+    "Fuseli 1806",
+    "may have known from prints",
+    "kesin değil"
+   ],
+   "kanit": [
+    "C022",
+    "C058"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Bitüm kararması ve alternatif açıklamayı (kurşun oksit/siccatif yağ) kaynak eleştirisiyle tartışın.",
+   "beklenen_ogeler": [
+    "bitume de Judée",
+    "geri döndürülemez kararma",
+    "frwiki alternatif",
+    "data kesin"
+   ],
+   "kanit": [
+    "C028",
+    "C059"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenemediği için kompozisyon betiminin sınırlarını ve GZ TASLAK durumunu açıklayın.",
+   "beklenen_ogeler": [
+    "vision kotası",
+    "kaynakların betimlediği",
+    "GZ TASLAK",
+    "insan teyidi"
+   ],
+   "kanit": [
+    "C057",
+    "C024"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kompozisyonun sağ üst tepesinde, fıçı üstünde bez sallayan figürü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Jean Charles/Joseph, piramidin zirvesi.",
+   "kanit": [
+    "C024",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol altta ölü oğlunu kucağında tutan yaşlı adamı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: yas karşıtı figür (S5/S6).",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Ölülerden umuda yükselen çapraz hattı ve piramidal yapıyı izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: iki çapraz hat (direk→dalga; figürler→Argus).",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Ufukta kurtarıcı gemi Argus'un küçük siluetini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: umudun en uzak noktası.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Caravaggesque ışık-gölge karşıtlığını ve kasvetli kahve/okra paletini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: clair-obscur caravagesque (S5).",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Le Radeau de la Méduse; Géricault (1791–1824); 1818–1819; huile sur toile; 491×716; Louvre INV 4884 / C 51, Salle 700 Mollien.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Olay?",
+   "arka": "Méduse 2 Temmuz 1816 Arguin sığlığı; ~150 kişi salda; 17 Temmuz 1816 Argus kurtardı; 15 canlı (4–5'i sonra öldü).",
+   "kanit": [
+    "C008",
+    "C011",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon/figür?",
+   "arka": "Piramit+çapraz hat; ölüler→umut; tepede Jean Charles (model Joseph); solda yaşlı adam+ölü oğlu; Delacroix ön plan figürüne poz verdi.",
+   "kanit": [
+    "C024",
+    "C019",
+    "C021",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "1824 posthume satış 6005 fr (Dedreux-Dorcy/Forbin); karar 12/11/1824; Charles X C 51; 1826'dan beri Louvre; INV 4884 Villot (1852–60).",
+   "kanit": [
+    "C036",
+    "C037",
+    "C041"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Önem/etki?",
+   "arka": "Romantizm manifestosu (S5); Neoklasik kopuş; Delacroix/Turner/Courbet/Manet/Rodin etki zinciri.",
+   "kanit": [
+    "C044",
+    "C080"
+   ]
+  }
+ ]
+}

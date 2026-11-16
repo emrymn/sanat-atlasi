@@ -1,0 +1,543 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1212937",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tarihi ve imza yeri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1533; sol figür arkasındaki mermer zeminde"
+    },
+    {
+     "harf": "B",
+     "metin": "1514; çerçevede"
+    },
+    {
+     "harf": "C",
+     "metin": "1528; Havva panelinde"
+    },
+    {
+     "harf": "D",
+     "metin": "1509; arka planda"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: dated 1533 beneath signature on marble floor behind left figure.",
+   "yanlis_gerekceleri": {
+    "B": "1514 Metsys tarihidir.",
+    "C": "1528 Cranach tarihidir.",
+    "D": "1509 Baldung tarihidir."
+   },
+   "kanit": [
+    "C005",
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "NG envanter ve edinim?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG1314; Bought 1890"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 1444; 1806"
+    },
+    {
+     "harf": "C",
+     "metin": "GG_2636; 1806"
+    },
+    {
+     "harf": "D",
+     "metin": "inv.1459; 1688"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: NG1314, Bought 1890.",
+   "yanlis_gerekceleri": {
+    "B": "INV 1444/1806 Metsys Louvre.",
+    "C": "GG_2636/1806 Baldung KHM.",
+    "D": "inv.1459/1688 Cranach Uffizi."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Soldaki figür kim?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jean de Dinteville (Fransız elçisi)"
+    },
+    {
+     "harf": "B",
+     "metin": "Georges de Selve"
+    },
+    {
+     "harf": "C",
+     "metin": "Nicholas Kratzer"
+    },
+    {
+     "harf": "D",
+     "metin": "Henry VIII"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: left = Jean de Dinteville, second diplomatic mission for Francis I.",
+   "yanlis_gerekceleri": {
+    "B": "Selve sağdaki figürdür.",
+    "C": "Kratzer enstrümanların yapımcısıdır, sitter değil.",
+    "D": "Henry VIII bağlamda anılır, sitter değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sağdaki figürün NG tanımı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Georges de Selve, Lavaur Piskoposu"
+    },
+    {
+     "harf": "B",
+     "metin": "François de Dinteville"
+    },
+    {
+     "harf": "C",
+     "metin": "Jean de Dinteville"
+    },
+    {
+     "harf": "D",
+     "metin": "Anne de Montmorency"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: right = Georges de Selve, Bishop of Lavaur.",
+   "yanlis_gerekceleri": {
+    "B": "François Hudson alternatifidir (D), NG tanımı değil.",
+    "C": "Jean soldadır.",
+    "D": "Montmorency mektupta anılan grand maître, sitter değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Üst raf nesneleri kimin yapımı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Nicholas Kratzer (kraliyet astronomu)"
+    },
+    {
+     "harf": "B",
+     "metin": "Johannes Schöner"
+    },
+    {
+     "harf": "C",
+     "metin": "Peter Apian"
+    },
+    {
+     "harf": "D",
+     "metin": "Hans Holbein"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: instruments made by Henry VIII royal astronomer Nicholas Kratzer.",
+   "yanlis_gerekceleri": {
+    "B": "Schöner küre yapımcısı adayıdır (D), üst raf saatleri değil.",
+    "C": "Apian aritmetik/torquetum betimi yazarıdır.",
+    "D": "Holbein ressamdır, enstrüman yapımcısı değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kafatası nasıl görülür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Belirli bir açıdan (anamorfiz)"
+    },
+    {
+     "harf": "B",
+     "metin": "Her açıdan net"
+    },
+    {
+     "harf": "C",
+     "metin": "Sadece büyüteçle"
+    },
+    {
+     "harf": "D",
+     "metin": "Görünmez"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: elongated shape becomes a skull from a particular angle.",
+   "yanlis_gerekceleri": {
+    "B": "Her açıdan net değil; bozuk perspektif.",
+    "C": "Büyüteç değil; açı/optik tüp teorisi.",
+    "D": "Görünür; belirli açıdan."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Aritmetik kitabı hangi sayfada açık?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Division (bölme)"
+    },
+    {
+     "harf": "B",
+     "metin": "Toplama"
+    },
+    {
+     "harf": "C",
+     "metin": "Çarpma"
+    },
+    {
+     "harf": "D",
+     "metin": "Geometri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: arithmetic book open at page concerning mathematical division.",
+   "yanlis_gerekceleri": {
+    "B": "Toplama değil; division.",
+    "C": "Çarpma değil; division.",
+    "D": "Geometri değil; division."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Lüt ve flütlerdeki \"discord\" işareti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırık lüt teli + eksik flüt"
+    },
+    {
+     "harf": "B",
+     "metin": "Yeni teller"
+    },
+    {
+     "harf": "C",
+     "metin": "Tam flüt seti"
+    },
+    {
+     "harf": "D",
+     "metin": "Akort anahtarı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: lute one string broken; flutes one missing → lack of harmony.",
+   "yanlis_gerekceleri": {
+    "B": "Yeni tel değil; kırık tel.",
+    "C": "Tam set değil; biri eksik.",
+    "D": "Akort anahtarı betimlenmez."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Sol üstte perdeye iliştirili gizli nesne?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Haç (crucifix)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kafatası"
+    },
+    {
+     "harf": "C",
+     "metin": "Ayna"
+    },
+    {
+     "harf": "D",
+     "metin": "Kitap"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: hidden crucifix top left, hints redemption.",
+   "yanlis_gerekceleri": {
+    "B": "Kafatası alt ortada.",
+    "C": "Ayna yok.",
+    "D": "Kitap raflarda."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "NG çerçevesi (1996) neye izin verecek tasarlandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kafatasının yan görüşüne"
+    },
+    {
+     "harf": "B",
+     "metin": "Önden net görüşe"
+    },
+    {
+     "harf": "C",
+     "metin": "UV ışığa"
+    },
+    {
+     "harf": "D",
+     "metin": "Nem kontrolüne"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: frame designed to allow a side view of the skull.",
+   "yanlis_gerekceleri": {
+    "B": "Önden net değil; yan görüş.",
+    "C": "UV ile ilgisi yok.",
+    "D": "Nem kontrolüne doğru yanıt değildir; doğru yanıt Kafatasının yan görüşüne."
+   },
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1533 tarihlidir ve imza mermer zeminde sol figürün arkasındadır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Malzeme Baltic/Polish oak olarak bilimsel tanımlanmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Kafatası her bakış açısında net bir kafatası olarak görünür.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): anamorfik; belirli açıdan düzelir.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "1533'te Henry VIII Anne Boleyn ile evlendi ve Roma'dan koptu.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "İlahi kitabındaki iki sayfa standart formda ardışıktır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): Holbein ardışık olmayan + hatalı numaralı sayfaları bilinçli seçti.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Kafatası görüş teorilerini (yan ↔ optik tüp) kanıt ve itirazlarıyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "yan/merdiven yok Polisy",
+    "Samuel optik tüp Warburg/BOA",
+    "Agrippa 1533",
+    "itirazlar Sharp",
+    "unproved"
+   ],
+   "kanit": [
+    "C024",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "1997 restorasyonunun anamorfiz kanıtına etkisini tartışın.",
+   "beklenen_ogeler": [
+    "alt çene/nazal eksik",
+    "modern foto yeniden hesap",
+    "Sharp kanıt kaybı",
+    "orijinal niyet sınırı"
+   ],
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "İlahi kitabı discord ↔ harmony okumalarını teolojik olarak değerlendirin.",
+   "beklenen_ogeler": [
+    "Luther bölünmesi",
+    "Law/Grace",
+    "Walter 1524",
+    "ardışık olmayan sayfalar",
+    "D açık"
+   ],
+   "kanit": [
+    "C025",
+    "C015",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Sitter kimliği kanıt türlerini (yazıt/giysi/mektup/envanter) ağırlıklandırın.",
+   "beklenen_ogeler": [
+    "yaş 25/29",
+    "robe 1534 consecration",
+    "Londra mektupları",
+    "1589 envanter mistaken",
+    "Hervey standart"
+   ],
+   "kanit": [
+    "C023",
+    "C017",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Küre tarih/enlem hipotezlerini test edin; hangisi neden zayıf?",
+   "beklenen_ogeler": [
+    "Rome enlem",
+    "12 July Pegasus",
+    "Good Friday North",
+    "11 May Ives",
+    "cihazlar çalışmaz"
+   ],
+   "kanit": [
+    "C026",
+    "C019",
+    "C020"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üst rafta celestial globe, güneş saatleri ve torquetumu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG betimi: kırmızı Türk halısı üzerinde; Kratzer yapımı.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Alt rafta kırık telli lütü ve eksik flütü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG betimi: discord simgeleri.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Ayaklar arasındaki anamorfik biçimi ve sol üst gizli haçı arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kafatası belirli açıdan; haç perdeye iliştirili.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Dinteville'in pembe saten tuniği ile vaşak kürklü cape'ini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG betimi: doku taklidi vitrini.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Karasal kürede Polisy etiketini ve baş aşağı duruşu fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG/enwiki betimi: küre baş aşağı, Polisy yanlış konum.",
+   "kanit": [
+    "C008",
+    "C018"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Ambassadors; Holbein (genç); 1533 (imza mermer zemin); oil on Baltic/Polish oak; 207×209,5; NG1314 Room 4; Bought 1890.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sitterlar + bağlam?",
+   "arka": "Sol Jean de Dinteville (Francis I elçisi), sağ Georges de Selve (Lavaur Piskoposu); 1533 Henry VIII Roma kopuşu + Anne Boleyn; yaş 29/25.",
+   "kanit": [
+    "C003",
+    "C004",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Nesne düzeni?",
+   "arka": "Üst raf gök (celestial globe, güneş saatleri, torquetum; Kratzer); alt raf yer (lüt kırık tel, flüt eksik, aritmetik division, Lutheran ilahi, karasal küre Polisy).",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Kafatası + haç?",
+   "arka": "Anamorfik kafatası (memento mori, belirli açı); sol üst gizli haç (kurtuluş umudu); NG betimi.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance + çerçeve?",
+   "arka": "Cazillac→Lebrun (1792 gravür)→Buchanan→Pleydell→NG 1890; çerçeve 1996 ebonised box, yan görüşe izin.",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  }
+ ]
+}

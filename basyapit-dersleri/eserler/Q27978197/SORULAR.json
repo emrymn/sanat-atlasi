@@ -1,0 +1,547 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q27978197",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "KHM kaydının tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "um 1509/1510"
+    },
+    {
+     "harf": "B",
+     "metin": "1514"
+    },
+    {
+     "harf": "C",
+     "metin": "1533"
+    },
+    {
+     "harf": "D",
+     "metin": "1528"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"um 1509/1510\".",
+   "yanlis_gerekceleri": {
+    "B": "1514 Metsys Tefeci ve Karısı'nın tarihidir.",
+    "C": "1533 Holbein Elçiler'in tarihidir.",
+    "D": "1528 Cranach Âdem ile Havva'nın tarihidir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "KHM envanter numarası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gemäldegalerie 2636"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 1444"
+    },
+    {
+     "harf": "C",
+     "metin": "NG1314"
+    },
+    {
+     "harf": "D",
+     "metin": "GG_1838"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Inv. Nr. Gemäldegalerie, 2636.",
+   "yanlis_gerekceleri": {
+    "B": "INV 1444 Metsys'in Louvre envanteridir.",
+    "C": "NG1314 Holbein'in National Gallery envanteridir.",
+    "D": "GG_1838 Bruegel Karda Avcılar'ın KHM envanteridir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "KHM malzeme/teknik alanı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lindenholz (ıhlamur ahşap, yağlıboya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval, yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Tempera, pano"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Material/Technik \"Lindenholz\".",
+   "yanlis_gerekceleri": {
+    "B": "Tuval değil; KHM ahşap (Lindenholz) kaydeder.",
+    "C": "Fresk duvar tekniğidir; bu eser panodur.",
+    "D": "Tempera değil; yağlıboya ahşap."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "KHM panel boyutu (Bildmaß)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "48,2 × 32,8 × 2,4 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "70,5 × 67 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "207 × 209 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "167 × 61 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Bildmaß 48,2 × 32,8 × 2,4 cm.",
+   "yanlis_gerekceleri": {
+    "B": "70,5 × 67 Metsys panelidir.",
+    "C": "207 × 209 Holbein Elçiler'dir.",
+    "D": "167 × 61 Cranach panelleridir."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Ölüm, kadının başı üstünde ne tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tükenen kum saati"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir taç"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir kitap"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir terazi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"die ablaufende Sanduhr\"; K5 görselde kum görünür.",
+   "yanlis_gerekceleri": {
+    "B": "Taç yok; kum saati var.",
+    "C": "Kitap kadının elinde değil ayna var; Ölüm kum saati tutar.",
+    "D": "Terazi Metsys resminin nesnesidir; burada kum saati."
+   },
+   "kanit": [
+    "C004",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "dewiki'ye göre Ölüm nasıl tasvir edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çürüyen beden (saç tutamları, sarkan deri)"
+    },
+    {
+     "harf": "B",
+     "metin": "Temiz iskelet"
+    },
+    {
+     "harf": "C",
+     "metin": "Tırpanlı Sensenmann"
+    },
+    {
+     "harf": "D",
+     "metin": "Melek"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: \"nicht als Skelett oder Sensenmann … verwesender Körper\".",
+   "yanlis_gerekceleri": {
+    "B": "İskelet olarak değil; çürüyen beden.",
+    "C": "Tırpanlı değil; çürüyen beden.",
+    "D": "Melek değil; Ölüm figürü."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "KHM çocuğu nasıl tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Knabe (erkek çocuk)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kız çocuk"
+    },
+    {
+     "harf": "C",
+     "metin": "Melek"
+    },
+    {
+     "harf": "D",
+     "metin": "Putto/Cupid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: KHM kaynakları çocuğu açıkça Knabe olarak tanımlar.",
+   "yanlis_gerekceleri": {
+    "B": "Kız değil; Knabe (erkek).",
+    "C": "Melek değil; insan çocuk.",
+    "D": "Putto/Cupid transkripsiyon tahminidir; KHM Knabe der."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Genç kadının elindeki nesne?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırmızı saplı el aynası"
+    },
+    {
+     "harf": "B",
+     "metin": "Kum saati"
+    },
+    {
+     "harf": "C",
+     "metin": "Örtü"
+    },
+    {
+     "harf": "D",
+     "metin": "Elma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: kırmızı saplı yuvarlak el aynası; K2 Spiegel.",
+   "yanlis_gerekceleri": {
+    "B": "Kum saati Ölüm'ün elinde.",
+    "C": "Örtü belinde, elinde ayna.",
+    "D": "Elma çocuğun yanında (transkripsiyon); kadında ayna."
+   },
+   "kanit": [
+    "C016",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin provenance zinciri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Thun koleksiyonu → 1803 Salzburg Residenz → 1806 Galerie"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre achat 1806"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery 1890"
+    },
+    {
+     "harf": "D",
+     "metin": "Rijksmuseum 1808"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Sammlung Erzbischof Guidobald Graf Thun; 1803 Residenz; 1806 Galerie.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre achat Metsys'in edinimidir.",
+    "C": "NG 1890 Holbein'in edinimidir.",
+    "D": "Rijksmuseum Vermeer pilotunun kurumudur."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Vanitas'ın ahlaki yüzü (dewiki)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eitelkeit (kibir/gösteriş), yedi günahın öncüsü"
+    },
+    {
+     "harf": "B",
+     "metin": "Cesaret"
+    },
+    {
+     "harf": "C",
+     "metin": "Adalet"
+    },
+    {
+     "harf": "D",
+     "metin": "Sabır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Vanitas = Eitelkeit; yedi ölümcül günahın öncüsü.",
+   "yanlis_gerekceleri": {
+    "B": "Cesaret bir erdemdir; Vanitas'ın ahlaki yüzü Eitelkeit.",
+    "C": "Adalet erdemdir; burada günah bağlamı var.",
+    "D": "Sabır erdemdir; Eitelkeit günah öncüsüdür."
+   },
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "KHM eseri \"um 1509/1510\" olarak tarihler.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Ölüm, temiz bir iskelet olarak tasvir edilmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): iskelet/tırpan değil, çürüyen beden.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Görsel incelemede Ölüm'ün kalkık kolunda kum saati ve kum görüldü.",
+   "dogru": true,
+   "aciklama": "Doğru (K5).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser, Salzburg başpiskoposu Guidobald Graf Thun koleksiyonundan gelmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2).",
+   "kanit": [
+    "C005",
+    "C015"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "KHM kaynakları alttaki çocuğu Knabe (erkek çocuk) olarak tanımlar.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2). Aynı-kadın okuması ise belirsizdir (C010, tartışma) ve bu soruya girmez.",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Aynı-kadın ↔ farklı-kişiler okumalarını Knabe tanımıyla test edin.",
+   "beklenen_ogeler": [
+    "dewiki nicht eindeutig",
+    "KHM Knabe",
+    "evrensel alegori ↔ topluluk sahnesi",
+    "D olarak açık tutma"
+   ],
+   "kanit": [
+    "C010",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Ölüm'ün çürüyen beden tasvirini iskelet/tırpan geleneğiyle karşılaştırın; üç ölüm ontolojisi yazın.",
+   "beklenen_ogeler": [
+    "çürüyen beden = süreç",
+    "iskelet = olmuş bitmiş",
+    "tırpan = eylem",
+    "yorum etiketi"
+   ],
+   "kanit": [
+    "C012",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Çocuk yanındaki nesneler için gözlem/betim ayrımını kurun.",
+   "beklenen_ogeler": [
+    "dewiki Steckenpferd (B)",
+    "transkripsiyon ok/elma",
+    "çözünürlük sınırı",
+    "kimlik görselden kesin değil"
+   ],
+   "kanit": [
+    "C013",
+    "C018"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Vanitas/Eitelkeit teolojisini resmin psikolojik okumasına bağlayın.",
+   "beklenen_ogeler": [
+    "ayna geçicilik simgesi",
+    "kadın kendini seyreder",
+    "Ölüm'ü görmez",
+    "Eitelkeit günah öncüsü"
+   ],
+   "kanit": [
+    "C014",
+    "C011",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: KHM birincil (A) + dewiki/frwiki (B) + yorum (C) + ihtilaf (D) + erişilemeyen literatür (E).",
+   "beklenen_ogeler": [
+    "KHM künye A",
+    "betim yorumlu",
+    "boyut D",
+    "figür kimliği D",
+    "Schütz/Tuschka E"
+   ],
+   "kanit": [
+    "C001",
+    "C004",
+    "C007",
+    "C010",
+    "C024"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Genç kadının kırmızı saplı el aynasını ve alnına kalkık sol elini bulun.",
+   "ipucu": "Ayna omuz hizasında; kadın saçını izler.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ölüm'ün kalkık kolundaki kırmızı çerçeveli kum saatini ve içindeki kumu izleyin.",
+   "ipucu": "Kum saati kadının başı üstünde.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Örtünün zincirini takip edin: kadının beli → Ölüm'ün eli → çocuğun etrafı.",
+   "ipucu": "Şeffaf beyaz örtü üç figürü bağlar.",
+   "kanit": [
+    "C016",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Soldaki yaşlı figürün dağınık ak saçını ve Ölüm'e karşı duruşunu fark edin.",
+   "ipucu": "Yaşlı figür kısmen gizli, üst gövde görünür.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka plandaki yoğun koyu yeşil yaprak kütlesini ve üstte soluk gökyüzünü izleyin.",
+   "ipucu": "Donauschule manzara dili; likenli ağaçlar betimi.",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, envanter, salon?",
+   "arka": "Die drei Lebensalter und der Tod; Hans Baldung gen. Grien; um 1509/1510; yağlıboya Lindenholz; 48,2×32,8×2,4; KHM Gemäldegalerie 2636, Kabinett 16.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Dört figür + üç simge?",
+   "arka": "Çocuk alt, genç kadın orta, yaşlı sol, Ölüm sağ; ayna (geçicilik simgesi), kum saati (tükenen zaman), örtü (gençlik zarı).",
+   "kanit": [
+    "C009",
+    "C016",
+    "C017",
+    "C018",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Ölüm tasviri?",
+   "arka": "Çürüyen beden (kafatası benzeri baş, seyrek saç, gergin deri, sarkan et); iskelet/tırpan DEĞİL; kalkık kolda kum saati.",
+   "kanit": [
+    "C012",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Vanitas/Eitelkeit?",
+   "arka": "Hiçbir şey ebedi değil; Vanitas=Eitelkeit (kibir), kadında cisimleşir; yedi ölümcül günahın öncüsü; kadın aynaya bakıp Ölüm'ü görmez.",
+   "kanit": [
+    "C014",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance?",
+   "arka": "Thun koleksiyonu Salzburg → 1803 Fürsterzbischöfliche Residenz → 1806 KHM Galerie.",
+   "kanit": [
+    "C005",
+    "C015"
+   ]
+  }
+ ]
+}

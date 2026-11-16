@@ -1,0 +1,560 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q28797801",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Q28797801 hangi eserdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre'daki David orijinali (1784)"
+    },
+    {
+     "harf": "B",
+     "metin": "Toledo'daki 1786 replika (1950.308)"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre'daki 1784 eskiz (RF 47)"
+    },
+    {
+     "harf": "D",
+     "metin": "David'in 1791 Salonu için ikinci orijinali"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S1/S9: Q28797801 P195=Toledo, P217=1950.308, P571=1786; Louvre orijinali ayrı öğe Q476458 (C001/C002).",
+   "yanlis_gerekceleri": {
+    "A": "Louvre orijinali Q476458'dir (INV 3692/MR 1432); Q28797801 değil (C002).",
+    "C": "RF 47, Louvre kaydının relatedWork olarak bağladığı ayrı bir eskizdir; Q28797801 değil (C002).",
+    "D": "1791 Salonu'nda aynı orijinal yeniden sergilendi (no.134); ikinci bir orijinal yok (C029)."
+   },
+   "kanit": [
+    "C001",
+    "C003",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Toledo replikasının siparişçisi kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louis XVI"
+    },
+    {
+     "harf": "B",
+     "metin": "Comte de Vaudreuil"
+    },
+    {
+     "harf": "C",
+     "metin": "comte d'Angiviller"
+    },
+    {
+     "harf": "D",
+     "metin": "Wildenstein & Company"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S9/S15: \"a reduced replica ordered from David by … Comte de Vaudreuil\"; \"Painted for the Comte de Vaudreuil, 1786\" (C023).",
+   "yanlis_gerekceleri": {
+    "A": "Louis XVI orijinali (Q476458) sipariş etti; replikayı değil (C022).",
+    "C": "d'Angiviller orijinalin sipariş aracısıydı (Bâtiments du roi); replika siparişçisi değil (C022).",
+    "D": "Wildenstein 1937'de sahip/aracıydı; siparişçi değil (C030)."
+   },
+   "kanit": [
+    "C023",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Toledo kaydına göre painting boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "130,2 × 166,7 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "330 × 425 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "329,8 × 424,8 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "165,1 × 201,3 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: Painting 51 1/4 × 65 5/8 in. (130.2 × 166.7 cm) (C003).",
+   "yanlis_gerekceleri": {
+    "B": "330×425 cm Louvre orijinalinin metre cinsinden boyutudur (3,3×4,25 m) (C004).",
+    "C": "329,8×424,8 cm enwiki infobox'ının orijinal boyutudur; Toledo değil (C004).",
+    "D": "165,1×201,3 cm çerçeve (Frame) boyutudur; painting değil (C003)."
+   },
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Louvre orijinalinin (Q476458) envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 3692 / MR 1432"
+    },
+    {
+     "harf": "B",
+     "metin": "1950.308"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 47"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 3693"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10/S11: INV 3692 (principal), MR 1432 (autre); WD Q476458 P217 uyumlu (C002/C008).",
+   "yanlis_gerekceleri": {
+    "B": "1950.308 Toledo replikasının envanteridir (C001/C003).",
+    "C": "RF 47 ilgili eskizin numarasıdır; orijinal tuval değil (C002).",
+    "D": "INV 3693 \"Brutus\"un numarasıdır; Louvre historique ikisini birlikte anar (C029)."
+   },
+   "kanit": [
+    "C002",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Resimde betimlenen yemin sahnesi antik kaynaklarda var mıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Livius'ta aynen vardır"
+    },
+    {
+     "harf": "B",
+     "metin": "Antik kaynaklarda yoktur; David'in icadıdır"
+    },
+    {
+     "harf": "C",
+     "metin": "Corneille'in trajedisinde vardır"
+    },
+    {
+     "harf": "D",
+     "metin": "Dionysios'ta vardır"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6 (Winkler 2009 zinciri): \"the moment depicted in David's painting is his own invention\" (C012).",
+   "yanlis_gerekceleri": {
+    "A": "Livius I.24–26 düelloyu anlatır ama yemin sahnesini değil; o an David'in icadı (C010/C012).",
+    "C": "Corneille Horace yazınsal kaynaktır; yemin anı yine David'in icadı (C011/C012).",
+    "D": "Dionysios Roman Antiquities III anlatıyı genişletir; yemin sahnesi antik kaynaklarda yok (C010/C012)."
+   },
+   "kanit": [
+    "C012",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eserin konusu hangi efsanedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Roma–Alba Longa: üç Horatii–üç Curiatii düellosu"
+    },
+    {
+     "harf": "B",
+     "metin": "Truva savaşı"
+    },
+    {
+     "harf": "C",
+     "metin": "Hannibal'in Roma yürüyüşü"
+    },
+    {
+     "harf": "D",
+     "metin": "Romulus ve Remus"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7/S9: Roma–Alba Longa, MÖ 7. yy, Tullus Hostilius; üçer kardeş düellosu (C009).",
+   "yanlis_gerekceleri": {
+    "B": "Truva savaşı farklı bir mitolojik döngüdür; kaynaklarda bu eser için anılmaz (C009).",
+    "C": "Hannibal Roma'yı tehdit etti ama konu bu değil; kaynaklar Horatii/Curiatii düellosunu verir (C009).",
+    "D": "Romulus/Remus Roma'nın kuruluş mitidir; bu eser Tullus Hostilius dönemi düellosunu anlatır (C009)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Toledo replikasının orijinalden belirgin farkı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kadınların ayakları dibinde iplik sarılı kirmen (distaff)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kardeşlerin miğferleri"
+    },
+    {
+     "harf": "C",
+     "metin": "Babanın kırmızı pelerini"
+    },
+    {
+     "harf": "D",
+     "metin": "Arka plandaki sütunlar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9/S15: \"close to the original, except that it includes a distaff with spun thread near the women's feet\"; PDF \"a detail to establish the originality\" (C015).",
+   "yanlis_gerekceleri": {
+    "B": "Toledo etiketi ve PDF tek fark olarak kirmeni sayar; miğfer farkı belirtilmez (C015).",
+    "C": "Kırmızı pelerin fark olarak listelenmez; kaynaklar tek farkı kirmen olarak verir (C015).",
+    "D": "Sütunlar kompozisyonun ortak öğesidir; fark olarak anılmaz (C015)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Louvre orijinalinin siparişi kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louis XVI (d'Angiviller aracılığıyla)"
+    },
+    {
+     "harf": "B",
+     "metin": "Comte de Vaudreuil"
+    },
+    {
+     "harf": "C",
+     "metin": "Papa"
+    },
+    {
+     "harf": "D",
+     "metin": "Firmin-Didot ailesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 Historique: \"Commandé … par le roi Louis XVI, par l'intermédiaire du comte d'Angiviller … 1781 sonu/1782 başı\" (C022).",
+   "yanlis_gerekceleri": {
+    "B": "Vaudreuil Toledo replikasını sipariş etti; orijinali değil (C023).",
+    "C": "Papa yalnızca Roma'da izleme talebinde bulundu; siparişçi değil (C026).",
+    "D": "Firmin-Didot replikanın sonraki sahibi/ailesidir; orijinal siparişçisi değil (C030)."
+   },
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Louvre kaydına göre orijinal nerede ve ne zaman tamamlandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris'te 1784'te"
+    },
+    {
+     "harf": "B",
+     "metin": "Roma'da; muhtemelen 1785 ilk yarısı boyandı, Temmuz 1785'te tamamlandı"
+    },
+    {
+     "harf": "C",
+     "metin": "Toledo'da 1786'da"
+    },
+    {
+     "harf": "D",
+     "metin": "Brüksel'de 1825'te"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S10 Historique: \"peint à Rome probablement durant le premier semestre de l'année 1785 et achevé en juillet 1785\" (C025). İmza 1784 der ama icra muhtemelen 1785 (D3).",
+   "yanlis_gerekceleri": {
+    "A": "Paris'te değil Roma'da boyandı; \"1784'te tamamlandı\" Louvre historique ile çelişir (C025).",
+    "C": "Toledo replikanın bulunduğu yerdir; orijinal Roma'da yapıldı, replika Paris imzalı (C005/C025).",
+    "D": "Brüksel David'in ölüm yeridir (1825); eserin yapım yeri değil (C004)."
+   },
+   "kanit": [
+    "C025",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "GAP Commons dosyası (\"Jacques-Louis David - Oath of the Horatii - Google Art Project.jpg\") metadata'sına göre hangi eserin taramasıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre orijinali"
+    },
+    {
+     "harf": "B",
+     "metin": "Toledo replikası"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 47 eskizi"
+    },
+    {
+     "harf": "D",
+     "metin": "1913 Petit Palais kopyası"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S13: ObjectName \"Copy of the Oath of the Horatii - made by Girodet\"; ImageDescription \"Copy … made in 1786 to the Comte de Vaudreuil\"; kategori \"Google Art Project works in The Toledo Museum of Art\" (C034).",
+   "yanlis_gerekceleri": {
+    "A": "Dosya adı David/Louvre izlenimi verse de metadata Toledo/Girodet kopyası der (C034).",
+    "C": "RF 47 ayrı bir eskizdir; GAP dosyası tuval replikasının taraması (C002/C034).",
+    "D": "1913 Petit Palais sergisi Toledo tuvalini sergiledi; ayrı bir kopya değil (C031)."
+   },
+   "kanit": [
+    "C034",
+    "C001"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Q28797801, Toledo Museum of Art'taki 1786 tarihli replikadır; Louvre orijinali değildir.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S9): P195 Toledo, P217 1950.308, P571 1786; Louvre orijinali Q476458.",
+   "kanit": [
+    "C001",
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Toledo replikası kraliyet siparişidir (Louis XVI).",
+   "dogru": false,
+   "aciklama": "Yanlış: kraliyet siparişi yalnızca orijinal (Q476458) için; replika Vaudreuil siparişi (S9/S15).",
+   "kanit": [
+    "C023",
+    "C022"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Louvre orijinalinin imzası sol altta \"L. David faciebat / ROMAE anno / MDCCLXXXIV\" biçimindedir.",
+   "dogru": true,
+   "aciklama": "Doğru (S10/S11): Roma, 1784 imzası.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Toledo replikası orijinalle birebir aynıdır; hiçbir detay farkı yoktur.",
+   "dogru": false,
+   "aciklama": "Yanlış: kadınların ayakları dibinde iplik sarılı kirmen (distaff) farkı vardır (S9/S15).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Louvre kaydı, orijinalin sergiden sonra sanatçı tarafından bir \"répétition\"ının (Toledo) yapıldığını doğrular.",
+   "dogru": true,
+   "aciklama": "Doğru (S10): \"repris par l'artiste … pour en faire une répétition (Toledo Museum of Art)\".",
+   "kanit": [
+    "C028"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 kimlik ihtilafını analiz edin: Q28797801 ↔ Q476458; data eşleme hatası; çözüm önerileri.",
+   "beklenen_ogeler": [
+    "Q28797801=Toledo replikası",
+    "Q476458=Louvre orijinali",
+    "data çift kayıt",
+    "QID taşıma veya yeniden yazma"
+   ],
+   "kanit": [
+    "C037",
+    "C001",
+    "C002"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "D2 atıf tartışmasını literatür listesiyle değerlendirin: Girodet ↔ David ↔ \"reportedly\"; 1965 Burlington mektuplaşması.",
+   "beklenen_ogeler": [
+    "Toledo Artist David",
+    "WD tek yaratıcı Girodet",
+    "reportedly assisted",
+    "literatür ikiye bölünmüş",
+    "Wittmann–Rosenblum 1965"
+   ],
+   "kanit": [
+    "C038",
+    "C032",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "D3 tarih ihtilafında imza tarihi ↔ icra tarihi ayrımını yapın; \"1784'te tamamlandı\" ifadesinin sorunları.",
+   "beklenen_ogeler": [
+    "imza MDCCLXXXIV",
+    "probablement juillet 1785",
+    "enwiki 1784 and 1785",
+    "data çelişkisi"
+   ],
+   "kanit": [
+    "C039",
+    "C025",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Yemin anının icadı (C012) + jestin faşist sahiplenmesi (C018): \"anlamın tarihsel kayması\" tartışması; anakronizm riski.",
+   "beklenen_ogeler": [
+    "yemin anı David icadı",
+    "Roman Salute",
+    "faşist İtalya/Nazi",
+    "anakronizm"
+   ],
+   "kanit": [
+    "C012",
+    "C018",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Toledo replikası için kimlik/atıf/boyut ihtilaflarını beyan eden 150 kelimelik küratöryel etiket yazın.",
+   "beklenen_ogeler": [
+    "Toledo 1786 replika",
+    "Vaudreuil siparişi",
+    "David/Girodet tartışmalı",
+    "166.7/166.2",
+    "kirmen detayı"
+   ],
+   "kanit": [
+    "C037",
+    "C038",
+    "C040",
+    "C015",
+    "C023"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre üç kardeşin babaları önünde yemin edişini ve erkeklerin gergin duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Toledo etiketi: \"the Horatii brothers … swear an oath before their father\"; \"tense stances\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadınların ayakları dibindeki iplik sarılı kirmeni (distaff) arayın — replikaya özgü detay.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S9/S15: \"a distaff with spun thread near the women's feet\"; PDF \"originality\" notu.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Erkeklerin gergin duruşu ile kadınların yaslı çöküşü arasındaki karşıtlığı gözlemleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Toledo etiketi: \"tense stances contrast with the fluid contours of the women, slumped in grief and resignation\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sol alt köşedeki imzayı okuyun: \"J.L. David faciebat / Parisiis / anno MDCCLXXXVI\" (Paris, 1786).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S15 ham çıkarım (E7); PDF görsel teyidi insan editöre.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "İki Commons dosyasını karşılaştırın: GAP dosyası Toledo replikası, INV 3692 dosyası Louvre orijinali; ölçek ve kirmen farkını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S13 ObjectName \"Copy … made by Girodet\"; S14 \"photo Shonagon\"; boyut 6156×4800 ↔ 10051×7794.",
+   "kanit": [
+    "C034",
+    "C035",
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Q28797801 künyesi?",
+   "arka": "The Oath of the Horatii; Toledo replikası 1786; oil on canvas; 130,2×166,7 cm; 1950.308; Not on View; Vaudreuil siparişi; atıf David (Toledo) / Girodet (WD) tartışmalı.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Louvre orijinali (Q476458)?",
+   "arka": "Le serment des Horaces, entre les mains de leur père; INV 3692/MR 1432; 3,3×4,25 m; imza ROMAE MDCCLXXXIV; Salle 702 Denon (site uyarısı); Collection de Louis XVI.",
+   "kanit": [
+    "C002",
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Konu + kaynaklar?",
+   "arka": "Roma–Alba Longa; Horatii–Curiatii düellosu; Tullus Hostilius, MÖ 7. yy; Livius I.24–26, Dionysios III, Corneille Horace; yemin anı David'in icadı.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Toledo provenans?",
+   "arka": "Vaudreuil 1786 → Lebrun 26 Kasım 1787 lot 107 → Didot (1794) → Firmin-Didot → 1880 Hyacinthe Didot → 1913 Delamarre → Baronne d'Huart → 14 Aralık 1936 Paul Roux → 1937 Wildenstein → 1950 Toledo.",
+   "kanit": [
+    "C030"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "İki görsel dosyası + lisans?",
+   "arka": "GAP dosyası = Toledo kopyası taraması (6156×4800, PD); INV 3692 dosyası = Louvre orijinali fotoğrafı (10051×7794, PD-Art, Shonagon 2025); Louvre site görselleri telifli (GrandPalaisRmn).",
+   "kanit": [
+    "C034",
+    "C035",
+    "C036"
+   ]
+  }
+ ]
+}

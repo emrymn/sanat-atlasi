@@ -1,0 +1,264 @@
+{
+  "madde_id": "MIT-002",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (mit-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Hesiodos'un Theogonia'sında Zeus, Prometheus'u çözülmez bağlarla bağlar, gövdesinin ortasından bir kazık geçirir ve üzerine uzun kanatlı bir kartal salar; kartal gündüzleri ölümsüz ciğerini yer, ciğer gece boyunca kuşun gündüz yediği kadar yeniden büyür; Herakles kartalı öldürüp Prometheus'u bu beladan kurtarır (Zeus'un isteğiyle).",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-002-K01",
+      "kaynak_baslik": "Hesiod, Theogony, İngilizce çev. Hugh G. Evelyn-White (1914, LCL) — Perseus Digital Library, kart 507–544",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-eng1:507",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"And ready-witted Prometheus he bound with inextricable bonds, cruel chains, and drove a shaft through his middle, and set on him a long-winged eagle, which used to eat his immortal liver; but by night the liver grew as much again everyway as the long-winged bird devoured in the whole day.\"",
+      "pasaj_konum": "Hesiod, Theogony 521–531 (Perseus kartı 507–544)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Apollodoros, Library 2.5.11 (MIT-002-K07): kartalı Echidna-Typhon soyuna bağlar, mekânı Kafkas olarak verir ve Cheiron ikamesini ekler → versiyon farkı, çelişki değil; birleştirilmedi.",
+        "[Aiskhylos], Prometheus Bound 1–35 (MIT-002-K05/K06): ceza mekânı 'İskit ülkesi/ıssız kayalık'; bağlar 'kırılmaz adamant'."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Hesiodos kayanın yerini ADLANDIRMAZ; madde metninde 'Kafkas kayası' genellemesi kurulmadı. Herakles'in kurtarışı aynı kartta Zeus'un isteğine bağlanır (brief pasajının devamı). GELENEKSEL_ANLATI türü: tarihsel olgu gibi sunulmadı."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Hesiodos'un İşler ve Günler'inde (Works and Days) Zeus ateşi saklar; İapetos'un soylu oğlu Prometheus ateşi insanlar için içi boş bir rezene sapında (fennel-stalk) çalarak geri verir; Zeus öfkeyle 'ateşin bedeli' olarak insanlara kucaklayacakları bir kötülük vereceğini söyler.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-002-K04",
+      "kaynak_baslik": "Hesiod, Works and Days, İngilizce çev. — Perseus Digital Library, kart 42–59",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg002.perseus-eng1:42",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"He hid fire; but that the noble son of Iapetus stole again for men from Zeus the counsellor in a hollow fennel-stalk, so that Zeus who delights in thunder did not see it.\"",
+      "pasaj_konum": "Hesiod, Works and Days 50–53 (Perseus kartı 42–59)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Alıntılanan pasaj ateşin saklanması ve rezene sapında çalınması cümlesini kapsar; 'ateşin bedeli olarak kötülük' ifadesi aynı kartta (42–59) okunan devam dizelerindendir ve brief tarafından DOGRUDAN_DESTEK olarak kaydedilmiştir. Pandora'nın ayrıntılı yaratılış anlatısı (Works and Days 60–105) bu araştırmada AÇILMADI → Pandora ayrıntısı madde metninde kullanılmadı."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Geleneksel olarak Aiskhylos'a atfedilen (atfı tartışmalı) Prometheus Bound, İskit ülkesinin ıssız bir kayalığında açılır; Hephaistos Prometheus'u 'kırılmaz adamant bağlarla' kayaya çakar; suç 'her sanatın kaynağı ateşi çalıp ölümlülere vermek'tir; amaç, Zeus'un egemenliğine katlanmayı öğrenmesi ve insan-sever tutumundan vazgeçmesidir.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-002-K05",
+      "kaynak_baslik": "[Aeschylus], Prometheus Bound, İngilizce çev. Herbert Weir Smyth — Perseus Digital Library, kart 1–35",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg003.perseus-eng1:1",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Yunanca (K06): \"τὸ σὸν γὰρ ἄνθος, παντέχνου πυρὸς σέλας, / θνητοῖσι κλέψας ὤπασεν.\" — İngilizce (K05): \"For your own flower, flashing fire, source of all arts, he has purloined and bestowed upon mortal creatures… so that he may learn to bear with the sovereignty of Zeus and cease his man-loving ways.\"",
+      "pasaj_konum": "Prometheus Bound 1–10 (Perseus kartı 1–35)",
+      "belirsizlik_ifadeleri": [
+        "yazarlık atfı tartışmalıdır (MIT-002-K08, MIT-002-K09) → metin 'Aiskhylos'a atfedilir' ihtiyatıyla anılır",
+        "Perseus kaydı başlığı köşeli ayraçla verir: [Aeschylus]"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-002-K06"],
+      "celisen_kaynaklar": [
+        "Hesiodos, Theogony 521–531 (MIT-002-K01): ceza mekânı adlandırılmaz; Apollodoros 2.5.11 (MIT-002-K07): Kafkas → üç versiyon ayrı verildi."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI, METİN DÜZEYİNDEDİR (oyunun içeriği); yazarlık atfı doğrulanmış değildir. Madde metninde 'geleneksel olarak Aiskhylos'a atfedilen —atfı tartışmalı—' formu kullanıldı. Yunanca tam metnin yalnız 1–35 kartı okundu (diğer kartlar İngilizce çeviriden)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Prometheus Bound'da Prometheus insanlara verdiği yardımları sayar: sayılar, harflerin birleştirilmesi, yıldızların doğuş ve batışı, hayvanların boyunduruğa koşması, atlı araba, denizci gemisi, ilaçlar, kehanet yolları ve madenler; oyunun kendi ifadesiyle 'insanın sahip olduğu her sanat Prometheus'tan gelir'.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-002-K05",
+      "kaynak_baslik": "[Aeschylus], Prometheus Bound, İngilizce çev. Herbert Weir Smyth — Perseus Digital Library, kartlar 436–471 / 472–506",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0085.tlg003.perseus-eng1:1",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Hear the sum of the whole matter in the compass of one brief word—every art possessed by man comes from Prometheus.\"",
+      "pasaj_konum": "Prometheus Bound 436–506 (Perseus kartları 436–471 ve 472–506)",
+      "belirsizlik_ifadeleri": [
+        "yazarlık atfı tartışmalıdır → 'Aiskhylos'a atfedilir' ihtiyatı"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Alıntılanan cümle sanatlar listesinin özet hükmüdür; liste öğeleri (sayılar, harfler, yıldızlar, boyunduruk, atlı araba, gemi, ilaçlar, kehanet, madenler) aynı kartlar dizisinde (436–506) sıralanır."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Apollodoros'un Bibliotheke'sinde Herakles, Kafkas'ta, Echidna ile Typhon'dan doğma kartalı vurur ve Prometheus'u serbest bırakır; Prometheus kendi yerine zeytin bağını seçer; Zeus'a, ölümsüz olduğu halde onun yerine ölmeyi kabul eden Cheiron'u sunar. Hesiodos kayanın yerini adlandırmaz, Prometheus Bound 'İskit ülkesi' der; Kafkas adı Apollodoros'tadır — versiyonlar birleştirilmez.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-002-K07",
+      "kaynak_baslik": "Apollodorus, Library 2.5.11 (Frazer İngilizce çevirisi) — Perseus Digital Library",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Apollod.%202.5.11&lang=original",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"he shot on the Caucasus the eagle, offspring of Echidna and Typhon, that was devouring the liver of Prometheus, and he released Prometheus, after choosing for himself the bond of olive, and to Zeus he presented Chiron, who, though immortal, consented to die in his stead.\"",
+      "pasaj_konum": "Apollodoros, Library 2.5.11",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-002-K01", "MIT-002-K05"],
+      "celisen_kaynaklar": [
+        "Hesiodos, Theogony 521–531 (MIT-002-K01): mekân adı yok, kartalın soyu belirtilmez, Cheiron ikamesi yok.",
+        "[Aiskhylos], Prometheus Bound (MIT-002-K05/K06): mekân 'İskit ülkesi' — Kafkas değil."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "VERSİYON KAYDI: üç kaynağın mekân ve ceza unsurları ayrı ayrı verildi, tek anlatıya eritilmedi. Resim yazınında yaygın 'Kafkas kayası' şablonu madde metninde olgu gibi sunulmadı."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Prometheus Bound'un Aiskhylos'a atfı tartışmalıdır: Manousakis (2020) çalışmasının bilgisayar destekli stilometrik hesaplamaları Aiskhylos yazarlığını 'çok yüksek olasılıkla değil' sonucuna götürür ve eserin y. MÖ 440–430 on yılına tarihlenmesini önerir; M. L. West yazarın Aiskhylos'un oğlu Euphorion olabileceğini öne sürmüştür (bir hipotez olarak).",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "MIT-002-K08",
+      "kaynak_baslik": "Bryn Mawr Classical Review 2021.04.10 — Peter Barrios-Lech'in Nikos Manousakis, 'Prometheus bound' – a separate authorial trace in the Aeschylean corpus (De Gruyter 2020) değerlendirmesi",
+      "url": "https://bmcr.brynmawr.edu/2021/2021.04.10/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Manousakis, with the help of a variety of computer-aided calculations, shows that Aeschylean authorship of Prometheus Bound is very highly unlikely… A subsidiary argument for the dating of the Prometheus Bound to the decade 440-430 BCE convinces, though cannot be conclusive.\"",
+      "pasaj_konum": "BMCR 2021.04.10, giriş ve sonuç paragrafları",
+      "belirsizlik_ifadeleri": [
+        "\"cannot be conclusive\" (tarihleme için)",
+        "\"may not surprise anyone\"",
+        "\"very highly unlikely\" (kesin hüküm değil, olasılık ifadesi)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Mtvarelidze, Phasis 17 (2014) (MIT-002-K09): kendi dijital karşılaştırması Prometheus Bound'un sözcük dağarcığını Aiskhylos külliyatına EN YAKIN bulur → karşıt yönde bulgu."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "HIPOTEZ türü: DOGRULANDI, atıf TARTIŞMASININ VARLIĞI VE YÖNÜ içindir (stilometrik bulgunun Aiskhylos yazarlığını olasılıksız bulduğu, West'in Euphorion hipotezini önerdiği okunan kaynaktan doğrulanmıştır); Prometheus Bound'un Aiskhylos'a ait olmadığının kesin kanıtı DEĞİLDİR. Manousakis'in kitabının tam metni açılmadı; bulgular hakemli BMCR değerlendirmesi üzerinden aktarıldı. Karşıt bulgu (K09) madde metninde ve C010'da ayrıca verildi."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Yazarlık sorunu 19. yüzyılda R. Westphal'ın 1856'daki kuşkularıyla başlar ve M. L. West'in 1990'daki Euphorion hipotezine uzanır; Winnington-Ingram'ın tanımıyla 'edebiyat tarihinin en ilgi çekici sorunlarından biri'dir ve hâlâ çözülmemiştir; aynı çalışmanın kendi dijital karşılaştırması Prometheus Bound'un sözcük dağarcığını Aiskhylos külliyatına en yakın bulur (karşıt yönde bulgu).",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "MIT-002-K09",
+      "kaynak_baslik": "Tatia Mtvarelidze, 'The Vocabulary of Prometheus Bound in the Context of Aeschylean Poetics', Phasis 17 (2014): 220–230",
+      "url": "https://phasis.tsu.ge/index.php/PJ/article/download/2334/2117/2582",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"Prometheus's authorship enigma is one of the most intriguing problems in the history of literature – as Winnington-Ingram defined it – and still remains unresolved.\" + dipnot 2: \"Beginning from the doubts of R. Westphal (1856) about Aeschylean authorship, to the hypothesis of M. L. West (1990) suggesting Euphorion as an author of the play…\"",
+      "pasaj_konum": "Phasis 17 (2014), s. 220–221 ve dipnot 2",
+      "belirsizlik_ifadeleri": [
+        "\"still remains unresolved\""
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-002-K08"],
+      "celisen_kaynaklar": [
+        "MIT-002-K08 (BMCR 2021.04.10 / Manousakis 2020): stilometrik bulgu Aiskhylos yazarlığını 'çok yüksek olasılıkla değil' olarak verir; K09'un kendi sözcük dağarcığı karşılaştırması ise PV'yi Aiskhylos külliyatına en yakın bulur → iki yönlü bulgu birlikte sunuldu."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "K09 hakemli açık erişim makalesidir; tam metin PDF olarak okundu. Madde metni 'hâlâ çözülmemiştir' ihtiyatını korur ve yazarlık hakkında kesin hüküm vermez."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Philadelphia Museum of Art'ta Peter Paul Rubens'in (kartalı çizen Frans Snyders ile) Prometheus Bound tablosu vardır; müze kaydına göre y. 1611–1612'de başlanmış, 1618'e kadar tamamlanmıştır; acc. W1950-3-1 (object 104468), tuval üzerine yağlıboya.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-002-K10",
+      "kaynak_baslik": "Philadelphia Museum of Art, Object 104468: Prometheus Bound (Rubens & Snyders), acc. W1950-3-1",
+      "url": "https://www.philamuseum.org/objects/104468",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K10: \"Peter Paul Rubens, Prometheus Bound, Begun c. 1611-1612, completed by 1618\" — K11: \"Prometheus Bound (detail), begun c. 1611–18, by Peter Paul Rubens (Flemish, 1577–1640) and Frans Snyders (Flemish, 1579–1657), W1950-3-1\".",
+      "pasaj_konum": "K10 nesne sayfası künye alanı; K11 'Collection Highlight: Prometheus Bound' başlık/altlık kaydı",
+      "belirsizlik_ifadeleri": [
+        "\"Begun c. 1611-1612, completed by 1618\" (müzenin kendi 'begun/completed' ihtiyatı)",
+        "\"begun c. 1611–18\" (highlight metnindeki farklı aralık ifadesi)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-002-K11"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Müze kaydı (birincil, hiyerarşi 1) canlı okundu. Tarih aralığı iki PMA sayfasında farklı biçimde ifade edildiği için madde metninde 'y. 1611–1612'de başlanmış, 1618'e kadar tamamlanmıştır' ihtiyatıyla verildi. Tablonun malzemesi (tuval üzerine yağlıboya) brief §4 kaydına dayanır."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Prado'daki Titian tuvali Prometheus DEĞİL, Tityus'tur: inv. P000427, Prado kaydına göre ca. 1565, tuval üzerine yağlıboya, 253 × 217 cm, Room 027; 'Las Furias' dizisindendir (Binche sarayı, Brüksel) ve Mary of Hungary için yapılan 1548–49 tarihli özgünün Titian'ın kendi geç tekrarıdır; Philadelphia Museum of Art'ın küratöryel metni ise aynı eseri '1548–49' olarak tarihler → tarih kaynaklar arasında ihtilaflıdır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-002-K14",
+      "kaynak_baslik": "Museo Nacional del Prado: Tityus, Titian, inv. P000427",
+      "url": "https://www.museodelprado.es/en/the-collection/art-work/tityus/68555098-f6fd-453f-ab0a-859385ce3b3a",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-04-23"
+      },
+      "pasaj": "\"Tityus | Ca. 1565. Oil on canvas. | Room 027 … This work is Titian's own late repetition of the original, painted by him for Mary of Hungary as part of a series of Furies.\" + kayıt alanları: \"Inventory number P000427 … Height: 252.99998 cm; Width: 216.99998 cm … Series: Las Furias, Gran Sala del Palacio de Binche, Bruselas\" — PMA (K11): \"…inspired by a painting by Titian of the giant Tityus (1548–49; Museo del Prado, Madrid).\"",
+      "pasaj_konum": "K14 nesne kaydı (Wayback snapshot 2026-04-23; sayfa güncelleme alanı 11-03-2026); K11 'Rubens's Painting of Prometheus' bölümü",
+      "belirsizlik_ifadeleri": [
+        "\"Ca. 1565\" (Prado kaydı)",
+        "\"Titian's own late repetition of the original\" (özgünün geç tekrarı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-002-K11"],
+      "celisen_kaynaklar": [
+        "MIT-002-K11 (Philadelphia Museum of Art, küratör Christopher Atkins): Titian'ın Tityus tablosunu '1548–49' olarak tarihler ve Prado'yu işaret eder ↔ MIT-002-K14 (Prado kendi kaydı): 'Ca. 1565', özgünün geç tekrarı. Çelişki TARİH konusundadır; eserin kimliği (Tityus, P000427) iki kaynakta aynıdır."
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "KAVRAM AYRIMI: Prado'da 'Titian Prometheus'u' kaydı YOKTUR; yazar böyle bir ifade kullanmadı. Titian'ın Mary of Hungary için yaptığı özgün 'Furies' dizisinin Prometheus'u içerip içermediği bu araştırmada DOĞRULANMADI → iddia kurulmadı. Canlı Prado sayfası HTTP 403 verdiği için Wayback snapshot (2026-04-23, id_ ucu; gzip gövde açıldı) kullanıldı. Boyut kaydı 252.99998 × 216.99998 cm'dir; madde metninde 253 × 217 cm olarak yuvarlanarak verildi."
+    },
+    {
+      "claim_id": "C015",
+      "iddia": "Strasbourg musée des Beaux-Arts'taki Piero di Cosimo panosunda (Joconde inv. MBA 354) Phoebus güneş arabasıyla göğü geçer, Prometheus yaklaşarak göksel ateşi çalar; solda kahraman meşalesiyle bir heykeli canlandırır; ortada tanrılar suçunu yargılamak için oturur; sağda Merkür (Hermes) cezayı uygular ve Prometheus'u, dallarında Jüpiter'in kartalının beklediği bir ağaca bağlar; fonda surlu bir kent vardır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-002-K12",
+      "kaynak_baslik": "Ministère de la Culture (Fransa), POP/Joconde — Notice 00190028909: Le Mythe de Prométhée, Piero di Cosimo (Strasbourg, musée des Beaux-Arts, inv. MBA 354)",
+      "url": "https://pop.culture.gouv.fr/notice/joconde/00190028909",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Phébus traverse le ciel dans le char du soleil, Prométhée s'en approche et dérobe le feu céleste. A gauche, le héros anime une statue en la touchant de sa torche embrasée; au centre les dieux siègent pour juger son forfait; à droite, Mercure exécute la sentence et lie Prométhée à un arbre dans les branches duquel attend l'aigle de Jupiter. Au fond, ville fortifiée.\"",
+      "pasaj_konum": "K12, 'Précisions sur le sujet représenté' alanı",
+      "belirsizlik_ifadeleri": [
+        "kayıt tarih aralığı: \"Millésime de création: 1510 ; 1515\""
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Tarih/boyut farkı (konu betimi değil): Joconde '1510 ; 1515' ve 67,4 × 119,6 cm verir; literatürde '1515' ve 64 × 116 cm değerleri geçer → müze kaydı esas alındı, literatür değeri teyitsiz sayıldı.",
+        "collections.musees.strasbourg.eu nesne sayfası HTTP 500 (2026-11-15) → ERİŞİLEMEDİ; bağımsız ikinci kaynak bu turda açılamadı."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkonografik varyant notu korundu: bağlanma yeri KAYA değil AĞAÇTIR ve cezayı uygulayan Merkür'dür (Hermes); bu nedenle 'Kafkas kayası' şablonu bu esere uygulanmadı. Devlet kataloğu (Joconde) birincil kayıt olarak kullanıldı (hiyerarşi 1)."
+    }
+  ]
+}

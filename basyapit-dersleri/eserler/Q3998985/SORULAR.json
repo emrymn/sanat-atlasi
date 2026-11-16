@@ -1,0 +1,596 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3998985",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Royal Collection'daki orijinal tablonun envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RCIN 404420"
+    },
+    {
+     "harf": "B",
+     "metin": "P001500"
+    },
+    {
+     "harf": "C",
+     "metin": "598-1882"
+    },
+    {
+     "harf": "D",
+     "metin": "PD P2-11 PPA72537"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT arşiv kayıtları (2015/2017/2024) envanteri RCIN 404420 olarak verir.",
+   "yanlis_gerekceleri": {
+    "B": "P001500, Prado'daki 17. yüzyıl kopyasının katalog numarasıdır; orijinalin envanteri değildir.",
+    "C": "598-1882, V&A'daki yaklaşık 1750 tarihli kopyanın accession numarasıdır.",
+    "D": "PD P2-11 PPA72537, British Museum'daki gravürün museum number'ıdır; tabloyla ilgisi yoktur."
+   },
+   "kanit": [
+    "C009",
+    "C031",
+    "C030",
+    "C032"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Tablo 1636'da Roma'ya kime model olarak gönderildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gian Lorenzo Bernini"
+    },
+    {
+     "harf": "B",
+     "metin": "François Dieussart"
+    },
+    {
+     "harf": "C",
+     "metin": "Robert van Voerst"
+    },
+    {
+     "harf": "D",
+     "metin": "Philippe de Champaigne"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT ve V&A: tablo, Bernini'nin mermer büstüne model olarak 1636'da Roma'ya gönderildi; üç bakış üç boyutlu benzerlik için seçildi.",
+   "yanlis_gerekceleri": {
+    "B": "Dieussart 1636'da Londra'ya gelen heykeltıraştır; BM gravürü onun büstünü reprodukte eder, tablonun alıcısı o değildir.",
+    "C": "van Voerst gravürcüdür (BM plakası ona atfedilir); tablo Roma'ya bir heykeltıraşa gönderilmiştir.",
+    "D": "Champaigne ressamdır; Richelieu üçlü portresini yapan sanatçıdır, bu tablonun alıcısı değildir."
+   },
+   "kanit": [
+    "C016",
+    "C032",
+    "C052",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Kralın Bernini'ye yazdığı ve mermer portreyi istediği mektubun tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "17 Mart 1636"
+    },
+    {
+     "harf": "B",
+     "metin": "17 Temmuz 1637"
+    },
+    {
+     "harf": "C",
+     "metin": "1638"
+    },
+    {
+     "harf": "D",
+     "metin": "1698"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT, Kral'ın Lorenzo Bernini'ye mektubunu 17 Mart 1636 tarihiyle ve İtalyanca alıntıyla aktarır.",
+   "yanlis_gerekceleri": {
+    "B": "17 Temmuz 1637, büstün Oatlands'te Kral ve Kraliçe'ye sunulduğu tarihtir; mektup tarihi değildir.",
+    "C": "1638, Bernini'nin 800 £ değerinde elmas yüzükle ödüllendirildiği yıldır.",
+    "D": "1698, büstün yok olduğu Whitehall Palace yangınının yılıdır."
+   },
+   "kanit": [
+    "C017",
+    "C019",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Bernini'nin I. Charles büstünün akıbeti nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1698 Whitehall Palace yangınında yok oldu"
+    },
+    {
+     "harf": "B",
+     "metin": "İç Savaş'ta satıldı ve bir daha geri alınamadı"
+    },
+    {
+     "harf": "C",
+     "metin": "V&A'da 598-1882 olarak korunuyor"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado'da P001500 olarak sergileniyor"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT ve V&A kayıtları büstün 1698 Whitehall Palace yangınında yok olduğunu bildirir.",
+   "yanlis_gerekceleri": {
+    "B": "enwiki büstün İç Savaş sonunda satıldığını, ancak Restoration'da Royal Collection için geri alındığını aktarır; \"geri alınamadı\" kısmı yanlıştır.",
+    "C": "V&A'daki 598-1882, tablonun yaklaşık 1750 tarihli bir kopyasıdır; mermer büst değildir.",
+    "D": "Prado'daki P001500, tablonun 17. yüzyıl kopyasıdır; büst değil, üstelik La Coruña'da depozitodur."
+   },
+   "kanit": [
+    "C021",
+    "C022",
+    "C030",
+    "C031"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "RCT arşiv kaydına (2017/2024) göre tablo Royal Collection'a nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "George IV, 1822'de Mr Wells'ten 1000 guineas'a satın aldı"
+    },
+    {
+     "harf": "B",
+     "metin": "William Buchanan, 1802'de 1000 guineas'a satın aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Bernini ailesinden 1637'de doğrudan alındı"
+    },
+    {
+     "harf": "D",
+     "metin": "John Jones vasiyetiyle 1882'de geldi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT provenance: \"Purchased by George IV in 1822 from Mr Wells for 1000 guineas\"; 2015/2017/2024 kayıtlarında aynıdır.",
+   "yanlis_gerekceleri": {
+    "B": "Buchanan halkası enwiki'nin farklı zincirine aittir (c.1802); RCT arşiv kaydında Buchanan geçmez ve 1000 guineas Wells'ten alım bedelidir.",
+    "C": "1637, RCT provenance'ındaki \"Painted for Bernini about 1637\" sipariş ifadesinin tarihidir; bir satın alma değil.",
+    "D": "John Jones vasiyeti (1882), V&A kopyasının edinim yoludur; orijinalin değil."
+   },
+   "kanit": [
+    "C024",
+    "C025",
+    "C030",
+    "C061"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kaynakların betimlediği üç bakış açısı hangi sıradadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Solda tam profil, ortada cephe, sağda üç çeyrek profil"
+    },
+    {
+     "harf": "B",
+     "metin": "Üçü de tam profil"
+    },
+    {
+     "harf": "C",
+     "metin": "Solda üç çeyrek, ortada profil, sağda cephe"
+    },
+    {
+     "harf": "D",
+     "metin": "Arkadan, yandan ve önden"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "enwiki (RCT ref'li): \"left full profile, face on, and right three-quarter profile\"; V&A üç bakışın üç boyutlu benzerlik için seçildiğini yazar.",
+   "yanlis_gerekceleri": {
+    "B": "Üç pozisyonun üçü de profil değildir; ortadaki figür cepheden gösterilir.",
+    "C": "Açıların sırası ters verilmiştir; kaynak solda tam profil, ortada cephe, sağda üç çeyrek der.",
+    "D": "Arkadan görünüş kaynak betiminde yoktur; açılar profil / cephe / üç çeyrektir."
+   },
+   "kanit": [
+    "C012",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "RCT kaydının betimlediği görsel unsur hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üçünde mavi Garter kurdelesi; üç farklı kostüm rengi ve üç farklı desenli dantel yaka"
+    },
+    {
+     "harf": "B",
+     "metin": "Üçünde inci küpe"
+    },
+    {
+     "harf": "C",
+     "metin": "Üçünde aynı renk kostüm ve aynı desenli yaka"
+    },
+    {
+     "harf": "D",
+     "metin": "Gökyüzü tümüyle bulutsuz ve düz"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RCT: mavi Garter kurdelesi ile üç farklı kostüm rengi ve üç ayrı desenli dantel yaka karşıtlığı; gökyüzü \"richly worked\" olarak tanımlanır.",
+   "yanlis_gerekceleri": {
+    "B": "İnci küpe, uygulama verisinin hotspot iddiasıdır; erişilen kaynak metinlerinde geçmez ve görsel bu oturumda incelenmedi.",
+    "C": "Kaynak, kostüm renklerinin ve dantel yaka desenlerinin üç figürde farklı olduğunu açıkça söyler.",
+    "D": "RCT gökyüzünü \"richly worked\" (zengin işlenmiş) diye tanımlar; \"bulutsuz/düz\" nitelemesi kaynakta yoktur."
+   },
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "V&A'daki 598-1882 numaralı nesne hakkında doğru olan hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"after van Dyck\", ca. 1750, John Jones vasiyeti 1882, Room 56 Djanogly Gallery"
+    },
+    {
+     "harf": "B",
+     "metin": "van Dyck'ın 1635–1636 tarihli orijinali"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado'nun P001500 kopyasıyla aynı nesne"
+    },
+    {
+     "harf": "D",
+     "metin": "Bernini büstünün mermer bir kopyası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "V&A O77684: 598-1882, \"ca. 1750 (made)\", after van Dyck, oil on canvas, 94 × 113 × 10 cm, John Jones bequest 1882, British Galleries Room 56 (The Djanogly Gallery).",
+   "yanlis_gerekceleri": {
+    "B": "Orijinal Royal Collection'dadır (RCIN 404420); V&A nesnesi \"About 1750, copying an original of 1635-1636\" diye kayıtlı bir kopyadır.",
+    "C": "P001500 Prado'nun ayrı kopyasıdır (81 × 99 cm, La Coruña depozito); V&A kopyası farklı boyut ve accession numarası taşır.",
+    "D": "V&A nesnesi oil on canvas bir tablodur; mermer büst değildir."
+   },
+   "kanit": [
+    "C030",
+    "C009",
+    "C031"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Prado'nun P001500 numaralı kopyası bugün nerede bulunuyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "La Coruña, Museo de Bellas Artes (depósito)"
+    },
+    {
+     "harf": "B",
+     "metin": "Prado, Madrid (kalıcı sergi)"
+    },
+    {
+     "harf": "C",
+     "metin": "V&A South Kensington, Room 56"
+    },
+    {
+     "harf": "D",
+     "metin": "Windsor Castle, Queen's Drawing Room"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Prado kaydı: \"Ubicación: La Coruña - Museo de Bellas Artes de La Coruña (Depósito)\"; kayıt \"Depósito en otra institución\" der.",
+   "yanlis_gerekceleri": {
+    "B": "Nesne Prado'da değil, başka bir kuruma depozitolanmıştır; kayıt bunu açıkça belirtir.",
+    "C": "Room 56 Djanogly Gallery, V&A kopyası 598-1882'nin sergilendiği yerdir.",
+    "D": "Queen's Drawing Room, RCT'nin 2024 arşiv kaydında orijinal tablo için verdiği Windsor Castle konumudur; Prado kopyasıyla ilgisi yoktur."
+   },
+   "kanit": [
+    "C031",
+    "C030",
+    "C062"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "British Museum'daki PD P2-11 PPA72537 gravürü neyi reprodukte eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "François Dieussart'ın büstünü; plaka van Voerst'e atfedilir, bitmemiş proof"
+    },
+    {
+     "harf": "B",
+     "metin": "Bernini'nin kayıp büstünün kesin reproduksiyonunu"
+    },
+    {
+     "harf": "C",
+     "metin": "Van Dyck'ın bu tuvalinin doğrudan gravürünü"
+    },
+    {
+     "harf": "D",
+     "metin": "Jan Blommendael'in mermer büstünü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM: \"After a sculpted bust by François Dieussart\"; plaka van Voerst'e (1597–1636) \"attributed\"; bitmemiş proof; 495 × 325 mm.",
+   "yanlis_gerekceleri": {
+    "B": "enwiki gravürün uzun süre Bernini büstünü gösterdiğinin sanıldığını, artık Dieussart'a bağlandığını aktarır; \"kesin\" nitelemesi kaynak diliyle çelişir.",
+    "C": "Gravür bir heykel büstünü reprodukte eder; tablonun doğrudan baskısı değildir.",
+    "D": "Blommendael büstünün Bernini kopyası olduğu iddiası itwiki'de ölü bir referansa dayanır ve doğrulanmadı; BM kaydı Dieussart der."
+   },
+   "kanit": [
+    "C032",
+    "C053"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo, Bernini'nin mermer büstüne model olmak üzere 1636'da Roma'ya gönderildi.",
+   "dogru": true,
+   "aciklama": "Doğru: RCT ve V&A kayıtları bunu açıkça belgeler; üç bakış, heykeltıraşın üç boyutlu benzerlik kurabilmesi için seçildi.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "RCT arşiv kayıtları tarih alanını \"1635-before June 1636\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: 2015, 2017 ve 2024 kayıtlarında aynı aralık; ayrıca \"probably begun in the second half of 1635\" notu korunur.",
+   "kanit": [
+    "C004",
+    "C005",
+    "C061"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Bernini'nin I. Charles büstü bugün Windsor Castle'da sergilenmektedir.",
+   "dogru": false,
+   "aciklama": "Yanlış: büst 1698 Whitehall Palace yangınında yok oldu. BM kaydı Windsor'daki erken büst kopyasını Dieussart'a bağlar; Bernini büstüne değil.",
+   "kanit": [
+    "C021",
+    "C032"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "V&A'daki 598-1882, van Dyck'ın 1635–1636 tarihli orijinalidir.",
+   "dogru": false,
+   "aciklama": "Yanlış: V&A nesnesi \"after van Dyck\" ve \"ca. 1750 (made)\" olarak kayıtlı bir kopyadır; orijinal Royal Collection'da RCIN 404420.",
+   "kanit": [
+    "C030",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "RCT, van Dyck'ın Lotto'nun üçlü portresinden \"presumably\" etkilendiğini yazar; yani etki kesin değildir.",
+   "dogru": true,
+   "aciklama": "Doğru: kaynak \"presumably\" der, enwiki \"It is thought\" diye aktarır; belirsizlik kesinleştirilmeden korunmalıdır.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "RCT (2015/2017/2024), enwiki ve V&A provenance zincirlerini karşılaştırın: hangi halkalar uzlaşıyor, hangileri ihtilaflı? RCT 2024'teki Carlton House 1816/1819 anomalisini ve güncel kaydın 403 olmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Bernini ailesi → 1802 civarı İngiltere → 1822 RC çekirdeği",
+    "Irvine/Porter/Wells ↔ Buchanan",
+    "1821 British Gallery yalnız enwiki",
+    "1822 ↔ 1816/1819 anomali",
+    "canlı 403 + kabuk arşivler"
+   ],
+   "kanit": [
+    "C024",
+    "C025",
+    "C026",
+    "C043",
+    "C063",
+    "C064",
+    "C048"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Üç bakışlı portrenin \"heykeltıraş için tasarım\" işlevini 17 Mart 1636 mektubu ve V&A'nın \"three-dimensional likeness\" ifadesiyle açıklayın; bu araçsallığın portre estetiğine etkisini yorumlayın.",
+   "beklenen_ogeler": [
+    "mektup alıntısı (İtalyanca)",
+    "profil/cephe/üç çeyrek bilgi kanalları",
+    "care and restraint",
+    "utilitarian commission → work of great beauty",
+    "yorum/olgu ayrımı"
+   ],
+   "kanit": [
+    "C016",
+    "C017",
+    "C012",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Büstün papalık hediyesi olarak planlanmasını VIII. Urbanus'un İngiltere beklentileri bağlamında değerlendirin; \"hopes were entertained\" ifadesinin kesinleştirilmemesi neden önemlidir? 1637 sunumu ile 1638 gönderimi arasındaki nüansı tartışın.",
+   "beklenen_ogeler": [
+    "papal present / Henrietta Maria",
+    "Urban VIII umutları (beklenti, sonuç değil)",
+    "Oatlands 17 Temmuz 1637",
+    "1638 elmas yüzük",
+    "Sharpe 1992 ref'li 1638 gönderimi (E)"
+   ],
+   "kanit": [
+    "C018",
+    "C019",
+    "C020",
+    "C049",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/ hotspot iddialarını (inci küpe, Jartiyer yıldızı, altın madalyon, \"bulutlu gök\") erişilen kaynaklarla karşılaştırın; BM gravüründeki madalyon ayrıntısını da düşünerek görsel teyit için bir kontrol listesi hazırlayın.",
+   "beklenen_ogeler": [
+    "RCT \"richly worked sky\" ≠ \"bulutlu\"",
+    "küpe/yıldız/madalyon kaynaklarda yok",
+    "BM gravüründe işlenmemiş madalyon (büst)",
+    "görsel incelenmedi → GZ TASLAK",
+    "data düzeltme önerisi (data değiştirilmez)"
+   ],
+   "kanit": [
+    "C040",
+    "C013",
+    "C014",
+    "C032",
+    "C047"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Lotto → van Dyck → Champaigne etki hattını \"presumably/probably/may have\" ifadelerini koruyarak yazın; Richelieu tarihi (1642 ↔ 1641/1640 circa) ve Lotto başlık varyantı ihtilaflarını yönetin.",
+   "beklenen_ogeler": [
+    "presumably (Lotto)",
+    "probably (Champaigne)",
+    "Bernini or another sculptor kuşkusu",
+    "1642 ↔ 1641/1640 circa",
+    "Portrait of a Man in Three Positions ↔ Triple Portrait of a Goldsmith"
+   ],
+   "kanit": [
+    "C027",
+    "C028",
+    "C044",
+    "C046"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç başın açılarını soldan sağa sıralayın: tam profil, cephe, üç çeyrek. Hangi açı heykeltıraşa hangi bilgiyi veriyor?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (enwiki/RCT + V&A): \"left full profile, face on, and right three-quarter profile\"; üç boyutlu benzerlik için seçilmiş açılar.",
+   "kanit": [
+    "C012",
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Mavi Garter kurdelesini üç figürde de bulun; kostüm renklerinin ve dantel yaka desenlerinin farklılığını karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RCT): mavi Garter ribbon + üç farklı kostüm rengi + üç ayrı desenli dantel yaka.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Saçın solda daha uzun oluşunu ve figürün uzayda döndürülmesini izleyin; bu asimetri üç pozisyonda nasıl değişiyor?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RCT): dönemin saç modası (solda daha uzun), figürün uzayda döndürülmesiyle açıkça gösterilir.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Gökyüzünün \"richly worked\" (zengin işlenmiş) dokusunu inceleyin; başların özenli, ölçülü modellenmesiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RCT): richly worked sky; başlar Van Dyck için alışılmadık özen/ölçülülükle (care and restraint) modellenmiş.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tuvalin yatay formatını (84,4 × 99,4 cm) ve üç figürün bu formata yerleşimini kontrol edin; çerçeve ölçüsüyle (107 × 122,3 cm) farkı not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak ölçüsü (RCT): support 84.4 × 99.4 cm, frame 107 × 122.3 cm; enwiki boyutları ters yazar (ihtilaflı).",
+   "kanit": [
+    "C008",
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Charles I (1600-1649) / Charles I in Three Positions (Triple Portrait); Sir Anthony van Dyck (1599–1641); \"1635-before June 1636\"; oil on canvas, lined canvas (2024: glazed); 84,4 × 99,4 cm support, 107 × 122,3 cm çerçeve; Royal Collection RCIN 404420.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C007",
+    "C008",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "İşlev + mektup?",
+   "arka": "1636'da Roma'ya Bernini'nin mermer büstüne model; 17 Mart 1636 mektubu \"il Nostro Ritratto in Marmo, sopra quello che in un Quadro vi manderemo subiito\"; üç bakış (sol tam profil, cephe, sağ üç çeyrek) üç boyutlu benzerlik için.",
+   "kanit": [
+    "C016",
+    "C017",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Büstün kaderi?",
+   "arka": "1636 yazında yapıldı; 17 Temmuz 1637 Oatlands'te Kral ve Kraliçe'ye sunuldu; Bernini 1638'de 800 £ elmas yüzükle ödüllendirildi; büst 1698 Whitehall Palace yangınında yok oldu; Henrietta Maria için eş büst hiç yapılmadı.",
+   "kanit": [
+    "C019",
+    "C020",
+    "C021",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance (RCT) + uzlaşan çekirdek?",
+   "arka": "RCT: Bernini family → Mr Irvine → Walsh Porter → Mr Wells → George IV 1822, 1000 guineas; 2024 ek: Carlton House 1816 (570)/1819 (548) + Windsor \"Van Dyck Room\". V&A: 1802 İngiltere, 1822 RC. Uzlaşan çekirdek: Bernini ailesi → 1802 civarı İngiltere → 1822 Royal Collection.",
+   "kanit": [
+    "C024",
+    "C026",
+    "C063",
+    "C061"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Kopyalar + gravür?",
+   "arka": "V&A 598-1882 (after van Dyck, ca.1750, John Jones 1882, Room 56 Djanogly); Prado P001500 (Copia Dyck, Siglo XVII, 81 × 99, Colección Real, La Coruña depósito); BM PD P2-11 PPA72537 (Dieussart büstünden, van Voerst'e attributed, bitmemiş proof, 495 × 325 mm).",
+   "kanit": [
+    "C030",
+    "C031",
+    "C032"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,834 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2324840",
+ "sanatci_id": "william-blake",
+ "baslik": "Günlerin Atası",
+ "ozgun_baslik": "The Ancient of Days",
+ "kunye": {
+  "sanatci": "William Blake",
+  "sanatci_yasam": "1757–1827",
+  "tarih": "1794 (ilk baskı); gösterilen Copy K muhtemelen 1821",
+  "tarih_belirsizlik": "İlk baskı 1794 (BM/BA, A); Copy K baskısı 1821 \"probable dates of printing\" (BA, B); data 1794 = tasarım/ilk baskı, nüsha tarihi değil (D3)",
+  "teknik": "Renkli rölyef gravür + white-line etching (mavi, siyah, kırmızı, sarı) + elle renklendirme; kâğıt. \"Suluboya\" özgüllemesi kaynaksız (E4)",
+  "boyut_cm": {
+   "yukseklik": 23.3,
+   "genislik": 16.8
+  },
+  "muze": "British Museum (Copy D, referanslı kayıt) — gösterilen görsel ise Copy K, Fitzwilliam Museum (D1)",
+  "envanter": "1859,0625.72 (BM Copy D); Copy K (Fitzwilliam) envanter no erişilen kaynaklarda bulunamadı",
+  "edinim": "BM Copy D: 1859, Francis Turner Palgrave'den satın alma; önceki sahipler Humphry (?)/Butts (?) (belirsiz)",
+  "konum": "BM Copy D: \"Not on display\" (Prints and Drawings); Copy K: Fitzwilliam Museum, Cambridge",
+  "telif_durumu": "Kamu malı (Blake ö. 1827); Commons PD-Art/PD-old-auto-expired; WD P6216=Q19652"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Europe_a_Prophecy_copy_K_plate_01.jpg",
+  "kaynak": "Wikimedia Commons (credit: The William Blake Archive); Copy K, Fitzwilliam Museum",
+  "lisans": "Public domain (PD-Art, PD-old-auto-expired, deathyear=1827)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S5/S6); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2217×3004 px · 1.494.518 bayt · upload 2010-03-27",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C039); GZ TASLAK; kompozisyon BM/BA/wiki betiminden; gösterilen Copy K (Fitzwilliam) ↔ BM Copy D ayrı (D1); Copy K boyut BA 23.4×16.9 ↔ Commons 30.8×24.8 (D2); \"1\" rakamı/renk/rüzgâr iddiaları doğrulanmadı; kunye boyut_cm BM Copy D'ye aittir"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 420
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1338
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2658
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarihsel-bağlam-ve-baskı-tarihçesi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ve-üretim-süreci"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-görsel-sınır"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-urizen-pergel-ve-başlık"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-rölyef-gravür-ve-elle-renklendirme"
+  ],
+  "7": [
+   "DERS_ORTA.md#7-felsefi-ve-estetik-analiz-kısa",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar-özet",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Künyeyi birincil BM kaydıyla doğrular: Blake, Europe a Prophecy önispisi, ilk baskı 1794 London, renkli rölyef gravür + elle renklendirme, kâğıt.",
+  "Gösterilen nüsha (Copy K, Fitzwilliam) ile BM nüshasını (Copy D, 1859,0625.72) ayırt eder; boyut/tarih/edinim alanlarını nüshaya bağlar (D1).",
+  "BM betimini hedge'leriyle aktarır: küre içinde çömelmiş, pergelle karanlığı ölçen figür \"(probably Urizen)\".",
+  "Baskı tarihçesini BA'nın \"probable dates of printing\" şerhiyle sunar; nüsha/levha sayısı ihtilaflarını D olarak yönetir.",
+  "Kanıt sınırlarını beyan eder: görsel incelenmedi (GZ TASLAK); \"suluboya\"/Milton/Ön-Raffaellocu etkisi gibi data iddiaları kanıtsız (E)."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Rölyef gravür (relief etching)",
+   "tanim": "Blake'in aydınlatılmış kitap tekniği: yazı ve tasarım levhada kabartma bırakılır, mürekkeplenip basılır; BM \"relief etching; hand-coloured; colour\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "White-line etching",
+   "tanim": "Levha üzerinde kazınarak bırakılan beyaz çizgilerle detaylandırma; BM Copy D tekniğinde açıkça geçer, BA \"considerable white-line work\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Önispis (frontispiece)",
+   "tanim": "Kitabın başındaki tanıtıcı levha; The Ancient of Days, Europe a Prophecy'nin plate 1 önispisidir.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Urizen",
+   "tanim": "Blake mitolojisinde \"Eternals\"/Zoas figürü; BM betiminde \"(probably Urizen)\" — kesin değil.",
+   "kanit": [
+    "C012",
+    "C002"
+   ]
+  },
+  {
+   "ad": "Nüsha (copy)",
+   "tanim": "Aynı levhalardan basılmış, elle renklendirmeyle farklılaşan kitap örneği; Europe nüshaları a, B–G, A, H, K, I, L, M (+ untraced N).",
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı William Blake'dir (1757–1827).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S1",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Eser Europe a Prophecy'nin önispisidir (plate 1; BA copy K object 1 = Bentley 1, Erdman i, Keynes i). Europe, \"Continental Prophecies\" ikincisidir (America, The Song of Los); BM küratör notu: America'yı izler, \"baskıcı Hıristiyanlığın toplum üzerindeki yıkıcı etkilerini\" inceler; BA: devrimci çağın çatışan felsefi konumları mitopoeik formda.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S15",
+    "S16",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İlk baskı 1794, London.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S16",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Gösterilen görsel Copy K'dır; Fitzwilliam Museum, Cambridge.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S15",
+    "S3",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Copy K'nın baskı tarihi muhtemelen 1821; BA'ya göre yalnız iki sonraki baskı 1795 (A,H) ve 1821 (K); I,L,M posthumous; \"Dates are the probable dates of printing\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S15",
+    "S16",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "BM nüshası Copy D'dir; envanter 1859,0625.72; Prints and Drawings; \"Not on display\"; sergiler 2000 Helsinki, 2000 Prag, 2022 BM G30 \"The world of Stonehenge\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "BM Copy D boyutu 233×168 mm (23.3×16.8 cm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S1",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Copy K boyutu: BA 23.4×16.9 cm ↔ Commons 30.8×24.8 cm (çelişki, D2; açıklama yok).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S15",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Teknik: renkli rölyef gravür + white-line etching (mavi, siyah, kırmızı, sarı) + elle renklendirme (\"added hand colouring\"; malzeme belirtilmez).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S5",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Malzeme: kâğıt (paper). WD P186 \"ink\" birincil referanssız (zayıf).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Betim: küre içinde çömelmiş sakallı çıplak erkek; ışık kısmen bulutlarla örtülü; sol kol pergelle aşağı uzanır, çevredeki karanlığı ölçer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Figür \"(probably Urizen)\" — BM hedge (kesin değil); Kaiser 1997 s.329 atfı (wiki, metne erişilmedi); BA Europe'u Urizen/Orc/Los/Enitharmon (\"Eternals\", Zoas) karakterleriyle anlatır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S4",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Başlık Daniel Kitabı'ndaki Tanrı unvanından gelir (itwiki Dan 7,22); en/it atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C014",
+   "ifade": "İmge Proverbs 8:27 ile ilişkilidir (Smith 1829, metne erişilmedi); en \"upon the face of the earth\" ↔ it \"sull'abisso\" (E11).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Milton'ın altın pergeli (Paradise Lost) bağlantısı; yalnızca WD P1684 (blog ref); müze/BA kayıtlarında yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C016",
+   "ifade": "Tasarım Blake'in gözdesiydi; kopyalamaktan mutluluk duyardı (Gilchrist 1863, 379–380; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Tatham nüshası Blake'in ölümünden haftalar önce yatağında renklendirildi; \"There, that will do! I cannot mend it.\" (Smith 1829 v2, 473/485; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Aynı çömelmiş pergel tutan figür kavramı Newton'da kullanıldı; \"completed the next year\" (1795) — atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Nüsha sayısı: BM \"dokuz\" ↔ enwiki \"on üç\" ↔ BA 13 + untraced N.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "BM Copy D'yi 1859'da Francis Turner Palgrave'den satın aldı; Palgrave Urizen Copy D ve Milton Copy A ile birlikte sattı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Önceki sahipler \"Ozias Humphry (?)\" / \"Thomas Butts (?)\"; Viscomi'ye göre Humphry, Keynes & Wolf'a göre muhtemelen Butts — kaynaklar ayrışır, kesin değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "BM'de ayrıca copy a (proofs) vardır: 1936,1116.32–39; ayrıca \"Plague\" levhasının ayrı baskısı 1936,1002.1.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "BM 6442 ayrı nesnedir: \"After William Blake\", suluboya + pen/gri mürekkep, 296×188 mm, 1885 edinim, kayıt 1885,0509.1619; Butlin kataloğuna alınmamış; betim \"crimson orb … immense compasses\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "WD P127 başlangıç 1885 ↔ BM Copy D edinimi 1859; 1885 tarihi 6442 suluboyasına ait.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "enwiki infobox \"Proof copy at the British Museum\" ↔ BM kaydı Copy D; proofs = copy a (ayrı nesne).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S8",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C026",
+   "ifade": "Butlin katalog yılı: BM 1981 ↔ enwiki 1982.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S17",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Telif: public domain (Blake ö. 1827); Commons PD-Art/PD-old-auto-expired; WD P6216=Q19652.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel 2217×3004 px, 1.494.518 bayt; upload 2010-03-27; credit \"The William Blake Archive\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Pl. 3 (şiirin kökeni hakkında önsöz) yalnızca H ve K nüshalarında bulunur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Levha sayısı: BM 17 ↔ BA 18.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Copy D fiziksel: önispis/title-page numaralandırma dışı, levhalar 1–15 kalemle (mavi-yeşil) numaralı; metin/tasarım mavi-yeşil mürekkep (pl.7 turuncu-kahve); yaprak ~363×255 mm; kırmızı morocco mount; filigran I TAYLOR; annotasyonlar bazen George Cumberland'a atfedilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Tür: WD P31 painting (+ etching print) ↔ itwiki \"dipinto\"/\"disegno\" ↔ BM \"print; frontispiece; book\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "Hareket: Romantizm (enwiki infobox, atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "Ön-Raffaellocular ve Sembolistler'e ilham (data ders iddiası); erişilen hiçbir kaynakta destek yok.",
+   "seviye": "E",
+   "kaynak_id": [],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Copy A'daki opak suluboyalar muhtemelen Blake dışı bir el tarafından eklendi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Posthumous nüsha tarihleri: enwiki I/L 1829, M 1832, \"MPI (1832)\" ↔ BA I/L/M c.1832; BA'da MPI yok, N untraced.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Thompson övgüsü: \"an uncommonly fine specimen of art, and approaches almost to the sublimity of Raffaelle or Michel Angelo\" (Smith 1829, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Europeana kaydı BM Copy D verisini taşır (23.3×16.8; 1794; Palgrave 1859; CC BY-NC-SA 4.0 metadata).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); kompozisyon kaynak betiminden; GZ TASLAK; data görsel iddiaları (\"1\", rüzgâr, renkler) doğrulanmadı; Fitzwilliam birincil katalog/envanter no bulunamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Kitap metinleri erişilmedi (Gilchrist, Smith, Kaiser, Raine, Bindman, Viscomi, Keynes&Wolf, Butlin); yalnızca atıf zinciri.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S8",
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Ölçme/sınırlama okuması: pergel hem düzen veren hem sınırlayan/zorba güç olarak okunabilir; Urizen'in akıl/yasa çağrışımı ve Aydınlanma rasyonalizmi eleştirisi yorumdur — erişilen kaynaklarda açıkça formüle edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8",
+    "S16"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C042",
+   "ifade": "\"Evrenin Ulu Mimarı\" (Great Architect / divine geometer) teması: WD P180 konu etiketi (referanssız); Tanrı'yı pergel/ölçümle gösteren ikonografik gelenekle ilişki yorumdur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "Nüsha/kurum uyuşmazlığı (D1): gösterilen görsel (WD P18, uygulama) Copy K Fitzwilliam; WD P195/P217 referanslı kayıt ve data \"British Museum\" etiketi Copy D'ye ait; tek \"muze\" alanı nüsha bazlı koleksiyonları temsil edemez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S6",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q2324840 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2324840.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:18",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Etiketler (Q41513, Q6373, Q1421440 vb.)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 17:19 → 200 17:22/17:23",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Ancient of Days wikitext",
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Ancient_of_Days&action=raw",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23 (api.php 429)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (it)",
+   "belge": "The Ancient of Days wikitext",
+   "url": "https://it.wikipedia.org/w/index.php?title=The_Ancient_of_Days&action=raw",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23 (api.php 429)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Europe a Prophecy copy K plate 01.jpg wikitext (Artwork)",
+   "url": "https://commons.wikimedia.org/w/index.php?title=File:Europe_a_Prophecy_copy_K_plate_01.jpg&action=raw",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo API (copy K + kompozit dosya)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200 · 17:26; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "British Museum",
+   "belge": "Katalog P_1859-0625-72 (canlı)",
+   "url": "https://www.britishmuseum.org/collection/object/P_1859-0625-72",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 · 17:22 (Cloudflare; erişilemedi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "British Museum",
+   "belge": "P_1859-0625-72 Wayback kopyası (Copy D)",
+   "url": "https://web.archive.org/web/20260217114826/https://www.britishmuseum.org/collection/object/P_1859-0625-72",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23 · arşiv 2026-02-17",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Europeana",
+   "belge": "Eski kayıt 2063624/UK_280_004 (canlı)",
+   "url": "http://www.europeana.eu/portal/record/2063624/UK_280_004.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 · ~17:25 (erişilemedi)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Europeana",
+   "belge": "Wayback kopyası (BM Copy D verisi)",
+   "url": "https://web.archive.org/web/20160628131327/http://www.europeana.eu/portal/record/2063624/UK_280_004.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:26 · arşiv 2016-06-28",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "William Blake Archive",
+   "belge": "work/europe (canlı https)",
+   "url": "https://www.blakearchive.org/work/europe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000 · ~17:24 (zaman aşımı 76 s; erişilemedi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "William Blake Archive",
+   "belge": "object.xq?objectid=europe.k.illbk.01 (canlı http)",
+   "url": "http://www.blakearchive.org/exist/blake/archive/object.xq?objectid=europe.k.illbk.01&java=no",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000 · 17:28 (zaman aşımı 25 s; erişilemedi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "William Blake Archive",
+   "belge": "object Wayback 2024-05-19 (mobil stub)",
+   "url": "https://web.archive.org/web/20240519152110/http://www.blakearchive.org/exist/blake/archive/object.xq?objectid=europe.k.illbk.01&java=no",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:28 · mobil stub, içerik YOK (kullanılamaz)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "William Blake Archive",
+   "belge": "work Wayback 2025-10-13 (mobil stub)",
+   "url": "https://web.archive.org/web/20251013095137/https://blakearchive.org/work/europe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:28 · mobil stub, içerik YOK (kullanılamaz)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "William Blake Archive",
+   "belge": "copy K object 1, Wayback 2013-09-21 (© 2001 edisyon)",
+   "url": "https://web.archive.org/web/20130921054406/http://www.blakearchive.org/exist/blake/archive/object.xq?objectid=europe.k.illbk.01&java=no",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · ~17:30 · arşiv 2013-09-21",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "William Blake Archive",
+   "belge": "Europe work.xq, Wayback 2014-07-14 (nüsha listesi + baskı tarihçesi)",
+   "url": "https://web.archive.org/web/20140714155451/http://www.blakearchive.org/exist/blake/archive/work.xq?workid=europe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · ~17:31 · arşiv 2014-07-14",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "British Museum",
+   "belge": "Eski kayıt objectid=6442, Wayback 2012-10-16",
+   "url": "https://web.archive.org/web/20121016025502/http://www.britishmuseum.org/research/search_the_collection_database/search_object_details.aspx?objectid=6442&partid=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:28 · arşiv 2012-10-16",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Google Books",
+   "belge": "Kaiser 1997 kayıt sayfası (S3/S4 atıf URL'si)",
+   "url": "https://books.google.com/books?id=BBgXuy_D8WEC&pg=PA329",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:29 · önizleme yok, s.329 metni erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S19",
+   "kurum": "Wikidata",
+   "belge": "Q23646078 (Raine, William Blake, Thames & Hudson 1991)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q23646078.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S20",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability sorguları (BM, Europeana, BA, BM-6442)",
+   "url": "https://archive.org/wayback/available",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 17:23–17:29",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Europe a Prophecy, Copy D (önispis)",
+   "sanatci": "William Blake",
+   "kurum": "British Museum",
+   "envanter": "1859,0625.72",
+   "mufredat_ici": false,
+   "gerekce": "Aynı levhanın BM nüshası; gösterilen Copy K ile nüsha/boyut/renk karşılaştırması (D1/D2).",
+   "kanit": [
+    "C004",
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "eser": "The Ancient of Days (suluboya, \"After William Blake\")",
+   "sanatci": "After William Blake",
+   "kurum": "British Museum",
+   "envanter": "1885,0509.1619",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun suluboya+pen versiyonu; Butlin kataloğuna alınmamış — ortam/atıf karşılaştırması.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "America a Prophecy / The Song of Los",
+   "sanatci": "William Blake",
+   "mufredat_ici": false,
+   "gerekce": "Continental Prophecies dizisinin kardeş kitapları; Europe ikincisi.",
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Ham cache'ler 14 Kasım 2026'da bağımsız yeniden açıldı: BM Wayback 2026-02-17 (S8, Copy D künye/betim/teknik/edinim/sergiler), BM 6442 Wayback 2012-10-16 (S17), Blake Archive Wayback 2013/2014 (S15/S16, nüsha listesi + baskı tarihçesi + probable dates), Commons wikitext+imageinfo (S5/S6, Copy K + PD + 2217×3004), en/it wiki raw (S3/S4), Europeana Wayback 2016 (S10), WD EntityData (S1, P18/P195/P217/P127/P571/P186/P1684). Brief iddialarıyla karşılaştırıldı; D1 nüsha/kurum, D2 boyut, D4 P127-1885, hedge'ler (probably Urizen / probable dates / Humphry(?)-Butts(?)) doğrulandı. Görsel İNCELENEMEDİ (C039); kitap metinleri erişilmedi (C040).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D1 (C043): data muze=\"British Museum\" ↔ gösterilen görsel Copy K Fitzwilliam; BM nüshası Copy D (1859,0625.72). Tek muze alanı nüsha bazlı koleksiyonları temsil edemez.",
+  "D3: data tarih=\"1794\" = tasarım/ilk baskı; gösterilen Copy K muhtemelen 1821 (C005).",
+  "D2 (C008): WD 23.3×16.8 BM Copy D; Copy K için BA 23.4×16.9 ↔ Commons 30.8×24.8 (çelişki). kunye boyut_cm Copy D'ye aittir.",
+  "Ad: basyapitlar/eserler_onbellek \"Günlerin Atası\"; eser_konulari \"Günlerin Kadimi\" (iç ad farkı).",
+  "E1: eser_notlari \"Urizen pusulayla evreni sınırlar\" — \"pusula\" yanlış araç (doğrusu pergel); Urizen kimliği BM'de \"(probably Urizen)\" hedge'li, not kesin yazar.",
+  "Tür: eser_konulari t=\"dini\" tartışmalı (Blake kişisel mitolojisi; WD \"mythological painting\"; BM baskı).",
+  "E5 (C039): data \"bak\"/eser_ayrintilari görsel iddiaları (\"1\" rakamı, rüzgâr, renkler) İNCELENMEDİ; BM Copy D'de önispis numaralandırma dışı (C031).",
+  "E4 (C009): data \"elle suluboya\" — \"suluboya\" özgüllemesi kaynaksız (\"added hand colouring\"); 6442 suluboya ayrı nesne (C023).",
+  "E9 (C034): data \"Ön-Raffaellocular/Sembolistler etkisi\" erişilen kaynaklarda desteklenmez.",
+  "Kompozit: kopya_eserler \"william-blake|Europe: A Prophecy, frontispiece\" girdisinin Commons dosyası missing=true (S6).",
+  "Envanter boşluğu: muze_numaralari.json'da Q2324840 yok; Copy K envanter no bulunamadı (E15).",
+  "WD: P127 \"1885\" BM 6442 suluboyasına ait (C024); P186 \"ink\" referanssız (E13); P1684 Milton alıntısı nesne yazıtı değil (C015); P195 çok kurumlu (C043)."
+ ]
+}

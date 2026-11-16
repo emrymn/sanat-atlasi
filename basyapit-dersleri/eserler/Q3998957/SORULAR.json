@@ -1,0 +1,561 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3998957",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "In situ — Palazzo Farnese Galleria, Roma (Fransa Büyükelçiliği)"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Napoli Capodimonte"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan Müzeleri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7: eser Palazzo Farnese galerisinde yerinde (in situ) durur; bina Fransa Büyükelçiliği.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre'da hazırlık çizimleri ve Farnese kopyaları bulunur ama fresk in situ'dir; eser Paris'te değil.",
+    "C": "Capodimonte Farnese antik heykellerini barındırır; tavan freski Roma'da yerindedir.",
+    "D": "Vatikan'daki Sistina Tavanı bu eserin modelidir, eserin kendisi değil; fresk Palazzo Farnese'dedir."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Kurum kronolojisine göre döngünün tarih aralığı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1597–1608"
+    },
+    {
+     "harf": "B",
+     "metin": "1586"
+    },
+    {
+     "harf": "C",
+     "metin": "1513–1589"
+    },
+    {
+     "harf": "D",
+     "metin": "1632–1638"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 kronoloji + S7 + WD preferred: döngü 1597–1608.",
+   "yanlis_gerekceleri": {
+    "B": "1586 yalnız Wikidata'nın DBpedia kaynaklı normal P571 değeridir; hiçbir erişilen kaynakla desteklenmez (D6 anomalisi).",
+    "C": "1513–1589 Palazzo Farnese'nin inşaat süresidir, fresk döngüsünün değil.",
+    "D": "1632–1638 Pietro da Cortona'nın Palazzo Barberini dekorasyonudur; Farnese döngüsünden sonradır."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Tonozun (volta) açılış tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2 Haziran 1601"
+    },
+    {
+     "harf": "B",
+     "metin": "7 Mayıs 1600"
+    },
+    {
+     "harf": "C",
+     "metin": "1592"
+    },
+    {
+     "harf": "D",
+     "metin": "1608"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 kronoloji: \"L'inaugurazione della volta avviene il 2 giugno 1601\".",
+   "yanlis_gerekceleri": {
+    "B": "7 Mayıs 1600 Ranuccio Farnese–Margherita Aldobrandini düğün tarihidir (epitalamik yorum), tonoz açılışı değil.",
+    "C": "1592, Odoardo'nun Carracci kardeşlere çağrı yılıdır (S6); açılış değil.",
+    "D": "1608 döngünün bitiş yılıdır; tonoz açılışı 1601'de olmuştur."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Döngünün ana sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Annibale Carracci"
+    },
+    {
+     "harf": "B",
+     "metin": "Agostino Carracci (tek başına)"
+    },
+    {
+     "harf": "C",
+     "metin": "Domenichino"
+    },
+    {
+     "harf": "D",
+     "metin": "Pietro da Cortona"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"decorata principalmente da Annibale\"; Annibale ana el, Agostino ve allievi katkı verir.",
+   "yanlis_gerekceleri": {
+    "B": "Agostino döngüye katkı verdi ama ana el Annibale'dir (\"principalmente da Annibale\").",
+    "C": "Domenichino duvar fresklerinin (Vergine con l'unicorno) yazarıdır; merkez tonoz Annibale'nin.",
+    "D": "Cortona sonraki nesildir; Palazzo Barberini ile Farnese'ye borçludur, bu eserin yazarı değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Döngünün teması ve edebi kaynağı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Amori degli Dei\" — Ovidius Metamorphoses"
+    },
+    {
+     "harf": "B",
+     "metin": "Farnese hanedanının askeri zaferleri (Fasti)"
+    },
+    {
+     "harf": "C",
+     "metin": "Azizlerin yaşamları"
+    },
+    {
+     "harf": "D",
+     "metin": "Truva Savaşı (İlyada)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S8: \"La volta rappresenta il tema degli Amori degli Dei ... dalle Metamorfosi d'Ovidio\".",
+   "yanlis_gerekceleri": {
+    "B": "Askeri zaferler Sala dei Fasti'nin (Salviati/Zuccari) ve terk edilen Sala Grande projesinin konusudur; tonoz teması değil.",
+    "C": "Döngü mitolojiktir, hagiografik değil; konular Ovidius'tan gelir.",
+    "D": "İlyada yalnız Jupiter/Junon panelinin kaynağıdır; döngünün genel teması \"Amori degli Dei\"dir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk (affresco)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 P186=fresco; S8 \"a fresco\" teknik notu; in situ tonoz freski.",
+   "yanlis_gerekceleri": {
+    "B": "Eser in situ duvar/tonoz freskidir, tuval değil; teknik affresco.",
+    "C": "Destek sıva/duvardır, ahşap pano değil.",
+    "D": "Teknik mozaik değil, pigmentin yaş sıvaya işlendiği fresktir."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Domenichino'nun galerideki duvar freski hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vergine con l'unicorno (Tek Boynuzlu Bakire)"
+    },
+    {
+     "harf": "B",
+     "metin": "Trionfo di Bacco e Arianna"
+    },
+    {
+     "harf": "C",
+     "metin": "Ercole al bivio"
+    },
+    {
+     "harf": "D",
+     "metin": "Galatea'nın Zaferi (deniz sahnesi)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S8: \"Le pareti ... opera degli allievi ... il Domenichino, autore dell'affresco della Vergine dell'unicorno\".",
+   "yanlis_gerekceleri": {
+    "B": "Merkez pano Annibale'nin işidir, Domenichino'nun değil.",
+    "C": "Ercole al bivio, Annibale'nin Camerino için yaptığı tuvaldir; Domenichino'nun galeri freski değil.",
+    "D": "Deniz sahnesi Agostino Carracci'nin panelidir; Domenichino'nun Vergine'si değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "S2 betimine göre Bakkhus'un arabası nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Altın araba, iki kaplan çeker"
+    },
+    {
+     "harf": "B",
+     "metin": "Gümüşi araba, iki koç çeker"
+    },
+    {
+     "harf": "C",
+     "metin": "Bronz araba, iki aslan çeker"
+    },
+    {
+     "harf": "D",
+     "metin": "Beyaz araba, iki beyaz at çeker"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"uno ... dorato e trainato da due tigri\" (Bakkhus); Ariadne'nin arabası argentato.",
+   "yanlis_gerekceleri": {
+    "B": "Bu Ariadne'nin arabasının betimidir (S2 argentato + arieti); Bakkhus'un arabası altın ve kaplanlıdır.",
+    "C": "Kaynaklarda bronz araba/aslan yok; Bakkhus altın araba + kaplan.",
+    "D": "Beyaz atlı araba, Roma triumphator'unun genel ikonografisidir (S5 karşılaştırması); Bakkhus'un arabası değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kurum arşivine göre 1994 restorasyon denemesinin merkez freskte bıraktığı iz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Açık renkli temizlik şeridi (striscia chiara)"
+    },
+    {
+     "harf": "B",
+     "metin": "Sıva çatlakları ağı"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın varak onarımı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yeni boyalı çerçeve"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8: \"una striscia chiara appare sull'affresco centrale della volta\" (1994 deneme temizlikleri).",
+   "yanlis_gerekceleri": {
+    "B": "Yerel veri \"çatlak\" der ama kurum arşivi 1994 deneme temizlik şeridini anlatır; görsel teyit yok (E3).",
+    "C": "Kurum kaydında altın varak onarımı yok; 1994 denemesi temizlik şeridi bıraktı.",
+    "D": "1994 izi temizlik şerididir, yeniden boyalı çerçeve değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kurumun (S7) eserin sanat tarihi içindeki yerini niteleyen formül?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Avrupa'da bir buçuk yüzyıllık resim yeniliklerinin en mükemmel sonucu\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Sistina'dan sonra Roma'nın en etkili tavan resmi\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Gotik resmin son örneği\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Caravaggist okulun başlangıcı\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"la più perfetta conclusione di un secolo e mezzo d'innovazioni pittoriche in Europa\".",
+   "yanlis_gerekceleri": {
+    "B": "Bu yerel verinin formülüdür; erişilen kaynaklarda bu biçimde yok (E6). Kurum \"più perfetta conclusione\" der.",
+    "C": "Eser Rönesans/Barok eşiğindedir, Gotik değil.",
+    "D": "Annibale, Caravaggio'nun tenebrizmine karşıt çizgide anılır (S5); \"Caravaggist başlangıç\" formülü kaynaklarda yok."
+   },
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, müze envanter numarası olan taşınabilir bir müze nesnesidir.",
+   "dogru": false,
+   "aciklama": "Yanlış: in situ tavan freski; müze nesnesi değil, envanter no yok (WD P217 bulunmaz).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Döngü 1597–1608 arasında, ağırlıklı Annibale olmak üzere Agostino ve allievi ile yapıldı.",
+   "dogru": true,
+   "aciklama": "Doğru (S6/S7 kronoloji; \"decorata principalmente da Annibale\").",
+   "kanit": [
+    "C004",
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tonoz 2 Haziran 1601'de açıldı; fresklerin cüretkârlığı Kontra-Reform Roma'sında şaşkınlık yarattı.",
+   "dogru": true,
+   "aciklama": "Doğru (S6 kronoloji).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kurum sayfası, düğün (epitalamik) yorumunu kesin bir olgu olarak sunar.",
+   "dogru": false,
+   "aciklama": "Yanlış: kurum koşullu kip kullanır (\"celebrerebbe\", \"sarebbe stata commissionata\", \"Pare che\"); yorum tartışmalıdır.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tavanda trompe-l'oeil ile mermer görünümlü atlanti ve bronz taklidi madalyonlar vardır.",
+   "dogru": true,
+   "aciklama": "Doğru (S7/S8: atlanti monocromi sembrano di marmo; medaglioni imitano il bronzo).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1'i analiz edin: yerel veri \"quadro reported\" ↔ S2 \"non è un quadro riportato\". Kanıt düzeylerini karşılaştırın; nasıl çözülür?",
+   "beklenen_ogeler": [
+    "data zayıf/C",
+    "S2 paragrafı atıfsız",
+    "Ginzburg 2008 teyidi",
+    "görsel teyit",
+    "D1 tartışma olarak sunulur"
+   ],
+   "kanit": [
+    "C028",
+    "C027",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Epitalamik yorumun lehindeki ve aleyhindeki kanıtları sıralayın.",
+   "beklenen_ogeler": [
+    "Tietze/Dempsey/Posner/Ginzburg/Colonna",
+    "Longhi Canzone 1600",
+    "yıldız taç + Aldobrandini",
+    "düğün 7 Mayıs 1600",
+    "kronoloji itirazı (Eylül 1599)",
+    "arma yok (Marzik)",
+    "Martin 1565 alternatifi takipçisiz",
+    "kurum koşullu kip"
+   ],
+   "kanit": [
+    "C013",
+    "C017",
+    "C018",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Bellori'nin ahlakçı okumasını Panofsky'nin Anteros eleştirisiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "amor profano/sacro",
+    "Anteros zafer tacı",
+    "Rönesans ahlakileştirmesi",
+    "klasik karşılıklı aşk",
+    "Panofsky",
+    "Martin Bellori'yi sürdürür"
+   ],
+   "kanit": [
+    "C019",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "D2/D3 hayvan ihtilaflarını kaynak eleştirisiyle değerlendirin; görsel teyit neden gerekli?",
+   "beklenen_ogeler": [
+    "arieti↔goats",
+    "mulo↔ass",
+    "data \"beyaz\" metinlerde yok",
+    "görsel incelenmedi",
+    "BM rölyefi mulo",
+    "insan editör teyidi"
+   ],
+   "kanit": [
+    "C025",
+    "C026",
+    "C032",
+    "C050"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Eserin \"öncülük\" anlatısını kanıt düzeyleriyle kurun (data üstünlüğü ↔ kurum formülü ↔ akademik etki).",
+   "beklenen_ogeler": [
+    "S7 \"più perfetta conclusione\"",
+    "Wittkower \"formative influence\"",
+    "Posner Cortona",
+    "data \"Sistina'dan sonra en etkili\" E6",
+    "Montanari köprü"
+   ],
+   "kanit": [
+    "C002",
+    "C042",
+    "C051",
+    "C043"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre iki arabayı ve onları çeken hayvanları bulun: Bakkhus'un altın arabası ve Ariadne'nin gümüşi arabası.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S2: dorato + due tigri; argentato + arieti. Koç/keçi ihtilafı (D2); görsel teyit yok.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Alayın önündeki sarhoş Silenos grubunu arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S2/S5: Sileno ebbro; binek katır/eşek ihtilafı (D3); görsel teyit yok.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Tavanı çevreleyen sahte mimariyi (atlanti, bronz madalyonlar, çerçeveler) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S7/S8: trompe-l'oeil; atlanti mermer, madalyonlar bronz taklidi.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ altta uzanan yarı çıplak kadın figürünü bulun (Amore terrestre / Venere Terrena okuması).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S7/S8: donna sdraiata in basso a destra; Ginzburg: Venere Terrena. Görsel teyit yok.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Ariadne'nin başı üzerindeki yıldız tacı arayın (Corona Borealis + Aldobrandini yıldızları).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S2: diadema di stelle; tacı uzatan putto (data) görsel teyit yok (E3).",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Trionfo di Bacco e Arianna; Annibale Carracci (ağırlıklı) + Agostino + allievi; fresk; döngü 1597–1608, volta açılışı 2 Haziran 1601; panel 1597–1600 (Prater, B); in situ Palazzo Farnese (Fransa Büyükelçiliği); envanter YOK.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Tema + konu?",
+   "arka": "Amori degli Dei; Ovidius Metamorphoses; merkez: Bakkhus-Ariadne düğün/zafer alayı (tiaso); Bakkhus altın araba + kaplanlar, Ariadne gümüşi araba; sarhoş Silenos önde.",
+   "kanit": [
+    "C008",
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Tavan sistemi?",
+   "arka": "Üç şema: friz + mimari + quadri riportati; trompe-l'oeil atlanti/bronz madalyon; modeller Sistina (ignudi), Tibaldi Palazzo Poggi, Raffaello Farnesina; merkez pano S2'ye göre quadro reported DEĞİL, açık pencere (sfondato).",
+   "kanit": [
+    "C009",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Yorum ekolleri?",
+   "arka": "Bellori 1672: amor vulgare↔celeste, \"ebbrezza madre di ogni vizio\"; Panofsky: Anteros = karşılıklı aşk; Dempsey/Posner: hedonistik kutlama; Ginzburg: iki Venüs'ün uzlaşısı + epitalamik (tartışmalı).",
+   "kanit": [
+    "C019",
+    "C020",
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki + restorasyon?",
+   "arka": "Barok'a köprü (Montanari); Cortona Barberini borçlu (Posner); Bernini homajları (Wittkower); Sacchi/Poussin↔Cortona; 1994 yapısal + 2013–2015 restorasyon; 15 Mart 2014 ziyarete kapalı.",
+   "kanit": [
+    "C042",
+    "C010"
+   ]
+  }
+ ]
+}

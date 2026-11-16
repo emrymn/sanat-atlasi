@@ -1,0 +1,241 @@
+{
+  "madde_id": "NES-005",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (nes-b) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Plaka zırhın gelişimi y. 1420'de tamamlanmıştır: giyeni baştan ayağa eklemli çelik plakalardan oluşan bir 'harness' (tam takım) içine alır; zincir (mail) ve tekstil korumalar hiçbir zaman tamamen terk edilmemiştir; 14. yüzyıl boyunca uzuvları ve gövdeyi koruyan ayrı plaka parçalar (sertleştirilmiş deri veya metal) aşamalı olarak devreye girmiştir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-005-K01",
+      "kaynak_baslik": "Dirk H. Breiding (Met, Arms and Armor) · Heilbrunn Timeline of Art History — 'The Decoration of European Armor' (Ekim 2003)",
+      "url": "https://www.metmuseum.org/essays/the-decoration-of-european-armor",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-02-14"
+      },
+      "pasaj": "'The development of plate armor was complete by about 1420, enclosing the wearer head to toe in a harness of articulated steel plates, although mail and textile defenses were never completely abandoned.' — SADIK ÖZET (aynı bölüm): 14. yüzyıl boyunca uzuvları ve gövdeyi koruyan, sertleştirilmiş deri veya metalden ayrı plaka parçalar aşamalı olarak devreye girmiştir.",
+      "pasaj_konum": "K01, 'Late Middle Ages and Renaissance (ca. 1400–1600)' bölümü",
+      "belirsizlik_ifadeleri": ["about 1420"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı erişim 429 verdiği için Met denemesi Wayback kopyasından okundu (arşiv 2026-02-14). 'y. 1420' ihtiyatı madde metninde korunmuştur."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Zırh parçalarının adlandırması müze kayıtlarında geçtiği gibidir: 'cuirass' gövde zırhıdır (kayıtlarda 'Muscled cuirasses' ve 'Cuirass and Tassets (Torso and Hip Defense)'), 'breastplate' cuirass'ın göğüs plakasıdır, 'pauldron' omuz korumasıdır ('Right Pauldron (Shoulder Defense)', y. 1530–35), 'greave' bacak korumasıdır ('Pair of Greaves'), 'tasset' kalça korumasıdır, 'burgonet' bir miğfer türüdür ve 'garniture' eşleştirilmiş/değiştirilebilir parçalardan oluşan tam takımdır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-005-K01",
+      "kaynak_baslik": "Dirk H. Breiding (Met, Arms and Armor) · Heilbrunn — 'The Decoration of European Armor' + The Metropolitan Museum of Art, Collections API nesne başlıkları",
+      "url": "https://www.metmuseum.org/essays/the-decoration-of-european-armor",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-02-14"
+      },
+      "pasaj": "K01: 'most men-at-arms discarded all armor but a cuirass, helmet, and perhaps gauntlets'. — K07 (API kayıt başlıkları/alanları, birebir): 'Breastplate' (14.25.1855, Italian, Milan, ca. 1540–45); 'Right Pauldron (Shoulder Defense)' (14.25.714i, ca. 1530–35); 'Pair of Greaves' (29.158.279a,b); 'Cuirass and Tassets (Torso and Hip Defense)'; 'Muscled cuirasses'; 'Burgonet, Filippo Negroli, dated 1543'; 'Armor Garniture, Probably of King Henry VIII, Royal Workshops at Greenwich, dated 1527'.",
+      "pasaj_konum": "K01 'Decline' bölümü; K07 API kayıt başlıkları (objectID 22408, 22273, 23284, 23094, 24807/35922)",
+      "belirsizlik_ifadeleri": ["'Probably of King Henry VIII' (kayıt başlığı ihtiyatı)", "'Armorer attributed to Kolman Helmschmid'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-005-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Terimler maddede ilk kullanımda Türkçe karşılıklarıyla birlikte, kaynakların özgün biçimleri korunarak tanımlanmıştır (Kural 13). 'Garniture' tanımı K01 slider künyelerindeki 'Armor Garniture …' kayıtlarıyla belgelenir; parça listesi iki bağımsız kurumsal kanaldan (Met essay + Met API kayıtları) doğrulanmıştır."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "15. yüzyılın ikinci yarısında, özellikle Almanca konuşulan bölgelerde, zırh yüzeyini kabartma oluk ve yivlerle (fluting) süslemek moda olmuş; y. 1500'de ince-sivri Gotik biçimden yuvarlak-ağır bir dış çizgiye geçilmiş ve y. 1540'a kadar bu yivli yüzeyler yaygınlaşmıştır; bu moda BAZEN YANLIŞ biçimde 'Maximilian zırhı' diye anılır (Breiding/Met: 'a fashion sometimes erroneously referred to as \"Maximilian armor\"'), buna karşılık Wallace Collection aynı tarzı 'Maximilian Style' adıyla kataloglar (A24: 'A Field Armour in the Maximilian Style, South German, c. 1515–25') ve ikincil literatür terimi, I. Maximilian ile ilişkilendirilen ve MÜMKÜNDÜR Kİ onun için ilk kez yapılmış erken 16. yüzyıl Alman plaka zırhına uygulanmış MODERN bir terim olarak tanımlar.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-005-K01",
+      "kaynak_baslik": "Breiding/Met 'The Decoration of European Armor' + Wallace Collection 'Armour as Renaissance Art' + Wikipedia 'Maximilian armour'",
+      "url": "https://www.metmuseum.org/essays/the-decoration-of-european-armor",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-02-14"
+      },
+      "pasaj": "K01: 'it became fashionable, especially in German-speaking territories, to decorate the surface of armor with raised ridges and grooves … a change in fashion around 1500 resulted in emphasis shifting from the slender Gothic form … to a rounded and heavy outline'; aynı yerde bu moda 'a fashion sometimes erroneously referred to as \"Maximilian armor\"' olarak anılır. — K02: 'This heavily fluted style was developed by south German armourers in the time of the Emperor Maximilian I (1459-1519)'; A24 başlığı: 'A Field Armour in the Maximilian Style, South German, c. 1515–25'. — K08: 'a modern term applied to the style of early 16th-century German plate armour associated with, and possibly first made for … Emperor Maximilian I'.",
+      "pasaj_konum": "K01 'Late Middle Ages and Renaissance'; K02 'Function' bölümü ve A24 kaydı; K08 giriş",
+      "belirsizlik_ifadeleri": ["sometimes erroneously referred to", "possibly first made for", "around 1500"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-005-K02", "NES-005-K08"],
+      "celisen_kaynaklar": [
+        "NES-005-K01 (Breiding/Met): yivli modanın 'Maximilian zırhı' adıyla anılmasını YANLIŞ (erroneously) bulur.",
+        "NES-005-K02 (Wallace Collection): aynı tarzı 'Maximilian Style' adıyla nötr bir sınıflandırma olarak kullanır ve tarzı I. Maximilian dönemindeki güney Alman zırhçılarına bağlar.",
+        "NES-005-K08 (Wikipedia, ikincil): terimin MODERN bir adlandırma olduğunu ve zırhın 'mümkündür ki' I. Maximilian için ilk kez yapıldığını söyler; ayrıca adın II. Maximilian'a bağlandığı ALTERNATİF bir versiyon aktarır (Funcken 1983 — metnine erişilmedi)."
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Brief'in C005 (yiv/fluting kronolojisi, DOGRULANDI) ve C006 (terim ihtilafı) aday iddiaları TEK iddiada birleştirildi: brief'in C006 metni 'bu yivli moda' diyerek C005'e gönderme yaptığı için iddianın kendi başına anlaşılabilir olması gerekiyordu. Kronoloji kısmı K01'den DOGRUDAN desteklidir; ADLANDIRMA kısmı üç kaynak arasında ihtilaflı olduğundan iddianın bütününün doğrulama sonucu CELISKILI olarak işaretlendi (brief §5.1 ve ana oturum talimatı gereği). Madde metninde terim tek doğru ad gibi kullanılmamış, üç kaynağın konumu ayrı ayrı verilmiştir. CELISKILI statüsü nedeniyle akademik_tartismalar alanı doludur (madde 1. başlık)."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Almanya ve Batı Avrupa'da y. 1515–1535 arasında bazı zırhçılar çelikten çağdaş giysi kopyaları ('costume armor') üretmiş; bunlar törenlerde veya Paskalya öncesi şenliklerdeki turnuvalarda giyilmiş, bazen insan/hayvan başı biçiminde grotesk-maske vizörlü miğferlerle tamamlanmıştır; buna karşılık Wallace Collection'daki Landsknecht garniture'ü (A28, Innsbruck, y. 1520) karmaşık ve özenli süslemesine rağmen 'pratik bir savaş zırhı olarak kalır' ve 'olasılıkla profesyonel Landsknecht piyade kıtalarına komuta eden bir soylu için' yapılmıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-005-K01",
+      "kaynak_baslik": "Breiding/Met 'The Decoration of European Armor' + Wallace Collection 'Armour as Renaissance Art' (A28, 'Fashion' bölümü)",
+      "url": "https://www.metmuseum.org/essays/the-decoration-of-european-armor",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-02-14"
+      },
+      "pasaj": "K01: 'a few German armorers produced superb reproductions of contemporary costume in steel (costume armor) … Such armors were worn for ceremonial purposes or tournaments during the elaborate Lent festivities.' — K02: 'Even with its complex and elaborate decoration … this remains a practical war armour, probably made for a nobleman in command of squadrons of professional Landsknecht infantry.'",
+      "pasaj_konum": "K01 'Late Middle Ages and Renaissance' (costume armor paragrafı); K02 'Fashion' bölümü (A28)",
+      "belirsizlik_ifadeleri": ["probably made for a nobleman"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-005-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki bağımsız kurumsal kaynak (Met + Wallace) işlev ≠ temsil ayrımının iki kanadını birlikte belgeler: tören/şenlik kullanımı için üretilmiş çelik giysi kopyaları VAR, ama süslü bir zırh işlevsel savaş zırhı da OLABİLİR. Madde metninde bu iki yönlülük korunmuş, 'süslü = işlevsiz' genellemesi yapılmamıştır."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Kabartma (embossing) tekniği metali zayıflattığı için bu biçimde işlenmiş zırhlar savaşta veya turnuvada kullanılamaz hale gelirdi; Wallace Collection'daki, Piccinino'ya (Lucio Marliani) atfedilen ve Ferrara Dükü Alfonso II d'Este için yapılmış görünen zırh 'çok ince, yumuşak demirden' işlenmiştir ve 'saldırıya karşı neredeyse hiç koruma sağlamaz' — bu da zırhın pratik işlevi aşarak bir Rönesans sanat biçimi haline geldiğini gösterir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-005-K01",
+      "kaynak_baslik": "Breiding/Met 'The Decoration of European Armor' + Wallace Collection 'The Art of Renaissance Armour: Materials and Techniques' (Piccinino bölümü)",
+      "url": "https://www.metmuseum.org/essays/the-decoration-of-european-armor",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-02-14"
+      },
+      "pasaj": "K01: 'since embossing tended to weaken the metal and thus render the armor useless for battle or tournament'. — K03: 'its luxurious forms have been rendered in very thin, soft iron, which provide almost no protection against attack. Transcending practical function…'",
+      "pasaj_konum": "K01 kabartma/embossing bölümü; K03 Piccinino zırhı bölümü",
+      "belirsizlik_ifadeleri": ["appears to have been made for (Alfonso II d'Este atfı ihtiyatlı)", "almost certainly the work of … Piccinino", "tended to weaken"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-005-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki bağımsız kurumsal kaynak (Met essay + Wallace teknik yayını) aynı olguyu desteklediği için DOGRULANDI (Kural 7). Atıf ihtiyatları ('appears to have been made for', 'almost certainly') madde metninde 'atfedilen', 'yapılmış görünen' biçiminde korunmuştur."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Wallace Collection denemesine göre 'Rönesans zırhlarına kodlanan en yüksek sesli, en sürekli mesaj belki de güçtür': cilalı yüzeyler güneş ışığını yansıtır, zırh 'ilahi güçle' parlar; şövalyenin 'tam anlamıyla doğaüstü-insanüstü' nitelikleri (mahirlik, dokunulmazlık, tanrısal hız ve güç) aristokrasinin 'gökten gönderilmiş üstünlük' iddialarını kanıtlar görünür ve zırhın aktif kullanımı bir tür performans sanatıdır.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "NES-005-K02",
+      "kaynak_baslik": "The Wallace Collection, Londra — 'Armour as Renaissance Art' ('Performance' bölümü, A59)",
+      "url": "https://www.wallacecollection.org/explore/explore-in-depth/latest-films/armour-as-renaissance-art/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "'Perhaps the loudest, most constant message encoded in Renaissance armours is power … The quite literal superhuman attributes of the knight … proved that aristocratic claims of heaven-sent supremacy were actually true.'",
+      "pasaj_konum": "K02 'Performance' bölümü (nesne A59)",
+      "belirsizlik_ifadeleri": ["Perhaps the loudest… (kaynağın kendi ihtiyatı)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İddia YORUM türündedir: DOGRULANDI statüsü bu yorumun Wallace Collection denemesine AİDİYETİNİN doğrulanmasıdır, 'zırh = güç sembolü' önermesinin genel kabul olduğu anlamına GELMEZ. Madde metninde 'Wallace Collection denemesine göre' kalıbıyla sahiplendirilmiş ve otomatik anlam atfı yapılmamıştır. Kaynağın 'Perhaps' ihtiyatı 'belki de' olarak korunmuştur."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Titian'ın Emperor Charles V at Mühlberg tablosu (1548; Museo del Prado, P000410; tuval üzeri yağlıboya; 335 × 283 cm) V. Karl'ın 24 Nisan 1547'de Schmalkaldik Birliği'ne karşı kazandığı Mühlberg zaferini anar; imparator hafif süvari donanımıyla (yarım mızrak ve tekerlekli kilitli tabanca) betimlenmiştir; zırhı y. 1545'te Desiderius Helmschmid tarafından yapılmıştır ve göğüs plakasında, 1531'den beri Karl'ın zırhlarında âdet olduğu üzere, Meryem-Çocuk imgesi bulunur.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-005-K04",
+      "kaynak_baslik": "Museo Nacional del Prado — Titian, 'Emperor Charles V at Mühlberg' (env. P000410), kayıt açıklaması + Technical data + Provenance",
+      "url": "https://www.museodelprado.es/en/the-collection/art-work/emperor-charles-v-at-muhlberg/e7c91aaa-b849-478c-a857-0bb58a6b6729",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-18"
+      },
+      "pasaj": "'The Emperor is equipped in the manner of the light cavalry with a half pike and wheel-lock pistol. His suit of armour was made around 1545 by Desiderius Helmschmid and has an image of the Virgin and Child on the breastplate, as was customary with Charles' armour from 1531.' — Teknik veri: tuval üzeri yağlıboya, 335 × 283 cm; kayıtta Room 027; provenance Royal Collection.",
+      "pasaj_konum": "K04 kayıt açıklaması + Technical data bloğu",
+      "belirsizlik_ifadeleri": ["around 1545"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Prado canlı 403 verdiği için kayıt Wayback snapshot'ından (arşiv 2026-07-18) okundu; sayfa üstündeki güncelleme tarihi 16-07-2026'dır ve madde/örnek alanında beyan edilmiştir. 'Room 027' konum alanı ödünç durumuna göre değişebilir."
+    },
+    {
+      "claim_id": "C014",
+      "iddia": "Prado kaydının aktardığı Panofsky yorumuna göre resim, dışlayıcı olmayan iki kavramı birleştirir: V. Karl hem Roma geleneğinin mirasçısı hem de Erasmus'un Enchiridion'unda (1503) tarif edilen miles christianus'ın cisimleşmesidir; mızrağın anlamı her iki yorumla bağlantılıdır (Longinus ve 'Hıristiyan şövalyenin mükemmeli' olarak Aziz George'a gönderme, ama aynı zamanda Roma imparatorlarının yüce iktidarının sembolü); Prado kaydı ayrıca resmin üretildiği koşullarda dinî çağrışımların siyasî olanlar kadar önemli olmadığını, Aretino'nun 'yenilenlerin atın toynakları altında çiğnenmesi' önerisinin reddedildiğini ve Macaristanlı Maria'nın 1558 envanterinde resmin dinî değil siyasî terimlerle tanımlandığını belirtir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "NES-005-K04",
+      "kaynak_baslik": "Museo Nacional del Prado — Titian, 'Emperor Charles V at Mühlberg' (env. P000410), kayıt açıklaması (Panofsky aktarımı + küratoryal düzeltme)",
+      "url": "https://www.museodelprado.es/en/the-collection/art-work/emperor-charles-v-at-muhlberg/e7c91aaa-b849-478c-a857-0bb58a6b6729",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-18"
+      },
+      "pasaj": "'Panofsky pointed to the combination of two non-exclusive concepts … as the heir to the Roman tradition and also as the incarnation of the miles christianus … The significance of the lance connects with both interpretations, referring to both Longinus and Saint George … but also functioning as a symbol of the supreme power of the Roman emperors.' — Aynı kayıt: dinî çağrışımların, resmin üretildiği koşullardaki siyasî çağrışımlar kadar önemli olmadığı ('not as significant as'), Aretino'nun önerisinin reddedildiği ve Macaristanlı Maria'nın 1558 envanterinde resmin siyasî terimlerle tanımlandığı belirtilir.",
+      "pasaj_konum": "K04 kayıt açıklaması (yorum/bağlam paragrafları)",
+      "belirsizlik_ifadeleri": ["Panofsky pointed to… (yorum aktarımı)", "not as significant as (karşılaştırmalı ihtiyat)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Prado kaydının KENDİ iç ihtilafı: Panofsky'nin dinî (miles christianus) okuması aktarılır, ancak kayıt resmin üretildiği bağlamda dinî çağrışımların siyasî olanlar kadar önemli olmadığını ve 1558 envanterinin resmi siyasî terimlerle tanımladığını ekler. Madde bu iç ihtilafı korur; Panofsky okuması kesin anlam gibi sunulmaz."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İddia YORUM türündedir: DOGRULANDI statüsü, bu yorumun Panofsky'ye ait olduğunun ve Prado kaydı tarafından bu düzeltmeyle birlikte aktarıldığının doğrulanmasıdır. Panofsky'nin özgün metni bu araştırmada AÇILMADI (Prado kaydındaki aktarım esas alındı) — insan denetiminde birincil metinle karşılaştırılması önerilir."
+    },
+    {
+      "claim_id": "C016",
+      "iddia": "Rubens'in Equestrian Portrait of the Duke of Lerma tablosu (1603; Museo del Prado, P003137; tuval üzeri yağlıboya; 290.5 × 207.5 cm) III. Felipe'nin gözdesi Francisco de Sandoval y Rojas'ı 'İspanyol ordularının başı' olarak gösterir; yarım zırh (half armor) giyer, beyaz bir ata biner ve hükümdarlık asası taşır; boynundaki Santiago Şövalyeleri istiridye kabuğu portredeki TEK süs öğesidir ve arka plandaki süvari çarpışması resmin 'kesin biçimde askerî yönelimini' pekiştirir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-005-K05",
+      "kaynak_baslik": "Museo Nacional del Prado — Rubens, 'Equestrian Portrait of the Duke of Lerma' (env. P003137), kayıt açıklaması + Technical data",
+      "url": "https://www.museodelprado.es/en/the-collection/art-work/equestrian-portrait-of-the-duke-of-lerma/323c6f0b-8a88-4241-9499-d4e389d0de64",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-06-09"
+      },
+      "pasaj": "'is shown as chief of the Spanish Armies. Wearing half armor, he rides a white steed and carries a ruler´s staff. The scallop of the Knights of Saint James at his neck is the only decorative element in this portrait, whose decidedly military orientation is reinforced by the cavalry battle in the background.' — Teknik veri: tuval üzeri yağlıboya, 290.5 × 207.5 cm; kayıtta Room 028; Author: 'Rubens, Peter Paul'.",
+      "pasaj_konum": "K05 kayıt açıklaması + Technical data bloğu",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Prado canlı 403 verdiği için kayıt Wayback snapshot'ından (arşiv 2025-06-09) okundu. AÇIK KALAN NOKTA (iddianın içeriğiyle değil SANATÇI ATIFIYLA ilgili): arama motoru özetinde Prado'nun Rubens sanatçı listesinin bu eseri 'Follower of Peter Paul Rubens' olarak gösterdiğine dair bir not çıkmıştır; liste sayfası açılamadığı için bu fark DOĞRULANMADI. Açılan kayıt sayfasında Author 'Rubens, Peter Paul'dır ve madde bunu esas alır; fark, örnek versiyon_notu ve akademik_tartismalar 5'te şeffaf biçimde belirtilmiştir."
+    },
+    {
+      "claim_id": "C020",
+      "iddia": "Veronese'nin The Family of Darius before Alexander tablosunda (National Gallery, NG294; y. 1565–67) NG kaydına göre figürler 1560'ların Venedik giysilerini giyer; Hephaestion 'y. 1560–90 tarihli İtalyan plaka zırhı' taşır; İskender'in zırhı 'antik heykelden türetilmiştir', ancak zincir zırhı ve kılıcı 16. yüzyıl örneklerine dayanır; Veronese çağdaş öğeleri 'egzotik ayrıntılar ve hayali arkeolojik özelliklerle' birleştirir — yani resmedilen zırh, betimlenen dönemin (MÖ 4. yüzyıl) zırhı değildir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-005-K06",
+      "kaynak_baslik": "The National Gallery, Londra — Paolo Veronese, 'The Family of Darius before Alexander' (env. NG294), Overview + In-depth",
+      "url": "https://www.nationalgallery.org.uk/paintings/paolo-veronese-the-family-of-darius-before-alexander",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "'The family are wearing Venetian dress of the 1560s and Hephaestion wears Italian plate armour of about 1560–90 … Alexander wears a costume of deep rose and his armour is derived from antique sculpture, although his chain mail and sword are based on sixteenth-century examples.'",
+      "pasaj_konum": "K06 Overview/In-depth metni",
+      "belirsizlik_ifadeleri": ["about 1560–90", "derived from antique sculpture (kaynağın türetme ifadesi)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Eser PORTRE değildir; maddede 'portre dışı kullanım' olarak ve anakronizmin kurumsal kayıtlı örneği biçiminde verilmiştir. C013 (gerçek Helmschmid zırhına bağlanabilen betim) ile birlikte okunarak 'resimdeki zırh çağdaştır/hayalidir' genellemesinin yapılamayacağı madde metninde belirtilmiştir."
+    }
+  ]
+}

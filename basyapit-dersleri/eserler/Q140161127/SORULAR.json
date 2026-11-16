@@ -1,0 +1,557 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q140161127",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Trinità dei Monti, Cappella Bonfil"
+    },
+    {
+     "harf": "B",
+     "metin": "Cappella Orsini (özgün şapel)"
+    },
+    {
+     "harf": "C",
+     "metin": "Sistina Şapeli, Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9/S11: eser bugün Cappella Bonfil'de (C003).",
+   "yanlis_gerekceleri": {
+    "B": "Cappella Orsini özgün konumdur; eser 19. yy'da taşındı, bugün Bonfil'de (C004/C003).",
+    "C": "Sistina Şapeli Michelangelo'nun Son Yargı'sının yeridir; bu eser orada sergilenmez.",
+    "D": "Uffizi'de Daniele'nin Strage degli Innocenti'si bulunur; Deposizione değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser özgün olarak hangi şapel için yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cappella Bonfil"
+    },
+    {
+     "harf": "B",
+     "metin": "Cappella Orsini, sunak"
+    },
+    {
+     "harf": "C",
+     "metin": "Della Rovere şapeli"
+    },
+    {
+     "harf": "D",
+     "metin": "Pucci şapeli"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S9/S10: özgün Cappella Orsini, \"destinata all'altare\" (C004).",
+   "yanlis_gerekceleri": {
+    "A": "Bonfil güncel konumdur; özgün yer Orsini'dir (C003/C004).",
+    "C": "Della Rovere şapelinde Assunzione vardır; Deposizione değil (C032).",
+    "D": "Pucci şapeli Perino del Vaga/Zuccari freskleriyle bilinir; bu eser orada değildir."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Orsini şapeli fresk sözleşmesi hangi tarihte imzalandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 Aralık 1541"
+    },
+    {
+     "harf": "B",
+     "metin": "1545"
+    },
+    {
+     "harf": "C",
+     "metin": "1548"
+    },
+    {
+     "harf": "D",
+     "metin": "1536"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 (Hirst 1967): 1 Aralık 1541 sözleşme (C005).",
+   "yanlis_gerekceleri": {
+    "B": "1545 icra varyantıdır (tartışmalı) ve Elena Orsini'nin dotasyona girdiği yıldır; sözleşme değil (C006/C027).",
+    "C": "1548 duvar fresklerinin tamamlandığı yıldır (endüljans belgesi); sözleşme değil (C027).",
+    "D": "1536 Volterra dönemi ödemelerine aittir; Orsini sözleşmesi değil (C031)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rosso Fiorentino"
+    },
+    {
+     "harf": "B",
+     "metin": "Perino del Vaga"
+    },
+    {
+     "harf": "C",
+     "metin": "Daniele Ricciarelli (Daniele da Volterra)"
+    },
+    {
+     "harf": "D",
+     "metin": "Michelangelo"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S9/S10: Daniele Ricciarelli, gen. Daniele da Volterra (C001).",
+   "yanlis_gerekceleri": {
+    "A": "Rosso'nun 1521 Volterra İndiriliş'i ayrı bir eserdir; bu eser Daniele'nindir (C001).",
+    "B": "Perino, Daniele'nin çevresinden olduğu ustadır; eserin sanatçısı değildir (C031).",
+    "D": "Michelangelo'nun doğrudan çizim katkısı tartışmalıdır; sanatçı Daniele'dir (C010/C001)."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eserin konusu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İsa'nın çarmıhtan indirilişi (Deposition)"
+    },
+    {
+     "harf": "B",
+     "metin": "İsa'nın gömülüşü (Entombment)"
+    },
+    {
+     "harf": "C",
+     "metin": "Meryem'in bayılması (Pietà)"
+    },
+    {
+     "harf": "D",
+     "metin": "Çarmıha geriliş (Crucifixion)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Başlık + WD P180/P921: İsa'nın çarmıhtan indirilişi (C019).",
+   "yanlis_gerekceleri": {
+    "B": "Gömme (Entombment) sonraki aşamadır; bu sahne indiriştir (C019).",
+    "C": "Pietà/Lamentation farklı bir ikonografik türdür; başlık Deposition'dır (C002/C019).",
+    "D": "Crucifixion çarmıha geriliş anıdır; indiriliş değildir (C019)."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Yan freskler (Düşüş ve Doğum, 1570–1577) kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ludovico Dupredo"
+    },
+    {
+     "harf": "B",
+     "metin": "Paolo de Cespedes"
+    },
+    {
+     "harf": "C",
+     "metin": "Paris Nogari"
+    },
+    {
+     "harf": "D",
+     "metin": "Michele Alberti"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S9: yan freskler + volta Paolo de Cespedes, 1570–1577 (C011).",
+   "yanlis_gerekceleri": {
+    "A": "Dupredo voltadaki Davud/Daniel'i y. 1820'de yaptı; yan freskler değil (C013).",
+    "C": "Nogari güncel Orsini şapelindeki Passion sahnelerinin ressamıdır (C025).",
+    "D": "Alberti Della Rovere şapelindeki Strage degli Innocenti'yi yürüttü (C032)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Voltadaki Kral Davud ve Peygamber Daniel (y. 1820) kimin işidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paolo de Cespedes"
+    },
+    {
+     "harf": "B",
+     "metin": "Daniele da Volterra"
+    },
+    {
+     "harf": "C",
+     "metin": "Paris Nogari"
+    },
+    {
+     "harf": "D",
+     "metin": "Ludovico Dupredo"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S9: Davud/Daniel Ludovico Dupredo, \"intorno al 1820\" (C013).",
+   "yanlis_gerekceleri": {
+    "A": "Cespedes 1570–1577 yan freskler + volta Evangelist'leri yaptı; Davud/Daniel değil (C011).",
+    "B": "Daniele eserin (Deposizione) sanatçısıdır; 1820 volta figürleri değil (C001).",
+    "C": "Nogari Passion sahneleriyle bilinir; Davud/Daniel değil (C025)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "DBI'ye göre Daniele, Michelangelo'nun Son Yargı'sıyla nasıl yüzleşti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Michelangelo'nun çizimlerini doğrudan kopyalayarak"
+    },
+    {
+     "harf": "B",
+     "metin": "Geç Raffaello mannerına dayanarak, bağımsız biçimde"
+    },
+    {
+     "harf": "C",
+     "metin": "Perino'nun kartonlarıyla"
+    },
+    {
+     "harf": "D",
+     "metin": "Vasari'nin tasarımlarıyla"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S10: \"appoggiandosi alla maniera tarda di Raffaello … con indipendenza\" (C009).",
+   "yanlis_gerekceleri": {
+    "A": "Doğrudan çizim tezi tartışmalıdır; itwiki'de \"reddedilmiş hipotez\" diye anılır (C010).",
+    "C": "Perino kartonları S. Marcello al Corso voltası içindir; Son Yargı yüzleşmesi değil (C031).",
+    "D": "Vasari tasarımları diye bir dayanak yok; DBI geç Raffaello mannerını söyler (C009)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin telif durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kamu malı (PD-old-100; sanatçı ö. 1566)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yorck Project telifli"
+    },
+    {
+     "harf": "C",
+     "metin": "CC-BY-SA"
+    },
+    {
+     "harf": "D",
+     "metin": "Kilise izni gerekli"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S3: PD-old-100 + PD-Art-YorckProject; UsageTerms \"Public domain\" (C017).",
+   "yanlis_gerekceleri": {
+    "B": "Yorck Project PD-Art kapsamında kamu malıdır; Commons \"Public domain\" der (C017).",
+    "C": "Commons kaydı CC-BY-SA değil, PD-old-100 + PD-Art-YorckProject'tir (C017).",
+    "D": "Erişilen kaynaklarda kilise telif/izin kısıtı yok; kayıt kamu malıdır (C017)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Elena Orsini'nin 1545 müdahalesiyle ne değişti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eser tuvale aktarıldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Şapel Bonfil'e adandı"
+    },
+    {
+     "harf": "C",
+     "metin": "Duvar fresklerinin ikonografisi azize Helena'ya yöneldi; 1548'e dek tamamlandı"
+    },
+    {
+     "harf": "D",
+     "metin": "Michelangelo'nun çizimleri reddedildi"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S10: 1545 Elena Orsini dotasyonu; Helena ikonografisi; 1548 endüljans (C027).",
+   "yanlis_gerekceleri": {
+    "A": "Tuvale aktarım 19. yy başıdır (Palmaroli); 1545 değil (C007).",
+    "B": "Bonfil güncel şapelin adıdır; 1545 müdahalesiyle ilgili değil (C003).",
+    "D": "Çizim tezinin reddi modern literatürde tartışılır; 1545 olayı değil (C010)."
+   },
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser bugün Trinità dei Monti'de Cappella Bonfil'dedir.",
+   "dogru": true,
+   "aciklama": "Doğru (S9/S11).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser hâlâ özgün Cappella Orsini'de sergilenmektedir.",
+   "dogru": false,
+   "aciklama": "Yanlış: özgün yer Orsini, güncel yer Bonfil (S9).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "1541, eserin icra (yapım) yılıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: 1541 sözleşme yılıdır (B); icra yılı tartışmalıdır (D1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Yan freskler (Düşüş ve Doğum) Paolo de Cespedes tarafından 1570–1577 arasında yapılmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (S9).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "DBI'ye göre Daniele, Son Yargı ile ilk yüzleşenlerden biridir ve geç Raffaello mannerına bağımsız biçimde dayanır.",
+   "dogru": true,
+   "aciklama": "Doğru (S10).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 kronolojisini analiz edin: sözleşme, Elena Orsini, duvar freskleri ve icra varyantları.",
+   "beklenen_ogeler": [
+    "1 Aralık 1541 sözleşme",
+    "1545 Elena Orsini dotasyonu",
+    "1548 endüljans/duvar freskleri",
+    "icra c.1545/1543/1541 tartışmalı",
+    "DBI sunak eseri için açık yıl vermez"
+   ],
+   "kanit": [
+    "C005",
+    "C027",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Michelangelo çizim tezini (D2) kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "S9 schizzi/allievo",
+    "S6 ipotesi oggi rigettata",
+    "Ciardi/Moreschini 2004 erişilmedi",
+    "DBI con indipendenza",
+    "atıfsız enwiki"
+   ],
+   "kanit": [
+    "C010",
+    "C009",
+    "C047"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Teknik/destek ihtilafını (D3) nesne biyografisiyle açıklayın.",
+   "beklenen_ogeler": [
+    "fresk üretim",
+    "19. yy Palmaroli stacco",
+    "tuval destek/dipinto mobile",
+    "fresco/canvas/staccato etiketleri",
+    "basın + atıfsız kaynak sınırı"
+   ],
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Küratöryel etiket tasarlayın: özgün/güncel konum, Fransız bağı, restorasyon, belirsizlikler.",
+   "beklenen_ogeler": [
+    "Orsini sunak→Bonfil",
+    "özgün şapel Immacolata/Veit 1830",
+    "Fransız ulusal kilise + Di Matteo",
+    "c.1545 tartışmalı",
+    "GZ TASLAK/görsel teyit"
+   ],
+   "kanit": [
+    "C003",
+    "C004",
+    "C024",
+    "C020",
+    "C014",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kaynak hiyerarşisini değerlendirin: Vasari çarpıtması, atıfsız wiki, basın, WD importu, erişilemeyen S12.",
+   "beklenen_ogeler": [
+    "Vasari malanimo",
+    "S5/S8 Deposition atıfsız",
+    "S11 basın akademik değil",
+    "WD P571 Commons import zayıf",
+    "S12 DNS/iskelet"
+   ],
+   "kanit": [
+    "C041",
+    "C047",
+    "C048",
+    "C006"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Eseri Cappella Bonfil'de bulun; yan fresklerden (Cespedes, Düşüş/Doğum) ve volta programından ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S9 şapel kaydı: Bonfil'de Deposizione; yanlar Cespedes 1570–1577.",
+   "kanit": [
+    "C003",
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Voltadaki Kral Davud ve Peygamber Daniel'i (Dupredo, y.1820) 16. yy fresklerinden ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S9: Davud/Daniel Dupredo y.1820; Evangelist'ler Cespedes.",
+   "kanit": [
+    "C013",
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "DBI'nin \"monumental, ciddi, ölçülü\" nitelemesini figürlerde sınayın; Son Yargı ile karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): DBI üslup nitelemesi; görsel teyit insan editörde.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Özgün şapelde (bugün Immacolata, Veit 1830) ne olduğunu gözlemleyin; eserin yerinden edilmesini tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S9: özgün Orsini şapeli bugün Immacolata Concezione.",
+   "kanit": [
+    "C004",
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Konuyu (İsa'nın çarmıhtan indirilişi) ikonografik olarak tanıyın; başlıkla uyumu sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Başlık Deposizione/Descent; konu bedenin indirilişi.",
+   "kanit": [
+    "C019",
+    "C002"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye çekirdeği?",
+   "arka": "Daniele Ricciarelli (da Volterra), 1509–1566; Deposizione dalla Croce; bugün Cappella Bonfil, özgün Cappella Orsini sunağı; sözleşme 1 Aralık 1541.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + üslup?",
+   "arka": "İsa'nın çarmıhtan indirilişi (dini); DBI: monumental, ciddi, ölçülü; Son Yargı ile geç Raffaello mannerına bağımsız yüzleşme.",
+   "kanit": [
+    "C019",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Şapel programı?",
+   "arka": "Yan freskler Düşüş/Doğum + volta Evangelist'ler: Cespedes 1570–1577; Davud/Daniel: Dupredo y.1820.",
+   "kanit": [
+    "C011",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Michelangelo bağı?",
+   "arka": "Dost/işbirliği; Sala Regia desteği (1547); ölüm döşeği (1564); bronz portreler; Braghettone (1564/65 Son Yargı örtme).",
+   "kanit": [
+    "C009",
+    "C034",
+    "C036",
+    "C037",
+    "C035"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Telif?",
+   "arka": "Kamu malı: sanatçı 1566'da öldi; PD-old-100 + PD-Art-YorckProject; UsageTerms \"Public domain\".",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ]
+}

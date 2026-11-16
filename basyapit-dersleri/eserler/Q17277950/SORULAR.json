@@ -1,0 +1,548 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q17277950",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Courtauld versiyonunun boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "60 × 73 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "47.5 × 57 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "65.4 × 81.9 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "134.6 × 180.3 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9/S7: Courtauld \"Height 60 cm, Width 73 cm\"; FWN 686 60×73.",
+   "yanlis_gerekceleri": {
+    "B": "47.5×57 cm Orsay versiyonunun boyutudur (RF 1969); Courtauld ile karıştırılmamalıdır.",
+    "C": "65.4×81.9 cm Met versiyonunun boyutudur (61.101.1).",
+    "D": "134.6×180.3 cm Barnes versiyonunun boyutudur (en büyük, 5 figür)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Courtauld versiyonunun envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "P.1932.SC.57"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 1969"
+    },
+    {
+     "harf": "C",
+     "metin": "61.101.1"
+    },
+    {
+     "harf": "D",
+     "metin": "FWN 684"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: Object Number P.1932.SC.57.",
+   "yanlis_gerekceleri": {
+    "B": "RF 1969 Orsay versiyonunun envanteridir.",
+    "C": "61.101.1 Met versiyonunun accession numarasıdır.",
+    "D": "FWN 684 Orsay versiyonunun catalogue raisonné numarasıdır; Courtauld FWN 686'dır."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Kâğıt Oynayanlar serisi kaç tablodan oluşur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Beş"
+    },
+    {
+     "harf": "B",
+     "metin": "Üç"
+    },
+    {
+     "harf": "C",
+     "metin": "Dört"
+    },
+    {
+     "harf": "D",
+     "metin": "İki"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 label: \"During the 1890s he completed five paintings of this subject\"; WD P2635=5.",
+   "yanlis_gerekceleri": {
+    "B": "Üç tablo değil; Courtauld etiketi beş der.",
+    "C": "Dört, Met versiyonunun figür sayısıdır; seri beş tablodur.",
+    "D": "İki, iki oyunculu versiyonların figür sayısıdır; toplam beş tablo vardır."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Courtauld versiyonunun kompozisyonu kaç oyuncu gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki"
+    },
+    {
+     "harf": "B",
+     "metin": "Dört"
+    },
+    {
+     "harf": "C",
+     "metin": "Beş"
+    },
+    {
+     "harf": "D",
+     "metin": "Üç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 label: \"the composition is refined down to two men seated across a table\".",
+   "yanlis_gerekceleri": {
+    "B": "Dört figür Met versiyonuna aittir.",
+    "C": "Beş figür Barnes versiyonuna aittir.",
+    "D": "Üç oyuncu Met/Barnes'ta görülür; Courtauld iki oyuncuya indirgenmiştir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Met versiyonu kaç figürlüdür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dört (3 oyuncu + arkada pipolu izleyici)"
+    },
+    {
+     "harf": "B",
+     "metin": "Beş"
+    },
+    {
+     "harf": "C",
+     "metin": "İki"
+    },
+    {
+     "harf": "D",
+     "metin": "Üç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: dört figür; \"like the four pipes hanging on the wall behind them\".",
+   "yanlis_gerekceleri": {
+    "B": "Beş figür Barnes versiyonudur (Léontine Paulet ekli).",
+    "C": "İki figür Courtauld/Orsay/özel versiyonlardır.",
+    "D": "Üç oyuncu vardır ama arkada bir izleyici eklenince toplam dört figür olur."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Met versiyonunun künyesi (envanter + credit) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "61.101.1; Bequest of Stephen C. Clark, 1960"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 1969; Camondo vasiyeti"
+    },
+    {
+     "harf": "C",
+     "metin": "P.1932.SC.57; Courtauld Gift 1932"
+    },
+    {
+     "harf": "D",
+     "metin": "61.101.1; Courtauld Gift 1932"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: Accession 61.101.1, Credit Line Bequest of Stephen C. Clark, 1960.",
+   "yanlis_gerekceleri": {
+    "B": "RF 1969 + Camondo vasiyeti Orsay versiyonunun künyesidir.",
+    "C": "P.1932.SC.57 + Courtauld Gift Courtauld versiyonunundur.",
+    "D": "61.101.1 doğru ama credit Courtauld Gift değil, Clark bequest'tir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Orsay versiyonunun envanteri ve güncel konumu hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 1969; Musée d'Orsay (1986'dan beri)"
+    },
+    {
+     "harf": "B",
+     "metin": "P.1932.SC.57; Courtauld"
+    },
+    {
+     "harf": "C",
+     "metin": "61.101.1; Met"
+    },
+    {
+     "harf": "D",
+     "metin": "RF 1969; Louvre (1911'den beri)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11/S8: RF 1969; dépôt Musée d'Orsay 1986.",
+   "yanlis_gerekceleri": {
+    "B": "P.1932.SC.57 Courtauld envanteridir.",
+    "C": "61.101.1 Met accession numarasıdır.",
+    "D": "RF 1969 doğru ama eser 1911'de Louvre'a girdi, 1986'da Orsay'a devredildi; güncel konum Orsay'dır."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Serideki figürlerin modelleri kimlerdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jas de Bouffan'daki (Cézanne'ın babasının mülkü) tarım işçileri"
+    },
+    {
+     "harf": "B",
+     "metin": "Parisli aristokratlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Profesyonel aktörler"
+    },
+    {
+     "harf": "D",
+     "metin": "Ressam arkadaşları"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 label + S10: \"Farm workers from the estate of Cézanne's father posed\"; Met bahçıvan Paulin Paulet'yi adlandırır.",
+   "yanlis_gerekceleri": {
+    "B": "Aristokrat değil; köylü/tarım işçisi modeller kullanıldı.",
+    "C": "Aktör değil; mülkteki gerçek işçiler poz verdi.",
+    "D": "Ressam arkadaşları değil; Jas de Bouffan tarım işçileri (ör. bahçıvan Paulin Paulet)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Courtauld versiyonunu Samuel Courtauld ne zaman satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mart 1929 (Courtauld Gift 1932)"
+    },
+    {
+     "harf": "B",
+     "metin": "1911"
+    },
+    {
+     "harf": "C",
+     "metin": "1960"
+    },
+    {
+     "harf": "D",
+     "metin": "1986"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"purchased by Samuel Courtauld, March 1929; Courtauld Gift, 1932\".",
+   "yanlis_gerekceleri": {
+    "B": "1911, Orsay versiyonunun Louvre'a giriş yılıdır.",
+    "C": "1960, Met versiyonunun Clark bequest yılıdır.",
+    "D": "1986, Orsay versiyonunun Musée d'Orsay'a devir yılıdır."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Met katalogunun \"unconventional\" dediği teknik neyi ifade eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çizimin boyama aşamasında da sürmesi; serbest elle underdrawing"
+    },
+    {
+     "harf": "B",
+     "metin": "Eskizlerin final tabloyla birebir aynı ölçekte aktarılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca tek katman boyayla bitirilmesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuval yerine ahşap pano kullanılması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 (Burnstock et al. 2010): eskizler aynı ölçekte değil, serbest underdrawing, çizim boyamada sürer.",
+   "yanlis_gerekceleri": {
+    "B": "Tam tersi: eskizler çoğu zaman aynı ölçekte değildi, sistematik aktarım yoktu.",
+    "C": "Tek katman değil; omuz/sırt/şapkada yoğun boya birikimi ve tekrar işleme var.",
+    "D": "Destek pano değil tuvaldir (oil on canvas)."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Courtauld versiyonu 60 × 73 cm, oil on canvas'tır.",
+   "dogru": true,
+   "aciklama": "Doğru (S9/S7, C002).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Met versiyonu beş figürlüdür.",
+   "dogru": false,
+   "aciklama": "Yanlış: Met dört figürlüdür (3 oyuncu + pipolu izleyici); beş figür Barnes'tır (S10).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Orsay versiyonu 1986'dan beri Musée d'Orsay'dadır (RF 1969).",
+   "dogru": true,
+   "aciklama": "Doğru (S11/S8, C011).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Seri üç tablodan oluşur.",
+   "dogru": false,
+   "aciklama": "Yanlış: beş tablo (Courtauld label \"five paintings\"; WD P2635=5).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Cézanne'ın modeli Paulin Paulet, Jas de Bouffan'ın bahçıvanıydı.",
+   "dogru": true,
+   "aciklama": "Doğru (S10, C005).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "WD seri maddesinin (Q17277950) kimlik karışıklığını analiz edin; doğru Courtauld künyesini birincil kayıtlardan kurun.",
+   "beklenen_ogeler": [
+    "P31 painting series",
+    "P195 Courtauld",
+    "P2048/49=47.5×57 (Orsay)",
+    "doğru 60×73",
+    "Q17277953 / FWN 686"
+   ],
+   "kanit": [
+    "C031",
+    "C002",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Sıralama tartışmasını (geleneksel büyükten küçüğe ↔ Met teknik analiz) bir hipotez olarak değerlendirin.",
+   "beklenen_ogeler": [
+    "Barnes önce varsayımı",
+    "Met X-ray/IR",
+    "probably first essay",
+    "Rivière 1933",
+    "Burnstock 2010"
+   ],
+   "kanit": [
+    "C037",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Courtauld provenance ilk sahip ihtilafını (Cassirer ↔ Vollard, Elias \"?\") kaynak eleştirisiyle tartışın.",
+   "beklenen_ogeler": [
+    "Courtauld Cassirer ile başlar",
+    "FWN Vollard ile başlar",
+    "Elias soru işareti",
+    "Mart 1929",
+    "Courtauld Gift 1932"
+   ],
+   "kanit": [
+    "C034",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/yuruyus.json'ın Met'i \"beş figürlü\" sayma hatasını ve aynı QID altında Courtauld + Met görseli karışmasını belgeleyip düzeltme önerin.",
+   "beklenen_ogeler": [
+    "Met 4 figür",
+    "Barnes 5 figür",
+    "iç çelişki \"Dört Provenceli\"",
+    "iki farklı görsel",
+    "data düzeltme önerisi"
+   ],
+   "kanit": [
+    "C040",
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "\"Souvenirs of the museums\" ile Kübizm öncüsü okuması arasındaki gerilimi, teleolojik yorum riskini de katarak tartışın.",
+   "beklenen_ogeler": [
+    "Vollard",
+    "Louvre/Trocadéro kopya",
+    "prelude / Kübizm",
+    "teleolojik risk",
+    "House ritüel okuması"
+   ],
+   "kanit": [
+    "C018",
+    "C016",
+    "C028"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Courtauld versiyonunda masanın karşısına oturmuş iki oyuncuyu ve ortadaki tek şarap şişesini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S9/S4): iki adam, belirsiz mekân; şişe bölücü çizgi.",
+   "kanit": [
+    "C003",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Met versiyonunda arkada ayakta pipo içen izleyiciyi ve duvardaki dört pipoyu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S10): dört figür, duvarda dört pipo.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "İki oyunculu sahnelerde sol (pipolu, dik, koyu) ve sağ (piposuz, eğik, açık) figürün karşıtlığını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4 Schapiro): dengeli ama asimetrik.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Barnes versiyonunda Met'te olmayan ek figürü (Léontine Paulet) ve raf/zeytin kavanozunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S10): Barnes'a eklenen öğeler.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Courtauld figürlerinin \"zamansız, anıtsal\" kütlesini ve belirsiz mekânı kaynak betimi üzerinden değerlendirin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S9 label): Mont Sainte-Victoire manzaralarının insan karşılığı.",
+   "kanit": [
+    "C003",
+    "C027"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Courtauld versiyonu künyesi?",
+   "arka": "Les Joueurs de cartes; Cézanne; 1892–1896; oil on canvas; 60×73 cm; Courtauld Gallery London; P.1932.SC.57; FWN 686.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Seri kaç tablo, versiyonlar nerede?",
+   "arka": "Beş tablo: Barnes (5 figür, en büyük), Met (4 figür, 61.101.1), Orsay (2, RF 1969), Courtauld (2, P.1932.SC.57), özel/Katar (2).",
+   "kanit": [
+    "C001",
+    "C007",
+    "C010",
+    "C011",
+    "C003"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Orsay provenance zinciri?",
+   "arka": "Vollard → Cochin → Durand-Ruel → Camondo (1907/1908) → Louvre 1911 → Jeu de Paume 1947–1986 → Orsay 1986; RF 1969.",
+   "kanit": [
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "\"Unconventional\" teknik + sıralama?",
+   "arka": "Eskizler aynı ölçekte değil, serbest underdrawing, çizim boyamada sürer (Burnstock 2010); Met X-ray/IR muhtemelen ilk deneme, Barnes'tan önce (tartışmalı).",
+   "kanit": [
+    "C020",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Modeller + tema?",
+   "arka": "Jas de Bouffan tarım işçileri; bahçıvan Paulin Paulet (5 frank); 17. yy tür resmi (Le Nain/Caravaggio/Chardin) sessiz köylülerle yeniden işlendi.",
+   "kanit": [
+    "C004",
+    "C005",
+    "C016"
+   ]
+  }
+ ]
+}

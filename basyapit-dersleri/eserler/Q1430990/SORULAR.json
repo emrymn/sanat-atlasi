@@ -1,0 +1,567 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1430990",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumda ve nerede sergilenmektedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra — Room 2"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Kunsthistorisches Museum, Viyana"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Key facts: Location \"Room 2\"; Collection \"Main Collection\"; envanter NG651.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi'de Pontormo'nun Venüs-Cupid tablosu bulunur (NG'nin anımsama hipotezi, C043); bu eser değil.",
+    "C": "Louvre'da Rosso'nun Mars-Venüs çizimi anılır (C048); bu eser Londra'dadır.",
+    "D": "KHM Viyana farklı bir koleksiyondur; bu eser National Gallery'dedir (C008)."
+   },
+   "kanit": [
+    "C008",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG651"
+    },
+    {
+     "harf": "B",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 1444"
+    },
+    {
+     "harf": "D",
+     "metin": "26781"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Key facts: Inventory number \"NG651\"; S1 P217; S7 accession \"NG651\".",
+   "yanlis_gerekceleri": {
+    "B": "GG_274, KHM'deki Correggio Jupiter und Io'nun envanteridir; bu eserle karıştırılmamalıdır.",
+    "C": "INV 1444 başka bir kurum/eser numarasıdır; NG kaydı NG651 der (C006).",
+    "D": "26781, NG'deki Rubens Paris'in Yargısı work number'dır (enwiki ref); bu eserin envanteri NG651."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "National Gallery'nin resmî başlığı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "An Allegory with Venus and Cupid"
+    },
+    {
+     "harf": "B",
+     "metin": "Venus, Cupid, Folly and Time"
+    },
+    {
+     "harf": "C",
+     "metin": "Allegoria del trionfo di Venere"
+    },
+    {
+     "harf": "D",
+     "metin": "A Triumph of Venus"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Key facts: Full title \"An Allegory with Venus and Cupid\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Venus, Cupid, Folly and Time\" enwiki başlığıdır; NG resmî başlığı değil (C040).",
+    "C": "\"Allegoria del trionfo di Venere\" itwiki başlığıdır (C040).",
+    "D": "\"A Triumph of Venus\" enwiki'nin andığı alternatif başlıktır; NG resmî başlığı değil (C040)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "NG katalog kaydının tarih ifadesi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "About 1545"
+    },
+    {
+     "harf": "B",
+     "metin": "1540–1545 (circa)"
+    },
+    {
+     "harf": "C",
+     "metin": "1530"
+    },
+    {
+     "harf": "D",
+     "metin": "1568"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Key facts: Date made \"About 1545\" (belirsizlik aynen korundu).",
+   "yanlis_gerekceleri": {
+    "B": "\"1540–1545 circa\" itwiki/Commons aralığıdır; NG tek yıl (yaklaşık) der (C033).",
+    "C": "1530 bu eserin tarihi değildir; NG \"About 1545\" der (C003).",
+    "D": "1568 Vasari'nin Vite baskı yılıdır; tablonun yapım tarihi değil (C017)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "NG'ye göre teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Oil on wood (tahta üzerine yağlı boya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Tempera on wood"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Key facts: Medium and support \"Oil on wood\"; S1 P186 oil paint + panel.",
+   "yanlis_gerekceleri": {
+    "B": "NG \"Oil on wood\" der; tuval (canvas) değil, tahta panel (C004).",
+    "C": "Fresk duvar tekniğidir; bu eser ahşap destek üzerine yağlı boyadır (C004).",
+    "D": "NG yağlı boya (oil) der; tempera değil (C004)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "National Gallery eseri nasıl edinmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1860'ta Beaucousin koleksiyonuyla birlikte satın aldı"
+    },
+    {
+     "harf": "B",
+     "metin": "1742'de Althorp ipotek listesinden aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Napolyon armağanı olarak aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "1813'te Viyana'dan satın aldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Acquisition credit \"Bought, 1860\"; Provenance \"Bought with the Beaucousin collection, Paris, 1860.\"",
+   "yanlis_gerekceleri": {
+    "B": "Althorp 1742 ipotek listesi bir provenans halkasıdır (\"Almost certainly\"); NG edinimi değil (C019).",
+    "C": "Napolyon armağanı değildir; enwiki Viyana naklini anlatır ama NG provenance'ında yoktur (C039).",
+    "D": "1813 Viyana anlatısı NG provenance'ında yoktur; NG 1860 Beaucousin satın almasını kaydeder (C007)."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Venüs'ün elindeki altın elma hangi mitolojik olaya göndermedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris'in Yargısı (Judgement of Paris)"
+    },
+    {
+     "harf": "B",
+     "metin": "Pandora'nın kutusu"
+    },
+    {
+     "harf": "C",
+     "metin": "Hesperidlerin elmaları"
+    },
+    {
+     "harf": "D",
+     "metin": "Atalanta'nın yarışı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"Venus holds the golden apple which Paris presented to her as the most beautiful of all goddesses\"; S2 Judgement of Paris.",
+   "yanlis_gerekceleri": {
+    "B": "Pandora'nın kutusu farklı bir mittir; altın elma Paris'in Yargısı'na aittir (C010).",
+    "C": "Hesperidlerin elmaları Herakles mitine aittir; Venüs'ün elması Paris'in Yargısı'ndandır (C010).",
+    "D": "Atalanta'nın yarışı farklı bir mittir; NG altın elmayı Paris'in sunduğunu belirtir (C010)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Kanatlı Father Time figürü NG metninde hangi nesneyle tanımlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kum saati"
+    },
+    {
+     "harf": "B",
+     "metin": "Tırpan"
+    },
+    {
+     "harf": "C",
+     "metin": "Terazi"
+    },
+    {
+     "harf": "D",
+     "metin": "Meşale"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"winged Father Time, identified by his hourglass\".",
+   "yanlis_gerekceleri": {
+    "B": "Tırpan Kronos/Satürn ikonografisinde yaygındır; NG Time'ı kum saatiyle tanımlar (C014).",
+    "C": "Terazi adalet figürlerine aittir; NG Time için kum saati der (C014).",
+    "D": "Meşale başka alegorilere aittir; NG Time'ın tanımlayıcısı kum saatidir (C014)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kız yüzlü hibrit figür Cupid'e ne sunar ve gövdesinde ne gizler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bal peteği sunar; yılan gövdesi gizlidir"
+    },
+    {
+     "harf": "B",
+     "metin": "Altın elma sunar; aslan gövdesi gizlidir"
+    },
+    {
+     "harf": "C",
+     "metin": "Gül savurur; kanatları gizlidir"
+    },
+    {
+     "harf": "D",
+     "metin": "Kum saati sunar; balık kuyruğu gizlidir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"offers Cupid a honeycomb\"; \"her concealed serpent's body\"; \"Fraud or Deceit\".",
+   "yanlis_gerekceleri": {
+    "B": "Altın elma Venüs'ün attribute'üdür; NG hibrit figür için petek + yılan gövdesi der (C012).",
+    "C": "Gül savuran putto'dur (Folly/Pleasure); hibrit figür petek sunar (C011, C012).",
+    "D": "Kum saati Father Time'ındır; hibrit figürün gövdesi yılanidir, balık kuyruğu değil (C012, C014)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "NG'ye göre tablonun yüzey ve ışık karakteri nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Emaye gibi pürüzsüz yüzey; yapay beyaz ışık; bol ultramarin"
+    },
+    {
+     "harf": "B",
+     "metin": "Görünür fırça izleri; doğal gün ışığı"
+    },
+    {
+     "harf": "C",
+     "metin": "Mat, toprak renkleri; yumuşak sfumato"
+    },
+    {
+     "harf": "D",
+     "metin": "Altın zemin; Bizans tarzı ışık"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"almost enamel-like surface\"; \"Bright white artificial lighting\"; \"abundant use of ultramarine blue\".",
+   "yanlis_gerekceleri": {
+    "B": "NG fırça izlerinin kaynaştırılıp gizlendiğini söyler; ışık doğal değil yapaydır (C020).",
+    "C": "NG parlak, mücevherimsi renk ve ultramarin betimler; mat/toprak/sfumato değil (C020).",
+    "D": "Altın zemin Bizans/Gotik geleneğine aittir; bu eser Maniyerist panel, ultramarin arka planlıdır (C020)."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser National Gallery Londra'dadır; envanter NG651, Room 2.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 Key facts: NG651, Room 2, Main Collection).",
+   "kanit": [
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "NG kaydı tekniği \"Oil on wood\" (tahta üzerine yağlı boya) olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4: Medium and support \"Oil on wood\").",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "NG provenance'ı 1860 Beaucousin satın almasını kaydeder; Althorp 1742 ve Spencer 1847 halkaları olasılık ifadeleriyle (\"Almost certainly\", \"Apparently\") verilir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 Provenance; Gould 1987 katalogundan çıkarılmış metin).",
+   "kanit": [
+    "C007",
+    "C019"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "NG, tablonun Fransız kraliyet koleksiyonunda bulunduğuna dair kayıt olduğunu söyler.",
+   "dogru": false,
+   "aciklama": "Yanlış: NG \"there appears to be no record of the painting ever having been in the French royal collection\" der (C018).",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Figür kimlikleri konusunda kaynaklar arasında uzlaşı vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış: enwiki \"no consensus on these identifications\" der; NG Overview/In-depth tereddüt eder (C023).",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Figür kimliği ihtilaflarını (Jealousy/putto/Oblivion/hibrit eller) D envanteri olarak yazın; NG'nin tereddüt ifadelerini koruyun.",
+   "beklenen_ogeler": [
+    "D3 Jealousy/Disperazione/Umutsuzluk",
+    "D4 Folly/Pleasure/Gioia",
+    "D5 Oblivion/Verità/Gece",
+    "D6 sağ-sol petek/iğne",
+    "NG may/could/foolish Pleasure"
+   ],
+   "kanit": [
+    "C035",
+    "C036",
+    "C037",
+    "C038",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance zincirlerini (NG ↔ Viyana) karşılaştırın; hangi halka belgeli, hangisi hipotez?",
+   "beklenen_ogeler": [
+    "1860 Beaucousin kesin",
+    "Althorp 1742 Almost certainly",
+    "Spencer 1847 Apparently",
+    "Viyana 1813 Keglević (erişilmemiş atıf)",
+    "Fransız kraliyet kaydı yok"
+   ],
+   "kanit": [
+    "C019",
+    "C021",
+    "C039",
+    "C018"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Sansür/restorasyon iddiasını (E) kaynak eleştirisiyle değerlendirin; Devich 1959'a erişim planı yazın.",
+   "beklenen_ogeler": [
+    "itwiki atıfsız",
+    "sarı örtü/mersin dalı",
+    "20. yy restorasyonu",
+    "Devich 1959 yalnızca bib.",
+    "NG metninde yok"
+   ],
+   "kanit": [
+    "C025",
+    "C050",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Erotik içeriği akademik çerçevede ele alarak diplomatik armağan hipotezinin siyasi okumasını tartışın.",
+   "beklenen_ogeler": [
+    "probably Cosimo armağanı",
+    "Rosso 1530 Mars-Venüs paralelliği",
+    "perhaps siyasi anlam",
+    "sexually explicit (akademik)",
+    "kraliyet kaydı yok"
+   ],
+   "kanit": [
+    "C018",
+    "C048",
+    "C046",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Metodoloji: birincil ↔ ikincil ayrımını, WD P180 eksikliğini ve görsel inceleme sınırını değerlendirin.",
+   "beklenen_ogeler": [
+    "NG birincil A",
+    "P180 Time/Jealousy/Oblivion yok",
+    "görsel İNCELENEMEDİ",
+    "GZ TASLAK",
+    "refs metinleri E"
+   ],
+   "kanit": [
+    "C054",
+    "C041",
+    "C042",
+    "C034"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Merkezde Venüs'ün Cupid'i öperken okunu çalmasını, altın elmayı ve yerdeki bir çift güvercini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): Venüs oku çalar, altın elma (Paris), bir çift güvercin; Cupid tacı çalmaya çalışır.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Gül savuran putto'nun bileğindeki çıngıraklı halhalı ve sağ ayağını delen dikeni fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): anklet of bells; thorn piercing his right foot; fark etmez.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Hibrit kız figürünün sunduğu bal peteğini, gizli yılan gövdesini ve cangiante pelerinini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): honeycomb; concealed serpent's body; shot silk cangiante (pembe/soluk mavi).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kanatlı Father Time'ın kum saatini ve mavi örtüyü; karşıdaki başının arkası olmayan maske benzeri figürü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): hourglass; blue cloth (conceal/reveal); head no back or contents (Oblivion?).",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Venüs'ün ayaklarındaki maskeleri ve tablonun emaye yüzeyini/ultramarin mavilerini gözlemleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): masks at Venus' feet; enamel-like surface; ultramarine (lapis lazuli).",
+   "kanit": [
+    "C016",
+    "C020"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "An Allegory with Venus and Cupid; Bronzino (1503–1572); About 1545; Oil on wood; 146,1×116,2 cm; NG651; National Gallery Londra, Room 2; 1860 Beaucousin; 17. yy İtalyan çerçeve.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C008",
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Merkez grup + attribute'ler?",
+   "arka": "Venüs Cupid'i öperken ok çalar; altın elma (Paris'in Yargısı); bir çift güvercin; Cupid tacı çalar; ayaklarda maskeler (şehvet aldatmayı maskeler).",
+   "kanit": [
+    "C010",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Çevre figürler (NG tereddütleriyle)?",
+   "arka": "Putto \"Folly or Pleasure\"/\"foolish Pleasure\" (diken+halhal); hibrit \"Fraud or Deceit\" (petek+yılan+cangiante); çığlık \"may be Jealousy\"/Suffering/Syphilis; Time kum saati+örtü; sol üst \"may represent Oblivion\".",
+   "kanit": [
+    "C011",
+    "C012",
+    "C013",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance + Vasari?",
+   "arka": "Vasari 1568 \"likely\" bu eser (Time anılmaz); \"probably\" Cosimo→François armağanı (kraliyet kaydı yok); Althorp 1742 \"Almost certainly\"; Spencer 1847 \"Apparently\"; 1860 Beaucousin.",
+   "kanit": [
+    "C017",
+    "C018",
+    "C019",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Üslup + teknik kanıt?",
+   "arka": "Maniyerizm: emaye yüzey, yapay beyaz ışık, mermerimsi uzuvlar, ultramarin (lapis), rölyef sığ mekân; pentimenti (kontur değişiklikleri) → \"may have had to make it quickly\".",
+   "kanit": [
+    "C020",
+    "C045",
+    "C047"
+   ]
+  }
+ ]
+}

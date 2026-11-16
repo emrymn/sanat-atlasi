@@ -1,0 +1,563 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q45585",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Yıldızlı Gece (Q45585) hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museum of Modern Art, New York"
+    },
+    {
+     "harf": "B",
+     "metin": "Van Gogh Museum, Amsterdam"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Metropolitan Museum of Art, New York"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MoMA birincil kaydı: Museum of Modern Art, New York; envanter 472.1941.",
+   "yanlis_gerekceleri": {
+    "B": "Van Gogh Museum Amsterdam mektup 782 el yazmasını (b643 V/1962) tutar, tabloyu değil; birincil kayıt MoMA'yı gösterir.",
+    "C": "Musée d'Orsay bu eserin sahibi değildir; MoMA birincil kaydı eseri New York'ta gösterir.",
+    "D": "Metropolitan Museum bu eserin sahibi değildir; doğru kurum MoMA'dır."
+   },
+   "kanit": [
+    "C007",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "MoMA envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "472.1941"
+    },
+    {
+     "harf": "B",
+     "metin": "F612"
+    },
+    {
+     "harf": "C",
+     "metin": "JH1731"
+    },
+    {
+     "harf": "D",
+     "metin": "b643 V/1962"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MoMA \"Object number / 472.1941\".",
+   "yanlis_gerekceleri": {
+    "B": "F612 de la Faille katalog numarasıdır, envanter numarası değil.",
+    "C": "JH1731 Hulsker katalog numarasıdır, envanter numarası değil.",
+    "D": "b643 V/1962 mektup 782 el yazmasının Van Gogh Museum envanteridir, tablonun değil."
+   },
+   "kanit": [
+    "C005",
+    "C025",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Oleografi (baskı)"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap pano üzerine tempera"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MoMA \"Medium / Oil on canvas\"; WD oil paint + canvas.",
+   "yanlis_gerekceleri": {
+    "B": "Oleografi bir baskı tekniğidir; itwiki infobox'ındaki bu terim hatalıdır, birincil kayıt yağlıboya der.",
+    "C": "Fresk duvar resmidir; eser tuval üzerine yağlıboyadır.",
+    "D": "Pano/tempera değil; destek tuval, bağlayıcı yağdır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "MoMA birincil kaydına göre eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Saint Rémy, Haziran 1889"
+    },
+    {
+     "harf": "B",
+     "metin": "Eylül 1888 (Arles)"
+    },
+    {
+     "harf": "C",
+     "metin": "Mayıs 1890 (Auvers)"
+    },
+    {
+     "harf": "D",
+     "metin": "Aralık 1888 (Arles)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MoMA \"Saint Rémy, June 1889\"; metin \"made in mid-June\".",
+   "yanlis_gerekceleri": {
+    "B": "Eylül 1888 Arles, Rhône Üzerinde Yıldızlı Gece'nin tarihidir; bu eser değil.",
+    "C": "Mayıs 1890 Auvers dönemi bu eserin tarihi değildir; eser Haziran 1889 Saint-Rémy'dir.",
+    "D": "Aralık 1888 Arles kriz/kulak kesme dönemidir; tablo Haziran 1889'da yapıldı."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Mektup 782'de (~18 Haziran 1889) Van Gogh Theo'ya neyi haber verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yıldızlı gökyüzü üzerine yeni bir etüt"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayçiçekleri dizisinin tamamlandığını"
+    },
+    {
+     "harf": "C",
+     "metin": "Patates Yiyenler'i bitirdiğini"
+    },
+    {
+     "harf": "D",
+     "metin": "Yatak Odası'nı yeniden boyadığını"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"At last I have a landscape with olive trees, and also a new study of a starry sky.\"",
+   "yanlis_gerekceleri": {
+    "B": "Ayçiçekleri Arles dizisidir; mektup 782'de yıldızlı gökyüzü etüdü bildirilir.",
+    "C": "Patates Yiyenler 1885 erken dönem eseridir; mektup 782 bunu değil yıldızlı gökyüzünü bildirir.",
+    "D": "Yatak Odası (F482) mektupta astarlanması için anılır, yeniden boyama değil; yeni etüt yıldızlı gökyüzüdür."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "MoMA eseri nasıl edindi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lillie P. Bliss Bequest (takas yoluyla)"
+    },
+    {
+     "harf": "B",
+     "metin": "Jo van Gogh-Bonger'den doğrudan satın alma"
+    },
+    {
+     "harf": "C",
+     "metin": "Paul Rosenberg'in bağışı"
+    },
+    {
+     "harf": "D",
+     "metin": "Van Gogh Museum'dan uzun süreli ödünç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MoMA \"Acquired through the Lillie P. Bliss Bequest (by exchange)\"; 1941, Paul Rosenberg Gallery'den takas.",
+   "yanlis_gerekceleri": {
+    "B": "MoMA eseri Jo'dan doğrudan almadı; zincir Jo→Leclercq→Schuffenecker→Jo→[Oldenzeel]→van Stolk→Rosenberg→MoMA şeklindedir.",
+    "C": "Bağış değil, takas (by exchange); kredi satırı Bliss Bequest (by exchange) der.",
+    "D": "Ödünç değil, kalıcı edinim; eser 1941'den beri MoMA koleksiyonundadır."
+   },
+   "kanit": [
+    "C006",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "MoMA betimine göre gökyüzü resim düzleminin ne kadarını kaplar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yaklaşık dörtte üç"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaklaşık üçte bir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yaklaşık yarım"
+    },
+    {
+     "harf": "D",
+     "metin": "Yaklaşık dörtte bir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"It takes up three-quarters of the picture plane.\"",
+   "yanlis_gerekceleri": {
+    "B": "Üçte bir, göğün baskın olduğu bu kompozisyonu yansıtmaz; MoMA dörtte üç der.",
+    "C": "Yarım değil; kaynak gökyüzünün dörtte üçünü kapladığını belirtir.",
+    "D": "Dörtte bir değil; gökyüzü resim düzleminin dörtte üçüdür."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Venüs (sabah yıldızı) tabloda nerede konumlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Merkezin solunda"
+    },
+    {
+     "harf": "B",
+     "metin": "En sağda"
+    },
+    {
+     "harf": "C",
+     "metin": "Tam merkezde"
+    },
+    {
+     "harf": "D",
+     "metin": "Ufkun altında"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"Venus, the morning star, to the left of center\"; en sağda hilal ay vardır.",
+   "yanlis_gerekceleri": {
+    "B": "En sağda hilal ay bulunur, Venüs değil.",
+    "C": "Venüs tam merkezde değil, merkezin solundadır.",
+    "D": "Venüs ufkun altında değil, gökyüzünde parlak bir küre olarak yer alır."
+   },
+   "kanit": [
+    "C010",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin de la Faille / Hulsker katalog numaraları nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "F612 / JH1731"
+    },
+    {
+     "harf": "B",
+     "metin": "F712 / JH1740"
+    },
+    {
+     "harf": "C",
+     "metin": "F1541v / JH1729"
+    },
+    {
+     "harf": "D",
+     "metin": "F482 / JH1608"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 not 8: \"Starry night (F 612 / JH 1731)\"; S2/S7 teyit.",
+   "yanlis_gerekceleri": {
+    "B": "F712/JH1740 zeytin ağaçlı manzaradır (mektup 782 not 7), Yıldızlı Gece değil.",
+    "C": "F1541v/JH1729 köyün kuşbakışı eskizidir, tablo değil.",
+    "D": "F482/JH1608 Yatak Odası'dır (mektup 782 not 13), bu eser değil."
+   },
+   "kanit": [
+    "C025",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "MoMA provenance kaydına göre 1938'de eseri Georgette van Stolk'tan kim satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paul Rosenberg"
+    },
+    {
+     "harf": "B",
+     "metin": "Julien Leclercq"
+    },
+    {
+     "harf": "C",
+     "metin": "Claude-Emile Schuffenecker"
+    },
+    {
+     "harf": "D",
+     "metin": "Oldenzeel Gallery"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"1938-1941, Paul Rosenberg… purchased from Georgette P. van Stolk through Jacob-Baart de la Faille.\"",
+   "yanlis_gerekceleri": {
+    "B": "Leclercq Aralık 1900–Şubat 1901'de sahipti, 1938'de değil.",
+    "C": "Schuffenecker Şubat 1901–Temmuz 1905 öncesi sahipti, 1938'de değil.",
+    "D": "Oldenzeel Gallery 1906 civarı belirsiz aracıdır ([köşeli parantez]), 1938 alıcısı değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1941'den beri Museum of Modern Art koleksiyonundadır.",
+   "dogru": true,
+   "aciklama": "Doğru: MoMA 1941'de Paul Rosenberg Gallery'den takasla edindi (S5).",
+   "kanit": [
+    "C012",
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Tablo, sanatçının yatak odası penceresinden görünen köyü birebir resmeder.",
+   "dogru": false,
+   "aciklama": "Yanlış: köy pencereden görünmüyordu, hayalî bir eklemedir (S5/S2).",
+   "kanit": [
+    "C009",
+    "C017"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Van Gogh tabloyu gece, dışarıda boyadı.",
+   "dogru": false,
+   "aciklama": "Yanlış: eser gündüz, birkaç oturumda boyandı; gece manzarası gündüz yapıldı (S5).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Mektup 782'de Van Gogh, Theo'ya yıldızlı gökyüzü üzerine yeni bir etüt yaptığını bildirir.",
+   "dogru": true,
+   "aciklama": "Doğru: \"a new study of a starry sky\" (S9, ~18 June 1889).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "MoMA eseri Impasto (kalın boya) etiketiyle sınıflar.",
+   "dogru": true,
+   "aciklama": "Doğru: MoMA \"thickly applied paint\" der ve Impasto etiketi verir (S5).",
+   "kanit": [
+    "C039",
+    "C010"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "itwiki'nin \"1907 Schuffenecker → 1906 Oldenzeel\" kronoloji hatasını MoMA provenance zinciriyle karşılaştırarak analiz edin.",
+   "beklenen_ogeler": [
+    "1907→1906 imkânsız",
+    "MoMA Şubat 1901–Temmuz 1905 öncesi",
+    "birincil kayıt esas",
+    "kronolojik tutarlılık"
+   ],
+   "kanit": [
+    "C044",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"Bellekten boyandı\" iddiasını değerlendirin; gözlem/eskiz/hayal modelini kaynaklarla savunun.",
+   "beklenen_ogeler": [
+    "\"inaccurate…from memory\"",
+    "doğu penceresi",
+    "gündüz oturumlar",
+    "F1541v eskizi",
+    "köy hayalî"
+   ],
+   "kanit": [
+    "C014",
+    "C009",
+    "C017",
+    "C048"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Servi sembolizmi tartışmasını biçimsel ↔ sembolik okumalar ve mektuplar üzerinden tartışın.",
+   "beklenen_ogeler": [
+    "MoMA hedged köprü",
+    "funereal cypresses",
+    "\"occupying my thoughts\"",
+    "açık tartışma",
+    "tek anlam dayatılmaz"
+   ],
+   "kanit": [
+    "C022",
+    "C032",
+    "C047"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Boime ve Whitney'nin astronomik okumalarını karşılaştırın; MoMA'nın ölçülü ifadesiyle hipotezleri ayırın.",
+   "beklenen_ogeler": [
+    "nebula eşleşmesi (MoMA)",
+    "sarmal galaksi/komet (Boime)",
+    "M51 Lord Rosse (Whitney)",
+    "Aries uzlaşmazlığı",
+    "Venüs uzlaşısı"
+   ],
+   "kanit": [
+    "C031",
+    "C018",
+    "C015",
+    "C053"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "VGM provenance basitleştirmesi ile WD P127 anomalisini kaynak hiyerarşisi çerçevesinde değerlendirin.",
+   "beklenen_ogeler": [
+    "VGM aracıları atlar",
+    "MoMA tam zincir",
+    "WD P582=1900<P580=1901",
+    "[Oldenzeel] belirsiz",
+    "birincil denetlenebilir"
+   ],
+   "kanit": [
+    "C049",
+    "C051",
+    "C012"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Sol ön planda, alev gibi yükselip tuvalin üst kenarına dek uzanan serviyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (MoMA): servi toprağı göğe bağlayan görsel bağ.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "En sağdaki hilal ayı ve merkezin solundaki Venüs'ü ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (MoMA): hilal en sağ, Venüs merkezin solu; eşmerkezli ışık haleleri.",
+   "kanit": [
+    "C010",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Gökyüzünün resim düzleminin dörtte üçünü kaplayan girdaplı desenlerini izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (MoMA): \"turbulent, even agitated\" girdaplar; nebula gözlemleriyle eşleşme.",
+   "kanit": [
+    "C010",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Tepelerin eteğindeki sessiz köyü ve sivri kilise kulesini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (MoMA): köy hayalî, kule Hollanda tipi; mavi-siyah dağlar.",
+   "kanit": [
+    "C010",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Yüzeydeki kısa, yönlü fırça vuruşlarını ve kalın boya (impasto) dokusunu inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (MoMA): sayısız kısa vuruş + kalın sürülmüş boya yüzeyi hareketlendirir.",
+   "kanit": [
+    "C010",
+    "C039"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Starry Night (De sterrennacht); Vincent van Gogh (1853–1890); Saint Rémy, Haziran 1889; tuval üzerine yağlıboya; 73,7×92,1 cm; MoMA New York, 472.1941; Bliss Bequest (by exchange).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Nerede, ne zaman yapıldı?",
+   "arka": "Saint-Paul-de-Mausole asylum, Saint-Rémy; 1889–90'da 12 ay; Haziran 1889 (mid-June); mektup 782 ~18 June 1889 \"a new study of a starry sky\".",
+   "kanit": [
+    "C008",
+    "C002",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Gözlem + hayal?",
+   "arka": "Doğu bakan pencere manzarası; gündüz birkaç oturumda boyandı; köy hayalî (pencereden görünmez); servi yakınlaştırıldı; \"bellekten\" demek yanlış.",
+   "kanit": [
+    "C009",
+    "C014",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "Vincent→Theo→Jo→Leclercq→Schuffenecker→Jo→[Oldenzeel]→van Stolk→Paul Rosenberg→MoMA (1941, by exchange); \"work in progress\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Pigment + teknik?",
+   "arka": "Gökyüzü ultramarine + cobalt blue; yıldız/ay indian yellow + zinc yellow; impasto (kalın boya); kısa yönlü vuruşlar.",
+   "kanit": [
+    "C019",
+    "C039",
+    "C010"
+   ]
+  }
+ ]
+}

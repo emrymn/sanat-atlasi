@@ -1,0 +1,253 @@
+{
+  "madde_id": "TEK-002",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (tek-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Tempera, pigmentin suda çözünen bir emülsiyonda (ör. su + yumurta sarısı) ya da yağ-su emülsiyonunda (ör. yağ + tam yumurta) bağlanmasıdır; bazı tempera boyalar gam veya tutkalla yapay emülsiyon kullanır; geleneksel olarak ahşap panel gibi sert bir taşıyıcıya uygulanır ve sert bir film hâlinde kurur; 'tempera' geniş anlamda çeşitli boya medyalarına işaret edebilir, ama günümüzde yaygın olarak yalnızca yumurta temperası — bağlayıcısı yumurta sarısı olan boya — için kullanılır; uygulama düzeyinde yumurta sarıları az su ve pigmentlerle karıştırılarak boya yapılır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-002-K02",
+      "kaynak_baslik": "Tate — Art Terms: Tempera",
+      "url": "https://www.tate.org.uk/art/art-terms/t/tempera",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The technique of painting with pigments bound in a water-soluble emulsion, such as water and egg yolk, or an oil-in-water emulsion such as oil and a whole egg… Traditionally applied to a rigid support such as a wood panel, the paint dries to a hard film.",
+      "pasaj_konum": "Tate Art Terms 'Tempera' girişi (tam metin)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-002-K01", "TEK-002-K14"],
+      "celisen_kaynaklar": [
+        "Kapsam farkı (çelişki değil): TEK-002-K01 (NG) 'tempera'nın günümüzde yaygın olarak YALNIZ yumurta temperası için kullanıldığını vurgular; TEK-002-K02 (Tate) tam yumurta ve yağ+tam yumurta emülsiyonlarını da kapsar. Madde dar anlamı esas alıp geniş anlamı açıkça belirtir — akademik_tartismalar 2."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C001 (NG kapsam), C002 (Tate emülsiyon tipleri) ve C004 (basit üretim tarifi) aday iddiaları tek tanım iddiasında birleştirildi. İkinci kaynak pasajları — TEK-002-K01 (NG glossary 'Tempera', CANLI): 'In its wider sense, tempera can mean any one of several paint media, but it now commonly refers to egg tempera alone, that is, paint made using egg yolk as a medium.'; TEK-002-K14 (NG Story 'How is egg tempera paint made?', CANLI): 'Mix yolks with a bit of water and coloured powders - called pigments - to create paint. Plenty of famous paintings in the National Gallery were painted with egg tempera.'"
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Yumurta temperası Antik Çağ'dan beri kullanılmıştır; erken İtalyan resimlerinin çoğu bu medyadadır; 15. yüzyıl sonu İtalya'sında çoğu kez yağlıboya ile birlikte kullanılmış, 1500'den sonra yaygınlığını yitirmiştir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-002-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Tempera",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/tempera",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Egg tempera has been used since Antiquity. Most early Italian paintings are in this medium. It was often combined with oil painting in late 15th-century Italy, but became less common after 1500.",
+      "pasaj_konum": "NG glossary 'Tempera' (tam metin)",
+      "belirsizlik_ifadeleri": ["often combined", "less common (yaygınlığın azalması, yok olması değil)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-002-K05"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "'Antik Çağ'dan beri' ifadesi NG sözlüğünde geneldir; bu araştırmada antik örnek eser düzeyinde doğrulanmadığı için madde somut antik örnek vermez. NGTB 26 (TEK-002-K05) 'çoğu kez yağlıboya ile birlikte' ifadesini analiz bulgularıyla destekler (C005, C006)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Cennino Cennini'nin Il libro dell'arte treatise'ı (y. 1390; yazarı ressam Cennino Cennini, y. 1370–y. 1440) panel resminde renklerin daima yumurta sarısıyla ('rossume d'uovo') tempera edilmesini öğütler — her zaman, tempera edilen renk kadar sarı; panel boyamanın prosedürü freskle aynıdır, üç farkla (önce giysiler/mimarî sonra yüzler; sarıyla tempera; renklerin su gibi ince ezilmesi); kademeli modelleme koyu-orta-açık üç dereceyle, katlar birbirine 'sfumati con delicatezza' yedirilerek yapılır, dereceler lacca ve biacca oranlarıyla üretilir, en yüksek kabartılar saf biacca ve en koyular saf lacca ile verilir; secco duvar resmi için iki bağlayıcı (tempera) sıralanır — yumurta akı ve sarısı ile incir sürgünü kesikleri ya da saf yumurta sarısı: 'bu tempera evrenseldir: duvarda, panelde, demirde'; aşırı tempera verilirse renk patlar ve duvardan çatlayarak ayrılır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-002-K03",
+      "kaynak_baslik": "Cennino Cennini — Il libro dell'arte (Milanesi 1859 ed., Wikisource IT), Cap. CXLV ve Cap. LXXII",
+      "url": "https://it.wikisource.org/wiki/Il_libro_dell%27arte/Capitolo_CXLV",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "ti conviene temperare i tuoi colori sempre con rossume d'uovo, e ben temperati: sempre tanto rossume quanto il colore che temperi",
+      "pasaj_konum": "Cap. CXLV ('Come si colorisce in tavola, e come si stemperano i colori'); secco bağlayıcıları Cap. LXXII",
+      "belirsizlik_ifadeleri": [
+        "Treatise tarihi için Met 'composed about 1390' der, Cennini'nin yaşamı 'ca. 1370–ca. 1440' → madde 'y. 1390' / 'y. 1370–y. 1440' ihtiyatını kullanır.",
+        "Aşırı tempera uyarısı: 'Se déssi troppa tempera… scoppierà il colore, e creperà dal muro'."
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-002-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C005 (panel reçetesi), C006 (kademeli modelleme), C007 (secco bağlayıcıları) ve C009 (treatise tarihi) aday iddiaları, aynı birincil kaynağın iki bölümüne dayandığı için tek iddiada birleştirildi. Cap. CXLV modelleme pasajı: 'ne digrada tre gradi, che poco svarii l'uno dall'altro… ricampeggiandoli, e ricommettendoli insieme con bella ragione, sfumati con delicatezza'. Cap. LXXII pasajı: 'La seconda tempera si è propio rossume d'uovo; e sappi che questa tempera è universale, in muro, in tavole, in ferro'. Treatise tarihi ikinci kaynaktan (TEK-002-K04, Met/Heilbrunn, Wayback 2025-02-26): 'a treatise on the art of painting called Il Libro dell'arte, composed about 1390 by the Italian painter Cennino Cennini (ca. 1370–ca. 1440)'. Cap. LXIII–LXVI (fırça yapımı) indeks üzerinden doğrulandı ama içerikleri açılmadı → madde araç tarifi vermez. İngilizce çeviriler (Thompson 1933; Broecke 2015) yalnız künyeyle bilinir, metinlerine erişilmedi."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Orta Çağ panel resmi süreci (Cennini ve modern teknik analiz temelinde): kurutulmuş kalas, hayvan derisinden hazırlanan size (tutkal) katları; İtalya'da çoğu kez kavak tahta; ön yüze size'a batırılmış keten bez; üstüne gesso (alçıtaşı + jelatin/tutkal) katları; alt çizim; yaldız alanlarına kırmızı kil (bole), altın varak ve brunisaj/punç; son aşamada tempera — ezilmiş pigment + yumurta sarısı; bu medyum parlak, saf bir renk tonu ('brilliant, pure hue') üretir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-002-K04",
+      "kaynak_baslik": "The Metropolitan Museum of Art — Italian Painting of the Later Middle Ages, 'Panel Painting' bölümü (John Meagher, 2010)",
+      "url": "https://www.metmuseum.org/essays/italian-painting-of-the-later-middle-ages",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-02-26"
+      },
+      "pasaj": "Medieval artists used tempera paints, made by mixing ground pigments with egg yolk. This medium produces a brilliant, pure hue.",
+      "pasaj_konum": "Met/Heilbrunn denemesi, 'Panel Painting' bölümü (canlı 429 → Wayback snapshot 20250226013953)",
+      "belirsizlik_ifadeleri": ["'The basis of our knowledge… is a 600-year-old source' (bilginin temeli olarak Cennini'ye dayanma)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-002-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Panel hazırlık aşamaları (size, keten bez, gesso, alt çizim, bole + altın varak, brunisaj/punç) aynı bölümün hazırlık pasajlarından alındı ve madde metninde yalnız tempera katmanının oturduğu zemin olarak, sınırlı ölçüde kullanıldı. Görsel etki ('brilliant, pure hue') teknik tanımdan ayrı düzlemde tutuldu."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "National Gallery Technical Bulletin bağlayıcı analizlerine (FTIR + GC-MS) göre 14. yüzyıl sonu–16. yüzyıl başı İtalya'sı bir geçiş dönemidir: sanatçılar ağırlıklı olarak yumurta temperasından yağa kaymıştır; yağın düşünülenden daha erken ve yaygın kullanıldığı, yumurtanın ise bu dönem boyunca paralel ya da kombinasyon hâlinde kullanılmaya devam ettiği anlaşılmaktadır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-002-K05",
+      "kaynak_baslik": "C. Higgitt & R. White, 'Analyses of Paint Media…', National Gallery Technical Bulletin 26 (2005), ss. 88–97",
+      "url": "https://www.nationalgallery.org.uk/media/15516/higgitt_white2005.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "This period corresponds to one of transition in Italy, as artists shifted away from the use of predominantly egg tempera to the use of oil. It is becoming clear that oil was being used earlier and more extensively than had been thought and that egg continued to be used, in various ways, in parallel or in combination with oil throughout this period.",
+      "pasaj_konum": "NGTB 26 (2005), s. 88 (giriş)",
+      "belirsizlik_ifadeleri": ["It is becoming clear that… (süregelen araştırma sonucu)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Hakemli müze araştırma yayını; landing sayfası ve PDF canlı 200 ile açıldı, metin pypdf ile çıkarıldı ve sayfa işaretleri doğrulandı. Analitik yorum tuzakları (metal oksalat bantlarının protein/sabun bantlarıyla c. 1650/1550 cm⁻¹ bölgelerinde karışması) makalede belirtilir; claim üst sınırı nedeniyle ayrı iddia yapılmadı, akademik_tartismalar 5'te kaydedildi."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Analizlerde bazı renklerde yumurta temperasına az miktarda yağ karıştırıldığı ('enriched egg tempera' ya da 'tempera grassa') görülür ve Botticelli'nin bu tekniği kullanmış olması mümkündür; Botticelli'ye yeniden atfedilen Saint Francis paneli (NG 598, 1480'ler) altın yaldızlı zemin üzerine yumurta temperasıyla yapılmıştır, yağın kullanımı glazürlere ayrılmıştır (izleri meleklerin yaldızlı kanatlarındaki kazıma çizgilerinde) ve sunulan Florentine Botticelli atölyesi panellerinin çoğu yumurta temperasıdır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-002-K05",
+      "kaynak_baslik": "C. Higgitt & R. White, 'Analyses of Paint Media…', National Gallery Technical Bulletin 26 (2005), ss. 88–97",
+      "url": "https://www.nationalgallery.org.uk/media/15516/higgitt_white2005.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "there is evidence that a little oil has been mixed with egg tempera (enriched egg tempera or tempera grassa) in certain colours… Botticelli may have employed this technique also.",
+      "pasaj_konum": "NGTB 26 (2005), s. 90 (tempera grassa); ss. 88–89 (NG 598 Saint Francis)",
+      "belirsizlik_ifadeleri": [
+        "'Botticelli may have employed this technique also' — sanatçıya özgü atıf ihtiyatlıdır, kesinleştirilmedi.",
+        "'recently reattributed to Botticelli' (NG 598 atfı)",
+        "Saint Zenobius sahneleri (NG 3918–3919, y. 1500): örneklerin çoğu yumurta temperası."
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C011 (NG 598) ve C012 (tempera grassa + Botticelli hipotezi) aday iddiaları, aynı makalenin aynı bulgu kümesine dayandığı için tek iddiada birleştirildi; Botticelli'ye özgü kısım 'may' ihtiyatıyla madde metninde 'kullanmış olması mümkündür' olarak korundu. NG 598 pasajı: 'The painting has a gilded background and is painted in egg tempera, the use of oil being reserved for the glazes… the majority of the Florentine paintings presented here from the Botticelli workshop are executed in egg tempera.' Yağın glazürlere ayrılması bulgusu TEK-003 (glaze) çapraz bağının kanıtıdır."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Yağlıboyanın başlangıçları Kuzey Avrupa'da 12. yüzyıla kadar kaydedilir ve teknik 13.–14. yüzyıllarda hem panel hem duvar resminde kullanılmıştır; yağın özellikleri van Eyck ve Campin tarafından daha ileri götürülmüş ve bu yenilikler 15. yüzyıl başında İtalya'ya taşınmıştır; yağ yavaş kurur ve yumurta temperasından daha esnektir; yayılım tek kanallı değildir — Colantonio Napoli'de y. 1445'te yağ tekniğini benimsemişti, Antonello da Messina onu izlemiş olabilir ve Antonello'nun yağı 1475/6'da Venedik'e getirdiği geleneksel görüşü Giovanni Bellini'nin 1460'lardan itibaren yağ kullanmasıyla çürütülür; 16. yüzyılda yağ Avrupa'nın başlıca medyası olurken van Eyck yağlıboyanın 'icadıyla' yanlış biçimde ilişkilendirilmişti.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-002-K12",
+      "kaynak_baslik": "The Metropolitan Museum of Art — Painting in Oil in the Low Countries and Its Spread to Southern Europe (Susan Jones, 2002)",
+      "url": "https://www.metmuseum.org/essays/painting-in-oil-in-the-low-countries-and-its-spread-to-southern-europe",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-03-18"
+      },
+      "pasaj": "The beginnings of oil painting are recorded as early as the twelfth century in Northern Europe… By then, Jan van Eyck had been incorrectly credited with the 'invention' of oil painting.",
+      "pasaj_konum": "Met/Heilbrunn denemesi, giriş ve yayılım bölümü (canlı 429 → Wayback snapshot 20250318181932)",
+      "belirsizlik_ifadeleri": [
+        "'perhaps', 'possibly', 'in all likelihood', 'may have taught' (Antonello–Colantonio–Bellini zinciri için kaynağın ihtiyatlı ifadeleri)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-002-K11"],
+      "celisen_kaynaklar": [
+        "TEK-002-K13 (Vasari, GELENEKSEL_ANLATI) van Eyck'i yağlıboyanın mucidi ve sırrın Antonello üzerinden İtalya'ya taşındığını anlatır; bu kaynak (TEK-002-K12) van Eyck'in 'incorrectly credited' olduğunu ve Bellini örneğinin Antonello kanalını çürüttüğünü yazar. Madde iki katmanı karıştırmadan yan yana verir."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C021 (NG 'Oil' sözlüğü), C022 (Met: 12. yy + 'incorrectly credited') ve C023 (yayılım kanalları) aday iddiaları tek tarihsel iddiada birleştirildi. İkinci kaynak pasajı — TEK-002-K11 (NG glossary 'Oil', CANLI): 'It was used in Northern Europe in the 13th and 14th centuries for panel painting as well as wall painting and its properties were further exploited by Van Eyck and Campin whose innovations were subsequently introduced to Italy in the early 15th century… Oil paint dries slowly and is a more flexible medium than egg tempera.'; TEK-002-K12 yayılım pasajı: 'In Naples, Niccolò Colantonio had adopted an oil technique by about 1445… The traditional view that Antonello introduced oil painting to Venice during his stay in 1475/6, however, is belied by Giovanni Bellini's use of oil as early as the 1460s'. Van Eyck'in 1441 ölüm tarihi bu maddenin kaynaklarında birebir geçmediği için iddiaya alınmadı."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Vasari'nin geleneksel anlatısına göre Bruggeli Johann (Jan van Eyck) güneşte kuruttuğu vernikli paneli çatlayınca gölgede kuruyan bir vernik aramış, keten yağı ve ceviz yağının diğerlerinden daha hızlı kuruduğunu bulmuş, renkleri bu yağlarla karıştırmanın 'distemper'dan (temperadan) sonsuz derecede daha iyi harmanlanabildiğini' ve verniksiz kendi kendine parladığını görmüş ve bu sır Antonello da Messina aracılığıyla İtalya'ya taşınmıştır; anlatı tarihsel olgu olarak sunulamaz.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "TEK-002-K13",
+      "kaynak_baslik": "Giorgio Vasari (çev. Gaston du C. de Vere, Medici Society 1912–14), Project Gutenberg #26860 c. 3 — 'Life of Antonello da Messina' (ss. 59–64)",
+      "url": "https://www.gutenberg.org/files/26860/26860-h/26860-h.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "he found at length that linseed oil and oil of nuts dried more readily than all the others… it could be blended infinitely better than distemper",
+      "pasaj_konum": "'Life of Antonello da Messina', ss. 59–64 (Gutenberg c. 3); sırrın İtalya'ya aktarımı pasajı aynı bölümde: '…to communicate to all Italy a secret so useful, beautiful, and advantageous'",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "TEK-002-K12 (Met/Heilbrunn): van Eyck 'incorrectly credited with the \"invention\" of oil painting'; yağlıboyanın başlangıçları Kuzey Avrupa'da 12. yüzyıla kadar kayıtlı; Antonello'nun Venedik kanalı Bellini örneğiyle çürütülür.",
+        "TEK-002-K11 (NG glossary 'Oil'): yağ 13.–14. yüzyıllarda Kuzey Avrupa'da zaten kullanılıyordu; van Eyck ve Campin özellikleri 'daha ileri götürdü' (icat etmedi)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü ANLATININ VASARİ METNİNDEKİ KAYDINI doğrular; anlatının tarihsel doğruluğunu DEĞİL (Kural 5). İddia metninin son cümlesi bu sınırı açıkça belirtir. Yalnız de Vere İngilizce çevirisi okundu; Vasari'nin İtalyanca aslı (1550/1568) açılmadı. 'Johann of Bruges' = Giovanni da Bruggia = Jan van Eyck eşleştirmesi çeviri farkı olarak not edildi. Antonello'nun Bruges seyahati bu araştırmada açılan kaynaklarda belgelenmediği için olgu olarak yazılmadı."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Fra Angelico'nun Fiesole San Domenico manastır kilisesi sunak panosunun predellasının merkez paneli 'Christ Glorified in the Court of Heaven' (NG663.1, y. 1423–4) yumurta tempera + ahşap (muhtemelen kavak) tekniğindedir; altın varak ışın çizgileriyle kazınmış ve halolar küçük dairesel bir biçimle punçlanmıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-002-K06",
+      "kaynak_baslik": "The National Gallery, London — Fra Angelico, 'Christ Glorified in the Court of Heaven' (NG663.1)",
+      "url": "https://www.nationalgallery.org.uk/paintings/fra-angelico-christ-glorified-in-the-court-of-heaven",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Medium and support: Egg tempera on wood (probably poplar) … The artist has incised the gold leaf around him with radiating lines… each individual halo has been punched with a small circular shape",
+      "pasaj_konum": "NG katalog kaydı: Key facts + Overview",
+      "belirsizlik_ifadeleri": [
+        "'About 1423-4' (tarih ihtiyatlı)",
+        "'probably poplar' (taşıyıcı ihtiyatlı)",
+        "'It is likely that Fra Angelico was largely responsible…' (atölye katkısı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Birincil kurumsal katalog kaydı: saf yumurta tempera örneği olarak madde metninde ve doğrulanmış resim örnekleri alanında kullanıldı. Kayıttaki ihtiyat ifadeleri ('About', 'probably', 'It is likely') maddeye 'y.', 'muhtemelen' olarak taşındı."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Botticelli'nin Venus and Mars paneli (NG915, y. 1485; 69.2 × 173.4 cm; Bought 1874) 'Egg tempera and oil on wood (probably poplar)' medyumundadır; NG kaydı bu biçimdeki panelleri 'spalliere' olarak anar ve yapıtın bir evliliği kutlamak için sipariş edilmiş olabileceğini belirtir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-002-K07",
+      "kaynak_baslik": "The National Gallery, London — Sandro Botticelli, 'Venus and Mars' (NG915)",
+      "url": "https://www.nationalgallery.org.uk/paintings/sandro-botticelli-venus-and-mars",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Egg tempera and oil on wood (probably poplar) … Panels of this shape are known as spalliere… Commissioned to celebrate a marriage",
+      "pasaj_konum": "NG katalog kaydı: Key facts + In-depth",
+      "belirsizlik_ifadeleri": [
+        "'About 1485' (tarih ihtiyatlı)",
+        "'probably poplar' (taşıyıcı ihtiyatlı)",
+        "'Probably commissioned' (sipariş amacı ihtiyatlı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Medyum bilgisi doğrudan katalog kaydındandır; bu eser için ayrı bir NG Technical Bulletin analiz kaydı bu araştırmada açılmadı ve iddiaya eklenmedi. Kayıt, TEK-002-K01'in '15. yüzyıl sonu İtalya'sında çoğu kez yağlıboya ile birlikte kullanılmış' ifadesiyle ve TEK-002-K05'in 'tempera grassa' bulgusuyla örtüşür (madde metninde bu bağlantı C002/C006 etiketleriyle verildi)."
+    }
+  ]
+}

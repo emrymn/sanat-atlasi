@@ -1,0 +1,529 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2067212",
+ "sanatci_id": "giotto-di-bondone",
+ "baslik": "Ağıt (Ölü İsa İçin Yas)",
+ "ozgun_baslik": "Compianto sul Cristo morto",
+ "kunye": {
+  "sanatci": "Giotto di Bondone",
+  "sanatci_yasam": "c. 1267–1337",
+  "tarih": "c. 1303–1305",
+  "tarih_belirsizlik": "K2 c.1303–1305; K3/K4 c.1305; döngü 1304–1306 (C003)",
+  "teknik": "Fresk",
+  "boyut_cm": {
+   "yukseklik": 200,
+   "genislik": 185
+  },
+  "muze": "Scrovegni Şapeli (Musei Civici di Padova kompleksi), Padova",
+  "envanter": "birincil kaynaktan doğrulanamadı",
+  "edinim": "in situ — özgün duvar; Scrovegni aile şapeli",
+  "konum": "Sol duvar, orta-alt register (Passion)",
+  "telif_durumu": "Kamu malı (Giotto ö.1337); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Compianto_sul_Cristo_morto.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Giotto ö.1337)",
+  "dogrulama": {
+   "yontem": "Commons 1400px tam kare vision köprüsü",
+   "cozunurluk": "1920×1806 kaynak; 1400px indirme",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "alt-sol (Meryem/İsa)",
+    "gök (melekler)",
+    "sağ üst (ağaç/kaya)",
+    "ön plan (sırtı dönük figürler)"
+   ],
+   "sinirlar": "Melek sayısı yaklaşık (~on); yüz/çatlak ayrıntısı sınırlı; yazıt yok"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 420
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1307
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2565
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-şapel-aile-program-bağlam"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-giottonun-dili-bizanstan-kopuş"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-kompozisyon-diyagonal-ve-duygusal-merkez"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-sırtı-dönük-figürler-mekânın-icadı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-kozmik-yas-melekler-ve-kuru-ağaç"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Giotto, c.1303–1305, fresk, 200×185, Scrovegni) ve in situ bağlamını açıklar.",
+  "Kaya diyagonali ve bakış çizgileriyle duygusal merkezi analiz eder.",
+  "Sırtı dönük figürlerin mekân/izleyici kurgusunu yorumlar.",
+  "Kozmik yası (melekler, kuru ağaç) ve diriliş imasını çözümler.",
+  "Meleagro/Assisi hipotezlerini ve birincil katalog sınırını kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Fresk",
+   "tanim": "Islak kireç sıva üzerine pigment; duvarla bağlanır; in situ kalır.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Register",
+   "tanim": "Duvarın yatay şeritleri; Passion orta-alt, Joachim/Anna üst.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Compianto (Ağıt)",
+   "tanim": "Çarmıhtan indirme ile gömme arası yas anı.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Diyagonal",
+   "tanim": "Kaya profili köşegeni; duygusal merkeze yönlendirir.",
+   "kanit": [
+    "C012",
+    "C022"
+   ]
+  },
+  {
+   "ad": "Cangiantismo",
+   "tanim": "Işıkla renk değişimi etkisi; K2'nin pastel konser notu.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Lamentation / Compianto sul Cristo morto / Ölü İsa İçin Yas",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Giotto di Bondone",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: c.1303–1305 (K2); c.1305 (K3/K4); döngü 1304–1306",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: fresk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 200×185 cm",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Scrovegni Şapeli, Padova; şapel Musei Civici di Padova kompleksinin parçası (Piazza Eremitani); eser in situ",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Döngü içi konum: Passion sahneleri, orta-alt register, altar'a bakarken sol duvar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Şapel: Scrovegni ailesinin özel şapeli, Eremitani manastırı yanında; 1305 kutsama; Giotto 1304–1306 dekorasyon; üst register Joachim ve Anna",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "İsa çarmıhtan indirilmiş, yere yatırılmış; başını Meryem, ayaklarını Magdalene tutar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Yuhanna (John the Apostle) kollarını umutsuzlukla iki yana açar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sağda Nikodemus ve Arimatealı Yusuf, bedeni mezara hazırlamak için bekler (Yuhanna 19:38–42)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Kompozisyon: bakış/güç çizgileri + aşağı inen kaya diyagonali, izleyiciyi anne-oğul kucaklaşmasına (duygusal merkez) yöneltir",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Önde sırtı dönük iki figür = benzersiz araç (espediente inedito); heykelsi kütleler; gerçek mekân, figürler her yönde serbest",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Melekler çeşitli umutsuzluk pozlarıyla koşuşur; kozmik dramatiklik",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Sağ üstte kurumuş ağaç; doğanın ölüm/diriliş analojisi (kış→bahar / İsa üç gün)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yuhanna'nın pozu, belki Padova'daki Meleagro lahitinden türetilmiş (K2 \"forse\")",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C017",
+   "ifade": "Pastel renk konseri, rafine cangiantismo; döngünün en özenli sahnelerinden, K2 \"kesinlikle otograf\" iddiası",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Bizans katılığından kopuş; sonraki nesillere model; Proto-Rönesans doğalcılık/derinlik",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Assisi Deposizione'si belki genç Giotto (K2 \"forse\")",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel: İsa yatay alt-sol; mavi giysili Meryem yüzünü yaklaştırır; Magdalene uzun saç, ayaklarda; Yuhanna pembe, kollar geriye açık; sağda iki sakallı; önde sırtı dönük yeşil + krem figürler; solda ağlayan kadınlar",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Görsel: derin mavi gökte ~on melek, çeşitli yas pozları (dalış, açık kollar, yüze kapanma)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel: sağ üstte yapraksız kuru ağaç, soluk kayalık yamaç; kaya diyagonali sol-aşağı iner",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel: dekoratif bordür (kırmızı-kahve dış + soluk yeşil elmas bandı); fresk çatlakları (bugünkü durum)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Görsel: okunur yazıt/imza yok",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Görsel kamu malı (Giotto ö.1337); Commons PD; geçici kopya .qwen/tmp/parti1/Q2067212/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "K2 bibliyografya: Tazartes, Giotto (Rizzoli 2004); Baccheschi, L'opera completa di Giotto (Rizzoli 1977); Argan, Storia dell'arte italiana alıntısı — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "K3 kaynakları: Encyclopedia of Art Education; Padova Belediyesi \"City Museums\" (K1 olarak ayrıca açıldı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Dindar kadınlar İsa'nın ellerini tutar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "K2 ilgili eserler listesi: Assisi Deposizione (c.1290) ve Berenson koleksiyonu Deposizione (c.1320–1325)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Eser-özel birincil katalog/envanter erişilemedi; boyut/tarih ikincil kaynaklara dayanır — birincille doğrulanamadı",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Padova Belediyesi (Rete Civica)",
+   "belge": "City Museums — resmî sayfa (Scrovegni Chapel kompleksin parçası)",
+   "url": "https://padovacultura.padovanet.it/en/musei/city-museums",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 30727 bayt",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Compianto sul Cristo morto (Giotto) — kaynaklı madde",
+   "url": "https://it.wikipedia.org/wiki/Compianto_sul_Cristo_morto_(Giotto)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Lamentation (The Mourning of Christ) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Lamentation_(The_Mourning_of_Christ)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q2067212 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q2067212",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Compianto sul Cristo morto.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Compianto_sul_Cristo_morto.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1400px (kaynak 1920×1806) incelendi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Müjde (Triptik)",
+   "sanatci": "Simone Martini",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Giotto hacim/duygu ↔ Martini çizgisel zarafet; iki İtalyan dili (yorum).",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "eser": "Maestà",
+   "sanatci": "Duccio",
+   "kurum": "Siena, Opera del Duomo",
+   "mufredat_ici": true,
+   "gerekce": "Bizans kökenli ikonik dil ↔ Giotto doğalcılığı (yorum).",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "eser": "Deposizione (Assisi)",
+   "sanatci": "Giotto (atıf hipotez)",
+   "kurum": "Assisi Üst Bazilika",
+   "mufredat_ici": false,
+   "gerekce": "Yas sahnesinin erken denemesi; atıf tartışmalı (D).",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih \"1305\" → c.1303–1305 aralığı önerilir (K2); \"y.1305\" veya aralık.",
+  "Boyut 200×185 K2/K4 uyumlu; eser-özel birincil envanter doğrulanamadı (C030, E).",
+  "Müze alanı: \"Scrovegni Şapeli (Musei Civici di Padova kompleksi), Padova\" önerilir (K1).",
+  "Meleagro lahiti + Assisi atfı hipotez (D); otograflık K2 değerlendirmesi (B) — insan editör teyidi."
+ ]
+}

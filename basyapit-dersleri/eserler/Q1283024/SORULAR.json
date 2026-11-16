@@ -1,0 +1,570 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1283024",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Venüs'ün Doğuşu (Bouguereau, 1879) hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Orsay birincil kaydı: Lieu de conservation musée d'Orsay; 1979'da affecté (S5/S6).",
+   "yanlis_gerekceleri": {
+    "A": "Louvre'a 1879'da nominal atıf yapıldı; eser fiziksel olarak 1879–1920 Luxembourg, 1920–1979 Nantes'teydi, 1979'dan beri Orsay'da (C010).",
+    "B": "Uffizi'deki Venüs'ün Doğuşu Botticelli'ninindir; Bouguereau'nun eseri Orsay'dadır (C029).",
+    "D": "Prado bu eserin koleksiyonunda değildir; müze kaydı Orsay'ı gösterir (C008)."
+   },
+   "kanit": [
+    "C008",
+    "C010",
+    "C029"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Orsay kaydında eserin envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "16649"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 253"
+    },
+    {
+     "harf": "C",
+     "metin": "N°376"
+    },
+    {
+     "harf": "D",
+     "metin": "S.D.b.g."
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Numéro d'inventaire RF 253 (S5/S6); 16649 identifiant, N°376 Salon livret numarasıdır.",
+   "yanlis_gerekceleri": {
+    "A": "16649 katalog identifiant'ıdır (notice numarası); envanter numarası RF 253'tür (C007).",
+    "C": "N°376, Salon 1879 livretindeki sergi numarasıdır; envanter değildir (C011).",
+    "D": "S.D.b.g., imzanın yerini belirten kısaltmadır (signé daté en bas à gauche); numara değildir (C006)."
+   },
+   "kanit": [
+    "C007",
+    "C011",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tarihi ve imzadaki yıl hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1863"
+    },
+    {
+     "harf": "B",
+     "metin": "1878"
+    },
+    {
+     "harf": "C",
+     "metin": "1885"
+    },
+    {
+     "harf": "D",
+     "metin": "1879"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "Müze kaydı Date 1879; imza \"W. Bouguereau - 1879\" (S5/S6).",
+   "yanlis_gerekceleri": {
+    "A": "1863, Cabanel'in Venüs'ün Doğuşu'nun tarihidir (S8/S10); Bouguereau'nunki 1879 (C003).",
+    "B": "1878, The Nymphaeum'un tarihidir; Venüs figürü oradan aktarılmıştır (C018).",
+    "C": "1885, Bouguereau'nun Institut de France konferansının yılıdır; eser tarihi değildir (C022)."
+   },
+   "kanit": [
+    "C003",
+    "C006",
+    "C045",
+    "C018",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayda göre teknik/destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval (huile sur toile)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yumurta temperası, pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6: \"huile sur toile\"; malzeme index'i toile + peinture à l'huile.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; eser tuval üzerine yağlıboyadır (C004).",
+    "C": "Tempera/pano değil; kayıt huile sur toile der (C004).",
+    "D": "Suluboya/kâğıt değil; destek tuval, medium yağlıboyadır (C004)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Müze birincil kaydına göre boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "300 × 218 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "300 × 217 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "300 × 215 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "130 × 225 cm"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Her iki Orsay kaydı (2018+2026): H. 300,0 ; L. 215,0 cm (C005). 218/217 türev değerler D1 ihtilafıdır.",
+   "yanlis_gerekceleri": {
+    "A": "300×218 WD/enwiki/itwiki değeridir; WD ref'i Commons'a işaret eder, müzeye değil (D1, C036).",
+    "B": "300×217 frwiki değeridir; birincil kayıt 215 der (D1, C036).",
+    "D": "130×225, Cabanel'in 1863 Venüsü'nün boyutudur (S10); Bouguereau'nunki değildir (C045)."
+   },
+   "kanit": [
+    "C005",
+    "C045"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eserin ilk sergilemesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salon 1863"
+    },
+    {
+     "harf": "B",
+     "metin": "Salon 1879, livret N°376 (Société des artistes français)"
+    },
+    {
+     "harf": "C",
+     "metin": "1984 Petit Palais retrospektifi"
+    },
+    {
+     "harf": "D",
+     "metin": "2019–20 Orsay Huysmans sergisi"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6: Salon de la Société des artistes français, palais des Champs Elysées, Paris 1879, N°376.",
+   "yanlis_gerekceleri": {
+    "A": "Salon 1863, Cabanel'in Venüsü'nün sergilendiği ve Napoléon III'ün satın aldığı yerdir (C045).",
+    "C": "1984 Petit Palais retrospektifi sonraki bir sergidir; ilk sergileme Salon 1879'dur (C012).",
+    "D": "2019–20 Huysmans sergisi güncel bir çerçevedir; ilk sergileme değildir (C012)."
+   },
+   "kanit": [
+    "C011",
+    "C012",
+    "C045"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser 1879'da nasıl edinildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Napoléon III satın aldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Sanatçı ailesi bağışladı"
+    },
+    {
+     "harf": "C",
+     "metin": "Orsay 1979'da satın aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Devlet, sanatçıdan satın aldı (Musée du Luxembourg için)"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S6: \"1879, acquis de l'artiste par l'Etat pour le Musée du Luxembourg\"; modalité achat.",
+   "yanlis_gerekceleri": {
+    "A": "Napoléon III alımı Cabanel'in 1863 Venüsü içindir (C045).",
+    "B": "Kayıt bağış değil \"achat\" (satın alma) der (C009).",
+    "C": "1979'da Orsay'a satın alma değil tahsis (affecté) yapıldı (C010)."
+   },
+   "kanit": [
+    "C009",
+    "C010",
+    "C045"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Venüs figürü hangi ikonografik tipe aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Venus Anadyomene (denizden çıkan; saç sıkma)"
+    },
+    {
+     "harf": "B",
+     "metin": "Venus Pudica (örtünen)"
+    },
+    {
+     "harf": "C",
+     "metin": "Venus Pandemos (dünyevi aşk)"
+    },
+    {
+     "harf": "D",
+     "metin": "Venus Urania (göksel aşk)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tez: \"A truly themed Venus Anadyomene\"; saç sıkma + S contrapposto (S8 s.24); müze index'i naissance/mer (C013).",
+   "yanlis_gerekceleri": {
+    "B": "Venus Pudica bedeni örtme/çekinme pozudur; tez Botticelli bağlamında tartışır; Bouguereau'nun saç sıkma pozu Anadyomene'dir (C017).",
+    "C": "Venus Pandemos tezde dünyevi/profan aşk karşıtı olarak anılır; bu eserin tipi değildir (C020).",
+    "D": "Venus Urania tezde göksel aşk (Urania) olarak geçer; figür tipi Anadyomene'dir (C020)."
+   },
+   "kanit": [
+    "C017",
+    "C020",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Venüs'ün poz soyu hangi hattı izler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Raffaello Galatea → Cabanel → Bouguereau"
+    },
+    {
+     "harf": "B",
+     "metin": "Botticelli Venüsü → Ingres Venus Anadyomène (kollar yukarı) → Bouguereau"
+    },
+    {
+     "harf": "C",
+     "metin": "Titian Urbino Venüsü → Ingres → Bouguereau"
+    },
+    {
+     "harf": "D",
+     "metin": "Cabanel 1863 Venüsü → Bouguereau (doğrudan poz aktarımı)"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Tez s.24: \"The timeless standing pose comes directly from Botticelli's Venus but was transformed with her raised arms in Ingres' more erotic Venus\" (C019); figür Nymphaeum bather'ından büyütüldü (C018).",
+   "yanlis_gerekceleri": {
+    "A": "Raffaello/Galatea benzetmesi en/itwiki'de atıfsızdır; doğrulanmadı (C034).",
+    "C": "Titian Urbino Venüsü bu poz hattının kaynağı değildir; tez Botticelli→Ingres der (C019).",
+    "D": "Cabanel aynı temanın rakibidir; tez poz soyunu Botticelli→Ingres→Bouguereau kurar, Cabanel'den doğrudan aktarım demez (C019, C045)."
+   },
+   "kanit": [
+    "C019",
+    "C018",
+    "C045"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Huysmans'ın Salon 1879 eleştirisinde esere yaklaşımı nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Başyapıt olarak övdü"
+    },
+    {
+     "harf": "B",
+     "metin": "Salon yazısında hiç anmadı"
+    },
+    {
+     "harf": "C",
+     "metin": "Sert biçimde eleştirdi (\"une pauvreté qui n'a pas de nom\")"
+    },
+    {
+     "harf": "D",
+     "metin": "Eseri satın alıp koleksiyonuna kattı"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "frwiki tam alıntı (L'Art moderne, \"Salon de 1879\"): \"La naissance de Vénus … est une pauvreté qui n'a pas de nom\"; Orsay kaydı Huysmans kataloğuna (cat.10) atıf verir (C021).",
+   "yanlis_gerekceleri": {
+    "A": "Alıntı övgü değil yergidir; \"chromos de boîtes à dragées\" benzetmesi küçümsemedir (C021).",
+    "B": "Eser Huysmans yazısında açıkça anılır; Orsay 2019–20 Huysmans sergisinde de gösterildi (C021, C012).",
+    "D": "Satın alma Devlet tarafından yapıldı (C009); Huysmans eleştirmendir, alıcı değildir (C021)."
+   },
+   "kanit": [
+    "C021",
+    "C012",
+    "C009"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Müze birincil kaydı boyutu H. 300,0 ; L. 215,0 cm olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: 2018 ve 2026 Orsay kayıtları aynı (S5/S6). WD/en/it 218, fr 217 türev değerlerdir (D1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser 1879'da Devlet tarafından sanatçıdan Musée du Luxembourg için satın alındı.",
+   "dogru": true,
+   "aciklama": "Doğru: \"acquis de l'artiste par l'Etat pour le Musée du Luxembourg\"; modalité achat (S6).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser 1879'dan beri fiziksel olarak Musée d'Orsay'dadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: 1879–1920 Luxembourg, 1920–1979 Nantes; 1979'da Orsay'a tahsis edildi (S6). WD'nin 1986 Orsay başlangıcı müzenin açılışıdır (D9).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser sol alt köşede \"W. Bouguereau - 1879\" olarak imzalı ve tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru: \"S.D.b.g. : W. Bouguereau - 1879\" (S5/S6).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Huysmans, Salon 1879 eleştirisinde eseri övdü.",
+   "dogru": false,
+   "aciklama": "Yanlış: Huysmans eseri sert eleştirdi (\"une pauvreté qui n'a pas de nom\"; \"chromos de boîtes à dragées\") (S3; Orsay cat.10 teyidi).",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Genişlik ihtilafını (D1) birincil önceliği ve WD referans eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "Orsay 215 (2018+2026)",
+    "WD/en/it 218, fr 217",
+    "WD ref P143=Commons, P813=2018-06-24",
+    "birincil esas, türev D"
+   ],
+   "kanit": [
+    "C005",
+    "C036"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Salon 1879 resepsiyonunun iki yanlılığını tartışın; data \"büyük beğeni\" genellemesini değerlendirin.",
+   "beklenen_ogeler": [
+    "Devlet alımı (achat)",
+    "Huysmans L'Art moderne yergisi",
+    "Orsay Huysmans sergisi/cat.10",
+    "tek yanlı genelleme eleştirisi"
+   ],
+   "kanit": [
+    "C009",
+    "C021",
+    "C041",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "WD P973 yanlış eser hatasını (D2) kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "P973 URL Cabanel 1863",
+    "H.130/L.225 + Napoléon III + Zola",
+    "envanter/identifiant teyidi (RF 253/16649)",
+    "S5/S6 birincil"
+   ],
+   "kanit": [
+    "C037",
+    "C007",
+    "C045"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "centaur/triton terminolojisini (D3) ve data \"melekler ve periler\" hatasını (D7) görsel teyit gereğiyle tartışın.",
+   "beklenen_ogeler": [
+    "index centaure+triton",
+    "enwiki/S9 centaur, data triton",
+    "melek değil putto/nymph",
+    "görsel inceleme yapılmadı"
+   ],
+   "kanit": [
+    "C038",
+    "C040",
+    "C013",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Doğuş mu taşıma mı (D5) yorum farkını müze başlığı ve kaynaklarla açık tutun.",
+   "beklenen_ogeler": [
+    "en/it Paphos taşıma",
+    "fr anadyomène",
+    "müze Naissance/naissance",
+    "müze yorum metni yok (S10 yanlış eser)"
+   ],
+   "kanit": [
+    "C026",
+    "C001",
+    "C037",
+    "C020"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Venüs'ün saç sıkma pozunu ve \"S\" kıvrımlı contrapposto'sunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (tez s.24 + enwiki): kollar yukarıda, saç sıkma; Anadyomene tipi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Venüs'ün ayaklarının altındaki kabuğu ve yunusu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: scallop shell + \"almost appears\" yunus (tez); WD P180 Pecten maximus/dolphin.",
+   "kanit": [
+    "C024",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Müze index'inde listelenen centaur ve triton figürlerini bulun; hangisinin kabuk üflediğini görselden ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Index her ikisini de listeler (centaure+triton); figür eşleştirmesi görsel inceleme gerektirir (D3).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Cupidon/Eros figürlerini ve yunusla ilişkisini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze index'i Cupidon/Eros + dauphin; tez \"dolphin steered by Aros [Eros]\".",
+   "kanit": [
+    "C013",
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol alt köşedeki imzayı ve tarihi okuyun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kayıt: \"S.D.b.g. : W. Bouguereau - 1879\".",
+   "kanit": [
+    "C006"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Naissance de Vénus; William Bouguereau (1825–1905); 1879; yağlıboya tuval; 300×215 cm (müze); Orsay RF 253, identifiant 16649, zemin kat Salle 3.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Provenans?",
+   "arka": "1879 Devlet alımı (Luxembourg için) → 1879 Louvre atfı → 1879–1920 Luxembourg → 1920 Dépôt de l'Etat → 1920–1979 Nantes → 1979 Orsay affecté.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Salon 1879 + resepsiyon?",
+   "arka": "Société des artistes français, Palais des Champs-Élysées, livret N°376; Devlet alımı (resmî kabul) + Huysmans yergisi (L'Art moderne); Orsay 2019–20 Huysmans sergisi.",
+   "kanit": [
+    "C011",
+    "C009",
+    "C021",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Tip + poz soyu?",
+   "arka": "Venus Anadyomene (saç sıkma, S contrapposto); Botticelli → Ingres (kollar yukarı) → Bouguereau; figür Nymphaeum (1878) bather'ından büyütme.",
+   "kanit": [
+    "C017",
+    "C019",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Mit + semboller?",
+   "arka": "Hesiodos: köpükten doğuş, Kythera→Kıbrıs; Zephyros kabukla taşır, Horai karşılar; saç damlaları inci; tarak kabuğu + yunus (\"almost appears\").",
+   "kanit": [
+    "C020",
+    "C024"
+   ]
+  }
+ ]
+}

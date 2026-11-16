@@ -1,0 +1,1116 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q890678",
+ "sanatci_id": "paul-gauguin",
+ "baslik": "Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz?",
+ "ozgun_baslik": "D'où venons-nous ? Que sommes-nous ? Où allons-nous ?",
+ "kunye": {
+  "sanatci": "Paul Gauguin",
+  "sanatci_yasam": "1848–1903",
+  "tarih": "1897–98",
+  "tarih_belirsizlik": "MFA birincil \"1897–98\"; WD P571 precision 8 + P1319/P1326; itwiki/data tek-yıl \"1897\"; imza \"1897\"; enwiki kategorisi \"1898 paintings\" (D, C063)",
+  "teknik": "Katalog alanı \"Oil on canvas\"; küratöryal metin \"coarse and heavy burlap support\" (D, C064); düzgün boya uygulaması (C037)",
+  "boyut_cm": {
+   "yukseklik": 139.1,
+   "genislik": 374.6
+  },
+  "muze": "Museum of Fine Arts, Boston",
+  "envanter": "36.270",
+  "edinim": "1936, Marie Harriman Gallery → MFA, 80.000 $; edinim tarihi 16 Nisan 1936; Tompkins Collection—Arthur Gordon Tompkins Fund",
+  "konum": "Sidney and Esther Rabb Gallery (Gallery 255) — 19 Temmuz 2025 arşiv durumu; güncel sergileme doğrulanmadı (C080)",
+  "telif_durumu": "Kamu malı (Gauguin ö. 1903; 100+ yıl pma); Commons iki dosya PD, atıf zorunlu değil"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_(1897-98).jpg",
+  "kaynak": "Wikimedia Commons (dosya 1 credit: Wildenstein Plattner Institute; dosya 2 credit: Museum of Fine Arts Boston)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (S5 imageinfo, 2 dosya); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "5400×1987 (P18, WPI credit); 3090×1175 (MFA credit)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C078); GZ TASLAK; kompozisyon S9 (A) + S3/S4 (B) METNİNDEN (\"kaynakların betimlediği\"); iki dosyanın en-boy oranları farklı (≈2.72 ↔ ≈2.63) ve DateTimeOriginal ayrışıyor → kadraj/sürüm farkı çözülmedi; görsel projeye kopyalanmadı, URL+lisans+referans verildi"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 438
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1535
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3189
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincile-arşivden-erişmek"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-kuşku-ifadeleriyle-bir-zincir"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-içindeki-yer-vasiyet-anlatısının-sınırı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-düzlem-friz-ve-paletin-mantığı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-tartışmaları-figürün-ve-idolün-kimliği"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-birincilin-iç-gerilimi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "MFA birincil kaydını (Wayback 19 Temmuz 2025) künye alanlarıyla doğrular: 1897–98, 36.270, 139.1×374.6 cm, Wildenstein 561, Tompkins Fund.",
+  "Birincilin iç gerilimini (Oil on canvas ↔ burlap; smooth ↔ thick) ve dokuz D ihtilafını yönetir; \"probably 1913\" / \"sold or consigned\" kuşkularını korur.",
+  "Sağdan sola okumayı, friz düzenini ve mavi/Veronese yeşili–turuncu paletini kaynak betimiyle analiz eder; görselin incelenmediğini beyan eder.",
+  "Merkez figür ve idol kimliklerindeki ihtilafları (androjen/Eve/giovinetto/Âdem; Beyond/Hina/uydurma) kanıt düzeyine göre ayırır.",
+  "Provenance zincirini 1898–1936 arasında notlarıyla kurar; Gauguin'in \"librettosuz müzikal şiir\" beyanı ile allegorik okumalar arasındaki gerilimi değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Burlap (çuval bezi)",
+   "tanim": "Kaba, ağır dokunmuş kumaş destek; MFA küratöryal metni bu eserde burlap der, katalog alanı \"Oil on canvas\" der.",
+   "kanit": [
+    "C005",
+    "C004"
+   ]
+  },
+  {
+   "ad": "Friz",
+   "tanim": "Yatay, yan yana dizilmiş figür şeridi; perspektif derinliği yerine yüzey düzeni (antik friz / Borobudur rölyefi göndermesi).",
+   "kanit": [
+    "C035",
+    "C033"
+   ]
+  },
+  {
+   "ad": "Catalogue raisonné",
+   "tanim": "Sanatçının eserlerinin numaralı bilimsel kataloğu; bu eser Wildenstein 561.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "The Beyond (öte)",
+   "tanim": "Gauguin'in mavi idol için kullandığı işlev tanımı; bir kimlik değil, yön gösterme.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik ve sergi geçmişi; MFA kaydında kuşku ifadeleriyle (probably 1913, before 1920, sold or consigned) zincirlenir.",
+   "kanit": [
+    "C046",
+    "C053",
+    "C055"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: EN \"Where Do We Come From? What Are We? Where Are We Going?\"; FR \"D'où venons-nous ? Que sommes-nous ? Où allons-nous ?\"; TR \"Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz?\" (WD P1476 fr biçimi tiresiz).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Paul Gauguin (French, 1848–1903).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: MFA \"1897–98\"; WD P571 precision 8 + P1319 +1897 / P1326 +1898 (→ C063 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Katalog medium alanı: \"Oil on canvas\" (→ C064 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Küratöryal metin: \"choice of a coarse and heavy burlap support\" (kaba/ağır çuval bezi). Jüt alıntısı ayrı: C044 E.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: 139.1 × 374.6 cm (54 3/4 × 147 1/2 in.) (→ C065 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Müze: Museum of Fine Arts, Boston.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Envanter: 36.270.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Credit line: \"Tompkins Collection—Arthur Gordon Tompkins Fund\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Sergileme: \"ON VIEW Sidney and Esther Rabb Gallery (Gallery 255)\" — 2025-07-19 arşiv durumu (güncel: C080 E).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Collections: Europe; Classifications: Paintings.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Catalogue raisonné: Wildenstein 561.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Yazıtlar: sol üst \"D'ou Venons Nous / Que Sommes Nous / Où Allons Nous\"; sağ üst \"P. Gauguin / 1897\"; soru işareti/tire yok, tüm sözcükler büyük harfli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sarı köşeler; Gauguin benzetmesi: \"like a fresco whose corners are spoiled with age, and which is attached to a golden wall\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Yapım yeri: Tahiti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Gauguin 1891'de Tahiti'ye gitti (enwiki açık; MFA \"six years prior\" ile uyumlu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Gauguin'in denediği en büyük eser: \"this monumental painting—the largest he ever attempted\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Akım etiketi \"Post-Impressionism\": WD P135 ref blog (beckchris.wordpress.com); enwiki infobox atıfsız → akademik zincir yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Tür sınıflaması çelişkili: WD P136 \"genre art\" ↔ data \"alegori\" ↔ itwiki kategorisi \"Dipinti a soggetto simbolico\" ↔ Gauguin \"non ha alcuna allegoria\"; çözüm dayatılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S12",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel dosyaları Public domain; AttributionRequired=false (Gauguin ö. 1903; 100+ yıl pma).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Kompozisyon sağdan sola: uyuyan bebekten \"an old woman nearing death\"ın büzülmüş figürüne.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Üç ana grup başlıktaki üç soruyu yansıtır; orta grup genç yetişkinliğin gündelik varoluşu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Sağda uyuyan bebek + üç çömelmiş/oturmuş kadın = yaşamın başlangıcı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Merkeze yakın ANDROJEN ayakta figür meyveye uzanır: \"Near center, an androgynous standing figure reaches for a piece of fruit.\" (→ C066 D)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Meyve koparan figür için Eve/günah allegorisi yorumu (Gauguin'in niyeti olarak aktarılır).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Kolları simetrik açık mavi idol, kaide üstünde; Gauguin'e göre \"indicates the Beyond\" (→ C067 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Yaşlı kadın \"reconciled and resigned to her thoughts\" (uzlaşmış, düşüncelerine boyun eğmiş). DÜZELTME: brief A diyordu; ifade MFA metninde YOK → Boime 2008 (enwiki) + Gauguin betimi (itwiki) = B.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Tuhaf beyaz kuş \"sözlerin boşunalığı\"nı temsil eder; pençelerinde kertenkele tutar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Sağdan sola \"birth-sin-death\" (doğum–günah–ölüm) döngüsü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Mor giysili iki figür düşüncelerini açar; ağaç yanında iki kederli kadın + kolunu kaldıran çömelmiş figür; aydınlanma ↔ \"batıl, irrasyonel, barbar gelenekler\" karşıtlığı yorumu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Kedilerle çevrili kız = \"girlhood\" saflığı; annelik grubu; olgun kadının bileziği + beyaz keçi = \"domestic submission\"; yaşam döngüsüne dişil perspektif.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Gauguin betimi: dere, ağaçlar, deniz, yakın ada tepeleri; ton tümüyle mavi + Veronese yeşili; nüdler canlı turuncu; köşeler \"giallo cromo\" (krom sarısı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Model zinciri: Parthenon frizleri, pre-Kolomb Peru mumyaları, Manet, Puvis de Chavannes, Borobudur rölyefleri (ders kitabı zinciri; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "\"Yaşlı kadının duruşu Peru mumyalarından alınmıştır\" (data): özgül iddia çekilen metinlerde yok; yalnız genel model listesi + Andersen 1967 başlığı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Antinaturalistik palet; friz gibi yatay dizilim, perspektif derinliği yok; çömelmiş figür \"perspektif yasalarını kasten atlatır\"; renk çağrıştırır, müzikal arabeskler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Belirli bir mimariye entegre planlanmadı; \"look like a mural\" istendi; basit beyaz çerçeve talep edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "\"His smooth paint application and choice of a coarse and heavy burlap support further emphasized the painting's fresco-like effect.\" (→ C068 D)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "\"a philosophical work comparable to the themes of the Gospels\" olarak görülür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Gauguin: \"il mio sogno non si lascia catturare, non ha alcuna allegoria; è un poema musicale e fa a meno di qualsiasi libretto\" (rüyam yakalanamaz, allegorisi yok, librettosuz müzikal şiir).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Üç sorunun kökeni: Dupanloup kateşizmi; Orléans yakınlarında Petit Séminaire (La Chapelle-Saint-Mesmin), 11–16 yaş; sonraki anticlerical tutuma karşın sorular kalıcı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "1897 kışı psikolojik kriz: modernite hayal kırıklığı, Fransız sömürge otoriteleriyle kavga, mali zorluk, \"steep mental and physical decline\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Kızının ölüm haberi Kopenhag'dan geldi (\"Aline\" adı yalnız itwiki, atıfsız → C044).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Aralık 1897 Monfreid mektubunda intihar planı; eseri bitirdikten sonra arsenikle intihar girişimi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "itwiki atıfsız ayrıntıları: ~bir ay gece gündüz, \"au premier coup\", jüt çuval bezi alıntısı, arsenik dozunun kusturarak etkisizleşmesi, kalp sorunları, \"Aline\" adı; mektup metnine erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "\"Ruhsal vasiyet\" (testamento spirituale) çerçevesi itwiki'de atıfsız (MFA miras ifadesi ayrı: C072 A).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "1898: sanatçıdan Tahiti'den Georges Daniel de Monfreid'e (1856–1929) Paris; Monfreid + acentesi Vollard'a (1867–1939) konsinye (→ C069 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Galerie Ambroise Vollard sergisi 17 Kasım – 10 Aralık 1898; MFA \"alongside a suite of related paintings\" (\"sekiz\" sayısı: C081 B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "İlk gösterimde karışık eleştiriler; Natanson \"obscure\"/\"difficult to grasp\"/\"invites us to meditate upon the mystery of our destiny\"; MFA \"resists easy interpretation and singular narrative\"; sorular: origins, identity, purpose, destiny.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Fontainas (Mercure de France): yazıt olmadan allegori anlaşılmaz; Puvis de Chavannes \"Inter artes et naturam (Between Art and Nature)\" karşılaştırması.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Gauguin yanıtı: \"pictorial language of feelings\"; edebî terimlerle ifade edilemez; Puvis'ten (\"great master of decorative painting\") ayrışma isteği ({{citation needed}}).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "Charles Morice'in Fransa adına satın alma abonelik girişimi başarısız (her iki wikide atıfsız; MFA'da yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "1901: Vollard → Gabriel Frizeau (1870–1938), Bordeaux (fiyat ayrı: C073 B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "\"probably 1913\" Frizeau → Galérie Barbazanges, Paris; Barbazanges 1914'te sergiledi (\"probably\" AYNEN korundu; enwiki \"around 1913\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "\"before 1920\" Barbazanges → J. B. Stang, Oslo; Barbazanges 1920'de geri almaya çalıştı (→ C071 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "1935 Stang → Alfred Gold (Berlin/Paris): \"sold or consigned\" — kesin değil; enwiki \"sold … via Alfred Gold\" diye kesinleştirir (kuşku korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "1932 Kunsthaus Zürih ödünç (20 Şub–20 Mar, Gold Stang temsilcisi, sonra Paris); 1935 Brüksel \"L'impressionisme\" (15 Haz–29 Eyl, kat.28); 1 Şub 1935 Seligmann mektubu (AAA kutu 426): \"la grand Gauguin était toujours la proprieté de Stang\", yazar tanımlanmamış.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Gold → Marie Harriman Gallery (NY); galeri sergisi 22 Nisan – 9 Mayıs 1936; NYT 14 Nisan 1936 \"Gauguin Canvas is Brought Here\" (kaynakçada anıldı, metne erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "1936 Harriman Gallery → MFA, 80.000 $; edinim tarihi 16 Nisan 1936 (WD P195 P580 aynı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "MFA note 2 Frèches-Thory bildirisini anar: \"Le premier acheteur d'Où venons-nous?…\", Rencontres Gauguin à Tahiti (Papeete, 20–21 Haz 1989), pp.48–56; A = atfın birincil kayıtta varlığı, metne erişilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Commons dosya 1 (WD P18): 5400×1987 px, 3.362.814 bayt, PD, credit Wildenstein Plattner Institute; DateTimeOriginal \"between 1897 and 1898\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "Commons dosya 2: \"Paul Gauguin - D'ou venons-nous.jpg\", 3090×1175 px, 1.570.473 bayt, PD, credit MFA Boston (eski URL); DateTimeOriginal \"1897\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Muammalı konu/atmosfer bazı araştırmacılarca Gauguin'in kişisel çatışmalarına bağlanır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "D1 Tarih: MFA/WD/enwiki lead 1897–98 ↔ itwiki + data 1897 ↔ enwiki Background \"completed … in 1897\" ↔ kategori \"1898 paintings\" ↔ imza 1897 ↔ Commons dosya 2 \"1897\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C064",
+   "ifade": "D2 Medium/destek: MFA katalog \"Oil on canvas\" ↔ aynı kaydın küratöryal \"coarse and heavy burlap support\" ↔ itwiki \"olio su tela\" + jüt alıntısı ↔ WD P186 (oil paint + canvas/painting support).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "D3 Boyut: MFA/WD 139.1 × 374.6 ↔ itwiki 139,1 × 374,5 ↔ enwiki infobox 139 × 375 (yuvarlanmış).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C066",
+   "ifade": "D4 Merkez figür: MFA \"androgynous\" ↔ enwiki kadın/Eve (Andersen 1967) ↔ itwiki \"giovinetto\" ↔ Gauguin betimi cinsiyetsiz ↔ data \"Âdem\" (hiçbir çekilen kaynakla desteklenmiyor).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C067",
+   "ifade": "D5 İdol: MFA/Gauguin \"the Beyond\" ↔ itwiki ay tanrıçası Hina + \"Hina te Fatou\" (Cricco-Di Teodoro) ↔ data \"uydurma put / gerçek Polinezya putu değil\" (çekilen kaynaklarda yok).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C068",
+   "ifade": "D6 Boya uygulaması: MFA \"smooth paint application\" (bu eser) ↔ enwiki Style \"thick brushstrokes\" (genel üslup, atıfsız) ↔ itwiki \"grezza e veemente pennellate\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C069",
+   "ifade": "D7 Vollard zinciri: MFA/enwiki Monfreid + acente konsinye ↔ itwiki rulo hâlinde doğrudan Vollard'a gönderim (Monfreid atlanmış).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C070",
+   "ifade": "D8 Akım etiketi: data \"Sentetizm'in en görkemli örneğidir\" ↔ WD P135/enwiki Post-Impressionism; çekilen hiçbir kaynakta Sentetizm geçmiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C071",
+   "ifade": "D9 Stang başlangıcı: WD P127 P580 \"1920\" (precision 9) ↔ MFA \"before 1920\"; birincil esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C072",
+   "ifade": "MFA: \"an ambitious effort in decorative mural painting, no doubt made with an eye to his artistic legacy\" (kuşku ifadesi korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "Frizeau'nun 1901 alış fiyatı 2.500 frank (enwiki Thomson 1987 pp.198–200; itwiki atıfsız tekrar).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C074",
+   "ifade": "enwiki hastalık listesi: \"eczema, syphilis, and conjunctivitis\" (Andersen 1967); itwiki farklı/atıfsız (kalp) → kesinleştirme yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C075",
+   "ifade": "Yorum: üç sorunun yanıtsız bırakılması izleyiciyi anlam üretimine ortak eden estetik strateji olarak okunabilir; MFA \"resists easy interpretation\" ile uyumlu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C076",
+   "ifade": "Yorum: \"librettosuz müzikal şiir\" beyanı ↔ Fontainas'ın yazıt bağımlılığı eleştirisi = iki anlam rejiminin (alegori ↔ sembol) çatışması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C077",
+   "ifade": "Yorum: \"bozulmamış cennet\" beklentisi ↔ sömürge modernitesi hayal kırıklığı, melankolik tonu açıklayan çerçeve olarak önerilir; nedensel iddia değil, egzotikleştirici bakış sorgulanabilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C078",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız API metadata; iki Commons dosyası PD; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C079",
+   "ifade": "Literatür metinlerine erişilmedi (Andersen, Boime, Boyle-Turner, Dorra, Gayford, Gibson, Rousseau, Shackelford, Stuckey, Thomson, Mathews, Messina, Cricco-Di Teodoro, Loescher, Frèches-Thory, NYT 1936, AAA Seligmann); WPI JS kabuğu + arşiv yok; canlı MFA SSL/403; atıf adı \"Anderson\" ↔ \"Andersen\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S9",
+    "S10",
+    "S11",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C080",
+   "ifade": "Gallery 255 / \"ON VIEW\" bilgisi 2025-07-19 arşivine ait; güncel sergileme durumu doğrulanmadı (canlı site engelli).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C081",
+   "ifade": "enwiki: Monfreid eseri, daha önce gönderilmiş sekiz tematik ilişkili resimle birlikte Vollard'a iletti (Boyle-Turner 2007 p.175).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q890678 (P1476/P170/P571/P186/P2048/P2049/P195/P217/P276/P18/P6216/P136/P135/P1071/P127)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q890678.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData); P571 precision 8 + P1319/P1326 korundu",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (14 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q37693%7CQ296955%7CQ12321255%7CQ49133%7CQ42000%7CQ166713%7CQ1047337%7CQ19652%7CQ60332278%7CQ29940705%7CQ11979686%7CQ97309629%7CQ565%7CQ8447",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "Where Do We Come From? What Are We? Where Are We Going? — wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Where%20Do%20We%20Come%20From%3F%20What%20Are%20We%3F%20Where%20Are%20We%20Going%3F&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); satır içi atıflar okundu, refs metinlerine erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Da dove veniamo? Chi siamo? Dove andiamo? — wikitext (Gauguin betimi + Fontainas tam alıntı)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Da%20dove%20veniamo%3F%20Chi%20siamo%3F%20Dove%20andiamo%3F&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); bazı pasajlar satır içi atıfsız (E)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: 2 dosya (P18 5400×1987 WPI credit; 3090×1175 MFA credit)",
+   "url": "https://commons.wikimedia.org/wiki/File:Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_(1897-98).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata + lisans); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Museum of Fine Arts, Boston (canlı)",
+   "belge": "collections.mfa.org/objects/32558",
+   "url": "https://collections.mfa.org/objects/32558",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ: SSL sertifika süresi dolmuş (curl 60), HTTP 000, 19:04:35Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Museum of Fine Arts, Boston (canlı, eski URL)",
+   "belge": "www.mfa.org/collections/object/where-do-we-come-from-what-are-we-where-are-we-going-32558",
+   "url": "http://www.mfa.org/collections/object/where-do-we-come-from-what-are-we-where-are-we-going-32558",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ: 403 (bot engeli), 19:04:47Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Internet Archive",
+   "belge": "wayback/available (collections.mfa.org/objects/32558)",
+   "url": "https://archive.org/wayback/available?url=collections.mfa.org/objects/32558",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; closest snapshot 20250719053357",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Museum of Fine Arts, Boston (Wayback kopyası)",
+   "belge": "nesne kaydı 32558, snapshot 20250719053357 (19 Temmuz 2025): katalog alanları + küratöryal metin + provenance + notlar 1–5",
+   "url": "https://web.archive.org/web/20250719053357/https://collections.mfa.org/objects/32558",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~19:05Z), 31630 bayt; TAM okundu (birincil arşiv kopyası; snapshot tarihi beyan edildi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wildenstein Plattner Institute",
+   "belge": "dijital catalogue raisonné, artworks/detail?a=71734 (Commons credit)",
+   "url": "https://digitalprojects.wpi.art/gauguin/artworks/detail?a=71734",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ: 200 ama Angular JS kabuğu, 0 görünür metin (19:05:45Z); arşiv snapshot yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Internet Archive",
+   "belge": "wayback/available (WPI a=71734)",
+   "url": "https://archive.org/wayback/available?url=digitalprojects.wpi.art/gauguin/artworks/detail%3Fa%3D71734",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; snapshot YOK (19:06:23Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "yerel data/ (Sanat Atlası)",
+   "belge": "10 JSON'da Q890678 taraması (17 eşleşme; salt-okunur, DEĞİŞTİRİLMEDİ)",
+   "url": "yerel dosya: data/basyapitlar.json, data/eser_ayrintilari.json, data/eser_notlari.json, data/yuruyus.json vb. (URL yok)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma; \"Âdem\"/\"Sentetizm\"/\"uydurma put\"/tek-yıl 1897 iddiaları kaynaksız/çelişkili",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Inter artes et naturam (Between Art and Nature)",
+   "sanatci": "Pierre Puvis de Chavannes",
+   "mufredat_ici": false,
+   "gerekce": "Fontainas 1898 eleştirisinde bu panele benzetildi; Gauguin, Puvis'in sözcüklerle aktarılabilir alegorisinden \"duyguların resimsel dili\" ile ayrıştı. Sanatçı müfredatta (sanatcilar.json), bu eser başyapıt listesinde değil.",
+   "kanit": [
+    "C049",
+    "C050",
+    "C036"
+   ]
+  },
+  {
+   "eser": "Hina te Fatou",
+   "sanatci": "Paul Gauguin",
+   "gerekce": "itwiki mavi idolü bu resme bağlar (Cricco-Di Teodoro ders kitabı zinciri); idolün kimliği tartışmalı olduğundan (C067 D) yalnızca karşılaştırma önerisi olarak sunulur, kesin kimlik iddiası değil. Birincil işlev tanımı \"the Beyond\"dur.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "eser": "Borobudur rölyefleri (Cava, Endonezya)",
+   "gerekce": "itwiki model zincirinde geçer; yatay friz düzeni ve perspektifsiz anlatım karşılaştırması için. Karşılaştırma metinsel düzeyde; görsel yan yana inceleme yapılmadı (C078).",
+   "kanit": [
+    "C033",
+    "C035"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — S9 (MFA Wayback 20250719053357) ham cache'den yeniden okundu: katalog alanları, küratöryal metin, provenance + notlar 1–5 iddialarla karşılaştırıldı; \"probably 1913\" / \"before 1920\" / \"sold or consigned\" / \"no doubt\" kuşku ifadeleri aynen korundu. S3/S4 wikitext yeniden okundu; C027'nin MFA'da bulunmadığı tespit edilip A→B indirildi, C016 B yapıldı, karışık seviyeli brief iddiaları ayrıştırıldı (C072/C073/C074/C081). S1 WD (precision 8 + P1319/P1326, P127 P580 1920) ve S5 Commons metadata doğrulandı. S6/S7 canlı engel, S10 WPI JS kabuğu + S11 arşiv yok tekrar teyit edildi. Görsel İNCELENMEDİ → GZ TASLAK; literatür metinlerine erişilmedi (C079).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data basyapitlar/ders_kaynaklari/eserler_onbellek \"1897\" ↔ birincil MFA \"1897–98\" (C003/C063 D); tek-yıl kesinleştirmesi önerilir.",
+  "\"Âdem\": data eser_ayrintilari + yuruyus nokta metni \"Cennet'teki Âdem'i … çağrıştırır\" ↔ MFA \"androgynous\", enwiki Eve, itwiki giovinetto (C066 D); data iddiası hiçbir çekilen kaynakla desteklenmiyor.",
+  "\"Sentetizm\": data eser_notlari \"Sentetizm'in en görkemli örneğidir\" ↔ WD/enwiki Post-Impressionism (C070 D); çekilen kaynaklarda Sentetizm geçmiyor → kaynaksız.",
+  "\"alegori\": data eser_konulari ↔ WD P136 \"genre art\" ↔ Gauguin \"non ha alcuna allegoria\" (C019 E / C039 B); sınıflama gerilimi, çözüm dayatılmadı.",
+  "\"uydurma put\": data \"Gauguin'in uydurduğu … gerçek bir Polinezya putu değildir\" → çekilen kaynaklarda destek YOK (C067 D); itwiki Hina der, MFA \"Beyond\" der.",
+  "Peru mumyası duruşu: data özgül iddiası çekilen metinlerde yok (C034 E); Andersen 1967 başlığı + itwiki genel model listesi var. Beyaz kuş/kertenkele kısmı Gauguin alıntısıyla uyumlu (C028 B).",
+  "Medium: data \"bir tuval\" ↔ MFA katalog \"Oil on canvas\" + küratöryal \"burlap\" (C064 D); \"yaklaşık 1,4 × 3,7 metre\" birincil 139.1 × 374.6 ile uyumlu (yuvarlama).",
+  "\"üç soruyu yanıtsız bırakır\": data ↔ MFA \"resists easy interpretation and singular narrative\" ile uyumlu (yorum payı, ihtilaf değil; C048/C075).",
+  "Lisans: data eserler_onbellek gorsel.l BOŞ → Commons PD teyitli (C020/C060/C061); gorsel.d P18 dosyasıyla birebir aynı.",
+  "TR ad: data eser_adlari_tr \"Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz?\" WD tr etiketiyle uyumlu (C001).",
+  "Diğer: ders_ayirt_eserleri Post-Empresyonizm listesi WD P135 ile uyumlu ama zincir zayıf (C018 E); muze_numaralari.json'da Q890678/36.270 kaydı YOK → envanter boşluğu; eser_zorluk kolaylik 10 (içerik kararı).",
+  "Brief düzeltmesi: C027 brief'te A idi; ham MFA metninde \"reconciled and resigned\" YOK → B (Boime 2008 / Gauguin betimi). C016 B (1891 yalnız enwiki). data/ DEĞİŞTİRİLMEDİ."
+ ]
+}

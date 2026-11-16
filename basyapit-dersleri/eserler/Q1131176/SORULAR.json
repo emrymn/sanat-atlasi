@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1131176",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu kompozisyonun kaç otograf versiyonu vardır ve nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki: Köln (WRM) ve Münih (Alte Pinakothek)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek: Louvre"
+    },
+    {
+     "harf": "C",
+     "metin": "Üç: Köln, Münih ve Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "İki: Louvre ve Münih"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "WRM: \"Boucher did two versions of this motif. The other one is in ... the Alte Pinakothek in Munich.\" Pinakothek Köln versiyonunu doğrular [C001].",
+   "yanlis_gerekceleri": {
+    "B": "Louvre'da Sarışın Odalık versiyonu belgelenmedi; Louvre'daki ilgili eser 1745 Brown Odalisque'tir (RF 2140).",
+    "C": "Üçüncü bir Louvre versiyonu yok; iki otograf versiyon Köln + Münih.",
+    "D": "Louvre'da Sarışın Odalık yok; versiyonlar Köln ve Münih'te."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Köln versiyonunun tarihi ve imzası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1751; sağ altta \"F. Boucher / 1751\""
+    },
+    {
+     "harf": "B",
+     "metin": "1752; imzasız"
+    },
+    {
+     "harf": "C",
+     "metin": "1745; sol altta imza"
+    },
+    {
+     "harf": "D",
+     "metin": "1751; imzasız"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KE: \"1751 ... Signatur, unten rechts: F. Boucher / 1751\"; WRM 1751 [C003].",
+   "yanlis_gerekceleri": {
+    "B": "1752 Münih versiyonunun tarihidir; Köln 1751 ve imzalıdır.",
+    "C": "1745 Louvre Brown Odalisque'in tarihidir; Köln imzası sağ alttadır.",
+    "D": "Köln versiyonu imzasız değildir; sağ altta \"F. Boucher / 1751\" vardır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Münih versiyonunun birincil kayıt tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1752"
+    },
+    {
+     "harf": "B",
+     "metin": "1751"
+    },
+    {
+     "harf": "C",
+     "metin": "1745"
+    },
+    {
+     "harf": "D",
+     "metin": "1753"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Pinakothek: \"Dating 1752\" [C004].",
+   "yanlis_gerekceleri": {
+    "B": "1751 Köln versiyonunun tarihidir.",
+    "C": "1745 Louvre Brown Odalisque'in tarihidir.",
+    "D": "1753 yalnız Commons crop dosya adındaki hatadır; metadata ve müze 1752 der."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Köln versiyonunun envanter numarası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "WRM 2639"
+    },
+    {
+     "harf": "B",
+     "metin": "1166"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 2140"
+    },
+    {
+     "harf": "D",
+     "metin": "22809"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KE/WRM: \"Inv.-Nr. WRM 2639\" [C008].",
+   "yanlis_gerekceleri": {
+    "B": "1166 Münih versiyonunun envanteridir.",
+    "C": "RF 2140 Louvre Brown Odalisque'in envanteridir.",
+    "D": "22809 CCP München Mü-Nr'sidir (envanter değil, toplama merkezi numarası)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Münih versiyonunun envanteri ve kökeni?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1166; 1799'da Galerie Zweibrücken'den"
+    },
+    {
+     "harf": "B",
+     "metin": "WRM 2639; 1941 Gurlitt'ten"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 2140; 1745 Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "1166; 1946 CCP iadesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Pinakothek: \"Inventory Number 1166 ... Origin 1799 aus der Galerie Zweibrücken\" [C009].",
+   "yanlis_gerekceleri": {
+    "B": "WRM 2639 + 1941 Gurlitt Köln versiyonuna aittir.",
+    "C": "RF 2140 Louvre Brown Odalisque'tir.",
+    "D": "1946 CCP iadesi Köln versiyonunundur; Münih 1799 Zweibrücken kökenlidir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Her iki versiyonun tekniği/desteği?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera, pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "WRM \"oil on canvas\"; KE \"Öl, Leinwand\"; DHM \"Öl auf Leinwand\"; Pinakothek \"Leinwand\" [C005].",
+   "yanlis_gerekceleri": {
+    "B": "Tempera/pano değil; yağlıboya/tuval.",
+    "C": "Fresk (duvar resmi) değil; tuval üzeri yağlıboya.",
+    "D": "Suluboya/kâğıt hazırlık çiziminin tekniğidir; tablo değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Köln versiyonunun boyutu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "59,5 × 73,5 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "59 × 73 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "58,5 × 73 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "53 × 64 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "KE/WRM: \"59,5 x 73,5 cm\" [C006].",
+   "yanlis_gerekceleri": {
+    "B": "59 × 73 Münih versiyonunun boyutudur.",
+    "C": "58,5 × 73 itwiki'nin hatalı değeridir; birincil 59 × 73 (Münih) der.",
+    "D": "53 × 64 Louvre Brown Odalisque'in boyutudur."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "WRM Köln versiyonunu 1941'de kimden, kaç RM'ye aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hildebrand Gurlitt'ten, RM 100.000"
+    },
+    {
+     "harf": "B",
+     "metin": "Pompadour'un kardeşinden, RM 100.000"
+    },
+    {
+     "harf": "C",
+     "metin": "Galerie Zweibrücken'den, RM 100.000"
+    },
+    {
+     "harf": "D",
+     "metin": "Fairfax Murray'den, RM 100.000"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "DHM CCP: \"Bought by W.R.M. for RM 100.000,-- from Dr. Gurlitt in autumn 1941\" [C010][C011].",
+   "yanlis_gerekceleri": {
+    "B": "Pompadour'un kardeşi ilk satın alıcıdır (18. yy); 1941 alımı Gurlitt'tendir.",
+    "C": "Zweibrücken 1799'da Münih versiyonunun kökenidir; Köln 1941 Gurlitt alımıdır.",
+    "D": "Fairfax Murray 1914'e dek önceki sahiptir; 1941 satıcısı Gurlitt'tir."
+   },
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "CCP München Mü-Nr 22809 kaydı neyi belgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1946'da München CCP'ye giriş ve aynı yıl Köln'e iade"
+    },
+    {
+     "harf": "B",
+     "metin": "1941'de Gurlitt'ten satış"
+    },
+    {
+     "harf": "C",
+     "metin": "1799'da Zweibrücken'den transfer"
+    },
+    {
+     "harf": "D",
+     "metin": "1967'de Londra sergisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "DHM: \"1946.03.28 (Eingang) ... 1946.10.03 (Ausgang) ... Köln (Interzonal-Exchange)\" [C011].",
+   "yanlis_gerekceleri": {
+    "B": "1941 satışı provenance bilgisidir; CCP kartı 1946 giriş/çıkışı belgeler.",
+    "C": "1799 Zweibrücken Münih kökenidir; CCP kaydı Köln iadesidir.",
+    "D": "1967 Londra sergisi KE sergi alanındadır; CCP kartı değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Münih tablosu için hazırlık çizimi (Christie's lotu) nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kara kalem + kırmızı/beyaz tebeşir, 222 × 362 mm; Demarteau baskısıyla birlikte"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya tablo kopyası"
+    },
+    {
+     "harf": "C",
+     "metin": "Suluboya, kâğıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Litografi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Christie's: \"black lead, red and white chalk on light brown paper ... 222 x 362 mm ... together with Demarteau's manière crayon print\" [C022].",
+   "yanlis_gerekceleri": {
+    "B": "Lot tablo kopyası değil, hazırlık çizimi + baskıdır.",
+    "C": "Suluboya değil; kara kalem + tebeşir.",
+    "D": "Litografi değil; Demarteau manière crayon baskısı."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Q1131176 bir tablo serisi öğesidir; iki parçası Köln (Q95683812) ve Münih (Q110055074) versiyonlarıdır.",
+   "dogru": true,
+   "aciklama": "Doğru: WD P31=Q15727816 (painting series), P527 iki parça; WRM/Pinakothek iki versiyonu doğrular [C001].",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Her iki versiyon yağlıboya/tuvaldir.",
+   "dogru": true,
+   "aciklama": "Doğru: WRM/KE/DHM/Pinakothek oil on canvas / Öl auf Leinwand / Leinwand [C005].",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Münih versiyonu 1799'da Galerie Zweibrücken'den gelmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: Pinakothek \"Origin 1799 aus der Galerie Zweibrücken\" [C009].",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Köln versiyonu 1946'da CCP München'de işlenip Köln'e iade edilmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: DHM Mü-Nr 22809, 1946.03.28 giriş / 1946.10.03 çıkış, Köln (Interzonal-Exchange) [C011].",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Sitter'ın Marie-Louise O'Murphy olduğu kesin olarak kanıtlanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Pinakothek \"lässt es sich nicht nachweisen\" der; WD \"probably\" niteleyicisi kullanır; kimlik gelenekseldir ama kanıtlanmamıştır [C013].",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 görsel/müze uyuşmazlığını analiz edin: data \"1751, WRM Köln\" etiketi ↔ ana görsel Commons credit Münih. Hangi QID hangi versiyon? Çözüm önerisi.",
+   "beklenen_ogeler": [
+    "seri öğesi Q1131176",
+    "Köln Q95683812 / Münih Q110055074",
+    "credit BStGS = Münih",
+    "görsel-müze etiket düzeltmesi"
+   ],
+   "kanit": [
+    "C037",
+    "C001",
+    "C059"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Sitter kimliği tartışmasını (Louise ↔ Victoire; \"probably\"/\"nicht nachweisen\") kaynak hiyerarşisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "WRM/Casanova Louise geleneği",
+    "Laing Victoire önerisi",
+    "Pinakothek nicht nachweisen",
+    "WD probably",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C042",
+    "C049",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Köln provenance zincirini ve 1941 Gurlitt alımı / 1946 CCP iadesini yazın; ?Marlborough ve Charpentier belirsizliklerini koruyun.",
+   "beklenen_ogeler": [
+    "?Marlborough (soru işaretli)",
+    "Fairfax Murray ≤1914",
+    "Charpentier tarihsiz",
+    "Gurlitt 1941 RM 100.000",
+    "CCP 22809 1946 iade"
+   ],
+   "kanit": [
+    "C010",
+    "C011",
+    "C041",
+    "C051"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Türev yönü çelişkisini (WD Münih←Köln ↔ KE Köln=Münih tekrarı) ve \"orijinal hangisi\" sorusunu tartışın.",
+   "beklenen_ogeler": [
+    "WD P144/P4969",
+    "KE Wiederholung von 1166",
+    "yön çözümsüz",
+    "orijinal belirsiz"
+   ],
+   "kanit": [
+    "C024",
+    "C055"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Modelin yaşına ilişkin etik okumayı (KE \"no older than fourteen\"; \"by today's standards ... provocative\") akademik ve ayrıntısız çerçevede tartışın; tarihsel ↔ modern anakronizm riski.",
+   "beklenen_ogeler": [
+    "1737 doğum + 1751 keşif",
+    "KE no older than fourteen",
+    "modern etik değerlendirme",
+    "anakronizm riski",
+    "ayrıntısız akademik dil"
+   ],
+   "kanit": [
+    "C016",
+    "C031",
+    "C056"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Köln betiminde figürün yüzüstü uzanışını, bükülü bacaklarını ve kanepe arkalığı üzerinden resmin dışına yönelen bakışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): WRM betimi: \"Lying on her stomach with her legs gracefully bent ... looking ... out of the picture.\"",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kanepe kumaşının rengini/desenini kontrol edin: WRM \"sarı desenli\" der; data \"yeşil kadife\" der — hangisi doğru?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): WRM \"sumptuously patterned yellow fabric\"; görsel teyit bekliyor (D10).",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Münih betiminde şezlongu ve yerdeki kömür mangalını (Kohlenbecken) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Pinakothek: \"auf einer Chaiselongue; für Wärme sorgt ein Kohlenbecken auf dem Boden.\"",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Köln versiyonunda sağ alt köşedeki imza ve tarihi (\"F. Boucher / 1751\") arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): KE: \"Signatur, unten rechts: F. Boucher / 1751.\"",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Hazırlık çizimi ile tabloyu karşılaştırın: çizimde sade yastıklar, tabloda gösterişli draperi/döşeme.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Christie's: \"in place of the elaborate draperies and patterned upholstery ... firm cushions.\"",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Seri kimliği?",
+   "arka": "Q1131176 = painting series; Köln 1751 WRM 2639 (Q95683812) + Münih 1752 inv 1166 (Q110055074); Boucher 1703–1770.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Künye (Köln)?",
+   "arka": "1751; yağlıboya/tuval; 59,5 × 73,5; imza sağ alt \"F. Boucher / 1751\"; WRM 2639; Zugang 09.1941.",
+   "kanit": [
+    "C003",
+    "C005",
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Köln provenance + CCP?",
+   "arka": "?Marlborough → Fairfax Murray (≤1914) → Charpentier → Gurlitt (1941) → WRM (Eylül 1941, RM 100.000); CCP Mü-Nr 22809, 28.03.1946 giriş / 03.10.1946 çıkış, Köln'e iade.",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Münih künye + köken?",
+   "arka": "1752; 59 × 73; inv 1166; AP OG Saal XII; 1799 Galerie Zweibrücken; BStGS/Alte Pinakothek.",
+   "kanit": [
+    "C004",
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Hazırlık çizimi?",
+   "arka": "Münih tablosu için; kara kalem + kırmızı/beyaz tebeşir, 222 × 362 mm; Demarteau manière crayon baskısı; Laing orijinalden Boucher atfını teyit; \"Possibly Blondel d'Azincourt\" provenance.",
+   "kanit": [
+    "C022",
+    "C032"
+   ]
+  }
+ ]
+}

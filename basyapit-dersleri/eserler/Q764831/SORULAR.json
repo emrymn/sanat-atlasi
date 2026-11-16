@@ -1,0 +1,570 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q764831",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rijksmuseum, Amsterdam"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Kunsthistorisches Museum, Viyana"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S1: Rijksmuseum Amsterdam (P195=Q190804); güncel konum Eregalerij 2.30.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre farklı bir kurumdur; bu eser Rijksmuseum koleksiyonundadır (S5).",
+    "C": "KHM Viyana farklı bir kurumdur; kayıt Rijksmuseum'u gösterir (S5).",
+    "D": "Prado Madrid farklı bir kurumdur; eser Amsterdam'dadır (S5)."
+   },
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Rijksmuseum güncel envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "SK-A-385"
+    },
+    {
+     "harf": "B",
+     "metin": "2237"
+    },
+    {
+     "harf": "C",
+     "metin": "SK-A-386"
+    },
+    {
+     "harf": "D",
+     "metin": "Q764831"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 Objectnummer: SK-A-385.",
+   "yanlis_gerekceleri": {
+    "B": "2237, 1909 kataloğunun eser numarasıdır; güncel envanter SK-A-385'tir (S7).",
+    "C": "SK-A-386 kayıtta geçmez; Objectnummer alanı SK-A-385 der (S5).",
+    "D": "Q764831 Wikidata öğe kimliğidir; müze envanter numarası değildir (S1)."
+   },
+   "kanit": [
+    "C007",
+    "C033"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Rijksmuseum'un GÜNCEL nesne kaydı eseri hangi yıllarla tarihler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1665 - 1668"
+    },
+    {
+     "harf": "B",
+     "metin": "c. 1663-65"
+    },
+    {
+     "harf": "C",
+     "metin": "1660"
+    },
+    {
+     "harf": "D",
+     "metin": "1672"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 Datering: \"1665 - 1668\" (\"c.\" öneki yok).",
+   "yanlis_gerekceleri": {
+    "B": "\"c. 1663-65\" müzenin 2012 arşiv tarihlemesidir; güncel kayıt 1665-1668 der (D001 ihtilafı, S6).",
+    "C": "1660 tek yılı güncel kayıtta yoktur; kayıt 1665-1668 aralığını verir (S5).",
+    "D": "1672 Steen'in Leiden'de han izni aldığı yıldır (S14); eserin tarihlemesi değildir."
+   },
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine yağlı boya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"olieverf op doek\"; S6 \"Oil on canvas\"; WD P186 oil paint + canvas.",
+   "yanlis_gerekceleri": {
+    "B": "Kayıt \"doek\" (tuval) der; ahşap pano değil (S5).",
+    "C": "Fresk duvar tekniğidir; bu eser tuval üzerine yağlı boyadır (S5).",
+    "D": "Suluboya değil; bağlayıcı yağdır (olieverf, S5)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Müze kaydına göre soldaki ağlayan oğlanın ayakkabısında ne vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir dal/çubuk (roe)"
+    },
+    {
+     "harf": "B",
+     "metin": "Boş ayakkabı (hiçbir şey)"
+    },
+    {
+     "harf": "C",
+     "metin": "Şekerleme"
+    },
+    {
+     "harf": "D",
+     "metin": "Oyuncak bebek"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"een roe in zijn schoen\"; S6 \"found the cane in his shoe\"; S7 \"de hem toebedeelde gard\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Boş ayakkabı\" enwiki/frwiki anlatısıdır; birincil müze kaydı ve 1909 kataloğu dal (roe/gard) der (D002).",
+    "C": "Şekerleme uslu çocukların armağanıdır; ağlayan oğlanın ayakkabısında roe vardır (S5).",
+    "D": "Oyuncak bebek ortadaki kızın armağanıdır (Johannes de Doper-pop); oğlanın ayakkabısında değil (S5)."
+   },
+   "kanit": [
+    "C017",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Ortadaki kızın kollarında ne vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vaftizci Yahya bebeği ve şekerleme kovası"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir kolfstok"
+    },
+    {
+     "harf": "C",
+     "metin": "Elmas biçimli duivekater"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir sepet elma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"een Johannes de Doper-pop en een emmer met snoep\".",
+   "yanlis_gerekceleri": {
+    "B": "Kolfstok, annenin yanındaki gülen oğlanın sopasıdır; kızın kucağında değil (S5).",
+    "C": "Duivekater anlatısı atıfsız ikincil kaynakladır ve masaya dayanan ekmek olarak geçer; kızın kollarında değil (S2).",
+    "D": "Sepet yerde durur (koek/broodjes); kızın kollarında değil (S5)."
+   },
+   "kanit": [
+    "C015",
+    "C018",
+    "C024"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kabinet van Heteren 1809'da kimden, ne karşılığında satın alındı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Varis A. L. Gevers'ten (\"één ton gouds\")"
+    },
+    {
+     "harf": "B",
+     "metin": "Seger Tierens'ten (1743)"
+    },
+    {
+     "harf": "C",
+     "metin": "Van der Hoop koleksiyonundan"
+    },
+    {
+     "harf": "D",
+     "metin": "Mevr. Bicker satışından (1809)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 girişi: \"voor één ton gouds aangekocht van diens erfgenaam, den heer A. L. Gevers… 137… schilderijen\".",
+   "yanlis_gerekceleri": {
+    "B": "Seger Tierens 1743 satışı daha erken bir provenans halkasıdır; 1809'da Gevers satıcıdır, alıcı müzedir (S7).",
+    "C": "Van der Hoop, 1909 kataloğunda başka Steen eserlerinin (no. 2238) koleksiyonudur; Van Heteren değil (S7).",
+    "D": "Mevr. Bicker satışından 1809'da yedi ayrı resim alındı; Van Heteren kabinesi Gevers'ten alındı (S7 girişi)."
+   },
+   "kanit": [
+    "C033",
+    "C034",
+    "C032"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "İmza ve konumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"JSteen\" — sağ altta zeminde"
+    },
+    {
+     "harf": "B",
+     "metin": "\"JSteen\" — sol üstte masada"
+    },
+    {
+     "harf": "C",
+     "metin": "İmzasız"
+    },
+    {
+     "harf": "D",
+     "metin": "\"Jan Steen fecit\" — çerçevede"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"signatuur, JSteen\"; S7 no.2237 \"gem. rechts beneden op den grond\".",
+   "yanlis_gerekceleri": {
+    "B": "İmza sol üstte masada değil; 1909 kataloğu \"rechts beneden op den grond\" (sağ altta zeminde) der (S7).",
+    "C": "Eser imzasız değildir; kayıt \"signatuur, JSteen\" verir (S5).",
+    "D": "İmza biçimi \"JSteen\" monogramıdır, \"fecit\" değil; zeminde durur, çerçevede değil (S5/S7)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Enwiki'nin Kleiner atıf zincirine göre zencefilli Aziz Nicholas figürü hangi gerilimi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Katolik-Protestan gerilimi; 1655 Utrecht yasağı"
+    },
+    {
+     "harf": "B",
+     "metin": "İspanya-Hollanda savaşı"
+    },
+    {
+     "harf": "C",
+     "metin": "Lonca rekabeti"
+    },
+    {
+     "harf": "D",
+     "metin": "Kalvinist-Remonstrant çekişmesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Kleiner zinciri): figür Katolik aziz kültüyle ilişkilendirilir, Protestan otoritelerce onaylanmaz; 1655 Utrecht \"the baking of likenesses in bread or cake\" yasağı.",
+   "yanlis_gerekceleri": {
+    "B": "Savaş bağlamı Kleiner zincirinde geçmez; kaynak mezhepsel aziz kültü gerilimini aktarır (S2).",
+    "C": "Lonca rekabeti bu betimde yoktur; kaynak dinî otorite onayını konu alır (S2).",
+    "D": "Remonstrant çekişmesi zincirde anılmaz; kaynak Katolik-Protestan aziz kültü gerilimini verir (S2)."
+   },
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Enwiki/Kleiner zincirine göre Steen'in hiciv yolu hangi sonraki sanatçıyı açar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "William Hogarth (Marriage A La Mode)"
+    },
+    {
+     "harf": "B",
+     "metin": "Joshua Reynolds"
+    },
+    {
+     "harf": "C",
+     "metin": "Francisco Goya"
+    },
+    {
+     "harf": "D",
+     "metin": "Honoré Daumier"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Kleiner zinciri): \"paved the way for later artists like William Hogarth in his Marriage A La Mode series\".",
+   "yanlis_gerekceleri": {
+    "B": "Reynolds bu atıf zincirinde anılmaz; zincir Hogarth'ı işaret eder (S2).",
+    "C": "Goya bu zincirde geçmez; Kleiner Hogarth'ın Marriage A La Mode dizisini anar (S2).",
+    "D": "Daumier zincirde yoktur; kaynak Hogarth'ı öncül olarak verir (S2)."
+   },
+   "kanit": [
+    "C040"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Rijksmuseum'da, Eregalerij zaal 2.30'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru (S5): \"Te zien in Eregalerij\" + NUXT \"HasMuseumLocation\",\"2.30\".",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Müzenin tarihlemesi 2012'den bu yana değişmemiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: 2012 ARIA \"c. 1663-65\" diyordu; güncel kayıt \"1665 - 1668\" der (D001 ihtilafı).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Provenansta Seger Tierens satışı (Lahey 1743) ve Kabinet van Heteren (1809) halkaları vardır.",
+   "dogru": true,
+   "aciklama": "Doğru (S7 no.2237): \"Verk. Seger Tierens, 's Gravenhage 1743. Kabinet van Heteren, 1809.\"",
+   "kanit": [
+    "C032",
+    "C033"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Güncel müze kaydı sahnenin ressamın kendi ailesini gösterdiğini kesin olarak belirtir.",
+   "dogru": false,
+   "aciklama": "Yanlış: S5 \"bir aile\" der, kimliklendirme yapmaz; \"ressamın ailesi\" anlatısı S14'te \"is said to\", S6 başlığında soru işaretiyle geçer (E).",
+   "kanit": [
+    "C014",
+    "C053"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "1909 kataloğu imzayı \"gem. rechts beneden op den grond\" (sağ altta zeminde) olarak kaydeder.",
+   "dogru": true,
+   "aciklama": "Doğru (S7 no.2237); güncel S5 \"signatuur, JSteen\" der (konumsuz).",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D001 tarih ihtilafını yönetin: güncel müze, 2012 arşiv, Commons/GAP ve WD precision verilerini karşılaştırın; hangi tarihlemeyi esas alırdınız, neden?",
+   "beklenen_ogeler": [
+    "1665-1668 güncel (S5)",
+    "c. 1663-65 (2012, S6)",
+    "circa 1663-1665 (GAP, S8)",
+    "WD precision 8 / P1480 yok",
+    "uzlaştırma yok; hedge koru"
+   ],
+   "kanit": [
+    "C041",
+    "C003",
+    "C004",
+    "C056"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "D002 \"boş ayakkabı ↔ roe\" ihtilafını kaynak hiyerarşisiyle değerlendirin (en+fr wiki ↔ birincil/tarihsel).",
+   "beklenen_ogeler": [
+    "S2 \"left empty\"",
+    "S4 \"chaussure vide\"",
+    "S5 roe / S7 gard",
+    "birincil öncelik",
+    "D olarak beyan"
+   ],
+   "kanit": [
+    "C042",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "D003 versiyon/kopya statüsünü ve \"Katolik/Protestan sipariş\" yorumunu eleştirin; hangi ek kaynaklar gerekir?",
+   "beklenen_ogeler": [
+    "enwiki \"copy\"",
+    "nlwiki \"tweede versie\" + 1660",
+    "Catharijneconvent kaydı gerekli",
+    "S5 ilgili nesne kurum adı yok",
+    "atıfsız → E/D",
+    "2237a araştırma boşluğu"
+   ],
+   "kanit": [
+    "C043",
+    "C030"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Provenans zincirini (1743→1809) belgeleyin ve Verwerving'deki 1975 girdilerinin belirsizliğini tartışın.",
+   "beklenen_ogeler": [
+    "Tierens 1743",
+    "Van Heteren/Gevers één ton gouds 137",
+    "aankoop 1809",
+    "1975 girdileri anlamı çözülmedi (E)"
+   ],
+   "kanit": [
+    "C032",
+    "C033",
+    "C034",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "C040 (Kleiner: hiciv→Hogarth) ile C052 (Cole 1893: \"ahlakçılık taslamaz\") arasındaki gerilimi tartışın; Steen'in \"toplum eleştirisi\" okuması ne kadar sağlam?",
+   "beklenen_ogeler": [
+    "Kleiner zinciri B",
+    "Cole karşı-nüans B",
+    "kitap metni erişilmedi (E)",
+    "yorum ≠ olgu",
+    "görsel teyit yok"
+   ],
+   "kanit": [
+    "C040",
+    "C052",
+    "C049"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ortadaki kızın kollarındaki bebeği ve şekerleme kovasını bulun; bebeğin hangi azizi temsil ettiğini kaynak betiminden hatırlayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5): \"een Johannes de Doper-pop en een emmer met snoep\" (Vaftizci Yahya bebeği).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Soldaki ağlayan oğlanın ayakkabısındaki nesneyi bulun (müze kaydına göre roe/dal).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5/S7): \"een roe in zijn schoen\" / \"de hem toebedeelde gard\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Annenin yanındaki gülen oğlanın kolfstok'unu ve annenin uzatılmış kollarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5): \"Naast de moeder met uitgestoken armen staat een lachende jongen met een kolfstok\".",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Şömine yanında şarkı söyleyen gençleri ve yerdeki koek/broodjes sepetini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5): \"bij de schoorsteen zingen enkele jongeren een sinterklaaslied\"; \"een mand met koeken en broodjes\".",
+   "kanit": [
+    "C022",
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "İmzayı arayın: sağ altta, zeminde \"JSteen\" (1909 kataloğu).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S7 no.2237): \"gem. rechts beneden op den grond\".",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Het Sint-Nicolaasfeest; Jan Havicksz. Steen; güncel müze 1665-1668 (2012: c. 1663-65, tartışma); tuval üzerine yağlı boya; 82×70,5 cm; Rijksmuseum SK-A-385; Eregalerij 2.30.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + ana figürler?",
+   "arka": "Sinterklaas arifesi (5 Aralık) ev içi kutlama; ortadaki kız Johannes de Doper-pop + şekerleme kovası; solda ağlayan oğlan (ayakkabıda roe); kolfstok'lu gülen oğlan; şöminede şarkıcılar; yerde koek/broodjes sepeti.",
+   "kanit": [
+    "C014",
+    "C015",
+    "C017",
+    "C018",
+    "C022",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenans?",
+   "arka": "Seger Tierens satışı, Lahey 1743 → Kabinet van Heteren 1809 (varis A. L. Gevers, \"één ton gouds\", 137 resim) → müze 1809 satın alma; imza JSteen sağ altta zeminde.",
+   "kanit": [
+    "C032",
+    "C033",
+    "C034",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "İkonografi (kaynaklı)?",
+   "arka": "Roe/gard: yaramaz çocuğa dal (birincil + 1909, A); zencefilli Aziz Nicholas figürü: Katolik-Protestan gerilimi, 1655 Utrecht yasağı (Kleiner zinciri, B); duivekater/epilepsi/aile kimliği: atıfsız-belirsiz (E).",
+   "kanit": [
+    "C017",
+    "C028"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Karşılaştırma + alımlama?",
+   "arka": "Vermeer pilot (Süt Boşaltan Kadın): dinginlik ↔ Steen kalabalık (MUFREDAT M8); Kleiner zinciri: Steen hiciv → Hogarth (B); Cole 1893: Hogarth'a benzetilir ama \"ahlakçılık taslamaz\" (B); gravürler: Réveil, de Mare, Boland, Cole.",
+   "kanit": [
+    "C040",
+    "C052",
+    "C036"
+   ]
+  }
+ ]
+}

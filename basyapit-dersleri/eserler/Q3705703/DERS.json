@@ -1,0 +1,1314 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3705703",
+ "sanatci_id": "jacopo-pontormo",
+ "baslik": "Çarmıhtan İndiriliş (Trasporto di Cristo al sepolcro)",
+ "ozgun_baslik": "trasporto di Cristo al sepolcro (Deposition from the Cross / Deposizione / Entombment)",
+ "kunye": {
+  "sanatci": "Pontormo (Jacopo Carucci)",
+  "sanatci_yasam": "1494 (Pontorme, Empoli) – 1557 (Floransa); archive.org yetke kaydında 1556 (D)",
+  "tarih": "c. 1525–1528",
+  "tarih_belirsizlik": "S2/S7/S10 \"1525–1528\" ↔ S3 \"1526-1528 circa\" ↔ S2 lead \"completed in 1528\" ↔ data \"1525\"; birincil scheda'da tarih alanı yok (C062 D, C084 E)",
+  "teknik": "Yumurta temperası (ak + sarı), kavak tabla — 2017–18 restorasyon analizleri; \"oil on panel\" / \"canvas\" eski varsayım (D)",
+  "boyut_cm": {
+   "yukseklik": 313,
+   "genislik": 192
+  },
+  "muze": "Santa Felicita Kilisesi, Capponi Şapeli, Floransa (kilise içi sunak; müze koleksiyonu değil)",
+  "envanter": "N. Cat. 00156026 (Polo Museale Fiorentino / SBAS FI)",
+  "edinim": "Lodovico Capponi şapeli 1525'te Bernardo Paganelli'den satın aldı (200 florin); dekorasyon siparişi 1526 (FoF/Rapino) / 1525 (itwiki) — D",
+  "konum": "Capponi Şapeli sunağı (kilise girişinin sağında, Oltrarno); Baccio d'Agnolo oyma yaldızlı ahşap çerçeve",
+  "telif_durumu": "Kamu malı (Pontormo ö. 1557; 100 yıl pma veya kısa); Commons 3 dosya PD/PD-Art; AttributionRequired false"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jacopo_Pontormo_-_Deposition_-_WGA18113_(cropped).jpg",
+  "kaynak": "Wikimedia Commons (Web Gallery of Art); alternatif: File:Jacopo Pontormo - Kreuzabnahme Christi.jpg (Taschen 2007 kitap taraması) ve WGA18113.jpg",
+  "lisans": "Public domain (PD-Art: faithful photographic reproduction of a two-dimensional, public domain work of art)",
+  "dogrulama": {
+   "yontem": "Yalnız metadata + lisans + çözünürlük (Commons imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Kreuzabnahme Christi 3014×4834 (12.204.713 bayt); WGA18113 900×1480 (741.170); WGA18113 (cropped) 843×1392 (812.675)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C086 E); GZ TASLAK; kompozisyon/ikonografi S2/S3/S7/S9/S10 metninden (\"kaynakların betimlediği\"); kitap taraması ↔ WGA fotoğrafı ↔ kırpma farklı reproduksiyonlar; restorasyon öncesi/sonrası durumu metadata'dan kesinleştirilemedi; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 486
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1411
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3158
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaydın-sınırı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam-şapel-ve-hami",
+   "DERS_ILERI.md#2-şapelin-maddi-biyografisi-brunelleschi-capponi-ruggieri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-otoportre-bilmecesi-kariyer-ve-alımlama"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-ağırlıksızlık-dikeylik-ve-sahne-tepesi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi-haçsız-bir-indiriliş",
+   "DERS_ILERI.md#5-ikonografi-ve-efkaristiya-hipotezi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-teknik-ihtilaf-oil-ve-yumurta-temperası"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-şapel-programı-ve-ışık"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil katalog scheda'sıyla (N. Cat. 00156026) künyeyi doğrular; tarih ve teknik alanlarının birincilde bulunmadığını ayırt eder.",
+  "2017–18 restorasyonunun teknik bulgularını (yumurta temperası, kavak tabla, karton aktarımı, pentimenti) kaynak zinciriyle anlatır.",
+  "Ad/konu tartışmasını (trasporto ↔ Deposizione ↔ Entombment ↔ Pietà) ve \"pietà dissociata\" ile Efkaristiya hipotezini olgu/yorum ayrımıyla sunar.",
+  "Şapeli bütünsel bir program olarak okur: kayıp kubbe, Evangelist tondoları, Annunciation, Marcillat vitrayı, paliotto ve ışık etkileşimi.",
+  "Maniyerizm etiketi, otoportre ve alımlama kronolojisi ihtilaflarını D/E olarak yönetir; görsel teyit sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Trasporto di Cristo / compianto",
+   "tanim": "İsa'nın mezara taşınması + ölü İsa için ağıt; haç görünmediği için itwiki'nin önerdiği konu adı.",
+   "kanit": [
+    "C029",
+    "C002"
+   ]
+  },
+  {
+   "ad": "Tempera all'uovo (albume e tuorlo)",
+   "tanim": "Yumurta akı ve sarısı bağlayıcılı tempera; 2018 analizlerinin bulgusu, yağlıboya varsayımının karşısında.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "ad": "Karton (cartoon) yöntemi",
+   "tanim": "Çizimin arkasına kömür sürülüp boyutlanmış tablaya aktarılması; hat serbest çizimden daha az keskin ve süreklidir.",
+   "kanit": [
+    "C040"
+   ]
+  },
+  {
+   "ad": "Cangiantismo",
+   "tanim": "Gölgeyi karartmak yerine renk tonunu değiştirerek modelleme; itwiki \"ricercati cangiantismi\" der, gölgeler minimumdur.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "Pietà \"dissociata\"",
+   "tanim": "Anne ile oğulun birlikte değil ayrı durduğu pietà düzeni; Capponi Şapeli'nin Pietà adanışıyla ilişkili.",
+   "kanit": [
+    "C029",
+    "C015"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Birincil katalog scheda'sı yazarı \"Pontormo\" olarak kaydeder (WD P170 = Q207929).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Resmî katalog başlığı \"trasporto di Cristo al sepolcro\"; nesne türü \"dipinto\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Envanter: \"N. Cat. 00156026\" (WD P2242 = \"00156026\" ile uyumlu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: \"(Altezza per Larghezza) 313 x 192\" cm (yükseklik × genişlik).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Birincil katalog konumu yalnız \"Firenze\" olarak kaydeder; şapel/sunak/çerçeve ayrıntısı birincilde yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Hami Lodovico Capponi; şapeli 1525'te Bernardo Paganelli'den satın aldı; tamamının yeniden fresklenmesi ve zengin süslemeli tabla yaptırılması kararı (nscTroncato).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Vasari'ye göre Pontormo şapeli üç yıl kapalı tuttu ve işi tamamladı (\"si chiuse nella cappella per tre anni\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Katalogun fotoğraf arşivi künyeleri: \"ex art. 15 n. 3016x (diapositiva colore)\"; SBAS FI 24639–24662, 24668, 31170 (b/n); Alinari 4708; Brogi 19916.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sanatçı kimliği: Jacopo Carucci; Pontorme, Empoli 1494 – Floransa 1557 (FoF bülteni künyesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Eser bir sunak resmidir (altarpiece); Santa Felicita (Oltrarno) Capponi Şapeli'nde, sunağın üzerinde, Baccio d'Agnolo çerçevesi içinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Tarih: c.1525–1528 (S2 circa; S7/S10 \"1525‒28\"; S1 P571 = 1525 precision 9 + P1319/P1326). \"circa\" korundu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Şapel dekorasyonu 1528'de tamamlandı; iş hami dahil herkesten gizlendi; Vasari \"con meraviglia di tutta Firenze\"; yanında genç Bronzino çalıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Dekorasyon siparişi 1526 (Rapino: \"Lodovico, nel 1526, incarica Jacopo Carucci detto 'il Pontormo'\"; FoF: \"In 1526, Capponi commissioned Pontormo\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Şapel mimarisi Brunelleschi'ye atfedilir; Barbadori ailesi, Bartolomeo Barbadori vasiyet şartı; \"probably\" / \"intorno al 1420\" / \"around 1422\" / \"about 1419-23\" (hedge korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "İlk adanış Annunciation; Lodovico Capponi Pietà'ya çevirdi; şapel aile mozolesi (sepolcreto) oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Şapel hakları 1487'de Antonio Paganelli'ye 200 florin; 1525'te Bernardo Paganelli → Lodovico di Gino Capponi (1482–1534) aynı fiyat; bankacı, 1521'de Leo X sarayından döndü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Vakfiye: sunak için sürekli rahiplik (perpetual chaplaincy); gelir Mercato Vecchio yakınındaki atölyeden; \"to convert temporal goods, by a fortunate exchange, into eternal ones\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "30 Temmuz 1527 tarihli vasiyetname şapeli \"restaurata, ordinata et dotata\" olarak tanımlar → 1527 ortasında renovasyon ilerlemişti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Vasari'ye göre Capponi, Pontormo'yu Niccolò Vespucci'nin önerisiyle seçti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Bağlayıcı yumurta temperası (ak + sarı; \"albume e tuorlo\"); 2018 analizleri \"tempera mixed with egg whites, not with oils as art historians had thought\"; bezir yağı değil (Visitation'ın aksine); bülten temperanın o tarihte modası geçmiş olduğunu, canlı renkler ve \"glazed\" etkiler verdiğini not eder.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Destek: subradial kesimli 6 kavak tahta; 3 \"(probably)\" karaçam çapraz kayıt; budaklar için düğün/\"bow-tie\" tapa onarımları; X-ray'de birleşimleri bloklayan küçük dikdörtgen ahşap parçalar; Visitation'da benzer sistem, 16. yy Floransa'sında yaygın; üst bölge çatlağına kavak mikro-kama.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Çerçeve orijinal: Baccio d'Agnolo'nun oyma yaldızlı ahşap çerçevesi; kalın altın varak; restorasyon öncesi tahta kurtları (kısmen aktif), varak kalkması, yoğun toz.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Pigmentler: hemen hepsi kurşun beyazı (biacca) ile; azurit + kurşun beyazı + siyah + lapis lazuli; gökyüzü yalnız lapis + kurşun beyazı velatura; ten kurşun beyazı + vermilyon + az kırmızı okra; bukleler kurşun beyazı + sarı/kırmızı okra; pembeler madder lake (lacca di robbia); yeşiller bakır + malakit + kurşun beyazı, gölgede copper resinate; turuncu kurşun beyazı + sarı/kırmızı okra + cinnabar; kırmızı vermilyon.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Işık sağdan; gölgeler minimum, renkler açık ve benzer yoğunlukta; itwiki \"ricercati cangiantismi\"; Vasari \"senz'ombre e con un colorito chiaro e tanto unito…\"; Rapino \"bright and unnatural colors … beyond time or fashion\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Kompozisyon güçlü dikey; aşağıdan yukarı bakan izleyici için tasarlanmış; yapay \"stage set\" tepe (S7) / \"jagged hillside\" (S10, Rapino).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "11 figür (\"undici personaggi\"); A. Venturi \"nodo inestricabile di figure\" (Marchetti Letta p.42 aktarımı; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Önde iki taşıyıcı İsa'yı diyagonal sağa/merkeze taşır: bacakları tutan çömelmiş, omuzları tutan ayakta; parmak uçlarında, ağırlık hissetmez, izleyiciye bakar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S10",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Meryem bayılmak üzere; mavi manto merkez + sağın büyük kısmı (S7 \"three-quarters of the painting\"); dört kadınla çevrili; yüksek konumda oturuyor (bükülü bacaklar); S2 \"larger than her counterparts\" (atıfsız).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Haç görünmez; itwiki \"trasporto di Cristo\" + \"compianto\" önerir; pietà \"dissociata\" (anne-oğul ayrı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Üstte S. Giovanni Meryem'i desteklemeye hazır (Rapino); sol üstte bir kadın İsa'nın başını tutar (dayanağı belirsiz); başka bir kadın sol elini tutar; Meryem'in sağında yaşlı kadın başı; arkada iki \"eterik\" figür (ince yeşil kılıf + turuncu drapery, \"gizemli esinti\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Gökyüzü: güneş yansımasıyla aydınlanan tek bulut, pembemsi sizing tabakasının altından çıkar (S7); S2 \"a lonely cloud and a shadowed patch of ground with a crumpled sheet provide sky and stratum\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Önde sırtı dönük, pembe giysili, keten mendilli tam boy kadın (itwiki \"la Maddalena?\"); S7 Mary Magdalen saçları arkadan dağınık \"yılan dilleri\"; ten ile şeker pembesi giysi arasında sınır yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Giysilerde manşet yok; formların akış sürekliliği; kumaşlar bazen ikinci deri gibi sıkı bazen bol; \"assenza di gravità\"; derinliği inceltilmiş, teatrale quinta gibi göksel arka plan.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Kubbe freski (Dio Padre + 4 Patriarch) kayıp; kubbe 1766'da kafesli tribünleri büyütmek için yıkıldı/alçaltıldı; Stagi trompe-l'œil c.1780; 20. yy başı kalın sıva; 2017–18'de 18. yy boyalı haline döndürüldü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S9",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Pennacchi/squinch'lerde 4 Evangelist tondosu Pontormo + Bronzino; bugün Luka ve Markos Vasari kayıtlarına dayanarak Bronzino'ya atfedilme eğiliminde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S2",
+    "S3",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Annunciation (Virgin Annunciate + Announcing Angel) pencere/karşı cephe duvarında; 1966 seli sonrası sökülüp fiberglass desteğe alındı; 2017–18'de conserve + yeniden sabitlendi; yeni aydınlatma sistemi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3",
+    "S8",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Marcillat vitrayı (Deposition + Entombment): copialettere'ye göre Eylül 1526'ya kadar tamamlandı, projenin tek güvenli tarihli işi; orijinal Palazzo Capponi alle Rovinate'de; şapelde kopya; kaldırılması Ruggieri 1736–39 renovasyonuna gider.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Waldman tezi: vitray programın vazgeçilmez parçası; gerçek ışık ↔ boyalı ışık; vitrayın Annunciation'ı \"delmesi\" ↔ Holy Spirit; stained glass genel çalışmalarda \"görünmez\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Restorasyon Mart 2017 – 28 Mart 2018 yeniden açılış; restoratör Daniele Rossi; Soprintendenza onayı; gözetmen Daniele Rapino; Kathe & John Dyson bağışı; sigorta + nakliye dahil ~105.000 €.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S9",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Hazırlık çizimleri çok sayıda (panel + şapel bütünü; 4 Patriarch çizimi); karton yöntemi: arkasına kömür sürülmüş çizim → boyutlanmış tabla; bazı yerlerde ince stylus; karton hattı daha az keskin/sürekli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Reflektografi: İsa figürünün yüzünde ve öndeki (sol) meleğin bacak konumunda pentimenti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Önceki restorasyonlar: 1935 Prof. Vermeghen; 1936 Paris sergisi (panelin son taşınması); 1960–70'ler vernik + rötuş; mum yanığı rötuşları; hedef \"respectful film\" (çok ince vernik tabakası).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Alımlama: Vasari beğenmedi; 19. yy öncesi \"eccentric painting of little worth\" olarak dismissed; 19. yy'da popülerlik; Rossi \"the very symbol of Florentine Mannerist painting\"; itwiki (Cianchi p.125) 20. yy \"maledetto\"/mizantrop mitini anakronik bulur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Modeller (Cianchi p.125 aktarımı): Dürer gravürleri (pathos, dramatik concertazione); Michelangelo (Sistine, Vatikan Pietà, Tondo Doni, Sagrestia Nuova); Botticelli (ağırlıksız yuvarlaklık, dans adımı, teatralite); Floransa disegno geleneği; S7 Sistine nüleri \"likely … influenced him\" (hedge korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "2017–18 bulguları: pilaster şeridi + Korint başlığında mavi/altın izleri (Barbadori arması) → Brunelleschi \"essential purism\" fikri sorgulanıyor; Floransa Üni. Yer Bilimleri–Yapısal Jeoloji duvar analizi; orijinal kubbenin herring-bone tuğla kaidesi; S. Maria del Fiore prototipi; Vasari \"without framework\" doğrulanır; desteksiz kubbe ilk denemesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Sonraki müdahaleler: c.1620 St Charles Borromeo mermer reliquary-tabernacle (Annunciation duvarı ortası); 17.–19. yy levha/mezar taşları; neoklasik çalışma 1735'te başladı (S10) / Ruggieri 1736–39 (S11); Ruggieri Brunelleschi'nin kalan mimarisini kısmen korudu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Pontormo bir paliotto (altar frontal) da yaptı; parçasını Beatrice Paolozzi Strozzi Palazzo Capponi'deki Madonna and Child'da tanımladı; sırlı terra-cotta döşeme parçaları ortaya çıkarıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Modern alımlama: Sarah Winman, Still Life (2021) romanında eser önemli rolde tartışılır (LitHub ref); FoF bültenine göre 2017–18 kışı Palazzo Strozzi sergisinin öne çıkan işiydi, sonra şapele döndü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Telif: kamu malı (yazar ölümü 1557; 100 yıl pma veya kısa ülkelerde); Commons 3 dosya PD / PD-Art (\"faithful photographic reproduction\"); AttributionRequired false.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel metadata: Kreuzabnahme Christi.jpg 3014×4834 / 12.204.713 bayt (kitap taraması: Wundram, Renaissance, Taschen 2007, S.69, ISBN 3-8228-5295-3 / 978-3-8228-5295-8); WGA18113.jpg 900×1480 / 741.170; WGA18113 (cropped).jpg 843×1392 / 812.675; kategori \"Descent from the Cross by Pontormo\"; DateTimeOriginal \"between 1525 and 1528\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "Natali'nin Efkaristiya hipotezi (itwiki aktarımı; Rosso Fiorentino, Silvana 2006, p.154 — kitaba erişilmedi): beden \"pane degli angeli\" (Augustinus) olarak altardaki mensaya ideal olarak indirilir; vitraya göre \"çift\" anlatımı açıklar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C052",
+   "ifade": "itwiki duygu okuması (Cianchi p.124): dünyevi acıdan çok \"attonimento\" (mutizm + hareketsizlik, ilahi iradenin kaçınılmazlığı); funerar şapel + diriliş vaadi; vizyonerlik Meryem'in baygınlığı üzerinden; De Vecchi-Cerchiari p.241 \"sottile intellettualismo\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C053",
+   "ifade": "Taşıyıcıların melek yorumu (Marchetti Letta p.44 aktarımı): resimden uçup İsa'yı kubbedeki Dio Padre'nin kollarına taşımayı beklerler; beden sunağın üzerine gelir, \"panis angelicus\" sunumunu hatırlatır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C054",
+   "ifade": "Carmignano Visitation (San Michele e Francesco; S2: 1529): palet aynı, tabla birleştirme sistemi benzer; palet Pontormo'nun 30 yaş sonrası, 1520'lerin ikinci yarısı olgun işlerine özgü; bağlayıcı farklı (bezir yağı); Visitation 2015'te restore edildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Raphael Deposizione Borghese (1507): \"trasporto\" + \"compianto\" birleşiminin öncül örneklerinden (itwiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Şapel bütünsel program: altarpiece + Annunciation + 4 Evangelist tondosu + kayıp kubbe freski + Marcillat vitrayı + paliotto; jest, bakış ve giriş duvarı penceresinden gelen ışığı taklit eden ortak aydınlatma ile iletişim (Waldman).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "\"Ters piramit\" (piramide rovesciata) benzetmesi itwiki'de atıfsız; biçimsel yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "enwiki Interpretation okumaları (Citation needed): \"whirling dance of the grief-stricken\"; basık mekân; girdabın sol-merkezdeki İsa bedenine sarkması; taşıyıcıların izleyiciden yardım ister gibi görünmesi (beden ağırlığı + günah yükü + yas); pembe/mavi şeritler; en empatik figür olarak çömelmiş adam.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Çizimlerin konumu: Uffizi GDSU + Roma Corsiniana (itwiki, atıfsız); varlıkları B destekli (C040), konum doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C060",
+   "ifade": "enwiki karşılaştırmaları (atıfsız / Citation needed): Rosso Fiorentino Volterra 1521; Caravaggio Vatikan Pinacoteca Entombment karşıtlığı; Annunciation contrapposto karşılaştırması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C061",
+   "ifade": "Bu dersin felsefi/estetik yorumları (ağırlıksızlık, tanıklık, mekânın askıya alınması, Efkaristiya-mekân; Kant/Benjamin ödünç çerçeveleri): kurum dışı, açıkça işaretli yorum; sanatçının bu düşünürlerden etkilendiği iddia edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C062",
+   "ifade": "D1 Tarih: S1/S2/S7/S10 \"1525–1528\" ↔ S3 \"1526-1528 circa\" ↔ S2 lead \"completed in 1528\" ↔ data \"1525\"; S11 \"far from clear\"; birincil scheda'da tarih alanı yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S7",
+    "S10",
+    "S11",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C063",
+   "ifade": "D2 Teknik/destek: S12 \"oil on panel\" + S1 P186 \"oil paint\" (Q296955) ve \"canvas\" (Q12321255, P518 destek) ↔ S2 \"Tempera on wood\" / S3 \"tempera ad uovo su tavola\" / S10 \"tempera mixed with egg whites, not with oils\" + S7/S9 kavak tabla.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S7",
+    "S9",
+    "S10",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C064",
+   "ifade": "D3 Ad/konu: S4 \"trasporto di Cristo al sepolcro\" ↔ S3 \"Deposizione (erroneamente)\" ↔ S2/S7/S10 \"Deposition (from the Cross)\" ↔ S12 \"Entombment\" ↔ S11 \"Pieta … removal from his mother's lap\"; data \"Çarmıhtan İndiriliş\" taraf.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S7",
+    "S10",
+    "S11",
+    "S12",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "D4 Sipariş yılı: S3 \"Nel 1525 … affidò a Pontormo la decorazione\" ↔ S9/S10 \"1526\"; satın alma 1525 ortak.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9",
+    "S10",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C066",
+   "ifade": "D5 Maniyerizm etiketi: S9/S10 \"primo manierismo\" / \"early Mannerism\", S7 \"symbol of Florentine Mannerist painting\", S1 P135 ↔ S3 (Cianchi p.125) \"capolavoro eccentrico a sé stante\", Maniyerizm bir kuşak sonrasına daralıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S9",
+    "S10",
+    "S1",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C067",
+   "ifade": "D6 Zemin/bulut betimi: data \"yalnızca sol üstte tek bir bulut\" ↔ S2 \"lonely cloud + shadowed patch of ground with a crumpled sheet\" ↔ S7 \"stage set hill\" / pembemsi sizing ↔ S10 \"jagged hillside\"; görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S10",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C068",
+   "ifade": "D7 Alımlama kronolojisi: data \"20. yüzyılda yeniden büyük ilgi\" ↔ S7 \"popularity in the 19th century\" ↔ S3 20. yy \"maledetto\" miti.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C069",
+   "ifade": "D8 Restorasyon başlangıcı: S8/S9 \"27 February this year\" ↔ S10 \"initiated in March 2017\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C070",
+   "ifade": "D9 Tondo restorasyon yılı: S7 (Rossi) \"restored in 2013\" ↔ S10 \"previously restored in 2010\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C071",
+   "ifade": "D10 Vitray tarihi: S10 \"around 1525\" ↔ S11 \"completed by September 1526\" (copialettere belgeli).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C072",
+   "ifade": "D11 Otoportre figürünün betimi: S7 \"turban and a simple scarf\" ↔ S10 \"beret … blonde curls\" ↔ S3 \"cappello verde annodato … barbetta … tendente al bianco … mantello color terra di Siena naturale\" ↔ data \"kahverengi giysili sakallı adam\"; görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S10",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C073",
+   "ifade": "D12 Capponi'nin mimari müdahalesi: Balocchi \"quasi tutta la rifece di nuovo\" (çoğu modern araştırmacı kabul, özellikle kubbe biçimi) ↔ diğerleri dekoratif aksesuarlarla sınırlı der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C074",
+   "ifade": "D13 Sanatçı ölüm yılı: S10/S1 \"1557\" ↔ S15 archive.org yetke kaydı \"Pontormo, Jacopo da, 1494-1556\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S1",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C075",
+   "ifade": "D14 Neoklasik müdahale tarihi: S10 \"began in 1735\" ↔ S11 \"Ruggieri's 1736-39 renovation\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C076",
+   "ifade": "E1 Otoportre: S3 \"forse\" (Berti), S2 \"Legend has it\" (citation needed), S7 \"supposed\", S10 daha kesin; alternatif hipotezler İsa (Pucci pala S. Jacopo benzerliği) ve S. Giovanni (S. Rossi 2012 p.96, yüz çakıştırması); Nikodemos 33 yaşında değil, Pontormo o yaşta. Kesinleştirilemez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C077",
+   "ifade": "E2 Taşıyıcıların kimliği: S10 \"perhaps angels\", S3 \"interpretati come angeli\" / \"che altri identificano come un angelo\", data \"iki genç\"; kesin değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S7",
+    "S10",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C078",
+   "ifade": "E3 Maddalena: S3 \"una donna in primo piano vestita di rosa (la Maddalena?)\" — soru işareti korunur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C079",
+   "ifade": "E4 Konunun yönü: S7 \"It is not clear whether Christ is being carried to the Virgin or being carried away\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C080",
+   "ifade": "E6 data hotspot görsel iddiaları: \"kemerli çerçeve\" hiçbir kaynakta yok (çerçeve yaldızlı ahşap, biçim belirtilmemiş); bakış yönleri, bulut konumu, renkler — görsel İNCELENMEDİ, doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17",
+    "S3",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C081",
+   "ifade": "E7 enwiki citation-needed kümesi: Interpretation paragrafı geneli; \"Swoon of the Virgin was a controversial moment at the time\"; otoportre efsanesi; Rosso 1521; Annunciation contrapposto.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C082",
+   "ifade": "E8 itwiki atıfsız kümesi: Richa'nın kaydettiği eski restorasyon (\"un artista poco capace\"); \"piramide rovesciata\"; çizim konumları.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C083",
+   "ifade": "E9 Birincil scheda'nın tam storico-critico metni: NscCompleto.asp?nac=150195 Wayback 404 + availability snapshot yok; yalnız nscTroncato ilk paragrafı erişildi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4b",
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C084",
+   "ifade": "E10 Teknikte A düzeyi yok: birincil katalogda teknik/destek alanı yok; yumurta temperası kanıtı kurumsal restorasyon bülteni (B); bilimsel analiz raporunun kendisine erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C085",
+   "ifade": "E11 Wikidata zayıf referanslar: P1476/P135 beckchris.wordpress.com blogu (erişilmedi, kullanılmadı); P186 Commons importu 2018-07-04; P2048/P2049 Commons importu 2018-06-23; P276 refsiz; P571 ref DBpedia + Q63082475.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C086",
+   "ifade": "E12 Görsel İNCELENMEDİ: 3 Commons dosyasının yalnız metadata/lisans/çözünürlüğü alındı; vision kotası ana oturumda; kompozisyon/ikonografi yalnız metinsel kaynaklarla; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C087",
+   "ifade": "E13 Kitaplar metne erişilmedi (kaynakçada anıldı): Cianchi 1998; Marchetti Letta 1994 (S15 İngilizce baskı, access-restricted); De Vecchi 1999 ×2; Natali 2006 p.154; S. Rossi 2012 p.96; Smyth 1963 → Cheney 1997/2004 pp.69-112; Vasari Le Vite (alıntılar S3/S4/S7/S10 üzerinden); S12'de bağlantı başlığı olarak anılan Steinberg \"Pontormo's Capponi Chapel\" + \"Pontormo's diary entries\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S12",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C088",
+   "ifade": "E14 Waldman kısmi erişim: 15 sayfalık makalenin yalnız 1. sayfası (2006-03-01 arşivi); devam sayfaları + App. 1 doc. 5/7 görülmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C089",
+   "ifade": "E15 Kilisenin kendi kaydı yok: santafelicita.it canlı 200 ama \"Domain for sale\" park sayfası; Wayback 2015-04-20 boş paroki kabuğu; birincil kayıt = Polo Museale scheda.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C090",
+   "ifade": "E16 Smarthistory canlı ölü (url-status=dead), 2014 arşivi video ağırlıklı (caption düzeyinde; Zucker/Harris), sayfa CC BY-NC-SA 3.0; pontormo.danielerossi.it video/navigasyon kabuğu, metin yok; alt URL'ler tahmin edilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3705703 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3705703.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Deposition from the Cross (Pontormo) wikitext (pageid 2877820)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Deposition%20from%20the%20Cross%20(Pontormo)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Deposizione (Pontormo) wikitext (pageid 3868646)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Deposizione%20(Pontormo)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Polo Museale Fiorentino (SBAS FI)",
+   "belge": "Resmî katalog scheda, N. Cat. 00156026 (itwiki Collegamenti esterni'den bulundu)",
+   "url": "https://web.archive.org/web/20240214175157/http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00156026&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00156026&value=1 → 522; Wayback kopyası 2024-02-14 17:51:57 → 200; ders turunda yeniden 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4b",
+   "kurum": "Polo Museale Fiorentino",
+   "belge": "Scheda tam storico-critico metni (NscCompleto.asp?nac=150195)",
+   "url": "https://web.archive.org/web/20240214175157/http://www.polomuseale.firenze.it/catalogo/include/scheda/NscCompleto.asp?nac=150195",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404; availability API: snapshot yok (erişilemedi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url|size|extmetadata), 3 dosya: Kreuzabnahme Christi / WGA18113 / WGA18113 (cropped)",
+   "url": "https://commons.wikimedia.org/wiki/File:Jacopo_Pontormo_-_Deposition_-_WGA18113_(cropped).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → backoff sonrası 200; yalnız metadata, görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (21 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q3705703&props=labels|descriptions&languages=en|it&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → 200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S7",
+   "kurum": "Friends of Florence (restoratör Daniele Rossi anlatımı)",
+   "belge": "Pontormo, Deposition From the Cross, (1525–8) Capponi Chapel … proje sayfası, March 2018, Completed",
+   "url": "https://www.friendsofflorence.org/projects/pontormo-deposition-cross-1525-8-capponi-chapel-church-santa-felicita-florence/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ders turunda yeniden 200 (234.428 bayt)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Friends of Florence",
+   "belge": "Cappella Capponi Restoration Project in the Church of Santa Felicita in Florence – Pontormo",
+   "url": "https://www.friendsofflorence.org/projects/cappella-capponi-restoration-project-church-santa-felicita-florence-pontormo/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Friends of Florence / Soprintendenza (Daniele Rapino anlatımı)",
+   "belge": "Scheda storico artistica PDF (2 s., İtalyanca; S8'deki link)",
+   "url": "https://www.friendsofflorence.org/sites/default/files/downloads/schedastoricoartistica.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (pypdf metni)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Friends of Florence",
+   "belge": "Basın bülteni PDF, 27 Mart 2018 (5 s., İngilizce; S8'deki link)",
+   "url": "https://www.friendsofflorence.org/sites/default/files/capponi_chapel_restoration_fof_release_final_3-27-18_1.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (pypdf metni)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "The Art Bulletin 84/2 (June 2002)",
+   "belge": "Louis Alexander Waldman, \"New light on the Capponi Chapel in S. Felicita\" — FindArticles arşivi (url-status=usurped)",
+   "url": "https://web.archive.org/web/20060301163722/http://www.findarticles.com/p/articles/mi_m0422/is_2_84/ai_88098563",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv 2006-03-01); yalnız 1/15 sayfa",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Smarthistory (Khan Academy)",
+   "belge": "Pontormo's Entombment (canlı url-status=dead; 2014 arşivi)",
+   "url": "https://web.archive.org/web/20141020161731/http://smarthistory.khanacademy.org/pontormo-entombment.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv 2014-10-20); metin caption düzeyinde; sayfa CC BY-NC-SA 3.0",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Daniele Rossi (restoratör)",
+   "belge": "Restauro della Cappella Capponi sitesi (S7'deki link)",
+   "url": "http://pontormo.danielerossi.it/cappella_capponi/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; video/navigasyon kabuğu, metin yok",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Santa Felicita kilisesi",
+   "belge": "Resmî site (S12 arşivindeki dış linkten bulundu)",
+   "url": "https://web.archive.org/web/20150420031549/http://www.santafelicita.it/index",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı http://www.santafelicita.it/index/ → 200 ama \"Domain for sale\" park sayfası; Wayback 200 (2015-04-20) boş kabuk; içerik YOK",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Internet Archive",
+   "belge": "Marchetti Letta 1994 bibliyografik metadata (S3 bibliyografyasındaki link)",
+   "url": "https://archive.org/metadata/pontormorossofio0000marc",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; access-restricted-item true (metne erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability sorguları (S4, S4b, S14)",
+   "url": "https://archive.org/wayback/available?url=www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00156026",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "Yerel repo (salt-okunur)",
+   "belge": "data/basyapitlar.json Q3705703; eserler_onbellek.json; eser_ayrintilari.json; yuruyus.json; eser_turleri.json; ikonografi.json",
+   "url": "yerel: data/ (değiştirilmedi)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur; uyuşmazlıklar KANIT_DOSYASI.md §5",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Visitation (Meryem'in Ziyareti)",
+   "sanatci": "Pontormo",
+   "kurum": "San Michele e Francesco, Carmignano",
+   "mufredat_ici": false,
+   "gerekce": "Aynı palet ve benzer tabla birleştirme sistemi; bağlayıcı farkı (bezir yağı ↔ yumurta temperası) teknik karşıtlığı öğretir.",
+   "kanit": [
+    "C054",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "eser": "Annunciation (Müjde) freski",
+   "sanatci": "Pontormo",
+   "kurum": "Santa Felicita, Capponi Şapeli (pencere duvarı)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı şapel programı: jest, bakış ve ortak ışık; 1966 seli sonrası fiberglass desteğe alınma ve 2017–18 yeniden sabitleme.",
+   "kanit": [
+    "C056",
+    "C036",
+    "C038"
+   ]
+  },
+  {
+   "eser": "Deposizione Borghese",
+   "sanatci": "Raphael",
+   "kurum": "Galleria Borghese, Roma",
+   "mufredat_ici": false,
+   "gerekce": "1507: \"trasporto\" + \"compianto\" birleşiminin öncülü; konu geleneği karşılaştırması.",
+   "kanit": [
+    "C055",
+    "C029"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — birincil Polo Museale scheda (Wayback 20240214175157) ve FoF Deposition proje sayfası ders turunda CANLI yeniden çekildi (ikisi de 200) ve ham HTML üzerinden başlık/envanter/boyut/hami notu ile destek/kompozisyon/1935–36 restorasyon pasajları karşılaştırıldı; S9/S10 PDF metinleri, S2/S3 wikitext, S11 arşiv (1/15 sayfa), S1 EntityData ve S5 Commons metadata yeniden okundu. 14 ihtilaf D, 15 belirsizlik E olarak korundu; oil↔tempera ve canvas↔kavak tabla ihtilafı açık. Görsel İNCELENMEDİ (C086) → GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih alanı: data/basyapitlar.json Q3705703 \"tarih\": \"1525\" ↔ kaynaklar c.1525–1528 / itwiki \"1526-1528 circa\" (C062 D); aynı kaydın metni \"Yaklaşık 1525–1528\" diyor → alan ↔ metin iç tutarsızlığı. Öneri: aralık gösterimi.",
+  "Başlık: data \"Çarmıhtan İndiriliş\" / ozgun \"Deposition\" ↔ resmî katalog \"trasporto di Cristo al sepolcro\" (C064 D); kaydın \"Anlam ve semboller\" bölümü tartışmayı zaten not ediyor.",
+  "Önbellek: data/eserler_onbellek.json \"yil\": 1525 (D); ikinci görselin lisans alanı boş → Commons PD doğrulandı (C049/C050); \"kaynaklar\": [\"kurs\",\"wikidata\"] — birincil katalog (S4) zincirde yok.",
+  "Hotspot'lar: data/eser_ayrintilari.json + yuruyus.json \"kemerli çerçeve\" hiçbir kaynakta yok (C080 E); \"kahverengi giysili sakallı adam\" ↔ kaynak betimleri farklı (C072 D); \"iki genç\" ↔ \"perhaps angels\" (C077 E).",
+  "Zemin/bulut: data \"yalnızca sol üstte tek bir bulut var\" ↔ S2 gölgeli zemin parçası + kırışık örtü, S7/S10 yapay tepe (C067 D); görsel teyit gerekli.",
+  "Alımlama: data \"20. yüzyılda yeniden büyük ilgi\" ↔ S7 \"19. yy popülerliği\" (C068 D).",
+  "Teknik: data'da teknik alanı yok; eklenirse C063 (D2) dikkate alınmalı — güncel kurumsal pozisyon yumurta temperası + kavak tabla; teknik A düzeyinde değil (C084).",
+  "İkonografi dosyası: data/ikonografi.json konular[22] (\"deposition\") genel ikonografiyi (haç, merdiven, çiviler) listeler; bu eserde haç yok (C029) → esere özgü değil, bağlam notu.",
+  "Sanatçı ölüm yılı: S15 yetke kaydı \"1494-1556\" ↔ kurumsal künye 1557 (C074 D); data/sanatcilar.json \"jacopo-pontormo\" değiştirilmedi.",
+  "Müfredat bağı: data/basyapitlar.json içinde Daniele da Volterra Çarmıhtan İndiriliş (Q140161127) ve Rosso Fiorentino Musa (Q1863885) var; karşılaştırma önerisi olarak kullanılabilir (kaynakları bu dosyada araştırılmadı).",
+  "Hiçbir data dosyası, uygulama kodu veya öteki eser dizini değiştirilmedi; yazma alanı basyapit-dersleri/eserler/Q3705703/ + .qwen/tmp/parti2/."
+ ]
+}

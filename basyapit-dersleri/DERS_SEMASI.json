@@ -1,0 +1,288 @@
+{
+  "$aciklama": "Sanat Atlası başyapıt mikro dersleri JSON şemaları (taslak 2020-12). İki şema: DERS (eser başına DERS.json) ve SORULAR (eser başına SORULAR.json). Doğrulama: python3 jsonschema veya eşdeğeri; her iki dosya da kendi şemasına göre doğrulanır. İddia kimlikleri (C###) KANIT_DOSYASI.md ile eşleşmelidir.",
+  "DERS": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Başyapıt dersi",
+    "type": "object",
+    "required": ["surum", "eser_id", "sanatci_id", "baslik", "kunye", "gorsel", "seviyeler", "bolum_eslesme", "ogrenme_kazanimlari", "temel_kavramlar", "iddialar", "kaynaklar", "durum"],
+    "additionalProperties": false,
+    "properties": {
+      "surum": { "type": "string" },
+      "eser_id": { "type": "string", "description": "data/basyapitlar.json anahtarı (QID veya bileşik anahtar)" },
+      "sanatci_id": { "type": "string", "description": "data/sanatcilar.json id" },
+      "baslik": { "type": "string" },
+      "ozgun_baslik": { "type": "string" },
+      "diger_basliklar": { "type": "array", "items": { "type": "string" } },
+      "kunye": {
+        "type": "object",
+        "required": ["sanatci", "tarih", "teknik", "muze", "envanter"],
+        "additionalProperties": false,
+        "properties": {
+          "sanatci": { "type": "string" },
+          "sanatci_yasam": { "type": "string" },
+          "tarih": { "type": "string", "description": "Belirsizlik korunur: 'y. 1660' / 'c. 1660'" },
+          "tarih_belirsizlik": { "type": "string" },
+          "teknik": { "type": "string" },
+          "boyut_cm": {
+            "type": "object",
+            "required": ["yukseklik", "genislik"],
+            "additionalProperties": false,
+            "properties": {
+              "yukseklik": { "type": "number" },
+              "genislik": { "type": "number" }
+            }
+          },
+          "muze": { "type": "string" },
+          "envanter": { "type": "string" },
+          "edinim": { "type": "string" },
+          "konum": { "type": "string" },
+          "telif_durumu": { "type": "string" }
+        }
+      },
+      "gorsel": {
+        "type": "object",
+        "required": ["url", "kaynak", "lisans", "dogrulama"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "iiif_url": { "type": "string" },
+          "kaynak": { "type": "string" },
+          "lisans": { "type": "string" },
+          "dogrulama": {
+            "type": "object",
+            "required": ["yontem", "sinirlar"],
+            "additionalProperties": false,
+            "properties": {
+              "yontem": { "type": "string" },
+              "cozunurluk": { "type": "string" },
+              "incelenen_bolgeler": { "type": "array", "items": { "type": "string" } },
+              "sinirlar": { "type": "string" }
+            }
+          }
+        }
+      },
+      "seviyeler": {
+        "type": "object",
+        "required": ["baslangic", "orta", "ileri"],
+        "additionalProperties": false,
+        "properties": {
+          "baslangic": { "$ref": "#/$defs/seviye" },
+          "orta": { "$ref": "#/$defs/seviye" },
+          "ileri": { "$ref": "#/$defs/seviye" }
+        }
+      },
+      "bolum_eslesme": {
+        "type": "object",
+        "description": "12 bölümlük eser incelemesinin dosya/bölüm eşlemesi",
+        "required": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+        "additionalProperties": false,
+        "patternProperties": {
+          "^(1[0-2]|[1-9])$": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        }
+      },
+      "ogrenme_kazanimlari": { "type": "array", "items": { "type": "string" }, "minItems": 1, "maxItems": 5 },
+      "temel_kavramlar": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": ["ad", "tanim"],
+          "additionalProperties": false,
+          "properties": {
+            "ad": { "type": "string" },
+            "tanim": { "type": "string" },
+            "kanit": { "type": "array", "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "iddialar": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["id", "ifade", "seviye"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^C[0-9]{3}$" },
+            "ifade": { "type": "string" },
+            "seviye": { "enum": ["A", "B", "C", "D", "E"] },
+            "kaynak_id": { "type": "array", "items": { "type": "string" } },
+            "kullanim": { "enum": ["olgu", "yorum", "tartisma", "belirsiz", "kullanilmadi"] }
+          }
+        }
+      },
+      "kaynaklar": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["id", "kurum", "belge", "url", "erisim_tarihi", "erisim_durumu", "tur"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string" },
+            "kurum": { "type": "string" },
+            "belge": { "type": "string" },
+            "url": { "type": "string" },
+            "erisim_tarihi": { "type": "string" },
+            "erisim_durumu": { "type": "string" },
+            "tur": { "enum": ["birincil", "ikincil", "yardimci", "gorsel"] }
+          }
+        }
+      },
+      "karsilastirma_onerileri": {
+        "type": "array",
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "required": ["eser", "gerekce"],
+          "additionalProperties": false,
+          "properties": {
+            "eser": { "type": "string" },
+            "sanatci": { "type": "string" },
+            "kurum": { "type": "string" },
+            "envanter": { "type": "string" },
+            "mufredat_ici": { "type": "boolean" },
+            "gerekce": { "type": "string" },
+            "kanit": { "type": "array", "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "durum": { "enum": ["Araştırılmadı", "Kaynak araştırılıyor", "Kanıt envanteri hazır", "Taslak hazır", "Doğrulama bekliyor", "İnsan incelemesi bekliyor", "Yayına aday"] },
+      "kalite_kontrol": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "denetim_a": { "type": "string" },
+          "denetim_b": { "type": "string" },
+          "insan_onayi": { "type": "string" }
+        }
+      },
+      "veri_notlari": { "type": "array", "items": { "type": "string" } }
+    },
+    "$defs": {
+      "seviye": {
+        "type": "object",
+        "required": ["dosya", "hedef_sure_dk", "kelime_sayisi"],
+        "additionalProperties": false,
+        "properties": {
+          "dosya": { "type": "string" },
+          "hedef_sure_dk": { "type": "number" },
+          "kelime_sayisi": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "SORULAR": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Başyapıt soru bankası",
+    "type": "object",
+    "required": ["surum", "eser_id", "coktan_secmeli", "dogru_yanlis", "acik_uclu", "gozlem_sorulari", "tekrar_kartlari"],
+    "additionalProperties": false,
+    "properties": {
+      "surum": { "type": "string" },
+      "eser_id": { "type": "string" },
+      "coktan_secmeli": {
+        "type": "array",
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "required": ["id", "soru", "secenekler", "dogru", "gerekce", "yanlis_gerekceleri", "kanit"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^CS[0-9]{2}$" },
+            "soru": { "type": "string" },
+            "secenekler": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "required": ["harf", "metin"],
+                "additionalProperties": false,
+                "properties": {
+                  "harf": { "enum": ["A", "B", "C", "D"] },
+                  "metin": { "type": "string" }
+                }
+              }
+            },
+            "dogru": { "enum": ["A", "B", "C", "D"] },
+            "gerekce": { "type": "string" },
+            "yanlis_gerekceleri": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "A": { "type": "string" },
+                "B": { "type": "string" },
+                "C": { "type": "string" },
+                "D": { "type": "string" }
+              }
+            },
+            "kanit": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "dogru_yanlis": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": ["id", "ifade", "dogru", "aciklama", "kanit"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^DY[0-9]{2}$" },
+            "ifade": { "type": "string" },
+            "dogru": { "type": "boolean" },
+            "aciklama": { "type": "string" },
+            "kanit": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "acik_uclu": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": ["id", "soru", "beklenen_ogeler"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^AU[0-9]{2}$" },
+            "soru": { "type": "string" },
+            "beklenen_ogeler": { "type": "array", "items": { "type": "string" } },
+            "kanit": { "type": "array", "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "gozlem_sorulari": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": ["id", "soru", "kanit"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^GZ[0-9]{2}$" },
+            "soru": { "type": "string" },
+            "ipucu": { "type": "string" },
+            "kanit": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      },
+      "tekrar_kartlari": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": ["id", "on", "arka", "kanit"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "pattern": "^TK[0-9]{2}$" },
+            "on": { "type": "string" },
+            "arka": { "type": "string" },
+            "kanit": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^C[0-9]{3}$" } }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1001 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q311243",
+ "sanatci_id": "caspar-david-friedrich",
+ "baslik": "Sis Denizi Üzerinde Gezgin",
+ "ozgun_baslik": "Der Wanderer über dem Nebelmeer",
+ "kunye": {
+  "sanatci": "Caspar David Friedrich",
+  "sanatci_yasam": "1774–1840",
+  "tarih": "um 1817",
+  "tarih_belirsizlik": "Müze \"um 1817\" + \"Die Datierung ist nicht gesichert\"; WD/literatür 1818 (circa); ihtilaf D (C048). İmzasız/tarihsiz.",
+  "teknik": "Öl auf Leinwand (tuval üzerine yağlıboya)",
+  "boyut_cm": {
+   "yukseklik": 94.8,
+   "genislik": 74.8
+  },
+  "muze": "Hamburger Kunsthalle",
+  "envanter": "HK-5161",
+  "edinim": "Stiftung Hamburger Kunstsammlungen, Aralık 1970 (600.000 DM); Kunsthalle'de Dauerleihgabe",
+  "konum": "Sammlung: 19. Jahrhundert; Ausgestellt in der Sammlung",
+  "telif_durumu": "Kamu malı (Friedrich ö.1840, >100 yıl pma); Commons iki dosya PD; müze fotoğraf kredisi Elke Walford (SHK/ARTOTHEK)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Friedrich,_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg",
+  "kaynak": "Wikimedia Commons (WD P18); kredi: Hamburger Kunsthalle / Elke Walford",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (2 dosya); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Dosya1 1962×2500; Dosya2 5256×6742",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C066); GZ TASLAK; kompozisyon K1+K3-K5 metninden; saç rengi ihtilafı (C051) açık"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 412
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1355
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2681
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-120-yıllık-boşluk"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-montaj-ve-olanaksız-perspektif"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-kimlik-hipotezleri-envanteri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-eskizler-ve-eksik-malzeme-araştırması"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil müze kaydını (arşivden) kullanarak künyeyi (um 1817, Öl auf Leinwand, 94,8×74,8, HK-5161, Stiftung/Dauerleihgabe 1970) doğrular.",
+  "Tarih/boyut/envanter ihtilaflarını ve Wikidata'nın kendi referansıyla çelişmesini yönetir; circa/muğlaklık işaretlerini korur.",
+  "Rückenfigur, montaj topografya ve \"görme refleksi\" okumasını analiz eder; görsel incelenmediğinde betimi kaynakla sınırlar.",
+  "~120 yıllık provenance boşluğunu, NS dönemi Luz/Henke/CCP zincirini ve atıf (authorship) belirsizliğini beyan eder.",
+  "Kimlik/giysi/özdeşleşme hipotezlerini olgudan ayırır; quiz doğru cevaplarını yalnız A/B kanıta dayandırır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Rückenfigur",
+   "tanim": "Sırtı izleyiciye dönük figür; Friedrich'in sık kullandığı, Wanderer'de en öne çıkan düzenek.",
+   "kanit": [
+    "C017",
+    "C024"
+   ]
+  },
+  {
+   "ad": "Sublime (yüce)",
+   "tanim": "Doğa karşısında hayranlık+ürperti karışımı; peyzajın yorumlandığı estetik kavram (müze metninde geçmez, ikincil yorum).",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin el değiştirme geçmişi; burada \"ungeklärt, bedenklich\", ~120 yıl boşluk.",
+   "kanit": [
+    "C012",
+    "C041"
+   ]
+  },
+  {
+   "ad": "Dauerleihgabe",
+   "tanim": "Sürekli ödünç; mülkiyet Stiftung'da, sergileme Kunsthalle'de.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Montaj (kurgusal manzara)",
+   "tanim": "Farklı eskizlerin atölyede birleştirilmesi; Kaiserkrone/Rosenberg/Gamrig.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Caspar David Friedrich (Greifswald 1774 – 1840 Dresden).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Müze kataloğundaki başlık ve tarih: \"Wanderer über dem Nebelmeer, um 1817\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Malzeme: Öl auf Leinwand (tuval üzerine yağlıboya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 94,8 × 74,8 cm (Bild); çerçeve 119,5 × 99,5 cm (Rahmen).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Envanter numarası HK-5161.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Sammlung: 19. Jahrhundert; Standort: \"Ausgestellt in der Sammlung\" (sergileniyor).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Mülkiyet Stiftung Hamburger Kunstsammlungen; Aralık 1970 edinim; Kunsthalle'de Dauerleihgabe (sürekli ödünç).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Eser imzasız ve tarihsiz; \"Die Datierung ist nicht gesichert.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Werkverzeichnis: Börsch-Supan/Jähnig 250.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenance zinciri 1938–1970 (muğlaklıklar korunarak): Luz Berlin \"spätestens Juli 1938 bis vermutl. Oktober 1938\"; Henke Essen \"vermutl. Oktober 1938\"; 1945 el koyma; CCP Marburg 4.6.1945 (MAR 1024); Nisan 1946 Marburg \"Masterpieces\"; CCP Wiesbaden 6.6.1946; İngiliz MFA&A Düsseldorf 9.9.1947; Henke'ye iade \"vermutlich August 1948\"; Luz 1949; Privatsammlung Bielefeld \"spätestens 1957\"; Herzogenrath (†1961); Oberwelland (Storck) ?–1970; Bühler Stuttgart Aralık 1970; Stiftung Aralık 1970. Jähnig 16.7.1938 mektubu; Friedrich↔Carus atıf tartışması; Henke biyografisi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "1947 CCP Wiesbaden \"Deutsche Malerei des 19. Jahrhunderts\" sergisinde Nr. 9 olarak Carl Gustav Carus adına, \"Wanderer am Abgrund\" başlığıyla listelendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Provenance durumu: \"in Bearbeitung … ungeklärt, bedenklich\" (Bauer/Haug, son 29.02.2024); DZK Magdeburg destekli proje.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "1970 satınalma bedeli 600.000 DM; Bühler faturası (9.12.1970) Oberwelland \"adına ve hesabına\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "BS/J 1973 \"1950, Bielefeld, Slg. Dr. Oetker\" iddiası müzenin 2011 araştırmasında doğrulanamadı (Dr. Monika Bachtler).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Müze: eser bugün Romantizm'in simgesi (Inbegriff der Romantik); Friedrich'in en çok reproduksiyonlanan eseri; sosyal ağlar çağında yeni boyut.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Grave: az sayıdaki dikey format (Hochformat); tek figür bu denli büyük/merkezde nadir; özdeşleşmeden çok \"Reflexion des Sehens\"; figürün yeri ulaşılır değil, neye baktığı saklı; iki katman, Gegenlicht, Goldener Schnitt göz hizası.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Bertsch: figür kimliği için \"hiçbir güvenilir işaret yok\"; en prominent Rückenfigur; giysi \"Städter\" (kentli); topoi: Gipfelerlebnis, doğayla bir olma, yalnızlık, görmenin öznel koşulları; Mittelsenkrechte + merkeze alçalan yamaçlar. (Ausst.-Kat. Hamburg/Berlin 2023, S.196f.)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Manzara kurgusal montaj: kaya kaidesi 3.6.1813 Kaiserkrone çizimi; sol arka koni dağ Mayıs 1808 Rosenberg etüdü; sol orta Gamrig (Rathen doğusu) 1808 (\"geringfügig modifizierte\"); kenar notu \"so hoch über die höchste Spitze des Steines ist der Horizont\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Müze fotoğraf kredisi: Elke Walford; SHK/Hamburger Kunsthalle/ARTOTHEK (eski: bpk).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Literatürde tarih genellikle 1818 (circa); bazı kaynaklar 1817 der.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Tarihleme tarihi: Grote 1950 \"1815\"; Geismeier 1966 \"um 1820\"; Sumowski 1970 \"vor 1818\"; BS/J 1973 \"am ehesten um 1818\"; Leppien 1993 \"um 1817\" (Carus atölye argümanı); 2006/07 sergi \"um 1818\"; Stiftung \"um 1817\" (Mart 2015), 1970 alımı \"um 1815\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "\"Der Wanderer über dem Nebelmeer\" başlığı ancak 1950'de, yeniden keşiften sonra oluştu (Grote 1950; Leppien 1993).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "dewiki'ye göre ilk kamusal gösterim: Yaz 1959 Tate Gallery, \"Lent from a private collection\", \"Mountaineer in a misty Landscape\" (→ C071).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Rückenfigur: Friedrich motifi sık/ısrarla kullandı (Mönch am Meer 1810, Frau vor der untergehenden Sonne 1817, Woman at a Window, Two Men by the Sea, Neubrandenburg; 1807'den beri sistemli); Wanderer \"perhaps the most famous Rückenfigur in art\" / \"die bekannteste Rückenfigur des Malers\" (\"perhaps\" korunur; A: C017).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Peyzaj \"sublime\" (yüce) olarak yorumlanır (müze denemelerinde \"sublime\" geçmez; C017 topoi A).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Öz-refleksiyon / hayat yolunu tefekkür amblemi yorumu (Gorra 2004; Gaddis 2004).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Kimlik hipotezleri (muğlak): itwiki \"vi sarebbe\" Oberst Friedrich Gotthard von den Brinken; Grote Goethe \"könnte\"/freiwilliger Jäger/Befreiungskriege falleni; Jähnig \"Herr von Brincken\" → Friedrich Ernst (†1797)/Friedrich Gotthard (†1802); Bode 2024 Julius von den Brinken \"vermutet\"; De Rycke FAZ 2023; BS/J Gedächtnisbild+Gottebenbildlichkeit; Neidhardt \"müßig und indezent\" + zirve=uçurum (A karşıtı C017).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Giysi yorumları: Altdeutsche Tracht (Wolf/Koerner) / Jäger üniforması (Koerner) / \"urbanite\" (Bertsch, Met 2025) / Forstrock (Bode 2024). (A: C017; → C055.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Friedrich'in Alman liberal-milliyetçi duygusunun ifadesi yorumu; Hofmann, Wanderer'i Delacroix \"Halka Yol Gösteren Özgürlük\" ile karşılaştırır (Wanderer açık uçlu/sorgulayıcı, Delacroix eylemde emin).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "1817: Carus ve Dahl ile dostluk; Ocak 1818: Caroline Brommer ile evlilik; Greifswald balayı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Carus \"Ruhe des Pilgers\" (1818) Wanderer'in parafrazı (Prause 1968, Nr.415).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Topografya: sağ Zirkelstein; sol \"could be either the Rosenberg or the Kaltenberg\"; Gamrig (Rathen); Kaiserkrone; Wolfsberg (Krippen) bakışı (A: C018).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Üç ana eskiz: \"Felsige Kuppe\" 3.6.1813 (Krippener Skizzenbuch; defter dağıtılmış); \"Felsformation im Elbsandsteingebirge\" 13.5.1808 (Gamrig); \"Landschaftsstudien\" 9./12.5.1808 (dördüncü etüd; Rosenberg). Grummt 2011 + Hoch.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Friedrich sözü: \"Schließe dein leibliches Auge, damit du mit dem geistigen Auge zuerst siehest dein Bild. …\" (Hinz 1974, S.92).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Friedrich sis sözü: \"When a region cloaks itself in mist, it appears larger and more sublime … like a veiled girl.\" (Hofmann 2000 s.33).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Börsch-Supan: \"It is harder to imagine this landscape without a figure than it is in any other painting.\" (BS 2005 s.116 → Grave 2012 s.203).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Macfarlane: \"archetypical image of the mountain-climbing visionary\" (2003, s.157).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Schmied: Wanderer, Magritte sürrealizminin öncüsü (ince uyumsuzluklar, olanaksız perspektifler; derinlik belirsiz — Hofmann) (1995, s.41).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Resepsiyon: hemen başyapıt sayılmadı; 20. yy'da itibar arttı (Clark, Brion); Jensen 1974 olumsuz: \"muss als künstlerisch misslungen angesehen werden\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Atıf eleştirisi: Bahners (Kunstchronik 78/2025) \"problematisch\"; kunsttechnologische Untersuchung henüz yok; Illies 2023; Piegsa ZEIT 45/2023; çoğunluk hâlâ Friedrich. DOI wikitext'ten, bağımsız doğrulanmadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Bauer/Haug 2024 (peer-review, transfer 3, S.19–35): provenance boşluğu ~120 yıl \"from 1813/1817 to 1938\"; \"undated and unsigned … attributed to C. D. Friedrich\"; atıf sorunu merkezde. DOI 10.48640/tf.2024.1.108892; CC BY-SA 4.0. Yalnız landing+abstract erişildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "NS bağlamı: Luz 1937'den itibaren Reichskammer der bildenden Künste'de Yahudi mülkü sanat eserleri bilirkişisi (Gärtner/Ehringhaus 2011).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "1970 alımında \"buchhalterisch\" aracı Kurt A. Körber; Stiftung borç senedini yıllar sonra devraldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Popüler kültür: Dover Frankenstein; Stewart Lee \"Content Provider\" (2019); Spiegel 19/1995; DG 1974 Wanderer-Fantasie; 2011 55-cent pul; Minecraft; Vik Muniz \"Wanderer Above The Sea of Ashes\" (1999, NGA); Stern 8.10.2015; 2025 müzikal (Silbermond).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "Kayıp \"Der Adler über dem Nebelmeer\": Schubert 1806'da atölyede gördü, 1855 anılarında andı; Nemitz 1938; sonraki başlığa olası ilham (\"möglicherweise\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "dewiki \"Kritik der Echtheit\": resim ~120 yıl sonra, Nemitz 1938'den kısa süre sonra başlıksız piyasaya çıktı; 1931 Glaspalast yangını (3000+ resim) + 1937 \"Entartete Kunst\" el koymaları talebi artırdı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Koerner Genesis 2:6 sis hipotezi: Carus Luther İncili'nde sisin Yaratılış'ta Tanrı'nın yardımcısı olduğunu savunur; Koerner Carus-Friedrich tartışmış olabilir + Wanderer Yaratılış benzeri sahne hipotezi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "itwiki palet/teknik betimi: sis mavi/gri/pembe/sarı ışıldayan karışım; kayalar opak; \"pennellata molto liquida, quasi vaporosa\"; ışık kayaları alttan aydınlatır gibi (Artble — zayıf).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C046",
+   "ifade": "enwiki self-portre önerisi, \"red hair\" benzerliği (drawpaintacademy — zayıf web; → C051).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C047",
+   "ifade": "itwiki \"homo viator\"/ruhsal hac yolculuğu; Castellotti alıntısı (Leotta; academia.edu Lunaria — zayıf/zincir); \"humilitas\"/Sonsuz okuması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C048",
+   "ifade": "Tarih ihtilafı (D001): müze \"um 1817\"+\"nicht gesichert\" ↔ WD 1818 (circa) ↔ en c.1818 ↔ it 1818 ↔ de um 1818 ↔ data 1818. WD P571 ref'i \"um 1817\" başlıklı sayfaya işaret → kendi kaynağıyla çelişir. Literatür 1815–um 1820.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "Yükseklik ihtilafı (D002): WD 67 ↔ müze/en/de 94,8 ↔ it 98,4 (Cricco/Di Teodoro 2017; erişilmedi). Genişlik 74,8 aynı. BÜYÜK fark, çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "Envanter ihtilafı (D003): WD P217 \"HK-516167\" ↔ müze \"HK-5161\"; WD'nin kendi ref URL'si HK-5161.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "Saç rengi ihtilafı (D004): WD \"blond hair\"+de \"blondes Haar\" ↔ en \"red hair\"+it \"capelli rossi\". Görsel İNCELENMEDİ; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Provenance başlangıcı ihtilafı (D005): en \"by 1939 … Luz\" ↔ müze \"spätestens Juli 1938\". Satış bedeli/tarihi müze içinde de çelişkili: Henke kartı \"Oktober 1938/60.000 RM\" ↔ Luz anısı \"1939/80.000 RM\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "Mülkiyet ifadesi ihtilafı (D006): en \"Kunsthalle acquired 1970\" ↔ müze Stiftung/Dauerleihgabe ↔ Körber köprüsü ↔ Bühler faturası Oberwelland adına.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "Oetker sahipliği ihtilafı (D007): de \"Familiensammlung Oetker\" (kesin) ↔ müze 2011 doğrulayamadı (C014).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "Giysi ihtilafı (D008): Altdeutsche Tracht ↔ Jäger ↔ Städter (A) ↔ Forstrock. Yorum ihtilafı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "Hoch 1987 bibliyografya ihtilafı (D009): en \"Kohlhammer\" ISBN 978-3-17-009406-2 ↔ it ISBN 978-3-364-00029-9 ↔ de \"Verlag der Kunst, Dresden 1987\"; Hoch 1996 ayrı. Erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "enwiki 2006 katalog atfı bozuk (D010): \"Die Underling der Romantic … Firmer\" ↔ de \"Die Erfindung der Romantik … Hirmer\" (aynı s.267). Katalog metnine erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "Resepsiyon zamanlaması ihtilafı (D011, enwiki içi): lead \"early 20th/1970s\" ↔ Reception \"mid-20th\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "İzleyici özdeşleşmesi ihtilafı (D012): data/it \"si immedesima\" ↔ Grave \"nicht vorrangig … Identifikation … Reflexion des Sehens\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C071",
+   "ifade": "İlk kamusal gösterim ihtilafı (Denetim B yeni): de \"yaz 1959 Tate\" ↔ müze not 4 \"Nisan 1946 Marburg Masterpieces, erstmals öffentlich gezeigt\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C060",
+   "ifade": "WD P180 refsiz öğeler (E008): man/mountain/rock/trousers/frock coat/walking stick/gaze/back/blond hair/hiking/sea of clouds/sky/aerial perspective/mist/Wanderlust/strolling — referans yok; Wanderlust/strolling/gaze müze metninde yok; blond → C051.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "Atıf (authorship) belirsiz (E002): imzasız/tarihsiz; 1947 Carus; \"attributed to\"; Bahners \"problematisch\"+kunsttechnologische Untersuchung ausstehend; çoğunluk Friedrich.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "Figür kimliği bilinmiyor (E003): \"keinerlei verlässliche Indizien\" (Bertsch); hipotezler muğlak \"vi sarebbe\"/\"könnte\"/\"vermutet\"/\"some have suggested\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "Provenance boşlukları (E004): 1813/1817–1938 bilinmiyor; \"Bislang unbekannte Provenienz/en\"; \"angeblich kurz vor 1.9.1939\"/\"spätestens\"/\"vermutl.\"/\"?\"; \"ungeklärt, bedenklich\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "Sol arka dağ belirsiz (E005): \"could be either the Rosenberg or the Kaltenberg\"; Bertsch Mayıs 1808 Rosenberg etüdü (daha spesifik, yine montaj).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "enwiki Friedrich alıntısı doğrulanamadı (E006): \"The artist should paint not only what he has in front of him …\" — ref URL bozuk (malformed Scholastic; çekilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); iki Commons dosyası PD; GZ TASLAK; kompozisyon \"kaynakların betimlediği\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K8",
+    "K9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "Kitap/makale metinlerine erişilmedi (atıf zinciri); transfer tam metni erişilmedi (yalnız landing+abstract); Bahners DOI bağımsız doğrulanmadı; Nietzsche-Studien DOI (Idrobo 2012) yorum satırında, kullanılmadı (E010/E011).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K11"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Hamburger Kunsthalle (Wayback)",
+   "belge": "Online-Sammlung HK-5161, snapshot 2026-11-03 (20261103204829); künye+Grave/Bertsch+provenance (Stand 29.02.2024)",
+   "url": "https://web.archive.org/web/20261103204829id_/https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (28.243 bayt, --compressed); canlı Anubis engelli",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Hamburger Kunsthalle (Wayback)",
+   "belge": "eski sammlung-online, snapshot 2023-10-03 (20231003143751); künye+provenance (Stand 2019/2020 Haug)",
+   "url": "https://web.archive.org/web/20231003143751id_/https://www.hamburger-kunsthalle.de/sammlung-online/caspar-david-friedrich/wanderer-ueber-dem-nebelmeer",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (53.900 bayt); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Wanderer Above the Sea of Fog (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Wanderer%20Above%20the%20Sea%20of%20Fog&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Viandante sul mare di nebbia (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Viandante%20sul%20mare%20di%20nebbia&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Almanca Vikipedi",
+   "belge": "Der Wanderer über dem Nebelmeer (wikitext)",
+   "url": "https://de.wikipedia.org/w/api.php?action=parse&page=Der%20Wanderer%20%C3%BCber%20dem%20Nebelmeer&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikidata",
+   "belge": "Q311243 EntityData + wbgetentities labels",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q311243.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (labels ilk 429→backoff→200)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K7",
+   "kurum": "transfer / Heidelberg UB (Wayback)",
+   "belge": "Bauer/Haug 2024 landing+abstract, snapshot 2026-04-14 (20260414115619); DOI+lisans",
+   "url": "https://web.archive.org/web/20260414115619id_/https://ahnp.ub.uni-heidelberg.de/journals/transfer/article/view/108892",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (6.849 bayt); tam metin erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Friedrich, Caspar David - Wanderer über dem Nebelmeer.jpg (WD P18)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|size|extmetadata&titles=File:Friedrich,%20Caspar%20David%20-%20Wanderer%20%C3%BCber%20dem%20Nebelmeer.jpg&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (Denetim B yeniden çekti); metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Caspar David Friedrich - Wanderer above the Sea of Fog.jpeg (enwiki infobox)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|size|extmetadata&titles=File:Caspar%20David%20Friedrich%20-%20Wanderer%20above%20the%20Sea%20of%20Fog.jpeg&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ilk 429→backoff→200); metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K10",
+   "kurum": "Hamburger Kunsthalle",
+   "belge": "Online-Sammlung HK-5161 (CANLI)",
+   "url": "https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama Anubis PoW bot challenge (v1.25.0, difficulty 2); içerik yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "K11",
+   "kurum": "transfer / Heidelberg UB",
+   "belge": "Bauer/Haug 2024 PDF galley (CANLI)",
+   "url": "https://ahnp.ub.uni-heidelberg.de/journals/transfer/article/view/108892/105405",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama Anubis challenge (v1.26.0, difficulty 4); tam metin yok",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Ruhe des Pilgers",
+   "sanatci": "Carl Gustav Carus",
+   "mufredat_ici": false,
+   "gerekce": "Prause'ye göre Wanderer'in parafrazı (1818); motifin çevredeki hemen yankısı.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "eser": "Halka Yol Gösteren Özgürlük (La Liberté guidant le peuple)",
+   "sanatci": "Eugène Delacroix",
+   "mufredat_ici": true,
+   "gerekce": "Hofmann karşıtlığı: Wanderer açık uçlu/sorgulayıcı, Delacroix eylemde emin; Alman↔Fransız milliyetçiliği.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "eser": "Der Mönch am Meer",
+   "sanatci": "Caspar David Friedrich",
+   "mufredat_ici": false,
+   "gerekce": "Rückenfigur geleneğinde öncül (1810); figürün kişiselleşme çizgisi.",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil müze kaydı arşivden yeniden açıldı (K1: Wayback 2026-11-03; K2: Wayback 2023-10-03); künye/Öl auf Leinwand/94,8×74,8/HK-5161/Stiftung-Dauerleihgabe-1970/imzasız-tarihsiz/Wvz 250/provenance/Grave+Bertsch doğrulandı. Canlı K10 Anubis PoW engelli, eski sayfa 404. en/it/de wikitext (K3/K4/K5) yeniden okundu; WD (K6) P571/P2048/P217/P180 çıkarıldı — WD'nin kendi referansıyla çelişkisi teyit. Commons K8 Denetim B'de yeniden çekildi (1962×2500 PD), K9 (5256×6742 PD, tiqets zayıf kredi). transfer K7 yalnız landing+abstract; tam metin K11 Anubis engelli. 13 ihtilaf D (C071 ilk-kamusal-gösterim Denetim B'de yeni bulundu), 8 belirsizlik E açık. Görsel İNCELENEMEDİ → GZ TASLAK. Kitap/makale metinleri erişilmedi (C067).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1818\" (muğlaklıksız) ↔ müze \"um 1817\" + \"Die Datierung ist nicht gesichert\" (C048); circa korunmalı.",
+  "Özgün ad: data \"Bulutların Üzerinde Yolculuk\" = trwiki başlığı; özgün Almanca \"Der Wanderer über dem Nebelmeer\". Alan semantik hatalı; yalnızca not.",
+  "Yükseklik: data/wiki 94,8 ↔ WD 67 ↔ itwiki 98,4 (C049); müze birincil 94,8 esas. BÜYÜK fark, çözülmedi.",
+  "Envanter: WD \"HK-516167\" ↔ müze/data \"HK-5161\" (C050).",
+  "İzleyici özdeşleşmesi: eser_notlari \"izleyiciyi manzaraya ortak eder\" ↔ Grave \"Reflexion des Sehens\" (C059); nüans.",
+  "Uyumlu: montaj (C018), giysi/anma muğlaklığı (C027/C028), \"açık renkli saçlar\" (C051), figür kimliği tartışmalı (C062), eser_adlari_tr ✓, sanatcilar 1774/1840 ✓.",
+  "Görsel İNCELENEMEDİ (C066); GZ TASLAK; yerel hash 849127cc0c76ca35 Commons eşleşmesi doğrulanmadı; insan editör zorunlu.",
+  "Yeni ihtilaf (Denetim B): ilk kamusal gösterim — müze not 4 Nisan 1946 Marburg ↔ dewiki yaz 1959 Tate (C071)."
+ ]
+}

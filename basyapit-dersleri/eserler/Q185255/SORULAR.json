@@ -1,0 +1,575 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q185255",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Louvre birincil kaydına göre tablonun boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "6,77 × 9,94 m"
+    },
+    {
+     "harf": "B",
+     "metin": "6,66 × 9,90 m"
+    },
+    {
+     "harf": "C",
+     "metin": "3,85 × 3,16 m"
+    },
+    {
+     "harf": "D",
+     "metin": "9,94 × 6,77 m"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6: 'Hauteur : 6,77 m ; Largeur : 9,94 m'. WD P2048/P2049 (677/994 cm) ve Hanson Fig.1 ile uyumlu.",
+   "yanlis_gerekceleri": {
+    "B": "666×990 cm itwiki infobox'unun aykırı değeridir; birincil Louvre kaydı 6,77×9,94 m der (D1, tartışma).",
+    "C": "385×316 cm, 1815 takasında Venedik'e gönderilen Le Brun tablosunun boyutudur (C034), Kana'nın değil.",
+    "D": "Yükseklik/genişlik ters verilmiş; Louvre 'Hauteur 6,77 m ; Largeur 9,94 m' der."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre envanter numaraları hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 142 ; MR 384"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 384 ; MR 142"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 142 ; MR 142"
+    },
+    {
+     "harf": "D",
+     "metin": "MR 711 ; INV 384"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6: 'Numéro principal : INV 142 ; Autre numéro d'inventaire : MR 384'. WD P217 her ikisini P195 niteliğiyle taşır.",
+   "yanlis_gerekceleri": {
+    "B": "Numaralar ters verilmiş; principal INV 142, autre MR 384'tür.",
+    "C": "MR 142 değil MR 384 olmalı; iki farklı envanter numarası vardır.",
+    "D": "711 salon numarasıdır (Salle 711), envanter numarası değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Louvre kaydına göre tablo nerede asılıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salle 711 (Salle des États), Denon, Niveau 1 — Mona Lisa karşısı"
+    },
+    {
+     "harf": "B",
+     "metin": "Grande Galerie, Denon"
+    },
+    {
+     "harf": "C",
+     "metin": "Salle 711, Mona Lisa ile aynı duvarda"
+    },
+    {
+     "harf": "D",
+     "metin": "Richelieu, Niveau 2"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S6: 'Denon, Salle 711 - Salle de la Joconde / Salle des Etats'; S8: 'fills the display space opposite the Mona Lisa'. Not: site uyarısı salon bilgisinin güncel olmayabileceğini belirtir (E7).",
+   "yanlis_gerekceleri": {
+    "B": "Kayıt Grande Galerie değil Salle 711 (Salle des États) der.",
+    "C": "'opposite the Mona Lisa' — karşısında, aynı duvarda değil.",
+    "D": "Kayıt Denon, Niveau 1 der; Richelieu/Niveau 2 değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun konusu ve İncil kaynağı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yuhanna 2:1–11 — suyun şaraba dönüşmesi, İsa'nın ilk mucizesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Luka 7 — Farisi Simon'un evinde ziyafet"
+    },
+    {
+     "harf": "C",
+     "metin": "Son Akşam Yemeği (Levi, 1573)"
+    },
+    {
+     "harf": "D",
+     "metin": "Çarmıha Geriliş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9/S12: Kana'da Düğün mucizesi, Yuhanna 2:1–11; İsa'nın ilk mucizesi, Eucharistia öncüsü. WD P180=Q625140.",
+   "yanlis_gerekceleri": {
+    "B": "Luka 7 (Farisi Simon), 1815 takasındaki Le Brun tablosunun konusudur (C034).",
+    "C": "Son Akşam Yemeği/Levi, Veronese'nin ayrı ve sonraki bir eseridir (C033/C052).",
+    "D": "Çarmıh sahnesi bu tablonun konusu değildir; konu Kana'da Düğün mucizesidir."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tablo kimin için, nereye sipariş edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "San Giorgio Maggiore Benediktenleri — yemekhane (refectory)"
+    },
+    {
+     "harf": "B",
+     "metin": "San Sebastiano manastırı (1570 Simone)"
+    },
+    {
+     "harf": "C",
+     "metin": "Santi Nazaro e Celso, Verona (1556 Simone)"
+    },
+    {
+     "harf": "D",
+     "metin": "Fondazione Giorgio Cini (2007 faksimile)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: 'The Benedictines of the San Giorgio Maggiore monastery … commissioned this immense painting in 1562 to decorate their new refectory.'",
+   "yanlis_gerekceleri": {
+    "B": "San Sebastiano, Veronese'nin 1570 tarihli başka bir Simone ziyafetinin yeridir.",
+    "C": "Santi Nazaro e Celso (Verona), 1556 Simone ziyafetinin yeridir (Hanson dipnot 8).",
+    "D": "Cini Vakfı 2007 faksimilesinin siparişçisidir, 1562 tablosunun değil (C015)."
+   },
+   "kanit": [
+    "C011",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Tablo 1815'te neden Paris'te tutuldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dönüş yolculuğunun zarar vereceğinden korkuldu; Le Brun tablosu takas edildi"
+    },
+    {
+     "harf": "B",
+     "metin": "Venedik iadeyi reddetti"
+    },
+    {
+     "harf": "C",
+     "metin": "Napolyon özel koleksiyonuna aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Tablo açık artırmayla satıldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8: 'it was feared that the return journey would damage this large work … kept in exchange for a painting by Charles Le Brun'. S14 takası doğrular.",
+   "yanlis_gerekceleri": {
+    "B": "İade listesindeydi; engel Denon'un 'too fragile' iddiasıydı, Venedik'in reddi değil (C025).",
+    "C": "1798'den beri Etat (Fransız Devleti) mülkiyetinde; Napolyon'un özel koleksiyonu değil (C003).",
+    "D": "Satış değil, Le Brun tablosuyla takas söz konusudur (C013)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "2007 faksimilesi nereye, kim tarafından kondu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "San Giorgio Maggiore yemekhanesi — Factum Arte, Cini Vakfı siparişi, 11 Eylül 2007"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre'da yan salon"
+    },
+    {
+     "harf": "C",
+     "metin": "Gallerie dell'Accademia, Venedik"
+    },
+    {
+     "harf": "D",
+     "metin": "Versailles"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S13: 'On September 11th, 2007 a copy … unveiled in its original position on the end wall of the Palladian refectory … commissioned by the Fondazione Giorgio Cini and made by Factum Arte.'",
+   "yanlis_gerekceleri": {
+    "B": "Faksimile Louvre'da değil, asıl yeri San Giorgio yemekhanesindedir.",
+    "C": "Accademia'da Le Brun takas tablosu vardır (C034), faksimile değil.",
+    "D": "Versailles'da seri varyantı bulunur (C033), faksimile değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Hanson'a göre mucize anı tabloda nasıl konumlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "En sağda şarap dökülüp incelenir, en soldaki damada sunulur"
+    },
+    {
+     "harf": "B",
+     "metin": "Tam merkezde İsa'nın elinde"
+    },
+    {
+     "harf": "C",
+     "metin": "Üst katta balkonda"
+    },
+    {
+     "harf": "D",
+     "metin": "En solda dökülüp en sağda sunulur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S12: 'pouring and examining the miraculous wine on the far right … presenting it to the bridegroom on the far left.'",
+   "yanlis_gerekceleri": {
+    "B": "Mucize merkezde İsa'nın elinde değil; sağda hizmetkârlarca dökülüp incelenir.",
+    "C": "Üst kat hizmetkârlarına ayrılmıştır; mucize anı alt katta sağ/sol eksenindedir.",
+    "D": "Yön ters verilmiş; dökme/inceleme sağda, sunum soldadır."
+   },
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Louvre'un 2021 notice'ına göre 1989–1992 restorasyonunda tören yöneticisinin mantosu için ne yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırmızı üst boya kaldırıldı; yeşil (Louvre'a göre özgün renk) ortaya çıkarıldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Yeşil kaldırılıp kırmızıya dönüldü"
+    },
+    {
+     "harf": "C",
+     "metin": "Manto rengi hiç değişmedi"
+    },
+    {
+     "harf": "D",
+     "metin": "2019'da maviye boyandı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: 'the master of ceremony's mantle, which was changed from red to green—its original hue.' Not: APIAH/Factum karşı görüşü vardır (C028/C048, tartışma); soru Louvre'un pozisyonunu sorar.",
+   "yanlis_gerekceleri": {
+    "B": "İşlem tersidir; Louvre kırmızıdan yeşile geçildiğini söyler.",
+    "C": "Louvre renk değişimini açıkça kaydeder; 'hiç değişmedi' desteklenmez.",
+    "D": "2019 maviye boyama salon duvarları içindir (C037), manto için değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Hanson'ın aktardığı sözleşme ödemesi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "324 dukat + bir fıçı şarap + yemekhanede yemek"
+    },
+    {
+     "harf": "B",
+     "metin": "1000 altın florin"
+    },
+    {
+     "harf": "C",
+     "metin": "500 dukat + şarap"
+    },
+    {
+     "harf": "D",
+     "metin": "Ödeme yok, onur karşılığı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S12 (Cooper 273; Chambers/Pullan/Fletcher 1992): 'He received 324 ducats, a barrel of wine, and food in the refectory in which he was at work.'",
+   "yanlis_gerekceleri": {
+    "B": "1000 florin kaynaklarda yok; sözleşme 324 dukat + fıçı şarap + yemek der.",
+    "C": "500 dukat değil 324 dukat; ödeme kalemleri şarap ve yemeği de içerir.",
+    "D": "Ödeme açıkça kayıtlıdır (324 dukat + şarap + yemek); 'onur karşılığı' değil."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo Louvre'un en büyük resmidir.",
+   "dogru": true,
+   "aciklama": "Doğru (S8): 'the biggest painting in the Louvre'; 6 m'den yüksek, ~10 m genişlik.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Louvre notice'ı gelin ve damadın masanın sol ucunda oturduğunu söyler.",
+   "dogru": true,
+   "aciklama": "Doğru (S9): 'seated at the left end of the table'. enwiki 'right wing' der; bu aykırı değerdir (D2, tartışma). Hanson 'far left', Factum 'left hand corner' ile Louvre uyumlu.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo 1797'de duvardan söküldü, 1798'de Louvre'a taşındı.",
+   "dogru": true,
+   "aciklama": "Doğru (S5): 'prélevé en 1797 ; transporté au Louvre en 1798'. S8 '1798 confiscation' diye sıkıştırır (D8, tartışma).",
+   "kanit": [
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Veronese'nin kardeşi Benedetto Caliari'nin yardımı kesindir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre 'most likely with the assistance of his brother Benedetto Caliari' der — olasılık (E2), kesinlik değil.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Faksimile, tablonun 1563'teki ilk haline birebir kopyasıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: S13 'exact facsimile of the painting in its current condition in the Musée du Louvre' — mevcut (restorasyon sonrası) durumun kopyası.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Sözleşme ↔ sonuç ilişkisini kaynak zinciriyle analiz edin (konu, figür serbestisi, pigment, ödeme, teslim varyantları).",
+   "beklenen_ogeler": [
+    "6 Haziran 1562",
+    "üç keşiş",
+    "sığdırılabilecek figür sayısı",
+    "324 dukat + fıçı şarap + yemek",
+    "ultramarin",
+    "Eylül/Ekim/Kasım 1563 (D4)"
+   ],
+   "kanit": [
+    "C017",
+    "C018",
+    "C019",
+    "C021",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Nesne biyografisini yazın: 1797 söküm → 1798 Paris → 1815 takas → 1870/1939 → 1989–92 restorasyon → 2007 faksimile; D8/D3 tartışmalarını işaretleyin.",
+   "beklenen_ogeler": [
+    "yatay şeritler / yedi parça (D3)",
+    "1797 söküm / 1798 edinim (D8)",
+    "Le Brun takası",
+    "1870/1939",
+    "1989–1992 ICI",
+    "2007 Factum Arte"
+   ],
+   "kanit": [
+    "C016",
+    "C003",
+    "C013",
+    "C014",
+    "C012",
+    "C015",
+    "C046",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Manto rengi tartışmasını kanıt temelli değerlendirin: Louvre ↔ APIAH/Factum; orpiment/realgar kimyası; erken kopyalar.",
+   "beklenen_ogeler": [
+    "Louvre yeşil \"original hue\" (A)",
+    "APIAH rouge marron Veronese (B)",
+    "Factum: yeşil önce kırmızı sonra",
+    "erpiment/realgar arsenik sülfür",
+    "erken kopyalar kırmızı",
+    "1607–19. yy ortası tarihleme"
+   ],
+   "kanit": [
+    "C012",
+    "C028",
+    "C048",
+    "C063"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Hanson'ın 'ziyafetin dili' tezini açın: scalco/trinciante, sprezzatura, lüks yasaları, Galenik şarap; kutsal-dünyevi denge.",
+   "beklenen_ogeler": [
+    "scalco yeşil / kâhya beyaz / İsa üçgeni",
+    "sprezzatura, lokma ağza gitmez",
+    "1562 sumptuary yasalar",
+    "Galenik hılt, beyaz→kırmızı şarap",
+    "hizmetkâr/konuk ~2:1"
+   ],
+   "kanit": [
+    "C056",
+    "C057",
+    "C061",
+    "C062",
+    "C059"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Orijinallik/iade tartışmasını değerlendirin: faksimile 'iyi/kötü reprodüksiyon'; Denon çerçevesi; 1994/2010 talepleri; 1815 yasal dayanak.",
+   "beklenen_ogeler": [
+    "Factum orijinallik = yörünge",
+    "Denon \"falsely claimed\" (Uglow, erişilmedi)",
+    "Sisinni 1994 / Beggiatto 2010",
+    "1815 takası yasal dayanak",
+    "Cini restorasyon planı (2008, güncel bilinmiyor)"
+   ],
+   "kanit": [
+    "C065",
+    "C025",
+    "C029",
+    "C013",
+    "C038"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İsa ile Meryem'in merkezini ve halelerini bulun; durağan pozlarını çevredeki hareketle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: İsa-Meryem merkezde, sade giysili, haleli, ikonik durağan (Louvre/Hanson); çevre kalabalık hareketli.",
+   "kanit": [
+    "C006",
+    "C059"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Gelin ve damadı masanın sol ucunda arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Louvre 'left end', Hanson 'far left', Factum 'left hand corner'; enwiki 'right wing' aykırı (tartışma).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ ön planda şarabı döken altın giysili hizmetkârı ve inceleyen beyaz kâhyayı; solda damada sunumu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: mucize sağda dökme/inceleme, solda damada sunum (Hanson); konuklar habersiz.",
+   "kanit": [
+    "C020",
+    "C057"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Dört müzisyen grubunu ve önlerindeki kum saatini bulun (Rosand ekseni).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ortada 4 müzisyen; carver-İsa-kum saati ekseni (Rosand/Hanson); kum saati 'saatim henüz gelmedi'.",
+   "kanit": [
+    "C055",
+    "C058"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "İki katmanlı kompozisyonu inceleyin: altta kalabalık/masa, üstte balkon + hizmetkârlar + mavi gökyüzü; Korint başlıklı yivli sütunlar.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Louvre iki bölüm; Hanson pembe mermer colonnat, üst kat hizmetkârları, sakin gökyüzü.",
+   "kanit": [
+    "C010",
+    "C055"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Les Noces de Cana; Veronese (1528–1588); 1562–1563; huile sur toile; 6,77×9,94 m; INV 142 / MR 384; Louvre Salle 711 (Salle des États), Mona Lisa karşısı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + mucize anı?",
+   "arka": "Yuhanna 2:1–11, ilk mucize, Eucharistia öncüsü; sağda şarap döküp inceleme, solda damada sunum; konuklar habersiz, hizmetkârlar bilir.",
+   "kanit": [
+    "C006",
+    "C020",
+    "C057"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sipariş + sözleşme?",
+   "arka": "San Giorgio Benediktenleri 1562; Palladio yemekhanesi; 6 Haziran 1562, üç keşiş; 324 dukat + fıçı şarap + yemek; ultramarin; hedef Eylül 1563 'festa de la madona'.",
+   "kanit": [
+    "C011",
+    "C017",
+    "C018",
+    "C019",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "1797 söküm (yatay şeritler), 1798 Louvre, 1815 Le Brun takası, 1870/1939 taşınma, 1989–1992 ICI restorasyon, 2007 Factum Arte faksimile (San Giorgio).",
+   "kanit": [
+    "C016",
+    "C003",
+    "C013",
+    "C014",
+    "C012",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Yorum ekseni?",
+   "arka": "Rosand: carver-İsa-kum saati, 'saatim henüz gelmedi', Meryem 'Christ'ın gelini'; Hanson: ziyafetin dili, decorum, bağlı köpekler; SILENTIUM melekleri ↔ sessiz yemekhane.",
+   "kanit": [
+    "C058",
+    "C059",
+    "C060"
+   ]
+  }
+ ]
+}

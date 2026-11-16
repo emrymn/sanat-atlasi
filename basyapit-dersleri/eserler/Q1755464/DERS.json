@@ -1,0 +1,465 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1755464",
+ "sanatci_id": "albrecht-durer",
+ "baslik": "Şövalye, Ölüm ve Şeytan",
+ "ozgun_baslik": "Knight, Death and the Devil (Ritter, Tod und Teufel)",
+ "kunye": {
+  "sanatci": "Albrecht Dürer",
+  "sanatci_yasam": "1471–1528",
+  "tarih": "1513 (imzalı/tarihli)",
+  "tarih_belirsizlik": "tablet \"S. 1513\"; S anlamı tartışmalı (Salus ↔ Thausing sanguineus)",
+  "teknik": "Gravür (bakır levha baskı)",
+  "boyut_cm": {
+   "yukseklik": 24.3,
+   "genislik": 18.8
+  },
+  "muze": "Çok nüsha (Met, NGA, British Museum vb.)",
+  "envanter": "çoklu nüsha (ör. Met 43.106.2 = API objects/336223)",
+  "edinim": "Maximilian hizmetinde; sipariş değil; çeşitli koleksiyonlar",
+  "konum": "çeşitli print room",
+  "telif_durumu": "Kamu malı (Dürer ö.1528); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Knight,_Death_and_Devil,_1513,_NGA_6637.jpg",
+  "kaynak": "Wikimedia Commons (NGA)",
+  "lisans": "CC0 (Wikimedia Commons); eserin kendisi kamu malı",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C022); Met web sayfası 429 (C021); birincil künye Met API objects/336223 ile doğrulandı (C003 A); kompozisyon enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 447
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1071
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 1992
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-meisterstiche-ve-teknik-doruk"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-gotik-ve-rönesans-sentezi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-kompozisyon-kararlılığın-optiği"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-alegori-hristiyan-asker-ve-erasmus"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-alımlama-tarihi-nietzsche-wagner-ve-nazi-sahiplenmesi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Gravürün kimliğini (Dürer, 1513, Meisterstiche) birincil künye (Met API) ve ikincil kaynakla doğrular.",
+  "Gotik + Rönesans sentezini ve kompozisyonun kararlılığını analiz eder.",
+  "Hristiyan asker alegorisini (Erasmus/İncil) çözümler.",
+  "Karşıt akademik okumaları (Thausing, Karling/Meyer, Getlein) ve alımlama tarihini (Nietzsche/Schopenhauer, Nazi) ayırır.",
+  "Birincil künye (A) ile web/görsel sınırının (E) kanıt konumunu kavrar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "gravür",
+   "tanim": "Bakır levhaya oyularak yapılan baskı; Meisterstiche = usta baskı.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "ad": "memento mori",
+   "tanim": "\"Ölümü hatırla\"; kum saati bu hatırlatıcıdır.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "miles Christianus",
+   "tanim": "\"Hristiyan asker\"; İncil'in zırh metaforu (Ephesians 6).",
+   "kanit": [
+    "C018",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Meisterstiche",
+   "tanim": "Dürer'in üç usta gravürü: Knight, St Jerome, Melencolia I.",
+   "kanit": [
+    "C002",
+    "C007"
+   ]
+  },
+  {
+   "ad": "Raubritter",
+   "tanim": "\"Soyguncu şövalye\"; Karling/Meyer'in karşı okuması; tilki kuyruğu simgesi.",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Knight, Death and the Devil (Ritter, Tod und Teufel); Albrecht Dürer; 1513; büyük gravür; Alman Rönesansı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Üç Meisterstiche'den (usta baskı) biri; resim/woodcut'ı bırakıp gravüre odaklandığı dönem.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: gravür (engraving). Met 43.106.2 (API objects/336223) birincil künye: levha 24.3×18.8 cm, kâğıt 25×19.6 cm, 1513. Nüshaya göre fark: Met 19.73.110 (24.5×19), Met 66.521.95 (24.7×18.9), WD 24.8×19; levha/kâğıt ve nüsha kaynaklı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarihli ve imzalı; 1513; tabletin sol altı \"S. 1513\" yazıtı (Met + enwiki). \"S\" harfinin anlamı ayrı tartışma konusudur (C024).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Kompozisyon (enwiki betimi): zırhlı şövalye gururlu at + sadık köpekle dar vahşi geçit; keçi başlı şeytan + soluk atta Ölüm; Ölüm'ün çürüyen leşi kum saati tutar (memento mori); tepede şehir; binici yaratıklara bakmadan dosdoğru ilerler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Binici tehditleri küçümser gibi görünür → sıklıkla cesaret sembolü olarak görülür; zırh + dev at + meşe yaprakları inancın direnci; tepedeki şehir Cennet Krallığı'na dünyevi yolculuk (yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C007",
+   "ifade": "Üç Meisterstiche: Knight (1513), St Jerome in His Study (1514), Melencolia I (1514); hepsi aynı boy; üçünde kafatası nesnesi + köpek + kum saati.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Gotik üslup; formlar karışır; at iç içe eğriler; şövalye çenesi miğfer çizgisine örülü; dallar/koşum/saç karmaşası; Stites \"değişen formlar dünyasında somut fikir\"; adam dosdoğru bakar, dikkat dağıtmaz.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "At geometrik biçimlerle → Leonardo + Rönesans doğa bilimleri/anatomi ilgisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Erasmus Enchiridion militis Christiani (Hristiyan Askerin Elkitabı); Ephesians 6:13-17 \"Tanrı'nın tüm zırhı\"; Psalm 23 \"ölüm gölgesi vadisi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Panofsky (1969): Erasmus Elkitabı'ndan esinlenmiş (Dürer'in müstakbel dostu); üç düşman beden/Şeytan/dünya; köpek = Tanrı'ya sadakat. Kaynak \"some art historians\" der; baskın ama tek olmayan yorum.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İmparator Maximilian hizmetindeyken yaptı; sipariş değil; açık politik mesaj yok; Orta Çağ ahlakı; Gotik imgeler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Vasari: \"öyle mükemmel birkaç levha ki daha iyisi yapılamaz\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Alımlama: genişçe kopyalandı (Jan Wierix 1563 kopyası); Alman yazarlara etki; Nietzsche 1870 Wagner'e hediye (\"brave future\"), BT 1872 pesimizm (Woodward); Mann/Bertram WWI sonrası; Luther hayranlığı (Snyder); Nazi Rosenberg 1927 mitingi + Nürnberg 1933 Hitler'e baskı (Brockmann, Dennis).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Önemli koleksiyonlu çoğu print room'da nüsha var; çoklu müze (Met/NGA/BM vb.).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Bibliyografya refs: Panofsky (1969); Stites; Lunday; Vasari; Getlein; Karling; Meyer; Thausing; Woodward; Bertram; Shapiro; Brockmann; Dennis — özgün metinlere erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Albrecht Dürer 1471–1528 (WD yardımcı; yaygın kabul).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Hristiyan inancı + hümanizm idealleri alegorisi (miles Christianus) (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Cesaret/inancın direnci ↔ ölümlülük: varoluşsal okuma (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Anlam tartışması (akademik yorumlar): miles Christianus/Erasmus (Panofsky) ↔ dört mizaç/sanguineus (Thausing) ↔ Raubritter/soyguncu şövalye (Karling 1970, Ursula Meyer) ↔ eskimiş/teslimiyetçi şövalye (Getlein). Alımlama (Nietzsche/Nazi) ayrı katmandır (C014/C026).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C021",
+   "ifade": "Met web koleksiyon sayfası bu oturumda 429 (erişilemedi); birincil künye Met Collection API objects/336223 ile doğrulandı (C003 A). Web sayfası küratöryel metni insan editör teyidi bekler.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel kamu malı (Dürer ö.1528); Commons PD; geçici kopya .qwen/tmp/parti1/Q1755464/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "\"S\" yazıtının anlamı tartışmalı: enwiki \"Salus/in the year of grace\" okumasını verir; Thausing dört mizaç döngüsünde \"sanguineus\" okur; kesin değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Karşı okumalar (enwiki satır içi kaynaklı historiografi): Thausing dört mizaç/sanguineus (\"S\" buradan); Getlein \"obsolescence\"/teslimiyetçi şövalye; Karling (1970) + Ursula Meyer \"Raubritter\" (soyguncu şövalye; mızrakta tilki kuyruğu = Physiologus açgözlülük/kurnazlık/hainlik; Hristiyan simge yokluğu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Nietzsche, Die Geburt der Tragödie (1872) §20 (birincil metin, Gutenberg #7206): şövalye Schopenhauer'un umutsuz ama hakikat arayan tutumunun simgesi — \"Ein solcher Dürerscher Ritter war unser Schopenhauer: ihm fehlte jede Hoffnung, aber er wollte die Wahrheit.\" Basit \"pesimizm örneği\" indirgemesi nüansı bozar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Knight, Death and the Devil — satır içi kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Knight,_Death_and_the_Devil",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs özgün metinlerine erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q1755464 + Q5580 (Dürer)",
+   "url": "https://www.wikidata.org/wiki/Q1755464",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Albrecht Dürer, Knight, Death and Devil, 1513, NGA 6637.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Knight,_Death_and_Devil,_1513,_NGA_6637.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K4",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "Collection API objects/336223 — Knight, Death, and the Devil; 43.106.2; levha 24.3×18.8, kâğıt 25×19.6; 1513; engraving",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/336223",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (API); web sayfası search/336223 429",
+   "tur": "birincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Project Gutenberg",
+   "belge": "Nietzsche, Die Geburt der Tragödie §20 (#7206) — Dürer şövalyesi / Schopenhauer",
+   "url": "https://www.gutenberg.org/cache/epub/7206/pg7206.txt",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; birincil metin okundu",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Melencolia I",
+   "sanatci": "Albrecht Dürer",
+   "gerekce": "Aynı Meisterstiche üçlüsü; melankoli ↔ cesaret; ortak semboller.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "eser": "St Jerome in His Study",
+   "sanatci": "Albrecht Dürer",
+   "gerekce": "Üçlünün çalışma/tevazu teması (1514).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Parti 1 düzeltme: Met birincil künye API objects/336223 (43.106.2) ile doğrulandı (C003 A); yanlış nesne 336420 düzeltildi. Karşıt okumalar (Thausing/Karling-Meyer/Getlein) enwiki satır içi kaynaklı eklendi (C025); Nietzsche GT §20 birincil metin (K5, C026 A). Anlam tartışması D, alımlama ayrı. Görsel incelenemedi (E); Met web 429 (E). Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih 1513 (Met birincil künye + enwiki); tablet \"S. 1513\"; S anlamı tartışmalı (Salus ↔ sanguineus, C024).",
+  "Boyut: Met 43.106.2 levha 24.3×18.8, kâğıt 25×19.6 (API objects/336223, A); nüsha farkları (24.5×19; 24.7×18.9; WD 24.8×19) levha/kâğıt kaynaklı.",
+  "Önceki yanlış Met bağlantısı (search/336420 = anonim İspanyol çizimi) düzeltildi → objects/336223 (43.106.2).",
+  "Anlam tartışması (Panofsky/Thausing/Karling-Meyer/Getlein) D; alımlama (Nietzsche/Nazi) ayrı katman.",
+  "Görsel teyit bu oturumda yapılamadı (C022); Met web 429 (C021) — insan editör zorunlu."
+ ]
+}

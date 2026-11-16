@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanat-atlasi.local/semalar/MADDE_SEMASI.json",
+  "title": "Resim Ansiklopedisi — Madde Şeması (v1.0, 2026-11-15)",
+  "description": "Dört ansiklopedinin ortak madde şeması. Kanıt kayıtları ayrı dosyada tutulur (KANIT_SEMASI.json). Qwen kendi maddesine YAYIN_ONAYLI veremez; doğrulayıcı reddeder.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "slug", "turkce_ad", "ozgun_ad", "alternatif_adlar",
+    "ansiklopedi_turu", "kategori", "alt_kategori",
+    "kisa_tanim", "ayrintili_aciklama",
+    "tarihsel_baglam", "kulturel_baglam", "resim_sanatiyla_iliskisi",
+    "dogrulanmis_resim_ornekleri", "ilgili_maddeler",
+    "claims", "kaynaklar", "akademik_tartismalar",
+    "dogrulama_durumu", "yayin_durumu", "son_guncelleme"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "turkce_ad": { "type": "string", "minLength": 2 },
+    "ozgun_ad": { "type": "string" },
+    "alternatif_adlar": { "type": "array", "items": { "type": "string" } },
+    "ansiklopedi_turu": { "enum": ["IKONOGRAFI", "MITOLOJI", "RESIM_TEKNIGI", "TARIHSEL_NESNE"] },
+    "kategori": { "type": "string", "minLength": 3 },
+    "alt_kategori": { "type": "string", "minLength": 2 },
+    "kisa_tanim": {
+      "type": "string", "minLength": 150, "maxLength": 1200,
+      "description": "Yaklaşık 40–80 kelimelik kısa tanım. Olgusal cümleler [C###] etiketi taşır."
+    },
+    "ayrintili_aciklama": {
+      "type": "string", "minLength": 800,
+      "description": "Uzunluk kanıt miktarına göre belirlenir; kelime hedefi için bilgi üretilmez. Olgusal cümleler [C###] etiketi taşır."
+    },
+    "tarihsel_baglam": { "type": "string" },
+    "kulturel_baglam": { "type": "string" },
+    "resim_sanatiyla_iliskisi": {
+      "type": "string", "minLength": 100,
+      "description": "Maddenin resim sanatıyla anlamlı bağlantısı; boş geçilemez (kapsam kuralı)."
+    },
+    "dogrulanmis_resim_ornekleri": {
+      "type": "array", "minItems": 2,
+      "items": { "$ref": "#/$defs/resimOrnegi" }
+    },
+    "ilgili_maddeler": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}$" }
+    },
+    "claims": {
+      "type": "array", "minItems": 5,
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "kaynaklar": {
+      "type": "array", "minItems": 2,
+      "items": { "$ref": "#/$defs/kaynak" }
+    },
+    "akademik_tartismalar": {
+      "type": "string",
+      "description": "İhtilaflar, karşıt yorumlar, açık sorular. CELISKILI iddia varsa boş olamaz."
+    },
+    "dogrulama_durumu": { "$ref": "#/$defs/dogrulamaOzeti" },
+    "yayin_durumu": { "enum": ["TASLAK", "BAGIMSIZ_DENETIM_BEKLIYOR", "YAYIN_ONAYLI"] },
+    "son_guncelleme": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+    "uretim_notu": { "type": "string" }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "iddia", "iddia_turu", "kaynak_ids", "dogrulama_durumu"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^C[0-9]{3}$" },
+        "iddia": { "type": "string", "minLength": 15 },
+        "iddia_turu": { "enum": ["OLGU", "TARIH", "TEKNIK_TANIM", "YORUM", "HIPOTEZ", "GELENEKSEL_ANLATI"] },
+        "kaynak_ids": {
+          "type": "array", "minItems": 1,
+          "items": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}-K[0-9]{2}$" }
+        },
+        "dogrulama_durumu": { "enum": ["DOGRULANDI", "KISMEN_DESTEKLENIYOR", "DOGRULANAMADI", "CELISKILI", "HATALI"] }
+      }
+    },
+    "kaynak": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kaynak_id", "kurum_yazar", "baslik", "kaynak_turu", "hiyerarsi_seviyesi", "erisim_durumu", "erisim_tarihi"],
+      "properties": {
+        "kaynak_id": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}-K[0-9]{2}$" },
+        "kurum_yazar": { "type": "string", "minLength": 2 },
+        "baslik": { "type": "string", "minLength": 2 },
+        "url": { "type": "string", "format": "uri" },
+        "kunye": { "type": "string", "description": "Erişilemeyen basılı kaynak için bibliyografik künye; 'metnine erişilmedi' notuyla." },
+        "kaynak_turu": { "enum": ["BIRINCIL", "IKINCIL", "YARDIMCI", "BIBLIYOGRAFIK"] },
+        "hiyerarsi_seviyesi": { "enum": [1, 2, 3, 4, 5, 6] },
+        "erisim_durumu": { "enum": ["ERISILDI_OKUNDU", "WAYBACK_OKUNDU", "ERISILDI_KISMEN", "JS_KABUGU", "ENGELLI", "ERISILEMEDI"] },
+        "erisim_tarihi": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+        "arsiv_tarihi": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$", "description": "WAYBACK_OKUNDU ise zorunlu (doğrulayıcı denetler)." },
+        "http_kod": { "type": "integer" },
+        "notlar": { "type": "string" }
+      }
+    },
+    "resimOrnegi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sanatci", "eser", "tarih", "koleksiyon", "kaynak_id", "baglam"],
+      "properties": {
+        "sanatci": { "type": "string", "minLength": 2 },
+        "eser": { "type": "string", "minLength": 2 },
+        "tarih": { "type": "string", "minLength": 1, "description": "Kaynaktaki ihtiyat ifade edilerek: 'c. 1665', '1600–1610' vb." },
+        "koleksiyon": { "type": "string", "minLength": 2 },
+        "envanter_no": { "type": "string" },
+        "kaynak_id": { "type": "string", "pattern": "^(IKO|MIT|TEK|NES)-[0-9]{3}-K[0-9]{2}$" },
+        "baglam": { "type": "string", "minLength": 10, "description": "Örneğin madde konusuyla ilişkisi (ikonografik unsur/teknik/nesne)." },
+        "versiyon_notu": { "type": "string" }
+      }
+    },
+    "dogrulamaOzeti": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dogrulandi", "kismen_destekleniyor", "dogrulanamadi", "celiskili", "hatali"],
+      "properties": {
+        "dogrulandi": { "type": "integer", "minimum": 0 },
+        "kismen_destekleniyor": { "type": "integer", "minimum": 0 },
+        "dogrulanamadi": { "type": "integer", "minimum": 0 },
+        "celiskili": { "type": "integer", "minimum": 0 },
+        "hatali": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

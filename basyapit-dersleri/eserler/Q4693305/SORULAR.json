@@ -1,0 +1,550 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q4693305",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Francisco de Zurbarán"
+    },
+    {
+     "harf": "B",
+     "metin": "Diego Velázquez"
+    },
+    {
+     "harf": "C",
+     "metin": "Jusepe de Ribera"
+    },
+    {
+     "harf": "D",
+     "metin": "El Greco"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: Francisco de Zurbarán (1598–1664).",
+   "yanlis_gerekceleri": {
+    "B": "Velázquez aynı Sevilla çevresi ve kuşaktandır ama bu eserin sanatçısı değildir; Prado Zurbarán kaydeder.",
+    "C": "Ribera İspanyol Barok ressamıdır ama farklı bir sanatçıdır; eser Zurbarán'ındır.",
+    "D": "El Greco önceki kuşaktandır; eser 17. yy Zurbarán'ına aittir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Prado'nun güncel İngilizce katalog başlığı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "A lamb"
+    },
+    {
+     "harf": "B",
+     "metin": "Agnus Dei"
+    },
+    {
+     "harf": "C",
+     "metin": "The Lamb of God"
+    },
+    {
+     "harf": "D",
+     "metin": "Carnero pequeño"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: güncel EN başlığı \"A lamb\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Agnus Dei\" güncel İspanyolca başlıktır, İngilizce değil.",
+    "C": "\"The Lamb of God\" 2014 eski galeri başlığının parçasıdır, güncel EN adı değil.",
+    "D": "\"Carnero pequeño\" 1986 envanter başlığıdır, güncel katalog adı değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Güncel Prado envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "P007293"
+    },
+    {
+     "harf": "B",
+     "metin": "2168"
+    },
+    {
+     "harf": "C",
+     "metin": "105"
+    },
+    {
+     "harf": "D",
+     "metin": "3503"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: Número de catálogo P007293.",
+   "yanlis_gerekceleri": {
+    "B": "2168, Nuevas Adquisiciones envanter numarasıdır; güncel katalog numarası değil.",
+    "C": "105, Delenda catálogo raisonné numarasıdır; Prado envanteri değil.",
+    "D": "3503/1, Junta de Incautación etiketi numarasıdır; envanter değil."
+   },
+   "kanit": [
+    "C005",
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin tekniği ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: Oil on canvas / Óleo sobre lienzo.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; Prado eseri tuval üzerine yağlıboya kaydeder.",
+    "C": "Tempera pano farklı bir teknik/destektir; eser yağlıboya tuvaldir.",
+    "D": "Suluboya kâğıt bu eserin malzemesi değildir; kaynak óleo sobre lienzo der."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Prado betimine göre kuzu kaç aylıktır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "8–12 aylık bir merino"
+    },
+    {
+     "harf": "B",
+     "metin": "1–2 aylık"
+    },
+    {
+     "harf": "C",
+     "metin": "2–3 yaşında"
+    },
+    {
+     "harf": "D",
+     "metin": "5 yaşında"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: \"a merino lamb between eight and twelve months old\".",
+   "yanlis_gerekceleri": {
+    "B": "1–2 ay Prado'nun belirttiği aralık değildir; kaynak 8–12 ay der.",
+    "C": "2–3 yaş kaynak betimiyle uyuşmaz; kuzu 8–12 aylıktır.",
+    "D": "5 yaş kaynakta yoktur; Prado 8–12 aylık merino der."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Prado versiyonunda hale (nimbo) ve yazıt durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İkisi de yoktur"
+    },
+    {
+     "harf": "B",
+     "metin": "Hale var, yazıt yok"
+    },
+    {
+     "harf": "C",
+     "metin": "Yazıt var, hale yok"
+    },
+    {
+     "harf": "D",
+     "metin": "İkisi de vardır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"Otras, como ésta, carecen de semejantes atributos\" — Prado'da hale ve yazıt yok.",
+   "yanlis_gerekceleri": {
+    "B": "Prado'da hale yoktur; hale San Diego/San Fernando versiyonlarında görülür.",
+    "C": "Prado'da yazıt yoktur; \"TANQUAM AGNUS\" San Diego versiyonundadır.",
+    "D": "Prado versiyonunda ikisi de yoktur; bunlar diğer versiyonlara özgüdür."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Vaftizci Yahya'nın İsa için kullandığı \"Tanrı'nın Kuzusu\" unvanı hangi ayette geçer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yuhanna 1:29"
+    },
+    {
+     "harf": "B",
+     "metin": "Yeşaya 53:7"
+    },
+    {
+     "harf": "C",
+     "metin": "1 Petrus 1:19"
+    },
+    {
+     "harf": "D",
+     "metin": "Elçilerin İşleri 8:32"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S11: John 1:29, Vaftizci Yahya İsa'yı \"Lamb of God\" olarak adlandırır.",
+   "yanlis_gerekceleri": {
+    "B": "Yeşaya 53:7 acı çeken Mesih kehanetidir; unvanın doğrudan kaynağı Yuhanna 1:29'dur.",
+    "C": "1 Petrus 1:19 Fısıh kuzusu benzetmesidir; Vaftizci Yahya'nın unvanı değil.",
+    "D": "Elçilerin İşleri 8:32 San Diego versiyonunun yazıtıdır; Prado'da bu yazıt yoktur."
+   },
+   "kanit": [
+    "C021",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Met 1987 kataloğundaki Agnus Dei girişi (cat. 52) hangi versiyondur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "San Diego"
+    },
+    {
+     "harf": "B",
+     "metin": "Prado"
+    },
+    {
+     "harf": "C",
+     "metin": "Plandiura"
+    },
+    {
+     "harf": "D",
+     "metin": "San Fernando"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11: cat. 52 San Diego Museum of Art, Putnam armağanı; Prado katalog girişi değildir.",
+   "yanlis_gerekceleri": {
+    "B": "Prado versiyonu katalog girişi değildir; tartışma metninde Socorro kuzusu olarak anılır.",
+    "C": "Plandiura farklı bir versiyondur (cat. 55); Met cat. 52 San Diego'dur.",
+    "D": "San Fernando farklı bir versiyondur (cat. 149); Met cat. 52 San Diego'dur."
+   },
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin Prado müzesine giriş tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 Nisan 1987"
+    },
+    {
+     "harf": "B",
+     "metin": "Şubat 1986"
+    },
+    {
+     "harf": "C",
+     "metin": "1856"
+    },
+    {
+     "harf": "D",
+     "metin": "1724"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: \"Ingresado en el museo el 1-IV-1987\"; Entry date 1987.",
+   "yanlis_gerekceleri": {
+    "B": "Şubat 1986 Durán müzayedesinde edinme tarihidir; müzeye giriş değil.",
+    "C": "1856, Nuevas Adquisiciones envanterinin başlangıç yılıdır; bu eserin girişi değil.",
+    "D": "1724, Palomino'nun anecdote'u yazdığı yıldır; müze girişi değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Prado, bu versiyonu diğerleri arasında nasıl değerlendirir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "En üstün/kaliteli kabul edilir"
+    },
+    {
+     "harf": "B",
+     "metin": "En eski versiyondur"
+    },
+    {
+     "harf": "C",
+     "metin": "En büyük boyutludur"
+    },
+    {
+     "harf": "D",
+     "metin": "İmzalı tek versiyondur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: \"considered the finest of the five\" / \"se considera la de mayor calidad\".",
+   "yanlis_gerekceleri": {
+    "B": "En eski versiyon 1631 tarihli GMG örneğidir; Prado imzasız/tarihsizdir.",
+    "C": "En büyük boyutlu versiyon GMG (84×116) olup Prado (37,3×62) değildir.",
+    "D": "Prado imzasızdır; imzalı versiyonlar GMG (1631), Plandiura (1632), San Fernando (1639)'dur."
+   },
+   "kanit": [
+    "C011",
+    "C023",
+    "C024"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Museo del Prado koleksiyonundadır (P007293).",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S2): Prado, envanter P007293.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Prado versiyonunda kuzunun başında hale ve Latince yazıt vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış (S2): Prado'da ikisi de yoktur; hale/yazıt San Diego ve San Fernando versiyonlarındadır.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser imzalı ve tarihlidir; kesin yılı 1635'tir.",
+   "dogru": false,
+   "aciklama": "Yanlış (S1/S2): imzasız/tarihsizdir; 1635–1640 aralığı müze tahminidir.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Met 1987 kataloğundaki Agnus Dei girişi (cat. 52) Prado versiyonudur.",
+   "dogru": false,
+   "aciklama": "Yanlış (S11): cat. 52 San Diego versiyonudur; Prado katalog girişi değil, Socorro kuzusu olarak anılır.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Zurbarán'ın bu konuyu işlediği başka versiyonlar bilinir; üçü 1631, 1632, 1639 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S2): beş başka versiyon; üçü 1631, 1632, 1639 tarihli.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Başlık/boyut/konum ihtilaflarını (D1/D2/D3) kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "A lamb ↔ Agnus Dei sürüm farkı",
+    "37,3 ↔ 38 ↔ 37,5 cm",
+    "Madrid Sala 010A ↔ Londra NG",
+    "canlı 403 → bugünkü durum doğrulanamadı"
+   ],
+   "kanit": [
+    "C033",
+    "C034",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Yüzey betimindeki değişimi (gri masa ↔ denizlik ↔ taş seki) ve data uyuşmazlığını tartışın.",
+   "beklenen_ogeler": [
+    "mesa gris / gray table (güncel)",
+    "windowsill (2014)",
+    "taş malzemesi desteksiz",
+    "WD P180 table"
+   ],
+   "kanit": [
+    "C036",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Adlandırma tartışmasını (Delenda ↔ Portús) ve frwiki hale-yazıt karışıklığını analiz edin.",
+   "beklenen_ogeler": [
+    "carneros con las patas atadas",
+    "boynuz argümanı",
+    "çoğunluk Agnus Dei yorumu",
+    "frwiki versiyon karışıklığı"
+   ],
+   "kanit": [
+    "C042",
+    "C025",
+    "C037"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İkonografik zinciri (Yeşaya 53:7 → Yuhanna 1:29 → 1 Petrus 1:19; 692 konsili; León; Carducho) açıklayın.",
+   "beklenen_ogeler": [
+    "Fısıh kuzusu (1 Petrus)",
+    "Tanrı'nın Kuzusu (Yuhanna)",
+    "acı çeken Mesih (Yeşaya)",
+    "692 konsili",
+    "León 1595",
+    "Carducho 1633"
+   ],
+   "kanit": [
+    "C030",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Versiyon sayısı (D6), 1631 versiyonunun yeri (E10) ve Met kataloğunun Prado için doğrudan künye kaynağı olamayacağını (D8) değerlendirin.",
+   "beklenen_ogeler": [
+    "6 ↔ 7 versiyon",
+    "GMG İsviçre ↔ Madrid private",
+    "cat. 52 = San Diego",
+    "Prado Socorro kuzusu olarak anılır"
+   ],
+   "kanit": [
+    "C038",
+    "C047",
+    "C040"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kuzunun bağlı ayaklarını ve kurban duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado betimi: merino kuzu, ayaklar kordonla bağlı, kurban duruşu.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Koyu fonu ve gri masayı fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado: \"mesa gris\" / \"gray table\".",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Prado versiyonunda hale ve yazıt olup olmadığını kontrol edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado'da ikisi de yok; diğer versiyonlarda var.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yönlendirilmiş ışığı ve geniş gölge alanlarını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado: \"calculated and directed light, broad areas of shadow\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kuzunun yün dokusunu ve hacim aktarımını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado: doku aktarımında titiz teknik, eşsiz kapasite.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Zurbarán; Agnus Dei / A lamb; y. 1635–1640; yağlıboya tuval; 37,3×62; Prado P007293.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + ikonografi?",
+   "arka": "8–12 aylık merino kuzu, canlı, bağlı; Agnus Dei = Yuhanna 1:29; Yeşaya 53:7 + 1 Petrus 1:19 zinciri.",
+   "kanit": [
+    "C014",
+    "C021",
+    "C030"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Prado versiyonunun özelliği?",
+   "arka": "Hale/yazıt yok; en üstün kabul edilir; dini resim–bodegón sınırında.",
+   "kanit": [
+    "C018",
+    "C011",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Edinme + izler?",
+   "arka": "Socorro → Durán Şubat 1986 (no 200, lot 47) derecho de tanteo 26.400.000 pts → giriş 1-IV-1987; Ferdinand VII mührü; Junta 3503/1.",
+   "kanit": [
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Met 1987 kataloğu?",
+   "arka": "cat. 52 = San Diego (ca. 1636–40, TANQUAM AGNUS, Putnam); Prado katalog girişi değil, Socorro kuzusu olarak anılır.",
+   "kanit": [
+    "C029",
+    "C032"
+   ]
+  }
+ ]
+}

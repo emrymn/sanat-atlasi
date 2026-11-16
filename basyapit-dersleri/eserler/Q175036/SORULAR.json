@@ -1,0 +1,559 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q175036",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Guernica bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museo Nacional Centro de Arte Reina Sofía, Madrid"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "C",
+     "metin": "Museum of Modern Art, New York"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 birincil kayıt: 'Expuesta en Sala 205.10'; eser 1992'den beri Reina Sofía'da (C006/C007).",
+   "yanlis_gerekceleri": {
+    "B": "Prado/Casón del Buen Retiro, eserin 1981–1992 arasındaki İspanya durağıydı; 1992'de Reina Sofía'ya taşındı; bugünkü yer değil.",
+    "C": "MoMA, eserin II. Dünya Savaşı yıllarından 1981'e kadarki emanetçisiydi; eser bugün New York'ta değil Madrid'de.",
+    "D": "Louvre eserin provenansında yer almaz; tablo Paris'te yapıldı ama hiç Louvre'a girmedi."
+   },
+   "kanit": [
+    "C006",
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Reina Sofía kaydına göre eserin kayıt numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "DE00050"
+    },
+    {
+     "harf": "B",
+     "metin": "DE00500"
+    },
+    {
+     "harf": "C",
+     "metin": "P00050"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1937"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'Número de registro DE00050'; S5 P217 aynı değeri verir (C005).",
+   "yanlis_gerekceleri": {
+    "B": "DE00500, DE00050'nin yanlış yazımıdır; müze kaydı DE00050 verir.",
+    "C": "P00050 bu eserin kayıt numarası değildir; Reina Sofía kaydı DE00050'dir.",
+    "D": "INV 1937 biçiminde bir kayıt kaynaklarda geçmez; kayıt numarası yıl içermez, DE00050'dir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil müze kaydına göre Guernica'nın tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya / tuval (Óleo sobre lienzo)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera / tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap pano üzerine yağlıboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'Técnica Óleo sobre lienzo'; S5 P186 oil paint + canvas (C003).",
+   "yanlis_gerekceleri": {
+    "B": "itwiki infobox'ı 'Tempera su tela' der ama bu birincil kayıtla çelişir; müze 'Óleo sobre lienzo' kaydeder (C032 tartışma notu).",
+    "C": "Fresk duvar üzerine yapılır; Guernica tuval üzerinedir ve taşınabilir bir tablodur.",
+    "D": "Destek ahşap değil tuvaldir; S1 'lienzo' (tuval) der."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Reina Sofía birincil kaydının verdiği boyut hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "349,3 × 776,6 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "349 × 776 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "349,3 × 776,5 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "350 × 780 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'Dimensiones 349,3 x 776,6 cm' (C004).",
+   "yanlis_gerekceleri": {
+    "B": "349 × 776, Wikidata ve dosya açıklamalarındaki yuvarlanmış değerlerdir; birincil kayıt ondalıklıdır.",
+    "C": "776,5 enwiki infobox değeridir; müze 776,6 kaydeder (0,1 cm fark).",
+    "D": "350 × 780 yaklaşık metre karşılığıdır (3,5 × 7,8 m); kesin kayıt değildir."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Guernica hangi bağlam için sipariş edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1937 Paris Uluslararası Sergisi İspanyol Pavyonu (Cumhuriyet hükümeti)"
+    },
+    {
+     "harf": "B",
+     "metin": "1937 Münih Büyük Alman Sanat Sergisi"
+    },
+    {
+     "harf": "C",
+     "metin": "MoMA'nın 1939 retrospektifi"
+    },
+    {
+     "harf": "D",
+     "metin": "UN Güvenlik Konseyi salonu"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'nació para formar parte del Pabellón Español en la Exposición Internacional de París, de 1937'; S2 siparişi doğrular (C008).",
+   "yanlis_gerekceleri": {
+    "B": "Münih sergisi Nazi Almanyası'nın resmî sanat gösterisiydi; Guernica Cumhuriyet siparişiydi.",
+    "C": "MoMA retrospektifi (1939–40) sipariş değil, eserin sonradan katıldığı bir sergiydi.",
+    "D": "UN'deki, eserin tam boy halı kopyasıdır (1985 ödünç); orijinal için sipariş bağlamı değildir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eseri tetikleyen bombardıman hangi tarih ve faillerle gerçekleşti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "26 Nisan 1937; Alman (Legion Condor) ve İtalyan kuvvetleri"
+    },
+    {
+     "harf": "B",
+     "metin": "26 Nisan 1936; İspanyol milliyetçi kara birlikleri"
+    },
+    {
+     "harf": "C",
+     "metin": "1 Mayıs 1937; Fransız hava kuvvetleri"
+    },
+    {
+     "harf": "D",
+     "metin": "28 Nisan 1937; İngiliz donanması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: 'On 26 April 1937 ... the Basque city of Gernika was bombed by the German and Italian armies ... This event inspired Pablo Picasso to paint Guernica' (C009).",
+   "yanlis_gerekceleri": {
+    "B": "Tarih bir yıl kaydırılmış; bombardıman 26 Nisan 1937'de hava kuvvetlerince yapıldı.",
+    "C": "1 Mayıs, Picasso'nun Steer raporunu okuyup eskizlere başladığı tarihtir (S3); bombardıman tarihi değildir.",
+    "D": "28 Nisan, Steer'in raporunun The Times/NYT'de yayımlandığı tarihtir; bombardıman değil."
+   },
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Picasso'ya göre tablo İspanya'ya hangi koşulda dönebilecekti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İspanya'da demokratik özgürlükler yeniden tesis edilince"
+    },
+    {
+     "harf": "B",
+     "metin": "Satış bedeli iade edilince"
+    },
+    {
+     "harf": "C",
+     "metin": "Restorasyonu tamamlanınca"
+    },
+    {
+     "harf": "D",
+     "metin": "UNESCO karar verince"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 Observaciones: 1958 süresiz ödünç 'hasta que se restablecieran las libertades democráticas en España' (C016).",
+   "yanlis_gerekceleri": {
+    "B": "1937'deki ödeme masraf karşılığıydı; dönüş koşulu ödemeyle ilgili değildi.",
+    "C": "Restorasyon koşulu kaynaklarda geçmez; koşul siyasaldı (demokratik özgürlükler).",
+    "D": "UNESCO kararı değil, Picasso'nun kendi koşulu belirleyiciydi."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "S1 denemesine göre grisaille (siyah-beyaz-gri) ve yatay format neyi çağrıştırır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sinema ve basın fotoğrafı"
+    },
+    {
+     "harf": "B",
+     "metin": "Bizans mozaikleri"
+    },
+    {
+     "harf": "C",
+     "metin": "Japon ukiyo-e baskıları"
+    },
+    {
+     "harf": "D",
+     "metin": "Vitray pencereler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'El formato apaisado y el uso de la grisalla remite al cine y a la fotografía de prensa' (C012).",
+   "yanlis_gerekceleri": {
+    "B": "Mozaik benzetmesi S1'de yoktur; deneme sinema ve basın fotoğrafını adlandırır.",
+    "C": "Ukiyo-e etkisi bu kayıtta anılmaz; çağrışım alanı çağdaş basın imgeleridir.",
+    "D": "Vitray benzetmesi itwiki'nin jüt/destek anlatısında geçer (E düzeyi); S1'in grisaille yorumu değildir."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "S1'e göre Guernica'nın en doğrudan öncülü hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Minotauromaquia (1935, aguafuerte)"
+    },
+    {
+     "harf": "B",
+     "metin": "Franco'nun Düşü ve Yalanı (1937)"
+    },
+    {
+     "harf": "C",
+     "metin": "Ağlayan Kadın (1937)"
+    },
+    {
+     "harf": "D",
+     "metin": "The Charnel House (1944–48)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: 'la Minotauromaquia ... es, a la vez, el antecedente más directo de Guernica' (C015).",
+   "yanlis_gerekceleri": {
+    "B": "Aynı sergi bağlamında üretilen 1937 tarihli gravür dizisidir; S1'in 'en doğrudan öncül' adlandırması Minotauromaquia içindir.",
+    "C": "1937 tarihli ilgili bir Picasso eseridir ama S1'de öncül olarak adlandırılmaz.",
+    "D": "Picasso'nun sonraki savaş karşıtı tablosudur; Greenberg karşılaştırmasında anılır, öncül değildir."
+   },
+   "kanit": [
+    "C015",
+    "C062",
+    "C025"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "28 Şubat 1974'te esere ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tony Shafrazi kırmızı sprey boyayla 'KILL LIES ALL' yazdı; boya vernikli yüzeyden çıkarıldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Eser İspanya'ya geri gönderildi"
+    },
+    {
+     "harf": "C",
+     "metin": "UN'deki kopya mavi perdeyle örtüldü"
+    },
+    {
+     "harf": "D",
+     "metin": "Eser Reina Sofía'ya taşındı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 (Hoberman 2004 ref): Shafrazi kırmızı sprey boyayla 'KILL LIES ALL' yazdı; boya vernikli yüzeyden görece kolay çıkarıldı (C029).",
+   "yanlis_gerekceleri": {
+    "B": "İspanya'ya dönüş 1981'de gerçekleşti; 1974'te eser MoMA'daydı.",
+    "C": "Mavi perde olayı 5 Şubat 2003'te UN'deki halı kopyayla ilgilidir; orijinal tabloyla değil.",
+    "D": "Reina Sofía'ya taşınma 1992'dedir."
+   },
+   "kanit": [
+    "C029",
+    "C016",
+    "C030",
+    "C017"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Guernica, Cumhuriyet hükümetinin 1937 Paris Uluslararası Sergisi İspanyol Pavyonu siparişi olarak doğdu.",
+   "dogru": true,
+   "aciklama": "Doğru: S1 'nació para formar parte del Pabellón Español...'; S2 siparişi doğrular.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "itwiki infobox'ındaki 'Tempera su tela' ifadesi birincil müze kaydıyla uyumludur.",
+   "dogru": false,
+   "aciklama": "Yanlış: S1 'Óleo sobre lienzo' (yağlıboya/tuval) kaydeder; itwiki infobox'ı atıfsız ve hatalıdır (C032 tartışma).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Picasso, Guernica'daki boğa ve at için sabit sembolik anlamlar tanımladı.",
+   "dogru": false,
+   "aciklama": "Yanlış: Picasso 'bu bir boğadır, bu bir attır' diyerek sabit okumayı reddetti (S3, PBS arşiv ref).",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser 1981'de İspanya'ya döndü; 1992'den beri Reina Sofía'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru: S1 (1981 dönüş) + S2 (Casón del Buen Retiro → 1992 Reina Sofía).",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "1974'teki sprey boya saldırısında boya, eserin yüzeyinden çıkarılamadı.",
+   "dogru": false,
+   "aciklama": "Yanlış: S3, boyanın vernikli yüzeyden 'görece kolay' çıkarıldığını bildirir.",
+   "kanit": [
+    "C029"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "itwiki 'Tempera su tela' ↔ Reina Sofía 'Óleo sobre lienzo' çelişkisini kaynak hiyerarşisiyle çözün.",
+   "beklenen_ogeler": [
+    "birincil müze kaydı A düzeyi",
+    "itwiki infobox atıfsız/hatalı",
+    "yağlıboya/tuval esastır",
+    "mat ev boyası ayrı teknik ayrıntı (Richardson, B)"
+   ],
+   "kanit": [
+    "C032",
+    "C003",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Ödeme miktarı ihtilafını değerlendirin: 150.000 frank ↔ 300.000 peseta; neden tek rakam kesinleştirilmez?",
+   "beklenen_ogeler": [
+    "Max Aub 28 Mayıs 1937 notu",
+    "Van Hensbergen 2005 (B)",
+    "Focus.it 300.000 peseta",
+    "50.000 frank ön ödeme",
+    "sembolik masraf karşılığı",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C035",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Boğa/at/lamba/ampul okumalarını yorum olarak tartışın; Picasso'nun sabit anlam reddi ne anlama gelir?",
+   "beklenen_ogeler": [
+    "tek anlam dayatma yok",
+    "boğa: vahşet/İspanya okumaları",
+    "at: acı çeken halk/İspanya",
+    "ampul: güneş (Ray) ↔ umut (itwiki)",
+    "Picasso: nesneleri oldukları şeyler olarak boyarım"
+   ],
+   "kanit": [
+    "C040",
+    "C050",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Bombardıman süresi: Steer'in çağdaş tanıklığı (3 saat 15 dk) ↔ sonraki historiografi (~2 saat). Hangisi, neden?",
+   "beklenen_ogeler": [
+    "Steer 28 Nisan 1937 raporu",
+    "Ray 2006 ~2 saat",
+    "çağdaş tanıklık ↔ historiografi ayrımı",
+    "kesinleştirilmez, ikisi de kaynaklı verilir"
+   ],
+   "kanit": [
+    "C037",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Wikidata P18 görseli neden orijinal değildir? Telif/adil kullanım çerçevesinde ders görseli nasıl sunulur?",
+   "beklenen_ogeler": [
+    "P18 = Gernika seramik reproduksiyon fotoğrafı",
+    "Commons'ta orijinalin serbest dosyası yok",
+    "enwiki non-free fair use",
+    "CC BY-SA yalnız fotoğrafı kapsar",
+    "görsel yeniden yayımlanmaz; URL+lisans+atıf",
+    "hukuki tavsiye değil"
+   ],
+   "kanit": [
+    "C052",
+    "C019"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Solda, ölü çocuğunu kucaklayıp haykıran anneyi ve üzerindeki boğayı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S1/Blunt envanteri: anne solda; boğa onun üzerinde.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Merkezdeki yaralı atı ve altındaki ölü askeri bulun; askerin sağ elindeki kırık kılıçla çiçeği arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S3 betimi: kırık kılıçtan çiçek büyür; sol avuçta stigma.",
+   "kanit": [
+    "C014",
+    "C054"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Atın başının üstündeki çıplak ampul ile sağ üstte pencereden uzatılan lambayı karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S3 betimi: ampul 'her şeyi gören göz' biçiminde; lamba kadının elinde.",
+   "kanit": [
+    "C055"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Piramidal kurguyu izleyin: soldan, sağda yanan ev önünde kollarını kaldıran kadına uzanan diyagonalleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S1: piramidal yapı tarih resmi geleneği; Blunt envanteri figürleri sıralar.",
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Grisaille paleti inceleyin: siyah-beyaz-grinin basın fotoğrafı çağrışımını ve dramatik etkisini tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S1: grisaille sinema ve basın fotoğrafını çağrıştırır.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Guernica künyesi?",
+   "arka": "Pablo Picasso; 1937 (1 Mayıs–4 Haziran, Paris); yağlıboya/tuval; 349,3 × 776,6 cm; Reina Sofía DE00050, Sala 205.10; giriş 1992.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş ve tetikleyici olay?",
+   "arka": "Cumhuriyet hükümeti siparişi, 1937 Paris Sergisi İspanyol Pavyonu; 26 Nisan 1937 Gernika bombardımanı (Alman Legion Condor + İtalyan); haber L'Humanité fotoğrafları.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenans zinciri?",
+   "arka": "1937 devlet satın alma → MoMA emaneti (II. Dünya Savaşı) → 1958 süresiz ödünç (demokratik özgürlükler koşulu) → 1981 İspanya (Casón del Buen Retiro) → 1992 Reina Sofía.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Üslup ve öncül?",
+   "arka": "Geç Kübist + sürrealist; grisaille (sinema/basın fotoğrafı çağrışımı); piramidal tarih resmi (Rubens, Delacroix, David, Goya); en doğrudan öncül Minotauromaquia (1935).",
+   "kanit": [
+    "C012",
+    "C013",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Evrensellik ve sembol reddi?",
+   "arka": "Eskizler ve tablo belirli olaylara gönderme içermez; savaş barbarlığına karşı genel bildiri; Picasso: 'bu bir boğadır, bu bir attır' — sabit sembol okuması reddedildi.",
+   "kanit": [
+    "C011",
+    "C028"
+   ]
+  }
+ ]
+}

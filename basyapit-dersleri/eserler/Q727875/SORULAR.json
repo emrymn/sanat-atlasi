@@ -1,0 +1,543 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q727875",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tekniği?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: oil on canvas / dipinto.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir.",
+    "C": "Tempera pano değil; tuval.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, tuval."
+   },
+   "kanit": [
+    "C003",
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Arşiv katalog envanteri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "inv. 1890, 1437"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 1444"
+    },
+    {
+     "harf": "C",
+     "metin": "NG1314"
+    },
+    {
+     "harf": "D",
+     "metin": "GG_274"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: inv. 1890, 1437.",
+   "yanlis_gerekceleri": {
+    "B": "INV 1444 Metsys Louvre.",
+    "C": "NG1314 Holbein NG.",
+    "D": "GG_274 Correggio KHM."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Poz hangi eserden türer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giorgione Dresden Uyuyan Venüs"
+    },
+    {
+     "harf": "B",
+     "metin": "Michelangelo Âdem"
+    },
+    {
+     "harf": "C",
+     "metin": "Raphael Atina Okulu"
+    },
+    {
+     "harf": "D",
+     "metin": "Botticelli Venüs"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: pose derives from Giorgione Dresden Venus.",
+   "yanlis_gerekceleri": {
+    "B": "Michelangelo Âdem farklı poz.",
+    "C": "Atina Okulu fresco farklı.",
+    "D": "Botticelli Venüs ayakta farklı."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Figürün bakışı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İzleyiciye doğrudan bakar, utanmaz"
+    },
+    {
+     "harf": "B",
+     "metin": "Aşağı bakar"
+    },
+    {
+     "harf": "C",
+     "metin": "Uyur"
+    },
+    {
+     "harf": "D",
+     "metin": "Arkaya dönük"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: stares straight at viewer, not embarrassed.",
+   "yanlis_gerekceleri": {
+    "B": "Aşağı bakmaz; doğrudan.",
+    "C": "Uyumaz; uyanık.",
+    "D": "Arkaya dönük doğru yanıt değildir; doğru yanıt İzleyiciye doğrudan bakar, utanmaz."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Sağ elinde ne tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gül demeti"
+    },
+    {
+     "harf": "B",
+     "metin": "Elma"
+    },
+    {
+     "harf": "C",
+     "metin": "Ayna"
+    },
+    {
+     "harf": "D",
+     "metin": "Kitap"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: right hand posy of roses.",
+   "yanlis_gerekceleri": {
+    "B": "Elma Cranach Havva'da.",
+    "C": "Ayna Baldung/Metsys'te.",
+    "D": "Kitap Metsys'te."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Arka planda hizmetçiler ne yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cassone sandığında eşya karıştırır"
+    },
+    {
+     "harf": "B",
+     "metin": "Yemek pişirir"
+    },
+    {
+     "harf": "C",
+     "metin": "Müzik çalar"
+    },
+    {
+     "harf": "D",
+     "metin": "Uyur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: two maids rummaging cassone chest.",
+   "yanlis_gerekceleri": {
+    "B": "Yemek pişirme yok.",
+    "C": "Müzik yok.",
+    "D": "Uyku yok."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Satın alan (belgeli)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Guidobaldo II della Rovere"
+    },
+    {
+     "harf": "B",
+     "metin": "Ippolito de' Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Ludovico Sforza"
+    },
+    {
+     "harf": "D",
+     "metin": "Vittoria della Rovere"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Guidobaldo bought 1538 (letters).",
+   "yanlis_gerekceleri": {
+    "B": "Ippolito öldü, görmedi (hipotez sipariş).",
+    "C": "Sforza Leonardo patronu.",
+    "D": "Vittoria 1631 mirasçı, satın alan değil."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Hope'un okuması?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Alegorisiz saf nü (güzel çıplak, yatakta)"
+    },
+    {
+     "harf": "B",
+     "metin": "Courtesan portresi"
+    },
+    {
+     "harf": "C",
+     "metin": "Evlilik alegorisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Mitolojik Venüs"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Hope \"nothing other than beautiful nude … devoid allegorical\".",
+   "yanlis_gerekceleri": {
+    "B": "Courtesan karşıt okuma.",
+    "C": "Evlilik Goffen okuması.",
+    "D": "Mitolojik Venüs geleneksel ad ama Hope reddeder."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1631'de Firenze'ye kim getirdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vittoria della Rovere (miras)"
+    },
+    {
+     "harf": "B",
+     "metin": "Guidobaldo"
+    },
+    {
+     "harf": "C",
+     "metin": "Napoleon"
+    },
+    {
+     "harf": "D",
+     "metin": "Medici satın alma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: giunse 1631 con eredità Vittoria della Rovere.",
+   "yanlis_gerekceleri": {
+    "B": "Guidobaldo 1538 satın alan, 1631 değil.",
+    "C": "Napoleon yok.",
+    "D": "Medici satın alma değil; miras."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Etki hattı hangisi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ingres Odalisque / Goya Maja / Manet Olympia"
+    },
+    {
+     "harf": "B",
+     "metin": "Rembrandt / Vermeer / Hals"
+    },
+    {
+     "harf": "C",
+     "metin": "Monet / Renoir / Degas"
+    },
+    {
+     "harf": "D",
+     "metin": "Picasso / Braque / Gris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: Ingres/Goya/Manet dayanak.",
+   "yanlis_gerekceleri": {
+    "B": "Hollanda okul farklı hat.",
+    "C": "İzlenimcilik farklı hat.",
+    "D": "Kübizm farklı hat."
+   },
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser yağlıboya tuvaldir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Figür izleyiciye bakar ve çıplaklığından utanmaz.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Resim 1538'de satın alınınca hemen Urbino'ya gönderildi.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2/K3): satış sırasında resim bottega'daydı ve ancak aylar sonra Urbino'ya gitti.",
+   "kanit": [
+    "C003",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Vasari tanrıçadan çok ince kumaşları övmüştür.",
+   "dogru": true,
+   "aciklama": "Doğru (K3): \"certi panni sottili\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Köpek sembolizmi tüm akademisyenlerce kabul edilir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): Goffen savunur, Hale \"absurd\" bulur; bu bir tartışmadır (C017).",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Sipariş zincirini (Ippolito ↔ Guidobaldo) kanıt ağırlığıyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "Ippolito/Zaffetta spekülatif",
+    "Guidobaldo mektup belgeli",
+    "bottega 1534–38",
+    "iki aday D"
+   ],
+   "kanit": [
+    "C018",
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Üç yorumu (courtesan/evlilik/saf nü) çerçeve olarak yazın.",
+   "beklenen_ogeler": [
+    "Zaffetta courtesan",
+    "Goffen evlilik/üreme",
+    "Hope alegorisiz",
+    "erotik yük hemfikir"
+   ],
+   "kanit": [
+    "C016",
+    "C010",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Köpek sembolizmi tartışmasını (Goffen ↔ Hale) değerlendirin.",
+   "beklenen_ogeler": [
+    "Eleonora portresi aynı köpek",
+    "della Rovere/koca",
+    "Hale absurd",
+    "sembolizm sınırı"
+   ],
+   "kanit": [
+    "C017",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Bakış/agency gerilimini feminist ↔ formalist okumalarla tartışın.",
+   "beklenen_ogeler": [
+    "bakan özne",
+    "davet/objectification",
+    "male gaze",
+    "agency"
+   ],
+   "kanit": [
+    "C020",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Model tekrarının portre kimliğini nasıl zayıflattığını yazın.",
+   "beklenen_ogeler": [
+    "favorita riscontri yok",
+    "model ≥3 tuval",
+    "La Bella",
+    "tip ↔ portre"
+   ],
+   "kanit": [
+    "C009",
+    "C016"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Figürün izleyiciye bakan yüzünü ve gül demetini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: bakış doğrudan, utanmaz.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Yataktaki köpeği ve arka plandaki cassone hizmetçilerini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: köpek fidelity; hizmetçiler sandıkta.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Ön mekân (yatak) ile arka mekân (perdeli oda) ayrımını izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ikili mekân.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Ten ↔ örtü ↔ arka plan renk karşıtlarını fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: colore ustalığı.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Mahrem jestin konumunu ve gül demetiyle ilişkisini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: iki el iki odak.",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Venere di Urbino/Venus of Urbino; Titian; 1534 (satış 1538); oil on canvas; 119×165; Uffizi inv.1437; 1631 Vittoria della Rovere mirası.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C002"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Poz + bakış?",
+   "arka": "Giorgione Dresden Uyuyan Venüs'ten türer; iç mekân; izleyiciye bakar utanmaz; sağ el gül, öteki el mahrem.",
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sipariş zinciri?",
+   "arka": "Ippolito de' Medici/Zaffetta (hipotez, öldü görmedi) ↔ Guidobaldo II della Rovere (1538 belgeli satın alma, \"the nude woman\"); Giulia Varano evlilik modeli.",
+   "kanit": [
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Yorum bölünmesi?",
+   "arka": "Courtesan ↔ evlilik (Goffen cassone/jest/köpek) ↔ Hope saf nü; Wind hedonizm; köpek tartışmalı (Hale absurd).",
+   "kanit": [
+    "C010",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki + alımlama?",
+   "arka": "Ingres Odalisque/Goya Maja/Manet Olympia; Ingres kopya 1821; Verdi reproduksiyon; Vasari kumaş övgüsü; Milanesi favorita (riscontri yok).",
+   "kanit": [
+    "C013",
+    "C009"
+   ]
+  }
+ ]
+}

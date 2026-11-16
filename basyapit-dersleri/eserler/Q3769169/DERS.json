@@ -1,0 +1,856 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3769169",
+ "sanatci_id": "artemisia-gentileschi",
+ "baslik": "Holofernes'in Kafasını Kesen Judith",
+ "ozgun_baslik": "Judith Beheading Holofernes (Giuditta che decapita Oloferne)",
+ "kunye": {
+  "sanatci": "Artemisia Gentileschi",
+  "sanatci_yasam": "Roma 1593 – Napoli 1652/53 (Uffizi kaydı; data/sanatcilar.json 1656 der — veri notu)",
+  "tarih": "c. 1620",
+  "tarih_belirsizlik": "Uffizi \"1620 c.\"; WD P571 yıl hassasiyeti + P1480 circa; S7 \"1613–1621 arası\" varyantı (E002); data \"1620\" yalın (circa kaybı, E001)",
+  "teknik": "Yağlıboya, tuval (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 146.5,
+   "genislik": 108
+  },
+  "muze": "Uffizi Galleries (Galleria degli Uffizi), Floransa",
+  "envanter": "1890 n. 1567",
+  "edinim": "Cosimo II de' Medici siparişi (B); ödeme Galileo Galilei arabuluculuğuyla gecikmeli alındı (A); Pitti Sarayı İncil kahramanları koleksiyonuna dahil (B)",
+  "konum": "D29. Caravaggio and Artemisia",
+  "telif_durumu": "Eser kamu malı (WD P6216; ölüm 1652/53, 100+ yıl pma) — C seviye WD çıkarımı; uygulama görseli D004 lisans riski (fotoğraf CC BY-NC-SA 2.0); GAP alternatifi PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Giuditta_decapita_Oloferne_-_Google_Art_Project-Adjust.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project / Google Cultural Institute, asset oQF3gDEYNkutBA)",
+  "lisans": "Public domain (PD-Art). DİKKAT D004: uygulama görseli File:Judith Beheading Holofernes.jpg PD etiketli ama fotoğraf Permission CC BY-NC-SA 2.0 (Flickr) — NC riski; bu GAP dosyası PD alternatiftir; insan kararı bekler",
+  "dogrulama": {
+   "yontem": "metadata-only (3 dosya); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "GAP 2685×3301; Flickr 3727×4116; WGA 829×1009",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C050); GZ TASLAK; kompozisyon S2/S3/S4 metninden (\"kaynakların betimlediği\"); D001 oran çıkarımı metadata-only; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 407
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1354
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2633
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-sipariş-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-biyografi-ve-okuma-rejimleri",
+   "DERS_ILERI.md#6-etki-ve-alımlama"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-ikonografi-ve-emek-poetics"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-ve-emek-poetics"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-malzeme-ve-koruma"
+  ],
+  "7": [
+   "DERS_ORTA.md#7-felsefi-ve-estetik-analiz-yorum",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Uffizi birincil kaydıyla künyeyi (c. 1620, yağlıboya tuval, 1890 n. 1567, D29) doğrular; Napoli versiyonunu (Q2247406) ayırt eder.",
+  "D001 boyut ihtilafını ve kaynak hiyerarşisini yönetir; birincil ↔ WD/ikincil çelişkisini kesinleştirmez.",
+  "Judith Kitabı ikonografisini, chiaroscuro ve emek vurgusunu kaynak betimleriyle analiz eder.",
+  "Biyografik/otoportre okumasının tartışmalı yapısını (Garrard ↔ Pollock/Ciletti) ve belirsizlik işaretlerini korur.",
+  "D004 görsel lisans riskini ve eser tarihinin yer değiştirme episodlarını kronoloji belirsizliğiyle değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Chiaroscuro",
+   "tanim": "Işık-karanlık karşıtlığı; Caravaggio geleneğinde sert ışıklandırma (S3 \"chiaroscuro\"; data \"tenebrizm\" der — terminoloji notu).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Deuterokanonik",
+   "tanim": "Katolik kanonda yer alan, Protestan kanonda dışarıda bırakılan metinler; Judith Kitabı bu gruptadır.",
+   "kanit": [
+    "C035",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Judith Kitabı",
+   "tanim": "Bethulia kuşatmasını kurtaran Judith'in Holofernes'i öldürmesi; eserin konusu.",
+   "kanit": [
+    "C008",
+    "C034"
+   ]
+  },
+  {
+   "ad": "Varyasyon (version)",
+   "tanim": "Aynı konunun sanatçı tarafından yeniden ele alınması; Napoli (c. 1612–13) → Floransa (c. 1620).",
+   "kanit": [
+    "C023",
+    "C053"
+   ]
+  },
+  {
+   "ad": "PD-Art",
+   "tanim": "Eserin kamu malı olması ile fotoğrafın lisansının ayrı olması; D004'te Flickr fotoğrafı CC BY-NC-SA.",
+   "kanit": [
+    "C032",
+    "C052"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Q3769169 Uffizi/Florence versiyonudur; Napoli/Capodimonte ayrı eserdir (Q2247406).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Artemisia Gentileschi (Roma 1593 – Napoli 1652/53).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih \"1620 c.\" (circa korunur; WD yıl hassasiyeti precision 9 + P1480 circa).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Yağlıboya, tuval (Oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut 146.5 × 108 cm (birincil Uffizi kaydı; itwiki infobox 146,5×108).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter \"1890 n. 1567\" (WD P217 \"1567\" + P580 1890).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Sergileme yeri D29 \"Caravaggio and Artemisia\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Konu: Judith Kitabı; Judith, Holofernes'i başını keserek öldürür; Abra yardım eder; Uffizi \"kararlı ve güçlü Judith'in eliyle\" öldürme anını seçer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Roma'da, Floransa'daki yedi yılın ardından tamamlandı; Caravaggio yeniden incelendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Cosimo II de' Medici siparişi (S3 Garrard-2020; S4 rehber-2019; S2 ödeme anlaşması Cosimo II ile).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Ödeme gecikti; Galileo Galilei arabuluculuğuyla alındı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Cosimo II 1621'de, tablo tamamlandıktan kısa süre sonra öldü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Floransa'ya varışta \"naturalistic virility\" tepki çekti; Gallery'de sergilenme onuru reddedildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Floransa Desen Akademisi'ne kabul edilen ilk kadın (S2'de yıl yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Chiaroscuro + gerçekçilik; Caravaggio etkisi; Judith/Abra/Holofernes arası şiddetli gerilim.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kılıç dikey, kabzası haç biçimli (haça gönderme).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Abra genç, Judith'in aynası; kollar sıvalı, güçlü kollar, fiziksel emek; Abra sol kolu tutar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Ödeme 50 scudi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "\"Presumably\" Cosimo Napoli Judith'ini görüp eşi Maria Maddalena için varyasyon istedi (hipotez; belirsizlik korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "1700'lerin sonunda bir Grand Duchess tabloyu Uffizi'nin izole bir bölümüne taşıttı (vahşi betimi onaylamadı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1993 bombasında hasar; ardından restorasyon (E005: kaynak \"Pitti Palace\" der, link Via dei Georgofili; ifade belirsiz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Biyografik/otoportre okuması tartışmalı: Garrard (travma paralelliği, gendered defiance) ↔ Pollock/Ciletti (sürekli anım imgeyi sınırlar); itwiki \"kadın intikamı arzusu\"; S7 erken feminist \"görsel intikam\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Napoli versiyonu daha erken: c. 1612–1613, 158.8 × 125.5 cm, Capodimonte; Judith sağda, Abra arkadan; güçlü chiaroscuro.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Floransa versiyonu S7'de \"somewhere between 1613 and 1621\" diye tarihlenir (varyant).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Longhi (1916) ve Barthes okumaları itwiki'de aktarılır (atıf zinciri; özgün metinlere erişilmedi; Barthes kaynağı Menzio-2004).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Boyut 199 × 162.5 cm (WD/Commons/WGA zinciri; enwiki 6′6″×5′4″ ≈198.1×162.6 hesap).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S9",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Judith'in altın bileziğinde antik cameolar (itwiki atıfsız); data \"Artemis/Diana figürleri\" çekilen kaynaklarda yok → doğrulanmadı (E007).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "Eser bir zamanlar Caravaggio'ya atfedildi (yalnız S5 Flickr caption; müze/akademik zincir yok, E006).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "D001 BOYUT İHTİLAFI: 146.5×108 (Uffizi birincil + itwiki) ↔ 199×162.5 (WD/Commons/WGA + enwiki); çözülmedi; metadata oran çıkarımı (0.813/0.822 ≈ 0.817 ↔ 0.737) ikincili destekler ama görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "D002 VERSİYON BOYUT KIYASI: itwiki \"un po' più piccola\" (Napoli biraz daha küçük) ↔ S7 Napoli 158.8×125.5 > Floransa 146.5×108; itwiki kendi içinde/D001 ile tutarsız.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "D003 CARAVAGGIO KIYAS TARİHİ: S3 c. 1598–99 (Garrard-1989) ↔ S4 \"del 1602\" (atıfsız); data ~1599 (S3 tarafı).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "D004 GÖRSEL LİSANS: File:Judith Beheading Holofernes.jpg PD etiketi ↔ Permission fotoğraf CC BY-NC-SA 2.0 (Flickr, jean louis mazieres); \"License review needed\"; GAP dosyası PD; WGA PD.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "Uffizi sayfası Judith'in İncil sözünü başlığa taşır: \"The Lord has struck him down by the hand of a woman\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Judith Kitabı anlatısı: Bethulia kuşatması/teslim eşiği; Yahudi dul Judith; süslenip sahte ittifakla kamp; ziyafet; sarhoş Holofernes; kılıçla iki darbe; baş torbada Bethulia'ya; çatışma biter.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Judith Kitabı deuterokanonik; enwiki Judith 16:9 alıntısı (Garrard-1989 p.324): \"Her sandal ravished his eye … The sword passed through his neck.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Counter-Reformation bağlamı: 17. yy Barok; Protestan ikonoklazmı (Calvin/Luther); Trent Konsili görsel sanatları onayladı; heightened realism (Bailey-2012).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Judith konfesyonel simge: her iki konfesyonca benimsenip reddedildi; saflık/baştan çıkarma (Bal-2005); Katolik Reformu'nda ilahi erdem ↔ \"sapkın\" Holofernes (Garrard-2020, Barker-2022).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Orazio Gentileschi (baba) c. 1610 \"Judith and Her Maidservant with the Head of Holofernes\"; her ikisi gerilim dolu anları seçer (Garrard-1989).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Caravaggio \"Judith Beheading Holofernes\" (c. 1598–99; Palazzo Barberini) \"unprecedented realism\"; Artemisia üslubunu etkiledi (Garrard-1989).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Pitti Sarayı'nda İncil kahramanları koleksiyonuna dahil edildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Restorasyon sonrası yine çevresel konum; bugün Caravaggio dahil Barok ustalarıyla aynı mekân (Visit Uffizi); S2 D29 ile uyumlu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Biyografi: Roma 1593; Orazio (maniyerist) + Prudentia Montone'nin tek kızı; 1610 Susanna (ilk imzalı); Tassi (perspektif öğretmeni) tecavüzü; 1612 yazı dava; sibille; \"It's true…\"; Tassi suçlu, geçici sürgün (Garrard-1989/2020).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Otoportre pratiği: kendi figürü model; Catherine 1616; Allegory of Painting c. 1628; tür Caravaggio/Rembrandt ile popüler (Garrard-2020, Treves-2020).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "itwiki atıfsız biçimsel betim: üçgen düzen, gövde bükülüşü, sağ kol rotasyonu, koyu derin fon, kırmızı kadife/linen/drape velature, dantel/saçak; lead \"146×108\" ↔ infobox 146,5 (E009); \"daha özenli/sabırlı, görkemli/bütünleşik\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "Longhi 1916 (itwiki alıntı): \"Vermeer'e değer\" çarşaf beyazlıkları; sarı ipek elbise; \"donna terribile! Una donna ha dipinto tutto questo?\"; sadistik değil, \"impassibilità ferina\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Barthes (itwiki/Menzio-2004): iki kadın (İncil'de hizmetçi dışarıda); ortak kas çabası; toplumsal fark (padrona iğrenmiş/kararlı, serva sakin/ifadesiz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Akademi yılı: data \"1616\" der; S2 yıl vermez → bu brief'te doğrulanmadı (E008).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Tarih varyantları (E002): S7 \"1613–1621\"; S5/S9 EXIF \"from 1614 until 1620\"; S3 kategori \"1621 paintings\"; data \"1620\" yalın (E001 circa kaybı); c.1620 ile bağdaşır, aynı değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Yer değiştirme episodları uzlaştırılmadı (E004): S2 varış reddi ↔ S4 Pitti karanlık köşe ↔ S3 1700'ler sonu Grand Duchess; farklı olaylar olabilir, kronoloji net değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası); 3 dosya metadata only; GZ TASLAK; Flickr DateTimeOriginal 2015-01-07 (fotoğraf tarihi); ImageDescription Hintçe Judith 13:4-5 (eser metadata'sı değil).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "refs metinleri erişilmedi (Garrard/Bal/Treves/Barker/Bailey/Lucas/Gardner/rehber/Menzio/Longhi/Barthes); kaynakçada anıldı; Lucas DOI çözülmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Telif: eser kamu malı (WD P6216 PD; P1001 100 yıl pma veya kısa; P459 ölümden ≥100 yıl; ölüm 1652/53) — WD çıkarımı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C053",
+   "ifade": "Floransa versiyonu Gentileschi adıyla en doğrudan ilişkilendirilen eser (itwiki); enwiki Napoli'ye kıyasla \"ince ama belirgin iyileşmeler\" (Khan ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "İlgili eser: \"Judith and Her Maidservant\" c. 1618 Palazzo Pitti (Galleria Palatina) Floransa; c. 1625 Detroit Institute of Arts.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Uffizi: genel etki \"both powerful and frightening\"; sarhoş iri general yatakta, Judith saçından kavrar, kılıç boynunda (kan ayrıntısı derslerde büyütülmez).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Uffizi: Roma/Floransa/Napoli saraylarında çalıştı, İngiltere'ye seyahat etti; erkek egemen dönemde sanatçı olmayı seçen kadının \"insani ve mesleki hikâyesi\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Yorum: sahne şiddeti gösteriş değil emek olarak kurar; iki kadının ortak kas gücü kahramanlığı bedensel çalışmaya çevirir; sarı ipek/kıyafet gerilimi (Barthes/Longhi betimlerinden hareketle, bu dersin yorumu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "Yorum: Uffizi \"güçlü ve korkutucu\" etkisi yücelik (sublime) estetiğiyle okunabilir (Kant-ödünç mercek); tarihsel etki iddiası değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3769169 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3769169.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Uffizi Galleries",
+   "belge": "Resmî eser sayfası (EN), ham HTML + görünür metin",
+   "url": "https://www.uffizi.it/en/artworks/judith-beheading-holofernes",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (birincil)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Judith Slaying Holofernes (Artemisia Gentileschi, Florence) wikitext",
+   "url": "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Florence)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200 (45 s backoff; API parse)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Giuditta che decapita Oloferne (Artemisia Gentileschi Firenze) wikitext",
+   "url": "https://it.wikipedia.org/wiki/Giuditta_che_decapita_Oloferne_(Artemisia_Gentileschi_Firenze)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200 (API parse)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Judith Beheading Holofernes.jpg + GAP-Adjust.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Judith_Beheading_Holofernes.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200 (imageinfo); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketleri (P186/P1480/P6216 vb. QID çözümü)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S7",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Judith Slaying Holofernes (Artemisia Gentileschi, Naples) section 0",
+   "url": "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (API parse)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Naples pageprops → wikibase_item Q2247406",
+   "url": "https://en.wikipedia.org/wiki/Judith_Slaying_Holofernes_(Artemisia_Gentileschi,_Naples)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (pageprops)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:GENTILESCHI Judith.jpg imageinfo (S1 boyut ref; credit Web Gallery of Art)",
+   "url": "https://commons.wikimedia.org/wiki/File:GENTILESCHI_Judith.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Judith Slaying Holofernes (Napoli, Q2247406)",
+   "sanatci": "Artemisia Gentileschi",
+   "kurum": "Museo di Capodimonte, Napoli",
+   "gerekce": "Aynı konunun daha erken versiyonu (c. 1612–1613); kompozisyon/renk karşılaştırması; versiyon karışması riski.",
+   "kanit": [
+    "C023",
+    "C053",
+    "C001"
+   ]
+  },
+  {
+   "eser": "Judith Beheading Holofernes",
+   "sanatci": "Caravaggio",
+   "kurum": "Palazzo Barberini, Roma",
+   "gerekce": "Caravaggio modeli; gerçekçilik ↔ ortak emek karşıtlığı; tarih ihtilafı (c. 1598–99 / 1602).",
+   "kanit": [
+    "C039",
+    "C031",
+    "C015"
+   ]
+  },
+  {
+   "eser": "Judith and Her Maidservant",
+   "sanatci": "Artemisia Gentileschi",
+   "kurum": "Galleria Palatina, Palazzo Pitti, Floransa",
+   "gerekce": "Konunun \"eylem sonrası\" anı; Pitti (c. 1618) / Detroit (c. 1625) versiyonları.",
+   "kanit": [
+    "C054",
+    "C040"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Uffizi birincil (S2, 200) + WD (S1) + enwiki/itwiki (S3/S4) + Napoli (S7/S8) + Commons (S5/S9) cache'leri 14 Kasım 2026'da yeniden açılıp iddialarla karşılaştırıldı: künye/konu/sipariş/ödeme/akademi/varış reddi doğrulandı (A); chiaroscuro/haç kabza/Abra/50 scudi/otoportre tartışması/Longhi-Barthes doğrulandı (B). D001 boyut (146.5×108 ↔ 199×162.5), D002 versiyon kıyası, D003 Caravaggio tarihi, D004 lisans açık ihtilaf (D). Görsel metadata-only, İNCELENMEDİ (C050) → GZ TASLAK. refs metinleri erişilmedi (C051).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (E001): data/basyapitlar.json tarih \"1620\" yalın → circa kaybı; ders \"c. 1620\" korur (C003).",
+  "Envanter gap: data/muze_numaralari.json Q3769169 kaydı YOK → \"1890 n. 1567\" (A, C006) data'da eksik.",
+  "D001 boyut: birincil 146.5×108 ↔ WD/Commons 199×162.5; çözülmedi; kunye birincil değeri taşır, insan kararı bekler (C005/C026/C029).",
+  "D004 görsel lisansı: uygulama görseli daddc49c8e471108 = File:Judith Beheading Holofernes.jpg PD etiketli ama fotoğraf Permission CC BY-NC-SA 2.0 (Flickr); GAP alternatifi PD; görsel projeye kopyalanmadı (C032).",
+  "Doğrulanmamış data iddiaları: \"1616 akademi\" (E008, C047) ve \"Artemis/Diana bilezik\" (E007, C027) bu brief'te doğrulanmadı; derslerde kullanılmadı.",
+  "İçerik tonu: data \"bak\" listesi ve ozet grafik kan/şiddet betimi içerir; dersler akademik/ayrıntısız tutuldu, ayrıntı büyütülmedi; ton incelemesi için bayrak.",
+  "Sanatçı ölüm yılı: data/sanatcilar.json olum=1656 ↔ Uffizi \"1652/53\" (C002); veri notu.",
+  "Terminoloji: data \"tenebrizm\" ↔ S3 \"chiaroscuro\"; önceki \"dogrulandi\" durumuna güvenilmedi (bağımsız kural); ders \"chiaroscuro\" korur (C015).",
+  "Görsel: İNCELENMEDİ (C050); GZ TASLAK; insan editör görsel teyidi zorunlu.",
+  "Versiyon görsel hash: Napoli infobox görseli (WGA8563, e51941337d93e76a) Floransa QID'si için kullanılmamalı; aktif versiyon karışması yok ama risk not edildi (C001/C023)."
+ ]
+}

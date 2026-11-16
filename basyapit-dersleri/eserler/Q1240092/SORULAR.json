@@ -1,0 +1,567 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1240092",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Galleria Doria Pamphilj, Roma"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi Galerisi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5/S6 birincil katalog: eser Roma'da Galleria Doria Pamphilj'de, envanter FC 289.",
+   "yanlis_gerekceleri": {
+    "B": "Prado, Velázquez eserlerinin en büyük koleksiyonunu tutar (WGA eserlerin çoğunun İspanya'da olduğunu not eder), ama bu portre Roma'dadır.",
+    "C": "Uffizi bu eserin kurumu değildir; birincil kayıt Roma Doria Pamphilj'yi gösterir.",
+    "D": "Louvre bu eserin kurumu değildir; birincil kayıt Roma Doria Pamphilj'yi gösterir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil kayda göre envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "FC 289"
+    },
+    {
+     "harf": "B",
+     "metin": "FC 237"
+    },
+    {
+     "harf": "C",
+     "metin": "FC 241"
+    },
+    {
+     "harf": "D",
+     "metin": "WM 1590–1948"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5/S6 üç birincil sayfada ve WD P217'de (birincil ref'li) FC 289.",
+   "yanlis_gerekceleri": {
+    "B": "I Capolavori listesine göre FC 237, Claude Lorrain'in \"Matrimonio di Isacco e Rebecca\" tablosunun envanteridir; dosya adındaki \"inv. 237\" hatalı metadata'dır.",
+    "C": "FC 241, aynı koleksiyondaki Caravaggio \"Riposo durante la Fuga in Egitto\" tablosunun envanteridir.",
+    "D": "WM 1590–1948, Londra Apsley House versiyonunun envanteridir; Roma orijinalinin değil."
+   },
+   "kanit": [
+    "C009",
+    "C055",
+    "C019"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil katalog boyutu ne olarak verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "141 × 119 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "140 × 120 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "82 × 71.5 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "55 × 47 inç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5/S6: 141 × 119 cm; WD P2048/P2049 ve enwiki de aynı.",
+   "yanlis_gerekceleri": {
+    "B": "140 × 120 itwiki ve bir Commons dosya adından gelir; birincil katalog 141 × 119 der (D1 ihtilafı olarak kayıtlı).",
+    "C": "82 × 71.5 cm, Apsley House versiyonunun boyutudur.",
+    "D": "55 × 47 inç, proje data dosyasındaki yaklaşık inç değeridir; birincil kayıt cm cinsinden 141 × 119 verir."
+   },
+   "kanit": [
+    "C009",
+    "C019"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya (olio su tela)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Mermer"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil katalog: \"olio su tela / oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; bu eser tuval üzerinedir.",
+    "C": "Pano üzerine tempera, aynı koleksiyondaki başka eserlerin tekniğidir (ör. Filippo Lippi \"Annunciazione\"); bu eser yağlıboya-tuvaldir.",
+    "D": "Mermer, aynı koleksiyondaki Bernini Innocentius büstünün malzemesidir; portre boyadır."
+   },
+   "kanit": [
+    "C009",
+    "C055"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Birincil katalog tabloyu nasıl tarihler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Muhtemelen 1649 sonu ile Ocak 1650 arası\" (probabilmente)"
+    },
+    {
+     "harf": "B",
+     "metin": "\"Kesin olarak 1650\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"1626–1630 arası\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"1656\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5: \"l'eseguì probabilmente fra la fine del 1649 e il gennaio del 1650\"; belirsizlik aynen korunur.",
+   "yanlis_gerekceleri": {
+    "B": "Kesin 1650 itwiki'nin ifadesidir; birincil katalog kesin yıl vermez.",
+    "C": "1626–30, Velázquez'in Pamphilj'yi Madrid'de nunçyo olarak tanıdığı dönemdir; tablonun tarihi değil.",
+    "D": "1656, Las Meninas'ın yaklaşık tarihidir (WGA)."
+   },
+   "kanit": [
+    "C003",
+    "C014",
+    "C058"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Portrenin konusu kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giovanni Battista Pamphilj (Papa X. Innocentius, 1644–1655)"
+    },
+    {
+     "harf": "B",
+     "metin": "II. Julius"
+    },
+    {
+     "harf": "C",
+     "metin": "III. Paulus"
+    },
+    {
+     "harf": "D",
+     "metin": "Olimpia Maidalchini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5: Giovanni Battista Pamphilj, 1644–1655 arası papa.",
+   "yanlis_gerekceleri": {
+    "B": "II. Julius, Raffaello'nun portresinin konusudur; itwiki'de karşılaştırma olarak anılır.",
+    "C": "III. Paulus, Tiziano'nun portresinin konusudur; itwiki'de karşılaştırma olarak anılır.",
+    "D": "Olimpia Maidalchini papanın baldızıdır; Algardi'nin mermer portresi aynı koleksiyondadır."
+   },
+   "kanit": [
+    "C002",
+    "C028",
+    "C055"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Tablo neden Boschini'den (1660) beri \"Velázquez'in en Titianesque eseri\" sayılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırmızı tonalitesi ve akıcı fırça darbeleri nedeniyle"
+    },
+    {
+     "harf": "B",
+     "metin": "Güçlü chiaroscuro ve Caravaggism nedeniyle"
+    },
+    {
+     "harf": "C",
+     "metin": "Anıtsal figür kompozisyonu nedeniyle"
+    },
+    {
+     "harf": "D",
+     "metin": "Doğrusal kesinlik (disegno) nedeniyle"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kauffmann s.309: \"With its red tonality and fluid brush strokes ... the most Titianesque of Velázquez's paintings\" (Boschini 1660).",
+   "yanlis_gerekceleri": {
+    "B": "Caravaggiovari chiaroscuro, Velázquez'in erken Sevilla dini resimlerinin özelliğidir (WGA); Titianesque etiketin gerekçesi renk ve fırçadır.",
+    "C": "Anıtsal figür kompozisyonu bu etiketin gerekçesi değildir; Kauffmann renk ve fırçayı işaret eder.",
+    "D": "Doğrusal kesinlik (disegno) Floransa geleneğidir; etiket Venedik renkçiliğine bağlanır."
+   },
+   "kanit": [
+    "C013",
+    "C056"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Apsley House versiyonunun boyut ve envanteri nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "82 × 71.5 cm, WM 1590–1948"
+    },
+    {
+     "harf": "B",
+     "metin": "141 × 119 cm, FC 289"
+    },
+    {
+     "harf": "C",
+     "metin": "82 × 71.5 cm, FC 289"
+    },
+    {
+     "harf": "D",
+     "metin": "140 × 120 cm, WM 1590–1948"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kauffmann no.185 ve Art UK kaydı: canvas 82 × 71.5 cm, WM 1590–1948.",
+   "yanlis_gerekceleri": {
+    "B": "141 × 119 cm, FC 289 Roma Doria versiyonunun künyesidir.",
+    "C": "Boyut doğru ama envanter yanlış: FC 289 Roma'ya aittir.",
+    "D": "140 × 120, Roma versiyonu için itwiki'nin ihtilaflı değeridir; Apsley boyutu 82 × 71.5 cm'dir."
+   },
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kauffmann kataloğu kâğıttaki tarih için ne der?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Bir tarih vardı, artık okunaklı değil; 1650 olarak okunmuş\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Tarih 1650 açıkça yazılıdır\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Kâğıtta yazıt yoktur\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Tarih 1649 yazılıdır\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kauffmann s.309: \"with the addition of a date, now illegible, which has been read as 1650\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Tarih 1650 yazılı\" iddiası itwiki'ye aittir; Kauffmann ve enwiki tarihin artık okunaklı olmadığını söyler (D4).",
+    "C": "Kâğıtta yazıt vardır: sanatçının adı ve hitap, Kauffmann transkripsiyonuyla kayıtlıdır.",
+    "D": "1649 okuması anılmaz; tarih 1650 olarak okunmuştur."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kopyaların çoğu hangi boyuttadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Büst boyu"
+    },
+    {
+     "harf": "B",
+     "metin": "Üç çeyrek boy"
+    },
+    {
+     "harf": "C",
+     "metin": "Tam boy"
+    },
+    {
+     "harf": "D",
+     "metin": "Minyatür"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kauffmann s.311: \"the majority are, like the Wellington version, bust size\".",
+   "yanlis_gerekceleri": {
+    "B": "Üç çeyrek boy, Doria orijinalinin kompozisyonudur; Kauffmann bu kompozisyonu gösteren kopyaların az olduğunu yazar.",
+    "C": "Tam boy kopyalar anılmaz; çoğunluk büst boyundadır.",
+    "D": "Minyatür kopyalar anılmaz; çoğunluk büst boyundadır."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Portre, Giovanni Battista Pamphilj'yi (papa 1644–1655) gerçekçi, çirkinliğini gizlemeyen bir betimle gösterir.",
+   "dogru": true,
+   "aciklama": "Doğru: birincil katalog \"con realismo e senza nasconderne la bruttezza\" (S4/S5).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil Doria Pamphilj kaydı tablonun tarihini kesin olarak 1650 diye verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil katalog \"probabilmente fra la fine del 1649 e il gennaio del 1650\" der; kesin 1650 itwiki'nin ifadesidir.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Kauffmann'a göre Doria tablosu başından beri sitter'ın ailesine aittir ve papa tarafından sipariş edilen orijinal olduğundan hiç şüphe edilmemiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: Kauffmann 2009, no.185, s.309; papa, Velázquez'e kendi portreli altın bir madalyon hediye etmiştir.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Apsley House versiyonu, Roma'daki tabloyla aynı boyuttadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Apsley 82 × 71.5 cm (WM 1590–1948); Roma 141 × 119 cm (FC 289).",
+   "kanit": [
+    "C019",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Harris'in aktardığına göre Velázquez, Pamphilj'yi 1626–30'da Madrid'de papalık nunçyosu olarak tanımıştı.",
+   "dogru": true,
+   "aciklama": "Doğru: Kauffmann s.309, Harris 1999 s.210'a atfen.",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Boyut ve envanter ihtilaflarını (D1/D2) birincil-ikincil hiyerarşisiyle analiz edin; dosya adı metadata'sı neden güvenilmezdir?",
+   "beklenen_ogeler": [
+    "141×119 birincil",
+    "140×120 itwiki/dosya adı",
+    "FC 289",
+    "inv.237 = Claude Lorrain",
+    "WD P18 ↔ P217 tutarsızlığı"
+   ],
+   "kanit": [
+    "C041",
+    "C042",
+    "C009",
+    "C055"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Tarih tartışmasını (birincil probabilmente ↔ Harris 26 Nisan 1649 ↔ Pons 13 Ağustos 1650) kanıt türleri açısından değerlendirin.",
+   "beklenen_ogeler": [
+    "probabilmente/probably",
+    "yaz kostümü hipotezi",
+    "oturma belgesi",
+    "Ocak 1650 üst sınırı gerilimi",
+    "kâğıt tarihi now illegible"
+   ],
+   "kanit": [
+    "C003",
+    "C015",
+    "C043",
+    "C044",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "\"Troppo vero\" anekdotunu kaynak eleştirisiyle sınayın: enwiki'nin Kauffmann s.308 atfı arşiv PDF'inde neyle karşılaşır?",
+   "beklenen_ogeler": [
+    "basılı s.308 = Juan Nieto no.184",
+    "no.185 s.309–312",
+    "tam metinde anekdot yok",
+    "uzmanlar şüphe eder",
+    "rivayet"
+   ],
+   "kanit": [
+    "C039",
+    "C038",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Apsley otograflık tartışmasını Curtis'ten Carr'a izleyin; \"eskiz mi replika mı\" sorusu neden açık kalıyor?",
+   "beklenen_ogeler": [
+    "Justi baş+başka el",
+    "Allende-Salazar Pareja kopyası",
+    "López-Rey workshop",
+    "Harris aynı el/Doria önce",
+    "Keith ayrım bulamadı",
+    "Carr kanıt bulamadı"
+   ],
+   "kanit": [
+    "C017",
+    "C045",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Alımlama zincirini (Bacon, Braun-Vega, Ghost, Gimpel) \"kaynaklı / atıfsız / varsayımsal\" diye sınıflandırın.",
+   "beklenen_ogeler": [
+    "Bacon 45+ varyant (Schmied/Peppiatt)",
+    "Braun-Vega bir düzine (Henry/Rivais/LETRAS)",
+    "Ghost atıfsız",
+    "Gimpel varsayımsal",
+    "Deleuze doğrudan atıfsız"
+   ],
+   "kanit": [
+    "C027",
+    "C029",
+    "C035",
+    "C026",
+    "C047"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Papanın elinde tuttuğu, üzerinde sanatçının adının yazılı olduğu kâğıdı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Kauffmann): üç çeyrek boy, oturur poz; yazıt \"Diego di Silva y Velázquez\"; tarih artık okunaklı değil.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Tablonun kırmızı tonalitesini izleyin: üst giysi ve başlıktaki kırmızılar ile akıcı fırça işçiliğini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Kauffmann/Boschini 1660): \"red tonality and fluid brush strokes\" → en Titianesque Velázquez.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Yüzdeki idealleştirmeyen gerçekçiliği inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Birincil katalog: \"con realismo e senza nasconderne la bruttezza\"; çağdaşlar \"satirico, saturnale, ruvido e bruttissimo\".",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kompozisyonun üç çeyrek boy, oturur düzenini doğrulayın; Apsley House büst versiyonuyla karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kauffmann: Doria üç çeyrek boy + oturur; Wellington büst boyu (82 × 71.5 cm).",
+   "kanit": [
+    "C012",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Fırça işçiliğinin yakından/uzaktan etkisini Palomino tanıklığıyla düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): WGA: geç eserlerde ayrıntı genel etkiye tabi; Palomino \"from a distance it is a miracle\"; Clark \"a fricassee of beautiful brushstrokes\".",
+   "kanit": [
+    "C058",
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Ritratto di papa Innocenzo X Pamphilj; Velázquez (1599–1660); birincil \"probabilmente fine 1649–gennaio 1650\"; olio su tela; 141 × 119 cm; FC 289; Galleria Doria Pamphilj, Roma.",
+   "kanit": [
+    "C009",
+    "C003",
+    "C059"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + bağlam?",
+   "arka": "Giovanni Battista Pamphilj (1574–1655), papa 1644–1655; Vestfalya (1648) sonrası papalık Habsburg İspanyası'na yakınlaştı; 1650 Jübile, 700.000 hacı; baldız Olimpia Maidalchini etkisi.",
+   "kanit": [
+    "C002",
+    "C004",
+    "C053"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik + tarihsel değerlendirme?",
+   "arka": "Kırmızı tonalite + akıcı fırça → Boschini 1660'tan beri \"en Titianesque\"; Reynolds \"the finest picture in Rome\" (eski rehber üzerinden); Taine \"tüm portrelerin başyapıtı\"; birincil \"mükemmel korunmuş\".",
+   "kanit": [
+    "C013",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Versiyonlar + kopyalar?",
+   "arka": "Apsley: 82 × 71.5 cm, WM 1590–1948, otograf kabul ama eskiz/replika tartışması açık; kopyaların çoğu büst boyu; NGA Washington (Walpole→Hermitage→Mellon); Goya kopyası; Bacon varyantları.",
+   "kanit": [
+    "C019",
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Yolculuk + hazırlık?",
+   "arka": "İkinci İtalya yolculuğu (WGA: 1648–1651); amaç kraliyet koleksiyonuna eser/antika almak; Juan de Pareja (Met, 1650) papa portresine pratikti (WGA); oturma izni hikâyesi iki versiyonlu, uzmanlar şüphe eder.",
+   "kanit": [
+    "C021",
+    "C024"
+   ]
+  }
+ ]
+}

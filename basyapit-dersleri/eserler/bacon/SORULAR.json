@@ -1,0 +1,586 @@
+{
+ "surum": "1.0",
+ "eser_id": "francis-bacon|Three Studies for Figures at the Base of a Crucifixion",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu triptiğin Tate envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "N06171"
+    },
+    {
+     "harf": "B",
+     "metin": "T05858"
+    },
+    {
+     "harf": "C",
+     "metin": "NG6171"
+    },
+    {
+     "harf": "D",
+     "metin": "N06131"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate API kaydının acno alanı ve Gale katalog girdisi N06171 verir; Wikidata P217 (P195=Tate) de aynıdır.",
+   "yanlis_gerekceleri": {
+    "B": "T05858, 1988 tarihli Second Version of Triptych 1944 adlı ayrı eserin numarasıdır (Tate API page 100831); 1944 triptiğiyle karıştırılmamalıdır.",
+    "C": "NG6171 yalnız Wikidata ve İtalyanca Vikipedi'de National Gallery koleksiyonu için verilen ikinci numaradır; Tate'in birincil katalog girdisinde geçmez.",
+    "D": "N06131, Eric Hall'un bir önceki yıl (1952) Tate'e hediye ettiği Study of a Dog'un numarasıdır."
+   },
+   "kanit": [
+    "C009",
+    "C027",
+    "C010",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser bugün hangi kurumda sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée Picasso, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Tate Britain, Londra"
+    },
+    {
+     "harf": "D",
+     "metin": "Tate Modern, Londra"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Tate API: collection \"Tate\", display_gallery_name \"Tate Britain\", onDisplayAtTate true.",
+   "yanlis_gerekceleri": {
+    "D": "Tate Modern aynı kurumun farklı binasıdır; birincil kayıt sergileme yeri olarak Tate Britain'ı verir.",
+    "A": "National Gallery adı yalnız NG6171 ikincil envanter kaydından gelir; eserin koleksiyonu Tate'tir.",
+    "B": "Musée Picasso'da (Paris) Picasso'nun Crucifixion (1930) tablosu bulunur; Bacon'ın triptiği orada değildir."
+   },
+   "kanit": [
+    "C011",
+    "C010",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Bacon, 1959'da Tate'e yazdığı mektupta figürlerin kimliğini ne olarak doğruladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Orestes, Clytemnestra ve Aegisthus"
+    },
+    {
+     "harf": "B",
+     "metin": "Eumenides (Furyalar)"
+    },
+    {
+     "harf": "C",
+     "metin": "Meryem, Yuhanna ve İsa"
+    },
+    {
+     "harf": "D",
+     "metin": "İsa ve iki hırsız"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Bacon [9 Jan. 1959] tarihli yanıtında \"David Sylvester is correct. They were sketches for the Eumenides…\" yazdı; Tate subjects alanında \"Furies / Erinyes / Eumenides\" kayıtlıdır.",
+   "yanlis_gerekceleri": {
+    "C": "Boxer'ın yan panelleri Meryem/Yuhanna, ortayı İsa olarak okuma önerisidir; katalog bunu \"may be too literal\" diye sınırlar ve Bacon dinsel kimliklendirmeleri reddetti.",
+    "D": "İsa ve iki hırsız okuması Schmied/Boxer kaynaklı bir yorumdur; panellerde çarmıha geriliş sahnesi yoktur.",
+    "A": "Bunlar Oresteia'nın insan karakterleridir; figürler Orestes'i kovalayan intikamcı tanrıçalardır."
+   },
+   "kanit": [
+    "C015",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Çarmıha geriliş teması hakkında birincil kaynağa uygun ifade hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çarmıh orta panelde açıkça görülür; figürler ona yaslanır"
+    },
+    {
+     "harf": "B",
+     "metin": "Bacon eseri bir kilise sunağı için ibadet nesnesi olarak tasarladı"
+    },
+    {
+     "harf": "C",
+     "metin": "Bacon başlığı \"the Crucifixion\" olarak kesinleştirdi ve Hristiyan okumayı benimsedi"
+    },
+    {
+     "harf": "D",
+     "metin": "Çarmıha geriliş sahnesi yoktur; Bacon ateistti ve başlıktaki belirsiz \"a Crucifixion\" article'ını vurguladı"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S3: \"Bacon drew attention to his own atheism and tended to stress the indefinite article in his title\"; 1962 Sylvester: \"as a non-believer, it was just an act of man's behaviour…\". Panellerde çarmıh sahnesi yoktur.",
+   "yanlis_gerekceleri": {
+    "A": "Panellerde çarmıha geriliş sahnesi yoktur; figürler gerçekleştirilmemiş büyük bir kompozisyonun eşlikçi figürleri olarak tasarlandı.",
+    "B": "Eser bir sunak için sipariş edilmedi; Bacon çarmıha gerilişi seküler bir insan davranışı olarak gördü.",
+    "C": "Bacon belirsiz article'ı (\"a Crucifixion\") özellikle vurguladı ve dinsel kimliklendirmeleri şiddetle reddetti."
+   },
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tate katalog girdisine göre teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yonga levha (truciolato) üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız yağlıboya; pastel kullanılmadı"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya ve pastel, Sundeala lif levha"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuval üzerine yağlıboya ve akrilik"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S3 başlığı \"Oil and pastel on board\"; deneme: \"All three panels are a lightweight 'Sundeala' board, which, like hardboard, was also used … as a cheap alternative to canvas.\"",
+   "yanlis_gerekceleri": {
+    "D": "Tuval + akrilik, 1988 Second Version of Triptych 1944'ün (T05858) tekniğidir; 1944 triptiği levha üzerinedir.",
+    "A": "\"truciolato\" (yonga levha) İtalyanca Vikipedi'nin hatalı çeviri adayıdır; Sundeala hardboard benzeri lif levhadır.",
+    "B": "API özeti \"Oil paint on 3 boards\" pasteli anmaz, ama katalog girdisi pasteli açıkça belirtir; sol panelde fikssiz chalk pastel saç telleri vardır."
+   },
+   "kanit": [
+    "C006",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser ilk kez nerede ve ne zaman sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lefevre Gallery, Londra, Nisan 1945 (karma sergi, kat. no 2)"
+    },
+    {
+     "harf": "B",
+     "metin": "Anglo-French Art Centre, Londra, Kas.–Aralık 1946"
+    },
+    {
+     "harf": "C",
+     "metin": "Hanover Gallery, Londra, 1949"
+    },
+    {
+     "harf": "D",
+     "metin": "XXVII Venedik Bienali, 1954"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 Exhibited: \"Recent Paintings by Francis Bacon, Frances Hodgkins, Henry Moore, Matthew Smith, Graham Sutherland, Lefevre Gallery, London, April 1945 (2…)\"; S4: \"Bacon first exhibited this painting in April 1945\".",
+   "yanlis_gerekceleri": {
+    "B": "1946 Anglo-French sergisi sonraki bir duraktır; eser orada \"Studies for figures at the base of a crucifix\" adıyla anıldı.",
+    "C": "1949 Hanover sergisinde paneller ayrı ayrı Study I/II/III olarak listelendi; bu ilk sergileme değildir.",
+    "D": "1954 Venedik'te eser \"Three Studies for a Larger Composition\" başlığıyla gösterildi; bu ilk sergi değil, başlık değişikliğidir."
+   },
+   "kanit": [
+    "C014",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser Tate koleksiyonuna nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sanatçı 1991'de hediye etti"
+    },
+    {
+     "harf": "B",
+     "metin": "Tate 1950'de satın aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Eric Hall 1945'te doğrudan Tate'e hediye etti"
+    },
+    {
+     "harf": "D",
+     "metin": "Eric Hall 1953'te hediye etti"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S1 creditLine \"Presented by Eric Hall 1953\", acquisitionYear 1953; Hall eseri 1945'te sanatçıdan satın almıştı.",
+   "yanlis_gerekceleri": {
+    "A": "1991 sanatçı hediyesi, 1988 Second Version of Triptych 1944 (T05858) içindir.",
+    "B": "Tate'in 1950 satın alması Figure in a Landscape içindir; triptik 1953 hediyesiyle geldi.",
+    "C": "1945, Hall'un sanatçıdan satın alma yılıdır; Tate'e hediye 1953'tedir."
+   },
+   "kanit": [
+    "C012",
+    "C013",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Orta figürün göz bağı/sargısı hangi kaynağa bağlanır ve Bacon bu bağı nasıl karşıladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eisenstein'ın Potemkin Zırhlısı'ndaki hemşire; Bacon bağı reddetti"
+    },
+    {
+     "harf": "B",
+     "metin": "Grünewald'ın Mocking of Christ'indeki kör edilmiş İsa; Bacon bağı desteklemeye istekliydi"
+    },
+    {
+     "harf": "C",
+     "metin": "Isenheim Altarpiece'indeki çarmıha gerili İsa; Bacon bağı reddetti"
+    },
+    {
+     "harf": "D",
+     "metin": "Velazquez'in X. Innocentus portresi; Bacon bağı doğruladı"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S3: \"The wrapping around the neck of Bacon's central figure has been traced to the blindfolded Christ in Grünewald's Mocking of Christ, a link which Bacon was willing to support.\"",
+   "yanlis_gerekceleri": {
+    "C": "Isenheim Altarpiece doğru yanıt değildir; göz bağı Grünewald'ın Mocking of Christ'ine bağlanır ve Bacon bağı desteklemeye istekliydi.",
+    "D": "Velazquez'in Papa portresi Bacon'ın sonraki Papa serisinin kaynağıdır; göz bağı için böyle bir bağ kurulmadı.",
+    "A": "Potemkin'deki hemşire çığlığı ağız/çığlık kaynağıdır; göz bağı kaynağı değildir."
+   },
+   "kanit": [
+    "C024",
+    "C023",
+    "C025"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1988 Second Version of Triptych 1944 hakkında doğru ifade hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1944 triptiğinin aynı boyutlu birebir kopyasıdır; zemin turuncu kalmıştır"
+    },
+    {
+     "harf": "B",
+     "metin": "Eric Hall tarafından 1953'te hediye edilmiştir"
+    },
+    {
+     "harf": "C",
+     "metin": "T05858 envanterlidir; tuval üzerine yağlıboya + akrilik, her panel 1980×1475 mm; 1991'de sanatçı hediye etti"
+    },
+    {
+     "harf": "D",
+     "metin": "1944 triptiğiyle aynı N06171 envanterini taşır"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S10 (Tate API page 100831): acno T05858, dateText 1988, \"Oil paint and acrylic paint on 3 canvases\", \"support, each: 1980 x 1475 mm\", \"Presented by the artist 1991\".",
+   "yanlis_gerekceleri": {
+    "D": "N06171, 1944 triptiğinin numarasıdır; iki eser ayrı envanterlere sahiptir.",
+    "A": "Boyutlar farklıdır (1980×1475 mm ↔ ~940×737 mm) ve zemin koyu burgundy'ye dönmüştür; S3 bunu bir \"re-conception\" olarak adlandırır.",
+    "B": "1953 Eric Hall hediyesi 1944 triptiği içindir; 1988 versiyonu sanatçı tarafından 1991'de verildi."
+   },
+   "kanit": [
+    "C027",
+    "C009",
+    "C007",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Venedik 1954 ve São Paulo 1959'da eserin başlığı neden ve nasıl değiştirildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Three Studies from the Human Figure\" yapıldı; sanatçının talebiyle"
+    },
+    {
+     "harf": "B",
+     "metin": "\"Studies for figures at the base of a crucifix\" yapıldı; katalog hatasıyla"
+    },
+    {
+     "harf": "C",
+     "metin": "\"Study I, Study II, Study III\" olarak ayrıldı; paneller bağımsız sayıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "\"Three Studies for a Larger Composition\" yapıldı; olası \"offence\"ı azaltmak için"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S3: \"the title of the triptych was modified to Three Studies for a Larger Composition - used for both Venice and São Paulo - in order to reduce potential 'offence'.\" Sylvester 1956'da bu değişikliğe itiraz etti.",
+   "yanlis_gerekceleri": {
+    "A": "\"Three Studies from the Human Figure\" sanatçı adına önerildi ama reddedildi; bienallerde kullanılmadı.",
+    "B": "Bu ad 1946 Anglo-French Art Centre sergisinde kullanıldı; 1954/1959 başlık değişikliği değildir.",
+    "C": "Study I/II/III listelemesi 1949 Hanover Gallery sergisine aittir."
+   },
+   "kanit": [
+    "C026",
+    "C014"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Bu triptiğin Tate envanter numarası N06171'dir.",
+   "dogru": true,
+   "aciklama": "Doğru: Tate API acno alanı, Gale katalog girdisi ve Wikidata P217 aynı numarayı verir.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "T05858, 1944 tarihli bu triptiğin envanter numarasıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: T05858, 1988 Second Version of Triptych 1944 adlı ayrı eserdir (tuval, 1980×1475 mm, 1991 sanatçı hediyesi). Gale 1998 aynı eseri T03073 olarak anar; bu Tate içi bir numaralama tutarsızlığıdır (tartışma).",
+   "kanit": [
+    "C027",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tate katalog girdisi başlıkta tarihi \"c.1943-4\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: API özeti 1944 der; katalog başlığı \"c.1943-4\"tür ve circa korunur. Petersfield yazıtının dönemi 1942-4'e genişletmesi bir olasılıktır (belirsiz).",
+   "kanit": [
+    "C004",
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Paneller tuval üzerine yalnız yağlıboya ile yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: üç panel Sundeala lif levhadır ve yağlıboya ile pastel birlikte kullanılmıştır; API özetinin \"Oil paint on 3 boards\" ifadesi pasteli anmaz (D4, tartışma).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kızılötesi inceleme, panellerde alt katmanlar ve yoğun revizyon izleri ortaya çıkardı.",
+   "dogru": true,
+   "aciklama": "Doğru: IR çiçek olarak okunan biçimler ve uzak bir manzara buldu; katalog \"protracted work on each\" sonucuna varır. Bu, Bacon'ın \"iki hafta\" anlatısıyla gerilimlidir (D8, tartışma).",
+   "kanit": [
+    "C031"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "N06171, T05858, T03073 ve NG6171 numaralarını kaynaklarına göre ayırın: hangisi bu esere ait, hangisi ayrı esere, hangisi ikincil kayda? Tate içi numaralama tutarsızlığını kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "N06171 = 1944 triptiği (S1/S3/S5)",
+    "T05858 = 1988 Second Version (S10)",
+    "T03073 = Gale 1998'in eski numarası",
+    "NG6171 = WD/itwiki ikincil kayıt",
+    "birincil > ikincil hiyerarşisi"
+   ],
+   "kanit": [
+    "C009",
+    "C010",
+    "C027",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"İki haftada yaptım\" anlatısı ile IR/konservasyon bulgularını (\"protracted work on each\") karşılaştırın: sanatçı hatırasının kanıt değeri nedir, hangi kaynak hangi düzeydedir?",
+   "beklenen_ogeler": [
+    "Bacon anlatısı B (Sylvester 1987)",
+    "teknik bulgu A (Tate Conservation 1997)",
+    "çiçek/manzara alt katmanları",
+    "ölçü işaretleri (254 mm)",
+    "D8/E8 geriliminin açık tutulması"
+   ],
+   "kanit": [
+    "C020",
+    "C031",
+    "C042",
+    "C051",
+    "C056"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Savaş/Holokost okumasının sınırlarını tartışın: Nisan 1945 kamp kurtuluşları ile eserin ilişkisi neden bir neden-sonuç kanıtı değildir?",
+   "beklenen_ogeler": [
+    "S4 \"For some…\" sınırlaması",
+    "S3 \"cannot be attributed to them\"",
+    "Painting 1946 karşıtlığı",
+    "ARP/astım/Petersfield dolaylı deneyim",
+    "yorum ↔ olgu ayrımı"
+   ],
+   "kanit": [
+    "C022",
+    "C047",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Eumenides tanımı, Bacon'ın ateist/seküler okuması ve Boxer'ın literal dinsel önerisi arasındaki gerilimi değerlendirin; predella tasarımı bu gerilimi nasıl açıklar?",
+   "beklenen_ogeler": [
+    "1959 mektubu (belge)",
+    "belirsiz article \"a Crucifixion\"",
+    "\"man's behaviour\"",
+    "attendant figures / predella",
+    "\"may be too literal\" + dinsel kimliklendirmelerin reddi"
+   ],
+   "kanit": [
+    "C015",
+    "C017",
+    "C018",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Telif/adil kullanım kararını gerekçelendirin: görsel neden yeniden yayımlanmıyor, hangi referanslar veriliyor, atıf kalıbı nedir ve bu çerçevenin hukuki sınırı nedir?",
+   "beklenen_ogeler": [
+    "© Estate of Francis Bacon / DACS 2026",
+    "TR/AB ölüm+70 → 2063",
+    "Commons'ta dosya yok; enwiki non-free fair use projeye lisans devretmez",
+    "URL + lisans + kaynak; atıf zorunlu",
+    "hukuki tavsiye değildir; insan editör/hak sahibi onayı"
+   ],
+   "kanit": [
+    "C028",
+    "C029",
+    "C057"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç panelde turuncu zemin ile siyah perspektif çizgilerini bulun: mekân sürekli bir oda mı, yoksa her panelde ayrı mı kuruluyor?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3): mekân tonal değil siyah hatlarla önerilir; hatlar dikkati merkeze yönlendirir ama birleşik mekân kurmaz.",
+   "kanit": [
+    "C030",
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Orta panelde sargılı başı, açık ağzı ve kaideden yayılan yakınsayan çizgileri bulun; figürün izleyiciye dönüklüğünü tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3/S6): ağız ayrı bir yüz değil boyun üzerindedir; göz bağı Grünewald Mocking of Christ bağlantısıyla açıklanır.",
+   "kanit": [
+    "C030",
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ panelde ot öbeğini ve dişli açık ağzı bulun; ifadenin çığlık mı esneme mi olduğunu kaynaklarla karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: S3 \"toothed yawn\" der; Sylvester esneme olabileceğini önerir — ikilik belirsiz bırakılır.",
+   "kanit": [
+    "C030"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sol panelde masa benzeri yapıyı, uzun boynu ve saç kütlesini bulun; pastel saç tellerinin yağlıboya katmanlardan farkını ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3): en insansı figür, örtü içinde uzuvlar; kahverengi/turuncu/sarı chalk pastel, fiksatif yok.",
+   "kanit": [
+    "C030",
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Panellerin ölçü/çerçeve birliğini ve orta panelin odak rolünü kaynak betiminden çıkarın; levha kenarındaki ölçü işaretlerinin ne anlama geldiğini tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3): 940×737/738/734 mm; orta panel \"slightly larger\" çerçeve; üst kenarda 254 mm ölçü işareti.",
+   "kanit": [
+    "C007",
+    "C008",
+    "C031"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye: sanatçı, başlık, tarih, teknik, boyut, envanter, kurum?",
+   "arka": "Francis Bacon (1909–1992); Three Studies for Figures at the Base of a Crucifixion; 1944 (katalog: c.1943-4); yağlıboya + pastel, Sundeala lif levha; her panel ~940×737 mm (çerçeve 1162×960×80 mm); triptik; Tate N06171; Tate Britain, Londra.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu: figürler kim, çarmıha geriliş sahnede var mı, Bacon'ın tutumu ne?",
+   "arka": "Eumenides/Furyalar (1959 mektubu); Aeschylus Oresteia, ana katili Orestes'i kovalayan tanrıçalar; çarmıh sahnesi YOK; Bacon ateist, belirsiz article \"a Crucifixion\"; çarmıha geriliş seküler \"man's behaviour\".",
+   "kanit": [
+    "C015",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İlk sergi, edinim ve başlık politikası?",
+   "arka": "Lefevre Gallery Londra Nisan 1945 (karma, no 2); Hall 1945'te sanatçıdan satın aldı (Lefevre üzerinden varsayılır), 1953'te Tate'e hediye; Venedik 1954 + São Paulo 1959'da \"Three Studies for a Larger Composition\" (offence azaltma), Sylvester 1956 itirazı.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C014",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Etki/kaynak zinciri: Picasso, Grünewald, çığlık imgeleri?",
+   "arka": "Picasso 1920'ler sonu biyomorfik figürler + Crucifixion (1930); Grünewald Isenheim çizimleri (Minotaure) ve Mocking of Christ (göz bağı, Bacon destekledi); Eisenstein Potemkin (1925) hemşire çığlığı, Poussin Massacre of the Innocents, La Maladie de la bouche (c.1935); Guernica 1938 Londra \"extremely likely\".",
+   "kanit": [
+    "C023",
+    "C024",
+    "C025"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik kanıt, ayrı eser ve telif?",
+   "arka": "IR: çiçek/manzara alt katmanları, \"protracted work on each\" ↔ Bacon'ın \"iki hafta\" anlatısı; 1988 Second Version of Triptych 1944 = T05858 (tuval, 1980×1475 mm, 1991 sanatçı hediyesi) AYRI eser; © Estate of Francis Bacon. All Rights Reserved, DACS 2026; TR/AB koruma 2063'e dek; görsel yeniden yayımlanmaz (adil kullanım).",
+   "kanit": [
+    "C031",
+    "C027",
+    "C028",
+    "C029"
+   ]
+  }
+ ]
+}

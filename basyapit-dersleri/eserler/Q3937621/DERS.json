@@ -1,0 +1,1071 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3937621",
+ "sanatci_id": "elisabeth-vigee-le-brun",
+ "baslik": "Marie Antoinette ve Çocukları",
+ "ozgun_baslik": "Marie-Antoinette de Lorraine-Habsbourg, reine de France et ses enfants (Marie Antoinette and Her Children)",
+ "kunye": {
+  "sanatci": "Élisabeth Louise Vigée Le Brun",
+  "sanatci_yasam": "1755–1842 (Paris – Paris)",
+  "tarih": "1787",
+  "tarih_belirsizlik": "POP \"Millésime de création 1787\" + \"4e quart 18e siècle\"; imzalı-tarihli (C001/C005). WD P571 precision=9 (yıl), kaynak DBpedia (C059).",
+  "teknik": "Tuval üzerine yağlıboya (peinture à l'huile ; toile / oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 275,
+   "genislik": 215
+  },
+  "muze": "Musée national des châteaux de Versailles et de Trianon (Versailles)",
+  "envanter": "MV 4520 ; INV 3059 ; AC 1945",
+  "edinim": "1785 Louis XVI buyruğuyla sipariş (Bâtiments du Roi / d'Angiviller); Devrim'de ulusal koleksiyonlar; Louis-Philippe döneminde Versailles müzesine tahsis",
+  "konum": "Antichambre du Grand Couvert (Kraliçenin Grand Appartement'i)",
+  "telif_durumu": "Kamu malı (sanatçı ö. 1842; Commons PD-Art/PD-old-100-expired, WD P6216 Q19652). POP/RMN fotoğraf kredileri \"utilisation soumise à autorisation\" (C031); görsel projeye kopyalanmadı."
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Louise_Elisabeth_Vig%C3%A9e-Lebrun_-_Marie-Antoinette_de_Lorraine-Habsbourg,_reine_de_France_et_ses_enfants_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture — RQE3s9ANo6GnTg; Palace of Versailles)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (Commons imageinfo, dosya sayfası wikitext, GAP); GÖRSEL BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "23427 × 30000 px; 253.409.946 bayt (~253,4 MB); GAP gigapixel, Tile set available",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon/renk/kürk/örtü/jest betimleri kaynak metinlerine dayanır (\"kaynakların betimlediği\"); piksel teyidi YOK → GZ TASLAK (C065). İhtilaflı: boyut (C044), model (C047), mekân (C048), kürk/renk (C051), örtü (C060). Commons'ta \"Remastered color\" (SMALLFXD) varyantı var → versiyon farkı gözetilmeli. POP/RMN fotoğrafları izne bağlı (C031); Met ödünç görüntüsünde büyütme/indirme kapalı. İnsan editör görsel teyidi ZORUNLU."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 444
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1476
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2966
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayda-erişimin-arkeolojisi"
+  ],
+  "2": [
+   "DERS_BASLANGIC.md#nasıl-ortaya-çıktı",
+   "DERS_ORTA.md#2-tarihsel-bağlam-skandal-ve-sipariş",
+   "DERS_ILERI.md#2-siparişin-kurumsal-kimliği-kim-ısmarladı",
+   "DERS_ILERI.md#3-salon-1787-bir-sergileme-krizinin-kaynak-eleştirisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-ve-alımlama"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynakların-betimlediği",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-model-ve-mekân-iki-ayrı-atıf-sorunu"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-boş-beşik-ölüm-temsil-ve-anlatı-farkları",
+   "DERS_ILERI.md#6-ikonografi-moda-ve-malzeme-dili"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-ikonografi-moda-ve-malzeme-dili",
+   "DERS_ILERI.md#10-küratöryel-anlatı-veri-riski-ve-telif"
+  ],
+  "7": [
+   "DERS_ORTA.md#7-estetik-okuma-yorum",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-ve-alımlama"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar-özet",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-veri-riski-ve-telif"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil POP/Joconde ve GAP kayıtlarıyla künyeyi (1787, tuval üzerine yağlıboya, MV 4520 / INV 3059 / AC 1945, Antichambre du Grand Couvert) doğrular.",
+  "Siparişin politik bağlamını (Gerdanlık Skandalı, anne imajı, hanedan sürekliliği) ve Salon 1787'nin açılış krizini kaynaklarıyla açıklar.",
+  "Boş beşik–Sophie bağlantısını ve üç çocuğun kimliğini birincil kayıtlarla eşleştirir.",
+  "Sekiz ihtilafı (boyut, Salon, siparişveren, model, mekân, anekdot, Met kimliği, kürk/renk) kaynak hiyerarşisiyle yönetir; kesinleştirmez.",
+  "Görsel incelenmediği için betimleri \"kaynakların betimlediği\" çerçevesinde kullanır; GZ TASLAK ve insan teyidi sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Salon",
+   "tanim": "Akademi'nin resmî sergisi; 1787'de Louvre'da 25 Ağustos'ta (Saint Louis bayramı) açıldı; kamusal itibarın sınandığı yer.",
+   "kanit": [
+    "C013",
+    "C037"
+   ]
+  },
+  {
+   "ad": "Bâtiments du Roi",
+   "tanim": "Kralın yapılar ve sanat idaresi; d'Angiviller yönetiminde devlet siparişinin kanalı (Met \"office of royal households\" der, ihtilaf).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "serre-bijoux",
+   "tanim": "Mücevher dolabı; tabloda sağda gölgede durur ve Cornelia göndermesi taşır.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Kutsal Aile şeması",
+   "tanim": "Rönesans'ın üçgen/piramit anne-çocuk düzeni; David'in tavsiyesiyle bu devlet portresine uyarlandı.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Affaire du collier (Gerdanlık Skandalı)",
+   "tanim": "Temmuz 1785'te kamuya açıklanan skandal; kraliçenin itibarını sarstı ve siparişin gerekçesi oldu.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Élisabeth Louise Vigée Le Brun (Paris 1755 – Paris 1842), Fransız okulu; eser 1787 (POP \"Millésime de création 1787\", \"4e quart 18e siècle\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Teknik: tuval üzerine yağlıboya (\"peinture à l'huile ; toile\" / \"Oil on canvas\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Resmî Fransızca başlık \"Marie-Antoinette de Lorraine-Habsbourg, reine de France et ses enfants\"; İngilizce \"Marie Antoinette and Her Children\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Envanter: MV 4520 ; INV 3059 ; AC 1945.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "İmzalı ve tarihli, sol alt: \"L. Vigée Le Brun 1787\" (POP: \"L.VIGEE-LE BRUN 1787\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Devlet malı (\"propriété de l'Etat\"); musée national des châteaux de Versailles et de Trianon; eski aitlik Louis XVI / Couronne de France. WD P195 ve data/ \"Musée de l'Histoire de France\" (Q3329787, \"museum in the Palace of Versailles\") der → granularity farkı, çelişki değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S12",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Güncel konum: Antichambre du Grand Couvert (Kraliçenin Grand Appartement'i; kraliyet akşam yemeği için kullanılan oda, tümüyle restore edilip yeniden döşenmiş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S1",
+    "S12",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "1785'te Louis XVI buyruğuyla sipariş (POP \"commandé par Louis XVI en 1785\"); GAP provenance: Eylül 1785, Bâtiments du Roi genel müdürü (d'Angiviller) aracılığıyla. Siparişveren atfı ihtilaflı → C046.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Amaç: Temmuz 1785'te kamuya açıklanan Gerdanlık Skandalı (Affaire du collier) sonrası kraliçeyi hem kraliçe hem şefkatli anne olarak gösterip imajını onarmak; hanedan sürekliliğinin güvencesi olarak sunmak.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S8",
+    "S9",
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Kraliçe ve üç çocuğu: Marie-Thérèse (Madame Royale, annesine yaslanır), Louis-Joseph (dauphin, sağda/beşiğin yanında), Louis-Charles (duc de Normandie, kucağında; sonraki XVII. Louis, Temple'de 1795'te öldü).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S9",
+    "S8",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Boş beşik, resim sürerken ölen dördüncü çocuk Sophie-Hélène-Béatrice'i anar (d. 9 Temmuz 1786 – ö. 19 Haziran 1787; yaklaşık on bir ay).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S5",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sophie başlangıçta kompozisyonda yer alacaktı; ölümü üzerine çıkarıldı / beşik boş bırakıldı (itwiki \"per togliere la bambina\"; GAP \"left the cradle empty … to show the tragedy\"). Anlatı farkı → C053.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Salon 1787 (Louvre, 25 Ağustos açılış): açılışta gönderilmedi; boş yer \"Here's the Deficit!\" göndermesine yol açtı; idare ısrarıyla sonradan teslim edildi. Eleştiriler: GAP \"bölündü\" der (ten tonları/draperi övgüsü ↔ büyük format eleştirisi), arşiv müze \"la critique fut unanime\" (kraliçe kaygılı, kederli) der. Sergilenip sergilenmediği ihtilaflı → C045.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S10",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Provenance: Salon sonrası Versailles'da Mars Room (Salon de Mars), Haziran 1789'a kadar; aynı ay depoya; Devrim boyunca ulusal koleksiyonlarda; Louis-Philippe döneminde Versailles müzesine tahsis.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Üçgen/piramit kompozisyon; Rönesans Kutsal Aile şeması; Jacques-Louis David'in tavsiyesi; model olarak Raffaello anılır (Giulio Romano varyantı → C047).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kırmızı kadife elbise, kürk astarlı; tüylü kırmızı kadife bere; az takı, kolye yok. Kürk türü/renk → C051; küpe ayrıntısı → C054.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sol arka planda Aynalı Salon (Galerie des Glaces); Louis XIV'e gönderme. Cornette: ışık o galeriden gelir; kumaşların ve beşiğin kırmızı/yeşil/okra tamamlayıcılığı, yastık ve halı arabesklerinde yinelenir. Mekân ihtilafı → C048.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Sağda gölgede mücevher dolabı (serre-bijoux); Cornelia (Gracchi annesi) anekdotu: \"çocuklarım benim en değerli hazinem\". Lambert/Phocion varyantı → C049.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Dolabın üstünde sağda Fransa kralının tacının göründüğü (itwiki; satır içi atıf yok, tek kaynak; görsel teyit yok). Brief B idi; atıf zinciri olmadığı için C.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Elbisenin kırmızısı Jean-Marc Nattier'in Marie Leszczyńska (Louis XV'in eşi; cömertliği ve dindarlığıyla sevilmiş) portresinden ödünç alındı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "NGC Magazine (K. Stauble, 19 Nisan 2016): Vigée Le Brun'ün en büyük eseri; Fransa'nın en önemli ulusal hazinelerinden; ders kitaplarında reprodukte (A. Eschapasse); Gwenola Firmin \"iconic painting\"; Paul Lang alıntıları (\"almost to be floating\"; \"only real state picture\"; \"the picture failed. But not artistically.\"); \"did not … save Marie Antoinette from the guillotine\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "POP: \"deux copies réduites\"; \"traduit en tapisserie en 1814\"; gravürle reproduksiyon (\"reproduit en gravure ; modèle de tapisserie\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "1778'ten beri kraliçenin ressamı (\"peintre de la reine\"); kraliçenin kişisel aracılığıyla Mayıs 1783'te Akademi'ye kabul; yaklaşık 30 kraliçe portresi; Raphael, Rubens, Van Dyck incelemesi; stüdyo aksesuarları (kırmızı şallar, türbanlar, tüylü şapkalar, kurdeleler). Unvan nüansı → C057.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "2015–16 retrospektifi: Grand Palais (23 Eylül 2015–11 Ocak 2016), Met (15 Şubat–15 Mayıs 2016), NGC Ottawa (10 Haziran–11 Eylül 2016).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Met 656654 kaydı Versailles ÖDÜNÇ/sergi kaydıdır: \"Returned to lender\", \"Not on view\", Credit Line \"Musée National des Châteaux de Versailles et de Trianon (MV 4520)\"; Met mülkiyeti değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Görsel kamu malı: Commons {{PD-Art|PD-old-100-expired}}; WD P6216 = Q19652 (public domain; 100 yıl pma); GAP gigapixel 23427 × 30000 px, ~253,4 MB, Tile set available.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S1",
+    "S5",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "\"Propaganda tablosu\" / devlet portresi niteliği (Commons \"tableau de propagande\"; NGC \"state picture\") — değerlendirme/yorum bileşeni.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11",
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Kraliçenin hüzünlü bakışının boş beşik/Sophie ölümüyle bağlantısı: S10 \"sans doute\", NGC \"suggests\" — olasılık dili, kesin neden değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "\"Madame Déficit\" alay adı; Salon'daki boş yer/çerçeve \"Here's the Deficit!\" / «Guardate il Deficit!» göndermesi (GAP boş \"yer\" der; itwiki boş çerçeveye iliştirilmiş not der, Fraser s.284 — kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "itwiki: tablo Salon de Mars'ta 4 Haziran 1789'a (dauphin'in ölümü) kadar kaldı; kraliçe tabloyu her görüşünde ağlardı (Fraser s.305, kitaba erişilmedi). WD Q473506 açıklaması (1781–1789) ölüm yılını yardımcı düzeyde destekler; gün/ay tek kaynak.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "POP notice kimliği: 000PE008060, base \"Collections des musées de France (Joconde)\", güncelleme 2 Kasım 2026; fotoğraf kredileri \"© Gérard Blot, Daniel Arnaudet, Jean Schormans, Réunion des musées nationaux — utilisation soumise à autorisation\" (RMN fotoğraflarının kullanımı izne bağlı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Birincil Versailles katalog URL'si GAP \"External Link\" alanından bulundu: collections.chateauversailles.fr/#afe9c5d7-f396-4b3a-9fe3-a67e2ae91b80; site Angular SPA (200, yalnız kabuk; nesne verisi JS, cc.js → ccConnector.asmx); nesne verisi bu oturumda çözülemedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Birincil envanter ölçüsü: POP Mesures \"275 H ; 215 L\" (cm); arşiv müze sayfası \"Dimensions : 275x215 cm\" ile uyumlu. Diğer varyantlar → C044.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Öncül sipariş: Adolf Ulrik Wertmüller (1752–1811) aynı görevle önce görevlendirildi; tablosu beğenilmedi, Salon eleştirileri sertti (\"Il fallait représenter la reine comme mère des enfants et comme souveraine\"); bunun üzerine Eylül 1785'te Vigée Le Brun'e başvuruldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "d'Angiviller'in (Bâtiments surintendantı) Vigée Le Brun hakkındaki ifadesi, Cornette'nin aktardığı biçimde: \"La Reine … honore la dame Le Brun de ses bontés, cette femme en est digne, non seulement par ses talents, mais encore par sa conduite.\" Belgenin kendisine erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Yapım süreci: eskizlerden bitişe iki yıl (S9); itwiki: yürütme Temmuz 1786'da başladı, kıyafet/aksesuarlar kraliyet gardırobundan Temmuz'da alınıp bir yıl sonra, portre bitince teslim edildi (Vigée Le Brun, Souvenirs İt. çev. s.16'ya atıflı; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "GAP'in aktardığı Salon 1787 eleştirileri: kimi \"ten tonlarının yumuşaklığını\" ve draperi kalitesini övdü; kimi kompozisyonu başarısız buldu, çünkü ressam bu kadar büyük formatta rahat değildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Cornette'nin aktardığı Salon 1787 eleştirileri: gazeteciler önce boş beşikle ilgilendi; bir libelle \"on se plaint que la Reine n'ait point d'intention dans ses regards\" der; otuz yaşındaki bir kadının tenine \"inanılmaz derecede saydam\" bir transparanlık verildiği eleştirildi. Souvenirs: korkudan ateşler içinde odasına kapanmış, \"succès général\" haberini almış (kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Kostüm politikası (itwiki): kraliçe, Gerdanlık Skandalı sonrası sert eleştiri alan müslin elbiseler ve hasır şapkalar yerine sade bir abye benimsemişti; kırmızı kadife + siyah kürk kenar, beyaz dantel; başlıkta aynı krallık renkleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Gobelins tapestry versiyonları: 1814, 1822, 1897 (enwiki; Mobilier national GMTT-347-000 kaydına atıflı, kayıt açılmadı); ilki 1868'de Avusturya İmparatoriçesi Elisabeth'e, üçüncüsü Rusya İmparatoriçesi Aleksandra Fëdorovna'ya verildi; ikincisi 1877'den beri Élysée'de.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "itwiki tapestry ayrıntıları: Rusya kopyası 1897–1899'da aynı kartondan dokundu; 1902'de Cumhurbaşkanı Émile Loubet'in devlet ziyareti armağanı; Aleksandr Sarayı (Carskoe Selo); II. Dünya Savaşı'ndan önce kaldırılıp kurtarıldı, 1997'de WMF destekli restorasyon sonrası yerine kondu; Avusturya kopyası Schönbrunn'daki \"Sala di Maria Antonietta\" (Napoleon III armağanı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Commons dosya açıklaması (atıfsız) betimleri: tuvale 9 Temmuz 1786'da başlandı; Louis-Charles kız çocuk kıyafetiyle ve boneli, kolları hareketli; Marie-Thérèse başını annenin sağ omzuna yaslıyor; dauphin siyah kreple örtülü boş beşiği koruyucu koluyla sarıyor; serre-bijoux fleur de lys bezemeli. Görsel teyit yok.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "Sanatçının 1789 sonrası (Cornette): libelle/pamflet kampanyasının hedefi oldu (Calonne'un metresi olmakla suçlandı); 6 Ekim 1789 gece yarısı kızı Julie ile Paris'ten Lyon'a hareket etti; Roma, Viyana, Londra, St Petersburg sürgünü; 1800'de Fransa'ya döndü; Souvenirs 1835; 1842'de 87 yaşında öldü; Louveciennes epitafı \"Ici, enfin, je repose…\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "D1 BOYUT (çoklu): POP 275 H × 215 L ↔ arşiv müze 275×215 ↔ Met/NGC/enwiki 275×216.5 (Met çerçeve 372×269.5×24) ↔ histoire-image başlık 275,2×216,5 ↔ itwiki 275×210 ↔ WD 271×210 ↔ GAP \"w1950 x h2710 mm\" (195×271) ↔ Commons 271×195. Birincil envanter 275×215; 216.5 sergi/Met ölçümü; 271×195/210 GAP kaynaklı aykırı değer. Kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S7",
+    "S8",
+    "S2",
+    "S9",
+    "S3",
+    "S1",
+    "S5",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D2 SALON 1787: POP \"Exposition: Salon … 1787\" + GAP \"exhibited at the Salon of 1787\" + arşiv müze \"fut contrainte de présenter\" + enwiki \"the painting was exhibited\" ↔ itwiki (Fraser s.284) \"si evitò di farlo … Al Salon rimase la cornice vuota\". Uzlaşma: açılışta yok/boş çerçeve, idare ısrarıyla SONRADAN sergilendi; itwiki'nin \"hiç sergilenmedi\" anlatımı birincil kaynaklarla gerilimli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S10",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D3 SİPARİŞ EDEN: POP \"commandé par Louis XVI\" + Met \"by order of Louis XVI, the office of royal households\" + NGC \"not by the queen herself … Bâtiments du Roi\" + GAP provenance \"Director General of the King's Buildings\" + itwiki \"ordinato … dal conte d'Angiviller\" ↔ GAP viewing notes \"Queen Marie-Antoinette commissioned\" + itwiki \"la regina commissionò\". Uzlaşma: kraliyet/devlet siparişi (Louis XVI → Bâtiments du Roi/d'Angiviller); kraliçenin isteği bağlam (S9 \"la reine … veut un tableau\"). Met \"Maison du Roi\" ↔ NGC \"Bâtiments du Roi\" kurum farkı not edildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S8",
+    "S5",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D4 KOMPOZİSYON MODELİ: NGC/histoire-image/itwiki/enwiki = Raffaello / Kutsal Aile (itwiki: David \"tardo Rinascimento Sacre Famiglie\") ↔ Commons açıklaması = \"Madonna della Gatta de Giulio Romano\" (atıfsız). İki farklı atıf; kesinleştirilmedi, görsel karşılaştırma yapılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S3",
+    "S2",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D5 BETİMLENEN MEKÂN: NGC/enwiki/itwiki/histoire-image = Aynalı Salon (Galerie des Glaces) solda ↔ arşiv müze S10 \"La reine se tient … dans le salon de la Paix\". Çoğunluk A/B Aynalı Salon; S10 tekil sapma (muhtemel hata); görsel teyit yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S2",
+    "S3",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D6 \"MÜCEVHERLERİM ÇOCUKLARIM\" ANEKDOTU: NGC/enwiki = Cornelia (Gracchi annesi, Roma) ↔ histoire-image = \"Peut-être a-t-elle lu l'Avis d'une mère à son fils (1726), de madame de Lambert … une dame grecque … la mère de Phocion … 'Voilà ma parure et mes ornements'\". Farklı antik örnek; S9 \"Peut-être\" ile belirsiz. İki varyant da not edildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S2",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D7 MET KİMLİĞİ (veri): data/muze_numaralari.json görsel 31c5fe2dce1fcddf → \"met\":\"656654\". Canlı Met API 404 \"Not a valid object\"; canlı HTML 429. Wayback 2025-07-20 kaydı bunun Versailles ÖDÜNÇ/sergi sayfası olduğunu gösteriyor (\"Returned to lender\"; Credit Line Versailles MV 4520) — Met mülkiyeti DEĞİL. Eşleme tarihsel olarak geçerli ama \"Met koleksiyonu\" izlenimi yanlış; canlı doğrulanamıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S7b",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "D8 KÜRK/RENK: NGC \"sable-lined\" (samur) + \"red velvet\" ↔ Commons \"bordé de marte\" (sansar) + \"velours puce\" (koyu morumsu) ↔ itwiki \"velluto rosso … bordo di pelliccia nera\". Görsel incelenmedi; kesinleştirilmedi. Commons'ta \"Remastered color\" (SMALLFXD) varyantı var → renk karşılaştırması versiyon farkına duyarlı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "E1 Sophie'nin ölüm nedeni: itwiki \"morì di tubercolosi\" — tek kaynak, diğerlerinde yok; doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E2 Sophie'nin \"çıkarılması\" (itwiki \"per togliere la bambina\") ↔ \"beşiğin boş bırakılması\" (GAP/enwiki) — aynı olayın farklı anlatımı; görsel kanıt incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E3 Takı: GAP/enwiki \"little jewellery / no jewellery\" ↔ itwiki \"porta un paio di orecchini a goccia\" (damla küpe VAR, kolye yok). \"Hiç takı yok\" kesinleştirmesi yanlış olur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E4 data/ \"Rousseau'nun 'doğal annelik' ideali\": erişilen hiçbir kaynakta Rousseau ADI GEÇMEZ; GAP \"new interest shown in childhood in this period\" der. Rousseau atfı erişilen kaynaklarla desteklenmiyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "E5 Bakış: S10 \"sans doute la cause du regard triste et vide\", NGC \"suggests the reason for the queen's solemn expression\" ↔ S9 \"Son regard est tranquille\". Olasılık dili korundu; betimler kaynaklar arasında farklı, görsel teyit yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "E6 Unvan: Met \"the first woman to attain the rank of painter to the king\" ↔ diğer kaynaklar \"peintre de la reine\" (kraliçenin ressamı). Unvanın kesinliği nüanslı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S9",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "E7 WD P180'de deprecated Q430775 = \"Louis Joseph, Prince of Condé\" (1736–1818; YANLIŞ kişi, tabloda yok). WD gürültüsü; data'ya yansımamış.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "E8 WD kaynak kalitesi: P571 precision=9 (yıl), kaynak P143=Q465 (DBpedia); P217 envanter numaraları WD'de REFSİZ (POP S4 ile doğrulandı); P2048=271 (Commons 2018) POP 275 ile çelişir (C044).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "E9 Beşik örtüsü rengi: data/ \"koyu yeşil örtü\" ↔ Commons \"crêpe noir\" (siyah krep) ↔ histoire-image \"verts … du berceau\". Yeşil kumaş + siyah krep birlikte olabilir; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S9",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "E10 \"En büyük eser\", \"tek gerçek devlet portresi\", \"politik olarak başarısız ama sanatsal olarak muhteşem\" = küratör Paul Lang'ın değerlendirmesi (NGC); olgu değil, ölçülebilir doğruluğu yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "E11 Rokoko/Neoklasik etiketi: Commons kategorisi \"Rococo portraits\"; GAP style \"French painting, 18th century, Full-length portrait\"; data/ \"Rokoko zarafet + Neoklasik düzen\" yorumu. Üslup etiketi kaynaklarda tekil değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S5",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "E12 histoire-image site-içi tutarsızlık: başlık künyesi 275,2×216,5 ↔ editör yorumu (2015) \"Les dimensions sont bien de 2,75 m sur 2,15 m\" (C044 ile bağlantılı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "E13 Kitap atıflarına METNE ERİŞİLMEDİ (yalnızca erişilen kayıtların bibliyografyasında anıldı): Fraser, Maria Antonietta – La solitudine di una regina, Mondadori 2002, ISBN 88-04-50677-6 (s.282/284/305); Vigée-Le Brun, Viaggio in Italia… I «Souvenirs» 1789-1792, Mondadori Electa 2004, ISBN 88-370-3107-6 (s.16); POP \"SOULIE 1880, n° 4520 ; CONSTANS 1980, n° 4589\"; histoire-image kaynakçası (Constans 1995, Bertière 2002, Lever 2000, Pitt-Rivers 2001, Vigié 2000, Flammermont 1898, Chossignand-Nogaret 1990); Mobilier national GMTT-347-000 (açılmadı). DOI/ISBN/sayfa/alıntı UYDURULMADI; doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (yalnız metadata/lisans/çözünürlük); kompozisyon/renk/kürk/örtü/jest betimleri piksel düzeyinde doğrulanmadı; GZ TASLAK. Commons'ta \"Remastered color\" (SMALLFXD) varyantı bulunduğundan renk betimleri versiyona duyarlı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "Erişim sınırları: Met canlı HTML 429 + API 404; NGC canlı 403; P973 canlı timeout; Versailles SPA nesne verisi çözülemedi; Wikipedia/WD 429→backoff. Arşiv snapshot'ları (20250720043430 / 20260209120740 / 20160303231430) bu oturumda Wayback availability API ile teyit edildi; canlı POP/GAP/histoire-image yeniden açıldı (200). Teknik/konservasyon raporuna erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S7b",
+    "S8",
+    "S10",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "Müfredat içi karşılaştırma adayları (data/basyapitlar.json kayıtları): Angelica Kauffman, \"Gracchusların Annesi Kornelia / Cornelia, Mother of the Gracchi\" (yaklaşık 1785, Virginia Museum of Fine Arts, Richmond); Jacques-Louis David, \"Horas Kardeşlerin Yemini / Le Serment des Horaces\" (yaklaşık 1784, Louvre, Paris). Künyeler müfredat kaydından alındı, haricî kaynakla doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3937621",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3937621.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"Marie Antoinette and Her Children\" wikitext (GA; POP/Met/NGC/histoire-image/GAP/Mobilier national atıflı)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Marie%20Antoinette%20and%20Her%20Children&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→backoff→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"Ritratto di Maria Antonietta e i suoi figli\" wikitext (Fraser 2002 s.282/284/305; Vigée Le Brun Souvenirs İt. çev. s.16 atıflı)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ritratto%20di%20Maria%20Antonietta%20e%20i%20suoi%20figli&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→backoff→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Fransa Kültür Bakanlığı / Musées de France (Joconde)",
+   "belge": "POP notice 000PE008060 (güncelleme 2 Kasım 2026)",
+   "url": "https://www.pop.culture.gouv.fr/notice/joconde/000PE008060",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden açıldı (308→200, pop.culture.gouv.fr)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Google Arts & Culture (Versailles partner içeriği)",
+   "belge": "asset RQE3s9ANo6GnTg",
+   "url": "https://artsandculture.google.com/asset/marie-antoinette-de-lorraine-habsbourg-queen-of-france-and-her-children-elisabeth-louise-vig%C3%A9e-lebrun/RQE3s9ANo6GnTg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden açıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Château de Versailles",
+   "belge": "collections nesne URL'si (GAP \"External Link\"ten bulundu)",
+   "url": "http://collections.chateauversailles.fr/#afe9c5d7-f396-4b3a-9fe3-a67e2ae91b80",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (Angular SPA kabuğu; nesne verisi JS ile yükleniyor, çözülemedi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "object 656654 — Versailles ödünç/sergi kaydı (Wayback 2025-07-20)",
+   "url": "http://web.archive.org/web/20250720043430/https://www.metmuseum.org/art/collection/search/656654",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı HTML 429 (Vercel checkpoint); arşiv 200, bu oturumda yeniden açıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7b",
+   "kurum": "Met Open Access API",
+   "belge": "objects/656654",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/656654",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 {\"message\":\"Not a valid object\"} (bu oturumda yeniden denendi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "National Gallery of Canada Magazine",
+   "belge": "K. Stauble, 19 Nisan 2016; küratör Gwenola Firmin (Versailles) ve Paul Lang (NGC) alıntıları (Wayback 2026-02-09)",
+   "url": "http://web.archive.org/web/20260209120740/https://www.gallery.ca/magazine/in-the-spotlight/marie-antoinette-and-her-children-an-icon-of-french-painting",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); arşiv 200 (snapshot availability API ile teyit)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Histoire par l'image (GrandPalaisRmn)",
+   "belge": "Joël Cornette, \"Marie-Antoinette restaure son image\", Mart 2013",
+   "url": "https://histoire-image.org/etudes/marie-antoinette-restaure-son-image",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden açıldı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Musée de l'Histoire de France (eski site, © Château de Versailles)",
+   "belge": "\"Marie-Antoinette et ses enfants\" (WD P973; Wayback 2016-03-03)",
+   "url": "http://web.archive.org/web/20160303231430/http://www.museehistoiredefrance.fr/index.php?option=com_oeuvre&Itemid=3&view=detail&cid=6",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 000 (45s timeout); arşiv 200 (snapshot availability API ile teyit)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo + dosya sayfası wikitext (GAP gigapixel; PD-Art/PD-old-100-expired)",
+   "url": "https://commons.wikimedia.org/wiki/File:Louise_Elisabeth_Vig%C3%A9e-Lebrun_-_Marie-Antoinette_de_Lorraine-Habsbourg,_reine_de_France_et_ses_enfants_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata API",
+   "belge": "wbgetentities etiket/açıklama çözümü (Q3329787, Q2853149, Q430775, Q47365, Q49765, Q473506, Q659488, Q213163, Q19652)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q3329787%7CQ2853149%7CQ430775%7CQ47365%7CQ49765%7CQ473506%7CQ659488%7CQ213163%7CQ19652&props=labels%7Cdescriptions&languages=en%7Cfr%7Ctr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (bu oturumda yeniden çekildi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Château de Versailles",
+   "belge": "SPA uygulama kodu cc/cc.js (uçlar: cc/ccConnector.asmx/*)",
+   "url": "https://collections.chateauversailles.fr/cc/cc.js",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Sanat Atlası (data/ — salt-okunur)",
+   "belge": "basyapitlar / eser_ayrintilari / yuruyus / eser_notlari / muze_numaralari / eserler_onbellek / eser_adlari_tr / eser_konulari / eser_zorluk (Q3937621)",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur; değiştirilmedi",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Gracchusların Annesi Kornelia (Cornelia, Mother of the Gracchi)",
+   "sanatci": "Angelica Kauffman",
+   "kurum": "Virginia Museum of Fine Arts, Richmond",
+   "mufredat_ici": true,
+   "gerekce": "Aynı antik anekdotun doğrudan tarih resmi olarak kurulmuş hâli (y. 1785); Vigée Le Brun'ün devlet portresine dolapla yerleştirdiği Cornelia göndermesiyle karşıtlık. Künye müfredat kaydından (C067), haricî doğrulama yok.",
+   "kanit": [
+    "C018",
+    "C067"
+   ]
+  },
+  {
+   "eser": "Horas Kardeşlerin Yemini (Le Serment des Horaces)",
+   "sanatci": "Jacques-Louis David",
+   "kurum": "Louvre, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Kompozisyon tavsiyesini veren David'in kendi dili (y. 1784); erkek yurttaşlık erdemi ↔ annelik erdemi, 1780'lerin ahlak yarışı. Künye müfredat kaydından (C067), haricî doğrulama yok.",
+   "kanit": [
+    "C015",
+    "C067"
+   ]
+  },
+  {
+   "eser": "Marie-Antoinette ve Çocukları (Wertmüller versiyonu)",
+   "sanatci": "Adolf Ulrik Wertmüller",
+   "mufredat_ici": false,
+   "gerekce": "Aynı görevin önceki sahibi; tablosu beğenilmedi ve Salon eleştirileri sertti → Vigée Le Brun siparişinin gerekçesini ve riskini açıklar (Cornette).",
+   "kanit": [
+    "C034"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — bu oturumda bağımsız geri dönüş: canlı POP/Joconde 000PE008060 (308→200; künye/sipariş/ölçü/imza/envanter/Salon/kopyalar birebir doğrulandı), canlı GAP RQE3s9ANo6GnTg (200; provenance, Antichambre du Grand Couvert, Eylül 1785, \"Here's the Deficit!\", w1950×h2710 mm), canlı histoire-image (200; Wertmüller, David/Raffaël, \"Peut-être\" Lambert, 275,2×216,5 ↔ editör 2,75×2,15), Wayback Met 20250720043430 (200; \"Returned to lender\", 275×216.5, \"office of royal households\", \"painter to the king\"), WD wbgetentities (200; Q3329787/Q2853149/Q430775/Q473506 etiketleri). Wayback snapshot tarihleri availability API ile teyit (Met 20250720043430, NGC 20260209120740, P973 20160303231430). Canlı Met API 404, Met HTML 429, NGC 403 yeniden doğrulandı → arşiv kullanımı beyanlı. Görsel İNCELENMEDİ (metadata only) → GZ TASLAK; kitap metinlerine erişilmedi (C064). Sekiz D + on altı E kesinleştirilmedi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Salon 1787: data \"1787 Salonu'nda sergilenmiştir\" DESTEKLİ ama nüanslı — açılışta yok, idare ısrarıyla sonradan (C013; C045 D).",
+  "Boyut: data kayıtlarında boyut alanı YOK. Eklenirse birincil envanter 275×215 (POP, C033) önerilir; 275×216.5 (Met/NGC) varyantı not edilir; 271×195/210 (GAP/WD/Commons) aykırı değer (C044 D).",
+  "muze_numaralari.json: görsel 31c5fe2dce1fcddf → \"met\":\"656654\" bir ÖDÜNÇ/sergi kaydıdır, Met mülkiyeti değil (C025/C050 D); canlı API 404, canlı HTML 429, yalnız Wayback 2025-07-20. \"Met koleksiyonu\" izlenimi verilmemeli.",
+  "eserler_onbellek \"muze\":\"Musée de l'Histoire de France\" = WD P195 (Q3329787, \"museum in the Palace of Versailles\"); POP conservation \"musée national des châteaux de Versailles et de Trianon\" → granularity farkı, çelişki değil (S12 ile teyit).",
+  "eserler_onbellek görsel \"l\":\"\" (lisans boş) → Commons PD-Art/PD-old-100-expired ile doldurulabilir (C026); \"kaynaklar\":[\"wikidata\"] → artık birincil POP/GAP + arşiv Met/S10 mevcut. data DEĞİŞTİRİLMEDİ.",
+  "Rousseau atfı: basyapitlar \"Neden önemli?\" + Marie-Thérèse hotspot'ı \"Rousseau'nun doğal annelik ideali\" der; erişilen kaynaklarda Rousseau adı YOK (C055 E). GAP \"childhood interest\" genel bağlamı destekler, Rousseau'yu değil.",
+  "Beşik örtüsü: data \"koyu yeşil örtü\" ↔ Commons \"crêpe noir\" ↔ S9 \"verts … du berceau\" (C060 E); görsel teyit gerekli.",
+  "Veliahtın jesti: data \"örtüsünü kaldırdığı … gösteriyor\" ↔ itwiki \"indica\" ↔ Commons \"bras protecteur\" (sarıyor) ↔ S10 \"désigne\" (C042 C, C065 E); görsel incelenmedi.",
+  "Takı: data \"gösterişli takılar olmaması\" → kolye yok (B) ama itwiki damla küpe der; \"hiç takı yok\" kesinleştirmesi yanlış (C054 E).",
+  "Kürk/renk: data \"kırmızı kadife … kürklü kenar\" → NGC \"sable\" ↔ Commons \"marte\"/\"velours puce\" (C051 D); data'da kürk türü yok.",
+  "Mekân: data \"Solda Aynalı Salon'un pencereleri\" → B (C017); S10 \"salon de la Paix\" sapması (C048 D). Model: data \"Raffaello'nun Kutsal Aile\" → B (C015); Commons \"Giulio Romano\" varyantı (C047 D).",
+  "Taç: data hotspot \"Gölgedeki taç\" → itwiki tek kaynak, satır içi atıf yok (C019 C); görsel teyit gerekli.",
+  "Veliahtın ölümü: data \"iki yıl sonra ölmesi\" → itwiki 4 Haziran 1789 (C030 C); WD Q473506 açıklaması 1781–1789 (yardımcı teyit); GAP \"Haziran 1789\" (A) sergileme bitişiyle uyumlu.",
+  "WD gürültüsü: P180 deprecated Q430775 (Louis Joseph Prince de Condé, yanlış figür) data'ya yansımamış (C058); P217 WD'de refsiz ama POP ile doğrulandı (C059).",
+  "Uyumlu alanlar: eser_adlari_tr \"Marie Antoinette ve Çocukları\", eser_konulari \"portre\", eser_zorluk 10, WD P136 = Q134307 (portrait) → çelişki yok. Üslup: data \"Rokoko + Neoklasik\" yorum (C062 E)."
+ ]
+}

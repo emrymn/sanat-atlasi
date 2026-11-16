@@ -1,0 +1,880 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q318947",
+ "sanatci_id": "caravaggio",
+ "baslik": "Emmaus'ta Akşam Yemeği",
+ "ozgun_baslik": "The Supper at Emmaus (Supper at Emmaus)",
+ "kunye": {
+  "sanatci": "Michelangelo Merisi da Caravaggio",
+  "sanatci_yasam": "1571–1610",
+  "tarih": "1601",
+  "tarih_belirsizlik": "NG/WD/enwiki 1601; itwiki \"1601–1602\"; ödeme belgesi 7 Ocak 1602 (C024); enwiki görsel dosya adı \"1602-3\" zayıf sinyal → tartışma (C039). En güvenli: \"1601 (ödeme 7 Ocak 1602)\".",
+  "teknik": "Tuval üzerine yağlıboya (NG Details \"Oil on canvas\"); NG audio \"oil and tempera\" der → iç ihtilaf (C043); Keith 1998 gövdesi taranmış, doğrulanamadı.",
+  "boyut_cm": {
+   "yukseklik": 141,
+   "genislik": 196.2
+  },
+  "muze": "National Gallery, Londra (Main Collection)",
+  "envanter": "NG172",
+  "edinim": "Hon. George Vernon tarafından hediye, 1839 (NG'nin ilk Caravaggio'su); data \"1933'ten beri\" hatalı (C037).",
+  "konum": "Room 32 (Baroque Splendour: Italian Painting 1600–1700); çerçeveli, 17. yy İtalyan çerçeve.",
+  "telif_durumu": "Kamu malı (Caravaggio ö.1610; PD-Art/PD-old-100); WD P6216=public domain; görsel incelenmedi."
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Supper_at_Emmaus-Caravaggio_(1601).jpg",
+  "kaynak": "Wikimedia Commons (itwiki infobox; data/ yerel_gorseller hash 9e546be8055846af). WD P18 ayrı dosya: Caravaggio - Supper at Emmaus - National Gallery London.jpeg.",
+  "lisans": "Public domain (PD-Art / PD-old-100)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük; BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "data görseli 11412×8117 px; WD P18 3388×2410 px; enwiki infobox 5946×4226 px",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre ZORUNLU (C049); GZ TASLAK; kompozisyon \"kaynakların betimlediği\" (S4/S3/S7) metninden; hotspot koordinatları doğrulanmadı; görsel projeye kopyalanmadı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 426
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1351
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2748
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-caravaggizm-versiyonlar-graham-dixon"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-renk-ışık-ve-anlam-teolojik-erdemler-hancının-gölgesi-epistemoloji"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tartışmaları-havari-kimliği-ichthys-meyve-envanteri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-doğrudan-tuvale-boyama-çizim-yokluğu-ve-teknik-çıkarımlar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "National Gallery birincil kataloguyla künyeyi (1601, tuval/yağlıboya, 141×196.2, NG172, Room 32, 1839 Vernon) doğrular.",
+  "Birincilin iç çelişkilerini (oil↔oil+tempera; WD boyut yönü ters) ve data hatalarını (1933; incir; şarap sürahisi) yönetir.",
+  "Chiaroscuro, içe dönük üçgen kompozisyon, kısaltım (foreshortening) ve \"ters hale\" gölgesini kaynak betimiyle analiz eder.",
+  "Ichthys, hacı kabuğu, Buon Pastore ve teolojik erdemler ikonografisini kanıt düzeyleriyle (A/B/C) sunar.",
+  "Havari kimliği (4 hedged atıf) ve provenans hipotez zincirini belirsizliği koruyarak tartışır; Londra↔Brera versiyonlarını ayırır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Chiaroscuro",
+   "tanim": "Işık-gölge karşıtlığı; NG'nin bu eser için kullandığı terim (tenebrizm değil).",
+   "kanit": [
+    "C015",
+    "C032"
+   ]
+  },
+  {
+   "ad": "Ichthys",
+   "tanim": "Yunanca \"balık\"; erken Hristiyan İsa sembolü/akrostiği; sepet örgüsü + balık gölgesi.",
+   "kanit": [
+    "C028",
+    "C018"
+   ]
+  },
+  {
+   "ad": "Abbozzo",
+   "tanim": "Fırçayla kaba kontur/alt çizim; doğrudan tuvale boyamada yerleştirme rehberi.",
+   "kanit": [
+    "C020",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Pentimento",
+   "tanim": "Yapımcı değişikliği; bu eserde tek önemli örnek sağdaki havarinin sol dizinin yer değiştirmesi.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Foreshortening (kısaltım)",
+   "tanim": "Derinliğe uzanan biçimin kısaltılarak çizilmesi; sağdaki havarinin izleyiciye uzanan kolları.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Tam ad \"The Supper at Emmaus\"; sanatçı Michelangelo Merisi da Caravaggio (1571–1610).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Yapım tarihi 1601 (NG \"Date made 1601\"; WD P571=1601 precision 9).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tuval üzerine yağlıboya (NG \"Oil on canvas\"; WD P186 oil paint + canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 141 × 196.2 cm (Y×G; NG \"Dimensions\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Envanter NG172; National Gallery Main Collection.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Room 32'de sergileniyor; çerçeveli (WD preferred P276=Q138914903 \"Room 32 Baroque Splendour\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "1839'da Hon. George Vernon hediyesi; NG'nin ilk Caravaggio'su (WD P195 P580=1839).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "1601'de Ciriaco Mattei (1542–1614) siparişi; Mattei 1601–2'de üç eser sipariş etti (bu tablo, The Taking of Christ, Saint John the Baptist).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu Luka 24:30–31: dirilen İsa'nın ekmeği kutsadığı anda tanınması ve kayboluşu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İsa genç/sakalsız; havariler sıradan çalışan insanlar, sakallı, çizgili yüzler, yırtık giysiler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Soldaki havari sandalyeden fırlamak üzere, dirseği izleyiciye dönük; sağdaki kollarını iki yana açar (inançsızlık), aşırı kısaltımla (foreshortening) uzanır; poz Çarmıh'ı çağrıştırır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "NG: sağdaki \"often identified as Saint Peter\"; soldaki \"thought to be Cleophas\" (İncil'de adı geçen tek havari).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Sağdaki havarinin göğsündeki deniz kabuğu (scallop shell) hacı sembolü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Hancı kayıtsız, yüzü gölgede, sahnenin dışında; \"ışığı görmemiş\" imaası.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Güçlü ışık soldan; dram chiaroscuro (ışık-gölge karşıtlığı) ile yükseltilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "İsa'nın arkasındaki boş duvarda \"almost like a reverse halo\" (neredeyse ters hale) gölge.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Natürmort: köy ekmeği, tavuk, kenardan taşan meyve sepeti; su sürahisi + şarap kadehi ışığı yansıtır/kırar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Meyve sepetinin beyaz örtüde balık biçimli gölgesi; İsa'ya gönderme.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Doğrudan tuvale boyama; kesin atfedilen (\"firmly attributed\") hiçbir çizim kalmamıştır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Şarap kadehi tabanı konturunun üstünde koyu kahverengi fırça çizimi (abbozzo) izleri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Görünür kazıma (incision) yok; baştan silik veya boya katmanlarınca gizli olabilir (\"might well have been\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Belirgin pentimenti az; tek önemli değişiklik sağdaki havarinin sol dizinin halının önünden arkasına alınması.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Provenans (NG/Levey 1986): Villa Borghese 1650; \"likely\" Scipione Borghese (†1633); 1693 envanter; Palazzo Borghese 1787; Camillo Borghese→Durand 9 Nisan 1801; Vernon 1831 (Christie lot 35, bought in); Lord Vernon 1839.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Mattei siparişi 1601; ödeme 150 scudi, 7 Ocak 1602 (Mattei di Giove arşivi; Marini 2005 / Cappelletti-Testa 1990 — erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "itwiki provenans ekleri: 1616 Mattei envanteri; Marini 1605 sonrası Borghese devri \"ipotizza\"; 1693 oymalı-yaldızlı çerçeve; 1748 Acquaviva (\"ultima cena\"); 1801 Durand; \"lord Georges Venon\" 1839.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sakalsız İsa, Mark 16:12 \"in another form\" ile ilişkilendirilir (hipotez; Scribner 1977 NG kaynakçasında, erişilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "İsa \"Buon Pastore\" tipinde genç/sakalsız/androjen; Calvesi: gençlik \"sonsuz yaşamın işareti\" (itwiki; Calvesi 1986/Hibbard 1983 — erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Sepet örgüsünde iki kesişen eğri çubuk + meyve gölgesinin balık kuyruğu = Ichthys; kasıtlı okunur (BBC + Levi della Torre 2003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Kırmızı-beyaz-yeşil hâkimiyeti üç teolojik erdeme (İman/Umut/Sevgi) gönderme \"yapabilir\" (potrebbe).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Elmada mantar kökenli karaleke (ticchiolatura); hastalığın ilk kayıtlarından biri \"olduğuna inanılır\" (si crede).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "1606 Brera (Milano) ikinci versiyon: jestler ölçülü, daha karanlık, meyve sepeti tamamen yok; her iki versiyonda trompe-l'œil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "\"Tenebrizm\" terimi erişilen kaynaklarda bu eser için geçmez; NG \"chiaroscuro\" der.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "Sergi tarihi (NG, 2009+): 2009 Brera; 2009–10 Chicago; 2010 Scuderie del Quirinale; 2016–17 Beyond Caravaggio (Londra/Dublin/Edinburgh); 2024 Ulster Museum.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "NG'deki üç Caravaggio'dan biri (diğerleri Boy bitten by a Lizard, Salome receives the Head of John the Baptist).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "BBC meyve envanteri: nar, üzüm, çürük russet elmaları, ayva.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Graham-Dixon alıntısı (BBC): mucize anında dünyanın nasıl göründüğü sorusu (kitap metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "D1 edinme yılı: data \"1933'ten beri\" ↔ NG 1839 + WD P580=1839 + itwiki 1839; 1933 hiçbir kaynakta yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D2 boyut/yön: NG 141×196.2 (Y×G) ↔ WD P2048=196.2/P2049=141 (ters) ↔ itwiki giriş 139×195 ↔ itwiki infobox 141/196 ↔ enwiki 141/196.2.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D3 tarih: NG/WD/enwiki 1601 ↔ itwiki 1601–1602 + ödeme 7 Ocak 1602 ↔ enwiki dosya adı \"1602-3\" (zayıf; DateTimeOriginal=1601).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S2",
+    "S1",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D4 havari kimliği (konsensüs yok, hedged): NG sağ Petrus/sol Cleophas ↔ enwiki Luke+Cleopas ↔ itwiki sol Cleofa/sağ \"forse Giacomo Maggiore\" + Papa sol Luca ↔ BBC sol Cleopas/sağ Luke ↔ data \"belki Aziz Yakup\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D5 WD konum kirliliği: Q318947 P276=Q490 (Milano) (ref azwiki); preferred P276=Room 32 NG ile uyumlu; Milano ayrı öğe Q2097931.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D6 meyve + sürahi: data \"üzüm/incir/nar\" ↔ NG audio elma/üzüm/armut ↔ BBC nar/üzüm/russet/ayva ↔ itwiki elma; incir hiçbir kaynakta yok. data \"şarap sürahisi\" ↔ NG \"carafe of water and wine glass\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D7 teknik (NG içi): Details \"Oil on canvas\" ↔ audio \"oil and tempera\"; Keith 1998 gövdesi okunamadı → tempera doğrulanamadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D8 itwiki bibliyografya tutarsızlıkları: Hibbard 1983/1985; Grovier/Govier 2005/2009 ↔ BBC Kelly Grovier; Bologna 2006/1992; Cappelletti-Testa Art e Dossier 42 ↔ Storia dell'arte 69. Künyeler AYNEN korunur.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "E11 data \"meyveler Çile'nin simgeleri\" desteklenmez; itwiki elma→Peccato Originale; Warma 1990 (erişilmedi) diriliş bağlamı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E12 data abartıları (\"sandalye dışarı taşar\", \"tek parlak renkler\", \"ışık tek kaynaktan sol üstten\") erişilen kaynaklarda açıkça yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E13 data \"Rembrandt'tan Velázquez'e etki zinciri\" desteklenmez; BBC yalnız konu ilhamını söyler.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E8 BBC içi tutarsızlık: Boy bitten by a Lizard için \"Seven years before\" ↔ \"half a decade later\"; görsel altı \"appears to show\"/\"seems to echo\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Görseller İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük; 3 Commons dosyası PD; hotspot doğrulanmadı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Erişilemeyen kaynaklar: Keith 1998 gövdesi (taranmış), Smarthistory (ölü), Met kataloğu, Wayback NG 2005, kitap/makale metinleri (yalnız kaynakçada anıldı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S11",
+    "S12",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Estetik yorum: gerçekçilik+sembolizm tek dilde; nesneler hem optik gerçeklik hem christolojik anlam; Bologna \"nesneleri kişilerle eşitleme\" tezinin yorumu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C052",
+   "ifade": "Estetik yorum: ışık epistemolojik ayrım aracı; görenler (havariler) ↔ görmeyen (hancı); chiaroscuro bilgi/iman durumu olarak okunabilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C053",
+   "ifade": "NG audio: masada izleyici için boş yer; İsa'nın kutsayan eli izleyiciyi bu boşluğa çeker.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "NG audio betimi: meyveler elma/üzüm/armut; İsa kırmızı-beyaz, kahverengi kıvırcık saç; sağ havari kahverengi tunik/beyaz gömlek/gri sakal; sol havari yeşil ceket/mercan pantolon/kolunda yırtık; hancı beyaz başlık/kahverengi/kolda kırmızı-beyaz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "itwiki: Titian'ın Emmaus'u da NG Londra'da; hancı İsa yanında ayakta, vahye kayıtsız; Cleofa solda/Luca sağda (Rodolfo Papa — erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "NG In-depth: sağdaki havarinin kuşağı/örtü birleşiminde hızlı, yoğun impasto iki çapraz fırça darbesi (özet yerleştirme işareti).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Levi della Torre (itwiki): iki karşıt görüş (hancı olgusal ↔ havari \"bedenleşmiş söz\"); sepet/gölge \"bedenleşme ve vahiy\" çapraz (chiasmus) metaforu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Erken hostile okuma (itwiki): Jusepe Martínez, Discursos practicables (1675–76): sakalsız İsa \"bottega çocuğu\", havariler \"parecen dos birbones\"; hacı kabuğunu gözden kaçırır (metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q318947 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q318947.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "Supper at Emmaus (Caravaggio, London) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Supper%20at%20Emmaus%20(Caravaggio%2C%20London)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia IT",
+   "belge": "Cena in Emmaus (Caravaggio Londra) wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Cena%20in%20Emmaus%20(Caravaggio%20Londra)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext; akademik atıf zincirli)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "National Gallery",
+   "belge": "Birincil katalog (Overview/In-depth/Audio/Key facts/Provenance/Exhibition/Bibliography)",
+   "url": "https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (125.575 bayt HTML)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery",
+   "belge": "Keith 1998, NG Technical Bulletin 19, ss. 37–51 (PDF)",
+   "url": "https://www.nationalgallery.org.uk/upload/pdf/keith1998b.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; gövde TARANMIŞ, metne ERİŞİLEMEDİ (yalnız sayfa başlıkları)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: WD P18 + data/ dosyası (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Caravaggio%20-%20Supper%20at%20Emmaus%20-%20National%20Gallery%20London.jpeg|File:Supper%20at%20Emmaus-Caravaggio%20(1601).jpg&prop=imageinfo&iiprop=url|size|extmetadata&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→429→200 (backoff); metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "BBC Culture",
+   "belge": "Kelly Grovier, \"The Supper at Emmaus: A coded symbol hidden in a masterpiece\", 18 June 2021",
+   "url": "https://www.bbc.com/culture/article/20210617-the-supper-at-emmaus-a-coded-symbol-hidden-in-a-masterpiece",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket sorgusu (Q138914903, Q180788, Q19652 vb.)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q138914903|Q180788|Q19652&props=labels&languages=en|tr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikipedia EN",
+   "belge": "Milano versiyonu pageprops (wikibase_item=Q2097931)",
+   "url": "https://en.wikipedia.org/w/api.php?action=query&titles=Supper%20at%20Emmaus%20(Caravaggio%2C%20Milan)&prop=pageprops&format=json&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: enwiki infobox dosyası \"1602-3 Caravaggio,Supper at Emmaus National Gallery, London.jpg\"",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:1602-3%20Caravaggio,Supper%20at%20Emmaus%20National%20Gallery,%20London.jpg&prop=imageinfo&iiprop=url|size|extmetadata&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "NG (Wayback)",
+   "belge": "Eski NG katalog NG172 (arşiv 2005-12-17)",
+   "url": "https://web.archive.org/web/20051217074617/http://nationalgallery.org.uk/cgi-bin/WebObjects.dll/CollectionPublisher.woa/wa/work?workNumber=NG172",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLMEDİ (canlı S4 açıldı; gerek kalmadı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Smarthistory/Khan",
+   "belge": "Caravaggio's Supper at Emmaus (enwiki url-status=dead; arşiv 2014-10-11)",
+   "url": "https://web.archive.org/web/20141011221851/http://smarthistory.khanacademy.org/supper-at-emmaus.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLMEDİ (ölü işaretli)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Met Museum",
+   "belge": "\"Painters of reality: The legacy of Leonardo and Caravaggio in Lombardy\" sergi kataloğu",
+   "url": "https://www.metmuseum.org/met-publications/painters-of-reality-the-legacy-of-leonardo-and-caravaggio-in-lombardy",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLMEDİ (kaynakçada anıldı)",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Supper at Emmaus (Brera versiyonu)",
+   "sanatci": "Caravaggio",
+   "kurum": "Pinacoteca di Brera, Milano",
+   "envanter": "Q2097931",
+   "mufredat_ici": true,
+   "gerekce": "Aynı konunun 1606 ikinci versiyonu; jestler ölçülü, daha karanlık, meyve sepeti yok; trompe-l'œil her ikisinde. Versiyon içi karşılaştırma.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "eser": "Boy bitten by a Lizard",
+   "sanatci": "Caravaggio",
+   "kurum": "National Gallery, Londra",
+   "gerekce": "Aynı müzedeki Caravaggio; natürmort ve ışık kullanımı akrabalığı. (BBC zaman aralığı ifadesi tutarsız — kronolojide kullanma.)",
+   "kanit": [
+    "C034",
+    "C048"
+   ]
+  },
+  {
+   "eser": "Cena in Emmaus (Titian)",
+   "sanatci": "Titian",
+   "kurum": "National Gallery, Londra",
+   "gerekce": "Aynı konu + aynı müze; itwiki/Rodolfo Papa hancının İsa yanında ayakta ve vahye kayıtsız olduğunu aktarır; Caravaggio'nun hancı figürünü gelenek içinde konumlandırır.",
+   "kanit": [
+    "C055"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NG birincil katalog (S4, HTTP 200) + Keith 1998 PDF (S5, gövde taranmış) + en/itwiki wikitext (S2/S3) + BBC (S7) + WD (S1) + Commons metadata (S6/S10) 2026-11-14'te yeniden açıldı; künye/konu/teknik/provenans/sergi doğrulandı. Birincil iç çelişki oil↔tempera (C043); WD boyut yönü ters (C038); WD P276 Milano kirliliği (C041). Sekiz ihtilaf D (C037–C044) açık. Görseller metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C049); GZ TASLAK. Keith gövdesi/Smarthistory/Met/kitap metinleri erişilmedi (C050).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Edinme yılı: data/basyapitlar.json + eserler_onbellek.json \"(1933'ten beri)\" ↔ NG 1839 (C037 D) — en net data hatası adayı; düzeltilmeli.",
+  "Meyve: data/eser_ayrintilari \"Üzüm, incir ve nar\" — incir erişilen kaynaklarda yok (NG audio elma/üzüm/armut; BBC nar/üzüm/russet/ayva) (C042 D); \"Çile'nin simgeleri\" desteklenmiyor (C045 E).",
+  "Sürahi: data/basyapitlar \"şarap sürahisi\" ↔ data/eser_ayrintilari \"su sürahisi ve şarap\" ↔ NG \"carafe of water and wine glass\" (C042 D).",
+  "Havari kimliği: data \"belki Aziz Yakup\" itwiki/Hibbard ile uyumlu ama NG \"often identified as Saint Peter\" der (C040 D); derste tek kimlik kesinleştirilmedi.",
+  "Versiyon: data tarafında karışma YOK (Q318947 Londra; Milano ayrı Q2097931). WD P276=Q490 (Milano) kirliliği var (C041 D); preferred Room 32 kullanılmalı.",
+  "Boyut: data'da alan yok; NG 141×196.2 esas; WD P2048/P2049 ters (C038 D).",
+  "Tenebrizm: data terimi erişilen kaynaklarda bu eser için geçmiyor; NG \"chiaroscuro\" (C032 E).",
+  "Etki zinciri: data \"Rembrandt'tan Velázquez'e etkiledi\" — BBC yalnız konu ilhamını söyler (C047 E).",
+  "Görsel İNCELENEMEDİ (C049); GZ TASLAK; insan editör görsel teyidi zorunlu (özellikle meyve C042, balık gölgesi C018, kabuk C013)."
+ ]
+}

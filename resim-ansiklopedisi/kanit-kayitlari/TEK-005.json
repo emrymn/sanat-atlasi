@@ -1,0 +1,247 @@
+{
+  "madde_id": "TEK-005",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (TEK-005) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "'Wasli', Hint alt kıtasının geleneksel minyatür resmi için hazırlanan özel kâğıdın adıdır: birkaç kat kâğıdın yapıştırılıp parlatılmasıyla elde edilir; dolayısıyla bir boya/teknik adı değil, hazırlanmış destek (altlık) adıdır ve müze kayıtlarında malzeme alanında geçer. V&A'nın Imran Qureshi kaydı (IS.7:1-2003, 2001) eseri 'Painting, opaque watercolour, letraset transfer and collage on wasli (paper), in the miniature painting format' diye verir; Cleveland Museum of Art'ın Shahzia Sikander kaydı (2021.103, 2020) teknik alanını 'color digital printing, watercolor, and gouache on wasli paper' olarak kaydeder. Bu iki kurumsal kullanım örneği 2001 ve 2020 tarihli çağdaş eserlerdir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-005-K03",
+      "kaynak_baslik": "Kanwal Khalid (2015), \"Traditional Materials Used by the Miniature Artists: An Introductory Study\"",
+      "url": "https://pu.edu.pk/images/journal/uoc/PDF-FILES/15%20Kanwal%20Khalid_90-1_2015.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "For traditional miniature painting of the Subcontinent, a special paper is prepared that is called Wasli.",
+      "pasaj_konum": "K03 'Wasli' başlıklı bölüm; ikinci kaynak pasajları K02 API physicalDescription (IS.7:1-2003) ve K09 API technique (2021.103)",
+      "belirsizlik_ifadeleri": [
+        "kurumsal kullanım örnekleri çağdaş eserlerdir (V&A IS.7:1-2003 → 2001; CMA 2021.103 → 2020); 16.–19. yy kayıtlarında terim geçmez (bkz. C002)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K02",
+        "TEK-005-K09"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak pasajları — K02 (V&A Collections API, CANLI): 'Painting, opaque watercolour, letraset transfer and collage on wasli (paper), in the miniature painting format…'; K09 (CMA Open Access API, CANLI): 'color digital printing, watercolor, and gouache on wasli paper'. 1 akademik + 2 bağımsız müze kaydı → Kural 7 karşılandı. Terim 'destek' olarak tanımlandı, boya tekniğiyle eşitlenmedi."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Açılan müze kataloglarında 16.–19. yüzyıl Mughal ve Rajput minyatürleri için 'wasli' terimi kullanılmaz: V&A kayıtları 'opaque watercolour / gold / paper' (IM.8-1925) ve 'Painting, in opaque watercolour and gold on paper' (IS.2:27-1896), Met kaydı 'Main support: Ink, opaque watercolor, gold on paper / Margins: Gold on dyed paper' (13.228.30), Cleveland kaydı 'Gum tempera and gold on paper, mounted with gold-sprinkled borders' (2013.294, kültür alanı 'Mughal India, court of Akbar (reigned 1556–1605)') biçimindedir. V&A Collections API'sinde 'wasli' araması 5, Cleveland Open Access API'sinde 1 sonuç verir (CMA'da 'Mughal' araması 1417 kayda karşı) ve bu sonuçların tümü 2001–2020 tarihli çağdaş eserlerdir; V&A'nın 'The arts of the Mughal Empire' makalesinin tam metninde 'wasli' kelimesi hiç geçmez.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-005-K02",
+      "kaynak_baslik": "Victoria and Albert Museum · Collections API v2 — nesne kayıtları (IM.5-1921, IM.8-1925, IS.2:27-1896, IS.7:1-2003) ve q=wasli araması",
+      "url": "https://api.vam.ac.uk/v2/museumobject/O66604",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "IS.2:27-1896 physicalDescription: 'Painting, in opaque watercolour and gold on paper…' | CMA 2013.294 technique: 'Gum tempera and gold on paper, mounted with gold-sprinkled borders' (culture: 'Mughal India, court of Akbar (reigned 1556–1605)').",
+      "pasaj_konum": "API alanları: materials / physicalDescription / medium / technique. Sorgu toplamları: V&A q=wasli → 5; CMA q=wasli → 1; CMA q=Mughal → 1417. K01 makalesinin tam metin taramasında 'wasli' 0 kez geçer.",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K01",
+        "TEK-005-K06",
+        "TEK-005-K09"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak pasajları — K06 (Met Collection API 446564, CANLI): 'Main support: Ink, opaque watercolor, gold on paper / Margins: Gold on dyed paper'; K02 (IM.8-1925 materials): 'opaque watercolour / gold / paper'. Tespit açık API sorgularına dayanır: terimin kurumsal kullanımı 2001–2020 tarihli çağdaş kayıtlarla sınırlı. Bu bulgu maddenin çerçevesini belirler (akademik_tartismalar 1–2)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "V&A kaydına göre Hamzanama, Mughal sarayının yeni resim atölyesinin üstlendiği ilk büyük projedir: Humayun'un getirdiği iki İranlı ustanın (Mir Sayyid 'Ali ve 'Abdus Samad) yönetiminde Akbar döneminde 1562 gibi erken bir tarihte başlamış, on beş yıl sürdüğü ve on dört ciltten oluştuğu söylenmiştir; V&A makalesi çoğu otoritenin tarih aralığı için yaklaşık 1562–1577 üzerinde uzlaştığını, 200'den az yaprağın günümüze ulaştığını, en büyük grubun 60 yaprakla Viyana MAK'ta, ikinci grubun 28 tam yaprak ve 2 parçayla V&A'da bulunduğunu yazar. Bu yaprakların desteği wasli'nin 'kâğıt üstüne kâğıt' tarifine birebir uymaz: her büyük yaprak çok katmanlıdır — metin kâğıda yazılıp parlatılmış, hafifçe altınla beneklenmiş ve pamukla desteklenmiş; resim pamuk üzerine yapılıp arkası kâğıtla desteklenmiş; katmanlar birbirine yapıştırılmıştır. V&A kaydı bu resimleri 'büyük boyutları ve kâğıt yerine hazırlanmış pamuk üzerine yapılmış olmalarıyla sıra dışı' bulur ve tekniği 'gouache on cotton' olarak verir; Met'in aynı gruba ait yaprak kaydı (23.264.1) 'Ink, opaque watercolor, and gold on cloth; mounted on paper' der — iki bağımsız kurum aynı destek yapısını doğrular.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-005-K01",
+      "kaynak_baslik": "Victoria and Albert Museum — \"The arts of the Mughal Empire\" (27 October 2025)",
+      "url": "https://www.vam.ac.uk/articles/the-arts-of-the-mughal-empire",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Each of the large folios of the Hamzanama is made up of multiple layers. The text is written on paper, burnished and lightly flecked with gold and backed with cotton; the painting is done on cotton which is backed with paper.",
+      "pasaj_konum": "K01 'The Hamzanama' bölümü; K02 objectHistory (IM.5-1921); K06 API medium (447743 / 23.264.1)",
+      "belirsizlik_ifadeleri": [
+        "most authorities now agree that they fell between about 1562 and 1577",
+        "was said to have taken fifteen years to complete",
+        "It was said to have consisted of fourteen volumes",
+        "is said to have been illiterate (Akbar)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K02",
+        "TEK-005-K06"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak pasajları — K02 (IM.5-1921 objectHistory): 'The \\'Hamzanama\\' was the first major project undertaken by the new painting studio of the Mughal court. Directed by two Iranian masters (Mir Sayyid \\'Ali and \\'Abdus Samad) brought to India by Humayun, work began under Akbar as early as 1562…'; aynı kayıt: 'The paintings are unusual for their large format and for being painted on prepared cotton rather than on paper.'; K06 (447743 medium): 'Ink, opaque watercolor, and gold on cloth; mounted on paper'. İki bağımsız kurum aynı destek yapısını doğrular → brief'in 'wasli = her minyatürün desteği' genellemesini çürüten istisna metne açıkça yazıldı. Hamzanama'nın neden pamuk desteğe yapıldığına dair 'büyük boyut' dışında gerekçe üretilmedi (K02 yalnız 'unusual for their large format…' der)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Kanwal Khalid'in çalışmasına göre wasli, minyatürün boyutuna bağlı olarak dört veya sekiz kat kâğıdın iyi bir tutkalla birleştirilmesinden oluşur; sıradan kâğıda göre daha düzgün bir yüzey ve daha sağlam bir temel sağlar, bu nedenle ayrıntılı ve ince iş için uygundur. Katmanları birleştiren tutkalın basit tariflerinden biri ince unun (maida) suda bekletilip kaynatılmasıdır; böceklerin, özellikle termitin kâğıda zarar vermesini önlemek için tutkala göztaşı (blue vitriol, Neela Thotha) eklenir. Khalid birçok farklı hazırlama yöntemi kullanıldığını, günümüzde yalnız birkaç sanatçının kendi tutkalını hazırladığını, bilginin büyük ölçüde kuşaktan kuşağa sözlü aktarıldığını ve mevcut belgelerin bir kısmının ayrıca araştırma ve doğrulama gerektirdiğini belirtir; katman sayısı ve tutkal tarifi bu maddede tek kaynaklıdır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-005-K03",
+      "kaynak_baslik": "Kanwal Khalid (2015), \"Traditional Materials Used by the Miniature Artists: An Introductory Study\"",
+      "url": "https://pu.edu.pk/images/journal/uoc/PDF-FILES/15%20Kanwal%20Khalid_90-1_2015.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "Basically it consists of four or eight layers of paper (depending on the size of the miniature) that are bound together with some good glue. Blue vitriol (Neela Thotha) is also added to the glue because it helps to prevent the paper being destroyed by different insects specially termite.",
+      "pasaj_konum": "K03 'Wasli' bölümü, 1. paragraf ve tutkal tarifleri",
+      "belirsizlik_ifadeleri": [
+        "depending on the size of the miniature",
+        "Many methods were used to prepare it",
+        "a few artists still prepare their own glue",
+        "much of that documentation need further research and verification because many of the materials and methods explained are not very authentic",
+        "some are just make beliefs"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "K10 (Wikipedia) kaynaksız biçimde farklı bir katman sayısı ima eder; aynı maddeyi yinelediği için bağımsız kaynak sayılmaz → tek sayı verilmedi (akademik_tartismalar 6)"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "TEK KAYNAK: K10'un 'copper sulphate (Neela Thootha)' ve 'cooking flour' ifadeleri atıfsız yineleme olduğundan bağımsız ikinci kaynak sayılmadı (Kural 2/7) → KISMEN_DESTEKLENIYOR. Metinde 'Khalid'e göre' atfı görünür tutuldu; yazarın kendi kaynak-eleştirisi notu iddiaya dahil edildi. Erişilemeyen Schimmel & Welch 1983 (s.37, 46) bu iddiaya ikinci kaynak olamaz (metin okunamadı)."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Katmanlar kuruduktan sonra oluşan kalın levha parlatılır: Khalid'e göre tercihen akik/kornelian (Aqeeq) gibi düzgün bir taş ya da büyük bir deniz kabuğuyla; amaç baz renklerin uygulanmasına uygun, düzgün bir yüzey elde etmektir. Brown University koleksiyon denemesi kristal veya agat, yumurta biçiminde yaklaşık yarım pound ağırlığında bir parlatma taşı tarif eder; tekrarlanan parlatmayla yüzey cam kadar parlak ve pigmentlere karşı daha az gözenekli hâle gelir, bu da pigmentlerin yüzeyde akma/kanama eğilimini azaltarak ressama denetim sağlar; JAIC makalesi İran geleneğinde parlatılmış agat, kaya kristali veya kornelianın parlatıcı olarak kullanılmış olabileceğini ('could have served') yazar. Parlatılmış destek üzerine taslak aktarılır: taslağa khaka denir, bazı ailelerde geyik derisinden yapılan ve kuşaktan kuşağa geçen kalıp charba'dır; khaka çok ince bir iğneyle delinir ve deliklerden geçirilen tozla (kömür tozu) ince kontur yüzeye aktarılır. Boyamada önce baz renkler uygulanır, ardından pigment tanelerini düzleştirmek için yüzey yeniden parlatılır ve ayrıntı aşamasına (pardakht; K03 yazımı 'Pradakht') geçilir; Khalid bazı ressamların her renk katmanından sonra parlatma yaptığını ve minyatürün ayırt edici özelliği sayılan parlaklığın böyle elde edildiğini aktarır. Altın en son uygulanır ve parlaması için yine parlatılır; JAIC İran geleneğinde altının sürüldükten sonra 'pişirildiğini', yani parlak yüzey elde edilene dek parlatıldığını belgeler. Ayrıntıda genellikle tek kıllı, ideal olarak sincap kuyruğu kılından fırça kullanılır; JAIC İran geleneğinde ince uçlu fırçaların kıllarının 'muhtemelen' Fars kedisinin gırtlağından ya da sincap kuyruğundan oluştuğunu ve Sadiqi Bek'in sincap kılından fırça yapımını tarif ettiğini aktarır. Pigmentler suda çözünen bir bağlayıcıyla karıştırılır; arap zamkı İranlı ve Hintli ressamların en yaygın bitkisel bağlayıcısıdır, hayvansal tutkal (ör. manda derisinin kaynatılmasıyla hazırlanan) da kullanılır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-005-K03",
+      "kaynak_baslik": "Kanwal Khalid (2015) + Brown University Library (essay_production) + Purinton & Watters, JAIC 30(2), 1991",
+      "url": "https://pu.edu.pk/images/journal/uoc/PDF-FILES/15%20Kanwal%20Khalid_90-1_2015.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "After drying of these layers of paper, this thick cardboard was burnished either with a smooth stone preferably cornelian (Aqeeq) or with a large seashell. For detail work (Pradakht) mostly a single hairbrush was used and ideally it was made of squirrel's tail hair.",
+      "pasaj_konum": "K03 'Wasli' bölümü (parlatma, khaka/charba, baz renk → yeniden parlatma → Pradakht → altın); K04 'Paper' ve 'Training'/kopyalama bölümleri; K08 §3–§4 (teknik, fırça, altın)",
+      "belirsizlik_ifadeleri": [
+        "K08: 'Polished agate, rock crystal, or carnelian could have served as the burnisher' (olasılık)",
+        "K08: 'probably consisted of either the hairs from the throat of a Persian kitten or the hairs from the tail of a squirrel'",
+        "K03: 'Sometimes a fine layer of deerskin was used to make tracing'",
+        "K03: 'There were artists who burnished the painting after the application of every layer of colour'",
+        "K04: İran/Hint atölye geleneği için genel anlatım; K08 altın parlatmayı Behzad (1939) üzerinden aktarır"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K04",
+        "TEK-005-K08"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Üç bağımsız kaynak → Kural 7 karşılandı (parlatma uygulaması K03+K04+K08; altın parlatma K03+K08; pouncing K03+K04). İkinci kaynak pasajları — K04 (CANLI): 'The paper was then rubbed with a crystal or agate egg-shaped burnishing stone weighing approximately half-a-pound. After repeated burnishing, the paper surface became as shiny as glass, and also less porous to the pigments used in painting.'; K04: 'Gum arabic was the most common vegetale [sic] binder used by Persian and Indian artists alike… Artisans prepared animal glue by boiling a hide, often buffalo hide, in water.'; K08 (CANLI tam metin): 'After the gold was applied with a brush, it was \\'cooked,\\' meaning burnished, until it was a bright glossy gold surface (Behzad 1939).' K08'in İran bağlamı metinde ayrıca belirtildi; 'lustre' ifadesi görsel etki olarak yazıldı, malzeme gibi sunulmadı. Brief C004+C005+C006+C007 ve C008'in bağlayıcı kısmı tek iddiada birleştirildi."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Kurumsal kayıtlarda aynı teknik farklı adlarla geçer: V&A 'opaque watercolour (and gold) on paper', Metropolitan Museum 'Ink, opaque watercolor, and gold on paper', Cleveland Museum of Art 'gum tempera and gold on paper' der; aynı kurum içinde bile Hamzanama yaprağı için 'gouache on cotton' (V&A physicalDescription ve makale alt yazısı) kullanılır. National Gallery sözlüğüne göre guaj, pigmentleri suda ezilip zamkla karıştırılan opak bir suluboya türüdür ve guajla elde edilen sonuç, görünümü alttaki kâğıdın niteliğine daha çok bağlı olan şeffaf suluboya yıkamalarından belirgin biçimde farklıdır. Met'in 2008.359.35 kaydındaki 'Ink and wash on paper' ifadesi aynı gelenekte yıkamanın da kullanıldığını gösterir. Bu terimler aynı malzeme ailesine işaret eder ama eşanlamlı ilan edilemez; bu maddede tek bir terim seçilmemiş, ihtilaf olduğu gibi verilmiştir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-005-K02",
+      "kaynak_baslik": "V&A Collections API (IM.5-1921 physicalDescription) + Met/CMA teknik alanları + NG Paintings Glossary: Gouache",
+      "url": "https://api.vam.ac.uk/v2/museumobject/O66604",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "Painting, gouache on cotton, Hamza kills a lion on the way to visit Anoshirvan at Mada', from the epic romance the Hamzanama.",
+      "pasaj_konum": "K02 API physicalDescription (IM.5-1921); K07 glossary 'Gouache' girişi (tam metin); K06 medium (13.228.30, 2008.359.35); K09 technique (2013.294)",
+      "belirsizlik_ifadeleri": [
+        "K07: 'Before the 19th century the term guazzo was applied to glue-size painting' (etimoloji/tarih notu)",
+        "K07: 'a type of watercolour paint' (guajın üst kategori tanımı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K01",
+        "TEK-005-K06",
+        "TEK-005-K07",
+        "TEK-005-K09"
+      ],
+      "celisen_kaynaklar": [
+        "Kurumlar arası adlandırma ayrışması: K01/K02 'gouache on cotton' ↔ K02 'opaque watercolour and gold on paper' ↔ K06 'Ink, opaque watercolor, and gold on paper' ↔ K09 'Gum tempera and gold on paper'. K07 guajı opak, zamkla karıştırılmış pigment olarak tanımlar; dört terim aynı malzeme ailesine işaret eder ama eşanlamlı ilan edilemez → tek terim seçilmedi.",
+        "K06 (2008.359.35, Kangra/Guler) 'Ink and wash on paper' → aynı gelenekte şeffaf yıkama da kullanılıyor; 'Hint minyatürü = guaj' genellemesini engeller."
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "İkinci kaynak pasajı — K07 (NG glossary, CANLI): 'Gouache is opaque. The pigments used are ground in water and mixed with gum. The results of using gouache appear quite different from those achieved with washes of watercolour, the look of which is more dependent on the nature of the paper beneath.' CELISKILI statüsü terimlerin eşanlamlı sayılamamasını ifade eder; ihtilafın varlığı dört bağımsız kurumsal kayıta dayanır."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "V&A'nın 'The arts of the Mughal Empire' makalesinin görsel alt yazısı Akbarnama yaprağını 'Akbar receives the Iranian Ambassador Sayyid Beg in 1562, illustration to the Akbarnama, opaque watercolour on gold paper, by Farrukh Beg, about 1590 – 95' diye etiketler ve iki yaprağı birleştirerek 'IS.2:27&28-1896' yazar; aynı müzenin güncel API kaydında (IS.2:27-1896, O9419) production alanı 'Composition by La'l, colours and details painted by Nand', _primaryMaker alanı 'La'l'dir ve IS.2:28-1896 ayrı bir kayıttır (O9746) — makale alt yazısı ile güncel katalog kaydı birbirini tutmaz. Aynı kayıt yaprağın ca. 1592–1594 arasında Akbar'ın atölyesinden en az 49 farklı sanatçı tarafından resimlenmiş olabileceğini ('is thought to have been') ve üretim yerinin Delhi, Agra veya Fatehpur Sikri olabileceğini ('likely to be') belirtir; Met denemesi Akbar'ın okuma yazma bilmediğinin söylendiğini, saray atölyesini önce Fatehpur Sikri'de sonra Lahore'da kurduğunu ve atölyede İranlıların yanı sıra Hintli Müslüman ve Hindu sanatçıların çalıştığını yazar.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-005-K01",
+      "kaynak_baslik": "Victoria and Albert Museum — \"The arts of the Mughal Empire\", görsel alt yazısı (Akbarnama yaprağı)",
+      "url": "https://www.vam.ac.uk/articles/the-arts-of-the-mughal-empire",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Akbar receives the Iranian Ambassador Sayyid Beg in 1562, illustration to the Akbarnama, opaque watercolour on gold paper, by Farrukh Beg, about 1590 – 95, Mughul. Museum no. IS.2:27&28-1896.",
+      "pasaj_konum": "K01 makale görsel alt yazısı ↔ K02 API kaydı O9419 (production, _primaryMaker, objectHistory) ve O9746; K05 Met/Heilbrunn denemesi (Wayback)",
+      "belirsizlik_ifadeleri": [
+        "is thought to have been illustrated between ca. 1592 and 1594",
+        "by at least forty-nine different artists from Akbar's studio",
+        "Attribution place is likely to be Delhi, Agra or Fatehpur Sikri",
+        "about 1590 – 95 (makale alt yazısı)",
+        "Although he is said to have been illiterate (Akbar)"
+      ],
+      "destek_duzeyi": "DESTEKLEMIYOR",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K02",
+        "TEK-005-K05"
+      ],
+      "celisen_kaynaklar": [
+        "K01 (makale alt yazısı) 'by Farrukh Beg' ve birleşik 'IS.2:27&28-1896' ↔ K02 (güncel API) 'Composition by La\\'l, colours and details painted by Nand', _primaryMaker 'La\\'l', IS.2:28-1896 ayrı kayıt (O9746). Bu madde güncel API kaydını esas aldı (proje hafızası: makale/arşiv künyesi bayat olabilir); ihtilafın nedeni açılan kaynaklardan belirlenemedi."
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "İkinci kaynak pasajı — K05 (Met denemesi, Wayback 2026-04-22, canlı 429): 'Although he is said to have been illiterate, Akbar assembled a royal atelier, first at Fatehpur Sikri, then at Lahore… the artists who worked for Akbar… included Persians as well as Indian Muslims and Hindus.' K02 objectHistory: 'is thought to have been illustrated between ca. 1592 and 1594 by at least forty-nine different artists from Akbar\\'s studio'. CELISKILI statüsü atıf konusundaki kurum içi tutarsızlığı ifade eder; iş bölümü ve atölye bilgileri güncel katalog kaydına dayanır ve ihtiyat ifadeleriyle yazıldı."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "'Wasli' teriminin Farsça vasl ('birleşme/kavuşma, bir olma') kökünden geldiği ve tekniğin 10. yüzyılda Hindistan'da icat edilip Mughal dönemi resminde yaygın biçimde yer aldığı iddiaları yalnızca Wikipedia'nın 'Wasli' maddesinde, satır içi atıf olmadan yer alır; bu araştırmada açılan kurumsal ve akademik kaynakların (K01–K09) hiçbirinde bu kökenbilim ve köken tarihi geçmez. Khalid'in çalışması tarihsel bir başlangıç yüzyılı vermez; V&A ve Met kayıtları 16. yüzyıl Mughal uygulamasını belgeler. Bu iki iddia doğrulanamamış ve kesin anlatıya dayanak yapılmamıştır.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "TEK-005-K10",
+      "kaynak_baslik": "Wikipedia (İngilizce) — \"Wasli\" (wikitext, action=raw)",
+      "url": "https://en.wikipedia.org/wiki/Wasli",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The term derives from a Persian word Vasl which means union or coming together, oneness, etc. It was devised in India, in the 10th century, and figures widely in Mughal-era painting.",
+      "pasaj_konum": "Wikipedia 'Wasli', 3. paragraf (satır içi atıf yok)",
+      "belirsizlik_ifadeleri": [
+        "cümlelerde atıf yok; maddenin başka yerlerinde Wikipedia'nın kendi {source?|date=January 2020} etiketi var"
+      ],
+      "destek_duzeyi": "DESTEKLEMIYOR",
+      "ikincil_kaynak_ids": [
+        "TEK-005-K03",
+        "TEK-005-K01",
+        "TEK-005-K02"
+      ],
+      "celisen_kaynaklar": [
+        "Yokluk tespiti: K01–K09 arasında bu kökenbilim ve '10. yüzyıl icadı' geçmez; K03 tarihsel bir başlangıç yüzyılı vermez, K01/K02 16. yy Mughal uygulamasını belgeler. K10'un dış bağlantıları da desteklemedi: Pacific Asia Museum 'Beyond the Page' (Wayback 2010-11-28) metninde 'wasli' geçmiyor; Modern Art Oxford wasli öğreticisi PDF'i açılamadı (canlı 500; Wayback 2008-11-21 bozuk)."
+      ],
+      "dogrulama_sonucu": "DOGRULANAMADI",
+      "notlar": "Kural 7: kesin kökenbilim için iki bağımsız akademik kaynak gerekir — burada sıfır. Kural 2: Wikipedia tek başına akademik doğrulama sayılmaz. İddia DOGRULANAMADI olarak tutuldu, kesin anlatıya dayanak yapılmadı; madde metninde ve alternatif_adlar notunda 'doğrulanamadı' ifadesiyle anıldı. 'bashli' biçimi açılan kaynaklarda olmadığı için kullanılmadı."
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3224275",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu eser hangi müzede, hangi envanter numarasıyla kayıtlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Clark Art Institute, 1955.53"
+    },
+    {
+     "harf": "B",
+     "metin": "Hermitage, ГЭ-6294"
+    },
+    {
+     "harf": "C",
+     "metin": "Walters, 37.885"
+    },
+    {
+     "harf": "D",
+     "metin": "Cincinnati, 1917.368"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S9: Clark Art Institute, Object Number 1955.53.",
+   "yanlis_gerekceleri": {
+    "B": "ГЭ-6294, Hermitage'daki 1884 \"Slave Market in Rome\" versiyonunun envanteridir; bu eser değil.",
+    "C": "37.885, Walters'taki 1884 \"A Roman Slave Market\" versiyonunun envanteridir; bu eser değil.",
+    "D": "1917.368, Cincinnati'deki 1871 versiyonunun envanteridir; aynı kompozisyonun başka versiyonu."
+   },
+   "kanit": [
+    "C007",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S9: \"Oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; bu eser tuval üzerine yağlıboyadır.",
+    "C": "Tempera/pano farklı bir teknik ve destektir; birincil kayıt oil on canvas der.",
+    "D": "Suluboya/kâğıt değildir; birincil kayıt yağlıboya/tuval belirtir."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Clark birincil kaydına göre eserin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "84,6 × 63,3 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "84,8 × 63,5 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "114,3 × 93,3 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "63,3 × 84,6 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S8/S9: 84.6 x 63.3 cm (üç erişimde tutarlı).",
+   "yanlis_gerekceleri": {
+    "B": "84,8×63,5 WD/it/ru'nun değeridir; Clark birincil kaydıyla ihtilaflıdır (tartışma), esas alınmaz.",
+    "C": "114,3×93,3 çerçeve boyutudur, resim yüzeyi değil.",
+    "D": "Yükseklik/geneişlik yer değiştirmiş biçimidir; doğru kayıt 84,6 yükseklik × 63,3 genişliktir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "İmza nerede ve nasıl kayıtlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sağ altta \"J. L. GEROME\""
+    },
+    {
+     "harf": "B",
+     "metin": "Sol altta \"Gérôme\""
+    },
+    {
+     "harf": "C",
+     "metin": "Sağ üstte \"JLG\""
+    },
+    {
+     "harf": "D",
+     "metin": "Eser imzasızdır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"Lower right: J. L. GEROME\"; S11 ImageNote sağ alt.",
+   "yanlis_gerekceleri": {
+    "B": "İmza sol altta değil sağ alttadır ve \"Gérôme\" değil \"J. L. GEROME\" biçimindedir.",
+    "C": "İmza sağ üstte değil sağ alttadır; \"JLG\" kısaltması değil.",
+    "D": "Eser imzasız değildir; sağ altta imza kayıtlıdır."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Alıcı, kadını nasıl muayene eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Parmağıyla dişlerini yoklar"
+    },
+    {
+     "harf": "B",
+     "metin": "Saçını okşar"
+    },
+    {
+     "harf": "C",
+     "metin": "Elini öper"
+    },
+    {
+     "harf": "D",
+     "metin": "Omzuna dokunur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"probes her teeth with his finger\" — insanı mala dönüştüren jest.",
+   "yanlis_gerekceleri": {
+    "B": "Saç okşama değil; diş muayenesi vardır.",
+    "C": "El öpme değil; parmakla diş yoklama vardır.",
+    "D": "Omza dokunma değil; diş muayenesi vardır."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Sahnenin mekânı için ne söylenebilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yakın Doğu'yu çağrıştırır ama belirli/teşhis edilebilir bir yer değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kahire'de kesin bir köle pazarıdır"
+    },
+    {
+     "harf": "C",
+     "metin": "Roma forumudur"
+    },
+    {
+     "harf": "D",
+     "metin": "İstanbul Kapalıçarşı'dır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"not a specific, identifiable location\".",
+   "yanlis_gerekceleri": {
+    "B": "Kahire teşhisi Du Camp'ın kendi deneyiminden eklediği yorumdur; resimde yer belirtilmez.",
+    "C": "Roma, 1884 Hermitage/Walters versiyonlarının konusudur; bu eserin mekânı değil.",
+    "D": "Belirli bir yer teşhis edilemez; İstanbul olarak tanımlanmamıştır."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser ilk kez nerede sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1867 Paris Salonu (no. 642)"
+    },
+    {
+     "harf": "B",
+     "metin": "1857 Paris Salonu"
+    },
+    {
+     "harf": "C",
+     "metin": "1868 Berlin"
+    },
+    {
+     "harf": "D",
+     "metin": "1955 Williamstown"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: Paris 1867c, p. 87, no. 642.",
+   "yanlis_gerekceleri": {
+    "B": "1857, klasik togalı alternatif versiyonun tarihidir; bu eserin ilk sergisi değil.",
+    "C": "Berlin 1868 yalnızca olasıdır ve bilgi kaynağı bilinmiyor (belirsiz); ilk sergi değildir.",
+    "D": "Williamstown 1955 sonraki bir sergidir; ilk sergi 1867 Salonu'dur."
+   },
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Robert Sterling Clark eseri ne zaman, kimden aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Knoedler (Paris), 1 Mayıs 1930"
+    },
+    {
+     "harf": "B",
+     "metin": "Goupil, 1866"
+    },
+    {
+     "harf": "C",
+     "metin": "Gambart, 1928"
+    },
+    {
+     "harf": "D",
+     "metin": "Mayer, 1867"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7/S8/S9: Knoedler, Paris, sold to Clark, 1 May 1930.",
+   "yanlis_gerekceleri": {
+    "B": "Goupil 1866'da sanatçıdan aldı; Clark'a satan taraf değil.",
+    "C": "Gambart 1866'da kısa süre sahip oldu ve iade etti; Clark'a satmadı.",
+    "D": "Mayer 1867'de aldı; Clark eseri 1930'da Knoedler'den aldı."
+   },
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "2019'da AfD Berlin'in eseri billboard'da kullanmasına Clark'ın tepkisi ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Güçlü kınadı ve durdurulmasını istedi"
+    },
+    {
+     "harf": "B",
+     "metin": "Kullanımı destekledi"
+    },
+    {
+     "harf": "C",
+     "metin": "Görüntüyü kendisi sağladı"
+    },
+    {
+     "harf": "D",
+     "metin": "Telif davası açtı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S12/S13: Meslay \"strongly condemn … cease and desist\".",
+   "yanlis_gerekceleri": {
+    "B": "Clark kullanıma karşı çıktı; desteklemedi.",
+    "C": "Meslay görüntüyü AfD'ye sağlamadıklarını açıkça belirtti.",
+    "D": "Eser kamu malı olduğundan telif/hukuki kontrol yoktu; dava değil kınama oldu."
+   },
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "\"Abolitionist picture\" (kölelik karşıtı tablo) okumasını savunan kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ackerman"
+    },
+    {
+     "harf": "B",
+     "metin": "Nochlin"
+    },
+    {
+     "harf": "C",
+     "metin": "Du Camp"
+    },
+    {
+     "harf": "D",
+     "metin": "Mantz"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 not 1: Ackerman \"abolitionist picture\" okumasını savunur.",
+   "yanlis_gerekceleri": {
+    "B": "Nochlin karşıt Oryantalist/iktidar okumasını savunur.",
+    "C": "Du Camp 1867 Salon eleştirmenidir; bu modern tartışmanın tarafı değil.",
+    "D": "Mantz 1867 Salon eleştirmenidir; bu modern tartışmanın tarafı değil."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Clark Art Institute'tadır (env. 1955.53).",
+   "dogru": true,
+   "aciklama": "Doğru (S7/S9): Clark Art Institute, 1955.53.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Clark birincil kaydı boyutu 84,6 × 63,3 cm olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S7/S8/S9): 84.6 x 63.3 cm; WD/it/ru 84,8×63,5 ihtilaflıdır.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eserdeki köle pazarı sahnesi belirli, teşhis edilebilir bir mekânda geçer.",
+   "dogru": false,
+   "aciklama": "Yanlış (S9): mekân Yakın Doğu'yu çağrıştırır ama belirli/teşhis edilebilir bir yer değildir.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Gérôme bu sahneyi fiilen gözlemlemiştir; güvenilir belge boldur.",
+   "dogru": false,
+   "aciklama": "Yanlış (S9): gözlemlemiş olması olası değildir; güvenilir belge yok denecek kadar azdır.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser 1867 Paris Salonu'nda sergilendi (no. 642).",
+   "dogru": true,
+   "aciklama": "Doğru (S9): Paris 1867c, p. 87, no. 642.",
+   "kanit": [
+    "C029"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Clark ↔ WD/it/ru boyut ihtilafını kaynak hiyerarşisiyle analiz edin; hangi değer esas alınmalı, neden?",
+   "beklenen_ogeler": [
+    "Clark birincil 84,6×63,3",
+    "WD/it/ru 84,8×63,5",
+    "2018 Commons içe aktarımı",
+    "birincil önceliği"
+   ],
+   "kanit": [
+    "C005",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Tarih hassasiyetini (\"probably 1866\") tartışın; neden kesin \"1866'da yapıldı\" denmemeli?",
+   "beklenen_ogeler": [
+    "probably",
+    "intorno/ориентировочно",
+    "P1480 yok",
+    "circa korunmalı"
+   ],
+   "kanit": [
+    "C003",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Nochlin'in Oryantalist okuması ile Ackerman'ın \"abolitionist\" okumasını karşılaştırın; hangisi daha güçlü, gerekçelendirin.",
+   "beklenen_ogeler": [
+    "Nochlin iktidar/bakış",
+    "Ackerman kölelik karşıtı",
+    "kutuplaşma",
+    "tek doğru okuma yok"
+   ],
+   "kanit": [
+    "C018",
+    "C045",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Versiyon karışıklığını (Clark/Cincinnati/Hermitage/Walters) ve Belmont hatasını değerlendirin; Türkçe başlık riskini tartışın.",
+   "beklenen_ogeler": [
+    "Cincinnati 1871 aynı kompozisyon",
+    "Hermitage/Walters 1884 antik Roma",
+    "Belmont hatası",
+    "aynı \"Köle Pazarı\" başlığı"
+   ],
+   "kanit": [
+    "C034",
+    "C037",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "2019 AfD kullanımını ve müzenin yanıtını kamu malı + politik dolaşım çerçevesinde tartışın.",
+   "beklenen_ogeler": [
+    "kırpılmış billboard",
+    "Meslay kınama",
+    "kamu malı hukuki kontrol yok",
+    "görüntü Clark sağlamadı"
+   ],
+   "kanit": [
+    "C036",
+    "C021"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ortadaki çıplak genç kadını ve alıcının diş muayenesi jestini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: satıcı sağda sunar, alıcı parmağıyla dişleri yoklar.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sağ arka planda sırtı dönük muayene edilen koyu tenli erkek köleyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: nadiren not edilen ayrıntı; köle ticaretinin geniş kapsamı.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ alt köşedeki imzayı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"J. L. GEROME\" (S9 + Commons ImageNote).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Mekânı Yakın Doğu'yu çağrıştıran mimariyi (sivri kemerler) inceleyin; belirli bir yer teşhis edilebilir mi?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: mekân belirli/teşhis edilebilir değil.",
+   "kanit": [
+    "C010",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Alıcının baştan aşağı örtülü, yalnız gözleri görünür oluşu ile çıplak kadın arasındaki karşıtlığı fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: alıcı izleyicinin konumunu cisimleştirir (Beaudan).",
+   "kanit": [
+    "C009",
+    "C019"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Gérôme; Slave Market / Le Marché d'esclaves; 1866 (muhtemelen); yağlıboya/tuval; 84,6×63,3; Clark 1955.53; imza sağ alt \"J. L. GEROME\".",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C007",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + mekân?",
+   "arka": "Avluda köle satışı; alıcı dişleri yoklar (insanı mala dönüştürme); mekân Yakın Doğu çağrışımlı ama belirli değil; arka planda erkek köle.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance?",
+   "arka": "Goupil 23 Ağu 1866 → Gambart 22 Eyl 1866 → iade Kas 1866 → Mayer 27 Oca 1867 → Knoedler → Clark 1 May 1930 → enstitü 1955.",
+   "kanit": [
+    "C026",
+    "C027",
+    "C028",
+    "C031"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Resepsiyon + yorum?",
+   "arka": "Salon 1867 Mantz (fildenden kadın) ↔ Du Camp (yerinde sahne); Said 1978 + Nochlin 1983 ikonik; Nochlin Oryantalist ↔ Ackerman abolitionist.",
+   "kanit": [
+    "C024",
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Versiyonlar?",
+   "arka": "Cincinnati 1871 (aynı kompozisyon); Hermitage 1884 + Walters 1884 (antik Roma, farklı); Belmont hatası Cincinnati karışıklığından.",
+   "kanit": [
+    "C037",
+    "C034"
+   ]
+  }
+ ]
+}

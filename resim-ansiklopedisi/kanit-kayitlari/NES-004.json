@@ -1,0 +1,239 @@
+{
+  "madde_id": "NES-004",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (nes-b) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Halı (Farsça qālī; farš), zemin, duvar ve diğer büyük yüzeyleri örtmekte kullanılan ağır bir tekstildir; düğümlü havlı halının temel bileşenleri dikey çözgü iplikleri (warps), yatay atkı iplikleri (wefts) ve çözgülere sarıldıktan sonra kesilen hav iplikleridir (düğüm); kesilen uçlar yüzeye çıkarak havı oluşturur.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-004-K05",
+      "kaynak_baslik": "Encyclopaedia Iranica — 'CARPETS' (index maddesi; qālī/farš tanımı)",
+      "url": "https://www.iranicaonline.org/articles/carpets-index/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-23"
+      },
+      "pasaj": "K05: 'heavy textiles used as coverings for floors, walls, and other large surfaces'. — K04: 'the basic components are the warps … and the wefts … In pile rugs supplementary weft yarns, or \"knots\" … are wrapped around the warps … then cut; the cut ends project on the surface to form the pile.'",
+      "pasaj_konum": "K05 madde başı (tanım cümlesi); K04 'Technique' bölümü",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı erişim her iki Iranica sayfasında da 403 verdiği için Wayback kopyaları okundu (K04 arşiv 2025-05-16, K05 arşiv 2026-10-23). Tanım için Britannica'ya erişilemedi (K13: canlı 403, Wayback snapshot yok)."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "'Oriental carpet' (şark halısı), Orta Doğu/İslam dünyası kaynaklı düğümlü havlı halılar için kullanılan modern bir üst terimdir; bu halı gruplarının birçoğu bugün onları resmeden Avrupalı ressamların adlarıyla (Lotto, Holbein, Ghirlandaio, Crivelli, Memling) anılır, yani adlandırma dokuma merkezini değil ressamı işaret eder.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-004-K02",
+      "kaynak_baslik": "Walter B. Denny (Met, Islamic Art) · Heilbrunn Timeline of Art History — 'Islamic Carpets in European Paintings' (Ekim 2011)",
+      "url": "https://www.metmuseum.org/essays/islamic-carpets-in-european-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-20"
+      },
+      "pasaj": "'many groups of Islamic carpets from the Middle East are today called by the names of European painters who depicted them: Lotto, Holbein, Ghirlandaio, Crivelli, and Memling are among the artists whose names are now used to describe certain groups of carpets woven in Ottoman Turkey'",
+      "pasaj_konum": "K02 giriş paragrafı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı 429 (3 deneme) → Wayback. Adlandırmanın modern/Avrupa-merkezli bir sınıflandırma olduğu vurgusu maddenin omurgasıdır; 'Lotto halısı' adı Lorenzo Lotto'ya üretim/sipariş atfı anlamına gelmez (bkz. C014)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Avrupa resminde 14. yüzyıldan itibaren sıkça betimlenen bu halılar erken halı araştırmaları için birincil kaynaktır; resimlerle çağdaş halıların çok azı günümüze kalmıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-004-K02",
+      "kaynak_baslik": "Walter B. Denny (Met, Islamic Art) · Heilbrunn Timeline of Art History — 'Islamic Carpets in European Paintings' (Ekim 2011)",
+      "url": "https://www.metmuseum.org/essays/islamic-carpets-in-european-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-20"
+      },
+      "pasaj": "'The popularity of what we call oriental carpets … in Europe from the fourteenth century onward is reflected in their frequent depiction in European paintings. Indeed, European paintings are a primary source for scholarship on early carpets…'",
+      "pasaj_konum": "K02 giriş paragrafı",
+      "belirsizlik_ifadeleri": ["what we call (terimin modernliğine dair kaynak ihtiyatı)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynağın 'what we call' ihtiyatı madde metninde 'modern bir üst terim' ifadesiyle korunmuştur (C005)."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Walter B. Denny'ye (Met, Heilbrunn) göre 'Kutsal Kitap zamanlarından bu yana ayak altındaki pahalı tekstil kavramı servet, güç ve kutsallıkla ilişkilendirilmiştir'; Denny, Duccio'nun Palm Sunday sahnesinin bu kadim kavramı yenilediğini belirtir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "NES-004-K02",
+      "kaynak_baslik": "Walter B. Denny (Met, Islamic Art) · Heilbrunn Timeline of Art History — 'Islamic Carpets in European Paintings' (Ekim 2011)",
+      "url": "https://www.metmuseum.org/essays/islamic-carpets-in-european-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-20"
+      },
+      "pasaj": "'From biblical times onward, the concept of having an expensive textile underfoot has been associated with wealth, power, and sanctity…' (Denny ayrıca Duccio'nun Palm Sunday sahnesinin bu kadim kavramı yenilediğini ve Giovanni di Paolo'nun tablosunda Meryem'in ayakları altındaki erken Anadolu halısını örnek verir.)",
+      "pasaj_konum": "K02 1. cümle + 2. paragraf",
+      "belirsizlik_ifadeleri": ["has been associated with — kaynağın genelleme kalıbı; bir YORUM olarak Denny'ye aittir"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü bu YORUMUN Denny'ye aidiyetinin okunan kaynaktan doğrulanmasıdır; 'halı = servet/kutsallık sembolü' içeriğinin genel kabul olduğu anlamına GELMEZ. Madde metninde 'Denny'nin yorumuna göre' kalıbıyla sahiplendirilmiş ve otomatik anlam atfı yapılmamıştır. Giovanni di Paolo örneğinin betim ayrıntısı (brief C007) claim üst sınırı nedeniyle ayrı iddia olarak taşınmadı; doğrulanmış resim örneğinin baglam alanında K02 atfıyla belgelendi."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Halılar Avrupa iç mekân resminde tipik olarak zeminde değil masa veya raf örtüsü olarak gösterilir; üst sınıf iç mekânlarında halıyı masada gösterme geleneği 18. yüzyıla kadar sürer (Longhi ve Ingres örnekleri); halının zemin örtüsü olarak yaygınlaşması, Avrupa'da daha ulaşılabilir fiyatlarla çok büyük örneklerin ithal edildiği geç dönemde olur.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-004-K02",
+      "kaynak_baslik": "Walter B. Denny (Met, Islamic Art) · Heilbrunn Timeline of Art History — 'Islamic Carpets in European Paintings' (Ekim 2011)",
+      "url": "https://www.metmuseum.org/essays/islamic-carpets-in-european-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-20"
+      },
+      "pasaj": "K02: 'The tradition of showing carpets on tables in upper-class interiors continued well into the eighteenth century … As carpets became more affordable in Europe, very large examples were imported for use as floor covering.' — K01: 'objects relating to heavenly realms are arranged on a red Turkish carpet' / 'the individual knots of the Turkish carpet on the table'.",
+      "pasaj_konum": "K02 son paragraflar; K01 Overview + In-depth (teknik bölümü)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Maddenin en güçlü olgu iddialarından biri: iki bağımsız kurumsal kaynak (Met/Heilbrunn denemesi + National Gallery kaydı) masa/raf örtüsü yerleştirmesini belgeler. Longhi/Ingres ve geç dönem zemin örtüsü örneği (Wheatley, 'The Saithwaite Family', Met 2009.357) K02 metninde geçer; Wheatley eseri bu araştırmada ayrıca müze kaydından doğrulanmadığı için resim örnekleri listesine ALINMADI."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Hans Holbein the Younger'ın The Ambassadors tablosu (1533; National Gallery, NG1314; 207 × 209.5 cm; 1890'da satın alındı) için NG kaydı, göksel âlemlerle ilgili nesnelerin üst rafta kırmızı bir 'Türk halısı' üzerinde dizildiğini ve masadaki Türk halısının tek tek düğümlerinin görülebildiğini belirtir; kayıtta halı zeminde değil masa/üst raf üzerinde tanımlanır (zemin geometrik taş döşemedir).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-004-K01",
+      "kaynak_baslik": "The National Gallery, Londra — Hans Holbein the Younger, The Ambassadors (NG1314): katalog kaydı + Overview + In-depth + Details",
+      "url": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "'We can see the individual knots of the Turkish carpet on the table'; 'objects relating to heavenly realms are arranged on a red Turkish carpet'; Details: 'Inventory number NG1314 … Bought, 1890 … Dimensions 207 × 209.5 cm'.",
+      "pasaj_konum": "K01 In-depth (teknik/doku bölümü) + Overview + Details bloğu",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Batch brief'indeki/görev tanımındaki 'The Ambassadors halısı zeminde' varsayımı K01 kaydıyla ÇELİŞİR: NG halıyı üst rafta ve masa üzerinde tanımlar, zemin geometrik taş döşemedir. Birincil müze kaydı esas alınmış ve madde bu düzeltmeyle yazılmıştır."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Holbein'in hızlı çalışmasının halının tek tek düğümlerinin betiminde görülebildiği bilgisi de K01 In-depth metnindendir. Halının TİPİ konusunda NG kayıt vermez; 'büyük desenli Holbein tipi III' sınıflandırması ikincil literatüre aittir (brief C012, KISMEN — örnek versiyon_notunda korundu, ayrı iddia olarak taşınmadı)."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "'Holbein halısı' tasarımı, tipolojisi sanat tarihçisi Kurt Erdmann'a atfedilen bir ayrımla dört tipe bölünür; Holbein bu tiplerin yalnızca ikisini resmetmiştir ve söz konusu desenler Holbein'den on yıllarca önceki resimlerde de görünür; bu grubun üretimi 15. yüzyıl ortasında başlamış ve yaklaşık iki yüzyıl sürmüştür.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "NES-004-K07",
+      "kaynak_baslik": "Wikipedia — 'Oriental carpets in Renaissance painting' (atıf zincirli ikincil kaynak; 'Holbein carpets' bölümü)",
+      "url": "https://en.wikipedia.org/wiki/Oriental_carpets_in_Renaissance_painting",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "K08: 'The art historian Kurt Erdmann has sub-divided the \"Holbein\" design into four types (of which Holbein actually only painted two) … although they are shown in paintings from many decades earlier than Holbein'. — K07 'Holbein carpets' bölümü aynı tipolojiyi ve üretimin 15. yüzyıl ortasında başlayıp yaklaşık iki yüzyıl sürdüğünü aktarır (Erdmann 1965, ss. 23–26 atfıyla).",
+      "pasaj_konum": "K08 giriş; K07 'Holbein carpets' bölümü",
+      "belirsizlik_ifadeleri": ["has sub-divided (tipoloji bir atıf olarak verilir)", "of which Holbein actually only painted two"],
+      "destek_duzeyi": "DOLAYLI_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K08", "NES-004-K10"],
+      "celisen_kaynaklar": [
+        "NG kaydı (NES-004-K01) The Ambassadors halısı için herhangi bir tip adı vermez, yalnız 'Turkish carpet' der; tip adlandırması tümüyle ikincil literatüre (Erdmann zinciri) aittir."
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Birincil monografi (Erdmann 1965/1970) ERISILEMEDI; bu nedenle tipoloji GELENEKSEL_ANLATI türünde ve KISMEN düzeyde tutuldu, kesin sınıflandırma gibi sunulmadı. K07 ve K08 aynı atıf zincirini tekrarladığı için BAĞIMSIZ iki kaynak sayılmadı (Kural 2)."
+    },
+    {
+      "claim_id": "C014",
+      "iddia": "'Lotto halısı' eskiden 'küçük desenli Holbein tipi II' olarak bilinirdi; Holbein bu tipi hiç resmetmemiş, Lorenzo Lotto birkaç kez resmetmiştir — ancak bunu yapan ilk ressam o değildir; tip 'Arabesque Uşak' adıyla da bilinir; 16.–17. yüzyıllarda esas olarak Batı Anadolu'nun Ege kıyısında üretilmiş ve İspanya, İngiltere ile İtalya'da kopyalanmıştır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "NES-004-K07",
+      "kaynak_baslik": "Wikipedia — 'Oriental carpets in Renaissance painting' ('Lotto carpets' bölümü) ve 'Lotto carpet' maddesi",
+      "url": "https://en.wikipedia.org/wiki/Oriental_carpets_in_Renaissance_painting",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "'These were previously known as \"small-pattern Holbein Type II\", but he never painted one, unlike Lorenzo Lotto, who did so several times, though he was not the first artist to show them … also known as \"Arabesque Ushak\"' (K07); tipin 16.–17. yüzyıllarda Batı Anadolu Ege kıyısında üretildiği ve İspanya/İngiltere/İtalya'da kopyalandığı bilgisi K07/K08'de King & Sylvester s. 16, 67–70 ile Campbell s. 189 atıflarıyla verilir.",
+      "pasaj_konum": "K07/K08 'Lotto carpets' bölümleri",
+      "belirsizlik_ifadeleri": ["though he was not the first artist to show them", "previously known as (adlandırmanın değiştiği/değiştirildiği)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K08"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü, brief'in önerdiği çerçeveyle sınırlıdır: adlandırmanın MODERN/GELENEKSEL bir sınıflandırma olduğu ve Lotto'nun bu tipi resmeden İLK sanatçı olmadığı olgusu okunan kaynaklarda doğrudan belgelenir. Üretim yeri ve Avrupa kopyaları ayrıntısı basılı zincire (King & Sylvester; Campbell; Ellis 1975 — metinlerine erişilmedi) dayanır; bu nedenle madde metninde 'kopyalanmıştır' ifadesi kaynak ihtiyatıyla birlikte verilmiş, resimde görülen bir halının Anadolu üretimi mi Avrupa kopyası mı olduğu sorusu açık bırakılmıştır (C016)."
+    },
+    {
+      "claim_id": "C016",
+      "iddia": "15. ve 16. yüzyıl resimlerindeki halıların büyük çoğunluğu Osmanlı kaynaklıdır ya da bunların 'olasılıkla' Avrupa kopyalarıdır (Balkanlar, İspanya vb.); dönemin en ince 'saray' halıları resimlerde az görünür; İran halıları 16. yüzyılın sonuna kadar resimlerde görülmez ve 17. yüzyılda çok zenginler arasında popülerleşir; Mısır Memlük halıları ara sıra, çoğunlukla Venedik resimlerinde ortaya çıkar; Denny, Vermeer'in 'Young Woman with a Water Pitcher' tablosundaki halıyı 'yumuşak ve kalın dokulu bir İran halısı, yine masa üzerinde' diye tanımlar.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-004-K07",
+      "kaynak_baslik": "Wikipedia — 'Oriental carpets in Renaissance painting' ('Characteristics' bölümü) + Walter B. Denny, 'Islamic Carpets in European Paintings' (Vermeer paragrafı)",
+      "url": "https://en.wikipedia.org/wiki/Oriental_carpets_in_Renaissance_painting",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "K07: 'The vast majority of carpets in 15th- and 16th-century paintings are either from the Ottoman Empire, or possibly European copies … Persian carpets do not appear until the end of the 16th century' (King & Sylvester s. 17 atfıyla). — K02: 'shows a soft and thickly textured Persian carpet, again on a table' (Vermeer, 'Young Woman with a Water Pitcher', 89.15.21 için).",
+      "pasaj_konum": "K07 'Characteristics' bölümü; K02 Vermeer paragrafı",
+      "belirsizlik_ifadeleri": ["possibly European copies", "or possibly (kaynak ihtiyatı aynen korundu)"],
+      "destek_duzeyi": "DOLAYLI_DESTEK",
+      "ikincil_kaynak_ids": ["NES-004-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "K07'nin ilgili bölümü tek bibliyografik zincire (King & Sylvester s. 17 — metnine erişilmedi) dayanır; bağımsız ikinci akademik kaynak bulunamadığı için DOGRULANDI statüsüne YÜKSELTİLMEDİ. Denny'nin Vermeer betimi (K02) İran halılarının resme geç girişini örneklendirir. Vermeer'in 'Young Woman with a Water Pitcher' eseri bu araştırmada ayrıca müze kaydından doğrulanmadığı için resim örnekleri listesine alınmadı."
+    },
+    {
+      "claim_id": "C024",
+      "iddia": "Gantzhorn'ın (1998) tartışmalı hipotezine göre resimlerde betimlenen ve günümüze kalan halıların çoğu Hıristiyan Ermeni dokumacılarca üretilmiştir, halı desenlerinde gizli Hıristiyan sembolizmi bulunmaktadır ve Batılı sanat tarihçilerin 'İslami' atfı hatalıdır; bu hipotez üzerine, yer yer polemikli ve milliyetçi kaygılardan tümüyle bağımsız olmayan tartışma sürmektedir ve hipotez bağımsız yazılı kaynak yokluğu nedeniyle eleştirilmektedir.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "NES-004-K07",
+      "kaynak_baslik": "Wikipedia — 'Oriental carpets in Renaissance painting' ('Sacred Ground' bölümü, Gantzhorn alt bölümü)",
+      "url": "https://en.wikipedia.org/wiki/Oriental_carpets_in_Renaissance_painting",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "'He concluded that the majority of the surviving and painted carpets alike were produced by Christian Armenian weavers … The debate about Gantzhorn's hypotheses, which is at times conducted polemically and not entirely free of nationalistic constraints, is still ongoing.'",
+      "pasaj_konum": "K07 'Sacred Ground' bölümü",
+      "belirsizlik_ifadeleri": ["hypotheses (çoğul, hipotez düzeyi)", "is still ongoing", "at times conducted polemically and not entirely free of nationalistic constraints"],
+      "destek_duzeyi": "DESTEKLEMIYOR",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Gantzhorn'ın Ermeni/Hıristiyan dokumacı atfı ile halı araştırmalarındaki yerleşik 'İslami/Osmanlı-İran' atfı (ör. Denny NES-004-K02 ve K07'nin kendi giriş çerçevesi) çelişir; kaynak bu çelişkinin sürdüğünü kaydeder.",
+        "Kaynak, hipotezin bağımsız yazılı kaynak yokluğuyla eleştirildiğini belirtir; bu araştırmada Gantzhorn'ın kendi kitabına (Volkhard Gantzhorn, Der Orientalische Teppich, 1998) ERİŞİLMEDİ — künye brief'te doğrulanmadığı için kaynak listesine ALINMADI ve uydurulmadı."
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "İddia bir HİPOTEZİN VARLIĞINI ve tartışmalı statüsünü kaydeder; hipotezin içeriği KANIT OLARAK KULLANILMAMIŞTIR. Aynı wiki bölümündeki kaynaksız ve tarafgir cümleler (ör. Pazyryk halısının 'Ermeni' olduğuna dair iddialar) maddeye BİLİNÇLİ OLARAK ALINMADI. CELISKILI statüsü nedeniyle akademik_tartismalar alanı dolu tutulmuştur (madde 1. başlık)."
+    }
+  ]
+}

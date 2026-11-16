@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumun koleksiyonundadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Neue Nationalgalerie, Staatliche Museen zu Berlin"
+    },
+    {
+     "harf": "B",
+     "metin": "Museum of Modern Art, New York"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Galleria degli Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil SMB kaydı (S1): Einrichtung Neue Nationalgalerie; objID 961048.",
+   "yanlis_gerekceleri": {
+    "B": "MoMA (New York) bu eserin bulunduğu kurum değildir; birincil SMB kaydı Neue Nationalgalerie / Staatliche Museen zu Berlin der.",
+    "C": "Louvre (Paris) bu eserin kurumu değildir; eser Berlin SMB koleksiyonundadır (NG 57/61).",
+    "D": "Uffizi (Floransa) bu eserin kurumu değildir; birincil kayıt Neue Nationalgalerie'yi gösterir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG 57/61"
+    },
+    {
+     "harf": "B",
+     "metin": "NG 74/81"
+    },
+    {
+     "harf": "C",
+     "metin": "B 68/5"
+    },
+    {
+     "harf": "D",
+     "metin": "A II 183"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"Ident. Nr.: NG 57/61\".",
+   "yanlis_gerekceleri": {
+    "B": "NG 74/81, SMB sayfasındaki başka eserlere (Renée Sintenis çevresi) ait envanterdir; bu eserin numarası NG 57/61'dir.",
+    "C": "B 68/5, SMB metninde anılan Hausmann'ın \"Die Mücke ist tot\" işinin envanteridir; bu esere ait değildir.",
+    "D": "A II 183, SMB sayfasındaki Liebermann \"Die Gartenbank\" envanteridir; bu eserin numarası NG 57/61'dir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil SMB kaydına göre yapım yılı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1919"
+    },
+    {
+     "harf": "B",
+     "metin": "1919–1920"
+    },
+    {
+     "harf": "C",
+     "metin": "1920"
+    },
+    {
+     "harf": "D",
+     "metin": "1918"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"Datierung — Herstellung: 1919\".",
+   "yanlis_gerekceleri": {
+    "B": "1919–1920 aralığı ikincil kaynaklarda (enwiki gövde, Smarthistory 2014, data) geçer; birincil SMB kaydı 1919 der (D001, tartışma).",
+    "C": "1920 fuarın (Erste Internationale Dada-Messe) yılıdır; birincil yapım tarihi 1919'dur.",
+    "D": "1918, Wollin tatili ve fotomontaj kıvılcımının yılıdır (Militärgedenkblatt); eserin yapım tarihi birincil kayıtta 1919'dur."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayıtta teknik/malzeme nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Papier auf Karton, Collage"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap pano üzerine tempera"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"Material / Technik: Papier auf Karton, Collage\".",
+   "yanlis_gerekceleri": {
+    "B": "Birincil kayıt tuval/yağlıboya değil \"Papier auf Karton, Collage\" der; eser kağıt/karton destekli fotomontajdır.",
+    "C": "Fresk duvar resmidir; bu eser karton üzerine kağıt kolaj/fotomontajdır.",
+    "D": "Destek ahşap pano değil kartondur (Karton); birincil \"Papier auf Karton\" der."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Birincil SMB kaydına göre fiziksel boyut (Y×G) nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "114 × 90 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "90 × 144 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "114 × 89,8 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "715 × 900 (piksel)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"Abmessungen — Höhe x Breite: 114 x 90 cm\".",
+   "yanlis_gerekceleri": {
+    "B": "90 × 144 cm, enwiki görsel alt yazısındaki hatalı ifadedir; birincil 114×90 ile çelişir ve 144 hiçbir kaynakça desteklenmez (D004).",
+    "C": "89,8 cm genişlik plwiki/ikiz WD varyantıdır; birincil SMB ve Q107450751 90 cm der (D003).",
+    "D": "715×900, enwiki dosyasının piksel çözünürlüğüdür; fiziksel boyut cm cinsinden 114×90'dır."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser müzeye nasıl edinilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1961'de Galerie Meta Nierendorf (Berlin) üzerinden BASF bağış fonlarıyla satın alma"
+    },
+    {
+     "harf": "B",
+     "metin": "1920 Dada Fuarı'nda doğrudan satın alma"
+    },
+    {
+     "harf": "C",
+     "metin": "Sanatçının vasiyetiyle bağış"
+    },
+    {
+     "harf": "D",
+     "metin": "1933'te el koyma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"1961 Ankauf von der Galerie Meta Nierendorf, Berlin, aus Spendenmitteln der … (BASF)\"; Provenienz \"im Besitz der Künstlerin, 1961\".",
+   "yanlis_gerekceleri": {
+    "B": "Eser 1920 fuarında sergilendi ama edinim 1961'de galeri aracılığıyla satın almadır; fuar doğrudan edinim değildir.",
+    "C": "Proveniens sanatçı mülkiyeti → galeri → SMB satış zinciri gösterir; vasiyet/bağış değil, BASF fonlarıyla Ankauf'tur.",
+    "D": "Birincil kayıt 1961 Ankauf der; 1933'e ait el koyma/edinim kaydı yoktur."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "SMB betimine göre üst yarıda ne birleşir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Teknik ilerleme + savaş siyaseti (Einstein, II. Wilhelm)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca Dada sanatçıları"
+    },
+    {
+     "harf": "C",
+     "metin": "Dinsel bir sahne"
+    },
+    {
+     "harf": "D",
+     "metin": "Pastoral bir peyzaj"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"In der oberen Bildhälfte verbinden sich technischer Fortschritt und kriegerische Politik, vertreten etwa durch Albert Einstein und … Wilhelm II.\"",
+   "yanlis_gerekceleri": {
+    "B": "SMB üst yarıda teknik ilerleme + savaş siyasetini (Einstein, II. Wilhelm) sayar; yalnız dadaistler değil.",
+    "C": "Betim dinsel bir sahne değil, Weimar siyaseti ve kültürü üzerinedir.",
+    "D": "Betim pastoral peyzaj değil; politik figürler ve teknik imgeler içerir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "SMB'nin andığı ironik cinsiyet değişimi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hindenburg oryantal dansçı, Grosz balerin"
+    },
+    {
+     "harf": "B",
+     "metin": "Einstein dansçı, Lenin balerin"
+    },
+    {
+     "harf": "C",
+     "metin": "Ebert balerin, Noske dansçı"
+    },
+    {
+     "harf": "D",
+     "metin": "II. Wilhelm balerin, Höch dansçı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "SMB (S1): \"…indem etwa Paul von Hindenburg als Bauchtänzerin und George Grosz als Ballerina auftreten.\"",
+   "yanlis_gerekceleri": {
+    "B": "SMB bu isimleri değil Hindenburg (Bauchtänzerin) ve Grosz (Ballerina)'u sayar.",
+    "C": "SMB'nin cinsiyet değişimi örnekleri Ebert/Noske değil Hindenburg/Grosz'tur.",
+    "D": "SMB II. Wilhelm/Höch değil Hindenburg/Grosz'u cinsiyet değişimiyle anar."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Erste Internationale Dada-Messe nerede ve ne zaman yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "30.6–25.8.1920, Galerie Dr. Otto Burchard, Lützow-Ufer 13, Berlin"
+    },
+    {
+     "harf": "B",
+     "metin": "1919, Berlin Secession"
+    },
+    {
+     "harf": "C",
+     "metin": "1920, Paris Salonu"
+    },
+    {
+     "harf": "D",
+     "metin": "1921, Dresden"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "dewiki (S7, Bergius/Korte/Adkins refs): 30. Juni–25. August 1920, Galerie Dr. Otto Burchard, Lützow-Ufer 13; 174 iş / 27 katılımcı.",
+   "yanlis_gerekceleri": {
+    "B": "Fuar 1919 Berlin Secession değil; 30.6–25.8.1920'de Burchard galerisinde (Berlin) yapıldı.",
+    "C": "Fuar Paris Salonu değil; Berlin'de, Lützow-Ufer 13'te gerçekleşti.",
+    "D": "Fuar 1921 Dresden değil; 1920 Berlin'dir."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Makholm'un (1997, enwiki üzerinden) yorumuna göre \"mutfak bıçağı\" neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Höch'ün makasının/ev içi kadın aletinin siyasal kesme eylemine dönüşmesini"
+    },
+    {
+     "harf": "B",
+     "metin": "Gerçek bir bıçak saldırısını"
+    },
+    {
+     "harf": "C",
+     "metin": "Yemek pişirme temasını"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir heykel tekniğini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "enwiki (S5, Makholm 1997 MoMA 24 s.19–23): Höch makasını mutfak bıçağına denk tutar; Weimar'ın baskın siyasal/kamusal alanlarını \"kesip geçmeyi\" simgeler.",
+   "yanlis_gerekceleri": {
+    "B": "Metafor gerçek bir bıçak saldırısı değil; makasın/ev içi aletin siyasal kesme eylemine dönüşmesidir.",
+    "C": "Yemek/pişirme teması değil; \"bira göbeği\" kültürüne ve siyasal alana yönelik kesme metaforudur.",
+    "D": "Heykel tekniği değil; fotomontajda makas/bıçak metaforudur."
+   },
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Neue Nationalgalerie / Staatliche Museen zu Berlin koleksiyonundadır; envanter NG 57/61.",
+   "dogru": true,
+   "aciklama": "Doğru (S1 birincil): Einrichtung Neue Nationalgalerie; Ident. Nr. NG 57/61.",
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil SMB kaydı teknikte suluboya (akwarel) ilavesini açıkça belirtir.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil \"Papier auf Karton, Collage\" der; akwarel yalnız plwiki/ikiz WD'de Foster/Grzych refs ile geçer (D002, tartışma).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Höch, Berlin Dada grubunun tek kadın üyesiydi.",
+   "dogru": true,
+   "aciklama": "Doğru (B): enwiki (nmwa ref) \"the only woman among the Berlin group\"; dewiki/plwiki destekler.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser ilk kez 1920 Erste Internationale Dada-Messe'de sergilendi ve özel ilgi gördü.",
+   "dogru": true,
+   "aciklama": "Doğru (S1 birincil): \"Bereits 1920 … auf der 'Ersten Internationalen Dada-Messe' in Berlin besondere Beachtung.\"",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "enwiki görsel alt yazısındaki \"90 × 144 cm\" boyutu birincil kayıtla uyumludur.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil 114×90 cm'dir; enwiki alt yazısı hatalıdır, 144 hiçbir kaynakta desteklenmez (D004).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (1919 ↔ 1919–1920) kaynak hiyerarşisiyle analiz edin; hangi kaynak ne diyor, hangisi esas?",
+   "beklenen_ogeler": [
+    "SMB/WD/plwiki/WikiArt 1919",
+    "enwiki gövde + Smarthistory 2014 + data 1919–1920",
+    "birincil esas",
+    "D001 tartışma"
+   ],
+   "kanit": [
+    "C004",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Oy hakkı haritasının yönü ihtilafını (D005) ve otoportre iddiasının kanıt durumunu değerlendirin.",
+   "beklenen_ogeler": [
+    "data \"tanınan ülkeler düşünülür\"",
+    "plwiki/kierul \"olmayan ülkeler + Polonya hatalı\"",
+    "Smarthistory hakem erişilemedi",
+    "otoportre E",
+    "yön kesinleştirilmez"
+   ],
+   "kanit": [
+    "C033",
+    "C035",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Mutfak bıçağı metaforunu ev içi emek → siyasal faillik bağlamında (Ullstein, Makholm) tartışın.",
+   "beklenen_ogeler": [
+    "makas/mutfak bıçağı denkliği",
+    "Ullstein desen/el işleri 1916–1926",
+    "1918 nakış manifestosu",
+    "siyasal kesme",
+    "Makholm B/zincir"
+   ],
+   "kanit": [
+    "C023",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Buchloh, Grzych, Lavin ve Barber okumalarını erişim durumlarıyla karşılaştırın; hangileri B/zincir, hangileri E?",
+   "beklenen_ogeler": [
+    "Buchloh anti-estetik (Foster 2023 erişilmedi)",
+    "Grzych hara-kiri/Komm (PDF SSL)",
+    "Lavin sahte sosyalizm (JSTOR)",
+    "Barber dört segment (Smarthistory 403/429 → E)"
+   ],
+   "kanit": [
+    "C049",
+    "C047",
+    "C051",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Telif/adil-kullanım çerçevesini (TR/AB 2049, PD-US ayrımı, VG Bild-Kunst, CC tarama sınırı) açıklayın.",
+   "beklenen_ogeler": [
+    "Höch ö.1978 → 2049",
+    "PD-US yalnız ABD",
+    "© VG Bild-Kunst 2021 / Jörg P. Anders",
+    "CC BY-SA 4.0 yalnız 2024 tarama",
+    "görsel yeniden yayımlanmaz",
+    "hukuki tavsiye değil"
+   ],
+   "kanit": [
+    "C026",
+    "C025",
+    "C053",
+    "C039"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üst yarıda teknik ilerleme ve savaş siyasetini temsil eden figürleri (Einstein, II. Wilhelm) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): obere Bildhälfte — technischer Fortschritt + kriegerische Politik.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "İronik cinsiyet değişimiyle gösterilen figürleri (Hindenburg oryantal dansçı, Grosz balerin) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): Hindenburg als Bauchtänzerin, Grosz als Ballerina.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Alt bölümde Dada'nın bir kitle hareketi olarak ilişkilendirildiği bölgeyi ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): unterer Teil — Dadaismus als Massenbewegung.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Metin parçalarını (\"anti\", \"dada\", \"Die Große\") ve makine imgelerini (gökdelen, uçak, lokomotif, motor, türbin) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (plwiki): urywki tekstów + zdobycze techniki; görsel teyit yok.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol alt köşedeki \"HH\" monogramını arayın (birincil SMB metninde imza alanı yok; B/zincir).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (plwiki, SMB+Grzych ref): lewy dolny róg, inicjały HH; doğrulanmadı.",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Hannah Höch (1889–1978); Schnitt mit dem Küchenmesser Dada durch die letzte Weimarer Bierbauch-Kulturepoche Deutschlands; 1919 (birincil); Papier auf Karton, Collage (fotomontaj); 114×90 cm; Neue Nationalgalerie / SMB, NG 57/61.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004",
+    "C005",
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Edinim + ilk sergi?",
+   "arka": "1961 Galerie Meta Nierendorf (Berlin) üzerinden BASF bağış fonlarıyla satın alma; öncesinde sanatçı mülkiyeti. İlk sergi: 1920 Erste Internationale Dada-Messe, Berlin; \"besondere Beachtung\".",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon bölgeleri + cinsiyet değişimi?",
+   "arka": "Üst yarı: teknik ilerleme + savaş siyaseti (Einstein, II. Wilhelm); alt: Dada kitle hareketi; otoriteleri \"tranchieren\". Hindenburg oryantal dansçı, Grosz balerin (ironik cinsiyet değişimi).",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Fuar ayrıntıları?",
+   "arka": "30.6–25.8.1920, Galerie Dr. Otto Burchard, Lützow-Ufer 13, Berlin; 174 iş / 27 katılımcı. Höch: Schnitt… + Da-Dandy + Dada-Rundschau (hepsi 1919). Grosz/Heartfield karşı çıktı, Hausmann ısrarıyla kabul.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik + doğuş?",
+   "arka": "Papier auf Karton, Collage; basılı fotoğraf/gazete-dergi kes-yapıştır fotomontaj; \"Foto-De-Montage\". Kıvılcım: 1918 Wollin Militärgedenkblatt (Höch anısı, SMB içi alıntı). Akwarel birincilde yok (ikincil, tartışma).",
+   "kanit": [
+    "C005",
+    "C006",
+    "C024"
+   ]
+  }
+ ]
+}

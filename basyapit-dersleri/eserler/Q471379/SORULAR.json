@@ -1,0 +1,558 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q471379",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu dersin nesnesi olan 1893 boyalı Çığlık versiyonu hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Nasjonalmuseet (National Museum), Oslo"
+    },
+    {
+     "harf": "B",
+     "metin": "Munch Museum, Oslo"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Museum of Modern Art, New York"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 birincil: Nasjonalmuseet, Oslo; NG.M.00939, Room 060.",
+   "yanlis_gerekceleri": {
+    "B": "Munch Museum 1893 pastel ve 1910 boyalı versiyonu barındırır; 1893 boyalı versiyon Nasjonalmuseet'tedir.",
+    "C": "Musée d'Orsay Paris'tedir; eserin hiçbir versiyonu orada değildir.",
+    "D": "MoMA 1895 pasteli 2012–13'te ödünç sergiledi; 1893 boyalı versiyonun kalıcı yeri değildir."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "1893 National Museum versiyonunun envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG.M.00939"
+    },
+    {
+     "harf": "B",
+     "metin": "MM.M.00122b"
+    },
+    {
+     "harf": "C",
+     "metin": "MM.M.00514"
+    },
+    {
+     "harf": "D",
+     "metin": "Woll M 327"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Work details: Inventory no. NG.M.00939.",
+   "yanlis_gerekceleri": {
+    "B": "MM.M.00122b, 1893 pastelin Munch Museum envanteridir (WD); bu eserin değil.",
+    "C": "MM.M.00514, 1910 boyalı versiyonun Munch Museum envanteridir (WD).",
+    "D": "Woll M 327, 1895 pastelin katalog raisonné numarasıdır; envanter numarası değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil müze kaydına göre 1893 versiyonunun teknik/malzemesi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Karton üzerine tempera ve fettstift (yağlı kalem)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Karton üzerine tempera ve kazein"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap pano üzerine pastel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Work details: \"Tempera og fettstift på papplate\"; Material: Papplate. Wiki/Britannica varyantları ihtilaflıdır (D2), birincil kayıt esas.",
+   "yanlis_gerekceleri": {
+    "B": "\"Yağlıboya\" ve tuval müze kaydında yoktur; destek kartondur (D2).",
+    "C": "\"Kazein\" Britannica'da geçer ama müze kaydında yoktur (D2).",
+    "D": "Destek ahşap pano değil kartondur; pastel 1893/1895 versiyonların tekniğidir."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "1893 National Museum versiyonunun boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "91 × 73,5 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "74 × 56 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "79 × 59 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "83,5 × 66 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: Height 91 cm, Width 73.5 cm.",
+   "yanlis_gerekceleri": {
+    "B": "74×56 cm, 1893 pastel versiyonun boyutudur (WD/itwiki).",
+    "C": "79×59 cm, 1895 pastel versiyonun boyutudur (WD/itwiki).",
+    "D": "83,5×66 cm, 1910 boyalı versiyonun boyutudur (WD/itwiki)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Sol üstteki \"deli\" yazısının Munch'a ait olduğu hangi yöntemle doğrulandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kızılötesi kamera + grafoloji (NM & MM 2020 çalışması)"
+    },
+    {
+     "harf": "B",
+     "metin": "Karbon-14 tarihlendirme"
+    },
+    {
+     "harf": "C",
+     "metin": "X-ışını floresan spektroskopisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Doğrulanmadı; hâlâ bir izleyicinin yazdığı kabul ediliyor"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7: infrared camera + graphological analysis (National Museum and Munch Museum 2020) yazının sanatçının kendisine ait olduğunu doğruladı.",
+   "yanlis_gerekceleri": {
+    "B": "Karbon-14 tarihlendirme kullanılmadı; yöntem IR + grafolojidir.",
+    "C": "XRF pigment analizi içindir; yazının atfı IR + grafoloji ile yapıldı.",
+    "D": "2020 çalışması Munch'u doğruladı; \"izleyici yazdı\" görüşü 2008 öncesi eski kabuldir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "\"Deli\" yazısı ilk kez hangi sergide fark edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1904 Kopenhag sergisi"
+    },
+    {
+     "harf": "B",
+     "metin": "1893 Berlin sergisi"
+    },
+    {
+     "harf": "C",
+     "metin": "1895 Kristiania (Blomqvist) sergisi"
+    },
+    {
+     "harf": "D",
+     "metin": "1910 Oslo sergisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"The first time the inscription is mentioned was in connection with an exhibition in Copenhagen in 1904\".",
+   "yanlis_gerekceleri": {
+    "B": "1893 Berlin ilk sergidir ama yazıdan orada söz edilmedi.",
+    "C": "1895 Blomqvist ilk Norveç sergisidir; yazı ilk kez 1904'te anıldı.",
+    "D": "1910, Schou'nun satın alıp bağışladığı yıldır; yazının ilk fark edişi değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Müze kaydına göre eserin 1893 Berlin'deki ilk sergi adı neydi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Verzweiflung (Despair / Umutsuzluk)"
+    },
+    {
+     "harf": "B",
+     "metin": "Der Schrei der Natur"
+    },
+    {
+     "harf": "C",
+     "metin": "Geschrei"
+    },
+    {
+     "harf": "D",
+     "metin": "Skrik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: \"shown for the first time at Galerie Unter den Linden in Berlin... with the title Verzweiflung (Despair)\". Başlık tarihçesi kaynaklar arası ihtilaflıdır (D1); birincil kayıt esas.",
+   "yanlis_gerekceleri": {
+    "B": "\"Der Schrei der Natur\" İngilizce Vikipedi'nin verdiği Almanca başlıktır; müze kaydıyla ihtilaflı (D1).",
+    "C": "\"Geschrei\" Britannica'nın \"ikinci versiyon\" için verdiği başlıktır.",
+    "D": "Skrik Norveççe genel addır; ilk sergi adı değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Çığlık'ın doğrudan öncülü olan 1892 tarihli tablo hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Syk stemning ved solnedgang. Fortvilelse (Sick Mood at Sunset. Despair)"
+    },
+    {
+     "harf": "B",
+     "metin": "Madonna"
+    },
+    {
+     "harf": "C",
+     "metin": "Self-Portrait with Cigarette"
+    },
+    {
+     "harf": "D",
+     "metin": "Anxiety (Kaygı)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: \"The Scream is a further development of the picture Syk stemning ved solnedgang. Fortvilelse... from 1892 (Woll M 264)\".",
+   "yanlis_gerekceleri": {
+    "B": "Madonna, 2004'te 1910 Çığlık versiyonuyla birlikte çalındı; biçimsel öncül değil.",
+    "C": "Self-Portrait with Cigarette, Scharffenberg'in eleştirisinde andığı otoportredir; öncül değil.",
+    "D": "Anxiety, Munthe'nin 1901 mektubunda anılan diğer tablodur; doğrudan öncül değil."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1893 National Museum versiyonunun hırsızlığı hangi gün gerçekleşti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "12 Şubat 1994 — Lillehammer Kış Olimpiyatları açılış günü"
+    },
+    {
+     "harf": "B",
+     "metin": "22 Ağustos 2004"
+    },
+    {
+     "harf": "C",
+     "metin": "7 Mayıs 1994"
+    },
+    {
+     "harf": "D",
+     "metin": "2 Mayıs 2012"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 (BBC/NYT ref zinciri) + S6: 12 Şubat 1994, Olimpiyat açılış günü; S6 \"In 1994 it was stolen\".",
+   "yanlis_gerekceleri": {
+    "B": "22 Ağustos 2004, Munch Museum'daki 1910 versiyonunun hırsızlığıdır.",
+    "C": "7 Mayıs 1994, eserin kurtarıldığı tarihtir; hırsızlık değil.",
+    "D": "2 Mayıs 2012, 1895 pastelin açık artırma tarihidir."
+   },
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "2012'de açık artırmayla satılan Çığlık versiyonu hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1895 tarihli pastel (özel koleksiyon)"
+    },
+    {
+     "harf": "B",
+     "metin": "1893 National Museum boyalı versiyonu"
+    },
+    {
+     "harf": "C",
+     "metin": "1910 Munch Museum boyalı versiyonu"
+    },
+    {
+     "harf": "D",
+     "metin": "1893 Munch Museum pastel versiyonu"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S12: 1895 pastel, Sotheby's, 2 Mayıs 2012, ~120 milyon dolar; Leon Black. Kesin tutar/yer ihtilaflı (D9/D15), versiyon kimliği nettir.",
+   "yanlis_gerekceleri": {
+    "B": "1893 NM boyalı versiyonu müzededir; satılmadı.",
+    "C": "1910 MM boyalı versiyonu müzededir; satılmadı.",
+    "D": "1893 MM pastel versiyonu müzededir; satılan 1895 pastelidir."
+   },
+   "kanit": [
+    "C021",
+    "C004"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "1893 National Museum versiyonu tuval üzerine yağlıboyadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: müze kaydı \"Tempera og fettstift på papplate\" (karton üzerine tempera + yağlı kalem) der; \"oil\"/tuval wiki-Britannica varyantıdır (D2).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Sol üstteki \"deli\" yazısı Munch'un kendi el yazısıdır.",
+   "dogru": true,
+   "aciklama": "Doğru: NM & MM 2020 IR+grafoloji çalışması yazının sanatçıya ait olduğunu doğruladı (Guleng: \"no doubt\").",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "1910 Munch Museum versiyonu kesin olarak 1910 yılında yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: müze \"no earlier than 1910\" der; WD \"probably\" niteleyicisini taşır; tarih kesin değildir (E1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Çığlık'ın dört ana versiyonu vardır: iki boyalı, iki pastel.",
+   "dogru": true,
+   "aciklama": "Doğru: S6 \"two painted versions... two further versions exist in pastels\"; ayrıca 1895 litografi.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "1994'te çalınan versiyon ile 2004'te çalınan versiyon aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: 1994'te 1893 NM versiyonu, 2004'te 1910 MM versiyonu (+Madonna) çalındı.",
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Başlık tarihçesi ihtilafını (Verzweiflung ↔ Der Schrei der Natur ↔ Geschrei ↔ data \"Umutsuzluk\"/\"Doğanın Çığlığı\") kaynak hiyerarşisi açısından analiz edin; birincil kayıt neden esas alınır?",
+   "beklenen_ogeler": [
+    "S6 Verzweiflung (A)",
+    "S4 Der Schrei der Natur",
+    "S12 Geschrei",
+    "data iç çelişkisi (D12)",
+    "birincil önceliği"
+   ],
+   "kanit": [
+    "C015",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Teknik ihtilafını (müze \"Tempera og fettstift på papplate\" ↔ wiki \"oil/pastel\" ↔ Britannica \"casein\" ↔ S7 \"canvas\") değerlendirin; hangi kurum ne diyor, hangisi esas?",
+   "beklenen_ogeler": [
+    "müze tempera+fettstift/karton (A)",
+    "wiki oil/pastel",
+    "Britannica casein",
+    "S7 canvas iç tutarsızlığı",
+    "birincil esas"
+   ],
+   "kanit": [
+    "C007",
+    "C047",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "İkonografi tartışmasını ele alın: figür mü çığlık atıyor, doğa mı? Şiir (S9), müze (S6), itwiki (S5), Britannica (S12) ve data'nın konumlarını karşılaştırın.",
+   "beklenen_ogeler": [
+    "şiir/müze: doğa çığlık atar",
+    "itwiki: figür çığlık atar",
+    "Britannica: travma zihinden",
+    "data iki tarafı",
+    "tek doğru dayatılmaz"
+   ],
+   "kanit": [
+    "C012",
+    "C048",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"Deli\" yazısının atıf tarihçesini (1904 izleyici → 2008 \"someone else\" → 2020 IR+grafoloji Munch) ve 1895 Blomqvist/Scharffenberg bağlamını anlatın; teori (E3) ile olguyu ayırın.",
+   "beklenen_ogeler": [
+    "1904 ilk fark ediş",
+    "2008 Woll someone else",
+    "2020 IR+grafoloji",
+    "Scharffenberg 1895",
+    "teori belirsiz (E3)"
+   ],
+   "kanit": [
+    "C009",
+    "C010",
+    "C011",
+    "C039",
+    "C055"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmeden yazılan betimlerin sınırını ve data görsel iddialarını (\"boyanmamış karton\", \"iki tekne\") değerlendirin; hangi kanıt seviyesindeler ve neden insan editör teyidi gerekir?",
+   "beklenen_ogeler": [
+    "görsel İNCELENMEDİ",
+    "data iddialar E10",
+    "S6 açık ifade yok",
+    "kaynak betimi çerçevesi",
+    "GZ TASLAK"
+   ],
+   "kanit": [
+    "C066",
+    "C070",
+    "C043",
+    "C044"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Merkez figürü bulun: elleri başında, kafatasını andıran yüz, açık oval göz/ağız; cinsiyetsiz/kimliksiz \"görsel bilmece\" niteliğini fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6): woman/man? coat/dress? skull/face? hairless. S12: \"gaping ovals\", sallanan form.",
+   "kanit": [
+    "C045",
+    "C043"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol üst köşedeki kurşun kalem yazısını arayın (\"Kan kun være malet af en gal Mand!\"); çıplak gözle zor okunur, kızılötesinde belirginleşir.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6/S7): yazı boyanın fiziksel olarak üstünde; IR karbonu ayırır. Görsel teyit insan editöre.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Solda arka planda uzaklaşan iki silueti (iki arkadaş) ve düz patika/korkuluk diyagonalini bulun; figürün kıvrımıyla karşıtlığı fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6): \"two friends... background on the left\". S12: düz patika. itwiki: korkuluklu patika köprüyle karıştırılır (D13).",
+   "kanit": [
+    "C014",
+    "C043"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kızıl/turuncu dalgalı gökyüzü ile mavi-siyah fiyordun karşıtlığını ve Ekeberg manzarasını (Kristianiafjord) betimleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6): \"blood-red sky\", \"blue-black fjord\"; şiir MM T 2367. S12: dalgalı çizgiler şok dalgaları gibi.",
+   "kanit": [
+    "C014",
+    "C043",
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol altta \"E. Munch 1893\" imzasını ve (müze kaydına göre) çift imzayı/arkadaki eskizi not edin; doğrudan görsel teyit insan editöre kaldı.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6 Inscriptions): çift imza, biri diğerinin üstünde; arka yüzde kaba eskiz. S7: reddedilen kısmi kompozisyon.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Çığlık (Skrik / The Scream); Edvard Munch (1863–1944); 1893 boyalı versiyon; Nasjonalmuseet Oslo; NG.M.00939; 91×73,5 cm; karton üzerine tempera+fettstift; Room 060; \"Gift from Olaf Schou 1910\".",
+   "kanit": [
+    "C002",
+    "C006",
+    "C007",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Versiyonlar?",
+   "arka": "2 boyalı (1893 NM; 1910 MM \"no earlier than 1910\"), 2 pastel (1893 MM imzasız; 1895 özel imzalı, çerçeve panelinde şiir varyantı), 1895 litografi (A. Liebmann). Grup QID Q471379.",
+   "kanit": [
+    "C001",
+    "C005",
+    "C004",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "\"Deli\" yazısı?",
+   "arka": "Sol üst: \"Kan kun være malet af en gal Mand!\"; 1904 Kopenhag'da fark edildi, izleyici sanıldı; 2008 \"someone else\"; 2020 IR+grafoloji Munch'u doğruladı. 1895 Scharffenberg bağlamı teoridir (belirsiz).",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Şiir + manzara?",
+   "arka": "MM T 2367 (Datert 1892): \"doğanın içinden geçen büyük, sonsuz bir çığlık\"; Ekeberg tepesinden Kristianiafjord (Oslofjord); solda iki arkadaş. Çığlığı doğa atar (D3 tartışmalı).",
+   "kanit": [
+    "C012",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Hırsızlıklar + satış?",
+   "arka": "1994 NM (12 Şubat, Olimpiyat açılışı; 7 Mayıs hasarsız kurtarma); 2004 MM 1910+Madonna (31 Ağustos 2006 kurtarma, nem hasarı); 2012 1895 pastel Sotheby's ~120M$ (Leon Black).",
+   "kanit": [
+    "C022",
+    "C023",
+    "C021"
+   ]
+  }
+ ]
+}

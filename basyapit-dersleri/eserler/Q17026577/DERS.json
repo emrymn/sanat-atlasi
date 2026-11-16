@@ -1,0 +1,1134 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q17026577",
+ "sanatci_id": "henri-de-toulouse-lautrec",
+ "baslik": "Moulin Rouge: La Goulue",
+ "ozgun_baslik": "Moulin Rouge: La Goulue",
+ "kunye": {
+  "sanatci": "Henri de Toulouse-Lautrec",
+  "sanatci_yasam": "1864–1901 (Albi – Saint-André-du-Bois)",
+  "tarih": "1891",
+  "tarih_belirsizlik": "Met objectDate 1891 (begin=end=1891, A); NGA \"One evening in December 1891\" (B); IMA \"fall of 1891\" (A); frwiki \"décembre 1891\" (E). Kesin gün/ay birincil kayıtta yok.",
+  "teknik": "Lithograph printed in four colors; three sheets of wove paper (dört renk litografi; üç tabaka wove kağıt). IMA: \"ink on paper, color lithograph\".",
+  "boyut_cm": {
+   "yukseklik": 190,
+   "genislik": 116.5
+  },
+  "muze": "Metropolitan Museum of Art, New York (Drawings and Prints) — gösterilen nüsha; çok nüshalı eser (IMA 36.4, Bertarelli, MoMA ID 188979)",
+  "envanter": "32.88.12",
+  "edinim": "Harris Brisbane Dick Fund, 1932; provenance: \"Vendor: Maurice Le Garrec (French)\"",
+  "konum": "Not on view (GalleryNumber boş)",
+  "telif_durumu": "Kamu malı (Met isPublicDomain=true; Open Access). Commons Met kopyası CC0 + PD-Art; WD P18 Yorck görseli PD-Art-YorckProject (Bertarelli nüshası)."
+ },
+ "gorsel": {
+  "url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-42747-001.jpg",
+  "kaynak": "Metropolitan Museum of Art (Open Access), nesne 333990 / envanter 32.88.12; Commons kopyası: File:Henri de Toulouse-Lautrec, Moulin Rouge - La Goulue, 1891 - The Metropolitan Museum of Art.jpg",
+  "lisans": "Kamu malı (Met isPublicDomain=true; Open Access: izin/ücret gerektirmeyen ticari+ticari olmayan kullanım). Commons Met dosyası CC0 1.0 + PD-Art (deathyear 1901). WD P18'deki ayrı görsel (Yorck) PD-Art-YorckProject, credit Yorck Project 2002 / DIRECTMEDIA, ISBN 3936122202 — Bertarelli nüshası.",
+  "dogrulama": {
+   "yontem": "Metadata + lisans + oran karşılaştırması (sips piksel ölçümü); GÖRSEL BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda). Denetim B'de kaynak URL'leri yeniden açıldı.",
+   "cozunurluk": "Met web-large 394×624 (oran 0,6314); yerel küçük görsel 252×400 (0,63); Commons Met dosyası 2314×3722; Commons Yorck/Bertarelli 2536×3668 (0,6914)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnız \"kaynakların betimlediği\" biçiminde verildi; GZ soruları TASLAK. WD P18 Bertarelli nüshası (D7); data'da Commons görselinin lisans alanı boş + kurum notu yok. İnsan editör görsel teyidi ZORUNLU: imza/matbaa konumu, büyük kırmızı M, adın tekrar sayısı (üç↔iki), renk ayrıntıları (sarı topuz, puantiye, gri şapka), üst şerit kaybı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 422
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1419
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3134
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-çok-nüshalı-bir-eseri-okumak"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarihsel-bağlam-montmartre-1889-ve-afiş-ekonomisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ilk-litografi-ilk-afiş"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-kaynak-betiminin-sınırı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-yıldız-seyirci-beden"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-dört-renk-üç-tabaka-nüsha-ve-piyasa"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-provenance"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Met birincil kaydıyla gösterilen nüshanın künyesini (32.88.12, 190 × 116,5 cm, dört renk litografi / üç tabaka wove kağıt, Charles Lévy matbaası) doğrular.",
+  "Çok nüshalı bir eserde nüsha farkını (Met ↔ IMA ↔ Bertarelli) ve boyut/infobox/görsel karışıklığını yönetir; work-level ↔ copy-level ayrımını kurar.",
+  "Afişin poster tarihindeki yeniliğini (gerçek şovmenler, siluet, yazı-görüntü birleşimi, duvardan koleksiyona dönüşüm) kaynaklandırır.",
+  "Sipariş hikâyesi ve biyografi ihtilaflarını (D) belirsizliği koruyarak aktarır; frwiki'nin kaynaksızlığını (E) tanır.",
+  "Görsel incelenmeden kompozisyon betimlemenin sınırını bilir; GZ TASLAK durumunu ve insan editör teyidini gerekçelendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Litografi (taş baskı)",
+   "tanim": "Çizimin taş üzerine yağlı malzemeyle yapılıp kağıda basıldığı baskı tekniği; Met kaydı \"Lithograph printed in four colors\" der.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Wove paper / üç tabakalı afiş",
+   "tanim": "Met nüshası üç tabaka wove kağıttan oluşur; büyük yaprak (190 × 116,5 cm) birleştirilmiş bir yüzeydir.",
+   "kanit": [
+    "C005",
+    "C007"
+   ]
+  },
+  {
+   "ad": "Chahut / cancan",
+   "tanim": "Yüksek tekme ve bağırışlı erken cancan biçimi; La Goulue'nun etekleri chahut finalinde kaldırılır.",
+   "kanit": [
+    "C017",
+    "C023"
+   ]
+  },
+  {
+   "ad": "Siluet",
+   "tanim": "Ayrıntısız düz koyu biçim; seyircileri temsil eder. Japon sanatının düz tasarımları ve Chat Noir gölge tiyatrosu (arkadan ışıklı çinko kesitler) ile ilişkilendirilir.",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "ad": "Chérettes",
+   "tanim": "Jules Chéret'nin afişlerindeki anonim, flörtöz kadın tipi; Lautrec'in gerçek şovmenleriyle karşıtlık kurar.",
+   "kanit": [
+    "C036",
+    "C033"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: \"Moulin Rouge: La Goulue\" (Met title alanı; IMA \"Moulin Rouge-La Goulue\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Henri de Toulouse-Lautrec (French, Albi 1864–1901 Saint-André-du-Bois).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: 1891 (objectDate \"1891\"; objectBeginDate=objectEndDate=1891).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "NGA: \"One evening in December 1891, about three thousand copies of this poster—Lautrec's initial foray into lithography—were pasted on walls across Paris.\" IMA etiketi \"fall of 1891\" der.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: \"Lithograph printed in four colors; three sheets of wove paper\" (dört renk litografi; üç tabaka wove kağıt).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Matbaa: Printer \"Affiches Américaines, Charles Lévy\"; katalog sayfası \"(Paris)\" ekını verir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Met nüshası boyutu: \"sheet: 74 13/16 x 45 7/8 in. (190 x 116.5 cm)\"; measurements Height 190 / Width 116.5.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Met envanter 32.88.12; accessionYear 1932; credit line \"Harris Brisbane Dick Fund, 1932\"; WD P217+P195 referanslı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Met departman \"Drawings and Prints\"; sınıflama \"Prints, Posters\"; objectName \"Print\"; durum \"Not on view\" (GalleryNumber boş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Met provenance: \"Vendor: Maurice Le Garrec (French)\" — kayıtta satıcı dışında bir zincir halkası yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Met sergi geçmişi: Denver Art Museum \"Toulouse-Lautrec from The Metropolitan Museum of Art\" (5 Nisan–4 Temmuz 1999); Met \"The Power of Prints: The Legacy of William M. Ivins and A. Hyatt Mayor\" (26 Ocak–22 Mayıs 2016); MFA Boston \"Toulouse-Lautrec on Stage\" (2 Nisan–4 Ağustos 2019).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Met Catalogue Raisonné alanı aynen: \"W.PI.B; Adr.I.II;Toulouse-Lautrec, 1996\" (kısaltmalar kayıtta açılmıyor → C062).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Met References alanında anılanlar: Colta Ives, \"Toulouse-Lautrec in The Metropolitan Museum of Art\", exh. cat. Met (2 Temmuz–29 Eylül 1996), New York 1996; Helen Burnham (MFA Boston), \"Toulouse-Lautrec and the Stars of Paris\", Boston 2019. Kaynakçada anıldı; metne erişilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Yapım yeri: Fransa (geographyType \"Made in\", country \"France\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kamu malı: Met isPublicDomain=true; Met Open Access (\"unrestricted commercial and noncommercial use without permission or fee\"); WD P6216=Q19652; Commons Met dosyası CC0 + PD-Art (deathyear 1901); Yorck dosyası PD-Art-YorckProject.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K1",
+    "K8",
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Tür: Print / Posters; WD P31 \"lithograph print\" (Q15123870) + \"poster\" (Q429785).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Afiş Moulin Rouge'un kalabalık dans salonunu ve yıldızlarını reklam eder: \"the 'boneless' acrobat Valentin le Désossé and La Goulue, 'the glutton,' whose cancan skirts were lifted at the finale of the chahut\" (Met); IMA: \"dancing the can-can accompanied by her partner 'No-Bones' Valentin\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "La Goulue = Louise Weber'in sahne adı (enwiki, Larousse Dictionnaire de la Danse 1999 atfı; NGA \"Born Louise Weber\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K15",
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Lakap \"the Glutton\" / \"the Greedy One\" (obur); kökeni: dans ederken müşteri kadehlerini boşaltması (moulinrouge.fr + Sorrell, Dance Magazine 1953 atfı); NGA: \"so named for her voracious appetite for all things sensual\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K15",
+    "K11",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "La Goulue doğum/ölüm: 12 Temmuz 1866 Clichy – 29 Ocak 1929 Paris (10th arrondissement); Pantin mezarlığından Montmartre mezarlığına nakil (enwiki infobox + Larousse 1999 atfı). Doğum yılı ihtilaflı → C050.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Valentin le Désossé = Jacques Renaudin (26 Şubat 1843 Paris – 4 Mart 1907 Sceaux); \"He may have been the son of a notary from Sceaux\"; \"it is thought that… he worked as a wine merchant by day\"; gece Moulin Rouge'da dans ettiği kesin; 1895'te sahneden çekildi (Pessis/Crépineau 1990 atfı). Ad ihtilaflı → C049.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Valentin'in profili: uzun ve ince, kemer (aquiline) burun, belirgin çene, uzun kol ve bacaklar; \"usually wearing a black suit and a top hat\" (Sorrell 1953 atfı). Şapka rengi belirtilmez.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "La Goulue chahut/cancan dans eder; etekleri finalde kaldırılır; partneri \"No-Bones\" Valentin (Met + IMA).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "La Goulue Moulin Rouge'un açılışından itibaren yıldız, kalıcı headliner; \"Weber decided to part company with the Moulin Rouge in 1895\" (Rey 1959 atfı). Ayrılış yılı ihtilaflı → C051.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K15",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Ayrılık sonrası: panayır gösterisi yatırımı başarısız; depresyon, ağır içki, servetin tükenmesi; 1929'da ölüm (Rey 1959, Souvais 2008 atıfları). 1928 Montmartre dönüşü + yer fıstığı/sigara/kibrit satışı web/blog düzeyi refs ile; Yaneff 1925 Neuilly-sur-Marne der (C). Bu ayrıntılar quiz'e alınmadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K15",
+    "K13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Moulin Rouge 1889'da boulevard de Clichy'de açıldı (\"brassy dance hall and drinking garden\"); açılışta Lautrec'in bir tablosu giriş yakınında sergileniyordu; IMA: \"opened in Montmartre in 1889\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Kurucular: Charles Zidler ve ortağı Joseph Oller; \"late 1889\"; karnaval benzeri atmosfer: dansçılar, şarkıcılar, kuklacılar, akrobatlar, hayvan numaraları (NGA).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Met: Lautrec \"was commissioned to create the six-foot-tall advertisement that launched his postermaking career and made him famous overnight\" (görevlendirme olgusu A; genesis ayrıntısı yok → C048).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "NGA: \"Despite the fame of this poster, its genesis remains unclear. The owner of the Moulin Rouge, Charles Zidler, may have approached Lautrec directly, or Lautrec may have won a competition. It is also uncertain who first introduced Lautrec to the medium of lithography, although the artist Pierre Bonnard is often mentioned as a possibility.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Lautrec'in ilk afişi: IMA \"For his first poster…\"; Met \"launched his postermaking career\"; NGA \"initial foray into lithography\" (B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K10",
+    "K7",
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Nüsha sayısı: enwiki (Lee & Robinson, IMA Highlights 2005 atfı) \"probably printed in about 3,000 copies\"; \"Although most examples were pasted as advertising posters and lost, surviving examples are in the collection of the Indianapolis Museum of Art and many other institutions\"; NGA \"about three thousand\". Hedge korundu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Afiş Lautrec'i bir gecede ünlü yaptı (Met \"made him famous overnight\"); IMA Gallery Labels: \"within days a collected item, within weeks the object of press reviews, within months the partner of paintings in avant-garde exhibitions, and within a year the internationally recognized symbol of 1890s Paris\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Poster tasarımında ilk kez gerçek şovmenler: IMA \"for the first time in poster design, Toulouse-Lautrec featured the actual entertainers in the advertisement\"; NGA \"By advertising a specific celebrity rather than anonymous beauties, Lautrec infused his poster with star power\" (B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K10",
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Seyirci siluetleri: NGA \"a sizable audience, rendered by Lautrec in silhouette form\"; \"The unusual use of silhouette was influenced by the flat designs of Japanese art then popular among the avant-garde and also by the Chat Noir's shadow theater productions, in which zinc cutouts were back-lit\"; NGA modern duyarlılık: \"bold colors, a variety of lettering styles, and innovative use of silhouettes\"; enwiki (NGA atfı) aynı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Kabare adı afişte üç kez yinelenir: NGA \"The dance hall's name is repeated three times in an eye-catching design that then draws the viewer's eye down to the central motif: La Goulue\"; enwiki \"triple repetition\". Sayı ihtilaflı → C047.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Chéret'nin 1889 \"Bal du Moulin Rouge\" afişi Moulin Rouge'u reklam eden ilk afişti; Chéret \"father of the modern poster\"; anonim flörtöz kadın tipi \"chérettes\"; NGA Lautrec'in afişini \"far more daring\" olarak karşılaştırır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Beyaz jupon: enwiki (IMA kitabı atfı) \"The stark white of her petticoats, depicted with just a few lines on the white paper, epitomizes Toulouse-Lautrec's boldly simplistic style, a sharp break from the text-heavy posters of the day\"; Yaneff \"leaving the paper blank\" (C destek).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "IMA nüshası: 36.4; \"Gift of the Gamboliers\"; 67 x 46-3/4 in; \"ink on paper, color lithograph\"; \"Not currently on view\"; Public Domain; provenance: 1932'de Mary Quinn Sullivan [1877–1939] (New York) Gamboliers için satın aldı, 1936'da John Herron Art Institute'a (bugünkü IMA at Newfields) verildi; dipnot IMA Archives Gamboliers dosyası + Schlagenhauff \"Gifts of the Gamboliers\" (2009) rehberi (anıldı, erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "IMA sergileri: \"Paris: 1890–1900\" (21 Nisan–14 Haziran 1981); \"Gifts of the Gamboliers, 1928–1936\" (27 Temmuz–7 Kasım 1982); \"Post-Impressionist Prints: Paris in the 1890's\" (16 Ocak–11 Nisan 1999); \"Paris Posters: The Art of the Streets\" (15 Aralık 2007–24 Ağustos 2008).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "WD P18 görseli (Henri de Toulouse-Lautrec 049.jpg) Commons dosya sayfasında institution \"Civica Raccolta di Stampe Bertarelli, Milan\", dimensions 191×117 cm, medium \"Farblithographie (Plakat)\", object type \"painting\" (şablon hatası; eser posterdir) → görselin Bertarelli nüshasını gösterdiği çıkarımı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K9",
+    "K8",
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C041",
+   "ifade": "Diğer nüsha iddiaları: frwiki Albi Musée Toulouse-Lautrec, Paris Musée de la Publicité, Ixelles (Belçika), Musée de Montmartre + özel koleksiyonlar (yalnız frwiki, kaynaksız); WD P195'te IMA referanssız; WD P2014 MoMA work ID 188979 (URL refs'te yok, kayıt çekilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "1898'de Imprimerie Chaix (Paris) \"Les Maîtres de l'Affiche\" serisi için küçültülmüş litografi PL.122, 29 × 40 cm (11 × 15 3/8 in); satıcı sayfasında 7.500 USD fiyat ve Aralık 2008 Swann müzayedesinde tam boy için 300.000 USD iddiası. Ticari kaynak (C); 1891 orijinaliyle karıştırılmamalı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "Mekânda çarşamba ve cumartesi maskeli balolar yapılırdı; yuvarlak cam gaz lambaları, aynalı duvarlar, bahçede ahşap fil (Yaneff, \"San Diego Museum of Art\" makalelerine atfen; atıflar doğrulanmadı). Afişin üzerinde bu yazının bulunduğu iddiası çekilen kaynaklarda doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C044",
+   "ifade": "Akım/sınıflandırma: WD P135 = Art Nouveau (Q34636, Met Tagging Initiative); Met Related Content \"Art Nouveau\" + \"Lithography in the Nineteenth Century\"; data \"Post-Empresyonizm dönemi\"; enwiki \"See also: Post-Impressionism\" (atıfsız). Sınıflandırma çıkarımı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5",
+    "K7",
+    "K17"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "Alımlama/kültürel göndermeler (enwiki Valentin + La Goulue maddeleri): Seurat \"Le Chahut\" (1889/90, Kröller-Müller Museum, Otterlo); 1934 balesi \"Bar aux Folies-Bergère\" (koreografi Ninette de Valois, müzik Emmanuel Chabrier; Alicia Markova La Goulue, Frederick Ashton Valentin); Pierre La Mure romanı (1950); John Huston filmi (1952); Jean Renoir \"French Cancan\" (1954).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K14",
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "D1 BOYUT (nüsha farkı + infobox karışıklığı): Met 190 × 116,5 cm (A) ≠ WD 191 × 117 cm (referanssız) = Commons Bertarelli dosya sayfası ≠ enwiki infobox 67 × 46.75 in ≈ 170,2 × 118,7 cm = IMA nüshası 67 × 46-3/4 in (A) ≠ frwiki 191 × 117 cm (E). enwiki infobox Met görseliyle IMA boyutunu birleştiriyor; WD boyutu Met nüshasına atfedilmemeli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K9",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D2 ADIN TEKRAR SAYISI: \"three times\" (NGA, B; enwiki, B) ↔ \"écrit deux fois\" (frwiki, E). data \"üç kez\" NGA ile uyumlu; görsel sayım yapılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K11",
+    "K17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D3 SİPARİŞ HİKÂYESİ: Met \"was commissioned\" (A, ayrıntısız) / Yaneff \"Zidler… immediately offered\" (C) ↔ frwiki \"Zidler organisa un concours d'affiches… Pierre Bonnard y participa… c'est lui qui remporta la commande\" (E). NGA (B) açıkça belirsiz: \"its genesis remains unclear… may have approached Lautrec directly, or Lautrec may have won a competition\". Kesinleştirme yapılmadı; NGA'nın belirsizliği esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K7",
+    "K11",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D4 VALENTİN'İN ADI: Jacques Renaudin (enwiki, B — Larousse 1999; Yaneff C) ↔ Étienne Renaudin (frwiki, E). Noter akrabalığı: \"may have been the son of a notary\" (B, hedge'li) ↔ \"Frère d'un notaire de Sceaux\" (E).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K13",
+    "K14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D5 LA GOULUE DOĞUM YILI: 1866 (enwiki, B — Larousse 1999; 12 Temmuz 1866) ↔ 1870 (NGA, B; Yaneff C). İki B kaynağı farklı yıl veriyor; çözülmedi, ikisi de beyan edildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K13",
+    "K15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "D6 MOULIN ROUGE'DAN AYRILIŞ: 1895 (enwiki, B — Rey 1959; Yaneff C) ↔ \"licenciée en 1894\" (frwiki, E). frwiki kendi içinde de çelişkili: \"engagée de 1890 à 1895\" ↔ \"1894\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K13",
+    "K15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "D7 GÖRSEL–NÜSHA UYUŞMAZLIĞI (WD/data): WD P18 görseli Milano Bertarelli nüshası (Yorck); data'nın birincil görseli ve gösterilen küçük görseli Met nüshası (oran eşleşmesi: 252×400 ≈ 0,63 ↔ Met web-large 394×624 ≈ 0,6314; Yorck 2536×3668 ≈ 0,6914). Aynı eserin farklı nüshaları; data'da Commons görselinin lisans alanı boş ve kurum notu yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K8",
+    "K9",
+    "K16",
+    "K17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "E1 frwiki maddesinin tamamı kaynaksız: {{À sourcer|date=avril 2024}} + \"Notes et références: {{Section vide ou incomplète}}\". Yalnız frwiki'de geçen iddialar tek başına kanıt sayılmaz; 1881 basın yasası / 1889 Exposition Universelle / cloisonnisme-japonisme çerçevesi de bu düzeydedir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Crachis/soufflé tekniği (diş fırçasıyla sıçratma): frwiki \"Il s'invente aussi une technique personnelle utilisant une brosse à dents pour donner plus de variété aux couleurs : c'est le crachis.\" Birincil kayıtta karşılığı yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "1892'de 8. Salon des Indépendants ve Brüksel Groupe des XX yıllık sergisinde sergilendiği iddiası: yalnız frwiki.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Lautrec'in annesine 26 Aralık 1891 mektubu (yalnız frwiki; alıntı aynen, doğrulanmadı): « Les journaux se sont montrés particulièrement gentils avec ton rejeton. Je t'envoie une coupure, un vrai miel pétri d'encens. Mon affiche remporte un triomphe sur les murs malgré quelques erreurs de l'imprimeur qui ont un peu abîmé ma production ».",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "Üç hazırlık etüdü (ikisi La Goulue portresi) iddiası: yalnız frwiki (\"Il existe trois études préparatoires dont deux portraits de la Goulue\").",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "E7 Üst şerit kaybı: frwiki \"souvent il manque la bande supérieure de 27 cm\" — kaynaksız; Met \"three sheets\" (A) ile ilişkili ama 27 cm doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "Lautrec'in La Goulue'nun Foire du Trône'daki barakasını dekore ettiği (siyah-beyaz pano) iddiası: yalnız frwiki.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Moulin Rouge açılışının kesin tarihi \"5 octobre 1889\" (frwiki E; Yaneff C) ve afiş üzerinde \"Bal tous les soirs\" yazısı bulunduğu (frwiki E) iddiaları; Met/NGA yalnız 1889 / \"late 1889\" verir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "E9 Valentin'in efsanevi dans sayıları (39.962 vals + 27.220 quadrille + 14.966 polka/mazurka + 1.000 lancer = 83.112) sayfada {{clarify}} ile işaretli (aritmetik tutarsız); \"never accepted pay\" ↔ \"danced professionally\" çelişkisi de {{clarify}}'li. Kullanılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "Erişilemeyen/erişilmeyen metinler: Met 1996 CONTENTdm kataloğu (canlı 200 ama JS kabuğu; Wayback snapshot yok; CDX \"Temporarily Offline\"); Lee & Robinson \"Indianapolis Museum of Art: Highlights of the Collection\" (2005, ISBN 0936260777) kaynakçada anıldı; frwiki bibliyografyası (Denvir 1992, Sugana 1986, Néret 1999, Castel 1991, Jarrassé 1991, Souvais 2008, Roquebert 2001, RMN 2002, Dortu 1971) anıldı; E6 raisonné kısaltmaları \"W.PI.B; Adr.I.II\" açılmıyor; E8 Yaneff atıfları (SDMA makaleleri, \"Wine Spectator 40\") doğrulanmadı; MoMA nüsha kaydı çekilmedi; Schlagenhauff 2009 rehberi anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K12",
+    "K3",
+    "K4",
+    "K7",
+    "K10",
+    "K13",
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız piksel metadata + lisans + oran karşılaştırması. Kompozisyon \"kaynakların betimlediği\" biçiminde verildi; GZ soruları TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K8",
+    "K9",
+    "K16",
+    "K17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "E5 La Goulue'nun Alsas Yahudi ailesinden geldiği: enwiki \"it is believed that Louise Weber was born into a Jewish family from Alsace\" (hedge korundu); frwiki kaynaksız biçimde aynı şeyi söyler.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K15",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "data'nın görsel iddiaları doğrulanmadı: \"ortak büyük kırmızı M\", \"HLautrec imzası sol altta\", \"Ch. Lévy sağ altta\", \"sarı topuz\", \"beyaz puantiyeli kırmızı bluz\", \"gri silindir şapka\", \"sarı lamba biçimleri\", \"döşeme çizgileri\", \"kenardan kesilmiş Valentin\", \"her akşam konser ve balo\", \"çarşamba-cumartesi maskeli balo yazısı\". Kısmi destek: NGA siluet/cesur renk/yazı çeşitliliği (B), enwiki beyaz jupon (B), Sorrell \"black suit and a top hat\" (B; renk yok), frwiki \"chemisier à pois\"/\"bas rouges\"/\"taches jaunes\" (E). Matbaa ADI Met A ile doğrulanır, konumu görsel iddiadır.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K17",
+    "K3",
+    "K4",
+    "K11",
+    "K14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "İç tutarlılık çıkarımı: enwiki \"died a year later at age 62\" ifadesi 1866 doğumla uyumlu, 1870 ile uyumsuzdur. Bu bir çıkarımdır (nüfus kaydı değil); D5 ihtilafını kapatmaz.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K15",
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C067",
+   "ifade": "Üç tabakalı kurgu, nüshalar arasında şerit kaybı/eksiklik farklılıklarına yol açabilir; Met kaydında tabakaların birleştirilme biçimi açıklanmaz. frwiki'nin 27 cm iddiasıyla ilişki bir çıkarımdır.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C068",
+   "ifade": "Benjamin okuması (yorum): çoğaltılmak ve yok olmak üzere üretilen afişin günler içinde koleksiyon nesnesine dönüşmesi, \"aura\"nın sönümlenmesi tezinin tersine bir auratize edilme örneği olarak okunabilir. Lautrec'in Benjamin'den etkilendiği iddiası YOK (anakronik).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K10",
+    "K7",
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C069",
+   "ifade": "Kant okuması (yorum): reklamın araçsal amacı (mekâna müşteri çekmek) ile biçimsel sadeliğin (boş kağıdın beyazı, siluet, yazı-görüntü eklemlenmesi) \"çıkarız hoşlanma\" nesnesi olarak deneyimlenmesi arasında gerilim. Kant etkisi iddiası YOK.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7",
+    "K3",
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C070",
+   "ifade": "Berger okuması (yorum): afiş, yoldan geçeni seyirciye/müşteriye dönüştüren bir bakış teknolojisi; seyirci siluetleri kalabalığın anonimliğini, aydınlık jupon yıldızın tekilliğini temsil eder. Berger etkisi iddiası YOK.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K11",
+    "K3",
+    "K10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C071",
+   "ifade": "Panofsky yöntemi (yorum): ön-ikonografik (düz renk, kontur, siluet) → ikonografik (La Goulue–Valentin, Moulin Rouge markası) → ikonolojik (1890'lar Paris'inin yıldız ve tüketim kültürü). Yöntem önerisi; tek doğru anlam iddiası değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7",
+    "K10",
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C072",
+   "ifade": "Etik okuma (yorum): afişte yüceleştirilen beden ile La Goulue'nun sonraki yoksulluğu (B) arasındaki karşıtlık, \"yıldız imgesinin bedeli\" sorusunu açar; reklamın nesnesi mekândan bedene/üne kayar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K15",
+    "K10",
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C073",
+   "ifade": "Montmartre kabare kültürü (NGA): Chat Noir 1881'de Rodolphe Salis tarafından \"cabaret-artistique\" olarak açıldı, avangart için deney alanı; Steinlen \"Tournée du Chat Noir\"; Salis 1897 epitafı. Lautrec'in \"At the Moulin Rouge\" tablosu: sert ışık, alışılmadık perspektif, belirsiz anlatı; sağda yeşil yüzlü figür (bazılarının May Milton olduğu düşünülür), arkada saçını düzeltten La Goulue, dipte kuzeniyle Lautrec, balustrad, La Macarona ve Jane Avril.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C074",
+   "ifade": "La Goulue'nun sahne rutini ve ünü (enwiki): eteğini savurarak iç çamaşırındaki kalp nakışını gösterme, yüksek tekmeyle adamın şapkasını düşürme (Jarrett 1997 atfı); \"Queen of Montmartre\" (Lafayette 2011 atfı); dönemin en yüksek ücretli eğlencecisi (Pessis/Crépineau 1990 atfı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C075",
+   "ifade": "Küratöryel çerçeve yorumu: Met'in \"Not on view\" durumu kağıt eserlerin ışık hassasiyeti/rotasyonuyla açıklanabilir (kayıt söylemez); Met 2016 \"Power of Prints\" afişi bir baskı koleksiyonu tarihi (Ivins/Mayor) içinde, IMA \"Paris Posters: The Art of the Streets\" ise sokağa ait bir sanat olarak sunar; iki kurumun 1932'de ayrı yollardan nüsha edinmesi bir paralelliktir, ortak plan iddiası değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K10"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q17026577 (P31/P18/P195/P217/P276/P2048/P2049/P135/P6216/P2014/P495)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q17026577.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (cache Q17026577-wd.json)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (21 QID/PID; cache Q17026577-qid-labels.json)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"Moulin Rouge: La Goulue\" wikitext (IMA kitabı + NGA + Yaneff atıflı)",
+   "url": "https://en.wikipedia.org/wiki/Moulin_Rouge:_La_Goulue",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (parse API wikitext; cache Q17026577-en-wikitext.json)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "\"Moulin-Rouge - La Goulue\" wikitext — {{À sourcer|date=avril 2024}}, refs bölümü boş → E",
+   "url": "https://fr.wikipedia.org/wiki/Moulin-Rouge_-_La_Goulue",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (parse API wikitext; kaynaksız madde)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "Public API nesne 333990 (metadataDate 2026-04-24)",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/333990",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı; Denetim B yeniden 200 (Q17026577-denB-met-api.json)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "Katalog sayfası (canlı)",
+   "url": "https://www.metmuseum.org/art/collection/search/333990",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 canlı (engel); Denetim B yeniden 429 → K7 arşivi kullanıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Metropolitan Museum of Art / Internet Archive",
+   "belge": "Katalog sayfası snapshot (tam render + gömülü Provenance/Exhibition History/Catalogue Raisonné/References)",
+   "url": "https://web.archive.org/web/20260607165727id_/https://www.metmuseum.org/art/collection/search/333990",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-06-07); Denetim B yeniden 200 (Q17026577-denB-met-wayback.html)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (2 dosya: Yorck 049.jpg 2536×3668 PD-Art-YorckProject; Met dosyası 2314×3722 CC0+PD-Art)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (yalnız metadata; GÖRSEL İNCELENMEDİ)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext: File:Henri de Toulouse-Lautrec 049.jpg (institution Bertarelli, 191×117, Yorck credit) + File:…The Metropolitan Museum of Art.jpg (32.88.12, Harris Brisbane Dick Fund 1932, Met online 333990)",
+   "url": "https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_049.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (revisions wikitext; İNCELENMEDİ)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K10",
+   "kurum": "Indianapolis Museum of Art at Newfields",
+   "belge": "Nüsha kaydı 44070 \"Moulin Rouge-La Goulue\" (36.4; provenance + Gallery Labels + Exhibition History)",
+   "url": "https://collections.discovernewfields.org/art/artwork/44070",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı; Denetim B yeniden 200 (Q17026577-denB-ima.html)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K11",
+   "kurum": "National Gallery of Art / Internet Archive",
+   "belge": "\"Cafés, Cabarets, and Dance Halls\" (Toulouse-Lautrec and Montmartre, 2005; yazar Lynn Kellmanson Matheny — enwiki atfından)",
+   "url": "https://web.archive.org/web/20160905040818id_/https://www.nga.gov/exhibitions/2005/toulouse/cafes.shtm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2016-09-05); canlı URL enwiki ref'inde url-status=dead; Denetim B yeniden 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K12",
+   "kurum": "Metropolitan Museum of Art / CONTENTdm",
+   "belge": "\"Toulouse-Lautrec in the Metropolitan Museum of Art\" (1996) tam metin katalog",
+   "url": "https://libmma.contentdm.oclc.org/digital/collection/p15324coll10/id/108779",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama JS kabuğu (metin yok); Wayback snapshot yok; CDX \"Temporarily Offline\" → metne erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K13",
+   "kurum": "Yaneff International Gallery / Internet Archive",
+   "belge": "PL.122 satış sayfası (1898 Chaix küçültmesi; SDMA makaleleri + \"Wine Spectator 40\" atıfları doğrulanmadı)",
+   "url": "https://web.archive.org/web/20170515135017id_/http://www.yaneff.com/html/plates/pl122.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (bot doğrulama); arşiv 200 (2017-05-15)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K14",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"Valentin le Désossé\" wikitext (Larousse 1999, Sorrell 1953, Pessis/Crépineau 1990, Christout 1998 atıflı; {{clarify}} etiketleri)",
+   "url": "https://en.wikipedia.org/wiki/Valentin_le_d%C3%A9soss%C3%A9",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (parse API wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K15",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"La Goulue\" wikitext (Larousse 1999, Souvais 2008, Rey 1959, Jarrett 1997, Pessis/Crépineau 1990 atıflı; düşüş anlatısında web/blog refs)",
+   "url": "https://en.wikipedia.org/wiki/La_Goulue",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (parse API wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K16",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "DP-42747-001.jpg web-large (yalnız piksel metadata: 394×624; oran 0,6314)",
+   "url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-42747-001.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; İNCELENMEDİ (sips metadata)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K17",
+   "kurum": "Sanat Atlası yerel veri (salt-okunur)",
+   "belge": "data/basyapitlar.json · eser_ayrintilari.json · eserler_onbellek.json · gorsel_kaynagi.json · gorseller/k/5428d6625e8e7ad7.jpg (252×400)",
+   "url": "data/basyapitlar.json (yerel; değiştirilmedi)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur karşılaştırma; Denetim B'de yeniden okundu",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Bal du Moulin Rouge",
+   "sanatci": "Jules Chéret",
+   "mufredat_ici": false,
+   "gerekce": "Aynı mekânın 1889 tarihli önceki afişi; anonim \"chérettes\" tipi ↔ gerçek şovmenler; NGA Lautrec'in afişini \"far more daring\" olarak karşılaştırır. Kurum/envanter çekilen kaynaklarda belirtilmedi.",
+   "kanit": [
+    "C036",
+    "C033"
+   ]
+  },
+  {
+   "eser": "Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère)",
+   "sanatci": "Edouard Manet",
+   "kurum": "Courtauld Gallery",
+   "mufredat_ici": true,
+   "gerekce": "Müfredat içi karşılaştırma (data/basyapitlar.json Q1245354): Paris gece hayatı, seyirci bakışı ve çalışan/yıldız bedeni temsili. Bu bir yorum önerisidir; görsel karşılaştırma bu oturumda yapılmadı.",
+   "kanit": [
+    "C017",
+    "C034"
+   ]
+  },
+  {
+   "eser": "Le Chahut",
+   "sanatci": "Georges Seurat",
+   "kurum": "Kröller-Müller Museum, Otterlo",
+   "mufredat_ici": false,
+   "gerekce": "Aynı dansın (chahut) resimsel temsili (1889/90); İngilizce Vikipedi'nin kültürel göndermeler bölümünde afişle birlikte anılır.",
+   "kanit": [
+    "C045",
+    "C023"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — 14 Kasım 2026'da bağımsız geri dönüş: Met public API (canlı 200), Met Wayback 2026-06-07 (200; Provenance/Exhibition/Raisonné/References gömülü), IMA/Newfields 44070 (canlı 200), NGA Wayback 2016-09-05 (200), enwiki madde + \"La Goulue\" + \"Valentin le Désossé\" (parse API 200), frwiki madde (200; À sourcer + boş refs teyit), Commons 2 dosya sayfası (200; Bertarelli/Yorck vs Met/CC0 alanları) YENİDEN açıldı ve iddialarla alan alan karşılaştırıldı (cache Q17026577-denB-*). Met canlı sayfa yine 429. WD EntityData + yerel data yeniden okundu; piksel oranları yeniden ölçüldü. Görsel İNCELENMEDİ (yalnız metadata/lisans/oran) → GZ TASLAK. Erişilemeyen: Met 1996 CONTENTdm (JS kabuğu, Wayback yok, CDX offline), IMA kitabı, frwiki bibliyografyası, MoMA nüsha kaydı, Yaneff atıfları.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Görsel/nüsha (D7, C052): WD P18 = Milano Bertarelli nüshası (Yorck); data birincil görseli Met DP-42747-001 ve küçük görsel 5428d6625e8e7ad7 Met nüshasıyla oran eşleşmesi veriyor (252×400 ≈ 0,63 ↔ 394×624 ≈ 0,6314; Yorck 2536×3668 ≈ 0,6914). Görsel İNCELENMEDİ; eşleşme metadata çıkarımıdır.",
+  "data/eserler_onbellek.json gorseller[1] (commons \"Henri_de_Toulouse-Lautrec_049.jpg\") lisans alanı boş (l=\"\"); gerçek lisans PD-Art-YorckProject (kamu malı), credit \"The Yorck Project (2002) 10.000 Meisterwerke der Malerei (DVD-ROM), distributed by DIRECTMEDIA Publishing GmbH. ISBN 3936122202.\"; kurum notu yok (Bertarelli, Milano). Düzeltme önerisi insan onayına sunulur; data değiştirilmedi.",
+  "Boyut: WD 191×117 referanssız (Bertarelli dosya sayfası), Met 190×116,5 (A), IMA 67×46-3/4 in (A), enwiki infobox 67×46.75 in (Met görseli + IMA boyutu). Tek boyut dayatılmamalı (D1, C046).",
+  "\"üç kez yazılan OULIN ROUGE\" NGA (B) ile uyumlu; frwiki \"iki kez\" (E) → D2 (C047). \"Ortak büyük kırmızı M\" tasarım ayrıntısı çekilen kaynak metinlerinde geçmiyor (görsel iddia; doğrulanmadı, C065).",
+  "\"HLautrec imzası sol altta\" ve \"Ch. Lévy sağ altta\" konumları kaynak metinlerinde yok. Matbaa ADI Met birincil kaydıyla doğrulanıyor (Affiches Américaines, Charles Lévy); konum görsel teyit bekler (C065).",
+  "\"her akşam konser ve balo\" ≈ frwiki \"Bal tous les soirs\" (E); \"çarşamba ve cumartesi maskeli balo\" yazısının afiş üzerinde olduğu çekilen hiçbir kaynakta doğrulanmadı — Yaneff (C) yalnız mekânda Wed/Sat maskeli balo yapıldığını söyler (C043, C060, C065).",
+  "Renk/görsel ayrıntıları (sarı topuz, beyaz puantiyeli kırmızı bluz, gri silindir şapka, sarı lamba biçimi, döşeme çizgileri, kesik kadraj) doğrulanmadı. Kısmi destek: NGA siluet/cesur renk/yazı çeşitliliği (B), enwiki beyaz jupon (B), Sorrell \"black suit and a top hat\" (B; şapka rengi yok), frwiki \"chemisier à pois\"/\"bas rouges\"/\"taches jaunes\" (E).",
+  "Dönem/akım: data \"Post-Empresyonizm döneminde\"; WD P135 Art Nouveau (Met Tagging Initiative); Met Related Content \"Art Nouveau\" + \"Lithography in the Nineteenth Century\"; enwiki \"See also: Post-Impressionism\" (atıfsız). Doğrudan çelişki değil; ders her iki bağlamı kaynaklandırır (C044).",
+  "gorsel_kaynagi.json: 5428d6625e8e7ad7 yalnız b_surumler listesinde (\"b1cd3b09\"); adres/muze eşlemesi yok.",
+  "Commons Met dosyasında \"Prints in the Indianapolis Museum of Art\" kategorisi de var (dosya sayfası institution=Met, accession 32.88.12) → muhtemel yanlış kategorileme; veri notu.",
+  "MoMA nüsha kaydı (WD P2014=188979) çekilmedi; URL referanslarda olmadığı için tahmin edilmedi (C041, C062)."
+ ]
+}

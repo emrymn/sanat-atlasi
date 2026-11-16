@@ -1,0 +1,558 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1140358",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergilenmektedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée du Louvre, Salle 825 (Richelieu, Niveau 2)"
+    },
+    {
+     "harf": "B",
+     "metin": "Chatsworth House, Derbyshire"
+    },
+    {
+     "harf": "C",
+     "metin": "Galleria Nazionale d'Arte Antica, Roma"
+    },
+    {
+     "harf": "D",
+     "metin": "Versailles, cabinet de la Pendule"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre birincil kaydı: \"Actuellement visible au Louvre / Salle 825 / Aile Richelieu, Niveau 2\" (S2/S3).",
+   "yanlis_gerekceleri": {
+    "B": "Chatsworth House, Poussin'in İKİNCİ değil İLK versiyonunun (Q11919094) bulunduğu yerdir; bu ders Louvre versiyonunu konu alır.",
+    "C": "GNAA Roma, Guercino'nun 1618 öncül tablosunun bulunduğu kurumdur; Poussin'in Louvre versiyonu değil.",
+    "D": "Versailles cabinet de la Pendule, tablonun 1738–1816 arası tarihî konumudur; 1816'da Louvre'a dönmüştür, güncel yer değildir."
+   },
+   "kanit": [
+    "C008",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre birincil katalog kaydı eserin tarihini nasıl ifade eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"vers 1638\" (yaklaşık 1638)"
+    },
+    {
+     "harf": "B",
+     "metin": "\"1637–39\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"1638–1640\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"um 1640\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre notice: \"2e quart du XVIIe siècle (vers 1638)\"; JSON imprecision=\"vers\" (S2/S3).",
+   "yanlis_gerekceleri": {
+    "B": "\"1637–39\" data/basyapitlar.json'ın ifadesidir; 1639 bitişini destekleyen çekilmiş kaynak yoktur ve Louvre kaydı bu aralığı vermez.",
+    "C": "\"1638–1640\" frwiki infobox'ının aralığıdır; Louvre birincil kaydı değil, ikincil bir varyanttır.",
+    "D": "\"um 1640\" dewiki'nin ifadesidir; Louvre birincil kaydı \"vers 1638\" der."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin Louvre envanter numaraları hangileridir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 7300 (esas) / MR 2339 (diğer)"
+    },
+    {
+     "harf": "B",
+     "metin": "MR 7300 / INV 2339"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 2339 / MR 7300"
+    },
+    {
+     "harf": "D",
+     "metin": "GG_274"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre: \"Numéro principal : INV 7300 ; Autre numéro d'inventaire : MR 2339\" (S2/S3); Joconde INV 7300 (S4).",
+   "yanlis_gerekceleri": {
+    "B": "MR 7300 / INV 2339 numaraların yer değiştirmiş biçimidir; kayıt INV'yi 7300, MR'yi 2339 olarak verir.",
+    "C": "INV 2339 / MR 7300 yine yanlış eşleştirmedir; esas numara INV 7300'dür.",
+    "D": "GG_274 başka bir eserin (Correggio, KHM) envanteridir; bu tabloyla ilgisi yoktur."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya (huile sur toile)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuval üzerine sulu boya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre \"huile sur toile\"; Joconde TECH peinture à l'huile + toile (S2/S3/S4).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmi tekniğidir; bu eser bir tuvaldir, duvar resmi değildir.",
+    "C": "Ahşap pano + tempera farklı destek/bağlayıcıdır; kayıt tuval + yağlıboya der.",
+    "D": "Sulu boya farklı bir bağlayıcıdır; kayıt \"peinture à l'huile\" (yağlıboya) der."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Louvre versiyonunda bulunmayan, Guercino ve Chatsworth versiyonlarında ise yer alan unsur hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kafatası (tête de mort)"
+    },
+    {
+     "harf": "B",
+     "metin": "\"ET IN ARCADIA EGO\" yazıtı"
+    },
+    {
+     "harf": "C",
+     "metin": "Mezar"
+    },
+    {
+     "harf": "D",
+     "metin": "Çoban figürleri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre commentaire: \"le tableau du Louvre, où la tête de mort a disparu\"; Guercino ve Chatsworth'ta kafatası vardır (S2/S8/S6/S7).",
+   "yanlis_gerekceleri": {
+    "B": "Yazıt her üç versiyonda da (Guercino, Chatsworth, Louvre) mezarın üstünde okunur; kaldırılan unsur yazıt değildir.",
+    "C": "Mezar üç versiyonun da merkezî nesnesidir; Louvre'da da mevcuttur.",
+    "D": "Çoban figürleri üç versiyonda da bulunur; Louvre versiyonunun ayırt edici kararı kafatasının kaldırılmasıdır."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Yazıtın şimdiki zaman okumasına (\"Même en Arcadie j'existe\") göre konuşan kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ölüm (memento mori)"
+    },
+    {
+     "harf": "B",
+     "metin": "Mezardaki kişi"
+    },
+    {
+     "harf": "C",
+     "metin": "Çobanlardan biri"
+    },
+    {
+     "harf": "D",
+     "metin": "Ressam (Poussin)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Panofsky/Louvre: şimdiki zaman çevirisi Ölüm'ün kendisinin konuşmasıdır, bir memento mori (S2/S8); Bellori 'I'ı Ölüm olarak anlar (S8).",
+   "yanlis_gerekceleri": {
+    "B": "Mezardaki kişi, GEÇMİŞ zaman okumasının (\"Moi aussi j'ai vécu en Arcadie\") konuşanıdır; şimdiki zaman okumasının değil.",
+    "C": "Çobanlar yazıtı okuyan/dinleyen figürlerdir; şimdiki zaman okumasında sözün sahibi onlar değil Ölüm'dür.",
+    "D": "Ressamın sesi Vieillard-Baron'un ayrı bir yorumudur; şimdiki zaman/Ölüm okumasının konuşanı değildir."
+   },
+   "kanit": [
+    "C015",
+    "C019"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Panofsky'ye göre Louvre versiyonuna daha uygun düşen okuma hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Geçmiş zaman / elegyak (\"Ben de Arkadya'da yaşadım\")"
+    },
+    {
+     "harf": "B",
+     "metin": "Şimdiki zaman / memento mori (\"Arkadya'da bile ben varım\")"
+    },
+    {
+     "harf": "C",
+     "metin": "Anagramatik gizli mesaj"
+    },
+    {
+     "harf": "D",
+     "metin": "Salt tür (genre) sahnesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Panofsky, kafatası kaldırıldığı için Louvre versiyonunun geçmiş zaman/elegyak okumaya daha uygun olduğunu savunur (S2 commentaire; Panofsky 1969 s.295'e atfen).",
+   "yanlis_gerekceleri": {
+    "B": "Şimdiki zaman/memento mori okumasını Panofsky Guercino ve Chatsworth versiyonlarına (kafatası olanlara) uygun bulur; Louvre'a değil.",
+    "C": "Anagramatik gizli mesaj iddiaları (Baigent/Leigh/Lincoln vb.) pseudo-tarihtir ve sanat tarihçilerince reddedilmiştir; Panofsky'nin yorumu değildir.",
+    "D": "Salt tür sahnesi okuması Panofsky'nin felsefi/elegyak yorumuyla ilgisi olmayan bir sınıflamadır."
+   },
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Tablo 1685'te kimin için satın alınmıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louis XIV"
+    },
+    {
+     "harf": "B",
+     "metin": "Kardinal Giulio Rospigliosi"
+    },
+    {
+     "harf": "C",
+     "metin": "Nicolas Fouquet"
+    },
+    {
+     "harf": "D",
+     "metin": "XV. Louis"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre objectHistory: Hérault'dan \"acquis … pour Louis XIV, 1685\"; edinim \"entrée - Collection de Louis XIV\" (S2/S3).",
+   "yanlis_gerekceleri": {
+    "B": "Rospigliosi zincirin ilk halkasıdır (sonradan IX. Clemens); 1685 satın almasının alıcısı değil, önceki sahibidir.",
+    "C": "Fouquet iddiası itwiki'den gelir, atıfsızdır ve Louvre/Joconde A zinciriyle çelişir; kayıtta Fouquet adı geçmez.",
+    "D": "XV. Louis döneminde (1738) tablo cabinet de la Pendule'de kapı üstü olarak yer almıştır; 1685 satın alması XIV. Louis içindir."
+   },
+   "kanit": [
+    "C026",
+    "C029"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Tablonun ters yönde (en contrepartie) gravürünü yapan sanatçı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Étienne Picart"
+    },
+    {
+     "harf": "B",
+     "metin": "Charles Le Brun"
+    },
+    {
+     "harf": "C",
+     "metin": "Nicolas Poussin"
+    },
+    {
+     "harf": "D",
+     "metin": "Richard Verdi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre: \"gravés en contrepartie par Étienne Picart\", lejant \"Le souvenir de la mort au milieu des prosperitez de la vie\" (S2; cf. Wildenstein 1957b).",
+   "yanlis_gerekceleri": {
+    "B": "Charles Le Brun, tablonun 1685 sonrası kraliyet envanterini (no 441) tutan kişidir; gravürü yapan değil.",
+    "C": "Nicolas Poussin tablonun ressamıdır; bu gravürün yapımcısı olarak kayıtta geçmez.",
+    "D": "Richard Verdi, tablonun kritik talihini izleyen 1979 tarihli makalenin yazarıdır; gravür sanatçısı değil."
+   },
+   "kanit": [
+    "C032"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Tablo Versailles'dan Louvre'a hangi yıl dönmüştür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1816"
+    },
+    {
+     "harf": "B",
+     "metin": "1685"
+    },
+    {
+     "harf": "C",
+     "metin": "1797"
+    },
+    {
+     "harf": "D",
+     "metin": "1950"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre objectHistory: \"retour au Louvre (Musée royal), 1816\"; Forbin 9 Temmuz'da Versailles'da görmüş, 20 Temmuz'da transfer (S2/S3).",
+   "yanlis_gerekceleri": {
+    "B": "1685, tablonun Louis XIV için satın alındığı yıldır; Louvre'a dönüş değil.",
+    "C": "1797, tablonun Versailles'da envanterlendiği yıllardan biridir; hâlâ Versailles'dadır, Louvre'a dönmemiştir.",
+    "D": "1950 (18 Mart), tablonun Petit Palais'ya depozito edildiği tarihtir; Louvre'a dönüş değil."
+   },
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Musée du Louvre'dadır (INV 7300 / MR 2339).",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre birincil kaydı envanter INV 7300 / MR 2339 ve \"Actuellement visible au Louvre\" der (S2/S3).",
+   "kanit": [
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Louvre birincil kaydı tarihi \"vers 1638\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: \"2e quart du XVIIe siècle (vers 1638)\"; JSON imprecision=\"vers\" (S2/S3).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Louvre versiyonunda bir kafatası bulunur.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre \"où la tête de mort a disparu\" der; kafatası Guercino ve Chatsworth versiyonlarında vardır, Louvre'da kaldırılmıştır (S2).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Tablo 1685'te Louis XIV için satın alınmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: Hérault'dan \"acquis … pour Louis XIV, 1685\"; edinim \"entrée - Collection de Louis XIV\" (S2/S3).",
+   "kanit": [
+    "C026",
+    "C029"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "itwiki'nin verdiği 122 cm genişlik birincil kaynaklarla uyumludur.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre/Joconde/utpictura/WD/en 121 cm verir (85 × 121); itwiki'nin 122 cm'si bir hatadır, 121 esas alınır (S2/S3/S4/S5).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Yazıtın iki çevirisini ve Panofsky–Brandt dilbilgisi tartışmasını karşılaştırın.",
+   "beklenen_ogeler": [
+    "\"être\" fiilinin ellipsi",
+    "şimdiki zaman = Ölüm / memento mori",
+    "geçmiş zaman = ölü / elegyak",
+    "Panofsky \"la seule grammaticalement correcte\"",
+    "Brandt \"grammatisch durchaus möglich … intendiert\""
+   ],
+   "kanit": [
+    "C015",
+    "C016",
+    "C058"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Gölge/Plinius resmin-keşfi ikonografisini ve \"gölgenin kime ait olduğu\" ihtilafını değerlendirin (görsel teyit gerekli).",
+   "beklenen_ogeler": [
+    "en/fr \"his companion\" / \"son compagnon\"",
+    "data \"diz çöken çobanın gölgesi\"",
+    "Plinius NH XXXV 5,15",
+    "mimesis / resmin keşfi",
+    "görsel incelenmedi → çözülmedi"
+   ],
+   "kanit": [
+    "C012",
+    "C048",
+    "C059"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Provenance zincirini ve itwiki Fouquet iddiasının neden kullanılmadığını kaynak eleştirisiyle yazın.",
+   "beklenen_ogeler": [
+    "Rospigliosi → Avice → Hérault → Louis XIV 1685",
+    "Joconde \"Avice chevalier d' (?)\" (Rospigliosi yok)",
+    "itwiki Fouquet atıfsız",
+    "A zinciri esas, Fouquet kullanılmaz"
+   ],
+   "kanit": [
+    "C026",
+    "C046",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Kadın figürü önerilerini (Cesi Juno / Pictura / Daphne-Laura) ve kimlik belirsizliğini tartışın.",
+   "beklenen_ogeler": [
+    "\"possibly a shepherdess\"",
+    "\"profil grec\"",
+    "Cesi Juno (Barker 1999)",
+    "Pictura / Daphne-Laura (Brandt)",
+    "uzlaşma yok (E05)"
+   ],
+   "kanit": [
+    "C013",
+    "C061"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Tarih ihtilafını ve data'nın 1639 bitişinin desteksizliğini yönetin.",
+   "beklenen_ogeler": [
+    "Louvre \"vers 1638\" (A)",
+    "en 1637–1638",
+    "fr infobox 1638–1640",
+    "de \"um 1640\" / it \"circa 1640\"",
+    "data \"1637–39\" → 1639 desteksiz"
+   ],
+   "kanit": [
+    "C003",
+    "C042"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Mezarın üzerindeki \"ET IN ARCADIA EGO\" yazıtını bulun ve harfleri izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: yazıt merkezdeki mezarın üstünde okunur (utpictura annotation 1; Joconde INSC \"d'origine\").",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Çobanlardan birinin parmağıyla mezar üzerindeki gölge siluetini izlediği jesti bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: gölge parmakla çevrelenir (Plinius resmin-keşfi anı). Gölgenin kime ait olduğu tartışmalıdır; kesin atama yapmayın.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kafatası OLMADIĞINI doğrulayın; ölümün yazıt ve gölgeyle nasıl sezdirildiğini gözlemleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Louvre'da \"la tête de mort a disparu\"; Guercino/Chatsworth'ta kafatası var.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kompozisyonun yataylığını, figürlerin kontemplatif duruşunu ve mezar etrafındaki dizilişi inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Mérot \"l'horizontalité et l'équilibre de la composition de 1638\"; geometrik/kontemplatif.",
+   "kanit": [
+    "C014",
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tuvalin büyütülme bantlarını (üst/alt) ve yüzeyi gözlemleyin; orijinal-rentoilage yapışmasını düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Louvre +7 cm üst / +2 cm alt bant; 1995 cire-résine; orijinal-rentoilage yapışması zayıf.",
+   "kanit": [
+    "C030",
+    "C031"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Les Bergers d'Arcadie / Et in Arcadia ego; Nicolas Poussin (1594–1665); \"vers 1638\"; huile sur toile; 85×121 cm; Louvre INV 7300 / MR 2339, Salle 825 Richelieu N2.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Yazıtın iki çevirisi?",
+   "arka": "Şimdiki zaman \"Même en Arcadie j'existe\" → Ölüm konuşur (memento mori); geçmiş zaman \"Moi aussi j'ai vécu en Arcadie\" → ölü konuşur (elegyak). Panofsky: şimdiki zaman dilbilgisel tek doğru, Louvre için geçmiş zaman uygun.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance?",
+   "arka": "Rospigliosi → Avice (ingénieur du Roi) → Hérault → Louis XIV 1685 → Versailles (dessus-de-porte) → Louvre 1816 → Petit Palais 1950 depozito.",
+   "kanit": [
+    "C026",
+    "C027",
+    "C029"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Versiyon farkı?",
+   "arka": "Guercino 1618 + Chatsworth (vers 1628): kafatası var, barok/dikey. Louvre (vers 1638): kafatası YOK, geometrik/yatay/kontemplatif.",
+   "kanit": [
+    "C011",
+    "C014",
+    "C040",
+    "C041"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik / restorasyon?",
+   "arka": "Toile sergée 21×10 fil/cm²; brun-rouge préparasyon; +7 cm üst / +2 cm alt bant; 1806 Hacquin rentoilage, 1995 Lutet cire-résine; orijinal-rentoilage yapışması zayıf.",
+   "kanit": [
+    "C030",
+    "C031"
+   ]
+  }
+ ]
+}

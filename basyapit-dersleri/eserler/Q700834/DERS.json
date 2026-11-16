@@ -1,0 +1,711 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q700834",
+ "sanatci_id": "correggio",
+ "baslik": "Jüpiter ve Io",
+ "ozgun_baslik": "Jupiter und Io (Jupiter and Io / Giove e Io)",
+ "kunye": {
+  "sanatci": "Antonio Allegri, gen. Correggio",
+  "sanatci_yasam": "1489/94–1534",
+  "tarih": "y. 1530",
+  "tarih_belirsizlik": "KHM \"um 1530\"; wiki 1532–33/1531–32 (D)",
+  "teknik": "Tuval (Leinwand); yağlıboya birincilde açıkça yok (C)",
+  "boyut_cm": {
+   "yukseklik": 162.5,
+   "genislik": 73.5
+  },
+  "muze": "Kunsthistorisches Museum, Viyana (Gemäldegalerie)",
+  "envanter": "GG_274",
+  "edinim": "vor 1603 Rudolf II (Pompeo Leoni); 1584 Leone Leoni; 1532 vielleicht Gonzaga",
+  "konum": "Gemäldegalerie Kabinett 3 / Room 3",
+  "telif_durumu": "Kamu malı (Correggio ö.1534); Commons PD; KHM reproduksiyon talebi (bilimsel/ticari)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Antonio_Allegri,_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project / KHM)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (4 dosya); BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "GAP 3430×7948; GG274 1294×3000; 028c 3000×7024; 028 1256×2922",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C040); GZ TASLAK; KHM reproduksiyon talebi (C032); kompozisyon K1+K4-K8 metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 378
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 981
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 1720
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-öncülük-yorumu"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-bulut-üslubu-biçimsizi-biçimlendirmek"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-istemsiz-birleşme-etik-okuma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-geyik-bilmecesi-ve-data-uyuşmazlığı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "KHM birincil kataloguyla künyeyi (um 1530, tuval, GG_274, Kabinett 3, pendant) doğrular.",
+  "Birincilin iç çelişkisini (DE↔EN boyut) ve 7 boyut varyantını yönetir.",
+  "Bulut üslubunu ve antik model sentezini analiz eder.",
+  "İstemsiz birleşme etik okumasını ve geyik/data uyuşmazlığını beyan eder.",
+  "Provenance hipotez zincirini ve Gould/Verheyen atıf hatasını yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Metamorphoses",
+   "tanim": "Ovidius dönüşüm mitleri; Jüpiter-Io kaynağı (I. kitap).",
+   "kanit": [
+    "C013",
+    "C012"
+   ]
+  },
+  {
+   "ad": "Pendant",
+   "tanim": "Eş pano; Ganymede GG_276.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Bulut üslubu",
+   "tanim": "Correggio şifresi; biçimsizi biçimlendirme; San Giovanni kubbesi.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "Ara Grimani",
+   "tanim": "Antik Cupid-Psyche kabartması; Io poz modeli.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "ad": "Klimavitrine",
+   "tanim": "Entegre iklim vitrini; 35 kg; tuval koruma rejimi.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Antonio Allegri, gen. Correggio (1489/94–1534).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih: \"um 1530\" (circa aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Nesne: Gemälde; kültür Italienisch/Emilianisch.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Destek: tuval (Leinwand).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yağlıboya (oil on canvas): wiki infobox atıfsız + WD; birincil KHM'de yağ açıkça yok.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K6",
+    "K9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: DE 162,5×73,5×2,3 / EN 162×73,5 (→ C033 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Çerçeve 184×92,5×8 cm; ağırlık 35 kg (Klimavitrine dahil).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Envanter: Gemäldegalerie 274 (GG_274).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Güncel konum: KHM Gemäldegalerie Kabinett 3 / Room 3.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Pendant: \"Entführung des Ganymed\" (Ganymede'nin Kaçırılışı), GG_276.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Provenance: 1532 vielleicht Geschenk Federico Gonzaga→Karl V; 1584 Leone Leoni; vor 1603 Rudolf II (Pompeo Leoni'den).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Konu: Jupiter, ırmak tanrısının kızı Io'ya âşık; ülkeyi kara sise bürür, kaçışını engeller, birleşir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Edebi kaynak: Ovidius Metamorphoses I (satır lokusları farklı → C039).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K6",
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Dizi: Federico II Gonzaga \"Jüpiter'in Aşkları\" 4 tuval (Io/Ganymede/Danaë/Leda).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Dizi, Venus+Cupid+Satyr başarısından sonra; Vasari (Giulio Romano'dan) yalnız Leda+Danaë anar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Eşlerin yerleri: Danaë→Borghese Roma; Leda→Berlin Gemäldegalerie; Ganymede→KHM.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Karl V'e devir hipotezleri: Gould ↔ Verheyen (Palazzo Te Ovid odası; 1540 sonrası); atıf en/it yer değiştirmiş (→ C036).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Lomazzo 1584: Io+Danaë Milano'da Leone Leoni nezdinde; Pompeo İspanya'dan göndermiş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "1603 Prag'da Rodolfo II; 1703 Viyana kayıtlı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "1610'lardan beri Viyana imparatorluk koleksiyonlarında (Ganymede ile).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Dört tuvalin kronolojisi tartışmalı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Belki Correggio'nun son eseri (\"forse\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Io arkadan kavisli poz; antik model Ara Grimani kabartması (Cupid-Psyche).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Bulut betimi, Parma San Giovanni kubbesinden beri üslup şifresi; bulut/yağmur/su/yıldırım en imrenilen güçlükler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Ön planda berrak dere; alacakaranlık ışığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sağ altta su içen geyik; bilmece; belki Inachos (ırmak tanrısı baba) göndermesi (→ C037).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Io, Jupiter'in dumanlı elini kendine çekiyor; yüzü Io'nun yüzü üstünde belli belirsiz (atıfsız; görsel inceleme YOK).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Duyusallık Bernini/Rubens'i önceler (yorum); Mola desen + 1860 Dombrowski detay kopyası (B).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Sahne Io açısından istemsiz birleşmeyi gösterir (KHM \"wollte fliehen\"; Kline \"raped her\") — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6",
+    "K8",
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Yapım yeri: Parma (yalnız Smarthistory).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Kamu malı (PD): yazar ölümü 1534, 100+ yıl pma; Commons 4 dosya PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "KHM görsel kullanım: özel serbest; bilimsel/ticari yayın için reproduksiyon talebi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Boyut ihtilafı (7 varyant): KHM-DE 162,5×73,5 ↔ KHM-EN/2016 162×73,5 ↔ enwiki/Smarthistory 163,5×70,5 ↔ it/de 163,5×74 ↔ arthome 163×74.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "Tarih ihtilafı: um 1530 (KHM) ↔ 1532–33 (enwiki/it/Smarthistory) ↔ 1531/1532 (de) ↔ WD 1530/1530–32.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5",
+    "K6",
+    "K8",
+    "K9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "Rudolf II satın alma: vor 1603 (güncel KHM) ↔ 1605 (2016 arşiv) ↔ 1601–03 (itwiki/Gould).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "Gould/Verheyen hipotez atfı en/it wiki'de yer değiştirmiş; belge desteği yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Geyik/Inachos + data \"toprak testi\" uyuşmazlığı: dewiki su içen geyik; data hotspot \"toprak testi\"; görsel kontrol YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Viyana varış: 1610s (Gould) ↔ 1703 (arthome) ↔ 1603 Prag.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Ovid satır lokusu: I,563ff (de Fink) ↔ I,587-600 (Smarthistory Kline).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); 4 Commons dosyası PD; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "refs metinleri erişilmedi (Gould registration, Verheyen DOI-only, PhilArchive 403, Smarthistory bot); kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Kunsthistorisches Museum",
+   "belge": "katalog DE (jupiter-und-io-40)",
+   "url": "https://www.khm.at/kunstwerke/jupiter-und-io-40",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Kunsthistorisches Museum",
+   "belge": "katalog EN (jupiter-und-io-40-1)",
+   "url": "https://www.khm.at/en/artworks/jupiter-und-io-40-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Kunsthistorisches Museum",
+   "belge": "eski Bilddatenbank id=40 (Wayback 2016-03-04)",
+   "url": "https://web.archive.org/web/20160304064322/http://bilddatenbank.khm.at/viewArtefact?id=40",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2016-03-04)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Jupiter and Io",
+   "url": "https://en.wikipedia.org/wiki/Jupiter_and_Io",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Giove e Io",
+   "url": "https://it.wikipedia.org/wiki/Giove_e_Io",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Almanca Vikipedi",
+   "belge": "Jupiter und Io",
+   "url": "https://de.wikipedia.org/wiki/Jupiter_und_Io",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Correggio Art Home",
+   "belge": "scheda 2538 (Wayback 2016-03-05; Lomazzo 1584)",
+   "url": "https://web.archive.org/web/20160305010530/http://www.correggioarthome.it/SchedaOpera.jsp?idDocumentoArchivio=2538",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2016-03-05)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Smarthistory",
+   "belge": "Correggio's Jupiter and Io (Wayback 2014-10-10)",
+   "url": "https://web.archive.org/web/20141010131908/http://smarthistory.khanacademy.org:80/correggios-jupiter-and-io.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı bot-engelli; arşiv 200 (2014-10-10)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikidata",
+   "belge": "Q700834",
+   "url": "https://www.wikidata.org/wiki/Q700834",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "Wikimedia Commons",
+   "belge": "4 dosya (GAP / GG274 / 028c / 028)",
+   "url": "https://commons.wikimedia.org/wiki/File:Antonio_Allegri,_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Ganymede'nin Kaçırılışı",
+   "sanatci": "Correggio",
+   "kurum": "KHM (GG_276)",
+   "gerekce": "Pendant; dizi teması (Jüpiter'in aşkları).",
+   "kanit": [
+    "C010",
+    "C014"
+   ]
+  },
+  {
+   "eser": "Danaë",
+   "sanatci": "Correggio",
+   "kurum": "Galleria Borghese, Roma",
+   "gerekce": "Dağılmış dizi eşi.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Urbino Venüsü",
+   "sanatci": "Titian",
+   "mufredat_ici": true,
+   "gerekce": "Mitolojik nü + bakış karşıtlığı.",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "KHM birincil DE+EN (K1/K2) + arşiv (K3/K7/K8) yeniden açıldı; künye/konu/provenance/pendant doğrulandı; birincilde yağ açıkça yok (C005), DE↔EN boyut çelişkisi (C033). en/it/de wikitext yeniden okundu; yedi+ ihtilaf D olarak açık. Görsel K10 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C040); GZ TASLAK. Refs metinleri erişilmedi (C041).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data 1530 ↔ KHM um 1530 ✓ ama wiki 1532–33 (D, C034); circa korunmalı.",
+  "Boyut: data/wiki 163,5×70,5/74 ↔ KHM 162,5×73,5 (D, C033); KHM birincil esas.",
+  "Geyik: data \"toprak testi\" ↔ dewiki \"su içen geyik\" (D, C037); görsel teyit gerekli.",
+  "Teknik: data yağlıboya tuval ↔ KHM yalnız Leinwand (C005 C).",
+  "Pendant Ganymede GG_276 data'da yok (C010).",
+  "Görsel İNCELENEMEDİ (C040); GZ TASLAK; KHM reproduksiyon talebi; insan editör zorunlu."
+ ]
+}

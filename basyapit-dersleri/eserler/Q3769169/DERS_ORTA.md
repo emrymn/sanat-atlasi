@@ -1,0 +1,54 @@
+# HOLOFERNES'İN KAFASINI KESEN JUDITH — Orta Dersi (10 dakika)
+
+**Ön koşul:** Başlangıç dersi. **Kapsam:** Floransa/Uffizi versiyonu (Q3769169); Napoli versiyonu (Q2247406) yalnızca karşılaştırma için anılır [C001]. Görsel bu oturumda incelenmedi; biçimsel betim kaynak metinlerine dayanır [C050] (belirsiz).
+
+## 1. Kimlik
+
+Eserin müze kaydı adı *Judith Beheading Holofernes*, İtalyanca adı *Giuditta che decapita Oloferne*'dir [C001]. Sanatçı Artemisia Gentileschi'dir; Uffizi onu "Roma 1593 – Napoli 1652/53" diye anar [C002]. Tarih "1620 c." biçimindedir: circa korunur, kesin yıl dayatılmaz [C003]. Teknik yağlıboya-tuvaldir [C004]. Birincil kayıt boyutu 146.5 × 108 cm olarak verir; Wikidata/Commons zinciri ise 199 × 162.5 cm der ve bu ihtilaf çözülmemiştir [C005][C026][C029] (tartışma). Envanter numarası 1567 (1890 serisi), sergileme yeri D29 "Caravaggio and Artemisia" salonudur [C006][C007]. Aynı konunun Napoli'deki daha erken versiyonu Capodimonte'dedir ve ayrı bir Wikidata öğesidir; iki eser karıştırılmamalıdır [C001][C023].
+
+## 2. Tarihsel bağlam
+
+Barok sanat, 17. yüzyılda Katolik Reformu (Counter-Reformation) bağlamında gelişti: Protestanlık, Calvin ve Luther gibi figürlerin yönlendirmesiyle ikonaları putperestlik gerekçesiyle reddederken, Trent Konsili görsel sanatların Katolik inanç için önemini yeniden onayladı; Barok, tarihsel ve dinsel imgeleri heightened realism — yoğunlaştırılmış gerçekçilik — ile sunarak Kilise'nin etkisini genişletti [C036]. Judith figürü bu çatışmanın içinde her iki konfesyonca da benimsenip reddedildi; bağlama göre saflığın ya da baştan çıkarmanın simgesi oldu, ancak Katolik Reformu döneminde çoğunlukla "sapkın" Holofernes'e karşı ilahi erdemin simgesi olarak okundu [C037]. Tablo, Floransa'da Medici sarayının sanat hamiliği ortamında, Grandük Cosimo II için yapıldı [C010]. Ödeme 50 scudi olarak kararlaştırılmıştı [C018]. Cosimo II 1621'de, büyük tuval tamamlandıktan kısa süre sonra öldü [C012].
+
+## 3. Sanatçının kariyerindeki yeri
+
+Artemisia 1593'te Roma'da doğdu; maniyerist ressam Orazio Gentileschi ile Prudentia Montone'nin tek kızıydı [C042]. Babası yeteneğini erken fark etti; 1610'a gelindiğinde ilk imzalı eseri sayılan *Susanna and the Elders*'ı üretmişti [C042]. Babasının meslektaşı Agostino Tassi, perspektif öğretmeni olarak genç Artemisia'ya tecavüz etti; 1612 yazı boyunca süren davada Artemisia yemin altında ifade verdi, Tassi suçlu bulundu ve Roma'dan geçici olarak sürüldü [C042]. Kendi figürünü model olarak kullanma pratiği, otoportre tartışmasının zeminidir; *Self-Portrait as Saint Catherine of Alexandria* (1616) bu pratiğin örneğidir [C043]. Bu biyografi, eserin feminist yorumlarının merkezindedir ama yorumun kendisi tartışmalıdır [C022]. Uffizi'ye göre tablo, Artemisia'nın Floransa'da yedi yıl geçirdikten sonra döndüğü Roma'da tamamlandı; burada Caravaggio'nun eserlerini yeniden inceleme olanağı buldu [C009]. Sanatçı Roma, Floransa ve Napoli saraylarında çalıştı, İngiltere'ye seyahat etti ve Floransa Desen Akademisi'ne kabul edilen ilk kadın oldu [C056][C014]. Akademi yılını bu ders vermez: birincil kayıt yıl belirtmez, data'daki "1616" doğrulanmamıştır [C014][C047] (belirsiz).
+
+## 4. Biçimsel analiz (kaynak betimi)
+
+Görsel incelenmediği için bu bölüm kaynakların betimlediği biçimsel özelliklerle sınırlıdır [C050] (belirsiz). Khan Academy kaynaklı enwiki betimi, eseri chiaroscuro ve gerçekçiliğin "ustaca kullanımı" ile Judith, Abra ve ölmekte olan Holofernes arasındaki şiddetli gerilimin ifadesi olarak tanımlar [C015]. Garrard'ın betimlediği üzere iki kadın, belirgin biçimde güçlü kollarla Holofernes'i bastırır; kollar sıvalıdır, sanki kaçınılmaz bir ev içi işi yerine getirirler; yüzlerde sarsılmaz bir kararlılık vardır [C017]. Kılıç belirgin biçimde dikeydir ve kabzası haça gönderme yapacak biçimdedir [C016]. Longhi'nin 1916'da yazdığı, itwiki'de aktarılan satırlar beyaz çarşafın "bir Vermeer'e değer" beyazlıklarını ve Judith'in sarı ipek elbisesini öne çıkarır [C045]; "bu korkunç kadın! Bütün bunları bir kadın mı resmetti?" diye sorar [C045]. Longhi, sahnede sadistik bir yan olmadığını, asıl şaşırtıcı olanın ressamın soğukkanlılığı olduğunu söyler [C045]. itwiki'nin atıfsız betimi üç figürün üçgen düzenini, Judith'in gövde bükülüşünü ve kırmızı kadife örtünün katmanlı boyamasını ekler; bu ayrıntılar doğrulanmamıştır [C044] (belirsiz). Uffizi genel etkiyi "hem güçlü hem korkutucu" diye özetler [C055].
+
+## 5. İkonografi
+
+Konu, deuterokanonik Judith Kitabı'dır [C035]. Anlatı şöyle ilerler: Bethulia kuşatma altındadır ve teslim olmak üzeredir; Yahudi dul Judith, halkının acısına seyirci kalamaz, süslenir, sahte bir teslimiyet/ittifak niyetiyle düşman kampına girer; Holofernes onun güzelliğinden etkilenir ve özel çadırında ziyafet verir; sarhoş olup uyuyunca Judith onun kılıcıyla iki darbede işi bitirir; iki kadın, generalin başını bir torbada Bethulia'ya geri getirir ve çatışma sona erer [C034]. Uffizi sayfası, Judith'in İncil'deki sözünü başlığa taşır: "Rab onu bir kadının eliyle vurdu" [C033]. enwiki, Garrard üzerinden Judith 16:9'u aktarır: "Sandali onun gözünü kamaştırdı, / Güzelliği ruhunu tutsak etti, / Kılıç boynundan geçti" [C035]. İkonografik yenilik, Abra'nın genç ve Judith'in aynası olarak kurgulanmasıdır; önceki betimlemelerde hizmetçi daha yaşlı ve pasifti [C017]. Haç biçimli kabza, şiddeti ilahi adalet çerçevesine yerleştirir; bu, kaynaklı bir betimdir, kesin sembolik program iddiası değildir [C016].
+
+## 6. Teknik ve malzeme
+
+Teknik yağlıboya, destek tuvaldir; birincil kayıt ve her iki wiki bunu doğrular [C004]. Boyut ihtilafı teknikle de ilgilidir: birincil 146.5 × 108 cm ↔ WD/Commons 199 × 162.5 cm; metadata en-boy oranları ikincil değerle uyumludur ama bu bir çıkarımdır, kesin çözüm değildir [C005][C026][C029] (tartışma). itwiki, kumaşların ve drapelerin "più passaggi e velature" — çok katmanlı geçişler ve sırlar — ile işlendiğini yazar; bu betim atıfsızdır ve görsel teyit yoktur [C044] (belirsiz). Eser 1993'teki bombalı saldırıda hasar gördü, ardından restore edildi; kaynak metin saldırı yerini belirsiz ifade eder ("Pitti Sarayı" denir, bağlantı Via dei Georgofili saldırısını gösterir) [C021]. Telif açısından eser kamu malı sayılır: WD, ölümünden 100+ yıl geçmiş sanatçılar için PD kaydı taşır; bu bir WD çıkarımıdır (yorum) [C052]. Uygulama görselinin lisans durumu ayrı bir ihtilaftır: PD etiketi ile fotoğrafın CC BY-NC-SA 2.0 izni çatışır [C032] (tartışma).
+
+## 7. Felsefi ve estetik analiz (yorum)
+
+Bu bölüm açıkça yorumdur; tarihsel etki iddiası içermez. Barthes'ın okumasından hareketle sahne, şiddeti gösteriş değil emek olarak kurar: iki kadının ortak kas gücü, kahramanlığı bedensel çalışmaya çevirir; "zafer" bir jest değil, sürdürülen bir çabadır (yorum) [C057][C046]. Uffizi'nin "güçlü ve korkutucu" etkisi, yücelik (sublime) estetiğiyle okunabilir: korku ile hayranlığın aynı anda üretilmesi; bu, Kant'tan ödünç alınmış bir mercektir, sanatçının Kant'ı bildiği iddiası değildir (yorum) [C058][C055]. Sarı ipek elbise ile sahnenin şiddeti arasındaki tezat, "ev içi iş" kıyafetiyle kahramanlık arasındaki gerilimi görünür kılar (yorum) [C057][C045].
+
+## 8. Karşılaştırmalı analiz
+
+Napoli versiyonu (Q2247406) c. 1612–1613 tarihlidir, 158.8 × 125.5 cm'dir ve Capodimonte'dedir; kompozisyonda Judith sağda, Abra arkadan tutar; güçlü chiaroscuro kullanılır [C023]. Floransa versiyonu, enwiki'ye göre kompozisyon ve detaylarda "ince ama belirgin iyileşmeler" gösterir; itwiki'ye göre Gentileschi adıyla en doğrudan ilişkilendirilen eser budur [C053]. Caravaggio'nun *Judith Beheading Holofernes*'i (c. 1598–99; itwiki 1602 der — tarih ihtilaflı) eylemi "benzeri görülmemiş bir gerçekçilikle" betimler ve Artemisia'nın üslubunu etkiler; eser Palazzo Barberini'dedir (itwiki) [C039][C031] (tartışma). Baba Orazio Gentileschi de c. 1610'da *Judith and Her Maidservant with the Head of Holofernes*'i resmetmiştir; her iki sanatçı gerilim dolu anları seçer [C038]. Konunun sonraki anını işleyen *Judith and Her Maidservant*'ın c. 1618 Pitti ve c. 1625 Detroit versiyonları vardır [C054].
+
+## 9. Akademik tartışmalar
+
+En canlı tartışma, Judith'lerin alegorik otoportre olup olmadığıdır: Garrard, şiddetli Judith betimini sanatçının erken yaşam travmasıyla paralel okur ve bunu toplumsal cinsiyete dayalı bir başkaldırı olarak yorumlar; Pollock ve Ciletti ise saldırının sürekli anılmasının Gentileschi'nin imgesini sınırladığını savunur [C022]. Boyut (D001), versiyon boyut kıyası (D002: itwiki Napoli'yi "biraz daha küçük" der, oysa Napoli boyutu daha büyüktür), Caravaggio tarihi (D003) ve görsel lisansı (D004) açık ihtilaflardır [C029] (tartışma)[C030] (tartışma)[C031] (tartışma)[C032] (tartışma). Tarih varyantları da kesinleştirilmemiştir: Napoli maddesi Floransa versiyonunu "1613 ile 1621 arasında bir yerde" diye anar [C024][C048] (belirsiz).
+
+## 10. Küratöryel anlatı
+
+Tablonun Floransa'ya varışı sancılı oldu: doğalçı "virility" (eril sertlik) güçlü tepkiler çekti ve esere Gallery'de sergilenme onuru reddedildi [C013]. itwiki, eserin Pitti Sarayı'nda karanlık bir köşeye itildiğini yazar; enwiki ise 1700'lerin sonunda bir Grand Duchess'in vahşi betimi onaylamayıp tabloyu Uffizi'nin izole bir bölümüne taşıttığını anlatır; bu episodlar uzlaştırılmamıştır, farklı olaylar olabilir [C049] (belirsiz)[C020]. 1993 hasarı ve restorasyonundan sonra eser yine büyük ölçüde çevresel bir konuma yerleştirildi; bugün Caravaggio dahil büyük Barok ustalarıyla aynı mekânı paylaşır — D29 salonunun adı bu çerçeveyi taşır [C041][C007]. itwiki'ye göre Gentileschi adıyla en doğrudan ilişkilendirilen eser budur [C053].
+
+## 11. Öğrenme etkinlikleri
+
+1. Kaynak betimlerini kullanarak iki kadının emek vurgusunu ve haç kabzayı bulun; görsel teyit olmadığını not edin [C017][C016].
+2. Napoli ve Floransa versiyonlarının künyelerini yan yana yazın; boyut kıyasındaki çelişkiyi işaretleyin [C023][C030] (tartışma).
+3. Biyografik okumanın lehindeki ve aleyhindeki gerekçeleri iki sütunda listeleyin [C022].
+
+## 12. Kaynakça (bu derste kullanılanlar)
+
+- S1 Wikidata Q3769169 (EntityData) · S2 Uffizi resmî eser sayfası (birincil) · S3 enwiki Florence · S4 itwiki Firenze · S5 Commons imageinfo (iki dosya) · S6 WD etiketleri · S7 enwiki Naples · S8 Naples pageprops · S9 Commons GENTILESCHI Judith.jpg. Tam künyeler ve erişim durumları KANIT_DOSYASI.md §1'dedir.
+- Erişilemeyenler: Garrard 1989/2020, Bal 2005, Treves 2020, Barker 2022, Bailey 2012, Lucas 1992, Gardner 2013, Uffizi rehberi 2019, Menzio 2004, Longhi 1916 ve Barthes özgün metinleri yalnızca erişilen kayıtların bibliyografyasında anıldı; metinlerine erişilmedi [C051] (belirsiz).

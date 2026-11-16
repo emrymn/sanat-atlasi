@@ -1,0 +1,938 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q764831",
+ "sanatci_id": "jan-steen",
+ "baslik": "Aziz Nicholas Yortusu",
+ "ozgun_baslik": "Het Sint-Nicolaasfeest (The Feast of St Nicholas)",
+ "kunye": {
+  "sanatci": "Jan Havicksz. Steen",
+  "sanatci_yasam": "omstr. 1626 – 1679 (Leiden)",
+  "tarih": "1665 - 1668 (güncel müze); 2012: \"c. 1663-65\" (D001)",
+  "tarih_belirsizlik": "D001: güncel \"1665 - 1668\" (\"c.\" yok) ↔ müze-2012 \"c. 1663-65\" ↔ GAP \"circa 1663-1665\"; WD precision 8 (on yıl), P1480 yok; uzlaştırma yapılmadı",
+  "teknik": "Tuval üzerine yağlı boya (olieverf op doek)",
+  "boyut_cm": {
+   "yukseklik": 82,
+   "genislik": 70.5
+  },
+  "muze": "Rijksmuseum, Amsterdam",
+  "envanter": "SK-A-385",
+  "edinim": "1809 satın alma (Kabinet van Heteren; varis A. L. Gevers, \"één ton gouds\", 137 resim); önceki: Seger Tierens satışı, Lahey 1743",
+  "konum": "Eregalerij (Gallery of Honour), zaal 2.30",
+  "telif_durumu": "Kamu malı (Public Domain Mark 1.0); Steen ö. 1679, 100+ yıl pma"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jan_Havicksz._Steen_%E2%80%93_Het_Sint-Nicolaasfeest_%E2%80%93_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture, asset HQH272DWHOl8aA; Rijksmuseum)",
+  "lisans": "Public domain (PD; AttributionRequired false)",
+  "dogrulama": {
+   "yontem": "metadata (imageinfo); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "4000×4690 px; 7.769.384 bayt (~7,8 MB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C048); GZ TASLAK; kompozisyon S5/S6/S7/S14 metninden; oran 4690/4000≈1,1725 ↔ 82/70,5≈1,163 uyumlu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 423
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1434
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2821
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-katmanları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenans-belge-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçı-kariyeri-ve-anlatıcı-kimliği"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-jest-dramaturjisi-ve-renk"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-aziz-bebeği-roe-ve-yortu-ekmeği"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-ölçü-imza-destek"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Rijksmuseum birincil kaydıyla künyeyi (SK-A-385, 1665-1668, 82×70,5, Eregalerij 2.30) doğrular.",
+  "Tarih (D001) ve ayakkabı (D002) ihtilaflarını kaynak hiyerarşisiyle yönetir; hedge'leri korur.",
+  "Sinterklaas ikonografisini (Johannes de Doper-pop, roe, kolfstok, yortu çörekleri) kaynak düzeyleriyle okur.",
+  "Provenans zincirini (Tierens 1743 → Van Heteren/Gevers 1809) belgelerle kurar.",
+  "Vermeer pilot karşılaştırması ve Hogarth alımlama hattını (Kleiner ↔ Cole gerilimi) tartışır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Sinterklaasfeest",
+   "tanim": "Aziz Nicholas Yortusu kutlaması; arife 5 Aralık; çocuklara armağan/roe geleneği (S5, S14).",
+   "kanit": [
+    "C014",
+    "C053"
+   ]
+  },
+  {
+   "ad": "Genrestuk (janr resmi)",
+   "tanim": "Gündelik yaşam sahnesi; müze tür kaydı \"genrestuk\" (S5).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Roe / gard",
+   "tanim": "Yaramaz çocuğun ayakkabısına konan dal/çubuk; birincil + 1909 katalog (S5, S7).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Johannes de Doper-pop",
+   "tanim": "Vaftizci Yahya biçimli oyuncak bebek; ortadaki kızın armağanı (S5).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Kabinet van Heteren",
+   "tanim": "1809'da \"één ton gouds\" ile alınan koleksiyon (137 resim); varis A. L. Gevers (S7).",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin sanatçısı Jan Havicksz. Steen'dir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Özgün başlık \"Het Sint-Nicolaasfeest\" (varyant \"Het Sint Nicolaasfeest\"); İngilizce \"The Feast of St Nicholas\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Müzenin güncel tarihlemesi \"1665 - 1668\" (kayıtta \"c.\" öneki yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Müzenin 2012'deki tarihlemesi \"c. 1663-65\" idi (arşiv 2012-01-06).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Malzeme/teknik: tuval üzerine yağlı boya (olieverf op doek).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut 82 × 70,5 cm (1909 no.2237 + 2012 + WD; güncel S5'te boyut alanı yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter numarası SK-A-385.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Eser Rijksmuseum (Amsterdam) koleksiyonundadır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Güncel sergileme yeri: Eregalerij (Gallery of Honour), zaal 2.30.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İmza \"JSteen\"; sağ altta, zeminde (\"gem. rechts beneden op den grond\", 1909).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Telif durumu: kamu malı (public domain; PD mark 1.0).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Kalıcı nesne URL'si https://id.rijksmuseum.nl/2006398.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Tür: genre resmi (genrestuk).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Konu: bir ailenin ev içinde Sinterklaas bayramını kutlaması; Aziz Nicholas Arifesi (5 Aralık).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Ortadaki kızın kollarında Vaftizci Yahya (Johannes de Doper) bebeği ve şekerleme dolu bir kova var.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Bebek deve kılı gömlek giyer ve uzun bir haç tutar (\"what appears to be\"; atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C017",
+   "ifade": "Soldaki ağlayan oğlan ayakkabısında bir dal/çubuk (roe) bulmuştur (birincil + tarihsel oybirliği).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S3",
+    "S7",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kollarını uzatmış annenin yanında bir kolfstok'lu gülen oğlan durur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Büyük kız ayakkabıyı zaferle havaya kaldırır; başka bir çocuk onu gösterip güler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Arka planda yaşlı bir adam ve kadın vardır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Büyükanne ağlayan oğlana el eder; perde arkasında saklanmış bir armağan OLABİLİR (\"Perhaps\"/\"mogelijk\"/\"perhaps\").",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Şömine yanında birkaç genç Sinterklaas şarkısı söyler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Bir oğlan bacayı gösterir (hediyeler oradan gelmiştir); S5'te yok, atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Yerde koek ve broodjes (çörek/ekmek) dolu bir sepet durur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Sepet içeriği: honey cake, gingerbread, waffles, nuts, apples; köşeler \"minyatür natürmort\" (atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "Elmas biçimli \"duivekater\" yortu ekmeği masaya dayanır; \"The Leiden Baker\"'da da görünür (atıfsız; S6 yalnız başlık).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Elma ve madeni para, gizli armağan verme geleneğine göndermedir (atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "Aziz Nicholas biçimli zencefilli adam Katolik-Protestan gerilimini simgeler; 1655 Utrecht \"the baking of likenesses in bread or cake\" yasağı (Kleiner atıf zinciri; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Kızın bebeğe sıkı tutunması çocukluk konvülsiyonu/epilepsiye işaret ediyor OLABİLİR (\"may suggest\"; atıfsız spekülasyon).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "İki versiyon anlatısı: Rijksmuseum \"Katolik için\" (aziz bebekli) ↔ Utrecht Catharijneconvent \"Protestan için\" (yuvarlak çörekli, dosya başlığında 1660); atıfsız, statü çözülmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Sahnenin ressamın kendi ailesini gösterdiği SÖYLENİR (\"is said to\"; S6 başlığı soru işaretli; S5 kimliklendirme yapmaz).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Provenans: Seger Tierens satışı, 's-Gravenhage (Lahey), 1743.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Provenans: Kabinet van Heteren 1809; varis A. L. Gevers'ten \"voor één ton gouds\" satın alındı (137 resim).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S1",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Müze edinimi: 1809 satın alma (aankoop 1809).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Verwerving'deki \"aankoop 1975\"/\"interne vervaardiging 1975/1809\" girdilerinin anlamı ve boş \"Herkomst\"/\"Credit line\" alanları erişilen sayfadan ÇÖZÜLEMEDİ; yorumlanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "Reproduktif gravürler: E. A. Réveil, J. de Mare, J. A. Boland, T. Cole.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "1956 Rijksmuseum sergilenen resimler kataloğunda s. 195'te anılır (WD P1343/P304; metne erişilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Güncel kaydın Documentatie alanı 11 kütüphane öğesi + 6 literatür girdisi listeler (hiçbirinin metnine erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Steen: Leiden'de \"omstr. 1626\" doğdu, 3 Şubat 1679'da orada gömüldü; Nic. Knupfer'in ve kayınpederi Jan van Goyen'in öğrencisi (\"omstr.\" korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S14",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Vermeer karşılaştırması: Steen'in kaos/eksiklikleri bilinçli seçimi toplum yorumudur; Hogarth'a giden hiciv yolunu açar (Kleiner zinciri; \"same sense of comfort\" cümlesi atıfsız → E notu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "D001 TARİH İHTİLAFI: güncel \"1665 - 1668\" (\"c.\" yok) ↔ müze-2012 \"c. 1663-65\" ↔ GAP \"circa 1663-1665\" ↔ WD precision 8 (P1480 yok); uzlaştırma yapılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D002 AYAKKABI İHTİLAFI: S2 \"left empty\" + S4 \"chaussure vide\" (BOŞ) ↔ S5/S6/S3/S7/S14 \"roe/gard\" (dal); birincil + tarihsel oybirliği.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D003 VERSİYON/KOPYA STATÜSÜ: S2 \"copy… for a Catholic\" ↔ S3 \"tweede, afwijkende versie\" (1660); özgün/kopya çözülmedi; S5 ilgili nesnelerde kurum adı yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D004 GÜNÜN SAATİ: data \"sabah\" ↔ S5 \"Eve (December 5)\" / S2 \"the night\" / S3 \"vooravond\" / S14 \"on the eve\"; data değiştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S5",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D006 İNÇ ÖLÇÜLERİ: S14 + S2 \"33½ × 27 in\" ↔ metrik 82 × 70,5 cm (≈ 32,3 × 27,8 in); metrik S7/S6/S1 ile tutarlı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6",
+    "S7",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "E010 PENCERE/IŞIK: data cümlesi ders_kaynaklari'nde \"yanlis\" işaretli (db2ef7e589); S5'te pencere yok; S14 \"casements\" der; görsel incelenmedi → ışık yönü doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E011 \"JAN STEEN EVİ\" DEYİMİ: erişilen kaynaklarda destek pasajı yok; Kloek 1998 başlığı (\"Een huishouden van Jan Steen\") dolaylı işaret; anlam/kullanım doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons GAP 4000×4690 px, ~7,8 MB, PD; GZ TASLAK; kompozisyon kaynak metinlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E014 LİTERATÜR: Kleiner 2009 (ISBN doğrulanmadı), Westermann 1997, Kloek 1998/2005, Braun 1980, Kirschenbaum 1977, 1956 kataloğu, 11 kütüphane öğesi — \"kaynakçada anıldı, metne erişilmedi\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "S14 (Cole 1893) renk/atmosfer betimi: genel ton \"brown, of a golden hue, but neutral\"; kırmızı sandalye arkalığı; okra elbise; mermer zemin; sıcak atmosfer (tarihsel ikincil; görsel teyit yok).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "S14 biyografi anlatısı: Knüpfer (Utrecht) → \"is supposed to\" van Ostade (Haarlem) → Van Goyen (Lahey); 1649 Margaretha evliliği; 1648 lonca; 1672 han; 1673 ikinci evlilik; 1679 ölüm/gömülme; erken \"sarhoş hovarda\" imajı reddi (otoportre no.2232).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "S14 Hogarth karşı-nüansı: Steen hicivci olarak Hogarth'a benzetilir AMA \"no affectation of moralizing\"; sahneleri \"for their own sake\" boyar (C040 okumasına karşı-nüans).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "S5 müze kısa açıklaması: \"Jan Steen was een geboren verteller\"; halk bayramının tüm öğelerini resme taşıdı; uslu→armağan, yaramaz→roe (takkenbos); Sinterklaas \"al eeuwen op dezelfde manier\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "2012 ARIA sunumu 10 bölümlüydü (başlıklar: \"For good children, sweets\", \"Duivekater\", \"Portrait of a saint\", \"Illegal celebrations\", \"Portraits of Steen's family?\", \"Emulators\" vb.); alt sayfalar Wayback'te yok (S13 404) → içerik okunamadı; 2012 konumu \"Room 11: Jan Steen\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "E012: S5 ilgili nesne (eski gravür) başlıklarında \"Geb. omstreeks 1640, Overl. 1678\" (güncel olmayan); S7 \"omstr. 1626…1679\" ile çelişir; ilgili nesne başlığı, eser künyesi değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "E013 (yapısal): WD P571 ana değeri 1665, precision 8 (on yıl); 1665–1668 aralığı P1319/P1326 niteleyicilerinden; P1480 (circa) niteleyicisi YOK. (WD yardımcı kaynak; yapısal gözlem B.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Yorum: sahne ödül/ceza ahlak pedagojisini aile gösterisi olarak kurar; ağlayan oğlan ↔ zaferle ayakkabı kaldıran kız karşıtlığı; büyükannenin olası gizli armağanı cezayı yumuşatır.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "Yorum: Steen'in \"kaos\"u kompozisyonel seçimdir; figürler kız çevresinde kümelenir, hikâye jestlerle taşınır; müzenin \"doğuştan hikâyeci\" nitelemesiyle uyumlu (görsel teyit yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Yorum (felsefi/estetik ödünç): arife \"eşik zamanı\"; yortu gündelik hayatın kendini kutladığı an (Hegelci çerçeve ödünç, etki iddiası YOK); PD dijital kopya görüntüyü taşır aurayı değil (Benjamin ödünç); kalıcı URL kurumsal kimliği çapalar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S8",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q764831.json",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q764831.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Feast of Saint Nicholas (wikitext, API redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Feast%20of%20Saint%20Nicholas&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (nl)",
+   "belge": "Het Sint-Nicolaasfeest (wikitext)",
+   "url": "https://nl.wikipedia.org/w/api.php?action=parse&page=Het%20Sint-Nicolaasfeest&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (fr)",
+   "belge": "La Fête de la Saint-Nicolas (wikitext)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=La%20F%C3%AAte%20de%20la%20Saint-Nicolas&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Rijksmuseum",
+   "belge": "Güncel nesne kaydı SK-A-385 (ham HTML + __NUXT_DATA__; canonical object sayfası)",
+   "url": "https://www.rijksmuseum.nl/nl/collectie/SK-A-385",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML + NUXT",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Rijksmuseum (eski ARIA)",
+   "belge": "St Nicholas Feast — İngilizce katalog (Wayback kopyası)",
+   "url": "https://web.archive.org/web/20120106013941/http://www.rijksmuseum.nl/aria/aria_assets/SK-A-385?lang=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2012-01-06 01:39:41",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Rijksmuseum",
+   "belge": "Catalogus der schilderijen… (1909), no. 2237 + giriş (archive.org tam metin djvu.txt; basılı s. 251–252)",
+   "url": "https://archive.org/download/catalogusderschi00rijk_3/catalogusderschi00rijk_3_djvu.txt",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo — File:Jan Havicksz. Steen – Het Sint-Nicolaasfeest – Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AJan%20Havicksz.%20Steen%20%E2%80%93%20Het%20Sint-Nicolaasfeest%20%E2%80%93%20Google%20Art%20Project.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&formatversion=2&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketleri (Q205863, Q190804, Q760225, Q105062070 vb.)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q205863%7CQ190804%7CQ760225%7CQ105062070&props=labels&languages=en%7Cnl%7Ctr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "archive.org",
+   "belge": "item metadata catalogusderschi00rijk_3 (title/creator/date=1909/publisher)",
+   "url": "https://archive.org/metadata/catalogusderschi00rijk_3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S11",
+   "kurum": "RKD",
+   "belge": "images/6397 (WD P170/P136/P31 ref'i)",
+   "url": "https://rkd.nl/explore/images/6397",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 — bot engeli; Wayback snapshot YOK (S15); erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Europeana",
+   "belge": "eski portal kaydı 90402/SK_A_385 (WD P186 ref'i)",
+   "url": "http://europeana.eu/portal/record//90402/SK_A_385.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 — engel sayfası; erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Rijksmuseum ARIA (arşiv)",
+   "belge": "alt sayfalar page=1,2,3,4,7,8 (linkler S6 HTML'inden)",
+   "url": "https://web.archive.org/web/20120106013941/http://www.rijksmuseum.nl/aria/aria_assets/SK-A-385?page=3&lang=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 — Wayback kopyası yok (availability API boş, S15); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Century Magazine / Wikisource",
+   "belge": "Timothy Cole, \"Old Dutch Masters. Jan Steen\", Cilt 47 Sayı 2 (Aralık 1893)",
+   "url": "https://en.wikisource.org/w/api.php?action=parse&page=Century%20Magazine/Volume%2047/Issue%202/Old%20Dutch%20Masters.%20Jan%20Steen&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; tam metin",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wayback availability API",
+   "belge": "RKD (explore + redirect) ve ARIA page=3 uygunluk sorguları",
+   "url": "https://archive.org/wayback/available?url=rkd.nl/explore/images/6397",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; snapshot YOK (RKD explore, ARIA page=3); RKD redirect \"client timeout\"",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Süt Boşaltan Kadın (Het melkmeisje)",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "Rijksmuseum",
+   "mufredat_ici": true,
+   "gerekce": "M8 pilot karşılaştırması: dingin ev içi ↔ kalabalık, hareketli yortu sahnesi (MUFREDAT; Kleiner zinciri C040).",
+   "kanit": [
+    "C040"
+   ]
+  },
+  {
+   "eser": "Het Sint Nicolaasfeest (ikinci versiyon)",
+   "sanatci": "Jan Steen",
+   "kurum": "Museum Catharijneconvent, Utrecht",
+   "gerekce": "Versiyon/kopya statüsü tartışması (D003); Katolik/Protestan sipariş yorumu atıfsız (E); özgün/kopya çözülmedi.",
+   "kanit": [
+    "C013",
+    "C043"
+   ]
+  },
+  {
+   "eser": "Marriage A La Mode (dizi)",
+   "sanatci": "William Hogarth",
+   "gerekce": "Kleiner zinciri: Steen hiciv yolunu açar (B); Cole 1893 karşı-nüansı: \"ahlakçılık taslamaz\" (B).",
+   "kanit": [
+    "C040",
+    "C052"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Rijksmuseum güncel S5 (200, ham HTML+NUXT) + 2012 ARIA S6 (Wayback 2012-01-06) + 1909 katalog S7 (archive.org tam metin, no.2237 + giriş) yeniden açıldı; künye/konu/provenans/imza/gravürler doğrulandı. en/nl/fr wikitext (S2/S3/S4) + Cole 1893 (S14) yeniden okundu; D002 frwiki \"chaussure vide\" bulgusuyla genişletildi. WD (S1) precision 8 / P1319/P1326 / P1480 yok teyit. Görsel S8 metadata only → İNCELENEMEDİ (C048); GZ TASLAK. RKD 403 / Europeana 403 / ARIA alt 404; kitap metinleri erişilmedi (C049).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D001): data \"1665\" ↔ güncel müze \"1665 - 1668\" (S5), müze-2012 \"c. 1663-65\" (S6), GAP \"circa 1663-1665\" (S8); aralık + hedge önerilir; data'ya yazılmadı.",
+  "Günün saati (D004): data özet \"sabah\" ↔ kaynaklar arife/akşam (S5/S2/S3/S14); data DEĞİŞTİRİLMEDİ.",
+  "Türkçe başlık (D005): data/eser_adlari_tr \"Aziz Nikolaos Yortusu\" ↔ WD tr + data/basyapitlar + MUFREDAT \"Aziz Nicholas Yortusu\"; adlandırma tutarsızlığı, insan onayına.",
+  "Ayakkabı (D002): data \"dal parçası\" S5/S7 ile uyumlu; enwiki \"boş ayakkabı\" anlatısı data'da yok.",
+  "Pencere/ışık (E010): data/ders_kaynaklari id db2ef7e589 zaten \"yanlis\" işaretli; görsel incelenmedi (C046).",
+  "\"Jan Steen evi\" (E011): data deyimi erişilen kaynaklarda desteklenmedi; Kloek 1998 başlığı dolaylı işaret (C047).",
+  "Görsel İNCELENEMEDİ (C048); GZ TASLAK; insan editör görsel teyidi zorunlu.",
+  "1909 katalog dizininde \"2237a\" girdisi var; metin karşılığı OCR'de bulunamadı — D003 için araştırma boşluğu (insan incelemesi)."
+ ]
+}

@@ -1,0 +1,582 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q186953",
+ "sanatci_id": "raphael",
+ "baslik": "Atina Okulu",
+ "ozgun_baslik": "Scuola di Atene (The School of Athens)",
+ "kunye": {
+  "sanatci": "Raphael (Raffaello Sanzio)",
+  "sanatci_yasam": "1483–1520",
+  "tarih": "y. 1509–1511",
+  "tarih_belirsizlik": "WD/data 1512 ↔ wiki 1509–11/1508–11/1509–10; birincil tekil tarih yok (D)",
+  "teknik": "Fresk (affresco)",
+  "boyut_cm": {
+   "yukseklik": 500,
+   "genislik": 770
+  },
+  "muze": "Vatikan Müzeleri, Stanza della Segnatura (in situ)",
+  "envanter": "yok (in situ); WD 6306a. Ambrosiana kartonuna ait",
+  "edinim": "II. Julius komisyonu (odalar 1508–1511)",
+  "konum": "Stanza della Segnatura, Apostolik Saray",
+  "telif_durumu": "Kamu malı (Raphael ö.1520); Commons PD + CC BY-SA 4.0 (Ank Kumar)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+  "kaynak": "Wikimedia Commons (PD stitch + Ank Kumar CC BY-SA 4.0)",
+  "lisans": "Public domain (PD dosya); CC BY-SA 4.0 (Ank Kumar)",
+  "dogrulama": {
+   "yontem": "metadata; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "3820×2964 (PD) / 6000×4000 (Ank Kumar)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C030); GZ TASLAK; kompozisyon K1/K2+K3/K4 metninden; PD dosya \"stitched together\""
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 411
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1257
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2339
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-arşiv-birincil--kimlik-enflasyonu"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-bilgi-programı-felsefe-kanadı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#4-herakleitos-michelangelo-maskesi-ve-ekleme"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-jest-dili-idealizm--empirizm"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#6-beyaz-figür-kimlik-enflasyonunun-zirvesi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-portre-galerisi-çağdaş-maskeler"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Vatikan arşiv birinciliyle yer/bağlamı doğrular; birincilin künye sınırını beyan eder.",
+  "Bilgi programını (dört duvar) ve jest dilini (idealizm/empirizm) açıklar.",
+  "Çağdaş portre maskelerini ve Herakleitos ekleme tartışmasını yönetir.",
+  "Kimlik enflasyonunu (beyaz figür vb.) D olarak açık tutar; WD koşulsuz kimliğini olgu saymaz.",
+  "Karton ↔ fresk farkını ve tarih/boyut/sayı ihtilaflarını yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Stanza della Segnatura",
+   "tanim": "Vatikan Raphael odası; II. Julius kütüphanesi/studiolosu; dört bilgi alanı.",
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  },
+  {
+   "ad": "Causarum Cognitio",
+   "tanim": "Tondo: nedensel bilgi; felsefenin Aristotelesçi tanımı.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "İdealizm ↔ empirizm",
+   "tanim": "Platon yukarı ↔ Aristoteles yatay jestinin felsefe yorumu.",
+   "kanit": [
+    "C032",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "ad": "Ambrosiana kartonu",
+   "tanim": "Hazırlık kartonu (Milano); mimari+Herakleitos+Raphael+Protogenes eksik.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "ad": "Çağdaş maske",
+   "tanim": "Antik filozof yüzü olarak çağdaş sanatçı portresi (Leonardo/Michelangelo/Bramante).",
+   "kanit": [
+    "C006",
+    "C007",
+    "C013"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Raphael freski; Stanza della Segnatura, Apostolik Saray, Vatikan; Musei Vaticani; in situ envanter yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "II. Julius odaları; oda aslen kütüphane/studiolo; ikonografik program bir teologca belirlendi (K2 kesin; itwiki kuşkulu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Mimari, Bramante'nin yeni S. Pietro projesinden esinli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Merkezde Platon: parmağıyla yukarıyı gösterir, elinde Timaeus.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yanında Aristoteles: elinde Etica; kol yatay uzanır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Platon'un yüzü Leonardo da Vinci'ye benzetilir (\"forse\"/\"believed\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Önde mermer bloğa yaslanıp yazan çizmeli figür Herakleitos; Michelangelo özelliklerini taşır (müze kesin).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Herakleitos Ambrosiana kartonunda YOK; sonradan eklendi (intonaco; 1996 restorasyonu teyit).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Herakleitos ekleme nedeni: omaggio (saygı) ↔ dileggio (alay); Vasari benzerlikten söz etmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C010",
+   "ifade": "Basamaklarda uzanmış kâseli Diogenes.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sol önde Pythagoras: kitapta diatesseron (K1) / levhada tetraktys+uyum şemaları (K4); tutan \"forse Telauge\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sağ altta pergelle geometri öğreten Öklid (müze \"Euclide\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Öklid'in yüzü Bramante'nin (K4/K5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Öklid ↔ Arşimet alternatifi (K4 \"potrebbe essere Euclide o Archimede\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C015",
+   "ifade": "Öklid tunikasındaki süsler Raphael imzası \"RVSM\" olarak YORUMLANIR; \"forse\" MDVIIII (1509).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Zoroastro gök küresiyle, Tolomeo yer küresiyle (taçlı, sırtı dönük).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "En sağda siyah bereli figür = Raphael otoportresi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Otoportre yanındaki Protogenes; yüzü Sodoma/Perugino/Timoteo Viti/Giuliano da Sangallo adayları (\"presunto\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C019",
+   "ifade": "Beyaz giysili izleyiciye bakan figür kimliği tartışmalı: Ipazia (WD koşulsuz) ↔ Francesco Maria I della Rovere (itwiki akademik) ↔ Pico/Kalokagathia/Verità/Fedone/ideal.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Solda Socrates (yeşil tunik) klasik büstlerden; yanında Alcibiade/Alessandro Magno, Senofonte, Eschine.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Pythagoras arkasında sarıklı Averroè; not alan yaşlı Boezio/Anassimandro/Aristosseno/Senocrate/Empedocle adayları.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Sağda ayakta kırmızı giysili figür: Plotino (\"dovrebbe essere\") ↔ Carneades (enwiki galeri).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "İcra sırası: Disputa+Parnassus sonrası üçüncü (\"probably\") ↔ itwiki ikinci ima.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C024",
+   "ifade": "Geleneksel ad Raphael'in değil; konu felsefe; tondo \"Causarum Cognitio\"; ad ~18. yy Protestan çevrelerde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Arka planda Apollo (lir) ve Minerva/Athena heykelleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Hazırlık kartonu Pinacoteca Ambrosiana (Milano); mimari + Herakleitos + Raphael + Protogenes eksik; WD P217 6306a. kartona ait.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Figür sayısı: 58 (itwiki) ↔ 56 (WD P1114).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C028",
+   "ifade": "Tarih ihtilafı: 1512 (WD/data) ↔ 1509–1511 ↔ 1508–1511 ↔ 1509–1510; birincil tekil tarih YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C029",
+   "ifade": "Boyut ihtilafı: 500 × 770 (wiki) ↔ 550 × 770 (WD); birincil boyut YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); PD (Vatican stitch) + CC BY-SA 4.0 (Ank Kumar); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "refs monografi/makale metinleri erişilmedi; canlı Vatikan/Britannica ölü; güncel URL bulunamadı; Ipazia medya yayılımı; Sistina gizli girme anekdotu efsanevi → kullanılmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Yorum: Platon yukarı ↔ Aristoteles yatay jesti = idealizm ↔ empirizm karşıtlığının görsel özeti.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Yorum: antik filozoflar topluluğu = hümanist uzlaşma/eklektisizm; çağdaş maskeler geçmiş↔şimdi birleşimi.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Vatikan Müzeleri",
+   "belge": "scheda SDRs_03_02_020 (Wayback 2016-11-13)",
+   "url": "https://web.archive.org/web/20161113191101/http://mv.vatican.va/2_IT/pages/x-Schede/SDRs/SDRs_03_02_020.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 000; arşiv 200 (2016-11-13)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Vatikan Müzeleri",
+   "belge": "Stanza della Segnatura oda (Wayback 2015-07-10)",
+   "url": "https://web.archive.org/web/20150710001301/http://mv.vatican.va/2_IT/pages/SDR/SDR_03_SalaSegn.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2015-07-10)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The School of Athens",
+   "url": "https://en.wikipedia.org/wiki/The_School_of_Athens",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Scuola di Atene",
+   "url": "https://it.wikipedia.org/wiki/Scuola_di_Atene",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Britannica",
+   "belge": "School of Athens (Wayback 2020-06-22)",
+   "url": "https://web.archive.org/web/20200622002526/https://www.britannica.com/topic/School-of-Athens",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2020-06-22)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikidata",
+   "belge": "Q186953 (P217=6306a. Ambrosiana kartonu!)",
+   "url": "https://www.wikidata.org/wiki/Q186953",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikimedia Commons",
+   "belge": "\"The School of Athens\" by Raffaello…jpg (PD) + Ank Kumar 02.jpg (CC BY-SA 4.0)",
+   "url": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Disputa (Teoloji)",
+   "sanatci": "Raphael",
+   "kurum": "Stanza della Segnatura",
+   "gerekce": "Aynı oda bilgi programı; felsefe ↔ teoloji kanadı.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "eser": "Âdem'in Yaratılışı",
+   "sanatci": "Michelangelo",
+   "mufredat_ici": true,
+   "gerekce": "Aynı patron/yıllar; Herakleitos maskesi + rekabet.",
+   "kanit": [
+    "C009",
+    "C007"
+   ]
+  },
+  {
+   "eser": "Son Akşam Yemeği",
+   "sanatci": "Leonardo da Vinci",
+   "mufredat_ici": true,
+   "gerekce": "Yüksek Rönesans kompozisyon karşılaştırması.",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Vatikan arşiv scheda (K1 2016) + oda (K2 2015) yeniden açıldı; yer/bağlam/figür betimleri doğrulandı; birincilde tekil tarih/boyut/envanter yok. en/it wikitext + Britannica arşiv yeniden okundu; dokuz+ ihtilaf D olarak açık. Görsel K7 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C030); GZ TASLAK. Refs metinleri erişilmedi; Ipazia medya yayılımı; Sistina anekdotu efsanevi → kullanılmadı (C031).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data 1512 ↔ wiki 1509–11/1508–11; öneri \"y. 1509–1511\" (C028).",
+  "Boyut: wiki 500×770 ↔ WD 550×770 (C029).",
+  "Envanter: WD 6306a. Ambrosiana KARTONU; fresk envanteri değil → data'ya yazılmamalı (C026).",
+  "Beyaz figür: data noktalamıyor (eksik); Ipazia/Francesco Maria tartışmalı (C019).",
+  "Protogenes yüzü: data \"Sodoma\" kesin ↔ itwiki presunto (C018).",
+  "Lisans: Ank Kumar CC BY-SA 4.0 ✓; PD dosya lisans alanı boş (veri boşluğu).",
+  "Görsel İNCELENEMEDİ (C030); GZ TASLAK; insan editör zorunlu."
+ ]
+}

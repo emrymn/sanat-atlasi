@@ -1,0 +1,572 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q227494",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu derste gösterilen baskı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gaifū kaisei (Red Fuji)"
+    },
+    {
+     "harf": "B",
+     "metin": "Büyük Dalga (Kanagawa oki nami-ura)"
+    },
+    {
+     "harf": "C",
+     "metin": "Sanka hakuu (Thunderstorm Beneath the Summit)"
+    },
+    {
+     "harf": "D",
+     "metin": "Kajikazawa in Kai Province"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "WD P18 + data + Commons aynı dosyayı gösteriyor: Red Fuji (Gaifū kaisei); Met/BM/Fujibi başlıkları teyitli (S22/S14/S15).",
+   "yanlis_gerekceleri": {
+    "B": "Büyük Dalga serinin ayrı bir levhasıdır (WD sıra no. 21); gösterilen dosya Red Fuji'dir (S1/S8).",
+    "C": "Sanka hakuu serinin fırtına levhasıdır; Met anlatısı onu Red Fuji ile karşıtlık içinde anar (S12).",
+    "D": "Kajikazawa serinin başka bir levhasıdır (enwiki, Calza ref); gösterilen dosya değildir (S4)."
+   },
+   "kanit": [
+    "C009",
+    "C021"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Seri, ilk 36 levhadan sonra toplam kaç levhaya ulaşmıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "46"
+    },
+    {
+     "harf": "B",
+     "metin": "36"
+    },
+    {
+     "harf": "C",
+     "metin": "100"
+    },
+    {
+     "harf": "D",
+     "metin": "53"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met: \"the publisher Eijudo expanded the original conception to eventually include forty-six prints\"; WD P527=46 (S12/S1).",
+   "yanlis_gerekceleri": {
+    "B": "36 özgün tasarımdır; başarı üzerine 10 levha eklenmiştir (S12/S4).",
+    "C": "100'den fazla levha yayıncının planıydı, gerçekleşmedi; yayın 46'da durdu (Calza aktarımı, S4).",
+    "D": "53, Hiroshige'nin Tōkaidō dizisinin istasyon sayısıdır; bu seriyle karıştırılmamalıdır (S18)."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Serinin yayıncısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Nishimuraya Yohachi (Eijudō)"
+    },
+    {
+     "harf": "B",
+     "metin": "Katsukawa Shunshō"
+    },
+    {
+     "harf": "C",
+     "metin": "Arthur Morrison"
+    },
+    {
+     "harf": "D",
+     "metin": "James Michener"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM: \"Published by: Nishimuraya Yohachi\", \"Published in: Edo (historic)\" (S14); Met anlatısı \"publisher Eijudo\" (S12).",
+   "yanlis_gerekceleri": {
+    "B": "Katsukawa Shunshō, Hokusai'nin hocasıdır (Fujibi biyografisi); yayıncı değil (S15).",
+    "C": "Arthur Morrison, BM nüshasının satıcısıdır; yayıncı değil (S14).",
+    "D": "James Michener, Honolulu'ya tam seti bağışlayan romancıdır; yayıncı değil (S20)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayıtlara göre teknik ve format nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ahşap baskı; kâğıt üzerine mürekkep ve renk; oban yoko-e"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya; tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk; duvar"
+    },
+    {
+     "harf": "D",
+     "metin": "Litografi; kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met: \"Woodblock print; ink and color on paper\"; BM: \"Colour woodblock print, oban yoko-e\" (S22/S14).",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya/tuval Batı tekniğidir; birincil kayıtlar woodblock der (S22/S14).",
+    "C": "Fresk duvar resmidir; eser kâğıt üzerine baskıdır (S22).",
+    "D": "Litografi farklı bir baskı yöntemidir (Rivière dizisinin tekniği olarak atıfsız anılır, S4); bu seri ahşap baskıdır (S14)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Met/BM kaydındaki imza hangi sanatçı adını içerir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Iitsu"
+    },
+    {
+     "harf": "B",
+     "metin": "Shunrō"
+    },
+    {
+     "harf": "C",
+     "metin": "Tawaraya Sōri"
+    },
+    {
+     "harf": "D",
+     "metin": "Manji Rōjin"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met Signature: \"Hokusai aratame Iitsu hitsu\"; BM: \"Brushed by Hokusai, changing his name to Iitsu\" (S12/S14).",
+   "yanlis_gerekceleri": {
+    "B": "Shunrō, Hokusai'nin Katsukawa Shunshō öğrenciliğinde aldığı addır; bu levhanın imzası değil (S15).",
+    "C": "Tawaraya Sōri, Katsukawa okulundan ayrıldıktan sonra kullandığı addır; bu levhanın imzası değil (S15).",
+    "D": "Manji Rōjin, Hokusai'nin geç dönem adlarındandır; bu levhanın imzası Iitsu'dur (S15/S12)."
+   },
+   "kanit": [
+    "C010",
+    "C047"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Seride yoğun kullanılan ve Japonya'ya Hollandalı tüccarlarla yeni girmiş olan pigment hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Prusya mavisi (\"Berlin indigo\", bero-ai)"
+    },
+    {
+     "harf": "B",
+     "metin": "İndigo"
+    },
+    {
+     "harf": "C",
+     "metin": "Orpiment"
+    },
+    {
+     "harf": "D",
+     "metin": "Hematit"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met: \"Berlin indigo (bero-ai), a pigment newly introduced by Dutch merchants\"; BM Smith: Japon baskı tarihinde ilk yoğun kullanım (S12/S14).",
+   "yanlis_gerekceleri": {
+    "B": "İndigo organik bir renklandırıcıdır; kontur/imza/ağaçlarda kullanılır, yeni ithal edilen pigment değildir (S18).",
+    "C": "Orpiment sarı arsenik sülfürdür; yeşil karışımında ve Pink Fuji toprak pigmentinde bulunur (S18).",
+    "D": "Hematit demir oksitli toprak pigmenttir; dağ gövdesinin kırmızı-kahvesini verir (S18)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Met nüshasının envanteri ve edinimi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "JP9; Rogers Fund, 1914"
+    },
+    {
+     "harf": "B",
+     "metin": "1906,1220,0.525; Arthur Morrison"
+    },
+    {
+     "harf": "C",
+     "metin": "60.12; Carl H. Lieber Fund"
+    },
+    {
+     "harf": "D",
+     "metin": "03769; Tokyo Fuji"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met canlı API: accessionNumber JP9, creditLine \"Rogers Fund, 1914\" (S22; S12 birebir teyitli).",
+   "yanlis_gerekceleri": {
+    "B": "BM nüshasının kayıt numarası ve satıcısıdır (S14).",
+    "C": "IMA nüshasının envanteri ve fonudur (S17).",
+    "D": "Tokyo Fuji Art Museum kayıt numarasıdır (S15)."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "BM nüshası (1906,1220,0.525) kimden satın alınmıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Arthur Morrison"
+    },
+    {
+     "harf": "B",
+     "metin": "William S. ve John T. Spaulding"
+    },
+    {
+     "harf": "C",
+     "metin": "Harry C. Nail, Jr."
+    },
+    {
+     "harf": "D",
+     "metin": "James Michener"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM: \"Acquisition name: Purchased from: Arthur Morrison\" (S14).",
+   "yanlis_gerekceleri": {
+    "B": "Spaulding kardeşler Met nüshasının provenance'ıdır (Boston, 1914'e kadar; MMA'ya satıldı) (S12).",
+    "C": "Harry C. Nail Jr., IMA nüshasının önceki sahibidir (1960'ta IMA'ya satıldı) (S17).",
+    "D": "James Michener, Honolulu koleksiyonunu bağışlayan romancıdır (S20)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Korenberg vd. 2019'a göre Pink Fuji ve Red Fuji nüshalarının basım sırası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pink Fuji, Red Fuji'den önce basılmıştır"
+    },
+    {
+     "harf": "B",
+     "metin": "Red Fuji, Pink Fuji'den önce basılmıştır"
+    },
+    {
+     "harf": "C",
+     "metin": "İkisi aynı anda basılmıştır"
+    },
+    {
+     "harf": "D",
+     "metin": "Farklı kalıp setlerinden basılmışlardır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Makale: Red Fuji'de daha fazla kalıp aşınması; \"This showed that Pink Fuji was printed before Red Fuji\" ve \"possibly a first edition\" (hedge korunur) (S18).",
+   "yanlis_gerekceleri": {
+    "B": "Red Fuji'de daha fazla aşınma vardır; bu onun daha geç basıldığını gösterir (S18).",
+    "C": "Aynı kalıp setinden ardışık baskılardır; aşınma farkı sıralama kurar (S18).",
+    "D": "Bulut/ağaç desenleri ve yeşil taban kusuru birebir aynıdır: aynı kalıp seti (S18)."
+   },
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "WD/Commons/BM literatürü (Meihin soroimono) zincirine göre Red Fuji ve Büyük Dalga'nın seri numaraları nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "33 ve 21"
+    },
+    {
+     "harf": "B",
+     "metin": "2 ve 1"
+    },
+    {
+     "harf": "C",
+     "metin": "1 ve 2"
+    },
+    {
+     "harf": "D",
+     "metin": "36 ve 46"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "WD P1545: Red Fuji 33, Büyük Dalga 21; Commons \"no. 33\"; BM literature Meihin soroimono ukiyo-e vol. 8 (Nagata 1991) no. 33 (S1/S9/S14).",
+   "yanlis_gerekceleri": {
+    "B": "2 ve 1, enwiki/itwiki tablo satır sırasıdır; katalog numaralandırma geleneği değildir (D006) (S4/S5).",
+    "C": "1 ve 2, tablo sırasının tersidir; WD/Commons/BM zinciri 33/21 der (S1/S14).",
+    "D": "36 özgün levha sayısı, 46 genişletilmiş seri toplamıdır; levha numarası değildir (S12/S1)."
+   },
+   "kanit": [
+    "C035",
+    "C021"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Bu derste gösterilen baskı Büyük Dalga'dır.",
+   "dogru": false,
+   "aciklama": "Yanlış: WD P18 + data + Commons = Red Fuji (Gaifū kaisei); Büyük Dalga ayrı levhadır, WD sıra no. 21 (S1/S8/S20).",
+   "kanit": [
+    "C009",
+    "C021"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Seri, başarı üzerine 10 ek levhayla 46'ya ulaşmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: Met \"expanded... forty-six prints\"; WD P527=46 (S12/S1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Met nüshası JP9, Rogers Fund 1914 ile edinilmiştir; provenance Spaulding kardeşlerdir.",
+   "dogru": true,
+   "aciklama": "Doğru: Met canlı API + Wayback snapshot birebir uyum (S22/S12).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Tüm nüshalar aynı boyuttadır; tek bir doğru boyut vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Met 24.4×35.6, BM 26.1×38.2, Fujibi 24.1×37.2 — her katalog kendi nüshasını ölçer (D004) (S22/S14/S15).",
+   "kanit": [
+    "C016",
+    "C017",
+    "C019"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Mary Cassatt, 1890'da Berthe Morisot'ya Japon baskılarını öven bir mektup yazmıştır (IMA kaydında aktarılır).",
+   "dogru": true,
+   "aciklama": "Doğru: IMA 2011 arşiv kaydında mektup alıntısı var: \"you couldn't dream of anything more beautiful\" (S17).",
+   "kanit": [
+    "C044"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D001 tarih ihtilafını analiz edin: hangi kurum hangi aralığı veriyor, ders nasıl sunmalı?",
+   "beklenen_ogeler": [
+    "Met/Fujibi ca. 1830–32",
+    "itwiki 1826–1833",
+    "WD 1830/1830s (1831–1834)",
+    "BM 1831 probably late 1831",
+    "IMA about 1800-1849",
+    "aralık beyanı, hedge koruma"
+   ],
+   "kanit": [
+    "C036",
+    "C003"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Gösterilen görselin ~1930 reprodüksiyon beyanını ve kurum belirsizliğini değerlendirin; dersin görsel politikası ne olmalı?",
+   "beklenen_ogeler": [
+    "Commons \"This edition: circa 1930\"",
+    "visipix credit, müze yok",
+    "WD P195 dosyayla bağ kurmaz",
+    "orijinal Edo baskısı gibi sunulmaz",
+    "GZ TASLAK",
+    "görsel inceleme sınırı"
+   ],
+   "kanit": [
+    "C034",
+    "C037",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Korenberg 2019 kanıt zincirini (aşınma + pigment + baskı etkisi) yeniden kurun; \"possibly a first edition\" hedge'ini koruyarak sonucu yazın.",
+   "beklenen_ogeler": [
+    "kartuş jū kırığı",
+    "kar/ağaç keskinliği",
+    "mokume-zuri gözleri",
+    "orpiment (Pink zengin)",
+    "içbükey ↔ düz geçiş (David Bull)",
+    "Pink önce, possibly first edition",
+    "solma yok → kasıtlı palet"
+   ],
+   "kanit": [
+    "C014",
+    "C050",
+    "C051"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Japonisme iddialarını kanıt gücüne göre sıralayın: Cassatt, Goncourt, Monet, Van Gogh, Rivière.",
+   "beklenen_ogeler": [
+    "Cassatt 1890 mektup (A, IMA)",
+    "Goncourt 1896 (B, Calza aktarımı)",
+    "Monet \"may have inspired\" (B hedge, IMA)",
+    "Van Gogh atıf yok (E)",
+    "Rivière atıfsız (E)"
+   ],
+   "kanit": [
+    "C044",
+    "C024",
+    "C045",
+    "C046",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Bakış yönü ihtilafını (east/north/mystery) meteorolojik kesinlik iddiasıyla birlikte değerlendirin; görsel incelenmeden nasıl yazılır?",
+   "beklenen_ogeler": [
+    "BM eastern side",
+    "Fujibi northern thought / Lake Kawaguchi",
+    "enwiki mystery",
+    "ışık yayı geometrisi (Clark 2017)",
+    "kaynakların betimlediği",
+    "görsel teyit yok"
+   ],
+   "kanit": [
+    "C039",
+    "C011",
+    "C054",
+    "C042"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimindeki Fuji konisini (sağ) ve onu dengeleyen ince bulut desenlerini (sol) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM/enwiki/IMA betimi: simetrik koni sağ yarıda, solda kıvrımlı bulutlar.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Zirvedeki kar kalıntılarını ve bulutların aralarak oluşturduğu haleyi arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM description: \"clouds parting to form halo around summit veined with sparse remnants of snow\".",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Etekteki gölgeli ormanı ve ağaç sınırının üstünde güneş alan çıplak yamaçları ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM Clark 2001: alt bölgeler gölgede, yalnız ağaç sınırı üstü güneş alır (bu nüshada tuğla kırmızısı).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Başlık kartuşunu ve imzayı bulun; Red Fuji nüshalarında kartuş iç çerçevesinin \"jū\" karakteri sağında kırık görülür — gösterilen dosyada arayın (nüsha durumu görselden doğrulanmadı).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Korenberg 2019 Fig. 3a (Keyes bildirimi); imza \"Hokusai aratame Iitsu hitsu\". Gösterilen dosya ~1930 reprodüksiyonu olabilir; çerçeve farkları uzman işidir.",
+   "kanit": [
+    "C051",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Dağ gövdesindeki tahta damarı desenini (mokume-zuri) ve damardaki \"göz\"leri inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Korenberg Fig. 4: Pink Fuji'de iki göz ayrı, geç nüshada birleşik; gösterilen dosyanın nüsha durumu belirsiz.",
+   "kanit": [
+    "C051"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Seri + levha künyesi?",
+   "arka": "Fugaku Sanjūrokkei (36→46 levha); Hokusai (1760–1849); ca. 1830–32 (Met/Fujibi; D001); ahşap baskı, mürekkep+renk/kâğıt, oban yoko-e; yayıncı Nishimuraya Yohachi (Eijudō); gösterilen levha Gaifū kaisei (Red Fuji).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Gösterilen levha hangisi, seri no?",
+   "arka": "Red Fuji (Gaifū kaisei); WD/Commons/Meihin soroimono (Nagata 1991) no. 33; Büyük Dalga ayrı levha, WD no. 21.",
+   "kanit": [
+    "C009",
+    "C035",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Nüshalar ve provenance?",
+   "arka": "Met JP9 (Rogers Fund 1914; Spaulding kardeşler); BM 1906,1220,0.525 (Arthur Morrison'dan satın alma; B97); IMA 60.12 (Harry C. Nail Jr. → 1960, Carl H. Lieber Fund); Tokyo Fuji 03769; MOA erken nüsha (pembemsi); Honolulu Michener bağışı tam set.",
+   "kanit": [
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C020",
+    "C027"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Pink Fuji ↔ Red Fuji?",
+   "arka": "Pink Fuji önce basıldı (Korenberg: aşınma + orpiment + içbükey geçiş), \"possibly a first edition\"; geç nüshalar koyu kırmızı-kahve (benigara) → modern \"Red Fuji\" adı; soluk palet kasıtlı (solma yok).",
+   "kanit": [
+    "C013",
+    "C014",
+    "C050",
+    "C051"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik anahtarları?",
+   "arka": "Her renk ayrı kalıp; hanshita-e kalıba yapıştırılıp oyulur (çizim yok olur); Prusya mavisi (bero-ai) Hollandalı tüccarlarla yeni; eşitsiz gök mürekkebi + koyu zirve silueti; mokume-zuri tahta damarı; geç nüshalarda düz diyagonal geçiş.",
+   "kanit": [
+    "C033",
+    "C006",
+    "C054",
+    "C051"
+   ]
+  }
+ ]
+}

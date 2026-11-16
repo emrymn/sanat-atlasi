@@ -1,0 +1,602 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2892964",
+ "sanatci_id": "quentin-metsys",
+ "baslik": "Tefeci ve Karısı",
+ "ozgun_baslik": "Le prêteur et sa femme (The Moneylender and His Wife)",
+ "kunye": {
+  "sanatci": "Quentin Metsys",
+  "sanatci_yasam": "Louvain 1465 – Anvers 1530",
+  "tarih": "1514",
+  "tarih_belirsizlik": "Louvre: \"Fin du XVe siècle - début du XVIe siècle (1514)\"",
+  "teknik": "Yağlıboya, ahşap pano (huile sur bois)",
+  "boyut_cm": {
+   "yukseklik": 70.5,
+   "genislik": 67
+  },
+  "muze": "Musée du Louvre, Paris (Département des Peintures)",
+  "envanter": "INV 1444 ; MR 821",
+  "edinim": "achat 1806 (Delacoux de Marivault satışı, 9 VI 1806 n°1)",
+  "konum": "Richelieu, Salle 814 \"Humanisme et Réforme\", Niveau 2 (WD Room 811; tartışma)",
+  "telif_durumu": "Kamu malı (Metsys ö.1530); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Le_pr%C3%AAteur_et_sa_femme_-_Quentin_Metsys_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1444_%3B_MR_821.jpg",
+  "kaynak": "Wikimedia Commons (fotoğraf Shonagon, 2025-09-21)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "özgün 5786×6090 + 1920px thumb indirildi; vision köprüsü transkripsiyonu (read_file) + Pillow kırpma ile genel ve 3 bölge incelendi",
+   "cozunurluk": "5786×6090 özgün; 1920px thumb; kırpma 1500px",
+   "incelenen_bolgeler": [
+    "masa/terazi/sikke grubu",
+    "convex ayna yansıması",
+    "açık dua kitabı ve minyatür",
+    "figür giysi/başlık/yüzükleri",
+    "arka raf ve sağ kapı/pencere"
+   ],
+   "sinirlar": "transkripsiyon lossy ve untrusted işaretli; Gotik yazı ve sikke lejantları okunamadı; aynadaki figürün kimliği doğrulanamadı (C025 C); çerçeve yazıtı görselde yok (C007)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 500
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1325
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2656
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-kopya-kültürü-ve-nüsha-problemi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-nesnenin-yükselişi-tür-resminden-natürmorta"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-ayna-optiği-ve-beltingin-çerçeve-tezi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ahlaki-dil-tartı-kitap-ve-yazıt"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-kayıp-kanıtın-epistemolojisi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (başlık, envanter, boyut, teknik, salon) doğrular.",
+  "Provenance zincirindeki olasılık ifadelerini (\"très probablement\", \"peut-être bien distinct\") koruyarak okur.",
+  "Görsel incelemeye dayanarak tartı/kitap/ayna üçlüsünü betimler.",
+  "Tür resmi → natürmort tezini ve ahlaki okumayı ayrı kanıt tabanlarıyla değerlendirir.",
+  "Nüsha, boyut ve salon ihtilaflarını D olarak; erişilemeyen belgeyi E olarak yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tür resmi (genre painting)",
+   "tanim": "Gündelik hayat sahnesini konu alan resim; bu eser erken bir örnektir.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Convex (tümsek) ayna",
+   "tanim": "Geniş alanı küçülterek yansıtan ayna; Kuzeyli iç mekân resminin optik cihazı.",
+   "kanit": [
+    "C027",
+    "C018"
+   ]
+  },
+  {
+   "ad": "Tezhip (illumination)",
+   "tanim": "El yazması sayfalarına altın/renkli bezeme; kitaptaki minyatür ve baş harf.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "ad": "Catalogue raisonné",
+   "tanim": "Bir sanatçının eserlerini kronolojik/tematik tam kataloglayan çalışma; Silver 1984 n°16.",
+   "kanit": [
+    "C032"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik/edinim zinciri; Louvre kaydında olasılık ifadeleriyle verilir.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Louvre kaydı: başlık \"Le prêteur et sa femme\"; diğer başlıklar \"Le joaillier et sa femme\", \"Le Peseur d'or et sa femme\", \"Le changeur et sa femme\"; Quentin Metsys; 1514.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Teknik \"huile sur bois\" (yağlıboya, ahşap pano); boyut 70,5 × 67 cm; çerçeve/aksesuarla 96 × 93,3 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Envanter INV 1444 ; MR 821; Département des Peintures; Musée du Louvre, Paris.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Louvre \"Currently on display\": Richelieu, Salle 814 \"Humanisme et Réforme\", Niveau 2.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Louvre sanatçı künyesi: Metsys, Quentin; \"dit aussi Quentin de Smith, Le Maréchal d'Anvers, Massys\"; Louvain 1465 – Anvers 1530; Pays-Bas du Sud, École de.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Louvre tarih alanı: \"Fin du XVe siècle - début du XVIe siècle (1514)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Louvre yazıt alanı: \"inscription biblique sur le cadre lisible au XVIIe s.\" — çerçevede 17. yüzyılda okunabilen İncil kaynaklı yazıt; bugünkü çerçevede korunmamıştır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Louvre, 1806 satış kaydındaki Lévitique alıntısı anısının, yazıtın sonradan korunmayan eski çerçevede bulunduğunu düşündürdüğünü yazar (\"ce qui laisse entendre … sans doute\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Provenance: \"Très probablement\" Pieter Stevens (1590–1668), Anvers; 1648 Metsys olarak, 1658 ayrıntılı betimle; 13 VIII 1668 ölüm sonrası satış n°11 (\"le très renommé Joallier\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenance: \"Très probablement\" Diego Duarte (vers 1610–1690), Anvers; 1676 Constantin Huygens le Jeune gördü; 1682 envanter (Dogaer 1971 n°130); 1693 satılmamış; 1696 Levy La Haye.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Edinim: Antoine Delacoux de Marivault (1771–1846), Paris; 9 VI 1806 satışı n°1; Louvre \"achat\" 1806 (26 Temmuz akti \"Marivaux\" imlası).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Louvre bu panelin Rubens nüshasından (1640) ve Van der Geest koleksiyonu nüshasından (1638'den dağıtıldı) \"peut-être bien distinct\" olduğunu yazar ↔ enwiki Van der Geest sahipliği + Van Haecht betimi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C013",
+   "ifade": "enwiki: adam masadaki mücevher ve altın paraları tartar; karısı Meryem ve Çocuk minyatürlü dua kitabı okur (betim Louvre kataloguna dayandırılır).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "enwiki: çift soylu gibi değil, resmin yapıldığı Antwerp'ün varlıklı burgher'ları gibi giyinmiştir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "enwiki: Antwerp İspanyol Engizisyonu'ndan kaçan güneyli göçmenlerle büyüdü; uluslararası ticaret arttıkça para değiştirici/tefeci talebi doğdu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "enwiki: aynı motif 25 yıl sonra Metsys takipçisi Marinus van Reymerswaele tarafından kullanıldı (Nantes Musée des Beaux-Arts versiyonu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "enwiki: Willem van Haecht 1620'lerde Cornelis van der Geest galeri resminde bu kompozisyonu betimledi (Mauritshuis, \"Apelles painting Campaspe\"); Van der Geest Metsys hayranı, Anvers Katedrali 100. ölüm yıldönümü plakası (ref Gary Schwartz, Tableau 1996).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "itwiki: convex ayna bir pencereyi yansıtır; Hans Belting \"Specchio del Mondo\" (bölüm \"Il quadro come finestra e specchio\") — ayna + dua kitabı sembolik düzeye taşıma daveti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "WGA: eser, 16. yüzyılda Flanders ve kuzey Hollanda'da gelişecek tür resminin (genre painting) erken bir örneğidir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "WGA: figürler masanın arkasına oturur, her biri bir yandan çerçeveyle kesilir, resmin ön kenarından geride durur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "WGA: yüzler renk nüanslarında sofistike ama göreli kayıtsızlık ifadesi taşır; natürmort ayrıntıları \"kendi hayatıyla doludur\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "WGA: cam, aksesuar ve sikkeler masada ve arka duvar raflarında parlar; nesnelere baskın rol → saf natürmorta önemli adım; birkaç kısmen farklı kopya mevcut.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "WGA: Massys, Romanistlere kısmen karşıt Erken Netherlandish geleneklerine bağlı; dolaylı İtalyan etkisi figürlerin anıtsallaşmasında.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Boyut ihtilafı: Louvre 70,5 × 67 cm ↔ WGA 71 × 68 cm (itwiki/WD Louvre ile uyumlu).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "WGA yorumu: Massys kendi suretini convex aynaya yerleştirdi (van Eyck Arnolfini 1434 cihazını anımsatır). Görsel incelemede aynada pencere + kırmızı başlıklı figür görüldü; kimlik doğrulanamadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K4",
+    "K6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Görsel inceleme (K6 genel): yeşil örtülü masa; solda koyu mavi/mor kürk yakalı giysi + siyah chaperonlu adam sikkeleri tartar; sağda kırmızı giysi + beyaz wimple + kahverengi geniş kenarlı başlıklı kadın kitaba bakar; her ikisinde yüzük parmağında yüzük; örtü kenarında metal çivili şerit.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel inceleme (K6 ayna kırpması): terazi kefeleri, altın sikkeler, küçük metal ağırlıklar, kapaklı silindirik metal kutu; convex aynada elmas kafesli pencere (mavi/kırmızı cam), dışarıda ağaç/gökyüzü ve kırmızı başlıklı figürün sırtı/yanı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel inceleme (K6 kitap kırpması): sol sayfada yeşil zeminli altın çerçeveli iki haleli figürlü (Meryem ve Çocuk) minyatür; sağ sayfada Gotik yazı + mavi/kırmızı/altın tezhipli baş harf; yaldızlı sayfa kenarları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Görsel kamu malı (Metsys ö.1530); Commons \"Public domain\"; fotoğraf Shonagon 2025-09-21; özgün 5786×6090 px.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Konum ihtilafı: Louvre Salle 814 ↔ WD P276 Room 811 (Q19018198); WD Louvre Abu Dhabi deprecated; Louvre sergi geçmişi Abu Dhabi 2021–2023; Louvre sitesi oda verisinin güncel olmayabileceğini uyarır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Ahlaki okuma (yorum): tartı/para ↔ dua kitabı yan yana geliş = dünyevi kazanç ile manevi hayat gerilimi; Louvre bibliyografyasındaki Moxey 1985 \"criticism of avarice\" bu geleneğin akademik bağlamı (metne erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Louvre bibliyografyasında anılanlar (metne erişilmedi): Silver 1984 cat. rais. n°16; Moxey 1985; Muller 1989 n°186; Foucart-Walter/Foucart 2009 p.46; Friedländer 1971 n°53; Sulzberger 1965; Revel 1995; Parada Lopez de Corselas/Seidel 2024 Burlington 166 p.704–706.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "RKD images/61578 ve Gary Schwartz \"Love in the Kunstkamer\" PDF bu oturumda açılmadı; Van der Geest bağlantısının birincil belgesi doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "Başlık çeşitliliği: data \"Tefeci ve Karısı\"/\"The Moneylender and His Wife\"; enwiki \"The Money Changer and His Wife\"; Louvre \"Le prêteur et sa femme\"; itwiki \"Il cambiavalute e sua moglie\"; WD tr etiketi yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Louvre sergi geçmişi: \"Le siècle de Bruegel\" (Brüksel 1963); \"Een huis vol kunst. Rubens als verzamelaar\" (Anvers Rubenshuis 2004); \"Images of Erasmus\" (Rotterdam Boijmans 2008); \"Peinture de genre\" (Tokyo/Kyoto 2015); \"L'argent dans l'art\" (Paris Monnaie de Paris 2023); Louvre Abu Dhabi beşinci accrochage 2021–2023.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Louvre katalog geleneği zinciri: Villot 1852 n°279 → Demonts 1922 n°2029 → Michel 1953 n°2029 → Brejon de Lavergnée/Foucart/Reynaud 1979 p.89 → Foucart-Walter/Foucart 2009 p.46; Friedländer 1929 ve 1971 n°53; De Bosque 1974; Dhanens 1980; Briels 1980 (Peeter Stevens Constkamer).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Provenance arşiv atıfları (Louvre metninde): Dogaer 1971 n°130 p.215 (Duarte 1682 envanteri); Samuel 1976 p.315, 319–320, 322 (Duarte invendus + Levy La Haye 1696); Constantin Huygens le Jeune 1676'da gördü; Manuel Levy (Amsterdam) Duarte'nin vasiyet tenfiz memuru.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Musée du Louvre",
+   "belge": "Collections — Le prêteur et sa femme, INV 1444 ; MR 821",
+   "url": "https://collections.louvre.fr/en/ark:/53355/cl010061690",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML indirildi, katalog alanları çıkarıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Money Changer and His Wife — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/The_Money_Changer_and_His_Wife",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); RKD/Schwartz dış bağlantıları açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Il cambiavalute e sua moglie — Belting atıflı",
+   "url": "https://it.wikipedia.org/wiki/Il_cambiavalute_e_sua_moglie",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Web Gallery of Art",
+   "belge": "MASSYS, Quentin — The Moneylender and his Wife",
+   "url": "https://www.wga.hu/html/m/massys/quentin/2/moneylen.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikidata",
+   "belge": "Q2892964",
+   "url": "https://www.wikidata.org/wiki/Q2892964",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikimedia Commons",
+   "belge": "Le prêteur et sa femme - Quentin Metsys - Musée du Louvre Peintures INV 1444 ; MR 821.jpg (Shonagon 2025-09-21)",
+   "url": "https://commons.wikimedia.org/wiki/File:Le_pr%C3%AAteur_et_sa_femme_-_Quentin_Metsys_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1444_%3B_MR_821.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; özgün 5786×6090 + 1920px thumb; vision köprüsüyle İNCELENDİ (genel + 3 kırpma)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Arnolfini Portresi",
+   "sanatci": "Jan van Eyck",
+   "mufredat_ici": true,
+   "gerekce": "Convex ayna cihazının Kuzeyli repertuardaki karşılaştırması (WGA atfı).",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "eser": "Mérode Triptiği",
+   "sanatci": "Robert Campin",
+   "mufredat_ici": true,
+   "gerekce": "Ev içi sembolizm ve iç mekân geleneğinin karşı kutbu.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "eser": "The Moneylender and his Wife (versiyon)",
+   "sanatci": "Marinus van Reymerswaele",
+   "kurum": "Musée des Beaux-Arts, Nantes",
+   "gerekce": "Aynı motifin 25 yıl sonraki tekrarı; kompozisyon tipinin dolaşımı.",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Louvre kaydı (K1) ham HTML olarak yeniden açıldı; künye/envanter/boyut/teknik/salon/yazıt/provenance/edinim alanları iddialarla karşılaştırıldı. enwiki/itwiki/WGA wikitext+HTML yeniden okundu; üç ihtilaf (nüsha C012, boyut C024, salon C030) D olarak açık tutuldu. Görsel K6 vision köprüsüyle incelendi (genel + ayna/kitap/sağ kırpma); WGA otoportre iddiası görselden doğrulanamadı → C025 C. RKD/Schwartz ve monografi metinleri erişilmedi (C032/C033).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Başlık: data \"Tefeci ve Karısı\"/\"The Moneylender and His Wife\"; Louvre \"Le prêteur et sa femme\"; enwiki \"The Money Changer and His Wife\" — özgün başlık alanına Louvre biçimi önerilir (C001/C034).",
+  "Tarih 1514 = Louvre ✓ (C006).",
+  "Boyut: Louvre 70,5×67 (A) ↔ WGA 71×68 (D, C024).",
+  "Salon: Louvre 814 ↔ WD 811 + Abu Dhabi deprecated (D, C030); Louvre oda uyarısı.",
+  "Provenance \"très probablement\" ×2 + \"peut-être bien distinct\" korundu (C009/C010/C012).",
+  "Çerçeve yazıtı: varlığı belgeli, metni yok; uydurma Latince metin YOK (C007/C008).",
+  "Görsel BU OTURUMDA İNCELENDİ (vision köprüsü + kırpma); transkripsiyon lossy — insan editör görsel teyidi yine önerilir."
+ ]
+}

@@ -1,0 +1,529 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1212937",
+ "sanatci_id": "hans-holbein-genc",
+ "baslik": "Elçiler",
+ "ozgun_baslik": "The Ambassadors",
+ "kunye": {
+  "sanatci": "Hans Holbein (genç)",
+  "sanatci_yasam": "1497/98–1543",
+  "tarih": "1533",
+  "tarih_belirsizlik": "İmza+tarih mermer zeminde (NG)",
+  "teknik": "Yağlıboya, meşe pano (Baltic/Polish oak, identified)",
+  "boyut_cm": {
+   "yukseklik": 207,
+   "genislik": 209.5
+  },
+  "muze": "National Gallery, Londra",
+  "envanter": "NG1314",
+  "edinim": "Bought 1890",
+  "konum": "Room 4",
+  "telif_durumu": "Kamu malı (Holbein ö.1543); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "özgün 30000×29560 indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "30000×29560",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C030); GZ TASLAK; kompozisyon NG (A)+enwiki (B) metninden; refs metinleri erişilmedi (C031)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 405
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1311
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2549
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil--atıf-zinciri"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#4-ilahi-kitabı-ve-discordharmony-konfesyonel-okuma"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-anamorfik-kafatası-optik-teori-restorasyon"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-ng-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-ng-betimi",
+   "DERS_ILERI.md#3-küreler-ve-enstrümanlar-bilim-mi-tarih-mi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ilahi-kitabı-ve-discordharmony-konfesyonel-okuma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-çerçeve-sunum-ve-anamorfiz-deneyimi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NG birincil kaydıyla künyeyi (1533, oak, 207×209,5, NG1314, Room 4) doğrular.",
+  "İki sitterı ve 1533 Roma-kopuşu bağlamını açıklar.",
+  "Anamorfik kafatası + gizli haç + üç seviye kozmolojisini analiz eder.",
+  "Küre/enstrüman/ilahi kitabı okumalarını ve beş ihtilafı (D) yönetir.",
+  "Restorasyonun kanıta etkisini ve görsel/literatür sınırlarını (E) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Anamorfiz",
+   "tanim": "Belirli açı/optikle düzelen bozuk perspektif; kafatası bu teknikle.",
+   "kanit": [
+    "C006",
+    "C024"
+   ]
+  },
+  {
+   "ad": "Memento mori",
+   "tanim": "Ölüm hatırlatması; kafatası vanitas işlevi.",
+   "kanit": [
+    "C006",
+    "C028"
+   ]
+  },
+  {
+   "ad": "Torquetum",
+   "tanim": "Gezegen/gök gözlem aracı; Kratzer yapımı, Apian 1533 betimi.",
+   "kanit": [
+    "C007",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Cosmati pavement",
+   "tanim": "Westminster Abbey zemin mozaiği deseni; Ives Anne Boleyn göndermesi.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Holbein carpet",
+   "tanim": "Holbein'in sık betimlediği Anadolu halısı tipi; üst raf.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "NG: başlık The Ambassadors; Hans Holbein the Younger; 1533; Room 4.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "NG: oil on wood (Baltic/Polish oak, identified); 207 × 209,5 cm; Bought 1890; NG1314.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "NG: sitterlar Jean de Dinteville (sol, Francis I için ikinci diplomatik görev) + Georges de Selve (sağ, Lavaur Piskoposu, yakın dost).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "NG: bağlam — papa Henry VIII/Catherine of Aragon evliliğini iptal etmedi → Roma'dan kopuş; 1533 Anne Boleyn ile evlendi; Dinteville düğüne Kral adına katıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "NG: imza + 1533 tarihi sol figürün arkasındaki mermer zeminde; olağandışı ayrıntılı imza → gurur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "NG: anamorfik kafatası iki figürün ayakları arasında, belirli açıdan görülür; memento mori; sol üstte yeşil damask perdeye iliştirili gizli haç → kurtuluş umudu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "NG: üst raf celestial globe + güneş saatleri + torquetum, kırmızı Türk halısı üzerinde; Nicholas Kratzer (Henry VIII kraliyet astronomu) yapımı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "NG: alt raf lüt (kırık tel, kılıf yüzükoyun) + aritmetik kitabı (division sayfası, set square) + Lutheran ilahi kitabı (ardışık olmayan iki sayfa) + flütler (biri eksik) + karasal küre (Fransa + Polisy).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "NG: Dinteville pembe saten tunik + vaşak kürklü siyah cape; hançer kını altın püsküller (gilding).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "NG: provenance Cazillac/Blaigny/Voisin/Lamoignan; Beaujon satışı → Lebrun; 1792 gravür; İngiltere'de satıldı; Buchanan → Pleydell; 1890 NG.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "NG: çerçeve ebonised box, meşe, Gallery 1996; 16. yy Kuzey Avrupa box frame tasarımı; kafatasının yan görüşüne izin verir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "enwiki: 1997 kafatası restorasyonu (Wylde, NG Technical Bulletin 19, 1998): bozunma; alt çene + nazal boşluk eksik; modern fotoğraf distorted perspektifinden yeniden hesaplandı; çıkarılabilir malzeme; Sharp projeksiyon kanıtı kaybı eleştirisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "enwiki: enstrümanlar (2 küre, shepherd's dial, quadrant, torquetum, polyhedral sundial; Dekker&Lippincott 1999); zemin mozaiği Westminster Cosmati; Ives 2006 Anne Boleyn taç giyme; üst raf Holbein carpet (Anadolu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "enwiki: discord okuması (lüt kırık tel + Luther ilahi kitabı, Gardner 2005) ↔ harmony okuması (Commandments=Law + Holy Spirit=Grace, Bertoglio).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "enwiki: ilahi kitabı Johann Walter 1524 Gestlich Gesangbuchli (Wittenberg); Veni Sancte Spiritus + Ten Commandments (Almanca); ardışık değil + numaralandırma hatalı; Apian aritmetik division; pergel governance OR Saturn.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "enwiki: kafatası görüş teorileri — yan (kapı/merdiven; Polisy'de merdiven yok, Foister 1997) ↔ Samuel 1962 optik tüp (Warburg/BOA; Agrippa 1533; itirazlar Sharp 1998); memento mori = Dinteville motto (Cane 2022); üç seviye.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "enwiki: sitter kimliği Colvin 1890 (Dinteville) + Hervey 1900 (Selve); standart Foister/Roy/Wyld 1997 + North 2004; yaş yazıtları sağ kitap 25, hançer 29.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "enwiki: karasal küre baş aşağı, Polisy yanlış NE konum, etiket baş aşağı; kulp erken restorator eklemesi (NG bıraktı); yapımcı Schöner ↔ Hartmann.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "enwiki: celestial globe Schöner; horizon ring Rome enlemi (42N/48 equator) ↔ Paris/Polisy; hour circle 2.40pm; Pegasus → 12 July; Dekker North horoscope reddeder.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "enwiki: güneş saatleri belirsiz/çalışmaz; shepherd's dial 10 April/15 August; Ives 11 May 1533; polyhedral sundial tutarsız (10.30/9.30, east-west); torquetum Apian 1533, Halley 1531 tenuous.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "enwiki: Selve episcopal robe giymez (1534'e kadar consecrate edilmedi, Rowlands); gizli görev teorisi (Montmorency) corroborasyon yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "enwiki: sol seküler / sağ clerical giysi; masayı flank; crucifix sol üst perdeyle kısmen örtülü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Sağ sitter ihtilafı: Selve (Hervey standart) ↔ François de Dinteville (Auxerre Piskoposu, Hudson; 1589 Polisy envanteri ama North \"almost certainly mistaken\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C024",
+   "ifade": "Kafatası görüş ihtilafı: yan görüş ↔ optik tüp (Samuel); \"reasonable but unproved\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "İlahi kitabı ihtilafı: discord (Luther bölünmesi) ↔ harmony (Law/Grace birlikte).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C026",
+   "ifade": "Küre tarih/enlem ihtilafı: Rome (12 July) ↔ Paris/Polisy ↔ Good Friday (North) ↔ 11 May 1533 (Ives); Dekker çoğunu reddeder.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Karasal küre yapımcısı ihtilafı: Schöner ↔ Georg Hartmann.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C028",
+   "ifade": "Yorum: üç seviye kozmolojisi (gök/yaşam/ölüm) + vanitas; kafatası dünyevi glory geçiciliği; haç kurtuluş umudu.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Yorum: nesneler \"visual essay\" on turmoil; discord/harmony tartışması konfesyonel gerilimi yansıtır; nesneler çok anlamlı.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); GZ TASLAK; insan editör teyidi ZORUNLU.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "K2 refs monografi/makale metinleri (Dekker&Lippincott, Ives, Hervey, Foister, North, Samuel, Wylde, Gardner, Bertoglio, Cane, Sharp) erişilmedi; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Görsel kamu malı (Holbein ö.1543); Commons PD; Google Art Project; özgün 30000×29560 px.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "WD: P170 Q48319; P571 1533; P186 oil+oak; P2048 207/P2049 209; P195 NG 1890; P217 NG1314; P276 Room 4; P180 Dinteville+Selve+skull (anamorphosis); P6216 PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "National Gallery",
+   "belge": "The Ambassadors — catalogue + in-depth + audio description",
+   "url": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Ambassadors (Holbein) — Dekker&Lippincott/Ives/Hervey/Foister/North/Samuel/Wylde/Gardner/Bertoglio/Cane/Sharp atıflı",
+   "url": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q1212937",
+   "url": "https://www.wikidata.org/wiki/Q1212937",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Hans Holbein the Younger - The Ambassadors - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; özgün 30000×29560 indirildi; İNCELENEMEDİ (vision bütçesi)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Portrait of Nicolaus Kratzer",
+   "sanatci": "Hans Holbein (genç)",
+   "gerekce": "Aynı enstrümanlar (polyhedral sundial, equinoctial dial); bilim portresi karşılaştırması.",
+   "kanit": [
+    "C013",
+    "C020"
+   ]
+  },
+  {
+   "eser": "Edward VI anamorfik portresi",
+   "sanatci": "Hans Holbein (genç)",
+   "kurum": "National Portrait Gallery",
+   "gerekce": "Aynı anamorfiz tekniği.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Şövalye, Ölüm ve Şeytan",
+   "sanatci": "Albrecht Dürer",
+   "mufredat_ici": true,
+   "gerekce": "Memento mori + Kuzeyli optik/çizgi geleneği.",
+   "kanit": [
+    "C028"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil NG kaydı ham HTML yeniden açıldı; künye/malzeme/sitter/bağlam/imza/nesne/provenance/çerçeve iddialarla karşılaştırıldı. enwiki wikitext yeniden okundu; beş ihtilaf (C023–C027) D olarak açık. Görsel K4 indirildi (30000px) ama vision bütçesi tükendi → İNCELENEMEDİ (C030); kompozisyon NG+enwiki metninden, GZ TASLAK. Refs monografi/makale metinleri erişilmedi (C031).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih 1533 ✓ (NG imza).",
+  "Boyut NG 207×209,5 (A) ↔ WD 207×209 (0,5 yuvarlama notu).",
+  "Müze/salon NG Room 4 ✓; envanter NG1314; Bought 1890 ✓.",
+  "Sitterlar NG Dinteville+Selve (A); Hudson alternatif François (D, C023).",
+  "Beş ihtilaf D: C023–C027 (sitter, kafatası görüş, ilahi kitabı, küre tarih, küre yapımcısı).",
+  "Görsel İNCELENEMEDİ (C030); GZ TASLAK; insan editör görsel teyidi ZORUNLU.",
+  "Refs monografi metinleri erişilmedi (C031)."
+ ]
+}

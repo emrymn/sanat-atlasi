@@ -1,0 +1,563 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2990634",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Kompozisyon VII bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tretyakov Gallery, Moskova"
+    },
+    {
+     "harf": "B",
+     "metin": "Centre Pompidou, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Ermitaj, St. Petersburg"
+    },
+    {
+     "harf": "D",
+     "metin": "Lenbachhaus, Münih"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil Tretyakov kaydı ve WD P195/P276 eseri Moskova Tretyakov Gallery'de konumlar (İnv.13230).",
+   "yanlis_gerekceleri": {
+    "B": "Pompidou'da hazırlık suluboyası (AM 1976-864) bulunur; büyük tuval değil.",
+    "C": "Ermitaj, itwiki galerisinde Kompozisyon VI'nın (1913) kurumudur; VII Tretyakov'dadır.",
+    "D": "Lenbachhaus Münih'te Kandinsky'nin Münih dönemi eserlerini tutar (ör. \"Montagna\"); VII değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil katalog kaydına göre eserin müzeye girişi nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1929'da Devlet Yeni Batı Sanatı Müzesi'nden (GMNZI) giriş"
+    },
+    {
+     "harf": "B",
+     "metin": "1915'te sanatçıdan doğrudan özel satın alma"
+    },
+    {
+     "harf": "C",
+     "metin": "1976'da Nina Kandinsky bağışı"
+    },
+    {
+     "harf": "D",
+     "metin": "1914'te Odessa Sanat Müzesi'nden devir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil kayıt \"Поступило из Государственного музея нового западного искусства. 1929\" der.",
+   "yanlis_gerekceleri": {
+    "B": "1915'teki olay Tretyakov sergisinde müze satın almasıdır (B, Hermann); birincil giriş kaydı 1929 GMNZI'dir, \"sanatçıdan doğrudan\" değil.",
+    "C": "1976 Nina Kandinsky bağışı Pompidou'daki suluboyanın edinimidir.",
+    "D": "Odessa 1914 ilk sergileme yeridir; eserin müzeye devri değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Kâğıt üzerine suluboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Duvar freski"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil \"Материал - холст / Техника - масло\"; WD P186 oil paint + canvas.",
+   "yanlis_gerekceleri": {
+    "B": "Kâğıt üzerine suluboya Pompidou hazırlık çalışmasının tekniğidir (AM 1976-864).",
+    "C": "Pano/tempera bu eserin tekniği değildir; birincil tuval + yağ der.",
+    "D": "Fresk, Cornelius \"Son Yargı\" duvar resminin tekniğidir; VII tuvaldir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tretyakov birincil katalog kaydında boyut nasıl yazılıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "200 × 300 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "200,6 × 302,2 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "49,6 × 64,8 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "52,1 × 54,6 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Soru birincil katalogdaki değeri sorar: \"Размер - 200 x 300\" (A).",
+   "yanlis_gerekceleri": {
+    "B": "200,6 × 302,2 en/it infobox değeridir; satır içi atıfsız ve birincille ihtilaflıdır (D001).",
+    "C": "49,6 × 64,8 cm Pompidou suluboyasının boyutudur.",
+    "D": "52,1 × 54,6 cm itwiki galerisindeki \"Mavi Süvari\" (1903) boyutudur."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Müze metnine göre büyük tuvalin son yazımı hangi tarihlerde tamamlandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "25–28 Kasım 1913"
+    },
+    {
+     "harf": "B",
+     "metin": "17 Kasım 1911"
+    },
+    {
+     "harf": "C",
+     "metin": "5 Mart 1913"
+    },
+    {
+     "harf": "D",
+     "metin": "Aralık 1911"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Müze metni büyük tuvalin yazımını \"25 ile 28 Kasım 1913 arası, birkaç gün\" olarak verir.",
+   "yanlis_gerekceleri": {
+    "B": "17 Kasım 1911 Kompozisyon V'in tamamlanma tarihidir.",
+    "C": "5 Mart 1913 Kompozisyon VI'nın tamamlanma tarihidir.",
+    "D": "Aralık 1911 \"Sanatta Ruhsallık Üzerine\"nin yayım tarihidir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Birincil kayıt, eser için kaç hazırlık çalışması sayar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Otuzdan fazla eskiz ve etüt"
+    },
+    {
+     "harf": "B",
+     "metin": "Altı büyük yağlıboya etüdü"
+    },
+    {
+     "harf": "C",
+     "metin": "On beş varyant"
+    },
+    {
+     "harf": "D",
+     "metin": "On Kompozisyon"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil \"otuzdan fazla eskiz, etüt ve eskiz\" sayar; çoğu 1913 sonbaharında.",
+   "yanlis_gerekceleri": {
+    "B": "Altı, büyük yağlıboya etütlerinin alt grubudur (itwiki/Dabrowski); toplam hazırlık değil.",
+    "C": "On beş, benzer konulu varyantların alt grubudur.",
+    "D": "On, sanatçının tüm Kompozisyonlar serisinin sayısıdır; hazırlık çalışması değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Müze metnine göre eserin tema birliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Apokalips"
+    },
+    {
+     "harf": "B",
+     "metin": "Tufan"
+    },
+    {
+     "harf": "C",
+     "metin": "Diriliş"
+    },
+    {
+     "harf": "D",
+     "metin": "Belirli bir tema yoktur, salt biçimdir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Müze metni eserleri \"Апокалипсис\" temasında birleştirir; melekler/atlı/İlyas arabası yankıları.",
+   "yanlis_gerekceleri": {
+    "B": "Tufan, Dabrowski & Oldenburg'a göre Kompozisyon VI'nın temasıdır.",
+    "C": "Diriliş, aynı okumada Kompozisyon V'in temasıdır.",
+    "D": "Müze metni açıkça bir tema (Apokalips) verir; \"salt biçim\" değildir."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Pompidou'daki hazırlık suluboyasının tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Grafit, Çin mürekkebi ve suluboya; kâğıt"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Duvar freski"
+    },
+    {
+     "harf": "D",
+     "metin": "Tahta baskı (lubok)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Pompidou kaydı: \"Mine graphite, encre de Chine et aquarelle sur papier\".",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya/tuval Composition VII'nin tekniğidir; suluboya çalışmasının değil.",
+    "C": "Fresk Cornelius \"Son Yargı\"nın tekniğidir.",
+    "D": "Lubok, Rus halk baskısıdır; bir ilham kaynağı, bu çalışmanın tekniği değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kandinsky için \"Kompozisyon\" ne anlama gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "En yüksek ve en karmaşık sanat formu"
+    },
+    {
+     "harf": "B",
+     "metin": "Dış doğanın doğrudan izlenimi"
+    },
+    {
+     "harf": "C",
+     "metin": "Çoğunlukla bilinçsiz içsel izlenim"
+    },
+    {
+     "harf": "D",
+     "metin": "Müzik eşliğinde performans"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Müze: \"композиция\" Kandinsky için en yüksek ve en karmaşık formdu.",
+   "yanlis_gerekceleri": {
+    "B": "Dış doğanın doğrudan izlenimi \"İzlenimler\" türünün tanımıdır.",
+    "C": "Bilinçsiz içsel izlenim \"Doğaçlamalar\" türünün tanımıdır.",
+    "D": "Performans tanımı kaynaklarda yoktur; kompozisyon yavaş oluşan bilinçli resimsel formdur."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Yaratım sürecini fotoğraflarla belgeleyen ve tanıklık eden kişi kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gabriele Münter"
+    },
+    {
+     "harf": "B",
+     "metin": "Nina Kandinsky"
+    },
+    {
+     "harf": "C",
+     "metin": "Peter Behrens"
+    },
+    {
+     "harf": "D",
+     "metin": "Richard Wagner"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "itwiki (Hermann p. 213; Bell p. 618): süreci Münter fotoğrafladı ve tanıklık etti.",
+   "yanlis_gerekceleri": {
+    "B": "Nina Kandinsky sanatçının duludur; 1976 Pompidou bağışçısı ve 1910 tarihi tanığı, fotoğrafçı değil.",
+    "C": "Peter Behrens Jugendstil tasarımcısıdır; bir bağlam, fotoğrafçı değil.",
+    "D": "Wagner bestecidir; Kandinsky'nin müzikal ilhamı, fotoğrafçı değil."
+   },
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Kompozisyon VII Tretyakov Gallery'de korunur ve envanter numarası Инв.13230'dur.",
+   "dogru": true,
+   "aciklama": "Doğru: birincil katalog ve WD konumu teyit eder; envanter yalnız birincilden (WD P217 yok).",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil katalog, eserin 1929'da Devlet Yeni Batı Sanatı Müzesi'nden (GMNZI) geçtiğini kaydeder.",
+   "dogru": true,
+   "aciklama": "Doğru: \"Поступило из Государственного музея нового западного искусства. 1929\".",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Büyük tuvalin son hali, aylar süren kesintisiz bir icrayla tamamlanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: hazırlıklar aylar sürse de son yazım 25–28 Kasım 1913'te, birkaç günde bitmiştir.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Pompidou'daki suluboya kaydında \"Composition VII\" adı açıkça geçer.",
+   "dogru": false,
+   "aciklama": "Yanlış: kayıt \"Sans titre / Première abstraction\" der; VII bağı Dabrowski kataloğunun alternatif başlığıyla kurulur.",
+   "kanit": [
+    "C014",
+    "C030"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kandinsky \"Kompozisyon\"ları bilinçsiz ve doğaçlama üretim olarak tanımlar.",
+   "dogru": false,
+   "aciklama": "Yanlış: Kompozisyonlar yavaş oluşan, bilinçli/niyetli çalışmalardır; bilinçsiz olan \"Doğaçlamalar\"dır.",
+   "kanit": [
+    "C011",
+    "C028"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil katalog (200×300) ile en/it infobox (200,6×302,2) boyut ihtilafını kaynak hiyerarşisiyle değerlendirin; hangi değer esas alınmalı, neden?",
+   "beklenen_ogeler": [
+    "birincil 200×300 (A)",
+    "infobox atıfsız (D001)",
+    "WD boyut ref Commons 2018",
+    "birincil esas; infobox ancak atıf zinciriyle"
+   ],
+   "kanit": [
+    "C004",
+    "C042",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Odessa 1914 → kurtarma → 1915 satın alma → 1929 GMNZI provenans zincirini kurun; belgesiz ara adımı işaretleyin.",
+   "beklenen_ogeler": [
+    "1914 Odessa 60 eser",
+    "12–20 Aralık kurtarma / Osmanlı bombardımanı",
+    "Nisan 1915 Tretyakov satın alma",
+    "1929 GMNZI girişi",
+    "1915→1929 ara dönem belgesiz"
+   ],
+   "kanit": [
+    "C019",
+    "C020",
+    "C018",
+    "C007",
+    "C050"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Apokalips (müze), Son Yargı (Dabrowski) ve kombinasyon (kandinsky.net/enwiki) tema okumalarını düzeyleriyle karşılaştırın; data \"tufan\" notunu değerlendirin.",
+   "beklenen_ogeler": [
+    "Apokalips A",
+    "Son Yargı B (V=Diriliş, VI=Tufan)",
+    "kombinasyon C zayıf zincir",
+    "data tufan D004 gerilimi"
+   ],
+   "kanit": [
+    "C010",
+    "C024",
+    "C040",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Suluboya tarih tartışmasını (imza 1910 ↔ kayıt 1913; Nina/Dabrowski; Pompidou tutumu) kaynaklara atfederek yazın; \"i9i0\" inskripsiyonunu normalize etmeden koruyun.",
+   "beklenen_ogeler": [
+    "imza 1910",
+    "güncel kayıt 1913",
+    "Nina 1910 / Dabrowski 1913",
+    "itwiki \"1910 o 1913\" ↔ canlı 1913 (D002)",
+    "i9i0 rendering aynen"
+   ],
+   "kanit": [
+    "C015",
+    "C029",
+    "C030",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "itwiki'nin Tretyakov'a atfettiği \"Münih'te yapıldı\" ve \"ilk üç Kompozisyon WWII'de yok oldu\" ifadelerini canlı+arşiv katalogla sınayın; atıf zinciri kırığını raporlayın.",
+   "beklenen_ogeler": [
+    "S3 Tretyakov atfı",
+    "S4/S5 metninde yok",
+    "canlı HTML Мюнхен başka eser kayıtları",
+    "B düzeyi + not (E003)",
+    "doğrulanamadı"
+   ],
+   "kanit": [
+    "C021",
+    "C033",
+    "C049"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği merkez-sol çekirdeği ve ondan yayılan karşıt renk/çizgileri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Bell betimi: sol kısmın merkezinden başlayan çekirdek; yoğun fırça ↔ hafif sfumato.",
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol alt köşeden sağ üste açılan kuşatıcı hareketi ve \"kaybolan merkez\"i izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Bell: eşit önemde bileşenler; farklı yoğunluk bölgeleri.",
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Apokalips yankılarını arayın: borazan melekler, atlı, İlyas'ın ateş arabası (okunabilirlik tartışmalı).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze metni (A) + Robbins (B): belirli figürleri izlemek yanlış olabilir.",
+   "kanit": [
+    "C010",
+    "C032"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yeşil-siyah büyük oval ile merkezdeki düzensiz siyah dikdörtgeni bulun (kaynak betimi).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): itwiki/Dabrowski: heterojen kaynaklardan türeyen iki ana biçim.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tuvalin \"kenar\"/çerçeve gölgesinin görüntü yapısına nasıl sızdığını inceleyin (kaynak betimi).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Turchin p. 42: kenardan zemin üzerinde \"yüzen\" büyük biçimler.",
+   "kanit": [
+    "C037"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Kompozisyon VII künyesi?",
+   "arka": "Wassily Kandinsky (1866–1944); 1913; tuval üzerine yağlıboya; 200×300 cm; Tretyakov Gallery Moskova; İnv.13230; 1929 GMNZI girişi.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Provenans zinciri?",
+   "arka": "1914 Odessa ilk sunum (60 eser) → 12–20 Aralık 1914 kurtarma (Osmanlı bombardımanı) → Nisan 1915 Tretyakov sergisinde satın alma → 1929 GMNZI'den giriş; 1915–1929 ara dönem belgesiz.",
+   "kanit": [
+    "C019",
+    "C020",
+    "C018",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Hazırlık ve icra?",
+   "arka": "30+ eskiz/etüt (çoğu 1913 sonbaharı); 6 büyük yağlıboya etüdü + 15 varyant; kronoloji belirsiz; son yazım 25–28 Kasım 1913, birkaç gün; Münter fotoğrafları.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Tema ve ikonografi?",
+   "arka": "Müze: Apokalips (melekler/atlı/İlyas arabası). Dabrowski: V=Diriliş, VI=Tufan, VII=Son Yargı. Gizli ikonografi tartışmalı (Robbins: figür izlemek yanlış olabilir).",
+   "kanit": [
+    "C010",
+    "C024",
+    "C032"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Kuram ve müzik?",
+   "arka": "\"Kompozisyon\" en yüksek/karmaşık form; içsel zorunluluk (1910); \"Sanatta Ruhsallık\" Aralık 1911, üç tür; renk–ses (mavi=flüt/çello/kontrbas/org); \"kürelerin müziği\" kozmogonisi.",
+   "kanit": [
+    "C011",
+    "C013",
+    "C027",
+    "C028"
+   ]
+  }
+ ]
+}

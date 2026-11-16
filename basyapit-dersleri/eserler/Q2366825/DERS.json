@@ -1,0 +1,1332 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2366825",
+ "sanatci_id": "john-constable",
+ "baslik": "Saman Arabası",
+ "ozgun_baslik": "The Hay Wain (RA 1821 sergi adı: Landscape: Noon)",
+ "kunye": {
+  "sanatci": "John Constable",
+  "sanatci_yasam": "1776–1837",
+  "tarih": "1821",
+  "tarih_belirsizlik": "NG \"Date made 1821\"; WD P571 precision=9 (yıl), P1480 yok. RA 1821 sergi adı \"Landscape: Noon\" (V&A/Reynolds: sergi no. 339). V&A tam boy eskizi \"ca. 1821\" — AYRI nesne (C073).",
+  "teknik": "Yağlıboya, tuval (Oil on canvas); \"Signed; Dated\"",
+  "boyut_cm": {
+   "yukseklik": 130.2,
+   "genislik": 185.4
+  },
+  "muze": "National Gallery, Londra (Main Collection)",
+  "envanter": "NG1207",
+  "edinim": "Presented by Henry Vaughan, 1886; provenans NG/Egerton 2000 — \"reputedly\" 1825 ve \"possibly\" kuşku işaretleri korunur (C030)",
+  "konum": "Room 40 (güncel); 2009 arşivi Room 34 (C058 D); Framed",
+  "telif_durumu": "Kamu malı (Constable ö. 1837); Commons PD (PD-Art / PD-old-auto-expired / PD-old-100-expired / CC-PD-Mark). Credit \"National Gallery, London via gallerix.ru\" — aggregator; NG görüntü lisansı ayrıca çekilmedi (C070)."
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:John_Constable_-_The_Hay_Wain_(1821).jpg",
+  "kaynak": "Wikimedia Commons (pageid 29779372); credit \"National Gallery, London via gallerix.ru\"",
+  "lisans": "Public domain (PD-Art / PD-old-auto-expired / PD-old-100-expired / CC-PD-Mark; AttributionRequired false)",
+  "dogrulama": {
+   "yontem": "metadata (S6 imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "6128 × 4226 px; 8.334.977 bayt; yükleme 2013-11-22 20:39:08",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C070 E); GZ TASLAK. Kompozisyon S4 (A) + S7/S8/S10 (B) + S13/S14/S15 (C) METNİNDEN, \"kaynakların betimlediği\" çerçevesinde. Görselle doğrulanmayanlar: bulut oranı (C055 D), araba durma/geçme (C064 E), figür pozisyonları (C065 E), silinen binici kimliği (C066 E), bulut yönü (C072 E). Credit aggregator üzerinden; NG taraması değil. Görsel projeye kopyalanmadı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 430
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1427
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3093
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_BASLANGIC.md#küçük-sözlük",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-kaynak-eleştirisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-provenans-egerton-zinciri-ve-atlanan-halkalar",
+   "DERS_ILERI.md#5-ikonografi-ve-emek-georgic-enclosure-görünmeyen-sahipler"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-eskizler-zinciri-her-kompozisyonu-iki-kez-boyamak"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-doğaya-sadakat-kurgulanmış-peyzaj",
+   "DERS_ILERI.md#6-teknik-ast-scumbling-constables-snow-eskizin-modernliği"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-emek-georgic-enclosure-görünmeyen-sahipler"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-eskizler-zinciri-her-kompozisyonu-iki-kez-boyamak",
+   "DERS_ILERI.md#6-teknik-ast-scumbling-constables-snow-eskizin-modernliği"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-alımlama-salon-1824-madalya-kennard-protestolar"
+  ],
+  "9": [
+   "DERS_ILERI.md#1-kimlik-ve-kaynak-eleştirisi",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-müze-yorumu"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NG birincil kataloguyla künyeyi (NG1207, 1821, oil on canvas, 130.2 × 185.4 cm, Room 40, Vaughan 1886, Signed; Dated) doğrular.",
+  "Özgün sergi adı \"Landscape: Noon\" ile takma ad \"The Hay Wain\" ayrımını kurar; eskiz zincirini (1802/1811 etütleri → ~1820 Yale → tam boy V&A → final NG) sıralar ve V&A eskizinin AYRI envanter taşıdığını açıklar.",
+  "1824 Paris Salonu, Charles X altın madalyası (\"chiefly for The Hay Wain\"), NG Archives ve çerçevedeki 2024 dökümlerini kaynaklarıyla anlatır.",
+  "\"Doğaya sadakat\" (Carver) ↔ \"kurgulanmış peyzaj\" (Riding) gerilimini, Georgic/Enclosure okumalarını ve tür hiyerarşisi bağlamını değerlendirir.",
+  "D/E envanterini (yüklü/boş, bulut oranı, leased/owned, provenans, £/gine, V&A envanteri, Kennard yılı) yönetir; görsel incelenmediği için gözlem sorularının TASLAK olduğunu beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Wain",
+   "tanim": "Ahşap yük arabası. NG, yanlarının saman için fazla alçak olduğunu, kereste taşımaya daha uygun göründüğünü ve Rubens'in Berlin'deki araba etüdüne çok yakın olduğunu belirtir.",
+   "kanit": [
+    "C007",
+    "C016"
+   ]
+  },
+  {
+   "ad": "Six-footers",
+   "tanim": "Constable'ın 1819–1825 arasında Royal Academy'ye gönderdiği büyük Stour peyzajları dizisi; The Hay Wain üçüncüsüdür. Her biri için tam boy yağlı eskiz yapıldı.",
+   "kanit": [
+    "C020",
+    "C078"
+   ]
+  },
+  {
+   "ad": "Landscape: Noon",
+   "tanim": "Tablonun RA 1821'deki özgün adı; NGA'ya göre eseri topografik görünüm alanından çıkarıp doğanın döngüleri ve ruh halleri geleneğine yerleştirir.",
+   "kanit": [
+    "C005",
+    "C079"
+   ]
+  },
+  {
+   "ad": "Constable's snow",
+   "tanim": "Eleştirmenlerin, yapraklardaki titreşen ışığı veren küçük beyaz boya lekelerine taktığı alaycı ad; geleneksel pürüzsüz peyzaj yüzeyi beklentisini sarsan teknik.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Tam boy yağlı eskiz (full-scale oil sketch)",
+   "tanim": "Bitmiş tabloyla yaklaşık aynı ölçüde, kompozisyonu denemek için hızlı boyanan hazırlık tuvali. NGA'ya göre bu pratik unprecedented idi; eskizler sergilenmedi/satılmadı. V&A örneği 987-1900, ca. 1821, 137 × 188 cm (estimate).",
+   "kanit": [
+    "C018",
+    "C073",
+    "C078"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Tam ad \"The Hay Wain\"; John Constable (1776–1837); 1821.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Oil on canvas; 130.2 × 185.4 cm; \"Signed; Dated\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S2",
+    "S3",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "NG1207; National Gallery Londra, Main Collection; güncel Room 40; \"Framed\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "\"Presented by Henry Vaughan, 1886\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "RA 1821'e özgün ad \"Landscape: Noon\" ile gönderildi; \"The Hay Wain\" Archdeacon Fisher'ın takma adı (V&A: Şubat 1821 kadar erken).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Konu: Flatford millpond, River Stour; Suffolk–Essex sınırı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "BOŞ araba (\"wain\") sığ sudan karşı çayıra geçiyor; üç at çekiyor; saman kışın hayvan yemi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Soldaki ev Constable döneminde kiracı çiftçi Willy Lott tarafından oturuluyordu; ev hâlâ ayakta (mülkiyet → C050).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Flatford Mill tahıl öğüten su değirmeni; ailece ~100 yıl \"leased and operated\"; East Bergholt'a ~1 mil; tabloda görünmez, sağ uçta kırmızı tuğla duvar kenarı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Platformda sürahiyle su alan kadın; 1811'deki üç küçük yağlı eskizden aynı poz/konumda korundu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kıyıda arabaya dikkatle bakan siyah-beyaz çiftlik köpeği.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Uzak çayırda orakçılar: biri tırpan biliyor, diğerleri yüklü arabaya yaba ile saman atıyor; tepeden istifleyen bir adam seçiliyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Sağdaki küçük boş kayık 1809 etüdüne dayanır; The White Horse (1819) ve Salisbury Cathedral from the Meadows (1831) için de kullanıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Beyaz fırça lekeleri eleştirmenlerce alayla \"Constable's snow\" diye anıldı; geleneksel kaynaştırılmış fırça işi/kahverengi ton/pürüzsüz yüzey beklentisini sarstı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Değişken Suffolk yaz göğü; tek uğursuz yağmur bulutu; bulutlar tuvalin ÜST ÜÇTE BİRİ, nehir alt üçte biri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Araba tasarımı alışılmadık: yanlar saman için fazla alçak, kereste taşımaya uygun; Rubens'in Return from the Harvest kara kalem etüdüne (Berlin) çok yakın; Het Steen etkisi \"may owe something\" (belirsizlik korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sahne Suffolk'ı çağrıştırır ama LONDRA ATÖLYESİNDE yapıldı; yıllar içinde biriken açık hava eskizlerinden (BBC: Hampstead).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Tam boy yağlı eskiz önce yapıldı; V&A'da (AYRI ESER); hızlı boyandı, kahverengi astın büyük alanları açık; öndeki at+binici finalde geç aşamada boyanarak çıkarıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S8",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Arabanın küçük hazırlık yağlı eskizi ~1820, Yale Center for British Art (Paul Mellon Collection).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "RA 1819–1825 büyük Stour peyzajlarının (\"six-footers\") ÜÇÜNCÜSÜ; 1821, Stratford Mill'den sonraki yıl.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "RA 1821'de eleştirmenler olumlu (The Examiner: \"approaches nearer to the actual look of rural nature than any modern landscape whatever\"), ama SATILMADI.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Géricault ve Nodier RA 1821'de gördü; Delacroix'ya göre Géricault \"quite stunned\" döndü; Nodier doğaya bakmaya çağırdı; Constable \"probably unaware\" idi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "1824'te The Hay Wain + View on the Stour near Dedham + küçük Yarmouth Jetty, John Arrowsmith'a £250'ye satıldı; 1824 Paris Salonu; sansasyon.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Charles X altın madalya: \"for his exhibits at the Salon, but chiefly for The Hay Wain\"; madalya National Gallery Archives'ta.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "NG madalyayı 1927'ye kadar edindi; ön/arka kopyaları çerçeveye kondu, sonra çıkarıldı; 2024'te NG'nin ikiyüzüncü yılı için iki döküm yeniden kondu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Salon'daki Constable'lar Delacroix dahil yeni Fransız neslini doğrudan doğadan boyamaya esinledi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Sanayileşme ve kırsal huzursuzluk bağlamında idealize çocukluk manzarası; sakinlik tarım işçilerinin deneyimiyle \"quite at odds\"; Turner'ın fabrika/buhar/lokomotifleri Constable'da YOK.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Provenans (NG/Egerton 2000): Arrowsmith 1824 → \"reputedly\" 1825 anon. (\"possibly\" başka dealer) → 1828 Henry Paris, Boursault → ~1838 Artaria/Higginson → 1846 Christie's (77) Rought → D.T. White → 1853 Young → 1866 Christie's (25) Cox/Vaughan → 1886 NG.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Evin bilinen en erken yağlı etüdü \"was probably painted in 1802\" (\"probably\" korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Çerçeve: Key facts \"19th-century English Frame (original frame)\"; Frame bölümü T. Fielder 1831–1854, çam, moulded composition, yağlı yaldız, 3 Greek Street etiketi; cam kapıda ön moulding modern (NG içi nüans).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "Güncel V&A kaydı: tam boy eskiz O81405, 987-1900 (accessionYear 1900), \"Oil study for 'The Hay-wain'\", ca. 1821 (1816–1825), 137 × 188 cm (\"estimate\"), çerçeve 155×214×12, 99 kg, galeri 87; Reynolds cat. 209 pl. 159; RA 1821 no. 339 \"Landscape : Noon\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C074",
+   "ifade": "V&A eskiz provenansı: 1838 Executors' sale \"Two - Sketches of Landscapes\" (\"are believed to have been\"); C. R. Leslie evinde saklama/temizlik/kopyalar; Vaughan D.T. White'tan aldı; ≤1862 Kensington Museum ödünç (24 Ekim 1862 listesi); 1862 International Exhibition'da Sheepshanks'te eskiz + bitmiş tablo yan yana; 1874/1886 ödünç; Vaughan 1900'de öldü, vasiyet yürürlüğe girdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C075",
+   "ifade": "NG sergi geçmişi: 2014 V&A \"The Making of a Master\"; 2024 Bristol \"National Treasures\"; 2024–25 NG \"Discover Constable and The Hay Wain\"; 2026 Christchurch Mansion \"Constable 250\"; listeler 2009'dan itibaren. Aynı sayfa Room 40'ta Cenotaph + The Cornfield, \"Not on display\" Stratford Mill/Weymouth Bay/Salisbury Cathedral and Leadenhall.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C076",
+   "ifade": "Ford'dan geçen araba 17. yy Flaman/Hollanda peyzajında yinelenir; 1838 ölüm sonrası satışta iki Jan van Goyen; Constable \"probably encouraged\"; doğrudan kopya yerine \"founded on original observation of nature\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C077",
+   "ifade": "NG audio/In-depth ek betim: nehir alt üçte birde sola kıvrılır; evin üçgen alınlığı/beyaz duvar/kırmızı kiremit; açık kurşun çerçeveli pencere; tasmalarda kalın kırmızı püsküller; ördekler + alçak uçuşan kırlangıçlar; sağda bağlı küçük ahşap kayık; siyah şapkalı oltalı adam; \"flat ford\" → Flatford; kayık evi ve arabayı dengeler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Stendhal (1824 Salonu): \"We have never seen anything like these pictures before. It is their truthfulness that is so striking.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Riding (NG): \"offering up a fiction: a highly curated landscape\"; \"nothing natural… all man-made… managed landscape\"; \"you don't see owners, only labourers\"; Enclosure Acts 1604–1914, \"very little common land\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "2005 BBC Radio 4 Today anketi (NG ile): Britanya'da en popüler İKİNCİ tablo, 21.711 oy; birinci Turner Fighting Temeraire.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "28 Haziran 2013: Fathers4Justice bağlantılı olduğu bildirilen protestocu çocuk fotoğrafı yapıştırdı; tutuklandı; NG \"No damage to Constable's original paint occurred and there is no lasting damage\"; yeniden sergide.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "4 Temmuz 2022: iki Just Stop Oil protestocusu (Hunt, Lazarus) değiştirilmiş \"apokaliptik\" versiyonu yapıştırıp ellerini çerçeveye yapıştırdı; NG: çerçevede küçük hasar + vernik yüzeyinde bozulma, ikisi de giderildi; salı sabahı yeniden sergide.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "\"Constable's most famous image\"; en büyük/en popüler İngiliz resimlerinden biri (değer yargısı, nesnel ölçüm değil).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Romantik hareketin başlıca eserlerinden; Constable \"leaned more towards Romanticism than Realism\" (WD/enwiki ref'leri blog — zayıf; B desteği BBC).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S13",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Constable alıntıları: \"Painting is with me but another word for feeling\" / \"I should paint my own places best - painting is but another word for feeling\" (muhatap/tarih → C068).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "V&A 2009 (Kauffmann): tam boy eskiz \"an intermediary stage between the small sketch at Yale and the final version\"; final \"differs hardly at all - only the figure on horseback… has disappeared\"; köpek about 1810–15 kulübe eskizinden; final \"firmer contours and more naturalistic colouring\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C078",
+   "ifade": "NGA 2006: 1816 Maria Bicknell evliliği (East Bergholt rektörünün torunu), Londra; 40 yaşında RA üyesi değil; 1818 anıtsal tuvaller; The White Horse 1819 → associate üyelik; tam boy yağlı eskiz \"unprecedented\"; eskizler hiç sergilenmedi/satılmadı; her kompozisyon iki kez boyandı; hiçbir eskiz finalle tam örtüşmez.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C079",
+   "ifade": "NGA 2006: \"Landscape: Noon\" eseri topografik alandan çıkarıp doğanın döngüleri/ruh halleri geleneğine yerleştirir; akademik hiyerarşide İncil/tarih/mitoloji büyük ölçeğe layık, sessiz kırsal sahne küçük tuvallere uygun sayılırdı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C080",
+   "ifade": "BBC 2024: Rylance-Watson (National Trust) \"quintessentially English\" + \"an idealised image\" (AONB); Carver (\"Truth to Nature\" küratörü) \"true to nature\"; Bristol \"National Treasures: Constable in Bristol − Truth to Nature\"; havlu/bisküvi tenekesi yeniden üretimleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C081",
+   "ifade": "BBC 2024 (Riding): tablo en iyi \"an evocation\"; \"did not go in for a mimetic, optical-truth attitude\"; \"lifelong study of nature… through the medium of oil paint\"; \"position of privilege\"; Napolyon/Fransız Devrimi/Peterloo; \"Maybe he simply wants things to stay as they are\" (öneri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C082",
+   "ifade": "BBC 2024: köpek sonradan eklenmiş; sağında silinmiş bir fıçı + atlı figür izleri su altında; araba bir kereste arabası; Londra'ya gönderilen eskizden ya da \"as new research suggests\" Hampstead Heath Whitestone Pond arabalarından (hipotez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C083",
+   "ifade": "BBC 2024: \"skying\"; Dunthorne'a mektup \"laborious studies from nature\" / \"a pure and unaffected\"; yeşil ↔ geleneksel kahverengi; Richard Wilson (1713–1782), Turner Dido building Carthage (1815), Rain Steam and Speed (1844).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C084",
+   "ifade": "BBC 2024: 1983'te Peter Kennard'ın The Hay Wain with Cruise Missiles'i Greenham Common füze karşıtı protestoları destekledi (V&A 1980 der → C063).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C085",
+   "ifade": "V&A 2009: varlıklı değirmencinin oğlu, 1776 East Bergholt; RA Schools; Gainsborough/Claude/Rubens/Ruisdael etkileri; Derbyshire 1801, Lake District 1806; 1810'dan itibaren kesintisiz açık hava serisi; 1816 sonrası Londra, yazları East Bergholt.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C086",
+   "ifade": "V&A 2009: 18. yy Sandby (topografik) ↔ Cozens (Romantik/ekspresif) uçurumu; Constable ikisini birleştirdi: \"more naturalistic than… any of his predecessors and yet imbued with a deeply Romantic spirit\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C087",
+   "ifade": "V&A 2009: \"Painting should be understood… as a pursuit, legitimate, scientific and mechanical\"; \"the sky is not the key note, the standard of scale and the chief organ of sentiment\"; bulutların bilimsel incelenmesi + ruh hali; doğalcı ile şiirsel arasında çatışma yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C088",
+   "ifade": "V&A 2009: The Leaping Horse tam boy eskizi (986-1900) çok daha bitmiş; Haywain eskizi hızlı darbe, yüzeyi sıyıran beyaz-yeşil lekeler, geniş ele alışla \"modern taste\"a daha uygun; kırmızımsı-kahverengi/gri/koyu mavi ton etüdü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C089",
+   "ifade": "2005 anketi kapsamı: Britanya galerilerindeki herhangi bir eser uygun; 10 eser kısa liste; toplam 118.111 oy; Fighting Temeraire 31.892; Hay Wain 21.711; Manet Folies-Bergère üçüncü; Van Eyck Arnolfini dördüncü; NG direktörü Charles Saumarez Smith.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C090",
+   "ifade": "CNN 2022: değiştirilmiş versiyonda nehir→asfalt yol, fabrika bacaları, uçaklar; Hannah Hunt (23, psikoloji), Eben Lazarus (22, müzik); kriminal hasar şüphesiyle tutuklanıp kefaletle serbest; JSO yeni petrol/gaz lisanslarının engellenmesini istiyor.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Yaklaşımı Barbizon Okulu'nu ve dolaylı olarak İzlenimcileri besledi (erişilen A/B kaynaklarda bu adlar GEÇMİYOR).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "Teknik: \"pennellate sporche e filamentose\"; yakından bin tonluk impasto, uzakta titreşen ışık; Delacroix'nın renk ayrıştırması bundan etkilendi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C044",
+   "ifade": "İki işçi atları sulamak ve arabayı dengelemek için durdu: sıcakta metal jant genleşir, ahşap büzülür, jant gevşer; su ahşabı genleştirip jantı kavratır.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "AHIS: mevsim \"must be between June and August\"; \"Georgic landscape\" (pastoral karşıtı); ufuk altın oranda; nehir şekli değiştirildi; köpek gözü arabaya yöneltir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C047",
+   "ifade": "Kenneth Clark (1949): \"an eternally moving expression of serenity and optimism\" (AHIS içinde alıntı; özgün metne erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C049",
+   "ifade": "Constable–Fisher mektupları (1909 transkripsiyon): 1 Nisan \"My picture goes to the Academy on the loth…\"; 19 Temmuz \"How does The Hay-Wain look now it has got into your own room again?\"; \"the hay-cart with two men in it is passing\"; \"the boy mounted on the drinking horse has been omitted\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C091",
+   "ifade": "AHIS bağlam: 1820'ler tarımsal bunalım, Napolyon dönüşü asker işsizliği, Settlement Act + Trespass Act ile parish bağlılığı, Enclosure ile ortak alan kaybı, makine kırma/çiftlik yakma.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C092",
+   "ifade": "AHIS teknik: final orta yeşil tonla başlar, scumbling ile kontur/renk güçlenir; alttan orta yeşilin görünmesi yüzeyi böler; impasto; Yale eskizi palet bıçağı + fırça; bulut etütleri Hampstead Heath.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C093",
+   "ifade": "AHIS eleştiri alıntısı (Tate'e atfen): \"he dots and dabs and grubs and splashes, more strangely in each succeeding year\"; £70 çerçevesiz teklif reddi (özgün Tate metnine erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C094",
+   "ifade": "1909 kitap: Fisher sonradan \"Midsummer Noon\" der; ertesi yıl British Gallery; 1823'te hâlâ satılmamış; Sir William Curtis istekli; \"born a companion to your picture (The White Horse)\"; \"The Hay Cart\"/\"The Bridge\" adları; Lott 88 yaşında öldü, epitaf \"Gibeon's Farm\"; Valley Farm (1835, NG No. 327) evi karşı taraftan gösterir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C050",
+   "ifade": "Willy Lott evinin MÜLKİYETİ: NG \"occupied by tenant farmer\" (sessiz) ↔ enwiki \"belonged to a neighbour\" ↔ V&A 2009 \"belonged to Constable's father\" ↔ BBC \"owned by tenant farmer Willy Lott\" ↔ AHIS uzlaştırır (mülk baba, kiracı Lott) ↔ 1909 \"from the name of the owner\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S8",
+    "S10",
+    "S13",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "Flatford Mill: NG (A) \"leased and operated… nearly a hundred years\" ↔ BBC/Riding \"owned by the Constable family since 1742\" ↔ enwiki \"owned by Constable's father\" ↔ itwiki \"proprietà del padre… Golding\". Çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Arrowsmith'a satılan eser SAYISI: NG+BBC 3 eser ↔ enwiki atıfsız \"with three other Constables\" (=4).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "Satış bedeli: NG £250 ↔ itwiki 250 gine (Bravi 403, sözleşme 15 Nisan 1824); ilk teklif AHIS/1909 £70 ↔ itwiki 70 gine, alt sınır 150 gine. Para birimi çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S13",
+    "S15",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "Provenans zinciri: NG/Egerton (reputedly 1825 → 1828 Boursault → ~1838 Higginson → 1846 Rought → White → 1853 Young → 1866 Cox) ↔ enwiki/Kay 1933 (White → Ryde Young → \"on the death of his friend\") ↔ itwiki (üç yıl invenduta, 1828 Boursault).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "Bulut oranı: NG audio (A) \"the upper third\" ↔ data/basyapitlar[72] + eser_ayrintilari[75] \"tuvalin neredeyse yarısını kaplar\". Görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "Araba YÜKLÜ mü BOŞ mu: NG (A) \"The empty wagon\" / \"The wooden slatted cart is empty\" ↔ data/basyapitlar \"boş\" (uyumlu) ↔ data/eser_notlari Q2366825 \"saman yüklü araba\" (çelişkili).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "Akım: data/biyografiler \"natüralist akımın\" ↔ data/sanatcilar[129] \"Romantik\" ↔ WD P135 Romanticism (blog ref) ↔ BBC \"leaned more towards Romanticism than Realism\" ↔ AHIS \"now regarded as a Romantic painting\" ↔ Morante \"naturalismo molto accentuato\" (üslup).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S13",
+    "S1",
+    "S2",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "Salon numarası: NG güncel Room 40 ↔ NG 2009 arşiv Room 34. Zamansal değişim, hata değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "RA 1821 karşılaması: NG \"greeted favourably by reviewers… However, it did not sell\" ↔ AHIS \"not particularly well received… too radical\" ↔ BBC \"not an immediate success… too natural and too mundane\" ↔ data \"büyük ilgi görmedi\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S13",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C060",
+   "ifade": "(Çevresel) The White Horse konumu: NG güncel \"National Gallery of Art, Washington\" ↔ V&A 2009 \"New York, Frick Collection\". AYRI eser; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C061",
+   "ifade": "(Çevresel) Barrell yılı: NG Bibliography 1980 ↔ AHIS bibliyografya 1983. Kitaba erişilmedi; baskı farkı olabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C062",
+   "ifade": "V&A tam boy eskiz envanteri: güncel API 987-1900 (accessionYear 1900) ↔ 2009 arşiv \"987-1888\" ↔ 1909 \"No. 987\". Güncel kayıt esas; Vaughan 1900'de öldü (C074).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S18",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C063",
+   "ifade": "Kennard Haywain with Cruise Missiles tarihi: V&A (A) E.859-1994, Photograph, productionDates 1980, \"photographic collage, London, 1980\"; betim: arabada üç nükleer başlık + el bombalı askeri figür ↔ BBC (B) \"In 1983… Greenham Common\". Üretim yılı ↔ protesto yılı farkı olabilir; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S19",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "BBC 2024 fotoğraf altı: \"voted Britain's second greatest masterpiece in 2021, its bicentennial year\" — ayrı anket, örgütleyen/ayrıntı doğrulanmadı; 2005 ile karıştırılmamalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Willy Lott \"was said to have been born in the house and never to have left it for more than four days in his lifetime\" (atıfsız; 1909 varyantı 88 yaş).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S13",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "\"Willy Lott's Cottage still survives practically unaltered, but none of the trees in the painting exist today\" — atıfsız; ev kısmı NG ile A, ağaç kısmı doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "RA 1821 sergisinin yeri (Somerset House) ve ayı (Mayıs): enwiki atıfsız, itwiki Bravi (403); 1909 mektubu yalnızca \"goes to the Academy on the loth\" der.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S15",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "Araba DURUYOR mu GEÇİYOR mu + nedeni: AHIS durmuş (sulama/tekerlek şişirme) ↔ itwiki \"forse\" jant soğutma \"o magari\" dinlendirme ↔ NG audio \"probably headed towards this spot to ford the river\". Görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "Figür ayrıntıları: balıkçı NG \"a man in a black hat with a fishing rod\" ↔ itwiki \"un ragazzo… lanciando una lenza\" ↔ AHIS \"the red of the fisherman's outfit\"; iki işçi AHIS/1909/data \"riding/oturuyor\" ↔ NG audio pozisyon belirtmez. Görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S13",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "Boyanarak çıkarılan ön figürün kimliği: NG \"the horse and rider\" ↔ NGA \"the boy and horse\" ↔ V&A \"the figure on horseback\" ↔ 1909 \"the boy mounted on the drinking horse\". Silmede birleşir, kimlikte birleşmez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "itwiki/Bravi ayrıntıları (403): 70/150 gine, 15 Nisan 1824 sözleşme, rue de la Grange-aux-Belles No.1, Salon 24 Ağustos 1824 açılışı, klasikçi eleştiriler, Pichot/Nodier alıntıları. EK: itwiki \"Lascia andare il tuo Carro da fieno a Parigi…\" alıntısını Arrowsmith'a atfeder, 1909 kitap Fisher'ın mektubu olarak verir → atıf çelişkisi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S17",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C068",
+   "ifade": "\"painting is but another word for feeling\": alıntı V&A/AHIS'te var; data/biyografiler'in \"1821'de arkadaşı John Fisher'a\" atfı erişilen kaynaklarda doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C069",
+   "ifade": "Madalya zamanlaması: itwiki \"Salon si chiuse nel gennaio 1825 con la visita regia di Carlo X\" ↔ NG 1824 Salonu bağlamı; tören tarihi belirsiz. Stendhal: BBC İngilizce alıntı ↔ itwiki Journal de Paris 16 Ekim (Bravi); özgün metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S10",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C070",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda). Commons PD (PD-Art/PD-old-auto-expired/PD-old-100-expired/CC-PD-Mark); 6128×4226, 8.334.977 bayt; credit \"National Gallery, London via gallerix.ru\" (aggregator); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C071",
+   "ifade": "Erişilemeyen kaynaklar: Bravi academia.edu 403; Kay 1933 (JSTOR 865555), Parris & Fleming-Williams 1991 (s.203), Egerton 2000, Reynolds 1960/1973/1984, Wilcox 2007, Thornes 1999, Barrell, Bermingham, Bishop, Lyles 2006 — \"kaynakçada anıldı, metne erişilmedi\"; Art UK/RKDimages kimlikleri doğrulandı, sayfalar açılmadı; Met/NG eski CGI/gallerix/bloglar erişilmedi. EK: enwiki'nin Vaughan vasiyeti iddiasını 1909 oldandsold sayfasına atfetmesi — o sayfada ifade yok, atıf zinciri doğrulanamadı (vasiyet S18 ile A, C074).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17",
+    "S4",
+    "S2",
+    "S18",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C072",
+   "ifade": "data bulut KONUMU: \"soldaki koyu yağmur bulutuyla sağdaki parlak kümülüsler\" ↔ NG audio yön belirtmez (\"darkening in places… one ominous raincloud\"); AHIS \"clouds moving to the right… sun coming from the right\" (C). Görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q2366825 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2366825.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"The Hay Wain\" wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Hay%20Wain&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"Il carro da fieno\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Il%20carro%20da%20fieno&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "National Gallery, Londra",
+   "belge": "Katalog sayfası: Overview / In-depth / Audio transcript / Key facts / Provenance / Exhibition history / Bibliography / Frame (URL enwiki ref'inden bulundu)",
+   "url": "https://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı yeniden erişim 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery (arşiv)",
+   "belge": "Key facts — ölü URL'nin Wayback kopyası (2009-09-04; Room 34)",
+   "url": "https://web.archive.org/web/20090904004453/http://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain/*/key-facts",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2009-09-04)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url, size, extmetadata) — File:John Constable - The Hay Wain (1821).jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:John%20Constable%20-%20The%20Hay%20Wain%20(1821).jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&formatversion=2&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "National Gallery of Art, Washington (arşiv)",
+   "belge": "\"Constable's Great Landscapes: The Six-Foot Paintings\" — Early Six-Foot Stour River Paintings (Wayback 2016-03-04)",
+   "url": "https://web.archive.org/web/20160304033744/http://www.nga.gov/exhibitions/2006/constable/stour_river.shtm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2016-03-04)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Victoria and Albert Museum, Londra (arşiv)",
+   "belge": "C. M. Kauffmann, \"Constable's Studies for the Hay-Wain\" (1976, rev. 2006; Wayback 2009-07-26)",
+   "url": "https://web.archive.org/web/20090726125807/http://www.vam.ac.uk/collections/paintings/stories/Constable_Hay-Wain/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2009-07-26)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "BBC News",
+   "belge": "\"Turner wins 'great painting' vote\", 5 Eylül 2005",
+   "url": "https://news.bbc.co.uk/2/hi/entertainment/4214824.stm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "BBC Culture",
+   "belge": "D. Nicholls-Lee, \"Why the iconic English painting The Hay Wain … is not what it seems\", 10 Mayıs 2024",
+   "url": "https://www.bbc.com/culture/article/20240509-why-the-iconic-english-painting-the-hay-wain-by-john-constable-is-not-what-it-seems",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı yeniden erişim 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "BBC News",
+   "belge": "\"Constable's The Hay Wain attacked at the National Gallery\", 28 Haziran 2013",
+   "url": "https://www.bbc.co.uk/news/uk-england-london-23099594",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "CNN",
+   "belge": "O. Holland, \"Climate protesters glue themselves to 200-year-old masterpiece\", 5 Temmuz 2022",
+   "url": "https://edition.cnn.com/style/article/just-stop-oil-hay-wain-london-climate/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Art History in Schools (hayır kurumu)",
+   "belge": "\"John Constable's 'The Hay Wain' 1821\" PDF, 4 sayfa (pypdf ile metin çıkarıldı)",
+   "url": "https://static1.squarespace.com/static/5797f07bf5e231d942a26c72/t/5ca0b09de79c708fd52cf135/1554034848577/John+Constable+-+The+Haywain.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "francescomorante.it (arşiv)",
+   "belge": "F. Morante, \"Il carro di fieno\" (Wayback 2016-12-01; Windows-1252 bozuk karakterler)",
+   "url": "https://web.archive.org/web/20161201022428/http://www.francescomorante.it/pag_3/302da.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2016-12-01)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "oldandsold.com (arşiv; özgün yayın 1909)",
+   "belge": "\"John Constable - The Hay-Wain\" (Wayback 2010-08-25)",
+   "url": "https://web.archive.org/web/20100825010038/http://www.oldandsold.com/articles29/constable-7.shtml",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2010-08-25)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketleri (Q159297, Q296955, Q12321255, Q180788, Q191163, Q37068, Q19652, Q174728)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q159297%7CQ296955%7CQ12321255%7CQ180788%7CQ191163%7CQ37068%7CQ19652%7CQ174728&props=labels&languages=en%7Ctr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "academia.edu",
+   "belge": "G. O. Bravi, \"Divagazioni sul quadro di John Constable: Il carro da fieno …\" (2014) — itwiki'nin ana anlatı referansı",
+   "url": "https://www.academia.edu/15957971/Divagazioni_sul_quadro_di_John_Constable_Il_carro_da_fieno_The_Hay_Wain_1821_tra_Londra_e_Parigi_16_dicembre_2014_",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 — ERİŞİLEMEDİ (bot/oturum duvarı)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Victoria and Albert Museum, Londra (Collections API v2)",
+   "belge": "Güncel tam boy eskiz kaydı O81405 — \"Oil study for 'The Hay-wain'\", 987-1900",
+   "url": "https://api.vam.ac.uk/v2/museumobject/O81405",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (Denetim B'de ilk kez çekildi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Victoria and Albert Museum, Londra (Collections API v2)",
+   "belge": "Peter Kennard, \"Haywain with Cruise Missiles\", E.859-1994 (O220382)",
+   "url": "https://api.vam.ac.uk/v2/museumobject/O220382",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (Denetim B'de ilk kez çekildi)",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The White Horse",
+   "sanatci": "John Constable",
+   "kurum": "National Gallery of Art, Washington (NG güncel kaydı); V&A 2009 \"Frick Collection, New York\" der — ihtilaflı (C060)",
+   "mufredat_ici": false,
+   "gerekce": "Dizinin ilk \"six-footer\"ı (1819). NG, Hay Wain'deki sağ kayığın 1809 etüdünün bu eserde de kullanıldığını belirtir; malzeme ekonomisi ve dizi kronolojisi karşılaştırması.",
+   "kanit": [
+    "C013",
+    "C020",
+    "C060"
+   ]
+  },
+  {
+   "eser": "Return from the Harvest (araba için kara kalem etüt)",
+   "sanatci": "Peter Paul Rubens",
+   "kurum": "Staatliche Museen, Berlin",
+   "mufredat_ici": false,
+   "gerekce": "NG, Hay Wain'deki arabanın bu etüde \"very close\" olduğunu ve kompozisyon genişliğinin Rubens'in Het Steen'ine \"may owe something\" diyerek kuşkuyla bağlandığını kaydeder; Flaman/Hollanda ford geleneği karşılaştırması.",
+   "kanit": [
+    "C016",
+    "C076"
+   ]
+  },
+  {
+   "eser": "Köle Gemisi (The Slave Ship)",
+   "sanatci": "J. M. W. Turner",
+   "kurum": "Museum of Fine Arts, Boston",
+   "mufredat_ici": true,
+   "gerekce": "Müfredat içi Turner bağlantısı: aynı kuşak, zıt doğa temsili. NG, Turner'ın fabrika/buhar/lokomotiflerinin Constable'ın resimlerinde bulunmadığını açıkça söyler; BBC, Turner'ın Dido building Carthage (1815) ve Rain, Steam and Speed (1844) eserlerini karşıt örnek olarak anar.",
+   "kanit": [
+    "C029",
+    "C083"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — NG birincil katalog (S4) ve BBC Culture 2024 (S10) Denetim B turunda CANLI yeniden açıldı (200); NG1207/1821/130.2×185.4/Room 40/Vaughan 1886/Signed;Dated/empty wagon/leased and operated/upper third/Landscape: Noon/£250/Charles X/NG Archives/T. Fielder/provenans halkaları/sergi geçmişi anahtar dizgileri tek tek teyit edildi. V&A güncel Collections API kayıtları İLK KEZ çekildi: O81405 eskiz 987-1900 (2009 arşivinin 987-1888'i ile çelişir → C062 D), O220382 Kennard 1980 (BBC 1983 → C063 D). NGA 2006, V&A 2009, BBC 2005/2013, CNN 2022, AHIS PDF, Morante ve 1909 arşiv cache'leri yeniden okundu. Bravi academia.edu 403 (itwiki ana kaynağı) → itwiki ayrıntıları E/C. Kitaplar (Egerton 2000, Kay 1933, Parris 1991, Reynolds, Wilcox 2007, Thornes 1999) yalnız bibliyografyada; metne erişilmedi. Görsel metadata-only, İNCELENMEDİ → GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/eser_notlari.json Q2366825 \"saman yüklü araba\" ↔ NG (A) \"The empty wagon\" ve data/basyapitlar \"boş\" (C056, D). Düzeltme adayı; data DEĞİŞTİRİLMEDİ.",
+  "data/basyapitlar[72] + data/eser_ayrintilari[75] \"bulutlar tuvalin neredeyse yarısını kaplar\" ↔ NG audio (A) \"the upper third\" (C055, D). Düzeltme adayı.",
+  "data/biyografiler john-constable \"natüralist akımın\" ↔ data/sanatcilar[129] \"İngiliz Romantik manzara ressamı\" + BBC (B) Romantizm (C057, D). data içi tutarsızlık.",
+  "data/basyapitlar[72].ozgun = \"Saman Arabası\" (TR ad tekrarlanmış); NG tam adı \"The Hay Wain\", ilk sergi adı \"Landscape: Noon\". Özgün ad alanı düzeltme adayı.",
+  "data/basyapitlar[72] \"Barbizon Okulu'nu ve dolaylı olarak İzlenimcileri besledi\": erişilen A/B kaynaklarda yok, yalnız AHIS (C) destekli (C041). Seviye düşürme adayı.",
+  "data/basyapitlar[72] \"Tablo Londra'da büyük ilgi görmedi\": NG (A) olumlu eleştiri + satılmama ayrımı yapar (C059, D). Nüans notu adayı.",
+  "data \"Arabada iki adam oturuyor\": AHIS/1909 (C) destekli, NG audio pozisyon belirtmez (C065, E). Görsel incelenmedi.",
+  "data/biyografiler alıntısının \"1821'de arkadaşı John Fisher'a\" atfı erişilen kaynaklarda doğrulanmadı (C068, E). \"52 yaşında RA seçilene kadar\", \"1816 Wivenhoe Park\", \"1802 Dedham Vale\" bu turda doğrulanmadı (sanatçı düzeyi, kapsam dışı).",
+  "Envanter/boyut/teknik data'da YOK: NG1207 data/ genelinde geçmiyor; muze_numaralari.json kapsamı (Met/AIC/NGA/Cleveland/Rijks/YUAG) gereği NG Londra envanterini içermez — yokluk tasarım gereği, hata değil. kunye.json sanatçı düzeyinde; eser düzeyi künye yok.",
+  "Görsel zinciri tutarlı: commons dosyası → hash 34f36f95092ecbb1; gorsel_oranlari 1.45 ≈ 6128/4226. eserler_onbellek.gorseller[0].l (lisans) BOŞ string — Commons PD doğrulandı, doldurma adayı. kaynaklar [\"wikidata\"] — bu dosya NG birincil kaydını ekler.",
+  "Karıştırma riski: V&A tam boy eskiz AYRI nesne. Güncel V&A API 987-1900 (O81405), 2009 arşivi 987-1888 der (C062, D). Bosch Saman Arabası Triptiği (Q2213811) data'da ayrı anahtar; doğru ayrılmış. gunun_resimleri/yuruyus Constable için Cenotaph (Q3664409) kullanır — bağlam notu, hata değil.",
+  "Denetim B bulgusu: enwiki \"Vaughan vasiyetiyle eskiz South Kensington Museum'a\" iddiasını 1909 oldandsold sayfasına atfeder, o sayfada ifade YOK; güncel V&A kaydı vasiyeti doğrular (Vaughan ö. 1900). İddia doğru, atıf zinciri yanlış.",
+  "Denetim B bulgusu: Kennard \"Haywain with Cruise Missiles\" V&A'da 1980 (E.859-1994), BBC'de 1983 (C063, D). NG Frame \"bicentenary of the National Gallery in 2024\" der — tablonun 1821→2021 ikiyüzüncü yılı (BBC fotoğraf altı, C032 E) ile karıştırılmamalı.",
+  "Görsel İNCELENMEDİ (C070, E); credit \"National Gallery, London via gallerix.ru\" aggregator üzerinden, NG'nin kendi görüntü lisansı ayrıca çekilmedi. GZ TASLAK; insan editör görsel teyidi ZORUNLU."
+ ]
+}

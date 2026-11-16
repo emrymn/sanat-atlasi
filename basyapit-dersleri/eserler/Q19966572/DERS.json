@@ -1,0 +1,418 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q19966572",
+ "sanatci_id": "giulio-romano",
+ "baslik": "Aşk Sahnesi",
+ "ozgun_baslik": "The Lovers (Due amanti / Love Scene)",
+ "kunye": {
+  "sanatci": "Giulio Romano",
+  "sanatci_yasam": "1499–1546",
+  "tarih": "y. 1524–1525",
+  "tarih_belirsizlik": "it 1523–24 / en 1524–25 / WD 1525 (D)",
+  "teknik": "Yağlıboya, panodan tuvale aktarılmış (1834 Mitrokin)",
+  "boyut_cm": {
+   "yukseklik": 163,
+   "genislik": 337
+  },
+  "muze": "Hermitage Museum, San Petersburg",
+  "envanter": "ГЭ-223",
+  "edinim": "Reiffenstein/Jenkins → Catherine the Great (18.yy)",
+  "konum": "Hermitage",
+  "telif_durumu": "Kamu malı (Giulio ö.1546); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Giulio_Romano_-_The_Lovers_-_WGA09611.jpg",
+  "kaynak": "Wikimedia Commons (WGA)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "WGA09611",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C015); GZ TASLAK; kompozisyon K1/K2 metninden; erotik konu akademik açık ayrıntısız"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 363
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 769
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 1247
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilsiz-eser"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-erotik-resmin-alımlama-utancı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#4-kedi-ve-motif-tekrarı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-kimlik-okumaları-mitoloji--edebiyat--gündelik"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#3-kimlik-okumaları-mitoloji--edebiyat--gündelik"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-orijinallik-hermitage--berlin-kayıp-versiyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Hermitage künyesini (ГЭ-223, 163×337, panel→tuval) ikincil kaynakla doğrular; birincil sınırını beyan eder.",
+  "Erotik resmin alımlama utancı (1920) ↔ prestij (Catherine) gerilimini açıklar.",
+  "Başlık/kimlik okumalarını (mitoloji/edebiyat/gündelik) çoğul tutar.",
+  "Kedi motif tekrarı ve voyeur bakışı analiz eder.",
+  "Orijinallik (Berlin kayıp) ve tarih ihtilaflarını D olarak yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tentative title",
+   "tanim": "Kesin olmayan başlık; çok varyant (Gallant Scene/Boccaccio/Mars&Venus...).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "ad": "Kortizan",
+   "tanim": "Rönesans yüksek statülü eşlikçi; aksesuarlarla tanımlanır (yorum).",
+   "kanit": [
+    "C009",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Transfer (pano→tuval)",
+   "tanim": "1834 Mitrokin aktarımı; hasar riski.",
+   "kanit": [
+    "C001",
+    "C005"
+   ]
+  },
+  {
+   "ad": "Voyeur bakış",
+   "tanim": "Hizmetçi + izleyici = gizli üçüncü bakış.",
+   "kanit": [
+    "C014",
+    "C009"
+   ]
+  },
+  {
+   "ad": "Bas-relief",
+   "tanim": "Yatak spallierasındaki erotik kabartmalar; mitolojik çerçeve.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "enwiki: The Lovers/Two Lovers/Love Scene; Giulio Romano; oil on panel 1524–25, 1834 tuvale aktarıldı (Mitrokin); Hermitage.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "itwiki: 1523–24; 163 × 337 cm; olio su tavola→tela; Ermitage San Petersburg.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "WD: inv ГЭ-223; 163×337; 1525 circa; Hermitage.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih ihtilafı: 1523–24 (it) ↔ 1524–25 (en) ↔ 1525 (WD).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C005",
+   "ifade": "enwiki: kötü saklama + 1920'ye kadar konu nedeniyle sergilenmedi; hasar (3 kırık, ters yüzü kaba sıva, aktarım hasarı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Başlık tentative; çok ad: Gallant Scene (1773), Boccaccio, Mars&Venus, Alexander&Roxane (1958), Zeus&Alcimene, Hartt maid, Thornton courtesan.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "enwiki/itwiki: belki Federico II Gonzaga siparişi; Roma→Mantova geçişinden hemen önce; yer bilinmiyor.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "enwiki/itwiki: iki çıplak sevgili yatakta kucaklaşır; erotik bas-relifler (satyr+keçi, satyr+kadın)/mitolojik başlar; yeşil cibinlik altın işlemeli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "itwiki: kadın aksesuarları (altın bilezik, beyaz baş bandı, inci küpe)=kortizan; yaşlı hizmetçi kapıda izler (enwiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "enwiki/itwiki: yatak altında kedi; Madonna of the Cat (Capodimonte 1522–23) motif tekrarı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "enwiki: Vasari Vespasiano I Gonzaga; Milanese 1880 Berlin; 1920 Hermitage=orijinal Berlin=kopya; Berlin→Sanssouci 1930→Reinsberg 1942→kayıp.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "enwiki: Reiffenstein, Jenkins'ten Londra'da Catherine the Great için aldı; Hamilton 1780 \"koleksiyonun en iyisi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Yorum: kortizan kimliği aksesuar çıkarımı; erotik konu akademik çerçevede.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C014",
+   "ifade": "Yorum: kedi=evcil tanık/motif tekrarı; hizmetçi=üçüncü bakış (voyeur).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C015",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C016",
+   "ifade": "Hermitage birincil katalog URL bulunamadı/erişilemedi; refs Rusça katalog+monografi metinleri erişilmedi; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C017",
+   "ifade": "Orijinallik ihtilafı: Hermitage=orijinal (1920) ↔ Berlin=kopya; Milanese 1880 Berlin'i esas almıştı; Berlin kayıp.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C018",
+   "ifade": "itwiki: monumental boyut; yeşil cibinlik; spalliera mitolojik başlar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel kamu malı (Giulio Romano ö.1546); Commons PD.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Lovers (Giulio Romano) — Kustodieva/Lipgart/Neverov/Hartt/Thornton/Cassidy atıflı",
+   "url": "https://en.wikipedia.org/wiki/The_Lovers_(Giulio_Romano)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Due amanti",
+   "url": "https://it.wikipedia.org/wiki/Due_amanti",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q19966572 (ГЭ-223)",
+   "url": "https://www.wikidata.org/wiki/Q19966572",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Giulio Romano - The Lovers - WGA09611.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Giulio_Romano_-_The_Lovers_-_WGA09611.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K5",
+   "kurum": "Hermitage Museum",
+   "belge": "birincil katalog (hedef)",
+   "url": "(URL bulunamadı)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ; URL tahmin edilmedi",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Madonna of the Cat",
+   "sanatci": "Giulio Romano",
+   "kurum": "Capodimonte, Napoli",
+   "gerekce": "Kedi motif tekrarı (dinsel↔erotik).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "eser": "Bir Alegori",
+   "sanatci": "Bronzino",
+   "mufredat_ici": true,
+   "gerekce": "Mitolojik erotik gelenek karşılaştırması.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "eser": "Jüpiter ve Io",
+   "sanatci": "Correggio",
+   "mufredat_ici": true,
+   "gerekce": "Mitolojik birleşme karşılaştırması.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "en/it wikitext + WD yeniden okundu; künye/konu/provenance/hasar doğrulandı; birincil Hermitage URL bulunamadı (C016 E). Tarih (C004) ve orijinallik (C017) D olarak açık. Görsel K4 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C015); GZ TASLAK. Refs metinleri erişilmedi (C016). Erotik konu akademik açık ayrıntısız.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data 1525 ↔ it 1523–24/en 1524–25 (D, C004); circa korunmalı.",
+  "Boyut 163×337 data'da yok (C002).",
+  "Envanter ГЭ-223 data'da yok (C003).",
+  "Teknik: panel→tuval aktarım (1834); data güncellenmeli (C001).",
+  "Başlık tentative; data \"Aşk Sahnesi\" bir varyant (C006).",
+  "Görsel İNCELENEMEDİ (C015); GZ TASLAK; insan editör zorunlu."
+ ]
+}

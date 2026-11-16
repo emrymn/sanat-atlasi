@@ -1,0 +1,1157 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q94802",
+ "sanatci_id": "el-greco",
+ "baslik": "Orgaz Kontu'nun Gömülmesi",
+ "ozgun_baslik": "El entierro del señor de Orgaz (yaygın: El entierro del conde de Orgaz; en: The Burial of the Count of Orgaz)",
+ "kunye": {
+  "sanatci": "El Greco (Doménikos Theotokópoulos)",
+  "sanatci_yasam": "1541–1614",
+  "tarih": "1586–1588 (teslim: 1588 ilkbaharı)",
+  "tarih_belirsizlik": "D01: birincil teslim 1588 baharı + WGA/eswiki/Commons 1586–1588 ↔ Wikidata/infobox/DBE tek yıl 1586 (P571 ref DBpedia → bağımsız değil)",
+  "teknik": "Tuval (birincil + DBE açık); yağlıboya wiki/WGA kaynaklı (birincilde açıkça yok)",
+  "boyut_cm": {
+   "yukseklik": 480,
+   "genislik": 360
+  },
+  "muze": "Iglesia de Santo Tomé, Toledo",
+  "envanter": "Yok (birincil kayıtta numara yok; Wikidata P217 boş)",
+  "edinim": "1586 sipariş (Peder Andrés Núñez de Madrid, Concepción şapeli); 1588 ilkbaharı teslim; 1.200 duka (13.200 reales); parish mülkiyeti, in situ",
+  "konum": "Capilla de la Concepción (DBE/eswiki; birincil site \"capilla del señor de Orgaz\" der); 1975 restorasyonunda özgün konumundan sökülüp bugünkü yerine kondu",
+  "telif_durumu": "Kamu malı (El Greco ö. 1614; 100+ yıl pma); Commons 2 dosya PD-Art/PD-old-100-expired, atıf zorunlu değil"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Entierro_del_Conde_de_Orgaz.jpg",
+  "kaynak": "Wikimedia Commons (File:Entierro del Conde de Orgaz.jpg; itwiki infobox; data/gorsel_iyilestirme e3a7a09cffa62fac)",
+  "lisans": "Public domain (PD-Art + PD-old-100-expired + CC-PD-Mark; AttributionRequired: false)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (2 dosya); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2504×3117 (1.452.025 B) + 1316×1612 (1.380.374 B)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C080); GZ TASLAK; dosya oranları ≈0,803/0,816 ↔ kayıtlı 0,75 (C060/E12, çerçeve/kırpma olabilir); kompozisyon S7 (A) + S2/S3/S4/S9/S11 metninden; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 416
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1329
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3119
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaydın-tanıklığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-belge-zinciri",
+   "DERS_ILERI.md#3-kont-kim-biyografi-ve-unvan-anakronizmi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-biçim-ve-üslup-maniyerizmin-teolojisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#efsane-ve-kompozisyon-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#6-biçim-ve-üslup-maniyerizmin-teolojisi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-teşhis-belirsizlikleri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#2-tarih-ve-belge-zinciri"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#4-kompozisyon-modelleri-tartışması"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil Santo Tomé kaydıyla künyeyi (başlık, sözleşme, teslim, takdir, restorasyon) doğrular; tarih/boyut ihtilaflarını (D01/D04) yönetir.",
+  "İki bölgeli kompozisyonu, Deesis ve assumptio animae ikonografisini kaynak betimleri üzerinden analiz eder (görsel incelenmedi).",
+  "Karşı-Reform didaktizmi ile anakronizm stratejisini (çağdaş portreler, zırh, \"conde\" unvanı) ilişkilendirir.",
+  "Kompozisyon modelleri tartışmasını (Dormition ↔ İtalyan prototipler ↔ üç bölge) ve portre teşhislerinin kesinlik gradyanını yönetir.",
+  "Eserin alımlama tarihini (1588 → Pisa 1612 → 19. yy sonu yeniden keşif → Picasso/Einstein) ve in situ küratöryel durumunu izler."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Deesis",
+   "tanim": "İsa, Meryem ve Vaftizci Yahya'nın aracılık üçgeni; Ortodoks kompozisyon geleneği; Orgaz'ın gök bölümünün merkezi.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Assumptio animae",
+   "tanim": "Ruhun göğe alınışı; Philipp'in üç bölümlü okumasında orta bölüm; melek ruhu \"newborn, 'ethereal' baby\" olarak taşır.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Dormition (Koimesis)",
+   "tanim": "Meryem'in Uyumu; Bizans ikonografik tipi; Byron/Lambraki-Plaka'nın Orgaz kompozisyon modeli tezi, Wethey \"unconvincing\" diye reddeder.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "ad": "Maniyerizm",
+   "tanim": "16. yy üslubu: uzamış figürler, asidik renkler, ön plana sıkıştırma, derinlik reddi; eser geç Maniyerizm başyapıtı sayılır.",
+   "kanit": [
+    "C077",
+    "C065"
+   ]
+  },
+  {
+   "ad": "Señorío / condado",
+   "tanim": "Beylik / kontluk; Gonzalo Ruiz IV señor'du, conde unvanı aileye 1520/1522'de verildi; başlıktaki anakronizmin kökeni.",
+   "kanit": [
+    "C069",
+    "C024"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Santo Tomé kilisesinin resmî sitesinde \"El Entierro del Señor de Orgaz\" adıyla kayıtlı; kilise \"Parroquia del Greco\" olarak konumlanıyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sözleşme 15 Mart 1586'da imzalandı (birincil site \"Don Alonso\" ile El Greco arasında der).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İş uzadı; tablo 1588 ilkbaharında teslim edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "İlk takdir 1.200 duka (Luis de Velasco + Hernando de Nunciva); Consejo Arzobispal ilk fiyatın ödenmesine karar verdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Mucize 1583'te resmen tanındı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Latince epitafı Alvar Gómez de Castro yazdı (S9: 1570).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Kompozisyon iki dünyayı gösterir: altta yer/ölüm, üstte gök/sonsuz yaşam; ışık ve renkle ayrılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "1975'te I.C.R.O.A. tarafından restore edildi; özgün konumundan sökülüp bugünkü yerine kondu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Vasiyet yükümlülüğü: 2 koç, 16 tavuk, 2 tulum şarap, 2 yük odun, 800 maravedí.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Peder Andrés Núñez Madrid 1564'te Valladolid Chancillería'sında dava açtı; 1569'da kazandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Her iki Commons dosyası Public domain (PD-Art, PD-old-100-expired); atıf zorunlu değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Bitiş: 1587 sonu – 1588 ilkbaharı arası (Kagan 85–86; Lambraki-Plaka 75; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Ödeme: ilk (düşük) bilirkişi takdirini kabul, 13.200 reales (= 1.200 duka × 11; S7 ile tutarlı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Soldaki çocuk Jorge Manuel; cebindeki mendilde imza + 1578 (çocuğun doğum yılı) (Schroth 3).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "El Greco otoportresi: Santiago şövalyesinin kalkık elinin hemen üstünde (Lambraki-Plaka 78; WGA) → D08.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Aziz Augustinus, Toledo başpiskoposu Gaspar de Quiroga y Vela'nın özelliklerini taşır → E05.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Cennet bölümünde II. Felipe, henüz hayattayken betimlenir (Davies 70).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Üst merkez: Deesis (İsa + Meryem + Vaftizci Yahya üçgeni), Ortodoks geleneği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Kontun zırhı Greco dönemi çağdaşı; Titian'ın İspanyol kraliyet portrelerindeki tören kıyafetinden esinli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Karşı-Reform didaktik amacı: azizlere hürmet + iyi ameller → kurtuluş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Kompozisyon modeli tartışması: Byzantine Dormition (Byron, Lambraki-Plaka) ↔ Wethey \"unconvincing\", İtalyan prototipler → D10.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Philipp: eser üç bölümlü okunmalı; ortada assumptio animae (\"newborn, 'ethereal' baby\") → D10.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Gonzalo Ruiz, Palaiologos ailesinin soyundan → E10 (DBE: \"emparentado\", daha zayıf).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Gonzalo Ruiz: Toledo, c. 1260 – 9.XII.1323; Notario mayor de Castilla, mayordomo mayor de Fernando IV, ayo de Alfonso XI; 1296'da alcalde mayor de Toledo → D06.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "DBE tabloyu \"5 x 3,5 m\" ve \"(1586)\" olarak verir → D04, D01.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "DBE kaynakçası yayınlanmış sözleşmeyi \"18 de marzo de 1586\" tarihler (Protocolo de Juan Sánchez de Canales; San Román 1982, s. 156–160) — kaynakçada anıldı, metne erişilmedi → D02.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Başlık varyantları: \"señor de Orgaz\" (özgün/eswiki/birincil) ↔ \"conde de Orgaz\" (yaygın); Wikidata P1476 preferred es: \"El entierro del Conde de Orgaz\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Sanatçı El Greco (Q301); yaşam 1541–1614 (Wikidata).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Teknik: yağlıboya tuval (wiki infobox + WGA; birincilde yağ açıkça yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S11",
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Boyut 480 × 360 cm (WD refsiz + wiki + WGA) → D04.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "Koleksiyon/konum: Church of Santo Tomé, Toledo (Q3139146).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "İki bölgeli kompozisyon (gök/yer), kompozisyonla birleştirilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Tür: religious art, group portrait, catafalque portrait (WD P136 refsiz).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Eser kamu malı (ölümden 100+ yıl; WD P6216).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Efsane: Stefanos + Augustinus gökten inip kontu kendi elleriyle gömer.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Gonzalo Ruiz aslında \"conde\" değil, IV Señor de Orgaz; kontalık unvanı 1520'de Carlos V tarafından Álvaro Pérez de Guzmán y Mendoza'ya verildi → D07.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "WGA kataloğu: \"1586-88, Oil on canvas, 480 x 360 cm, Santo Tomé, Toledo\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C038",
+   "ifade": "(D01) Tarih: 1586 ↔ 1586–1588. S1 P571=1586 (precision 9, ref DBpedia Q465 → Wikipedia türevi, bağımsız değil); S2/S3 infobox=1586; S9 \"(1586)\"; S4 \"entre los años 1586 y 1588\"; S11 \"1586-88\"; S5 \"between 1586 and 1588\"; S7 teslim \"primavera de 1588\". P1480 yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S7",
+    "S9",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "(D02) Sözleşme günü: 15 ↔ 18 Mart 1586. S7+S4 \"15 de marzo\"; S2 \"Signed on 18 March 1586\"; S9 kaynakçası yayınlanmış protokol \"18 de marzo de 1586\" (San Román 1982). Arşiv yayın zinciri 18'i destekler; birincil site 15 der. Çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S4",
+    "S2",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "(D03) Sözleşme teslim şartı: Noel 1586 ↔ Noel 1587. S7+S4 \"Navidad de ese mismo año\"; S2 \"completion of the work by Christmas 1587\". Fiili teslim her iki durumda gecikmiş (1588 baharı).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S4",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "(D04) Boyut: 480×360 cm ↔ 5×3,5 m. S1 (refsiz)+S2/S3/S4+S11: 480×360; S9 (DBE/RAH): \"de 5 x 3,5 m\". Birincil sitede boyut YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S11",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "(D05) Mucize tarihi: 1323 (gömme günü) ↔ 1327 (nakil). S9 \"el milagroso entierro en 1323\"; S13 \"se obró el día del enterramiento\"; S2/S3: 1323; S4 \"en 1327, cuando se trasladaron los restos ... desde el convento de los agustinos\". DBE/belediye 1323'te birleşir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S13",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "(D06) Kontun görevleri: S2 \"mayor of the town of Orgaz\"; S3 DBE atıflı notario/mayordomo/precettore; S4 \"alcalde de Toledo y notario mayor del rey don Sancho el Bravo\"; S9 notario mayor Fernando IV döneminde, 1296 alcalde mayor de Toledo. Uyuşmaz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "(D07) Kontalık yaratılışı: 1520 ↔ 1522. S13 \"en el año 1520 ... Carlos V\" (17 Mayıs 1520); S4 \"la villa de Orgaz no fue condado hasta 1522\". \"Gonzalo Ruiz conde değildi\" ortak.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S13",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "(D08) Otoportre konumu/kesinliği: S2 \"directly above the raised hand of a knight of the Order of Santiago\"; S3 \"il personaggio al centro ... sarebbe lo stesso El Greco\" (koşullu); S4 \"encima de san Esteban ... A la derecha del fraile dominico. Es un autorretrato\" (iddialı). data/ ihtiyatlı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "(D09) İmza okunuşu/yeri: S4 mendil/kağıt «Domenico Theotocopuli 1578»; S2 mendilde imza+1578; S3 \"firmata in caratteri greci minuscoli: 'Doménikos Theotokópolis [sic] Epoíei'\" (yer yok, 1578 yok). [sic] aynen korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "(D10) Kompozisyon/etki yorumları: iki bölge ↔ üç bölge assumptio animae (Philipp); Dormition/Byzantine (Byron, Lambraki-Plaka) ↔ Wethey \"unconvincing\" (İtalyan: Rosso, Pontormo, Parmigianino, Tintoretto, Titian Entombment); S7 alt bölge \"estilo de la escuela flamenca\". Schroth ara pozisyon. Yorum ihtilafı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "(D11) Azizlerin giysileri: S2 \"golden and red vestments respectively\" (Augustinus altın, Stefanos kırmızı okunur); S7 Stefanos altın+kırmızı dalmatica (şehitlik), Augustinus altın mitra+casulla; S4 Stefanos dalmáticasında kendi şehitliği, Augustinus altın işlemeli piskopos giysisi. S2 \"respectively\" S7/S4 ile çelişir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "(E01) Ölüm yılı alternatifi: S4 \"Al morir el 9 de diciembre de 1323 (según otras fuentes en 1312)\"; S9 ölümü \"9 de diciembre de 1323, viernes, fiesta de santa Leocadia\" olarak sabitler.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "(E02) Birincil sitede sözleşme tarafı \"Don Alonso\": S7 \"un acuerdo entre Don Alonso y El Greco\"; diğer kaynaklarda peder Andrés Núñez de Madrid (+ mayordomo, S4). \"Don Alonso\" adı açıklanmıyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "(E03) Portre teşhisleri koşullu: S4 \"solo se puede afirmar con rotundidad la de dos o tres personajes\" (Jorge Manuel; Antonio de Covarrubias). Juan López de la Quadra \"Se cree\"; Diego de Covarrubias \"pudiera ser\" (†1577); Pedro Ruiz Durón \"Se cree\"; Rodrigo de la Fuente \"Parece que está demostrado\"; Cervantes/Manusso \"Algunos autores se atreven\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "(E04) Gök bölümü teşhisleri koşullu: S4 \"algunos autores han querido identificar al papa Sixto V, al arzobispo ... Quiroga o ... Juan Pardo de Tavera\"; soluk üçlü Magdalene/Marta/Lazarus \"podría ser\"; \"Otros hablan\" de ... san Sebastián.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "(E05) Quiroga benzerliği kesinliği: S2 \"bearing the characteristics of\" ↔ S4 \"Está demostrado que el rostro de San Agustín corresponde al del cardenal Quiroga\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "(E06) Wikidata P180 \"Francis of Assisi\" (Q676555): S1'de var; erişilen metinlerde destek yok (S4 adsiz \"franciscano\" keşiş). P180'de ayrıca El Greco (Q301) ve Jorge Manuel (Q3109427).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "(E07) Yalnızca birincil sitede geçen detaylar (çapraz doğrulanmadı): Petrus'a eşlik eden \"San Juan Evangelista\"; \"el claro reflejo del rostro de San Esteban en la armadura\"; \"las seis teas\"; \"Ya Goya y, después ... Picasso ... verían en el Greco al primer impresionista\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "(E08) eswiki bakım etiketi: S4 başında \"{{Referencias adicionales|t=20210406162239}}\" (2021-04-06: ek kaynak gerekli).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "(E09) Ruh temsili çerçevesi: S7 \"una especie de feto o crisalida ... unas nubes que asemejan un útero materno\"; S2 (Philipp) \"newborn, 'ethereal' baby\"; S4 \"figurada como un feto\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "(E10) Palaiologos bağı: S2 \"descendant of the noble Palaiologos family\" ↔ S9 \"emparentado con don Pedro Paleólogo\" (akrabalık, soy değil).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "(E11) Kitap okuyan din adamı tasviri: S2 Núñez \"reading (on the right)\"; S3 \"il vescovo all'estrema destra sfoglia il Libro dei Morti\"; S4 iki ayrı rahip (\"Cura con roquete\" sırtı dönük; \"Cura que celebra el responso\" siyah-altın capa pluvial).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "(E12) Commons en-boy oranı: 2504/3117 ≈ 0,803 ve 1316/1612 ≈ 0,816 ↔ kayıtlı 360/480 = 0,75; çerçeve/kırpma olabilir, doğrulanmadı (görsel incelenmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "(E13) Şapel mimarı: S4 \"proyectada probablemente por ... Nicolás Vergara el Mozo\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "(E14) data'daki \"yarı çıplak diz çökmüş Vaftizci Yahya\": erişilen kaynaklarda açıkça yazılı değil (Deesis'te var: S2/S7); WD P180 \"nudity\" (Q10791) S4'teki soluk üçlüdeki çıplak erkekle ilişkili olabilir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "(E15) WGA portre varsayımı: S11 \"presumably represent distinguished citizens of Al Greco's Toledo\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "Ani alımlama: 1588'de kalabalıklar Santo Tomé'ye akın etti; neden: Toledo ileri gelenlerinin gerçekçi portreleri; \"ruh aristokrasisine\" (din adamları, hukukçular, şairler, bilginler) saygı duruşu; Francisco de Pisa 1612: \"The people of our city never grow tired, because [...] there are realistic portraits of many notable men of our times.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Değerlendirmeler: geç Maniyerizm başyapıtı; \"one of the most truthful pages in the history of Spain\"; ilk tamamen kişisel eser, Toledo'daki ilk on yılın doruğu, olgun dönem + ruhsallaştırma/maddesizleştirme başlangıcı; Lambraki-Plaka \"the living encyclopedia of his art\"; Einstein (seyahat günlükleri, ed. Rosenkranz, 237): \"a magnificent painting\", \"among the profoundest images I have ever seen\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Sözleşme içeriği: alt bölge ikonografisi çok kesin, Gloria muğlak; eswiki alıntısı: alay, cenaze töreni yapan din adamları, Agustín+Esteban bedeni koyar (\"el uno teniéndolo de la cabeza y el otro de los pies\"), izleyen kalabalık, \"un cielo abierto de gloria\"; 100 duka peşinat (S4); malzeme sanatçıya ait (S2); Virgin yan şapeli (S2); Greco parish üyesi, yakında kirada (casas del marqués de Villena, S4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Takdir-ödeme kronolojisi (eswiki): Greco kendi değerlemesi 1200 duka \"sin la guarnición y el adorno\"; peder excessive buldu (Expolio 318 / San Mauricio 800 — birincilde de var); iki ressam 1700 duka retakdir; Consejo ilk fiyata döndü; Greco Papa'ya başvurmakla tehdit etti, vazgeçti; 30 Mayıs 1588 konsey kabul; 20 Haziran anlaşma; borç 1590'da kapatıldı. (C004 ile takdirci adları gerilimi → KANIT §5.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "1513 vasiyeti: Esteban Pérez de Guzmán, Santo Tomé'deki daha eski mucize tablosunun yeniden boyanmasını vasiyet etti (\"La pintura que estava en la dicha yglesia de Santo Tomé ... tórnese a pintar ...\"); Crespí de Valldaura, El Señorío de Orgaz 1220–1529, Apéndice I, doc. 266 (Toledo, 20 Ocak 1513) — eswiki'de alıntılandı, özgün belgeye erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "DBE biyografisi: Esteban Illán soyundan; Pedro Paleólogo'ya \"emparentado\"; IV señor de Orgaz; señorío: 1220'de Fernando Juanes de Alfarilla'nın Santo Tomé parishinden satın alması (S13: Fernando III merced'i — farklı anlatı); 1293–94 Sancho IV ayrıcalıkları; 1296 alcalde mayor de Toledo; Fernando IV döneminde notario mayor de Castilla y Andalucía; 1314 Alfonso XI mayordomo + infanta Beatriz vasisi; María de Molina destekçisi; Santo Tomé/San Bartolomé/Santos Justo y Pastor kiliseleri, San Esteban manastırı (1312), San Antón hastanesi kurucusu; 1300 civarı Santo Tomé restorasyonu; son köşeye gömülme vasiyeti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Kült aktarımı + Núñez kampanyası (DBE): Santo Tomás yortusu (21 Aralık) vakfı — kireç ocakları kirası, 40 yoksul, Augustinus vaızı mucizeyi anlatır (manastır 19. yy ortasına dek); Núñez papaz 1562–1601; \"Que no toquen manos de la tierra lo que han enterrado manos del cielo\"; 1550 temerrüt; 21 Ocak 1551 Blas de Ortiz kararı; 1564 sivil dava; 20 Mart 1569 Chancillería kesin; Real Ejecutoria 4 Mayıs 1569 (Archivo General Diocesano de Toledo, leg. 32 — kaynakçada, erişilmedi); 1570 epitaf; Concepción şapeli yenileme; tablo 4. adım; 2001 mezar yeniden görünür; 19. yy sonu \"yeniden keşif\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "Koruma + mekân (eswiki): şapel ölçeğinde özgün yerinden hiç ayrılmadı → mükemmel koruma; 1672 ilk temizlik; 19. yy ortası bakımsız/alttan desteksiz; 1943 sararmış vernik; 1975 ICROA + konum değişikliği + ziyaret alanı kesin ayrıldı (perdeler kaldırıldı); şapel Nuestra Señora de la Concepción, 16. yy yapısı \"probablemente\" Nicolás Vergara el Mozo (→E13); kilise 12. yy'da anılır, 14. yy başı Gonzalo Ruiz yeniden yapım, minareye çan kulesi (Mudéjar, San Román kopyası), 2000 restorasyonu; Luis Tristán'ın üç tuvali.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C072",
+   "ifade": "Türevler + modern alımlama: Jorge Manuel kopyası (c. 1625, Casa Profesa de Toledo; alt bölge; 1901'den beri Prado); Meléndez 1734 eskiz (Prado); Calleja nihai tablo (kayıp); Renau 1977 fotomontaj \"Retorno a la madre\" (IVAM); Picasso \"El entierro de Casagemas\" 1901 (iki bölümlü yer/gök; Mavi Dönem; Fermigier 1969: 32; itwiki Lemaire/Galluzzi); Picasso 1970 şiir kitabı \"El entierro del conde de Orgaz\" (önsöz Alberti; çeviri Carpentier); 1940 500 peset banknotu (S2); Gresham College dersi (26 Şubat 2008, Sutherland) Orgaz↔Guernica inanç bağlantısı (S2 dış bağlantı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "Kompozisyon birleştirme + renk (enwiki): iki bölge ayakta duran figürler, çeşitli katılımlar, meşaleler, haçla birleşir; alt bölgede ölçek/oran normal; siyah yas + altın işlemeli vestmentler → törensel karakter; gökte iridesan şeffaflıklar, fildişi griler, yaldızlı okrler; Meryem maphorion koyu mavi + parlak kırmızı; soyluların ölçülü sükûneti didaktik veya Bizans okuması.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C074",
+   "ifade": "Etki tartışması ayrıntıları (enwiki): Dormition ikonu 1983 Syros; Byron Bizans repertuvar; Wethey \"unconvincing\" — Rosso/Pontormo/Parmigianino ön plan sıkıştırma, Tintoretto Çarmıha Geriliş + Lazarus (yatay izleyici sırası), azizlerin eliptik grubu Titian erken Entombment; \"all of the action takes place in the frontal plane\"; Schroth: Titian didaktik model, Dürer Adoration of the Trinity iki bölge + laik figürler, Dormition assumptio için kabul, Tintoretto Son Yargı Gloria; Philipp: İspanyol cenaze sanatı + İsa'nın Gömülmesi uyarlaması; Augustinus Neoplatonik ruh yükselişi olası esin (Davies 70).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C075",
+   "ifade": "Sanatçı + kariyer (birincil): Doménikos Theotokópoulos \"El Greco\"; Kreta'da ikon ressamı; Venedik'te Tiziano atölyesi; Roma'da Michelangelo incelemesi; 1577 Toledo; çağdaş tanımı: \"hombre de hábitos e ideas excéntricos, tremenda determinación, extraordinaria reticencia y extrema devoción\"; peder \"şehirdeki en iyi ressamı\" seçti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C076",
+   "ifade": "Destek tuval: birincil \"un lienzo\", DBE \"una pintura en lienzo\"; \"yağlıboya\" birincil/DBE'de açıkça yok (wiki+WGA der → C029).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C077",
+   "ifade": "Biçimsel betim (eswiki): Maniyerist dil — uzamış figürler, güçlü bedenler, escorzos inverosímiles, parlak/asidik renkler, keyfi ışık-gölge; derinlik yok (zemin/arka plan yok; açık hava mı kripta mı belirsiz); gerçek boyut figürler; resim içinde resimler (Stefanos şehitliği dalmaticada; Augustinus capasında Paul/Santiago/Katarina; peder capa pluvial'de Santo Tomás + kafatası); kont parlak çelik zırh + zengin cenefas — kefen/mendikant habitü yerine \"como era en realidad\" (anakronizm); çocuk gala giysili (golilla); ışık üstte, altta \"giysilerden gelir\" (birincil: altı meşale → E07).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C078",
+   "ifade": "Yorum okumaları: eswiki — şövalyeler portiko sütunları, bulutlar üçgen fronton; \"İspanyol sanat tarihinin ilk kolektif portresi\" (eswiki nitelemesi); WGA — \"This peculiar synthesis of real and super-real is essential to El Greco's art\"; birincil — \"ölüm öbür yaşama bir doğumdur\" (teolojik okuma → E09).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4",
+    "S11",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C079",
+   "ifade": "Akademik metinler erişilmedi: Kagan 1982, Schroth 1982, Davies 1984, Philipp 1981, Byron 1929, Lambraki-Plaka 1999/2014, Wethey 1962, San Román 1982, Álvarez Lopera 2001, Calvo Serraller 1999, Crespí de Valldaura, Molénat, Moxó, Fermigier, Lemaire, Galluzzi, Einstein–Rosenkranz, Hagen, Tazartes, Maré, Baltés, Pisa 1605/1612, Alcocer 1554, Villegas 1587 vb. — yalnızca erişilen kayıtların bibliyografyalarında görüldü; DOI/ISBN doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C080",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnızca metadata + lisans + çözünürlük; 2 Commons dosyası PD; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C081",
+   "ifade": "Mucize anlatısı (birincil): Don Gonzalo'nun cenazesinde San Agustín ve San Esteban gökten inip onu kendi elleriyle mezara koydu; ses: \"tal galardón recibe quien a Dios y a sus santos sirve\"; Señor de Orgaz örnek iman yaşamının ödülü olarak iki aziz tarafından mezara bırakıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C082",
+   "ifade": "Envanter/katalog numarası yok: birincil site metninde numara geçmez; Wikidata P217 boş.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q94802 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q94802.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (46.736 B)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Burial of the Count of Orgaz wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Burial%20of%20the%20Count%20of%20Orgaz&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429; backoff sonrası 200 (23.402 B)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "La sepoltura del conte di Orgaz wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=La%20sepoltura%20del%20conte%20di%20Orgaz&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429; sonra 200 (4.198 B)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (es)",
+   "belge": "El entierro del conde de Orgaz wikitext",
+   "url": "https://es.wikipedia.org/w/api.php?action=parse&page=El%20entierro%20del%20conde%20de%20Orgaz&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (35.021 B); {{Referencias adicionales}} bakım etiketi (E08)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (2 dosya: url, size, extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:El%20Greco%20-%20The%20Burial%20of%20the%20Count%20of%20Orgaz.JPG%7CFile:Entierro%20del%20Conde%20de%20Orgaz.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429; sonra 200 (19.047 B); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Iglesia de Santo Tomé (resmî parish)",
+   "belge": "Ana sayfa",
+   "url": "https://santotome.org/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (280.074 B); santotome.org yönlendirmesi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Iglesia de Santo Tomé",
+   "belge": "\"El Greco\" sayfası (eser kaydı; #cuadro)",
+   "url": "https://santotome.org/el-greco/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (255.785 B; metin 10.135 kr)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Real Academia de la Historia (DBE)",
+   "belge": "Gonzalo Ruiz de Toledo biyografisi (canlı)",
+   "url": "https://dbe.rah.es/biografias/5496/gonzalo-ruiz-de-toledo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama JS kabuğu (5.635 B, metin yok); historia-hispanica.rah.es yönlendirmesi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "RAH / DBE",
+   "belge": "Gonzalo Ruiz de Toledo biyografisi (Wayback; yazar Demetrio Fernández González)",
+   "url": "http://web.archive.org/web/20241225040806/https://dbe.rah.es/biografias/5496/gonzalo-ruiz-de-toledo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (100.538 B); arşiv tarihi 2024-12-25",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Web Gallery of Art",
+   "belge": "Frameset (enwiki ref \"Web2\")",
+   "url": "http://www.wga.hu/frames-e.html?/html/g/greco_el/09/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2.332 B)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Web Gallery of Art",
+   "belge": "İçerik sayfası (frameset src çözümlemesi)",
+   "url": "https://www.wga.hu/html/g/greco_el/09/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (19.814 B)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Orgaz Belediyesi",
+   "belge": "El Señorío y Condado de Orgaz (canlı)",
+   "url": "http://www.villadeorgaz.es/orgaz-conde-introduccion.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 ×2, 0 B — erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Orgaz Belediyesi",
+   "belge": "El Señorío y Condado de Orgaz (Wayback)",
+   "url": "http://web.archive.org/web/20260809140242/http://www.villadeorgaz.es/orgaz-conde-introduccion.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (53.966 B); arşiv tarihi 2026-08-09",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümlemesi (28 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q296955|Q12321255|Q861259|Q3139146|Q19652|Q60332278|Q29940705|Q301|Q235113|Q3817176|Q201676|Q8018|Q161775|Q40662|Q676555|Q345|Q302|Q33923|Q3109427|Q34417|Q10791|Q2864737|Q1551015|Q24205322|Q3305213|Q465|Q8447|Q328",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429; sonra 200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Çarmıhtan İndiriliş (Deposition)",
+   "sanatci": "Jacopo Pontormo",
+   "kurum": "Santa Felicita, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Wethey, Orgaz kompozisyonunu erken Floransa Maniyeristlerine (Rosso, Pontormo, Parmigianino) bağlar: figürlerin ön plana sıkıştırılması, mekânsal derinliğin reddi.",
+   "kanit": [
+    "C021",
+    "C074"
+   ]
+  },
+  {
+   "eser": "Ornans'ta Cenaze (A Burial at Ornans)",
+   "sanatci": "Gustave Courbet",
+   "kurum": "Musée d'Orsay, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Laik karşıt: büyük ölçekli cenaze + çağdaş taşra portre galerisi; Orgaz'ın mucizevi/göksel ikiliği yerine tek düzlemli toplumsal gerçeklik.",
+   "kanit": [
+    "C077",
+    "C064"
+   ]
+  },
+  {
+   "eser": "Guernica",
+   "sanatci": "Pablo Picasso",
+   "kurum": "Museo Reina Sofía, Madrid",
+   "mufredat_ici": true,
+   "gerekce": "Gresham College dersi (S2 dış bağlantı, 26 Şubat 2008) Orgaz'ı Guernica'ya inanç sorusu üzerinden bağlar; Picasso'nun Orgaz alımlaması belgeli (Casagemas 1901; 1970 şiir kitabı).",
+   "kanit": [
+    "C072"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — S7/S6 birincil, S2/S3/S4 wikitext, S9 DBE (Wayback 2024-12-25), S11 WGA, S13 belediye (Wayback 2026-08-09), S1 Wikidata, S5 Commons ham cache'leri 2026-11-14'te yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md). Brief düzeltmeleri: şapel adı Concepción S7'de değil S9/S4'te (B); takdirci adları S7↔S4 gerilimli; señorío kökeni satın alma↔merced; alt ışık meşale↔giysi nüansları atıfla verildi. Görsel İNCELENEMEDİ (C080); GZ TASLAK. Refs metinleri erişilmedi (C079).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D01): data/basyapitlar özet \"1586–1588\" ↔ aynı kayıtta slayt \"1586\"; eserler_onbellek/ders_kaynaklari/yuruyus yil=1586 → data içi tutarsızlık; WD P571 ref DBpedia (bağımsız değil). Ders aralığı birincil teslimle esas alır.",
+  "İmza (D09): data \"mendilde imza + 1578\" S2/S4 uyumlu; S3 Yunanca okunuş (\"Doménikos Theotokópolis [sic] Epoíei\") 1578'i anmaz.",
+  "Takdirci gerilimi (YENİ): S7 (A) \"Luis de Velasco + Hernando de Nunciva 1.200 duka\" ↔ S4 (B) \"Greco kendi değerlemesi 1200; iki ressam 1700 retakdir\". Sonuç aynı, süreç anlatısı farklı; ders ikisini de atıfla verir.",
+  "Şapel adı atfı (YENİ düzeltme): brief künyesi \"capilla de la Concepción\"ı S7'ye atfeder; S7 yalnız \"capilla del señor de Orgaz\" der. Concepción adı S9 (DBE) + S4'te → B.",
+  "Otoportre (D08): data \"tartışmalıdır\" ihtiyatı doğru; üç wiki farklı konum/kesinlik verir.",
+  "Giysiler (D11): data \"Stefanos'un cüppesinde taşlanma\" S4/S7 uyumlu; S2 \"respectively\" gerilimli.",
+  "Kitap okuyan rahip (E11) + Vaftizci çıplaklığı (E14): data betimleri erişilen kaynaklarla tam örtüşmez; görsel teyit gerekli.",
+  "Señorío kökeni (YENİ): S9 satın alma (1220, parish'ten) ↔ S13 kraliyet merced'i (1220, Fernando III); S13 ideolojik tonlu — yalnız genealojik/hukuki bilgi atıfla kullanıldı.",
+  "Alt bölge ışığı (YENİ nüans): S7 \"altı meşale\" (E07) ↔ S4 \"ışık giysilerden gelir\"; betim farkı atıfla verildi.",
+  "Görsel: data iki farklı Commons dosyası kullanıyor (1316×1612 + 2504×3117) — hata değil; ikisi de PD (C011). İNCELENEMEDİ (C080); GZ TASLAK; insan editör görsel teyidi zorunlu.",
+  "Ad varyantı: data/eser_adlari_tr \"Gömülmesi\" ↔ WD tr label \"Gömülüşü\" (çeviri varyantı); özgün başlık señor↔conde (C027/C036/C044).",
+  "Envanter: P217 boş + birincilde numara yok → \"Yok\" (C082); uydurma numara üretilmedi."
+ ]
+}

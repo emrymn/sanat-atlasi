@@ -1,0 +1,245 @@
+{
+  "madde_id": "TEK-001",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (tek-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Fresk, duvar yüzeyine sıva hâlâ ıslakken uygulanan bir duvar resmi türüdür; terim İtalyanca 'taze' (fresco) sözcüğünden gelir ve pigmentler (genellikle) ıslak sıvaya uygulandığında boya duvarın kendisiyle kimyasal olarak bağlanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "A fresco is a type of wall painting. The term comes from the Italian word for fresh because plaster is applied to the walls while still wet.",
+      "pasaj_konum": "NG glossary girişi (tam metin)",
+      "belirsizlik_ifadeleri": ["Smarthistory teknik sözlüğünde '(usually) wet plaster'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K12"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak (TEK-001-K12, Smarthistory technique glossary, Wayback 2026-01-18): 'pigments are applied to (usually) wet plaster so that the painting becomes chemically bonded to the wall itself'. '(usually)' ihtiyatı iddia metninde '(genellikle)' olarak korunmuştur."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Her iki yöntemde de duvara ince sıva katmanları yayılır; sondan bir önceki katmana arriccio denir ve karton (tasarım) bunun üzerine çizilir; en üstteki çok düzgün katman intonaco'dur.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The penultimate layer is called the arriccio, and the cartoon is drawn on this. The final layer of very smooth plaster is called the intonaco.",
+      "pasaj_konum": "NG glossary (katman tanımları)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K02"],
+      "celisen_kaynaklar": [
+        "TEK-001-K11 (National Galleries of Scotland) pigmentin 'arricciato' adlı ıslak kireç/alçı katmanına uygulandığını söyler ve intonaco'yu 'bir günlük iş için serilen ıslak sıva' olarak tanımlar — katman adlandırmasında terminoloji farkı (çelişki değil, farklı adlandırma); akademik_tartismalar 1'de ele alındı.",
+        "TEK-001-K03 (Britannica) 'arriccio' terimini hiç kullanmaz, 'first two rough coats' der."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak (TEK-001-K02, Met/Heilbrunn, Wayback 2025-02-26): 'coated with a layer of coarse lime plaster, called arriccio'. NG/Met terminolojisi esas alındı; NGS varyantı madde metninde mutlaklaştırılmadı."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Buon freskte suyla inceltilmiş pigment ıslak intonaco üzerine uygulanır; sıva kururken kimyasal reaksiyon pigmenti sıvaya bağlar ve bu yöntem freski duvara bağlar; pigment parçacıkları kireç ve kum parçacıklarıyla birlikte bağlandığı/çimentolaştığı için renkler büyük kalıcılık kazanır — boya duvar yüzeyinin ayrılmaz parçasıdır, üstüne eklenmiş bir katman değildir; buna karşılık fresk neme karşı hassastır ve serin-nemli ortamda zarar görebilir, kuru Akdeniz iklimi korunması için elverişlidir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "In buon fresco the paint is applied to wet intonaco… This method bonds the fresco to the wall.",
+      "pasaj_konum": "NG glossary (buon fresco tanımı)",
+      "belirsizlik_ifadeleri": ["Met: 'may be damaged in a cool, damp environment'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K02", "TEK-001-K03", "TEK-001-K12"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C003 (buon fresco/kimyasal bağ), C013 (kalıcılık, 'integral part of the wall surface, rather than a superimposed layer') ve C014 (nem hassasiyeti) aday iddiaları tek iddiada birleştirildi. İkinci kaynak pasajları — TEK-001-K02 (Met, Wayback 2025-02-26): 'as the plaster dried, a chemical reaction bound the pigment to it'; 'Fresco is vulnerable to moisture and may be damaged in a cool, damp environment; the arid Mediterranean climate is favorable for its preservation.' TEK-001-K03 (Britannica, Wayback 2024-12-24): 'the pigment particles become bound or cemented along with the lime and sand particles. This gives the colours great permanence… they are an integral part of the wall surface, rather than a superimposed layer'. TEK-001-K12: 'chemically bonded to the wall itself'."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Duvara yalnız bir günde boyanabilecek kadar sıva sürülür; her günkü çalışma bölümüne giornata denir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "only as much plaster as can be painted in one day is spread on the wall… Each day's work is called a giornata.",
+      "pasaj_konum": "NG glossary (giornata tanımı)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K02", "TEK-001-K03", "TEK-001-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Dört bağımsız kaynak aynı tanımı verir — TEK-001-K02 (Met, Wayback 2025-02-26): 'sections known as giornate—Italian for \"a day's work\"'; TEK-001-K03 (Britannica, Wayback 2024-12-24): 'These sections are called giornate, a \"day's work.\"'; TEK-001-K04 (Cennini, Cap. LXVII, CANLI): 'quanto il dì puoi lavorare; chè quello che smalti, ti convien finire in quel dì'."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Fresco a secco'da boya kuru yüzeye (kurumuş buon fresco ya da kuru intonaco üzerine) uygulanır; tutkal veya yumurta sarısı gibi bir bağlayıcı gerektirir, daha az canlı renkler üretir, çok daha az dayanıklıdır ve boya zamanla dökülme eğilimindedir; Britannica'ya göre secco'da kuru, bitmiş duvarlar kireç suyuyla (limewater) ıslatılır ve nemliyken boyanır, renkler sıvaya nüfuz etmeyip yüzeyde film oluşturur; secco ince işçilik ve buon fresco rötuşu için uygundur.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Fresco",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/fresco",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "In fresco a secco the paint is applied dry…",
+      "pasaj_konum": "NG glossary (fresco a secco tanımı)",
+      "belirsizlik_ifadeleri": ["Met: 'the paint tends to flake off over time'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K02", "TEK-001-K11", "TEK-001-K03"],
+      "celisen_kaynaklar": [
+        "Tanım kapsamı farkı (çelişki değil): TEK-001-K01 'paint is applied dry' derken TEK-001-K03 kuru duvarın kireç suyuyla (limewater) ıslatılıp nemliyken boyandığını yazar. İki betim aynı uygulama ailesinin farklı ayrıntı düzeyleridir; iddia metninde Britannica nüansı açıkça kaynaklandırılarak korundu."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C005 ve C006 aday iddiaları tek iddiada birleştirildi. İkinci kaynak pasajları — TEK-001-K02 (Met, Wayback 2025-02-26): 'far less durable, as the paint tends to flake off over time'; TEK-001-K11 (NGS, Wayback 2025-09-28): secco 'demands a binding medium, such as glue adhesive or egg yolk… and produces less vibrant colours'; TEK-001-K03 (Britannica, Wayback 2024-12-24): 'dry, finished walls are soaked with limewater and painted while wet. The colours do not penetrate into the plaster but form a surface film… Secco is useful for detailed painting and for retouching true fresco.' Secco bağlayıcısı olarak yumurta sarısı bilgisi TEK-002 (yumurta temperası) ile çapraz bağın kurumsal dayanağıdır."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Mezzo fresco, neredeyse kuru intonaco üzerine yapılan, buon fresco ile secco arasında bir yöntemdir ve National Galleries of Scotland sözlüğüne göre İtalyan Rönesansı'nda özellikle yaygındı.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K11",
+      "kaynak_baslik": "National Galleries of Scotland — Glossary: Fresco",
+      "url": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/fresco",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-09-28"
+      },
+      "pasaj": "Mezzo fresco, by contrast, is made on a nearly dry intonaco and was particularly popular during the Italian Renaissance.",
+      "pasaj_konum": "NGS glossary, 'How is a Fresco Made?' bölümü",
+      "belirsizlik_ifadeleri": ["was particularly popular (dönem yaygınlığı iddiası kaynakta genelleme biçiminde)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Çelişen kaynak YOK; ancak TEK KURUMSAL KAYNAK: bu araştırmada açılan NG (TEK-001-K01), Britannica (TEK-001-K03) ve Met (TEK-001-K02) sayfalarında 'mezzo fresco' geçmiyor. Kural 7 gereği ikinci bağımsız kaynak uydurulmadı ve statü DOGRULANDI'ya yükseltilmedi."
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Kaynak doğrudan destek veriyor (destek_duzeyi DOGRUDAN_DESTEK); statünün KISMEN_DESTEKLENIYOR olmasının nedeni tek kurumsal kaynakla sınırlı doğrulamadır. Madde metninde 'National Galleries of Scotland sözlüğüne göre' atfı görünür biçimde korundu."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Sinopia, arriccio üzerine kırmızı toprak pigmentle çizilen ya da fırçalanan tasarım (alt çizim) aşamasıdır; sanatçılar kompozisyonu önce kömür ve sinopia ile taslaklar ve bileşimin tamamı giornata denilen bölümler hâlinde boyanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K02",
+      "kaynak_baslik": "The Metropolitan Museum of Art — Italian Painting of the Later Middle Ages (John Meagher, 2010)",
+      "url": "https://www.metmuseum.org/essays/italian-painting-of-the-later-middle-ages",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-02-26"
+      },
+      "pasaj": "on which the design was drawn or brushed in red earth pigment (sinopia)",
+      "pasaj_konum": "Met/Heilbrunn denemesi, 'Fresco' bölümü (canlı 429 → Wayback snapshot 20250226013953)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K11", "TEK-001-K04"],
+      "celisen_kaynaklar": [
+        "NG (Londra) sözlüğünde 'sinopia' girdisi YOKTUR (HTTP 404, 2026-11-15); tanım Met + NGS + Cennini'den kurulmuştur. Terimin hem kırmızı toprak pigmenti hem de alt çizim aşamasını adlandırması kaynaklarda örtüşür, çelişmez."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci kaynak pasajları — TEK-001-K11 (NGS, Wayback 2025-09-28): 'Artists first sketch out a composition in charcoal and sinopia onto the wet plaster'; TEK-001-K04 (Cennini, Cap. LXVII, CANLI): 'Poi togli un poco di sinopia senza tempera, e col pennello puntío sottile va' tratteggiando nasi, occhi e capellature…'."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Cennino Cennini (y. 1390) buon fresco harcını ve sürecini tarif eder: kireç iyice yağlı ve taze ise iki kısım kum–bir kısım kireç alınır, karışım suyla yoğrulup birkaç gün dinlendirilir, duvar süpürülüp iyice ıslatılır ve aynı gün çalışmak 'en sağlam tempera ve en iyi yöntem'dir; bazı pigmentler (orpimento, cinabro, azzurro della Magna, minio, biacca, verderame, lacca) freskte çalışılamaz ve secco'da kullanılır, freskte çalışılabilenler giallorino, bianco sangiovanni, nero, ocria, cinabrese, sinopia, verdeterra ve amatisto'dur; secco için iki bağlayıcı (tempera) verilir: yumurta akı ve sarısı ile incir sürgünü kesikleri ya da saf yumurta sarısı — 'bu tempera evrenseldir: duvarda, panelde, demirde'.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-001-K04",
+      "kaynak_baslik": "Cennino Cennini — Il libro dell'arte (Milanesi 1859 ed., Wikisource IT), Cap. LXVII ve Cap. LXXII",
+      "url": "https://it.wikisource.org/wiki/Il_libro_dell%27arte",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "se la calcina è ben grassa e fresca, richiede le due parti sabbione, la terza parte calcina… spazza bene prima il muro, e bagnalo bene… il lavorare in fresco, cioè di quel dì, è la più forte tempera e migliore",
+      "pasaj_konum": "Cap. LXVII (harç ve uygulama); Cap. LXXII (freskte çalışılamayan renkler ve secco tempera'ları)",
+      "belirsizlik_ifadeleri": [
+        "Treatise tarihi için Met 'composed about 1390' der; Cennini'nin yaşamı 'ca. 1370–ca. 1440' → madde 'y. 1390' ihtiyatını kullanır.",
+        "Aşırı tempera uyarısı: 'Se déssi troppa tempera… scoppierà il colore, e creperà dal muro'."
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C009 (harç/süreç), C010 (pigment sınırları) ve C011 (secco bağlayıcıları) aday iddiaları, aynı birincil kaynağın iki bölümünden geldiği için tek iddiada birleştirildi. Cap. LXXII pasajı: 'in fresco sono colori che non si può lavorare, come orpimento, cinabro, azzurro della Magna, minio, biacca, verderame, e lacca. Quelli che si può lavorare in fresco, sono giallorino, bianco sangiovanni, nero, ocria, cinabrese, sinopia, verdeterra, amatisto.'; 'La prima tempera, togli la chiara e rossume dell'uovo, metti dentro alcune tagliature di cime di fico… La seconda tempera si è propio rossume d'uovo; e sappi che questa tempera è universale, in muro, in tavole, in ferro'. Cennini'nin atölye terimleri (ör. verdaccio/verdetse) tanımlanmadan kullanılmadı. Pigment adlarının modern kimyasal karşılıkları için ayrı analiz kaynağı gerekir; bu madde o karşılıkları ileri sürmez. Bu reçete TEK-001 ↔ TEK-002 çapraz bağının kanıtıdır."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Fresk antik çağdan bilinir (Girit'te Knossos'ta Minos uygarlığı ve Roma'da Pompeii); İtalyan Rönesansı freskin büyük dönemidir (Cimabue, Giotto, Masaccio, Fra Angelico, Correggio, Michelangelo, Raphael); 16. yüzyıl ortasında kullanımı büyük ölçüde yağlıboyaya bırakılmış, 20. yüzyılda Diego Rivera ve diğer Meksikalı duvar ressamlarınca kısa süreli canlandırılmıştır; freskleri duvardan ayırıp yeni bir taşıyıcıya aktarma tekniği en azından 16. yüzyıldan beri bilinmektedir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-001-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — fresco painting",
+      "url": "https://www.britannica.com/art/fresco-painting",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-24"
+      },
+      "pasaj": "it was used as early as the Minoan civilization (at Knossos on Crete) and by the ancient Romans (at Pompeii). The Italian Renaissance was the great period of fresco painting… By the mid-16th century, however, the use of fresco had largely been supplanted by oil painting. The technique was briefly revived in the 20th century by Diego Rivera…",
+      "pasaj_konum": "Britannica, tarihsel gelişim bölümü (canlı denenmedi, proje kaydı: 403 → Wayback snapshot 20241224193520)",
+      "belirsizlik_ifadeleri": ["largely been supplanted", "briefly revived"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C012 (tarihsel gelişim) ve C015 (duvardan ayırma/aktarma) aday iddiaları tek tarihsel iddiada birleştirildi. İkinci kaynak (TEK-001-K01, NG glossary, CANLI): 'The technique for detaching frescoes and transferring them to a new support has been known since at least the 16th century.' — 'since at least' ihtiyatı iddiada 'en azından' olarak korundu. 'largely' ve 'briefly' ihtiyatları madde metninde 'büyük ölçüde' ve 'kısa süreli' olarak korundu."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Sistina Şapeli tavanı bir fresk döngüsüdür: II. Julius 8 Mayıs 1508 tarihli sözleşmeyle Michelangelo'ya tavanı sipariş etti (ilk tasarı pandantiflerde on iki havari idi, sanatçının talebiyle tam program serbestliği verildi); tavanın ilk yarısı Ağustos 1510'da bitmişti ve tamamı 31 Ekim 1512'ye kadar tamamlandı (Papa 1 Kasım'da şapelde ayin kutladı); National Gallery sözlüğüne göre Michelangelo tavanı Eski Ahit sahneleriyle freskledi ve 'Son Yargı' 1535–1541 arasında mihrap üstü duvara yapıldı; Britannica Sistina'daki bu resimleri 'tüm fresklerin en ünlüsü' olarak anar.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-001-K06",
+      "kaynak_baslik": "Vatican Museums (Musei Vaticani) — Sistine Chapel, Ceiling (Volta)",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta.html",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "On 8 May 1508, the artist signed the contract which foresaw the painting of twelve apostles… completed the first half of the Ceiling… in August 1510. The work must have been completed by 31 October 1512, as the Pope celebrated Mass in the Chapel on 1 November.",
+      "pasaj_konum": "Vatican Museums, Sistine Chapel 'Ceiling' sayfası",
+      "belirsizlik_ifadeleri": [
+        "'must have been completed by' (tamamlanma tarihi çıkarımdır)",
+        "'quite likely… cooperation of the theologians' (programın ilahiyatçı katkısı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-001-K07", "TEK-001-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C016 (sözleşme/tarihler) ve C017 (fresk döngüsü nitelendirmesi + Son Yargı) aday iddiaları birleştirildi. Vatican resmî sayfası tekniği ANMAZ; 'fresk' nitelendirmesi ikinci kaynaklardan gelir — TEK-001-K07 (NG glossary 'Sistine Chapel', CANLI): 'In 1508 Pope Julius II ordered Michelangelo to paint the ceiling, which he frescoed with scenes from the Old Testament… Michelangelo's \"Last Judgement\" was painted on the end wall above the altar between 1535 and 1541.'; TEK-001-K03 (Britannica, Wayback 2024-12-24): 'Michelangelo's paintings in the Sistine Chapel… are the most famous of all frescoes'. Tavanın belirli bölümlerinin secco olduğu yönünde erişilen kaynaklarda kanıt YOKTUR; bu nedenle eser-bölgesi teknik iddiası kurulmadı."
+    }
+  ]
+}

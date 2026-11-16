@@ -1,0 +1,575 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q94802",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "El Greco'nun bu tablosu bugün nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Iglesia de Santo Tomé, Toledo (in situ)"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "C",
+     "metin": "Toledo Katedrali"
+    },
+    {
+     "harf": "D",
+     "metin": "El Escorial"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil parish kaydı eseri Santo Tomé'de belgeler; tablo 1588'den beri bu kilisededir (C001, C071).",
+   "yanlis_gerekceleri": {
+    "B": "Prado'da Jorge Manuel'in c. 1625 tarihli kopyası bulunur (1901'den beri); asıl tablo değil (C072).",
+    "C": "Toledo Katedrali'nde Expolio vardır; takdir karşılaştırmasında anılan 318 dukalık eser oradadır (C067).",
+    "D": "El Escorial'da San Mauricio vardır; 800 dukalık karşılaştırma eseridir (C004, C067)."
+   },
+   "kanit": [
+    "C001",
+    "C071"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil Santo Tomé sitesine göre sözleşme hangi tarihte imzalandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "15 Mart 1586"
+    },
+    {
+     "harf": "B",
+     "metin": "18 Mart 1586"
+    },
+    {
+     "harf": "C",
+     "metin": "21 Aralık 1586"
+    },
+    {
+     "harf": "D",
+     "metin": "30 Mayıs 1588"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"El 15 de Marzo de 1586 se firmaba un acuerdo entre Don Alonso y El Greco\" (C002).",
+   "yanlis_gerekceleri": {
+    "B": "18 Mart, enwiki'nin ve yayınlanmış protokolün (San Román 1982) tarihidir; birincil sitenin değil — ihtilaflı (C026, C039).",
+    "C": "21 Aralık, Santo Tomás yortusudur (vakıf günü); sözleşme günü değil (C070).",
+    "D": "30 Mayıs 1588, konseyin temyizden vazgeçişi kabul ettiği gündür (C067)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil siteye göre tablo ne zaman teslim edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1588 ilkbaharı"
+    },
+    {
+     "harf": "B",
+     "metin": "Noel 1586"
+    },
+    {
+     "harf": "C",
+     "metin": "1586 yazı"
+    },
+    {
+     "harf": "D",
+     "metin": "1590"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"El trabajo se alargó por más tiempo, entregándose en primavera de 1588\" (C003).",
+   "yanlis_gerekceleri": {
+    "B": "Noel 1586 sözleşmedeki teslim şartıdır (birincil/eswiki); fiili teslim değil (C040).",
+    "C": "1586 tek yılı infobox/DBE geleneğidir; teslim tarihi değil (C038).",
+    "D": "1590, borcun kapatıldığı yıldır (C067)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablo için nihayetinde ödenen tutar nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1.200 duka (ilk takdir; 13.200 reales)"
+    },
+    {
+     "harf": "B",
+     "metin": "1.700 duka"
+    },
+    {
+     "harf": "C",
+     "metin": "318 duka"
+    },
+    {
+     "harf": "D",
+     "metin": "800 duka"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Consejo Arzobispal ilk takdirin ödenmesine karar verdi (C004); enwiki 13.200 reales olarak aktarır (C013).",
+   "yanlis_gerekceleri": {
+    "B": "1.700 duka, eswiki'ye göre iki ressamın yeniden takdiridir; kabul edilmedi (C067).",
+    "C": "318 duka, Expolio'nun fiyatıdır; karşılaştırma için anılır (C004, C067).",
+    "D": "800 duka, El Escorial'deki San Mauricio'nun fiyatıdır (C004, C067)."
+   },
+   "kanit": [
+    "C004",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Efsaneye göre kontu kendi elleriyle mezara koyan iki aziz kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aziz Stefanos ve Aziz Augustinus"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Petrus ve Aziz Paulus"
+    },
+    {
+     "harf": "C",
+     "metin": "Vaftizci Yahya ve Meryem"
+    },
+    {
+     "harf": "D",
+     "metin": "Aziz Dominicus ve Aziz Franciscus"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil site: \"bajaron del cielo San Agustín y San Esteban para enterrarlo\" (C081); mucize 1583'te resmen tanındı (C005).",
+   "yanlis_gerekceleri": {
+    "B": "Petrus gök bölümünde anahtarlarla betimlenir; Paulus da gök figürlerindendir — gömen azizler değil (C077, C081).",
+    "C": "Meryem ve Vaftizci Yahya, Deesis üçgeninde aracılık figürleridir; gömme sahnesinde değiller (C018).",
+    "D": "Dominiken ve Fransisken keşişler izleyici sırasındadır (eswiki); gömen azizler değil (C077)."
+   },
+   "kanit": [
+    "C081",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "enwiki'ye göre soldaki çocuğun cebindeki mendilde ne yazılıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sanatçının imzası ve 1578 (Jorge Manuel'in doğum yılı)"
+    },
+    {
+     "harf": "B",
+     "metin": "1586 (sözleşme yılı)"
+    },
+    {
+     "harf": "C",
+     "metin": "1323 (mucize yılı)"
+    },
+    {
+     "harf": "D",
+     "metin": "1588 (teslim yılı)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Schroth 3): mendilde sanatçının imzası ve 1578 — çocuğun doğum yılı (C014).",
+   "yanlis_gerekceleri": {
+    "B": "1586 sözleşme yılıdır; mendildeki tarih değil (C002).",
+    "C": "1323 geleneksel gömme yılıdır; mendille ilgisi yok (C042).",
+    "D": "1588 teslim yılıdır; mendildeki tarih değil (C003)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Gök bölümünün merkezindeki üçgen kompozisyon hangi gelenektendir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Deesis (İsa + Meryem + Vaftizci Yahya; Ortodoks)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kutsal Aile"
+    },
+    {
+     "harf": "C",
+     "metin": "Pentikost"
+    },
+    {
+     "harf": "D",
+     "metin": "Son Akşam Yemeği"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"the traditional Orthodox composition of the Deesis\" — İsa, Meryem ve Vaftizci Yahya üçgeni (C018).",
+   "yanlis_gerekceleri": {
+    "B": "Kutsal Aile (İsa/Meryem/Yusuf) bu eserin konusu değil; merkezde yargıç İsa ve aracılık figürleri var (C018).",
+    "C": "Pentikost (Kutsal Ruh'un inişi) betimlenmez; üst bölüm Yargı ve ruhun kabulü sahnesidir (C066).",
+    "D": "Son Akşam Yemeği farklı bir ikonografidir; bu eser bir cenaze mucizesidir (C081)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Gök bölümünde, henüz hayattayken betimlenen hükümdar kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "II. Felipe"
+    },
+    {
+     "harf": "B",
+     "metin": "V. Carlos"
+    },
+    {
+     "harf": "C",
+     "metin": "III. Felipe"
+    },
+    {
+     "harf": "D",
+     "metin": "I. Isabel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 (Davies 70): II. Felipe, henüz hayattayken gök bölümünde betimlenir (C017).",
+   "yanlis_gerekceleri": {
+    "B": "V. Carlos, kontalık unvanını veren kraldır (1520); betimlenen hükümdar değil (C036).",
+    "C": "III. Felipe bu eserde anılmaz; kaynaklar II. Felipe'yi işaret eder (C017).",
+    "D": "I. Isabel dönemi eserin tarihinden öncedir; erişilen kaynaklarda geçmez."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1975'te esere ne yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "ICROA restorasyonu; özgün konumundan sökülüp bugünkü yerine kondu"
+    },
+    {
+     "harf": "B",
+     "metin": "Prado'ya taşındı"
+    },
+    {
+     "harf": "C",
+     "metin": "Kiliseye satıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yangından kurtarıldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: 1975'te I.C.R.O.A. restorasyonu + \"fue desmontado de su emplazamiento original\" (C008).",
+   "yanlis_gerekceleri": {
+    "B": "Eser Santo Tomé'den hiç ayrılmadı; Prado'daki Jorge Manuel kopyasıdır (C071, C072).",
+    "C": "Tablo zaten parish siparişiydi; 1975'te satış değil restorasyon ve yer değişikliği oldu (C008).",
+    "D": "Erişilen kaynaklarda yangın kaydı yok; 1975 işlemi bilimsel çalışma sonrası restorasyondur (C008, C071)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Gonzalo Ruiz'in vasiyeti gereği Orgaz halkı her yıl parish'e ne verirdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2 koç, 16 tavuk, 2 tulum şarap, 2 yük odun, 800 maravedí"
+    },
+    {
+     "harf": "B",
+     "metin": "2 sığır, 16 tavuk, 2 tulum şarap, 2 yük odun, 800 duka"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız 800 maravedí"
+    },
+    {
+     "harf": "D",
+     "metin": "2 koç, 8 tavuk, 2 tulum şarap, 2 yük odun, 800 maravedí"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"2 carneros, 16 gallinas, 2 pellejos de vinos, 2 cargas de leña y 800 maravedíes\" (C009); eswiki \"8 pares de gallinas\" (=16) ile uyumlu.",
+   "yanlis_gerekceleri": {
+    "B": "Hayvan koçtur (carneros), sığır değil; para maravedí'dir, duka değil (C009).",
+    "C": "Vasiyet yalnız para değil ayni yükümlülükler de içerir (C009).",
+    "D": "Tavuk 16'dır: eswiki \"8 pares de gallinas\" der, 8 çift = 16; 8 eksik sayımdır (C009)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, yapıldığı kilisede (Santo Tomé, Toledo) kalmıştır; başka bir koleksiyona taşınmamıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: in situ; 1975'te yalnız şapel içindeki konumu değişti (C001, C071, C008).",
+   "kanit": [
+    "C001",
+    "C071"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil siteye göre tablo, sözleşmedeki Noel 1586 tarihinde teslim edildi.",
+   "dogru": false,
+   "aciklama": "Yanlış: Noel 1586 teslim şartıydı; iş uzadı, 1588 ilkbaharında teslim edildi (C003).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Sözleşme, alt bölgenin ikonografisini ayrıntılı biçimde belirliyordu; üst bölge (Gloria) muğlak bırakılmıştı.",
+   "dogru": true,
+   "aciklama": "Doğru: eswiki sözleşme metnini aktarır; Greco üst bölgeyi kendi kurgusuyla tamamladı (C066).",
+   "kanit": [
+    "C066"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "enwiki'ye göre Aziz Augustinus, Toledo başpiskoposu Gaspar de Quiroga y Vela'nın özelliklerini taşır.",
+   "dogru": true,
+   "aciklama": "Doğru: S2 (Lambraki-Plaka 76, 78); eswiki \"Está demostrado\" der — kesinlik derecesi kaynaklara göre değişir (C016, C053).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eserin boyutu bütün kaynaklarda aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: wiki/WGA 480×360 cm, DBE \"5 x 3,5 m\" verir (C025); birincil sitede boyut yok (C041).",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilaflarını (D01/D02/D03) kaynak hiyerarşisiyle analiz edin: hangi kaynak ne diyor, Wikidata P571 neden bağımsız kanıt sayılmaz?",
+   "beklenen_ogeler": [
+    "1586 ↔ 1586–1588",
+    "15 ↔ 18 Mart 1586",
+    "Noel 1586 ↔ Noel 1587",
+    "P571 ref DBpedia → Wikipedia türevi",
+    "birincil teslim 1588 ilkbaharı"
+   ],
+   "kanit": [
+    "C038",
+    "C039",
+    "C040",
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Kompozisyon modelleri tartışmasını (Dormition ↔ İtalyan prototipler ↔ üç bölge) ana hatlarıyla yazın; Schroth'un ara pozisyonunu belirtin.",
+   "beklenen_ogeler": [
+    "Syros 1983 Dormition",
+    "Byron Bizans repertuvar",
+    "Wethey \"unconvincing\"",
+    "Titian Entombment eliptik grup",
+    "Philipp assumptio animae",
+    "Schroth Dürer/Tintoretto/Dormition"
+   ],
+   "kanit": [
+    "C021",
+    "C022",
+    "C047",
+    "C074"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Portre teşhislerinde kesinlik gradyanını tartışın: kimler kesin, kimler koşullu? Otoportre konumu neden tartışmalı?",
+   "beklenen_ogeler": [
+    "Jorge Manuel + mendilde 1578",
+    "Antonio de Covarrubias",
+    "\"Se cree\" / \"pudiera ser\" / \"Algunos autores se atreven\"",
+    "üç farklı otoportre konumu (S2/S3/S4)",
+    "görsel teyit gerekli"
+   ],
+   "kanit": [
+    "C014",
+    "C051",
+    "C045",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Karşı-Reform didaktizmi ile anakronizm stratejisi arasındaki ilişkiyi açıklayın.",
+   "beklenen_ogeler": [
+    "azizlere hürmet + iyi ameller → kurtuluş",
+    "çağdaş Toledo portreleri",
+    "16. yy cenaze alayı",
+    "zırh ↔ kefen anakronizmi",
+    "\"conde\" ↔ \"señor\" unvan anakronizmi"
+   ],
+   "kanit": [
+    "C020",
+    "C066",
+    "C077",
+    "C036"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kaynak eleştirisi: belediye sayfasının ideolojik tonu ve señorío kökeni anlatıları (satın alma ↔ kraliyet merced'i) nasıl yönetilmeli?",
+   "beklenen_ogeler": [
+    "S13 eleştirel ton",
+    "1220 iki anlatı (DBE satın alma ↔ belediye merced)",
+    "atıfla kullanma, tek versiyon dayatmama",
+    "1520 ↔ 1522 kontalık yılı",
+    "\"Ruiz conde değildi\" ortak sonucu"
+   ],
+   "kanit": [
+    "C036",
+    "C069",
+    "C044"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İki bölgeyi (alt: yer/ölüm; üst: gök/sonsuz yaşam) ve aradaki ruh taşıyan meleği bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: birincil site \"iki dünya\"; ortada assumptio animae — meleğin taşıdığı ruh (Philipp, S2).",
+   "kanit": [
+    "C007",
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Bedeni mezara indiren iki azizi bulun: sözleşmeye göre biri baştan, öteki ayaklardan tutar.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: sözleşme metni (eswiki); Stefanos solda, Augustinus sağda (eswiki).",
+   "kanit": [
+    "C081",
+    "C066"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Soldaki çocuğu ve cebindeki mendili/kağıdı bulun (imza + 1578).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Jorge Manuel; mendilde imza ve doğum yılı (Schroth, S2).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Gök bölümünde Deesis üçgenini (İsa/Meryem/Vaftizci Yahya) ve II. Felipe'yi arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Ortodoks Deesis (S2); II. Felipe sağda, henüz hayattayken (S2/S4).",
+   "kanit": [
+    "C018",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Alt ve üst bölgeler arasındaki ışık/renk farkını ve iki bölgeyi birleştiren haçı inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: alt siyah-grı (meşaleler/giysiler), üst ışıklı; sağda haç (S7/S2).",
+   "kanit": [
+    "C007",
+    "C073"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "El Greco (Doménikos Theotokópoulos); El entierro del señor/conde de Orgaz; teslim 1588 ilkbaharı (1586–1588; tek yıl 1586 tartışmalı); tuval (yağlıboya wiki/WGA); 480×360 cm (DBE 5×3,5 m tartışmalı); Santo Tomé Toledo, in situ; envanter yok; PD.",
+   "kanit": [
+    "C075",
+    "C003",
+    "C076",
+    "C025",
+    "C001",
+    "C082",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + mucize?",
+   "arka": "Gonzalo Ruiz de Toledo (†1323; IV Señor de Orgaz, conde değil); Stefanos + Augustinus gökten inip kendi elleriyle gömer; \"tal galardón recibe quien a Dios y a sus santos sirve\"; mucize 1583'te tanındı; 1323 ↔ 1327 tartışmalı.",
+   "kanit": [
+    "C081",
+    "C005",
+    "C024",
+    "C069"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sözleşme + ödeme?",
+   "arka": "15 Mart 1586 (birincil; yayınlanmış protokol 18 Mart); alt bölge kesin, Gloria muğlak; 100 duka peşinat; Noel 1586/1587 şartı; teslim 1588 baharı; 1.200 duka = 13.200 reales; 1700 retakdir; 1590'da kapatıldı.",
+   "kanit": [
+    "C002",
+    "C066",
+    "C003",
+    "C004",
+    "C013",
+    "C067"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Kompozisyon + ikonografi?",
+   "arka": "İki bölge (yer/gök) kompozisyonla birleşir; Deesis üçgeni; assumptio animae (melek + ruh); II. Felipe hayattayken; Jorge Manuel + mendilde 1578; otoportre konumu tartışmalı.",
+   "kanit": [
+    "C007",
+    "C018",
+    "C022",
+    "C017",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Alımlama?",
+   "arka": "1588 kalabalıkları; Pisa 1612 portre övgüsü; 19. yy sonu yeniden keşif (DBE); Jorge Manuel kopyası (Prado); Picasso Casagemas 1901 + 1970 şiir kitabı; Einstein \"en derin imgeler\"; 1940 500 peset banknotu.",
+   "kanit": [
+    "C064",
+    "C070",
+    "C072",
+    "C065"
+   ]
+  }
+ ]
+}

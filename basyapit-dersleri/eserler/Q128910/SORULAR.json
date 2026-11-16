@@ -1,0 +1,542 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q128910",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin formatı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Duvar resmi (mural), refectory uç duvarı"
+    },
+    {
+     "harf": "B",
+     "metin": "Taşınabilir tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Minyatür"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: mural, end wall of dining hall.",
+   "yanlis_gerekceleri": {
+    "B": "Tuval değil; duvar.",
+    "C": "Pano değil; duvar.",
+    "D": "Minyatür değil; 460×880 duvar."
+   },
+   "kanit": [
+    "C003",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Teknik?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tempera on gesso/pitch/mastic, duvar sıvası"
+    },
+    {
+     "harf": "B",
+     "metin": "Gerçek fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: tempera on gesso/pitch/mastic on plaster (not true fresco).",
+   "yanlis_gerekceleri": {
+    "B": "Gerçek fresk değil; tempera-on-plaster.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Tempera on gesso/pitch/mastic, duvar sıvası.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Tempera on gesso/pitch/mastic, duvar sıvası."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Boyut (enwiki)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "460 × 880 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "700 × 880 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "207 × 209 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "167 × 61 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: 460×880 cm.",
+   "yanlis_gerekceleri": {
+    "B": "700×880 WD değeridir (D, ihtilaflı).",
+    "C": "207×209 Holbein Elçiler.",
+    "D": "167×61 Cranach panel."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Patron kim?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ludovico Sforza (Milano Dükü)"
+    },
+    {
+     "harf": "B",
+     "metin": "Francesco I"
+    },
+    {
+     "harf": "C",
+     "metin": "Henry VIII"
+    },
+    {
+     "harf": "D",
+     "metin": "Papa II. Julius"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: commissioned by Ludovico Sforza.",
+   "yanlis_gerekceleri": {
+    "B": "Francis I Holbein Elçiler bağlamıdır.",
+    "C": "Henry VIII Holbein bağlamıdır.",
+    "D": "Julius II Raphael/Michelangelo bağlamıdır."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Konu hangi an?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İhanet duyurusundan sonraki tepki anı"
+    },
+    {
+     "harf": "B",
+     "metin": "Eucharist kurumu"
+    },
+    {
+     "harf": "C",
+     "metin": "Çarmıha geriliş"
+    },
+    {
+     "harf": "D",
+     "metin": "Diriliş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: moment after Jesus announces betrayal (Gospel John).",
+   "yanlis_gerekceleri": {
+    "B": "Eucharist kurumu değil; tepki anı.",
+    "C": "Çarmıh karşı duvarda (Montorfano).",
+    "D": "Diriliş doğru yanıt değildir; doğru yanıt İhanet duyurusundan sonraki tepki anı."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Judas nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Grubun içinde, Peter'in önünde"
+    },
+    {
+     "harf": "B",
+     "metin": "Masanın öte yanında"
+    },
+    {
+     "harf": "C",
+     "metin": "Kapıda"
+    },
+    {
+     "harf": "D",
+     "metin": "Yok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Judas situated in front of Peter (within group).",
+   "yanlis_gerekceleri": {
+    "B": "Geleneksel öte-yan değil; Leonardo içeride koydu.",
+    "C": "Kapıda doğru yanıt değildir; doğru yanıt Grubun içinde, Peter'in önünde.",
+    "D": "Var; grubun içinde."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Son restorasyon hangi yıl tamamlandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1999"
+    },
+    {
+     "harf": "B",
+     "metin": "1784"
+    },
+    {
+     "harf": "C",
+     "metin": "1890"
+    },
+    {
+     "harf": "D",
+     "metin": "1557"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: last restoration completed 1999.",
+   "yanlis_gerekceleri": {
+    "B": "1784 Cranach atıf envanteri.",
+    "C": "1890 Holbein NG edinimi.",
+    "D": "1557 Lomazzo yazısı."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Müze yönetimi (2024'ten)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pinacoteca di Brera"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan Müzeleri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: transferred to Pinacoteca di Brera (Dec 2024).",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi Cranach/Titian kurumu.",
+    "C": "Louvre Metsys kurumu.",
+    "D": "Vatikan Michelangelo/Raphael kurumu."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Karşı duvardaki fresk?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Montorfano Crucifixion"
+    },
+    {
+     "harf": "B",
+     "metin": "Leonardo başka bir Last Supper"
+    },
+    {
+     "harf": "C",
+     "metin": "Masaccio Vergi Parası"
+    },
+    {
+     "harf": "D",
+     "metin": "Giotto Ağıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: opposite wall Montorfano Crucifixion.",
+   "yanlis_gerekceleri": {
+    "B": "Leonardo başka Last Supper yapmadı orada.",
+    "C": "Masaccio Brancacci'de.",
+    "D": "Giotto Scrovegni'de."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Christ yüzü hakkında Lomazzo/Zenale ne der?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tamamlanmış"
+    },
+    {
+     "harf": "C",
+     "metin": "Silinmiş"
+    },
+    {
+     "harf": "D",
+     "metin": "Yeniden boyanmış"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Zenale advised leave Christ face unfinished.",
+   "yanlis_gerekceleri": {
+    "B": "Tamamlanmış değil; bitirmeme tavsiyesi.",
+    "C": "Silinmiş doğru yanıt değildir; doğru yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez).",
+    "D": "Yeniden boyanmış doğru yanıt değildir; doğru yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser gerçek fresk tekniğiyle yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): tempera on gesso/pitch/mastic on plaster; true fresco değil.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser Santa Maria delle Grazie yemek salonu uç duvarındadır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Konu, ihanet duyurusundan sonraki tepki anıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2, Gospel John).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Orijinal yüzey büyük ölçüde korunmuştur.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): orijinalden çok az kaldı; çok restorasyon, son 1999.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Müze, koruma için kontrollü ziyaretçi erişimi ve hava işleme uygular.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tempera ↔ fresk teknik karşıtlığını ve bozulma nedenselliğini yazın.",
+   "beklenen_ogeler": [
+    "oil yavaş/revizyon",
+    "chiaroscuro",
+    "Cennini riskli",
+    "nem/bozulma",
+    "Montorfano fresk dayanıklı"
+   ],
+   "kanit": [
+    "C004",
+    "C012",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "1999 restorasyonunun \"orijinal\" sorunuyla ilişkisini tartışın.",
+   "beklenen_ogeler": [
+    "orijinal çok az",
+    "yeniden-yorum",
+    "removable malzeme",
+    "aura bağlama kayar"
+   ],
+   "kanit": [
+    "C018",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Judas'ın \"içeriden\" konumunu geleneksel ikonografiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "gelenek öte-yan",
+    "Leonardo içeride/gölge",
+    "içsel kötülük",
+    "psikolojik gerçekçilik"
+   ],
+   "kanit": [
+    "C009",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Sforza ölümsüzlük iddiası ↔ malzeme kırılganlığı gerilimini yazın.",
+   "beklenen_ogeler": [
+    "mozole planı",
+    "armalar/aile figürleri",
+    "tempera çürüdü",
+    "kalıcılık başarısızlığı"
+   ],
+   "kanit": [
+    "C006",
+    "C011",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Veri hatalarını (1490, fresk, 700×880) kaynaklarla düzeltin.",
+   "beklenen_ogeler": [
+    "y.1495–98",
+    "tempera-on-plaster",
+    "460×880",
+    "WD ihtilafları D"
+   ],
+   "kanit": [
+    "C022",
+    "C015",
+    "C014"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İsa'yı merkezde ve üçerli havari gruplarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: tek noktalı perspektif İsa'nın başında.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Judas'ı Peter'in önünde, gölgede arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Judas grubun içinde.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Tavan kirişleri ve duvar panolarının perspektif çizgilerini izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: derinlik İsa'ya odaklanır.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Lunette'lerdeki Sforza armalarını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: hanedan projesi.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Yüzeydeki bozulma/restorasyon izlerini fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: orijinal çok az; 1999 restorasyon.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Il Cenacolo/Last Supper; Leonardo; y.1495–98; tempera on gesso/pitch/mastic on plaster; 460×880; Santa Maria delle Grazie refectory Milano; müze Brera yönetimi.",
+   "kanit": [
+    "C003",
+    "C004",
+    "C005",
+    "C001"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kompozisyon?",
+   "arka": "İhanet duyurusu sonrası tepki (Yuhanna); İsa merkez + üçerli 4 grup; Judas içeride Peter önü; tek noktalı perspektif.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik trajedi?",
+   "arka": "Tempera (oil yavaş/revizyon/chiaroscuro için); Cennini riskli; nem/bozulma; orijinal çok az; son restorasyon 1999.",
+   "kanit": [
+    "C004",
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Patron + bağlam?",
+   "arka": "Ludovico Sforza mozole planı (perhaps Bramante); lunettes armalar; karşı duvar Montorfano Crucifixion + Sforza tempera figürleri.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Koruma rejimi?",
+   "arka": "Museo del Cenacolo Vinciano; Brera yönetimi (2024); hava işleme + kontrollü erişim + rezervasyon; HD viewer.",
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  }
+ ]
+}

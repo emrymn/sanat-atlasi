@@ -1,0 +1,792 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q140161127",
+ "sanatci_id": "daniele-da-volterra",
+ "baslik": "Çarmıhtan İndiriliş",
+ "ozgun_baslik": "Deposizione dalla Croce (Descent from the Cross / The Deposition)",
+ "kunye": {
+  "sanatci": "Daniele Ricciarelli, gen. Daniele da Volterra",
+  "sanatci_yasam": "1509–1566 (Vasari; enwiki \"c. 1509\")",
+  "tarih": "sözleşme 1 Aralık 1541; icra c. 1545 (tartışmalı)",
+  "tarih_belirsizlik": "İcra yılı kaynaklarda değişken: 1541/1543/c.1545/1545 (D1); circa korundu; 1541 sözleşme yılıdır",
+  "teknik": "Fresk; 19. yy başında stacco ile tuval desteğe aktarıldı (C; teknik etiketi ihtilaflı D3)",
+  "muze": "Trinità dei Monti, Roma (Cappella Bonfil)",
+  "envanter": "Yok (erişilen kaynaklarda envanter numarası bulunamadı)",
+  "edinim": "Özgün Cappella Orsini sunağı; 19. yy başı stacco ile taşındı; bugün Cappella Bonfil",
+  "konum": "Cappella Bonfil (Cappella della Discesa dalla Croce); özgün Cappella Orsini",
+  "telif_durumu": "Kamu malı (PD-old-100; PD-Art-YorckProject; sanatçı ö. 1566)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Daniele_da_Volterra_002.jpg",
+  "kaynak": "Wikimedia Commons (The Yorck Project 2002, DIRECTMEDIA)",
+  "lisans": "Public domain (PD-old-100 + PD-Art-YorckProject)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo extmetadata); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2024×2997 px; 4.288.515 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C044/C045); GZ TASLAK; erişilen kaynaklarda kompozisyon betimi yok; repo betimleri doğrulanmadı (C046); restorasyon öncesi/sonrası durumu belirsiz (C045)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 441
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1379
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2785
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-kronoloji"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi--sınırlı",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi--sınırlı",
+   "DERS_ILERI.md#4-üslup-son-yargı-ile-yüzleşme"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-şapel-programı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-fresk--stacco--tuval"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil (S9) + akademik (S10) kaynaklarla künyeyi (sanatçı, konu, güncel/özgün konum, sözleşme) doğrular.",
+  "İcra tarihi (D1), teknik (D3) ve Michelangelo çizim (D2) ihtilaflarını yönetir; circa ihtiyatını korur.",
+  "Fresk→stacco→tuval nesne biyografisini ve restorasyon anlatısını kaynak sınırlarıyla açıklar.",
+  "Şapel programını (Cespedes, Dupredo) ve ikonografik yerinden edilmeyi analiz eder.",
+  "Kaynak hiyerarşisini (Vasari çarpıtması, atıfsız wiki, basın, WD importu) eleştirir; görsel sınırı beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Deposition (İndiriliş)",
+   "tanim": "İsa'nın bedeninin çarmıhtan indirildiği, crucifixion ile gömme arasındaki sahne.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Stacco",
+   "tanim": "Freski sıva katmanıyla birlikte duvardan ayırıp başka bir desteğe aktarma tekniği.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Maniyerizm",
+   "tanim": "16. yüzyılda Yüksek Rönesans dengesi yerine etki ve gerginlik peşinde koşan üslup.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Paragone",
+   "tanim": "Resim ile heykelin karşılaştırılması tartışması; Orsini stucco rölyefleri bu alana açılır (yorum).",
+   "kanit": [
+    "C042"
+   ]
+  },
+  {
+   "ad": "Braghettone",
+   "tanim": "\"Doncu\"; Daniele'nin Son Yargı çıplaklarını örtme işi ve takıldığı lakap.",
+   "kanit": [
+    "C035"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Daniele Ricciarelli, gen. Daniele da Volterra; Volterra doğumlu 1509 (Vasari; enwiki \"c. 1509\"), Roma'da 4 Nisan 1566'da öldü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Başlık: \"Deposizione dalla Croce\" (S9) / \"The Deposition\" (S3) / \"Descent from the Cross\" (S5); tr \"Çarmıhtan İndiriliş\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Güncel konum: Trinità dei Monti, Roma, Cappella Bonfil (Cappella della Discesa dalla Croce).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Özgün konum: Cappella Orsini, sunak için (\"destinata all'altare\"; \"originariamente dipinta nella Cappella Orsini\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sözleşme: 1 Aralık 1541, Orsini şapeli freskleri (Hirst 1967 atıf zinciri; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "İcra tarihi ihtilafı (D1): \"circa 1545\" (S5/S6) ↔ \"1545\" (S11) ↔ \"1543\" (S6 liste) ↔ \"1541\" (S1 P571 precision 9 / S4 / S8). 1541 sözleşme yılıdır; icra kesinleşmiyor; circa korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S5",
+    "S6",
+    "S8",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C007",
+   "ifade": "Teknik tarihi (aktarım): fresk; 19. yy başında Orsini şapelinin çökmesi sonrası Pietro Palmaroli stacco ile duvardan ayırıp tuval desteğe aktardı (dipinto mobile); erken sistematik stacco; intervention sonradan zararlı. Basın + atıfsız liste; akademik birincil teyit yok.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C008",
+   "ifade": "Teknik etiketi ihtilafı (D3): \"fresco\" (S1/S4) ↔ \"canvas\" (S7) ↔ \"affresco staccato\" (S6) ↔ stacco+tuval (S11); aynı nesnenin farklı durumları.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S6",
+    "S7",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C009",
+   "ifade": "Michelangelo ilişkisi: dostluk/işbirliği; DBI: Son Yargı ile ilk yüzleşenlerden, geç Raffaello mannerına dayanarak \"con indipendenza\"; \"pittura monumentale, severa e meditata\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Doğrudan çizim tezi ihtilafı (D2): S5 \"after drawings by Michelangelo\" (atıfsız) + S9 \"schizzi … allievo\" ↔ S6 \"ipotesi oggi rigettata\" (Ciardi/Moreschini 2004, erişilmedi) + S10 bağımsızlık vurgular.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S5",
+    "S6",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C011",
+   "ifade": "Yan freskler (Caduta/Natività) + volta (Dört Evangelist, Meryem sahneleri): Paolo de Cespedes (İspanyol), 1570–1577.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "S7 ayrıca Cesare Arbasia'yı sayar (\"flanking … Céspedes and Cesare Arbasia\"); cümle ATIFSIZ → doğrulanmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C013",
+   "ifade": "Voltadaki Kral Davud + Peygamber Daniel: Ludovico Dupredo, \"intorno al 1820\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Restorasyon anlatısı: 2002'den itibaren incelemeler (Colette Di Matteo, Angela Negro, Vatikan Müzeleri Gabinetto Ricerche Scientifiche); Adriano Luzi + Luigi de Cesaris; 3 yıl; halka dönüş 12 Şubat 2005. Basın.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C015",
+   "ifade": "Restorasyon yılı ihtilafı (D5): S5 \"restoration in 2004\" ↔ S11 12 Şubat 2005 halka dönüş. Kesin bitiş tek değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C016",
+   "ifade": "Maniyerist başyapıt statüsü: S8 \"unanimemente … vertici del Manierismo\" (ATIFSIZ); S11 \"capolavoro del primo Manierismo\"; S3 kategori \"Mannerist religious paintings\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Telif: kamu malı (sanatçı ö. 1566; PD-old-100; PD-Art-YorckProject; UsageTerms \"Public domain\"; WD P6216=Q19652).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Boyut: erişilen HİÇBİR kaynakta yok (S1 P2048/P2049 yok; S4 Dimensions boş; S9/S10/S11 yok) → doğrulanamadı (E2).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Konu: İsa'nın çarmıhtan indirilişi (Deposition); dini sanat (WD P180=Q302, P921=Q13365963, P136=Q2864737; başlık S9/S10).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Kilise: Trinità dei Monti, Pincio tepesi, İspanyol Merdivenleri üstü; Fransız krallarının himayesi (1494 Charles VIII, Minimi, Francesco di Paola); \"la chiesa romana dei Re di Francia\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Kilise inşası 1502 (Louis XII); 1828 Sacré-Cœur; 2016 Emmanuel Topluluğu (Vatikan–Fransa anlaşması).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Konsekration ihtilafı (Denetim B): S7/S8 \"1585 (Sixtus V)\" ↔ S9 \"1594\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "Kilise bugün 17 şapel (XVI. yy patron aileleri); \"straordinaria testimonianza del manierismo romano\"; gotik başlangıç (Narbonne taşı, Lippi + Caronica); 1774 Pannini volta değişikliği.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Özgün Orsini şapeli bugün \"Cappella Elena Orsini o Cappella dell'Immacolata Concezione\": merkez Immacolata Filippo Veit 1830 (Nazaren); yanlar Annunciazione/Visitazione Tunner atf. (y. 1830).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Güncel \"Cappella Orsini\" adı başka şapeli (sağda 4.) gösterir: Paris Nogari Passion (ante 1575), Pallière Flagellazione 1817, Sormani anıtları.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Şapel/konum etiketleme ihtilafı (D4): S4 Location=\"Orsini chapel\" ↔ S9 güncel Bonfil/özgün Orsini ↔ S7 \"second chapel on the left\" ↔ S8 \"una delle prime cappelle a sinistra\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S9",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Elena Orsini 1545'te dotasyona girdi; duvar freskleri ikonografisi adı azize Helena'ya yöneldi; 1548'e dek tamamlandı (1 Nisan 1548 endüljans belgesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Orsini girişimi için çok sayıda hazırlık çalışması günümüze ulaştı (Davidson 1967; Hirst 1967 — kaynakçada, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "1545 tarihli Madonna con Bambino tra i ss. Pietro e Paolo (Volterra, Museo Diocesano) heykelsi plastisizm + kübik mekânla Orsini sonuçlarına giriş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Madonna con Bambino, s. Giovannino e s. Barbara (Siena, d'Elci koleksiyonu) \"una prova pittorica prossima alla Deposizione\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Kariyer: Volterra erken freskleri (Palazzo dei Priori 1532/34; Maffei cephe 1534–35); Roma'ya Peruzzi ile; Perino del Vaga çevresi; 1541 Accademia di San Luca; S. Marcello al Corso volta (1540–43); Palazzo Massimo gens Fabia frizi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Della Rovere şapeli (Trinità dei Monti): 1548–1560 Daniele + öğrencileri; Assunzione \"opera manierista del secondo periodo\"; Presentazione; Strage degli Innocenti Michele Alberti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Della Rovere ayrıntı: olayı gösteren havariye Michelangelo'nun yüzü (Teylers Museum cartonetto inv. A 21); Vasari ~14 yılda tamamlandı; volta Tibaldi/Pino, lunetler Becerra/Rossetti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Sala Regia: 28 Kasım 1547 Paolo III, Perino'nun ölümüyle; Vasari'ye göre Michelangelo desteği belirleyici; 1549 papa ölümüyle kesildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Braghettone: 21 Ocak 1564 Trento; 1564 yazı iskele; Son Yargı çıplaklarını örtme (1565); \"braghettone\" lakabı; Borghini eleştirisi; seçim Michelangelo'ya saygıdan; S6: örtme tümüyle kaldırmayı önledi; 1565 sonu Pio IV ölümüyle kesildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Michelangelo ölüm döşeğinde Daniele'yi yanına istedi (14/18 Şubat 1564 mektupları); Daniele + Tommaso dei Cavalieri, Macel de' Corvi stüdyo envanteri; Vasari'ye mektup; Leonardo'dan ev kiralama.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Michelangelo bronz portreleri (11 Haziran 1564, Leonardo Buonarroti siparişi); biri Casa Buonarroti başı inv. 61; ölüm maskesinden büst (S5/S6).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "II. Henri atlı anıtı: Caterina de' Medici Michelangelo'dan istedi; Daniele 1560 Ruberto Strozzi sözleşmesi; yalnız at tamamlandı; sonra XIII. Louis heykelinde (Place Royale); Fransız Devrimi'nde eritildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Alımlama: S5 \"grouped with Raphael's Transfiguration and … Last Communion of St. Jerome by Domenichino as the most famous pictures in Rome\" (ATIFSIZ; EB1911 kökenli).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C040",
+   "ifade": "Etki: S11 \"Barrocci [Barocci], Caravaggio, Poussin, Bernini … si sono ispirati\"; \"described and copied many times\"; yaratıldığından beri başyapıt. Basın.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C041",
+   "ifade": "Vasari biyografisi (1568) temel kaynak ama Michelangelo ilişkisi yüzünden \"scoperto malanimo\" ile çarpıtılmış (DBI).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Orsini stucco rölyefleri: ikisinden biri Michelangelo'yu Sokrates kılığında Sebastiano del Piombo ile gösterir (Vasari); stucco apparatusu zengin invensiyonla etkili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Orsini sonuçları Perino çevresi sanatçıları çekti: Marco Pino, Pellegrino Tibaldi, Gaspar Becerra sonradan işbirlikçileri oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "Görselin durumu belirsiz: S5 galeri etiketi 002.jpg \"before its 2004 restoration\"; başlık görseli \"after its restoration in 2004\"; Yorck 2002 DVD restorasyon öncesi; görsel incelenmedi → doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "Repo görsel betimleri (yeşil zırh/pembe etek, bayılan Meryem, turuncu pelerin, aşınma) görsel incelenmediği ve erişilen metinlerde birebir karşılığı olmadığı için doğrulanmadı (E7).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Atıf verilen akademik metinler erişilmedi: Hirst 1967, Davidson 1967, Barolsky 1979, Ciardi/Moreschini 2004, Macadam 1998, TCI 1965, EB1911, F. Alberti (Artibus et historiae) — kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S6",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "S12 Polo museale rehberi: canlı DNS çözümlenemedi; arşiv (2016-03-27) yalnız gezinme iskeleti → eser bilgisi erişilemedi (E5).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q140161127 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q140161127.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (yapısal; Commons importu)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikimedia Commons",
+   "belge": "Category:Deposition by Daniele da Volterra (API parse)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Deposition_by_Daniele_da_Volterra",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ilk deneme 429)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Daniele da Volterra 002.jpg imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:Daniele_da_Volterra_002.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ilk 429); metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (Artwork şablonu)",
+   "url": "https://commons.wikimedia.org/wiki/File:Daniele_da_Volterra_002.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (API parse)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S5",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"Daniele da Volterra\" wikitext",
+   "url": "https://en.wikipedia.org/wiki/Daniele_da_Volterra",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ilk 429); Deposition paragrafı ATIFSIZ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "\"Daniele da Volterra\" wikitext",
+   "url": "https://it.wikipedia.org/wiki/Daniele_da_Volterra",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ilk 429); akademik atıflı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"Trinità dei Monti\" wikitext",
+   "url": "https://en.wikipedia.org/wiki/Trinit%C3%A0_dei_Monti",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Deposition cümlesi ATIFSIZ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "\"Chiesa della Trinità dei Monti\" wikitext",
+   "url": "https://it.wikipedia.org/wiki/Chiesa_della_Trinit%C3%A0_dei_Monti",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Deposition cümlesi ATIFSIZ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Trinità dei Monti kilisesi (resmî site)",
+   "belge": "\"La chiesa\" — şapel kayıtları",
+   "url": "https://trinitadeimonti.net/it/la-chiesa/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (resmî site HTML)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Treccani",
+   "belge": "DBI vol. 87 (2016), Vittoria Romani, \"RICCIARELLI, Daniele, detto Daniele da Volterra\"",
+   "url": "https://www.treccani.it/enciclopedia/ricciarelli-daniele-detto-daniele-da-volterra_(Dizionario-Biografico)/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (DBI madde HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Agenzia Stampa (basın)",
+   "belge": "Paola Franz, \"La 'Deposizione' di Daniele da Volterra ritorna al pubblico\", Roma 12 Şubat 2005",
+   "url": "https://web.archive.org/web/20060515012542/http://www.agenziadistampa.org/archivio/eventi/franz-daniele12feb149.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2006-05-15); orijinal canlı denenmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Polo museale romano (Soprintendenza SPSAE Roma)",
+   "belge": "\"Visita la chiesa\" rehberi",
+   "url": "https://web.archive.org/web/20160327213224/http://poloromano.beniculturali.it/index.php?it%2F509%2Fvisita-la-chiesa",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı DNS hatası (curl 6/000); arşiv 200 (2016-03-27) yalnız iskelet; içerik ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Yerel repo (salt-okunur)",
+   "belge": "data/basyapitlar.json, eser_ayrintilari.json, sanatcilar.json vb.; gorseller/k/ae956b89ec04c8f7.jpg",
+   "url": "yerel",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel salt-okunur karşılaştırma",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Son Yargı (Last Judgment)",
+   "sanatci": "Michelangelo",
+   "kurum": "Sistina Şapeli, Vatikan",
+   "gerekce": "DBI: Daniele bu eserle ilk yüzleşenlerden; geç Raffaello mannerına bağımsız dayanış.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Deposition from the Cross (Volterra)",
+   "sanatci": "Rosso Fiorentino",
+   "kurum": "Volterra",
+   "mufredat_ici": false,
+   "gerekce": "Aynı konu + şehir adı; erken Floransa Maniyerizmi ↔ Roma Maniyerizmi. data/sanatcilar.json kayıtlı ayrı eser; bu derste kanıt düzeyinde kullanılmadı."
+  },
+  {
+   "eser": "Assunzione della Vergine (Assumption)",
+   "sanatci": "Daniele da Volterra",
+   "kurum": "Trinità dei Monti, Cappella Della Rovere, Roma",
+   "gerekce": "Aynı kilise/sanatçı; ikinci dönem Maniyerist üslup.",
+   "kanit": [
+    "C032"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "S9 (birincil) + S10 (DBI akademik) + S5–S8 wikitext + S11 arşiv + S1/S3/S4 metadata 14 Kasım 2026'da yeniden açıldı; künye/konum/sözleşme/şapel programı/kariyer doğrulandı. Brief'e ek: S7 Deposition/Arbasia cümlesi atıfsız (C012 C); S5 galeri etiketi görseli \"before its 2004 restoration\" diye gösteriyor → durum belirsiz (C045 E). Altı ihtilaf D (C006/C008/C010/C015/C022/C026). Görsel İNCELENEMEDİ (C044); GZ TASLAK. Refs metinleri erişilmedi (C047); S12 erişilemedi (C048).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D1): data/basyapitlar.json \"1541\" → sözleşme yılı (S10); icra \"circa 1545\" (S5/S6/S11). Data sözleşme ile icrayı birleştiriyor; circa korunmalı.",
+  "Teknik (D3): data özet \"fresk\" derken \"Ne görüyoruz?\" bölümü \"duvardan ayrılarak tuvale aktarılmıştır\" der → kendi içinde tutarsız; ikinci ifade S11 stacco/tela ile uyumlu.",
+  "Michelangelo (D2/E3): data \"çizimlerle katkı tartışmalıdır\" → doğru ihtiyat (C010 ile uyumlu).",
+  "Görsel betimleri (E7): data \"yeşil zırhlı/pembe etekli figür, bayılan Meryem, turuncu pelerin, aşınma\" → görsel incelenmedi, erişilen metinlerde birebir karşılık yok (C046); doğrulanmadı.",
+  "Boyut (E2): repo'da boyut alanı yok; dış kaynaklarda da bulunamadı (C018).",
+  "Görsel çözünürlük: eser_ayrintilari.json gorsel \"ae956b89ec04c8f7\" → 270×400; Commons 2024×2997'den çok düşük; aynı görüntü teyidi yok.",
+  "Önceki doğrulama işaretleri: data/ders_kaynaklari.json'da önceki \"dogrulandi\"/\"belirsiz\" işaretleri var; bu brief bağımsız ham kaynak taramasıdır, önceki işaretlere güvenilmedi.",
+  "Konsekration (C022, yeni): S9 \"1594\" ↔ S7/S8 \"1585\" — kilise tarihi düzeyinde ihtilaf; data'da yok.",
+  "Karşılaştırma: Rosso Fiorentino 1521 Volterra İndiriliş data/sanatcilar.json'da kayıtlı ayrı eser; Michelangelo Son Yargı basyapitlar.json'da başyapıt olarak yok (yalnız Âdem'in Yaratılışı Q500242)."
+ ]
+}

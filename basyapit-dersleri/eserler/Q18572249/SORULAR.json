@@ -1,0 +1,563 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18572249",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin Louvre koleksiyon kaydındaki başlığı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "L'Incrédulité de saint Thomas"
+    },
+    {
+     "harf": "B",
+     "metin": "L'Adoration des Mages"
+    },
+    {
+     "harf": "C",
+     "metin": "La Résurrection du Christ"
+    },
+    {
+     "harf": "D",
+     "metin": "Le Christ aux outrages"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: Louvre notice başlığı \"L'Incrédulité de saint Thomas\" [C001].",
+   "yanlis_gerekceleri": {
+    "B": "Kayıtta bu başlık geçmez; konu Müneccimlerin tapınması değil, Thomas'ın şüphesidir (Joconde sujet: Apparition à Thomas).",
+    "C": "Diriliş sancağı betimde geçer ama eserin başlığı Diriliş değil, Thomas'ın inanmazlığıdır; kayıt başlığı L'Incrédulité de saint Thomas.",
+    "D": "Kayıtta bu başlık yoktur; konu İsa'ya hakaret değil, dirilmiş İsa'nın Thomas'a görünmesidir."
+   },
+   "kanit": [
+    "C001",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre kaydına göre eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salviati (Francesco de' Rossi, dit)"
+    },
+    {
+     "harf": "B",
+     "metin": "Giorgio Vasari"
+    },
+    {
+     "harf": "C",
+     "metin": "Agnolo Bronzino"
+    },
+    {
+     "harf": "D",
+     "metin": "Caravaggio"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"Salviati (Francesco de' Rossi, dit)\" — \"Attribution actuelle\" [C002].",
+   "yanlis_gerekceleri": {
+    "B": "Vasari, Roma San Marcello'daki fresk kopyaya yanlış atıftır (\"attribuée à tort à Vasari\"); asıl eserin sanatçısı Salviati'dir.",
+    "C": "Kayıt Salviati'yi \"Attribution actuelle\" ile verir; Bronzino atfı yoktur.",
+    "D": "Aynı konu Caravaggio ile de ilişkilendirilir (Louvre bibliyografyasında Benay 2014 anılır) ama bu eser Salviati'nindir."
+   },
+   "kanit": [
+    "C002",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Louvre notice'ının üretim tarihi için verdiği ifade hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "XVIe siècle (1500–1600)"
+    },
+    {
+     "harf": "B",
+     "metin": "1537 (kesin yıl)"
+    },
+    {
+     "harf": "C",
+     "metin": "1543–1547"
+    },
+    {
+     "harf": "D",
+     "metin": "1794"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"Date de création/fabrication : XVIe siècle (1500 - 1600)\" [C003].",
+   "yanlis_gerekceleri": {
+    "B": "1537 data/ ve Wikidata'dan gelir; Louvre ve Joconde kayıtlarında geçmez (D001 tartışması).",
+    "C": "1543–1547 akademik literatür aralığıdır (Elsig 2014, B); Louvre notice'ının ifadesi değildir.",
+    "D": "1794 eserin Louvre'a giriş yılıdır, üretim tarihi değildir."
+   },
+   "kanit": [
+    "C003",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Joconde kaydına göre sipariş veren ve sipariş mekânı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tomaso Guadagni — Lyon Jacobins manastırındaki Floransalılar şapeli"
+    },
+    {
+     "harf": "B",
+     "metin": "Cosimo I de' Medici — Floransa saray şapeli"
+    },
+    {
+     "harf": "C",
+     "metin": "François I — Fontainebleau sarayı"
+    },
+    {
+     "harf": "D",
+     "metin": "Papa III. Paulus — Roma San Marcello"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10/S16: \"commandé vers 1547 par Tomaso Guadagni, conseiller de François Ier, pour la chapelle des Florentins au couvent des jacobins de Lyon\" [C005].",
+   "yanlis_gerekceleri": {
+    "B": "Kayıt sipariş vereni Guadagni olarak verir; Medici siparişi yoktur; konu seçimi için anti-Medici yorum yapılır (B düzeyi).",
+    "C": "François I, sipariş verenin hizmet ettiği kraldır; sipariş veren değildir ve mekân Fontainebleau değil Lyon'dur.",
+    "D": "San Marcello Roma'daki fresk kopyanın bulunduğu yerdir; sipariş mekânı değildir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Birincil kayıtlara göre eserin tekniği/desteği hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya; tahtadan tuvalse aktarma (transposition, 1806)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, ahşap pano (aktarılmamış)"
+    },
+    {
+     "harf": "D",
+     "metin": "Tempera, tuval"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"huile sur toile (transposition (de bois sur toile))\"; S10: \"transfert (bois 1806)\" [C007].",
+   "yanlis_gerekceleri": {
+    "B": "Fresk olan Roma San Marcello'daki kopyadır; asıl eser yağlıboyadır.",
+    "C": "Özgün destek ahşaptı ama Joconde 1806'da tuvalse aktarıldığını kaydeder; bugün destek tuvaldir.",
+    "D": "Kayıt \"peinture à l'huile\" der; tempera değil."
+   },
+   "kanit": [
+    "C007",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Louvre/Joconde kaydına göre resmin boyutu hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "275 × 234 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "325 × 278 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "234 × 275 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "275 × 278 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"Hauteur : 2,75 m ; Largeur : 2,34 m\"; S10: \"275 H ; 234 L\" [C008].",
+   "yanlis_gerekceleri": {
+    "B": "325 × 278 cm aksesuar/çerçeve dahil ölçüdür (\"avec accessoire\"); resmin kendi boyutu değildir.",
+    "C": "Yükseklik ve genişlik yer değiştirmiştir; kayıt Hauteur 2,75 m, Largeur 2,34 m der.",
+    "D": "İki farklı ölçünün karışımıdır; kayıtta böyle bir ölçü yoktur."
+   },
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eserin Louvre envanter numaraları hangileridir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 593 (ana) + MR 472"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 472 + MR 593"
+    },
+    {
+     "harf": "C",
+     "metin": "000PE027030"
+    },
+    {
+     "harf": "D",
+     "metin": "cl010059261"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"Numéro principal : INV 593 / Autre numéro d'inventaire : MR 472\" [C010].",
+   "yanlis_gerekceleri": {
+    "B": "Numaralar yer değiştirmiştir; ana numara INV 593, diğer numara MR 472'dir.",
+    "C": "000PE027030 Joconde notice referansıdır; envanter numarası değildir.",
+    "D": "cl010059261 Louvre collections ark kimliğidir; envanter numarası değildir."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eser Louvre'a hangi yıl ve hangi yolla girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1794 — devrim elkoyması (saisie révolutionnaire)"
+    },
+    {
+     "harf": "B",
+     "metin": "1790 — elkoyma yılı"
+    },
+    {
+     "harf": "C",
+     "metin": "1806 — transposition yılı"
+    },
+    {
+     "harf": "D",
+     "metin": "1998 — sergi yılı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09: \"saisie révolutionnaire, 1790 … entré au Louvre en 1794\"; S10: \"1794 Entrée matérielle\" [C013].",
+   "yanlis_gerekceleri": {
+    "B": "1790 elkoyma (saisie) yılıdır; Louvre'a giriş 1794'te gerçekleşti.",
+    "C": "1806 tahtadan tuvalse aktarım yılıdır; edinim değil.",
+    "D": "1998 \"Belle Maniera\" sergisi yılıdır; edinim değil."
+   },
+   "kanit": [
+    "C013",
+    "C007",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Joconde'un konu (sujet) kaydında hangi öğeler geçer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Apparition à Thomas; havariler, sancak, draperi, sütun; Salviati otoportresi (büst, üç çeyrek)"
+    },
+    {
+     "harf": "B",
+     "metin": "Son Akşam Yemeği; on iki havari, masa"
+    },
+    {
+     "harf": "C",
+     "metin": "Çarmıha Gerilme; üç haç, kalabalık"
+    },
+    {
+     "harf": "D",
+     "metin": "Kutsal Aile; Meryem, Yusuf, Çocuk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10/S16: \"scène biblique (Apparition à Thomas, Les apôtres, bannière, draperie, effet de tissu, colonne, portrait, ?) ; autoportrait (Salviati, en buste, de trois-quarts)\"; source \"Nouveau Testament\" [C015][C016].",
+   "yanlis_gerekceleri": {
+    "B": "Kayıtta Son Akşam Yemeği geçmez; sujet \"Apparition à Thomas\" olarak kayıtlıdır.",
+    "C": "Kayıtta Çarmıha Gerilme geçmez; konu dirilmiş İsa'nın Thomas'a görünmesidir.",
+    "D": "Kayıtta Kutsal Aile geçmez; temsilin kaynağı Nouveau Testament'ın Thomas sahnesidir."
+   },
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Joconde kaydına göre eserin kopya/gravür durumu hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Anonim + Landon (1832) gravürleri; San Marcello'da Vasari'ye yanlış atıflı fresk kopya"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız Landon gravürü; fresk kopya yok"
+    },
+    {
+     "harf": "C",
+     "metin": "Kopyalar Vasari tarafından yapıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Eser hiç çoğaltılmadı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10/S16: \"gravé par un anonyme et par Landon en 1832 ; une copie à fresque avec variantes, attribuée à tort à Vasari, est conservée à San Marcello de Rome\" [C020].",
+   "yanlis_gerekceleri": {
+    "B": "Kayıt hem anonim hem Landon gravürünü sayar; ayrıca San Marcello'da fresk kopya vardır.",
+    "C": "Fresk kopya Vasari'ye YANLIŞ atıflıdır (\"attribuée à tort à Vasari\"); Vasari'nin yaptığı söylenmez.",
+    "D": "Kayıt gravür ve fresk kopyaları açıkça belgeler; çoğaltma vardır."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Louvre Département des Peintures'dadır ve mülkiyeti Fransız devletine (Etat) aittir.",
+   "dogru": true,
+   "aciklama": "Doğru (S08/S09/S10): \"Propriétaire : Etat\"; \"propriété de l'Etat ; musée du Louvre département des Peintures\" [C011].",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Louvre kaydı eserin üretim tarihini \"1537\" olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre \"XVIe siècle (1500 - 1600)\" der [C003]; 1537 data/ ve Wikidata'dan gelir, birincil kayıtlarda geçmez (D001/C029 tartışması).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Joconde kaydı eserin 1806'da tahtadan tuvalse aktarıldığını belirtir.",
+   "dogru": true,
+   "aciklama": "Doğru (S10): commentaires \"transfert (bois 1806)\" [C007].",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser 1998'de Louvre'daki \"Francesco Salviati ou la Belle Maniera\" sergisinde gösterildi.",
+   "dogru": true,
+   "aciklama": "Doğru (S08/S09): exhibition \"Francesco Salviati ou la Belle Maniera … 27/04/1998 - 29/06/1998\" [C023].",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Roma San Marcello'daki fresk kopya, Joconde kaydına göre Vasari'nin kendisidir.",
+   "dogru": false,
+   "aciklama": "Yanlış: kayıt \"attribuée à tort à Vasari\" (Vasari'ye yanlış atıflı) der [C020]; kopyanın Vasari'ye ait olduğu söylenmez.",
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih katmanlarını analiz edin: Louvre yüzyıl, Joconde çeyrek + \"vers 1547\", Elsig 1543–1547 (B), data/WD 1537. WD referans zincirindeki boşluğu ve precision uyuşmazlığını açıklayın.",
+   "beklenen_ogeler": [
+    "Louvre XVIe siècle",
+    "Joconde 2e quart + vers 1547",
+    "Elsig 2014 p.22 (B, metne erişilmedi)",
+    "WD P571 precision yüzyıl",
+    "Joconde referansında 1537 yok",
+    "katmanlı tarih"
+   ],
+   "kanit": [
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C025",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Transposition'ı (1806) nesne biyografisi ve koruma açısından tartışın: özgün ahşap destek ile bugünkü tuval yüzeyi arasındaki fark nedir? Wikidata'nın teknik kaybını değerlendirin.",
+   "beklenen_ogeler": [
+    "huile sur toile (transposition)",
+    "transfert (bois 1806)",
+    "özgün ahşap destek",
+    "WD P186 oil+canvas eksikliği",
+    "sipariş/aktarım/müze katmanları"
+   ],
+   "kanit": [
+    "C007",
+    "C030",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Otoportre iddiasının kaynak zincirini değerlendirin: Joconde (A) ↔ frwiki \"serait\" ↔ Louvre notice'ın boş alanları. Figür kimliği neden eşlenemiyor?",
+   "beklenen_ogeler": [
+    "autoportrait (Salviati, en buste, de trois-quarts)",
+    "frwiki serait",
+    "portrait, ?",
+    "Notice du Louvre ref kopuk",
+    "hangi havari belirsiz"
+   ],
+   "kanit": [
+    "C016",
+    "C034",
+    "C032"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Anti-Medici siyasi yorumunu (B) kanıt düzeyiyle değerlendirin: kitap metinlerine erişilmeden bu yorum derste nasıl sunulmalı?",
+   "beklenen_ogeler": [
+    "Virassamynaïken 2015 p.208",
+    "Donato 2013 p.18-33",
+    "metne erişilmedi",
+    "B düzeyi + kaynak zinciri notu",
+    "yorum/olgu ayrımı"
+   ],
+   "kanit": [
+    "C018",
+    "C040"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "1790 elkoyma → 1794 giriş provenance'ını devrim bağlamında tartışın; kayıt kümesindeki iki mekân adını (Notre-Dame de Confort / Jacobins) nasıl ele alırsınız?",
+   "beklenen_ogeler": [
+    "saisie révolutionnaire 1790",
+    "église des Jacobins Lyon",
+    "1794 Entrée matérielle",
+    "clergé eski aidiyet",
+    "iki mekân adı birlikte; bağlantı açıklanmıyor",
+    "Iacono & Furone [1999] ref (erişilmedi)"
+   ],
+   "kanit": [
+    "C013",
+    "C005",
+    "C040"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre sahnede Diriliş sancağını (bannière) bulun; Joconde sujet listesindeki karşılığını işaretleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Joconde sujet: \"bannière\"; frwiki betimi \"l'étendard de la Résurrection\" der (görsel teyit yok).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Havarilerin bol draperilerini ve kumaş etkisini (effet de tissu) inceleyin; hangi figürlerde yoğunlaşıyor?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Joconde sujet: \"draperie, effet de tissu\"; frwiki \"amples draperies\" (görsel teyit yok).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kompozisyondaki sütunu (colonne) bulun; mekân derinliği ve figür dizilişiyle ilişkisini değerlendirin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Joconde sujet: \"colonne\"; data'daki \"sığ sahne/friz\" nitelemesi görsel teyit bekler (E009).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Joconde'un otoportre olarak listelediği üç çeyrek büst figürü arayın; figürün hangi havari olduğu belirsizdir, eşleme yapmayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Joconde: \"autoportrait (Salviati, en buste, de trois-quarts)\"; frwiki \"serait\" der; figür kimliği eşlenmemiş (belirsiz).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "İmzayı arayın: Joconde transkripsiyonu \"FRANCESCO SALVIATO FLO. OPUS (S.B.D.)\"; kayıt \"daté ; signé\" der ama tarih metni transkripsiyonda yok.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İmza yeri ve \"S.B.D.\" açılımı erişilen kayıtlarda verilmez; tarih boşluğu E005 (belirsiz).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "L'Incrédulité de saint Thomas; Salviati (Francesco de' Rossi, dit), 1510–1563; Louvre XVIe siècle / Joconde 2e quart + vers 1547 / literatür 1543–1547 (1537 tartışmalı); yağlıboya, transposition 1806; 275×234 cm; INV 593 + MR 472; Salle 712 Denon.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C007",
+    "C008",
+    "C010",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş + provenance?",
+   "arka": "Tomaso Guadagni (François I'in Floransalı danışmanı), Lyon Jacobins Floransalılar şapeli, \"vers 1547\"; Notre-Dame de Confort / Guadagni şapeli; 1790 saisie révolutionnaire; 1794 Louvre'a giriş.",
+   "kanit": [
+    "C005",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik + boyut katmanları?",
+   "arka": "Yağlıboya; özgün ahşap destek 1806'da tuvalse aktarıldı (transposition); 275×234 cm resim, 325×278 cm aksesuar dahil; WD yalnız oil+canvas kodlar (eksik).",
+   "kanit": [
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Konu + otoportre?",
+   "arka": "Apparition à Thomas (Nouveau Testament); havariler, sancak, draperi, sütun; \"portrait, ?\"; üç çeyrek büst otoportre Joconde'da kesin, frwiki \"serait\", figür kimliği eşlenmemiş.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Alımlama + sergi?",
+   "arka": "Anonim + Landon 1832 gravürleri; Roma San Marcello'da varyantlı fresk kopya, Vasari'ye yanlış atıflı; 1998 \"Francesco Salviati ou la Belle Maniera\" sergisi (Louvre).",
+   "kanit": [
+    "C020",
+    "C023"
+   ]
+  }
+ ]
+}

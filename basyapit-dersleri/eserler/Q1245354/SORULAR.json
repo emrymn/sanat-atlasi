@@ -1,0 +1,558 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1245354",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The Courtauld, London (Samuel Courtauld Trust)"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "National Gallery, Londra"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S8: envanter P.1934.SC.234, Samuel Courtauld'un 1934 bağışı; eser The Courtauld'dadır.",
+   "yanlis_gerekceleri": {
+    "B": "Musée d'Orsay, Manet'nin Olympia ve Déjeuner sur l'herbe'sini barındırır (S5); bu tablo Courtauld'dadır.",
+    "C": "Louvre farklı bir kurumdur; birincil kayıt Courtauld'u gösterir.",
+    "D": "National Gallery Londra'dadır ama bu eser Courtauld koleksiyonundadır (P.1934.SC.234)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "P.1934.SC.234"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 1934-234"
+    },
+    {
+     "harf": "C",
+     "metin": "NG 234"
+    },
+    {
+     "harf": "D",
+     "metin": "1934.SC.96"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S8: Accession number P.1934.SC.234.",
+   "yanlis_gerekceleri": {
+    "B": "RF biçimi Louvre envanteridir; Courtauld'un Samuel Courtauld Trust bağış kodu P.1934.SC.xxx biçimindedir.",
+    "C": "NG biçimi National Gallery envanteridir; bu eser Courtauld'dadır.",
+    "D": "1934.SC.96 doğru bağış yılını taşır ama sıra numarası 234'tür; 96 tuval yüksekliğidir (cm)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "İlk sergileme nerede ve ne zaman?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1882 Paris Salonu"
+    },
+    {
+     "harf": "B",
+     "metin": "1863 Salon des Refusés"
+    },
+    {
+     "harf": "C",
+     "metin": "1874 ilk İzlenimci sergisi"
+    },
+    {
+     "harf": "D",
+     "metin": "1889 Exposition Universelle"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5/S6/S8: 1882 Salonu (Fransız Güzel Sanatlar Akademisi'nin resmî yıllık sergisi).",
+   "yanlis_gerekceleri": {
+    "B": "1863'te reddedilen Déjeuner sur l'herbe'dir (S5); bu tablo 1882'de sergilendi.",
+    "C": "Manet İzlenimcilerin bağımsız sergilerine katılmayı reddetti (S5).",
+    "D": "1889 Exposition Universelle bu tablonun ilk sergilemesi değildir; kaynaklar 1882 Salonu der."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Model kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Suzon (mekânda çalışan gerçek bir garson)"
+    },
+    {
+     "harf": "B",
+     "metin": "Méry Laurent"
+    },
+    {
+     "harf": "C",
+     "metin": "Ninette de Valois"
+    },
+    {
+     "harf": "D",
+     "metin": "Adı bilinmeyen bir manken"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5/S6: Manet atölyeye bar kurdu, garson Suzon poz verdi.",
+   "yanlis_gerekceleri": {
+    "B": "Méry Laurent kalabalıkta tanınan bir figürdür (itwiki/Rizzoli); model değildir.",
+    "C": "Ninette de Valois 1934 balesinin koreografıdır; tablonun modeli değil.",
+    "D": "Courtauld modeli adıyla (Suzon) verir; \"isimsiz manken\" doğru değildir."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Röntgen garson için neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kollarını belinde kavuşturmuştu (sağ el sol kolu bilek üstünden kavrar)"
+    },
+    {
+     "harf": "B",
+     "metin": "Eldivenli olarak resmedilmişti"
+    },
+    {
+     "harf": "C",
+     "metin": "Dürbünlü kadın baştan beri vardı"
+    },
+    {
+     "harf": "D",
+     "metin": "Başka bir tablonun üzerine yapılmıştı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 (In the Making): başlangıçta kollar belinde kavuşuk; eldivensizlik + korunma; dürbünlü kadın sonradan eklendi.",
+   "yanlis_gerekceleri": {
+    "B": "Röntgen jesti eldivensizliği vurgular; eldivenli değil (S5).",
+    "C": "Dürbünlü kadın sonradan eklenmiştir (late addition); baştan beri yoktu (S5).",
+    "D": "Kaynaklar böyle bir bulgu bildirmez; röntgen kompozisyon değişikliğini (kollar/dürbünlü kadın) gösterir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "İmza ve tarih nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sol alttaki şarap şişesi etiketinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Sağ alt köşede tuval üzerinde"
+    },
+    {
+     "harf": "C",
+     "metin": "Çerçevenin arka yüzünde"
+    },
+    {
+     "harf": "D",
+     "metin": "Sol üst köşede"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: \"Signed, on bottom wine label, bottom left & recto, Manet / 1882\".",
+   "yanlis_gerekceleri": {
+    "B": "İmza tuvalin sağ alt köşesinde değil, sol alttaki şarap etiketindedir (S6).",
+    "C": "İmza çerçeve arkasında değil, resmin içindeki şişe etiketindedir (S6).",
+    "D": "Sol üstte trapez sanatçısının ayakları vardır; imza sol alttadır (S6)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Malcolm Park'ın rekonstrüksiyonu ne gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ofset bakış açısıyla tek noktalı perspektife uygun"
+    },
+    {
+     "harf": "B",
+     "metin": "Adam garsonun tam karşısında duruyor"
+    },
+    {
+     "harf": "C",
+     "metin": "İki noktalı perspektife uygun"
+    },
+    {
+     "harf": "D",
+     "metin": "Ayna optik olarak imkânsız"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 Getty/Park: sahne ofset viewpoint'ten tek noktalı perspektife uygun; \"subtly dissembled truths\".",
+   "yanlis_gerekceleri": {
+    "B": "Park'a göre adam ressamın görüş alanının dışında solda durur ve garsondan uzağa bakar; tam karşısında değil (S7).",
+    "C": "Getty tek noktalı (one-point) perspektif der; iki noktalı değil (S7).",
+    "D": "Park rekonstrüksiyonu sahnenin fiziksel olarak mümkün olduğunu gösterir; imkânsız değil (S7)."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Folies-Bergère hangi yıl açıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1869"
+    },
+    {
+     "harf": "B",
+     "metin": "1882"
+    },
+    {
+     "harf": "C",
+     "metin": "1863"
+    },
+    {
+     "harf": "D",
+     "metin": "1889"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"The venue opened in 1869\"; S6: Paris'in ilk music hall'u.",
+   "yanlis_gerekceleri": {
+    "B": "1882 tablonun Salon'da sergilendiği yıldır; mekânın açılışı değil.",
+    "C": "1863 Déjeuner sur l'herbe/Olympia'nın tarihidir; mekân açılışı değil.",
+    "D": "1889 Exposition Universelle yılıdır; Folies-Bergère 1869'da açıldı (S5)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1934 balesinin koreografı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ninette de Valois"
+    },
+    {
+     "harf": "B",
+     "metin": "Emmanuel Chabrier"
+    },
+    {
+     "harf": "C",
+     "metin": "Marie Rambert"
+    },
+    {
+     "harf": "D",
+     "metin": "Jeff Wall"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/Rambert 1983: 1934 balesi Bar aux Folies-Bergère, koreografi Ninette de Valois, müzik Chabrier.",
+   "yanlis_gerekceleri": {
+    "B": "Chabrier balenin müziğini bestelemiştir; koreograf değildir.",
+    "C": "Marie Rambert bu bilgiyi aktaran otobiyografinin yazarıdır (1983); koreograf değil.",
+    "D": "Jeff Wall 1979'da Picture for Women fotoğrafını yapan sanatçıdır; bale koreografı değil."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Jeff Wall'ın bu tabloya gönderme yapan eseri hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Picture for Women (1979)"
+    },
+    {
+     "harf": "B",
+     "metin": "The Bar (1954)"
+    },
+    {
+     "harf": "C",
+     "metin": "Las Meninas"
+    },
+    {
+     "harf": "D",
+     "metin": "Olympia"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/Tate duvar metni (Campany): Jeff Wall Picture for Women (1979) tablonun iç yapısını ödünç alır.",
+   "yanlis_gerekceleri": {
+    "B": "The Bar (1954) John Brack'ın ironik göndermesidir; Jeff Wall'ın değil.",
+    "C": "Las Meninas Velázquez'in eseridir; Wall'ın göndermesi değil.",
+    "D": "Olympia Manet'nin 1863 tablosudur; Wall'ın göndermesi değil."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo, Manet'nin ölümünden bir yıl önce tamamlanan son büyük eseridir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4/S5/S6): \"last major painting, completed a year before he died\".",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Courtauld kaydı, aynadaki yansımanın sağa kaydırıldığını ve soldaki şişelerin hizasız olduğunu belirtir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4): \"shifted their reflection to the right. The bottles on the left are similarly misaligned\".",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Röntgen, garsonun başlangıçta kollarını belinde kavuşturduğunu ve dürbünlü kadının sonradan eklendiğini gösterir.",
+   "dogru": true,
+   "aciklama": "Doğru (S5, In the Making).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Manet, İzlenimcilerin bağımsız sergilerine düzenli olarak katıldı.",
+   "dogru": false,
+   "aciklama": "Yanlış (S5): İzlenimcileri teşvik etti ama bağımsız sergilerde yan yana sergilemeyi reddetti; Salon'a göndermeyi sürdürdü.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "İmza ve tarih, sol alttaki şarap şişesi etiketinde \"Manet / 1882\" olarak yer alır.",
+   "dogru": true,
+   "aciklama": "Doğru (S6): \"Signed, on bottom wine label, bottom left & recto, Manet / 1882\".",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Ayna bilmecesini iki okumayla (Courtauld ↔ Park/Getty) tartışın; \"bilerek bozuk perspektif\" ifadesinin neden tek doğru gibi sunulmaması gerektiğini açıklayın.",
+   "beklenen_ogeler": [
+    "Courtauld \"Ignoring normal perspective\"",
+    "Park ofset bakış açısı / tek noktalı perspektif",
+    "adam görüş alanı dışında solda",
+    "visual decoy",
+    "iki okuma karşılaştırmalı"
+   ],
+   "kanit": [
+    "C007",
+    "C016",
+    "C037"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Tarih (1882 ↔ 1881-1882) ve edinme (1934 ↔ 1932) ihtilaflarını kaynak hiyerarşisiyle değerlendirin; 1881 etüdünün aralığı nasıl açıklayabileceğini tartışın.",
+   "beklenen_ogeler": [
+    "birincil 1882 / 1934",
+    "itwiki/VAC 1881-1882",
+    "FLV caption 1932",
+    "1881 etüdü",
+    "WD P571 precision=yıl",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C036",
+    "C038",
+    "C027",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Garsonun \"hem satıcı hem meta\" (Clark) ve \"dizide bir kalem\" (Courtauld) okumalarını ikonografik detaylarla (portakal, Bass, ayna) ilişkilendirin; yorumları olgulardan ayırın.",
+   "beklenen_ogeler": [
+    "Ligo portakal→fuhuş",
+    "Clark salesperson/commodity",
+    "Courtauld cazip dizi",
+    "Bass anti-Alman ↔ realizm",
+    "yorum/olgu ayrımı"
+   ],
+   "kanit": [
+    "C018",
+    "C056",
+    "C011",
+    "C039"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/ uyuşmazlıklarını (Bass sağ/sol, mandalina/portakal, madalyon/cameo, elektrik lambaları, sarı eldiven) kaynaklarla karşılaştırıp düzeltme önerisi yazın; görsel teyidin rolünü belirtin.",
+   "beklenen_ogeler": [
+    "Bass kaynaklar SOL",
+    "meyve oranges/portakal",
+    "cameo ↔ madalyon",
+    "elektrik lambaları doğrulanmadı",
+    "sarı eldiven renk yok",
+    "görsel teyit gerekli"
+   ],
+   "kanit": [
+    "C041",
+    "C042",
+    "C043",
+    "C045",
+    "C046",
+    "C049"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Foucault, Merleau-Ponty (Meyers üzerinden) ve Baudelaire (itwiki üzerinden) çerçevelerini kullanarak bir felsefi okuma yazın; Manet'nin bu düşünürlerden etkilendiği iddiasından kaçının.",
+   "beklenen_ogeler": [
+    "Merleau-Ponty ayna passage",
+    "Foucault 1970 konuşma",
+    "Baudelaire modern hayatın epik yanı",
+    "bakış/nesneleşme",
+    "etki iddiası YOK",
+    "yorum etiketi"
+   ],
+   "kanit": [
+    "C023",
+    "C026",
+    "C054",
+    "C057"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Tezgâhta hangi içki şişelerini ve logoyu bulabiliyorsunuz?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): şarap, şampanya, nane likörü, kırmızı üçgen logolu Bass birası.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol üst köşede yeşil çizmeli trapez sanatçısının ayaklarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4/S6): \"a trapeze artist in green boots\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sol alttaki şarap şişesi etiketinde imza ve tarihi (Manet/1882) arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6): \"on bottom wine label, bottom left\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Aynada garsonun yansıması ile silindir şapkalı müşteriyi karşılaştırın; yansıma sağa mı kaymış?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): yansıma sağa kaydırılmış, soldaki şişeler hizasız; optik tutarlılık tartışmalı (Park).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kalabalıkta dürbünle bakan kadını ve beyaz giysili, eldivenli ellere yaslı Méry Laurent'i arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: dürbünlü kadın sonradan eklendi (S5); Méry Laurent itwiki/Rizzoli (S3).",
+   "kanit": [
+    "C008",
+    "C020"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Édouard Manet (1832–1883); 1882; yağlıboya tuval 96×130; The Courtauld, London; P.1934.SC.234; Samuel Courtauld bağışı 1934; imza sol alt şarap etiketi \"Manet/1882\".",
+   "kanit": [
+    "C014",
+    "C015",
+    "C013",
+    "C060"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Model + üretim?",
+   "arka": "Suzon (gerçek garson); mekânda eskiz, nihai eser atölyede kurulan barda; kompozisyon dikkatli hazırlığın ürünü; röntgen: kollar başlangıçta belinde kavuşuk, dürbünlü kadın sonradan.",
+   "kanit": [
+    "C004",
+    "C003",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Mekân + bağlam?",
+   "arka": "Folies-Bergère: Paris'in ilk music hall'u, 1869; fuhuşla ün; Maupassant \"vendors of drink and of love\"; 1882 Salonu.",
+   "kanit": [
+    "C005",
+    "C006",
+    "C002"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Park rekonstrüksiyonu ne gösterir?",
+   "arka": "Sahne ofset (sağa) bakış açısıyla tek noktalı perspektife uygun; adam görüş alanı dışında solda, garsondan uzağa bakıyor; garson hafif çapraz; yansıyan kenar \"visual decoy\" (Getty 2000; tez UNSW 2001).",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Alımlama?",
+   "arka": "1934 balesi (koreografi Ninette de Valois, müzik Chabrier); Jeff Wall Picture for Women (1979, Tate duvar metni); John Brack The Bar (1954, ironik).",
+   "kanit": [
+    "C021",
+    "C022"
+   ]
+  }
+ ]
+}

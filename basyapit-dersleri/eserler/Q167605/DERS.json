@@ -1,0 +1,1256 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q167605",
+ "sanatci_id": "johannes-vermeer",
+ "baslik": "Süt Boşaltan Kadın",
+ "ozgun_baslik": "Het melkmeisje",
+ "diger_basliklar": [
+  "The Milkmaid",
+  "De keukenmeid",
+  "De melkmeid"
+ ],
+ "kunye": {
+  "sanatci": "Johannes Vermeer",
+  "sanatci_yasam": "1632–1675",
+  "tarih": "y. 1660",
+  "tarih_belirsizlik": "Rijksmuseum c. 1660; literatür c. 1657–1661 arası öneriler (C004, D seviyesi)",
+  "teknik": "Tuval üzerine yağlıboya",
+  "boyut_cm": {
+   "yukseklik": 45.5,
+   "genislik": 41
+  },
+  "muze": "Rijksmuseum, Amsterdam",
+  "envanter": "SK-A-2344",
+  "edinim": "1908 satın alma; Vereniging Rembrandt desteği; Six mirasçılarından 38 resimle birlikte, 550.000 florin",
+  "konum": "Onur Galerisi (Eregalerij), HG-2.30.3",
+  "telif_durumu": "Eser kamu malı (Vermeer ö. 1675); Rijksmuseum görüntüsü Public Domain Mark 1.0. (Önceki \"veri CC0\" ifadesi erişilen kaynaklarda doğrulanamadı; çıkarıldı.)"
+ },
+ "gorsel": {
+  "url": "https://iiif.micr.io/QkOGy/full/max/0/default.jpg",
+  "iiif_url": "https://iiif.micr.io/QkOGy/info.json",
+  "kaynak": "Rijksmuseum (SK-A-2344)",
+  "lisans": "Public Domain Mark 1.0",
+  "dogrulama": {
+   "yontem": "IIIF taraması indirildi; vision köprüsü transkripsiyonu + PIL bölge kırpmaları; uygulamanın yerel görseliyle çapraz kontrol",
+   "cozunurluk": "1200×1336 (analiz), orijinal max",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "ekmek-sepet",
+    "ayak-isitici-cini",
+    "yerel uygulama görseli 356×400"
+   ],
+   "sinirlar": "14 Kasım 2026 hakem turu: IIIF 4649×5177 tam kareden stoofje/duvar/pencere kırpmaları alındı; stoofje içinde kırmızımsı alan görüldü (köz/kap ayrımı net değil); vision bütçesi pencere kırpmasında tükendi. Pointillé noktaları ve Cupid yayı yakın kırpmayla doğrulanamadı; bu ayrıntılar kaynak betimlemesi olarak işaretli (KANIT_DOSYASI §3)."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 412
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1600
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2960
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-eser-tarihi-provenance-bir-yöntem-sorunudur"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-tarih-tartışması-bir-yılın-epistemolojisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-üç-ekol-bir-düğüm"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-teknik-kanıtın-epistemolojisi-2022-ve-camera-obscura"
+  ],
+  "7": [
+   "DERS_ILERI.md#6-felsefi-ve-estetik-analiz-açıkça-yorum-c060"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz-üç-eser",
+   "DERS_ILERI.md#7-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#8-akademik-tartışmaların-envanteri-d-seviyeli",
+   "DERS_ILERI.md#9-kaynak-eleştirisi"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#10-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça",
+   "DERS_ILERI.md#11-kaynakça",
+   "KAYNAKCA.md"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (sanatçı, tarih, teknik, boyut, müze, envanter) sayar ve tarih belirsizliğini (c. 1660 ↔ literatür önerileri) açıklar.",
+  "Kompozisyon-ışık-renk ilişkisini soldan pencere ışığı ve pointillé kavramlarıyla analiz eder.",
+  "2022 teknik araştırma bulgularını (alt boyama, kannenbord, vuurmand) yorum iddialarından ayırır.",
+  "Cupid çinisi ve stoofje tartışmalarını üç yorum ekolü ve kanıt türleri üzerinden değerlendirir.",
+  "Eseri Hollanda tür resmi geleneği içinde Jan Steen ile ve Vermeer’in tek figürlü eserleriyle karşılaştırır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tür resmi (genre painting)",
+   "tanim": "Gündelik hayat sahnelerini konu alan resim türü; bu eserde mutfak hizmetçisi ve süt dökme eylemi.",
+   "kanit": [
+    "C011",
+    "C023"
+   ]
+  },
+  {
+   "ad": "Pointillé",
+   "tanim": "Işığı taklit eden küçük, kalın, opak boya dokunuşları; ekmek, sepet ve çömlek yüzeylerinde ışık benekleri.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "ad": "Pentimento / üzeri boyama",
+   "tanim": "Sanatçının sonradan kapattığı önceki biçimler; 2022’de vuurmand ve kannenbord eskizinin ortaya çıkarılması.",
+   "kanit": [
+    "C050",
+    "C049",
+    "C051"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik zinciri; kuşku işaretleri (?) ve satış kayıtlarıyla belgeleme; 1696 Dissius satışı ve 1908 edinim.",
+   "kanit": [
+    "C014",
+    "C015",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Emblem",
+   "tanim": "Nesnelere kültürel/ahlaki anlam yükleyen söz-resim geleneği; stoofjenin Sinnepoppen’deki Mignon des Dames kodu.",
+   "kanit": [
+    "C055"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Güncel başlık Het melkmeisje / The Milkmaid; eski başlıklar De keukenmeid, De melkmeid",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Johannes Vermeer (1632–1675)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5",
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Rijksmuseum güncel tarihi c. 1660; WD precision 9 + circa",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih önerileri ihtilaflı: Blankert 1660–61, Wheelock c.1658–60, Liedtke c.1657–58, Franits c.1658–59; bülten içi varyasyon",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tuval üzerine yağlıboya",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "45,5 × 41 cm",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Rijksmuseum, SK-A-2344",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "1908 satın alma; Vereniging Rembrandt; Six mirasçıları; 550.000 fl + 38 resim",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Onur Galerisi (Eregalerij), HG-2.30.3",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Eser imzasız",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Tür resmi; hizmetçi/süt/ekmek/stoofje konuları",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Yapım yeri Delft kabul edilir; müze kaydında yapım yeri alanı yok, EV'de 'painted in Delft' ifadesi yok. Tek açık dayanak Wikidata P1071 (Q690) + Vermeer'in Delft kariyerine dayalı çıkarım; birincil kaynakla doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C013",
+   "ifade": "Görüntü Public Domain Mark 1.0 (K1/K2). 'Veri CC0' iddiası erişilen kaynaklarda (K1, K2, veri politikası sayfası) bulunamadı; çıkarıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Erken provenance zinciri müze kaydında ? ile kuşkulu",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Dissius satışı 16 Mayıs 1696, no.2, 175 fl, Rooleeuw",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "1696 satışında en yüksek ikinci Vermeer fiyatı (175 fl); birinci View of Delft (sıralama EV+Wiki). View of Delft fiyatı bu iddiada değil (C071).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "1908 alımı kamuoyu/parlamento tartışmasıyla gerçekleşti (K24: 1907 Six ailesinin satış isteği, 38 resimlik paket, 'felle discussies in de kranten en in de politiek', VR'nin substantial katkısı + hükümet iknası). Morgan korkusu Bredius'un kanaati (EV); Troelstra modern sanat alımını savundu, de Stuers ülkede kalma savunusu (EV — isimler tek kaynak).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K24"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Van Ruijven Vermeer'in zengin Delftli hamisi; ölüm 1674 (K1, K7, WD P570 — 14 Kasım 2026 itibarıyla uyumlu; WD açıklama metni bayat '1678' der). 'Ölümünde 21 Vermeer' → C069 (E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K1",
+    "K5",
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Reynolds övgüsü (1781 bağlamı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Külliyat yaklaşık 35 resim",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Delft Aziz Luka Loncası (EV: 'the Saint Luke Guild, the trade organization of Delft's artists and artisans'); Milkmaid'den birkaç yıl önce giriş ücretini tam ödeyemedi. Vermeer'in Delft'te yaşadığı/çalıştığı buradan da desteklenir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K22"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Van Buyten'e ekmek borcu (EV: 617 fl, iki ayrı yerde). Ölüm sonrası resim/resimler verildi; nitelik ve sayı erişilen kaynaklarda tutarsız: EV 'iki resim teminat (collateral)' / 'iki resim güvenlik (security)' / 'bir resimle borcu kapatma (settled this debt)' der; K22 1663'te (Vermeer hayattayken) teminat + dul eşin iki resmi borç için satması der. Kesinleştirilemez; Montias 1989 birincil hedef (erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K22"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Hollanda tür resmi on yıllar önce gelişti; mutfak/pazar/hizmetçi sahneleri yaygın; sütçü/mutfak hizmetçisi figürü erotik çağrışımlı (EV: 'Kitchen maids, and especially milkmaids, were known for being sexually available'). Lucas 1510 baskısı bu iddianın kanıtı DEĞİL (C056 'Everyday scenes').",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "EV'ye göre Vermeer bu eserden sonra emekçi sınıfı temaya bir daha dönmedi ('never again turned his attention to a working-class theme'); hizmetçiyi onurlu biçimde tek başına konu alması EV'ye göre külliyatta neredeyse tek örnek ('stands almost alone'). 'Tek emekçi figürlü eser' ifadesi kaynağı aşıyordu; kaldırıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "2023 Vermeer sergisi 10 Şubat–4 Haziran; en az 27/35; Frick üç eser",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "2009 Met \"Vermeer's Masterpiece: The Milkmaid\" sergisi varlığı (Rijksmuseum bibliyografyası: NYT + Met ilanı); tarih/küratör/1939 ayrıntıları → C072 (E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Hizmetçi süt döker; tek hareket süt akıntısı; tam dikkat",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Figür parlak odada heykel gibi; anıtsal dinginlik",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Anıtsal etki + kompozisyon öğeleri (çerçeve, sepet, pirinç kap) gözün süt dökme eylemine yönlenmesi (EV).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Işık soldaki pencereden (EV çivi gölgesi: 'signaling the light originates from the left'; K1 NL betimi yalnız 'links een venster' — pencere konumu, ışık yönü değil); başlık/korse/önlük/etek/kolluklar (görsel).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4",
+    "K7",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Işık nesne yüzeylerinde \"yüzlerce renkli nokta\" (Rijksmuseum); pointillé = kalın opak küresel dokunuşlar (EV).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Masada ekmek sepeti, somun/kırık parçalar, benekli stoneware, toprak kap",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Duvarda küf/lekeler, çivi ve çivi delikleri. Müze betimi 'the mould on the wall' (K25); EV çivi + gölge + delikler ('A humble nail... nail holes'); görsel kısmi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K25",
+    "K7",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Delft çinileri; birinde yaylı Cupid (EV 'Cupid with a cocked bow'; K6). EV 'One of the tiles which Vermeer added' → C052'yi de destekler. Görsel: figür konumu kısmi teyit, yay ayırt edilemedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Delikli kapaklı ahşap stoofje (K1 'stoofje' + görsel); içinde kırmızımsı bir alan görünür (köz/kap ayrımı görselde net değil). 'Köz parıltılı' A seviyesinde görsel iddia olarak kaldırıldı; köz kabı EV'nin genel stoof betimi (B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Pencere camlarından biri çatlak: müze betimi 'The crack in the window' (K25); EV 'a broken piece of one of the panes'; K6 (Cant) konum: alttan 4. sıra en sağ. Görsel yakın teyit bu oturumda yapılamadı (bütçe); müze birincil betimi esas.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K25",
+    "K7",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Duvarda hasır sepet + pirinç kap; yansıma/emme farkı",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Masa, Keith Cardnell'in geometrik rekonstrüksiyonuna göre açıldığında sekizgen olan katlanır (gateleg) masanın yarısı; EV uzmanların hemfikir olduğunu belirtir. Teknik görüntüleme değil geometrik yorum; 2022 bulgusu DEĞİL.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Craquelure görünür",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Bezelyi keten; orijinal germe kenarları; 14×14,5 iplik/cm². Kaynak: EV 'Technical report' → 1995 NGA/Mauritshuis sergi kataloğu (ed. Wheelock); katalog bu dosyada erişilmedi. Rijksmuseum araştırması DEĞİL.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "1950 wax-reçine relining; önce paste lining (EV 'Technical report' → 1995 NGA/Mauritshuis kataloğu, ed. Wheelock).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Ast: tebeşir + kurşun beyazı + umbra; soluk kahve/gri (EV 'Technical report' → 1995 kataloğu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Doğal ultramarin (Afgan lapis); çağdaşlar GENELLİKLE azurit (EV 'usually employed'); saydam glazür. Hami Van Ruijven hipotezi (EV 'Some scholars have speculated'). Pigment bilgisi EV denemeleri + 1995 kataloğu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Korsede kurşun-kalay sarısı; dönemin en parlak sarısı (EV; 1995 kataloğu aktarımı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Duvar: kurşun beyazı+umbra+kömür siyahı; etek: vermilyon+siyah, BÜYÜK OLASILIKLA madder glazür (EV 'most likely'); kolluk: kahve monokrom+glazür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Kaçış noktası sağ el üstünde iğne deliği (EV 'Technical report'). Liedtke iğne-ip yöntemi yalnız K6→2009 röportaj zinciri; özgün kayıt erişilemedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "2022: Rijksmuseum + Mauritshuis + Antwerpen Üniversitesi (NL bülteni); Macro-XRF + RIS (Night Watch); SWIR; Macro-XRPD alt yazı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Hızlı açık/koyu alt boyama; yavaş-titiz miti revize",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Baş arkasında siyah eskiz sürahi rafı (kannenbord / jug holder), geliştirilmemiş; Vermeer kilerinde benzeri; Oortman bebek evi c.1690 (gövde) / c.1686–1710 (alt yazı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Vuurmand: söğüt örülü sepet; içine közlü kap (vuurtest/kom) konurdu (K3/K14); bebek ısıtma/beze kurutma; Vermeer envanterinde kayıtlı; üzeri stoofje+çini+zemin. Sepet daha önce biliniyordu ('previously discovered'); 2022'nin katkısı tanımlama. Dibbits 'meer rust en verstilling' alıntısı NL bültende (K14) VAR, EN bültende (K3) yok — niyet yorumu (C).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K14",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "Gizli sepet terminolojisi: eski 'çamaşır/giysi sepeti' yorumu (EV, C078 B) ↔ 'dikiş sepeti' adı (K6→eski müze sayfası, doğrulanamadı, C073 E) ↔ 2022 vuurmand tanımı (C050 A). EV konumu 'lower-left' der; K3 'lower right' (figüre göre fark olabilir).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K14",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Çiniler ve stoofje sonradan eklendi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Camera obscura tartışması: EV pointillé'lerin camera obscura kullanımına işaret ettiğini SAVUNUR ('Their presence implies that the artist used a camera obscura'; tartışmalı çıkarım, hakemsiz ikincil). Cant'in argümanı nesneler arası mesafe tutarsızlığı (K6→Cant 2009, pointillé değil). Liedtke karşı argümanları (iğne deliği, ~10 sn izdüşüm, iğne-ip) yalnız K6→WNYC/gazete zinciri; özgün kayıt erişilemedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "Cupid yorumları: Liedtke arzu / Wheelock onur / Dibbits kuşku",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C055",
+   "ifade": "Stoofje yorumu — Liedtke: cinsel ima / iç sıcaklık (EV ham; emblem bağlantısı C066). Cant okumaları ayrı iddia: C079 (yalnız K6→Cant 2009). EV'de 'Cant' adı geçmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C056",
+   "ifade": "Lucas van Leyden, The Milkmaid (1510) gravürü, Rijksmuseum; müze 'Everyday scenes' bölümünde erken tür sanatına yeni tema olarak sunar ('introduced a new theme in art'). 'Eroticism' bölümü Altın Buzağı (c. 1530) üzerinedir; sütçü baskısıyla ilgisi yok (önceki okuma hatası düzeltildi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Rand: ekmek pudingi hipotezi ('not universally accepted'); EV'nin kendi alternatifi 'pap for young children'. Künye: Rand, 'Wat maakte de Keukenmeid van Vermeer?', Bulletin van het Rijksmuseum 46 (1998) no.2–3, 275–278 (K1 bibliyografyası başlığı + K6 tam künye; makale erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "Emeğin onuru / ev içi erdem okumaları: Wheelock 'insan onuru ideali' / 'madonna of the cow-meadows' (EV); Schama'nın betimlediği ev içi erdem geleneği (K6, genel bağlam — bu esere özgü okuma değil); Laneri Forbes 2009 basın değerlendirmesi (K6, gazeteci). 'Ekol' yalnız Liedtke/Wheelock için. Liedtke 'Mona Lisa etkisi' K6→NYT 2009 zinciri.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Figür milkmaid değil kitchen maid (keukenmeid)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Felsefi okumalar (Kant/Hegel/Benjamin/Berger/Panofsky) yorumdur; etki iddiası yok. Karakterizasyonlar K17–K21 + K26 (SEP Kant) ile kontrol edildi (C074); K20/K21 blog aktarımları açıkça işaretli.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K17",
+    "K18",
+    "K19",
+    "K20",
+    "K21",
+    "K26"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C061",
+   "ifade": "Jan Steen, The Feast of St Nicholas: SK-A-385, 1665–1668, yağlıboya tuval, 82×70,5 cm; kalabalık anlatı (hediye, değnek, sinterklaas şarkısı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K8",
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Vermeer, Woman Holding a Balance: NGA Washington (kurum düzeyi, 2022 bülteni).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Vermeer, Girl with a Pearl Earring: Mauritshuis, Lahey (kurum).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "18. yy Amsterdam satış zinciri fiyatları: 1701 no.7 320 fl; 1719 no.20 126 fl; 1765 no.65 560 fl; 1768 no.10 925 fl; 1798 no.32 1550 fl; 1813 no.96 2125 fl (nominal)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Cupid çinisi ve stoofje üzerinde tek kesin anlam yok; Liedtke/Wheelock/Dibbits/Cant arasında belgeli yorum farkları var",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Stoofje, Roemer Visscher Sinnepoppen (1614) emblemesinde Mignon des Dames olarak ilişkilendirilir",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "1648 barışı sonrası Hollanda ekonomisi zirveye ulaştı; Vermeer 1650'lerde tarih resminden prestijli üst-düzey tür resmine yöneldi; tür resmi on yıllar önce gelişmişti (EV).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "\"Melken\" argosu \"cinsel olarak cezbetmek\" — yalnız Wikipedia→Liedtke katalog [7]; özgün katalog erişilemedi; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C069",
+   "ifade": "Van Ruijven ölümünde 21 Vermeer sahibiydi — yalnız Wikipedia→WNYC [12]; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C070",
+   "ifade": "1696 Dissius satışında 21 Vermeer satıldı (EV ham).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "View of Delft 1696 fiyatı 200 florin — yalnız Wikipedia→Met [2]; EV bu sayıyı içermez; Met erişilemedi; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C072",
+   "ifade": "2009 Met sergisi kesin tarih (10 Eylül–29 Kasım), küratör Liedtke, \"1939'dan beri ilk\", \"Met'in beş Vermeer'i\" — Wikipedia→Met; Met 429; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C073",
+   "ifade": "Gizli sepetin eski adı 'dikiş sepeti' (sewing basket) — yalnız K6→eski Rijksmuseum sayfası; güncel K1/K7'de yok; doğrulanamadı. Çamaşır/giysi sepeti yorumu ayrı iddia: C078 (B, EV).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C074",
+   "ifade": "Felsefi çerçeve doğrulaması: Kant çıkarsızlık + evrensellik (K26 SEP Kant's Aesthetics; K17 genel estetik) + temsilî sanatta bağımlı güzellik (§16) + yücelik doğaya ilişkindir, küçük düzenli esere doğrudan uygulanmaz (K26); Hegel tinin duyusal ifadesi + Hollanda övgüsü Lebendigkeit + özgürlük/comfort/contentment (K18); Benjamin aura = 'unique appearance or semblance of distance', teknik yeniden üretimle geriler, auradan özgürleşme olumlu/siyasal (K19); Panofsky üç katman (K20 restorasyon şirketi blogu — popüler aktarım; özgün metin erişilmedi); Berger 'men act and women appear' (K21 kişisel blog alıntı aktarımı). Hegel 'pazar günü' kaynakta yok. Kantçı yücelik ve 'aurayı demokratikleştirme' ifadeleri hakem turunda düzeltildi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K17",
+    "K18",
+    "K19",
+    "K20",
+    "K21",
+    "K26"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C075",
+   "ifade": "Uygulamanın yerel görsel kopyası 356×400 px JPEG; Rijksmuseum 1200px taramasıyla aynı eser (doğrudan dosya incelemesi, iki oturum).",
+   "seviye": "A",
+   "kaynak_id": [],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C076",
+   "ifade": "Girl with a Pearl Earring portre değil tronie (hayalî figür); Mauritshuis no.670, y.1665, yağlıboya tuval, 44,5×39 cm, imzalı IVMeer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C077",
+   "ifade": "Rijksmuseum'un 'Queer stories' serisinde 'A sexual or lesbian symbol' başlıklı Milkmaid yorum sayfası var (K1'den bağlantılı). Giriş metni: 'What do the attributes around her say about her? And what might they say about Vermeer or the person for whom he made this painting?' Gövde istemci tarafında yükleniyor; bu dosyada okunamadı. Müzenin kendi ikonografi yorumu — insan editör incelemeli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K27"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C078",
+   "ifade": "Gizli sepet için eski 'çamaşır/giysi sepeti' yorumu EV'de belgeli: 'a large, open clothes basket with laundry issuing from it' + Taylor alıntısı ('The maid would have to be a rather heedless person...'); EV 2022'de vuurmand olarak tanımlandığını aktarır. Konum: EV 'lower-left', K3 'lower right'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C079",
+   "ifade": "Cant okumaları (yalnız K6→Cant, Vermeer and His World 1632–1675, Quercus 2009; kitap erişilmedi): beyaz duvarlı 'cool kitchen' + stoofje pratik amaç/çalışkanlık işareti; camera obscura argümanı = nesneler arası mesafe tutarsızlığı (pointillé değil). EV'de 'Cant' adı geçmez (önceki K7 atfı hataydı).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C080",
+   "ifade": "Baş arkasında kapatılan nesne için eski yorumlar: duvar haritası (K6: 'a large wall map (a Rijksmuseum web page calls it a painting)'); EV 'mantelpiece' (şömine rafı) olasılığı. 2022'de bölgedeki eskiz kannenbord olarak tanımlandı (C049). Yorum tarihi — eski okumalar güncel birincil bulguyla değiştirildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K7",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Rijksmuseum",
+   "belge": "The Milkmaid koleksiyon sayfası (SK-A-2344)",
+   "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2344",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Rijksmuseum",
+   "belge": "Linked Art JSON-LD",
+   "url": "https://id.rijksmuseum.nl/200108369",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (ham JSON; PD mark 1.0 — CC0 ifadesi yok)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Rijksmuseum",
+   "belge": "Basın bülteni: major discoveries on The Milkmaid (8 Eylül 2022)",
+   "url": "https://www.rijksmuseum.nl/en/press/press-releases/rijksmuseum-reveals-major-discoveries-on-vermeer-s-painting-the-milkmaid",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Rijksmuseum",
+   "belge": "IIIF görüntü (PD)",
+   "url": "https://iiif.micr.io/QkOGy/full/max/0/default.jpg",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200; 1200px indirilip incelendi",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikidata",
+   "belge": "Q167605 (wbgetentities)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q167605&props=labels|claims|sitelinks&languages=en|tr|nl&format=json",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikipedia (EN)",
+   "belge": "The Milkmaid (Vermeer)",
+   "url": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200; 14 Kasım 2026 wikitext: 2009 sergi cümlesinin referansı hâlâ bozuk (localhost:5000); düzgün Met arşiv referansı başka cümlede",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Essential Vermeer 5.0",
+   "belge": "The Milkmaid katalog maddesi",
+   "url": "https://www.essentialvermeer.com/catalogue/milkmaid.html",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200; yazar künyesi sayfada doğrulanamadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Rijksmuseum",
+   "belge": "Jan Steen, The Feast of St Nicholas (SK-A-385)",
+   "url": "https://www.rijksmuseum.nl/en/collection/object/The-Feast-of-St-Nicholas--b61f0c4c7cf5a503a2246ecde104fd28",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikidata",
+   "belge": "Q2615527 / Q41264 etiketleri",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q2615527|Q41264&props=labels|descriptions&languages=en&format=json",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200; 14 Kasım 2026: Q2615527 P570=1674 (K1/K7 ile uyumlu; açıklama metni bayat 1678)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "The Metropolitan Museum of Art",
+   "belge": "Vermeer’s Masterpiece: The Milkmaid sergi sayfası (2009)",
+   "url": "https://www.metmuseum.org/exhibitions/listings/2009/vermeer",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "429 ×3 — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "K11",
+   "kurum": "The Metropolitan Museum of Art",
+   "belge": "The Milkmaid by Johannes Vermeer sergi kitapçığı PDF (Liedtke)",
+   "url": "https://resources.metmuseum.org/resources/metpublications/pdf/The_Milkmaid_by_Johannes_Vermeer.pdf",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "10,7 MB > fetch sınırı; curl Incapsula engeli — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "K12",
+   "kurum": "National Gallery of Art",
+   "belge": "Vermeer yayını PDF (sistematik katalog)",
+   "url": "https://www.nga.gov/sites/default/files/migrate_images/content/dam/ngaweb/research/publications/pdfs/johannes-vermeer.pdf",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "80,2 MB > fetch sınırı — ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K13",
+   "kurum": "Web araması (NOS, NRC, artnet, Met listeleri)",
+   "belge": "2022 araştırma haberleri ve 2009 sergi teyidi",
+   "url": "https://nos.nl/artikel/2443760-vermeer-paste-melkmeisje-aan-schilderij-toonde-eerst-vuurmand-en-rek-met-kannen",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "arama ajanı; K1/K3/K6 ile çaprazlandı",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K14",
+   "kurum": "Rijksmuseum",
+   "belge": "Basın bülteni (NL, 8 Eylül 2022)",
+   "url": "https://www.rijksmuseum.nl/nl/pers/persberichten/ontdekkingen-op-melkmeisje-onthullen-werkwijze-johannes-vermeer",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (ham HTML)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K15",
+   "kurum": "Rijksmuseum",
+   "belge": "Steen Linked Art (2006398)",
+   "url": "https://id.rijksmuseum.nl/2006398",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (ham JSON; 82×70,5 cm)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K16",
+   "kurum": "Rijksmuseum",
+   "belge": "Lucas van Leyden hikâye sayfası — Milkmaid 1510 'Everyday scenes' bölümünde; 'Eroticism' bölümü Altın Buzağı (c. 1530) üzerine",
+   "url": "https://www.rijksmuseum.nl/en/stories/dutch-masters/story/lucas-leyden-10",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (ham HTML; 14 Kasım 2026 yeniden indirildi — önbellekle bayt aynı; bölüm-görsel eşleşmesi JSON üzerinden doğrulandı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K17",
+   "kurum": "Stanford Encyclopedia of Philosophy",
+   "belge": "Aesthetic Judgment (N. Zangwill)",
+   "url": "https://plato.stanford.edu/entries/aesthetic-judgment/",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K18",
+   "kurum": "Stanford Encyclopedia of Philosophy",
+   "belge": "Hegel's Aesthetics",
+   "url": "https://plato.stanford.edu/entries/hegel-aesthetics/",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K19",
+   "kurum": "Stanford Encyclopedia of Philosophy",
+   "belge": "Walter Benjamin",
+   "url": "https://plato.stanford.edu/entries/benjamin/",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K20",
+   "kurum": "Citaliarestauro",
+   "belge": "Panofsky — 3 phases of the iconological method (restorasyon şirketi blogu; popüler aktarım — akademik doğrulama kaynağı değil; özgün Panofsky metni hedef)",
+   "url": "https://en.citaliarestauro.com/art-analysis-panofsky-method/",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K21",
+   "kurum": "The Marginalian",
+   "belge": "Berger, Ways of Seeing (1972) alıntıları (kişisel blog; birincil alıntı aktarımı — hakemli değil)",
+   "url": "https://www.themarginalian.org/2012/09/28/ways-of-seeing-john-berger/",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K22",
+   "kurum": "Wikipedia (EN)",
+   "belge": "Johannes Vermeer",
+   "url": "https://en.wikipedia.org/wiki/Johannes_Vermeer",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (ham REST HTML)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K23",
+   "kurum": "Mauritshuis",
+   "belge": "Girl with a Pearl Earring (no. 670)",
+   "url": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200 (web_fetch; curl JS-engelli)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K24",
+   "kurum": "Vereniging Rembrandt",
+   "belge": "Het melkmeisje",
+   "url": "https://www.verenigingrembrandt.nl/nl/kunst/het-melkmeisje",
+   "erisim_tarihi": "2026-11-13",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K25",
+   "kurum": "Rijksmuseum",
+   "belge": "'Extraordinary Ordinary' hikâye sayfası — 'The crack in the window and the mould on the wall make the painting seem very real'",
+   "url": "https://www.rijksmuseum.nl/en/story/extraordinary-ordinary",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ham HTML)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K26",
+   "kurum": "Stanford Encyclopedia of Philosophy",
+   "belge": "Kant's Aesthetics and Teleology — çıkarsızlık, bağımlı/serbest güzellik (§16), yücelik (§28, doğa)",
+   "url": "https://plato.stanford.edu/entries/kant-aesthetics/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ham HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K27",
+   "kurum": "Rijksmuseum",
+   "belge": "'A sexual or lesbian symbol' (Queer stories) — Milkmaid yorum sayfası; yalnız giriş metni okunabildi (gövde istemci tarafında)",
+   "url": "https://www.rijksmuseum.nl/en/stories/themes/queer/story/pride-milkmaid",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; giriş metni sunucu tarafında, gövde okunamadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Aziz Nicholas Yortusu (The Feast of St Nicholas)",
+   "sanatci": "Jan Havicksz. Steen",
+   "kurum": "Rijksmuseum, Amsterdam",
+   "envanter": "SK-A-385",
+   "mufredat_ici": true,
+   "gerekce": "Aynı tür, aynı kurum, aynı on yıl; kalabalık anlatı ↔ tek figürlü dinginlik karşıtlığı (1665–1668).",
+   "kanit": [
+    "C061"
+   ]
+  },
+  {
+   "eser": "Woman Holding a Balance",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "National Gallery of Art, Washington DC",
+   "mufredat_ici": false,
+   "gerekce": "Tek figürlü dinginlik ve ışık akrabalığı; nesnenin sembolik yükü karşılaştırması. Kurum bilgisi K3’ten doğrulandı; ayrıntılı analiz kapsam dışı.",
+   "kanit": [
+    "C062"
+   ]
+  },
+  {
+   "eser": "Girl with a Pearl Earring",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "Mauritshuis, Lahey",
+   "mufredat_ici": false,
+   "gerekce": "Tronie ↔ tür resmi karşıtlığı; Mauritshuis tronie tanım ve no.670/y.1665 birincil kaynaktan doğrulandı (C076).",
+   "kanit": [
+    "C063",
+    "C076"
+   ],
+   "envanter": "670"
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler C001–C080 ile eşleştirildi (hakem revizyonu sonrası); desteklenmeyen iddia çıkarıldı/düşürüldü (KALITE_KONTROL.md §10)",
+  "denetim_b": "Tamam — K1/K3/K8/K14/K16 bağımsız turlarda yeniden açıldı. Denetim B 'DÜZELTME 1' (Dibbits alıntısı) hakem turunda GERİ ALINDI: alıntı NL bültende (K14) var, EN'de (K3) yok.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi ayrıca gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json Q167605 tarih \"1660\" → müze \"c. 1660\"; öneri \"y. 1660\" (veri değiştirilmedi).",
+  "data/eser_ayrintilari.json Cupid çinisi ve kırık cam noktaları kaynaklarla uyumlu (B); camera obscura benzetmesi D seviyeli tartışmaya not gerektirir; \"azize ciddiyeti\" yorumdur.",
+  "Karşılaştırma Q764831 (Steen) uygulama tarihi \"1665\" → müze \"1665–1668\"; aralık gösterimi önerilir.",
+  "Vermeer doğum/ölüm (1632/1675) uygulama verisi müze kaydıyla uyumlu (doğrulandı).",
+  "Düzeltme turu (13 Kasım 2026 gece): AKADEMIK_BAGIMSIZ_DENETIM D01–D12 uygulandı; kural 4 gereği Wikipedia-zincirli 5 iddia E/belirsiz yapıldı (C068,C069,C071,C072,C073); felsefi çerçeveler SEP/akademik kaynaklarla doğrulandı (C074).",
+  "Hakem revizyonu (14 Kasım 2026): AKADEMIK_HAKEM_RAPORU.md (Claude) bulguları ham kaynaklarla bağımsız doğrulandı; B01–B21 + Q1–Q11 + F1–F6 kararları HAKEM_REVIZYON_RAPORU.md'de. C056 (Lucas bölüm hatası), C050/AU03 (Dibbits NL alıntısı), C040–C046 (1995 katalog atfı) düzeltildi; C012 E'ye düşürüldü; C033/C036 A'ya yükseltildi (K25); C077–C080 eklendi; D08 (localhost) geri alındı."
+ ]
+}

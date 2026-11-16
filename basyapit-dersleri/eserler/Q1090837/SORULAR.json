@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1090837",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Art Institute of Chicago"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée d'Orsay, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 birincil: National Gallery, Londra; NG3908, Room 44.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'tedir; Seurat Louvre'deki resimleri inceledi ama eser orada değildir.",
+    "C": "Art Institute of Chicago Grande Jatte'ı ve son eskizi barındırır; bu eser Londra'dadır.",
+    "D": "Musée d'Orsay Paris'tedir; eser National Gallery'dedir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "National Gallery envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG3908"
+    },
+    {
+     "harf": "B",
+     "metin": "261"
+    },
+    {
+     "harf": "C",
+     "metin": "1924"
+    },
+    {
+     "harf": "D",
+     "metin": "44"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Details: Inventory number NG3908.",
+   "yanlis_gerekceleri": {
+    "B": "261, 1884 Salon des Indépendants sergi katalog numarasıdır; envanter değil.",
+    "C": "1924, Courtauld Fund edinim yılıdır; envanter numarası değil.",
+    "D": "44, eserin sergilendiği salon numarasıdır (Room 44); envanter değil."
+   },
+   "kanit": [
+    "C001",
+    "C018"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin yapım tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1884"
+    },
+    {
+     "harf": "B",
+     "metin": "1886"
+    },
+    {
+     "harf": "C",
+     "metin": "1882"
+    },
+    {
+     "harf": "D",
+     "metin": "1891"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Details: Date made 1884.",
+   "yanlis_gerekceleri": {
+    "B": "1886, Durand-Ruel'in New York sergisi yılıdır; yapım tarihi değil.",
+    "C": "1882, Puvis Doux Pays'ün Salon yılı ve olası ilk fikir tarihidir (belirsiz); yapım tarihi değil.",
+    "D": "1891, Seurat'nın ölüm yılıdır; yapım tarihi değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayda göre teknik/malzeme nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya (oil on canvas)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Details: Medium and support \"Oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; eser tuval üzerine yağlıboyadır.",
+    "C": "Pano üzerine tempera farklı bir tekniktir; NG kaydı oil on canvas der.",
+    "D": "Suluboya değildir; NG kaydı yağlıboya tuval belirtir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tablonun noktacılıkla ilişkisi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Noktacılık tarzında değil; yalnızca bazı bölümler sonradan noktalarla rötuşlandı"
+    },
+    {
+     "harf": "B",
+     "metin": "Tüm tablo noktacılık tarzında"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca gökyüzü noktacılık"
+    },
+    {
+     "harf": "D",
+     "metin": "Hiçbir rötuş yapılmadı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 In-depth: \"This picture is not painted in the pointillist style of his later works … although he did repaint parts of it using this technique\".",
+   "yanlis_gerekceleri": {
+    "B": "NG tablonun noktacılık tarzında olmadığını açıkça belirtir; tümü noktacı değildir.",
+    "C": "NG yalnızca gökyüzü değil, örneğin turuncu şapka gibi bölümlerin sonradan rötuşlandığını söyler.",
+    "D": "NG sonradan kısmi rötuş yapıldığını doğrular; \"hiç rötuş yok\" yanlıştır."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser 1884 resmî Salon'una ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Reddedildi"
+    },
+    {
+     "harf": "B",
+     "metin": "Kabul edildi ve ödül aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Salon'da sergilendi"
+    },
+    {
+     "harf": "D",
+     "metin": "Sanatçı tarafından geri çekildi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Overview: 1884 Salon'a sunuldu, \"it was rejected\".",
+   "yanlis_gerekceleri": {
+    "B": "NG kabul/ödül değil, ret kaydeder.",
+    "C": "Eser resmî Salon'da sergilenmedi; reddedildi.",
+    "D": "NG geri çekilme değil, jüri reddi belirtir."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Ret sonrası ilk sergileme nerede oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salon des Artistes Indépendants (katalog no 261)"
+    },
+    {
+     "harf": "B",
+     "metin": "1884 resmî Salon"
+    },
+    {
+     "harf": "C",
+     "metin": "1886 New York sergisi"
+    },
+    {
+     "harf": "D",
+     "metin": "1882 Salon"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3: ret sonrası Indépendants, katalog no 261; S6 da Indépendants'ı doğrular.",
+   "yanlis_gerekceleri": {
+    "B": "1884 resmî Salon eseri reddetti; ilk sergileme Indépendants'ta oldu.",
+    "C": "1886 New York sergisi daha sonraki bir gösterimdir; ilk değil.",
+    "D": "1882 Salon Puvis Doux Pays'ün sergilendiği yıldır; bu eserle ilgisi yok."
+   },
+   "kanit": [
+    "C018",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eser 1924'te kim tarafından, nereden satın alındı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Courtauld Fund mütevelli heyeti, Independent Gallery London'dan"
+    },
+    {
+     "harf": "B",
+     "metin": "Félix Fénéon'dan doğrudan"
+    },
+    {
+     "harf": "C",
+     "metin": "Tate Gallery'den"
+    },
+    {
+     "harf": "D",
+     "metin": "Galerie Bernheim-Jeune'den"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 Provenance: 1924'te Courtauld Fund Trustees, Independent Gallery London (P. M. Turner).",
+   "yanlis_gerekceleri": {
+    "B": "Fénéon eseri 1924'te elinden çıkardı ama satıcı Independent Gallery London'dır; doğrudan Fénéon'dan alınmadı.",
+    "C": "Tate Gallery'den devir 1961'de oldu; 1924 edinimi değil.",
+    "D": "Bernheim-Jeune Fénéon'un emekli olduğu galeridir; 1924 satıcısı Independent Gallery London'dır."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "National Gallery'ye göre \"une baignade\" neyi ifade eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çalışma yeri (atların/köpeklerin yıkandığı, teknelerin indirildiği)"
+    },
+    {
+     "harf": "B",
+     "metin": "Orta sınıf eğlence mekânı"
+    },
+    {
+     "harf": "C",
+     "metin": "Yüzme yarışması alanı"
+    },
+    {
+     "harf": "D",
+     "metin": "Mitolojik bir sahne"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 In-depth: \"did not imply a middle-class idea of recreation … but instead signified a place of work\".",
+   "yanlis_gerekceleri": {
+    "B": "NG baignade'ın orta sınıf eğlencesi değil çalışma yeri olduğunu belirtir.",
+    "C": "NG yüzme yarışması değil, at/köpek yıkama ve tekne indirme pratiğini anlatır.",
+    "D": "Sahne mitolojik değil gündelik bir nehir kıyısıdır; Triton yalnızca bir poz benzetmesidir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "La Grande Jatte bu eserle nasıl ilişkilidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aynı nehir kesitini karşı kıyıdan gösterir"
+    },
+    {
+     "harf": "B",
+     "metin": "Farklı bir nehri gösterir"
+    },
+    {
+     "harf": "C",
+     "metin": "Aynı kıyıdan aynı yöne bakar"
+    },
+    {
+     "harf": "D",
+     "metin": "Konuyla ilgisi yoktur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 In-depth: \"shows the same stretch of river but looking across it from the other side\".",
+   "yanlis_gerekceleri": {
+    "B": "NG aynı nehir kesitini (Seine) belirtir; farklı nehir değil.",
+    "C": "NG karşı kıyıdan bakıldığını söyler; aynı kıyı/yön değil.",
+    "D": "NG iki tabloyu mekânsal ve toplumsal olarak ilişkilendirir; ilgisiz değildir."
+   },
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo bütünüyle noktacılık (pointillism) tarzında boyanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: NG \"This picture is not painted in the pointillist style of his later works\" der; yalnızca bazı bölümler sonradan noktalarla rötuşlandı.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser 1884 resmî Salon jürisi tarafından reddedildi.",
+   "dogru": true,
+   "aciklama": "Doğru: NG Overview \"it was rejected\".",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "National Gallery kaydı boyutu 201 × 300 cm olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: NG Details \"Dimensions 201 × 300 cm\"; wiki 301/301,5 der (ihtilaf, birincil esas).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Sudaki iki figür National Gallery betiminde aktif yüzerken gösterilir.",
+   "dogru": false,
+   "aciklama": "Yanlış: NG \"even the two in the water do not appear to be swimming\".",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser 1961'de Tate Gallery'den National Gallery'ye devredildi.",
+   "dogru": true,
+   "aciklama": "Doğru: NG Provenance \"Transferred from the Tate Gallery, 1961\".",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Genişlik ihtilafını (NG/Art UK 300 ↔ enwiki 301 ↔ itwiki/WD 301,5) kaynak hiyerarşisi açısından analiz edin; birincil kayıt neden esas alınır?",
+   "beklenen_ogeler": [
+    "NG 201×300 (A)",
+    "Art UK Wayback 300",
+    "enwiki 301 / itwiki-WD 301,5",
+    "birincil önceliği",
+    "yükseklik 201 ortak"
+   ],
+   "kanit": [
+    "C001",
+    "C035",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Eskiz/desen sayısı (NG \"some 13…10\" / \"13 or 14\" ↔ de Hauke 14+9) ve rötuş nokta rengi (NG sarı+mavi ↔ itwiki/data mavi+turuncu) ihtilaflarını karşılaştırın; kuşku ifadelerini koruyun.",
+   "beklenen_ogeler": [
+    "some 13 / 13 or 14",
+    "de Hauke 14 eskiz + 9 conté",
+    "sarı+mavi ↔ mavi+turuncu",
+    "kuşku korunur"
+   ],
+   "kanit": [
+    "C006",
+    "C036",
+    "C007",
+    "C038"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Toplumsal okumayı değerlendirin: itwiki yabancılaşma (\"potrebbe\") ↔ klasik yıkananlar (\"più verosimilmente\") ↔ NG \"açık politik mesaj yok\". Hangi kanıt hangi okumayı destekler?",
+   "beklenen_ogeler": [
+    "potrebbe alienazione",
+    "più verosimilmente klasik tema",
+    "NG no obvious political statement",
+    "işçi/alt orta sınıf giysi",
+    "kürekçi tek çalışan"
+   ],
+   "kanit": [
+    "C043",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "X-ışını bulguları ile \"Grande Jatte bağı için geç ekleme\" teorisini ayırın; hangisi olgu (B), hangisi tartışmalı yorum (E)? Yöntemsel sonucu yazın.",
+   "beklenen_ogeler": [
+    "bacaklar yataylaştırıldı",
+    "arkadaki figür X-ışınında yok",
+    "sandal/vapur/noktalar yok",
+    "contentious theory",
+    "may have been added later"
+   ],
+   "kanit": [
+    "C026",
+    "C041",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kaynak eleştirisi: \"1887\" rötuş tarihinin atıfsızlığı, Venturi sayfa tutarsızlığı (p.292↔p=285) ve Commons başlık anomalisini değerlendirin; bu verileri nasıl işaretlersiniz?",
+   "beklenen_ogeler": [
+    "1887 atıfsız caption",
+    "NG tarih vermez",
+    "Venturi p.292↔285",
+    "ObjectName eskiz başlığı",
+    "E/belirsiz işareti"
+   ],
+   "kanit": [
+    "C046",
+    "C047",
+    "C048",
+    "C034"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Bacaklarını suya daldırmış, profilden sağa bakan, omuzları düşük merkez figürü bulun; çevresindeki iş üniforması izlenimi veren giysileri fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG audio): açık kırmızı şort, soluk ten, Roma burnu; çimende beyaz ceket, kahverengi ayakkabı, krem hasır şapka.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sağda suda duran, ellerini ağzına götüren oğlanı ve kırmızı-turuncu şapkasını bulun; şapkanın gölgesindeki noktacılık rötuşunu fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG audio): şapka gölgesi mavi noktalar; NG In-depth sarı+mavi noktalar der (renk ihtilaflı).",
+   "kanit": [
+    "C013",
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Ön planda solda sırtı dönük uzanan, siyah melon şapkalı adamı ve arkasındaki küçük köpeği bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG audio): beyaz ceket, koyu pantolon, bot; kızıl-kahve köpek suya bakıyor.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Arka plandaki demiryolu köprüsünü ve Clichy fabrika bacalarını bulun; NG audio betiminde bir bacadan çıkan gri duman bulutunu ve köprüdeki tren buharını ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG audio): bir bacadan büyük gri duman; köprüde alçak beyaz tren buharı. itwiki \"bacalar söndük\" der (ihtilaf).",
+   "kanit": [
+    "C004",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Üç renkli bayraklı kayıkta karşıya geçirilen burjuva çifti (şemsiye, silindir şapka) ve kürekçiyi bulun; kıyıdaki figürlerle ölçek karşıtlığını fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG audio): siyah ceket+silindir şapka, beyaz şemsiye arkasında kadın; kürekçi tek çalışan.",
+   "kanit": [
+    "C008",
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Bathers at Asnières / Une baignade à Asnières; Georges Seurat (1859–1891); 1884; oil on canvas; 201×300 cm (NG); NG3908, Room 44, Main Collection; \"Bought, Courtauld Fund, 1924\"; imza alt solda \"Seurat\".",
+   "kanit": [
+    "C001",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Salon ve ilk sergi?",
+   "arka": "1884 resmî Salon reddi; ardından Salon des Artistes Indépendants (15 Mayıs–1 Temmuz 1884, place du Carrousel), katalog no 261, 402 sanatçı, \"beer hall\"; 1886 Durand-Ruel New York.",
+   "kanit": [
+    "C002",
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik?",
+   "arka": "Noktacılık tarzında DEĞİL; sonradan kısmi rötuş (turuncu şapka sarı+mavi noktalar); su için geniş fırça vuruşları (Monet/Renoir); balayé çapraz mat vuruşlar; renk kuramı Sutter/Chevreul/Rood.",
+   "kanit": [
+    "C007",
+    "C016",
+    "C025"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "Aile (1891 sonrası) → Fénéon \"probably in 1900\" → 1924 Courtauld Fund (Independent Gallery London, P. M. Turner) → 1961 Tate'den NG'ye devir. Kuşku korunur.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Anlam + karşıtlık?",
+   "arka": "\"Une baignade\" = çalışma yeri (at/köpek yıkama, tekne indirme); işçi/alt orta sınıf dinlenmesi ↔ burjuva çift (şemsiye, silindir şapka, üç renkli bayrak); kürekçi tek çalışan; Grande Jatte aynı nehri karşı kıyıdan gösterir, toplumsal/mekânsal ayrım.",
+   "kanit": [
+    "C005",
+    "C008",
+    "C011"
+   ]
+  }
+ ]
+}

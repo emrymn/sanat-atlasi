@@ -1,0 +1,569 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q29530",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Tablonun konusu hangi olaydır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1789 Fransız Devrimi"
+    },
+    {
+     "harf": "B",
+     "metin": "1830 Temmuz Devrimi (Trois Glorieuses)"
+    },
+    {
+     "harf": "C",
+     "metin": "1848 Şubat Devrimi"
+    },
+    {
+     "harf": "D",
+     "metin": "1871 Paris Komünü"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3/K4: 27–29 Temmuz 1830 ayaklanması; Charles X devrildi, Louis-Philippe geçti (C018). K5: 1789 değil (C037).",
+   "yanlis_gerekceleri": {
+    "A": "1789 Fransız Devrimi yaygın yanlış anlamadır; tablo 1830 ayaklanmasını gösterir (C037).",
+    "C": "1848 Şubat Devrimi farklı bir olaydır; konu 1830 Trois Glorieuses'dir (C018).",
+    "D": "1871 Paris Komünü farklı bir olaydır; konu 1830'dur (C018)."
+   },
+   "kanit": [
+    "C018",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Özgürlük figürünün başında ne vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Frig başlığı (bonnet phrygien)"
+    },
+    {
+     "harf": "B",
+     "metin": "Defne çelengi"
+    },
+    {
+     "harf": "C",
+     "metin": "Miğfer"
+    },
+    {
+     "harf": "D",
+     "metin": "Başlık yok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: Frig başlığı; 1789, sans-culotte ve halk egemenliği çağrışımı (C022).",
+   "yanlis_gerekceleri": {
+    "B": "Defne çelengi zafer/şair simgesidir; burada Frig başlığı vardır (C022).",
+    "C": "Miğfer askerî bir başlıktır; Özgürlük Frig başlığı taşır (C022).",
+    "D": "Başlık vardır: Frig başlığı (C022)."
+   },
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Özgürlük'ün sol elinde ne tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Süngülü piyade tüfeği (1816 model)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kılıç (briquet)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tabanca"
+    },
+    {
+     "harf": "D",
+     "metin": "Meşale"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: sol elde 1816 model süngülü tüfek; sağ elinde tricolor bayrak (C023).",
+   "yanlis_gerekceleri": {
+    "B": "Briquet kılıç bereli işçidedir, Özgürlük'te değil (C029).",
+    "C": "Tabancalar sağdaki çocuğun elindedir (C026).",
+    "D": "Meşale bu eserde yoktur; sol elde süngülü tüfek bulunur (C023)."
+   },
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Devlet satın alması ne zaman ve kaça gerçekleşti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ağustos 1831, 3.000 frank"
+    },
+    {
+     "harf": "B",
+     "metin": "Temmuz 1831, 2.000 frank"
+    },
+    {
+     "harf": "C",
+     "metin": "Kasım 1874, 3.000 frank"
+    },
+    {
+     "harf": "D",
+     "metin": "Mayıs 1831, 5.000 frank"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Ağustos 1831, Commerce et Travaux publics bakanlığı, 3.000 frank (C014/C042).",
+   "yanlis_gerekceleri": {
+    "B": "2.000 frank Liste civile'nin Temmuz 1831 teklifidir; gerçekleşen alım 3.000 franktır (C042).",
+    "C": "1874 Louvre'a transferdir, satın alma değil; mülkiyet 1831'den beri devletedir (C048).",
+    "D": "Mayıs 1831 Salon sergilemesidir; alım Ağustos 1831'de 3.000 franktır (C041/C014)."
+   },
+   "kanit": [
+    "C014",
+    "C042"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 129"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 129"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 1830"
+    },
+    {
+     "harf": "D",
+     "metin": "MI 129"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: RF 129; ilk envanter 1875 (C011).",
+   "yanlis_gerekceleri": {
+    "B": "INV 129 bu eserin envanteri değildir; doğru numara RF 129'dur (C011).",
+    "C": "RF 1830 bir envanter numarası değildir; 1830 eserin tarihidir (C004/C011).",
+    "D": "MI 129 bu eserin envanteri değildir; doğru numara RF 129'dur (C011)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1874'te esere ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Luxembourg'dan Louvre'a transfer"
+    },
+    {
+     "harf": "B",
+     "metin": "Devlet tarafından ilk satın alma"
+    },
+    {
+     "harf": "C",
+     "metin": "Sanatçıya iade"
+    },
+    {
+     "harf": "D",
+     "metin": "İlk envanter kaydı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Kasım 1874 transfer; mülkiyet 1831'den beri devlette; envanter 1875 (C048/C012).",
+   "yanlis_gerekceleri": {
+    "B": "İlk satın alma Ağustos 1831'dedir; 1874 bir transferdir (C014/C048).",
+    "C": "Sanatçıya emanet ~1839'dadır (C043).",
+    "D": "İlk envanter 1875'tedir (RF 129); 1874 transferdir (C011/C048)."
+   },
+   "kanit": [
+    "C048",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kompozisyon şeması nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Piramidal; cesetli taban kaide gibi"
+    },
+    {
+     "harf": "B",
+     "metin": "Yatay şerit / friz"
+    },
+    {
+     "harf": "C",
+     "metin": "Dairesel / mandala"
+    },
+    {
+     "harf": "D",
+     "metin": "Çapraz simetri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: piramidal kompozisyon; cesetli taban bir kaide gibi zafer imgelerini taşır (C034).",
+   "yanlis_gerekceleri": {
+    "B": "Yatay friz düzeni yoktur; figürler piramit oluşturur (C034).",
+    "C": "Dairesel düzen yoktur; kompozisyon piramidaldir (C034).",
+    "D": "Çapraz simetri yoktur; piramidal şema ve iki plan vardır (C034)."
+   },
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "2023–2024 restorasyonunu kimler yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bénédicte Trémolières ve Laurence Mugniot"
+    },
+    {
+     "harf": "B",
+     "metin": "Raymond Lepage ve Paul Maridat"
+    },
+    {
+     "harf": "C",
+     "metin": "David Cueco ve Claire Bergeaud"
+    },
+    {
+     "harf": "D",
+     "metin": "Lucien Aubert"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Ekim 2023–Nisan 2024, Trémolières/Mugniot (temizlik + réintégration) (C053).",
+   "yanlis_gerekceleri": {
+    "B": "Lepage/Maridat yaz 1949 restorasyonudur (rentoilage) (C050).",
+    "C": "Cueco/Bergeaud Ocak–Şubat 1999 restorasyonudur (şasi değişimi) (C051).",
+    "D": "Lucien Aubert 1920 restorasyonudur (C049)."
+   },
+   "kanit": [
+    "C053"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Özgürlük'ün sağındaki çocuğun başlığı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siyah kadife öğrenci beresi (faluche)"
+    },
+    {
+     "harf": "B",
+     "metin": "Frig başlığı"
+    },
+    {
+     "harf": "C",
+     "metin": "Shako"
+    },
+    {
+     "harf": "D",
+     "metin": "Bikorn (Bonapartist)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: sağdaki çocuk faluche, iki süvari tabancası, büyük fişeklik (C026).",
+   "yanlis_gerekceleri": {
+    "B": "Frig başlığı Özgürlük figüründedir (C022).",
+    "C": "Shako İsviçreli muhafızın başlığıdır (C031).",
+    "D": "Bikorn École Polytechnique öğrencisinindir (C032)."
+   },
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eser hangi akıma aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Romantizm"
+    },
+    {
+     "harf": "B",
+     "metin": "Neoklasik / akademik"
+    },
+    {
+     "harf": "C",
+     "metin": "İzlenimcilik"
+    },
+    {
+     "harf": "D",
+     "metin": "Barok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K7 P135 Romantizm; K5 (Noon 2003): Delacroix Romantic okulun lideri (C015).",
+   "yanlis_gerekceleri": {
+    "B": "Delacroix akademik sanatın kesin çizgi vurgusunu reddetti; Romantic okulun lideriydi (C015).",
+    "C": "İzlenimcilik sonraki bir akımdır; eser Romantizm'dir (C015).",
+    "D": "Barok önceki bir dönemdir; eser 1830 Romantizm'dir (C015)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo 1789 Fransız Devrimi'ni gösterir.",
+   "dogru": false,
+   "aciklama": "Yanlış: 27–29 Temmuz 1830 Trois Glorieuses'u gösterir; 1789 yaygın yanlış anlamadır (C018/C037).",
+   "kanit": [
+    "C018",
+    "C037"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Özgürlük figürü Frig başlığı taşır; 1789 Devrimi'ni, sans-culotte'ları ve halk egemenliğini çağrıştırır.",
+   "dogru": true,
+   "aciklama": "Doğru (K3/K4, C022).",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser 1874'te devlet tarafından ilk kez satın alınmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Ağustos 1831'de satın alındı; 1874 Luxembourg'dan Louvre'a transferdir (C014/C048).",
+   "kanit": [
+    "C014",
+    "C048"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "2023–2024 restorasyonunda elbisenin özgün renginin açık gri + altın yansımalar olduğu, değişimin 1949 restorasyonuna atfedildiği bildirildi.",
+   "dogru": true,
+   "aciklama": "Doğru (K5 basın atıf zinciri, C082); sarı ↔ açık gri + altın ihtilafı D10'dur (C073).",
+   "kanit": [
+    "C082",
+    "C053"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Güncel Louvre kaydına göre imza \"Eug. Delacroix.1830\" kırmızı yağlıboya ile sağda yarı yüksekliktedir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1, C010); eski notice \"on the back\" der (D7, C070).",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil Louvre kaydı (K1/K2) ile arşiv notice (K3) arasındaki iç çelişkileri (D5 Luxembourg, D7 imza, E10 dizgi) kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "K1 güncel öncelik",
+    "D5 1863 ↔ 1832–33",
+    "D7 ön yüz ↔ on the back",
+    "E10 \"1983 , 1831\"",
+    "arşiv tarihi beyanı"
+   ],
+   "kanit": [
+    "C068",
+    "C070",
+    "C087",
+    "C010",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Silindir şapkalı adamın kimliği tartışmasını (otoportre reddi, Arago/Villot, Guillemardet, \"may be\") ve diz çöken figür uyuşmazlığını değerlendirin.",
+   "beklenen_ogeler": [
+    "Toussaint 1982 reddi",
+    "Pool 1969 uzlaşı yok",
+    "Guillemardet forse",
+    "D9 FR/EN ↔ it",
+    "görsel teyit yok"
+   ],
+   "kanit": [
+    "C071",
+    "C072",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Elbise rengi tartışmasını (sarı ↔ açık gri + altın ↔ ekru) restorasyon tarihi ve görsel sürüm farklarıyla ilişkilendirin.",
+   "beklenen_ogeler": [
+    "K3/K4 sarı",
+    "C082 2024 açık gri + altın",
+    "1949 atfı",
+    "K7 ecru",
+    "yerel sürüm doğrulanmadı"
+   ],
+   "kanit": [
+    "C073",
+    "C082",
+    "C053",
+    "C085"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Marianne alegorisinin devrimler ve Cumhuriyet simgesi olarak alımlanmasını; Gavroche anakronizmini tartışın.",
+   "beklenen_ogeler": [
+    "Frig başlığı 1789",
+    "Marianne/Cumhuriyet",
+    "Gavroche roman 1862",
+    "anakronik adlandırma",
+    "etki belgelenmemiş"
+   ],
+   "kanit": [
+    "C024",
+    "C055",
+    "C077",
+    "C026",
+    "C018"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Argan'ın \"modern resim tarihinin ilk politik tablosu\" ve Guernica öncüsü önermesini; Medusa'nın Salı ile hareket yönü karşılaştırmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Argan ilk politik tablo",
+    "Guernica öncüsü (yorum)",
+    "Medusa hareket geri",
+    "Özgürlük hareket ileri",
+    "belgesel etki değil"
+   ],
+   "kanit": [
+    "C038",
+    "C079",
+    "C034",
+    "C036"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Piramidal kompozisyonu ve cesetli tabanın kaide işlevini kaynak betiminde bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): piramit, cesetli taban bir kaide gibi.",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Özgürlük'ün Frig başlığını, sağ eldeki tricolor bayrağı ve sol eldeki süngülü tüfeği betimden izle.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): Frig başlığı, bayrak, 1816 süngülü tüfek.",
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Mavi-beyaz-kırmızı renk karşıtlıklarını (yaralı adamın ceketi/kuşağı/gömleği; beyaz kayışlar/tozluklar) betimden bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): renk yankıları, gri ton kırmızıyı yüceltir.",
+   "kanit": [
+    "C030",
+    "C035"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Notre-Dame kulelerini ve topoğrafik hatayı (Sol Yaka yönü, hayal ürünü evler) betimden değerlendir.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): kuleler Paris'i işaret eder ama yön hatalı.",
+   "kanit": [
+    "C033"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sağdaki çocuğun faluche beresini, büyük fişekliğini ve iki süvari tabancasını betimden bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): faluche, fişeklik, tabancalar, savaş çığlığı.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Le 28 juillet 1830. La Liberté guidant le peuple; Delacroix; 1830; tuval üzerine yağlıboya; 260×325 cm; Louvre RF 129, Salle 700; devlet alımı Ağustos 1831, 3.000 frank.",
+   "kanit": [
+    "C001",
+    "C004",
+    "C007",
+    "C008",
+    "C011",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + bağlam?",
+   "arka": "27–29 Temmuz 1830 Trois Glorieuses; Charles X → Louis-Philippe; 1789 DEĞİL (yaygın yanlış).",
+   "kanit": [
+    "C018",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Özgürlük alegorisi?",
+   "arka": "Frig başlığı; sağda tricolor, solda 1816 süngülü tüfek; yalınayak; Marianne (Fransa/Cumhuriyet) okuması; 1789/sans-culotte/halk egemenliği.",
+   "kanit": [
+    "C022",
+    "C023",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenans özeti?",
+   "arka": "1831 Salon (livret 511) → Ağustos 1831 alım (3.000 fr) → Luxembourg 1832–33 → ~1839 sanatçı/Frépillon → 1848–49 Jame/Lyon → 1855 Exposition universelle → 1863–74 Luxembourg → Kasım 1874 transfer → 1875 envanter RF 129.",
+   "kanit": [
+    "C041",
+    "C042",
+    "C043",
+    "C047",
+    "C048"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Restorasyon zinciri?",
+   "arka": "1920 Aubert; yaz 1949 Lepage/Maridat (rentoilage) + Zezzos; Ocak–Şubat 1999 Cueco/Bergeaud (şasi); Ekim 2023–Nisan 2024 Trémolières/Mugniot.",
+   "kanit": [
+    "C049",
+    "C050",
+    "C051",
+    "C053"
+   ]
+  }
+ ]
+}

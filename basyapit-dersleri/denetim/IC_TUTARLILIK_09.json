@@ -1,0 +1,82 @@
+[
+ {
+  "eser_id": "Q500242",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": " \"aciklama\": \"Doğru (K4). Beyin hipotezi ise bir yorumdur, olgu değil (C013).\",",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "3. Beyin/rahim hipotezlerini olgu değil yorum olarak değerlendirin (yorum) [C013][C014].",
+  "aciklama": "DY05 sorusu tavanın yaklaşık dört yılda boyanmasını sorar (kanıt C007); gerekçesindeki 'Beyin hipotezi ise bir yorumdur, olgu değil (C013)' cümlesi bu soruyla ilgisiz, anatomi-hipotezler sorusunun (AU03) ve derslerdeki hipotez etkinliğinin konusudur — gerekçe metni kısmen başka soruya ait. Cevap doğru ve yanlış olgu öğretilmediği için önem düşük.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q500985",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Spring hiç boyanmadı (sadece gravür için çizim), bu yüzden beş panel günümüze ulaştı",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Spring (1565, gravür için çizim, Bruegel tarafından hiç boyanmadı, ölümünden sonra oğlu ve başkaları tarafından boyandı)",
+  "aciklama": "Seri 'Spring' paneli hakkında olay çelişkisi: Orta ders panelin hiç boyanmadığını ve bu yüzden yalnız beş panelin kaldığını söylerken (DERS.json C012 de niteliksiz 'hiç boyanmadı' der), İleri ders aynı panelin Bruegel'in ölümünden sonra oğlu ve başkaları tarafından boyandığını yazar.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q500985",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "1434, Van Eyck Arnolfini Portresi'nin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
+  "aciklama": "CS02 C şıkkının yanlış-gerekçesi Bosch'un Dünyevi Zevkler Bahçesi'ni 1600'e tarihlendiriyor; oysa eser c. 1490–1510 tarihlidir ve Bosch 1516'da öldü, yani 1600 tarihli bir Bosch eseri imkânsız. Gerekçe yanlış olgu söylüyor (aynı sorudaki Arnolfini 1434 çapraz referansı doğru; Bosch'a ait olan yanlış).",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q500985",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "\"metin\": \"Alp'te değil\"",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Sivri dağ zirveleri Low Countries'da bulunmaz; bu, manzaranın hayali ya da kompozit olduğunu gösterir; Bruegel, Alp zirvelerini yerel vadiye yerleştirir",
+  "aciklama": "CS08 C şıkkı ('Alp'te değil') savunulabilir: derse göre zirveler hayali ve 'yerel vadiye yerleştirilmiş', dolayısıyla sahne Alpler'de değil — A ('Low Countries'da yoktur') kadar C de doğru okunabilir; 'Hayali Alp.' yanlış-gerekçesi C'yi çürütmez. Birden fazla şık savunulabilir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q500985",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Bir fresk döngüsü (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant).",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "\"soru\": \"Teknik/destek?\"",
+  "aciklama": "CS05 (seri sorusu) D şıkkının yanlış-gerekçesi 'bu eserin tekniği/desteği' ifadesiyle CS03'ün konusunu (Teknik/destek?) yanıtlıyor — gerekçe başka soruya ait; seri sorusu için 'bu eser bir fresk döngüsünün parçası değildir' denmeliydi.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q512755",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Geç dönem konumu iki kaynakla desteklenir: Hermitage \"ölümünden hemen önce, aylar içinde\" der; enwiki (Durham 176) \"1669'daki ölümünden itibaren iki yıl içinde tamamlanmış olması muhtemel\" der",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "İki ifade uyumludur: ikisi de eseri 1669 öncesindeki son döneme koyar; \"likely\" ve \"just months\" ifadeleri kesinlik değil, güçlü bir geç dönem konumudur [C009][C014].",
+  "aciklama": "ORTA §3 (ve ILERI §2'de '1669'daki ölümden itibaren' şekliyle) Durham'ın 'likely completed within two years of his death in 1669' (ölümden ÖNCEKİ iki yıl) ifadesini 'ölümünden itibaren iki yıl içinde' yani ölümden SONRA diye ters çevirir; bu hâliyle cümle eserin 1669'daki ölümünden sonra tamamlandığını söyler. ILERI §4 ise aynı ifadeleri 'ikisi de eseri 1669 öncesindeki son döneme koyar' diye yorumlar; BASLANGIC ve CS05 doğru cevabı da 'ölümünden hemen önce' der. Tamamlanma olayının ölüme göre yönü (önce/sonra) iki cümlede ters verilmiştir.",
+  "onem": "YÜKSEK"
+ },
+ {
+  "eser_id": "Q5826309",
+  "tur": "E",
+  "dosya_1": "DERS.json",
+  "alinti_1": "21 Temmuz 1962 devlet anlaşması → 2 Haziran 1973 Stedelijk ödünç → Rijksmuseum Vincent van Gogh → 1 Temmuz 1994 Van Gogh Museum.",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "21 Temmuz 1962 devlet anlaşması → 2 Haziran 1973'e dek Stedelijk Museum ödünç → Rijksmuseum Vincent van Gogh → 1 Temmuz 1994'ten beri Van Gogh Museum [C032].",
+  "aciklama": "C032 (Van Gogh kopyası provenans zinciri) aynı olayı ters yönde veriyor: DERS.json zincirinde her tarih olay tarihidir (10 Temmuz 1962 Vakıf; 1 Temmuz 1994 Van Gogh Museum), dolayısıyla '2 Haziran 1973 Stedelik ödünç' ödünçverişin o tarihte başladığını okutur; İleri ders ise ödünçverişin '2 Haziran 1973'e dek' sürdüğünü, yani o gün sona erdiğini söylüyor. KANIT_DOSYASI.md C032 ('Tam zincir birebir') ve SORULAR.json CS06-D gerekçesi de 'e dek' der; yalnız DERS.json aynasında yön sözcüğü düşerek olayın tarih yönü ters çevrilmiş.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q5856992",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": " \"C\": \"Panofsky (ahşap destek) bu eserin tekniği/desteği değildir; doğru yanıt Pognon.\",",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": " \"soru\": \"Şubat'ı \\\"rustic painter\\\"a veren yorum kime aittir?\",",
+  "aciklama": "CS02 'rustic painter' atfının kime ait olduğunu sorar (doğru cevap Pognon, ana gerekçe doğru); ancak C şıkkının yanlış-gerekçesi teknik/destek sorusuna ait bir şablonla yazılmış ve 'Panofsky (ahşap destek)' diyerek yanlış olgu söylüyor: Panofsky bir sanat tarihçisidir, ahşap destek değil.",
+  "onem": "ORTA"
+ }
+]

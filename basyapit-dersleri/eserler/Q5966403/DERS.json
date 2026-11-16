@@ -1,0 +1,988 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5966403",
+ "sanatci_id": "berthe-morisot",
+ "baslik": "Beşik",
+ "ozgun_baslik": "Le Berceau",
+ "kunye": {
+  "sanatci": "Berthe Morisot",
+  "sanatci_yasam": "1841–1895",
+  "tarih": "1872",
+  "tarih_belirsizlik": "Yıl kesinliği (WD precision 9); Commons Yorck dosyası metadata 1873 (ihtilaf C044)",
+  "teknik": "Tuval üzerine yağlıboya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 56,
+   "genislik": 46.5
+  },
+  "muze": "Musée d'Orsay, Paris",
+  "envanter": "RF 2849",
+  "edinim": "1930 satın alma (achat), Musées nationaux / Louvre; 1947–1986 Jeu de Paume; 1986 Orsay",
+  "konum": "Niveau supérieur, Salle 32",
+  "telif_durumu": "Kamu malı (ölüm 1895, >100 yıl); Commons PD; müze fotoğraf hakları ayrı (© RMN / Patrice Schmidt / Michel Urtado / R.G. Ojeda)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Berthe_Morisot_-_Le_berceau.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture); WD P18",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük; BU OTURUMDA İNCELENEMEDİ (vision kotası)",
+   "cozunurluk": "4104×5000 (10,8 MB); Yorck alternatifi 2024×2604",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C054); GZ TASLAK; kompozisyon Orsay (A) + wiki/TV5 (B) metninden; müze fotoğraf künyeleri ayrı (C062); Yorck dosyası 1873 metadata ihtilafı (C044)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 451
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1307
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2780
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-aile-içinde-kalan-bir-tablo"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-ve-model-edmanın-bıraktığı-fırça"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-diyagonal-ve-tül"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-seküler-madone"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-fırça-rejimleri"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Orsay birincil kaydı ve POP Joconde ile künyeyi (1872, RF 2849, Salle 32, modeller Edma ve Blanche) doğrular.",
+  "Birincil kayıtlar arası genişlik (46↔46,5) ve yapım yeri (Paris↔Maurecourt) ihtilaflarını yönetir.",
+  "Diyagonal kompozisyonu ve tül jestini kaynak betimleriyle analiz eder; görsel doğrulama sınırını beyan eder.",
+  "Eseri 1874 ilk Empresyonist sergisi ve Morisot'nun tek kadın katılımcı konumuyla bağlamlandırır.",
+  "Seküler Madone ve kapanmışlık okumalarını yorum olarak ayırır; olgu ile yorumu birbirine karıştırmaz."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Maternité",
+   "tanim": "Annelik teması; Orsay'ye göre Morisot sanatındaki ilk annelik imgesi Le Berceau'dur.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Voilage (tül)",
+   "tanim": "Beşiği örten yarı saydam kumaş; Edma onu izleyici ile bebek arasına çeker.",
+   "kanit": [
+    "C017",
+    "C026"
+   ]
+  },
+  {
+   "ad": "Première exposition impressionniste",
+   "tanim": "1874, Atelier Nadar, Paris; Salon dışı bağımsız sergi; Morisot tek kadın katılımcı.",
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Jeu de Paume",
+   "tanim": "Louvre'un Empresyonist galerisi; eser 1947–1986 arasında burada sergilendi.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Scène de genre",
+   "tanim": "Gündelik hayat sahnesi; burada yatak odasının mahrem tür sahnesi (Rey).",
+   "kanit": [
+    "C023",
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Berthe Morisot (Bourges 1841 – Paris 1895).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Özgün ad \"Le Berceau\"; EN \"The Cradle\", IT \"La culla\", TR \"Beşik\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1872'de yapıldı (yıl kesinliği; WD precision 9).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlıboya (huile sur toile).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "56 × 46,5 cm; çerçeveli 80 × 71 cm (güncel Orsay; genişlik ihtilafı → C041).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter RF 2849; Musée d'Orsay, Niveau supérieur Salle 32.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "1930 satın alma (achat) ile Musées nationaux / Louvre; 1947–1986 Jeu de Paume; 1986 Orsay'a affectation.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Provenans: Pontillon koleksiyonu → Mme Forget (née Blanche Pontillon) → 1930 devlet.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Model: abla Edma Pontillon (née Edma Morisot, 1839–1921); bebek Blanche Pontillon (1871–1941, future Mme Pierre Forget), sanatçının yeğeni.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Morisot sanatındaki ilk annelik (maternité) imgesi; sonradan gözde teması.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Orsay'ye göre Morisot'nun tartışmasız en ünlü tablosu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "1874 ilk Empresyonist sergisi: Atelier Nadar, Paris, 15/04–15/05/1874; katalog n°104.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Morisot grupla sergileyen ilk kadın (1874); tek kadın katılımcı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K9",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sergide tablo az dikkat çekti; önemli eleştirmenler grâce/elégance not etti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Satılmadı; Morisot yaşamında bir daha sergilemedi; model ailesinde kaldı → 1930 Louvre.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kompozisyon diyagonali: annenin bakışı + bükülü sol kol + bebeğin bükülü kolu + kapalı gözler; perde hareketi vurgular; diyagonal anneyi çocuğa bağlar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Edma, beşiğin tülünü (voilage) izleyici ile bebek arasına çeker; mahremiyet ve koruyucu sevgi güçlenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Konu indeksleri: berceau/femme/nourrisson/sommeil/amour maternel; \"portrait collectif\", \"scène\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Devlet malı (propriété de l'Etat); Joconde kaydı 000PE003996; MUSEO M5060.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Joconde otorite ad biçimi: \"MANET Berthe / MORISOT Berthe (née)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Ölüm sonrası sergiler: Durand-Ruel 1896/1902; Bernheim-Jeune 1919/1929 n°21; Orangerie 1933 n°102; Louvre 1945 n°110; uluslararası turneler; 2008 Impressionistinnen; 2018–19 retrospektif cat. 19; 2021–22 Beyeler Close-up; 2024 Torino; 2025 Marmottan L'Empire du sommeil; 2025–26 Tokyo Intérieurs impressionnistes.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Edma da ressamdı; Adolphe Pontillon ile evlenince resmi bıraktı (Madeline 1999 atfıyla).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Yatak odasında mahrem tür sahnesi (scène de genre intime, chambre à coucher) (Rey 2002).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Bebek: tombul yüz, bükülü kol, saçta kurdele (\"un nœud dans les cheveux\"), beyaz elbise; tülün ardından seçilir (Rey 2002).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Kadın: profilden, fauteuil'de oturur; siyah kadife tour de cou; beyaz dantel gömlek; lacivert-siyah çizgili robe d'intérieur; melankolik poz; sağ eli tülü aralar (Rey 2002).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Tülde özgür fırça: \"blancs détrempés, gris frottés, petits points roses parsemés sur le bord du tissu\"; annenin net hatlarıyla karşıtlık (Stuckey/Scott/Lindsay 1987).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Renkler chiaroscuro geçişsiz yan yana; sınırlı palet; beşik sağ yarıyı kaplar, piramidal kütle (Adorno 1988; enwiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K8",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Albert Wolff'un cinsiyetçi eleştirisi: \"Chez elle, la grâce féminine se maintient au milieu des débordements d'un esprit en délire.\" (Brocvielle 2017).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Morisot 1874'te Eugène Manet (Édouard'ın kardeşi) ile evlendi; nikâhta \"sans profession\", eşi \"propriétaire\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Manet 1868'de Ville-d'Avray'de Fantin-Latour'ya Morisot kardeşler için \"les demoiselles sont charmantes...\" dedi (Dagen, Le Monde 2019).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Corot'nun özel dersleri Morisot'nun tekniğine katkı verdi; École des Beaux-Arts kadınlara kapalıydı (TV5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Modern \"Madone\" okuması: Meryem-Çocuk geleneğine gündelik seküler yankı (\"pas de Sainte Marie, mais la propre sœur de l'artiste...\") (TV5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "TV5 ve frwiki, annelik şefkatinin ardında \"ev içi role kapanmışlık\" okuması sunar; frwiki \"sans doute\" ihtiyatını korur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9",
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Başlık sadeliği / retorik evrim: \"Morisot abandons all anecdotal picturesqueness and the title take on a tasteful simplicity...\" (Lobstein 1995).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Eser kamu malı (ölüm 1895, >100 yıl); her iki Commons dosyası PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K10",
+    "K12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "1874'te istenen fiyat 800 frank (enwiki; bozuk \"John Reald/Hackette\" künyesi, muhtemelen Rewald/Hachette; doğrulanmadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "Manet etkisi; Morisot'nun Manet ile 1868'de Louvre'da tanıştığı (enwiki atıfsız; frwiki Ville-d'Avray anekdotu farklı olay).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Monet'nin \"Jean Monet at his Cradle\" (1867) ile birlikte çocukluğun yeni temsili (enwiki atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Alternatif başlık \"Mme Pontillon et sa fille Blanche\" (WD P1476; zayıf ref).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "İlk sahip Adolphe Pontillon (1894-09-09'a dek), sonra Blanche (1930'a dek) (WD P127 referanssız; Orsay kişi/tarih vermez).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K10",
+    "K11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Genişlik ihtilafı: güncel Orsay 46,5 ↔ enwiki/frwiki/itwiki/JocondeLab/POP/eski Orsay IT 46 (yükseklik her yerde 56).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Yapım yeri ihtilafı: Orsay commentaire \"Paris\" ↔ Joconde/POP LIEUX \"Maurecourt (lieu d'exécution)\"; iki birincil kayıt çelişir, çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Wildenstein-Bataille katalog no: Orsay Sources 1961 n°61 ↔ POP BIBL \"BATAILLE ET WILDENSTEIN 25\"; metne erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Commons Yorck dosyası (Berthe Morisot 008.jpg) metadata tarihi 1873 ↔ diğer tüm kaynaklar 1872; görsel metadata hatası adayı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K12",
+    "K1",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "1874 karşılama ihtilafı: Orsay \"à peine remarqué\" + övgü ↔ itwiki \"coro indignato\" + yaşlı usta anekdotu; müze kaydıyla desteklenmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K8",
+    "K9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "enwiki ad yazımı \"Portillon\" ↔ Orsay/POP/frwiki \"Pontillon\"; birincil Pontillon'u teyit eder.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "data \"elini çenesine dayamış\": çekilen metinlerde yok; Orsay \"bras gauche replié\" + sağ el tülde; görsel doğrulama gerekir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K7",
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "data \"tülün pembe kurdeleli kenarı\": Stuckey \"petits points roses\" (pembe noktalar) der; \"kurdele\" doğrulanmadı (bebekte saç kurdelesı ayrı, C024).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7",
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "data \"Cassatt ile birlikte öncüler\": doğrudan destek yok; yalnız Orsay 2008 \"Impressionistinnen\" sergi listesi dolaylı bağ.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Moffett \"The New Painting\" katalog yılı: frwiki 1989 ↔ Orsay Sources 1986 (n°8); baskı farkı olabilir, çözülmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "frwiki TV5 atıf tarihi \"9 février 2022\" ↔ sayfa \"Publié 17/06/2021 – Modifié 13/10/2023\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7",
+    "K9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "WD P180 ince taneli depicts çoğu referanssız; görsel doğrulama yapılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K10",
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "data/eser_notlari \"beşiğe eğilmiş\": frwiki \"assise dans un fauteuil\" (oturur) der; \"eğilmiş\" görsel nüans, incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7",
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası); yalnız metadata + lisans + çözünürlük; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "Kitap metinleri erişilmedi (Madeline, Rey, Stuckey/Scott/Lindsay, Adorno, Cricco/Di Teodoro, Lobstein, Brocvielle, Wildenstein/Bataille, Moffett, Patry/Myers, Compin/Roquebert, Cogeval, Reald/Rewald); yalnız kaynakçada anıldı / wiki alıntısı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K6",
+    "K7",
+    "K8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "TV5 1872 bağlamı: modern zorunlu askerlik, Lewis Carroll \"Alice à travers le miroir\", Bizet \"L'Arlésienne\"; \"on parle de femmes, mais l'action c'est pour les hommes\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Morisot'nun erken ölümünden sonra eseri az değer gördü; 20. yüzyıl sonunda yeniden keşfedildi (TV5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Morisot daha çok kayınbiraderi Édouard Manet'nin modeli olarak tanınır (TV5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "itwiki kompozisyon betimi: diyagonal sol üst köşeden karşı köşeye; bükülü kollar \"psikolojik yakınlık\"; Cricco/Di Teodoro \"değerli bir çiçek gibi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "1874 sergisinde ziyaretçi ve eleştirmenlerin gözü Monet'nin \"Impression, soleil levant\" tablosundaydı (TV5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "Orsay \"diğer eserleri\" listesinde Edma'nın 1871 portresi var; Edma yineleyen bir modeldi (frwiki \"comme dans plusieurs œuvres\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Fotoğraf künyeleri: Orsay © Patrice Schmidt / Michel Urtado (RMN); POP © R.G. Ojeda (RMN, \"utilisation soumise à autorisation\"); COPY © Direction des Musées de France, 1986. Eser PD olsa da fotoğraf hakları ayrı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Tül, görünürlük ile mahremiyet arasında müzakere eden bir eşik olarak okunabilir: bebeği hem gösterir hem saklar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1",
+    "K9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C064",
+   "ifade": "Annenin bakışı bir özen (care) hattı olarak okunabilir: dikkat, bekleyiş, koruma; diyagonal iki yaşamı bağlar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C065",
+   "ifade": "Tülün özgür fırçası ile annenin net hatları arasındaki karşıtlık, iki temsil rejimi (geçici ↔ kalıcı) gerilimi olarak okunabilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Musée d'Orsay",
+   "belge": "FR eser kaydı (ID 1132; Dernière modification 2026-09-09)",
+   "url": "https://web.archive.org/web/20260912050026/https://www.musee-orsay.fr/fr/oeuvres/le-berceau-1132",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); arşiv 200 (2026-09-12)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Musée d'Orsay",
+   "belge": "EN eser kaydı (aynı ID; URL hreflang'den)",
+   "url": "https://web.archive.org/web/20260811055813/https://www.musee-orsay.fr/en/artworks/le-berceau-1132",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-08-11); canlı denenmedi (FR 403)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Musée d'Orsay",
+   "belge": "eski IT \"opere commentate\" (la-culla-9206, © 2006)",
+   "url": "https://web.archive.org/web/20170312040551/http://www.musee-orsay.fr/it/collezioni/opere-commentate/pittura/commentaire_id/la-culla-9206.html?tx_commentaire_pi1%5BpidLi%5D=509&tx_commentaire_pi1%5Bfrom%5D=841&cHash=f8e8ce6d58",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2017-03-12); URL itwiki urlarchivio",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Ministère de la Culture / POP",
+   "belge": "Joconde kaydı 000PE003996 (DMAJ 2026-02-23)",
+   "url": "https://pop.culture.gouv.fr/notice/joconde/000PE003996",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 200 (araştırma + Denetim B yeniden açılış)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "JocondeLab (IRI)",
+   "belge": "notice 57554 (WD P854 ref)",
+   "url": "https://web.archive.org/web/20260201161101/http://jocondelab.iri-research.org/jocondelab/notice/57554/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 502; arşiv 200 (2026-02-01)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"The Cradle (Morisot)\" wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Cradle%20(Morisot)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "2×429 (Retry-After 11 sn) → 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikipedia (fr)",
+   "belge": "\"Le Berceau\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Le%20Berceau&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"La culla (Morisot)\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=La%20culla%20(Morisot)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K9",
+   "kurum": "TV5 Monde",
+   "belge": "\"Berthe Morisot, Le Berceau\" pedagogik fiş + transkripsiyon (Publié 17/06/2021, Modifié 13/10/2023)",
+   "url": "https://web.archive.org/web/20250430112722/https://enseigner.tv5monde.com/fiches-pedagogiques-fle/berthe-morisot-le-berceau",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-04-30)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K10",
+   "kurum": "Wikidata",
+   "belge": "Q5966403 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q5966403.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K11",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (34 QID; ids parametreli; ham cache Q5966403-qid-labels.json)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K12",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Berthe Morisot - Le berceau.jpg + File:Berthe Morisot 008.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_Le_berceau.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "İzlenim, Gün Doğumu (Impression, soleil levant)",
+   "sanatci": "Claude Monet",
+   "kurum": "Musée Marmottan Monet, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Aynı 1874 sergisinde ziyaretçi ilgisi Monet'nin tablosundaydı (TV5); resepsiyon ve kanon karşılaştırması.",
+   "kanit": [
+    "C060",
+    "C012"
+   ]
+  },
+  {
+   "eser": "Mavi Koltukta Küçük Kız (Little Girl in a Blue Armchair)",
+   "sanatci": "Mary Cassatt",
+   "kurum": "National Gallery of Art, Washington",
+   "mufredat_ici": true,
+   "gerekce": "İki sanatçı 2008 \"Impressionistinnen\" sergisinde bir araya getirildi (Orsay sergi listesi); çocukluk temsili karşılaştırması önerisi (yorum). \"Birlikte öncüler\" iddiası kaynaklarda doğrulanmadı (E).",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "eser": "Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère)",
+   "sanatci": "Édouard Manet",
+   "kurum": "Courtauld Gallery, Londra",
+   "mufredat_ici": true,
+   "gerekce": "Morisot, Manet çevresindeydi; Eugène Manet ile evlendi ve Édouard'ın modeli olarak tanındı; modern Parisli kadın ve bakış karşılaştırması (yorum).",
+   "kanit": [
+    "C029",
+    "C058"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Orsay FR/EN/IT (Wayback) + POP Joconde (canlı 200, 2026-11-14 yeniden açıldı; RF 2849/1872/Maurecourt/W-B 25/56H;46L/M5060 cache ile aynı) + JocondeLab (Wayback) yeniden okundu; künye/provenance/model/sergi doğrulandı. Birincil iç çelişkileri: genişlik 46↔46,5 (C041), yapım yeri Paris↔Maurecourt (C042), W-B no 61↔25 (C043). en/fr/it wikitext + TV5 yeniden okundu; 6 D + 14 E açık. Görsel K12 metadata only → İNCELENEMEDİ (C054); GZ TASLAK. Kitap metinleri erişilmedi (C055). Orsay canlı 403, JocondeLab canlı 502, TV5 canlı 403 (engeller sürüyor).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Özgün ad: data ozgun \"The Cradle\" EN adıdır; özgün ad Fransızca \"Le Berceau\" (C002). Hata değil, not.",
+  "data \"elini çenesine dayamış\" → E (C047); çekilen metinlerde yok; görsel teyit gerekli.",
+  "data \"tülün pembe kurdeleli kenarı\" → E (C048); Stuckey \"pembe noktalar\" der; kurdele doğrulanmadı.",
+  "data \"Cassatt ile birlikte öncüler\" → E (C049); doğrudan kaynak yok; yalnız 2008 sergi listesi dolaylı.",
+  "data \"koyu lacivert elbise\" (düz) ↔ frwiki/Rey \"lacivert-siyah çizgili\" (C025); basitleştirme; desende görsel doğrulama gerekir.",
+  "data/eser_notlari \"beşiğe eğilmiş\" → E (C053); frwiki \"oturur\" der; \"eğilmiş\" görsel nüans, incelenmedi.",
+  "data \"kimi yorumcular yalnızlığı/kaygıyı okur, bu yorum tartışmalıdır\" → yorum; C033 \"sans doute\" ihtiyatı korundu.",
+  "data/eserler_onbellek gorseller[0].l boş → Commons \"Public domain\" (C035); kaynaklar [\"wikidata\"] → birincil Orsay/POP artık mevcut.",
+  "data/eser_ayrintilari nokta koordinatları + görsel betimler görsel inceleme gerektirir; bu turda incelenmedi.",
+  "Genişlik: WD P2049 (46,5) refsiz ama Orsay A ile teyitli; 46 varyantı D (C041). data çekirdek künye (1872, Orsay) A ile uyumlu.",
+  "Görsel İNCELENEMEDİ (C054); GZ TASLAK; müze fotoğraf hakları ayrı (C062); insan editör görsel teyidi zorunlu."
+ ]
+}

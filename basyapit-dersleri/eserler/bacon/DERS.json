@@ -1,0 +1,923 @@
+{
+ "surum": "1.0",
+ "eser_id": "francis-bacon|Three Studies for Figures at the Base of a Crucifixion",
+ "sanatci_id": "francis-bacon",
+ "baslik": "Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma",
+ "ozgun_baslik": "Three Studies for Figures at the Base of a Crucifixion",
+ "kunye": {
+  "sanatci": "Francis Bacon",
+  "sanatci_yasam": "1909–1992",
+  "tarih": "1944 (Tate özeti); katalog başlığı: c.1943-4",
+  "tarih_belirsizlik": "Katalog \"c.1943-4\" (circa aynen korunur); Petersfield yazıtı dönemi 1942-4'e genişletebilir (E3, belirsiz); Peppiatt Cromwell Place geç 1943 ↔ \"iki hafta, 1944\" (D2, tartışma).",
+  "teknik": "Yağlıboya ve pastel, Sundeala lif levha (hardboard benzeri; tuval DEĞİL). API özeti \"Oil paint on 3 boards\" pasteli anmaz (D4).",
+  "boyut_cm": {
+   "yukseklik": 94,
+   "genislik": 73.7
+  },
+  "muze": "Tate (Tate Britain), Londra",
+  "envanter": "N06171",
+  "edinim": "Presented by Eric Hall 1953; Hall 1945'te sanatçıdan satın aldı (Lefevre Gallery üzerinden olduğu varsayılır — E2, belirsiz).",
+  "konum": "Tate Britain, Londra. API anlık görüntüsünde oda kodu TG33 ↔ \"Fear and Freedom 1940-1955 (Room 16)\" tutarsız; kesin oda iddia edilmez (D9).",
+  "telif_durumu": "© Estate of Francis Bacon. All Rights Reserved, DACS 2026. TR/AB ölüm+70: koruma 2063'e dek. Adil kullanım (eğitim/eleştiri): görsel yeniden yayımlanmaz/kopyalanmaz; URL + lisans + kaynak referansı, atıf ve telif notu zorunlu; hukuki tavsiye değildir. Reprodüksiyon için Tate Picture Library (Pictoright)."
+ },
+ "gorsel": {
+  "url": "https://www.tate.org.uk/art/artworks/bacon-three-studies-for-figures-at-the-base-of-a-crucifixion-n06171",
+  "kaynak": "Tate — N06171 eser sayfası (master_images: triptik bütünü 1536×651). Alternatif referans: enwiki yerel dosya sayfası (non-free, 485×206).",
+  "lisans": "Fair use (enwiki NFUR); © Estate of Francis Bacon, DACS 2026 — serbest lisans YOK (masterImageCC boş). Görsel yeniden yayımlanmaz: adil kullanım (eğitim/eleştiri), atıf + telif notu zorunlu; hukuki tavsiye değildir.",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S1 master_images/additional_images, S8 enwiki imageinfo, S9 Commons imageinfo). Görsel BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda).",
+   "cozunurluk": "Tate triptik bütünü 1536×651 (128×54 / 256×108 / 730×309 / 1536×651); panel görselleri 1204×1536, 1183×1536, 1186×1536 (hangi dosyanın hangi panel olduğu API'de etiketli değil → eşleme YAPILMADI); enwiki 485×206 px, 47.649 bayt, image/jpeg.",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C057); GZ 5/5 TASLAK; kompozisyon \"kaynakların betimlediği\" (S3/A + S6/B). Commons'ta dosya yok (missing:true); enwiki fair-use gerekçesi projeye serbest lisans devretmez; hiçbir görsel indirilmedi/kopyalanmadı. enwiki dosya URL: https://upload.wikimedia.org/wikipedia/en/1/11/Three_Studies_for_Figures_at_the_Base_of_a_Crucifixion.jpg"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 423
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1422
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3126
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-envanter-ve-kaynak-katmanları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-yer-ve-provenans-katmanları"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-öncüller-ve-etki-zinciri"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynakların-betimlediği",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynakların-betimlediği",
+   "DERS_ILERI.md#4-biçimsel-dil-mekân-çizgi-ve-ağız"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-eumenides-ve-çarmıha-geriliş"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-konservasyon-kanıtı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-analiz"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-telif"
+  ],
+  "11": [
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri",
+   "SORULAR.json"
+  ],
+  "12": [
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça",
+   "KANIT_DOSYASI.md"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Tate birincil kaydıyla künyeyi doğrular (N06171, 1944 / katalog c.1943-4, Sundeala lif levha, ~94×74 cm, Tate Britain) ve T05858'in 1988'e ait ayrı eser olduğunu ayırt eder.",
+  "Eumenides/Oresteia ikonografisini ve çarmıha geriliş temasının seküler okumasını (ateizm, belirsiz article, attendant figures/predella) açıklar.",
+  "Kaynak betimine dayalı biçimsel analizi (turuncu zemin, siyah perspektif çizgileri, ağız/çığlık) doğrudan gözlemden ayırır; görsel incelenmediği için GZ sorularının TASLAK olduğunu bilir.",
+  "Picasso/Grünewald/Eisenstein etki zincirini ve savaş-Holokost okumasının sınırını (\"cannot be attributed to them\") kaynak düzeyleriyle değerlendirir.",
+  "\"İki hafta\" anlatısı ile IR/konservasyon kanıtı (\"protracted work\") gerilimini yönetir; telif/adil kullanım çerçevesini ve atıf kalıbını uygular."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Triptik",
+   "tanim": "Üç panelden oluşan resim düzeni; Renaissance altar geleneğinden gelir. Bacon'da paneller tek bir sürekli mekânı paylaşmaz, siyah hatlar merkeze yönlendirir.",
+   "kanit": [
+    "C008",
+    "C030"
+   ]
+  },
+  {
+   "ad": "Eumenides (Furyalar)",
+   "tanim": "Yunan mitinde öç tanrıçaları; Aeschylus'un Oresteia'sında ana katili Orestes'i kovalarlar, kanatsız ve \"black … so repulsive\" olarak geçerler.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "ad": "Sundeala",
+   "tanim": "Hafif lif levha (hardboard benzeri); tuvale ucuz alternatif. Bu eserde yağlıboya + pastel taşıyıcısı; \"sunta/yonga levha\" değildir.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "ad": "Predella",
+   "tanim": "Büyük bir altar parçasının alt katmanı; Bacon'ın figürleri gerçekleştirilmemiş büyük Çarmıha Geriliş kompozisyonunun \"attendant figures\"ı olarak tasarlandı.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Biyomorfik form",
+   "tanim": "Picasso'nun 1920'ler sonu organik/insansı biçimleri; Bacon'ın çarpıtma dilinin öncülü (kemiksi Monument projesi, plaj figürleri).",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Francis Bacon (1909–1992).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Özgün başlık: Three Studies for Figures at the Base of a Crucifixion.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tate özet kaydı tarihi: 1944 (dateText, start_year, end_year).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Katalog girdisinin başlık tarihi: \"c.1943-4\" (circa aynen korunur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sağ panel arkası yazıtı \"F. BACOn | PETERSFIEL[D]\": Bacon 1942'de Petersfield'a taşındı, erken 1943'e dek orada çalıştı; yazıt üretim dönemini 1942-4'e genişletme eğiliminde.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Teknik/destek: \"Oil and pastel on board\"; üç panel hafif Sundeala lif levha (hardboard benzeri, tuvale ucuz alternatif; de Maistre ve Sutherland da kullandı). Astar yok, ince gri ön wash; lean yağlıboya; soluk et tonları gri/beyaz katmanların geri sürtülmesi; sol panelde fikssiz chalk pastel saç telleri. Fiksatif riski: 1946 Sutherland mektubu (\"thank you so much for spraying the picture\", Painting 1946) — fiksatif boya yüzeyini kaldırdı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Boyut: sol 940×737, orta 940×738, sağ 940×734 mm (~94×74 cm); çerçeve (her biri) 1162×960×80 mm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Format: triptik, üç ayrı panel; S3 Beckmann Versuchung Triptychon (1936-7) eserini biçim+dinsel tema öncülü olarak anar; orta panel \"slightly larger\" çerçeve korur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Tate envanteri: N06171.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İkinci envanter NG6171 (National Gallery, London): yalnız Wikidata P217 (P195=Q180788, Tate URL ref'li, P813 2017-01-28) ve itwiki infobox'ında; Tate katalog girdisinde yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Koleksiyon Tate; sergileme Tate Britain, Londra (onDisplayAtTate: true).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Edinim: \"Presented by Eric Hall 1953\"; Hall'un bir önceki yıl Study of a Dog (1952, N06131) hediyesini izler. Tate 1950'de Figure in a Landscape'i satın almıştı; Contemporary Art Society iki eser aldı; Sutherland bu dönemde Gallery mütevellisiydi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Provenans: \"Purchased from the artist by Eric Hall, 1945\"; Lefevre Gallery üzerinden aldığı varsayılır (\"It is presumed …\"), sergiden önce sahip olma olasılığı açık. 1949 fotoğrafı panelleri bugünkü çerçevelerinde gösterir; çerçevelerin sanatçı seçimi olduğu varsayılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İlk sergileme: Lefevre Gallery, Londra, Nisan 1945; \"Recent Paintings by Francis Bacon, Frances Hodgkins, Henry Moore, Matthew Smith, Graham Sutherland\" karması, kat. no 2. Sonraki duraklar: Anglo-French Art Centre Kas.–Aralık 1946, Hanover Gallery 1949 (Study I/II/III), Venedik 1954, São Paulo 1959. Bacon'ın katkısı triptik + Figure in a Landscape (1945, N05941).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Figürler Eumenides / Furyalar (Erinyes); Bacon 1959'da Tate'e yazdığı mektupta doğruladı: \"David Sylvester is correct. They were sketches for the Eumenides which I intended to use at the base of a large Crucifixion which I may do still.\" ([9 Jan. 1959], Tate Gallery cataloguing files). S4: başlık Hristiyan resminin tanık figürlerini çağrıştırır, ama yaratıklar öç tanrıçaları Furyalar'dır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Esin: Aeschylus, Oresteia; Eumenides ana katili Orestes'i kovalar; oyunda kanatsız ve \"black they are, and so repulsive\". Aracı kaynaklar: T.S. Eliot The Family Reunion (1939) ve W.B. Stanford Aeschylus in his Style (1942).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Çarmıha geriliş sahnesi yok; Bacon ateistti, belirsiz article'ı (\"the base of a Crucifixion\") vurguladı; 1962: \"as a non-believer, it was just an act of man's behaviour, a way of behaviour to another.\"; \"Greek mythology is even further from us than Christianity\". Poetika: 1955 \"re-creation of an event rather than an illustration of an object\"; 1962 \"man … is an accident … a completely futile being\"; \"bring the figurative thing up onto the nervous system more violently and more poignantly\"; \"I've had a desire to do forms…\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Figürler, gerçekleştirilmemiş büyük bir Çarmıha Geriliş kompozisyonunun \"attendant figures\"ı (1959 mektup; 1974 Boxer; yükseltilmiş çarmıhın dibinde dairesel armature); S6 bunu predella olarak yorumlar (Zweite 2006, 17). Paralel bağlam: de Maistre/Sutherland çarmıha gerilişleri; Sutherland Şubat 1944'te St Matthew's, Northampton için görevlendirildi (Moore önerisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "\"Bacon'ın ilk olgun eseri\" sayılır (ilk eseri değil): S6 \"generally considered Bacon's first mature piece\" (Bragg, South Bank Show, 9 Haziran 1985); S3 \"the preferred point of departure … his mature career\". Önceki işler: Crucifixion 1933; yok edilmiş Abstraction ve Abstraction from the Human Form (1936; Agnew, Young British Painters, Ocak 1937) — Alley \"the first idea for the central panel\", eleştirmen \"a set of false teeth on a tripod\"; Bacon'a altında olup olmadığını sorduğunda \"no\". Bacon 1944 öncesini kanonundan çıkarmaya çalıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Bacon'ın kendi anlatısı: iki hafta içinde, yoğun içki/akşamdan kalma döneminde (\"I was in a bad mood of drinking, and I did it under tremendous hangovers and drink…\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Nisan 1945 sansasyonu: Russell \"They caused a total consternation…\" (1964/1971) ve \"there was painting in England before the Three Studies, and painting after them…\"; Furst (Apollo, Mayıs 1945) şok; Mortimer (New Statesman and Nation, 14 Nisan 1945) \"symbols of outrage rather than works of art\", \"the atrocious world into which we have survived\"; Ayrton (Spectator, 13 Nisan 1945) daha ölçülü, Picasso (c.1930) borcu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Savaş bağlamı: Nisan 1945 sergisi savaşın son aylarına ve Bergen-Belsen/Buchenwald/Dachau'nun kurtuluşundan gelen kamp raporlarına denk geldi; S3 imgelerin raporlara doğrudan bağlanamayacağını yazar (\"cannot be attributed to them\"; Painting 1946 karşıtlığı). Bacon Blitz'te ARP gönüllüsü (black-out); astımı kötüleşince kırsala çekildi; Hall Petersfield'da kulübe kiraladı; Şubat 1943 Sutherland mektubu \"I am more often in London than here now\". S4: \"For some, it reflects the horror of the war and the Holocaust…\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Picasso etkisi: 1920'ler sonu biyomorfik figürler + kemiksi Monument (1927-9); Bacon 1962 \"were influenced by the Picasso things which were done at the end of the twenties\"; Galerie Paul Rosenberg (Paris 1927) mümkün, Cahiers d'Art daha olası; Boisgeloup heykelleri + Brassai nüleri Minotaure'da; Crucifixion (1930, Musée Picasso); Grünewald Isenheim Altarpiece (c.1512-16) sonrası çizimler; Guernica (1937, Prado) için \"extremely likely to have seen … London in 1938\"; sağ panel bir hazırlık eskiziyle karşılaştırıldı; Herbert Read \"negative monument\"; Bacon sonradan Guernica'yı Picasso'nun en iyilerinden saymadı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Orta figürün göz bağı/sargısı Grünewald Mocking of Christ'teki kör edilmiş İsa'ya bağlanır; \"a link which Bacon was willing to support\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Çığlık/ağız kaynakları: Eisenstein Battleship Potemkin (1925) yaralı hemşire; Poussin Massacre of the Innocents (1630-1, Musée Condé); La Maladie de la bouche (c.1935; bir levha orta panelin modeli). \"I did hope one day to make the best painting of the human cry.\"; 1974 \"The scream can be the scream of the aggressor or … the victim.\"; 1966 \"paint the mouth like Monet painted a sunset\"; \"to paint the scream more than the horror\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Başlık Venedik Bienali 1954 ve São Paulo 1959'da \"Three Studies for a Larger Composition\" olarak değiştirildi (olası \"offence\"ı azaltmak için); Sylvester 1956 (Encounter, Eylül, s.67) itiraz etti; sanatçı adına \"Three Studies from the Human Figure\" talebi reddedildi; Bacon 1959'da büyük kompozisyon niyetini doğruladı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Bacon kompozisyonu yeniden ele aldı: Three Studies for a Crucifixion (1962, Guggenheim, New York) ve Second Version of Triptych 1944 (1988) — Tate T05858, tuval üzerine yağlıboya + akrilik, her panel 1980×1475 mm (çerçeve 2178×1668×100 mm), \"Presented by the artist 1991\", zemin \"deep burgundy\"; figürler daha küçük oran kaplar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Telif: \"© Estate of Francis Bacon. All Rights Reserved, DACS 2026\"; masterImageCC boş (CC yok), status CLEARED. Wikidata P3931 = Tate Britain; Pictoright alıntısı (P813 2019-11-08): reprodüksiyon için Tate Picture Library ile temas. Bacon ö.1992 → TR/AB ölüm+70: koruma 2063'e dek.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Serbest lisanslı görsel yok: Commons'ta dosya yok (missing:true); enwiki yerel dosya non-free \"Fair use\" (485×206 px, 47.649 bayt, image/jpeg); Tate master en geniş 1536×651, panel görselleri 1204×1536 / 1183×1536 / 1186×1536. enwiki fair-use gerekçesi yalnız kendi bağlamı içindir; projeye serbest lisans devretmez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Biçimsel betim (kaynak metinlerinden; görsel incelenmedi): solda en insansı figür (burun/kulak saç kütlesinden çıkar, uzun boyun, ağır yuvarlak omuzlar, masa benzeri yapı, örtü içinde uzuvlar); ortada kaide üzerinde, başı bezle sarılı, açık parlak dudaklı ağzı ve sarılı boynu izleyiciye dönük, yakınsayan çizgilerle merkezlenmiş figür (ağzın ayrı yüz değil boyun üzerinde: S6/Kieran 2005, 185); sağda ot öbeğine yaslanan, ağzını dişli esnemeye açan figür; sıcak turuncu zemin, mekânı tonal değil siyah çizgilerle kuran perspektif; sağ panelin turuncusu daha parlak, ağız içinde koyu yeşil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Teknik/konservasyon ve karşılaştırmalı inceleme: IR yoğun revizyon gösterdi (orta panelde çiçek olarak okunan magenta nal biçimleri; baş altında uzak manzara + olası küçük uzanan figür); sol panel en kalın boyalı, lean/fatter katman çatlağı, turuncu kahverengiye dönmüş, siyah sınır sırtı önceki imgeleri düşündürür (ön IR: dar yatay bant + üç dikey iz); sağ panel en az değiştirilmiş, omuz üstünde yatay çatlak. \"In sum, investigation of the panels indicates protracted work on each.\" Levha koşulları: ezikler, çivi delikleri, su hasarı, arka boya lekeleri, kırılganlaşma/konsolidasyon. Orta panel kenarında ölçü işaretleri (sağ köşeden 10 inç = 254 mm). Karşılaştırmalı seri: aynı boyut Sundeala üzerindeki Untitled (\"1943 or 1944\", 1997'de yeniden ortaya çıktı) sağ paneli tekrarlar (çiçekler → \"expression to greed\"); Study for a Figure (c.1944) sol panelle yakın; triptik çiçek buketli figürler serisinin parçası/doruğu olabilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Nazi lider fotoğrafları kaynak: Figure Getting out of a Car için Hitler'in Nürnberg mitinginde arabından inişi (1939 fotoğrafı bulundu); Man in a Cap için Picture Post'taki Goebbels/Himmler fotoğrafları (stüdyoda saklandı, Sam Hunter 1950'de fotoğrafladı). Amishai-Maisels soldan sağa \"victim, victimised or blind figure, and aggressor\" okumasını ÖNERDİ (orta figür Hitler, sağ \"braying Goering-like monster\"); S3: \"the painting itself does not signal this thematic history overtly\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Yorum ekolleri ve alımlama: Bataille Documents (1930) ağız yazısı (\"on great occasions human life is concentrated bestially in the mouth\"; boyun uzaması = ağzın omurga hizası) — Ades bağlantısı; Deleuze logique de la sensation (1981): \"a zone … of ambiguity between man and animal\", deformasyon \"render visible invisible forces\", sargılı baş \"abominable head which smiles\" / \"plat sourire hystérique\", \"tout le corps s'echappe par la bouche qui cri\"; Leiris \"surface ritualism\", triptik izleyiciyi \"enfolds … within itself\", \"wholly secular\". Bacon Surrealizm/Existentialism'den mesafe koydu ama dilin parçalarını (rastlantı) kullandı. Alımlama: Melville destek, Heron karşıt, Sylvester 1954 \"physical anguish … squirm in pain\". Psiko-biyografik okumalar (Boxer, Peppiatt) yorum önerileridir, doğrulanmış olgu değil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Bacon \"Irish-born British figurative painter (1909–1992)\" olarak tanımlanır (İrlanda doğumlu İngiliz figüratif ressam); niteleme S6 girişinde atıfsız, S5 description'ında yardımcı düzeyde.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "D1 (KRİTİK) envanter: görev/data anahtarı T05858 der; S10'a göre T05858 = Second Version of Triptych 1944 (1988, tuval, 1980×1475 mm, 1991 sanatçı hediyesi). 1944 eseri N06171 (S1/S3/S5/S6/S7). Ek: Gale 1998 ikinci versiyonu \"Tate Gallery T03073\" diye anar, güncel API T05858 der (Tate içi tutarsızlık). Çözüm: derste N06171; T05858 yalnız 1988 versiyonu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D2 tarih katmanları: dateText 1944 ↔ katalog \"c.1943-4\" ↔ Petersfield yazıtı 1942-4 olasılığı ↔ S6 \"two weeks in 1944\" ↔ Peppiatt Cromwell Place (eski Millais stüdyosu) geç 1943; Wishart hatırası ilk kayıtlı görüş (tarihsiz, çerçeveli).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D3 boyut: S3 panel 940×737/738/734 mm ↔ S1 \"each: 940 x 737\" ↔ S6 94×74 cm ↔ S7 95 × (73,5+73,5+73,5) cm. itwiki 95 cm Tate ile çelişir; Tate panel ölçüleri esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D4 teknik/destek: S1 \"Oil paint on 3 boards\" (pastel yok) ↔ S3 \"Oil and pastel on board\" (Sundeala) ↔ S6 \"fibre board\" ↔ S7 \"truciolato\" (yonga levha, hatalı çeviri adayı). S3 esas: yağlıboya+pastel, Sundeala lif levha; sunta/yonga değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D5 alıntı farkları: Mortimer S3 \"ostrich mouths and button heads\" ↔ S6 \"ostrich necks … like Bosch without the humour\"; Furst S3 \"red background\" ↔ S6 \"red [sic] background\" (zemin turuncu; [sic] enwiki eklemesi). Alıntıda S3 wording'i esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D6 çerçeve: S1 \"frame, each: 1162 x 960 x 80 mm\" ↔ S3 \"the central panel … retains a slightly larger frame\". Tate içi küçük gerilim; ölçü verilirse API + not.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D7 edinim anlatısı: Bacon/Sinclair \"Tate isteksiz kabul etti / teklif aylarca bekletildi\" ↔ Gale: \"both seem to be confused with the delay in responding to the gift of Study of a Dog the year before.\" Gale düzeltmesi esas; anlatı olgu gibi verilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D8 \"iki hafta\" ↔ uzun çalışma: S6/S7 (Bacon hatırası, Sylvester 1987) ↔ S3 \"protracted work on each\" + IR revizyonlar; S6 \"Despite Bacon's claim that they were spontaneously conceived\". Sanatçı anlatısı B, teknik kanıt A; ikisi birlikte aktarılır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D9 oda kodu/adı: location.room.code \"TG33\" ↔ name \"Fear and Freedom 1940-1955 (Room 16)\"; location_card.past_event true ↔ onDisplayAtTate true; sergi geçmişi \"Gallery 33\" (19 December 2022–; bacak 12 June 2025–10 June 2027). API anlık görüntüsü; kesin oda numarası iddia edilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "E1 katalog tarihi circa: \"c.1943-4\"; kesin üretim yılı belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "E2 Hall'un satın alma yolu: \"It is presumed that he bought the work from the Lefevre Gallery, … but there remains some possibility that he owned it before it was shown.\"",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E3 Petersfield yazıtı → tarih aralığı: \"the inscription would tend to enlarge the period … to 1942-4\" (kesinleştirilmez).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E4 Holokost/savaş okuması yorumdur: S4 \"For some, it reflects the horror of the war and the Holocaust…\"; S3 \"cannot be attributed to them\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E5 \"ilk olgun eser\" genellemesi: \"generally considered Bacon's first mature piece\" (kurumsal karar değil, eleştirel uzlaşı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E6 Sutherland aracılığı: S6 \"it is likely that his painting was included at the request of Sutherland\"; S3 \"It may be that his presence in the exhibition was at the behest of Sutherland\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E7 sağ figür çığlık mı esneme mi: S3 \"opens its mouth into a toothed yawn\"; S6 \"as if screaming, although David Sylvester has suggested that it may be yawning\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E8 spontaneite ↔ revizyon: S3 \"investigation of the panels indicates protracted work on each\"; S6 ref notu \"Despite Bacon's claim that they were spontaneously conceived.\"",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E9 dinsel ikonografi okumaları: Boxer'ın Meryem/Yuhanna/İsa (ve \"Christ between the two thieves\") okuması \"may be too literal an interpretation\"; \"he strenuously rejected religious identifications\"; S6 Schmied 1996 \"Furies, İsa ve iki hırsızın yerini aldı\" notu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E10 Nazi figürü okumaları: Amishai-Maisels \"has proposed a reading\" (öneri); S3 \"the painting itself does not signal this thematic history overtly\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E11 Stanford 1942'nin etkisi sınırlı: \"Bacon would have had to read it immediately; even so, it could not have substantially shaped the image of the central panel\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E12 Guernica'yı görme olasılığı: \"Bacon is extremely likely to have seen the huge mural when it was exhibited in London in 1938\" (belge değil, güçlü olasılık).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "E13 sanatçının kendi tarih ifadeleri çelişkili: S3 (Figure Getting out of a Car) \"This contradiction casts doubt over the artist's evidence\"; Wikidata P571 = 1944, precision yıl, P1480 niteleyicisi yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "Süreç: görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük doğrulandı. Kompozisyon \"kaynakların betimlediği\" çerçevesiyle verilir; GZ 5/5 TASLAK; insan editör görsel teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "Süreç: S3/S6/S7 bibliyografyalarındaki kitap/makale metinlerine erişilmedi (Sylvester, Russell, Peppiatt, Schmied, Alley 1964, Davies 1978, Boxer 1975, Amishai-Maisels 1993, Deleuze 1981 vb.); yalnız erişilen kayıtların kaynakçalarında anıldı; DOI/ISBN/sayfa/alıntı doğrulanmadı. Art UK (S14) açılmadı; eski servlet URL (S13) erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6",
+    "S7",
+    "S13",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Tate",
+   "belge": "API v2 artwork page 49036 (N06171) — tam kayıt (meta.detail_url)",
+   "url": "https://www.tate.org.uk/api/v2/pages/49036/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; cache ~21:02 UTC (15 Kas 00:02 +03); alanlar 2026-11-15 yeniden okundu",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Tate",
+   "belge": "Canlı eser sayfası (N06171)",
+   "url": "https://www.tate.org.uk/art/artworks/bacon-three-studies-for-figures-at-the-base-of-a-crucifixion-n06171",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "HTTP/2 200; date: Sat, 14 Nov 2026 21:01:38 GMT (header cache); 200 yeniden kontrol 2026-11-15",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Tate",
+   "belge": "Katalog girdisi (CATALOGUE_ENTRY) — Matthew Gale, November 1998; publication_date 2004-09-21",
+   "url": "https://www.tate.org.uk/art/artworks/bacon-three-studies-for-figures-at-the-base-of-a-crucifixion-n06171",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (S1 resources içeriği + S2); tam metin okundu",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Tate",
+   "belge": "Galeri etiketi (DISPLAY_CAPTION) — September 2023; publication_date 2023-09-26",
+   "url": "https://www.tate.org.uk/art/artworks/bacon-three-studies-for-figures-at-the-base-of-a-crucifixion-n06171",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (S1 resources içeriği); tam metin okundu",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikidata",
+   "belge": "Q987711 EntityData (lastrevid 2480961559, modified 2026-04-13)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q987711.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200; cache 15 Kas 00:00 +03; claim'ler yeniden okundu",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia EN",
+   "belge": "Three Studies for Figures at the Base of a Crucifixion — wikitext (featured; satır içi akademik refs)",
+   "url": "https://en.wikipedia.org/wiki/Three_Studies_for_Figures_at_the_Base_of_a_Crucifixion",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (action=parse); cache 15 Kas 00:00 +03; yeniden okundu",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia IT",
+   "belge": "Tre studi per figure ai piedi di una Crocifissione — wikitext (Tate refs'li; infobox)",
+   "url": "https://it.wikipedia.org/wiki/Tre_studi_per_figure_ai_piedi_di_una_crocifissione",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200; cache 15 Kas 00:01 +03; yeniden okundu",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikipedia EN (yerel dosya)",
+   "belge": "File imageinfo + extmetadata: 485×206, LicenseShortName \"Fair use\", NonFree true, Credit Tate",
+   "url": "https://en.wikipedia.org/wiki/File:Three_Studies_for_Figures_at_the_Base_of_a_Crucifixion.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200; cache 15 Kas 00:04 +03; metadata yeniden doğrulandı; görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo sorgusu (aynı dosya adı) → \"missing\": true (URL, sorgulanan dosya adının kanonik sayfasıdır)",
+   "url": "https://commons.wikimedia.org/wiki/File:Three_Studies_for_Figures_at_the_Base_of_a_Crucifixion.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200; cache 15 Kas 00:04 +03; dosya Commons'ta YOK (erişim engeli değil)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Tate",
+   "belge": "API v2 page 100831 — T05858 Second Version of Triptych 1944 (1988); AYRI eser, yalnız D1 çözümü",
+   "url": "https://www.tate.org.uk/api/v2/pages/100831/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200; cache 15 Kas 00:04 +03; yeniden okundu",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketleri: P3931, P921, P1679, P6020, Q51636",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=P3931%7CP921%7CP1679%7CP6020%7CQ51636&props=labels&languages=en%7Ctr&format=json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Proje data (salt-okunur)",
+   "belge": "basyapitlar.json /eserler/106; eser_ayrintilari / eser_notlari / eser_adlari_tr / eser_konulari",
+   "url": "file:///Users/emrymn/Downloads/sanat-atlasi/data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "yerel okuma (cache bacon-data-exact.txt); data DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Tate (eski)",
+   "belge": "Eski servlet katalog URL'si (enwiki refs'inde; Wayback kopyaları beyanlı 2009-07-24, 2012-01-11)",
+   "url": "http://www.tate.org.uk/servlet/ViewWork?workid=674",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "ERİŞİLMEDİ; güncel S2 ile değiştirildi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Art UK",
+   "belge": "P1679 kimliği: three-studies-for-figures-at-the-base-of-a-crucifixion-197740 (S5'te); URL üretilmedi, kayıt açılmadı",
+   "url": "https://www.wikidata.org/wiki/Q987711",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "ERİŞİLMEDİ (Tate A düzeyi yeterli); URL tahmin edilmedi",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Second Version of Triptych 1944",
+   "sanatci": "Francis Bacon",
+   "kurum": "Tate",
+   "envanter": "T05858",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun 1988 yeniden ele alışı: tuval + akrilik, her panel 1980×1475 mm, koyu burgundy zemin. Malzeme/ölçek/zemin karşılaştırması; N06171 ile KARIŞTIRILMAMALI (ayrı eser).",
+   "kanit": [
+    "C027",
+    "C009"
+   ]
+  },
+  {
+   "eser": "Guernica",
+   "sanatci": "Pablo Picasso",
+   "kurum": "Madrid — S3 \"Prado, Madrid\" olarak anar; proje data'sı Reina Sofía (1992'den beri) der; güncel kurum bu derste birincil kayıtla doğrulanmadı",
+   "mufredat_ici": true,
+   "gerekce": "Savaş şiddetinin dolaylı temsili ve \"yıkım çağında anıtsal olan\" sorusu; Bacon'ın 1938 Londra sergisinde görmüş olması güçlü olasılık (belge değil).",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Three Studies for a Crucifixion",
+   "sanatci": "Francis Bacon",
+   "kurum": "Solomon R. Guggenheim Museum, New York",
+   "mufredat_ici": false,
+   "gerekce": "1962 yeniden ele alış: 1944 triptiğinin örtük şiddeti etli gövdelerle açık hale gelir; aynı temanın farklı tarihsel anlardaki okuması.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — Tate birincil kayıtları bu oturumda yeniden açıldı/okundu: S1 API v2 page 49036 (acno N06171, dateText 1944, medium, dimensions, creditLine, displayLocation, location, master_images copyright), S2 canlı sayfa (HTTP/2 200), S3 CATALOGUE_ENTRY (Gale, Nov 1998) ve S4 DISPLAY_CAPTION (Eylül 2023) tam metin; S10 API page 100831 (T05858 = 1988 Second Version) ayrı eser olarak teyit edildi. S5 WD claim'leri (P217 N06171+NG6171, P31 painting+triptych, P571 precision yıl, P3931 Pictoright alıntısı), S6/S7 wikitext (infobox 94×74 ↔ 95 cm; \"truciolato\"; Mortimer mouths/necks; iki hafta), S8 imageinfo (485×206 Fair use) ve S9 Commons (missing:true) brief'e karşı birebir doğrulandı. Görsel İNCELENMEDİ (C057) → GZ TASLAK; literatür metinleri erişilmedi (C058).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "KRİTİK envanter düzeltmesi (D1/C035): görev brief'indeki T05858 YANLIŞ; 1944 triptiğinin Tate envanteri N06171. T05858 = 1988 Second Version of Triptych 1944 (ayrı eser; data/wikiart.json \"(2nd version)\" kaydı). Gale 1998 aynı eseri T03073 olarak anar → Tate içi numara tutarsızlığı.",
+  "Müze boşluğu: data/basyapitlar.json /eserler/106 \"muze\": \"\". Birincil kayıt (S1): koleksiyon Tate, sergileme Tate Britain (Londra). Ana oturum doldurmalı: \"Tate (Tate Britain), Londra\". data DEĞİŞTİRİLMEDİ.",
+  "Tarih: data \"1944\" API özetiyle uyumlu; katalog başlığı \"c.1943-4\" (circa aynen) ve Petersfield yazıtının 1942-4 olasılığı korundu (C044/C046, D2/C036).",
+  "boyut_cm alanı tek değer ister: sol panel/API özeti esas alınarak 94 × 73.7 cm yazıldı; orta 940×738, sağ 940×734 mm (C007). itwiki 95 cm hatalı (D3/C037).",
+  "Görsel alanı: eser_ayrintilari.json \"gorsel\" üçüncü taraf WikiArt URL'si (lisansı doğrulanmadı). Adil kullanım gereği görsel yeniden yayımlanmadı; Tate/enwiki referansları tercih edildi (C029).",
+  "data hotspot'ları (\"Sargılı baş ve dişler\", \"Çığlık atan ağız\", \"Ot öbeği\", \"Pastel çizgiler\", \"Sarkan baş\") kaynak betimleriyle genel olarak uyumlu; görsel incelenmediği için koordinat/bölge teyidi YAPILMADI. \"Çığlıkla açılmış\" ifadesi S3 \"toothed yawn\" + Sylvester esneme önerisiyle gerilimli (C050/E7).",
+  "Başlık: eser_ayrintilari.json kısa başlığı \"Çarmıha Geriliş İçin Üç Çalışma\"; resmî TR ad eser_adlari_tr.json'da \"Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma\". Derslerde resmî TR ad + özgün başlık kullanıldı.",
+  "eser_konulari.json \"dini/crucifixion\" etiketi birincil P921 ile uyumlu ama Bacon'ın ateist/seküler okumasıyla gerilimli (C017); veri notu olarak raporlanır.",
+  "Oda bilgisi (D9/C043): API anlık TG33 ↔ \"Fear and Freedom 1940-1955 (Room 16)\" tutarsız; derste kesin oda numarası verilmedi, \"Tate Britain\" yeterli.",
+  "Telif: kunye.telif_durumu dolduruldu; © Estate of Francis Bacon / DACS 2026, TR/AB koruma 2063'e dek; adil kullanım (eğitim/eleştiri) — görsel yeniden yayımlanmaz, atıf + telif notu zorunlu, hukuki tavsiye değildir.",
+  "Görsel İNCELENMEDİ (C057): GZ 5/5 TASLAK; insan editör görsel teyidi zorunlu. Literatür metinlerine erişilmedi (C058): DOI/ISBN/sayfa doğrulanmadı."
+ ]
+}

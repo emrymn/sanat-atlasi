@@ -1,0 +1,567 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q531329",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Watteau'nun Kythera Adası'na Yolculuk tablosunun Louvre versiyonu hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Charlottenburg Sarayı, Berlin"
+    },
+    {
+     "harf": "C",
+     "metin": "Städel, Frankfurt"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre birincil bildirisi + Joconde: INV 8525, Musée du Louvre Département des Peintures (S5/S6/S7).",
+   "yanlis_gerekceleri": {
+    "B": "Charlottenburg Berlin'deki ikinci versiyonun (Q41637000, GK 1198) yeridir; Louvre versiyonu değildir.",
+    "C": "Städel Frankfurt'taki erken versiyonun (Q19820267, 1709–1710) yeridir.",
+    "D": "Uffizi'de bu eserin bir versiyonu yoktur; eser Louvre'dadır."
+   },
+   "kanit": [
+    "C005",
+    "C011",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre versiyonunun envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 8525"
+    },
+    {
+     "harf": "B",
+     "metin": "GK 1198"
+    },
+    {
+     "harf": "C",
+     "metin": "000PE002934"
+    },
+    {
+     "harf": "D",
+     "metin": "Salle 917"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre cartel + Joconde + WD P217: INV 8525 (S5/S6/S7/S1).",
+   "yanlis_gerekceleri": {
+    "B": "GK 1198 Berlin Charlottenburg versiyonunun envanter numarasıdır.",
+    "C": "000PE002934 Joconde veritabanı kayıt referansıdır; envanter numarası değildir.",
+    "D": "Salle 917 sergileme salonunun numarasıdır; envanter numarası değildir."
+   },
+   "kanit": [
+    "C005",
+    "C006",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Louvre versiyonunun birincil kaynaklardaki tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1717"
+    },
+    {
+     "harf": "B",
+     "metin": "1719"
+    },
+    {
+     "harf": "C",
+     "metin": "1709–1710"
+    },
+    {
+     "harf": "D",
+     "metin": "1718"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre cartel + Joconde \"Millésime 1717\" + WD P571 (circa yok): 1717 (S5/S6/S7/S1).",
+   "yanlis_gerekceleri": {
+    "B": "1719 Berlin versiyonunun Wikidata tarihidir; Louvre versiyonu değildir.",
+    "C": "1709–1710 Frankfurt erken versiyonunun tarihidir.",
+    "D": "1718 Berlin versiyonunun fr/it Vikipedi tarihidir; Louvre versiyonu değildir."
+   },
+   "kanit": [
+    "C002",
+    "C030",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Joconde \"peinture à l'huile; toile\" + Eidelberg \"Oil on canvas\" (S7/S10).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; bu eser tuval üzerine yağlıboyadır.",
+    "C": "Ahşap pano/tempera farklı bir destek ve bağlayıcıdır; kaynaklar tuval + yağ der.",
+    "D": "Kâğıt/suluboya bu eserin tekniği değildir; hazırlık çizimleri ayrıdır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser, Watteau'nun hangi kuruma kabul parçasıdır (morceau de réception)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Académie royale de peinture et de sculpture"
+    },
+    {
+     "harf": "B",
+     "metin": "Royal Academy of Arts, Londra"
+    },
+    {
+     "harf": "C",
+     "metin": "Accademia di San Luca, Roma"
+    },
+    {
+     "harf": "D",
+     "metin": "Prusya Sanat Akademisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre bildirisi + Joconde: Académie royale de peinture et de sculpture kabul parçası, 1717 (S5/S6/S7).",
+   "yanlis_gerekceleri": {
+    "B": "Londra Royal Academy of Arts farklı bir kurumdur; Watteau Fransız Akademisi'ne kabul edildi.",
+    "C": "Roma Accademia di San Luca bu eserin kabul kurumu değildir.",
+    "D": "Prusya Sanat Akademisi ile bağlantı yoktur; ikinci versiyon sonradan Frédéric II koleksiyonuna girdi."
+   },
+   "kanit": [
+    "C007",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Louvre bildirisine göre \"fête galante\" terimi neden önemlidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bu eseri tanımlamak için icat edildi"
+    },
+    {
+     "harf": "B",
+     "metin": "Watteau'dan önce zaten yaygındı"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız Berlin versiyonu için kullanıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Akademi'nin tarih resmi kategorisidir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre EN/FR: \"The subject was so striking and so new that the expression 'fête galante' was invented to describe it\" (S5/S6).",
+   "yanlis_gerekceleri": {
+    "B": "Terim bu eser için icat edildi; önceden var olan bir kategori değildi.",
+    "C": "Terim Louvre versiyonu için icat edildi; yalnız Berlin'e özgü değildir.",
+    "D": "fête galante tarih resmi kategorisi değildir; kabul unvanı ihtilafı ayrı bir tartışmadır (D001)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Louvre bildirisi arka plan manzarasında hangi iki ustanın etkisini sayar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rubens ve Leonardo da Vinci"
+    },
+    {
+     "harf": "B",
+     "metin": "Rubens ve Titian"
+    },
+    {
+     "harf": "C",
+     "metin": "Poussin ve Claude Lorrain"
+    },
+    {
+     "harf": "D",
+     "metin": "Rembrandt ve Ruisdael"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre EN/FR: \"the influence of the landscapes of Rubens and Leonardo da Vinci\" (S5/S6).",
+   "yanlis_gerekceleri": {
+    "B": "Titian/Campagnola (Venedik) etkisi Eidelberg katalogunda (B) ayrıca desteklenir ama Louvre bildirisinde anılmaz; bildiri Rubens + Leonardo der.",
+    "C": "Poussin ve Claude Lorrain bu bildirinin saydığı etkiler değildir.",
+    "D": "Rembrandt ve Ruisdael bu bildirinin saydığı etkiler değildir."
+   },
+   "kanit": [
+    "C015",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eidelberg kataloguna göre Watteau kabul parçasını hangi gün teslim etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "28 Ağustos 1717"
+    },
+    {
+     "harf": "B",
+     "metin": "5 Ocak 1714"
+    },
+    {
+     "harf": "C",
+     "metin": "9 Ocak 1717"
+    },
+    {
+     "harf": "D",
+     "metin": "25 Ocak 1716"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Eidelberg: \"on August 28, 1717, submitted his painting\" (S10).",
+   "yanlis_gerekceleri": {
+    "B": "5 Ocak 1714 Akademi'nin ilk hatırlatma tarihidir; teslim günü değildir.",
+    "C": "9 Ocak 1717 Akademi'nin ihtar + ek süre tarihidir; teslim günü değildir.",
+    "D": "25 Ocak 1716 üçüncü hatırlatma tarihidir; teslim günü değildir."
+   },
+   "kanit": [
+    "C008",
+    "C025"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "İkinci versiyon kimin isteğiyle yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jean de Julienne"
+    },
+    {
+     "harf": "B",
+     "metin": "Pierre Crozat"
+    },
+    {
+     "harf": "C",
+     "metin": "comte de Caylus"
+    },
+    {
+     "harf": "D",
+     "metin": "Frédéric II"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre bildirisi: \"Watteau painted a second version at the request of his friend Jean de Julienne\" (S5/S6).",
+   "yanlis_gerekceleri": {
+    "B": "Pierre Crozat Watteau'nun hamisi ve Rubens çizimlerinin sahibiydi; ikinci versiyonu o istemedi.",
+    "C": "comte de Caylus Watteau'nun yakın arkadaşıydı; ikinci versiyonun isteği ona atfedilmez.",
+    "D": "Frédéric II ikinci versiyonun sonradan koleksiyoncusudur; isteğiyle yapan Julienne'dir."
+   },
+   "kanit": [
+    "C011",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Louvre bildirisi çiftlerin adaya gidişi/dönüşü hakkında ne der?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Soru hâlâ açık; Watteau cevap vermedi"
+    },
+    {
+     "harf": "B",
+     "metin": "Kesin olarak adaya gidiş"
+    },
+    {
+     "harf": "C",
+     "metin": "Kesin olarak adadan dönüş"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnız Berlin versiyonu dönüşü gösterir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre EN/FR: \"The question is still open\" / \"sujet encore discuté\"; Watteau bilerek cevap vermedi (S5/S6/S2).",
+   "yanlis_gerekceleri": {
+    "B": "Kesin gidiş bir yorumdur (Romantikler); birincil kaynak soruyu açık bırakır.",
+    "C": "Kesin dönüş Levey'in tezidir; birincil kaynak bunu tek doğru yapmaz.",
+    "D": "Versiyonlara bölme (Ferraton/Glorieux) bir yorumdur; Louvre bildirisi soruyu açık bırakır."
+   },
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Louvre'dadır ve envanter numarası INV 8525'tir.",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre cartel + Joconde + WD P217 INV 8525 (S5/S6/S7/S1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Louvre versiyonu 1717 tarihlidir ve birincil kaynaklar kesin yıl verir.",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre cartel + Joconde \"Millésime 1717\"; WD P571'de circa yok (S5/S6/S7/S1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser, Watteau'nun Académie royale de peinture et de sculpture'a kabul parçasıdır.",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre bildirisi + Joconde \"morceau de réception en 1717\" (S5/S6/S7).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Louvre bildirisi manzarada yalnız Rubens etkisinden söz eder.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre bildirisi Rubens VE Leonardo da Vinci peyzajlarının etkisini sayar (S5/S6). Venedik (Titian/Campagnola) etkisi Eidelberg'de ayrıca desteklenir.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Louvre versiyonu Jullienne corpus'u için gravürlendi.",
+   "dogru": false,
+   "aciklama": "Yanlış: Jullienne corpus'u Berlin versiyonunu gravürledi; Louvre versiyonunu 19. yy ikinci yarısında Charles Joshua Chaplin gravürledi (S10).",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D001 kabul unvanı ihtilafını kaynak eleştirisiyle analiz edin: Louvre \"peintre de fêtes galantes\" ↔ Eidelberg \"peintre d'histoire / factually incorrect legend\".",
+   "beklenen_ogeler": [
+    "Louvre birincil fêtes galantes",
+    "Eidelberg peintre d'histoire",
+    "başlığın une feste galante olarak değiştirilmesi",
+    "efsane anlatısı",
+    "çözümsüz D"
+   ],
+   "kanit": [
+    "C040",
+    "C009",
+    "C008",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Gidiş/dönüş yorumlarını (Levey/Rosenberg/Ferraton/Glorieux) karşılaştırın; neden tek doğru yorum olmadığını gerekçelendirin.",
+   "beklenen_ogeler": [
+    "birincil soru açık",
+    "Levey dönüş + herm/çelenk/gün batımı",
+    "Rosenberg ikisi de",
+    "Ferraton/Glorieux versiyonlara böler",
+    "Watteau cevap vermedi"
+   ],
+   "kanit": [
+    "C044",
+    "C013",
+    "C019",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "\"Beş yıl\" ↔ \"sekiz ay\" ve agrément 1712 ↔ 1714 ihtilaflarını idari süreç ↔ fiilî icra ayrımıyla değerlendirin.",
+   "beklenen_ogeler": [
+    "beş yıl idari agrément→teslim",
+    "sekiz ay fiilî icra",
+    "1712 birincil ↔ 1714 Grasselli",
+    "Eidelberg 1717 öncesi iş yok iması",
+    "farklı şeyleri ölçme"
+   ],
+   "kanit": [
+    "C041",
+    "C042",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Louvre'a giriş 1793 ↔ 1795 ihtilafını provenans olayları (confiscasyon ↔ koleksiyon girişi) üzerinden tartışın.",
+   "beklenen_ogeler": [
+    "1793 Muséum central + saisie révolutionnaire",
+    "1795 Grasselli koleksiyon girişi",
+    "WD P793 confiscation 1793-08",
+    "farklı olaylar olabilir",
+    "çözümsüz D"
+   ],
+   "kanit": [
+    "C043",
+    "C010",
+    "C024"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmeden yazılan betimlerin sınırını ve \"karlı dağlar\" / Rubens+Venedik ↔ Leonardo veri notlarını değerlendirin.",
+   "beklenen_ogeler": [
+    "görsel İNCELENMEDİ / GZ TASLAK",
+    "karlı dağlar kaynaksız",
+    "verdant hills/Alp + pembe dağlar",
+    "Louvre Rubens+Leonardo ↔ data Rubens+Venedik",
+    "kaynak betimi sınırı"
+   ],
+   "kanit": [
+    "C045",
+    "C046",
+    "C015",
+    "C022"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Sağ kenarda gül çelenkleriyle süslü Venüs heykeli/hermi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Joconde sujet \"statue\" + Rodin herm; Levey çelenkleri adanak kanıtı sayar.",
+   "kanit": [
+    "C012",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön plandaki üç çifti izleyin: iltifat → kalkmaya yardım → kucaklaşma/kayığa iniş.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Rodin üç sahne okuması (Louvre bildirisi).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Soldaki yaldızlı kayığı ve üstünde uçuşan putti/cupidleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Joconde \"putti\" + Louvre \"cherubs hovering overhead\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Hacı pelerinini, delik kalp işlemesini, hacı asasını ve \"bréviaire d'amour\"u arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Rodin alıntısı (Louvre bildirisi) bu atribüleri sayar.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka plandaki puslu manzarayı ve atmosferik uzaklığı inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Louvre \"mysterious hazy landscape\"; Rubens/Leonardo etkisi.",
+   "kanit": [
+    "C015",
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Watteau; 1717; tuval üzerine yağlıboya; 129×194 cm; Louvre INV 8525; Sully Salle 917; kamu malı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Statü + terim?",
+   "arka": "Académie royale kabul parçası (morceau de réception) 1717; \"fête galante\" terimi bu eser için icat edildi.",
+   "kanit": [
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Yön sorusu?",
+   "arka": "Açık soru; Watteau cevap vermedi. Levey dönüş, Rosenberg \"ikisi de\", Ferraton/Glorieux versiyonlara böler (tartışma).",
+   "kanit": [
+    "C013",
+    "C019",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Manzara etkileri?",
+   "arka": "Louvre bildirisi Rubens + Leonardo; Eidelberg Venedik (Titian/Campagnola) + Rubens (Crozat Garden of Love, Miraculous Draught kayıkçısı).",
+   "kanit": [
+    "C015",
+    "C022"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenans + ikinci versiyon?",
+   "arka": "Académie → 1793 Muséum central (saisie révolutionnaire), devlet malı; ikinci versiyon Julienne isteği → Frédéric II → Berlin Charlottenburg.",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  }
+ ]
+}

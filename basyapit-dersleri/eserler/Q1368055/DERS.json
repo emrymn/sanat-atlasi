@@ -1,0 +1,914 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1368055",
+ "sanatci_id": "jean-francois-millet",
+ "baslik": "Başak Toplayanlar",
+ "ozgun_baslik": "Des glaneuses (The Gleaners / Les glaneuses)",
+ "kunye": {
+  "sanatci": "Jean-François Millet",
+  "sanatci_yasam": "1814–1875",
+  "tarih": "1857",
+  "teknik": "Tuval üzerine yağlı boya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 83.5,
+   "genislik": 110
+  },
+  "muze": "Musée d'Orsay, Paris",
+  "envanter": "RF 592",
+  "edinim": "Mme Pommery usufruit şartlı bağışı, 1890 (comité 30/01/1890); Louvre 1890–1986; Orsay 1986",
+  "konum": "Rez-de-chaussée, Salle 5 (2026 kaydı; 2021 EN: Salle 4)",
+  "telif_durumu": "Kamu malı (Millet ö. 1875, >100 yıl); Commons PD; RMN fotoğrafları izin şartlı"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture, asset GgHsT2RumWxbtw)",
+  "lisans": "Public domain (PD-Art; Millet ö. 1875)",
+  "dogrulama": {
+   "yontem": "metadata (2 Commons dosyası); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "S9 5356×4008; S10 5354×4006",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; kompozisyon Orsay (A) + Smarthistory (B) + wiki metninden; RMN fotoğrafları izin şartlı, Commons PD taramalar ayrı dosya"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 438
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1469
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2634
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarihsel-bağlam-ve-modernleşme"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-market-ve-etki"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-kaynak-sınırı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-rutboaz-hipotezi-ve-seküler-okuma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-boyut-tartışması"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Orsay birincil kaydıyla künyeyi (1857, tuval/yağlı boya, RF 592, Salle 5, imza) doğrular.",
+  "Glanage hakkını ve kırsal proletarya bağlamını açıklar; ön/arka plan ölçek karşıtlığını analiz eder.",
+  "Boyut/salon/provenance/fiyat ihtilaflarını (Orsay ↔ Joconde ↔ wiki) yönetir; tek değer dayatmaz.",
+  "1857 Salonu alımlamasını (Saint-Victor/About; 1848/1793 korkusu; anıtsal ölçek) değerlendirir.",
+  "Görsel doğrulama sınırını (GZ TASLAK; data noktalar) ve kaynak eleştirisini (itwiki atıf boşluğu) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Glanage",
+   "tanim": "Hasat sonrası tarlada kalan başakları toplama hakkı; kırsal yoksullar için geleneksel hak.",
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Régisseur",
+   "tanim": "Kâhya; çiftlik işlerini ve glaneuse kurallarını denetleyen görevli; sahiplerin emanasyonu.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Misérabilisme",
+   "tanim": "Sefaleti vurgulayan, acındıran üslup; Orsay bu eserde olmadığını vurgular.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Usufruit",
+   "tanim": "İntifa hakkı; bağışta mülkiyet devri ama kullanım hakkının saklı tutulması (Pommery 1890).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Salon",
+   "tanim": "Fransa'da resmî sanat sergisi; 1857 Salonu, Palais des Champs-Élysées, livret n°1936.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı Des glaneuses; diğer başlık Les glaneuses.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Jean-François Millet, 1814 Gréville-Hague (Manche) – 1875 Barbizon (Seine-et-Marne).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1857'de tamamlandı (WD P571 precision=9, ref S1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlı boya (huile sur toile).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: Orsay H. 83,5 ; L. 110 cm (çerçeveli 116×143,5×8 cm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter no RF 592.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Sağ altta imzalı: \"S.b.d. : J.F. Millet\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Musée d'Orsay'da; zemin kat, Salle 5 (2026 kaydı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Devlet mülkiyeti; Mme Pommery'nin 1890 usufruit şartlı bağışı (comité 30/01/1890); Joconde DACQ \"1890 entrée matérielle\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Eser kamu malı (ressam 1875'te öldü, >100 yıl); Commons PD-Art.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Hasat sonrası tarlada kalan başakları toplayan üç köylü kadın; kırsal proletaryayı temsil eder.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Üç figür, tekrarlayan hareketin üç evresini yan yana gösterir: eğilme, toplama, doğrulma.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Ön plandaki yoksunluk, arka plandaki hasat bolluğuyla (yığınlar, demetler, araba, kalabalık hasatçılar) karşıt; ölçek değişimi ani.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sağdaki atlı figür müze kaydına göre büyük olasılıkla bir kâhya/régisseur (\"vraisemblablement\"); glaneuse kurallarını denetler; sosyal mesafe ekler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Batan güneşin sıyırıcı ışığı ön planı hacimlendirir, figürlere heykelsi görünüm verir; arka plan altın rengi, tozlu, bukolik (müze betimi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Eser, glaneuses teması üzerine on yıllık araştırmanın sonucu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Figürler yoksul ama onurlu (\"pauvres sans doute\"); amblem değeri; sefaletçilik (misérabilisme) yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Figürler ufuk çizgisinin altında, manzarayla bütünleşik; paçavra içinde değil, \"seemingly well-fed and strong\" — karışık mesaj (Smarthistory).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Glaneuse'lar, güneş batmadan önce hasadı yapılmış tarlalardan geçip kalan başakları tek tek toplamaya yetkilidir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Başak toplama, kırsal yoksullar için çok eski bir geleneksel haktır; \"rural beggars\" (Smarthistory; Vardi atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Glanage hakkı 19. yy'da tartışmalıydı: Balzac, Les Paysans'ta \"certificat d'indigence\" koşulu ve komünler arası geçiş (satır içi alıntı; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Millet, Chailly köylülerini gözlemlerken Ruth/Boaz İncil pasajını hatırlamış olabilir (\"a pu\") — hipotez, aynen korundu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Provenance: Binder → 1865 Paul Tesse (Paris) → 1867–1889 Ferdinand Bischoffsheim → 1890'a kadar Mme Pommery → 1890 Devletçe kabul (usufruit) → Louvre 1890–1986 → 1986 Orsay.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Salon sonrası Millet eseri İngiliz Binder'a sattı; fiyat tartışmalı (→C043); Moreau-Nélaton: düşük fiyatı gizlemeye çalıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "1889'da 300.000 franka el değiştirdi (Bischoffsheim'den); alıcı Mme Pommery (Reims); amaç Louvre'a bağış; 1875 ölümünden sonra tanınırlık arttı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Louvre'da salle des États'ta 8 Mayıs 1890'da sergilendi (Montout-Richard 2002).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Salon 1857 Peinture n°1936; livret: Delaroche öğrencisi, adres \"à Barbison\", 1853 2. sınıf madalya (Genre et Paysage).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Sergiler: 1867 Exposition Universelle n°474; 1883 Georges Petit n°68; 1887 ENSBA n°44; 1889 Centennale n°518; 1975–76 Grand Palais; 1978 Minneapolis; 1988–89 Rijksmuseum; 2019–20 Van Gogh Museum; 2025 National Gallery Londra.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "1914'te Fransız vatanseverliği simgesi olarak I. Dünya Savaşı askere çağrı propagandasında çoğaltıldı (geometriefluide — zayıf ikincil).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "1857 Salonunda üst sınıflarca olumsuz karşılandı; emek sahnesi için alışılmadık büyük boyut (tarih/din resmine ayrılan ölçek) ve 1848/1793 devrim korkusu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Paul de Saint-Victor: \"Ses trois glaneuses ont des prétentions gigantesques : elles posent comme les trois Parques du paupérisme.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Edmond About olumlu: \"elles glanent leur pain miette à miette ... l'aumône du hasard qui leur est garantie par la loi\" (kaynak tarih anomalisi →C046).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Pissarro, Renoir, Seurat, Van Gogh'u etkiledi (Pollock 1977); Rosenblum: Daumier/Degas çamaşırcıları, Caillebotte parke kazıyıcıları Millet'siz \"almost unthinkable\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Öncül/etching tarihleri ihtilafı: enwiki dikey 1854 + etching 1855 (\"Gleaners, Summer 1853\"; AGNSW \"1855-1856\") ↔ fr/it \"après/post 1857\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "Banksy 2009 Bristol'de sağdaki figürü çerçeve dışında sigara içerken yeniden kullandı; Bristol City Museum and Art Gallery.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Varda 2000 filmi \"The Gleaners and I\"; Animal Crossing; Larry Grenadier 2019 albümü (enwiki'de atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "Akım/tür etiketleri: Barbizon (WD P135 refsiz) + Realizm (S12) + genre art (WD P136 refsiz); tek birincil etiket yok; ikincil sınıflandırma.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C038",
+   "ifade": "Joconde ikonografi: \"scène (femme, glanage, charrette, meule)\", \"fond de paysage (Seine-et-Marne d)\" — \"d\" bayrağı aynen korundu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Orsay indexasyon: scène, glanage, femme, meule, fond de paysage; materyal toile, peinture à l'huile.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Boyut (genişlik) ihtilafı: Orsay 110 ↔ Joconde \"l.111\" ↔ fr/it 111 ↔ enwiki 111.8/112 ↔ Smarthistory 110 ↔ WD 110; iki birincil devlet kaydı çelişiyor; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Sergileme salonu ihtilafı: S2 (2021 EN) \"Salle 4\" ↔ S1 (2026 FR) \"Salle 5\"; muhtemel yeniden yerleşim; güncel Salle 5.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Bischoffsheim tarihleri: Orsay \"1867–1889\" ↔ Joconde APTN \"(1889)\"; farklı granülerlik olabilir; doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "İlk satış fiyatı ihtilafı: fr (Sensier 1881) 2.000 fr ↔ en/it (Fratello 2003; Moreau-Nélaton 1921) 3.000 fr (istenen 4.000); birincil fiyat vermiyor; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Pommery bağış/ölüm ihtilafı: Orsay 1890 usufruit sonu ↔ enwiki \"1891 ölüm+vasiyet\" ↔ frwiki 1890 kabul/décret 15/03/1890 ↔ WD \"(1819-1890)\"; ölüm yılı birincil ile çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Bibliyografya ihtilafı: Joconde \"1990 p.230 ; 1975 n°65\" ↔ Orsay \"1990 vol.2 p.320-321 ; Herbert 1975 n°8\"; metne erişilmedi; çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "About alıntı kaynağı \"Nos Artistes au Salon de 1887, p.103\" — 1857 eleştirisi için 1887 anomalisi (baskı hatası olabilir); doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Orsay Sources 1883 Georges Petit \"du 12/06/1883 au 31/06/1883\" — 31 Haziran geçersiz tarih; aynen korundu, düzeltilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "enwiki \"nws\" ref AGNSW \"The Gleaners 1855-1856\" (368.2007; arşiv 20260818133505 wikitext'te); farklı versiyon olabilir; AGNSW AÇILMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "WD P186/P2048/P2049/P217/P276/P127 refsiz → yardımcı; Orsay ile uyumlu; P127 zinciri S1 ile örtüşüyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); 2 Commons dosyası PD (metadata); GZ TASLAK; data \"noktalar\" betimleri doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Akademik metinler erişilmedi (Fratello, Vardi, Kleiner, Rosenblum, Pollock, Moreau-Nélaton, Sensier, Montout-Richard, Balzac, Kimmelman, AGNSW); yalnız atıf zinciri; uydurma bibliyografya yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "enwiki: eser \"a statement on rural poverty and not biblical piety\"; İncil topluluk/şefkat duygusu yok; örtük ironi rahatsız edici (AGNSW ref →C048).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "enwiki bağlam: Barbizon/Chailly Paris'e ~35 mil; Paris nüfusu 1831–1851 ikiye katlandı; Fontainebleau ovası erken demiryoluyla kenti besledi; sınıf çatışması temsili 1850'lerde \"uniquely modern\" (Fratello).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "frwiki (atıfsız): sağ eğilimli eleştirmenler tehditkâr halk devrimi simgesi, sol gazeteler İkinci İmparatorluk'un yoksullaştırdığı kırsal halkı gördü.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C055",
+   "ifade": "frwiki: Pommery önce L'Angélus'u alıp Louvre'a bağışlamayı denedi, başaramadı; Les Glaneuses'u aldı; Amerikalı dosyası vardı; Bischoffsheim Rémoise'yi tercih etti; aracı Louis Guyotin (mektup 3/10/1889).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "itwiki (atıfsız): küçümseyici yakıştırma \"le tre grazie dei poveri\"; köylü sahnesi için tarih resmi boyutlarının \"cüretkârlığı\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C057",
+   "ifade": "Kuş betimi: frwiki \"nuée d'oiseaux\" (atıfsız); itwiki sağ üstte uzakta \"stormo di uccelli\" (geometriefluide) + \"özgürlük/umut\" yorumu; görsel incelenmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "itwiki betimi (Orsay IT'ye atfen): eller kızarmış/şişmiş, giysiler yıpranmış, ten güneşten yanmış; \"respiro epico\" — bu ayrıntılar S11 Orsay IT metninde YOK (atıf boşluğu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "frwiki (atıfsız): Jules Breton, Le Rappel des glaneuses (1859) ile Millet'nin \"karşıt kutbunu\" alır (öncesinde Les Glaneuses 1854).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Musée d'Orsay",
+   "belge": "Katalog notice \"Des glaneuses\" (Identifiant 342; modification 2026-10-12)",
+   "url": "https://web.archive.org/web/20261015171731/https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); WB arşiv 200 (2026-10-15)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Musée d'Orsay (eski site)",
+   "belge": "EN notice n°342, RF 592",
+   "url": "https://web.archive.org/web/20210513222043/https://www.musee-orsay.fr/en/collections/index-of-works/notice.html?no_cache=1&zsz=5&lnum=&nnumid=342",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; WB arşiv 200 (2021-05-13)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Fransa Kültür Bakanlığı / Joconde (POP)",
+   "belge": "Notice 000PE002031 (gömülü JSON; DMAJ 2026-02-23)",
+   "url": "https://www.pop.culture.gouv.fr/notice/joconde/000PE002031",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı AÇILDI)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Musée d'Orsay — Base salons",
+   "belge": "Salon 1857 livret retranskripsiyonu, \"Des glaneuses [49879]\" (obje 50227)",
+   "url": "https://web.archive.org/web/20260913111848/https://salons.musee-orsay.fr/Detail/objects/50227",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; WB arşiv 200 (2026-09-13)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1368055 (JSON)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1368055.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"The Gleaners\" wikitext (action=parse)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Gleaners&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia (fr)",
+   "belge": "\"Des glaneuses\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Des%20glaneuses&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"Le spigolatrici (Millet)\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Le%20spigolatrici%20(Millet)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Jean-François Millet - Des glaneuses.jpg (WD P18) — imageinfo + wikitext",
+   "url": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Jean-François Millet - Gleaners - Google Art Project 2.jpg (en/fr/it infobox) — imageinfo",
+   "url": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Musée d'Orsay (eski site, IT)",
+   "belge": "\"Alcune spigolatrici\" yorum sayfası (showUid=341)",
+   "url": "https://web.archive.org/web/20160818224051/http://www.musee-orsay.fr/index.php?id=851&L=4&tx_commentaire_pi1%5BshowUid%5D=341&no_cache=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; WB arşiv 200 (2016-08-18)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Smarthistory",
+   "belge": "Harris & Zucker, \"Jean-François Millet, The Gleaners\" (18 Kasım 2015; transkript + details)",
+   "url": "https://web.archive.org/web/20251122034901/https://smarthistory.org/millet-the-gleaners/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); WB arşiv 200 (2025-11-22)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikipedia (fr)",
+   "belge": "Render edilmiş dış bağlantılar (URL keşfi: Joconde/POP, Base salons, Smarthistory)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Des%20glaneuses&prop=externallinks&formatversion=2&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "L'Angélus",
+   "sanatci": "Jean-François Millet",
+   "mufredat_ici": false,
+   "gerekce": "Fratello (2003) iki eserin \"iç içe geçmiş kaderlerini\" inceler; Pommery önce L'Angélus'u alıp bağışlamayı denedi, başaramayınca Les Glaneuses'a yöneldi.",
+   "kanit": [
+    "C055",
+    "C025"
+   ]
+  },
+  {
+   "eser": "Le Rappel des glaneuses (1859)",
+   "sanatci": "Jules Breton",
+   "mufredat_ici": false,
+   "gerekce": "Aynı glanage teması; frwiki Millet'nin \"karşıt kutbunu\" aldığını yazar (atıfsız yorum).",
+   "kanit": [
+    "C059"
+   ]
+  },
+  {
+   "eser": "Les raboteurs de parquet (Parke Kazıyıcılar, 1875)",
+   "sanatci": "Gustave Caillebotte",
+   "mufredat_ici": false,
+   "gerekce": "Rosenblum: Caillebotte'un parke kazıyıcıları Millet'nin \"emeğe epik ilahisi\" olmadan düşünülemez; kentli emek soyu. Müfredatta aynı sanatçının \"Paris Sokağı, Yağmurlu Hava\" tablosu var.",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Orsay FR (Wayback 2026-10-15) + EN (2021-05-13) + IT (2016-08-18), Salon livret (2026-09-13), Joconde/POP (canlı 200) yeniden açıldı; künye/provenance/sergi/imza doğrulandı; Orsay 110 ↔ Joconde 111 boyut çelişkisi (C040), Salle 4→5 (C041), bibliyografya farkı (C045) teyit. en/fr/it wikitext + Smarthistory (Wayback 2025-11-22) yeniden okundu; satış fiyatı (C043), Pommery (C044), öncül/etching (C034) ihtilafları D. WD P127 zinciri S1 ile örtüşüyor (C049). Görsel metadata only → İNCELENEMEDİ (C050); GZ TASLAK. Akademik metinler erişilmedi (C051). itwiki Orsay-atıf boşluğu (C058) yeni tespit.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Boyut (D1/C040): data/wiki 111/111.8 ↔ Orsay 110 ↔ Joconde 111; Orsay sahibi + tarihli (2026-10-12) esas, Joconde farkı not.",
+  "Sergileme (D2/C041): Salle 4 (2021 EN) → Salle 5 (2026 FR); tarih beyanı zorunlu.",
+  "data \"noktalar\" (C050): el toprağa değiyor, pembe kolluk, yüksek ufuk, mavi/kırmızı/sarı başlıklar — görsel İNCELENEMEDİ, doğrulanmadı; vision teyidi gerekli.",
+  "data \"Realizm'in simge eserlerinden\" (C037/E7): ikincil yorum; Barbizon (WD refsiz) + Realizm (S12); tek birincil etiket yok.",
+  "E4 çözüldü: itwiki showUid=341 = IT yorum sayfası (342=FR/EN); yanlış eser atfı YOK.",
+  "E10 doğum yeri granülerliği: Gréville-Hague (S1) ↔ Gruchy (S3) ↔ Gréville près Cherbourg (S4); çelişki değil, doğrulanmadı.",
+  "E11 Salon ID: başlık [49879] ↔ obje 50227; yorumlanmadı.",
+  "E3 (C047): Orsay 1883 Georges Petit \"31/06/1883\" geçersiz tarih; aynen korundu.",
+  "E2 (C046): About alıntı kaynağı \"Salon de 1887\" — 1857 için anomali; doğrulanmadı.",
+  "WD (C049): P186/P2048/P2049/P217/P276/P127 refsiz → yardımcı; P127 zinciri S1 ile örtüşüyor.",
+  "data/harita.json yil 1857, yer Orsay ✓; teknik alanı YOK (eksiklik). denetim-asama3 csv:85 uyumlu. DURUM.md:94 Araştırılmadı; MUFREDAT.md:165 sıra 84."
+ ]
+}

@@ -1,0 +1,972 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q219344",
+ "sanatci_id": "j-m-w-turner",
+ "baslik": "Köle Gemisi (The Slave Ship)",
+ "ozgun_baslik": "Slave Ship (Slavers Throwing Overboard the Dead and Dying, Typhoon Coming On)",
+ "kunye": {
+  "sanatci": "Joseph Mallord William Turner",
+  "sanatci_yasam": "1775–1851 (MFA); Commons Creator \"c. 1775–1851\"",
+  "tarih": "1840",
+  "tarih_belirsizlik": "WD P571 precision yıl; refs yalnız P143 (frwiki) — MFA A ile destekli",
+  "teknik": "Oil on canvas (yağlıboya, tuval)",
+  "boyut_cm": {
+   "yukseklik": 90.8,
+   "genislik": 122.6
+  },
+  "muze": "Museum of Fine Arts, Boston",
+  "envanter": "99.22",
+  "edinim": "1899, William Lothrop'tan 65.000 $ (Accession Date: 24 Şubat 1899); Henry Lillie Pierce Fund",
+  "konum": "The Beal Gallery (Gallery 251), Collections Europe — ON VIEW (2026-08-15 anlık)",
+  "telif_durumu": "Kamu malı (Turner ö. 1851; 100+ yıl pma); Commons PD-Art-100-1923; AttributionRequired false"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Slave-ship.jpg",
+  "kaynak": "Wikimedia Commons; credit: Museum of Fine Arts, Boston",
+  "lisans": "Public domain (PD-Art-100-1923)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (API); BU OTURUMDA İNCELENMEDİ",
+   "cozunurluk": "2152×1616 px; 465.140 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C059); GZ TASLAK; kompozisyon MFA (A) + S2/S3 (B) metninden; zayıf çözünürlük (S11); MFA canlı erişim engelli (403/TLS), yüksek çözünürlüklü alternatif alınamadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 424
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1349
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2619
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayda-erişim"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-zong-tarih-hukuk-ve-sayı-belirsizliği"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-ve-çevre-kölelik-karşıtı-turner"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-ve-renk-kaynak-betiminin-sınırları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-tayfun-ilahi-ceza-ve-izleyici-konumu"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-doğrulanabilen-ve-doğrulanamayan"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-yüce-ve-etik-felsefi-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı-bostonda-bir-başyapıt"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "MFA birincil kataloguyla (Wayback) künyeyi doğrular: başlık, 1840, oil on canvas, 90,8×122,6, 99.22, Pierce Fund, Gallery 251.",
+  "Zong olayını ve sigorta motifini açıklar; kurban sayısı belirsizliğini (132/142/unknown) yönetir, kesin sayı kullanmaz.",
+  "1840 RA sergisini kölelik karşıtı bağlama yerleştirir (kongreler; 1807/1833; hareketin dönüm noktası).",
+  "Ruskin övgüsü ile etik eleştiriyi (Landow/Döring) atfedilmiş yorum olarak ayırt eder.",
+  "Provenans zincirini ve kaynak ihtilaflarını (1843/1844; 1872 Met) değerlendirir; görsel betimin sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Sublime (yüce)",
+   "tanim": "Burke: doğa karşısında insanın mutlak güçsüzlüğü ve dehşeti; korkuyla karışık hayranlık.",
+   "kanit": [
+    "C044"
+   ]
+  },
+  {
+   "ad": "Zong massacre",
+   "tanim": "1781: sigorta yalnızca \"denizde kayıp\" için ödediğinden köleleştirilmiş insanların denize atılması; dava kölelik karşıtı hareket için dönüm noktası.",
+   "kanit": [
+    "C011",
+    "C027"
+   ]
+  },
+  {
+   "ad": "Provenans",
+   "tanim": "Sahiplik zinciri; Griffith→Ruskin→Johnston→Hooper→Lothrop→MFA (1899).",
+   "kanit": [
+    "C019",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Fallacies of Hope",
+   "tanim": "Turner'ın bitmemiş/yayımlanmamış şiiri (1812); 1840 RA sergisinde tabloyla eşlenen dizeler.",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "ad": "Ekfrasis",
+   "tanim": "Eserin sözle canlı betimi; Ruskin metni tablonun yerini alabilir (Modern Painters).",
+   "kanit": [
+    "C036",
+    "C065"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "MFA resmî başlığı \"Slave Ship (Slavers Throwing Overboard the Dead and Dying, Typhoon Coming On)\"; kısa başlık \"The Slave Ship\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Özgün 1840 başlığı \"Slavers Throwing overboard the Dead and Dying—Typhon coming on\"; \"Typhon\" dönem yazımı (period spelling of typhoon).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Sanatçı Joseph Mallord William Turner (English, 1775–1851).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih 1840 (WD P571 precision yıl; refs yalnız P143 frwiki → MFA A ile destekli).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: oil on canvas (WD P186 oil paint + canvas; P518 painting support).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut 90.8 × 122.6 cm (35 3/4 × 48 1/4 in.); wiki yuvarlamaları 91×122/123 (D3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "MFA Boston; envanter 99.22 (WD P276 ikinci değer Q145 UK muğlak → D4).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Credit line: Henry Lillie Pierce Fund.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Gallery 251 (The Beal Gallery), Collections Europe; \"ON VIEW\" (2026-08-15 anlık).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "24 Şubat 1899'da William Lothrop'tan 65.000 $'a müzeye girdi. Not: brief'in \"S1 P580\" atfı hatalı; WD'de P580 yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Konu Zong'un gerçek hikâyesi: İngiliz gemisinin kaptanı 1781'de hasta ve ölmek üzere olan köleleştirilmiş insanları, yalnızca \"lost at sea\" için ödenebilen sigorta parasını almak üzere denize attırdı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Tablo ayrıca tayfuna yakalanan bir köle gemisini anlatan 18. yüzyıl şiirine dayanır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Bu şiir James Thomson'ın \"Summer\"ıdır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "1840'ta Royal Academy'de ilk sergileniş; \"Fallacies of Hope\" (1812, bitmemiş/yayımlanmamış) şiirinden dizelerle birlikte.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Şiir alıntısı (\"Aloft all hands ... Where is thy market now?\") — 7 dize; \"Declare the Typhon's coming\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Ruskin alıntısı: \"If I were reduced to rest Turner's immortality upon any single work, I should choose this.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "MFA, John Ruskin'i \"the first owner\" olarak niteler (sözcük düzeyi A; provenansla gerilim → C056/D1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Provenans: sanatçı eseri satıcısı Thomas Griffith'e (b. 1795) konsinye verdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Aralık 1843: Griffith → John James Ruskin (1785–1864, London), oğlu John Ruskin (1819–1900) için.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "15 Nisan 1869: Ruskin satışı, Christie's London, lot 50 — satılmadı (unsold).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1872: Ruskin → William T. Blodgett (c. 1832–1875) aracılığıyla John Taylor Johnston (1820–1893), New York.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "19–22 Aralık 1876: Johnston satışı, American Art Association NY, lot 76 → Alice Sturgis Hooper (1841–1879), Boston.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Yeğeni William Sturgis Hooper Lothrop'a mirasla geçti; 1899'da MFA'ya satıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "MFA provenans notları kaynakçası: Butlin & Joll 1984 cat.385 pp.236–237; Gage 1980 282–283; Fidell Beaufort & Welcher 1982 OAJ 5(1):51; Scott 2010 BAJ 10(3):69–77 (yalnız 2026); Walker 1994 JMFA Boston 6:4–13. (anılma; metne erişilmedi)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Şiirin tam metni için Finberg, The Life of J.M.W. Turner, R.A., 2nd ed., 1961, p.474 gösterilir. (anılma; erişilmedi)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Zong: içme suyu azalınca kaptan 132 köleleştirilmiş insanın denize atılmasını emretti; doğal ölümler sigortaya dahil değildi (sayı → C057/D2).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Zong davası sonuçsuz (\"inconclusive\") sayıldı ama kölelik karşıtı hareket için dönüm noktası oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Gerçek Zong olayı fırtınada değil sakin sularda oldu; tayfunu ve gün batımını Turner ekledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Zong ölü sayısı: Jamaica'ya varışa dek toplam 142; Kelsall \"the outside number of drowned amounted to 142 in the whole\"; giriş \"more than 130\"; \"The number of deaths is unknown\"; figures \"inaccurate\" olabilir (→ C057/D2).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Turner muhtemelen (\"possibly\") Clarkson'ın The History and Abolition of the Slave Trade'ini (2. baskı 1839) okuyarak etkilendi; itwiki \"presumibilmente\" Clarkson VEYA Gisborne'un Walks in a Forest'u (itwiki yazımı \"Gisbourne\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "1840 RA sergisi Londra'daki iki uluslararası kölelik karşıtı kongreyle zamandaş; sergi politik bir çağrı olarak yorumlanır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Britanya'da köle ticareti 1807'de, kölelik 1833'te kaldırıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Turner'ın kölelik karşıtı çevresi: Society for the Mitigation... (1823–1838), British and Foreign Anti-Slavery Society (1839); 1828'de The Deluge gravürünü John Joshua Proby'ye adadı; ABD gibi uluslararası direniş kampanyalarına tutkulu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "John James Ruskin 1843'te 250 gineye satın aldı (itwiki; MFA'da fiyat yok).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "enwiki: tablo 1844'te babası tarafından John Ruskin'e verildi (birincille çelişir → C056/D1).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "Ruskin, Modern Painters'ın sonraki baskısına övgü metnini ekledi; kamuoyu algısını biçimlendirdi, tabloyu görmeden \"deneyimleme\" hissi yarattı; 1840 RA eleştirmenleri konu/üslup karşısında olumsuzdu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Thackeray 1840 eleştirisi: \"Is the painting sublime or ridiculous? Indeed I don't know which.\" (S2'de satır içi atıf YOK).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Mark Twain, A Tramp Abroad (1880), c.1 b.XXIV: \"The most of the picture is a manifest impossibility—that is to say, a lie ...\" (DOI 10.1093/nq/s6-ii.45.379e doğrulanmadı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "1872 sonrası New York (Met) sergisi estetik övgü topladı; NYT: \"He finds only a miracle of light and color.\" (→ C058/D7).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Alice Hooper eseri MFA'da Ruskin denemesinin broşürleriyle ve müzenin köle ticareti tarihi açıklamasıyla birlikte sergiledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Yorum: yaklaşan tayfun, köle ticaretine ilahi ceza sembolü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C042",
+   "ifade": "Alternatif yorum: izleyici köle gemisinin güvertesindedir; mekânsal \"ontological uncertainty\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C043",
+   "ifade": "Sanayi Devrimi alegorisi okuması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C044",
+   "ifade": "Burke'ün \"sublime\" kavramı: doğa karşısında insanın güçsüzlüğü; hızlı/çılgın fırça darbeleri ve düzensiz/çapraz akıntılar izleyiciyi bunaltır, oryantasyonu bozar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Landow: \"the very closeness of the dying slaves to the spectator [incites the] recognition that the nature which will justly punish the ship is the same nature that is already unjustly devouring the ship's innocent victims.\" (kitap erişilmedi; S2 üzerinden).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C046",
+   "ifade": "Döring/Frost etik eleştirisi: dehşetin estetik nesneye dönüştürülmesi, \"covert complicity between terror and the connoisseur\"; estetik sömürgecilik ideolojisine bağlı, \"öteki\"nin gizlenmesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C047",
+   "ifade": "Ön planda sağ köşede zincirli bacak, çevresinde balıklar/martılar; kırmızı lekeler kan olarak okunur; figürün kadın olduğu \"can be assumed\" (belirsiz); solda zincirler ve küçük uzuvlar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Uzakta yelkenleri toplanmış, \"low, lean lines and clipper bow\" hızlı köle gemisi tipi (devriye gemilerinden kaçış).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Tür: marine art; akım: Romantizm (WD refsiz; S2 lead \"classic example of a Romantic maritime painting\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C050",
+   "ifade": "WD P180: Zong massacre (Q211582) + Zorg (Q33036422, gemi adının varyantı).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C051",
+   "ifade": "Miras: Dabydeen'in Turner şiiri (1994); Schama'nın Power of Art 5. bölümü (2006, BBC Two); Lupe Fiasco Drogas Wave (2018) şiir okuması. (web refs çekilmedi)",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C052",
+   "ifade": "Dosya kamu malı: WD P6216 (P1001 100 yıl pma; P459 ölümden 100+ yıl); Commons PD-Art-100-1923; UsageTerms \"Public domain\"; AttributionRequired false.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Biçimsel betim (kaynakların betimlediği): kan kırmızısı gün batımı, soldan fırtına bulutu, bakır tonlu su, kırmızı direkler; biçimler renk karşıtlığıyla; figürler kenarda/küçük, gemi uzakta/puslu → vurgu doğanın gücünde; \"quick, frenzied brush strokes\"; itwiki canlı/kanlı renkler, kırmızı-sarı gökyüzü, geminin arkasında enkaz/insan izi; Chu 2012 kariyer zirvesinde soyutlama.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Thomas Day'in The Dying Negro'su, ilahi ceza temalı kölelik karşıtı şiirin temsilcisi; McCoubrey'e göre Turner'ın yorumunu \"most likely\" etkiledi (hedge korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Turner eğitimi: Londra doğumu 1775; 14 yaşında Royal Academy; Dr. Thomas Monro yanında topografik çizim ve suluboya.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "D1 Ruskin'e geçiş ihtilafı: MFA \"Aralık 1843, Griffith → John James Ruskin (oğlu için)\" ↔ enwiki \"1844 hediye\" ↔ itwiki 1843/250 gine; MFA \"first owner\" derken provenansta alıcı baba. Birincil tercih edilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "D2 Zong kurban sayısı ihtilafı: 132 (S2) ↔ 142 (S9) ↔ \"more than 130\" (S9 giriş); S9 \"number of deaths is unknown\" + rakamlar yanlış olabilir; MFA sayı vermez. Kesin sayı kullanılmaz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S9",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "D7 1872 satışı ifadesi: enwiki \"Met'te sergilenmek üzere satıldı\" ↔ MFA \"Blodgett aracılığıyla Johnston'a satış\"; Met sergisi provenansta açık değil; Johnston satışı 1876. MFA zinciri esas; Met sergisi iddiası B'de kalır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (yalnız metadata/lisans); 2152×1616 px, 465.140 bayt (zayıf çözünürlük; iç veri: zayif_eserler.csv satır 2625); MFA teknik/konservasyon raporu çekilmedi; yüksek çözünürlüklü alternatif alınamadı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Akademik refs metinleri erişilmedi (McCoubrey, Smiles, Frost, Walker, Manderson, Kleiner, Chu, Landow, Borghesi/Rocchi, Butlin & Joll, Gage, Finberg, Fidell Beaufort & Welcher, Scott, Walvin, Lewis, Fulford); yalnız S2/S3/S4/S9 atıf zincirinden aktarıldı; DOI/ISBN doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "data/ metnindeki \"empasto\" ve \"Empresyonizmin/soyut resmin habercisi\" iddiaları çekilen kaynaklarda geçmiyor (S2 \"quick, frenzied brush strokes\"; MFA \"hot, churning color\"); doğrulanmadı (iç veri: data/basyapitlar.json).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "MFA sayfası detay görseller (2019: leg/birds/slaves/ship/bottom left), sesli rehber (ENG_808.mp3) ve LICENSE IMAGE / ORDER PRINT / DOWNLOAD seçenekleri sunar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Britanya'da ilk örgütlü kölelik karşıtı hareket 1727'de başladı; motifler insani + rakip ülkelerdeki ticareti sonlandırma yönünde ekonomik teşvikler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Amistad ayaklanması ve davası uluslararası haberdi; Smiles'a göre Turner'ı etkileyen olaylar arasında sayılır (\"possibly\" bağlamı korunur).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "itwiki'nin Borghesi/Rocchi'den aktardığı İtalyanca çeviriyle Ruskin övgüsünün devamı: \"il suo colore è assolutamente perfetto ... ogni centimetro quadrato della tela è una composizione perfetta\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Zong: Gregson sendikası (Liverpool); sigorta kişi başı 30 £; öldürmeler 29 Kasım 1781'de gruplar halinde başladı; ilk davada jüri, insanları kargo sayan sigorta protokolüyle sahiplerden yana karar verdi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Gemi aslen Zorg adlıydı; Hollandalılardan ele geçirildi (1781), İngiliz sahiplerince Zong olarak yeniden adlandırıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "MFA betimi: \"One of Turner's most celebrated works\"; \"hot, churning color and light that merge sea and sky\"; dehşet + doğanın korkutucu yüceliği; sanatçının insan ve elemental şiddete ilgisi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "İtalyanca başlık: \"La nave negriera\"; uzun biçim \"Mercanti di schiavi che gettano in mare i morti e i moribondi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Birincil katalog canlıda engelli (www.mfa.org 403; collections.mfa.org TLS süresi dolmuş); Wayback 2026-08-15 ve 2019-01-07 açıldı; iki kopya künye/provenansta aynı; metinde terminoloji farkı (\"slaves\"→\"enslaved people\"; 2026'da \"18th-century poem\", \"British ship\"; note[2]'ye Scott 2010).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "Zong maddesi: mürettebatın \"su yetmez\" gerekçesi tartışmalı; Jamaica'ya varışta (22 Aralık 1781) 420 galon su kaldığı aktarılır (Weisbord); Kelsall affidavit'i 1 Aralık'ta bir günden fazla yağmurda altı fıçı (11 günlük) su toplandığını belirtir; ilk dava 6 Mart 1783'te Guildhall'da Mansfield önünde görüldü. Rakamlar belirsizlik notuna tabi (C029).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q219344 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q219344.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Slave Ship wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Slave%20Ship&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "La nave negriera wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=La%20nave%20negriera&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "MFA Boston (birincil, ARŞİV)",
+   "belge": "collections.mfa.org/objects/31102 — Wayback 20260815135559",
+   "url": "https://web.archive.org/web/20260815135559/https://collections.mfa.org/objects/31102",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (an: 2026-08-15); canlı collections.mfa.org TLS süresi dolmuş (curl 60)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "MFA Boston (birincil, ARŞİV)",
+   "belge": "www.mfa.org/collections/object/slave-ship-...-31102 — Wayback 20190107154316",
+   "url": "https://web.archive.org/web/20190107154316/https://www.mfa.org/collections/object/slave-ship-slavers-throwing-overboard-the-dead-and-dying-typhoon-coming-on-31102",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (an: 2019-01-07); canlı www.mfa.org 403",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Slave-ship.jpg imageinfo (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3ASlave-ship.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Slave-ship.jpg wikitext (lisans şablonu)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File%3ASlave-ship.jpg&prop=wikitext&formatversion=2&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext/lisans)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (referans QID çözümleme)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q159758%7CQ296955%7CQ12321255%7CQ861259%7CQ49133%7CQ145%7CQ19652%7CQ60332278%7CQ29940705%7CQ158607%7CQ211582%7CQ33036422%7CQ37068%7CQ8447&props=labels&languages=en%7Ctr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (labels)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikipedia (en)",
+   "belge": "Zong massacre wikitext (sayı çapraz kontrolü)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Zong%20massacre&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Medusa'nın Salı (Le Radeau de la Méduse)",
+   "sanatci": "Théodore Géricault",
+   "kurum": "Musée du Louvre, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Güncel bir deniz felaketinin tarih resmi ölçeğinde kamusal suçlamaya dönüşmesi; gerçek olay + politik/etik boyut.",
+   "kanit": [
+    "C011",
+    "C044"
+   ]
+  },
+  {
+   "eser": "Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer)",
+   "sanatci": "Caspar David Friedrich",
+   "mufredat_ici": true,
+   "gerekce": "Romantik yüce: doğanın ezici gücü karşısında insanın küçüklüğü; Turner'da yüce, etik şiddetle iç içedir.",
+   "kanit": [
+    "C044"
+   ]
+  },
+  {
+   "eser": "The Deluge",
+   "sanatci": "J. M. W. Turner",
+   "mufredat_ici": false,
+   "gerekce": "Aynı sanatçının kölelik karşıtı çevreyle belgelenen teması (1828 gravür Proby adaması) ve doğanın yıkıcı gücü teması.",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "MFA birincil Wayback 2026-08-15 (S4) + 2019-01-07 (S5) yeniden açıldı; künye/provenans/şiir/Ruskin alıntısı doğrulandı (A). Canlı 403 + TLS engelli. en/it wikitext (S2/S3), Zong maddesi (S9), WD EntityData (S1), Commons metadata (S6/S7) yeniden okundu; D1/D2/D7 ihtilafları D olarak açık; brief \"S1 P580\" atfı düzeltildi (WD'de P580 yok). Görsel metadata only → İNCELENMEDİ (C059); GZ TASLAK. Akademik refs metinleri erişilmedi (C060).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Önceki \"yanlis\" bayrağı (ders_kaynaklari.json d8169c7fb8: 1840 kölelik karşıtı bağlam) kanıtla çelişiyor: MFA RA 1840 (A) + McCoubrey kongreler (B). Bayrak hatalı görünüyor; data değiştirilmedi.",
+  "data \"Turner'ın doğrudan bu olayı resmettiği kesin değildir\" kuşkusu MFA'nın açık Zong ifadesinden (A) daha güçlü; veri notu olarak sunulur.",
+  "data \"empasto\" ve \"Empresyonizm/soyut resim habercisi\" iddiaları çekilen kaynaklarda yok (E, C061); doğrulanmadı.",
+  "data gemiyi \"solda\" konumlandırır; S2 uzak arka planda betimler (C048); görsel teyit gerekli.",
+  "Brief \"S1 P580\" atfı hatalı: WD EntityData'da P580 yok; C010 yalnız S4/S5 (A).",
+  "Görsel İNCELENMEDİ (C059); GZ TASLAK; 2152×1616 zayıf çözünürlük; insan editör görsel teyidi zorunlu.",
+  "Zong kurban sayısı kesinleştirilmedi (D2/C057); derste ve quizde kesin sayı yok.",
+  "eser_konulari.json \"deniz\" etiketi köle ticareti şiddeti bağlamını yansıtmıyor (etiketleme notu)."
+ ]
+}

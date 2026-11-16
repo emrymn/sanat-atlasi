@@ -1,0 +1,790 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q4388208",
+ "sanatci_id": "jean-baptiste-greuze",
+ "baslik": "Kırık Testi",
+ "ozgun_baslik": "La Cruche cassée. (The Broken Pitcher / The Broken Vessel)",
+ "kunye": {
+  "sanatci": "Jean-Baptiste Greuze",
+  "sanatci_yasam": "1725–1805 (Tournus – Paris)",
+  "tarih": "vers 1771–1772",
+  "tarih_belirsizlik": "Birincil \"vers 1771 - 1772\" + \"tablo tarihsiz\"; data/WD \"1771\" aşırı kesin (D, C036); Massard 1773 gravürü terminus ante quem",
+  "teknik": "Tuval üzerine yağlı boya (huile sur toile); oval format",
+  "boyut_cm": {
+   "yukseklik": 109,
+   "genislik": 87
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 5036; MR 1779",
+  "edinim": "1794 devrimci el koyma (saisie révolutionnaire), Louveciennes — comtesse du Barry koleksiyonundan",
+  "konum": "Sully kanadı, Niveau 2, Salle 932 (müze sitesi oda bilgisi çekincesiyle)",
+  "telif_durumu": "Eser kamu malı (Greuze ö. 1805); Commons PD (Yorck); Louvre resmî fotoğrafları telifli (© GrandPalaisRmn) — kullanılmaz"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Greuze_001.jpg",
+  "kaynak": "Wikimedia Commons (The Yorck Project / DIRECTMEDIA; GalleriX)",
+  "lisans": "Public domain (PD-Art Yorck Project; PD-old-100-expired; AttributionRequired false)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (S5); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2908×3638 px; 2.461.692 bayt; oran ≈ 0,799",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnızca kaynak metinlerinden (S9 A; S2/S3/S4 B); GZ TASLAK; Louvre resmî fotoğrafları telifli (© GrandPalaisRmn) — kullanılmaz; Commons ImageDescription sembolizmi olgu gibi sunar → C038/D3 notu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 438
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1319
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2786
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-veri-uyuşmazlıkları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-el-koymanın-izleri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#5-tür-resmi-ve-ahlak-diderotdan-salona"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçim-ve-betim-kaynakların-sınırı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tartışması-bekâret-okuması-ve-kanıt-zinciri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (vers 1771–1772, huile sur toile, oval, 109×87, INV 5036/MR 1779, Salle 932) doğrular.",
+  "Tarih/boyut/sembolizm uyuşmazlıklarını (data/WD ↔ birincil) D olarak yönetir; \"vers\" belirsizliğini korur.",
+  "Bekâret sembolizmini olgu değil çekinceli yorum olarak sunar; birincil sessizliği ve atıf zincirini (Barker) beyan eder.",
+  "Orijinal–kopya–eskiz üçlüsünü (INV 5036 / MNR 861 / RF 3801) ve MNR iade provenansını analiz eder.",
+  "du Barry siparişi → 1794 el koyma → 1777 atölye sergisi → güncel sergiler (2025–26) zincirini ve küratöryel etik sorumluluğunu kurar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tür resmi (peinture de genre)",
+   "tanim": "Gündelik yaşam sahnelerini konu alan resim türü; akademik hiyerarşide tarih resminin altında. Eser bu türde sınıflanır.",
+   "kanit": [
+    "C042"
+   ]
+  },
+  {
+   "ad": "Oval format",
+   "tanim": "Dikdörtgen yerine oval kadraj; tek figürü yumuşak, kapalı bir alana yerleştirir (birincil \"Format : ovale\").",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "MNR (Musées Nationaux Récupération)",
+   "tanim": "Savaşta yağmalanan, iade bekleyen eserlerin ulusal müzelere emanet statüsü; MNR 861 kopyası bu statüdedir.",
+   "kanit": [
+    "C014",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Saisie révolutionnaire",
+   "tanim": "Fransız Devrimi sırasında mal varlığına el koyma; eserin 1794'te du Barry'den Louvre'e geçiş biçimi.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Terminus ante quem",
+   "tanim": "Bir eserin var olması gereken en geç tarih; tarihsiz tabloda Massard'ın 1773 gravürü bu sınırı sağlar.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı \"La Cruche cassée.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Jean-Baptiste Greuze (Tournus 1725 – Paris 1805), Fransız okulu, \"Attribution actuelle\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih \"vers 1771 - 1772\" (18. yy 3. çeyreği); \"vers\" aynen korundu; kesin yıl değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlı boya (huile sur toile).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Oval format (Format : ovale).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "109 × 87 cm; aksesuarlı 135,5 × 116 × 9 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter INV 5036 (ana); MR 1779 (diğer).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Louvre Département des Peintures; sahibi Fransız Devleti (Etat); heldBy Louvre.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sully kanadı, Niveau 2, Salle 932; \"Actuellement visible au Louvre\"; müze sitesi oda bilgisi güncel olmayabilir çekincesi (E2).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Comtesse du Barry (Bécu, Jeanne) commanditaire/önceki sahip; Louveciennes'de devrimci el koyma (saisie révolutionnaire), 1794.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kompozisyonun iki özgün versiyonu vardı; diğeri marquis de Verri'ye aitti; kayıt ikinci versiyonun akıbetini vermez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Tablo tarihsiz; Massard tarafından 1773'te gravürlendi; Ekim 1777'de Salon kapanışından sonra Greuze'ün Louvre atölyesinde sergilendi, \"fort admiré\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Eskiz Louvre'de RF 3801; 1922'de baronne Salomon de Rothschild legado'su.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "MNR 861 = Louvre orijinalinin (INV 5036) kopyası (\"D'après\" Greuze); MNR statüsü; sergilenmiyor; 1950 Wiesbaden iade, 1951 Louvre tahsis.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Birincil betimleme: beyaz dekolteli elbise, balon kollu, önlük ucunda bir kucak gül, saçta kurdele + üç çiçek, göğüste gül, écharpe.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "İkincil betim: kırık testi sağ kolda; figürün solunda aslan başlı, su akan çeşme; atkı dağınık, güller solmuş/kalça hizasında, bakış hésitant. Güncel birincil betimleme testi/çeşmeyi açıkça saymaz → B.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kırık testi = kaybedilmiş bekâret okuması (YORUM; kaynaklar hedged; birincil sessiz). Brief B→C.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S13",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Çeşme = erkek imgesi okuması (YORUM; \"might be / peut être\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Aynı sembolizm Greuze'ün Broken Eggs / Young Girl Weeping over Her Dead Bird / Le Miroir brisé eserlerinde de izlenir (kaynak aktarımı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "MNR 861 kopyası WWII'de Almanlar tarafından çalındı, olası iade beklemek üzere Louvre'e emanet. S10 literal anlatmaz, ima eder → B.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Diderot, Greuze'ü ahlakçı-duygusal tür resmi için övdü (Salon 1763; \"Fais de la morale en peinture…\"); FC alıntısı, birincil metne erişilmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Ernest Dagonet'in Montmartre mezarlığındaki Greuze mezarını süsleyen eserden esinli heykel (atıfsız gallery; doğrulanmadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Tournus'da eserin adını taşıyan bir sokak (atıfsız gallery; doğrulanmadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Biyografi: 1769 Académie kabul parçası Septime Sévère/Caracalla; tarih ressamı değil \"tür ressamı\" olarak kabul; 1771 du Barry siparişi (blog, atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Birincil kaynakçada 13 akademik/katalog kaydı anılır (Villot 1855 … Lemoine/Jackall/Szanto 2025, cat. 79); metne erişilmedi (anılma olgusu A).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "FC yayınına Louvre baş küratörü Guillaume Faroult, CNRS/ENS Charlotte Guichard, filozof Mathieu Potte-Bonneville, fotoğraf tarihçisi Éléonore Challine katıldı; P. Boucheron sundu. Brief C→B.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Sembolizm okuması literatürde çekinceli (\"presume / on peut imaginer / si può immaginare / que l'on devine\"); birincil Louvre kaydı sembolizmden SÖZ ETMEZ.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S9",
+    "S13",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "MNR 861 detay: 111,5 × 85 cm, huile sur toile; Dorotheum Viyana; Wiesbaden 2. konvoy no 7990, 26 Haziran 1950; 1951 OBIP Louvre tahsisi; 1959–1989 Mobilier national; \"non exposé\"; \"Tampon (Colin)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "RF 3801 detay: başlık \"Copie ou esquisse originale…\" (belirsizlik korunur, E6); 43 × 37 cm, oval, huile sur toile; legs 1922; Rothschild (1843–1922); revers \"R 1551\"; 1927 CNAM (eski not); Salle 932.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Sergi listesi: Petit Palais \"Peindre l'enfance\" 2025–26; \"Peinture de genre\" Tokyo/Kyoto 2015; \"Le goût à la grecque\" Atina 2009–10; \"Madame du Barry\" Marly 1992; \"La Révolution française et l'Europe\" 1989; vb.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "FC yorum çerçevesi: atasözü \"Tant va la cruche à l'eau…\"; \"que l'on devine tout juste abusée ou violée\"; \"Greuze est-il vraiment le peintre de l'enfance?\" (YORUM).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "S13 biyografi/diğer eserler: Grandon/Natoire/İtalya 1755; Broken Eggs 1756 Met; Dead Bird 1765 Edinburgh; Malédiction paternelle 1777/1778; Chardin etkisi; tür hiyerarşisi; \"farklı okuma düzeyleri\" (blog).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "FC: Potte-Bonneville, Mulvey \"male gaze\" atıfla \"adult gaze\" sorgusu önerir; çocuk imgelerini \"av/amblem\" yapmanın etik sorunu (YORUM).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Akademik metinlere/arşive erişilemedi: Barker 2005 (S15), Barker 2012 Representations 117 (S14 kaynakça), S16 katalogları, S17 Louvre 2023 arşivi (429×3); anıldı, metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S14",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons PD metadata + lisans çekildi; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "Tarih ihtilafı (D1): data/WD \"1771\" (P571 prec 9, P1480 yok E9; Commons 1771 E10) ↔ birincil \"vers 1771 - 1772\" + \"n'est pas daté\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Boyut ihtilafı (D2): WD P2048/P2049 110 × 85 ↔ birincil + en/it/fr wiki 109 × 87.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Sembolizmin olgulaştırılması (D3): data/eser_notlari + Commons ImageDescription (kesin) ↔ kaynaklar hedged + birincil sessiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S9",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Çeşme yönü (E4): data \"sağda\" (izleyici) ↔ wikiler \"figürün solu\"; görsel incelenmedi, perspektif farkı olabilir, doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "data görsel detayları (E5): \"saten\"/\"ezilmiş gül\"/\"şaşkın bakış\" erişilen metinlerde desteklenmez (birincil \"robe blanche\"/\"rose à la poitrine\"; wiki \"hésitant\"); doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Başlık varyantları (E7): The Broken Vessel (enwiki) / The broken pitcher (WD) / Kırık Testi (data) / La brocca rotta (it) / Der zerbrochene Krug (de); birincil \"La Cruche cassée.\"",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "Tür: genre art / tür resmi (WD P136 Q1047337); birincil kayıt \"Peinture de genre\" sergilerinde listeler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q4388208.json",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4388208.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia en",
+   "belge": "The Broken Vessel (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/The_Broken_Vessel",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→30s backoff→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia it",
+   "belge": "La brocca rotta (Greuze) (wikitext)",
+   "url": "https://it.wikipedia.org/wiki/La_brocca_rotta_(Greuze)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia fr",
+   "belge": "La Cruche cassée (Greuze) (wikitext)",
+   "url": "https://fr.wikipedia.org/wiki/La_Cruche_cass%C3%A9e_(Greuze)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Jean-Baptiste Greuze 001.jpg (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Greuze_001.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200; metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée du Louvre",
+   "belge": "birincil notice HTML (fr)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010059258",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı yeniden açıldı (200)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Musée du Louvre",
+   "belge": "birincil notice HTML (en)",
+   "url": "https://collections.louvre.fr/en/ark:/53355/cl010059258",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Musée du Louvre",
+   "belge": "notice JSON (cl010059258)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010059258.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı == cache",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Musée du Louvre",
+   "belge": "bağlı kayıt JSON: kopya MNR 861 (cl010067159)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010067159.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı == cache",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Musée du Louvre",
+   "belge": "bağlı kayıt JSON: eskiz RF 3801 (cl010061160)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010061160.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B canlı == cache",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Plume d'Art (blog)",
+   "belge": "La cruche cassée : l'innocence perdue selon Greuze (canlı)",
+   "url": "https://www.plumedart.com/post/la-cruche-cass%C3%A9e-l-innocence-perdue-selon-greuze",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (ölü); yerine S13 arşivi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Plume d'Art (Wayback)",
+   "belge": "S12 arşiv kopyası (Marianne Jagueneau, 22 mars 2021)",
+   "url": "https://web.archive.org/web/20240215100232/https://www.plumedart.com/post/la-cruche-cass%C3%A9e-l-innocence-perdue-selon-greuze",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→90s→200; ARŞİV 2024-02-15",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "France Culture",
+   "belge": "Greuze, la cruche cassée et le désordre des familles; Allons-y voir ! (P. Boucheron), 2025-10-26",
+   "url": "https://www.radiofrance.fr/franceculture/podcasts/allons-y-voir/greuze-la-cruche-cassee-et-le-desordre-des-familles-6485583",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Cambridge UP",
+   "belge": "Emma Barker, Greuze and the Painting of Sentiment, 2005 (enwiki satır içi ref)",
+   "url": "https://en.wikipedia.org/wiki/The_Broken_Vessel",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLMEDİ; yalnız atıf görüldü",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Louvre kaynakçası",
+   "belge": "13 bibliyografik kayıt (Villot 1855 … Lemoine/Jackall/Szanto 2025)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010059258",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "kayıtta anıldı; METNE ERİŞİLMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Musée du Louvre (Wayback)",
+   "belge": "notice 2023 arşivi",
+   "url": "https://web.archive.org/web/20231003042812/https://collections.louvre.fr/ark:/53355/cl010059258",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429×3 (90s); ERİŞİLEMEDİ",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "La Cruche cassée (eskiz)",
+   "sanatci": "Jean-Baptiste Greuze",
+   "kurum": "Musée du Louvre, Paris",
+   "envanter": "RF 3801",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun eskiz/kopya adayı; \"copie ou esquisse originale\" belirsizliği ve 43×37 boyutuyla orijinal-eskiz ilişkisini incelemek için.",
+   "kanit": [
+    "C013",
+    "C029"
+   ]
+  },
+  {
+   "eser": "Broken Eggs (Les Œufs cassés)",
+   "sanatci": "Jean-Baptiste Greuze",
+   "kurum": "Metropolitan Museum of Art, New York (S13 aktarımı)",
+   "mufredat_ici": true,
+   "gerekce": "İkincil kaynakların aynı \"kırık nesne → masumiyet kaybı\" sembolizm okumasında andığı eser; müfredat içi (data/sanatcilar kurs_eserleri). Yer/tarih S13 blog aktarımı (C).",
+   "kanit": [
+    "C019",
+    "C032"
+   ]
+  },
+  {
+   "eser": "Young Girl Weeping over Her Dead Bird",
+   "sanatci": "Jean-Baptiste Greuze",
+   "kurum": "National Gallery of Scotland, Edinburgh (S13 aktarımı)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı sembolizm serisinde anılan eser; kayıp nesne ve yas teması. Yer/tarih S13 blog aktarımı (C).",
+   "kanit": [
+    "C019",
+    "C032"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — Louvre birincil fr/en HTML+JSON (S7/S8/S9) ve bağlı kayıtlar MNR 861 (S10) + RF 3801 (S11) 14 Kasım 2026'da CANLI yeniden açıldı (200); künye/tarih \"vers\"/teknik/oval/boyut/envanter/konum/provenans/iki versiyon/Massard 1773/1777 atölye/eskiz-kopya zinciri cache ile AYNI teyit edildi (13 kaynakça, 11 sergi). en/it/fr wikitext + FC + Plume d'Art arşivi yeniden okundu; sembolizm hedged + birincil sessiz (C027). Görsel metadata only → İNCELENEMEDİ (C035); GZ TASLAK. Erişilemeyen: Barker 2005/2012, S16 katalogları, S17 arşiv (C034).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D1, C036): data \"1771\" ↔ birincil \"vers 1771–1772\"; WD P571 prec 9, P1480 yok (E9); Commons 1771 (E10). Birincil esas; \"vers\" korunmalı.",
+  "Boyut (D2, C037): WD 110×85 ↔ birincil + wiki 109×87. Birincil esas.",
+  "Sembolizm (D3, C038/C017): data/eser_notlari + Commons kesin alegori ↔ kaynaklar hedged + birincil sessiz. Yorum olarak atıflandırılmalı.",
+  "data görsel detayları (E5, C040): \"saten\"/\"ezilmiş gül\"/\"şaşkın bakış\" metinlerde desteklenmez; görsel incelenmedi.",
+  "Çeşme yönü (E4, C039): data \"sağda\" (izleyici) ↔ wiki \"figürün solu\"; perspektif farkı olabilir; görsel teyit gerekli.",
+  "Başlık (E7, C041): data \"Kırık Testi\" / enwiki \"The Broken Vessel\" / WD \"The broken pitcher\" / birincil \"La Cruche cassée.\" — varyant.",
+  "MNR atıf nüansı (E8, C014/C020): bağlı listede \"Greuze\" ama linkType \"D'après\" → kopya; WWII hırsızlığı birincilde literal değil (B).",
+  "RF 3801 statüsü (E6, C029): birincil başlık \"Copie ou esquisse originale\" belirsizliğini korur; itwiki tek yönde çözer; birincil esas.",
+  "Uyumlu: data \"muze\" ↔ birincil/WD; oval/du Barry/aslan başlı çeşme destekli. onbellek lisans \"l\":\"\" boş → Commons PD teyit (S5). gorsel_oranlari 0.8 ≈ 2908/3638.",
+  "Görsel İNCELENEMEDİ (C035); GZ TASLAK; Louvre fotoğrafları telifli; insan editör görsel teyidi ZORUNLU."
+ ]
+}

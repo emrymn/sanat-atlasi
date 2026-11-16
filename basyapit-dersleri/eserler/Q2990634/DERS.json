@@ -1,0 +1,824 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2990634",
+ "sanatci_id": "wassily-kandinsky",
+ "baslik": "Kompozisyon VII",
+ "ozgun_baslik": "Композиция VII (Composition VII)",
+ "kunye": {
+  "sanatci": "Wassily Kandinsky",
+  "sanatci_yasam": "1866–1944",
+  "tarih": "1913",
+  "tarih_belirsizlik": "WD P571 precision=yıl; P1480 (circa) yok; birincil 1913 (A). Hazırlık suluboyasının tarihi ayrı eserdir ve tartışmalıdır (1910 imza ↔ 1913 kayıt).",
+  "teknik": "Tuval üzerine yağlıboya",
+  "boyut_cm": {
+   "yukseklik": 200,
+   "genislik": 300
+  },
+  "muze": "Tretyakov Gallery, Moskova",
+  "envanter": "Инв.13230",
+  "edinim": "1929: Devlet Yeni Batı Sanatı Müzesi'nden (GMNZI) giriş (A); Nisan 1915: Tretyakov sergisinde müze satın alması (B); 1915–1929 ara dönem belgesiz (E)",
+  "konum": "Tretyakov Gallery, Moskova (Лаврушинский пер, 10)",
+  "telif_durumu": "Kamu malı (Kandinsky ö. 1944; 70+ yıl pma); Commons PD-Art; fotoğraf kredisi Google Art & Culture"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg",
+  "kaynak": "Wikimedia Commons (Google Art & Culture)",
+  "lisans": "Public domain (PD-Art)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (Commons imageinfo); görsel BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "7015 × 4661 px (~22 MB); oran 1.505 ≈ 300/200 (yatay, künyeyle tutarlı)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnız kaynak metinlerinden (S4 A; S3 B); GZ TASLAK; data hotspot betimleri doğrulanmadı; insan editör görsel teyidi zorunlu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 416
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1329
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2714
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-sınırları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenans-odessadan-moskovaya"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-tarih-ve-provenans-odessadan-moskovaya"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-ikonografi-tartışması-apokalips-mi-son-yargı-mı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tartışması-apokalips-mi-son-yargı-mı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-hazırlık-süreci-doğrusal-olmayan-otuz-çalışma"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum",
+   "DERS_ILERI.md#6-kompozisyon-kavramı-ve-içsel-zorunluluk"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--eserin-yolculuğu",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Tretyakov birincil kaydıyla künyeyi (1913, yağlıboya/tuval, 200×300, İnv.13230, 1929 GMNZI girişi) doğrular.",
+  "Hazırlık sürecini (30+ çalışma) ve kısa son icrayı (25–28 Kasım 1913) Münter fotoğraflarıyla açıklar.",
+  "Apokalips / Son Yargı tema okumalarını ve gizli ikonografi tartışmasını kaynak hiyerarşisiyle değerlendirir.",
+  "Renk–müzik ilişkisini ve \"içsel zorunluluk\" kuramını müze metni + akademik kaynaklarla yorumlar.",
+  "İhtilafları (boyut, suluboya tarihi, tema vurgusu, icra süresi) ve boşlukları (provenans, atıf zinciri) uydurmadan yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Kompozisyon (Kandinsky)",
+   "tanim": "En yüksek ve en karmaşık sanat formu; yavaş oluşan, bilinçli/niyetli çalışma (İzlenim ve Doğaçlama'dan ayrılır).",
+   "kanit": [
+    "C011",
+    "C028"
+   ]
+  },
+  {
+   "ad": "İçsel zorunluluk (innere Notwendigkeit)",
+   "tanim": "Biçimin yaratılışına, içsel hayatın belirlenimi olarak başkanlık eden aciliyet; 1910'da formüle edildi.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "ad": "Apokalips / Son Yargı ikonografisi",
+   "tanim": "Borazan melekler, atlı, İlyas'ın ateş arabası; V=Diriliş, VI=Tufan, VII=Son Yargı üçlemesi.",
+   "kanit": [
+    "C010",
+    "C024"
+   ]
+  },
+  {
+   "ad": "Renk–ses eşdeğerliği",
+   "tanim": "Açık mavi=flüt, mavi=viyolonsel, koyu=kontrbas, en koyu=org; \"kürelerin müziği\" kozmogonisi.",
+   "kanit": [
+    "C027",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Eskiz / etüt / varyant",
+   "tanim": "Hazırlık hiyerarşisi: 30+ çizim, 6 büyük yağlıboya etüdü, 15 varyant; kronolojisi belirsiz.",
+   "kanit": [
+    "C008",
+    "C022"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Wassily Kandinsky (Василий Кандинский, 1866–1944) tarafından yapıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Başlık: Композиция VII / Composition VII; tarih 1913 (birincil kayıt; WD P571 precision=yıl).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: tuval üzerine yağlıboya (\"Материал - холст / Техника - масло\"; WD P186 oil paint + canvas, P518=painting support).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 200 × 300 cm (birincil \"Размер - 200 x 300\"; WD P2048/P2049). Alternatif 200,6×302,2 → C042 (D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tretyakov Gallery, Moskova'da korunuyor (Лаврушинский пер, 10; WD P195/P276=Q183334).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter no: Инв.13230 (\"Инвентарный номер - Инв.13230\"; __NUXT__ invnum). WD P217 YOK.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Müzeye 1929'da Devlet Yeni Batı Sanatı Müzesi'nden (GMNZI) geçti (\"Поступило из Государственного музея нового западного искусства. 1929\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "30'dan fazla hazırlık çalışması: küçük kurşun kalem eskizleri, kalem çizimleri, suluboyalar, 1 metreyi aşan yağlıboya tuval etütleri; çoğu 1913 sonbaharında.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Büyük tuvalin son hali \"kelimenin tam anlamıyla birkaç gün\"de, 25–28 Kasım 1913'te tamamlandı; eskizlerdeki titiz plastik çözümleme bunu mümkün kıldı. Gün sayısı → C045 (D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Müze metni tema birliğini Apokalips'te toplar: önceki figüratif eserlerin zar zor seçilen yankıları — borazan melekler, atlı, İlyas peygamberin ateş arabası — maddenin gözümüzün önünde dönüşümü hissini yaratır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "\"Kompozisyon\" Kandinsky için en yüksek ve en karmaşık sanat formu; VII'de biçimler icat/konstrüksiyon değil, imgelenimde belirenin yönlendirilmesi/düzeltilmesi: \"Все формы … приходили ко мне 'сами собою'\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Müze eseri 1910'ların ilk yarısının merkezî yapıtlarından ve yaratıcı olgunluğun kazanılmasının örneği olarak sunar: doğayı taklit ve figüratiflikten vazgeçiş; anlam çizgi ve renk lekesinin ifadesine taşınır; algı etkin imgelenim ve sezgi ister.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Büyük boyut \"dalma\"/katılma etkisi yaratır; müze alıntısı: \"Живопись есть грохочущее столкновение различных миров … в симфонию, имя которой – музыка сфер. Создание произведения есть мироздание\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Pompidou hazırlık suluboyası: \"Sans titre\" (atfedilen başlık \"Première abstraction, aquarelle\"); AM 1976-864; 49,6 × 64,8 cm; grafit + Çin mürekkebi + suluboya / kâğıt; Cabinet d'art graphique; 1976 Nina Kandinsky bağışı; kredi MNAM-CCI/Audrey Laurans; \"Domaine public\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Pompidou güncel kaydı \"Date de création 1913\"; inskripsiyon aynen: \"S.D.B.DR.;T.D.R. : KANDINSKY i9i0//Aquarelle i9i0 /(abstraite)\" (\"i9i0\" sitenin rendering'i, normalize EDİLMEDİ; E008). Tutum ihtilafı → C043 (D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Görsel kamu malı (PD-Art; PD-old-auto-expired, PD-old-80-expired, CC-PD-Mark; AttributionRequired=false); kredi Google Art & Culture; 7015 × 4661 px, 22.019.538 bayt; featured; DateTimeOriginal 1913.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "WD metadata: P571=1913 (precision=9/yıl), P1480 (circa) YOK; P217 (envanter) YOK; P571 ref DBpedia, P170 ref frwiki, P195 ref frwiki+itwiki, boyut ref Commons kategorisi (2018-06-26) — WD tek başına A yapılmadı, A değerleri S4/S5/S8'den teyit edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S5",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Nisan 1915: Tretyakov'daki karma sergide (Mayakovski dahil az sayıda sanatçı) tuval müze tarafından satın alındı (Hermann 2023, pp. 224-225 atfı; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "İlk kamusal sunum: 1914 Odessa Sanat Müzesi, 60 başka eserle (\"Bir Daire ile Resim\", \"Beyaz Çizgilerle Resim\", \"Doğaçlama 34\" dahil); halk ve eleştirmenlerden olumlu karşılık (Hermann pp. 216-217).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "I. Dünya Savaşı başlayınca Kandinsky Rusya'ya döndü; Odessa Osmanlı donanmasınca bombalanırken 12–20 Aralık (1914) arasında sergideki tablolarını kurtardı (Hermann pp. 221-222).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Münih'te yapıldı: ilk yedi Kompozisyon Ocak 1910–Kasım 1913 Münih; VIII 1923 Weimar Bauhaus, IX 1936 / X 1939 Paris. S3 Tretyakov'a atfeder; S4/S5 metninde ifade YOK → C049 (E) atıf zinciri notu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Hazırlıklar üç teknik grupta: 30+ çizim, 6 büyük yağlıboya etüdü, benzer konulu 15 varyant; kesin kronolojik sıra güç, süreç doğrusal değil (Dabrowski & Oldenburg p. 40; Düchting p. 48; Masoero p. 50). Masoero: yaratıcı süreç zihinde zaten tamamlanmıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Gabriele Münter tanıklığına göre son yazım yalnızca üç buçuk gün sürdü (Bell p. 618); süreç Münter'in çeşitli fotoğraflarıyla belgelendi (Hermann p. 213). Münter o dönem sanatçının yol arkadaşıydı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Dabrowski & Oldenburg (p. 41): V–VI–VII dinsel altyapı paylaşır; V=Diriliş (17 Kasım 1911 tamamlanmış), VI=Tufan (5 Mart 1913), VII genel tema=Son Yargı; \"Giudizio finale\" (1912) ile kompozisyon/tema/ikonografi sürekliliği (p. 57; Nigro Covre 2014 p. 6). Vurgu → C044 (D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Yaratıcı olgunluğu belgeleyen ve yaratıcı enerjinin zirvesi sayılan eser (Tordella p. 14; Düchting p. 52); \"uluslararası başarı yılının en temsilî eseri, Astrattismo'nun kesin özgürleşme noktasını simgeler\" (Guggenheim p. 80).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sanatçının boyut olarak şimdiye dek gerçekleştirdiği en büyük eser (Robbins p. 145).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Renk–ses eşdeğerliği: \"açık mavi flüte benzer, mavi viyolonselye … kontrbasa … orgun derin sesi\" (Masoero p. 48); \"titreşim\" ve teosofik yankı (Nigro Covre 2012 pp. 24-27); VI ve VII renk araştırmasının zirvesi ve \"içsel tını\"nın somut ilk tam ifadesi (Masoero pp. 49-50); \"saf ses\" ruhu doğrudan sarsar: \"nesnesiz duygu\" (Malquori p. 234).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "\"Sanatta Ruhsallık Üzerine\" Aralık 1911'de yayımlandı (Der Blaue Reiter üyeliği sürerken); üç tür: İzlenimler (dış doğanın doğrudan izlenimleri), Doğaçlamalar (çoğunlukla bilinçsiz, iç doğanın izlenimleri), Kompozisyonlar (yavaş oluşan, uzun süre yeniden ele alınan, bilinçli/niyetli ama \"son tahlilde duygu üstün gelir\") (Kandinskij pp. 210-211; Düchting pp. 48-52); \"içsel zorunluluk\" 1910'da formüle edildi (Robbins p. 146; Malquori p. 233).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Suluboya tarih tartışması: imzalı \"1910\"; Nina Kandinsky tanıklığı 1910'u destekler; stil analizine göre 1910 eserlerinde bu soyutlama düzeyi yok, eser geriye tarihendirilmiş (retrodatato) ve 1913'e ait (Guggenheim p. 305); Dabrowski 1913 der; enwiki 1910 tarihini \"apocryphal\" sayar. E002 aynen korunur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Suluboya Composition VII için bir eskiz olarak kabul edilir: Dabrowski kataloğu alternatif başlık \"Untitled (Study for Composition VII)\" (Dabrowski & Oldenburg p. 101); enwiki aynı başlığı kullanır. Pompidou kaydında (S8) \"Composition VII\" adı GEÇMEZ.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "İlham kaynakları: Rus lubok baskıları (17. yy'dan beri popüler; Dabrowski & Oldenburg p. 15); Peter von Cornelius \"Son Yargı\" freski (1836-39, Münih Ludwigskirche altar üstü; p. 45); 15. yy Almanca İncil gravürleri; Sembolizm (Fransız/Rus); Jugendstil ve Peter Behrens (Washton Long p. 217; Weiss p. 271). Bu kaynaklardan \"yeşil-siyah büyük oval ve merkezdeki düzensiz siyah dikdörtgen\" türetilir (Dabrowski & Oldenburg p. 41).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Gizli ikonografi tartışması: \"atlı\" (sol alt), \"şimşek\" (sağ üst/orta), \"tepedeki kubbeli şehir\" (merkez üstü) okumaları; Robbins'a göre dönüşüm o denli tamam ki belirli figürleri izlemek \"inopportuno – se non propriamente fallace\"; bazı araştırmacılar kalıntıların sürdüğünü savunur; soyut↔figüratif yalnız derece farkı (Robbins pp. 146-147). Washton Long (p. 217): \"örtülü ikonografi\" ifade araçları cephaneliğini zenginleştirir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "İlk üç Kompozisyon (1910, Alman özel koleksiyonları) II. Dünya Savaşı'nda yok edildi; yalnız siyah-beyaz fotoğraflar ve hazırlık eskizleri kaldı. S3 Tretyakov'a atfeder; S4/S5 metninde YOK → C049 (E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Odessa sergisinde eleştirmenler tabloyu \"tükenmez potansiyeli\" olan bir müzik kompozisyonuna benzetti (Hermann p. 217); Kandinsky viyolonsel çalardı (Tanzola); Wagner (Lohengrin), Schönberg, Skryabin, Debussy ilgisi: \"doğal güzellikten kurtuluş\", akustik değil psişik deneyim (Masoero pp. 46-47; Nigro Covre 2012 pp. 24-25).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Apokalips teması 1913 Alman İmparatorluğu bağlamına oturur: milliyetçi duygular ve yaklaşan savaş beklentisi \"nihai hesaplaşma\" önsezisi (Tordella pp. 13-14); Kandinsky Hristiyan mitlerinin (Yuhanna Apokalipsi, Son Yargı) halkçı/folklorik temsillerini entegre etti (Washton Long; Fallone; Dabrowski p. 13).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Biçimsel betim (Bell p. 618): tuvalin sol kısmının merkezinden başlanmış; çekirdekten karşıt renkler, kesilmiş biçim/çizgiler; yoğun fırça ↔ hafif sfumato; kısa çizgiler taraklanır/paralel dizilir/kesişip ızgara kurar; farklı yoğunluk bölgeleri; sol alttan sağ üste kuşatıcı hareket; merkez \"kaybolur\", her bileşen eşit önemde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "\"Kenar\"/çerçeve: VII'de çerçevenin gölgesi görüntü yapısına sızar; kenardan zemin üzerinde \"yüzen\" büyük biçimlerle yan yana gelen arka plan öğeleri (Turchin p. 42; bir suluboyada Art Nouveau gibi bronz boya). Çizili kenar, sanatçının kendi resmini seyirci olarak izleme girişimi: \"Beyaz Kenarlı Resim\" ve \"Kırmızı-Mavi Halkalı Doğaçlama\" (1913), \"Üç Lekeli Resim\" (1914, Thyssen) (Hermann p. 213).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Yorum: tema apokaliptik ama VI'nın yıkıcı tufan dalgalarının aksine burada \"kaotik sevincin olası yeniden doğuşu\" seçilebilir; yaklaşan I. Dünya Savaşı ve Rus Devrimi şiddetine karşı coşkulu umut çığlığı olarak okunur (Bell p. 618); Dabrowski: materyalist çağa kaygı + yeni ruhsal çağa umut, sanat kurtuluş aracı (Dabrowski p. 13).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Düchting (p. 49): Kandinsky nadiren bu denli müzikal ve neredeyse oyuncu ruh halindeydi; koyu/açık, karmaşık/elementer karşıtlıkları gerçek bir \"senfoni\" kurar; eskizler ve Münter tanıklığı ışığında bu eseri yaratırken eğlenmiş olabilir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Alternatif başlık: itwiki \"Zu Komposition 7\" verir (Dabrowski & Oldenburg pp. 40-41 atfı); S7 Almanca \"Komposition 7\" (zayıf kaynak).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "1910'dan itibaren Kandinsky klasik Rus edebiyatı motif/temalarından daha imalı ve ruhsal, Sembolizm'i andıran bir öğeye yöneldi; mistik nüanslı Rus sembolizmi işinin içine doğuştu; temsil dışı sanatı ruhsalı iletmek için tek uygun araç gördü; resimleri gizli motiflerden türeyen soyutlamalar olarak kurdu — başlangıç figürasyonu renk ve özgür biçimde çözülürken figürasyon kalıntıları izleyicinin özgün figüratif temaları (V, VI, VII'de) bulmasına hâlâ izin veriyordu (Dabrowski p. 12).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Tema kombinasyonu: Diriliş + Son Yargı + Tufan + Cennet/Garden of Eden (kandinsky.net; enwiki S7'ye atıfla tekrarlar). Akademik olmayan derleme; yorum olarak sunulur. Vurgu ihtilafı → C044 (D).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C041",
+   "ifade": "enwiki Context: eser Kübizm ve Fütürizm özellikleri gösterir; Delaunay, Picabia, Kupka, Survage, Mondrian, af Klint'in soyut işleriyle benzer (Artsy atfı; akademik değil). Yorum/konumlandırma.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C042",
+   "ifade": "D001 Boyut: birincil 200 × 300 cm ↔ en/it infobox 200,6 × 302,2 cm (satır içi atıfsız) ↔ S7 200,0 × 300,0 cm (78,7 × 118,1 inç). Birincil değer esas alınır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S1",
+    "S2",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D002 Pompidou tarih tutumu: itwiki Pompidou'nun \"1910 o 1913\" temkinini aktarır ↔ canlı kayıt (2026-11-14) \"Date de création 1913\" (inskripsiyonda 1910 imzası ayrıca kayıtlı). Aktarılan temkin güncel kayıtla örtüşmüyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D004 Tema vurgusu: S3 (Dabrowski & Oldenburg p. 41) genel tema Son Yargı (Tufan VI'ya özgü) ↔ S2/S7 kombinasyon (Diriliş+Son Yargı+Tufan+Cennet) ↔ S4 Apokalips + melekler/atlı/İlyas ↔ data/eser_notlari \"tufan temasını işleyen\". Yorum farkı, kesin hata değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S7",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D005 İcra süresi ifadesi: S4 \"kelimenin tam anlamıyla birkaç gün\" (25–28 Kasım) ↔ S3/Bell \"üç buçuk gün\" ↔ S7 \"yalnızca dört gün\". Tarih aralığı tümünde aynı; gün sayısı ifadesi farklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "E007: data/basyapitlar \"sonraki dönemde soyut ekspresyonizmi … etkilemiştir\" iddiası erişilen hiçbir kaynakta desteklenmiyor (S3'te de geçmez); doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E006: WD P135 (hareket): Expressionism (Q80113) + abstract art (Q128115); referans beckchris.wordpress.com blogu (2020-06-01) — akademik değil, zayıf. Hareket bağlamı için S3'ün Blaue Reiter/ekspresyonizm çerçevesi tercih edilir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E001: \"ilk soyut eser\" iddiası kesinleştirilmedi: enwiki Context af Klint/Delaunay/Kupka vb. ile birlikte anar; itwiki suluboyayı \"sanatçının ve genel olarak ilk soyut eser\" sayar; \"kurucu eserlerinden\" ifadesi kaynaklarla uyumlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E003 atıf zinciri: itwiki \"Münih'te yapıldı\" ve \"ilk üç Kompozisyon WWII'de yok oldu\" ifadelerini Tretyakov'a atfeder; canlı (S4) ve 2026-01-02 arşiv (S5) katalog metninde bu cümleler YOK (canlı HTML'deki 4 \"Мюнхен\" geçişi başka eser kayıtlarına ait). Atıf zinciri doğrulanamadı; C021/C033 B düzeyinde notla tutulur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "D003 provenans boşluğu: 1915 satın alma (S3) ile 1929 GMNZI girişi (S4) arasındaki ara dönem — eserin GMNZI'ye ne zaman/nasıl geçtiği — erişilen kaynaklarda BELGELENMİYOR; ara adım uydurulmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük çekildi; data hotspot betimleri (göz biçimli düğüm, kürekli kayık vb.) doğrulanmadı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "S3 kaynakçasındaki kitap/makalelerin (Bell, Dabrowski, Dabrowski & Oldenburg, Düchting, Fallone, Fiorino, Hermann, Kandinskij/Sers, Malquori, Masoero, Guggenheim, Nigro Covre, Robbins, Tanzola, Tordella, Turchin, Washton Long, Weiss) metinlerine ERİŞİLMEDİ; yalnız \"kaynakçada anıldı\" statüsü.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q2990634",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2990634.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:13:17Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"Composition VII\" wikitext (pageid 46708512; \"Expand Italian\", May 2026)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Composition%20VII&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:13:55Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"Composizione VII\" wikitext (pageid 1219229; \"Vetrina\", Mart 2026; akademik kaynakçalı)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Composizione%20VII&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:14:25Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Tretyakov Gallery",
+   "belge": "Birincil katalog: masterpiece 10873 (canlı; Nuxt SPA, SSR künye + müze açıklaması; lang=en Rusça SSR döndürdü)",
+   "url": "https://my.tretyakov.ru/app/masterpiece/10873?lang=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:15:31Z; 9.052.680 bayt)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Tretyakov Gallery (Wayback)",
+   "belge": "S4 arşiv kopyası — itwiki kaynakça atıf URL'si (atıf doğrulama; canlı erişim çalıştığı için zorunluluk değil)",
+   "url": "https://web.archive.org/web/20260102110201/https://my.tretyakov.ru/app/masterpiece/10873?lang=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-01-02T11:02:01Z; çekim 2026-11-14T20:17:20Z)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Composition VII - Wassily Kandinsky, GAC.jpg (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Composition%20VII%20-%20Wassily%20Kandinsky,%20GAC.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:15:39Z); metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "wassilykandinsky.net",
+   "belge": "\"Composition VII\" work-36.php (S2 satır içi ref'i; akademik olmayan derleme)",
+   "url": "https://www.wassilykandinsky.net/work-36.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:17:21Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Centre Pompidou",
+   "belge": "\"Sans titre / Première abstraction\" (hazırlık suluboya) katalog kaydı; /id/cMejBMj/r65b86k/fr → /fr/ressources/oeuvre/cMejBMj",
+   "url": "https://www.centrepompidou.fr/fr/ressources/oeuvre/cMejBMj",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:17:24Z)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (referans QID çözümü)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&props=labels&ids=Q61064%7CQ183334",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (2026-11-14T20:17:16Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Yerel data/ (salt-okunur)",
+   "belge": "basyapitlar.json[101], eser_ayrintilari.json[101], eser_notlari.json, eserler_onbellek.json, yerel_gorseller.json",
+   "url": "yerel: data/basyapitlar.json (eserler[101]) vd.",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma; DEĞİŞTİRİLMEZ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Kompozisyon VI",
+   "sanatci": "Wassily Kandinsky",
+   "kurum": "Ermitaj, St. Petersburg",
+   "mufredat_ici": false,
+   "gerekce": "Aynı serinin Tufan temalı eşi (5 Mart 1913); VII ile renk araştırmasının zirvesi ve tema karşıtlığı (yıkıcı dalga ↔ kaotik sevinç). Ermitaj konumu itwiki galerisinden (B).",
+   "kanit": [
+    "C024",
+    "C027",
+    "C038"
+   ]
+  },
+  {
+   "eser": "Sans titre / Première abstraction (Composition VII için suluboya)",
+   "sanatci": "Wassily Kandinsky",
+   "kurum": "Centre Pompidou, Paris (AM 1976-864)",
+   "mufredat_ici": false,
+   "gerekce": "Hazırlık çalışması; tarih tartışması (1910 imza ↔ 1913 kayıt) ve \"ilk soyut\" iddiası için yöntemsel karşılaştırma.",
+   "kanit": [
+    "C014",
+    "C029",
+    "C030"
+   ]
+  },
+  {
+   "eser": "Son Yargı (Giudizio Universale) freski",
+   "sanatci": "Peter von Cornelius",
+   "kurum": "Ludwigskirche, Münih",
+   "mufredat_ici": false,
+   "gerekce": "İkonografik kaynak (1836–39); Apokalips/Son Yargı temasının figüratif öncülü; lubok ve İncil gravürleriyle birlikte biçimsel türetim.",
+   "kanit": [
+    "C031"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tretyakov birincil canlı (S4, 200) + Wayback 2026-01-02 (S5) ve Pompidou (S8, 200) 2026-11-14'te yeniden açıldı; künye/tema/icra/30+ eskiz birebir teyit. en/it wikitext (S2/S3), WD (S1), Commons (S6) yeniden okundu. E003 teyit: canlı HTML'deki 4 \"Мюнхен\" başka eser (Vereshchagin vb.) kayıtlarına ait, VII katalog metninde Münih/WWII ifadesi yok. D001–D005 ihtilafları, E001–E008 belirsizlikleri açık. Görsel metadata only → İNCELENMEDİ (C051); GZ TASLAK. S3 literatür metinleri erişilmedi (C052).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar[101] \"Münih'te boyadığı\" → B (C021); itwiki Tretyakov'a atfeder ama katalog metninde yok (E003/C049 atıf zinciri notu).",
+  "data \"Sanatta Ruhsallık Üzerine'yi 1911'de yazdığı\" → erişilen kaynak Aralık 1911 YAYIM tarihini verir (C028); yazım/yayım nüansı korunmalı.",
+  "data \"soyut ekspresyonizmi etkiledi\" → erişilen kaynaklarda desteksiz (C046, E007); doğrulanmadı.",
+  "eser_notlari \"tufan temasını işleyen\" → D004 nüansı (C044): Tufan kombinasyon temalarından biri; S3 onu VI'ya özgüler.",
+  "Envanter Инв.13230 data/muze_numaralari.json'da YOK (boşluk, hata değil); brief A değeri sağlar (C006). WD P217 de yok (C017).",
+  "eserler_onbellek gorsel lisans alanı boş (\"l\":\"\"); Commons lisansı PD-Art (C016). kaynaklar=[\"wikidata\"].",
+  "Görsel hotspot betimleri (göz biçimli düğüm, kürekli kayık, halkalı oval vb.) bu oturumda DOĞRULANMADI (C051); GZ TASLAK; insan editör görsel teyidi zorunlu.",
+  "Boyut: data \"~2×3 m\" ✓ (C004 A); en/it infobox 200,6×302,2 atıfsız (C042 D)."
+ ],
+ "diger_basliklar": [
+  "Zu Komposition 7 (itwiki, Dabrowski & Oldenburg pp. 40-41 atfı; B — C053)",
+  "Komposition 7 (S7; zayıf)"
+ ]
+}

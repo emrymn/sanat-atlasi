@@ -1,0 +1,1121 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3998985",
+ "sanatci_id": "anthony-van-dyck",
+ "baslik": "I. Charles'ın Üç Pozisyonda Portresi",
+ "ozgun_baslik": "Charles I in Three Positions (Charles I (1600-1649) / Triple Portrait of Charles I)",
+ "kunye": {
+  "sanatci": "Sir Anthony van Dyck",
+  "sanatci_yasam": "1599–1641",
+  "tarih": "1635 – Haziran 1636 öncesi (\"1635-before June 1636\")",
+  "tarih_belirsizlik": "RCT: \"probably begun in the second half of 1635\"; WD 1635 (yıl precision, DBpedia importu); enwiki 1635–1636; RCT provenance \"about 1637\" (kurum içi tutarsızlık, D)",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas); \"lined canvas\" (relining); RCT 2024: \"glazed\"",
+  "boyut_cm": {
+   "yukseklik": 84.4,
+   "genislik": 99.4
+  },
+  "muze": "Royal Collection",
+  "envanter": "RCIN 404420",
+  "edinim": "George IV, 1822, Mr Wells'ten 1000 guineas (RCT 2015/2017/2024); enwiki: Buchanan c.1802 → British Gallery 1821 (ihtilaflı)",
+  "konum": "İhtilaflı (D): RCT 2024 arşivi \"Queen's Drawing Room, Windsor Castle\"; enwiki (2025) \"The King's Gallery, Palace of Holyroodhouse\"; WD/itwiki Windsor; canlı RCT 403 → güncel durum doğrulanamadı",
+  "telif_durumu": "Kamu malı (PD-old-100); Commons GAP dosyası \"Public domain\"; RCT arşiv görsel credit \"© Her Majesty Queen Elizabeth II\"; V&A kopya görseli ticari olmayan kullanım koşullu"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sir_Anthony_Van_Dyck_-_Charles_I_%281600-49%29_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project / Google Cultural Institute BQHR9te2WWtyOA); Royal Collection",
+  "lisans": "Public domain (PD-old-100-expired / PD-Art / CC-PD-Mark)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (Commons imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "5076 × 4252 px; 12.423.776 bayt; yükleme 2012-10-17",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon/ikonografi RCT (2015/2017/2024) + V&A + enwiki METNİNDEN (\"kaynakların betimlediği\"); GZ TASLAK; data/ hotspot iddiaları doğrulanmadı (C040); görsel projeye kopyalanmadı; insan editör görsel teyidi zorunlu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 445
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1419
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2868
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-arşivin-katmanları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-bernini-büstü-belge-zinciri-ve-kronoloji"
+  ],
+  "3": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-model-kopya-baskı-mermer"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-üç-bakışın-epistemolojisi-heykeltıraş-için-resim"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-iktidar-kurdele-kostüm-gökyüzü"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-koruma-katmanları"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-model-kopya-baskı-mermer"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-veri-notları"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Royal Collection arşiv kayıtlarından (2015/2017/2024) künyeyi doğrular: RCIN 404420, \"1635-before June 1636\", oil on canvas / lined canvas / glazed, 84,4 × 99,4 cm; canlı kaydın 403 olmasının sonuçlarını açıklar.",
+  "Tablonun Bernini büstüne model işlevini belge zinciriyle kurar: 17 Mart 1636 mektubu, 1636 yazı yapım, 17 Temmuz 1637 Oatlands sunumu, 1638 elmas yüzük, 1698 Whitehall yangını.",
+  "Üç provenance zincirini (RCT / enwiki / V&A) ve iki kurum içi anomaliyi (\"about 1637\" ↔ tarih alanı; 1822 ↔ 1816/1819 Carlton House) karşılaştırır, kesinleştirmez.",
+  "Kopyaları (V&A 598-1882 ca.1750; Prado P001500 Siglo XVII) ve BM gravürünü (Dieussart / van Voerst) orijinalden ayırır; presumably/probably/possibly/attributed dilini korur.",
+  "Görsel incelenmeden kompozisyon/ikonografi iddiası yazılmayacağını uygular; data/ hotspot uyuşmazlıklarını veri notu olarak raporlar, GZ sorularını TASLAK işaretler."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Üçlü portre (triple portrait)",
+   "tanim": "Aynı kişinin üç açıdan tek tuvalde gösterilmesi; burada heykeltıraş için üç boyutlu benzerlik verisi (sol tam profil, cephe, sağ üç çeyrek).",
+   "kanit": [
+    "C012",
+    "C016"
+   ]
+  },
+  {
+   "ad": "Garter (Jartiyer) Nişanı",
+   "tanim": "İngiliz şövalyelik nişanı; RCT konu sınıflaması \"Order of the Garter (England)\"; tabloda üç figürde ortak mavi kurdele (riband).",
+   "kanit": [
+    "C013",
+    "C058"
+   ]
+  },
+  {
+   "ad": "Lined canvas (relining)",
+   "tanim": "Tuvalin ikinci bir tuvalle desteklenmesi; RCT kaydındaki \"lined canvas\" ifadesi bir koruma müdahalesi katmanına işaret eder (tarih/gerekçe kayıtta yok).",
+   "kanit": [
+    "C007",
+    "C065"
+   ]
+  },
+  {
+   "ad": "Proof (bitmemiş deneme baskısı)",
+   "tanim": "Gravürde plakanın tamamlanmamış hâli; BM baskısında omuz, kurdele ve madalyon işlenmemiş, alt panelde yazıt yok.",
+   "kanit": [
+    "C032"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik/edinim zinciri; bu eserde üç farklı anlatı (RCT: Wells/George IV 1000 guineas; enwiki: Buchanan c.1802; V&A: 1802/1822) ve kurum içi kronoloji anomalisi.",
+   "kanit": [
+    "C024",
+    "C025",
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Katalog başlığı \"Charles I (1600-1649)\"; alternatif başlık \"Charles I (1600-1649) in three positions\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Yaygın ad \"Charles I in Three Positions\" / \"Triple Portrait of Charles I\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Sanatçı: Sir Anthony van Dyck (1599–1641).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih alanı: \"1635-before June 1636\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "\"The painting was probably begun in the second half of 1635\" (belirsizlik aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "WD P571=1635, precision 9 (yıl); P1480 yok; ref P143=Q465 (DBpedia importu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "\"Oil on canvas\"; \"oil paint, lined canvas\" (lined = ikinci tuvalle destek/relining).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Support 84.4 × 99.4 cm; çerçeve 107 × 122.3 cm (external).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Envanter: RCIN 404420.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Koleksiyon: Royal Collection.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Konu: Charles I, King of Great Britain (1600–49).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Üç bakış: sol tam profil, cepheden, sağ üç çeyrek profil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Üçünde mavi Garter kurdelesi; üç farklı kostüm rengi; üç farklı desenli dantel yaka.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "\"richly worked sky\"; başlar Van Dyck için alışılmadık özen ve ölçülülükle (care and restraint) çizilmiş/modellenmiş; \"utilitarian commission into a work of great beauty\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Saçın solda daha uzun olması modası, figürün uzayda döndürülmesiyle açıkça gösterilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Tablo 1636'da Roma'ya Bernini'nin mermer büstüne model olarak gönderildi; üç bakış üç boyutlu benzerlik için seçildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S19",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kralın 17 Mart 1636 tarihli Bernini mektubu: \"il Nostro Ritratto in Marmo, sopra quello che in un Quadro vi manderemo subiito\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Büst Henrietta Maria'ya papalık hediyesi olarak planlandı; VIII. Urbanus, Roma'da İngiltere'nin Katolik birliğe dönmesi umutları sürerken düzenledi (\"hopes were entertained\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Büst 1636 yazında yapıldı; 17 Temmuz 1637'de Oatlands'te Kral ve Kraliçe'ye sunuldu; \"likenese and nere resemblance\" övgüsü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Bernini 1638'de 800 £ değerinde elmas yüzükle ödüllendirildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Büst 1698 Whitehall Palace yangınında yok oldu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Büst İç Savaş sonunda satıldı, Restoration'da geri alındı; yangın \"January 1698\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Henrietta Maria için eş büst sipariş edildi; İç Savaş nedeniyle hiç yapılmadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Provenance (RCT 2015/2017/2024): Bernini family; Mr Irvine; Walsh Porter; Mr Wells; George IV 1822, Mr Wells'ten 1000 guineas.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Provenance (enwiki): Palazzo Bernini (Via del Corso) → circa 1802 William Buchanan → British Gallery Pall Mall 1821 → Royal Collection 1822.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Provenance (V&A): Bernini ve torunları; 1802'de İngiltere'ye dönüş; 1822'de Royal Collection.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Lotto etkisi \"presumably\": Lotto'nun üçlü portresi o dönemde Charles I koleksiyonundaydı, bugün Viyana KHM'de.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Champaigne etkisi \"probably\": 1642'de \"Triple Portrait of Cardinal Richelieu\" (Londra, National Gallery), Bernini'ye (veya başka heykeltıraşa) büst için yardım.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Çok sayıda kopya; muhtemelen Stuart destekçileri (\"possibly\"/\"It is possible\"); V&A kopyası geç tarihli; Hanover karşıtlarınca \"ikon\" olarak kullanılmış olabilir (\"may have been\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "V&A kopyası: 598-1882, \"ca. 1750 (made)\", after van Dyck, oil on canvas, 94 × 113 × 10 cm, John Jones bequest 1882, British Galleries Room 56 (Djanogly Gallery).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Prado kopyası: P001500, \"Copia Dyck, Anton van\", \"Siglo XVII\", óleo/lienzo 81 × 99 cm, Colección Real, La Coruña Museo de Bellas Artes (Depósito); güncelleme 07-09-2023.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "BM gravürü: Dieussart büstünden; plaka van Voerst'e \"attributed\"; England c. 1636; bitmemiş proof (omuz/kurdele/madalyon işlenmemiş, yazıt yok); 495 × 325 mm; PD P2-11 PPA72537; büstün erken kopyası Windsor Castle'da.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "itwiki Blommendael mermer büstü (Windsor) kayıp Bernini büstünün \"possible copy\"si olarak anılır; tek ref ölü görsel URL'si; BM Windsor kopyasını Dieussart'a bağlar → doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "RCT referansları: Millar 1963 OM 146; 2017 kaydında \"WINDSOR CASTLE INVENTORY 1872 No 29\". Kitaplara/envantere erişilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "WD P528 katalog numaraları: Larsen 1980 \"821\"; Larsen 1979 \"761\"; Schaeffer 1909 \"345\"; 1999 sergi \"86\"; 1899 Anvers \"50\"; Cust cilt II levha 105. Metinlere erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Kamu malı: Commons dosyası \"Public domain\" (PD-old-100-expired, PD-Art, CC-PD-Mark; Copyrighted False); WD P6216=Q19652.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "WD P17=Netherlands (Q55) refsiz; RCT/enwiki bağlamı İngiltere → veri kalitesi ihtilafı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Akım sınıflaması: WD P135 \"Flemish Baroque painting\" (refsiz); enwiki \"Flemish artist\"; Prado \"pintor flamenco\" → yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S15"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C039",
+   "ifade": "itwiki: Bernini İtalya'dan yalnız bir kez, XIV. Louis'nin Fransa'sına çıktı (atıfsız bağlam cümlesi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C040",
+   "ifade": "data/ hotspot iddiaları (inci küpe, Jartiyer göğüs yıldızı, altın madalyon, \"bulutlu gök\", siyah/kırmızı/mor kostüm) erişilen metinlerde yok; RCT \"richly worked sky\" der; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Güncel konum ihtilaflı: enwiki \"The King's Gallery, Palace of Holyroodhouse (as of 2025)\" ↔ WD/itwiki Windsor ↔ RCT 2024 arşivi Windsor; enwiki koordinat/kategori Windsor; canlı 403 → 2026 durumu doğrulanamadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S19",
+    "S20"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Boyut/yön ihtilaflı: RCT 84.4 × 99.4 + WD P2048/P2049 ↔ enwiki ters (99.4 × 84.4) ↔ itwiki 84,5 × 99,7 (atıfsız).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S19",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Provenance ihtilaflı: RCT (Wells/George IV 1000 guineas) ↔ enwiki (Buchanan c.1802, British Gallery 1821) ↔ V&A (1802/1822); RCT içi \"Painted for Bernini about 1637\" ↔ tarih alanı \"1635-before June 1636\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S18",
+    "S19",
+    "S3",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Richelieu üçlü portresi tarihi ihtilaflı: RCT 1642 + enwiki circa 1642 ↔ itwiki metin 1641 (büst bağlamı) + galeri \"1640 circa\"; itwiki büstü Louvre'a bağlar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Türev kopya tarihi ihtilaflı: WD Q59718167 P571=1636 (precision 9, P1480=Q5727902) ↔ Prado \"Siglo XVII\"; V&A 598-1882 \"ca. 1750\" farklı nesne.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S16",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Lotto eser adı ihtilaflı: RCT \"Portrait of a Man in Three Positions\" ↔ enwiki \"Triple Portrait of a Goldsmith, c.1530\"; konum (KHM) uzlaşıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S19",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans; GZ TASLAK; kompozisyon kaynak metinlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Erişilemeyenler: RCT canlı 403 (3 deneme), 2025/2026 arşivleri SPA kabuğu; JSTOR Cust 1909 bot (yalnız başlık); BM/Prado canlı 403; RKD ve Google Arts çekilmedi; kitap metinlerine erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9",
+    "S10",
+    "S11",
+    "S14",
+    "S20"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Büst kronolojisi nüansı: RCT Oatlands 17 Temmuz 1637 + ödül 1638 ↔ enwiki (Sharpe 1992, pp.306–307) Papa'nın büstü 1638'de Kraliçe'ye göndermesi; farklı olaylar olabilir, kesinleştirilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Prado yazar ficha: van Dyck \"Amberes, 1599 – Blackfriars, Londres, 1641\"; 17. yy ilk yarısında Rubens'ten sonra en önemli Flaman ressam; Hendrik van Balen'in öğrencisi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "V&A galeri etiketi (27/03/2003): kraliyet vakarı/zarafeti imgeleri; orijinal 1636'da Roma'ya; büst Papa'dan Kraliçe'ye hediye. V&A görsel lisansı: ticari olmayan kullanım (A5/4000 tiraj; 768 px/5 yıl çevrimiçi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "BM gravür bağlamı: van Voerst 1627 Londra (Utrecht eğitimi); 1634 van Dyck çift portre gravürü (Çekya); Iconography'ye dahil + plaka siparişleri; Dieussart 1636 Londra; van Voerst Ekim 1636 öncesi vebadan öldü (\"presumably\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "enwiki gravür aktarımı: Bernini büstü sanılıyordu (Barok saç, dantel yaka, garter kuşağı); artık Dieussart büstü düşünülüyor; plaka \"possibly by Robert van Voerst\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "itwiki: kraliçenin üç portresi ayrı tuvallerde (iki profil, bir cephe); Bernini ikinci büstü yapmadı; galeri Memphis Brooks 1638 / Royal Collection 1638. Atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "WD import zinciri: P571←DBpedia, P195←frwiki, P217/P4701←Commons; P276/P135/P180/P921/P11057/P350/P646 refsiz; P127 ref yalnız \"stated in: Royal Collection\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "WD veri kalitesi: P528 \"50\" ref URL'si westminsterabbey00farr_0 (ilişkisiz); katalog öğesi etiketi \"1899\", açıklaması \"Antwerp, 1889\" (kendi içinde tutarsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "RCT \"Featured in\" (2017): \"In Fine Style\" yayın Nisan 2013 + sergi Mayıs 2013; \"The Art of Monarchy\" trail (BBC Radio 4, Mart 2012).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "RCT konu sınıflaması: \"Genealogy and Heraldry / Orders (honour) / Order of the Garter (England)\"; kategori Paintings; object type \"visual works paintings\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Prado kopya bibliyografyası/envanterleri (kayıtta anıldı, metne erişilmedi): Barnes 2004 p.466; Díaz Padrón 1975/1995/2012; Sánchez Cantón 1958/1972; Espinós vd. 1987; 1834 No 29; 1857 No 2281; 1873–1907 No 1344A; 1985 No 1500.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "data/basyapitlar.json ek iddiaları erişilen kaynaklarda yok: \"1649 idamının gölgesi\" okuması, \"Gainsborough ve Reynolds'u derinden etkiledi\", \"diplomatik jesti olduğu kabul edilir\" (RCT \"hopes were entertained\" der).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "RCT arşiv sürekliliği: 2015-02-03, 2017-11-07, 2024-05-18 aynı künye + Description/Provenance çekirdeği; 2024'te \"costume\"→\"clothing\" gibi küçük farklar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18",
+    "S8",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "RCT 2024-05-18 arşiv kaydı sergileme yeri: \"Queen's Drawing Room, Windsor Castle\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "RCT 2024 provenance ek halkaları: Carlton House envanterleri 1816 (no 570) ve 1819 (no 548); Windsor Castle \"Van Dyck Room\"a taşınma.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "RCT 2024 provenance kronoloji anomalisı: 1822 satın alma ↔ 1816/1819 Carlton House envanter kayıtları aynı zincirde; kayıt açıklamaz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "RCT 2024 Physical properties: \"oil paint, lined canvas, glazed\" (2015/2017'de \"glazed\" yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S19",
+    "S8",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "RCT 2015 Reference(s): OM 146; XQG 1968 Stuart 11; XQG 1962 Treas 7; XQG 1999 CI 5; XQG 1988 Treas 11 (kod açılımı kayıtta yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "RCT \"Featured in\" (2024/2025/2026): \"In Fine Style\" (yayın + geçmiş sergi) ve \"Charles I: King and Collector\" (geçmiş sergi); tarihler erişilen metinde yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S19",
+    "S20",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "\"Bernini kralı hiç görmeden büstü yaptı\" erişilen kaynaklarda açıkça yazmaz; RCT mektubu + itwiki'nin atıfsız seyahat cümlesinden çıkarım; data olgu gibi sunar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3998985 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3998985.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (26 QID; ids parametresi cache'te)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → backoff 60 sn → 200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "Charles I in Three Positions (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Charles%20I%20in%20Three%20Positions&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Triplo ritratto di Carlo I (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Triplo%20ritratto%20di%20Carlo%20I&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata), pageid 22126913",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Sir%20Anthony%20Van%20Dyck%20-%20Charles%20I%20(1600-49)%20-%20Google%20Art%20Project.jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → 2. backoff → 200; metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Royal Collection Trust",
+   "belge": "canlı nesne sayfası (WD P854 → 301 → canonical)",
+   "url": "https://www.rct.uk/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare (brief 2 deneme + ders oturumu 1 deneme)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wayback Machine",
+   "belge": "RCT 2026-03-04 snapshot (SPA kabuğu)",
+   "url": "https://web.archive.org/web/20260304013620id_/https://www.rct.uk/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; nesne verisi YOK",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wayback Machine / Royal Collection",
+   "belge": "2017-11-07 nesne kaydı (tam)",
+   "url": "https://web.archive.org/web/20171107112235id_/https://www.royalcollection.org.uk/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2017-11-07",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "JSTOR",
+   "belge": "Cust 1909 makale sayfası",
+   "url": "https://www.jstor.org/stable/857789",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 \"Client Challenge\" (bot doğrulama; içerik yok)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wayback Machine / JSTOR",
+   "belge": "2023-10-03 snapshot (yalnız başlık)",
+   "url": "https://web.archive.org/web/20231003211536id_/https://www.jstor.org/stable/857789",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; başlık doğrulandı, tam metin yok",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "British Museum",
+   "belge": "canlı highlight sayfası (van Voerst gravürü)",
+   "url": "https://www.britishmuseum.org/explore/highlights/highlight_objects/pd/r/robert_van_voerst,_portrait_bu.aspx",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wayback Machine / British Museum",
+   "belge": "2015-10-18 highlight kaydı (tam)",
+   "url": "https://web.archive.org/web/20151018220755id_/http://www.britishmuseum.org/explore/highlights/highlight_objects/pd/r/robert_van_voerst,_portrait_bu.aspx",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2015-10-18",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Victoria and Albert Museum",
+   "belge": "canlı kopya kaydı O77684 (598-1882); Record URL: /item/O77684/charles-i-oil-painting-anthony-van-dyck/",
+   "url": "https://collections.vam.ac.uk/item/O77684/charles-i-painting-van-dyck-anthony",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Museo del Prado",
+   "belge": "canlı kopya kaydı P001500",
+   "url": "https://www.museodelprado.es/coleccion/obra-de-arte/carlos-i-de-inglaterra-en-tres-posturas/ebff112c-b4ce-4e30-ac81-8eaf647dcfa3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wayback Machine / Museo del Prado",
+   "belge": "2024-07-25 kopya kaydı (tam; güncelleme 07-09-2023)",
+   "url": "https://web.archive.org/web/20240725003354id_/https://www.museodelprado.es/coleccion/obra-de-arte/carlos-i-de-inglaterra-en-tres-posturas/ebff112c-b4ce-4e30-ac81-8eaf647dcfa3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2024-07-25",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wikidata",
+   "belge": "Q59718167 EntityData (P4969 türev = Prado kopyası)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q59718167.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities Q160112 / Q74039143 etiketleri",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q160112|Q74039143",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S18",
+   "kurum": "Wayback Machine / Royal Collection",
+   "belge": "2015-02-03 nesne kaydı (tam) — ders oturumunda bulundu",
+   "url": "https://web.archive.org/web/20150203072134id_/http://www.royalcollection.org.uk:80/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2015-02-03",
+   "tur": "birincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Wayback Machine / Royal Collection Trust",
+   "belge": "2024-05-18 nesne kaydı (tam; konum + glazed + Carlton House) — ders oturumunda bulundu",
+   "url": "https://web.archive.org/web/20240518001231id_/https://www.rct.uk/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2024-05-18",
+   "tur": "birincil"
+  },
+  {
+   "id": "S20",
+   "kurum": "Wayback Machine / Royal Collection Trust",
+   "belge": "2025-01-20 snapshot (SPA kabuğu + Featured in) — ders oturumunda",
+   "url": "https://web.archive.org/web/20250120214909id_/https://www.rct.uk/collection/404420/charles-i-1600-1649",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; nesne verisi YOK (gzip ile yeniden çekildi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S21",
+   "kurum": "Wayback CDX",
+   "belge": "royalcollection.org.uk + rct.uk 404420 snapshot listeleri — ders oturumunda",
+   "url": "https://web.archive.org/cdx/search/cdx?url=rct.uk%2Fcollection%2F404420%2Fcharles-i-1600-1649&output=json&limit=40&filter=statuscode:200&collapse=timestamp:4",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (rct.uk 8, royalcollection.org.uk 6 snapshot); ilk http denemesi zaman aşımı",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Portrait of a Man in Three Positions (enwiki: Triple Portrait of a Goldsmith, y. 1530)",
+   "sanatci": "Lorenzo Lotto",
+   "kurum": "Kunsthistorisches Museum, Viyana",
+   "mufredat_ici": false,
+   "gerekce": "Öncül üçlü portre; RCT \"presumably\" etki der ve eserin o dönemde Charles I koleksiyonunda olduğunu belirtir. Başlık varyantı ihtilaflı (D).",
+   "kanit": [
+    "C027",
+    "C046"
+   ]
+  },
+  {
+   "eser": "Triple Portrait of Cardinal Richelieu",
+   "sanatci": "Philippe de Champaigne",
+   "kurum": "National Gallery, Londra",
+   "mufredat_ici": false,
+   "gerekce": "Ardıl üçlü portre; RCT \"probably\" etki der, 1642 tarihini verir ve \"Bernini (or another sculptor)\" kuşkusunu korur. itwiki 1641/1640 circa der (D).",
+   "kanit": [
+    "C028",
+    "C044"
+   ]
+  },
+  {
+   "eser": "Charles I (kopya, 598-1882)",
+   "sanatci": "Anthony van Dyck (after)",
+   "kurum": "Victoria and Albert Museum, Londra",
+   "envanter": "598-1882",
+   "mufredat_ici": false,
+   "gerekce": "Alımlama/kopya halkası: ca.1750, John Jones vasiyeti 1882, Room 56; Stuart destekçisi siparişi ve Hanover karşıtı \"ikon\" kullanımı hipotezleri müze kaydında.",
+   "kanit": [
+    "C030",
+    "C029"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — ham cache'ler bu oturumda yeniden açıldı (S8 RCT 2017, S13 V&A canlı, S12 BM 2015, S15 Prado 2024, S3/S4 wikitext, S1/S16 WD, S5 Commons, S10 JSTOR başlık). EK: canlı RCT yeniden denendi (403); Wayback CDX (S21) taranıp 2015-02-03 (S18), 2024-05-18 (S19) TAM kayıtları ve 2025-01-20 (S20) kabuğu açıldı. 2024 birincil arşivi konum (Queen's Drawing Room, Windsor Castle), \"glazed\" ve Carlton House 1816/1819 halkalarını verdi; 1822↔1816/1819 kronoloji anomalisı D olarak kaydedildi (C064). 2015/2017/2024 künye+Description+Provenance çekirdeği aynı (C061). Kitap metinlerine (Millar 1963, Cust 1909, Sharpe 1992, Barnes 2004, Griffiths 1998, Bellori/Bodart/Müller Hofstede, Larsen/Schaeffer) erişilmedi (C048). Görsel İNCELENMEDİ (C047); GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar.json \"1635\" ↔ RCT \"1635-before June 1636\"; tek yıl alanı \"before June 1636\" sınırını gizliyor (C004/C005). data DEĞİŞTİRİLMEDİ.",
+  "Konum: data'da güncel sergileme alanı yok; RCT 2024 arşivi Windsor Castle (Queen's Drawing Room) ↔ enwiki 2025 Holyroodhouse (D, C041/C062).",
+  "Hotspot'lar (E): inci küpe, Jartiyer göğüs yıldızı, altın madalyon, \"bulutlu gök\", siyah/kırmızı/mor kostüm betimleri erişilen metinlerde doğrulanmadı (C040); görsel teyit gerekli.",
+  "\"Bernini kralı hiç görmeden\" (C068): data olgu gibi sunar; erişilen kaynaklarda açıkça yok → çıkarım (C).",
+  "\"kabul edilir\" (C060): data \"diplomatik jesti olduğu kabul edilir\" der; RCT \"hopes were entertained in Rome\" der → kesinlik yükseltilmesi.",
+  "Etki/idam okuması (C060): \"Gainsborough ve Reynolds'u derinden etkiledi\" ve \"1649 idamının gölgesi\" erişilen kaynaklarda yok.",
+  "Kısa ad tutarsızlığı: eser_adlari_tr \"I. Charles'ın Üç Pozisyonda Portresi\" ↔ sanatcilar \"Üç Açıdan I. Charles\".",
+  "KAYIT YOK: data/kunye.json, data/muze_numaralari.json (RCIN 404420), data/ders_kaynaklari.json, data/ikonografi.json, data/eser_hikayeleri.json, data/tanima_notlari.json, data/ders_dogrulama.json.",
+  "WD riskleri: P17=Netherlands (D, C037), P276 refsiz (C041), P571 DBpedia importu (C006/C055), P528 \"50\" ref uyumsuzluğu + 1899/1889 etiket (C056), P4969 türev = Prado P001500 (V&A 598-1882 ile karıştırılmamalı, C045).",
+  "RCT 2024 provenance anomalisı (D, C064): 1822 satın alma ↔ Carlton House 1816 (570)/1819 (548); insan editör + kurum teyidi gerekli.",
+  "Telif: eser PD (C036); önbellette lisans alanı boş; RCT arşiv görsel credit satırları ve V&A ticari olmayan kullanım koşulları (C051) not edildi; görsel yeniden yayımlanmadı.",
+  "Müfredat: data/basyapitlar.json'da van Dyck'ın tek eseri bu (107 içinde); Lotto/Champaigne müfredatta yok → karşılaştırmalar mufredat_ici:false."
+ ]
+}

@@ -1,0 +1,733 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q512755",
+ "sanatci_id": "rembrandt-van-rijn",
+ "baslik": "Müsrif Oğulun Dönüşü",
+ "ozgun_baslik": "The Return of the Prodigal Son (De terugkeer van de verloren zoon / Ritorno del figliol prodigo)",
+ "kunye": {
+  "sanatci": "Rembrandt Harmensz. van Rijn",
+  "sanatci_yasam": "1606–1669",
+  "tarih": "c. 1668",
+  "tarih_belirsizlik": "Hermitage \"circa 1668\"; GAC 1663–1665, en 1661–1669, it 1668, WD 1665/1668, data ~1665 (D1)",
+  "teknik": "oil on canvas (tuval üzerine yağlıboya)",
+  "boyut_cm": {
+   "yukseklik": 262,
+   "genislik": 205
+  },
+  "muze": "Hermitage Museum, San Petersburg",
+  "envanter": "ГЭ-742",
+  "edinim": "Entered the Hermitage in 1766; the collection of Catherine the Great (GAC 1767 Paris, D3)",
+  "konum": "The New Hermitage, Room 254",
+  "telif_durumu": "Kamu malı (Rembrandt ö.1669); Commons PD (pd)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture — 5QFIEhic3owZ-A)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata+lisans+çözünürlük; BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "22991×30000 px (~250 MiB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C040); GZ TASLAK; kompozisyon K1/K2 (A) + K4/K5/K7 metninden; PD"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 433
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1420
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3103
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-katalog-ve-arşiv"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ihtilafı-d1-ve-kaynak-sıralaması",
+   "DERS_ILERI.md#3-provenance-17661767-ve-bozuk-donor-adı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#4-geç-üslup-son-eser-okuması-ve-sınırları"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-geç-üslup-son-eser-okuması-ve-sınırları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-kimliği-belirsiz-figürler-ve-yorum-katmanları",
+   "DERS_ILERI.md#6-eller-fetus-kör-gözler-yorumun-anatomisi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-geç-üslup-son-eser-okuması-ve-sınırları"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Hermitage birincil kataloguyla künyeyi (circa 1668, oil on canvas, 262×205, ГЭ-742, Room 254, 1766 Catherine) doğrular.",
+  "Üç ihtilafı (tarih/genişlik/edinim) ve dokuz belirsizliği yönetir; circa ve hedge'leri korur.",
+  "Luka 15:11–32 meselini ve figür ikonografisini (büyük oğul, tartışmalı tanıklar) analiz eder.",
+  "Geç üslup 'son eser' okumasını (Rosenberg/Janson) ve alımlama tarihini (Clark/Nouwen) değerlendirir.",
+  "Görsel incelenmeden betim sınırını beyan eder; el/fetus/kör-göz yorumlarını E düzeyinde tutar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Mesel (parable)",
+   "tanim": "İncil'de kısa, ders verici anlatı; burada Luka 15:11–32 müsrif oğul.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Circa",
+   "tanim": "Yaklaşık tarih işareti; Hermitage \"circa 1668\" der, kesinleştirilmez.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Provenans",
+   "tanim": "Sahiplik/edinim geçmişi; 1766 Catherine the Great koleksiyonu (1767 Paris ihtilaflı).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Geç üslup (late style)",
+   "tanim": "Geniş, eskizvari fırça darbeleri; manevi yoğunluk; 'son eser' okuması.",
+   "kanit": [
+    "C022",
+    "C009"
+   ]
+  },
+  {
+   "ad": "İkonografi",
+   "tanim": "Figürlerin kimliği/anlamı; büyük oğul, anne varsayımı, oturan adam.",
+   "kanit": [
+    "C017",
+    "C010"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Rembrandt Harmensz. van Rijn (1606–1669).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih \"circa 1668\" (circa aynen korundu); üretim yeri Holland.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: oil on canvas (tuval üzerine yağlıboya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 262 × 205 cm (GAC w2050×h2620 mm uyumlu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Envanter: ГЭ-742; kategori Painting.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Müze: Hermitage Museum, San Petersburg; European Fine Art / Dutch Painting of the 17th–18th Centuries.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Edinim: \"Entered the Hermitage in 1766; the collection of Catherine the Great\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Sergi konumu: The New Hermitage, Room 254 (K2 arşivde Room boş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Hermitage: \"just months before his death\"; gençlik otoportresi (kadeh, kucağındaki sevgili) → müsrif oğul teması bu hikâyenin finali.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Konu: Luka 15:11–32 müsrif oğul meseli; diz çökmüş oğul, sevgi/bağışlamayla öne eğilen baba, sessiz tanıklar; religious art.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Hermitage: Protestan Hollanda'da resimli sunak yok, büyük dinî resim nadir; siparişsiz dev tuval; renk/ışık manevi karakter; \"Higher Mercy\" önünde hayat bilançosu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Hermitage betimi: dumanlı alacakaranlık; yüz \"gece göğündeki bir yıldız gibi\"; kırmızı örtü kanopi; teselli ışığı; solgun/zayıf/harap oğul; \"empty husk\"; acıyla kavrayış.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Görsel PD: Commons \"Public domain\"/pd; WD P6216=Q19652; 22991×30000 px (~250 MiB); DateTimeOriginal \"circa 1668\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K6",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "enwiki: son dönem eserlerinden; \"likely completed within two years of his death in 1669\" (Durham 176; hedge).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kenneth Clark: \"...may be forgiven for claiming as the greatest picture ever painted\" (quoted in Durham 183).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Babanın iki eli \"seem to suggest mothering and fathering at once\"; sol iri/erkeksi omuzda, sağ yumuşak/alıcı (Sawyer 313; seem).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sağda büyük oğul, elleri kavuşmuş, yargılayıcı; babanın merhametine itiraz (Luke 15:29–30).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Oturan zengin adam \"may be an advisor to the estate or a tax collector\" (Sawyer 313; may).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Tema dizisi on yıllara yayılır; 1636 gravürüyle başlar; Martin van Heemskerck tahta baskısı etkili (Durham 172).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Galeri: \"The Prodigal Son in the Brothel\" (c. 1637, Rembrandt ve Saskia); 1642 deseni.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Nouwen (1932–1996): 1986 Hermitage ziyareti, saatlerce tek başına seyir; 1992 \"A Story of Homecoming\"; \"en zor dönüşüm evde kalanınki\" (Nouwen 65–66).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Rosenberg/Slive/Ter Kuile: \"monumental\"; \"dünyaya manevi vasiyet\"; tüm Barok'un ötesinde dinî ruh/insani sempati; gerçekçilik kavrayışla artar (Yale 1997[1966] 66,80–81; Janson 598).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Janson: \"may be most moving ... quietest—a moment stretching into eternity\"; izleyici akrabalık hisseder (Janson 598; may/perhaps).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Luka 15:29–30 (NRSV) büyük oğul itirazı + 15:32 baba yanıtı (\"bu kardeşin ölmüştü, yeniden yaşadı; kaybolmuştu, bulundu\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Felemenkçe başlık \"De terugkeer van de verloren zoon\" (enwiki langx; WD P1476 nl preferred).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "itwiki betimi: paçavralı diz çökmüş oğul, koruyucu jest; sağda büyük oğul; arka planda iki belirsiz figür; \"Padre misericordioso\" (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "itwiki: ışık ikincil figürlerden ana sahneye kayar; izleyici gözü oğulla aynı hizada; kurgu↔gerçek özdeşleşmesi (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "GAC: \"broad, sketchy brushstrokes\" late style; \"victory of love, goodness and charity\"; \"absolute silence and stillness\" (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "GAC anlatısı: mesel özeti; \"We should be glad: for this son was dead, and is alive again; and was lost, and is found\" (A ile uyumlu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Tarih ihtilafı (D1): circa 1668 ↔ 1663–1665 (GAC) ↔ 1661–1669 (en) ↔ 1668 (it) ↔ WD 1665/1668 ↔ data ~1665.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Genişlik ihtilafı (D2): 205 (birincil/en/WD/GAC) ↔ 206 (it); it olası hata.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "Edinim ihtilafı (D3): 1766 Hermitage girişi (birincil) ↔ 1767 Paris satın alma (GAC/WD P793); uzlaştırma belgesiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "Sol üst kadın \"likely the mother\"; \"An assumption based on earlier drawings\" (Durham 176; varsayım).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "itwiki elleri kesinleştirir \"una maschile ed una femminile\"; Tanrı hem Baba hem Anne (\"Lui è il tutto\"); en seem ↔ it kesin (D5, atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "itwiki: kazınmış baş \"come quella di un feto\"; bağışlama oğlunu doğmamış/günahsız kılar (yeniden doğuş, atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "Kör gözler: it \"occhi di cieco\" (bekleyiş) ↔ GAC \"blinded by tears\" (gözyaşı); iki atıfsız, uyumsuz yorum.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "enwiki short-desc \"1868 painting by Rembrandt\" bariz yazım hatası (gövde/infobox 1660s); güvenilmez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "GAC donor \"Duke d'Ancesuine\" bozuk/belirsiz; yalnız K7 (WD ref de K7); birincil donor adı vermez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Kitap metinlerine erişilmedi (Durham/Janson/Nouwen/Sawyer/Rosenberg); yalnız K4 atıf + K8/K9 kaydı; it D'Adda \"ballotelli\" (sic).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K8",
+    "K9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata/lisans; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "canal-educatif Jan Blanc belgeseli: canlı SSL 000 (curl 35); Wayback 2025-10-18 var, video transkript edilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K10",
+    "K11"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "State Hermitage",
+   "belge": "Canlı katalog (yeni format)",
+   "url": "https://www.hermitagemuseum.org/digital-collection/43413?lng=en",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "State Hermitage (Wayback)",
+   "belge": "Eski WPS katalog arşivi",
+   "url": "http://web.archive.org/web/20240913122855/https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/01.%20paintings/43413",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (snapshot 2024-09-13)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q512755",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q512755.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "wikitext (The Return of the Prodigal Son (Rembrandt))",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Return%20of%20the%20Prodigal%20Son%20(Rembrandt)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "wikitext (Ritorno del figliol prodigo (Rembrandt))",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ritorno%20del%20figliol%20prodigo%20(Rembrandt)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (Google Art Project dosyası)",
+   "url": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K7",
+   "kurum": "Google Arts & Culture",
+   "belge": "asset (aggregator)",
+   "url": "https://artsandculture.google.com/asset/return-of-the-prodigal-son-rembrandt-harmensz-van-rijn/5QFIEhic3owZ-A",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K8",
+   "kurum": "archive.org",
+   "belge": "Durham 2004 kitap kaydı",
+   "url": "https://archive.org/details/biblicalrembrand00durh",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (registration; metne erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K9",
+   "kurum": "archive.org",
+   "belge": "Janson 2003 kitap kaydı",
+   "url": "https://archive.org/details/artnotestoaccomp00jans",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (registration; metne erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "canal-educatif",
+   "belge": "Jan Blanc belgeseli (canlı)",
+   "url": "https://www.canal-educatif.fr/videos/art/31/rembrandt-art-en-question-5/fils-prodigue.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000/SSL (curl 35)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K11",
+   "kurum": "canal-educatif (Wayback)",
+   "belge": "belgesel arşivi",
+   "url": "http://web.archive.org/web/20251018195620/https://www.canal-educatif.fr/videos/art/31/rembrandt-art-en-question-5/fils-prodigue.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "snapshot 2025-10-18 (transkript yok)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K12",
+   "kurum": "Wikidata",
+   "belge": "labels API (wbgetentities)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q5598%7CQ132783%7CQ296955%7CQ12321255%7CQ19652%7CQ2864737%7CQ194189%7CQ5727902&props=labels&languages=en%7Ctr",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K13",
+   "kurum": "State Hermitage",
+   "belge": "Eski WPS canlı URL",
+   "url": "https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/01.+Paintings/43413/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (ölü → K2)",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Prodigal Son in the Brothel (Rembrandt ve Saskia)",
+   "sanatci": "Rembrandt",
+   "gerekce": "Aynı temanın erken, gösterişli dönemi (c. 1637); gençlik otoportresi olarak müsrif oğul; geç tuvalle karşıtlık.",
+   "mufredat_ici": false,
+   "kanit": [
+    "C020",
+    "C009"
+   ]
+  },
+  {
+   "eser": "1636 gravürü (Prodigal Son)",
+   "sanatci": "Rembrandt",
+   "gerekce": "Tema dizisinin başlangıcı; Heemskerck tahta baskısı etkisi.",
+   "mufredat_ici": false,
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "eser": "Süt Boşaltan Kadın (Q167605, pilot)",
+   "sanatci": "Johannes Vermeer",
+   "kurum": "Rijksmuseum",
+   "gerekce": "Hollanda Altın Çağı ışık/sessizlik karşıtlığı: Rembrandt'ın dumanlı alacakaranlığı ve anıtsal dinî sahnesi ↔ Vermeer'in sakin gündüz iç mekânı.",
+   "mufredat_ici": true,
+   "kanit": [
+    "C012",
+    "C023"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Hermitage birincil yeni format (K1, 200) + eski WPS arşivi (K2, Wayback 2024-09-13) yeniden açıldı; künye/konu/edinim/Room doğrulandı; eski WPS canlı 404 (K13). en/it wikitext (K4/K5), WD (K3/K12), GAC (K7), Commons metadata (K6) yeniden okundu; üç ihtilaf D (C030–C032), dokuz belirsizlik E (C033–C041) açık. Kitap metinleri erişilmedi (K8/K9 yalnız kayıt, C039); görsel İNCELENEMEDİ (C040), GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar.json \"yaklaşık 1665\" ↔ birincil \"circa 1668\" (D1, C030); circa korunmalı. ders_kaynaklari/yuruyus yil 1668 (A uyumlu, circa notu yok).",
+  "Envanter boşluğu: data/muze_numaralari.json Q512755 / ГЭ-742 YOK (\"The Prodigal Son\" girdileri Daumier Q64574402/3, ayrı eser).",
+  "Künye boşluğu: data/kunye.json Q512755 anahtarı YOK.",
+  "İki-el hedge: data/eser_ayrintilari + yuruyus \"Bu yorum yaygındır ama kesin değildir\" → enwiki hedge uyumlu (C016/C034).",
+  "Konu: data/eser_konulari {t:dini,k:prodigal-son} + ikonografi uyumlu (C010/C024).",
+  "Görsel hash 294a50e3d597e924 → Commons GAP dosyası (PD, K6); gorsel_kaynagi b_surumler 294a…=a02a02af.",
+  "Doğrulanmayan data iddiaları: \"iflas ve ailevi kayıplar\" + \"atölyenin katkısı tartışmalıdır\" erişilen kaynaklarda yok; derse olgu olarak taşınmadı (C039). chiaroscuro/empasto/kemer betimleri kaynak teyitsiz kullanılmadı.",
+  "Görsel İNCELENEMEDİ (C040); GZ TASLAK; insan editör zorunlu."
+ ]
+}

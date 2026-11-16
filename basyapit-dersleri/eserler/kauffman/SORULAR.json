@@ -1,0 +1,564 @@
+{
+ "surum": "1.0",
+ "eser_id": "angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Virginia Museum of Fine Arts, Richmond"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "VMFA birincil kaydı (arşiv 2025-06-16): European Art koleksiyonu, envanter 75.22, G213 Center Great Hall.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre'da Suvée'nin 1795 tarihli Cornelia'sı bulunur; Kauffman'ın bu tablosu değil.",
+    "C": "Uffizi, Kauffman'ın bir otoportresini barındırır; bu Cornelia tablosunun kaydı VMFA Richmond'dadır.",
+    "D": "Prado koleksiyonunda bu eser yoktur; birincil kayıt VMFA Richmond'ı gösterir."
+   },
+   "kanit": [
+    "C006",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "VMFA versiyonunun envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "75.22"
+    },
+    {
+     "harf": "B",
+     "metin": "ZKW/6045"
+    },
+    {
+     "harf": "C",
+     "metin": "6338032"
+    },
+    {
+     "harf": "D",
+     "metin": "G213"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "VMFA kaydı \"Object Number: 75.22\" der.",
+   "yanlis_gerekceleri": {
+    "B": "ZKW/6045 Varşova versiyonunun envanteridir (Zamek Królewski); VMFA versiyonuyla karıştırılmamalıdır.",
+    "C": "6338032 Christie's lot numarasıdır; müze envanter numarası değildir.",
+    "D": "G213 galeri kodudur (Center Great Hall); envanter numarası değildir."
+   },
+   "kanit": [
+    "C006",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "VMFA birincil kaydının tarih ifadesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "ca. 1785"
+    },
+    {
+     "harf": "B",
+     "metin": "1788"
+    },
+    {
+     "harf": "C",
+     "metin": "1768"
+    },
+    {
+     "harf": "D",
+     "metin": "1795"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "VMFA \"Date: ca. 1785\"; Wikidata P571 yıl hassasiyetinde, P1480 \"circa\" niteleyicisiyle.",
+   "yanlis_gerekceleri": {
+    "B": "1788 Varşova versiyonunun imzalı tarihidir; VMFA versiyonu yaklaşık 1785'tir.",
+    "C": "1768 Royal Academy'nin kuruluş yılıdır; eserin tarihi değildir.",
+    "D": "1795 Suvée'nin Cornelia'sının tarihidir; bu eserle karıştırılmamalıdır."
+   },
+   "kanit": [
+    "C003",
+    "C015",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "VMFA kaydı \"Medium: oil on canvas\"; WD yağlıboya + tuval (painting support) olarak kaydeder.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; bu eser tuval üzerine yağlıboyadır.",
+    "C": "Pano/tempera farklı destek ve bağlayıcıdır; birincil kayıt oil on canvas der.",
+    "D": "Suluboya/kâğıt kayıtta yoktur; teknik yağlıboya-tuvaldir."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "\"Mücevherlerim çocuklarım\" anekdotunun kaynağı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Valerius Maximus, IV.4"
+    },
+    {
+     "harf": "B",
+     "metin": "Ovidius, Metamorphoses"
+    },
+    {
+     "harf": "C",
+     "metin": "Plutarkhos, Yaşamlar"
+    },
+    {
+     "harf": "D",
+     "metin": "Homeros, İlyada"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Latince metin (The Latin Library) IV.4.init'te anekdotu ve \"haec ornamenta sunt mea\" sözünü verir.",
+   "yanlis_gerekceleri": {
+    "B": "Metamorphoses mitolojik dönüşüm öyküleridir; Cornelia anekdotu tarihsel bir exemplum'dur ve Valerius'ta geçer.",
+    "C": "Plutarkhos Cornelia'nın yaşamı ve çocuk sayısına ilişkin bilgiler verir; ancak mücevher anekdotunun kaynağı Valerius Maximus IV.4'tür.",
+    "D": "İlyada destanı bu Romalı anekdotla ilgisizdir."
+   },
+   "kanit": [
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Cornelia'nın Latince sözü hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "haec ornamenta sunt mea"
+    },
+    {
+     "harf": "B",
+     "metin": "veni vidi vici"
+    },
+    {
+     "harf": "C",
+     "metin": "alea iacta est"
+    },
+    {
+     "harf": "D",
+     "metin": "carpe diem"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Valerius Maximus IV.4.init: \"et 'haec' inquit 'ornamenta sunt mea'\" — \"bunlar benim mücevherlerim\".",
+   "yanlis_gerekceleri": {
+    "B": "Caesar'ın zafer sözüdür; Cornelia'nın mücevher/çocuk karşıtlığıyla ilgisizdir.",
+    "C": "Caesar'a atfedilen \"zar atıldı\" sözüdür; anekdot metninde geçmez.",
+    "D": "Horatius'un \"günü yakala\" dizesidir; Valerius metninde yoktur."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "VMFA versiyonu kimin için yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "George Bowles"
+    },
+    {
+     "harf": "B",
+     "metin": "Prens Stanislaus Poniatowski"
+    },
+    {
+     "harf": "C",
+     "metin": "Napoli Kraliçesi Caroline"
+    },
+    {
+     "harf": "D",
+     "metin": "Kral Stanisław August"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Christie's lot essay: Napoli 1785, sanatçının \"en önemli Britanyalı patronu\" George Bowles için.",
+   "yanlis_gerekceleri": {
+    "B": "Poniatowski 1788 Varşova versiyonunun siparişçisidir.",
+    "C": "Caroline, Weimar versiyonunu sipariş etti (kız kardeşi Maria Christina'ya hediye).",
+    "D": "Stanisław August, Vergilius okuması tablosunun siparişçisidir; Cornelia'nın değil."
+   },
+   "kanit": [
+    "C014",
+    "C034"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1788 imzalı-tarihli versiyon bugün nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zamek Królewski, Varşova"
+    },
+    {
+     "harf": "B",
+     "metin": "Schlossmuseum, Weimar"
+    },
+    {
+     "harf": "C",
+     "metin": "VMFA, Richmond"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "İmza \"Angelica Kauffman / pinxit Rome / 1788\"; Zamek Królewski 2021'de satın aldı; envanter ZKW/6045.",
+   "yanlis_gerekceleri": {
+    "B": "Weimar versiyonu Caroline siparişidir ve kompozisyonu terstir; 1788 imzalı olan Varşova'dır.",
+    "C": "VMFA versiyonu ca. 1785'tir; 1788 imzalı versiyon Varşova'dadır.",
+    "D": "Louvre'da Suvée'nin 1795 Cornelia'sı vardır; Kauffman'ın 1788 versiyonu değil."
+   },
+   "kanit": [
+    "C015",
+    "C014",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kauffman'ın Royal Academy'deki konumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mary Moser ile birlikte iki kadın kurucu üyeden biri"
+    },
+    {
+     "harf": "B",
+     "metin": "Akademinin tek kadın kurucu üyesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Kurucu değil, sonradan seçilmiş üye"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca portre türünde eser veren üye"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "1768 kuruluşunda iki kadın kurucu üye vardı: Kauffman ve Mary Moser.",
+   "yanlis_gerekceleri": {
+    "B": "İki kadın kurucu vardı; diğeri Mary Moser'di.",
+    "C": "Kauffman kurucu üyeydi; 1769 ilk katalogda \"R.A.\" olarak görünür.",
+    "D": "Kauffman kendini öncelikle tarih ressamı olarak tanımladı; Akademi'ye klasik konulu eserler gönderdi."
+   },
+   "kanit": [
+    "C017",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Varşova versiyonunun önceki tasvirlere göre en önemli farkı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kız Sempronia'ya belirgin rol verilmesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Kompozisyonun tamamen ters çevrilmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Konunun Ovidius'tan alınması"
+    },
+    {
+     "harf": "D",
+     "metin": "Figürlerin tamamen çıkarılması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Lot essay: \"most significant change … pronounced role given to … Sempronia\"; distaff ve dikiş sepeti ev sanatları simgeleridir.",
+   "yanlis_gerekceleri": {
+    "B": "Ters kompozisyon Weimar versiyonunun özelliğidir; Varşova'nın değil.",
+    "C": "Konu Valerius Maximus'tan alınmıştır; Ovidius'tan değil.",
+    "D": "Figürler korunmuştur; değişiklik Sempronia'nın öne çıkarılmasıdır."
+   },
+   "kanit": [
+    "C022",
+    "C023",
+    "C014"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "VMFA birincil kaydı tarihi \"ca. 1785\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: S4 \"Date: ca. 1785\"; WD P1480=circa. Yaklaşık işaret korunmalıdır.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Bu eserin envanter numarası ZKW/6045'tir.",
+   "dogru": false,
+   "aciklama": "Yanlış: ZKW/6045 Varşova versiyonunun envanteridir; VMFA versiyonu 75.22.",
+   "kanit": [
+    "C006",
+    "C015"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Anekdot Valerius Maximus'un IV.4 bölümünün açılışında (init) anlatılır.",
+   "dogru": true,
+   "aciklama": "Doğru: Latince metin IV.4.init; söz \"haec ornamenta sunt mea\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kauffman bu konuyu yalnızca bir kez resmetmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: 1785–1788'de üç versiyon (VMFA/Bowles, Weimar/Caroline, Varşova/Poniatowski).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Valerius Maximus metninde Cornelia'nın kızından (Sempronia) söz edilir.",
+   "dogru": false,
+   "aciklama": "Yanlış: metin yalnız \"liberi\" (çocuklar) der; lot essay \"the girl is not mentioned by Valerius Maximus\" diye not eder.",
+   "kanit": [
+    "C023",
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Üç versiyonu ve Commons metadata kirliliğini (D001) kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "VMFA/Bowles Napoli 1785",
+    "Weimar ters kompozisyon",
+    "Varşova 1788 imzalı ZKW/6045",
+    "S11 açıklamasının dewiki Varşova maddesine bağlanması",
+    "WD Varşova refs Commons ithal (P143=Q565)"
+   ],
+   "kanit": [
+    "C014",
+    "C040",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Anekdotun Valerius varyantı ile Anthon tabanlı popüler varyantı karşılaştırın; söz dizimi farkını değerlendirin.",
+   "beklenen_ogeler": [
+    "tek Campanialı konuk",
+    "mücevher gösterisi",
+    "okuldan dönüşü bekleme",
+    "haec ornamenta sunt mea ↔ haec ornamenta mea [sunt]",
+    "\"kadın arkadaşlar\" varyantı (Anthon 1847)"
+   ],
+   "kanit": [
+    "C013",
+    "C043",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Sempronia'nın öne çıkarılmasının ikonografik anlamını ve kanıt sınırını tartışın.",
+   "beklenen_ogeler": [
+    "antik metinde kız yok",
+    "distaff/dikiş sepeti ev sanatları simgeleri",
+    "Cornelia özniteliklerinin kıza aktarımı",
+    "jestin kızı kapsaması okuması (yorum)",
+    "Sempronia özdeşliği geleneksel/çıkarımsal"
+   ],
+   "kanit": [
+    "C023",
+    "C024",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Cornelia'nın tarihsel belleğinin inşasını Hemelrijk tezi ve mektup parçaları tartışmasıyla değerlendirin.",
+   "beklenen_ogeler": [
+    "idealize annelik örneğine kayış",
+    "eğitimli aristokrat imgesi",
+    "Nepos'ta korunan parçalar",
+    "optimate propagandası / retorik alıştırma hipotezleri",
+    "yaşam tarihlerinin belirsizliği"
+   ],
+   "kanit": [
+    "C036",
+    "C035",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kauffman'ın kadın tarih ressamı olarak konumunu ve David karşılaştırmasını, yorum statüsünü koruyarak tartışın.",
+   "beklenen_ogeler": [
+    "nü model eğitimi sınırı",
+    "kopya/gravür/alçı stratejisi",
+    "RA iki kadın kurucu (Moser)",
+    "cumhuriyetçi ahlak didaktiği",
+    "annellik ↔ erkeksi fedakârlık karşıtlığı (yorum)"
+   ],
+   "kanit": [
+    "C030",
+    "C017",
+    "C016",
+    "C058"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Sağdaki sütun kaidesindeki \"Angelica Kauffman pinxt\" imzasını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): VMFA kaydı imzanın sağdaki sütun kaidesinde olduğunu belirtir; görsel teyit insan editöre kalır.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Cornelia'nın çocuklarını gösterme jestini bulun; sahnenin anlam odağı bu jesttir.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Valerius'ta çocuklar okuldan döner, Cornelia onları gösterir; VMFA versiyonundaki jestin yönü görsel teyit ister.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Çocukların elindeki tomar ve okul kitaplarını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Christie's betimi Varşova versiyonuna aittir (el ele giren oğullar, tomar/okul kitapları); VMFA'da karşılığını kontrol edin.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Küçük kız figürü varsa distaff (yün eğirme çubuğu) ve dikiş sepetini arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Varşova versiyonunda Sempronia küçük masada oturur; VMFA'daki varlığı/yeri görsel teyit ister.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tuvalin en-boy oranını ölçün ve versiyon ayrımında kullanın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): VMFA 101.6×127 ≈ 1.26; Varşova 110×152 ≈ 1.36; oran farkı versiyon kimliğine yardımcı olur (kesin kanıt değil).",
+   "kanit": [
+    "C005",
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Angelica Kauffman (1741–1807); ca. 1785; oil on canvas; 101.6×127 cm; VMFA Richmond, 75.22, G213 Center Great Hall; Adolph D. and Wilkins C. Williams Fund.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Anekdot + kaynak?",
+   "arka": "Valerius Maximus IV.4.init; Campanialı matrona mücevherlerini gösterir; Cornelia çocuklar okuldan dönünce \"haec ornamenta sunt mea\" der; ahlaki: arzulamayan her şeye sahiptir.",
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üç versiyon?",
+   "arka": "VMFA/Bowles (Napoli 1785); Weimar/Caroline→Maria Christina (ters kompozisyon); Varşova/Poniatowski (Roma 1788, imzalı-tarihli, ZKW/6045, 2021 edinim).",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Sanatçının konumu?",
+   "arka": "RA 1768 iki kadın kurucu üyeden biri (Mary Moser ile); kendini tarih ressamı olarak tanımladı; nü model sınırı kopya/gravür/alçı ile aşıldı; 1807 cenaze Canova.",
+   "kanit": [
+    "C017",
+    "C030",
+    "C032"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Sempronia ikonografisi?",
+   "arka": "Kız Valerius metninde yok; Varşova versiyonunda belirgin rol; distaff + dikiş sepeti ev sanatları simgeleri (Cornelia öznitelikleri); özdeşlik geleneksel/çıkarımsal.",
+   "kanit": [
+    "C023",
+    "C022"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,922 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3821820",
+ "sanatci_id": "edgar-degas",
+ "baslik": "Bale Dersi",
+ "ozgun_baslik": "La classe de danse (The Ballet Class)",
+ "kunye": {
+  "sanatci": "Edgar Degas",
+  "sanatci_yasam": "1834–1917 (Paris)",
+  "tarih": "1871–1874 (Orsay yorumları/POP) ↔ 1873–1876 (tam notice) — tartışmalı",
+  "tarih_belirsizlik": "Orsay kendi içinde çelişir: yorumlar \"Entre 1871 et 1874\", POP \"1871 vers ; 1874 ET\" ↔ notice \"entre 1873 et 1876\"; enwiki c. 1874–1876; WD 1871 (zayıf ref); Commons 1875; Lemoisne 1876 / Pickvance 1874–75 (B); tek yıl yok (C038)",
+  "teknik": "Tuval üzerine yağlıboya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 85,
+   "genislik": 75
+  },
+  "muze": "Musée d'Orsay, Paris",
+  "envanter": "RF 1976",
+  "edinim": "1911 Camondo legası (devlet kabulü); 1986 Orsay'a tahsis",
+  "konum": "Salle 32 (2018 arşiv snapshot; güncel salon doğrulanmadı)",
+  "telif_durumu": "Kamu malı (PD-old-100-expired + PD-Art; Degas ö. 1917); müze fotoğrafı © RMN-Grand Palais / Hervé Lewandowski, kullanım izne tabi"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture fwE5p5FTjV9Ezg; WD P18)",
+  "lisans": "Public domain (PD-old-100-expired + PD-Art)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo); BU OTURUMDA İNCELENMEDİ",
+   "cozunurluk": "GAP 3950×4535; infobox dosyası 4618×5300",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C049); GZ TASLAK; kompozisyon Orsay yorumları (A) + ikincil betimlerden; RMN fotoğraf kredisi izne tabi"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 406
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1335
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2794
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-tartışması-d1",
+   "DERS_ILERI.md#5-mekân-tartışması-d4"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ve-dans-teması"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#8-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#6-perrot-kimlik-yaş-ve-otorite"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#7-üretim-süreci-eskizler-ve-üstüne-boyama"
+  ],
+  "7": [
+   "DERS_ILERI.md#8-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz-met-sürümü",
+   "DERS_ILERI.md#9-karşılaştırmalı-metodoloji-iki-sürüm-iki-anlatı"
+  ],
+  "9": [
+   "DERS_ILERI.md#10-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#2-tarih-tartışması-d1"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#4-provenans-zinciri-ve-manzi-ihtilafı",
+   "DERS_ILERI.md#11-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#12-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#13-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Orsay arşiv kayıtları ve canlı POP kaydıyla künyeyi (RF 1976, yağlıboya tuval, Orsay) doğrular.",
+  "Birincil içi tarih/boyut çelişkisini yönetir; tek yıl dayatmaz, aralıkları kaynağına atfeder.",
+  "Dersin sonu ikonografisini ve Perrot figürünü kaynak betimleriyle analiz eder.",
+  "Met sürümünü ayırt eder; Faure komisyonunu Orsay sürümüne taşımaz.",
+  "Provenans zincirini izler ve data'daki doğrulanmamış iddiaları (imza/kab, yelpaze, etki) E düzeyinde işaretler."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Foyer de la danse",
+   "tanim": "Operanın dans fuayesi; ders/prova salonu. Orsay betimine göre rue Le Peletier binasında.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Maître de ballet",
+   "tanim": "Bale ustası/eğitmen; tabloda Jules Perrot, bastonla zemine vurarak tempo tutar.",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "ad": "Catalogue raisonné",
+   "tanim": "Sanatçının tüm eserlerinin numaralı bilimsel kataloğu; LEMOISNE 341, MINERVINO 479.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Provenans (Historique)",
+   "tanim": "Sahiplik zinciri; Deschamps→Hill→Manzi→Camondo→1911 legs→Louvre→Jeu de Paume→Orsay.",
+   "kanit": [
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "ad": "Variant (sürüm)",
+   "tanim": "Aynı temanın ayrı tablosu; Met \"The Dance Class\", Orsay sürümünün \"variant\"ı — eskiz/kopya değil.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Edgar Degas (Paris 1834 – Paris 1917).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Özgün ad \"La classe de danse\"; EN \"The Ballet Class\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tür: tablo (peinture / tableau).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: tuval üzerine yağlıboya (huile sur toile / oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: yorumlar + POP 85×75 cm; tam notice 85,5×75,0 cm; çerçeveli 109,5×99,3 cm (2008) (→ C039 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8",
+    "S9",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Tarih: yorumlar \"Entre 1871 et 1874\"; POP \"1871 vers ; 1874 ET\"; tam notice \"entre 1873 et 1876\" (→ C038 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8",
+    "S9",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "İmza sol altta: \"S.b.g. : Degas\" (S6) / \"DEGAS (S.B.G.)\" (S9).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Envanter numarası RF 1976.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Musée d'Orsay, Paris; 1986'da Orsay'a tahsis (affectation).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "2018 arşiv snapshot'ında Salle 32; güncel salon doğrulanmadı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Devlet mülkiyeti; 1911'de Camondo legası olarak kabul (comité 27/04/1911, conseil 08/05/1911, arrêté 23/11/1911), Louvre'a.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Provenans: 1876 Ch. W. Deschamps (Londra, sanatçı teslimi) → 1876–1889 Kaptan Henri Hill (Brighton) → 1889 Christie's 25 Mayıs n°27 → Goupil et Cie → 1889 Michel Manzi → 1894–1911 Comte Isaac de Camondo → 1911 Louvre (1914'ten sergide) → 1947 Jeu de Paume → 1986 Orsay; Faure YOK (→ C040, C042).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Konu: dersin sonu; yorgun öğrenciler gerinir, sırt kaşır, saç/küpe/kurdele düzeltir; katı öğretmene aldırış etmez. 1870'lerden ölümüne dek dansçılar favori konusu; sahne performansından çok antrenman/prova.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Öğretmen figürü gerçek bale ustası Jules Perrot'un portresi; Orsay kesin: \"portrait de Jules Perrot, authentique maître de ballet\" (→ C044 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Bale ustası bastonuyla zemine vurarak tempo tutar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Mekân: Paris Opéra dans fuayesi, rue Le Peletier binası (Garnier öncesi); Degas orkestradan müzisyen arkadaşıyla girerdi (→ C041 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Ayrıntılar: sulama kabı (parquet ıslatma/kaymayı önleme), küçük köpek, sırt kaşıyan kız; S6 ikonografi \"chien; arrosoir\", sujet \"scène de la vie moderne\"; POP sujet \"enseignement pratique, art de la danse, jeune fille, danseur, miroir\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S7",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kompozisyon: hafif yükseltilmiş bakış, odanın çaprazı, parquet kaçan perspektifi; parquet ana iş aracı; Valéry: \"He has some admirable floors.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Katalog raisonné: LEMOISNE 341; MINERVINO 479.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Sergiler: 1876 Londra (168 New Bond Street) + Brighton; 1904/1924/1937 Paris; 1948 Venedik; 1969 Paris; 1984 Washington; 1988 Paris; 1999 Amsterdam; 2004–2005 Pekin/Şanghay/HK; 2008 Canberra; 2010 Madrid/San Francisco/Yokohama; 2013 Paris; 2015 Toledo.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Görsel kamu malı: PD-old-100-expired + PD-Art; WD P6216 public domain (100 yıl+ pma); AttributionRequired false.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "WD P18 görseli GAP varlığı fwE5p5FTjV9Ezg (3950×4535).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Met sürümü (Q18758802) AYRI eser: \"The Dance Class\", 1874, 83,5×77,2 cm, 1987.47.1, Bingham vasiyeti 1986, Gallery 815; Faure (şarkıcı) komisyonu + Guillaume Tell afişi + 1876 İzlenimci sergisine ödünç MET'e ait; \"imaginary scene\" yalnız Met'te; en iddialı iki dans tablosu; Met küratör \"objectifying eye\"/\"modern edginess\"; sınav sahnesi (pembe kuşak, attitude); sesli rehber: yukarı eğimli perspektif, figür değişimi, \"müzik dizesi notaları\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Perrot figürü başka bir erkek öğretmenin (Louis Mérante olduğu düşünülen — \"thought to be\") üzerine boyandı; tablo Perrot odak olmadan önce ilerlemişti; Perrot poz vermekten çekinmedi; flanel kadifemsi doku + kırmızı yansımalar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Perrot figürü 1872 çizimlerine dayanır; yelpaze tutan kızın yerinde başlangıçta patisini düzelten kız vardı; sırt kaşıyan kızın yağlıboya/karakalem eskizleri önceki çalışmalara izlenir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Degas 1872–1876 arasında tablolarına tarih koymadı; Lemoisne 1876; Pickvance 1874–1875 (karşılaştırmalar).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Perrot ~64 yaşında; 1830–40'lar romantik bale önde figürü; dönem 1820'ler–1860'lar sonu; kalan ustalar Mérante+Perrot; Opéra sözleşmesi yenilenmedi; otorite yeniden tesisi yorumu; Degas–Perrot ilişkisi bilinmiyor; Mühlberger: eleştirel ifade Realizm/canlılık; merkez dansçıya bakar, arkadaki balerine işaret eder.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Tablo, Perrot odaklı üç büyük tablodan biri (1873–1876); Perrot genelde Hôtel de Choiseul'de özel ders verirken gösterildi (→ C041 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Sahne anneleri arka duvardan izler; tozu bastırmak için su kabı; küçük köpek; solda sırtını geren kız; tümü atölyede eskizlerden hesaplanmış kurgu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Siyah boyun kurdeleleri dansçıların beyazlığını/\"çıplaklığını\" vurgular; açık tenler nü vurgusu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Degas dansçıları gözlemden boyadı (sıkılmış/yorgun), pozları hayal gücüyle düzeltti; kostüm/mekânda serbestlik; Realizm; prova salonunu yeğledi; katmanlar halinde pigment.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Çok sayıda hazırlık eskizi; çalışma \"neredeyse üç yıla\" yayıldı; ilk büyük dansçı kompozisyonu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Yenilikçi kadraj: ortasında pencereyi yansıtan aynanın bulunduğu büyük eğik duvar; soluk ve hareketli ışık.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S12",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "itwiki betimi: yarım daire; kırmızı kurdeleli kız yelpazeleniyor (ayaklarında sulama kabı + köpek); piyanonun üstünde sarı kurdeleli kız sırt kaşıyor; yeşilimsi duvarlar, siyah kurdeleler, beyaz tütüler; kaçış noktası tuvalin dışında sağda; Nifosì: resim dans gibi — görünürde kolay, gerçekte emekle kurulu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Degas alıntısı (FR): \"On m'appelle le peintre des danseuses, mais on ne comprend pas que la danseuse a été pour moi un prétexte à peindre de jolies étoffres et à rendre des mouvements\" (\"étoffres\" yazımı kaynakta aynen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "\"İmza sulama kabının üstünde\" (data) erişilen kaynaklarda doğrulanmadı; birincil yalnız \"S.b.g.\"; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "itwiki Met maddesi 1871 der; Met birincil 1874 → itwiki tarih ifadeleri güvenilmez (D8 ilişkili).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Tarih ihtilafı (D1): Orsay yorum+POP+JocondeLab 1871–1874 ↔ notice 1873–1876; enwiki c.1874–76; WD 1871 (zayıf); Commons 1875; Larousse/fr/it infobox 1873–76; itwiki gövde 1873–75; data 1871 + ozet 1873–76 (kayıt içi çelişki). Tek yıl yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S2",
+    "S3",
+    "S4",
+    "S12",
+    "S1",
+    "S13",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Boyut ihtilafı (D2): 85×75 (yorum/POP/WD/en/it/Larousse) ↔ 85,5×75 (notice; frwiki infobox 85,5 ↔ gövde 85×75 iç çelişki); çerçeveli yalnız notice 109,5×99,3 (2008).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S2",
+    "S3",
+    "S4",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Manzi tarihi (D3): notice \"1889\" ↔ POP \"marchand, 1893\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Mekân (D4): Orsay rue Le Peletier dans fuayesi ↔ enwiki/DeVonyar-Kendall Hôtel de Choiseul özel ders; Met \"imaginary\" yalnız kendi sürümü.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8",
+    "S2",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Faure komisyonu (D5): enwiki Orsay maddesinde \"composer Faure\" der + Met ref; Met Faure'yi KENDİ sürümü için anar (\"singer\"); Orsay provenansında Faure yok → olgu olarak kullanılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S11",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Perrot–Degas ilişkisi (D6): Larousse/frwiki \"ami du peintre\" ↔ enwiki/DeVonyar-Kendall \"unknown\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S4",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Perrot kimliği kesinliği (D7): Orsay kesin ↔ frwiki \"peut-être\" hedge; Larousse \"toujours identifié\" der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S8",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "itwiki versiyon/tarih karışıklığı (D8): iki madde tarihleri çaprazlar; Met maddesi 1871 (Met: 1874).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S14",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "\"Kırmızı yelpaze\" (data) doğrulanmadı; kaynaklarda yelpaze rengi yok; S3 kırmızı olanı saç kurdelesi (\"fiocco rosso tra i capelli\") olarak verir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "\"Japon baskıları / Toulouse-Lautrec etkisi\" (data) erişilen kaynaklarda yok; atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "\"Erken dönem\" (data) yanıltıcı; 1870'ler olgunluk; S3 \"bale temalı ilk tablolarından\" farklı iddia.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Görsel İNCELENMEDİ (yalnız metadata/lisans/çözünürlük); kompozisyon kaynak betimlerinden; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Refs metinleri erişilmedi (Pickvance JSTOR 873959; DeVonyar/Kendall, Schacherl, Armstrong, Mühlberger, Meyer, Kendall, Brocvielle, Lemoisne, Minervino vb.); yalnız bibliyografyada; sayfa numaraları doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "itwiki Degas alıntısı (\"Nessun'arte è tanto poco spontanea...\") atıfsız + \"avrebbe ammesso\"; alıntı olarak kullanılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Degas ilk bale sahnesi 1866; ~1500 dans eseri; dörtte üç kadın imgeleri; prova salonunu yeğledi; Meyer: tekrar eden dansçılara yakınlık; hareket/müzik/toplum/kostüm ilgisi; kurdele bağlanışı + etek düşüşü notları.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Bütünleşik estetik okuma (yorum): zemin emeğin yüzeyi/aracı; disiplin–gevşeme gerilimi; bakışın nesneleştirici boyutu; kurgusallık–belgesellik ikiliği. Yorum çerçevesi, olgu değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S2",
+    "S11"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3821820",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3821820.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "\"The Ballet Class (Degas, Musée d'Orsay)\" wikitext",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse, redirects=1)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "\"La scuola di danza\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "\"La Classe de danse (Degas, Paris)\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée d'Orsay",
+   "belge": "EN yorum \"The Ballet Class\" (works-in-focus 3098)",
+   "url": "https://web.archive.org/web/20210420121112/https://www.musee-orsay.fr/en/collections/works-in-focus/search/commentaire/commentaire_id/the-ballet-class-3098.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 404 (18:49:57Z); arşiv 200 (2021-04-20)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée d'Orsay",
+   "belge": "Tam katalog notice n°1151 / RF 1976",
+   "url": "https://web.archive.org/web/20180720212751/http://www.musee-orsay.fr/en/collections/index-of-works/notice.html?no_cache=1&nnumid=1151",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (18:50:36Z); arşiv 200 (2018-07-20)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée d'Orsay",
+   "belge": "FR yorum (la-classe-de-danse-169)",
+   "url": "https://web.archive.org/web/20180126191130/http://www.musee-orsay.fr:80/fr/collections/oeuvres-commentees/recherche/commentaire/commentaire_id/la-classe-de-danse-169.html?no_cache=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2018-01-26)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Musée d'Orsay",
+   "belge": "IT yorum (la-classe-de-danse-169)",
+   "url": "https://web.archive.org/web/20170624140809/http://www.musee-orsay.fr/it/collezioni/opere-commentate/cerca/commentaire/commentaire_id/la-classe-de-danse-169.html?no_cache=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2017-06-24)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Ministère de la Culture / POP",
+   "belge": "Joconde notice 000PE003814 (güncelleme 23 Şubat 2026)",
+   "url": "https://pop.culture.gouv.fr/notice/joconde/000PE003814",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı (18:53:43Z)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "JocondeLab (Joconde yansıması)",
+   "belge": "notice 57399",
+   "url": "http://web.archive.org/web/20251109040535/https://jocondelab.iri-research.org/jocondelab/notice/57399/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 502 (18:53:12Z); arşiv 200 (2025-11-09)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Metropolitan Museum",
+   "belge": "\"The Dance Class\" (Met sürümü, object 438817 / 1987.47.1) — karşılaştırma",
+   "url": "https://web.archive.org/web/20260104035312/https://www.metmuseum.org/art/collection/search/438817",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 429 (18:52:16Z); arşiv 200 (2026-01-04)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Larousse",
+   "belge": "Encyclopédie \"la Classe de danse\"",
+   "url": "https://www.larousse.fr/encyclopedie/oeuvre/la_Classe_de_danse/181368",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: GAP dosyası + infobox dosyası (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "\"La classe di danza\" wikitext (Met versiyonu maddesi)",
+   "url": "https://it.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "pageprops → Met versiyonu Q18758802",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (Q46373, Q23402, Q94319 vb.)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "yerel data/",
+   "belge": "eserler_onbellek, basyapitlar, eser_ayrintilari, eser_notlari, eser_konulari, eser_adlari_tr, eser_zorluk",
+   "url": "data/eserler_onbellek.json + data/basyapitlar.json + data/eser_ayrintilari.json + data/eser_notlari.json + data/eser_konulari.json + data/eser_adlari_tr.json + data/eser_zorluk.json (yerel, salt-okunur)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur (yerel dosya)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Dance Class (Q18758802)",
+   "sanatci": "Edgar Degas",
+   "kurum": "Metropolitan Museum of Art, New York",
+   "envanter": "1987.47.1",
+   "mufredat_ici": false,
+   "gerekce": "Aynı temanın ayrı sürümü; sınav sahnesi + Faure komisyonu bu sürüme ait; iki kurumun anlatı farkı ve versiyon karışıklığı riski.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Perrot odaklı diğer iki büyük tablo (1873–1876; adlar bu brief'te doğrulanmadı)",
+   "sanatci": "Edgar Degas",
+   "gerekce": "DeVonyar & Kendall: Bale Dersi, Perrot merkezli üç büyük tablodan biri; seri karşılaştırması.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "eser": "Sırt kaşıyan dansçı hazırlık eskizleri",
+   "sanatci": "Edgar Degas",
+   "gerekce": "Schacherl: figürün yağlıboya/karakalem eskizleri önceki çalışmalara izlenir; atölye kurgusunun kanıtı.",
+   "kanit": [
+    "C025",
+    "C029"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — ham cache'ler bağımsız yeniden okundu: S6 notice txt (tarih/boyut/imza/provenans/sergiler), S9 POP txt (canlı; 1871 vers/1874 ET, 85×75, LEMOISNE 341/MINERVINO 479, Manzi 1893), S5/S7/S8 yorum txt (1871–1874, Perrot kesin, baston, rue Le Peletier, Valéry), S11 Met txt (1874, 83,5×77,2, Faure singer, imaginary), S12 Larousse txt, S2/S3/S4 wikitext (B zincirleri, peut-être, étoffres), S13 imageinfo (PD, 3950×4535). Orsay iç çelişkisi (D1/D2), Manzi (D3), mekân (D4), Faure (D5), ilişki (D6), kesinlik (D7), itwiki (D8) doğrulandı. Görsel İNCELENMEDİ (C049); refs metinleri erişilmedi (C050).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/eserler_onbellek + basyapitlar \"1871\" (WD P571, DBpedia importu) ↔ birincil aralık (D1, C038); basyapitlar ozet \"genellikle 1873–1876\" kayıt içi çelişki; POP 2026 \"1871 vers ; 1874 ET\". Tek yıl kaynaklı değil.",
+  "Görsel lisans: data/eserler_onbellek l:\"\" boş — Commons PD metadata ile doldurulabilir (data DEĞİŞTİRİLMEZ; C021).",
+  "İmza/kab: basyapitlar bak[0] + eser_ayrintilari \"imza kabın üstünde\" — birincil yalnız \"S.b.g.\"; doğrulanmadı (C036 E).",
+  "Yelpaze: eser_ayrintilari \"kırmızı yelpaze\" — kaynaklarda renk yok; kırmızı olan saç kurdelesi (C046 E).",
+  "Etki: basyapitlar \"Japon baskıları / Toulouse-Lautrec\" — erişilen kaynaklarda yok (C047 E).",
+  "Dönem: eser_notlari \"erken dönem\" yanıltıcı (C048 E); 1870'ler olgunluk.",
+  "Perrot hedge: basyapitlar \"genellikle tanımlanır\" ↔ Orsay kesin (C014 A; C044 D).",
+  "Faure komisyonu data'da yok — EKLENMEMELİ (C042 D; Met sürümüne ait).",
+  "Salle 32 yalnız 2018 snapshot (C010); güncel salon bilinmiyor.",
+  "Versiyon: Met Q18758802 ayrı eser (C023); karıştırılmamalı. TR ad \"Bale Dersi\" ✓; konu \"gundelik\" Orsay \"scène de la vie moderne\" ile uyumlu.",
+  "Mekân: data ozet \"Paris Operası'nın prova salonu\" Orsay ile uyumlu (C016); enwiki Choiseul (C041 D) veriye girmemiş."
+ ]
+}

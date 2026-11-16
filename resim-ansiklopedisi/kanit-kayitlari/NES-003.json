@@ -1,0 +1,251 @@
+{
+  "madde_id": "NES-003",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (nes-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Hokka (yan; Japonca suzuri; Korece byeoru) katı mürekkebin öğütülmesi ve sıvı mürekkebin saklanması için kullanılan bir taş havandır; düz öğütme yüzeyi ('hill'/oka) ile mürekkebin toplandığı çukur hazneden ('sea'/umi) oluşur ve yüzeyi ince ve düzgün ama mürekkebi hızlı öğütecek kadar aşındırıcı olmalıdır; fırça (bi) ise kıllar, sap (holder) ve ucu koruyan kılıf (sheath) olmak üzere üç bileşenden oluşur, kıllar istenen esneklik ve boyuta göre geyik, keçi, samur, tavşan gibi hayvanlardan elde edilir ve esnek kıl uç çizgi kalınlığında çeşitlenmeye, ayrıca ucun ya da yan yüzeyin kullanımına göre iki veya üç boyutlu etkilere izin verir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-003-K03",
+      "kaynak_baslik": "Smithsonian's National Museum of Asian Art (Freer|Sackler), 'Four Treasures of a Scholar's Studio' — Inkstone and Container / Writing Brush bölümleri",
+      "url": "https://asia-archive.si.edu/learn/chinas-calligraphic-arts/four-treasures/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K03/Smithsonian) \"Artists use an inkstone both as a surface for grinding the solid ink into liquid form and as a reservoir to hold the liquid ink once it is made. The surface of an inkstone should be fine and smooth, yet abrasive enough for grinding the ink quickly.\" · \"The Chinese brush has three components—hair, holder, and a sheath to cover the tip when not in use. The most important element is the hair, which may come from a deer, goat, sable, rabbit, or other animal…\" · (K04/Wikipedia) \"An inkstone is a stone mortar for the grinding and containment of ink… consists of a flat part called the 'hill' (… oka in Japanese), and a hollow part 'the sea' (… umi in Japanese) intended to collect the ink.\" · (K01/Heilbrunn) \"a flexible hair brush allows not only for variations in the width of strokes, but, depending on whether one uses the tip or side of the brush, one can create either two-dimensional or three-dimensional effects.\"",
+      "pasaj_konum": "Smithsonian 'Inkstone and Container' + 'Writing Brush' bölümleri; Wikipedia 'Inkstone' giriş/Structure; Heilbrunn 'Chinese Calligraphy'",
+      "belirsizlik_ifadeleri": [
+        "may come from… depending on the desired resilience (K03, kıl türleri için)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K04", "NES-003-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C001 (hokka) ve C003 (fırça) aday iddiaları tek TEKNIK_TANIM iddiasında birleştirildi: ikisi de DOGRULANDI düzeyinde ve iki bağımsız kurumsal zincire (Smithsonian K03 + Heilbrunn K01) ve zincirli yardımcı kaynağa (Wikipedia K04) dayanıyor. Alıntılarda Çince/Japonca karakterler eliptik (…) olarak kısaltıldı; özgün yazı biçimleri yalnız maddenin ozgun_ad/alternatif_adlar alanlarında verildi (CJK politikası). Madde metni ayrıca Türkçe 'hokka' ile Avrupa inkwell kavramının farklılığını ilk cümlelerde açıklar (kavram tuzağı)."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Sıvı mürekkep, mürekkep çubuğunun hokkanın yüzeyinde suyla öğütülmesiyle elde edilir ve sanatçı su ile katı mürekkep miktarını değiştirerek kıvamı denetler; mürekkep çubuğu çam isi ya da lamba karasının tutkalla karıştırılıp kalıpta preslenmesiyle yapılır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-003-K01",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Heilbrunn Timeline — Dawn Delbanco, 'Chinese Calligraphy'",
+      "url": "http://web.archive.org/web/20260608055725/https://www.metmuseum.org/essays/chinese-calligraphy",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-06-08"
+      },
+      "pasaj": "(K01) \"Black ink is formed into solid sticks or cakes that are ground in water on a stone surface (1981.120.1a-c) to produce a liquid. The calligrapher can control the thickness of the ink by varying both the amount of water and the solid ink that is ground.\" · (K03) \"It is made of pine soot or lampblack that is mixed with glue and pressed in molds… To produce liquid ink, the artist grinds an inkstick with water on the hard surface of an inkstone.\"",
+      "pasaj_konum": "Heilbrunn 'Chinese Calligraphy' (malzeme/süreç paragrafı); Smithsonian 'Inkstick' bölümü",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "K01'in parantez içinde andığı '1981.120.1a-c' Metropolitan Museum envanterli hokkadır ve NES-003-K06 (API) kaydında doğrulanmıştır — Met denemesi ile Met koleksiyonu arasında birincil bağ. Mürekkep hazırlama süreç ayrıntıları ve mürekkep resmi tekniği BİLEREK bu maddede genişletilmedi; TEK-004'e (Doğu Asya mürekkep resmi) bırakıldı. TEK-004 dosyası bu yazım anında diskte olmadığı için ilgili_maddeler bağı kurulamadı (uretim_notu'na yazıldı)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "'Four Treasures of the Study / of a Scholar's Studio' (wenfang sishu) terimi Çin yazı takımının dört nesnesini — fırça, mürekkep çubuğu, hokka ve kâğıt — adlandırır; Çin'de bu takım genellikle kutusuz, doğrudan yazı masasında tutulurken Japonya'da yazı kutusu (suzuribako) geleneği geliştirilip yetkinleştirilmiştir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-003-K02",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Heilbrunn Timeline — Monika Bincsik, 'Japanese Writing Boxes'",
+      "url": "http://web.archive.org/web/20260812033831/https://www.metmuseum.org/essays/japanese-writing-boxes",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-08-12"
+      },
+      "pasaj": "(K02) \"Writing boxes were developed and perfected in Japan, whereas in China the 'Four Treasures of the Study' (brush, inkstick, inkstone, and paper) were usually kept on the writing desk, without a box.\" · (K03) \"Chinese artists create paintings and calligraphy with the Four Treasures of a Scholar's Studio: Brush, inkstick, paper, and inkstone.\"",
+      "pasaj_konum": "Heilbrunn 'Japanese Writing Boxes' (giriş); Smithsonian sayfa başlığı + giriş",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İKİ BAĞIMSIZ KURUMSAL KAYNAK (Met Heilbrunn + Smithsonian Freer|Sackler) aynı terminolojiyi ve aynı dört nesneyi doğrular (Kural 7 karşılandı). Çin/Japonya kutu farkı yalnız K02'dedir; bu nedenle 'kutusuz masa' ayrıntısı kaynak atfıyla verilmiştir."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Hokkanın bilinen en eski kazılı örneği MÖ 3. yüzyıla (bugünkü Hubei eyaletinin Yunmeng kentinde bir mezara) tarihlenir; aygıtın y. 6.000–7.000 yıl öncesine ait bir boya öğütme aracından evrilmiş olabileceği aktarılır; kullanımı Han döneminde yaygınlaşmış, talep Tang döneminde (618–905) artmış ve Song döneminde (960–1279) zirveye ulaşmıştır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-003-K04",
+      "kaynak_baslik": "Wikipedia, 'Inkstone' (History bölümü; zincir: Metropolitan Museum of Art, China: Dawn of a Golden Age, 2004; Dorothy Ko, The Social Life of Inkstones, 2017)",
+      "url": "https://en.wikipedia.org/wiki/Inkstone",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"The device evolved from a rubbing tool used for rubbing dyes dating around 6,000 to 7,000 years ago… the oldest excavated inkstone dates from the 3rd century BC, found in a tomb in modern Yunmeng, Hubei province… demand for inkstones increased during the Tang dynasty (618–905) and reached its height in the Song dynasty (960–1279).\"",
+      "pasaj_konum": "Wikipedia 'Inkstone', History",
+      "belirsizlik_ifadeleri": [
+        "around 6,000 to 7,000 years ago"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "TEK YARDIMCI KAYNAK: zincirindeki Met 2004 sergi kataloğu hiyerarşi-1 bir yayındır ancak metnine ERİŞİLMEDİ (NES-003-K11 Dorothy Ko 2017 de yalnız bibliyografik). Bu nedenle iddia DOGRULANDI'ya yükseltilmedi (Kural 7/9). Madde metni İKİ FARKLI İDDİA DÜZEYİNİ (kazılı en eski örnek MÖ 3. yy ↔ 6.000–7.000 yıl önceki araçtan evrim önerisi) birleştirmez ve 'aktarılır/olabilir' ihtiyatıyla verir."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Geleneksel olarak dört ünlü hokka taşı sayılır: duan (Guangdong, Zhaoqing; adını Tang dönemindeki Duanzhou'dan alır; volkanik tüf; mordan mor-kızıla uzanan renk; değer verilen 'taş gözleri' içerir), she (Anhui eyaletinin She ilçesi ile Jiangxi eyaletinin Wuyuan ilçesi; Tang dönemindeki Shezhou; bir tür arduvaz/slate; siyah ve altınımsı desenli), taohe (Gansu, Tao nehri taşı; kristalin, yeşim benzeri) ve seramik yapım chengni (kökeninin Luoyang, Henan olduğu aktarılır); duan taşının kullanımı Metropolitan Museum'daki iki hokkanın malzeme alanının 'Duan stone' olarak kayıtlı olmasıyla ayrıca doğrulanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-003-K04",
+      "kaynak_baslik": "Wikipedia, 'Inkstone' (Four Famous Inkstones bölümü; zincir: Zhang Wei, The Four Treasures, 2004)",
+      "url": "https://en.wikipedia.org/wiki/Inkstone",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Duan inkstones… produced in Zhaoqing, Guangdong Province… Duan stone is a volcanic tuff, commonly of a purple to a purple-red color… She inkstones… come from She County (Anhui Province) and Wuyuan County, Jiangxi Province… This stone is a variety of slate… black color and… gold-like markings.\" · (K06/Met API) \"Inkstone; medium: Duan stone; 1644–1911; 1981.120.3\"",
+      "pasaj_konum": "Wikipedia 'Inkstone', Four Famous Inkstones; Met API nesne kayıtları 41869 ve 41868",
+      "belirsizlik_ifadeleri": [
+        "is said to have originated in Luoyang (chengni için)"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K06"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Brief bu aday iddiayı 'DOGRULANDI (duan) / KISMEN (she)' olarak ikiye ayırmıştı; dört taşın tamamını kapsayan TEK iddia olarak taşındığı için bütün iddia en ihtiyatlı düzeye (KISMEN_DESTEKLENIYOR) ayarlandı. DUAN için iki kaynak vardır (K04 anlatısı + Met API kayıtlarında 'Duan stone' malzeme alanı, NES-003-K06); SHE coğrafyası (Anhui/Jiangxi) ve taohe/chengni için hiyerarşi 1–2 ikinci kaynak EKSİK (Zhang Wei 2004 metnine erişilmedi)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Geleneğe göre hokka taşının çok ince bir parçası mürekkebe geçerek ona üstün bir patina verir (kaynak bunu 'is also said to' ihtiyatıyla aktarır); Çin'de mürekkep dairesel hareketle ve çubuğun ucu yüzeye düz basılarak, Japonya'da ise çubuğun bir kenarı ileri-geri itilerek öğütülür; Song dönemi yazarları arasında duan ile she taşlarının üstünlüğü konusunda derecelendirme ihtilaflıydı ve aktarılan gelenekte Ouyang Xiu'nun 'Dragon Tail (She) Duanxi'yi açık farkla geçer' sözü anılır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "NES-003-K04",
+      "kaynak_baslik": "Wikipedia, 'Inkstone' (zincir: Mi Fu, çev. Van Gulik, Mi Fu on Ink-stones; Billeter-Durix alıntısı)",
+      "url": "https://en.wikipedia.org/wiki/Inkstone",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"An infinitesimal part of its grain is also said to pass into the ink, giving it a superior patina… The Chinese grind their ink in a circular motion with the end flat on the surface whilst the Japanese push one edge of the end of the inkstick back and forth.\" · Song derecelendirmesi (brief'in İhtilaflar 1 kaydından): Ouyang Xiu \"Dragon Tail [Longwei/She] far surpasses Duanxi\"",
+      "pasaj_konum": "Wikipedia 'Inkstone' (patina + öğütme tekniği); Ouyang Xiu aktarımı aynı sayfa üzerinden (özgün metne erişilmedi)",
+      "belirsizlik_ifadeleri": [
+        "is also said to"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Song dönemi derecelendirmesi ihtilaflı: aktarılan gelenekte Ouyang Xiu she taşını duan'a üstün tutar; sonraki gelenek duan'ı öne çıkarır — özgün metinler açılmadığı için kesin sıralama KURULMAZ"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "GELENEKSEL_ANLATI türü: patina iddiası kaynakta 'is also said to' ile aktarılır; madde metni bunu modern olgu gibi YAZMAZ. Öğütme hareketi farkı (Çin dairesel / Japonya ileri-geri) için ikinci kaynak açılmadı. Ouyang Xiu alıntısı yalnız Wikipedia sayfası üzerinden doğrulandı (özgün metne erişilmedi). Baidu Baike kaynaklı jeolojik ayrıntılar güvenilirlik hiyerarşisi dışında olduğu için KULLANILMADI."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Çin'de seramik hokkalar Tang hanedanından (618–907) itibaren üretilmiştir; Japonya'da seramik hokka kullanımı 7. yüzyılda başlamış, taş hokkalar y. 10.–11. yüzyıldan itibaren görülmüş ve dönemin yazılı ile görsel kaynakları çoğunlukla Çin'den ithal edilen yazı araçlarını kaydetmiştir; Kamakura döneminden (1185–1333) kalma bir maki-e yazı kutusunda hokkanın iki yanında fırçalar için iki küçük tepsi bulunur, bu düzen ya da tek tepsi ile hokka bölmesi kombinasyonu en yaygın konfigurasyon olmuştur, kısmen öğütülmüş mürekkep çubukları sumi-basami tutucuya yerleştirilir ve Higashiyama döneminde (15. yüzyıl sonu) şōin iç mekânında resmî konumlar Çin araçlarına, gayriresmî alanlar Japon araçlarına ayrılmıştır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-003-K02",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Heilbrunn Timeline — Monika Bincsik, 'Japanese Writing Boxes'",
+      "url": "http://web.archive.org/web/20260812033831/https://www.metmuseum.org/essays/japanese-writing-boxes",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-08-12"
+      },
+      "pasaj": "\"In China, earthenware inkstones were produced from the Tang dynasty (618–907) onward… In Japan, the use of earthenware inkstones started during the seventh century and stone ones from around the tenth or eleventh century… the written and visual sources of the period mostly record writing utensils imported from China.\" · \"A surviving Kamakura-period (1185–1333) maki-e and mother-of-pearl writing box has two little trays placed on the two sides of the inkstone… This arrangement or the combination of one tray with the inkstone compartment became the most common writing box configurations… formal locations featured Chinese implements, informal spaces Japanese domestic utensils.\"",
+      "pasaj_konum": "Heilbrunn 'Japanese Writing Boxes' (tarihçe + iç düzen + Higashiyama/şōin bölümleri)",
+      "belirsizlik_ifadeleri": [
+        "around the tenth or eleventh century"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C008 (Çin/Japonya kronolojisi) ve C014 (suzuribako iç düzeni + Higashiyama ayrımı) aday iddiaları tek TARIH iddiasında birleştirildi; her ikisi de aynı kurumsal uzman kaynağından (K02) gelir. Basit tarihsel tanım için tek kurumsal uzman kaynağı yeterlidir (Kural 7 istisnası); 'around' ihtiyatı madde metninde 'y. 10.–11. yüzyıl' olarak korundu."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Metropolitan Museum'un Heilbrunn denemesine göre Çin'de bürokrasi erken Kuzey Song'dan itibaren sınavla seçilen bilgin-memurlardan oluştu; kontenjan daralınca bilginler 'kendini ahlaken yetiştirmenin yolu' sayılan sanatlara yöneldi; bilgin-memurlar 'Dört Başarı' (resim, şiir, weiqi ve qin) ile özdeşleşti ve Yuan'dan itibaren bilgin-sanatçılar, kaligrafik fırça işçiliğine dayanan, konunun gerçekçi betimi yerine ressamın iç ruhunu açığa vuran anlatısız-dışıavurumcu bir üslup geliştirdi; aynı kurumun kaligrafi denemesi de kaligrafiyi geleneksel Çin'de diğer tüm görsel sanatların üstünde tutulan sanat olarak tanımlar.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-003-K05",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Heilbrunn Timeline — Department of Asian Art, 'Scholar-Officials of China'",
+      "url": "http://web.archive.org/web/20260311124601/https://www.metmuseum.org/essays/scholar-officials-of-china",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-11"
+      },
+      "pasaj": "\"scholars increasingly turned to the arts, the study of which was considered a path to the cultivation of the moral self… Scholar-officials also became particularly associated with the Four Accomplishments: painting, poetry, a chesslike game of strategy known as weiqi (go in Japanese), and playing the zither (qin)… a highly expressive style of painting that utilized nonrepresentational calligraphic brushwork… that revealed the inner spirit of the painter rather than a realistic depiction of the subject.\" · (K01) \"Calligraphy… was the visual art form prized above all others in traditional China.\"",
+      "pasaj_konum": "Heilbrunn 'Scholar-Officials of China'; Heilbrunn 'Chinese Calligraphy' (kaligrafinin statüsü)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "YORUM/OLGU AYRIMI: 'iç ruhu açığa vuran anlatısız-dışıavurumcu üslup' değerlendirmesi Metropolitan Museum Department of Asian Art denemesinin (2004) ÇERÇEVESİDİR; madde metninde 'Metropolitan Museum'un Heilbrunn denemesine göre' kaydıyla sahiplendirilmiş, genel kabul gibi sunulmamıştır. Literati bağlamı kaynakla sınırlı tutuldu: hokka-fırça betimi her resimde otomatik olarak 'bilgin erdemi' sembolü sayılmaz."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Metropolitan Museum koleksiyonunda tarihsel yazı aracı nesneleri kayıtlıdır: Qing dönemi (1644–1911) duan taşı hokka (envanter 1981.120.3; turna, geyik ve maymun motifli), Zheng Xie (1693–1765) üslubunda bambu desenli kutulu duan taşı hokka (envanter 1981.120.2a,b), geç 18. yüzyıldan yeşil şist, bambu desenli ve ahşap kutulu hokka (envanter 1981.120.1a–c), Kore'den 19. yüzyıl hokka için kırmızı lake kutu (envanter 2024.337a,b), Ming dönemi lake yazı fırçası (envanter 25.215.28a,b, uzunluk 24.8 cm), 18. yüzyıl ortasından Jingdezhen porselen gövdeli yazı fırçası (envanter 58.64.34) ve 13. yüzyıldan geometrik desenli yazı fırçası (envanter 2015.500.1.22a,b); Victoria and Albert Museum'da ise Çin yapımı, bulutlar arasında ejder kabartmalı taş hokka kayıtlıdır (envanter FE.25-1976, 1800–1900, uzunluk 14.9 cm).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-003-K06",
+      "kaynak_baslik": "The Metropolitan Museum of Art (açık API) — yedi nesne kaydı; Victoria and Albert Museum 'Inkstone' (FE.25-1976)",
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/41869",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "(K06/Met API) \"Inkstone; medium: Duan stone; 1644–1911; 1981.120.3\" · (K09/V&A kayıt künyesi) \"Inkstone; China; 1800–1900; FE.25-1976\" — bulutlar arasında ejder kabartmalı taş hokka, uzunluk 14.9 cm",
+      "pasaj_konum": "Met API nesne kayıtları 41869, 41868, 41867, 910552, 60944, 46721, 40178; V&A O155470 kayıt sayfası",
+      "belirsizlik_ifadeleri": [
+        "1981.120.2a,b kaydında tarih alanı boş; begin/end 1693–1765 (Zheng Xie'nin yaşam yılları — desen 'after Zheng Xie')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K09"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "NESNE koleksiyonu kaydı — resim örneklerinden AYRI bölümde tutuldu. Met API'deki 1981.120.1a–c hokkası, Heilbrunn 'Chinese Calligraphy' denemesinin metinde andığı nesnedir (K01 ↔ K06 birincil bağ). Kayıt içi tutarsızlık (1981.120.2a,b) olduğu gibi aktarıldı."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Metropolitan Museum koleksiyonundaki üç resim yazı araçlarının resimde temsili için teyitli örnektir: Qi Baishi'nin 'Scholar's Tools' adlı asılı tomarı (1947 tarihli; kâğıt üzerine mürekkep ve renk, 104.5×34 cm; envanter 1986.267.231) bir hokka, bir su kabı ve uçlarından mürekkep damlayan fırçaları betimler; Yu Ming'in (1884–1935) 'Portrait of Qian Lou' adlı asılı tomarı (1932; kâğıt üzerine mürekkep ve renk; envanter 2024.555.2) Savaşan Devletler dönemi (y. MÖ 475–221) münzevisi Qian Lou'yu alçak masası önünde, elinde fırça, yanında hokka ve su kabı, yanı başında tomar desteğiyle gösterir ve bu resim Ming ustası Wen Zhengming'in (1470–1559) özgün imgesinin kopyasıdır, sanatçı ayrıca 3. yüzyıl metni Gaoshi zhuan'dan uzun bir yaşamöyküsünü istinsah etmiştir; kimliği belirsiz bir Japon sanatçının 'Interior Scene with Books and Writing Implements' adlı iki panolu ekranı (17. yüzyıl başı–ortası; kâğıt üzerine mürekkep, renk ve altın varak, 168.3×188 cm; envanter 29.100.497) ise kayıt etiketlerinde 'Books' ve 'Writing Implements' ile kayıtlıdır ve hokkanın bu resimde göründüğü küratöryel metinle ayrıca teyit edilmemiştir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-003-K07",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Collection pages: Qi Baishi 'Scholar's Tools'; Yu Ming 'Portrait of Qian Lou' (Wayback)",
+      "url": "http://web.archive.org/web/20260308050702/https://www.metmuseum.org/art/collection/search/49658",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-08"
+      },
+      "pasaj": "(Qi Baishi, K07) \"inkstone\", \"water pot\", \"brushes with ink trailing from the brush tip\" · (Yu Ming, K07 — arşiv 2026-01-18) \"Qian sits on a mat before a low table, where he prepares to write on an unfurled piece of paper. Brush in hand, inkstone and water pot at the ready, a bundle of scrolls at his side, Qian is depicted as the consummate humble scholar at his craft.\" · (Japon ekranı, K08/API) \"Interior Scene with Books and Writing Implements; Unidentified artist; early to mid-17th century; Two-panel screen; ink, color, and gold leaf on paper; tags: Books, Writing Implements\"",
+      "pasaj_konum": "Met koleksiyon sayfaları (Wayback snapshot 2026-03-08 ve 2026-01-18), açıklama blokları; Met API nesne kaydı 44939",
+      "belirsizlik_ifadeleri": [
+        "dated 1947 (Qi Baishi — kesin yıl)",
+        "a copy of an original image… by Wen Zhengming (Yu Ming)",
+        "Qian Lou 'c. 475–221 BC' dönemine yerleştirilen 'famous recluse' — tarihsel/efsanevi figür ayrımı (GELENEKSEL_ANLATI nüansı)",
+        "Unidentified artist; early to mid-17th century (Japon ekranı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-003-K06", "NES-003-K08"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C011 (Qi Baishi), C012 (Yu Ming) ve C013 (Japon ekranı) aday iddiaları tek OLGU iddiasında birleştirildi; üçü de doğrulanmış resim örneği olarak listelendi. JAPON EKRANI İÇİN TEYİT SINIRI: hokkanın resimde göründüğü küratöryel metinle doğrulanmadı, yalnız API başlığı ve etiketleri ('Writing Implements') mevcut → madde metni 'kitaplar ve yazı araçları betimleyen ekran' düzeyinde kaldı. QI BAISHI ÖRNEĞİNDE sembolik okuma EKLENMEDİ (yazı araçları doğrudan KONUDUR). 'After Xie Huan — Elegant Gathering in the Apricot Garden' (Met 1989.141.3) TEYİTSİZ olduğu için örnek listesine ve bu iddiaya ALINMADI: küratöryel metinde hokka/fırça birebir geçmiyor ve atıf API ('Xie Huan', 'ca. 1437') ile küratöryel metin ('After Xie Huan'; 'probably… by one of Xie Huan's associates') arasında farklıdır."
+    }
+  ]
+}

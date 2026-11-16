@@ -1,0 +1,108 @@
+# BANYOSUNDA BATŞEBA — İleri Düzey Ders (20 dakika)
+
+**Eser:** Sebastiano Ricci, *Bathseba im Bade / Bathsheba at Her Bath*, um 1725 · Gemäldegalerie Berlin, envanter 454 [C001][C002][C006]
+**Ön koşul:** Başlangıç + Orta dersler. **Standart:** `../../AKADEMIK_STANDART.md` §1–15.
+**Görsel notu:** Hiçbir görsel bu oturumda incelenmedi (vision kotası ana oturumda); tüm kompozisyon ifadeleri kaynak metinlerinin betimidir (belirsiz) [C047] (belirsiz).
+
+## 1. Kimlik ve yöntem: birincilin iç yapısı
+
+Birincil kayıt, Staatliche Museen zu Berlin'in search.smb.museum/object/obj-865260 sayfasıdır (permalink id.smb.museum/object/865260); DE ve EN açıklama metinleri Erich Schleier'in *200 Meisterwerke der europäischen Malerei – Gemäldegalerie Berlin* (2019) kitabından alınmıştır; kaydın son güncellemesi 06.08.2026'dır [C001]. Yapılandırılmış alanlar şunlardır: Ausführung "Sebastiano Ricci (1659 - 1734), Maler*in"; Datierung "um 1725"; Systematik/Art "Malerei"; Herstellungsort "Italien, Land"; Material/Technik "Leinwand"; Bildmaß "111,8 x 144,3 cm"; Ident-Nr "454"; Einrichtung "Gemäldegalerie"; Erwerbung "1829/30 Überweisung aus den Königlich Preußischen Schlössern" [C001][C002][C003][C005][C006][C007].
+
+Kayda erişim zinciri de belgelenmelidir: WD referansındaki eski smb-digital.de eMuseumPlus adresi search.smb.museum/object/obj-865260'a yönlenir; jawiki'nin recherche.smb.museum adresi ve canonical permalink id.smb.museum/object/865260 aynı kaydı verir [C001]. Buna karşılık Commons fotoğraf kredisindeki slug'lı adres (id.smb.museum/object/865260/batseba-im-bade) anasayfaya yönlenir — slug bozuktur, obje sayfası değil [C028]. Bu tür URL kırılmaları, "adres var = doğrulandı" yanılgısına karşı somut bir uyarıdır: ilgili sayfanın gerçekten açıldığı ve iddiayı desteklediği kontrol edilmelidir (yorum) [C001].
+
+Yöntemsel olarak üç sınır konur. Birincisi, teknik alanı yalnızca desteği (tuval) adlandırır; bağlayıcıyı (yağ) adlandırmaz. "Oil on canvas" ifadesi WGA eser sayfasından ve Wikidata P186'dan gelir; WD'nin bu alanı Commons import referanslıdır (yorum) [C004]. İkincisi, boyut alanı kaynaklar arasında bölünmüştür: birincil 111,8 × 144,3; WGA 109 × 142; WD P2048/P2049 (109/142) referansını Commons Yorck dosyasına dayandırır, jawiki infobox'u ise birincille aynı 111.8/144.3'ü verir (tartışma) [C005][C033] (tartışma). Üçüncüsü, envanter 454'ün WD referansı fragdenstaat.de sorgusudur (erişilmedi); ancak birincil kayıt aynı numarayı doğrudan taşıdığı için envanter A seviyesindedir [C006]. Bu ders, birincil alanı esas alıp ikincil varyantları ihtilaf olarak saklar; hiçbir varyantı sessizce silmez [C033] (tartışma).
+
+## 2. Tarih ve provenance: bir atıf yanlışı nasıl tarih oldu
+
+Tarihleme "um 1725" / "circa 1725" olarak korunur; WD P571=1725 (precision yıl) + P1480=circa niteleyicisi bunu yapılandırılmış biçimde tekrarlar [C002]. itwiki, Berlin versiyonunu "la versione più tarda (1726)" diye tarihlendirir; bu, birincil kayıtla çelişir (tartışma) [C034] (tartışma). Görev başlığındaki "c.1720" ise Berlin için hiçbir birincil kayıtla eşleşmez; muhtemel kaynağı itwiki'nin Budapeşte versiyonuna verdiği atıfsız "intorno al 1720" tarihidir (tartışma) [C034] (tartışma)[C035] (tartışma). Budapeşte'nin kendi müze kayıtları (MFAB ve Szépművészeti) 1724 der; Macar metin "1724 körül" (yaklaşık) ihtiyatını taşır [C017][C035] (tartışma).
+
+Provenance zinciri bir koleksiyonculuk hatasıyla başlar: II. Friedrich, tabloyu 1764–1773 arasında Sanssouci Bildergalerie için "als vermeintlichen Veronese" / "as a putative Veronese" olarak satın aldı [C008]. Bu hata anlaşılırdır: SMB'nin kendisi, sahnenin Veronese tipi villa arka planını, figür üslubunu, görkemli giysileri ve beyaz-sarı-mavi-kırmızı renk akorunu Veronese çağrışımı olarak açıklar [C014]. itwiki (Daniels 1976, s.125 scheda 414 atıflı) Berlin renklerinin belirgin biçimde Veroneseci, figürlerde Tintoretto esintileri taşıdığını söyler; kitaba erişilmediği için bu B seviyesi bir aktarımdır [C026]. Gerçek yazar ancak 20. yüzyıl başında belirlendi; SMB EN "(Molmenti 1909)" der, künyenin tamamı erişilemedi (belirsiz) [C009][C045] (belirsiz).
+
+Konu bilinci de kayboldu: 1830–1921 kataloglarında "Nach dem Bade" / "After the Bath", 1931'de "Toilette der Venus" / "The Toilet of Venus" [C010]. Yani tablo önce yanlış yazara (Veronese), sonra yanlış konuya (Venüs tuvaleti) atfedildi; her iki hata da resmin görsel karakterinden besleniyordu (yorum) [C008][C010][C014]. 1829/30 devri, eseri Prusya saray koleksiyonundan kamusal müzeye taşıdı [C007].
+
+## 3. Versiyonlar ve replikalar: iki kompozisyon, dört yanlış okuma
+
+Ricci aynı konuyu aynı dönemde iki kez resmetti. Budapeşte versiyonu (Museum of Fine Arts, Q50890343) 1724 tarihlidir; 118,5 × 199 cm; envanter 57.9; oil on canvas; "Old Master Paintings" koleksiyonunda, ikinci kat "European Art 1700–1850, Gallery XXX" salonundadır [C017]. WGA boyutu 119 × 199 olarak yuvarlar; küçük bir farktır (tartışma) [C039] (tartışma). SMB'nin karşılaştırmalı betimi iki kompozisyonu net ayırır: Budapeşte'de Batşeba profil halinde, uzun dağınık sarı saçlıdır ve saçını hizmetçi tarar; havuz dikdörtgen, arka plan mimarisi resim düzlemine paraleldir [C018]. Berlin'de baş cepheden, incili topuz arkadan başörtülü; havuz yanlardan yuvarlatılmış, mimari kavislidir [C015].
+
+Replika meselesi birincil metinde açıktır: "Von diesem Bild sind zwei Repliken bekannt, von denen zumindest die eine eigenhändig ist" — "bu resimden" ifadesi gramer olarak Budapeşte tablosuna gönderme yapar; EN "Two replicas of this picture are known, at least one of which is from the artist's own hand" [C019]. jawiki ise "bu esere ait iki replika bilinir" anlamındaki cümleyle (özgün Japonca ifade brief'te) replikaları Berlin'e bağlar; bu, birincil metnin yanlış okuması adayıdır (tartışma) [C036] (tartışma). "Zumindest die eine eigenhändig" / "at least one … own hand" ihtiyatı aynen korunur: iki replikadan yalnızca en az birinin Ricci'nin kendi elinden olduğu söylenir, ikisinin değil [C019]. Replikaların bugün nerede olduğu erişilen kaynaklarda belirtilmemiştir (belirsiz) [C043] (belirsiz).
+
+Versiyon karıştırma riski yapısaldır. itwiki'nin "Betsabea al bagno (Ricci)" maddesi Budapeşte versiyonu hakkındadır; Berlin'e yalnız bir küçük resim ve "versione più tarda" paragrafıyla değinir [C046] (belirsiz). itwiki infobox dosyasının adı "Sebastiano Ricci 1725– Bathsheba.jpg" olmasına rağmen Commons metadata'sı DateTimeOriginal=1724 ve 2500×1502 oranıyla Budapeşte kompozisyonunu gösterir; dosya adı yanıltıcıdır (belirsiz) [C044] (belirsiz). en/de/fr Wikipedia'da madde yoktur; WD sitelink'i yalnız jawiki'dir [C046] (belirsiz). Budapeşte kayıtlarına canlı erişim HTTP 520 verdi; Wayback kopyaları kullanıldı (MFAB 2024-07-08; Szépművészeti 2022-12-03) ve her iki kayıt "ongoing research" nedeniyle değişebilir ibaresi taşır [C017][C030]. Budapeşte müze fotoğrafları teliflidir; Berlin görseli ise kamu malıdır [C029][C028].
+
+Budapeşte versiyonunun kendi ikonografisi Berlin'den ayrışır. itwiki (Santucci 2008, s.49 atıflı; kitaba erişilmedi) sahneyi açık havada ritüel abdestin son anları olarak betimler: dört hizmetçi bacakları kurular, ayna tutar, saç tarar; soldaki hizmetçi yağ tepsisi taşır, yanında sadakat simgesi limon bitkisi durur [C025]. Aynı madde Batşeba'yı "kendini beğenmiş" (vanitosa) bir kadın olarak okur; aynaya bakışı, onu baştan çıkaran Davud'un seçimini adeta haklı gösteren bir okumadır (yorum; itwiki'nin kendi yorumu) [C024]. WGA Budapeşte'de Davud'u "barely visible spying figure" (zorlukla görünen gözetleyen) olarak tanımlar; Berlin'de bu figürün yerini mektuplu haberci alır [C024][C012]. İki versiyon böylece aynı öyküyü iki farklı anlatısal anahtarla (gözetleyen ↔ mektup) ve iki farklı anla (abdest sonu ↔ giyinme başlangıcı) sahneleyen bir çift oluşturur (yorum) [C024][C021].
+
+## 4. İkonografi ve etik okuma: mektup, çarşaf, bakış
+
+Öykü 2 Samuel 11–12'de anlatılır: Davud Batşeba'yı baştan çıkarır; hamile kalınca kocası paralı asker Urias'ı "savaşın en şiddetli" yerine gönderir, Urias ölür; ahlaki ders Davud'un cezalandırılmasıdır [C011][C031]. Geleneksel ikonografide Davud, saray mazgallarından gözetleyen figürdür; Berlin'de bu figür yoktur [C011]. Konuyu tanımlayan tek öğe, en solda arka planda Davud'un aşk mektubunu taşıyan kadın habercidir (Botin) [C012]. WGA bunu "a maid approaches on the far left with a letter from the king" diye tekrarlar [C012].
+
+Burada data ile birincil arasında ciddi bir çelişki vardır: data/basyapitlar "Sağdaki gencin Davut'un habercisi olduğu düşünülebilir, ancak bu yorum kesin değildir" der; oysa birincil kayıt haberciyi en soldaki kadın olarak tanımlar ve WGA'ya göre en sağdaki genç ayna tutan oğlandır (tartışma) [C038] (tartışma). Data'nın ihtiyat ifadesi ("düşünülebilir … kesin değildir") korunmuş, ama spekülasyon birincille çeliştiği için ders anlatımına alınmamıştır [C038] (tartışma). Bu, ikonografik tanımlamanın neden figürün konumuna ve niteliğine (mektup) bağlanması gerektiğini gösteren somut bir örnektir (yorum) [C012].
+
+Çarşaf paradoksu SMB betiminin merkezindedir: hizmetçi beyaz çarşafı Batşeba'yı istenmeyen bakışlardan korumak için gerer; ama bu koruma resmin izleyicisi için geçerli değildir — arkadan görülen figür izleyiciyi resim mekânına sokar [C016]. SMB/Schleier yorumuna göre öykünün ahlaki anlamı tamamen geri plana itilmiş, kadın bedeninin güzelliğine övgü öne çıkmıştır; Susanna, Lucretia, Kleopatra betimleri de 17–18. yüzyıl İtalyan resminde aynı çizgide yorumlanmış ve birbirine yaklaşmıştır [C013]. Modern bir okuma, sahnedeki bakış asimetrisini (gözetleyen kralın yokluğu, izleyicinin onun yerine konması) ve rıza sorununu tartışabilir; bu bir yorumdur, eserin tarihsel belgesi değildir (yorum) [C016][C013]. Ders, eseri yalnızca "duyusal" olarak sunmaz; ahlaki dersin bastırılışını müzenin kendi yorumu olarak beyan eder [C013].
+
+## 5. Üslup tartışması: geç Barok mu, Rokoko mu, "pastel" mi?
+
+Data içi üç etiket çelişir: basyapitlar özeti "geç Barok yorumudur" der; eser_notlari "Venedik rokokosunu gösterir" der; ders_kaynaklari "açık, pastel renkler" ifadesini "dogrulandi" durumunda taşır (tartışma) [C040] (tartışma). Birincil SMB metni "pastel" demez; "festlich-heiteren Farbstimmung … Weiß-Gelb-Blau-Rot-Klang" (şen-ışıklı renk düzeni; beyaz-sarı-mavi-kırmızı akoru) der [C014]. "Pastel" nitelemesi birincilde yoktur; önceki "dogrulandi" durumu yalnızca eser_notlari'na dayanır ve yeniden değerlendirilmelidir (tartışma) [C040] (tartışma).
+
+Rokoko nitelemesi ise birincil desteklidir: Budapeşte müzesi Ricci'yi "A velencei rokokó sokfelé foglalkoztatott, termékeny mestere" (Venedik Rokoko'sunun çok yönlü, üretken ustası) olarak tanımlar; açık renkler, havadar gruplandırma ve uzamış figürleri yeni çağın beğenisi sayar [C023]. WGA, Giordano Barok'u ile Tiepolo zarafeti arasında köprü kurar (yorum; atıf zinciri yok) [C022]. SMB ise Ricci'yi Settecento'nun 17. yüzyıl geleneğinden çıkışını başlatan ilk ressamı olarak konumlar [C032]. Sonuç: "geç Barok" ve "Rokoko" etiketleri farklı vurgulardır; ders ikisini de kaynaklarına atfeder, "pastel"i ise desteklenmemiş olarak işaretler (tartışma) [C040] (tartışma)[C023][C032].
+
+## 6. Kariyer ve alımlama: "yeni Veronese" olarak Ricci
+
+SMB EN biyografisi Ricci'nin uluslararası güzergâhını verir: Roma 1690–1694 (Cortona, Gaulli); Milano (Magnasco); Floransa (Giordano freskleri); 1697 Venedik; Palazzo Mocenigo tavanları yaklaşık 1700 (Berlin Gemäldegalerie; Giordano etkisi); Schönbrunn 1702; Floransa 1706–1708; San Giorgio Maggiore sunak tablosu 1708 (Veronese'ye dönüş + Titian Pesaro Madonna modeli); 1716 Paris (dört yıl İngiltere sonrası), Watteau ve Lafosse onu "yeni Veronese" olarak karşıladı [C027]. WGA kariyer kentlerini Parma, Bologna, Roma, Milano, Floransa, Venedik, Paris, Londra olarak sıralar (yorum; atıfsız) [C022].
+
+Bu güzergâh, Berlin Batşeba'sının alımlama tarihini açıklar: Paris'te "yeni Veronese" olarak karşılanan bir ressamın, bir kuşak sonra Prusya kralı tarafından gerçekten Veronese sanılması, üslup taklidinin başarısının ölçüsüdür (yorum) [C027][C008]. Atıf yanlışı bu yüzden rastgele değil, üslup tarihinin bir sonucudur (yorum) [C014][C008]. Ricci'nin Veronese'ye dönüşü San Giorgio 1708'de belirginleşir; Berlin Batşeba'sı bu dönüşün geç olgunluğudur [C027][C002].
+
+Alımlama tarihi üç aşamada okunabilir: üretim (geç Venedik dönemi, Veronese çağrışımlı üslup), koleksiyon (Prusya sarayında Veronese olarak değerlenme) ve bilim (20. yüzyılda Ricci'ye iade) [C002][C008][C009]. Her aşama esere farklı bir değer atfeder: saray için tablo bir "Veronese" idi, yani 16. yüzyıl Venedik altın çağının bir parçası; bilim içinse 18. yüzyıl Venedik Rökosu'nun bir belgesidir [C008][C023]. Bu değer kayması, atıf değişikliklerinin yalnızca isim düzeltmesi olmadığını, eserin tarihsel anlamını da dönüştürdüğünü gösterir (yorum) [C009][C023]. Konu adının "Nach dem Bade" ve "Toilette der Venus" olarak değişmesi de aynı süreçte, ikonografik bilginin kaybıyla paraleldir [C010].
+
+## 7. Felsefi ve estetik analiz (açıkça yorum)
+
+Bu bölümün tamamı C seviyesi yorumdur; hiçbir tarihsel etki iddiası taşımaz (yorum). Çarşaf, örtme ile gösterme arasındaki paradoksu biçimlendirir: hizmetçi bedeni bakışlardan sakınırken, kompozisyon izleyiciyi tam da o bakışın yerine yerleştirir [C016]. Arkadan görülen figür (Rückenfigur), izleyicinin resim mekânına girmesini sağlayan bir eşiktir; bu, Friedrich'in romantik Rückenfigur'undan farklı olarak, düşünmeye değil arzuya davet eden bir eşiktir (yorum) [C016].
+
+Estetik olarak tablo, ahlaki anlatıyı dekoratif bir güzellik övgüsüne dönüştürür; SMB'nin "huldigenden Darstellung" (övgü dolu betim) ifadesi bunu söyler [C013]. Kant'ın "çıkarsız beğeni" kavramı ya da Berger'in "bakış" eleştirisi bu gerilimi okumak için kullanılabilir; ancak Ricci'nin bu düşünürlerden etkilendiği iddia edilmez — anakronizm riski beyan edilir (yorum) [C013]. Villa sahnesi bir tiyatro dekoru gibi işler: figürler ön planda bir sahne şeridine dizilir, mimari kavis sahneyi çerçeveler (yorum) [C014][C015]. Beyaz-sarı-mavi-kırmızı akoru, duyusal bir yüzey değil, bir "akor" olarak düzenlenmiştir; renk, müzikal bir birliktelik metaforuyla düşünülür (yorum) [C014]. Sonuç: eser, günah öyküsünü bir güzellik törenine çevirirken, izleyiciyi de bu törenin suç ortağı yapar (yorum) [C013][C016].
+
+Bu okuma iki karşıt estetik gelenek arasında salınır. Bir yanda, bedeni ahlaki bir anlatının aracı olarak gören tarih resmi geleneği vardır; öbür yanda, bedeni kendi başına bir güzellik nesnesi olarak sunan dekoratif/mitolojik nü geleneği [C013]. Ricci'nin tercihi ikincisidir: SMB'nin Susanna/Lucretia/Kleopatra karşılaştırması, bu figürlerin 17–18. yüzyılda birbirine yaklaşarak "güzellik övgüsü"ne dönüştüğünü söyler [C013]. Estetik deneyim açısından tablo, "yüce" (sublime) bir sarsıntıdan çok, düzenli bir renk akorunun ve sahne düzeninin verdiği dekoratif hazza yönelir; bu, Rokoko beğenisinin özelliklerindendir (yorum) [C014][C023]. Ancak bu haz, bastırılan ahlaki anlatı sayesinde rahatsız edici bir alt akıntı taşır: izleyici, güzelliğe bakarken aynı zamanda bir suçun sahnesine bakar (yorum) [C013][C031]. Ders bu ikiliği çözmaz; estetik haz ile etik rahatsızlığın birlikte var olduğunu beyan eder (yorum) [C013].
+
+## 8. Karşılaştırmalı metodoloji
+
+İki versiyonu karşılaştırırken beş eksen kullanılır: baş (cepheden ↔ profil), saç (incili topuz + başörtüsü ↔ dağınık sarı saç), havuz (yuvarlatılmış ↔ dikdörtgen), mimari (kavisli ↔ düzleme paralel), Davud (yok ↔ zorlukla görünen gözetleyen) [C015][C018][C024]. Bu eksenler SMB'nin kendi karşılaştırmalı betiminden alınmıştır; görsel inceleme yapılmadığı için doğrulama insan editöre kalır (belirsiz) [C047] (belirsiz).
+
+Terminoloji ayrımı önemlidir: "versiyon" aynı konunun farklı kompozisyonu (Berlin ↔ Budapeşte); "replika" aynı kompozisyonun tekrarı (Budapeşte'nin iki replikası); "kopya" ise başka bir elden çıkma olabilir [C017][C019]. "Zumindest die eine eigenhändig" ihtiyatı, replikaların otomatik olarak Ricci'ye atfedilemeyeceğini gösterir [C019]. Karşılaştırma önerileri: Budapeşte versiyonu (aynı konu, farklı kompozisyon); Palazzo Mocenigo tavanları (aynı müze, erken dönem); Susanna/Lucretia/Kleopatra betimleri (ahlaki dersin beden övgüsüne dönüşmesi geleneği) [C017][C027][C013].
+
+## 9. Akademik tartışmaların envanteri
+
+Aşağıdaki ihtilaflar (D) ve belirsizlikler (E) açık tutulur; hiçbiri kesin cevaplı soruya girmez:
+
+| Kod | Konu | Durum |
+|---|---|---|
+| D1 | Boyut 111,8×144,3 (SMB) ↔ 109×142 (WGA/WD) | Birincil esas; WD ref zinciri Commons→WGA (tartışma) [C033] (tartışma) |
+| D2 | Berlin um 1725 ↔ itwiki 1726; "c.1720" eşleşmiyor | Birincil um 1725 (tartışma) [C034] (tartışma) |
+| D3 | Budapeşte 1724 (müze) ↔ itwiki c.1720 (atıfsız) | Müze 1724 (tartışma) [C035] (tartışma) |
+| D4 | Replikalar Budapeşte (SMB) ↔ Berlin (jawiki) | SMB Budapeşte; jawiki yanlış okuma adayı (tartışma) [C036] (tartışma) |
+| D5 | Hizmetçi 4 (WGA) ↔ 5 (itwiki); SMB sayı vermez | Açık; görsel inceleme yok (tartışma) [C037] (tartışma) |
+| D6 | Data "sağdaki genç haberci" ↔ birincil "soldaki kadın" | Birincil esas; data spekülasyonu (tartışma) [C038] (tartışma) |
+| D7 | Budapeşte 118,5×199 ↔ WGA 119×199 | Müze esas; yuvarlama (tartışma) [C039] (tartışma) |
+| D8 | "Geç Barok" ↔ "Rokoko" ↔ "pastel" | Rokoko birincil destekli; pastel desteklenmiyor (tartışma) [C040] (tartışma) |
+
+Belirsizlikler: data görsel ayrıntıları (altın vazo, hayvan başlı çeşme, "mermer havuz", el saçta, bilezik, selviler, bulutlu gökyüzü, korkuluk, turuncu/sarı elbise, pembe yastık) metin kaynaklarıyla doğrulanamadı; WD P180 kısmi destek verir, "mermer" itwiki'de karyatid içindir, havuz için değil (belirsiz) [C041] (belirsiz). Berlin sergi salonu kayıtta yok (belirsiz) [C042] (belirsiz). Replika yerleri bilinmiyor (belirsiz) [C043] (belirsiz). itwiki dosya adı yanıltıcı (belirsiz) [C044] (belirsiz). Molmenti 1909 künyesi erişilmedi (belirsiz) [C045] (belirsiz). en/de/fr madde yok; itwiki Budapeşte hakkında (belirsiz) [C046] (belirsiz). Görsel incelenmedi; GZ TASLAK (belirsiz) [C047] (belirsiz). WD P140=Christianity olağandışı; kullanılmadı (belirsiz) [C048] (belirsiz).
+
+Bu envanterin yöntemsel dersi şudur: yapılandırılmış veri (WD P180 "depicts" listesi) bir görsel inceleme yerine geçmez. WD, Berlin versiyonu için fountain, tap, jewelry box, cushion, statue, pearl, necklace, drapery, sitting, Black people, domestic worker gibi öğeleri listeler; bunlar data'nın görsel iddialarıyla kısmen örtüşür ama hiçbirinin renk, konum ve biçim ayrıntısını doğrulamaz (belirsiz) [C041] (belirsiz). Örneğin "mermer havuz" iddiası için WD'de malzeme nitelemesi yoktur; "mermer" yalnızca itwiki'nin karyatid betiminde geçer [C041] (belirsiz). Dolayısıyla görsel ayrıntı iddiaları, doğru eser görseli incelenene kadar E seviyesinde tutulur ve kesin gözlem olarak yazılmaz (belirsiz) [C047] (belirsiz). Bu, AKADEMİK_STANDART §6'nın doğrudan uygulamasıdır: kanıt yoksa üretme [C041] (belirsiz).
+
+## 10. Küratöryel anlatı — birleştirici okuma
+
+İdeal sergileme, Berlin ve Budapeşte versiyonlarını yan yana getirir; böylece baş/saç/havuz/mimari farkları ve Davud'un yokluğu/varlığı doğrudan görünür olur [C015][C018][C024]. Etiket şu katmanları taşımalıdır: künye (um 1725, tuval, 111,8×144,3, envanter 454); atıf tarihi (sözde Veronese 1764–73 → Ricci 20. yy başı, Molmenti 1909); konu (2 Samuel; mektuplu haberci); yorum (ahlaki dersin geri plana itilmesi, Schleier) [C002][C005][C006][C008][C009][C012][C013]. İhtilaflar (boyut, hizmetçi sayısı, replika atfı) etikette beyan edilmelidir (tartışma) [C033] (tartışma)[C037] (tartışma)[C036] (tartışma). Görsel hakları ayrıdır: Berlin PDM 1.0 (Christoph Schmidt); Budapeşte müze fotoğrafları © [C028][C029]. "Pastel" gibi desteklenmemiş data ifadeleri etikete taşınmamalıdır (tartışma) [C040] (tartışma).
+
+## 11. Seminer etkinlikleri
+
+1. D1 boyut ihtilafını kaynak hiyerarşisi ve WD referans zinciri üzerinden çözün (tartışma) [C033] (tartışma).
+2. itwiki/jawiki versiyon karıştırmalarını (D2/D3/D4) belgeleyin (tartışma) [C034] (tartışma)[C035] (tartışma)[C036] (tartışma).
+3. Haberci figürü üzerinden data–birincil çelişkisini (D6) ikonografik yöntemle tartışın (tartışma) [C038] (tartışma).
+4. Schleier'in "ahlaki dersin bastırılışı" yorumunu Susanna/Lucretia/Kleopatra geleneğiyle ve modern bakış eleştirisiyle değerlendirin (yorum) [C013].
+5. "Geç Barok / Rokoko / pastel" etiketlerini kaynaklarla sınayın (tartışma) [C040] (tartışma).
+
+## 12. Kaynakça
+
+- S2 SMB birincil (obj-865260, DE+EN, Schleier 2019; 200, 2026-11-14; Denetim B'de yeniden açıldı).
+- S1 WD Q19863024; S12 WD Q50890343; S13 etiketler (yardımcı).
+- S3 jawiki wikitext; S4 itwiki wikitext (Budapeşte maddesi); S5 WGA Berlin; S6 WGA Budapeşte.
+- S7w MFAB Wayback 2024-07-08; S8w Szépművészeti Wayback 2022-12-03 (canlı 520).
+- S9/S10/S11 Commons görsel metadata (İNCELENMEDİ); S14 yerel data (salt-okunur).
+- Metne erişilmeyen kitaplar (yalnızca erişilen kayıtlarda anıldı): Daniels 1976 (Rizzoli); Santucci 2008 (Akkuaria, ISBN 978-88-89418-96-3); NHK Berlin galerisi kitabı (Kadokawa, 1993, s.109, ISBN 4-04-650901-5); Ōshima'nın İncil okumaları kitabı (Sekai Bunkasha, 2013, s.72, ISBN 978-4-418-13223-2); Pigler 1967 (s.578); Schleier 2019 (metni SMB'de); "Molmenti 1909" (künye yok). İki Japonca kitabın özgün başlıkları brief'te kayıtlıdır (CJK yazılmadı).
+- Ayrıntılı envanter: `KANIT_DOSYASI.md`; brief `.qwen/tmp/parti4/Q19863024-brief.md`.

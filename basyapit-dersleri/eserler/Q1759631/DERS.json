@@ -1,0 +1,537 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1759631",
+ "sanatci_id": "masaccio",
+ "baslik": "Vergi Parası",
+ "ozgun_baslik": "The Tribute Money (Pagamento del tributo)",
+ "kunye": {
+  "sanatci": "Masaccio",
+  "sanatci_yasam": "1401–1428",
+  "tarih": "1420'ler (başlangıç 1424)",
+  "tarih_belirsizlik": "K1/K3 1420'ler; K2/K4 1424; resmî belge yok (C003)",
+  "teknik": "Fresk",
+  "boyut_cm": {
+   "yukseklik": 255,
+   "genislik": 598
+  },
+  "muze": "Brancacci Şapeli, Santa Maria del Carmine (Musei Civici Fiorentini), Floransa",
+  "envanter": "birincil kaynaktan doğrulanamadı",
+  "edinim": "in situ; Felice Brancacci siparişi (1420'ler, K1)",
+  "konum": "Şapel, Petrus döngüsü",
+  "telif_durumu": "Kamu malı (Masaccio ö.1428); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:The_Tribute_Money_Masaccio_Cappella_Brancacci.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Masaccio ö.1428)",
+  "dogrulama": {
+   "yontem": "1600px indirildi; BU OTURUMDA İNCELENEMEDİ (vision köprüsü bütçesi tükendi)",
+   "cozunurluk": "1920×1276 kaynak; 1600px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre kaldı (C028); kompozisyon betimi K2/K3 kaynaklı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 406
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1300
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2564
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-şapel-ve-sipariş-brancacci-papalık-floransa"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-masaccionun-devrimi-perspektif-ve-ışık"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-üç-zamanlı-anlatı-jestlerin-grameri"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-petrusun-yükselişi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-32-giornata-ve-renk-hacim"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Masaccio, 1420'ler, fresk, Brancacci) ve sipariş bağlamını açıklar.",
+  "Tek nokta perspektifi ve chiaroscuro devrimini analiz eder.",
+  "Üç zamanlı sürekli anlatıyı ve jest gramerini çözümler.",
+  "Pro-papal program ve Petrus ikonografisini yorumlar.",
+  "Atıf/konu teorileri, boyut ve görsel teyit sınırlarını kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tek nokta perspektifi",
+   "tanim": "Çizgilerin tek kaçış noktasında birleşmesi; burada İsa'nın başı.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Chiaroscuro",
+   "tanim": "Belirli kaynaktan ışık-gölgeyle hacim; Masaccio'nun devrimi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Atmosferik perspektif",
+   "tanim": "Uzak nesnelerin soluklaşmasıyla derinlik; antik tekniğin yeniden bulunuşu.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Giornata",
+   "tanim": "Freskte günlük parça; burada 32.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Sürekli anlatı",
+   "tanim": "Ardışık olmayan zamanların tek yüzeyde birleşimi; jest/bakışla okunur.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: The Tribute Money / Pagamento del tributo / Vergi Parası",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Masaccio",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: 1420'ler (K1/K3); başlangıç 1424 (K2/K4); K2 resmî belge yok, dolaylı tanıklık",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: fresk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 255×598 cm (yalnız WD; ikincil metinlerde doğrulanamadı)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Brancacci Şapeli, Santa Maria del Carmine, Floransa; in situ; Musei Civici Fiorentini yönetimi",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Döngü: Aziz Petrus'un hayatı; sahne Matta 17:24–27 (balığın ağzındaki para, tapınak vergisi)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Şapel c.1366/7 Pietro Brancacci kurucusu; Felice 1423–1425 Masolino siparişi; Petrus aile koruyucusu; Büyük Bölünme'de Roma papalığı desteği",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Masolino 1425 Macaristan / 1427 Roma; Masaccio 1427/28 Roma; şapeli 1480'lerde Filippino Lippi tamamladı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1746 üst register Vincenzo Meucci overpaint; 1771 yangını fresklere zarar; 1981–1990 restorasyon; a secco kayıplar (ağaç yaprakları, İsa'nın azure parlaklığı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Üç eşzamanlı episod: merkez vergi talebi, solda balıktan para, sağda ödeme; ardışık olmayan sürekli anlatı; jest/bakış sistemi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İsa'nın başı = kaçış noktası; tek nokta perspektifinin ilk örneklerinden; karşı duvar Masolino Tabitha aynı şema ama anlamsız odak",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Yarım daire (apsis yansıması); head-cluster terk; figürlerin etrafında dolaşılabilir mekân",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Vergi memuru kutsal alanın dışında; vermilion kısa tunik; sırtı dönük, yüzü gölgede (empî figür konvansiyonu); soldaki Petrus küçük/yalnız",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Memurun pozları Petrus'u ters açıdan kopyalar → üç boyutluluk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Atmosferik perspektif: dağlar + soldaki Petrus daha soluk; antik Roma tekniği, Masaccio yeniden buldu; Donatello/Brunelleschi ile öncü",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Birleşik ışık sağdan (şapel penceresi); chiaroscuro ile heykelsi hacim",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "32 giornata; hacim çizgi değil ışık/renkle; hızlı beyaz lumeggiature; devrim Filippino çağında terk edildi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "İsa ve Petrus başları Masolino (K3) ↔ \"tümüyle Masaccio\" (K3) — atıf gerilimi",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Michelangelo, ödeyen Petrus'u kopyaladı (Münih Kupferstichkabinett drawing)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Konu seçimi teorileri: catasto 1427 (olası değil, Brancacci kaybederdi) ↔ Martin V 1423 anlaşması (daha olası)",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C022",
+   "ifade": "Pro-papal program: Petrus ilk papa/vekil; Konstanz 1418 bölünmeyi bitirdi; Kilise'nin rehber rolü; Floransa-Milano savaşı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Felice ipek tüccarı, Deniz Konsülleri Kurulu; Floransa zenginliği denizden okuması",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "K2 yorumu: vergi Musa'nın fidyesi (Romalı değil); gerçek mucize Petrus'un imanı; İsa fidye verecek olan",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "K2 yorumu: mekân kurgusunda Donatello, San Giorgio rölyefi (1416–17) etkisi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Giotto'nun sivri kaya (Bizans) geleneğini kırar; gerçekçi dağlar/bulutlar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "1436 Felice sürgün; freskler kesildi, Brancacci portreleri tahrip edildi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel bu oturumda incelenemedi (vision köprüsü bütçesi tükendi); kompozisyon betimi K2/K3'ten — görsel teyit insan editöre kaldı",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "Görsel kamu malı (Masaccio ö.1428); Commons PD; geçici kopya .qwen/tmp/parti1/Q1759631/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Bibliyografya: K2 Vasari (Le Vite) alıntısı; K3 Smarthistory — tam metinler erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "K1 resmî: döngü, tüccar Felice Brancacci tarafından Masolino ve Masaccio'ya 1420'lerde sipariş edildi",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Musei Civici Fiorentini / MUS.E",
+   "belge": "The Brancacci Chapel — resmî sayfa",
+   "url": "https://www.musefirenze.it/en/musei/cappella-brancacci",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Pagamento del tributo — kaynaklı madde (Vasari alıntılı)",
+   "url": "https://it.wikipedia.org/wiki/Pagamento_del_tributo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Tribute Money (Masaccio) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/The_Tribute_Money_(Masaccio)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q1759631 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q1759631",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "The Tribute Money Masaccio Cappella Brancacci.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Tribute_Money_Masaccio_Cappella_Brancacci.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1600px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Ağıt",
+   "sanatci": "Giotto",
+   "kurum": "Scrovegni Şapeli, Padova",
+   "mufredat_ici": true,
+   "gerekce": "Duygusal diyagonal ↔ geometrik merkez; iki hacim dili (yorum).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "eser": "Tabitha'nın Dirilişi",
+   "sanatci": "Masolino",
+   "kurum": "Brancacci Şapeli (karşı duvar)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı perspektif şeması, anlamsız kaçış noktası; dağılım ↔ birleşim.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "eser": "San Giorgio rölyefi",
+   "sanatci": "Donatello",
+   "kurum": "Orsanmichele, Floransa",
+   "mufredat_ici": false,
+   "gerekce": "Mekân kurgusu etkisi (K2 yorumu).",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarihi tek yıl ise → 1420'ler / 1424 başlangıç aralığı önerilir (K1/K2/K3).",
+  "Boyut 255×598 yalnız WD (C005 E); birincil/ikincil teyit gerekli.",
+  "Müze alanı: \"Brancacci Şapeli, Santa Maria del Carmine (Musei Civici Fiorentini), Floransa\" önerilir (K1).",
+  "Baş atfı (Masolino/Masaccio) ve konu teorileri D; görsel teyit bu oturumda yapılamadı (C028) — insan editör zorunlu."
+ ]
+}

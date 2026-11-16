@@ -1,0 +1,599 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3705703",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Polo Museale Fiorentino'nun resmî katalog scheda'sı (N. Cat. 00156026) eseri hangi başlıkla kaydeder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "trasporto di Cristo al sepolcro"
+    },
+    {
+     "harf": "B",
+     "metin": "Deposizione"
+    },
+    {
+     "harf": "C",
+     "metin": "Entombment"
+    },
+    {
+     "harf": "D",
+     "metin": "Deposition from the Cross"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 birincil scheda'nın başlık alanı: \"Pontormo / trasporto di Cristo al sepolcro / dipinto\"; ders turunda yeniden açılıp doğrulandı (A).",
+   "yanlis_gerekceleri": {
+    "B": "\"Deposizione\" İtalyanca Vikipedi'nin geleneksel adıdır; itwiki bu adı \"talvolta detto 'Deposizione' erroneamente\" diye eleştirir; birincil katalog başlığı değildir.",
+    "C": "\"Entombment\" Smarthistory'nin (2014 arşivi) kullandığı addır; birincil katalogda geçmez.",
+    "D": "\"Deposition from the Cross\" İngilizce Vikipedi ve Friends of Florence belgelerinin adıdır; resmî katalog başlığı \"trasporto di Cristo al sepolcro\"dur."
+   },
+   "kanit": [
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil katalog boyutu nasıl kaydeder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "192 × 313 cm (genişlik × yükseklik)"
+    },
+    {
+     "harf": "B",
+     "metin": "313 × 192 mm"
+    },
+    {
+     "harf": "C",
+     "metin": "123 × 76 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "313 × 192 cm (yükseklik × genişlik)"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S4: \"(Altezza per Larghezza) 313 x 192\" — yükseklik 313, genişlik 192 cm (A); S10 künyesi de \"313 x 192 cm\" der.",
+   "yanlis_gerekceleri": {
+    "A": "Scheda \"Altezza per Larghezza\" (yükseklik × genişlik) sırasını açıkça belirtir; 192 yükseklik değildir.",
+    "B": "Birim cm'dir; söz konusu olan yaklaşık üç metrelik bir sunak tablosudur, 313 mm'lik bir panel değil.",
+    "C": "123 × 76 değerleri Smarthistory'nin inç cinsinden karşılığıdır (≈313 × 192 cm); cm olarak okunamaz."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Aşağıdakilerden hangisi eserin envanter numarasıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Alinari 4708"
+    },
+    {
+     "harf": "B",
+     "metin": "Brogi 19916"
+    },
+    {
+     "harf": "C",
+     "metin": "N. Cat. 00156026"
+    },
+    {
+     "harf": "D",
+     "metin": "SBAS FI 24668"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S4'te \"N. Cat. 00156026\" envanter alanıdır; Wikidata P2242 de \"00156026\" verir (A).",
+   "yanlis_gerekceleri": {
+    "D": "SBAS FI 24668, katalogun listelediği siyah-beyaz fotoğraf arşivi numarasıdır; eser envanteri değildir.",
+    "A": "Alinari 4708, tarihsel fotoğraf arşivi künyesidir; envanter alanı değildir.",
+    "B": "Brogi 19916 da fotoğraf arşivi künyesidir; envanter N. Cat. 00156026'dır."
+   },
+   "kanit": [
+    "C003",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "2017–18 restorasyonunun basın bültenine göre Pontormo bu eserde hangi bağlayıcıyı kullandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hayvansal tutkal (glue tempera)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yumurta akı ile karıştırılmış tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Bezir yağı (yağlıboya)"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnız yumurta sarısı"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S10: \"The artist painted with tempera mixed with egg whites, not with oils as art historians had thought\"; S3 \"tempera all'uovo, albume e tuorlo\" der (B).",
+   "yanlis_gerekceleri": {
+    "C": "Bezir yağı, restorasyon öncesi sanat tarihi varsayımıydı; bülten \"not with oils\" diyerek bunu düzeltir (itwiki bezir yağını Carmignano Visitation için anar).",
+    "D": "İtalyanca madde bağlayıcıyı \"albume e tuorlo\" (ak ve sarı) olarak verir; yalnız sarı değildir.",
+    "A": "Bülten ve itwiki tutkal değil yumurta temperası bildirir; analizlerde hayvansal tutkal bağlayıcı rapor edilmedi."
+   },
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tabla desteğinin yapısı kaynaklarda nasıl betimlenir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Altı kavak tahta; üç \"(probably)\" karaçam çapraz kayıt"
+    },
+    {
+     "harf": "B",
+     "metin": "Altı meşe tahta; üç çam çapraz kayıt"
+    },
+    {
+     "harf": "C",
+     "metin": "Üç kavak tahta; altı karaçam çapraz kayıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Tek parça kavak blok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 (Rossi): \"six poplarwood planks displaying a subradial cut … three original (probably) larchwood cross-pieces\"; S9 \"tavola di pioppo\" der (B).",
+   "yanlis_gerekceleri": {
+    "B": "Destek ağacı kavaktır (poplar/pioppo), meşe değil; çapraz kayıt için kaynak \"(probably) larchwood\" der.",
+    "C": "Sayılar yer değiştirmiş: destek altı tahtadan oluşur, çapraz kayıt üç adettir.",
+    "D": "Panel tek blok değil birleştirilmiş tahtalardır; birleşim yerlerinde X-ray'de küçük dikdörtgen ahşap parçalar görülür."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Sunak resminin orijinal oyma yaldızlı ahşap çerçevesini kim yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Filippo Brunelleschi"
+    },
+    {
+     "harf": "B",
+     "metin": "Domenico Stagi"
+    },
+    {
+     "harf": "C",
+     "metin": "Guillaume de Marcillat"
+    },
+    {
+     "harf": "D",
+     "metin": "Baccio d'Agnolo"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S10: \"a gilded wooden frame carved by Baccio d'Agnolo\"; S9 \"cornice in legno dorato magistralmente intagliata da Baccio d'Agnolo\"; S3 \"cornice lignea originale, di Baccio d'Agnolo\" (B).",
+   "yanlis_gerekceleri": {
+    "A": "Brunelleschi şapelin mimarisine atfedilir (Barbadori ailesi için); çerçeve oymacısı değildir.",
+    "B": "Stagi, 1766'da yıkılan kubbenin yerine c.1780'de trompe-l'œil kubbe dekorasyonunu yapan kişidir.",
+    "C": "Marcillat, şapeldeki Deposition + Entombment vitrayının ustasıdır; çerçeveyle ilgisi yoktur."
+   },
+   "kanit": [
+    "C022",
+    "C014",
+    "C034",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Pontormo'nun kubbe freski (Dio Padre + dört Patriarch) neden kayıptır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2017–18 restorasyonunda vernik altında kayboldu"
+    },
+    {
+     "harf": "B",
+     "metin": "Palazzo Capponi alle Rovinate'ye taşındı"
+    },
+    {
+     "harf": "C",
+     "metin": "Kubbe 1766'da tribünleri büyütmek için yıkıldı/alçaltıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "1966 Floransa selinde söküldü"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S10: \"These were demolished in 1766 to enlarge the grated tribunes\"; S9 kubbenin 18. yy ikinci yarısında alçaltıldığını ve Pontormo freskinin yok olduğunu doğrular (B).",
+   "yanlis_gerekceleri": {
+    "D": "1966 selinde sökülüp fiberglass desteğe alınan, pencere duvarındaki Annunciation freskidir; kubbe freski değil.",
+    "A": "2017–18'de kubbede görünür kılınan Pontormo freski değil, Stagi'nin c.1780 trompe-l'œil dekorasyonudur.",
+    "B": "Palazzo Capponi alle Rovinate'ye taşınan Marcillat'ın vitrayıdır; kubbe freski taşınmadı, yıkımla yok oldu."
+   },
+   "kanit": [
+    "C034",
+    "C036",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Waldman'ın bankacının copialettere'sine dayandırdığı belgeli tarih, Marcillat vitrayının tamamlanması için neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1736–39 renovasyonunda yeniden yapıldı"
+    },
+    {
+     "harf": "B",
+     "metin": "Eylül 1526'ya kadar tamamlanmıştı"
+    },
+    {
+     "harf": "C",
+     "metin": "1528'de, şapel dekorasyonuyla birlikte"
+    },
+    {
+     "harf": "D",
+     "metin": "1525'te, şapelin satın alınmasıyla aynı yıl"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S11: \"completed by September 1526, according to the banker's copialettere … the only securely dated work in the entire project\" (B).",
+   "yanlis_gerekceleri": {
+    "C": "1528, Vasari'nin üç yıllık çalışma anlatısına dayanan şapel dekorasyonunun tamamlanma yılıdır; vitrayın belgeli tarihi değildir.",
+    "D": "1525, Capponi'nin şapeli satın aldığı yıldır; vitray için belgeli olan Eylül 1526 tarihidir.",
+    "A": "1736–39 Ruggieri renovasyonudur; vitrayın orijinali bu dönemde kaldırıldı, yeniden yapılmadı (şapeldeki bir kopyadır)."
+   },
+   "kanit": [
+    "C037",
+    "C012",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Lodovico Capponi şapelin adanışını neye çevirdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Annunciation'dan Pietà'ya"
+    },
+    {
+     "harf": "B",
+     "metin": "Pietà'dan Annunciation'a"
+    },
+    {
+     "harf": "C",
+     "metin": "San Carlo Borromeo'ya"
+    },
+    {
+     "harf": "D",
+     "metin": "Aziz Yuhanna'ya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11: \"altered its dedication from the Annunciation to the Pieta\"; S9 \"titolandola alla Pietà\"; şapel aile mozolesi olarak kullanıldı (B).",
+   "yanlis_gerekceleri": {
+    "B": "Yön ters: ilk adanış Annunciation idi, Capponi Pietà'ya çevirdi.",
+    "C": "San Carlo Borromeo, c.1620'de Annunciation duvarına yerleştirilen mermer reliquary-tabernacle'ın adandığı kişidir; şapelin adanışı değildir.",
+    "D": "Aziz Yuhanna, altarpiece kompozisyonunda Meryem'i destekleyen figür ve tondolardan biridir; şapel adanışı değildir."
+   },
+   "kanit": [
+    "C015",
+    "C046",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Reflektografi analizi eserde nerede pentimenti (değişiklik izi) gösterdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meryem'in mavi mantosunun kıvrımlarında"
+    },
+    {
+     "harf": "B",
+     "metin": "Çerçevenin altın varaklarında"
+    },
+    {
+     "harf": "C",
+     "metin": "Kubbe freskinin Patriarch figürlerinde"
+    },
+    {
+     "harf": "D",
+     "metin": "İsa'nın yüzünde ve öndeki sol meleğin bacak konumunda"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S10: \"pentimenti on the Christ figure's face and the position of the angel's leg in the foreground on the left\" (B).",
+   "yanlis_gerekceleri": {
+    "A": "Manto için kaynaklar pigment ve velatura bilgisi verir (azurit + lapis lazuli); pentimenti bildirilen bölge değildir.",
+    "B": "Çerçevedeki sorunlar tahta kurtları, varak kalkması ve tozdu; reflektografi panelin boyalı yüzeyine uygulanır.",
+    "C": "Kubbe freski 1766'da yok oldu; reflektografi analizi sunak tablosu üzerinde yapıldı."
+   },
+   "kanit": [
+    "C041",
+    "C023",
+    "C022",
+    "C034"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Birincil katalog scheda'sı eseri \"trasporto di Cristo al sepolcro\" olarak kaydeder.",
+   "dogru": true,
+   "aciklama": "Doğru (S4): başlık alanı doğrudan okundu ve ders turunda yeniden doğrulandı; \"Deposizione\"/\"Deposition\"/\"Entombment\" ikincil adlardır.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil katalog scheda'sı eserin bağlayıcısını ve destek ağacını açıkça kaydeder.",
+   "dogru": false,
+   "aciklama": "Yanlış: scheda'da teknik/destek alanı yok; kayıt başlık, \"dipinto\", \"Firenze\", boyut ve fotoğraf arşivi künyeleriyle sınırlı. Yumurta temperası ve kavak tabla bilgisi 2017–18 restorasyonunun kurumsal belgelerinden gelir (B); bu yüzden teknik A düzeyinde doğrulanmış değildir.",
+   "kanit": [
+    "C002",
+    "C004",
+    "C005",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Destek altı kavak tahtadan oluşur; çapraz kayıtlar için kaynak \"probably\" karaçam der.",
+   "dogru": true,
+   "aciklama": "Doğru (S7): \"six poplarwood planks … three original (probably) larchwood cross-pieces\"; kuşku işareti aynen korunmuştur.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Şapeldeki Annunciation freski 1966 Floransa selinden sonra sökülüp fiberglass desteğe alınmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (S10): \"After the catastrophic flood in 1966 … detached and transferred to a fiberglass support\"; 2017–18 restorasyonunda yeniden sabitlendi.",
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eserde haç ve merdiven görünür; bu yüzden sahne klasik bir çarmıhtan indiriliştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (S2/S3): \"No cross is visible\"; itwiki haç bulunmadığı için \"trasporto di Cristo\" + \"compianto\" demeyi önerir. Adlandırma tartışmalıdır; bu soru tartışmaya değil, haçın görünmediği olgusuna dayanır.",
+   "kanit": [
+    "C029"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil katalog (S4) ile ikincil/kurumsal kaynakların bilgi katmanlarını ayırın: hangi künye alanları A, hangileri B/E? Gerekçelendirin.",
+   "beklenen_ogeler": [
+    "başlık + dipinto + boyut + Firenze + hami notu = A",
+    "tarih ve teknik birincilde yok",
+    "tarih B ve ihtilaflı (1525–28 ↔ 1526–28)",
+    "teknik B (restorasyon bülteni), A düzeyi yok",
+    "NscCompleto 404 → yalnız nscTroncato"
+   ],
+   "kanit": [
+    "C002",
+    "C004",
+    "C005",
+    "C011",
+    "C020",
+    "C083",
+    "C084"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "oil ↔ tempera (ve canvas ↔ kavak tabla) ihtilafını kaynak tarih damgalarıyla değerlendirin; hangi kayıt neden eski varsayımı taşıyor?",
+   "beklenen_ogeler": [
+    "Smarthistory 2014 arşivi \"oil on panel\"",
+    "WD P186 Commons importu 2018-07-04 (oil + canvas)",
+    "FoF 27 Mart 2018 bülteni \"not with oils\"",
+    "itwiki \"albume e tuorlo\"",
+    "birincil katalogda teknik alanı yok → hakem yok",
+    "güncel kurumsal pozisyon: yumurta temperası + kavak tabla"
+   ],
+   "kanit": [
+    "C063",
+    "C020",
+    "C021",
+    "C084",
+    "C085",
+    "C090"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Ad/konu tartışmasını (trasporto ↔ Deposizione ↔ Entombment ↔ Pietà) ve Efkaristiya hipotezini karşılaştırın; hangisi olgu, hangisi yorum?",
+   "beklenen_ogeler": [
+    "resmî başlık \"trasporto di Cristo al sepolcro\"",
+    "haç görünmez → trasporto + compianto",
+    "pietà \"dissociata\"",
+    "Natali: mensa + \"pane degli angeli\" (yorum, kitaba erişilmedi)",
+    "Waldman \"removal from his mother's lap\"",
+    "S7 yön belirsiz: \"It is not clear whether…\"",
+    "data başlığı tartışmanın tarafı"
+   ],
+   "kanit": [
+    "C064",
+    "C029",
+    "C051",
+    "C038",
+    "C079",
+    "C087"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Otoportre iddiasını kanıt düzeyleri açısından çözümleyin; alternatif hipotezleri ve betim çelişkilerini sıralayın.",
+   "beklenen_ogeler": [
+    "\"forse\" (Berti) / \"Legend has it\" / \"supposed\"",
+    "bültenin daha kesin ifadesi",
+    "alternatif: İsa (Pucci pala S. Jacopo) ve S. Giovanni (S. Rossi 2012)",
+    "33 yaş argümanı",
+    "turban ↔ bere ↔ yeşil başlık ↔ data kahverengi",
+    "görsel teyit gerekli (GZ TASLAK)"
+   ],
+   "kanit": [
+    "C076",
+    "C072",
+    "C080",
+    "C086"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Maniyerizm etiketi ve alımlama kronolojisi ihtilaflarını tartışın; Cianchi'nin \"capolavoro eccentrico\" tezini kurumsal \"primo manierismo\" ifadesiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "Rapino \"uno dei testi capitali del primo manierismo\"",
+    "Rossi \"symbol of Florentine Mannerist painting\"",
+    "Cianchi: Maniyerizm bir kuşak sonraki kodlanmış üslup",
+    "Vasari'nin gölgesiz renk itirazı",
+    "19. yy popülerlik ↔ 20. yy \"maledetto\" miti",
+    "WD P135 referansı blog (zayıf)"
+   ],
+   "kanit": [
+    "C066",
+    "C068",
+    "C043",
+    "C024",
+    "C085"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği öndeki iki taşıyıcıyı bulun: hangisi çömelmiş, hangisi ayakta ve bakışları nereye yöneliyor?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3/S10/S7): bacakları tutan çömelmiş, omuzları tutan ayakta; ikisi de parmak uçlarında ve izleyiciye bakıyor.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Meryem'in mavi mantosunun yüzeyde kapladığı alanı ve onu çevreleyen kadınları saymayı deneyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S7/S3): manto resmin büyük kısmını (\"three-quarters\") kaplar; Meryem dört kadınla çevrilidir ve yüksek bir konumda oturur.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kompozisyonun dikey eksenini ve figürlerin bindiği yapay tepeyi arayın; bakış açısı aşağıdan yukarı mı?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S7/S10): \"strongly vertical feel\", \"gazing upwards\", \"artificial 'stage set' hill\" / \"jagged hillside\".",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Gökyüzündeki tek bulutu ve zemindeki gölgeli parça ile kırışık örtüyü arayın; \"yalnızca bulut\" betimi yeterli mi?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S2/S7): \"a lonely cloud and a shadowed patch of ground with a crumpled sheet\"; bulut pembemsi sizing altından güneş yansımasıyla aydınlanır. Data'nın \"yalnızca bulut\" ifadesi tartışmalıdır.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Palet içinde açık/çelik mavisini, şeker pembesini ve yeşilleri ayırt edin; gölgeler ne kadar güçlü, ışık hangi yönden?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S7/S3): ışık sağdan, gölgeler minimum; azurit + lapis lazuli, madder lake pembeler, malakit + copper resinate yeşiller; hemen her pigment kurşun beyazı ile.",
+   "kanit": [
+    "C023",
+    "C024"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Pontormo (Jacopo Carucci, 1494–1557); resmî başlık \"trasporto di Cristo al sepolcro\"; N. Cat. 00156026; c.1525–1528; yumurta temperası, kavak tabla; 313 × 192 cm; Santa Felicita, Capponi Şapeli sunağı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C009",
+    "C010",
+    "C011",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Hami ve kronoloji?",
+   "arka": "Lodovico Capponi şapeli 1525'te Bernardo Paganelli'den 200 florine aldı; adanışı Annunciation'dan Pietà'ya çevirdi; Vasari'ye göre Pontormo üç yıl kapalı çalıştı, iş 1528'de tamamlandı; 30 Temmuz 1527 vasiyetnamesi şapeli \"restaurata, ordinata et dotata\" olarak tanımlar.",
+   "kanit": [
+    "C006",
+    "C007",
+    "C012",
+    "C015",
+    "C016",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik ve malzeme?",
+   "arka": "Yumurta temperası (ak + sarı; 2018 analizleri \"not with oils\"); 6 kavak tahta + 3 \"(probably)\" karaçam çapraz kayıt; karton yöntemi (kömür / ince stylus); pigmentler kurşun beyazı + azurit/lapis/vermilyon/madder/malakit; Baccio d'Agnolo çerçeve.",
+   "kanit": [
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C040"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Şapel programı?",
+   "arka": "Kayıp kubbe freski (Dio Padre + 4 Patriarch; 1766 yıkımı, Stagi c.1780); 4 Evangelist tondosu (Pontormo + Bronzino; Luka/Markos Bronzino'ya atfedilme eğiliminde); Annunciation (pencere duvarı; 1966 seli → fiberglass); Marcillat vitrayı (Eylül 1526 belgeli; orijinal Palazzo Capponi alle Rovinate, şapelde kopya).",
+   "kanit": [
+    "C034",
+    "C035",
+    "C036",
+    "C037"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Restorasyon ve alımlama?",
+   "arka": "Mart 2017 – 28 Mart 2018; Daniele Rossi, Rapino gözetimi, Dyson desteği, ~105.000 €; reflektografide İsa'nın yüzü + sol meleğin bacağı pentimenti; önceki: 1935 Vermeghen, 1936 Paris, 1960–70'ler vernik; Vasari beğenmedi, 19. yy'da popülerlik kazandı.",
+   "kanit": [
+    "C039",
+    "C041",
+    "C042",
+    "C043"
+   ]
+  }
+ ]
+}

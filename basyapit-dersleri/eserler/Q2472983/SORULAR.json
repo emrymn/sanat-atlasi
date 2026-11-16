@@ -1,0 +1,557 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2472983",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Basilica di San Giorgio Maggiore, Venedik"
+    },
+    {
+     "harf": "B",
+     "metin": "Santa Maria della Salute, Venedik"
+    },
+    {
+     "harf": "C",
+     "metin": "San Marco Bazilikası, Venedik"
+    },
+    {
+     "harf": "D",
+     "metin": "Scuola Grande di San Rocco, Venedik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5/K1: ICCD LUOGO DI CONSERVAZIONE Basilica di S. Giorgio Maggiore; Wikidata P195/P276=Q713558.",
+   "yanlis_gerekceleri": {
+    "B": "Salute, Venedik'te farklı bir kilisedir; ICCD koruma yeri San Giorgio Maggiore'dir.",
+    "C": "San Marco Bazilikası farklı bir yapıdır; kaynaklar San Giorgio Maggiore'yi işaret eder.",
+    "D": "Scuola Grande di San Rocco, Tintoretto'nun başka bir döngüsüne ev sahipliği yapar; bu tuval orada değildir."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "ICCD birincil kaydına göre teknik/destek?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "tela/pittura a olio (tuval üzerine yağlıboya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "D",
+     "metin": "Tahta üzerine yağlıboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: MATERIA E TECNICA \"tela/ pittura a olio\".",
+   "yanlis_gerekceleri": {
+    "B": "ICCD destek olarak tela (tuval) verir; ahşap pano ve tempera kayıtlı değildir.",
+    "C": "Fresk duvar tekniğidir; eser tuval üzerine yağlıboyadır.",
+    "D": "Destek tahta değil tuvaldir (tela)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "ICCD ulusal katalog kodu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "0500123375"
+    },
+    {
+     "harf": "B",
+     "metin": "0700377383"
+    },
+    {
+     "harf": "C",
+     "metin": "0900288152"
+    },
+    {
+     "harf": "D",
+     "metin": "0500277038"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: CODICE DI CATALOGO NAZIONALE 0500123375.",
+   "yanlis_gerekceleri": {
+    "B": "0700377383, aynı scheda sayfasındaki \"Scipione Clusone con paggio\" kaydının kodudur.",
+    "C": "0900288152, aynı sayfadaki \"Leda e il cigno\" kaydının kodudur.",
+    "D": "0500277038, aynı sayfadaki başka bir Venedik eserinin kodudur."
+   },
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sahne hangi anı gösterir (WGA/FU Berlin/itwiki)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Efkaristiya'nın kurulması (transubstantiation)"
+    },
+    {
+     "harf": "B",
+     "metin": "İhanetin ilanı (\"biriniz beni ele verecek\")"
+    },
+    {
+     "harf": "C",
+     "metin": "Ayakların yıkanması"
+    },
+    {
+     "harf": "D",
+     "metin": "Ekmeklerin çoğaltılması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6/K7/K3: sahne Efkaristiya'nın kurulması/transubstantiation; itwiki Leonardo'nun ilan sahnesiyle karşıtlık kurar.",
+   "yanlis_gerekceleri": {
+    "B": "İhanetin ilanı Leonardo'nun Son Akşam Yemeği'nin odağıdır; itwiki bu eserin o anı göstermediğini belirtir.",
+    "C": "Ayakların yıkanması farklı bir İncil episode'udur; bu sahne için kaynaklarda anılmaz.",
+    "D": "Ekmeklerin çoğaltılması farklı bir mucize sahnesidir; konu Son Akşam Yemeği'dir."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Masanın oblik/diyagonal yerleşimi neyle açıklanır (WGA)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Presbiterio sağ duvarındaki konum; masa ana sunağın perspektif uzantısı"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuvalin sonradan yanlış kesilmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Leonardo'nun cepheden kurgusuna öykünme"
+    },
+    {
+     "harf": "D",
+     "metin": "Rönesans simetri kuralının uygulanması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: \"curious diagonal position ... right wall of the presbytery ... extension in perspective of the high altar\".",
+   "yanlis_gerekceleri": {
+    "B": "Kesilme iddiası kaynaklarda yok; oblik düzen bilinçli bir mekân kurgusudur.",
+    "C": "Eser Leonardo'nun cepheden kurgusundan kopar; öykünme değil karşıtlık vardır.",
+    "D": "Simetri kuralı uygulanmaz; kompozisyon radikal biçimde asimetriktir."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "ICCD'ye göre melekler nasıl betimlenir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salt ışıktan, saydam varlıklar"
+    },
+    {
+     "harf": "B",
+     "metin": "Katı bedenli, opak figürler"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca sembolik, figürsüz ışık halkaları"
+    },
+    {
+     "harf": "D",
+     "metin": "Heykel formunda kanatlı bedenler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: \"Anche gli angeli sono raffigurati come entità puramente luminose e trasparenti\".",
+   "yanlis_gerekceleri": {
+    "B": "ICCD melekleri opak değil \"puramente luminose e trasparenti\" (salt ışık, saydam) betimler.",
+    "C": "Melekler figürsüz halkalar değil, betimlenmiş varlıklar (entità) olarak görünür.",
+    "D": "Heykel formunda katı bedenler değil, ışık-bedenler söz konusudur."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Karşı duvardaki eş sahne (ICCD)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gli Ebrei che Rifiutano la Manna nel Deserto"
+    },
+    {
+     "harf": "B",
+     "metin": "The Entombment"
+    },
+    {
+     "harf": "C",
+     "metin": "Susanna"
+    },
+    {
+     "harf": "D",
+     "metin": "Il Paradiso"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: NOTIZIE \"Gli Ebrei che Rifiutano la Manna nel Deserto nella parete di fronte\".",
+   "yanlis_gerekceleri": {
+    "B": "The Entombment aynı şapeldeki üç tuvalden biridir ama karşı duvar değil; ICCD karşı duvarı Manna olarak verir.",
+    "C": "Susanna, Tintoretto'nun farklı bir konusudur; bu döngünün karşı duvarı değildir.",
+    "D": "Il Paradiso farklı bir eserdir; ICCD karşı duvar kaydı Manna'dır."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Ivanoff okumasında sağ ön plandaki adam ne yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kadının kupada sunduğu manayı reddeder"
+    },
+    {
+     "harf": "B",
+     "metin": "Ekmek uzatan İsa'ya uzanır"
+    },
+    {
+     "harf": "C",
+     "metin": "Masadan tabak toplar"
+    },
+    {
+     "harf": "D",
+     "metin": "Kandili yakar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: Ivanoff \"l'uomo che, in primo piano sulla destra, rifiuta ... la manna offerta nella coppa dalla donna\".",
+   "yanlis_gerekceleri": {
+    "B": "Ekmek uzatan İsa'dır; reddeden figür sağ ön plandaki adamdır.",
+    "C": "Tabak toplama hizmetkârların eylemidir; Ivanoff okumasının reddeden figürü değildir.",
+    "D": "Kandili yakma eylemi bu figür için kaynaklarda anılmaz."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "WGA'ya göre 1592'de kutsanan şapeldeki üç tuval?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The Jews in the Desert, The Last Supper, The Entombment"
+    },
+    {
+     "harf": "B",
+     "metin": "The Last Supper, The Entombment, Il Paradiso"
+    },
+    {
+     "harf": "C",
+     "metin": "San Marcuola, San Felice, San Giorgio Last Supper'ları"
+    },
+    {
+     "harf": "D",
+     "metin": "Crowning with Thorns, Passover, Last Supper"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: \"three surviving paintings placed in a chapel consacrated in 1592 - The Jews in the Desert, The Last Supper and The Entombment\".",
+   "yanlis_gerekceleri": {
+    "B": "Il Paradiso bu şapel üçlüsünde değildir; WGA üçlüyü Jews/Last Supper/Entombment sayar.",
+    "C": "Bunlar farklı kiliselerdeki önceki versiyonlardır (atıfsız); şapel üçlüsü değildir.",
+    "D": "Crowning with Thorns ve Passover model eserlerdir; şapelde asılı üç tuval değildir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kompozisyonun bütünü hangi modeli izler (WGA)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giulio Romano'nun Passover duvar halısı"
+    },
+    {
+     "harf": "B",
+     "metin": "Leonardo'nun Son Akşam Yemeği duvar resmi"
+    },
+    {
+     "harf": "C",
+     "metin": "Dürer'in Son Akşam Yemeği tahta baskısı"
+    },
+    {
+     "harf": "D",
+     "metin": "Michelangelo'nun bir freski"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: \"the composition ... follows a wall hanging by Giulio Romano depicting the Passover\".",
+   "yanlis_gerekceleri": {
+    "B": "Leonardo bir karşıtlık örneğidir (cepheden kurgu); kompozisyon modeli değil.",
+    "C": "Dürer tahta baskısı cepheden geleneğin örneğidir (enwiki, atıfsız); model değil.",
+    "D": "Michelangelo freski kaynaklarda model olarak anılmaz."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser San Giorgio Maggiore Bazilikası'ndadır (Venedik).",
+   "dogru": true,
+   "aciklama": "Doğru (K5/K1): ICCD koruma yeri + Wikidata P195.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "ICCD scheda'sında açık bir yaratım tarihi/kronoloji alanı bulunur.",
+   "dogru": false,
+   "aciklama": "Yanlış (K5): scheda'da kronoloji alanı yok; yalnız \"Una delle ultime opere (1594)\" notu; tarih ihtilaflı (C035).",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "ICCD kaydına göre eser Katolik dinî kurum mülkiyetindedir ve Soprintendenza Venezia kataloglamıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (K5): CONDIZIONE GIURIDICA + ENTE SCHEDATORE.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kaynakların betimlediğine göre sahnede hizmetkârlar, kadınlar, köpek ve kedi gibi gündelik öğeler bulunur.",
+   "dogru": true,
+   "aciklama": "Doğru (K5): Comparse/Animali listeleri.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eserin boyutları kaynaklar arasında çelişkilidir.",
+   "dogru": false,
+   "aciklama": "Yanlış: erişilen tüm kaynaklar 365×568 cm'de birleşir (C004); ihtilaflı olan tarih/yerleşim/otografidir.",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "1563 ↔ 1592–94 tarih ihtilafını kaynak zinciriyle analiz edin; 1563'ün neden E olduğunu gerekçelendirin.",
+   "beklenen_ogeler": [
+    "data/WD 1563 precision 9",
+    "Zeri 44056 + Guida 2019 s.88 erişilemedi",
+    "WGA/wiki/Commons 1592–94",
+    "ICCD \"Una delle ultime opere (1594)\"",
+    "data içi çelişki",
+    "SIGEC PDF timeout"
+   ],
+   "kanit": [
+    "C035",
+    "C039",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Presbiterio yerleşimi ↔ oblik masa ilişkisini ve data \"arkası\" uyuşmazlığını değerlendirin.",
+   "beklenen_ogeler": [
+    "presbiterio sağ duvarı",
+    "sunak perspektif uzantısı",
+    "Schrägsicht",
+    "data \"arkası\" desteklenmiyor",
+    "data ozet \"yan duvar\""
+   ],
+   "kanit": [
+    "C007",
+    "C036",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Otografi tartışmasını kaynak eleştirisiyle tartışın (WGA kesinliği ↔ ICCD atıf belirsizliği).",
+   "beklenen_ogeler": [
+    "WGA \"certainly himself\"",
+    "ICCD \"largo intervento di aiuti\"",
+    "hangi yazarlar belirsiz",
+    "atölye yardımcıları",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C017",
+    "C016",
+    "C039"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"Duman→melek\" (data) ↔ \"ışık→melek\" (kaynaklar) uyuşmazlığını ve görsel teyit gereğini yazın.",
+   "beklenen_ogeler": [
+    "data duman formülasyonu",
+    "FU Berlin ışık/ateş",
+    "Rauchgefäß nüansı",
+    "ICCD luminose",
+    "görsel İNCELENEMEDİ"
+   ],
+   "kanit": [
+    "C037",
+    "C010",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Origenes hipotezini felsefi yorum olarak değerlendirin; sanatçıya etki atfetmenin sınırını tartışın.",
+   "beklenen_ogeler": [
+    "açıkça hipotez",
+    "Stoichita erişilmedi",
+    "Lomazzo 1585",
+    "\"Leider weiß man wenig\"",
+    "etki atfı yok",
+    "C yorum"
+   ],
+   "kanit": [
+    "C023",
+    "C029",
+    "C043"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Masanın oblik/diyagonal eksenini ve İsa'ya doğru uzanışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: posizione obliqua (ICCD); ışık diyagonali sol üst→sağ alt (FU Berlin).",
+   "kanit": [
+    "C008",
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "İki ışık kaynağını ayırt edin: tavandan sarkan kandil ve İsa'nın haresi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: luminismo (ICCD); üç mertebe dünyevi/kutsal/ruhsal (FU Berlin).",
+   "kanit": [
+    "C009",
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Yarı saydam, salt ışıktan melekleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: entità puramente luminose e trasparenti (ICCD); hızlı eskiz çizgileri (FU Berlin).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Gündelik figürleri (tabak taşıyan kadın, hizmetkârlar) ve hayvanları (köpek, kedi) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ICCD Comparse Donne/Uomini; Animali Cane/Gatto.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sağ ön planda kupayı reddeden adamı ve manna sunan kadını bulun (Ivanoff okuması).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ICCD NOTIZIE, manna reddi; karşı duvar Manna paralelliği.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Ultima cena; Jacopo Robusti detto Tintoretto; tela/pittura a olio; 365×568 cm; San Giorgio Maggiore, Venedik; ICCD 0500123375.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Tarih?",
+   "arka": "WGA/wiki/Commons 1592–1594 (itwiki \"intorno al\"); ICCD \"Una delle ultime opere (1594)\". Data/WD 1563 ihtilafı ayrı beyan (C035).",
+   "kanit": [
+    "C005",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Konu + tipoloji?",
+   "arka": "Efkaristiya'nın kurulması (transubstantiation), ihanetin ilanı değil; karşı duvar Manna (typos); Ivanoff: manna reddi.",
+   "kanit": [
+    "C011",
+    "C014",
+    "C015",
+    "C032"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Işık + melekler?",
+   "arka": "Kandil + İsa'nın haresi (luminismo); üç mertebe (dünyevi/kutsal/ruhsal); melekler salt ışık, saydam, hızlı eskiz.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Modeller + bağlam?",
+   "arka": "Giulio Romano Passover halısı (kompozisyon); Titian Crowning with Thorns (kandil, Alte Pinakothek); Palladio kilisesi 1566–1600; 1592 şapel; Karşı Reform didaktik işlev.",
+   "kanit": [
+    "C018",
+    "C016",
+    "C012"
+   ]
+  }
+ ]
+}

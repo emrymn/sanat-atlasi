@@ -1,0 +1,555 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q19863024",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Berlin Batşeba tablosu hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gemäldegalerie, Staatliche Museen zu Berlin (env. 454)"
+    },
+    {
+     "harf": "B",
+     "metin": "Museum of Fine Arts, Budapeşte (env. 57.9)"
+    },
+    {
+     "harf": "C",
+     "metin": "Galleria degli Uffizi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée du Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 birincil: Einrichtung Gemäldegalerie, Ident. Nr. 454 (C006).",
+   "yanlis_gerekceleri": {
+    "B": "Budapeşte (MFAB, env. 57.9) Ricci'nin aynı konulu İKİNCİ versiyonudur (1724); Berlin tablosu değil (C017).",
+    "C": "Uffizi bu eserin koleksiyonu değildir; birincil kayıt Gemäldegalerie Berlin'i gösterir (C006).",
+    "D": "Louvre bu eserin koleksiyonu değildir; eser Berlin'dedir (C006)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil SMB kaydına göre Berlin tablosunun tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"um 1725\" (circa 1725)"
+    },
+    {
+     "harf": "B",
+     "metin": "1720"
+    },
+    {
+     "harf": "C",
+     "metin": "1726"
+    },
+    {
+     "harf": "D",
+     "metin": "1724"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: Datierung \"um 1725\"; EN \"circa 1725\" (C002).",
+   "yanlis_gerekceleri": {
+    "B": "1720, itwiki'nin Budapeşte versiyonuna verdiği atıfsız tarihtir; Berlin için hiçbir birincil kayıtla eşleşmez (C035/C034).",
+    "C": "1726 itwiki'nin Berlin için verdiği tarihtir ama birincil \"um 1725\" ile çelişir (C034).",
+    "D": "1724 Budapeşte versiyonunun müze kayıtlı tarihidir; Berlin'in değil (C017)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil SMB kaydının \"Material / Technik\" alanı neyi açıkça belirtir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval (Leinwand)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlı boya (oil on canvas)"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: Material/Technik \"Leinwand\"; bağlayıcı (yağ) bu alanda açıkça yazmaz (C003).",
+   "yanlis_gerekceleri": {
+    "B": "\"Oil on canvas\" WGA ve Wikidata'dan gelir; birincil teknik alanında açıkça geçmez (C004).",
+    "C": "Destek ahşap pano değil, tuvaldir (C003).",
+    "D": "Eser fresk (duvar resmi) değil, tuval üzerine tablodur (C003)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Berlin sahnesinde Batşeba–Davud öyküsünü tanımlayan figür hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "En solda, arka planda Davud'un aşk mektubunu taşıyan kadın haberci"
+    },
+    {
+     "harf": "B",
+     "metin": "Sarayın mazgallarından gözetleyen Kral Davud"
+    },
+    {
+     "harf": "C",
+     "metin": "En sağda ayna tutan genç erkek"
+    },
+    {
+     "harf": "D",
+     "metin": "Mücevher kutusu uzatan hizmetçi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"Botin mit Davids Liebesbrief ganz links im Hintergrund\" konuyu tanımlar (C012).",
+   "yanlis_gerekceleri": {
+    "B": "Davud figürü Berlin tablosunda YOKTUR; geleneksel betimdeki gözetleyen kral burada yer almaz (C011).",
+    "C": "Birincil kayıt haberciyi en soldaki kadın olarak tanımlar; data'nın \"sağdaki genç haberci\" spekülasyonu birincille çelişir (C038).",
+    "D": "Mücevher kutusu uzatan figür konuyu tanımlayan mektupla ilişkili değildir; birincil konuyu yalnız mektuplu kadın haberciye bağlar (C012)."
+   },
+   "kanit": [
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "II. Friedrich tabloyu Sanssouci için hangi atıfla satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sözde Veronese olarak (putative Veronese)"
+    },
+    {
+     "harf": "B",
+     "metin": "Sebastiano Ricci olarak"
+    },
+    {
+     "harf": "C",
+     "metin": "Titian olarak"
+    },
+    {
+     "harf": "D",
+     "metin": "Tintoretto olarak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"als vermeintlichen Veronese\" / \"as a putative Veronese\" (C008).",
+   "yanlis_gerekceleri": {
+    "B": "Ricci atfı ancak 20. yy başında yapıldı; satın alım sırasında eser Veronese sanılıyordu (C009).",
+    "C": "Kayıtlarda Titian atfı yoktur; sözde atıf Veronese'dir (C008).",
+    "D": "Tintoretto esintileri itwiki'nin üslup yorumudur; satın alma atfı Veronese'dir (C008)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Tablonun gerçek yazarı (Ricci) ne zaman belirlendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "20. yüzyıl başında (Molmenti 1909)"
+    },
+    {
+     "harf": "B",
+     "metin": "1764–1773 satın alımı sırasında"
+    },
+    {
+     "harf": "C",
+     "metin": "1829/30 müzeye devirde"
+    },
+    {
+     "harf": "D",
+     "metin": "1931 kataloğunda"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 EN: \"true author was identified only in the early 20th century (Molmenti 1909)\" (C009).",
+   "yanlis_gerekceleri": {
+    "B": "1764–1773'te eser sözde Veronese olarak alındı; Ricci bilinmiyordu (C008).",
+    "C": "1829/30 devri sahiplik aktarımıdır; atıf düzeltmesi değil (C007).",
+    "D": "1931 kataloğu \"Toilette der Venus\" adını kullanır; Ricci atfı 20. yy başındadır (C010/C009)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "1830–1921 Berlin kataloglarında tablo hangi adla anıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Nach dem Bade\" (After the Bath)"
+    },
+    {
+     "harf": "B",
+     "metin": "\"Toilette der Venus\" (The Toilet of Venus)"
+    },
+    {
+     "harf": "C",
+     "metin": "\"Bathseba im Bade\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Susanna im Bade\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: 1830–1921 katalogları \"Nach dem Bade\"; 1931 \"Toilette der Venus\" (C010).",
+   "yanlis_gerekceleri": {
+    "B": "\"Toilette der Venus\" 1931 kataloğunun adıdır; 1830–1921 aralığının değil (C010).",
+    "C": "\"Bathseba im Bade\" güncel başlıktır; eski kataloglar konuyu gizleyen adlar kullanmıştır (C010).",
+    "D": "Susanna, SMB'nin karşılaştırdığı farklı bir konudur; bu tablonun katalog adı değildir (C013)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "SMB birincil metnine göre bilinen iki replika hangi tabloya aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Budapeşte versiyonuna"
+    },
+    {
+     "harf": "B",
+     "metin": "Berlin versiyonuna"
+    },
+    {
+     "harf": "C",
+     "metin": "Her iki versiyona"
+    },
+    {
+     "harf": "D",
+     "metin": "Hiçbirine"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"Von diesem Bild [Budapest] sind zwei Repliken bekannt…\" (C019).",
+   "yanlis_gerekceleri": {
+    "B": "jawiki replikaları Berlin'e bağlar ama birincil metin Budapeşte'yi işaret eder; jawiki yanlış okuma adayıdır (C036).",
+    "C": "Birincil metin replikaları tek bir tabloya (Budapeşte) bağlar; her ikisine değil (C019).",
+    "D": "Birincil metin iki replikanın varlığını açıkça belirtir (C019)."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Budapeşte versiyonunun MFAB kayıtlı künyesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1724; 118,5×199 cm; env. 57.9; oil on canvas"
+    },
+    {
+     "harf": "B",
+     "metin": "1725; 111,8×144,3 cm; env. 454"
+    },
+    {
+     "harf": "C",
+     "metin": "1720; 109×142 cm; env. 57.9"
+    },
+    {
+     "harf": "D",
+     "metin": "1726; 119×199 cm; env. 454"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7w MFAB: Date 1724; 118.5×199 cm; Inventory 57.9; oil on canvas (C017).",
+   "yanlis_gerekceleri": {
+    "B": "Bu künye Berlin versiyonunundur (um 1725; 111,8×144,3; env. 454); Budapeşte'nin değil (C005/C006).",
+    "C": "1720 itwiki'nin atıfsız Budapeşte tarihidir; müze 1724 der (C035).",
+    "D": "1726 itwiki'nin Berlin tarihi, 454 Berlin envanteridir; Budapeşte künyesiyle karıştırılmıştır (C034/C017)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "SMB/Schleier yorumuna göre öykünün ahlaki dersi karşısında ne öne çıkar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kadın bedeninin güzelliğine övgü"
+    },
+    {
+     "harf": "B",
+     "metin": "Davud'un zina suçu için cezalandırılması"
+    },
+    {
+     "harf": "C",
+     "metin": "Urias'ın savaş kahramanlığı"
+    },
+    {
+     "harf": "D",
+     "metin": "Banyonun ritüel arındırıcı anlamı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/Schleier: ahlaki ders \"ganz zurückgedrängt zugunsten der huldigenden Darstellung der Schönheit des weiblichen Körpers\" (C013).",
+   "yanlis_gerekceleri": {
+    "B": "Ahlaki ders (Davud'un cezalandırılması) geri plana itilmiştir; öne çıkan değil (C013).",
+    "C": "Urias öyküde Davud'un gönderdiği kurbandır; kahramanlık övgüsü yoktur (C031).",
+    "D": "Ritüel abdest okuması itwiki'nin Budapeşte betimidir; Berlin için SMB'nin vurgusu güzellik övgüsüdür (C025/C013)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Berlin Batşeba tablosu kamusal Gemäldegalerie Berlin'dedir (env. 454).",
+   "dogru": true,
+   "aciklama": "Doğru (S2 birincil; C006).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "SMB birincil kaydı tekniği \"yağlı boya\" (oil on canvas) olarak açıkça yazar.",
+   "dogru": false,
+   "aciklama": "Yanlış: SMB teknik alanı yalnız \"Leinwand\" (tuval) der; \"oil on canvas\" WGA/WD kaynaklıdır (C003/C004).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Berlin sahnesinde Kral Davud, saray mazgallarından gözetleyen figür olarak vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Berlin'de Davud figürü yoktur; konuyu mektuplu kadın haberci tanımlar. Davud'un Budapeşte versiyonunda bulunduğu bir yorumdur (C024).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Tablo 1829/30'da Kraliyet Prusya Sarayları'ndan müzeye devredildi.",
+   "dogru": true,
+   "aciklama": "Doğru (S2 Erwerbung; C007).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tablonun boyutu tüm kaynaklarda aynıdır (111,8×144,3 cm).",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil 111,8×144,3; WGA/WD 109×142 der (D1, C033). Birincil esas alınır.",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 boyut ihtilafını (111,8×144,3 ↔ 109×142) kaynak hiyerarşisi ve WD referans zinciri üzerinden çözün.",
+   "beklenen_ogeler": [
+    "birincil SMB Bildmaß",
+    "WGA/WD 109×142",
+    "WD ref Commons Yorck→WGA",
+    "birincil esas",
+    "ihtilafı beyan"
+   ],
+   "kanit": [
+    "C005",
+    "C033",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "itwiki/jawiki versiyon karıştırmalarını (D2/D3/D4) ve görev başlığındaki \"c.1720\" hatasını belgeleyin.",
+   "beklenen_ogeler": [
+    "itwiki Budapeşte maddesi",
+    "Berlin um 1725 ↔ itwiki 1726",
+    "Budapeşte 1724 ↔ itwiki c.1720",
+    "replika Budapeşte ↔ jawiki Berlin",
+    "c.1720 eşleşmiyor"
+   ],
+   "kanit": [
+    "C034",
+    "C035",
+    "C036",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Haberci figürü üzerinden data–birincil çelişkisini (D6) ve ikonografik tanımlama yöntemini tartışın.",
+   "beklenen_ogeler": [
+    "data sağdaki genç spekülasyonu",
+    "birincil soldaki kadın haberci",
+    "WGA ayna tutan oğlan",
+    "mektup = ikonografik anahtar",
+    "ihtiyat korunur"
+   ],
+   "kanit": [
+    "C012",
+    "C038",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Schleier'in \"ahlaki dersin bastırılışı\" yorumunu Susanna/Lucretia/Kleopatra geleneği ve modern bakış/rıza eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "müze yorumu (A)",
+    "güzellik övgüsü",
+    "çarşaf paradoksu",
+    "izleyici kralın yerine",
+    "modern yorum = C",
+    "anakronizm riski"
+   ],
+   "kanit": [
+    "C013",
+    "C016",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "\"Geç Barok / Rokoko / pastel\" üslup etiketlerini kaynaklarla sınayın (D8).",
+   "beklenen_ogeler": [
+    "SMB festlich-heiter Weiß-Gelb-Blau-Rot",
+    "pastel birincilde yok",
+    "Budapeşte müzesi Rokoko",
+    "WGA Giordano→Tiepolo köprüsü",
+    "data dogrulandi yeniden değerlendir"
+   ],
+   "kanit": [
+    "C040",
+    "C023",
+    "C022",
+    "C014"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "En solda, arka planda Davud'un mektubunu taşıyan kadın haberciyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): \"Botin … ganz links im Hintergrund\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Batşeba'nın cepheden başını, incili topuzunu ve arkadan başörtüsünü inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): pearl-studded hairstyle, headscarf.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Hizmetçinin gerdiği beyaz çarşafı ve arkadan görülen figürü bulun; izleyiciyi mekâna sokan öğeyi tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): weißes Laken + Rückenfigur.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Havuzun yanlardan yuvarlatılmış biçimini ve kavisli, nişli/pilasterli arka plan duvarını izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): rounded basin, curved white wall.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Beyaz-sarı-mavi-kırmızı renk akorunu ve görkemli giysileri Veronese çağrışımıyla inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (SMB): Weiß-Gelb-Blau-Rot-Klang.",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Berlin Batşeba künyesi?",
+   "arka": "Sebastiano Ricci (1659–1734); um 1725; tuval (Leinwand); 111,8×144,3 cm; Gemäldegalerie Berlin, env. 454; kamusal müze.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + tanımlayıcı figür?",
+   "arka": "2 Samuel 11–12 Batşeba–Davud; Berlin'de Davud YOK; konuyu en solda arka planda mektup taşıyan kadın haberci (Botin) tanımlar.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance + atıf tarihi?",
+   "arka": "II. Friedrich 1764–1773 Sanssouci için sözde Veronese aldı; 1829/30 Prusya saraylarından devir; Ricci atfı 20. yy başı (Molmenti 1909); eski adlar Nach dem Bade (1830–1921) / Toilette der Venus (1931).",
+   "kanit": [
+    "C007",
+    "C008",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Berlin ↔ Budapeşte farkları?",
+   "arka": "Budapeşte: 1724, 118,5×199, env. 57.9; profil + dağınık sarı saç; dikdörtgen havuz; düzleme paralel mimari; 2 replika (≥1 eigenhändig). Berlin: cepheden baş + incili topuz; yuvarlatılmış havuz; kavisli mimari.",
+   "kanit": [
+    "C017",
+    "C018",
+    "C019",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Üslup + müze yorumu?",
+   "arka": "Venedik Rönesans villası; Veronese çağrışımı (beyaz-sarı-mavi-kırmızı akoru); SMB/Schleier: ahlaki ders geri planda, kadın bedeninin güzelliğine övgü (Susanna/Lucretia/Kleopatra çizgisi).",
+   "kanit": [
+    "C014",
+    "C013"
+   ]
+  }
+ ]
+}

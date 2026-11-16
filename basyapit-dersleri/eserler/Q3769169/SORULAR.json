@@ -1,0 +1,562 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3769169",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi, Floransa (D29)"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo di Capodimonte, Napoli"
+    },
+    {
+     "harf": "C",
+     "metin": "Palazzo Pitti, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Palazzo Barberini, Roma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 birincil kayıt: Museum \"The Uffizi\", Location \"D29. Caravaggio and Artemisia\"; Q3769169 Floransa versiyonudur.",
+   "yanlis_gerekceleri": {
+    "B": "Capodimonte, Napoli versiyonunun (Q2247406) yeridir; Floransa versiyonu Uffizi'dedir.",
+    "C": "Pitti Sarayı tarihsel konumdur (İncil kahramanları koleksiyonu); güncel sergileme Uffizi D29'dur.",
+    "D": "Palazzo Barberini, Caravaggio'nun Judith'ini barındırır; Artemisia'nın Floransa versiyonunu değil."
+   },
+   "kanit": [
+    "C001",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Uffizi envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1890 n. 1567"
+    },
+    {
+     "harf": "B",
+     "metin": "1567 n. 1890"
+    },
+    {
+     "harf": "C",
+     "metin": "D29 n. 1567"
+    },
+    {
+     "harf": "D",
+     "metin": "1890 n. 1612"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: Inventory \"1890 n. 1567\"; WD P217 \"1567\" + P580 1890.",
+   "yanlis_gerekceleri": {
+    "B": "Sayılar ters çevrilmiş; kayıt 1890 serisi, numara 1567'dir.",
+    "C": "D29 salon kodudur, envanter serisi değil.",
+    "D": "1612 Napoli versiyonunun tarihidir; envanter numarası değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil Uffizi kaydına göre boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "146.5 × 108 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "199 × 162.5 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "158.8 × 125.5 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "146 × 108 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2 birincil kayıt \"Size 146.5 x 108 cm\" der; itwiki infobox 146,5×108 ile uyumludur. D001 ihtilafı çözülmemiştir; soru birincil kayda göredir.",
+   "yanlis_gerekceleri": {
+    "B": "WD/Commons/WGA zincirinin değeridir; birincil kayıtla çelişir (D001).",
+    "C": "Napoli versiyonunun (Q2247406) boyutudur.",
+    "D": "itwiki lead'in yuvarlak ifadesidir; infobox ve birincil kayıt 146,5 der (E009)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Konunun metinsel kaynağı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Judith Kitabı (deuterokanonik)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ovidius Metamorphoses"
+    },
+    {
+     "harf": "C",
+     "metin": "Genesis"
+    },
+    {
+     "harf": "D",
+     "metin": "Altın Efsane (Legenda Aurea)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3: \"deuterocanonical Book of Judith\"; S2 konu betimi Judith/Holofernes.",
+   "yanlis_gerekceleri": {
+    "B": "Metamorphoses mitolojik dönüşümlerdir; Judith sahnesi değil.",
+    "C": "Genesis yaratılış ataöyküsüdür; Judith anlatısı değil.",
+    "D": "Legenda Aurea azizler derlemesidir; bu eserin kaynağı Judith Kitabı'dır."
+   },
+   "kanit": [
+    "C008",
+    "C035"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Judith'e yardım eden hizmetçi kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Abra"
+    },
+    {
+     "harf": "B",
+     "metin": "Susanna"
+    },
+    {
+     "harf": "C",
+     "metin": "Maria Maddalena"
+    },
+    {
+     "harf": "D",
+     "metin": "Prudentia"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S3: Judith'e hizmetçisi Abra yardım eder; Garrard Abra'yı Judith'in aynası olarak betimler.",
+   "yanlis_gerekceleri": {
+    "B": "Susanna, Artemisia'nın başka bir eserinin (Susanna and the Elders) konusudur.",
+    "C": "Maria Maddalena, Cosimo II'nin eşidir; sipariş varyasyonuyla ilişkilidir.",
+    "D": "Prudentia Montone, Artemisia'nın annesidir."
+   },
+   "kanit": [
+    "C008",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Tabloyu kim ısmarladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cosimo II de' Medici"
+    },
+    {
+     "harf": "B",
+     "metin": "II. Ferdinando de' Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Galileo Galilei"
+    },
+    {
+     "harf": "D",
+     "metin": "Roberto Longhi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 (Garrard-2020): \"commissioned by Grand Duke Cosimo II de' Medici\"; S4 rehber-2019; S2 ödeme anlaşması Cosimo II ile.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar siparişçiyi Cosimo II olarak verir; bu isim desteklenmez.",
+    "C": "Galileo, ödeme arabulucusudur; siparişçi değil.",
+    "D": "Longhi, 1916'da yorumlayan eleştirmendir; siparişçi değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Geciken ödemenin alınmasında kim arabuluculuk etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Galileo Galilei"
+    },
+    {
+     "harf": "B",
+     "metin": "Roberto Longhi"
+    },
+    {
+     "harf": "C",
+     "metin": "Agostino Tassi"
+    },
+    {
+     "harf": "D",
+     "metin": "Orazio Gentileschi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"with the help of her friend Galileo Galilei … extract the payment, with a significant delay\".",
+   "yanlis_gerekceleri": {
+    "B": "Longhi 20. yy eleştirmenidir; ödemeyle ilgisi yok.",
+    "C": "Tassi, dava figürüdür; ödeme arabulucusu değil.",
+    "D": "Orazio, sanatçının babasıdır; kaynaklar arabulucuyu Galileo olarak verir."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Kılıç kabzası hangi biçime gönderme yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Haç"
+    },
+    {
+     "harf": "B",
+     "metin": "Hilal"
+    },
+    {
+     "harf": "C",
+     "metin": "Taç"
+    },
+    {
+     "harf": "D",
+     "metin": "Zambak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 (Garrard-1989): kılıç \"noticeably vertical and shaped in a way that alludes to a cross\".",
+   "yanlis_gerekceleri": {
+    "B": "Hilal biçimi kaynaklarda geçmez; betim haç çağrışımıdır.",
+    "C": "Taç göndermesi kaynaklı betimde yok.",
+    "D": "Zambak göndermesi bu betimde yok; kabza haç biçimlidir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Uffizi'ye göre Artemisia'nın akademi başarısı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Floransa Desen Akademisi'ne kabul edilen ilk kadın"
+    },
+    {
+     "harf": "B",
+     "metin": "Roma Accademia di San Luca'ya kabul edilen ilk kadın"
+    },
+    {
+     "harf": "C",
+     "metin": "İngiltere'de ilk kadın saray ressamı"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi'de ödül alan ilk kadın"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"the first woman to enter the Academy of Art and Design in Florence\" (yıl verilmez).",
+   "yanlis_gerekceleri": {
+    "B": "Kaynak Floransa Desen Akademisi'ni belirtir; Roma San Luca değil.",
+    "C": "İngiltere seyahati anılır ama \"ilk kadın saray ressamı\" iddiası kaynakta yok.",
+    "D": "Uffizi ödülü değil, akademi kabulü anılır."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Napoli versiyonunun (Q2247406) tarihi ve yeri nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "c. 1612–1613, Capodimonte"
+    },
+    {
+     "harf": "B",
+     "metin": "c. 1620, Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "c. 1598–99, Palazzo Barberini"
+    },
+    {
+     "harf": "D",
+     "metin": "c. 1618, Palazzo Pitti"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 infobox: year c. 1612–1613, 158.8×125.5 cm, Museo Capodimonte, Napoli (Gardner-2013).",
+   "yanlis_gerekceleri": {
+    "B": "Bu, Floransa versiyonunun (Q3769169) tarih ve yeridir.",
+    "C": "Caravaggio'nun Judith'inin tarih ve yeridir.",
+    "D": "Judith and Her Maidservant'ın Pitti versiyonunun tarihidir."
+   },
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Q3769169 Uffizi/Florence versiyonudur; Napoli versiyonu ayrı bir eserdir (Q2247406).",
+   "dogru": true,
+   "aciklama": "Doğru: S1 it desc Uffizi'yi, S8 pageprops Q2247406'yı gösterir.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Uffizi kaydı, tablonun Floransa'da yedi yıl geçirdikten sonra Roma'da tamamlandığını söyler.",
+   "dogru": true,
+   "aciklama": "Doğru (S2): \"completed in Rome … after spending seven years in Florence\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Cosimo II 1621'de, tablo tamamlandıktan kısa süre sonra öldü.",
+   "dogru": true,
+   "aciklama": "Doğru (S2): \"who died in 1621 shortly after the great canvas was completed\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Uffizi kaydı, eserin Floransa'ya varışında Gallery'de sergilenme onuru bulduğunu söyler.",
+   "dogru": false,
+   "aciklama": "Yanlış (S2): sergilenme onuru REDDEDİLDİ (\"denied the honor of being exhibited in the Gallery\").",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Akademiye kabul yılı bu brief'te 1616 olarak doğrulanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: S2 yıl vermez; data'daki 1616 bu brief'te doğrulanmadı (E008).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D001 boyut ihtilafını kaynak hiyerarşisi ve metadata en-boy oranı çıkarımıyla analiz edin.",
+   "beklenen_ogeler": [
+    "birincil 146.5×108",
+    "WD/Commons 199×162.5",
+    "oran 0.813/0.822 ≈ 0.817",
+    "görsel incelenmedi",
+    "çözülmedi"
+   ],
+   "kanit": [
+    "C005",
+    "C026",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Biyografik/otoportre okumasının gerekçelerini ve itirazlarını (Garrard ↔ Pollock/Ciletti) değerlendirin; anakronizm riskini tartışın.",
+   "beklenen_ogeler": [
+    "travma paralelliği",
+    "gendered defiance",
+    "Pollock/Ciletti itirazı",
+    "sürekli anım imgeyi sınırlar",
+    "anakronizm"
+   ],
+   "kanit": [
+    "C022",
+    "C042",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Barthes'ın \"iki kadın\" ve \"toplumsal fark\" okumasını ikonografik gelenekle karşılaştırın.",
+   "beklenen_ogeler": [
+    "İncil'de hizmetçi dışarıda",
+    "iki kadın ortak emek",
+    "padrona/serva farkı",
+    "Abra aynası"
+   ],
+   "kanit": [
+    "C046",
+    "C017",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "D004 görsel lisans riskini (PD-Art ↔ fotoğraf CC BY-NC-SA) ve GAP alternatifini değerlendirin.",
+   "beklenen_ogeler": [
+    "PD etiketi",
+    "fotoğraf CC BY-NC-SA 2.0",
+    "NC riski",
+    "GAP PD alternatif",
+    "PD-Art ayrımı"
+   ],
+   "kanit": [
+    "C032",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Eserin yer değiştirme episodlarını (varış reddi, Pitti köşesi, Grand Duchess, 1993, D29) kronoloji belirsizliğiyle yeniden kurun.",
+   "beklenen_ogeler": [
+    "varış sergi reddi",
+    "Pitti karanlık köşe",
+    "Grand Duchess izole",
+    "1993 hasar/restorasyon",
+    "D29",
+    "E004 uzlaştırılmadı"
+   ],
+   "kanit": [
+    "C013",
+    "C049",
+    "C020",
+    "C021",
+    "C041"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği sahnede iki kadının Holofernes'i bastırışını bulun; sıvalı kolları ve fiziksel emek vurgusunu izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S3/S4 betimi: Abra Judith'in aynası; kollar sıvalı, ortak çaba.",
+   "kanit": [
+    "C017",
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kılıcın kabzasındaki haç çağrışımını arayın (kaynak betimi; görsel teyit yok).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S3 (Garrard-1989): kılıç dikey, kabza haç biçimli.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Işık-karanlık karşıtlığını (chiaroscuro) izleyin: kaynaklar koyu zeminde aydınlık figürleri betimler.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S3: chiaroscuro + realism; S2 \"powerful and frightening\".",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Judith'in sarı ipek elbisesi ile beyaz çarşafın ışığını kaynak betiminde karşılaştırın (Longhi 1916).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Longhi: \"Vermeer'e değer\" beyazlıklar; sarı ipek elbise.",
+   "kanit": [
+    "C045"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Barthes'ın betimlediği toplumsal farkı izleyin: Judith \"iğrenmiş ama kararlı\", Abra \"sakin, ifadesiz\".",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S4 Barthes (Menzio-2004): padrona/serva farkı.",
+   "kanit": [
+    "C046",
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Judith Beheading Holofernes / Giuditta che decapita Oloferne; Artemisia Gentileschi; c. 1620; yağlıboya tuval; Uffizi 1890 n. 1567, D29; birincil boyut 146.5×108 (D001 ihtilaflı).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kaynak?",
+   "arka": "Deuterokanonik Judith Kitabı; Bethulia kuşatması; Judith + Abra, sarhoş Holofernes'i başını keserek öldürür; Uffizi \"kararlı ve güçlü Judith'in eliyle\" anını seçer; \"Rab onu bir kadının eliyle vurdu\".",
+   "kanit": [
+    "C008",
+    "C034",
+    "C035",
+    "C033"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üslup?",
+   "arka": "Chiaroscuro + gerçekçilik (Caravaggio etkisi); kılıç kabzası haç çağrışımlı; Abra genç, Judith'in aynası; kollar sıvalı, emek vurgusu.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Sipariş + ödeme?",
+   "arka": "Cosimo II siparişi (B); \"presumably\" Napoli varyasyonu eşi Maria Maddalena için; 50 scudi; ödeme Galileo arabuluculuğuyla gecikmeli; Cosimo II 1621'de öldü.",
+   "kanit": [
+    "C010",
+    "C019",
+    "C018",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Versiyon + tartışma?",
+   "arka": "Napoli c. 1612–1613, 158.8×125.5, Capodimonte (Q2247406); Floransa c. 1620 Uffizi; biyografik/otoportre okuması tartışmalı (Garrard ↔ Pollock/Ciletti).",
+   "kanit": [
+    "C023",
+    "C001",
+    "C022"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q23008305",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser kalıcı olarak nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Muzeum Narodowe w Poznaniu"
+    },
+    {
+     "harf": "B",
+     "metin": "Berlin Nationalgalerie"
+    },
+    {
+     "harf": "C",
+     "metin": "Varşova Ulusal Müzesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 birincil kayıt ve S1 P195/P276: eser Poznań Ulusal Müzesi’ndedir; mülkiyet Raczyński Vakfı’nındır.",
+   "yanlis_gerekceleri": {
+    "B": "1884–1903 arasında Berlin Nationalgalerie’de depozito olarak sergilendi; kalıcı yer Poznań’dır.",
+    "C": "Commons notuna göre (belirsiz) Brescia sergisi eseri geçici olarak Varşova’da gösterdi; kalıcı koleksiyon Poznań’dadır.",
+    "D": "Uffizi Floransa’dadır; Anguissola çizimleri orada bulunsa da bu eser Poznań’dadır."
+   },
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil müze kaydına göre teknik nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya ve tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine yağlıboya"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6: \"olej i tempera na płótnie\" = tuval üzerine yağlıboya + tempera; S5/S11/S1 de temperayı sayar.",
+   "yanlis_gerekceleri": {
+    "A": "en/it wiki \"oil on canvas\" der ama birincil kayıt temperayı da açıkça verir (D002).",
+    "C": "S12 gövdede \"panel\" der; birincil kaynak tuval (płótnie) der, pano değil.",
+    "D": "Fresk duvar resmidir; eser tuval üzerine yapılmıştır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Yazıttan okunan tarih hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1555"
+    },
+    {
+     "harf": "B",
+     "metin": "1560"
+    },
+    {
+     "harf": "C",
+     "metin": "1566"
+    },
+    {
+     "harf": "D",
+     "metin": "1600"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 başlığı ve yazıt MDLV = 1555; S3/S4/S5 de 1555 verir (enwiki circa nüansı ayrıdır).",
+   "yanlis_gerekceleri": {
+    "B": "1560 (MDLX) yazıtta yoktur; yazıt MDLV = 1555’tir.",
+    "C": "1566, Vasari’nin görüş yılı ihtilafıdır (D003); eserin yapım tarihi değildir.",
+    "D": "1600 (MDC) yazıtta yoktur; eser 1555 tarihlidir."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "72 × 97 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "97 × 72 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "72 × 97 mm"
+    },
+    {
+     "harf": "D",
+     "metin": "162,5 × 73,5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 ve tüm kaynaklar: yükseklik 72, genişlik 97 cm.",
+   "yanlis_gerekceleri": {
+    "B": "Yükseklik 72, genişlik 97’dir; seçenek ters verilmiştir.",
+    "C": "Birim santimetredir, milimetre değil.",
+    "D": "162,5 × 73,5 cm Correggio’nun Jupiter und Io’suna ait boyuttur; bu esere değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Sahnede betimlenen üç kız kardeş kimlerdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lucia, Europa, Minerva"
+    },
+    {
+     "harf": "B",
+     "metin": "Elena, Anna Maria, Minerva"
+    },
+    {
+     "harf": "C",
+     "metin": "Lucia, Elena, Europa"
+    },
+    {
+     "harf": "D",
+     "metin": "Bianca, Lucia, Minerva"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3/S4/S5/S8: Lucia (sol), Europa (orta), Minerva (sağ); sağ üstte hizmetçi.",
+   "yanlis_gerekceleri": {
+    "B": "Elena Mantova’da bir tarikatta, Anna Maria henüz doğmamıştı; ikisi de sahnede yoktur.",
+    "C": "Elena sahnede değildir; ortadaki figür Europa’dır.",
+    "D": "Bianca annedir, sahnede değildir; yalnız kolyesiyle anılır."
+   },
+   "kanit": [
+    "C009",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eserin günümüzdeki mülkiyeti kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Poznań Ulusal Müzesi’nin kendisi"
+    },
+    {
+     "harf": "B",
+     "metin": "MNP bünyesindeki Raczyński Vakfı"
+    },
+    {
+     "harf": "C",
+     "metin": "Farnese ailesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Lucien Bonaparte"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6: \"Własność Fundacji im. Raczyńskich przy MNP\" — mülkiyet müzenin değil vakfındır.",
+   "yanlis_gerekceleri": {
+    "A": "Birincil kayıt mülkiyeti müzeye değil, MNP bünyesindeki Raczyński Vakfı’na verir.",
+    "C": "Farnese ailesi tarihi sahiptir; günümüz mülkiyeti vakıftır.",
+    "D": "Lucien Bonaparte eseri 1815’te satmıştır; günümüz sahibi değildir."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Vasari eseri nerede görmüştür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cremona’da Amilcare’nin evinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Roma’da Fulvio Orsini koleksiyonunda"
+    },
+    {
+     "harf": "C",
+     "metin": "Parma’da Farnese sarayında"
+    },
+    {
+     "harf": "D",
+     "metin": "Madrid’de İspanya sarayında"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: Vasari eseri Cremona’da sanatçının baba evinde gördü ve övdü; S3/S4 de aynı yeri verir.",
+   "yanlis_gerekceleri": {
+    "B": "Orsini koleksiyonu proveniensin sonraki durağıdır; Vasari görüşü baba evindedir.",
+    "C": "Farnese koleksiyonu sonraki bir mülkiyet aşamasıdır; Vasari görüşüyle ilgisi yoktur.",
+    "D": "İspanya sarayı sanatçının kariyeriyle ilgilidir; Vasari’nin görüş yeri değildir."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Konservasyon araştırmalarının temel bulgusu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Görünen hizmetçi figürü bitmiş manzaraya sonradan eklendi"
+    },
+    {
+     "harf": "B",
+     "metin": "Eser hiç restore edilmedi"
+    },
+    {
+     "harf": "C",
+     "metin": "Satranç tahtası sonradan eklendi"
+    },
+    {
+     "harf": "D",
+     "metin": "İmza sonradan atıldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6 rentgen + stratigrafi: önceki başlıklı kadın silueti üzerine boyanmış; görünen hizmetçi sonradan eklenmiş.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar belirgin ridipinture ve kompozisyon değişikliği bildirir; eser restore edilmiştir.",
+    "C": "Tahtanın sonradan eklendiğine dair bulgu yoktur; değişiklik hizmetçi figüründedir.",
+    "D": "İmzanın sonradan atıldığına dair bulgu yoktur; yazıt birincil tanıklıktır."
+   },
+   "kanit": [
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kaynaklar tahtadaki satranç dizilişi için ne der?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gerçek bir oyunda ulaşılamaz; tahta yönü yanlış"
+    },
+    {
+     "harf": "B",
+     "metin": "Tarihi bir maçın hatasız kaydı"
+    },
+    {
+     "harf": "C",
+     "metin": "Bilinen bir açılışın kurulumu"
+    },
+    {
+     "harf": "D",
+     "metin": "Tahta doğru yönde, diziliş olağan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S10: diziliş hiçbir olası partide ulaşılamaz; büyük kardeş tarafında köşe karesi beyaz olmalıydı.",
+   "yanlis_gerekceleri": {
+    "B": "Uzmanlar dizilişin hiçbir olası konumu yansıtmadığını söyler; gerçek maç kaydı değildir.",
+    "C": "Bir açılış kurulumu değil; imkânsız bir diziliş söz konusudur.",
+    "D": "Tahta yönü yanlıştır: büyük kardeş tarafındaki köşe siyah değil beyaz olmalıdır."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Rönesans İtalya’sında satrancın toplumsal anlamı nasıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eril/entelektüel bir uğraştı; tümü kadın sahne istisnaydı"
+    },
+    {
+     "harf": "B",
+     "metin": "Kadınların olağan günlük uğraşıydı"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca bir çocuk oyunu sayılırdı"
+    },
+    {
+     "harf": "D",
+     "metin": "Dinsel bir törendi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 (Garrard zinciri)/S10/S11: satranç eril ve zihinsel beceri göstergesiydi; tümü kadın kadro istisnadır.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar satrancı eril/martial beceri göstergesi sayar; kadın kadrosu istisnadır, olağan değil.",
+    "C": "Satranç hümanist bir zekâ egzersiziydi; yalnız çocuk oyunu olarak görülmezdi.",
+    "D": "Satranç dinsel bir tören değil, entelektüel bir oyundu."
+   },
+   "kanit": [
+    "C025",
+    "C066"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, satranç tahtası kenarındaki Latince yazıtla imzalı ve 1555 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru: birincil kayıt ve yazıt MDLV = 1555 (S6/S3/S4).",
+   "kanit": [
+    "C002",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil müze kaydı tekniği yalnız \"yağlıboya\" olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: S6 \"olej i tempera na płótnie\" yani yağlıboya + tempera der.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Konservasyon bulgularına göre görünen hizmetçi figürü bitmiş manzaraya sonradan eklenmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: rentgen + stratigrafi çalışmaları (S6).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eserin mülkiyeti Poznań Ulusal Müzesi’nin kendisine aittir.",
+   "dogru": false,
+   "aciklama": "Yanlış: mülkiyet MNP bünyesindeki Raczyński Vakfı’nındır (S6).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kaynaklara göre tahtadaki diziliş gerçek bir satranç oyununda ulaşılabilecek bir konumdur.",
+   "dogru": false,
+   "aciklama": "Yanlış: S5/S10 dizilişin imkânsız olduğunu, tahta yönünün yanlış olduğunu söyler.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Vasari’nin görüş yılı ihtilafını (1556 ↔ 1566) ve \"quest’anno\" ifadesini kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "1556 (S6/S3)",
+    "1566 (S5/S11)",
+    "quest’anno (S4)",
+    "en eski belge",
+    "Anguissola kronolojisi düğümü"
+   ],
+   "kanit": [
+    "C034",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Yazıt transkripsiyon varyantlarını karşılaştırın; MDLV/MDVL ve ANCILAM/ANCILLAM farklarını tartışın.",
+   "beklenen_ogeler": [
+    "SOPHONISBA/SEPHONISBA",
+    "AMILCARIS/AMICLARIS",
+    "EFFIGIE/EFIGIE",
+    "MDLV/MDVL",
+    "ANCILAM/ANCILLAM"
+   ],
+   "kanit": [
+    "C035",
+    "C008",
+    "C002"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Hizmetçi figürünün yer değişikliğini (sol ↔ orta) ve \"sonradan ekleme\" bulgusunun kompozisyon tarihine etkisini analiz edin.",
+   "beklenen_ogeler": [
+    "S6 sol",
+    "S5 orta",
+    "sonradan ekleme mutabık",
+    "Studia Muzealne 2018 erişilmedi",
+    "üzerine meşe"
+   ],
+   "kanit": [
+    "C037",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"İmkânsız diziliş\" ↔ WD \"checkmate\" uyuşmazlığını ve Vida alegorisi olasılığını birlikte tartışın.",
+   "beklenen_ogeler": [
+    "WD checkmate ref’siz",
+    "imkânsız diziliş",
+    "yanlış tahta yönü",
+    "Vida amazon alegorisi",
+    "belki ilham"
+   ],
+   "kanit": [
+    "C038",
+    "C018",
+    "C026"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Feminist okuma (Garrard zinciri) ile Bastek’in \"taklit\" yorumunu olgu/yorum ayrımıyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "Garrard zinciri",
+    "kadın özne",
+    "Bastek udają/taklit",
+    "yorum vs olgu",
+    "Burke emek okuması"
+   ],
+   "kanit": [
+    "C025",
+    "C054",
+    "C072"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Satranç tahtasının kenarındaki imza ve tarih yazıtını bulun; MDLV’yi okuyun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: yazıt tahta kenarında; MDLV = 1555.",
+   "kanit": [
+    "C002",
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Üç kız kardeşi soldan sağa Lucia–Europa–Minerva olarak konumlandırın; yaşlı hizmetçiyi sağ üstte arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Lucia sol, Europa orta, Minerva sağ; hizmetçi sağ üstte.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Tahtanın yönünü ve taş dizilişini inceleyin; kaynakların \"imkânsız diziliş\" dediği noktayı tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: büyük kardeş tarafında köşe beyaz olmalı; diziliş imkânsız.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Soldaki karanlık ağaç bölgesine dikkat edin; konservasyonun ortaya çıkardığı önceki figür izini kaynak betiminden düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: solda başlıklı kadın silueti üzerine boyanmış; görünen hizmetçi sonradan eklendi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka plandaki mavimsi manzarayı ve meşe motiflerini bulun; \"alla fiamminga\" betimini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: puslu, Flemish usulü manzara; belirgin meşeler.",
+   "kanit": [
+    "C024",
+    "C028"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Sofonisba Anguissola; Gra w szachy / The Chess Game; 1555 (yazıt MDLV); tuval üzerine yağlıboya + tempera; 72 × 97 cm; MNP Poznań; mülkiyet Raczyński Vakfı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Yazıt ne der?",
+   "arka": "Sofonisba (Amilcare’nin kızı) üç kız kardeşini ve bir hizmetçiyi (ancilla) \"ex vera effigie\" (gerçek suretten) resmetti; tarih MDLV = 1555. Transkripsiyon kaynaklara göre değişir.",
+   "kanit": [
+    "C008",
+    "C002"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Konservasyon bulgusu?",
+   "arka": "Rentgen + stratigrafi: önceki başlıklı kadın silueti üzerine boyanmış; görünen hizmetçi bitmiş manzaraya sonradan eklendi; belirgin ridipinture; üç bilinen gravür.",
+   "kanit": [
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Proveniens?",
+   "arka": "Muhtemelen Asdrubale satışı → Roma (Orsini → Farnese → Parma → Napoli/Borboni) → Lucien Bonaparte (1815 satış) → 1823 Raczyński → 1884–1903 Berlin Nationalgalerie → 1903 Poznań. 1823 yeri Berlin ↔ Paris ihtilaflı.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Bağlam + alegori?",
+   "arka": "Rönesans’ta satranç eril/entelektüel uğraş; tümü kadın sahne istisna; feminist okumaların merkezinde. Vida Scacchia Ludus (1550) vezir virgo/amazon; \"belki\" ilham. Meşe = aile sürekliliği.",
+   "kanit": [
+    "C025",
+    "C026",
+    "C024"
+   ]
+  }
+ ]
+}

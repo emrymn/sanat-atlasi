@@ -1,0 +1,1086 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2629559",
+ "sanatci_id": "jean-honore-fragonard",
+ "baslik": "Salıncak",
+ "ozgun_baslik": "The Swing (L'Escarpolette / Les Hasards heureux de l'escarpolette)",
+ "kunye": {
+  "sanatci": "Jean-Honoré Fragonard",
+  "sanatci_yasam": "1732–1806",
+  "tarih": "y. 1767–1768",
+  "tarih_belirsizlik": "Müze \"about 1767 - 1768\"; WD 1767 (circa; 1761–1768); data \"1766\" hiçbir kaynakta yok (D01/C052)",
+  "teknik": "Tuval üzerine yağlı boya (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 81,
+   "genislik": 64.2
+  },
+  "muze": "Wallace Collection, Londra",
+  "envanter": "P430",
+  "edinim": "Morny satışı, Paris, 01 June 1865, no. 98 → 4th Marquess of Hertford; Lady Wallace vasiyeti 1897",
+  "konum": "Study (güncel kayıt); 2020: Oval Drawing Room (D04/C055)",
+  "telif_durumu": "Kamu malı (Fragonard ö. 1806, 100+ yıl pma; WD P6216); Commons 3 dosya PD; Art UK görseli CC BY-NC-ND; Wallace yayım lisansı vermiyor (D06/C057)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Fragonard,_The_Swing.jpg",
+  "kaynak": "Wikimedia Commons (credit: oxfordartonline.com Wallace Collection guide); WD P18",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (3 dosya, S20); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Fragonard, The Swing.jpg 4280×5373; Joean Honoré Fragonard - The Swing.jpg 3666×4685; The Swing (P430).jpg 1487×1920",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; kompozisyon/ikonografi kaynak metinlerinden (S5/S10/S14/S15); Art UK CC BY-NC-ND, Wallace yayım lisansı yok (C057)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 424
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1337
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2724
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaydın-iç-tanıklığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam-salıncak-modası-ve-sipariş",
+   "DERS_ILERI.md#2-tarih-kariyer-ve-provenance"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-tarih-kariyer-ve-provenance"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynakların-betimlediği",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-ikonografi-ve-moda-akademik-betim"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi-ve-moda",
+   "DERS_ILERI.md#4-yaşlı-adamın-kimliği-ve-erotik-ima",
+   "DERS_ILERI.md#5-ikonografi-ve-moda-akademik-betim"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme-2021-konservasyonu",
+   "DERS_ILERI.md#6-teknik-konservasyon-pentimenti-etik"
+  ],
+  "7": [
+   "DERS_ORTA.md#7-estetik-okuma-yorum",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar-özet",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri",
+   "SORULAR.json"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Wallace birincil kaydıyla künyeyi (about 1767–68, P430, oil on canvas, 81×64.2, Study) doğrular ve tarih ihtilafını (data 1766) yönetir.",
+  "Collé Ekim 1767 kaydıyla sipariş sürecini (Doyen→Fragonard; piskopos→laik) kurar ve siparişveren kimliğinin belirsizliğini değerlendirir.",
+  "Rokoko dağarcığı (diyagonaller, pembe/mavi-yeşil), moda (bergère/tricorn) ve ikonografiyi (Falconet, köpek, fırlayan terlik) kaynak betimleriyle analiz eder.",
+  "2021 konservasyonunun teknik bulgularını (pentimenti, az underdrawing) ve kurumsal kararlarını (cleaning windows, onsite) açıklar.",
+  "Eserin sonrası yaşamını (1782 gravür, kopyalar, çağdaş türevler) ve görsel lisans katmanlarını (PD ↔ CC BY-NC-ND ↔ müze koşulları) ayırt eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Rokoko",
+   "tanim": "18. yy Fransa'sına özgü hafif, süslü, hazcı üslup; Fragonard'ın tercihi algısını biçimlendirdi; Boucher dağarcığı: diyagonaller, pembe/mavi-yeşil.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "ad": "Bergère",
+   "tanim": "Çoban güneş şapkalarından esinlenen hafif şapka; söğüt/yonga/saman/ipek.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Pentimenti",
+   "tanim": "Sanatçının resim sırasındaki değişiklikleri; Salıncak'ta diz/petticoat ve sağ omuz.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "ad": "Petite maison",
+   "tanim": "Collé alıntısında \"pleasure house\"; 18. yy Paris'inde mahrem buluşma evi; eserin mahrem iç mekân tasarımıyla örtüşür.",
+   "kanit": [
+    "C009",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik zinciri; Pressigny→Morny→Hertford→Wallace; \"possibly\" kuşku işaretleri korunur.",
+   "kanit": [
+    "C023",
+    "C037"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Jean-Honoré Fragonard (1732–1806) tarafından Fransa'da yapıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih \"about 1767 - 1768\" (müze); 2020 arşivi \"c. 1767 - 1768\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tuval üzerine yağlı boya (Oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "İki ölçü: \"Image size: 81 x 64.2 cm\" ve \"Object size: Made up to, 81.8 x 64.8 cm\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Envanter P430; Wallace Collection, Londra.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Güncel kayıtta konum alanı \"Location: Study\"; anlamı açıklanmıyor (→ C055, E08).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "İmza okunaklı değil: 'fr…..rd' Signed indistinctly.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Fragonard'ın en ünlü eseri; 18. yy sanatının en amblematik imgelerinden.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Genesis: Collé 1767 günlüğü; isimsiz 'gentleman of the Court'; 1767 sonlarında Doyen'e metresini piskoposun ittiği salıncakta resmetme siparişi (petite maison); Doyen reddedip Fragonard'ı önerdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Collé kaydı Ekim 1767 tarihli; Fragonard o sırada eser üzerinde çalışıyordu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Siparişveren adı Collé'de yok; müze \"long been assumed to be François-David Bollioud de Saint-Julien\" (tax farmer for the French clergy) der; mesleği piskopos isteğini \"might well have informed\". Collé özgün metnine erişilmedi (S22 önizleme yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13",
+    "S22"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Doyen (1726–1806), 1767 Salonu'nda Saint Geneviève / 'mal des ardents' (likely ergot poisoning) tablosuyla ün kazandı; eser Saint-Roch kilisesinde.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Bitmiş resimde yaşlı adam artık rahip değil; havlayan köpek eklendi; Falconet'nin 'L'amour menaçant (Menacing Love)' heykeli hikâyeye yorum katıyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Soldaki heykel: Falconet'nin (1716–1791) Menacing Cupid'i (Louvre); Pompadour için yapıldı, 1757 Salonu'nda sergilendi; \"direct reference to Louis XV's mistress\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Fragonard, patronunun \"libertine intentions\"ına Rokoko üslupla yanıt verdi; P430 \"highly erotic works\" sınıfında; bu tercih Rokoko algısını biçimlendirdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Boucher'nin (1703–1770) Rokoko dağarcığı: \"swirling diagonals, bold colour contrasts of pink and blue-green\"; Boucher'nin Pompadour portresi (1759, P418) ile akrabalık.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sahne: bakımsız/büyümüş bahçe, heykeller, uzakta bir çeşme.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kadın bergère şapka takıyor (çoban güneş şapkalarından; söğüt/yonga/saman/ipek).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Genç adam: gri ipek doublet, mavi astar; tricorn kunduz şapkasını havaya kaldırmış; bag wig resimde görünmez, 1782 gravüründe görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Erotik ima 18. yy giyim/decorum normlarına dayanır: \"erotic frisson caused by ankle, foot and even shoes\"; eser \"designed to be seen by a few in an intimate 18th-century interior\"; love triangle. (Açık iç-giyim pasajı alınmadı — E10.)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Müze moda sayfası yaşlı adamı \"the cuckolded husband?\" diye anar (retorik soru); yanında \"soft and shapeless hat\", sert cocked hat'la karşıtlık.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "2020 müze sayfası: pembe ipek elbise; kadın \"between her elderly husband on the right and her young lover on the left\"; salıncağın kuvvetiyle terlik fırlar; şapka sunumu \"symbolic offer of his hat\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Provenance: \"M.-F. Ménage de Pressigny; possibly the marquis des Razins de Saint-Marc; the duc de Morny; his sale, Paris, 01 June 1865, no. 98; Richard Seymour-Conway, 4th Marquess of Hertford.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Morny satış kataloğu eseri \"park enriched with statues\" içinde romantik sahne diye tanımlıyordu; o sırada zaten en ünlü Fransız resimlerinden.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Louvre'a 1859'da teklif edildi, reddetti; müze bunu 1850'lerin decorum'u ile ilişkilendirir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Konservasyon Ağustos–Kasım 2021; 100+ yıldır temizlenmemişti; sararmış vernik + eski rötuşlar; müzede ilk onsite; mikroskop + X-radyografi; trustee komitesi test 'cleaning windows'; Martin Wyld; doğal reçine verniği kaldırıldı; az boya kaybı (Manchester Square).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Sonuç: beyazlar/pembeler daha canlı; genç adamın yüzünde pembe belirgin; yaşlı adamın giysisinde \"shimmering blue\"; derinlik/perspektif geri geldi; kadın \"now leaps out of the painting\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Az underdrawing → doğrudan tuvale çalışılmış; pentimenti: kadının dizi ve petticoat'ı, genç hayranın sağ omuzu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Finansman: Bank of America Art Conservation Project; 2021 Museum and Heritage Awards \"Conservation Project of the Year\" kısa listesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "FixingFrago 2019'da başladı; Dr Yuriko Jackall (Curator of French Paintings) liderliğinde; 8 Fragonard başyapıtı, 5'i temizlenecek.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Eserin adı 1782'de yayımlanan Nicolas de Launay gravüründen gelir; The Swing / L'Escarpolette / Les Hasards heureux de l'escarpolette (\"The Happy Accidents of the Swing\"); sayısız karikatüre şablon; çağdaş sanat/tasarımda popüler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Salıncak bağlamı (Prof. Javier Moscoso, CSIC): 18. yy büyük popülerlik; tıbbi kullanım (melankoli, monomani, deniz tutması, \"sexual impotence\"; \"often found in brothels\"); küresel tarih (Mısır; Ajanta 5. yy; Narasingha Deva I 13. yy; Yunan anthesterias; Çin Cold Food/qingming, Tang \"semi-immortal game\"); dekoratif sanatlar; \"perhaps the best-known example\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Kariyer dönüşümü: tarih ressamından (kraliyet siparişleri) küçük kabinet resimlerine; ödeme sorunları tepkisi; \"might have in part triggered that change or might simply have come at the right moment\"; küçük/bilgili çevre için yeniden başlangıç.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Bağlam eserleri: Musical Contest (P471); Blind Man's Buff (Toledo, 1954.43) + The See-Saw (Thyssen, 148 (1956.13)) pendant y. 1750–52; The Isle of Love (Gulbenkian, 436, y. 1770); The Progress of Love (du Barry, Louveciennes; The Meeting, Frick 1915.1.46, 1770/71); du Barry 1768'de Pompadour'un yerine geçti; Watteau Embarkation for Cythera (Louvre) göndermesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Edinme: Hertford 1865; \"bequeathed to the nation by Lady Wallace, 1897\". Art UK: Date 1767, oil on canvas, H 81 x W 64.2 cm, P430. (Canlı 403 → Wayback 2025-08-09.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Rokoko başyapıtlarından; Fragonard'ın en bilinen eseri (enwiki → Ingamells, 164; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Pressigny (tax farmer) 1794'te giyotin edildi; eser devrim hükümetince el kondu; \"possibly\" Saint-Marc; \"certainly\" Morny; Hertford 1865 Paris müzayedesinde aldı (BM + Ingamells, 165). \"The original ownership is uncertain.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Kimlik \"Marie-François-David Bollioud de Saint-Julien, baron of Argental (1713–1788)\", Receiver General of the French Clergy olarak düşünüldü; \"little evidence for this, according to Ingamells, 163-164\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Kopyalar: Rothschild (mavi elbise; Wallace 1908 kat. p. 54 + Bremmer 1991, Nevill 1903'e atfen); Polignac 56 × 46 cm → Grimaldi 1930 → 1966 Versailles, Musée Lambinet, \"attributed to Fragonard's workshop\" (Base Joconde 04000001112).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Launay 1782 etching/engraving, 62.3 × 45.5 cm; kadın sağa bakar, şapkasında tüyler; Rothschild kopyasından çizildi (AIC ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Türevler: W. C. Williams \"Portrait of a Lady\" 1920 (\"believed to reference\"); Little Feat Sailin' Shoes 1972 (Neon Park); Contact 1999; Shonibare The Swing (after Fragonard) 2001 (Tate T07952, başsız, Afrika kumaşı); Frozen 2013; Tangled; Red Velvet \"Feel My Rhythm\" 2022; Harley Quinn S3 2022 (bazı refs zayıf: Medium/CBR).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Rokoko'nun quintessence'ı; son başyapıtlarından; Neoklasik + Fransız Devrimi o dünyayı sildi (itwiki → Pulvirenti, Artelogia 2021; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Art UK editoryal: \"combine erotic licence with a visionary feeling for nature\"; \"the impudent reference to the church has been omitted\"; yaşlı adam \"elderly seated admirer\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "WD P88 commissioned_by = Saint-Julien (Q126119708), P1480=\"allegedly\" (Q32188232), REFERANS YOK. Müze \"assumed\", enwiki \"little evidence\" (E01).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "enwiki betim (refsiz): genç adam uçuşan eteğe işaret eder; yaşlı adam sağda gölgede iplerle iter; küçük beyaz köpek havlar; sol ayak uzanıp ayakkabı fırlar; solda parmağı dudağında putto; sağda \"two putti\". Köpek/Falconet/bergère/şapka A ile destekli; \"points towards\"/\"outstretched left foot\"/\"two putti right\"/ipler refsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "itwiki: \"spinta dal marito alle sue spalle\" (koca itiyor); aşk üçgeni; ışık soldan; scarpetta \"doppio senso malizioso\", cupidi. Koca → D02; ışık soldan → E07; refsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "WD P180 depicts (refsiz): bergère hat, Cupid, woman, shrub, swing, man, rope, dress, cherub, shoe. Çoğu A ile örtüşür.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C048",
+   "ifade": "WD P135 Rokoko ref'i beckchris.wordpress.com (blog, zayıf); P1343 \"1001 Paintings…\" p. 317 (erişilmedi). Rokoko zaten A (C015).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C049",
+   "ifade": "data: köpek = sadakat / ironik uyarı; ayakkabı \"Cupid heykeline doğru\"; \"yunusla birlikte iki melekçik\"; kadın spot ışığı altında. Erişilen hiçbir kaynakta köpek sembolizmi / ayakkabı yönü / YUNUS yok (E07, D09).",
+   "seviye": "E",
+   "kaynak_id": [
+    "data",
+    "S3",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "data: \"hiçbir sergiye ödünç verilmez\" (vasiyet); \"başka bir Salıncak\". Erişilen kaynaklarda yok (E07).",
+   "seviye": "E",
+   "kaynak_id": [
+    "data"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "WD P571 qualifiers: P1319=1761 (earliest), P1326=1768 (latest), P1480=circa; P195 P580=1897. 1761 yalnız WD'de (E06); 1897 S19 ile destekli (C035).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Tarih ihtilafı: data \"1766\" ↔ müze \"about 1767 - 1768\" ↔ WD 1767 (circa; 1761–1768) ↔ Art UK \"1767\" ↔ enwiki \"About 1767–68\" ↔ itwiki \"1767\". 1766 hiçbir erişilen kaynakta yok (D01).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S10",
+    "S19",
+    "data"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "Yaşlı adamın kimliği: S10 (2020) \"elderly husband\" + S15 \"cuckolded husband?\" ↔ S5 \"older man\" (nötr) ↔ S19 \"elderly seated admirer\" ↔ S3 \"older man\" ↔ S4 \"marito\" ↔ data \"tartışmalı\". Kesinleştirme yok (D02).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S15",
+    "S19",
+    "S3",
+    "S4",
+    "data"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "Siparişveren adı formu: S13/WD \"François-David Bollioud de Saint-Julien\" ↔ S3 \"Marie-François-David Bollioud de Saint-Julien, baron of Argental (1713–1788)\". Kimlik belirsiz (E01) (D03).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S13",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "Sergileme konumu: S5 (2026) \"Location: Study\" ↔ S10 (2020) \"Gallery: Oval Drawing Room\" ↔ S11 \"returned to our galleries\". \"Study\" anlamı açıklanmıyor (E08) (D04).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "Ingamells katalog yılı: S8 \"1985, pp. 161-165\" ↔ S3 References \"1989, ISBN 0-900785-35-7\". Baskı/yıl farkı çözülmedi (D05).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "Görsel lisansı: Commons 3 dosya PD ↔ Art UK CC BY-NC-ND ↔ Wallace yayım lisansı vermiyor (kişisel/akademik/eğitsel indirme). Eser kamu malı (WD P6216); fotoğraf/platform hakları farklı (D06).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S20",
+    "S19",
+    "S10",
+    "S11",
+    "S15",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "Konservasyon zamanı: S11 \"In summer 2021\" ↔ S17 + S3 \"Between August and November 2021\". Müze içi ifade farkı (D07).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11",
+    "S17",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "Başlık kökeni: S3 \"Les Hasards heureux de l'escarpolette, the original title\" ↔ S5 \"name … derives from an engraving by Nicolas de Launay … 1782\". Başlık tarihi nüansı (D08).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C060",
+   "ifade": "Yunus: data \"yunusla birlikte iki melekçik (putto)\" ↔ erişilen kaynaklarda \"dolphin/dauphin\" YOK (S3 sağda \"two putti\"; S14 solda Falconet). Doğrulanmamış ayrıntı (D09).",
+   "seviye": "D",
+   "kaynak_id": [
+    "data",
+    "S3",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C061",
+   "ifade": "Boyut: S5 \"Image size: 81 x 64.2 cm\" ↔ \"Object size: Made up to, 81.8 x 64.8 cm\". İki ayrı ölçüm alanı; hangisinin esas alındığı belirtilmeli (D10).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C062",
+   "ifade": "Moda terimleri: engageants (dirsek dantel fırfırları), echelles (stomacher kurdele merdiveni), stays (balinalı korse); Boucher Pompadour (P418) model; düğmeler \"likely\" 1760s ruched beyaz ipekle gizli; ışık yüz/göğüse yönlendirilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "İngiliz tarzı bahçe (English-style garden) Fransız tarzına karşı; Isle of Love'da doğa idilikten vahşiye, bahçe arka plandan baş öğeye; Walter Gay, The Fragonard Room (1926) Frick'teki odayı betimler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Müze: \"Fragonard combines a backward-looking Rococo element with a pre-Romantic rendering of a forceful and uncontrollable, often obscene nature.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Commission sayfası Carmontelle'in \"Monsieur de Saint-Julien\" portresini (about 1765, Musée Condé, CAR 446) görsel olarak kullanır; varsayımı görselleştirir, kanıtlamaz (E01).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Yorum: \"bakış ekonomisi\" — âşık/yaşlı adam/izleyici konumları üst üste biner, izleyici sırra ortak edilir; mahrem tasarım ↔ kamusal sergileme gerilimi; doğa arzunun dizginlenemez gücü; estetik değerin tarihsel değişkenliği (1859 reddi ↔ amblem).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S15",
+    "S14",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C067",
+   "ifade": "Yorum: fırlayan terlik bir \"punctum\" — anlık kontrol kaybı Rokoko haz estetiğini yoğunlaştırır; salıncağın havada asılı kalması zamanın dondurulmuş ânı, arzunun askıda kaldığı eşik.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C068",
+   "ifade": "Yorum: 2021 konservasyonu eserin \"dönem algılanabilirliğini\" değiştirir; pembe/mavi-yeşil canlanması Rokoko okumayı yeniden etkinleştirir; konservasyon epistemik bir müdahaledir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S17",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q2629559",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2629559.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities (27 QID etiket)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q2629559",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "wikitext \"The Swing (Fragonard)\"",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Swing%20(Fragonard)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "wikitext \"I fortunati casi dell'altalena\"",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=I%20fortunati%20casi%20dell%27altalena&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wallace Collection",
+   "belge": "eMuseumPlus detay (objectId=65364)",
+   "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=65364&viewType=detailView",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wallace Collection",
+   "belge": "eMuseum Provenance sekmesi",
+   "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=65364&viewType=detailView&sp=SdetailBlockKey&sp=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (jsessionid); Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wallace Collection",
+   "belge": "eMuseum Marks/Inscriptions sekmesi",
+   "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=65364&viewType=detailView&sp=SdetailBlockKey&sp=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (jsessionid); Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wallace Collection",
+   "belge": "eMuseum Further Reading sekmesi",
+   "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=65364&viewType=detailView&sp=SdetailBlockKey&sp=3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (jsessionid); Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wallace Collection",
+   "belge": "WD P973 modern katalog URL'si",
+   "url": "https://www.wallacecollection.org/collection/les-hazards-heureux-de-lescarpolette-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (redirect→/art/collection/…)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wallace Collection / Wayback",
+   "belge": "S9 arşiv kopyası (arşiv 2020-08-14)",
+   "url": "https://web.archive.org/web/20200814113508/https://www.wallacecollection.org/collection/les-hazards-heureux-de-lescarpolette-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2020-08-14); Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wallace Collection",
+   "belge": "Explore in Depth: Fragonard's The Swing",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wallace Collection",
+   "belge": "Origins of The Swing",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/origins-of-the-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wallace Collection",
+   "belge": "The Commission (Collé Ekim 1767)",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/origins-of-the-swing/the-commission/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wallace Collection",
+   "belge": "The Painting (ikonografi/Boucher/Falconet)",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/origins-of-the-swing/the-painting/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wallace Collection",
+   "belge": "Fashion in The Swing (Jacqui Ansell)",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/origins-of-the-swing/fashion-in-the-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wallace Collection",
+   "belge": "Swings in History (Prof. Javier Moscoso)",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/origins-of-the-swing/swings-in-history/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Wallace Collection",
+   "belge": "Conserving The Swing",
+   "url": "https://www.wallacecollection.org/explore/explore-in-depth/fragonards-the-swing/conserving-the-swing/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; Denetim B 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Art UK",
+   "belge": "the-swing-209456",
+   "url": "https://artuk.org/discover/artworks/the-swing-209456",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot engeli)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Art UK / Wayback",
+   "belge": "S18 arşiv kopyası (arşiv 2025-08-09)",
+   "url": "https://web.archive.org/web/20250809161349/https://artuk.org/discover/artworks/the-swing-209456",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-08-09); Denetim B 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S20",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: 3 dosya (PD)",
+   "url": "https://commons.wikimedia.org/wiki/File:Fragonard,_The_Swing.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S21",
+   "kurum": "Khan Academy",
+   "belge": "Fragonard The Swing",
+   "url": "https://www.khanacademy.org/humanities/monarchy-enlightenment/rococo/v/fragonard-the-swing-1767",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama Client Challenge (JS); içerik alınamadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S22",
+   "kurum": "Google Books",
+   "belge": "Collé, Journal et mémoires… (kayıt)",
+   "url": "https://books.google.com/books?id=9ZBcAAAAMAAJ&pg=PA165",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 kayıt sayfası; önizleme metni YOK",
+   "tur": "birincil"
+  },
+  {
+   "id": "S23",
+   "kurum": "Wikidata",
+   "belge": "EntityData P1679 (formatter)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/P1679.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S24",
+   "kurum": "Internet Archive",
+   "belge": "wayback/available API (Art UK)",
+   "url": "https://archive.org/wayback/available?url=artuk.org/discover/artworks/the-swing-209456",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "data",
+   "kurum": "Sanat Atlası (data/ — salt-okunur)",
+   "belge": "basyapitlar.json / harita.json / eser_ayrintilari.json / harita_motifler.json / ikonografi.json (Q2629559 kayıtları)",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur; değiştirilmedi",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Madame de Pompadour Portresi",
+   "sanatci": "François Boucher",
+   "kurum": "Wallace Collection",
+   "envanter": "P418",
+   "gerekce": "Rokoko renk/kumaş dilinin modeli; yeşilimsi-mavi yapraklar pembe elbiseyi öne çıkarır.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "The Progress of Love: The Meeting",
+   "sanatci": "Jean-Honoré Fragonard",
+   "kurum": "The Frick Collection, New York",
+   "envanter": "1915.1.46",
+   "gerekce": "du Barry siparişi; İngiliz tarzı bahçe ve aşkın aşamaları; Pompadour→du Barry patronaj sürekliliği.",
+   "kanit": [
+    "C034",
+    "C063"
+   ]
+  },
+  {
+   "eser": "The Swing (after Fragonard)",
+   "sanatci": "Yinka Shonibare",
+   "kurum": "Tate",
+   "envanter": "T07952",
+   "gerekce": "Çağdaş alımlama: başsız, Afrika kumaşlı yeniden yaratım; imgelerin dolaşımı.",
+   "kanit": [
+    "C041"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Wallace kaynakları 2026-11-14 canlı yeniden açıldı (eMuseumPlus 200 + Provenance/Marks/Further Reading 200 + Commission/Painting/Fashion/Conserving 200 + Wayback 2020 200); Art UK Wayback 2025 200; en/it wikitext 200. Brief destek pasajları tümü doğrulandı (Q2629559-recheck-*). WD qualifier/ref bağımsız çıkarıldı. Görsel İNCELENMEDİ → GZ TASLAK. Erişilemeyen: Khan (JS), Collé özgün metin, kitaplar (kaynakçada anıldı).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar.json + harita.json \"1766\" ↔ müze \"about 1767 - 1768\" (C052/D01); 1766 hiçbir erişilen kaynakta yok. WD P571=1767 circa, 1761–1768 (C051).",
+  "İkonografi: data \"yunusla birlikte iki melekçik\" hiçbir kaynakta yok (C060/D09); köpek sadakat/ironi, ayakkabı yönü, \"spot ışığı\" doğrulanmadı (C049/E07).",
+  "Yaşlı adam: data \"tartışmalı\" ↔ müze 2020 \"elderly husband\" / Fashion \"cuckolded husband?\" / güncel \"older man\" / Art UK \"admirer\" (C053/D02).",
+  "Siparişveren: WD P88 \"allegedly\" refsiz (C044); müze \"long been assumed\", enwiki \"little evidence\" (C011/C038); ad formu farklı (C054/D03).",
+  "Konum: güncel \"Study\" ↔ 2020 \"Oval Drawing Room\" (C055/D04); \"Study\" anlamı açıklanmıyor (E08).",
+  "Boyut: iki alan \"Image size 81×64.2\" ↔ \"Object size Made up to 81.8×64.8\" (C061/D10).",
+  "imzalar.json fragonard=null ↔ müze \"Signed indistinctly 'fr…..rd'\" (C007). muze_numaralari.json Q2629559/P430 kaydı YOK; P430 A doğrulandı (C005).",
+  "Görsel İNCELENMEDİ (3 Commons PD, S20); GZ TASLAK; Art UK CC BY-NC-ND, Wallace yayım lisansı yok (C057/D06). data birincil dosyası WD P18'den farklı.",
+  "Görsel inceleme + insan editoryal onay bekliyor; önceki AI doğrulamasına (ders_kaynaklari puan 0.5) güvenilmedi."
+ ]
+}

@@ -1,0 +1,762 @@
+[
+ {
+  "eser_id": "Q1061035",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Duke CSPD 2025, 1929'u ayrıca Salvador Dalí'nin Paris'e taşınıp Sürrealist hareketin anahtar parçası olduğu yıl olarak anar; bu, dönemin hareketliliğini gösteren ikincil bir bağlam notudur [C025].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "1929'da \\\"published\\\" sayılmasına bağlı (Duke kuralı; \\\"published\\\" bir term of art).",
+  "aciklama": "DERS_ILERI.md §3'teki [C025] etiketli cümle Salvador Dalí'nin 1929'da Paris'e taşınması olgusunu aktarır; oysa DERS.json'daki C025 iddiası yalnız ABD telif hukukundaki 'published' kuralını kaydeder. Dalí olgusu C025'in ifadesinde ve KANIT_DOSYASI.md'nin C025 kanıt metninde hiç geçmez; etiket, cümledeki olguyu desteklemiyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1061035",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "erişilen özetinde, Amerikan sanatında son otuz yılın sözcük+imge birlikteliğini Pop Art, Photo-Realism, Conceptual Art, California Funk/Chicago Imagism",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Bowman atıf yılı (D5): basılı 1985 (Art Journal 45(4)) ↔ çevrimiçi 2014; enwiki year=2014 yanıltıcı. DOI 302→301→403.",
+  "aciklama": "DERS_ILERI.md §8'deki [C041] etiketli cümle Bowman makalesi özetinin içeriğini (Pop Art'tan appropriation'a uzanan taksonomi ve sözcük-imge işlevleri) somut olgu olarak aktarır; DERS.json'daki C041 iddiası yalnız basılı 1985 ↔ çevrimiçi 2014 yıl ihtilafını ve DOI erişim durumunu kaydeder. Özet içeriği KANIT_DOSYASI.md'de de kayıtlı değildir; aynı taksonomi §11 etkinlik 5'te de [C041] ile kullanılır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1061035",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Valéry'nin \"Notes sur la poésie\" başlıklı metni Les Nouvelles littéraires'de (28 Eylül 1929) çıkmıştı [C023].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "yanıtı; Valéry metni Les Nouvelles littéraires 28 Eylül 1929).",
+  "aciklama": "DERS_ORTA.md §2'deki [C023] etiketli cümle Valéry metnine 'Notes sur la poésie' başlığını ekler; DERS.json'daki C023 ifadesi yalnız 'Valéry metni Les Nouvelles littéraires 28 Eylül 1929' der, başlığı içermez. Başlık KANIT_DOSYASI.md'deki C023 kaydında da yoktur; DERS_ILERI.md §3'te aynı başlık yine [C023] ile kullanılır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1061035",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Kayıt, kişilerin yaşam tarihlerini de verir: E. L. T. Mesens (1903–1971), William Copley (1919–1996) ve Noma Copley (1916–2006); bu, zincirin tarihlendirilmesini birincil kayda bağlar [C009].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Provenance: sanatçı (Paris/Brüksel) → [Galerie Le Centaure, Brussels] → 1932 E.L.T. Mesens (London) → 1957 William & Noma Copley",
+  "aciklama": "DERS_ORTA.md §10'daki [C009] etiketli cümle Mesens ve Copley'lerin yaşam tarihlerini (1903–1971, 1919–1996, 1916–2006) aktarır; DERS.json'daki C009 ifadesi bu tarihleri içermez, KANIT_DOSYASI.md'nin C009 kaydında da yoktur. Aynı tarihler DERS_ILERI.md §2'deki [C009] etiketli LACMA provenance alıntısında da geçer.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "**Sanatçı:** Diego Velázquez (1599–1660), İspanya sarayının başressamı [C059][C056].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "1623'te IV. Felipe'nin saray ressamı; bodegones bırakıldı, esas olarak portreci;",
+  "aciklama": "Başlangıç dersi Velázquez'i 'İspanya sarayının başressamı' olarak sunuyor ve cümle [C056] etiketli; ancak C056 ifadesi ve tüm iddia envanteri yalnız 'IV. Felipe'nin saray ressamı' der, 'başressam' unvanını hiçbir iddia taşımıyor (DERS_ORTA.md da 'saray ressamı' der).",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Giysi ikonografisi kırmızı etrafında örgütlenir: mozzetta (omuzlarda kısa pelerin) ve başlık, papalık makamının kırmızısını taşır;",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Larry Keith incelemesi baş ile mozzetta arasında ayrım bulmadı; Carr hangisinin önce boyandığına dair kanıt bulamadı;",
+  "aciklama": "İleri §5'teki (ve DERS_ORTA.md §5'teki aynı) [C013][C017] etiketli cümle mozzetta'yı 'omuzlarda kısa pelerin' diye tanımlayıp 'başlık'tan söz ediyor; bu giysi tanımı ne C013'te ne C017'de geçiyor — C017 mozzetta'yı yalnızca Keith incelemesi bağlamında anar. Tanım 7 dosyada yalnızca DERS.json temel_kavramlar bölümünde var ve orada da kanit olarak C017 gösterilmiş.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Buna karşılık WD'nin P18 dosya adı \"inv. 237\" ve \"140 × 120 cm\" iddiası taşır; bu, WD'nin kendi içinde P18 ↔ P217 tutarsızlığıdır (tartışma) [C042]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Envanter ihtilafı (D2): FC 289 (S4/S5/S6; WD P217) ↔ \\\"inv. 237\\\" (Commons dosya adı; WD P18; itwiki bu dosyayı kullanır).",
+  "aciklama": "İleri §1'deki [C042] etiketli cümle, P18 dosya adının 'inv. 237' yanında '140 × 120 cm' ölçüsünü de taşıdığını söylüyor; ancak C042 ifadesi yalnızca envanter ihtilafını kapsıyor, ölçü değeri C041'dedir ve bu cümlede ölçü için C041 etiketi yoktur (C037 de 140×120 içermez).",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Madrid Kraliyet Sarayı (1772 envanteri: kralın locasına giden koridor; 1789: Pieza del Oratorio no.384; 1794; 1811: Sala Antigua del Consejo de Estado no.756) → 1813 Vitoria'da ganimet",
+  "dosya_2": "DERS.json",
+  "alinti_2": "→ Madrid Kraliyet Sarayı (1772 koridor/1789 Pieza del Oratorio no.384/1794/1811 no.756) → 1813 Vitoria'da ganimet;",
+  "aciklama": "İleri §6'daki [C019] etiketli provenans cümlesi 'kralın locasına giden koridor' ve 'Sala Antigua del Consejo de Estado' mekân adlarını ekliyor; C019 ifadesinde yalnız '1772 koridor' ve '1811 no.756' vardır, bu oda/koridor adları 7 dosyanın hiçbir iddiasında geçmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Curtis (1883) ve Armstrong (1896) otograf saydı; Justi (1889) başı Velázquez'e, cübbe ve arka planı belki başka ele verdi;",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Curtis/Armstrong otograf, Justi baş+başka el, Beruete az taze, Allende-Salazar Pareja kopyası, Mayer tümüyle Velázquez, Camón Aznar Velázquez,",
+  "aciklama": "İleri §9'daki [C017] etiketli cümle Curtis 1883, Armstrong 1896, Justi 1889, Beruete 1898, Allende-Salazar 1925, Mayer 1936, Camón Aznar 1964 yıllarını (ve aynı paragrafta Harris 1999 için 's.361–62' sayfasını) ekliyor; C017 ifadesinde bu yıllar ve sayfa numarası yoktur, yalnız López-Rey 1963/1999, Harris 1999, Pons 2002 ve Carr 2006 geçer.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1240092",
+  "tur": "A",
+  "dosya_1": "KANIT_DOSYASI.md",
+  "alinti_1": "**Beş belirsizlik E:** anekdot rivayeti (C038/E1), Juan de Pareja hikâyesi (C040/E2), RKD (C050), kitaplar (C051), görsel (C052).",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Gerçek iddia: yüzyıl düzeyi + P580=1649/P582=1650 aralığı; P1480 (circa) niteleyicisi YOK (E11);",
+  "aciklama": "KANIT ve DERS.json 'Beş belirsizlik E' envanteri tanımlar ve yalnızca E1 (C038) ile E2 (C040) numaralandırılmıştır; buna karşılık C043, C045, C044 ve C049 iddiaları (DERS.json ve KANIT_DOSYASI.md'de aynen) E3, E4, E6 ve E11 kodlarına atıf yapıyor — E6 ve E11 beş maddelik listenin dışında kalıyor ve bu kodların 7 dosyada hiçbir karşılığı tanımlı değil.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "1882 Salonu'nda sergilendiğinde ziyaretçiler ve eleştirmenler kompozisyonu huzursuz buldu [C007]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Courtauld kaydı: aynadaki yansıma sağa kaydırılmış, soldaki şişeler de hizasız; Courtauld bunu 'normal perspektifi yok sayma' olarak sunar.\",",
+  "aciklama": "DERS_ORTA.md §2'deki [C007] etiketli cümle, 'ziyaretçilerin ve eleştirmenlerin kompozisyonu huzursuz bulduğu' alımlama olgusunu kesin biçimde sunuyor; oysa C007 iddiası yalnızca ayna yansımasının kaymasını ve şişe hizasızlığını kapsıyor. Bu alımlama olgusu DERS.json iddialarının hiçbirinde, KANIT_DOSYASI.md kaynak alıntılarında ve KALITE_KONTROL.md §2 doğrulama listesinde geçmiyor (erken eleştiri konusu ayrı bir C033 iddiasında ve orada 'atıfsız/belirsiz' işaretli).",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Jeffrey Meyers'in aktardığı Merleau-Ponty passage'ı aynayı \"şeyleri gösteriye, gösteriyi şeye, beni başkalarına ve başkalarını bana dönüştüren evrensel bir büyünün aracı\" olarak tanımlar [C026]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Jeffrey Meyers'in ayna/Merleau-Ponty passage'ı: 'Seen in the mirror, she seems engaged with a customer; in full face, she's self-protectively withdrawn and remote.'; etüdde garson sağda,",
+  "aciklama": "DERS_ILERI.md §7'deki [C026] etiketli cümle, Merleau-Ponty'ye atfedilen 'evrensel büyü' alıntısını aktarıyor; C026 ifadesinde ve KANIT_DOSYASI.md'de yalnız Meyers'in İngilizce cümlesi ile etüt/yansıma konumu kayıtlı, bu alıntı hiçbir kanıt kaydında yok. Aynı alıntı İleri §7'nin sonundaki [C026] etiketli cümlede de ('evrensel büyü') tekrarlanıyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "figürler aynada yansır, kadın Manet'nin garsonunun dalgın bakışını ve duruşunu taşır, erkek ise sanatçının kendisidir",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Jeff Wall 'Picture for Women' (1979) bu tabloya gönderme (Tate Modern duvar metni); John Brack 'The Bar' (1954) ironik gönderme.\",",
+  "aciklama": "DERS_ILERI.md §8'deki [C022] etiketli cümle ampul motifi, figürlerin kimlikleri (kadın/erkek) ve kameranın merkeze konması gibi somut ayrıntılar taşıyor; bunlar C022 ifadesinde ve KANIT_DOSYASI.md'de yok. DERS_ORTA.md §8 aynı göndermeyi 'iç yapısını ve ayna motifini ödünç alır ... Melbourne bar sahnesi' diye farklı ayrıntılarla anlatıyor; iki seviye aynı Tate duvar metninden birbirinden farklı içerik aktarıyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Courtauld'un betiminde garson, hızlı eskizlenmiş kalabalığın karşıtında \"detached and marooned\" (kopuk ve mahsur) bir durgun merkezdir",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Courtauld kaydı: aynadaki yansıma sağa kaydırılmış, soldaki şişeler de hizasız; Courtauld bunu 'normal perspektifi yok sayma' olarak sunar.\",",
+  "aciklama": "DERS_ILERI.md §6'daki [C007] [C012] etiketli cümle, Courtauld'a atfedilen 'detached and marooned' alıntısını ve 'hızlı eskizlenmiş kalabalık' betimini taşıyor; bu alıntı ve ayrıntılar C007/C012 ifadelerinde, KANIT_DOSYASI.md kaynak alıntılarında ve KALITE_KONTROL.md §2'deki S4/S5/S6 doğrulama listesinde yok.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "izleyici, sağda ve bara, yansıması sağ kenarda görünen adamdan daha yakın durmalıdır; bu, perspektifli resimlerde varsayılan merkezi bakış noktasından alışılmadık bir sapmadır [C016]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Malcolm Park rekonstrüksiyonu (2000): sahne tek noktalı perspektife uygun; bakış açısı barın sağına ofsetli; adam ressamın görüş alanının dışında solda ve garsondan uzağa bakıyor;",
+  "aciklama": "DERS_ILERI.md §3'teki [C016] etiketli cümleler, C016 ifadesinde olmayan somut ayrıntılar taşıyor: izleyicinin adamdan daha yakın durması, 'silindir şapkalı adam', yansıyan kenarın kaçış noktası/geometri ayrıntısı ve 'geniş alanın küçük bir kesiti'. SORULAR.json GZ04'te de kayıt defterinde olmayan 'silindir şapkalı müşteri' ifadesi geçiyor; bu ayrıntılar KANIT_DOSYASI.md'de de yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "yakından bakıldığında düzensiz renk lekeleri gibi görünen yüzey, uzaklaşınca canlı bir realizm etkisi kazanır [C058]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"itwiki'nin Cricco-Di Teodoro üzerinden aktardığı: son büyük tablo 'sanatsal ve ruhsal vasiyet'; siyah kullanımı, günlük temalar, kalibre kompozisyon,",
+  "aciklama": "DERS_ILERI.md §6'daki [C058] etiketli cümle, 'yakından düzensiz lekeler / uzaktan realizm etkisi' yüzey betimini taşıyor; bu betim C058 ifadesinde ve KANIT_DOSYASI.md'de yok (aynı bölümdeki 'büyük geçmiş ustaları hatırlatan kalibre kompozisyon' eki de C058'de kayıtlı değil).",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Arka planda, büyük altın çerçeveli bir aynada balkondaki kalabalık ve aşağıdaki müzikli/sirkli gösteriler yansır; sol üstte yeşil çizmeli bir trapez sanatçısının ayakları görünür [C012]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Sol üstte yeşil çizmeli trapez sanatçısının ayakları.\",",
+  "aciklama": "DERS_BASLANGIC.md'deki [C012] etiketli cümle 'büyük altın çerçeveli ayna', 'balkondaki kalabalık' ve 'müzikli/sirkli gösteriler' sahne ayrıntılarını taşıyor; bunlar C012 ve C007 ifadelerinde, KANIT_DOSYASI.md kaynak alıntılarında yok. DERS_ORTA.md §4 aynı betimi ('büyük altın çerçeveli ayna, balkondaki kalabalığı ... taşır') [C007] [C012] etiketleriyle tekrarlıyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1245354",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Courtauld, eseri \"modern hayatın ikonik tablolarından biri\" ve karmaşık, içine çeken bir kompozisyon olarak sunar; garsonun enigmatik ifadesi ve aynadaki kaymış yansıma",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Courtauld kaydı: aynadaki yansıma sağa kaydırılmış, soldaki şişeler de hizasız; Courtauld bunu 'normal perspektifi yok sayma' olarak sunar.\",",
+  "aciklama": "DERS_ILERI.md §10'daki [C007] etiketli cümle, Courtauld'a atfedilen 'modern hayatın ikonik tablolarından biri', 'enigmatik ifade' ve 'baş döndürücü atmosfer' çerçevelemesini taşıyor; bunlar C007 ifadesinde ve KANIT_DOSYASI.md'de yok. DERS_ORTA.md §10 aynı cümleyi [C007] [C056] (yorum) işaretleriyle veriyor; İleri sürümünde (yorum) işareti de bulunmuyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "2015'te Madrid ve Berlin'de \"The Botticelli Renaissance\"; 2017–18'de Münih; 2019–20'de Orsay",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "2015'te Madrid \"El canto del cisne\" ve Berlin \"The Botticelli Renaissance\"; 2017–18 Münih \"Gut·Wahr·Schön\";",
+  "aciklama": "2015 Madrid sergisinin adı iki derste çelişiyor: Orta dersi 'The Botticelli Renaissance'in Madrid ve Berlin'de birlikte sergilendiğini yazar; İleri dersi Madrid'de 'El canto del cisne', Berlin'de 'The Botticelli Renaissance' der. DERS.json C012 ifadesi ('2015 Madrid + Berlin \"The Botticelli Renaissance\"') Orta'nın okunuşunu taşıyor; C016 bibliyografyasındaki 'El canto del cisne 2015 n°64' ve KANIT_DOSYASI İleri'yi destekliyor, yani Orta düzeyindeki öğrenci yanlış sergi adı öğreniyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Huysmans, eseri \"peinture gazeuse, la pièce soufflée\" (gazlı resim, üflenmiş parça), \"ce n'est même plus de la porcelaine, c'est du léché flasque\"",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Huysmans, Salon 1879'da eseri sert eleştirdi (L'Art moderne): \\\"une pauvreté qui n'a pas de nom\\\", \\\"chromos de boîtes à dragées\\\", \\\"peinture gazeuse\\\", \\\"léché flasque\\\";",
+  "aciklama": "İleri §6'daki [C021] etiketli cümle, C021 ifadesinde ve KANIT_DOSYASI'nda kayıtlı olmayan Huysmans alıntı parçaları taşıyor: 'la pièce soufflée', 'ce n'est même plus de la porcelaine' ve aynı bölümle §7'de geçen 'baudruche mal gonflée. Ni muscles, ni nerfs, ni sang'. Bu alıntılar 7 dosyanın hiçbirinde kayıtlı olmadığından dosya seti içinde doğrulanamıyor; ayrıca Orta §6'nın 'porselene benzetir' özeti, İleri'deki 'artık porselen bile değil' alıntısıyla örtüşmüyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "With a relatively restricted number of elements—a head, a bust, arms, a torso, legs, a stomach,—how many masterpieces she made! Then why seek out other things to paint or sculpture?\"",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Bouguereau'nun akademik sanat ilkesi (1885 Institut de France konferansı alıntısı): \\\"Antiquity reveals what an inexhaustible source of variegated inspiration nature is…\\\".",
+  "aciklama": "İleri §3'teki [C022] etiketli cümle, C022 ifadesinde '…' ile kesilmiş 1885 konferans alıntısının devamını tam metin olarak veriyor; alıntının 'With a relatively restricted number…' ile başlayan bölümü DERS.json ve KANIT_DOSYASI'da hiçbir yerde kayıtlı değil.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "usually the subject is merely a pretext to hint at or to express an underlying ideal, an ideal for which the public is more receptive on account of its familiarity with the subject\" [C045].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Salon 1863'te Napoléon III satın aldı; Gautier \\\"Salon of Venus\\\" dedi; tez bölüm 5 analiz eder; Cabanel \\\"subject is merely a pretext… an ideal\\\" sözü; S10 Zola eleştirisini aktarır.",
+  "aciklama": "İleri §7, [C045] etiketiyle Cabanel sözünün tam metnini veriyor; C045 ifadesi alıntıyı 'subject is merely a pretext… an ideal' biçiminde kesiyor ve tam metin dosya setinde başka yerde kayıtlı değil. İleri §8'deki 'tez, Cabanel'de kabuk/yunus sembollerinin eksikliğini not eder' cümlesi de C045'te olmayan bir ek iddiadır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Saç rengi gibi ayrıntılar yalnız metadata düzeyindedir (WD P180 \"chestnut hair/brown hair\"); görsel doğrulama yapılmadı (belirsiz) [C043] (belirsiz).",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Görsel İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük (S7: preferred 4014×5670 PD; ikinci 1239×1749 PD).",
+  "aciklama": "İleri §4'teki [C043] etiketli cümle 'chestnut hair/brown hair' saç rengi değerini taşıyor; C043 ifadesi yalnız görselin incelenmediğini ve metadata/lisans/çözünürlük kontrolünü söylüyor ve bu saç rengi değeri 7 dosyanın hiçbirinde kayıtlı değil.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Kronos, Uranos'un kesilen uzuvlarını denize atar; beyaz köpük yayılır ve içinde bir bakire büyür; tanrıça önce Kythera'ya, sonra Kypros'a (Kıbrıs) çıkar; Eros ve Himeros doğuşunda ona eşlik eder",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Mitolojik arka plan: Hesiodos Theogonia — Afrodit deniz köpüğünden doğar; Kythera ardından Kıbrıs (Kypros); Zephyros kabukla taşır; Horai karşılar;",
+  "aciklama": "İleri §5'teki [C020] etiketli cümle Kronos, Uranos ve Himeros adlarıyla Theogonia sahnesinin ayrıntısını ekliyor; C020 ifadesi bu adları içermiyor (yalnız köpükten doğuş, Kythera/Kıbrıs, Zephyros, Horai, inciler) ve bu isimler KANIT_DOSYASI'da da geçmiyor. Aynı cümledeki Homeros Hymn 6 ayrıntıları ('nemli soluğu', 'giysiler ve taçla donatır') de iddiada yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "2017–18 Münih \"Gut·Wahr·Schön\"; 2019–20 Orsay ve 2020–21 Strasbourg \"Huysmans critique d'art\" [C012].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "2015 Madrid + Berlin \\\"The Botticelli Renaissance\\\"; 2017–18 Münih; 2019–20 Orsay + 2020–21 Strasbourg \\\"Huysmans critique d'art\\\".",
+  "aciklama": "İleri §2'deki [C012] etiketli cümle 2017–18 Münih sergisine 'Gut·Wahr·Schön' adını veriyor; C012 ifadesi ve KANIT_DOSYASI yalnız '2017–18 Münih' diyor ve bu sergi adı 7 dosyanın hiçbirinde başka yerde geçmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1283024",
+  "tur": "A",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Birincisi ölçek ve resmî kabul: üç metreyi aşan bir tuval, yapıldığı yıl Devlet tarafından satın alındı [C005][C009].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Boyut H. 300,0 ; L. 215,0 cm (muzenin iki ayrı kaydı aynı; → C036 D1).",
+  "aciklama": "Başlangıç dersi tabloyu 'üç metreyi aşan bir tuval' diye tanımlıyor; künye ve C005 yüksekliği tam 300,0 cm veriyor, yani tuval üç metreyi aşmıyor. DERS_ORTA ve DERS_ILERI aynı ölçüyü doğru biçimde '300 × 215 cm' olarak aktarıyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Tek noktalı perspektif İsa'nın başında odaklanır; tavan kirişleri, duvar panoları ve pencere ışığı derinliği kurar (kaynak betimi) [C010].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: High Renaissance; geçişte pivotal (Hartt/Frommel); mekân/perspektif/hareket/duygu ustalığı.\",",
+  "aciklama": "C010 iddiasının ifadesinde yalnız 'mekân/perspektif/hareket/duygu ustalığı' genellemesi vardır; [C010] etiketli ders cümlesi ise perspektif odağının İsa'nın başında olması ile tavan kirişleri/duvar panoları/pencere ışığı gibi somut kompozisyon ayrıntılarını 'kaynak betimi' olarak sunar ve bu ayrıntılar iddia envanterinde yoktur. Aynı ayrıntılar DERS_BASLANGIC.md, DERS_ILERI.md §4 (arka pencereler, izleyici konumu dahil) ve SORULAR.json (GZ03 ipucu, TK02) üzerinden de [C010] etiketiyle kullanılır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Judas'ın konumu anlatısaldır: Peter'in önünde, gölgede, keseyi tutar; grubun içinde ama ayrı (kaynak betimi) [C009].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "enwiki: konu = ihanet duyurusundan sonraki an (Gospel John); apostol sırası (Bartholomew, James Less, Andrew, Judas, Peter, John | Jesus | Thomas, James Great, Philip, Matthew, Jude, Simon).",
+  "aciklama": "C009 ifadesinde yalnız konu ve havari sırası vardır; ORTA'daki [C009] etiketli 'kaynak betimi' cümlesi Judas'ın 'gölgede' durduğunu ve 'keseyi tutar' olduğunu ekler — bu ayrıntılar iddiada yoktur. Aynı eksik eşleme ORTA §5'teki 'Eucharist öğeleri (ekmek, şarap, kase)' ve 'geleneksel tasvirlerde Judas öte yanda/izole' cümleleri ile SORULAR.json GZ02'deki ('gölgede arayın') [C009] kullanımlarında da sürer.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "1557'de Lomazzo, Zenale'nin Christ yüzünü bitirmeme tavsiyesini aktarır: \"James'lerden daha güzel yüz hayal edilemez\" [C008].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: 1557 Lomazzo: Zenale, Christ yüzünü bitirmeme tavsiyesi.\",",
+  "aciklama": "C008 iddiası yalnız 'Zenale, Christ yüzünü bitirmeme tavsiyesi' derken ORTA cümlesi tırnak içinde 'James'lerden daha güzel yüz hayal edilemez' alıntısını ekler; bu alıntı metni DERS.json iddiasında ve KANIT_DOSYASI.md C008 kaydında yoktur. Aynı alıntı DERS_ILERI.md §6 ve SORULAR.json CS10 doğru şıkkında da [C008] kanıtına dayandırılır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Bu, Cennini'nin tarif ettiği ama \"freskten riskli\" saydığı yöntemdir; Cennini yalnızca son dokunuşlar için önermişti [C004].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: teknik tempera on gesso/pitch/mastic on wall plaster (true fresco DEĞİL); stone wall double layer + white lead undercoat; Cennini riskier-than-fresco.\",",
+  "aciklama": "ILERI'deki [C004] etiketli cümle Cennini'nin yöntemi 'yalnızca son dokunuşlar için önerdiğini' iddia eder; C004 ifadesinde Cennini yalnız 'riskier-than-fresco' olarak geçer, 'son dokunuşlar' kapsamı yoktur. ORTA §6'daki 'Cennini'nin 14. yy'da' nitelemesi de C004'te bulunmayan ek bir tarihsel ayrıntıdır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Bu tercih teknik trajedidir: nem + çevre + intentional damage → orijinalden çok az kaldı; çok restorasyon, son 1999 [C011].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: orijinalden çok az kaldı; çok restorasyon, son 1999; Leonardo'nun en büyük işi (Sala delle Asse hariç).\",",
+  "aciklama": "ORTA §6 ve DERS_ILERI.md §2'deki [C011] etiketli cümleler kayıp nedenleri arasında 'intentional damage' (kasıtlı hasar) sayar; C011 ifadesi yalnız 'orijinalden çok az kaldı; çok restorasyon, son 1999' der ve hasar nedenlerini listelemez, bu ayrıntı KANIT_DOSYASI.md'de de geçmez.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q128910",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Sforza planının tam uygulanmaması da bir bağlam dersidir: mozole yerine küçük bir mortuary chapel yapıldı; yani patronun büyük iddiası küçüldü [C006].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: patron Ludovico Sforza; aile mozolesi planı (perhaps Bramante); lunettes Sforza arms; karşı duvar Montorfano Crucifixion + Leonardo Sforza aile tempera figürleri (bozuldu).\",",
+  "aciklama": "ORTA'daki [C006] etiketli cümle, mozole planı yerine 'küçük bir mortuary chapel' yapıldığını nitelemesiz olgu olarak aktarır; C006 ifadesinde yalnız 'aile mozolesi planı (perhaps Bramante)' vardır, şapelin yapıldığı bilgisi iddiada ve KANIT_DOSYASI.md'de yoktur.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Eser, Millet'nin köylü yaşamını işleyen bir dizi tablosunun parçasıdır; frwiki bunu \"Moissonneurs\" (1852) gibi işlerle birlikte anar [C016].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Eser, glaneuses teması üzerine on yıllık araştırmanın sonucu.\",",
+  "aciklama": "Orta §3'teki [C016] etiketli cümle, ne iddia metninde ne KANIT_DOSYASI kayıtlarında hiç geçmeyen bir eser adı+yıl ayrıntısı taşıyor (frwiki'ye atfedilen 'Moissonneurs' 1852); C016 yalnız 'on yıllık araştırmanın sonucu' der, bu ek ayrıntı hiçbir iddia tarafından kapsanmıyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Balzac, Les Paysans'ta bir kâhyanın glanage hakkını sorguladığını, belediye başkanının \"certificat d'indigence\" (yoksulluk belgesi) koşulunu",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Glanage hakkı 19. yy'da tartışmalıydı: Balzac, Les Paysans'ta \\\"certificat d'indigence\\\" koşulu ve komünler arası geçiş",
+  "aciklama": "C021 yalnız 'certificat d'indigence' koşulu ve komünler arası geçişi kaydeder; dersin eklediği 'bir kâhyanın glanage hakkını sorguladığını' ayrıntısı (DERS_ILERI.md §2'de 'kâhyanın glanage'ı sorguladığını' olarak tekrarlanır) ne DERS.json ne KANIT_DOSYASI kaydında var.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "can çekişir gibi görünen yaşlı kadınların glanage mevsiminde çeviklik, sağlık ve gençlik kazandığı söylenir; bu, hakkın yoksullar için ne kadar hayati olduğunun edebi tanığıdır (yorum) [C021].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Glanage hakkı 19. yy'da tartışmalıydı: Balzac, Les Paysans'ta \\\"certificat d'indigence\\\" koşulu ve komünler arası geçiş",
+  "aciklama": "İleri §2'deki [C021] etiketli cümle, Balzac pasajından ('can çekişir gibi görünen yaşlı kadınların glanage mevsiminde çeviklik, sağlık ve gençlik kazandığı') iddia metninde ve kanıt kayıtlarında bulunmayan bir içerik ayrıntısı ekliyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Kadınlar ön planda, sırtları kırık, bakışları yere sabitlenmiştir [C011].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Hasat sonrası tarlada kalan başakları toplayan üç köylü kadın; kırsal proletaryayı temsil eder.\",",
+  "aciklama": "Orta §4'teki [C011] etiketli cümle 'sırtları kırık, bakışları yere sabitlenmiştir' sahne ayrıntısı taşıyor; C011 yalnız konuyu ve kırsal proletaryayı kaydeder. SORULAR.json CS10 yanlış-gerekçesi de 'Orsay bakışların yere sabitlendiğini söyler (S1)' derken bu ayrıntı KANIT_DOSYASI'nın S1 özetinde geçmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Millet uzak planları yavaşça bulanıklaştırarak altın rengi, tozlu bir atmosfer üretir ve arka planın bukolik izlenimini artırır [C015].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Batan güneşin sıyırıcı ışığı ön planı hacimlendirir, figürlere heykelsi görünüm verir; arka plan altın rengi, tozlu, bukolik (müze betimi).\",",
+  "aciklama": "C015'in ifadesinde (ve KANIT_DOSYASI C015 kaydında) uzak planların bulanıklaştırılması yok; Orta §4'teki bir önceki [C015] cümlesindeki 'giysilerinin renklerini canlandırır' ayrıntısı da kayıtlı değil. DERS_ILERI.md §4 aynı betimi ('uzak planlar bulanıklaştırılarak') tekrarlar.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "itwiki'nin betimlediği gibi yüzlerin gizlenmesi, bu figürleri tekil portreler olmaktan çıkarıp bir sınıfın anonim amblemine dönüştürür (yorum) [C058][C017].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"itwiki betimi (Orsay IT'ye atfen): eller kızarmış/şişmiş, giysiler yıpranmış, ten güneşten yanmış; \\\"respiro epico\\\" — bu ayrıntılar S11 Orsay IT metninde YOK (atıf boşluğu).\",",
+  "aciklama": "C058 itwiki betimini eller/giysiler/ten olarak kaydeder; İleri §7'deki 'yüzlerin gizlenmesi' ayrıntısı ne iddiada ne KANIT_DOSYASI kaydında var — itwiki'ye atfedilen, kanıt envanterince kapsanmayan bir ek betim.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "fr/it wiki 83,5×111; enwiki infobox 83.8×111.8, metin \"84 by 112\" (33×44 inç); Smarthistory 83.5×110 (33×43 inç)",
+  "dosya_2": "DERS.json",
+  "alinti_2": "enwiki 111.8/112 ↔ Smarthistory 110 ↔ WD 110; iki birincil devlet kaydı çelişiyor; çözülmedi.\",",
+  "aciklama": "İleri §6 boyut varyant listesindeki enwiki infobox yüksekliği '83.8', '(33×44 inç)' ve Smarthistory yüksekliği '83.5' değerleri C005/C040 ifadelerinde ve KANIT_DOSYASI C040 kaydında geçmiyor (kayıtlı değerler: enwiki 111.8/112 ve '84 by 112', Smarthistory 110 / 33×43 inç).",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "figürleri Michel-Ange'ın sibillerinden gelme iddiasında, Poussin'in hasatçılarından daha gösterişli paçavralar taşıyan korkuluklar olarak küçümsedi [C031].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Paul de Saint-Victor: \\\"Ses trois glaneuses ont des prétentions gigantesques : elles posent comme les trois Parques du paupérisme.\\\"\",",
+  "aciklama": "C031 yalnız Saint-Victor alıntısını kaydeder; İleri §9'daki 'Michel-Ange'ın sibilleri / Poussin'in hasatçıları / korkuluklar' karşılaştırmaları (isim ayrıntıları) iddiada ve KANIT_DOSYASI C031 kaydında yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "About, Millet'nin karşıtlık üzerine hesap yapmadığını, basit ve vakur bir üslupla boyadığını savunur [C032].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Edmond About olumlu: \\\"elles glanent leur pain miette à miette ... l'aumône du hasard qui leur est garantie par la loi\\\" (kaynak tarih anomalisi →C046).\",",
+  "aciklama": "C032 yalnız About'nun alıntısını kaydeder; İleri §9'daki 'karşıtlık üzerine hesap yapmadığını, basit ve vakur bir üslupla boyadığını' görüş ayrıntısı iddiada ve KANIT_DOSYASI C032 kaydında yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1368055",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "bir eleştirmen eserde \"1793 giyotinlerinin\" ürkütücü işaretini görür; toprak sahipleri bu emekçi sınıfını yükselen sosyalizm hareketiyle ilişkilendirir [C030].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"1857 Salonunda üst sınıflarca olumsuz karşılandı; emek sahnesi için alışılmadık büyük boyut (tarih/din resmine ayrılan ölçek) ve 1848/1793 devrim korkusu.\",",
+  "aciklama": "C030 'üst sınıflarca olumsuz karşılanma ve 1848/1793 devrim korkusu' kaydeder; İleri §2'deki 'toprak sahipleri ... yükselen sosyalizm hareketiyle ilişkilendirir' ayrıntısı iddiada ve KANIT_DOSYASI C030 kaydında yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q140161127",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Uffizi'de Daniele'nin Strage degli Innocenti'si bulunur; Deposizione değil.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Della Rovere şapeli (Trinità dei Monti): 1548–1560 Daniele + öğrencileri; Assunzione \\\"opera manierista del secondo periodo\\\"; Presentazione; Strage degli Innocenti Michele Alberti.",
+  "aciklama": "CS01'in D şıkkı yanlış-gerekçesi Strage degli Innocenti'yi Uffizi'de konumlandırır; C032 iddiası ve aynı dosyadaki CS06 D gerekçesi ('Alberti Della Rovere şapelindeki Strage...') bu işi Trinità dei Monti'nin Della Rovere şapelinde gösterir. Öğrenciye başka bir eserin yeri konusunda birbirini yalanlayan iki bilgi verilir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q140161127",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Rosso Fiorentino'nun 1521 tarihli Volterra İndiriliş'idir; aynı konu ve aynı şehir adını taşır ama erken Floransa Maniyerizmine ait ayrı bir eserdir",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Maniyerist başyapıt statüsü: S8 \\\"unanimemente … vertici del Manierismo\\\" (ATIFSIZ); S11 \\\"capolavoro del primo Manierismo\\\"; S3 kategori \\\"Mannerist religious paintings\\\".",
+  "aciklama": "Karşılaştırma cümlesi [C016] etiketiyle Rosso'nun 1521 tarihli ayrı eserini, Volterra/erken Floransa Maniyerizmi ve repo-verisi ayrıntılarını aktarır; C016'nın ifadesinde Rosso, 1521 veya repo verisi hiç yoktur (bu veri yalnız DERS.json veri_notları/karşılaştırma önerisi ve KANIT §5'te, hiçbir iddiaya bağlı değil). Aynı uyuşmayan etiket DERS_ILERI.md §8'deki Rosso maddesinde de tekrarlanır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q140161127",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Başlangıç döneminde Sodoma ve Peruzzi ile ilişkisi anlatılır; DBI, Vasari'nin Sodoma öğrenciliği iddiasını ihtiyatla karşılar ve Peruzzi karşılaşmasını daha anlamlı bulur [C031].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Kariyer: Volterra erken freskleri (Palazzo dei Priori 1532/34; Maffei cephe 1534–35); Roma'ya Peruzzi ile; Perino del Vaga çevresi; 1541 Accademia di San Luca;",
+  "aciklama": "Sodoma/Vasari öğrencilik anlatısı C031'in ifade metninde kayıtlı değildir. Aynı [C031] etiketi altında DERS_ORTA.md ve DERS_ILERI.md 'İtalyanca Vikipedi'ye göre ilk büyük sipariş' ifadesini, ILERI ayrıca 'Crocifisso şapeli' ve 'Matteo ve Luca havarileri' ayrıntılarını ekler — bunların hiçbiri iddiada bulunmaz.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q140161127",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Heykel girişimi, Guglielmo della Porta'nın \"yetersizlik\" suçlamaları ve Michelangelo'nun onu desteklediği iddiasıyla bir polemiğe de sahne oldu;",
+  "dosya_2": "DERS.json",
+  "alinti_2": "II. Henri atlı anıtı: Caterina de' Medici Michelangelo'dan istedi; Daniele 1560 Ruberto Strozzi sözleşmesi; yalnız at tamamlandı;",
+  "aciklama": "[C038][C042] etiketli cümledeki Guglielmo della Porta polemiği ne C038 ne C042 ifadesinde geçer; aynı paragrafın 'Henri II'nin ölümü (1559)' ve 'At, Campidoglio'daki atlı heykelden daha büyük olacaktı' ayrıntıları da hiçbir dosyadaki iddia metnine dayanmaz.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q140161127",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "DBI'nin üslup nitelemesi bu dersin biçimsel dayanağıdır: \"monumental, ciddi ve ölçülü (meditata) bir resim\"; Michelangelo'nun son resimsel yapıtlarının \"zor ve soyut ifade sıcaklığını\"",
+  "dosya_2": "DERS.json",
+  "alinti_2": "DBI: Son Yargı ile ilk yüzleşenlerden, geç Raffaello mannerına dayanarak \\\"con indipendenza\\\"; \\\"pittura monumentale, severa e meditata\\\".",
+  "aciklama": "ILERI §4, DBI'ye atfen tırnak içinde 'zor ve soyut ifade sıcaklığı' nitelemesi verir; C009 ifadesi (ve KANIT_DOSYASI.md'nin C009 kaydı) yalnız 'con indipendenza' ile 'pittura monumentale, severa e meditata' alıntılarını içerir, bu alıntı hiçbir dosyadaki iddia/kanıt kaydında geçmez.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1430990",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "enwiki, sol üstteki maske benzeri başın sağ alt köşedeki iki gerçek maske tarafından yankılandığını not eder",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Venüs'ün ayaklarındaki maskeler: şehvetin aldatmayı maskelemesi.\",",
+  "aciklama": "İleri §3'teki [C015][C016] etiketli cümle maskelere 'sağ alt köşe' konumu veriyor ve bunu enwiki'nin notu olarak aktarıyor; ancak C015/C016 ifadelerinde ve KANIT_DOSYASI.md'nin S2/S4 özetlerinde böyle bir köşe bilgisi yok — corpus boyunca maskeler yalnız 'Venüs'ün ayaklarında' (C016, GZ05, TK02) tanımlanıyor. Görsel incelenmediğinden (C041) bu konum ayrıntısı hiçbir dosyada doğrulanamıyor; insan editör teyidi gerekli.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1430990",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Althorp 1750 resim kataloğu; Dibdin'in Aedes Althorpianae'si (1822); Passavant'ın İngiltere/Belçika sanat gezisi (1833) ve İngilizce turu (1836)",
+  "dosya_2": "DERS.json",
+  "alinti_2": "tartışma literatürünü listeler (Panofsky, Devich, Gould, Frangenberg, Keach, Hope, Smith, Conway, Cheney, Bosch, Gaston,",
+  "aciklama": "İleri §2, [C050] etiketiyle NG bibliyografyasında Althorp 1750 kataloğu, Dibdin 1822, Passavant 1833/1836, Art Journal 1860 ve Wornum 1861'in listelendiğini kesin olarak söylüyor; ancak C050'un ifadesi (ve KANIT_DOSYASI.md'nin C050/C042 listeleri) bu adları içermiyor. İleri §9'daki 'Forster 1971 (Cosimo portrelerinde siyasi ideoloji)' de [C050] ile anılıyor ama hiçbir dosyanın listesinde (C050/C042) Forster yok — adlar corpus içinde doğrulanamıyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1430990",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "The Divine Comedy grubunun bir box set'ine, Peter Taylor'ın bir öyküsüne ve Switched at Birth dizisinin bir bölüm başlığına adını vermiştir [C052]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"enwiki: eser Iris Murdoch The Nice and the Good'da tartışılır (Ashworth makalesi atıflı); Painter/Davies/Mitchell eserlerinde anılır.\",",
+  "aciklama": "İleri §10'daki [C052] etiketli cümle, The Divine Comedy box set, Peter Taylor öyküsü ve Switched at Birth bölüm başlığı gibi somut alımlama kayıtları taşıyor; C052 ifadesi ve KANIT_DOSYASI.md'nin C052 maddesi yalnız Murdoch/Painter/Davies/Mitchell'ı sayıyor — bu isimler corpus'un hiçbir dosyasında geçmiyor ve doğrulanamıyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1430990",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "itwiki'nin \"la Gioia\", \"la Disperazione\", \"la Verità\" ve \"forse un satiro e una ninfa\" adlandırmaları atıfsızdır",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"itwiki: putto \\\"la Gioia\\\"; maskeler \\\"forse un satiro e una ninfa\\\"; \\\"la Disperazione\\\", \\\"la Follia o la Malattia\\\". Atıfsız; \\\"forse\\\" korundu.\",",
+  "aciklama": "İleri §3'teki [C027] etiketli cümle 'la Verità' adını da içeriyor; bu ad C027'nin ifadesinde yok, C026'ya aittir (önceki paragrafta [C015][C037] ile verilir). C027'nin kendi içeriğindeki 'la Follia o la Malattia' ise bu cümlede geçmiyor — etiket ile iddia içeriği tam eşleşmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1430990",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "tablo, Venüs'ün elindeki altın top kadar kusursuz, soğuk ve sert bir lüks nesnesi görünümündedir [C020]",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "\"arka\": \"Venüs Cupid'i öperken ok çalar; altın elma (Paris'in Yargısı); bir çift güvercin; Cupid tacı çalar; ayaklarda maskeler (şehvet aldatmayı maskeler).\",",
+  "aciklama": "Venüs'ün elindeki aynı nesne Orta §4'te ve İleri §6'da ([C020]) 'altın top', DERS.json C010'da, TK02/GZ01/CS07'de 'altın elma' olarak adlanıyor; 'altın top' ifadesi C020'un kendisinde ve KANIT_DOSYASI.md'nin C020 alıntılarında yok. Öğrenci tabloda iki farklı altın nesne var sanabilir; terim tekilleştirilmeli.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "E",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Birincisi, ölçek ve hırs: bu, Caillebotte'un en büyük, en iddialı eseridir ve AIC 1964'te edindiğinden beri ziyaretçi favorisidir [C010].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"AIC'nin en büyük, en iddialı eseri; 1964'ten beri ziyaretçi favorisi.\",",
+  "aciklama": "'En büyük, en iddialı eser' üstünlüğünün sahibi dosyalarda farklı: DERS_BASLANGIC.md'deki [C010] etiketli cümle 'Caillebotte'un' derken DERS.json'daki C010 iddiası (KANIT_DOSYASI.md'deki C010 satırı da aynı) 'AIC'nin' der; aynı olgu iki farklı özneye bağlanıyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Araç 70°–80° geniş açı sağlar ve ön plan ile arka planı eşit keskinlikte tutar; bu, çizimin geniş açısıyla ve göğüs hizasındaki bakışla uyumludur [C033].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Camera lucida: fotoğraftan kopyalama 'unlikely' (kâğıt kalın, lens bozulması yok, standart olmayan lens gerekirdi); tent camera obscura 'poor candidate';",
+  "aciklama": "İleri §3'teki [C033] etiketli cümleler iddia metninde olmayan sayı/yer ayrıntıları taşıyor: '70°–80°', Garcia deneyinde 'yerden yaklaşık elli inç', 'rue de Turin kaldırımında' ve 'Pablo Garcia' adı; '%17 yükseklik artışı' da C033'te yok (yalnız KANIT_DOSYASI.md kaynak listesinde geçiyor).",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "AIC'nin kendi tanımı eseri \"içine yürümek isteyeceğiniz bir resim\" diye sunar [C010][C006].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"AIC'nin en büyük, en iddialı eseri; 1964'ten beri ziyaretçi favorisi.\",",
+  "aciklama": "AIC'ye atfedilen 'içine yürümek isteyeceğiniz bir resim' alıntısı C010 ve C006 iddialarında ve KANIT_DOSYASI.md'nin doğrulanan pasaj listesinde geçmiyor; alıntı ders metninde kaynağı doğrulanamayan bir tanım olarak sunuluyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Eski ve yeni kent birleşir: ön plandaki çift ve yalnız adam eski kentin dar kaldırımında yürürken, karşıda yeni yapılmış eczane binası dengeyi kurar [C013].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Bakış açısı rue de Turin'den rue de Saint-Pétersbourg yönüne; Turin/Moscou kavşağı; 8. arrondissement; Gare Saint-Lazare çevresi;",
+  "aciklama": "[C013] etiketli cümle iddiada ve KANIT doğrulanan listede olmayan 'eczane binası' mekân betimini taşıyor; aynı bölümdeki 'ordered grandeur' alıntısı da C013'te yok.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Figürler, 1863'te stereoskopik Paris/New York görüntülerinden yapılmış \"yürüyen gerçek bireyler\" çizimleriyle karşılaştırıldığında, bilimsel bir kesinlikten çok bir izlenim taşırlar [C016].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Kompozisyon: 'frozen moment, as if we are witnessing the sudden click of a camera's shutter'; ritmik zigzag figür düzeni, şemsiyelerle birlik;",
+  "aciklama": "C016 'donmuş an'/zigzag betimini içerirken '1863'te stereoskopik Paris/New York görüntülerinden çizimler' karşılaştırması (tarih ve sahne ayrıntısı) ne C016'da ne KANIT_DOSYASI.md doğrulanan listesinde var.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "devlet başta isteksizdi, Luxembourg'un alanı yetersizdi ve sanatçı başına üç-dört eser sınırı konuyordu [C039].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Vasiyet bağlamı: René'nin ölümü (1876) sonrası vasiyet; Renoir tenfizci; Ocak 1895 anlaşması;",
+  "aciklama": "[C039] etiketli cümle 'Luxembourg' mekânı ile 'sanatçı başına üç-dört eser' sayısını, izleyen cümle ise 'Musées Nationaux danışma komitesi' kurum adını taşıyor; bunlar C039 ifadesinde yok.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Temizlik ayrıca \"lavender-hued umbrellas\"ı maskeleyen tabakayı kaldırdı ve Marmottan eskizindeki \"hint of sun after the rain\" parlaklığını yeniden okunur kıldı [C037].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "temizlik 'hint of sun after the rain' parlaklığını ortaya çıkardı; blanching/microfissures; çerçeve 2000 (plain scotia).\",",
+  "aciklama": "C037'de (ve DERS_ORTA.md §10 ile SORULAR.json DY05/TK05'te) 'hint of sun after the rain' 2013–14 temizliğin ortaya çıkardığı parlaklıkken, DERS_ILERI.md aynı ifadeyi 'Marmottan eskizindeki' parlalık olarak sunuyor; bu nesne atfı iddiada yok.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "erkeğin \"expansiveness and careless grace\"i ile kadının \"self-contained neatness\"i karşıtlık kurar [C019].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Adam: silindir şapka, açık palto (düğme/düğme deliği yok), 'perhaps that of a veteran flaneur'; kadın: yün iki parça, kürk manşet/toque,",
+  "aciklama": "C019 yalnızca giysi betimi ve 'perhaps that of a veteran flaneur' alıntısını içeriyor; İleri §5'teki [C019] cümlelerde 'expansiveness and careless grace', 'self-contained neatness', 'appropriate feminine tidiness' alıntıları, eldivenlerin 'Marmottan eskizinde' olmadığı ve gözlem sahibi 'Margherita Andreotti' iddiada yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "en radikal iki değişiklik kafe binasının daha sağa alınması ve önüne büyük, arkası dönük erkek figürünün eklenmesiydi [C034].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Teknik: ön astarlı, standart olmayan boy tuval (el dokuması); ilk çiviler 3–5 cm aralık; boyut değişmiş olabilir;",
+  "aciklama": "C034 tuval/fırça/palette knife içeriğidir; 'kafe binasının sağa alınması' kompozisyon değişikliği (DERS_ILERI.md §3'te [C033] etiketiyle yineleniyor) ve §6'daki 'weft snakes' detayı hiçbir iddia ifadesinde geçmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "katalog bu kutupların \"invisible locking force\"undan söz eder [C016].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Kompozisyon: 'frozen moment, as if we are witnessing the sudden click of a camera's shutter'; ritmik zigzag figür düzeni, şemsiyelerle birlik;",
+  "aciklama": "Kataloğa atfedilen 'invisible locking force' alıntısı C016'da ve KANIT_DOSYASI.md'nin doğrulanan K3 pasajlarında geçmiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Café Guerbois'ya ve 1876–1877'den itibaren Empresyonistlerin yeni buluşma yeri Café de la Nouvelle-Athènes'e giderken geçiyordu;",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Bakış açısı rue de Turin'den rue de Saint-Pétersbourg yönüne; Turin/Moscou kavşağı; 8. arrondissement; Gare Saint-Lazare çevresi;",
+  "aciklama": "[C013] etiketli cümle 'Café Guerbois' ve 'Café de la Nouvelle-Athènes' mekân adları ile '1876–1877'den itibaren' tarihini taşıyor; bunlar C013 ifadesinde ve KANIT doğrulanan listede yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "De Nittis'in *La place des Pyramides*'i (Salon 1875) ve Béraud'un *Sunday at the Church of Saint-Philippe-du-Roule*'u (Salon 1877) tanınabilir mekânları başlıklarında tanımlarken,",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"1877 katalog başlığı 'Rue de Paris; Temps de pluie'.\",",
+  "aciklama": "De Nittis ve Béraud eser adları ile Salon 1875/1877 tarihleri C002 ve C013 ifadelerinde yok (DERS_ORTA.md §2'deki [C002][C013] etiketli cümlede de aynı isimler geçiyor); iddia envanterinde hiç anılmıyorlar.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "1879'da boulevard Haussmann'a taşınınca sahnelerini balkonundan, daha yüksek bir bakışla kurdu [C048].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"K3: 'painted when the artist was 28'; 'a turning point in his career'; katalog sonucu 'his greatest work' (doğum Ağustos 1848 → 1877'de 28/29; kaynak ifadesi AYNEN korunur, hesaplanmaz).\",",
+  "aciklama": "'1879'da boulevard Haussmann'a taşınma' tarihi ve 'balkon' ayrıntısı C048'de yok; iddia yalnız 28 yaş, turning point ve greatest work içeriyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "önceki çerçeve (1964'e dek) uyarlanmış bir Louis XVI entablature çerçevesiydi ve 2000'de kaldırıldı [C037].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "temizlik 'hint of sun after the rain' parlaklığını ortaya çıkardı; blanching/microfissures; çerçeve 2000 (plain scotia).\",",
+  "aciklama": "C037'de çerçeve için yalnız 'çerçeve 2000 (plain scotia)' var; 'Louis XVI entablature', 'kırmızı bole üzerine su yaldızlı' gibi detaylar, 'üç ana figürde blanching' sayısı, 'sistematik dikey çatlaklar/rulo' yorumu ve 'daha mavi görünüm' betimi (DERS_ORTA.md ve SORULAR.json'da da geçer) iddia ifadesinde bulunmuyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Arkada şemsiyeli yayalar, bir araba ve krem renkli apartmanlar uzanıyor [C016].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Kompozisyon: 'frozen moment, as if we are witnessing the sudden click of a camera's shutter'; ritmik zigzag figür düzeni, şemsiyelerle birlik;",
+  "aciklama": "'Krem renkli apartmanlar' renk/sahne betimi C016'da ve KANIT doğrulanan listede yok; görsel bu oturumda incelenmediği (C050) için doğrulanmamış bir görsel ayrıntı olarak ders metnine girmiş durumda.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "kadının yırtık şalı ve düzensiz etek ucu, erkeğin diğer erkeklerin diz hizasındaki paletotlarına kıyasla fazla uzun pardösüsü, onların tüketici değil sokak satıcısı olabileceğini düşündürür [C021].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Arka planda azınlık işçiler: hizmetçi, iki araba sürücüsü, merdivenli boyacı (K3: merdivenli işçi + önlüklü kadın + sokak satıcıları); karikatür/popüler baskı tipleme dili.\",",
+  "aciklama": "'Yırtık şal', 'düzensiz etek ucu', 'uzun pardösü' gibi somut sahne ayrıntıları ve 'sol baştan ikinci bina' konum betimi C021'in işçi tiplemesi listesinde yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1452762",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "bu, 1877 üçüncü Empresyonist sergi kataloğundaki \"Rue de Paris; Temps de pluie\" başlığının İngilizce çevirisidir [C001][C002].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"1877 katalog başlığı 'Rue de Paris; Temps de pluie'.\",",
+  "aciklama": "Serginin 'üçüncü Empresyonist sergi' kimliği C001/C002/C040 ifadelerinde yok; DERS_ORTA.md §3'teki [C040] cümlesi ve SORULAR.json CS09'un doğru cevabı ('3. Empresyonist Sergi, Nisan 1877, kat.1') de aynı kanıtsız adlandırmaya dayanıyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Belgeli olgu: sararmış düşük kaliteli kopyalar Europeana Foundation'ın \"The Problem of the Yellow Milkmaid: A Business Model Perspective on Open Metadata\" White Paper No. 2'sine",
+  "dosya_2": "DERS.json",
+  "alinti_2": "   \"ifade\": \"2009 Met \\\"Vermeer's Masterpiece: The Milkmaid\\\" sergisi varlığı (Rijksmuseum bibliyografyası: NYT + Met ilanı); tarih/küratör/1939 ayrıntıları → C072 (E).\",",
+  "aciklama": "İleri §6, [C026] etiketiyle 'belgeli olgu' olarak sunulan Europeana White Paper No. 2 künyesi (yazarlar, Kasım 2011), C026 iddiasının ifadesinde yok; C026 yalnız 2009 Met sergisinin varlığını kapsıyor. Ayrıntı KANIT_DOSYASI.md'nin C026 maddesinde de kayıtlı değil; etiket kapsamı dışındaki bir olguya bağlanmış.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Rijksmuseum'un kendi tanımıyla: Vermeer bu basit gündelik işi \"etkileyici bir resmin konusu\" yaptı [C027].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "   \"ifade\": \"Hizmetçi süt döker; tek hareket süt akıntısı; tam dikkat\",",
+  "aciklama": "Başlangıç dersinde Rijksmuseum'a atfedilen 'etkileyici bir resmin konusu' alıntısı [C027] etiketiyle veriliyor; C027'un ifadesi ve KANIT_DOSYASI.md'nin C027 maddesi bu alıntıyı içermiyor (kayıtlı K1 alıntıları 'entirely absorbed', 'like a statue', 'hundreds of colourful dots'). Alıntının iddia kaydında karşılığı yok.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "EV pencere betimlemesini erken *Officer and Laughing Girl* ile karşılaştırır (üslup tartışması) [C004 — K7]; Liedtke \"son erken iş mi, ilk olgun iş mi\" der [C004 — K6].",
+  "dosya_2": "DERS.json",
+  "alinti_2": "   \"ifade\": \"Tarih önerileri ihtilaflı: Blankert 1660–61, Wheelock c.1658–60, Liedtke c.1657–58, Franits c.1658–59; bülten içi varyasyon\",",
+  "aciklama": "İleri §3'teki [C004] etiketli cümle, C004'un ifadesinde ve KANIT_DOSYASI.md'nin C004 maddesinde bulunmayan somut ayrıntılar taşıyor (karşılaştırma eseri Officer and Laughing Girl ve Liedtke'nin 'son erken iş mi, ilk olgun iş mi' sözü). Aynı ayrıntılar DERS_ORTA.md §3'te de [C004] etiketiyle geçiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "D",
+  "dosya_1": "DERS.json",
+  "alinti_1": "   \"tanim\": \"Nesnelere kültürel/ahlaki anlam yükleyen söz-resim geleneği; stoofjenin Sinnepoppen’deki Mignon des Dames kodu.\",",
+  "dosya_2": "KANIT_DOSYASI.md",
+  "alinti_2": "cinsel ima / iç sıcaklık (K7 ham: \"it may allude to the maid's inner warmth or even have a sexual implication since the warmth of the coals moved upwards under the skirt\"). Emblem → C066.",
+  "aciklama": "DERS.json temel_kavramlar'ındaki Emblem maddesi tanımında Sinnepoppen/Mignon des Dames içeriğini (C066 iddiasının içeriği) veriyor ancak kanit dizisi C055'i listeliyor; KANIT_DOSYASI.md'nin C055 maddesi 'Emblem → C066' diyerek bu bağlantıyı C066'ya yönlendiriyor. Kavram–kanıt eşlemesi emblem içeriğini taşımayan iddiayı gösteriyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "B",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Yorum tartışmalı: erotik ima (Liedtke, EV) ↔ pratik amaç/çalışkanlık (Cant 2009, yalnız Wikipedia aracılığıyla; kitap erişilmedi) ↔ yaygın dekor, özel anlam yok (Dibbits, çini için).",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Dibbits daha kuşkucudur: Cupid'li çiniler o kadar yaygındır ki özel anlam taşımayabilir [C054]",
+  "aciklama": "Dibbits'in Cupid çinisi okuması DERS_ORTA.md ve DERS_ILERI.md'de (ve SORULAR.json'un kendi DY04 açıklamasında) 'özel anlam taşımayabilir' olasılık nitelemesiyle verilirken TK05 tekrar kartında 'özel anlam yok' biçiminde kesin olgu olarak sunuluyor; niteleme kaybolmuş.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "B",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "   \"ifade\": \"Vermeer bu eserde, çağdaşlarının kullandığı ucuz azurit yerine pahalı doğal ultramarin kullandı.\",",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Doğal ultramarin (Afgan lapis); çağdaşlar GENELLİKLE azurit (EV 'usually employed'); saydam glazür.",
+  "aciklama": "C043 iddiasında 'çağdaşlar GENELLİKLE azurit' olasılık nitelemesi varken DY03 ifadesi nitelemesiz 'çağdaşlarının kullandığı ucuz azurit' diyor; aynı dosyanın açıklama satırı GENELLİKLE'ı koruduğu hâlde soru metninde kesinleştirme var.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q167605",
+  "tur": "B",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "   \"soru\": \"Sağ alt köşede ne var? Kutunun kapağındaki deliklerin ve içindeki kırmızımsı alanın (köz kabı) işlevini düşünün; duvar dibindeki çinileri sayın.\",",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Delikli kapaklı ahşap stoofje (K1 'stoofje' + görsel); içinde kırmızımsı bir alan görünür (köz/kap ayrımı görselde net değil).",
+  "aciklama": "C035 iddiasında kırmızımsı alanın köz mü kap mı olduğunun 'görselde net değil' olduğu belirtilirken GZ04 sorusu kırmızımsı alanı doğrudan '(köz kabı)' olarak kesinleştiriyor; aynı sorunun ipucu satırı 'EV betimi' nitelemesini koruyor.",
+  "onem": "DÜŞÜK"
+ }
+]

@@ -1,0 +1,267 @@
+{
+  "madde_id": "MIT-001",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (mit-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Hesiodos'un Theogonia'sına göre Gorgonlar Keto ve Phorkys'in kızlarıdır; üç kız kardeş Sthenno, Euryale ve Medusa'dır ve yalnızca Medusa ölümlüdür, diğer ikisi ölümsüz ve yaşlanmazdır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-001-K01",
+      "kaynak_baslik": "Hesiod, Theogony, İngilizce çev. Hugh G. Evelyn-White (1914, LCL) — Perseus Digital Library",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-eng1:270-285",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"the Gorgons who dwell beyond glorious Ocean … Sthenno, and Euryale, and Medusa who suffered a woeful fate: she was mortal, but the two were undying and grew not old.\"",
+      "pasaj_konum": "Hesiod, Theogony 270–278 (Perseus kartı 270–303)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Yunanca metin (K02) aynı kartta doğrulandı: \"Σθεννώ τ᾽ Εὐρυάλη τε Μέδουσά τε λυγρὰ παθοῦσα. μὲν ἔην θνητή, αἳ δ ἀθάνατοι κα ἀγήρ\". Mitolojik anlatı olduğu için GELENEKSEL_ANLATI türü; madde metninde tarihsel olgu gibi sunulmadı."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Ovidius'un Metamorphoses'inde Medusa'nın yılan saçlı oluşu Athena'nın (Minerva) cezasıdır: denizlerin efendisinin (Poseidon/Neptunus) onu Athena tapınağında elde ettiği 'söylenir' (dicitur); Athena öfkeyle yüzünü çevirip aigis'iyle gözlerini kapar ve ceza olarak Gorgon'un saçlarını yılanlara dönüştürür.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-001-K03",
+      "kaynak_baslik": "Ovid, Metamorphoses, İngilizce çev. Brookes More (1922) — Perseus Digital Library",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:latinLit:phi0959.phi006.perseus-eng1:4.790",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "İngilizce kart: \"Fame declares the Sovereign of the Sea attained her love in chaste Minerva's temple… To punish that great crime minerva changed the Gorgon's splendid hair to serpents horrible.\" — Latince (K04): \"Hanc pelagi rector templo vitiasse Minervae / dicitur. Aversa est et castos aegide vultus / nata Iovis texit; neve hoc inpune fuisset, / Gorgoneum crinem turpes mutavit in hydros.\"",
+      "pasaj_konum": "Ovid, Metamorphoses 4.799–804 (Perseus ENG kartı 4.790–804 içinde)",
+      "belirsizlik_ifadeleri": [
+        "dicitur (\"söylenir/anlatılır\") — kaynak anlatıyı dolaylı aktarır",
+        "Fame declares (İngilizce çeviride 'şöhret/anlatı söyler' ihtiyatı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K04"],
+      "celisen_kaynaklar": [
+        "Hesiodos, Theogony 270–282 (MIT-001-K01/K02): Athena'nın cezalandırması yoktur; Medusa doğuştan canavar ailesinin ölümlü üyesidir → versiyon farkı, çelişki değil; birleştirilmedi."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü yalnız OVIDIUS VERSİYONU olarak geçerlidir; Hesiodos versiyonuyla birleştirilmez (bkz. C004)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Hesiodos'ta Athena'nın cezalandırması yoktur; Medusa doğuştan canavarlar ailesinin ölümlü üyesidir — 'güzel kadın cezalandırıldı' biçimindeki yılan saçlı anlatı geç dönem (Ovidius) geleneğidir; bu nedenle iki versiyon tek anlatıda birleştirilmez.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-001-K05",
+      "kaynak_baslik": "Medusa in Ancient Greek Art — The Metropolitan Museum of Art, Heilbrunn Timeline of Art History (Madeleine Glennon, Mart 2017)",
+      "url": "https://www.metmuseum.org/toah/hd/medu/hd_medu.htm",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-21"
+      },
+      "pasaj": "\"According to Hesiod's Theogony, she was one of three Gorgon sisters born to Keto and Phorkys, primordial sea gods; Medusa was mortal, while the others, Stheno and Euryale, were immortal.\" — Theoi.com (K16): \"Earlier Greek writers and artists, however, simply portray her as a monster born into a large family of monsters.\"",
+      "pasaj_konum": "K05 'Medusa in Ancient Greek Art', 2. paragraf; K16 'Gorgones & Medousa', giriş; K01 Theogony 270–282",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K01", "MIT-001-K02", "MIT-001-K16"],
+      "celisen_kaynaklar": [
+        "Ovidius, Metamorphoses 4.799–804 (MIT-001-K03/K04): Athena cezası ve yılan saça dönüştürme anlatısı — geç dönem geleneği; bu madde iki versiyonu ayrı kaynak adıyla verir."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı erişim HTTP 429 (Vercel Security Checkpoint) olduğu için Wayback snapshot (2024-12-21, id_ ucu) okundu. Birincil metin (Hesiodos) ile derleme düzeyi kaynak birlikte kullanıldı (Kural 7)."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "'Gorgoneion' terimi Medusa'nın başını ve yüzünü ifade eder; antik Yunan sanatında mimaride, vazo resminde ve metal işlerinde yaygın bir bezeme motifidir ve Arkaik dönemde (y. MÖ 700–480) tapınak bezemesinde özellikle yaygındır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "MIT-001-K05",
+      "kaynak_baslik": "Medusa in Ancient Greek Art — The Metropolitan Museum of Art, Heilbrunn Timeline of Art History (Madeleine Glennon, Mart 2017)",
+      "url": "https://www.metmuseum.org/toah/hd/medu/hd_medu.htm",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-21"
+      },
+      "pasaj": "\"The term gorgoneion refers to the head and face of Medusa, which was used often as a decorative motif. It is a prolific symbol of her particular power that appears in architecture, vase painting, and metalwork. The gorgoneion was a pervasive image in temple decoration of the Archaic period (ca. 700–480 B.C.).\"",
+      "pasaj_konum": "K05, 'gorgoneion' bölümü",
+      "belirsizlik_ifadeleri": [
+        "ca. 700–480 B.C. (dönem yaklaşık tarihleri)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in aday iddia ifadesinde geçen 'Selinunte C Tapınağı alınlıkları, antefiksler' örneği, bu araştırmada kayıt altına alınan pasajda geçmediği için madde metnine TAŞINMADI (Kural 12: pasajda olmayan ayrıntı eklenmez). İnsan denetiminde kaynak sayfanın ilgili bölümü ayrıca incelenebilir."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Medusa/gorgoneion için en yaygın yorum apotropaiktir: kötüyü uzaklaştıran koruyucu imge, 'kötüyü kovmak için kötünün imgesi' (Metropolitan Museum denemesi bunu 'en yaygın yorum' ihtiyatıyla verir); Lopez (2025) gorgoneion ve 'kemer göz' kullanımının Greko-Romen dünyasında yaygın ve toplumsal olarak kabul görmüş bir dinsel pratik olduğunu savunur.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "MIT-001-K05",
+      "kaynak_baslik": "Medusa in Ancient Greek Art — The Metropolitan Museum of Art, Heilbrunn Timeline of Art History (Madeleine Glennon, Mart 2017)",
+      "url": "https://www.metmuseum.org/toah/hd/medu/hd_medu.htm",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-21"
+      },
+      "pasaj": "\"The most common interpretation of Medusa suggests she is an apotropaic symbol used to protect from and ward off the negative, much like the modern evil eye. She represents a dangerous threat meant to deter other dangerous threats, an image of evil to repel evil.\" — Lopez (K14, özet, s. 1): \"The use of apotropaic iconography, such as the gorgoneion and 'evil eye', was not isolated solely within the taboo field of witchcraft but rather was more commonplace and widely accepted as an appropriate religious practice that thrived in the Greco-Roman World.\"",
+      "pasaj_konum": "K05 1. paragraf; K14 özet (s. 1)",
+      "belirsizlik_ifadeleri": [
+        "\"The most common interpretation…\" (yorum olarak işaretli)",
+        "\"suggests\" (önerir/ima eder)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K14"],
+      "celisen_kaynaklar": [
+        "Faraone (MIT-001-K15, yalnız örnek PDF okundu): gorgoneion'u kent/ev/beden sınırlarında kullanılan muskalar bağlamında ele alır — karşıt değil, farklı işlev vurgusu."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "YORUM türü: DOGRULANDI'nın anlamı, bu yorumun SAHİPLERİNE (Met denemesi + Lopez 2025) aidiyetinin okunan kaynaklardan doğrulanmasıdır; yorumun içeriğinin genel kabul olduğu anlamına gelmez. Madde metninde '…'ya göre / savunur' kalıbıyla sahiplendirildi ve anlam otomatik atfedilmedi. İki bağımsız kaynak kullanıldı (Kural 7). K14'teki DOI alanı yer tutucu olduğu için kaydedilmedi."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Yılan saçlı Medusa tipi MÖ 1. yüzyıla kadar yaygınlaşmaz; Arkaik dönemde canavarca (yuvarlak yüz, geniş gözler, sakal, dışarı uzayan dil), Klasik ve Helenistik dönemde dişil/insansı biçimde betimlenir; görünümü köklü biçimde değişse de ayırt edici özelliği çarpıcı cepheselliğidir (figürün izleyiciye doğrudan bakması).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-001-K05",
+      "kaynak_baslik": "Medusa in Ancient Greek Art — The Metropolitan Museum of Art, Heilbrunn Timeline of Art History (Madeleine Glennon, Mart 2017)",
+      "url": "https://www.metmuseum.org/toah/hd/medu/hd_medu.htm",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-21"
+      },
+      "pasaj": "\"The snake-haired Medusa does not become widespread until the first century B.C.\" … \"Her appearance changes drastically through the centuries, but she is always recognizable due to her striking frontality.\"",
+      "pasaj_konum": "K05, 3.–5. paragraflar",
+      "belirsizlik_ifadeleri": [
+        "dönem genellemesi (Arkaik / Klasik / Helenistik tipoloji özeti)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K16"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief, Arkaik 'canavar' tanımı için ikinci kaynak olarak K16'yı (Theoi.com) önermiştir: \"Earlier Greek writers and artists … simply portray her as a monster born into a large family of monsters.\" K16 derleme düzeyindedir (Kural 2 gereği tek başına yeterli sayılmaz, destekleyici olarak eklendi). Tek-kaynak sınırlılığı insan denetiminde not edilmelidir."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Caravaggio'nun Medusa'sı (ahşap tören kalkanına/rotella'ya uygulanmış tuval üzerine yağlıboya) Uffizi envanterinde 'inv. 1890 no. 1351' olarak kayıtlıdır ve Cardinal Francesco Maria del Monte tarafından Ferdinando I de' Medici'ye armağan edilmiştir; armağanın tarihi kaynaklar arasında ihtilaflıdır (Uffizi'nin Bacchus sayfası: 1608, Cosimo II'nin düğünü vesilesiyle; Google Arts & Culture/Uffizi partner kaydı: 1598).",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "MIT-001-K06",
+      "kaynak_baslik": "Caravaggio: Bacchus — Gallerie degli Uffizi eser sayfası (Medusa envanter atfı içerir)",
+      "url": "https://www.uffizi.it/en/artworks/caravaggio-bacchus",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K06: \"This painting, together with the Medusa (inv. 1890 no. 1351), was donated by Cardinal del Monte to Ferdinando I de' Medici on the occasion of the wedding of his son Cosimo II in 1608.\" — K11: \"In 1598 Cardinal Francesco Maria del Monte gave this painted shield to the Grand Duke Ferdinando I.\" / \"The Medusa is painted on canvas applied to a wooden shield.\"",
+      "pasaj_konum": "K06 Bacchus sayfası son paragraf; K11 Google Arts & Culture asset açıklaması",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K11"],
+      "celisen_kaynaklar": [
+        "MIT-001-K06 (Uffizi, müze kaydı): armağan 1608, Cosimo II'nin düğünü vesilesiyle",
+        "MIT-001-K11 (Google Arts & Culture / Uffizi partner kaydı): armağan 1598, Ferdinando I'e",
+        "Eserin kendi tarihi de farklı: MIT-001-K10 (Uffizi video sayfası) '1595' ↔ MIT-001-K11 '1595–1598' → madde 'y. 1595–1598' ihtiyatıyla yazıldı"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Envanter numarası (inv. 1890 n. 1351) müze kaydından doğrulanmıştır; ARMAĞAN TARİHİ çelişkilidir ve madde metninde kesinleştirilmemiştir. Brief C010 için envanter açısından DOGRULANDI, tarih açısından CELISKILI önermişti; iddia metni her iki öğeyi taşıdığı için statü CELISKILI olarak yazıldı (statü ajan tarafından yükseltilmedi, Kural 9). İtalyan devlet katalog kaydı (K17, scheda ICCD16218731) zaman aşımı nedeniyle açılamadı → ihtilaf karara bağlanamadı. Kalkanın boyutları hiçbir açılan kayıttan doğrulanamadı."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Uffizi'deki 'Medusa' panosu 18. yüzyıldan itibaren geleneksel olarak Leonardo da Vinci'ye atfedilmiş ve bu atıfla ün kazanmıştır; Percy Bysshe Shelley'nin 1819'daki 'On the Medusa by Leonardo da Vinci in the Florentine Gallery' şiiri dönemin bu geleneksel atfını izler; pano günümüzde bir 17. yüzyıl Felemenk ressamına —Uffizi'nin güncel sayfalarında Otto Marseus van Schrieck'e— atfedilir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "MIT-001-K09",
+      "kaynak_baslik": "Otto Marseus van Schrieck's Medusa and Percy Bysshe Shelley's poem — Gallerie degli Uffizi video sayfası",
+      "url": "https://www.uffizi.it/en/video/otto-marseus-van-schrieck-s-medusa-and-percy-bysshe-shelley-s-poem",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K09: \"In 1819, the English poet Percy Bysshe Shelley, after a visit to the Uffizi, wrote 'On the Medusa by Leonardo da Vinci in the Florentine Gallery', thus following the traditional attribution of the painting at that time (whereas nowadays it is attributed to a 17th-century Flemish painter).\" — K08: \"the extraordinary fame that the painting enjoyed from the eighteenth century on, when it was erroneously attributed to Leonardo da Vinci.\" — K07: oda metninde \"a painting of the Gorgon's head crowned in writhing serpents painted by Otto Marseus van Schrieck but attributed in past centuries to Leonardo da Vinci\".",
+      "pasaj_konum": "K09 video sayfası özeti; K08 'Medusa: the myth, the antiques and the Medici' sergi metni; K07 'Caravaggio and the 17th century' oda metni",
+      "belirsizlik_ifadeleri": [
+        "\"traditional attribution\"",
+        "\"nowadays it is attributed to\"",
+        "\"erroneously attributed\"",
+        "\"attributed in past centuries to Leonardo da Vinci\""
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-001-K07", "MIT-001-K08"],
+      "celisen_kaynaklar": [
+        "Ressamın kimliği konusunda müze içi kayıt farkı: MIT-001-K08 (2009 sergi metni) '16. yüzyılda etkin anonim Felemenk ressam' der; MIT-001-K07/K09 (güncel sayfalar) '17. yüzyıl Felemenk / Otto Marseus van Schrieck' verir. Yazar güncel atfı esas aldı, eski kaydı örnek versiyon_notu ve akademik_tartismalar 4'te sakladı."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI, ATIF TARİHÇESİ içindir (Leonardo atfı → ün → Shelley → güncel Felemenk atfı); ressamın kesin kimliği için değildir. Panonun envanter numarası bu araştırmada bulunamadı → verilmedi. Bu pano, Vasari'nin Leonardo biyografisindeki kayıp kalkan (rotella) anlatısının konusu olan nesneden AYRIDIR; Vasari metni açılmadığı için kullanılmadı."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Peter Paul Rubens'in 'The Head of Medusa' tablosu Viyana Kunsthistorisches Museum, Gemäldegalerie'de GG 3834 envanteriyle kayıtlıdır; tuval üzerine yağlıboya, 1617/18, 68,5 × 118 cm'dir; Medusa betimi Rubens ve atölyesine, hayvanlar/yılanlar uzman Frans Snyders'a atfedilir (kayıt 'attributed to' ihtiyatını kullanır).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-001-K12",
+      "kaynak_baslik": "The Head of Medusa — Kunsthistorisches Museum Wien, Gemäldegalerie nesne kaydı",
+      "url": "https://www.khm.at/en/artworks/the-head-of-medusa-1626-1",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"The drastic depiction of Medusa with her bulging, blood-shot eyes open wide is by Rubens himself and his workshop; the animals are attributed to the specialist Frans Snyders.\" + kayıt alanları: \"Invs.: Gemäldegalerie, 3834\", \"Time: 1617/18\", \"Material/technology: Canvas\", \"Dimensions: Overall: 68,5 cm × 118 cm\".",
+      "pasaj_konum": "K12 nesne kaydı (canlı), künye ve açıklama alanları; Room 20",
+      "belirsizlik_ifadeleri": [
+        "\"attributed to\" (Snyders için)",
+        "\"1617/18\" (ikili yıl kaydı)",
+        "\"by Rubens himself and his workshop\" (atölye katkısı)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Literatürde Moravian Gallery Brno'da bir versiyondan söz edilir; bu araştırmada müze kaydı açılmadı → teyitsiz, örnek listesine alınmadı (çelişki değil, doğrulanmamış ek versiyon)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Eser Belvedere'de DEĞİL, Kunsthistorisches Museum Wien'dedir (brief uyarısı korundu). KHM kaydındaki dönemsel Stoacı/allegorik okuma (brief C014) YORUM türündedir ve claim üst sınırı (10) nedeniyle ayrı iddia olarak taşınmadı; içeriği resim örneğinin baglam alanında ve akademik_tartismalar 8'de kaynak atfıyla korunmuştur."
+    },
+    {
+      "claim_id": "C016",
+      "iddia": "Metropolitan Museum denemesinin aktardığı yaygın biçime göre Perseus, Gorgonlar uyurken Athena'nın parlak kalkanındaki yansımadan yararlanarak Medusa'nın başını keser; kesik başı kybisis adlı özel bir torbada taşır, başı düşmanlarını taşa çevirmekte ve Andromeda'yı deniz canavarından kurtarmakta kullanır, sonunda başı Athena'ya verir (aigis); ayrıntılar kaynaklar arasında değişir.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-001-K05",
+      "kaynak_baslik": "Medusa in Ancient Greek Art — The Metropolitan Museum of Art, Heilbrunn Timeline of Art History (Madeleine Glennon, Mart 2017)",
+      "url": "https://www.metmuseum.org/toah/hd/medu/hd_medu.htm",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-21"
+      },
+      "pasaj": "\"While the Gorgons slept, the hero attacked, using Athena's polished shield to view the reflection of Medusa's awful face… Perseus had to keep her decapitated head in a special sack strong enough to contain it, called a kybisis… before giving it to Athena for her aegis (34.11.7).\"",
+      "pasaj_konum": "K05, 2. paragraf",
+      "belirsizlik_ifadeleri": [
+        "kaynaklar arası ayrıntı farkı (kalkan/yansıma motifi, torbanın adı) — brief'in versiyon notu"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI, MITOGRAFİ DERLEMESİNİN aktardığı yaygın biçim içindir; birincil metinlerle (Hesiodos/Ovidius) birleştirilmemiştir. Brief'in kaydettiği fark: kalkan-yansıması motifi K03/K04'te (Ovidius) bulunur, K01'de (Hesiodos) yer almaz. Bu nedenle madde metninde 'yaygın biçim' ve 'ayrıntılar kaynaklar arasında değişir' ihtiyatı korundu."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "madde_id": "TEK-003",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (tek-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Belirli pigmentler yağ ya da yağ+reçine medyumla birleştiğinde şeffaf veya yarı şeffaf boya filmleri — glazürler — oluşturur; genellikle daha açık tondaki bir rengin üzerine uygulandıklarında o rengi değiştirir ama şeffaf oldukları için örtmezler; glazür kalınlığı değiştirilerek tonal çeşitlilik ve kabartma yanılsaması elde edilebilir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-003-K01",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Glaze",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/glaze",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Certain pigments when combined with an oil or oil and resin medium form transparent or translucent paint films or glazes. When applied over another colour, generally lighter in tone, they modify that colour but being transparent do not obscure it. By varying the thickness of the glaze, tonal variation and an illusion of relief can be obtained.",
+      "pasaj_konum": "NG glossary 'Glaze' girişi (tam metin)",
+      "belirsizlik_ifadeleri": ["generally lighter in tone", "can be obtained"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C001 (tanım) ve C002 (kalınlık/tonal etki) aday iddiaları aynı sözlük girdisinden geldiği için tek iddiada birleştirildi. Kaynağın 'generally' ihtiyatı iddiada 'genellikle' olarak korundu. Madde metni teknik tanım ile görsel etkiyi ayrı düzlemlerde tutar; 'glaze = derinlik' özdeşleştirmesi yapılmadı."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "'Glaze' terimi bazen ince sürülmüş her yarı şeffaf katman için kullanılır; ancak ince katman alttaki renkten daha açıksa buna doğru olarak scumble denir — scumble, alttaki renkten daha açık tonda ince uygulanmış boya katmanıdır ve yarı şeffaflığı pigment ile medyumun optik doğasından değil inceliğinden gelir, bu yüzden koyu bir alt katman üzerine scumble edilen karışım aynı rengin açık zemin üzerindeki hâlinden daha soğuk ve daha mavi görünür; impasto ise (İtalyanca 'hamur'dan) resim yüzeyinin kalın boya katmanlarıyla yükseltilmesidir, fırça veya spatula izleri genellikle açıkça görülür ve amaç yüzeye düşen ışığın dikkat çekici biçimde yansımasıdır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-003-K02",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Scumble",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/scumble",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "A scumble is a thinly applied paint layer which is lighter in tone than the underlying colour (as opposed to a glaze, which is darker). A scumble is translucent because of its thinness rather than because of the optical nature of the pigments and medium… will appear cooler and more blue in hue than the same colour over a lighter ground",
+      "pasaj_konum": "NG glossary 'Scumble' (tam metin)",
+      "belirsizlik_ifadeleri": [
+        "TEK-003-K01: 'sometimes' ve 'more properly called a scumble' (adlandırma tercihi, kesin kural değil)",
+        "TEK-003-K03: 'usually' (fırça/spatula izlerinin görünürlüğü)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-003-K01", "TEK-003-K03"],
+      "celisen_kaynaklar": [
+        "Terim kapsamı farkı (çelişki değil): TEK-003-K01 'glaze'in bazen her ince yarı şeffaf katman için kullanıldığını not eder, aynı girdi ince açık katman için 'more properly scumble' der; TEK-003-K02 ise ayrımı tonal ölçütle kesinleştirir. Madde bunu kurumsal adlandırma tercihi olarak sunar (akademik_tartismalar 2)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C003 (glaze/scumble ayrımı), C004 (scumble'ın yarı şeffaflık nedeni ve soğuk/mavi görünüm) ve C005 (impasto tanımı) aday iddiaları, 'benzer yöntemlerden farklar' başlığı altında tek iddiada birleştirildi. İkinci kaynak pasajları — TEK-003-K01: 'if the thin paint layer is lighter than the underlying colour it is more properly called a scumble'; TEK-003-K03 (Glossary: Impasto, CANLI): 'impasto (from the Italian for dough) describes areas of the surface of a painting which are heavily built up with paint layers… The intention is to make the light falling across the painting reflect in a particularly noticeable way.' (Rembrandt ve Van Gogh örnekleriyle)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Yağlıboya yavaş kurur ve yumurta temperasından daha esnektir; geniş bir optik etkiler yelpazesine ve daha geniş/ayrıntılı boya uygulamasına olanak verir; van Eyck ve Campin bu özellikleri daha ileri sömürmüş, bu yenilikler 15. yüzyıl başında İtalya'ya taşınmıştır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-003-K11",
+      "kaynak_baslik": "The National Gallery, London — Glossary: Oil",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/oil",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "It allowed a wide range of optical effects and a broader and more detailed application of paint… its properties were further exploited by Van Eyck and Campin whose innovations were subsequently introduced to Italy in the early 15th century… Oil paint dries slowly and is a more flexible medium than egg tempera.",
+      "pasaj_konum": "NG glossary 'Oil' (tam metin)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Sözlük girdisi 'further exploited' (daha ileri sömürüldü) der, 'icat edildi' demez; bu dil madde metninde korunmuştur. Aynı girdi TEK-002 maddesinde TEK-002-K11 olarak kayıtlıdır ve yumurta temperasıyla karşılaştırmada kullanılır (TEK-002 ↔ TEK-003 çapraz bağının kanıtlarından biri)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Yağ içinde çoğu pigment yarı şeffaflaşır; sanatçılar renkleri ince katmanlar — glazürler — hâlinde uygulayarak örneğin Arnolfini Portresi'ndeki zengin, ışıldayan kırmızı ve yeşilleri üretir; Robert Campin'in Merode Triptiği'ndeki gerçekçilik ise kısmen, kahverengi/toprak pigmentlerin bile geniş alanlarda glazürlenerek gölgeli yarı tonlar üretebilmesine dayanır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-003-K06",
+      "kaynak_baslik": "The Metropolitan Museum of Art — Painting in Oil in the Low Countries and Its Spread to Southern Europe (Susan Jones, 2002)",
+      "url": "https://www.metmuseum.org/essays/painting-in-oil-in-the-low-countries-and-its-spread-to-southern-europe",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-03-18"
+      },
+      "pasaj": "Admixture in oils makes most pigments translucent, allowing artists to apply their colors in thin layers, or glazes, thereby generating the rich, glowing reds and greens seen for example in the Arnolfini Portrait by Jan van Eyck…",
+      "pasaj_konum": "Met/Heilbrunn denemesi gövdesi (canlı 429 → Wayback snapshot 20250318181932)",
+      "belirsizlik_ifadeleri": ["Merode Triptiği gerçekçiliği için 'in part' (kısmen)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "TEK-003-K05 (NG Arnolfini In-depth) eserde 'olağandışı pigment yok … relied on van Eyck's skill, not on any technical innovation' der. ÇELİŞKİ DEĞİL: Met katman uygulamasını (glaze), NG malzemenin sıradışılığını konu alır — akademik_tartismalar 6."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynağın 'in part' ihtiyatı iddiada 'kısmen' olarak korundu. Merode Triptiği için bu araştırmada ayrı bir müze katalog kaydı açılmadı; eser yalnız Met denemesinin örneği olarak anıldı ve doğrulanmış resim örnekleri listesine alınmadı."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Arnolfini Portresi'nin (NG186, 1434, 82.2 × 60 cm, 'Oil on wood (probably oak)') National Gallery teknik incelemesine göre alt çizim aşamalıdır; ünlü nesnelerin çoğu (köpek, avize, boncuklar, ayakkabılar) geç aşamada eklenmiştir; kullanılan pigmentlerde olağandışı bir şey yoktur — gerçeklik yanılsaması van Eyck'in teknik yeniliğine değil becerisine dayanır ve resim şaşırtıcı derecede hızlı ve serbest boyanmıştır (parmak izi, fırça sapı kazımaları).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-003-K05",
+      "kaynak_baslik": "The National Gallery, London — Jan van Eyck, 'The Arnolfini Portrait' (NG186)",
+      "url": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "there is nothing unusual in the pigments used – this illusion of reality relied on van Eyck's skill, not on any technical innovation… it was surprisingly quickly and freely painted.",
+      "pasaj_konum": "NG katalog kaydı, In-depth bölümü",
+      "belirsizlik_ifadeleri": ["'probably oak' (taşıyıcı ihtiyatlı)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Bu kayıt, 'van Eyck glaze tekniğini icat etti' anlatısına karşı ESER DÜZEYİNDEKİ kurumsal düzeltmedir (akademik_tartismalar 1c). Kayıtta esere özgü glaze katmanı dökümü verilmediği için madde bölge-bazlı teknik iddia kurmaz."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Kurumsal ve akademik nitelendirmeler van Eyck'i glaze/yağlıboya tekniğinin mucidi olarak değil, üslup öncüsü ve beceri örneği olarak konumlandırır: Metropolitan Museum'un yağlıboya denemesi yağlıboyanın başlangıçlarının Kuzey Avrupa'da 12. yüzyıla kadar kaydedildiğini ve van Eyck'in 16. yüzyılda yağlıboyanın 'icadıyla' yanlış biçimde ilişkilendirildiğini belirtir; National Gallery'nin sanatçı sayfası van Eyck'in yüzey etkilerinin ve doğal ışığın ince ayrıntılı gerçekçi betimiyle karakterize bir resim üslubunun öncüsü sayıldığını ('is credited with originating a style') ve bunun, boyanın yarı şeffaf katmanlar — glazürler — hâlinde biriktirilmesine olanak veren yağlı medyum sayesinde mümkün olduğunu yazar; Metropolitan Museum'un van Eyck denemesi (S. Jones) ise sanatçının itibarının kısmen resimsel yanılsamadaki eşsiz becerisine dayandığını ve yağlı medyumun özelliklerini yönlendirme yeteneğinin bu etkilerin gerçekleştirilmesinde belirleyici rol oynadığını belirtir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-003-K06",
+      "kaynak_baslik": "The Metropolitan Museum of Art — Painting in Oil in the Low Countries and Its Spread to Southern Europe (Susan Jones, 2002)",
+      "url": "https://www.metmuseum.org/essays/painting-in-oil-in-the-low-countries-and-its-spread-to-southern-europe",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-03-18"
+      },
+      "pasaj": "The beginnings of oil painting are recorded as early as the twelfth century in Northern Europe… By then, Jan van Eyck had been incorrectly credited with the 'invention' of oil painting.",
+      "pasaj_konum": "Met/Heilbrunn yağlıboya denemesi, giriş (Wayback snapshot 20250318181932)",
+      "belirsizlik_ifadeleri": [
+        "TEK-003-K04: 'is credited with' (atıf dili — kesin mucitlik iddiası değil)",
+        "TEK-003-K07: 'rests partly on' (itibarın kısmen beceriye dayanması)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-003-K04", "TEK-003-K07"],
+      "celisen_kaynaklar": [
+        "TEK-003-K12 (Vasari, GELENEKSEL_ANLATI) van Eyck'i yağlıboya 'sırrının' mucidi olarak anlatır; bu iddiadaki üç kurumsal/akademik kaynak bu anlatıyı düzeltir. Madde anlatıyı C007'de GELENEKSEL_ANLATI türünde ayrı tutar."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C007 (NG sanatçı sayfası), C009 (Met van Eyck denemesi, Jones — 'rests partly on') ve C012 (Met 'incorrectly credited') aday iddiaları, 'van Eyck mucit mi?' sorusunun kurumsal cevapları olduğu için tek iddiada birleştirildi. İkinci kaynak pasajları — TEK-003-K04 (NG artist page, CANLI): 'Jan van Eyck is credited with originating a style of painting characterised by minutely realistic depictions of surface effects and natural light. This was made possible by using an oil medium, which allowed the building up of paint in translucent layers, or glazes.'; TEK-003-K07 (Met van Eyck denemesi, Wayback 2025-03-18): 'Van Eyck's ability to manipulate the properties of the oil medium played a crucial role in the realization of such effects.' Jones'un değerlendirmesi müze-dur bir yorumdur; madde metninde kaynağa atıfla verilmiş, genel kabul gibi sunulmamıştır. Van Eyck'in 1441 ölüm tarihi NG sanatçı sayfası başlığında ('active 1422, died 1441') geçer; bu ayrı bilgi iddiaya alınmadı."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Vasari'nin geleneksel anlatısına göre Bruggeli Johann (Jan van Eyck) keten yağı ve ceviz yağının diğerlerinden daha hızlı kuruduğunu keşfetmiş, renkleri bu yağlarla karıştırmanın 'distemper'dan (temperadan) sonsuz derecede daha iyi harmanlanabildiğini' ve verniksiz kendi kendine parladığını görmüş ve bu 'sır' Antonello da Messina üzerinden İtalya'ya taşınmıştır; bu anlatı tarihsel olgu olarak sunulamaz.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "TEK-003-K12",
+      "kaynak_baslik": "Giorgio Vasari (çev. G. du C. de Vere, Medici Society 1912–14), Project Gutenberg #26860 c. 3 — 'Life of Antonello da Messina' (ss. 59–64)",
+      "url": "https://www.gutenberg.org/files/26860/26860-h/26860-h.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "he found at length that linseed oil and oil of nuts dried more readily than all the others… it could be blended infinitely better than distemper",
+      "pasaj_konum": "'Life of Antonello da Messina', ss. 59–64 (Johann of Bruges anlatısı)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "TEK-003-K06 (Met): yağlıboyanın başlangıçları Kuzey Avrupa'da 12. yüzyıla kadar kayıtlı; van Eyck 'icat' ile yanlış biçimde ilişkilendirilmişti.",
+        "TEK-003-K05 (NG Arnolfini In-depth): 'no technical innovation … relied on van Eyck's skill'.",
+        "TEK-003-K04 (NG artist page): mucitlik değil 'is credited with originating a style'."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü ANLATININ VASARİ METNİNDEKİ KAYDINI doğrular, anlatının tarihsel doğruluğunu DEĞİL (Kural 5); iddia metninin son cümlesi bu sınırı açıkça belirtir. Yalnız de Vere İngilizce çevirisi okundu; Vasari'nin İtalyanca aslı (1550/1568) açılmadı. 'Johann of Bruges' = Giovanni da Bruggia = Jan van Eyck çeviri farkı not edildi. Aynı metin TEK-002 maddesinde TEK-002-K13 olarak kayıtlıdır."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Petria Noble'ın hakemli araştırmasına göre Rembrandt 1640'tan itibaren tuval resimleri için kahverengi 'kuvars(-kil)' zeminler kullanmaya başlamış ve 1642–1669 arasında tuvalde en yaygın zemini bu olmuştur; koyu zemin üzerinde ışıklı geçişler kalın, yüksek impastolu kurşun beyazı katmanlarıyla inşa edilmek zorundaydı; geç dönemde açıklıklar kalın kurşun beyazıyla inşa edilip yarı şeffaf glazürlerle örtülürdü, çünkü bu hem koyu zeminin tamamen kapatılması hem de ince sürülen açık tonların 'grimsi ve hayaletvari' görünmesinin engellenmesi için gerekliydi; Self Portrait at the Age of 63'ün (NG221) zemininin 'quartz tipi' koyu kahverengi zemin olduğu belirlenmiştir ve farklı zemin bileşimleri, Rembrandt için önemli olanın kuvarsın kendisi değil zeminin koyu tonalitesi olduğunu gösterir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-003-K10",
+      "kaynak_baslik": "Petria Noble, 'The Role of the Colored Ground in Rembrandt's Painting Practice', Journal of Historians of Netherlandish Art 17(2), 2025",
+      "url": "https://jhna.org/articles/the-role-of-the-colored-ground-in-rembrandts-painting-practice/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "In 1640 Rembrandt started using brown 'quartz' grounds for canvas paintings… Rembrandt's later works demanded thick, high-impasto applications to achieve brightness over the dark ground. […] The ground in Self-Portrait at the Age of 63 (1669; The National Gallery, London), also dark brown, was identified as being of the quartz type… it was not the quartz itself that was important to Rembrandt, but rather the dark tonality of the ground.",
+      "pasaj_konum": "JHNA 17(2) 2025 makale gövdesi (DOI: 10.5092/jhna.2025.17.2.5); glaze/impasto pasajı 'lit areas of the face and turban… built up thickly with lead white using high impasto' bölümünde",
+      "belirsizlik_ifadeleri": [
+        "'mostly applied in a single layer'",
+        "'with few exceptions'",
+        "'This was necessary not only to fully cover the dark ground but also to avoid… the loss of opacity in thinly painted light tones that could otherwise become grayish and ghostly.'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C016 (zeminler), C018 (impasto + glaze zorunluluğu) ve C020 (NG221 quartz zemin + tonalite vurgusu) aday iddiaları aynı hakemli kaynaktan geldiği için tek iddiada birleştirildi. TEK KAYNAK uyarısı: makale hakemli olmakla birlikte bu turda ikinci bağımsız kaynak açılmadı; madde metninde 'Petria Noble'ın hakemli araştırmasına göre' atfı görünür tutuldu. Aynı kaynağın Gece Devriyesi bulguları (brief C017) Rijksmuseum kaydı teyitsiz olduğu için KULLANILMADI; Titian 'luce di dentro' genellemesi (brief C015) ise tek kaynaklı ve esere özgüllenemeyeceği için akademik_tartismalar 3'te bırakıldı."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "National Gallery'nin Self Portrait at the Age of 63 (NG221, 1669, oil on canvas, 86 × 70.5 cm) kaydına göre yüzdeki boya çok daha kalın ve yoğun uygulanmıştır — Rembrandt deriyi üç boyutlu olarak modelliyor gibidir; sağ gözün altındaki sarkık kıvrım ağzına kadar yüklü fırçanın tek hareketiyledir; alındaki lekeler pıhtılaşmış boya beneklerinden oluşur; deri gibi yağlıboya da yarı şeffaf olduğundan Rembrandt yarı şeffaf katmanlar ve renkler biriktirir; koyu arka plan ise ince boyalıdır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-003-K09",
+      "kaynak_baslik": "The National Gallery, London — Rembrandt, 'Self Portrait at the Age of 63' (NG221)",
+      "url": "https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-63",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "It's much thicker and more intensively applied; so much so that he appears to be modelling the skin in three dimensions… like skin, oil paint is semi-transparent, so Rembrandt builds up translucent layers and colours",
+      "pasaj_konum": "NG katalog kaydı: Overview + In-depth",
+      "belirsizlik_ifadeleri": ["'it seems as though'", "'appears to be'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-003-K10"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaydın ihtiyatlı ifadeleri ('appears to be modelling') madde metninde 'gibidir' olarak korundu. Bağımsız ikinci kaynak: TEK-003-K10 (Noble 2025) NG221 zemininin 'quartz tipi' koyu kahverengi olduğunu ve ışıklı alanların kalın kurşun beyazı + yarı şeffaf glazür düzeniyle inşa edildiğini belgeler — böylece bu eser çift kaynaklıdır."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "National Gallery Technical Bulletin analizlerine göre erken İtalyan panellerinde (ör. Master of the Palazzo Venezia Madonna, 14. yüzyıl ortası; Botticelli'ye atfedilen Saint Francis, NG 598) yumurta tempera gövde rengi olarak kullanılırken yağ, metal varak ve kazıma işler üzerindeki glazürlere ayrılmıştır — yani glazürün yumurta tempera resimde de sınırlı bir rolü vardır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "TEK-003-K13",
+      "kaynak_baslik": "C. Higgitt & R. White, 'Analyses of Paint Media…', National Gallery Technical Bulletin 26 (2005), ss. 88–97",
+      "url": "https://www.nationalgallery.org.uk/media/15516/higgitt_white2005.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "the use of oil is reserved for glazes over metal leaf… linseed oil is used in the green glaze over Saint Vittorio's gilded sword scabbard",
+      "pasaj_konum": "NGTB 26 (2005), ss. 88–89",
+      "belirsizlik_ifadeleri": ["Saint Francis paneli için 'recently reattributed to Botticelli'"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Bu bulgu TEK-003 ↔ TEK-002 çapraz bağının teknik dayanağıdır: aynı yayın TEK-002 maddesinde TEK-002-K05 olarak kayıtlıdır ve orada 'tempera grassa' bulgusuyla kullanılır. NG 598 için NG katalog sayfası bu araştırmada ayrıca açılmadı; eser bu nedenle örnek kaydında 'analiz kaynaklı' olarak işaretlendi. Master of the Palazzo Venezia Madonna için ayrı bir müze kaydı açılmadı."
+    }
+  ]
+}

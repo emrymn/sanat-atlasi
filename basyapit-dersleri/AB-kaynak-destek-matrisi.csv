@@ -1,0 +1,64 @@
+﻿iddia;seviye;kaynak_id;ifade_ozet;destek_durumu;kaynak_gercekten_destekliyor_mu_not;guven
+C001;A;K1, K2;"Güncel başlık Het melkmeisje / The Milkmaid; eski başlıklar De keukenm";Evet;K2 identified_by ham: başlıklar birebir;yüksek
+C002;A;K1, K2, K5, K9;Sanatçı Johannes Vermeer (1632–1675);Evet;K2/K1/K5 ham: Vermeer 1632–1675;yüksek
+C003;A;K1, K2, K5;"Rijksmuseum güncel tarihi c. 1660; WD precision 9 + circa";Evet;K1/K2/K5 ham: c.1660, precision9, circa;yüksek
+C005;A;K1, K2, K5;Tuval üzerine yağlıboya;Evet;K1/K2/K5 ham: oil on canvas;yüksek
+C006;A;K1, K2, K5;45,5 × 41 cm;Evet;K1/K2/K5 ham: 45.5×41;yüksek
+C007;A;K1, K2, K5;Rijksmuseum, SK-A-2344;Evet;K1/K2/K5 ham: SK-A-2344;yüksek
+C008;A;K1, K2, K5;"1908 satın alma; Vereniging Rembrandt; Six mirasçıları; 550.000 fl + 3";Evet;K1 provenance ham + K24: 550.000/38/1908/VR;yüksek
+C009;A;K1, K2;Onur Galerisi (Eregalerij), HG-2.30.3;Evet;K1/K2 ham: Gallery of Honour, HG-2.30.3;yüksek
+C010;B;K1, K7;Eser imzasız;Evet;"K7 ""No signature"" ham + K1 imza alanı yok";yüksek
+C011;A;K1, K5;"Tür resmi; hizmetçi/süt/ekmek/stoofje konuları";Evet;K1 subjects + K5 P136;yüksek
+C013;A;K1, K2;Görüntü Public Domain Mark 1.0 (veri CC0 çıkarıldı);Evet;"K1/K2 ham: PD mark 1.0; CC0 ifadesi kaynaklarda yok (B20)";yüksek
+C014;A;K1, K7;Erken provenance zinciri müze kaydında ? ile kuşkulu;Evet;"K1 provenance ham: ""?"" zinciri";yüksek
+C015;A;K1, K5;Dissius satışı 16 Mayıs 1696, no.2, 175 fl, Rooleeuw;Evet;K1 provenance ham: 1696 no.2 175 Rooleeuw;yüksek
+C016;B;K7, K6;"1696 satışında en yüksek ikinci Vermeer fiyatı (175 fl); birinci View ";Evet;K7 ham + K6: sıralama (fiyat C071'de ayrıldı);yüksek
+C017;B;K7, K24;"1908 alımı tartışması (K24: 1907 Six, 38 paket, felle discussies, VR katkısı); Morgan=Bredius kanaati";Kısmen;"K24 ham genel kampanya; Morgan/Bredius/de Stuers/Troelstra yalnız K7 (EV)";orta
+C018;B;K7, K1, K5, K9;"Van Ruijven hami; ölüm 1674 (K1=EV=WD P570); WD açıklama metni bayat 1678";Evet;"K7 rich Delft patron; K1 (1624-1674); WD P570=1674 (14 Kasım 2026); 21→C069";orta-yüksek
+C019;B;K6, K7;Reynolds övgüsü (1781 bağlamı);Evet;K7 ham: Reynolds 1781 Burke (EV tek kaynak);orta-yüksek
+C020;A;K3;Külliyat yaklaşık 35 resim;Evet;K3 ham: about 35 paintings;yüksek
+C021;B;K7;"Delft Aziz Luka Loncası; giriş ücreti sıkıntısı";Evet;"K7 ham: Saint Luke Guild, Delft artists/artisans; K22 29 Aralık 1653";yüksek
+C022;B;K7, K22;"Van Buyten 617 fl borç (EV iki yerde); resim verme niteliği/sayısı EV içinde tutarsız";Kısmen;"EV: collateral/security/settled (bir/iki resim); K22: 1663 teminat + dul eş satış; Montias 1989 hedef, erişilmedi";orta
+C023;B;K7;"Tür resmi gelişimi; hizmetçi/sütçü erotik çağrışım (EV)";Evet;"K7 ham: sexually available + tür gelişimi; K16 bu iddiadan çıkarıldı (B01)";orta-yüksek
+C024;B;K7;"EV: emekçi sınıfı temaya dönmedi; tek başına onurlu hizmetçi neredeyse tek örnek";Evet;"K7 ham: working-class theme + stands almost alone; tek emekçi figürlü eser ifadesi kaldırıldı (B05)";orta-yüksek
+C025;A;K3;"2023 Vermeer sergisi 10 Şubat–4 Haziran; en az 27/35; Frick üç eser";Evet;K3 ham: 10 Şubat–4 Haziran, ≥27/35, Frick;yüksek
+C026;B;K1, K6;"2009 Met ""Vermeer's Masterpiece: The Milkmaid"" sergisi varlığı (Rijksm";Evet;"K1 bibliyografya (NYT+Met ilanı); ayrıntı C072'de";orta-yüksek
+C027;A;K1, K4;"Hizmetçi süt döker; tek hareket süt akıntısı; tam dikkat";Evet;K1 curatorial ham + K4 görsel;yüksek
+C028;A;K1, K4;"Figür parlak odada heykel gibi; anıtsal dinginlik";Evet;"K1 ""statue"" ham + K4";yüksek
+C029;B;K7;Anıtsal etki + kompozisyon öğeleri (çerçeve, sepet, pirinç kap) gözün ;Evet;K7 ham: monumental + compositional dynamics;orta-yüksek
+C030;A;K4, K7, K1;"Işık soldaki pencereden; başlık/korse/önlük/etek/kolluklar";Evet;"K4 görsel + K7 çivi gölgesi (light from left); K1 NL yalnız links een venster (B21)";yüksek
+C031;A;K1, K7;"Işık nesne yüzeylerinde ""yüzlerce renkli nokta"" (Rijksmuseum); pointil";Evet;"K1 ""hundreds of colourful dots"" + K7 ""spherical dabs""";yüksek
+C032;A;K1, K4;Masada ekmek sepeti, somun/kırık parçalar, benekli stoneware, toprak k;Evet;K4 + K1 Hollandaca + K7 kapak;yüksek
+C033;A;K25, K7, K4;Duvarda küf/lekeler, çivi ve delikler;Evet;"K25 müze betimi mould on the wall (birincil); K7 çivi+delik; görsel kısmi";orta-yüksek
+C034;B;K4, K6, K7;"Delft çinileri; birinde yaylı Cupid (kaynak betimi)";Kısmen;"K7 Cupid cocked bow + K6; EV tiles which Vermeer added → C052; görsel kısmi, yay ayırt edilemedi";orta
+C035;A;K1, K4;"Delikli kapaklı ahşap stoofje; kırmızımsı iç alan (köz/kap ayrımı net değil)";Evet;"K1 stoofje + K4 görsel; köz parıltılı A-iddia kaldırıldı (B13); köz kabı EV genel betimi";yüksek
+C036;A;K25, K7, K6;Çatlak pencere camı;Evet;"K25 müze betimi crack in the window (birincil); K7 broken pane; K6 Cant konum; görsel yakın teyit yok (bütçe)";orta-yüksek
+C037;A;K1, K4;"Duvarda hasır sepet + pirinç kap; yansıma/emme farkı";Evet;K4 + K1 rieten mand/koperen pot;yüksek
+C038;B;K7;Masa: Cardnell geometrik rekonstrüksiyonu, gateleg sekizgen masanın yarısı;Evet;"K7 ham: Based on Keith Cardnell geometric reconstruction; teknik görüntüleme değil (B07)";orta-yüksek
+C039;A;K4;Craquelure görünür;Evet;K4 ekmek-sepet kırpmasında craquelure;orta-yüksek
+C040;B;K7;"Bezelyi keten; orijinal germe kenarları; 14×14,5 iplik/cm²";Evet;"K7 Technical report → 1995 NGA/Mauritshuis kataloğu (ed. Wheelock); katalog erişilmedi (B03)";orta
+C041;B;K7;"1950 wax-reçine relining; önce paste lining";Evet;"K7 Technical report → 1995 kataloğu; 1950 relining (B03)";orta
+C042;B;K7;Ast: tebeşir + kurşun beyazı + umbra;Evet;"K7 Technical report → 1995 kataloğu; ground (B03)";orta
+C043;B;K6, K7;"Doğal ultramarin (lapis); çağdaşlar genellikle azurit; saydam glazür";Evet;"K7 ham: ultramarin/usually azurit; hami hipotezi açık; 1995 kataloğu (B03)";orta
+C044;B;K7;Korsede kurşun-kalay sarısı;Evet;"K7 ham: lead-tin yellow; 1995 kataloğu (B03)";orta
+C045;B;K6, K7;"Duvar: kurşun beyazı+umbra+kömür siyahı; etek: vermilyon+siyah, büyük olasılıkla madder";Evet;"K7 ham: duvar/etek paleti; madder most likely (B03)";orta
+C046;B;K6, K7;"Kaçış noktası iğne deliği; Liedtke iğne-ip yöntemi";Evet;"K7 ham pinhole; Liedtke ip yöntemi yalnız K6→2009 röportaj (B03)";orta
+C047;A;K3, K14;"2022: Rijksmuseum + Mauritshuis + Antwerpen Üniversitesi (NL bülteni);";Evet;K3/K14 ham: MA-XRF/RIS/Mauritshuis/Antwerpen;yüksek
+C048;A;K3;"Hızlı açık/koyu alt boyama; yavaş-titiz miti revize";Evet;K3 ham: siyah alt boyama, revizyon;yüksek
+C049;A;K3, K14;Baş arkasında siyah eskiz sürahi rafı (kannenbord / jug holder), geliş;Evet;K3/K14 ham: jug holder/kannenbord/Oortman;yüksek
+C050;A;K3, K14, K7;"Vuurmand: közlü kap konan söğüt sepet; önceden biliniyordu, 2022 tanımladı; Dibbits alıntısı NL bültende";Evet;"K3/K14 ham: fire bowl/vuurtest, previously discovered; Dibbits rust en verstilling K14 (B02/B14)";yüksek
+C052;B;K3, K7;Çiniler ve stoofje sonradan eklendi;Evet;K7 ham (afterthoughts) + K3;orta-yüksek
+C056;A;K16;"Lucas 1510 gravür; müze Everyday scenes bölümünde yeni tema olarak sunar";Evet;"K16 bölüm JSON: Everyday scenes→Milkmaid 1510; Eroticism→Altın Buzağı (B01)";yüksek
+C059;B;K2, K6, K7;Figür milkmaid değil kitchen maid (keukenmeid);Evet;K7 ham + K2 eski başlık;orta-yüksek
+C061;A;K8, K15;Jan Steen, The Feast of St Nicholas: SK-A-385, 1665–1668, yağlıboya tu;Evet;K8/K15 ham: SK-A-385, 1665-68, 82×70.5, şarkı;yüksek
+C062;A;K3;Vermeer, Woman Holding a Balance: NGA Washington (kurum düzeyi, 2022 b;Evet;K3 ham: NGA Washington (kurum);yüksek
+C063;A;K3, K23;Vermeer, Girl with a Pearl Earring: Mauritshuis, Lahey (kurum).;Evet;K3/K23 ham: Mauritshuis (kurum);yüksek
+C064;A;K1;"18. yy Amsterdam satış zinciri fiyatları: 1701 no.7 320 fl; 1719 no.20";Evet;K1 provenance ham: 6 satış birebir;yüksek
+C065;B;K7, K6;"Cupid çinisi ve stoofje üzerinde tek kesin anlam yok; Liedtke/Wheelock";Evet;K7 ham: üç görüş farkı;orta-yüksek
+C066;B;K7;Stoofje, Roemer Visscher Sinnepoppen (1614) emblemesinde Mignon des Da;Evet;"K7 ham: Sinnepoppen Mignon des Dames; DBNL birincil kontrol yok";orta
+C067;B;K7;"1648 barışı sonrası Hollanda ekonomisi zirveye ulaştı; Vermeer 1650'le";Evet;K7 ham: ekonomi zirve + tür geçişi;orta-yüksek
+C070;B;K7;1696 Dissius satışında 21 Vermeer satıldı (EV ham).;Evet;K7 ham: 1696 satışında 21 Vermeer;orta-yüksek
+C075;A;(doğrudan);"Uygulamanın yerel görsel kopyası 356×400 px JPEG; Rijksmuseum 1200px t";Evet;Doğrudan dosya incelemesi: 356×400;yüksek
+C076;A;K23;"Girl with a Pearl Earring portre değil tronie (hayalî figür); Mauritsh";Evet;K23 ham: tronie/670/1665/44.5×39/IVMeer;yüksek
+C077;A;K1, K27;"Rijksmuseum Queer stories ""A sexual or lesbian symbol"" sayfası varlığı + giriş metni";Evet;"K1 Stories bağlantısı + K27 giriş sunucu tarafında; gövde okunamadı (B17)";orta-yüksek
+C078;B;K7;Gizli sepet eski çamaşır/giysi sepeti yorumu (EV + Taylor alıntısı);Evet;"K7 ham: clothes basket with laundry + Taylor heedless; konum lower-left ↔ K3 lower right (B04)";orta-yüksek

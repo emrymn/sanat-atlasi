@@ -1,0 +1,996 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18167078",
+ "sanatci_id": "giovanni-battista-tiepolo",
+ "baslik": "Kleopatra'nın Ziyafeti",
+ "ozgun_baslik": "The Banquet of Cleopatra",
+ "kunye": {
+  "sanatci": "Giovanni Battista (Giambattista) Tiepolo",
+  "sanatci_yasam": "5 Mart 1696 Venedik – 27 Mart 1770 Madrid",
+  "tarih": "1743–1744",
+  "tarih_belirsizlik": "NGV başlık \"(1743-1744)\"; enwiki 1744, itwiki 1743, WGA 1743-44; WD P571 precision 8 + 1743/1744 qualifiers (D001/C042)",
+  "teknik": "Tuval üzerine yağlı boya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 250.3,
+   "genislik": 357.0
+  },
+  "muze": "National Gallery of Victoria, Melbourne",
+  "envanter": "103-4",
+  "edinim": "Felton Bequest, 1933 (NGV credit); satın alma 1932 Colnaghi's üzerinden (GAP aynası) — yıl/satıcı/bedel ihtilaflı (D003/C044)",
+  "konum": "17th to 18th Century European Paintings Gallery, Level 2, NGV International",
+  "telif_durumu": "Kamu malı (Tiepolo ö. 1770; PD-Art/PD-old-100-1923); NGV PD görüşünde; indirme: yayın+ticari olmayan, tam künye, kırpmasız; ticari için Reproduction Request Form"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Giambattista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project / National Gallery of Victoria)",
+  "lisans": "Public domain (PD-Art | PD-old-100-1923, deathyear=1770)",
+  "dogrulama": {
+   "yontem": "metadata (imageinfo + GAP şablonu); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "5978×4177 px; 13.340.496 bayt (~13,3 MB); JPEG",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C051); GZ TASLAK; kompozisyon S2/S5/S11 metninden; NGV indirme koşulları (C040): tam künye + kırpmasız, ticari için form"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 415
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1368
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2650
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-katmanları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri",
+   "DERS_ILERI.md#3-sipariş-çevresi-ve-venedik-bağlamı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sipariş-çevresi-ve-venedik-bağlamı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-teatralite"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-alımlama-luxuriadan-trajik-âşıka"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-konservasyon-ve-çerçeve-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyon-ailesi"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NGV birincil kataloguyla künyeyi (1743-1744, 103-4, 250.3×357.0, Felton 1933, Rococo) doğrular.",
+  "Melbourne tuvalini Labia freski, Arkhangelskoye tuvalleri ve Londra NG6409'dan ayırır; WD P11807 versiyon karışıklığını yönetir.",
+  "Kompozisyonu ve Veronese göndermesini kaynak betimleriyle analiz eder (görsel incelenmedi; GZ TASLAK).",
+  "Edinim/provenance (D003/D006/D007) ve sıvı (D004) ihtilaflarını kaynak hiyerarşisiyle yönetir.",
+  "Tomory'nin imzalı yorumlarını olgulardan ayırır; teatralite okumasını yorum olarak değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Modello",
+   "tanim": "Kompozisyonu hamile göstermek/onay almak için küçük yağlıboya çalışma; Melbourne tuvalinin modello'su Paris Cognacq-Jay'de.",
+   "kanit": [
+    "C021",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Rococo",
+   "tanim": "18. yüzyılın zarif, dekoratif üslubu; NGV'nin bu eser için akım etiketi.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Trompe-l'œil",
+   "tanim": "Göz yanılmacı mimari betim; Labia'da Mengozzi Colonna şeması (ayrı eser).",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "ad": "Felton Bequest",
+   "tanim": "NGV'ye eser kazandıran satın alma fonu; credit line \"Felton Bequest, 1933\".",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "Loggia",
+   "tanim": "Açık havada sütunlu galeri; kaynakların betimlediği ziyafet mekânı.",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı \"The Banquet of Cleopatra\" (NGV); proje TR adı \"Kleopatra'nın Ziyafeti\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Giambattista Tiepolo (Giovanni Battista Tiepolo; 5 Mart 1696 Venedik – 27 Mart 1770 Madrid).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih \"(1743-1744)\" (NGV başlık; → C042/D001).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlı boya (oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut 250.3 × 357.0 cm (→ C043/D002: WGA 249×346 aykırı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "National Gallery of Victoria, Melbourne'de.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter no 103-4 (Accession Number).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Credit line \"National Gallery of Victoria, Melbourne · Felton Bequest, 1933\" (→ C044/D003).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sergileme: 17th to 18th Century European Paintings Gallery, Level 2, NGV International.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Departman: International Painting; NGV akım etiketi: Rococo.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Arka yüzünde siyah boyayla yazıt: sağ altta \"2608\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Çerçeve: F. A. Pollak, Londra, 1955; oyma ahşap + altın varak; \"Good original condition\"; özgün çerçevenin biçimi bilinmiyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "10 Şubat 1744 Algarotti çerçeve parası ödedi; 5 Mart 1744 sanatçıya 300 zecchini ödendi; eser Dresden'e sevk edildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "2002–03 temizlik/restorasyon (NGV); ABC 2003: Carl Villis + John Payne bir yıllık çalışma (→ C057/C058 yıl nüansı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Konu (NGV About): Kleopatra inci küpesini çıkarır, bir bardak sirke içinde çözer ve içer; Antonius bahsi kaybeder (→ C045/D004).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yazınsal kaynaklar: Plinius Natural History (enwiki 9.58.119–121; K3 zinciri) + Plutarkhos Lives (Antony 25.36.1); NGV \"written in AD 77\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Bahis ayrıntıları (Plinius; Tomory Loeb III 245–47): tek ziyafete on milyon sesterces; hakem Lucius Plancus ikinci inciyi engeller; ikinci inci Pantheon Venüs'ünün kulaklarına takılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "itwiki: iki figür arasında hakem \"Lucio Munazio Planco\" oturur (kompozisyon yeri itwiki'ye özgü, ATIFSIZ; hakem rolü B: C017).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Melbourne tuvali, Tiepolo'nun bu konudaki üç büyük resminin İLKİ; her birinin küçük modelli'leri var (K2 Christiansen 152–153).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Palazzo Labia fresk döngüsü (Banquet + Meeting) AYRI eser; Arkhangelskoye'de iki büyük tuval daha (1747; 338 × 600 cm) (K1 Anderson 209; → C049/D008).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Melbourne tuvalinin modello'su Paris Musée Cognacq-Jay'de; Algarotti'nin ölümüne kadar onun mülkiyetindeydi (K2 152; K1 201).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Londra NG6409 AYRI eser: 1740s, 46.3 × 66.7 cm, oil on canvas, Room 33; Alexander kardeşler hediyesi 1972; Labia için \"may be an early oil sketch\" (→ C046/D005).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Stockholm Üniversitesi'nde Labia kompozisyonunun bir modello'su daha; çeşitli koleksiyonlarda hazırlık çizimleri (K1 201,209; K2 150–152).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Kompozisyon (K2 Christiansen 152–153): açık hava/loggia, görkemli mimari, görünür gökyüzü, arka teras; Melbourne'de basamak YOK, mermer zemin benzer etki; 2–3 ana figür oturur, hizmetkârlar ayakta.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Veronese'ye açık gönderme: Wedding at Cana (1563, Louvre), Feast in the House of Levi (1573, Accademia); Venedik beğenisi onaylıyordu; WGA \"in the manner of Veronese\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sahnede siyah hizmetkârlar (Venedik'te çoğunlukla köle); WGA \"moors, a dwarf and a dog\"; görkemli kostümler, kaplar, yiyecek çeşitliliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Labia'da freskler Gerolamo Mengozzi Colonna'nın trompe-l'œil mimari şemasıyla tasarlandı; freskler zemine iner, basamaklar sahneyi kalabalık odadan görülebilir yüksekliğe taşır (K4 194).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Provenance (GAP/NGV aynası; canlı NGV sayfasında YOK): c.1743 \"possibly\" Smith → Algarotti (Augustus III ajanı) → Dresden 1744 → Hubertusburg c.1746 → Amsterdam 22 Mayıs 1765 no.54 (Dankmeijer) → Yver 1765 → Katerina adına ≤1796 → I. Pavel 1796 → Michael Castle tavan 1801'e kadar → Hermitage 1801 → envanter 1859,1891 (1864 sergi) → Colnaghi's 1932 → Felton satın alma 1932 (Randall Davies) → 1932 sergileri → Melbourne 1933.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Algarotti 1744 Brühl mektubu: eseri atölyede bitmemiş gördü, başkası sipariş etmişti, Dresden için bitirmeye ikna etti (K2 150).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Tomory: Smith \"now generally believed to have been the initial commissioner\"; Algarotti araya girip eseri Saksonya Elektörü için sağladı (E003; kesinlik dereceleri farklı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Sovyet Hermitage satışı kapsamında 1932'de bir İngiliz sanat tüccarınca satın alındı (S2, The Age 1961 zinciri; metne erişilmedi); S7 satıcıyı Colnaghi's olarak adlandırır (→ C044/D003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "NGV satın alma bedeli A£25,000 (S2, 1933); The Age 2010: 1932, £25,000 (→ C044/D003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "itwiki: Tiepolo Kleopatra'ya eşi Maria Cecilia Guardi'nin yüz hatlarını verdi (ATIFSIZ; destek YOK; E001; Maria LABIA efsanesi C036 ile ayrı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "itwiki: perspektif illüzyonizmi izleyiciyi katmak için değil sahnesel temsil için; figürler kostümlü aktörler, giysiler anakronik (ATIFSIZ yorum; K3 theatricality ile paralel).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Tomory (yorum): sirke inci çözemez; Kleopatra inciyi yuttu, \"knowing she could get it back one way or another\" (E007; imzalı yorum, olgu değil).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Tomory: Maria Labia'nın Kleopatra başı için poz verdiği efsanesi — \"Although this is not true\"; Labia–Smith bağlantısından doğmuş olabilir (E010; C033 ile karıştırılmamalı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Tomory: Tiepolo muhtemelen Mazzoni 1660 Banquet'ini (Scuola dei Carmini, Smithsonian) gördü; 1740–44 Carmini siparişi; Hoff 1973 (s.150) Mazzoni Londra+Arkhangelskoye (1747) etkiledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Tomory: Dolfin Cleopatra tragedyası (1723 sahnede, 1733 Padua) olası dürtü; Montagu–Algarotti–Smith \"no documented evidence … reasonable to suspect\"; Smith Labia hediye niyeti \"It is pure surmise\" (E007).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Public domain; Commons PD-Art/PD-old-100-1923 (deathyear=1770); NGV PD görüşünde; WD P6216=Q19652.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "NGV indirme: yayın + ticari olmayan serbest; tam künye zorunlu; mümkünse kırpmasız tam reproduksiyon; ticari için Reproduction Request Form.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Tanımlayıcılar: NGV work 4409 (P4684) + GAP wwFHnS1cmltkFw (P4701) doğrudan A; Zeri 70568 (P3272), Utpictura18 16330 (P6663) yalnız WD (yardımcı); WGA P11807 çift ID → C050/D009.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "D001 tarih: NGV \"(1743-1744)\" ↔ enwiki 1744 (\"completed in 1744\"; ABC ref ama ABC \"1743–44\") ↔ itwiki 1743 ↔ WGA \"1743-44\" ↔ WD precision 8 + 1743/1744 ↔ NGV Frame essay \"1743\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S8",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D002 boyut: NGV/WD/enwiki 250.3×357.0 ↔ WGA \"249 x 346 cm\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S4",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D003 edinim: 1932 Colnaghi's (GAP) ↔ 1933 \"Sovyet hükümeti\" (ABC/The Age); NGV credit \"Felton Bequest, 1933\"; A£25,000 (enwiki) ↔ £25,000 (The Age); ABC \"under the noses of the National Gallery in London\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D004 sıvı: enwiki lead \"wine\" (tekil aykırı) ↔ NGV/ABC/itwiki/NG London/Tomory \"vinegar/sirke\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S8",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D005 Londra NG6409 ilişkisi: NG London \"may be an early oil sketch for … Palazzo Labia\" ↔ enwiki \"more usually regarded as a study for the Archangelskoye painting\"; ikisi de belirsiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D006 Katerina: enwiki \"acquired in 1764 … Amsterdam\" ↔ GAP 22 Mayıs 1765 satışı + Yver 1765 + \"before 1796\"; ABC yıl vermez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D007 Rusya'ya giriş: NGV Frame essay \"c.1800 to 1933\" ↔ GAP Katerina ≤1796 / I. Pavel 1796 / Hermitage 1801.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D008 Labia fresk tarihi (AYRI eser): NG London \"around 1746\" ↔ Tomory \"1747\" ↔ enwiki altyazı \"1746-47\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D009 WD versiyon karışması: P11807 İKİ WGA ID (\"3_1740s/04banque\" Melbourne + \"4labia/2banque3\" Labia); Commons kategorisi iki versiyonu ayırıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S7",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans + çözünürlük; GZ TASLAK; kompozisyon S2/S5/S11 metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Erişilemeyen: JSTOR 865464 Fry 1933 (200 ama Client Challenge); K1–K7 kitap/makale metinleri erişilmedi (kaynakçada anıldı); The Age 1961 + Crikey 2014 çekilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E002 siparişçi adlandırma: enwiki \"Frederick Augustus III\" (link Frederick Augustus I maddesine) ↔ GAP \"Augustus III (1697–1763)\" ↔ ABC \"King of Poland\" ↔ Tomory \"Elector of Saxony\"; aynı kişi, adlandırma/link tutarsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E005 Labia freskinin alegorik anlamı belirsiz (AYRI eser): zenginlik gösterisi (Maria Labia mücevherleri) mi, İspanya'dan doğuya göç alegorisi mi — enwiki \"it is not clear\" ×2.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "NGV About: Plinius Natural History \"written in AD 77\"; Kleopatra MÖ 69–30; Mark Antonius MÖ 83–30 (Arap-Hint rakamları normalize, E009); olaydan sonra âşık oldular, \"albeit doomed\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "NGV Frame essay: Buttery 1954/5 temizliği; 1955 McDonnell yeniden çerçeveleme; Royal Academy Londra sergisi; 1933'te 19. yy classical revival scotia çerçeve (muhtemelen Rusya); Pollak faturası £350 (Haziran 1955); Canaletto tarzı; \"McDonnell ve Pollak seçimi, Lindsay değil\"; Lindsay 1953'te 4 Rönesans çerçeve £630.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "The Age 2010: Villis + Payne Banquet için 2001'de ~3000 saat; Finding of Moses'ta aynı fırça işi özelliklerini tanımladılar (→ C058).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Restorasyon yılı nüansı: NGV \"2002-03\" ↔ The Age \"2001, ~3000 saat\" ↔ ABC 2003 \"a year's detailed work\"; çekirdek olgu ortak, yıl farklı (bu turda eklendi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "The Age 2010 küratöryel: Banquet eskiden NGV'nin en ünlü başyapıtı; 2010 Finding of Moses Ricci→Tiepolo sonrası onun sağına asıldı; diğer yanda Marriage Allegory (NGA Canberra ödünç); \"Tiepolo duvarı\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Tomory alımlama: Boccaccio De Claris Mulieribus (1351 sonrası) Kleopatra=Luxuria; 18. yy ortası trajik âşık; Shakespeare y.1607, Dryden 1677, Guercino 1648, Batoni 1773 (Dijon); Forster Alexandria (1922) kapanış.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "Tomory: Plutarkhos — Kleopatra Cydnus'ta Tarsus'a Venüs gibi bezenmiş yüzer, Loves gibi çocuklar yelpazeler; Antonius Efes'te Bacchus; Plinius ziyafeti Tarsus'a yerleştirir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Tomory öncül zinciri: Bassano y.1560–70 (kayıp; Leandro Stockholm); Piazza kayıp Villa Borghese döngüsü; Piero di Cosimo Kleopatra (1505–10, Medici inci attribute'u); Allori Studiolo pearl fishers + Banquet (1570–73); Cambiaso/ Castello Cenova (1684 gülle, 1943 bomba); Mazzoni 1660.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Tomory: Montagu Eylül 1739 Venedik; 1740 regatta \"yüzlerce Kleopatra\"; Angelo Labia galisi \"Polonya Saksonya'yı taçlandırıyor\"; Algarotti 1742 Augustus III hizmeti; mektuplar (Halsband; \"Penelope of your absence\", piramit).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Tomory: Labia savurganlığı (altın tabaklar kanala, \"Labia o non l'abia\"); Maria Labia mücevherleri (de Brosses 1737,1740); Chigi paraleli (Tiber'de ağ); Rollin Kleopatra altın kaplar verirdi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Tomory: Reynolds, Kitty Fisher as Cleopatra dissolving the pearl (Iveagh Bequest, Kenwood, 1759) — 18. yy övgü/yergi Kleopatra özdeşleştir modası.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "ABC 2003 betimi: \"blonde Queen Cleopatra\" + maiyet; eser \"Polonya Kralı\" için (adlandırma → C053); Jaynie Anderson, Tiepolo's Cleopatra (MacMillan Australia, 2003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "NGV konu etiketleri: general Architecture / History and Legend / Human Figures; specific banquets, Cleopatra, gambling, Mark Antony, pearl, rulers, wealth; WD P136=history painting (refsiz, yardımcı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q18167078 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18167078.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Banquet of Cleopatra (Tiepolo) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Banquet%20of%20Cleopatra%20(Tiepolo)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Banchetto di Antonio e Cleopatra wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Banchetto%20di%20Antonio%20e%20Cleopatra&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "National Gallery of Victoria",
+   "belge": "Collection Online work 4409 (künye + About + Artwork Details + Frame essay + indirme koşulları)",
+   "url": "https://www.ngv.vic.gov.au/explore/collection/work/4409/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery of Victoria",
+   "belge": "Peter Tomory, \"Cleopatra, pearls and extravagance: Tiepolo's Banquet of Cleopatra\", Art Bulletin of Victoria 22",
+   "url": "https://www.ngv.vic.gov.au/essay/cleopatra-pearls-and-extravagance-tiepolos-banquet-of-cleopatra/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&titles=File%3AGiambattista%20Tiepolo%20-%20The%20Banquet%20of%20Cleopatra%20-%20Google%20Art%20Project.jpg&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext: {{Google Art Project}} şablonu (NGV provenance aynası) + lisans",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File%3AGiambattista%20Tiepolo%20-%20The%20Banquet%20of%20Cleopatra%20-%20Google%20Art%20Project.jpg&prop=wikitext&format=json&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext; NGV veri aynası)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "ABC Radio National",
+   "belge": "Tiepolo: Cleopatra's Banquet, Sunday Morning 30/11/2003 (Wayback 2017-09-26)",
+   "url": "https://web.archive.org/web/20170926235545/http://www.abc.net.au/rn/legacy/programs/sunmorn/stories/s999715.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2017-09-26); canlı 301",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "The Age",
+   "belge": "Raymond Gill, \"The finding of a Tiepolo masterpiece\", 12 Haziran 2010",
+   "url": "https://www.theage.com.au/national/victoria/the-finding-of-a-tiepolo-masterpiece-20100611-y3ob.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "National Gallery, London",
+   "belge": "The Banquet of Cleopatra, NG6409 (AYRI eser)",
+   "url": "https://www.nationalgallery.org.uk/paintings/giovanni-battista-tiepolo-the-banquet-of-cleopatra",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (http→https)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Web Gallery of Art",
+   "belge": "The Banquet of Cleopatra (içerik sayfası)",
+   "url": "https://www.wga.hu/html/t/tiepolo/gianbatt/3_1740s/04banque.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "JSTOR",
+   "belge": "Roger Fry 1933 (enwiki Further reading)",
+   "url": "https://www.jstor.org/stable/865464",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama Client Challenge bot engeli; ERİŞİLEMEDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler + özellik etiketleri",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q186202|Q1464509&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "National Gallery of Victoria",
+   "belge": "Eski katalog URL HEAD kontrolü",
+   "url": "http://www.ngv.vic.gov.au/col/work/4409",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301 → https (ilk hop)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "ABC",
+   "belge": "Canlı URL HEAD kontrolü",
+   "url": "http://www.abc.net.au/rn/legacy/programs/sunmorn/stories/s999715.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301 → https (ilk hop); içerik S8 arşivinden",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Wedding at Cana",
+   "sanatci": "Paolo Veronese",
+   "kurum": "Musée du Louvre, Paris",
+   "gerekce": "Melbourne tuvalinin kompozisyonunun açıkça borçlu olduğu görkemli ziyafet resmi (1563).",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "eser": "The Banquet of Cleopatra (NG6409)",
+   "sanatci": "Giovanni Battista Tiepolo",
+   "kurum": "National Gallery, Londra",
+   "envanter": "NG6409",
+   "gerekce": "Aynı konunun ayrı küçük eskizi (1740s, 46.3×66.7); versiyon ailesi karşılaştırması.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "eser": "Palazzo Labia fresk döngüsü (Banquet + Meeting)",
+   "sanatci": "Giovanni Battista Tiepolo",
+   "kurum": "Palazzo Labia, Venedik",
+   "gerekce": "Aynı konunun ayrı fresk versiyonu (~1746/1747); trompe-l'œil mimari bütünleşme.",
+   "kanit": [
+    "C020",
+    "C027"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NGV birincil work 4409 (S4) + Tomory essay (S5) + GAP/NGV provenance aynası (S7) + NG London NG6409 (S10) cache'leri yeniden açılıp okundu; künye/konu/çerçeve/konservasyon/provenance doğrulandı. en/it wikitext (S2/S3), WGA (S11), ABC Wayback (S8), The Age (S9), WD (S1) yeniden okundu; on ihtilaf (D001–D009 + restorasyon yılı C058) açık. Görsel S6/S7 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C051); GZ TASLAK. K1–K7 + JSTOR Fry 1933 metinleri erişilmedi (C052). Brief N7 düzeltildi: eser basyapitlar.json eserler[61]'de VAR.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "N2: data/eserler_onbellek.json + basyapitlar.json tarih \"1743\" tek yıl; NGV \"(1743-1744)\" + WD precision 8 → öneri 1743–1744 (uygulanmadı).",
+  "N3: eser_notlari.json \"sirkeye inci damlatarak\" — sirke doğru (D004) ama NGV \"çözer ve içer\" der; \"damlatarak\" içmeyi eksik bırakır, inci küpeden çıkarılır.",
+  "N4: eserler_onbellek.json gorseller[0] lisans \"l\":\"\" boş; Commons PD (PD-old-100-1923). gorsel_kaynagi.json'da Q18167078 YOK.",
+  "N5: muze_numaralari.json'da Q18167078 YOK; birincil NGV envanteri 103-4 data'ya girmemiş.",
+  "N6: eserler_onbellek.json kaynaklar [\"wikidata\"]; birincil NGV (S4) artık mevcut, A seviyesi için kullanıldı.",
+  "N7 DÜZELTME: brief \"basyapitlar.json'da YOK\" der; salt-okunur taramada eser basyapitlar.json eserler[61]'de VAR (tarih \"1743\", betim bölümleri mevcut; bu oturumda görsel doğrulanmadı).",
+  "N8: WD P11807 çift WGA ID (Melbourne + Labia) versiyon riski; derslerde ayrım korundu.",
+  "N9: data/ dosyalarına yazılmadı; tüm tespitler salt-okunur.",
+  "Restorasyon yılı: NGV \"2002-03\" ↔ The Age \"2001/~3000 saat\" ↔ ABC \"bir yıl\" (C058 D); data'da restorasyon alanı yok.",
+  "Görsel İNCELENEMEDİ (C051); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}
