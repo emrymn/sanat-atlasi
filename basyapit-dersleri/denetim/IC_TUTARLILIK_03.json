@@ -1,0 +1,22 @@
+[
+ {
+  "eser_id": "Q1759631",
+  "tur": "B",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "5. **Sipariş kronolojisi (B):** K2 \"resmî belge yok, dolaylı tanıklık\" der; 1424 başlangıç çıkarımdır [C003].",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "- **Tarih:** 1420'ler; başlangıç 1424 [C003].",
+  "aciklama": "Aynı olgu (başlangıç 1424): İleri dersi bunun resmî belgesi olmadığını, dolaylı tanıklığa dayalı bir çıkarım olduğunu açıkça yazıyor; Orta dersi \"itwiki başlangıcı 1424 verir\" diye atfediyor ve DERS.json C003 \"K2 resmî belge yok, dolaylı tanıklık\" notunu taşıyor. Buna karşılık Başlangıç dersi 1424'ü nitelemesiz kesin olgu olarak veriyor; SORULAR.json TK01 de \"1420'ler (1424)\" biçiminde hedge'siz. Kesinleşme: öğrenci başlangıç düzeyinde 1424'ü belgeli bir yıl gibi öğreniyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1759631",
+  "tur": "B",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Restorasyon tarihleri farkı (K3 1981–1990 ↔ K2 1983–1990), kaynakların küçük kronoloji uzlaşmazlığıdır; ders, aralığı \"1980'ler\" olarak sunar ve farkı not eder (yorum) [C010].",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "1746 Meucci overpaint; 1771 yangın; 1981–1990 restorasyon; a secco kayıplar; 1480'ler Filippino.",
+  "aciklama": "Aynı olgu (restorasyon tarih aralığı): İleri dersi 1981–1990 (K3) ile 1983–1990 (K2) arasında kaynak uzlaşmazlığı olduğunu beyan ediyor ve dersin bu yüzden aralığı \"1980'ler\" olarak sunduğunu yazıyor; SORULAR.json'daki DY03 ve AU05 de \"1980'ler\" kullanıyor. Ancak TK04 tekrar kartı tek kaynağın aralığını (1981–1990) nitelemesiz kesin olgu olarak veriyor — İleri'nin beyan ettiği ders politikasını izlemiyor.",
+  "onem": "DÜŞÜK"
+ }
+]
