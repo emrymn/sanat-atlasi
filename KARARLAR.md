@@ -2370,3 +2370,9 @@ dersler başyapıt sayfası gibi herkese açık (konu kilidine bağlanmadı). De
 görülen kopya. Yayın (`yayinla.yml`): `basyapit-dersleri/` içinden yalnız `DERS_BASLANGIC.md`, `DERS_ORTA.md` ve JSON'lar gider;
 `koordinasyon/`, `resim-ansiklopedisi/` ve `basyapit-dersleri/denetim/` gitmez. Tasarım Fable'a yeniden yaptırılabilir.
 Testler: `tests/unit/eser_dersi.test.mjs`, `tests/e2e/eser_dersi.spec.js`.
+
+### İş 186 · Eser dersinden tekrar kartları kaldırıldı (sürüm 1.82.6)
+
+Emre: "kart kısmını direkt kaldıralım". Ders ekranında artık yalnız okuma var: kısa anlatım (Başlangıç) ve "Daha fazlası" ile ayrıntılı
+anlatım (Orta). Sekmeler, kart paneli ve "Tekrar kartlarına geç" düğmesi gitti; `SORULAR.json` yüklenmez. Başyapıt sayfasındaki giriş
+"Ders" diye yazar. Kart yardımcıları (`kartlariAl`, `kunyeKartiMi`) ve stilleri silindi.

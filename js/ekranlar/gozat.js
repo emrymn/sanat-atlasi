@@ -327,7 +327,7 @@ export async function basyapitSayfasi(kodlu) {
     .then(async (m) => {
       const durum = m.dersinDurumu(await m.dersYayini(), b.anahtar);
       if (!guncelMi(no) || (durum !== 'onayli' && durum !== 'taslak') || kutu.querySelector('[data-test="basyapit-ders"]')) return;
-      kutu.insertAdjacentHTML('beforeend', `<a class="basyapit-incele" href="${m.dersAdresi(b.anahtar)}" data-test="basyapit-ders">${ikon('kitap', 18)}Ders · okuma ve kartlar</a>`);
+      kutu.insertAdjacentHTML('beforeend', `<a class="basyapit-incele" href="${m.dersAdresi(b.anahtar)}" data-test="basyapit-ders">${ikon('kitap', 18)}Ders</a>`);
     })
     .catch(() => {});
   if (kayit) {
