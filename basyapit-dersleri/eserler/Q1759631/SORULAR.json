@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: affresco/fresco.",
    "yanlis_gerekceleri": {
-    "B": "Tempera pano (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
-    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Fresk."
+    "B": "Tempera pano (yumurta bağlayıcılı pigment) doğru yanıt değildir; doğru yanıt Fresk.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Fresk.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Fresk."
    },
    "kanit": [
     "C004"
@@ -58,9 +58,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: Brancacci Şapeli, Carmine, Floransa; in situ.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi, Floransa (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
+    "A": "Uffizi, Floransa (Floransa) doğru yanıt değildir; doğru yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
     "C": "Vatikan doğru yanıt değildir; doğru yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
-    "D": "Brera, Milano (Milano) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa."
+    "D": "Brera, Milano (Milano) doğru yanıt değildir; doğru yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa."
    },
    "kanit": [
     "C006"

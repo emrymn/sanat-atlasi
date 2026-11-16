@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on oak.",
    "yanlis_gerekceleri": {
-    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
+    "B": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C003"
@@ -60,7 +60,7 @@
    "yanlis_gerekceleri": {
     "B": "1500 WD yüzyıl, güvenilmez.",
     "C": "1600 doğru yanıt değildir; doğru yanıt c. 1427–1432.",
-    "D": "1300, Giotto/Cimabue döneminin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt c. 1427–1432."
+    "D": "1300 doğru yanıt değildir; doğru yanıt c. 1427–1432."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Cloisters/Met.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer The Cloisters, Met, New York.",
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt The Cloisters, Met, New York.",
     "C": "Louvre değil (Brüksel versiyonu farklı).",
-    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer The Cloisters, Met, New York."
+    "D": "Prado (Madrid) doğru yanıt değildir; doğru yanıt The Cloisters, Met, New York."
    },
    "kanit": [
     "C005"

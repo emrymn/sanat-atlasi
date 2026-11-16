@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: um 1470.",
    "yanlis_gerekceleri": {
-    "B": "1400, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt um 1470.",
+    "B": "1400 doğru yanıt değildir; doğru yanıt um 1470.",
     "C": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih um 1470.",
-    "D": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt um 1470."
+    "D": "1600 doğru yanıt değildir; doğru yanıt um 1470."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Eichenholz (oil on oak).",
    "yanlis_gerekceleri": {
-    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
+    "B": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C003"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K1: Gemäldegalerie.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Gemäldegalerie, Berlin.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Gemäldegalerie, Berlin.",
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Gemäldegalerie, Berlin.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Gemäldegalerie, Berlin.",
     "D": "NG değil (Grimston orada)."
    },
    "kanit": [
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "B": "Tek erkek portresi doğru yanıt değildir; doğru yanıt Bilinen tek kadın portresi.",
     "C": "Tek manzarası doğru yanıt değildir; doğru yanıt Bilinen tek kadın portresi.",
-    "D": "Tek freski (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Bilinen tek kadın portresi."
+    "D": "Tek freski (duvar resmi) doğru yanıt değildir; doğru yanıt Bilinen tek kadın portresi."
    },
    "kanit": [
     "C006"

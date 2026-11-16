@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1/K2/K3: Hermitage.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg.",
-    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg."
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Hermitage, San Petersburg.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Hermitage, San Petersburg.",
+    "D": "Prado (Madrid) doğru yanıt değildir; doğru yanıt Hermitage, San Petersburg."
    },
    "kanit": [
     "C001",
@@ -93,7 +93,7 @@
    "yanlis_gerekceleri": {
     "B": "Hep tuval değil; aktarım.",
     "C": "Hep pano değil; aktarım.",
-    "D": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Panodan tuvale aktarılmış (1834)."
+    "D": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Panodan tuvale aktarılmış (1834)."
    },
    "kanit": [
     "C001"

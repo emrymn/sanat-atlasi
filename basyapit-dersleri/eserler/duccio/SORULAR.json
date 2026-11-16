@@ -26,7 +26,7 @@
    "dogru": "B",
    "gerekce": "K1: Maestà sunağının arka yüz paneli.",
    "yanlis_gerekceleri": {
-    "A": "Assisi freskleri (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Maestà.",
+    "A": "Assisi freskleri (duvar resmi) doğru yanıt değildir; doğru yanıt Maestà.",
     "C": "Scrovegni Giotto'nun fresk döngüsü.",
     "D": "Santa Croce Çarmıhı Cimabue'nin."
    },
@@ -221,7 +221,7 @@
    "yanlis_gerekceleri": {
     "A": "Uffizi Floransa'da.",
     "C": "Vatikan doğru yanıt değildir; doğru yanıt Museo dell'Opera del Duomo, Siena.",
-    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera del Duomo, Siena."
+    "D": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Museo dell'Opera del Duomo, Siena."
    },
    "kanit": [
     "C006"

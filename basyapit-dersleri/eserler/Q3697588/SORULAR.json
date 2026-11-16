@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: Brera.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano.",
-    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano."
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Brera, Milano.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Brera, Milano.",
+    "D": "Prado (Madrid) doğru yanıt değildir; doğru yanıt Brera, Milano."
    },
    "kanit": [
     "C006"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: oil on panel.",
    "yanlis_gerekceleri": {
-    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, pano.",
+    "B": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Yağlıboya, pano.",
     "C": "Tempera tuval değil (WD tempera der, fark).",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, pano."
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, pano."
    },
    "kanit": [
     "C004"

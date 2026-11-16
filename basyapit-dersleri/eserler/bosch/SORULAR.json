@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: 1490–1510.",
    "yanlis_gerekceleri": {
-    "B": "1400–1420, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510.",
-    "C": "1600–1620, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510.",
-    "D": "1300, Giotto/Cimabue döneminin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510."
+    "B": "1400–1420 doğru yanıt değildir; doğru yanıt 1490–1510.",
+    "C": "1600–1620 doğru yanıt değildir; doğru yanıt 1490–1510.",
+    "D": "1300 doğru yanıt değildir; doğru yanıt 1490–1510."
    },
    "kanit": [
     "C003"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K1: Prado since 1939.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Museo del Prado, Madrid.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo del Prado, Madrid.",
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Museo del Prado, Madrid.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Museo del Prado, Madrid.",
     "D": "El Escorial 342 yıl kaldı, sonra Prado."
    },
    "kanit": [
@@ -252,7 +252,7 @@
    "yanlis_gerekceleri": {
     "B": "Tahta doğru yanıt değildir; doğru yanıt Kırık yumurta kabuğu.",
     "C": "Taş doğru yanıt değildir; doğru yanıt Kırık yumurta kabuğu.",
-    "D": "Metal (New York) bu eserin bulunduğu kurum değildir; doğru yer Kırık yumurta kabuğu."
+    "D": "Metal (New York) doğru yanıt değildir; doğru yanıt Kırık yumurta kabuğu."
    },
    "kanit": [
     "C024"

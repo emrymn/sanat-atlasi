@@ -27,8 +27,8 @@
    "gerekce": "K2/K3: affresco/fresco.",
    "yanlis_gerekceleri": {
     "A": "Tempera pano değil; duvar freski.",
-    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Fresk."
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Fresk.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Fresk."
    },
    "kanit": [
     "C004"
@@ -58,9 +58,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: Scrovegni Şapeli, Padova; Musei Civici kompleksi.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi, Floransa (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Scrovegni Şapeli, Padova.",
+    "A": "Uffizi, Floransa (Floransa) doğru yanıt değildir; doğru yanıt Scrovegni Şapeli, Padova.",
     "C": "Vatikan doğru yanıt değildir; doğru yanıt Scrovegni Şapeli, Padova.",
-    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Scrovegni Şapeli, Padova."
+    "D": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Scrovegni Şapeli, Padova."
    },
    "kanit": [
     "C006"

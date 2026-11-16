@@ -16,7 +16,7 @@ Ortada, altın haleli İsa gri bir eşeğe binmiş; kırmızı tunik üzerine ko
 
 ## Neden bu kadar önemli?
 
-Maestà, hem ön hem arka yüzü olan ilk sunaktı [C008]. Ön yüzünde tahtta Meryem ve Çocuk İsa, arka yüzünde Christ'in hayatından 43 küçük sahne vardı [C009][C010]. Bu panel, o arka yüzün "Christ'in Hayatı" dizisinden biridir [C003]. Duccio, Bizans üslubunun katı, hiyeratik figürlerinden uzaklaşıp daha canlı, daha insani bir anlatıya yöneldi; bu, İtalyan resminin gerçekliğe açılmasında bir dönüm noktası sayılır [C015]. 1311'de pano katedrale taşınırken bütün şehir tören yaptı: dükkânlar kapandı, çanlar çaldı, halk mumlarla yürüdü [C013]. Bu, bir resmin bir şehir için ne kadar büyük bir olay olduğunu gösterir.
+Maestà, hem ön hem arka yüzü olan ilk sunaktı [C008]. Ön yüzünde tahtta Meryem ve Çocuk İsa, arka yüzünde Meryem'in ve Christ'in hayatından 43 küçük sahne vardı [C009][C010]. Bu panel, o arka yüzün "Christ'in Hayatı" dizisinden biridir [C003]. Duccio, Bizans üslubunun katı, hiyeratik figürlerinden uzaklaşıp daha canlı, daha insani bir anlatıya yöneldi; bu, İtalyan resminin gerçekliğe açılmasında bir dönüm noktası sayılır [C015]. 1311'de pano katedrale taşınırken bütün şehir tören yaptı: dükkânlar kapandı, çanlar çaldı, halk mumlarla yürüdü [C013]. Bu, bir resmin bir şehir için ne kadar büyük bir olay olduğunu gösterir.
 
 Bu sahnede hem bir kralın karşılanışı hem bir alçakgönüllülük dersi vardır: İsa görkemle değil, bir eşekle gelir.
 

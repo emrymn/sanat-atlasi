@@ -59,8 +59,8 @@
    "gerekce": "K1/K2: distemper on wood panel.",
    "yanlis_gerekceleri": {
     "A": "Fresk duvar sıvasıdır; bu ahşap panodur.",
-    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Distemper (tempera) ahşap pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Distemper (tempera) ahşap pano."
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Distemper (tempera) ahşap pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Distemper (tempera) ahşap pano."
    },
    "kanit": [
     "C005"
@@ -186,9 +186,9 @@
    "dogru": "B",
    "gerekce": "K1/K2: 1966 seli sonrası restorasyondan beri Museo dell'Opera di Santa Croce.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera di Santa Croce.",
+    "A": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Museo dell'Opera di Santa Croce.",
     "C": "Vatikan doğru yanıt değildir; doğru yanıt Museo dell'Opera di Santa Croce.",
-    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera di Santa Croce."
+    "D": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Museo dell'Opera di Santa Croce."
    },
    "kanit": [
     "C007"

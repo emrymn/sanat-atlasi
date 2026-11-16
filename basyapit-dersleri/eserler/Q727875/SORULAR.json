@@ -28,7 +28,7 @@
    "yanlis_gerekceleri": {
     "B": "Fresk duvar tekniğidir.",
     "C": "Tempera pano değil; tuval.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, tuval."
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, tuval."
    },
    "kanit": [
     "C003",
@@ -346,9 +346,9 @@
   },
   {
    "id": "DY03",
-   "ifade": "Resim 1538'de Titian'ın bottega'sından çıkmadan satılmıştır.",
+   "ifade": "Resim 1538'de satın alınınca hemen Urbino'ya gönderildi.",
    "dogru": false,
-   "aciklama": "Yanlış (K2/K3): 1534'te bitmiş, 1538'e kadar bottega'da kalmış, sonra satılmış.",
+   "aciklama": "Yanlış (K2/K3): satış sırasında resim bottega'daydı ve ancak aylar sonra Urbino'ya gitti.",
    "kanit": [
     "C003",
     "C008"

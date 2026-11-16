@@ -27,8 +27,8 @@
    "gerekce": "K1: 1434.",
    "yanlis_gerekceleri": {
     "B": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1434.",
-    "C": "1400, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1434.",
-    "D": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1434."
+    "C": "1400 doğru yanıt değildir; doğru yanıt 1434.",
+    "D": "1600 doğru yanıt değildir; doğru yanıt 1434."
    },
    "kanit": [
     "C001"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on wood (oak).",
    "yanlis_gerekceleri": {
-    "B": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "C": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
+    "B": "Tempera, tuval (yumurta bağlayıcılı pigment) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: National Gallery.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra.",
-    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra."
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt National Gallery, Londra.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt National Gallery, Londra.",
+    "D": "Prado (Madrid) doğru yanıt değildir; doğru yanıt National Gallery, Londra."
    },
    "kanit": [
     "C003"

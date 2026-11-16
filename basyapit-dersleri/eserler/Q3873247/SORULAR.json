@@ -218,7 +218,7 @@
    "dogru": "B",
    "gerekce": "K1: Siena Katedrali, koruyucu azizlere dört sunak (1330–1350).",
    "yanlis_gerekceleri": {
-    "A": "Assisi freskleri (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Siena Katedrali dört sunaklık döngü.",
+    "A": "Assisi freskleri (duvar resmi) doğru yanıt değildir; doğru yanıt Siena Katedrali dört sunaklık döngü.",
     "C": "Scrovegni Padua'da.",
     "D": "Vatikan odaları doğru yanıt değildir; doğru yanıt Siena Katedrali dört sunaklık döngü."
    },
@@ -314,9 +314,9 @@
    "dogru": "B",
    "gerekce": "K1/K2: tempera on panel.",
    "yanlis_gerekceleri": {
-    "A": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano.",
-    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano."
+    "A": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Tempera ahşap pano.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Tempera ahşap pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Tempera ahşap pano."
    },
    "kanit": [
     "C004"

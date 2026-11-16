@@ -125,6 +125,7 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 | 12 | İç tutarlılık 06 (kalan listenin 41–50'si) | glm-5.3 | Komut verildi (daraltılmış kapsam) | Kota: 05 sonrası %38,5 (daraltılmış tarama = %1,7/10 eser; kalan 57 eser ≈ %10) |
 | 13 | İç tutarlılık 07–11 (son 47 eser) | glm-5.3 × 5 paralel oturum | Komutlar `koordinasyon/TARAMA_KOMUTLARI.md`'de; Emre 06 ile birlikte 6 sekmede paralel çalıştırıyor |
 | 14 | Parti 06–08 (paralel, 3 sekme) | glm-5.3 | `3de65c0`, `ad08cc6`, `c04a64c`; 11 bulgu, 22/22 alıntı birebir. Düzeltilen 6: Q285392 CS02 C (Bosch tarihi uydurma), "uyumuna dayanır" ×2; Q3399440 asa konumu (İLERİ + CS06 B); Q3476580 Folkwang gerekçesi; Q3998957 Ariadne'yi terk eden Theseus. Bırakılan 5: düşük/iç not (06#0, 07#3, 08#0, #2, #3). Kota 38,4 → 34,1 (%4,3/30 eser; paralel çalıştırma maliyeti artırmadı) |
+| 15 | Parti 09–11 (son 27 eser) | glm-5.3 | `d4ee458`, `ec6e64f`, `9011402`; 19 bulgu, 38/38 alıntı birebir. Yeni şablon ailesi bulundu ve betikle nötrlendi: "bu eserin tekniği/desteği değildir" (42), "bu eserin bulunduğu kurum değildir; doğru yer" (37), "<tarih>, <başka eser>'in tarihidir; bu eserle karıştırılmamalıdır" (10 + Q1755464; uydurma "Bosch 1600" ×5 dahil). Elle düzeltilen: Q512755 "ölümünden itibaren" → "önceki" (YÜKSEK, ×2), Q500985 Spring, Q727875 DY03, Q764831 1809 yönü ×2, bacon CS08 C, domenico Cennet konumu, duccio 43 sahne, hoch Luxemburg. Bırakılan: 09#0, #3, #6, 10#1, #4. Kota 34,1 → 29,7. **Tarama bitti: 107 eserin hepsi tarandı** |
 
 ## 5. Plan (baştan sona)
 

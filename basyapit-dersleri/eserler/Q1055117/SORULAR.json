@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: tempera on wood.",
    "yanlis_gerekceleri": {
-    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano.",
-    "C": "Yağlıboya, tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano."
+    "B": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Tempera, ahşap pano.",
+    "C": "Yağlıboya, tuval (yağ bağlayıcılı boya) doğru yanıt değildir; doğru yanıt Tempera, ahşap pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Tempera, ahşap pano."
    },
    "kanit": [
     "C003"
@@ -123,8 +123,8 @@
    "gerekce": "K1: özgün Louvre; Uffizi'deki kopya.",
    "yanlis_gerekceleri": {
     "B": "Uffizi'deki kopya.",
-    "C": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Louvre.",
-    "D": "Vatican (Vatikan) bu eserin bulunduğu kurum değildir; doğru yer Louvre."
+    "C": "Prado (Madrid) doğru yanıt değildir; doğru yanıt Louvre.",
+    "D": "Vatican (Vatikan) doğru yanıt değildir; doğru yanıt Louvre."
    },
    "kanit": [
     "C009"

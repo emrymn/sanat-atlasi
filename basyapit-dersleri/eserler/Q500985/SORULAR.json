@@ -58,8 +58,8 @@
    "dogru": "A",
    "gerekce": "K1: 1565.",
    "yanlis_gerekceleri": {
-    "B": "1434, Van Eyck Arnolfini Portresi'nin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
-    "C": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
+    "B": "1434 doğru yanıt değildir; doğru yanıt 1565.",
+    "C": "1600 doğru yanıt değildir; doğru yanıt 1565.",
     "D": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1565."
    },
    "kanit": [
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on wood.",
    "yanlis_gerekceleri": {
-    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano.",
-    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano.",
-    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano."
+    "B": "Fresk (duvar resmi) doğru yanıt değildir; doğru yanıt Yağlıboya, ahşap pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) doğru yanıt değildir; doğru yanıt Yağlıboya, ahşap pano.",
+    "D": "Mozaik (tessera tekniği) doğru yanıt değildir; doğru yanıt Yağlıboya, ahşap pano."
    },
    "kanit": [
     "C002"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K1: KHM Vienna.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana.",
-    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana.",
-    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana."
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Kunsthistorisches Museum, Viyana.",
+    "C": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Kunsthistorisches Museum, Viyana.",
+    "D": "Prado (Madrid) doğru yanıt değildir; doğru yanıt Kunsthistorisches Museum, Viyana."
    },
    "kanit": [
     "C003"
@@ -156,7 +156,7 @@
    "yanlis_gerekceleri": {
     "B": "Tek manzara doğru yanıt değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant).",
     "C": "Bir portre serisi doğru yanıt değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant).",
-    "D": "Bir fresk döngüsü (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant)."
+    "D": "Bir fresk döngüsü (duvar resmi) doğru yanıt değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant)."
    },
    "kanit": [
     "C004"

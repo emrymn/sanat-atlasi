@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: Sistine, kuzey duvarı.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan.",
-    "C": "Brera (Milano) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan.",
-    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan."
+    "B": "Uffizi (Floransa) doğru yanıt değildir; doğru yanıt Sistine Şapeli, Vatikan.",
+    "C": "Brera (Milano) doğru yanıt değildir; doğru yanıt Sistine Şapeli, Vatikan.",
+    "D": "Louvre (Paris) doğru yanıt değildir; doğru yanıt Sistine Şapeli, Vatikan."
    },
    "kanit": [
     "C006"
