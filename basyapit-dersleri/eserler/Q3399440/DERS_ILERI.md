@@ -36,7 +36,7 @@ Terminolojiyle başlayalım: PDF, bu nesnelere "ornements royaux" denmesini doğ
 
 - **Taç:** Charlemagne'ın taç giyme tacı (kemerlerle kapalı, taşlı; korunmamıştır) değil, cenazeler için yapılmış hafif, taşsız vermeil taçtır; frwiki "peut-être" diye kuşku koyar, Louvre ve PDF kesin söyler [C008].
 - **Asa:** Charlemagne'ın 1,84 m'lik uzun asası (ucunda küre ve asa tutan Charlemagne heykelciği; Charles V tarafından 1380'de Saint-Denis'e bırakıldı; 1380 sonrası Charles VII ve Henri IV hariç tüm taç giymelerde kullanıldı) değil, Henri IV'ün kısa asasıdır — sağ elde ters, baston gibi [C066][C009]. Ters tutuşun nedeni "jamais explicitée"dir; "zahmetsiz iktidar" okuması data'nın yorumudur, belgesel dayanağı yoktur (yorum) [C053] (belirsiz)[C054].
-- **Adalet eli:** fildişi, Henri IV'e ait; törende sağ elde asa, sol elde adalet eli tutulurken burada her ikisi de yastık üstündedir [C010][C007].
+- **Adalet eli:** fildişi, Henri IV'e ait; törende sağ elde asa, sol elde adalet eli tutulurdu; burada adalet eli tacın yanındadır, asa ise kralın sağ elinde ters tutulur [C010][C009].
 - **Kılıç:** "Charlemagne kılıcı" (Joyeuse) adı PDF'e göre yanlıştır ("à tort"); kılıç Louvre'da saklanır [C011]. Görünürlüğü ihtilaflıdır: en/fr "yalnız kabza", it "zengin kını içinde", Louvre "au côté" der [C049] (tartışma). Pinoteau 2005 (wiki üzerinden) bu kılıcın taç giyme mantosuyla taşınmasını "incongruité manifeste" (açık anakronizm) sayar [C011].
 - **Kolye:** Saint-Esprit tarikatı nişanı, güvercin yüklü Malta haçıdır; kral tarikata büyük üstat olarak taç giymenin ertesi günü katılırdı ve Reims'de manto üstünde bu kolyeyi taşımazdı — resimdeki birleşim törenin değil, temsiliyetin mantığıdır [C068][C012].
 

@@ -124,6 +124,7 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 | 11 | İç tutarlılık 05 (kalan listenin 31–40'ı) | glm-5.3 | Komut verildi. **Emre kararı (16 Kasım):** küçük sayı/yıl/ölçü farkları ve niteleme kayıpları artık bulgu değil; tarama yalnız C (soru hataları, TK dahil) + E (farklı kişi/yer/sahne/olay) arar. Düzeltmeleri koordinatör betikle yapar, Qwen kotası yalnız taramaya gider | → `e89ed1e`: 3 bulgu (E), 6/6 alıntı birebir, 3'ü gerçek ve düzeltildi (Q2317837 "by 1879" → "1879'a kadar" yanlış çevirisi ×2; Q2472983 yakın/uzak etkisi ters). 9 eser temiz |
 | 12 | İç tutarlılık 06 (kalan listenin 41–50'si) | glm-5.3 | Komut verildi (daraltılmış kapsam) | Kota: 05 sonrası %38,5 (daraltılmış tarama = %1,7/10 eser; kalan 57 eser ≈ %10) |
 | 13 | İç tutarlılık 07–11 (son 47 eser) | glm-5.3 × 5 paralel oturum | Komutlar `koordinasyon/TARAMA_KOMUTLARI.md`'de; Emre 06 ile birlikte 6 sekmede paralel çalıştırıyor |
+| 14 | Parti 06–08 (paralel, 3 sekme) | glm-5.3 | `3de65c0`, `ad08cc6`, `c04a64c`; 11 bulgu, 22/22 alıntı birebir. Düzeltilen 6: Q285392 CS02 C (Bosch tarihi uydurma), "uyumuna dayanır" ×2; Q3399440 asa konumu (İLERİ + CS06 B); Q3476580 Folkwang gerekçesi; Q3998957 Ariadne'yi terk eden Theseus. Bırakılan 5: düşük/iç not (06#0, 07#3, 08#0, #2, #3). Kota 38,4 → 34,1 (%4,3/30 eser; paralel çalıştırma maliyeti artırmadı) |
 
 ## 5. Plan (baştan sona)
 

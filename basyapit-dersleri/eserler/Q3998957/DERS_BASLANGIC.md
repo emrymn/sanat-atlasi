@@ -12,7 +12,7 @@
 - **Envanter:** YOK; eser müze nesnesi değil, binanın parçası [C007].
 - **Boyut:** panel ölçüsü hiçbir erişilen kaynakta yok (belirsiz); oda yaklaşık 20 × 7 m [C049] (belirsiz)[C009].
 
-Bu bir mitoloji resmidir: şarap tanrısı Bakkhus'un, Naksos adasında terk ettiği Ariadne ile evlenmesini kutlayan zafer/düğün alayı [C001][C015]. Döngünün konuları Ovidius'un Metamorphoses'inden (Dönüşümler) seçilmiştir [C008].
+Bu bir mitoloji resmidir: şarap tanrısı Bakkhus'un, Naksos adasında Theseus'un terk ettiği Ariadne ile evlenmesini kutlayan zafer/düğün alayı [C001][C015]. Döngünün konuları Ovidius'un Metamorphoses'inden (Dönüşümler) seçilmiştir [C008].
 
 ## Ne görüyoruz (kaynak betimi)
 
