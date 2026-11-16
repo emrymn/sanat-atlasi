@@ -1,0 +1,62 @@
+[
+  {
+    "eser_id": "Q3873247",
+    "tur": "B",
+    "dosya_1": "DERS_ORTA.md",
+    "alinti_1": "Bartolomeo Bulgarini'ye atfedilen bir Doğum (1351, bugün sökülmüş) vardı [C009]",
+    "dosya_2": "DERS_ILERI.md",
+    "alinti_2": "Bulgarini'nin Doğum'u (1351) vardı",
+    "aciklama": "Orta ders Doğum'u \"atfedilen\" diye nitelerken ileri ders aynı eseri niteleme olmadan kesin olgu gibi yazıyor.",
+    "onem": "DÜŞÜK"
+  },
+  {
+    "eser_id": "Q3873247",
+    "tur": "D",
+    "dosya_1": "DERS_ILERI.md",
+    "alinti_1": "Maestà'nın yazıtı (\"Siena'ya barış\") bu ilişkiyi açıkça dile getirir [C010]",
+    "dosya_2": "DERS.json",
+    "alinti_2": "Döngü tümü Meryem'in Hayatı; Duccio Maestà taçlandırır",
+    "aciklama": "Cümle [C010]'a bağlanıyor ama C010 yazıttan veya \"Siena'ya barış\" ifadesinden hiç söz etmiyor; bu ayrıntı kanıt envanterinde yok.",
+    "onem": "ORTA"
+  },
+  {
+    "eser_id": "Q1055117",
+    "tur": "E",
+    "dosya_1": "DERS_ORTA.md",
+    "alinti_1": "sağdaki dar bölümde Beytüllahim'e varış [C008]",
+    "dosya_2": "DERS_ORTA.md",
+    "alinti_2": "Uffizi föyü bu üç aşamayı yıldızı görme, Herod sarayında duraklama ve eve dönüş olarak özetler",
+    "aciklama": "Aynı paragrafta üçüncü sahne önce \"Beytüllahim'e varış\" sonra \"eve dönüş\" diye betimleniyor; aynı sahne için çelişen tanım.",
+    "onem": "ORTA"
+  },
+  {
+    "eser_id": "Q1055117",
+    "tur": "D",
+    "dosya_1": "DERS_BASLANGIC.md",
+    "alinti_1": "Altın varaklı çerçeve, yanlarda boyalı çiçeklerle bezenmiştir [C008]",
+    "dosya_2": "DERS.json",
+    "alinti_2": "Yolculuk üç arka plan sahnesi (yıldız/Herod/dönüş); çerçevenin üç kemeriyle ayrılır; kayalık ufuk.",
+    "aciklama": "Cümle [C008]'a bağlı ama C008 altın çerçeveden ve boyalı çiçeklerden söz etmiyor; bu betim ayrıntısı yanlış kanıta bağlanmış.",
+    "onem": "DÜŞÜK"
+  },
+  {
+    "eser_id": "Q1065493",
+    "tur": "D",
+    "dosya_1": "DERS_ORTA.md",
+    "alinti_1": "hercai menekşe, Ophelia'nın çiçek topladığı IV.v sahnesine (\"that's for thoughts\") bağlanır [C020]",
+    "dosya_2": "DERS.json",
+    "alinti_2": "menekşe=sadakat/iffet/genç ölümü; pansy=boşuna aşk/düşünce",
+    "aciklama": "\"IV.v\" sahnesi ve \"that's for thoughts\" C020'da yok (bunlar C046'da kayıtlı); C020 yalnız pansy-düşünce simgeciliğini içeriyor.",
+    "onem": "DÜŞÜK"
+  },
+  {
+    "eser_id": "Q1091086",
+    "tur": "D",
+    "dosya_1": "DERS_ORTA.md",
+    "alinti_1": "Kenneth Clark karşıtlığı bir \"deha darbesi\" olarak anlatır: askerlerin tavrının vahşi tekrarı ve tüfeklerin çelik çizgisi, hedefin çöken düzensizliğiyle karşılaştırılmıştır [C007]",
+    "dosya_2": "DERS.json",
+    "alinti_2": "Kenneth Clark her anlamda devrimci ilk büyük resim.",
+    "aciklama": "Cümle Clark'ın \"deha darbesi\" betimini [C007]'a bağlıyor; C007'daki Clark cümlesi yalnız \"devrimci ilk büyük resim\" değerlendirmesini içeriyor, \"deha darbesi\" karşıtlığını değil.",
+    "onem": "DÜŞÜK"
+  }
+]
