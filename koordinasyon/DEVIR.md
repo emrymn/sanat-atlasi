@@ -1,6 +1,6 @@
 # Sanat Atlası · içerik denetimi — devir ve plan
 
-**Tarih:** 16 Kasım 2026 · **Dal:** `content-review` · **Bu belge yazılırken dalın ucu:** `95b4d72`
+**Tarih:** 16 Kasım 2026 · **Dal:** `content-review` · **Bu belge yazılırken dalın ucu:** `95b4d72` (son güncelleme `59055f6` sonrası)
 
 Bu belge koordinasyonu devralan oturum içindir. Önceki sohbetlere erişimin yok; bilmen gereken her şey burada.
 Emre'ye kısa yaz, her turda **tek** sonraki adım ver, kredi harcamasına dikkat et.
@@ -113,7 +113,8 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 |---|---|---|---|
 | 1 | Lisans taraması (2 tur) | ChatGPT | Tamam (§4.3) |
 | 2 | Düzeltme Listesi 01 (7 madde, 9 dosya) | Qwen 3.8-max | `95b4d72`, farkı satır satır doğrulandı |
-| 3 | İç tutarlılık pilotu 01 (10 eser) | deepseek-v4-pro | **Çalışıyor**; çıktı `basyapit-dersleri/denetim/IC_TUTARLILIK_PILOT_01.json` olarak push edilecek |
+| 3 | İç tutarlılık pilotu 01 (10 eser) | deepseek-v4-pro | `59055f6`, tek dosya. 6 bulgu; 12/12 alıntı birebir, 6/6 gerçek (iddia metinleriyle karşılaştırıldı). Yakalama zayıf: bilinen 9'dan yalnız 006 kısmen (İLERİ'deki hâli); iç okumayla bulunabilecek 004 (KANIT C005 "K1 (182×187)" + "uyumlu") kaçtı; diğerleri kaynak/görsel gerektiriyor. 10 eserin 6'sında 0 bulgu. Maliyet: Emre'den bekleniyor |
+| 4 | İç tutarlılık 02 (20 eser, kalan listenin 1–20'si) | deepseek-v4-pro | Komut verildi; komuta "her eserde en az bir dosyayı baştan sona karşılaştır" ve "uyumlu/tutarlı denen sayıları kontrol et" eklendi |
 
 ## 5. Plan (baştan sona)
 
@@ -133,7 +134,7 @@ Pilot komutunda aranan türler: A sayı/tarih · B kesinleşme · C soru geçerl
 
 ### Faz 2 — Taramayı 107 esere yay
 
-- Kalan 97 eser, oturum başına ~20 eserlik partiler (5 oturum); çıktılar `basyapit-dersleri/denetim/IC_TUTARLILIK_02…06.json`.
+- Kalan 97 eser, `ls basyapit-dersleri/eserler` sırasıyla (pilot 10 hariç), oturum başına ~20 eserlik partiler (5 oturum; 02: Q1061035…Q1863885); çıktılar `basyapit-dersleri/denetim/IC_TUTARLILIK_02…06.json`.
 - Her partiyi Faz 1'deki betikle doğrula; geçersiz alıntı oranı yükselirse parti boyunu küçült.
 - Partiler arasında örnekleme: her partiden 3 eserde, taramanın hiçbir şey bulmadığı bir dosyayı kendin oku (kaçırma oranı için).
 
