@@ -223,6 +223,13 @@ test('yürüyüş: adımlar, kart ayrıntıyı kapatmaz, siyah boşluk yok, sekm
   const tur = page.locator('[data-test="yur-tur"]');
   await expect(tur).toBeVisible();
   expect((await tur.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  // İş 184: sanatçı sayfası ve bütün eserleri iki büyük karo; eser karosunda sanatçının küçük resimleri
+  for (const k of ['yur-sanatci', 'yur-eserler']) {
+    const karo = page.locator(`[data-test="${k}"]`);
+    await expect(karo).toBeVisible();
+    expect((await karo.boundingBox()).height).toBeGreaterThanOrEqual(120);
+  }
+  await expect(page.locator('[data-test="yur-eserler"] .yur-kare img').first()).toBeAttached();
   await tur.click();
   await expect(page).toHaveURL(/#\/pekistir/);
   // başa dönünce kapak ve sekme çubuğu yerinde

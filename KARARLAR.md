@@ -2346,3 +2346,11 @@ bölümün başına geri çekiyordu. Şimdi `js/yuruyus.js` kaydırırken Hayat�
 `yur-serbest` sınıfı konur ve adımlara oturma kapanır (bölüm serbestçe okunur); bölümün başının üstüne çıkınca sınıf kalkar, adımlar
 eskisi gibi oturur. Test: `tests/e2e/gunun.spec.js` (İş 183). Bugünkü tur kartı ve sanatçı bağlantılarının yeni tasarımı Emre'nin
 seçimini bekliyor (üç öneri: A Deste, B Halka, C Kitap sayfası).
+
+### İş 184 · Bugün'ün sonu: yeni tur kartı ve iki büyük karo (sürüm 1.82.4)
+
+Emre üç öneriden A'yı (Deste) seçti, "bugünkü tur kısmındaki sarılığı kaldır" dedi. Tur artık dolu pirinç değil: koyu cam kart, ince
+pirinç çerçeve, solda üç kartlık küçük deste (öndeki kartta sayı), sağda halkalı ok. Altında yan yana iki büyük karo: sanatçının baş harfi
+ve kısa adıyla "Sanatçı sayfası", sanatçının ilk dört eserinin küçük resimleriyle "Bütün eserleri" (`eserKareleriDoldur`; resim
+gelmezse sıcak kahve kareler). Animasyonlar: dokununca kart/karo küçülür, deste açılır, ok kayar; tur kartının üstünden 4,5 sn'de bir
+soluk bir ışık geçer (hareket azaltılmışsa geçmez). Renkler yalnızca var olan paletten (pirinç, `--yur-yazi`, `--yur-ikincil`).

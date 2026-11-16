@@ -145,16 +145,21 @@ function sahneHtml(gs, tekrar, kayit) {
 function yuruyusSonu(gs) {
   const tur = turBilgisi('karisik');
   const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
+  // İş 184 (Emre'nin seçtiği Tasarım A, sarısız): tur koyu cam kart, solda üç kartlık deste; altında iki büyük karo
+  const deste = (sayi) =>
+    `<span class="yur-deste" aria-hidden="true"><span class="yur-deste-k1"></span><span class="yur-deste-k3"></span><span class="yur-deste-k2">${sayi}</span></span>`;
   const turKart = tur.toplam
-    ? `<a class="yur-tur" href="#/pekistir/karisik" data-test="yur-tur"><b class="yur-tur-sayi" data-test="tur-sayi">${tur.toplam}</b><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü tur</span><small data-test="tur-alt">${tur.toplam} kart · yaklaşık ${dk} dk</small></span>${ikon('ileri', 22, 1.7)}</a>`
-    : `<a class="yur-tur bitti" href="#/pekistir" data-test="yur-tur"><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü kartlar bitti</span><small>Başka turlar Çalış'ta</small></span>${ikon('ileri', 22, 1.7)}</a>`;
+    ? `<a class="yur-tur" href="#/pekistir/karisik" data-test="yur-tur">${deste(`<b class="yur-tur-sayi" data-test="tur-sayi">${tur.toplam}</b>`)}<span class="yur-tur-yazi"><span class="yur-tur-ust">Günün işi</span><span class="yur-tur-baslik">Bugünkü tur</span><small data-test="tur-alt">${tur.toplam} kart · yaklaşık ${dk} dk</small></span><span class="yur-tur-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span></a>`
+    : `<a class="yur-tur bitti" href="#/pekistir" data-test="yur-tur">${deste(ikon('dogru', 20, 1.8))}<span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü kartlar bitti</span><small>Başka turlar Çalış'ta</small></span><span class="yur-tur-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span></a>`;
+  const kisa = bilinenAd(gs.ad, d.kisaAdlar[gs.id]);
+  const kareler = [0, 1, 2, 3].map((i) => `<span class="yur-kare" data-eser-kucuk="${kacis(gs.id)}" data-sira="${i}"></span>`).join('');
   return `<div class="yur-son" data-test="yur-son">
       <p class="etiket yur-son-kunye">${kunye(gs, { bag: false, konuYok: true })}</p>
       <h2>Resmi gezdin.</h2>
       ${turKart}
       <nav class="yur-baglar" aria-label="Sanatçı">
-        <a href="#/gunun">${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}: sanatçı sayfası${ikon('ileri', 16, 1.7)}</a>
-        <a href="#/sanatci/${encodeURIComponent(gs.id)}/eserler">Bütün eserleri${ikon('ileri', 16, 1.7)}</a>
+        <a class="yur-karo" href="#/gunun" data-test="yur-sanatci"><span class="yur-karo-ust yur-harf" aria-hidden="true">${kacis([...kisa][0] || '')}</span><span class="yur-karo-alt"><span class="yur-karo-baslik">${kacis(kisa)}</span><small>Sanatçı sayfası ${ikon('ileri', 13, 1.8)}</small></span></a>
+        <a class="yur-karo" href="#/sanatci/${encodeURIComponent(gs.id)}/eserler" data-test="yur-eserler"><span class="yur-karo-ust yur-kareler" aria-hidden="true">${kareler}</span><span class="yur-karo-alt"><span class="yur-karo-baslik">Bütün eserleri</span><small>Izgara, tam ekran ${ikon('ileri', 13, 1.8)}</small></span></a>
       </nav>
       <div class="yur-dinle" data-yur-dinle></div>
       <button class="yur-basa" type="button" data-yur-basa data-test="yur-basa"><span class="yur-basa-halka" aria-hidden="true">${ikon('cik', 20, 1.5)}</span><span>Başa dön</span></button>
@@ -187,7 +192,10 @@ export function anaSayfa() {
     // telefonu eğince tablo döner, ışık üstünden kayar (İş 32); izin Ayarlar'dan verilir
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
     egimAnahtari(ekran.querySelector('[data-gunun-gorsel]'));
-    if (kayit) yuruyusKur(gs, kayit, perde);
+    if (kayit) {
+      yuruyusKur(gs, kayit, perde);
+      eserKareleriDoldur(); // sondaki Bütün eserleri karosunun küçük resimleri
+    }
     else gununKartGorseli(gs);
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
   } else ekranRengi(null, null);
