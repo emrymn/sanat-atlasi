@@ -1,0 +1,819 @@
+diff --git a/css/app.css b/css/app.css
+index 3ee5edb..31b08e8 100644
+--- a/css/app.css
++++ b/css/app.css
+@@ -18574,3 +18574,150 @@ a.zm-satir:active {
+ .cark[data-donem='modern'] {
+   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+ }
++
++/* İş 175: eser dersi (#/basyapit/<anahtar>/ders) */
++.eser-dersi {
++  padding-bottom: 32px;
++}
++.drs-taslak {
++  margin: 12px 0;
++  padding: 12px 14px;
++  border-radius: 14px;
++  border: 1px solid var(--wrong);
++  background: var(--wrong-bg);
++  color: var(--ink);
++  font: 400 15px/1.45 var(--sans);
++}
++.drs-sekmeler {
++  position: sticky;
++  top: env(safe-area-inset-top, 0px);
++  z-index: 3;
++  display: flex;
++  gap: 6px;
++  margin: 14px -4px 10px;
++  padding: 6px 4px;
++  background: var(--bg);
++  overflow-x: auto;
++  scrollbar-width: none;
++}
++.drs-sekme {
++  flex: 1 0 auto;
++  min-height: 44px;
++  padding: 0 14px;
++  border-radius: 22px;
++  border: 1px solid var(--border);
++  background: var(--surface);
++  color: var(--ink-2);
++  font: 600 14px var(--sans);
++  cursor: pointer;
++}
++.drs-sekme[aria-selected='true'] {
++  background: var(--vurgu);
++  border-color: var(--vurgu);
++  color: var(--vurgu-yazi);
++}
++.drs-metin h2,
++.drs-metin h3,
++.drs-metin h4 {
++  margin: 26px 0 8px;
++  font-size: 1.15em;
++  line-height: 1.25;
++}
++.drs-metin p,
++.drs-metin ul,
++.drs-metin ol,
++.drs-metin blockquote {
++  margin: 0 0 14px;
++}
++.drs-metin ul,
++.drs-metin ol {
++  padding-left: 22px;
++}
++.drs-metin li {
++  margin-bottom: 6px;
++}
++.drs-metin blockquote {
++  padding-left: 14px;
++  border-left: 3px solid var(--border);
++  color: var(--ink-2);
++}
++.drs-metin hr {
++  border: 0;
++  border-top: 1px solid var(--border);
++  margin: 22px 0;
++}
++.drs-metin code {
++  font-size: 0.9em;
++  overflow-wrap: anywhere;
++}
++.drs-tablo {
++  overflow-x: auto;
++  margin: 0 0 14px;
++}
++.drs-tablo table {
++  border-collapse: collapse;
++  font: 400 14px/1.4 var(--sans);
++}
++.drs-tablo th,
++.drs-tablo td {
++  padding: 6px 10px;
++  border: 1px solid var(--border);
++  text-align: left;
++  vertical-align: top;
++  min-width: 90px;
++}
++.drs-kanit {
++  margin-left: 2px;
++  padding: 3px 2px;
++  color: var(--ink-3);
++  font: 600 10px var(--sans);
++  cursor: pointer;
++}
++.drs-sorular {
++  list-style: none;
++  margin: 0;
++  padding: 0;
++}
++.drs-soru {
++  margin: 0 0 26px;
++}
++.drs-soru-metni {
++  margin: 0 0 10px;
++  font-weight: 600;
++}
++.drs-secenekler {
++  display: grid;
++  gap: 8px;
++}
++.drs-secenek {
++  display: flex;
++  align-items: center;
++  gap: 12px;
++  min-height: 48px;
++  padding: 8px 14px;
++  border-radius: 14px;
++  border: 1px solid var(--border);
++  background: var(--surface);
++  color: var(--ink);
++  font: 400 16px/1.35 var(--sans);
++  text-align: left;
++  cursor: pointer;
++}
++.drs-secenek .harf {
++  flex: none;
++  color: var(--ink-3);
++  font-weight: 700;
++}
++.drs-secenek.dogru {
++  border-color: var(--right);
++  background: var(--right-bg);
++}
++.drs-secenek.yanlis {
++  border-color: var(--wrong);
++  background: var(--wrong-bg);
++}
++.drs-gerekce {
++  margin: 10px 0 0;
++  color: var(--ink-2);
++  font: 400 15px/1.45 var(--sans);
++}
+diff --git a/data/ders_yayin.json b/data/ders_yayin.json
+new file mode 100644
+index 0000000..8832b73
+--- /dev/null
++++ b/data/ders_yayin.json
+@@ -0,0 +1,114 @@
++{
++ "surum": 1,
++ "aciklama": "Eser dersleri (basyapit-dersleri/) için yayın kapısı. dersler: başyapıt anahtarı → ders klasörü. onayli: Emre'nin yayına açtığı ders klasörleri; listede olmayan dersler yalnız geliştirici modunda, TASLAK uyarısıyla görünür.",
++ "onayli": [],
++ "dersler": {
++  "Q1055117": "Q1055117",
++  "Q1061035": "Q1061035",
++  "Q1065493": "Q1065493",
++  "Q1090837": "Q1090837",
++  "Q1091086": "Q1091086",
++  "Q1131176": "Q1131176",
++  "Q1140358": "Q1140358",
++  "Q1212937": "Q1212937",
++  "Q1240092": "Q1240092",
++  "Q1245354": "Q1245354",
++  "Q1283024": "Q1283024",
++  "Q128910": "Q128910",
++  "Q1368055": "Q1368055",
++  "Q140161127": "Q140161127",
++  "Q1430990": "Q1430990",
++  "Q1452762": "Q1452762",
++  "Q167605": "Q167605",
++  "Q17026577": "Q17026577",
++  "Q17277950": "Q17277950",
++  "Q175036": "Q175036",
++  "Q1755464": "Q1755464",
++  "Q1759631": "Q1759631",
++  "Q18167078": "Q18167078",
++  "Q185255": "Q185255",
++  "Q18572249": "Q18572249",
++  "Q18579333": "Q18579333",
++  "Q1863885": "Q1863885",
++  "Q186953": "Q186953",
++  "Q1978815": "Q1978815",
++  "Q19863024": "Q19863024",
++  "Q19966572": "Q19966572",
++  "Q20176925": "Q20176925",
++  "Q2067212": "Q2067212",
++  "Q212616": "Q212616",
++  "Q219344": "Q219344",
++  "Q220859": "Q220859",
++  "Q227494": "Q227494",
++  "Q23008305": "Q23008305",
++  "Q2317837": "Q2317837",
++  "Q2324840": "Q2324840",
++  "Q2366825": "Q2366825",
++  "Q2378534": "Q2378534",
++  "Q2409245": "Q2409245",
++  "Q2472983": "Q2472983",
++  "Q2620028": "Q2620028",
++  "Q2629559": "Q2629559",
++  "Q2653851": "Q2653851",
++  "Q27097122": "Q27097122",
++  "Q27978197": "Q27978197",
++  "Q285392": "Q285392",
++  "Q28797801": "Q28797801",
++  "Q2892964": "Q2892964",
++  "Q29530": "Q29530",
++  "Q2990634": "Q2990634",
++  "Q311243": "Q311243",
++  "Q318947": "Q318947",
++  "Q3212142": "Q3212142",
++  "Q3224275": "Q3224275",
++  "Q3228340": "Q3228340",
++  "Q328523": "Q328523",
++  "Q3399440": "Q3399440",
++  "Q3476580": "Q3476580",
++  "Q3605055": "Q3605055",
++  "Q3640080": "Q3640080",
++  "Q3697588": "Q3697588",
++  "Q3698260": "Q3698260",
++  "Q3705703": "Q3705703",
++  "Q3769169": "Q3769169",
++  "Q3793426": "Q3793426",
++  "Q3821820": "Q3821820",
++  "Q3873247": "Q3873247",
++  "Q3937621": "Q3937621",
++  "Q3947103": "Q3947103",
++  "Q3998957": "Q3998957",
++  "Q3998985": "Q3998985",
++  "Q4388208": "Q4388208",
++  "Q45585": "Q45585",
++  "Q4693305": "Q4693305",
++  "Q471379": "Q471379",
++  "Q500242": "Q500242",
++  "Q500985": "Q500985",
++  "Q512755": "Q512755",
++  "Q531329": "Q531329",
++  "Q540488": "Q540488",
++  "Q546297": "Q546297",
++  "Q5826309": "Q5826309",
++  "Q5856992": "Q5856992",
++  "Q5966403": "Q5966403",
++  "Q63341": "Q63341",
++  "Q698487": "Q698487",
++  "Q700834": "Q700834",
++  "Q727875": "Q727875",
++  "Q764831": "Q764831",
++  "Q7731855": "Q7731855",
++  "Q867403": "Q867403",
++  "Q890678": "Q890678",
++  "Q94802": "Q94802",
++  "Q956541": "Q956541",
++  "Q979440": "Q979440",
++  "francis-bacon|Three Studies for Figures at the Base of a Crucifixion": "bacon",
++  "hieronymus-bosch|Garden of Earthly Delights": "bosch",
++  "salvador-dali|The Persistence of Memory": "dali",
++  "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim": "domenico-di-michelino",
++  "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)": "duccio",
++  "hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic": "hoch",
++  "william-hogarth|Gin Lane": "hogarth",
++  "angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)": "kauffman"
++ }
++}
+\ No newline at end of file
+diff --git a/js/ekranlar/eserDersi.js b/js/ekranlar/eserDersi.js
+new file mode 100644
+index 0000000..b86e3fd
+--- /dev/null
++++ b/js/ekranlar/eserDersi.js
+@@ -0,0 +1,134 @@
++// Eser dersi ekranı (#/basyapit/<anahtar>/ders): üç seviye okuma + çoktan seçmeli sorular.
++// Dersler basyapit-dersleri/ klasöründen isteğe bağlı yüklenir; kapı data/ders_yayin.json. Bkz. KARARLAR.md "İş 175".
++import { kacis } from '../yardimci.js';
++import { basyapitBul } from '../basyapit.js';
++import { yayinAl, dersDurumu, dersGorunurMu, dersKlasoru, dersYolu, mdHtml, kanitDizini, sorulariAl, SEVIYELER, SEVIYE_ADLARI } from '../eserDersi.js';
++import { d, ekran, jsonGetir, ciz, cizimNo, guncelMi, hataGoster, geriDugmesi, bildir, akimRenk, ekranRengi } from './ortak.js';
++import { basyapitVeri, basyapitAdresi } from './gozat.js';
++
++const DOSYA = { baslangic: 'DERS_BASLANGIC.md', orta: 'DERS_ORTA.md', ileri: 'DERS_ILERI.md' };
++
++let yayinSozu = null;
++export function dersYayini() {
++  if (!yayinSozu)
++    yayinSozu = jsonGetir('data/ders_yayin.json').then(yayinAl, () => {
++      yayinSozu = null; // dosya yoksa ders yok; uygulama aynen çalışır
++      return yayinAl(null);
++    });
++  return yayinSozu;
++}
++
++export const dersAdresi = (anahtar) => `${basyapitAdresi(anahtar)}/ders`;
++export const dersinDurumu = (yayin, anahtar) => dersDurumu(yayin, anahtar, Boolean(d.ilerleme.gelistirici));
++
++async function metinGetir(yol) {
++  const y = await fetch(yol);
++  if (!y.ok) throw new Error(`${yol}: ${y.status}`);
++  return y.text();
++}
++
++const TASLAK_UYARI =
++  '<p class="drs-taslak" data-test="ders-taslak"><b>Taslak.</b> Bu dersi Qwen yazdı; bağımsız denetimi bitmedi ve onaylanmadı. Olgu, tarih ve kaynak hataları içerebilir. Yalnız geliştirici modunda görünür.</p>';
++
++export async function eserDersiSayfasi(kodlu) {
++  const anahtar = decodeURIComponent(kodlu);
++  const no = cizimNo();
++  const [liste, yayin] = await Promise.all([basyapitVeri(), dersYayini()]);
++  if (!guncelMi(no)) return;
++  const b = basyapitBul(liste, anahtar);
++  const durum = dersinDurumu(yayin, anahtar);
++  if (!b || !dersGorunurMu(durum)) return hataGoster(new Error('Bu eserin dersi henüz yayında değil.'));
++  const klasor = dersKlasoru(yayin, anahtar);
++  const s = d.harita.get(b.sanatci);
++  ekranRengi(Promise.resolve(null), akimRenk(s.akim));
++  const sekmeler = [...SEVIYELER.map((k) => [k, SEVIYE_ADLARI[k]]), ['sorular', 'Sorular']];
++  ciz(`<header class="sanatci-ust">${geriDugmesi(basyapitAdresi(anahtar))}<span class="etiket vurgu">Ders</span></header>
++    <article class="eser-dersi" data-test="eser-dersi">
++      <h1 class="basyapit-ad" tabindex="-1">${kacis(b.baslik)}</h1>
++      <p class="meta"><a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</p>
++      ${durum === 'taslak' ? TASLAK_UYARI : ''}
++      <div class="drs-sekmeler" role="tablist">${sekmeler.map(([k, ad], i) => `<button type="button" role="tab" class="drs-sekme" data-drs-sekme="${k}" aria-selected="${i ? 'false' : 'true'}">${ad}</button>`).join('')}</div>
++      <div class="drs-govde" data-drs-govde><p class="ikincil kucuk">Yükleniyor…</p></div>
++    </article>`);
++  const govde = ekran.querySelector('[data-drs-govde]');
++  const dersSozu = jsonGetir(dersYolu(klasor, 'DERS.json')).then(kanitDizini, () => new Map());
++  const bellek = new Map();
++  const icerik = (sekme) => {
++    if (!bellek.has(sekme))
++      bellek.set(
++        sekme,
++        sekme === 'sorular'
++          ? jsonGetir(dersYolu(klasor, 'SORULAR.json')).then((j) => ({ sorular: sorulariAl(j) }))
++          : metinGetir(dersYolu(klasor, DOSYA[sekme])).then((md) => ({ html: mdHtml(md) })),
++      );
++    return bellek.get(sekme);
++  };
++  let secili = null;
++  const ac = async (sekme) => {
++    secili = sekme;
++    for (const el of ekran.querySelectorAll('[data-drs-sekme]')) el.setAttribute('aria-selected', String(el.dataset.drsSekme === sekme));
++    govde.innerHTML = '<p class="ikincil kucuk">Yükleniyor…</p>';
++    let x;
++    try {
++      x = await icerik(sekme);
++    } catch (err) {
++      bellek.delete(sekme);
++      if (guncelMi(no) && secili === sekme) govde.innerHTML = '<p class="ikincil">Ders yüklenemedi. Bağlantını denetleyip yeniden dene.</p>';
++      return;
++    }
++    if (!guncelMi(no) || secili !== sekme) return;
++    if (sekme === 'sorular') sorulariCiz(govde, x.sorular);
++    else govde.innerHTML = `<div class="okuma drs-metin" data-test="ders-metni">${x.html}</div>`;
++    window.scrollTo(0, 0);
++  };
++  ekran.querySelector('.drs-sekmeler').addEventListener('click', (e) => {
++    const dg = e.target.closest('[data-drs-sekme]');
++    if (dg && dg.dataset.drsSekme !== secili) ac(dg.dataset.drsSekme);
++  });
++  // kanıt etiketine dokununca: iddia ve dayandığı kaynakların adı
++  govde.addEventListener('click', async (e) => {
++    const k = e.target.closest('[data-kanit]');
++    if (!k) return;
++    const iddia = (await dersSozu).get(k.dataset.kanit);
++    if (iddia) bildir(`${k.dataset.kanit}: ${iddia.ifade}${iddia.kaynaklar.length ? ` — ${iddia.kaynaklar.join('; ')}` : ''}`, { sure: 9000 });
++  });
++  await ac('baslangic');
++}
++
++function sorulariCiz(govde, sorular) {
++  if (!sorular.length) {
++    govde.innerHTML = '<p class="ikincil">Bu dersin sorusu yok.</p>';
++    return;
++  }
++  let dogru = 0;
++  let yanit = 0;
++  govde.innerHTML = `<p class="drs-puan ikincil kucuk" data-test="ders-puan" aria-live="polite">${sorular.length} soru</p>
++    <ol class="drs-sorular">${sorular
++      .map(
++        (s, i) => `<li class="drs-soru" data-drs-soru="${i}"><p class="drs-soru-metni">${kacis(s.soru)}</p>
++        <div class="drs-secenekler">${s.secenekler.map((o) => `<button type="button" class="drs-secenek" data-harf="${kacis(o.harf)}"><span class="harf">${kacis(o.harf)}</span><span>${kacis(o.metin)}</span></button>`).join('')}</div>
++        <p class="drs-gerekce" hidden></p></li>`,
++      )
++      .join('')}</ol>`;
++  govde.querySelector('.drs-sorular').addEventListener('click', (e) => {
++    const dg = e.target.closest('.drs-secenek');
++    const li = dg && dg.closest('[data-drs-soru]');
++    if (!li || li.dataset.bitti) return;
++    const s = sorular[Number(li.dataset.drsSoru)];
++    const secim = dg.dataset.harf;
++    li.dataset.bitti = '1';
++    for (const o of li.querySelectorAll('.drs-secenek')) {
++      o.disabled = true;
++      if (o.dataset.harf === s.dogru) o.classList.add('dogru');
++      else if (o === dg) o.classList.add('yanlis');
++    }
++    const iyi = secim === s.dogru;
++    yanit++;
++    if (iyi) dogru++;
++    const g = li.querySelector('.drs-gerekce');
++    const ek = !iyi && typeof s.yanlis[secim] === 'string' ? s.yanlis[secim] : '';
++    g.innerHTML = `<b>${iyi ? 'Doğru.' : 'Yanlış.'}</b> ${kacis([ek, s.gerekce].filter(Boolean).join(' '))}`;
++    g.hidden = false;
++    govde.querySelector('[data-test="ders-puan"]').textContent = `${dogru} / ${yanit} doğru · ${sorular.length} soru`;
++  });
++}
+diff --git a/js/ekranlar/gozat.js b/js/ekranlar/gozat.js
+index 70d2b72..6be897b 100644
+--- a/js/ekranlar/gozat.js
++++ b/js/ekranlar/gozat.js
+@@ -322,6 +322,14 @@ export async function basyapitSayfasi(kodlu) {
+     const h = guncelMi(no) && hikayeBulucu(e);
+     if (h && !ekran.querySelector('.basyapit-hikaye')) kutu.insertAdjacentHTML('afterend', `<section class="bolum basyapit-hikaye" data-test="basyapit-hikaye">${etiket('Hikâyesi', { vurgu: true })}<div class="okuma">${hikayeHtml(h, kacis)}</div></section>`);
+   });
++  // İş 175: eserin dersi yayındaysa (ya da geliştirici modunda taslaksa) giriş; modül ancak burada yüklenir
++  import('./eserDersi.js')
++    .then(async (m) => {
++      const durum = m.dersinDurumu(await m.dersYayini(), b.anahtar);
++      if (!guncelMi(no) || (durum !== 'onayli' && durum !== 'taslak') || kutu.querySelector('[data-test="basyapit-ders"]')) return;
++      kutu.insertAdjacentHTML('beforeend', `<a class="basyapit-incele" href="${m.dersAdresi(b.anahtar)}" data-test="basyapit-ders">${ikon('kitap', 18)}Ders · 3 seviye${durum === 'taslak' ? ' (taslak)' : ''}</a>`);
++    })
++    .catch(() => {});
+   if (kayit) {
+     kutu.insertAdjacentHTML('beforeend', `<button class="basyapit-incele" type="button" data-test="basyapit-incele">${ikon('ara', 18)}Rehberli inceleme · ${kayit.noktalar.length} nokta</button>`);
+     kutu.querySelector('[data-test="basyapit-incele"]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, incelemeyeBasla: true, ...gorselTercihi() }));
+diff --git a/js/ekranlar/yonlendirme.js b/js/ekranlar/yonlendirme.js
+index 5bba8f5..5031d2e 100644
+--- a/js/ekranlar/yonlendirme.js
++++ b/js/ekranlar/yonlendirme.js
+@@ -12,6 +12,7 @@ import { aramaSayfasi } from './arama.js';
+ import { zamanSayfasi } from './zaman.js';
+ import { koleksiyonSayfasi } from './koleksiyon.js';
+ import { haritaSayfasi } from './harita.js';
++import { eserDersiSayfasi } from './eserDersi.js';
+ import { akimKarsilastirSayfasi } from './akim.js';
+ 
+ // ---------- yönlendirme ----------
+@@ -29,6 +30,7 @@ const rotalar = [
+   [/^#\/konular$/, konuListesi, 'gozat'],
+   [/^#\/konular\/([^/]+)$/, konuGrubu, 'gozat'],
+   [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
++  [/^#\/basyapit\/(.+)\/ders$/, eserDersiSayfasi, 'gozat'], // İş 175: eser dersi (yayın kapılı)
+   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
+   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
+   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
+diff --git a/js/eserDersi.js b/js/eserDersi.js
+new file mode 100644
+index 0000000..b9b1cad
+--- /dev/null
++++ b/js/eserDersi.js
+@@ -0,0 +1,130 @@
++// Eser dersleri (basyapit-dersleri/eserler/<klasör>/): yayın kapısı, Markdown → HTML ve soru doğrulama.
++// Saf mantık (birim testli; ekran yok). Ekran: js/ekranlar/eserDersi.js. Bkz. KARARLAR.md "İş 175".
++//
++// Kapı (data/ders_yayin.json): { dersler: { başyapıt anahtarı: klasör }, onayli: [klasör] }
++//   'onayli' → herkese açık · 'taslak' → yalnız geliştirici modunda, uyarıyla · 'kapali' → ders var ama görünmez
++//   'yok'    → bu başyapıtın dersi yok
++// Dersleri Qwen üretti; bağımsız denetimden geçip Emre onaylamadan hiçbiri 'onayli' olmaz.
++
++export const SEVIYELER = ['baslangic', 'orta', 'ileri'];
++export const SEVIYE_ADLARI = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' };
++export const DERS_KOKU = 'basyapit-dersleri/eserler/';
++
++const KLASOR = /^[A-Za-z0-9-]+$/; // yol parçası olarak güvenli (.., / yok)
++
++export function yayinAl(json) {
++  const dersler = new Map();
++  const ham = json && typeof json.dersler === 'object' && json.dersler ? json.dersler : {};
++  for (const [anahtar, klasor] of Object.entries(ham)) if (typeof klasor === 'string' && KLASOR.test(klasor)) dersler.set(anahtar, klasor);
++  const klasorler = new Set(dersler.values());
++  const onayli = new Set((json && Array.isArray(json.onayli) ? json.onayli : []).filter((k) => klasorler.has(k)));
++  return { dersler, onayli };
++}
++
++export const dersKlasoru = (yayin, anahtar) => (yayin && yayin.dersler.get(anahtar)) || null;
++
++export function dersDurumu(yayin, anahtar, gelistirici = false) {
++  const k = dersKlasoru(yayin, anahtar);
++  if (!k) return 'yok';
++  if (yayin.onayli.has(k)) return 'onayli';
++  return gelistirici ? 'taslak' : 'kapali';
++}
++
++export const dersGorunurMu = (durum) => durum === 'onayli' || durum === 'taslak';
++
++export function dersYolu(klasor, dosya) {
++  if (!KLASOR.test(klasor) || !/^[A-Z_]+\.(json|md)$/.test(dosya)) throw new Error('geçersiz ders yolu');
++  return `${DERS_KOKU}${klasor}/${dosya}`;
++}
++
++// ---------- Markdown → HTML (derslerde geçen yapılar: başlık, paragraf, liste, tablo, çizgi, alıntı) ----------
++const kacis = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
++
++// Satır içi: önce kaçış, sonra `kod`, **kalın**, *italik*, [C012] kanıt etiketi. Bağlantı üretilmez (dış adres yok).
++export function satirIci(metin) {
++  return kacis(metin)
++    .replace(/`([^`]+)`/g, '<code>$1</code>')
++    .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
++    .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<i>$2</i>')
++    .replace(/\[([CKS]\d{1,4})\]/g, '<sup class="drs-kanit" data-kanit="$1">$1</sup>');
++}
++
++const tabloSatiri = (s) =>
++  s
++    .trim()
++    .replace(/^\||\|$/g, '')
++    .split('|')
++    .map((h) => h.trim());
++
++export function mdHtml(md, { ilkBaslikYok = true } = {}) {
++  const satirlar = String(md || '').replace(/\r/g, '').split('\n');
++  const cikti = [];
++  let i = 0;
++  let ilk = ilkBaslikYok;
++  const liste = (desen, etiket) => {
++    const ogeler = [];
++    while (i < satirlar.length && desen.test(satirlar[i])) ogeler.push(satirlar[i++].replace(desen, ''));
++    cikti.push(`<${etiket}>${ogeler.map((o) => `<li>${satirIci(o)}</li>`).join('')}</${etiket}>`);
++  };
++  while (i < satirlar.length) {
++    const s = satirlar[i];
++    const b = /^(#{1,6})\s+(.*)$/.exec(s);
++    if (!s.trim()) i++;
++    else if (b) {
++      i++;
++      if (b[1].length === 1 && ilk) ilk = false; // sayfanın kendi başlığı var
++      else cikti.push(`<h${Math.min(4, b[1].length + 1)}>${satirIci(b[2])}</h${Math.min(4, b[1].length + 1)}>`);
++    } else if (/^\s*[-*]\s+/.test(s)) liste(/^\s*[-*]\s+/, 'ul');
++    else if (/^\s*\d+[.)]\s+/.test(s)) liste(/^\s*\d+[.)]\s+/, 'ol');
++    else if (/^-{3,}\s*$/.test(s)) {
++      cikti.push('<hr>');
++      i++;
++    } else if (s.startsWith('|')) {
++      const t = [];
++      while (i < satirlar.length && satirlar[i].startsWith('|')) t.push(satirlar[i++]);
++      const ayrac = t.length > 1 && /^[\s|:-]+$/.test(t[1]);
++      const govde = (ayrac ? t.slice(2) : t).map((r) => `<tr>${tabloSatiri(r).map((h) => `<td>${satirIci(h)}</td>`).join('')}</tr>`);
++      const bas = ayrac ? `<thead><tr>${tabloSatiri(t[0]).map((h) => `<th>${satirIci(h)}</th>`).join('')}</tr></thead>` : '';
++      cikti.push(`<div class="drs-tablo"><table>${bas}<tbody>${govde.join('')}</tbody></table></div>`);
++    } else if (s.startsWith('>')) {
++      const a = [];
++      while (i < satirlar.length && satirlar[i].startsWith('>')) a.push(satirlar[i++].replace(/^>\s?/, ''));
++      cikti.push(`<blockquote>${satirIci(a.join(' '))}</blockquote>`);
++    } else {
++      const p = [];
++      while (i < satirlar.length && satirlar[i].trim() && !/^(#{1,6}\s|\s*[-*]\s+|\s*\d+[.)]\s+|\||>|-{3,}\s*$)/.test(satirlar[i])) p.push(satirlar[i++].trim());
++      cikti.push(`<p>${satirIci(p.join(' '))}</p>`);
++    }
++  }
++  return cikti.join('\n');
++}
++
++// ---------- DERS.json: kanıt etiketi → iddia ve kaynakları ----------
++export function kanitDizini(ders) {
++  const kaynaklar = new Map((ders && Array.isArray(ders.kaynaklar) ? ders.kaynaklar : []).filter((k) => k && k.id).map((k) => [k.id, k]));
++  const iddialar = new Map();
++  for (const x of ders && Array.isArray(ders.iddialar) ? ders.iddialar : []) {
++    if (!x || typeof x.id !== 'string' || typeof x.ifade !== 'string') continue;
++    const k = (Array.isArray(x.kaynak_id) ? x.kaynak_id : []).map((id) => kaynaklar.get(id)).filter(Boolean);
++    iddialar.set(x.id, { ifade: x.ifade, kaynaklar: k.map((y) => [y.kurum, y.belge].filter(Boolean).join(' · ')) });
++  }
++  return iddialar;
++}
++
++// ---------- SORULAR.json: yalnız biçimi sağlam çoktan seçmeliler ----------
++const yazi = (x) => typeof x === 'string' && x.trim().length > 0;
++
++export function sorulariAl(json) {
++  const l = json && Array.isArray(json.coktan_secmeli) ? json.coktan_secmeli : [];
++  return l
++    .filter((s) => s && yazi(s.soru) && Array.isArray(s.secenekler) && s.secenekler.length >= 2 && s.secenekler.every((o) => o && yazi(o.harf) && yazi(o.metin)))
++    .filter((s) => s.secenekler.filter((o) => o.harf === s.dogru).length === 1 && new Set(s.secenekler.map((o) => o.harf)).size === s.secenekler.length)
++    .map((s) => ({
++      id: yazi(s.id) ? s.id : '',
++      soru: s.soru,
++      secenekler: s.secenekler.map((o) => ({ harf: o.harf, metin: o.metin })),
++      dogru: s.dogru,
++      gerekce: yazi(s.gerekce) ? s.gerekce : '',
++      yanlis: s.yanlis_gerekceleri && typeof s.yanlis_gerekceleri === 'object' ? s.yanlis_gerekceleri : {},
++    }));
++}
+diff --git a/js/surum.js b/js/surum.js
+index 915e1ea..f40ee41 100644
+--- a/js/surum.js
++++ b/js/surum.js
+@@ -1,2 +1,2 @@
+ // Uygulamanın sürümü; sw.js'deki SURUM ile aynı olmalı (test denetler)
+-export const SURUM = '1.78.4';
++export const SURUM = '1.78.5';
+diff --git a/sw.js b/sw.js
+index 6aba195..50cb7c2 100644
+--- a/sw.js
++++ b/sw.js
+@@ -2,7 +2,7 @@
+ // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
+ // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
+ // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
+-const SURUM = '1.78.4';
++const SURUM = '1.78.5';
+ const KABUK = `atlas-kabuk-${SURUM}`;
+ const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
+ const WIKIDATA = 'atlas-wikidata';
+@@ -108,6 +108,8 @@ const KABUK_DOSYALARI = [
+   'js/ekranlar/koleksiyon.js',
+   'js/ekranlar/harita.js',
+   'js/ekranlar/bildirim.js',
++  'js/eserDersi.js',
++  'js/ekranlar/eserDersi.js',
+   'js/wikidata.js',
+   'js/yardimci.js',
+   'js/yuruyus.js',
+@@ -250,6 +252,9 @@ self.addEventListener('fetch', (e) => {
+     // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px). İş 130: telefona indirilmişse (en büyük kopyası olmayanlar)
+     // IndexedDB'den
+     e.respondWith(depodanYaDa(e));
++  } else if (url.origin === self.location.origin && (url.pathname.includes('/basyapit-dersleri/') || url.pathname.endsWith('/data/ders_yayin.json'))) {
++    // İş 175: eser dersleri ve yayın kapısı sürümden bağımsız düzeltilir: önce ağ, çevrimdışıyken son görülen kopya
++    e.respondWith(onceAg(e, KABUK, 2500));
+   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
+     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
+     // İş 135: ağ yavaşsa (kopmadan sürünüyorsa) açılış beklemesin: önbellekte varsa 2,5 sn sonra o verilir, ağ arkada sürer
+diff --git a/tests/e2e/eser_dersi.spec.js b/tests/e2e/eser_dersi.spec.js
+new file mode 100644
+index 0000000..633a44a
+--- /dev/null
++++ b/tests/e2e/eser_dersi.spec.js
+@@ -0,0 +1,60 @@
++import { test, expect } from '@playwright/test';
++import { readFileSync } from 'node:fs';
++import { agiHazirla } from './ortak.js';
++
++// İş 175: eser dersi yayın kapısı. Gerçek başyapıt verisi ve gerçek ders dosyaları (Mantegna, Ölü İsa) kullanılır;
++// yalnız kapı dosyası (data/ders_yayin.json) testte değiştirilir.
++const K = 'Q546297';
++const kapi = JSON.parse(readFileSync(new URL('../../data/ders_yayin.json', import.meta.url), 'utf8'));
++const kapiVer = (context, onayli) =>
++  context.route(/\/data\/ders_yayin\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ ...kapi, onayli }) }));
++
++test('onaylanmamış ders görünmez: başyapıt sayfasında giriş yok, adres de açılmaz', async ({ page, context }) => {
++  await agiHazirla(context);
++  await kapiVer(context, []);
++  await page.goto(`./#/basyapit/${K}`);
++  await expect(page.locator('[data-test="basyapit"] h1')).toBeVisible();
++  await expect(page.locator('[data-basyapit-gorsel] img')).toBeAttached();
++  await expect(page.locator('[data-test="basyapit-ders"]')).toHaveCount(0);
++  await page.goto(`./#/basyapit/${K}/ders`);
++  await expect(page.locator('#uygulama')).toContainText('henüz yayında değil');
++  await expect(page.locator('[data-test="eser-dersi"]')).toHaveCount(0);
++});
++
++test('onaylı ders: giriş → üç seviye → sorular; taslak uyarısı yok; yatay taşma yok', async ({ page, context }) => {
++  await agiHazirla(context);
++  await kapiVer(context, [K]);
++  await page.goto(`./#/basyapit/${K}`);
++  await page.locator('[data-test="basyapit-ders"]').click();
++  const ders = page.locator('[data-test="eser-dersi"]');
++  await expect(ders.locator('[data-test="ders-metni"]')).toContainText('Bir bakışta kimlik');
++  await expect(ders.locator('[data-test="ders-taslak"]')).toHaveCount(0);
++  await ders.locator('[data-drs-sekme="orta"]').click();
++  await expect(ders.locator('[data-test="ders-metni"]')).toContainText('Tarihsel bağlam');
++  await ders.locator('[data-drs-sekme="ileri"]').click();
++  await expect(ders.locator('[data-drs-sekme="ileri"]')).toHaveAttribute('aria-selected', 'true');
++  await expect(ders.locator('[data-test="ders-metni"] h3').first()).toBeVisible();
++  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
++  await ders.locator('[data-drs-sekme="sorular"]').click();
++  const ilk = ders.locator('[data-drs-soru="0"]');
++  await ilk.locator('.drs-secenek[data-harf="A"]').click(); // CS01'in doğrusu A
++  await expect(ilk.locator('.drs-secenek.dogru')).toHaveCount(1);
++  await expect(ilk.locator('.drs-gerekce')).toContainText('Doğru.');
++  await ders.locator('[data-drs-soru="1"] .drs-secenek').first().click();
++  await expect(ders.locator('[data-test="ders-puan"]')).toContainText('/ 2 doğru');
++  // geri: başyapıt sayfası
++  await page.locator('[data-geri]').click();
++  await expect(page.locator('[data-test="basyapit"]')).toBeVisible();
++});
++
++test('geliştirici modunda onaylanmamış ders taslak uyarısıyla açılır', async ({ page, context }) => {
++  await agiHazirla(context);
++  await kapiVer(context, []);
++  await page.goto('./#/ayarlar');
++  await page.locator('[data-ayar-gelistirici]').check();
++  await page.goto(`./#/basyapit/${K}`);
++  await expect(page.locator('[data-test="basyapit-ders"]')).toContainText('taslak');
++  await page.locator('[data-test="basyapit-ders"]').click();
++  await expect(page.locator('[data-test="ders-taslak"]')).toContainText('onaylanmadı');
++  await expect(page.locator('[data-test="ders-metni"]')).toContainText('Bir bakışta kimlik');
++});
+diff --git a/tests/e2e/paket8.spec.js b/tests/e2e/paket8.spec.js
+index bec02fb..e0f134f 100644
+--- a/tests/e2e/paket8.spec.js
++++ b/tests/e2e/paket8.spec.js
+@@ -263,7 +263,7 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
+   await expect(not).toBeVisible();
+   await expect(not).toContainText('1.26 ·');
+   await expect(not).toContainText('Koleksiyonum');
+-  expect((await ilerleme(page)).sonSurum).toBe('1.78.4');
++  expect((await ilerleme(page)).sonSurum).toBe('1.78.5');
+   // aynı oturumda ana sayfaya dönünce durur; kapatılınca gider; sonraki açılışta yok
+   await not.getByRole('button', { name: 'Yenilikler notunu kapat' }).click();
+   await expect(not).toHaveCount(0);
+@@ -279,7 +279,7 @@ test('T4: yepyeni kullanıcıya Yenilikler notu gösterilmez', async ({ page })
+   await page.goto('./');
+   await hazir(page);
+   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
+-  expect((await ilerleme(page)).sonSurum).toBe('1.78.4');
++  expect((await ilerleme(page)).sonSurum).toBe('1.78.5');
+ });
+ 
+ test('T2: eser notları ilk ekrandan sonra yüklenir; önce açılan görüntüleyici not gelince yenilenir', async ({ page, context }) => {
+diff --git a/tests/unit/eser_dersi.test.mjs b/tests/unit/eser_dersi.test.mjs
+new file mode 100644
+index 0000000..0cb1a34
+--- /dev/null
++++ b/tests/unit/eser_dersi.test.mjs
+@@ -0,0 +1,77 @@
++import { test } from 'node:test';
++import assert from 'node:assert/strict';
++import { readFileSync, readdirSync } from 'node:fs';
++import { yayinAl, dersDurumu, dersGorunurMu, dersKlasoru, dersYolu, mdHtml, satirIci, kanitDizini, sorulariAl } from '../../js/eserDersi.js';
++
++const oku = (yol) => JSON.parse(readFileSync(new URL(`../../${yol}`, import.meta.url), 'utf8'));
++const KLASORLER = readdirSync(new URL('../../basyapit-dersleri/eserler/', import.meta.url));
++
++test('yayın kapısı: onaylı olmayan ders kapalı; geliştirici modunda taslak; dersi olmayan eser "yok"', () => {
++  const y = yayinAl({ dersler: { Q1: 'Q1', 'x|Bir Eser': 'x', Q3: '../kotu' }, onayli: ['x', 'bilinmeyen'] });
++  assert.equal(dersDurumu(y, 'Q1'), 'kapali');
++  assert.equal(dersDurumu(y, 'Q1', true), 'taslak');
++  assert.equal(dersDurumu(y, 'x|Bir Eser'), 'onayli');
++  assert.equal(dersDurumu(y, 'Q9', true), 'yok');
++  assert.equal(dersDurumu(y, 'Q3', true), 'yok'); // güvensiz klasör adı atılır
++  assert.equal(y.onayli.has('bilinmeyen'), false);
++  assert.equal(dersKlasoru(y, 'x|Bir Eser'), 'x');
++  assert.deepEqual(['onayli', 'taslak', 'kapali', 'yok'].map(dersGorunurMu), [true, true, false, false]);
++  assert.equal(dersDurumu(yayinAl(null), 'Q1', true), 'yok');
++});
++
++test('data/ders_yayin.json: 107 ders klasörünün hepsi bir başyapıta bağlı; onaylılar bilinen klasörler', () => {
++  const ham = oku('data/ders_yayin.json');
++  const y = yayinAl(ham);
++  const anahtarlar = new Set(oku('data/basyapitlar.json').eserler.map((e) => e.anahtar));
++  assert.equal(y.dersler.size, KLASORLER.length);
++  assert.deepEqual([...y.dersler.values()].sort(), [...KLASORLER].sort());
++  for (const a of y.dersler.keys()) assert.ok(anahtarlar.has(a), a);
++  assert.equal(y.onayli.size, ham.onayli.length);
++});
++
++test('ders yolu: yalnız güvenli klasör ve dosya adları', () => {
++  assert.equal(dersYolu('Q546297', 'DERS_ORTA.md'), 'basyapit-dersleri/eserler/Q546297/DERS_ORTA.md');
++  assert.throws(() => dersYolu('..', 'DERS.json'));
++  assert.throws(() => dersYolu('Q1', '../x.md'));
++});
++
++test('Markdown: başlık, paragraf, listeler, tablo, kanıt etiketi; HTML kaçışlı, ilk başlık atılır', () => {
++  const h = mdHtml('# Eser — Ders\n\n**Eser:** *Ad* [C001][K2]\n\n## Bölüm <b>\n\n- bir\n- iki\n\n1. a\n2) b\n\n| A | B |\n|---|---|\n| x | y |\n\n---\n> alıntı\nsatır <script>');
++  assert.doesNotMatch(h, /Eser — Ders/);
++  assert.match(h, /<p><b>Eser:<\/b> <i>Ad<\/i> <sup class="drs-kanit" data-kanit="C001">C001<\/sup><sup class="drs-kanit" data-kanit="K2">K2<\/sup><\/p>/);
++  assert.match(h, /<h3>Bölüm &lt;b&gt;<\/h3>/);
++  assert.match(h, /<ul><li>bir<\/li><li>iki<\/li><\/ul>/);
++  assert.match(h, /<ol><li>a<\/li><li>b<\/li><\/ol>/);
++  assert.match(h, /<thead><tr><th>A<\/th><th>B<\/th><\/tr><\/thead><tbody><tr><td>x<\/td><td>y<\/td><\/tr><\/tbody>/);
++  assert.match(h, /<hr>/);
++  assert.match(h, /<blockquote>alıntı<\/blockquote>/);
++  assert.match(h, /satır &lt;script&gt;/);
++  assert.equal(satirIci('2 * 3 * 4 ve [Hokusai]'), '2 * 3 * 4 ve [Hokusai]');
++});
++
++test('gerçek dersler: her klasörün üç seviyesi çevrilir, ham HTML sızmaz; sorular biçimce sağlam', () => {
++  for (const k of KLASORLER) {
++    const kok = new URL(`../../basyapit-dersleri/eserler/${k}/`, import.meta.url);
++    for (const d of ['DERS_BASLANGIC.md', 'DERS_ORTA.md', 'DERS_ILERI.md']) {
++      const h = mdHtml(readFileSync(new URL(d, kok), 'utf8'));
++      assert.ok(h.length > 200, `${k}/${d}`);
++      assert.doesNotMatch(h.replace(/<\/?(p|b|i|h[2-4]|ul|ol|li|hr|code|blockquote|table|thead|tbody|tr|th|td|div class="drs-tablo"|div|sup class="drs-kanit" data-kanit="[CKS]\d+"|sup)>/g, ''), /<[a-z/]/i, `${k}/${d}`);
++    }
++    const s = sorulariAl(JSON.parse(readFileSync(new URL('SORULAR.json', kok), 'utf8')));
++    assert.ok(s.length >= 5, `${k}: ${s.length} soru`);
++    assert.ok(kanitDizini(JSON.parse(readFileSync(new URL('DERS.json', kok), 'utf8'))).size > 0, k);
++  }
++});
++
++test('sorular: doğru harfi seçeneklerde olmayan ya da yinelenen harfli soru atılır', () => {
++  const sec = [{ harf: 'A', metin: 'a' }, { harf: 'B', metin: 'b' }];
++  const l = sorulariAl({ coktan_secmeli: [{ id: 'CS01', soru: 's', secenekler: sec, dogru: 'B', gerekce: 'g', yanlis_gerekceleri: { A: 'x' } }, { soru: 's', secenekler: sec, dogru: 'C' }, { soru: 's', secenekler: [sec[0], sec[0]], dogru: 'A' }, null] });
++  assert.equal(l.length, 1);
++  assert.equal(l[0].yanlis.A, 'x');
++  assert.deepEqual(sorulariAl(null), []);
++});
++
++test('kanıt dizini: iddia ve kaynak adları', () => {
++  const k = kanitDizini({ iddialar: [{ id: 'C001', ifade: 'İfade', kaynak_id: ['K1', 'K9'] }], kaynaklar: [{ id: 'K1', kurum: 'Brera', belge: 'Künye' }] });
++  assert.deepEqual(k.get('C001'), { ifade: 'İfade', kaynaklar: ['Brera · Künye'] });
++});
+diff --git a/tests/unit/paket8.test.mjs b/tests/unit/paket8.test.mjs
+index b5b678a..f8a5a2a 100644
+--- a/tests/unit/paket8.test.mjs
++++ b/tests/unit/paket8.test.mjs
+@@ -248,9 +248,9 @@ test('yenilikYazisi biçimi ve listenin başı şimdiki sürüm', () => {
+ });
+ 
+ // ---------- sürüm, kabuk, T2, T3 ----------
+-test('sürüm: js/surum.js ile sw.js aynı, 1.78.4', () => {
+-  assert.equal(SURUM, '1.78.4');
+-  assert.match(oku('sw.js'), /const SURUM = '1\.78\.4';/);
++test('sürüm: js/surum.js ile sw.js aynı, 1.78.5', () => {
++  assert.equal(SURUM, '1.78.5');
++  assert.match(oku('sw.js'), /const SURUM = '1\.78\.5';/);
+ });
+ 
+ test('T2: eser notları açılışta beklenmez, ilk ekrandan sonra yüklenir', () => {
