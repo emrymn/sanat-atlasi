@@ -154,6 +154,28 @@ test('İş 172: süzülüş sayfayı adım adım akıtmaz; yazılar solar, sayfa
   expect(await page.evaluate(() => Number(document.querySelector('.yur-bulanik').style.opacity))).toBe(0);
 });
 
+test('İş 183: Hayatı bölümünde aşağı inince adımlara oturma kapanır, sayfa başa geri çekilmez', async ({ page }) => {
+  await page.goto('./');
+  const kart = page.locator('[data-test="gunun-kart"]');
+  await expect(kart).toHaveClass(/yur-hazir/);
+  await kart.locator('[data-test="bugun-hayati"]').click();
+  const hayat = page.locator('[data-test="yur-hayat"]');
+  await expect.poll(() => hayat.evaluate((el) => Math.round(el.getBoundingClientRect().top))).toBe(0);
+  await expect(page.locator('[data-yur-akis]')).not.toHaveAttribute('data-suzul', /.+/, { timeout: 6000 });
+  const snap = () => page.evaluate(() => getComputedStyle(document.documentElement).scrollSnapType);
+  await expect.poll(snap).toBe('none');
+  const y0 = await page.evaluate(() => window.scrollY);
+  await page.mouse.move(195, 400);
+  await page.mouse.wheel(0, 300);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(y0 + 200);
+  await page.waitForTimeout(600);
+  expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(y0 + 200);
+  // başa dönünce adımlara oturma geri gelir
+  await page.locator('[data-test="yur-basa"]').click();
+  await expect.poll(() => page.evaluate(() => window.scrollY), { timeout: 6000 }).toBe(0);
+  await expect.poll(snap).not.toBe('none');
+});
+
 test('V2: elle yazılmış biyografi (Guido Reni) kaynak notuyla görünür', async ({ page }) => {
   await page.goto('./#/gunun/guido-reni');
   await expect(page.locator('[data-test="biyografi"]')).toContainText('Bologna');
@@ -201,6 +223,13 @@ test('yürüyüş: adımlar, kart ayrıntıyı kapatmaz, siyah boşluk yok, sekm
   const tur = page.locator('[data-test="yur-tur"]');
   await expect(tur).toBeVisible();
   expect((await tur.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  // İş 184: sanatçı sayfası ve bütün eserleri iki büyük karo; eser karosunda sanatçının küçük resimleri
+  for (const k of ['yur-sanatci', 'yur-eserler']) {
+    const karo = page.locator(`[data-test="${k}"]`);
+    await expect(karo).toBeVisible();
+    expect((await karo.boundingBox()).height).toBeGreaterThanOrEqual(120);
+  }
+  await expect(page.locator('[data-test="yur-eserler"] .yur-kare img').first()).toBeAttached();
   await tur.click();
   await expect(page).toHaveURL(/#\/pekistir/);
   // başa dönünce kapak ve sekme çubuğu yerinde
