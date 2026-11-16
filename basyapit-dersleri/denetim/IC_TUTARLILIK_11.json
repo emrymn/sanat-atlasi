@@ -1,0 +1,52 @@
+[
+ {
+  "eser_id": "bosch",
+  "tur": "C",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "- **Tarih:** c. 1490–1510 (Bosch 40–60 yaşlarında); tarihleme belirsiz [C003].",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "\"C\": \"1600–1620, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510.\"",
+  "aciklama": "CS03'ün C şıkkına yanlış-gerekçe, bu eserin (Bosch Dünyevi Zevkler Bahçesi) tahmini tarihinin 1600–1620 olduğunu söylüyor; dersler c. 1490–1510 verir ve Bosch 1516'da ölmüştür. Gerekçe bu eser hakkında yanlış bir olgu aktarıyor ve sorunun konusuyla kendi içinde çelişiyor.",
+  "onem": "YÜKSEK"
+ },
+ {
+  "eser_id": "bosch",
+  "tur": "C",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Sağ panelde, gövdesi kırık bir yumurta kabuğundan oluşan ünlü \"ağaç-adam\" yer alır [C024].",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "\"D\": \"Metal (New York) bu eserin bulunduğu kurum değildir; doğru yer Kırık yumurta kabuğu.\"",
+  "aciklama": "CS08 (ağaç-adamın gövde malzemesi sorusu) D şıkkının yanlış-gerekçesi, müze/kurum sorusuna (CS04 tipi) ait şablonu taşıyor: 'Metal (New York) ... kurum' ve 'doğru yer Kırık yumurta kabuğu' ifadeleri malzeme sorusuyla ilgisiz ve anlamsız; gerekçe başka soruya ait.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "domenico-di-michelino",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Mevcut betime göre kompozisyon, kenar kenara üç bölgeden oluşan bir panodur: kızıl/karanlık sol (Cehennem), yeşil/sakin orta (Araf), altın tonlu sağ (Floransa/Cennet) [C009] (belirsiz).",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Kompozisyon, şiirin üç dünyasını tek yüzeye şema olarak yayar: Cehennem (sol), Araf (orta), Cennet (gök) + Floransa (sağ) (mevcut betim, belirsiz) [C009] (belirsiz)[C011] (belirsiz).",
+  "aciklama": "Aynı sahnenin topografyası iki derste çelişiyor: Orta ders üçüncü bölgeyi (Cennet) sağdaki altın bölgeye yerleştirir ('Floransa/Cennet'), İleri (ve Başlangıç: 'Gökyüzü, Cennet'in iç içe küreleri') dersleri ise Cennet'i gökyüzünde, sağda yalnız Floransa'yı verir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "duccio",
+  "tur": "E",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Ön yüzünde tahtta Meryem ve Çocuk İsa, arka yüzünde Christ'in hayatından 43 küçük sahne vardı [C009][C010].",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Arka yüz: 43 küçük panelde Meryem'in ve Christ'in Hayatı + 6 melek paneli [C010].",
+  "aciklama": "Maestà arka yüzünün 43 panelinin içeriği iki derste farklı anlatılıyor: Başlangıç dersi 43 sahnenin tamamının Christ'in hayatından olduğunu söylüyor; İleri dersi (ve KANIT C010: 'Meryem'in ve Christ'in Hayatı') aynı 43 panelin Meryem'in ve Christ'in hayatını kapsadığını söylüyor. Aynı eserin arka yüzünün sahne içeriği çelişiyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "hoch",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Bu figürlerden Liebknecht ve Luxemburg, Spartaküs hareketinin önderlerindendi",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Figürler (plwiki): Ebert, Noske, Kapp, Liebknecht, II. Wilhelm, Hindenburg (politikacılar); Marx, Lenin, Radek (sosyalistler); Einstein; Hausmann, Heartfield, Herzfelde, Grosz, Baader, Höch",
+  "aciklama": "DERS_ORTA, 'bu figürlerden' diyerek Rosa Luxemburg'u eserin figürleri arasında sunuyor; ancak DERS.json'daki C018 figür envanteri (plwiki listesi, devamı Kollwitz'ten Reinhardt'ya kadar) Luxemburg'u içermez — Luxemburg pakette yalnız C048'de cinayet bağlamında geçer. İki anlatım eserde tasvir edilen kişiler konusunda çelişiyor; DERS_ILERI'deki 'Figürlerin bir kısmı… Liebknecht ve Luxemburg' cümlesi de aynı çelişkiyi taşıyor.",
+  "onem": "ORTA"
+ }
+]
