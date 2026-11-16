@@ -1,0 +1,162 @@
+[
+ {
+  "eser_id": "Q186953",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Raphael'in kendi bu eserin sanatçısı değildir; doğru sanatçı Raphael'in değil; ~18. yy Protestan çevreler.",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "**Sanatçı:** Raphael (Raffaello Sanzio) [C001].",
+  "aciklama": "CS10'un B seçeneği gerekçesi Raphael'in bu eserin sanatçısı olmadığını söylüyor; dersler ve C001 iddiasına göre sanatçı Raphael'tir (tartışmalı olan ad, sanatçı değil).",
+  "onem": "YÜKSEK"
+ },
+ {
+  "eser_id": "Q186953",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Solda beyaz giysili, izleyiciye bakan tek figür en tartışmalıdır",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Otoportrenin en sağda, izleyiciye bakan tek figür olarak konumu",
+  "aciklama": "Aynı ders hem beyaz figürü (sol) hem Raphael otoportresini (en sağ) 'izleyiciye bakan tek figür' olarak niteleyip exclusiviteyi ikisine birden veriyor; ikisi de 'tek' olamaz.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q19863024",
+  "tur": "B",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Budapeşte versiyonunda Davud, zorlukla görünen gözetleyen figür olarak vardır (Berlin'de yoktur; bu bir versiyon farkıdır, çelişki değil) (yorum) [C024]",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "Davud Budapeşte versiyonunda vardır (C011/C012).",
+  "aciklama": "DERS_ORTA'da (yorum) işaretiyle ve C seviyeli C024 olarak sunulan 'Davud'un Budapeşte versiyonunda varlığı' olgusu, DY03 açıklamasında nitelemesiz/atıfsız kesin olgu olarak geçiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q19966572",
+  "tur": "B",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Hermitage=orijinal (1920), Berlin=kopya (kayıp WWII); kedi Madonna of the Cat motifi.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Orijinallik ihtilafı: Hermitage=orijinal (1920) ↔ Berlin=kopya; Milanese 1880 Berlin'i esas almıştı; Berlin kayıp.",
+  "aciklama": "Orijinallik DERS.json'da D düzeyi ihtilaf/tartışma olarak nitelendiği hâlde tekrar kartında nitelemesiz kesin olgu olarak geçiyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q19966572",
+  "tur": "B",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "İki çıplak sevgili yatakta; erotik bas-relifler; yeşil cibinlik; kedi + hizmetçi tanık.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Yorum: kedi=evcil tanık/motif tekrarı; hizmetçi=üçüncü bakış (voyeur).",
+  "aciklama": "Kedi ve hizmetçinin tanık oluşu DERS.json'da C düzeyi yorum iken tekrar kartında nitelemesiz olgu olarak geçiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q20176925",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Kaynakların betimlediği kompozisyon yatay formatta, figür sağ kenara yakın, masa soldadır",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Boyut overall 143,5 × 129 cm (56 1/2 × 50 13/16 in.)",
+  "aciklama": "Künyede yükseklik (143,5 cm) genişlikten (129 cm) büyüktür, yani tuval dikey formattadır; İleri dersindeki betimleme tabloyu yatay formatta diye verir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q220859",
+  "tur": "A",
+  "dosya_1": "DERS.json",
+  "alinti_1": "\"kelime_sayisi\": 2057",
+  "dosya_2": "KALITE_KONTROL.md",
+  "alinti_2": "| İleri | 2848 | 2600–3200 | 20 dk ≈ (aralık içinde) |",
+  "aciklama": "İleri seviye kelime sayısı DERS.json'da 2057 iken KALITE_KONTROL ve KANIT_DOSYASI 2848 diyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q220859",
+  "tur": "B",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "**Teknik:** yağlıboya, meşe pano [C002]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Teknik: yağlıboya, ahşap (muhtemelen meşe); 82.2×60 cm.",
+  "aciklama": "C002 meşeyi 'muhtemelen' diye nitelediği hâlde ders metni (ayrıca SORULAR TK01/CS02) meşeyi nitelemesiz kesin olgu olarak veriyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q220859",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Giovanni di Nicolao Arnolfini + eşi.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Başlık: The Arnolfini Portrait; Jan van Eyck; 1434.",
+  "aciklama": "CS06 yanlış-gerekçesi Jan van Eyck'in eserin sanatçısı olmadığını söylüyor; tüm dersler sanatçının van Eyck olduğunu öğretiyor.",
+  "onem": "YÜKSEK"
+ },
+ {
+  "eser_id": "Q220859",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Raphael bu eserin sanatçısı değildir; doğru sanatçı Donatello/Masaccio.",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "**Sanatçı:** Jan van Eyck (c. 1390–1441) [C026]",
+  "aciklama": "CS08 gerekçesi Donatello/Masaccio'yu eserin sanatçısı gibi sunuyor; soru Gombrich'in karşılaştırması hakkındadır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q220859",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Kızılötesi reflektografi (infrared reflectography) gibi teknik analizler, resmin nasıl yapıldığına dair çok şey söyler [C004]",
+  "dosya_2": "KANIT_DOSYASI.md",
+  "alinti_2": "**C004** — İmza/tarih/yazıt: \"Johannes de eyck fuit hic. 1434\"",
+  "aciklama": "Teknik analiz cümlesi konuca ilgisiz imza iddiası C004'e etiketlenmiş; aynı hata DERS_ILERI.md'de de var.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q227494",
+  "tur": "A",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Red Fuji = BM 1906,1220,0.525 (38.2×26.1 cm)",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "Met 24.4×35.6, BM 26.1×38.2, Fujibi 24.1×37.2",
+  "aciklama": "Aynı BM nüshasının ölçüleri İleri derste 38.2×26.1 cm, SORULAR'da 26.1×38.2 cm olarak ters sırada veriliyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q227494",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "2 ve 1, enwiki/itwiki tablo satır sırasıdır; katalog numaralandırma geleneği değildir (D006) (S4/S5).",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Ukiyo-e taikei (Kobayashi) no. 2 ↔ enwiki/itwiki tablo satır sırası Red Fuji 2 / Büyük Dalga 1. Katalog gelenekleri farklıdır",
+  "aciklama": "CS10'un yanlış-gerekçesi 2/1'in katalog numaralandırması olmadığını söyler, oysa DERS.json C040 Ukiyo-e taikei kataloğunun Red Fuji'yi no. 2 olarak kaydettiğini belirtir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q227494",
+  "tur": "E",
+  "dosya_1": "KALITE_KONTROL.md",
+  "alinti_1": "KANIT_DOSYASI.md'de yalnız §15 gereği özgün biçim kanji (seri/levha başlıkları, Akafuji, imza, sanatçı/yayıncı adları, kartuş \"jū\" karakteri — KANIT §0/§2'de) — karışma değil, bilinçli koruma",
+  "dosya_2": "KANIT_DOSYASI.md",
+  "alinti_2": "Özgün başlık romaji ile verildi; ders md + DERS.json + SORULAR.json CJK 0.",
+  "aciklama": "KALITE, KANIT §0/§2'de özgün biçim kanjinin korunduğunu doğruluyor; KANIT ise başlığın romaji ile verildiğini söylüyor ve dosyada tek bir kanji karakteri yok.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q23008305",
+  "tur": "B",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Commons notu eserin Varşova Ulusal Müzesi'ndeki \"Brescia. The Renaissance in Northern Italy\" geçici sergisinde gösterildiğini aktarır; bu not atıfsızdır, belirsiz işaretlidir",
+  "dosya_2": "SORULAR.json",
+  "alinti_2": "Brescia sergisi eseri geçici olarak Varşova’da gösterdi; kalıcı koleksiyon Poznań’dadır.",
+  "aciklama": "Brescia sergisi olgusu derslerde 'atıfsız, belirsiz işaretli' olarak sunulurken SORULAR.json yanlış-gerekçesinde nitelemesiz kesin olgu olarak geçiyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q23008305",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "İngilizce ve İtalyanca Vikipedi \"SOPHONISBA ANGUSSOLA VIRGO AMILCARIS FILIA EX VERA EFFIGIE TRES SUAS SORORES ET ANCILLAM PINXIT MDLV\" okumasını verir",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Ham cache kontrolünde itwiki, plwiki ve Niezła Sztuka'nın \"ANCILAM\" (tek L), enwiki'nin \"ANCILLAM\" (çift L) yazdığı görülmüştür",
+  "aciklama": "Aynı ders önce İtalyanca Vikipedi'nin yazıt okumasında çift L'li ANCILLAM verildiğini söylüyor, sonra itwiki'nin tek L'li ANCILAM yazdığını belirtiyor.",
+  "onem": "DÜŞÜK"
+ }
+]
