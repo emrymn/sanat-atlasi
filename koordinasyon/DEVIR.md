@@ -114,7 +114,8 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 | 1 | Lisans taraması (2 tur) | ChatGPT | Tamam (§4.3) |
 | 2 | Düzeltme Listesi 01 (7 madde, 9 dosya) | Qwen 3.8-max | `95b4d72`, farkı satır satır doğrulandı |
 | 3 | İç tutarlılık pilotu 01 (10 eser) | deepseek-v4-pro | `59055f6`, tek dosya. 6 bulgu; 12/12 alıntı birebir, 6/6 gerçek (iddia metinleriyle karşılaştırıldı). Yakalama zayıf: bilinen 9'dan yalnız 006 kısmen (İLERİ'deki hâli); iç okumayla bulunabilecek 004 (KANIT C005 "K1 (182×187)" + "uyumlu") kaçtı; diğerleri kaynak/görsel gerektiriyor. 10 eserin 6'sında 0 bulgu. Maliyet: Emre'den bekleniyor |
-| 4 | İç tutarlılık 02 (20 eser, kalan listenin 1–20'si) | deepseek-v4-pro | Komut verildi; komuta "her eserde en az bir dosyayı baştan sona karşılaştır" ve "uyumlu/tutarlı denen sayıları kontrol et" eklendi |
+| 4 | Kalibrasyon: pilot 01'in aynı 10 eseri | glm-5.3 | Komut verildi (yakalama oranı karşılaştırması; çıktı `IC_TUTARLILIK_PILOT_01_GLM.json`). Kazanan model 97 eseri tarar |
+| 5 | İç tutarlılık 02 (20 eser, kalan listenin 1–20'si) | 4'ün kazananı | Beklemede; komut hazır, komuta "her eserde en az bir dosyayı baştan sona karşılaştır" ve "uyumlu/tutarlı denen sayıları kontrol et" eklendi |
 
 ## 5. Plan (baştan sona)
 
