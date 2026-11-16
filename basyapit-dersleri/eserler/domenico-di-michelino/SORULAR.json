@@ -60,7 +60,7 @@
    "yanlis_gerekceleri": {
     "A": "Domenico yürütücü.",
     "C": "Fra Angelico öğretmen.",
-    "D": "Botticelli bu eserin sanatçısı değildir; doğru sanatçı Alesso Baldovinetti."
+    "D": "Botticelli doğru yanıt değildir; doğru yanıt Alesso Baldovinetti."
    },
    "kanit": [
     "C004"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K2: Domenico di Michelino (1417–1491).",
    "yanlis_gerekceleri": {
-    "B": "Giotto bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino.",
-    "C": "Masaccio bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino.",
-    "D": "Perugino bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino."
+    "B": "Giotto doğru yanıt değildir; doğru yanıt Domenico di Michelino.",
+    "C": "Masaccio doğru yanıt değildir; doğru yanıt Domenico di Michelino.",
+    "D": "Perugino doğru yanıt değildir; doğru yanıt Domenico di Michelino."
    },
    "kanit": [
     "C002"
@@ -219,7 +219,7 @@
    "gerekce": "K2: Compagnia di San Luca by 1442.",
    "yanlis_gerekceleri": {
     "B": "Arte della Lana değil.",
-    "C": "Giudici sonra (1484).",
+    "C": "Arte dei Giudici doğru yanıt değildir.",
     "D": "Misericordia bu soruda doğru değildir; kaynakların doğruladığı yanıt Compagnia di San Luca."
    },
    "kanit": [
@@ -250,8 +250,8 @@
    "dogru": "A",
    "gerekce": "K2: Vasari reports pupil of Fra Angelico.",
    "yanlis_gerekceleri": {
-    "B": "Giotto bu eserin sanatçısı değildir; doğru sanatçı Fra Angelico.",
-    "C": "Masaccio bu eserin sanatçısı değildir; doğru sanatçı Fra Angelico.",
+    "B": "Giotto doğru yanıt değildir; doğru yanıt Fra Angelico.",
+    "C": "Masaccio doğru yanıt değildir; doğru yanıt Fra Angelico.",
     "D": "Donatello bu soruda doğru değildir; kaynakların doğruladığı yanıt Fra Angelico."
    },
    "kanit": [

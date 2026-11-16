@@ -18,13 +18,13 @@ Resim, bir katedral duvarında, in situ durur: şiir, kutsal mekânın parçası
 
 Mevcut betime göre ortada kırmızı cübbeli, defne taçlı Dante durur; elinde açık kitap [C008] (belirsiz). Solda Cehennem, ortada teraslı Araf dağı, sağda kubbesiyle Floransa [C009] (belirsiz)[C010] (belirsiz)[C011] (belirsiz). Gökyüzü, Cennet'in iç içe küreleri [C009] (belirsiz). (Bu ayrıntılar mevcut veri betimine dayanır; görsel bu oturumda incelenemedi, belirsiz) [C020] (belirsiz). Kesin olan: resim, Dante'yi şiirin üç dünyası ve Floransa arasında gösterir [C007].
 
-Dokuzuncusu, hafıza: resim, kentin şairle barışmasının görsel belgesidir; duvar, bir vicdan metnidir (yorum) [C017]. Onuncusu, görüntü: 15. yüzyıl Floransa'sı ve kubbesi, dönemin gözüyle kaydedilmiştir (yorum) [C010].
-
 ## Neden bu kadar önemli
 
 Birincisi, kültürel: Floransa, sürgünde ölen şairini ölümünden sonra katedral duvarında onurlandırır — bir "barışma" jesti (yorum) [C017]. İkincisi, edebi: şiir, kutsal mekâna girer; İlahi Komedya, bir ibadet nesnesi gibi sunulur (yorum) [C022]. Üçüncüsü, tarihsel: resim, 15. yüzyıl Floransa'sının ve Brunelleschi kubbesinin dönemin gözüyle bir görüntüsüdür (yorum) [C010] (belirsiz). Dördüncüsü, ikonografik: Dante'nin kırmızı cübbe + defne tasviri, şairin yerleşik imgesini pekiştirir (yorum) [C008] (belirsiz).
 
 Beşincisi, atıf tarihi: Berenson bir dönem eserleri yanlış atfetti; Domenico'nun kimliği geç kuruldu [C014]. Altıncısı, minyatür hipotezi: bir elyazması ilhamı önerilir ama belge yok (tartışma) [C013]. Yedincisi, ortak üretim: tasarım Baldovinetti, yürütme Domenico; eser, bir işbölümü nesnesidir [C004]. Sekizincisi, lonca: Domenico, Floransa lonca sisteminin tipik bir ustasıdır [C016].
+
+Dokuzuncusu, hafıza: resim, kentin şairle barışmasının görsel belgesidir; duvar, bir vicdan metnidir (yorum) [C017]. Onuncusu, görüntü: 15. yüzyıl Floransa'sı ve kubbesi, dönemin gözüyle kaydedilmiştir (yorum) [C010].
 
 ## Küçük sözlük
 
