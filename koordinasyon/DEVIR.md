@@ -115,7 +115,8 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 | 2 | Düzeltme Listesi 01 (7 madde, 9 dosya) | Qwen 3.8-max | `95b4d72`, farkı satır satır doğrulandı |
 | 3 | İç tutarlılık pilotu 01 (10 eser) | deepseek-v4-pro | `59055f6`, tek dosya. 6 bulgu; 12/12 alıntı birebir, 6/6 gerçek (iddia metinleriyle karşılaştırıldı). Yakalama zayıf: bilinen 9'dan yalnız 006 kısmen (İLERİ'deki hâli); iç okumayla bulunabilecek 004 (KANIT C005 "K1 (182×187)" + "uyumlu") kaçtı; diğerleri kaynak/görsel gerektiriyor. 10 eserin 6'sında 0 bulgu. Maliyet: Emre'den bekleniyor |
 | 4 | Kalibrasyon: pilot 01'in aynı 10 eseri | glm-5.3 | `180171f`, tek dosya. 10 bulgu, 20/20 alıntı birebir, hepsi gerçek. 004'ü ve 006'yı (DERS.json + İLERİ) yakaladı; deepseek'in 3 D bulgusunu (Q3873247 C010, Q1065493 C020, Q1091086 C007) kaçırdı, deepseek'in kaçırdığı 7'yi buldu. **Kazanan: glm-5.3.** (%44,2 kota değil, oturumun bağlam doluluğuydu) |
-| 5 | İç tutarlılık 02 (kalan listenin 1–10'u; 20'lik komut 10'a bölündü) | glm-5.3 | Komut verildi; komuta "her eserde en az bir dosyayı baştan sona karşılaştır" ve "uyumlu/tutarlı denen sayıları kontrol et" eklendi |
+| 5 | İç tutarlılık 02 (Q1061035…Q167605, 10 eser) | glm-5.3 | `169ba46`, tek dosya. 76 bulgu, 152/152 alıntı birebir. 68'i D; 6'lık örneklem: teknik olarak doğru ama iddialar sıkıştırılmış not olduğundan "iddiada olmayan ayrıntı" çoğu kez kaynaktan gelen meşru ayrıntı → düşük değer, ayrı ayıklanacak. D dışı 8 bulgu okundu; 7'si gerçek (Liste 02 adayı: #18, 25, 42, 52, 73, 74, 75), #9 önemsiz (E numaralandırması). Kota 53,2 → 49,5 (%3,7/10 eser; GLM alt ajan kullandı) |
+| 6 | İç tutarlılık 03 (Q17026577…Q1863885, 10 eser) | glm-5.3 | Komut verildi; D tanımı daraltıldı (yalnız ilgisiz iddiaya giden etiket ya da iddiayla çelişki) |
 
 ## 5. Plan (baştan sona)
 
@@ -135,7 +136,7 @@ Pilot komutunda aranan türler: A sayı/tarih · B kesinleşme · C soru geçerl
 
 ### Faz 2 — Taramayı 107 esere yay
 
-- **Maliyet (16 Kasım ölçümü):** iki pilot (deepseek + GLM, 2×10 eser) birlikte kotanın ~%4,2'si (57,4 → 53,2; günlük 28,8M token, %83 önbellek) → ~%0,2/eser; 97 eser ≈ %20. Kota yeter.
+- **Maliyet (16 Kasım ölçümü):** iki pilot (deepseek + GLM, 2×10 eser) birlikte kotanın ~%4,2'si (57,4 → 53,2; günlük 28,8M token, %83 önbellek) → ~%0,2/eser; 97 eser ≈ %20. Kota yeter. **Düzeltme:** tarama 02 %3,7/10 eser tuttu → kalan 87 eser ≈ %32; Liste uygulamaları için pay kalsın diye D daraltıldı.
 - **Bağlam sınırı:** GLM 10 eserde bağlamın %44'ünü doldurdu; bu yüzden parti boyu **10 eser** (10 oturum).
 - Kalan 97 eser, `ls basyapit-dersleri/eserler` sırasıyla (pilot 10 hariç), oturum başına ~20 eserlik partiler (5 oturum; 02: Q1061035…Q1863885); çıktılar `basyapit-dersleri/denetim/IC_TUTARLILIK_02…06.json`.
 - Her partiyi Faz 1'deki betikle doğrula; geçersiz alıntı oranı yükselirse parti boyunu küçült.
