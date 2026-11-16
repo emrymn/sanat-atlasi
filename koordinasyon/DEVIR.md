@@ -138,6 +138,7 @@ Pilot komutunda aranan türler: A sayı/tarih · B kesinleşme · C soru geçerl
 ### Faz 2 — Taramayı 107 esere yay
 
 - **Maliyet (16 Kasım ölçümü):** iki pilot (deepseek + GLM, 2×10 eser) birlikte kotanın ~%4,2'si (57,4 → 53,2; günlük 28,8M token, %83 önbellek) → ~%0,2/eser; 97 eser ≈ %20. Kota yeter. **Düzeltme:** tarama 02 %3,7/10 eser tuttu → kalan 87 eser ≈ %32; Liste uygulamaları için pay kalsın diye D daraltıldı.
+- **Gerçek maliyet (alt ajanlı):** tarama 03 + iki ek turu 49,5 → 43,6 = %5,9/10 eser. 04'ten sonra kalan 67 eser ≈ %27–40 → kota bitmeden hepsi sığmaz. **Karar önerisi:** 04'ten sonra taramayı duraklat, kalan kotayla Liste 02'yi uygulat (en az %15 ayır), kalan taramaları 13 Aralık sıfırlamasından sonra sürdür.
 - **Bağlam sınırı:** GLM 10 eserde bağlamın %44'ünü doldurdu; bu yüzden parti boyu **10 eser** (10 oturum).
 - Kalan 97 eser, `ls basyapit-dersleri/eserler` sırasıyla (pilot 10 hariç), oturum başına ~20 eserlik partiler (5 oturum; 02: Q1061035…Q1863885); çıktılar `basyapit-dersleri/denetim/IC_TUTARLILIK_02…06.json`.
 - Her partiyi Faz 1'deki betikle doğrula; geçersiz alıntı oranı yükselirse parti boyunu küçült.
