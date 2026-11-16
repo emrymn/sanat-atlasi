@@ -187,9 +187,9 @@
    "dogru": "A",
    "gerekce": "K1: progetto di Bramante per S. Pietro.",
    "yanlis_gerekceleri": {
-    "B": "Antik Roma hamamı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi.",
-    "C": "Gotik katedral bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi.",
-    "D": "Bizans bazilika bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi."
+    "B": "Antik Roma hamamı doğru yanıt değildir; doğru yanıt Bramante yeni S. Pietro projesi.",
+    "C": "Gotik katedral doğru yanıt değildir; doğru yanıt Bramante yeni S. Pietro projesi.",
+    "D": "Bizans bazilika doğru yanıt değildir; doğru yanıt Bramante yeni S. Pietro projesi."
    },
    "kanit": [
     "C003"
@@ -283,9 +283,9 @@
    "dogru": "A",
    "gerekce": "K2: biblioteca e studio privato.",
    "yanlis_gerekceleri": {
-    "B": "Yemek salonu bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu.",
-    "C": "Şapel bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu.",
-    "D": "Taht odası bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu."
+    "B": "Yemek salonu doğru yanıt değildir; doğru yanıt II. Julius kütüphanesi/studiolosu.",
+    "C": "Şapel doğru yanıt değildir; doğru yanıt II. Julius kütüphanesi/studiolosu.",
+    "D": "Taht odası doğru yanıt değildir; doğru yanıt II. Julius kütüphanesi/studiolosu."
    },
    "kanit": [
     "C002"
@@ -315,9 +315,9 @@
    "dogru": "A",
    "gerekce": "K3/K4: title not Raphael's; 18th c. Protestant.",
    "yanlis_gerekceleri": {
-    "B": "Raphael'in kendi bu eserin sanatçısı değildir; doğru sanatçı Raphael'in değil; ~18. yy Protestan çevreler.",
-    "C": "II. Julius'un bu soruda doğru değildir; kaynakların doğruladığı yanıt Raphael'in değil; ~18. yy Protestan çevreler.",
-    "D": "Vasari'nin bu soruda doğru değildir; kaynakların doğruladığı yanıt Raphael'in değil; ~18. yy Protestan çevreler."
+    "B": "Raphael'in kendi doğru yanıt değildir; doğru yanıt Raphael'in değil; ~18. yy Protestan çevreler.",
+    "C": "II. Julius'un doğru yanıt değildir; doğru yanıt Raphael'in değil; ~18. yy Protestan çevreler.",
+    "D": "Vasari'nin doğru yanıt değildir; doğru yanıt Raphael'in değil; ~18. yy Protestan çevreler."
    },
    "kanit": [
     "C024"

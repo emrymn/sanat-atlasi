@@ -60,7 +60,7 @@
    "yanlis_gerekceleri": {
     "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer San Marco Manastırı, Floransa.",
     "C": "Prado'da başka bir Müjde var.",
-    "D": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt San Marco Manastırı, Floransa."
+    "D": "Vatikan doğru yanıt değildir; doğru yanıt San Marco Manastırı, Floransa."
    },
    "kanit": [
     "C006"
@@ -91,7 +91,7 @@
    "gerekce": "K2: Cosimo de' Medici.",
    "yanlis_gerekceleri": {
     "A": "Lorenzo değil, Cosimo.",
-    "C": "Papa V. Martin bu soruda doğru değildir; kaynakların doğruladığı yanıt Cosimo de' Medici.",
+    "C": "Papa V. Martin doğru yanıt değildir; doğru yanıt Cosimo de' Medici.",
     "D": "Brancacci başka şapel."
    },
    "kanit": [
@@ -154,9 +154,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: Meryem'in bakireliği.",
    "yanlis_gerekceleri": {
-    "A": "Savaşı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği.",
-    "C": "Zenginliği bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği.",
-    "D": "Ölümü bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği."
+    "A": "Savaşı doğru yanıt değildir; doğru yanıt Bakireliği.",
+    "C": "Zenginliği doğru yanıt değildir; doğru yanıt Bakireliği.",
+    "D": "Ölümü doğru yanıt değildir; doğru yanıt Bakireliği."
    },
    "kanit": [
     "C016"
@@ -186,9 +186,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: geçen rahibe Ave hatırlatması.",
    "yanlis_gerekceleri": {
-    "A": "İmza bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak.",
-    "C": "Tarih bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak.",
-    "D": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak."
+    "A": "İmza doğru yanıt değildir; doğru yanıt Ave demeyi hatırlatmak.",
+    "C": "Tarih doğru yanıt değildir; doğru yanıt Ave demeyi hatırlatmak.",
+    "D": "Satış doğru yanıt değildir; doğru yanıt Ave demeyi hatırlatmak."
    },
    "kanit": [
     "C019"
@@ -220,7 +220,7 @@
    "yanlis_gerekceleri": {
     "A": "Süs değil; yapısal/anlamsal.",
     "C": "Kaçış noktası portikoda.",
-    "D": "Işık bu soruda doğru değildir; kaynakların doğruladığı yanıt İki mekânı ayırır ama birlikte tutar."
+    "D": "Işık doğru yanıt değildir; doğru yanıt İki mekânı ayırır ama birlikte tutar."
    },
    "kanit": [
     "C017"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K2: royal status + purity.",
    "yanlis_gerekceleri": {
-    "A": "Yas bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık.",
-    "C": "Savaş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık.",
-    "D": "Ticaret bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık."
+    "A": "Yas doğru yanıt değildir; doğru yanıt Kraliyet+saflık.",
+    "C": "Savaş doğru yanıt değildir; doğru yanıt Kraliyet+saflık.",
+    "D": "Ticaret doğru yanıt değildir; doğru yanıt Kraliyet+saflık."
    },
    "kanit": [
     "C015"
@@ -283,7 +283,7 @@
    "gerekce": "K2: Cosimo özel hücre + kamusal koridor.",
    "yanlis_gerekceleri": {
     "A": "Hücreler sade.",
-    "C": "Yalnız sunakta bu soruda doğru değildir; kaynakların doğruladığı yanıt Cosimo'nun hücresi + kamusal koridorlar.",
+    "C": "Yalnız sunakta doğru yanıt değildir; doğru yanıt Cosimo'nun hücresi + kamusal koridorlar.",
     "D": "Kullanıldı."
    },
    "kanit": [
@@ -315,8 +315,8 @@
    "gerekce": "K2: darker = reflection/prayer.",
    "yanlis_gerekceleri": {
     "A": "Açık ton dekorasyon.",
-    "C": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Tefekkür/dua.",
-    "D": "Işık bu soruda doğru değildir; kaynakların doğruladığı yanıt Tefekkür/dua."
+    "C": "Satış doğru yanıt değildir; doğru yanıt Tefekkür/dua.",
+    "D": "Işık doğru yanıt değildir; doğru yanıt Tefekkür/dua."
    },
    "kanit": [
     "C012"

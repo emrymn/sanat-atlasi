@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2: rays of light.",
    "yanlis_gerekceleri": {
-    "B": "Güvercin heykeli bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri.",
-    "C": "Altın fon bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri.",
-    "D": "Bulut bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri."
+    "B": "Güvercin heykeli doğru yanıt değildir; doğru yanıt Sol pencereden ışık hüzmeleri.",
+    "C": "Altın fon doğru yanıt değildir; doğru yanıt Sol pencereden ışık hüzmeleri.",
+    "D": "Bulut doğru yanıt değildir; doğru yanıt Sol pencereden ışık hüzmeleri."
    },
    "kanit": [
     "C009"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: assumed Campin.",
    "yanlis_gerekceleri": {
-    "B": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Robert Campin.",
+    "B": "Jan van Eyck doğru yanıt değildir; doğru yanıt Robert Campin.",
     "C": "Rogier tartışmalı.",
-    "D": "Daret bu soruda doğru değildir; kaynakların doğruladığı yanıt Robert Campin."
+    "D": "Daret doğru yanıt değildir; doğru yanıt Robert Campin."
    },
    "kanit": [
     "C014"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: Early Netherlandish.",
    "yanlis_gerekceleri": {
-    "B": "İtalyan Rönesans bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish.",
-    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish.",
-    "D": "Empresyonizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish."
+    "B": "İtalyan Rönesans doğru yanıt değildir; doğru yanıt Erken Netherlandish.",
+    "C": "Barok doğru yanıt değildir; doğru yanıt Erken Netherlandish.",
+    "D": "Empresyonizm doğru yanıt değildir; doğru yanıt Erken Netherlandish."
    },
    "kanit": [
     "C013"

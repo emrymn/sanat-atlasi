@@ -92,7 +92,7 @@
    "yanlis_gerekceleri": {
     "A": "Orijinal yer; 1799'da taşındı.",
     "C": "Louvre, Paris (Paris) bu eserin bulunduğu kurum değildir; doğru yer Uffizi, Floransa.",
-    "D": "Vatikan Pinakotekası bu soruda doğru değildir; kaynakların doğruladığı yanıt Uffizi, Floransa."
+    "D": "Vatikan Pinakotekası doğru yanıt değildir; doğru yanıt Uffizi, Floransa."
    },
    "kanit": [
     "C008"
@@ -218,7 +218,7 @@
    "dogru": "B",
    "gerekce": "K1: Ansanus, Siena koruyucusu; şehir renklerinde sancak.",
    "yanlis_gerekceleri": {
-    "A": "Aziz Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Ansanus.",
+    "A": "Aziz Petrus doğru yanıt değildir; doğru yanıt Aziz Ansanus.",
     "C": "Victor, Bulgarini sunağının azizi.",
     "D": "Crescentius, Ambrogio sunağının azizi."
    },
@@ -251,8 +251,8 @@
    "gerekce": "K1: soldan sağa Yeremya, Hezekiel, Yeşaya, Daniel.",
    "yanlis_gerekceleri": {
     "A": "Eski Ahit figürleri ama tondolar değil.",
-    "C": "Matta, Markos, Luka, Yuhanna bu soruda doğru değildir; kaynakların doğruladığı yanıt Yeremya, Hezekiel, Yeşaya, Daniel.",
-    "D": "İbrahim, İshak, Yakup, Yusuf bu soruda doğru değildir; kaynakların doğruladığı yanıt Yeremya, Hezekiel, Yeşaya, Daniel."
+    "C": "Matta, Markos, Luka, Yuhanna doğru yanıt değildir; doğru yanıt Yeremya, Hezekiel, Yeşaya, Daniel.",
+    "D": "İbrahim, İshak, Yakup, Yusuf doğru yanıt değildir; doğru yanıt Yeremya, Hezekiel, Yeşaya, Daniel."
    },
    "kanit": [
     "C018"
@@ -284,7 +284,7 @@
    "yanlis_gerekceleri": {
     "B": "Scrovegni Padua'da, Giotto.",
     "C": "Uffizi bugünkü yer; orijinal değil.",
-    "D": "Assisi Bazilikası bu soruda doğru değildir; kaynakların doğruladığı yanıt Siena Katedrali St. Ansanus sunağı."
+    "D": "Assisi Bazilikası doğru yanıt değildir; doğru yanıt Siena Katedrali St. Ansanus sunağı."
    },
    "kanit": [
     "C009"
@@ -315,8 +315,8 @@
    "gerekce": "K1: Meryem'in saflığı ve Tanrı Oğlu.",
    "yanlis_gerekceleri": {
     "A": "Savaş değil; zeytin barışı.",
-    "C": "Zenginliği bu soruda doğru değildir; kaynakların doğruladığı yanıt Saflığı.",
-    "D": "Ölümü bu soruda doğru değildir; kaynakların doğruladığı yanıt Saflığı."
+    "C": "Zenginliği doğru yanıt değildir; doğru yanıt Saflığı.",
+    "D": "Ölümü doğru yanıt değildir; doğru yanıt Saflığı."
    },
    "kanit": [
     "C026"

@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Palla Strozzi.",
    "yanlis_gerekceleri": {
-    "B": "Medici bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla Strozzi.",
+    "B": "Medici doğru yanıt değildir; doğru yanıt Palla Strozzi.",
     "C": "Ghiberti şapeli tamamladı, hami değil.",
-    "D": "Rucellai bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla Strozzi."
+    "D": "Rucellai doğru yanıt değildir; doğru yanıt Palla Strozzi."
    },
    "kanit": [
     "C006"
@@ -155,8 +155,8 @@
    "gerekce": "K1: International Gothic.",
    "yanlis_gerekceleri": {
     "B": "Rönesans değil (eşik).",
-    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
-    "D": "Maniyerizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik."
+    "C": "Barok doğru yanıt değildir; doğru yanıt Uluslararası Gotik.",
+    "D": "Maniyerizm doğru yanıt değildir; doğru yanıt Uluslararası Gotik."
    },
    "kanit": [
     "C010"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: 300 florin.",
    "yanlis_gerekceleri": {
-    "B": "30 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin.",
-    "C": "3000 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin.",
-    "D": "100 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin."
+    "B": "30 florin doğru yanıt değildir; doğru yanıt 300 florin.",
+    "C": "3000 florin doğru yanıt değildir; doğru yanıt 300 florin.",
+    "D": "100 florin doğru yanıt değildir; doğru yanıt 300 florin."
    },
    "kanit": [
     "C014"
@@ -250,8 +250,8 @@
    "dogru": "A",
    "gerekce": "K2: Golden Spur.",
    "yanlis_gerekceleri": {
-    "B": "Savaş bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla'nın Order of the Golden Spur üyeliği.",
-    "C": "Av bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla'nın Order of the Golden Spur üyeliği.",
+    "B": "Savaş doğru yanıt değildir; doğru yanıt Palla'nın Order of the Golden Spur üyeliği.",
+    "C": "Av doğru yanıt değildir; doğru yanıt Palla'nın Order of the Golden Spur üyeliği.",
     "D": "Tarikat üyeliği."
    },
    "kanit": [

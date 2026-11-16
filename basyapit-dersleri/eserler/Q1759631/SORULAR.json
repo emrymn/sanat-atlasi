@@ -59,7 +59,7 @@
    "gerekce": "K1/K3: Brancacci Şapeli, Carmine, Floransa; in situ.",
    "yanlis_gerekceleri": {
     "A": "Uffizi, Floransa (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
-    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
+    "C": "Vatikan doğru yanıt değildir; doğru yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
     "D": "Brera, Milano (Milano) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa."
    },
    "kanit": [
@@ -122,9 +122,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: çizgiler İsa'nın başında birleşir.",
    "yanlis_gerekceleri": {
-    "A": "Memurun eli bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı.",
-    "C": "Sağdaki mimari bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı.",
-    "D": "Soldaki dağ bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı."
+    "A": "Memurun eli doğru yanıt değildir; doğru yanıt İsa'nın başı.",
+    "C": "Sağdaki mimari doğru yanıt değildir; doğru yanıt İsa'nın başı.",
+    "D": "Soldaki dağ doğru yanıt değildir; doğru yanıt İsa'nın başı."
    },
    "kanit": [
     "C012"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: solda Petrus, balığın ağzından para.",
    "yanlis_gerekceleri": {
-    "B": "İsa vaaz verir bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus balıktan parayı çıkarır.",
+    "B": "İsa vaaz verir doğru yanıt değildir; doğru yanıt Petrus balıktan parayı çıkarır.",
     "C": "Ödeme sağda.",
-    "D": "Havariler uyur bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus balıktan parayı çıkarır."
+    "D": "Havariler uyur doğru yanıt değildir; doğru yanıt Petrus balıktan parayı çıkarır."
    },
    "kanit": [
     "C011"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "A": "Mucize solda.",
     "C": "Çarmıh yok.",
-    "D": "Petrus uyur bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus vergiyi öder."
+    "D": "Petrus uyur doğru yanıt değildir; doğru yanıt Petrus vergiyi öder."
    },
    "kanit": [
     "C011"
@@ -219,8 +219,8 @@
    "gerekce": "K2/K3: kısa vermilion tunik; pastel havarilere karşıt.",
    "yanlis_gerekceleri": {
     "A": "Mavi robe havarilerin.",
-    "C": "Zırh bu soruda doğru değildir; kaynakların doğruladığı yanıt Kısa vermilion tunik.",
-    "D": "Rahip cübbesi bu soruda doğru değildir; kaynakların doğruladığı yanıt Kısa vermilion tunik."
+    "C": "Zırh doğru yanıt değildir; doğru yanıt Kısa vermilion tunik.",
+    "D": "Rahip cübbesi doğru yanıt değildir; doğru yanıt Kısa vermilion tunik."
    },
    "kanit": [
     "C014"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: sağdaki gerçek pencere; gölgeler buna göre.",
    "yanlis_gerekceleri": {
-    "A": "Soldan bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi).",
-    "C": "Yukarıdan bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi).",
-    "D": "Önden bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi)."
+    "A": "Soldan doğru yanıt değildir; doğru yanıt Sağdan (şapel penceresi).",
+    "C": "Yukarıdan doğru yanıt değildir; doğru yanıt Sağdan (şapel penceresi).",
+    "D": "Önden doğru yanıt değildir; doğru yanıt Sağdan (şapel penceresi)."
    },
    "kanit": [
     "C017"
@@ -282,9 +282,9 @@
    "dogru": "B",
    "gerekce": "K2: 32 giornata.",
    "yanlis_gerekceleri": {
-    "A": "12 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32.",
-    "C": "50 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32.",
-    "D": "100 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32."
+    "A": "12 doğru yanıt değildir; doğru yanıt 32.",
+    "C": "50 doğru yanıt değildir; doğru yanıt 32.",
+    "D": "100 doğru yanıt değildir; doğru yanıt 32."
    },
    "kanit": [
     "C018"
@@ -315,8 +315,8 @@
    "gerekce": "K3: Filippino Lippi.",
    "yanlis_gerekceleri": {
     "A": "Masolino daha önce ayrıldı.",
-    "C": "Ghirlandaio bu eserin sanatçısı değildir; doğru sanatçı Filippino Lippi.",
-    "D": "Botticelli bu eserin sanatçısı değildir; doğru sanatçı Filippino Lippi."
+    "C": "Ghirlandaio doğru yanıt değildir; doğru yanıt Filippino Lippi.",
+    "D": "Botticelli doğru yanıt değildir; doğru yanıt Filippino Lippi."
    },
    "kanit": [
     "C009"

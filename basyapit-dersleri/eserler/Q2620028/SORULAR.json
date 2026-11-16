@@ -90,9 +90,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: keys = power to forgive; papal authority.",
    "yanlis_gerekceleri": {
-    "A": "Savaşı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık).",
-    "C": "Ticareti bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık).",
-    "D": "Yolculuğu bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık)."
+    "A": "Savaşı doğru yanıt değildir; doğru yanıt Bağışlama/Tanrı sözü gücü (papalık).",
+    "C": "Ticareti doğru yanıt değildir; doğru yanıt Bağışlama/Tanrı sözü gücü (papalık).",
+    "D": "Yolculuğu doğru yanıt değildir; doğru yanıt Bağışlama/Tanrı sözü gücü (papalık)."
    },
    "kanit": [
     "C008"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K2/K3: fifth left of Christ, back turned.",
    "yanlis_gerekceleri": {
-    "B": "Sağda önde bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın solunda 5., sırtı dönük.",
-    "C": "Merkezde bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın solunda 5., sırtı dönük.",
+    "B": "Sağda önde doğru yanıt değildir; doğru yanıt İsa'nın solunda 5., sırtı dönük.",
+    "C": "Merkezde doğru yanıt değildir; doğru yanıt İsa'nın solunda 5., sırtı dönük.",
     "D": "Var."
    },
    "kanit": [
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: octagonal temple, Alberti ideal.",
    "yanlis_gerekceleri": {
-    "B": "Gotik katedral bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak.",
-    "C": "Roma hamamı bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak.",
-    "D": "Kule bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak."
+    "B": "Gotik katedral doğru yanıt değildir; doğru yanıt Sekizgen/kubbeli tapınak.",
+    "C": "Roma hamamı doğru yanıt değildir; doğru yanıt Sekizgen/kubbeli tapınak.",
+    "D": "Kule doğru yanıt değildir; doğru yanıt Sekizgen/kubbeli tapınak."
    },
    "kanit": [
     "C012"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: aligning Sixtus IV to Solomon.",
    "yanlis_gerekceleri": {
-    "B": "Lorenzo bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV.",
-    "C": "Alfonso II bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV.",
-    "D": "Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV."
+    "B": "Lorenzo doğru yanıt değildir; doğru yanıt Sixtus IV.",
+    "C": "Alfonso II doğru yanıt değildir; doğru yanıt Sixtus IV.",
+    "D": "Petrus doğru yanıt değildir; doğru yanıt Sixtus IV."
    },
    "kanit": [
     "C013"
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K2: Tribute Money left, stoning right.",
    "yanlis_gerekceleri": {
-    "B": "Doğum + Çarmıh bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma.",
-    "C": "Müjde + Ağıt bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma.",
-    "D": "Son Yargı + Cennet bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma."
+    "B": "Doğum + Çarmıh doğru yanıt değildir; doğru yanıt Vergi Parası + taşlanma.",
+    "C": "Müjde + Ağıt doğru yanıt değildir; doğru yanıt Vergi Parası + taşlanma.",
+    "D": "Son Yargı + Cennet doğru yanıt değildir; doğru yanıt Vergi Parası + taşlanma."
    },
    "kanit": [
     "C014"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: same cartoon, reversed poses.",
    "yanlis_gerekceleri": {
-    "B": "Rastgelelik bu soruda doğru değildir; kaynakların doğruladığı yanıt Aynı karton kullanımı.",
+    "B": "Rastgelelik doğru yanıt değildir; doğru yanıt Aynı karton kullanımı.",
     "C": "Tek el değil; atölye.",
-    "D": "Hata bu soruda doğru değildir; kaynakların doğruladığı yanıt Aynı karton kullanımı."
+    "D": "Hata doğru yanıt değildir; doğru yanıt Aynı karton kullanımı."
    },
    "kanit": [
     "C015"
@@ -314,9 +314,9 @@
    "dogru": "A",
    "gerekce": "K2: cardinal housed beneath elected.",
    "yanlis_gerekceleri": {
-    "B": "Resim yanardı bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi.",
-    "C": "Anahtarlar kaybolurdu bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi.",
-    "D": "Petrus görünürdü bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi."
+    "B": "Resim yanardı doğru yanıt değildir; doğru yanıt Altındaki hücrede kalan kardinal seçilirdi.",
+    "C": "Anahtarlar kaybolurdu doğru yanıt değildir; doğru yanıt Altındaki hücrede kalan kardinal seçilirdi.",
+    "D": "Petrus görünürdü doğru yanıt değildir; doğru yanıt Altındaki hücrede kalan kardinal seçilirdi."
    },
    "kanit": [
     "C022"

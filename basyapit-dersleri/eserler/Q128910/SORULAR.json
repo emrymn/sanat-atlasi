@@ -157,7 +157,7 @@
    "yanlis_gerekceleri": {
     "B": "Eucharist kurumu değil; tepki anı.",
     "C": "Çarmıh karşı duvarda (Montorfano).",
-    "D": "Diriliş bu soruda doğru değildir; kaynakların doğruladığı yanıt İhanet duyurusundan sonraki tepki anı."
+    "D": "Diriliş doğru yanıt değildir; doğru yanıt İhanet duyurusundan sonraki tepki anı."
    },
    "kanit": [
     "C009"
@@ -188,7 +188,7 @@
    "gerekce": "K2: Judas situated in front of Peter (within group).",
    "yanlis_gerekceleri": {
     "B": "Geleneksel öte-yan değil; Leonardo içeride koydu.",
-    "C": "Kapıda bu soruda doğru değildir; kaynakların doğruladığı yanıt Grubun içinde, Peter'in önünde.",
+    "C": "Kapıda doğru yanıt değildir; doğru yanıt Grubun içinde, Peter'in önünde.",
     "D": "Var; grubun içinde."
    },
    "kanit": [
@@ -316,8 +316,8 @@
    "gerekce": "K2: Zenale advised leave Christ face unfinished.",
    "yanlis_gerekceleri": {
     "B": "Tamamlanmış değil; bitirmeme tavsiyesi.",
-    "C": "Silinmiş bu soruda doğru değildir; kaynakların doğruladığı yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez).",
-    "D": "Yeniden boyanmış bu soruda doğru değildir; kaynakların doğruladığı yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez)."
+    "C": "Silinmiş doğru yanıt değildir; doğru yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez).",
+    "D": "Yeniden boyanmış doğru yanıt değildir; doğru yanıt Bitirmeme tavsiyesi (daha güzel yüz hayal edilemez)."
    },
    "kanit": [
     "C008"

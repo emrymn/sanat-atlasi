@@ -27,8 +27,8 @@
    "gerekce": "K2/K3: attributed Bramante; debated.",
    "yanlis_gerekceleri": {
     "B": "Leonardo etkisi var ama atıf değil.",
-    "C": "Raphael bu eserin sanatçısı değildir; doğru sanatçı Bramante (tartışmalı).",
-    "D": "Titian bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante (tartışmalı)."
+    "C": "Raphael doğru yanıt değildir; doğru yanıt Bramante (tartışmalı).",
+    "D": "Titian doğru yanıt değildir; doğru yanıt Bramante (tartışmalı)."
    },
    "kanit": [
     "C002"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: tied to column before scourging.",
    "yanlis_gerekceleri": {
-    "B": "Çarmıh bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma.",
-    "C": "Doğum bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma.",
-    "D": "Diriliş bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma."
+    "B": "Çarmıh doğru yanıt değildir; doğru yanıt Flagellasyon öncesi sütuna bağlanma.",
+    "C": "Doğum doğru yanıt değildir; doğru yanıt Flagellasyon öncesi sütuna bağlanma.",
+    "D": "Diriliş doğru yanıt değildir; doğru yanıt Flagellasyon öncesi sütuna bağlanma."
    },
    "kanit": [
     "C010"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: same as San Satiro fake choir.",
    "yanlis_gerekceleri": {
-    "B": "Tempietto bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu.",
-    "C": "St Peter's bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu.",
-    "D": "Belvedere bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu."
+    "B": "Tempietto doğru yanıt değildir; doğru yanıt San Satiro sahte korosu.",
+    "C": "St Peter's doğru yanıt değildir; doğru yanıt San Satiro sahte korosu.",
+    "D": "Belvedere doğru yanıt değildir; doğru yanıt San Satiro sahte korosu."
    },
    "kanit": [
     "C011"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: golden pyx, Eucharist.",
    "yanlis_gerekceleri": {
-    "B": "Taç bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi).",
-    "C": "Kupa bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi).",
-    "D": "Kitap bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi)."
+    "B": "Taç doğru yanıt değildir; doğru yanıt Pyx (Ökaristi).",
+    "C": "Kupa doğru yanıt değildir; doğru yanıt Pyx (Ökaristi).",
+    "D": "Kitap doğru yanıt değildir; doğru yanıt Pyx (Ökaristi)."
    },
    "kanit": [
     "C015"
@@ -219,8 +219,8 @@
    "gerekce": "K2/K3: double lighting, fading view, detail.",
    "yanlis_gerekceleri": {
     "B": "Altın zemin Gotik.",
-    "C": "Düz figür bu soruda doğru değildir; kaynakların doğruladığı yanıt Çift ışık + sfumato + detay.",
-    "D": "Gotik kemer bu soruda doğru değildir; kaynakların doğruladığı yanıt Çift ışık + sfumato + detay."
+    "C": "Düz figür doğru yanıt değildir; doğru yanıt Çift ışık + sfumato + detay.",
+    "D": "Gotik kemer doğru yanıt değildir; doğru yanıt Çift ışık + sfumato + detay."
    },
    "kanit": [
     "C013"
@@ -252,7 +252,7 @@
    "yanlis_gerekceleri": {
     "B": "Perspektif Bramante.",
     "C": "Sfumato Flaman.",
-    "D": "Renk bu soruda doğru değildir; kaynakların doğruladığı yanıt İfade yüzü + aşırı gerçekçilik."
+    "D": "Renk doğru yanıt değildir; doğru yanıt İfade yüzü + aşırı gerçekçilik."
    },
    "kanit": [
     "C014"
@@ -314,9 +314,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: heating malfunction damage.",
    "yanlis_gerekceleri": {
-    "B": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Isıtma arızası → hasar + restorasyon.",
+    "B": "Satış doğru yanıt değildir; doğru yanıt Isıtma arızası → hasar + restorasyon.",
     "C": "Yangın değil (1771 Brera başka).",
-    "D": "Taşınma bu soruda doğru değildir; kaynakların doğruladığı yanıt Isıtma arızası → hasar + restorasyon."
+    "D": "Taşınma doğru yanıt değildir; doğru yanıt Isıtma arızası → hasar + restorasyon."
    },
    "kanit": [
     "C009"

@@ -219,7 +219,7 @@
    "gerekce": "K5: occhio non dipinto, rialzando intonaco.",
    "yanlis_gerekceleri": {
     "B": "Boyalı değil; kabartma.",
-    "C": "Altın varak bu soruda doğru değildir; kaynakların doğruladığı yanıt Taze intonaco rialzando (kabartma).",
+    "C": "Altın varak doğru yanıt değildir; doğru yanıt Taze intonaco rialzando (kabartma).",
     "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Taze intonaco rialzando (kabartma)."
    },
    "kanit": [
@@ -250,8 +250,8 @@
    "dogru": "A",
    "gerekce": "K3/K4: fourth.",
    "yanlis_gerekceleri": {
-    "B": "Birinci bu soruda doğru değildir; kaynakların doğruladığı yanıt Dördüncü.",
-    "C": "Dokuzuncu bu soruda doğru değildir; kaynakların doğruladığı yanıt Dördüncü.",
+    "B": "Birinci doğru yanıt değildir; doğru yanıt Dördüncü.",
+    "C": "Dokuzuncu doğru yanıt değildir; doğru yanıt Dördüncü.",
     "D": "Altıncı değil; dördüncü."
    },
    "kanit": [

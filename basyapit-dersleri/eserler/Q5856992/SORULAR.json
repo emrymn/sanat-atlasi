@@ -28,7 +28,7 @@
    "yanlis_gerekceleri": {
     "B": "Tablo değil, el yazması sayfası.",
     "C": "Bir fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Très Riches Heures (book of hours) takvim sayfası.",
-    "D": "Bir heykel bu soruda doğru değildir; kaynakların doğruladığı yanıt Très Riches Heures (book of hours) takvim sayfası."
+    "D": "Bir heykel doğru yanıt değildir; doğru yanıt Très Riches Heures (book of hours) takvim sayfası."
    },
    "kanit": [
     "C001",
@@ -59,9 +59,9 @@
    "dogru": "A",
    "gerekce": "K2: Pognon.",
    "yanlis_gerekceleri": {
-    "B": "Vasari bu soruda doğru değildir; kaynakların doğruladığı yanıt Pognon.",
+    "B": "Vasari doğru yanıt değildir; doğru yanıt Pognon.",
     "C": "Panofsky (ahşap destek) bu eserin tekniği/desteği değildir; doğru yanıt Pognon.",
-    "D": "Gombrich bu soruda doğru değildir; kaynakların doğruladığı yanıt Pognon."
+    "D": "Gombrich doğru yanıt değildir; doğru yanıt Pognon."
    },
    "kanit": [
     "C008"
@@ -91,9 +91,9 @@
    "dogru": "A",
    "gerekce": "K2: faksimile.",
    "yanlis_gerekceleri": {
-    "B": "Yeni bir tablo bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile.",
-    "C": "Boş çerçeve bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile.",
-    "D": "Video bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile."
+    "B": "Yeni bir tablo doğru yanıt değildir; doğru yanıt Faksimile.",
+    "C": "Boş çerçeve doğru yanıt değildir; doğru yanıt Faksimile.",
+    "D": "Video doğru yanıt değildir; doğru yanıt Faksimile."
    },
    "kanit": [
     "C009"
@@ -123,9 +123,9 @@
    "dogru": "A",
    "gerekce": "K2: sansür.",
    "yanlis_gerekceleri": {
-    "B": "Güneş arabasını bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini.",
-    "C": "Karı bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini.",
-    "D": "Altını bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini."
+    "B": "Güneş arabasını doğru yanıt değildir; doğru yanıt Köylü genitalini.",
+    "C": "Karı doğru yanıt değildir; doğru yanıt Köylü genitalini.",
+    "D": "Altını doğru yanıt değildir; doğru yanıt Köylü genitalini."
    },
    "kanit": [
     "C010"
@@ -155,9 +155,9 @@
    "dogru": "A",
    "gerekce": "K2: Uluslararası Gotik.",
    "yanlis_gerekceleri": {
-    "B": "Rönesans bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
-    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
-    "D": "Empresyonizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik."
+    "B": "Rönesans doğru yanıt değildir; doğru yanıt Uluslararası Gotik.",
+    "C": "Barok doğru yanıt değildir; doğru yanıt Uluslararası Gotik.",
+    "D": "Empresyonizm doğru yanıt değildir; doğru yanıt Uluslararası Gotik."
    },
    "kanit": [
     "C007"

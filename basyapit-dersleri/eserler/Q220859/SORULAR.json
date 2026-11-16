@@ -124,7 +124,7 @@
    "yanlis_gerekceleri": {
     "B": "İmzalı.",
     "C": "fecit değil, fuit hic.",
-    "D": "Hubert van Eyck bu eserin sanatçısı değildir; doğru sanatçı Johannes de eyck fuit hic 1434."
+    "D": "Hubert van Eyck doğru yanıt değildir; doğru yanıt Johannes de eyck fuit hic 1434."
    },
    "kanit": [
     "C004"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "B": "di Arrigo alternatif (D).",
     "C": "Costanza memorial hipotezi (D).",
-    "D": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Giovanni di Nicolao Arnolfini + eşi."
+    "D": "Jan van Eyck doğru yanıt değildir; doğru yanıt Giovanni di Nicolao Arnolfini + eşi."
    },
    "kanit": [
     "C005"
@@ -218,8 +218,8 @@
    "dogru": "A",
    "gerekce": "K1: two men entering.",
    "yanlis_gerekceleri": {
-    "B": "Boş oda bu soruda doğru değildir; kaynakların doğruladığı yanıt Odaya giren iki adam.",
-    "C": "Manzara bu soruda doğru değildir; kaynakların doğruladığı yanıt Odaya giren iki adam.",
+    "B": "Boş oda doğru yanıt değildir; doğru yanıt Odaya giren iki adam.",
+    "C": "Manzara doğru yanıt değildir; doğru yanıt Odaya giren iki adam.",
     "D": "İki figür."
    },
    "kanit": [
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: Donatello/Masaccio.",
    "yanlis_gerekceleri": {
-    "B": "Raphael bu eserin sanatçısı değildir; doğru sanatçı Donatello/Masaccio.",
-    "C": "Titian bu soruda doğru değildir; kaynakların doğruladığı yanıt Donatello/Masaccio.",
-    "D": "Michelangelo bu eserin sanatçısı değildir; doğru sanatçı Donatello/Masaccio."
+    "B": "Raphael doğru yanıt değildir; doğru yanıt Donatello/Masaccio.",
+    "C": "Titian doğru yanıt değildir; doğru yanıt Donatello/Masaccio.",
+    "D": "Michelangelo doğru yanıt değildir; doğru yanıt Donatello/Masaccio."
    },
    "kanit": [
     "C012"

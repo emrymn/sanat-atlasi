@@ -155,7 +155,7 @@
    "gerekce": "K1: 1821 Solly.",
    "yanlis_gerekceleri": {
     "B": "1492 Medici envanteri (provenance).",
-    "C": "1900 hibe bu soruda doğru değildir; kaynakların doğruladığı yanıt 1821, Edward Solly koleksiyonundan satın alma.",
+    "C": "1900 hibe doğru yanıt değildir; doğru yanıt 1821, Edward Solly koleksiyonundan satın alma.",
     "D": "2000 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1821, Edward Solly koleksiyonundan satın alma."
    },
    "kanit": [
@@ -186,8 +186,8 @@
    "dogru": "A",
    "gerekce": "K1: tek kadın portresi.",
    "yanlis_gerekceleri": {
-    "B": "Tek erkek portresi bu soruda doğru değildir; kaynakların doğruladığı yanıt Bilinen tek kadın portresi.",
-    "C": "Tek manzarası bu soruda doğru değildir; kaynakların doğruladığı yanıt Bilinen tek kadın portresi.",
+    "B": "Tek erkek portresi doğru yanıt değildir; doğru yanıt Bilinen tek kadın portresi.",
+    "C": "Tek manzarası doğru yanıt değildir; doğru yanıt Bilinen tek kadın portresi.",
     "D": "Tek freski (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Bilinen tek kadın portresi."
    },
    "kanit": [
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K1: Brügge.",
    "yanlis_gerekceleri": {
-    "B": "Floransa bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge.",
-    "C": "Paris bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge.",
-    "D": "Roma bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge."
+    "B": "Floransa doğru yanıt değildir; doğru yanıt Brügge.",
+    "C": "Paris doğru yanıt değildir; doğru yanıt Brügge.",
+    "D": "Roma doğru yanıt değildir; doğru yanıt Brügge."
    },
    "kanit": [
     "C005"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: polished pearl.",
    "yanlis_gerekceleri": {
-    "B": "Altın heykel bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci.",
-    "C": "Mermer büst bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci.",
-    "D": "Gümüş ayna bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci."
+    "B": "Altın heykel doğru yanıt değildir; doğru yanıt Siyah kadife yastıkta cilalı inci.",
+    "C": "Mermer büst doğru yanıt değildir; doğru yanıt Siyah kadife yastıkta cilalı inci.",
+    "D": "Gümüş ayna doğru yanıt değildir; doğru yanıt Siyah kadife yastıkta cilalı inci."
    },
    "kanit": [
     "C010"

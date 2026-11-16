@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: Bosch.",
    "yanlis_gerekceleri": {
-    "B": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch.",
-    "C": "Bruegel bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch.",
-    "D": "Dürer bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch."
+    "B": "Jan van Eyck doğru yanıt değildir; doğru yanıt Hieronymus Bosch.",
+    "C": "Bruegel doğru yanıt değildir; doğru yanıt Hieronymus Bosch.",
+    "D": "Dürer doğru yanıt değildir; doğru yanıt Hieronymus Bosch."
    },
    "kanit": [
     "C001"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: five-panel.",
    "yanlis_gerekceleri": {
-    "B": "Tek bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2).",
-    "C": "İki bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2).",
-    "D": "Yedi bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2)."
+    "B": "Tek doğru yanıt değildir; doğru yanıt Beş (açık 3, kapalı 2).",
+    "C": "İki doğru yanıt değildir; doğru yanıt Beş (açık 3, kapalı 2).",
+    "D": "Yedi doğru yanıt değildir; doğru yanıt Beş (açık 3, kapalı 2)."
    },
    "kanit": [
     "C002"
@@ -154,7 +154,7 @@
    "dogru": "A",
    "gerekce": "K1: Third Day grisaille.",
    "yanlis_gerekceleri": {
-    "B": "Son Yargı bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaratılış'ın Üçüncü Günü (grisaille).",
+    "B": "Son Yargı doğru yanıt değildir; doğru yanıt Yaratılış'ın Üçüncü Günü (grisaille).",
     "C": "Cehennem iç sağda.",
     "D": "Eden iç solda."
    },
@@ -187,8 +187,8 @@
    "gerekce": "K1: God absent.",
    "yanlis_gerekceleri": {
     "B": "Tanrı yok.",
-    "C": "Tahtta bu soruda doğru değildir; kaynakların doğruladığı yanıt Yok (insanlık özgür iradeyle).",
-    "D": "Meleklerle bu soruda doğru değildir; kaynakların doğruladığı yanıt Yok (insanlık özgür iradeyle)."
+    "C": "Tahtta doğru yanıt değildir; doğru yanıt Yok (insanlık özgür iradeyle).",
+    "D": "Meleklerle doğru yanıt değildir; doğru yanıt Yok (insanlık özgür iradeyle)."
    },
    "kanit": [
     "C007"
@@ -250,8 +250,8 @@
    "dogru": "A",
    "gerekce": "K1: broken eggshell.",
    "yanlis_gerekceleri": {
-    "B": "Tahta bu soruda doğru değildir; kaynakların doğruladığı yanıt Kırık yumurta kabuğu.",
-    "C": "Taş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kırık yumurta kabuğu.",
+    "B": "Tahta doğru yanıt değildir; doğru yanıt Kırık yumurta kabuğu.",
+    "C": "Taş doğru yanıt değildir; doğru yanıt Kırık yumurta kabuğu.",
     "D": "Metal (New York) bu eserin bulunduğu kurum değildir; doğru yer Kırık yumurta kabuğu."
    },
    "kanit": [

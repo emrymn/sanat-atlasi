@@ -59,7 +59,7 @@
    "gerekce": "K1/K2: Siena Opera del Duomo.",
    "yanlis_gerekceleri": {
     "A": "Uffizi Floransa'da.",
-    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Museo dell'Opera del Duomo, Siena.",
+    "C": "Vatikan doğru yanıt değildir; doğru yanıt Museo dell'Opera del Duomo, Siena.",
     "D": "Brera Milano'da."
    },
    "kanit": [
@@ -91,8 +91,8 @@
    "gerekce": "K1/K3: Aziz Anna (Meryem'in annesi) yatakta.",
    "yanlis_gerekceleri": {
     "A": "Meryem bebek olarak yıkanıyor, yatakta değil.",
-    "C": "Elizabeth bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Anna.",
-    "D": "Mecdelli Meryem bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Anna."
+    "C": "Elizabeth doğru yanıt değildir; doğru yanıt Aziz Anna.",
+    "D": "Mecdelli Meryem doğru yanıt değildir; doğru yanıt Aziz Anna."
    },
    "kanit": [
     "C016"
@@ -122,9 +122,9 @@
    "dogru": "B",
    "gerekce": "K1: Joachim, Meryem'in babası.",
    "yanlis_gerekceleri": {
-    "A": "Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Joachim (Meryem'in babası).",
+    "A": "Petrus doğru yanıt değildir; doğru yanıt Joachim (Meryem'in babası).",
     "C": "Yusuf değil (Meryem'in babası Joachim).",
-    "D": "Zekeriya bu soruda doğru değildir; kaynakların doğruladığı yanıt Joachim (Meryem'in babası)."
+    "D": "Zekeriya doğru yanıt değildir; doğru yanıt Joachim (Meryem'in babası)."
    },
    "kanit": [
     "C015"
@@ -154,9 +154,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: önde iki beyaz ayak; hem çerçeve hem mimari.",
    "yanlis_gerekceleri": {
-    "A": "Perde bu soruda doğru değildir; kaynakların doğruladığı yanıt İki beyaz ayak (pier).",
+    "A": "Perde doğru yanıt değildir; doğru yanıt İki beyaz ayak (pier).",
     "C": "Duvar değil, ayak.",
-    "D": "Boşluk bu soruda doğru değildir; kaynakların doğruladığı yanıt İki beyaz ayak (pier)."
+    "D": "Boşluk doğru yanıt değildir; doğru yanıt İki beyaz ayak (pier)."
    },
    "kanit": [
     "C012"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "A": "Bulut değil, yıldız.",
     "C": "Melek değil (kubbe yıldızlı).",
-    "D": "Boş bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıldızlı gece göğü."
+    "D": "Boş doğru yanıt değildir; doğru yanıt Yıldızlı gece göğü."
    },
    "kanit": [
     "C013"
@@ -220,7 +220,7 @@
    "yanlis_gerekceleri": {
     "A": "Assisi freskleri (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Siena Katedrali dört sunaklık döngü.",
     "C": "Scrovegni Padua'da.",
-    "D": "Vatikan odaları bu soruda doğru değildir; kaynakların doğruladığı yanıt Siena Katedrali dört sunaklık döngü."
+    "D": "Vatikan odaları doğru yanıt değildir; doğru yanıt Siena Katedrali dört sunaklık döngü."
    },
    "kanit": [
     "C008"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: iki kadın bebek Meryem'i mavi leğende yıkar.",
    "yanlis_gerekceleri": {
-    "A": "Uyurken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken.",
-    "C": "Emzirilirken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken.",
-    "D": "Oynarken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken."
+    "A": "Uyurken doğru yanıt değildir; doğru yanıt Yıkanırken.",
+    "C": "Emzirilirken doğru yanıt değildir; doğru yanıt Yıkanırken.",
+    "D": "Oynarken doğru yanıt değildir; doğru yanıt Yıkanırken."
    },
    "kanit": [
     "C022"

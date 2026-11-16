@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: Bruegel the Elder.",
    "yanlis_gerekceleri": {
-    "B": "Bosch bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı).",
-    "C": "van Eyck bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı).",
-    "D": "Dürer bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı)."
+    "B": "Bosch doğru yanıt değildir; doğru yanıt Pieter Bruegel (yaşlı).",
+    "C": "van Eyck doğru yanıt değildir; doğru yanıt Pieter Bruegel (yaşlı).",
+    "D": "Dürer doğru yanıt değildir; doğru yanıt Pieter Bruegel (yaşlı)."
    },
    "kanit": [
     "C001"
@@ -154,8 +154,8 @@
    "dogru": "A",
    "gerekce": "K1: six months, five survive.",
    "yanlis_gerekceleri": {
-    "B": "Tek manzara bu soruda doğru değildir; kaynakların doğruladığı yanıt Altı aylık mevsim serisi (beşi extant).",
-    "C": "Bir portre serisi bu soruda doğru değildir; kaynakların doğruladığı yanıt Altı aylık mevsim serisi (beşi extant).",
+    "B": "Tek manzara doğru yanıt değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant).",
+    "C": "Bir portre serisi doğru yanıt değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant).",
     "D": "Bir fresk döngüsü (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant)."
    },
    "kanit": [
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K1: Dec/Jan winter.",
    "yanlis_gerekceleri": {
-    "B": "Yaz bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı.",
-    "C": "İlkbahar bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı.",
-    "D": "Sonbahar bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı."
+    "B": "Yaz doğru yanıt değildir; doğru yanıt Aralık/Ocak kışı.",
+    "C": "İlkbahar doğru yanıt değildir; doğru yanıt Aralık/Ocak kışı.",
+    "D": "Sonbahar doğru yanıt değildir; doğru yanıt Aralık/Ocak kışı."
    },
    "kanit": [
     "C004"
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K1: meager fox corpse.",
    "yanlis_gerekceleri": {
-    "B": "Geyik bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi.",
-    "C": "Büyük bir balık bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi.",
-    "D": "Kazan bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi."
+    "B": "Geyik doğru yanıt değildir; doğru yanıt Zayıf bir tilki leşi.",
+    "C": "Büyük bir balık doğru yanıt değildir; doğru yanıt Zayıf bir tilki leşi.",
+    "D": "Kazan doğru yanıt değildir; doğru yanıt Zayıf bir tilki leşi."
    },
    "kanit": [
     "C006"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K1: not in Low Countries.",
    "yanlis_gerekceleri": {
-    "B": "Gerçek yerel dağlar bu soruda doğru değildir; kaynakların doğruladığı yanıt Low Countries'da yoktur (hayali).",
+    "B": "Gerçek yerel dağlar doğru yanıt değildir; doğru yanıt Low Countries'da yoktur (hayali).",
     "C": "Hayali Alp.",
-    "D": "Volkanik bu soruda doğru değildir; kaynakların doğruladığı yanıt Low Countries'da yoktur (hayali)."
+    "D": "Volkanik doğru yanıt değildir; doğru yanıt Low Countries'da yoktur (hayali)."
    },
    "kanit": [
     "C009"

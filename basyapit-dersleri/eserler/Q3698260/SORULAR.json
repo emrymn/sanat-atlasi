@@ -27,7 +27,7 @@
    "gerekce": "K1: Santa Croce'nin Franciscan friarları sipariş etti.",
    "yanlis_gerekceleri": {
     "A": "Dominikanlar değil; Santa Croce Franciscan kilisesidir.",
-    "C": "Benediktenler bu soruda doğru değildir; kaynakların doğruladığı yanıt Franciscanlar.",
+    "C": "Benediktenler doğru yanıt değildir; doğru yanıt Franciscanlar.",
     "D": "Jesuitler 16. yy'da kuruldu; anakronik."
    },
    "kanit": [
@@ -123,8 +123,8 @@
    "gerekce": "K1: 1966 Arno selinde ağır hasar; hâlâ kötü durumda.",
    "yanlis_gerekceleri": {
     "A": "Yangın değil, sel.",
-    "C": "Deprem bu soruda doğru değildir; kaynakların doğruladığı yanıt Arno seli ağır hasar.",
-    "D": "Hırsızlık bu soruda doğru değildir; kaynakların doğruladığı yanıt Arno seli ağır hasar."
+    "C": "Deprem doğru yanıt değildir; doğru yanıt Arno seli ağır hasar.",
+    "D": "Hırsızlık doğru yanıt değildir; doğru yanıt Arno seli ağır hasar."
    },
    "kanit": [
     "C021"
@@ -155,7 +155,7 @@
    "gerekce": "K3/K1: solda yas tutan Meryem, sağda Yuhanna.",
    "yanlis_gerekceleri": {
     "A": "Melek değil, Meryem/Yuhanna.",
-    "C": "Petrus ve Pavlus bu soruda doğru değildir; kaynakların doğruladığı yanıt Meryem ve Yuhanna.",
+    "C": "Petrus ve Pavlus doğru yanıt değildir; doğru yanıt Meryem ve Yuhanna.",
     "D": "Genel \"iki aziz\" değil, spesifik Meryem/Yuhanna."
    },
    "kanit": [
@@ -187,7 +187,7 @@
    "gerekce": "K1/K2: 1966 seli sonrası restorasyondan beri Museo dell'Opera di Santa Croce.",
    "yanlis_gerekceleri": {
     "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera di Santa Croce.",
-    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Museo dell'Opera di Santa Croce.",
+    "C": "Vatikan doğru yanıt değildir; doğru yanıt Museo dell'Opera di Santa Croce.",
     "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera di Santa Croce."
    },
    "kanit": [
@@ -219,8 +219,8 @@
    "gerekce": "K1: geç Bizans üslubundan kopan ilk İtalyan eserlerinden; teknik yenilik + hümanist ikonografi.",
    "yanlis_gerekceleri": {
     "A": "İlk yağlıboya değil (distemper).",
-    "C": "İlk perspektif bu soruda doğru değildir; kaynakların doğruladığı yanıt Bizans üslubundan kopuşun ilk örneklerinden.",
-    "D": "İlk portre bu soruda doğru değildir; kaynakların doğruladığı yanıt Bizans üslubundan kopuşun ilk örneklerinden."
+    "C": "İlk perspektif doğru yanıt değildir; doğru yanıt Bizans üslubundan kopuşun ilk örneklerinden.",
+    "D": "İlk portre doğru yanıt değildir; doğru yanıt Bizans üslubundan kopuşun ilk örneklerinden."
    },
    "kanit": [
     "C012"
@@ -251,7 +251,7 @@
    "gerekce": "K1/K3: beyaz, şeffaf, tülbent benzeri perizoma (Arezzo'daki kırmızıdan örtük).",
    "yanlis_gerekceleri": {
     "A": "Kırmızı Arezzo çarmıhındadır; Santa Croce beyaz.",
-    "C": "Mor, işlemeli bu soruda doğru değildir; kaynakların doğruladığı yanıt Beyaz, şeffaf/tülbent benzeri.",
+    "C": "Mor, işlemeli doğru yanıt değildir; doğru yanıt Beyaz, şeffaf/tülbent benzeri.",
     "D": "Peştamal var, çıplak değil tümüyle."
    },
    "kanit": [
@@ -283,8 +283,8 @@
    "gerekce": "K1: Arezzo çarmıhı (c.1268–1271) iki çarmıhın daha erken olanı.",
    "yanlis_gerekceleri": {
     "B": "Assisi değil; Arezzo daha erken.",
-    "C": "Padova, aynı bu soruda doğru değildir; kaynakların doğruladığı yanıt Arezzo, daha erken.",
-    "D": "Siena, daha erken bu soruda doğru değildir; kaynakların doğruladığı yanıt Arezzo, daha erken."
+    "C": "Padova, aynı doğru yanıt değildir; doğru yanıt Arezzo, daha erken.",
+    "D": "Siena, daha erken doğru yanıt değildir; doğru yanıt Arezzo, daha erken."
    },
    "kanit": [
     "C024"

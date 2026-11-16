@@ -92,7 +92,7 @@
    "yanlis_gerekceleri": {
     "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Santa Maria del Fiore, Floransa (kuzey duvarı).",
     "C": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Santa Maria del Fiore, Floransa (kuzey duvarı).",
-    "D": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Santa Maria del Fiore, Floransa (kuzey duvarı)."
+    "D": "Vatikan doğru yanıt değildir; doğru yanıt Santa Maria del Fiore, Floransa (kuzey duvarı)."
    },
    "kanit": [
     "C005"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: Hell, Purgatory, Paradise as in poem.",
    "yanlis_gerekceleri": {
-    "B": "Roma/Floransa/Venedik bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet.",
-    "C": "Yeraltı/Deniz/Gök bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet.",
-    "D": "Mısır/Yunanistan/İtalya bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet."
+    "B": "Roma/Floransa/Venedik doğru yanıt değildir; doğru yanıt Cehennem/Araf/Cennet.",
+    "C": "Yeraltı/Deniz/Gök doğru yanıt değildir; doğru yanıt Cehennem/Araf/Cennet.",
+    "D": "Mısır/Yunanistan/İtalya doğru yanıt değildir; doğru yanıt Cehennem/Araf/Cennet."
    },
    "kanit": [
     "C007"
@@ -220,7 +220,7 @@
    "yanlis_gerekceleri": {
     "B": "Arte della Lana değil.",
     "C": "Arte dei Giudici doğru yanıt değildir.",
-    "D": "Misericordia bu soruda doğru değildir; kaynakların doğruladığı yanıt Compagnia di San Luca."
+    "D": "Misericordia doğru yanıt değildir; doğru yanıt Compagnia di San Luca."
    },
    "kanit": [
     "C016"
@@ -252,7 +252,7 @@
    "yanlis_gerekceleri": {
     "B": "Giotto doğru yanıt değildir; doğru yanıt Fra Angelico.",
     "C": "Masaccio doğru yanıt değildir; doğru yanıt Fra Angelico.",
-    "D": "Donatello bu soruda doğru değildir; kaynakların doğruladığı yanıt Fra Angelico."
+    "D": "Donatello doğru yanıt değildir; doğru yanıt Fra Angelico."
    },
    "kanit": [
     "C015"

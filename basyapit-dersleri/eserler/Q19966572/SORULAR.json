@@ -123,9 +123,9 @@
    "dogru": "A",
    "gerekce": "K1/K2: cat (Madonna of the Cat motifi).",
    "yanlis_gerekceleri": {
-    "B": "Köpek bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi.",
-    "C": "Tavşan bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi.",
-    "D": "Kuş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi."
+    "B": "Köpek doğru yanıt değildir; doğru yanıt Kedi.",
+    "C": "Tavşan doğru yanıt değildir; doğru yanıt Kedi.",
+    "D": "Kuş doğru yanıt değildir; doğru yanıt Kedi."
    },
    "kanit": [
     "C010"
@@ -155,9 +155,9 @@
    "dogru": "A",
    "gerekce": "K1: elderly female servant; K2 terza figura.",
    "yanlis_gerekceleri": {
-    "B": "Çocuk bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi.",
-    "C": "Rahip bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi.",
-    "D": "Asker bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi."
+    "B": "Çocuk doğru yanıt değildir; doğru yanıt Yaşlı hizmetçi.",
+    "C": "Rahip doğru yanıt değildir; doğru yanıt Yaşlı hizmetçi.",
+    "D": "Asker doğru yanıt değildir; doğru yanıt Yaşlı hizmetçi."
    },
    "kanit": [
     "C009"
@@ -188,7 +188,7 @@
    "gerekce": "K1: off display because of subject matter until 1920.",
    "yanlis_gerekceleri": {
     "B": "Hasar var ama neden konu.",
-    "C": "Boyut nedeniyle bu soruda doğru değildir; kaynakların doğruladığı yanıt Konu (erotik) nedeniyle.",
+    "C": "Boyut nedeniyle doğru yanıt değildir; doğru yanıt Konu (erotik) nedeniyle.",
     "D": "Sahip değil; konu."
    },
    "kanit": [
@@ -219,9 +219,9 @@
    "dogru": "A",
    "gerekce": "K1: Reiffenstein for Catherine the Great.",
    "yanlis_gerekceleri": {
-    "B": "II. Julius bu soruda doğru değildir; kaynakların doğruladığı yanıt Catherine the Great.",
+    "B": "II. Julius doğru yanıt değildir; doğru yanıt Catherine the Great.",
     "C": "Gonzaga sipariş hipotezi (16.yy), satın alma değil.",
-    "D": "Napolyon bu soruda doğru değildir; kaynakların doğruladığı yanıt Catherine the Great."
+    "D": "Napolyon doğru yanıt değildir; doğru yanıt Catherine the Great."
    },
    "kanit": [
     "C012"
@@ -316,9 +316,9 @@
    "dogru": "A",
    "gerekce": "K1/K2: Madonna of the Cat.",
    "yanlis_gerekceleri": {
-    "B": "Sistina Tavanı bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte).",
-    "C": "Atina Okulu bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte).",
-    "D": "Urbino Venüsü bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte)."
+    "B": "Sistina Tavanı doğru yanıt değildir; doğru yanıt Madonna of the Cat (Capodimonte).",
+    "C": "Atina Okulu doğru yanıt değildir; doğru yanıt Madonna of the Cat (Capodimonte).",
+    "D": "Urbino Venüsü doğru yanıt değildir; doğru yanıt Madonna of the Cat (Capodimonte)."
    },
    "kanit": [
     "C010"

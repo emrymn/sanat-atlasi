@@ -123,9 +123,9 @@
    "dogru": "A",
    "gerekce": "K4/K5/K6: Ovid Met. I.",
    "yanlis_gerekceleri": {
-    "B": "Genesis bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I.",
-    "C": "İlyada bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I.",
-    "D": "Aeneid bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I."
+    "B": "Genesis doğru yanıt değildir; doğru yanıt Ovidius Metamorphoses I.",
+    "C": "İlyada doğru yanıt değildir; doğru yanıt Ovidius Metamorphoses I.",
+    "D": "Aeneid doğru yanıt değildir; doğru yanıt Ovidius Metamorphoses I."
    },
    "kanit": [
     "C013"
@@ -219,8 +219,8 @@
    "dogru": "A",
    "gerekce": "K5/K7: Ara Grimani.",
    "yanlis_gerekceleri": {
-    "B": "Laokoön bu soruda doğru değildir; kaynakların doğruladığı yanıt Ara Grimani Cupid-Psyche kabartması.",
-    "C": "Belvedere Apollo bu soruda doğru değildir; kaynakların doğruladığı yanıt Ara Grimani Cupid-Psyche kabartması.",
+    "B": "Laokoön doğru yanıt değildir; doğru yanıt Ara Grimani Cupid-Psyche kabartması.",
+    "C": "Belvedere Apollo doğru yanıt değildir; doğru yanıt Ara Grimani Cupid-Psyche kabartması.",
     "D": "Venus de Milo değil."
    },
    "kanit": [
@@ -251,9 +251,9 @@
    "dogru": "A",
    "gerekce": "K6: belki Inachos (bilmece).",
    "yanlis_gerekceleri": {
-    "B": "Aziz Hubertus bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi.",
-    "C": "Diana bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi.",
-    "D": "Actaeon bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi."
+    "B": "Aziz Hubertus doğru yanıt değildir; doğru yanıt Inachos (ırmak tanrısı baba) göndermesi.",
+    "C": "Diana doğru yanıt değildir; doğru yanıt Inachos (ırmak tanrısı baba) göndermesi.",
+    "D": "Actaeon doğru yanıt değildir; doğru yanıt Inachos (ırmak tanrısı baba) göndermesi."
    },
    "kanit": [
     "C026"
@@ -317,7 +317,7 @@
    "yanlis_gerekceleri": {
     "B": "Pano değil; tuval.",
     "C": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tuval (Leinwand).",
-    "D": "Kâğıt bu soruda doğru değildir; kaynakların doğruladığı yanıt Tuval (Leinwand)."
+    "D": "Kâğıt doğru yanıt değildir; doğru yanıt Tuval (Leinwand)."
    },
    "kanit": [
     "C004"
