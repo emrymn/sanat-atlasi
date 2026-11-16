@@ -38,33 +38,50 @@ export function dersYolu(klasor, dosya) {
 }
 
 // ---------- Ders metni: ekranda gösterilecek hâl (İş 185) ----------
-// Modelin çalışma notlarını ayıkla: kanıt etiketleri, (belirsiz)/(yorum)/(tartışma), "bu oturumda" cümleleri, künye blokları
-const ATLA = /kimlik|etkinlik|kanıt|kaynak|sınır|kalite|öğrenme/i;
+// Modelin çalışma notlarını ayıkla (İş 185, 187): kanıt etiketleri, (belirsiz)/(yorum)/(B) notları, kaynak/katalog/Wikidata
+// cümleleri ("NG kaydı…", "WD…", "föy…"), "X'in betimlediği gibi:" kalıpları, kod ve dosya adları, kimlik/kaynak/etkinlik bölümleri
+const ATLA = /kimlik|etkinlik|kanıt|kaynak|sınır|kalite|öğrenme|sıra sizde|seminer|standart|yöntem/i;
+const META = /\b(NG|WD|Wikidata|Wikipedia|Commons|[a-z]{2}wiki|föy\w*|birincil|ikincil|envanter\w*|data|vision|oturum\w*|HTTP|URL|P\d{2,}|Q\d{3,}|[KSDE]\d{1,2}|C\d{3})\b|\bwiki\b|\bParti \d|erişil\w*|\bp\.\s?\d|kaynak betim\w*|\.md\b|§|https?:/i;
+const KAYNAK_KALIBI = /[^.;:!?]{0,60}?\b(betimlediği|betimlediğine|betimine|betimlemesine|kaydına|föyüne|föyünün)\s*(gibi|göre)?[:,]?\s+/gi;
+const buyuk = (x) => x.replace(/^\s*([a-zçğıöşü])/, (m, h) => h.toLocaleUpperCase('tr'));
+function cumleleriSuz(metin) {
+  const c = metin
+    .replace(KAYNAK_KALIBI, '')
+    .split(/(?<=[.!?])\s+(?=["“(]?[A-ZÇĞİÖŞÜ0-9])/)
+    .filter((x) => x.trim() && !META.test(x) && (x.match(/\(/g) || []).length === (x.match(/\)/g) || []).length);
+  return buyuk(c.join(' '));
+}
 export function temizle(md) {
   const bolumler = [];
-  let atla = false;
-  let atlaAd = '';
+  let atla = '';
   for (let s of String(md || '').replace(/\r/g, '').split('\n')) {
-    if (/^#\s/.test(s) || /^\*\*Eser:\*\*/.test(s)) continue;
+    if (/^#\s/.test(s) || /^\*\*(Eser|Ön koşul|Standart|Kaynak)/i.test(s)) continue;
     const b = /^#{2,}\s+(.*)$/.exec(s);
     if (b) {
-      atla = ATLA.test(b[1]);
-      atlaAd = b[1];
-      if (!atla) bolumler.push(`## ${b[1].replace(/^\d+[.)]\s*/, '')}`);
+      atla = !ATLA.test(b[1]) ? '' : /kimlik/i.test(b[1]) ? 'liste' : 'tam';
+      if (!atla) bolumler.push(`## ${b[1].replace(/^\d+[.)]\s*/, '').replace(/\s*\([^)]*\)/g, '').replace(/\s*[—–-]\s*[^—–-]*\b(NG|WD|wiki|föy)\b.*$/i, '')}`);
       continue;
     }
-    if (atla && (/^\s*([-*]|\d+[.)]|\|)/.test(s) || /etkinlik|kanıt|kaynak|sınır|kalite|öğrenme/i.test(atlaAd))) continue;
-    s = s
+    // kimlik bölümünde yalnız liste atlanır (düz paragraf eserin tanıtımıdır); diğer atlanan bölümler bütünüyle gider
+    if (atla === 'tam' || (atla === 'liste' && /^\s*([-*]|\d+[.)])\s/.test(s))) continue;
+    if (/^\s*\|/.test(s)) continue;
+    const on = (/^(\s*(?:[-*]|\d+[.)])\s+)/.exec(s) || [''])[0];
+    let g = s
+      .slice(on.length)
+      .replace(/`[^`]*`/g, '')
       .replace(/\s*\[[CKSDE]\d{1,4}\]/g, '')
       .replace(/\s*\((belirsiz|tartışma|yorum|karşılaştırma)[^()]*\)/gi, '')
-      .replace(/\s*\([^()]*oturum[^()]*\)\.?/gi, '')
-      .replace(/[^.!?]*\bbu oturumda\b[^.!?]*[.!?]\s*/gi, ' ')
+      .replace(/\s*\((?:[ABCDE](?:\s*[\/–-]\s*[ABCDE])?)\)/g, '')
+      .replace(/\s*\([^()]*oturum[^()]*\)\.?/gi, '');
+    g = cumleleriSuz(g)
       .replace(/\s+([.,;:])/g, '$1')
       .replace(/(\S) {2,}/g, '$1 ')
-      .trimEnd();
-    bolumler.push(s);
+      .trim();
+    if (!g || /^[\s.,;:—–-]*$/.test(g)) continue;
+    bolumler.push(on + g);
   }
-  return bolumler.join('\n');
+  // boş kalan alt başlıkları at
+  return bolumler.filter((x, i, l) => !/^## /.test(x) || (l[i + 1] !== undefined && !/^## /.test(l[i + 1]))).join('\n');
 }
 
 // ---------- Markdown → HTML (derslerde geçen yapılar: başlık, paragraf, liste, tablo, çizgi, alıntı) ----------

@@ -84,3 +84,16 @@ test('temizle: kanıt etiketi, (belirsiz)/(yorum), "bu oturumda" cümlesi, küny
   assert.match(t, /## Ne görüyoruz/);
   assert.match(t, /Bir cümle\. Son\./);
 });
+
+test('temizle: kaynak/katalog cümleleri, "betimlediği gibi" kalıbı, kod ve standart satırı gider; 107 derste iz kalmaz', () => {
+  const t = temizle('**Ön koşul:** Başlangıç dersi. **Standart:** `../../AKADEMIK_STANDART.md` §8-9.\n## Ne görüyoruz (NG betimi)\nNational Gallery föyünün betimlediği gibi: zengin giysili bir adam durur. NG kaydı eseri 1533 olarak verir. WD P18 dosyası farklıdır. Resim simetriktir.');
+  assert.ok(!/Ön koşul|Standart|AKADEMIK|NG|WD|föy|`/.test(t), t);
+  assert.match(t, /## Ne görüyoruz\n/);
+  assert.match(t, /^Zengin giysili bir adam durur\. Resim simetriktir\.$/m);
+  const iz = /\b(NG|WD|wiki|föy\w*|Commons|Wikidata)\b|\.md\b|§|`/;
+  for (const k of KLASORLER)
+    for (const f of ['DERS_BASLANGIC.md', 'DERS_ORTA.md']) {
+      const md = readFileSync(new URL(`../../basyapit-dersleri/eserler/${k}/${f}`, import.meta.url), 'utf8');
+      assert.ok(!iz.test(temizle(md)), `${k}/${f}`);
+    }
+});
