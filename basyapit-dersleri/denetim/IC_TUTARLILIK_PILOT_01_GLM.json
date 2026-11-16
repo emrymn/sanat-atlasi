@@ -1,0 +1,102 @@
+[
+ {
+  "eser_id": "Q3873247",
+  "tur": "A",
+  "dosya_1": "DERS.json",
+  "alinti_1": "\"ifade\": \"Boyut: 187×182 cm\",",
+  "dosya_2": "KANIT_DOSYASI.md",
+  "alinti_2": "Boyut: 187 × 182 cm. Kaynak: K1 (182×187), K2 (P2048 187 / P2049 182)",
+  "aciklama": "Aynı ölçü olgusu iki farklı sırayla kayıtlı: DERS.json iddiası ve tüm ders dosyaları 187×182 (yükseklik×genişlik) verirken, KANIT_DOSYASI aynı iddianın satırında kaynağın ham değerini \"K1 (182×187)\" olarak aktarır. 182×187 ile 187×182 aynı sıralı çift değildir; K1'in ölçü sırası kuralının (genişlik×yükseklik mi, yükseklik×genişlik mi) dosya setinde hiçbir yerde açıklanmamasına rağmen DERS.json veri_notları \"Boyut 187×182 K1/K2 uyumlu\" ve KALITE_KONTROL \"187×182 ✓\" diyerek uyum iddia eder. K1'in sıra kuralı bilinmediği için bu uyum dosyalar arasında kurulmuş değildir; hangi boyutun yükseklik olduğu setten doğrulanamaz.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q3873247",
+  "tur": "B",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Ambrogio Lorenzetti'nin Tapınakta Sunum'u (1342) ve Bartolomeo Bulgarini'ye atfedilen bir Doğum (1351, bugün sökülmüş) vardı [C009]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Ambrogio Lorenzetti Tapınakta Sunum (1342); Bulgarini Doğum (1351, sökülmüş)",
+  "aciklama": "Aynı olgu (1351 tarihli Doğum tablosunun Bulgarini'ye aidiyeti) DERS_ORTA ve KANIT_DOSYASI'nin C009 satırında \"Bulgarini'ye atfedilen\" nitelemesiyle verilirken, DERS.json C009 ifadesi ve DERS_ILERI §2 (\"Bulgarini'nin sökülmüş Doğum'u (1351)\") atıf nitelemesi olmadan kesin olgu olarak sunar. Kesinleşme düzeyi dosyalar arasında farklı.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q979440",
+  "tur": "A",
+  "dosya_1": "DERS.json",
+  "alinti_1": "Pietro Lorenzetti Meryem'in Doğumu 1342 (Sabinus), Bulgarini Doğum 1351 (Victor, sökülmüş)",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "**Pietro Lorenzetti, Meryem'in Doğumu (c.1335–1342):** aynı döngünün halkası; mekânsal derinlik arayışı",
+  "aciklama": "Pietro Lorenzetti'nin Meryem'in Doğumu'nun tarihi DERS.json C010, KANIT C010, DERS_ORTA §2 ve DERS_ILERI §2'de tek yıl \"1342\" olarak verilir; aynı DERS_ORTA dosyasının §8 karşılaştırma bölümü ise \"c.1335–1342\" aralığı verir. Aynı olgunun tarihi hem dosyalar arasında hem DERS_ORTA'nın kendi içinde farklı; öğrenci iki farklı tarihleme öğrenir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q979440",
+  "tur": "B",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Bulgarini'ye atfedilen, bugün sökülmüş bir Doğum (1351, Victor sunağı) vardı [C010]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Bulgarini Doğum 1351 (Victor, sökülmüş)",
+  "aciklama": "Bulgarini'nin 1351 Doğum'u DERS_ORTA §2 ve KANIT C010'da \"Bulgarini'ye atfedilen\" olarak nitelenirken, DERS.json C010 ifadesi ve DERS_ILERI §2 (\"Bulgarini'nin sökülmüş Doğum'u (1351)\") atıf nitelemesi olmadan kesin olgu olarak sunar.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q2067212",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "üst register Meryem'in köklerini (Joachim/Anna), orta register İsa'nın hayatını, alt register Passion'u taşır (yorum)",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Döngü içi konum: Passion sahneleri, orta-alt register, altar'a bakarken sol duvar\",",
+  "aciklama": "Passion sahnelerinin (dolayısıyla Ağıt freskinin) bulunduğu register DERS.json C007, kunye, DERS_ORTA §1, DERS_ILERI §1 ve SORULAR TK05'te \"orta-alt register\" iken DERS_ILERI §2 cümlesi Passion'u \"alt register\"a yerleştirir. Aynı eserin duvardaki konumu hakkında iki ifade birbirini yalanlar.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1055117",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "ortada Kudüs (Herod sarayı) şehrine girmek üzere; sağdaki dar bölümde Beytüllahim'e varış [C008]",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "Yolculuğun üç aşaması (yıldızı görme, Herod sarayında duraklama, eve dönüş) arka planda üç ayrı sahnede anlatılır; çerçevenin üç kemeri bu sahneleri görsel olarak ayırır [C008]",
+  "aciklama": "Üç arka plan sahnesinin üçüncüsü (sağdaki dar bölüm) DERS_ORTA §5 ve DERS_ILERI §5'te \"Beytüllahim'e varış\" olarak betimlenirken, DERS_BASLANGIC üçüncü aşamayı \"eve dönüş\" olarak verir ve üç aşamanın arka planda üç ayrı sahnede anlatıldığını söyler (DERS.json C008 ve GZ02 ipucu da \"dönüş\" der). Varış ile dönüş farklı anlatı anlarıdır; aynı sahnenin içeriği dosyalar arasında çelişir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q1055117",
+  "tur": "D",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Commons (K4) Google Art Project görseli [C013]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"1420'de, Gentile Floransa'ya varışından kısa süre sonra sipariş; Palla en zengin Floransalılardan.\",",
+  "aciklama": "DERS_ILERI §1'de Commons görselini bildiren cümle [C013] etiketi taşır; ancak C013'ın ifadesi 1420 tarihli sipariş hakkındadır ve görselle ilgili hiçbir ayrıntı içermez (görsel için C027/C028 tanımlıdır, KANIT'in paralel pasajı C027 kullanır). Etiket, içerikle ilgisiz bir iddiaya bağlanmıştır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1055117",
+  "tur": "D",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Altın varaklı çerçeve, yanlarda boyalı çiçeklerle bezenmiştir [C008]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\"ifade\": \"Yolculuk üç arka plan sahnesi (yıldız/Herod/dönüş); çerçevenin üç kemeriyle ayrılır; kayalık ufuk.\",",
+  "aciklama": "[C008] etiketli cümle, çerçevenin \"yanlarda boyalı çiçeklerle bezeli\" olduğu ayrıntısını taşır; bu ayrıntı C008'in ifadesinde ve diğer hiçbir iddiada (C016 yalnız \"altın varaklı çerçeve Gotik ornamentik\" der) yoktur. Çiçek bezemesi bilgisi etiketi taşıyan iddianın kapsamı dışındadır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1090837",
+  "tur": "D",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "Eser bugün National Gallery'de Room 44'te, \"Post-Impressionism: French Painting 1850–1900\" bağlamında sergilenir [C001]",
+  "dosya_2": "DERS.json",
+  "alinti_2": "NG3908, Room 44, Main Collection, 19th-century French Frame",
+  "aciklama": "DERS_ORTA §10 (ve DERS_ILERI §10) eserin \"Post-Impressionism: French Painting 1850–1900\" sergi bağlamında sunulduğunu [C001] etiketiyle bildirir; C001'in ifadesi yalnız Room 44/Main Collection/19th-century French Frame verir. Bu sergi bağlamı adı DERS.json'daki hiçbir iddianın ifadesinde geçmez; etiket, iddianın kapsamı dışındaki bir ayrıntıyı taşır.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q1212937",
+  "tur": "A",
+  "dosya_1": "DERS.json",
+  "alinti_1": "Samuel 1962 optik tüp (Warburg/BOA; Agrippa 1533; itirazlar Sharp 1998)",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Samuel 1963 (optik), Wylde 1998 (kafatası restorasyonu)",
+  "aciklama": "Samuel'in optik tüp teorisinin yayın yılı DERS.json C016, KANIT C016, DERS_ORTA §3 ve DERS_ILERI §2'de (\"optik tüp teorisi (1962)\") 1962 iken, DERS_ILERI §1 ve §12 kaynakça (ayrıca KANIT §0 kaynak dizesi) 1963 verir. Aynı yıl olgusu dosyalar arasında ve DERS_ILERI'nin kendi içinde farklı.",
+  "onem": "DÜŞÜK"
+ }
+]
