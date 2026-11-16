@@ -2376,3 +2376,12 @@ Testler: `tests/unit/eser_dersi.test.mjs`, `tests/e2e/eser_dersi.spec.js`.
 Emre: "kart kısmını direkt kaldıralım". Ders ekranında artık yalnız okuma var: kısa anlatım (Başlangıç) ve "Daha fazlası" ile ayrıntılı
 anlatım (Orta). Sekmeler, kart paneli ve "Tekrar kartlarına geç" düğmesi gitti; `SORULAR.json` yüklenmez. Başyapıt sayfasındaki giriş
 "Ders" diye yazar. Kart yardımcıları (`kartlariAl`, `kunyeKartiMi`) ve stilleri silindi.
+
+### İş 187 · Ders metninden kaynak ve kod izleri temizlendi (sürüm 1.82.7)
+
+Emre: "NG betimi yazan her şeyi sil, çok yapay duruyor; NG'nin betimlediğine göre gibi tabirleri ve kodları da sil". `temizle`
+(`js/eserDersi.js`) artık ekranda göstermeden önce: "Ön koşul / Standart" satırlarını ve `kod` parçalarını atar; NG, WD, wiki,
+Commons, föy, envanter, P/Q kodları, "Parti N", ".md", "§" geçen cümleleri bütünüyle siler; "X'in betimlediği gibi:" türü kaynak
+kalıplarını cümlenin başından kırpar; başlıklardaki "(NG betimi)" eklerini ve "Şimdi sıra sizde", "Seminer", "Yöntem" bölümlerini
+gizler; parantezi yarım kalan cümle parçalarını atar. Ders dosyaları değişmedi; süzme yalnız ekranda. 107 dersin Başlangıç + Orta
+metninde bu izlerden hiçbiri kalmıyor (birim testi); metin toplamı ~193 bin kelimeden ~99 bin kelimeye iniyor (atılan bölümler dahil).
