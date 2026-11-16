@@ -1,0 +1,42 @@
+[
+ {
+  "eser_id": "Q3947103",
+  "tur": "E",
+  "dosya_1": "DERS.json",
+  "alinti_1": "Omuz hizasında iki melek madalyonu; işlevi belirsiz (cimasa hipotezi)",
+  "dosya_2": "DERS_BASLANGIC.md",
+  "alinti_2": "Başının iki yanında, yuvarlak madalyonlar içinde iki melek [C015].",
+  "aciklama": "Aynı iki melek madalyonunun yeri DERS.json'da (C015 iddiası) 'omuz hizasında', Başlangıç ve Orta (§4) derslerinde ise 'başının iki yanında' diye farklı konumda veriliyor; dersler atıf yaptıkları C015 metniyle yer bilgisi bakımından çelişiyor.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q3998957",
+  "tur": "E",
+  "dosya_1": "DERS_BASLANGIC.md",
+  "alinti_1": "Bu bir mitoloji resmidir: şarap tanrısı Bakkhus'un, Naksos adasında terk ettiği Ariadne ile evlenmesini kutlayan zafer/düğün alayı",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "Hindistan'dan zaferle dönen Bakkhus ile Theseus tarafından henüz terk edilmiş, uyuyan Ariadne'nin karşılaşması",
+  "aciklama": "Aynı olay (Ariadne'nin Naksos adasında terk edilmesi) iki derste farklı kişiye bağlanıyor: Başlangıç'ta cümlenin öznesi Bakkhus olduğu için 'terk ettiği' ötecesi terk edeni Bakkhus okutuyor; İleri ders terk edenin Theseus olduğunu açıkça söylüyor. Mitte terk eden Theseus'tur; Başlangıç cümlesi yanlış kişi okuması doğuruyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q45585",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "tablodan bir hafta sonra Theo'ya \"serviler hep aklımı meşgul ediyor… onları ayçiçekleri tuvalleri gibi bir şey yapmak istiyorum\" diye yazdı",
+  "dosya_2": "DERS.json",
+  "alinti_2": "\\\"funereal cypresses\\\" (Bernard, April 1888), \\\"The cypresses are always occupying my thoughts\\\" (~bir hafta sonra)",
+  "aciklama": "Aynı Theo mektubu iki dosyada farklı zamana bağlanıyor: DERS_ILERI.md'de 'serviler hep aklımı meşgul ediyor…' mektubu 'tablodan bir hafta sonra' yazılmıştır (tablo Haziran 1889'da yapıldı); DERS.json C022 ise aynı 'The cypresses are always occupying my thoughts' alıntısını hemen önündeki 'Bernard, April 1888' bilgisinin ardındaki '(~bir hafta sonra)' paranteziyle ~Nisan 1888'e tarihler. İki okuma arasında ~14 ay fark vardır; ayrıca mektup ayçiçeği tuvallerine (Arles dizisi) atıf yaptığından Nisan 1888 okuması dosya setinin içinden de tutarsızdır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q4693305",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "- **San Diego:** 35,56×52,07, Putnam vasiyeti, hale + \"TANQUAM AGNUS\", katalog 107 [C024].",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Met kataloğunun 52 numaralı girişi San Diego versiyonudur (yaklaşık 1636–40; 35,6×52 cm; Putnam armağanı)",
+  "aciklama": "San Diego versiyonunun Putnam'dan edinimi İleri dersin versiyon listesinde 'vasiyet', Orta derste ve İleri'nin kendi düz metninde ('1947 Putnam armağanı') 'armağan' olarak anlatılıyor; aynı edinim olayı iki farklı türde verilmiş, soru cevaplarını etkilemiyor.",
+  "onem": "DÜŞÜK"
+ }
+]
