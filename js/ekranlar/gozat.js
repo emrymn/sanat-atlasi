@@ -322,6 +322,14 @@ export async function basyapitSayfasi(kodlu) {
     const h = guncelMi(no) && hikayeBulucu(e);
     if (h && !ekran.querySelector('.basyapit-hikaye')) kutu.insertAdjacentHTML('afterend', `<section class="bolum basyapit-hikaye" data-test="basyapit-hikaye">${etiket('Hikâyesi', { vurgu: true })}<div class="okuma">${hikayeHtml(h, kacis)}</div></section>`);
   });
+  // İş 175: eserin dersi yayındaysa (ya da geliştirici modunda taslaksa) giriş; modül ancak burada yüklenir
+  import('./eserDersi.js')
+    .then(async (m) => {
+      const durum = m.dersinDurumu(await m.dersYayini(), b.anahtar);
+      if (!guncelMi(no) || (durum !== 'onayli' && durum !== 'taslak') || kutu.querySelector('[data-test="basyapit-ders"]')) return;
+      kutu.insertAdjacentHTML('beforeend', `<a class="basyapit-incele" href="${m.dersAdresi(b.anahtar)}" data-test="basyapit-ders">${ikon('kitap', 18)}Ders · okuma ve kartlar</a>`);
+    })
+    .catch(() => {});
   if (kayit) {
     kutu.insertAdjacentHTML('beforeend', `<button class="basyapit-incele" type="button" data-test="basyapit-incele">${ikon('ara', 18)}Rehberli inceleme · ${kayit.noktalar.length} nokta</button>`);
     kutu.querySelector('[data-test="basyapit-incele"]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, incelemeyeBasla: true, ...gorselTercihi() }));

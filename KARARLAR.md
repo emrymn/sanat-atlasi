@@ -2354,3 +2354,19 @@ pirinç çerçeve, solda üç kartlık küçük deste (öndeki kartta sayı), sa
 ve kısa adıyla "Sanatçı sayfası", sanatçının ilk dört eserinin küçük resimleriyle "Bütün eserleri" (`eserKareleriDoldur`; resim
 gelmezse sıcak kahve kareler). Animasyonlar: dokununca kart/karo küçülür, deste açılır, ok kayar; tur kartının üstünden 4,5 sn'de bir
 soluk bir ışık geçer (hareket azaltılmışsa geçmez). Renkler yalnızca var olan paletten (pirinç, `--yur-yazi`, `--yur-ikincil`).
+
+### İş 185 · Eser dersleri uygulamada: kısa + ayrıntılı okuma ve tekrar kartları (sürüm 1.82.5)
+
+107 başyapıtın dersi (`basyapit-dersleri/eserler/<klasör>/`, Qwen yazdı) içerik denetiminden geçti: üç model taraması (deepseek, GLM),
+ChatGPT'nin 25 bulgusu, yaklaşık 70 elle düzeltme ve 326 şablon gerekçesinin betikle nötrlenmesi (ayrıntı: `koordinasyon/DEVIR.md`).
+Başyapıt sayfasında "Ders · okuma ve kartlar" girişi `#/basyapit/<anahtar>/ders` ekranını açar. Emre'nin kararları:
+yalnız **Başlangıç** dersi (kısa anlatım) ve "Daha fazlası" ile **Orta** ders (ayrıntılı anlatım) gösterilir; İleri ders büyük ölçüde
+modelin çalışma notu olduğu için gösterilmez. Sorulardan yalnız **tekrar kartları**: çoktan seçmeli, doğru-yanlış, açık uçlu ve gözlem
+soruları gösterilmez; künye kartları ("Künye?", "Eser, sanatçı, tarih, yer?") atılır; "Bildim / Bilemedim" işaretlemesi yoktur.
+Kanıt etiketleri (`[C012]`), "(belirsiz)/(yorum)/(tartışma)" notları, "bu oturumda" cümleleri ve kimlik/kaynak/etkinlik bölümlerinin
+listeleri ekranda gizlenir (`temizle`, `js/eserDersi.js`). Yerleşim Fable'ın taslağından (sekmeler, KISA/AYRINTILI ANLATIM başlıkları,
+kart önü/arkası, ilerleme noktaları) uygulamanın kendi renk ve yazı değişkenleriyle. 107 dersin hepsi `data/ders_yayin.json → onayli`'da;
+dersler başyapıt sayfası gibi herkese açık (konu kilidine bağlanmadı). Dersler ve kapı önce ağdan gelir (`sw.js`), çevrimdışıyken son
+görülen kopya. Yayın (`yayinla.yml`): `basyapit-dersleri/` içinden yalnız `DERS_BASLANGIC.md`, `DERS_ORTA.md` ve JSON'lar gider;
+`koordinasyon/`, `resim-ansiklopedisi/` ve `basyapit-dersleri/denetim/` gitmez. Tasarım Fable'a yeniden yaptırılabilir.
+Testler: `tests/unit/eser_dersi.test.mjs`, `tests/e2e/eser_dersi.spec.js`.

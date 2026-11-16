@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.82.4';
+const SURUM = '1.82.5';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -110,6 +110,8 @@ const KABUK_DOSYALARI = [
   'js/ekranlar/koleksiyon.js',
   'js/ekranlar/harita.js',
   'js/ekranlar/bildirim.js',
+  'js/eserDersi.js',
+  'js/ekranlar/eserDersi.js',
   'js/wikidata.js',
   'js/yardimci.js',
   'js/yuruyus.js',
@@ -253,6 +255,9 @@ self.addEventListener('fetch', (e) => {
     // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px). İş 130: telefona indirilmişse (en büyük kopyası olmayanlar)
     // IndexedDB'den
     e.respondWith(depodanYaDa(e));
+  } else if (url.origin === self.location.origin && (url.pathname.includes('/basyapit-dersleri/') || url.pathname.endsWith('/data/ders_yayin.json'))) {
+    // İş 175: eser dersleri ve yayın kapısı sürümden bağımsız düzeltilir: önce ağ, çevrimdışıyken son görülen kopya
+    e.respondWith(onceAg(e, KABUK, 2500));
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     // İş 135: ağ yavaşsa (kopmadan sürünüyorsa) açılış beklemesin: önbellekte varsa 2,5 sn sonra o verilir, ağ arkada sürer
