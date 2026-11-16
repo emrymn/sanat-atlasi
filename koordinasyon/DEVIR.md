@@ -184,6 +184,7 @@ Yamayı uyguladıktan sonra yapılacaklar:
 3. `.github/workflows/yayinla.yml`: `basyapit-dersleri/` yayına gitmeli (dersler oradan yüklenir) ama içindeki raporlar, `denetim/`, `koordinasyon/`
    ve `resim-ansiklopedisi/` gitmemeli; hariç tutma listesini güncelle.
 4. ASTRA-016: gözlem soruları uygulamanın gösterdiği görselle yapılabiliyor mu, 4 "kırpık/detay" eserde kontrol et.
+**Emre kararı (16 Kasım):** ders ekranında yalnız **Başlangıç** (varsayılan) + "Daha fazlası" ile **Orta**; İleri çıkarılır (büyük kısmı model çalışma notu). Sorulardan yalnız **tekrar kartları** (TK); çoktan seçmeli, doğru-yanlış, açık uçlu ve gözlem soruları gösterilmez. `[C###]` etiketleri ve "(belirsiz)/(tartışma)/(yorum)" gibi iç notlar ekranda gizlenir. Yamadaki ekran buna göre uyarlanacak.
 5. Ertelenen kararlar (Emre'ye sor): dersler konu işlendikçe mi açılsın; `SORULAR.json` aralıklı tekrara bağlansın mı (öneri: ayrı skor anahtarı, mevcut kutulara karışmasın).
 6. `main`'e birleştirme ve yayın Emre'nin kararı.
 
