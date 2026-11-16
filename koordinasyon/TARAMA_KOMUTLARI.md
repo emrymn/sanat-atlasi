@@ -1,7 +1,12 @@
-# Daraltılmış tarama komutları 07–11
+# Daraltılmış tarama komutları 06–11
 
 Her bölüm ayrı Qwen Code oturumunda (glm-5.3 · Medium) çalıştırılır. Oturuma yapıştırılacak komut:
 `koordinasyon/TARAMA_KOMUTLARI.md dosyasında "## Parti NN" bölümünü ve altındaki "Ortak talimat"ı uygula.`
+
+## Parti 06
+
+Eserler (10): Q27978197 Q285392 Q28797801 Q2892964 Q29530 Q2990634 Q311243 Q318947 Q3212142 Q3224275
+Çıktı: `basyapit-dersleri/denetim/IC_TUTARLILIK_06.json` · commit adı: "İç tutarlılık 06"
 
 ## Parti 07
 
