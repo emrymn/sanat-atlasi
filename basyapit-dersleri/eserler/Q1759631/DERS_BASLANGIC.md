@@ -6,7 +6,7 @@
 
 - **Eser:** Vergi Parası — balığın ağzındaki para mucizesi [C001].
 - **Sanatçı:** Masaccio [C002].
-- **Tarih:** 1420'ler; başlangıç 1424 [C003].
+- **Tarih:** 1420'ler; başlangıç muhtemelen 1424 (çıkarım) [C003].
 - **Teknik:** fresk [C004].
 - **Yer:** Brancacci Şapeli, Santa Maria del Carmine, Floransa [C006].
 - **Konu:** Matta 17:24–27 — tapınak vergisi ve balığın ağzındaki para [C007].

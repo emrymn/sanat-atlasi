@@ -47,7 +47,7 @@ Bu malzeme seçimi, tesadüf değil, programdır: katedral döngüsü, şehrin b
 ## 8. Karşılaştırmalı analiz
 
 - **Duccio, Maestà (1311):** aynı Siena geleneğinin bir önceki nesli; daha ikonik, daha durağan bir dil [C010]. Martini, bu geleneği çizgisel zarafete taşır (yorum).
-- **Pietro Lorenzetti, Meryem'in Doğumu (c.1335–1342):** aynı döngünün halkası; mekânsal derinlik arayışı ↔ Martini'nin çizgisel zarafeti (yorum) [C010].
+- **Pietro Lorenzetti, Meryem'in Doğumu (1342):** aynı döngünün halkası; mekânsal derinlik arayışı ↔ Martini'nin çizgisel zarafeti (yorum) [C010].
 - **Giotto, Ağıt (c.1305):** Floransa'nın hacim ve duygu dili; Martini'nin "Kuzey" çizgisiyle karşıtlık (yorum) [C027].
 
 Bu karşılaştırmalar, İtalyan Gotik'inin tek bir dil olmadığını gösterir: Siena çizgi ve zarafeti, Floransa hacim ve doğalcılığı geliştirir (yorum). Müjde, bu çeşitlilik içinde "uluslararası" kanadı temsil eder (yorum).

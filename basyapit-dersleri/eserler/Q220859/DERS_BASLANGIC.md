@@ -7,7 +7,7 @@
 - **Eser:** Arnolfini Portresi — tam boy bir çift portre [C001][C009].
 - **Sanatçı:** Jan van Eyck (c. 1390–1441) [C026].
 - **Tarih:** 1434; imzalı ve tarihli [C001][C004].
-- **Teknik:** yağlıboya, meşe pano [C002].
+- **Teknik:** yağlıboya, ahşap pano (muhtemelen meşe) [C002].
 - **Boyut:** 82.2×60 cm [C002].
 - **Yer:** National Gallery, Londra; envanter NG186; Gallery C [C003].
 

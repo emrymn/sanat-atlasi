@@ -46,7 +46,7 @@ Ekleme nedeni tartışmalıdır: omaggio (saygı; Sistina'nın 1511 kısmî aç�
 
 Bu ekleme, eserin "canlı" bir tasarım olduğunu gösterir: Raphael, üretim sırasında rakibinin eserini görüp kendi freskini revize etti [C008][C009] (tartışma). Yani fresk bir "tamamlanmış plan" değil, bir "süren diyalog"dur; Michelangelo ile görsel bir konuşma (yorum) [C009] (tartışma). Herakleitos'un yalnız/karamsar duruşu, Michelangelo'nun kamu imajıyla uyumludur; bu, maskenin neden Herakleitos (karamsar filozof) olduğunu açıklar (yorum) [C007][C009] (tartışma).
 
-Otoportrenin en sağda, izleyiciye bakan tek figür olarak konumu, bir "imza jesti"dir: Raphael kendisini eserinin tanığı ve sunucusu olarak koyar (yorum) [C017]. Siyah bere, onu öteki figürlerden ayırır; yani otoportre bir "çağdaş tanık" olarak antik topluluğa eklenir (yorum) [C017]. Bu, sanatçının eserindeki statüsünü yükseltir: artık zanaatkâr değil, entelektüel topluluğun üyesi (yorum) [C017][C033].
+Otoportrenin en sağda, izleyiciye bakan figür olarak konumu, bir "imza jesti"dir: Raphael kendisini eserinin tanığı ve sunucusu olarak koyar (yorum) [C017]. Siyah bere, onu öteki figürlerden ayırır; yani otoportre bir "çağdaş tanık" olarak antik topluluğa eklenir (yorum) [C017]. Bu, sanatçının eserindeki statüsünü yükseltir: artık zanaatkâr değil, entelektüel topluluğun üyesi (yorum) [C017][C033].
 
 Bramante=Öklid eşleşmesi mesleki uyum taşır: Bramante mimar (geometri ustası), Öklid geometri öğretir; yani maskenin mesleği filozofun disipliniyle eşleşir (yorum) [C013][C012]. Leonardo=Platon da benzer: Leonardo'nun kozmoloji ilgisi Timaeus ile uyumlu (yorum) [C006][C004]. Bu mesleki uyum, maskelerin rastgele değil, anlamlı seçildiğini düşündürür; yani Raphael bir "onur listesi"ni disiplinlerle eşler (yorum) [C033].
 
@@ -54,7 +54,7 @@ Bramante=Öklid eşleşmesi mesleki uyum taşır: Bramante mimar (geometri ustas
 
 Çağdaş portreler bir onur listesi kurar: Platon=Leonardo (forse), Herakleitos=Michelangelo, Öklid=Bramante, en sağ=Raphael otoportre [C006][C007][C013][C017]. Yani antik filozoflar çağdaş sanatçıların maskesidir; eser geçmiş ile şimdiyi birleştirir (yorum) [C033]. Bu, hümanizmin "antikleri çağdaşlaştırma" jestidir: antik bilgelik, çağdaş ustaların yüzünde yaşar (yorum) [C033].
 
-Bramante=Öklid especialmente anlamlıdır: Bramante mimar (geometri ustası); Öklid geometri öğretir; yani maskenin mesleği filozofun disipliniyle eşleşir [C013][C012]. Leonardo=Platon da benzer: Leonardo'nun kozmoloji/ideal formlar ilgisi Timaeus ile uyumlu (yorum) [C006][C004]. Raphael'in kendini en sağa, izleyiciye bakan tek figür olarak koyması, bir "imza"dır: sanatçı eserinin tanığıdır (yorum) [C017].
+Bramante=Öklid especialmente anlamlıdır: Bramante mimar (geometri ustası); Öklid geometri öğretir; yani maskenin mesleği filozofun disipliniyle eşleşir [C013][C012]. Leonardo=Platon da benzer: Leonardo'nun kozmoloji/ideal formlar ilgisi Timaeus ile uyumlu (yorum) [C006][C004]. Raphael'in kendini en sağa, izleyiciye bakan bir figür olarak koyması, bir "imza"dır: sanatçı eserinin tanığıdır (yorum) [C017].
 
 Ama portre kimlikleri de tartışmalıdır: Platon=Leonardo "forse/believed"; Öklid=Bramante ama Öklid/Arşimet alternatifi var; Protogenes yüzü Sodoma/Perugino/Viti/Sangallo adayları [C006][C014] (tartışma)[C018] (tartışma). Yani onur listesi bile kesin değildir; ders maskeleri olasılık olarak sunar (tartışma) [C006][C018] (tartışma).
 
@@ -62,7 +62,7 @@ Kimlik enflasyonunun nedeni, figürün "belirsiz alan" olmasıdır: beyaz giysi 
 
 ## 6. Beyaz figür: kimlik enflasyonunun zirvesi
 
-Solda beyaz giysili, izleyiciye bakan tek figür en tartışmalıdır: WD koşulsuz Ipazia; itwiki Ipazia'yı reddeder (medya yayılımı) ve Francesco Maria I della Rovere'yi "akademik kabul" sayar; enwiki ikisini de "most commonly" verir; Reale=Kalokagathia, Oberhuber=ideal figür (portre değil), Mazzucchi=Verità, Girgenti=Fedone [C019] (tartışma). Altı+ öneri, tek figür için [C019] (tartışma).
+Solda beyaz giysili, izleyiciye bakan figür en tartışmalıdır: WD koşulsuz Ipazia; itwiki Ipazia'yı reddeder (medya yayılımı) ve Francesco Maria I della Rovere'yi "akademik kabul" sayar; enwiki ikisini de "most commonly" verir; Reale=Kalokagathia, Oberhuber=ideal figür (portre değil), Mazzucchi=Verità, Girgenti=Fedone [C019] (tartışma). Altı+ öneri, tek figür için [C019] (tartışma).
 
 Bu enflasyon, ikonografik yöntemin sınırını gösterir: bir figürün kimliği, ancak belge (mektup, karton, çağdaş kayıt) ile sabitlenir; belge yoksa kimlik bir yorumdur [C019] (tartışma)[C031] (belirsiz). Ipazia önerisi internet yayılımıyla popülerleşti ama akademik destek yok; yani popülerlik kanıt değildir (yorum) [C031] (belirsiz). Francesco Maria önerisi akademik kabul görür ama o da kesin değil; Oberhuber "ideal figür, portre değil" diyerek portre varsayımını bile reddeder [C019] (tartışma).
 

@@ -19,7 +19,7 @@ Görsel bu oturumda incelenemedi; betim, müze kaydı ile akademik metinlere day
 
 ## Neden önemli
 
-Birincisi ölçek ve resmî kabul: üç metreyi aşan bir tuval, yapıldığı yıl Devlet tarafından satın alındı [C005][C009]. İkincisi poz soyu: bu ayakta duruş, Botticelli'nin Venüs'ünden gelir, Ingres'in yukarı kalkık kollarıyla dönüşür ve Bouguereau'da son biçimini alır [C019]. Üçüncüsü iki yanlı resepsiyon: Devlet alımı resmî başarıyı gösterirken, Huysmans Salon 1879 eleştirisinde eseri sert biçimde yerdi [C009][C021]. Uygulama verisindeki "büyük beğeni" ifadesi bu eleştirel karşıtlığı gizler (tartışma) [C041] (tartışma).
+Birincisi ölçek ve resmî kabul: yaklaşık üç metre yüksekliğinde bir tuval, yapıldığı yıl Devlet tarafından satın alındı [C005][C009]. İkincisi poz soyu: bu ayakta duruş, Botticelli'nin Venüs'ünden gelir, Ingres'in yukarı kalkık kollarıyla dönüşür ve Bouguereau'da son biçimini alır [C019]. Üçüncüsü iki yanlı resepsiyon: Devlet alımı resmî başarıyı gösterirken, Huysmans Salon 1879 eleştirisinde eseri sert biçimde yerdi [C009][C021]. Uygulama verisindeki "büyük beğeni" ifadesi bu eleştirel karşıtlığı gizler (tartışma) [C041] (tartışma).
 
 Görsel kamu malıdır (sanatçı 1905'te öldi); müze fotoğrafı RMN-Grand Palais / Patrice Schmidt kredisiyle anılır [C025][C014].
 

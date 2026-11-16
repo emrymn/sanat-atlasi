@@ -80,7 +80,7 @@ Giornata analizi, otograflık sorusunun teknik anahtarıdır: günlük parçalar
 
 Karşılaştırmanın belge halkası: Michelangelo kopyası (Münih), etkinin somut kanıtıdır [C020]. Buna karşılık Donatello etkisi (K2) ve Giotto karşıtlığı, yorumdur [C025][C026]. Seminer, bu iki kanıt türünü ayırır: çizim belgesi ↔ üslup yorumu (yorum). Masolino karşılaştırması (karşı duvar), K3'ün betimsel karşıtlığıdır: aynı şema, farklı odak (B) [C012].
 
-Şapel bir "üslup müzesi"dir: Masolino, Masaccio, Filippino — üç dil, tek duvarda [C009]. Karşılaştırma, bu yan yanalıkla doğrudan yapılabilir: izleyici, dilleri adım adım karşılaştırır (yorum). Vergi Parası, Masaccio dilinin saf örneğidir; Tabitha, Masolino'nun; tamamlamalar, Filippino'nun [C012][C009]. Seminer sorusu: bir mekân, nasıl bir "üslup laboratuvarı" olur? Brancacci, bunun en somut örneğidir (yorum).
+Şapel bir "üslup müzesi"dir: Masolino, Masaccio, Filippino — üç dil, tek şapelde [C009]. Karşılaştırma, bu yan yanalıkla doğrudan yapılabilir: izleyici, dilleri adım adım karşılaştırır (yorum). Vergi Parası, Masaccio dilinin saf örneğidir; Tabitha, Masolino'nun; tamamlamalar, Filippino'nun [C012][C009]. Seminer sorusu: bir mekân, nasıl bir "üslup laboratuvarı" olur? Brancacci, bunun en somut örneğidir (yorum).
 
 ## 9. Akademik tartışmaların envanteri
 

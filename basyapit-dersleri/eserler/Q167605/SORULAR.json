@@ -357,7 +357,7 @@
   },
   {
    "id": "DY03",
-   "ifade": "Vermeer bu eserde, çağdaşlarının kullandığı ucuz azurit yerine pahalı doğal ultramarin kullandı.",
+   "ifade": "Vermeer bu eserde, çağdaşlarının genellikle kullandığı ucuz azurit yerine pahalı doğal ultramarin kullandı.",
    "dogru": true,
    "aciklama": "Doğru. Teknik rapor (Essential Vermeer üzerinden; 1995 NGA/Mauritshuis kataloğu aktarımı): Afgan lapis lazulisinden doğal ultramarin, monokrom alt boyama üzerine saydam glazürler; çağdaşlar GENELLİKLE daha ucuz azurit kullanıyordu (EV \"usually employed\").",
    "kanit": [
@@ -493,7 +493,7 @@
   },
   {
    "id": "GZ04",
-   "soru": "Sağ alt köşede ne var? Kutunun kapağındaki deliklerin ve içindeki kırmızımsı alanın (köz kabı) işlevini düşünün; duvar dibindeki çinileri sayın.",
+   "soru": "Sağ alt köşede ne var? Kutunun kapağındaki deliklerin ve içindeki kırmızımsı alanın (muhtemelen köz kabı) işlevini düşünün; duvar dibindeki çinileri sayın.",
    "ipucu": "Stoofje (ayak ısıtıcısı): delikli ahşap kutu, içinde köz kabı (EV betimi; görselde kırmızımsı iç alan). Delft çinileri; 2022'de bu bölgenin altında bir ateş sepeti (vuurmand) tanımlandığını hatırlayın.",
    "kanit": [
     "C035",
@@ -555,7 +555,7 @@
   {
    "id": "TK05",
    "on": "Stoofje (ayak ısıtıcısı) — nesne ve kültürel kod?",
-   "arka": "Delikli kapaklı ahşap kutu; içinde köz kabı bulunurdu (EV genel betimi; görselde kırmızımsı iç alan). Roemer Visscher, Sinnepoppen (1614): 'Mignon des Dames'. Yorum tartışmalı: erotik ima (Liedtke, EV) ↔ pratik amaç/çalışkanlık (Cant 2009, yalnız Wikipedia aracılığıyla; kitap erişilmedi) ↔ yaygın dekor, özel anlam yok (Dibbits, çini için).",
+   "arka": "Delikli kapaklı ahşap kutu; içinde köz kabı bulunurdu (EV genel betimi; görselde kırmızımsı iç alan). Roemer Visscher, Sinnepoppen (1614): 'Mignon des Dames'. Yorum tartışmalı: erotik ima (Liedtke, EV) ↔ pratik amaç/çalışkanlık (Cant 2009, yalnız Wikipedia aracılığıyla; kitap erişilmedi) ↔ yaygın dekor, özel anlam taşımayabilir (Dibbits, çini için).",
    "kanit": [
     "C035",
     "C066",

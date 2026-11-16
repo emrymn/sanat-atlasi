@@ -47,7 +47,7 @@ Eser bir tuvaldir (Art Institute of Chicago, AIC). **Birincil ARTIC nesne sayfas
 **C007** — İmza/tarih sol altta: "G. Caillebotte. 1877" (gri-kahverengi boya). **A.** K1, K3.
 **C008** — Env. 1964.336; Charles H. and Mary F. S. Worcester Collection. **A.** K1, K2, K3.
 **C009** — AIC, Gallery 201, On View; Painting and Sculpture of Europe. **A.** K1, K2.
-**C010** — AIC'nin en büyük, en iddialı eseri; 1964'ten beri ziyaretçi favorisi. **A.** K1.
+**C010** — Caillebotte'un en büyük, en iddialı eseri; 1964'ten beri ziyaretçi favorisi. **A.** K1.
 **C011** — CC0 / kamu malı (is_public_domain=true; WD P6216=Q19652; Commons PD). **A.** K1, K2, K6, K7.
 **C012** — Konu: yağmurlu Paris kavşağı; bugün Place de Dublin — kavşak Caillebotte yaşarken adsızdı, gayriresmî "carrefour de la rue de Moscou", resmî ad Ocak 1987. **A.** K3 (fn; Wilson-Bareau 1998, p.187 n.63).
 **C013** — Bakış açısı rue de Turin'den rue de Saint-Pétersbourg yönüne; Turin/Moscou kavşağı; 8. arrondissement; Gare Saint-Lazare çevresi; aile evi 77 rue de Miromesnil "only a few blocks away". **A.** K3.
