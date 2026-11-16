@@ -2337,3 +2337,12 @@ anahtarı hep durur: hareket açıkken simge okra diskte (`aria-pressed="true"`,
 Dokununca hareket kapanır ya da (gerekirse iOS izni istenerek) açılır; seçim Ayarlar'daki "Telefonu eğince tablo oynasın" ayarına yazılır.
 Hareket azaltma açıksa ya da cihazda algılayıcı yoksa anahtar görünmez. `js/egim.js` bu düğmenin dokunuşunu artık yönetmez
 (`data-egim-anahtar`); Pekiştir ve sergi duvarındaki düğmeler eskisi gibi. Test: `tests/e2e/egim.spec.js`.
+
+### İş 183 · Bugün'de Hayatı bölümü aşağı kaydırılınca başa geri çekmez (sürüm 1.82.3)
+
+Emre: "bu kısımda aşağı inmeye çalışınca yine bu kısma geri geliyor". Bugün yürüyüşünde sayfa adımlara zorunlu oturuyor
+(`scroll-snap-type: y mandatory`); son bölüm (Hayatı + "Resmi gezdin" + bugünkü tur) ekrandan uzun olduğu için iOS parmak kalkınca
+bölümün başına geri çekiyordu. Şimdi `js/yuruyus.js` kaydırırken Hayatı bölümünün üst kenarına bakar: başına varılınca `html`'e
+`yur-serbest` sınıfı konur ve adımlara oturma kapanır (bölüm serbestçe okunur); bölümün başının üstüne çıkınca sınıf kalkar, adımlar
+eskisi gibi oturur. Test: `tests/e2e/gunun.spec.js` (İş 183). Bugünkü tur kartı ve sanatçı bağlantılarının yeni tasarımı Emre'nin
+seçimini bekliyor (üç öneri: A Deste, B Halka, C Kitap sayfası).

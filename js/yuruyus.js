@@ -250,9 +250,22 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     kok0.classList.toggle('yuruyus-icinde', hedef > 0.5 && asma < 0.5 && !y.yukari);
     y.kare = requestAnimationFrame(kare);
   }
+  // İş 183 (Emre: "aşağı inmeye çalışınca yine bu kısma geri geliyor"): Hayatı bölümü ekrandan uzun; sayfa adımlara
+  // zorunlu oturduğu için (y mandatory) iOS parmak kalkınca bölümün başına geri çekiyordu. Bölümün başına varınca
+  // oturma kapanır, bölüm serbestçe okunur; yukarı, bölümün başının üstüne çıkınca adımlara oturma geri gelir.
+  const hayatBolumu = akis.querySelector('.yur-hayat');
+  function serbestMi() {
+    if (!hayatBolumu) return;
+    const ust = hayatBolumu.getBoundingClientRect().top;
+    kok0.classList.toggle('yur-serbest', ust <= 2);
+  }
   const kaydi = () => {
-    if (etkin !== y) return window.removeEventListener('scroll', kaydi);
+    if (etkin !== y) {
+      kok0.classList.remove('yur-serbest');
+      return window.removeEventListener('scroll', kaydi);
+    }
     if (!kok.isConnected) return;
+    serbestMi();
     const fark = window.scrollY - y.sonY;
     if (Math.abs(fark) > 6) {
       y.yukari = fark < 0;

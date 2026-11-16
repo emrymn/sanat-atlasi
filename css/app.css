@@ -15397,6 +15397,10 @@ html:has(.bugun-yuruyus) body {
 html.yur-suzulus {
   scroll-snap-type: none !important;
 }
+/* İş 183: Hayatı bölümü (ekrandan uzun) içindeyken adımlara oturma kapalı; yoksa iOS bölümün başına geri çekiyordu */
+html.yur-serbest:has(.bugun-yuruyus) {
+  scroll-snap-type: none;
+}
 .yur-akis[data-suzul] {
   pointer-events: none;
   will-change: opacity, transform;
