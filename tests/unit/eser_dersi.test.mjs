@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
-import { yayinAl, dersDurumu, dersGorunurMu, dersKlasoru, dersYolu, mdHtml, satirIci, kanitDizini, sorulariAl, temizle, kunyeKartiMi, kartlariAl } from '../../js/eserDersi.js';
+import { yayinAl, dersDurumu, dersGorunurMu, dersKlasoru, dersYolu, mdHtml, satirIci, kanitDizini, sorulariAl, temizle } from '../../js/eserDersi.js';
 
 const oku = (yol) => JSON.parse(readFileSync(new URL(`../../${yol}`, import.meta.url), 'utf8'));
 const KLASORLER = readdirSync(new URL('../../basyapit-dersleri/eserler/', import.meta.url));
@@ -83,17 +83,4 @@ test('temizle: kanıt etiketi, (belirsiz)/(yorum), "bu oturumda" cümlesi, küny
   assert.match(t, /Bu pano ünlüdür\./);
   assert.match(t, /## Ne görüyoruz/);
   assert.match(t, /Bir cümle\. Son\./);
-});
-
-test('kartlar: künye kartları atılır; gerçek derslerde her eserin en az bir kartı kalır', () => {
-  assert.equal(kunyeKartiMi('Künye?'), true);
-  assert.equal(kunyeKartiMi('Eser, sanatçı, tarih, teknik, boyut, yer?'), true);
-  assert.equal(kunyeKartiMi('İmza ve ayna?'), false);
-  let bos = 0;
-  for (const k of KLASORLER) {
-    const l = kartlariAl(oku(`basyapit-dersleri/eserler/${k}/SORULAR.json`));
-    assert.ok(l.every((x) => x.soru && x.cevap && !/\[C\d/.test(x.cevap)), k);
-    if (!l.length) bos++;
-  }
-  assert.equal(bos, 0);
 });

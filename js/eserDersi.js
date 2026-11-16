@@ -37,7 +37,7 @@ export function dersYolu(klasor, dosya) {
   return `${DERS_KOKU}${klasor}/${dosya}`;
 }
 
-// ---------- Ders metni ve kartlar: ekranda gösterilecek hâl (İş 185) ----------
+// ---------- Ders metni: ekranda gösterilecek hâl (İş 185) ----------
 // Modelin çalışma notlarını ayıkla: kanıt etiketleri, (belirsiz)/(yorum)/(tartışma), "bu oturumda" cümleleri, künye blokları
 const ATLA = /kimlik|etkinlik|kanıt|kaynak|sınır|kalite|öğrenme/i;
 export function temizle(md) {
@@ -65,18 +65,6 @@ export function temizle(md) {
     bolumler.push(s);
   }
   return bolumler.join('\n');
-}
-// Künye kartları ("Künye?", "Eser, sanatçı, tarih, yer?") gösterilmez: Emre kararı, yer/tarih ezberi istenmiyor
-const KUNYE_KELIME = /(sanatçı|tarih|teknik|boyut|\byer\b|müze|kurum|envanter|nerede|ne zaman)/gi;
-export function kunyeKartiMi(soru) {
-  if (/künye|kimlik/i.test(soru)) return true;
-  return new Set((String(soru).match(KUNYE_KELIME) || []).map((x) => x.toLocaleLowerCase('tr'))).size >= 2;
-}
-export function kartlariAl(json) {
-  return (json && Array.isArray(json.tekrar_kartlari) ? json.tekrar_kartlari : [])
-    .filter((k) => k && typeof k.on === 'string' && typeof k.arka === 'string')
-    .map((k) => ({ soru: temizle(k.on).trim(), cevap: temizle(k.arka).trim() }))
-    .filter((k) => k.soru && k.cevap && !kunyeKartiMi(k.soru));
 }
 
 // ---------- Markdown → HTML (derslerde geçen yapılar: başlık, paragraf, liste, tablo, çizgi, alıntı) ----------

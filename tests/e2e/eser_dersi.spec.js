@@ -21,7 +21,7 @@ test('onaylanmamış ders görünmez: başyapıt sayfasında giriş yok, adres d
   await expect(page.locator('[data-test="eser-dersi"]')).toHaveCount(0);
 });
 
-test('ders: giriş → kısa okuma (etiketsiz) → daha fazlası → kartlar; künye kartı ve Bildim/Bilemedim yok', async ({ page, context }) => {
+test('ders: giriş → kısa okuma (etiketsiz) → daha fazlası; kart bölümü yok', async ({ page, context }) => {
   await agiHazirla(context);
   await kapiVer(context, [K]);
   await page.goto(`./#/basyapit/${K}`);
@@ -35,17 +35,8 @@ test('ders: giriş → kısa okuma (etiketsiz) → daha fazlası → kartlar; k�
   await expect(ders.locator('[data-uzun]')).toBeHidden();
   await ders.locator('[data-fazla]').click();
   await expect(ders.locator('[data-uzun]')).toBeVisible();
+  await expect(ders).not.toContainText('Kart');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await ders.locator('[data-sekme="kart"]').click();
-  const kart = ders.locator('[data-test="ders-kart"]');
-  await expect(kart).toBeVisible();
-  await expect(ders.locator('.drsx-kart-ust')).toContainText('Kart 1 /');
-  await expect(kart).not.toContainText('Künye');
-  await ders.locator('.drsx-alt [data-cevir]').click();
-  await expect(ders.locator('[data-test="kart-cevap"]')).toBeVisible();
-  await expect(ders.getByRole('button', { name: /Bildim|Bilemedim/ })).toHaveCount(0);
-  await ders.locator('.drsx-alt [data-sonraki]').first().click();
-  await expect(ders.locator('.drsx-kart-ust')).toContainText('Kart 2 /');
   // geri: başyapıt sayfası
   await page.locator('[data-geri]').click();
   await expect(page.locator('[data-test="basyapit"]')).toBeVisible();
