@@ -1,0 +1,32 @@
+[
+ {
+  "eser_id": "Q27978197",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Putto/Cupid transkripsiyon tahminidir; KHM Knabe der.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "yanında küçük nesneler (transkripsiyon: kırık ok + kırmızı elma; Steckenpferd kimliği dewiki'den, görselden kesin değil)",
+  "aciklama": "CS07'nin D yanlış-gerekçesi 'Putto/Cupid' kimliğini transkripsiyon tahmini diye sunuyor; kayıtlı transkripsiyon (C018) çocuk için böyle bir tahmin yapmaz, yalnızca kırık ok ve kırmızı elma nesnelerini bildirir.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q285392",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır.",
+  "dosya_2": "DERS.json",
+  "alinti_2": "Tarih c. 1427–1432 (Met); wiki c. 1422–1432; WD 1500 (yüzyıl) güvenilmez; imzasız/tarihsiz.",
+  "aciklama": "CS02'nin 1600 şıkkının yanlış-gerekçesi yanlış olgu söylüyor: Bosch 1516'da öldü, Dünyevi Zevkler Bahçesi c. 1490–1510 tarihlenir, 1600 değil.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q285392",
+  "tur": "E",
+  "dosya_1": "DERS_ORTA.md",
+  "alinti_1": "açık gökyüzü ile sokak sahnesinin bakış açısı uyumsuzdur",
+  "dosya_2": "DERS_ILERI.md",
+  "alinti_2": "açık gökyüzü ile sokak sahnesinin bakış açısı uyumuna dayanır",
+  "aciklama": "Aynı Campbell eleştirisinin gökyüzü–sokak bakış açısı dayanağı iki derste ters anlatılıyor: ORTO uyumsuzdur der, İLERI eleştirinin uyuma dayandığını yazar.",
+  "onem": "DÜŞÜK"
+ }
+]
