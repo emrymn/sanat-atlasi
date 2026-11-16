@@ -1,0 +1,32 @@
+[
+ {
+  "eser_id": "Q2317837",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "1879'a kadar Haskett Smith (Troweswell, Goudhurst); 9 Mayıs 1896 Christie's (Londra) müzayedesi, lot 78",
+  "dosya_2": "DERS.json",
+  "alinti_2": "by 1879 H. Haskett Smith (Troweswell, Goudhurst); 9 May 1896 Christie's lot 78",
+  "aciklama": "İleri dersi, DIA zincirindeki 'by 1879' nitelemesini (Smith 1879'a gelindiğinde sahibidir; mülkiyet 1896 satışına dek sürer) '1879'a kadar' diye (mülkiyet 1879'da sona erer) aktarır; DERS.json aynı kaydı 'by 1879' verir. Aynı sahiplik olayı zıt yönlerde kurulur: İleri'ye göre 1879–1896 arası sahibi belirsiz kalır, DERS.json zincirine göre Smith 1896 satışına dek sahiptir. İleri, kayıtta 'by' kuşku işareti bulunduğunu bir sonraki cümlede kendisi belirtir; SORULAR.json AU04 beklenen ögesi de 'by 1879 Haskett Smith'tir.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q2317837",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Kasım 1947'ye kadar Roland, Browse and Delbanco (Londra); 1950–1955 Durlacher Brothers (New York)",
+  "dosya_2": "DERS.json",
+  "alinti_2": "by November 1947 Roland, Browse and Delbanco (Londra); 1950–1955 Durlacher Bros. (New York)",
+  "aciklama": "Aynı yön hatası: DERS.json'daki 'by November 1947' (Roland, Browse and Delbanco Kasım 1947'ye gelindiğinde sahibidir; 1950'deki Durlacher dönemine dek elinde tutar) İleri'de 'Kasım 1947'ye kadar' (mülkiyet Kasım 1947'de biter) olarak geçer; İleri anlatımında 1947–1950 arası hayalet sahiplik boşluğu doğar.",
+  "onem": "DÜŞÜK"
+ },
+ {
+  "eser_id": "Q2472983",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "Işık varlıkları hem belirir hem maddesiz kalır; izleyici yaklaştıkça katılaşan, uzaklaştıkça dağılan bir beliriş deneyimler [C045][C027].",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Çağdaş izleyiciler, yakından bakıldığında bitmemiş görünen resimlerin uzaklaştıkça tam plastik sahnelere dönüştüğünü fark etmiştir",
+  "aciklama": "Aynı eserin mesafe etkisi zıt yönde anlatılıyor: İleri ders §7 izleyici yaklaştıkça belirişin katılaştığını, uzaklaştıkça dağıldığını yazar; Orta ders §6 (ve İleri §5 ile §7'deki FU Berlin cümlesi 'katılık yakınlıkla çözülür') tersini söyler — yakından bitmemiş/eskiz görünür, uzaklaştıkça tam plastik sahneye dönüşür.",
+  "onem": "ORTA"
+ }
+]
