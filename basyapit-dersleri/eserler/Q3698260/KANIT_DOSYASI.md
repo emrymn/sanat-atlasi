@@ -75,7 +75,7 @@
 
 **C023** — Franciscan idealleri (sadelik, doğalcılık, hümanizm) Bizans'ın "ölümde bile yenilmez Christ"ine karşı yeni değerler enjekte etti; her iki çarmıh da Franciscan siparişi. Kaynak: K1. **B.**
 
-**C024** — Arezzo çarmıhı (c. 1268–1271) Cimabue'ye atfedilen iki çarmıhın daha erken olanıdır. Kaynak: K1. **B.**
+**C024** — Arezzo çarmıhı (c. 1268–1271) Cimabue'ye atfedilen iki çarmıhın daha erken olanıdır (K1; bu dersin c.1265 tarihlemesiyle çelişir, sıralama belirsiz). Kaynak: K1. **B.**
 
 **C025** — K1'in resepsiyon iddiası: eser Michelangelo, Caravaggio, Velázquez ve Francis Bacon'a kadar ressamları etkiledi (kaynağın etki iddiası, bu dosyada bağımsız doğrulanmadı). Kaynak: K1. **B** (aktarım; etki iddiası kaynaklı).
 

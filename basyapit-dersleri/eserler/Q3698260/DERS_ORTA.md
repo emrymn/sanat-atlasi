@@ -12,7 +12,7 @@ Cimabue'ye atfedilen Santa Croce Çarmıhı (İtalyanca *Crocifisso di Santa Cro
 
 ## 2. Tarihsel bağlam
 
-Çarmıh, Santa Croce'nin Franciscan friarları tarafından sipariş edildi [C009]. Assisi'li Franciscus'un kurduğu tarikat, ölümünden sonraki yüzyılda görsel sanatları derinden etkiledi: yoksulluk, sadelik ve doğa sevgisi, Bizans'ın gösterişli, yenilmez Christ imgesine karşı yeni bir insanlık ve doğalcılık getirdi [C023]. Cimabue'nun günümüze ulaşan iki büyük çarmıhı da Franciscan siparişidir; diğeri Arezzo'dadır (c. 1268–1271, daha erken) [C009][C024]. Santa Croce çarmıhı, boyutu nedeniyle başlangıçta koro perdesinin (rood screen) üstüne asılmış olmalı; sonra kuzey transept, sakristi ve güney giriş yanına taşındı [C011].
+Çarmıh, Santa Croce'nin Franciscan friarları tarafından sipariş edildi [C009]. Assisi'li Franciscus'un kurduğu tarikat, ölümünden sonraki yüzyılda görsel sanatları derinden etkiledi: yoksulluk, sadelik ve doğa sevgisi, Bizans'ın gösterişli, yenilmez Christ imgesine karşı yeni bir insanlık ve doğalcılık getirdi [C023]. Cimabue'nun günümüze ulaşan iki büyük çarmıhı da Franciscan siparişidir; diğeri Arezzo'dadır (c. 1268–1271; K1 onu daha erken sayar, ama bu ders Santa Croce'yi c.1265'e tarihler) [C009][C024]. Santa Croce çarmıhı, boyutu nedeniyle başlangıçta koro perdesinin (rood screen) üstüne asılmış olmalı; sonra kuzey transept, sakristi ve güney giriş yanına taşındı [C011].
 
 Boyalı çarmıh (croce dipinta), Orta Çağ İtalya'sına özgü bir türdür: sunağın üstüne, koro perdesine asılan, cemaatin bakışını kesen dev bir çarmıh. Bu, bir "duvar resmi" değildir; mekânın ortasında duran, izleyicinin bedenine göre ölçeklenen bir nesnedir. Franciscan kiliselerinde bu çarmıhlar, cemaatin İsa'nın acısına odaklanmasını sağlayan bir meditasyon odağıydı. Santa Croce çarmıhının dev boyutu ve acı vurgusu, bu işlevle uyumludur: izleyici, çarmıhın altında durur, yukarı bakar ve acıya tanıklık eder (bu işlevsel yorum, türün genel bağlamına dayanır).
 
@@ -50,7 +50,7 @@ Distemper, yağlıboyadan farklı bir çalışma mantığı gerektirir: hızlı 
 
 ## 8. Karşılaştırmalı analiz
 
-- **Cimabue, Arezzo Çarmıhı (c. 1268–1271) [C024]:** aynı sanatçının daha erken çarmıhı; Santa Croce'daki beyaz peştamala karşı Arezzo'da kırmızı giysi vardır. İkisi, Cimabue'nun gelişimini ve Christus patiens ikonografisinin evrimini gösterir [C024] (karşılaştırma; Arezzo ayrıntısı K1'de).
+- **Cimabue, Arezzo Çarmıhı (c. 1268–1271) [C024]:** aynı sanatçının diğer büyük çarmıhı (K1 onu daha erken sayar; bu dersin c.1265 tarihlemesiyle sıralama belirsizdir); Santa Croce'daki beyaz peştamala karşı Arezzo'da kırmızı giysi vardır. İkisi, Cimabue'nun gelişimini ve Christus patiens ikonografisinin evrimini gösterir [C024] (karşılaştırma; Arezzo ayrıntısı K1'de).
 - **Giunta Pisano, çarmıhlar:** Santa Croce'nun acı vurgulu Christ'i, Giunta Pisano'nun erken çarmıhlarından etkilenmiş olabilir (K1 hipotezi). Karşılaştırma değişkeni: acının grafikleşme derecesi (yorum).
 - **Giotto, Ağıt (müfredat #6) / Santa Maria Novella Çarmıhı:** Cimabue'nun erken doğalcılığı, Giotto'nun daha ileri hacim/mekân/duygu arayışının zeminidir (yorum; genel geçiş çerçevesi).
 

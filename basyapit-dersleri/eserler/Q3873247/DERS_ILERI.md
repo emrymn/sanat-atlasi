@@ -14,7 +14,7 @@ Bu programın teolojik boyutu derindir: Meryem, Siena'nın "koruyucu annesi"dir;
 
 ## 2. Siena döngüsü: bir kamusal program
 
-Eser, Siena Katedrali'nin St. Sabinus sunağı için yapıldı [C007]. Ama tek başına değil: 1330–1350 arasında, şehrin koruyucu azizlerine (Ansanus, Sabinus, Crescentius, Victor) adanmış dört sunaklık bir döngünün parçasıydı [C008]. Bu döngüde Martini/Memmi'nin Müjde'si, Ambrogio Lorenzetti'nin Tapınakta Sunum'u (1342), Bulgarini'nin Doğum'u (1351) vardı; tümü Meryem'in Hayatı'nı anlatıyor ve Duccio'nun Maestà'sı tarafından taçlandırılıyordu [C009][C010].
+Eser, Siena Katedrali'nin St. Sabinus sunağı için yapıldı [C007]. Ama tek başına değil: 1330–1350 arasında, şehrin koruyucu azizlerine (Ansanus, Sabinus, Crescentius, Victor) adanmış dört sunaklık bir döngünün parçasıydı [C008]. Bu döngüde Martini/Memmi'nin Müjde'si, Ambrogio Lorenzetti'nin Tapınakta Sunum'u (1342), Bulgarini'ye atfedilen Doğum (1351) vardı; tümü Meryem'in Hayatı'nı anlatıyor ve Duccio'nun Maestà'sı tarafından taçlandırılıyordu [C009][C010].
 
 Bu, bir "sanat programı"dır: şehir, kutsal kimliğini sistematik bir görsel anlatıyla kurar. Meryem, Siena'nın koruyucusudur; onun hayatı, şehrin kutsal tarihini oluşturur. Dört sunak, bu tarihin dört anını sunar; Maestà ise taç. Seminer sorusu: bir eser, tek başına mı, yoksa bir programın parçası olarak mı anlam taşır? Bu panel, ikincisi için tasarlanmıştır: St. Sabinus sunağında, döngünün bir halkası olarak. Bugün müzede tek başına sergilendiğinde [C006], o program bağlamı kısmen kaybolur.
 
@@ -104,7 +104,7 @@ Yöntem uyarısı: karşılaştırma, karşılaştırılan eserin kendi kanıt d
 | Mekânsal yenilik (C011/C014) | "Dönem için olağandışı" (K1) | K1 değerlendirmesi; görsel süreklilik doğrulandı |
 | Kakmalı nesne (C017) | Sancak ↔ çalgı (K1 "perhaps") | Belirsiz; yorum |
 | Perspektif (C012) | "Kaba geometrik perspektif" (K1) | Matematiksel değil sezgisel; genel çerçeve |
-| Envanter/boyut | Birincil müze kaydı erişilemedi | Boyut K1/K2 uyumlu (187×182); envanter E |
+| Envanter/boyut | Birincil müze kaydı erişilemedi | Boyut 187×182 (K2); K1 182×187 verir, sıra farklı ve hangi değerin yükseklik olduğu K1'de belirsiz; envanter E |
 
 **Açık boşluklar (dürüstlük beyanı):** Museo dell'Opera del Duomo resmî kataloğu ve envanter numarası, De Vecchi & Cerchiari (1999) metni bu oturumda açılmadı. Bunlar birincil doğrulama için sonraki adımın hedefidir. Mevcut maddeler kaynaklı İngilizce Vikipedi (B) + Wikidata + doğrudan görsel (A) üzerine kuruludur.
 

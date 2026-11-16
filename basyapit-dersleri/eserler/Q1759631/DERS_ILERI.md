@@ -68,7 +68,7 @@ Giornata analizi, otograflık sorusunun teknik anahtarıdır: günlük parçalar
 
 **Yasa ve lütuf (yorum).** Vergi sahnesi, yasa (dünyevi otorite) ile lütuf (mucize) arasındaki gerilimi kurar: İsa, yasaya boyun eğmez ama skandaldan kaçınır; lütuf, yasayı "ödünç" öder (yorum) [C024]. Seminer sorusu: bir mucize, nasıl bir "politik jest" olur? Burada mucize, dünyevi düzeni sarsmadan aşar (yorum).
 
-**Yasa, lütuf, politika (yorum).** Vergi sahnesi, üç otoriteyi karşı karşıya getirir: Roma (memur), Musa (fidye), İsa (lütuf). İsa, yasayı aşmaz ama lütufla öder; bu, bir "politik teoloji"dir (yorum) [C024]. Seminer sorusu: lütuf, yasayı nasıl "ödünç" öder? Burada mucize, düzeni sarsmadan aşar (yorum). Bu okuma, K2'nin fidye yorumunun felsefi genişletmesidir; kurum dışıdır ve editör onayı gerektirir (yorum) [C024].
+**Yasa, lütuf, politika (yorum).** Vergi sahnesi, üç öğeyi karşı karşıya getirir: vergi memuru, Musa'nın fidyesi (K2'ye göre vergi Romalı değildir) ve İsa'nın lütfu. İsa, yasayı aşmaz ama lütufla öder; bu, bir "politik teoloji"dir (yorum) [C024]. Seminer sorusu: lütuf, yasayı nasıl "ödünç" öder? Burada mucize, düzeni sarsmadan aşar (yorum). Bu okuma, K2'nin fidye yorumunun felsefi genişletmesidir; kurum dışıdır ve editör onayı gerektirir (yorum) [C024].
 
 **Mucize ve ekonomi (yorum).** Balıktan çıkan para, lütfun ekonomisidir: ihtiyaç, mucizeyle karşılanır ama mucize, düzeni bozmaz (yorum) [C024]. İsa, vergiyi reddetmez; öder ama ilahi kaynakla. Bu, "dünya içinde ama dünyadan değil" duruşunun görsel ifadesidir (yorum). Seminer sorusu: lütuf, ekonomiyi nasıl "askıya alır"? Burada para, hem dünyevi hem ilahi bir nesnedir (yorum) [C024].
 

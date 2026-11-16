@@ -50,7 +50,7 @@
 
 **C012** — Pano üçgen alınlı (cuspidata) biçimdedir; ortada ayakta, tam boy Franciscus. Kaynak: K1, K3 (görsel: gabled/pointed top, central standing figure). **A** (biçim doğrudan).
 
-**C013** — Franciscus kapüşonlu saio (keçe hırka) giyer; belinde üç düğümlü kordon; sol elde İncil, sağ el kutsama + stigmata gösterir. Kaynak: K1, K3 (görsel: hood, cord, book, blessing hand). **B** (stigmata görselde kısmi).
+**C013** — Franciscus kapüşonlu saio (keçe hırka) giyer; belinde üç düğümlü kordon; sol elde kitap (muhtemelen İncil), sağ el kutsama + stigmata gösterir. Kaynak: K1, K3 (görsel: hood, cord, book, blessing hand). **B** (stigmata görselde kısmi).
 
 **C014** — Kordondaki üç düğüm, friarların üç yeminini simgeler: itaat, iffet, yoksulluk (obbedienza, castità, povertà). Kaynak: K1. **B.**
 

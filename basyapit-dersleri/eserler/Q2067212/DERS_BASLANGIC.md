@@ -17,7 +17,7 @@ Bu fresk, İsa'nın çarmıhtan indirildikten sonraki anını gösterir: beden y
 
 ## Ne görüyoruz
 
-Alt solda İsa yatay uzanır; mavi giysili Meryem yüzünü oğlunun yüzüne yaklaştırır [C020]. Ayaklarında uzun saçlı Magdalene [C020]. Yuhanna, kollarını umutsuzlukla iki yana açmış, geriye doğru eğilir [C010][C020]. Sağda iki sakallı adam — Nikodemus ve Arimatealı Yusuf — bedeni mezara hazırlamak için bekler [C011]. Önde, sırtları bize dönük iki büyük figür oturur [C013][C020]. Yukarıda, derin mavi gökte melekler dalıyor, kollarını açıyor, yüzlerini kapatıyor [C021]. Sağ üstte yapraksız, kurumuş bir ağaç; kaya yamacı sol-aşağı, anne-oğul kucaklaşmasına doğru iner [C022].
+Alt solda İsa yatay uzanır; mavi giysili Meryem yüzünü oğlunun yüzüne yaklaştırır [C020]. Ayaklarında uzun saçlı Magdalene [C020]. Yuhanna öne eğilmiş, kollarını umutsuzlukla geriye açmıştır [C010][C020]. Sağda iki sakallı adam — Nikodemus ve Arimatealı Yusuf — bedeni mezara hazırlamak için bekler [C011]. Önde, sırtları bize dönük iki büyük figür oturur [C013][C020]. Yukarıda, derin mavi gökte melekler dalıyor, kollarını açıyor, yüzlerini kapatıyor [C021]. Sağ üstte yapraksız, kurumuş bir ağaç; kaya yamacı sol-aşağı, anne-oğul kucaklaşmasına doğru iner [C022].
 
 Renkler pasteldir: pembe, yeşil, mavi, krem; gökyüzü derin mavidir [C017][C021]. Bordür, sahneyi bir çerçeve gibi sarar [C023].
 

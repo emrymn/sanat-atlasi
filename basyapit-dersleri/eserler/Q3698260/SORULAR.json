@@ -260,31 +260,31 @@
   },
   {
    "id": "CS09",
-   "soru": "Cimabue'ye atfedilen diğer büyük çarmıh nerede ve hangisi daha erken?",
+   "soru": "Cimabue'ye atfedilen diğer büyük çarmıh nerededir?",
    "secenekler": [
     {
      "harf": "A",
-     "metin": "Arezzo, daha erken"
+     "metin": "Arezzo"
     },
     {
      "harf": "B",
-     "metin": "Assisi, daha geç"
+     "metin": "Assisi"
     },
     {
      "harf": "C",
-     "metin": "Padova, aynı"
+     "metin": "Padova"
     },
     {
      "harf": "D",
-     "metin": "Siena, daha erken"
+     "metin": "Siena"
     }
    ],
    "dogru": "A",
-   "gerekce": "K1: Arezzo çarmıhı (c.1268–1271) iki çarmıhın daha erken olanı.",
+   "gerekce": "K1: Cimabue'nun günümüze ulaşan iki büyük çarmıhından diğeri Arezzo'dadır (c.1268–1271).",
    "yanlis_gerekceleri": {
-    "B": "Assisi değil; Arezzo daha erken.",
-    "C": "Padova, aynı doğru yanıt değildir; doğru yanıt Arezzo, daha erken.",
-    "D": "Siena, daha erken doğru yanıt değildir; doğru yanıt Arezzo, daha erken."
+    "B": "Assisi doğru yanıt değildir; doğru yanıt Arezzo.",
+    "C": "Padova doğru yanıt değildir; doğru yanıt Arezzo.",
+    "D": "Siena doğru yanıt değildir; doğru yanıt Arezzo."
    },
    "kanit": [
     "C024"

@@ -241,7 +241,7 @@
     },
     {
      "harf": "C",
-     "metin": "Gözler kapalı"
+     "metin": "Gözler yukarı bakar"
     },
     {
      "harf": "D",
@@ -252,7 +252,7 @@
    "gerekce": "K2/K3: yüz, açıya göre izleyiciyi \"takip eder\".",
    "yanlis_gerekceleri": {
     "A": "Sabit bakış perspektif etkisini kaçırır; kaynak yüzün izleyiciyi takip ettiğini söyler.",
-    "C": "Gözler kapalı değildir; yüz izleyiciye yöneliktir.",
+    "C": "Gözler yukarı bakmaz; kaynak yüzün açıya göre izleyiciyi takip ettiğini söyler.",
     "D": "Yana dönük değildir; bakış izleyiciyi takip eder."
    },
    "kanit": [

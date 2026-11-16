@@ -20,7 +20,7 @@ K2 (enwiki REST), K3 (itwiki REST), K4 (WD), K5 (Commons 1400px), K6 (polomuseal
 - Hortus conclusus; jest aynası; orta sütun; yazıt VIRGINIS INTACTAE... ✓ (K2/K3).
 - Düşük ışık; tadilat → "otantik değil"; koyu=tefekkür ✓ (K2).
 - Diyagonal; kaçış noktası portiko; İyon+Korint başlıklar; boyut 230×321 ✓ (K3).
-- **Sınır:** K6 resmî föy HTTP 522 → erişilemedi (C026 E); boyut WD 297↔K3 321 uzlaşmaz (C005 E); WD tarih 1500 güvenilmez; K5 vision bütçesi tükendi → İNCELENEMEDİ (C027 E).
+- **Sınır:** K6 resmî föy HTTP 522 → erişilemedi (C026 E); boyut WD 297↔K3 321 uzlaşmaz (C005 E); WD tarihi yalnız yüzyıl düzeyinde (15. yy); K5 vision bütçesi tükendi → İNCELENEMEDİ (C027 E).
 
 **Erişilemeyen/erişilmeyen:** resmî föy; Hood/Damiani/Craven/Pope-Hennessy/Cornini. İnsan editör teyidi gerekli.
 
@@ -44,7 +44,7 @@ Commons 1400px indirildi; **vision bütçesi tükendi → incelenemedi.** Görse
 
 1. **Görsel teyit (C027):** bu oturumda yapılamadı; insan editör zorunlu.
 2. Resmî föy (K6, 522) → boyut/envanter teyidi (C005/C026 E).
-3. Tarih aralığı (c.1440–1445 ↔ 1450+); WD 1500 reddedildi.
+3. Tarih aralığı (c.1440–1445 ↔ 1450+); WD yalnız yüzyıl düzeyinde, tek yıl olarak kullanılmadı.
 4. Sütun orderi (Composite ↔ İyon+Korint) ve Alberti/Roma bağlantısı (B yorum).
 5. Felsefi yorumlar (İleri §7: performatif yazıt, karşılaşma estetiği, James alımlaması) kurum dışı; editör onayı şart.
 6. data tarih/boyut/müze önerileri KANIT §5'te; data/ dokunulmadı.

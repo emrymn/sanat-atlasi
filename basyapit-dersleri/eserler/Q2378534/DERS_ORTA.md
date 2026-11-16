@@ -4,7 +4,7 @@
 
 ## 1. Kimlik
 
-Müjde, Fra Angelico'nun San Marco Manastırı'ndaki fresklerinden biridir; kuzey koridorunda, merdiven tepesinde durur [C006]. Tarih c.1440–1445 (K2); itwiki 1440 ile 1450+ (Roma dönüşü) arasında salınır; WD'nin 1500'ü güvenilmez [C003]. Boyut WD'de 230×297, itwiki'de 230×321 — uzlaşmaz (belirsiz) [C005]. Resmî katalog föyü (polomuseale) erişilemedi (HTTP 522); bu yüzden kimlik çekirdeği ikincil kaynaklara dayanır (belirsiz) [C026]. Eser in situ'dir: manastır, bugün Museo Nazionale di San Marco'dur ama fresk duvarındadır [C006]. Cosimo de' Medici, manastırı yeniden yaptırıp Angelico'ya ~50 fresklik bir program sipariş etti; hepsi Angelico veya doğrudan gözetiminde [C007].
+Müjde, Fra Angelico'nun San Marco Manastırı'ndaki fresklerinden biridir; kuzey koridorunda, merdiven tepesinde durur [C006]. Tarih c.1440–1445 (K2); itwiki 1440 ile 1450+ (Roma dönüşü) arasında salınır; WD yalnız yüzyıl düzeyinde (15. yy) tarih verir [C003]. Boyut WD'de 230×297, itwiki'de 230×321 — uzlaşmaz (belirsiz) [C005]. Resmî katalog föyü (polomuseale) erişilemedi (HTTP 522); bu yüzden kimlik çekirdeği ikincil kaynaklara dayanır (belirsiz) [C026]. Eser in situ'dir: manastır, bugün Museo Nazionale di San Marco'dur ama fresk duvarındadır [C006]. Cosimo de' Medici, manastırı yeniden yaptırıp Angelico'ya ~50 fresklik bir program sipariş etti; hepsi Angelico veya doğrudan gözetiminde [C007].
 
 Resmî föyün erişilememesi (522), boyut ve envanteri belirsiz bırakır; insan editörün birincil arşiv kontrolü gerekir (belirsiz) [C026][C005]. Bu, in situ manastır fresklerinin tipik kanıt sınırıdır (yorum).
 

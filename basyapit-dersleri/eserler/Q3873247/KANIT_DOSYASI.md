@@ -106,4 +106,4 @@
 
 1. `data` Q3873247 `tarih: "1342"` → c. 1335–1342 aralığı (WD 1335+1342); "y. 1342" veya aralık önerilir.
 2. `muze: "Siena Katedrali'nden; Museo dell'O..."` → doğru: Museo dell'Opera del Duomo, Siena (orijinal Katedral St. Sabinus sunağı).
-3. Boyut 187×182 (K1/K2 uyumlu); teknik tempera/pano.
+3. Boyut 187×182 (K2; K1 182×187 verir, sıra farklı, K1'de yükseklik belirsiz); teknik tempera/pano.

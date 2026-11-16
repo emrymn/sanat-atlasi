@@ -8,7 +8,7 @@
   "sanatci": "Fra Angelico (Beato Angelico)",
   "sanatci_yasam": "c. 1395–1455",
   "tarih": "c. 1440–1445",
-  "tarih_belirsizlik": "K2 c.1440–1445; K3 1440–1450+; WD 1500 güvenilmez (C003)",
+  "tarih_belirsizlik": "K2 c.1440–1445; K3 1440–1450+; WD yalnız yüzyıl düzeyinde (15. yy) tarih verir (C003)",
   "teknik": "Fresk",
   "boyut_cm": {
    "yukseklik": 230,
@@ -168,7 +168,7 @@
   },
   {
    "id": "C003",
-   "ifade": "Tarih: c.1440–1445 (K2); K3 1440↔1450+ (Roma dönüşü); WD 1500 güvenilmez",
+   "ifade": "Tarih: c.1440–1445 (K2); K3 1440↔1450+ (Roma dönüşü); WD yalnız yüzyıl düzeyinde (15. yy) tarih verir",
    "seviye": "B",
    "kaynak_id": [
     "K2",
@@ -504,7 +504,7 @@
   "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
  },
  "veri_notlari": [
-  "data tarihi tek yıl ise → c.1440–1445 (K2) / 1440–1450+ (K3); WD 1500 güvenilmez, kullanılmaz.",
+  "data tarihi tek yıl ise → c.1440–1445 (K2) / 1440–1450+ (K3); WD yalnız yüzyıl düzeyinde (15. yy) tarih verir; tek yıl olarak kullanılmaz.",
   "Boyut WD 230×297 ↔ K3 230×321 uzlaşmaz (C005 E); resmî föy (K6) erişilemedi → insan teyidi.",
   "Müze alanı: \"San Marco Manastırı (Museo Nazionale di San Marco), Floransa — kuzey koridoru\" önerilir.",
   "Sütun orderi K2 Composite ↔ K3 İyon+Korint; kaynak farkı not edilir.",

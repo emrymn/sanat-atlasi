@@ -12,7 +12,7 @@ Karşımızda İtalyan ressam Bonaventura Berlinghieri'nin 1235 tarihli ahşap p
 
 ## Ne görüyoruz?
 
-Panonun biçimi bir çatı gibi sivri uçlu (üçgen alınlı) [C012]. Ortada, tam boy, ayakta bir adam: Franciscus. Kahverengi, kapüşonlu bir hırka giymiş; belinde üç düğümlü beyaz bir kordon var [C013]. Sol elinde bir kitap (İncil), sağ eli kutsama hareketinde [C013]. Başının iki yanında, yuvarlak madalyonlar içinde iki melek [C015]. Azizin iki yanına, üçerli iki sütun halinde altı küçük sahne sıralanmış: hayatından ve ölümünden sonra gerçekleşen mucizelerden kesitler [C016]. Zemin altın; figürler düz ve cephesel, sanki bize bakıyorlar [C019].
+Panonun biçimi bir çatı gibi sivri uçlu (üçgen alınlı) [C012]. Ortada, tam boy, ayakta bir adam: Franciscus. Kahverengi, kapüşonlu bir hırka giymiş; belinde üç düğümlü beyaz bir kordon var [C013]. Sol elinde bir kitap (muhtemelen İncil), sağ eli kutsama hareketinde [C013]. Başının iki yanında, yuvarlak madalyonlar içinde iki melek [C015]. Azizin iki yanına, üçerli iki sütun halinde altı küçük sahne sıralanmış: hayatından ve ölümünden sonra gerçekleşen mucizelerden kesitler [C016]. Zemin altın; figürler düz ve cephesel, sanki bize bakıyorlar [C019].
 
 ## Neden bu kadar önemli?
 

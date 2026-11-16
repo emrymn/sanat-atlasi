@@ -27,7 +27,7 @@ Eser in situ (San Marco Manastırı, Floransa). **Birincil katalog erişilemedi:
 
 **C001** — Başlık: Annunciation / Annunciazione del corridoio Nord / Müjde (San Marco). **B.** K2, K3.
 **C002** — Sanatçı: Fra Angelico (Beato Angelico). **B.** K2, K3.
-**C003** — Tarih: c.1440–1445 (K2); K3 1440↔1450+ (Roma dönüşü); WD 1500 güvenilmez. **B.** K2, K3.
+**C003** — Tarih: c.1440–1445 (K2); K3 1440↔1450+ (Roma dönüşü); WD yalnız yüzyıl düzeyinde (15. yy) tarih verir. **B.** K2, K3.
 **C004** — Teknik: fresk. **B.** K2, K3.
 **C005** — Boyut: 230×297 (WD) ↔ 230×321 (K3) — uzlaşmaz. **E.** K3, K4. (belirsiz)
 **C006** — Yer: San Marco Manastırı, Floransa; kuzey koridoru, merdiven tepesi (birinci kat); in situ. **B.** K2, K3.
@@ -73,7 +73,7 @@ Eser in situ (San Marco Manastırı, Floransa). **Birincil katalog erişilemedi:
 
 ## 5. Veri notları (data/ dokunulmadı; insan onayına sunulur)
 
-1. Tarih: data tek yıl ise → c.1440–1445 (K2) / 1440–1450+ (K3) aralığı; WD 1500 güvenilmez, kullanılmaz.
+1. Tarih: data tek yıl ise → c.1440–1445 (K2) / 1440–1450+ (K3) aralığı; WD yalnız yüzyıl düzeyinde (15. yy) tarih verir; tek yıl olarak kullanılmaz.
 2. Boyut: WD 230×297 ↔ K3 230×321 uzlaşmaz (C005 E); resmî föy (K6) erişilemedi → insan teyidi.
 3. Müze alanı: "San Marco Manastırı (Museo Nazionale di San Marco), Floransa — kuzey koridoru" önerilir.
 4. Sütun orderi: K2 Composite ↔ K3 İyon+Korint; kaynak farkı not edilir.

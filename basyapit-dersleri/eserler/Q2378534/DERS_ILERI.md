@@ -4,7 +4,7 @@
 
 ## 1. Kimlik ve yöntem
 
-Bu dersin nesnesi, in situ bir manastır freskidir: San Marco, kuzey koridoru, merdiven tepesi [C006]. **Birincil katalog erişilemedi:** itwiki'nin bağladığı resmî föy (polomuseale, nctn 00297878) HTTP 522 döndürdü (belirsiz) [C026]. Kimlik çekirdeği bu yüzden ikincildir: K2 (enwiki, Hood/Damiani atıflı) ve K3 (itwiki, Pope-Hennessy/Cornini atıflı) [C025]. Tarih c.1440–1445 (K2) ↔ 1440–1450+ (K3); WD 1500 güvenilmez [C003]. Boyut 230×297 (WD) ↔ 230×321 (K3) uzlaşmaz (belirsiz) [C005]. **Görsel sınır:** vision bütçesi tükendiğinden K5 incelenemedi; betim K2/K3'ten, görsel teyit insan editöre (belirsiz) [C027]. Kanıt mimarisi: B omurga, E sınırlar (boyut, föy, görsel), A yalnız lisans [C028]. Ders, bu sınırları açık tutarak "tefekkür freski" anlatısını kanıt sınırına bağlar (yorum).
+Bu dersin nesnesi, in situ bir manastır freskidir: San Marco, kuzey koridoru, merdiven tepesi [C006]. **Birincil katalog erişilemedi:** itwiki'nin bağladığı resmî föy (polomuseale, nctn 00297878) HTTP 522 döndürdü (belirsiz) [C026]. Kimlik çekirdeği bu yüzden ikincildir: K2 (enwiki, Hood/Damiani atıflı) ve K3 (itwiki, Pope-Hennessy/Cornini atıflı) [C025]. Tarih c.1440–1445 (K2) ↔ 1440–1450+ (K3); WD yalnız yüzyıl düzeyinde (15. yy) tarih verir [C003]. Boyut 230×297 (WD) ↔ 230×321 (K3) uzlaşmaz (belirsiz) [C005]. **Görsel sınır:** vision bütçesi tükendiğinden K5 incelenemedi; betim K2/K3'ten, görsel teyit insan editöre (belirsiz) [C027]. Kanıt mimarisi: B omurga, E sınırlar (boyut, föy, görsel), A yalnız lisans [C028]. Ders, bu sınırları açık tutarak "tefekkür freski" anlatısını kanıt sınırına bağlar (yorum).
 
 Kaynak eleştirisi: K2 (enwiki) işlev ve ışıkta zengindir (tefekkür, düşük ışık, malzeme hiyerarşisi, yazıt); K3 (itwiki) biçim ve tarihte zengindir (diyagonal, başlıklar, boyut, tarih aralığı; belirsiz) [C012][C013][C019][C018][C021][C005][C003]. İki madde birbirini tamamlar; boyut ve order farkları açık tutulur (belirsiz) [C005][C017]. Resmî föy erişilemediğinden, birincil çekirdek yoktur; ders B omurga + E sınırlarla kurulur (yorum) [C026].
 
@@ -92,11 +92,11 @@ Karşılaştırmanın kanıt türleri: Gotik karşıtlığı = dış üslup yoru
 
 Envanterin eksik halkaları: resmî föy (boyut/envanter), görsel teyit (bu oturum), Hood/Damiani/Pope-Hennessy/Cornini tam metinleri, order belgesi — hepsi açık (belirsiz) [C026][C027][C025][C017]. Bu eksikler, insan editörün birincil arşiv (San Marco envanteri, polo museale katalog, teknik yayınlar) kontrolüyle kapanabilir. Seminer, her E maddesini bir arşiv sorusuna çevirir (yorum).
 
-Tarih aralığının nedeni: K3, Roma dönüşü (1450+) ihtimalini başlıklar/order üzerinden önerir; K2, 1440–1445'i tercih eder [C003][C021]. Bu, üslup-tarihleme yönteminin bir örneğidir: order ayrıntısı, kronolojiyi değiştirir (yorum). Seminer sorusu: bir ayrıntı, nasıl "tarih" olur? Burada başlık, Roma seyahatiyle bağlanınca tarih kayar (yorum) [C021]. Ders, aralığı açık tutar; WD 1500'ü reddeder (yorum) [C003].
+Tarih aralığının nedeni: K3, Roma dönüşü (1450+) ihtimalini başlıklar/order üzerinden önerir; K2, 1440–1445'i tercih eder [C003][C021]. Bu, üslup-tarihleme yönteminin bir örneğidir: order ayrıntısı, kronolojiyi değiştirir (yorum). Seminer sorusu: bir ayrıntı, nasıl "tarih" olur? Burada başlık, Roma seyahatiyle bağlanınca tarih kayar (yorum) [C021]. Ders, aralığı açık tutar; WD'nin yalnız yüzyıl düzeyindeki (15. yy) tarihini tek yıl olarak kullanmaz [C003].
 
 ## 9. Akademik tartışmaların envanteri
 
-1. **Tarih (B/E):** c.1440–1445 (K2) ↔ 1440–1450+ (K3); WD 1500 güvenilmez [C003].
+1. **Tarih (B/E):** c.1440–1445 (K2) ↔ 1440–1450+ (K3); WD yalnız yüzyıl düzeyinde (15. yy) tarih verir [C003].
 2. **Boyut (E):** 230×297 (WD) ↔ 230×321 (K3); resmî föy erişilemedi (belirsiz) [C005][C026].
 3. **Sütun orderi (B):** Composite (K2) ↔ İyon+Korint (K3) [C017].
 4. **Alberti/Roma bağlantısı (B yorum):** K3'ün atfı; belge yok (yorum) [C021].

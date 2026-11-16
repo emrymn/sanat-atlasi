@@ -63,29 +63,29 @@ Alıntıların 22'si depoda yerinde bulundu. Dosyalar depoda değil; Emre'de (`A
 
 | Bulgu | Eser | Konu | Durum |
 |---|---|---|---|
-| 001 | Q3947103 | "kitap (İncil)": kaynak "muhtemelen" diyor | Açık → Liste 02 (niteleme ekle) |
-| 002 | Q3698260 | Santa Croce c.1265 ile Arezzo c.1268–71 "daha erken" çelişkisi; SORULAR CS09 | Açık → Liste 02 |
-| 003 | duccio | 213×396 merkez panel ölçüsü "bütün sunak" diye geçiyor | Açık → Liste 02 |
-| 004 | Q3873247 | 187×182 / 182×187 sıra farkı "uyumlu" denmiş (DERS.json, KANIT, İLERİ) | Açık → Liste 02 |
-| 005 | duccio | CS09 "neden ağaca tırmanır" yorumu tek doğru cevap | Açık → Liste 02 |
-| 006 | Q3873247 | "Bulgarini'nin" → "Bulgarini'ye atfedilen" (DERS.json, İLERİ §2) | Açık → Liste 02 |
+| 001 | Q3947103 | "kitap (İncil)": kaynak "muhtemelen" diyor | **Kapandı** (Liste 02a) |
+| 002 | Q3698260 | Santa Croce c.1265 ile Arezzo c.1268–71 "daha erken" çelişkisi; SORULAR CS09 | **Kapandı** (Liste 02a) |
+| 003 | duccio | 213×396 merkez panel ölçüsü "bütün sunak" diye geçiyor | **Kapandı** (Liste 02a) |
+| 004 | Q3873247 | 187×182 / 182×187 sıra farkı "uyumlu" denmiş (DERS.json, KANIT, İLERİ) | **Kapandı** (Liste 02a) |
+| 005 | duccio | CS09 "neden ağaca tırmanır" yorumu tek doğru cevap | **Kapandı** (Liste 02a) |
+| 006 | Q3873247 | "Bulgarini'nin" → "Bulgarini'ye atfedilen" (DERS.json, İLERİ §2) | **Kapandı** (Liste 02a) |
 | 007 | Q3873247 | CS09 gerekçesi eser/sanatçı karışıklığı | **Kapandı** (95b4d72) |
 | 008 | Q3873247 | İLERİ §7 "sağda yıkama"; yıkama orta panelde | Açık; görsel teyit gerek (ChatGPT beyanı) |
 | 009 | Q3873247 | C024/C025 için gösterilen kaynak iddiayı içermiyor | Açık; düşük öncelik |
-| 010 | Q979440 | İLERİ §10 "sarayda… vitriniydi" provenans gibi okunuyor | Açık → Liste 02 |
-| 011 | Q979440 | ORTA §6 "şehrin en pahalı görsel yatırımı" | Açık → Liste 02 |
+| 010 | Q979440 | İLERİ §10 "sarayda… vitriniydi" provenans gibi okunuyor | **Kapandı** (Liste 02a) |
+| 011 | Q979440 | ORTA §6 "şehrin en pahalı görsel yatırımı" | **Kapandı** (Liste 02a) |
 | 012 | Q979440 | atıf ve "kaynaksız" nitelemeleri düşmüş | Açık → Liste 02 |
 | 013 | Q2067212 | Lisans PD mi CC BY-SA mı | **Düştü**: ChatGPT'nin iki çıktısı çelişiyor (API "Public domain") |
-| 014 | Q2067212 | "geriye doğru eğilir": geriye olan kollar | Açık → Liste 02 |
+| 014 | Q2067212 | "geriye doğru eğilir": geriye olan kollar | **Kapandı** (Liste 02a) |
 | 015 | Q2067212 | CS10 çeldirici açıklaması belirsiz ölçüyü kesinleştiriyor | Açık → Liste 02 |
 | 016 | Q1759631 | Ana görsel orta sahne detayı; gözlem soruları tam kompozisyon istiyor | Entegrasyonda: uygulama kendi görselini gösterir, orada kontrol et |
-| 017 | Q1759631 | İLERİ §7 "Roma (memur)" dersin kendi C024'üyle çelişiyor | Açık → Liste 02 |
-| 018 | Q2378534 | "WD 1500 güvenilmez": aslında "15. yy, 1438–1450" | Açık → Liste 02 |
+| 017 | Q1759631 | İLERİ §7 "Roma (memur)" dersin kendi C024'üyle çelişiyor | **Kapandı** (Liste 02a) |
+| 018 | Q2378534 | "WD 1500 güvenilmez": aslında "15. yy, 1438–1450" | **Kapandı** (Liste 02a) |
 | 019 | Q2378534 | iki ayrı yazıt tek konuma birleştirilmiş (C019, GZ01) | Açık → Liste 02 |
 | 020 | domenico | "iki yüzyıl sonra" → 144 yıl | **Kapandı** |
 | 021 | domenico | soru gerekçelerinde rol karışıklığı; 1484 üyelik iması | **Kapandı** |
 | 022 | domenico | BAŞLANGIÇ sıralaması **kapandı**; İLERİ §7'deki tekrar paragrafları açık (düşük öncelik) | Kısmen |
-| 023 | Q546297 | CS08 C "Gözler kapalı değildir" (kapalı) | Açık → Liste 02 |
+| 023 | Q546297 | CS08 C "Gözler kapalı değildir" (kapalı) | **Kapandı** (Liste 02a) |
 | 024 | Q546297 | CS05 D "Azizler değil" | **Kapandı** |
 | 025 | Q546297 | İLERİ §4 "Brera'da göz hizasında asılıdır" (kaynak koşullu) | Açık → Liste 02 |
 
@@ -119,6 +119,7 @@ Uygulama ders görsellerini kullanmayacağı için bunlar entegrasyonu engelleme
 | 6 | İç tutarlılık 03 (Q17026577…Q1863885) | glm-5.3 | `6e20967`, tek dosya. 2 bulgu (Q1759631, B), 4/4 alıntı birebir, gerçek. **Yakalama düşük:** bilinen ASTRA-017 (İLERİ:71 "Roma (memur)" ↔ C024 "Romalı değil") daraltılmış D(2) tanımına girdiği hâlde kaçtı; 8 eser 0. Fark: 02'de eser başına alt ajan kullanılmıştı, 03'te kullanılmadı. Aynı oturumda eser başına alt ajanla yeniden tarama istendi | → `b103323` (ek): +6 bulgu, alıntılar birebir (biri yalnız JSON kaçış farkı), okunanlar gerçek (Q1759631 CS10 gerekçesi, "tek duvarda", Q185255 dipnot karışıklığı). Ama commit 5 alt ajan bitmeden atıldı: bulgular yalnız 4 eserden; ASTRA-017 hâlâ yok. Ajanların bitmesi ve ikinci ek commit beklendi | Sonuç: ek 2'de yeni bulgu yok; 03 toplam 8 bulgu, 017'yi koordinatör Liste 02'ye kendisi ekler |
 | 7 | İç tutarlılık 04 (Q186953…Q23008305) | glm-5.3 | `fb0d84b`, tek dosya. 16 bulgu, 32/32 alıntı birebir; 14'ü gerçek ve öğrenciye dönük (2 YÜKSEK: "bu eserin sanatçısı değildir" şablonu Raphael ve van Eyck'i kendi eserlerinin sanatçısı değil diye yazıyor), #6 kelime sayısı ve #13 KANIT/KALITE iç notu önemsiz. **Tarama duraklatıldı** (kota planı) |
 | 8 | Faz 3 betikli şablon düzeltmesi | koordinatör | Emre onayladı; uygulandı (bu commit): 26 SORULAR.json, 237 satır (222 + 15) → "X doğru yanıt değildir; doğru yanıt Y."; tüm JSON'lar ayrıştı; kalan tek "sanatçısı değildir" (Q4693305 B) meşru, dokunulmadı. Liste 02'ye not: Q186953 CS10 B "Raphael'in kendi doğru yanıt değildir; doğru yanıt Raphael'in değil…" anlamca bozuk, elle yeniden yazılmalı; Q220859 CS06/CS08 ve Q1759631 CS10'da Y kısmı (doğru yanıt) yanlış/ilgisiz olabilir, kontrol et. Kota: 04 sonrası %40,2 (04 = %3,4) |
+| 9 | Liste 02a: birebir metin düzeltmeleri (betikle) | koordinatör | Bu commit. Kapanan: ASTRA 001, 002 (CS09 yer sorusuna çevrildi, "daha erken" K1'e bağlandı), 003, 004, 005, 006 (+ aynı hata Q979440'ta), 010, 011, 014, 017, 018, 023. Faz 3 sayesinde kapanan: tarama 04 #0, #8, #9 ve tarama 03 Q1759631 CS10. Açık kalan ASTRA: 008, 009, 012, 015, 016, 019, 022, 025 (ayrıntı Emre'deki BULGULAR.json'da; 025 alıntısı artık bulunamıyor). Sıradaki: Liste 02b (tarama 02–04'ün kalan gerçek bulguları) |
 
 ## 5. Plan (baştan sona)
 

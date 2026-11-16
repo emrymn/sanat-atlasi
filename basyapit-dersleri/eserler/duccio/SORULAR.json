@@ -261,7 +261,7 @@
   },
   {
    "id": "CS09",
-   "soru": "İnsanlar neden ağaçlara tırmanır?",
+   "soru": "Ders (K2), ağaca tırmanan figürleri nasıl yorumlar?",
    "secenekler": [
     {
      "harf": "A",
@@ -281,7 +281,7 @@
     }
    ],
    "dogru": "B",
-   "gerekce": "K2: görme arzusu; kalabalık İsa'yı görmek için ağaca çıkar.",
+   "gerekce": "K2'nin yorumu: görme arzusu; kalabalık İsa'yı görmek için ağaca çıkar (yorum; tek olası okuma değil).",
    "yanlis_gerekceleri": {
     "A": "Meyve toplamak doğru yanıt değildir; doğru yanıt İsa'yı daha iyi görmek.",
     "C": "Saklanmak doğru yanıt değildir; doğru yanıt İsa'yı daha iyi görmek.",

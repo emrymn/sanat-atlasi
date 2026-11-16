@@ -42,7 +42,7 @@ Tempera (yumurta bağlayıcılı pigment) ahşap pano üzerine uygulanmıştır;
 
 Lapis lazuli, K2'nin "elde edilmesi zor" dediği pahalı pigmenttir; mavinin bu malzemeyle ilişkisi, siparişin bütçesini gösterir (yorum) [C013]. Altın yaprak ise zeminin bütününe yayılır; bu, Gotik "öte" mekânının standardıdır [C004].
 
-Bu malzeme seçimi, tesadüf değil, programdır: katedral döngüsü, şehrin en pahalı görsel yatırımını temsil eder [C013].
+Bu malzeme seçimi, tesadüf değil, programdır: katedral döngüsü, şehrin büyük bir görsel yatırımını temsil eder (yorum) [C013].
 
 ## 8. Karşılaştırmalı analiz
 
