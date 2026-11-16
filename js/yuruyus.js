@@ -3,6 +3,7 @@
 // Davranış deneme/yuruyus.html'deki prototipin aynısı (Emre telefonda denedi): siyah boşluk yok (kamera hep ekranı
 // kaplar), kart ayrıntıyı kapatmaz, geçişler yavaş. Veri: data/yuruyus.json (noktalar ve metinler değiştirilmez).
 import { kacis } from './yardimci.js';
+import { egimDegeri } from './egim.js';
 
 const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const IZ = 0.035; // kameranın hedefe her karede yaklaşma payı (yavaş ve yumuşak)
@@ -11,6 +12,9 @@ const ARA = 14;
 export const SUZUL_MS = 2800; // süzülüşün bütünü
 const SUZUL_CIK_MS = 820; // eski yazılar bu sürede solar; sayfa o an hedefe konur
 export const ACILIS_Y = 0.36;
+const EGIM_PAY = 26; // eğim açıkken resmin ekrandan her yana taşma payı (px)
+const EGIM_KAYMA = 14; // en çok kayma (px); pay kayma + dönüşün kenarda açtığı yeri karşılar
+const EGIM_ACI = 3; // en çok dönüş (derece)
 
 // Kapaktan sonraki adımlar: eserin künyesi, ayrıntılar, "Nasıl tanırım?"
 export function yuruyusAdimlari({ kayit, kunye, taninma, baslik = kayit.eser }) {
@@ -119,11 +123,23 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
       vy: a.vy + (b.vy - a.vy) * f,
     };
   }
+  // İş 181 (Emre: "hareketi aç desen bile resimde hareket oluşmuyor"): eğim açıkken resim telefonla birlikte kayar ve
+  // ekranın ortası çevresinde hafifçe döner (derinlik). Kenar görünmesin diye resim her yandan EGIM_PAY kadar taşar.
   function boya({ cx, cy, s, vy }, buyut) {
-    const sc = s * buyut;
-    const tx = Math.min(-kx * y.IW * sc, Math.max(y.W - (kx + kw) * y.IW * sc, y.W / 2 - cx * sc));
-    const ty = Math.min(-ky * y.IH * sc, Math.max(y.H - (ky + kh) * y.IH * sc, vy - cy * sc));
-    img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${sc.toFixed(5)})`;
+    const e = egimDegeri();
+    const M = e ? EGIM_PAY : 0;
+    const sc = Math.max(s * buyut, M ? (y.W + 2 * M) / (kw * y.IW) : 0, M ? (y.H + 2 * M) / (kh * y.IH) : 0);
+    let tx = Math.min(-kx * y.IW * sc - M, Math.max(y.W - (kx + kw) * y.IW * sc + M, y.W / 2 - cx * sc));
+    let ty = Math.min(-ky * y.IH * sc - M, Math.max(y.H - (ky + kh) * y.IH * sc + M, vy - cy * sc));
+    let egim = '';
+    if (e) {
+      tx += -e.x * EGIM_KAYMA;
+      ty += -e.y * EGIM_KAYMA * 0.75;
+      const ox = (y.W / 2).toFixed(1);
+      const oy = (y.H / 2).toFixed(1);
+      egim = `translate3d(${ox}px, ${oy}px, 0) perspective(900px) rotateX(${(-e.y * EGIM_ACI).toFixed(2)}deg) rotateY(${(e.x * EGIM_ACI).toFixed(2)}deg) translate3d(-${ox}px, -${oy}px, 0) `;
+    }
+    img.style.transform = `${egim}translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${sc.toFixed(5)})`;
   }
   const ciz = (p, buyut) => boya(durus(p), buyut);
   function adimiIsaretle(sira) {
@@ -234,9 +250,22 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     kok0.classList.toggle('yuruyus-icinde', hedef > 0.5 && asma < 0.5 && !y.yukari);
     y.kare = requestAnimationFrame(kare);
   }
+  // İş 183 (Emre: "aşağı inmeye çalışınca yine bu kısma geri geliyor"): Hayatı bölümü ekrandan uzun; sayfa adımlara
+  // zorunlu oturduğu için (y mandatory) iOS parmak kalkınca bölümün başına geri çekiyordu. Bölümün başına varınca
+  // oturma kapanır, bölüm serbestçe okunur; yukarı, bölümün başının üstüne çıkınca adımlara oturma geri gelir.
+  const hayatBolumu = akis.querySelector('.yur-hayat');
+  function serbestMi() {
+    if (!hayatBolumu) return;
+    const ust = hayatBolumu.getBoundingClientRect().top;
+    kok0.classList.toggle('yur-serbest', ust <= 2);
+  }
   const kaydi = () => {
-    if (etkin !== y) return window.removeEventListener('scroll', kaydi);
+    if (etkin !== y) {
+      kok0.classList.remove('yur-serbest');
+      return window.removeEventListener('scroll', kaydi);
+    }
     if (!kok.isConnected) return;
+    serbestMi();
     const fark = window.scrollY - y.sonY;
     if (Math.abs(fark) > 6) {
       y.yukari = fark < 0;

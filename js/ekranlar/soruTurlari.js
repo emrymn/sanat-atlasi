@@ -7,10 +7,10 @@ import { Oturum } from '../oturum.js';
 import { sanatciEserleri, eserSec } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel } from '../gorsel.js';
 import { gecmisEkle } from '../gecmis.js';
-import { ikon } from '../tasarim.js';
+import { ikon, pgDisk } from '../tasarim.js';
 import { titret, tik } from '../titresim.js';
 import { TUR_AD } from '../ikonografi.js';
-import { d, ciz, ust, etiket, ekran, HARFLER, BILMIYORUM, eserAdi, kotuler, kaydet, bugun, acikListe, cizimNo, guncelMi, kaynakSatiri, paletHtml, ekranRengi, renkSabitle, yaprakDugmeYazisi } from './ortak.js';
+import { d, ciz, ust, etiket, ekran, HARFLER, BILMIYORUM, eserAdi, kotuler, kaydet, bugun, acikListe, cizimNo, guncelMi, kaynakSatiri, paletHtml, ekranRengi, renkSabitle, yaprakDugmeYazisi, yaprakAyrinti } from './ortak.js';
 import { bildirimSatiriHtml, bildirimTikla } from './bildirim.js';
 import { ikonografiVeri, karsilastirSecimi } from './gozat.js';
 import {
@@ -62,7 +62,7 @@ export function soruTurlariHtml(hatalar = '') {
       <div class="pk-bolum-bas"><h2 class="pk-baslik">Başka turlar</h2></div>
       <div class="tur-izgara">
       ${hatalar}
-      <button class="hatalar-satir" type="button" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></button>
+      <a class="hatalar-satir" href="#/pekistir/donem" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></a>
       ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Hangi bölümde?')}
       ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'İncil, mitoloji, tarih')}
       ${kars ? satir(kars.href, 'gz-karsilastir', ikon('karsilastir', 18, 1.6), 'Karşılaştır', kars.alt) : ''}
@@ -247,12 +247,11 @@ function yaprak(t, k) {
   return `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       ${bilgi}
-      <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>` : ''}
       ${ek}
-      ${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}
       ${bag}
-      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(k.s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a><button class="dugme acik" type="button" data-st-sonraki data-test="st-sonraki">${yaprakDugmeYazisi(son ? 'Turu bitir' : 'Sonraki kart')}</button></div>
+      ${yaprakAyrinti(`<div data-yaprak-palet>${paletHtml(k.palet)}</div>${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}`)}
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(k.s.id)}" aria-label="Sanatçı sayfası">${pgDisk('portre', 'umbra')}Sanatçı</a><button class="dugme acik" type="button" data-st-sonraki data-test="st-sonraki">${yaprakDugmeYazisi(son ? 'Turu bitir' : 'Sonraki kart')}</button></div>
     </section>`;
 }
 

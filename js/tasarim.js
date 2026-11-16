@@ -51,6 +51,13 @@ export function akimYuzyillari(uyeler, secenek) {
 }
 
 const YOLLAR = {
+  // Pigment düğmeleri (1.80.0): simgeler anlam taşır. Fırça = alıştırma (Çalış), portre çerçevesi = sanatçı,
+  // sütun = akım, mühür = yedek, kum saati = geri yükleme
+  firca: '<path d="M20 4l-9 9"/><path d="M11 13c-2.2-.6-4.6.8-5 3.2-.2 1.4-.9 2.4-2.5 3 3.4 1.2 8.3.3 9-3.4.2-1-.4-2.1-1.500-2.800z"/>',
+  portre: '<rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="12" cy="10" r="2.5"/><path d="M8 18c.6-2.400 2.200-3.600 4-3.600s3.400 1.200 4 3.600"/>',
+  sutun: '<path d="M5.500 4.500h13M7 4.500V7h10V4.500M9 7v10M12 7v10M15 7v10M7 19.500V17h10v2.500M5.500 19.500h13"/>',
+  muhur: '<circle cx="12" cy="9.500" r="5.500"/><path d="M9 14.200 7.500 21l4.500-2.500 4.500 2.500-1.500-6.800"/>',
+  'kum-saati': '<path d="M7 3.500h10M7 20.500h10M8 3.500c0 4 4 5.500 4 8.500s-4 4.500-4 8.500M16 3.500c0 4-4 5.500-4 8.500s4 4.500 4 8.500"/>',
   geri: '<path d="m15 18-6-6 6-6"/>',
   ileri: '<path d="m9 18 6-6-6-6"/>',
   asagi: '<path d="m6 9 6 6 6-6"/>',
@@ -100,4 +107,9 @@ const YOLLAR = {
 // İnce çizgi ikon (dekoratif; erişilebilir ad düğmede verilir)
 export function ikon(ad, boyut = 20, kalinlik = 1.6) {
   return `<svg class="ikon" width="${boyut}" height="${boyut}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${kalinlik}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${YOLLAR[ad] || ''}</svg>`;
+}
+
+// Pigment diski (1.80.0): düğmenin solundaki boya hokkası. renk: lapis | okra | sinoper | malakit | umbra
+export function pgDisk(ad, renk = 'umbra', boyut = 18) {
+  return `<span class="pg-disk pg-${renk}" aria-hidden="true">${ikon(ad, boyut, 1.6)}</span>`;
 }

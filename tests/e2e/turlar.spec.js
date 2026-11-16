@@ -169,7 +169,7 @@ test.describe('Ö5 ve Ö9', () => {
     await expect(page.getByText(/Soru 1 \/ 1 · Orta/)).toBeVisible();
     const k2 = await simdikiKart(page);
     await page.locator(`[data-test="sanatci-secenekleri"] button[data-sanatci="${k2.id}"]`).click();
-    await expect(page.locator('[data-test="seviye"]')).toBeVisible();
+    await expect(page.locator('[data-test="seviye"]')).toBeAttached() // 1.80.0: seviye satırı "Ayrıntılar"ın altında;
     expect((await ilerleme(page)).seviyeler[akim].son).toEqual([1, 0, 1]);
   });
 });

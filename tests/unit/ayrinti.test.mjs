@@ -61,6 +61,21 @@ test('noktaya yakınlaşma: ortadaki kutu kaymasız, köşedeki kutu kenarı aş
   assert.deepEqual(noktaYeri({ x: 0.4, y: 0.2, w: 0.2, h: 0.2 }), { x: 50, y: 30 });
 });
 
+// İş 180: yazı kartı altta 240 px kaplıyorsa ayrıntı kalan alana sığar ve onun ortasına (yukarı) kayar
+test('noktaya yakınlaşma: kartın kapladığı alan (alan.alt / alan.ust) hesaba katılır', () => {
+  const taban = { w: 390, h: 540 };
+  const sahne = { w: 390, h: 844 };
+  const n = { x: 0.4, y: 0.4, w: 0.2, h: 0.2 };
+  const duz = noktaOdagi(n, taban, sahne);
+  const kartli = noktaOdagi(n, taban, sahne, { alan: { ust: 60, alt: 300 } });
+  assert.ok(kartli.ty < duz.ty, `${kartli.ty} < ${duz.ty}`);
+  assert.ok(kartli.olcek <= duz.olcek);
+  // ayrıntının ortası boş alanın ortasına yakın: sahne ortası + (60 - 300) / 2
+  assert.ok(Math.abs(kartli.ty - (60 - 300) / 2) <= 1);
+  const ustte = noktaOdagi(n, taban, sahne, { alan: { ust: 300, alt: 100 } });
+  assert.ok(ustte.ty > 0);
+});
+
 test('data/eser_ayrintilari.json: anahtarlar başyapıtlarda, 4–6 nokta, hepsi geçerli, görsel adı yerel listede', () => {
   const ham = JSON.parse(readFileSync(new URL('data/eser_ayrintilari.json', KOK), 'utf8'));
   const l = ayrintilariAl(ham);

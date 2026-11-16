@@ -2134,3 +2134,223 @@ Emre Qwen'in master denetim raporunu getirdi: "iyice incele, hata varsa listele"
 - **Yapılmayanlar (karar ya da kapsam dışı):** telif politikası (11 sanatçı TR/AB'de korumalı) Emre'nin kararı. Onboarding, App Store, Capacitor ve dosya ile yedek yapılmadı: CLAUDE.md'deki tek kullanıcılı PWA kapsamının dışında; dosya ile yedek orada açıkça istenmiyor.
 - **Testler:** `tests/unit/duzeltmeler.test.mjs` (düzeltme dosyasının her anahtarı var olan bir kayda işaret ediyor; çıkarılanlar listede yok; Führermuseum hiçbir eserde görünmüyor; ortak atıf şıkları; sorgular), `tests/e2e/denetim_dogrulama.spec.js` (bozuk adres, Türkçe hata, geri dönüş odağı, görüntüleyici Tab, ortak atıf künyesi, Medusa yok). Geri dönüş odağı testi düzeltme kaldırılınca düşüyor (denendi). Tam takım: birim 360/360, uçtan uca 195/195 (4 işçi); Yenilikler testi yeni ilk satıra (1.78.4) göre güncellendi.
 - **Önbellek üretimi (ek):** Emre `onbellek.mjs`'i başka bir klasörde (`scripts/.ham/` yok) çalıştırdı: NGA CSV'leri eksikti, AIC her istekte 403 verdi (buradan 200; Mac'in IP'si geçici engellenmiş olabilir). Betik atlanan kaynağın eserlerini sessizce bırakıp dosyayı her sanatçıda üzerine yazıyordu: yaklaşık 340 NGA ve 467 AIC eseri kaybolacaktı. Artık bir kaynak atlanırsa betik sonunda eski dosyayı geri yazar ve uyarır (`EKSIK_KABUL=1` ile yine de yazar). `TAZE=wd` yalnız Wikidata yanıtlarını yeniler; müzeler diskteki kopyadan gelir.
+- **Önbellek tazelendi (`scripts/wd_tazele.mjs`):** Mac'te müze API'leri (AIC, Met) 403 verdiği ve NGA CSV'leri olmadığı için tam üretim yapılamadı. Yerine yalnız Wikidata'dan gelen yıl ve müze alanları, mevcut dosyada müzelere gitmeden tazelendi; eser eklenmedi, silinmedi, görsellere dokunulmadı.
+  - Yıl kuralı: en iyi sıradaki P571; on yıl ya da daha ince hassasiyet olduğu gibi ("1490'lar" → 1490). Daha kabaysa "en erken tarih" (P1319) ya da "başlangıç" (P580) niteleyicisi; o da yoksa değer yuvarlak değilse (1529, 1769 gibi yanlışlıkla yüzyıl hassasiyetiyle girilmiş) değerin kendisi. 1500, 1650, 1700, 2000 gibi yer tutucular alınmaz. İlk denemede yalnız yıl hassasiyeti alınmıştı; "1490'lar" ve en erken tarihli kayıtlar (Dünyevi Zevkler Bahçesi) gereksiz siliniyordu, kural bu yüzden genişletildi. Aynı kural uygulamanın canlı sorgusunda ve derleme sorgusunda.
+  - Sonuç: 241 eserin yılı değişti (ör. San Marco Müjdesi 1500 → 1438, Leonardo'nun Aziz Anna'sı 1511 → 1503), 42 yuvarlak yer tutucu silindi (eser yalnız Wikidata'dan geliyorsa; müze kaynağı varsa eski yıl kalır), 43 müze değişti, 2 tarihsel yer silindi. Yaşamla çelişen yıl 109 → 64.
+  - Müze kuralı: eski değer bugünkü koleksiyonlardan biriyse dokunulmaz; değilse müze adı gibi olan bugünkü koleksiyon. Yalnız "… collection" türü aday varken müze adı gibi eski değer korunur (Signac'ta Orsay, "Musées Nationaux Récupération" değil). Kurs eserinin yerine dokunulmaz. Örnekler: Ghent Altarı → Aziz Bavo Katedrali, Bosch'un iki triptiği → Gallerie dell'Accademia, Kutsal ve Dünyasal Aşk → Galleria Borghese.
+  - Elle eklenenler: Alba Meryemi'nin müzesi (National Gallery of Art; Wikidata'da yalnız "Andrew W. Mellon collection"), Kayalıklar Meryemi 1483–1486 (Wikidata'da tarih kalmamış), Caravaggio "Taking of Christ" 1602 (Wikidata'da yalnız yüzyıl).
+
+### 1.79.0 · Çalış · Ders düzeni (arayüz)
+
+Emre: "Çalış sekmesini ders düzenine çevir." Tasarım: https://claude.ai/artifact/VFJEDsgn6e7278NmuBgsYF. Her akım bir ders, dört adım: Gör → Öğren → Ayırt et → Sına. 1.78.3'ün altyapısının (`js/ders.js`, `data/ders_kaynaklari.json`) üstüne kuruldu; veri dosyalarına ve mevcut içerik alanlarına dokunulmadı.
+
+- **Dosyalar:**
+  - `js/dersIcerik.js` (yeni, saf, birim testli): kaynak haritasından ekranda gösterilecek planı seçer. Doğruluk kuralları tek yerde burada.
+  - `js/ekranlar/ders.js` (yeni): Çalış'ın girişi, ders sayfası, Gör, Öğren, Ayırt et.
+  - `js/ekranlar/pekistir.js`: Sına için yeni tur kipi `ders` (aynı soru motoru).
+  - `js/ders.js`: `dersDurumu` ve `bugununDersi` isteğe bağlı adım listesi alır (üç adımlı dersler). Eski çağrılar değişmeden çalışır.
+- **Adresler:** `#/pekistir` (giriş), `#/pekistir/ders/<akım>` (ders sayfası), `…/gor`, `…/ogren`, `…/ayirt`, `…/sina`. Birleşen akımın eski adı (Uluslararası Gotik) yönlendiricide Gotik'e çevrilir.
+- **Çalış'ın girişi:** yarım kalan tur (varsa) → Bugünün dersi → Günlük tekrar → Dersler → Başka turlar.
+  - Bugünün dersi `bugununDersi`: Yolculuk'taki "Buradasın" durağının akımı; dersi bittiyse dönem sırasıyla ilk bitmemiş açık akım. Kartta adım halkaları (biten ✓, süren "3/7", bekleyen sıra numarası), sıradaki adımın tek cümlelik daveti ve tek düğme.
+  - Günlük tekrar: bugünkü karışık turun kart sayısı ve bileşimi (Leitner); sekmedeki rozetle aynı sayı. Mockup'taki "~3 dk" mevcut hesaptan (kart başına 20 sn).
+  - Dersler: açık akımlar dönem sırasıyla, her birinde adım çizgileri ve hâli (Sırada / Sürüyor / Bitti); altında kilitli ilk ders ("Konu N'de açılır") ve kalan ders sayısı. 24 kilitli dersi tek tek dizmek sayfayı boşuna uzatırdı.
+  - Kapak görseli: dersin Ayırt et için elle seçilmiş birinci eseri (`data/ders_ayirt_eserleri.json`); yeni görsel kaynağı yok.
+- **Eski turlar kaybolmadı:** "Başka turlar" ızgarası girişin altında (Hatalarım, Döneme göre, Bölüm turu, Konu turu, Karşılaştır). Eski menü (karışık turun destesi, günlük hedef, salonlar ve seviyeler) olduğu gibi `#/pekistir/donem` adresinde, başlığı "Turlar"; "Döneme göre" karosu onu salonlarda açar. Adres zaten vardı, yeni bir sayfa icat edilmedi.
+- **Gör:** dersin kaynak sırasındaki ilk 3 eseri (önce kurs sanatçıları, sonra rehberli incelemesi olanlar). Her eserde önce resmin tamamı, sonra `data/yuruyus.json`'daki ayrıntılar; metinler aynen oradan.
+  - Üç eserle sınırlı: İtalyan Barok'ta 13 eser × 6 ayrıntı tek adım için çok uzun. Geri kalan yürüyüşler Bugün'de zaten çıkıyor.
+  - Kamera aynı resmin içinde kayıp yakınlaşır (CSS geçişi); ayrıntı üst çubukla metin paneli arasındaki alana oturur. Bugün'deki kaydırmalı yürüyüşün (`js/yuruyus.js`) kodu kullanılmadı: o sayfa kaydırmasına bağlı, burada düğmeyle ilerleniyor. Görsel yolu aynı (`yuruyusAdresleri`).
+  - Sahne her temada koyu (görüntüleyici gibi): resmin üstündeki yazı Gündüz'de de okunur.
+  - İlerleme görülen ayrıntı / toplam ayrıntı. Yarıda bırakılınca kayıtlı orandan sıradaki ayrıntı bulunur (ayrı konum saklanmaz).
+- **Öğren:** her "Nasıl tanınır?" maddesi bir sayfa.
+  - Kanıt yalnız `durum: "dogrulandi"` olan `kanit_adaylari`. "yanlis", "belirsiz", "bakilmadi" hiçbir yerde çıkmaz; seçim `ogrenPlani`'nde, birim ve uçtan uca testle denetlenir.
+  - Bir maddede en çok 3 eser, eser başına bir cümle (aynı eser iki kaynaktan gelirse ilki). Seçili eserin görseli kırpılmadan (`contain`) gösterilir: cümle çoğu kez eserin bütününü anlatıyor.
+  - `genel_adaylar` (doğrulanmışlar, en çok 2) "Açıklama" başlığı altında, sanatçıya aitse adıyla. Kanıt gibi sunulmaz.
+  - Doğrulanmış kanıtı olmayan 35 madde eser göstermeden: madde, varsa açıklama ve "Bu özellik için doğrulanmış bir eser örneği henüz yok" notu.
+  - Doğrulanmış 242 kanıtın hepsi eser listesinde bulunuyor (birim testi). Bulunamazsa cümle yine gösterilir, yalnız görsel çıkmaz.
+- **Ayırt et:** her komşuyla bir ikili; iki akımın birinci eserleri (`eserler.kendi[0]`, `eserler.komsu[0]`) yan yana, hangisinin solda duracağı rastgele. Soru: "Hangisi <akım>?".
+  - Cevaptan sonra iki akımın "Nasıl tanınır?" maddeleri iki sütunda, varsa `karsilastirma_cumleleri` kaynağıyla ("Dönem metni · <akım>") ve akım karşılaştırma sayfasının bağlantısı.
+  - Doğru ya da yanlış cevap ilerlemeyi değiştirmez: ilerleme görülen ikili sayısıdır (adım öğretmek için, sınav Sına'da).
+  - Bütün görünür komşular gösterilir, açık olanlar önce; henüz açılmamış komşu "(henüz açılmadı)" diye belirtilir. Yalnız açık komşularla sınırlamak ilk derste (tek açık akım) adımı boş bırakırdı.
+- **Sına:** tur kipi `ders`; "Bu eser kimin?", cevap yaprağı ve Leitner aynı kod.
+  - Soru sayısı: tek sanatçılı derste 4, ötekilerde sanatçı sayısı (en az 6, en çok 12); herkes en az bir kez sorulur.
+  - Şıklar dönemin seviyesinden bağımsız hep en zor düzende (önce aynı akım, sonra komşular; CLAUDE.md §5).
+  - Cevaplar Leitner kutularına, günün kart sayısına ve geçmişe işlenir. Dönemin seviye penceresine yazılmaz (şıklar o seviyenin değil) ve günlük yeni sanatçı sınırına sayılmaz (bölüm turu gibi).
+  - İlerleme ilk denemelerin doğru oranı; yalnız artar, %75'te biter (`SINA_GECME`). Yanlışta kart 3–5 kart sonra yine gelir ama orana girmez.
+  - Yarım oturum olarak saklanmaz ve yarım kalan başka bir turu silmez (kısa tur; bölüm turuyla aynı kural).
+  - "Neden?": mevcut tanıma metni (`taninma` → tanıma notu → `kurs_notu`); kaynak haritasındaki `neden_kaynagi` ile aynı sıra. Yanlış cevapta "Öğren'e dön" bağlantısı.
+  - Sorudan önce "yeni sanatçı · önce tanış" ekranı çıkmaz: tanıştırma Gör ve Öğren'in işi.
+- **Üç adımlı dersler:** Dada, Sürrealizm ve Savaş sonrası figürasyon için yürüyüş yok. Bu derslerde Gör adımı gösterilmez; ders üç adımla ilerler ve üç adımla biter (ders sayfasında kısa not). Adres elle açılırsa "Gör adımı yakında" yazar. Yürüyüş uydurulmadı.
+- **Yeni Türkçe metinler:** yalnız arayüz metni yazıldı (düğmeler, başlıklar, sayaçlar, durum notları, Yenilikler satırı). Olgu taşıyan yeni cümle yok; sanat tarihine dair her cümle mevcut veri dosyalarından aynen gelir. Yazılan her metin bir kez de olgu açısından okundu.
+- **Bilerek yazılmayanlar / yapılmayanlar:**
+  - Kanıtsız 35 maddeye eser aranmadı. Her biri için görsele bakıp `ders_dogrulama.json`'a karar yazmak gerekir; bu sürümün işi arayüzdü, veri ayrı bir iş.
+  - Karşılaştırma cümlesi olmayan 27 ikiliye cümle yazılmadı. İki madde listesi yan yana zaten aynı bilgiyi veriyor; listelerden cümle türetmek yeni bilgi katmaz, yanlış genelleme riski taşır.
+  - Mockup'taki "Arka plan / Figür / Mekân" fark tablosu yapılmadı: maddeler bu başlıklara ayrılmış değil; ayırmak yeni içerik yazmak olurdu.
+  - Mockup'taki "Kıvrımlar gölgeyle değil, ince altın çizgilerle çizilir…" gibi örnek metinler kullanılmadı (tasarım dolgusu). Gotik'in o maddesi için veride buna benzer bir cümle ("Cüppe kıvrımları gölgeyle değil, çizgiyle belirtilir.") "yanlış" işaretli bir aday; madde kanıtsız gösteriliyor.
+  - Mockup'taki adım süreleri ("~4 dk") yazılmadı: ölçülmüş bir süre yok.
+  - Sına'da "VI. özelliğe dön" gibi maddeye özel bağlantı yok: sanatçı ile madde arasında doğrulanmış bir eşleme yok; bağlantı Öğren'in başına gider.
+  - Tek sanatçılı derslerde (Kübizm, Art Nouveau, Savaş sonrası figürasyon) Sına'nın cevabı hep aynı sanatçı; şıklar komşu akımlardan gelir. Akım sorusu eklenmedi (dersin akımı zaten belli); bu dersler konular işlendikçe kalabalıklaşacak.
+- **Görünüm:** bütün sınıflar `.ders-` önekli, renkler tema token'larından. Tek vurgu altın; Gündüz'de yazıda koyu pirinç (açık zeminde 4,5:1 üstü, testle denetlenir). Dokunma hedefleri en az 44 px, alt çubuklar safe-area üstünde. Hareket: Gör'de kameranın kayması ve sayfaların ortak giriş hareketi; "Kapalı"da ikisi de durur.
+- **Service worker:** `js/dersIcerik.js` ve `js/ekranlar/ders.js` kabukta; `data/ders_kaynaklari.json` (390 KB) isteğe bağlı listede: dersler çevrimdışı da açılır, dosya inmezse kurulum bozulmaz ve Çalış "Dersler yüklenemedi" notuyla, turlarıyla açılır.
+- **Testler:**
+  - Birim (`tests/unit/ders.test.mjs`, +6): üç adımlı dersler, Gör planı, Öğren'de yalnız doğrulanmış aday (gerçek ve uydurma veriyle), Ayırt et planı (27 cümlesiz ikili), eser eşleştirme (242 kanıt ve bütün birinci eserler bulunuyor), soru sayısı ve kalınan yer.
+  - Uçtan uca (`tests/e2e/ders.spec.js`, 11): giriş ve her adımın açılması, Gör'de ilerleme ve kaldığı yerden devam, Öğren'de doğrulanmamış adayın çıkmaması, Ayırt et'te iki eserin yan yana durması, Sına'da ilerleme ve Leitner, %75 altı, yedekle → geri yükle, üç adımlı ders, Turlar sayfası, Gündüz ve Hareket "Kapalı".
+  - Eski menüye bakan 7 test `#/pekistir/donem` adresine taşındı (deste, günlük hedef, salonlar, Atölye arka planı).
+  - Ana dalla (1.78.4, İş 174) birleştirildi: `pekistir.js`'te ortak atıf şıkları (`haric`) ile ders kipi birlikte; Yenilikler'de 1.79.0 başta.
+  - `cilalama` "görüntüleyici kapanınca sayfa kaldığı yerde" testi tam koşuda bir kez düştü (kaydırma yeri 47 px, beklenen > 50): eserler yüklenirken sayfa henüz uzamamıştı. Kaydırma artık `expect.poll` içinde yineleniyor.
+  - Son koşu: birim 369/369, uçtan uca 206/206 (4 işçi), Python 20/20. Önceki koşularda Galeri'nin "Konular: yana kaydırınca grup değişir" testi bir kez yük altında düştü; tek başına 15/15 geçiyor, dokunulmadı.
+  - `cilalama` İş 80 testi ana dalda da günün sanatçısına göre düşüyordu: yürüyüşü ayrı büyük kopyayla gelen sanatçıda (145'te 8) Tuval'in en büyük kopyası `y/<sanatçı>.jpg`, test yalnız `d/<ad>.jpg` bekliyordu. Test iki yolu da kabul ediyor; uygulama kodu değişmedi.
+
+### 1.80.0 · Pigment düğmeleri (arayüz)
+
+Emre: "uygulamanın içindeki bütün butonları tekrar tasarla; resim tarihiyle uyumlu olsun, sembolik anlam taşısın; neon ve çok parlak renk olmasın; yapmadan önce seçenekleri göster." İki turda altı seçenek gösterildi (Varak, Pigment, Kitabe; Fırça, Vitray, Tüp). Emre **Pigment**'i seçti: https://claude.ai/artifact/86J5kFXb9Ab3Wz6duhRhU4
+
+- **Fikir:** her işlevin tarihî bir boyası var. Malakit = doğru; sinoper = yanlış; okra ve umbra = yardımcı eylemlerin diski. Renkler `--pg-*` token'ları, Gece ve Gündüz için ayrı tonlar (yazı kontrastı 4,5:1 üstü); `.gor` (görüntüleyici) her temada Gece tonlarını kullanır.
+- **Uygulama:** `css/app.css`'in sonunda tek bölüm ("Pigment düğmeleri"); eski kurallar silinmedi, üstüne yazıldı. Tek istisna: `.dugme` köşe yarıçapını `--kose-kart`'a bağlayan `:is(...)` listesinden düğmeler çıkarıldı (liste (0,3,0) özgüllükle hap biçimini eziyordu).
+- **Neler değişti:** `.dugme` ve türevleri (hap), dolu düğmeler (`vurgu`, `birincil`, `acik`, cevap yaprağındaki "Sonraki kart / Hangi akım?") tablonun renginde; `.dugme.ince` saydam hap ve başında okra damla (simgesi olan düğmede damla yok); `.ders-dugme.dolu` tablonun renginde; cevap seçenekleri (harf umbra halkada, doğru/yanlış işareti malakit/sinoper diskte); Ayarlar'daki seçenek kutuları ve `.secim-hap` seçili hâli tablonun renginde; sayı adımlayıcı yuvarlak; üst çubuktaki geri/kapat/ayar düğmeleri yuvarlak çerçeveli; Bugün'deki cam düğmelerin ve "Başka turlar" kartlarının simgesi boya diskinde.
+- **Simgeler (`js/tasarim.js`):** fırça (Çalış sekmesi), portre çerçevesi (Sanatçı), sütun (Akım sayfası), mühür (Yedekle), kum saati (Geri yükle). `pgDisk(ad, renk)` diski üretir.
+- **Emre'nin uygulama sırasındaki iki düzeltmesi:** Galeri sekmesinin simgesi ve Ayarlar (dişli) simgesi **değişmedi** (göz ve pergel denendi, geri alındı).
+- **Cevap seçeneklerinde düzen:** tasarımda harf diski adın solundaydı; uygulamada seçenekler iki sütun olduğu için disk adın **üstünde** (solda olsaydı uzun adlara ~105 px kalıyordu). Cevaptan sonra harf gizlenir, işaret diski sağda ortalanır.
+- **Bilerek dokunulmayanlar:** tablo görselli kartlar (`.tablo-dugme`, `.eser-dugme`, `.donem-dugme`, `.siradaki-dugme`, `.karisik-dugme`) kendi resimleriyle kalır; aç/kapa anahtarları, sekme çubuğunun cam hapı ve rozet, ders adım halkaları ve ilerleme çizgileri tablonun vurgu rengini kullanmayı sürdürür.
+- **Asıl düğmenin rengi (Emre'nin ikinci düzeltmesi):** ilk uygulamada dolu düğmeler hep lapisti. Emre: "bu mavi hep aynı kalıyorsa tasarımını değiştirelim; resme göre değişsin." Dolu düğmeler artık `--pg-asil` = `--vurgu-acik` (ekranın tablosundan gelen renk; yazısı `--vurgu-acik-yazi`). Lapis yalnız disklerde kaldı. Ders ekranları daha önce renk istemiyordu (sabit altın): `kapaklariDoldur` büyük kapağın eseriyle `ekranRengi` çağırır; düğme dersin kapak tablosunun rengini alır.
+- **Ana sayfada imza geri geldi:** 1.75.0'da ("C1") `.bugun-tek .bugun-alt .imza-kap` gizlenmişti; kod imzayı üretmeye devam ediyordu. Gizleme kaldırıldı. İmzası olan ressamda eserin adı yazmaz (`.bugun-alt:has(.imza-kap) .bugun-eser`; Emre: "ekran çok kalabalıklaşıyor"); imzası olmayanda eserin adı ve yılı görünür. İmza verisi değişmedi (`data/imzalar.json`: 187 sanatçının 69'unda imza var).
+- **Cevap yaprağı sadeleşti (Emre: "bu kısım çok kalabalık ve büyük"):** üstte yalnız sonuç, sanatçı ve eser, ipucu, (yanlışta) Karşılaştır ve iki düğme. Tekrar kutusu, seviye satırı, palet, kaynak satırı ve "hatalı mı?" menüsü kapalı bir `<details>` ("Ayrıntılar", `ortak.js` · `yaprakAyrinti`) altında; üç yaprakta da aynı (karışık/dönem, ters soru, yeni soru türleri). CLAUDE.md §4'ün cevaptan sonra istediği her şey (doğru/yanlış, sanatçı, eser ve yıl, tanıma ipucu, Sanatçı sayfası) açıkta kalır. Kaynak/lisans satırı bir dokunuş uzakta: soru ekranında resmin altında değil, yaprağın "Ayrıntılar"ında; sanatçı sayfası ve görüntüleyicide eskisi gibi açıkta.
+- **Testler:** birim 369/369. Uçtan uca: `--sal` (tablonun ipinde sallanması) bekleyen iki test (`paket8` K4, `harita` bölüm) bu ortamda **main'de de** düşüyor (ortamdaki Playwright 1.63, depo 1.56.1'e sabitli; cihaz hareketi benzetimi); bu değişiklikle ilgisi yok, dokunulmadı.
+
+### 1.81.0 · Çalış düğmesi, Galeri dizini, akım açılışı (arayüz)
+
+Emre tuvalde (Design) üç şey istedi ve onayladı ("tam istediğim gibi oldu, yayınla hepsini"):
+
+- **Çalış · Gör düğmesi:** "çok yapay zekâ bir renk" dediği bej hap gitti. Bugünün dersi kartındaki düğme (`.gor-dugme`, 136 px) adımı anlatır: içinde dersin kapak eseri önce bütün görünür, sonra odağa (yüz) yakınlaşır, açılır, ikinci bir noktaya yakınlaşır (11 sn'lik döngü; `gor-yuru`). Üstünden yaldız parıltısı geçer, altın ok dairesi nabız atar. Adım açıklaması ("3 eserde 17 ayrıntı") düğmenin ikinci satırında; Gör adımındayken ayrı davet cümlesi yazılmaz (öteki adımlarda kalır). Ders sayfasındaki düğme eski biçiminde.
+- **Çalış · Günlük tekrar:** solda açık derslerin kapaklarından en çok üç kartlık deste (yelpaze gibi açılıp kapanır); "Başlat" hapı yerine oklu daire. Sayı, süre, alt yazı ve dağılım çubuğu aynı.
+- **Galeri:** tasarım aynı; "Bütün akımlar" dizini kapalı gelir, başlığın sağındaki **Tümünü gör** ile yerinde açılır ("Gizle" ile kapanır). Seçim oturum boyunca hatırlanır (Galeri'ye geri dönünce aynı hâlde). "zaman sırasıyla" yazısı düğmeye yer açmak için kalktı.
+- **Akım sayfası:** açılışta dönemin en bilinen eseri (akım kimliğindeki `enBilinenEserler` sıralamasının ilki; yalnız açık sanatçılardan) kenardan kenara durur; yüzyıl etiketi ve başlık resmin altına oturur, geri düğmesi resmin üstünde. Palet şeridi 8 px'e indi; altında "Arkadaki eser: …" künyesi (dokununca görüntüleyicide açılır). Açık sanatçısı ya da görseli olmayan akımda sahne çizilmez, sayfa eskisi gibi. Sahne her temada koyu (görüntüleyici gibi).
+- **Hareket:** hepsi `data-hareket` (Sade: bir kez oynar; Kapalı: durur) ve `prefers-reduced-motion` kurallarına uyar.
+
+### İş 175 · Akım dörtlüsü için yakın okumalar, Parti A (sürüm 1.81.1)
+
+Emre: akım sayfalarındaki "En bilinen eserler" dörtlüsünü 107 başyapıtla aynı düzeye getir; bu turda Gotik → Maniyerizm.
+
+- **Seçim betiği:** `scripts/ayrinti/yardimci/akim_secim.mjs` uygulamanın kendi `enBilinenEserler`'ini ve eser boru hattını bütün konular
+  açık sayarak çalıştırır; başyapıtta olmayanları `scripts/ayrinti/akim_secim.json`'a yazar (anahtar, sanatçı, akım, yerel görsel adı,
+  4096 var mı; yerel görseli olmayanlar ayrı listede). Eşleşme `eserEslestir` gibi QID ya da `sanatçı|başlık` (Bosch'un Zevk Bahçesi
+  kopya birleşmesi yüzünden başlıkla eşleşir). İlk ölçüm: 96 eserin 43'ü başyapıttaydı; 46 yerel görselli, 7 görselsiz eksik.
+- **9 yeni başyapıt** (Limbourg · Çok Zengin Saatler'in zodyak insanı yaprağı, Giotto · Ognissanti Madonnası, Botticelli · Venüs'ün Doğuşu,
+  Piero · Kırbaçlanma, Dürer · Gergedan, Mona Lisa, Giorgione · Uyuyan Venüs, Bellini · Tanrıların Şöleni, Giulio Romano · Ziyaret):
+  İş 8 biçiminde yakın okuma (özet, dört bölüm 255–281 kelime, 3 "Yakından bak") ve İş 151 biçiminde 5–6 rehberli inceleme noktası
+  (53 nokta). Toplam 116 başyapıt, 672 nokta. Metinler görsele bakılarak yazıldı, yazıtlar 4096'dan okundu, ayrı bir geçişte denetlendi.
+  İki aşamalı doğrulamada 12 kutu düzeltildi. Ayrıntılar, emin olunmayanlar ve kalan üç parti `scripts/ayrinti/DEVIR.md` "Tur 6"da.
+- **Künye:** önbellekten. Tek bilinçli sapma Dürer: önbellekte 1512 (Wikidata), baskıda okunan ve gerçek tarih 1515 yazıldı.
+  Bellini'nin müzesi önbellekte olmadığı için boş. Ziyaret önbellekteki gibi Giulio Romano'ya bağlı; görseldeki "RAPHAEL VRBINAS F"
+  yazısı metinde anılır ("Raffaello atölyesinde, büyük ölçüde Giulio Romano'nun elinden çıktığı düşünülür").
+- Uygulama kodu değişmedi (sanatçı sayfası birden çok yakın okumayı zaten listeliyor). Yalnız veri, betik, DEVIR/DURUM, README
+  satırları ve yama sürümü; Yenilikler listesine girmedi. Birim 369/369; `ayrinti` ve `paket8` uçtan uca 13/14 (düşen K4 `--sal`
+  testi 1.80.0 notundaki gibi main'de de düşüyor).
+
+### İş 176 · Akım dörtlüsü, Parti B + C + D: 37 yakın okuma daha (sürüm 1.81.2)
+
+Emre: "devam et hepsini bitir". İş 175'in kalan üç partisi (İtalyan Barok → Dada) tek turda yapıldı.
+
+- 37 yeni başyapıt (Barok 16, Rokoko → Realizm 9, Empresyonizm → Dada 12), İş 8 biçiminde yakın okuma (dört bölüm 250–264 kelime,
+  3 "Yakından bak") ve İş 151 biçiminde 4–6 nokta (197 nokta). Toplam **153 başyapıt, 869 nokta**. Akım dörtlüsünde yerel görselli
+  eksik kalmadı (96'nın 89'u başyapıt; 7'sinin yerel görseli yok).
+- Yaprak/nüsha durumları açıkça yazıldı: Hiroshige kaydının görseli Hara yaprağı; Hokusai görseli Chicago nüshası; Marc'ın tablosu kayıp
+  (eski reprodüksiyon). Künye sapması tek: Artemisia'nın Napoli versiyonu için `tarih` 1612–1613 (önbellekteki kurs notu Uffizi versiyonuna ait).
+- Doğrulamada 12 kutu düzeltildi (Gece Devriyesi'nde yanlış tanınan "bayraktar" ve Seurat'da maymun yerine köpeği gösteren kutu dahil).
+  Ayrıntılar ve emin olunmayanlar `scripts/ayrinti/DEVIR.md` "Tur 7"de.
+
+### İş 177 · Akım dörtlüsünde elle seçim: Puvis için Çölde Mecdelli Meryem (sürüm 1.81.3)
+
+Emre: Sembolizm dörtlüsündeki Puvis eseri (Tatlı Manzara) kötü görünüyor; görseli 500 px. Yerine Çölde Mecdelli Meryem'i istedi.
+
+- **`js/akim.js` · `DORTLU_SECIMI`:** sanatçı id → dörtlüde gösterilecek eserin anahtarı (QID ya da `sanatçıId|başlık`). Sanatçının
+  dörtlüdeki sırası yine en bilinen eserinin sl'sine göre hesaplanır (Puvis yerini korur); yalnız gösterilen eser değişir. Seçilen eser
+  bulunamazsa (görseli düşmüş, temsil dışı) eski davranış. `enBilinenEserler`'e üçüncü parametre olarak verilebilir; birim testi eklendi.
+- **Q19820268 Çölde Mecdelli Meryem** (Städel, 1870; görsel 1726×2553): yakın okuma (260 kelime) ve 6 nokta. Kırpıntıda sol alttaki
+  hayvanın yılan değil **kertenkele** olduğu, arka planın deniz değil kayalık bir ova olduğu görüldü; metin buna göre yazıldı.
+- Tatlı Manzara'nın başyapıt kaydı ve noktaları yerinde kaldı (Başyapıtlar listesinde görünmeye devam eder). Toplam 154 başyapıt, 875 nokta.
+
+### İş 178 · Zayıf başyapıt görselleri için daha büyük dosyalar (veri; yükleme Mac'te)
+
+Emre: "yap hepsini" (başyapıtlarda görseli 1700 px'in altında kalanlar). 21 zayıf görsel için Commons'ta aynı eserin daha büyük
+dosyası arandı: Wikidata kaydı (P18, P373 kategorisi), "digital representation of" (P6243) ve metin araması; oran farkı ≤ %6,
+uzun kenar ≥ max(1,25 × elimizdeki, 1600). Adaylar elimizdekiyle yan yana gözle karşılaştırıldı, kadraj SIFT eşleştirmesiyle ölçüldü.
+
+- **Alınanlar (4):** Caravaggio · Matta'nın Çağrılışı (1280 → 8792 px), Simone Martini · Müjde (844 → 10416), Fra Angelico · San Marco
+  Müjdesi (955 → 8646), Domenico di Michelino · Dante (1280 → 5477). `data/gorsel_iyilestirme.json`'a eklendi (İş 84 boru hattı).
+- **Noktalar:** yeni fotoğrafların kadrajı biraz farklı (Simone Martini'de kenar boşlukları %4–7). Noktalar adayın Commons'taki küçük hâline
+  dönüştürülüp kırpıntıyla doğrulandı ve `scripts/ayrinti/bekleyen_koordinatlar.json`'da bekletiliyor; görsel R2'de yenilenince
+  `scripts/ayrinti/yardimci/koordinat_uygula.py` yazar (görsel yenilenmeden noktalar değişmez, yanlış yere kaymaz).
+- **Alınmayanlar:** Emre'nin daha önce reddettiği dosyalar (Salviati'nin Louvre dosyası, Poussin'in Lyon dosyası); çerçeveli ya da salon
+  fotoğrafları (Boucher · Sarışın Odalık, Rosso, Lorenzetti); filigranlı müze fotoğrafı (Artemisia); başka versiyon olabilecekler (Holman
+  Hunt adayı eşleşmedi, Cézanne adayı Orsay versiyonu, bizimki değil); Marc'ın kayıp tablosunun yalnız eskizleri var. Puvis · Tatlı Manzara'nın
+  en büyük dosyası 1024 px (1600 eşiğinin altında). Preti, Cranach, Ziyaret, Baldung, van Dyck, Metsys, Kauffman: aday yok.
+- **Düzeltme (Emre: "emin misin bak"):** `b_yenile.py` 1280'liği yalnız küçükse (< 1216 px) yeniliyordu; Caravaggio ve Michelino'nun
+  1280'liği büyük olduğundan eski kadrajda kalacaktı (görüntüleyici önce onu, sonra yeni en büyük kopyayı gösterir: tablo kayar, noktalar
+  ilkinde yanlış yerde durur; Michelino'da oran %5 değişiyor). Artık `gorsel_iyilestirme.json`'daki görsellerde 1280'liğin oranı en büyük
+  kopyadan binde 3'ten çok farklıysa da yeniden üretilir (sahte dosyalarla denendi). İlk çalıştırmada daha önceki iyileştirmelerden oranı
+  değişmiş olanların 1280'likleri de yenilenebilir (yeni adla yüklenir; zararsız). 400 px ızgara kopyaları (`gorseller/k`, depoda) ve
+  `gorsel_oranlari.json` eski kadrajda kalır: ızgarada fark yalnız kenarda, birkaç yüzde.
+- **Mac'te sıra:** `caffeinate -i python3 scripts/devasa_indir.py` → `python3 scripts/b_yenile.py` → `python3 scripts/r2_yukle.py --10gb-ustu`
+  → `python3 scripts/ayrinti/yardimci/koordinat_uygula.py` → `python3 scripts/ayrinti/denetle.py` → gönder (gorsel_kaynagi, b_yenilenen,
+  eser_ayrintilari, bekleyen_koordinatlar).
+
+### İş 179 · Akım sayfasındaki en bilinen eserlerde "İncele" (sürüm 1.81.4)
+
+Emre: akım sayfasında Çok Zengin Saatler'i açınca "İncele" gelmedi. İş 175–177'de dörtlünün bütün eserleri rehberli inceleme aldı, ama
+akım sayfası (`js/ekranlar/akim.js`) görüntüleyiciye `ayrintilar` vermiyordu (yalnız başyapıt, sanatçı, konu sayfaları ve günün sanatçısı
+veriyordu). Şimdi dörtlüden ve akım karşılaştırmasındaki eserlerden açılan görüntüleyici de `ayrintiBulucu` alır; inceleme verisi akım
+sayfası çizilirken yüklenir. Uçtan uca test: Sembolizm dörtlüsünün ilk eseri → İncele → noktalar (düzeltmesiz düştüğü görüldü).
+
+
+### İş 180 · İncele yeniden: yazısız kamera ve buzlu yazı kartı (sürüm 1.82.0)
+
+Emre, İncele'yi Design tuvalinde birkaç turda birlikte çizdi ("1 2 3 gibi değil, ana sayfadaki gibi yakınlaştırma usulüyle"). Varılan
+tasarım uygulamaya geçti (`js/goruntuleyici.js`, `css/app.css` sonundaki İş 180 bölümü):
+- **İşaret yok:** numaralı noktalar kalktı; tablonun üstünde hiçbir şey çizilmez (köşelikler "çok köşeli", haleler "vazgeçtim" ile
+  denendi ve bırakıldı). Ayrıntıların yeri görünmez dokunma alanı olarak durur: genel bakışta ayrıntının üstüne dokununca kamera oraya gider.
+- **Karartma yok:** seçili ayrıntının çevresi kararmaz. Tablo bütün ekranı alır; arkasında tablonun kendi bulanık ışığı (İş 69) daha
+  belirgin.
+- **Yazı kartı:** Bugün'deki yürüyüş kartının dili: yarı saydam, buzlu kart; üst satır ("2 / 6", genel bakışta "6 ayrıntı"), Bodoni
+  başlık, Newsreader metin. Her adımda süzülerek belirir. Ayrıntının ortası tablonun alt %38'indeyse kart üste geçer. Başlığa dokununca yalnız
+  başlık kalır (kamera ayrıntıyı yeni boşluğa göre yeniden yerleştirir). Genel bakışta kartta eserin adı.
+- **Kamera kartın dışına bakar:** `noktaOdagi` artık `alan: { ust, alt }` alır: ayrıntı kartın ve düğmelerin dışındaki boşluğa sığdırılıp
+  onun ortasına konur; kenardaki ayrıntı (ör. alttaki imza) için tablo o pay kadar fazladan kayabilir. Yakınlaşmanın çözünürlük sınırı
+  (İş 165) aynen geçerli.
+- **Gezinme:** altta küçük geri düğmesi, ayrıntı başına bir parçalı ilerleme çubuğu (parçaya dokununca o ayrıntı), ilerlemeyi halkasında
+  gösteren yuvarlak ilerle düğmesi. "Bitir" yazılı düğme yerine kapat düğmesinin solunda küçült simgeli yuvarlak düğme. İki parmakla
+  yakınlaştırma ve kaydırma görüntüleyicide zaten vardı, aynen çalışır. Otomatik ilerleme denendi; Emre düğmeli ilerlemeyi seçti.
+- Hikâye karakterleri (İş 169) aynı görünümü kullanır. Test: `tests/e2e/ayrinti.spec.js` (kart ayrıntıyı kapatmıyor, üste geçiyor,
+  katlanıyor, çubukla atlanıyor), `tests/unit/ayrinti.test.mjs` (`alan`).
+### İş 181 · Bugün'de "Hareketi aç" resmi de oynatır (sürüm 1.82.1)
+
+Emre: "hareketi aç desen bile resimde hareket oluşmuyor, sadece ışık süzmesi hareket ediyor". İş 171'den beri Bugün yürüyüşünde resmi
+kamera taşıyor (`transform`) ve CSS, kamerayla çakışmasın diye eğimin dönüş/kaymasını resme uygulamıyordu (`translate/rotate: none`);
+yalnız ışık ve ad oynuyordu. Şimdi kamera her karede eğimi `js/egim.js`'ten (`egimDegeri`) okur: resim telefonla en çok 14 px kayar ve
+ekranın ortası çevresinde en çok 3° döner (perspektifli). Kenar görünmesin diye eğim açıkken resim ekrandan her yana 26 px taşar (kamera
+kenarı bu payla sınırlar); eğim kapalıyken kamera eskisi gibi. Test: `tests/e2e/egim.spec.js` (jiroskop olayıyla resmin dönmesi).
+
+### İş 182 · Bugün'de "Hareketi aç" yazısız simge anahtarı (sürüm 1.82.2)
+
+Emre: "ana sayfada Hareketi aç tuşu kalkmış, geri ekle ama yazı olarak değil, sadece simge olarak". Düğme yalnız iOS izni unuttuğunda
+çıkıyor, izin verilince ya da iOS hatırlıyorsa kayboluyordu. Şimdi tablonun sağ üstünde ("Ben"in altında) yazısız, yuvarlak bir simge
+anahtarı hep durur: hareket açıkken simge okra diskte (`aria-pressed="true"`, "Hareketi kapat"), kapalıyken diski boş ("Hareketi aç").
+Dokununca hareket kapanır ya da (gerekirse iOS izni istenerek) açılır; seçim Ayarlar'daki "Telefonu eğince tablo oynasın" ayarına yazılır.
+Hareket azaltma açıksa ya da cihazda algılayıcı yoksa anahtar görünmez. `js/egim.js` bu düğmenin dokunuşunu artık yönetmez
+(`data-egim-anahtar`); Pekiştir ve sergi duvarındaki düğmeler eskisi gibi. Test: `tests/e2e/egim.spec.js`.
+
+### İş 183 · Bugün'de Hayatı bölümü aşağı kaydırılınca başa geri çekmez (sürüm 1.82.3)
+
+Emre: "bu kısımda aşağı inmeye çalışınca yine bu kısma geri geliyor". Bugün yürüyüşünde sayfa adımlara zorunlu oturuyor
+(`scroll-snap-type: y mandatory`); son bölüm (Hayatı + "Resmi gezdin" + bugünkü tur) ekrandan uzun olduğu için iOS parmak kalkınca
+bölümün başına geri çekiyordu. Şimdi `js/yuruyus.js` kaydırırken Hayatı bölümünün üst kenarına bakar: başına varılınca `html`'e
+`yur-serbest` sınıfı konur ve adımlara oturma kapanır (bölüm serbestçe okunur); bölümün başının üstüne çıkınca sınıf kalkar, adımlar
+eskisi gibi oturur. Test: `tests/e2e/gunun.spec.js` (İş 183). Bugünkü tur kartı ve sanatçı bağlantılarının yeni tasarımı Emre'nin
+seçimini bekliyor (üç öneri: A Deste, B Halka, C Kitap sayfası).
+
+### İş 184 · Bugün'ün sonu: yeni tur kartı ve iki büyük karo (sürüm 1.82.4)
+
+Emre üç öneriden A'yı (Deste) seçti, "bugünkü tur kısmındaki sarılığı kaldır" dedi. Tur artık dolu pirinç değil: koyu cam kart, ince
+pirinç çerçeve, solda üç kartlık küçük deste (öndeki kartta sayı), sağda halkalı ok. Altında yan yana iki büyük karo: sanatçının baş harfi
+ve kısa adıyla "Sanatçı sayfası", sanatçının ilk dört eserinin küçük resimleriyle "Bütün eserleri" (`eserKareleriDoldur`; resim
+gelmezse sıcak kahve kareler). Animasyonlar: dokununca kart/karo küçülür, deste açılır, ok kayar; tur kartının üstünden 4,5 sn'de bir
+soluk bir ışık geçer (hareket azaltılmışsa geçmez). Renkler yalnızca var olan paletten (pirinç, `--yur-yazi`, `--yur-ikincil`).

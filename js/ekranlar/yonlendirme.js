@@ -6,6 +6,7 @@ import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
 import { soruTuru } from './soruTurlari.js';
+import { dersMenusu, dersSayfasi, gorAdimi, ogrenAdimi, ayirtAdimi } from './ders.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
 import { aramaSayfasi } from './arama.js';
@@ -30,8 +31,14 @@ const rotalar = [
   [/^#\/konular\/([^/]+)$/, konuGrubu, 'gozat'],
   [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
-  [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
+  // 1.79.0: Çalış'ın girişi ders düzeni; eski menü (karışık tur sahnesi, salonlar) "Başka turlar → Döneme göre"de
+  [/^#\/pekistir$/, dersMenusu, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
+  [/^#\/pekistir\/ders\/([^/]+)$/, dersSayfasi, 'pekistir'],
+  [/^#\/pekistir\/ders\/([^/]+)\/gor$/, gorAdimi, null],
+  [/^#\/pekistir\/ders\/([^/]+)\/ogren$/, ogrenAdimi, null],
+  [/^#\/pekistir\/ders\/([^/]+)\/ayirt$/, ayirtAdimi, null],
+  [/^#\/pekistir\/ders\/([^/]+)\/sina$/, (ad) => pekistir('ders', ad), null],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],
   [/^#\/pekistir\/konu\/(\d+)$/, (no) => pekistir('konu', no), null],

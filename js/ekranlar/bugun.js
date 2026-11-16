@@ -52,7 +52,7 @@ import {
 import { ayrintiVeri, ayrintiBulucu, rozetleriEkle } from './gozat.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
-import { egimBaslat } from '../egim.js';
+import { egimBaslat, egimVar, egimIzni, hareketKisik } from '../egim.js';
 import { imzaGoster } from '../imza.js';
 import { kunyeGoster, dinleEkle } from '../kunye.js';
 
@@ -98,7 +98,7 @@ const yuruyusYili = (gs, kayit) => (kayit && !yilSupheliMi(kayit.yil, gs) ? kayi
 function kapakHtml(gs, kayit) {
   const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), yuruyusYili(gs, kayit)].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
-        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
+        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-egim-anahtar data-test="egim-dugme" aria-pressed="false" aria-label="Hareketi aç" hidden>${ikon('hareket', 18, 1.6)}</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
         <div class="bugun-alt">
           <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}</a>
           <p class="bugun-eser" data-bugun-eser${eser ? '' : ' hidden'}>${kacis(eser)}</p>
@@ -145,16 +145,21 @@ function sahneHtml(gs, tekrar, kayit) {
 function yuruyusSonu(gs) {
   const tur = turBilgisi('karisik');
   const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
+  // İş 184 (Emre'nin seçtiği Tasarım A, sarısız): tur koyu cam kart, solda üç kartlık deste; altında iki büyük karo
+  const deste = (sayi) =>
+    `<span class="yur-deste" aria-hidden="true"><span class="yur-deste-k1"></span><span class="yur-deste-k3"></span><span class="yur-deste-k2">${sayi}</span></span>`;
   const turKart = tur.toplam
-    ? `<a class="yur-tur" href="#/pekistir/karisik" data-test="yur-tur"><b class="yur-tur-sayi" data-test="tur-sayi">${tur.toplam}</b><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü tur</span><small data-test="tur-alt">${tur.toplam} kart · yaklaşık ${dk} dk</small></span>${ikon('ileri', 22, 1.7)}</a>`
-    : `<a class="yur-tur bitti" href="#/pekistir" data-test="yur-tur"><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü kartlar bitti</span><small>Başka turlar Çalış'ta</small></span>${ikon('ileri', 22, 1.7)}</a>`;
+    ? `<a class="yur-tur" href="#/pekistir/karisik" data-test="yur-tur">${deste(`<b class="yur-tur-sayi" data-test="tur-sayi">${tur.toplam}</b>`)}<span class="yur-tur-yazi"><span class="yur-tur-ust">Günün işi</span><span class="yur-tur-baslik">Bugünkü tur</span><small data-test="tur-alt">${tur.toplam} kart · yaklaşık ${dk} dk</small></span><span class="yur-tur-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span></a>`
+    : `<a class="yur-tur bitti" href="#/pekistir" data-test="yur-tur">${deste(ikon('dogru', 20, 1.8))}<span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü kartlar bitti</span><small>Başka turlar Çalış'ta</small></span><span class="yur-tur-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span></a>`;
+  const kisa = bilinenAd(gs.ad, d.kisaAdlar[gs.id]);
+  const kareler = [0, 1, 2, 3].map((i) => `<span class="yur-kare" data-eser-kucuk="${kacis(gs.id)}" data-sira="${i}"></span>`).join('');
   return `<div class="yur-son" data-test="yur-son">
       <p class="etiket yur-son-kunye">${kunye(gs, { bag: false, konuYok: true })}</p>
       <h2>Resmi gezdin.</h2>
       ${turKart}
       <nav class="yur-baglar" aria-label="Sanatçı">
-        <a href="#/gunun">${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}: sanatçı sayfası${ikon('ileri', 16, 1.7)}</a>
-        <a href="#/sanatci/${encodeURIComponent(gs.id)}/eserler">Bütün eserleri${ikon('ileri', 16, 1.7)}</a>
+        <a class="yur-karo" href="#/gunun" data-test="yur-sanatci"><span class="yur-karo-ust yur-harf" aria-hidden="true">${kacis([...kisa][0] || '')}</span><span class="yur-karo-alt"><span class="yur-karo-baslik">${kacis(kisa)}</span><small>Sanatçı sayfası ${ikon('ileri', 13, 1.8)}</small></span></a>
+        <a class="yur-karo" href="#/sanatci/${encodeURIComponent(gs.id)}/eserler" data-test="yur-eserler"><span class="yur-karo-ust yur-kareler" aria-hidden="true">${kareler}</span><span class="yur-karo-alt"><span class="yur-karo-baslik">Bütün eserleri</span><small>Izgara, tam ekran ${ikon('ileri', 13, 1.8)}</small></span></a>
       </nav>
       <div class="yur-dinle" data-yur-dinle></div>
       <button class="yur-basa" type="button" data-yur-basa data-test="yur-basa"><span class="yur-basa-halka" aria-hidden="true">${ikon('cik', 20, 1.5)}</span><span>Başa dön</span></button>
@@ -186,7 +191,11 @@ export function anaSayfa() {
   if (gs) {
     // telefonu eğince tablo döner, ışık üstünden kayar (İş 32); izin Ayarlar'dan verilir
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
-    if (kayit) yuruyusKur(gs, kayit, perde);
+    egimAnahtari(ekran.querySelector('[data-gunun-gorsel]'));
+    if (kayit) {
+      yuruyusKur(gs, kayit, perde);
+      eserKareleriDoldur(); // sondaki Bütün eserleri karosunun küçük resimleri
+    }
     else gununKartGorseli(gs);
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
   } else ekranRengi(null, null);
@@ -508,4 +517,34 @@ export function olaylariBagla() {
     eserKareleriDoldur();
     bildir(`${d.harita.get(id).ad} pekiştirmeye eklendi.`);
   });
+}
+
+// İş 182 (Emre: "Hareketi aç tuşu kalkmış, geri ekle ama yazı olarak değil, sadece simge"): tablonun sağ üstünde yazısız,
+// her zaman duran bir anahtar. Basılıyken (aria-pressed) hareket açık; dokununca kapanır ya da (iOS izniyle) açılır ve
+// seçim Ayarlar'daki "Telefonu eğince tablo oynasın" ayarına yazılır.
+function egimAnahtari(el) {
+  const b = ekran.querySelector('[data-egim-anahtar]');
+  if (!b || !el) return;
+  if (!egimVar() || hareketKisik()) return;
+  b.hidden = false;
+  const kutu = el.closest('.bugun-yuruyus') || el;
+  const yaz = () => {
+    const acik = kutu.classList.contains('egimli');
+    b.setAttribute('aria-pressed', String(acik));
+    b.setAttribute('aria-label', acik ? 'Hareketi kapat' : 'Hareketi aç');
+  };
+  yaz();
+  new MutationObserver(yaz).observe(kutu, { attributes: true, attributeFilter: ['class'] });
+  b.onclick = async () => {
+    if (b.getAttribute('aria-pressed') === 'true') {
+      d.ilerleme.ayarlar.egim = false;
+      kaydet();
+      egimBaslat(el, false);
+      return yaz();
+    }
+    if (!(await egimIzni())) return;
+    d.ilerleme.ayarlar.egim = true;
+    kaydet();
+    egimBaslat(el, true);
+  };
 }

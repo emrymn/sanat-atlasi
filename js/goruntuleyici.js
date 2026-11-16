@@ -9,6 +9,7 @@ import { noktaOdagi, noktaYeri, yakinlasmaSiniri } from './ayrinti.js';
 import { hikayeHtml, karakterKaydi } from './hikaye.js';
 
 const EN_BUYUK = 6;
+const HALKA = 2 * Math.PI * 28; // İş 180: "Sonraki" düğmesinin ilerleme halkasının çevresi
 
 // İş 70: açılış/kapanış geçişi (Fotoğraflar uygulaması gibi). Dokunulan küçük resim yakalanır; görüntüleyici açılınca
 // onun bir kopyası ekrandaki yerinden büyüyerek tam ekrandaki yerine gider, kapanınca geri küçülür.
@@ -117,9 +118,19 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       <div class="gor-eylemler">${!bildir && !ortalama ? '<button class="gor-kotu" type="button">Görsel kötü</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${hikayeler && !gizli ? '<button class="gor-hikaye-dugme" type="button" data-test="gor-hikaye" hidden>Hikâyesi</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button><button class="gor-odak" type="button" data-gor-odak-sil data-test="gor-odak-sil" hidden>Otomatiğe dön</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
       ${(ayrintilar || hikayeler) && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
-        <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
-        <p class="gor-inc-metin" data-test="gor-inc-metin"></p>
-        <div class="gor-inc-dugmeler"><button class="gor-inc-geri" type="button" data-test="gor-inc-onceki">${ikon('geri', 20)}<span>Önceki</span></button><button class="gor-inc-ileri" type="button" data-test="gor-inc-sonraki"><span>Sonraki</span>${ikon('ileri', 20)}</button><button class="gor-inc-bitir" type="button" data-test="gor-inc-bitir">Bitir</button></div>
+        <div class="gor-inc-kart" data-test="gor-inc-kart">
+          <button class="gor-inc-katla" type="button" aria-expanded="true" aria-label="Yazıyı gizle" data-test="gor-inc-katla">
+            <span class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></span>
+            <svg class="gor-inc-ok" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5l6 6 6-6"/></svg>
+          </button>
+          <p class="gor-inc-metin" data-test="gor-inc-metin"></p>
+        </div>
+        <div class="gor-inc-dugmeler">
+          <button class="gor-inc-geri" type="button" aria-label="Önceki ayrıntı" data-test="gor-inc-onceki">${ikon('geri', 18)}</button>
+          <div class="gor-inc-serit" data-test="gor-inc-serit"></div>
+          <button class="gor-inc-ileri" type="button" aria-label="Sonraki ayrıntı" data-test="gor-inc-sonraki"><svg class="gor-inc-halka" width="60" height="60" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="30" r="28"/><circle class="dolu" cx="30" cy="30" r="28"/></svg>${ikon('ileri', 20)}</button>
+        </div>
+        <button class="gor-inc-bitir" type="button" aria-label="İncelemeyi bitir" data-test="gor-inc-bitir"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/></svg></button>
       </div>` : ''}
       ${!gizli ? '<p class="gor-odak-durum" data-test="gor-odak-durum" hidden></p>' : ''}
       <p class="gor-mesaj" role="status" aria-live="polite"></p></div>
@@ -154,6 +165,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   const noktalar = kok.querySelector('.gor-noktalar');
   const inceleDugme = kok.querySelector('.gor-incele');
   const incPanel = kok.querySelector('.gor-inceleme');
+  const incKart = kok.querySelector('.gor-inc-kart');
   let inceleme = null; // { kayit, sira } — açıkken
   let kayitSimdiki = null; // gösterilen eserin kaydı (varsa)
   let hikayeSimdiki = null; // İş 169: gösterilen eserin hikâyesi (varsa)
@@ -467,34 +479,80 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     noktalar.innerHTML = kayit.noktalar
       .map((n, i) => {
         const y = noktaYeri(n);
-        return `<button class="gor-nokta" type="button" style="left:${y.x.toFixed(2)}%;top:${y.y.toFixed(2)}%" data-nokta="${i}" aria-label="${i + 1}. ${kacis(n.ad)}"><i>${i + 1}</i></button>`;
+        return `<button class="gor-nokta" type="button" style="left:${y.x.toFixed(2)}%;top:${y.y.toFixed(2)}%" data-nokta="${i}" aria-label="${kacis(n.ad)}"></button>`;
       })
       .join('');
     noktalar.hidden = false;
     kok.classList.add('inceleme');
     incPanel.hidden = false;
+    // İş 180: alttaki ilerleme çubuğu (ayrıntı başına bir parça; dokununca o ayrıntıya gidilir)
+    incPanel.querySelector('.gor-inc-serit').innerHTML = kayit.noktalar
+      .map((n, i) => `<button type="button" data-serit="${i}" aria-label="${kacis(n.ad)}"><i></i></button>`)
+      .join('');
+    incKart.classList.remove('kapali', 'yukari');
     alt.hidden = true;
     kok.querySelector('.gor-eylemler').hidden = true;
     if (menu) menu.hidden = true;
     mesaj.textContent = '';
     incelemeYaz();
     sifirla();
+    genelBakis();
   }
+  // İş 180: genel bakışta tablo, alttaki künye kartının üstünde kalan boşluğa doğru kayar (sahneden çıkmadan)
+  function genelBakis() {
+    if (!inceleme) return;
+    const r = sahne.getBoundingClientRect();
+    const p = kartPayi();
+    const h = resim.offsetHeight;
+    if (!h || !r.height) return;
+    ty = Math.round(Math.min(0, Math.max((p.ust - p.alt) / 2, -(r.height - h) / 2)));
+    uygula();
+  }
+  // İş 180 (Emre'nin tasarımı): numaralı noktalar ve alt panel yerine yazısız kamera + yarı saydam yazı kartı. Kart
+  // ayrıntı resmin alt kısmındaysa üste geçer; başlığa dokununca yalnız başlık kalır (kamera ayrıntıyı büyütür).
   function incelemeYaz() {
     const { kayit, sira: i } = inceleme;
     const n = kayit.noktalar[i];
-    incPanel.querySelector('.gor-inc-no').textContent = n ? `${i + 1} / ${kayit.noktalar.length}` : `${kayit.noktalar.length} ${kayit.birim || 'ayrıntı'}`;
-    incPanel.querySelector('.gor-inc-ad').textContent = n ? n.ad : '';
-    incPanel.querySelector('.gor-inc-metin').textContent = n ? n.metin : 'Tablonun üstündeki numaralı noktalara dokun ya da Sonraki ile başla.';
+    const N = kayit.noktalar.length;
+    const e = eserler[sira];
+    incPanel.querySelector('.gor-inc-no').textContent = n ? `${i + 1} / ${N}` : `${N} ${kayit.birim || 'ayrıntı'}`;
+    incPanel.querySelector('.gor-inc-ad').textContent = n ? n.ad : notTemizle((e && (e.ad || e.baslik)) || kayit.baslik || '');
+    const metin = incPanel.querySelector('.gor-inc-metin');
+    metin.textContent = n ? n.metin : '';
+    metin.hidden = !n;
     incPanel.querySelector('.gor-inc-geri').disabled = i <= 0;
-    incPanel.querySelector('.gor-inc-ileri').disabled = i >= kayit.noktalar.length - 1;
+    incPanel.querySelector('.gor-inc-ileri').disabled = i >= N - 1;
+    incPanel.querySelector('.gor-inc-halka .dolu').style.strokeDashoffset = String(HALKA * (1 - (i + 1) / N));
+    for (const b of incPanel.querySelectorAll('[data-serit]')) {
+      const k = Number(b.dataset.serit);
+      b.classList.toggle('aktif', k === i);
+      b.classList.toggle('gecti', k < i);
+    }
+    incKart.classList.toggle('yukari', !!n && n.y + n.h / 2 > 0.62);
+    // kart her adımda süzülerek yeniden belirir
+    if (!hareketAz()) {
+      incKart.classList.remove('gel');
+      void incKart.offsetWidth;
+      incKart.classList.add('gel');
+    }
     for (const b of noktalar.querySelectorAll('.gor-nokta')) b.classList.toggle('aktif', Number(b.dataset.nokta) === i);
+  }
+  // kartın ve düğmelerin sahnede kapladığı pay (kamera ayrıntıyı kalan boşluğa koyar)
+  function kartPayi() {
+    const r = sahne.getBoundingClientRect();
+    const ust = Math.max(0, kok.querySelector('.gor-kapat').getBoundingClientRect().bottom - r.top);
+    const kr = incKart.getBoundingClientRect();
+    const dr = incPanel.querySelector('.gor-inc-dugmeler').getBoundingClientRect();
+    const ARA = 12;
+    if (incKart.classList.contains('yukari')) return { ust: Math.max(ust, kr.bottom - r.top) + ARA, alt: Math.max(0, r.bottom - dr.top) + ARA };
+    return { ust: ust + ARA, alt: Math.max(0, r.bottom - Math.min(kr.top, dr.top)) + ARA };
   }
   function noktayaGit(i) {
     if (!inceleme) return;
     const n = inceleme.kayit.noktalar[i];
     if (!n) return;
     inceleme.sira = i;
+    incelemeYaz();
     clearTimeout(netZaman);
     const r = sahne.getBoundingClientRect();
     const tb = net === 1 ? { w: resim.offsetWidth, h: resim.offsetHeight } : taban;
@@ -505,7 +563,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const dogal = Math.max(resim.naturalWidth, resim.naturalHeight);
     const kaynak = devasa && resim.src !== devasa ? Math.max(dogal, 4096) : dogal;
     const enCok = yakinlasmaSiniri(kaynak, Math.max(tb.w, tb.h), window.devicePixelRatio, { enCok: EN_BUYUK });
-    const o = noktaOdagi(n, tb, { w: r.width, h: r.height }, { enCok });
+    const o = noktaOdagi(n, tb, { w: r.width, h: r.height }, { enCok, alan: kartPayi() });
     if (o) {
       olcek = o.olcek;
       tx = o.tx;
@@ -516,7 +574,6 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       uygula(sure > 0, sure);
       netlestir(sure + 60);
     }
-    incelemeYaz();
   }
   // geri: tablo ölçek 1'e döner (eser değişirken false: goster zaten sıfırlar)
   function incelemeBitir(geri = true) {
@@ -528,7 +585,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     incPanel.hidden = true;
     alt.hidden = false;
     kok.querySelector('.gor-eylemler').hidden = false;
-    if (geri && olcek > 1) {
+    if (geri && (olcek > 1 || ty)) {
       olcek = 1;
       tx = 0;
       ty = 0;
@@ -553,6 +610,17 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     incPanel.querySelector('.gor-inc-geri').addEventListener('click', () => noktayaGit(inceleme.sira - 1));
     incPanel.querySelector('.gor-inc-ileri').addEventListener('click', () => noktayaGit(inceleme.sira + 1));
     incPanel.querySelector('.gor-inc-bitir').addEventListener('click', () => incelemeBitir());
+    incPanel.querySelector('.gor-inc-serit').addEventListener('click', (ev) => {
+      const b = ev.target.closest('[data-serit]');
+      if (b) noktayaGit(Number(b.dataset.serit));
+    });
+    // başlığa dokununca yazı kapanır/açılır; açık ayrıntıda kamera yeni boşluğa göre yeniden yerleşir
+    incPanel.querySelector('.gor-inc-katla').addEventListener('click', (ev) => {
+      const kapali = incKart.classList.toggle('kapali');
+      ev.currentTarget.setAttribute('aria-expanded', String(!kapali));
+      ev.currentTarget.setAttribute('aria-label', kapali ? 'Yazıyı göster' : 'Yazıyı gizle');
+      if (inceleme && inceleme.sira >= 0) noktayaGit(inceleme.sira);
+    });
     // nokta dokunuşu sahnenin kaydırma/yakınlaştırma jestini başlatmasın
     noktalar.addEventListener('pointerdown', (ev) => ev.stopPropagation());
     noktalar.addEventListener('click', (ev) => {

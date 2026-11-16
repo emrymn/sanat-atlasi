@@ -24,6 +24,7 @@ test('soru: parça parça ilerleme, şıklar başparmak bölgesinde ve en az 56 
   // doğru cevap: kutu ilerler, son nokta dolar; yazıda ne zaman tekrar edileceği
   const dogru = await page.evaluate(() => window.__atlas.oturum.kart.id);
   await page.locator(`[data-sanatci="${dogru}"]`).click();
+  await page.locator('[data-test="yaprak-ayrinti"] summary').click(); // 1.80.0: ikincil satırlar "Ayrıntılar"ın altında
   const satir = page.locator('[data-test="kutu-satir"]');
   await expect(satir).toBeVisible();
   await expect(satir.locator('.kutu-noktalar i')).toHaveCount(6);
@@ -35,6 +36,7 @@ test('soru: parça parça ilerleme, şıklar başparmak bölgesinde ve en az 56 
   await page.locator('[data-ikinci]').click();
   const akim = await page.evaluate(() => window.__atlas.harita.get(window.__atlas.oturum.kart.id).akim);
   await page.locator(`[data-test="akim-secenekleri"] .secenek:not([data-akim="${akim}"])`).first().click();
+  await page.locator('[data-test="yaprak-ayrinti"] summary').click(); // 1.80.0: ikincil satırlar "Ayrıntılar"ın altında
   await expect(page.locator('[data-test="kutu-satir"] .kutu-noktalar i.dolu')).toHaveCount(0);
   await expect(page.locator('[data-test="kutu-satir"]')).toContainText('Baştan');
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);

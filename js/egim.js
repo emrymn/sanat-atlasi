@@ -87,6 +87,7 @@ const azHareket = () =>
   (typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
   (typeof document !== 'undefined' && document.documentElement.dataset.hareket === 'kapali'); // İş 148
 
+export const hareketKisik = azHareket; // İş 182: Bugün'deki simge anahtar aynı kuralla gizlenir
 let izinDurumu = null; // null: sorulmadı, true / false
 // Dokunuşsuz soru: iOS daha önceki izni hatırlıyorsa evet; hatırlamıyorsa (dokunuş gerektiği için) hayır, kutu açılmaz.
 // Hayır, reddedildi sayılmaz.
@@ -195,7 +196,8 @@ export function egimBaslat(el, acik, degisince = null) {
   };
   if (!izinGerekli() || izinDurumu) return dinle();
   const dugme = (dis(el) || el).querySelector('[data-egim-dugme]');
-  if (dugme) {
+  // İş 182: Bugün'deki simge anahtarın dokunuşunu ekranın kendisi yönetir (açma ve kapatma)
+  if (dugme && !dugme.hasAttribute('data-egim-anahtar')) {
     dugme.onclick = async () => {
       if (await egimIzni()) dinle();
       else sinif(el, false, 'egim-izinsiz'); // reddedildi: bu açılışta bir daha sorulmaz
@@ -206,6 +208,13 @@ export function egimBaslat(el, acik, degisince = null) {
     if (hatirliyor) dinle();
     else if (dugme) sinif(el, true, 'egim-izinsiz');
   });
+}
+
+// İş 181: Bugün yürüyüşünde resmi kamera taşır (js/yuruyus.js); CSS'teki dönüş/kayma resme uygulanamaz. Kamera her
+// karede eğimi buradan okur ve resmi kendisi kaydırıp hafifçe döndürür. Eğim dinlenmiyorsa null.
+export function egimDegeri() {
+  if (!kok || !kok.isConnected || !dis(kok) || !dis(kok).classList.contains('egimli')) return null;
+  return { x: anlik.x, y: anlik.y };
 }
 
 export function egimDurdur() {

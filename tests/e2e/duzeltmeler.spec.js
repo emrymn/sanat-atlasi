@@ -19,7 +19,7 @@ test('D1: Pekiştir menüsü ve tur sayacı aynı kart sayısını gösterir', a
 });
 
 test('D1: dönem satırındaki kart sayısı turun sayacıyla aynı', async ({ page }) => {
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem'); // 1.79.0: salonlar Turlar sayfasında
   const satir = page.locator('a[href="#/pekistir/donem/Gotik"]');
   const m = /(\d+) kart/.exec(await satir.textContent());
   expect(m).toBeTruthy();

@@ -142,3 +142,63 @@ test('sanatçı sayfasındaki eser ızgarasından açılan görüntüleyicide de
   await expect(incele).toBeHidden();
   expect(await olcek(page)).toBeCloseTo(1, 1);
 });
+
+// İş 179: akım sayfasındaki "En bilinen eserler" dörtlüsü başyapıt; oradan açılan görüntüleyicide de İncele olmalı
+// (gerçek data/eser_ayrintilari.json; dörtlü görünsün diye geliştirici modu bütün konuları açar)
+test('akım sayfasındaki en bilinen eserlerden açılan görüntüleyicide de İncele var', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/ayarlar');
+  const gel = page.locator('[data-ayar-gelistirici]');
+  await gel.scrollIntoViewIfNeeded();
+  await gel.check({ force: true });
+  await expect(page.locator('#gelistirici-mesaj')).toContainText('Açıldı');
+  await page.goto('./#/akim/' + encodeURIComponent('Sembolizm'));
+  const kart = page.locator('.akim-bolum [data-kimlik-eser]').first();
+  await expect(kart).toBeVisible();
+  await kart.click();
+  const incele = page.locator('[data-test="gor-incele"]');
+  await expect(incele).toBeVisible();
+  await incele.click();
+  await expect(page.locator('.gor-nokta').first()).toBeVisible();
+});
+
+// İş 180: yazısız kamera + buzlu yazı kartı. Ayrıntı kartın arkasında kalmaz; alttaki ayrıntıda kart üste geçer;
+// başlığa dokununca yalnız başlık kalır; ilerleme çubuğu ve halka adımı gösterir
+test('İş 180: İncele kartı ayrıntıyı kapatmaz, üste geçer, katlanır; ilerleme çubuğuyla atlanır', async ({ page, context }) => {
+  await hazirla(context);
+  await page.goto(`./#/basyapit/${encodeURIComponent(K)}`);
+  await page.locator('[data-test="basyapit-incele"]').click();
+  const kart = page.locator('[data-test="gor-inc-kart"]');
+  await expect(kart).toBeVisible();
+  // genel bakış: künyede eserin adı, metin yok; noktalar görünmez dokunma alanı (numara yok)
+  await expect(page.locator('[data-test="gor-inc-ad"]')).not.toHaveText('');
+  await expect(page.locator('[data-test="gor-inc-metin"]')).toBeHidden();
+  await expect(page.locator('.gor-nokta').first()).toHaveText('');
+  const serit = page.locator('[data-test="gor-inc-serit"] [data-serit]');
+  await expect(serit).toHaveCount(4);
+  // ortadaki ayrıntı: kart altta, ayrıntının ortası kartın üstünde kalır
+  await serit.nth(1).click();
+  await expect(page.locator('[data-test="gor-inc-ad"]')).toHaveText('Orta');
+  await expect(serit.nth(1)).toHaveClass(/aktif/);
+  await page.waitForTimeout(1500);
+  const kartKutu = await kart.boundingBox();
+  const nokta = await page.locator('.gor-nokta').nth(1).boundingBox();
+  expect(nokta.y + nokta.height / 2).toBeLessThan(kartKutu.y);
+  // sağ alttaki ayrıntı: kart üste geçer, ayrıntı kartın altında
+  await serit.nth(2).click();
+  await expect(kart).toHaveClass(/yukari/);
+  await page.waitForTimeout(1500);
+  const ustKart = await kart.boundingBox();
+  expect(ustKart.y).toBeLessThan(844 * 0.4);
+  const alttaki = await page.locator('.gor-nokta').nth(2).boundingBox();
+  expect(alttaki.y + alttaki.height / 2).toBeGreaterThan(ustKart.y + ustKart.height);
+  // başlığa dokun: metin gizlenir, kart küçülür; yeniden dokununca geri gelir
+  const katla = page.locator('[data-test="gor-inc-katla"]');
+  await katla.click();
+  await expect(katla).toHaveAttribute('aria-expanded', 'false');
+  await expect(page.locator('[data-test="gor-inc-metin"]')).toBeHidden();
+  expect((await kart.boundingBox()).height).toBeLessThan(ustKart.height);
+  await katla.click();
+  await expect(page.locator('[data-test="gor-inc-metin"]')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
+});

@@ -47,7 +47,7 @@ test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en a
   // "Zaman" sekmesi kenardan kesilmez
   const son = await page.locator('.bolumler a').last().boundingBox();
   expect(son.x + son.width).toBeLessThanOrEqual(390.5); // piksel altı (yazı tipi çizimi makineden makineye)
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem'); // 1.79.0: günlük hedef ve sıralama hapları Turlar sayfasında
   await expect(page.locator('.secim-hap button').first()).toBeVisible();
   for (const b of await dokunmaBoylari(page, '.secim-hap button')) expect(b).toBeGreaterThanOrEqual(44);
   // İlerleme'deki sıralama hapları yalnız cevap verilmiş birden çok akım varken çıkar (İş 56); varsa ölçülür
@@ -99,6 +99,7 @@ test('geri düğmesiyle dönünce liste kalınan yerde açılır; ileri gidişte
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
+  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Tümünü gör" ile açılır; dönünce açık kalır
   await page.evaluate(() => window.scrollTo(0, 800));
   await expect.poll(() => y(page)).toBe(800);
   await gorunenAkimLinki(page);
@@ -113,7 +114,7 @@ test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yen
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  // İş 172: Galeri kısaldı (uzun akım listesi çarka indi); kaydırma yeri sayfanın boyuna göre
+  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Tümünü gör" ile açılır; dönünce açık kalır
   await page.evaluate(() => window.scrollTo(0, 800));
   await expect.poll(() => y(page)).toBe(800);
   await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
@@ -176,9 +177,14 @@ test.describe('görüntüleyici ve kenardan kaydırma', () => {
     await page.goto('./#/sanatci/giotto-di-bondone');
     const eser = page.locator('.eser').nth(3);
     await expect(eser).toBeAttached();
-    await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+    // sayfa uzayana dek (eserler yüklenirken yük altında 50 px'e varmayabiliyordu) kaydırma yinelenir
+    await expect
+      .poll(async () => {
+        await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+        return y(page);
+      })
+      .toBeGreaterThan(50);
     const once = await y(page);
-    expect(once).toBeGreaterThan(50);
     await eser.evaluate((e) => e.click());
     await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
     await expect(page.locator('.gor')).toHaveCount(0);
@@ -1100,7 +1106,8 @@ test.describe('İş 80: keskin görseller', () => {
     expect(istenen).toEqual([]);
     // Tuval'in büyük tablosu ekranı kaplıyor: en büyük kopya
     await page.goto('./#/');
-    await expect(page.locator('#uygulama [data-gunun-gorsel] img')).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/, { timeout: 10000 });
+    // (yürüyüşü ayrı büyük kopyayla gelen sanatçıda, 145'te 8, en büyük kopya y/<sanatçı>.jpg; günün sanatçısına göre değişir)
+    await expect(page.locator('#uygulama [data-gunun-gorsel] img')).toHaveAttribute('src', /pub-deneme\.r2\.dev\/(d\/[0-9a-f]+|y\/[a-z0-9-]+)\.jpg$/, { timeout: 10000 });
   });
 });
 

@@ -7,7 +7,7 @@
 // İş 111: motif penceresinde eserin kendisi (yaldız çerçevede; dokununca tam ekran) ve uzun hikâye
 // (data/harita_motifler.json, scripts/harita/motif_hikayeleri.py).
 import { kacis } from '../yardimci.js';
-import { ikon } from '../tasarim.js';
+import { ikon, pgDisk } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, resimYukleme, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { kurs, konuBasligi, konuIsaretle } from './ilerleme.js';
@@ -704,7 +704,7 @@ function durakPenceresi(id) {
           return x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${ic}</a>` : `<span class="kilitli">${ic}</span>`;
         })
         .join('')}</div>
-      <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">Akım sayfası</a>${
+      <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">${pgDisk('sutun', 'okra')}Akım sayfası</a>${
         x.acik && x.seviyeAcik.orta ? `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim-orta" data-test="harita-tanitim-orta">Orta tanıtımı</a>` : ''
       }</div>
     </div>`;

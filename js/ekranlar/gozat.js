@@ -702,7 +702,8 @@ export function gozAtUst(etkin) {
 // Karşılaştır Çalış'ta (Başka turlar).
 const CARK_ADIM = 21; // çarkta iki akım arası açı (derece)
 const CARK_R = 320; // çarkın yarıçapı (px)
-let carkSon = 0; // son bakılan akım: Galeri'ye dönünce çark orada durur
+let carkSon = 0;
+let dizinAcik = false; // Galeri'de "Bütün akımlar" dizini açık mı (Tümünü gör / Gizle) // son bakılan akım: Galeri'ye dönünce çark orada durur
 
 // Sanatçıların çalışma yıllarından yüzyıllar: [{ y, acik }] (açık: o yüzyılda açık bir sanatçı var)
 function carkHtml(durumlar, acikSayi) {
@@ -741,8 +742,8 @@ export function gozAt() {
   ciz(`${gozAtUst('akimlar')}
     ${carkHtml(durumlar, acikSayi)}
     <section class="akim-dizin" data-test="akim-dizin" aria-label="Bütün akımlar">
-      <div class="gz-plan-bas"><span class="etiket vurgu">Bütün akımlar</span><small>zaman sırasıyla</small></div>
-      <ol>${durumlar
+      <div class="gz-plan-bas"><span class="etiket vurgu">Bütün akımlar</span><button type="button" class="akim-dizin-ac" data-dizin-ac data-test="akim-dizin-ac" aria-expanded="${dizinAcik}" aria-controls="akim-dizin-liste"><span data-dizin-yazi>${dizinAcik ? 'Gizle' : 'Tümünü gör'}</span>${ikon('asagi', 16, 1.8)}</button></div>
+      <ol id="akim-dizin-liste"${dizinAcik ? '' : ' hidden'}>${durumlar
         .map((a, i) => {
           const yy = akimYuzyillari(
             d.sanatcilar.filter((x) => x.akim === a.ad),
@@ -760,6 +761,15 @@ export function gozAt() {
   onizlemeleriDoldur();
   carkKur();
   gorunceOynat();
+  // 1.81.0 (Emre): ekranda yalnız çark öne çıkar; dizin "Tümünü gör" ile açılır (oturum boyunca hatırlanır)
+  const ac = ekran.querySelector('[data-dizin-ac]');
+  if (ac)
+    ac.addEventListener('click', () => {
+      dizinAcik = !dizinAcik;
+      ac.setAttribute('aria-expanded', String(dizinAcik));
+      ac.querySelector('[data-dizin-yazi]').textContent = dizinAcik ? 'Gizle' : 'Tümünü gör';
+      ekran.querySelector('#akim-dizin-liste').hidden = !dizinAcik;
+    });
 }
 
 // İş 171: Karşılaştır kısayolu. En çok karıştırılan iki sanatçı varsa onlar; yoksa açık ilk iki akım.
@@ -957,7 +967,8 @@ export function akimSayfasi(ad) {
   gununRengi();
   const uslup = akimUslubu(ad);
   // Sıra en önemliden en az önemliye: tanıma → eserler → sanatçılar → pekiştir → dönem → karşılaştırma → tipik konular
-  ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}
+  // 1.81.0 (Emre): sayfa dönemin en bilinen eseriyle açılır; görsel kimlikDoldur'da gelir (yoksa sahne kapanır)
+  ciz(`<div class="akim-sahne${acik.length ? ' dolu' : ''}" data-akim-sahne><span class="akim-sahne-resim" data-akim-sahne-resim aria-hidden="true"></span>${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}</div>
     <section class="akim-kimlik" data-test="akim-kimlik" data-uslup="${uslup}" style="--renk:${akimRenk(ad)}">
       <div data-kimlik-ust><div class="akim-palet bos" aria-hidden="true"></div></div>
       <section class="akim-bolum">${bolumBasligi('Ustalar', 'Sanatçılar')}

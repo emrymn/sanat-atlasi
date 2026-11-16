@@ -139,6 +139,16 @@ test('K3 tipik konular, en bilinen eserler, komşular', () => {
     ['x2', 'y1'],
     'her sanatçıdan bir, görseli olmayan atlanır',
   );
+  // elle seçim (DORTLU_SECIMI): gösterilen eser değişir, sanatçının sırası en bilinen eserine göre kalır
+  const l2 = enBilinenEserler(
+    [
+      { s: { id: 'x' }, eserler: [{ qid: 'Q1', baslik: 'x1', sl: 50, gorseller: g }, { qid: 'Q2', baslik: 'x2', sl: 1, gorseller: g }] },
+      { s: { id: 'y' }, eserler: [{ baslik: 'y1', sl: 20, gorseller: g }] },
+    ],
+    4,
+    { x: 'Q2', y: 'y|yok' },
+  );
+  assert.deepEqual(l2.map((x) => x.e.baslik), ['x2', 'y1'], 'seçilen eser gösterilir; bulunamazsa en bilinen');
   const akimlar = [{ ad: 'Barok', komsular: ['Rokoko', 'Yok'] }, { ad: 'Rokoko' }];
   assert.deepEqual(karsilastirmaKomsulari('Barok', akimlar), ['Rokoko']);
   assert.equal(

@@ -32,7 +32,7 @@ test('İş 148/149: hareket ve yazı boyutu Ayarlar’dan seçilir, html’e yaz
   expect([a.hareket, a.yazi]).toEqual(['kapali', 'buyuk']);
   // Sade: sürekli dönen süs hareketleri bir kez oynar
   await page.getByRole('radio', { name: 'Sade' }).check();
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem'); // 1.79.0: deste Turlar sayfasında
   const kart = page.locator('.pk-kart').first();
   await kart.waitFor();
   expect(await kart.evaluate((e) => getComputedStyle(e).animationIterationCount)).not.toContain('infinite');
