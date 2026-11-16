@@ -1,0 +1,42 @@
+[
+ {
+  "eser_id": "Q3399440",
+  "tur": "E",
+  "dosya_1": "DERS_ILERI.md",
+  "alinti_1": "törende sağ elde asa, sol elde adalet eli tutulurken burada her ikisi de yastık üstündedir",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "kral, Charlemagne'ın uzun asası yerine Henri IV'ün kısa asasını sağ elinde ters tutar, zambak ucu yastığa dayanır",
+  "aciklama": "İleri derste asa ile adalet elinin resimde ikisinin de yastık üstünde olduğu söylenir; orta ders (ve C009 iddiası) ise asayı kralın sağ elinde ters tuttuğunu söyler — aynı sahnenin iki farklı anlatımı.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q3399440",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Kral taçsızdır ve adalet elini tutmaz; törende asa sağ, adalet eli sol elde tutulurdu ama resimde ikisi de yastıktadır",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "kral, Charlemagne'ın uzun asası yerine Henri IV'ün kısa asasını sağ elinde ters tutar, zambak ucu yastığa dayanır",
+  "aciklama": "CS06'nın B şıkkı yanlış-gerekçesi, cümlede anılan asa ve adalet elinin resimde ikisinin de yastıkta olduğunu söyler; derslere ve aynı dosyadaki CS05/GZ03/TK03'e göre asa kralın sağ elinde ters tutulur, gerekçe yanlış olgu aktarır.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q3476580",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "Museum Folkwang dizinin başka bir tablosuna sahiptir; bu eserin koleksiyonu değil.",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "İkincisi, dizinin ilk eseri sayılan \"Fünf Frauen auf der Strasse\" (1913, Museum Ludwig, Köln):",
+  "aciklama": "CS01 sorusunun D şıkkı yanlış-gerekçesi, Museum Folkwang'ın Strassenbilder dizisinden bir tabloya sahip olduğunu olgu gibi öğretiyor; dersler dizinin bilinen diğer eserlerini Museum Ludwig (Fünf Frauen) ve MoMA ile gösterir ve paket bu Folkwang atfını Denetim B'de brief hatası olarak düzeltmiştir, yani gerekçe paketin kendi verisiyle çelişen yanlış bir olgu söylüyor.",
+  "onem": "ORTA"
+ },
+ {
+  "eser_id": "Q3705703",
+  "tur": "C",
+  "dosya_1": "SORULAR.json",
+  "alinti_1": "boyut ve fotoğraf arşivi künyeleriyle sınırlı. Yumurta temperası ve kavak tabla bilgisi 2017–18 restorasyonunun kurumsal belgelerinden gelir (B)",
+  "dosya_2": "DERS_ORTA.md",
+  "alinti_2": "Scheda'nın kısaltılmış storico-critico notu hamiyi ve Vasari'nin \"üç yıl\" anlatısını verir",
+  "aciklama": "DY02 açıklaması birincil katalog kaydını başlık, dipinto, Firenze, boyut ve fotoğraf arşivi künyeleriyle sınırlı sayıyor; orta ders ise aynı kaydın storico-critico notunun hamiyi ve Vasari'nin üç yıl anlatısını verdiğini aktarıyor.",
+  "onem": "ORTA"
+ }
+]
