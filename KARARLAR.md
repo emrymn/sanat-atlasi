@@ -2656,4 +2656,12 @@ kullanır (`js/ekranlar/gozat.js` `konularCiz`/`knGovdeCiz`): yapışkan `by-hap
 `by-sahne` (Hepsi'de her grubun en çok işlenen konusu, grupta ilk üç), Hepsi'de her grup bir bölüm (iki kart + "N konu"),
 grup seçilince o grubun bütün konuları çoktan aza. Gövde yerinde çizilir, adres `history.replaceState` ile `#/konular/<tür>` olur.
 Karttaki ayrı "N eser" düğmesi kalktı (Başyapıtlar kartında yok); bütün resimler konu sayfasındaki "Bütün resimler"den açılır.
-İçeriği yana kaydırarak grup değiştirme de kalktı (Başyapıtlar'da yok; sahne kaydırması ile çakışıyordu).
+1.88.1 (Emre: "kaydırmayı niye kaldırdın, ikisinden de geri getir"): içeriği yana kaydırınca komşu sekme hem Konular'da
+hem Başyapıtlar'da (`yanaKaydir`). Sahnenin içinde başlayan kaydırma sahneye, ekran kenarından başlayan geri hareketine kalır;
+yeni içerik kaydırma yönünden kayarak gelir.
+
+## 1.88.1 · Konu sayfasında aşağı kaydırınca çökme
+Emre: "konulardan içine girince altına kaydırınca çöküyor". Neden: "Aynı hikâye, N kez" şeridi görünür olunca bütün duraklar
+(Meryem ve Çocuk'ta 336) aynı anda opaklık/kayma geçişine giriyordu; Chromium'da ~1050 birleştirme katmanı ölçüldü, iOS'ta
+bellek dolup WebKit süreci kapanıyordu. Artık yalnız ilk 8 durak canlanır, gerisi düz görünür ve ekran dışındayken çizilmez
+(`content-visibility: auto`); katman sayısı 65'e indi. "Bütün resimler" duvarında da yalnız ilk 12 kart canlanır.

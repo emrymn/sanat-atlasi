@@ -87,6 +87,34 @@ test('Konular: Başyapıtlar düzeni — Hepsi sekmesi, sahne, gruplarda iki kar
   await expect(page.locator('[data-test="konu"] h1')).toBeVisible();
 });
 
+test('Başyapıtlar ve Konular: içeriği yana kaydırınca komşu sekme; sahnede kaydırma sekmeyi değiştirmez', async ({ page, context }) => {
+  await agiHazirla(context);
+  const cdp = await context.newCDPSession(page);
+  const kaydir = async (x0, x1, y) => {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y }] });
+    for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / 6, y }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  };
+  for (const [adres, serit, nitelik] of [
+    ['./#/basyapitlar', '[data-test="by-donemler"] button', 'data-by-donem'],
+    ['./#/konular', '[data-test="konu-grup-serit"] button', 'data-kn-grup'],
+  ]) {
+    await page.goto(adres);
+    const haplar = page.locator(serit);
+    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
+    // sahnenin üstünde kaydırma: sekme yerinde
+    const sahne = await page.locator('[data-test="by-sahne"]').boundingBox();
+    await kaydir(300, 120, sahne.y + sahne.height / 2);
+    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
+    // sahnenin altında: sıradaki sekme, sonra geri
+    const ikinci = await haplar.nth(1).getAttribute(nitelik);
+    await kaydir(300, 120, 760);
+    await expect(page.locator(`${serit}[aria-pressed="true"]`)).toHaveAttribute(nitelik, ikinci);
+    await kaydir(120, 300, 760);
+    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
+  }
+});
+
 test('Hareket: Kapalı\'da Başyapıtlar ve Konular\'da süren animasyon yok; Sade\'de sahne kendi kendine değişmez', async ({ page, context }) => {
   await agiHazirla(context);
   await context.addInitScript(() => (window.__atlasGecis = true)); // otomatik testin hareket kısıtını kaldır: ayar denensin

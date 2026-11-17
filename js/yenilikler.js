@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.88.1', metin: 'Başyapıtlar ve Konular’da içeriği sağa sola kaydırınca yandaki sekmeye geçilir (öne çıkan büyük kartın üstünde kaydırma yine o kartın resimlerini değiştirir). Büyük konularda sayfanın altına inince uygulamanın kapanması düzeldi.' },
   { surum: '1.88.0', metin: 'Konular, Başyapıtlar ile aynı düzende: üstte Hepsi ve grup sekmeleri, öne çıkan konuların büyük kayan kartı; Hepsi’de her gruptan iki konu ve “N konu” düğmesi, bir gruba geçince o grubun bütün konuları.' },
   { surum: '1.87.0', metin: 'Çalış yeniden düzenlendi: dersler görsel bir ızgarada, Dersler ve Başka turlar sekmeleriyle; Galeri ve Konular kartları Başyapıtlar tasarımında. Sayfaların tepesindeki renkli buğu (tablonun renginde hale) çok azaldı; Gündüz temasında saatin arkasındaki renkli şerit de yerini hafif, nötr bir gölgeye bıraktı.' },
   { surum: '1.86.0', metin: 'Çalış’ta Sına adımı kalktı: ders artık üç adım (Gör, Öğren, Ayırt et), sonunda “Haritaya geç”. Dönemin sınavı haritadaki duraklar; bir dönemin durakları o dönemin dersi bitince açılır (haritada daha önce oynadığın dönemler açık kalır). Çalış’ta bugünün dersinin resmi yine ayrıntıdan ayrıntıya yakınlaşıp uzaklaşıyor.' },

@@ -256,6 +256,39 @@ function bsySahneBagla(govde) {
   );
 }
 
+// Sekmeli galeri sayfaları (Başyapıtlar, Konular): içeriği yana kaydırınca komşu sekme. Sahnenin içinde başlayan
+// kaydırma sahneye, ekranın kenarından başlayan kaydırma geri hareketine kalır. Yeni içerik kaydırma yönünden gelir.
+function yanaKaydir(govde, git) {
+  let bas = null;
+  govde.addEventListener(
+    'touchstart',
+    (e) => {
+      const x = e.touches[0].clientX;
+      bas = e.touches.length === 1 && x > 28 && x < innerWidth - 28 && !e.target.closest('[data-by-sahne]') ? { x, y: e.touches[0].clientY } : null;
+    },
+    { passive: true },
+  );
+  govde.addEventListener(
+    'touchend',
+    (e) => {
+      if (!bas) return;
+      const dx = e.changedTouches[0].clientX - bas.x;
+      const dy = e.changedTouches[0].clientY - bas.y;
+      bas = null;
+      if (Math.abs(dx) < 64 || Math.abs(dx) < 2 * Math.abs(dy)) return;
+      git(dx < 0 ? 1 : -1);
+    },
+    { passive: true },
+  );
+}
+
+function yonluGir(govde, yon) {
+  govde.classList.remove('kn-sagdan', 'kn-soldan');
+  if (!yon) return;
+  void govde.offsetWidth;
+  govde.classList.add(yon > 0 ? 'kn-sagdan' : 'kn-soldan');
+}
+
 export async function basyapitListesi() {
   gununRengi();
   ciz(`${gozAtUst('basyapitlar')}<p class="ikincil kucuk">Yükleniyor…</p>`);
@@ -279,15 +312,24 @@ export async function basyapitListesi() {
     if (h) haplar.scrollTo({ left: h.offsetLeft - 24, behavior: hareketAz() ? 'auto' : 'smooth' });
   };
   hapiGoster();
-  kok.addEventListener('click', (e) => {
-    const h = e.target.closest('[data-by-donem]');
-    if (!h) return;
-    d.bsyDonem = h.dataset.byDonem || null;
+  const sira = ['', ...gruplar.map((g) => g.bolge.id)];
+  const sec = (id) => {
+    const yon = sira.indexOf(id || '') - sira.indexOf(d.bsyDonem || '');
+    d.bsyDonem = id || null;
     bsyGovdeCiz(liste, gruplar, hikayeli);
+    yonluGir(kok.querySelector('[data-by-govde]'), yon);
     hapiGoster();
     // gövde yeniden çizildi: sayfa hapların hizasına gelir (haplar yapışkan, yerinde kalır)
     const tepe = kok.getBoundingClientRect().top + scrollY;
     if (scrollY > tepe) scrollTo({ top: tepe, behavior: 'auto' });
+  };
+  kok.addEventListener('click', (e) => {
+    const h = e.target.closest('[data-by-donem]');
+    if (h) sec(h.dataset.byDonem);
+  });
+  yanaKaydir(kok.querySelector('[data-by-govde]'), (adim) => {
+    const hedef = sira[sira.indexOf(d.bsyDonem || '') + adim];
+    if (hedef !== undefined) sec(hedef);
   });
 }
 
@@ -413,10 +455,13 @@ async function konularCiz(t) {
     if (h) haplar.scrollTo({ left: h.offsetLeft - 24, behavior: hareketAz() ? 'auto' : 'smooth' });
   };
   hapiGoster();
+  const sira = ['', ...gruplar.map((g) => g.t)];
   const sec = (grup) => {
+    const yon = sira.indexOf(grup || '') - sira.indexOf(d.konuGrup || '');
     d.konuGrup = grup || null;
     history.replaceState(history.state, '', d.konuGrup ? `#/konular/${d.konuGrup}` : '#/konular');
     knGovdeCiz(gruplar);
+    yonluGir(kok.querySelector('[data-kn-govde]'), yon);
     hapiGoster();
     const tepe = kok.getBoundingClientRect().top + scrollY;
     if (scrollY > tepe) scrollTo({ top: tepe, behavior: 'auto' });
@@ -424,6 +469,10 @@ async function konularCiz(t) {
   kok.addEventListener('click', (e) => {
     const h = e.target.closest('[data-kn-grup]');
     if (h) sec(h.dataset.knGrup);
+  });
+  yanaKaydir(kok.querySelector('[data-kn-govde]'), (adim) => {
+    const hedef = sira[sira.indexOf(d.konuGrup || '') + adim];
+    if (hedef !== undefined) sec(hedef);
   });
 }
 
