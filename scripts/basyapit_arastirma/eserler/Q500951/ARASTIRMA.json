@@ -1,0 +1,37 @@
+{
+ "anahtar": "Q500951",
+ "baslik_tr": "Sarı İsa",
+ "kunye": {
+  "sanatci": {"deger": "Paul Gauguin", "kaynak": "wikidata.txt", "alinti": "creator (P170): Paul Gauguin (Q37693)"},
+  "tarih": {"deger": "1889", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1889", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "92,07 × 73,34 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 92.07 centimetre width (P2049): 73.34 centimetre"},
+  "yer": {"deger": "Buffalo AKG Art Museum", "kaynak": "wikidata.txt", "alinti": "location (P276): Buffalo AKG Art Museum (Q1970945)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Gauguin, Pont-Aven'e dönüşünden kısa süre sonra bu tabloyu yapmıştır.", "kaynak": "enwiki.txt", "alinti": "Soon after his return to Pont-Aven he painted The Yellow Christ.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Tablonun ana konusu İsa'nın çarmıha gerilişidir.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): crucifixion of Jesus (Q51636)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Tabloda İsa Mesih ve Chapelle de Trémalo betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Jesus Christ (Q302) depicts (P180): Chapelle de Trémalo (Q15945237)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Tabloda Breton kadınlar dua için toplanmıştır.", "kaynak": "enwiki.txt", "alinti": "as Breton women are gathered in prayer", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "İsa'nın çarmıha gerilişi 19. yüzyıl kuzey Fransa'sında gerçekleşirken gösterilir.", "kaynak": "enwiki.txt", "alinti": "shows the crucifixion of Jesus Christ taking place in 19th-century northern France", "ihtiyat": false},
+  {"id": "C06", "bolum": "kompozisyon", "iddia": "Gauguin figürlerini tanımlamak için güçlü çizgilere büyük ölçüde dayanır ve gölgelemeyi yalnızca kadınlara ayırır.", "kaynak": "enwiki.txt", "alinti": "Gauguin relies heavily on bold lines to define his figures and reserves shading only for the women.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Peyzajdaki sarı, kırmızı ve yeşilden oluşan sonbahar paleti, İsa figüründeki baskın sarıyı yansıtır.", "kaynak": "enwiki.txt", "alinti": "The autumn palette of yellow, red and green in the landscape echoes the dominant yellow in the figure of Christ.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Bu tablodaki güçlü dış çizgiler ve formların düzlüğü cloisonnist üslup için tipiktir.", "kaynak": "enwiki.txt", "alinti": "The bold outlines and flatness of the forms in this painting are typical of the cloisonnist style.", "ihtiyat": false},
+  {"id": "C09", "bolum": "anlam", "iddia": "Tablo, Chapelle de Trémalo'ya ve çarmıha geriliş konusuna dayanır.", "kaynak": "wikidata.txt", "alinti": "based on (P144): Chapelle de Trémalo (Q15945237) based on (P144): crucifixion (Q3235597)", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Tablonun ana konularından biri Chapelle de Trémalo'daki Sarı İsa'dır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Christ jaune de la Chapelle de Trémalo (Q141859593)", "ihtiyat": false},
+  {"id": "C11", "bolum": "onem", "iddia": "The Green Christ ile birlikte Sembolist resmin anahtar eserlerinden biri sayılır.", "kaynak": "enwiki.txt", "alinti": "Together with The Green Christ, it is considered to be one of the key works of Symbolist painting.", "ihtiyat": true},
+  {"id": "C12", "bolum": "onem", "iddia": "Tablonun sahipleri arasında Émile Schuffenecker, Gustave Fayet ve Paul Rosenberg vardır.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Émile Schuffenecker (Q286456) owned by (P127): Gustave Fayet (Q2242900) owned by (P127): Paul Rosenberg (Q560643)", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Tablo 1946'dan beri Buffalo AKG Art Museum koleksiyonundadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Buffalo AKG Art Museum (Q1970945) [start time: 1946]", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Tablonun envanter numarası 1946:4'tür.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 1946:4", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Sarı İsa için yapılmış kurşun kalem etüdü Thyssen-Bornemisza Müzesi'nde korunmaktadır.", "kaynak": "enwiki.txt", "alinti": "A study for The Yellow Christ in pencil is preserved in the Thyssen-Bornemisza Museum", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Suluboya versiyonu Art Institute of Chicago koleksiyonundadır ve Elizabeth F. Chapman'ın armağanıdır.", "kaynak": "enwiki.txt", "alinti": "a version in watercolor is in the collection of the Art Institute of Chicago, gift of Elizabeth F. Chapman", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Tablo; Sembolizm, cloisonnizm, Post-empresyonizm, Empresyonizm, primitivizm ve Pont-Aven Okulu akımlarıyla ilişkilidir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Symbolism (Q164800) movement (P135): cloisonnism (Q889525) movement (P135): Post-impressionism (Q166713) movement (P135): Impressionism (Q40415) movement (P135): primitivism (Q848365) movement (P135): Pont-Aven School (Q382056)", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Tablo dinî sanat türündedir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: sipariş amacı, modelin kimliği veya ayrıntılı yorum kaynakta yok",
+  "kompozisyon: alt çizim, restorasyon veya ışık düzeni bilgisi kaynakta yok",
+  "hikaye: sahnenin hangi metinden alındığına dair ayrıntı kaynakta yok"
+ ]
+}
