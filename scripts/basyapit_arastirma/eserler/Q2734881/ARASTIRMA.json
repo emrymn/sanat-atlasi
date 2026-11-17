@@ -1,0 +1,291 @@
+{
+ "anahtar": "Q2734881",
+ "baslik_tr": "Meryem'e Müjde",
+ "kunye": {
+  "sanatci": {
+   "deger": "Jan van Eyck",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Jan van Eyck (Q102272)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1434–1436",
+   "kaynak": "enwiki.txt",
+   "alinti": "from around 1434–1436",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)"
+  },
+  "olcu": {
+   "deger": "90,2 × 34,1 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 90.2 centimetre width (P2049): 34.1 centimetre"
+  },
+  "yer": {
+   "deger": "National Gallery of Art, Washington, D.C.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The panel is housed in the National Gallery of Art in Washington, D.C."
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Resim, Başmelek Cebrail'in Bakire Meryem'e Tanrı'nın oğlunu doğuracağını müjdelediği olayı betimler (Luka 1:26–38).",
+   "kaynak": "enwiki.txt",
+   "alinti": "The picture depicts the Annunciation by the Archangel Gabriel to the Virgin Mary that she will bear the son of God (Luke 1:26–38).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Meryem alçakgönüllülükle geri çekilir ve ECCE ANCILLA D[OMI]NI ('İşte Rabbin hizmetkârı') sözleriyle karşılık verir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She modestly draws back and responds, ECCE ANCILLA D[OMI]NI ('Behold the handmaiden of the Lord').",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Yazıt, Cebrail'in sözlerini gösterir: AVE GRA PLENA ('Selam, lütufla dolu olan').",
+   "kaynak": "enwiki.txt",
+   "alinti": "The picture depicts the Annunciation by the Archangel Gabriel to the Virgin Mary that she will bear the son of God (Luke 1:26–38). The inscription shows his words: AVE GRA PLENA ('Hail, full of grace...').",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in sözleri baş aşağı görünür, çünkü Tanrı'ya yöneliktir ve bu nedenle Tanrı'nın bakış açısıyla yazılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The words appear upside down because they are directed to God and are therefore inscribed with a God's-eye view.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Kutsal Ruh'un yedi armağanı, soldaki üst pencereden gelen yedi ışık huzmesiyle Meryem'e iner; Kutsal Ruh'u simgeleyen güvercin de aynı yolu izler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The seven gifts of the Holy Spirit descend to her on seven rays of light from the upper window to the left, with the dove symbolizing the Holy Spirit following the same path",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Her iki figürün de halesi yoktur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Neither figure has a halo",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in duruşu belirsizdir; ayakta mı, diz çökmüş mü yoksa oturuyor mu olduğu kesin değildir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mary's posture is ambiguous; it is not clear if she is standing, kneeling or sitting.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Meryem, her zamanki mavisiyle, kralliyete ayrılmış kakım kürküyle süslenmiş bir kaftan giyer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mary wears a robe in her usual blue, which is trimmed in ermine, reserved for royalty",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Meryem, üzerinde bir kitap bulunan bir masaya dönüktür ve elleri expansis manibus denilen bir jestle kaldırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mary is facing a table with a book upon it about the right size to be a Gospel Book or Missal, and has her hands raised in a gesture known as the expansis manibus.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "kompozisyon",
+   "iddia": "Eser başlangıçta panel üzerindeydi ancak tuvale aktarılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was originally on panel but has been transferred to canvas.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Mimari, yukarıda daha eski, yuvarlak Romanesk biçimlerden aşağıda (hafifçe) sivri Gotik kemerlere geçer; üst katmanlar büyük ölçüde karanlık, zemin katı ise iyi aydınlatılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The architecture moves from older, round Romanesque forms above, to (slightly) pointed Gothic arches below, with the higher levels largely in darkness, and the floor level well-lit.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Varak yalnızca soldan giren yedi ışık huzmesi için kullanılmıştır; Cebrail'in üzerindeki tüm altın için boya kullanılmış, çoğu zaman ıslak üzerine ıslak çalışılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Gold leaf is only used for the seven rays coming in from the left; paint is used for all the gold on Gabriel, often worked wet-on-wet to achieve the textural effects of his brocaded clothes.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Alt çizim, el ve yüz konumlarındaki birkaç küçük değişikliğin yanı sıra, sol duvardaki küçük pilasterlerin başlangıçta arka duvarda da tekrarlanmasının ve çok daha uzun olmasının planlandığını gösterir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Apart from several small changes in the position of hands and faces, the underdrawing shows that the small pilasters on the left wall were originally planned to be repeated on the rear wall, and to be much taller, reaching nearly to the roof, on both.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Zambak vazosu alt çizimde yoktu ve boya içinde yeri ayrılmamıştı; bu, vazoya resim sürecinin geç aşamasında eklendiğini düşündürür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The vase of lilies was not only absent in the underdrawing, but was not reserved, that is to say that a space was not left for it in the paint for the Virgin's robe or the floor. This suggests it was only added late in the course of painting.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Taburenin arkasındaki gölgeli bir alanda van Eyck, bir glazürü parmaklarıyla işlemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In a shadowy area behind the stool van Eyck worked a glaze with his fingers.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Tapınağın bezemesi Eski Ahit'ten gelir; gösterilen konular, Orta Çağ'da Mesih İsa'nın gelişini önceden bildirdiğine inanılan konulardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The decoration of the temple is naturally all derived from the Old Testament, but the subjects shown are those believed in the Middle Ages to prefigure the coming of Christ the Messiah.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Zemin karolarında Davud'un Golyat'ı öldürmesi (ön merkez), İsa'nın şeytan üzerindeki zaferinin önceden bildirilmesi olarak yorumlanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the floor tiles David's slaying of Goliath (centre front) foretells Christ's triumph over the devil.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Orta Çağ otoritelerine göre, arkadaki Samson'un Filistinlilerin tapınağını yıkması hem Çarmıha Geriliş'i hem de Son Yargı'yı önceden bildirir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Behind this, Samson pulls down the Temple of the Philistines, prefiguring both the Crucifixion and the Last Judgement, according to medieval authorities.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Zambaklar, Meryem'in geleneksel bir niteliğidir ve saflığı temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The lilies are a traditional attribute of Mary, standing for purity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Boş tabure, erken Bizans sanatına uzanan ve İsa'yı simgeleyen bir 'boş taht' olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The empty stool may be an \"empty throne\", a symbol for Christ going back to early Byzantine art.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Meryem'e, Burgonya Dükü İyi Philip'in eşi Portekizli Isabella'nın yüz hatlarının verildiği öne sürülmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It has been suggested that Mary has been given the features of Isabella of Portugal, wife of Philip the Good, Duke of Burgundy, who may well have commissioned the painting from van Eyck, his (part-time) court painter.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Cebrail, Müjde zamanının burcu olan Koç burcu işaretinin üzerine yerleştirilmiş görünür; Meryem ise kendi burcu Başak üzerinde durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Gabriel appears to be placed over the sign of Aries, the sign for the time of the Annunciation. The Virgin Mary stands over her own sign, Virgo.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Müjde, ikonografisi hâlâ sanat tarihçileri tarafından tartışılan, son derece karmaşık bir eserdir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Annunciation is a highly complex work whose iconography is still debated by art historians.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablonun bir triptiğin sol (iç) kanadı olduğu düşünülmektedir; diğer kanatlar 1817'den öncesinden beri görülmemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is thought that it was the left (inner) wing of a triptych; there has been no sighting of the other wings since before 1817.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Tablo, Rusya Çarı tarafından Hermitage Müzesi için satın alınmış, ancak 1930'da Stalin hükümeti tarafından satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was bought by the Tsar of Russia for the Hermitage Museum, but was sold by Stalin's government in 1930.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "1850'de Lahey'deki bir açık artırmada Rusya Çarı Nikola tarafından Sankt Petersburg'daki Hermitage Müzesi için satın alındı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "1850 – Lot 1 in an auction in The Hague, bought by Czar Nicholas I of Russia for the Hermitage Museum in Saint Petersburg.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "1930'da Andrew Mellon tarafından satın alınan tablo, 1931'de Mellon Trust'a devredilmiş, trust da 1937'de National Gallery of Art'a bağışlamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "1930 – Bought by Andrew Mellon via the consortium described above. In 1931 it was deeded to the Mellon Trust, which gifted it in 1937 to the National Gallery of Art, whose construction began in that year.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "İki otorite tabloyu, 1426'da ölen Jan'ın kardeşi Hubert van Eyck'e atfetmiştir; son temizlik veya teknik incelemenin, tablonun Jan'a ait özgün bir eser olduğu yönündeki çoğunluk görüşünü doğruladığı düşünülmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Two authorities have considered the painting to belong to Jan's brother Hubert van Eyck, who died in 1426. It is thought that the recent cleaning or technical investigation has tended to confirm the majority view that it is an autograph work by Jan.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Tablo, üslup bakımından Gent Sunağı ile Berlin'deki Kilisede Bakire gibi geç dönem eserleri arasında yer alıyor görünmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting appears stylistically to come between the Ghent Altarpiece and late works such as the Berlin Virgin in a Church.",
+   "ihtiyat": true
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1435 (precision: decade) [sourcing circumstances: circa (Q5727902)]"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "from around 1434–1436"
+   }
+  },
+  {
+   "konu": "yer",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "description (tr): Jan van Eyck tablosu (Ulusal Gal., Londra)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The panel is housed in the National Gallery of Art in Washington, D.C."
+   }
+  }
+ ],
+ "bulunamadi": []
+}
