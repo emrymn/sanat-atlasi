@@ -1,6 +1,6 @@
 {
  "surum": 1,
- "aciklama": "İş 189: başyapıtlara eklenecek 110 aday. Ölçüt: konusunun hikâyesi var (data/eser_konulari.json k → data/ikonografi.json hikaye), en büyük kopyanın uzun kenarı ≥ 3000 px (R2'deki d/ dosyasından ölçüldü: en × boy), QID'li, başyapıtlarda yok. Sıra: bilinirlik + tipiklik; sanatçı başına en çok 3, konu başına en çok 3 (Meryem ve Çocuk 5), akım başına en çok 13. yil/muze önbellekten gelir, künye değildir: künyeyi araştırma doğrular. parti: onar eserlik Qwen oturumu.",
+ "aciklama": "İş 189: başyapıtlara eklenecek 110 aday. Ölçüt: konusunun hikâyesi var (data/eser_konulari.json k → data/ikonografi.json hikaye), en büyük kopyanın uzun kenarı ≥ 3000 px (R2'deki d/ dosyasından ölçüldü: en × boy), QID'li, başyapıtlarda yok. Sıra: bilinirlik + tipiklik; sanatçı başına en çok 3, konu başına en çok 3 (Meryem ve Çocuk 5), akım başına en çok 13. yil/muze önbellekten gelir, künye değildir: künyeyi araştırma doğrular. parti: onar eserlik Qwen oturumu. Turner · Parlamento'nun Yanışı (Q60514853, Cleveland nüshası) Wikipedia maddesi olmadığı için çıkarıldı; ilk yedek Zurbarán · Antakyalı Aziz Margaret'in maddesi de çok kısaydı (500 karakter); yerine Jan van Eyck · Meryem'e Müjde (Q2734881, NGA).",
  "eserler": [
   {
    "sira": 1,
@@ -1517,20 +1517,20 @@
   {
    "sira": 85,
    "parti": 9,
-   "anahtar": "Q60514853",
-   "sanatci": "j-m-w-turner",
-   "akim": "Romantizm",
-   "baslik": "Parlamento Binalarının Yanışı, 16 Ekim 1834",
-   "ozgun": "Burning of Houses of Parliament October 16, 1834",
-   "yil": 1835,
-   "muze": null,
-   "konu": "burning-of-the-houses-of-parliament",
-   "gorsel": "a77034b89e103112",
-   "en": 4096,
-   "boy": 3041,
-   "gorsel_kaynagi": "commons",
-   "commons_dosya": "Joseph_Mallord_William_Turner,_English_-_The_Burning_of_the_Houses_of_Lords_and_Commons,_October_16,_1834_-_Google_Art_Project.jpg",
-   "bilinirlik": 7
+   "anahtar": "Q2734881",
+   "sanatci": "jan-van-eyck",
+   "akim": "Kuzey Rönesansı",
+   "baslik": "Meryem'e Müjde",
+   "ozgun": "Meryem'e Müjde",
+   "yil": 1435,
+   "muze": "Andrew W. Mellon collection",
+   "konu": "annunciation",
+   "gorsel": "b486cfb555a5a186",
+   "en": 1553,
+   "boy": 4096,
+   "gorsel_kaynagi": "nga",
+   "commons_dosya": null,
+   "bilinirlik": 17
   },
   {
    "sira": 86,
