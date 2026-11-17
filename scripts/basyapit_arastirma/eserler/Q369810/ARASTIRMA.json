@@ -1,0 +1,46 @@
+{
+ "anahtar": "Q369810",
+ "baslik_tr": "İlk Yas",
+ "kunye": {
+  "sanatci": {"deger": "William-Adolphe Bouguereau", "kaynak": "wikidata.txt", "alinti": "creator (P170): William-Adolphe Bouguereau (Q483992)"},
+  "tarih": {"deger": "1888", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1888", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "203 × 250 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 203 centimetre width (P2049): 250 centimetre"},
+  "yer": {"deger": "Museo Nacional de Bellas Artes, Buenos Aires, Arjantin", "kaynak": "enwiki.txt", "alinti": "It is in the Museo Nacional de Bellas Artes in Buenos Aires, Argentina."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, Adem ile Havva'nın, Kabil tarafından öldürülen oğulları Habil'in cesedini bulmalarının hemen sonraki anı betimler.", "kaynak": "enwiki.txt", "alinti": "This work depicts the moment after Adam and Eve just found the body of their son Abel, who was murdered by Cain.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Habil'in öldürülmesi, Kutsal Kitap'ta kaydedilen ilk insan ölümüdür.", "kaynak": "enwiki.txt", "alinti": "This work depicts the moment after Adam and Eve just found the body of their son Abel, who was murdered by Cain. This is the first human death recorded in the Bible.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Eser, Yaratılış Kitabı'na dayanır.", "kaynak": "wikidata.txt", "alinti": "based on (P144): Book of Genesis (Q9184)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Resimde Adem betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Adam (Q70899)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resimde Havva betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Eve (Q830183)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Resimde Habil betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Abel (Q313421)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resimde bir ceset betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): corpse (Q48422)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Resimde yas betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): mourning (Q750652)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Resimde bir aile betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): family (Q8436)", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Resimde gözyaşı betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): tear (Q76469)", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Resimde keder betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): grief (Q1026040)", "ihtiyat": false},
+  {"id": "C12", "bolum": "gorunen", "iddia": "Resimde sarılma betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): hug (Q328703)", "ihtiyat": false},
+  {"id": "C13", "bolum": "gorunen", "iddia": "Resimde diz çökme betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): kneeling (Q8866546)", "ihtiyat": false},
+  {"id": "C14", "bolum": "gorunen", "iddia": "Resimde oturma betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sitting (Q1144593)", "ihtiyat": false},
+  {"id": "C15", "bolum": "gorunen", "iddia": "Resimde çıplaklık betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): nudity (Q10791)", "ihtiyat": false},
+  {"id": "C16", "bolum": "gorunen", "iddia": "Resimde peştamal betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): loincloth (Q1130359)", "ihtiyat": false},
+  {"id": "C17", "bolum": "gorunen", "iddia": "Resimde kaya betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): rock (Q8063)", "ihtiyat": false},
+  {"id": "C18", "bolum": "gorunen", "iddia": "Resimde bir ova betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): plain (Q160091)", "ihtiyat": false},
+  {"id": "C19", "bolum": "gorunen", "iddia": "Resimde gökyüzü betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sky (Q527)", "ihtiyat": false},
+  {"id": "C20", "bolum": "gorunen", "iddia": "Resimde bulut betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): cloud (Q8074)", "ihtiyat": false},
+  {"id": "C21", "bolum": "kompozisyon", "iddia": "Eser, akademik sanat akımı içinde yer alır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): academic art (Q189458)", "ihtiyat": false},
+  {"id": "C22", "bolum": "anlam", "iddia": "Eserin özgün adı Fransızca 'Premier Deuil'dır; 'The First Mourning' bu adın birebir çevirisidir.", "kaynak": "enwiki.txt", "alinti": "Its original name is \"Premier Deuil\", in French, of which \"The First Mourning\" is a literal translation.", "ihtiyat": false},
+  {"id": "C23", "bolum": "anlam", "iddia": "Eser, dinî sanat türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Bouguereau, bu eseri yapmadan kısa süre önce ikinci oğlunu kaybetmişti.", "kaynak": "enwiki.txt", "alinti": "Bouguereau had suffered the loss of his second son shortly before painting this work.", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Eserin envanter numarası 2770'tir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 2770", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "olcu (genişlik)", "a": {"kaynak": "wikidata.txt", "alinti": "width (P2049): 250 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "Its dimensions are 203 by 252 centimetres (80 in × 99 in)."}}
+ ],
+ "bulunamadi": [
+  "anlam: kaynakta simge yorumu ya da model kimliği yok; yalnız özgün ad çevirisi ve tür sınıflaması var",
+  "kompozisyon: kaynakta ışık, renk ve düzen ayrıntısı yok",
+  "onem: sipariş, satış ve sergi geçmişi kaynakta yok"
+ ]
+}

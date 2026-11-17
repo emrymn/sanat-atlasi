@@ -1,0 +1,35 @@
+{
+ "anahtar": "Q3884945",
+ "baslik_tr": "Bahçede Acı Çekme",
+ "kunye": {
+  "sanatci": {"deger": "Andrea Mantegna", "kaynak": "wikidata.txt", "alinti": "creator (P170): Andrea Mantegna (Q5681)"},
+  "tarih": {"deger": "yaklaşık 1455–1456", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1450 (precision: decade) [sourcing circumstances: circa (Q5727902); start time: 1455; end time: 1456]", "ihtiyat": true},
+  "teknik": {"deger": "tempera, panel", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "62,9 × 80 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 62.9 centimetre width (P2049): 80 centimetre"},
+  "yer": {"deger": "National Gallery", "kaynak": "wikidata.txt", "alinti": "location (P276): National Gallery (Q180788)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun ana konusu, Bahçede Acı Çekme (Agony in the Garden) sahnesidir.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Agony in the Garden (Q2467856)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "İsa'ya ihanet eden havari Judas, onu tutuklamak üzere Kudüs'ten bir grup asker getirir.", "kaynak": "enwiki.txt", "alinti": "Judas, the disciple who betrayed Christ, leads a group of soldiers (centre right) from Jerusalem to arrest him.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Eserin türü dini sanat (religious art) olarak kaydedilmiştir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "İsa, resmin merkezinde dua ederken betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting shows Christ (at the centre) praying before a group of cherubs (at upper left) who are holding instruments of the Passion.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resmin sol üstünde, Passion araçlarını tutan bir grup cherub görülür.", "kaynak": "enwiki.txt", "alinti": "The painting shows Christ (at the centre) praying before a group of cherubs (at upper left) who are holding instruments of the Passion.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "İsa'nın havarileri Petrus, Yakup ve Yuhanna resmin alt kısmında uyurken görülür.", "kaynak": "enwiki.txt", "alinti": "Meanwhile, Christ's disciples Peter, James and John sleep (bottom).", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Judas'ın yönettiği asker grubu resmin orta sağ kısmında yer alır.", "kaynak": "enwiki.txt", "alinti": "Judas, the disciple who betrayed Christ, leads a group of soldiers (centre right) from Jerusalem to arrest him.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Eser tempera ve panel malzemeleriyle yapılmıştır.", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Eserin yüksekliği 62,9 cm, genişliği 80 cm'dir.", "kaynak": "wikidata.txt", "alinti": "height (P2048): 62.9 centimetre width (P2049): 80 centimetre", "ihtiyat": false},
+  {"id": "C10", "bolum": "onem", "iddia": "Mantegna'nın kayınbiraderi Giovanni Bellini'nin, konuyu kendi betimleyişinde bu tablodan esinlenmiş olduğu düşünülür.", "kaynak": "enwiki.txt", "alinti": "Mantegna's brother-in-law Giovanni Bellini is considered to have been inspired by this painting for his own depiction of the subject, painted between 1460 and 1465 and also in the National Gallery.", "ihtiyat": true},
+  {"id": "C11", "bolum": "onem", "iddia": "Eser, 1894'ten itibaren National Gallery koleksiyonundadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): National Gallery (Q180788) [start time: 1894]", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Eserin sahibi olarak Thomas Baring, 1st Earl of Northbrook kaydedilmiştir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Thomas Baring, 1st Earl of Northbrook (Q337771)", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Eserin envanter numarası NG1417'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): NG1417", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser, Londra'daki National Gallery'de bulunmaktadır.", "kaynak": "enwiki.txt", "alinti": "in the National Gallery, London", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1450 (precision: decade) [sourcing circumstances: circa (Q5727902); start time: 1455; end time: 1456]"}, "b": {"kaynak": "enwiki.txt", "alinti": "is a painting of 1455–1456 by the Italian artist Andrea Mantegna"}}
+ ],
+ "bulunamadi": [
+  "anlam: kaynakta simge, yorum, model kimliği ya da sipariş amacı bilgisi yok",
+  "hikaye: olayın hangi İncil bölümünden alındığı kaynakta belirtilmemiş",
+  "kompozisyon: ışık, renk, düzen, alt çizim ya da restorasyon bilgisi kaynakta yok"
+ ]
+}

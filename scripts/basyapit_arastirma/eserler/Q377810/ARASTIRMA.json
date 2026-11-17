@@ -1,0 +1,43 @@
+{
+ "anahtar": "Q377810",
+ "baslik_tr": "Altın Buzağıya Tapınma",
+ "kunye": {
+  "sanatci": {"deger": "Nicolas Poussin", "kaynak": "wikidata.txt", "alinti": "creator (P170): Nicolas Poussin (Q41554)"},
+  "tarih": {"deger": "1633–1634", "kaynak": "enwiki.txt", "alinti": "produced between 1633 and 1634", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "153.4 × 211.8 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 153.4 centimetre width (P2049): 211.8 centimetre"},
+  "yer": {"deger": "National Gallery, Londra", "kaynak": "enwiki.txt", "alinti": "It is held in the National Gallery, in London."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Konu, Çıkış (Exodus) Kitabı'nın 32'inci bölümünde anlatılan, İsraillilerin altın buzağıya tapınmasıdır.", "kaynak": "enwiki.txt", "alinti": "It depicts the adoration of the golden calf by the Israelites, from chapter 32 of the Book of Exodus.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Hikâyede Harun, Musa'nın Sina Dağı'na çıkışı sırasında halkın altınlarını toplayarak Altın Buzağı'yı yapmıştır.", "kaynak": "enwiki.txt", "alinti": "during Moses' ascent to Mount Sinai, Aaron gathered the people's gold to build a Golden Calf", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Musa, Yeşu ile birlikte geri döndüğünde putperestlik sahnesini görür.", "kaynak": "enwiki.txt", "alinti": "Moses, returning back with Joshua, discovers the scene of idolatry", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Altın Buzağı, kompozisyonun merkezinin biraz solunda, süslü bir kaideyle taçlandırılmış bir taban üzerinde yer alır.", "kaynak": "enwiki.txt", "alinti": "The canvas shows the Golden Calf, placed on a base surmounted by an ornate pedestal, slightly at the left of the center of the composition", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Altın Buzağı, solda kadın ve erkek dansçılardan oluşan bir farandole halkası ve sağda diz çökmüş bir kalabalık tarafından çevrelenmiştir.", "kaynak": "enwiki.txt", "alinti": "the Golden Calf, placed on a base surmounted by an ornate pedestal, slightly at the left of the center of the composition, who is surrounded by a farandole of female and male dancers, on the left, and a kneeling crowd, on the right", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Sağdaki diz çökmüş kalabalık, beyaz giysili görünen Harun'a eğilerek kulak vermektedir.", "kaynak": "enwiki.txt", "alinti": "a kneeling crowd, on the right, leaning and listening to Aaron, who appears dressed in white", "ihtiyat": true},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resmin dekorunda iki yanda iki ağaç bulunur: sağda kurumuş bir ağaç, solda yapraklı bir ağaç.", "kaynak": "enwiki.txt", "alinti": "The decoration of the painting includes two trees on either side, a dry one on the right, and another bearing foliage on the left", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Soldaki yapraklı ağaç, dağdan inen iki adamın, Musa ve Yeşu'nun, yönündedir.", "kaynak": "enwiki.txt", "alinti": "and another bearing foliage on the left, in the direction of the two men descending from the mountain, Moses and Joshua", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Musa, Yasa levhalarını başının üstünde tutmaktadır ve halkın putperestliğine öfkelenerek onları kırmak üzeredir.", "kaynak": "enwiki.txt", "alinti": "Moses, who holds the tablets of the Law above his head, is about to break them, in outrage over the idolatry of the people.", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Tablonun boyutları 153.4 × 211.8 santimetredir.", "kaynak": "wikidata.txt", "alinti": "height (P2048): 153.4 centimetre width (P2049): 211.8 centimetre", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Eserin ait olduğu akım Klasisizm'dir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Classicism (Q170292)", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Altın Buzağı, Mısır tanrılarından esinlenilmiş bir put olarak tanımlanır.", "kaynak": "enwiki.txt", "alinti": "an idol inspired by the Egyptians deities", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Buzağıya tapınma, On Emir'in üçüncü emrinin yasağına aykırıdır.", "kaynak": "enwiki.txt", "alinti": "despite the prohibition of the third commandment of the Decalogue", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser, The Crossing of the Red Sea ile bir çift oluşturmak üzere Amadeo dal Pozzo tarafından sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "It was made as part of a pair of paintings (the other being The Crossing of the Red Sea) commissioned by Amadeo dal Pozzo, Marchese di Voghera of Turin", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Sipariş sahibi Amadeo dal Pozzo, Poussin'in Roma'daki ana hamisi Cassiano dal Pozzo'nun kuzeniydi.", "kaynak": "enwiki.txt", "alinti": "commissioned by Amadeo dal Pozzo, Marchese di Voghera of Turin, a cousin to Cassiano dal Pozzo, Poussin's main sponsor in Rome", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "1685'e gelindiğinde resim çifti Chevalier de Lorraine'e geçmişti.", "kaynak": "enwiki.txt", "alinti": "By 1685 the pair had passed to the Chevalier de Lorraine", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Çift, 1710'da Benigne de Ragois de Bretonvillers tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "in 1710 they were bought by Benigne de Ragois de Bretonvillers", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Çift, 1741'de Samuel'den Sir Jacob Bouverie tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "In 1741 they were bought from Samuel by Sir Jacob Bouverie", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Sir Jacob Bouverie'nin oğlu William, ilk Radnor Kontu olmuştur.", "kaynak": "enwiki.txt", "alinti": "Sir Jacob Bouverie, whose son William became the first Earl of Radnor", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Radnor Kontları çifti 1945'e kadar elinde tutmuş ve o yıl çift ilk kez bölünmüştür.", "kaynak": "enwiki.txt", "alinti": "The Earls of Radnor owned the pair from then until 1945, when it was split for the first time", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Altın Buzağıya Tapınma, Londra'daki National Gallery tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "The Adoration of the Golden Calf bought by the National Gallery in London", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Satın alma bedeli 10.000 sterlin olup yarısını Art Fund karşılamıştır.", "kaynak": "enwiki.txt", "alinti": "for £10,000, half of which was contributed by the Art Fund", "ihtiyat": false},
+  {"id": "C23", "bolum": "onem", "iddia": "Tablo, National Gallery'nin 19 numaralı odasında asılıdır.", "kaynak": "enwiki.txt", "alinti": "It now hangs in Room 19 of the National Gallery", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "17 Temmuz 2011'de tablo, Poussin'in The Adoration of the Shepherds adlı eseriyle birlikte kırmızı sprey boyayla vandalize edilmiştir.", "kaynak": "enwiki.txt", "alinti": "where it and Poussin's The Adoration of the Shepherds were vandalised with red spray paint on 17 July 2011", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Fransızca konuşan vandal, çıplak figürlerin çoğunu örtmüştür.", "kaynak": "enwiki.txt", "alinti": "The French-speaking vandal covered up most of the nude figures.", "ihtiyat": false},
+  {"id": "C26", "bolum": "onem", "iddia": "Eserin envanter numarası NG5597'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): NG5597", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1634"}, "b": {"kaynak": "enwiki.txt", "alinti": "produced between 1633 and 1634"}}
+ ],
+ "bulunamadi": []
+}

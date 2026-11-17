@@ -1,0 +1,30 @@
+{
+ "anahtar": "Q743643",
+ "baslik_tr": "Marangoz Yusuf",
+ "kunye": {
+  "sanatci": {"deger": "Georges de La Tour", "kaynak": "wikidata.txt", "alinti": "creator (P170): Georges de La Tour (Q203371)"},
+  "tarih": {"deger": "yaklaşık 1642", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1642 [sourcing circumstances: circa (Q5727902)]", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "137 × 102 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 137 centimetre width (P2049): 102 centimetre"},
+  "yer": {"deger": "Louvre Resim Bölümü", "kaynak": "wikidata.txt", "alinti": "collection (P195): Department of Paintings of the Louvre (Q3044768)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, dünyevi babası Aziz Yusuf ile birlikte genç İsa'yı betimler.", "kaynak": "enwiki.txt", "alinti": "The painting depicts a young Jesus with Saint Joseph, his earthly father.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Yusuf, bir burgu ile bir tahta parçasını delmektedir.", "kaynak": "enwiki.txt", "alinti": "Joseph drills a piece of wood with an auger.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Tablonun ana konusu Yusuf'tur.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Joseph (Q145746)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Zeminde dizili tahtalar, oturan çocuk İsa'ya çapraz yerleştirilmiştir.", "kaynak": "enwiki.txt", "alinti": "the wood arrayed on the floor, set cross-wise to the seated child Christ", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Genç İsa, kutsama verir gibi eli kaldırılmış biçimde temsil edilir.", "kaynak": "enwiki.txt", "alinti": "the young Christ is represented, hand raised, as if in benediction", "ihtiyat": true},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Mum ışığı tenin içinden geçerek parlar.", "kaynak": "enwiki.txt", "alinti": "with the candlelight shining through the flesh", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "La Tour'un bu tenebrist tablolarının tümünde tek ve güçlü bir ışık kaynağı, düşen gölgelerle çevrili olarak merkezi bir ögedir.", "kaynak": "enwiki.txt", "alinti": "This painting, created ca. 1642, is one of several tenebrist paintings by La Tour. Others include The Education of the Virgin, the Penitent Magdalene, and The Dream of Saint Joseph. In all these works, a single, strong light source is a central element, surrounded by cast shadows.", "ihtiyat": false},
+  {"id": "C08", "bolum": "anlam", "iddia": "Burgunun biçimi Haç'ın biçimini yansıtır.", "kaynak": "enwiki.txt", "alinti": "The shape of the auger reflects the shape of the Cross", "ihtiyat": false},
+  {"id": "C09", "bolum": "anlam", "iddia": "Zeminde dizili tahtaların oturan çocuk İsa'ya çapraz duran geometrisi, çarmıha gerilmeyi önceden haber verir.", "kaynak": "enwiki.txt", "alinti": "the geometry of the wood arrayed on the floor, set cross-wise to the seated child Christ, is a foreshadowing of the crucifixion", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Mum ışığının tenin içinden geçmesi, İsa'nın 'Dünyanın Işığı' oluşuna alegorik bir göndermedir.", "kaynak": "enwiki.txt", "alinti": "with the candlelight shining through the flesh as an allegorical reference to Christ as the \"Light of the World.\"", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "John Rupert Martin'e göre İsa'nın sabrı, evlat itaatini ve şehit olarak kaderini kabulü temsil eder.", "kaynak": "enwiki.txt", "alinti": "John Rupert Martin writes that Jesus' patience represents \"filial obedience and the acceptance of his destiny as martyr\".", "ihtiyat": true},
+  {"id": "C12", "bolum": "onem", "iddia": "Yaklaşık 1642'de yaratılan bu tablo, La Tour'un birkaç tenebrist tablosundan biridir.", "kaynak": "enwiki.txt", "alinti": "This painting, created ca. 1642, is one of several tenebrist paintings by La Tour.", "ihtiyat": true},
+  {"id": "C13", "bolum": "onem", "iddia": "Tablo Fransız Devleti'nin mülkiyetindedir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): French State (Q3591845)", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eserin envanter numarası RF 1948-27'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): RF 1948-27", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Tablo 912 numaralı odada bulunur.", "kaynak": "wikidata.txt", "alinti": "location (P276): Room 912 (Q29995082)", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": []
+}

@@ -1,0 +1,36 @@
+{
+ "anahtar": "Q2504917",
+ "baslik_tr": "Yeşil İsa",
+ "kunye": {
+  "sanatci": {"deger": "Paul Gauguin", "kaynak": "wikidata.txt", "alinti": "creator (P170): Paul Gauguin (Q37693)"},
+  "tarih": {"deger": "1889", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1889", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "92 × 73.5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 92 centimetre width (P2049): 73.5 centimetre"},
+  "yer": {"deger": "Royal Museums of Fine Arts of Belgium", "kaynak": "wikidata.txt", "alinti": "location (P276): Royal Museums of Fine Arts of Belgium (Q377500)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Resim, İsa'nın çarmıha gerilişini betimleyen yeşil tonlu bir kalvaryanın dibinde Breton bir kadını gösterir.", "kaynak": "enwiki.txt", "alinti": "It depicts a Breton woman at the foot of a calvary, or green-tinted sculpture of Christ's crucifixion.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "İsa heykeli, çarmıha gerilme olayından sonraki hâliyle gösterilir.", "kaynak": "enwiki.txt", "alinti": "The statue of Christ, shown after the crucifixion, has an elongated, motionless body supported by the three Marys, whose expressions are somber.", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "İsa'nın uzamış, hareketsiz bedeni üç Meryem tarafından desteklenir.", "kaynak": "enwiki.txt", "alinti": "The statue of Christ, shown after the crucifixion, has an elongated, motionless body supported by the three Marys, whose expressions are somber.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Kadın geleneksel, mütevazı Breton kıyafetleri giyer.", "kaynak": "enwiki.txt", "alinti": "This woman wears traditional, modest Breton clothing and holds a black lamb in her left hand.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kadın sol elinde siyah bir kuzu tutar.", "kaynak": "enwiki.txt", "alinti": "This woman wears traditional, modest Breton clothing and holds a black lamb in her left hand.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Betimlenen yer, topografik olarak Le Pouldu'daki Atlantik kıyısıdır.", "kaynak": "enwiki.txt", "alinti": "Topographically, the site depicted is the Atlantic coast at Le Pouldu.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Betimlenen kalvaryanın kendisi, farklı yerlerdeki birkaç kalvaryanın birleşimidir.", "kaynak": "enwiki.txt", "alinti": "the calvary depicted is an amalgam of several calvaries from different places", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Kalvaryanın haçı, Pont-Aven'e yakın bir topluluk olan Névez'in merkezindeki haça dayanır.", "kaynak": "enwiki.txt", "alinti": "the cross is based upon that in the centre of Névez, a community close to Pont-Aven, located several miles from the coast", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "İsa figürü, denizden bir miktar uzaklıktaki Briec'te bulunan kalvaryaya dayanır.", "kaynak": "enwiki.txt", "alinti": "the figure of Christ is based upon the calvarie at Briec, also at some distance from the sea", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Gauguin, gerçekçiliğe çalışmak yerine insan acısının durumunu doğalcı olmayan biçim ve renk yoluyla duygusal olarak aktarmayı amaçlamıştır.", "kaynak": "enwiki.txt", "alinti": "Rather than striving for realism, Gauguin sought to convey emotionally the condition of human suffering through non-naturalistic form and color.", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Güçlü Katolik inançları ve geleneksel göreneklere bağlılıklarıyla tanınan Breton halkı, Gauguin'in onların özgün maneviyatını bu eserde betimlemesine ilham vermiştir.", "kaynak": "enwiki.txt", "alinti": "The Breton people, known for their strong Catholic faith and adherence to traditional customs, inspired Gauguin’s portrayal of their authentic spirituality in The Green Christ.", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Bu imge hem Breton kültürünü hem de dinî simgeciliği vurgular.", "kaynak": "enwiki.txt", "alinti": "This image emphasizes both Breton culture and religious symbolism.", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Eser, Paul Gauguin tarafından 20 Kasım 1889'da Pont-Aven, Brittany'de yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "executed by Paul Gauguin on November 20, 1889 in Pont-Aven, Brittany", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser, 1922'den beri Royal Museums of Fine Arts of Belgium koleksiyonunda yer almaktadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Royal Museums of Fine Arts of Belgium (Q377500) [start time: 1922]", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Eserin envanter numarası 4416'dır.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 4416", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "betimlenen kalvaryanın kimliği", "a": {"kaynak": "wikidata.txt", "alinti": "depicts (P180): Calvaire de Nizon (Q22990992)"}, "b": {"kaynak": "enwiki.txt", "alinti": "the calvary depicted is an amalgam of several calvaries from different places"}}
+ ],
+ "bulunamadi": [
+  "hikaye: betimlenen sahnenin hangi İncil bölümüne dayandığı kaynakta belirtilmiyor",
+  "anlam: sipariş amacı ve kadın modelin kimliği kaynakta yok",
+  "onem: 1922 öncesi sahiplik ve yer değiştirme geçmişi kaynakta yok"
+ ]
+}
