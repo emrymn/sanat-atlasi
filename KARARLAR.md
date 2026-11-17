@@ -2484,3 +2484,13 @@ tek görselde birleştirildi: 1498 × 1920, ad `78e0e776ae7bbef8` (Wikidata'daki
 `gorseller/k`'de, 1280'lik ve büyük kopya `scripts/basyapit_arastirma/gorsel_ek/`'te, R2'ye Mac'te `r2_ek_yukle.py` ile yüklenecek).
 Gravür bu kayıttan `gorsel_cikar` ile çıkarıldı (başka eser); tarih 1507 (kurs slaytındaki 1504 gravürün). `scripts/ayrinti/denetle.py`
 artık `gorsel_cikar`'ı da uyguluyor (uygulamadaki gibi). 6 nokta; 184 başyapıt, 1043 nokta. Birim 388/388, uçtan uca 13/13.
+
+### İş 189b · parti 4: 10 yakın okuma (sürüm 1.83.5)
+
+Diana ve Aktaion, Uccello · San Romano Muharebesi (Uffizi paneli), Botticelli · Müneccimlerin Tapınması, Dürer · Dört Havari,
+El Greco · Beşinci Mührün Açılışı, Piero · İsa'nın Vaftiz Edilişi, Rubens · Üç Güzeller, Bouguereau · Dante ve Vergilius,
+Bosch (takipçisi?) · İsa'nın Çarmıhı Taşıması (Gent), Gauguin · Vaaz Sonrası Görüntü; 60 nokta. Uccello'nun araştırması seri
+hakkında; görsel Uffizi paneli olduğundan Londra paneline ait iddialar (Tolentino'nun şapkası) yazılmadı. Rubens ve Bouguereau'nun
+araştırması ince (Wikidata 'betimlenir' satırları): hikâye ve anlam `data/ikonografi.json` konu metninden, resimle uyuşanla.
+Kaynak denetiminde çıkarılanlar: Uccello'da "1438", Rubens'te "1635" ve "gerçek boyutlu", Dürer'de "gerçek boyutta";
+Uffizi panelinin "ortadaki" olduğu ihtiyatlı yazıldı. Birim 388/388; uçtan uca 13/13. 194 başyapıt, 1103 nokta.

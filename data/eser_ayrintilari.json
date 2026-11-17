@@ -9817,6 +9817,566 @@
      "metin": "Sağdaki ağacın gövdesine bir yılan sarılmış, başı Havva'nın tuttuğu meyveye uzanıyor. Konunun Yaratılış Kitabı'ndaki kaynağını hatırlatan en açık öğedir."
     }
    ]
+  },
+  {
+   "anahtar": "Q2528177",
+   "sanatci": "titian",
+   "baslik": "Diana ve Aktaion",
+   "gorsel": "4e5f195d615aac54",
+   "noktalar": [
+    {
+     "ad": "Aktaion",
+     "x": 0.08,
+     "y": 0.27,
+     "w": 0.24,
+     "h": 0.65,
+     "metin": "Kadmos'un torunu Aktaion avdan dönerken farkında olmadan tanrıçanın kutsal mağarasına girmiştir. Perdeyi aralamış, kolunu kaldırıp geri çekiliyor."
+    },
+    {
+     "ad": "Diana",
+     "x": 0.79,
+     "y": 0.39,
+     "w": 0.13,
+     "h": 0.17,
+     "metin": "Sağdan ikinci solgun tenli kadın Diana'dır; başında hilalli bir taç var. Öfkeyle Aktaion'a döner; birazdan ona su sıçratıp onu geyiğe çevirecektir."
+    },
+    {
+     "ad": "Hizmetçi",
+     "x": 0.89,
+     "y": 0.45,
+     "w": 0.11,
+     "h": 0.3,
+     "metin": "En sağdaki koyu tenli hizmetçi Diana'yı örtüyor. Röntgen onun önce beyaz tenli boyandığını gösterir; açık tenli tanrıçayla yan yana gelişi ayın aydınlık ve karanlık yüzü olarak yorumlanır."
+    },
+    {
+     "ad": "Küçük köpek",
+     "x": 0.78,
+     "y": 0.8,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Diana'nın ayaklarının dibindeki küçük kahverengi köpek Aktaion'a havlıyor. Rönesans resminde köpek sadakatin simgesidir."
+    },
+    {
+     "ad": "Geyik kafatası",
+     "x": 0.63,
+     "y": 0.18,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Sütunun tepesinde bir geyik kafatası duruyor. Aktaion'un doğrudan görüş alanındaki bu kafatası, onun geyiğe dönüşüp öleceğinin ön habercisidir."
+    },
+    {
+     "ad": "Cam sürahi",
+     "x": 0.42,
+     "y": 0.68,
+     "w": 0.06,
+     "h": 0.08,
+     "metin": "Çeşmenin basamağında küçük bir cam sürahi görülür. Venedik camına bir gönderme ve Meryem'in bekâretini anlatan bir simgenin Diana'ya uyarlanması olabilir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2265370",
+   "sanatci": "paolo-uccello",
+   "baslik": "San Romano Muharebesi",
+   "gorsel": "544f207805b1f466",
+   "noktalar": [
+    {
+     "ad": "Düşen komutan",
+     "x": 0.45,
+     "y": 0.4,
+     "w": 0.2,
+     "h": 0.32,
+     "metin": "Şahlanan beyaz atın üzerindeki zırhlı şövalye, göğsüne gelen mızrak darbesiyle geriye devriliyor. Floransa panelinin konusu, Siena komutanının attan düşürülmesidir."
+    },
+    {
+     "ad": "Altın dizgin",
+     "x": 0.465,
+     "y": 0.465,
+     "w": 0.04,
+     "h": 0.05,
+     "metin": "Beyaz atın başındaki yuvarlak süs altın varakla yapılmıştır. Zırhlardaki gümüş kararırken altın varak parlaklığını korumuştur."
+    },
+    {
+     "ad": "Devrilen at",
+     "x": 0.2,
+     "y": 0.75,
+     "w": 0.24,
+     "h": 0.23,
+     "metin": "Ön planda mavi-gri bir at sırtüstü yere yığılmış. Uccello devrilen bedeni ve çevresindeki kırık mızrakları kısaltılmış biçimlerle, perspektif denemesi gibi çizer."
+    },
+    {
+     "ad": "Kararmış zırhlar",
+     "x": 0.04,
+     "y": 0.38,
+     "w": 0.18,
+     "h": 0.2,
+     "metin": "Askerlerin zırhları bugün mat gri ve siyah görünür. Bunun nedeni, zırhlara sürülen gümüş varağın zamanla oksitlenmesidir."
+    },
+    {
+     "ad": "Tazılar ve tavşanlar",
+     "x": 0.42,
+     "y": 0.2,
+     "w": 0.26,
+     "h": 0.16,
+     "metin": "Savaşın arkasındaki tepelerde küçük tazılar tavşanları kovalıyor. Bu sakin av sahnesi, öndeki çarpışmanın sahne dekoru gibi kurulduğu duygusunu güçlendirir."
+    },
+    {
+     "ad": "Mızrak ormanı",
+     "x": 0.82,
+     "y": 0.0,
+     "w": 0.16,
+     "h": 0.5,
+     "metin": "Sağ üstte kalkık mızraklar sık bir orman gibi yükseliyor. Kalabalık süvari birliklerinin derinliği bu dikey çizgilerle anlatılır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q488825",
+   "sanatci": "sandro-botticelli",
+   "baslik": "Müneccimlerin Tapınması",
+   "gorsel": "07c15d53c092a1ff",
+   "noktalar": [
+    {
+     "ad": "Beytüllahim yıldızı",
+     "x": 0.42,
+     "y": 0.0,
+     "w": 0.1,
+     "h": 0.07,
+     "metin": "Resmin tepesinde yıldız altın ışınlar saçar. Işınlar aşağıdaki Meryem ile Çocuğu vurgular."
+    },
+    {
+     "ad": "Kutsal Aile",
+     "x": 0.4,
+     "y": 0.11,
+     "w": 0.2,
+     "h": 0.4,
+     "metin": "Meryem, Yusuf ve İsa Çocuk, ahır olarak kullanılan klasik bir yıkıntının üstünde oturur. Sahne sunak resminin tam ortasındadır."
+    },
+    {
+     "ad": "Yaşlı müneccim",
+     "x": 0.31,
+     "y": 0.33,
+     "w": 0.14,
+     "h": 0.19,
+     "metin": "Çocuğun önünde diz çöken yaşlı müneccim, Vasari'nin ilk yorumuna göre Cosimo de' Medici'dir. Ölümünden sonra yapılmış bir portre olarak kabul edilir."
+    },
+    {
+     "ad": "Kırmızılı müneccim",
+     "x": 0.43,
+     "y": 0.5,
+     "w": 0.19,
+     "h": 0.4,
+     "metin": "Ortada sırtı bize dönük diz çöken kırmızı pelerinli müneccim. Heinrich Ulmann onun Piero di Cosimo de' Medici olduğunu öne sürmüştür."
+    },
+    {
+     "ad": "Botticelli",
+     "x": 0.86,
+     "y": 0.4,
+     "w": 0.14,
+     "h": 0.55,
+     "metin": "Ön planın en sağındaki sarı-altın pelerinli figür, izleyiciye bakan tek kişilerden biridir. Çoğu bilim insanı onu Botticelli'nin otoportresi olarak kabul eder."
+    },
+    {
+     "ad": "Tavus kuşu",
+     "x": 0.85,
+     "y": 0.13,
+     "w": 0.15,
+     "h": 0.15,
+     "metin": "Sağ üstteki yıkık duvarda bir tavus kuşu tünemiş. Duvarın çatlaklarından da yeşillikler büyüyor."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q829270",
+   "sanatci": "albrecht-durer",
+   "baslik": "Dört Havari",
+   "gorsel": "c272e0b8c31cdce4",
+   "noktalar": [
+    {
+     "ad": "Yuhanna'nın kitabı",
+     "x": 0.34,
+     "y": 0.23,
+     "w": 0.15,
+     "h": 0.09,
+     "metin": "Yuhanna kendi İncili'nin açılış sayfasını okuyor. Açık kitap, sıradan insanın Tanrı'yla açık bir ilişki kurabileceği fikrini yansıtır."
+    },
+    {
+     "ad": "Petrus'un anahtarı",
+     "x": 0.44,
+     "y": 0.17,
+     "w": 0.06,
+     "h": 0.12,
+     "metin": "Kitaba eğilen Petrus'un elinde altın bir anahtar var. Anahtar Cennet krallığının anahtarlarını temsil eder."
+    },
+    {
+     "ad": "Pavlus",
+     "x": 0.7,
+     "y": 0.02,
+     "w": 0.15,
+     "h": 0.15,
+     "metin": "Pavlus kel başı, uzun dalgalı sakalı ve kartal gibi burnuyla resmedilmiştir. İzleyiciyi fark etmiş gibi görünen tek havaridir; melankolik mizacı temsil eder."
+    },
+    {
+     "ad": "Markos",
+     "x": 0.54,
+     "y": 0.05,
+     "w": 0.15,
+     "h": 0.14,
+     "metin": "Pavlus'un arkasından Markos iri açılmış gözlerle bakıyor. Safralı mizaçla eşleştirilir; elindeki tomar kendi İncili'dir."
+    },
+    {
+     "ad": "Kitap ve kılıç",
+     "x": 0.52,
+     "y": 0.22,
+     "w": 0.27,
+     "h": 0.2,
+     "metin": "Pavlus kapalı bir kitap ve kılıç tutuyor. Kılıç şehitliğini, kitap ise hapisteyken yazdığı Yeni Ahit mektuplarını temsil eder."
+    },
+    {
+     "ad": "Yazıtlar",
+     "x": 0.0,
+     "y": 0.93,
+     "w": 1.0,
+     "h": 0.07,
+     "metin": "Panellerin altındaki yazılar Luther'in Almanca Yeni Ahit çevirisinden alıntılardır. Biri, dünyevi yöneticilerin Tanrı Sözü yerine insan sapkınlığını kabul etmemesi gerektiğini bildirir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1220013",
+   "sanatci": "el-greco",
+   "baslik": "Beşinci Mührün Açılışı",
+   "gorsel": "fde88540777e9753",
+   "noktalar": [
+    {
+     "ad": "Aziz Yuhanna",
+     "x": 0.06,
+     "y": 0.18,
+     "w": 0.27,
+     "h": 0.32,
+     "metin": "Kendinden geçmiş Yuhanna başını kaldırmış, kollarını göğe açmış. Tuvale egemen olan figür odur."
+    },
+    {
+     "ad": "Boşluğu gösteren el",
+     "x": 0.06,
+     "y": 0.04,
+     "w": 0.12,
+     "h": 0.12,
+     "metin": "Yuhanna'nın kaldırdığı el yukarıda bir şeyi işaret ediyor gibi. Tuvalin üst kısmı kesildiği için jest artık hiçbir yeri göstermez."
+    },
+    {
+     "ad": "Çıplak ruhlar",
+     "x": 0.34,
+     "y": 0.37,
+     "w": 0.23,
+     "h": 0.37,
+     "metin": "Şehitlerin çıplak ruhları birbirine sokulmuş, bir kısmı sarı ve yeşil örtülere uzanıyor. Vahiy'e göre ruhlara beyaz giysiler verilir."
+    },
+    {
+     "ad": "Bebek melekler",
+     "x": 0.7,
+     "y": 0.14,
+     "w": 0.25,
+     "h": 0.24,
+     "metin": "Sağ üstte bebek melekler beyaz kumaşları aşağıya uzatıyor. Beyaz giysiler, adalet bekleyen şehitlere verilen kurtuluşu anlatır."
+    },
+    {
+     "ad": "Yükselen bedenler",
+     "x": 0.72,
+     "y": 0.4,
+     "w": 0.23,
+     "h": 0.48,
+     "metin": "Sağdaki çıplak figürler kollarını yukarı uzatıyor. Bazı yorumlarda bu çıplaklar ilahi aşkı, soldaki giysili Yuhanna dünyevi olanı temsil eder."
+    },
+    {
+     "ad": "Pembe örtü",
+     "x": 0.25,
+     "y": 0.73,
+     "w": 0.3,
+     "h": 0.17,
+     "metin": "Ön planda yerde pembe bir örtü duruyor. Tablo bitmemiş ve aşınmış olduğundan kumaşın kıvrımları kaba fırça vuruşlarıyla bırakılmıştır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2632688",
+   "sanatci": "piero-della-francesca",
+   "baslik": "İsa'nın Vaftiz Edilişi",
+   "gorsel": "1ff74f2261584b6e",
+   "noktalar": [
+    {
+     "ad": "Güvercin",
+     "x": 0.37,
+     "y": 0.31,
+     "w": 0.27,
+     "h": 0.06,
+     "metin": "İsa'nın üzerinde Kutsal Ruh'u temsil eden beyaz güvercin süzülüyor. Perspektifle kısaltılmış kanatları gökyüzündeki bulutlara benzer."
+    },
+    {
+     "ad": "Yahya'nın kâsesi",
+     "x": 0.45,
+     "y": 0.38,
+     "w": 0.15,
+     "h": 0.07,
+     "metin": "Yahya kaldırdığı elindeki kâseden İsa'nın başına su döküyor. El, kâse ve güvercin resmi ikiye bölen dikey eksenin parçasıdır."
+    },
+    {
+     "ad": "İsa",
+     "x": 0.38,
+     "y": 0.43,
+     "w": 0.24,
+     "h": 0.33,
+     "metin": "İsa ellerini kavuşturmuş, dosdoğru öne bakıyor. Kompozisyonun merkezinde, resmin simetri ekseni üzerindedir."
+    },
+    {
+     "ad": "El ele melekler",
+     "x": 0.0,
+     "y": 0.46,
+     "w": 0.34,
+     "h": 0.42,
+     "metin": "Farklı giysiler içindeki üç melek birbirinin elini tutuyor. Bu, iki kilisenin birleşmesini amaçlayan Floransa Konsili'ne ya da Üçleme'nin üç yönüne gönderme olabilir."
+    },
+    {
+     "ad": "Soyunan adam",
+     "x": 0.77,
+     "y": 0.58,
+     "w": 0.18,
+     "h": 0.25,
+     "metin": "Ayakları suya girmiş, beyaz iç çamaşırlı bir adam gömleğini çıkarmaya uğraşıyor. Arkasındaki Doğu giysili figürler genellikle Bizanslı ileri gelenler olarak yorumlanır."
+    },
+    {
+     "ad": "Ceviz ağacı",
+     "x": 0.27,
+     "y": 0.26,
+     "w": 0.1,
+     "h": 0.2,
+     "metin": "Ceviz ağacının beyaz kabuğu İsa'nın beyaz tenini yansıtır. Ağacın gövdesi meleklerle İsa'yı ayırır ve resmi ikinci kez böler."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2268524",
+   "sanatci": "peter-paul-rubens",
+   "baslik": "Üç Güzeller",
+   "gorsel": "e7129ec85180e571",
+   "noktalar": [
+    {
+     "ad": "Çiçek çelengi",
+     "x": 0.38,
+     "y": 0.0,
+     "w": 0.42,
+     "h": 0.17,
+     "metin": "Figürlerin üstünde dallara asılı bir çiçek çelengi sarkıyor. Güller ve yapraklar sahneye bahar ve bolluk havası verir."
+    },
+    {
+     "ad": "İnci küpe",
+     "x": 0.2,
+     "y": 0.19,
+     "w": 0.13,
+     "h": 0.12,
+     "metin": "Soldaki sarışın kadının saçında inci dizileri, kulağında bir küpe var. Tablodaki takılar yalnız bu süslerden ibarettir."
+    },
+    {
+     "ad": "Sırtı dönük güzel",
+     "x": 0.33,
+     "y": 0.19,
+     "w": 0.2,
+     "h": 0.5,
+     "metin": "Ortadaki kadın sırtını izleyiciye dönmüş, saçı topuz yapılmış. Antik kalıpta ortadaki figür hep böyle arkadan, yandakiler önden gösterilir."
+    },
+    {
+     "ad": "Çeşme",
+     "x": 0.85,
+     "y": 0.0,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Sağdaki çeşmenin üstünde bir çocuk heykeli, elindeki kaptan aşağı su döküyor. Çeşme, figürlerin arkasındaki koyu, kapalı alanı kurar."
+    },
+    {
+     "ad": "Saydam tül",
+     "x": 0.32,
+     "y": 0.38,
+     "w": 0.12,
+     "h": 0.22,
+     "metin": "Soldaki kadının elinden geçen saydam bir tül üç figürü birbirine bağlar. Tül, bedenlerin oluşturduğu halkayı görünür kılar."
+    },
+    {
+     "ad": "Geyikli kır",
+     "x": 0.06,
+     "y": 0.62,
+     "w": 0.17,
+     "h": 0.14,
+     "metin": "Solda, figürlerin arkasında uzak bir kır manzarası açılıyor; çayırda geyikler otluyor. Bu küçük manzara, öndeki dev bedenlere derinlik kazandırır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2665048",
+   "sanatci": "william-adolphe-bouguereau",
+   "baslik": "Dante ve Vergilius Cehennemde",
+   "gorsel": "fc48981aa80fd5fa",
+   "noktalar": [
+    {
+     "ad": "Isırık",
+     "x": 0.52,
+     "y": 0.3,
+     "w": 0.18,
+     "h": 0.25,
+     "metin": "Kızıl saçlı Gianni Schicchi, Capocchio'nun boynuna dişlerini geçirmiş. Schicchi bir başkasının mirasını hileyle ele geçirmiş bir düzenbazdır."
+    },
+    {
+     "ad": "Capocchio",
+     "x": 0.52,
+     "y": 0.42,
+     "w": 0.32,
+     "h": 0.33,
+     "metin": "Isırılan koyu saçlı adam simyacı ve sapkın Capocchio'dur. Başı geriye bükülmüş, eli saldırganın kolunu kavramış."
+    },
+    {
+     "ad": "Dante ve Vergilius",
+     "x": 0.08,
+     "y": 0.1,
+     "w": 0.33,
+     "h": 0.25,
+     "metin": "Solda pelerinli iki şair, defne çelenkli olan ve kırmızı başlıklı olan, bu boğuşmayı izliyor. Dante, Vergilius'un rehberliğinde Cehennem'i dolaşmaktadır."
+    },
+    {
+     "ad": "Kanatlı şeytan",
+     "x": 0.42,
+     "y": 0.1,
+     "w": 0.27,
+     "h": 0.17,
+     "metin": "Arka planda yarasa kanatlı bir şeytan kollarını kavuşturmuş, sırıtarak kavgayı seyrediyor. Kızıl gökyüzü cehennemin ateşini düşündürür."
+    },
+    {
+     "ad": "Yığılmış ruhlar",
+     "x": 0.74,
+     "y": 0.18,
+     "w": 0.26,
+     "h": 0.36,
+     "metin": "Sağ arkada karanlıkta birbirine dolanmış lanetli ruhlar yığılmış. Kalabalık, öndeki kavganın sonsuz bir cezanın yalnızca bir parçası olduğunu hatırlatır."
+    },
+    {
+     "ad": "Yerdeki ruh",
+     "x": 0.8,
+     "y": 0.66,
+     "w": 0.2,
+     "h": 0.17,
+     "metin": "Sağ altta bir adam yerde yatıyor, yüzü bize dönük. Ayağa kalkamayan bu beden, boğuşanların gerginliğine karşı bitkinliği gösterir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q680128",
+   "sanatci": "hieronymus-bosch",
+   "baslik": "İsa'nın Çarmıhı Taşıması",
+   "gorsel": "1f6379cdfaeff1de",
+   "noktalar": [
+    {
+     "ad": "İsa",
+     "x": 0.33,
+     "y": 0.42,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Dikenli taçlı İsa'nın gözleri kapalı, başı eğik; ifadesi kederli ve sakin. İki köşegenin tam kesiştiği yerdedir."
+    },
+    {
+     "ad": "Veronika",
+     "x": 0.02,
+     "y": 0.49,
+     "w": 0.18,
+     "h": 0.28,
+     "metin": "Sol alttaki Veronika da İsa gibi gözlerini kapamış, başını eğmiş. Kalabalıkta İsa'nın kederini paylaşan tek yüz odur."
+    },
+    {
+     "ad": "Peçedeki yüz",
+     "x": 0.0,
+     "y": 0.79,
+     "w": 0.14,
+     "h": 0.19,
+     "metin": "Veronika'nın peçesinde İsa'nın yüzünün izi görülür. Tablodaki on sekiz portreye ek olarak bu da bir yüzdür."
+    },
+    {
+     "ad": "Tövbesiz hırsız",
+     "x": 0.74,
+     "y": 0.62,
+     "w": 0.2,
+     "h": 0.3,
+     "metin": "Sağ alttaki tövbesiz hırsız, kendisiyle alay eden üç adama dişlerini göstererek sırıtıyor. Çevresindeki yüzler karikatür gibi abartılmıştır."
+    },
+    {
+     "ad": "Tövbekâr hırsız",
+     "x": 0.72,
+     "y": 0.04,
+     "w": 0.28,
+     "h": 0.3,
+     "metin": "Sağ üstte çok solgun tenli tövbekâr hırsız duruyor. Yanında korkunç çirkinlikte bir keşiş ona günah çıkartıyor."
+    },
+    {
+     "ad": "Kireneli Simun",
+     "x": 0.14,
+     "y": 0.22,
+     "w": 0.14,
+     "h": 0.15,
+     "metin": "Sol üstte, çarmıhın altında yüzünü yukarı çevirmiş bir adam var. Bu, çarmıhı taşımaya zorlanan Kireneli Simun'dur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1764395",
+   "sanatci": "paul-gauguin",
+   "baslik": "Vaaz Sonrası Görüntü",
+   "gorsel": "9de1c667de873393",
+   "noktalar": [
+    {
+     "ad": "Yakup ve melek",
+     "x": 0.67,
+     "y": 0.06,
+     "w": 0.25,
+     "h": 0.35,
+     "metin": "Sarı kanatlı melek ile Yakup kırmızı zeminde güreşiyor. Bernard bu figürlerin kaynağı olarak Hokusai'nin sumo güreşçilerini gösterir."
+    },
+    {
+     "ad": "Ağaç gövdesi",
+     "x": 0.2,
+     "y": 0.0,
+     "w": 0.45,
+     "h": 0.4,
+     "metin": "Tablonun ortasından çapraz geçen kahverengi gövde, kadınları gördükleri görüden ayırır. Gövdenin eğrisi en ortadaki kadının başının hattını izler."
+    },
+    {
+     "ad": "Dua eden eller",
+     "x": 0.07,
+     "y": 0.58,
+     "w": 0.12,
+     "h": 0.17,
+     "metin": "Ön plandaki kadın ellerini kavuşturmuş, gözlerini kapamış dua ediyor. Yüz ve eller kalın konturlarla, az gölgeyle boyanmıştır."
+    },
+    {
+     "ad": "Beyaz başlıklar",
+     "x": 0.24,
+     "y": 0.33,
+     "w": 0.24,
+     "h": 0.32,
+     "metin": "Kadınlar Bretanya'nın halk kıyafetinden çeşitli beyaz başlıklar (coiffe) giyiyor. Geniş, düz beyaz alanlar kırmızı zeminle sert bir karşıtlık kurar."
+    },
+    {
+     "ad": "İnek",
+     "x": 0.16,
+     "y": 0.15,
+     "w": 0.13,
+     "h": 0.13,
+     "metin": "Ağacın solunda küçücük bir inek koşuyor. Ölçeği bilerek küçültülmüştür; perspektif çarpıtması mekânı gerçek bir tarla olmaktan çıkarır."
+    },
+    {
+     "ad": "Küçük figürler",
+     "x": 0.0,
+     "y": 0.02,
+     "w": 0.14,
+     "h": 0.21,
+     "metin": "Sol kenarda kadınlar çok küçültülmüş boyutlarda kümelenmiş. Bu, Gauguin'in perspektifi bilerek çarpıtmasının en açık örneğidir."
+    }
+   ]
   }
  ]
 }
