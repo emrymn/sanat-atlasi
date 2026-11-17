@@ -2,43 +2,271 @@
  "anahtar": "Q2344505",
  "baslik_tr": "Saka Kuşlu Meryem",
  "kunye": {
-  "sanatci": {"deger": "Raphael", "kaynak": "wikidata.txt", "alinti": "creator (P170): Raphael (Q5597)"},
-  "tarih": {"deger": "yaklaşık 1505–06", "kaynak": "enwiki.txt", "alinti": "is an oil on wood painting by the Italian Renaissance artist Raphael, from c. 1505–06.", "ihtiyat": true},
-  "teknik": {"deger": "panel üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"},
-  "olcu": {"deger": "107 × 77 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 107 centimetre width (P2049): 77 centimetre"},
-  "yer": {"deger": "Uffizi, Floransa", "kaynak": "enwiki.txt", "alinti": "the painting was returned to its home at the Uffizi in Florence"}
+  "sanatci": {
+   "deger": "Raphael",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Raphael (Q5597)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1505–06",
+   "kaynak": "enwiki.txt",
+   "alinti": "is an oil on wood painting by the Italian Renaissance artist Raphael, from c. 1505–06.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "panel üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"
+  },
+  "olcu": {
+   "deger": "107 × 77 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 107 centimetre width (P2049): 77 centimetre"
+  },
+  "yer": {
+   "deger": "Uffizi, Floransa",
+   "kaynak": "enwiki.txt",
+   "alinti": "the painting was returned to its home at the Uffizi in Florence"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Raphael, Floransa döneminde bu tabloyu Madonna of the Meadow ve La belle jardinière adlı diğer tanınmış Meryem tablolarıyla birlikte yapmıştır.", "kaynak": "enwiki.txt", "alinti": "During his Florentine period, Raphael painted the Madonna del Cardellino along with several other well-known Madonnas: Madonna of the Meadow and La belle jardinière.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablo, Raphael'in arkadaşı Lorenzo Nasi'ye düğün hediyesiydi.", "kaynak": "enwiki.txt", "alinti": "The Madonna was a wedding gift from Raphael to his friend Lorenzo Nasi.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "17 Kasım 1548'de Nasi'nin evi bir heyelanla yıkıldı ve tablo on yedi parçaya bölündü.", "kaynak": "enwiki.txt", "alinti": "On 17 November 1548, Nasi's house was destroyed by a landslide and the painting broke into seventeen pieces.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Tablo hemen kurtarılmaya alındı ve aceleyle yeniden birleştirildi, ancak dikiş izleri oldukça belirgindi.", "kaynak": "enwiki.txt", "alinti": "It was immediately taken to be salvaged, and was hastily put back together, though the seams were quite visible.", "ihtiyat": false},
-  {"id": "C05", "bolum": "hikaye", "iddia": "2002'de Precious Stones örgütünden George Bonsanti, restorasyon görevini Patrizia Riitano'ya verdi.", "kaynak": "enwiki.txt", "alinti": "In 2002, George Bonsanti of the Precious Stones organisation gave the task of restoration to Patrizia Riitano.", "ihtiyat": false},
-  {"id": "C06", "bolum": "hikaye", "iddia": "Restorasyon sırasında galeride tablonun yerini antik bir kopya aldı.", "kaynak": "enwiki.txt", "alinti": "During the restoration, an antique copy replaced the painting in the gallery.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Tablo Meryem'i, Çocuk İsa'yı, Çocuk Aziz Yahya'yı ve bir saka kuşunu betimler.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Mary (Q345) depicts (P180): Christ Child (Q942467) depicts (P180): Child Saint John (Q1698874) depicts (P180): European Goldfinch (Q25418)", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Meryem genç ve güzel gösterilir.", "kaynak": "enwiki.txt", "alinti": "The Madonna is shown young and beautiful", "ihtiyat": false},
-  {"id": "C09", "bolum": "gorunen", "iddia": "İsa ve Yahya henüz çok küçüktür, bebektir.", "kaynak": "enwiki.txt", "alinti": "Christ and John are still very young, only babies.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Yahya elinde bir saka kuşu tutar; İsa ise ona dokunmak için uzanır.", "kaynak": "enwiki.txt", "alinti": "John holds a goldfinch in his hand, and Christ is reaching out to touch it.", "ihtiyat": false},
-  {"id": "C11", "bolum": "gorunen", "iddia": "Meryem'in elindeki kitapta Sedes Sapientiae, yani 'Bilgelik Makamı' yazar.", "kaynak": "enwiki.txt", "alinti": "The book in Mary's hand reads Sedes Sapientiae ('Seat of Wisdom').", "ihtiyat": false},
-  {"id": "C12", "bolum": "kompozisyon", "iddia": "Üç bedenin duruşları doğal olmakla birlikte, birlikte neredeyse düzgün bir üçgen oluştururlar.", "kaynak": "enwiki.txt", "alinti": "Though the positions of the three bodies are natural, together they form an almost regular triangle.", "ihtiyat": false},
-  {"id": "C13", "bolum": "kompozisyon", "iddia": "Doğal arka plan çeşitlidir ve merkezde gerçekleşen konuyu sakin biçimde çerçeveler.", "kaynak": "enwiki.txt", "alinti": "The natural setting is diverse and yet all calmly frames the central subject taking place.", "ihtiyat": false},
-  {"id": "C14", "bolum": "kompozisyon", "iddia": "Ekip, tablonun rengini bozan yılların kirini temizlemek ve heyelanın çok önce verdiği hasarı onarmak için çalışmıştır.", "kaynak": "enwiki.txt", "alinti": "her team worked to remove the years of grime that had degraded the painting's colour, and to fix the damage done by the landslide long ago.", "ihtiyat": false},
-  {"id": "C15", "bolum": "kompozisyon", "iddia": "X-ışınları, CAT taramaları, yansıtmalı kızılötesi fotoğraf ve lazerler gibi kaynaklar kullanılmıştır.", "kaynak": "enwiki.txt", "alinti": "utilising resources such as X-rays, CAT scans, reflective infrared photography, and lasers.", "ihtiyat": false},
-  {"id": "C16", "bolum": "kompozisyon", "iddia": "Riitano, uygulanan üst boyama katmanlarını yakından inceleyip Raphael'in özgün eseri nihayet ortaya çıkana dek bunları kaldırmıştır.", "kaynak": "enwiki.txt", "alinti": "Riitano closely studied the passages of overpainting that had been applied and removed them until the original by Raphael finally shone through.", "ihtiyat": false},
-  {"id": "C17", "bolum": "anlam", "iddia": "Saka kuşu, İsa'nın çarmıha gerilişini temsil eder.", "kaynak": "enwiki.txt", "alinti": "In Madonna Del Cardellino, the goldfinch represents Christ's crucifixion.", "ihtiyat": false},
-  {"id": "C18", "bolum": "anlam", "iddia": "Efsaneye göre kuşun kırmızı lekesi çarmıh anında oluşmuştur: kuş, İsa'nın başının üzerinden uçup diken tacından bir diken çıkarırken üzerine bir kan damlası sıçramıştır.", "kaynak": "enwiki.txt", "alinti": "The reason for its association comes from the legend that its red spot was born at the time of the crucifixion. It flew down over the head of Christ and was taking a thorn from His crown, when it was splashed with the drop of His blood.", "ihtiyat": true},
-  {"id": "C19", "bolum": "anlam", "iddia": "Meryem kırmızı ve mavi giyinmiştir; kırmızı İsa'nın Çilesi'ni, mavi ise kiliseyi simgeler.", "kaynak": "enwiki.txt", "alinti": "She is also clothed in red and blue, also typical, for red signifies the Passion of Christ and blue was used to signify the church.", "ihtiyat": false},
-  {"id": "C20", "bolum": "anlam", "iddia": "Terim genellikle Meryem'in tahtta oturup İsa'yı kucağında tuttuğu imgeler için kullanılır; buradaki yazıt ise Meryem'in oturduğu kayanın onun doğal tahtı olduğunu ima eder.", "kaynak": "enwiki.txt", "alinti": "This term usually is applied to images in which Mary is seated upon a throne, with Jesus on her lap, but in this case, the inscription implies the rock on which Mary sits is her natural throne.", "ihtiyat": false},
-  {"id": "C21", "bolum": "onem", "iddia": "Restorasyon 2008'de tamamlanmış ve tablo Uffizi'de sergilenmeye konmuştur.", "kaynak": "enwiki.txt", "alinti": "The restoration was completed in 2008, and the painting was put on display in the Uffizi.", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Tablo 1666'dan beri Uffizi Gallery koleksiyonunun parçasıdır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Uffizi Gallery (Q51252) [start time: 1666]", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "Tablonun siparişçisi Lorenzo Nasi'dir.", "kaynak": "wikidata.txt", "alinti": "commissioned by (P88): Lorenzo Nasi (Q21618043)", "ihtiyat": false},
-  {"id": "C24", "bolum": "onem", "iddia": "Tablo 1940–1945 arasında Poggio a Caiano'daki Villa Medicea'da ve Poppi Kalesi'nde tutulmuştur.", "kaynak": "wikidata.txt", "alinti": "location (P276): Villa Medicea of Poggio a Caiano (Q733389) [start time: 1940-05-13; end time: 1940-10-23] location (P276): Poppi Castle (Q3662410) [start time: 1940-10-23; end time: 1945-05-21]", "ihtiyat": false},
-  {"id": "C25", "bolum": "onem", "iddia": "Tablo 24 Haziran 1948'de yeniden Uffizi Gallery'ye yerleştirilmiştir.", "kaynak": "wikidata.txt", "alinti": "location (P276): Uffizi Gallery (Q51252) [start time: 1948-06-24]", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "onem",
+   "iddia": "Raphael, Floransa döneminde bu tabloyu Madonna of the Meadow ve La belle jardinière adlı diğer tanınmış Meryem tablolarıyla birlikte yapmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "During his Florentine period, Raphael painted the Madonna del Cardellino along with several other well-known Madonnas: Madonna of the Meadow and La belle jardinière.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "onem",
+   "iddia": "Tablo, Raphael'in arkadaşı Lorenzo Nasi'ye düğün hediyesiydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Madonna was a wedding gift from Raphael to his friend Lorenzo Nasi.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "onem",
+   "iddia": "17 Kasım 1548'de Nasi'nin evi bir heyelanla yıkıldı ve tablo on yedi parçaya bölündü.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On 17 November 1548, Nasi's house was destroyed by a landslide and the painting broke into seventeen pieces.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo hemen kurtarılmaya alındı ve aceleyle yeniden birleştirildi, ancak dikiş izleri oldukça belirgindi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was immediately taken to be salvaged, and was hastily put back together, though the seams were quite visible.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "onem",
+   "iddia": "2002'de Precious Stones örgütünden George Bonsanti, restorasyon görevini Patrizia Riitano'ya verdi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 2002, George Bonsanti of the Precious Stones organisation gave the task of restoration to Patrizia Riitano.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "onem",
+   "iddia": "Restorasyon sırasında galeride tablonun yerini antik bir kopya aldı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "During the restoration, an antique copy replaced the painting in the gallery.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Tablo Meryem'i, Çocuk İsa'yı, Çocuk Aziz Yahya'yı ve bir saka kuşunu betimler.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): Mary (Q345) depicts (P180): Christ Child (Q942467) depicts (P180): Child Saint John (Q1698874) depicts (P180): European Goldfinch (Q25418)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Meryem genç ve güzel gösterilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Madonna is shown young and beautiful",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "İsa ve Yahya henüz çok küçüktür, bebektir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Christ and John are still very young, only babies.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Yahya elinde bir saka kuşu tutar; İsa ise ona dokunmak için uzanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "John holds a goldfinch in his hand, and Christ is reaching out to touch it.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in elindeki kitapta Sedes Sapientiae, yani 'Bilgelik Makamı' yazar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The book in Mary's hand reads Sedes Sapientiae ('Seat of Wisdom').",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Üç bedenin duruşları doğal olmakla birlikte, birlikte neredeyse düzgün bir üçgen oluştururlar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Though the positions of the three bodies are natural, together they form an almost regular triangle.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Doğal arka plan çeşitlidir ve merkezde gerçekleşen konuyu sakin biçimde çerçeveler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The natural setting is diverse and yet all calmly frames the central subject taking place.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Ekip, tablonun rengini bozan yılların kirini temizlemek ve heyelanın çok önce verdiği hasarı onarmak için çalışmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "her team worked to remove the years of grime that had degraded the painting's colour, and to fix the damage done by the landslide long ago.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "X-ışınları, CAT taramaları, yansıtmalı kızılötesi fotoğraf ve lazerler gibi kaynaklar kullanılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "utilising resources such as X-rays, CAT scans, reflective infrared photography, and lasers.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Riitano, uygulanan üst boyama katmanlarını yakından inceleyip Raphael'in özgün eseri nihayet ortaya çıkana dek bunları kaldırmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Riitano closely studied the passages of overpainting that had been applied and removed them until the original by Raphael finally shone through.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Saka kuşu, İsa'nın çarmıha gerilişini temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In Madonna Del Cardellino, the goldfinch represents Christ's crucifixion.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Efsaneye göre kuşun kırmızı lekesi çarmıh anında oluşmuştur: kuş, İsa'nın başının üzerinden uçup diken tacından bir diken çıkarırken üzerine bir kan damlası sıçramıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The reason for its association comes from the legend that its red spot was born at the time of the crucifixion. It flew down over the head of Christ and was taking a thorn from His crown, when it was splashed with the drop of His blood.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Meryem kırmızı ve mavi giyinmiştir; kırmızı İsa'nın Çilesi'ni, mavi ise kiliseyi simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She is also clothed in red and blue, also typical, for red signifies the Passion of Christ and blue was used to signify the church.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Terim genellikle Meryem'in tahtta oturup İsa'yı kucağında tuttuğu imgeler için kullanılır; buradaki yazıt ise Meryem'in oturduğu kayanın onun doğal tahtı olduğunu ima eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This term usually is applied to images in which Mary is seated upon a throne, with Jesus on her lap, but in this case, the inscription implies the rock on which Mary sits is her natural throne.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Restorasyon 2008'de tamamlanmış ve tablo Uffizi'de sergilenmeye konmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The restoration was completed in 2008, and the painting was put on display in the Uffizi.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Tablo 1666'dan beri Uffizi Gallery koleksiyonunun parçasıdır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "collection (P195): Uffizi Gallery (Q51252) [start time: 1666]",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Tablonun siparişçisi Lorenzo Nasi'dir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "commissioned by (P88): Lorenzo Nasi (Q21618043)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablo 1940–1945 arasında Poggio a Caiano'daki Villa Medicea'da ve Poppi Kalesi'nde tutulmuştur.",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Villa Medicea of Poggio a Caiano (Q733389) [start time: 1940-05-13; end time: 1940-10-23] location (P276): Poppi Castle (Q3662410) [start time: 1940-10-23; end time: 1945-05-21]",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Tablo 24 Haziran 1948'de yeniden Uffizi Gallery'ye yerleştirilmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Uffizi Gallery (Q51252) [start time: 1948-06-24]",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1505 (precision: decade)"}, "b": {"kaynak": "enwiki.txt", "alinti": "artist Raphael, from c. 1505–06."}},
-  {"konu": "restorasyon süresi", "a": {"kaynak": "enwiki.txt", "alinti": "A 10-year restoration process was completed in 2008"}, "b": {"kaynak": "enwiki.txt", "alinti": "In 2002, George Bonsanti of the Precious Stones organisation gave the task of restoration to Patrizia Riitano. During the six-year process that followed"}},
-  {"konu": "edinim (sipariş / düğün hediyesi)", "a": {"kaynak": "wikidata.txt", "alinti": "commissioned by (P88): Lorenzo Nasi (Q21618043)"}, "b": {"kaynak": "enwiki.txt", "alinti": "The Madonna was a wedding gift from Raphael to his friend Lorenzo Nasi."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1505 (precision: decade)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "artist Raphael, from c. 1505–06."
+   }
+  },
+  {
+   "konu": "restorasyon süresi",
+   "a": {
+    "kaynak": "enwiki.txt",
+    "alinti": "A 10-year restoration process was completed in 2008"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "In 2002, George Bonsanti of the Precious Stones organisation gave the task of restoration to Patrizia Riitano. During the six-year process that followed"
+   }
+  },
+  {
+   "konu": "edinim (sipariş / düğün hediyesi)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "commissioned by (P88): Lorenzo Nasi (Q21618043)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The Madonna was a wedding gift from Raphael to his friend Lorenzo Nasi."
+   }
+  }
  ],
- "bulunamadi": []
+ "bulunamadi": [
+  "hikaye: kaynakta resmin anlattığı bir olay yok (sahne, anlatısız bir Meryem–Çocuk İsa–Yahya grubu)"
+ ]
 }

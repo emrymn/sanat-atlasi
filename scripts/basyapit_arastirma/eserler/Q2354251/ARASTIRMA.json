@@ -2,46 +2,287 @@
  "anahtar": "Q2354251",
  "baslik_tr": "Dante'nin Kayığı",
  "kunye": {
-  "sanatci": {"deger": "Eugène Delacroix", "kaynak": "wikidata.txt", "alinti": "creator (P170): Eugène Delacroix (Q33477)"},
-  "tarih": {"deger": "1822", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1822", "ihtiyat": false},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "189 × 241,5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 189 centimetre width (P2049): 241.5 centimetre"},
-  "yer": {"deger": "Louvre, Resimler Departmanı, Oda 700", "kaynak": "wikidata.txt", "alinti": "location (P276): Room 700 (Q4032385) collection (P195): Department of Paintings of the Louvre (Q3044768)"}
+  "sanatci": {
+   "deger": "Eugène Delacroix",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Eugène Delacroix (Q33477)"
+  },
+  "tarih": {
+   "deger": "1822",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1822",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "189 × 241,5 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 189 centimetre width (P2049): 241.5 centimetre"
+  },
+  "yer": {
+   "deger": "Louvre, Resimler Departmanı, Oda 700",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Room 700 (Q4032385) collection (P195): Department of Paintings of the Louvre (Q3044768)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Dante Alighieri'nin Inferno adlı şiirinin sekizinci kantosuna dayanır.", "kaynak": "enwiki.txt", "alinti": "The painting is based on Canto VIII of Dante Alighieri's poem Inferno", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Dante ve yol arkadaşı Virgil, Phlegyas'ın kayığıyla Styx nehrini geçer; lanetli ruhlar kayığa tutunur.", "kaynak": "enwiki.txt", "alinti": "depicting Dante and his companion Virgil crossing the river Styx on Phlegyas's boat, onto which damned souls cling.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Lanetli bir adam kayığa tutunup Dante'yi sorgular; Virgil adamı nehre geri iter.", "kaynak": "enwiki.txt", "alinti": "A damned man clings onto the boat and interrogates Dante, before Virgil pushes the man back into the river.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Dante, lanetlilerin acı çığlıkları arasında adamı Filippo Argenti olarak tanır ve ardından yanan Dis kentinden gelen çığlıkları duyar.", "kaynak": "enwiki.txt", "alinti": "Dante hears screams of anguish, first from the damned, identifying the man as Filippo Argenti, and then from the burning City of Dis, causing Dante to lean forwards in awe.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Johnson, ön plandaki kadının pozunun Michelangelo'nun Night'ına benzediğini belirtir; Delacroix bunu muhtemelen Géricault'un etüdü aracılığıyla görmüştür.", "kaynak": "enwiki.txt", "alinti": "Lee Johnson noted that the woman in the foreground has a pose similar to that of Michelangelo's Night, which Delacroix might have encountered through Théodore Géricault's study, of which his own studies bear a significant resemblance.", "ihtiyat": true},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Kadının kayığa tutunmasını sağlamak için sol kolu, Adem'in Yaratılışı'nda Tanrı'nın sağ kolunu tutan ignudo'nunkine benzer biçimde değiştirilmiştir.", "kaynak": "enwiki.txt", "alinti": "To have her holding on to the boat, her left arm is modified similarly to the ignudo holding God's right arm in The Creation of Adam", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Sol ön plan figürünün pozu bu tablodaki Leander figüründen esinlenmiş olabilir; Adem'in Yaratılışı'ndaki Tanrı'nın gövdesinden de gelmiş olabilir.", "kaynak": "enwiki.txt", "alinti": "The pose of the left foreground figure may have been inspired by the figure of Leander in this painting, but could also be the body of God's in The Creation of Adam.", "ihtiyat": true},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Sol ön plan figürünün başı, neredeyse kesin olarak çağdaşı Théodore Géricault'un Medusa'nın Salı adlı tablosundan alınmadır.", "kaynak": "enwiki.txt", "alinti": "The head is almost certainly drawn from The Raft of the Medusa by contemporaneous artist Théodore Géricault.", "ihtiyat": true},
-  {"id": "C09", "bolum": "gorunen", "iddia": "Johnson'a göre arka planda salın üzerinden bakan lanetli adamın yüzü, John Flaxman'ın The Fiery Sepulchres gravüründeki Cavalcante de' Cavalcanti figüründen türetilmiştir.", "kaynak": "enwiki.txt", "alinti": "Johnson has also suggested that the face of the damned man in the background peering over the raft was derived from Cavalcante de' Cavalcanti in John Flaxman's engraving The Fiery Sepulchres, created as part of his illustrations of The Divine Comedy.", "ihtiyat": true},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Delacroix, Dante'nin çığlıklara tepkisini hayretten savunmacı bir poza çevirmiştir; Dante dengesiz biçimde Virgil'e tutunur.", "kaynak": "enwiki.txt", "alinti": "He also noted that Delacroix changed Dante's reaction to the screams from awe to a defensive posture, where he clings unsteadily onto Virgil.", "ihtiyat": false},
-  {"id": "C11", "bolum": "kompozisyon", "iddia": "Stierle, Delacroix'nin Inferno'daki ardışık olayları (bedenlerin yüzeye çıkışı, Dis'ten gelen çığlıklara Dante'nin tepkisi, kentin gözlenmesi) tek bir kendi içinde tamamlanmış ana uyarladığını gözlemler.", "kaynak": "enwiki.txt", "alinti": "The literary scholar Karlheinz Stierle observed how Delacroix adapted the sequential events of Inferno, the surfacing of the bodies, Dante's reaction to the screams coming from Dis, and then the observation of the city itself, into one self-contained moment.", "ihtiyat": false},
-  {"id": "C12", "bolum": "kompozisyon", "iddia": "Eskizler, giysisinin altındaki form eksikliği nedeniyle Virgil hariç tüm figürlerin canlı modellerden çizilmiş olduğunu düşündürür.", "kaynak": "enwiki.txt", "alinti": "Delacroix's sketches suggest that all the figures in the painting, excluding Virgil due to the lack of form under his clothing, seem to have been drawn from live models, in accordance with practice at the time.", "ihtiyat": true},
-  {"id": "C13", "bolum": "kompozisyon", "iddia": "Virgil'in sol kolu ve başı Michelangelo'nun Peygamber Yeşaya'sından türetilmiştir; keskin hatlar ve olağanüstü pürüzsüz cilt dokusu, başın bir sikke ya da bronzdan da esinlendiğini gösterir.", "kaynak": "enwiki.txt", "alinti": "Virgil's left arm and head were derived from Michelangelo's Prophet Isaiah, though the sharp features and unusually smooth texture of the skin indicates the head was also inspired by a coin or bronze.", "ihtiyat": false},
-  {"id": "C14", "bolum": "kompozisyon", "iddia": "Dante'nin giysisindeki kesişen kıvrımlar Michelangelo'nun Rachel'inkini yansıtır; başı, Dante'nin ölüm maskesinden yapılmış bir ön yağlıboya etüdden gelir.", "kaynak": "enwiki.txt", "alinti": "The arrangement of intersecting folds in Dante's drapery reflects that of Michelangelo's Rachel, and his head comes from a preliminary oil study of Dante's death mask.", "ihtiyat": false},
-  {"id": "C15", "bolum": "kompozisyon", "iddia": "Tablonun başlıca renk yeniliği, ön plandaki lanetlilerin üzerinden yuvarlanan su damlalarının betimlemesindedir.", "kaynak": "enwiki.txt", "alinti": "The painting's primary color innovation is found in the depiction of water droplets rolling off the damned in the painting's foreground.", "ihtiyat": false},
-  {"id": "C16", "bolum": "kompozisyon", "iddia": "Damlalar, gökkuşağı benzeri bir etkiyle canlı ve karıştırılmamış renklerden oluşturulur: yeşil ve sarı lekeler yan yana konur, gölgelerde kırmızı, ışıklarda beyaz kullanılır.", "kaynak": "enwiki.txt", "alinti": "The drops are created out of vibrant, unmixed colors in a rainbow-like effect: dabs of green and yellow are placed together, with red for shadows and white for highlights.", "ihtiyat": false},
-  {"id": "C17", "bolum": "kompozisyon", "iddia": "Sanat profesörü Frank Trapp, damlaların 1860–1861 restorasyonu sırasında eklenmiş ya da değiştirilmiş olabileceğini öne sürmüş ve onları 'en iyi ihtimalle saf olmayan kanıt' diye nitelemiştir.", "kaynak": "enwiki.txt", "alinti": "The arts professor Frank Trapp believed that these drops may have been added or modified during its restoration from 1860 to 1861, labeling them \"at best impure evidence\".", "ihtiyat": true},
-  {"id": "C18", "bolum": "anlam", "iddia": "Delacroix, Andrieu'ye tabloda kullandığı tek modelin Martin François Suisse olduğunu söylemiştir; etütler bu iddiayı çürütmez.", "kaynak": "enwiki.txt", "alinti": "Delacroix told Andrieu that the only model he used in the painting was Martin François Suisse, a claim which is not refuted by the studies.", "ihtiyat": false},
-  {"id": "C19", "bolum": "anlam", "iddia": "Kadın figürü bile bir erkek model etüdünden alınmış görünür; Delacroix yalnızca göğüs kaslarını yuvarlaklaştırmıştır.", "kaynak": "enwiki.txt", "alinti": "Even the female figure seems to have been taken from a study of a male model, Delacroix simply rounding out the pectoral muscles.", "ihtiyat": true},
-  {"id": "C20", "bolum": "anlam", "iddia": "Stierle'ye göre bu pozlar, İlahi Komedya'da Dante'nin kuşkusu ile Virgil'in soylu kendine güveni arasındaki temel ilişkiyi vurgular.", "kaynak": "enwiki.txt", "alinti": "Stierle argued that that these poses highlight the fundamental relationship in The Divine Comedy between Dante's doubt and Virgil's noble self-confidence.", "ihtiyat": true},
-  {"id": "C21", "bolum": "anlam", "iddia": "Rubin, Delacroix'nin etütlerine dayanarak tablonun bu dinamika üzerine kurulduğunu savunur.", "kaynak": "enwiki.txt", "alinti": "Rubin also observed this dynamic, and argued based on Delacroix's studies that it was what the painting was build around.", "ihtiyat": true},
-  {"id": "C22", "bolum": "onem", "iddia": "Dante'nin Kayığı, Delacroix'nin halka açık sergilenen ilk tablosu ve Paris Salonu'na ilk girişidir.", "kaynak": "enwiki.txt", "alinti": "The Barque of Dante was Delacroix's first publicly exhibited picture, and his first entry to the Paris Salon.", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "Delacroix, 26 Temmuz 1821'de kız kardeşine yazdığı mektupta, 1822 Salonu'na süregelen Yunan Bağımsızlık Savaşı'nı betimleyen bir tablo sunma niyetini belirtmiştir.", "kaynak": "enwiki.txt", "alinti": "He had shown interest in the Salon of 1822 as early as July 26, 1821, when he wrote to his sister stating his intention to submit a painting depicting the ongoing Greek War of Independence", "ihtiyat": false},
-  {"id": "C24", "bolum": "onem", "iddia": "Delacroix iki buçuk ay boyunca yoğun çalışarak tabloyu 15 Nisan'a kadar bitirmiştir.", "kaynak": "enwiki.txt", "alinti": "For the next two and a half months Delacroix worked intensively on the painting, eventually finishing it by April 15.", "ihtiyat": false},
-  {"id": "C25", "bolum": "onem", "iddia": "Antoine-Jean Gros, tabloyu 'du Rubens châtié' (terbiye edilmiş Rubens) diye niteleyerek Peter Paul Rubens'le olumlu bir karşılaştırma yapmıştır.", "kaynak": "enwiki.txt", "alinti": "Antoine-Jean Gros called it \"du Rubens châtié\" ('A chastised Rubens'), a positive comparison to the artist Peter Paul Rubens.", "ihtiyat": false},
-  {"id": "C26", "bolum": "onem", "iddia": "Delacroix 2.400 frank istemiş, son fiyatı Forbin'e bırakmıştır; Forbin 2.000 frank ödemiştir.", "kaynak": "enwiki.txt", "alinti": "Delacroix requested 2,400 francs (equivalent to €1,215.78 in 2025), though he left the final price to Forbin, who paid 2,000 francs (equivalent to €1,013.15 in 2025).", "ihtiyat": false},
-  {"id": "C27", "bolum": "onem", "iddia": "Tablo 16 Temmuz'da satın alınarak Paris'teki Musée du Luxembourg'a yerleştirilmiştir; burası, eserlerin sanatçının ölümünde Louvre'a aktarıldığı yaşayan sanatçılar müzesidir.", "kaynak": "enwiki.txt", "alinti": "It was purchased on July 16 and placed in Paris's Musée du Luxembourg, a museum for living artists from which paintings would be transferred to the Louvre upon their artist's death.", "ihtiyat": false},
-  {"id": "C28", "bolum": "onem", "iddia": "Tablo Kasım 1874'te Louvre'a aktarılmıştır; Delacroix 13 Ağustos 1863'te ölmüştü.", "kaynak": "enwiki.txt", "alinti": "In November 1874, the painting was transferred to the Louvre, several years after Delacroix's death on August 13, 1863.", "ihtiyat": false},
-  {"id": "C29", "bolum": "onem", "iddia": "Asistan Pierre Andrieu, restorasyonun kişisel olarak kendisine emanet edildiğini öne sürer; Delacroix'nin yeniden boyamayı kendisi yapma ısrarı nedeniyle bu iddia tartışmalıdır.", "kaynak": "enwiki.txt", "alinti": "Delacroix's assistant Pierre Andrieu claims to have been personally entrusted with the painting's restoration, though this claim is doubtful given Delacroix's insistence that he be the one to repaint it.", "ihtiyat": true},
-  {"id": "C30", "bolum": "onem", "iddia": "Musée du Luxembourg'daki konumu, tabloyu 19. yüzyıl ressamları için hem ikonik hem kolay erişilir kılmış ve onu o yüzyılın en çok kopyalanan Delacroix tablosu yapmıştır.", "kaynak": "enwiki.txt", "alinti": "The Barque of Dante's location in the Musée du Luxembourg made it both iconic and easily accessible to 19th century painters, leading it to becoming the most copied Delacroix painting of that century.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Dante Alighieri'nin Inferno adlı şiirinin sekizinci kantosuna dayanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting is based on Canto VIII of Dante Alighieri's poem Inferno",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Dante ve yol arkadaşı Virgil, Phlegyas'ın kayığıyla Styx nehrini geçer; lanetli ruhlar kayığa tutunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "depicting Dante and his companion Virgil crossing the river Styx on Phlegyas's boat, onto which damned souls cling.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Lanetli bir adam kayığa tutunup Dante'yi sorgular; Virgil adamı nehre geri iter.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A damned man clings onto the boat and interrogates Dante, before Virgil pushes the man back into the river.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Dante, lanetlilerin acı çığlıkları arasında adamı Filippo Argenti olarak tanır ve ardından yanan Dis kentinden gelen çığlıkları duyar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Dante hears screams of anguish, first from the damned, identifying the man as Filippo Argenti, and then from the burning City of Dis, causing Dante to lean forwards in awe.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Johnson, ön plandaki kadının pozunun Michelangelo'nun Night'ına benzediğini belirtir; Delacroix bunu muhtemelen Géricault'un etüdü aracılığıyla görmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Lee Johnson noted that the woman in the foreground has a pose similar to that of Michelangelo's Night, which Delacroix might have encountered through Théodore Géricault's study, of which his own studies bear a significant resemblance.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Kadının kayığa tutunmasını sağlamak için sol kolu, Adem'in Yaratılışı'nda Tanrı'nın sağ kolunu tutan ignudo'nunkine benzer biçimde değiştirilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "To have her holding on to the boat, her left arm is modified similarly to the ignudo holding God's right arm in The Creation of Adam",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Sol ön plandaki figürün pozu Rubens'in Hero ve Leander tablosundaki Leander figüründen esinlenmiş olabilir; Âdem'in Yaratılışı'ndaki Tanrı'nın bedeninden de gelmiş olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The pose of the left foreground figure may have been inspired by the figure of Leander in this painting, but could also be the body of God's in The Creation of Adam.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Sol ön plan figürünün başı, neredeyse kesin olarak çağdaşı Théodore Géricault'un Medusa'nın Salı adlı tablosundan alınmadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The head is almost certainly drawn from The Raft of the Medusa by contemporaneous artist Théodore Géricault.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Johnson'a göre arka planda salın üzerinden bakan lanetli adamın yüzü, John Flaxman'ın The Fiery Sepulchres gravüründeki Cavalcante de' Cavalcanti figüründen türetilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Johnson has also suggested that the face of the damned man in the background peering over the raft was derived from Cavalcante de' Cavalcanti in John Flaxman's engraving The Fiery Sepulchres, created as part of his illustrations of The Divine Comedy.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Delacroix, Dante'nin çığlıklara tepkisini hayretten savunmacı bir poza çevirmiştir; Dante dengesiz biçimde Virgil'e tutunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He also noted that Delacroix changed Dante's reaction to the screams from awe to a defensive posture, where he clings unsteadily onto Virgil.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Stierle, Delacroix'nin Inferno'daki ardışık olayları (bedenlerin yüzeye çıkışı, Dis'ten gelen çığlıklara Dante'nin tepkisi, kentin gözlenmesi) tek bir kendi içinde tamamlanmış ana uyarladığını gözlemler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The literary scholar Karlheinz Stierle observed how Delacroix adapted the sequential events of Inferno, the surfacing of the bodies, Dante's reaction to the screams coming from Dis, and then the observation of the city itself, into one self-contained moment.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Eskizler, giysisinin altındaki form eksikliği nedeniyle Virgil hariç tüm figürlerin canlı modellerden çizilmiş olduğunu düşündürür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Delacroix's sketches suggest that all the figures in the painting, excluding Virgil due to the lack of form under his clothing, seem to have been drawn from live models, in accordance with practice at the time.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Virgil'in sol kolu ve başı Michelangelo'nun Peygamber Yeşaya'sından türetilmiştir; keskin hatlar ve olağanüstü pürüzsüz cilt dokusu, başın bir sikke ya da bronzdan da esinlendiğini gösterir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Virgil's left arm and head were derived from Michelangelo's Prophet Isaiah, though the sharp features and unusually smooth texture of the skin indicates the head was also inspired by a coin or bronze.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Dante'nin giysisindeki kesişen kıvrımlar Michelangelo'nun Rachel'inkini yansıtır; başı, Dante'nin ölüm maskesinden yapılmış bir ön yağlıboya etüdden gelir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The arrangement of intersecting folds in Dante's drapery reflects that of Michelangelo's Rachel, and his head comes from a preliminary oil study of Dante's death mask.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun başlıca renk yeniliği, ön plandaki lanetlilerin üzerinden yuvarlanan su damlalarının betimlemesindedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting's primary color innovation is found in the depiction of water droplets rolling off the damned in the painting's foreground.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Damlalar, gökkuşağı benzeri bir etkiyle canlı ve karıştırılmamış renklerden oluşturulur: yeşil ve sarı lekeler yan yana konur, gölgelerde kırmızı, ışıklarda beyaz kullanılır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The drops are created out of vibrant, unmixed colors in a rainbow-like effect: dabs of green and yellow are placed together, with red for shadows and white for highlights.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Sanat profesörü Frank Trapp, damlaların 1860–1861 restorasyonu sırasında eklenmiş ya da değiştirilmiş olabileceğini öne sürmüş ve onları 'en iyi ihtimalle saf olmayan kanıt' diye nitelemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The arts professor Frank Trapp believed that these drops may have been added or modified during its restoration from 1860 to 1861, labeling them \"at best impure evidence\".",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Delacroix, Andrieu'ye tabloda kullandığı tek modelin Martin François Suisse olduğunu söylemiştir; etütler bu iddiayı çürütmez.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Delacroix told Andrieu that the only model he used in the painting was Martin François Suisse, a claim which is not refuted by the studies.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Kadın figürü bile bir erkek model etüdünden alınmış görünür; Delacroix yalnızca göğüs kaslarını yuvarlaklaştırmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Even the female figure seems to have been taken from a study of a male model, Delacroix simply rounding out the pectoral muscles.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Stierle'ye göre bu pozlar, İlahi Komedya'da Dante'nin kuşkusu ile Virgil'in soylu kendine güveni arasındaki temel ilişkiyi vurgular.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Stierle argued that that these poses highlight the fundamental relationship in The Divine Comedy between Dante's doubt and Virgil's noble self-confidence.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Rubin, Delacroix'nin etütlerine dayanarak tablonun bu dinamika üzerine kurulduğunu savunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Rubin also observed this dynamic, and argued based on Delacroix's studies that it was what the painting was build around.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Dante'nin Kayığı, Delacroix'nin halka açık sergilenen ilk tablosu ve Paris Salonu'na ilk girişidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Barque of Dante was Delacroix's first publicly exhibited picture, and his first entry to the Paris Salon.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Delacroix, 26 Temmuz 1821'de kız kardeşine yazdığı mektupta, 1822 Salonu'na süregelen Yunan Bağımsızlık Savaşı'nı betimleyen bir tablo sunma niyetini belirtmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He had shown interest in the Salon of 1822 as early as July 26, 1821, when he wrote to his sister stating his intention to submit a painting depicting the ongoing Greek War of Independence",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Delacroix iki buçuk ay boyunca yoğun çalışarak tabloyu 15 Nisan'a kadar bitirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "For the next two and a half months Delacroix worked intensively on the painting, eventually finishing it by April 15.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Antoine-Jean Gros, tabloyu 'du Rubens châtié' (terbiye edilmiş Rubens) diye niteleyerek Peter Paul Rubens'le olumlu bir karşılaştırma yapmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Antoine-Jean Gros called it \"du Rubens châtié\" ('A chastised Rubens'), a positive comparison to the artist Peter Paul Rubens.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Delacroix 2.400 frank istemiş, son fiyatı Forbin'e bırakmıştır; Forbin 2.000 frank ödemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Delacroix requested 2,400 francs (equivalent to €1,215.78 in 2025), though he left the final price to Forbin, who paid 2,000 francs (equivalent to €1,013.15 in 2025).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Tablo 16 Temmuz'da satın alınarak Paris'teki Musée du Luxembourg'a yerleştirilmiştir; burası, eserlerin sanatçının ölümünde Louvre'a aktarıldığı yaşayan sanatçılar müzesidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was purchased on July 16 and placed in Paris's Musée du Luxembourg, a museum for living artists from which paintings would be transferred to the Louvre upon their artist's death.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Tablo Kasım 1874'te Louvre'a aktarılmıştır; Delacroix 13 Ağustos 1863'te ölmüştü.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In November 1874, the painting was transferred to the Louvre, several years after Delacroix's death on August 13, 1863.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Asistan Pierre Andrieu, restorasyonun kişisel olarak kendisine emanet edildiğini öne sürer; Delacroix'nin yeniden boyamayı kendisi yapma ısrarı nedeniyle bu iddia tartışmalıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Delacroix's assistant Pierre Andrieu claims to have been personally entrusted with the painting's restoration, though this claim is doubtful given Delacroix's insistence that he be the one to repaint it.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Musée du Luxembourg'daki konumu, tabloyu 19. yüzyıl ressamları için hem ikonik hem kolay erişilir kılmış ve onu o yüzyılın en çok kopyalanan Delacroix tablosu yapmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Barque of Dante's location in the Musée du Luxembourg made it both iconic and easily accessible to 19th century painters, leading it to becoming the most copied Delacroix painting of that century.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "Kayıkçı figürü: wikidata Charon'u betimlerken enwiki Phlegyas'ın kayığını anlatıyor", "a": {"kaynak": "wikidata.txt", "alinti": "depicts (P180): Charon (Q6612)"}, "b": {"kaynak": "enwiki.txt", "alinti": "depicting Dante and his companion Virgil crossing the river Styx on Phlegyas's boat, onto which damned souls cling."}}
+  {
+   "konu": "Kayıkçı figürü: wikidata Charon'u betimlerken enwiki Phlegyas'ın kayığını anlatıyor",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "depicts (P180): Charon (Q6612)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "depicting Dante and his companion Virgil crossing the river Styx on Phlegyas's boat, onto which damned souls cling."
+   }
+  }
  ],
  "bulunamadi": []
 }

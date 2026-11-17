@@ -2,53 +2,348 @@
  "anahtar": "Q1217288",
  "baslik_tr": "Aziz Antonius'un Sınanması",
  "kunye": {
-  "sanatci": {"deger": "Hieronymus Bosch", "kaynak": "wikidata.txt", "alinti": "creator (P170): Hieronymus Bosch (Q130531)"},
-  "tarih": {"deger": "yaklaşık 1501", "kaynak": "wikidata.txt", "alinti": "description (en): triptych by Hieronymus Bosch, Lisbon, circa 1501", "ihtiyat": true},
-  "teknik": {"deger": "yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)"},
-  "olcu": {"deger": "131,5 × 238 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 131.5 centimetre width (P2049): 238 centimetre"},
-  "yer": {"deger": "Ulusal Antik Sanat Müzesi, Lizbon", "kaynak": "wikidata.txt", "alinti": "location (P276): National Museum of Ancient Art (Q212459)"}
+  "sanatci": {
+   "deger": "Hieronymus Bosch",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Hieronymus Bosch (Q130531)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1501",
+   "kaynak": "wikidata.txt",
+   "alinti": "description (en): triptych by Hieronymus Bosch, Lisbon, circa 1501",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)"
+  },
+  "olcu": {
+   "deger": "131,5 × 238 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 131.5 centimetre width (P2049): 238 centimetre"
+  },
+  "yer": {
+   "deger": "Ulusal Antik Sanat Müzesi, Lizbon",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): National Museum of Ancient Art (Q212459)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Yapıt, 3'üncü yüzyılın sonu ile 4'üncü yüzyılın başında yaşamış Mısırlı Çöl Babaları'ndan Büyük Antonius'un zihinsel ve ruhsal azaplarını konu alır.", "kaynak": "enwiki.txt", "alinti": "The work portrays the mental and spiritual torments endured by Saint Anthony the Great (Anthony Abbot), one of the most prominent of the Desert Fathers of Egypt in the late 3rd and early 4th centuries.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Sol panel, Aziz Antonius'un efsanevi uçuşunu ve düşüşünü betimler.", "kaynak": "enwiki.txt", "alinti": "The left panel portrays the legendary flight and the fall of St. Anthony.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Gökyüzünde aziz, bir şeytan sürüsü tarafından aşağı indirilir.", "kaynak": "enwiki.txt", "alinti": "In the sky, the saint is brought down by a host of demons.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Ön planda, düşüşün ardından bir keşiş ve bir laik tarafından desteklenen bitkin Antonius yer alır.", "kaynak": "enwiki.txt", "alinti": "In the foreground is a tired-out Anthony, supported after the fall by a monk and a layman", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Merkez panelde aziz, yıkık bir kulenin içindeki küçük hücresine işaret eden bir kutsama eliyle tefekkür halindedir.", "kaynak": "enwiki.txt", "alinti": "At the center is the saint in contemplation, with a blessing hand pointing at his small cell inside a ruined tower", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Kuledeki hücrede, Çarmıh'ı işaret eden minyatür bir İsa figürü görünür.", "kaynak": "enwiki.txt", "alinti": "where a miniature Christ appears to point at the Crucifix", "ihtiyat": true},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Sağ panelin ön planında lüksü simgeleyen çıplak bir kadın figürü betimlenir.", "kaynak": "enwiki.txt", "alinti": "In the foreground is a naked woman, a symbol of luxury.", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Azizin yanındaki kırmızı pelerinli ve fırıldaklı cüce, insanlığın gayretsizliğinin simgesidir.", "kaynak": "enwiki.txt", "alinti": "The dwarf next to him, who wears a red mantle and a whirligig, is a symbol of humanity's fecklessness.", "ihtiyat": false},
-  {"id": "C09", "bolum": "gorunen", "iddia": "Ön planda, çıplak şeytanların taşıdığı, ekmek ve şarap küpü bulunan bir masa son ayartmaları temsil eder.", "kaynak": "enwiki.txt", "alinti": "In the foreground, finally, are the last temptations: a table with bread and a jar of vine, supported by naked demons.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Sağ panelin arka planında kuleli bir şehir, yel değirmenleri ve bir göl yer alır.", "kaynak": "enwiki.txt", "alinti": "The background includes a towered city, windmills and a lake.", "ihtiyat": false},
-  {"id": "C11", "bolum": "gorunen", "iddia": "Gökyüzünde balık üzerinde giden iki figür, rivayete göre Cadı Meclisleri'ne katılmak için Şeytan'dan uçma yeteneği almıştır.", "kaynak": "enwiki.txt", "alinti": "The two figures riding the fish in the sky had, according to the legend, obtained the capability to fly by the Devil in order to partake in Witches' Sabbaths.", "ihtiyat": true},
-  {"id": "C12", "bolum": "gorunen", "iddia": "Aziz dünyaya bakarken İsa yönünü işaret eder; paneldeki hiç kimse O'nun yönüne bakmamaktadır.", "kaynak": "enwiki.txt", "alinti": "The saint looks out into the world while pointing in the direction of Christ; no one in the panel (world) is looking in His direction.", "ihtiyat": false},
-  {"id": "C13", "bolum": "kompozisyon", "iddia": "Triptik, iki dış paneli merkez bölüme menteşeli kanatlar oluşturan üç ahşap panel üzerine yağlıboya bir eserdir.", "kaynak": "enwiki.txt", "alinti": "The Temptation of St. Anthony is an  oil painting on three wooden panels, having the form of a triptych, the two outer panels being hinged shutters to the central section.", "ihtiyat": false},
-  {"id": "C14", "bolum": "kompozisyon", "iddia": "Merkez panel 131,5 × 119 cm, kanatlar ise 131,5 × 53 cm ölçüsündedir.", "kaynak": "enwiki.txt", "alinti": "The centre panel measures 131.5 by 119 cm, and the wings measure 131.5 by 53 cm.", "ihtiyat": false},
-  {"id": "C15", "bolum": "kompozisyon", "iddia": "Dönemin benzer Flaman eserlerinde olduğu gibi kanatların dış yüzeyleri griaille boyanmıştır.", "kaynak": "enwiki.txt", "alinti": "As usual in other similar Flemish works of the time, the exteriors of the shutters are painted in grisaille.", "ihtiyat": false},
-  {"id": "C16", "bolum": "kompozisyon", "iddia": "Kanat dışlarının soluk renkleri ve konusu, triptiğin Paskalya öncesi perhiz temasıyla uyumludur.", "kaynak": "enwiki.txt", "alinti": "The subdued coloration and the subject matter of the shutter exteriors of this triptych are in keeping with the Lenten theme.", "ihtiyat": false},
-  {"id": "C17", "bolum": "kompozisyon", "iddia": "Sol kanat dışı, önde Petrus'un Malchus'un kulağını kestiği, arkada askerlerin düşmüş İsa'yı çevrelediği İsa'nın Tutuklanması sahnesini gösterir.", "kaynak": "enwiki.txt", "alinti": "The left panel shows the Arrest of Christ, including, in the foreground, St. Peter cutting Malchus's ear and, in the background, the soldiers are surrounding a fallen Jesus; at the left is Judas fleeing after his kiss.", "ihtiyat": false},
-  {"id": "C18", "bolum": "anlam", "iddia": "Sağ kanat dışı, arka planda İsa'nın Çarmıhı Taşıması'nı, ön planda ise biri günah çıkaran diğeri tövbe etmeyen iki hırsızı betimler.", "kaynak": "enwiki.txt", "alinti": "The right panel portrays Christ Carrying the Cross in the background, while the foreground depicts the two thieves, one confessing and the other refusing to convert.", "ihtiyat": false},
-  {"id": "C19", "bolum": "anlam", "iddia": "Konuların kaynakları, Flanders'ta Pieter van Os tarafından yaygınlaştırılan Athanasius'un Aziz Antonius'un Hayatı adlı eseri ve Jacopo da Varazze'nin Altın Efsane'sidir.", "kaynak": "enwiki.txt", "alinti": "The sources for the subjects were Athanasius of Alexandria's Life of St. Anthony, which had been popularized in Flanders by Pieter van Os, and Jacopo da Varazze's Golden Legend.", "ihtiyat": false},
-  {"id": "C20", "bolum": "anlam", "iddia": "Siyah tenli bir rahibe, cadılığın ve lüksün simgesi olan bir kurbağalı kap tutar; kurbağa da bir yumurta tutmaktadır.", "kaynak": "enwiki.txt", "alinti": "A black-skinned priestess holds a vessel with a toad, a symbol of witchcraft as well as of luxury; the animal in turns holds an egg.", "ihtiyat": false},
-  {"id": "C21", "bolum": "anlam", "iddia": "Siyah giysili şarkıcının yüzü domuz şeklindedir ve başının üstünde sapkınlığın alegorisi olan küçük bir baykuş bulunur.", "kaynak": "enwiki.txt", "alinti": "A black-dressed singer has a pig face and a little owl (an allegory of heresy) above his head, while a crippled man is going to receive the communion.", "ihtiyat": false},
-  {"id": "C22", "bolum": "anlam", "iddia": "Soldaki şeytan grubu, içi boş bir ağaca benzeyen miğfer takan bir kadın içerir ve kanlı şiddeti simgelediği düşünülebilir.", "kaynak": "enwiki.txt", "alinti": "The demon group at the left, including a woman wearing a helmet resembling a hollow tree, may symbolize the bloody violence.", "ihtiyat": true},
-  {"id": "C23", "bolum": "anlam", "iddia": "Sağdaki sudaki grup, Mısır'a Kaçış'ın ya da Müneccimlerin Tapınması'nın şeytani bir parodisi olabilir.", "kaynak": "enwiki.txt", "alinti": "The group in the water at right may be a devilish parody of either the flight into Egypt or the Adoration of the Magi", "ihtiyat": true},
-  {"id": "C24", "bolum": "anlam", "iddia": "Ön plandaki kırmızı meyveden üçüncü bir şeytan grubu çıkar; arp çalıp tavuk üzerinde giden bir şeytan vardır ve başka bir şeytan balık-teknenin çevresinde dolaşıyor görünür.", "kaynak": "enwiki.txt", "alinti": "a third demonic group is emerging from the red fruit in the foreground. This group includes a devil who is playing a harp and riding a chicken, and another devil appears to be moving around the fish-boat at the center.", "ihtiyat": true},
-  {"id": "C25", "bolum": "anlam", "iddia": "Balık ve deve dikeni imgeleri, dönemin simyasıyla ve sıcak hastalığa karşı kullanılan diğer soğuk öğelerle ilişkilidir.", "kaynak": "enwiki.txt", "alinti": "The images of fish and thistle relate to alchemy from the time and other 'cold' elements used to counter the 'hot' malady.", "ihtiyat": false},
-  {"id": "C26", "bolum": "anlam", "iddia": "Başka bir yoruma göre imgelerin çoğu, Bosch dönemindeki ergotizm ve o dönemin tedavi biçimleriyle ilişkilidir.", "kaynak": "enwiki.txt", "alinti": "In another interpretation, much of the images relate to ergotism and the forms of treatment at the time of Bosch.", "ihtiyat": true},
-  {"id": "C27", "bolum": "anlam", "iddia": "Büyük meyve bir mandragora elması olarak yorumlanabilir ve kılıç sallayan adam kök sökme törenine bir gönderme olarak görülebilir.", "kaynak": "enwiki.txt", "alinti": "The large fruit can be interpreted as a mandrake apple and the man wielding the sword can be seen as a reference to the uprooting ceremony.", "ihtiyat": true},
-  {"id": "C28", "bolum": "anlam", "iddia": "Mandragora kökü ergotizme karşı koruma olarak kullanılırdı; meyvesi ise hastalığın yol açtığı gerekli amputasyonlarda anestezi işlevi görürdü.", "kaynak": "enwiki.txt", "alinti": "Mandrake root was used often as a protection against ergotism, and the fruit was used as an anesthetic, which helped with necessary amputations resulting from disease.", "ihtiyat": false},
-  {"id": "C29", "bolum": "anlam", "iddia": "Doğal anestezik fazla verildiğinde hastalar için ölümcül olabilirdi ve ergotizm halüsinasyonlarına ek olarak kendi halüsinasyonlarına da yol açardı.", "kaynak": "enwiki.txt", "alinti": "The natural anesthetic also could kill the patients if given too much, and it also caused hallucinations of its own in addition to the hallucinations of ergotism", "ihtiyat": true},
-  {"id": "C30", "bolum": "anlam", "iddia": "Gökyüzündeki silindir şapkalı sakallı adam, vizyonlardan sorumlu olduğu düşünülen büyücü olabilir.", "kaynak": "enwiki.txt", "alinti": "The bearded man with a top hat could be the wizard thought responsible for the visions.", "ihtiyat": true},
-  {"id": "C31", "bolum": "onem", "iddia": "Bazı tarihçilere göre eser, 1574'te Escorial'e gönderilen II. Felipe envanterinde kayıtlı üç Sınanma tablosundan biri olabilir.", "kaynak": "enwiki.txt", "alinti": "According to some historians, the work could be one of the three Temptations recorded in the inventory of Philip II of Spain sent to the Escorial in 1574.", "ihtiyat": true},
-  {"id": "C32", "bolum": "onem", "iddia": "1950'lerden itibaren triptiğin, Portekizli hümanist Damião de Góis tarafından 1523 ile 1545 arasında satın alınmış olması daha olası kabul edilmişti.", "kaynak": "enwiki.txt", "alinti": "From the 1950s, it had traditionally been considered more likely that the triptych was bought by the Portuguese humanist Damião de Góis between 1523 and 1545.", "ihtiyat": true},
-  {"id": "C33", "bolum": "onem", "iddia": "Tablo 1872'de Lizbon Kraliyet Sarayı koleksiyonunda belgelenmiş ve 1911'de bugünkü müzesine bağışlanmıştır.", "kaynak": "enwiki.txt", "alinti": "the painting was documented as part of the collections in the Royal Palace of Lisbon in 1872 March from Spain, and in 1911, it was donated it to its current museum.", "ihtiyat": false},
-  {"id": "C34", "bolum": "onem", "iddia": "Tablo genellikle 1490–1500 dönemine atfedilse de dendrokronolojik analiz onu yaklaşık 1501'e tarihlendirmiştir.", "kaynak": "enwiki.txt", "alinti": "Although the painting has usually been attributed to the period 1490–1500, dendochronologic analysis has assigned it to around 1501.", "ihtiyat": true},
-  {"id": "C35", "bolum": "onem", "iddia": "Bosch'un birçok tablosu gibi bu eser de bir dizi kopyaya konu olmuştur.", "kaynak": "enwiki.txt", "alinti": "Like many of Bosch's paintings, The Temptation of St. Anthony was the subject of a number of copies.", "ihtiyat": false},
-  {"id": "C36", "bolum": "onem", "iddia": "İki kanadın küçültülmüş bir kopyası Madrid'deki Prado Müzesi'ndedir.", "kaynak": "enwiki.txt", "alinti": "Reduced copy of two wings is in Prado Museum in Madrid.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Yapıt, 3'üncü yüzyılın sonu ile 4'üncü yüzyılın başında yaşamış Mısırlı Çöl Babaları'ndan Büyük Antonius'un zihinsel ve ruhsal azaplarını konu alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The work portrays the mental and spiritual torments endured by Saint Anthony the Great (Anthony Abbot), one of the most prominent of the Desert Fathers of Egypt in the late 3rd and early 4th centuries.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Sol panel, Aziz Antonius'un efsanevi uçuşunu ve düşüşünü betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The left panel portrays the legendary flight and the fall of St. Anthony.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Gökyüzünde aziz, bir şeytan sürüsü tarafından aşağı indirilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the sky, the saint is brought down by a host of demons.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Ön planda, düşüşün ardından bir keşiş ve bir laik tarafından desteklenen bitkin Antonius yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the foreground is a tired-out Anthony, supported after the fall by a monk and a layman",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Merkez panelde aziz, yıkık bir kulenin içindeki küçük hücresine işaret eden bir kutsama eliyle tefekkür halindedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the center is the saint in contemplation, with a blessing hand pointing at his small cell inside a ruined tower",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Kuledeki hücrede, Çarmıh'ı işaret eden minyatür bir İsa figürü görünür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "where a miniature Christ appears to point at the Crucifix",
+   "ihtiyat": true
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Sağ panelin ön planında lüksü simgeleyen çıplak bir kadın figürü betimlenir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the foreground is a naked woman, a symbol of luxury.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Azizin yanındaki kırmızı pelerinli ve fırıldaklı cüce, insanlığın gayretsizliğinin simgesidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The dwarf next to him, who wears a red mantle and a whirligig, is a symbol of humanity's fecklessness.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Ön planda, çıplak şeytanların taşıdığı, ekmek ve şarap küpü bulunan bir masa son ayartmaları temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the foreground, finally, are the last temptations: a table with bread and a jar of vine, supported by naked demons.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Sağ panelin arka planında kuleli bir şehir, yel değirmenleri ve bir göl yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The background includes a towered city, windmills and a lake.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Gökyüzünde balık üzerinde giden iki figür, rivayete göre Cadı Meclisleri'ne katılmak için Şeytan'dan uçma yeteneği almıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The two figures riding the fish in the sky had, according to the legend, obtained the capability to fly by the Devil in order to partake in Witches' Sabbaths.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Aziz dünyaya bakarken İsa yönünü işaret eder; paneldeki hiç kimse O'nun yönüne bakmamaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The saint looks out into the world while pointing in the direction of Christ; no one in the panel (world) is looking in His direction.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Triptik, iki dış paneli merkez bölüme menteşeli kanatlar oluşturan üç ahşap panel üzerine yağlıboya bir eserdir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Temptation of St. Anthony is an  oil painting on three wooden panels, having the form of a triptych, the two outer panels being hinged shutters to the central section.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Merkez panel 131,5 × 119 cm, kanatlar ise 131,5 × 53 cm ölçüsündedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The centre panel measures 131.5 by 119 cm, and the wings measure 131.5 by 53 cm.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Dönemin benzer Flaman eserlerinde olduğu gibi kanatların dış yüzeyleri griaille boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "As usual in other similar Flemish works of the time, the exteriors of the shutters are painted in grisaille.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Kanat dışlarının soluk renkleri ve konusu, triptiğin Paskalya öncesi perhiz temasıyla uyumludur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The subdued coloration and the subject matter of the shutter exteriors of this triptych are in keeping with the Lenten theme.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "gorunen",
+   "iddia": "Sol kanat dışı, önde Petrus'un Malchus'un kulağını kestiği, arkada askerlerin düşmüş İsa'yı çevrelediği İsa'nın Tutuklanması sahnesini gösterir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The left panel shows the Arrest of Christ, including, in the foreground, St. Peter cutting Malchus's ear and, in the background, the soldiers are surrounding a fallen Jesus; at the left is Judas fleeing after his kiss.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "gorunen",
+   "iddia": "Sağ kanat dışı, arka planda İsa'nın Çarmıhı Taşıması'nı, ön planda ise biri günah çıkaran diğeri tövbe etmeyen iki hırsızı betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The right panel portrays Christ Carrying the Cross in the background, while the foreground depicts the two thieves, one confessing and the other refusing to convert.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Konuların kaynakları, Flanders'ta Pieter van Os tarafından yaygınlaştırılan Athanasius'un Aziz Antonius'un Hayatı adlı eseri ve Jacopo da Varazze'nin Altın Efsane'sidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The sources for the subjects were Athanasius of Alexandria's Life of St. Anthony, which had been popularized in Flanders by Pieter van Os, and Jacopo da Varazze's Golden Legend.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Siyah tenli bir rahibe, cadılığın ve lüksün simgesi olan bir kurbağalı kap tutar; kurbağa da bir yumurta tutmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A black-skinned priestess holds a vessel with a toad, a symbol of witchcraft as well as of luxury; the animal in turns holds an egg.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Siyah giysili şarkıcının yüzü domuz şeklindedir ve başının üstünde sapkınlığın alegorisi olan küçük bir baykuş bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A black-dressed singer has a pig face and a little owl (an allegory of heresy) above his head, while a crippled man is going to receive the communion.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Soldaki şeytan grubu, içi boş bir ağaca benzeyen miğfer takan bir kadın içerir ve kanlı şiddeti simgelediği düşünülebilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The demon group at the left, including a woman wearing a helmet resembling a hollow tree, may symbolize the bloody violence.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "anlam",
+   "iddia": "Sağdaki sudaki grup, Mısır'a Kaçış'ın ya da Müneccimlerin Tapınması'nın şeytani bir parodisi olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The group in the water at right may be a devilish parody of either the flight into Egypt or the Adoration of the Magi",
+   "ihtiyat": true
+  },
+  {
+   "id": "C24",
+   "bolum": "gorunen",
+   "iddia": "Ön plandaki kırmızı meyveden üçüncü bir şeytan grubu çıkar; arp çalıp tavuk üzerinde giden bir şeytan vardır ve başka bir şeytan balık-teknenin çevresinde dolaşıyor görünür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "a third demonic group is emerging from the red fruit in the foreground. This group includes a devil who is playing a harp and riding a chicken, and another devil appears to be moving around the fish-boat at the center.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C25",
+   "bolum": "anlam",
+   "iddia": "Balık ve deve dikeni imgeleri, dönemin simyasıyla ve sıcak hastalığa karşı kullanılan diğer soğuk öğelerle ilişkilidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The images of fish and thistle relate to alchemy from the time and other 'cold' elements used to counter the 'hot' malady.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "anlam",
+   "iddia": "Başka bir yoruma göre imgelerin çoğu, Bosch dönemindeki ergotizm ve o dönemin tedavi biçimleriyle ilişkilidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In another interpretation, much of the images relate to ergotism and the forms of treatment at the time of Bosch.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C27",
+   "bolum": "anlam",
+   "iddia": "Büyük meyve bir mandragora elması olarak yorumlanabilir ve kılıç sallayan adam kök sökme törenine bir gönderme olarak görülebilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The large fruit can be interpreted as a mandrake apple and the man wielding the sword can be seen as a reference to the uprooting ceremony.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C28",
+   "bolum": "anlam",
+   "iddia": "Mandragora kökü ergotizme karşı koruma olarak kullanılırdı; meyvesi ise hastalığın yol açtığı gerekli amputasyonlarda anestezi işlevi görürdü.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mandrake root was used often as a protection against ergotism, and the fruit was used as an anesthetic, which helped with necessary amputations resulting from disease.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "anlam",
+   "iddia": "Doğal anestezik fazla verildiğinde hastalar için ölümcül olabilirdi ve ergotizm halüsinasyonlarına ek olarak kendi halüsinasyonlarına da yol açardı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The natural anesthetic also could kill the patients if given too much, and it also caused hallucinations of its own in addition to the hallucinations of ergotism",
+   "ihtiyat": true
+  },
+  {
+   "id": "C30",
+   "bolum": "anlam",
+   "iddia": "Silindir şapkalı sakallı adam, vizyonlardan sorumlu tutulan büyücü olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The bearded man with a top hat could be the wizard thought responsible for the visions.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C31",
+   "bolum": "onem",
+   "iddia": "Bazı tarihçilere göre eser, 1574'te Escorial'e gönderilen II. Felipe envanterinde kayıtlı üç Sınanma tablosundan biri olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to some historians, the work could be one of the three Temptations recorded in the inventory of Philip II of Spain sent to the Escorial in 1574.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C32",
+   "bolum": "onem",
+   "iddia": "1950'lerden itibaren triptiğin, Portekizli hümanist Damião de Góis tarafından 1523 ile 1545 arasında satın alınmış olması daha olası kabul edilmişti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "From the 1950s, it had traditionally been considered more likely that the triptych was bought by the Portuguese humanist Damião de Góis between 1523 and 1545.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C33",
+   "bolum": "onem",
+   "iddia": "Tablo 1872'de Lizbon Kraliyet Sarayı koleksiyonunda belgelenmiş ve 1911'de bugünkü müzesine bağışlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the painting was documented as part of the collections in the Royal Palace of Lisbon in 1872 March from Spain, and in 1911, it was donated it to its current museum.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C34",
+   "bolum": "onem",
+   "iddia": "Tablo genellikle 1490–1500 dönemine atfedilse de dendrokronolojik analiz onu yaklaşık 1501'e tarihlendirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Although the painting has usually been attributed to the period 1490–1500, dendochronologic analysis has assigned it to around 1501.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C35",
+   "bolum": "onem",
+   "iddia": "Bosch'un birçok tablosu gibi bu eser de bir dizi kopyaya konu olmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Like many of Bosch's paintings, The Temptation of St. Anthony was the subject of a number of copies.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C36",
+   "bolum": "onem",
+   "iddia": "İki kanadın küçültülmüş bir kopyası Madrid'deki Prado Müzesi'ndedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Reduced copy of two wings is in Prado Museum in Madrid.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1501"}, "b": {"kaynak": "enwiki.txt", "alinti": "Although the painting has usually been attributed to the period 1490–1500, dendochronologic analysis has assigned it to around 1501."}},
-  {"konu": "genişlik ölçüsü", "a": {"kaynak": "wikidata.txt", "alinti": "width (P2049): 238 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "The centre panel measures 131.5 by 119 cm, and the wings measure 131.5 by 53 cm."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1501"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Although the painting has usually been attributed to the period 1490–1500, dendochronologic analysis has assigned it to around 1501."
+   }
+  },
+  {
+   "konu": "genişlik ölçüsü",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "width (P2049): 238 centimetre"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The centre panel measures 131.5 by 119 cm, and the wings measure 131.5 by 53 cm."
+   }
+  }
  ],
- "bulunamadi": ["kompozisyon: alt çizim ve restorasyon bulguları kaynakta yok"]
+ "bulunamadi": [
+  "kompozisyon: alt çizim ve restorasyon bulguları kaynakta yok"
+ ]
 }

@@ -2,37 +2,220 @@
  "anahtar": "Q2293905",
  "baslik_tr": "Medusa",
  "kunye": {
-  "sanatci": {"deger": "Caravaggio", "kaynak": "wikidata.txt", "alinti": "creator (P170): Caravaggio (Q42207)"},
-  "tarih": {"deger": "yaklaşık 1597", "kaynak": "enwiki.txt", "alinti": "Although the work is not signed or dated, it is often dated as 1597.", "ihtiyat": true},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "60 × 55 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 60 centimetre width (P2049): 55 centimetre"},
-  "yer": {"deger": "Uffizi Gallery", "kaynak": "wikidata.txt", "alinti": "location (P276): Uffizi Gallery (Q51252)"}
+  "sanatci": {
+   "deger": "Caravaggio",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Caravaggio (Q42207)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1597",
+   "kaynak": "enwiki.txt",
+   "alinti": "Although the work is not signed or dated, it is often dated as 1597.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "60 × 55 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 60 centimetre width (P2049): 55 centimetre"
+  },
+  "yer": {
+   "deger": "Uffizi Gallery",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Uffizi Gallery (Q51252)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, Yunan mitolojisinde Gorgon Medusa'nın yarı tanrı Perseus tarafından öldürüldüğü anı betimler.", "kaynak": "enwiki.txt", "alinti": "Both depict the moment from Greek mythology in which the Gorgon Medusa is killed by the demigod Perseus", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablo, Yunan mitinden bir figür olan Medusa'nın kesik başını betimler.", "kaynak": "enwiki.txt", "alinti": "The painting depicts the severed head of Medusa, a figure from Greek myth.", "ihtiyat": false},
-  {"id": "C03", "bolum": "gorunen", "iddia": "Medusa'nın saçları yılanlara dönüşmüştür ve ona bakan herkes taşa döner.", "kaynak": "enwiki.txt", "alinti": "Her hair was turned to snakes, and anybody who looked at her would be turned to stone.", "ihtiyat": false},
-  {"id": "C04", "bolum": "gorunen", "iddia": "Yüzde gözler büyümüş, kaşlar çatılmış ve ağız açık durur.", "kaynak": "enwiki.txt", "alinti": "The face's eyes are widened, and its brows are creased; its mouth hangs open.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Kesik baş hâlâ bilinçli görünür; tablo, ölümden önceki son anları yakalar.", "kaynak": "enwiki.txt", "alinti": "Though the head is decapitated, it still appears conscious, with the painting capturing its final moments before death.", "ihtiyat": true},
-  {"id": "C06", "bolum": "kompozisyon", "iddia": "İkinci versiyon, birincisinden biraz daha büyüktür ve 60×55 cm ölçüsündedir.", "kaynak": "enwiki.txt", "alinti": "It is slightly bigger than the first, measuring 60×55 cm in length.", "ihtiyat": false},
-  {"id": "C07", "bolum": "kompozisyon", "iddia": "Caravaggio, üç boyutlu bir eser yanılsaması yaratmak için tenebrizm ve gerçekçilik kullanır.", "kaynak": "enwiki.txt", "alinti": "Caravaggio employs tenebrism and realism to create the illusion of a three-dimensional work.", "ihtiyat": false},
-  {"id": "C08", "bolum": "kompozisyon", "iddia": "Tablonun tabanı, kavak ağacından yapılmış dairesel bir kalkandır.", "kaynak": "enwiki.txt", "alinti": "Caravaggio used a circular shield made from poplar wood as a base for this painting.", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Kalkan ketenle kaplanmış ve üzerine, boyanın temelini oluşturan dört ayrı hazırlık katmanı sürülmüştür.", "kaynak": "enwiki.txt", "alinti": "The shield was covered by linen, on which four different layers of paint—known as preparation layers—were added to help create the basis for the painting.", "ihtiyat": false},
-  {"id": "C10", "bolum": "kompozisyon", "iddia": "Yeşil arka plan katmanı, verdigris ve kurşun-kalay sarısı boya karışımından oluşur.", "kaynak": "enwiki.txt", "alinti": "On top of this reflective layer, another layer was applied (the green background that is shown on the painting)—this layer consists of a mixture of verdigris and lead-tin yellow paint.", "ihtiyat": false},
-  {"id": "C11", "bolum": "kompozisyon", "iddia": "Medusa'nın yanakları ve çene hattı, tablonun doğasını tamamlamak için uzatılmıştır.", "kaynak": "enwiki.txt", "alinti": "Medusa's cheeks and jawline are also elongated to complement the nature of the painting.", "ihtiyat": false},
-  {"id": "C12", "bolum": "anlam", "iddia": "Caravaggio, Medusa'nın yüzüne kendi yüzünü yerleştirerek kendisini onun ölümcül bakışından bağışık olarak konumlandırır.", "kaynak": "enwiki.txt", "alinti": "Caravaggio replaced Medusa's face with his own, allowing him to position himself as being immune to her fatal gaze.", "ihtiyat": false},
-  {"id": "C13", "bolum": "anlam", "iddia": "Yılan saçlı Medusa, bir 'melez canavar' olarak da sayılabilir.", "kaynak": "enwiki.txt", "alinti": "Medusa, with her snakes for hair, could also be considered a \"hybrid monster.\"", "ihtiyat": true},
-  {"id": "C14", "bolum": "anlam", "iddia": "Caravaggio, tuvali dışbükey ahşap bir kalkan üzerine monte etmeyi, Leonardo da Vinci'nin çok övülen eserine karşılaştırma çekmesi için seçmiştir.", "kaynak": "enwiki.txt", "alinti": "Caravaggio chose to mount the canvas on a convex wooden shield because it would draw comparisons to the much-celebrated work of Leonardo da Vinci.", "ihtiyat": false},
-  {"id": "C15", "bolum": "onem", "iddia": "Medusa, İtalyan diplomat Francesco Maria del Monte tarafından sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The Medusa was commissioned by the Italian diplomat Francesco Maria del Monte, who planned to gift the commemorative shield to Ferdinando I de' Medici and have it placed in the Medici collection.", "ihtiyat": false},
-  {"id": "C16", "bolum": "onem", "iddia": "Del Monte, bu anma kalkanını Ferdinando I de' Medici'ye hediye etmeyi ve Medici koleksiyonuna yerleştirmeyi planlamıştır.", "kaynak": "enwiki.txt", "alinti": "The Medusa was commissioned by the Italian diplomat Francesco Maria del Monte, who planned to gift the commemorative shield to Ferdinando I de' Medici and have it placed in the Medici collection.", "ihtiyat": false},
-  {"id": "C17", "bolum": "onem", "iddia": "Eser, Floransa'daki Uffizi Müzesi'nde imzasız olarak bulunur.", "kaynak": "enwiki.txt", "alinti": "It is now located in the Uffizi Museum in Florence without signature.", "ihtiyat": false},
-  {"id": "C18", "bolum": "onem", "iddia": "İmzasız ve tarihsiz olan eser için yaklaşık 1597 tarihi yaygın olarak kullanılır.", "kaynak": "enwiki.txt", "alinti": "Although the work is not signed or dated, it is often dated as 1597.", "ihtiyat": true},
-  {"id": "C19", "bolum": "onem", "iddia": "Uffizi'deki envanter kaydı, 1351 numarasıyla 1890'dan beri tutulmaktadır.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 1351 [start time: 1890]", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "İkinci versiyon, Medusa (İtalyanca: Testa di Medusa) olarak bilinir.", "kaynak": "enwiki.txt", "alinti": "The second version of the painting is known as Medusa (Italian: Testa di Medusa).", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Eser, Yunan mitolojisinde Gorgon Medusa'nın yarı tanrı Perseus tarafından öldürüldüğü anı betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Both depict the moment from Greek mythology in which the Gorgon Medusa is killed by the demigod Perseus",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Yunan mitinden bir figür olan Medusa'nın kesik başını betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts the severed head of Medusa, a figure from Greek myth.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Medusa'nın saçları yılanlara dönüşmüştür ve ona bakan herkes taşa döner.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Her hair was turned to snakes, and anybody who looked at her would be turned to stone.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Yüzde gözler büyümüş, kaşlar çatılmış ve ağız açık durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The face's eyes are widened, and its brows are creased; its mouth hangs open.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Kesik baş hâlâ bilinçli görünür; tablo, ölümden önceki son anları yakalar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Though the head is decapitated, it still appears conscious, with the painting capturing its final moments before death.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C06",
+   "bolum": "kompozisyon",
+   "iddia": "İkinci versiyon, birincisinden biraz daha büyüktür ve 60×55 cm ölçüsündedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is slightly bigger than the first, measuring 60×55 cm in length.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "kompozisyon",
+   "iddia": "Caravaggio, üç boyutlu bir eser yanılsaması yaratmak için tenebrizm ve gerçekçilik kullanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Caravaggio employs tenebrism and realism to create the illusion of a three-dimensional work.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun tabanı, kavak ağacından yapılmış dairesel bir kalkandır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Caravaggio used a circular shield made from poplar wood as a base for this painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Kalkan ketenle kaplanmış ve üzerine, boyanın temelini oluşturan dört ayrı hazırlık katmanı sürülmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The shield was covered by linen, on which four different layers of paint—known as preparation layers—were added to help create the basis for the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "kompozisyon",
+   "iddia": "Yeşil arka plan katmanı, verdigris ve kurşun-kalay sarısı boya karışımından oluşur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On top of this reflective layer, another layer was applied (the green background that is shown on the painting)—this layer consists of a mixture of verdigris and lead-tin yellow paint.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Medusa'nın yanakları ve çene hattı, tablonun doğasını tamamlamak için uzatılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Medusa's cheeks and jawline are also elongated to complement the nature of the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Caravaggio, Medusa'nın yüzüne kendi yüzünü yerleştirerek kendisini onun ölümcül bakışından bağışık olarak konumlandırır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Caravaggio replaced Medusa's face with his own, allowing him to position himself as being immune to her fatal gaze.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Yılan saçlı Medusa, bir 'melez canavar' olarak da sayılabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Medusa, with her snakes for hair, could also be considered a \"hybrid monster.\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Caravaggio, tuvali dışbükey ahşap bir kalkan üzerine monte etmeyi, Leonardo da Vinci'nin çok övülen eserine karşılaştırma çekmesi için seçmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Caravaggio chose to mount the canvas on a convex wooden shield because it would draw comparisons to the much-celebrated work of Leonardo da Vinci.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Medusa, İtalyan diplomat Francesco Maria del Monte tarafından sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Medusa was commissioned by the Italian diplomat Francesco Maria del Monte, who planned to gift the commemorative shield to Ferdinando I de' Medici and have it placed in the Medici collection.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Del Monte, bu anma kalkanını Ferdinando I de' Medici'ye hediye etmeyi ve Medici koleksiyonuna yerleştirmeyi planlamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Medusa was commissioned by the Italian diplomat Francesco Maria del Monte, who planned to gift the commemorative shield to Ferdinando I de' Medici and have it placed in the Medici collection.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Eser, Floransa'daki Uffizi Müzesi'nde imzasız olarak bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is now located in the Uffizi Museum in Florence without signature.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Eser imzasız ve tarihsiz olsa da sıklıkla 1597'ye tarihlendirilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Although the work is not signed or dated, it is often dated as 1597.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Uffizi'deki envanter kaydı, 1351 numarasıyla 1890'dan beri tutulmaktadır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "inventory number (P217): 1351 [start time: 1890]",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "İkinci versiyon, Medusa (İtalyanca: Testa di Medusa) olarak bilinir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The second version of the painting is known as Medusa (Italian: Testa di Medusa).",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1590 (precision: decade)"}, "b": {"kaynak": "enwiki.txt", "alinti": "Although the work is not signed or dated, it is often dated as 1597."}},
-  {"konu": "teknik (destek)", "a": {"kaynak": "wikidata.txt", "alinti": "made from material (P186): canvas (Q12321255)"}, "b": {"kaynak": "enwiki.txt", "alinti": "Caravaggio used a circular shield made from poplar wood as a base for this painting."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1590 (precision: decade)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Although the work is not signed or dated, it is often dated as 1597."
+   }
+  },
+  {
+   "konu": "teknik (destek)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "made from material (P186): canvas (Q12321255)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Caravaggio used a circular shield made from poplar wood as a base for this painting."
+   }
+  }
  ],
- "bulunamadi": []
+ "bulunamadi": [
+  "gorunen: kaynakta resmin görünüşüne dair yalnız iki betim var"
+ ]
 }
