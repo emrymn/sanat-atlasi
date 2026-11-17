@@ -2456,3 +2456,13 @@ seç, araştırmayı Qwen'e yaptır, halüsinasyonu engelleyen net bir komut ver
   Atasözleri'nde dört aday kutu yanlış deyimi gösterdiği için çıkarıldı ("gün ışığını sepette taşımak" bulunamadı).
 - Uygulama kodu değişmedi; yalnız veri ve yama sürümü (Yenilikler'e girmedi). Birim 388/388; başyapıt, ayrıntı ve galeri
   uçtan uca 13/13. Toplam 164 başyapıt, 929 nokta.
+
+### İş 189b · parti 2: 9 yakın okuma (sürüm 1.83.2)
+
+Sarı İsa, Melencolia I, Rokeby Venüs'ü, Rogier · Çarmıhtan İndiriliş, Saka Kuşlu Meryem, Medusa, Celile Denizi'ndeki Fırtına,
+Botticelli · Venüs ve Mars, Aziz Pavlus'un Din Değiştirmesi; 50 nokta. **Dürer · Âdem ile Havva (Q351300) atlandı:** uygulamadaki
+görsel 1504 gravürü, araştırma 1507 Prado tablosu; görsel düzeltilmeden yazılmayacak (`scripts/basyapit_arastirma/DEVIR.md`).
+Rembrandt'ta "kusan havari" kutusu doğrulanamadığı için çıkarıldı. Yazım sonrası kaynak denetiminde çıkarılanlar: Trémalo'daki
+heykelin "ahşap" olduğu, del Monte'nin "kardinal" unvanı, "Macaristan Kraliçesi", Âdem'in Golgota'ya gömülmesi, arıların İtalyanca adı.
+Devir için `scripts/basyapit_arastirma/DEVIR.md` (adım adım yöntem, hazır istem) ve `gorsel.py` (indir, kırp, yakın) eklendi.
+Birim 388/388; başyapıt, ayrıntı, galeri uçtan uca 13/13. 173 başyapıt, 979 nokta.

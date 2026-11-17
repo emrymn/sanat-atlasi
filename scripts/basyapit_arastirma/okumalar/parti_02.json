@@ -1,0 +1,205 @@
+[
+ {
+  "anahtar": "Q500951", "sanatci": "paul-gauguin", "baslik": "Sarı İsa", "ozgun": "The Yellow Christ", "tarih": "1889", "muze": "Buffalo AKG Art Museum, Buffalo",
+  "ozet": "Gauguin, Pont-Aven'e döndükten kısa süre sonra yaptığı bu tabloda çarmıhtaki İsa'yı Bretanya'nın sonbahar kırlarına, dua eden Breton kadınların arasına taşır.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Tablonun ortasında sapsarı bir İsa çarmıhta asılı; başı yana düşmüş, gözleri kapalı. Çarmıhın dibinde beyaz başlıklı, koyu giysili Breton kadınlar oturmuş dua ediyor. Arkada sarı tepeler, turuncu ve kırmızı ağaçlar, mavi çatılı köy evleri uzanıyor. Uzakta küçük bir adam bir duvarın üstünden atlıyor. Sahne İncil'deki Kudüs'te değil, 19. yüzyıl kuzey Fransa'sında geçiyormuş gibi gösterilir."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Gauguin figürleri güçlü dış çizgilerle tanımlar ve gölgelemeyi yalnızca kadınlara ayırır. Kalın kontur ve düz renk alanları, vitraylara benzeyen cloisonnist üslubun tipik örneğidir. Manzaradaki sarı, kırmızı ve yeşilden oluşan sonbahar paleti, İsa'nın bedenindeki baskın sarıyı yansıtır. Çarmıh tabloyu dikine ikiye böler; İsa'nın açık kolları üst kenara neredeyse değer."},
+   {"baslik": "Anlam ve semboller", "metin": "Tablo, Trémalo Şapeli'ndeki Sarı İsa'ya ve çarmıha geriliş konusuna dayanır. Gauguin olayı Kudüs'te değil, kendi zamanının Bretanya'sında, dua eden köylü kadınların arasında gösterir. Kutsal sahne ile gündelik kır hayatı aynı yüzeyde yan yana durur. Uzaktaki duvardan atlayan adam, çarmıhın hemen ardında sıradan hayatın sürdüğünü hatırlatır."},
+   {"baslik": "Neden önemli?", "metin": "Yeşil İsa ile birlikte Sembolist resmin anahtar eserlerinden biri sayılır. Cloisonnizm, primitivizm ve Pont-Aven Okulu'yla, yani Post-Empresyonizm'in içindeki yeni akımlarla ilişkilendirilir. Tablo Émile Schuffenecker, Gustave Fayet ve Paul Rosenberg gibi sahiplerden geçti ve 1946'dan beri Buffalo'dadır. Kurşun kalem etüdü Thyssen-Bornemisza Müzesi'nde, suluboya versiyonu Chicago Sanat Enstitüsü'ndedir."}
+  ],
+  "bak": [
+   "İsa'nın sarı yüzündeki kalın, koyu dış çizgiler: gölge yerine kontur.",
+   "Sağ alttaki kadının sırtındaki pembe şal ve beyaz başlık.",
+   "Sağ alt köşedeki \"P Gauguin 89\" imzası."
+  ],
+  "noktalar": [
+   {"ad": "Sarı İsa'nın yüzü", "x": 0.32, "y": 0.03, "w": 0.16, "h": 0.13, "metin": "İsa'nın başı yana düşmüş, gözleri kapalı; yüz düz sarı bir alan ve kalın koyu çizgilerle kurulmuş. Bu güçlü dış hatlar cloisonnist üslubun tipik özelliğidir."},
+   {"ad": "Dua eden kadın", "x": 0.1, "y": 0.5, "w": 0.23, "h": 0.32, "metin": "Beyaz başlıklı, mavi giysili ve turuncu önlüklü bir Breton kadın ellerini kucağında birleştirmiş oturuyor. Gauguin gölgelemeyi yalnız bu kadınlarda kullanır."},
+   {"ad": "Sırtı dönük kadın", "x": 0.5, "y": 0.69, "w": 0.25, "h": 0.27, "metin": "Ön planda, sırtı bize dönük bir kadın başını eğmiş. Geleneksel Breton başlığı ve şalı, sahneyi 19. yüzyıl Bretanya'sına yerleştirir."},
+   {"ad": "Sonbahar köyü", "x": 0.55, "y": 0.28, "w": 0.38, "h": 0.17, "metin": "Arkada turuncu ağaçlar ve mavi çatılı evleriyle bir köy. Sarı, kırmızı ve yeşil sonbahar renkleri İsa'nın bedenindeki sarıyı yankılar."},
+   {"ad": "Duvardan atlayan adam", "x": 0.64, "y": 0.53, "w": 0.13, "h": 0.09, "metin": "Uzakta bir adam taş duvarın üstünden atlıyor; yanında iki küçük beyaz başlıklı figür var. Gündelik hayat, çarmıhın hemen ardında sürüyor."},
+   {"ad": "İmza", "x": 0.72, "y": 0.93, "w": 0.16, "h": 0.06, "metin": "Sağ alt köşede \"P Gauguin 89\" imzası okunuyor. Tablo 1889'da, Gauguin'in Pont-Aven'e dönüşünden kısa süre sonra yapıldı."}
+  ]
+ },
+ {
+  "anahtar": "Q1362177", "sanatci": "albrecht-durer", "baslik": "Melencolia I", "ozgun": "Melencolia I", "tarih": "1514", "muze": "",
+  "ozet": "Dürer'in üç \"usta baskısı\"ndan biri olan bu 1514 tarihli gravür, yaratıcı çalışmanın araçlarıyla çevrili ama hiçbir şey yapamayan kanatlı bir figürle melankoliyi kişileştirir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Kanatlı bir kadın figürü, kucağında kapalı bir kitapla oturmuş; başını yumruğuna dayamış, elinde pergeli gevşekçe tutuyor ve uzağa bakıyor. Yanında küçük bir putto bir tablete karalıyor. Sol yarıyı dev, kesik bir taş blok kaplıyor. Ne başı ne sonu görünen yedi basamaklı bir merdiven yapıya dayanmış. Duvarda kum saati, terazi, çan ve dört sıralı bir sayı karesi asılı. Gökte yarasa benzeri bir yaratık \"Melencolia I\" yazılı pankartı taşıyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Güçlü perspektifli ve tek ışık kaynaklı Çalışma Odasında Aziz Hieronymus'un aksine, Melencolia I dağınıktır ve bir görsel merkezi yoktur. Az sayıdaki perspektif çizgisi, yarasa benzeri yaratığın altındaki bir kaçış noktasına gider. Duvardaki 4×4 kare, Avrupa'da basılan ilk sihirli karedir: her satır, sütun ve köşegenin toplamı 34'tür. Alt satırın ortasındaki iki hücre gravürün tarihini, 1514'ü verir."},
+   {"baslik": "Anlam ve semboller", "metin": "Figür genellikle melankolinin ya da geometrinin kişileştirilmesi olarak yorumlanır; yumruğa dayanan baş Orta Çağ melankoli ikonografisinden gelir. Sihirli kare, melankoliyi savuşturduğuna inanılan Jüpiter'in tılsımıdır. Sık alıntılanan bir not, figürün yanındaki anahtarları güç, keseyi servet diye açıklar. Panofsky'ye göre başlıktaki \"I\", Agrippa'nın üç melankoli türünün birincisidir. Koerner ise gravürün bilerek belirsiz bırakıldığını savunur."},
+   {"baslik": "Neden önemli?", "metin": "Şövalye, Ölüm ve Şeytan ile Çalışma Odasında Aziz Hieronymus'la birlikte Dürer'in üç Meisterstich'inden biridir. Gravür, Dürer'in annesini 1514'te kaybettiği yas dönemine denk gelir. Vasari onu bütün dünyayı hayran bırakan bir teknik başarı saydı. Cranach motiflerini birçok tablosunda kullandı. Baskının iki hâli vardır: ilkinde karedeki dokuz rakamı ters görünür."}
+  ],
+  "bak": [
+   "Sağ üstteki sihirli kare: alt satırın ortasında 15 ve 14, yani 1514.",
+   "Sol üstte yarasa benzeri yaratığın taşıdığı \"MELENCOLIA I\" pankartı.",
+   "Sağ alttaki basamakta 1514 tarihi ve Dürer'in AD monogramı."
+  ],
+  "noktalar": [
+   {"ad": "Sihirli kare", "x": 0.74, "y": 0.16, "w": 0.16, "h": 0.13, "metin": "Avrupa'da basılan ilk sihirli kare: her satır, sütun ve köşegenin toplamı 34. Alt satırın ortasındaki 15 ve 14 gravürün tarihini verir. Kare, melankoliyi savuşturan Jüpiter'in tılsımı sayılırdı."},
+   {"ad": "Pankart ve yarasa", "x": 0.05, "y": 0.15, "w": 0.23, "h": 0.1, "metin": "Kanatlarını açmış yarasa benzeri bir yaratık \"MELENCOLIA I\" yazılı pankartı taşıyor. Arkada parlayan bir ışık ve bir gökkuşağı var. Panofsky'ye göre \"I\", melankolinin üç türünden birincisini gösterir."},
+   {"ad": "Düşünceli figür", "x": 0.62, "y": 0.3, "w": 0.18, "h": 0.18, "metin": "Çelenkli kanatlı figür başını yumruğuna dayamış, karanlık yüzüyle uzağa bakıyor. Bu duruş Orta Çağ'dan gelen melankoli ikonografisidir: araçları elinde ama hiçbir şey yapamıyor."},
+   {"ad": "Karalayan putto", "x": 0.44, "y": 0.29, "w": 0.14, "h": 0.19, "metin": "Küçük kanatlı çocuk bir tablete karalıyor; genellikle resmin tek etkin öğesi sayılır. Elindeki aletin gravürde kullanılan bir burin olabileceği düşünülür."},
+   {"ad": "Kesik taş blok", "x": 0.06, "y": 0.33, "w": 0.34, "h": 0.27, "metin": "Sol yarıya egemen olan garip, kesik bir taş blok. Yüzeyinde silik bir kafatası ya da yüz seçildiği, bunun Dürer'in kendisine ait olabileceği öne sürülür."},
+   {"ad": "Tarih ve monogram", "x": 0.88, "y": 0.76, "w": 0.08, "h": 0.07, "metin": "Basamağın üstünde 1514 tarihi ve altında Dürer'in AD monogramı kazılı. Aynı tarih sihirli karenin alt satırında da gizlidir."}
+  ]
+ },
+ {
+  "anahtar": "Q275349", "sanatci": "diego-velazquez", "baslik": "Aynadaki Venüs (Rokeby Venüs'ü)", "ozgun": "Rokeby Venus", "tarih": "1647–1651", "muze": "National Gallery, Londra",
+  "ozet": "Velázquez'in günümüze ulaşan tek kadın nüsü, sırtını bize dönmüş Venüs'ü, Cupid'in tuttuğu aynaya bakarken gösterir; aynadaki bulanık yüz tablonun en çok tartışılan ayrıntısıdır.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Aşk tanrıçası Venüs gri bir çarşafın üstünde uzanmış, sırtı bize dönük. Kanatlı oğlu Cupid diz çökmüş, ona bir ayna tutuyor; ayna çerçevesinin üstünden pembe kurdeleler sarkıyor. Aynada Venüs'ün yüzü bulanık görünüyor. Arkada kırmızı bir perde var. Venüs'ün mücevherleri, gülleri yok; Cupid de yay ve okları olmadan gösterilmiş. Önceki tasvirlerdeki sarışın tanrıçanın aksine bu Venüs esmerdir."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Velázquez Venüs'ün iki yerleşik pozunu birleştirir: yatakta uzanma ve aynaya bakma. Renkler kırmızı, beyaz ve gri tonlarla sınırlıdır; bu tonlar Venüs'ün teninde bile görülür. Teknik inceleme gri çarşafın özgününde koyu leylak renginde olduğunu, zamanla solduğunu gösterdi. Kızılötesi incelemeye göre Venüs başta daha dik ve başı sola dönüktü; ressam figürleri boyarken önemli ölçüde değiştirdi."},
+   {"baslik": "Anlam ve semboller", "metin": "Venüs'ün aynada kendine baktığı söylenir; oysa izleyici yüzü kendine dönük gördüğü için bu fiziksel olarak imkânsızdır. Yansıyan baş da olması gerekenden çok daha büyüktür. Bazı eleştirmenlere göre belirsiz yüz, resmin belirli bir kadın değil, özsever güzelliğin imgesi olduğunu gösterir. Kurdelelerin anlamı tartışmalıdır: aşıkları bağlayan prangalar ya da aynayı asmak için olabilir. Modelin kimliği bilinmez."},
+   {"baslik": "Neden önemli?", "metin": "Muhtemelen sanatçının İtalya ziyareti sırasında yapıldı. 1813'te İngiltere'de Yorkshire'daki Rokeby Park'a götürüldü ve adını oradan aldı. 1906'da National Gallery için satın alındı. 1914'te süfrajet Mary Richardson tabloya yedi kesik açtı; tablo tamamen onarıldı. Manet Olympia'da bu pozu yeniden yorumladı."}
+  ],
+  "bak": [
+   "Aynadaki bulanık, olması gerekenden büyük yüz.",
+   "Ayna çerçevesine dolanan pembe ipek kurdeleler.",
+   "Venüs'ün altındaki gri çarşaf: özgününde koyu leylak rengindeydi."
+  ],
+  "noktalar": [
+   {"ad": "Aynadaki yüz", "x": 0.32, "y": 0.2, "w": 0.22, "h": 0.36, "metin": "Aynada Venüs'ün yüzü bulanık ve olması gerekenden çok daha büyük görünür. İzleyici yüzü kendine dönük gördüğünden, Venüs'ün aslında kendine baktığı fiziksel olarak mümkün değildir."},
+   {"ad": "Pembe kurdeleler", "x": 0.26, "y": 0.19, "w": 0.18, "h": 0.12, "metin": "Birbirine geçmiş pembe ipek kurdeleler aynanın üstünden sarkıyor. Anlamları tartışılır: Cupid'in aşıkları bağladığı prangalar, aynayı asmak ya da Venüs'ün gözlerini bağlamak için olabileceği öne sürülmüştür."},
+   {"ad": "Yaysız Cupid", "x": 0.02, "y": 0.03, "w": 0.28, "h": 0.55, "metin": "Kanatlı Cupid diz çökmüş, iki eliyle aynayı tutuyor. Her zamanki yayı ve okları yok; kadının Venüs olduğunu anlatan yalnızca onun varlığıdır."},
+   {"ad": "Venüs'ün sırtı", "x": 0.6, "y": 0.26, "w": 0.38, "h": 0.32, "metin": "Venüs sırtını bize dönmüş, koyu saçlarını toplamış. Sarışın tanrıça geleneğinin aksine esmerdir. 1914'teki saldırıda kesiklerin çoğu omuzlarının arasındaki bölgedeydi."},
+   {"ad": "Gri çarşaf", "x": 0.0, "y": 0.62, "w": 0.35, "h": 0.22, "metin": "Venüs'ün uzandığı çarşaf bugün gri görünüyor. Teknik inceleme, özgününde koyu leylak renginde olduğunu ve zamanla solduğunu ortaya koydu."}
+  ]
+ },
+ {
+  "anahtar": "Q568847", "sanatci": "rogier-van-der-weyden", "baslik": "Çarmıhtan İndiriliş", "ozgun": "The Descent from the Cross", "tarih": "yaklaşık 1435", "muze": "Museo del Prado, Madrid",
+  "ozet": "Rogier van der Weyden'in Leuven'deki arbaletçiler loncası için yaptığı bu pano, İsa'nın çarmıhtan indirilişini ve oğlunun pozunu yansıtarak bayılan Meryem'i, altın bir nişin içinde on figürle gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Altın zeminli dar bir nişte İsa'nın cansız bedeni çarmıhtan indiriliyor. Kırmızı giysili Nikodemos ile altın sırmalı kaftanlı Arimatealı Yusuf onu taşıyor; merdivendeki genç, çıkarılan çivileri tutuyor. Solda mavi giysili Meryem baygın düşmüş; Yuhanna onu tutuyor. Sağda Mecdelli Meryem dramatik bir pozla ellerini sıkıyor. Yerde, Âdem'in kafatası duruyor. Üst köşelerde küçük arbalet biçimleri var."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Sahne yalnızca bir omuz genişliğindeki bir mekânda geçer, yine de en az beş derinlik düzeyi vardır. İsa'nın bükülmüş bedeni bir arbaletin biçimini alır. Merdiven olanaksız bir perspektiftedir: tepesi çarmıhın arkasında, ayağı önündedir. Rogier, çarmıhla merdivenin zemine değdiği yerleri Meryem'in uzatılmış bacağı ve mantosuyla gizlemiştir. Parlak kırmızı, mavi ve altın, figürleri bir oyma sunak gibi öne çıkarır."},
+   {"baslik": "Anlam ve semboller", "metin": "Meryem'in bayılması oğlunun pozunu tekrarlar; bu, Erken Felemenk sanatında tamamen yeniydi. Teologlar bu bayılmayı spasimo diye adlandırdı. Yusuf'un bakışı İsa ile annesinin ellerini, yani yeni Âdem ile Havva'yı, Âdem'in kafatasına bağlar ve Kurtuluş'u görselleştirir. Resim, indirilme, ağıt ve gömülme anlarının donmuş bir sentezi olarak okunabilir. Duygusu, Kempisli Thomas'ın mistik dindarlığını yansıtır."},
+   {"baslik": "Neden önemli?", "metin": "Leuven'in Büyük Arbaletçiler Loncası sipariş etti; arbalet biçimleri bunu anar. Yaklaşık 1548'de bir kopya ve bir org karşılığında V. Karl'ın kız kardeşi Avusturyalı Maria'ya geçti, sonra İspanya'ya taşındı. İç Savaş'ta Valencia'ya, oradan İsviçre'ye götürüldü. Panel 1992'de çatlamaya başlamıştı ve Prado büyük bir restorasyon yaptı. Çarmıhtan indirilişi konu alan en etkili Felemenk resmi sayılır ve iki yüzyıl boyunca kopyalandı."}
+  ],
+  "bak": [
+   "Bayılan Meryem'in bedeni, İsa'nın bedeninin eğrisini tekrarlıyor.",
+   "Sol alttaki Âdem'in kafatası ve ona doğru uzanan eller.",
+   "Üst köşelerdeki oymalarda gizli küçük arbaletler."
+  ],
+  "noktalar": [
+   {"ad": "İsa'nın bedeni", "x": 0.38, "y": 0.3, "w": 0.25, "h": 0.4, "metin": "İsa'nın cansız bedeni yatay bir eğriyle taşınıyor. Bükülmüş dış hattında bir arbalet biçimi görülür; bunun tabloyu sipariş eden Arbaletçiler Loncası'nı andığı düşünülür."},
+   {"ad": "Bayılan Meryem", "x": 0.2, "y": 0.55, "w": 0.25, "h": 0.4, "metin": "Meryem bayılarak yere çöküyor; bedeni oğlunun pozunu tekrarlar. Bu \"Meryem'in bayılması\" Felemenk sanatında yeniydi ve teologlarca spasimo diye adlandırıldı."},
+   {"ad": "Âdem'in kafatası", "x": 0.16, "y": 0.89, "w": 0.08, "h": 0.09, "metin": "Yerde Âdem'in kafatası duruyor. Yusuf'un bakışı İsa ile Meryem'in ellerini bu kafatasına bağlar; yeni Âdem ile Havva eskisinin günahını kurtarır."},
+   {"ad": "Merdivendeki genç", "x": 0.39, "y": 0.0, "w": 0.22, "h": 0.22, "metin": "Çarmıhın tepesinde, merdivendeki genç adam İsa'nın bedeninden çıkarılan çivileri tutuyor. Merdivenin tepesi çarmıhın arkasında, ayağı önünde: olanaksız bir perspektif."},
+   {"ad": "Arimatealı Yusuf", "x": 0.63, "y": 0.28, "w": 0.17, "h": 0.3, "metin": "Lorne Campbell'ın tanımlamasına göre resmin en görkemli giysisi olan altın sırmalı kaftanı giyen figür Arimatealı Yusuf'tur. İsa'nın bacaklarını taşıyor; arkasında bir hizmetkâr kavanoz tutuyor."},
+   {"ad": "Mecdelli Meryem", "x": 0.8, "y": 0.33, "w": 0.15, "h": 0.25, "metin": "Sağ kenarda Mecdelli Meryem gövdesini büküp ellerini sıkıyor. Bu dramatik poz, solda bayılan Meryem'le kompozisyonun iki ucunu dengeler."}
+  ]
+ },
+ {
+  "anahtar": "Q2344505", "sanatci": "raphael", "baslik": "Saka Kuşlu Meryem", "ozgun": "Madonna of the Goldfinch", "tarih": "yaklaşık 1505–1506", "muze": "Uffizi, Floransa",
+  "ozet": "Raphael'in Floransa döneminden bu düğün hediyesi, bir kayaya oturmuş Meryem'i, saka kuşunu tutan küçük Yahya'yı ve kuşa uzanan Çocuk İsa'yı yumuşak bir manzarada üçgen bir grupla gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Genç ve güzel Meryem kırmızı elbisesi ve mavi mantosuyla bir kayaya oturmuş, elinde açık bir kitap tutuyor. Önünde iki bebek var: solda hayvan postu giymiş küçük Yahya bir saka kuşunu avuçlarında tutuyor, sağda Çocuk İsa kuşa dokunmak için elini uzatıyor. Meryem başını eğip onlara bakıyor. Arkada ağaçlar, bir köprü, ırmak ve uzakta tepeler ile bir kasaba görünür."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Üç bedenin duruşu doğal olsa da birlikte neredeyse düzgün bir üçgen oluştururlar. Çeşitli ama sakin doğa manzarası, ortadaki sahneyi çerçeveler. 1548'de ev yıkıldığında tablo on yedi parçaya bölünmüş, aceleyle birleştirilmişti. 2002–2008 restorasyonunda röntgen, kızılötesi ve lazerle incelenip kir ve sonradan eklenen boyalar temizlendi; Raphael'in özgün yüzeyi ortaya çıktı."},
+   {"baslik": "Anlam ve semboller", "metin": "Saka kuşu İsa'nın çarmıha gerilişini temsil eder. Efsaneye göre kuşun kırmızı lekesi, İsa'nın diken tacından bir diken çekerken üstüne sıçrayan kan damlasından kalmıştır. Meryem'in kırmızısı İsa'nın Çilesi'ni, mavisi kiliseyi simgeler. Kitapta \"Sedes Sapientiae\" (Bilgelik Makamı) yazar. Bu terim tahtta oturan Meryem için kullanılır; burada oturduğu kaya onun doğal tahtıdır."},
+   {"baslik": "Neden önemli?", "metin": "Raphael tabloyu Floransa döneminde, Çayırdaki Meryem ve Güzel Bahçıvan Kız gibi Meryem'lerle birlikte yaptı. Arkadaşı Lorenzo Nasi'ye düğün hediyesiydi. 17 Kasım 1548'de Nasi'nin evi bir heyelanla yıkıldı ve tablo on yedi parçaya ayrıldı. 1666'dan beri Uffizi koleksiyonundadır. İkinci Dünya Savaşı'nda Floransa dışındaki villalarda saklandı; 2002'de başlayan restorasyon 2008'de bitti."}
+  ],
+  "bak": [
+   "Yahya'nın avuçlarındaki saka kuşu: başındaki kırmızı leke.",
+   "Meryem'in elindeki açık kitap: \"Bilgelik Makamı\".",
+   "Arkada solda taş köprü ve ırmak; sağda uzak kasaba."
+  ],
+  "noktalar": [
+   {"ad": "Saka kuşu", "x": 0.39, "y": 0.5, "w": 0.12, "h": 0.08, "metin": "Yahya saka kuşunu avuçlarında tutuyor, İsa elini kuşun başına uzatıyor. Kuş çarmıha gerilişi temsil eder; efsaneye göre başındaki kırmızı leke İsa'nın kanından kalmıştır."},
+   {"ad": "Meryem'in yüzü", "x": 0.43, "y": 0.15, "w": 0.17, "h": 0.15, "metin": "Meryem genç ve güzel; başını eğmiş, iki çocuğa bakıyor. Saçlarını ince bir örgüyle toplamış."},
+   {"ad": "Açık kitap", "x": 0.74, "y": 0.47, "w": 0.16, "h": 0.1, "metin": "Meryem'in elindeki kitapta \"Sedes Sapientiae\", yani Bilgelik Makamı yazar. Terim tahtta oturan Meryem için kullanılır; burada oturduğu kaya onun doğal tahtıdır."},
+   {"ad": "Küçük Yahya", "x": 0.14, "y": 0.55, "w": 0.24, "h": 0.33, "metin": "Solda hayvan postu giymiş küçük Vaftizci Yahya duruyor. İsa ile Yahya burada henüz bebektir."},
+   {"ad": "Çocuk İsa", "x": 0.53, "y": 0.48, "w": 0.2, "h": 0.22, "metin": "Çocuk İsa, Meryem'in dizlerinin arasında ayakta duruyor ve kuşa dokunmak için uzanıyor. Meryem'in eli Yahya'nın sırtında, üç figürü bir üçgende birleştirir."},
+   {"ad": "Uzak kasaba", "x": 0.66, "y": 0.29, "w": 0.3, "h": 0.1, "metin": "Sağda uzakta mavimsi tepeler, kubbeli yapılarla bir kasaba ve ırmak görünür. Sakin manzara ortadaki sahneyi çerçeveler."}
+  ]
+ },
+ {
+  "anahtar": "Q2293905", "sanatci": "caravaggio", "baslik": "Medusa", "ozgun": "Medusa", "tarih": "yaklaşık 1597", "muze": "Uffizi, Floransa",
+  "ozet": "Caravaggio, Perseus'un kestiği Medusa'nın başını, hâlâ çığlık atarken, kavaktan yapılmış dışbükey bir kalkanın üstüne boyadı; yüze de kendi yüzünü verdi.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Yuvarlak yeşil bir kalkanın ortasında Medusa'nın kesik başı var. Gözleri büyümüş, kaşları çatılmış, ağzı açık; çığlık atıyor. Saçlarının yerinde kıvrılan yılanlar kaynaşıyor. Kesik boyundan kan aşağı akıyor. Baş hâlâ bilinçli görünüyor: tablo ölümden hemen önceki son anı yakalar. Kalkanın kenarında koyu, süslü bir bordür dolaşır."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Tablonun tabanı kavaktan yapılmış dairesel, dışbükey bir kalkandır; keten kaplanmış ve dört hazırlık katmanıyla astarlanmıştır. Yeşil arka plan bakır yeşili ve kurşun-kalay sarısının karışımıdır. Caravaggio tenebrizm, yani sert ışık-gölge karşıtlığıyla, bombeli yüzeyde başın öne çıktığı üç boyutlu bir yanılsama yaratır. Medusa'nın yanakları ve çenesi kalkanın biçimine uysun diye uzatılmıştır. Bu ikinci versiyon 60×55 cm'dir."},
+   {"baslik": "Anlam ve semboller", "metin": "Mitte Medusa'nın saçları yılana dönüşmüştür ve ona bakan taşa döner. Perseus onu öldürür. Caravaggio Medusa'ya kendi yüzünü vererek kendini onun öldürücü bakışından bağışık kılar. Yılan saçlı Medusa bir melez canavar olarak da okunabilir. Ressam tuvali bir kalkana geçirmeyi, Leonardo'nun çok övülen bir eseriyle karşılaştırılmak için seçmişti."},
+   {"baslik": "Neden önemli?", "metin": "Francesco Maria del Monte sipariş etti ve kalkanı I. Ferdinando de' Medici'ye hediye etmeyi planladı. Böylece Medici koleksiyonuna girdi. İmzasız ve tarihsizdir, ama sıklıkla 1597'ye tarihlendirilir. Floransa'daki Uffizi'dedir ve 1890'dan beri envanterde kayıtlıdır. Testa di Medusa diye de bilinen bu ikinci versiyon, ilkinden biraz büyüktür."}
+  ],
+  "bak": [
+   "Kalkanın bombeli yüzeyi: baş yüzeyden dışarı çıkıyormuş gibi.",
+   "Kesik boyundan akan kan çizgileri.",
+   "Sağ alttaki ağzını açmış küçük yılan başları."
+  ],
+  "noktalar": [
+   {"ad": "Çığlık atan yüz", "x": 0.32, "y": 0.33, "w": 0.34, "h": 0.36, "metin": "Gözler büyümüş, kaşlar çatılmış, ağız açık: Medusa ölümden hemen önce çığlık atıyor. Caravaggio bu yüze kendi yüzünü vermiştir; böylece kendini onun taşa çeviren bakışından bağışık kılar."},
+   {"ad": "Kan", "x": 0.3, "y": 0.62, "w": 0.22, "h": 0.28, "metin": "Kesik boyundan kan ince çizgiler hâlinde aşağı akıyor. Perseus başı yeni kesmiştir; baş hâlâ bilinçli görünür."},
+   {"ad": "Yılan saçlar", "x": 0.72, "y": 0.58, "w": 0.14, "h": 0.1, "metin": "Saçların yerinde kıvrılan yılanlardan biri ağzını açmış. Mite göre Medusa'nın saçları yılana dönüştürülmüştü."},
+   {"ad": "Kalkanın kenarı", "x": 0.0, "y": 0.4, "w": 0.12, "h": 0.2, "metin": "Resim kavaktan yapılmış dışbükey bir kalkanın üstüne boyanmış; kenarda süslü bir bordür dolaşır. Yeşil zemin bakır yeşili ile kurşun-kalay sarısının karışımıdır."}
+  ]
+ },
+ {
+  "anahtar": "Q2246489", "sanatci": "rembrandt-van-rijn", "baslik": "Celile Denizi'ndeki Fırtına", "ozgun": "The Storm on the Sea of Galilee", "tarih": "1633", "muze": "Isabella Stewart Gardner Museum, Boston (1990'da çalındı)",
+  "ozet": "Rembrandt'ın bilinen tek deniz manzarası, İsa'nın fırtınayı dindirdiği mucizeden hemen önceki anı gösterir; tablo 1990'da Boston'da çalındı ve hâlâ kayıptır.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Küçük bir balıkçı teknesi dev bir dalganın üstünde yan yatmış. Dalga pruvaya çarpıyor, yelken yırtılmış. Havariler halatlara, direğe sarılıp tekneyi kurtarmaya uğraşıyor. Sağdaki karanlık kıçta İsa sakin oturuyor; çevresindekiler ona yalvarıyor. Bir havari başını tutup doğrudan bize bakıyor: bu, Rembrandt'ın otoportresidir. Tekne, Kuzey Denizi'ndeki hoeker denen balıkçı teknelerine benzer."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Tablo dikeydir ve alçak bir bakış açısı gökyüzünün denize egemenliğini artırır. Işık sol üstten akıp fırtınalı kasveti deler, bir parça mavi göğü aydınlatır; sağ taraf gölgeye gömülür. Bu sert ışık-gölge karşıtlığı tenebrizmdir. Rembrandt asimetri için teknenin gövdesini değiştirmiş, direği kalınlaştırmıştır. Kompozisyon 1583 tarihli bir Adriaen Collaert baskısını yansıtır."},
+   {"baslik": "Anlam ve semboller", "metin": "Sahne Luka 8:22–25 ile örtüşür: ani bir fırtınada korkuya kapılan havariler uyuyan İsa'yı uyandırır, o da rüzgârı ve dalgaları susturur. Rembrandt mucizenin kendisini değil, ondan hemen önceki dehşet anını seçer. Tümpel'e göre ressam tekneyi denizcilik doğruluğundan çok kendi hayal gücüne göre kurmuştur."},
+   {"baslik": "Neden önemli?", "metin": "Rembrandt'ın bilinen tek deniz manzarasıdır ve en büyük, en erken tarih resimlerindendir. Pieter Lastman'ın etkisi teatralliğinde görülür. Bernard Berenson 1898'de Isabella Stewart Gardner için satın aldı. 18 Mart 1990'da polis kılığındaki iki hırsız tabloyu 12 başka eserle müzeden çaldı: ABD'nin en büyük sanat soygunu. Tablonun nerede olduğu bilinmiyor; müze 10 milyon dolar ödül veriyor."}
+  ],
+  "bak": [
+   "Başını tutup bize bakan havari: Rembrandt'ın kendisi.",
+   "Sağ kıçta karanlıkta sakin oturan İsa.",
+   "Sol üstteki mavi gök parçası ve ışığın düştüğü köpüklü dalga."
+  ],
+  "noktalar": [
+   {"ad": "Pruvadaki dalga", "x": 0.1, "y": 0.56, "w": 0.25, "h": 0.24, "metin": "Dev bir dalga pruvaya çarpıp köpürüyor; ışık en çok burada parlıyor. Havariler halatlara ve direğe sarılmış, tekneyi kurtarmaya uğraşıyor."},
+   {"ad": "Yırtık yelken", "x": 0.47, "y": 0.3, "w": 0.24, "h": 0.2, "metin": "Rüzgâr yelkeni yırtmış, halatlar boşalmış. Rembrandt direği kalınlaştırmış ve teknenin gövdesini asimetrik olsun diye değiştirmiştir."},
+   {"ad": "Sakin İsa", "x": 0.58, "y": 0.7, "w": 0.12, "h": 0.1, "metin": "Teknenin karanlık kıç tarafında İsa sakin oturuyor; çevresindekiler korkuyla ona dönmüş. Kaos içindeki bu sakinlik resmin odak noktasıdır."},
+   {"ad": "Rembrandt'ın otoportresi", "x": 0.46, "y": 0.69, "w": 0.07, "h": 0.08, "metin": "Bir eliyle başını tutan, öbür eliyle halata sarılan bu havari doğrudan izleyiciye bakıyor. Yüz, Rembrandt'ın kendi otoportresidir."},
+   {"ad": "Gökteki aralık", "x": 0.0, "y": 0.1, "w": 0.3, "h": 0.35, "metin": "Işık sol üstten fırtına bulutlarını deliyor ve bir parça mavi göğü aydınlatıyor; sağ taraf gölgede kalır. Bu sert ışık-gölge karşıtlığı tenebrizmdir."}
+  ]
+ },
+ {
+  "anahtar": "Q2293953", "sanatci": "sandro-botticelli", "baslik": "Venüs ve Mars", "ozgun": "Venus and Mars", "tarih": "yaklaşık 1485", "muze": "National Gallery, Londra",
+  "ozet": "Botticelli'nin bu uzun panosunda aşk tanrıçası Venüs, uyuyan savaş tanrısı Mars'ı izlerken küçük satyrler onun silahlarıyla oynar: aşk savaşı yenmiştir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Solda beyaz giysili Venüs uyanık, dik oturmuş Mars'a bakıyor. Sağda Mars neredeyse çıplak, başı geriye düşmüş, derin uykuda. Aralarında dört küçük satyr oynuyor: ikisi onun miğferini ve mızrağını taşıyor, biri kulağına deniz kabuğu üfleyerek onu uyandırmaya çalışıyor, sağ alttaki de zırhının içine girmiş. Mars'ın başının çevresinde yaban arıları uçuşuyor. Arkada ağaçlar ve uzakta surlu bir şehir var."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Uzun, alçak formatta iki tanrı karşılıklı uzanır; satyrler aradaki boşluğu doldurur. Figürlerin konumu Lucretius'un Şeylerin Doğası'ndaki betimlemeyi yansıtır. Tablo yumurta temperası ve yağlıboyayla yapılmıştır. Geniş formatın ve figürlerin yakın görünümünün, tablonun bir duvar kaplamasına ya da yatak, sedir gibi bir mobilyaya yerleştirildiğini düşündürdüğü öne sürülür."},
+   {"baslik": "Anlam ve semboller", "metin": "Olağan yoruma göre tablo bir evliliği kutlar: aşk savaşı yener ya da ondan uzun sürer. Yaban arıları aşkın acıyla geldiğini simgeleyebilir; Gombrich'e göre ise Vespucci ailesine gönderme olabilir. Sağ üst köşedeki arı yuvası, bir hamininin armasının genellikle konduğu yerdedir. Mızrak ve deniz kabuğu cinsel simgeler olarak yorumlanabilir. Sahne, Echion'un kayıp bir tablosunun Lukianos'taki betimlemesine dayanır."},
+   {"baslik": "Neden önemli?", "metin": "Botticelli'nin Primavera, Venüs'ün Doğuşu ve Pallas ile Kentaur gibi mitolojik tablolarından Floransa'daki Uffizi'de olmayan tek tablodur. National Gallery onu 1874'te Christie's'deki bir açık artırmada 1.050 sterline aldı: Botticelli'nin büyük mitolojik tablolarından birinin açık pazardaki kayıtlı tek satışı. 2010'da sağ alttaki satyrin tuttuğu meyvenin tatula (thorn apple) olabileceği öne sürüldü."}
+  ],
+  "bak": [
+   "Mars'ın kulağına deniz kabuğu üfleyen satyr: uyandıramıyor.",
+   "Sağ üst köşedeki ağaç kovuğunda yaban arısı yuvası.",
+   "Sağ alttaki satyr Mars'ın zırhının içine girmiş."
+  ],
+  "noktalar": [
+   {"ad": "Uyuyan Mars", "x": 0.8, "y": 0.05, "w": 0.13, "h": 0.25, "metin": "Savaş tanrısı Mars başı geriye düşmüş, ağzı aralık, derin uykuda. Başının çevresinde yaban arıları uçuşuyor; aşkın acıyla birlikte geldiğinin simgesi olabilir."},
+   {"ad": "Arı yuvası", "x": 0.92, "y": 0.0, "w": 0.08, "h": 0.3, "metin": "Sağ üst köşedeki ağaç kovuğunda bir yaban arısı yuvası var. Bu yer, panolarda hamilerin armasının genellikle konduğu yerdir; Gombrich'e göre arılar Vespucci ailesini anıyor olabilir."},
+   {"ad": "Deniz kabuğu", "x": 0.67, "y": 0.0, "w": 0.15, "h": 0.3, "metin": "Bir satyr Mars'ı uyandırmak için kulağına deniz kabuğu üflüyor, ama başaramıyor. Kabuk, mızrakla birlikte cinsel bir simge olarak da yorumlanır."},
+   {"ad": "Miğfer ve mızrak", "x": 0.22, "y": 0.0, "w": 0.4, "h": 0.35, "metin": "İki küçük satyr Mars'ın miğferini ve uzun mızrağını taşıyarak oynuyor. Savaş tanrısının silahları oyuncağa dönmüştür: aşk savaşı yenmiştir."},
+   {"ad": "Zırhtaki satyr", "x": 0.87, "y": 0.55, "w": 0.13, "h": 0.4, "metin": "Sağ alttaki satyr Mars'ın zırhının içine girmiş, gülümseyerek bize bakıyor. Elindeki meyvenin tatula (thorn apple) olabileceği 2010'da öne sürüldü."},
+   {"ad": "Uyanık Venüs", "x": 0.1, "y": 0.02, "w": 0.12, "h": 0.28, "metin": "Venüs uyanık ve dik, sakin bir yüzle Mars'a bakıyor. Uyuyan savaşa karşı tetikte bekleyen aşk: tablonun anlamı bu karşıtlıkta kurulur."}
+  ]
+ },
+ {
+  "anahtar": "Q2273517", "sanatci": "caravaggio", "baslik": "Aziz Pavlus'un Din Değiştirmesi", "ozgun": "The Conversion of Saint Paul", "tarih": "1601", "muze": "Cerasi Şapeli, Santa Maria del Popolo, Roma",
+  "ozet": "Caravaggio, Şam yolunda gökten gelen ışıkla yere düşen Saul'u, atının ayakları dibinde kollarını açmış, vecd içinde gösterir; sahnenin yarısını at kaplar.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Kaslı genç Saul sırtüstü yere düşmüş; gözleri kapalı, kolları görünmez bir şeyi kucaklar gibi yukarı açık. Turuncu-yeşil Roma zırhı giymiş; tüylü miğferi başından düşmüş, kılıcı yanında, kırmızı pelerini altında bir battaniye gibi. Üstünde alaca kahverengi-krem bir at duruyor; bir toynağı havada, ağzında köpük var. Yaşlı bir seyis atı yularından tutup Saul'un üstünden geçiriyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Atın gövdesi resmin üst yarısını doldurur; insanlar kenarlara ve aşağıya sıkışmıştır. Işık soldan gelir ve atın sağrısında, Saul'un yüzünde ve açık kollarında yoğunlaşır; geri kalan karanlıktır. Gökte ne melek ne de İsa vardır: mucize yalnızca ışıkla anlatılır. Kırmızı pelerin, turuncu zırh ve atın açık postu karanlık zeminin önünde parlar."},
+   {"baslik": "Anlam ve semboller", "metin": "Elçilerin İşleri'ne göre Hristiyanlara zulmeden Tarsuslu Saul, onları tutuklamak için Şam'a giderken gökten bir ışıkla sarıldı, yere düştü ve kendisine seslenen bir ses duydu. Caravaggio hikâyede geçmeyen attan düşme ayrıntısını ekler. An, Saul için yoğun bir dinî vecd anıdır. Eyersiz at yüzünden sahnenin açık havada değil bir ahırda geçtiği bile öne sürülmüştür."},
+   {"baslik": "Neden önemli?", "metin": "Papa VIII. Clemens'in başhazinedarı Tiberio Cerasi Eylül 1600'de şapelinin iki yan tablosunu sipariş etti. Baglione'ye göre iki tablonun ilk versiyonları reddedildi. Tablolar 1 Mayıs 1605'te şapele yerleştirildi ve bugün de oradadır. Bellori tabloyu eleştirdi, ama Roberto Longhi 1952'de onu dinî sanat tarihinin muhtemelen en devrimci tablosu saydı."}
+  ],
+  "bak": [
+   "Saul'un yukarı açılmış kolları: görünmez ışığı kucaklıyor.",
+   "Havada asılı duran toynak ve atın ağzındaki köpük.",
+   "Sağ altta yere düşmüş tüylü miğfer."
+  ],
+  "noktalar": [
+   {"ad": "Yere düşen Saul", "x": 0.55, "y": 0.8, "w": 0.25, "h": 0.14, "metin": "Saul sırtüstü yatıyor, gözleri kapalı; yüzüne gökten gelen ışık düşüyor. Turuncu-yeşil zırhı Roma askeri giysisinin Rönesans'taki karşılığıdır."},
+   {"ad": "Düşen miğfer", "x": 0.84, "y": 0.82, "w": 0.16, "h": 0.13, "metin": "Tüylü miğfer Saul'un başından düşmüş, yerde duruyor. Asker kimliğinin bir anda geride kaldığını gösterir."},
+   {"ad": "Kılıç", "x": 0.2, "y": 0.83, "w": 0.18, "h": 0.08, "metin": "Saul'un kılıcı kırmızı pelerinin üstünde, yanında yatıyor. Hristiyanlara zulmetmeye giden adamın silahı artık elinde değildir."},
+   {"ad": "Yaşlı seyis", "x": 0.77, "y": 0.08, "w": 0.14, "h": 0.13, "metin": "Kırışık alınlı yaşlı bir seyis başını eğmiş, atı yularından tutuyor. Olan biteni görmüyor gibidir: ışık yalnız Saul'a gelir."},
+   {"ad": "Köpüren ağız", "x": 0.8, "y": 0.43, "w": 0.14, "h": 0.13, "metin": "Seyisin tuttuğu dizginin altında atın ağzından hâlâ köpük akıyor. Caravaggio hikâyede olmayan attan düşme ayrıntısını gerçekçi bir sahneye çevirir."},
+   {"ad": "Havadaki toynak", "x": 0.57, "y": 0.48, "w": 0.12, "h": 0.12, "metin": "Atın ön ayağı Saul'un üstünde havada asılı duruyor. At ona basmamak için ayağını kaldırmış gibidir; sahnenin gerilimi bu anda toplanır."}
+  ]
+ }
+]
