@@ -8233,6 +8233,518 @@
      "metin": "Sol alt köşede \"Puvis de Chavannes\" imzası okunuyor. Kırmızı harflerle, kayanın dibine küçük yazılmış."
     }
    ]
+  },
+  {
+   "anahtar": "Q567861",
+   "sanatci": "michelangelo",
+   "baslik": "Son Yargı",
+   "gorsel": "a8763c4bfa653150",
+   "noktalar": [
+    {
+     "ad": "İsa ve Meryem",
+     "x": 0.39,
+     "y": 0.22,
+     "w": 0.17,
+     "h": 0.21,
+     "metin": "Ortada, sakalsız ve kaslı İsa sağ kolunu kaldırmış, hükmünü veriyor; bakışı lanetlilere dönük. Yanında Meryem başını kurtulanlara çevirmiş, kendini geri çekmiş gibi durur."
+    },
+    {
+     "ad": "Bartholomeus'un derisi",
+     "x": 0.51,
+     "y": 0.38,
+     "w": 0.13,
+     "h": 0.2,
+     "metin": "Aziz Bartholomeus, şehitliğinin simgesi olan yüzülmüş derisini tutuyor. Derideki sarkık yüzün, yazarların çoğuna göre, Michelangelo'nun otoportresi olduğu kabul edilir."
+    },
+    {
+     "ad": "Anahtarlı Petrus",
+     "x": 0.6,
+     "y": 0.28,
+     "w": 0.1,
+     "h": 0.17,
+     "metin": "Kel, sakallı Petrus Cennet'in iki anahtarını İsa'ya uzatıyor. Kıyamet geldiği için artık gerekmeyecek anahtarları geri sunduğu düşünülür."
+    },
+    {
+     "ad": "Boru çalan melekler",
+     "x": 0.4,
+     "y": 0.6,
+     "w": 0.22,
+     "h": 0.18,
+     "metin": "Bulutlardaki melekler, Vahiy Kitabı'ndaki gibi borular çalıyor. İkisi kurtulanların ve lanetlilerin adlarının yazılı olduğu kitapları açmış tutuyor."
+    },
+    {
+     "ad": "Kharon'un kayığı",
+     "x": 0.52,
+     "y": 0.8,
+     "w": 0.22,
+     "h": 0.13,
+     "metin": "Antik mitolojide ve Dante'de ruhları öbür dünyaya taşıyan Kharon, küreğini kaldırmış lanetlileri kayıktan sürüyor. Kayık onları cehennemin girişinin yanındaki kıyıya çıkarır."
+    },
+    {
+     "ad": "Minos",
+     "x": 0.89,
+     "y": 0.86,
+     "w": 0.11,
+     "h": 0.14,
+     "metin": "Sağ alt köşede bedenine yılan dolanmış, eşek kulaklı Minos duruyor; Dante'deki gibi lanetlilerin cehenneme kabulünü denetler. Yüzüne, çıplaklığı eleştiren tören ustası Biagio da Cesena'nın hatları verildiği genel olarak kabul edilir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1892745",
+   "sanatci": "leonardo-da-vinci",
+   "baslik": "Dünyanın Kurtarıcısı (Salvator Mundi)",
+   "gorsel": "823ba3bf8908ba0a",
+   "noktalar": [
+    {
+     "ad": "Kristal küre",
+     "x": 0.68,
+     "y": 0.76,
+     "w": 0.32,
+     "h": 0.23,
+     "metin": "İsa sol avucunda saydam bir kristal küre tutuyor; arkasındaki giysi kıvrımları kırılmadan görünür. Küre göklerin göksel küresini temsil eder; içindeki parlak noktalar kristalin katı olduğunu düşündüren kapanımlardır."
+    },
+    {
+     "ad": "Kutsayan el",
+     "x": 0.0,
+     "y": 0.42,
+     "w": 0.22,
+     "h": 0.27,
+     "metin": "Sağ el kutsama işareti yapıyor ve resmin en keskin bölümüdür. Kızılötesi fotoğraflar başparmağın önce daha dik çizildiğini gösterdi. Bambach'a göre bu el Leonardo'nun kendi elinden çıkmış olabilir."
+    },
+    {
+     "ad": "Sfumato yüz",
+     "x": 0.33,
+     "y": 0.14,
+     "w": 0.34,
+     "h": 0.28,
+     "metin": "Yüz, keskin çizgileri olmayan dumanlı bir geçişle, yani sfumatoyla boyanmış. Bu etki kısmen boyanın avuç kenarıyla işlenmesiyle elde edilmiştir. Yüz bir ölçüde hasar görmüş ve yumuşak odakta kalmıştır."
+    },
+    {
+     "ad": "İşlemeli göğüs",
+     "x": 0.4,
+     "y": 0.64,
+     "w": 0.22,
+     "h": 0.12,
+     "metin": "Göğüste çaprazlanan altın işlemeli şeritler ortada bir tokada bağlanıyor. Mavi giysi İsa'nın zamanına değil Rönesans'a ait bir kıyafettir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q269342",
+   "sanatci": "leonardo-da-vinci",
+   "baslik": "Kayalıklar Meryemi",
+   "gorsel": "a2e59c7ed4987db1",
+   "noktalar": [
+    {
+     "ad": "Meleğin işaret eden eli",
+     "x": 0.6,
+     "y": 0.655,
+     "w": 0.1,
+     "h": 0.05,
+     "metin": "Melek sağ elinin işaret parmağıyla Yahya'yı gösteriyor. İki versiyon arasındaki başlıca fark budur: Londra'daki tabloda meleğin eli dizinde durur."
+    },
+    {
+     "ad": "Meleğin bakışı",
+     "x": 0.7,
+     "y": 0.53,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Kıvırcık saçlı melek başını çevirmiş, gözlerini aşağı yukarı bize doğru dikmiş. Londra versiyonunda meleğin bakışı aşağıya, içine dönüktür."
+    },
+    {
+     "ad": "Meryem'in eli",
+     "x": 0.55,
+     "y": 0.555,
+     "w": 0.1,
+     "h": 0.065,
+     "metin": "Meryem sol elini Çocuk İsa'nın başının üstünde, kutsar gibi tutuyor. El, kısaltılarak bize doğru uzatılmış gibi boyanmıştır."
+    },
+    {
+     "ad": "Dua eden Yahya",
+     "x": 0.01,
+     "y": 0.58,
+     "w": 0.29,
+     "h": 0.21,
+     "metin": "Küçük Vaftizci Yahya diz çökmüş, ellerini dua eder gibi birleştirip İsa'ya bakıyor. Meryem bir elini uzatarak onu da gruba katıyor; Louvre versiyonunda Yahya'nın geleneksel haç biçimli asası yoktur."
+    },
+    {
+     "ad": "Kutsayan Çocuk İsa",
+     "x": 0.53,
+     "y": 0.7,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Meleğin desteklediği Çocuk İsa yere oturmuş, sağ elini kaldırıp Yahya'yı kutsuyor. Haleler bu versiyonda yoktur."
+    },
+    {
+     "ad": "Kayaların ardı",
+     "x": 0.06,
+     "y": 0.3,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Mağaranın açıklığından sivri kayalar ve uzakta suyla çevrili bir manzara görünür. Kayalık ortam o güne dek görülmemişti ve tabloya adını verdi."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q636537",
+   "sanatci": "jacques-louis-david",
+   "baslik": "Marat'nın Ölümü",
+   "gorsel": "317191fde448de5c",
+   "noktalar": [
+    {
+     "ad": "Corday'nin mektubu",
+     "x": 0.66,
+     "y": 0.52,
+     "w": 0.2,
+     "h": 0.1,
+     "metin": "Marat'nın sol elindeki kâğıtta tarih ve Charlotte Corday'nin adı okunuyor. Metin Corday'nin gerçek sözleri değil, söylemiş olabileceği şeye dayanan kurgusal bir ifadedir."
+    },
+    {
+     "ad": "Sarkan kol ve kalem",
+     "x": 0.4,
+     "y": 0.85,
+     "w": 0.16,
+     "h": 0.14,
+     "metin": "Sağ kol küvetin dışına sarkmış, parmaklar hâlâ tüy kalemi tutuyor. Aşağı sarkan uzun kol, tabloyu Michelangelo'nun Pietà'sına benzeten başlıca ayrıntıdır."
+    },
+    {
+     "ad": "Kanlı bıçak",
+     "x": 0.06,
+     "y": 0.94,
+     "w": 0.25,
+     "h": 0.06,
+     "metin": "Yerde, cinayette kullanılan kanlı bıçak duruyor. Katil Corday'nin kendisi resimde gösterilmez."
+    },
+    {
+     "ad": "Yara",
+     "x": 0.17,
+     "y": 0.52,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Köprücük kemiğinin altında küçük bir bıçak yarası, çarşafta da kan lekeleri var. Bunun dışında beden kusursuz, idealize edilmiş olarak boyanmıştır."
+    },
+    {
+     "ad": "İthaf yazısı",
+     "x": 0.6,
+     "y": 0.87,
+     "w": 0.26,
+     "h": 0.13,
+     "metin": "Sandığın ön yüzünde \"À MARAT, DAVID\" yazıyor: ressam tabloyu dostuna ithaf ediyor. Alttaki \"L'AN DEUX\" Cumhuriyet'in ikinci yılı demektir."
+    },
+    {
+     "ad": "Sarılı baş",
+     "x": 0.05,
+     "y": 0.42,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Marat'nın başı bir bezle sarılı, yüzü huzurlu, gözleri kapalı. Yüz ve beden yumuşak, parlayan bir ışıkla aydınlanır; şehit tasvirlerini çağrıştırır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q563727",
+   "sanatci": "leonardo-da-vinci",
+   "baslik": "Meryem, Bebek İsa ve Azize Anna",
+   "gorsel": "5e6654a04f8eaf7f",
+   "noktalar": [
+    {
+     "ad": "Kuzu ve Çocuk İsa",
+     "x": 0.55,
+     "y": 0.47,
+     "w": 0.33,
+     "h": 0.35,
+     "metin": "Bebek İsa bir kuzunun boynuna sarılmış, başını annesine çeviriyor. Kurbanlık kuzu İsa'nın Çilesi'ni simgeler; Meryem onu bu kaderden geri çekmeye çalışıyor gibidir."
+    },
+    {
+     "ad": "Azize Anna",
+     "x": 0.35,
+     "y": 0.16,
+     "w": 0.17,
+     "h": 0.15,
+     "metin": "Anna başını eğmiş, gülümseyerek kızını ve torununu izliyor. Yüzü genç görünür: Meryem'den bir kuşak yaşlı olup olmadığı tablodan anlaşılmaz."
+    },
+    {
+     "ad": "Meryem'in yüzü",
+     "x": 0.44,
+     "y": 0.3,
+     "w": 0.16,
+     "h": 0.12,
+     "metin": "Anna'nın dizinde oturan Meryem öne eğilmiş, oğluna uzanıyor. Yüzü sfumatoyla, keskin çizgiler olmadan yumuşatılmıştır."
+    },
+    {
+     "ad": "Uzak dağlar",
+     "x": 0.05,
+     "y": 0.17,
+     "w": 0.3,
+     "h": 0.21,
+     "metin": "Arkada sivri, buzul gibi soluk mavi dağlar uzanıyor. Uzaklaştıkça renkler havada erir; bu hava perspektifi Leonardo'nun manzaralarına özgüdür."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q533619",
+   "sanatci": "pieter-bruegel-yasl",
+   "baslik": "Felemenk Atasözleri",
+   "gorsel": "18ffe78c3a7b2ddd",
+   "noktalar": [
+    {
+     "ad": "Mavi pelerin",
+     "x": 0.41,
+     "y": 0.63,
+     "w": 0.12,
+     "h": 0.2,
+     "metin": "Kırmızı elbiseli kadın kocasının omzuna mavi bir pelerin geçiriyor. Deyime göre bu, kadının kocasını aldattığı anlamına gelir. Tablonun ilk adı da Mavi Pelerin'di."
+    },
+    {
+     "ad": "Turtalı çatı",
+     "x": 0.1,
+     "y": 0.03,
+     "w": 0.17,
+     "h": 0.17,
+     "metin": "Sol üstteki evin çatısı kiremit yerine turtalarla kaplı. \"Çatısını turtalarla kaplatmak\" her şeye bol bol sahip olmak demektir."
+    },
+    {
+     "ad": "Koyun ve domuz kırkanlar",
+     "x": 0.22,
+     "y": 0.8,
+     "w": 0.17,
+     "h": 0.15,
+     "metin": "Bir adam koyun kırkıyor, hemen yanındaki domuz kırkıyor. \"Biri koyun kırkar, öteki domuz\" deyimi, birinin ötekinden avantajlı olduğunu anlatır."
+    },
+    {
+     "ad": "Boğulan buzağı",
+     "x": 0.42,
+     "y": 0.82,
+     "w": 0.17,
+     "h": 0.18,
+     "metin": "Bir adam küreğiyle çukuru dolduruyor; çukurda boğulmuş bir buzağı yatıyor. Kaynaktaki deyim, buzağı öldükten sonra göletin doldurulmasıdır: iş işten geçtikten sonra önlem almak."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q328079",
+   "sanatci": "raphael",
+   "baslik": "Sistina Madonnası",
+   "gorsel": "b132d89ec64607e3",
+   "noktalar": [
+    {
+     "ad": "İki küçük melek",
+     "x": 0.3,
+     "y": 0.85,
+     "w": 0.46,
+     "h": 0.14,
+     "metin": "Sunağın üst kenarına dirseklerini dayamış iki kanatlı melek yukarı bakıyor. Tablonun içinde kendi başına ünlenmiş bir ayrıntıdır; 1912'de yazılan bir hikâyeye göre Raphael onları modelinin çocuklarından esinlenerek boyamıştı."
+    },
+    {
+     "ad": "Meryem ve Çocuk İsa",
+     "x": 0.3,
+     "y": 0.09,
+     "w": 0.32,
+     "h": 0.3,
+     "metin": "Meryem, Çocuk İsa'yı kucağında taşıyarak bulutların üstünde duruyor; ikisi de doğrudan bize bakıyor. Mavi giysisinde kurşun beyazıyla karıştırılmış doğal ultramarin kullanılmıştır."
+    },
+    {
+     "ad": "Papa Sixtus",
+     "x": 0.13,
+     "y": 0.36,
+     "w": 0.17,
+     "h": 0.24,
+     "metin": "Altın cüppeli Papa Sixtus yukarı, Meryem'e bakıyor; sağ eli bize, yani izleyiciye dönük. Tablo, Papa II. Julius'un amcası IV. Sixtus'un anısına sipariş edilmişti."
+    },
+    {
+     "ad": "Azize Barbara",
+     "x": 0.7,
+     "y": 0.34,
+     "w": 0.18,
+     "h": 0.16,
+     "metin": "Sağda Azize Barbara başını eğmiş, aşağıdaki meleklere doğru bakıyor. Sixtus'un yukarı bakışıyla birlikte gözü resmin içinde dolaştırır."
+    },
+    {
+     "ad": "Yeşil perde",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.27,
+     "metin": "Üstte bir çubuğa asılı yeşil perdeler iki yana açılmış; sahne bir görünü gibi ortaya çıkıyor. Perdenin yeşilinde zırnıkla karıştırılmış malahit kullanılmıştır."
+    },
+    {
+     "ad": "Melek yüzlü bulutlar",
+     "x": 0.02,
+     "y": 0.2,
+     "w": 0.16,
+     "h": 0.2,
+     "metin": "Arka plandaki açık renkli bulutlara yakından bakınca silik çocuk yüzleri seçilir. Meryem'in arkasında onlarca küçük melek vardır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1231009",
+   "sanatci": "jacques-louis-david",
+   "baslik": "Napolyon'un Taç Giyme Töreni",
+   "gorsel": "a05260ce12fcb8df",
+   "noktalar": [
+    {
+     "ad": "Tacı kaldıran Napolyon",
+     "x": 0.53,
+     "y": 0.56,
+     "w": 0.12,
+     "h": 0.3,
+     "metin": "Napolyon, Roma imparatorlarınınkine benzer cübbeler içinde tacı Joséphine'e giydirmek üzere kaldırıyor. Resimde, onun tacı önce kendi başının üstünde tuttuğu ilk tasarımın ana hattı hâlâ görülebilir."
+    },
+    {
+     "ad": "Diz çöken Joséphine",
+     "x": 0.38,
+     "y": 0.69,
+     "w": 0.14,
+     "h": 0.17,
+     "metin": "Joséphine Medeni Kanun'un öngördüğü gibi boyun eğen bir duruşla diz çökmüş. Tacı papadan değil kocasının elinden alıyor."
+    },
+    {
+     "ad": "Papa VII. Pius",
+     "x": 0.64,
+     "y": 0.58,
+     "w": 0.09,
+     "h": 0.16,
+     "metin": "Beyazlar içindeki papa oturuyor ve elini kutsama için kaldırıyor. David bu jesti sonradan ekleyerek papanın törendeki yalnızca törensel rolünü vurguladı."
+    },
+    {
+     "ad": "Tribündeki anne",
+     "x": 0.42,
+     "y": 0.5,
+     "w": 0.08,
+     "h": 0.1,
+     "metin": "Napolyon'un annesi Maria Letizia, papadan daha önemli bir yerde, tribünde oturuyor. Gerçekte oğlunun kardeşleriyle anlaşmazlığını protesto etmek için törene katılmamıştı."
+    },
+    {
+     "ad": "Pietà heykeli",
+     "x": 0.91,
+     "y": 0.2,
+     "w": 0.09,
+     "h": 0.23,
+     "metin": "Sağ kenarda Notre-Dame'ın Pietà heykeli kısmen görünür. Törenin katedralde geçtiğini hatırlatan gerçek bir ayrıntıdır."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.9,
+     "y": 0.93,
+     "w": 0.1,
+     "h": 0.07,
+     "metin": "Sağ alt köşede \"L. David\" imzası okunuyor. Ressam ayrıca kendisini tribündekiler arasında resmetmiştir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q59201",
+   "sanatci": "jacques-louis-david",
+   "baslik": "Napolyon Alpleri Geçerken",
+   "gorsel": "050f3efaa61508c3",
+   "noktalar": [
+    {
+     "ad": "Kayalardaki adlar",
+     "x": 0.0,
+     "y": 0.87,
+     "w": 0.38,
+     "h": 0.13,
+     "metin": "Ön plandaki kayalara BONAPARTE, HANNIBAL ve KAROLVS MAGNVS adları kazınmış. Napolyon, Alpler'i ordusuyla geçen iki büyük komutanla, Hannibal ve Şarlman'la yan yana konuyor."
+    },
+    {
+     "ad": "Zirveyi gösteren el",
+     "x": 0.45,
+     "y": 0.08,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Napolyon sağ eliyle dağın zirvesini gösteriyor. Kompozisyonun yükselen çaprazı bu elde doruğa ulaşır."
+    },
+    {
+     "ad": "Yüz ve şapka",
+     "x": 0.55,
+     "y": 0.12,
+     "w": 0.21,
+     "h": 0.18,
+     "metin": "Napolyon başını bize çevirmiş, yüzü sakin. Poz vermeyi reddettiği için David yüz hatlarını bir büstten aldı. İki köşeli şapka ve üniforma, Marengo'da giyilenlerin aynısıdır."
+    },
+    {
+     "ad": "Şahlanan at",
+     "x": 0.27,
+     "y": 0.15,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "At gözleri açık, ağzı açık şahlanıyor; yelesi rüzgârda savruluyor. Gerçekte Napolyon geçidi güzel havada, katıra binmiş bir rehberin peşinde aşmıştı."
+    },
+    {
+     "ad": "Göğüs kayışındaki yazı",
+     "x": 0.22,
+     "y": 0.4,
+     "w": 0.25,
+     "h": 0.06,
+     "metin": "Atın göğüs kayışında \"DAVID L'AN IX\" yazısı okunuyor: ressamın adı ve Cumhuriyet takvimine göre yıl. İmza böylece atın koşum takımına işlenmiştir."
+    },
+    {
+     "ad": "Askerler ve top",
+     "x": 0.0,
+     "y": 0.58,
+     "w": 0.48,
+     "h": 0.22,
+     "metin": "Arkada askerler, topçu birlikleriyle birlikte dağa tırmanıyor. Bu küçük figürler, sahnenin 1800 ilkbaharındaki gerçek geçişe dayandığını hatırlatır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2470123",
+   "sanatci": "caravaggio",
+   "baslik": "Yudit Holofernes'in Başını Keserken",
+   "gorsel": "5ec62fc289588e12",
+   "noktalar": [
+    {
+     "ad": "Kılıç ve çığlık",
+     "x": 0.32,
+     "y": 0.4,
+     "w": 0.18,
+     "h": 0.2,
+     "metin": "Kılıç Holofernes'in boynuna girmiş; ağzı açık, gözleri katiline dönük. Röntgende Caravaggio'nun başı çalışırken gövdeden biraz ayırıp sağa kaydırdığı görüldü."
+    },
+    {
+     "ad": "Fışkıran kan",
+     "x": 0.17,
+     "y": 0.55,
+     "w": 0.17,
+     "h": 0.25,
+     "metin": "Kesik boyundan kan ince kırmızı çizgiler hâlinde beyaz çarşafa fışkırıyor. Bu ayrıntıların ressamın 1599'da izlediği bir idamdan beslenmiş olabileceği düşünülür."
+    },
+    {
+     "ad": "Yudit'in yüzü",
+     "x": 0.7,
+     "y": 0.12,
+     "w": 0.14,
+     "h": 0.19,
+     "metin": "Yudit kaşlarını çatmış, gövdesini geri çekerek işini sürdürüyor. Yüzünde kararlılık ile tiksinti bir aradadır; modelin muhtemelen Fillide Melandroni olduğu düşünülür."
+    },
+    {
+     "ad": "Hizmetçi Abra",
+     "x": 0.83,
+     "y": 0.22,
+     "w": 0.17,
+     "h": 0.23,
+     "metin": "Yaşlı hizmetçi Abra, hanımının sağında gergin bir yüzle bekliyor. İki eliyle bir bezi gergin tutuyor."
+    },
+    {
+     "ad": "Saçtan tutan el",
+     "x": 0.48,
+     "y": 0.6,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Yudit sol eliyle Holofernes'in saçını kavramış. Kitab-ı Mukaddes'teki anlatımda da Yudit önce onun saçından tutar, sonra kılıcı indirir."
+    },
+    {
+     "ad": "Kırmızı perde",
+     "x": 0.05,
+     "y": 0.0,
+     "w": 0.65,
+     "h": 0.3,
+     "metin": "Üstte karanlıktan sarkan kırmızı perde sahneyi bir tiyatro sahnesi gibi çerçeveler. Rengi aşağıdaki kanla yankılanır."
+    }
+   ]
   }
  ]
 }

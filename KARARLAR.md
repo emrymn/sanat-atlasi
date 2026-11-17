@@ -2441,3 +2441,18 @@ seç, araştırmayı Qwen'e yaptır, halüsinasyonu engelleyen net bir komut ver
   görsele bakarak, geçmiş iddialardan yazar.
 - Klasör `scripts/` altında: yayına gitmez (`yayinla.yml` `scripts`'i dışlar). Örnek: `eserler/Q2470123/ARASTIRMA.json` (elle yazıldı).
 - Kullanıcı aracısı `ATLAS_UA` ortam değişkeninden; varsayılanında e-posta yok.
+
+### İş 189b · Yeni başyapıtlar, parti 1: 10 yakın okuma (sürüm 1.83.1)
+
+- Araştırma bitti: 110 eserin `ARASTIRMA.json`'u (Qwen `qwen4-max · Medium`, 11 parti + 1 ek eser; Qwen kotası %29,7 → %9),
+  hepsi `dogrula.py`'den geçti; Gemini anlam denetiminin ~140 bulgusu tek tek kaynakla karşılaştırıldı, yarısı uygulandı
+  (çoğu bölüm taşıması; ~25 gerçek içerik hatası: çeviri kayması, düşen ihtiyat, başka esere ait 3 iddia). Turner'ın Cleveland
+  nüshasının Wikipedia maddesi olmadığı için yerine van Eyck · Müjde (NGA) alındı.
+- Yakın okumalar `scripts/basyapit_arastirma/okumalar/parti_NN.json`'da yazılır, `birlestir.py` ile `data/basyapitlar.json` ve
+  `data/eser_ayrintilari.json`'a eklenir. Olgular yalnız o eserin doğrulanmış iddialarından; resimde görülenler görselden. Ayrıntı
+  noktaları TALIMAT'taki iki aşamalı yolla (1280'likte ızgara, 4096'lıktan kırpıp doğrulama).
+- Parti 1: Son Yargı, Salvator Mundi, Kayalıklar Meryemi, Marat'nın Ölümü, Azize Anna, Felemenk Atasözleri, Sistina Madonnası,
+  Taç Giyme, Alpler'i Geçerken, Caravaggio · Yudit. 52 nokta; doğrulamada düzeltilen: Marat'nın yarası kutunun dışındaydı;
+  Atasözleri'nde dört aday kutu yanlış deyimi gösterdiği için çıkarıldı ("gün ışığını sepette taşımak" bulunamadı).
+- Uygulama kodu değişmedi; yalnız veri ve yama sürümü (Yenilikler'e girmedi). Birim 388/388; başyapıt, ayrıntı ve galeri
+  uçtan uca 13/13. Toplam 164 başyapıt, 929 nokta.
