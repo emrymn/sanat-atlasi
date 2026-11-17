@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q500951",
+ "indirme": "2026-11-17T07:35:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q500951.json",
+   "revid": 2560734603,
+   "sha256": "8b7d90e97ed3d068fc00057ad31a527d5eadf5f9e342b49afb3fdef64e1b6a4f",
+   "karakter": 1301
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Yellow_Christ&oldid=1381074670",
+   "baslik": "The Yellow Christ",
+   "revid": 1381074670,
+   "surum_tarihi": "2026-10-19T21:16:34Z",
+   "sha256": "19c7b739e822f3ba4f30b4f065d6114b112e1089d357d702bb102bf1b42f95fb",
+   "karakter": 1695
+  }
+ }
+}
