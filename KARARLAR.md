@@ -2536,3 +2536,16 @@ Bellini'de "Venedikli", El Greco'da "çağının bir soylusu gibi", Tiepolo'da "
 "gölgede" olduğu; Watteau'da eşeğin ipini tutma yerine yalnız görüleni yazıldı. El Greco'nun Aziz Martin'indeki sağ alttaki
 Yunanca yazı imza olarak kaynakta geçmediği için kullanılmadı. Kırpıntıda düzeltilen kutular: Bellini kurukafa ve aziz,
 Watteau Doktor ve kırmızılı adam, Tiepolo hilal ve ayna, Millais ceviz kıracağı. Birim 388/388. 234 başyapıt, 1334 nokta.
+
+### İş 189b · parti 9: 10 yakın okuma (sürüm 1.83.10)
+
+Mantegna · Meryem'in Ölümü, Giorgione · Çobanların Tapınması, Veronese · Venüs ve Adonis, Zurbarán · İsa'nın Çarmıha
+Gerilişi, Jan van Eyck · Meryem'e Müjde, Piero della Francesca · İsa'nın Doğuşu, Correggio · Parma Katedrali kubbesi,
+Rosso Fiorentino · Çarmıhtan İndiriliş, Fra Angelico (ve Filippo Lippi) · Müneccimlerin Tapınması, Fra Angelico · Meryem'in
+Taç Giymesi; 54 nokta. İnce araştırmalı Mantegna, Giorgione, Veronese ve Zurbarán'da hikâye `data/ikonografi.json`'dan.
+Görsel–eser uyumu: hepsi araştırılan eser; Correggio'da görsel köşelerle birlikte bütün kubbe. Correggio'da Meryem'in figürü
+görselde güvenle seçilemediği için noktası yok; merkezdeki figür araştırmaya göre aşağı inen İsa. Coronation'da Egidius ve
+Mecdelli Meryem tek tek kutulanmadı (hangi figür oldukları görselden kesin değil), grup kutularıyla anıldı. Yerleri büyütmeyle
+bulunanlar: Giorgione'nin dallardaki meleği, Rosso'nun merdivendeki imzası (MDXXI). Kaynak denetiminde çıkarılanlar:
+Mantegna'da "kitaptan okuyan" havari, Zurbarán'da belediye önerisinin tabloya bağlanması ve satır sayısı, Rosso'da merdiven
+ve adam sayısı, "bağırarak" ve Maniyerizm üzerine eklenen yorum. Birim 388/388. 244 başyapıt, 1388 nokta.
