@@ -2561,3 +2561,16 @@ Petrus büyütmeyle saptandı (pembe giysili, ağzı açık). Velázquez'te Gasp
 olduğu görselden kesin değil). Kaynak denetiminde çıkarılanlar: Wrightsman'ın eşinin adı, aynanın "tefekkür nesnesi"
 yorumu, Poussin'de "kızını", Cimabue'de "askerlerce" ve ters perspektif tanımı, Hunt'ta "Newcastle", Falcı'da bakış yorumu
 ve imzanın çevirisi. Birim 388/388. 254 başyapıt, 1444 nokta.
+
+### İş 189b · parti 11: 10 yakın okuma (sürüm 1.83.12) — İş 189b tamamlandı
+
+Poussin · Masumların Katliamı, Ingres · Oidipus ve Sfenks, Manet · Şaşıran Perikızı, Fra Angelico · Cortona Müjdesi,
+Perugino · Pietà, Ambrogio Lorenzetti · Tapınakta Sunuluş, Parmigianino · Aziz Hieronymus'un Görümü, Giulio Romano ·
+Milvius Köprüsü Savaşı, Artemisia Gentileschi · Danae, Orazio Gentileschi · Danae; 53 nokta. İnce araştırmalı Poussin,
+Ingres, Perugino ve Giulio Romano'da hikâye `data/ikonografi.json`'dan. Görsel–eser uyumu: hepsi araştırılan eser; Cortona
+Müjdesi ve Lorenzetti'de görsel çerçeve ve predellayla birlikte, Giulio Romano'da boyalı çerçeveli bütün duvar. Giulio
+Romano'da Konstantin ve Maxentius figürleri adıyla kutulanmadı (görselde hangileri oldukları kaynakta yok). Kaynak
+denetiminde çıkarılanlar: Poussin'de üçgen kompozisyon yorumu, Ingres'te "Paris'e" ve Oidipus'un "kendini gösterdiği",
+Manet'de "uzun süre", Cortona'da predella sayısı ve perspektifin Âdem ile Havva'ya götürdüğü, Perugino'da "ayaklarını
+tutuyor" ve figür sayısı, Parmigianino'da "öncü" ve 1527, Giulio Romano'da "Hristiyanlığın zaferi" ve "duvar halısı".
+Birim 388/388. 264 başyapıt, 1497 nokta. Seçilen 110 yeni başyapıtın hepsi yazıldı (parti 2'nin atlanan Dürer'i 1.83.4'te eklenmişti).

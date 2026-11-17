@@ -13585,6 +13585,510 @@
      "metin": "Sağ üst köşede kaligrafik bir imza var. Yazı 'G. de La Tour Fecit Luneuilla Lothar' diye okunur."
     }
    ]
+  },
+  {
+   "anahtar": "Q3224378",
+   "sanatci": "nicolas-poussin",
+   "baslik": "Masumların Katliamı",
+   "gorsel": "564c66953b5ea9be",
+   "noktalar": [
+    {
+     "ad": "Kalkan kılıç",
+     "x": 0.15,
+     "y": 0.07,
+     "w": 0.4,
+     "h": 0.14,
+     "metin": "Asker kılıcını başının üstüne kaldırmış, vurmaya hazırlanıyor. Kılıcın çaprazı sahnenin en üstünde bütün kompozisyonu keser."
+    },
+    {
+     "ad": "Çığlık atan anne",
+     "x": 0.46,
+     "y": 0.34,
+     "w": 0.17,
+     "h": 0.13,
+     "metin": "Asker anneyi saçından tutmuş; kadın ağzı açık çığlık atarak ellerini ona uzatıyor. Matta, bu katliamı Rahel'in çocukları için ağlamasıyla anlatır."
+    },
+    {
+     "ad": "Ezilen bebek",
+     "x": 0.14,
+     "y": 0.64,
+     "w": 0.36,
+     "h": 0.25,
+     "metin": "Yerde çıplak bir bebek ağlıyor; askerin ayağı onun üstünde. Hirodes, Beytüllahim'deki iki yaş ve altındaki bütün erkek çocukların öldürülmesini emretmiştir."
+    },
+    {
+     "ad": "Kaçan kadın",
+     "x": 0.66,
+     "y": 0.16,
+     "w": 0.25,
+     "h": 0.44,
+     "metin": "Sağda mavi giysili bir kadın başını elleriyle tutmuş, gökyüzüne bakarak kaçıyor. Arkasında sütun başlığı ve frizli bir yapı görülüyor."
+    },
+    {
+     "ad": "Arkadaki anneler",
+     "x": 0.84,
+     "y": 0.55,
+     "w": 0.12,
+     "h": 0.14,
+     "metin": "Sağ arkada bir kadın kucağındaki çocukla kaçıyor. Solda, askerin bacaklarının arasında başka kadınlar da görülür."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q5818528",
+   "sanatci": "jean-auguste-dominique-ingres",
+   "baslik": "Oidipus ve Sfenks",
+   "gorsel": "01a437becf469e96",
+   "noktalar": [
+    {
+     "ad": "Sfenks",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Gölgede kanatlı, kadın başlı Sfenks duruyor. Ingres onun pozunu ikinci aşamada değiştirmiş ve onu kalın gölgelerle sarmıştır."
+    },
+    {
+     "ad": "Bilmeceyi açıklayan el",
+     "x": 0.25,
+     "y": 0.2,
+     "w": 0.28,
+     "h": 0.2,
+     "metin": "Oidipus bir elini açmış, öbür elinin parmağıyla Sfenks'e işaret ederek bilmecenin yanıtını veriyor. Yanıt 'insan'dır: bebekken dört, yetişkinken iki, yaşlıyken bastonla üç ayak."
+    },
+    {
+     "ad": "İnsan kalıntıları",
+     "x": 0.05,
+     "y": 0.89,
+     "w": 0.35,
+     "h": 0.11,
+     "metin": "Sol altta bir ayak, kaburgalar ve bir kafatası duruyor; bilmeceyi bilemeyenlerin kalıntılarıdır. Ingres bunları tabloyu 1827'de tamamlarken eklemiştir."
+    },
+    {
+     "ad": "Kaçan adam",
+     "x": 0.72,
+     "y": 0.68,
+     "w": 0.22,
+     "h": 0.2,
+     "metin": "Sağda kırmızı pelerinli bir adam korkuyla kollarını açıp kaçıyor. Duruşu ve ifadesi, Ingres'in Poussin'i incelediğini gösterir; bu figür de sonradan eklenmiştir."
+    },
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.13,
+     "y": 0.81,
+     "w": 0.15,
+     "h": 0.08,
+     "metin": "Oidipus'un bastığı kayanın üstünde Ingres'in imzası ve 1808 tarihi okunuyor. Tablo bu tarihte bir öğrenci çalışması olarak başlamıştı."
+    },
+    {
+     "ad": "Aydınlık kent",
+     "x": 0.82,
+     "y": 0.8,
+     "w": 0.14,
+     "h": 0.12,
+     "metin": "Uzakta, kayaların açıklığından parlak bir manzara ve kent görülüyor. Bu ışık, Sfenks'i saran gölgeyle dramatik bir karşıtlık kurar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3088614",
+   "sanatci": "edouard-manet",
+   "baslik": "Şaşıran Perikızı",
+   "gorsel": "9f971d17fa706ed1",
+   "noktalar": [
+    {
+     "ad": "Şaşkın bakış",
+     "x": 0.38,
+     "y": 0.21,
+     "w": 0.19,
+     "h": 0.15,
+     "metin": "Kadın omzunun üstünden izleyiciye dönüp bakıyor. Bu bakış Olympia'nınki gibi kışkırtıcı değil, şaşkın ve utangaçtır; sanki gözetleyeni yakalamıştır."
+    },
+    {
+     "ad": "İnciler ve yüzük",
+     "x": 0.47,
+     "y": 0.28,
+     "w": 0.15,
+     "h": 0.2,
+     "metin": "Boynundaki beyaz inciler ve serçe parmağındaki yüzük dışında kadının üstünde hiçbir şey yok. Beyaz kumaşı göğsüne bastırarak kendini örtmeye çalışıyor."
+    },
+    {
+     "ad": "Mavi iris",
+     "x": 0.0,
+     "y": 0.59,
+     "w": 0.11,
+     "h": 0.11,
+     "metin": "Kadının sol ayağının yakınında mavi bir iris çiçeği büyüyor. Koyu bitki örtüsünün içinde tablonun en canlı mavisidir."
+    },
+    {
+     "ad": "Göl kıyısı",
+     "x": 0.0,
+     "y": 0.2,
+     "w": 0.3,
+     "h": 0.33,
+     "metin": "Solda ağaçların arasından gölün suyu görülüyor. Periler, mitolojide pınar ve nehir kıyılarında yaşayan doğa ruhlarıdır."
+    },
+    {
+     "ad": "Büzülmüş poz",
+     "x": 0.3,
+     "y": 0.48,
+     "w": 0.5,
+     "h": 0.3,
+     "metin": "Kadın bacaklarını kendine çekmiş, kırmızı örtünün üstünde büzülmüş oturuyor. Bazı yazarlar bu pozu Rembrandt'ın Susanna'sıyla aynı bulur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2376881",
+   "sanatci": "fra-angelico",
+   "baslik": "Cortona Müjdesi",
+   "gorsel": "48eb0c70d7b21858",
+   "noktalar": [
+    {
+     "ad": "Altın satırlar",
+     "x": 0.52,
+     "y": 0.34,
+     "w": 0.16,
+     "h": 0.1,
+     "metin": "Cebrail ile Meryem arasına üç satır yazı boyanmış. Meleğin sözleri soldan sağa okunur; Meryem'in 'Ecce Ancilla Domini' yanıtı aradaki satırda baş aşağıdır, çünkü Tanrı'ya yöneliktir."
+    },
+    {
+     "ad": "Âdem ile Havva",
+     "x": 0.12,
+     "y": 0.16,
+     "w": 0.11,
+     "h": 0.12,
+     "metin": "Sol üstte, Meryem'in duvarlı bahçesinin ötesindeki tepede Âdem ile Havva Cennet'ten kovuluyor. İlk günahı hatırlatan bu sahne, Müjde'nin kurtuluş vaadiyle karşıtlık kurar."
+    },
+    {
+     "ad": "Diz çöken Cebrail",
+     "x": 0.15,
+     "y": 0.29,
+     "w": 0.41,
+     "h": 0.4,
+     "metin": "Altın kanatlı, haleli Cebrail diz çökmüş, bir eliyle Meryem'i gösteriyor. Pembe giysisindeki altın işlemeler ışıkta parlar."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.62,
+     "y": 0.32,
+     "w": 0.22,
+     "h": 0.4,
+     "metin": "Mavi pelerinli Meryem ellerini göğsünde çaprazlamış, öne eğilerek müjdeyi dinliyor. Kucağında açık bir kitap duruyor."
+    },
+    {
+     "ad": "Kutsal Ruh",
+     "x": 0.64,
+     "y": 0.19,
+     "w": 0.1,
+     "h": 0.08,
+     "metin": "Meryem'in üstünde, kemerin altında ışınlar saçan küçük bir güvercin var. Kutsal Ruh'un varlığı Müjde simgeselliğinin bir parçasıdır."
+    },
+    {
+     "ad": "Predella",
+     "x": 0.04,
+     "y": 0.76,
+     "w": 0.93,
+     "h": 0.11,
+     "metin": "Alttaki predella panelleri Meryem'in Hayatı'ndan sahneler gösterir; aralarında Meryem'in Evlenmesi, Müneccimlerin Tapınması, Tapınakta Sunuluş ve Meryem'in Ölümü vardır. Bu panellerin bir kısmı asistan Zanobi Strozzi'ye de atfedilir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q368788",
+   "sanatci": "pietro-perugino",
+   "baslik": "Pietà",
+   "gorsel": "fd3b31e7704b88f7",
+   "noktalar": [
+    {
+     "ad": "Yatay beden",
+     "x": 0.21,
+     "y": 0.48,
+     "w": 0.74,
+     "h": 0.27,
+     "metin": "İsa'nın bedeni Meryem'in dizlerinin üstünde yatay ve oldukça katı biçimde uzanıyor. Bu gösterim, Alman Vesperbild heykellerindeki geleneğe benzer."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.4,
+     "y": 0.35,
+     "w": 0.2,
+     "h": 0.18,
+     "metin": "Mavi pelerinli Meryem başını eğmiş, ölü oğluna bakıyor. Sahnenin merkezinde, kemerin tam altında oturur."
+    },
+    {
+     "ad": "Yuhanna",
+     "x": 0.1,
+     "y": 0.43,
+     "w": 0.15,
+     "h": 0.17,
+     "metin": "Kırmızı pelerinli genç Yuhanna, İsa'nın başını ve omuzlarını tutuyor. Sağdan da Mecdelli Meryem bedeni destekler."
+    },
+    {
+     "ad": "Nikodemus",
+     "x": 0.0,
+     "y": 0.21,
+     "w": 0.16,
+     "h": 0.25,
+     "metin": "Solda ayakta duran genç Nikodemus ellerini göğsünde birleştirmiş, göğe bakıyor. Yuhanna İncili'ne göre İsa'nın gömülmesine yardım edenlerdendir."
+    },
+    {
+     "ad": "Arimatealı Yusuf",
+     "x": 0.82,
+     "y": 0.21,
+     "w": 0.18,
+     "h": 0.25,
+     "metin": "Sağda sakallı, yaşlı Arimatealı Yusuf aşağıya bakıyor. İncillere göre Pilatus'tan İsa'nın cesedini isteyen ve onu mezara koyan odur."
+    },
+    {
+     "ad": "Mecdelli Meryem",
+     "x": 0.67,
+     "y": 0.47,
+     "w": 0.22,
+     "h": 0.25,
+     "metin": "Kızıl saçlı Mecdelli Meryem ellerini kavuşturmuş, başını eğmiş. Onun için kullanılan daha az soluk tonlar, Luca Signorelli'nin renklerine benzer."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3910903",
+   "sanatci": "ambrogio-lorenzetti",
+   "baslik": "Tapınakta Sunuluş",
+   "gorsel": "cf1aabe2bb092cd6",
+   "noktalar": [
+    {
+     "ad": "Simeon ve çocuk",
+     "x": 0.54,
+     "y": 0.57,
+     "w": 0.17,
+     "h": 0.17,
+     "metin": "Yaşlı Simeon bebeği kollarına almış; çocuk ayaklarını oynatıyor, parmağını ağzına götürüyor. Luka'ya göre Simeon, Mesih'i görmeden ölmeyeceğini Kutsal Ruh'tan öğrenmişti."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.33,
+     "y": 0.57,
+     "w": 0.17,
+     "h": 0.2,
+     "metin": "Mavi pelerinli Meryem, çocuğun sarıldığı beyaz bezi elinde tutuyor. Haleli Meryem'in arkasındaki halesiz kadınlar, kutsal statüde değildir."
+    },
+    {
+     "ad": "Güvercinli rahip",
+     "x": 0.42,
+     "y": 0.53,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Sunağın arkasında bir rahip sunak ateşindeki kurban için güvercinler ve sol elinde bir bıçak tutuyor. Güvercinler, arınma sunusunu öne çıkarmak için merkezde değil kenarda yer alır."
+    },
+    {
+     "ad": "Peygamber Hanna",
+     "x": 0.72,
+     "y": 0.58,
+     "w": 0.14,
+     "h": 0.34,
+     "metin": "Sağda mor giysili yaşlı peygamber Hanna, Luka İncili'nden (2:38) Latince bir alıntı yazılı kartuş tutuyor. Hanna, Kudüs'ün kurtuluşunu bekleyenlere çocuktan söz eder."
+    },
+    {
+     "ad": "Musa ve Malaki",
+     "x": 0.3,
+     "y": 0.01,
+     "w": 0.4,
+     "h": 0.13,
+     "metin": "En üstte, kartuşlarında Kutsal Kitap'tan Latince ayetler bulunan Musa ve Malaki peygamberler yer alıyor. Kemerlerin üstünde çelenkli melekler dizilir."
+    },
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.11,
+     "y": 0.93,
+     "w": 0.78,
+     "h": 0.05,
+     "metin": "Çerçevenin alt kenarında Lorenzetti'nin Latince imzası ve 1342 tarihi yazılı. Bu eser, ressamın imzalayıp tarihlediği beş eserden biridir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3275305",
+   "sanatci": "parmigianino",
+   "baslik": "Aziz Hieronymus'un Görümü",
+   "gorsel": "d756d45c269f9d94",
+   "noktalar": [
+    {
+     "ad": "Yahya'nın parmağı",
+     "x": 0.27,
+     "y": 0.53,
+     "w": 0.53,
+     "h": 0.15,
+     "metin": "Vaftizci Yahya izleyiciye dikkatle bakıyor ve abartılı uzun parmağıyla geriye, yukarıdaki görümü gösteriyor. Bu kalkık kol, Leonardo'nun Vaftizci Yahya'sını anımsatır."
+    },
+    {
+     "ad": "Meryem ve Çocuk",
+     "x": 0.15,
+     "y": 0.02,
+     "w": 0.66,
+     "h": 0.28,
+     "metin": "Meryem gümüşi bir ışık patlaması içinde, fırtına bulutlarının önünde oturuyor. Çocuk İsa annesine yaslanmış ayakta duruyor; Meryem figürünün bir antik heykelden türetildiği düşünülür."
+    },
+    {
+     "ad": "Savrulan ayak",
+     "x": 0.42,
+     "y": 0.38,
+     "w": 0.26,
+     "h": 0.14,
+     "metin": "Çocuk İsa izleyiciye bakarken bir ayağını yaramazca resmin dışına doğru savuruyor. Meryem onu tutmuyor; çocuk kendi ayakları üstünde durur."
+    },
+    {
+     "ad": "Uyuyan Hieronymus",
+     "x": 0.6,
+     "y": 0.67,
+     "w": 0.4,
+     "h": 0.24,
+     "metin": "Sağ altta yaşlı Hieronymus başını geriye atmış uyuyor. Yanındaki kırmızı kardinal şapkası ve kafatası, onu tanıtan geleneksel simgelerdir."
+    },
+    {
+     "ad": "Haç ve leğen",
+     "x": 0.0,
+     "y": 0.38,
+     "w": 0.22,
+     "h": 0.35,
+     "metin": "Yahya'nın yanında uzun, ince bir haç yükseliyor. Uzun haçı ve kemerine bağlı vaftiz leğeni, onu Vaftizci Yahya olarak tanıtır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1996932",
+   "sanatci": "giulio-romano",
+   "baslik": "Milvius Köprüsü Savaşı",
+   "gorsel": "8b55e691bba2162a",
+   "noktalar": [
+    {
+     "ad": "Gökteki melekler",
+     "x": 0.36,
+     "y": 0.27,
+     "w": 0.24,
+     "h": 0.13,
+     "metin": "Savaşın üstünde, gökte üç melek uçuyor. Rivayete göre Konstantin gökte bir haç görmüş ve zaferini Hristiyanların Tanrısı'na atfetmiştir."
+    },
+    {
+     "ad": "Nehirdeki askerler",
+     "x": 0.6,
+     "y": 0.6,
+     "w": 0.32,
+     "h": 0.17,
+     "metin": "Sağda Tiber'in sularında askerler çırpınıyor, kimi atıyla birlikte suya gömülüyor. Anlatıya göre yenilen Maxentius da bu nehirde boğulmuştur."
+    },
+    {
+     "ad": "Süvari kalabalığı",
+     "x": 0.3,
+     "y": 0.4,
+     "w": 0.32,
+     "h": 0.22,
+     "metin": "Ortada beyaz atlar, mızraklar ve kalkanlarla süvariler birbirine giriyor. Savaş 28 Ekim 312'de Konstantin ile Maxentius arasında yapılmıştır."
+    },
+    {
+     "ad": "Düşen askerler",
+     "x": 0.07,
+     "y": 0.55,
+     "w": 0.25,
+     "h": 0.22,
+     "metin": "Sol önde yere düşmüş, ölmüş ya da yaralı askerler ve kalkanlar görülüyor. Kalabalık soldan sağa, nehre doğru akar."
+    },
+    {
+     "ad": "Boyalı çerçeve",
+     "x": 0.0,
+     "y": 0.2,
+     "w": 0.08,
+     "h": 0.55,
+     "metin": "Freskin iki yanında boyanmış figürler ve sütunlar var. Bunlar, Raphael'in atölyesinin Konstantin Salonu için tasarladığı süsleme düzeninin parçasıdır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3701418",
+   "sanatci": "artemisia-gentileschi",
+   "baslik": "Danae",
+   "gorsel": "52d1d6f09d3fd1ad",
+   "noktalar": [
+    {
+     "ad": "Sıkılmış yumruk",
+     "x": 0.38,
+     "y": 0.56,
+     "w": 0.12,
+     "h": 0.13,
+     "metin": "Danae'nin eli kasığının üstünde yumruk yapılmış; bacakları kapalı. Kimi tarihçiler bu ayrıntıyı davetkâr değil, kendini koruyan bir duruş olarak okur."
+    },
+    {
+     "ad": "Hizmetçi",
+     "x": 0.48,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.57,
+     "metin": "Beyaz başörtülü hizmetçi arka planda mavi eteğini açmış, düşen altın sikkeleri topluyor. Eser 1986'da temizlenince giysisinin canlı renkleri geri gelmiştir."
+    },
+    {
+     "ad": "Danae'nin yüzü",
+     "x": 0.09,
+     "y": 0.18,
+     "w": 0.22,
+     "h": 0.22,
+     "metin": "Kızıl saçlı Danae başını yastığa bırakmış, bir kolunu başının üstüne kaldırmış. Bu figürün sanatçının bir otoportresi olduğu da varsayılır."
+    },
+    {
+     "ad": "Altın yağmuru",
+     "x": 0.28,
+     "y": 0.06,
+     "w": 0.22,
+     "h": 0.24,
+     "metin": "Karanlıkta küçük altın sikkeler yağıyor. Ovidius'a göre Zeus, hapsedilen Danae'nin odasına bu altın yağmuruna dönüşerek girmiştir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q22329907",
+   "sanatci": "orazio-gentileschi",
+   "baslik": "Danae",
+   "gorsel": "e7d1437d3c1ac703",
+   "noktalar": [
+    {
+     "ad": "Perdeyi çeken Eros",
+     "x": 0.26,
+     "y": 0.14,
+     "w": 0.22,
+     "h": 0.34,
+     "metin": "Kanatlı Eros, Zeus'un gelişini haber verir gibi koyu yeşil perdeyi kenara çekiyor. Böylece altın yağmuru odaya dökülebilir."
+    },
+    {
+     "ad": "Altın sikkeler",
+     "x": 0.43,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.26,
+     "metin": "Açılan perdenin ardından altın sikkeler ve kurdeleler dökülüyor; Danae avucunu onlara uzatmış. Gentileschi bu hareketi Danae'nin dingin bedeniyle dengeler."
+    },
+    {
+     "ad": "Danae'nin yüzü",
+     "x": 0.71,
+     "y": 0.27,
+     "w": 0.16,
+     "h": 0.15,
+     "metin": "Danae başını geriye atmış, yukarı bakıyor. Orazio onu kaderini kabul eden iffetli bir figür olarak, bayağılığa düşmeden resmeder."
+    },
+    {
+     "ad": "Şeffaf tül",
+     "x": 0.54,
+     "y": 0.44,
+     "w": 0.16,
+     "h": 0.2,
+     "metin": "Danae'nin bedeni yalnızca kasığında şeffaf bir tülle örtülü. Bu ölçülülük onu Titian'ın rıza gösteren Danae'sinden ayırır."
+    },
+    {
+     "ad": "Yatak ve altın örtü",
+     "x": 0.0,
+     "y": 0.45,
+     "w": 0.4,
+     "h": 0.5,
+     "metin": "Danae beyaz bir şiltenin ve altın renkli bir battaniyenin üstünde uzanıyor. Parlak ipek kumaşlar, Danae'nin heykelsi bedeninin çevresini doldurur."
+    }
+   ]
   }
  ]
 }
