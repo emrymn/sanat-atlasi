@@ -2385,3 +2385,40 @@ Commons, föy, envanter, P/Q kodları, "Parti N", ".md", "§" geçen cümleleri 
 kalıplarını cümlenin başından kırpar; başlıklardaki "(NG betimi)" eklerini ve "Şimdi sıra sizde", "Seminer", "Yöntem" bölümlerini
 gizler; parantezi yarım kalan cümle parçalarını atar. Ders dosyaları değişmedi; süzme yalnız ekranda. 107 dersin Başlangıç + Orta
 metninde bu izlerden hiçbiri kalmıyor (birim testi); metin toplamı ~193 bin kelimeden ~99 bin kelimeye iniyor (atılan bölümler dahil).
+
+### İş 188 · Başyapıt sayfası baştan: tek akış (sürüm 1.83.0)
+
+Emre: "eserlerin içini baştan tasarla; ilk girdiğimizde yazılar var ama ders kısmı da hikâyeyi anlatıyor, rehberli incele de çok
+ayrık; daha bütüncül ve kullanıcı dostu olsun". Tasarım tuvalde birlikte kuruldu (önce bölüm numaralı, alt çubuklu bir sürüm:
+"çok robotik"; sonra kapaklı, hikâye gibi akan sürüm; zemin için "Akımlar'daki semboller", "daha silik"; "hale güzel oldu").
+Uygulanan (`js/ekranlar/basyapit.js`, saf mantık `js/basyapitSayfa.js`, stiller `css/app.css` sonunda `.bsy-*`):
+
+- **Kapak:** tablo kenardan kenara, durum çubuğunun altına kadar; dik tablolarda başlık resmin alt kenarına biner (`.dik`),
+  yataylarda altına iner. Üstte iki cam düğme: geri ve koleksiyon kalbi. Başlık ekrandan çıkınca üstte cam çubuk belirir
+  (ad + küçük resim; küçük resim başa döndürür).
+- **Okuma:** yakın okuma bölümleri (`data/basyapitlar.json`) numarasız, tek sütun. Kısa anlatım artık **bu** metindir; dersin
+  Başlangıç metni (aynı şeyi yeniden anlatıyordu) gösterilmez.
+- **Ayrıntılar metnin içinde:** rehberli incelemenin noktaları (`data/eser_ayrintilari.json`; 154 başyapıtın hepsinde var)
+  kırpım olarak bölümlerin altına girer. Veride nokta–bölüm eşlemesi yok: noktanın adındaki sözcükler bölüm metninde aranır
+  (`noktalariYerlestir`; "Tek mum" → "…tek bir mumun yanması…"), en çok geçen bölüm kazanır, hiç geçmeyen ilk bölüme gider.
+  Bölümde tek ayrıntı varsa açıklamasıyla büyük kırpım, birden çoksa yana kayan şerit. Kırpım resmin oranından yüzdeyle
+  hesaplanır (`kirpim`; boy resim inmeden bellidir). Dokununca görüntüleyici **o ayrıntıda** açılır (`goruntuleyiciAc`'a
+  `incelemeNokta`); alttaki cam "Yakından bak · N ayrıntı" düğmesi genel bakışla başlatır. Görüntüleyicinin İncele kipi
+  aynen duruyor (İş 180'in kartı); tuvaldeki nokta sırası + "sıradaki ayrıntının adı" düğmesi uygulanmadı.
+  Eski "Yakından bak" listesi (`bak`) yalnız ayrıntı kaydı olmayan eserde görünür.
+- **Ders aynı sayfada:** `#/basyapit/<anahtar>/ders` ayrı ekranı kalktı (adres duruyor: sayfayı ayrıntılı anlatım açık
+  açar). Kısa okumanın sonunda "Daha derine in" kartı Orta dersi (`temizle` + `mdHtml`) bölüm bölüm açar; "Daha az göster"
+  kapatır. Yayın kapısı aynı (`data/ders_yayin.json`); onaysız derste kart, sözlük ve künye ekleri çıkmaz.
+- **Dersin yapılı verisi** (`DERS.json`) ilk kez ekranda: `temel_kavramlar` → sözlük (terimin sayfadaki ilk geçtiği yer
+  noktalı altı çizili düğme, dokununca alttan cam kart; hepsi sonda listede), `kunye.teknik` / `boyut_cm` → künye,
+  `karsilastirma_onerileri` → "Karşılaştırmalar" kartları. Karşılaştırılan eser uygulamada başyapıtsa (başlık + sanatçı
+  eşleşmesi, `karsilastirmalariAl`) görselli ve dokunulur: iki eser üst üste "yan yana" açılır, "Eserin sayfası" oraya
+  götürür. Eşleşmeyen öneri görselsiz düz karttır (doğruluk kuralı: tahminle eser bağlanmaz).
+- **Sonda:** künye, sözlük, sıradaki başyapıt (listedeki bir sonraki), mevcut "Metni Claude yazdı…" notu.
+- **Zemin:** tablonun rengindeki hale sayfayla kaymaz (sol üst + soluk sağ alt); üstünde eserin döneminin sembolleri
+  (Akımlar çarkının desenleri, `:is(.cark, .bsy-desen)[data-donem]`), Gece'de %4, Gündüz'de %4,5 opaklık.
+- **Yazı:** uygulamanın üçlüsü (başlık Bodoni Moda, okuma Newsreader, arayüz Archivo); renkler tema değişkenlerinden.
+- Tuvalde olup uygulanmayanlar: imza alıntısı (veride yok), "Kendi gözünle" görevleri (Emre kaldırdı).
+
+Silinen: eski başyapıt sayfası (`gozat.js`), ders ekranı (`eserDersiSayfasi`) ve stilleri (`.basyapit-ad…`, `.drsx*`).
+Testler: `tests/unit/basyapit_sayfa.test.mjs`, `tests/e2e/basyapit_sayfa.spec.js`; `eser_dersi.spec.js` yeni akışa göre.

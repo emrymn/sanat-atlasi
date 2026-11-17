@@ -9,8 +9,7 @@ import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { temsilOlabilir, AKIM_KAPAK } from '../temsil.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar } from '../basyapit.js';
-import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
-import { hikayeHtml } from '../hikaye.js';
+import { ayrintilariAl, eserinAyrintisi } from '../ayrinti.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { akimKarsilastirmaAdresi } from '../akim.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
@@ -280,61 +279,7 @@ export async function basyapitListesi() {
   });
 }
 
-export async function basyapitSayfasi(kodlu) {
-  const anahtar = decodeURIComponent(kodlu);
-  const no = cizimNo();
-  const b = basyapitBul(await basyapitVeri(), anahtar);
-  if (!guncelMi(no)) return;
-  if (!b) return hataGoster(new Error('Bu eser için yakın okuma bulunamadı.'));
-  const s = d.harita.get(b.sanatci);
-  const eserSozu = sanatciEserleri(s).then((l) => eserEslestir(l, b));
-  const ayrintiSoz = ayrintiVeri();
-  ekranRengi(eserSozu, akimRenk(s.akim));
-  ciz(`<div class="hale" aria-hidden="true"></div>
-    <header class="sanatci-ust">${geriDugmesi('#/basyapitlar')}<a class="etiket vurgu" href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a></header>
-    <article class="basyapit" data-test="basyapit">
-      <h1 class="basyapit-ad" tabindex="-1">${kacis(b.baslik)}</h1>
-      <p class="meta"><a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>${b.tarih ? ` · ${kacis(b.tarih)}` : ''}${b.muze ? ` · ${kacis(b.muze)}` : ''}</p>
-      ${b.ozgun && b.ozgun !== b.baslik ? `<p class="gor-ozgun">${kacis(b.ozgun)}</p>` : ''}
-      <div class="basyapit-gorsel" data-basyapit-gorsel><p class="ikincil kucuk">Görsel yükleniyor…</p></div>
-      ${b.ozet ? `<p class="basyapit-ozet okuma">${kacis(b.ozet)}</p>` : ''}
-      ${b.bolumler.map((x) => `<section class="bolum">${etiket(x.baslik)}<p class="okuma">${kacis(x.metin)}</p></section>`).join('')}
-      ${b.bak.length ? `<section class="bolum">${etiket('Yakından bak', { vurgu: true })}<ol class="okuma basyapit-bak">${b.bak.map((x) => `<li>${kacis(x)}</li>`).join('')}</ol></section>` : ''}
-      <p class="kucuk ikincil" style="margin-top:18px">Metni Claude yazdı, ikinci bir istekte olgu ve dil açısından denetledi. Yine de hata görürsen not al.</p>
-    </article>`);
-  const e = await eserSozu;
-  const kutu = ekran.querySelector('[data-basyapit-gorsel]');
-  if (!kutu || !guncelMi(no)) return;
-  const g = e && secilenGorsel(e, kotuler());
-  if (!g) {
-    kutu.innerHTML = '<p class="ikincil kucuk">Bu eserin görseli bulunamadı.</p>';
-    return;
-  }
-  kutu.innerHTML = `<button class="basyapit-buyut" type="button" data-basyapit-buyut aria-label="${kacis(b.baslik)} — büyüt"><img decoding="async" alt="${kacis(`${s.ad}, ${b.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
-  // İş 151: kayıt varsa görselin altında "Rehberli inceleme · N nokta" (görüntüleyici doğrudan inceleme kipinde açılır)
-  const liste = await ayrintiSoz;
-  if (!guncelMi(no)) return;
-  const kayit = ayrintiBul(liste, b.anahtar) || eserinAyrintisi(liste, e);
-  const ayrintilar = kayit ? () => kayit : null;
-  kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, ...gorselTercihi() }));
-  // İş 169: eserin hikâyesi varsa görselin altında sayfada da
-  hikayeVeri().then(() => {
-    const h = guncelMi(no) && hikayeBulucu(e);
-    if (h && !ekran.querySelector('.basyapit-hikaye')) kutu.insertAdjacentHTML('afterend', `<section class="bolum basyapit-hikaye" data-test="basyapit-hikaye">${etiket('Hikâyesi', { vurgu: true })}<div class="okuma">${hikayeHtml(h, kacis)}</div></section>`);
-  });
-  // İş 175: eserin dersi yayındaysa (ya da geliştirici modunda taslaksa) giriş; modül ancak burada yüklenir
-  import('./eserDersi.js')
-    .then(async (m) => {
-      const durum = m.dersinDurumu(await m.dersYayini(), b.anahtar);
-      if (!guncelMi(no) || (durum !== 'onayli' && durum !== 'taslak') || kutu.querySelector('[data-test="basyapit-ders"]')) return;
-      kutu.insertAdjacentHTML('beforeend', `<a class="basyapit-incele" href="${m.dersAdresi(b.anahtar)}" data-test="basyapit-ders">${ikon('kitap', 18)}Ders</a>`);
-    })
-    .catch(() => {});
-  if (kayit) {
-    kutu.insertAdjacentHTML('beforeend', `<button class="basyapit-incele" type="button" data-test="basyapit-incele">${ikon('ara', 18)}Rehberli inceleme · ${kayit.noktalar.length} nokta</button>`);
-    kutu.querySelector('[data-test="basyapit-incele"]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, incelemeyeBasla: true, ...gorselTercihi() }));
-  }
-}
+// Başyapıt sayfası: js/ekranlar/basyapit.js (İş 188)
 
 // ---------- Konular ve hikâyeleri ----------
 let ikonografiSozu = null;
