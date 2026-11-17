@@ -2705,3 +2705,11 @@ doğrudan girilirse önceden görülmemiş grupların sanatçılarıyla tanış�
   tek kart) → 2 · Sınav (Kolay / Orta / Zor merdiveni) → tek ana düğme → altta yalnız Akım sayfası. Açık durakta ayrı yüz
   şeridi kalktı (adlar iki kez yazıyordu; "Orta tanıtımı · 1 · 2 · 3" alt düğmeleri sığmıyordu). Kilitli durakta şerit
   duruyor. Renk ve görünüş sonraki işte.
+- Görünüş (Emre tasarım tuvalinde birkaç turdan sonra "G2"yi seçti; ilkeler: "bütünsellik, elegant, Apple tarzı"):
+  pencere tek yüzey, zemini durağın kapak eserinin bulanık kopyası (Apple Music gibi rengini eserden alır), her temada
+  koyu. Yukarıdan aşağı: kendi oranında geniş kapak (bölüm sanatçılarının en bilinen eserlerinden en yatayı), "Dönem · N
+  sanatçı", Bodoni ad, yıldızlar, tek dolu düğme, sade liste (ince ayırıcılar): tanışma grupları (başta grubun ilk
+  sanatçısının en bilinen eseri; biten soluk ve onaylı), Kolay / Orta / Zor (kilitli olan "Kolay’ı geçince"), Orta
+  eserleri, Akım sayfası. Önceki düzendeki "1 · Tanış / 2 · Sınav" etiketleri, işaret halkaları, merdiven, madalyon ve yüz
+  şeridi kalktı (TASARIM_DILI: numarasız, tek dolu düğme). Reddedilen yönler (tek liste, sıradaki iş, sekmeler, tablo ve
+  yol, salonlar, kâğıt pencere, yaldız çerçeve, odak, asılı kart) tuvalde duruyor.

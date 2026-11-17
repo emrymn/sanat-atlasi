@@ -61,20 +61,21 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
   expect(e.x).toBeGreaterThanOrEqual(0);
   expect(e.x + e.width).toBeLessThanOrEqual(390);
   expect(e.y + e.height).toBeLessThanOrEqual(cubuk.y);
-  // pencere: başlıkta aynı sembol; Tanış → Kolay → Orta → Zor; altta sıradaki seviyeye götüren büyük düğme
+  // 1.89 G2: pencere tek yüzey; kapak durağın eseri, zemin onun bulanık kopyası; tanışma satırları, Kolay / Orta / Zor;
+  // tek dolu düğme sıradaki seviyeye götürür
   await simdiki.click({ force: true });
-  const pencere = page.locator('.harita-pencere-ic');
+  const pencere = page.locator('.harita-pencere-ic.hp2');
   await expect(pencere).toBeVisible();
-  await expect(pencere.locator('.hp-madalyon img[src*="sembol_"]')).toHaveCount(1);
-  const satirlar = pencere.locator('.harita-seviyeler.merdiven .harita-seviye');
-  // 1.89: Tanış merdivenden çıktı, kendi bölümünde (1 · Tanış); merdivende Kolay / Orta / Zor
+  await expect(pencere.locator('.hp2-kapak img')).toHaveCount(1);
+  await expect(pencere.locator('[data-hp2-zemin] img')).toHaveCount(1);
+  const satirlar = pencere.locator('[data-test="hp-sinav"] [data-test="harita-seviye"]');
   await expect(pencere.locator('[data-test="hp-tanis"] [data-test="harita-tanitim"], [data-test="hp-tanis"] [data-test="harita-tanitim-grup"]').first()).toBeVisible();
   await expect(satirlar).toHaveCount(3);
-  await expect(satirlar.nth(0)).toHaveClass(/siradaki/);
+  await expect(satirlar.nth(0)).toHaveClass(/sirada/);
   await expect(satirlar.nth(1)).toHaveClass(/kapali/);
   const basla = pencere.locator('[data-test="harita-basla"]');
   await expect(basla).toContainText('Kolay’a başla');
-  expect((await basla.boundingBox()).height).toBeGreaterThanOrEqual(56);
+  expect((await basla.boundingBox()).height).toBeGreaterThanOrEqual(48);
   await expect(basla).toHaveAttribute('href', /#\/pekistir\/bolum\/\d+-\d+\/kolay$/);
 });
 

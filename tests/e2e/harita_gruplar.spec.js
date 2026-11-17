@@ -33,11 +33,11 @@ test('Harita: kalabalık durakta Tanış grup grup; bir grup bitince yalnız o i
   expect(g).toBe(Math.ceil(n / 4));
   await expect(page.locator('[data-test="harita-tanitim"]')).toHaveCount(0);
   await expect(page.locator('[data-test="harita-basla"]')).toHaveText(/1\. grupla tanış/);
-  // pencere iki bölüm: 1 · Tanış (grup kartları, yüzleriyle), 2 · Sınav; alttaki ayrı yüz şeridi yok
+  // 1.89 G2: tanışma satırları (her grubun başında küçük bir eser) ve Kolay / Orta / Zor; ayrı yüz şeridi yok
   await expect(page.locator('[data-test="hp-tanis"]')).toBeVisible();
   await expect(page.locator('[data-test="hp-sinav"] [data-test="harita-seviye"]')).toHaveCount(3);
   await expect(page.locator('.harita-pencere-ic .harita-pencere-sanatcilar')).toHaveCount(0);
-  await expect(gruplar.nth(0).locator('.hp-grup-yuz')).toHaveCount(await page.evaluate((b) => Math.ceil(window.__atlas.haritaDurum.liste.find((x) => x.id === b).sanatcilar.length / Math.ceil(window.__atlas.haritaDurum.liste.find((x) => x.id === b).sanatcilar.length / 4)), id));
+  await expect(gruplar.nth(0).locator('.hp2-kucuk')).toHaveCount(1);
   // 2. grup: tanışma (yalnız o grubun sanatçıları), ardından yalnız onları soran kısa tur (kişi başı 2 soru)
   await gruplar.nth(1).click();
   await expect(page).toHaveURL(new RegExp(`#/pekistir/bolum/${id}/tanitim-2$`));
