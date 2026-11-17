@@ -21547,6 +21547,48 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 #uygulama .gor-dugme-ok::after {
   display: none;
 }
+/* Bugünün dersi · Gör: krem kapsül ve dengeli ok rozeti */
+#uygulama .ders-bugun .gor-dugme {
+  min-height: 92px;
+  height: 92px;
+  padding: 10px 10px 10px 28px;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 999px;
+  background: var(--ders-altin-ustu);
+  color: var(--ink);
+  box-shadow: 0 8px 18px color-mix(in srgb, var(--ink) 16%, transparent);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+#uygulama .ders-bugun .gor-dugme-yazi {
+  gap: 3px;
+  padding-block: 3px;
+}
+#uygulama .ders-bugun .gor-dugme-yazi b {
+  font: 600 23px/1.05 var(--sans);
+  letter-spacing: -0.025em;
+}
+#uygulama .ders-bugun .gor-dugme-yazi small {
+  max-width: 13ch;
+  font: 400 15px/1.25 var(--sans);
+  color: color-mix(in srgb, var(--ink) 72%, transparent);
+}
+#uygulama .ders-bugun .gor-dugme-ok {
+  width: 72px;
+  height: 72px;
+  border: 0;
+  background: var(--ink);
+  color: var(--ders-altin-ustu);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ders-altin-ustu) 12%, transparent);
+}
+#uygulama .ders-bugun .gor-dugme-ok .ikon {
+  width: 28px;
+  height: 28px;
+  animation: none;
+}
+#uygulama .ders-bugun .gor-dugme:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--ink) 14%, transparent);
+}
 /* Günlük tekrar: tek satırlık kart */
 #uygulama .ders-tekrar {
   margin-top: 16px;
