@@ -2649,3 +2649,11 @@ Gündüz'de bu renk paletin bandıydı (mor-kahve, kırmızı …). Artık nötr
 (`--durum-cubugu: rgba(31, 27, 23, 0.42)`, `linear-gradient`). Saat yine okunur; renkli şerit yok. Gece temasında zaten yoktu.
 - Sonra (Emre: "buğu gibi olan şeyi kastediyorum"): her sayfanın tepesinde tablonun renginde yayılan hale (`.hale`, `.bsy-hale`,
   İş 188–189'da her sayfaya eklenmişti) üçte birine indi (sol üst %32/%28 → %11/%10, sağ alt %14 → %5). Dönem sembolleri aynı.
+
+## 1.88.0 · Konular, Başyapıtlar düzeninde
+Emre: "Konular kısmının tasarımını ve yapısını Başyapıtlar kısmıyla aynı yap." Konular artık Başyapıtlar'ın birebir yapısını
+kullanır (`js/ekranlar/gozat.js` `konularCiz`/`knGovdeCiz`): yapışkan `by-haplar` sekmeleri (Hepsi + gruplar), üstte kayan
+`by-sahne` (Hepsi'de her grubun en çok işlenen konusu, grupta ilk üç), Hepsi'de her grup bir bölüm (iki kart + "N konu"),
+grup seçilince o grubun bütün konuları çoktan aza. Gövde yerinde çizilir, adres `history.replaceState` ile `#/konular/<tür>` olur.
+Karttaki ayrı "N eser" düğmesi kalktı (Başyapıtlar kartında yok); bütün resimler konu sayfasındaki "Bütün resimler"den açılır.
+İçeriği yana kaydırarak grup değiştirme de kalktı (Başyapıtlar'da yok; sahne kaydırması ile çakışıyordu).

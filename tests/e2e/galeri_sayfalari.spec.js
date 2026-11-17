@@ -66,47 +66,24 @@ test('Başyapıtlar sahnesi: hikâyesi olan eser başta ve rozetli; noktalar 44 
   await expect(page.locator('[data-test="basyapit"] h1')).toHaveText(ad);
 });
 
-test('Konular: sekmeler ve kartlar 44 pt; karttaki sayı konunun bütün resimlerini açar; yana kaydırınca grup değişir', async ({ page, context }) => {
+test('Konular: Başyapıtlar düzeni — Hepsi sekmesi, sahne, gruplarda iki kart ve "N konu"; grup sekmesi yerinde çizilir', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/konular');
-  const sekmeler = page.locator('[data-test="konu-grup-serit"] a');
-  await expect(sekmeler.first()).toHaveAttribute('aria-current', 'page');
-  for (const b of await boylar(page, '[data-test="konu-grup-serit"] a')) expect(b).toBeGreaterThanOrEqual(44);
-  for (const b of await boylar(page, '[data-test="kn-resimler"]')) expect(b).toBeGreaterThanOrEqual(44);
+  const haplar = page.locator('[data-test="konu-grup-serit"] button');
+  await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
+  for (const b of await boylar(page, '[data-test="konu-grup-serit"] button')) expect(b).toBeGreaterThanOrEqual(44);
   expect(await tasma(page)).toBeLessThanOrEqual(0);
-  await expect(page.locator('.kn-one')).toHaveCount(1);
-  await expect(page.locator('.kn-one')).toContainText('En çok işlenen');
-  await expect(page.locator('.kn-one [data-konu-kapak] img')).toBeAttached();
-  // sayı düğmesi: konu sayfasına girmeden "Bütün resimler"
-  const dugme = page.locator('[data-test="kn-resimler"]').nth(1);
-  const ad = await page.locator('.konu-kart').nth(1).locator('b').innerText();
-  await dugme.click();
-  const galeri = page.locator('[data-test="konu-galeri"]');
-  await expect(galeri).toBeVisible();
-  await expect(galeri.locator('h2')).toHaveText(ad);
-  expect(await galeri.locator('[data-galeri-eser]').count()).toBeGreaterThan(0);
+  await expect(page.locator('[data-test="by-sahne"]')).toBeVisible();
+  await expect(page.locator('[data-test="by-sahne"]')).toContainText('Öne çıkan');
+  const hepsi = page.locator('[data-test="by-hepsi"]').first();
+  const n = Number((await hepsi.innerText()).match(/\d+/)[0]);
+  await hepsi.click();
+  await expect(page).toHaveURL(/#\/konular\/[a-z_]+$/);
+  await expect(page.locator('[data-test="konu-grup-serit"] button[aria-pressed="true"]')).toHaveCount(1);
+  await expect(page.locator('[data-test="konu-listesi"] .konu-kart')).toHaveCount(n);
+  await haplar.first().click();
   await expect(page).toHaveURL(/#\/konular$/);
-  await galeri.locator('[data-galeri-eser]').first().click();
-  await expect(page.locator('.gor')).toBeVisible();
-  await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
-  await galeri.getByRole('button', { name: 'Kapat' }).click();
-  await expect(galeri).toHaveCount(0);
-  // karta dokununca konunun sayfası
-  // yana kaydırma (sola): sıradaki grup; sağa: geri
-  const ikinci = await sekmeler.nth(1).getAttribute('href');
-  const cdp = await context.newCDPSession(page);
-  const kaydir = async (x0, x1) => {
-    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y: 500 }] });
-    for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / 6, y: 500 }] });
-    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  };
-  await kaydir(300, 120);
-  await expect.poll(() => page.evaluate(() => location.hash)).toBe(ikinci);
-  await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveAttribute('href', ikinci);
-  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual([ikinci]);
-  await kaydir(120, 300);
-  await expect(page.locator('[data-test="konu-grup-serit"] a').first()).toHaveAttribute('aria-current', 'page');
-  await page.locator('.konu-kart').first().click();
+  await page.locator('[data-test="konu-listesi"] .konu-kart').first().click();
   await expect(page.locator('[data-test="konu"] h1')).toBeVisible();
 });
 
@@ -128,6 +105,6 @@ test('Hareket: Kapalı\'da Başyapıtlar ve Konular\'da süren animasyon yok; Sa
     await page.locator('[data-test="by-donemler"] button').first().click();
   }
   await page.evaluate(() => (location.hash = '#/konular'));
-  await expect(page.locator('.kn-one [data-konu-kapak] img')).toBeAttached();
+  await expect(page.locator('.by-sahne [data-konu-kapak] img').first()).toBeAttached();
   await expect.poll(suren).toBe(0);
 });
