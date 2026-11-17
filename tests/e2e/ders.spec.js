@@ -63,10 +63,13 @@ test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve b
   expect(await satirlar.evaluateAll((l) => l.map((x) => x.dataset.akim))).toEqual(acik);
   await expect(satirlar.first().locator('.ders-cizgiler i')).toHaveCount(3);
   await expect(page.locator('[data-test="ders-kilitli"]')).toContainText(/Konu \d+'[dt][ea] açılır/);
-  // eski turlar "Başka turlar"da
+  // eski turlar "Başka turlar" sekmesinde
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
+  await expect(page.getByRole('tabpanel', { name: 'Dersler', exact: true })).toBeHidden();
   const izgara = page.locator('[data-test="ek-turlar"] .tur-izgara');
   for (const t of ['donem-turu', 'bolum-turu', 'konu-turu']) await expect(izgara.locator(`[data-test="${t}"]`)).toBeVisible();
   expect(await tasma(page)).toBeLessThanOrEqual(0);
+  await page.getByRole('tab', { name: 'Dersler', exact: true }).click();
   // dokunma hedefleri en az 44 px
   for (const s of ['.ders-adim', '[data-test="ders-devam"]', '.ders-tekrar-git', '[data-test="ders-satir"]']) {
     for (const b of await page.locator(s).evaluateAll((l) => l.map((e) => e.getBoundingClientRect().height))) expect(b, s).toBeGreaterThanOrEqual(44);
@@ -394,6 +397,7 @@ test('Gör verisi olmayan ders iki adımla gösterilir; Gör adresi yürüyüş 
 
 test('eski turlar “Başka turlar”da: Döneme göre sayfası karışık turu, günlük hedefi ve salonları tutar', async ({ page }) => {
   await page.goto('./#/pekistir');
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
   await page.locator('[data-test="ek-turlar"] [data-test="donem-turu"]').click();
   await expect(page).toHaveURL(/#\/pekistir\/donem$/);
   await expect(page.getByRole('heading', { name: 'Turlar' })).toBeVisible();
@@ -405,6 +409,29 @@ test('eski turlar “Başka turlar”da: Döneme göre sayfası karışık turu,
   await page.locator('.pk-ust [data-geri]').click();
   await expect(page).toHaveURL(/#\/pekistir$/);
   await expect(page.locator('[data-test="bugunun-dersi"]')).toBeVisible();
+});
+
+test('Çalışma masası: klavye sekmeleri, görsel ızgara ve azaltılmış hareket', async ({ page }) => {
+  await page.goto('./#/pekistir');
+  const dersler = page.getByRole('tab', { name: 'Dersler', exact: true });
+  const turlar = page.getByRole('tab', { name: 'Başka turlar' });
+  await expect(dersler).toHaveAttribute('aria-selected', 'true');
+  await dersler.focus();
+  await page.keyboard.press('ArrowRight');
+  await expect(turlar).toBeFocused();
+  await expect(turlar).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#calis-dersler-panel')).toBeHidden();
+  await expect(page.locator('[data-test="bolum-turu"]')).toBeVisible();
+  await page.keyboard.press('Home');
+  await expect(dersler).toBeFocused();
+  await expect(page.locator('#calis-turlar-panel')).toBeHidden();
+  const kartlar = page.locator('[data-test="ders-satir"]');
+  const [ilk, ikinci] = await kartlar.evaluateAll((l) => l.slice(0, 2).map((e) => ({ x: e.offsetLeft, y: e.offsetTop })));
+  expect(ilk.y).toBe(ikinci.y);
+  expect(ikinci.x).toBeGreaterThan(ilk.x);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  expect(await kartlar.first().evaluate((e) => getComputedStyle(e.parentElement).animationName)).toBe('none');
+  expect(await tasma(page)).toBeLessThanOrEqual(0);
 });
 
 test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör’de kamera anında yerine geçer', async ({ page }) => {
