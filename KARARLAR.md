@@ -2504,3 +2504,13 @@ yazıldı. Correggio'nun tarihi sipariş–yerleştirme aralığı (1522–1530)
 `data/ikonografi.json` "günün saatleri" metninden. Klimt'te "çiçekli saç" kutusu yaşlı kadının eline düşmüştü, düzeltildi.
 Kaynak denetiminde çıkarılanlar: güneş saatinin "zamanın akışı" yorumu, Correggio'da Jerome pozunun kesinliği (ihtiyatlı yapıldı),
 Rubens'te "Elizabeth", Goya'da "manşon", Birmingham için "Alabama". Birim 388/388; uçtan uca 13/13. 204 başyapıt, 1163 nokta.
+
+### İş 189b · parti 6: 10 yakın okuma (sürüm 1.83.7)
+
+Bruegel · Sürünün Geri Dönüşü, Tintoretto · Kölenin Mucizesi, Vermeer · Marta ile Meryem'in Evindeki İsa, Rubens · Şimşon ve
+Dalila, Holbein · Mezardaki Ölü İsa, Giorgione · Yudit, Artemisia Gentileschi · Susanna ve İhtiyarlar, Michelangelo · Defin
+Töreni, Correggio · Ganymedes, Rogier · Okuyan Mecdelli Meryem; 59 nokta. İnce araştırmalı eserlerde (Bruegel, Vermeer,
+Giorgione, Correggio) hikâye `data/ikonografi.json` konu metninden. Atfı tartışmalı eserler (Rubens · Şimşon, Michelangelo ·
+Defin) metinde ihtiyatla yazıldı. Kaynak denetiminde çıkarılanlar: Bruegel'in "hayalî dağlar"ı, Vermeer'in "erken dönem tarih
+resmi" cümlesi ve görülmeyen hale, Holbein ve Giorgione için kaynaksız "en sarsıcı / şiirsel" övgüler. Birim 388/388; uçtan uca
+13/13. 214 başyapıt, 1222 nokta.

@@ -1,0 +1,201 @@
+[
+ {
+  "anahtar": "Q698254", "sanatci": "pieter-bruegel-yasl", "baslik": "Sürünün Geri Dönüşü", "ozgun": "The Return of the Herd",
+  "tarih": "1565", "muze": "Kunsthistorisches Museum, Viyana",
+  "ozet": "Bruegel'in mevsimler dizisinden bu panel, yapraksız ağaçlar ve kararan bir gök altında, çobanların sığır sürüsünü sonbahar sonunda dağlardan köye geri getirdiği anı gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Ön planda çobanlar, değnekleriyle bir sığır sürüsünü yamaçtan aşağı sürüyor; önde beyaz benekli bir inek, arkada atlı bir adam yürüyor. Soldaki ağaçlar yapraklarını dökmüş, bir dalda kara bir kuş tünemiş. Aşağıda geniş bir nehir vadisi kıvrılıyor, sağda sarp kayalıklar yükseliyor. Gökyüzünü koyu, ağır bulutlar kaplıyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Sürü sol üstten sağ alta inen bir çaprazla akar ve gözü vadinin derinliğine taşır. Ön plandaki sıcak kahverengiler ve kızıllar, uzaktaki soğuk mavi-yeşil nehir ve dağlarla karşıtlık kurar. Kararan gök, ışığın yer yer delip geçtiği bulutlarla yaklaşan kışı haber verir. Eser panel üzerine yağlıboyadır ve bir manzara resmidir."},
+   {"baslik": "Anlam ve semboller", "metin": "Sonbahar renkleri ve yapraksız ağaçlar eseri ekim–kasım aylarıyla ilişkilendirir. Tablo 'ayların işleri' geleneğinin bir parçasıdır: Orta Çağ'da yılın her ayı bir işle gösterilirdi. Bruegel bu geleneği büyük manzaralara taşır; insanlar ve hayvanlar doğanın döngüsünün bir parçası olarak görünür. Burada iş, sürüyü kışlık barınağına geri getirmektir."},
+   {"baslik": "Neden önemli?", "metin": "Panel, Bruegel'in 1565'te bir Antwerpen tüccarı için yaptığı mevsimler dizisindendir; Karlı Avcılar, Kasvetli Gün, Ot Biçme ve Hasatçılar da bu dizidendir. 1570'e dek Nicolaes Jonghelinck'in oldu; 1594'te Arşidük Ernest'e, ardından İmparator II. Rudolf'a ve Arşidük Leopold Wilhelm'e geçti. Bugün Viyana'daki Kunsthistorisches Museum'dadır."}
+  ],
+  "bak": ["Sol üstteki çıplak dalda tünemiş kara kuş.", "Vadideki nehrin kıyısında küçük evler ve köy.", "Sürünün önündeki beyaz, siyah benekli inek."],
+  "noktalar": [
+   {"ad": "Beyaz inek", "x": 0.33, "y": 0.77, "w": 0.22, "h": 0.18, "metin": "Sürünün önünde beyaz, siyah benekli bir inek yürüyor. Bruegel hayvanları ağır, gerçekçi bedenlerle resmeder."},
+   {"ad": "Değnekli çoban", "x": 0.47, "y": 0.69, "w": 0.11, "h": 0.17, "metin": "Bir çoban uzun değneğini uzatıp sürüyü yönlendiriyor. Sürüyü vadiye indiren insanlar tablonun ön planını doldurur."},
+   {"ad": "Atlı adam", "x": 0.6, "y": 0.71, "w": 0.15, "h": 0.22, "metin": "Sürünün arkasında beyaz bir ata binmiş bir adam ilerliyor. Yanındaki adamlar sırıklarını omuzlarında taşıyor."},
+   {"ad": "Nehir vadisi", "x": 0.4, "y": 0.3, "w": 0.55, "h": 0.33, "metin": "Aşağıda geniş bir nehir vadide kıvrılarak ufka doğru uzanıyor. Soğuk mavi-yeşil uzaklık, ön plandaki sıcak renklerle derinlik kurar."},
+   {"ad": "Yapraksız ağaçlar", "x": 0.0, "y": 0.0, "w": 0.3, "h": 0.58, "metin": "Soldaki ağaçlar yapraklarını dökmüş. Sonbahar renkleriyle birlikte bunlar eseri ekim–kasım aylarına bağlar."},
+   {"ad": "Kayalık dağ", "x": 0.75, "y": 0.18, "w": 0.25, "h": 0.28, "metin": "Sağda sarp, kayalık bir dağ yükseliyor. Sarp kayalar, aşağıdaki geniş vadiyle güçlü bir karşıtlık kurar."}
+  ]
+ },
+ {
+  "anahtar": "Q2273890", "sanatci": "tintoretto", "baslik": "Kölenin Mucizesi", "ozgun": "Miracle of the Slave",
+  "tarih": "y. 1547", "muze": "Gallerie dell'Accademia, Venedik",
+  "ozet": "Tintoretto'nun ilk büyük başarısı olan bu dev tuvalde Aziz Markos gökten baş aşağı iner ve efendisinin işkence ettirdiği bir kölenin üzerindeki aletleri kırarak kalabalığı şaşırtır.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Ortada çıplak bir köle sırtüstü yerde yatıyor; çevresinde kırık tahta parçaları ve aletler dağılmış. Bir cellat elinde kırık bir çekici havaya kaldırmış. Tepede Aziz Markos, pembe giysisi ve turuncu pelerini savrulurken baş aşağı aşağı dalıyor. Sağda tahtında kırmızı giysili efendi öne eğilmiş; solda sarıklı ve zırhlı kalabalık şaşkınlıkla bakıyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Tintoretto rengi kompozisyonu düzenlemek için cesurca kullanır. Aziz Markos'un giysisinin canlı pembesi ile altındaki parlak beyaz sarığın karşıtlığı, azizin havada öne çıkmasını sağlayan bir derinlik duygusu yaratır. Kalabalık, yerdeki kölenin çevresinde bir halka oluşturur. Tuval 4,15 × 5,41 m'dir; Maniyerizm ve Venedik okuluna bağlanır."},
+   {"baslik": "Anlam ve semboller", "metin": "Bir köle, efendisinin yasağına karşın Venedik'in koruyucusu Aziz Markos'un mezarını ziyaret eder. Dönünce efendi onun gözlerinin oyulmasını, bacaklarının kırılmasını emreder. Köle azize yakarır; Markos görünüp aletleri kırar ve kalabalık mucizeye ikna olur. Konu Altın Efsane'den ve Sansovino'nun Aziz Markos Bazilikası'ndaki bronz rölyeflerinden gelir."},
+   {"baslik": "Neden önemli?", "metin": "Tabloyu Venedik'in en zengin laik kardeşliği Scuola Grande di San Marco sipariş etti; bu, Tintoretto'nun o güne dek aldığı en büyük işti. Bazı üyeler önce tablonun geri verilmesini istedi, ama sonunda övgü topladı ve ona çok sayıda sipariş getirdi. 1797'de Fransızlarca alındı, 1815'te Venedik'e döndü. Tintoretto'nun kamusal ününün başlangıcı sayılır."}
+  ],
+  "bak": ["Yerdeki kırık tahta parçaları ve çekiç başları.", "Aziz Markos'un baş aşağı inen bedeni ve savrulan turuncu pelerini.", "Cellatın elinde sapı kırık kalmış çekiç."],
+  "noktalar": [
+   {"ad": "Aziz Markos", "x": 0.29, "y": 0.0, "w": 0.27, "h": 0.42, "metin": "Kölenin çağırdığı Aziz Markos tepeden baş aşağı dalıyor. Pembe giysi ile beyaz sarık arasındaki karşıtlık, azizin havada öne çıkmasını sağlar."},
+   {"ad": "Köle", "x": 0.3, "y": 0.77, "w": 0.2, "h": 0.16, "metin": "Çıplak köle sırtüstü yerde yatıyor. Efendisinin yasağına karşın azizin mezarını ziyaret ettiği için işkenceye mahkûm edilmiştir."},
+   {"ad": "Kırık aletler", "x": 0.24, "y": 0.92, "w": 0.3, "h": 0.08, "metin": "Kölenin çevresinde kırık tahta parçaları ve aletler dağılmış. Aziz Markos işkence aletlerini yok ederek mucizeyi gerçekleştirir."},
+   {"ad": "Çekiçli cellat", "x": 0.51, "y": 0.4, "w": 0.18, "h": 0.42, "metin": "Sarıklı bir cellat elindeki çekici havaya kaldırmış, sapına şaşkınlıkla bakıyor. İşkence aletleri onun elinde kırılmaktadır."},
+   {"ad": "Efendi", "x": 0.77, "y": 0.18, "w": 0.23, "h": 0.36, "metin": "Sağda tahtında oturan kırmızı giysili efendi öne eğilmiş. Kölenin gözlerinin oyulmasını ve bacaklarının kırılmasını emreden odur."},
+   {"ad": "Şaşkın kalabalık", "x": 0.05, "y": 0.45, "w": 0.33, "h": 0.32, "metin": "Solda sarıklı, zırhlı ve şapkalı bir kalabalık sahneyi izliyor. Kalabalık, bir mucize olduğuna ikna olur."}
+  ]
+ },
+ {
+  "anahtar": "Q927449", "sanatci": "johannes-vermeer", "baslik": "Marta ile Meryem'in Evindeki İsa", "ozgun": "Christ in the House of Martha and Mary",
+  "tarih": "y. 1655", "muze": "Scottish National Gallery, Edinburgh",
+  "ozet": "Vermeer'in en büyük tablosu ve az sayıdaki dinsel eserinden biri olan bu sahnede İsa, ekmek getiren Marta ile ayaklarının dibinde onu dinleyen Meryem arasında oturur.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Sağda koyu mavi kaftanlı İsa bir sandalyeye yaslanmış, sol elini açarak aşağıdaki kadına işaret ediyor. Arkada beyaz başörtülü bir kadın, bir sepet ekmeği masaya bırakırken eğilip İsa'ya bakıyor. Önde kırmızı giysili bir kadın oturmuş, başını eline dayayıp İsa'yı dinliyor. Masada beyaz bir örtü, solda desenli bir halı var."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Üç figür bir üçgen oluşturur; İsa'nın açılan eli ortadaki beyaz örtünün önünde durur. Işık soldan gelir ve başörtüleri, ekmeği ve örtüyü aydınlatır. Vermeer İsa'nın kaftanını alışılmış ultramarin yerine smalt, indigo ve kurşun beyazı karışımıyla boyar. Kökboya lake, sarı okr ve vermilyon gibi barok pigmentler kullanılmıştır."},
+   {"baslik": "Anlam ve semboller", "metin": "Luka İncili'ne göre Marta İsa'yı evine buyur eder. Kız kardeşi Meryem onun ayaklarının dibine oturup sözlerini dinlerken Marta hizmetle telaşlanır ve yakınır. İsa, Meryem'in iyi olanı seçtiğini söyler. Kilise yorumcuları iki kız kardeşi iki yaşam biçiminin, etkin ve düşünceli hayatın simgesi olarak okumuştur."},
+   {"baslik": "Neden önemli?", "metin": "Tablo Vermeer'in en büyük eseridir ve açıkça dinsel konulu çok az eserinden biridir. William Allan Coats'a aitti; 1927'den beri Scottish National Gallery koleksiyonundadır. Eser Hollanda Altın Çağı resmine bağlanır."}
+  ],
+  "bak": ["Marta'nın tuttuğu hasır sepetteki yuvarlak ekmek.", "Meryem'in çenesini dayadığı eli ve dalgın bakışı.", "İsa'nın açık avucu: Meryem'i gösteren jest."],
+  "noktalar": [
+   {"ad": "İsa", "x": 0.7, "y": 0.11, "w": 0.17, "h": 0.17, "metin": "İsa başını Marta'ya çevirmiş konuşuyor. Uzun koyu saçları omuzlarına dökülüyor."},
+   {"ad": "Açık el", "x": 0.47, "y": 0.44, "w": 0.13, "h": 0.1, "metin": "İsa sol elini açarak aşağıda oturan Meryem'i gösteriyor. Bu jest, Meryem'in iyi olanı seçtiği sözünü görünür kılar."},
+   {"ad": "Marta ve ekmek", "x": 0.37, "y": 0.04, "w": 0.3, "h": 0.36, "metin": "Beyaz başörtülü Marta, hasır sepetteki ekmeği masaya bırakırken İsa'ya eğiliyor. Hizmetin telaşı içindeki kız kardeştir."},
+   {"ad": "Dinleyen Meryem", "x": 0.2, "y": 0.37, "w": 0.2, "h": 0.2, "metin": "Kırmızı giysili Meryem başını eline dayamış, İsa'yı dinliyor. Onun ayaklarının dibine oturup sözlerini dinleyen kız kardeştir."},
+   {"ad": "Mavi kaftan", "x": 0.55, "y": 0.4, "w": 0.43, "h": 0.5, "metin": "İsa'nın kaftanı koyu bir mavi. Vermeer onu pahalı ultramarin yerine smalt, indigo ve kurşun beyazı karışımıyla boyamıştır."},
+   {"ad": "Desenli halı", "x": 0.1, "y": 0.42, "w": 0.13, "h": 0.28, "metin": "Solda masaya serili desenli bir halının kenarı görünüyor. Kırmızı ve sarı desenler, Meryem'in kırmızı giysisini çevreler."}
+  ]
+ },
+ {
+  "anahtar": "Q2594673", "sanatci": "peter-paul-rubens", "baslik": "Şimşon ve Dalila", "ozgun": "Samson and Delilah",
+  "tarih": "y. 1609–1610", "muze": "National Gallery, Londra",
+  "ozet": "Rubens'in Anvers belediye başkanı Rockox için yaptığı bu tabloda Şimşon, Dalila'nın kucağında uyurken bir adam saçını keser; kapıda Filistinli askerler beklemektedir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Kaslı Şimşon, kırmızı giysili Dalila'nın kucağında uyuyakalmış. Bir genç adam eğilmiş, makasla onun saçını kesiyor. Dalila'nın arkasında yaşlı bir kadın elindeki mumla sahneyi aydınlatıyor. Arkadaki nişte Venüs ile Cupid'in heykeli duruyor. Sağdaki aralık kapıdan miğferli askerler içeri bakıyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Karanlık oda çoğunlukla yaşlı kadının mumuyla aydınlanır; ışık Şimşon'un sırtında ve Dalila'nın teninde toplanır. Tabloda hiç mavi pigment yoktur; Rubens kurşun beyazı, kömür siyahı, karmin lake, kurşun-kalay sarısı, vermilyon ve okralarla çalışmıştır. Tablo bir şömine rafının üstüne asılmak, aşağıdan görülmek üzere tasarlanmıştır."},
+   {"baslik": "Anlam ve semboller", "metin": "Hâkimler Kitabı'na göre Filistinlilerin rüşvet verdiği Dalila, Şimşon'un gücünün kesilmemiş saçında olduğunu öğrenir. Saçı kesen adamın elleri çaprazdır: ihanetin işareti. Nişteki Venüs ile Cupid, Şimşon'un kaderinin sebebi olarak okunabilir; Cupid'in gözleri değil ağzı bağlıdır. Yaşlı kadın bir simsar olabilir; yan yana profilleri geçmişi ve geleceği simgeliyor olabilir."},
+   {"baslik": "Neden önemli?", "metin": "Tablo Rockox House için sipariş edildi; 1640'tan sonra satıldı, 1929'da yeniden bulundu ve 1980'de National Gallery'ye 5 milyon dolara alındı. Atfı tartışmalıdır: bazı uzmanlar Rubens'in elinden çıkmadığını savunur, 2021'deki bir yapay zekâ analizi de bunu destekler göründü. Dendrokronoloji ise dönemi doğrular; çoğu sanat tarihçisi Rubens atfını kabul eder."}
+  ],
+  "bak": ["Saçı kesen adamın çapraz tuttuğu elleri.", "Nişteki Cupid'in gözü değil, ağzı bağlı.", "Kapı aralığında bekleyen askerlerin miğferleri."],
+  "noktalar": [
+   {"ad": "Uyuyan Şimşon", "x": 0.27, "y": 0.45, "w": 0.48, "h": 0.3, "metin": "Şimşon, Dalila'nın kucağında uyuyakalmış; kaslı sırtı ışıkta parlıyor. Gücünün sırrı kesilmemiş saçındadır."},
+   {"ad": "Çapraz eller", "x": 0.3, "y": 0.2, "w": 0.18, "h": 0.25, "metin": "Bir genç adam Şimşon'un saçını kesiyor; elleri birbirinin üstünden çaprazlanmış. Bu duruş ihanetin işaretidir."},
+   {"ad": "Mumlu yaşlı kadın", "x": 0.07, "y": 0.13, "w": 0.2, "h": 0.17, "metin": "Yaşlı kadın elindeki mumla odayı aydınlatıyor. Bir simsar olduğu düşünülür; profili Dalila'nınkiyle yan yana gelir."},
+   {"ad": "Dalila", "x": 0.12, "y": 0.3, "w": 0.15, "h": 0.22, "metin": "Dalila tamamen giyinik ama göğüsleri açık. Bir elini Şimşon'un sırtına koymuş, ona bakıyor."},
+   {"ad": "Venüs ve Cupid", "x": 0.29, "y": 0.0, "w": 0.1, "h": 0.2, "metin": "Arkadaki nişte aşk tanrıçası Venüs ile oğlu Cupid'in heykeli duruyor. Cupid'in gözleri değil ağzı bağlıdır."},
+   {"ad": "Askerler", "x": 0.76, "y": 0.15, "w": 0.2, "h": 0.5, "metin": "Sağdaki aralık kapıdan beş asker içeri bakıyor. Şimşon gücünü yitirince Filistinliler onu tutsak alacaktır."}
+  ]
+ },
+ {
+  "anahtar": "Q4310527", "sanatci": "hans-holbein-genc", "baslik": "Mezardaki Ölü İsa", "ozgun": "The Body of the Dead Christ in the Tomb",
+  "tarih": "1520–1522", "muze": "Kunstmuseum Basel",
+  "ozet": "Holbein, dar ve uzun bir panelde, gerçek boyutlu ve çürümeye başlamış ölü İsa'yı sıradan bir insanın kaderini yaşamış gibi, gözleri ve ağzı açık olarak gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Dar bir mezar nişinde, beyaz bir örtünün üzerinde ölü bir adam sırtüstü uzanmış. Beden uzun, zayıf ve gerilmiş; kaburgalar seçiliyor. Gözleri ve ağzı açık, saçları mezarın kenarından taşıyor. Elinde, böğründe ve ayağında yaralar var. Yüz, eller ve ayaklar çürümenin ilk evresindeki ölü et gibi koyulaşmış."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Panel yalnızca 30,5 cm yüksekliğinde ama 200 cm genişliğindedir; bu dramatik oran, bedeni dar bir kutuya kapatır. Ölü İsa gerçek boyutlu, grotesk, gerilmiş ve doğal olmayan biçimde ince gösterilir. Soluk, yeşilimsi ten ile beyaz örtü arasındaki fark ölümü vurgular. Eser ıhlamur ağacı üzerine yağlıboya ve temperadır."},
+   {"baslik": "Anlam ve semboller", "metin": "Holbein, sıradan bir insanın kaderini yaşamış ölü Tanrı Oğlu'nu gösterir. Eser, 1520'lerin dindarlığına uygun olarak izleyicide hem suçluluk hem empati uyandırmayı amaçlar; bu, Grünewald'ın sunağının izinden gider. Michel Onfray'ye göre açık gözler ve ağız, İsa'nın da izleyiciye baktığı duygusunu verir. Efsaneye göre model, Ren'den çıkarılan bir cesettir."},
+   {"baslik": "Neden önemli?", "metin": "Tabloyu Bonifacius Amerbach sipariş etti; neden yapıldığı bilinmez: bir predella, bağımsız bir eser ya da bir mezar kapağı olabilir. Dostoyevski esere kapılmış, 'Böyle bir resimden insan inancını yitirebilir' demiştir. Budala romanında Prens Mışkin bir kopyasını görünce aynı şeyi söyler. Eser Kuzey Rönesansı'na bağlanır."}
+  ],
+  "bak": ["İsa'nın açık kalmış gözleri ve ağzı.", "Sağ elin kalkık, uzatılmış orta parmağı.", "Mezarın kenarından dışarı taşan saç tutamları."],
+  "noktalar": [
+   {"ad": "Açık yüz", "x": 0.06, "y": 0.12, "w": 0.12, "h": 0.65, "metin": "İsa'nın gözleri ve ağzı açık bırakılmış. Michel Onfray'ye göre bu, izleyicinin İsa'yı görürken onun da kendisine baktığını hissetmesini sağlar."},
+   {"ad": "Gerilmiş gövde", "x": 0.18, "y": 0.15, "w": 0.12, "h": 0.6, "metin": "Kaburgaları seçilen gövde uzun, zayıf ve doğal olmayan biçimde gerilmiştir. Holbein bedeni gerçek boyutlu ve grotesk gösterir."},
+   {"ad": "Böğür yarası", "x": 0.31, "y": 0.22, "w": 0.06, "h": 0.25, "metin": "Böğürdeki yara İsa'nın üç görünür yarasından biridir. Etrafındaki et, çürümenin ilk evresinde gibi koyulaşmıştır."},
+   {"ad": "Yaralı el", "x": 0.47, "y": 0.5, "w": 0.09, "h": 0.42, "metin": "Elde çivi yarası açıkça görülüyor. Bätschmann ve Griener'e göre kalkık, uzatılmış orta parmak izleyiciye uzanır gibi görünür."},
+   {"ad": "Ayaklar", "x": 0.85, "y": 0.12, "w": 0.13, "h": 0.55, "metin": "Ayaklarda da yara izi var ve uçları koyulaşmış. Panelin 200 cm'lik genişliği, bedeni baştan ayağa gerçek boyutta sığdırır."}
+  ]
+ },
+ {
+  "anahtar": "Q2537695", "sanatci": "giorgione", "baslik": "Yudit", "ozgun": "Judith",
+  "tarih": "y. 1504", "muze": "Hermitage Müzesi, Sankt Peterburg",
+  "ozet": "Giorgione'nin bu dingin tablosunda Yudit, elinde uzun bir kılıçla, çıplak ayağını yerdeki Holofernes'in kesik başına basmış, sakin bir yaz manzarasının önünde durur.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Pembe-kırmızı elbiseli genç bir kadın başını eğmiş, aşağı bakıyor. Sağ eli yere dayalı uzun bir kılıcın kabzasında. Elbisesinin yırtmacından açık bir bacak çıkıyor; çıplak ayağı yerdeki kesik bir erkek başına basıyor. Arkasında bir taş duvar, sağda geniş yapraklı bir ağaç, solda bir kule ve tepelerle uzanan bir manzara var."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Figür hafif bir contrapposto ile, ağırlığını bir bacağa vererek durur; dik kılıç ve ağaç gövdesi onu iki yandan çerçeveler. Pembe ve kırmızı elbisenin kıvrımları, yeşil manzarayla tamamlayıcı bir karşıtlık kurar. 1839'da panelden tuvale aktarıldı; 1967–1971 restorasyonu koyu sarı verniği kaldırdı, renkleri parlattı ve arka plandaki kuleyi ortaya çıkardı."},
+   {"baslik": "Anlam ve semboller", "metin": "Yapıt Yudit Kitabı'na dayanır: Yudit, kentini kurtarmak için Asur generali Holofernes'in başını keser. Giorgione kanlı anı değil, sonrasını gösterir; kahraman zafer anında bile sakin ve düşüncelidir. Ayağının başın üzerinde durması, zaferi sessizce anlatır. Resim, birçok başka yapıt gibi Yudit ve Holofernes motifine gönderme yapar."},
+   {"baslik": "Neden önemli?", "metin": "Eser, Hermitage'ın sahip olduğu az sayıdaki özgün Giorgione yapıtından biridir; uzun süre Raphael'e atfedildi. 1729–1772 arasında Paris'teki Crozat Koleksiyonu'nda kaldı ve 1772'de Hermitage'a geldi. Eser Yüksek Rönesans akımına bağlanır."}
+  ],
+  "bak": ["Yudit'in alnındaki küçük mücevher ve göğsündeki iri broş.", "Yerdeki kesik başın kapalı gözleri.", "Sol arkada, restorasyonda ortaya çıkan kule ve tepeler."],
+  "noktalar": [
+   {"ad": "Yudit'in yüzü", "x": 0.44, "y": 0.13, "w": 0.18, "h": 0.12, "metin": "Yudit başını eğmiş, sakin bir ifadeyle aşağıya, Holofernes'in başına bakıyor. Alnında küçük bir mücevher parlıyor."},
+   {"ad": "Kılıç", "x": 0.15, "y": 0.33, "w": 0.17, "h": 0.42, "metin": "Yudit'in eli uzun, düz bir kılıcın kabzasında duruyor. Kılıcın ucu yere değer; şiddet geride kalmıştır."},
+   {"ad": "Kesik baş", "x": 0.4, "y": 0.83, "w": 0.4, "h": 0.1, "metin": "Yerde Holofernes'in kesik başı yatıyor. Yudit'in çıplak ayağı başın üzerine basmış."},
+   {"ad": "Açık bacak", "x": 0.5, "y": 0.55, "w": 0.2, "h": 0.25, "metin": "Elbisenin yırtmacından açık bir bacak çıkıyor. Duruş, ağırlığın bir bacağa verildiği contrapposto'dur."},
+   {"ad": "Ağaç", "x": 0.7, "y": 0.0, "w": 0.3, "h": 0.42, "metin": "Sağda geniş yapraklı bir ağaç yükseliyor. Ağaç gövdesi, kılıçla birlikte figürü iki yandan çerçeveler."},
+   {"ad": "Kule ve tepeler", "x": 0.0, "y": 0.3, "w": 0.33, "h": 0.17, "metin": "Solda tepeler ve bir kuleyle uzanan bir manzara görülür. Bu kule ile tepeler, 1971'de tamamlanan restorasyonda kalın verniğin altından ortaya çıkmıştır."}
+  ]
+ },
+ {
+  "anahtar": "Q3978274", "sanatci": "artemisia-gentileschi", "baslik": "Susanna ve İhtiyarlar", "ozgun": "Susanna and the Elders",
+  "tarih": "1610", "muze": "Schloss Weißenstein, Pommersfelden",
+  "ozet": "Artemisia Gentileschi'nin bilinen en erken imzalı ve tarihli tablosu, taş bir sekide yıkanan Susanna'nın, üstünden eğilen iki ihtiyarın baskısı altında dehşetle büzüldüğü anı gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Çıplak Susanna taş bir sekide oturuyor; başını çevirip bir kolunu kalkan gibi kaldırmış, öbür eliyle adamları itiyor. Üstünde, taş duvarın arkasından iki adam eğilmiş: genç olanı yaşlıya bir şey fısıldıyor, yaşlısı parmağını dudağına götürmüş. Arka plan yalnızca mavi bir gökyüzü. Sol alttaki taş basamakta bir yazı okunuyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Dikey kompozisyon iki ihtiyarı üst kısma yayar; onlar Susanna'nın üzerinde asılı duran karanlık bir kütle gibidir ve kötücül bir baskı hissi yaratır. Sahne bahçe yerine taş bir çevirme içinde kurulmuştur. Gentileschi Susanna'nın bedeni için daha klasik bir üslup seçer; bu, çıplaklığını daha kahramanca yüceltir."},
+   {"baslik": "Anlam ve semboller", "metin": "Hikâyeye göre Susanna bahçede yıkanırken saklanan iki ihtiyar ona yaklaşır; reddedilince onu zinayla suçlarlar. Genç Daniel ihtiyarları ayrı ayrı sorgulayınca yalanları ortaya çıkar. Susanna alçakgönüllülük ve sadakati örnekler. Gentileschi'nin Susanna'sı rahatsızdır; bedenindeki bükülme sıkıntısını gösterir ve hiçbir rahatsızlık sergilemeyen birçok betimlemeden ayrılır."},
+   {"baslik": "Neden önemli?", "metin": "1610 tarihli eser, Artemisia Gentileschi'nin bilinen en erken imzalı ve tarihli çalışmasıdır. Tarih uzun süre tartışıldı; 1970'te X-ışını incelemesi 1610 yazıldığını doğruladı. Babası Orazio'nun rehberliğinde boyadığı düşünülür. Tablo 1719'dan beri Schönborn koleksiyonundadır ve Pommersfelden'deki Weißenstein Şatosu'nda durur."}
+  ],
+  "bak": ["Yaşlı ihtiyarın dudağına götürdüğü parmak.", "Susanna'nın adamları iten açık avucu.", "Sol alttaki taş basamakta imza ve tarih."],
+  "noktalar": [
+   {"ad": "İki ihtiyar", "x": 0.2, "y": 0.07, "w": 0.75, "h": 0.33, "metin": "İki ihtiyar taş duvarın üstünden eğilmiş, birbirine fısıldıyor. Üst kısma yayılmış kütleleri Susanna'nın üzerinde kötücül bir baskı oluşturur."},
+   {"ad": "Susturan parmak", "x": 0.48, "y": 0.25, "w": 0.08, "h": 0.08, "metin": "Yaşlı ihtiyar parmağını dudağına götürmüş. Hikâyede ihtiyarlar saklanıp Susanna'yı gizlice gözetlemektedir."},
+   {"ad": "Susanna'nın yüzü", "x": 0.15, "y": 0.32, "w": 0.17, "h": 0.16, "metin": "Susanna başını çevirmiş, kaşları çatık, dehşet içinde. Gentileschi onu rahatsızlığı açıkça görülen bir kadın olarak resmeder."},
+   {"ad": "İten el", "x": 0.68, "y": 0.3, "w": 0.14, "h": 0.12, "metin": "Susanna açık avucuyla adamları uzaklaştırmaya çalışıyor. Kolu, onlarla arasına konmuş bir set gibidir."},
+   {"ad": "Bükülen beden", "x": 0.25, "y": 0.48, "w": 0.33, "h": 0.32, "metin": "Susanna rahatsız biçimde oturuyor; gövdesi kendi içine bükülmüş. Bu bükülme sıkıntısını gösterir; beden klasik bir üslupla, kahramanca resmedilmiştir."},
+   {"ad": "İmza", "x": 0.0, "y": 0.79, "w": 0.09, "h": 0.1, "metin": "Sol alttaki taş basamakta Gentileschi'nin imzası ve tarih yazılı. Son rakam uzun süre tartışıldı; X-ışını incelemesi 1970'te tarihin 1610 olduğunu doğruladı."}
+  ]
+ },
+ {
+  "anahtar": "Q1213160", "sanatci": "michelangelo", "baslik": "Defin Töreni", "ozgun": "The Entombment",
+  "tarih": "y. 1500–1501", "muze": "National Gallery, Londra",
+  "ozet": "Michelangelo'ya atfedilen bu bitmemiş panelde ölü İsa'nın dik tutulan bedeni mezara taşınır; boş bırakılan alanlar ressamın bölüm bölüm çalışma yöntemini açığa çıkarır.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Ortada ölü İsa'nın çıplak bedeni, yere değmeyecek biçimde dik tutularak taşınıyor. Solda turuncu-kırmızı giysili uzun saçlı bir figür, arkada sakallı yaşlı bir adam, sağda yeşil giysili iki figür bedeni destekliyor. Sol altta bir kadın diz çökmüş. Sağ alt köşe ve sağ üstteki kayaların arası boş, boyasız kalmış."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Defin sahnelerinde beden genellikle yatay tutulur; Michelangelo ise onu dik kurar. Michelangelo, Raphael ya da Leonardo gibi önce bütünü eskizlemek yerine alanları sırayla bitirmiştir; bitmemiş yerler bunu gösterir. Kayalarda kazıyarak çıkarılmış boya izleri görülür. Pahalı ultramarinin kıtlığı, tablonun bitmemesini açıklıyor olabilir."},
+   {"baslik": "Anlam ve semboller", "metin": "Arimatyalı Yusuf, Pilatus'tan izin alıp İsa'nın bedenini kayaya oyulmuş yeni bir mezara koyar. Sakallı adam Yusuf ya da Nikodim olabilir; kırmızılı figür muhtemelen Yuhanna, diz çöken kadın Mecdelli Meryem olabilir. Figürler androjen olduğundan kesin kimlik vermek zordur. İsa'nın dik duruşu, dirilişine ve Efkaristiya'daki ekmeğin yükseltilmesine gönderme olabilir."},
+   {"baslik": "Neden önemli?", "metin": "Eser, Doni Tondo ve Manchester Madonna ile birlikte Michelangelo'ya atfedilen az sayıdaki tablodan biridir; bazı uzmanlar bir öğrencinin işi olabileceğini düşünür. 1500'de Roma'daki Sant'Agostino için ısmarlanan panel olabilir; Michelangelo 1501'de Floransa'ya dönünce bitmeden kaldı. National Gallery onu 1868'de satın aldı."}
+  ],
+  "bak": ["Sağ alt köşedeki boş alan: diz çökmüş Meryem için ayrılmıştı.", "Sağ üstte, kayaların arasındaki boyasız açıklık: planlanan mezar.", "Yuhanna'nın bedeni taşıdığı geniş beyaz kuşak."],
+  "noktalar": [
+   {"ad": "İsa'nın bedeni", "x": 0.36, "y": 0.18, "w": 0.21, "h": 0.68, "metin": "Ölü İsa'nın çıplak bedeni bir merdiven boyunca mezara taşınıyor. Beden yatay değil, dik tutulmuştur; bu, defin sahneleri için yeni bir kompozisyondur."},
+   {"ad": "Kırmızılı figür", "x": 0.07, "y": 0.07, "w": 0.28, "h": 0.4, "metin": "Uzun turuncu-kırmızı giysili, uzun saçlı figür muhtemelen Evangelist Yuhanna'dır. Bir kuşakla bedenin ağırlığını taşıyor."},
+   {"ad": "Sakallı yaşlı adam", "x": 0.36, "y": 0.08, "w": 0.1, "h": 0.1, "metin": "İsa'nın arkasındaki sakallı yaşlı adam başını eğmiş, bedeni destekliyor. Mezarını veren Arimatyalı Yusuf ya da bedeni hazırlayan Nikodim olabilir."},
+   {"ad": "Diz çöken kadın", "x": 0.0, "y": 0.47, "w": 0.2, "h": 0.45, "metin": "Sol altta diz çökmüş kadın, üç Meryem'den biri, belki Mecdelli Meryem olabilir. Louvre'da onun çıplak çizilmiş bir ön eskizi vardır."},
+   {"ad": "Boş köşe", "x": 0.76, "y": 0.5, "w": 0.24, "h": 0.48, "metin": "Sağ alttaki büyük bitmemiş alan diz çökmüş Bakire Meryem için ayrılmıştı. Boyasız yüzey, Michelangelo'nun alanları sırayla bitirdiğini gösterir."},
+   {"ad": "Mezar boşluğu", "x": 0.79, "y": 0.05, "w": 0.14, "h": 0.08, "metin": "Sağ üstteki kayaların arasındaki açık renkli boşluğa mezarın resmedilmesi planlanmıştı. Burası da hiç boyanmadan kalmıştır."}
+  ]
+ },
+ {
+  "anahtar": "Q939962", "sanatci": "correggio", "baslik": "Kartal Tarafından Kaçırılan Ganymedes", "ozgun": "Abduction of Ganymede",
+  "tarih": "y. 1531–1532", "muze": "Kunsthistorisches Museum, Viyana",
+  "ozet": "Correggio'nun Jüpiter'in Aşkları dizisinden bu dar, uzun tuvalde, kartal kılığındaki Jüpiter genç Ganymedes'i göğe taşırken aşağıda beyaz bir köpek ardından havlar.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Kocaman kara kanatlı bir kartal, kıvırcık saçlı bir genci havaya kaldırmış. Genç bir koluyla kartalın kanadına tutunmuş, başını çevirip bize bakıyor; pembe bir pelerin beline dolanmış, çıplak bacakları boşlukta sallanıyor. Altta, ağaçlı bir tepede beyaz bir köpek başını kaldırmış yukarı havlıyor. Arkada mavi tepeler ve geniş bir vadi uzanıyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Tuval 163,5 cm yüksekliğinde ama yalnızca 72 cm genişliğindedir; bu dar biçim yükselişi vurgular. Kara kanatlar tuvalin üst kısmını kaplar, açık tenli beden ortada, köpek en altta kalır. Göz yukarıdan aşağıya, kartaldan köpeğe uzanan bir çizgiyle dolaşır. Eser tuval üzerine yağlıboyadır."},
+   {"baslik": "Anlam ve semboller", "metin": "Ganymedes, Truva kralı Tros'un oğludur ve ölümlülerin en güzeli sayılır. Ovidius'un Dönüşümler'ine göre Jüpiter gence duyduğu tutkuyla kartala dönüşür ve onu göğe kapar; Ganymedes o günden beri tanrıların sakisidir. Aşağıda kalan köpek, kaçırılışın yerdeki tek tanığıdır."},
+   {"baslik": "Neden önemli?", "metin": "Tablo, Correggio'nun Mantua Dükü Federico II Gonzaga için yaptığı Jüpiter'in Aşkları dizisindendir. Vasari'ye göre dük dizi resimlerini İmparator V. Karl'a armağan etmek istiyordu. 16. yüzyılda İspanya'daydı; 1603–1604'te İmparator II. Rudolf onu Prag'a getirtti. 1610'lardan beri Viyana'daki Habsburg koleksiyonundadır."}
+  ],
+  "bak": ["Kartalın Ganymedes'in koluna kapanan gagası.", "Ganymedes'in bize dönmüş yüzü.", "Aşağıda yukarı doğru havlayan beyaz köpek."],
+  "noktalar": [
+   {"ad": "Kartal", "x": 0.55, "y": 0.04, "w": 0.25, "h": 0.1, "metin": "Kara kartalın başı genç adamın omzunun üstünde. Ovidius'a göre bu kartal, Ganymedes'e duyduğu tutkuyla kılık değiştiren Jüpiter'dir."},
+   {"ad": "Kara kanatlar", "x": 0.0, "y": 0.04, "w": 0.4, "h": 0.28, "metin": "Kartalın kocaman kara kanatları tuvalin üst kısmını kaplar. Ganymedes bir eliyle kanadın kenarına tutunmuştur."},
+   {"ad": "Ganymedes'in yüzü", "x": 0.48, "y": 0.13, "w": 0.22, "h": 0.12, "metin": "Kıvırcık saçlı Ganymedes başını çevirmiş, izleyiciye bakıyor. Truva kralı Tros'un oğlu, ölümlülerin en güzeli sayılır."},
+   {"ad": "Pembe pelerin", "x": 0.33, "y": 0.27, "w": 0.58, "h": 0.13, "metin": "Ganymedes'in beline pembe bir pelerin dolanmış, rüzgârda savruluyor. Kumaşın açık rengi, kanatların karanlığına karşı parlar."},
+   {"ad": "Havlayan köpek", "x": 0.1, "y": 0.68, "w": 0.3, "h": 0.32, "metin": "En altta beyaz bir köpek başını kaldırmış, yukarı havlıyor. Göğe kaçırılan sahibinin ardından yerde kalmıştır."},
+   {"ad": "Ağaç ve vadi", "x": 0.0, "y": 0.3, "w": 0.35, "h": 0.38, "metin": "Solda sarı yapraklı bir ağaç, arkada mavi tepeler ve geniş bir vadi uzanıyor. Manzara, yükselişin ne kadar yüksekte olduğunu gösterir."}
+  ]
+ },
+ {
+  "anahtar": "Q3039856", "sanatci": "rogier-van-der-weyden", "baslik": "Okuyan Mecdelli Meryem", "ozgun": "The Magdalen Reading",
+  "tarih": "y. 1435–1438", "muze": "National Gallery, Londra",
+  "ozet": "Rogier van der Weyden'in parçalanmış büyük bir sunağından kalan bu fragman, yeşil giysili Mecdelli Meryem'i yere oturmuş, okumaya dalmış, tefekkür hayatının bir örneği olarak gösterir.",
+  "bolumler": [
+   {"baslik": "Ne görüyoruz?", "metin": "Beyaz başörtülü genç bir kadın yere, kırmızı bir mindere oturmuş; sırtını ahşap bir büfeye dayamış, kucağındaki kitaba eğilmiş okuyor. Yeşil cübbesi göğsünün altında mavi bir kuşakla toplanmış, altından altın brokar bir etek görünüyor. Önünde beyaz bir kavanoz duruyor. Arkasında ayakta, elinde tespih ve baston tutan bir figür, yanda pencereden bir kanal görünüyor."},
+   {"baslik": "Kompozisyon, ışık ve renk", "metin": "Meryem'in yarım daire biçimli dış hattı, onun çevresinden sessizce kopuşunu pekiştirir. Rogier kürke doku vermek için elbise hattına paralel şeritler boyamış, boyayı kurumadan tüy gibi dağıtmıştır. Dudaklar vermilyon, beyaz ve kırmızının kenarlarda saydamlaşan karışımıyla boyanmıştır. 1955–1956 temizliği arkadaki figürleri ve pencere manzarasını ortaya çıkardı."},
+   {"baslik": "Anlam ve semboller", "metin": "Önündeki merhem kavanozu figürün Mecdelli Meryem olduğunu gösterir; İncillerde o, İsa'nın mezarına baharat getirmiştir. Okumaya dalmış Meryem, günahlarından tövbe edip bağışlanmış, tefekkür hayatının modeli olarak sunulur. Charles Darwent'e göre geçmişi, kürk astardaki tüylerde ve başörtüsünden kaçan saç tutamlarında ima edilir. İç mekân, kadınların artan okuryazarlığını yansıtır."},
+   {"baslik": "Neden önemli?", "metin": "Tablo, Rogier'nin büyük bir sunağının günümüze ulaşan üç fragmanından biridir; sunak 1811'den önce, muhtemelen hasar yüzünden parçalanmıştı. National Gallery 1860'ta satın aldı. Lorne Campbell onu on beşinci yüzyıl sanatının büyük başyapıtlarından ve Rogier'nin en önemli erken eserlerinden biri sayar."}
+  ],
+  "bak": ["Kitabın sırtındaki altın çubuğa bağlı dört renkli kumaş ayraç.", "Pencereden görünen kanal ve bahçe duvarındaki küçük okçu.", "Yerdeki beyaz merhem kavanozu."],
+  "noktalar": [
+   {"ad": "Meryem'in yüzü", "x": 0.53, "y": 0.18, "w": 0.17, "h": 0.15, "metin": "Meryem başını eğmiş, gözlerini izleyiciden çevirip kitabına odaklanmış. Dudakları kenarlarda saydamlaşan bir kırmızıyla boyanmıştır."},
+   {"ad": "Kitap ve ayraçlar", "x": 0.38, "y": 0.36, "w": 0.2, "h": 0.12, "metin": "Meryem beyaz bir bezle sardığı kitabı okuyor. Kitabın sırtına yakın bir altın çubuğa dört renkli kumaş ayraç bağlanmış."},
+   {"ad": "Tespihli figür", "x": 0.21, "y": 0.16, "w": 0.1, "h": 0.22, "metin": "Arkada ayakta duran figürün yalnızca eli, tespih taneleri ve bastonu görünüyor. Bu figür, 1955–1956 temizliğinde ortaya çıkmıştır."},
+   {"ad": "Pencere manzarası", "x": 0.03, "y": 0.0, "w": 0.22, "h": 0.17, "metin": "Pencereden uzakta bir kanal görülüyor. Bahçe duvarında bir okçu, suyun öbür yakasında yansımasıyla yürüyen bir figür var."},
+   {"ad": "Merhem kavanozu", "x": 0.72, "y": 0.86, "w": 0.08, "h": 0.12, "metin": "Meryem'in önünde su mermerinden bir kavanoz duruyor. Bu geleneksel nitelik, onun Mecdelli Meryem olarak tanınmasını sağlar."},
+   {"ad": "Brokar etek", "x": 0.0, "y": 0.73, "w": 0.3, "h": 0.22, "metin": "Yeşil cübbenin altından altın brokar bir etek görünüyor; etek ucu mücevherlerle bezenmiş. Kumaştaki desen ince fırça vuruşlarıyla tek tek işlenmiştir."}
+  ]
+ }
+]
