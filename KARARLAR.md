@@ -2549,3 +2549,15 @@ Mecdelli Meryem tek tek kutulanmadı (hangi figür oldukları görselden kesin d
 bulunanlar: Giorgione'nin dallardaki meleği, Rosso'nun merdivendeki imzası (MDXXI). Kaynak denetiminde çıkarılanlar:
 Mantegna'da "kitaptan okuyan" havari, Zurbarán'da belediye önerisinin tabloya bağlanması ve satır sayısı, Rosso'da merdiven
 ve adam sayısı, "bağırarak" ve Maniyerizm üzerine eklenen yorum. Birim 388/388. 244 başyapıt, 1388 nokta.
+
+### İş 189b · parti 10: 10 yakın okuma (sürüm 1.83.11)
+
+Bellini · Zeytin Bahçesi'nde Acı Çekme, Veronese · Darius'un Ailesi İskender'in Huzurunda, La Tour · Tövbekâr Mecdelli
+Meryem (iki alevli, Met), Velázquez · Müneccimlerin Tapınması, Poussin · Sabin Kadınlarının Kaçırılması (Met versiyonu),
+Cimabue · İsa'nın Alaya Alınışı, Veronese · Venüs ve Mars, Holman Hunt · Isabella ve Fesleğen Saksısı, Moreau · Beliriş,
+La Tour · Falcı; 57 nokta. Görsel–eser uyumu: hepsi araştırılan versiyon. Müze ve tarih künyeden (La Tour Mecdelli:
+secim.json'daki 1625 yerine y. 1640). Bellini'deki kâseli melek araştırmada geçmediği için yalnız görüleni yazıldı;
+Petrus büyütmeyle saptandı (pembe giysili, ağzı açık). Velázquez'te Gaspar noktası çıkarıldı (soldaki yaşlı adamın Gaspar
+olduğu görselden kesin değil). Kaynak denetiminde çıkarılanlar: Wrightsman'ın eşinin adı, aynanın "tefekkür nesnesi"
+yorumu, Poussin'de "kızını", Cimabue'de "askerlerce" ve ters perspektif tanımı, Hunt'ta "Newcastle", Falcı'da bakış yorumu
+ve imzanın çevirisi. Birim 388/388. 254 başyapıt, 1444 nokta.

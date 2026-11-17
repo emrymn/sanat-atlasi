@@ -7,7 +7,7 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
 - 110 yeni başyapıt seçildi (`secim.json`, 11 parti × 10). Her eserin araştırması bitti: `eserler/<QID>/ARASTIRMA.json`
   (kaynak metinden birebir alıntıya bağlı Türkçe iddialar; `dogrula.py` hepsini geçiriyor; Gemini ile anlam denetimi yapıldı).
 - Yakın okumalar parti parti yazılıyor: `okumalar/parti_NN.json` → `birlestir.py` → `data/basyapitlar.json` +
-  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser), parti 3 (10 eser), parti 4 (10 eser), parti 5 (10 eser), parti 6 (10 eser), parti 7 (10 eser), parti 8 (10 eser), parti 9 (10 eser).** Kalan: parti 10–11 (20 eser). Son sürüm 1.83.10; toplam 244 başyapıt (ek: Dürer Q351300).
+  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser), parti 3 (10 eser), parti 4 (10 eser), parti 5 (10 eser), parti 6 (10 eser), parti 7 (10 eser), parti 8 (10 eser), parti 9 (10 eser), parti 10 (10 eser).** Kalan: parti 11 (10 eser). Son sürüm 1.83.11; toplam 254 başyapıt (ek: Dürer Q351300).
 - **Q351300 Dürer · Âdem ile Havva yazıldı (1.83.4).** Görsel, Emre'nin verdiği iki Prado paneli yan yana birleştirilerek
   yapıldı (`gorsel_ek/`, ad `78e0e776ae7bbef8`); gravür bu kayıttan `eser_duzeltmeleri.json · gorsel_cikar` ile çıkarıldı.
   1280'lik ve büyük kopya R2'ye **Mac'te** yüklenmeli: `python3 scripts/basyapit_arastirma/r2_ek_yukle.py` (o zamana dek 400'lük görünür).
@@ -66,5 +66,5 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
 ## Sonraki oturum için hazır istem
 
 > Sanat Atlası deposunda (`emrymn/sanat-atlasi`, dal `claude/sharp-goodall-rxd1wk`) İş 189b'ye devam et:
-> `scripts/basyapit_arastirma/DEVIR.md`'yi oku ve "Durum"daki sıradaki partiyi (parti 10) aynı yolla bitir. Sonra DEVIR.md'nin
+> `scripts/basyapit_arastirma/DEVIR.md`'yi oku ve "Durum"daki sıradaki partiyi (parti 11) aynı yolla bitir. Sonra DEVIR.md'nin
 > "Durum"unu güncelle, commit ve push et. Kredin yeterse sıradaki partiye geç.
