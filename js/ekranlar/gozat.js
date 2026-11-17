@@ -510,7 +510,7 @@ export async function konuSayfasi(kodlu) {
           .join('')}</div>
         <button class="konu-uzat" type="button" data-konu-uzat aria-expanded="false" aria-controls="konu-metin" hidden><span>Devamını oku</span>${ikon('asagi', 18, 1.8)}</button></section>
       ${k.tanima.length ? `<section class="konu-bolum" data-gozcu>${etiket('Resimde nasıl tanınır?', { vurgu: true })}<ul class="konu-ipuclari">${k.tanima.map((x, i) => `<li style="--i:${i}">${ikon('ara', 18, 1.6)}<span>${kacis(x)}</span></li>`).join('')}</ul></section>` : ''}
-      <section class="konu-bolum konu-yol" data-gozcu>${etiket(`Aynı hikâye, ${k.eserler.length} kez`)}<p class="konu-yol-not">Zaman sırasıyla; kaydır, dokunup büyüt.</p>
+      <section class="konu-bolum konu-yol" data-gozcu><div class="konu-yol-ust">${etiket(`Aynı hikâye, ${k.eserler.length} kez`)}<button class="tumunu-goster" type="button" data-konu-tumu data-test="konu-tumu" hidden>Tümünü göster ${ikon('ileri', 15, 1.7)}</button></div><p class="konu-yol-not">Zaman sırasıyla; kaydır, dokunup büyüt.</p>
         <div class="konu-serit" data-konu-eserler><p class="ikincil kucuk">Eserler yükleniyor…</p></div></section>
       <p class="konu-dipnot">Metni Claude yazdı, ikinci bir istekte denetledi. Konu, eserlerin adından çıkarıldı; arada yanlış eşleşme olabilir.</p>
     </article>`);
@@ -532,6 +532,12 @@ export async function konuSayfasi(kodlu) {
     galeriDugme.disabled = false;
     galeriDugme.querySelector('[data-konu-sayi]').textContent = eserler.length;
     galeriDugme.addEventListener('click', () => konuGalerisiAc(k.ad, eserler, gorAc, galeriDugme));
+  }
+  // 1.88.3 (Emre: "buraya tümünü göster tuşu ekle"): şeridin başlığında da aynı galeri
+  const tumu = ekran.querySelector('[data-konu-tumu]');
+  if (tumu) {
+    tumu.hidden = false;
+    tumu.addEventListener('click', () => konuGalerisiAc(k.ad, eserler, gorAc, tumu));
   }
   const buyut = ekran.querySelector('[data-konu-sahne-buyut]');
   const kapakSira = Math.max(0, eserler.indexOf(kapak));

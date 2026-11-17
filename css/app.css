@@ -22452,11 +22452,17 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
   gap: 12px;
   margin-inline: calc(-1 * var(--yan));
   padding: 0 var(--yan) 4px;
+  /* yalnız yatay: kartlar aşağıdan kayarak girerken içerik bir an taşınca sıra dikeyde de kaydırılabiliyordu
+     (Emre: "sağa sola gitmek yerine aşağı yukarı da gidiyor"); dikey hareket sayfaya kalır */
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: var(--yan);
   scrollbar-width: none;
+}
+#uygulama .by-duvar.serit > li[data-gozcu] {
+  transform: none;
 }
 #uygulama .by-duvar.serit::-webkit-scrollbar {
   display: none;
@@ -22504,4 +22510,21 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 .serit-son small {
   font: 400 13px/1.2 var(--sans);
   color: var(--ink-2);
+}
+/* 1.88.3: konu sayfası şeridinin başlığında "Tümünü göster" */
+.konu-yol-ust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.konu-yol-ust .tumunu-goster {
+  flex: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.konu-yol-ust .tumunu-goster[hidden] {
+  display: none;
 }

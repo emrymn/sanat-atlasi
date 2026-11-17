@@ -44,6 +44,11 @@ test('konular: Göz At → liste → konu sayfası; eserler yan yana; görüntü
   await expect(k).toContainText('TEST paragraf iki.');
   await expect(k).toContainText('TEST işaret.');
   await expect(k.locator('[data-konu-eser]')).toHaveCount(2);
+  // 1.88.3: şeridin başlığındaki "Tümünü göster" bütün resimleri açar
+  await k.locator('[data-test="konu-tumu"]').click();
+  await expect(page.locator('[data-test="konu-galeri"]')).toBeVisible();
+  await page.locator('[data-test="konu-galeri"]').getByRole('button', { name: 'Kapat' }).click();
+  await expect(page.locator('[data-test="konu-galeri"]')).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
   // sanatçı sayfasında bir eseri aç → Konu bağlantısı → konu sayfası
   await page.goto('./#/sanatci/j-m-w-turner');

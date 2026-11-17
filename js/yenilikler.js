@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.88.3', metin: 'Başyapıtlar ve Konular’da yana kayan sıra artık yalnız sağa sola kayıyor; aşağı yukarı kayıp kartların yazısını kesmiyor. Konu sayfasında “Aynı hikâye, N kez” başlığının yanında “Tümünü göster”.' },
   { surum: '1.88.2', metin: 'Başyapıtlar ve Konular’da “Hepsi”nin altındaki kartlar artık yana kaydırılan bir sıra: altı kart, sonunda “Hepsine bak” oku; sekmeler arası kaydırma kalktı. Resmi büyütünce altyazıda “Sanatçı: … →”: resmin sahibinin sayfasına gider. Bugün’de sayfanın tepesindeki sis azaldı; “Hayatı” düğmesi koyu cam oldu (Gündüz’de yazısı okunmuyordu).' },
   { surum: '1.88.1', metin: 'Büyük konularda sayfanın altına inince uygulamanın kapanması düzeldi.' },
   { surum: '1.88.0', metin: 'Konular, Başyapıtlar ile aynı düzende: üstte Hepsi ve grup sekmeleri, öne çıkan konuların büyük kayan kartı; Hepsi’de her gruptan iki konu ve “N konu” düğmesi, bir gruba geçince o grubun bütün konuları.' },

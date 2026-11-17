@@ -2678,3 +2678,9 @@ bellek dolup WebKit süreci kapanıyordu. Artık yalnız ilk 8 durak canlanır, 
   gölgesi %42 → %24.
 - "Hayatı" düğmesi: dört seçenek ekranda gösterildi, Emre "A · Koyu cam"ı seçti (tablonun gölge tonunda %50 buğulu cam, açık
   yazı, ince açık kenar). Eski düğme Gündüz'de açık zemine açık yazıydı (sahne `--ink`'i açığa çeviriyor), okunmuyordu.
+
+## 1.88.3 · Yana kayan sıra dikeyde kaymasın
+Emre: "sağa sola gitmek yerine aşağı yukarı da gidiyor". `overflow-x: auto` dikeyi de `auto` yapıyor; kartlar aşağıdan
+kayarak (transform 18px) girerken içerik bir an taşınca iPhone sırayı dikeyde de kaydırıyor, yazılar kesiliyordu. Sırada
+`overflow-y: hidden` ve kartlar yalnız solarak girer (transform yok).
+- Konu sayfası: "Aynı hikâye, N kez" başlığının sağında "Tümünü göster" (Emre istedi); "Bütün resimler" ile aynı galeriyi açar.
