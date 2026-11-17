@@ -103,6 +103,8 @@ test.describe('Ö5 ve Ö9', () => {
       { a, b, c },
     );
     await page.reload();
+    // v0 Çalış düzeni: Hatalarım "Başka turlar" sekmesinde
+    await page.getByRole('tab', { name: 'Başka turlar' }).click();
     const satir = page.locator('[data-test="hatalar-satir"]');
     await expect(satir).toBeVisible();
     await expect(satir).toContainText('Hatalarım');
