@@ -157,7 +157,7 @@ export function paletDegiskenleri(p) {
     '--doku': `radial-gradient(rgba(${rgb(p.band)}, 0.06) 1px, transparent 1px)`,
     '--tab-bg': `rgba(${rgb(p.surface)}, 0.84)`,
     '--overlay-btn': `rgba(${rgb(p.surface)}, 0.85)`,
-    '--durum-cubugu': p.band,
+    '--durum-cubugu': 'rgba(31, 27, 23, 0.42)', // İş 192: paletin rengi değil, nötr ve hafif
     '--pirinc': p.pirinc,
     '--pirinc-rgb': rgb(p.pirinc),
     '--pirinc-yazi': p.surface,

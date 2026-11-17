@@ -54,7 +54,7 @@
   --doku: radial-gradient(rgba(31, 27, 23, 0.035) 1px, transparent 1px);
   --tab-bg: rgba(247, 245, 241, 0.84);
   --overlay-btn: rgba(247, 245, 241, 0.85);
-  --durum-cubugu: #1f1b17;
+  --durum-cubugu: rgba(31, 27, 23, 0.42); /* İş 192: dolu şerit değil, yarı saydam ve aşağı doğru silinir */
   --vurgu: #4c463f;
   --vurgu-yazi: #f7f5f1;
   --vurgu-acik: #4c463f;
@@ -95,13 +95,14 @@ body {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }
-/* Açık temalarda iOS durum çubuğunun beyaz yazısı okunsun diye üstte koyu şerit */
+/* Açık temalarda iOS durum çubuğunun beyaz yazısı okunsun diye üstte koyu gölge. İş 192 (Emre: "burdaki haleyi azalt,
+   çok dikkat dağıtıyor, her yerde var"): paletin renginde dolu şerit yerine nötr, yarı saydam ve aşağı doğru silinen gölge */
 body::before {
   content: '';
   position: fixed;
   inset: 0 0 auto;
   height: env(safe-area-inset-top);
-  background: var(--durum-cubugu);
+  background: linear-gradient(180deg, var(--durum-cubugu) 40%, transparent);
   z-index: 60;
   pointer-events: none;
 }
@@ -774,13 +775,13 @@ img.kirik {
 }
 
 /* ---------- Sanatçı / Günün sanatçısı ---------- */
-/* sol üstte resim renginde yumuşak hale */
+/* sol üstte resim renginde yumuşak hale (İş 192, Emre: "haleyi azalt, çok dikkat dağıtıyor": üçte birine indi) */
 .hale {
   position: absolute;
   z-index: -1;
   inset: 0 0 auto;
   height: 520px;
-  background: radial-gradient(120% 80% at 0% 0%, rgba(var(--vurgu-rgb), 0.32), rgba(var(--vurgu-rgb), 0.08) 45%, rgba(var(--vurgu-rgb), 0) 70%);
+  background: radial-gradient(120% 80% at 0% 0%, rgba(var(--vurgu-rgb), 0.11), rgba(var(--vurgu-rgb), 0.03) 45%, rgba(var(--vurgu-rgb), 0) 70%);
   pointer-events: none;
 }
 .sanatci-ust {
@@ -20619,14 +20620,14 @@ html .bugun-notlar .egim-dugme[data-egim-anahtar][aria-pressed='false'] .ikon {
 /* ===== İş 188 · Başyapıt sayfası: tek akış (js/ekranlar/basyapit.js) =====
    Tablo kapakta, kenardan kenara; okuma tek sütun; ayrıntı kırpımları metnin içinde; altta cam "Yakından bak" düğmesi.
    Zemin: tablonun rengindeki hale (.hale) ve eserin döneminin sembolleri (.bsy-desen; desenler Akımlar çarkındakiler). */
-/* hale sayfayla kaymaz: okurken de tablonun rengi zeminde kalır (sol üstte güçlü, sağ altta soluk) */
+/* hale sayfayla kaymaz: okurken de tablonun rengi zeminde kalır (sol üstte, sağ altta daha soluk). İş 192: üçte birine indi */
 .hale.bsy-hale {
   position: fixed;
   inset: 0;
   height: auto;
   background:
-    radial-gradient(120% 60% at 0% 0%, rgba(var(--vurgu-rgb), 0.28), rgba(var(--vurgu-rgb), 0.07) 45%, rgba(var(--vurgu-rgb), 0) 70%),
-    radial-gradient(90% 50% at 100% 100%, rgba(var(--vurgu-rgb), 0.14), rgba(var(--vurgu-rgb), 0) 70%);
+    radial-gradient(120% 60% at 0% 0%, rgba(var(--vurgu-rgb), 0.1), rgba(var(--vurgu-rgb), 0.025) 45%, rgba(var(--vurgu-rgb), 0) 70%),
+    radial-gradient(90% 50% at 100% 100%, rgba(var(--vurgu-rgb), 0.05), rgba(var(--vurgu-rgb), 0) 70%);
 }
 .bsy-desen {
   position: absolute;
