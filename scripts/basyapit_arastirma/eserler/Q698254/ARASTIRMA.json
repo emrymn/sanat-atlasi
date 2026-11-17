@@ -1,0 +1,34 @@
+{
+ "anahtar": "Q698254",
+ "baslik_tr": "Sürünün Geri Dönüşü",
+ "kunye": {
+  "sanatci": {"deger": "Pieter Bruegel the Elder", "kaynak": "wikidata.txt", "alinti": "creator (P170): Pieter Bruegel the Elder (Q43270)"},
+  "tarih": {"deger": "1565", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1565", "ihtiyat": false},
+  "teknik": {"deger": "panel üzerine yağlıboya", "kaynak": "enwiki.txt", "alinti": "panel painting in oils"},
+  "olcu": {"deger": "117 × 159 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 117 centimetre width (P2049): 159 centimetre"},
+  "yer": {"deger": "Kunsthistorisches Museum, Viyana", "kaynak": "enwiki.txt", "alinti": "The painting is now in the Kunsthistorisches Museum, Vienna, Austria."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, farklı mevsimleri betimleyen altı eserlik bir dizinin parçasıdır ve dizideki 'High Springtime' adlı eserin kaybolduğu sanılır.", "kaynak": "enwiki.txt", "alinti": "It is one in a series of six works (High Springtime is presumed lost) that depict different seasons.", "ihtiyat": true},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser, 'Labours of the months' döngüsünün bir parçasıdır.", "kaynak": "wikidata.txt", "alinti": "part of (P361): Labours of the months (Q3855265)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Eserde dağ betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): mountain (Q8502)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Eserde nehir betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): river (Q4022)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Eserde sığırlar betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): cattle (Q4767951)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Manzarada yapraksız ağaçlar vardır.", "kaynak": "enwiki.txt", "alinti": "The autumnal colors of the landscape and the bare trees connect this particular painting to October/November.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Eser 117 cm yüksekliğinde ve 159 cm genişliğindedir.", "kaynak": "wikidata.txt", "alinti": "height (P2048): 117 centimetre width (P2049): 159 centimetre", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Eser bir manzara resmidir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): landscape painting (Q191163)", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Eserin envanter numarası GG_1018'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): GG_1018", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Eser, yağlıboya ile yapılmış bir panel resmidir.", "kaynak": "enwiki.txt", "alinti": "panel painting in oils", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Manzaranın sonbahar renkleri ve yapraksız ağaçlar, eseri ekim/kasım aylarıyla ilişkilendirir.", "kaynak": "enwiki.txt", "alinti": "The autumnal colors of the landscape and the bare trees connect this particular painting to October/November.", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Eserin Nicolaes Jonghelinck'e ait olduğu dönem 1570'te sona ermiştir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Nicolaes Jonghelinck (Q1768402) [end time: 1570]", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Avusturya Arşidükü Ernest'in eserdeki mülkiyeti 1594'te başlamıştır.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Archduke Ernest of Austria (Q327156) [start time: 1594]", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "İmparator Rudolf II, eserin sahiplerinden biridir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Emperor Rudolf II (Q150586)", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Avusturya Arşidükü Leopold Wilhelm, eserin sahiplerinden biridir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Archduke Leopold Wilhelm of Austria (Q437295)", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Eser bugün Avusturya'nın Viyana kentindeki Kunsthistorisches Museum'dadır.", "kaynak": "enwiki.txt", "alinti": "The painting is now in the Kunsthistorisches Museum, Vienna, Austria.", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: simge yorumu, model, sipariş amacı ya da başka bir anlam katmanı kaynakta yok; yalnız mevsim bağlantısı var",
+  "hikaye: sürünün geri dönüşü sahnesinin ayrıntılı anlatımı (figürler, eylem, dayandığı metin) kaynakta yok"
+ ]
+}

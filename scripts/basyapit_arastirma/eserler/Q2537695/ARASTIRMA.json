@@ -1,0 +1,43 @@
+{
+ "anahtar": "Q2537695",
+ "baslik_tr": "Yudit",
+ "kunye": {
+  "sanatci": {"deger": "Giorgione", "kaynak": "wikidata.txt", "alinti": "creator (P170): Giorgione (Q8459)"},
+  "tarih": {"deger": "yaklaşık 1504", "kaynak": "enwiki.txt", "alinti": "executed around 1504", "ihtiyat": true},
+  "teknik": {"deger": "panelden tuvale aktarılmış yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709) made from material (P186): transferred on canvas (Q112259737)"},
+  "olcu": {"deger": "144 × 68 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 144 centimetre width (P2049): 68 centimetre"},
+  "yer": {"deger": "Ermitaj Müzesi", "kaynak": "wikidata.txt", "alinti": "location (P276): Hermitage Museum (Q132783)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Yapıt, Yudit Kitabı'na dayanmaktadır.", "kaynak": "wikidata.txt", "alinti": "based on (P144): Book of Judith (Q202129)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eserin ana konusu Yudit ve Holofernes'tir.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Judith and Holofernes (Q13077250)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Resimde Yudit betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Judith (Q26454627)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Resimde bir kılıç betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sword (Q12791)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resimde kesilmiş bir insan başı betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): human head (Q3409626) depicts (P180): beheaded head (Q101195208)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Resimde çıplak ayak betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): barefoot (Q808132)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resimde contrapposto duruşu betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): contrapposto (Q514847)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Resimde kestane rengi saç betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): chestnut hair (Q5094009)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Resimde geniş yapraklı bir ağaç betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): broad-leaved tree (Q148993)", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "1839'da Ermitaj restoratörü Sidorov, resmi panelden tuvale aktarmıştır.", "kaynak": "enwiki.txt", "alinti": "In 1839 the Hermitage restorer A. Sidorov accurately transferred the painting from panel to canvas.", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "19. yüzyılın sonlarında Judith'i kaplayan kalın, koyu sarı vernik tabakası özgün resmi tamamen bozmuştur.", "kaynak": "enwiki.txt", "alinti": "In the late 19th century, a thick layer of dark yellow varnish covered Judith, which completely distorted the original painting", "ihtiyat": false},
+  {"id": "C12", "bolum": "kompozisyon", "iddia": "1967'de resmin temizlenmesine karar verilmiş ve iş, restorasyon atölyesi şefi Brianzev gözetiminde restoratör Malova'ya verilmiştir.", "kaynak": "enwiki.txt", "alinti": "In 1967 it was decided to clean it, and the task was entrusted to A.M. Malova, a highly qualified restorer under the supervision of A.V. Brianzev, head of the easel paintings restoration workshop.", "ihtiyat": false},
+  {"id": "C13", "bolum": "kompozisyon", "iddia": "İnceleme, hasarın çoğunun çimen, toprak ve ağaç gövdesi üzerinde olduğunu göstermiştir.", "kaynak": "enwiki.txt", "alinti": "The examination showed that most of the damage was on the grass, ground and trunk.", "ihtiyat": false},
+  {"id": "C14", "bolum": "kompozisyon", "iddia": "1971'de tamamlanan restorasyonda renkler parlak ve derinleşmiş, arka planda bir kule ile tepelik peyzaj ortaya çıkmıştır.", "kaynak": "enwiki.txt", "alinti": "The restoration was finished in 1971. The paints became bright and deep, and a tower and hilly landscape on the background were revealed.", "ihtiyat": false},
+  {"id": "C15", "bolum": "anlam", "iddia": "Yapıt, dinî sanat türünde bir eserdir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C16", "bolum": "anlam", "iddia": "Resim, birçok başka yapıt gibi Yudit ve Holofernes motifine gönderme yapar.", "kaynak": "enwiki.txt", "alinti": "Like many other paintings, it refers to the Judith and Holofernes motif.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Eser, Rus Ermitaj Müzesi'nin sahip olduğu az sayıdaki özgün Giorgione yapıtından biridir.", "kaynak": "enwiki.txt", "alinti": "It is one of the few authentic works by Giorgione owned by the Russian Hermitage Museum.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Yapıt başlangıçta Raphael'e atfedilmekteydi.", "kaynak": "enwiki.txt", "alinti": "The painting, originally attributed to Raphael", "ihtiyat": true},
+  {"id": "C19", "bolum": "onem", "iddia": "Resim 1772'de Paris'ten Ermitaj'a gelmiştir.", "kaynak": "enwiki.txt", "alinti": "came to the Hermitage in 1772 from Paris", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Eser, 1729–1772 yılları arasında Crozat Koleksiyonu'nda yer almıştır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Crozat Collection (Q16540811) [start time: 1729; end time: 1772]", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Eserin sahiplerinden biri Pierre-Vincent Bertin'dir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Pierre-Vincent Bertin (Q3383539)", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Eserin sahiplerinden biri Louis Antoine Crozat'dır.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Louis Antoine Crozat (Q3261068)", "ihtiyat": false},
+  {"id": "C23", "bolum": "onem", "iddia": "Eser, Yüksek Rönesans akımına aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): High Renaissance (Q1474884)", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih (kesinlik)", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1504"}, "b": {"kaynak": "enwiki.txt", "alinti": "executed around 1504"}}
+ ],
+ "bulunamadi": [
+  "hikaye: olayın öncesi/sonrası ve sahne anlatısı kaynakta yok; yalnız konu ve metin kaynağı belirtiliyor",
+  "anlam: simge yorumu, model bilgisi ve sipariş amacı kaynakta yok"
+ ]
+}
