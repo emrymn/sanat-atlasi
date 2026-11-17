@@ -1,0 +1,47 @@
+{
+ "anahtar": "Q1131110",
+ "baslik_tr": "Zeytin Bahçesi'nde Acı Çekme",
+ "kunye": {
+  "sanatci": {"deger": "Giovanni Bellini", "kaynak": "wikidata.txt", "alinti": "creator (P170): Giovanni Bellini (Q17169)"},
+  "tarih": {"deger": "yaklaşık 1459–1465", "kaynak": "enwiki.txt", "alinti": "who created it c. 1459–1465", "ihtiyat": true},
+  "teknik": {"deger": "pano üzerine tempera", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "81 × 127 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 81 centimetre width (P2049): 127 centimetre"},
+  "yer": {"deger": "National Gallery, Londra", "kaynak": "enwiki.txt", "alinti": "It is a tempera painting on panel and is now in the National Gallery, London."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, İsa'nın Zeytin Dağı'nda dua ederken diz çökmesini ve öğrencileri Petrus, Yakup ve Yuhanna'nın onun yakınında uyumasını betimler.", "kaynak": "enwiki.txt", "alinti": "This work portrays the Agony in the Garden with Christ kneeling on the Mount of Olives in prayer, with his disciples Peter, James and John sleeping near to him.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Arka planda Yahuda, İsa'yı tutuklamak üzere Roma askerlerine öncülük eder.", "kaynak": "enwiki.txt", "alinti": "In the background, Judas leads the Roman soldiers to capture Christ.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "İsa'nın 'Bu kâse benden geçsin' sözleri resimde görsel olarak temsil edilemez.", "kaynak": "enwiki.txt", "alinti": "The painting cannot visually represent Jesus's words \"Let this cup pass from me\"", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Arka plandaki üç tepelik yerleşim, dönemin İtalyan kasabalarını çağrıştırır.", "kaynak": "enwiki.txt", "alinti": "the three hill settlements in the background are evocative of Italian towns of the time", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "İsa'nın elleri, sunak biçimini alan doğal bir kaya oluşumu üzerinde dua ederken yukarıdadır.", "kaynak": "enwiki.txt", "alinti": "his hands up in prayer over a natural rock formation that takes the form of an altar", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Aziz Petrus figürü, derin bir uykuda ağzı açık ve uzanmış halde betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "The figure of St. Peter is portrayed reclined with his mouth agape in deep rest", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Eser, ahşap pano üzerine yumurta temperası ile yapılmış bir resimdir.", "kaynak": "enwiki.txt", "alinti": "Agony in the Garden is an egg tempera painting on wood panel", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Resim muhtemelen kavak ahşap üzerine yapılmıştır; bu, Bellini'nin ahşap pano eserlerinde yaygın bir durumdur.", "kaynak": "enwiki.txt", "alinti": "most likely painted on poplar, as is common of Bellini's wood panel works", "ihtiyat": true},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Bellini ahşap panoyu gesso astarla kaplamış ve sıvı bir ortamla uygulanan ayrıntılı bir alt çizim sağlamıştır; bu, resme özellikle İsa'nın tuniğinde görülen büyük bir doku karmaşıklığı kazandırır.", "kaynak": "enwiki.txt", "alinti": "Bellini coated the wood panel with a gesso ground and provided an intricate underdrawing applied with a liquid medium, which provide the painting with a great complexity in texture especially seen in the tunic of Jesus.", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Bellini'nin versiyonunda şafak ışığının ele alınışı, sahneye neredeyse dünya dışı bir atmosfer vermede daha önemli bir rol oynar.", "kaynak": "enwiki.txt", "alinti": "In Bellini's version, the treatment of dawn light has a more important role in giving the scene a quasi-unearthly atmosphere.", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Bellini'nin resmi, dua eden İsa'dan yayılan ışığın gökyüzündeki parlak aydınlatmasında görüldüğü üzere bir zaman ve atmosfer duygusu getirir.", "kaynak": "enwiki.txt", "alinti": "Bellini's painting introduces a sense of time and ambiance, as seen in the sky's radiant illumination of light emanating from the praying Christ", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Bellini'nin resmi, izleyiciyi İsa'nın hayatındaki büyük bir dönüm noktasına yerleştirir.", "kaynak": "enwiki.txt", "alinti": "Bellini's painting situates the viewer at a great crossroads in the life of Jesus.", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Bellini, İsa figürüyle vurgulanan biçimde doğal dünya ile insan dünyasını harmanlar.", "kaynak": "enwiki.txt", "alinti": "Bellini blends the natural with the human world, which is highlighted by the figure of Christ", "ihtiyat": false},
+  {"id": "C14", "bolum": "anlam", "iddia": "Bellini, İsa'nın altında uyuyan havarileri betimleyerek resmin sessiz ortamında ses ayrıntılarını bile çağrıştırır.", "kaynak": "enwiki.txt", "alinti": "Bellini even evokes the details of sound in this silent medium of painting through his depiction of the apostles sleeping below Christ.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Eser, İtalyan Rönesans ustası Giovanni Bellini'nin erken dönem resimlerinden biridir.", "kaynak": "enwiki.txt", "alinti": "The Agony in the Garden is an early painting by the Italian Renaissance master Giovanni Bellini", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Resim, Bellini'nin kayınbiraderi Andrea Mantegna'nın National Gallery'de bulunan benzer eseriyle yakından ilişkilidir.", "kaynak": "enwiki.txt", "alinti": "The picture is closely related to the similar work by Bellini's brother-in-law, Andrea Mantegna, also in the National Gallery.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Her iki eser de muhtemelen Bellini'nin babası Jacopo'nun bir çiziminden türemiştir.", "kaynak": "enwiki.txt", "alinti": "It is likely that both derived from a drawing by Bellini's father, Jacopo.", "ihtiyat": true},
+  {"id": "C18", "bolum": "onem", "iddia": "Bellini'nin eseri, National Gallery'de Andrea Mantegna'nın aynı adlı eseriyle yan yana sergilenmektedir.", "kaynak": "enwiki.txt", "alinti": "Bellini's Agony in the Garden is displayed side-by-side with Andrea Mantegna's work of the same name in the National Gallery.", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Bellini'nin bu eseri uzun süre Mantegna tarafından yapıldığı düşünülmüştür.", "kaynak": "enwiki.txt", "alinti": "Bellini's rendering of Agony in the Garden was long-believed to be painted by Mantegna", "ihtiyat": true},
+  {"id": "C20", "bolum": "onem", "iddia": "Bellini'nin eseri, Mantegna'nın resminde görülen ve on beşinci yüzyıl İtalyan sanatında yaygın olan eşit aydınlatma ile formların yoğunlukta eşitliğinden belirgin bir kaymayı işaret eder.", "kaynak": "enwiki.txt", "alinti": "Bellini's work marks a noticeable shift from the even illumination and equality in the intensity of the forms, seen in Mantegna's painting, commonplace in fifteenth-century Italian art.", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Tablo, 1914'te Grace Marcon'un (Frieda Graham) suffragette protestosunda zarar gören beş resimden biriydi.", "kaynak": "enwiki.txt", "alinti": "The painting was amongst five paintings including Bellini's Portrait of a Mathematician that was damaged in a suffragette protest by Grace Marcon (aka Frieda Graham) in 1914.", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Eser muhtemelen Venedik'te Consul Smith'in mülkiyetindeydi.", "kaynak": "enwiki.txt", "alinti": "This one had probably belonged to Consul Smith in Venice", "ihtiyat": true},
+  {"id": "C23", "bolum": "onem", "iddia": "William Beckford tabloyu 1795'te Joshua Reynolds satışında 5 sterline satın almıştır.", "kaynak": "enwiki.txt", "alinti": "was bought by William Beckford at the Joshua Reynolds sale in 1795 for £5", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Tablo 1823'te Fonthill Abbey ile birlikte satılmıştır.", "kaynak": "enwiki.txt", "alinti": "then sold in 1823 with Fonthill Abbey", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Beckford, tabloyu ertesi yıl Fonthill Satışı'nda bir Mantegna olarak £52.10s karşılığında geri satın almıştır.", "kaynak": "enwiki.txt", "alinti": "repurchased by Beckford at the Fonthill Sale the next year (as a Mantegna) for £52.10s", "ihtiyat": false},
+  {"id": "C26", "bolum": "onem", "iddia": "National Gallery tabloyu 1863'te £630'a satın almıştır; bu, dönemi için yine de düşük bir fiyattı.", "kaynak": "enwiki.txt", "alinti": "It was bought by the National Gallery for £630 in 1863, still a low price for the day.", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1459 (precision: century) [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "who created it c. 1459–1465"}}
+ ],
+ "bulunamadi": [
+  "hikaye: olayın alındığı İncil kitabı/bölümü kaynakta belirtilmemiş",
+  "anlam: modelin kimliği kaynakta yok",
+  "anlam: sipariş amacı ve siparişi veren kişi kaynakta yok"
+ ]
+}

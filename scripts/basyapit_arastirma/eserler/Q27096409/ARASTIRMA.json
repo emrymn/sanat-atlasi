@@ -1,0 +1,264 @@
+{
+ "anahtar": "Q27096409",
+ "baslik_tr": "Sabin Kadınlarının Kaçırılması",
+ "kunye": {
+  "sanatci": {
+   "deger": "Nicolas Poussin",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Nicolas Poussin (Q41554)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1634 veya 1635",
+   "kaynak": "enwiki.txt",
+   "alinti": "about 1634 or 1635",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "yağlıboya",
+   "kaynak": "enwiki.txt",
+   "alinti": "is the subject of two oil paintings by Nicolas Poussin"
+  },
+  "olcu": {
+   "deger": null,
+   "kaynak": null,
+   "alinti": null
+  },
+  "yer": {
+   "deger": "Metropolitan Museum of Art, New York",
+   "kaynak": "enwiki.txt",
+   "alinti": "is now in the Metropolitan Museum of Art in New York City"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Sabin kadınlarının kaçırılması, Nicolas Poussin'in iki yağlıboya tablosunun konusudur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "is the subject of two oil paintings by Nicolas Poussin",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Olay, yeni kurulmuş Roma kentinin forumunda geçmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This bold political occurrence is exhibited as passing in the forum of the newly erected city of Rome.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Tanrı Consus onuruna düzenlenen oyunlar sona ermiş ve yerini kargaşa ve karışıklık sahnesine bırakmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The games in honour of the god Consus have ceased, and a scene of uproar and confusion has succeeded.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Romulus'un eteğini kaldırma hareketi, her Romalının Sabin kadınlarını kaçırması için verilen işarettir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the latter motion being the signal for every Roman to seize a Sabine wife",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Kentin kurucusu ve kralı Romulus, solda sütunlar arasında bir yükseltide durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Romulus, its founder and king, stands on an elevation at the left side between two columns",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Romulus elinde kraliyet asası tutarken diğer eliyle cübbesinin eteğini kaldırır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "holding a royal wand in one hand and raising the skirt of his robe with the other",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Elinde fasces tutan lictor, yakınlarında durarak mücadeleyi izlemektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "a lictor, with the fasces in his hand, stands near them, viewing the contest",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Smith (1837), tablonun ustanın en itibar gören üslubuyla boyandığını, renk tonlarının berrak olduğunu ve mükemmel korunmuşlukta bulunduğunu belirtir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Smith (1837) comments, \"This capital production is painted in the most esteemed manner of the master and has the advantage of being clear in its tones of colouring and in excellent preservation.\"",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Metropolitan tablosunun sağındaki grup, Galatian Suicide adlı eseri anımsatır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The group to the right of the Metropolitan picture recalls The Galatian Suicide",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "anlam",
+   "iddia": "Quattrocento'dan itibaren Sabin kadınlarının kaçırılması ve uzlaşması sahneleri, muhtemelen gelinlere ev içi eğitim amacıyla Toskana cassoni'lerinde (evlilik sandıkları) sıkça betimleniyordu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Beginning in the quattrocento, scenes of the abduction and reconciliation of the Sabine women were often figured on Tuscan cassoni (wedding chests), probably as domestic instruction for brides.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Poussin, Pietro da Cortona'nın yaklaşık 1630 tarihli kaçırılma konulu tablosundan etkilenmiştir; bu tablonun cassoni'lerden etkilenmiş olması muhtemeldir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Pietro da Cortona painted a celebrated picture of the abduction (c. 1630), which was possibly influenced by such cassoni, and which in turn influenced Poussin.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Poussin, her iki versiyonun ön planındaki birbirine dolanmış kaçırıcı ve esir çiftleri için muhtemelen Giambologna'nın aynı konulu Maniyerist heykeline (1579–1583) borçludur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "For the two pairs of entwined abductors and captives depicted in the foreground of both versions, Poussin was probably indebted to Giambologna's Mannerist sculpture of the same subject (1579–1583)",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Giambologna'nın heykeli, figürler ters çevrilerek Andrea Andreani tarafından chiaroscuro ahşap baskı (1584) olarak çoğaltılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "which was reproduced, with the figures reversed, as a chiaroscuro woodcut by Andrea Andreani (1584)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Galatian Suicide, kayıp bir Yunan özgününden sonra yapılmış MS 2. yüzyıl Roma mermeridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Galatian Suicide, a 2nd century AD Roman marble after a lost Greek original",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "anlam",
+   "iddia": "Galatian Suicide, Villa Ludovisi'nin yeniden geliştirilmesi için yapılan kazılarda yakın zamanda gün yüzüne çıkarılmış ve François Perrier tarafından gravürle çoğaltılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "which had been recently unearthed during excavations for the redevelopment of the Villa Ludovisi, and was engraved by François Perrier",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Tablo muhtemelen 1633 veya 1634'te boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Painted probably in 1633 or 1634.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablo, 1630'larda Roma'da Fransız elçisi olan Maréchal Charles de Créquy'ye aitti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Belonged to the Maréchal Charles de Créquy, who was French ambassador to Rome in the 1630s",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Tablo ardından Kral Louis XIII'ün başbakanı Kardinal Richelieu'ye geçmiş, Richelieu de muhtemelen yeğeni Düşes d'Aiguillon'a vasiyet etmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "and then to King Louis XIII's chief minister, Cardinal Richelieu, who probably bequeathed it to his niece, the Duchess d'Aiguillon",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo, 2 Haziran 1883'te Barn Elms'li Hoare baronetlerinin Stourhead miras eşyaları satışında 63 numarayla satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Purchased at the sale of the Stourhead heirlooms of the Hoare baronets of Barn Elms, on 2 June 1883 (No. 63).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Sir Francis Cook (1. Baronet) tabloyu 1883'te edinmiş ve kendisi ile varisleri tarafından Richmond'daki Doughty House'da sergilenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Acquired by Sir Francis Cook, 1st Baronet (d. 1901) in 1883 and displayed by himself and his heirs at Doughty House, Richmond",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Tablo sırasıyla oğlu Sir Frederick, onun oğlu Sir Herbert ve onun oğlu 4. Baronet Sir Francis Cook'a miras kalmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "inherited by his son Sir Frederick (d. 1920); by his son Sir Herbert (d. 1939); and his son Sir Francis Cook, 4th Baronet",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Tablo, 1946'da Pinakos (Rudolf J. Heinemann) ve New York'tan Knoedler tarafından satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "from whom it was purchased by Pinakos, Inc. (Rudolf J. Heinemann), and Knoedler, of New York, in 1946",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Tablo, Jean veya Gérard Audran tarafından gravürle çoğaltılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Engraved by Jean or Gérard Audran.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Metropolitan versiyonuna ait hazırlık çizimi Windsor Castle'da bulunmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "for the Metropolitan version, at Windsor Castle",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1635 (precision: decade)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "about 1634 or 1635"
+   }
+  },
+  {
+   "konu": "tarih (provenance bölümü)",
+   "a": {
+    "kaynak": "enwiki.txt",
+    "alinti": "about 1634 or 1635"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Painted probably in 1633 or 1634."
+   }
+  },
+  {
+   "konu": "kapsam",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "description (en): series of paintings by Nicolas Poussin"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The first version was painted in Rome about 1634 or 1635 and is now in the Metropolitan Museum of Art in New York City"
+   }
+  }
+ ],
+ "bulunamadi": [
+  "olcu: hiçbir kaynakta yok"
+ ]
+}

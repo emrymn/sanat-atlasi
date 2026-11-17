@@ -1,0 +1,44 @@
+{
+ "anahtar": "Q3210251",
+ "baslik_tr": "Tövbekâr Mecdelli Meryem",
+ "kunye": {
+  "sanatci": {"deger": "Georges de La Tour", "kaynak": "wikidata.txt", "alinti": "creator (P170): Georges de La Tour (Q203371)"},
+  "tarih": {"deger": "tarihsiz; yaklaşık 1640", "kaynak": "enwiki.txt", "alinti": "an undated oil-on-canvas painting created c.1640", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "133,4 × 102,2 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 133.4 centimetre width (P2049): 102.2 centimetre"},
+  "yer": {"deger": "Metropolitan Museum of Art, New York", "kaynak": "enwiki.txt", "alinti": "gave it to the Metropolitan Museum of Art in New York, where it still hangs"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Resim, İsa'nın yoldaşı olan Mecdelli Meryem'i betimler.", "kaynak": "enwiki.txt", "alinti": "The painting depicts Mary Magdalene, a companion of Christ", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Mecdelli Meryem, önceki dünyevi yaşam tarzını tövbe ve tefekkür hayatıyla değiştirmiştir.", "kaynak": "enwiki.txt", "alinti": "who exchanged her previous worldly lifestyle for a life of penance and contemplation", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Mecdelli, bir mumla aydınlatılmış olarak, ayna önünde düşünceli bir duruşla otururken gösterilir.", "kaynak": "enwiki.txt", "alinti": "She is shown, illuminated by a candle, sitting in a meditative pose in front of a mirror.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Mecdelli elinde bir insan kafatası tutmaktadır.", "kaynak": "enwiki.txt", "alinti": "the human skull she is holding", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resimde mücevher ve inci betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): bijou (Q3575260) depicts (P180): pearl (Q43436)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Resimde bir tuvalet masası ve bir ayna betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): dressing table (Q2106696) depicts (P180): mirror (Q35197)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Figür bir gömlek ve bir etek giymektedir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): shirt (Q76768) depicts (P180): skirt (Q2160801)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Mecdelli'nin bele kadar uzanan kahverengi saçları betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): brown hair (Q2367101) depicts (P180): waist-length hair (Q14130)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Resimde bir şamdan ve bir mum betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): bougeoir (Q2921550) depicts (P180): candle (Q12888135)", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Mumdan gelen ışık ve yansıması güçlü bir chiaroscuro etkisi yaratır.", "kaynak": "enwiki.txt", "alinti": "The light from the candle and its reflection create a strong chiaroscuro effect", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Figürün parlak biçimde aydınlatılmış yüzü ve göğsü, kompozisyonun geri kalanının karanlığıyla karşıtlık oluşturur.", "kaynak": "enwiki.txt", "alinti": "with the subject's brightly lit face and breast contrasting with the darkness of the rest of the composition", "ihtiyat": false},
+  {"id": "C12", "bolum": "kompozisyon", "iddia": "Resimde contre-jour (ters ışık) betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): contre-jour (Q660281)", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Mum ve Mecdelli'nin tuttuğu insan kafatası, yaşamın kırılganlığının metaforlarıdır.", "kaynak": "enwiki.txt", "alinti": "Both the candle and the human skull she is holding are metaphors for the fragility of life and her discarded jewellery for the meaningless value of worldly possessions and for her atonement.", "ihtiyat": false},
+  {"id": "C14", "bolum": "anlam", "iddia": "Bir kenara bırakılmış mücevherler, dünyevi malların anlamsız değerinin ve Mecdelli'nin kefaretinin metaforlarıdır.", "kaynak": "enwiki.txt", "alinti": "Both the candle and the human skull she is holding are metaphors for the fragility of life and her discarded jewellery for the meaningless value of worldly possessions and for her atonement.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Bay ve Bayan Charles Wrightsman, 1978'de tabloyu New York'taki Metropolitan Museum of Art'a vermiştir.", "kaynak": "enwiki.txt", "alinti": "In 1978 Mr. and Mrs. Charles Wrightsman gave it to the Metropolitan Museum of Art in New York, where it still hangs.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Tablo hâlâ Metropolitan Museum of Art'ta asılı durmaktadır.", "kaynak": "enwiki.txt", "alinti": "In 1978 Mr. and Mrs. Charles Wrightsman gave it to the Metropolitan Museum of Art in New York, where it still hangs.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Yapıt, sanatçının mum ışığıyla aydınlatılmış Mecdelli Meryem'i betimleyen birkaç eserinden biridir.", "kaynak": "enwiki.txt", "alinti": "The work is one of several by the artist featuring a candlelit Mary Magdalene.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Eser 'Magdalene with Two Flames' adıyla da anılır.", "kaynak": "enwiki.txt", "alinti": "Magdalene with Two Flames or The Penitent Magdalene", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Tablo tarihsizdir ve yaklaşık 1640'ta yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "an undated oil-on-canvas painting created c.1640", "ihtiyat": true},
+  {"id": "C20", "bolum": "onem", "iddia": "Yapıt, La Tour'un tövbekâr Mecdelli resimleri dizisinin bir parçasıdır.", "kaynak": "wikidata.txt", "alinti": "part of (P361): Paintings of penitent Magdalene by La Tour (Q104383362)", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Eserin envanter numarası 1978.517'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 1978.517", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1625"}, "b": {"kaynak": "enwiki.txt", "alinti": "an undated oil-on-canvas painting created c.1640"}},
+  {"konu": "tarih (wikidata kendi içinde)", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1625"}, "b": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1640 [sourcing circumstances: circa (Q5727902)]"}}
+ ],
+ "bulunamadi": [
+  "hikaye: konunun dayandığı İncil bölümü kaynakta belirtilmiyor",
+  "anlam: modelin kimliği ve sipariş amacı hakkında kaynakta bilgi yok",
+  "kompozisyon: alt çizim veya restorasyon bulguları kaynakta yok",
+  "onem: sipariş eden kişi ve 1978 bağışı öncesi sahiplik zinciri kaynakta yok"
+ ]
+}

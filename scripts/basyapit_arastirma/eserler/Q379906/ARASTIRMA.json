@@ -1,0 +1,47 @@
+{
+ "anahtar": "Q379906",
+ "baslik_tr": "Falcı",
+ "kunye": {
+  "sanatci": {"deger": "Georges de La Tour", "kaynak": "wikidata.txt", "alinti": "creator (P170): Georges de La Tour (Q203371)"},
+  "tarih": {"deger": "yaklaşık 1630", "kaynak": "enwiki.txt", "alinti": "an oil painting of circa 1630", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "101.9 × 123.5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 101.9 centimetre width (P2049): 123.5 centimetre"},
+  "yer": {"deger": "Metropolitan Museum of Art, New York", "kaynak": "enwiki.txt", "alinti": "the Metropolitan Museum of Art in New York"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, varlıklı bir genç adamın sağdaki yaşlı kadına fal baktırdığı anı yakalar.", "kaynak": "enwiki.txt", "alinti": "The painting catches a moment in which a young man of some wealth is having his fortune told by the old woman at right", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Yaşlı kadın, adamın elinden parayı yalnızca ödeme olarak değil, elini parayla çizme ritüelinin bir parçası olarak alır.", "kaynak": "enwiki.txt", "alinti": "she takes the coin from his hand, not only in payment, but as part of the ritual in which she will cross his hand with it.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Genç adam fala dalmışken en soldaki kadın, onun cebinden para kesesini çalmaktadır.", "kaynak": "enwiki.txt", "alinti": "As the young man is engrossed in the fortune-telling—an act which, if discovered, would have repercussions for both him and the Romani people—the leftmost woman is stealing the coin purse from his pocket", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "En soldaki kadının profildeki arkadaşı, ganimeti almaya hazır bir el bekletmektedir.", "kaynak": "enwiki.txt", "alinti": "the leftmost woman is stealing the coin purse from his pocket, while her companion in profile has a hand ready to receive the loot", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Genç adamın solundaki solgun yüzlü kız, onun taktığı madalyayı zincirinden keser.", "kaynak": "enwiki.txt", "alinti": "The pale-faced girl on the boy's left is less clearly Romani, but is also in on the act as she cuts a medal worn by the boy from its chain.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Solgun yüzlü kızın Roman olduğu daha az açıktır, ama o da bu eyleme dahildir.", "kaynak": "enwiki.txt", "alinti": "The pale-faced girl on the boy's left is less clearly Romani, but is also in on the act", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Tablonun sağ üst köşesinde 'G. de La Tour Fecit Luneuilla Lothar' yazılı kaligrafik bir imza vardır.", "kaynak": "enwiki.txt", "alinti": "the calligraphic signature at top right: \"G. de La Tour Fecit Luneuilla Lothar\"", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Tablodaki figürler, sanki bir oyundaymış gibi birbirine yakın durur.", "kaynak": "enwiki.txt", "alinti": "The figures in the painting are close together, as if in a play", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Kompozisyon bir tiyatro sahnesinden etkilenmiş olabilir.", "kaynak": "enwiki.txt", "alinti": "the composition may have been influenced by a theatrical scene.", "ihtiyat": true},
+  {"id": "C10", "bolum": "anlam", "iddia": "Betimlenen kadınların çoğu ya da tümü Roman'dır ve hırsız olarak betimlenmeleri dönemin klişesini pekiştirir.", "kaynak": "enwiki.txt", "alinti": "Most or all of the women portrayed are Romani people, and, furthering the stereotype of the time, they are depicted as thieves.", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Fal baktırma, keşfedildiği takdirde hem genç adam hem de Romanlar için sonuçlar doğuracak bir eylemdir.", "kaynak": "enwiki.txt", "alinti": "an act which, if discovered, would have repercussions for both him and the Romani people", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Eser yaklaşık 1960'ta ortaya çıkarılmış ve aynı yıl New York'taki Metropolitan Museum of Art tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "The work was uncovered in about 1960 and purchased that year by the Metropolitan Museum of Art in New York.", "ihtiyat": true},
+  {"id": "C13", "bolum": "onem", "iddia": "François Georges Pariset'nin The Metropolitan Museum of Art Bulletin'daki yazısında tablo La Tour'a atfedilir.", "kaynak": "enwiki.txt", "alinti": "François Georges Pariset described the painting in The Metropolitan Museum of Art Bulletin, attributing it to La Tour", "ihtiyat": true},
+  {"id": "C14", "bolum": "onem", "iddia": "Eserin özgünlüğü, özellikle İngiliz sanat tarihçisi Christopher Wright tarafından sorgulanmıştır.", "kaynak": "enwiki.txt", "alinti": "Its authenticity has been questioned in the intervening years, notably by the English art historian Christopher Wright", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Falcı, genel olarak La Tour'un eseri olarak kabul edilir.", "kaynak": "enwiki.txt", "alinti": "The Fortune Teller is generally accepted as La Tour's work.", "ihtiyat": true},
+  {"id": "C16", "bolum": "onem", "iddia": "Tablonun modern keşfinin, bir monografide La Tour'un eserlerini görüp akrabasının şatosundaki tabloyla benzerlik kuran bir Fransız savaş esirine dayandığı söylenir.", "kaynak": "enwiki.txt", "alinti": "The modern discovery of the painting is said to be traced to a French prisoner of war who viewed La Tour's works in a monograph and found a likeness with a painting hung in a relative's castle.", "ihtiyat": true},
+  {"id": "C17", "bolum": "onem", "iddia": "Bilgili bir rahip, tabloyu bir La Tour eseri olarak tanımlayıp Louvre'u bilgilendirmiştir.", "kaynak": "enwiki.txt", "alinti": "A knowledgeable priest identified it as a La Tour work and informed the Louvre", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Louvre, tabloyu satın almak için görüşmelere girmiştir.", "kaynak": "enwiki.txt", "alinti": "the Louvre, which entered negotiations to buy the painting", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Sanat simsarı Georges Wildenstein, müzeden daha yüksek teklif vererek tabloyu 1949'da 7,5 milyon franka satın almıştır.", "kaynak": "enwiki.txt", "alinti": "The art dealer Georges Wildenstein outbid the museum, however, purchasing the painting in 1949 for 7.5 million francs.", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Tablo on yıl boyunca sanat simsarının elinde kalmıştır.", "kaynak": "enwiki.txt", "alinti": "For a decade it remained with the dealer", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "1960'ta Metropolitan Museum of Art, Falcı için açıklanmayan ama 'çok yüksek bir meblağ' ödemiştir.", "kaynak": "enwiki.txt", "alinti": "in 1960 the Metropolitan Museum of Art paid an undisclosed but \"very high sum of money\" for The Fortune Teller", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Tablonun Fransa'dan nasıl çıkabildiği, Fransız basınında tartışma konusu olmuştur.", "kaynak": "enwiki.txt", "alinti": "How the painting had been able to leave France became a matter of controversy in the French press", "ihtiyat": false},
+  {"id": "C23", "bolum": "onem", "iddia": "Yazar André Malraux, dönemin Fransa Kültür Bakanı olarak, eserin neden Louvre'a gitmediğini Ulusal Meclis'te açıklamaya çalışmıştır.", "kaynak": "enwiki.txt", "alinti": "the writer André Malraux, then French Minister of Culture, attempted to explain to the National Assembly why the work did not end up in the Louvre", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "İhracat lisansının, Louvre'da eski usta resimlerinden sorumlu sanat tarihçisi Germain Bazin tarafından imzalandığı sonradan ortaya çıkmıştır.", "kaynak": "enwiki.txt", "alinti": "It later emerged that the export licence was signed by the art historian Germain Bazin, who was head of old master paintings at the Louvre", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Wright, Bazin'in eseri Louvre için istemeyecek kadar kuşku duyduğunu öne sürer.", "kaynak": "enwiki.txt", "alinti": "the art historian Germain Bazin, who was head of old master paintings at the Louvre; Wright speculates that he had sufficient doubt about the work not to want it for the Louvre", "ihtiyat": true},
+  {"id": "C26", "bolum": "onem", "iddia": "Eser, 1960'tan beri Metropolitan Museum of Art koleksiyonunda yer almaktadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Metropolitan Museum of Art (Q160236) [start time: 1960]", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1630"}, "b": {"kaynak": "enwiki.txt", "alinti": "an oil painting of circa 1630"}}
+ ],
+ "bulunamadi": [
+  "hikaye: fal sahnesinin öncesi/sonrası ve dayandığı yazılı bir metin kaynakta yok",
+  "kompozisyon: ışık, renk, alt çizim ve restorasyon bulguları kaynakta yok",
+  "anlam: modelin kimliği ve sipariş amacı kaynakta yok"
+ ]
+}
