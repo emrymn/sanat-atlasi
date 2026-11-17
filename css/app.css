@@ -4957,6 +4957,13 @@ html.konu-galeri-acik {
   translate: none;
   scale: 1;
 }
+/* 1.88.1: "Bütün resimler" duvarında da yalnız ilk on iki kart canlanır (yüzlerce kart aynı anda geçişe girince iOS çöküyordu) */
+.konu-galeri-duvar li:nth-child(n + 13) {
+  opacity: 1;
+  translate: none;
+  scale: 1;
+  transition: none;
+}
 .konu-galeri-duvar button {
   display: flex;
   flex-direction: column;
@@ -5199,6 +5206,23 @@ html.konu-galeri-acik {
 }
 .konu-yol.gorundu.dolu .konu-duraklar > li::after {
   scale: 1 1;
+}
+/* 1.88.1: yalnız ilk sekiz durak canlanır. Büyük konularda (Meryem ve Çocuk: 336 durak) hepsi aynı anda geçişe girince
+   iOS her biri için ayrı katman açıyor (~1000 katman) ve bellek dolup uygulama kapanıyordu. Ekran dışındaki duraklar
+   çizilmez (content-visibility). */
+.konu-duraklar > li:nth-child(n + 9) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 240px auto 420px;
+}
+.konu-duraklar > li:nth-child(n + 9) > .konu-durak,
+.konu-duraklar > li:nth-child(n + 9) > .konu-yil {
+  opacity: 1;
+  translate: none;
+  transition: none;
+}
+.konu-duraklar > li:nth-child(n + 9)::after {
+  scale: 1 1;
+  transition: none;
 }
 .konu-dipnot {
   margin: 36px 0 0;
@@ -18104,9 +18128,11 @@ a.akim-dizin-satir:active {
 .kn-govde {
   padding-top: 18px;
 }
+.by-govde.kn-sagdan,
 .kn-govde.kn-sagdan {
   animation: kn-sagdan 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
+.by-govde.kn-soldan,
 .kn-govde.kn-soldan {
   animation: kn-soldan 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -18294,6 +18320,7 @@ a.akim-dizin-satir:active {
   .by-sahne-resim img,
   .kn-one .kn-kapak img.yuklendi,
   .kn-govde,
+  .by-govde,
   .kn-sekmeler a[aria-current='page']::after {
     animation: none;
   }
