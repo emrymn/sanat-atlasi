@@ -9761,6 +9761,62 @@
      "metin": "Yerdeki altın testinin üzerinde TICIANVS imzası okunuyor. Bu urna, Dük'ün koleksiyonundaki antik eserlerden birini andırıyor olabilir."
     }
    ]
+  },
+  {
+   "anahtar": "Q351300",
+   "sanatci": "albrecht-durer",
+   "baslik": "Âdem ile Havva",
+   "gorsel": "78e0e776ae7bbef8",
+   "noktalar": [
+    {
+     "ad": "Âdem'in yüzü",
+     "x": 0.17,
+     "y": 0.07,
+     "w": 0.22,
+     "h": 0.14,
+     "metin": "Kıvırcık, savrulan saçlı Âdem ağzı aralık, yana bakıyor. Dürer onu sıcak bir ışıkla yıkar; ten rengi Havva'nınkinden belirgin biçimde daha sıcaktır."
+    },
+    {
+     "ad": "Üvez dalı",
+     "x": 0.36,
+     "y": 0.34,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Âdem parmak uçlarıyla meyveli bir dal tutuyor. Yağlıboya tabloda bu dal, Yaşam Ağacı'nı simgeleyen bir üvez dalıdır."
+    },
+    {
+     "ad": "Havva'nın yüzü",
+     "x": 0.63,
+     "y": 0.09,
+     "w": 0.13,
+     "h": 0.12,
+     "metin": "Havva soğuk, neredeyse gümüşi bir ışıkla aydınlatılır. Dürer onun bedeninde başın gövdeye oranını gravürdeki 1:7,4'ten 1:8,2'ye çıkarmıştır."
+    },
+    {
+     "ad": "Yazılı levha",
+     "x": 0.535,
+     "y": 0.585,
+     "w": 0.1,
+     "h": 0.06,
+     "metin": "Daldan asılı küçük levha bir cartellino'dur. Üzerindeki Latince yazıt 'Albertus durer alemanus faciebat post virginis partum 1507' diye okunur."
+    },
+    {
+     "ad": "Çapraz bacaklar",
+     "x": 0.68,
+     "y": 0.66,
+     "w": 0.15,
+     "h": 0.32,
+     "metin": "Havva'nın bacakları çaprazdır; biri doğrudan öbürünün arkasındadır. Karşıdaki Âdem ise iki ayağıyla yere basar."
+    },
+    {
+     "ad": "Yılan ve meyve",
+     "x": 0.86,
+     "y": 0.1,
+     "w": 0.14,
+     "h": 0.2,
+     "metin": "Sağdaki ağacın gövdesine bir yılan sarılmış, başı Havva'nın tuttuğu meyveye uzanıyor. Konunun Yaratılış Kitabı'ndaki kaynağını hatırlatan en açık öğedir."
+    }
+   ]
   }
  ]
 }

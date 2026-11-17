@@ -7,11 +7,12 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
 - 110 yeni başyapıt seçildi (`secim.json`, 11 parti × 10). Her eserin araştırması bitti: `eserler/<QID>/ARASTIRMA.json`
   (kaynak metinden birebir alıntıya bağlı Türkçe iddialar; `dogrula.py` hepsini geçiriyor; Gemini ile anlam denetimi yapıldı).
 - Yakın okumalar parti parti yazılıyor: `okumalar/parti_NN.json` → `birlestir.py` → `data/basyapitlar.json` +
-  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser), parti 3 (10 eser).** Kalan: parti 4–11 (80 eser). Son sürüm 1.83.3; toplam 183 başyapıt.
-- **Atlanan: Q351300 Dürer · Âdem ile Havva (parti 2).** Uygulamadaki görseli 1504 tarihli *gravür*
-  (`Albrecht_Dürer,_Adam_and_Eve,_1504,_Engraving.jpg`), araştırma ise 1507 tarihli *Prado tablosu* hakkında. Önce görselin
-  düzeltilmesi gerekir (kayıttaki ikinci görsel `Albrecht_Dürer_-_Adam_and_Eve_(Prado)_2.jpg`'nin yerel/R2 kopyası yok; Mac'te
-  `gorsel_indir.py` + `r2_yukle.py` ister). O zamana dek yakın okuma yazma.
+  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser), parti 3 (10 eser).** Kalan: parti 4–11 (80 eser). Son sürüm 1.83.4; toplam 184 başyapıt (ek: Dürer Q351300).
+- **Q351300 Dürer · Âdem ile Havva yazıldı (1.83.4).** Görsel, Emre'nin verdiği iki Prado paneli yan yana birleştirilerek
+  yapıldı (`gorsel_ek/`, ad `78e0e776ae7bbef8`); gravür bu kayıttan `eser_duzeltmeleri.json · gorsel_cikar` ile çıkarıldı.
+  1280'lik ve büyük kopya R2'ye **Mac'te** yüklenmeli: `python3 scripts/basyapit_arastirma/r2_ek_yukle.py` (o zamana dek 400'lük görünür).
+  Başka bir eserin görseli yanlışsa aynı yol: görseli `gorsel_ek/{b,d}/<ad>.jpg` + `gorseller/k/<ad>.jpg`, `yerel_gorseller.json`,
+  `gorsel_oranlari.json`, gerekiyorsa `gorsel_cikar`.
 - **Her partide görsel–eser uyumunu kontrol et:** ızgaralı görsele bakınca araştırmanın anlattığı eser mi (tarih, teknik,
   versiyon) diye sor. Uymuyorsa atla ve buraya yaz.
 - `secim.json`'daki `muze` bazen eski (ör. Alba Meryemi: Hermitage yazıyor, eser Washington'da): müzeyi ARASTIRMA künyesinden al.

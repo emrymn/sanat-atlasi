@@ -2475,3 +2475,12 @@ Rembrandt · Danae, Kanon van der Paele'li Meryem, Titian · Flora, Bacchus ve A
 kaynaklar çelişiyor (Phlegyas / Kharon); metin ikisini de anıyor. Van Eyck'ta tahttaki oyma, kırpınca Âdem ile Havva değil
 Kabil–Habil'e benzer çıktı; metin düzeltildi. Kaynak denetiminde çıkarılanlar: Virgil'in "defne çelengi", Kuzey Tacı'nın "sekiz"
 yıldızı, Ampelos'un resimdeki yeri, "devlet satın aldı" (alıcı Forbin). Birim 388/388; uçtan uca 13/13. 183 başyapıt, 1037 nokta.
+
+### İş 189b · Dürer · Âdem ile Havva: Prado panelleri (sürüm 1.83.4)
+
+Emre: "adem ve havva iki resim olarak var tek resim olarak yok resimler bunlar sen devam et". Eserin görseli 1504 gravürüydü,
+araştırma 1507 Prado panelleri hakkında. Emre'nin verdiği iki panel (Âdem solda, Havva sağda, aralarında 36 px koyu boşluk)
+tek görselde birleştirildi: 1498 × 1920, ad `78e0e776ae7bbef8` (Wikidata'daki "…(Prado)_2.jpg" anahtarına bağlandı; 400'lük
+`gorseller/k`'de, 1280'lik ve büyük kopya `scripts/basyapit_arastirma/gorsel_ek/`'te, R2'ye Mac'te `r2_ek_yukle.py` ile yüklenecek).
+Gravür bu kayıttan `gorsel_cikar` ile çıkarıldı (başka eser); tarih 1507 (kurs slaytındaki 1504 gravürün). `scripts/ayrinti/denetle.py`
+artık `gorsel_cikar`'ı da uyguluyor (uygulamadaki gibi). 6 nokta; 184 başyapıt, 1043 nokta. Birim 388/388, uçtan uca 13/13.

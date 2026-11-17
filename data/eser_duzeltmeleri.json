@@ -51,6 +51,11 @@
       "Q2982846": [
         "QRpedia_codes_at_Fundació_Joan_Miró_22.JPG"
       ]
+    },
+    "albrecht-durer": {
+      "Q351300": [
+        "Albrecht_Dürer,_Adam_and_Eve,_1504,_Engraving.jpg"
+      ]
     }
   },
   "muze": {
@@ -103,6 +108,11 @@
       "yil": 1602,
       "tarih": "1602",
       "kaynak": "National Gallery of Ireland (Wikidata'da yalnız yüzyıl)"
+    },
+    "Q351300": {
+      "yil": 1507,
+      "tarih": "1507",
+      "kaynak": "Museo del Prado (iki panel); kurs slaytındaki 1504 tarihi aynı konulu gravürün"
     }
   }
 }
