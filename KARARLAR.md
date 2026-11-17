@@ -2483,6 +2483,7 @@ uzaklaştıran bir animasyon vardı o kalkmış onu geri getir".
 - "Bugünün dersi": haritanın beklediği ders (durağı yalnız dersi yüzünden kapalı dönem) önce; yoksa "Buradasın" durağının dönemi.
 - Testler: tarayıcı testlerinin çoğunda ders kapısı kapalı (`window.__atlasDersKapisiYok`, tanışma ekranındaki gibi);
   `tests/e2e/ders.spec.js` açar.
-- Çalış'taki Gör düğmesi: İş 189'da düz hapa dönmüş, içindeki resim ve yakınlaşma animasyonu (`gor-yuru`) gizlenmişti.
-  Geri geldi: 96 px yüksek, yuvarlak (24 px) koyu kart; resim ayrıntıdan ayrıntıya yakınlaşır, yazı soldaki koyu geçişin
-  üstünde, ok açık daire. Parıltı şeridi kapalı kaldı.
+- Yakınlaşma animasyonu (Emre: "detaylara yakınlaştırıp uzaklaştıran animasyon … geri getir"; sonra "animasyonu buraya
+  ekleyecektin" diyerek bugünün dersi kapağını gösterdi): Çalış'ta bugünün dersi kapağındaki resim yavaşça ayrıntıdan
+  ayrıntıya yakınlaşıp uzaklaşır (`kapak-yuru`, 16 sn, en çok 1,9 kat; hareket azaltılınca durur). Gör düğmesi tuvaldeki
+  düz hapta kaldı. "Bugünün dersi" etiketi kapakta açık renk (paletin rengi resimde okunmuyordu).
