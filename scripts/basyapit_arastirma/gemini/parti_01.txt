@@ -1,0 +1,862 @@
+Aşağıdaki listede her satır grubu bir Türkçe "iddia" ve onun dayandığı İngilizce ya da Türkçe "alinti"dir.
+Alıntıların kaynakta birebir geçtiği ayrıca doğrulandı; onu denetleme. Kendi sanat tarihi bilgini KULLANMA: iddia gerçekte doğru olsa bile,
+alıntıdan çıkmıyorsa bulgudur; iddia gerçekte yanlış olsa bile alıntı aynısını söylüyorsa bulgu değildir.
+
+Yalnız şu durumları bildir:
+A. FAZLA: iddia alıntıda olmayan bir isim, yer, tarih, sebep ya da nitelik içeriyor.
+B. TERS / YANLIŞ ÇEVİRİ: iddia alıntının söylediğinin tersini ya da başka bir şeyi söylüyor (sol-sağ, önce-sonra, by/in, kim-kime).
+C. KESİNLEŞTİRME: alıntıdaki ihtiyat (probably, attributed, may, circa …) iddiada kaybolmuş ya da zayıflamış.
+D. YANLIŞ ESER: alıntı açıkça başka bir versiyon, kopya, eser ya da kişi hakkında.
+E. BÖLÜM: iddia yanlış bölümde (hikaye / gorunen / kompozisyon / anlam / onem).
+Üslup, yazım, "daha iyi çeviri" önerme. Bulgu yoksa o eser için "temiz" yaz.
+
+Çıktı yalnız şu JSON olsun:
+[{"anahtar": "Q…", "id": "C07", "tur": "A|B|C|D|E", "aciklama": "en çok 25 kelime", "oneri": "düzeltilmiş Türkçe iddia ya da SİL"}]
+Ardından tek satır: incelenen eser sayısı, incelenen iddia sayısı, bulgu sayısı.
+
+LİSTE
+
+### Q567861 · Son Yargı (michelangelo)
+C01 [hikaye]
+  İDDİA: Eser, İsa'nın İkinci Gelişini ve Tanrı'nın tüm insanlık hakkındaki son ve ebedi yargısını tasvir eder.
+  ALINTI: It is a depiction of the Second Coming of Christ and the final and eternal judgment by God of all humanity.
+C02 [hikaye]
+  İDDİA: Ölüler, çevresinde önde gelen azizler bulunan İsa'nın yargısıyla kaderlerine doğru yükselir ya da alçalır.
+  ALINTI: The dead rise and descend to their fates, as judged by Christ who is surrounded by prominent saints.
+C03 [hikaye]
+  İDDİA: Klasik mitolojide ve Dante'de ruhları Yeraltı Dünyası'na taşıyan Charon, lanetlileri kayığıyla Cehennem girişinin yanındaki karaya çıkarır.
+  ALINTI: A boat rowed by an aggressive Charon, who ferried souls to the Underworld in classical mythology (and Dante), brings them to land beside the entrance to Hell
+C04 [hikaye]
+  İDDİA: Geleneksel Hristiyan şeytanı Satan gösterilmemiştir; onun yerine Dante'nin Inferno'sundaki rolüyle Minos, lanetlilerin Cehennem'e kabulünü denetler.
+  ALINTI: Satan, the traditional Christian devil, is not shown but another classical figure, Minos, supervises the admission of the Damned into Hell; this was his role in Dante's Inferno.
+C05 [gorunen]
+  İDDİA: Yapıtta toplam 300'den fazla figür vardır; erkeklerin ve meleklerin neredeyse tamamı başlangıçta çıplak gösterilmiştir.
+  ALINTI: Altogether there are over 300 figures, with nearly all the males and angels originally shown as nudes
+C06 [gorunen]
+  İDDİA: Yapıtın merkezinde, Son Yargı'nın bireysel hükümleri verilirken lanetlilere doğru bakan İsa yer alır.
+  ALINTI: At the centre of the work is Christ, shown as the individual verdicts of the Last Judgment are pronounced; he looks down towards the damned.
+C07 [gorunen] [ihtiyat]
+  İDDİA: İsa sakalsızdır ve antik Herakles, Apollo ile Jupiter Fulminator kavrayışlarından, muhtemelen özellikle Belvedere Apollo'dan derlenmiştir.
+  ALINTI: He is beardless, and "compounded from antique conceptions of Hercules, Apollo, and Jupiter Fulminator", probably, in particular, the Belvedere Apollo, brought to the Vatican by Pope Julius II.
+C08 [gorunen] [ihtiyat]
+  İDDİA: İsa'nın solunda, başını kurtulanlara doğru çeviren annesi Bakire Meryem durur; duruşu aynı zamanda boyun eğişi düşündürür.
+  ALINTI: To the left of Christ is his mother, Virgin Mary, who turns her head to look down towards the Saved, though her pose also suggests resignation.
+C09 [gorunen] [ihtiyat]
+  İDDİA: İsa'yla benzer ölçekte solda Vaftizci Yahya, sağda Cennet'in anahtarlarını tutan Aziz Petrus bulunur; Petrus muhtemelen artık gerekmeyecek anahtarları İsa'ya geri sunmaktadır.
+  ALINTI: On a similar scale to Christ are John the Baptist on the left, and on the right St. Peter, holding the keys of Heaven and perhaps offering them back to Christ, as they will no longer be needed.
+C10 [gorunen] [ihtiyat]
+  İDDİA: Petrus'un altında Aziz Bartholomew, şehitliğinin simgesi olan kendi yüzülmüş derisini tutar; derideki yüz genellikle Michelangelo'nun otoportresi olarak kabul edilir.
+  ALINTI: Other prominent saints include St. Bartholomew below Peter, holding the attribute of his martyrdom, his own flayed skin. The face on the skin is usually recognized as being a self-portrait of Michelangelo.
+C11 [gorunen] [ihtiyat]
+  İDDİA: Aziz Lawrence üzerinde kızartıldığı ızgarayla, Aziz Sebastian vurulduğu ok demetiyle, Aziz Blaise iki metal tarakla, Aziz Catherine ise üzerinde parçalanacağı düşünülen çarkın bir parçasıyla gösterilir.
+  ALINTI: St. Lawrence is also present, along with the gridiron on which he was roasted. Also depicted is St. Catherine with a portion of the wheel on which she was supposed to have been broken, St. Sebastian, holding the bundle of arrows with which he was shot, and St. Blaise with two metal combs that were used to tear the flesh off his back.
+C12 [gorunen]
+  İDDİA: Charon'un üzerinde bulutlarda, Vahiy Kitabı'ndaki gibi yedi melek boru çalar; diğerleri kurtulanların ve lanetlilerin adlarını kaydeden kitapları tutar.
+  ALINTI: In the centre above Charon is a group of angels on clouds, seven blowing trumpets (as in the Book of Revelation), others holding books that record the names of the Saved and Damned.
+C13 [gorunen] [ihtiyat]
+  İDDİA: Minos'a, papalık sarayında Michelangelo'yu eleştiren Biagio da Cesena'nın yüz hatlarının verildiği genel olarak kabul edilir.
+  ALINTI: He is generally agreed to have been given the features of Biagio da Cesena, a critic of Michelangelo in the Papal court.
+C14 [kompozisyon]
+  İDDİA: Fresk, tavan fresklerinden daha monokromatiktir ve ten ile gökyüzü tonları egemendir.
+  ALINTI: The fresco is more monochromatic than the ceiling frescoes and is dominated by the tones of flesh and sky.
+C15 [kompozisyon]
+  İDDİA: Temizlik ve restorasyon, daha önce görünenden daha geniş bir renk aralığı ortaya çıkarmıştır; turuncu, yeşil, sarı ve mavi karmaşık sahnenin içine yayılmıştır.
+  ALINTI: The cleaning and restoration of the fresco, however, revealed a greater chromatic range than previously apparent. Orange, green, yellow, and blue are scattered throughout, animating and unifying the complex scene.
+C16 [kompozisyon]
+  İDDİA: Michelangelo'nun tasarımında figürlerin tüm resim boyunca düzenlenişi ve duruşları, üst bölümlerde bile derin bir huzursuzluk, gerilim ve kargaşa izlenimi verir.
+  ALINTI: in Michelangelo's conception the arrangement and posing of the figures across the entire painting give an impression of agitation and excitement, and even in the upper parts there is "a profound disturbance, tension and commotion" in the figures.
+C17 [kompozisyon]
+  İDDİA: Tüm figür gruplarının, dev bir dönme hareketi içinde merkezdeki İsa figürünün çevresinde döndüğü izlenimi vardır.
+  ALINTI: There is an impression that all the groups of figures are circling the central figure of Christ in a huge rotary movement.
+C18 [kompozisyon]
+  İDDİA: Freskin alt kısmında Michelangelo geleneği izleyerek kurtulanları solda yükselirken, lanetlileri sağda alçalırken göstermiştir.
+  ALINTI: In the lower part of the fresco, Michelangelo followed tradition in showing the saved ascending at the left and the damned descending at the right.
+C19 [kompozisyon] [ihtiyat]
+  İDDİA: Michelangelo iki dar pencerenin doldurulmasını, üç kornişin kaldırılmasını ve duvar yüzeyinin fresk yüksekliği boyunca yaklaşık 11 inç öne eğilmesini şart koşmuştur.
+  ALINTI: Michelangelo stipulated the filling-in of two narrow windows, the removal of three cornices, and building the surface increasingly forward as it rises, to give a single uninterrupted wall surface slightly leaning out, by about 11 inches over the height of the fresco.
+C20 [anlam] [ihtiyat]
+  İDDİA: Yaygınlaşan yorumlardan birine göre azizler kendi hükümlerinden emin değildir ve son anda İsa'ya çektikleri acıları hatırlatmaya çalışır.
+  ALINTI: other interpretations have become more common, including that the saints are themselves not certain of their own verdicts and try at the last moment to remind Christ of their sufferings.
+C21 [anlam] [ihtiyat]
+  İDDİA: Edgar Wind'e göre Bartholomew'un derisindeki otoportre, Neoplatonist bir havada dış insanın çirkinlik yoluyla atılıp iç insanın saf olarak dirilmesine yönelik bir kurtuluş duasıdır.
+  ALINTI: Most writers agree that Michelangelo depicted his own face in the flayed skin of St. Bartholomew (see the illustration above). Edgar Wind saw this as "a prayer for redemption, that through the ugliness the outward man might be thrown off, and the inward man resurrected pure", in a Neoplatonist mood
+C22 [anlam] [ihtiyat]
+  İDDİA: Meryem için, ölüler adına geleneksel şefaat rolünü üstlenme anı geçmiş görünmektedir.
+  ALINTI: It appears that the moment has passed for her to exercise her traditional role of pleading on behalf of the dead
+C23 [onem] [ihtiyat]
+  İDDİA: Michelangelo esere, Sistine Şapeli tavanını bitirmesinden 25 yıl sonra başlamış ve tamamlandığında neredeyse 67 yaşındaydı.
+  ALINTI: Michelangelo began working on it 25 years after finishing the Sistine Chapel ceiling, and was nearly 67 at its completion.
+C24 [onem] [ihtiyat]
+  İDDİA: Michelangelo siparişi başlangıçta Papa Clemens VII'den kabul etmiş, ancak eser Paulus III döneminde tamamlanmıştır; onun daha güçlü reform görüşleri muhtemelen son işlemeyi etkilemiştir.
+  ALINTI: He had originally accepted the commission from Pope Clement VII, but it was completed under Pope Paul III whose stronger reforming views probably affected the final treatment.
+C25 [onem]
+  İDDİA: Yapıt baştan itibaren hem dinsel hem sanatsal gerekçelerle övgü ve eleştiriyle karşılanmış; çıplaklık miktarı ve kaslı beden üslubu tartışma alanlarından biri olmuştur.
+  ALINTI: The reception of the painting was mixed from the start, with much praise but also criticism on both religious and artistic grounds. Both the amount of nudity and the muscular style of the bodies has been one area of contention
+C26 [onem] [ihtiyat]
+  İDDİA: Vasari'nin aktardığına göre tören ustası Biagio da Cesena, bu kadar kutsal bir yerde çıplak figürlerin utanç verici biçimde gösterildiğini ve eserin papalık şapelinden çok halk hamamlarına ve tavernlere yakıştığını söylemiştir.
+  ALINTI: the pope's Master of Ceremonies Biagio da Cesena is reported by Vasari as saying that: "it was most disgraceful that in so sacred a place there should have been depicted all those nude figures, exposing themselves so shamefully, and that it was no work for a papal chapel but rather for the public baths and taverns"
+C27 [onem] [ihtiyat]
+  İDDİA: Freskteki cinsel organlar, Mannerist ressam Daniele da Volterra tarafından draperiyle örtülmüştür; bu işlem muhtemelen çoğunlukla Michelangelo'nun 1564'te ölümünden sonra yapılmıştır.
+  ALINTI: the genitalia in the fresco were painted over with drapery by the Mannerist painter Daniele da Volterra, probably mostly after Michelangelo died in 1564.
+C28 [onem] [ihtiyat]
+  İDDİA: En son restorasyonda (1990–1994), 1600'den sonra eklenen örtülerden yaklaşık 15'i kaldırılmış ve 16. yüzyıl değişikliklerinin bırakılmasına karar verilmiştir.
+  ALINTI: These additions were in "dry" fresco, which made them easier to remove in the most recent restoration (1990–1994), when about 15 were removed, from those added after 1600. It was decided to leave 16th-century changes.
+C29 [onem]
+  İDDİA: Fresk, Sistine tavanıyla birlikte 1980–1994 arasında Fabrizio Mancinelli ve Gianluigi Colalucci gözetiminde restore edilmiştir.
+  ALINTI: The fresco was restored along with the Sistine vault between 1980 and 1994 under the supervision of Fabrizio Mancinelli, the curator of post-classical collections of the Vatican Museums and Gianluigi Colalucci, head restorer at the Vatican laboratory.
+
+### Q1892745 · Dünyanın Kurtarıcısı (Salvator Mundi) (leonardo-da-vinci)
+C01 [hikaye]
+  İDDİA: Tablo, İsa'nın Dünyanın Kurtarıcısı (Salvator Mundi) olarak betimlendiği bir eserdir.
+  ALINTI: Salvator Mundi, İsa'nın Salvator Mundi (Dünyanın Kurtarıcısı) olarak betimlendiği tablodur.
+C02 [hikaye]
+  İDDİA: Salvator Mundi bir imge tipi olarak Leonardo'dan önce de mevcuttu.
+  ALINTI: The Salvator Mundi as an image type predates Leonardo.
+C03 [hikaye]
+  İDDİA: Kompozisyonun kaynakları Bizans sanatındadır; bu imgeler kuzey Avrupa'da gelişerek İtalyan devletlerine ulaşmıştır.
+  ALINTI: The composition has its sources in Byzantine art, the imagery of which further developed in northern Europe before finding its place in the Italian states.
+C04 [gorunen]
+  İDDİA: İsa, anakronik mavi Rönesans kıyafetleri içinde betimlenmiştir.
+  ALINTI: The painting depicts Jesus Christ in anachronistic blue Renaissance attire
+C05 [gorunen]
+  İDDİA: İsa sağ eliyle kutsama işareti yaparken sol elinde saydam, ışığı kırmayan bir kristal küre tutar.
+  ALINTI: making a gesture of blessing with his right hand, while holding a transparent, non-refracting crystal orb in his left
+C06 [gorunen] [ihtiyat]
+  İDDİA: Kemp'e göre küre, katı olduğunu destekleyen bir dizi iç kapanım (hava cepleri) ile parıldar.
+  ALINTI: Kemp further notes that the orb "sparkles with a series of internal inclusions (or pockets of air)"—evidence in support of its being solid.
+C07 [kompozisyon]
+  İDDİA: Kızılötesi fotoğraflar, kutsama yapan elin başparmağının daha dik durduğu bir pentimento ortaya çıkarmıştır.
+  ALINTI: Infrared photographs revealed a pentimento where the blessing hand's thumb is more upright.
+C08 [kompozisyon]
+  İDDİA: Tablonun arkasındaki kurtlanmış marouflage panel uzman Monica Griesbach tarafından kaldırılınca tablo yedi parçaya bölünmüştür.
+  ALINTI: A woodworm-infested marouflage panel was on the back of the painting. When specialist Monica Griesbach removed it, the painting broke into seven pieces.
+C09 [kompozisyon]
+  İDDİA: Tablonun pigmentleri ve üzerine yapıldığı ceviz panel, diğer Leonardo tablolarıyla tutarlıdır.
+  ALINTI: The pigments and the walnut panel upon which the work was executed are consistent with other Leonardo paintings.
+C10 [kompozisyon] [ihtiyat]
+  İDDİA: Yüzdeki sfumato etkisi, görünüşe göre kısmen boyanın avuç kenarıyla işlenmesiyle elde edilmiştir ve Leonardo'nun birçok eserinde tipiktir.
+  ALINTI: The sfumato effect of the face—evidently achieved in part by manipulating the paint using the heel of the hand—is typical of many works by Leonardo.
+C11 [kompozisyon] [ihtiyat]
+  İDDİA: Kutsama yapan el net odakta görünürken, bir ölçüde değiştirilmiş veya zarar görmüş yüz yumuşak odaktadır.
+  ALINTI: Christ's blessing hand appears to be in sharp focus, whereas his face—though altered or damaged to some extent—is in soft focus.
+C12 [kompozisyon]
+  İDDİA: Leonardo'nun draperi için yaptığı iki hazırlık tebeşir ve mürekkep çizimi İngiliz Kraliyet Koleksiyonu'nda bulunmaktadır.
+  ALINTI: Two preparatory chalk and ink drawings of the drapery by Leonardo are held in the British Royal Collection.
+C13 [anlam]
+  İDDİA: Küre, İsa'nın Salvator Mundi rolünü işaret eder ve göklerin göksel küresini temsil eder.
+  ALINTI: signalling his role as Salvator Mundi and representing the celestial sphere of the heavens
+C14 [anlam]
+  İDDİA: Ptolemaios kozmolojisinde yıldızlar, merkezde küresel Dünya'nın yer aldığı evrenin sabit göksel kristal küresine gömülüydü.
+  ALINTI: In Ptolemaic cosmology, the stars were embedded in a fixed celestial crystalline sphere (composed of aether), with the spherical Earth at the center of the universe.
+C15 [anlam] [ihtiyat]
+  İDDİA: Kemp'e göre Salvator Mundi aslında 'kozmosun kurtarıcısı'dır ve bu çok Leonardesque bir dönüşümdür.
+  ALINTI: "So what you've got in the Salvator Mundi", Kemp states, "is really 'a savior of the cosmos', and this is a very Leonardesque transformation."
+C16 [anlam] [ihtiyat]
+  İDDİA: Isaacson'a göre Leonardo küreyi, ışığı kırmayan içi boş bir cam kabarcık gibi resmetmiştir ve bu bilinçli bir karardı.
+  ALINTI: Instead, Leonardo painted the orb as if it were a hollow glass bubble that does not refract or distort the light passing through it. Isaacson believes that this was "a conscious decision on Leonardo's part"
+C17 [anlam] [ihtiyat]
+  İDDİA: Tablo muhtemelen, on altıncı yüzyılda bu boyut ve konudaki diğer panolar gibi kişisel ibadet bağlamında kullanılmıştır.
+  ALINTI: The painting would have been used in the context of personal devotion, as were other panels of this size and subject in the sixteenth century.
+C18 [anlam] [ihtiyat]
+  İDDİA: Joanne Snow-Smith, Leonardo'nun Salvator Mundi'yi Fransa Kralı XII. Louis ve eşi Bretonlu Anne için yaptığını öne sürmüştür.
+  ALINTI: Joanne Snow-Smith argued that Leonardo painted the Salvator Mundi for Louis XII of France and his consort, Anne of Brittany.
+C19 [onem] [ihtiyat]
+  İDDİA: Tablo 1958'de 45 pounda, Leonardo'nun öğrencisi Giovanni Antonio Boltraffio'nun eseri olarak satılmış ve 2011'e kadar ona atfedilmiştir.
+  ALINTI: Sir Francis Cook, 4th Baronet, Cook's great-grandson, sold it at auction in 1958 for £45 (equivalent to £900 in 2025) as a work by Leonardo's pupil Giovanni Antonio Boltraffio, to whom the painting remained attributed until 2011.
+C20 [onem]
+  İDDİA: Tablo, 2005'te New Orleans'taki St. Charles Gallery müzayedesinde sanat simsarları Alexander Parish ve Robert Simon tarafından 1.175 dolara satın alınmıştır.
+  ALINTI: In 2005, the estate of Baton Rouge businessman Basil Clovis Hendry Sr. was auctioned by St. Charles Gallery in New Orleans. Lot 664 was titled "After Leonardo da Vinci: Christ Salvator Mundi". Art dealers Alexander Parish and Robert Simon, an Old Master specialist, bought it for $1,175
+C21 [onem]
+  İDDİA: Londra Ulusal Galerisi, Salvator Mundi'yi Leonardo'nun otograf eseri olarak doğruladı ve Kasım 2011'den Şubat 2012'ye kadar sergiledi.
+  ALINTI: London's National Gallery authenticated Salvator Mundi as an autograph work by Leonardo and exhibited it from November 2011 to February 2012.
+C22 [onem]
+  İDDİA: Parish, Simon ve Adelson, Salvator Mundi'yi Bouvier'ye 80 milyon dolara sattı.
+  ALINTI: Parish, Simon and Adelson sold Salvator Mundi to Bouvier for $80 million.
+C23 [onem]
+  İDDİA: Rybolovlev, tabloyu önceki sahipleri yerine Bouvier'den satın aldığının farkında olmadan 127.5 milyon dolar ödedi.
+  ALINTI: Rybolovlev paid $127.5 million, unaware that he was purchasing the painting from Bouvier instead of its previous owners.
+C24 [onem]
+  İDDİA: Tablo, 15 Kasım 2017'de New York'ta Christie's tarafından Prens Badr bin Abdullah Al Saud'a 450.3 milyon ABD dolarına satıldı.
+  ALINTI: The painting was sold at auction for US$450.3 million on 15 November 2017 by Christie's in New York to Prince Badr bin Abdullah Al Saud
+C25 [onem]
+  İDDİA: Bu satış, açık artırmada satılmış en pahalı tablo olarak yeni bir rekor kırdı.
+  ALINTI: setting a new record for the most expensive painting ever sold at public auction
+C26 [onem] [ihtiyat]
+  İDDİA: Aralık 2017'de Wall Street Journal'a göre Prens Badr, Veliaht Prens Muhammed bin Selman'ın aracısıydı; Christie's ve Suudi yetkililer ise Badr'ın Abu Dhabi Kültür ve Turizm Departmanı adına hareket ettiğini belirtti.
+  ALINTI: In December 2017, The Wall Street Journal reported that Prince Badr was an intermediary for Crown Prince Mohammed bin Salman, but Christie's and Saudi officials re-stated that Prince Badr acted on behalf of Abu Dhabi's Department of Culture and Tourism for display at the Louvre Abu Dhabi in the United Arab Emirates.
+C27 [onem]
+  İDDİA: Eylül 2018'de tablonun Louvre Abu Dhabi'de planlanan sergilenmesi süresiz olarak ertelendi.
+  ALINTI: In September 2018, the painting's scheduled exhibition at the Louvre Abu Dhabi was indefinitely postponed.
+C28 [onem]
+  İDDİA: Tablo, Al-'Ula'daki Wadi AlFann kompleksinde inşa edilecek yeni müzeye kadar depoda tutulmaktadır; kompleksin 2024'te tamamlanması bekleniyordu.
+  ALINTI: The painting is being kept in storage until a new museum is built to house it; the museum and gallery will be in a complex called Wadi AlFann in Al-'Ula, which was expected to be completed in 2024.
+C29 [onem] [ihtiyat]
+  İDDİA: Bazı önde gelen uzmanlar atfı tartışmakta ve Leonardo'nun yalnızca belirli öğelere katkıda bulunduğunu öne sürmektedir.
+  ALINTI: this attribution has been disputed by some leading specialists who propose that he only contributed certain elements
+C30 [onem] [ihtiyat]
+  İDDİA: Özgün resim yüzeyinin çoğu Boltraffio'nun olabilir; Leonardo'nun kendi elinden çıkan bölümler İsa'nın sağ kutsama eli, kolun bir kısmı, sol eli ve tuttuğu kristal küredir.
+  ALINTI: much of the original painting surface may be by Boltraffio, but with passages done by Leonardo himself, namely Christ's proper right blessing hand, portions of the sleeve, his left hand and the crystal orb he holds.
+
+### Q269342 · Kayalıklar Meryemi (leonardo-da-vinci)
+C01 [hikaye]
+  İDDİA: Tablonun konusu, küçük Vaftizci Yahya'nın çocuk İsa'ya tapınmasıdır.
+  ALINTI: The subject of the two paintings is the adoration of the Christ child by the infant John the Baptist.
+C02 [hikaye]
+  İDDİA: Bu konu, Kutsal Aile'nin Mısır'a yolculuğuna ilişkin Orta Çağ geleneğinin parçası olmuş, Kitab-ı Mukaddes'te yer almayan bir olayla ilişkilidir.
+  ALINTI: This subject relates to a non-Biblical event which became part of the medieval tradition of the Holy Family’s journey into Egypt.
+C03 [hikaye] [ihtiyat]
+  İDDİA: Efsaneye göre Yahya, Başmelek Uriel tarafından Mısır'a götürülmüş ve yolda Kutsal Aile ile karşılaşmıştır.
+  ALINTI: According to legend, John was escorted to Egypt by the Archangel Uriel, and met the holy family on the road.
+C04 [gorunen]
+  İDDİA: Tablo; Meryem'i, çocuk İsa'yı, küçük Vaftizci Yahya'yı ve bir meleği, resme olağan adını veren kayalık bir ortamda gösterir.
+  ALINTI: Both paintings show the Virgin Mary and child Jesus with the infant John the Baptist and an angel Uriel, in a rocky setting which gives the paintings their usual name.
+C05 [gorunen]
+  İDDİA: Meryem, piramidal figür grubunun tepe noktasını oluşturur; bir elini Yahya'yı da kapsayacak şekilde uzatırken diğerini çocuk İsa'nın başının üzerinde kutsama için kaldırır.
+  ALINTI: In both paintings, Mary makes the apex of the pyramidal figure group, stretching one hand to include John and raising the other above the head of the Christ child in a blessing.
+C06 [gorunen]
+  İDDİA: Yahya diz çökmüş, elleri dua duruşunda birleşmiş halde çocuk İsa'ya doğru bakmaktadır.
+  ALINTI: John kneels, gazing towards the Christ child with his hands together in an attitude of prayer.
+C07 [gorunen]
+  İDDİA: Çocuk İsa, melek tarafından desteklenerek resmin ön tarafına doğru oturur ve diz çökmüş Yahya'ya doğru sağ elini kutsama işaretiyle kaldırır.
+  ALINTI: The Christ child sits towards the front of the painting, supported by the angel, and raising his right hand in a sign of Benediction towards the kneeling John.
+C08 [gorunen]
+  İDDİA: Louvre versiyonunda meleğin eli kaldırılmıştır ve işaret parmağı Yahya'yı gösterir.
+  ALINTI: The main compositional difference between the two paintings is that while in the London painting the angel's right hand rests on his/her knee, in the Louvre painting the hand is raised, the index finger pointing at John.
+C09 [gorunen]
+  İDDİA: Louvre tablosunda meleğin gözleri, genel olarak izleyici yönüne bakacak şekilde çevrilmiştir.
+  ALINTI: The eyes of the angel are turned down in a contemplative manner in the London painting, but in the Louvre picture are turned to gaze in the general direction of the viewer.
+C10 [gorunen]
+  İDDİA: Louvre versiyonunda melek parlak kırmızı ve yeşil giysiler içindedir.
+  ALINTI: in the Louvre painting, the angel is robed in bright red and green, with the robes arranged differently from those of the angel in London.
+C11 [gorunen]
+  İDDİA: Haleler ve Yahya'nın geleneksel haç biçimli sazdan asası, Louvre versiyonunda bulunmayan geleneksel niteliklerdir.
+  ALINTI: The London version contains traditional attributes missing from the Louvre version, the haloes and John's traditional cruciform reed staff.
+C12 [gorunen]
+  İDDİA: Louvre tablosundaki çiçekler botanik açıdan doğrudur.
+  ALINTI: The details of the flowers are also quite different in the two paintings, with those in the Louvre painting being botanically accurate, and those in the London painting being fanciful creations.
+C13 [kompozisyon]
+  İDDİA: Meryem, çocuk İsa, küçük Vaftizci Yahya ve melekten oluşan dört figür, kayalık bir fon ile uzakta dağ ve su manzarası önünde üçgen bir kompozisyon içinde düzenlenmiştir.
+  ALINTI: Both paintings show a grouping of four figures, the Virgin Mary, the Christ child, the infant John the Baptist and an angel arranged into a triangular composition within the painting and set against a background of rocks, and a distant landscape of mountains and water.
+C14 [kompozisyon]
+  İDDİA: Louvre tablosundaki yüzler ve formlar daha ince işlenmiş ve sfumato ile hafifçe bulanıklaştırılmıştır.
+  ALINTI: The faces and forms in the Louvre painting are more delicately painted and subtly blurred by sfumato.
+C15 [kompozisyon] [ihtiyat]
+  İDDİA: Louvre tablosunda ışık daha yumuşaktır ve daha sıcak görünür, ancak bu yüzeydeki verniğin tonunun bir sonucu olabilir.
+  ALINTI: The lighting in the Louvre painting is softer and appears warmer, but this may be the result of the tone of the varnish on the surface.
+C16 [kompozisyon]
+  İDDİA: 1806'da Fransız restoratör Fr Hacquin, Louvre'daki Kayalıklar Meryemi'ni ahşap panosundan tuvale aktarmıştır.
+  ALINTI: In 1806, the French restorer Fr Hacquin transferred the Louvre Virgin of the Rocks from its panel onto canvas.
+C17 [kompozisyon]
+  İDDİA: Louvre versiyonu önemli bir restorasyon veya temizlik geçirmemiştir.
+  ALINTI: the Louvre version has not undergone significant restoration or cleaning.
+C18 [kompozisyon]
+  İDDİA: Tablo kalın sarı vernik katmanları altında gömülüdür; koyu alanlarda bitüm karışımı yüzeyin çamur gibi kabarıp çatlamasına yol açmıştır ve resmin her yerinde sayısız eski rötuş yaması vardır.
+  ALINTI: buried as it is under layer upon layer of thick yellow varnish. In the darks some mixture of bitumen has made the surface cake and crack like mud, and there are innumerable patches of old repaint all over the picture.
+C19 [kompozisyon] [ihtiyat]
+  İDDİA: Louvre versiyonu, Londra versiyonundan yaklaşık 8 cm daha uzundur.
+  ALINTI: It is about 8 cm (3 in) taller than the London version.
+C20 [anlam]
+  İDDİA: Meryem'in, Vaftizci Yahya tarafından tapınılan çocuk İsa ile birlikte tasviri, Rönesans Floransa'sı sanatında yaygın bir konuydu.
+  ALINTI: The subject of the Virgin Mary with the Christ child being adored by John the Baptist was common in the art of Renaissance Florence.
+C21 [anlam]
+  İDDİA: Vaftizci Yahya, Floransa'nın koruyucu azizidir ve bu şehrin sanatında sık sık tasvir edilmiştir.
+  ALINTI: John the Baptist is the patron saint of Florence and has often been depicted in the art of that city.
+C22 [anlam]
+  İDDİA: Kayalık ortam benzersizdi ve tablolara olağan adları olan Kayalıklar Meryemi adını verdi.
+  ALINTI: the setting was unprecedented and gave to the paintings their usual name of the Virgin of the Rocks.
+C23 [onem] [ihtiyat]
+  İDDİA: Bu tablonun Milano'daki 1483 tarihli bir siparişi karşılamak üzere üretildiği genel olarak kabul edilir.
+  ALINTI: It is generally accepted that this painting was produced to fulfill a commission of 1483 in Milan.
+C24 [onem]
+  İDDİA: Bu resmin ilk kesin kaydı, Fransız kraliyet koleksiyonunda bulunduğu 1625 yılına aittir.
+  ALINTI: The first certain record of this picture dates from 1625, when it was in the French royal collection.
+C25 [onem]
+  İDDİA: 1625'te, bugün Louvre'da bulunan Kayalıklar Meryemi, Fontainebleau'da Cassiano dal Pozzo tarafından görülmüştür.
+  ALINTI: In 1625 the Virgin of the Rocks now in the Louvre was seen at Fontainebleau by Cassiano dal Pozzo.
+C26 [onem] [ihtiyat]
+  İDDİA: İki tablonun varlığını açıklamada en yaygın kullanılan teoriye göre Leonardo, Louvre versiyonunu 1483 tarihli siparişi karşılamak için yapmış, sonra başka bir müşteriye satmış ve yerine Londra versiyonunu yapmıştır.
+  ALINTI: The theory that is most commonly used to explain the existence of the two paintings is that Leonardo painted the Louvre Virgin of the Rocks to fulfil the commission, giving it a date of 1483, and that he then sold it to another client, and painted the London version as a replacement.
+C27 [onem]
+  İDDİA: Tablo, 2011–12'de kısa bir süre, Leonardo'nun Ludovico Sforza sarayındaki ressamlık faaliyetine odaklanan National Gallery sergisinde Londra tablosuyla birlikte asılmıştır.
+  ALINTI: For a brief time in 2011–12 it was hung with the London painting as part of an exhibition in the National Gallery on Leonardo's activity as painter to the court of Ludovico Sforza.
+C28 [onem]
+  İDDİA: Louvre'deki Kayalıklar Meryemi'nin tamamen Leonardo da Vinci'nin elinden olduğu her zaman kabul edilmiştir.
+  ALINTI: It has always been agreed that the Louvre Virgin of the Rocks is entirely by the hand of Leonardo da Vinci.
+C29 [onem] [ihtiyat]
+  İDDİA: Louvre versiyonunun bilinen en erken doğrudan kopyalarından biri, Museo Baroffio'da bulunan ve yaklaşık 1487–90 tarihli Paliotto leonardesco adlı bir sunak örtüsüdür.
+  ALINTI: One of the earliest known direct copies of the Louvre version is actually an altar cloth called the Paliotto leonardesco (ca 1487–90) housed in the Museo Baroffio
+C30 [onem] [ihtiyat]
+  İDDİA: Taylor'a göre Louvre tablosunun ikonografisi, tablonun tamamen farklı bir müşteri çevresi için yapıldığını gösterir ve tablo 1490'lara tarihlenir.
+  ALINTI: Taylor argues that the London painting fulfils the requirements of the commission of 1483 in terms of iconography, and that the iconography of the Louvre painting indicates that it was painted for an entirely different clientele, and gives it a date in the 1490s.
+
+### Q636537 · Marat'nın Ölümü (jacques-louis-david)
+C01 [hikaye]
+  İDDİA: Tablo, ressamın dostu olan ve öldürülen Fransız devrimci lider Jean-Paul Marat'yı betimler.
+  ALINTI: depicting the artist's friend and murdered French revolutionary leader, Jean-Paul Marat
+C02 [hikaye]
+  İDDİA: Marat, 13 Temmuz 1793'te Charlotte Corday tarafından bıçaklanarak öldürülmüştür.
+  ALINTI: 13 Temmuz 1793 günü Marat'ya önemli belgelerden bahsedeceği bahanesiyle evine gelen Charlotte Corday isimli bir kadın tarafından bıçaklanarak öldürülen Marat, Panthéon'na defnedildi.
+C03 [hikaye]
+  İDDİA: Marat, cilt hastalığı nedeniyle vaktinin çoğunu küvette geçirir ve sık sık orada çalışırdı.
+  ALINTI: Marat suffered from a skin condition that caused him to spend much of his time in his bathtub; he would often work there.
+C04 [hikaye]
+  İDDİA: Corday, Marat'yı ölümcül biçimde bıçakladıktan sonra kaçmaya çalışmamış, yargılanıp idam edilmiştir.
+  ALINTI: Corday fatally stabbed Marat, but she did not attempt to flee. She was later tried and executed for the murder.
+C05 [hikaye]
+  İDDİA: Marat, öldürüldüğü sırada L'Ami du peuple gazetesinin bir provasını düzeltiyordu.
+  ALINTI: When he was murdered, Marat was correcting a proof of his newspaper L'Ami du peuple.
+C06 [hikaye]
+  İDDİA: David, Marat'yı cinayetten bir gün önce ziyaret etmiş ve olaydan etkilenerek hemen tabloyu yapmaya başlamıştır.
+  ALINTI: David, Marat'yı cinayetten bir gün önce ziyaret etmişti. Bu olaydan oldukça etkilenen sanatçı, hemen tabloyu yapmaya başlar.
+C07 [gorunen]
+  İDDİA: Eserde Marat, beyaz çarşaflı bir küvetin içinde, sağ eli aşağı sarkmış halde resmedilmiştir.
+  ALINTI: Eserde Marat beyaz çarşaflı bir küvetin içerisinde, sağ eli aşağı sarkmış halde resmedilmiş.
+C08 [gorunen]
+  İDDİA: Küvetin hemen önünde, Marat'nın çalışma masası olan yeşil örtülü küçük bir masa vardır.
+  ALINTI: Küvetin tam önünde yeşil örtülü küçük bir masa var. Bu Marat'nın çalışma masasıdır.
+C09 [gorunen]
+  İDDİA: Marat'nın sağ elinde bir tüy kalem vardır.
+  ALINTI: Marat'nın sağ elinde bir tüy kalem var.
+C10 [gorunen]
+  İDDİA: Kalemden biraz ötede, cinayetin işlendiği kanlı bıçak resmedilmiştir.
+  ALINTI: Kalemden biraz kenarda ise cinayetin işlendiği kanlı bıçak resmedilmiş.
+C11 [gorunen]
+  İDDİA: Marat'nın sol elinde, üzerinde cinayet anında sıçrayan kan lekeleri bulunan Corday'nin izin kâğıdı durur.
+  ALINTI: Marat'nın sol elinde ise Corday'nin yazdığı izin kâğıdı duruyor. Kâğıtta Fransızca "Il suffit que je sois bien malheureuse pour avoir droit a votre bienveillance" ("Benim büyük mutsuzluğum sizin hayırseverliğinize ulaşmama vesile olacaktır") yazılmıştır. Kâğıdın üstünde cinayet işlenen zaman sıçrayan kan lekeleri var.
+C12 [gorunen]
+  İDDİA: Çalışma masasının önündeki levhada Marat'nın ve ressamın adı yazar; altındaki “L’an Deux” yazısı cumhuriyetin 2. yılına işaret eder.
+  ALINTI: Çalışma masasının önündeki levhanın üzerinde Marat'nın adı ve ressamın kendi adı yazıyor. Levhanın altında yazılan “L’an Deux” cumhuriyetin 2. yılı olduğuna işarettir.
+C13 [gorunen]
+  İDDİA: Eserde katil Corday'ye yer verilmemiştir.
+  ALINTI: Corday'ye ise eserde yer verilmemiş.
+C14 [gorunen]
+  İDDİA: Marat'nın vücudunda bıçak yarasından başka, deri sorunları dahil hiçbir kusur görünmez.
+  ALINTI: Üstelik onun vücudunda bıçak yarasından başka, derisindeki sorunlar dahil hiçbir kusur gözükmüyor.
+C15 [kompozisyon]
+  İDDİA: Tablo, aşağı sarkan uzun kol benzerliğiyle Michelangelo'nun Pietà'sına benzetilir.
+  ALINTI: The Death of Marat has often been compared to Michelangelo's Pietà, a major similarity being the elongated arm hanging down in both works.
+C16 [kompozisyon]
+  İDDİA: Marat'nın yüzü ve bedeni yumuşak, parlayan bir ışıkla yıkanmıştır.
+  ALINTI: He painted Marat, martyr of the Revolution, in a style reminiscent of a Christian martyr, with the face and body bathed in a soft, glowing light.
+C17 [kompozisyon]
+  İDDİA: Marat'nın tasvir edildiği pozisyon bir Orta Çağ heykelini andırır.
+  ALINTI: Öyle ki, Marat'nın tasvir edildiği pozisyon bir Orta Çağ heykelini andırıyor.
+C18 [anlam]
+  İDDİA: David, monarşi ve Katolik Kilisesiyle uzun süredir ilişkili kutsal nitelikleri yeni Fransız Cumhuriyeti'ne aktarmayı amaçlamıştır.
+  ALINTI: David sought to transfer the sacred qualities long associated with the monarchy and the Catholic Church to the new French Republic.
+C19 [anlam]
+  İDDİA: David, Devrim'in şehidi Marat'yı Hristiyan şehitlerini andıran bir üslupla resmetmiştir.
+  ALINTI: He painted Marat, martyr of the Revolution, in a style reminiscent of a Christian martyr
+C20 [anlam]
+  İDDİA: Marat'nın pozisyonu Caravaggio'nun İsa'nın Mezara Konuluşu'ndaki İsa'nın pozisyonuyla aynıdır; ressam böylece dostunun da İsa gibi şehit olduğunu anlatmaya çalışır.
+  ALINTI: Marat'nın pozisyonu, Caravaggio'nun İsa'nın Mezara Konuluşu isimli tablosundaki İsa'nın pozisyonu ile aynıdır. Ressam bununla dostunun da İsa gibi şehit olduğunu anlatmaya çalışıyor.
+C21 [anlam]
+  İDDİA: Ressam, tüy kalem ile bıçağı karşılaştırarak gazetecilerin silahı ile Jirondenlerin silahı arasındaki farkı ortaya koyar.
+  ALINTI: Kalemle bıçağı karşılaştıran ressam, gazetecilerin silahı ile Jirondenlerin silahı arasındaki farkı ortaya koyuyor.
+C22 [anlam] [ihtiyat]
+  İDDİA: Tablodaki not, Corday'nin gerçek bir sözü değil, onun muhtemelen söylemiş olabileceği şeye dayanan kurgusal bir ifadedir.
+  ALINTI: In the painting, the note Marat is holding is not an actual quotation of Corday, but a fictional expression based on what Corday might have said.
+C23 [onem]
+  İDDİA: Sanat tarihçisi Clark, 2001'de tabloyu ilk modernist yapıt olarak nitelemiştir.
+  ALINTI: In 2001, art historian T. J. Clark called David's painting the first modernist work for "the way it took the stuff of politics as its material, and did not transmute it".
+C24 [onem] [ihtiyat]
+  İDDİA: Artforum'a göre tablo, bazı araştırmacıların modernizmi tek başına başlattığını ileri sürdüğü kadar yenilikçi bir devrim ikonudur.
+  ALINTI: According to Artforum, the painting was "a revolutionary icon so novel in its approach to painting that some scholars insist it singlehandedly inaugurated modernism."
+C25 [onem]
+  İDDİA: David'in öğrencileri 1793–1794'te tablonun çeşitli kopyalarını yapmıştır.
+  ALINTI: Several copies of the painting were made by David's pupils in 1793–1794, when the image was a popular symbol of martyrdom amid the Reign of Terror.
+C26 [onem]
+  İDDİA: David'in 1825'teki ölümünden sonra ailesi tabloyu satmaya çalışmış ancak başaramamıştır.
+  ALINTI: After David's death in 1825, his family tried unsuccessfully to sell the painting.
+C27 [onem]
+  İDDİA: Tablo, 1893'te Belçika Kraliyet Güzel Sanatlar Müzeleri tarafından edinilmiştir.
+  ALINTI: The painting was acquired by the Royal Museums of Fine Arts of Belgium in 1893.
+C28 [onem]
+  İDDİA: Proudhon ve Baudelaire'in 1845'te Bazar Bonne-Nouvelle'de gördükleri tabloyu övmesi üzerine yeniden ilgi doğmuştur.
+  ALINTI: There was renewed interest in the painting after Pierre-Joseph Proudhon and Charles Baudelaire praised the work after seeing it at the Bazar Bonne-Nouvelle in 1845.
+C29 [onem]
+  İDDİA: Tablo, 20. yüzyılda Pablo Picasso ve Edvard Munch gibi sanatçılara ilham vermiştir.
+  ALINTI: In the 20th century, David's painting inspired artists such as Pablo Picasso and Edvard Munch, poets (Alessandro Mozzambani) and writers (Peter Weiss' play Marat/Sade).
+C30 [onem]
+  İDDİA: Tabloda görünen, kan ve küvet suyu lekeleri hâlâ seçilen mektup günümüze ulaşmış ve Robert Lindsay'nin mülkiyetinde olmuştur.
+  ALINTI: The letter that appears in the painting, with blood-stains and bath water marks still visible, has survived and was owned by Robert Lindsay, 29th Earl of Crawford.
+
+### Q563727 · Meryem, Bebek İsa ve Azize Anna (leonardo-da-vinci)
+C01 [hikaye]
+  İDDİA: Tablo, Azize Anna'yı, kızı Meryem'i ve bebek İsa'yı betimler.
+  ALINTI: It depicts Saint Anne, her daughter the Virgin Mary and the infant Jesus.
+C02 [hikaye]
+  İDDİA: Meryem, annesi Azize Anna'nın dizinde oturur ve kuzuyla oynayan bebek İsa'ya uzanır.
+  ALINTI: The painting shows the Virgin Mary, sitting on the knee of her mother Saint Anne, and reaching out to baby Jesus who is playing with a lamb.
+C03 [hikaye]
+  İDDİA: Tablonun konusu, Leonardo'yu uzun süredir meşgul etmişti.
+  ALINTI: its theme had long preoccupied Leonardo
+C04 [gorunen]
+  İDDİA: Her iki kadın da, eli Tanrı Kuzusu'nu kavrayan Çocuk İsa'ya bakmaktadır.
+  ALINTI: Both women gaze at the Christ Child, whose hand grasps the Lamb of God.
+C05 [gorunen]
+  İDDİA: Meryem, annesiyle görsel olarak iç içe geçmiş halde, kurbanlık kuzuyu sıkıca tutan oğlunu durdurmaya çalışır.
+  ALINTI: Visually interlocked with her mother, Mary attempts to restrain her son as he clutches the sacrificial Lamb.
+C06 [gorunen]
+  İDDİA: Tabloda Azize Anna'nın Meryem'den tam bir kuşak yaşlı olup olmadığını ayırt etmek zordur.
+  ALINTI: In both versions of the composition (the Louvre painting and the London cartoon) it is hard to discern whether Saint Anne is a full generation older than Mary.
+C07 [kompozisyon]
+  İDDİA: Tablo, tamamlanmamış bir yağlıboya çalışmadır.
+  ALINTI: is an unfinished oil painting by High Renaissance artist Leonardo da Vinci
+C08 [kompozisyon] [ihtiyat]
+  İDDİA: 2008'de bir Louvre küratörü, tablonun arka yüzünde Leonardo'ya ait olduğu düşünülen birkaç soluk eskiz buldu.
+  ALINTI: In 2008, a curator at the Louvre discovered several faint sketches believed to have been made by Leonardo on the back of the painting.
+C09 [kompozisyon]
+  İDDİA: Kızılötesi reflektografi, Leonardo'nun Anghiari Savaşı'ndan önce yaptığı at eskizlerine benzeyen 7'ye 4 inçlik bir at başı çizimi ortaya çıkardı.
+  ALINTI: Infrared reflectography was used to reveal a "7–by–4 inch drawing of a horse's head", which had a resemblance to sketches of horses that Leonardo had made previously before drawing The Battle of Anghiari.
+C10 [kompozisyon]
+  İDDİA: Arka yüzde, kafatasının yarısını betimleyen bir eskiz daha ortaya çıkarıldı.
+  ALINTI: Also revealed was a second sketch 61⁄2 inch–by–4  inch depiction of half a skull.
+C11 [kompozisyon]
+  İDDİA: Kuzuyla oynayan bebek İsa'yı gösteren bir eskiz de tablonun ön yüzündeki betimlemeye benziyordu.
+  ALINTI: A third sketch showed the infant Jesus playing with a lamb, which sketch was similar to that which is painted on the front side.
+C12 [anlam]
+  İDDİA: İsa'nın kavradığı kurbanlık kuzu, onun Çilesi'ni simgeler.
+  ALINTI: Christ is shown grasping a sacrificial lamb symbolizing his Passion.
+C13 [anlam] [ihtiyat]
+  İDDİA: Freud'a göre Meryem'in giysisi, yana doğru bakıldığında bir akbaba biçimi gösterir.
+  ALINTI: According to Freud, the Virgin's garment reveals a vulture when viewed sideways.
+C14 [anlam] [ihtiyat]
+  İDDİA: Sanat tarihçisi Tom Gurney'ye göre tabloda, annesinden rehberlik arayan küçük çocuğun tatlılığının keyfini çıkaran iki kadının oluşturduğu neşeli bir atmosfer vardır.
+  ALINTI: Art historian Tom Gurney describes "a joyful atmosphere within the painting, as the two women enjoy the sweetness of the young boy who looks on for guidance from his mother."
+C15 [anlam] [ihtiyat]
+  İDDİA: Anderson'a göre İsa'nın soyu, Meryem'in nispeten genç bir Azize Anna'nın kucağında oturmasıyla canlı biçimde ifade edilir.
+  ALINTI: Academic Michael Alan Anderson describes the painting:"In this well-known work of astonishing realism, the lineage of Jesus is vividly expressed as Mary is seated on the lap of a relatively young St. Anne.
+C16 [onem]
+  İDDİA: Tablo, Floransa'daki Santissima Annunziata Kilisesi için yüksek sunak tablosu olarak sipariş edildi.
+  ALINTI: The painting was commissioned as the high altarpiece for the Church of Santissima Annunziata in Florence
+C17 [onem] [ihtiyat]
+  İDDİA: Tablo, muhtemelen 1499'da kızının doğumundan sonra Fransa Kralı XII. Louis tarafından sipariş edildi, ancak ona hiç teslim edilmedi.
+  ALINTI: It is likely that the painting was commissioned by King Louis XII of France following the birth of his daughter in 1499, but never delivered to him.
+C18 [onem] [ihtiyat]
+  İDDİA: Louvre sözcüsü, eskizlerin çok büyük olasılıkla Leonardo tarafından yapıldığını söyledi.
+  ALINTI: The Louvre spokesperson said that the sketches were "very probably" made by Leonardo
+C19 [onem]
+  İDDİA: Louvre sözcüsü, Leonardo'nun bir eserinin arka yüzünde ilk kez çizim bulunduğunu belirtti.
+  ALINTI: it was the first time that any drawing had been found on the "flip side of one of his works"
+C20 [onem]
+  İDDİA: 7 Ekim 2011'de Paris sanat yayını Le Journal des arts, restorasyonun tabloyu önceden beklenenden daha fazla tehlikeye attığını bildirdi.
+  ALINTI: On 7 October 2011 Le Journal des arts, a Paris art publication, reported that the restoration posed more danger to the painting than was previously expected.
+C21 [onem]
+  İDDİA: Restorasyonu denetleyen danışma kurulu üyeleri, tablonun temizlenmesi tartışması üzerine istifa etti.
+  ALINTI: both of the advisory committee supervising the painting's restoration, had resigned over a painting cleaning controversy
+C22 [onem] [ihtiyat]
+  İDDİA: Eleştirmenler, tablonun temizlenerek sanatçının hiç amaçlamadığı kadar parlaklaştırıldığını ve zarar gördüğünü öne sürdü.
+  ALINTI: with critics claiming that the painting has been damaged by being cleaned so it became brighter than the artist ever intended
+C23 [onem]
+  İDDİA: Diğer uzmanlar ise temizleme işlemine destek verdi.
+  ALINTI: Other experts spoke out in favour of the cleaning treatment.
+C24 [onem]
+  İDDİA: Çizimler, tablo restorasyondan geçerken bir uzman grubu tarafından daha ayrıntılı incelenecektir.
+  ALINTI: The drawings will be further studied by a group of experts as the painting undergoes restoration.
+
+### Q533619 · Felemenk Atasözleri (pieter-bruegel-yasl)
+C01 [hikaye]
+  İDDİA: Tablo, insanların ve daha az ölçüde hayvanlar ile nesnelerin Felemenkçe atasözlerini ve deyimleri birebir canlandırdığı bir sahne sunar.
+  ALINTI: depicts a scene in which humans and, to a lesser extent, animals and objects, offer literal illustrations of Dutch-language proverbs and idioms
+C02 [hikaye]
+  İDDİA: Atasözleri Bruegel'in zamanında ve öncesinde çok popülerdi; tablodan yüz yıl önce atasözü resimlemeleri Felemenk dua kitaplarında yaygındı.
+  ALINTI: Proverbs were very popular in Bruegel's time and before; a hundred years before Bruegel's painting, illustrations of proverbs had been popular in the Flemish books of hours.
+C03 [hikaye]
+  İDDİA: Hollandalı hümanist Desiderius Erasmus'un Adagia'sı da dahil olmak üzere birçok atasözü derlemesi yayımlanmıştı.
+  ALINTI: A number of collections were published, including Adagia, by the Dutch humanist Desiderius Erasmus.
+C04 [hikaye] [ihtiyat]
+  İDDİA: Felemenkli sanatçı Frans Hogenberg, Bruegel'in tablosuyla yaklaşık aynı dönemde, 1558 civarında 43 atasözünü resimleyen bir gravür yapmıştır.
+  ALINTI: The Flemish artist Frans Hogenberg made an engraving illustrating 43 proverbs in around 1558, roughly the same time as Bruegel's painting.
+C05 [hikaye] [ihtiyat]
+  İDDİA: Sahnede yaklaşık 126 tanımlanabilir atasözü ve deyim vardır; Bruegel, dil değişimi nedeniyle belirlenemeyen başkalarını da katmış olabilir.
+  ALINTI: There are approximately 126 identifiable proverbs and idioms in the scene, although Bruegel may have included others which cannot be determined because of the language change.
+C06 [hikaye]
+  İDDİA: Tablodaki atasözlerinden bazıları hâlâ yaygın kullanımdadır: 'Akıntıya karşı yüzmek', 'Kafasını tuğla duvara vurmak' ve 'Dişine kadar silahlanmak'.
+  ALINTI: Some of those incorporated in the painting are still in popular use, for instance "Swimming against the tide", "Banging one's head against a brick wall" and "Armed to the teeth".
+C07 [hikaye]
+  İDDİA: Birçok atasözü kullanımdan düştüğü için tablonun çözümlenmesi zorlaşmaktadır.
+  ALINTI: Many more have faded from use, which makes analysis of the painting harder.
+C08 [gorunen]
+  İDDİA: Resimdeki insan figürlerinin çoğu, Bruegel'in ahmakları betimlemek için kullandığı karakteristik boş yüz ifadesine sahiptir.
+  ALINTI: Many of the people depicted show the characteristic blank features that Bruegel used to portray fools.
+C09 [gorunen]
+  İDDİA: Tablonun ortasında, özgün başlığa konu olan mavi pelerin bir adamın karısı tarafından ona giydirilmektedir.
+  ALINTI: The Blue Cloak, the piece's original title, features in the centre of the piece and is being placed on a man by his wife, indicating that she is cuckolding him.
+C10 [gorunen]
+  İDDİA: Bir adam, danası öldükten sonra bir göleti doldurmaktadır.
+  ALINTI: A man fills in a pond after his calf has died.
+C11 [gorunen]
+  İDDİA: Mavi pelerinli merkezi figürün hemen üstünde, bir başka adam gün ışığını bir sepette taşır.
+  ALINTI: Just above the central figure of the blue-cloaked man, another man carries daylight in a basket.
+C12 [gorunen]
+  İDDİA: Resmin alt orta-sol kısmında koyun kırkan bir adam, domuz kırkan bir adamın yanında oturur.
+  ALINTI: such as the man shearing a sheep in the centre bottom left of the picture. He is sitting next to a man shearing a pig
+C13 [kompozisyon]
+  İDDİA: Eleştirmenler, kompozisyonu düzenli betimlemesi ve bütünleşmiş sahnesi için övmüştür.
+  ALINTI: Critics have praised the composition for its ordered portrayal and integrated scene.
+C14 [kompozisyon]
+  İDDİA: Tablo, alt çizimini diğer versiyonlarla karşılaştırmak amacıyla röntgenle incelenmiştir.
+  ALINTI: has been x-rayed for its underdrawing to compare it to other versions
+C15 [kompozisyon] [ihtiyat]
+  İDDİA: Bruegel araştırmacılarınca, versiyonların tümünün Berlin versiyonundakiyle aynı alt çizime sahip gerçek boyutlu bir ön taslak (cartoon) kullandığına inanılmaktadır.
+  ALINTI: Bruegel scholars believe that the paintings are the elder Bruegel's inventions, which all make use of a life-size cartoon with the same underdrawing as that used in the Berlin version.
+C16 [anlam]
+  İDDİA: Eserin özgün adı olan Mavi Pelerin ya da Dünyanın Ahmaklığı, Bruegel'in amacının yalnızca atasözlerini resimlemek değil insan ahmaklığını kataloglamak olduğunu gösterir.
+  ALINTI: Its original title, The Blue Cloak or The Folly of the World, indicates that Bruegel's intent was not just to illustrate proverbs, but rather to catalogue human folly.
+C17 [anlam]
+  İDDİA: Kadının kocasına mavi pelerin giydirmesi, onu aldattığı anlamına gelir.
+  ALINTI: is being placed on a man by his wife, indicating that she is cuckolding him
+C18 [anlam]
+  İDDİA: Yan yana oturan koyun ve domuz kırkan adamlar, birinin diğerine göre avantajlı olduğunu anlatan 'Biri koyun kırkar, diğeri domuz kırkar' deyimini temsil eder.
+  ALINTI: He is sitting next to a man shearing a pig, so represents the expression "One shears sheep and one shears pigs", meaning that one has the advantage over the other
+C19 [anlam] [ihtiyat]
+  İDDİA: Koyun kırkan figür, eldeki imkânlardan en iyi şekilde yararlanmayı öğütleyen 'Kırk onları ama derilerini yüzmeyin' sözünü de temsil ediyor olabilir.
+  ALINTI: but may also represent the advice "Shear them but don't skin them", meaning make the most of available assets
+C20 [anlam] [ihtiyat]
+  İDDİA: Bazı figürler birden fazla deyimi temsil ediyor görünmektedir; bunun Bruegel'in niyeti olup olmadığı bilinmemektedir.
+  ALINTI: Some of the figures seem to represent more than one figure of speech (whether this was Bruegel's intention or not is unknown)
+C21 [anlam]
+  İDDİA: Tabloda yer alan 'Çatısını turtalarla kaplatmak' deyimi, her şeye bol miktarda sahip olmayı ifade eder.
+  ALINTI: "Having one's roof tiled with tarts", for example, which meant to have an abundance of everything
+C22 [anlam]
+  İDDİA: Mavi pelerinli adamın hemen üstündeki figürün günlerini sepette taşıması, zamanını boşuna harcamayı anlatır.
+  ALINTI: mavi pelerinli adamın hemen üstündeki bir başkası günlerini sepette taşır (zamanını boşuna harcar)
+C23 [onem] [ihtiyat]
+  İDDİA: 1559 tarihli tablo, bir zamanlar tümü Yaşlı Pieter Bruegel'e atfedilmiş olan benzer tablolar serisinin en iyisi olarak kabul edilir.
+  ALINTI: The painting, dated 1559, is considered the best of a series of similar paintings which at one time or another have all previously been attributed to Pieter Bruegel the Elder
+C24 [onem]
+  İDDİA: Versiyonların hiçbirinin sahiplik geçmişi 19. yüzyılın sonlarından daha eskiye gitmemektedir.
+  ALINTI: None of the versions have a provenance going back further than the late 19th century
+C25 [onem] [ihtiyat]
+  İDDİA: Felemenk Atasözleri'nin, Bruegel'in atasözü temalı ilk büyük boyutlu tablosu olduğu düşünülmektedir.
+  ALINTI: Netherlandish Proverbs is thought to have been his first large-scale painting on the theme.
+C26 [onem]
+  İDDİA: Tablo, 1914'ten beri Gemäldegalerie Berlin koleksiyonunda yer almaktadır.
+  ALINTI: collection (P195): Gemäldegalerie Berlin (Q165631) [start time: 1914]
+C27 [onem]
+  İDDİA: Tablo, Fleet Foxes'un kendi adını taşıyan ilk albümünün (2008) kapağında yer almaktadır.
+  ALINTI: The painting is featured on the album cover of Fleet Foxes' self-titled first full-length album (2008).
+C28 [onem]
+  İDDİA: Breitenbach'ın 1975 tarihli Proverbidioms tablosu, İngilizce atasözleri ve deyimleri betimlemek için bu Felemenk tablosundan esinlenmiştir.
+  ALINTI: T. E. Breitenbach's 1975 painting Proverbidioms was inspired by this Dutch painting to depict English proverbs and idioms.
+C29 [onem]
+  İDDİA: Tablonun piksel-art bir versiyonu, Mark Ffrench'in geliştirip Divide the Plunder'ın yayımladığı 2024 tarihli 'Proverbs' video oyununda yer alır.
+  ALINTI: A pixel-art version of the painting is featured in the 2024 video game "Proverbs", developed by Mark Ffrench and published by Divide the Plunder.
+
+### Q328079 · Sistina Madonnası (raphael)
+C01 [hikaye]
+  İDDİA: Yapıtın ana konusu Meryem ve Çocuk İsa'dır (Madonna and Child).
+  ALINTI: main subject (P921): Madonna and Child (Q9309699)
+C02 [hikaye]
+  İDDİA: Tabloda Meryem, Çocuk İsa'yı tutarken iki yanında Aziz Sixtus ve Aziz Barbara ile birlikte gösterilir.
+  ALINTI: the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara
+C03 [gorunen]
+  İDDİA: Meryem bulutlar üzerinde durur; arkasında onlarca silik putto, altında dirseklerine yaslanmış iki belirgin kanatlı putto bulunur.
+  ALINTI: In the painting the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara, stands on clouds before dozens of obscured putti, while two distinctive winged putti rest on their elbows beneath her.
+C04 [gorunen]
+  İDDİA: Resmin en altında, sunağın üst kenarı olduğu belirtilen yere iki figür yaslanır.
+  ALINTI: the two that lean on the altar top indicated at the very bottom of the picture
+C05 [gorunen]
+  İDDİA: Resmin üst kısmında yeşil bir draperi yer alır.
+  ALINTI: malachite mixed with orpiment in the green drapery on top of the painting
+C06 [kompozisyon]
+  İDDİA: Tablo 265 × 196 cm ölçülerindedir.
+  ALINTI: The oil on canvas painting measures 265 cm by 196 cm.
+C07 [kompozisyon]
+  İDDİA: Pigment analizi, tabloda Rönesans döneminin olağan pigmentlerinin kullanıldığını ortaya koyar.
+  ALINTI: Pigment analysis of the painting reveals the usual pigments of the Renaissance period
+C08 [kompozisyon]
+  İDDİA: Resmin üstündeki yeşil draperide malahit, zırnık (orpiment) ile karıştırılmıştır.
+  ALINTI: malachite mixed with orpiment in the green drapery on top of the painting
+C09 [kompozisyon]
+  İDDİA: Meryem'in mavi kaftanında doğal ultramarin, kurşun beyazıyla karıştırılmıştır.
+  ALINTI: natural ultramarine mixed with lead white in the blue robe of Madonna
+C10 [onem]
+  İDDİA: Yapıt, Yüksek Rönesans akımı içinde yer alır.
+  ALINTI: movement (P135): High Renaissance (Q1474884)
+C11 [anlam]
+  İDDİA: Tablo, Papa II. Julius tarafından merhum amcası Papa Sixtus IV onuruna sipariş edilmiştir.
+  ALINTI: commissioned by Pope Julius II in honor of his late uncle, Pope Sixtus IV
+C12 [anlam] [ihtiyat]
+  İDDİA: 1912 tarihli Fra Magazine makalesine göre Raphael, modelinin izlemeye gelen çocuklarının duruşundan etkilenerek onları tabloya gördüğü gibi eklemiştir.
+  ALINTI: According to a 1912 article in Fra Magazine, when Raphael was painting the Madonna the children of his model would come in to watch. Struck by their posture as they did, the story goes, he added them to the painting exactly as he saw them.
+C13 [anlam] [ihtiyat]
+  İDDİA: 1912'de St. Nicholas Magazine'de anlatılan başka bir hikâyeye göre Raphael, bir fırın dükkânının vitrinine özlemle bakan iki çocuktan esinlenmiştir.
+  ALINTI: Another story, recounted in 1912 in St. Nicholas Magazine, says that Raphael was inspired by two children he encountered on the street when he saw them "looking wistfully into the window of a baker's shop."
+C14 [anlam] [ihtiyat]
+  İDDİA: 18. yüzyılın son on yıllarında ortaya çıkan 'Raphael'in Rüyası' efsanesine göre Raphael, ilahi Meryem'ini sunmasını sağlayan cennetten bir vizyon almıştır.
+  ALINTI: the Germans implicitly tied the image into a legend of their own, "Raphael's Dream." Arising in the last decades of the 18th century, the legend—which made its way into a number of stories and even a play—presents Raphael as receiving a heavenly vision that enabled him to present his divine Madonna.
+C15 [onem]
+  İDDİA: Tablo, 1512'de Papa II. Julius tarafından Piacenza'daki San Sisto kilisesi için sipariş edilmiştir.
+  ALINTI: The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza
+C16 [onem]
+  İDDİA: Tablo, Raphael'in resmettiği son Meryem'lerden biridir.
+  ALINTI: The canvas was one of the last Madonnas painted by Raphael.
+C17 [onem]
+  İDDİA: Giorgio Vasari tabloyu 'gerçekten nadir ve olağanüstü bir yapıt' diye nitelemiştir.
+  ALINTI: Giorgio Vasari called it "a truly rare and extraordinary work".
+C18 [onem]
+  İDDİA: 1754'te Polonyalı III. Augustus tabloyu 110.000–120.000 franka satın almış ve tablo Dresden'e taşınarak yeni bir ün kazanmıştır.
+  ALINTI: In 1754, Augustus III of Poland purchased the painting for 110,000 – 120,000 francs, whereupon it was relocated to Dresden and achieved new prominence
+C19 [onem]
+  İDDİA: Bu bedel, onlarca yıl boyunca herhangi bir tabloya ödenen en yüksek bedel olarak kalmıştır.
+  ALINTI: this was to remain the highest price paid for any painting for many decades
+C20 [onem] [ihtiyat]
+  İDDİA: Augustus'un tabloyu daha iyi sergilemek için tahtını taşıttığı söylenir.
+  ALINTI: as it is said that Augustus moved his throne in order to better display it
+C21 [onem]
+  İDDİA: Johann Joachim Winckelmann, 1764 tarihli popüler ve etkili Geschichte der Kunst des Alterthums adlı yapıtında tabloyu özellikle yüceltmiştir.
+  ALINTI: The Sistine Madonna was notably celebrated by Johann Joachim Winckelmann in his popular and influential Geschichte der Kunst des Alterthums (1764)
+C22 [onem]
+  İDDİA: Tablo Goethe, Wagner ve Nietzsche'yi etkilemiştir.
+  ALINTI: The picture influenced Goethe, Wagner and Nietzsche
+C23 [onem]
+  İDDİA: Tablo, II. Dünya Savaşı'nda Dresden'in bombalanmasından kurtarılmıştır.
+  ALINTI: Sistine Madonna was rescued from destruction during the bombing of Dresden in World War II
+C24 [onem]
+  İDDİA: Tablo, diğer sanat yapıtlarıyla birlikte Saksonya İsviçresi'ndeki bir tünelde saklanmış; Kızıl Ordu onları bulunca yanına almıştır.
+  ALINTI: The painting was stored, with other works of art, in a tunnel in Saxon Switzerland; when the Red Army encountered them, it took them.
+C25 [onem]
+  İDDİA: 1955'te, Joseph Stalin'in ölümünden sonra Sovyetler, sanat yapıtlarını Almanya'ya iade etmeye karar vermiştir.
+  ALINTI: But in 1955, after the death of Joseph Stalin, the Soviets decided to return the art to Germany
+C26 [onem]
+  İDDİA: Uluslararası tartışmada dünya basını Dresden koleksiyonunun Sovyet depolamasında zarar gördüğünü öne sürmüş, Sovyetler ise yapıtları kurtardıklarını savunmuştur.
+  ALINTI: There followed some international controversy, with press around the world stating that the Dresden art collection had been damaged in Soviet storage. Soviets countered that they had in fact saved the pieces.
+C27 [onem]
+  İDDİA: Mikhail Savitsky'nin Partisan Madonna of Minsk ve Mai Dantsig'in And the Saved World Remembers adlı Sovyet tabloları Sistina Madonnası'na dayanmaktadır.
+  ALINTI: Soviet paintings Partisan Madonna of Minsk by Mikhail Savitsky and And the Saved World Remembers by Mai Dantsig are based on the Sistine Madonna.
+C28 [onem]
+  İDDİA: Almanya'ya dönüşünden sonra tablo, Gemäldegalerie Alte Meister'de yeniden sergilenmeye konmuştur.
+  ALINTI: After its return to Germany, the painting was restored to display in the Gemäldegalerie Alte Meister
+C29 [onem]
+  İDDİA: Dresden galerisi, 26 Mayıs – 26 Ağustos 2012 arasında tablonun 500. yılını kutlamıştır.
+  ALINTI: From 26 May to 26 August 2012, the Dresden gallery celebrated the 500th anniversary of the painting.
+C30 [onem]
+  İDDİA: Meryem'in altındaki kanatlı melekler, tablonun öne çıkan bir ögesi olarak kendi başlarına ünlüdür.
+  ALINTI: A prominent element within the painting, the winged angels beneath Mary are famous in their own right.
+
+### Q1231009 · Napolyon'un Taç Giyme Töreni (Le Sacre de Napoléon) (jacques-louis-david)
+C01 [hikaye]
+  İDDİA: Tablo, 2 Aralık 1804'te Notre Dame Katedrali'ndeki törende Napolyon'un eşi Joséphine de Beauharnais'ye taç giydirdiği anı betimler.
+  ALINTI: Tablo, 2 Aralık 1804 tarihinde Notre Dame Katedrali'nde düzenlenen taç giyme töreninde Napolyon'un eşi Joséphine de Beauharnais'ye taç giydirdiği anı çizmektedir.
+C02 [hikaye]
+  İDDİA: Napolyon, 1801 Konkordatosu'nun ardından rejiminin meşruiyetini güçlendirmek için Papa VII. Pius'u taç giyme törenine davet etti.
+  ALINTI: In order to reinforce the legitimacy of his regime following the Concordat of 1801, Napoleon invited Pope Pius VII to attend the coronation, which the Pope agreed to do.
+C03 [hikaye]
+  İDDİA: Papa VII. Pius taç giyme törenini kutsamakla yetindi.
+  ALINTI: Pope Pius VII (1742–1823), who was content to bless the coronation.
+C04 [hikaye]
+  İDDİA: Joséphine tacı papanın değil, kocasının ellerinden aldı.
+  ALINTI: Joséphine de Beauharnais (1763–1814) is kneeling in a submissive position, as called for in the French Civil Code. She received the crown from the hands of her husband, not the pope.
+C05 [hikaye]
+  İDDİA: Napolyon'un annesi Maria Letizia, Napolyon'un Lucien ve Joseph ile arasındaki anlaşmazlığı protesto etmek için törene katılmadı.
+  ALINTI: Maria Letizia Ramolino (1750–1836), mother of Napoleon, was placed in the stands by the painter. She occupies a place more important than the pope. Actually, she did not attend the ceremony in order to protest the friction of Napoleon with his brothers, Lucien and Joseph.
+C06 [gorunen]
+  İDDİA: Napolyon, Roma imparatorlarınkine benzer taç giyme cübbeleri içinde ayakta durur.
+  ALINTI: Napoleon I (1769–1821) is standing, dressed in coronation robes similar to those of Roman emperors.
+C07 [gorunen]
+  İDDİA: Joséphine, Fransız Medeni Kanunu'nun gerektirdiği gibi boyun eğen bir pozisyonda diz çökmüştür.
+  ALINTI: Joséphine de Beauharnais (1763–1814) is kneeling in a submissive position, as called for in the French Civil Code.
+C08 [gorunen]
+  İDDİA: Ressam Jacques-Louis David de tabloda tribünde betimlenmiştir.
+  ALINTI: The painter Jacques-Louis David is depicted in the stands as well.
+C09 [gorunen]
+  İDDİA: Taht bölümünün sol üst tarafında, 1802-1806'da Paris Büyükelçiliği yapan Osmanlı Halet Efendi resmedilmiştir.
+  ALINTI: Eserde tahtın bulunduğu kısmın sol üst tarafında, 1802-1806 yılları arasında Paris Büyükelçiliği yapmış bir Osmanlı olan Halet Efendi de resmedilmiştir.
+C10 [gorunen]
+  İDDİA: Rum-Mısırlı keşiş Dom Raphaël de Monachis, din adamları arasında, piskoposun sağında, sakallı ve kırmızı başlıklı olarak betimlenmiştir.
+  ALINTI: Dom Raphaël de Monachis, a Greek-Egyptian monk and member of the Institut d'Égypte, is depicted among the clergymen, standing to the right of the Bishop, with a beard and a red hood.
+C11 [gorunen]
+  İDDİA: Önde, Joséphine'in hemen arkasında, izleyicinin bakış açısından sağda duran kadın elbise taşıyıcısı Elisabeth-Hélène-Pierre de Montmorency-Laval'dır.
+  ALINTI: The female robe bearer in front, right behind Josephine, on the right side from the viewer's point of view, is Elisabeth-Hélène-Pierre de Montmorency-Laval, mother of politician Sosthènes II de La Rochefoucauld.
+C12 [kompozisyon]
+  İDDİA: Kompozisyon birkaç eksen etrafında düzenlenmiştir ve neoklasisizm kurallarını içerir.
+  ALINTI: The composition is organized around several axes, and incorporates the rules of neoclassicism.
+C13 [kompozisyon]
+  İDDİA: Haçtan geçen dikey bir eksen ve papadan imparatoriçeye uzanan diyagonal bir çizgi vardır.
+  ALINTI: One axis is that which passes through the cross and has a vertical orientation. A diagonal line runs from the pope to the empress.
+C14 [kompozisyon]
+  İDDİA: Tüm bakışlar, kompozisyonun merkezi olan Napolyon'a çevrilmiştir.
+  ALINTI: All eyes are turned towards Napoleon, who is the center of the composition.
+C15 [kompozisyon]
+  İDDİA: Napolyon, Pius ve Joséphine, sunağa doğru basamaklar üzerinde profilden betimlenmiştir.
+  ALINTI: Napoleon, Pius, and Josephine are illustrated in profile upon the steps towards the altar.
+C16 [kompozisyon] [ihtiyat]
+  İDDİA: Tabloda, Napolyon'un tacı kendi başının üzerinde tuttuğu ilk tasarımın izleri olabilir.
+  ALINTI: In the actual painting, it is possible to see the outline of what was originally painted: Napoleon holding the crown above his own head, as if placing it on himself.
+C17 [kompozisyon]
+  İDDİA: Kutsal Makam'ın arması soldaki görevlilerin üzerine asılmışken, Notre-Dame'ın Pietà'sı tuvalin en sağ kenarında kısmen görünür.
+  ALINTI: The Emblem of the Holy See is hung above the attendants to the left while La Pietà de Notre-Dame de Paris is partially seen at the rightmost edge of the canvas.
+C18 [kompozisyon]
+  İDDİA: Yağlıboya tablo neredeyse 10 metre genişliğinde ve 6 metreden biraz fazla yüksekliktedir.
+  ALINTI: The oil painting has imposing dimensions – it is almost 10 metres (33 ft) wide by a little over 6 metres (20 ft) tall.
+C19 [anlam] [ihtiyat]
+  İDDİA: Joséphine'in ipekle bezenmiş elbisesinin, Devrim'in zarar verdiği Lyon ipek üreticilerine destek mesajı taşıması amaçlanmış olabilir.
+  ALINTI: Her robe is decorated with silk and was possibly intended to convey support of the Lyon silk manufacturers the Revolution had harmed.
+C20 [anlam]
+  İDDİA: VII. Pius'un elini kutsama jestiyle kaldırır biçimde gösterilmesi, onun törendeki yalnızca törensel rolünü vurgular.
+  ALINTI: the depiction of Pius VII was adjusted to show him raising his hand in a gesture of blessing, emphasizing his solely ceremonial role in the event.
+C21 [onem]
+  İDDİA: Eser, Napolyon tarafından Eylül 1804'te sözlü olarak sipariş edildi ve David 21 Aralık 1805'te çalışmaya başladı.
+  ALINTI: The work was commissioned by Napoleon orally in September 1804, and Jacques-Louis David started work on it on 21 December 1805 in the former chapel of the College of Cluny, near the Sorbonne, which served as a workshop.
+C22 [onem]
+  İDDİA: David, öğrencisi Georges Rouget'nin yardımıyla son rötuşları Ocak 1808'de yaptı.
+  ALINTI: Assisted by his student Georges Rouget, he put the finishing touches in January 1808.
+C23 [onem]
+  İDDİA: Eser, 7 Şubat ile 22 Mart 1808 arasında Louvre'daki 1808 Salonu'nda sergilendi.
+  ALINTI: From 7 February to 22 March 1808, the work was exhibited at the Salon of 1808 at the Louvre, and it was presented to the Salon decennial prize competition at the Salon of 1810.
+C24 [onem]
+  İDDİA: Tablo, 1819'da Kraliyet Müzeleri'ne devredilene kadar David'in mülkiyetinde kaldı ve orada 1837'a kadar depoda tutuldu.
+  ALINTI: The painting remained the property of David until 1819 when it was transferred to the Royal Museums, where it was stored in the reserves until 1837.
+C25 [onem]
+  İDDİA: 1889'da tablo Versay'dan Louvre'a taşındı.
+  ALINTI: In 1889, the painting was transferred to the Louvre from Versailles.
+C26 [onem]
+  İDDİA: Napolyon, 1808'de David'in atölyesinde tamamlanan tabloyu görünce büyülenmiş ve minnettarlığını dile getirmiştir.
+  ALINTI: In 1808, when Napoleon discovered the canvas completed in the workshop of David, he was enthralled and expressed his gratitude.
+C27 [onem]
+  İDDİA: Tablo, Louis-Léopold Boilly'nin 1810'da yaptığı ve Metropolitan Museum of Art koleksiyonunda bulunan bir resme konu olmuştur.
+  ALINTI: The painting is a subject of The Public Viewing David's 'Coronation' at the Louvre, a painting by Louis-Léopold Boilly done in 1810, in the collection of the Metropolitan Museum of Art in New York.
+C28 [onem]
+  İDDİA: Ridley Scott'ın 2023 tarihli Napoleon filmi, taç giyme sahnesinde tabloyu yeniden canlandırdı.
+  ALINTI: The 2023 Ridley Scott film Napoleon recreated the painting in the scene depicting the coronation of Napoleon.
+
+### Q59201 · Napolyon Alpleri Geçerken (jacques-louis-david)
+C01 [hikaye]
+  İDDİA: Napolyon, 9 Kasım 1799'da 18 Brumaire sırasında Fransa'da iktidarı ele geçirmişti.
+  ALINTI: Having taken power in France during the 18 Brumaire on 9 November 1799
+C02 [hikaye]
+  İDDİA: 1800 ilkbaharında Napolyon, Rezerv Ordusu'nu Büyük Saint Bernard Geçidi üzerinden Alpler'den geçirdi.
+  ALINTI: In the spring of 1800 he led the Reserve Army across the Alps through the Great St Bernard Pass.
+C03 [hikaye]
+  İDDİA: Rezerv Ordusu, 9 Haziran'da Montebello'da bir muharebe verdi ve ardından Marengo Muharebesi'nde kesin bir zafer kazandı.
+  ALINTI: The Reserve Army fought a battle at Montebello on 9 June before eventually securing a decisive victory at the Battle of Marengo.
+C04 [hikaye]
+  İDDİA: Kompozisyon, Napolyon ve ordusunun Mayıs 1800'de Alpler'deki Büyük Saint Bernard Geçidi üzerinden yaptığı gerçek geçişin güçlü biçimde idealize edilmiş bir görünümünü sunar.
+  ALINTI: the composition shows a strongly idealised view of the real crossing that Napoleon and his army made along the Alps through the Great St Bernard Pass in May 1800
+C05 [hikaye]
+  İDDİA: Gerçekte geçiş güzel bir havada yapılmıştı ve Bonaparte'ı katıra binmiş bir rehber karşıya geçirmişti.
+  ALINTI: In reality the crossing had been made in fine weather and Bonaparte had been led across by a guide mounted on a mule.
+C06 [gorunen]
+  İDDİA: Bonaparte, başkomutan üniformasıyla at üstünde görünür; altın işlemeli iki köşeli bir şapka takar ve Memlük tarzı bir kılıçla silahlanmıştır.
+  ALINTI: Bonaparte appears mounted in the uniform of a general in chief, wearing a gold-trimmed bicorne, and armed with a Mamluk-style sabre.
+C07 [gorunen]
+  İDDİA: Bonaparte'ın başı izleyiciye dönüktür; sağ eliyle dağ zirvesine işaret ederken sol eliyle atının dizginlerini kavrar.
+  ALINTI: His head is turned towards the viewer, and he gestures with his right hand toward the mountain summit. His left hand grips the reins of his steed.
+C08 [gorunen]
+  İDDİA: At arka ayakları üzerinde şahlanır; yelesi ve kuyruğu, Napolyon'un pelerinini şişiren aynı rüzgârla gövdesine savrulur.
+  ALINTI: The horse rears up on its back legs, its mane and tail whipped against its body by the same wind that inflates Napoleon's cloak.
+C09 [gorunen]
+  İDDİA: Arka planda, topçu birlikleriyle aralıklı bir asker hattı dağa doğru ilerler.
+  ALINTI: In background a line of the soldiers interspersed with artillery make their way up the mountain.
+C10 [gorunen]
+  İDDİA: Ön plandaki kayalara BONAPARTE, HANNIBAL ve KAROLVS MAGNVS IMP. adları kazınmıştır.
+  ALINTI: In the foreground BONAPARTE, HANNIBAL and KAROLVS MAGNVS IMP. are engraved on rocks.
+C11 [gorunen]
+  İDDİA: Malmaison'daki orijinal versiyonda Bonaparte turuncu bir pelerin taşır ve at siyah-beyaz alacadır.
+  ALINTI: In the original version held at Malmaison (260 × 221 cm; 1021⁄3 × 87 in), Bonaparte has an orange cloak, the crispin (cuff) of his gauntlet is embroidered, the horse is a black and white piebald, and the tack is complete and includes a Running Martingale.
+C12 [kompozisyon] [ihtiyat]
+  İDDİA: David'in öğrencisi Gros, dizginleri çekilen bir atın küçük bir yağlıboya eskizini yaptı; bu, Napolyon'un atı için muhtemelen bir hazırlık çalışmasıydı.
+  ALINTI: Gros, David's pupil, produced a small oil sketch of a horse being reined in, which was a probable study for Napoleon's mount
+C13 [kompozisyon]
+  İDDİA: Napolyon'u poz vermeye ikna edemeyen David, yüz hatları için bir büstü başlangıç noktası aldı ve duruşu modellemesi için oğlunu bir merdivenin tepesine oturttu.
+  ALINTI: Unable to convince Napoleon to sit for the picture, David took a bust as a starting point for his features, and made his son perch on top of a ladder as a model for the posture.
+C14 [kompozisyon]
+  İDDİA: Üniforma doğrudur; David, Bonaparte'ın Marengo'da giydiği üniformayı ve iki köşeli şapkayı ödünç alabilmişti.
+  ALINTI: The uniform is accurate, as David was able to borrow the uniform and bicorne worn by Bonaparte at Marengo.
+C15 [kompozisyon]
+  İDDİA: David, temel ana hattı okra bir çizimle yakaladıktan sonra az boyalı fırçayla hafif dokunuşlarla, ayrıntılardan çok ışık ve gölge bloklarına yoğunlaşarak resmi doldururdu.
+  ALINTI: After having captured the basic outline with an ochre drawing, he would flesh out the painting with light touches, using a brush with little paint, and concentrating on the blocks of light and shade rather than the details.
+C16 [kompozisyon]
+  İDDİA: Bu tekniğin sonuçları, Malmaison'daki orijinal versiyonda, özellikle atın sağrısının işlenişinde belirgindir.
+  ALINTI: The results of this technique are particularly noticeable in the original version of Napoleon Crossing the Alps from Malmaison, especially in the treatment of the rump of the horse.
+C17 [anlam]
+  İDDİA: Portre, iki ülke arasındaki yeni ilişkinin bir simgesi olarak Madrid Kraliyet Sarayı'nda asılacaktı.
+  ALINTI: The portrait was to hang in the Royal Palace of Madrid as a token of the new relationship between the two countries.
+C18 [anlam]
+  İDDİA: Tablo baştan beri her şeyden önce bir propagandaydı; Bonaparte, David'den kendisini 'ateşli bir ata binmiş sakin' olarak resmetmesini istedi.
+  ALINTI: from the outset the painting was first and foremost propaganda, and Bonaparte asked David to portray him "calm, mounted on a fiery steed"
+C19 [anlam] [ihtiyat]
+  İDDİA: Alpler'den ordularını geçirmiş diğer büyük komutanlar Hannibal ve Şarlman'ın adlarının eklenmesi de muhtemelen önerilmişti.
+  ALINTI: it is probable that he also suggested the addition of the names of the other great generals who had led their forces across the Alps: Hannibal and Charlemagne
+C20 [anlam]
+  İDDİA: Poz vermeyi reddetme, Napolyon portreciliğinde genel bir kopuşa işaret etti: gerçekçilik politik ikonografiye bırakıldı ve portreler fiziksel benzerlikten çok bir ideali yakalayan amblematik hale geldi.
+  ALINTI: The refusal to attend a sitting marked a break in the portraiture of Napoleon in general, with realism abandoned for political iconography: after this point the portraits become emblematic, capturing an ideal rather than a physical likeness.
+C21 [anlam]
+  İDDİA: David, alegori yerine sembolizmi seçti.
+  ALINTI: David chose symbolism rather than allegory.
+C22 [onem]
+  İDDİA: Eser, Jacques-Louis David'in 1801 ile 1805 arasında yaptığı, Napolyon Bonapart'ı gösteren tuval üzerine yağlıboya atlı portrelerden oluşan bir diziye aittir.
+  ALINTI: is a series of five oil on canvas equestrian portraits of Napoleon Bonaparte painted by the French artist Jacques-Louis David between 1801 and 1805
+C23 [onem]
+  İDDİA: Fransa'nın İspanya elçisi Charles-Jean-Marie Alquier, orijinal tabloyu Charles adına David'den talep etti.
+  ALINTI: The French ambassador to Spain, Charles-Jean-Marie Alquier, requested the original painting from David on Charles' behalf.
+C24 [onem]
+  İDDİA: Dizinin ilk portresi Ekim 1800 ile Ocak 1801 arasında boyandı.
+  ALINTI: The first of the five portraits was painted in four months, from October 1800 to January 1801.
+C25 [onem]
+  İDDİA: Orijinal tablo 1812'ye kadar Madrid'de kaldı; Yarımada Savaşı'nı kaybedip kaçan Joseph Bonaparte onu İspanya'dan yağmaladı.
+  ALINTI: The original painting remained in Madrid until 1812, when it was plundered from Spain by Joseph Bonaparte when he fled after losing the Peninsular War.
+C26 [onem]
+  İDDİA: Joseph Bonaparte, tabloyu 1816 ile 1839 arasında yaşadığı ABD'deki Bordentown, Point Breeze'e yanında götürdü.
+  ALINTI: Joseph Bonaparte when he fled after losing the Peninsular War. He took it with him to Point Breeze in Bordentown, NJ, United States where he lived from 1816 to 1839.
+C27 [onem]
+  İDDİA: Tablo, 1949'da Eugénie tarafından Château de Malmaison müzesine vasiyet edildi; o tarihe dek soyundan gelenler arasında aktarılmıştı.
+  ALINTI: The painting was handed down through his descendants until 1949, when his great grandniece Eugénie bequeathed it to the museum of the Château de Malmaison.
+C28 [onem]
+  İDDİA: İlk kopyalar, Haziran 1801'de Louvre'da, Sabine Kadınlarının Müdahalesi tablosuyla birlikte sergilendi.
+  ALINTI: The first two copies were exhibited in the Louvre in June 1801 alongside The Intervention of the Sabine Women
+C29 [onem]
+  İDDİA: Bu yapıtla David, atlı portre türünü zirvesine taşıdı.
+  ALINTI: With this work David took the genre of equestrian portraiture to its zenith.
+C30 [onem]
+  İDDİA: Eser, Napolyon'un en yaygın yeniden üretilen imgelerinden biri haline gelmiştir.
+  ALINTI: It has become one of the most commonly reproduced images of Napoleon.
+
+### Q2470123 · Yudit Holofernes'in Başını Keserken (caravaggio)
+C01 [hikaye]
+  İDDİA: Konu, Kitab-ı Mukaddes'in deuterokanonik Yudit Kitabı'ndan gelir: Yudit, Asur komutanı Holofernes'i kandırarak halkına hizmet eder.
+  ALINTI: The deuterocanonical Book of Judith tells how Judith served her people by deceiving Holofernes, the Assyrian General.
+C02 [hikaye]
+  İDDİA: Yudit, Holofernes'i sarhoş eder, sonra kılıcını kapıp onu öldürür.
+  ALINTI: Judith gets Holofernes drunk, then seizes her sword and slays him
+C03 [hikaye]
+  İDDİA: Dul Yudit bir şölenden sonra Holofernes'in çadırında kalmış, o sarhoş olup sızınca başını kesmiştir.
+  ALINTI: the widow Judith stayed with the Assyrian general Holofernes in his tent after a banquet then decapitated him after he passed out drunk
+C04 [gorunen]
+  İDDİA: Caravaggio en dramatik an saydığı anı, baş kesmenin kendisini seçmiştir.
+  ALINTI: Caravaggio chose what he thought the moment of greatest dramatic impact: the moment of decapitation itself.
+C05 [gorunen]
+  İDDİA: Yudit'in hizmetçisi Abra, hanımının sağında durur; Yudit kolunu uzatıp bıçağı Holofernes'in boynuna dayar.
+  ALINTI: Judith's maid Abra stands beside her mistress to the right as Judith extends her arm to hold a blade against Holofernes's neck
+C06 [gorunen]
+  İDDİA: Holofernes yüzükoyun yatar, başını katiline doğru çevirirken boynu bükülmüştür.
+  ALINTI: lying on his stomach, neck contorted as he turns his head towards his assassin, he is vulnerable
+C07 [gorunen]
+  İDDİA: Yudit'in yüzünde kararlılık ile tiksinti bir aradadır.
+  ALINTI: Judith's countenance in particular showing a mix of determination and repulsion
+C08 [kompozisyon]
+  İDDİA: Figürler sığ bir sahneye yerleştirilmiş, yandan teatral biçimde aydınlatılmış ve mürekkep karası bir fonun önünde yalıtılmıştır.
+  ALINTI: The figures are set out in a shallow stage, theatrically lit from the side, isolated against the inky black background.
+C09 [kompozisyon]
+  İDDİA: Röntgen incelemeleri, Caravaggio'nun çalışırken Holofernes'in başının yerini değiştirdiğini, gövdeden biraz ayırıp hafifçe sağa kaydırdığını göstermiştir.
+  ALINTI: X-rays have revealed that Caravaggio adjusted the placement of Holofernes' head as he proceeded, separating it slightly from the torso and moving it minutely to the right.
+C10 [anlam] [ihtiyat]
+  İDDİA: Yudit'in modeli muhtemelen Romalı kurtizan Fillide Melandroni'dir.
+  ALINTI: The model for Judith is probably the Roman courtesan Fillide Melandroni
+C11 [anlam] [ihtiyat]
+  İDDİA: Kan ve baş kesme ayrıntıları, Beatrice Cenci'nin 1599'daki halka açık idamında yaptığı gözlemlere dayanıyor olabilir.
+  ALINTI: were possibly drawn from his observations of the public execution of Beatrice Cenci in 1599
+C12 [onem]
+  İDDİA: Tablo 1950'de yeniden bulunmuştur.
+  ALINTI: The painting was rediscovered in 1950
+C13 [onem]
+  İDDİA: Artemisia Gentileschi ve başka ressamlar bu yapıttan derinden etkilenmiştir.
+  ALINTI: Artemisia Gentileschi and others were deeply influenced by this work.
+C14 [onem] [ihtiyat]
+  İDDİA: Biyografi yazarı Baglione'nin aktardığına göre yapıtı Cenovalı banker Ottavio Costa sipariş etmiştir.
+  ALINTI: account that the work was commissioned by Genoese banker Ottavio Costa
+C15 [onem] [ihtiyat]
+  İDDİA: Milano'daki 'Dentro Caravaggio' sergisi, erken işlerinde görülmeyen alt çizimler nedeniyle 1602 tarihini önermiştir.
+  ALINTI: suggests a date of 1602 on account of the use of light underlying sketches not seen in Caravaggio's early work
