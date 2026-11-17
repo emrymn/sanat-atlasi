@@ -1,0 +1,401 @@
+[
+ {
+  "anahtar": "Q1167932",
+  "sanatci": "rembrandt-van-rijn",
+  "baslik": "Belşazzar'ın Ziyafeti",
+  "ozgun": "Belshazzar's Feast",
+  "tarih": "y. 1635–1638",
+  "muze": "National Gallery, Londra",
+  "ozet": "Rembrandt, Daniel Kitabı'ndaki ziyafette duvara yazı yazan eli gören Babil kralı Belşazzar'ın dehşet anını, sarık, mücevher ve devrilen kadehlerle büyük bir barok sahneye dönüştürür.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Sarıklı, taçlı ve altın işlemeli kaftanlı bir kral, masasından dönüp sağ üstteki parlak yazıya bakıyor. Bulutun içinden çıkan bir el duvara İbrani harfleri yazıyor. Kralın kolu masadaki kadehi devirmiş, sağdaki kırmızı giysili kadın da kadehinden şarap döküyor. Soldaki konuklar irileşmiş gözlerle aynı yöne bakıyor; sofrada üzüm ve gümüş kaplar duruyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Karanlık bir salonda ışık iki yerden gelir: duvardaki yazıdan ve kralın parıldayan giysisinden. Kralın açılan kolları sahneyi bir köşegen gibi keser ve bakışı yazıya taşır. Paleti Rembrandt için alışılmadık ölçüde zengindir: vermilyon, smalt, kurşun-kalay sarısı, lakeler, aşı boyası ve azurit. Malzeme kullanımı ve boyama tekniği, ressamın diğer yapıtlarıyla karşılaştırılamayacak kadar istisnaidir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Babil kralı Nebukadnezzar Kudüs'teki Tapınak'tan altın kadehleri yağmalamıştı; oğlu Belşazzar onları bir ziyafette kullanınca Tanrı'nın eli saltanatın çöküşünü duvara yazar. Yazı genellikle, krallığın günlerinin sayıldığı, kralın tartılıp eksik bulunduğu ve krallığın Medlerle Perslere verildiği biçiminde okunur. Rembrandt harfleri sağdan sola değil sütunlar halinde dizer; bu, yazının Babil bilginlerine neden anlaşılmaz geldiğini düşündürmek için olabilir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tablo, Rembrandt'ın kendini büyük barok tarih resimleri ressamı olarak kabul ettirme girişimidir. Uzun süre Derby Kontu'nun Knowsley Hall'unda kaldı, İngiltere dışında pek tanınmadı; 1857'de küratör George Scharf icrasını yetersiz buldu. Yirminci yüzyılda değeri yükseldi. National Gallery 1964'te satın aldıktan sonra çok sevildi; 2014'te müzenin en çok lisanslanan üçüncü görseliydi."
+   }
+  ],
+  "bak": [
+   "Duvardaki harflerin sütunlar halinde dizilişi: soldan sağa satır değil, yukarıdan aşağı okunur.",
+   "Kralın sarığının üzerindeki küçük altın taç ve sarkan püskül.",
+   "Sağdaki kadının kadehinden ince bir şerit halinde dökülen şarap."
+  ],
+  "noktalar": [
+   {"ad": "Duvardaki yazı", "x": 0.71, "y": 0.04, "w": 0.17, "h": 0.16, "metin": "Işık saçan harfler 'mene, mene, tekel, u-farsin' yazısıdır. Harf biçimleri haham ve matbaacı Menasseh ben Israel'in kitabından alınmış; bir harf yanlış yazılmış ve harfler sütunlar halinde dizilmiştir."},
+   {"ad": "Yazan el", "x": 0.665, "y": 0.14, "w": 0.075, "h": 0.09, "metin": "Bir buluttan bileğe kadar görünen bir el duvara yazıyor. Daniel Kitabı'na göre bu Tanrı'nın elidir ve yazı, Belşazzar'ın saltanatının sonunu bildirir."},
+   {"ad": "Sarık ve taç", "x": 0.34, "y": 0.08, "w": 0.19, "h": 0.23, "metin": "Kral, tepesinde küçük bir taç bulunan iri beyaz bir sarık giyiyor. Kralın kostümünün, Osmanlı Sultanı II. Murad'ı gösteren bir Hollanda gravüründen kopyalandığı söylenir."},
+   {"ad": "Devrilen kadeh", "x": 0.69, "y": 0.54, "w": 0.1, "h": 0.18, "metin": "Kırmızı giysili kadının elindeki altın kadehten şarap dökülüyor. Bunlar, Kudüs'teki Tapınak'tan yağmalanıp ziyafette kullanılan kutsal kaplardır."},
+   {"ad": "Şaşkın konuklar", "x": 0.08, "y": 0.36, "w": 0.18, "h": 0.26, "metin": "Soldaki sakallı adam ile inci taçlı kadın gözlerini açmış, kralın baktığı yöne bakıyor. Rembrandt herkesin aynı anda donup kaldığı tek bir anı seçmiştir."}
+  ]
+ },
+ {
+  "anahtar": "Q1217288",
+  "sanatci": "hieronymus-bosch",
+  "baslik": "Aziz Antonius'un Sınanması",
+  "ozgun": "The Temptation of St. Anthony",
+  "tarih": "y. 1501",
+  "muze": "Ulusal Antik Sanat Müzesi, Lizbon",
+  "ozet": "Bosch'un üç panelli bu triptiği, Mısırlı Çöl Babası Büyük Antonius'u havada, yerde ve yıkık kulesinin dibinde, sayısız şeytan ve ayartmanın ortasında gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Sol panelin gökyüzünde aziz bir şeytan sürüsünce taşınıp aşağı indiriliyor; altta bitkin Antonius'u bir keşiş ve bir laik koltuğundan tutmuş. Ortada aziz, yıkık bir kulenin önünde diz çökmüş, bize bakarak elini kaldırıyor. Çevresinde garip bir kalabalık, hayvan başlı yaratıklar ve sudaki balık-tekneler var. Sağ panelde aziz okuyor; önünde çıplak şeytanların taşıdığı bir sofra duruyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Triptik, iki dış paneli ortaya menteşeli kanatlar olan üç ahşap panel üzerine yağlıboyadır. Orta panel 131,5 × 119 cm, kanatlar 131,5 × 53 cm'dir. Ufuk çizgisi üç panelde sürer; arka planda yanan bir kent, sağda kuleli bir şehir, yel değirmenleri ve bir göl uzanır. Kanatların dış yüzleri, dönemin Flaman eserlerindeki gibi grisaille, yani gri tonlarla boyanmıştır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Konular Athanasius'un Aziz Antonius'un Hayatı'ndan ve Altın Efsane'den gelir. Domuz yüzlü şarkıcının başındaki baykuş sapkınlığı, kurbağalı kap cadılık ve lüksü simgeler. Orta paneldeki hücrede İsa Çarmıh'ı işaret eder, ama ondan yana bakan kimse yoktur. Bir başka yoruma göre imgelerin çoğu, Bosch'un çağındaki ergotizm hastalığı ve tedavileriyle ilişkilidir; balık ve deve dikeni bu yorumda öne çıkar."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Ahşabın dendrokronolojik incelemesi, genellikle 1490–1500'e verilen tabloyu yaklaşık 1501'e tarihlendirmiştir. Triptiğin Portekizli hümanist Damião de Góis tarafından satın alındığı düşünülür. 1872'de Lizbon Kraliyet Sarayı koleksiyonunda belgelenmiş, 1911'de bugünkü müzesine bağışlanmıştır. Bosch'un birçok yapıtı gibi çok kopyalanmıştır; iki kanadın küçültülmüş bir kopyası Madrid'deki Prado'dadır."
+   }
+  ],
+  "bak": [
+   "Sol panelin tepesinde, azizi havada taşıyan şeytanlar ve uçan bir gemi.",
+   "Orta paneldeki karanlık hücrede, sunağın üstündeki küçük çarmıh ve yanındaki İsa figürü.",
+   "Sağ panelin üstünde balığa binmiş iki figür."
+  ],
+  "noktalar": [
+   {"ad": "Havadaki aziz", "x": 0.02, "y": 0.02, "w": 0.14, "h": 0.19, "metin": "Sol panelin gökyüzünde Antonius, şeytanlardan oluşan bir sürünün sırtında taşınıyor. Bu, azizin efsanevi uçuşu ve düşüşüdür."},
+   {"ad": "Taşınan aziz", "x": 0.02, "y": 0.5, "w": 0.13, "h": 0.32, "metin": "Düşüşün ardından bitkin düşen Antonius'u bir keşiş ve bir laik koltuğundan tutarak götürüyor. Köprünün altında ise mektup okuyan tuhaf figürler saklanıyor."},
+   {"ad": "Diz çöken Antonius", "x": 0.495, "y": 0.48, "w": 0.035, "h": 0.075, "metin": "Orta panelde aziz diz çökmüş, bize bakıyor; kaldırdığı kutsama eliyle kulenin içindeki küçük hücreyi işaret ediyor. Etrafındaki karmaşanın ortasında tefekkür halindedir."},
+   {"ad": "Hücredeki İsa", "x": 0.55, "y": 0.355, "w": 0.035, "h": 0.07, "metin": "Yıkık kulenin karanlık hücresinde, sunağın yanında minyatür bir İsa figürü Çarmıh'ı işaret ediyor. Paneldeki hiç kimse ondan yana bakmıyor."},
+   {"ad": "Baykuşlu şarkıcı", "x": 0.405, "y": 0.41, "w": 0.03, "h": 0.08, "metin": "Siyah giysili şarkıcının yüzü bir domuz başı biçiminde ve başının üstünde küçük bir baykuş tünemiş. Baykuş burada sapkınlığın alegorisidir."},
+   {"ad": "Son ayartma", "x": 0.8, "y": 0.8, "w": 0.09, "h": 0.19, "metin": "Sağ panelin önünde çıplak şeytanlar beyaz örtülü bir masayı sırtlarında taşıyor. Masadaki ekmek ve şarap küpü, azize sunulan son ayartmaları temsil eder."}
+  ]
+ },
+ {
+  "anahtar": "Q2354251",
+  "sanatci": "eugene-delacroix",
+  "baslik": "Dante'nin Kayığı",
+  "ozgun": "The Barque of Dante",
+  "tarih": "1822",
+  "muze": "Louvre, Paris",
+  "ozet": "Delacroix'nin Paris Salonu'na giren ilk tablosu, Inferno'nun sekizinci kantosundaki Styx geçişini gösterir: Dante ile Virgil'in kayığına lanetli ruhlar tutunur, arkada Dis kenti yanar.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Kırmızı başlıklı Dante, dengesini yitirmiş halde bir kolunu kaldırıyor ve Virgil'in eline tutunuyor. Kırmızı pelerinli Virgil sakin duruyor. Sağda kaslı bir kayıkçı sırtı bize dönük kürek çekiyor. Kara-yeşil sularda çıplak lanetliler kayığa sarılıyor, birbirine çarpıyor. Solda, dumanlı gökyüzünün altında Dis kenti alev alev yanıyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Delacroix, Inferno'da art arda olan olayları, bedenlerin yüzeye çıkışını, Dante'nin çığlıklara tepkisini ve kentin görünmesini, tek bir ana sığdırır. Işık en çok ön plandaki çıplak bedenlere düşer. Asıl renk yeniliği, bu bedenlerin üzerinden yuvarlanan su damlalarıdır: yeşil ve sarı lekeler yan yana konur, gölgede kırmızı, ışıkta beyaz kullanılır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Hikâyede bir lanetli kayığa tutunup Dante'yi sorgular, Virgil onu suya geri iter; Dante adamı Filippo Argenti olarak tanır. Delacroix, Dante'nin tepkisini hayretten savunmacı bir duruşa çevirir. Bu duruşlar, Dante'nin kuşkusu ile Virgil'in soylu kendine güveni arasındaki ilişkiyi vurgular. Figürlerde Michelangelo, Rubens ve Géricault'nun Medusa'nın Salı'ndan alınma duruşlar sezilir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tablo Delacroix'nin halka sergilenen ilk yapıtıdır. İki buçuk ay yoğun çalışarak bitirdi. Antoine-Jean Gros onu 'terbiye edilmiş Rubens' diye övdü. Forbin'in 2.000 frank ödediği tablo, yaşayan sanatçılar müzesi Musée du Luxembourg'a yerleştirildi; tablo 1874'te Louvre'a geçti. Erişilebilir konumu onu yüzyılın en çok kopyalanan Delacroix tablosu yaptı."
+   }
+  ],
+  "bak": [
+   "Ön plandaki kadının teninde yan yana konmuş yeşil, sarı, kırmızı ve beyaz su damlaları.",
+   "Solda, kara bulutların arasında kızıl alevlerle yanan Dis kentinin kuleleri.",
+   "Dante'nin Virgil'e tutunan eli ile havaya kalkmış diğer eli arasındaki karşıtlık."
+  ],
+  "noktalar": [
+   {"ad": "Dante", "x": 0.26, "y": 0.16, "w": 0.22, "h": 0.25, "metin": "Kırmızı başlıklı Dante bir kolunu savunur gibi kaldırmış. Delacroix, şiirdeki hayreti dengesiz bir korunma duruşuna çevirmiştir. Başı, Dante'nin ölüm maskesinden yapılmış bir yağlıboya etütten gelir."},
+   {"ad": "Virgil", "x": 0.47, "y": 0.22, "w": 0.15, "h": 0.32, "metin": "Kırmızı pelerinli Virgil, Dante'nin elini tutarak sakin duruyor. Sol kolu ve başı Michelangelo'nun Yeşaya peygamberinden türetilmiştir. Keskin hatlı başı bir sikke ya da bronzu da andırır."},
+   {"ad": "Kayıkçı", "x": 0.62, "y": 0.3, "w": 0.23, "h": 0.3, "metin": "Kaslı sırtı bize dönük kayıkçı, kayığı Styx nehrinde ilerletiyor. Hikâyede kayık Phlegyas'ındır; bazı kayıtlar figürü Kharon olarak tanımlar."},
+   {"ad": "Yanan Dis kenti", "x": 0.0, "y": 0.2, "w": 0.2, "h": 0.2, "metin": "Solda, dumanlı gökyüzünün altında kızıl alevlerle yanan bir kent görülüyor. Dante bu kentten, Dis'ten yükselen çığlıkları duyar."},
+   {"ad": "Sudaki lanetli", "x": 0.29, "y": 0.72, "w": 0.08, "h": 0.1, "metin": "Sırtüstü yatan çıplak adamın başı, neredeyse kesin olarak Géricault'nun Medusa'nın Salı'ndan alınmadır. Duruşu Rubens'in Leander'ini ve Michelangelo'nun Tanrı figürünü de çağrıştırabilir."},
+   {"ad": "Su damlaları", "x": 0.68, "y": 0.63, "w": 0.18, "h": 0.22, "metin": "Kayığa tutunan kadının teninde su damlaları parlıyor. Delacroix bunları karıştırılmamış yeşil, sarı, kırmızı ve beyaz lekelerle gökkuşağı gibi kurar. Bazı damlaların 1860–1861 restorasyonunda değiştirildiği de öne sürülmüştür."}
+  ]
+ },
+ {
+  "anahtar": "Q2324643",
+  "sanatci": "gustav-klimt",
+  "baslik": "Judith I",
+  "ozgun": "Judith I",
+  "tarih": "1901",
+  "muze": "Belvedere, Viyana",
+  "ozet": "Klimt, Holofernes'in başını kesen İncil kahramanı Judith'i, altın bir arka plan önünde, yarı kapalı gözleri ve aralık dudaklarıyla baştan çıkarıcı bir femme fatale olarak resmeder.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Koyu, kabarık saçlı bir kadın başını hafifçe kaldırmış, yarı kapalı gözlerle bize bakıyor; dudakları aralık. Boynunu geniş, mücevherli altın bir gerdanlık sarıyor. Saydam, koyu mavi-yeşil bir giysi neredeyse çıplak gövdesini açıkta bırakıyor. Sağ alt kenarda elinin altında bir erkek başı var: Holofernes'in kesik başı, tuvalin kenarında yarıda kesilmiş. Kanlı bir kılıç görünmüyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Klimt her türlü anlatıyı dışarıda bırakıp yalnız Judith'e odaklanır; gücü yakın plandan ve sağlam duruşundan gelir. Bedenin ve başın dikeyliğine, kol, gerdanlık ve saç tabanından geçen yatay paraleller karşılık verir. Siyah saç ile arka plandaki altın ışıltı arasındaki karşıtlık figürü yüceltir. Saçın iki yanında yelpaze gibi açılan stilize altın ağaçlar vardır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Judith, memleketi Bethulia'yı Asur ordusundan kurtarmak için General Holofernes'i baştan çıkarıp başını keser. Geleneksel olarak dindar dul diye yorumlanan Judith, burada Klimt'in tekrar tekrar resmettiği femme fatale'in örneğidir. Saydam giysi baştan çıkarmaya gönderme yapar. Kılıcın olmayışı tabloyu Salome'ye yaklaştırır; Szabo onu erotik dişil ilkenin saldırgan eril ilkeye zaferi diye okur."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Judith I, kompozisyonunu ve simgelerini Franz Stuck'un Günah'ıyla paylaşır. Felix Salten 1903'te Judith'in bakışındaki tutkulu ateşi ve ağzındaki zalimliği anlattı. Eleştirmenler figürü Wilde'ın Salome'si sandı; Klimt bu yüzden kardeşi Georg'a üzerinde 'Judith und Holofernes' yazan metal çerçeveyi yaptırdı. Tablo 1954'ten beri Belvedere koleksiyonundadır."
+   }
+  ],
+  "bak": [
+   "Çerçevenin üstündeki kabartma harfler: 'Judith und Holofernes' yazısı.",
+   "Sağ alt köşede, kenarda yarıda kesilmiş koyu renkli erkek başı.",
+   "Gerdanlığın üzerindeki mavi ve kırmızı taşlar ile altın arka plandaki pul benzeri desen."
+  ],
+  "noktalar": [
+   {"ad": "Judith'in yüzü", "x": 0.42, "y": 0.2, "w": 0.28, "h": 0.16, "metin": "Hafifçe kalkık baş gurur taşır; yarı kapalı gözler izleyiciyle doğrudan yüzleşir. Aralık dudaklar meydan okuma ile baştan çıkarma arasında durur."},
+   {"ad": "Holofernes'in başı", "x": 0.8, "y": 0.62, "w": 0.13, "h": 0.26, "metin": "Judith'in elinin altındaki karanlık baş, General Holofernes'in kesik başıdır. Klimt onu tuvalin sağ kenarında yarıda keser; kanlı bir kılıç izi yoktur."},
+   {"ad": "Altın gerdanlık", "x": 0.48, "y": 0.39, "w": 0.21, "h": 0.08, "metin": "Boynu saran geniş, taşlı altın gerdanlık, omuzlar ve kolla birlikte resmin yatay çizgilerinden birini oluşturur. Bu yataylar bedenin dikeyliğini dengeler."},
+   {"ad": "Altın ağaçlar", "x": 0.08, "y": 0.11, "w": 0.28, "h": 0.31, "metin": "Saçın iki yanında yelpaze gibi açılan stilize ağaç motifleri modaya uygun saç biçimini vurgular. Altın arka planın ışıltısı siyah saçla güçlü bir karşıtlık kurar."},
+   {"ad": "Saydam giysi", "x": 0.18, "y": 0.49, "w": 0.32, "h": 0.42, "metin": "Dağınık, koyu yeşil-mavi ve yarı saydam giysi, altın desenleriyle gövdeyi neredeyse çıplak bırakır. Giysi, Judith'in Holofernes'i başını kesmeden önce baştan çıkardığına gönderme yapar."},
+   {"ad": "Yazılı çerçeve", "x": 0.1, "y": 0.0, "w": 0.78, "h": 0.1, "metin": "Çerçevenin üstünde 'Judith und Holofernes' yazısı kabartma halinde okunur. Eleştirmenler figürü Salome sanınca Klimt bu metal çerçeveyi kardeşi Georg'a yaptırmıştır."}
+  ]
+ },
+ {
+  "anahtar": "Q776175",
+  "sanatci": "pieter-bruegel-yasl",
+  "baslik": "Hasat Zamanı",
+  "ozgun": "The Harvesters",
+  "tarih": "1565",
+  "muze": "Metropolitan Museum of Art, New York",
+  "ozet": "Bruegel'in mevsimler serisinden bu tablo, yaz sonunda buğday biçen ve bir armut ağacının gölgesinde yemek molası veren köylüleri, ufka dek açılan bir manzarada gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Ön planda yarısı biçilmiş altın sarısı bir buğday tarlası var. Solda adamlar tırpanla buğday biçiyor, sağda demetler yığılmış. Bir ağacın dibinde köylüler oturmuş yemek yiyor; biri sırtüstü uyuyor. Sağdaki ağaçlarda biri meyve topluyor. Arkada bir köy, kilise, gölet ve uzakta gemilerin durduğu bir koy uzanıyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Ortadaki ağaç tabloyu ikiye böler: bir yanda yakın plandaki emek ve mola, öte yanda uzaklara açılan manzara. Uzaklık duygusu adım adım kurulur: açıklıktan demet taşıyan işçiler, gölette yıkananlar, oynayan çocuklar ve en sonda gemiler. Sarı buğday ile yeşil-mavi ufuk arasındaki geçiş, gözü sahnenin derinliğine taşır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Tablo besinin hem üretimini hem tüketimini aynı anda gösterir: bir yanda biçenler, öte yanda yiyenler. Bruegel'in birçok resminde olduğu gibi odakta köylüler ve işleri vardır; dönemin manzaralarında yaygın dinsel temalar burada yoktur. Kolayca seçilen insan ayrıntıları, dönemin çiftçi giysileri ve on altıncı yüzyıl kırsal yaşamı hakkında bilgi verir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tabloyu, mevsim geçişlerini gösteren altı resimlik bir döngünün parçası olarak Antwerpli tüccar Nicolaes Jonghelinck sipariş etti; serinin beş tablosu günümüze ulaştı. 1919'dan beri Metropolitan Museum'dadır. Müze onu 'Batı sanatı tarihinde bir dönüm noktası' ve 'ilk modern manzara' diye niteler. Miyazaki bir kısa filminde bu tablodan ilham almıştır."
+   }
+  ],
+  "bak": [
+   "Ağacın dibinde sırtüstü uzanmış, ağzı açık uyuyan köylü.",
+   "Uzaktaki koyda demir atmış küçük gemiler.",
+   "Tarladan elinde testiyle çıkan adamın arkasında biçilmemiş buğdayın kesik duvarı."
+  ],
+  "noktalar": [
+   {"ad": "Armutlu sofra", "x": 0.74, "y": 0.78, "w": 0.095, "h": 0.15, "metin": "Dik oturan kadının önündeki beyaz örtüde armutlar duruyor; kadın ekmek ve peynir yiyor, çevresindekiler kâselerden yemek yiyor. Bu grup, besinin tüketimini gösterir."},
+   {"ad": "Uyuyan köylü", "x": 0.45, "y": 0.77, "w": 0.17, "h": 0.19, "metin": "Ağacın dibinde bir adam kollarını açmış, sırtüstü uyuyor. Yanında emek ile dinlenme aynı tabloda yan yana durur."},
+   {"ad": "Tırpancılar", "x": 0.15, "y": 0.64, "w": 0.21, "h": 0.29, "metin": "Tarlanın kenarında adamlar tırpanla buğday biçiyor. Biçilen sapların bıraktığı dik kenar, tarlayı bir duvar gibi ikiye ayırır."},
+   {"ad": "Horoz atma", "x": 0.365, "y": 0.465, "w": 0.08, "h": 0.035, "metin": "Orta soldaki çayırda bir grup köylü bir hedefe sopa fırlatıyor. Bu, horoz atma denen kanlı bir oyundur."},
+   {"ad": "Meyve silken adam", "x": 0.945, "y": 0.3, "w": 0.035, "h": 0.085, "metin": "En sağdaki ağaca tırmanmış biri dallardan meyve topluyor. Hasat yalnız buğdayla sınırlı değil; ağaçlar da toplanıyor."},
+   {"ad": "Uzak manzara", "x": 0.05, "y": 0.27, "w": 0.45, "h": 0.27, "metin": "Köy evleri, gölet ve koy ufka dek uzanıyor. Uzaklık duygusu demet taşıyan işçiler, gölette yıkananlar ve uzaktaki gemilerle kurulur."}
+  ]
+ },
+ {
+  "anahtar": "Q254923",
+  "sanatci": "raphael",
+  "baslik": "Alba Meryemi",
+  "ozgun": "The Alba Madonna",
+  "tarih": "y. 1510",
+  "muze": "National Gallery of Art, Washington",
+  "ozet": "Raphael'in Roma'ya yerleşmesinden sonra sipariş edilen bu tondoda Meryem, bebek İsa ve küçük Vaftizci Yahya bir İtalyan kırında yere oturmuş, Yahya'nın uzattığı haça bakar.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Yuvarlak bir tabloda, mavi pelerinli Meryem bir ağaç kütüğüne yaslanmış yerde oturuyor; sol elinde parmağıyla tuttuğu bir kitap var. Kucağındaki bebek İsa, deri giysili küçük Vaftizci Yahya'nın kaldırdığı ince haçı kavrıyor. Üçü de haça bakıyor. Arkada göl, tepeler ve köy evleri; önde çiçekler ve otlar."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Üç figür yuvarlak tasarımın soluna toplanmış ve bir piramit kurar. Bu ağırlık, Meryem'in uzanan sol kolu ve pelerinin kabaran kumaşıyla dengelenir. Tablo on dokuzuncu yüzyıl başında yuvarlak panelinden kare bir tuvale aktarıldı. Tuval dokusu yer yer görünür; en sağdaki manzara bu aktarım sırasında zarar görmüştür."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Haç, İsa'nın çarmıha gerileceğinin işaretidir. Figürlerin çevresine simgesel çiçekler serpilmiştir: siklamen sevgi ve keder, menekşe alçakgönüllülük, karahindiba ve anemon İsa'nın Çilesi içindir. Andrew Graham-Dixon, Meryem'in yere oturuşunu Alçakgönüllü Meryem ikonografisine bağlar; heykel gibi duruşu ise onu insanlığın koruyucusu olarak gösteren eski Merhametli Meryem imgelerini çağrıştırır."
+   }
+,
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tondoyu Paolo Giovio sipariş etti; resim, Michelangelo'nun Sistine tavanından esinlenmiş olabilir. Yüzyıllarca el değiştirdi: on sekizinci yüzyılda adını veren İspanyol Alba Hanedanı'ndaydı, 1836'da Çar I. Nikola'ya satıldı. Sovyetler 1931'de onu gizlice Andrew Mellon'a sattı. II. Dünya Savaşı'nda Biltmore House'ta saklandı."
+   }
+  ],
+  "bak": [
+   "Meryem'in sol elinde parmağıyla aralık tuttuğu kitap ve pelerinin kabaran kumaşı.",
+   "Ön plandaki küçük beyaz ve mor çiçekler: her biri simgesel anlam taşır.",
+   "Sağ kenardaki uzak manzaranın, aktarım hasarı yüzünden daha bulanık görünüşü."
+  ],
+  "noktalar": [
+   {"ad": "Haç", "x": 0.17, "y": 0.28, "w": 0.1, "h": 0.3, "metin": "Vaftizci Yahya ince bir haç kaldırıyor, bebek İsa da onu kavrıyor. Haç, İsa'nın çarmıha gerileceğinin işareti olarak kabul edilir."},
+   {"ad": "Meryem'in kitabı", "x": 0.53, "y": 0.49, "w": 0.13, "h": 0.1, "metin": "Meryem uzattığı sol elinde bir kitap tutuyor. Bu kol, figürlerin sola yığılmasını dengeleyen öğelerden biridir."},
+   {"ad": "Meryem'in yüzü", "x": 0.38, "y": 0.16, "w": 0.17, "h": 0.17, "metin": "Meryem başını eğmiş, çocukların tuttuğu haça bakıyor. Graham-Dixon, heykelsi duruşunu insanlığın koruyucusu Meryem imgelerine bağlar."},
+   {"ad": "Vaftizci Yahya", "x": 0.05, "y": 0.4, "w": 0.2, "h": 0.36, "metin": "Deri giysili küçük Yahya diz çökmüş, başını kaldırıp İsa'ya bakıyor. Üç figürün oluşturduğu piramidin sol köşesini o tutar."},
+   {"ad": "Çiçekler", "x": 0.5, "y": 0.82, "w": 0.28, "h": 0.13, "metin": "Ön plandaki otlar ve çiçekler rastgele değildir. Siklamen sevgi ve keder, menekşe alçakgönüllülük, karahindiba İsa'nın Çilesi içindir."},
+   {"ad": "Zarar gören manzara", "x": 0.82, "y": 0.26, "w": 0.15, "h": 0.2, "metin": "Sağ kenardaki köy ve ağaçlar, panelden tuvale aktarım sırasında zarar görmüştür. Özgün panel ortadan ve sağdan ciddi biçimde çatlamaktaydı."}
+  ]
+ },
+ {
+  "anahtar": "Q2294441",
+  "sanatci": "rembrandt-van-rijn",
+  "baslik": "Danae",
+  "ozgun": "Danaë",
+  "tarih": "1636 (1643'e dek yeniden işlendi)",
+  "muze": "Hermitage Müzesi, Sankt Peterburg",
+  "ozet": "Rembrandt, Perseus'un annesi Danae'yi yatağında gerçek boyutlu olarak, muhtemelen altın bir sağanak biçiminde gelen Zeus'u karşılarken, ışık dolu bir an içinde resmeder.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Gölgelikli bir yatakta çıplak bir kadın yastıklara uzanmış, sağ elini kaldırıp sol üstten gelen ışığa doğru uzatıyor. Bileklerinde bilezikler var. Sol tarafta ağır perdenin arkasından giyinik bir figür bakıyor. Yatağın tepesinde altın kanatlı bir çocuk heykeli asılı. Yerde bir çift terlik, sağda kırmızı örtülü bir masa duruyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Işık, bedenin üzerine sol üstten dökülür ve tablonun asıl konusu olan altın sağanağın yerini tutar. Çevredeki perdeler, yatak ve oymalar sıcak, koyu kahverengi ve altın tonlarda kalır. Tablo sonradan önemli ölçüde kesilerek küçültülmüştür. Rembrandt'ın yeniden işlemesi Danae'nin başının, uzanan kolunun ve bacaklarının konumunu değiştirmiştir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Mitte Danae, Zeus'un altın bir sağanak olup yanına geldiği kadındır; bu birleşmeden Perseus doğar. Tabloda altın damlalar seçilmez; sol üstten dökülen sıcak ışık sağanağın yerini tutar. Danae'nin ilk modeli ressamın eşi Saskia'ydı. Rembrandt daha sonra yüzü, metresi Geertje Dircx'in yüzüyle değiştirmiştir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "1636'da bitirilen tablo en geç 1643'te yeniden işlendi; bir zamanlar Pierre Crozat'ındı, on sekizinci yüzyıldan beri Hermitage'dadır. 15 Haziran 1985'te Bronius Maigys adlı bir adam tuvale sülfürik asit döküp bıçakla iki kez kesti. Orta bölüm ağır zarar gördü. Restorasyon aynı gün başladı ve 1985–1997 arasında Hermitage'ın restorasyon laboratuvarında tamamlandı."
+   }
+  ],
+  "bak": [
+   "Danae'nin kaldırdığı sağ bileğindeki kırmızı bilezik.",
+   "Yatağın tepesindeki altın kanatlı çocuk heykeli.",
+   "Yerde, yatağın önünde bırakılmış bir çift terlik."
+  ],
+  "noktalar": [
+   {"ad": "Kalkan el", "x": 0.42, "y": 0.3, "w": 0.1, "h": 0.14, "metin": "Danae sağ elini ışığa doğru kaldırıyor. Bileğindeki bilezik resimde betimlenen ayrıntılardandır; uzanan kolun konumu yeniden işleme sırasında değiştirilmiştir."},
+   {"ad": "Danae'nin yüzü", "x": 0.64, "y": 0.3, "w": 0.15, "h": 0.15, "metin": "İlk modeli ressamın eşi Saskia'ydı; Rembrandt yüzü sonradan metresi Geertje Dircx'in yüzüyle değiştirdi. Bu yüz ve saçlar, 1985 saldırısında en ağır hasar gören yerlerdendir."},
+   {"ad": "Perdedeki figür", "x": 0.3, "y": 0.18, "w": 0.12, "h": 0.22, "metin": "Ağır perdenin ardından giyinik bir figür sahneye bakıyor. Figür ışığın dışında, gölgede kalır; ışık yalnız Danae'nin bedenine düşer."},
+   {"ad": "Kanatlı çocuk", "x": 0.7, "y": 0.08, "w": 0.13, "h": 0.17, "metin": "Yatağın tepesindeki gölgeliği altın renkli, kanatlı bir çocuk heykeli süslüyor. Gölgelikli yatak, tablonun betimlediği öğeler arasında sayılır."},
+   {"ad": "Yastık ve bilezik", "x": 0.66, "y": 0.5, "w": 0.2, "h": 0.12, "metin": "Danae'nin dirseğini dayadığı beyaz yastık ve sol bileğindeki bilezik, ışığın en parlak düştüğü yerlerdendir. Bilezik ve yastık, tablonun betimlediği öğeler arasında açıkça sayılır."},
+   {"ad": "Terlikler", "x": 0.58, "y": 0.85, "w": 0.17, "h": 0.07, "metin": "Yatağın önünde, yerde bir çift terlik duruyor. Bu küçük ev ayrıntısı, mitolojik sahneyi gündelik bir yatak odasına yerleştirir."}
+  ]
+ },
+ {
+  "anahtar": "Q2480921",
+  "sanatci": "jan-van-eyck",
+  "baslik": "Kanon Joris van der Paele'li Meryem",
+  "ozgun": "Madonna with Canon van der Paele",
+  "tarih": "y. 1434–1436",
+  "muze": "Groeningemuseum, Brugge",
+  "ozet": "Van Eyck'ın bu büyük panelinde yaşlı kanon van der Paele, ad azizi George tarafından tahtta oturan Meryem ile Çocuk'a sunulur; karşıda Aziz Donatian durur.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Ortada kırmızı pelerinli Meryem süslü bir tahtta oturuyor; kucağında sarı kıvırcık saçlı Çocuk beyaz bir örtü üstünde dik duruyor ve bir papağana uzanıyor. Solda mitralı, mavi-altın cüppeli Aziz Donatian mumlu bir çark ve haç tutuyor. Sağda beyaz cüppeli yaşlı kanon diz çökmüş; elinde bir dua kitabı ve gözlük var. Arkasında zırhlı Aziz George miğferini kaldırıyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Sahne revaklı, yuvarlak bir kilisede geçer; Meryem normalde sunağın duracağı yerdedir. Taht, pencereler ve kemerler Romanesk mimariden ödünç alınmıştır. Işık sol önden ve tahtın arkasındaki kurşunlu pencerelerden gelir. Panel, van Eyck'ın günümüze ulaşan en büyük ikinci resmi ve yatay biçimli tek eseridir; özgün meşe çerçevesinde Latince yazıtlar bulunur."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Meryem'in başının üstündeki brokar baldakende saflığını simgeleyen beyaz güller vardır. Çocuğun beyaz örtüsü, Efkaristiya'daki örtülü ekmeği temsil ediyor olabilir. Papağan ve bitki Cennet Bahçesi'ni anıştırır. Gözlükler eğitim ve zenginliği gösterir ama insan duyularının yanılabilirliğine de işaret eder. Soldaki öğeler İsa'nın ölümüne, sağdakiler Dirilişi'ne gönderme yapar."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Paneli, Brugge'lu yaşlı ve ağır hasta din adamı van der Paele kendi anıtı olarak sipariş etti. Kilise 1779'da yıkılana dek orada kaldı. 1794'te Louvre'a götürüldü, 1816'da Brugge'a döndü ve 1930'da Groeningemuseum'a katıldı. Kucağında dalgın Çocukla tahta oturan Meryem imgesi, sonraki 150 yıl boyunca bir standart oldu."
+   }
+  ],
+  "bak": [
+   "Kanonun elindeki gözlük ve parmaklarıyla açık tuttuğu dua kitabı.",
+   "Aziz George'un parlak zırhında ve kalkanında yansıyan ışıklar.",
+   "Tahtın kollarındaki küçük taş renkli oyma sahneler ve arkadaki yuvarlak camlı pencereler."
+  ],
+  "noktalar": [
+   {"ad": "Kanon van der Paele", "x": 0.7, "y": 0.28, "w": 0.12, "h": 0.13, "metin": "Yaşlı kanon beyaz bir surplis giymiş, bir dua kitabından okuyor. Dalgın görünüşü, onun dünyadan kopup tümüyle ruhsal alana daldığını göstermek için kasıtlı olabilir."},
+   {"ad": "Gözlük", "x": 0.695, "y": 0.42, "w": 0.04, "h": 0.05, "metin": "Kanonun elindeki gözlük eğitim, zenginlik ve öğrenime işaret eder. Ama insanın dünyevi duyularının yanılabilirliğine de gönderme yapar."},
+   {"ad": "Aziz George", "x": 0.75, "y": 0.06, "w": 0.2, "h": 0.36, "metin": "Zırhlı Aziz George, kanonun ad azizidir; miğferini saygıyla kaldırıp sol eliyle onu Meryem'e tanıtıyor. Süslü zırhı içinde rahat ve kayıtsız görünür."},
+   {"ad": "Aziz Donatian", "x": 0.05, "y": 0.06, "w": 0.24, "h": 0.4, "metin": "Mitralı aziz bir elinde mücevherli bir haç, diğerinde beş mumlu bir çark tutuyor. Çerçevedeki Latince yazıtlar azizleri tanımlamaya yardım eder."},
+   {"ad": "Çocuk ve papağan", "x": 0.4, "y": 0.24, "w": 0.13, "h": 0.15, "metin": "Sarı kıvırcık saçlı Çocuk beyaz örtünün üstünde dik oturuyor ve yeşil bir papağana uzanıyor. Papağan ve bitki, Cennet Bahçesi'ni simgeleyen arka planı öne çıkarır."},
+   {"ad": "Taht oymaları", "x": 0.32, "y": 0.3, "w": 0.06, "h": 0.12, "metin": "Tahtın sol kolunda bir figür yerdeki bir başkasının üzerine eğilmiş: Kabil ile Habil'i andıran bir oyma. Taht Adem ile Havva, Kabil ile Habil ve Eski Ahit sahneleriyle süslüdür; soldaki öğeler İsa'nın ölümüne gönderme yapar."}
+  ]
+ },
+ {
+  "anahtar": "Q2046100",
+  "sanatci": "titian",
+  "baslik": "Flora",
+  "ozgun": "Flora",
+  "tarih": "y. 1515",
+  "muze": "Uffizi, Floransa",
+  "ozet": "Titian'ın bu yarım boy tablosu, beyaz gömlekli, uzun sarı saçlı ve elinde ilkbahar çiçekleri tutan idealize güzel bir kadını, bahar tanrıçası Flora olarak gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Koyu bir arka planda genç bir kadın başını yana çevirmiş, gözlerini bizden kaçırıyor. Sarı saçları omuzlarından aşağı dökülüyor. Bol, beyaz bir gömlek omzundan kaymış. Sol eliyle pembe tonlu bir mantoyu göğsüne tutuyor; sağ elinde, tablonun sol alt köşesinde, bir avuç çiçek ve yaprak var."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Figür karanlık arka plandan ışıkla ayrılır; ışık yüze, boyna ve göğse düşer. Beyaz gömleğin kırışıkları, pembe mantonun parlak kıvrımları ve sarı saç, sınırlı ama sıcak bir renk üçlüsü kurar. Kadının bedeni bir yöne, başı öbür yöne döner. Eser Venedik okulu ve Yüksek Rönesans ile ilişkilendirilir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Kadını ilkbahar ve bitki örtüsünün antik tanrıçası Flora'yla özdeşleştiren, elindeki ilkbahar çiçekleridir. Tablonun anlamı tartışmalıdır: bazıları on altıncı yüzyıl kopyalarındaki yazıtlara dayanarak kadını bir kurtizan sayar, bazıları evlilik sevgisinin simgesi olarak okur. Aynı kadın Titian'ın Aynalı Kadın, Salome ve Violante gibi başka tablolarında da görünür."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Kadın tipi, Titian'ın hocası Giorgione'nin Laura'sıyla Venedik'te yerleşmiş idealize güzellik modelidir. Eser on altıncı yüzyılda çok sayıda gravürle çoğaltıldı. Rembrandt, Flora Kılığında Saskia'da ve iki portresinde ona gönderme yaptı. On sekizinci yüzyılda yanlışlıkla Palma il Vecchio'ya atfedildi; Viyana'dan takasla Uffizi'ye geçti."
+   }
+  ],
+  "bak": [
+   "Kadının sağ elindeki küçük çiçek demetinde sarı bir çiçek.",
+   "Pembe mantonun ışıkta parlayan, desenli kıvrımları.",
+   "Gömleğin omuzdan kayan yakası ve kumaşın ince kırışıkları."
+  ],
+  "noktalar": [
+   {"ad": "Çiçekler", "x": 0.0, "y": 0.78, "w": 0.19, "h": 0.15, "metin": "Kadının sağ elinde bir avuç çiçek ve yaprak var. Onu bahar tanrıçası Flora'yla özdeşleştiren işte bu ilkbahar çiçekleridir."},
+   {"ad": "Yüz", "x": 0.31, "y": 0.18, "w": 0.27, "h": 0.2, "metin": "Kadın başını yana çevirmiş, bakışını bizden kaçırıyor. Bu idealize güzellik tipi, Giorgione'nin Laura'sıyla Venedik resminde yerleşmiş bir modeldir."},
+   {"ad": "Pembe manto", "x": 0.6, "y": 0.6, "w": 0.38, "h": 0.32, "metin": "Kadın sol eliyle pembe tonlu bir mantoyu tutuyor. Mantonun parlak kumaşı, beyaz gömlekle güçlü bir doku karşıtlığı kurar."},
+   {"ad": "Sarı saçlar", "x": 0.6, "y": 0.32, "w": 0.2, "h": 0.18, "metin": "Sarı saçlar dalgalar halinde omzun üzerinden aşağı dökülüyor. Saçların bel hizasına dek uzandığı belirtilir."},
+   {"ad": "Beyaz gömlek", "x": 0.05, "y": 0.45, "w": 0.33, "h": 0.33, "metin": "Bol beyaz gömlek omuzdan kaymış; kırışıkları ışığı küçük parçalara böler. Gömlek, tablonun betimlediği öğeler arasında sayılır."}
+  ]
+ },
+ {
+  "anahtar": "Q1206860",
+  "sanatci": "titian",
+  "baslik": "Bacchus ve Ariadne",
+  "ozgun": "Bacchus and Ariadne",
+  "tarih": "1520–1523",
+  "muze": "National Gallery, Londra",
+  "ozet": "Titian, Naksos kıyısında terk edilmiş Ariadne'yi görüp ona ilk görüşte âşık olan Bacchus'u, çitaların çektiği arabasından sıçradığı anda, coşkulu alayıyla birlikte yakalar.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Solda mavi elbiseli, kırmızı kuşaklı Ariadne kıyıda geri dönüyor. Ortada pembe pelerinli Bacchus iki çitanın çektiği arabasından havaya sıçramış. Sağdaki alayda zil çalan kadınlar, bedenine yılanlar dolamış bir adam ve bir hayvan bacağı sallayan satir var. Önde küçük bir satir yürüyor, ona bir köpek havlıyor; yerde altın bir testi duruyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Kompozisyon çapraz olarak iki üçgene bölünür: solda pahalı ultramarin pigmentiyle boyanmış durgun mavi gökyüzü, sağda yeşil-kahverengi tonların egemen olduğu hareketli alay. İki âşığın hareketi bu çizgiyi aşar. Tuval ilk yüzyılında iki kez rulo yapıldı; vernik temizliğinde boya kalktı, ama yeni incelemeler boyanın büyük ölçüde özgün kaldığını doğrular."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Ariadne, sevgilisi Theseus tarafından Naksos'ta terk edilmiştir; Theseus'un gemisi en solda uzaklaşır. Ariadne'nin üstündeki gökyüzünde Kuzey Tacı takımyıldızı parlar. Yılanlarla sarılı satir, Catullus'un metnindeki gibi onları yalnızca kendine dolar. Çitalar Dük'ün hayvanat bahçesinden örnek alınmış olabilir. Konu Romalı şairler Catullus ve Ovidius'tan türetilmiştir; hangi antik metne dayandığı hâlâ tartışılır."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Resim, Ferrara Dükü Alfonso I d'Este'nin özel odası için yapılan mitolojik resim döngüsünün parçasıdır. Sipariş önce Raphael'deydi; o 1520'de ölünce Titian'a geçti. Titian'ın en büyük eserlerinden biri sayılır ve 1826'dan beri National Gallery'dedir. John Keats bir şiirinde ona gönderme yaptı; bir rock albümünün kapağına da temel oldu."
+   }
+  ],
+  "bak": [
+   "Ariadne'nin başının üstünde, gökyüzünde halka biçiminde dizilmiş yıldızlar: Kuzey Tacı.",
+   "Sol alttaki altın testinin üzerindeki TICIANVS imzası.",
+   "En soldaki ufukta, Theseus'un uzaklaşan küçük beyaz yelkenlisi."
+  ],
+  "noktalar": [
+   {"ad": "Sıçrayan Bacchus", "x": 0.33, "y": 0.24, "w": 0.28, "h": 0.46, "metin": "Bacchus, Ariadne'yi görür görmez ona âşık olur ve arabasından ona doğru sıçrar. Titian onu tam havadayken, pembe pelerini rüzgârda savrulurken gösterir."},
+   {"ad": "Ariadne", "x": 0.0, "y": 0.44, "w": 0.19, "h": 0.46, "metin": "Theseus'un terk ettiği Ariadne, kıyıda geri dönmüş, elini kaldırıyor. Mavi elbisesi, gökyüzünün ultramarin mavisini yankılar."},
+   {"ad": "Kuzey Tacı", "x": 0.04, "y": 0.01, "w": 0.17, "h": 0.07, "metin": "Ariadne'nin üstündeki gökyüzünde bir halka biçiminde yıldızlar var. Bu, Kuzey Tacı adıyla bilinen Corona Borealis takımyıldızıdır."},
+   {"ad": "Theseus'un gemisi", "x": 0.0, "y": 0.5, "w": 0.04, "h": 0.06, "metin": "En solda, ufukta küçük beyaz bir yelken uzaklaşıyor. Bu, Ariadne'yi adada bırakıp giden Theseus'un gemisidir."},
+   {"ad": "Yılanlı satir", "x": 0.65, "y": 0.45, "w": 0.2, "h": 0.4, "metin": "Kaslı satir yılanları bedenine dolamış. Titian onu yılanlarla ölümcül bir mücadele içinde değil, Catullus'un metnindeki gibi yılanları kendine dolarken gösterir."},
+   {"ad": "İmzalı testi", "x": 0.095, "y": 0.855, "w": 0.07, "h": 0.08, "metin": "Yerdeki altın testinin üzerinde TICIANVS imzası okunuyor. Bu urna, Dük'ün koleksiyonundaki antik eserlerden birini andırıyor olabilir."}
+  ]
+ }
+]

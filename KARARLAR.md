@@ -2466,3 +2466,12 @@ Rembrandt'ta "kusan havari" kutusu doğrulanamadığı için çıkarıldı. Yaz�
 heykelin "ahşap" olduğu, del Monte'nin "kardinal" unvanı, "Macaristan Kraliçesi", Âdem'in Golgota'ya gömülmesi, arıların İtalyanca adı.
 Devir için `scripts/basyapit_arastirma/DEVIR.md` (adım adım yöntem, hazır istem) ve `gorsel.py` (indir, kırp, yakın) eklendi.
 Birim 388/388; başyapıt, ayrıntı, galeri uçtan uca 13/13. 173 başyapıt, 979 nokta.
+
+### İş 189b · parti 3: 10 yakın okuma (sürüm 1.83.3)
+
+Belşazzar'ın Ziyafeti, Bosch · Aziz Antonius'un Sınanması (Lizbon), Dante'nin Kayığı, Judith I, Hasat Zamanı, Alba Meryemi,
+Rembrandt · Danae, Kanon van der Paele'li Meryem, Titian · Flora, Bacchus ve Ariadne; 58 nokta. Alba Meryemi'nin müzesi
+`secim.json`'da Hermitage yazıyordu; künyeye göre National Gallery of Art, Washington yazıldı. Delacroix'daki kayıkçı için
+kaynaklar çelişiyor (Phlegyas / Kharon); metin ikisini de anıyor. Van Eyck'ta tahttaki oyma, kırpınca Âdem ile Havva değil
+Kabil–Habil'e benzer çıktı; metin düzeltildi. Kaynak denetiminde çıkarılanlar: Virgil'in "defne çelengi", Kuzey Tacı'nın "sekiz"
+yıldızı, Ampelos'un resimdeki yeri, "devlet satın aldı" (alıcı Forbin). Birim 388/388; uçtan uca 13/13. 183 başyapıt, 1037 nokta.

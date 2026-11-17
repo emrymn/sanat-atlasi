@@ -7,13 +7,15 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
 - 110 yeni başyapıt seçildi (`secim.json`, 11 parti × 10). Her eserin araştırması bitti: `eserler/<QID>/ARASTIRMA.json`
   (kaynak metinden birebir alıntıya bağlı Türkçe iddialar; `dogrula.py` hepsini geçiriyor; Gemini ile anlam denetimi yapıldı).
 - Yakın okumalar parti parti yazılıyor: `okumalar/parti_NN.json` → `birlestir.py` → `data/basyapitlar.json` +
-  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser).** Kalan: parti 3–11 (90 eser). Son sürüm 1.83.2; toplam 173 başyapıt.
+  `data/eser_ayrintilari.json`. **Bitti: parti 1 (10 eser), parti 2 (9 eser), parti 3 (10 eser).** Kalan: parti 4–11 (80 eser). Son sürüm 1.83.3; toplam 183 başyapıt.
 - **Atlanan: Q351300 Dürer · Âdem ile Havva (parti 2).** Uygulamadaki görseli 1504 tarihli *gravür*
   (`Albrecht_Dürer,_Adam_and_Eve,_1504,_Engraving.jpg`), araştırma ise 1507 tarihli *Prado tablosu* hakkında. Önce görselin
   düzeltilmesi gerekir (kayıttaki ikinci görsel `Albrecht_Dürer_-_Adam_and_Eve_(Prado)_2.jpg`'nin yerel/R2 kopyası yok; Mac'te
   `gorsel_indir.py` + `r2_yukle.py` ister). O zamana dek yakın okuma yazma.
 - **Her partide görsel–eser uyumunu kontrol et:** ızgaralı görsele bakınca araştırmanın anlattığı eser mi (tarih, teknik,
   versiyon) diye sor. Uymuyorsa atla ve buraya yaz.
+- `secim.json`'daki `muze` bazen eski (ör. Alba Meryemi: Hermitage yazıyor, eser Washington'da): müzeyi ARASTIRMA künyesinden al.
+- `denetle.py` cümleyi büyük harfle başlayan sonraki cümleye göre sayar: rakamla ya da ":" sonrası küçük harfle başlayan cümle sayılmaz.
 - Dal: `claude/sharp-goodall-rxd1wk`. Uygulama kodu değişmez; yalnız veri, yama sürümü, KARARLAR notu.
 
 ## Bir parti nasıl yapılır (parti N)
@@ -35,7 +37,7 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
    → her `/tmp/by/k/<QID>.jpg` kontak sayfasına bak: ayrıntı kutunun tamamen içinde mi, doğru şey mi? Düzelt, yeniden kırp.
 5. **Kaynak denetimi (kendin, birleştirmeden önce):** yazdığın her olguyu iddialarda ara. Bellekten gelen ama iddialarda olmayan
    isim, tarih, sebep, amaç **çıkar** (parti 1'de yakalananlar: "şehrini kuşatan", "kesik başın konacağı bez", "IV. Carlos",
-   bir sanatçının başka tablolarına yapılan gönderme). Resimde gözle görülen şeyler (renk, duruş, okunabilen yazı) serbesttir.
+   bir sanatçının başka tablolarına yapılan gönderme; parti 3'te: "defne çelenkli", "sekiz yıldızlı", yanlış oyma sahnesi adı). Resimde gözle görülen şeyler (renk, duruş, okunabilen yazı) serbesttir.
    Metinde kaynak adı geçmesin ("Vikipedi'ye göre" yazma; "… olarak yorumlanır" de).
 6. **Birleştir ve test et:**
    ```bash
@@ -61,5 +63,5 @@ Bu belge, işi başka bir Claude oturumunda (başka hesap) sürdürmek içindir.
 ## Sonraki oturum için hazır istem
 
 > Sanat Atlası deposunda (`emrymn/sanat-atlasi`, dal `claude/sharp-goodall-rxd1wk`) İş 189b'ye devam et:
-> `scripts/basyapit_arastirma/DEVIR.md`'yi oku ve "Durum"daki sıradaki partiyi (parti 3) aynı yolla bitir. Sonra DEVIR.md'nin
+> `scripts/basyapit_arastirma/DEVIR.md`'yi oku ve "Durum"daki sıradaki partiyi (parti 4) aynı yolla bitir. Sonra DEVIR.md'nin
 > "Durum"unu güncelle, commit ve push et. Kredin yeterse sıradaki partiye geç.
