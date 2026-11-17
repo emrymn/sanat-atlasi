@@ -2,47 +2,299 @@
  "anahtar": "Q1282840",
  "baslik_tr": "I. Napolyon İmparatorluk Tahtında",
  "kunye": {
-  "sanatci": {"deger": "Jean-Auguste-Dominique Ingres", "kaynak": "wikidata.txt", "alinti": "creator (P170): Jean-Auguste-Dominique Ingres (Q23380)"},
-  "tarih": {"deger": "1806", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1806", "ihtiyat": false},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "235 × 188 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 235 centimetre width (P2049): 188 centimetre", "ihtiyat": false},
-  "yer": {"deger": "Musée de l'Armée", "kaynak": "wikidata.txt", "alinti": "location (P276): Musée de l'Armée (Q1996069) [start time: 1832]"}
+  "sanatci": {
+   "deger": "Jean-Auguste-Dominique Ingres",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Jean-Auguste-Dominique Ingres (Q23380)"
+  },
+  "tarih": {
+   "deger": "1806",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1806",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "235 × 188 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 235 centimetre width (P2049): 188 centimetre",
+   "ihtiyat": false
+  },
+  "yer": {
+   "deger": "Musée de l'Armée",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Musée de l'Armée (Q1996069) [start time: 1832]"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Fransız ressam Jean-Auguste-Dominique Ingres'in yaptığı, Fransa İmparatoru I. Napolyon'u taç giyme kostümüyle gösteren 1806 tarihli bir portredir.", "kaynak": "enwiki.txt", "alinti": "is an 1806 portrait of Napoleon I of France in his coronation costume, painted by the French painter Jean-Auguste-Dominique Ingres.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tabloda, Napolyon'un taç giyme töreninde giydiği Karolenj imgeleri betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "his depiction of the  Carolingian imagery worn by Napoleon at his coronation", "ihtiyat": false},
-  {"id": "C03", "bolum": "gorunen", "iddia": "Napolyon, taç giyme töreninde giydiği kostümle imparator olarak, yuvarlak sırtlı ve kolçakları fildişi toplarla süslü bir tahtta oturur.", "kaynak": "enwiki.txt", "alinti": "The painting shows Napoleon as emperor, in the costume he wore for his coronation, seated on a circular-backed throne with armrests adorned with ivory balls.", "ihtiyat": false},
-  {"id": "C04", "bolum": "gorunen", "iddia": "Napolyon sağ elinde Şarlman'ın asasasını tutar.", "kaynak": "enwiki.txt", "alinti": "In his right hand, he holds the scepter of Charlemagne.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Sol elinde ise adalet eli tutar.", "kaynak": "enwiki.txt", "alinti": "In his left hand, that of justice.", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Başında, Julius Caesar'ın taktığına benzer altın bir defne çelengi vardır.", "kaynak": "enwiki.txt", "alinti": "On his head is a golden laurel wreath, similar to one worn by Julius Caesar.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Kakım kürklü başlığını Légion d'honneur'un büyük kolyesinin altında giyer.", "kaynak": "enwiki.txt", "alinti": "He also wears an ermine hood under the great collar of the Légion d'honneur", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Altın işlemeli saten bir tunik ile kakım kürkü astarlı, altın arılarla bezeli mor kadife bir pelerin giyer.", "kaynak": "enwiki.txt", "alinti": "a gold-embroidered satin tunic and an ermine-lined purple velvet cloak decorated with gold bees", "ihtiyat": false},
-  {"id": "C09", "bolum": "gorunen", "iddia": "Taç giyme kılıcı kınındadır ve ipek bir eşarpla yukarıda tutulur.", "kaynak": "enwiki.txt", "alinti": "The coronation sword is in its scabbard and held up by a silk scarf.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Altın işlemeli beyaz ayakkabılar bir yastığın üzerinde durur.", "kaynak": "enwiki.txt", "alinti": "The subject wears white shoes embroidered in gold and resting on a cushion.", "ihtiyat": false},
-  {"id": "C11", "bolum": "gorunen", "iddia": "Tahtın altındaki halıda bir imparatorluk kartalı görülür.", "kaynak": "enwiki.txt", "alinti": "The carpet under the throne displays an imperial eagle.", "ihtiyat": false},
-  {"id": "C12", "bolum": "gorunen", "iddia": "Sol alt köşede INGRES P xit imzası yer alır.", "kaynak": "enwiki.txt", "alinti": "The signature INGRES P xit is in the bottom left", "ihtiyat": false},
-  {"id": "C13", "bolum": "gorunen", "iddia": "Sağ alt köşede ANNO 1806 yazısı bulunur.", "kaynak": "enwiki.txt", "alinti": "and ANNO 1806 in the bottom right", "ihtiyat": false},
-  {"id": "C14", "bolum": "gorunen", "iddia": "Resmin sağ üstünde, enine yarısından kesilmiş biçimde, Papalık Devletleri, Este, Milano, Venedik ve Savoy armalarını taşıyan ve İtalya tacıyla taçlandırılmış bir kalkan görülür.", "kaynak": "enwiki.txt", "alinti": "At the top right of the painting (and much more visibly on the preparatory drawing), cut off halfway across its width, can be seen a shield with the arms of the Papal States, Este, Milan, Venice and Savoy, all surmounted with the crown of Italy.", "ihtiyat": false},
-  {"id": "C15", "bolum": "gorunen", "iddia": "Halının sol kenarında, zodyak madalyonları arasında, Rafael'in Madonna della seggiola tablosunun bir versiyonunu içeren bir madalyon vardır.", "kaynak": "enwiki.txt", "alinti": "In the left border of the carpet, among medallions of the zodiac, is a medallion with a version of the Madonna della seggiola by Raphael, the artist Ingres most admired.", "ihtiyat": false},
-  {"id": "C16", "bolum": "kompozisyon", "iddia": "Sağ üstteki kalkan, hazırlık çiziminde çok daha belirgin biçimde görülmektedir.", "kaynak": "enwiki.txt", "alinti": "At the top right of the painting (and much more visibly on the preparatory drawing), cut off halfway across its width, can be seen a shield", "ihtiyat": false},
-  {"id": "C17", "bolum": "anlam", "iddia": "Portrenin cepheden duruşu, Phidias'ın Olympia'daki kolosal Zeus heykeline gönderme yapar.", "kaynak": "enwiki.txt", "alinti": "This portrait's frontality refers to the colossal Statue of Zeus at Olympia by Phidias", "ihtiyat": false},
-  {"id": "C18", "bolum": "anlam", "iddia": "Montauban Müzesi'ndeki, oturan imparatoru gösteren bir Bizans panelinden alınma imgeli kadeh, Ingres'in doğrudan modeli olmuş olabilir.", "kaynak": "enwiki.txt", "alinti": "The Musée de Montauban has a chalice with an image after a Byzantine panel showing the seated emperor, which may have been Ingres' direct model.", "ihtiyat": true},
-  {"id": "C19", "bolum": "anlam", "iddia": "Robert Rosenblum'a göre Ingres'in modeli, Jan van Eyck'in Gent Altarpiece'indeki Baba Tanrı figürüdür.", "kaynak": "enwiki.txt", "alinti": "For Robert Rosenblum, Ingres's model was the figure of God the Father on the Ghent Altarpiece by Jan van Eyck, which was in the Louvre at the time Ingres painted this portrait.", "ihtiyat": true},
-  {"id": "C20", "bolum": "anlam", "iddia": "Sébastien Allard, tablonun Napolyon'u imparator değil İtalya kralı olarak göstermek üzere bir İtalyan kurumu tarafından sipariş edildiğini öne sürer.", "kaynak": "enwiki.txt", "alinti": "From this Sébastien Allard hypothesizes that the painting was commissioned by an Italian institution to show Napoleon as king of Italy not as emperor, but, due to its innovative iconography, the original commissioners refused it and that was why it was acquired by the Corps législatif.", "ihtiyat": true},
-  {"id": "C21", "bolum": "onem", "iddia": "Tablo, 1806 Salonu'nda 272 numarayla, His Majesty the Emperor on his throne adıyla sergilenmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was exhibited as work number 272 at the Salon of 1806 as His Majesty the Emperor on his throne", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Sergilendiği sırada tablonun sahibi olarak Corps législatif kaydedilmiştir.", "kaynak": "enwiki.txt", "alinti": "when it was recorded as being owned by the Corps législatif", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "1815'te Louvre Müzesi'ne aktarılan tablo önce MR 2069 envanter numarasını almış, günümüzde INV. 5420 olarak bilinmektedir.", "kaynak": "enwiki.txt", "alinti": "In 1815 Ingres's painting was transferred to the Louvre Museum, where it was first inventoried as MR 2069 and is now known as INV. 5420.", "ihtiyat": false},
-  {"id": "C24", "bolum": "onem", "iddia": "1832'de comte de Forbin tabloyu Hotel des Invalides'te sergiletti; önce şapelde, 1860'tan itibaren kütüphanede.", "kaynak": "enwiki.txt", "alinti": "In 1832 the comte de Forbin had it put on display in the Hotel des Invalides, at first in the chapel then from 1860 in the library.", "ihtiyat": false},
-  {"id": "C25", "bolum": "onem", "iddia": "Tablo Salonda, Ingres'in üslup tuhaflıkları ve Napolyon'un taç giyme töreninde giydiği Karolenj imgelerinin betimi nedeniyle rahatsız edici bir izlenim yaratmıştır.", "kaynak": "enwiki.txt", "alinti": "At the Salon, it produced a disturbing impression on the public, due not only to Ingres's stylistic idiosyncrasies but also to his depiction of the  Carolingian imagery worn by Napoleon at his coronation.", "ihtiyat": false},
-  {"id": "C26", "bolum": "onem", "iddia": "David, tablo hakkında sert bir yargı bildirmiştir.", "kaynak": "enwiki.txt", "alinti": "David (who finished his own The Coronation of Napoleon the following year) delivered a severe judgement", "ihtiyat": false},
-  {"id": "C27", "bolum": "onem", "iddia": "Eleştirmenler renk uyumsuzluklarını, heykelsi kabartma eksikliğini, konturun soğuk kesinliğini ve bilinçli arkaik niteliği kusur bularak oybirliğiyle düşmanca tepki verdi.", "kaynak": "enwiki.txt", "alinti": "the critics were uniformly hostile, finding fault with the strange discordances of colour, the want of sculptural relief, the chilly precision of contour, and the self-consciously archaic quality", "ihtiyat": false},
-  {"id": "C28", "bolum": "onem", "iddia": "Chaussard, Le Pausanias Français'te (1806) Ingres'in üslubunu gotik olarak mahkûm etmiştir.", "kaynak": "enwiki.txt", "alinti": "As shown above, Chaussard (Le Pausanias Français, 1806) condemned Ingres's style as gothic (the troubadour style was beginning at this time).", "ihtiyat": false},
-  {"id": "C29", "bolum": "onem", "iddia": "Ingres, Jean de Bruges'e saygı duyduğunu ama onun kendi ressami olmadığını ve eleştirmenlerin onu rastgele andığını düşündüğünü belirtmiştir.", "kaynak": "enwiki.txt", "alinti": "However, Ingres himself stated:\n\nI think much of Jean de Bruges, I would wish to resemble him in many ways; but still, he is not my painter and I believe that [the critics] cited him at random.", "ihtiyat": false},
-  {"id": "C30", "bolum": "onem", "iddia": "Allard'a göre özgün siparişçiler yenilikçi ikonografi nedeniyle tabloyu reddetmiş, bu yüzden tablo Corps législatif tarafından edinilmiştir.", "kaynak": "enwiki.txt", "alinti": "From this Sébastien Allard hypothesizes that the painting was commissioned by an Italian institution to show Napoleon as king of Italy not as emperor, but, due to its innovative iconography, the original commissioners refused it and that was why it was acquired by the Corps législatif.", "ihtiyat": true}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Fransız ressam Jean-Auguste-Dominique Ingres'in yaptığı, Fransa İmparatoru I. Napolyon'u taç giyme kostümüyle gösteren 1806 tarihli bir portredir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "is an 1806 portrait of Napoleon I of France in his coronation costume, painted by the French painter Jean-Auguste-Dominique Ingres.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Tabloda, Napolyon'un taç giyme töreninde giydiği Karolenj imgeleri betimlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "his depiction of the  Carolingian imagery worn by Napoleon at his coronation",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Napolyon, taç giyme töreninde giydiği kostümle imparator olarak, yuvarlak sırtlı ve kolçakları fildişi toplarla süslü bir tahtta oturur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting shows Napoleon as emperor, in the costume he wore for his coronation, seated on a circular-backed throne with armrests adorned with ivory balls.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Napolyon sağ elinde Şarlman'ın asasını tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In his right hand, he holds the scepter of Charlemagne.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Sol elinde ise adalet asasını tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In his left hand, that of justice.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Başında, Julius Caesar'ın taktığına benzer altın bir defne çelengi vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On his head is a golden laurel wreath, similar to one worn by Julius Caesar.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Kakım kürklü başlığını Légion d'honneur'un büyük kolyesinin altında giyer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He also wears an ermine hood under the great collar of the Légion d'honneur",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Altın işlemeli saten bir tunik ile kakım kürkü astarlı, altın arılarla bezeli mor kadife bir pelerin giyer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "a gold-embroidered satin tunic and an ermine-lined purple velvet cloak decorated with gold bees",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Taç giyme kılıcı kınındadır ve ipek bir eşarpla yukarıda tutulur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The coronation sword is in its scabbard and held up by a silk scarf.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Altın işlemeli beyaz ayakkabılar bir yastığın üzerinde durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The subject wears white shoes embroidered in gold and resting on a cushion.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Tahtın altındaki halıda bir imparatorluk kartalı görülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The carpet under the throne displays an imperial eagle.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Sol alt köşede INGRES P xit imzası yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The signature INGRES P xit is in the bottom left",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "gorunen",
+   "iddia": "Sağ alt köşede ANNO 1806 yazısı bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "and ANNO 1806 in the bottom right",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "gorunen",
+   "iddia": "Resmin sağ üstünde, enine yarısından kesilmiş biçimde, Papalık Devletleri, Este, Milano, Venedik ve Savoy armalarını taşıyan ve İtalya tacıyla taçlandırılmış bir kalkan görülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the top right of the painting (and much more visibly on the preparatory drawing), cut off halfway across its width, can be seen a shield with the arms of the Papal States, Este, Milan, Venice and Savoy, all surmounted with the crown of Italy.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "gorunen",
+   "iddia": "Halının sol kenarında, zodyak madalyonları arasında, Rafael'in Madonna della seggiola tablosunun bir versiyonunu içeren bir madalyon vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the left border of the carpet, among medallions of the zodiac, is a medallion with a version of the Madonna della seggiola by Raphael, the artist Ingres most admired.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Sağ üstteki kalkan, hazırlık çiziminde çok daha belirgin biçimde görülmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the top right of the painting (and much more visibly on the preparatory drawing), cut off halfway across its width, can be seen a shield",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Portrenin cepheden duruşu, Phidias'ın Olympia'daki kolosal Zeus heykeline gönderme yapar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This portrait's frontality refers to the colossal Statue of Zeus at Olympia by Phidias",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Montauban Müzesi'ndeki, oturan imparatoru gösteren bir Bizans panelinden alınma imgeli kadeh, Ingres'in doğrudan modeli olmuş olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Musée de Montauban has a chalice with an image after a Byzantine panel showing the seated emperor, which may have been Ingres' direct model.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Robert Rosenblum'a göre Ingres'in modeli, Jan van Eyck'in Gent Altarpiece'indeki Baba Tanrı figürüdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "For Robert Rosenblum, Ingres's model was the figure of God the Father on the Ghent Altarpiece by Jan van Eyck, which was in the Louvre at the time Ingres painted this portrait.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Sébastien Allard, tablonun Napolyon'u imparator değil İtalya kralı olarak göstermek üzere bir İtalyan kurumu tarafından sipariş edildiğini öne sürer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "From this Sébastien Allard hypothesizes that the painting was commissioned by an Italian institution to show Napoleon as king of Italy not as emperor, but, due to its innovative iconography, the original commissioners refused it and that was why it was acquired by the Corps législatif.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Tablo, 1806 Salonu'nda 272 numarayla, His Majesty the Emperor on his throne adıyla sergilenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was exhibited as work number 272 at the Salon of 1806 as His Majesty the Emperor on his throne",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Sergilendiği sırada tablonun sahibi olarak Corps législatif kaydedilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "when it was recorded as being owned by the Corps législatif",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "1815'te Louvre Müzesi'ne aktarılan tablo önce MR 2069 envanter numarasını almış, günümüzde INV. 5420 olarak bilinmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1815 Ingres's painting was transferred to the Louvre Museum, where it was first inventoried as MR 2069 and is now known as INV. 5420.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "1832'de comte de Forbin tabloyu Hotel des Invalides'te sergiletti; önce şapelde, 1860'tan itibaren kütüphanede.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1832 the comte de Forbin had it put on display in the Hotel des Invalides, at first in the chapel then from 1860 in the library.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Tablo Salonda, Ingres'in üslup tuhaflıkları ve Napolyon'un taç giyme töreninde giydiği Karolenj imgelerinin betimi nedeniyle rahatsız edici bir izlenim yaratmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the Salon, it produced a disturbing impression on the public, due not only to Ingres's stylistic idiosyncrasies but also to his depiction of the  Carolingian imagery worn by Napoleon at his coronation.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "David, tablo hakkında sert bir yargı bildirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "David (who finished his own The Coronation of Napoleon the following year) delivered a severe judgement",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Eleştirmenler renk uyumsuzluklarını, heykelsi kabartma eksikliğini, konturun soğuk kesinliğini ve bilinçli arkaik niteliği kusur bularak oybirliğiyle düşmanca tepki verdi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the critics were uniformly hostile, finding fault with the strange discordances of colour, the want of sculptural relief, the chilly precision of contour, and the self-consciously archaic quality",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Chaussard, Le Pausanias Français'te (1806) Ingres'in üslubunu gotik olarak mahkûm etmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "As shown above, Chaussard (Le Pausanias Français, 1806) condemned Ingres's style as gothic (the troubadour style was beginning at this time).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Ingres, Jean de Bruges'e saygı duyduğunu ama onun kendi ressami olmadığını ve eleştirmenlerin onu rastgele andığını düşündüğünü belirtmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "However, Ingres himself stated:\n\nI think much of Jean de Bruges, I would wish to resemble him in many ways; but still, he is not my painter and I believe that [the critics] cited him at random.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Allard'a göre özgün siparişçiler yenilikçi ikonografi nedeniyle tabloyu reddetmiş, bu yüzden tablo Corps législatif tarafından edinilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "From this Sébastien Allard hypothesizes that the painting was commissioned by an Italian institution to show Napoleon as king of Italy not as emperor, but, due to its innovative iconography, the original commissioners refused it and that was why it was acquired by the Corps législatif.",
+   "ihtiyat": true
+  }
  ],
  "celiskiler": [
-  {"konu": "sağ eldeki asa", "a": {"kaynak": "wikidata.txt", "alinti": "depicts (P180): scepter of Charles V (Q3475272)"}, "b": {"kaynak": "enwiki.txt", "alinti": "In his right hand, he holds the scepter of Charlemagne."}},
-  {"konu": "ölçü (tarihsel eleştiri betimi)", "a": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 235 centimetre width (P2049): 188 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "His Majesty the Emperor on his Throne - 9 foot by 13 foot"}}
+  {
+   "konu": "sağ eldeki asa",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "depicts (P180): scepter of Charles V (Q3475272)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "In his right hand, he holds the scepter of Charlemagne."
+   }
+  },
+  {
+   "konu": "ölçü (tarihsel eleştiri betimi)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "height (P2048): 235 centimetre width (P2049): 188 centimetre"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "His Majesty the Emperor on his Throne - 9 foot by 13 foot"
+   }
+  }
  ],
  "bulunamadi": [
   "hikaye: taç giyme töreninin tarihi, öncesine ve sonrasına ilişkin kaynakta bilgi yok",
