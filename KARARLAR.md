@@ -2514,3 +2514,12 @@ Giorgione, Correggio) hikâye `data/ikonografi.json` konu metninden. Atfı tart�
 Defin) metinde ihtiyatla yazıldı. Kaynak denetiminde çıkarılanlar: Bruegel'in "hayalî dağlar"ı, Vermeer'in "erken dönem tarih
 resmi" cümlesi ve görülmeyen hale, Holbein ve Giorgione için kaynaksız "en sarsıcı / şiirsel" övgüler. Birim 388/388; uçtan uca
 13/13. 214 başyapıt, 1222 nokta.
+
+### İş 189b · parti 7: 10 yakın okuma (sürüm 1.83.8)
+
+La Tour · Marangoz Yusuf, Michelangelo (atıf) · Aziz Antonius'un Azabı, Poussin · Altın Buzağıya Tapınma, Tintoretto ·
+Samanyolu'nun Kökeni, Ingres · Homeros'un Apoteozu, Bouguereau · İlk Yas, Mantegna · Bahçede Acı Çekme, Botticelli · Mistik
+Doğum, Vermeer · Diana ve Nimfleri, Gauguin · Yeşil İsa; 58 nokta. Ingres'te Raphael, Dante ve Poussin büyütülmüş görselde yer
+saptanarak kutulandı (Molière kutusu 6 nokta sınırı için çıkarıldı). İnce araştırmalı Bouguereau ve Mantegna'da hikâye
+`data/ikonografi.json`'dan. Kaynak denetiminde çıkarılanlar: Poussin'de "onarıldı", Mantegna'da Bellini tablosunun aynı müzede
+olduğu ve kuşun "uğursuz" yorumu, Gauguin'de Sarı İsa'yla "öncü" kıyası. Birim 388/388; uçtan uca 13/13. 224 başyapıt, 1279 nokta.
