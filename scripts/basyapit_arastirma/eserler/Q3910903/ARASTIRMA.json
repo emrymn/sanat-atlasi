@@ -2,39 +2,233 @@
  "anahtar": "Q3910903",
  "baslik_tr": "Tapınakta Sunuluş",
  "kunye": {
-  "sanatci": {"deger": "Ambrogio Lorenzetti", "kaynak": "wikidata.txt", "alinti": "creator (P170): Ambrogio Lorenzetti (Q211562)"},
-  "tarih": {"deger": "1342", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1342", "ihtiyat": false},
-  "teknik": {"deger": "panel üzerine tempera", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)"},
-  "olcu": {"deger": "257 × 168 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 257 centimetre width (P2049): 168 centimetre"},
-  "yer": {"deger": "Uffizi Gallery, Floransa, İtalya", "kaynak": "enwiki.txt", "alinti": "now housed in the Uffizi Gallery of Florence, Italy"}
+  "sanatci": {
+   "deger": "Ambrogio Lorenzetti",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Ambrogio Lorenzetti (Q211562)"
+  },
+  "tarih": {
+   "deger": "1342",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1342",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "panel üzerine tempera",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)"
+  },
+  "olcu": {
+   "deger": "257 × 168 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 257 centimetre width (P2049): 168 centimetre"
+  },
+  "yer": {
+   "deger": "Uffizi Gallery, Floransa, İtalya",
+   "kaynak": "enwiki.txt",
+   "alinti": "now housed in the Uffizi Gallery of Florence, Italy"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Yahudi Hukuku'na göre çocuğun doğumundan kırk gün sonra gerçekleşmesi gereken tapınakta sunuluş olayını betimler.", "kaynak": "enwiki.txt", "alinti": "The painting depicts the presentation at the temple, an event which, according to the Hebraic Law, should occur forty days after a child's birth, to allow the mother to purify herself.", "ihtiyat": true},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablo aslen Siena Katedrali'ndeki St. Crescentius sunağını süslüyordu.", "kaynak": "enwiki.txt", "alinti": "The painting originally decorated the altar of St. Crescentius in the Cathedral of Siena", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Tablo, kentin koruyucu azizlerine adanmış dört sunak panoluk bir döngü kapsamında 1330–1350 yılları arasında sipariş edilmişti.", "kaynak": "enwiki.txt", "alinti": "had been commissioned as part of a cycle of four altarpieces dedicated to the city's patrons saints (St. Ansanus, St. Sabinus of Spoleto, St. Crescentius and St. Victor) during 1330–1350", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "İki 15. yüzyıl betimlemesi, eseri yan panellerinde Başmelek Mikail ve başını bir elinde tutan Şehit Crescentius ile altta bir predella bulunan bir triptik olarak anar.", "kaynak": "enwiki.txt", "alinti": "Two 15th-century descriptions mention the work as a triptych, with two side panels portraying St. Michael Archangel and St. Crescentius Martyr (who held his head in a hand) and, below, a predella.", "ihtiyat": false},
-  {"id": "C05", "bolum": "hikaye", "iddia": "Eser daha sonra parçalarına ayrıldı ve Siena'da bir rahibe manastırına yerleştirildi.", "kaynak": "enwiki.txt", "alinti": "It was later disassembled and placed in a nunnery in Siena.", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "İki ince orta sütunun arasında, çocuğun sarıldığı bezi tutan Madonna, hareketli ayakları ve ağzındaki parmağıyla çocuk ve konuşarak çocuğu kollarına alan Salih Simeon bulunur.", "kaynak": "enwiki.txt", "alinti": "Within two central, slender columns are the Madonna (holding the cloth in which the child was kept), the child (with moving feet and a finger in the mouth), and Simeon the Righteous, who is speaking and taking the child in his arms.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "En solda Yusuf yer alır ve önünde iki kadın bulunur.", "kaynak": "enwiki.txt", "alinti": "At the far left is Joseph, preceded by two women", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Sağda Anna, Luka İncili'nden bir alıntı (2:38) içeren Latince bir kartuşla birlikte yer alır.", "kaynak": "enwiki.txt", "alinti": "At the right is Anna, accompanied by a Latin cartouche with a citation from the Gospel of Luke (2:38 – And coming up at that very hour she gave thanks to God, and spoke of him to all who were looking for the redemption of Jerusalem.)", "ihtiyat": false},
-  {"id": "C09", "bolum": "gorunen", "iddia": "Sunağın arkasında, sunak ateşindeki kurban için güvercinler tutan ve sol elinde bıçak bulunan bir rahip vardır.", "kaynak": "enwiki.txt", "alinti": "Behind the altar is a priest with the pigeons for the sacrifice on the altar fire and, in the left hand, the knife.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Bu rahibin solunda, mimari öğelerin arkasında iki rahip daha kısmen görünür.", "kaynak": "enwiki.txt", "alinti": "Two other priests are partly visible at his left behind the architectural elements.", "ihtiyat": false},
-  {"id": "C11", "bolum": "kompozisyon", "iddia": "Sahne, Gotik üslupta ince biçimde bezenmiş, bir nef ve iki yan koridoru olan kilise içinde kuruludur; her bölüm üç yapraklı sivri kemerlerle örtülüdür.", "kaynak": "enwiki.txt", "alinti": "The scene is set within church, finely decorated in Gothic style (somewhat similar to the Cathedral of Siena) with a nave and two aisles, each surmounted by three-foiled ogival arches.", "ihtiyat": false},
-  {"id": "C12", "bolum": "kompozisyon", "iddia": "Rahiplerin üzerinde, kilise içinde, iki meleğin Kutsayan İsa'yı taşıyan bir clipeus tuttuğu bir zafer takı bulunur.", "kaynak": "enwiki.txt", "alinti": "Above the priests, within the church, is a triumphal arch with two angels; they hold a clipeus with the Blessing Christ.", "ihtiyat": false},
-  {"id": "C13", "bolum": "kompozisyon", "iddia": "Yan koridorların lunetlerinde kartuşlu peygamberler, ön plandaki sütunların üzerinde ise On Emir levhasıyla Musa ve elinde Güneş tutan Yeşu'nun iki küçük heykeli yer alır.", "kaynak": "enwiki.txt", "alinti": "The lunettes of the aisles show prophets with cartouches, while above the columns in the foreground are depicted two small statues of Moses, with the table of the Ten Commandments, and Joshua, with the Sun in his hand.", "ihtiyat": false},
-  {"id": "C14", "bolum": "kompozisyon", "iddia": "Üst bölümde, kemerlerin mermer kakmasının ve ejderhalı frizin üzerinde, çelenkli bir dizi melek yer alır.", "kaynak": "enwiki.txt", "alinti": "In the upper part, above the marble intarsia of the arches and frieze with dragons, is a series of angels with a garland.", "ihtiyat": false},
-  {"id": "C15", "bolum": "kompozisyon", "iddia": "Merkez üst kemer, kartuşlarında Kutsal Kitap'tan Latince ayetler bulunan Musa ve Malaki figürlerini içerir.", "kaynak": "enwiki.txt", "alinti": "Finally, the central top arch includes the figures of Moses and Malachi, who also have cartouches with Latin verses taken from the Bible.", "ihtiyat": false},
-  {"id": "C16", "bolum": "anlam", "iddia": "Kadınlarda hale bulunmaması, onların kutsal statüye sahip olmadığını belirtmek içindir.", "kaynak": "enwiki.txt", "alinti": "two women: the latter have no aureolae, to mark that they have no holy status", "ihtiyat": false},
-  {"id": "C17", "bolum": "anlam", "iddia": "Kurban güvercinleri, arınma sunusuna odaklanmak için tablonun merkezinde değil kenarında yer alır.", "kaynak": "enwiki.txt", "alinti": "The sacrificial pigeons appear on the edge of the painting rather than the center to focus on the purification offering.", "ihtiyat": false},
-  {"id": "C18", "bolum": "anlam", "iddia": "Sunuluş olayı, Yahudi Hukuku'na göre annenin kendini arındırmasına olanak tanımak için gerçekleşir.", "kaynak": "enwiki.txt", "alinti": "The painting depicts the presentation at the temple, an event which, according to the Hebraic Law, should occur forty days after a child's birth, to allow the mother to purify herself.", "ihtiyat": true},
-  {"id": "C19", "bolum": "onem", "iddia": "Eser, İtalyan Orta Çağ ressamının en büyük işlerinden biri ve onun imzalayıp tarihlediği beş eserden biridir.", "kaynak": "enwiki.txt", "alinti": "It is one of the largest works by the Italian medieval painter, as well as one of the five which he signed and dated.", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "Bir yüzyıl sonra, Giovanni di Paolo ve Bartolo di Fredi dahil sanatçılar tablonun kopyalarını yapmıştır.", "kaynak": "enwiki.txt", "alinti": "A century later, artists including Giovanni di Paolo and Bartolo di Fredi executed copies of the painting.", "ihtiyat": false},
-  {"id": "C21", "bolum": "onem", "iddia": "Toskana Grandükü III. Ferdinand, eseri 1822'de Floransa'ya taşıttı.", "kaynak": "enwiki.txt", "alinti": "Grand Duke Ferdinand III of Tuscany had his transferred to Florence in 1822.", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Eser, 1913'te Uffizi koleksiyonunun parçası oldu.", "kaynak": "enwiki.txt", "alinti": "It became part of the Uffizi collection in 1913.", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "Döngüdeki tablolarda pahalı lake ve lapis lazuli kullanılması, siparişin prestijini göstermektedir.", "kaynak": "enwiki.txt", "alinti": "The use of expensive lacquer in the paintings and lapis lazuli shows the prestige of the commission.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Yahudi Hukuku'na göre çocuğun doğumundan kırk gün sonra gerçekleşmesi gereken tapınakta sunuluş olayını betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts the presentation at the temple, an event which, according to the Hebraic Law, should occur forty days after a child's birth, to allow the mother to purify herself.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C02",
+   "bolum": "onem",
+   "iddia": "Tablo aslen Siena Katedrali'ndeki St. Crescentius sunağını süslüyordu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting originally decorated the altar of St. Crescentius in the Cathedral of Siena",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "onem",
+   "iddia": "Tablo, kentin koruyucu azizlerine adanmış dört sunak panoluk bir döngü kapsamında 1330–1350 yılları arasında sipariş edilmişti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "had been commissioned as part of a cycle of four altarpieces dedicated to the city's patrons saints (St. Ansanus, St. Sabinus of Spoleto, St. Crescentius and St. Victor) during 1330–1350",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "onem",
+   "iddia": "İki 15. yüzyıl betimlemesi, eseri yan panellerinde Başmelek Mikail ve başını bir elinde tutan Şehit Crescentius ile altta bir predella bulunan bir triptik olarak anar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Two 15th-century descriptions mention the work as a triptych, with two side panels portraying St. Michael Archangel and St. Crescentius Martyr (who held his head in a hand) and, below, a predella.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "onem",
+   "iddia": "Eser daha sonra parçalarına ayrıldı ve Siena'da bir rahibe manastırına yerleştirildi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was later disassembled and placed in a nunnery in Siena.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "İki ince orta sütunun arasında, çocuğun sarıldığı bezi tutan Madonna, hareketli ayakları ve ağzındaki parmağıyla çocuk ve konuşarak çocuğu kollarına alan Salih Simeon bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Within two central, slender columns are the Madonna (holding the cloth in which the child was kept), the child (with moving feet and a finger in the mouth), and Simeon the Righteous, who is speaking and taking the child in his arms.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "En solda Yusuf yer alır ve önünde iki kadın bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the far left is Joseph, preceded by two women",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Sağda Anna, Luka İncili'nden bir alıntı (2:38) içeren Latince bir kartuşla birlikte yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "At the right is Anna, accompanied by a Latin cartouche with a citation from the Gospel of Luke (2:38 – And coming up at that very hour she gave thanks to God, and spoke of him to all who were looking for the redemption of Jerusalem.)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Sunağın arkasında, sunak ateşindeki kurban için güvercinler tutan ve sol elinde bıçak bulunan bir rahip vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Behind the altar is a priest with the pigeons for the sacrifice on the altar fire and, in the left hand, the knife.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Bu rahibin solunda, mimari öğelerin arkasında iki rahip daha kısmen görünür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Two other priests are partly visible at his left behind the architectural elements.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Sahne, Gotik üslupta ince biçimde bezenmiş, bir nef ve iki yan koridoru olan kilise içinde kuruludur; her bölüm üç yapraklı sivri kemerlerle örtülüdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The scene is set within church, finely decorated in Gothic style (somewhat similar to the Cathedral of Siena) with a nave and two aisles, each surmounted by three-foiled ogival arches.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Rahiplerin üzerinde, kilise içinde, iki meleğin Kutsayan İsa'yı taşıyan bir clipeus tuttuğu bir zafer takı bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Above the priests, within the church, is a triumphal arch with two angels; they hold a clipeus with the Blessing Christ.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Yan koridorların lunetlerinde kartuşlu peygamberler, ön plandaki sütunların üzerinde ise On Emir levhasıyla Musa ve elinde Güneş tutan Yeşu'nun iki küçük heykeli yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The lunettes of the aisles show prophets with cartouches, while above the columns in the foreground are depicted two small statues of Moses, with the table of the Ten Commandments, and Joshua, with the Sun in his hand.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Üst bölümde, kemerlerin mermer kakmasının ve ejderhalı frizin üzerinde, çelenkli bir dizi melek yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the upper part, above the marble intarsia of the arches and frieze with dragons, is a series of angels with a garland.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Merkez üst kemer, kartuşlarında Kutsal Kitap'tan Latince ayetler bulunan Musa ve Malaki figürlerini içerir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Finally, the central top arch includes the figures of Moses and Malachi, who also have cartouches with Latin verses taken from the Bible.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Kadınlarda hale bulunmaması, onların kutsal statüye sahip olmadığını belirtmek içindir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "two women: the latter have no aureolae, to mark that they have no holy status",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Kurban güvercinleri, arınma sunusuna odaklanmak için tablonun merkezinde değil kenarında yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The sacrificial pigeons appear on the edge of the painting rather than the center to focus on the purification offering.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Sunuluş olayı, Yahudi Hukuku'na göre annenin kendini arındırmasına olanak tanımak için gerçekleşir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts the presentation at the temple, an event which, according to the Hebraic Law, should occur forty days after a child's birth, to allow the mother to purify herself.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Eser, İtalyan Orta Çağ ressamının en büyük işlerinden biri ve onun imzalayıp tarihlediği beş eserden biridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is one of the largest works by the Italian medieval painter, as well as one of the five which he signed and dated.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Bir yüzyıl sonra, Giovanni di Paolo ve Bartolo di Fredi dahil sanatçılar tablonun kopyalarını yapmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A century later, artists including Giovanni di Paolo and Bartolo di Fredi executed copies of the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Toskana Grandükü III. Ferdinand, eseri 1822'de Floransa'ya taşıttı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Grand Duke Ferdinand III of Tuscany had his transferred to Florence in 1822.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Eser, 1913'te Uffizi koleksiyonunun parçası oldu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It became part of the Uffizi collection in 1913.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Döngüdeki tablolarda pahalı lake ve lapis lazuli kullanılması, siparişin prestijini göstermektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The use of expensive lacquer in the paintings and lapis lazuli shows the prestige of the commission.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "yer", "a": {"kaynak": "wikidata.txt", "alinti": "location (P276): Siena Cathedral (Q282554)"}, "b": {"kaynak": "enwiki.txt", "alinti": "now housed in the Uffizi Gallery of Florence, Italy"}}
+  {
+   "konu": "yer",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "location (P276): Siena Cathedral (Q282554)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "now housed in the Uffizi Gallery of Florence, Italy"
+   }
+  }
  ],
- "bulunamadi": []
+ "bulunamadi": [
+  "hikaye: kaynakta resmin anlattığı olaya dair yeterli bilgi yok"
+ ]
 }

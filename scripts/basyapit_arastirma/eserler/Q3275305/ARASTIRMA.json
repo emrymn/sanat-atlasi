@@ -2,41 +2,253 @@
  "anahtar": "Q3275305",
  "baslik_tr": "Aziz Hieronymus'un Görümü",
  "kunye": {
-  "sanatci": {"deger": "Parmigianino", "kaynak": "wikidata.txt", "alinti": "creator (P170): Parmigianino (Q9348)"},
-  "tarih": {"deger": "1526–1527", "kaynak": "enwiki.txt", "alinti": "executed in 1526–1527", "ihtiyat": false},
-  "teknik": {"deger": "yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)"},
-  "olcu": {"deger": "343 × 149 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 343 centimetre width (P2049): 149 centimetre"},
-  "yer": {"deger": "National Gallery, Londra", "kaynak": "enwiki.txt", "alinti": "It is in the collection of the National Gallery, in London."}
+  "sanatci": {
+   "deger": "Parmigianino",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Parmigianino (Q9348)"
+  },
+  "tarih": {
+   "deger": "1526–1527",
+   "kaynak": "enwiki.txt",
+   "alinti": "executed in 1526–1527",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)"
+  },
+  "olcu": {
+   "deger": "343 × 149 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 343 centimetre width (P2049): 149 centimetre"
+  },
+  "yer": {
+   "deger": "National Gallery, Londra",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is in the collection of the National Gallery, in London."
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, 3 Ocak 1526'da Roma'da, Antonio Caccialupi'nin eşi Maria Bufalini tarafından, San Salvatore in Lauro kilisesindeki aile şapelini süslemek üzere sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The work was commissioned on 3 January 1526 in Rome, by Maria Bufalini, wife of Antonio Caccialupi, to decorate the family chapel in the church of San Salvatore in Lauro.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablonun uzun biçimi, özgün olarak bir triptikin parçası olmasından gelir; hiç boyanmamış yan paneller, şapelin adandığı Lekesiz Gebelik ile Aziz Joachim ve Anna'yı temsil edecekti.", "kaynak": "enwiki.txt", "alinti": "The elongated shape derives from its original destination as part of a triptych, the side panels (never painted) of which would have represented The Immaculate Conception (to which the chapel was dedicated) and the Saints Joachim and Anna.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Roma'daki amcası, tabloyu Santa Maria della Pace'nin yemekhanesine saklamayı başarmıştır.", "kaynak": "enwiki.txt", "alinti": "His uncle in Rome was able to hide the painting in the refectory of Santa Maria della Pace.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "1558'de Bufalini ailesi, tabloyu Città di Castello'daki Sant'Agostino'da bulunan şapellerine taşımaya karar vermiştir.", "kaynak": "enwiki.txt", "alinti": "In 1558 the Bufalini family decided to move the painting to their chapel in Sant'Agostino in Città di Castello.", "ihtiyat": false},
-  {"id": "C05", "bolum": "hikaye", "iddia": "Tablo, 1790'da onu İngiltere'ye götüren İngiliz ressam James Durno tarafından edinilmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was acquired in 1790 by the English painter James Durno who brought it to England.", "ihtiyat": false},
-  {"id": "C06", "bolum": "hikaye", "iddia": "Tablo daha sonra 1.500 gine karşılığında Albercon Markisi'ne satılmıştır.", "kaynak": "enwiki.txt", "alinti": "There it was subsequently sold to the Marquess of Albercon for 1,500 guineas.", "ihtiyat": false},
-  {"id": "C07", "bolum": "hikaye", "iddia": "Birkaç ek satışın ardından tablo, 1826'da National Gallery tarafından edinilmiştir.", "kaynak": "enwiki.txt", "alinti": "After a number of further sales, the painting was acquired by the National Gallery in 1826.", "ihtiyat": false},
-  {"id": "C08", "bolum": "hikaye", "iddia": "Musée Condé, British Museum ve Getty Center gibi çeşitli müzelerde, tablonun hazırlığı için yapılmış görünen yaklaşık 20 çizim bulunmaktadır.", "kaynak": "enwiki.txt", "alinti": "There are about 20 drawings in various museums such as the Musée Condé, the British Museum and the Getty Center that appear to be made in preparation of the picture.", "ihtiyat": true},
-  {"id": "C09", "bolum": "hikaye", "iddia": "Galleria nazionale di Parma'daki bir çizim, yatay bir kompozisyon benimsemesine rağmen nihai versiyona en yakın olanıdır.", "kaynak": "enwiki.txt", "alinti": "A drawing in the Galleria nazionale di Parma is the one which is the nearest to the final version, although it adopts a horizontal composition.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Tablonun sağ altında çarmıh yanında uyuyan yaşlı adam, geleneksel simgeleri olan kardinal şapkası ve bir kafatasından Aziz Hieronymus olarak tanımlanabilir.", "kaynak": "enwiki.txt", "alinti": "On the lower right of the painting, an old man is sleeping near a crucifix. He can be identified as Saint Jerome by his traditional symbols, i.e. the cardinal hat and a skull.", "ihtiyat": false},
-  {"id": "C11", "bolum": "gorunen", "iddia": "Resmin ön planına, uzun haçı ve kemerine bağlı vaftiz leğeniyle tanımlanan Vaftizci Yahya hâkimdir.", "kaynak": "enwiki.txt", "alinti": "The foreground of the picture is dominated by St. John the Baptist, identified by the long cross and the baptismal wash basin tied at his belt.", "ihtiyat": false},
-  {"id": "C12", "bolum": "gorunen", "iddia": "İzleyiciye dikkatle bakarken, abartılı uzun parmağı geriye ve yukarıya, koyu gri fırtına bulutlarına karşı bir ışık patlaması içinde oturan Meryem ve Çocuk'u işaret eder.", "kaynak": "enwiki.txt", "alinti": "While staring intently at the viewer his exaggeratedly long finger points backwards and upwards to the Virgin and Child, who are seated in a burst of light against dark grey storm clouds.", "ihtiyat": false},
-  {"id": "C13", "bolum": "gorunen", "iddia": "Meryem, gümüşi bir kozmik ışık patlaması içinde hilal şeklindeki ayın üzerinde oturmaktadır.", "kaynak": "enwiki.txt", "alinti": "The Virgin sits on the crescent moon in a burst of silvery cosmic light.", "ihtiyat": false},
-  {"id": "C14", "bolum": "gorunen", "iddia": "Çocuk İsa, annesi tarafından tutulmak yerine onun kucağına yaslanarak ayakta durmaktadır.", "kaynak": "enwiki.txt", "alinti": "The Child Jesus is not held by his mother but is standing leaning against her lap.", "ihtiyat": false},
-  {"id": "C15", "bolum": "gorunen", "iddia": "Çocuk, izleyiciye bakarken yaramazca ayağını resmin dışına doğru savurmaktadır.", "kaynak": "enwiki.txt", "alinti": "He is looking at the viewer while mischievously kicking his foot out of the painting.", "ihtiyat": false},
-  {"id": "C16", "bolum": "gorunen", "iddia": "Meryem'in meme uçları, gül rengi giysisinin altında görülebilmektedir.", "kaynak": "enwiki.txt", "alinti": "Her nipples are visible under her rose garment.", "ihtiyat": false},
-  {"id": "C17", "bolum": "kompozisyon", "iddia": "Kompozisyon, uzun ve dar bir panel üzerine boyanmıştır.", "kaynak": "enwiki.txt", "alinti": "The composition is painted on a long and narrow panel.", "ihtiyat": false},
-  {"id": "C18", "bolum": "kompozisyon", "iddia": "Aziz Yahya ve Aziz Hieronymus'un parmakları uzamış, pozları ise çarpıktır.", "kaynak": "enwiki.txt", "alinti": "This is reflected in the elongated fingers of Saints John and Jerome and their contorted poses.", "ihtiyat": false},
-  {"id": "C19", "bolum": "kompozisyon", "iddia": "Yahya'nın kalkık sağ kolu ve yukarıyı işaret eden parmağı, Leonardo'nun Vaftizci Yahya tablosunu anımsatır.", "kaynak": "enwiki.txt", "alinti": "St. John's raised right arm and upwards-pointing finger are reminiscent of Leonardo's painting St. John the Baptist.", "ihtiyat": false},
-  {"id": "C20", "bolum": "anlam", "iddia": "Hieronymus'un pozu, Parma'da yaşamış meslektaşı Correggio'ya bir saygı duruşu olarak tasarlanmış olabilir; Correggio'nun Venus and Cupid with a Satyr'ı, ayakları önde, başı geriye eğik, gövdesi hem dikey hem yatay olan bu poza ilham vermiş olabilir.", "kaynak": "enwiki.txt", "alinti": "The saint's pose may have been intended as an homage to Parmigianino's elder fellow artist Correggio, who was also based in Parma. Correggio's Venus and Cupid with a Satyr (Louvre} may have inspired St Jerome's pose with his feet forward, head tilted backwards and his body at once vertical and horizontal.", "ihtiyat": true},
-  {"id": "C21", "bolum": "anlam", "iddia": "Hazırlık çalışmalarından, Meryem figürünün bir kadın nüden, muhtemelen bir klasik heykelden türetilmiş olabileceği anlaşılmaktadır.", "kaynak": "enwiki.txt", "alinti": "From preparatory studies for the work it appears that the figure of the Virgin may have been derived from a female nude, possibly a classical sculpture.", "ihtiyat": true},
-  {"id": "C22", "bolum": "anlam", "iddia": "Meryem'in giysisindeki parlaklık, muhtemelen Parmigianino'nun yolculuklarında gördüğü klasik heykellerden esinlenmiştir.", "kaynak": "enwiki.txt", "alinti": "the sheen on Mary's dress, the last perhaps inspired by classical sculptures seen by Parmigianino during his trips", "ihtiyat": true},
-  {"id": "C23", "bolum": "onem", "iddia": "Geç Rönesans sanat biyografi yazarı Giorgio Vasari'ye göre, Roma'nın Yağmalanması sırasında bu tablo üzerinde çalışan Parmigianino'nun atölyesine giren imparatorluk askerleri, eseri görüp şaşırınca çalışmasını sürdürmesine izin vermiştir.", "kaynak": "enwiki.txt", "alinti": "According to late Renaissance art biographer Giorgio Vasari, Parmigianino was working on this painting during the Sack of Rome when imperial troops burst into his workshop but \"seeing him [and] stupefied at this work\" they let him pursue it.", "ihtiyat": true},
-  {"id": "C24", "bolum": "onem", "iddia": "Tablo, Parmigianino'nun temsilcilerinden biri olduğu Manyerist üslubun özelliklerini göstermektedir.", "kaynak": "enwiki.txt", "alinti": "The painting shows the characteristics of the Mannerist style of which he was one of the exponents.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "onem",
+   "iddia": "Eser, 3 Ocak 1526'da Roma'da, Antonio Caccialupi'nin eşi Maria Bufalini tarafından, San Salvatore in Lauro kilisesindeki aile şapelini süslemek üzere sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The work was commissioned on 3 January 1526 in Rome, by Maria Bufalini, wife of Antonio Caccialupi, to decorate the family chapel in the church of San Salvatore in Lauro.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun uzun biçimi, özgün olarak bir triptikin parçası olmasından gelir; hiç boyanmamış yan paneller, şapelin adandığı Lekesiz Gebelik ile Aziz Joachim ve Anna'yı temsil edecekti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The elongated shape derives from its original destination as part of a triptych, the side panels (never painted) of which would have represented The Immaculate Conception (to which the chapel was dedicated) and the Saints Joachim and Anna.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "onem",
+   "iddia": "Roma'daki amcası, tabloyu Santa Maria della Pace'nin yemekhanesine saklamayı başarmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "His uncle in Rome was able to hide the painting in the refectory of Santa Maria della Pace.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "onem",
+   "iddia": "1558'de Bufalini ailesi, tabloyu Città di Castello'daki Sant'Agostino'da bulunan şapellerine taşımaya karar vermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1558 the Bufalini family decided to move the painting to their chapel in Sant'Agostino in Città di Castello.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "onem",
+   "iddia": "Tablo, 1790'da onu İngiltere'ye götüren İngiliz ressam James Durno tarafından edinilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was acquired in 1790 by the English painter James Durno who brought it to England.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "onem",
+   "iddia": "Tablo daha sonra 1.500 gine karşılığında Albercon Markisi'ne satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There it was subsequently sold to the Marquess of Albercon for 1,500 guineas.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "onem",
+   "iddia": "Birkaç ek satışın ardından tablo, 1826'da National Gallery tarafından edinilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After a number of further sales, the painting was acquired by the National Gallery in 1826.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "onem",
+   "iddia": "Musée Condé, British Museum ve Getty Center gibi çeşitli müzelerde, tablonun hazırlığı için yapılmış görünen yaklaşık 20 çizim bulunmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There are about 20 drawings in various museums such as the Musée Condé, the British Museum and the Getty Center that appear to be made in preparation of the picture.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C09",
+   "bolum": "onem",
+   "iddia": "Galleria nazionale di Parma'daki bir çizim, yatay bir kompozisyon benimsemesine rağmen nihai versiyona en yakın olanıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A drawing in the Galleria nazionale di Parma is the one which is the nearest to the final version, although it adopts a horizontal composition.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Tablonun sağ altında çarmıh yanında uyuyan yaşlı adam, geleneksel simgeleri olan kardinal şapkası ve bir kafatasından Aziz Hieronymus olarak tanımlanabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On the lower right of the painting, an old man is sleeping near a crucifix. He can be identified as Saint Jerome by his traditional symbols, i.e. the cardinal hat and a skull.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Resmin ön planına, uzun haçı ve kemerine bağlı vaftiz leğeniyle tanımlanan Vaftizci Yahya hâkimdir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The foreground of the picture is dominated by St. John the Baptist, identified by the long cross and the baptismal wash basin tied at his belt.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "İzleyiciye dikkatle bakarken, abartılı uzun parmağı geriye ve yukarıya, koyu gri fırtına bulutlarına karşı bir ışık patlaması içinde oturan Meryem ve Çocuk'u işaret eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "While staring intently at the viewer his exaggeratedly long finger points backwards and upwards to the Virgin and Child, who are seated in a burst of light against dark grey storm clouds.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "gorunen",
+   "iddia": "Meryem, gümüşi bir kozmik ışık patlaması içinde hilal şeklindeki ayın üzerinde oturmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Virgin sits on the crescent moon in a burst of silvery cosmic light.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "gorunen",
+   "iddia": "Çocuk İsa, annesi tarafından tutulmak yerine onun kucağına yaslanarak ayakta durmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Child Jesus is not held by his mother but is standing leaning against her lap.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "gorunen",
+   "iddia": "Çocuk, izleyiciye bakarken yaramazca ayağını resmin dışına doğru savurmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He is looking at the viewer while mischievously kicking his foot out of the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in meme uçları, gül rengi giysisinin altında görülebilmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Her nipples are visible under her rose garment.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Kompozisyon, uzun ve dar bir panel üzerine boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The composition is painted on a long and narrow panel.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "kompozisyon",
+   "iddia": "Aziz Yahya ve Aziz Hieronymus'un parmakları uzamış, pozları ise çarpıktır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This is reflected in the elongated fingers of Saints John and Jerome and their contorted poses.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "kompozisyon",
+   "iddia": "Yahya'nın kalkık sağ kolu ve yukarıyı işaret eden parmağı, Leonardo'nun Vaftizci Yahya tablosunu anımsatır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "St. John's raised right arm and upwards-pointing finger are reminiscent of Leonardo's painting St. John the Baptist.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Hieronymus'un pozu, Parma'da yaşamış meslektaşı Correggio'ya bir saygı duruşu olarak tasarlanmış olabilir; Correggio'nun Venus and Cupid with a Satyr'ı, ayakları önde, başı geriye eğik, gövdesi hem dikey hem yatay olan bu poza ilham vermiş olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The saint's pose may have been intended as an homage to Parmigianino's elder fellow artist Correggio, who was also based in Parma. Correggio's Venus and Cupid with a Satyr (Louvre} may have inspired St Jerome's pose with his feet forward, head tilted backwards and his body at once vertical and horizontal.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Hazırlık çalışmalarından, Meryem figürünün bir kadın nüden, muhtemelen bir klasik heykelden türetilmiş olabileceği anlaşılmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "From preparatory studies for the work it appears that the figure of the Virgin may have been derived from a female nude, possibly a classical sculpture.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Meryem'in giysisindeki parlaklık, muhtemelen Parmigianino'nun yolculuklarında gördüğü klasik heykellerden esinlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the sheen on Mary's dress, the last perhaps inspired by classical sculptures seen by Parmigianino during his trips",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Geç Rönesans sanat biyografi yazarı Giorgio Vasari'ye göre, Roma'nın Yağmalanması sırasında bu tablo üzerinde çalışan Parmigianino'nun atölyesine giren imparatorluk askerleri, eseri görüp şaşırınca çalışmasını sürdürmesine izin vermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to late Renaissance art biographer Giorgio Vasari, Parmigianino was working on this painting during the Sack of Rome when imperial troops burst into his workshop but \"seeing him [and] stupefied at this work\" they let him pursue it.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablo, Parmigianino'nun temsilcilerinden biri olduğu Manyerist üslubun özelliklerini göstermektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting shows the characteristics of the Mannerist style of which he was one of the exponents.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1526"}, "b": {"kaynak": "enwiki.txt", "alinti": "executed in 1526–1527"}},
-  {"konu": "üslup", "a": {"kaynak": "wikidata.txt", "alinti": "movement (P135): High Renaissance (Q1474884)"}, "b": {"kaynak": "enwiki.txt", "alinti": "The painting shows the characteristics of the Mannerist style of which he was one of the exponents."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1526"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "executed in 1526–1527"
+   }
+  },
+  {
+   "konu": "üslup",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "movement (P135): High Renaissance (Q1474884)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The painting shows the characteristics of the Mannerist style of which he was one of the exponents."
+   }
+  }
  ],
- "bulunamadi": ["anlam: görümün teolojik/ikonografik anlamı ve simgelerin yorumu kaynakta yer almıyor"]
+ "bulunamadi": [
+  "anlam: görümün teolojik/ikonografik anlamı ve simgelerin yorumu kaynakta yer almıyor",
+  "hikaye: kaynakta resmin anlattığı olaya dair yeterli bilgi yok"
+ ]
 }

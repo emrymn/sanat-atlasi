@@ -2,31 +2,170 @@
  "anahtar": "Q1996932",
  "baslik_tr": "Milvius Köprüsü Savaşı",
  "kunye": {
-  "sanatci": {"deger": "Giulio Romano", "kaynak": "wikidata.txt", "alinti": "creator (P170): Giulio Romano (Q215305)"},
-  "tarih": {"deger": "1520–1524 (muhtemelen)", "kaynak": "enwiki.txt", "alinti": "It was most likely painted to Raphael's design between 1520 and 1524.", "ihtiyat": true},
-  "teknik": {"deger": "fresk", "kaynak": "wikidata.txt", "alinti": "made from material (P186): fresco (Q25631150)"},
-  "olcu": {"deger": "376 × 851 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 376 centimetre width (P2049): 851 centimetre"},
-  "yer": {"deger": "Vatican Museums", "kaynak": "wikidata.txt", "alinti": "location (P276): Vatican Museums (Q182955)"}
+  "sanatci": {
+   "deger": "Giulio Romano",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Giulio Romano (Q215305)"
+  },
+  "tarih": {
+   "deger": "1520–1524 (muhtemelen)",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was most likely painted to Raphael's design between 1520 and 1524.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "fresk",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): fresco (Q25631150)"
+  },
+  "olcu": {
+   "deger": "376 × 851 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 376 centimetre width (P2049): 851 centimetre"
+  },
+  "yer": {
+   "deger": "Vatican Museums",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Vatican Museums (Q182955)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Fresk, 28 Ekim 312'de Roma imparatorları I. Konstantin ile Maxentius arasında gerçekleşen savaşı gösterir.", "kaynak": "enwiki.txt", "alinti": "The Battle of the Milvian Bridge shows the battle that took place on 28 October 312 between the Roman Emperors Constantine I and Maxentius.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Rivayete göre bir ses, Konstantin'e haçı sancak olarak kullanırsa Ponte Milvio savaşını kazanacağını söylemiştir.", "kaynak": "enwiki.txt", "alinti": "Legend says that Constantine had a dream where a cross appeared in the heavens; a voice told him he would win the battle of Ponte Milvio if he used the cross as his standard.", "ihtiyat": true},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Haç, sancak haline gelmiştir.", "kaynak": "enwiki.txt", "alinti": "The cross became his standard", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Bu savaşı kazanmıştır.", "kaynak": "enwiki.txt", "alinti": "he won the battle", "ihtiyat": false},
-  {"id": "C05", "bolum": "anlam", "iddia": "Rivayete göre Konstantin, gökte bir haçın belirdiği bir rüya görmüştür.", "kaynak": "enwiki.txt", "alinti": "Legend says that Constantine had a dream where a cross appeared in the heavens; a voice told him he would win the battle of Ponte Milvio if he used the cross as his standard.", "ihtiyat": true},
-  {"id": "C06", "bolum": "anlam", "iddia": "Zaferi, Hıristiyanlığın Tanrısı'na atfedilmiştir.", "kaynak": "enwiki.txt", "alinti": "attributed his victory to the God of Christianity", "ihtiyat": true},
-  {"id": "C07", "bolum": "onem", "iddia": "Fresk, Vatikan'daki Apostolik Sarayı'nda, bugün Stanze di Raffaello olarak bilinen odalardan birindedir.", "kaynak": "enwiki.txt", "alinti": "is a fresco in one of the rooms that are now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican", "ihtiyat": false},
-  {"id": "C08", "bolum": "onem", "iddia": "Fresk, Sala di Costantino'da (Konstantin Salonu) bulunur.", "kaynak": "enwiki.txt", "alinti": "located in the Sala di Costantino (\"Hall of Constantine\")", "ihtiyat": false},
-  {"id": "C09", "bolum": "onem", "iddia": "Fresk, Giulio Romano ve İtalyan Rönesans sanatçısı Raphael'in diğer asistanlarınca yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "is by Giulio Romano and other assistants of the Italian Renaissance artist Raphael", "ihtiyat": false},
-  {"id": "C10", "bolum": "onem", "iddia": "Fresk, muhtemelen Raphael'in tasarımına göre 1520 ile 1524 arasında boyanmıştır.", "kaynak": "enwiki.txt", "alinti": "It was most likely painted to Raphael's design between 1520 and 1524.", "ihtiyat": true},
-  {"id": "C11", "bolum": "onem", "iddia": "Ustanın ölümünden sonra Giulio Romano, Raphael'in atölyesinin diğer üyeleriyle birlikte Stanze di Raffaello odalarını fresklerle bezeme siparişini tamamlamıştır.", "kaynak": "enwiki.txt", "alinti": "After the master's death, Giulio Romano worked together with other members of Raphael's workshop to finish the commission to decorate with frescoes the rooms that are now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican.", "ihtiyat": false},
-  {"id": "C12", "bolum": "onem", "iddia": "Fresk, 'The Battle at Pons Milvius' olarak da bilinir.", "kaynak": "enwiki.txt", "alinti": "The Battle of the Milvian Bridge, or The Battle at Pons Milvius, is a fresco", "ihtiyat": false},
-  {"id": "C13", "bolum": "onem", "iddia": "Fresk, tür olarak tarih resmidir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): history painting (Q742333)", "ihtiyat": false},
-  {"id": "C14", "bolum": "onem", "iddia": "Raphael 1520'de ölmüştür.", "kaynak": "enwiki.txt", "alinti": "the Italian Renaissance artist Raphael, who died in 1520", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Fresk, 28 Ekim 312'de Roma imparatorları I. Konstantin ile Maxentius arasında gerçekleşen savaşı gösterir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Battle of the Milvian Bridge shows the battle that took place on 28 October 312 between the Roman Emperors Constantine I and Maxentius.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Rivayete göre bir ses, Konstantin'e haçı sancak olarak kullanırsa Ponte Milvio savaşını kazanacağını söylemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Legend says that Constantine had a dream where a cross appeared in the heavens; a voice told him he would win the battle of Ponte Milvio if he used the cross as his standard.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Haç, sancak haline gelmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The cross became his standard",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Bu savaşı kazanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "he won the battle",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "anlam",
+   "iddia": "Rivayete göre Konstantin, gökte bir haçın belirdiği bir rüya görmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Legend says that Constantine had a dream where a cross appeared in the heavens; a voice told him he would win the battle of Ponte Milvio if he used the cross as his standard.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C06",
+   "bolum": "anlam",
+   "iddia": "Rivayete göre Konstantin zaferini Hıristiyanlığın Tanrısı'na atfetmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "attributed his victory to the God of Christianity",
+   "ihtiyat": true
+  },
+  {
+   "id": "C07",
+   "bolum": "onem",
+   "iddia": "Fresk, Vatikan'daki Apostolik Sarayı'nda, bugün Stanze di Raffaello olarak bilinen odalardan birindedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "is a fresco in one of the rooms that are now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "onem",
+   "iddia": "Fresk, Sala di Costantino'da (Konstantin Salonu) bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "located in the Sala di Costantino (\"Hall of Constantine\")",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "onem",
+   "iddia": "Fresk, Giulio Romano ve İtalyan Rönesans sanatçısı Raphael'in diğer asistanlarınca yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "is by Giulio Romano and other assistants of the Italian Renaissance artist Raphael",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "onem",
+   "iddia": "Fresk, muhtemelen Raphael'in tasarımına göre 1520 ile 1524 arasında boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was most likely painted to Raphael's design between 1520 and 1524.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "onem",
+   "iddia": "Ustanın ölümünden sonra Giulio Romano, Raphael'in atölyesinin diğer üyeleriyle birlikte Stanze di Raffaello odalarını fresklerle bezeme siparişini tamamlamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After the master's death, Giulio Romano worked together with other members of Raphael's workshop to finish the commission to decorate with frescoes the rooms that are now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "onem",
+   "iddia": "Fresk, 'The Battle at Pons Milvius' olarak da bilinir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Battle of the Milvian Bridge, or The Battle at Pons Milvius, is a fresco",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "onem",
+   "iddia": "Fresk, tür olarak tarih resmidir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "genre (P136): history painting (Q742333)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Raphael 1520'de ölmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the Italian Renaissance artist Raphael, who died in 1520",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1520 (precision: decade)"}, "b": {"kaynak": "enwiki.txt", "alinti": "It was most likely painted to Raphael's design between 1520 and 1524."}},
-  {"konu": "sanatci/atıf", "a": {"kaynak": "wikidata.txt", "alinti": "creator (P170): Giulio Romano (Q215305)"}, "b": {"kaynak": "enwiki.txt", "alinti": "is by Giulio Romano and other assistants of the Italian Renaissance artist Raphael"}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1520 (precision: decade)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "It was most likely painted to Raphael's design between 1520 and 1524."
+   }
+  },
+  {
+   "konu": "sanatci/atıf",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): Giulio Romano (Q215305)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "is by Giulio Romano and other assistants of the Italian Renaissance artist Raphael"
+   }
+  }
  ],
  "bulunamadi": [
   "gorunen: kaynakta figür/sahne betimlemesi yok",

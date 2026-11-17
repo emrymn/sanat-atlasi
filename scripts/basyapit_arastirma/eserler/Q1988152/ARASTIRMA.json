@@ -2,36 +2,207 @@
  "anahtar": "Q1988152",
  "baslik_tr": "Venüs ve Adonis",
  "kunye": {
-  "sanatci": {"deger": "Paolo Veronese", "kaynak": "wikidata.txt", "alinti": "creator (P170): Paolo Veronese (Q9440)"},
-  "tarih": {"deger": "yaklaşık 1580", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1580 [sourcing circumstances: circa (Q5727902)]", "ihtiyat": true},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "162 × 191 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 162 centimetre width (P2049): 191 centimetre"},
-  "yer": {"deger": "Museo del Prado", "kaynak": "wikidata.txt", "alinti": "collection (P195): Museo del Prado (Q160112)"}
+  "sanatci": {
+   "deger": "Paolo Veronese",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Paolo Veronese (Q9440)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1580",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1580 [sourcing circumstances: circa (Q5727902)]",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "162 × 191 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 162 centimetre width (P2049): 191 centimetre"
+  },
+  "yer": {
+   "deger": "Museo del Prado",
+   "kaynak": "wikidata.txt",
+   "alinti": "collection (P195): Museo del Prado (Q160112)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun konusu, Romalı şair Ovidius'un Metamorphoses adlı anlatı şiirinden alınmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting's subject is taken from Metamorphoses, a narrative poem by the Roman poet Ovid.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablo, avcı Adonis'i Venüs'ün kucağında uyurken tasvir eder.", "kaynak": "enwiki.txt", "alinti": "It portrays the hunter Adonis sleeping in Venus' lap.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Venüs, Adonis'in bir av sırasında öleceğini öngörmüştür.", "kaynak": "enwiki.txt", "alinti": "as Venus had forecast that Adonis would die during a hunt", "ihtiyat": false},
-  {"id": "C04", "bolum": "gorunen", "iddia": "Venüs'ün önünde, bir av köpeğiyle birlikte oğlu Cupid bulunur.", "kaynak": "enwiki.txt", "alinti": "In front of her is her son Cupid, with a sighthound.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Cupid, köpeğin avlanma arzusunu bastırmaya çalışırken tasvir edilmiştir.", "kaynak": "enwiki.txt", "alinti": "Cupid is portrayed while trying to quench the dog's desire to hunt", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Arka planda canlı yeşil bir manzara ile canlı mavi bir gökyüzü vardır.", "kaynak": "enwiki.txt", "alinti": "In the background is a lively green landscape, with a vivid blue sky.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Eserde giyinik bir erkek ve çıplak bir kadın tasvir edilir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): clothed male, naked female (Q5135552)", "ihtiyat": false},
-  {"id": "C08", "bolum": "kompozisyon", "iddia": "Orijinal tablonun üst kenarı 18. yüzyılda 50 cm büyütülmüştür.", "kaynak": "enwiki.txt", "alinti": "The original painting was enlarged by 50 cm in the upper border in the 18th century.", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Eklenen bölüm 1988'deki bir restorasyonda kaldırılmış ve eser özgün yatay biçimine geri dönmüştür.", "kaynak": "enwiki.txt", "alinti": "This added section was removed in a restoration in 1988, so the work recovered its original horizontal format.", "ihtiyat": false},
-  {"id": "C10", "bolum": "kompozisyon", "iddia": "Eser Venedik okulu ve Maniyerizm akımlarıyla sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Venetian school (Q610687) movement (P135): Mannerism (Q131808)", "ihtiyat": false},
-  {"id": "C11", "bolum": "anlam", "iddia": "Cupid, bir kazla birlikteki çocuğun Helenistik heykelinden modellenmiştir.", "kaynak": "enwiki.txt", "alinti": "He modelled his Cupid on the Hellenistic sculpture of a boy with a goose", "ihtiyat": false},
-  {"id": "C12", "bolum": "anlam", "iddia": "Adonis, Saint John Lateran Arkbazilikası'ndaki bir Roma lahitinin Endymion tasvirinden modellenmiş olabilir.", "kaynak": "enwiki.txt", "alinti": "while Adonis may be modelled on an illustration of Endymion on a Roman sarcophagus in the Archbasilica of Saint John Lateran", "ihtiyat": true},
-  {"id": "C13", "bolum": "onem", "iddia": "Tablo, Veronese Roma'da bir süre geçirdikten sonra yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was executed after Veronese had spent a period in Rome.", "ihtiyat": false},
-  {"id": "C14", "bolum": "onem", "iddia": "Bu tablonun aynı dönemde Veronese tarafından yapılmış eş parçası Cephalus ve Procris'tir.", "kaynak": "enwiki.txt", "alinti": "The pendant of this painting, also created by Veronese in the same period, is Cephalus and Procris.", "ihtiyat": false},
-  {"id": "C15", "bolum": "onem", "iddia": "Eş parça, Metamorphoses'ten başka bir trajik çifti tasvir eder ve bugün Strasbourg Güzel Sanatlar Müzesi'ndedir.", "kaynak": "enwiki.txt", "alinti": "It portrays another tragic couple from Metamorphoses, and is now in the Museum of Fine Arts of Strasbourg.", "ihtiyat": false},
-  {"id": "C16", "bolum": "onem", "iddia": "Venüs ve Adonis, eş parçasıyla birlikte 1641'de satın alınmış olabilir.", "kaynak": "enwiki.txt", "alinti": "Venus and Adonis may also have been bought in 1641, with its pair.", "ihtiyat": true},
-  {"id": "C17", "bolum": "onem", "iddia": "Tablo en geç 1666'da, Madrid Alcázar'ının 'Mid-day Gallery' galerisinde İspanya kraliyet koleksiyonundaydı.", "kaynak": "enwiki.txt", "alinti": "It was at any rate in the Spanish royal collection by at least 1666, in the \"Mid-day Gallery\" of the Alcázar of Madrid.", "ihtiyat": false},
-  {"id": "C18", "bolum": "onem", "iddia": "Alcázar 1734'te yandıktan sonra tablo, koleksiyonun büyük bölümü Prado'ya taşınmadan önce 1772–1818 arasında aynı alandaki Yeni Madrid Kraliyet Sarayı'nın farklı odalarında kayıtlıdır.", "kaynak": "enwiki.txt", "alinti": "After this burnt down in 1734, it is recorded in different rooms in the New Royal Palace of Madrid (on the same site) between 1772 and 1818, before most of the collection was transferred to the Prado.", "ihtiyat": false},
-  {"id": "C19", "bolum": "onem", "iddia": "Tablonun envanter numarası P000482'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): P000482", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "Eserin sahibi olarak İspanyalı Ferdinand VII gösterilir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Ferdinand VII of Spain (Q186256)", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablonun konusu, Romalı şair Ovidius'un Metamorphoses adlı anlatı şiirinden alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting's subject is taken from Metamorphoses, a narrative poem by the Roman poet Ovid.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Tablo, avcı Adonis'i Venüs'ün kucağında uyurken tasvir eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It portrays the hunter Adonis sleeping in Venus' lap.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Venüs, Adonis'in bir av sırasında öleceğini öngörmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "as Venus had forecast that Adonis would die during a hunt",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Venüs'ün önünde, bir av köpeğiyle birlikte oğlu Cupid bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In front of her is her son Cupid, with a sighthound.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Cupid, köpeğin avlanma arzusunu bastırmaya çalışırken tasvir edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Cupid is portrayed while trying to quench the dog's desire to hunt",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Arka planda canlı yeşil bir manzara ile canlı mavi bir gökyüzü vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the background is a lively green landscape, with a vivid blue sky.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Eserde giyinik bir erkek ve çıplak bir kadın tasvir edilir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): clothed male, naked female (Q5135552)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Orijinal tablonun üst kenarı 18. yüzyılda 50 cm büyütülmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The original painting was enlarged by 50 cm in the upper border in the 18th century.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Eklenen bölüm 1988'deki bir restorasyonda kaldırılmış ve eser özgün yatay biçimine geri dönmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This added section was removed in a restoration in 1988, so the work recovered its original horizontal format.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "onem",
+   "iddia": "Eser Venedik okulu ve Maniyerizm akımlarıyla sınıflandırılır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "movement (P135): Venetian school (Q610687) movement (P135): Mannerism (Q131808)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Cupid, bir kazla birlikteki çocuğun Helenistik heykelinden modellenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He modelled his Cupid on the Hellenistic sculpture of a boy with a goose",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Adonis, Saint John Lateran Arkbazilikası'ndaki bir Roma lahitinin Endymion tasvirinden modellenmiş olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "while Adonis may be modelled on an illustration of Endymion on a Roman sarcophagus in the Archbasilica of Saint John Lateran",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "onem",
+   "iddia": "Tablo, Veronese Roma'da bir süre geçirdikten sonra yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was executed after Veronese had spent a period in Rome.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Bu tablonun aynı dönemde Veronese tarafından yapılmış eş parçası Cephalus ve Procris'tir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The pendant of this painting, also created by Veronese in the same period, is Cephalus and Procris.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Eş parça, Metamorphoses'ten başka bir trajik çifti tasvir eder ve bugün Strasbourg Güzel Sanatlar Müzesi'ndedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It portrays another tragic couple from Metamorphoses, and is now in the Museum of Fine Arts of Strasbourg.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Venüs ve Adonis, eş parçasıyla birlikte 1641'de satın alınmış olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Venus and Adonis may also have been bought in 1641, with its pair.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablo en geç 1666'da, Madrid Alcázar'ının 'Mid-day Gallery' galerisinde İspanya kraliyet koleksiyonundaydı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was at any rate in the Spanish royal collection by at least 1666, in the \"Mid-day Gallery\" of the Alcázar of Madrid.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Alcázar 1734'te yandıktan sonra tablo, koleksiyonun büyük bölümü Prado'ya taşınmadan önce 1772–1818 arasında aynı alandaki Yeni Madrid Kraliyet Sarayı'nın farklı odalarında kayıtlıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After this burnt down in 1734, it is recorded in different rooms in the New Royal Palace of Madrid (on the same site) between 1772 and 1818, before most of the collection was transferred to the Prado.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablonun envanter numarası P000482'dir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "inventory number (P217): P000482",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Eserin sahibi olarak İspanyalı Ferdinand VII gösterilir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "owned by (P127): Ferdinand VII of Spain (Q186256)",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1580 [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "executed in the early 1580s"}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1580 [sourcing circumstances: circa (Q5727902)]"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "executed in the early 1580s"
+   }
+  }
  ],
  "bulunamadi": [
   "sipariş: hiçbir kaynakta sipariş veren kişi ya da kurum yok",

@@ -2,40 +2,242 @@
  "anahtar": "Q3088614",
  "baslik_tr": "Şaşıran Perikızı",
  "kunye": {
-  "sanatci": {"deger": "Édouard Manet", "kaynak": "wikidata.txt", "alinti": "creator (P170): Édouard Manet (Q40599)"},
-  "tarih": {"deger": "1861", "kaynak": "enwiki.txt", "alinti": "Édouard Manet, created in 1861", "ihtiyat": false},
-  "teknik": {"deger": "yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)"},
-  "olcu": {"deger": "144,5 × 112,5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 144.5 centimetre width (P2049): 112.5 centimetre"},
-  "yer": {"deger": "National Museum of Fine Arts, Buenos Aires", "kaynak": "enwiki.txt", "alinti": "It is in National Museum of Fine Arts in Buenos Aires"}
+  "sanatci": {
+   "deger": "Édouard Manet",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Édouard Manet (Q40599)"
+  },
+  "tarih": {
+   "deger": "1861",
+   "kaynak": "enwiki.txt",
+   "alinti": "Édouard Manet, created in 1861",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)"
+  },
+  "olcu": {
+   "deger": "144,5 × 112,5 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 144.5 centimetre width (P2049): 112.5 centimetre"
+  },
+  "yer": {
+   "deger": "National Museum of Fine Arts, Buenos Aires",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is in National Museum of Fine Arts in Buenos Aires"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "La Nymphe surprise, Fransız ressam Édouard Manet'nin 1861'de yaptığı bir tablodur.", "kaynak": "enwiki.txt", "alinti": "La Nymphe surprise, or Surprised Nymph, is a painting by the French painter Édouard Manet, created in 1861.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tablonun modeli, ressamın daha sonra evlendiği piyanist Suzanne Leenhoff'tur.", "kaynak": "enwiki.txt", "alinti": "The model was Suzanne Leenhoff, a pianist whom he married two years later.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Tablonun modeli, Manet'nin gizli bir ilişki yaşadığı Hollandalı sevgilisi Suzanne Leenhoff'tur.", "kaynak": "enwiki.txt", "alinti": "The model of the painting is Édouard Manet's lover, the Dutchwoman Suzanne Leenhoff, with whom he had a secret affair.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Manet bu tabloyu atölyesinde tutmuştur.", "kaynak": "enwiki.txt", "alinti": "Manet kept this painting in his atelier.", "ihtiyat": false},
-  {"id": "C05", "bolum": "hikaye", "iddia": "Tablo, ressamın bütün hayatı boyunca onun mülkiyetinde kalmıştır.", "kaynak": "enwiki.txt", "alinti": "La Nymphe surprise remained in the artist's possession his entire life", "ihtiyat": false},
-  {"id": "C06", "bolum": "hikaye", "iddia": "Türkçe Vikipedi'ye göre tablo ilk kez 1861'de Sankt-Peterburg'da düzenlenen İmparatorluk Akademisi Sergisi'nde gösterilmiştir.", "kaynak": "trwiki.txt", "alinti": "Tablo ilk kez 1861 yılında her yıl Sankt-Peterburg'da düzenlenen İmparatorluk Akademisi Sergisi'nde gösterildi.", "ihtiyat": true},
-  {"id": "C07", "bolum": "hikaye", "iddia": "Türkçe Vikipedi'ye göre Manet, 1871'deki mal varlığı sayımında tabloya 18.000 frank değer biçmiştir.", "kaynak": "trwiki.txt", "alinti": "Manet, 1871 yılında düzenlenen mal varlığında tabloya 18.000 frank fiyat biçti.", "ihtiyat": true},
-  {"id": "C08", "bolum": "hikaye", "iddia": "Türkçe Vikipedi'ye göre tablonun daha büyük ölçülerdeki başka bir eserin parçası olduğuna dair söylentiler vardır.", "kaynak": "trwiki.txt", "alinti": "Tablonun daha büyük ölçülerdeki başka bir eserin parçası olduğuna dair söylentiler vardır.", "ihtiyat": true},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Tablo, bir göl kıyısındaki ağaçlık peyzajda oturan ve izleyiciye şaşkınlıkla bakan genç bir kadını betimler.", "kaynak": "enwiki.txt", "alinti": "Manet's La Nymphe surprise depicts a young woman sitting in a wooded landscape beside a lake, looking surprised at the viewer.", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Kadının sol ayağının yakınında mavi bir iris çiçeği büyümektedir.", "kaynak": "enwiki.txt", "alinti": "There is a blue iris growing near her left foot", "ihtiyat": false},
-  {"id": "C11", "bolum": "gorunen", "iddia": "Kadın, boynundaki beyaz inciler ve serçe parmağındaki yüzük dışında vücudunda hiçbir şey taşımaz.", "kaynak": "enwiki.txt", "alinti": "she wears nothing on her body except white pearls around her neck and a ring on her little finger", "ihtiyat": false},
-  {"id": "C12", "bolum": "gorunen", "iddia": "Perinin bakışı, Olympia'nın kışkırtıcı bakışının aksine şaşkın ve utangaçtır; izleyicinin onu gözetlerken yakalamış gibi görünür.", "kaynak": "enwiki.txt", "alinti": "The nymph's glance, contrary to Olympia's provocative look, is surprised and shy, as if she has found the viewer watching her, invading her privacy, disturbing her.", "ihtiyat": true},
-  {"id": "C13", "bolum": "anlam", "iddia": "Periler, Yunan mitolojisinde dağlarda, küçük korularda, pınar ve nehir kıyılarında yaşayan, genç kadınlar olarak betimlenen doğa ruhları ve kadın tanrıçalardır.", "kaynak": "enwiki.txt", "alinti": "Nymphs were female spirits of nature, female deities from Greek mythology, often depicted as young women, who dwell in mountains and small woods, by springs and rivers.", "ihtiyat": false},
-  {"id": "C14", "bolum": "anlam", "iddia": "Bazı yazarlara göre motif, modelin adının Suzanne olması, Hollandalı olması ve figürün pozunun aynı olması nedeniyle Rembrandt'ın Susanna ve Yaşlılar'ına benzer.", "kaynak": "enwiki.txt", "alinti": "Several authors think that the motif is similar to Rembrandt's Susanna and the Elders, considering that the model's name is Suzanne, she was Dutch and the figure's pose is identical with the one in the painting.", "ihtiyat": true},
-  {"id": "C15", "bolum": "anlam", "iddia": "Françoise Cachin'e göre Manet muhtemelen Jean-Baptiste Santerre'in aynı konulu 1704 tarihli tablosundan esinlenmiştir.", "kaynak": "enwiki.txt", "alinti": "In a different point, Françoise Cachin argues that Manet was probably inspired by Jean-Baptiste Santerre's 1704 painting of the same subject, pointing out the position of the arm and the treatment of the material.", "ihtiyat": true},
-  {"id": "C16", "bolum": "anlam", "iddia": "Türkçe Vikipedi'ye göre tabloda, Danyal'ın İncili'nde anlatılan Suzanna karakterinin klasik pozunda oturmuş bir çıplak betimlenmiştir.", "kaynak": "trwiki.txt", "alinti": "Bu tabloda Manet, Danyal'ın İncili'nde anlatılan Suzanna karakterinin klasik pozunda oturmuş bir çıplağı betimlemiştir.", "ihtiyat": true},
-  {"id": "C17", "bolum": "anlam", "iddia": "Türkçe Vikipedi'ye göre tabloda, Kuzey Avrupalı ressamların, özellikle de Rubens'in çıplak kadına bakış açısının etkisi büyüktür.", "kaynak": "trwiki.txt", "alinti": "Tabloda, Kuzey Avrupalı ressamların özellikle de Rubens'in çıplak kadına bakış açısının etkisi büyüktür.", "ihtiyat": true},
-  {"id": "C18", "bolum": "anlam", "iddia": "Türkçe Vikipedi'nin aktardığına göre Rosalind Krauss, model ile ressam arasında bir yakınlık fark edildiğini, ama aynı zamanda yeni başlamış bir ilişkinin gizliliği bulunduğunu söyler.", "kaynak": "trwiki.txt", "alinti": "Rosalind Krauss bu eserle ilgili şu yorumu yapmıştır: \"Model ile ressam arasında bir yakınlık olduğu fark edilir ama aynı zamanda yeni başlamış bir ilişkinin gizliliği de vardır.\"", "ihtiyat": true},
-  {"id": "C19", "bolum": "onem", "iddia": "Tablo, Manet'nin sanatsal kariyerinde ve genel olarak Fransız resminde modernizmin tarihinde yeni bir dönemin başlangıcını işaret eden kilit bir eseridir.", "kaynak": "enwiki.txt", "alinti": "The painting is a key work of Manet's, marking the beginning of a new period in his artistic career and generally in the history of modernism in French painting.", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "Tablo, Buenos Aires'teki Ulusal Güzel Sanatlar Müzesi tarafından satın alınmış ve kurumun öne çıkan eserlerinden biri olarak sergilenmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was purchased by the National Museum of Fine Arts in Buenos Aires and was placed on display at the Museum, as one of the institution's highlights.", "ihtiyat": false},
-  {"id": "C21", "bolum": "onem", "iddia": "Tablo, Kırda Öğle Yemeği ve Olympia'dan önce yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "This painting was painted two years before the Le Déjeuner sur l'herbe (The Luncheon on the Grass) and Olympia.", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Türkçe Vikipedi'ye göre tablo, Manet'nin vefatının ardından yalnızca 1250 franka satılabilmiştir.", "kaynak": "trwiki.txt", "alinti": "Manet'nin vefatının ardından tablo sadece 1250 franka satılabildi.", "ihtiyat": true},
-  {"id": "C23", "bolum": "onem", "iddia": "Türkçe Vikipedi'ye göre bu eser, Manet'nin bilinen ilk nü çalışmasıdır.", "kaynak": "trwiki.txt", "alinti": "Manet'nin bilinen bu ilk nü çalışmasında, izleyiciyi şaşırtan, kadınla göz göze gelmeleri oldu.", "ihtiyat": true}
+  {
+   "id": "C01",
+   "bolum": "onem",
+   "iddia": "La Nymphe surprise, Fransız ressam Édouard Manet'nin 1861'de yaptığı bir tablodur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "La Nymphe surprise, or Surprised Nymph, is a painting by the French painter Édouard Manet, created in 1861.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Tablonun modeli, ressamın daha sonra evlendiği piyanist Suzanne Leenhoff'tur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The model was Suzanne Leenhoff, a pianist whom he married two years later.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Tablonun modeli, Manet'nin gizli bir ilişki yaşadığı Hollandalı sevgilisi Suzanne Leenhoff'tur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The model of the painting is Édouard Manet's lover, the Dutchwoman Suzanne Leenhoff, with whom he had a secret affair.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "onem",
+   "iddia": "Manet bu tabloyu atölyesinde tutmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Manet kept this painting in his atelier.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "onem",
+   "iddia": "Tablo, ressamın bütün hayatı boyunca onun mülkiyetinde kalmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "La Nymphe surprise remained in the artist's possession his entire life",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "onem",
+   "iddia": "Türkçe Vikipedi'ye göre tablo ilk kez 1861'de Sankt-Peterburg'da düzenlenen İmparatorluk Akademisi Sergisi'nde gösterilmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Tablo ilk kez 1861 yılında her yıl Sankt-Peterburg'da düzenlenen İmparatorluk Akademisi Sergisi'nde gösterildi.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C07",
+   "bolum": "onem",
+   "iddia": "Türkçe Vikipedi'ye göre Manet, 1871'deki mal varlığı sayımında tabloya 18.000 frank değer biçmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Manet, 1871 yılında düzenlenen mal varlığında tabloya 18.000 frank fiyat biçti.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "onem",
+   "iddia": "Türkçe Vikipedi'ye göre tablonun daha büyük ölçülerdeki başka bir eserin parçası olduğuna dair söylentiler vardır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Tablonun daha büyük ölçülerdeki başka bir eserin parçası olduğuna dair söylentiler vardır.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo, bir göl kıyısındaki ağaçlık peyzajda oturan ve izleyiciye şaşkınlıkla bakan genç bir kadını betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Manet's La Nymphe surprise depicts a young woman sitting in a wooded landscape beside a lake, looking surprised at the viewer.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Kadının sol ayağının yakınında mavi bir iris çiçeği büyümektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There is a blue iris growing near her left foot",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Kadın, boynundaki beyaz inciler ve serçe parmağındaki yüzük dışında vücudunda hiçbir şey taşımaz.",
+   "kaynak": "enwiki.txt",
+   "alinti": "she wears nothing on her body except white pearls around her neck and a ring on her little finger",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Perinin bakışı, Olympia'nın kışkırtıcı bakışının aksine şaşkın ve utangaçtır; sanki kendisini gözetleyen izleyiciyi yakalamış gibidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The nymph's glance, contrary to Olympia's provocative look, is surprised and shy, as if she has found the viewer watching her, invading her privacy, disturbing her.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Periler, Yunan mitolojisinde dağlarda, küçük korularda, pınar ve nehir kıyılarında yaşayan, sıklıkla genç kadınlar olarak betimlenen doğa ruhları ve kadın tanrıçalardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Nymphs were female spirits of nature, female deities from Greek mythology, often depicted as young women, who dwell in mountains and small woods, by springs and rivers.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Bazı yazarlara göre motif, modelin adının Suzanne olması, Hollandalı olması ve figürün pozunun aynı olması nedeniyle Rembrandt'ın Susanna ve Yaşlılar'ına benzer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Several authors think that the motif is similar to Rembrandt's Susanna and the Elders, considering that the model's name is Suzanne, she was Dutch and the figure's pose is identical with the one in the painting.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C15",
+   "bolum": "anlam",
+   "iddia": "Françoise Cachin'e göre Manet muhtemelen Jean-Baptiste Santerre'in aynı konulu 1704 tarihli tablosundan esinlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In a different point, Françoise Cachin argues that Manet was probably inspired by Jean-Baptiste Santerre's 1704 painting of the same subject, pointing out the position of the arm and the treatment of the material.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Türkçe Vikipedi'ye göre tabloda, Danyal'ın İncili'nde anlatılan Suzanna karakterinin klasik pozunda oturmuş bir çıplak betimlenmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Bu tabloda Manet, Danyal'ın İncili'nde anlatılan Suzanna karakterinin klasik pozunda oturmuş bir çıplağı betimlemiştir.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Türkçe Vikipedi'ye göre tabloda, Kuzey Avrupalı ressamların, özellikle de Rubens'in çıplak kadına bakış açısının etkisi büyüktür.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Tabloda, Kuzey Avrupalı ressamların özellikle de Rubens'in çıplak kadına bakış açısının etkisi büyüktür.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Türkçe Vikipedi'nin aktardığına göre Rosalind Krauss, model ile ressam arasında bir yakınlık fark edildiğini, ama aynı zamanda yeni başlamış bir ilişkinin gizliliği bulunduğunu söyler.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Rosalind Krauss bu eserle ilgili şu yorumu yapmıştır: \"Model ile ressam arasında bir yakınlık olduğu fark edilir ama aynı zamanda yeni başlamış bir ilişkinin gizliliği de vardır.\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo, Manet'nin sanatsal kariyerinde ve genel olarak Fransız resminde modernizmin tarihinde yeni bir dönemin başlangıcını işaret eden kilit bir eseridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting is a key work of Manet's, marking the beginning of a new period in his artistic career and generally in the history of modernism in French painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Tablo, Buenos Aires'teki Ulusal Güzel Sanatlar Müzesi tarafından satın alınmış ve kurumun öne çıkan eserlerinden biri olarak sergilenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was purchased by the National Museum of Fine Arts in Buenos Aires and was placed on display at the Museum, as one of the institution's highlights.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Tablo, Kırda Öğle Yemeği ve Olympia'dan önce yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This painting was painted two years before the Le Déjeuner sur l'herbe (The Luncheon on the Grass) and Olympia.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Türkçe Vikipedi'ye göre tablo, Manet'nin vefatının ardından yalnızca 1250 franka satılabilmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Manet'nin vefatının ardından tablo sadece 1250 franka satılabildi.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Türkçe Vikipedi'ye göre bu eser, Manet'nin bilinen ilk nü çalışmasıdır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Manet'nin bilinen bu ilk nü çalışmasında, izleyiciyi şaşırtan, kadınla göz göze gelmeleri oldu.",
+   "ihtiyat": true
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1860"}, "b": {"kaynak": "enwiki.txt", "alinti": "created in 1861"}},
-  {"konu": "sergileme", "a": {"kaynak": "enwiki.txt", "alinti": "The painting was exhibited at the Salon des Artistes Français in 1865."}, "b": {"kaynak": "trwiki.txt", "alinti": "Ressam, bu kişisel çalışmasıyla hiçbir zaman Paris Salonu'na başvurmadı."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1860"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "created in 1861"
+   }
+  },
+  {
+   "konu": "sergileme",
+   "a": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The painting was exhibited at the Salon des Artistes Français in 1865."
+   },
+   "b": {
+    "kaynak": "trwiki.txt",
+    "alinti": "Ressam, bu kişisel çalışmasıyla hiçbir zaman Paris Salonu'na başvurmadı."
+   }
+  }
  ],
  "bulunamadi": []
 }

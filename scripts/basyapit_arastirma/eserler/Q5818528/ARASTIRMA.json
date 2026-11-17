@@ -2,35 +2,202 @@
  "anahtar": "Q5818528",
  "baslik_tr": "Oidipus ve Sfenks",
  "kunye": {
-  "sanatci": {"deger": "Jean-Auguste-Dominique Ingres", "kaynak": "wikidata.txt", "alinti": "creator (P170): Jean-Auguste-Dominique Ingres (Q23380)"},
-  "tarih": {"deger": "1808 (öğrenci çalışması); 1827'de büyütülüp tamamlandı", "kaynak": "enwiki.txt", "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827.", "ihtiyat": false},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "189 × 144 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 189 centimetre width (P2049): 144 centimetre"},
-  "yer": {"deger": "Louvre Müzesi, Resim Bölümü", "kaynak": "wikidata.txt", "alinti": "collection (P195): Department of Paintings of the Louvre (Q3044768)"}
+  "sanatci": {
+   "deger": "Jean-Auguste-Dominique Ingres",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Jean-Auguste-Dominique Ingres (Q23380)"
+  },
+  "tarih": {
+   "deger": "1808 (öğrenci çalışması); 1827'de büyütülüp tamamlandı",
+   "kaynak": "enwiki.txt",
+   "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827.",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "189 × 144 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 189 centimetre width (P2049): 144 centimetre"
+  },
+  "yer": {
+   "deger": "Louvre Müzesi, Resim Bölümü",
+   "kaynak": "wikidata.txt",
+   "alinti": "collection (P195): Department of Paintings of the Louvre (Q3044768)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Oidipus'un Sfenks'in bilmecesini açıklamasını betimler.", "kaynak": "enwiki.txt", "alinti": "The painting depicts Oedipus explaining the riddle of the Sphinx.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Aslında 1808'de yapılmış bir öğrenci çalışması olan tablo, 1827'de büyütülüp tamamlanmıştır.", "kaynak": "enwiki.txt", "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Ingres, 1808'de envoi olarak gerçek boyutlu bir Oidipus figürü ile The Valpinçon Bather'ı göndermiştir.", "kaynak": "enwiki.txt", "alinti": "As his envoi of 1808 Ingres sent a life-size Figure of Oedipus and The Valpinçon Bather", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Akademisyenler her iki tablodaki ışık işlemesini ılımlı biçimde eleştirmiş ve figürleri yeterince idealleştirilmemiş bulmuştur.", "kaynak": "enwiki.txt", "alinti": "The academicians were moderately critical of the treatment of light in both paintings, and considered the figures to be insufficiently idealized.", "ihtiyat": false},
-  {"id": "C05", "bolum": "hikaye", "iddia": "Tablo Roma'da başlanmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was begun in Rome", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Genişletilen resim alanında Ingres, uzakta parlak biçimde aydınlatılmış manzara ile Sfenks'i saran gölgeler arasında dramatik bir karşıtlık yaratmıştır.", "kaynak": "enwiki.txt", "alinti": "Within the expanded picture space he created a dramatic contrast between the brightly illuminated landscape seen in the distance, and the shadows that envelop the Sphinx.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Ingres, Sfenks'in pozunu değiştirmiş ve sol alt köşede görülen insan kalıntılarını eklemiştir.", "kaynak": "enwiki.txt", "alinti": "Ingres modified the pose of the Sphinx and added the human remains seen in the lower left corner.", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Sağda görülen ve tutum ile ifadesi Ingres'in Poussin incelemesini ortaya koyan kaçan adam figürü de bu sırada eklenmiştir.", "kaynak": "enwiki.txt", "alinti": "The fleeing man seen at the right, whose attitude and expression reveal Ingres's study of Poussin, was also added at this time.", "ihtiyat": false},
-  {"id": "C09", "bolum": "gorunen", "iddia": "Tabloda göz teması betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): eye contact (Q633546)", "ihtiyat": false},
-  {"id": "C10", "bolum": "gorunen", "iddia": "Tabloda bir mağara betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): cave (Q35509)", "ihtiyat": false},
-  {"id": "C11", "bolum": "kompozisyon", "iddia": "Ingres tuvali büyüterek sol kenara 20 cm, üste 31 cm ve sağa 31 cm eklemiştir.", "kaynak": "enwiki.txt", "alinti": "He enlarged the canvas, adding 20 cm to the left edge, 31 cm to the top, and 31 cm to the right.", "ihtiyat": false},
-  {"id": "C12", "bolum": "anlam", "iddia": "Ingres bu iki tabloyla erkek ve kadın nü üzerindeki ustalığını göstermeyi ummuştur.", "kaynak": "enwiki.txt", "alinti": "hoping by these two paintings to demonstrate his mastery of the male and female nude", "ihtiyat": false},
-  {"id": "C13", "bolum": "anlam", "iddia": "Ingres yaklaşık 1825'te, esasen bir figür çalışması olan eseri daha gelişmiş bir anlatı sahnesine dönüştürmek için yeniden çalışmaya karar vermiştir.", "kaynak": "enwiki.txt", "alinti": "Around 1825 he decided to rework it to turn what was essentially a figure study into a more developed narrative scene.", "ihtiyat": true},
-  {"id": "C14", "bolum": "anlam", "iddia": "Tablo, mitolojik resim ve nü türünde bir yapıttır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): mythological painting (Q3374376) genre (P136): nude (Q40446)", "ihtiyat": false},
-  {"id": "C15", "bolum": "onem", "iddia": "Ingres Kasım 1827'de bitmiş eseri iki portreyle birlikte Salon'da sergilemiş ve yapıtlar iyi karşılanmıştır.", "kaynak": "enwiki.txt", "alinti": "In November 1827 Ingres exhibited the finished work, along with two portraits, in the Salon, where they were well received.", "ihtiyat": false},
-  {"id": "C16", "bolum": "onem", "iddia": "Ingres, Oidipus ve Sfenks'i 1829'da satmış ve tablo 1878'de Louvre'a girmiştir.", "kaynak": "enwiki.txt", "alinti": "Ingres sold Oedipus and the Sphinx in 1829, and it entered the Louvre in 1878.", "ihtiyat": false},
-  {"id": "C17", "bolum": "onem", "iddia": "Tablo sol altta imzalıdır ve 1808 tarihlidir.", "kaynak": "enwiki.txt", "alinti": "The painting is signed and dated 1808 at the lower left.", "ihtiyat": false},
-  {"id": "C18", "bolum": "onem", "iddia": "Tablo Fransız Devleti'ne aittir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): French State (Q3591845)", "ihtiyat": false},
-  {"id": "C19", "bolum": "onem", "iddia": "Tablo Neoklasizm akımına aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Neoclassicism (Q14378)", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Oidipus'un Sfenks'in bilmecesini açıklamasını betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts Oedipus explaining the riddle of the Sphinx.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "onem",
+   "iddia": "Aslında 1808'de yapılmış bir öğrenci çalışması olan tablo, 1827'de büyütülüp tamamlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "onem",
+   "iddia": "Ingres, 1808'de envoi olarak gerçek boyutlu bir Oidipus figürü ile The Valpinçon Bather'ı göndermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "As his envoi of 1808 Ingres sent a life-size Figure of Oedipus and The Valpinçon Bather",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "onem",
+   "iddia": "Akademisyenler her iki tablodaki ışık işlemesini ılımlı biçimde eleştirmiş ve figürleri yeterince idealleştirilmemiş bulmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The academicians were moderately critical of the treatment of light in both paintings, and considered the figures to be insufficiently idealized.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "onem",
+   "iddia": "Tablo Roma'da başlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was begun in Rome",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Genişletilen resim alanında Ingres, uzakta parlak biçimde aydınlatılmış manzara ile Sfenks'i saran gölgeler arasında dramatik bir karşıtlık yaratmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Within the expanded picture space he created a dramatic contrast between the brightly illuminated landscape seen in the distance, and the shadows that envelop the Sphinx.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Ingres, Sfenks'in pozunu değiştirmiş ve sol alt köşede görülen insan kalıntılarını eklemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Ingres modified the pose of the Sphinx and added the human remains seen in the lower left corner.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Sağda görülen ve tutum ile ifadesi Ingres'in Poussin incelemesini ortaya koyan kaçan adam figürü de bu sırada eklenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The fleeing man seen at the right, whose attitude and expression reveal Ingres's study of Poussin, was also added at this time.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Tabloda göz teması betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): eye contact (Q633546)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Tabloda bir mağara betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): cave (Q35509)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Ingres tuvali büyüterek sol kenara 20 cm, üste 31 cm ve sağa 31 cm eklemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He enlarged the canvas, adding 20 cm to the left edge, 31 cm to the top, and 31 cm to the right.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Ingres bu iki tabloyla erkek ve kadın nü üzerindeki ustalığını göstermeyi ummuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "hoping by these two paintings to demonstrate his mastery of the male and female nude",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Ingres yaklaşık 1825'te, esasen bir figür çalışması olan eseri daha gelişmiş bir anlatı sahnesine dönüştürmek için yeniden çalışmaya karar vermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Around 1825 he decided to rework it to turn what was essentially a figure study into a more developed narrative scene.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Tablo, mitolojik resim ve nü türünde bir yapıttır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "genre (P136): mythological painting (Q3374376) genre (P136): nude (Q40446)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Ingres Kasım 1827'de bitmiş eseri iki portreyle birlikte Salon'da sergilemiş ve yapıtlar iyi karşılanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In November 1827 Ingres exhibited the finished work, along with two portraits, in the Salon, where they were well received.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Ingres, Oidipus ve Sfenks'i 1829'da satmış ve tablo 1878'de Louvre'a girmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Ingres sold Oedipus and the Sphinx in 1829, and it entered the Louvre in 1878.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablo sol altta imzalıdır ve 1808 tarihlidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting is signed and dated 1808 at the lower left.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Tablo Fransız Devleti'ne aittir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "owned by (P127): French State (Q3591845)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo Neoklasizm akımına aittir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "movement (P135): Neoclassicism (Q14378)",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1808"}, "b": {"kaynak": "enwiki.txt", "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1808"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Originally a student work painted in 1808, it was enlarged and completed in 1827."
+   }
+  }
  ],
- "bulunamadi": ["anlam: kaynakta Sfenks'in bilmecesinin metni, cevabı veya simgesel yorumu yok"]
+ "bulunamadi": [
+  "anlam: kaynakta Sfenks'in bilmecesinin metni, cevabı veya simgesel yorumu yok",
+  "hikaye: kaynakta resmin anlattığı olaya dair yeterli bilgi yok"
+ ]
 }

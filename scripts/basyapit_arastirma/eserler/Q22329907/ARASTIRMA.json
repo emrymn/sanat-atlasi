@@ -2,33 +2,189 @@
  "anahtar": "Q22329907",
  "baslik_tr": "Danae",
  "kunye": {
-  "sanatci": {"deger": "Orazio Gentileschi", "kaynak": "wikidata.txt", "alinti": "creator (P170): Orazio Gentileschi (Q367360)"},
-  "tarih": {"deger": "yaklaşık 1623", "kaynak": "enwiki.txt", "alinti": "Danaë is a circa 1623 oil on canvas painting by the Italian artist Orazio Gentileschi.", "ihtiyat": true},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "161,5 × 227,1 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 161.5 centimetre\nwidth (P2049): 227.1 centimetre"},
-  "yer": {"deger": "J. Paul Getty Museum, Los Angeles", "kaynak": "enwiki.txt", "alinti": "is now in the collection of the J. Paul Getty Museum, in Los Angeles"}
+  "sanatci": {
+   "deger": "Orazio Gentileschi",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Orazio Gentileschi (Q367360)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1623",
+   "kaynak": "enwiki.txt",
+   "alinti": "Danaë is a circa 1623 oil on canvas painting by the Italian artist Orazio Gentileschi.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "161,5 × 227,1 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 161.5 centimetre\nwidth (P2049): 227.1 centimetre"
+  },
+  "yer": {
+   "deger": "J. Paul Getty Museum, Los Angeles",
+   "kaynak": "enwiki.txt",
+   "alinti": "is now in the collection of the J. Paul Getty Museum, in Los Angeles"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun konusu, tanrıların kralı Zeus'un Danaë'yi altın bir yağmurla ziyaret ettiği ve bu birleşmeden Perseus'un doğduğu antik Yunan mitidir.", "kaynak": "enwiki.txt", "alinti": "The subject of the painting is the ancient Greek myth of Danaë, which tells of how Zeus, king of the gods, visited Danaë in a shower of gold, from which union Perseus was born.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Orazio'nun kızı Artemisia Gentileschi, Danaë konusunu daha önce resmetmişti.", "kaynak": "enwiki.txt", "alinti": "Orazio's daughter Artemisia Gentileschi had portrayed Danaë earlier.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Tablo, Gentileschi'yi Cenova'ya davet etmiş olan Giovanni Antonio Sauli tarafından 1621'de sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was commissioned in 1621 by Giovanni Antonio Sauli who had invited Gentileschi to Genoa.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Gentileschi, Sauli için Danae'nin yanı sıra Tövbe Eden Magdalen ve Lut ile Kızları gibi başka yapıtlar da resmetmiştir.", "kaynak": "enwiki.txt", "alinti": "Gentileschi painted a number of works for Sauli besides the Danäe, including a Penitent Magdalen and a Lot and his Daughters.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Eros, Zeus'un gelişini önceden bildirir ve altın yağmurun düşmesine izin vermek için koyu yeşil bir perdeyi kenara çeker.", "kaynak": "enwiki.txt", "alinti": "The arrival of Zeus is foretold by Eros, who pulls aside a dark green curtain to let the golden rain fall.", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Danae, üzerinde altın bir battaniye bulunan beyaz bir şilteyle yatağında uzanmış beklemektedir.", "kaynak": "enwiki.txt", "alinti": "Danae is lying on her bed waiting for her, on a white mattress over which lies a golden blanket.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Kadın yalnızca kasık bölgesinde şeffaf bir tülle örtülüdür.", "kaynak": "enwiki.txt", "alinti": "the woman is covered only by a transparent veil in the pubic area", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Orazio Gentileschi figürü, sahne bayağılığa düşmeyecek biçimde zarafet ve ölçülülükle resmetmiştir; Danae kaçınılmaz kaderini kabul eden iffetli bir figür olarak kalır.", "kaynak": "enwiki.txt", "alinti": "Orazio Gentileschi painted her with such grace and moderation as not to make the scene descend into the vulgar: Danae remains a chaste figure who accepts her ineluctable fate.", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Gentileschi, altın sikkelerin ve düşen kurdelelerin hareket ve dinamizmini, Danae'nin heykelsi bedenselliğinin ve klasik cazibesinin dinginliğiyle harmanlamayı başarır.", "kaynak": "enwiki.txt", "alinti": "Gentileschi manages to blend the movement and dynamism of gold coins and falling ribbons with the serenity of Danae's sculptural physicality and classic charm.", "ihtiyat": false},
-  {"id": "C10", "bolum": "kompozisyon", "iddia": "Tablo, Gentileschi'nin önceki işlerini etkileyen Caravaggio'cu natüralizmi, sanatçının sonradan geliştirdiği Toskana lirikliğiyle bir araya getirir.", "kaynak": "enwiki.txt", "alinti": "The painting draws together the Caravaggesque naturalism that influenced Gentileschi's earlier work with the Tuscan lyricism he later developed.", "ihtiyat": false},
-  {"id": "C11", "bolum": "anlam", "iddia": "Mit, Hristiyanlıktaki Müjde inancının, yani İsa'nın ilahi yolla ana rahmine düşmesinin öncüsü olarak kabul edilir.", "kaynak": "enwiki.txt", "alinti": "The myth is regarded as a forerunner of the Christian belief in the Annunciation, the divine conception of Christ.", "ihtiyat": true},
-  {"id": "C12", "bolum": "anlam", "iddia": "Bu tablodaki Danae, Titian'ın resmettiği ve bugün Napoli'deki Capodimonte müzesinde bulunan, rıza gösteren Danae'den tamamen farklıdır.", "kaynak": "enwiki.txt", "alinti": "It is a completely different Danae from the consenting one painted by Titian, today in the Capodimonte museum in Naples", "ihtiyat": false},
-  {"id": "C13", "bolum": "anlam", "iddia": "Orazio, Titian'ın bugün Napoli'deki Capodimonte müzesinde bulunan Danae'sini, Roma'da Palazzo Farnese'de sergilendiği sırada görmüş olabilir.", "kaynak": "enwiki.txt", "alinti": "It is a completely different Danae from the consenting one painted by Titian, today in the Capodimonte museum in Naples, which Orazio may have seen in Rome, when it was exhibited in Palazzo Farnese.", "ihtiyat": true},
-  {"id": "C14", "bolum": "onem", "iddia": "Tablo, 28 Ocak 2016'da Sotheby's New York'ta açık artırmaya çıkarılmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was auctioned at Sotheby's New York on 28 January 2016.", "ihtiyat": false},
-  {"id": "C15", "bolum": "onem", "iddia": "Onlarca yıldır satışa sunulan en önemli Barok tabloydu ve Getty tarafından 30.500.000 ABD dolarına satın alındı.", "kaynak": "enwiki.txt", "alinti": "It was the most important Baroque painting to be offered for sale in decades, and purchased for US$30,500,000 by the Getty.", "ihtiyat": false},
-  {"id": "C16", "bolum": "onem", "iddia": "Tablonun, Gentileschi'nin Lut ile Kızları adlı yapıtının yanına asılması planlanmaktadır.", "kaynak": "enwiki.txt", "alinti": "It is to be hung alongside Gentileschi's Lot and his Daughters.", "ihtiyat": false},
-  {"id": "C17", "bolum": "onem", "iddia": "Tablo en geç 1975'te Londra'da Thomas P. Grange'ın elindeydi.", "kaynak": "enwiki.txt", "alinti": "Thomas P. Grange, London, by 1975;", "ihtiyat": false},
-  {"id": "C18", "bolum": "onem", "iddia": "Tablo 1977'de Richard L. Feigen'a satılmıştır.", "kaynak": "enwiki.txt", "alinti": "By whom sold in 1977 to Richard L. Feigen;", "ihtiyat": false},
-  {"id": "C19", "bolum": "onem", "iddia": "Tablo 2 Ekim 1998'de bir aile tröstüne satılmıştır.", "kaynak": "enwiki.txt", "alinti": "By whom sold on 2 October 1998 to a family trust, the present consignor.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablonun konusu, tanrıların kralı Zeus'un Danaë'yi altın bir yağmurla ziyaret ettiği ve bu birleşmeden Perseus'un doğduğu antik Yunan mitidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The subject of the painting is the ancient Greek myth of Danaë, which tells of how Zeus, king of the gods, visited Danaë in a shower of gold, from which union Perseus was born.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "onem",
+   "iddia": "Orazio'nun kızı Artemisia Gentileschi, Danaë konusunu daha önce resmetmişti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Orazio's daughter Artemisia Gentileschi had portrayed Danaë earlier.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "onem",
+   "iddia": "Tablo, Gentileschi'yi Cenova'ya davet etmiş olan Giovanni Antonio Sauli tarafından 1621'de sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned in 1621 by Giovanni Antonio Sauli who had invited Gentileschi to Genoa.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "onem",
+   "iddia": "Gentileschi, Sauli için Danae'nin yanı sıra Tövbe Eden Magdalen ve Lut ile Kızları gibi başka yapıtlar da resmetmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Gentileschi painted a number of works for Sauli besides the Danäe, including a Penitent Magdalen and a Lot and his Daughters.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Eros, Zeus'un gelişini önceden bildirir ve altın yağmurun düşmesine izin vermek için koyu yeşil bir perdeyi kenara çeker.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The arrival of Zeus is foretold by Eros, who pulls aside a dark green curtain to let the golden rain fall.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Danae, üzerinde altın bir battaniye bulunan beyaz bir şilteyle yatağında uzanmış beklemektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Danae is lying on her bed waiting for her, on a white mattress over which lies a golden blanket.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Kadın yalnızca kasık bölgesinde şeffaf bir tülle örtülüdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the woman is covered only by a transparent veil in the pubic area",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Orazio Gentileschi figürü, sahne bayağılığa düşmeyecek biçimde zarafet ve ölçülülükle resmetmiştir; Danae kaçınılmaz kaderini kabul eden iffetli bir figür olarak kalır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Orazio Gentileschi painted her with such grace and moderation as not to make the scene descend into the vulgar: Danae remains a chaste figure who accepts her ineluctable fate.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Gentileschi, altın sikkelerin ve düşen kurdelelerin hareket ve dinamizmini, Danae'nin heykelsi bedenselliğinin ve klasik cazibesinin dinginliğiyle harmanlamayı başarır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Gentileschi manages to blend the movement and dynamism of gold coins and falling ribbons with the serenity of Danae's sculptural physicality and classic charm.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo, Gentileschi'nin önceki işlerini etkileyen Caravaggio'cu natüralizmi, sanatçının sonradan geliştirdiği Toskana lirikliğiyle bir araya getirir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting draws together the Caravaggesque naturalism that influenced Gentileschi's earlier work with the Tuscan lyricism he later developed.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Mit, Hristiyanlıktaki Müjde inancının, yani İsa'nın ilahi yolla ana rahmine düşmesinin öncüsü olarak kabul edilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The myth is regarded as a forerunner of the Christian belief in the Annunciation, the divine conception of Christ.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Bu tablodaki Danae, Titian'ın resmettiği ve bugün Napoli'deki Capodimonte müzesinde bulunan, rıza gösteren Danae'den tamamen farklıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is a completely different Danae from the consenting one painted by Titian, today in the Capodimonte museum in Naples",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Orazio, Titian'ın bugün Napoli'deki Capodimonte müzesinde bulunan Danae'sini, Roma'da Palazzo Farnese'de sergilendiği sırada görmüş olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is a completely different Danae from the consenting one painted by Titian, today in the Capodimonte museum in Naples, which Orazio may have seen in Rome, when it was exhibited in Palazzo Farnese.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Tablo, 28 Ocak 2016'da Sotheby's New York'ta açık artırmaya çıkarılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was auctioned at Sotheby's New York on 28 January 2016.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Onlarca yıldır satışa sunulan en önemli Barok tabloydu ve Getty tarafından 30.500.000 ABD dolarına satın alındı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was the most important Baroque painting to be offered for sale in decades, and purchased for US$30,500,000 by the Getty.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Tablonun, Gentileschi'nin Lut ile Kızları adlı yapıtının yanına asılması planlanmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is to be hung alongside Gentileschi's Lot and his Daughters.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablo en geç 1975'te Londra'da Thomas P. Grange'ın elindeydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Thomas P. Grange, London, by 1975;",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Tablo 1977'de Richard L. Feigen'a satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "By whom sold in 1977 to Richard L. Feigen;",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo 2 Ekim 1998'de bir aile tröstüne satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "By whom sold on 2 October 1998 to a family trust, the present consignor.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [],
- "bulunamadi": []
+ "bulunamadi": [
+  "hikaye: kaynakta resmin anlattığı olaya dair yeterli bilgi yok"
+ ]
 }

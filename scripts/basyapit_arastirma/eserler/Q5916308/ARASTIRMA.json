@@ -2,47 +2,294 @@
  "anahtar": "Q5916308",
  "baslik_tr": "Lekesiz Gebelik",
  "kunye": {
-  "sanatci": {"deger": "Giovanni Battista Tiepolo", "kaynak": "wikidata.txt", "alinti": "creator (P170): Giovanni Battista Tiepolo (Q186202)"},
-  "tarih": {"deger": "1767", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1767", "ihtiyat": true},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "281 × 155 cm (ayrıca 279 × 152 cm kayıtlı)", "kaynak": "wikidata.txt", "alinti": "height (P2048): 281 centimetre height (P2048): 279 centimetre width (P2049): 155 centimetre width (P2049): 152 centimetre", "ihtiyat": true},
-  "yer": {"deger": "Prado Müzesi, Madrid", "kaynak": "enwiki.txt", "alinti": "The painting is now in the Prado Museum, Madrid."}
+  "sanatci": {
+   "deger": "Giovanni Battista Tiepolo",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Giovanni Battista Tiepolo (Q186202)"
+  },
+  "tarih": {
+   "deger": "1767",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1767",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "281 × 155 cm (ayrıca 279 × 152 cm kayıtlı)",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 281 centimetre height (P2048): 279 centimetre width (P2049): 155 centimetre width (P2049): 152 centimetre",
+   "ihtiyat": true
+  },
+  "yer": {
+   "deger": "Prado Müzesi, Madrid",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting is now in the Prado Museum, Madrid."
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Katolik Kilisesi'nin Meryem'in ilk günah olmadan ana rahmine düştüğü inancını temsil eder.", "kaynak": "enwiki.txt", "alinti": "It represents the Immaculate Conception, a tradition of the Catholic Church stating that the Virgin Mary was conceived without original sin.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Resimde Meryem, şeytan üzerindeki zaferini temsil eden bir yılanı çiğnerken gösterilir.", "kaynak": "enwiki.txt", "alinti": "She is shown trampling a snake, representing her victory over the devil.", "ihtiyat": false},
-  {"id": "C03", "bolum": "gorunen", "iddia": "Meryem meleklerle çevrilidir ve başında yıldızlardan oluşan bir halka vardır.", "kaynak": "enwiki.txt", "alinti": "It depicts the Virgin Mary, surrounded by angels and crowned with the circle of stars.", "ihtiyat": false},
-  {"id": "C04", "bolum": "gorunen", "iddia": "Standart ikonografik öğeler arasında üstündeki güvercin, başının çevresindeki yıldızlar, hilal üzerindeki duruşu, ayakları altında ezilen yılan, dua için birleşen elleri ve sağındaki dikilitaş vardır.", "kaynak": "enwiki.txt", "alinti": "Standard iconographic elements include the dove above her, the stars around her head, her position on the crescent moon with a snake crushed under her feet, her hands held together in prayer, and the obelisk on her right.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Meryem'in ayaklarının altında bir palmiye dalı ve bir ayna görülür.", "kaynak": "enwiki.txt", "alinti": "A palm branch, and a mirror are seen under her feet.", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Temaya eşlik eden bulutlar, kerubiler, zambaklar ve pembe bir gül vardır; bu çiçekler sıklıkla Meryem'le ilişkilendirilir.", "kaynak": "enwiki.txt", "alinti": "Additional iconography which accords to this theme include clouds, cherubs, lilies and a pink rose, flowers which are often associated with Mary.", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Meryem'in kuşağının, Aziz Francis'in kordonu olduğu düşünülür.", "kaynak": "enwiki.txt", "alinti": "Her girdle should be the cord of St. Francis.", "ihtiyat": true},
-  {"id": "C08", "bolum": "kompozisyon", "iddia": "Tablonun görkemli Barok üslubu, duygusal etki uyandırmak içindir.", "kaynak": "enwiki.txt", "alinti": "The imposing Baroque style of the painting is meant to evoke emotion.", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Nihai sürümde Meryem figürü daha fazla yer kaplar ve solundaki kaslı destekçi melek yoktur.", "kaynak": "enwiki.txt", "alinti": "In the final version the figure of Mary occupies more space and lacks the muscular supporting angel on her left.", "ihtiyat": false},
-  {"id": "C10", "bolum": "anlam", "iddia": "Başının üstündeki güvercin Kutsal Ruh'u simgeler; zambaklar saflığını, gül ise göğün ve yerin Kraliçesi Meryem'i simgeler.", "kaynak": "enwiki.txt", "alinti": "The dove above her head symbolizes the Holy Ghost, while the rose and the lilies are her customary symbols, lilies representing her purity, while the rose is the symbol for Mary, Queen of heaven and earth.", "ihtiyat": false},
-  {"id": "C11", "bolum": "anlam", "iddia": "Zambaklar ve gül, 'kapalı bahçe' (hortus conclusus) göndermesiyle Meryem'in sevgisini, bakireliğini ve saflığını simgeler.", "kaynak": "enwiki.txt", "alinti": "The lilies and the rose are references to hortus conclusus (\"enclosed garden\"), and symbolize Mary's love, virginity and purity.", "ihtiyat": false},
-  {"id": "C12", "bolum": "anlam", "iddia": "Küre, hilal ve yıldızlı taç, Vahiy 12:1-2'de betimlenen 'güneşle kuşanmış kadın'ın (Virgo in Sole) geleneksel simgeleridir.", "kaynak": "enwiki.txt", "alinti": "The globe symbolizing the whole world, the crescent moon and the starry crown above her head are traditional symbols of the \"woman clothed with the sun\" (Virgo in Sole) described in Revelation 12:1-2.", "ihtiyat": false},
-  {"id": "C13", "bolum": "anlam", "iddia": "Hilal, Roma tanrıçası Diana'dan gelen eski bir iffet simgesidir.", "kaynak": "enwiki.txt", "alinti": "The crescent moon itself is an ancient symbol of chastity deriving from the Roman goddess Diana.", "ihtiyat": false},
-  {"id": "C14", "bolum": "anlam", "iddia": "Ay ışığını güneşten aldığı gibi, Meryem'in özel lütfu da oğlu İsa'nın meziyetlerinden gelir.", "kaynak": "enwiki.txt", "alinti": "Just as the moon derives its light from the sun, so Mary's special grace derives from the merits of Christ, her Son.", "ihtiyat": false},
-  {"id": "C15", "bolum": "anlam", "iddia": "Sağındaki dikilitaş, Davud Kulesi ve Fildişi Kulesi'yle ilişkili geleneksel Lekesiz Gebelik simgelerine gönderme yaparak sarsılmazlık, bakirelik ve saflığı çağrıştırır.", "kaynak": "enwiki.txt", "alinti": "The obelisk to her right also shimmers in the light of the sun and references traditional symbols of the Immaculate Conception associated with the Tower of David and the Ivory Tower, evoking impregnability, virginity and purity.", "ihtiyat": false},
-  {"id": "C16", "bolum": "anlam", "iddia": "Ağzında elma tutan yılan, Cennet Bahçesi'ndeki yılanı ve İlk Günah'ı temsil eder.", "kaynak": "enwiki.txt", "alinti": "Mary is depicted as trampling a serpent holding an apple in its mouth, representing the serpent in the Garden of Eden and Original Sin.", "ihtiyat": false},
-  {"id": "C17", "bolum": "anlam", "iddia": "Palmiye dalı Meryem'in zaferini ve yüceltilmesini, ayna ise saflığını simgeler.", "kaynak": "enwiki.txt", "alinti": "The palm branch signifies Mary's victory and exaltation, the mirror her purity.", "ihtiyat": false},
-  {"id": "C18", "bolum": "anlam", "iddia": "Modello'daki kaslı meleğin, Lucifer'i öldürmesiyle Meryem'in kurtuluş aracı rolünü önceden haber veren Başmelek Mikail'i temsil ettiği düşünülür.", "kaynak": "enwiki.txt", "alinti": "That angel is thought to be a representation of the archangel Michael whose slaying of Lucifer prefigured Mary's role as an instrument of salvation.", "ihtiyat": true},
-  {"id": "C19", "bolum": "anlam", "iddia": "Bu sürümde Meryem tasviri, Alcantarine geleneğinin sadeliğine uygun olarak daha görkemli ve vakurdur.", "kaynak": "enwiki.txt", "alinti": "In the present version the depiction of Mary is rather more majestic and solemn in keeping with the Alcantarine tradition of austerity.", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "Eser, İspanya Kralı Charles III'ün Mart 1767'de Tiepolo'ya sipariş ettiği, Aranjuez'deki Aziz Pascual Kilisesi için yapılan yedi sunak resminden biridir.", "kaynak": "enwiki.txt", "alinti": "The painting was one of seven altarpieces commissioned in March 1767 from Tiepolo by King Charles III of Spain for the Church of Saint Pascual in Aranjuez, then under construction.", "ihtiyat": false},
-  {"id": "C21", "bolum": "onem", "iddia": "Siparişin yapıldığı manastır başlangıçta Alcantarine (Franciscan) idi, sonradan Conceptionist rahibelere verildi.", "kaynak": "enwiki.txt", "alinti": "This was originally an Alcantarine (Franciscan) monastery that was later assigned to the Conceptionist nuns.", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Sunak resimleri, neo-klasisizmi Charles III'ün zevkine daha uygun olan Anton Raphael Mengs'in aynı temalı takımıyla değiştirildi.", "kaynak": "enwiki.txt", "alinti": "They were replaced by an identically themed set by Anton Raphael Mengs, whose neo-classicism was more to Charles III's taste.", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "Tablo 1770–1775 arasında Aranjuez'deki San Pascual Baylon Kilisesi'nde, 1775–1827 arasında aynı adlı manastırda kaldı.", "kaynak": "enwiki.txt", "alinti": "Church of S. Pascual Baylon, Aranjuez (1770–1775) Convent of S. Pascual Baylon, Aranjuez (1775–1827)", "ihtiyat": false},
-  {"id": "C24", "bolum": "onem", "iddia": "Lekesiz Gebelik, 1827'de Prado Müzesi'ne taşındı.", "kaynak": "enwiki.txt", "alinti": "Finally The Immaculate Conception was transferred to the Prado Museum in 1827.", "ihtiyat": false},
-  {"id": "C25", "bolum": "onem", "iddia": "Tablo 1767 ile 1768 arasında tamamlandı.", "kaynak": "enwiki.txt", "alinti": "It was completed between 1767 and 1768.", "ihtiyat": false},
-  {"id": "C26", "bolum": "onem", "iddia": "Tablonun sipariş edildiği 1767'de Lekesiz Gebelik, kilise sanatında zaten yaygın bir temaydı.", "kaynak": "enwiki.txt", "alinti": "The painting was commissioned in 1767, at a time when the Immaculate Conception was already a common theme in Ecclesiastical art", "ihtiyat": false},
-  {"id": "C27", "bolum": "onem", "iddia": "Lekesiz Gebelik bayramı 1708'de Azizler Takvimi'ne yeniden konmuştu; öğretinin dogma olarak kesinleşmesi Papa Pius IX'un 1854'teki ilanı ile oldu.", "kaynak": "enwiki.txt", "alinti": "the Feast of the Immaculate Conception (8 December) having been restored to the Calendar of Saints in 1708, though its theology would not be definitively settled as dogma until Pope Pius IX's declaration in 1854.", "ihtiyat": false},
-  {"id": "C28", "bolum": "onem", "iddia": "İspanya'da Francisco Pacheco ile başlayan bu Lekesiz Gebelik tasvir biçiminin popülerliği Avrupa'ya yayıldı.", "kaynak": "enwiki.txt", "alinti": "Originating in Spain with Francisco Pacheco, the popularity of this particular representation of The Immaculate Conception spread across Europe.", "ihtiyat": false},
-  {"id": "C29", "bolum": "onem", "iddia": "Tiepolo sunak resimleri için beş modelli yaptı; bunların tümü bugün Londra'daki Courtauld Institute of Art'tadır.", "kaynak": "enwiki.txt", "alinti": "Tiepolo painted a set of five modelli for his altarpieces. These are now all at the Courtauld Institute of Art in London", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Katolik Kilisesi'nin Meryem'in ilk günah olmadan ana rahmine düştüğü inancını temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It represents the Immaculate Conception, a tradition of the Catholic Church stating that the Virgin Mary was conceived without original sin.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Resimde Meryem, şeytan üzerindeki zaferini temsil eden bir yılanı çiğnerken gösterilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She is shown trampling a snake, representing her victory over the devil.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Meryem meleklerle çevrilidir ve başında yıldızlardan oluşan bir halka vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It depicts the Virgin Mary, surrounded by angels and crowned with the circle of stars.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Standart ikonografik öğeler arasında üstündeki güvercin, başının çevresindeki yıldızlar, hilal üzerindeki duruşu, ayakları altında ezilen yılan, dua için birleşen elleri ve sağındaki dikilitaş vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Standard iconographic elements include the dove above her, the stars around her head, her position on the crescent moon with a snake crushed under her feet, her hands held together in prayer, and the obelisk on her right.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in ayaklarının altında bir palmiye dalı ve bir ayna görülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A palm branch, and a mirror are seen under her feet.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Temaya eşlik eden bulutlar, kerubiler, zambaklar ve pembe bir gül vardır; bu çiçekler sıklıkla Meryem'le ilişkilendirilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Additional iconography which accords to this theme include clouds, cherubs, lilies and a pink rose, flowers which are often associated with Mary.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Meryem'in kuşağının, Aziz Francis'in kordonu olduğu düşünülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Her girdle should be the cord of St. Francis.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun görkemli Barok üslubu, duygusal etki uyandırmak içindir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The imposing Baroque style of the painting is meant to evoke emotion.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Nihai sürümde Meryem figürü daha fazla yer kaplar ve solundaki kaslı destekçi melek yoktur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the final version the figure of Mary occupies more space and lacks the muscular supporting angel on her left.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "anlam",
+   "iddia": "Başının üstündeki güvercin Kutsal Ruh'u simgeler; zambaklar saflığını, gül ise göğün ve yerin Kraliçesi Meryem'i simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The dove above her head symbolizes the Holy Ghost, while the rose and the lilies are her customary symbols, lilies representing her purity, while the rose is the symbol for Mary, Queen of heaven and earth.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Zambaklar ve gül, 'kapalı bahçe' (hortus conclusus) göndermesiyle Meryem'in sevgisini, bakireliğini ve saflığını simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The lilies and the rose are references to hortus conclusus (\"enclosed garden\"), and symbolize Mary's love, virginity and purity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Küre, hilal ve yıldızlı taç, Vahiy 12:1-2'de betimlenen 'güneşle kuşanmış kadın'ın (Virgo in Sole) geleneksel simgeleridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The globe symbolizing the whole world, the crescent moon and the starry crown above her head are traditional symbols of the \"woman clothed with the sun\" (Virgo in Sole) described in Revelation 12:1-2.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Hilal, Roma tanrıçası Diana'dan gelen eski bir iffet simgesidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The crescent moon itself is an ancient symbol of chastity deriving from the Roman goddess Diana.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Ay ışığını güneşten aldığı gibi, Meryem'in özel lütfu da oğlu İsa'nın meziyetlerinden gelir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Just as the moon derives its light from the sun, so Mary's special grace derives from the merits of Christ, her Son.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "anlam",
+   "iddia": "Sağındaki dikilitaş, Davud Kulesi ve Fildişi Kulesi'yle ilişkili geleneksel Lekesiz Gebelik simgelerine gönderme yaparak sarsılmazlık, bakirelik ve saflığı çağrıştırır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The obelisk to her right also shimmers in the light of the sun and references traditional symbols of the Immaculate Conception associated with the Tower of David and the Ivory Tower, evoking impregnability, virginity and purity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Ağzında elma tutan yılan, Cennet Bahçesi'ndeki yılanı ve İlk Günah'ı temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mary is depicted as trampling a serpent holding an apple in its mouth, representing the serpent in the Garden of Eden and Original Sin.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Palmiye dalı Meryem'in zaferini ve yüceltilmesini, ayna ise saflığını simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The palm branch signifies Mary's victory and exaltation, the mirror her purity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Bu sürümde Meryem tasviri, Alcantarine geleneğinin sadeliğine uygun olarak daha görkemli ve vakurdur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the present version the depiction of Mary is rather more majestic and solemn in keeping with the Alcantarine tradition of austerity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Eser, İspanya Kralı Charles III'ün Mart 1767'de Tiepolo'ya sipariş ettiği, Aranjuez'deki Aziz Pascual Kilisesi için yapılan yedi sunak resminden biridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was one of seven altarpieces commissioned in March 1767 from Tiepolo by King Charles III of Spain for the Church of Saint Pascual in Aranjuez, then under construction.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Siparişin yapıldığı manastır başlangıçta Alcantarine (Franciscan) idi, sonradan Conceptionist rahibelere verildi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This was originally an Alcantarine (Franciscan) monastery that was later assigned to the Conceptionist nuns.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Sunak resimleri, neo-klasisizmi Charles III'ün zevkine daha uygun olan Anton Raphael Mengs'in aynı temalı takımıyla değiştirildi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They were replaced by an identically themed set by Anton Raphael Mengs, whose neo-classicism was more to Charles III's taste.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Tablo 1770–1775 arasında Aranjuez'deki San Pascual Baylon Kilisesi'nde, 1775–1827 arasında aynı adlı manastırda kaldı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Church of S. Pascual Baylon, Aranjuez (1770–1775) Convent of S. Pascual Baylon, Aranjuez (1775–1827)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Lekesiz Gebelik, 1827'de Prado Müzesi'ne taşındı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Finally The Immaculate Conception was transferred to the Prado Museum in 1827.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Tablo 1767 ile 1768 arasında tamamlandı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was completed between 1767 and 1768.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Tablonun sipariş edildiği 1767'de Lekesiz Gebelik, kilise sanatında zaten yaygın bir temaydı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned in 1767, at a time when the Immaculate Conception was already a common theme in Ecclesiastical art",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Lekesiz Gebelik bayramı 1708'de Azizler Takvimi'ne yeniden konmuştu; öğretinin dogma olarak kesinleşmesi Papa Pius IX'un 1854'teki ilanı ile oldu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the Feast of the Immaculate Conception (8 December) having been restored to the Calendar of Saints in 1708, though its theology would not be definitively settled as dogma until Pope Pius IX's declaration in 1854.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "İspanya'da Francisco Pacheco ile başlayan bu Lekesiz Gebelik tasvir biçiminin popülerliği Avrupa'ya yayıldı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Originating in Spain with Francisco Pacheco, the popularity of this particular representation of The Immaculate Conception spread across Europe.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Tiepolo sunak resimleri için beş modelli yaptı; bunların tümü bugün Londra'daki Courtauld Institute of Art'tadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Tiepolo painted a set of five modelli for his altarpieces. These are now all at the Courtauld Institute of Art in London",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1767"}, "b": {"kaynak": "enwiki.txt", "alinti": "It was completed between 1767 and 1768."}},
-  {"konu": "olcu (yükseklik)", "a": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 281 centimetre"}, "b": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 279 centimetre"}},
-  {"konu": "olcu (genişlik)", "a": {"kaynak": "wikidata.txt", "alinti": "width (P2049): 155 centimetre"}, "b": {"kaynak": "wikidata.txt", "alinti": "width (P2049): 152 centimetre"}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1767"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "It was completed between 1767 and 1768."
+   }
+  },
+  {
+   "konu": "olcu (yükseklik)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "height (P2048): 281 centimetre"
+   },
+   "b": {
+    "kaynak": "wikidata.txt",
+    "alinti": "height (P2048): 279 centimetre"
+   }
+  },
+  {
+   "konu": "olcu (genişlik)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "width (P2049): 155 centimetre"
+   },
+   "b": {
+    "kaynak": "wikidata.txt",
+    "alinti": "width (P2049): 152 centimetre"
+   }
+  }
  ],
  "bulunamadi": []
 }

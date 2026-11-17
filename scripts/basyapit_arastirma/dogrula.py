@@ -93,8 +93,10 @@ def eser(qid):
         else:
             kanit(f'kunye.{alan}', v, kaynaklar, hata, sayi_denetle=alan in ('tarih', 'olcu'))
     iddialar = d.get('iddialar') or []
-    if len(iddialar) < EN_AZ_IDDIA:
-        hata(f'{len(iddialar)} iddia var; en az {EN_AZ_IDDIA} olmalı')
+    # Kaynak kısa ise (bulunamadi'da "iddia sayısı: …" notu) alt sınır 10'a iner; uydurmaktansa az iddia.
+    en_az = 10 if any(str(x).startswith('iddia sayısı') for x in d.get('bulunamadi') or []) else EN_AZ_IDDIA
+    if len(iddialar) < en_az:
+        hata(f'{len(iddialar)} iddia var; en az {en_az} olmalı')
     kimlik, say, alintilar = set(), dict.fromkeys(BOLUMLER, 0), {}
     for c in iddialar:
         et = c.get('id', '?')

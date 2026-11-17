@@ -2,36 +2,207 @@
  "anahtar": "Q3701418",
  "baslik_tr": "Danae",
  "kunye": {
-  "sanatci": {"deger": "Artemisia Gentileschi", "kaynak": "wikidata.txt", "alinti": "creator (P170): Artemisia Gentileschi (Q212657)"},
-  "tarih": {"deger": "yaklaşık 1612", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1612 [sourcing circumstances: circa (Q5727902)]", "ihtiyat": true},
-  "teknik": {"deger": "bakır üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): copper (Q753)"},
-  "olcu": {"deger": "41.3 × 52.7 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 41.3 centimetre width (P2049): 52.7 centimetre"},
-  "yer": {"deger": "Saint Louis Art Museum", "kaynak": "wikidata.txt", "alinti": "location (P276): Saint Louis Art Museum (Q1760539)"}
+  "sanatci": {
+   "deger": "Artemisia Gentileschi",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Artemisia Gentileschi (Q212657)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1612",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1612 [sourcing circumstances: circa (Q5727902)]",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "bakır üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): copper (Q753)"
+  },
+  "olcu": {
+   "deger": "41.3 × 52.7 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 41.3 centimetre width (P2049): 52.7 centimetre"
+  },
+  "yer": {
+   "deger": "Saint Louis Art Museum",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Saint Louis Art Museum (Q1760539)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Danaë'nin hikâyesi Ovidius'un Metamorphoses'inde kayıtlıdır ve Argos Kralı Acrisius'un kızının başına gelenleri anlatır.", "kaynak": "enwiki.txt", "alinti": "The story of Danaë is recorded in Ovid's Metamorphoses and recounts the plight of the daughter of King Acrisius of Argos.", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Acrisius, torununun kendi ölümüne yol açacağına dair bir kehanet nedeniyle, olası bir hamileliği önlemek için kızını hapsetmiştir.", "kaynak": "enwiki.txt", "alinti": "The story of Danaë is recorded in Ovid's Metamorphoses and recounts the plight of the daughter of King Acrisius of Argos. A prophecy led him to believe that his grandchild would lead to his death, and therefore imprisoned his daughter to prevent a potential pregnancy.", "ihtiyat": false},
-  {"id": "C03", "bolum": "hikaye", "iddia": "Zeus, altın yağmuruna dönüşerek odaya girmiş ve Danaë'yi baştan çıkarmıştır.", "kaynak": "enwiki.txt", "alinti": "Zeus overcame this challenge by transforming himself into a shower of gold, entering the room and seducing Danaë.", "ihtiyat": false},
-  {"id": "C04", "bolum": "hikaye", "iddia": "Danaë daha sonra Perseus adlı bir oğul doğurmuş; Perseus yetişkinliğinde büyükbabasını öldürmüştür.", "kaynak": "enwiki.txt", "alinti": "Zeus overcame this challenge by transforming himself into a shower of gold, entering the room and seducing Danaë. She subsequently bore a son Perseus, who went on to kill his grandfather in his adulthood.", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Danaë'nin çıplak figürü, karanlık bir mekânda zengin dokulu yatağına uzanmıştır.", "kaynak": "enwiki.txt", "alinti": "The nude figure of Danaë reclines on her richly textiled bed in a darkened space", "ihtiyat": false},
-  {"id": "C06", "bolum": "gorunen", "iddia": "Beyaz başörtülü hizmetçi, arka planda altın sikkeleri mavi etekliğinde toplamaktadır.", "kaynak": "enwiki.txt", "alinti": "her servant wearing a white headscarf in the background collects gold coins in her blue skirts", "ihtiyat": false},
-  {"id": "C07", "bolum": "gorunen", "iddia": "Tablonun ana konusu altın yağmurudur.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): shower of gold (Q37739859)", "ihtiyat": false},
-  {"id": "C08", "bolum": "gorunen", "iddia": "Tabloda kırmızı saç betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): red hair (Q152357)", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Poz ve tasarım, Artemisia'nın daha önceki Kleopatra versiyonuna dayanmaktadır.", "kaynak": "enwiki.txt", "alinti": "The pose and design are based on Artemisia's earlier version of Cleopatra.", "ihtiyat": false},
-  {"id": "C10", "bolum": "anlam", "iddia": "Bunun sanatçının bir otoportresi olduğu varsayılmaktadır.", "kaynak": "enwiki.txt", "alinti": "It is assumed that this is a self-portrait of the artist.", "ihtiyat": true},
-  {"id": "C11", "bolum": "anlam", "iddia": "Sanat tarihçileri bu Danaë betimlemesini tartışmıştır: kimi açık ve davetkâr bir duruşa işaret ederken kimi sıkılmış yumruk ve kapalı bacakları gözlemlemektedir.", "kaynak": "enwiki.txt", "alinti": "Art historians have debated this portrayal of Danaë, with some noting an open, inviting posture, while others observe the clenched fist and closed legs.", "ihtiyat": true},
-  {"id": "C12", "bolum": "anlam", "iddia": "Bazı araştırmacılar, tablonun sanatçının birkaç yıl önce uğradığı tecavüze doğrudan gönderme yaptığı görüşündedir.", "kaynak": "enwiki.txt", "alinti": "Some scholars believe this painting refers directly to the rape the artist endured a few years prior", "ihtiyat": true},
-  {"id": "C13", "bolum": "anlam", "iddia": "Diğer araştırmacılar ise sanatçının, istenmeyen cinsel baskılara maruz kalan kadınlara sempati duyduğunu savunmaktadır.", "kaynak": "enwiki.txt", "alinti": "others argue that she rather had a sympathy for women victimized by unwelcome sexual pressures", "ihtiyat": false},
-  {"id": "C14", "bolum": "onem", "iddia": "Artemisia'nın günümüze ulaşan eserlerinin çoğundan farklı olarak bu tablo bakır üzerine yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "Unlike most of Artemisia's surviving works, this painting was executed on copper.", "ihtiyat": false},
-  {"id": "C15", "bolum": "onem", "iddia": "Orazio'nun sık sık bakır üzerine çalıştığı bilindiğinden, bu durum eserin babaya mı kıza mı ait olduğu konusunda araştırmacılar arasında tartışmaya yol açmıştır.", "kaynak": "enwiki.txt", "alinti": "Given that Orazio was known to work frequently on copper, this has led scholars to debate the authorship between daughter and father.", "ihtiyat": true},
-  {"id": "C16", "bolum": "onem", "iddia": "Tablonun Artemisia'ya atfedilmesi, kadın formunun natüralist betimlenmesine ve bir kadının cinsel şiddet karşısındaki sıkıntısının duyarlı biçimde betimlenmesine dayanmaktadır.", "kaynak": "enwiki.txt", "alinti": "The attribution to Artemisia lies in both the naturalistic rendering of the female form as well as the sensitive portrayal of a woman's distress towards sexual violence.", "ihtiyat": true},
-  {"id": "C17", "bolum": "onem", "iddia": "Tablo, Artemisia Roma'da yaşarken yaklaşık 1612'de yaratılmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was created while Artemisia was living in Rome, around 1612.", "ihtiyat": true},
-  {"id": "C18", "bolum": "onem", "iddia": "Tablonun belgelenen ilk görünümü, 22 Şubat 1986'da Monako'daki Sotheby's satışında olmuş ve eser burada sanatçının babası Orazio'nun çalışması olarak satılmıştır.", "kaynak": "enwiki.txt", "alinti": "The first documented appearance of the painting was at the Sotheby's sale in Monaco on February 22, 1986, where it was sold as a work of the artist's father Orazio.", "ihtiyat": false},
-  {"id": "C19", "bolum": "onem", "iddia": "Tablo daha sonra 1 Ağustos 1986'da Saint Louis Art Museum tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was subsequently purchased by the Saint Louis Art Museum on August 1, 1986.", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "1986'da tamamlanan bir temizlik, eski renk değiştirmiş verniği kaldırmış ve hizmetçinin elbisesinin canlı renklerini geri kazandırmıştır.", "kaynak": "enwiki.txt", "alinti": "A cleaning completed in 1986 removed old discolored varnish and restored the vibrant colors of the servant's dress.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Danaë'nin hikâyesi Ovidius'un Metamorphoses'inde kayıtlıdır ve Argos Kralı Acrisius'un kızının başına gelenleri anlatır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The story of Danaë is recorded in Ovid's Metamorphoses and recounts the plight of the daughter of King Acrisius of Argos.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Acrisius, torununun kendi ölümüne yol açacağına dair bir kehanet nedeniyle, olası bir hamileliği önlemek için kızını hapsetmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The story of Danaë is recorded in Ovid's Metamorphoses and recounts the plight of the daughter of King Acrisius of Argos. A prophecy led him to believe that his grandchild would lead to his death, and therefore imprisoned his daughter to prevent a potential pregnancy.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Zeus, altın yağmuruna dönüşerek odaya girmiş ve Danaë'yi baştan çıkarmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Zeus overcame this challenge by transforming himself into a shower of gold, entering the room and seducing Danaë.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Danaë daha sonra Perseus adlı bir oğul doğurmuş; Perseus yetişkinliğinde büyükbabasını öldürmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Zeus overcame this challenge by transforming himself into a shower of gold, entering the room and seducing Danaë. She subsequently bore a son Perseus, who went on to kill his grandfather in his adulthood.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Danaë'nin çıplak figürü, karanlık bir mekânda zengin dokulu yatağına uzanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The nude figure of Danaë reclines on her richly textiled bed in a darkened space",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Beyaz başörtülü hizmetçi, arka planda altın sikkeleri mavi etekliğinde toplamaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "her servant wearing a white headscarf in the background collects gold coins in her blue skirts",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "hikaye",
+   "iddia": "Tablonun ana konusu altın yağmurudur.",
+   "kaynak": "wikidata.txt",
+   "alinti": "main subject (P921): shower of gold (Q37739859)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Tabloda kırmızı saç betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): red hair (Q152357)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Poz ve tasarım, Artemisia'nın daha önceki Kleopatra versiyonuna dayanmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The pose and design are based on Artemisia's earlier version of Cleopatra.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "anlam",
+   "iddia": "Bunun sanatçının bir otoportresi olduğu varsayılmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is assumed that this is a self-portrait of the artist.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Sanat tarihçileri bu Danaë betimlemesini tartışmıştır: kimi açık ve davetkâr bir duruşa işaret ederken kimi sıkılmış yumruk ve kapalı bacakları gözlemlemektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Art historians have debated this portrayal of Danaë, with some noting an open, inviting posture, while others observe the clenched fist and closed legs.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Bazı araştırmacılar, tablonun sanatçının birkaç yıl önce uğradığı tecavüze doğrudan gönderme yaptığı görüşündedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Some scholars believe this painting refers directly to the rape the artist endured a few years prior",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Diğer araştırmacılar ise sanatçının, istenmeyen cinsel baskılara maruz kalan kadınlara sempati duyduğunu savunmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "others argue that she rather had a sympathy for women victimized by unwelcome sexual pressures",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Artemisia'nın günümüze ulaşan eserlerinin çoğundan farklı olarak bu tablo bakır üzerine yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Unlike most of Artemisia's surviving works, this painting was executed on copper.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Orazio'nun sık sık bakır üzerine çalıştığı bilindiğinden, bu durum eserin babaya mı kıza mı ait olduğu konusunda araştırmacılar arasında tartışmaya yol açmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Given that Orazio was known to work frequently on copper, this has led scholars to debate the authorship between daughter and father.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Tablonun Artemisia'ya atfedilmesi, kadın formunun natüralist betimlenmesine ve bir kadının cinsel şiddet karşısındaki sıkıntısının duyarlı biçimde betimlenmesine dayanmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The attribution to Artemisia lies in both the naturalistic rendering of the female form as well as the sensitive portrayal of a woman's distress towards sexual violence.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablo, Artemisia Roma'da yaşarken yaklaşık 1612'de yaratılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was created while Artemisia was living in Rome, around 1612.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Tablonun belgelenen ilk görünümü, 22 Şubat 1986'da Monako'daki Sotheby's satışında olmuş ve eser burada sanatçının babası Orazio'nun çalışması olarak satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The first documented appearance of the painting was at the Sotheby's sale in Monaco on February 22, 1986, where it was sold as a work of the artist's father Orazio.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo daha sonra 1 Ağustos 1986'da Saint Louis Art Museum tarafından satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was subsequently purchased by the Saint Louis Art Museum on August 1, 1986.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "1986'da tamamlanan bir temizlik, eski renk değiştirmiş verniği kaldırmış ve hizmetçinin elbisesinin canlı renklerini geri kazandırmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A cleaning completed in 1986 removed old discolored varnish and restored the vibrant colors of the servant's dress.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "atıf", "a": {"kaynak": "wikidata.txt", "alinti": "creator (P170): Artemisia Gentileschi (Q212657)"}, "b": {"kaynak": "enwiki.txt", "alinti": "Given that Orazio was known to work frequently on copper, this has led scholars to debate the authorship between daughter and father."}}
+  {
+   "konu": "atıf",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): Artemisia Gentileschi (Q212657)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Given that Orazio was known to work frequently on copper, this has led scholars to debate the authorship between daughter and father."
+   }
+  }
  ],
  "bulunamadi": [
   "onem: 1986 öncesi mülkiyet zinciri (ilk sahipler, sipariş eden) kaynakta yok",
