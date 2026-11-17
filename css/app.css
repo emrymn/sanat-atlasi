@@ -4527,48 +4527,6 @@ main[data-hareket='giris'] .ozet .ad {
   color: var(--vurgu-acik);
   flex: none;
 }
-.basyapit-ad {
-  margin: 8px 0 4px;
-  font: 400 34px/1.1 var(--serif);
-  color: var(--ink);
-  text-wrap: balance;
-}
-.basyapit-ad:focus {
-  outline: none;
-}
-.basyapit .meta a {
-  color: inherit;
-}
-.basyapit-gorsel {
-  margin: 14px 0 6px;
-}
-.basyapit-buyut {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: var(--surface);
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: zoom-in;
-}
-.basyapit-buyut img {
-  display: block;
-  width: 100%;
-  max-height: 62vh;
-  object-fit: contain;
-}
-.basyapit-ozet {
-  font-style: italic;
-}
-.basyapit-bak {
-  margin: 0;
-  padding-left: 22px;
-}
-.basyapit-bak li + li {
-  margin-top: 6px;
-}
-
 /* İş 9 · Konular */
 .gor-konu {
   display: inline-block;
@@ -14552,7 +14510,7 @@ a {
 /* 1.80.0: .dugme bu listeden çıktı; düğmeler artık hap (dosyanın sonundaki Pigment bölümü) */
 :is(.karisik-dugme, .devam-kart, .tuval-ekle, .zaman-kart, .tur, .tur-sahne, .tur-deste.bos,
   .salon, .siradaki.resimli, .siradaki.resimli .siradaki-dugme, .akim-kart, .ed-govde, .harita-pencere-ic,
-  .harita-zaman, .harita-seviye, .basyapit-buyut, .konu-karti, .zaman-araclar,
+  .harita-zaman, .harita-seviye, .konu-karti, .zaman-araclar,
   .sergi-duvar, [data-teknik='rokoko'] .donem-sahne) {
   border-radius: var(--kose-kart);
 }
@@ -14763,24 +14721,6 @@ article > .eserler + .bolum {
   }
 }
 /* Başyapıt sayfasında görselin altındaki giriş */
-.basyapit-incele {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
-  margin: 6px 0 2px;
-  padding: 0 14px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--ink);
-  font: 600 14px var(--sans);
-  cursor: pointer;
-}
-.basyapit-incele .ikon {
-  width: 18px;
-  height: 18px;
-}
 
 /* İş 157: görüntüleyicinin eylem satırına "Günün resmi" eklendi; etiketler tek satırda kalır, sığmazsa (İncele'li
    başyapıtlarda) satır alta kayar */
@@ -18712,31 +18652,31 @@ a.zm-satir:active {
     opacity: 0;
   }
 }
-.cark[data-donem='ortacag'] {
+:is(.cark, .bsy-desen)[data-donem='ortacag'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M-7-7A7%207%200%201%201%207-7A7%207%200%201%201%207%207A7%207%200%201%201-7%207A7%207%200%201%201-7-7Z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.5%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-16L16%200%200%2016-16%200Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M-7-7A7%207%200%201%201%207-7A7%207%200%201%201%207%207A7%207%200%201%201-7%207A7%207%200%201%201-7-7Z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.5%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-16L16%200%200%2016-16%200Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M-7-7A7%207%200%201%201%207-7A7%207%200%201%201%207%207A7%207%200%201%201-7%207A7%207%200%201%201-7-7Z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.5%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-16L16%200%200%2016-16%200Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M-7-7A7%207%200%201%201%207-7A7%207%200%201%201%207%207A7%207%200%201%201-7%207A7%207%200%201%201-7-7Z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.5%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-16L16%200%200%2016-16%200Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M-7-7A7%207%200%201%201%207-7A7%207%200%201%201%207%207A7%207%200%201%201-7%207A7%207%200%201%201-7-7Z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.5%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-16L16%200%200%2016-16%200Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-6V6M-6%200H6%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-6V6M-6%200H6%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-6V6M-6%200H6%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-6V6M-6%200H6%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='ronesans'] {
+:is(.cark, .bsy-desen)[data-donem='ronesans'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M-10-10h20v20h-20z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2213%22%2F%3E%3Cpath%20d%3D%22M-10-10l20%2020M10-10l-20%2020%22%20stroke-width%3D%220.9%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M-10-10h20v20h-20z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2213%22%2F%3E%3Cpath%20d%3D%22M-10-10l20%2020M10-10l-20%2020%22%20stroke-width%3D%220.9%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M-10-10h20v20h-20z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2213%22%2F%3E%3Cpath%20d%3D%22M-10-10l20%2020M10-10l-20%2020%22%20stroke-width%3D%220.9%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M-10-10h20v20h-20z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2213%22%2F%3E%3Cpath%20d%3D%22M-10-10l20%2020M10-10l-20%2020%22%20stroke-width%3D%220.9%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M-10-10h20v20h-20z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2213%22%2F%3E%3Cpath%20d%3D%22M-10-10l20%2020M10-10l-20%2020%22%20stroke-width%3D%220.9%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-9c3%203%203%207%200%2010c-3-3-3-7%200-10zM-1%201c-3-4-8-3-8%201%202-1%205%200%207%202M1%201c3-4%208-3%208%201-2-1-5%200-7%202M-4%204h8M0%204v5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-9c3%203%203%207%200%2010c-3-3-3-7%200-10zM-1%201c-3-4-8-3-8%201%202-1%205%200%207%202M1%201c3-4%208-3%208%201-2-1-5%200-7%202M-4%204h8M0%204v5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-9c3%203%203%207%200%2010c-3-3-3-7%200-10zM-1%201c-3-4-8-3-8%201%202-1%205%200%207%202M1%201c3-4%208-3%208%201-2-1-5%200-7%202M-4%204h8M0%204v5%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-9c3%203%203%207%200%2010c-3-3-3-7%200-10zM-1%201c-3-4-8-3-8%201%202-1%205%200%207%202M1%201c3-4%208-3%208%201-2-1-5%200-7%202M-4%204h8M0%204v5%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='barok'] {
+:is(.cark, .bsy-desen)[data-donem='barok'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M-14%208c-6-1-7-9-2-12s11%201%208%207M-8%203c4-10%2012-10%2016%200M8%203c-3-6%203-10%208-7s4%2011-2%2012%22%2F%3E%3Cpath%20d%3D%22M0-6c-5-5-5-11%200-16%205%205%205%2011%200%2016z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M-14%208c-6-1-7-9-2-12s11%201%208%207M-8%203c4-10%2012-10%2016%200M8%203c-3-6%203-10%208-7s4%2011-2%2012%22%2F%3E%3Cpath%20d%3D%22M0-6c-5-5-5-11%200-16%205%205%205%2011%200%2016z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M-14%208c-6-1-7-9-2-12s11%201%208%207M-8%203c4-10%2012-10%2016%200M8%203c-3-6%203-10%208-7s4%2011-2%2012%22%2F%3E%3Cpath%20d%3D%22M0-6c-5-5-5-11%200-16%205%205%205%2011%200%2016z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M-14%208c-6-1-7-9-2-12s11%201%208%207M-8%203c4-10%2012-10%2016%200M8%203c-3-6%203-10%208-7s4%2011-2%2012%22%2F%3E%3Cpath%20d%3D%22M0-6c-5-5-5-11%200-16%205%205%205%2011%200%2016z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M-14%208c-6-1-7-9-2-12s11%201%208%207M-8%203c4-10%2012-10%2016%200M8%203c-3-6%203-10%208-7s4%2011-2%2012%22%2F%3E%3Cpath%20d%3D%22M0-6c-5-5-5-11%200-16%205%205%205%2011%200%2016z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.6%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.6%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.6%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.6%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='barok2'] {
+:is(.cark, .bsy-desen)[data-donem='barok2'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M-7.7%209.2A12%2012%200%200%201-7.7-9.2M7.7%209.2A12%2012%200%200%200%207.7-9.2%22%2F%3E%3Cg%20transform%3D%22translate(-7.71%209.19)%20rotate(245)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.13%204.5)%20rotate(273)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.93%20-1.25)%20rotate(301)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-9.95%20-6.71)%20rotate(329)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-5.63%20-10.6)%20rotate(357)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(7.71%209.19)%20rotate(115)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.13%204.5)%20rotate(87)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.93%20-1.25)%20rotate(59)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(9.95%20-6.71)%20rotate(31)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(5.63%20-10.6)%20rotate(3)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M-4%2015l4-3%204%203%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M-7.7%209.2A12%2012%200%200%201-7.7-9.2M7.7%209.2A12%2012%200%200%200%207.7-9.2%22%2F%3E%3Cg%20transform%3D%22translate(-7.71%209.19)%20rotate(245)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.13%204.5)%20rotate(273)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.93%20-1.25)%20rotate(301)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-9.95%20-6.71)%20rotate(329)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-5.63%20-10.6)%20rotate(357)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(7.71%209.19)%20rotate(115)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.13%204.5)%20rotate(87)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.93%20-1.25)%20rotate(59)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(9.95%20-6.71)%20rotate(31)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(5.63%20-10.6)%20rotate(3)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M-4%2015l4-3%204%203%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M-7.7%209.2A12%2012%200%200%201-7.7-9.2M7.7%209.2A12%2012%200%200%200%207.7-9.2%22%2F%3E%3Cg%20transform%3D%22translate(-7.71%209.19)%20rotate(245)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.13%204.5)%20rotate(273)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.93%20-1.25)%20rotate(301)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-9.95%20-6.71)%20rotate(329)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-5.63%20-10.6)%20rotate(357)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(7.71%209.19)%20rotate(115)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.13%204.5)%20rotate(87)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.93%20-1.25)%20rotate(59)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(9.95%20-6.71)%20rotate(31)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(5.63%20-10.6)%20rotate(3)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M-4%2015l4-3%204%203%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M-7.7%209.2A12%2012%200%200%201-7.7-9.2M7.7%209.2A12%2012%200%200%200%207.7-9.2%22%2F%3E%3Cg%20transform%3D%22translate(-7.71%209.19)%20rotate(245)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.13%204.5)%20rotate(273)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.93%20-1.25)%20rotate(301)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-9.95%20-6.71)%20rotate(329)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-5.63%20-10.6)%20rotate(357)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(7.71%209.19)%20rotate(115)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.13%204.5)%20rotate(87)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.93%20-1.25)%20rotate(59)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(9.95%20-6.71)%20rotate(31)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(5.63%20-10.6)%20rotate(3)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M-4%2015l4-3%204%203%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M-7.7%209.2A12%2012%200%200%201-7.7-9.2M7.7%209.2A12%2012%200%200%200%207.7-9.2%22%2F%3E%3Cg%20transform%3D%22translate(-7.71%209.19)%20rotate(245)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.13%204.5)%20rotate(273)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-11.93%20-1.25)%20rotate(301)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-9.95%20-6.71)%20rotate(329)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(-5.63%20-10.6)%20rotate(357)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(7.71%209.19)%20rotate(115)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.13%204.5)%20rotate(87)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(11.93%20-1.25)%20rotate(59)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(9.95%20-6.71)%20rotate(31)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(5.63%20-10.6)%20rotate(3)%22%3E%3Cpath%20d%3D%22M0-4c2.4%202%202.4%206%200%208c-2.4-2-2.4-6%200-8z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M-4%2015l4-3%204%203%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-7V-4M0%204V7M-7%200H-4M4%200H7%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-7V-4M0%204V7M-7%200H-4M4%200H7%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-7V-4M0%204V7M-7%200H-4M4%200H7%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Cpath%20d%3D%22M0-7V-4M0%204V7M-7%200H-4M4%200H7%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='aydinlanma'] {
+:is(.cark, .bsy-desen)[data-donem='aydinlanma'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M0%206L-14%204M0%206L-12.12%20-3M0%206L-7%20-8.12M0%206L0%20-10M0%206L7%20-8.12M0%206L12.12%20-3M0%206L14%204M-14%204A4.2%204.2%200%200%201%20-12.12%20-3A4.2%204.2%200%200%201%20-7%20-8.12A4.2%204.2%200%200%201%200%20-10A4.2%204.2%200%200%201%207%20-8.12A4.2%204.2%200%200%201%2012.12%20-3A4.2%204.2%200%200%201%2014%204%22%2F%3E%3Cpath%20d%3D%22M-4%206q4%205%208%200%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M0%206L-14%204M0%206L-12.12%20-3M0%206L-7%20-8.12M0%206L0%20-10M0%206L7%20-8.12M0%206L12.12%20-3M0%206L14%204M-14%204A4.2%204.2%200%200%201%20-12.12%20-3A4.2%204.2%200%200%201%20-7%20-8.12A4.2%204.2%200%200%201%200%20-10A4.2%204.2%200%200%201%207%20-8.12A4.2%204.2%200%200%201%2012.12%20-3A4.2%204.2%200%200%201%2014%204%22%2F%3E%3Cpath%20d%3D%22M-4%206q4%205%208%200%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M0%206L-14%204M0%206L-12.12%20-3M0%206L-7%20-8.12M0%206L0%20-10M0%206L7%20-8.12M0%206L12.12%20-3M0%206L14%204M-14%204A4.2%204.2%200%200%201%20-12.12%20-3A4.2%204.2%200%200%201%20-7%20-8.12A4.2%204.2%200%200%201%200%20-10A4.2%204.2%200%200%201%207%20-8.12A4.2%204.2%200%200%201%2012.12%20-3A4.2%204.2%200%200%201%2014%204%22%2F%3E%3Cpath%20d%3D%22M-4%206q4%205%208%200%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M0%206L-14%204M0%206L-12.12%20-3M0%206L-7%20-8.12M0%206L0%20-10M0%206L7%20-8.12M0%206L12.12%20-3M0%206L14%204M-14%204A4.2%204.2%200%200%201%20-12.12%20-3A4.2%204.2%200%200%201%20-7%20-8.12A4.2%204.2%200%200%201%200%20-10A4.2%204.2%200%200%201%207%20-8.12A4.2%204.2%200%200%201%2012.12%20-3A4.2%204.2%200%200%201%2014%204%22%2F%3E%3Cpath%20d%3D%22M-4%206q4%205%208%200%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M0%206L-14%204M0%206L-12.12%20-3M0%206L-7%20-8.12M0%206L0%20-10M0%206L7%20-8.12M0%206L12.12%20-3M0%206L14%204M-14%204A4.2%204.2%200%200%201%20-12.12%20-3A4.2%204.2%200%200%201%20-7%20-8.12A4.2%204.2%200%200%201%200%20-10A4.2%204.2%200%200%201%207%20-8.12A4.2%204.2%200%200%201%2012.12%20-3A4.2%204.2%200%200%201%2014%204%22%2F%3E%3Cpath%20d%3D%22M-4%206q4%205%208%200%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M-5%203c-3-3-1-8%203-7%203%201%203%205%200%205M5-3c3%203%201%208-3%207%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M-5%203c-3-3-1-8%203-7%203%201%203%205%200%205M5-3c3%203%201%208-3%207%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M-5%203c-3-3-1-8%203-7%203%201%203%205%200%205M5-3c3%203%201%208-3%207%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M-5%203c-3-3-1-8%203-7%203%201%203%205%200%205M5-3c3%203%201%208-3%207%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='romantik'] {
+:is(.cark, .bsy-desen)[data-donem='romantik'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M10.86%205.1A12%2012%200%201%201%200.61%20-11.98A10%2010%200%201%200%2010.86%205.1Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M10.86%205.1A12%2012%200%201%201%200.61%20-11.98A10%2010%200%201%200%2010.86%205.1Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M10.86%205.1A12%2012%200%201%201%200.61%20-11.98A10%2010%200%201%200%2010.86%205.1Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M10.86%205.1A12%2012%200%201%201%200.61%20-11.98A10%2010%200%201%200%2010.86%205.1Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M10.86%205.1A12%2012%200%201%201%200.61%20-11.98A10%2010%200%201%200%2010.86%205.1Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-6L1.5-1.5%206%200%201.5%201.5%200%206-1.5%201.5-6%200-1.5-1.5Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-6L1.5-1.5%206%200%201.5%201.5%200%206-1.5%201.5-6%200-1.5-1.5Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-6L1.5-1.5%206%200%201.5%201.5%200%206-1.5%201.5-6%200-1.5-1.5Z%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-6L1.5-1.5%206%200%201.5%201.5%200%206-1.5%201.5-6%200-1.5-1.5Z%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M0%2074q12-7%2024%200t24%200t24%200t24%200M0%2022q12-7%2024%200t24%200t24%200t24%200%22%20stroke-width%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='empresyonizm'] {
+:is(.cark, .bsy-desen)[data-donem='empresyonizm'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M2.26%2041.59L9.76%2045.49%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M73.13%2036.62L83.42%2044.02%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M38.74%2026.61L52.6%2032.7%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M11.45%2032.88L24.18%2043.01%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M31.11%2010.03L45.17%2016.2%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M51.48%2049.67L60.04%2055.48%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M27.07%2071.56L36.64%2074.21%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M48.68%2064.31L60.09%2067.49%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M73.83%2047.58L87.18%2052.14%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M83.98%2029.74L89.13%2036.11%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M62.99%2069.54L69.54%2078.22%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M15.39%2067.05L24.62%2079.27%22%20stroke-width%3D%222.6%22%2F%3E%3Cpath%20d%3D%22M85.52%2070.43L94.45%2076.06%22%20stroke-width%3D%222.6%22%2F%3E%3Ccircle%20cx%3D%2257.7%22%20cy%3D%228.01%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%2285.96%22%20cy%3D%2275.85%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%2235.54%22%20cy%3D%2279.43%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%226.11%22%20cy%3D%2261.96%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%2285.9%22%20cy%3D%2252.18%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%2263.05%22%20cy%3D%2248.79%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3Ccircle%20cx%3D%2277.66%22%20cy%3D%2242.43%22%20r%3D%221.7%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='postempresyonizm'] {
+:is(.cark, .bsy-desen)[data-donem='postempresyonizm'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Cpath%20d%3D%22M1.5%200L1.64%200.3L1.71%200.65L1.7%201.03L1.61%201.42L1.43%201.82L1.16%202.19L0.8%202.51L0.35%202.78L-0.16%202.96L-0.73%203.04L-1.33%203.01L-1.94%202.85L-2.53%202.57L-3.09%202.17L-3.58%201.65L-3.97%201.02L-4.25%200.3L-4.4%20-0.49L-4.4%20-1.31L-4.23%20-2.16L-3.91%20-2.98L-3.42%20-3.75L-2.77%20-4.44L-1.99%20-5.02L-1.09%20-5.46L-0.09%20-5.72L0.97%20-5.81L2.05%20-5.69L3.12%20-5.37L4.14%20-4.85L5.07%20-4.13L5.87%20-3.23L6.51%20-2.17L6.95%20-0.99L7.18%200.28L7.17%201.6L6.92%202.93L6.41%204.21L5.67%205.41L4.7%206.47L3.53%207.36L2.2%208.03L0.73%208.46L-0.81%208.61L-2.39%208.48L-3.95%208.06L-5.43%207.35L-6.78%206.37L-7.95%205.13L-8.89%203.68L-9.57%202.06L-9.95%200.31L-10%20-1.5L-9.72%20-3.33L-9.11%20-5.1L-8.17%20-6.76L-6.93%20-8.24L-5.41%20-9.49L-3.67%20-10.46L-1.76%20-11.11L0.27%20-11.41L2.35%20-11.33L4.41%20-10.88L6.38%20-10.05L8.19%20-8.86L9.78%20-7.34L11.08%20-5.54L12.05%20-3.5L12.65%20-1.3L12.84%201.01L12.6%203.34L11.94%205.62L10.87%207.77L9.41%209.71L7.6%2011.38L5.5%2012.71L3.16%2013.65L0.67%2014.16L-1.91%2014.21L-4.48%2013.79%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Cpath%20d%3D%22M1.5%200L1.64%200.3L1.71%200.65L1.7%201.03L1.61%201.42L1.43%201.82L1.16%202.19L0.8%202.51L0.35%202.78L-0.16%202.96L-0.73%203.04L-1.33%203.01L-1.94%202.85L-2.53%202.57L-3.09%202.17L-3.58%201.65L-3.97%201.02L-4.25%200.3L-4.4%20-0.49L-4.4%20-1.31L-4.23%20-2.16L-3.91%20-2.98L-3.42%20-3.75L-2.77%20-4.44L-1.99%20-5.02L-1.09%20-5.46L-0.09%20-5.72L0.97%20-5.81L2.05%20-5.69L3.12%20-5.37L4.14%20-4.85L5.07%20-4.13L5.87%20-3.23L6.51%20-2.17L6.95%20-0.99L7.18%200.28L7.17%201.6L6.92%202.93L6.41%204.21L5.67%205.41L4.7%206.47L3.53%207.36L2.2%208.03L0.73%208.46L-0.81%208.61L-2.39%208.48L-3.95%208.06L-5.43%207.35L-6.78%206.37L-7.95%205.13L-8.89%203.68L-9.57%202.06L-9.95%200.31L-10%20-1.5L-9.72%20-3.33L-9.11%20-5.1L-8.17%20-6.76L-6.93%20-8.24L-5.41%20-9.49L-3.67%20-10.46L-1.76%20-11.11L0.27%20-11.41L2.35%20-11.33L4.41%20-10.88L6.38%20-10.05L8.19%20-8.86L9.78%20-7.34L11.08%20-5.54L12.05%20-3.5L12.65%20-1.3L12.84%201.01L12.6%203.34L11.94%205.62L10.87%207.77L9.41%209.71L7.6%2011.38L5.5%2012.71L3.16%2013.65L0.67%2014.16L-1.91%2014.21L-4.48%2013.79%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Cpath%20d%3D%22M1.5%200L1.64%200.3L1.71%200.65L1.7%201.03L1.61%201.42L1.43%201.82L1.16%202.19L0.8%202.51L0.35%202.78L-0.16%202.96L-0.73%203.04L-1.33%203.01L-1.94%202.85L-2.53%202.57L-3.09%202.17L-3.58%201.65L-3.97%201.02L-4.25%200.3L-4.4%20-0.49L-4.4%20-1.31L-4.23%20-2.16L-3.91%20-2.98L-3.42%20-3.75L-2.77%20-4.44L-1.99%20-5.02L-1.09%20-5.46L-0.09%20-5.72L0.97%20-5.81L2.05%20-5.69L3.12%20-5.37L4.14%20-4.85L5.07%20-4.13L5.87%20-3.23L6.51%20-2.17L6.95%20-0.99L7.18%200.28L7.17%201.6L6.92%202.93L6.41%204.21L5.67%205.41L4.7%206.47L3.53%207.36L2.2%208.03L0.73%208.46L-0.81%208.61L-2.39%208.48L-3.95%208.06L-5.43%207.35L-6.78%206.37L-7.95%205.13L-8.89%203.68L-9.57%202.06L-9.95%200.31L-10%20-1.5L-9.72%20-3.33L-9.11%20-5.1L-8.17%20-6.76L-6.93%20-8.24L-5.41%20-9.49L-3.67%20-10.46L-1.76%20-11.11L0.27%20-11.41L2.35%20-11.33L4.41%20-10.88L6.38%20-10.05L8.19%20-8.86L9.78%20-7.34L11.08%20-5.54L12.05%20-3.5L12.65%20-1.3L12.84%201.01L12.6%203.34L11.94%205.62L10.87%207.77L9.41%209.71L7.6%2011.38L5.5%2012.71L3.16%2013.65L0.67%2014.16L-1.91%2014.21L-4.48%2013.79%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Cpath%20d%3D%22M1.5%200L1.64%200.3L1.71%200.65L1.7%201.03L1.61%201.42L1.43%201.82L1.16%202.19L0.8%202.51L0.35%202.78L-0.16%202.96L-0.73%203.04L-1.33%203.01L-1.94%202.85L-2.53%202.57L-3.09%202.17L-3.58%201.65L-3.97%201.02L-4.25%200.3L-4.4%20-0.49L-4.4%20-1.31L-4.23%20-2.16L-3.91%20-2.98L-3.42%20-3.75L-2.77%20-4.44L-1.99%20-5.02L-1.09%20-5.46L-0.09%20-5.72L0.97%20-5.81L2.05%20-5.69L3.12%20-5.37L4.14%20-4.85L5.07%20-4.13L5.87%20-3.23L6.51%20-2.17L6.95%20-0.99L7.18%200.28L7.17%201.6L6.92%202.93L6.41%204.21L5.67%205.41L4.7%206.47L3.53%207.36L2.2%208.03L0.73%208.46L-0.81%208.61L-2.39%208.48L-3.95%208.06L-5.43%207.35L-6.78%206.37L-7.95%205.13L-8.89%203.68L-9.57%202.06L-9.95%200.31L-10%20-1.5L-9.72%20-3.33L-9.11%20-5.1L-8.17%20-6.76L-6.93%20-8.24L-5.41%20-9.49L-3.67%20-10.46L-1.76%20-11.11L0.27%20-11.41L2.35%20-11.33L4.41%20-10.88L6.38%20-10.05L8.19%20-8.86L9.78%20-7.34L11.08%20-5.54L12.05%20-3.5L12.65%20-1.3L12.84%201.01L12.6%203.34L11.94%205.62L10.87%207.77L9.41%209.71L7.6%2011.38L5.5%2012.71L3.16%2013.65L0.67%2014.16L-1.91%2014.21L-4.48%2013.79%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Cpath%20d%3D%22M1.5%200L1.64%200.3L1.71%200.65L1.7%201.03L1.61%201.42L1.43%201.82L1.16%202.19L0.8%202.51L0.35%202.78L-0.16%202.96L-0.73%203.04L-1.33%203.01L-1.94%202.85L-2.53%202.57L-3.09%202.17L-3.58%201.65L-3.97%201.02L-4.25%200.3L-4.4%20-0.49L-4.4%20-1.31L-4.23%20-2.16L-3.91%20-2.98L-3.42%20-3.75L-2.77%20-4.44L-1.99%20-5.02L-1.09%20-5.46L-0.09%20-5.72L0.97%20-5.81L2.05%20-5.69L3.12%20-5.37L4.14%20-4.85L5.07%20-4.13L5.87%20-3.23L6.51%20-2.17L6.95%20-0.99L7.18%200.28L7.17%201.6L6.92%202.93L6.41%204.21L5.67%205.41L4.7%206.47L3.53%207.36L2.2%208.03L0.73%208.46L-0.81%208.61L-2.39%208.48L-3.95%208.06L-5.43%207.35L-6.78%206.37L-7.95%205.13L-8.89%203.68L-9.57%202.06L-9.95%200.31L-10%20-1.5L-9.72%20-3.33L-9.11%20-5.1L-8.17%20-6.76L-6.93%20-8.24L-5.41%20-9.49L-3.67%20-10.46L-1.76%20-11.11L0.27%20-11.41L2.35%20-11.33L4.41%20-10.88L6.38%20-10.05L8.19%20-8.86L9.78%20-7.34L11.08%20-5.54L12.05%20-3.5L12.65%20-1.3L12.84%201.01L12.6%203.34L11.94%205.62L10.87%207.77L9.41%209.71L7.6%2011.38L5.5%2012.71L3.16%2013.65L0.67%2014.16L-1.91%2014.21L-4.48%2013.79%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M-9%200q9-8%2018%200q-9%208-18%200z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.8%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M-9%200q9-8%2018%200q-9%208-18%200z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.8%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M-9%200q9-8%2018%200q-9%208-18%200z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.8%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M-9%200q9-8%2018%200q-9%208-18%200z%22%2F%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%222.8%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
-.cark[data-donem='modern'] {
+:is(.cark, .bsy-desen)[data-donem='modern'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 
@@ -20676,24 +20616,723 @@ html .bugun-notlar .egim-dugme[data-egim-anahtar][aria-pressed='false'] .ikon {
   animation: none;
 }
 
-/* ---- Eser dersi (İş 185–186): okuma ---- */
-.drsx{padding:0 8px 140px;font-family:var(--sans)}
-.drsx-ust{min-height:44px;display:flex;align-items:center}
-.drsx-okuma{padding:8px 8px 0}
-.drsx-gorsel{display:flex;align-items:center;justify-content:center;width:100%;height:264px;padding:8px;box-sizing:border-box;background:var(--surface);border:1px solid var(--border);border-radius:12px;cursor:zoom-in}
-.drsx-gorsel img{max-width:100%;max-height:100%;object-fit:contain}
-.drsx-baslik{margin:20px 0 0;font:500 30px/36px var(--serif);color:var(--ink);text-wrap:balance}
-.drsx-kunye{margin:6px 0 0;font-size:15px;line-height:22px;color:var(--ink-2)}
-.drsx-bas{display:flex;justify-content:space-between;align-items:baseline;margin-top:28px;padding-top:16px;border-top:1px solid var(--border);font-size:14px;color:var(--ink-2)}
-.drsx-bas span:first-child{font-size:12px;font-weight:600;letter-spacing:.14em}
-.drsx-metin{margin-top:12px;font:400 18px/29px var(--okuma);color:var(--ink);hyphens:auto;-webkit-hyphens:auto}
-.drsx-metin p{margin:0 0 16px}
-.drsx-metin h3{margin:28px 0 10px;font:600 21px/28px var(--okuma)}
-.drsx-metin ul,.drsx-metin ol{margin:0 0 16px;padding-left:22px}
-.drsx-fazla{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;margin-top:24px;padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:14px;color:var(--ink);text-align:left;cursor:pointer;font-family:var(--sans)}
-.drsx-fazla>span{flex:1;display:flex;flex-direction:column;gap:2px;font-size:16px}
-.drsx-fazla>span>span{font-size:14px;color:var(--ink-2)}
-.drsx-ok{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.drsx-uzun{margin-top:32px}
-.drsx-uzun .drsx-bas{border-top:2px solid var(--ink);margin-top:0}
-.drsx-az{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;min-height:44px;border:0;background:none;color:var(--ink);font:500 16px var(--sans);cursor:pointer}
+/* ===== İş 188 · Başyapıt sayfası: tek akış (js/ekranlar/basyapit.js) =====
+   Tablo kapakta, kenardan kenara; okuma tek sütun; ayrıntı kırpımları metnin içinde; altta cam "Yakından bak" düğmesi.
+   Zemin: tablonun rengindeki hale (.hale) ve eserin döneminin sembolleri (.bsy-desen; desenler Akımlar çarkındakiler). */
+/* hale sayfayla kaymaz: okurken de tablonun rengi zeminde kalır (sol üstte güçlü, sağ altta soluk) */
+.hale.bsy-hale {
+  position: fixed;
+  inset: 0;
+  height: auto;
+  background:
+    radial-gradient(120% 60% at 0% 0%, rgba(var(--vurgu-rgb), 0.28), rgba(var(--vurgu-rgb), 0.07) 45%, rgba(var(--vurgu-rgb), 0) 70%),
+    radial-gradient(90% 50% at 100% 100%, rgba(var(--vurgu-rgb), 0.14), rgba(var(--vurgu-rgb), 0) 70%);
+}
+.bsy-desen {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--ink);
+  opacity: 0.04;
+  -webkit-mask: var(--desen) 0 0 / 96px 96px repeat;
+  mask: var(--desen) 0 0 / 96px 96px repeat;
+  pointer-events: none;
+}
+:root[data-tema='gunduz'] .bsy-desen {
+  opacity: 0.045;
+}
+.bsy-desen:not([data-donem]) {
+  display: none;
+}
+.bsy {
+  position: relative;
+  padding-bottom: 96px; /* alttaki "Yakından bak" düğmesi son satırı örtmesin */
+  font-family: var(--sans);
+  color: var(--ink);
+}
+/* --- kapak --- */
+.bsy-kapak {
+  position: relative;
+  min-height: 200px;
+  margin: calc(-1 * var(--ust-bosluk)) calc(-1 * (env(safe-area-inset-right) + var(--yan))) 0 calc(-1 * (env(safe-area-inset-left) + var(--yan)));
+  overflow: hidden;
+  background: var(--surface);
+}
+.bsy-kapak-resim {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+.bsy-kapak-resim img {
+  display: block;
+  width: 100%;
+  max-height: 74vh;
+  max-height: 74svh;
+  object-fit: cover;
+  object-position: 50% 28%;
+}
+.bsy-kapak-bos {
+  margin: 0;
+  padding: calc(env(safe-area-inset-top) + 96px) var(--yan) 72px;
+  text-align: center;
+}
+/* üstte durum çubuğu ve düğmeler için ince gölge; altta zemine eriyen geçiş */
+.bsy-kapak::before,
+.bsy-kapak::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.bsy-kapak::before {
+  top: 0;
+  height: calc(env(safe-area-inset-top) + 96px);
+  background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0));
+}
+.bsy-kapak::after {
+  bottom: -1px;
+  height: 56px;
+  background: linear-gradient(rgba(var(--bg-rgb), 0), var(--bg));
+}
+.bsy-kapak.dik::after {
+  height: 42%;
+  background: linear-gradient(rgba(var(--bg-rgb), 0), rgba(var(--bg-rgb), 0.82) 64%, var(--bg));
+}
+.bsy-kapak-ust {
+  position: absolute;
+  z-index: 2;
+  top: calc(env(safe-area-inset-top) + 8px);
+  left: calc(env(safe-area-inset-left) + 12px);
+  right: calc(env(safe-area-inset-right) + 12px);
+  display: flex;
+  justify-content: space-between;
+}
+.bsy-kapak-ust .geri,
+.bsy-kalp,
+.bsy-cam {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  color: var(--ink);
+  cursor: pointer;
+}
+.bsy-kalp[aria-pressed='true'] .ikon {
+  fill: currentColor;
+}
+/* --- başlık --- */
+.bsy-bas {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.bsy-kapak.dik + .bsy-bas {
+  margin-top: -64px;
+}
+.bsy-akim {
+  align-self: flex-start;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: flex-end;
+}
+.bsy-ad {
+  margin: 8px 0 0;
+  font: 500 34px/1.12 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.bsy-ad:focus {
+  outline: none;
+}
+.bsy-meta {
+  margin: 8px 0 0;
+  font: 400 15px/22px var(--sans);
+  color: var(--ink-2);
+}
+.bsy-meta a {
+  color: var(--ink);
+  text-underline-offset: 3px;
+}
+.bsy-ozgun {
+  margin: 2px 0 0;
+  font: italic 400 15px/22px var(--okuma);
+  color: var(--ink-2);
+}
+.bsy-giris {
+  margin: 16px 0 0;
+  font: 400 18px/28px var(--okuma);
+  color: var(--ink);
+  text-wrap: pretty;
+}
+/* --- okuma --- */
+.bsy-bolum {
+  margin-top: 44px;
+}
+.bsy-bolum > h2 {
+  margin: 0;
+  font: 500 28px/1.2 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.bsy-metin {
+  margin: 12px 0 0;
+  font: 400 18px/29px var(--okuma);
+  color: var(--ink);
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.bsy-metin p {
+  margin: 0 0 16px;
+}
+.bsy-metin :is(h3, h4) {
+  margin: 26px 0 8px;
+  font: 600 20px/1.3 var(--okuma);
+}
+.bsy-metin :is(ul, ol) {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+ol.bsy-metin {
+  padding-left: 22px;
+}
+.bsy-metin li + li {
+  margin-top: 8px;
+}
+.bsy-metin > :last-child {
+  margin-bottom: 0;
+}
+.bsy-terim {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline dotted var(--pirinc);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+/* --- ayrıntı kırpımları --- */
+.bsy-kirp {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: zoom-in;
+}
+.bsy-kirp img {
+  position: absolute;
+  max-width: none;
+}
+.bsy-kirp-im {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  color: var(--ink);
+}
+.bsy-ayrinti {
+  margin: 24px 0 0;
+}
+.bsy-ayrinti figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+.bsy-ayrinti figcaption b {
+  font: 600 17px/22px var(--sans);
+}
+.bsy-ayrinti figcaption span {
+  font: 400 15px/22px var(--sans);
+  color: var(--ink-2);
+}
+.bsy-serit {
+  display: flex;
+  gap: 12px;
+  margin: 24px calc(-1 * var(--yan)) 0;
+  padding: 0 var(--yan);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.bsy-serit::-webkit-scrollbar {
+  display: none;
+}
+.bsy-kirp-kucuk {
+  flex: none;
+  width: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: zoom-in;
+}
+.bsy-kirp-kucuk .bsy-kirp {
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+}
+.bsy-kirp-kucuk b {
+  font: 600 15px/20px var(--sans);
+}
+/* --- daha derine in --- */
+.bsy-derin-kart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: var(--surface);
+}
+.bsy-derin-kart h3 {
+  margin: 6px 0 0;
+  font: 500 24px/1.25 var(--serif);
+  letter-spacing: -0.01em;
+}
+.bsy-derin-kart p {
+  margin: 6px 0 0;
+  font: 400 15px/22px var(--sans);
+  color: var(--ink-2);
+}
+.bsy-dugme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  margin-top: 16px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--ink);
+  color: var(--bg);
+  font: 600 16px/1.2 var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+.bsy-az {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 28px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 500 15px/1.2 var(--sans);
+  cursor: pointer;
+}
+/* --- karşılaştırmalar --- */
+.bsy-kiyas {
+  flex: none;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-family: var(--sans);
+  text-align: left;
+}
+button.bsy-kiyas {
+  cursor: pointer;
+}
+.bsy-kiyas-resim {
+  position: relative;
+  display: block;
+  height: 150px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.bsy-kiyas-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bsy-kiyas.duz {
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+.bsy-kiyas small {
+  font: 600 13px/18px var(--sans);
+  color: var(--ink-2);
+}
+.bsy-kiyas b {
+  margin-top: 2px;
+  font: 500 20px/26px var(--serif);
+  letter-spacing: -0.01em;
+}
+.bsy-kiyas > span:last-child {
+  margin-top: 4px;
+  font: 400 15px/22px var(--sans);
+  color: var(--ink-2);
+}
+/* --- künye, sözlük, sıradaki --- */
+.bsy-son {
+  margin-top: 40px;
+}
+.bsy-son:empty {
+  display: none;
+}
+.bsy-son > h3 {
+  margin: 0;
+  font: 500 22px/1.25 var(--serif);
+  letter-spacing: -0.01em;
+}
+.bsy-liste {
+  margin: 12px 0 0;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+.bsy-liste > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  font: 400 15px/22px var(--sans);
+}
+.bsy-liste > div + div {
+  border-top: 1px solid var(--border);
+}
+.bsy-liste dt {
+  flex: none;
+  color: var(--ink-2);
+}
+.bsy-liste dd {
+  margin: 0;
+  text-align: right;
+}
+.bsy-sozluk > div {
+  flex-direction: column;
+  gap: 2px;
+}
+.bsy-sozluk dt {
+  color: var(--ink);
+  font-weight: 600;
+}
+.bsy-sozluk dd {
+  color: var(--ink-2);
+  text-align: left;
+}
+.bsy-siradaki {
+  position: relative;
+  display: block;
+  height: 232px;
+  margin-top: 12px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  text-decoration: none;
+}
+.bsy-siradaki-resim {
+  position: absolute;
+  inset: 0;
+}
+.bsy-siradaki-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bsy-siradaki::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 60%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.78));
+}
+.bsy-siradaki-yazi {
+  position: absolute;
+  z-index: 1;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.bsy-siradaki-yazi small {
+  font: 600 13px/18px var(--sans);
+  color: #e6e0d6;
+}
+.bsy-siradaki-yazi b {
+  font: 500 22px/27px var(--serif);
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.bsy-not {
+  margin: 24px 0 0;
+  font: 400 13px/19px var(--sans);
+  color: var(--ink-2);
+}
+/* --- sabit öğeler: üstte cam çubuk, altta "Yakından bak" ve sözlük kartı --- */
+.bsy-cubuk {
+  position: fixed;
+  z-index: 29;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  height: calc(env(safe-area-inset-top) + 52px);
+  padding: env(safe-area-inset-top) calc(env(safe-area-inset-right) + 8px) 0 calc(env(safe-area-inset-left) + 8px);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--tab-bg);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.bsy-cubuk.acik {
+  opacity: 1;
+  pointer-events: auto;
+}
+.bsy-cubuk > b {
+  flex: 1;
+  min-width: 0;
+  font: 500 17px/22px var(--serif);
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bsy-cubuk-dugme {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+.bsy-cubuk-dugme img {
+  display: block;
+  width: 26px;
+  height: 36px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.bsy-hap,
+.bsy-sozcuk {
+  position: fixed;
+  z-index: 29;
+  /* sekme çubuğunun ve üstündeki hızlı ayar dilinin (dişli) üstünde */
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 34px);
+  border: 1px solid var(--border);
+  background: var(--tab-bg);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: var(--ink);
+}
+html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
+  bottom: calc(env(safe-area-inset-bottom) + 18px);
+}
+.bsy-hap {
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  padding: 0 22px 0 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  font: 600 16px/1 var(--sans);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.bsy-hap span {
+  font-weight: 400;
+  color: var(--ink-2);
+}
+.bsy-hap[hidden],
+.bsy-sozcuk[hidden] {
+  display: none;
+}
+.bsy-sozcuk {
+  left: calc(env(safe-area-inset-left) + 12px);
+  right: calc(env(safe-area-inset-right) + 12px);
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  padding: 20px 14px 22px 22px;
+  border-radius: 28px;
+  animation: bsy-yuksel 0.3s ease;
+}
+.bsy-sozcuk > div {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.bsy-sozcuk b {
+  margin-top: 4px;
+  font: 500 24px/1.25 var(--serif);
+  letter-spacing: -0.01em;
+}
+.bsy-sozcuk p {
+  margin: 6px 0 0;
+  font: 400 16px/24px var(--sans);
+}
+.bsy-sozcuk-kapat {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(var(--vurgu-rgb), 0.16);
+  color: var(--ink);
+  cursor: pointer;
+}
+@keyframes bsy-yuksel {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+@keyframes bsy-belir {
+  from {
+    opacity: 0;
+  }
+}
+/* --- yan yana karşılaştırma (gövdeye eklenir) --- */
+.bsy-yan {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 0 calc(env(safe-area-inset-bottom) + 14px);
+  background-color: var(--bg);
+  background-image: var(--doku);
+  background-size: 3px 3px;
+  color: var(--ink);
+  font-family: var(--sans);
+  animation: bsy-belir 0.3s ease;
+}
+.bsy-yan-resim {
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bsy-yan-resim img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.bsy-yan-ad {
+  position: absolute;
+  left: calc(env(safe-area-inset-left) + 12px);
+  bottom: 10px;
+  max-width: calc(100% - 24px);
+  box-sizing: border-box;
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  font: 600 13px/18px var(--sans);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bsy-yan-kapat {
+  position: absolute;
+  top: calc(env(safe-area-inset-top) + 8px);
+  right: calc(env(safe-area-inset-right) + 12px);
+}
+.bsy-yan-kart {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  margin: 8px calc(env(safe-area-inset-right) + 12px) 0 calc(env(safe-area-inset-left) + 12px);
+  padding: 20px 22px 18px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--surface);
+}
+.bsy-yan-kart h2 {
+  margin: 4px 0 0;
+  font: 500 24px/1.25 var(--serif);
+  letter-spacing: -0.01em;
+}
+.bsy-yan-kart p {
+  margin: 8px 0 0;
+  font: 400 17px/26px var(--okuma);
+}
+@media (prefers-reduced-motion: reduce) {
+  .bsy-sozcuk,
+  .bsy-yan {
+    animation: none;
+  }
+  .bsy-cubuk {
+    transition: none;
+  }
+}

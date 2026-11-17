@@ -43,7 +43,7 @@ test('başyapıt sayfası → Rehberli inceleme: noktalar, dokununca yakınlaşm
   await page.goto(`./#/basyapit/${encodeURIComponent(K)}`);
   const giris = page.locator('[data-test="basyapit-incele"]');
   await expect(giris).toBeVisible();
-  await expect(giris).toContainText('4 nokta');
+  await expect(giris).toContainText('4 ayrıntı');
   const kutu = await giris.boundingBox();
   expect(kutu.height).toBeGreaterThanOrEqual(44);
   await giris.click();

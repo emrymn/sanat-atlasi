@@ -83,8 +83,9 @@ export function kaynakYazisi(eser, gorsel) {
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
 // ayrintilar: (eser) → rehberli inceleme kaydı ya da null (İş 151, js/ayrinti.js); kayıt varsa "İncele" düğmesi çıkar
 // incelemeyeBasla: açılan eserin kaydı varsa görüntüleyici doğrudan inceleme kipinde açılır
+// incelemeNokta: incelemeyeBasla ile birlikte; inceleme genel bakış yerine bu sıradaki ayrıntıda başlar (İş 188)
 // hikayeyeBasla: açılan eserin hikâyesi varsa görüntüleyici hikâye paneli açık başlar (Bugün'ün Hikâyesi düğmesi)
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, hikayeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, incelemeNokta = null, hikayeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -392,6 +393,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       if (ilkInceleme && kayitSimdiki && sira === bu && !inceleme) {
         ilkInceleme = false;
         incelemeBaslat();
+        if (Number.isInteger(incelemeNokta) && inceleme && inceleme.kayit.noktalar[incelemeNokta]) noktayaGit(incelemeNokta);
       }
       if (!devasa || resim.src === devasa || resim.dataset.devasa === devasa) return;
       resim.dataset.devasa = devasa;

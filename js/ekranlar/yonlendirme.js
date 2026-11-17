@@ -3,7 +3,8 @@ import { akimAdi } from '../birlesme.js';
 import { gecisBildir, yonAl } from '../gecis.js';
 import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, bellektenGeriKoy, sekmeKokuMu } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
-import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
+import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi } from './gozat.js';
+import { basyapitSayfasi, basyapitDersSayfasi } from './basyapit.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
 import { soruTuru } from './soruTurlari.js';
 import { dersMenusu, dersSayfasi, gorAdimi, ogrenAdimi, ayirtAdimi } from './ders.js';
@@ -13,7 +14,6 @@ import { aramaSayfasi } from './arama.js';
 import { zamanSayfasi } from './zaman.js';
 import { koleksiyonSayfasi } from './koleksiyon.js';
 import { haritaSayfasi } from './harita.js';
-import { eserDersiSayfasi } from './eserDersi.js';
 import { akimKarsilastirSayfasi } from './akim.js';
 
 // ---------- yönlendirme ----------
@@ -31,7 +31,7 @@ const rotalar = [
   [/^#\/konular$/, konuListesi, 'gozat'],
   [/^#\/konular\/([^/]+)$/, konuGrubu, 'gozat'],
   [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
-  [/^#\/basyapit\/(.+)\/ders$/, eserDersiSayfasi, 'gozat'], // İş 175: eser dersi (yayın kapılı)
+  [/^#\/basyapit\/(.+)\/ders$/, basyapitDersSayfasi, 'gozat'], // İş 188: aynı sayfa, ayrıntılı anlatım açık (yayın kapılı)
   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
   // 1.79.0: Çalış'ın girişi ders düzeni; eski menü (karışık tur sahnesi, salonlar) "Başka turlar → Döneme göre"de
   [/^#\/pekistir$/, dersMenusu, 'pekistir'],
