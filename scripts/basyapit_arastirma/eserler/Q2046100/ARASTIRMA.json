@@ -1,0 +1,40 @@
+{
+ "anahtar": "Q2046100",
+ "baslik_tr": "Flora",
+ "kunye": {
+  "sanatci": {"deger": "Titian", "kaynak": "wikidata.txt", "alinti": "creator (P170): Titian (Q47551)"},
+  "tarih": {"deger": "yaklaşık 1515", "kaynak": "enwiki.txt", "alinti": "dated to around 1515", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "79 × 63 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 79 centimetre width (P2049): 63 centimetre"},
+  "yer": {"deger": "Uffizi Gallery, Floransa", "kaynak": "enwiki.txt", "alinti": "now held at the Uffizi Gallery in Florence"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun ana konusu Flora'dır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Flora (Q209644)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser mitolojik resim türünde bir yapıttır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): mythological painting (Q3374376)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Resim, Titian'ın hocası Giorgione'nin Laura'sıyla Venedik okulunda yerleşmiş bir model olan idealize edilmiş güzel bir kadını betimler.", "kaynak": "enwiki.txt", "alinti": "It portrays an idealized beautiful woman, a model established in the Venetian school by Titian's master Giorgione with his Laura.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Kadının sol eli pembe tonlu bir manto tutmaktadır.", "kaynak": "enwiki.txt", "alinti": "Her left hand holds a pink-shaded mantle, and her right holds a handful of flowers and leaves.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kadının sağ elinde bir avuç çiçek ve yaprak bulunmaktadır.", "kaynak": "enwiki.txt", "alinti": "Her left hand holds a pink-shaded mantle, and her right holds a handful of flowers and leaves.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Tabloda bir gömlek betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): shirt (Q76768)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Kadının saçları sarı renklidir ve bel hizasına kadar uzanır.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): waist-length hair (Q14130) depicts (P180): blond hair (Q202466)", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Eser Venedik okulu ve Yüksek Rönesans akımlarıyla ilişkilendirilir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Venetian school (Q610687) movement (P135): High Renaissance (Q1474884)", "ihtiyat": false},
+  {"id": "C09", "bolum": "anlam", "iddia": "Tablonun anlamı tartışmalıdır; bazıları kadını, örneğin on altıncı yüzyıl reprodüksiyonlarına eklenen yazıtlara dayanarak bir kurtizan olarak tanımlar.", "kaynak": "enwiki.txt", "alinti": "The meaning of the painting is disputed: some, basing for example to inscriptions added to the 16th century reproductions, identifies the woman as a courtesan; other consider it a symbol of nuptial love, although her dress is not a dressing one.", "ihtiyat": true},
+  {"id": "C10", "bolum": "anlam", "iddia": "Diğerlerince tablo evlilik sevgisinin bir simgesi olarak yorumlanmaktadır.", "kaynak": "enwiki.txt", "alinti": "The meaning of the painting is disputed: some, basing for example to inscriptions added to the 16th century reproductions, identifies the woman as a courtesan; other consider it a symbol of nuptial love, although her dress is not a dressing one.", "ihtiyat": true},
+  {"id": "C11", "bolum": "anlam", "iddia": "Kadının ilkbahar ve bitki örtüsünün antik tanrıçası Flora ile özdeşleştirilmesi, elindeki ilkbahar çiçeklerinin varlığından kaynaklanır.", "kaynak": "enwiki.txt", "alinti": "The identification with Flora, the ancient goddess of Spring and vegetation, derives from the presence of Spring flowers in her hands.", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Aynı kadın, Titian'ın Woman at the Mirror, Vanity, Salome ve Violante ile bazı Holy Conversations gibi dönemin diğer birçok yapıtında da betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "The woman was portrayed by Titian in numerous other works of the period, including the Woman at the Mirror, the Vanity, Salome and Violante, as well as some Holy Conversations.", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Eser on altıncı yüzyılda çok sayıda gravürle çoğaltılmıştır.", "kaynak": "enwiki.txt", "alinti": "The work was reproduced in numerous 16th century etchings.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser daha sonra Brüksel ve Viyana'da el değiştirmiş olup bu el değiştirmelerin dizisi bilinmemektedir.", "kaynak": "enwiki.txt", "alinti": "Later, it followed an unclear series of changes of hands at Brussels and Vienna.", "ihtiyat": true},
+  {"id": "C15", "bolum": "onem", "iddia": "Tablo on yedinci yüzyılda Amsterdam'daki İspanyol elçisi tarafından Avusturya Arşidükü Leopold Wilhelm'e satılmıştır.", "kaynak": "enwiki.txt", "alinti": "In the 17th century, it was sold by the Spanish ambassador at Amsterdam to Archduke Leopold Wilhelm of Austria and was cited by Rembrandt in his Saskia Dressing as Flora  of London and in two portraits in Dresden and New York.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Rembrandt bu tabloya Londra'daki Saskia Dressing as Flora adlı yapıtında ve Dresden ile New York'taki iki portresinde atıfta bulunmuştur.", "kaynak": "enwiki.txt", "alinti": "In the 17th century, it was sold by the Spanish ambassador at Amsterdam to Archduke Leopold Wilhelm of Austria and was cited by Rembrandt in his Saskia Dressing as Flora  of London and in two portraits in Dresden and New York.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Tablo daha sonra Viyana'daki Kunsthistorisches Museum'a dahil edilmiş ve Uffizi ile takas edilen eserlerden biri olmuştur.", "kaynak": "enwiki.txt", "alinti": "Later included in the Kunsthistorisches Museum of Vienna, it was one of the works exchanged with the Uffizi.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Tablo on sekizinci yüzyılda yanlışlıkla Palma the Elder'a atfedilmiştir.", "kaynak": "enwiki.txt", "alinti": "In the 18th century, it was erroneously attributed to Palma the Elder.", "ihtiyat": true}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1517 [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "dated to around 1515"}}
+ ],
+ "bulunamadi": [
+  "hikaye: kaynakta anlatısal bir olay örgüsü, öncesi/sonrası ya da metin kaydı yok; yalnız konu ve figür bilgisi çıkarılabildi",
+  "kompozisyon: kaynakta ışık, renk düzeni, alt çizim veya restorasyon bulgusu yok; yalnız wikidata akım satırları çıkarılabildi",
+  "anlam: modelin kimliği kaynakta adıyla verilmiyor; kurtizan/Flora tanımları tartışmalı",
+  "onem: siparişi veren kişi veya sipariş amacı kaynakta yok"
+ ]
+}
