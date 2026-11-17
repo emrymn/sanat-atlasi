@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q32234",
+ "indirme": "2026-11-17T07:52:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q32234.json",
+   "revid": 2569728123,
+   "sha256": "a156e889c7aa44e701214384d76534358cb182c4717d030e06ca69fcb5444a03",
+   "karakter": 1168
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Diana_and_Her_Companions&oldid=1366126437",
+   "baslik": "Diana and Her Companions",
+   "revid": 1366126437,
+   "surum_tarihi": "2026-07-26T12:21:41Z",
+   "sha256": "b86508a6c71d2cf98e352bf290dace86e765893e74bcca8ba09e7f02b38dbff0",
+   "karakter": 12499
+  }
+ }
+}

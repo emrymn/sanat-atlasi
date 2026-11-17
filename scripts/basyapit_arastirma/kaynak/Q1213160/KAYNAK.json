@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1213160",
+ "indirme": "2026-11-17T07:47:17+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1213160.json",
+   "revid": 2569652984,
+   "sha256": "0cd4940b2576a6288e42ebf3ec8c0ee36f6f0a69db5eb07a563de3447fb1c2ea",
+   "karakter": 865
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Entombment_%28Michelangelo%29&oldid=1375399831",
+   "baslik": "The Entombment (Michelangelo)",
+   "revid": 1375399831,
+   "surum_tarihi": "2026-09-17T15:21:59Z",
+   "sha256": "67c572e0eda2ebfeaea73465d75774bb62bce2e7053128a2f15891dc26cacb3d",
+   "karakter": 5292
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Defin_T%C3%B6reni_%28Michelangelo%29&oldid=38006860",
+   "baslik": "Defin Töreni (Michelangelo)",
+   "revid": 38006860,
+   "surum_tarihi": "2026-09-19T20:19:19Z",
+   "sha256": "33d39887fc0cda5cf210a4322c8f4099ea18255637b13a969eee1275765970ce",
+   "karakter": 1271
+  }
+ }
+}

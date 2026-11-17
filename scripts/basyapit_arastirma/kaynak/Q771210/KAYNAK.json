@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q771210",
+ "indirme": "2026-11-17T07:59:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q771210.json",
+   "revid": 2561966914,
+   "sha256": "d61359efc7f148fe7576c4d029284e0ca586d5d3afc2062bdf1aa63bb4a86a4d",
+   "karakter": 802
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Assumption_of_the_Virgin_%28Correggio%29&oldid=1366908330",
+   "baslik": "Assumption of the Virgin (Correggio)",
+   "revid": 1366908330,
+   "surum_tarihi": "2026-07-30T21:30:45Z",
+   "sha256": "fd5fad07dadfda24884e0bfdeb5df1dc9f5d607cc3d060df6b6f4371491e016c",
+   "karakter": 2462
+  }
+ }
+}

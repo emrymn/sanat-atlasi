@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q488825",
+ "indirme": "2026-11-17T07:39:09+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q488825.json",
+   "revid": 2569304824,
+   "sha256": "885a7214e76fe7e4156a9b4779e268bd14669039ae1aabae1622624640d1dd7c",
+   "karakter": 2450
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adoration_of_the_Magi_%28Botticelli%29&oldid=1376063659",
+   "baslik": "Adoration of the Magi (Botticelli)",
+   "revid": 1376063659,
+   "surum_tarihi": "2026-09-21T20:45:15Z",
+   "sha256": "96762032b956940d3a2721773052671d51d9c3763c90f263f7a8a952ddc31645",
+   "karakter": 11173
+  }
+ }
+}

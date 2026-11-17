@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3027255",
+ "indirme": "2026-11-17T07:55:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3027255.json",
+   "revid": 2570273751,
+   "sha256": "d9185cc6f6971df02b4a96a439e519de6251153dc467bb1993a955e256c7a9d7",
+   "karakter": 645
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Dido_building_Carthage&oldid=1385986609",
+   "baslik": "Dido building Carthage",
+   "revid": 1385986609,
+   "surum_tarihi": "2026-11-16T07:19:12Z",
+   "sha256": "fdb3e1b9e92aa74320740d221ec359a0ca191bc035a4e79fbb336d439cf52d9c",
+   "karakter": 4926
+  }
+ }
+}

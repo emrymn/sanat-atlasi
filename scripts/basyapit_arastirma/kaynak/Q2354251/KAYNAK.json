@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2354251",
+ "indirme": "2026-11-17T07:38:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2354251.json",
+   "revid": 2568751940,
+   "sha256": "7cda02c55c5971adeb49afb1477589507c82b5d0aa70cbd8953e35ab69b1c32a",
+   "karakter": 1403
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Barque_of_Dante&oldid=1385538288",
+   "baslik": "The Barque of Dante",
+   "revid": 1385538288,
+   "surum_tarihi": "2026-11-13T20:50:29Z",
+   "sha256": "855f23e4fb5927fd14b2e12e449fc52678c37e46fbfaa5eb018e36c0b9c4d8a6",
+   "karakter": 15658
+  }
+ }
+}

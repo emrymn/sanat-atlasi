@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3224378",
+ "indirme": "2026-11-17T08:04:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3224378.json",
+   "revid": 2560201162,
+   "sha256": "738dc47ab931120a7505bf6ce86007c47a4bd51abb921dd410d398d401fca108",
+   "karakter": 1201
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Massacre_of_the_Innocents_%28Poussin%29&oldid=1372253609",
+   "baslik": "The Massacre of the Innocents (Poussin)",
+   "revid": 1372253609,
+   "surum_tarihi": "2026-08-31T01:14:29Z",
+   "sha256": "26ca42cebe48333d28b9dce56226f0eb491fe93f4ffb0e07c54e4a8bfdaf5634",
+   "karakter": 639
+  }
+ }
+}

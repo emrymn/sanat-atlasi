@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3202169",
+ "indirme": "2026-11-17T07:50:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3202169.json",
+   "revid": 2428057333,
+   "sha256": "7d94f2793153a59376cd817e9410ed61f951d4291828ebb7d54c5fa87416e159",
+   "karakter": 2721
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Apotheosis_of_Homer_%28Ingres%29&oldid=1385896792",
+   "baslik": "The Apotheosis of Homer (Ingres)",
+   "revid": 1385896792,
+   "surum_tarihi": "2026-11-15T21:30:30Z",
+   "sha256": "0c40ad459baad62a677ed8a72012f89c053c58e14b672abe801cd28a37cadc13",
+   "karakter": 4891
+  }
+ }
+}

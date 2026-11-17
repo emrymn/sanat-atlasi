@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3531531",
+ "indirme": "2026-11-17T08:00:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3531531.json",
+   "revid": 2309388101,
+   "sha256": "0ccf33cbd993dceb7abe6b6d05a76028808e04ac6cb3cc31059b353d46db7278",
+   "karakter": 1779
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adoration_of_the_Magi_%28Fra_Angelico_and_Filippo_Lippi%29&oldid=1364748534",
+   "baslik": "Adoration of the Magi (Fra Angelico and Filippo Lippi)",
+   "revid": 1364748534,
+   "surum_tarihi": "2026-07-18T08:22:32Z",
+   "sha256": "a2325fad54034908595a9482143e6b35530ae0fe926400ac69127a3521865db4",
+   "karakter": 16959
+  }
+ }
+}

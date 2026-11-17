@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3947115",
+ "indirme": "2026-11-17T07:53:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3947115.json",
+   "revid": 2539176270,
+   "sha256": "a1b01e51b93424f5975fd315318182465f7e7be1f49641df80c85b9a0987129c",
+   "karakter": 1298
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Saint_Francis_in_Ecstasy_%28Bellini%29&oldid=1377130197",
+   "baslik": "Saint Francis in Ecstasy (Bellini)",
+   "revid": 1377130197,
+   "surum_tarihi": "2026-09-28T01:03:29Z",
+   "sha256": "89f0f660f910acc74efd588a7900d7d7bfd19f393c54f41cc57ecd0e1bc619cd",
+   "karakter": 8771
+  }
+ }
+}

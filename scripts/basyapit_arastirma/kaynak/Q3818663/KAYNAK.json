@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3818663",
+ "indirme": "2026-11-17T08:03:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3818663.json",
+   "revid": 2566573223,
+   "sha256": "beb412689a65d642b0c1972039023e05fca7a0627f4964c47d11809bc283cddd",
+   "karakter": 503
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Apparition_%28Moreau%2C_Mus%C3%A9e_d%27Orsay%29&oldid=1375507478",
+   "baslik": "The Apparition (Moreau, Musée d'Orsay)",
+   "revid": 1375507478,
+   "surum_tarihi": "2026-09-18T05:54:26Z",
+   "sha256": "e29fca120a48afb0f2ec21f60a154706f05fb636ba927350084867aaeeda0607",
+   "karakter": 10085
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2504917",
+ "indirme": "2026-11-17T07:52:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2504917.json",
+   "revid": 2569946639,
+   "sha256": "b16ca250035e16c29884dda6a3a3eefb06e180f1b5a5d1a6b166ae9fda310e90",
+   "karakter": 665
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Green_Christ&oldid=1378610854",
+   "baslik": "The Green Christ",
+   "revid": 1378610854,
+   "surum_tarihi": "2026-10-05T05:39:46Z",
+   "sha256": "237aa312c3a4a536ec7a85947ebe931656b2d61f32620f5f4fdb0b97e1511c4f",
+   "karakter": 1576
+  }
+ }
+}

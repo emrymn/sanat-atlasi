@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2376881",
+ "indirme": "2026-11-17T08:05:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2376881.json",
+   "revid": 2464401710,
+   "sha256": "41bdc69ed692dcf5ceeed4b4f0e54c58911887b2e360dca58c6506c79430fc40",
+   "karakter": 871
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Annunciation_of_Cortona&oldid=1331316727",
+   "baslik": "Annunciation of Cortona",
+   "revid": 1331316727,
+   "surum_tarihi": "2026-01-05T19:11:35Z",
+   "sha256": "b8963995894fc9bf07a3839d60d4775a9f2e263a8d2e4897b467cd6565acc060",
+   "karakter": 2973
+  }
+ }
+}

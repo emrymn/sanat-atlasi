@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3701418",
+ "indirme": "2026-11-17T08:08:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3701418.json",
+   "revid": 2494112650,
+   "sha256": "c4a3f7fd0977f9ea272888fb9b4340437d3436fdb4373c8744a45f29608c5081",
+   "karakter": 987
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Dana%C3%AB_%28Artemisia_Gentileschi%29&oldid=1332492147",
+   "baslik": "Danaë (Artemisia Gentileschi)",
+   "revid": 1332492147,
+   "surum_tarihi": "2026-01-12T03:57:58Z",
+   "sha256": "0b8dd1802ebabc9a94da49b486c5b1852789f433aa41e63a02da161d60f1fd75",
+   "karakter": 2776
+  }
+ }
+}

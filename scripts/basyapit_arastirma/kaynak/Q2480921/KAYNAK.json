@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2480921",
+ "indirme": "2026-11-17T07:38:32+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2480921.json",
+   "revid": 2533922467,
+   "sha256": "e6e9a5997f0deed21f7ebb66704a41bf235019bf400c3082d61d15a94842fbe5",
+   "karakter": 1829
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Virgin_and_Child_with_Canon_van_der_Paele&oldid=1349111705",
+   "baslik": "Virgin and Child with Canon van der Paele",
+   "revid": 1349111705,
+   "surum_tarihi": "2026-04-15T20:43:09Z",
+   "sha256": "04c08db974f03e71c1e4fc1e87bc494a369997b680d142a086a4577d00c07b26",
+   "karakter": 19792
+  }
+ }
+}

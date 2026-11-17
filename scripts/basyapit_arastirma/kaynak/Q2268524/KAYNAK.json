@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2268524",
+ "indirme": "2026-11-17T07:40:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2268524.json",
+   "revid": 2503644570,
+   "sha256": "f3d0c212ffa16ae8e312df611554eeb220a84f7f90bc792ce438b3c4dde450e3",
+   "karakter": 1721
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Three_Graces_%28Rubens%2C_Madrid%29&oldid=1361434598",
+   "baslik": "The Three Graces (Rubens, Madrid)",
+   "revid": 1361434598,
+   "surum_tarihi": "2026-06-27T22:11:36Z",
+   "sha256": "b8f755e3023a021edc022e431f04bd651dabc17b02c1260dba2ff1b66c44d243",
+   "karakter": 470
+  }
+ }
+}

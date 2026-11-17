@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q2294441",
+ "indirme": "2026-11-17T07:38:27+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2294441.json",
+   "revid": 2568751920,
+   "sha256": "96116de5f1802f21f21c4f6cd58dbc6e531482034c928bf14e3881ac29b9eeba",
+   "karakter": 1370
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Dana%C3%AB_%28Rembrandt%29&oldid=1372457257",
+   "baslik": "Danaë (Rembrandt)",
+   "revid": 1372457257,
+   "surum_tarihi": "2026-08-31T20:53:44Z",
+   "sha256": "54088baaf8b37d28f7f59cd54b3e9adf87389d05f04b557d4a3e96ae07dec126",
+   "karakter": 2996
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Danae_%28tablo%29&oldid=35777351",
+   "baslik": "Danae (tablo)",
+   "revid": 35777351,
+   "surum_tarihi": "2025-08-07T19:42:50Z",
+   "sha256": "73b8bd5cc086d0ebdf2885a018ee69096424e22e6caed56d0b3be18a85c281e5",
+   "karakter": 1700
+  }
+ }
+}

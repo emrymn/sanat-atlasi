@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q829270",
+ "indirme": "2026-11-17T07:39:14+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q829270.json",
+   "revid": 2556903566,
+   "sha256": "ce0c50394109495a594846136c896cc785b9f836acee48b99657338e8015c6de",
+   "karakter": 1056
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Four_Apostles&oldid=1372806935",
+   "baslik": "The Four Apostles",
+   "revid": 1372806935,
+   "surum_tarihi": "2026-09-02T10:39:11Z",
+   "sha256": "aa80321e37db92c10e03e6a880bb193a91c438c69e1612f611b9253310bc7b15",
+   "karakter": 8260
+  }
+ }
+}

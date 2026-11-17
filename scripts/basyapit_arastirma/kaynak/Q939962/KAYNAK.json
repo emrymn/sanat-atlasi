@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q939962",
+ "indirme": "2026-11-17T07:48:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q939962.json",
+   "revid": 2561225920,
+   "sha256": "6d9c9c5b52420735432a54c0cce2a19c06255e5c5e190a4053deb2f0bcaaf339",
+   "karakter": 889
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Ganymede_Abducted_by_the_Eagle&oldid=1361272246",
+   "baslik": "Ganymede Abducted by the Eagle",
+   "revid": 1361272246,
+   "surum_tarihi": "2026-06-26T21:12:46Z",
+   "sha256": "ed94a127d59752383f0c78b419510aa610e4799dda2683462916514188445b54",
+   "karakter": 1924
+  }
+ }
+}

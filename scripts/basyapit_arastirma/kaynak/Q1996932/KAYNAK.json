@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1996932",
+ "indirme": "2026-11-17T08:07:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1996932.json",
+   "revid": 2326066803,
+   "sha256": "e4e490726dddbe3c0c9d4ca65b157d446cb8c760add2b251ba1ba9b69009a3f6",
+   "karakter": 486
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Battle_of_the_Milvian_Bridge_%28Giulio_Romano%29&oldid=1368053183",
+   "baslik": "The Battle of the Milvian Bridge (Giulio Romano)",
+   "revid": 1368053183,
+   "surum_tarihi": "2026-08-06T19:09:53Z",
+   "sha256": "14a6aa8bea3a5d04705323699d00bcb3a90ea569ad75d1b3928847ba7dbae27a",
+   "karakter": 1379
+  }
+ }
+}

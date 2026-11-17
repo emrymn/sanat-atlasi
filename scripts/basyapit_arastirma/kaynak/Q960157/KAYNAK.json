@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q960157",
+ "indirme": "2026-11-17T07:45:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q960157.json",
+   "revid": 2569728428,
+   "sha256": "5f2247879507b12bc9da74931616aaaaaca039ac6d512113ce6ef5e7457c107f",
+   "karakter": 1109
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Christ_in_the_House_of_His_Parents&oldid=1362428789",
+   "baslik": "Christ in the House of His Parents",
+   "revid": 1362428789,
+   "surum_tarihi": "2026-07-03T22:02:54Z",
+   "sha256": "c3989241854dd73045fdb47fec028214706dbd1ff43a3bfe23e17b03e4a17e73",
+   "karakter": 3997
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3605563",
+ "indirme": "2026-11-17T07:56:15+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3605563.json",
+   "revid": 2533923011,
+   "sha256": "565492dd3d4f642bde7d89e27a05d6c0eb3d237a5273b3f6455f7bcec438911a",
+   "karakter": 1067
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adoration_of_the_Shepherds_%28Giorgione%29&oldid=1361286023",
+   "baslik": "Adoration of the Shepherds (Giorgione)",
+   "revid": 1361286023,
+   "surum_tarihi": "2026-06-26T22:47:02Z",
+   "sha256": "676bcb6d69c19e91ce8d35e86f956f4a17f9c52ebc33de397278e5132425cd84",
+   "karakter": 4589
+  }
+ }
+}

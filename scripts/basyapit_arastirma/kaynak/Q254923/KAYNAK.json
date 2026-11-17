@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q254923",
+ "indirme": "2026-11-17T07:38:21+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q254923.json",
+   "revid": 2569305049,
+   "sha256": "d288ee6596c3d5bea5b604bd4e89d234190036ff78f5cde29fd33fbba5c36b3f",
+   "karakter": 1365
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Alba_Madonna&oldid=1368309771",
+   "baslik": "Alba Madonna",
+   "revid": 1368309771,
+   "surum_tarihi": "2026-08-08T08:46:09Z",
+   "sha256": "d7bcfcf8bb705250be5f0f6cce712337597334b3424800764176503e275fbdac",
+   "karakter": 4509
+  }
+ }
+}

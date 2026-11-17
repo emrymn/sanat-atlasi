@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1131110",
+ "indirme": "2026-11-17T08:01:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1131110.json",
+   "revid": 2436535632,
+   "sha256": "bf051d1e1e60bed011cb2c930354f53f51aeee55baa19f7ccb50fdb71500a3c7",
+   "karakter": 1043
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Agony_in_the_Garden_%28Bellini%29&oldid=1375672540",
+   "baslik": "Agony in the Garden (Bellini)",
+   "revid": 1375672540,
+   "surum_tarihi": "2026-09-19T07:22:55Z",
+   "sha256": "6dcb1dd85ee0bed1e9a16b147dbeb72972dd530e53d0c930a8c4bff859879782",
+   "karakter": 4723
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3978277",
+ "indirme": "2026-11-17T07:45:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3978277.json",
+   "revid": 2536524296,
+   "sha256": "8fcd5d812c4310ff6e42ae7f79b4eb4cd167b8a5051fcfce570b895d24461346",
+   "karakter": 1659
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Susanna_and_the_Elders_%28Tintoretto%29&oldid=1361419263",
+   "baslik": "Susanna and the Elders (Tintoretto)",
+   "revid": 1361419263,
+   "surum_tarihi": "2026-06-27T20:40:45Z",
+   "sha256": "d7aae73fea4e0c366178b9925c1aa69875cd5611c033e7c21dbe71881ce5e49e",
+   "karakter": 3926
+  }
+ }
+}

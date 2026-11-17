@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1169199",
+ "indirme": "2026-11-17T07:41:10+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1169199.json",
+   "revid": 2556903610,
+   "sha256": "75115120b9e200c0e4e8d0da11dd0b9261edbb2e5c14221c6898da43d8c9bbba",
+   "karakter": 1089
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Beaune_Altarpiece&oldid=1358331377",
+   "baslik": "Beaune Altarpiece",
+   "revid": 1358331377,
+   "surum_tarihi": "2026-06-08T01:38:56Z",
+   "sha256": "edb6f131f56d5ea3f5fcf78242d1f3f0379545f56853c180fd5f7c6f6851ce9c",
+   "karakter": 25259
+  }
+ }
+}

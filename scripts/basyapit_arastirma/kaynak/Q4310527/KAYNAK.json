@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q4310527",
+ "indirme": "2026-11-17T07:47:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4310527.json",
+   "revid": 2538340778,
+   "sha256": "bb680baa0b33a4a0fbe192a722e694f869bc8a2f9b87c5d1215c6d0e0a2a0d20",
+   "karakter": 820
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Body_of_the_Dead_Christ_in_the_Tomb&oldid=1317491144",
+   "baslik": "The Body of the Dead Christ in the Tomb",
+   "revid": 1317491144,
+   "surum_tarihi": "2025-10-18T10:41:43Z",
+   "sha256": "af95f067989068eac176aa2327aab057a26549feaea4a0c3ee4dbbe8bde7b6af",
+   "karakter": 4676
+  }
+ }
+}

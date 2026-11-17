@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1988152",
+ "indirme": "2026-11-17T07:57:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1988152.json",
+   "revid": 2559646597,
+   "sha256": "31f070d7e795dbb33de8335388a96d08ca7ccd5eaa153cc1bbfea61930ca78a8",
+   "karakter": 1814
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Venus_and_Adonis_%28Veronese%2C_Madrid%29&oldid=1361438718",
+   "baslik": "Venus and Adonis (Veronese, Madrid)",
+   "revid": 1361438718,
+   "surum_tarihi": "2026-06-27T22:37:35Z",
+   "sha256": "26a76f9818837f0f3bf45a4b9de243c6f9d0e47c846367728fa7e2289cb92446",
+   "karakter": 2360
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Venus_ve_Adonis_%28Paolo_Veronese%29&oldid=37443461",
+   "baslik": "Venus ve Adonis (Paolo Veronese)",
+   "revid": 37443461,
+   "surum_tarihi": "2026-07-07T20:05:34Z",
+   "sha256": "f026ef85fafce2b15676e2f6009eeab333e1236959ca6faffd9eebe005ef59f6",
+   "karakter": 1056
+  }
+ }
+}

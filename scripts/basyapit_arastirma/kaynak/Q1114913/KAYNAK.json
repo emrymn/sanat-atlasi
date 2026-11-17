@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1114913",
+ "indirme": "2026-11-17T07:56:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1114913.json",
+   "revid": 2476144180,
+   "sha256": "8588f574177bbe5c54257165541ad169b33c1cb9214aa22afcaecf4861aa52e2",
+   "karakter": 924
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adoration_of_the_Shepherds_%28El_Greco%2C_Madrid%29&oldid=1361241671",
+   "baslik": "Adoration of the Shepherds (El Greco, Madrid)",
+   "revid": 1361241671,
+   "surum_tarihi": "2026-06-26T16:55:25Z",
+   "sha256": "bf207b6975d0b1c2adab4499886cbb2e39b32f91783bf37482065eb495e829d9",
+   "karakter": 1198
+  }
+ }
+}

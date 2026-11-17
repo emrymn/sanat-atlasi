@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2528741",
+ "indirme": "2026-11-17T07:54:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2528741.json",
+   "revid": 2569911185,
+   "sha256": "d987f23d75aece6313a22f7e2a2a6ab989e18c1b371ab1a7039de8c0e2bd2325",
+   "karakter": 851
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Christ_Crucified_%28Vel%C3%A1zquez%29&oldid=1384363723",
+   "baslik": "Christ Crucified (Velázquez)",
+   "revid": 1384363723,
+   "surum_tarihi": "2026-11-07T22:19:30Z",
+   "sha256": "b8d51fcb28f746414a5b62a586e90932e8999cff76ea1601ea2ec3135e0e1cc0",
+   "karakter": 7809
+  }
+ }
+}

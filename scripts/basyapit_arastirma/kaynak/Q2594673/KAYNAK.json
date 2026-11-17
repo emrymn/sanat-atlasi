@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2594673",
+ "indirme": "2026-11-17T07:46:16+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2594673.json",
+   "revid": 2569911198,
+   "sha256": "0273ea481f276a0a244bff55200c208332407e45a512e300964c890c224c05aa",
+   "karakter": 1163
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Samson_and_Delilah_%28Rubens%29&oldid=1385415706",
+   "baslik": "Samson and Delilah (Rubens)",
+   "revid": 1385415706,
+   "surum_tarihi": "2026-11-13T05:10:32Z",
+   "sha256": "a6f838dec7277df3b0676c5f7a7a5a188b18b090cc57694decbf0dfc81a3040a",
+   "karakter": 6000
+  }
+ }
+}

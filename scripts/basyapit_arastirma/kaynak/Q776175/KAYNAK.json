@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q776175",
+ "indirme": "2026-11-17T07:38:17+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q776175.json",
+   "revid": 2569305098,
+   "sha256": "9c57686992989458ec7740081c9062bc4524c2e2279c175fe3b9c96ff285a555",
+   "karakter": 2161
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Harvesters_%28painting%29&oldid=1385989649",
+   "baslik": "The Harvesters (painting)",
+   "revid": 1385989649,
+   "surum_tarihi": "2026-11-16T07:50:10Z",
+   "sha256": "32f12cc2f9a47773e0243df71e5bcbb1ff33af8b544ee93e9524487ba5a81211",
+   "karakter": 2660
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Hasat_Zaman%C4%B1_%28tablo%29&oldid=38006817",
+   "baslik": "Hasat Zamanı (tablo)",
+   "revid": 38006817,
+   "surum_tarihi": "2026-09-19T20:19:06Z",
+   "sha256": "271104119303bea89d2ebccc3bc960f4b9517be9cfd4620671a77c2dec812556",
+   "karakter": 2073
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2712679",
+ "indirme": "2026-11-17T07:42:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2712679.json",
+   "revid": 2569946743,
+   "sha256": "4b56cca0a486f891f8ff5f4724d5620e970c487f73253282010f7e90fcfe80db",
+   "karakter": 878
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Beata_Beatrix&oldid=1371490929",
+   "baslik": "Beata Beatrix",
+   "revid": 1371490929,
+   "surum_tarihi": "2026-08-26T19:34:58Z",
+   "sha256": "93abd0e080189e206ea73e16c744053df627fde9cd8dde02778efaa79b55c287",
+   "karakter": 3242
+  }
+ }
+}

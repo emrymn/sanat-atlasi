@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q7733345",
+ "indirme": "2026-11-17T08:01:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q7733345.json",
+   "revid": 2565969274,
+   "sha256": "0cff364b19828ac635a465831c7c669b556ec9873bf917176f3777fc99885aa3",
+   "karakter": 754
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Family_of_Darius_Before_Alexander&oldid=1354360283",
+   "baslik": "The Family of Darius Before Alexander",
+   "revid": 1354360283,
+   "surum_tarihi": "2026-05-15T23:00:01Z",
+   "sha256": "783e9072204d868aca6381a1550881d677f202c7e09a397e89042e96c9c4b30c",
+   "karakter": 8362
+  }
+ }
+}

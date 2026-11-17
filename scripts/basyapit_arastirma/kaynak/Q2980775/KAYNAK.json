@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2980775",
+ "indirme": "2026-11-17T07:56:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2980775.json",
+   "revid": 2519093092,
+   "sha256": "1a7f5f00ae1b104561ebd2fe521e7cdc50c5ae95173e9321ab8946e2a91c7984",
+   "karakter": 2007
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Cleopatra_Testing_Poisons_on_Condemned_Prisoners&oldid=1366105134",
+   "baslik": "Cleopatra Testing Poisons on Condemned Prisoners",
+   "revid": 1366105134,
+   "surum_tarihi": "2026-07-26T08:20:53Z",
+   "sha256": "51e8b349c5813544a3d4007a58780b308594d89fdd242e3ba5b140aa92d64bf4",
+   "karakter": 2667
+  }
+ }
+}

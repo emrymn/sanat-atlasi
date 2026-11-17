@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3275305",
+ "indirme": "2026-11-17T08:06:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3275305.json",
+   "revid": 2560365652,
+   "sha256": "576a8f8938681e978caa35e85c9d60f856f07b33ab7e51cafb8358b749b8b6d2",
+   "karakter": 767
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Vision_of_Saint_Jerome&oldid=1375399472",
+   "baslik": "Vision of Saint Jerome",
+   "revid": 1375399472,
+   "surum_tarihi": "2026-09-17T15:20:24Z",
+   "sha256": "19b03c3aa213e43c24ed274fce2bab78551ab74caee5d2fc3d7f7f563477b7d8",
+   "karakter": 4085
+  }
+ }
+}

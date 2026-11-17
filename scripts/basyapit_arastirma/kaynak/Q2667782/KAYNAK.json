@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2667782",
+ "indirme": "2026-11-17T07:43:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2667782.json",
+   "revid": 2556903825,
+   "sha256": "00d0fed390dc8747407edb59d5c2f954066465151d4790d5a5d68658fd36b74c",
+   "karakter": 762
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Descent_from_the_Cross_%28Rubens%2C_1612%E2%80%931614%29&oldid=1375399246",
+   "baslik": "The Descent from the Cross (Rubens, 1612–1614)",
+   "revid": 1375399246,
+   "surum_tarihi": "2026-09-17T15:19:26Z",
+   "sha256": "7593f982e76e1685e933d540ea8e0ce62472fb2d2cf1ec593a2724db1521d52b",
+   "karakter": 8197
+  }
+ }
+}

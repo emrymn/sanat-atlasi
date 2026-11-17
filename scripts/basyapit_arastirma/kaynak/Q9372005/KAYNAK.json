@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q9372005",
+ "indirme": "2026-11-17T08:02:15+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q9372005.json",
+   "revid": 2345169663,
+   "sha256": "c08b33d7a33ddd1945072afe3c3d702b7c960953ffd44a8abe0a452463d64ce4",
+   "karakter": 3684
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Venus_and_Mars_%28Veronese%29&oldid=1377315048",
+   "baslik": "Venus and Mars (Veronese)",
+   "revid": 1377315048,
+   "surum_tarihi": "2026-09-28T21:34:04Z",
+   "sha256": "b72cef6543a770af34d70e603ecaa3a8f429fb9c4079bd0c3662748f9147c531",
+   "karakter": 2645
+  }
+ }
+}

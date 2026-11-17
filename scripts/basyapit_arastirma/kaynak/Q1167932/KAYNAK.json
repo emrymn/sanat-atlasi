@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1167932",
+ "indirme": "2026-11-17T07:37:15+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1167932.json",
+   "revid": 2568752051,
+   "sha256": "f426bc1db081d81b784372a16732fb31786acb939cc2abb0737fdfbb97c9e311",
+   "karakter": 934
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Belshazzar%27s_Feast_%28Rembrandt%29&oldid=1380394689",
+   "baslik": "Belshazzar's Feast (Rembrandt)",
+   "revid": 1380394689,
+   "surum_tarihi": "2026-10-15T13:46:52Z",
+   "sha256": "c696096fa003ad7842f28143da3e9f59376d930f5706fed6b8dfeb2e7d478e7b",
+   "karakter": 4057
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Bel%C5%9Fazzar%27%C4%B1n_Ziyafeti&oldid=38592492",
+   "baslik": "Belşazzar'ın Ziyafeti",
+   "revid": 38592492,
+   "surum_tarihi": "2026-11-13T22:29:17Z",
+   "sha256": "08062c5a84bc2f8fabca88f11a039b3e5d1a179bbf135979affd860bbc5bc7c9",
+   "karakter": 1627
+  }
+ }
+}
