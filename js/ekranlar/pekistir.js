@@ -80,6 +80,9 @@ import {
   bolumKartlari,
   bolumSonucuIsle,
   tanitimGoruldu,
+  tanismaGruplari,
+  tanismaGrubuGoruldu,
+  gorulenGruplar,
   bolumKaydi,
   bolumAdi,
   bolumEserleri,
@@ -99,8 +102,12 @@ import { titret, tik } from '../titresim.js';
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
 const BOLUM_YONELME = { kolay: 'Kolay’a', orta: 'Orta’ya', zor: 'Zor’a' };
 function bolumBilgi(akim) {
-  const [id, sv] = String(akim || '').split('/');
-  return { id, sv, b: tumBolumler().find((x) => x.id === id) || null };
+  const [id, ham] = String(akim || '').split('/');
+  // 1.89: "tanitim-2", "tanitim-orta-1": tanışma grubu (sv taban adı; grup 0'dan)
+  const m = /^(tanitim(?:-orta)?)-(\d+)$/.exec(ham || '');
+  const sv = m ? m[1] : ham;
+  const grup = m ? Number(m[2]) - 1 : null;
+  return { id, sv, grup, b: tumBolumler().find((x) => x.id === id) || null };
 }
 
 const sayimli = (kip) => kip === 'bolum'; // yalnız ilk denemeler sayılır
@@ -346,13 +353,17 @@ function turSec(kip, akim, adaylar) {
   const skorlar = d.ilerleme.skorlar;
   if (kip === 'bolum') {
     // İş 24: bölümün sanatçıları sabit sayıda soruda; ilk Kolay'dan (ya da "Tanıtım"dan) önce hepsiyle tanışma
-    const { id, sv } = bolumBilgi(akim);
+    const { id, sv, grup, b } = bolumBilgi(akim);
     const idler = adaylar.map((x) => x.id);
-    if (sv === 'tanitim' || sv === 'tanitim-orta') return { idler: [], tanisma: idler };
-    // İş 30: Kolay'dan ve Orta'dan önce (ilk kez) o seviyenin eserleriyle tanışma
+    // 1.89: kalabalık durağın tanışması gruplu; grup kimliği durağın bütün listesinden (sabit)
+    const gruplar = tanismaGruplari(b ? b.sanatcilar : idler).map((g) => g.filter((x) => idler.includes(x)));
+    if (sv === 'tanitim' || sv === 'tanitim-orta') return { idler: [], tanisma: grup !== null && gruplar[grup] ? gruplar[grup] : idler };
+    // İş 30: Kolay'dan ve Orta'dan önce (ilk kez) o seviyenin eserleriyle tanışma; gruplu durakta yalnız görülmemiş grupların
     const kayit = bolumKaydi(d.ilerleme, id);
     const ilk = (sv === 'kolay' && !kayit.tanitim) || (sv === 'orta' && !kayit.tanitimOrta);
-    return { idler: bolumKartlari(idler, BOLUM_SORU[sv], d.rng), tanisma: ilk ? idler : [] };
+    const gorulen = new Set(gorulenGruplar(kayit, sv, gruplar.length));
+    const tanisma = ilk ? gruplar.filter((_, i) => !gorulen.has(i)).flat() : [];
+    return { idler: bolumKartlari(idler, BOLUM_SORU[sv], d.rng), tanisma };
   }
   if (kip === 'konu')
     // Ö6: günlük yeni sınırı yok; tanışmalar turdan önce arka arkaya
@@ -406,8 +417,8 @@ function pkUst(kip, akim, yedek = '#/pekistir', ustEtiket = 'Pekiştir') {
 
 function kipKisa(kip, akim) {
   if (kip === 'bolum') {
-    const { sv, b } = bolumBilgi(akim);
-    return `${b ? bolumAdi(b) : 'Bölüm'} · ${BOLUM_SV_AD[sv] || ''}`;
+    const { sv, b, grup } = bolumBilgi(akim);
+    return `${b ? bolumAdi(b) : 'Bölüm'} · ${BOLUM_SV_AD[sv] || ''}${grup !== null ? ` · ${grup + 1}. grup` : ''}`;
   }
   if (kip === 'karisik') return 'Karışık';
   if (kip === 'konu') return `Konu ${akim}`;
@@ -543,8 +554,9 @@ async function kartCiz() {
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
   if (o.kip === 'bolum' && o.tanisma && !o.tanitimIsaret) {
     o.tanitimIsaret = true;
-    const { id, sv } = bolumBilgi(o.akim);
-    tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
+    const { id, sv, grup, b } = bolumBilgi(o.akim);
+    if (grup !== null && b) tanismaGrubuGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv], grup, tanismaGruplari(b.sanatcilar).length);
+    else tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
     kaydet();
   }
   if (o.oturum.bitti) return ozetCiz();
@@ -1453,8 +1465,8 @@ function sergiyeEkle(o, dogruMu) {
 }
 
 function bolumOzeti(o) {
-  const { id, sv, b } = bolumBilgi(o.akim);
-  if (sv === 'tanitim') {
+  const { id, sv, b, grup } = bolumBilgi(o.akim);
+  if (sv === 'tanitim' || grup !== null) {
     d.oturum = null;
     return location.replace('#/harita');
   }

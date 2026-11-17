@@ -184,6 +184,44 @@ export function bolumSonucuIsle(ilerleme, id, seviye, dogru, toplam) {
   return { oran, gecti: oran >= BOLUM_GECME, yeniGecti: oran >= BOLUM_GECME && !gectiMi(once, seviye), yildizOnce: yildizSayisi(once), yildizSonra: yildizSayisi(sonra) };
 }
 
+// ---------- 1.89 · Tanışma grupları (Emre: "her bölümde çok sanatçı var, tanımayı zorlaştırıyor"; "6 üstü bölünsün,
+// her grubun tanışma kısmı ayrı ayrı olsun") ----------
+// Haritadaki duraklar ve soruları değişmez (harita tasarımı bozulmasın); yalnız TANISMA_BOLME ve üstü sanatçılı durağın
+// tanışması 3–4 kişilik gruplara bölünür: 6 → 3+3, 7 → 4+3, 8 → 4+4, 9 → 3+3+3, 10 → 4+3+3. Gruplar durağın sırasıyla
+// (kursun konu sırası, konu içinde doğum sırası). Her grubun tanışması ayrı kaydedilir; hepsi görülünce seviyenin
+// tanışması (tanitim / tanitimOrta) görülmüş sayılır.
+export const TANISMA_BOLME = 6;
+export const GRUP_EN_COK = 4;
+export function tanismaGruplari(idler) {
+  const l = [...(idler || [])];
+  if (l.length < TANISMA_BOLME) return [l];
+  const adet = Math.ceil(l.length / GRUP_EN_COK);
+  const taban = Math.floor(l.length / adet);
+  const artan = l.length % adet;
+  const gruplar = [];
+  let i = 0;
+  for (let g = 0; g < adet; g++) {
+    const n = taban + (g < artan ? 1 : 0);
+    gruplar.push(l.slice(i, i + n));
+    i += n;
+  }
+  return gruplar;
+}
+const grupAlani = (seviye) => (seviye === 'orta' ? 'tanitimOrtaGrup' : 'tanitimGrup');
+// Görülen grupların sıra numaraları (0'dan); seviyenin tanışması bütünüyle görülmüşse hepsi
+export function gorulenGruplar(kayit, seviye, adet) {
+  if ((seviye === 'orta' ? kayit.tanitimOrta : kayit.tanitim) === true) return [...Array(adet).keys()];
+  return [...new Set(kayit[grupAlani(seviye)] || [])].filter((g) => g < adet).sort((x, y) => x - y);
+}
+export function tanismaGrubuGoruldu(ilerleme, id, seviye, grup, adet) {
+  const k = bolumKaydi(ilerleme, id);
+  const alan = grupAlani(seviye);
+  const l = [...new Set([...(k[alan] || []), grup])].sort((x, y) => x - y);
+  const yeni = { ...k, [alan]: l };
+  if (l.filter((g) => g < adet).length >= adet) yeni[seviye === 'orta' ? 'tanitimOrta' : 'tanitim'] = true;
+  ilerleme.bolumler = { ...(ilerleme.bolumler || {}), [id]: yeni };
+}
+
 // seviye 'kolay' → tanitim, 'orta' → tanitimOrta (İş 30: Orta'nın da kendi tanıtımı var)
 export function tanitimGoruldu(ilerleme, id, seviye = 'kolay') {
   const alan = seviye === 'orta' ? 'tanitimOrta' : 'tanitim';
@@ -215,6 +253,10 @@ export function bolumlerDogrula(v) {
     for (const s of BOLUM_SEVIYELER) if (typeof k[s] === 'number' && k[s] >= 0 && k[s] <= 1) t[s] = k[s];
     if (k.tanitim === true) t.tanitim = true;
     if (k.tanitimOrta === true) t.tanitimOrta = true;
+    for (const alan of ['tanitimGrup', 'tanitimOrtaGrup']) {
+      const l = Array.isArray(k[alan]) ? [...new Set(k[alan].filter((g) => Number.isInteger(g) && g >= 0 && g < 10))].sort((x, y) => x - y) : [];
+      if (l.length) t[alan] = l;
+    }
     sonuc[id] = t;
   }
   return sonuc;
