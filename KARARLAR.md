@@ -2494,3 +2494,13 @@ hakkında; görsel Uffizi paneli olduğundan Londra paneline ait iddialar (Tolen
 araştırması ince (Wikidata 'betimlenir' satırları): hikâye ve anlam `data/ikonografi.json` konu metninden, resimle uyuşanla.
 Kaynak denetiminde çıkarılanlar: Uccello'da "1438", Rubens'te "1635" ve "gerçek boyutlu", Dürer'de "gerçek boyutta";
 Uffizi panelinin "ortadaki" olduğu ihtiyatlı yazıldı. Birim 388/388; uçtan uca 13/13. 194 başyapıt, 1103 nokta.
+
+### İş 189b · parti 5: 10 yakın okuma (sürüm 1.83.6)
+
+Rogier · Beaune Son Yargı, Rossetti · Beata Beatrix, Ingres · I. Napolyon İmparatorluk Tahtında, Correggio · Kutsal Gece,
+Rubens · Çarmıhtan İndiriliş (Anvers), Goya · Cadı Ayini, Bouguereau · Şafak, Klimt · Kadının Üç Çağı, Tintoretto · Susanna ve
+Yaşlılar, Millais · Ana Babasının Evinde İsa; 60 nokta. Napolyon'un müzesi `secim.json`'da Louvre; künyeye göre Musée de l'Armée
+yazıldı. Correggio'nun tarihi sipariş–yerleştirme aralığı (1522–1530). Bouguereau · Şafak'ın araştırması ince: anlam
+`data/ikonografi.json` "günün saatleri" metninden. Klimt'te "çiçekli saç" kutusu yaşlı kadının eline düşmüştü, düzeltildi.
+Kaynak denetiminde çıkarılanlar: güneş saatinin "zamanın akışı" yorumu, Correggio'da Jerome pozunun kesinliği (ihtiyatlı yapıldı),
+Rubens'te "Elizabeth", Goya'da "manşon", Birmingham için "Alabama". Birim 388/388; uçtan uca 13/13. 204 başyapıt, 1163 nokta.

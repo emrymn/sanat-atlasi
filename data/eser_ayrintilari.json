@@ -10377,6 +10377,566 @@
      "metin": "Sol kenarda kadınlar çok küçültülmüş boyutlarda kümelenmiş. Bu, Gauguin'in perspektifi bilerek çarpıtmasının en açık örneğidir."
     }
    ]
+  },
+  {
+   "anahtar": "Q1169199",
+   "sanatci": "rogier-van-der-weyden",
+   "baslik": "Son Yargı (Beaune Altar Arkalığı)",
+   "gorsel": "444fbd5d0e264f0e",
+   "noktalar": [
+    {
+     "ad": "Yargılayan İsa",
+     "x": 0.43,
+     "y": 0.06,
+     "w": 0.15,
+     "h": 0.32,
+     "metin": "İsa iki panele yayılan bir gökkuşağının üstünde oturuyor, ayakları bir kürede. Sağ elinin yanında zambak, sol elinin yanında kılıç var."
+    },
+    {
+     "ad": "Mikail ve terazi",
+     "x": 0.43,
+     "y": 0.5,
+     "w": 0.14,
+     "h": 0.46,
+     "metin": "Beyaz giysili Başmelek Mikail ruhları tartıyor; her kefede birer ruh var. Lanetliler kutsanmışlardan ağır basar ve sol kefe sağdakinin altına iner."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.3,
+     "y": 0.43,
+     "w": 0.1,
+     "h": 0.36,
+     "metin": "Mavi pelerinli Meryem, ellerini kavuşturmuş İsa'ya dönük oturuyor. Karşı yandaki Vaftizci Yahya ile birlikte insanlık için aracılık eder."
+    },
+    {
+     "ad": "Petrus",
+     "x": 0.14,
+     "y": 0.44,
+     "w": 0.1,
+     "h": 0.36,
+     "metin": "Havariler yarım daire halinde oturur; en soldaki kırmızı giysili figür Petrus'tur. Karşı uçta yeşil giysili Pavlus yer alır."
+    },
+    {
+     "ad": "Cennet kapısı",
+     "x": 0.0,
+     "y": 0.42,
+     "w": 0.09,
+     "h": 0.56,
+     "metin": "Kutsanmışlar, uzun ince ışık huzmeleriyle aydınlanan Gotik bir yapıya giriyor. Cennet, dönemin mimarisiyle bir Cennet Şehri kapısı olarak gösterilir."
+    },
+    {
+     "ad": "Cehennem",
+     "x": 0.91,
+     "y": 0.42,
+     "w": 0.09,
+     "h": 0.56,
+     "metin": "En sağ panelde lanetliler dik kayalar arasında alevlere düşüyor. Van der Weyden cehennemi yakın ve uzak ateşlerle dolu, kasvetli ve kalabalık bir yer olarak boyar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2712679",
+   "sanatci": "dante-gabriel-rossetti",
+   "baslik": "Beata Beatrix",
+   "gorsel": "1706571671ee3dab",
+   "noktalar": [
+    {
+     "ad": "Beatrice'in yüzü",
+     "x": 0.38,
+     "y": 0.1,
+     "w": 0.24,
+     "h": 0.22,
+     "metin": "Beatrice gözlerini kapamış, başını kaldırmış; bir trans içinde gibi. Yüz, Rossetti'nin 1862'de ölen eşi ve modeli Elizabeth Siddal'a göre yapılmıştır."
+    },
+    {
+     "ad": "Kuş ve haşhaş",
+     "x": 0.6,
+     "y": 0.54,
+     "w": 0.4,
+     "h": 0.26,
+     "metin": "Haleli kırmızı bir kuş, gagasındaki beyaz haşhaşı Beatrice'in ellerine bırakıyor. Kuş aşkın elçisi, haşhaş ise Siddal'ın ölümüne yol açan laudanum olarak okunur."
+    },
+    {
+     "ad": "Güneş saati",
+     "x": 0.64,
+     "y": 0.32,
+     "w": 0.28,
+     "h": 0.17,
+     "metin": "Arkadaki taşın üstünde bir güneş saati duruyor. Kadranın üstüne düşen koyu gölge, puslu ışıkta belirgin bir biçim olarak öne çıkar."
+    },
+    {
+     "ad": "Kırmızılı figür",
+     "x": 0.05,
+     "y": 0.1,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Sol arkada kırmızı giysili, gölgemsi bir figür beliriyor. Rossetti arka planı bilerek belirsiz, rüya gibi bırakmıştır."
+    },
+    {
+     "ad": "Koyu figür",
+     "x": 0.77,
+     "y": 0.09,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Sağ arkada koyu giysili bir başka figür sahneye dönük duruyor. İki figür, ön plandaki Beatrice'i iki yandan çerçeveler."
+    },
+    {
+     "ad": "Açık eller",
+     "x": 0.6,
+     "y": 0.82,
+     "w": 0.3,
+     "h": 0.13,
+     "metin": "Beatrice'in elleri kucağında, avuçları yukarı açık duruyor. Kuşun bıraktığı çiçeği almaya hazır gibidir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1282840",
+   "sanatci": "jean-auguste-dominique-ingres",
+   "baslik": "I. Napolyon İmparatorluk Tahtında",
+   "gorsel": "75d835fe1d3a368d",
+   "noktalar": [
+    {
+     "ad": "Defne çelengi",
+     "x": 0.43,
+     "y": 0.14,
+     "w": 0.15,
+     "h": 0.13,
+     "metin": "Napolyon'un başında Julius Caesar'ınkine benzeyen altın bir defne çelengi var. Yüz cepheden ve kıpırtısız; dantel bir yaka boynunu sarar."
+    },
+    {
+     "ad": "Şarlman'ın asası",
+     "x": 0.03,
+     "y": 0.0,
+     "w": 0.11,
+     "h": 0.17,
+     "metin": "Sağ elinde tuttuğu uzun asa Şarlman'ın asasıdır. Tepesindeki küçük oturan figürle imparatorluğu Karolenj geçmişine bağlar."
+    },
+    {
+     "ad": "Adalet eli",
+     "x": 0.79,
+     "y": 0.13,
+     "w": 0.08,
+     "h": 0.08,
+     "metin": "Sol eldeki asanın ucunda kutsama işareti yapan küçük bir el var. Bu, adaleti simgeleyen adalet asasıdır."
+    },
+    {
+     "ad": "Lejyon kolyesi",
+     "x": 0.37,
+     "y": 0.26,
+     "w": 0.28,
+     "h": 0.14,
+     "metin": "Kakım kürklü başlığın üstünde Légion d'honneur'un büyük kolyesi duruyor. Kürkteki siyah benekler kakım kuyruklarıdır."
+    },
+    {
+     "ad": "Armalı kalkan",
+     "x": 0.9,
+     "y": 0.05,
+     "w": 0.1,
+     "h": 0.11,
+     "metin": "Sağ üstte yarısı kesilmiş bir kalkan görülür; üzerinde Papalık, Milano, Venedik ve Savoy gibi armalar vardır. Hazırlık çiziminde kalkan çok daha belirgindir."
+    },
+    {
+     "ad": "Yastıktaki ayakkabılar",
+     "x": 0.54,
+     "y": 0.73,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Altın işlemeli beyaz ayakkabılar bir yastığın üstünde duruyor. Altlarındaki halıda bir imparatorluk kartalı uzanır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1527541",
+   "sanatci": "correggio",
+   "baslik": "İsa'nın Doğuşu",
+   "gorsel": "0e0fde13a4d47d0c",
+   "noktalar": [
+    {
+     "ad": "Işık saçan bebek",
+     "x": 0.5,
+     "y": 0.37,
+     "w": 0.25,
+     "h": 0.21,
+     "metin": "Sahnenin tek ışık kaynağı yemlikteki bebektir. Meryem onu kollarıyla sarmış; yüzü alttan gelen bu ışıkla parlıyor."
+    },
+    {
+     "ad": "Gözünü koruyan kadın",
+     "x": 0.26,
+     "y": 0.32,
+     "w": 0.19,
+     "h": 0.15,
+     "metin": "Bir kadın eliyle yüzünü ışığa karşı siper ediyor. Correggio'nun chiaroscuro'su, ışığın gücünü izleyenlerin tepkileriyle gösterir."
+    },
+    {
+     "ad": "Çobanlar",
+     "x": 0.0,
+     "y": 0.29,
+     "w": 0.33,
+     "h": 0.4,
+     "metin": "Solda çobanlar toplanmış; sakallı olan sırtını bize dönmüş, genç olan yukarı bakıyor. Sakallı çobanın, Correggio'nun Aziz Yusuf'lu Meryem'indeki Jerome ile aynı pozda olduğu düşünülür."
+    },
+    {
+     "ad": "Melekler",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.62,
+     "h": 0.22,
+     "metin": "Sol üstte bulutların üstünde melekler süzülüyor. Pozları Correggio'nun Parma Katedrali kubbesindeki figürlerini anımsatır."
+    },
+    {
+     "ad": "Yusuf ve eşek",
+     "x": 0.54,
+     "y": 0.22,
+     "w": 0.26,
+     "h": 0.24,
+     "metin": "Sağda karanlığın içinden Aziz Yusuf ve bir eşek beliriyor. Bu hayvanlar, doğuş sahnesinin geleneksel parçasıdır."
+    },
+    {
+     "ad": "Sakallı çobanın bacağı",
+     "x": 0.0,
+     "y": 0.7,
+     "w": 0.16,
+     "h": 0.28,
+     "metin": "Ön plandaki çobanın çıplak bacağı karanlıkta güçlü bir kabartma gibi parlıyor. Işığın ön plana dek uzandığını gösterir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2667782",
+   "sanatci": "peter-paul-rubens",
+   "baslik": "Çarmıhtan İndiriliş",
+   "gorsel": "7586fd4dfd7b7f47",
+   "noktalar": [
+    {
+     "ad": "Dişle tutulan kefen",
+     "x": 0.58,
+     "y": 0.04,
+     "w": 0.1,
+     "h": 0.14,
+     "metin": "Çarmıhın yatay koluna eğilen adamlardan biri, ellerini serbest bırakmak için kefeni dişleriyle tutuyor. Beden kefenin üstünden aşağı kayar."
+    },
+    {
+     "ad": "Yuhanna",
+     "x": 0.49,
+     "y": 0.45,
+     "w": 0.13,
+     "h": 0.5,
+     "metin": "Kızıl pelerinli Aziz Yuhanna bir ayağını merdivene basmış, İsa'nın ağırlığını taşıyan başlıca figür odur. Arimatealı Yusuf onun çapraz karşısında yardım eder."
+    },
+    {
+     "ad": "Bakire Meryem",
+     "x": 0.33,
+     "y": 0.4,
+     "w": 0.12,
+     "h": 0.17,
+     "metin": "Mavi giysili Meryem çarmıhın dibinde dik duruyor, kollarını oğluna uzatıyor. Kederi duruşundan çok solgun yüzünde okunur."
+    },
+    {
+     "ad": "Diz çöken kadınlar",
+     "x": 0.35,
+     "y": 0.58,
+     "w": 0.15,
+     "h": 0.25,
+     "metin": "Mecdelli Meryem ve Kleopas'ın Meryem'i çarmıhın dibinde diz çökmüş. Sarışın olanı İsa'nın ayağını karşılıyor."
+    },
+    {
+     "ad": "Leğen",
+     "x": 0.62,
+     "y": 0.89,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Yerde, diken tacı ile çivilerin pıhtılaşmış kan içinde yattığı bakır bir leğen ve bir yazıt duruyor. Çarmıha germenin kanıtları sahnenin dibinde toplanmıştır."
+    },
+    {
+     "ad": "Ziyaret",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.2,
+     "h": 0.98,
+     "metin": "Sol kanatta Ziyaret sahnesi var: Mesih Çocuğu'nu taşıyan Meryem görülür. Yan paneller İsa'nın yaşamının başlangıcını, orta panel sonunu anlatır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2528477",
+   "sanatci": "francisco-de-goya",
+   "baslik": "Cadı Ayini",
+   "gorsel": "0058c0556cfadccc",
+   "noktalar": [
+    {
+     "ad": "Keçi Şeytan",
+     "x": 0.18,
+     "y": 0.05,
+     "w": 0.13,
+     "h": 0.9,
+     "metin": "Şeytan, ay ışığında siluet olarak görünen dev bir keçidir; muhtemelen rahip giysisi giymiş. Bir toprak höyükten açık ağzıyla vaaz veriyor."
+    },
+    {
+     "ad": "Cadı halkası",
+     "x": 0.32,
+     "y": 0.15,
+     "w": 0.52,
+     "h": 0.42,
+     "metin": "Çoğu yaşlı, dehşete kapılmış kadınlar Şeytan'ın önünde bir halka oluşturmuş. Sanat tarihçileri onları genellikle bir cadı meclisi olarak tanımlar."
+    },
+    {
+     "ad": "Beyaz başlıklı kadın",
+     "x": 0.43,
+     "y": 0.5,
+     "w": 0.12,
+     "h": 0.4,
+     "metin": "Sırtı bize dönük oturan yaşlı kadının yüzü yarı gizli. Rahibe kıyafetini andıran beyaz kapüşonlu bir başlık takıyor."
+    },
+    {
+     "ad": "Şişeler",
+     "x": 0.5,
+     "y": 0.62,
+     "w": 0.07,
+     "h": 0.12,
+     "metin": "Kadının yanında yerde şişeler ve küçük şişeler duruyor. Robert Hughes, bunların şeytani törenler için uyuşturucu ve iksir içerip içermediğini sorar."
+    },
+    {
+     "ad": "Aday",
+     "x": 0.89,
+     "y": 0.22,
+     "w": 0.1,
+     "h": 0.5,
+     "metin": "En sağda gruptan ayrı oturan kadın, meclise kabul edilmek üzere olan bir aday olabilir. Goya'nın hizmetçisi Leocadia Weiss'i temsil ettiği de öne sürülür."
+    },
+    {
+     "ad": "Sol kalabalık",
+     "x": 0.02,
+     "y": 0.22,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Keçinin solunda başka bir grup kadın büzülmüş oturuyor. Yüzler kaba, ağır fırça darbeleriyle neredeyse maskeye dönüşür."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q5962062",
+   "sanatci": "william-adolphe-bouguereau",
+   "baslik": "Şafak",
+   "gorsel": "c51910673b6a88e6",
+   "noktalar": [
+    {
+     "ad": "Çiçeği koklayan yüz",
+     "x": 0.2,
+     "y": 0.22,
+     "w": 0.16,
+     "h": 0.17,
+     "metin": "Kadın başını eğmiş, beyaz bir çiçeği yüzüne yaklaştırıp kokluyor. Gözleri yarı kapalı, sabahın ilk anına dalmış gibi."
+    },
+    {
+     "ad": "Savrulan tül",
+     "x": 0.38,
+     "y": 0.02,
+     "w": 0.54,
+     "h": 0.4,
+     "metin": "Kadın bir eliyle saydam bir tülü başının üstünde savuruyor. Tülün hafifliği, figürün yerden kesilmiş gibi görünmesine katkı yapar."
+    },
+    {
+     "ad": "Suya değen ayak",
+     "x": 0.55,
+     "y": 0.88,
+     "w": 0.11,
+     "h": 0.12,
+     "metin": "Bir ayağın parmak ucu durgun suya dokunuyor ve yüzeyde yansıyor. Figür ağırlığı yokmuş gibi su üstünde dans eder."
+    },
+    {
+     "ad": "Geniş yapraklı bitkiler",
+     "x": 0.0,
+     "y": 0.48,
+     "w": 0.38,
+     "h": 0.42,
+     "metin": "Solda geniş yapraklı bitkiler ve uzun saplı çiçekler yükseliyor. Koyu yeşil yapraklar, açık tenli figürü öne çıkaran bir fon oluşturur."
+    },
+    {
+     "ad": "Uzun saçlar",
+     "x": 0.3,
+     "y": 0.38,
+     "w": 0.13,
+     "h": 0.17,
+     "metin": "Uzun koyu saçlar bele dek dökülüp rüzgârla dalgalanıyor. Saçın koyu kütlesi açık ten ve beyaz tülle karşıtlık kurar."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.0,
+     "y": 0.96,
+     "w": 0.18,
+     "h": 0.03,
+     "metin": "Sol alt köşede 'W-BOVGVEREAV-1881' imzası okunur. Bouguereau adını U yerine V harfleriyle yazmıştır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3829156",
+   "sanatci": "gustav-klimt",
+   "baslik": "Kadının Üç Çağı",
+   "gorsel": "5d0c7bdc54663ca7",
+   "noktalar": [
+    {
+     "ad": "Gizlenen yüz",
+     "x": 0.38,
+     "y": 0.0,
+     "w": 0.12,
+     "h": 0.2,
+     "metin": "Yaşlı kadın başını eğmiş, yüzünü eli ve uzun gri saçlarıyla örtüyor. Yüzü görünmez; yaşı bedeninden okunur."
+    },
+    {
+     "ad": "Yaşlı beden",
+     "x": 0.27,
+     "y": 0.1,
+     "w": 0.17,
+     "h": 0.32,
+     "metin": "Sarkmış deri, şişkin göbek ve belirgin damarlar yaşlılığın izlerini açıkça gösterir. Yaşlı kadın sıcak, topraksı renkli kendi aurasında durur."
+    },
+    {
+     "ad": "Anne ve çocuk",
+     "x": 0.5,
+     "y": 0.15,
+     "w": 0.2,
+     "h": 0.17,
+     "metin": "Genç anne ile kucağındaki çocuğun gözleri kapalı. Birbirine dokunan tek figürler onlardır."
+    },
+    {
+     "ad": "Çiçekli saç",
+     "x": 0.43,
+     "y": 0.14,
+     "w": 0.07,
+     "h": 0.12,
+     "metin": "Genç kadının başını çevreleyen küçük renkli çiçekler ilkbaharı temsil eder. Yaşamın en verimli çağı çiçeklerle anlatılır."
+    },
+    {
+     "ad": "Mavi tül",
+     "x": 0.53,
+     "y": 0.62,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Annenin bacaklarından aşağı ince, mavi bir kumaş sarkıyor. Çevresindeki soğuk renkli, akışkan desenler genç figürlerin aurasını oluşturur."
+    },
+    {
+     "ad": "Yaşlı ayaklar",
+     "x": 0.31,
+     "y": 0.8,
+     "w": 0.15,
+     "h": 0.1,
+     "metin": "Yaşlı kadının iki ayağı da gösterilmiş. Klimt yaşlılığın izleyiciden saklanmasına izin vermez."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3978277",
+   "sanatci": "tintoretto",
+   "baslik": "Susanna ve Yaşlılar",
+   "gorsel": "3431e677bfd250c7",
+   "noktalar": [
+    {
+     "ad": "Susanna",
+     "x": 0.65,
+     "y": 0.13,
+     "w": 0.3,
+     "h": 0.6,
+     "metin": "Susanna havuz kıyısında oturmuş ayağını kuruluyor; davetsiz misafirlerden habersiz. Işık en çok onun bedenine toplanır."
+    },
+    {
+     "ad": "Ayna",
+     "x": 0.25,
+     "y": 0.46,
+     "w": 0.15,
+     "h": 0.36,
+     "metin": "Gül çardağına yaslanmış bir ayna duruyor. Susanna kendi yansımasına dalmıştır; ayna onun habersizliğini vurgular."
+    },
+    {
+     "ad": "Öndeki yaşlı",
+     "x": 0.0,
+     "y": 0.62,
+     "w": 0.2,
+     "h": 0.36,
+     "metin": "Kel başlı, beyaz sakallı bir yaşlı adam çardağın bir ucundan başını uzatıp gözetliyor. Yaşlılar bir süre sonra Susanna'yı iftirayla suçlayacaktır."
+    },
+    {
+     "ad": "Arkadaki yaşlı",
+     "x": 0.45,
+     "y": 0.08,
+     "w": 0.08,
+     "h": 0.22,
+     "metin": "Arka planda, çardağın öbür ucunda ikinci yaşlı beliriyor. İki adam çardağın iki ucundan Susanna'yı izler."
+    },
+    {
+     "ad": "Natürmort",
+     "x": 0.38,
+     "y": 0.58,
+     "w": 0.15,
+     "h": 0.25,
+     "metin": "Yerde beyaz ipek bir şal, inciler, bir tarak ve gümüş bir kap duruyor. Parlak nesneler birlikte küçük bir natürmort oluşturur."
+    },
+    {
+     "ad": "Gül çardağı",
+     "x": 0.18,
+     "y": 0.0,
+     "w": 0.27,
+     "h": 0.42,
+     "metin": "Sık bir gül çardağı resmi çapraz böler. Çardak yaşlıları gizler ve onları Susanna'dan ayırır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q960157",
+   "sanatci": "john-everett-millais",
+   "baslik": "Ana Babasının Evinde İsa",
+   "gorsel": "fc4db494612fe53d",
+   "noktalar": [
+    {
+     "ad": "Yaralı el",
+     "x": 0.56,
+     "y": 0.36,
+     "w": 0.11,
+     "h": 0.1,
+     "metin": "Çocuk İsa çiviyle kesilen elini kaldırmış, Yusuf eğilip yaraya bakıyor. Avuçtaki yara, çarmıhtaki stigmataları önceden haber verir."
+    },
+    {
+     "ad": "Anne ve kerpeten",
+     "x": 0.35,
+     "y": 0.1,
+     "w": 0.13,
+     "h": 0.4,
+     "metin": "İsa'nın büyükannesi Anne, kerpetenle tezgâhtaki çiviyi çıkarıyor. Meryem ise endişeyle oğluna öpücük için yanağını uzatır."
+    },
+    {
+     "ad": "Su getiren Yahya",
+     "x": 0.85,
+     "y": 0.28,
+     "w": 0.12,
+     "h": 0.33,
+     "metin": "Küçük Vaftizci Yahya yarayı yıkamak için bir kâsede su getiriyor. Bu, onun ileride İsa'yı vaftiz edeceğini önceler."
+    },
+    {
+     "ad": "Güvercin",
+     "x": 0.565,
+     "y": 0.09,
+     "w": 0.04,
+     "h": 0.07,
+     "metin": "Duvara yaslanan merdivenin basamağında küçük bir güvercin duruyor. Merdiven Yakup'un Merdiveni'ne, güvercin Kutsal Ruh'a gönderme yapar."
+    },
+    {
+     "ad": "Ağıldaki koyunlar",
+     "x": 0.12,
+     "y": 0.17,
+     "w": 0.21,
+     "h": 0.14,
+     "metin": "Kapının ardındaki ağılda koyunlar toplanmış. Koyunlar, gelecekteki Hristiyan cemaatini temsil eder."
+    },
+    {
+     "ad": "Asistan",
+     "x": 0.1,
+     "y": 0.2,
+     "w": 0.14,
+     "h": 0.42,
+     "metin": "Solda Yusuf'un asistanı tezgâha eğilmiş, olanları izliyor. İsa'nın gelecekteki havarilerini temsil eder."
+    }
+   ]
   }
  ]
 }
