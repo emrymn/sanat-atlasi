@@ -192,6 +192,10 @@ export function bolumSonucuIsle(ilerleme, id, seviye, dogru, toplam) {
 // tanışması (tanitim / tanitimOrta) görülmüş sayılır.
 export const TANISMA_BOLME = 6;
 export const GRUP_EN_COK = 4;
+// Emre: "tanış kısmından sonra soru olsun ki pekişsin": grubun tanışmasının ardından her sanatçısına bu kadar soru;
+// grup bu kısa tur bitince tamam sayılır (yıldızlar yine Kolay / Orta / Zor'dan)
+export const GRUP_SORU_KISI = 2;
+export const grupSoruSayisi = (n) => n * GRUP_SORU_KISI;
 export function tanismaGruplari(idler) {
   const l = [...(idler || [])];
   if (l.length < TANISMA_BOLME) return [l];

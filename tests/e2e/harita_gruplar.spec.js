@@ -33,24 +33,51 @@ test('Harita: kalabalık durakta Tanış grup grup; bir grup bitince yalnız o i
   expect(g).toBe(Math.ceil(n / 4));
   await expect(page.locator('[data-test="harita-tanitim"]')).toHaveCount(0);
   await expect(page.locator('[data-test="harita-basla"]')).toHaveText(/1\. grupla tanış/);
-  // 2. grubun tanışması: yalnız o grubun sanatçıları
+  // pencere iki bölüm: 1 · Tanış (grup kartları, yüzleriyle), 2 · Sınav; alttaki ayrı yüz şeridi yok
+  await expect(page.locator('[data-test="hp-tanis"]')).toBeVisible();
+  await expect(page.locator('[data-test="hp-sinav"] [data-test="harita-seviye"]')).toHaveCount(3);
+  await expect(page.locator('.harita-pencere-ic .harita-pencere-sanatcilar')).toHaveCount(0);
+  await expect(gruplar.nth(0).locator('.hp-grup-yuz')).toHaveCount(await page.evaluate((b) => Math.ceil(window.__atlas.haritaDurum.liste.find((x) => x.id === b).sanatcilar.length / Math.ceil(window.__atlas.haritaDurum.liste.find((x) => x.id === b).sanatcilar.length / 4)), id));
+  // 2. grup: tanışma (yalnız o grubun sanatçıları), ardından yalnız onları soran kısa tur (kişi başı 2 soru)
   await gruplar.nth(1).click();
   await expect(page).toHaveURL(new RegExp(`#/pekistir/bolum/${id}/tanitim-2$`));
   const gec = page.locator('[data-test="konu-tanisma-gec"]');
   await expect(gec).toBeVisible();
-  let adim = 0;
-  for (; adim < 40 && (await gec.isVisible().catch(() => false)); adim++) {
+  const tanisilan = new Set();
+  for (let adim = 0; adim < 40 && (await gec.isVisible().catch(() => false)); adim++) {
+    tanisilan.add(await page.evaluate(() => { const o = window.__atlas.oturum; return o.tanisma.sira[o.tanisma.konum]; }));
     await gec.click();
     await expect(page.locator('[data-test="konu-tanisma-gec"].gidiyor')).toHaveCount(0);
   }
-  expect(adim).toBeLessThanOrEqual(4);
-  await expect(page).toHaveURL(/#\/harita$/);
+  expect(tanisilan.size).toBeGreaterThanOrEqual(3);
+  expect(tanisilan.size).toBeLessThanOrEqual(4);
+  // tanışma bitti ama sorular bitmeden grup tamam sayılmaz
+  expect(await page.evaluate((b) => window.__atlas.ilerleme.bolumler[b]?.tanitimGrup, id)).toBeUndefined();
+  const soru = tanisilan.size * 2;
+  for (let i = 0; i < soru; i++) {
+    const dogru = await page.evaluate(async (j) => {
+      const d = window.__atlas;
+      while (!d.oturum || !d.oturum.kart || d.oturum.kart.konum !== j || !document.querySelector('[data-test="sanatci-secenekleri"]')) await new Promise((r) => setTimeout(r, 50));
+      return d.oturum.kart.id;
+    }, i);
+    expect(tanisilan.has(dogru)).toBe(true);
+    await page.locator(`[data-test="sanatci-secenekleri"] button[data-sanatci="${dogru}"]`).click();
+    await page.locator('[data-sonraki]').click();
+  }
+  const ozet = page.locator('[data-test="grup-ozet"]');
+  await expect(ozet).toBeVisible();
+  await expect(ozet).toContainText(`${soru} / ${soru}`);
+  await expect(page.locator('[data-test="grup-sonraki"]')).toHaveAttribute('href', `#/pekistir/bolum/${id}/tanitim-1`);
   const kayit = await page.evaluate((b) => window.__atlas.ilerleme.bolumler[b], id);
   expect(kayit.tanitimGrup).toEqual([1]);
   expect(kayit.tanitim).toBeUndefined();
+  expect(kayit.kolay).toBeUndefined(); // grup turu yıldız vermez
   // durak penceresi: 2. grup işaretli, başla hâlâ 1. gruba
+  await page.locator('[data-test="grup-haritaya"]').click();
+  await expect(page).toHaveURL(/#\/harita$/);
   await page.locator(`[data-test="harita-durak"][data-bolum="${id}"]`).click();
-  await expect(gruplar.nth(1)).toHaveClass(/goruldu/);
-  await expect(gruplar.nth(0)).not.toHaveClass(/goruldu/);
+  const gruplar2 = page.locator('[data-test="harita-tanitim-grup"]');
+  await expect(gruplar2.nth(1).locator('xpath=..')).toHaveClass(/goruldu/);
+  await expect(gruplar2.nth(0).locator('xpath=..')).not.toHaveClass(/goruldu/);
   await expect(page.locator('[data-test="harita-basla"]')).toHaveAttribute('href', `#/pekistir/bolum/${id}/tanitim-1`);
 });

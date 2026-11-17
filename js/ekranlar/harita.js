@@ -8,7 +8,7 @@
 // (data/harita_motifler.json, scripts/harita/motif_hikayeleri.py).
 import { kacis } from '../yardimci.js';
 import { ikon, pgDisk } from '../tasarim.js';
-import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER, tanismaGruplari, gorulenGruplar } from '../bolum.js';
+import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER, tanismaGruplari, gorulenGruplar, grupSoruSayisi } from '../bolum.js';
 import { bilinenAd } from '../adlar.js';
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, resimYukleme, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { kurs, konuBasligi, konuIsaretle } from './ilerleme.js';
@@ -658,6 +658,8 @@ function akimOzeti(ad) {
   return cumleler.slice(0, 2).join(' ').trim();
 }
 
+const etiketHtml = (metin) => `<p class="etiket hp-bolum-etiket">${kacis(metin)}</p>`;
+
 function durakPenceresi(id) {
   const h = d.haritaDurum;
   const x = h && h.liste.find((y) => y.id === id);
@@ -670,33 +672,39 @@ function durakPenceresi(id) {
   const sd = sb && sb.duraklar.find((y) => y.id === id);
   const sembolSrc = sd ? nesneAdresi(sb.id, sd.sembolNo, h.tur) : '';
   const isaret = (durum) => `<i class="hs-isaret ${durum}" aria-hidden="true">${durum === 'gecti' ? ikon('dogru', 18, 2.2) : durum === 'kapali' ? ikon('kilit', 16, 1.7) : ''}</i>`;
-  // 1.89: 6 ve üstü sanatçılı durakta tanışma 3–4 kişilik gruplara bölünür; her grup ayrı satır, görülen işaretli
+  // 1.89 (Emre: "tasarımı değiştirmeden önce organizasyonu yapalım"): pencere iki bölüm. 1 · Tanış: sanatçılar
+  // grupları içinde (6 ve üstü sanatçılı durakta 3–4 kişilik gruplar, her grup tanışma + kısa pekiştirme; küçük durakta
+  // tek kart). 2 · Sınav: Kolay / Orta / Zor merdiveni. Tek ana düğme sıradaki işe götürür; altta yalnız akım sayfası.
   const gruplar = tanismaGruplari(x.sanatcilar);
+  const bolunmus = gruplar.length > 1;
   const kisaAd = (sid) => {
     const s = d.harita.get(sid);
     return s ? bilinenAd(s.ad, (d.kisaAdlar || {})[sid]) : '';
   };
-  const grupSatirlari = (seviye, yol) => {
-    const gorulen = new Set(gorulenGruplar(x.kayit, seviye, gruplar.length));
-    return gruplar
-      .map(
-        (g, i) =>
-          `<a class="harita-seviye tanis tanis-grup${gorulen.has(i) ? ' goruldu' : ''}" href="#/pekistir/bolum/${x.id}/${yol}-${i + 1}" data-test="harita-tanitim-grup" data-grup="${i + 1}">${isaret(gorulen.has(i) ? 'gecti' : 'tanis')}<b>${seviye === 'orta' ? 'Orta tanıtımı' : 'Tanış'} · ${i + 1}. grup</b><span>${kacis(g.map(kisaAd).join(', '))}</span>${ikon('ileri', 18, 1.5)}</a>`,
-      )
-      .join('');
+  const gorulenK = new Set(gorulenGruplar(x.kayit, 'kolay', gruplar.length));
+  const gorulenO = new Set(gorulenGruplar(x.kayit, 'orta', gruplar.length));
+  const ortaAcik = x.acik && x.seviyeAcik.orta;
+  const grupKarti = (g, i) => {
+    const tamam = bolunmus ? gorulenK.has(i) : !!x.kayit.tanitim;
+    const yol = bolunmus ? `tanitim-${i + 1}` : 'tanitim';
+    const baslik = bolunmus ? `${i + 1}. grup` : `${g.length} sanatçı`;
+    const bilgi = bolunmus ? (tamam ? 'tamam' : `tanış · ${grupSoruSayisi(g.length)} soru`) : tamam ? 'tanıştın' : 'eserleriyle';
+    const yuzler = g.map((sid, j) => `<span class="harita-yuz hp-grup-yuz" style="--i:${j}" data-kucuk="${kacis(sid)}" data-genislik="120"></span>`).join('');
+    const orta = ortaAcik
+      ? `<a class="hp-grup-orta${(bolunmus ? gorulenO.has(i) : x.kayit.tanitimOrta) ? ' goruldu' : ''}" href="#/pekistir/bolum/${x.id}/tanitim-orta${bolunmus ? `-${i + 1}` : ''}" data-test="harita-tanitim-orta">Orta eserleri${ikon('ileri', 14, 1.6)}</a>`
+      : '';
+    return `<li class="hp-grup${tamam ? ' goruldu' : ''}">
+        <a class="hp-grup-ana" href="#/pekistir/bolum/${x.id}/${yol}" data-test="${bolunmus ? 'harita-tanitim-grup' : 'harita-tanitim'}" data-grup="${i + 1}">
+          ${isaret(tamam ? 'gecti' : 'tanis')}<span class="hp-grup-yazi"><b>${baslik}</b><small>${bilgi}</small></span>
+          <span class="hp-grup-yuzler" aria-hidden="true">${yuzler}</span>
+          <span class="hp-grup-adlar">${kacis(g.map(kisaAd).join(', '))}</span>
+        </a>${orta}
+      </li>`;
   };
-  const sonrakiGrup = (seviye) => {
-    const gorulen = new Set(gorulenGruplar(x.kayit, seviye, gruplar.length));
-    const i = gruplar.findIndex((_, j) => !gorulen.has(j));
-    return i < 0 ? null : i;
-  };
-  const tanis = !x.acik
-    ? ''
-    : gruplar.length > 1
-      ? grupSatirlari('kolay', 'tanitim')
-      : `<a class="harita-seviye tanis" href="#/pekistir/bolum/${x.id}/tanitim" data-test="harita-tanitim">${isaret('tanis')}<b>Tanış</b><span>${sanatcilar.length} sanatçı · eserleriyle</span>${ikon('ileri', 18, 1.5)}</a>`;
-  // Kolay sıradaysa ve gruplu tanışma bitmediyse "başla" önce sıradaki gruba götürür
-  const grupSirada = gruplar.length > 1 && siradaki === 'kolay' ? sonrakiGrup('kolay') : null;
+  const tanisBolumu = x.acik ? `<section class="hp-bolum" data-test="hp-tanis">${etiketHtml('1 · Tanış')}<ul class="hp-gruplar">${gruplar.map(grupKarti).join('')}</ul></section>` : '';
+  // Kolay sıradayken tanışması bitmemiş ilk grup önce
+  const ilkGrup = gruplar.findIndex((_, i) => !gorulenK.has(i));
+  const grupSirada = bolunmus && siradaki === 'kolay' && ilkGrup >= 0 ? ilkGrup : null;
   const satirlar = BOLUM_SEVIYELER.map((sv) => {
     const acik = x.seviyeAcik[sv];
     const en = x.kayit[sv];
@@ -712,7 +720,8 @@ function durakPenceresi(id) {
   const govde = x.acik
     ? `${yildizHtml(x.yildiz)}
       ${x.no === 1 && akimOzeti(x.akim) ? `<p class="harita-pencere-akim">${kacis(akimOzeti(x.akim))}</p>` : ''}
-      <div class="harita-seviyeler merdiven">${tanis}${satirlar}</div>
+      ${tanisBolumu}
+      <section class="hp-bolum" data-test="hp-sinav">${etiketHtml(x.acik ? '2 · Sınav' : 'Sınav')}<div class="harita-seviyeler merdiven">${satirlar}</div></section>
       <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru · her seviye bir yıldız</p>
       ${
         grupSirada !== null
@@ -735,19 +744,13 @@ function durakPenceresi(id) {
         <h2>${kacis(bolumAdi(x))}</h2></span>
       </header>
       ${govde}
-      <div class="harita-pencere-sanatcilar">${sanatcilar
+      ${x.acik ? '' : `<div class="harita-pencere-sanatcilar">${sanatcilar
         .map((s, i) => {
           const ic = `<span class="harita-yuz" style="--i:${i}" data-kucuk="${kacis(s.id)}" data-genislik="200"></span><span class="harita-yuz-ad">${kacis(s.ad)}</span>`;
           return x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${ic}</a>` : `<span class="kilitli">${ic}</span>`;
         })
-        .join('')}</div>
-      <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">${pgDisk('sutun', 'okra')}Akım sayfası</a>${
-        x.acik && x.seviyeAcik.orta
-          ? gruplar.length > 1
-            ? gruplar.map((_, i) => `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim-orta-${i + 1}" data-test="harita-tanitim-orta">Orta tanıtımı · ${i + 1}</a>`).join('')
-            : `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim-orta" data-test="harita-tanitim-orta">Orta tanıtımı</a>`
-          : ''
-      }</div>
+        .join('')}</div>`}
+      <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">${pgDisk('sutun', 'okra')}Akım sayfası</a></div>
     </div>`;
 }
 

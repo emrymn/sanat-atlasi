@@ -67,10 +67,11 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
   await expect(pencere).toBeVisible();
   await expect(pencere.locator('.hp-madalyon img[src*="sembol_"]')).toHaveCount(1);
   const satirlar = pencere.locator('.harita-seviyeler.merdiven .harita-seviye');
-  await expect(satirlar).toHaveCount(4);
-  await expect(satirlar.nth(0)).toHaveAttribute('data-test', 'harita-tanitim');
-  await expect(satirlar.nth(1)).toHaveClass(/siradaki/);
-  await expect(satirlar.nth(2)).toHaveClass(/kapali/);
+  // 1.89: Tanış merdivenden çıktı, kendi bölümünde (1 · Tanış); merdivende Kolay / Orta / Zor
+  await expect(pencere.locator('[data-test="hp-tanis"] [data-test="harita-tanitim"], [data-test="hp-tanis"] [data-test="harita-tanitim-grup"]').first()).toBeVisible();
+  await expect(satirlar).toHaveCount(3);
+  await expect(satirlar.nth(0)).toHaveClass(/siradaki/);
+  await expect(satirlar.nth(1)).toHaveClass(/kapali/);
   const basla = pencere.locator('[data-test="harita-basla"]');
   await expect(basla).toContainText('Kolay’a başla');
   expect((await basla.boundingBox()).height).toBeGreaterThanOrEqual(56);

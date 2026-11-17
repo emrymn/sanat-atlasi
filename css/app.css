@@ -22528,3 +22528,111 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 .konu-yol-ust .tumunu-goster[hidden] {
   display: none;
 }
+/* ===== 1.89 · Durak penceresinin düzeni: 1 · Tanış (grup kartları) → 2 · Sınav (merdiven) → tek düğme → akım sayfası =====
+   Yalnız düzen; görünüş sonraki işte (Emre: "tasarımı değiştirmeden önce organizasyonu yapalım"). */
+.hp-bolum {
+  margin-top: 18px;
+}
+.hp-bolum-etiket {
+  margin: 0 0 8px;
+  color: var(--ink-2);
+}
+.hp-gruplar {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hp-grup {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.hp-grup-ana {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-areas: 'isaret yazi yuzler' 'adlar adlar adlar';
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 6px;
+  min-height: 64px;
+  padding: 10px 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hp-grup-ana .hs-isaret {
+  grid-area: isaret;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1.5px solid rgba(var(--pirinc-rgb), 0.55);
+  color: var(--pirinc);
+}
+.hp-grup-ana .hs-isaret.tanis::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pirinc);
+}
+.hp-grup-ana .hs-isaret.gecti {
+  background: var(--pirinc);
+  border-color: var(--pirinc);
+  color: var(--pirinc-yazi);
+}
+.hp-grup-yazi {
+  grid-area: yazi;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hp-grup-yazi b {
+  font: 500 17px/1.2 var(--sans);
+}
+.hp-grup-yazi small {
+  font: 400 14px/1.2 var(--sans);
+  color: var(--ink-2);
+}
+.hp-grup.goruldu .hp-grup-yazi small {
+  color: var(--pirinc);
+}
+.hp-grup-yuzler {
+  grid-area: yuzler;
+  display: flex;
+}
+.hp-grup-yuzler .hp-grup-yuz {
+  width: 34px;
+  height: 34px;
+  margin-left: -8px;
+  box-shadow: 0 0 0 2px var(--surface);
+}
+.hp-grup-yuzler .hp-grup-yuz:first-child {
+  margin-left: 0;
+}
+.hp-grup-adlar {
+  grid-area: adlar;
+  padding-left: 56px;
+  font: 400 14px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+.hp-grup-orta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  margin: 0 12px;
+  padding-left: 56px;
+  border-top: 1px solid var(--border);
+  font: 500 14px/1 var(--sans);
+  color: var(--ink-2);
+  text-decoration: none;
+}
+.hp-grup-orta.goruldu {
+  color: var(--pirinc);
+}

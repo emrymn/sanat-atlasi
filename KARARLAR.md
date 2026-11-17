@@ -2696,3 +2696,12 @@ Empresyonizm 2. Adres `#/pekistir/bolum/<id>/tanitim-<n>` (Orta için `tanitim-o
 bütünüyle tanışılmış durakta bütün gruplar görülmüş sayılır (ilerleme kaybolmaz). Durak penceresinde "Tanış" yerine grup
 satırları (grubun sanatçılarının kısa adları); "başla" Kolay sıradayken önce görülmemiş ilk gruba götürür. Kolay'a
 doğrudan girilirse önceden görülmemiş grupların sanatçılarıyla tanışılır (eskisi gibi).
+- Sonra (Emre: "tanış kısmından sonra soru olsun ki pekişsin"): grubun tanışmasının ardından yalnız o grubun sanatçılarını
+  soran kısa tur (`GRUP_SORU_KISI` = 2 soru / kişi, eserler o seviyenin tanıtımda gösterilen eserleri). Grup bu tur bitince
+  tamam sayılır (tanışıp çıkan bitirmiş sayılmaz); yıldız vermez. Sonunda grup özeti: doğru sayısı, sıradaki grup ya da
+  Kolay / Orta, haritaya dönüş.
+- Durak penceresinin düzeni (Emre: "tasarımı değiştirmeden önce organizasyonu yapalım"): 1 · Tanış (grup kartları:
+  işaret, "1. grup · tanış · 6 soru / tamam", grubun yüzleri ve kısa adları, Orta açıksa "Orta eserleri"; küçük durakta
+  tek kart) → 2 · Sınav (Kolay / Orta / Zor merdiveni) → tek ana düğme → altta yalnız Akım sayfası. Açık durakta ayrı yüz
+  şeridi kalktı (adlar iki kez yazıyordu; "Orta tanıtımı · 1 · 2 · 3" alt düğmeleri sığmıyordu). Kilitli durakta şerit
+  duruyor. Renk ve görünüş sonraki işte.

@@ -83,6 +83,7 @@ import {
   tanismaGruplari,
   tanismaGrubuGoruldu,
   gorulenGruplar,
+  grupSoruSayisi,
   bolumKaydi,
   bolumAdi,
   bolumEserleri,
@@ -357,7 +358,11 @@ function turSec(kip, akim, adaylar) {
     const idler = adaylar.map((x) => x.id);
     // 1.89: kalabalık durağın tanışması gruplu; grup kimliği durağın bütün listesinden (sabit)
     const gruplar = tanismaGruplari(b ? b.sanatcilar : idler).map((g) => g.filter((x) => idler.includes(x)));
-    if (sv === 'tanitim' || sv === 'tanitim-orta') return { idler: [], tanisma: grup !== null && gruplar[grup] ? gruplar[grup] : idler };
+    if (sv === 'tanitim' || sv === 'tanitim-orta') {
+      // gruplu tanışma: ardından yalnız o grubu soran kısa pekiştirme
+      if (grup !== null && gruplar[grup]) return { idler: bolumKartlari(gruplar[grup], grupSoruSayisi(gruplar[grup].length), d.rng), tanisma: gruplar[grup] };
+      return { idler: [], tanisma: idler };
+    }
     // İş 30: Kolay'dan ve Orta'dan önce (ilk kez) o seviyenin eserleriyle tanışma; gruplu durakta yalnız görülmemiş grupların
     const kayit = bolumKaydi(d.ilerleme, id);
     const ilk = (sv === 'kolay' && !kayit.tanitim) || (sv === 'orta' && !kayit.tanitimOrta);
@@ -398,7 +403,7 @@ async function oturumKur(kip, akim) {
     rota: location.hash,
     oturum: new Oturum(tur.idler, { rng: d.rng }),
     esler: tur.esler || null, // Ö5: ikilinin eşi çeldirici olur
-    seviye: kip === 'bolum' ? (SEVIYE_NO[bolumBilgi(akim).sv] ?? 0) : null, // Ö9: dönem turunda seçilen alt seviye; İş 24: bölümün seviyesi
+    seviye: kip === 'bolum' ? (SEVIYE_NO[TANITIM_SEVIYE[bolumBilgi(akim).sv] || bolumBilgi(akim).sv] ?? 0) : null, // Ö9: dönem turunda seçilen alt seviye; İş 24: bölümün seviyesi
     bolumSay: sayimli(kip) ? { dogru: 0, toplam: 0 } : null, // İş 24: yalnız ilk denemeler sayılır
     tanisma: tur.tanisma && tur.tanisma.length ? { sira: tur.tanisma, konum: 0 } : null, // Ö6
     tanismaGorulen: {}, // tanışmada gösterilen eserler: soru bunlardan gelmesin
@@ -554,10 +559,12 @@ async function kartCiz() {
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
   if (o.kip === 'bolum' && o.tanisma && !o.tanitimIsaret) {
     o.tanitimIsaret = true;
-    const { id, sv, grup, b } = bolumBilgi(o.akim);
-    if (grup !== null && b) tanismaGrubuGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv], grup, tanismaGruplari(b.sanatcilar).length);
-    else tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
-    kaydet();
+    const { id, sv, grup } = bolumBilgi(o.akim);
+    // grup turunda işaret tur bitince (grupOzeti): tanışıp sorulara geçmeden çıkan grubu bitirmiş sayılmaz
+    if (grup === null) {
+      tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
+      kaydet();
+    }
   }
   if (o.oturum.bitti) return ozetCiz();
   const konum = o.oturum.konum;
@@ -1464,9 +1471,40 @@ function sergiyeEkle(o, dogruMu) {
   });
 }
 
+// Grup turunun sonu: grup tamam işaretlenir (yıldız yok); sıradaki grup ya da Kolay, haritaya dönüş
+function grupOzeti(o) {
+  const { id, sv, b, grup } = bolumBilgi(o.akim);
+  const seviye = TANITIM_SEVIYE[sv];
+  const gruplar = b ? tanismaGruplari(b.sanatcilar) : [];
+  if (!o.grupIsaret && b) {
+    o.grupIsaret = true;
+    tanismaGrubuGoruldu(d.ilerleme, id, seviye, grup, gruplar.length);
+    kaydet();
+  }
+  if (d.yarim && d.yarim.kimlik === o.kimlik) yarimSil();
+  const gorulen = new Set(gorulenGruplar(bolumKaydi(d.ilerleme, id), seviye, gruplar.length));
+  const sonraki = gruplar.findIndex((_, i) => !gorulen.has(i));
+  const yol = seviye === 'orta' ? 'tanitim-orta' : 'tanitim';
+  const { dogru = 0, toplam = 0 } = o.bolumSay || {};
+  const ileri =
+    sonraki >= 0
+      ? `<a class="hp-basla" href="#/pekistir/bolum/${id}/${yol}-${sonraki + 1}" data-test="grup-sonraki">${sonraki + 1}. grupla tanış${ikon('ileri', 20, 1.9)}</a>`
+      : `<a class="hp-basla" href="#/pekistir/bolum/${id}/${seviye}" data-test="grup-sonraki">${BOLUM_SV_AD[seviye]}’${seviye === 'orta' ? 'ya' : 'a'} başla${ikon('ileri', 20, 1.9)}</a>`;
+  ciz(`${pkUst('bolum', o.akim, '#/harita', 'Grup tamam')}
+    <div class="ozet grup-ozet" data-test="grup-ozet">
+      ${etiket(`${b ? bolumAdi(b) : 'Bölüm'} · ${grup + 1}. grup`, { vurgu: true })}
+      <b class="ad">${dogru} / ${toplam}</b>
+      <span class="meta">doğru</span>
+      <p class="okuma italik">${sonraki >= 0 ? `Sırada ${sonraki + 1}. grup var.` : `Bütün gruplarla tanıştın; ${BOLUM_SV_AD[seviye]} bütün durağı soracak.`}</p>
+      ${ileri}
+      <p><a class="dugme" href="#/harita" data-test="grup-haritaya">Haritaya dön</a></p>
+    </div>`);
+}
+
 function bolumOzeti(o) {
   const { id, sv, b, grup } = bolumBilgi(o.akim);
-  if (sv === 'tanitim' || grup !== null) {
+  if (grup !== null) return grupOzeti(o);
+  if (sv === 'tanitim') {
     d.oturum = null;
     return location.replace('#/harita');
   }
