@@ -158,6 +158,7 @@ B. TERS / YANLIŞ ÇEVİRİ: iddia alıntının söylediğinin tersini ya da ba�
 C. KESİNLEŞTİRME: alıntıdaki ihtiyat (probably, attributed, may, circa …) iddiada kaybolmuş ya da zayıflamış.
 D. YANLIŞ ESER: alıntı açıkça başka bir versiyon, kopya, eser ya da kişi hakkında.
 E. BÖLÜM: iddia yanlış bölümde (hikaye / gorunen / kompozisyon / anlam / onem).
+Her alıntının altında BAĞLAM satırı var: alıntının öznesi ya da konusu ("it", "the painting", "these additions") bağlamda açıkça görünüyorsa ve iddia onu doğru aktarıyorsa bu bulgu DEĞİLDİR. Bağlamdaki ek bilgi iddiaya girmişse ise A bulgusudur.
 Üslup, yazım, "daha iyi çeviri" önerme. Bulgu yoksa o eser için "temiz" yaz.
 
 Çıktı yalnız şu JSON olsun:

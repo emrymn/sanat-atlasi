@@ -24,10 +24,18 @@ for n in partiler:
         if not p.exists():
             continue
         d = json.loads(p.read_text(encoding='utf-8'))
+        kaynak = {f.name: re.sub(r'\s+', ' ', f.read_text(encoding='utf-8')) for f in (BURASI / 'kaynak' / e['anahtar']).glob('*.txt')}
         satir.append(f"\n### {d['anahtar']} · {d['baslik_tr']} ({e['sanatci']})")
         for c in d['iddialar']:
             say += 1
-            satir.append(f"{c['id']} [{c['bolum']}]{' [ihtiyat]' if c.get('ihtiyat') else ''}\n  İDDİA: {c['iddia']}\n  ALINTI: {c['alinti']}")
+            a = re.sub(r'\s+', ' ', c['alinti']).strip()
+            m = kaynak.get(c['kaynak'], '')
+            i = m.find(a)
+            bas = max(m.rfind('. ', 0, max(i - 150, 0)), 0) if i > 0 else 0
+            son = m.find('. ', i + len(a) + 100)
+            baglam = m[bas:son + 1 if son > 0 else len(m)].strip(' .') if i >= 0 else ''
+            satir.append(f"{c['id']} [{c['bolum']}]{' [ihtiyat]' if c.get('ihtiyat') else ''}\n  İDDİA: {c['iddia']}\n  ALINTI: {a}"
+                         + (f"\n  BAĞLAM (alıntının çevresi, yalnız kimden/neyden söz edildiğini anlamak için): …{baglam}…" if baglam and baglam != a else ''))
     if not say:
         continue
     (BURASI / 'gemini' / f'parti_{n:02d}.txt').write_text(komut + '\nLİSTE\n' + '\n'.join(satir) + '\n', encoding='utf-8')
