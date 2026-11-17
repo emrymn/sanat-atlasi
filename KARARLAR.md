@@ -2422,3 +2422,22 @@ Uygulanan (`js/ekranlar/basyapit.js`, saf mantık `js/basyapitSayfa.js`, stiller
 
 Silinen: eski başyapıt sayfası (`gozat.js`), ders ekranı (`eserDersiSayfasi`) ve stilleri (`.basyapit-ad…`, `.drsx*`).
 Testler: `tests/unit/basyapit_sayfa.test.mjs`, `tests/e2e/basyapit_sayfa.spec.js`; `eser_dersi.spec.js` yeni akışa göre.
+
+### İş 189 · Başyapıtlara 110 eser: seçim ve araştırma düzeni (uygulama değişmedi)
+
+Emre: "başyapıtlar kısmına daha fazla resim eklemek istiyorum; hikâyesi olan ve yüksek çözünürlüklü kaç resim var söyle, en az 100
+seç, araştırmayı Qwen'e yaptır, halüsinasyonu engelleyen net bir komut ver."
+
+- **Sayım:** "hikâyesi olan" = konusu `data/ikonografi.json`'da hikâyesiyle yazılı (`eser_konulari.json` `k`); "yüksek çözünürlük" =
+  R2'deki en büyük kopyanın uzun kenarı ≥ 3000 px. Depoda piksel boyutu tutulmadığı için 2508 dosyanın boyutu R2'den dosya başlığı
+  okunarak ölçüldü. Sonuç: 2771 hikâyeli eserin 2138'inin en büyük kopyası var, **1546'sı ≥ 3000 px**, 1496'sı başyapıt değil.
+- **Seçim:** 110 eser, `scripts/basyapit_arastirma/secim.json` (ölçüt ve elle çıkarılanlar `TALIMAT.md`'de). `yil`/`muze` önbellekten;
+  künye sayılmaz, araştırma doğrular.
+- **Düzen (koordinasyon/DEVIR.md §8'deki saklı yöntem):** kaynak metni modelden önce iner (`kaynak_indir.py`: Wikidata künyesi +
+  en/tr Wikipedia düz metni, sürüm numarası ve sha256). Qwen internete çıkmadan yalnız bu dosyalardan `ARASTIRMA.json` yazar: her olgu
+  kaynaktan birebir alıntıya bağlı. `dogrula.py` alıntının kaynakta geçtiğini, iddiadaki sayıların alıntıda olduğunu, ihtiyat
+  sözlerinin korunduğunu ve kaynağın değişmediğini denetler (uydurma alıntı, yanlış yıl ve kesinleştirme ile denendi: üçünü de yakaladı).
+  Betiğin göremediği "iddia alıntıyla aynı şeyi mi söylüyor" sorusunu Gemini denetler. Yakın okumayı araştıran model yazmaz; Claude
+  görsele bakarak, geçmiş iddialardan yazar.
+- Klasör `scripts/` altında: yayına gitmez (`yayinla.yml` `scripts`'i dışlar). Örnek: `eserler/Q2470123/ARASTIRMA.json` (elle yazıldı).
+- Kullanıcı aracısı `ATLAS_UA` ortam değişkeninden; varsayılanında e-posta yok.

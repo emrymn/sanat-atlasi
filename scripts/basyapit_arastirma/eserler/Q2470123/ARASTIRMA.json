@@ -1,0 +1,32 @@
+{
+ "anahtar": "Q2470123",
+ "baslik_tr": "Yudit Holofernes'in Başını Keserken",
+ "kunye": {
+  "sanatci": {"deger": "Caravaggio", "kaynak": "wikidata.txt", "alinti": "creator (P170): Caravaggio (Q42207)"},
+  "tarih": {"deger": "yaklaşık 1599–1600 ya da 1602", "kaynak": "enwiki.txt", "alinti": "painted in c. 1599 – 1600 or 1602", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)"},
+  "olcu": {"deger": "145 × 195 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 145 centimetre width (P2049): 195 centimetre"},
+  "yer": {"deger": "Galleria Nazionale d'Arte Antica, Roma", "kaynak": "enwiki.txt", "alinti": "is part of the collection of the Galleria Nazionale d'Arte Antica in Rome"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Konu, Kitab-ı Mukaddes'in deuterokanonik Yudit Kitabı'ndan gelir: Yudit, Asur komutanı Holofernes'i kandırarak halkına hizmet eder.", "kaynak": "enwiki.txt", "alinti": "The deuterocanonical Book of Judith tells how Judith served her people by deceiving Holofernes, the Assyrian General.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Yudit, Holofernes'i sarhoş eder, sonra kılıcını kapıp onu öldürür.", "kaynak": "enwiki.txt", "alinti": "Judith gets Holofernes drunk, then seizes her sword and slays him", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Dul Yudit bir şölenden sonra Holofernes'in çadırında kalmış, o sarhoş olup sızınca başını kesmiştir.", "kaynak": "enwiki.txt", "alinti": "the widow Judith stayed with the Assyrian general Holofernes in his tent after a banquet then decapitated him after he passed out drunk", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Caravaggio en dramatik an saydığı anı, baş kesmenin kendisini seçmiştir.", "kaynak": "enwiki.txt", "alinti": "Caravaggio chose what he thought the moment of greatest dramatic impact: the moment of decapitation itself.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Yudit'in hizmetçisi Abra, hanımının sağında durur; Yudit kolunu uzatıp bıçağı Holofernes'in boynuna dayar.", "kaynak": "enwiki.txt", "alinti": "Judith's maid Abra stands beside her mistress to the right as Judith extends her arm to hold a blade against Holofernes's neck", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Holofernes yüzükoyun yatar, başını katiline doğru çevirirken boynu bükülmüştür.", "kaynak": "enwiki.txt", "alinti": "lying on his stomach, neck contorted as he turns his head towards his assassin, he is vulnerable", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Yudit'in yüzünde kararlılık ile tiksinti bir aradadır.", "kaynak": "enwiki.txt", "alinti": "Judith's countenance in particular showing a mix of determination and repulsion", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Figürler sığ bir sahneye yerleştirilmiş, yandan teatral biçimde aydınlatılmış ve mürekkep karası bir fonun önünde yalıtılmıştır.", "kaynak": "enwiki.txt", "alinti": "The figures are set out in a shallow stage, theatrically lit from the side, isolated against the inky black background.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Röntgen incelemeleri, Caravaggio'nun çalışırken Holofernes'in başının yerini değiştirdiğini, gövdeden biraz ayırıp hafifçe sağa kaydırdığını göstermiştir.", "kaynak": "enwiki.txt", "alinti": "X-rays have revealed that Caravaggio adjusted the placement of Holofernes' head as he proceeded, separating it slightly from the torso and moving it minutely to the right.", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Yudit'in modeli muhtemelen Romalı kurtizan Fillide Melandroni'dir.", "kaynak": "enwiki.txt", "alinti": "The model for Judith is probably the Roman courtesan Fillide Melandroni", "ihtiyat": true},
+  {"id": "C11", "bolum": "anlam", "iddia": "Kan ve baş kesme ayrıntıları, Beatrice Cenci'nin 1599'daki halka açık idamında yaptığı gözlemlere dayanıyor olabilir.", "kaynak": "enwiki.txt", "alinti": "were possibly drawn from his observations of the public execution of Beatrice Cenci in 1599", "ihtiyat": true},
+  {"id": "C12", "bolum": "onem", "iddia": "Tablo 1950'de yeniden bulunmuştur.", "kaynak": "enwiki.txt", "alinti": "The painting was rediscovered in 1950", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Artemisia Gentileschi ve başka ressamlar bu yapıttan derinden etkilenmiştir.", "kaynak": "enwiki.txt", "alinti": "Artemisia Gentileschi and others were deeply influenced by this work.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Biyografi yazarı Baglione'nin aktardığına göre yapıtı Cenovalı banker Ottavio Costa sipariş etmiştir.", "kaynak": "enwiki.txt", "alinti": "account that the work was commissioned by Genoese banker Ottavio Costa", "ihtiyat": true},
+  {"id": "C15", "bolum": "onem", "iddia": "Milano'daki 'Dentro Caravaggio' sergisi, erken işlerinde görülmeyen alt çizimler nedeniyle 1602 tarihini önermiştir.", "kaynak": "enwiki.txt", "alinti": "suggests a date of 1602 on account of the use of light underlying sketches not seen in Caravaggio's early work", "ihtiyat": true}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1599 [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "painted in c. 1599 – 1600 or 1602"}}
+ ],
+ "bulunamadi": []
+}
