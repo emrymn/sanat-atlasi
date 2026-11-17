@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q59201",
+ "indirme": "2026-11-17T07:35:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q59201.json",
+   "revid": 2541476399,
+   "sha256": "ac1568607b2b92b03c999c6bc37864bdd34fc74419c482b410d7ca44ca233fad",
+   "karakter": 914
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Napoleon_Crossing_the_Alps&oldid=1384740892",
+   "baslik": "Napoleon Crossing the Alps",
+   "revid": 1384740892,
+   "surum_tarihi": "2026-11-09T22:21:38Z",
+   "sha256": "7d1ed432525e29820d9940ef08a1cf8669b34e75fd2b4f4e34d9f0223ca0833b",
+   "karakter": 16788
+  }
+ }
+}

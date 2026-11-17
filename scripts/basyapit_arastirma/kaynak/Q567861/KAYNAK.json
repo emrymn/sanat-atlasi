@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q567861",
+ "indirme": "2026-11-17T07:32:03+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q567861.json",
+   "revid": 2567152235,
+   "sha256": "8ea35e2825c303b1b0cdf714e5f25910ff73843ba324dd25044c7c2df216ec35",
+   "karakter": 871
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Last_Judgment_%28Michelangelo%29&oldid=1365309709",
+   "baslik": "The Last Judgment (Michelangelo)",
+   "revid": 1365309709,
+   "surum_tarihi": "2026-07-21T16:19:33Z",
+   "sha256": "1eb9806de8561aa806aaac2e488e5e77d31038b8cdf4cba8884e03b128b569f5",
+   "karakter": 34249
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=K%C4%B1yamet_G%C3%BCn%C3%BC_%28Michelangelo%29&oldid=34664566",
+   "baslik": "Kıyamet Günü (Michelangelo)",
+   "revid": 34664566,
+   "surum_tarihi": "2025-01-18T04:01:43Z",
+   "sha256": "e32a43ece99107f5ec2570fe9d8c50ebc3391fe4c6a2ceea6d1acf84dbe8c5f7",
+   "karakter": 1256
+  }
+ }
+}

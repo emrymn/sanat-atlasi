@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q269342",
+ "indirme": "2026-11-17T07:33:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q269342.json",
+   "revid": 2558638449,
+   "sha256": "616177bdc4df3b01c7c06e3c97877a887671728e195d04fc79af5aeeed0cfd11",
+   "karakter": 602
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Virgin_of_the_Rocks&oldid=1375400186",
+   "baslik": "Virgin of the Rocks",
+   "revid": 1375400186,
+   "surum_tarihi": "2026-09-17T15:23:40Z",
+   "sha256": "763467c1b41b868ace6a841ef5b4f06bd6516a9a2dbbdedc9444996ef40de591",
+   "karakter": 25605
+  }
+ }
+}

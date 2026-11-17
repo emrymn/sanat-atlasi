@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q533619",
+ "indirme": "2026-11-17T07:34:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q533619.json",
+   "revid": 2541442782,
+   "sha256": "ba4d3932bc0e13817279740ebebcff20b41322058d2c7a9b0c19876f60460beb",
+   "karakter": 1234
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Netherlandish_Proverbs&oldid=1378536885",
+   "baslik": "Netherlandish Proverbs",
+   "revid": 1378536885,
+   "surum_tarihi": "2026-10-04T22:54:26Z",
+   "sha256": "b673c3dfe1de80600ed69649202178c9880befafad55af8f233e61d71e577f39",
+   "karakter": 7195
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Felemenk_Atas%C3%B6zleri&oldid=35642621",
+   "baslik": "Felemenk Atasözleri",
+   "revid": 35642621,
+   "surum_tarihi": "2025-07-08T23:12:39Z",
+   "sha256": "c8cf5d427e9160ffc9be16cf526d776fb710052a0ca8abb7df5562e1929f317b",
+   "karakter": 3927
+  }
+ }
+}

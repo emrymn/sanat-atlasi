@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q563727",
+ "indirme": "2026-11-17T07:33:17+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q563727.json",
+   "revid": 2569274932,
+   "sha256": "9df8f4061f18016ddcfc4b416fbb479313a8daae8e4a3587ec84975a2093d67c",
+   "karakter": 1436
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Virgin_and_Child_with_Saint_Anne_%28Leonardo%29&oldid=1375405509",
+   "baslik": "The Virgin and Child with Saint Anne (Leonardo)",
+   "revid": 1375405509,
+   "surum_tarihi": "2026-09-17T15:56:11Z",
+   "sha256": "17cbbe149e2cd0d1fa927a5726772dfb67bcc2cf4934ade1fd7f394e865ea7e9",
+   "karakter": 6930
+  }
+ }
+}
