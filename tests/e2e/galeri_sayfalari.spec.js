@@ -24,7 +24,7 @@ test('Başyapıtlar: dönem hapları, sahne ve duvar; dönem seçilince o dönem
   expect(await tasma(page)).toBeLessThanOrEqual(0);
   // dönem: "… eserin hepsi" düğmesi o dönemin hapını seçer, sayfa değişmez
   const hepsi = page.locator('[data-test="by-hepsi"]').first();
-  const n = Number((await hepsi.innerText()).match(/(\d+) eserin hepsi/)[1]);
+  const n = Number((await hepsi.getAttribute('aria-label')).match(/(\d+) eserin hepsi/)[1]);
   await hepsi.click();
   await expect(page).toHaveURL(/#\/basyapitlar$/);
   await expect(haplar.nth(1)).toHaveAttribute('aria-pressed', 'true');

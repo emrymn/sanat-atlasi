@@ -7,7 +7,7 @@ import { sanatciEserleri } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, gorselOrani } from '../gorsel.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
-import { basyapitBul, eserEslestir } from '../basyapit.js';
+import { basyapitBul, eserEslestir, gorunenBaslik } from '../basyapit.js';
 import { ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
 import { hikayeHtml } from '../hikaye.js';
 import { bolgeBul } from '../harita.js';
@@ -107,9 +107,9 @@ export async function basyapitSayfasi(kodlu, { derin = false } = {}) {
       </div>
       <header class="bsy-bas">
         <a class="etiket vurgu bsy-akim" href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a>
-        <h1 class="bsy-ad" tabindex="-1">${kacis(b.baslik)}</h1>
+        <h1 class="bsy-ad" tabindex="-1">${kacis(gorunenBaslik(b))}</h1>
         <p class="bsy-meta"><a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>${b.tarih ? ` · ${kacis(b.tarih)}` : ''}${b.muze ? ` · ${kacis(b.muze)}` : ''}</p>
-        ${b.ozgun && !b.baslik.includes(b.ozgun) ? `<p class="bsy-ozgun">${kacis(b.ozgun)}</p>` : ''}
+        ${b.ozgun && gorunenBaslik(b) === b.baslik && !b.baslik.includes(b.ozgun) ? `<p class="bsy-ozgun">${kacis(b.ozgun)}</p>` : ''}
         ${b.ozet ? `<p class="bsy-giris">${kacis(b.ozet)}</p>` : ''}
       </header>
       <div class="bsy-akis" data-bsy-akis>
@@ -126,7 +126,7 @@ export async function basyapitSayfasi(kodlu, { derin = false } = {}) {
       }
       <p class="bsy-not">Metni Claude yazdı, ikinci bir istekte olgu ve dil açısından denetledi. Yine de hata görürsen not al.</p>
     </article>
-    <div class="bsy-cubuk" data-bsy-cubuk inert><button type="button" class="bsy-cubuk-dugme" data-bsy-geri aria-label="Geri">${ikon('geri', 22, 1.8)}</button><b>${kacis(b.baslik)}</b><button type="button" class="bsy-cubuk-dugme" data-bsy-basa aria-label="Başa dön"><span data-bsy-cubuk-resim></span></button></div>
+    <div class="bsy-cubuk" data-bsy-cubuk inert><button type="button" class="bsy-cubuk-dugme" data-bsy-geri aria-label="Geri">${ikon('geri', 22, 1.8)}</button><b>${kacis(gorunenBaslik(b))}</b><button type="button" class="bsy-cubuk-dugme" data-bsy-basa aria-label="Başa dön"><span data-bsy-cubuk-resim></span></button></div>
     <div class="bsy-sozcuk" data-bsy-sozcuk role="dialog" aria-label="Sözlük" hidden><div><span class="etiket vurgu">Sözlük</span><b data-bsy-sozcuk-ad></b><p data-bsy-sozcuk-tanim></p></div><button type="button" class="bsy-sozcuk-kapat" data-bsy-sozcuk-kapat aria-label="Kapat">${ikon('kapat', 18, 1.8)}</button></div></div>`);
 
   const sayfa = ekran.querySelector('[data-bsy-kok]');

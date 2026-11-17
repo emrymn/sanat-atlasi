@@ -1,5 +1,6 @@
-// 1.79.0 · Çalış · Ders düzeni: giriş (bugünün dersi, günlük tekrar, dersler, başka turlar), ders sayfası ve dört adım
-// (Gör → Öğren → Ayırt et → Sına). 390×844 (playwright.config.js).
+// 1.79.0 · Çalış · Ders düzeni: giriş (bugünün dersi, günlük tekrar, dersler, başka turlar), ders sayfası ve üç adım
+// (Gör → Öğren → Ayırt et), sonra "Haritaya geç". İş 191: Sına yok; dönemin harita durakları ders bitince açılır
+// (bu dosyada ders kapısı açık). 390×844 (playwright.config.js).
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { agiHazirla, ilerleme } from './ortak.js';
@@ -27,29 +28,31 @@ async function kayitDegistir(page, fn, veri) {
 }
 
 test.beforeEach(async ({ context }) => {
-  await agiHazirla(context);
+  await agiHazirla(context, { dersKapisi: true });
 });
 
 test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve başka turlar yerinde', async ({ page }) => {
   await page.goto('./#/pekistir');
-  await expect(page.getByRole('heading', { name: 'Çalış' })).toBeVisible();
-  // bugünün dersi: Yolculuk'taki "Buradasın" durağının akımı
-  const buradaki = await page.evaluate(async () => {
+  await expect(page.getByRole('heading', { name: 'Çalış', exact: true })).toBeVisible();
+  // bugünün dersi: haritanın beklediği ders (ilk durak, dersi bitmediği için kapalı)
+  const bekleyen = await page.evaluate(async () => {
     const m = await import('./js/ekranlar/harita.js');
-    const y = m.durumlar();
-    return y.durumlar.find((x) => x.id === y.simdiki).akim;
+    return m.durumlar().durumlar.find((x) => x.neden && x.neden.tur === 'ders').akim;
   });
   const kart = page.locator('[data-test="bugunun-dersi"]');
-  await expect(kart).toHaveAttribute('data-akim', buradaki);
-  expect(buradaki).toBe('Gotik');
+  await expect(kart).toHaveAttribute('data-akim', bekleyen);
+  expect(bekleyen).toBe('Gotik');
+  // üç adım ve sonda harita (ders bitmeden kapalı)
   await expect(kart.locator('.ders-adim')).toHaveCount(4);
+  await expect(kart.locator('[data-test="adim-harita"]')).toHaveClass(/kapali/);
+  await expect(kart.locator('[data-test="adim-sina"]')).toHaveCount(0);
   await expect(kart.locator('.ders-kapak-resim img')).toBeVisible();
   await expect(page.locator('[data-test="ders-konum"]')).toHaveText('Konu 11\'desin');
   // bekleyen tekrar kartları (Leitner) görünür: sayı sekme rozetiyle aynı
   const tekrar = page.locator('[data-test="karisik-dugme"]');
   await expect(tekrar).toBeVisible();
   await expect(tekrar.locator('[data-test="tur-sayi"]')).toHaveText(await page.locator('[data-test="sekme-rozet"]').textContent());
-  // dersler: açık akımlar dönem sırasıyla, her birinde dört çizgi; sonra kilitli ilk ders
+  // dersler: açık akımlar dönem sırasıyla, her birinde üç çizgi; sonra kilitli ilk ders
   const satirlar = page.locator('[data-test="ders-satir"]');
   const acik = await page.evaluate(() => {
     const d = window.__atlas;
@@ -58,12 +61,15 @@ test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve b
   });
   await expect(satirlar).toHaveCount(acik.length);
   expect(await satirlar.evaluateAll((l) => l.map((x) => x.dataset.akim))).toEqual(acik);
-  await expect(satirlar.first().locator('.ders-cizgiler i')).toHaveCount(4);
+  await expect(satirlar.first().locator('.ders-cizgiler i')).toHaveCount(3);
   await expect(page.locator('[data-test="ders-kilitli"]')).toContainText(/Konu \d+'[dt][ea] açılır/);
-  // eski turlar "Başka turlar"da
+  // eski turlar "Başka turlar" sekmesinde
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
+  await expect(page.getByRole('tabpanel', { name: 'Dersler', exact: true })).toBeHidden();
   const izgara = page.locator('[data-test="ek-turlar"] .tur-izgara');
   for (const t of ['donem-turu', 'bolum-turu', 'konu-turu']) await expect(izgara.locator(`[data-test="${t}"]`)).toBeVisible();
   expect(await tasma(page)).toBeLessThanOrEqual(0);
+  await page.getByRole('tab', { name: 'Dersler', exact: true }).click();
   // dokunma hedefleri en az 44 px
   for (const s of ['.ders-adim', '[data-test="ders-devam"]', '.ders-tekrar-git', '[data-test="ders-satir"]']) {
     for (const b of await page.locator(s).evaluateAll((l) => l.map((e) => e.getBoundingClientRect().height))) expect(b, s).toBeGreaterThanOrEqual(44);
@@ -79,12 +85,15 @@ test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve b
   await page.locator('.ders-geri').click();
   await expect(page).toHaveURL(/#\/pekistir$/);
 
-  // ders sayfası: dört adımın hepsi dokunulur (kilit yok)
+  // ders sayfası: üç adımın hepsi dokunulur (kilit yok); Sına'nın yerinde kapalı "Haritaya geç"
   await satirlar.first().click();
   await expect(page).toHaveURL(/#\/pekistir\/ders\/Gotik$/);
   await expect(page.getByRole('heading', { name: 'Gotik', level: 1 })).toBeVisible();
-  await expect(page.locator('[data-test="ders-adim"]')).toHaveCount(4);
-  const ekranlar = { gor: '[data-test="ders-gor"]', ogren: '[data-test="ders-ogren"]', ayirt: '[data-test="ders-ayirt"]', sina: '[data-test="sanatci-secenekleri"]' };
+  await expect(page.locator('[data-test="ders-adim"]')).toHaveCount(3);
+  const harita = page.locator('[data-test="ders-harita"]');
+  await expect(harita).toHaveAttribute('data-acik', 'false');
+  await expect(harita).toContainText('Üç adımı bitirince dönemin durakları açılır');
+  const ekranlar = { gor: '[data-test="ders-gor"]', ogren: '[data-test="ders-ogren"]', ayirt: '[data-test="ders-ayirt"]' };
   for (const [adim, secici] of Object.entries(ekranlar)) {
     await page.goto(GOTIK);
     await page.locator(`[data-test="ders-adim"][data-adim="${adim}"]`).click();
@@ -268,102 +277,64 @@ test('Ayırt et: karşılaştırma cümlesi olmayan ikili cümlesiz, iki eser ve
   throw new Error('cümlesiz ikili ekrana gelmedi');
 });
 
-// Sına'nın bütün kartlarını cevaplar; dogruMu(sıra) → o kart doğru mu cevaplansın
-async function sinayiBitir(page, dogruMu) {
-  const cevaplar = [];
-  for (let i = 0; i < 40; i++) {
-    if (await page.locator('[data-test="ders-sina-ozet"]').count()) break;
-    await expect(page.locator('[data-test="sanatci-secenekleri"] button:not([disabled])')).toHaveCount(4);
-    const { id, tekrar } = await page.evaluate(() => ({ id: window.__atlas.oturum.kart.id, tekrar: window.__atlas.oturum.oturum.simdiki.tekrar }));
-    const dogru = tekrar ? true : dogruMu(cevaplar.length);
-    if (!tekrar) cevaplar.push({ id, dogru });
-    const secici = dogru ? `[data-sanatci="${id}"]` : `[data-sanatci]:not([data-sanatci="${id}"])`;
-    await page.locator(`[data-test="sanatci-secenekleri"] button${secici}`).first().click();
-    await expect(page.locator('[data-test="sonuc"]')).toHaveAttribute('data-dogru', String(dogru));
-    await page.locator('[data-sonraki]').click();
-  }
-  await expect(page.locator('[data-test="ders-sina-ozet"]')).toBeVisible();
-  return cevaplar;
-}
+test('İş 191: ders bitmeden dönemin harita durakları kapalı; son adım bitince “Haritaya geç” ve duraklar açılır', async ({ page }) => {
+  await page.goto(GOTIK);
+  await expect(page.locator('[data-test="ders-harita"]')).toHaveAttribute('data-acik', 'false');
+  const ilkDurak = await page.evaluate(async () => (await import('./js/ekranlar/harita.js')).durumlar().durumlar[0]);
+  expect(ilkDurak.akim).toBe('Gotik');
+  expect(ilkDurak.acik).toBe(false);
+  expect(ilkDurak.neden).toEqual({ tur: 'ders', akim: 'Gotik' });
+  // durağın turu adresle de açılmaz
+  await page.goto(`./#/pekistir/bolum/${ilkDurak.id}/kolay`);
+  await expect(page.locator('[data-test="bolum-kapali"]')).toBeVisible();
+  // haritada: kilit nedeni ve derse dönüş
+  await page.goto('./#/harita');
+  await page.locator(`[data-test="harita-durak"][data-bolum="${ilkDurak.id}"]`).click();
+  await expect(page.locator('[data-test="harita-kilit"]')).toHaveText('Çalış’taki Gotik dersini bitirince açılır.');
+  await expect(page.locator('[data-test="harita-derse-git"]')).toHaveAttribute('href', '#/pekistir/ders/Gotik');
 
-test('Sına: aynı soru motoru, en zor şıklar; bitince ilerleme yazılır ve cevaplar Leitner kutularına işlenir', async ({ page }) => {
-  await page.goto(`${GOTIK}/sina`);
-  await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);
-  await expect(page.getByRole('heading', { name: 'Bu eser kimin?' })).toBeVisible();
-  const acikSayisi = await page.evaluate(() => {
-    const d = window.__atlas;
-    const k = new Set(d.ilerleme.islenen);
-    return d.sanatcilar.filter((s) => s.akim === 'Gotik' && k.has(s.konu)).length;
-  });
-  const soru = Math.max(6, Math.min(12, acikSayisi));
-  await expect(page.locator('[data-test="sayac"]')).toHaveText(`1 / ${soru}`);
-  // şıklar en zor düzende: dördü de aynı akımdan (Gotik'te yeterince sanatçı var), tekrarsız
-  const siklar = await page.evaluate(() => window.__atlas.oturum.kart.secenekler.map((id) => window.__atlas.harita.get(id).akim));
-  expect(siklar).toEqual(['Gotik', 'Gotik', 'Gotik', 'Gotik']);
-  expect(new Set(await page.evaluate(() => window.__atlas.oturum.kart.secenekler)).size).toBe(4);
-  // ilk kart yanlış: "Neden?" ve Öğren'e dönüş; kart Leitner'de baştan
-  const ilk = await page.evaluate(() => window.__atlas.oturum.kart.id);
-  await page.locator(`[data-test="sanatci-secenekleri"] button:not([data-sanatci="${ilk}"])`).first().click();
-  await expect(page.locator('[data-test="ders-neden"]')).toContainText('Neden?');
-  await expect(page.locator('[data-test="ders-ogrene-don"]')).toHaveAttribute('href', '#/pekistir/ders/Gotik/ogren');
-  await expect(page.locator('[data-test="seviye-ders"]')).toHaveText(`Gotik dersi · Sına · geçmek için ${Math.ceil(soru * 0.75)} / ${soru} doğru`);
-  expect((await ilerleme(page)).skorlar[ilk].sanatci.kutu).toBe(0);
-  expect((await dersKaydi(page)).sina).toBeUndefined(); // tur bitmeden ders ilerlemesi yazılmaz
-  await page.locator('[data-sonraki]').click();
-  // kalanların hepsi doğru
-  const cevaplar = await sinayiBitir(page, () => true);
-  const ozet = page.locator('[data-test="ders-sina-ozet"]');
-  const oran = (soru - 1) / soru;
-  await expect(ozet).toHaveAttribute('data-gecti', String(oran >= 0.75));
-  expect(Number(await ozet.getAttribute('data-oran'))).toBeCloseTo(oran, 2);
-  await expect(ozet).toContainText(`${soru - 1} / ${soru}`);
-  // ilerleme: ilk denemelerin doğru oranı; %75'i geçtiği için adım bitti
-  const kayit = (await dersKaydi(page)).sina;
-  expect(kayit.i).toBeCloseTo(oran, 2);
-  expect(kayit.t).toBe(bugun());
-  // Leitner: doğru cevaplananların kutusu ilerledi, günün kartları sayıldı
-  const il = await ilerleme(page);
-  for (const c of cevaplar) expect(il.skorlar[c.id].sanatci.sonraki, c.id).toBeTruthy();
-  expect(cevaplar.some((c) => c.id !== ilk && il.skorlar[c.id].sanatci.kutu >= 1)).toBe(true);
-  expect(il.gunluk.kart).toBeGreaterThanOrEqual(soru);
-  // yarım oturum olarak saklanmaz
-  await page.locator('[data-test="ders-ozet-don"]').click();
-  await expect(page).toHaveURL(/#\/pekistir\/ders\/Gotik$/);
-  await expect(page.locator('[data-test="ders-adim"][data-adim="sina"]')).toHaveClass(/bitti/);
+  // Gör ve Öğren bitmiş; son adım Ayırt et
   await page.goto('./#/pekistir');
-  await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);
-});
-
-test('Sına: %75 altında adım bitmez, en iyi sonuç tutulur; tekrar denenince artar ama düşmez', async ({ page }) => {
+  await kayitDegistir(page, 'i.dersler = veri;', { Gotik: { gor: { i: 1, t: '2026-11-10' }, ogren: { i: 1, t: '2026-11-11' } } });
+  await page.goto(`${GOTIK}/ayirt`);
+  for (let i = 0; i < 20 && !(await page.locator('[data-test="ders-adim-son"]').count()); i++) {
+    const sec = page.locator('[data-test="ders-ikili"] [data-ayirt-sec]').first();
+    if (await page.locator('[data-test="ders-fark"]').count()) await page.locator('[data-test="ayirt-ileri"]').click();
+    else await sec.click();
+  }
+  const son = page.locator('[data-test="ders-adim-son"]');
+  await expect(son).toHaveAttribute('data-adim', 'ayirt');
+  await expect(page.locator('[data-test="ders-bitti"]')).toContainText('Ders tamam');
+  await expect(page.locator('[data-test="ders-sonraki-adim"]')).toHaveCount(0);
+  await page.locator('[data-test="ders-haritaya-gec"]').click();
+  await expect(page).toHaveURL(/#\/harita$/);
+  const sonra = await page.evaluate(async () => {
+    const y = (await import('./js/ekranlar/harita.js')).durumlar();
+    return { acik: y.durumlar[0].acik, simdiki: y.simdiki, ilk: y.durumlar[0].id };
+  });
+  expect(sonra.acik).toBe(true);
+  expect(sonra.simdiki).toBe(sonra.ilk);
+  // ders sayfası ve Çalış: ders bitti, düğme haritaya götürür
+  await page.goto(GOTIK);
+  await expect(page.locator('[data-test="ders-harita"]')).toHaveAttribute('data-acik', 'true');
+  await expect(page.locator('[data-test="ders-devam"]')).toHaveAttribute('href', '#/harita');
+  await expect(page.locator('[data-test="ders-devam"]')).toHaveText('Haritaya geç');
+  await page.goto(`./#/pekistir/bolum/${ilkDurak.id}/kolay`);
+  await expect(page.locator('[data-test="bolum-kapali"]')).toHaveCount(0);
+  // eski Sına adresi dersin sayfasına gider
   await page.goto(`${GOTIK}/sina`);
-  // yarısı yanlış
-  await sinayiBitir(page, (i) => i % 2 === 0);
-  const ozet = page.locator('[data-test="ders-sina-ozet"]');
-  await expect(ozet).toHaveAttribute('data-gecti', 'false');
-  const ilkOran = Number(await ozet.getAttribute('data-oran'));
-  expect(ilkOran).toBeLessThan(0.75);
-  let kayit = (await dersKaydi(page)).sina;
-  expect(kayit.i).toBeCloseTo(ilkOran, 2);
-  expect(kayit.t ?? null).toBeNull(); // bitmedi: bitiş günü yok
-  // tekrar: hepsi yanlış → kayıt düşmez
-  await page.locator('[data-test="ders-sina-tekrar"]').click();
-  await sinayiBitir(page, () => false);
-  await expect(ozet).toHaveAttribute('data-oran', '0.000');
-  await expect(ozet).toContainText(`en iyi sonucun %${Math.round(ilkOran * 100)}`);
-  kayit = (await dersKaydi(page)).sina;
-  expect(kayit.i).toBeCloseTo(ilkOran, 2);
+  await expect(page.locator('[data-test="ders-adimlar"]')).toBeVisible();
 });
 
 test('yedekle → geri yükle: ders ilerlemesi korunur', async ({ page, context }) => {
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="bugunun-dersi"]')).toBeVisible();
-  const dersler = { Gotik: { gor: { i: 1, t: '2026-11-10' }, ogren: { i: 0.429 }, sina: { i: 0.889, t: '2026-11-12' } }, 'Erken Rönesans': { ayirt: { i: 0.333 } } };
+  const dersler = { Gotik: { gor: { i: 1, t: '2026-11-10' }, ogren: { i: 0.429 } }, 'Erken Rönesans': { ayirt: { i: 0.333 } } };
   await kayitDegistir(page, 'i.dersler = veri;', dersler);
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="adim-gor"]')).toHaveClass(/bitti/);
   await expect(page.locator('[data-test="adim-ogren"] .ders-halka')).toHaveText('3/7');
-  await expect(page.locator('[data-test="adim-sina"]')).toHaveClass(/bitti/);
 
   await page.goto('./#/ayarlar');
   await page.getByRole('button', { name: 'Yedekle', exact: true }).click();
@@ -387,7 +358,7 @@ test('yedekle → geri yükle: ders ilerlemesi korunur', async ({ page, context 
   await page.getByRole('button', { name: 'Geri yükle' }).click();
   await expect(page.locator('#geri-mesaj')).toContainText('Yedek yüklendi');
   expect((await ilerleme(page)).dersler).toEqual(dersler);
-  // ekranda da: Gör ve Sına tamam, Öğren kaldığı yerden (IV. özellik)
+  // ekranda da: Gör tamam, Öğren kaldığı yerden (IV. özellik)
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="adim-gor"]')).toHaveClass(/bitti/);
   await expect(page.locator('[data-test="adim-ogren"] .ders-halka')).toHaveText('3/7');
@@ -398,33 +369,35 @@ test('yedekle → geri yükle: ders ilerlemesi korunur', async ({ page, context 
   await expect(page.locator('[data-test="ders-adim-baslik"]')).toHaveText('Öğren · IV / VII');
 });
 
-test('Gör verisi olmayan ders üç adımla gösterilir; Gör adresi yürüyüş uydurmaz', async ({ page }) => {
+test('Gör verisi olmayan ders iki adımla gösterilir; Gör adresi yürüyüş uydurmaz', async ({ page }) => {
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="bugunun-dersi"]')).toBeVisible();
   await kayitDegistir(page, 'i.islenen = veri;', Array.from({ length: 80 }, (_, i) => i + 1));
   await page.goto('./#/pekistir/ders/Dada');
   const adimlar = page.locator('[data-test="ders-adimlar"]');
-  await expect(adimlar).toHaveAttribute('data-adim-sayisi', '3');
-  expect(await page.locator('[data-test="ders-adim"]').evaluateAll((l) => l.map((e) => e.dataset.adim))).toEqual(['ogren', 'ayirt', 'sina']);
-  await expect(page.locator('[data-test="gor-yok"]')).toContainText('üç adım');
+  await expect(adimlar).toHaveAttribute('data-adim-sayisi', '2');
+  expect(await page.locator('[data-test="ders-adim"]').evaluateAll((l) => l.map((e) => e.dataset.adim))).toEqual(['ogren', 'ayirt']);
+  await expect(page.locator('[data-test="gor-yok"]')).toContainText('iki adım');
+  await expect(page.locator('[data-test="ders-harita"]')).toContainText('İki adımı bitirince');
   await expect(page.locator('[data-test="ders-devam"]')).toHaveAttribute('data-adim', 'ogren');
-  // listede de üç çizgi
+  // listede de iki çizgi
   await page.goto('./#/pekistir');
-  await expect(page.locator('[data-test="ders-satir"][data-akim="Dada"] .ders-cizgiler i')).toHaveCount(3);
-  await expect(page.locator('[data-test="ders-satir"][data-akim="Gotik"] .ders-cizgiler i')).toHaveCount(4);
+  await expect(page.locator('[data-test="ders-satir"][data-akim="Dada"] .ders-cizgiler i')).toHaveCount(2);
+  await expect(page.locator('[data-test="ders-satir"][data-akim="Gotik"] .ders-cizgiler i')).toHaveCount(3);
   await expect(page.locator('[data-test="ders-kilitli"]')).toHaveCount(0);
   // Gör adresi elle açılırsa: yakında notu, yürüyüş yok
   await page.goto('./#/pekistir/ders/Dada/gor');
   await expect(page.locator('[data-test="gor-yok"]')).toContainText('Gör adımı yakında');
   await expect(page.locator('[data-test="ders-gor"]')).toHaveCount(0);
-  // üç adım bitince ders biter
-  await kayitDegistir(page, 'i.dersler = veri;', { Dada: { ogren: { i: 1, t: '2026-11-13' }, ayirt: { i: 1, t: '2026-11-13' }, sina: { i: 0.8, t: '2026-11-13' } } });
+  // iki adım bitince ders biter
+  await kayitDegistir(page, 'i.dersler = veri;', { Dada: { ogren: { i: 1, t: '2026-11-13' }, ayirt: { i: 1, t: '2026-11-13' } } });
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="ders-satir"][data-akim="Dada"]')).toHaveClass(/bitti/);
 });
 
 test('eski turlar “Başka turlar”da: Döneme göre sayfası karışık turu, günlük hedefi ve salonları tutar', async ({ page }) => {
   await page.goto('./#/pekistir');
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
   await page.locator('[data-test="ek-turlar"] [data-test="donem-turu"]').click();
   await expect(page).toHaveURL(/#\/pekistir\/donem$/);
   await expect(page.getByRole('heading', { name: 'Turlar' })).toBeVisible();
@@ -436,6 +409,29 @@ test('eski turlar “Başka turlar”da: Döneme göre sayfası karışık turu,
   await page.locator('.pk-ust [data-geri]').click();
   await expect(page).toHaveURL(/#\/pekistir$/);
   await expect(page.locator('[data-test="bugunun-dersi"]')).toBeVisible();
+});
+
+test('Çalışma masası: klavye sekmeleri, görsel ızgara ve azaltılmış hareket', async ({ page }) => {
+  await page.goto('./#/pekistir');
+  const dersler = page.getByRole('tab', { name: 'Dersler', exact: true });
+  const turlar = page.getByRole('tab', { name: 'Başka turlar' });
+  await expect(dersler).toHaveAttribute('aria-selected', 'true');
+  await dersler.focus();
+  await page.keyboard.press('ArrowRight');
+  await expect(turlar).toBeFocused();
+  await expect(turlar).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#calis-dersler-panel')).toBeHidden();
+  await expect(page.locator('[data-test="bolum-turu"]')).toBeVisible();
+  await page.keyboard.press('Home');
+  await expect(dersler).toBeFocused();
+  await expect(page.locator('#calis-turlar-panel')).toBeHidden();
+  const kartlar = page.locator('[data-test="ders-satir"]');
+  const [ilk, ikinci] = await kartlar.evaluateAll((l) => l.slice(0, 2).map((e) => { const r = e.getBoundingClientRect(); return { x: Math.round(r.left), y: Math.round(r.top) }; }));
+  expect(ilk.y).toBe(ikinci.y);
+  expect(ikinci.x).toBeGreaterThan(ilk.x);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  expect(await kartlar.first().evaluate((e) => getComputedStyle(e.parentElement).animationName)).toBe('none');
+  expect(await tasma(page)).toBeLessThanOrEqual(0);
 });
 
 test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör’de kamera anında yerine geçer', async ({ page }) => {

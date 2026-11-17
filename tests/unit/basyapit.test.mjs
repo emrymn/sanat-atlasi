@@ -52,3 +52,12 @@ test('öne çıkanlar: hikâyesi olanlar başta, tekrar yok, açık sanatçılar
   assert.equal(oneCikanlar(l.slice(6), new Set(), acikMi, 3).length, 4);
   assert.equal(oneCikanlar(l, new Set(l.map((b) => b.anahtar)), acikMi, 3).length, 4);
 });
+
+test('gorunenBaslik: parantez özgün adın tekrarıysa atılır, açıklayıcı parantez kalır', async () => {
+  const { gorunenBaslik } = await import('../../js/basyapit.js');
+  assert.equal(gorunenBaslik({ baslik: 'Arnolfini Portresi (Arnolfini Portrait)', ozgun: 'Arnolfini Portrait' }), 'Arnolfini Portresi');
+  assert.equal(gorunenBaslik({ baslik: 'Elçiler (The Ambassadors)', ozgun: 'Elçiler' }), 'Elçiler');
+  assert.equal(gorunenBaslik({ baslik: 'Ognissanti Madonnası (Tahtta Meryem)', ozgun: 'Madonna Enthroned' }), 'Ognissanti Madonnası (Tahtta Meryem)');
+  assert.equal(gorunenBaslik({ baslik: 'Kabus', ozgun: 'Kabus' }), 'Kabus');
+  assert.equal(gorunenBaslik({ baslik: 'Nedimeler (Las Meninas)' }), 'Nedimeler (Las Meninas)');
+});

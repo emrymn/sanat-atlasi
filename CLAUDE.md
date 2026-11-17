@@ -77,6 +77,8 @@ Storage: IndexedDB (or localStorage for the small progress object). Home-screen 
 
 ## 8. Design
 
+**Current design language: `TASARIM_DILI.md` (Emre approved it, Nov 2026). It overrides the palette and fonts below; follow it for every new or redesigned screen.**
+
 Calm, readable, warm paper look — same family as his study pages:
 - Sepya (default): background `#F1E8D6`, surface `#F8F2E6`, ink `#352B21`, secondary ink `#6B5D4D`, rule `#D9CBB2`, accent gold `#9A6B1F`, right `#2C6E49`, wrong `#A23B2A`.
 - Koyu: background `#1D1A17`, surface `#26221E`, ink `#EFE7DA`, accent `#D8B36A`.

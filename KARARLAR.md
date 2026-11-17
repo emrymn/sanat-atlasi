@@ -2574,3 +2574,78 @@ denetiminde çıkarılanlar: Poussin'de üçgen kompozisyon yorumu, Ingres'te "P
 Manet'de "uzun süre", Cortona'da predella sayısı ve perspektifin Âdem ile Havva'ya götürdüğü, Perugino'da "ayaklarını
 tutuyor" ve figür sayısı, Parmigianino'da "öncü" ve 1527, Giulio Romano'da "Hristiyanlığın zaferi" ve "duvar halısı".
 Birim 388/388. 264 başyapıt, 1497 nokta. Seçilen 110 yeni başyapıtın hepsi yazıldı (parti 2'nin atlanan Dürer'i 1.83.4'te eklenmişti).
+Main ile birleştirmede sürüm 1.87.1 oldu (main 1.87.0'daydı).
+
+### İş 189 · Galeri ve Çalış başyapıt sayfasının dilinde; tasarım dili kaydedildi (sürüm 1.84.0)
+
+Emre: "galeri kısmının genel dış görünüşünü de tasarla… ve çalış kısmının"; tuvaldeki dört ekrandan sonra "diğer kısımları
+da yap" ve "bunu yapacaksın" (tuvaldekinin aynısı); "bu tasarım tarzını kaydet". Tasarım dili `TASARIM_DILI.md`'de;
+`CLAUDE.md` §8 ona yönlendirir.
+
+- **Zemin:** Galeri'nin bütün bölümleri (`gozAtUst`) ve Çalış (`dersMenusu`) sabit hale + dönemin silik sembolleriyle
+  (`sayfaZemini`, `akiminDonemi`, `simdikiDonem`, `zeminDonemi`; `js/ekranlar/ortak.js`). Akımlar'da desen çarkla birlikte
+  değişir (çarkın kendi deseni kalktı); Başyapıtlar'da seçili dönemin ya da öne çıkan ilk eserin; Konular ve Zaman'da en
+  son açılan akımın; Çalış'ta bugünün dersinin.
+- **Galeri üstü:** ikon hapları ("Açılan hap", 1.76.3) yerine tek cam kap içinde yazılı dört sekme; arama ve kalp cam.
+- **Akımlar:** "Akımlar çarkı · N / 28 salon açık" satırı kalktı; kemerin altında pirinç küçük yüzyıl yazısı (sıra numarası
+  sayaçta), 40 px akım adı, "9 sanatçının hepsi açık" (hepsi açıksa), tek dolu "Salona gir".
+- **Başyapıtlar:** dönem hapları alt çizgili sekme; öne çıkan eser 400 px yüksek, 28 px köşeli kart, üst yazısı cümle
+  düzeninde; dönem başlıklarında Roma rakamı yok, "… eserin hepsi" düğmesi başlığın sağında "N eser ›".
+- **Çalış:** bugünün dersi tek büyük kart; adım halkaları ince çizgiye döndü (sayı ekran okuyucuda kalır); resimli Gör
+  düğmesi (1.81.0) tek dolu düğme oldu. Günlük tekrar tek satır: deste · "Günlük tekrar", "N kart", süre ve dağılım · ok.
+  Dersler tek gruplu liste; bugünün dersi "Bugün" yazar. Başlık kaybolunca üstte cam "Çalış" çubuğu.
+- İşaretleme ve `data-test`'ler korundu; değişiklik çoğunlukla `css/app.css` sonundaki İş 189 bloğunda.
+
+### İş 190 · Akımlar çarkı "Işık": disk kalktı, çark zemine kaynaştı (sürüm 1.85.0)
+
+Emre (ekran görüntüsünde çarkı ve altındaki "Bütün akımlar · Tümünü gör" satırını çizerek): "bu çok aykırı duruyor, bunu
+sayfayla daha bütünsel hale getir". Tasarım tuvalinde üç yön gösterildi (https://claude.ai/artifact/JTuhBqFyPDha19CMZJaGch):
+A · Ufuk çizgisi, B · Işık, C · Cam şerit. Emre B'yi seçti.
+
+- Dolu disk (yüzey rengi, altın kenar, gölge) yok: iki uca doğru silinen ince pirinç yay ve altında bulanık bir ışık halkası
+  (`.cark-disk`, `::after`); çarkın bütünü kenarlarda yumuşakça kaybolur (`.cark-teker` maskesi).
+- Altından tablonun ışığı gibi yükselen hafif pirinç parıltı (`.cark-teker::before`); elmas ibre yerine parlayan küçük nokta.
+- Çentikler ve akım adları soluk; sayaç 28 px; "Çarkı parmağınla çevir" kalktı.
+- "Bütün akımlar · Tümünü gör" satırı kalktı: düğme çarkın içinde, sayacın altında "Bütün akımlar ⌄" (açılınca "Gizle").
+- Gündüz paletinde disk bandın rengini alıyordu; artık zemin görünür, sayı ve çentikler kâğıdın mürekkebiyle.
+- Geometri tuvaldeki gibi: yarıçap 320 → 700 px (`CARK_R`), iki akım arası 21° → 12° (`CARK_ADIM`; komşu adlar
+  köşelerde), çentikler iki derecede bir ince çizgi; ışık çarkın kenarına varmadan söner. Sayı çentiklerin altında.
+- Sekme çubuğu da tuvaldeki gibi (Emre: "bu kısmı da aynı yap"): sade cam, ince açık kenar, yumuşak gölge; seçili sekme
+  düz, hafif açık bir hap (pirinç parıltı ve renkli kenar kalktı); Gündüz paletinde bandın rengi yerine kâğıt camı. Hızlı
+  ayar dili aynı camda. Çalış'taki bekleyen kart rozeti ve hızlı ayar dili tuvalde yoktu; işlevleri olduğu için kaldı.
+
+### İş 191 · Sına kalktı, ders haritanın ön koşulu (sürüm 1.86.0)
+
+Emre: "çalış kısmında sına olmasın artık sistemi değiştirelim bu ders kısmını geçmeden haritada ilerleyemeyelim yani dersi
+bitirmeyi bir ön koşul olarak değiştirelim sına kısmı yerine de haritaya geçin". Sonra: "detaylara yakınlaştırıp
+uzaklaştıran bir animasyon vardı o kalkmış onu geri getir".
+
+- Ders üç adım: Gör → Öğren → Ayırt et (Gör'ü olmayan derste iki). `DERS_ADIMLARI` artık `['gor','ogren','ayirt']`;
+  `SINA_GECME`, `sinaSoruSayisi` ve soru motorundaki `kip: 'ders'` kalktı. Eski kayıtlardaki `sina` alanı doğrulamada atılır.
+  Eski adres `#/pekistir/ders/<akım>/sina` dersin sayfasına gider. (`data/ders_kaynaklari.json`daki `sina` alanı veri; dokunulmadı.)
+- Sına'nın yerinde "Haritaya geç": ders sayfasında dördüncü satır (ders bitmeden soluk ve kilitli, "Üç adımı bitirince
+  dönemin durakları açılır"), Çalış kartında dördüncü halka "Harita", son adımın kapanışında "Haritaya geç" düğmesi.
+  Ders bitince ders sayfasının ana düğmesi de haritaya götürür.
+- Haritanın ön koşulu (`js/bolum.js` `bolumDurumlari(…, dersBitti)`): bir dönemin durakları, o dönemin dersi bitmeden açılmaz
+  (neden `{ tur: 'ders' }`, metin "Çalış’taki X dersini bitirince açılır.", durak penceresinde "Derse git"). Kurs ve önceki
+  dönemin %60'ı kuralları aynen sürer; kurs nedeni önce gösterilir. Dersi olmayan dönemde kapı yok.
+- Geriye dönük kilit yok: haritada kaydı olan (en az bir seviyesi oynanmış) dönemin durakları, dersi bitmese de açık kalır;
+  Emre'nin ilerlemesi kaybolmaz. Ders kaynağı yüklenemezse (çevrimdışı ilk açılış) kapı uygulanmaz.
+- Ders kaynağı `js/ekranlar/dersVerisi.js`te bir kez yüklenir (açılışta arka planda); harita ekranı ve bölüm turu onu bekler,
+  böylece harita durumu eşzamanlı kalır.
+- "Bugünün dersi": haritanın beklediği ders (durağı yalnız dersi yüzünden kapalı dönem) önce; yoksa "Buradasın" durağının dönemi.
+- Testler: tarayıcı testlerinin çoğunda ders kapısı kapalı (`window.__atlasDersKapisiYok`, tanışma ekranındaki gibi);
+  `tests/e2e/ders.spec.js` açar.
+- Yakınlaşma animasyonu (Emre: "detaylara yakınlaştırıp uzaklaştıran animasyon … geri getir"; sonra "animasyonu buraya
+  ekleyecektin" diyerek bugünün dersi kapağını gösterdi): Çalış'ta bugünün dersi kapağındaki resim yavaşça ayrıntıdan
+  ayrıntıya yakınlaşıp uzaklaşır (`kapak-yuru`, 16 sn, en çok 1,9 kat; hareket azaltılınca durur). Gör düğmesi tuvaldeki
+  düz hapta kaldı. "Bugünün dersi" etiketi kapakta açık renk (paletin rengi resimde okunmuyordu).
+
+### İş 192 · Durum çubuğunun arkasındaki şerit hafifledi (sürüm 1.87.0)
+
+Emre (Bugün'de saatin ve "17 KASIM"ın arkasındaki bandı çizerek): "burdaki haleyi azalt, çok dikkat dağıtıyor, her yerde var".
+Açık temalarda iOS'un beyaz durum çubuğu yazısı okunsun diye `body::before` güvenli alanı dolu bir renkle boyuyordu; renkli
+Gündüz'de bu renk paletin bandıydı (mor-kahve, kırmızı …). Artık nötr koyu, %42 saydam ve aşağı doğru silinen bir gölge
+(`--durum-cubugu: rgba(31, 27, 23, 0.42)`, `linear-gradient`). Saat yine okunur; renkli şerit yok. Gece temasında zaten yoktu.
+- Sonra (Emre: "buğu gibi olan şeyi kastediyorum"): her sayfanın tepesinde tablonun renginde yayılan hale (`.hale`, `.bsy-hale`,
+  İş 188–189'da her sayfaya eklenmişti) üçte birine indi (sol üst %32/%28 → %11/%10, sağ alt %14 → %5). Dönem sembolleri aynı.

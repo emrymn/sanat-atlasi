@@ -44,10 +44,10 @@ test('Gündüz rengi: sabit palet seçmek temayı Gündüz yapar ve kalıcıdır
   expect(await kok(page, '--bg')).toBe('#f3e1b0');
   expect(await page.locator('meta[name="theme-color"]').getAttribute('content')).toBe('#f3e1b0');
   expect((await ilerleme(page)).ayarlar).toMatchObject({ tema: 'gunduz', gunduzRenk: 'safran' });
-  // çark paletin bandında
+  // İş 190: çarkın dolu diski yok (zemin görünür); paletin bandında değil, yalnız ince yay
   await page.goto('./#/gozat');
   await expect(page.locator('.cark-disk')).toBeVisible();
-  expect(await page.locator('.cark-disk').evaluate((el) => getComputedStyle(el).backgroundColor)).toBe('rgb(37, 48, 106)');
+  expect(await page.locator('.cark-disk').evaluate((el) => getComputedStyle(el).backgroundColor)).toBe('rgba(0, 0, 0, 0)');
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-gunduz', 'safran');
   await page.goto('./#/ayarlar');
