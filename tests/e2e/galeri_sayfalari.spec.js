@@ -19,7 +19,7 @@ test('Başyapıtlar: dönem hapları, sahne ve duvar; dönem seçilince o dönem
   await expect(page.locator('[data-test="gz-bolumler"] a[aria-current="page"]')).toHaveAttribute('data-test', 'basyapit-giris');
   const listeler = page.locator('[data-test="basyapit-listesi"]');
   expect(await listeler.count()).toBe(sayilar.length);
-  for (const n of await listeler.evaluateAll((l) => l.map((u) => u.children.length))) expect(n).toBeLessThanOrEqual(2);
+  for (const n of await listeler.evaluateAll((l) => l.map((u) => u.children.length))) expect(n).toBeLessThanOrEqual(7); // 1.88.2: en çok 6 eser + "Hepsine bak"
   await expect(page.locator('[data-test="basyapit-listesi"] [data-basyapit-kucuk] img').first()).toBeAttached();
   expect(await tasma(page)).toBeLessThanOrEqual(0);
   // dönem: "… eserin hepsi" düğmesi o dönemin hapını seçer, sayfa değişmez
@@ -87,31 +87,21 @@ test('Konular: Başyapıtlar düzeni — Hepsi sekmesi, sahne, gruplarda iki kar
   await expect(page.locator('[data-test="konu"] h1')).toBeVisible();
 });
 
-test('Başyapıtlar ve Konular: içeriği yana kaydırınca komşu sekme; sahnede kaydırma sekmeyi değiştirmez', async ({ page, context }) => {
+test('Başyapıtlar ve Konular: Hepsi\'de her bölümün kartları yana kayan sıra (6 kart + Hepsine bak); sayfa yana taşmaz', async ({ page, context }) => {
   await agiHazirla(context);
-  const cdp = await context.newCDPSession(page);
-  const kaydir = async (x0, x1, y) => {
-    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y }] });
-    for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / 6, y }] });
-    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  };
-  for (const [adres, serit, nitelik] of [
-    ['./#/basyapitlar', '[data-test="by-donemler"] button', 'data-by-donem'],
-    ['./#/konular', '[data-test="konu-grup-serit"] button', 'data-kn-grup'],
-  ]) {
+  for (const adres of ['./#/basyapitlar', './#/konular']) {
     await page.goto(adres);
-    const haplar = page.locator(serit);
-    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
-    // sahnenin üstünde kaydırma: sekme yerinde
-    const sahne = await page.locator('[data-test="by-sahne"]').boundingBox();
-    await kaydir(300, 120, sahne.y + sahne.height / 2);
-    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
-    // sahnenin altında: sıradaki sekme, sonra geri
-    const ikinci = await haplar.nth(1).getAttribute(nitelik);
-    await kaydir(300, 120, 760);
-    await expect(page.locator(`${serit}[aria-pressed="true"]`)).toHaveAttribute(nitelik, ikinci);
-    await kaydir(120, 300, 760);
-    await expect(haplar.first()).toHaveAttribute('aria-pressed', 'true');
+    const sira = page.locator('.by-duvar.serit').first();
+    await expect(sira.locator('li').nth(2)).toBeAttached();
+    expect(await sira.evaluate((u) => u.scrollWidth > u.clientWidth + 100)).toBe(true);
+    // en çok 6 kart ve sonda "Hepsine bak"; ona dokununca o bölümün sekmesi
+    expect(await sira.locator('li:not(.serit-son)').count()).toBeLessThanOrEqual(6);
+    const son = sira.locator('[data-test="serit-hepsi"]');
+    await expect(son).toContainText('Hepsine bak');
+    expect(await tasma(page)).toBeLessThanOrEqual(0);
+    await son.scrollIntoViewIfNeeded();
+    await son.click();
+    await expect(page.locator('[aria-pressed="true"]').first()).not.toContainText('Hepsi');
   }
 });
 

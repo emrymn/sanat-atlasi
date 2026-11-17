@@ -2665,3 +2665,16 @@ Emre: "konulardan içine girince altına kaydırınca çöküyor". Neden: "Aynı
 (Meryem ve Çocuk'ta 336) aynı anda opaklık/kayma geçişine giriyordu; Chromium'da ~1050 birleştirme katmanı ölçüldü, iOS'ta
 bellek dolup WebKit süreci kapanıyordu. Artık yalnız ilk 8 durak canlanır, gerisi düz görünür ve ekran dışındayken çizilmez
 (`content-visibility: auto`); katman sayısı 65'e indi. "Bütün resimler" duvarında da yalnız ilk 12 kart canlanır.
+
+## 1.88.2 · Görüntüleyicide sanatçı bağlantısı; Bugün'de sis ve "Hayatı"
+- Kaydırma: Emre'nin istediği, "Hepsi"de dönem / konu grubu başlığının altındaki kartların yana kaydırılmasıydı (ekran
+  görüntüsüyle gösterdi), sekmeler arası kaydırma değil. 1.88.1'deki sekme kaydırması kaldırıldı; "Hepsi"de her bölüm
+  `.by-duvar.serit`: ilk 6 eser yana kayan sıra (iki kart ve sonrakinin ucu, snap), sonunda "Hepsine bak" oku o bölümün
+  sekmesini açar (Emre: "hepsini kaydırmaya gerek yok, 5 6 tane olsun, sonunda ok").
+- Görüntüleyici altyazısında "Sanatçı: <ad> →" (Konu bağlantısının üstünde, aynı davranış: görüntüleyici kapanır, sayfa
+  geçer). Sanatçının kendi sayfasından açılan eserde gösterilmez. Ad `app.js`'te bağlanan bulucudan gelir
+  (`sanatciBulucuKoy`), görüntüleyici `ekranlar/ortak.js`'e bağımlı olmasın diye.
+- Bugün'ün tepesindeki sis: resmin üstündeki tablonun gölge tonundaki perde %55 → %20 ve %20 → %12'de biter; durum çubuğu
+  gölgesi %42 → %24.
+- "Hayatı" düğmesi: dört seçenek ekranda gösterildi, Emre "A · Koyu cam"ı seçti (tablonun gölge tonunda %50 buğulu cam, açık
+  yazı, ince açık kenar). Eski düğme Gündüz'de açık zemine açık yazıydı (sahne `--ink`'i açığa çeviriyor), okunmuyordu.

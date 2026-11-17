@@ -7,6 +7,8 @@ import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
 import { kursKonulari } from './kurs.js';
 import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl, kopyalariAyarla, cikarilanlariAyarla, duzeltmeleriAyarla, ortakAtiflariAyarla } from './eserler.js';
+import { sanatciBulucuKoy } from './goruntuleyici.js';
+import { bilinenAd } from './adlar.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, gunlukGuncelle } from './depo.js';
@@ -98,6 +100,10 @@ async function basla() {
   d.konular = konular;
   d.kursKonulari = kursKonulari(konular, sanatcilar, turler, tumSanatcilar);
   d.harita = new Map(sanatcilar.map((s) => [s.id, s]));
+  sanatciBulucuKoy((sid) => {
+    const s = d.harita.get(sid);
+    return s ? bilinenAd(s.ad, d.kisaAdlar[s.id]) : null;
+  });
   d.akimSira = Object.fromEntries(d.akimlar.map((a) => [a.ad, a.sira]));
   dersKaynagi(); // İş 191: haritanın ön koşulu (ders bitti mi?) için arka planda
   d.akimRenk = Object.fromEntries(akimlar.map((a) => [a.ad, a.renk]));

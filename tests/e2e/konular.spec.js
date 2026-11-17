@@ -48,11 +48,21 @@ test('konular: Göz At → liste → konu sayfası; eserler yan yana; görüntü
   // sanatçı sayfasında bir eseri aç → Konu bağlantısı → konu sayfası
   await page.goto('./#/sanatci/j-m-w-turner');
   await page.locator('[data-eser]').first().click();
+  // sanatçının kendi sayfasında "Sanatçı:" bağlantısı yok
+  await expect(page.locator('[data-test="gor-sanatci"]')).toHaveCount(0);
   const bag = page.locator('[data-test="gor-konu"]');
   await expect(bag).toHaveText('Konu: TEST Konusu →');
   await bag.click();
   await expect(page.locator('.gor')).toHaveCount(0);
   await expect(page.locator('[data-test="konu"] h1')).toHaveText('TEST Konusu');
+  // 1.88.2: konu sayfasından açılan eserde "Sanatçı: … →" resmin sahibine götürür
+  await page.locator('[data-konu-eser]').first().click();
+  const sanatci = page.locator('[data-test="gor-sanatci"]');
+  await expect(sanatci).toContainText('Sanatçı:');
+  await expect(sanatci).toHaveAttribute('href', /#\/sanatci\//);
+  await sanatci.click();
+  await expect(page.locator('.gor')).toHaveCount(0);
+  await expect(page).toHaveURL(/#\/sanatci\//);
 });
 
 test('konu verisi yoksa boş mesaj', async ({ page, context }) => {
