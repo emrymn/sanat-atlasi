@@ -33,7 +33,7 @@ test.beforeEach(async ({ context }) => {
 
 test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve başka turlar yerinde', async ({ page }) => {
   await page.goto('./#/pekistir');
-  await expect(page.getByRole('heading', { name: 'Çalış' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Çalış', exact: true })).toBeVisible();
   // bugünün dersi: haritanın beklediği ders (ilk durak, dersi bitmediği için kapalı)
   const bekleyen = await page.evaluate(async () => {
     const m = await import('./js/ekranlar/harita.js');
@@ -426,7 +426,7 @@ test('Çalışma masası: klavye sekmeleri, görsel ızgara ve azaltılmış har
   await expect(dersler).toBeFocused();
   await expect(page.locator('#calis-turlar-panel')).toBeHidden();
   const kartlar = page.locator('[data-test="ders-satir"]');
-  const [ilk, ikinci] = await kartlar.evaluateAll((l) => l.slice(0, 2).map((e) => ({ x: e.offsetLeft, y: e.offsetTop })));
+  const [ilk, ikinci] = await kartlar.evaluateAll((l) => l.slice(0, 2).map((e) => { const r = e.getBoundingClientRect(); return { x: Math.round(r.left), y: Math.round(r.top) }; }));
   expect(ilk.y).toBe(ikinci.y);
   expect(ikinci.x).toBeGreaterThan(ilk.x);
   await page.emulateMedia({ reducedMotion: 'reduce' });
