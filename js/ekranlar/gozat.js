@@ -8,7 +8,7 @@ import { akimYuzyillari, ikon, yuzyil, roma } from '../tasarim.js';
 import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { temsilOlabilir, AKIM_KAPAK } from '../temsil.js';
-import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar } from '../basyapit.js';
+import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar, gorunenBaslik } from '../basyapit.js';
 import { ayrintilariAl, eserinAyrintisi } from '../ayrinti.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { akimKarsilastirmaAdresi } from '../akim.js';
@@ -16,6 +16,10 @@ import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA }
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
   jsonGetir,
+  sayfaZemini,
+  zeminDonemi,
+  akiminDonemi,
+  simdikiDonem,
   odakliGorsel,
   odagaKaydir,
   d,
@@ -139,7 +143,7 @@ function bsySahne(one) {
       ${one
         .map((b, i) => {
           const s = d.harita.get(b.sanatci);
-          return `<a class="by-sahne-kart${i ? '' : ' secili'}" href="${basyapitAdresi(b.anahtar)}" style="--i:${i}" data-by-slayt="${i}"><span class="by-sahne-resim" data-by-sahne-resim="${kacis(b.anahtar)}"></span><span class="by-sahne-golge" aria-hidden="true"></span><span class="by-sahne-rozet" data-by-sahne-rozet></span><span class="by-sahne-yazi"><small>Öne çıkan · ${kacis(s.akim)}</small><b>${kacis(b.baslik)}</b><span>${bsySanatci(b)}</span></span></a>`;
+          return `<a class="by-sahne-kart${i ? '' : ' secili'}" href="${basyapitAdresi(b.anahtar)}" style="--i:${i}" data-by-slayt="${i}"><span class="by-sahne-resim" data-by-sahne-resim="${kacis(b.anahtar)}"></span><span class="by-sahne-golge" aria-hidden="true"></span><span class="by-sahne-rozet" data-by-sahne-rozet></span><span class="by-sahne-yazi"><small>Öne çıkan · ${kacis(s.akim)}</small><b>${kacis(gorunenBaslik(b))}</b><span>${bsySanatci(b)}</span></span></a>`;
         })
         .join('')}
       ${n > 1 ? `<div class="by-noktalar">${one.map((_, i) => `<button type="button" data-by-nokta="${i}"${i ? '' : ' class="secili"'} style="--i:${i}" aria-label="${i + 1}. öne çıkan eser"><i></i></button>`).join('')}</div>` : ''}
@@ -160,6 +164,7 @@ function bsyGovdeCiz(liste, gruplar, hikayeli) {
   if (!secili) d.bsyDonem = null;
   for (const h of ekran.querySelectorAll('[data-by-donem]')) if (h.closest('.by-haplar')) h.setAttribute('aria-pressed', String((h.dataset.byDonem || null) === d.bsyDonem));
   const one = oneCikanlar(secili ? secili.l : liste, hikayeli, (b) => k.has(d.harita.get(b.sanatci).konu));
+  zeminDonemi(secili ? secili.bolge.id : one[0] ? akiminDonemi(d.harita.get(one[0].sanatci).akim) : '');
   const duvar = (l, sinif = '') => `<ul class="by-duvar${sinif}" data-test="basyapit-listesi">${l.map((b, i) => bsyKart(b, i, k)).join('')}</ul>`;
   govde.innerHTML = `${bsySahne(one)}${
     secili
@@ -167,10 +172,11 @@ function bsyGovdeCiz(liste, gruplar, hikayeli) {
         ${secili.akimlar.map(({ a, l }) => `<section class="by-bolum" data-gozcu><h3 class="by-akim" style="--akim:${akimRenk(a.ad)}"><span>${kacis(a.ad)}</span><small>${l.length}</small></h3>${duvar(l, ' ritim')}</section>`).join('')}`
       : gruplar
           .map(
-            ({ bolge, l }, gi) => `<section class="by-bolum" data-gozcu>
-          <header class="by-bas"><span class="by-no" aria-hidden="true">${ROMA[gi] || gi + 1}</span><h2><span class="vitrin-ad by-ad">${kacis(bolge.ad)}</span><small>${kacis(bolge.yuzyil)}</small></h2></header>
-          ${duvar(l.slice(0, 2))}
-          ${l.length > 2 ? `<button class="by-hepsi" type="button" data-by-donem="${bolge.id}" data-test="by-hepsi">${kacis(bolge.ad)} · ${l.length} eserin hepsi${ikon('ileri', 18, 1.6)}</button>` : ''}</section>`,
+            ({ bolge, l }) => `<section class="by-bolum" data-gozcu>
+          <header class="by-bas"><h2><span class="vitrin-ad by-ad">${kacis(bolge.ad)}</span><small>${kacis(bolge.yuzyil)}</small></h2>${
+            l.length > 2 ? `<button class="by-hepsi" type="button" data-by-donem="${bolge.id}" data-test="by-hepsi" aria-label="${kacis(bolge.ad)}: ${l.length} eserin hepsi">${l.length} eser${ikon('ileri', 16, 1.8)}</button>` : ''
+          }</header>
+          ${duvar(l.slice(0, 2))}</section>`,
           )
           .join('')
   }`;
@@ -307,8 +313,6 @@ function konuKartlari(l) {
     )
     .join('')}</ul>`;
 }
-
-const ROMA = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
 // Galeri sayfalarındaki giriş hareketi: [data-gozcu] öğesi ekrana girince .gorundu alır, CSS geçişleri oynar.
 // Hareket azaltılmışsa (ve otomatik testlerde) hepsi hemen görünür.
@@ -629,7 +633,7 @@ let sonGozAtBolumu = -1; // -1: Galeri'nin ana ekranından (ya da dışarıdan) 
 // 1.76.3 (Emre tuvalde "C · Açılan hap"ı seçti): alt sayfalarda başlık ile arama aynı satırda; altında dört ikon hapı.
 // Etkin hap genişleyip adını ve alt yazısını gösterir; bölüm değişince eski hap kapanır, yenisi açılır (CSS: hap-ac / hap-kapan).
 // Aramanın yanındaki kalp Koleksiyon'a (beğenilen eserler) götürür.
-export function gozAtUst(etkin) {
+export function gozAtUst(etkin, donem = simdikiDonem()) {
   const kol = (d.ilerleme.koleksiyon || []).length;
   const arama = `<a class="arama-hapi" href="#/ara" data-test="arama-hapi" aria-label="Sanatçı, eser, konu ara">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser ara</span></a>
     <a class="arama-kalp${kol ? ' dolu' : ''}" href="#/koleksiyon" data-test="gz-koleksiyon" aria-label="Beğendiklerin${kol ? ` (${kol} eser)` : ''}">${ikon('kalp', 20, 1.6)}</a>`;
@@ -643,7 +647,7 @@ export function gozAtUst(etkin) {
   const suruyor = hapGecis.i === i && gecen < HAP_GECIS_MS;
   const j = suruyor ? hapGecis.j : i;
   const sinif = !suruyor ? ' sabit' : j < 0 ? ' ilk' : '';
-  return `<div class="gz-ust" data-test="gz-ust">${ust('Galeri', '#/', { geriYok: true, sag: arama })}
+  return `${sayfaZemini(donem)}<div class="gz-ust" data-test="gz-ust">${ust('Galeri', '#/', { geriYok: true, sag: arama })}
     <nav class="bolumler${sinif}" aria-label="Galeri bölümleri" data-test="gz-bolumler"${suruyor && gecen > 0 ? ` style="--gec:-${gecen}ms"` : ''}>${GOZAT_BOLUMLERI.map(
       ([id, ad, hash, test, ik, alt], n) =>
         `<a href="${hash}" data-test="${test}"${id === etkin ? ' aria-current="page"' : ''}${n === j && j !== i ? ' class="kapanan"' : ''}>${ikon(ik, 20, 1.6)}<span class="bolum-yazi"><b>${ad}</b><small>${alt}</small></span></a>`,
@@ -668,7 +672,7 @@ function carkHtml(durumlar, acikSayi) {
           const ic = `<span class="cark-kemer"><span class="zaman-fon" data-zaman-fon aria-hidden="true"></span></span>
           <span class="cark-yazi">
             <span class="etiket vurgu"><span aria-hidden="true">${String(i + 1).padStart(2, '0')} · </span>${kacis(akimYuzyillari(uyeler, { roma: true }))}</span><b>${kacis(a.ad)}</b>
-            <span class="sayi">${a.acik ? `${a.acikSayisi} / ${a.toplam} sanatçı açık` : `<span class="kilit-notu">${ikon('kilit', 14)}Konu ${bulunmaEki(a.acilacagiKonu)} açılır</span>`}</span>
+            <span class="sayi">${a.acik ? (a.acikSayisi === a.toplam ? `${a.toplam} sanatçının hepsi açık` : `${a.acikSayisi} / ${a.toplam} sanatçı açık`) : `<span class="kilit-notu">${ikon('kilit', 14)}Konu ${bulunmaEki(a.acilacagiKonu)} açılır</span>`}</span>
             <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>
             ${a.acik ? `<span class="cark-gir" aria-hidden="true">Salona gir${ikon('ileri', 16, 1.8)}</span>` : ''}
           </span>`;
@@ -794,6 +798,7 @@ function carkKur() {
       no.textContent = String(sira + 1).padStart(2, '0');
       // 1.77.0: arka plandaki desen seçili akımın döneminin sembolleri (Emre: "her dönemin kendine uygun sembolleriyle")
       const donem = ogeler[sira] && ogeler[sira].dataset.donem;
+      zeminDonemi(donem);
       if (donem && kok.dataset.donem !== donem) {
         kok.dataset.donem = donem;
         kok.classList.remove('desen-gel');

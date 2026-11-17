@@ -197,7 +197,8 @@ test('Akımlar hapı Galeri\'nin ana ekranına götürür; çark ve bütün akı
   await expect(page.locator('.ust h1')).toHaveText(ad);
 });
 
-test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt ikon; arama başlığın yanında', async ({ page }) => {
+// İş 189: ikon hapları yerine tek cam kap içinde yazılı dört sekme (TASARIM_DILI.md); seçili olan dolu
+test('Bölüm sekmeleri: dördü de yazılı, 44 pt, ekrana sığar; seçili olan dolu; arama başlığın yanında', async ({ page }) => {
   for (const [adres, test] of [
     ['./#/gozat', 'akimlar-giris'],
     ['./#/basyapitlar', 'basyapit-giris'],
@@ -208,14 +209,15 @@ test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt iko
     const etkin = page.locator('.bolumler a[aria-current="page"]');
     await expect(etkin).toHaveAttribute('data-test', test);
     // sayfa "Yükleniyor…" → içerik diye yeniden çizilebilir; geçiş bitene dek yokla
-    await expect.poll(() => page.locator('.bolumler a:not([aria-current])').evaluateAll((l) => Math.max(...l.map((e) => Math.round(e.getBoundingClientRect().width))))).toBe(48);
-    await expect.poll(() => page.locator('.bolumler').evaluate((el) => el.getAnimations({ subtree: true }).filter((a) => a.playState === 'running').length)).toBe(0);
-    const kutular = await page.locator('.bolumler a').evaluateAll((l) => l.map((e) => ({ w: e.getBoundingClientRect().width, h: e.getBoundingClientRect().height, sag: e.getBoundingClientRect().right, etkin: e.hasAttribute('aria-current') })));
+    const kutular = await page.locator('.bolumler a').evaluateAll((l) =>
+      l.map((e) => ({ w: e.getBoundingClientRect().width, h: e.getBoundingClientRect().height, sag: e.getBoundingClientRect().right, yazi: e.querySelector('.bolum-yazi b').getBoundingClientRect().width, zemin: getComputedStyle(e).backgroundColor, etkin: e.hasAttribute('aria-current') })),
+    );
     for (const k of kutular) {
       expect(k.h).toBeGreaterThanOrEqual(44);
       expect(k.sag).toBeLessThanOrEqual(390.5);
-      if (k.etkin) expect(k.w).toBeGreaterThan(150);
-      else expect(Math.round(k.w)).toBe(48);
+      expect(k.yazi).toBeGreaterThan(0); // adı görünür
+      expect(k.yazi).toBeLessThanOrEqual(k.w); // ad kutusuna sığar
+      expect(k.zemin === 'rgba(0, 0, 0, 0)').toBe(!k.etkin); // yalnız seçili olan dolu
     }
     await expect(etkin.locator('.bolum-yazi')).toHaveCSS('opacity', '1');
     // arama başlıkla aynı satırda
@@ -225,11 +227,10 @@ test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt iko
     expect(Math.abs(ara.y + ara.height / 2 - (h1.y + h1.height / 2))).toBeLessThan(12);
     expect(ara.height).toBeGreaterThanOrEqual(44);
   }
-  // bölüm değişince eski hap kapanır, yenisi açılır
+  // bölüm değişince seçim yeni sekmeye geçer
   await page.locator('.bolumler [data-test="konu-giris"]').click();
   await expect(page).toHaveURL(/#\/konular$/);
   const yeni = page.locator('.bolumler a[aria-current="page"]');
   await expect(yeni).toHaveAttribute('data-test', 'konu-giris');
-  await expect.poll(async () => (await yeni.boundingBox()).width).toBeGreaterThan(150);
-  await expect.poll(async () => Math.round((await page.locator('.bolumler [data-test="zaman-giris"]').boundingBox()).width)).toBe(48);
+  await expect(page.locator('.bolumler [data-test="zaman-giris"]')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
 });

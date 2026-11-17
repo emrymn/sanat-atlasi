@@ -12,6 +12,7 @@ import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
+import { bolgeBul } from '../harita.js';
 import { adParcala } from '../adlar.js';
 import { paletGetir, tonlariGetir, renkTemasi, hexten, hsl, hsldenHex } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
@@ -92,6 +93,28 @@ export function islenen() {
   return islenenKume(d.ilerleme.islenen);
 }
 
+// İş 189: sayfa zemini (Galeri, Çalış; başyapıt sayfası kendi kurar). Tablonun rengindeki sabit hale (--vurgu-rgb) ve
+// eserin ya da akımın döneminin silik sembolleri (Akımlar çarkının desenleri). Bkz. TASARIM_DILI.md.
+export const akiminDonemi = (akim) => (akim && d.akimSira[akim] != null ? bolgeBul(d.akimSira[akim]).id : '');
+// En son açılan akımın dönemi (işlenen konulardaki en ileri akım); hiç yoksa ''
+export function simdikiDonem() {
+  const k = islenen();
+  let en = null;
+  for (const s of d.sanatcilar) if (k.has(s.konu) && d.akimSira[s.akim] != null && (!en || d.akimSira[s.akim] > d.akimSira[en])) en = s.akim;
+  return akiminDonemi(en);
+}
+export function sayfaZemini(donem = '') {
+  return `<div class="hale bsy-hale" aria-hidden="true"></div><div class="bsy-desen"${donem ? ` data-donem="${donem}"` : ''} aria-hidden="true"></div>`;
+}
+// Sayfa çizildikten sonra dönem değişince (çark dönünce, dönem seçilince) desen yumuşakça değişir
+export function zeminDonemi(donem) {
+  const el = ekran.querySelector('.bsy-desen');
+  if (!el || !donem || el.dataset.donem === donem) return;
+  el.dataset.donem = donem;
+  el.classList.remove('desen-gel');
+  void el.offsetWidth;
+  el.classList.add('desen-gel');
+}
 export function acikListe() {
   return acikSanatcilar(d.sanatcilar, islenen(), d.ilerleme.ekSanatcilar || []);
 }

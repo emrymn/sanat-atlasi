@@ -2422,3 +2422,23 @@ Uygulanan (`js/ekranlar/basyapit.js`, saf mantık `js/basyapitSayfa.js`, stiller
 
 Silinen: eski başyapıt sayfası (`gozat.js`), ders ekranı (`eserDersiSayfasi`) ve stilleri (`.basyapit-ad…`, `.drsx*`).
 Testler: `tests/unit/basyapit_sayfa.test.mjs`, `tests/e2e/basyapit_sayfa.spec.js`; `eser_dersi.spec.js` yeni akışa göre.
+
+### İş 189 · Galeri ve Çalış başyapıt sayfasının dilinde; tasarım dili kaydedildi (sürüm 1.84.0)
+
+Emre: "galeri kısmının genel dış görünüşünü de tasarla… ve çalış kısmının"; tuvaldeki dört ekrandan sonra "diğer kısımları
+da yap" ve "bunu yapacaksın" (tuvaldekinin aynısı); "bu tasarım tarzını kaydet". Tasarım dili `TASARIM_DILI.md`'de;
+`CLAUDE.md` §8 ona yönlendirir.
+
+- **Zemin:** Galeri'nin bütün bölümleri (`gozAtUst`) ve Çalış (`dersMenusu`) sabit hale + dönemin silik sembolleriyle
+  (`sayfaZemini`, `akiminDonemi`, `simdikiDonem`, `zeminDonemi`; `js/ekranlar/ortak.js`). Akımlar'da desen çarkla birlikte
+  değişir (çarkın kendi deseni kalktı); Başyapıtlar'da seçili dönemin ya da öne çıkan ilk eserin; Konular ve Zaman'da en
+  son açılan akımın; Çalış'ta bugünün dersinin.
+- **Galeri üstü:** ikon hapları ("Açılan hap", 1.76.3) yerine tek cam kap içinde yazılı dört sekme; arama ve kalp cam.
+- **Akımlar:** "Akımlar çarkı · N / 28 salon açık" satırı kalktı; kemerin altında pirinç küçük yüzyıl yazısı (sıra numarası
+  sayaçta), 40 px akım adı, "9 sanatçının hepsi açık" (hepsi açıksa), tek dolu "Salona gir".
+- **Başyapıtlar:** dönem hapları alt çizgili sekme; öne çıkan eser 400 px yüksek, 28 px köşeli kart, üst yazısı cümle
+  düzeninde; dönem başlıklarında Roma rakamı yok, "… eserin hepsi" düğmesi başlığın sağında "N eser ›".
+- **Çalış:** bugünün dersi tek büyük kart; adım halkaları ince çizgiye döndü (sayı ekran okuyucuda kalır); resimli Gör
+  düğmesi (1.81.0) tek dolu düğme oldu. Günlük tekrar tek satır: deste · "Günlük tekrar", "N kart", süre ve dağılım · ok.
+  Dersler tek gruplu liste; bugünün dersi "Bugün" yazar. Başlık kaybolunca üstte cam "Çalış" çubuğu.
+- İşaretleme ve `data-test`'ler korundu; değişiklik çoğunlukla `css/app.css` sonundaki İş 189 bloğunda.
