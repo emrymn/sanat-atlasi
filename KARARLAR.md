@@ -2523,3 +2523,16 @@ Doğum, Vermeer · Diana ve Nimfleri, Gauguin · Yeşil İsa; 58 nokta. Ingres't
 saptanarak kutulandı (Molière kutusu 6 nokta sınırı için çıkarıldı). İnce araştırmalı Bouguereau ve Mantegna'da hikâye
 `data/ikonografi.json`'dan. Kaynak denetiminde çıkarılanlar: Poussin'de "onarıldı", Mantegna'da Bellini tablosunun aynı müzede
 olduğu ve kuşun "uğursuz" yorumu, Gauguin'de Sarı İsa'yla "öncü" kıyası. Birim 388/388; uçtan uca 13/13. 224 başyapıt, 1279 nokta.
+
+### İş 189b · parti 8: 10 yakın okuma (sürüm 1.83.9)
+
+Perugino · Meryem'in Evliliği, Bellini · Çölde Aziz Franciscus, El Greco · Aziz Martin ve Dilenci, Velázquez · Çarmıha
+Gerilmiş İsa, Watteau · Pierrot, Tiepolo · Lekesiz Gebelik, Turner · Dido Kartaca'yı İnşa Ederken, Millais · Isabella,
+El Greco · Çobanların Tapınması, Cabanel · Zehirleri Deneyen Kleopatra; 55 nokta. İnce araştırmalı Perugino, El Greco
+(Aziz Martin) ve Çobanların Tapınması'nda hikâye `data/ikonografi.json`'dan (Perugino'da çiçek açan değnek, Altın Efsane).
+Görsel–eser uyumu: hepsi araştırılan versiyon (Cabanel'de 1887 Anvers tablosu, El Greco'da Washington'daki 193,5 × 103 cm
+tuval). Müze künyeden alındı (Cabanel: secim.json'daki "Royal Academy" yerine Anvers). Kaynak denetiminde çıkarılanlar:
+Bellini'de "Venedikli", El Greco'da "çağının bir soylusu gibi", Tiepolo'da "kısa süre sonra", Cabanel'de kraliçenin
+"gölgede" olduğu; Watteau'da eşeğin ipini tutma yerine yalnız görüleni yazıldı. El Greco'nun Aziz Martin'indeki sağ alttaki
+Yunanca yazı imza olarak kaynakta geçmediği için kullanılmadı. Kırpıntıda düzeltilen kutular: Bellini kurukafa ve aziz,
+Watteau Doktor ve kırmızılı adam, Tiepolo hilal ve ayna, Millais ceviz kıracağı. Birim 388/388. 234 başyapıt, 1334 nokta.
