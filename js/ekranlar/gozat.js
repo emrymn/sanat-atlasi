@@ -120,6 +120,15 @@ async function basyapitBaglariniDoldur(id) {
 // (hikâyesi olanlar başta; "Tam" harekette kendi kendine değişir), devamı iki sütun duvar. "Hepsi"de her dönemden iki
 // eser ve "hepsi" düğmesi; bir dönem seçilince o dönemin bütün eserleri akımlarına göre. Sayfa değişmez: gövde yerinde çizilir.
 
+// 1.88.2 (Emre: kartları gösterip "kaydırma yok hala"): "Hepsi"de her dönemin / konu grubunun altındaki kartlar yana
+// kayan bir sıra; ilk SERIT_SAYI eser ve sırayı bitiren "Hepsine bak" oku (Emre: "5 6 tane olsun, sonunda ok").
+// Sekmeler arası yana kaydırma kalktı.
+const hepsineBak = (nitelik, id, ad, n, birim) =>
+  n > SERIT_SAYI
+    ? `<li class="serit-son"><button type="button" ${nitelik}="${id}" data-test="serit-hepsi" aria-label="${kacis(ad)}: ${n} ${birim}in hepsi"><span class="serit-ok">${ikon('ileri', 22, 1.6)}</span><b>Hepsine bak</b><small>${n} ${birim}</small></button></li>`
+    : '';
+const SERIT_SAYI = 6;
+
 function bsyGruplari(liste) {
   const gruplar = [];
   for (const bolge of BOLGELER) {
@@ -168,7 +177,7 @@ function bsyGovdeCiz(liste, gruplar, hikayeli) {
     if (h.closest('.by-haplar')) h.setAttribute('aria-pressed', String((h.dataset.byDonem || null) === d.bsyDonem));
   const one = oneCikanlar(secili ? secili.l : liste, hikayeli, (b) => k.has(d.harita.get(b.sanatci).konu));
   zeminDonemi(secili ? secili.bolge.id : one[0] ? akiminDonemi(d.harita.get(one[0].sanatci).akim) : '');
-  const duvar = (l, sinif = '') => `<ul class="by-duvar${sinif}" data-test="basyapit-listesi">${l.map((b, i) => bsyKart(b, i, k)).join('')}</ul>`;
+  const duvar = (l, sinif = '', son = '') => `<ul class="by-duvar${sinif}" data-test="basyapit-listesi">${l.map((b, i) => bsyKart(b, i, k)).join('')}${son}</ul>`;
   govde.innerHTML = `${bsySahne(one)}${
     secili
       ? `<header class="by-bas by-bas-donem"><h2><span class="by-ad">${kacis(secili.bolge.ad)}</span><small>${kacis(secili.bolge.yuzyil)}</small></h2><span class="by-say">${secili.l.length} eser</span></header>
@@ -181,7 +190,7 @@ function bsyGovdeCiz(liste, gruplar, hikayeli) {
               ? `<button class="by-hepsi" type="button" data-by-donem="${bolge.id}" data-test="by-hepsi" aria-label="${kacis(bolge.ad)}: ${l.length} eserin hepsi">${l.length} eser${ikon('ileri', 16, 1.8)}</button>`
               : ''
           }</header>
-          ${duvar(l.slice(0, 2))}</section>`,
+          ${duvar(l.slice(0, SERIT_SAYI), ' serit', hepsineBak('data-by-donem', bolge.id, bolge.ad, l.length, 'eser'))}</section>`,
           )
           .join('')
   }`;
@@ -256,39 +265,6 @@ function bsySahneBagla(govde) {
   );
 }
 
-// Sekmeli galeri sayfaları (Başyapıtlar, Konular): içeriği yana kaydırınca komşu sekme. Sahnenin içinde başlayan
-// kaydırma sahneye, ekranın kenarından başlayan kaydırma geri hareketine kalır. Yeni içerik kaydırma yönünden gelir.
-function yanaKaydir(govde, git) {
-  let bas = null;
-  govde.addEventListener(
-    'touchstart',
-    (e) => {
-      const x = e.touches[0].clientX;
-      bas = e.touches.length === 1 && x > 28 && x < innerWidth - 28 && !e.target.closest('[data-by-sahne]') ? { x, y: e.touches[0].clientY } : null;
-    },
-    { passive: true },
-  );
-  govde.addEventListener(
-    'touchend',
-    (e) => {
-      if (!bas) return;
-      const dx = e.changedTouches[0].clientX - bas.x;
-      const dy = e.changedTouches[0].clientY - bas.y;
-      bas = null;
-      if (Math.abs(dx) < 64 || Math.abs(dx) < 2 * Math.abs(dy)) return;
-      git(dx < 0 ? 1 : -1);
-    },
-    { passive: true },
-  );
-}
-
-function yonluGir(govde, yon) {
-  govde.classList.remove('kn-sagdan', 'kn-soldan');
-  if (!yon) return;
-  void govde.offsetWidth;
-  govde.classList.add(yon > 0 ? 'kn-sagdan' : 'kn-soldan');
-}
-
 export async function basyapitListesi() {
   gununRengi();
   ciz(`${gozAtUst('basyapitlar')}<p class="ikincil kucuk">Yükleniyor…</p>`);
@@ -312,12 +288,9 @@ export async function basyapitListesi() {
     if (h) haplar.scrollTo({ left: h.offsetLeft - 24, behavior: hareketAz() ? 'auto' : 'smooth' });
   };
   hapiGoster();
-  const sira = ['', ...gruplar.map((g) => g.bolge.id)];
   const sec = (id) => {
-    const yon = sira.indexOf(id || '') - sira.indexOf(d.bsyDonem || '');
     d.bsyDonem = id || null;
     bsyGovdeCiz(liste, gruplar, hikayeli);
-    yonluGir(kok.querySelector('[data-by-govde]'), yon);
     hapiGoster();
     // gövde yeniden çizildi: sayfa hapların hizasına gelir (haplar yapışkan, yerinde kalır)
     const tepe = kok.getBoundingClientRect().top + scrollY;
@@ -326,10 +299,6 @@ export async function basyapitListesi() {
   kok.addEventListener('click', (e) => {
     const h = e.target.closest('[data-by-donem]');
     if (h) sec(h.dataset.byDonem);
-  });
-  yanaKaydir(kok.querySelector('[data-by-govde]'), (adim) => {
-    const hedef = sira[sira.indexOf(d.bsyDonem || '') + adim];
-    if (hedef !== undefined) sec(hedef);
   });
 }
 
@@ -370,7 +339,7 @@ function knKart(k, i) {
   return `<li style="--i:${i % 6}" data-gozcu><a class="konu-kart vitrin-kart by-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="by-cerceve"><span class="by-resim" data-konu-kapak></span></span><span class="by-yazi"><b>${kacis(k.ad)}</b><span>${k.eserler.length} eser</span><small class="vitrin-akim">${kacis(TUR_AD[k.tur])}</small></span></a></li>`;
 }
 
-const knDuvar = (l, sinif = '') => `<ul class="by-duvar${sinif}" data-test="konu-listesi">${l.map(knKart).join('')}</ul>`;
+const knDuvar = (l, sinif = '', son = '') => `<ul class="by-duvar${sinif}" data-test="konu-listesi">${l.map(knKart).join('')}${son}</ul>`;
 
 // Galeri sayfalarındaki giriş hareketi: [data-gozcu] öğesi ekrana girince .gorundu alır, CSS geçişleri oynar.
 // Hareket azaltılmışsa (ve otomatik testlerde) hepsi hemen görünür.
@@ -425,13 +394,13 @@ function knGovdeCiz(gruplar) {
               ? `<button class="by-hepsi" type="button" data-kn-grup="${t}" data-test="by-hepsi" aria-label="${kacis(TUR_AD[t])}: ${l.length} konunun hepsi">${l.length} konu${ikon('ileri', 16, 1.8)}</button>`
               : ''
           }</header>
-          ${knDuvar(l.slice(0, 2))}</section>`,
+          ${knDuvar(l.slice(0, SERIT_SAYI), ' serit', hepsineBak('data-kn-grup', t, TUR_AD[t], l.length, 'konu'))}</section>`,
           )
           .join('')
   }`;
   bsySahneBagla(govde);
   gorunceOynat();
-  konuKapaklariniDoldur(secili ? secili.l : gruplar.flatMap((g) => g.l.slice(0, 2)).concat(one));
+  konuKapaklariniDoldur(secili ? secili.l : gruplar.flatMap((g) => g.l.slice(0, SERIT_SAYI)).concat(one));
 }
 
 async function konularCiz(t) {
@@ -455,13 +424,10 @@ async function konularCiz(t) {
     if (h) haplar.scrollTo({ left: h.offsetLeft - 24, behavior: hareketAz() ? 'auto' : 'smooth' });
   };
   hapiGoster();
-  const sira = ['', ...gruplar.map((g) => g.t)];
   const sec = (grup) => {
-    const yon = sira.indexOf(grup || '') - sira.indexOf(d.konuGrup || '');
     d.konuGrup = grup || null;
     history.replaceState(history.state, '', d.konuGrup ? `#/konular/${d.konuGrup}` : '#/konular');
     knGovdeCiz(gruplar);
-    yonluGir(kok.querySelector('[data-kn-govde]'), yon);
     hapiGoster();
     const tepe = kok.getBoundingClientRect().top + scrollY;
     if (scrollY > tepe) scrollTo({ top: tepe, behavior: 'auto' });
@@ -469,10 +435,6 @@ async function konularCiz(t) {
   kok.addEventListener('click', (e) => {
     const h = e.target.closest('[data-kn-grup]');
     if (h) sec(h.dataset.knGrup);
-  });
-  yanaKaydir(kok.querySelector('[data-kn-govde]'), (adim) => {
-    const hedef = sira[sira.indexOf(d.konuGrup || '') + adim];
-    if (hedef !== undefined) sec(hedef);
   });
 }
 

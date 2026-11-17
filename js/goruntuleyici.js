@@ -8,6 +8,13 @@ import { NEDENLER } from './bildirim.js';
 import { noktaOdagi, noktaYeri, yakinlasmaSiniri } from './ayrinti.js';
 import { hikayeHtml, karakterKaydi } from './hikaye.js';
 
+// 1.88.2 (Emre: "resmin sahibine gidilebilsin"): altyazıda "Sanatçı: … →". Ad, uygulama verisi yüklenince bağlanan
+// bulucudan gelir (sid → ad); bulucu yoksa ya da sanatçı tanınmıyorsa bağlantı çıkmaz.
+let sanatciAdi = () => null;
+export function sanatciBulucuKoy(f) {
+  sanatciAdi = f;
+}
+
 const EN_BUYUK = 6;
 const HALKA = 2 * Math.PI * 28; // İş 180: "Sonraki" düğmesinin ilerleme halkasının çevresi
 
@@ -440,8 +447,11 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       const sayfa = gorselSayfasi(g);
       const not = notu ? notu(e) : '';
       const konu = eserKonusu(e);
+      // sanatçının kendi sayfasındayken (ya da eser listesinde) bağlantı gereksiz
+      const sanatciAd = e.sid && !location.hash.startsWith(`#/sanatci/${encodeURIComponent(e.sid)}`) ? sanatciAdi(e.sid) : null;
       alt.innerHTML = `<p class="gor-baslik">${kacis(notTemizle(e.ad || e.baslik))}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>${e.ad && e.ad !== e.baslik ? `<p class="gor-ozgun" data-test="ozgun-ad">${kacis(notTemizle(e.baslik))}</p>` : ''}
         ${not ? `<p class="gor-not" data-test="eser-notu">${kacis(not)}</p>` : ''}
+        ${sanatciAd ? `<a class="gor-konu gor-sanatci" href="#/sanatci/${encodeURIComponent(e.sid)}" data-gor-konu data-test="gor-sanatci">Sanatçı: ${kacis(sanatciAd)} →</a>` : ''}
         ${konu ? `<a class="gor-konu" href="#/konu/${encodeURIComponent(konu.id)}" data-gor-konu data-test="gor-konu">Konu: ${kacis(konu.ad)} →</a>` : ''}
         <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${devasaKaynagi(g) ? ` · <span data-test="devasa-kaynak">büyük kopya: ${kacis(devasaKaynagi(g))} · CC0</span>` : ''}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }
