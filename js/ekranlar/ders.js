@@ -41,6 +41,9 @@ import {
   hataGoster,
   ekranRengi,
   akimRenk,
+  sayfaZemini,
+  akiminDonemi,
+  simdikiDonem,
 } from './ortak.js';
 import { turBilgisi } from './bugun.js';
 import { durumlar as bolumDurumu } from './harita.js';
@@ -209,12 +212,10 @@ function tekrarKarti(tur, dersler = []) {
     ['pek', pek],
     ['yeni', tur.yeni],
   ].filter(([, n]) => n);
-  return `<a class="ders-tekrar" href="#/pekistir/karisik" data-test="karisik-dugme" aria-label="Günlük tekrar: ${tur.toplam} kart, başlat">
-      <span class="ders-tekrar-ust"><span class="ders-etiket soluk">Günlük tekrar</span><small>bütün açık sanatçılardan</small></span>
+  return `<a class="ders-tekrar tek-satir" href="#/pekistir/karisik" data-test="karisik-dugme" aria-label="Günlük tekrar: ${tur.toplam} kart, başlat">
       <span class="ders-tekrar-govde">
         ${deste ? `<span class="ders-deste" aria-hidden="true">${deste}</span>` : ''}
-        <b data-test="tur-sayi">${tur.toplam}</b>
-        <span class="ders-tekrar-yazi">${tur.toplam ? `kart · ~${dk} dk` : 'kart'}<small data-test="tur-alt">${kacis(turAltYazisi(tur))}</small></span>
+        <span class="ders-tekrar-yazi"><span class="ders-tekrar-etiket">Günlük tekrar</span><span class="ders-tekrar-sayi"><b data-test="tur-sayi">${tur.toplam}</b> kart</span><small>${tur.toplam ? `<span>Yaklaşık ${dk} dk</span>` : ''}<span data-test="tur-alt">${kacis(turAltYazisi(tur))}</span></small></span>
         <span class="ders-tekrar-git" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span>
       </span>
       ${parca.length ? `<span class="ders-tekrar-cubuk" aria-hidden="true">${parca.map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`).join('')}</span>` : ''}
@@ -222,12 +223,13 @@ function tekrarKarti(tur, dersler = []) {
 }
 
 const HAL_AD = { bitti: 'Bitti', suruyor: 'Sürüyor', sirada: 'Sırada' };
-function dersSatiri(b) {
+function dersSatiri(b, bugunku = null) {
   const hal = dersHali(b.durum);
+  const bugun = b.akim === bugunku && hal !== 'bitti';
   return `<li><a class="ders-satir ${hal}" href="${dersAdresi(b.akim)}" data-test="ders-satir" data-akim="${kacis(b.akim)}">
       <span class="ders-satir-resim" data-ders-kapak="${kacis(b.akim)}" aria-hidden="true"></span>
-      <span class="ders-satir-yazi"><b>${kacis(b.akim)}</b>${adimCizgileri(b)}</span>
-      <span class="ders-satir-hal">${HAL_AD[hal]}</span>
+      <span class="ders-satir-yazi"><b>${kacis(b.akim)}</b>${adimCizgileri(b, bugun ? b.durum.siradaki : null)}</span>
+      <span class="ders-satir-hal${bugun ? ' bugun' : ''}">${bugun ? 'Bugün' : HAL_AD[hal]}</span>
     </a></li>`;
 }
 function kilitliSatir(a) {
@@ -266,15 +268,15 @@ export async function dersMenusu() {
     adimlar: (ad) => aciklar.find((b) => b.akim === ad).adimlar,
   });
   const b = aciklar.find((x) => x.akim === bugunku);
-  const baslik = `<header class="ders-bas"><h1 tabindex="-1">Çalış</h1><span class="ders-konum" data-test="ders-konum">${kacis(konumYazisi())}</span></header>`;
+  const baslik = `${sayfaZemini(b ? akiminDonemi(b.akim) : simdikiDonem())}<header class="ders-bas"><h1 tabindex="-1">Çalış</h1><span class="ders-konum" data-test="ders-konum">${kacis(konumYazisi())}</span></header>`;
   if (!acikListe().length) {
     ciz(`${baslik}${devamKarti()}<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Ben</a> sayfasında işlediğin konuları işaretle.</p></div>`);
     return devamResmiDoldur();
   }
   const dersler = aciklar.length
     ? `<section class="ders-liste-bolum" aria-label="Dersler">
-        <div class="ders-bolum-bas"><h2>Dersler</h2><span>dönem sırasıyla</span></div>
-        <ul class="ders-liste" data-test="ders-liste">${aciklar.map(dersSatiri).join('')}${kilitliler.length ? kilitliSatir(kilitliler[0]) : ''}</ul>
+        <div class="ders-bolum-bas"><h2>Dersler</h2><span>Dönem sırasıyla</span></div>
+        <ul class="ders-liste" data-test="ders-liste">${aciklar.map((x) => dersSatiri(x, bugunku)).join('')}${kilitliler.length ? kilitliSatir(kilitliler[0]) : ''}</ul>
         ${kilitliler.length > 1 ? `<p class="ders-kalan">Sonra ${kilitliler.length - 1} ders daha var; konular işlendikçe açılır.</p>` : ''}
       </section>`
     : `<p class="ders-kalan" data-test="ders-yok">${kaynak ? 'Açık dönemlerin dersi henüz yok.' : 'Dersler yüklenemedi; bağlantı gelince yeniden dene.'}</p>`;
@@ -284,9 +286,23 @@ export async function dersMenusu() {
     ${tekrarKarti(turBilgisi('karisik'), aciklar)}
     ${dersler}
     ${soruTurlariHtml(hatalarSatiri())}`);
+  calisCubugu();
   kapaklariDoldur(kaynak);
   kucukKareleriDoldur();
   devamResmiDoldur();
+}
+
+// İş 189: başlık ekrandan çıkınca üstte cam çubuk ("Çalış"); başyapıt sayfasındakiyle aynı (.bsy-cubuk)
+function calisCubugu() {
+  const h1 = ekran.querySelector('.ders-bas h1');
+  if (!h1 || !('IntersectionObserver' in window)) return;
+  ekran.insertAdjacentHTML('beforeend', '<div class="bsy-cubuk calis-cubuk" data-calis-cubuk aria-hidden="true"><span></span><b>Çalış</b><span></span></div>');
+  const cubuk = ekran.querySelector('[data-calis-cubuk]');
+  const goz = new IntersectionObserver(([g]) => {
+    if (!cubuk.isConnected) return goz.disconnect();
+    cubuk.classList.toggle('acik', !g.isIntersecting && g.boundingClientRect.top < 0);
+  });
+  goz.observe(h1);
 }
 
 // [data-ders-kapak="<akım>"]: dersin temsilci eseri (Ayırt et için elle seçilen birinci eser); olmazsa açık ilk sanatçının

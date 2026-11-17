@@ -21336,3 +21336,503 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
     transition: none;
   }
 }
+
+/* ===== İş 189 · Galeri ve Çalış: başyapıt sayfasının dili (TASARIM_DILI.md) =====
+   Yapı ve işaretleme aynı; görünüm sadeleşti: cam üst öğeler, yazılı bölüm sekmeleri, tek dolu düğme, büyük yuvarlak
+   kartlar, gruplu liste. Zemin: sabit hale + dönemin silik sembolleri (sayfaZemini, js/ekranlar/ortak.js). */
+#uygulama .cark::before {
+  display: none; /* desen artık sayfa zemininde (.bsy-desen), çarkla birlikte değişir */
+}
+#uygulama .cark {
+  background: none;
+}
+.bsy-desen.desen-gel {
+  animation: desen-gel 0.6s ease both;
+}
+/* --- Galeri üstü: cam arama ve kalp; ikon hapları yerine yazılı bölüm sekmeleri --- */
+#uygulama .gz-ust .arama-hapi,
+#uygulama .gz-ust .arama-kalp {
+  border: 1px solid var(--border);
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  box-shadow: none;
+}
+#uygulama .bolumler {
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+}
+#uygulama .bolumler a {
+  flex: 1 1 0;
+  justify-content: center;
+  width: auto;
+  height: 44px;
+  min-width: 0;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--ink-2);
+  animation: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+#uygulama .bolumler a:nth-child(2) {
+  flex-grow: 1.3;
+}
+#uygulama .bolumler a .ikon,
+#uygulama .bolumler .bolum-yazi small {
+  display: none;
+}
+#uygulama .bolumler .bolum-yazi {
+  opacity: 1;
+  animation: none;
+}
+#uygulama .bolumler .bolum-yazi b {
+  font: 500 14px/1 var(--sans);
+  color: inherit;
+}
+#uygulama .bolumler a[aria-current='page'] {
+  width: auto;
+  background: var(--ink);
+  color: var(--bg);
+}
+#uygulama .bolumler a[aria-current='page'] .bolum-yazi b {
+  font-weight: 600;
+}
+/* --- Akımlar çarkı: "Salona gir" tek dolu düğme --- */
+#uygulama .cark .cark-gir {
+  margin-top: 10px;
+  min-height: 44px;
+  padding: 0 18px 0 22px;
+  border-radius: 22px;
+  background: var(--ink);
+  color: var(--bg);
+  font: 600 15px/1 var(--sans);
+}
+/* --- Başyapıtlar: dönem hapları yerine alt çizgili sekmeler; büyük yuvarlak kapak kartı; Roma rakamı yok --- */
+#uygulama .by-haplar {
+  gap: 20px;
+}
+#uygulama .by-haplar button {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: 500 15px/1 var(--sans);
+  box-shadow: inset 0 -2px 0 transparent;
+}
+#uygulama .by-haplar button small {
+  font: 400 13px/1 var(--sans);
+  color: var(--ink-3);
+}
+#uygulama .by-haplar button[aria-pressed='true'] {
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--pirinc);
+}
+#uygulama .by-haplar button[aria-pressed='true'] small {
+  opacity: 1;
+  color: var(--ink-2);
+}
+#uygulama .by-sahne {
+  height: 400px;
+  border-radius: 28px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
+}
+#uygulama .by-no {
+  display: none;
+}
+#uygulama .by-bas {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#uygulama .by-bas h2 {
+  font: 500 26px/1.15 var(--serif);
+  letter-spacing: -0.01em;
+}
+#uygulama .by-bas h2 small,
+#uygulama .by-say {
+  font: 400 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-2);
+}
+/* --- Çalış: bugünün dersi tek büyük kart; adımlar ince çizgi; tek dolu düğme --- */
+#uygulama :is(.ders-bugun, .ders-tekrar) {
+  border-radius: 28px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.32);
+}
+#uygulama .ders-bugun-kapak {
+  height: 236px;
+}
+#uygulama .ders-adimlar {
+  gap: 6px;
+  padding: 16px 20px 0;
+}
+#uygulama .ders-adim {
+  align-items: stretch;
+  gap: 8px;
+  min-height: 44px;
+  padding-top: 0;
+  color: var(--ink-2);
+  font: 400 13px/1.2 var(--sans);
+}
+/* halka → çizgi: sayı ("3/7") ekran okuyucuda kalır, görünmez */
+#uygulama .ders-adim .ders-halka {
+  width: auto;
+  height: 3px;
+  border: 0;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--ink) 16%, transparent);
+  color: transparent;
+  font-size: 0;
+  overflow: hidden;
+}
+#uygulama .ders-adim.simdi .ders-halka {
+  background: var(--pirinc);
+}
+#uygulama .ders-adim.bitti .ders-halka {
+  background: var(--right);
+}
+#uygulama .ders-adim .ders-adim-ad {
+  text-align: left;
+}
+#uygulama .ders-adim.simdi .ders-adim-ad {
+  color: var(--ink);
+  font-weight: 600;
+}
+#uygulama .ders-bugun-alt {
+  padding: 14px 16px 16px;
+}
+/* Gör düğmesi: resimli kutu yerine tek dolu düğme (adı ve sayısı içinde) */
+#uygulama .gor-dugme {
+  height: 56px;
+  margin: 0;
+  padding: 0 8px 0 22px;
+  border: 0;
+  border-radius: 28px;
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: none;
+}
+#uygulama .gor-dugme::before,
+#uygulama .gor-dugme-resim,
+#uygulama .gor-dugme-parilti {
+  display: none;
+}
+#uygulama .gor-dugme-yazi {
+  gap: 1px;
+}
+#uygulama .gor-dugme-yazi b {
+  font: 600 16px/1.25 var(--sans);
+}
+#uygulama .gor-dugme-yazi small {
+  font: 400 13px/1.3 var(--sans);
+  color: color-mix(in srgb, var(--bg) 70%, var(--ink));
+}
+#uygulama .gor-dugme-ok {
+  width: 40px;
+  height: 40px;
+  background: var(--bg);
+  color: var(--ink);
+}
+#uygulama .gor-dugme-ok::after {
+  display: none;
+}
+/* Günlük tekrar: tek satırlık kart */
+#uygulama .ders-tekrar {
+  margin-top: 16px;
+  padding: 16px 16px 16px 18px;
+}
+#uygulama .ders-tekrar-ust small {
+  display: none;
+}
+#uygulama .ders-tekrar .ders-etiket {
+  font: 600 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-2);
+}
+#uygulama .ders-tekrar-govde b {
+  font: 500 40px/1 var(--serif);
+}
+#uygulama .ders-tekrar-git {
+  width: 44px;
+  padding: 0;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+}
+#uygulama .ders-tekrar-git .ikon {
+  animation: none;
+}
+#uygulama .ders-tekrar-cubuk {
+  height: 3px;
+}
+/* Dersler: tek gruplu liste */
+#uygulama .ders-bolum-bas h2 {
+  font: 500 28px/1.15 var(--serif);
+  letter-spacing: -0.01em;
+}
+#uygulama .ders-bolum-bas span {
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .ders-liste {
+  gap: 0;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+}
+#uygulama .ders-liste > li + li {
+  border-top: 1px solid var(--border);
+}
+#uygulama .ders-satir {
+  min-height: 84px;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+#uygulama .ders-satir-resim {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+}
+#uygulama .ders-satir-yazi b {
+  font: 500 21px/1.2 var(--serif);
+}
+#uygulama .ders-satir.kilitli {
+  border: 0;
+  background: transparent;
+}
+/* Başka turlar: yumuşak kareler */
+#uygulama .tur-izgara {
+  gap: 12px;
+}
+#uygulama .tur-izgara .hatalar-satir {
+  border-radius: 22px;
+}
+:root[data-tema='gunduz'] #uygulama :is(.ders-bugun, .ders-tekrar, .by-sahne) {
+  box-shadow: 0 14px 34px rgba(var(--golge-rgb), 0.12);
+}
+/* --- İş 189 · tuvaldeki ayrıntılar: büyük harfli etiketler yerine küçük, cümle düzeninde üst yazılar --- */
+#uygulama .cark .cark-bas {
+  display: none; /* "Akımlar çarkı · 4 / 28 salon açık": tuvalde yok; sayı çarkın sayacında ve dizinde */
+}
+#uygulama .cark .cark-oge .cark-yazi .etiket {
+  font: 600 13px/1.4 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--pirinc);
+}
+#uygulama .cark .cark-oge .cark-yazi .etiket > span[aria-hidden] {
+  display: none; /* "01 · ": sıra numarası çarkın sayacında */
+}
+#uygulama .cark .cark-oge .cark-yazi b {
+  font: 500 40px/1.15 var(--serif);
+  letter-spacing: -0.01em;
+}
+#uygulama .cark .cark-oge .cark-yazi .sayi {
+  font: 400 15px/1.4 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .by-sahne-yazi small {
+  font: 600 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  color: #e6e0d6;
+}
+#uygulama .by-sahne-yazi b {
+  font: 500 32px/1.18 var(--serif);
+  letter-spacing: -0.01em;
+}
+#uygulama .by-bas {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#uygulama .by-bas .by-hepsi {
+  flex: none;
+  width: auto;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 600 14px/1 var(--sans);
+}
+#uygulama .akim-dizin .etiket,
+#uygulama .ders-etiket {
+  font: 600 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+#uygulama .ders-bugun-yazi .ders-etiket {
+  color: var(--pirinc);
+}
+#uygulama .ders-bugun-yazi b {
+  font: 500 40px/1.15 var(--serif);
+  letter-spacing: -0.01em;
+}
+/* Günlük tekrar: tek satır — deste · etiket, "N kart", süre · ok */
+#uygulama .ders-tekrar.tek-satir {
+  gap: 0;
+  padding: 18px 16px 18px 18px;
+}
+#uygulama .ders-tekrar.tek-satir .ders-tekrar-govde {
+  gap: 16px;
+}
+#uygulama .ders-tekrar.tek-satir .ders-deste {
+  width: 96px;
+  height: 88px;
+}
+#uygulama .ders-tekrar-etiket {
+  font: 600 13px/1.4 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .ders-tekrar-sayi {
+  font: 500 28px/1.2 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+#uygulama .ders-tekrar-sayi b {
+  font: inherit;
+}
+#uygulama .ders-tekrar.tek-satir .ders-tekrar-yazi small {
+  font: 400 14px/1.4 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .ders-tekrar.tek-satir .ders-tekrar-cubuk {
+  display: none; /* tuvalde yok; dağılım yazıda ("0 tekrar · 8 yeni") */
+}
+#uygulama .ders-satir-hal.bugun {
+  color: var(--pirinc);
+  font-weight: 600;
+}
+/* Çalış: kaydırınca üstte cam başlık */
+.calis-cubuk > span {
+  flex: none;
+  width: 44px;
+}
+#uygulama .ders-tekrar.tek-satir .ders-tekrar-yazi small {
+  display: flex;
+  flex-direction: column;
+}
+/* --- İş 189 · tuvalle birebir: kemer 210×270, seçili akımın adı çarkta yok (başlıkta var) --- */
+#uygulama .cark-serit {
+  --cark-w: 210px;
+  gap: 22px;
+}
+#uygulama .cark-kemer {
+  /* üstte yarım daire (genişliğin yarısı); 999px verilince tarayıcı köşeleri orantılı küçültüp alt köşeleri 4 px yapıyordu */
+  border-radius: calc(var(--cark-w) / 2) calc(var(--cark-w) / 2) 16px 16px;
+}
+#uygulama .cark-ad.secili {
+  opacity: 0 !important;
+}
+#uygulama .cark .cark-yazi {
+  margin-top: 16px;
+}
+/* öne çıkan kart: 372 px, beyaz noktalar, düz rozetler */
+#uygulama .by-sahne {
+  height: 372px;
+}
+#uygulama .by-sahne.elle .by-noktalar .secili i {
+  background: #f4f0e8;
+}
+#uygulama .by-noktalar i {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+}
+#uygulama .by-sahne.elle .by-noktalar .secili i {
+  width: 20px;
+}
+/* Çalış: bugünün dersinde sürmekte olan adım pirinç; ok beyaz */
+#uygulama .ders-satir .ders-cizgiler i {
+  width: 28px;
+  height: 3px;
+}
+#uygulama .ders-satir .ders-cizgiler i.simdi:not(.bitti) {
+  background: var(--pirinc);
+}
+#uygulama .ders-tekrar-git {
+  color: var(--ink);
+}
+/* Başka turlar: çizgisiz bölüm, 28 px başlık, sade daire içinde simge */
+#uygulama .pk-ek-turlar {
+  border: 0;
+  background: none;
+}
+#uygulama .pk-ek-turlar .pk-baslik {
+  font: 500 28px/1.15 var(--serif);
+  letter-spacing: -0.01em;
+}
+#uygulama .tur-izgara .hatalar-satir {
+  min-height: 76px;
+  padding: 0 14px;
+  gap: 12px;
+  align-items: center;
+}
+#uygulama .tur-izgara .hatalar-satir .metin b {
+  font: 600 15px/1.3 var(--sans);
+}
+#uygulama .tur-izgara .hatalar-satir .metin span {
+  font: 400 13px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .tur-izgara .hatalar-satir .hatalar-sayi,
+#uygulama .tur-izgara .hatalar-satir .hatalar-sayi:has(> svg) {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ink) 9%, transparent);
+  color: var(--ink);
+  font: 600 15px/1 var(--sans);
+  letter-spacing: 0;
+  opacity: 1;
+}
+#uygulama .tur-izgara .hatalar-satir .hatalar-sayi .ikon {
+  color: inherit;
+  stroke: currentColor;
+}
+#uygulama .ders-liste-bolum + .pk-ek-turlar {
+  margin-top: 28px;
+  padding-top: 0;
+  border-top: 0;
+}
+/* Akımlar: sekmelerin hemen altında kemer (tuvalde 16 px); çark alttaki çubuğun üstünde kalır */
+#uygulama .gz-ust {
+  margin-bottom: 8px;
+}
+#uygulama .cark {
+  margin-top: 0;
+}
+#uygulama .cark-serit {
+  padding-top: 8px;
+}
+/* öne çıkan kartın rozetleri yazı (tuvalde simgesiz) */
+#uygulama .by-sahne-rozet .ikon {
+  display: none;
+}
+#uygulama .cark-teker {
+  margin-top: -30px; /* çarkın üst boşluğu (yalnız dönen adlar) yazının altına girer; çark alttaki çubuğun üstünde kalır */
+}

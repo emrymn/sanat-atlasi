@@ -59,3 +59,17 @@ export function oneCikanlar(l, hikayeli, acikMi = () => true, gun = Math.floor(D
   for (const b of l) if (one.length < n && !one.includes(b)) one.push(b);
   return one;
 }
+
+// Ekranda gösterilen başlık (İş 189): "Arnolfini Portresi (Arnolfini Portrait)" → "Arnolfini Portresi". Parantez yalnız
+// özgün adın (ozgun) tekrarıysa ya da parantezden önceki kısım özgün adın kendisiyse atılır ("Elçiler (The Ambassadors)",
+// ozgun "Elçiler"); açıklayıcı parantez ("Ognissanti Madonnası (Tahtta Meryem)", "Venüs'ün Doğuşu (Cabanel)") kalır.
+export function gorunenBaslik(b) {
+  const baslik = String((b && b.baslik) || '');
+  const ozgun = String((b && b.ozgun) || '')
+    .trim()
+    .toLocaleLowerCase('tr');
+  const m = /^(.*\S)\s*\(([^()]*)\)$/.exec(baslik);
+  if (!m || !ozgun) return baslik;
+  const ayni = (x) => x.trim().toLocaleLowerCase('tr') === ozgun;
+  return ayni(m[2]) || ayni(m[1]) ? m[1] : baslik;
+}
