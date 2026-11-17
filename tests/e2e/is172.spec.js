@@ -112,7 +112,9 @@ test('Çark resme yakın: ortadaki kemer ile çark aynı ekrana sığar (390×84
   });
   expect(olcu.kemerUst).toBeGreaterThanOrEqual(0);
   expect(olcu.tekerAlt).toBeLessThanOrEqual(olcu.sekme);
-  expect(olcu.aralik).toBeLessThan(140);
+  // İş 189: kemerle çark arasında tuvaldeki yazı bloğu (yüzyıl, 40 px ad, sayı, "Salona gir" düğmesi) var; çarkın üstündeki
+  // 48 px yalnız dönen adlar için boşluk. Kemer ve çark yine aynı ekranda (yukarıdaki iki denetim).
+  expect(olcu.aralik).toBeLessThan(190);
 });
 
 test('Akımlar çarkı: bütün akımlar tek şeritte; çark çevrilince sıradaki akım ortaya gelir, açık salona girilir', async ({ page }) => {
@@ -209,6 +211,9 @@ test('Bölüm sekmeleri: dördü de yazılı, 44 pt, ekrana sığar; seçili ola
     const etkin = page.locator('.bolumler a[aria-current="page"]');
     await expect(etkin).toHaveAttribute('data-test', test);
     // sayfa "Yükleniyor…" → içerik diye yeniden çizilebilir; geçiş bitene dek yokla
+    // sayfa "Yükleniyor…" → içerik diye yeniden çizilebilir ve üst bölüm kayarak gelir: ölçümden önce hareket bitsin
+    await expect.poll(() => page.locator('.gz-ust').evaluate((el) => el.getAnimations({ subtree: true }).filter((a) => a.playState === 'running').length)).toBe(0);
+    await expect(page.locator('.gz-ust [data-test="arama-hapi"]')).toBeVisible();
     const kutular = await page.locator('.bolumler a').evaluateAll((l) =>
       l.map((e) => ({ w: e.getBoundingClientRect().width, h: e.getBoundingClientRect().height, sag: e.getBoundingClientRect().right, yazi: e.querySelector('.bolum-yazi b').getBoundingClientRect().width, zemin: getComputedStyle(e).backgroundColor, etkin: e.hasAttribute('aria-current') })),
     );
