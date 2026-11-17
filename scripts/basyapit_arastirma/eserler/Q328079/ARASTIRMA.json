@@ -2,47 +2,298 @@
  "anahtar": "Q328079",
  "baslik_tr": "Sistina Madonnası",
  "kunye": {
-  "sanatci": {"deger": "Raphael", "kaynak": "wikidata.txt", "alinti": "creator (P170): Raphael (Q5597)"},
-  "tarih": {"deger": "yaklaşık 1513–1514 (muhtemelen); sipariş 1512", "kaynak": "enwiki.txt", "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza, and probably executed c. 1513–1514.", "ihtiyat": true},
-  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"},
-  "olcu": {"deger": "269,5 × 201 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 269.5 centimetre\nwidth (P2049): 201 centimetre"},
-  "yer": {"deger": "Gemäldegalerie Alte Meister", "kaynak": "wikidata.txt", "alinti": "location (P276): Gemäldegalerie Alte Meister (Q4890)"}
+  "sanatci": {
+   "deger": "Raphael",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Raphael (Q5597)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1513–1514 (muhtemelen); sipariş 1512",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza, and probably executed c. 1513–1514.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "269,5 × 201 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 269.5 centimetre\nwidth (P2049): 201 centimetre"
+  },
+  "yer": {
+   "deger": "Gemäldegalerie Alte Meister",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Gemäldegalerie Alte Meister (Q4890)"
+  }
  },
  "iddialar": [
-  {"id": "C01", "bolum": "hikaye", "iddia": "Yapıtın ana konusu Meryem ve Çocuk İsa'dır (Madonna and Child).", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Madonna and Child (Q9309699)", "ihtiyat": false},
-  {"id": "C02", "bolum": "hikaye", "iddia": "Tabloda Meryem, Çocuk İsa'yı tutarken iki yanında Aziz Sixtus ve Aziz Barbara ile birlikte gösterilir.", "kaynak": "enwiki.txt", "alinti": "the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara", "ihtiyat": false},
-  {"id": "C03", "bolum": "gorunen", "iddia": "Meryem bulutlar üzerinde durur; arkasında onlarca silik putto, altında dirseklerine yaslanmış iki belirgin kanatlı putto bulunur.", "kaynak": "enwiki.txt", "alinti": "In the painting the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara, stands on clouds before dozens of obscured putti, while two distinctive winged putti rest on their elbows beneath her.", "ihtiyat": false},
-  {"id": "C04", "bolum": "gorunen", "iddia": "Resmin en alt kısmında belirtilen sunak üstüne yaslanan iki figür bulunur.", "kaynak": "enwiki.txt", "alinti": "the two that lean on the altar top indicated at the very bottom of the picture", "ihtiyat": false},
-  {"id": "C05", "bolum": "gorunen", "iddia": "Resmin üst kısmında yeşil bir draperi yer alır.", "kaynak": "enwiki.txt", "alinti": "malachite mixed with orpiment in the green drapery on top of the painting", "ihtiyat": false},
-  {"id": "C06", "bolum": "kompozisyon", "iddia": "Tablo 265 × 196 cm ölçülerindedir.", "kaynak": "enwiki.txt", "alinti": "The oil on canvas painting measures 265 cm by 196 cm.", "ihtiyat": false},
-  {"id": "C07", "bolum": "kompozisyon", "iddia": "Pigment analizi, tabloda Rönesans döneminin olağan pigmentlerinin kullanıldığını ortaya koyar.", "kaynak": "enwiki.txt", "alinti": "Pigment analysis of the painting reveals the usual pigments of the Renaissance period", "ihtiyat": false},
-  {"id": "C08", "bolum": "kompozisyon", "iddia": "Resmin üstündeki yeşil draperide malahit, zırnık (orpiment) ile karıştırılmıştır.", "kaynak": "enwiki.txt", "alinti": "malachite mixed with orpiment in the green drapery on top of the painting", "ihtiyat": false},
-  {"id": "C09", "bolum": "kompozisyon", "iddia": "Meryem'in mavi kaftanında doğal ultramarin, kurşun beyazıyla karıştırılmıştır.", "kaynak": "enwiki.txt", "alinti": "natural ultramarine mixed with lead white in the blue robe of Madonna", "ihtiyat": false},
-  {"id": "C10", "bolum": "kompozisyon", "iddia": "Yapıt, Yüksek Rönesans akımı içinde yer alır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): High Renaissance (Q1474884)", "ihtiyat": false},
-  {"id": "C11", "bolum": "anlam", "iddia": "Tablo, Papa II. Julius tarafından merhum amcası Papa Sixtus IV onuruna sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "commissioned by Pope Julius II in honor of his late uncle, Pope Sixtus IV", "ihtiyat": false},
-  {"id": "C12", "bolum": "anlam", "iddia": "1912 tarihli Fra Magazine makalesine göre Raphael, modelinin izlemeye gelen çocuklarının duruşundan etkilenerek onları tabloya gördüğü gibi eklemiştir.", "kaynak": "enwiki.txt", "alinti": "According to a 1912 article in Fra Magazine, when Raphael was painting the Madonna the children of his model would come in to watch. Struck by their posture as they did, the story goes, he added them to the painting exactly as he saw them.", "ihtiyat": true},
-  {"id": "C13", "bolum": "anlam", "iddia": "1912'de St. Nicholas Magazine'de anlatılan başka bir hikâyeye göre Raphael, bir fırın dükkânının vitrinine özlemle bakan iki çocuktan esinlenmiştir.", "kaynak": "enwiki.txt", "alinti": "Another story, recounted in 1912 in St. Nicholas Magazine, says that Raphael was inspired by two children he encountered on the street when he saw them \"looking wistfully into the window of a baker's shop.\"", "ihtiyat": true},
-  {"id": "C14", "bolum": "anlam", "iddia": "18. yüzyılın son on yıllarında ortaya çıkan 'Raphael'in Rüyası' efsanesine göre Raphael, ilahi Meryem'ini sunmasını sağlayan cennetten bir vizyon almıştır.", "kaynak": "enwiki.txt", "alinti": "the Germans implicitly tied the image into a legend of their own, \"Raphael's Dream.\" Arising in the last decades of the 18th century, the legend—which made its way into a number of stories and even a play—presents Raphael as receiving a heavenly vision that enabled him to present his divine Madonna.", "ihtiyat": true},
-  {"id": "C15", "bolum": "onem", "iddia": "Tablo, 1512'de Papa II. Julius tarafından Piacenza'daki San Sisto kilisesi için sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza", "ihtiyat": false},
-  {"id": "C16", "bolum": "onem", "iddia": "Tablo, Raphael'in resmettiği son Meryem'lerden biridir.", "kaynak": "enwiki.txt", "alinti": "The canvas was one of the last Madonnas painted by Raphael.", "ihtiyat": false},
-  {"id": "C17", "bolum": "onem", "iddia": "Giorgio Vasari tabloyu 'gerçekten nadir ve olağanüstü bir yapıt' diye nitelemiştir.", "kaynak": "enwiki.txt", "alinti": "Giorgio Vasari called it \"a truly rare and extraordinary work\".", "ihtiyat": false},
-  {"id": "C18", "bolum": "onem", "iddia": "1754'te Polonyalı III. Augustus tabloyu 110.000–120.000 franka satın almış ve tablo Dresden'e taşınarak yeni bir ün kazanmıştır.", "kaynak": "enwiki.txt", "alinti": "In 1754, Augustus III of Poland purchased the painting for 110,000 – 120,000 francs, whereupon it was relocated to Dresden and achieved new prominence", "ihtiyat": false},
-  {"id": "C19", "bolum": "onem", "iddia": "Bu bedel, onlarca yıl boyunca herhangi bir tabloya ödenen en yüksek bedel olarak kalmıştır.", "kaynak": "enwiki.txt", "alinti": "this was to remain the highest price paid for any painting for many decades", "ihtiyat": false},
-  {"id": "C20", "bolum": "onem", "iddia": "Augustus'un tabloyu daha iyi sergilemek için tahtını taşıttığı söylenir.", "kaynak": "enwiki.txt", "alinti": "as it is said that Augustus moved his throne in order to better display it", "ihtiyat": true},
-  {"id": "C21", "bolum": "onem", "iddia": "Johann Joachim Winckelmann, 1764 tarihli popüler ve etkili Geschichte der Kunst des Alterthums adlı yapıtında tabloyu özellikle yüceltmiştir.", "kaynak": "enwiki.txt", "alinti": "The Sistine Madonna was notably celebrated by Johann Joachim Winckelmann in his popular and influential Geschichte der Kunst des Alterthums (1764)", "ihtiyat": false},
-  {"id": "C22", "bolum": "onem", "iddia": "Tablo Goethe, Wagner ve Nietzsche'yi etkilemiştir.", "kaynak": "enwiki.txt", "alinti": "The picture influenced Goethe, Wagner and Nietzsche", "ihtiyat": false},
-  {"id": "C23", "bolum": "onem", "iddia": "Tablo, II. Dünya Savaşı'nda Dresden'in bombalanmasından kurtarılmıştır.", "kaynak": "enwiki.txt", "alinti": "Sistine Madonna was rescued from destruction during the bombing of Dresden in World War II", "ihtiyat": false},
-  {"id": "C24", "bolum": "onem", "iddia": "Tablo, diğer sanat yapıtlarıyla birlikte Saksonya İsviçresi'ndeki bir tünelde saklanmış; Kızıl Ordu onları bulunca yanına almıştır.", "kaynak": "enwiki.txt", "alinti": "The painting was stored, with other works of art, in a tunnel in Saxon Switzerland; when the Red Army encountered them, it took them.", "ihtiyat": false},
-  {"id": "C25", "bolum": "onem", "iddia": "1955'te, Joseph Stalin'in ölümünden sonra Sovyetler, sanat yapıtlarını Almanya'ya iade etmeye karar vermiştir.", "kaynak": "enwiki.txt", "alinti": "But in 1955, after the death of Joseph Stalin, the Soviets decided to return the art to Germany", "ihtiyat": false},
-  {"id": "C26", "bolum": "onem", "iddia": "Uluslararası tartışmada dünya basını Dresden koleksiyonunun Sovyet depolamasında zarar gördüğünü öne sürmüş, Sovyetler ise yapıtları kurtardıklarını savunmuştur.", "kaynak": "enwiki.txt", "alinti": "There followed some international controversy, with press around the world stating that the Dresden art collection had been damaged in Soviet storage. Soviets countered that they had in fact saved the pieces.", "ihtiyat": false},
-  {"id": "C27", "bolum": "onem", "iddia": "Mikhail Savitsky'nin Partisan Madonna of Minsk ve Mai Dantsig'in And the Saved World Remembers adlı Sovyet tabloları Sistina Madonnası'na dayanmaktadır.", "kaynak": "enwiki.txt", "alinti": "Soviet paintings Partisan Madonna of Minsk by Mikhail Savitsky and And the Saved World Remembers by Mai Dantsig are based on the Sistine Madonna.", "ihtiyat": false},
-  {"id": "C28", "bolum": "onem", "iddia": "Almanya'ya dönüşünden sonra tablo, Gemäldegalerie Alte Meister'de yeniden sergilenmeye konmuştur.", "kaynak": "enwiki.txt", "alinti": "After its return to Germany, the painting was restored to display in the Gemäldegalerie Alte Meister", "ihtiyat": false},
-  {"id": "C29", "bolum": "onem", "iddia": "Dresden galerisi, 26 Mayıs – 26 Ağustos 2012 arasında tablonun 500. yılını kutlamıştır.", "kaynak": "enwiki.txt", "alinti": "From 26 May to 26 August 2012, the Dresden gallery celebrated the 500th anniversary of the painting.", "ihtiyat": false},
-  {"id": "C30", "bolum": "onem", "iddia": "Meryem'in altındaki kanatlı melekler, tablonun öne çıkan bir ögesi olarak kendi başlarına ünlüdür.", "kaynak": "enwiki.txt", "alinti": "A prominent element within the painting, the winged angels beneath Mary are famous in their own right.", "ihtiyat": false}
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Yapıtın ana konusu Meryem ve Çocuk İsa'dır (Madonna and Child).",
+   "kaynak": "wikidata.txt",
+   "alinti": "main subject (P921): Madonna and Child (Q9309699)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Tabloda Meryem, Çocuk İsa'yı tutarken iki yanında Aziz Sixtus ve Aziz Barbara ile birlikte gösterilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Meryem bulutlar üzerinde durur; arkasında onlarca silik putto, altında dirseklerine yaslanmış iki belirgin kanatlı putto bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the painting the Madonna, holding  Christ Child and flanked by Saint Sixtus and Saint Barbara, stands on clouds before dozens of obscured putti, while two distinctive winged putti rest on their elbows beneath her.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Resmin en altında, sunağın üst kenarı olduğu belirtilen yere iki figür yaslanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the two that lean on the altar top indicated at the very bottom of the picture",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Resmin üst kısmında yeşil bir draperi yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "malachite mixed with orpiment in the green drapery on top of the painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo 265 × 196 cm ölçülerindedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The oil on canvas painting measures 265 cm by 196 cm.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "kompozisyon",
+   "iddia": "Pigment analizi, tabloda Rönesans döneminin olağan pigmentlerinin kullanıldığını ortaya koyar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Pigment analysis of the painting reveals the usual pigments of the Renaissance period",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Resmin üstündeki yeşil draperide malahit, zırnık (orpiment) ile karıştırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "malachite mixed with orpiment in the green drapery on top of the painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Meryem'in mavi kaftanında doğal ultramarin, kurşun beyazıyla karıştırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "natural ultramarine mixed with lead white in the blue robe of Madonna",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "onem",
+   "iddia": "Yapıt, Yüksek Rönesans akımı içinde yer alır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "movement (P135): High Renaissance (Q1474884)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Tablo, Papa II. Julius tarafından merhum amcası Papa Sixtus IV onuruna sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "commissioned by Pope Julius II in honor of his late uncle, Pope Sixtus IV",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "1912 tarihli Fra Magazine makalesine göre Raphael, modelinin izlemeye gelen çocuklarının duruşundan etkilenerek onları tabloya gördüğü gibi eklemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to a 1912 article in Fra Magazine, when Raphael was painting the Madonna the children of his model would come in to watch. Struck by their posture as they did, the story goes, he added them to the painting exactly as he saw them.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "1912'de St. Nicholas Magazine'de anlatılan başka bir hikâyeye göre Raphael, bir fırın dükkânının vitrinine özlemle bakan iki çocuktan esinlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Another story, recounted in 1912 in St. Nicholas Magazine, says that Raphael was inspired by two children he encountered on the street when he saw them \"looking wistfully into the window of a baker's shop.\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "18. yüzyılın son on yıllarında ortaya çıkan 'Raphael'in Rüyası' efsanesine göre Raphael, ilahi Meryem'ini sunmasını sağlayan cennetten bir vizyon almıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the Germans implicitly tied the image into a legend of their own, \"Raphael's Dream.\" Arising in the last decades of the 18th century, the legend—which made its way into a number of stories and even a play—presents Raphael as receiving a heavenly vision that enabled him to present his divine Madonna.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Tablo, 1512'de Papa II. Julius tarafından Piacenza'daki San Sisto kilisesi için sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Tablo, Raphael'in resmettiği son Meryem'lerden biridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The canvas was one of the last Madonnas painted by Raphael.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Giorgio Vasari tabloyu 'gerçekten nadir ve olağanüstü bir yapıt' diye nitelemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Giorgio Vasari called it \"a truly rare and extraordinary work\".",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "1754'te Polonyalı III. Augustus tabloyu 110.000–120.000 franka satın almış ve tablo Dresden'e taşınarak yeni bir ün kazanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1754, Augustus III of Poland purchased the painting for 110,000 – 120,000 francs, whereupon it was relocated to Dresden and achieved new prominence",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Bu bedel, onlarca yıl boyunca herhangi bir tabloya ödenen en yüksek bedel olarak kalmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "this was to remain the highest price paid for any painting for many decades",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Augustus'un tabloyu daha iyi sergilemek için tahtını taşıttığı söylenir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "as it is said that Augustus moved his throne in order to better display it",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Johann Joachim Winckelmann, 1764 tarihli popüler ve etkili Geschichte der Kunst des Alterthums adlı yapıtında tabloyu özellikle yüceltmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Sistine Madonna was notably celebrated by Johann Joachim Winckelmann in his popular and influential Geschichte der Kunst des Alterthums (1764)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Tablo Goethe, Wagner ve Nietzsche'yi etkilemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The picture influenced Goethe, Wagner and Nietzsche",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Tablo, II. Dünya Savaşı'nda Dresden'in bombalanmasından kurtarılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Sistine Madonna was rescued from destruction during the bombing of Dresden in World War II",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablo, diğer sanat yapıtlarıyla birlikte Saksonya İsviçresi'ndeki bir tünelde saklanmış; Kızıl Ordu onları bulunca yanına almıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was stored, with other works of art, in a tunnel in Saxon Switzerland; when the Red Army encountered them, it took them.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "1955'te, Joseph Stalin'in ölümünden sonra Sovyetler, sanat yapıtlarını Almanya'ya iade etmeye karar vermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "But in 1955, after the death of Joseph Stalin, the Soviets decided to return the art to Germany",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Uluslararası tartışmada dünya basını Dresden koleksiyonunun Sovyet depolamasında zarar gördüğünü öne sürmüş, Sovyetler ise yapıtları kurtardıklarını savunmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There followed some international controversy, with press around the world stating that the Dresden art collection had been damaged in Soviet storage. Soviets countered that they had in fact saved the pieces.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Mikhail Savitsky'nin Partisan Madonna of Minsk ve Mai Dantsig'in And the Saved World Remembers adlı Sovyet tabloları Sistina Madonnası'na dayanmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Soviet paintings Partisan Madonna of Minsk by Mikhail Savitsky and And the Saved World Remembers by Mai Dantsig are based on the Sistine Madonna.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Almanya'ya dönüşünden sonra tablo, Gemäldegalerie Alte Meister'de yeniden sergilenmeye konmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After its return to Germany, the painting was restored to display in the Gemäldegalerie Alte Meister",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Dresden galerisi, 26 Mayıs – 26 Ağustos 2012 arasında tablonun 500. yılını kutlamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "From 26 May to 26 August 2012, the Dresden gallery celebrated the 500th anniversary of the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Meryem'in altındaki kanatlı melekler, tablonun öne çıkan bir ögesi olarak kendi başlarına ünlüdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A prominent element within the painting, the winged angels beneath Mary are famous in their own right.",
+   "ihtiyat": false
+  }
  ],
  "celiskiler": [
-  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1512 (precision: decade) [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza, and probably executed c. 1513–1514."}},
-  {"konu": "olcu", "a": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 269.5 centimetre\nwidth (P2049): 201 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "The oil on canvas painting measures 265 cm by 196 cm."}}
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1512 (precision: decade) [sourcing circumstances: circa (Q5727902)]"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza, and probably executed c. 1513–1514."
+   }
+  },
+  {
+   "konu": "olcu",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "height (P2048): 269.5 centimetre\nwidth (P2049): 201 centimetre"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The oil on canvas painting measures 265 cm by 196 cm."
+   }
+  }
  ],
  "bulunamadi": []
 }

@@ -112,6 +112,8 @@ HER İDDİA İÇİN KURALLAR
    (muhtemelen, olabilir, düşünülür, atfedilir, …'e göre, yaklaşık, tartışmalıdır). Kaynağın ihtiyatını asla kesinliğe çevirme.
 6. Yalnız BU eser hakkında yaz. Madde başka versiyonlardan, kopyalardan, aynı konunun başka ressamlarca yapılmış resimlerinden ya da
    sanatçının hayatından söz ediyorsa onları bu esere mal etme. Hangi versiyon olduğundan emin değilsen iddiayı yazma.
+7a. trwiki.txt yalnız enwiki.txt'de olmayan bir bilgi için kullanılır; trwiki'deki yorum cümlelerini ("aynıdır", "anlatmaya çalışır")
+   olgu gibi aktarma, "Türkçe Vikipedi'ye göre" diye ihtiyatlı yaz ve "ihtiyat": true işaretle.
 7. "See also", "References", "External links", "Notes", "Kaynakça" bölümlerinden alıntı yapma.
 8. İngilizce "by 1879" = "1879'a gelindiğinde / en geç 1879'da" (o yılda değil). "left/right" kimin solu-sağı ise öyle aktar; çevirme.
 9. Yorum, övgü, kendi gözlemin yok ("etkileyici", "ustaca", "dikkat çeker" gibi sözler kaynakta yoksa yazılmaz). Görsele bakma; görsel bu görevin kaynağı değil.
