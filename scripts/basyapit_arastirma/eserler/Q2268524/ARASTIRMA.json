@@ -1,0 +1,44 @@
+{
+ "anahtar": "Q2268524",
+ "baslik_tr": "Üç Güzeller",
+ "kunye": {
+  "sanatci": {"deger": "Peter Paul Rubens", "kaynak": "wikidata.txt", "alinti": "creator (P170): Peter Paul Rubens (Q5599)"},
+  "tarih": {"deger": "1630 (hassasiyet: on yıl)", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1630 (precision: decade)", "ihtiyat": true},
+  "teknik": {"deger": "yağlıboya ve panel", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "220,5 × 182 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 220.5 centimetre width (P2049): 182 centimetre"},
+  "yer": {"deger": "Museo del Prado", "kaynak": "wikidata.txt", "alinti": "location (P276): Museo del Prado (Q160112)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Üç Güzeller, Peter Paul Rubens'in Üç Güzeller'i betimleyen bir yağlıboya tablosudur.", "kaynak": "enwiki.txt", "alinti": "The Three Graces is an oil painting of the Three Graces by Peter Paul Rubens.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Tablo, mitolojik resim türündendir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): mythological painting (Q3374376)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Resimde kadın betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): woman (Q467)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Resimde çıplaklık betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): nudity (Q10791)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resimde çeşme betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): fountain (Q483453)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Resimde çelenk betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): garland (Q756600)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resimde çiçek betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): flower (Q506)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Resimde kırsal alan betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): rural area (Q175185)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Resimde geniş yapraklı ağaç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): broad-leaved tree (Q148993)", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Resimde gökyüzü betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sky (Q527)", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Resimde inci betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): pearl (Q43436)", "ihtiyat": false},
+  {"id": "C12", "bolum": "gorunen", "iddia": "Resimde küpe betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): earring (Q168456)", "ihtiyat": false},
+  {"id": "C13", "bolum": "gorunen", "iddia": "Resimde bereket boynuzu betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): cornucopia (Q332682)", "ihtiyat": false},
+  {"id": "C14", "bolum": "gorunen", "iddia": "Resimde contrapposto betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): contrapposto (Q514847)", "ihtiyat": false},
+  {"id": "C15", "bolum": "gorunen", "iddia": "Resimde ayakta duruş betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): standing (Q1986098)", "ihtiyat": false},
+  {"id": "C16", "bolum": "gorunen", "iddia": "Resimde bel uzunluğunda saç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): waist-length hair (Q14130)", "ihtiyat": false},
+  {"id": "C17", "bolum": "gorunen", "iddia": "Resimde sarı saç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): blond hair (Q202466)", "ihtiyat": false},
+  {"id": "C18", "bolum": "gorunen", "iddia": "Resimde kestane rengi saç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): chestnut hair (Q5094009)", "ihtiyat": false},
+  {"id": "C19", "bolum": "gorunen", "iddia": "Resimde kahverengi saç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): brown hair (Q2367101)", "ihtiyat": false},
+  {"id": "C20", "bolum": "gorunen", "iddia": "Resimde topuz betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): chignon (Q1279269)", "ihtiyat": false},
+  {"id": "C21", "bolum": "gorunen", "iddia": "Resimde arı betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): bee (Q115131816)", "ihtiyat": false},
+  {"id": "C22", "bolum": "kompozisyon", "iddia": "Tablonun malzemeleri yağlıboya ve paneldir.", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)", "ihtiyat": false},
+  {"id": "C23", "bolum": "kompozisyon", "iddia": "Tablonun çerçevesiz boyutları 221 cm × 181 cm'dir (87 in × 71 in).", "kaynak": "enwiki.txt", "alinti": "Physical dimensions of this painting are 221 cm × 181 cm (87 in × 71 in) without frame.", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Tablo, sanatçının ölümüne kadar onun kişisel koleksiyonunda kaldı.", "kaynak": "enwiki.txt", "alinti": "The painting was held in the personal collection of the artist until his death", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Tablo, İspanya Kralı Felipe IV tarafından satın alındı ve 1666'da Madrid'deki Kraliyet Alcazar'ına gitti.", "kaynak": "enwiki.txt", "alinti": "then was purchased by king Philip IV of Spain and in 1666 it went to the Royal Alcazar of Madrid", "ihtiyat": false},
+  {"id": "C26", "bolum": "onem", "iddia": "Rubens'in Üç Güzeller temasında başka varyasyonları da vardı.", "kaynak": "enwiki.txt", "alinti": "There were other variations by Rubens on the theme of Three Graces.", "ihtiyat": false},
+  {"id": "C27", "bolum": "onem", "iddia": "Tablonun envanter numarası P001670'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): P001670", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "olcu", "a": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 220.5 centimetre width (P2049): 182 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "Physical dimensions of this painting are 221 cm × 181 cm (87 in × 71 in) without frame."}}
+ ],
+ "bulunamadi": ["anlam: her iki kaynakta da simge, yorum ya da sipariş amacı bilgisi yok"]
+}

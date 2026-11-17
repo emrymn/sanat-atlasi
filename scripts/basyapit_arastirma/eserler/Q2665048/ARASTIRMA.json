@@ -1,0 +1,36 @@
+{
+ "anahtar": "Q2665048",
+ "baslik_tr": "Dante ve Vergilius Cehennemde",
+ "kunye": {
+  "sanatci": {"deger": "William-Adolphe Bouguereau", "kaynak": "wikidata.txt", "alinti": "creator (P170): William-Adolphe Bouguereau (Q483992)"},
+  "tarih": {"deger": "1850", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1850", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "280,5 × 225,3 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 280.5 centimetre\nwidth (P2049): 225.3 centimetre"},
+  "yer": {"deger": "Musée d'Orsay, Paris", "kaynak": "enwiki.txt", "alinti": "It is in the Musée d'Orsay in Paris."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Dante'nin İlahi Komedya'sından bir sahneyi betimler; eser Dante ve rehberi Vergilius'un Cehennem'deki yolculuğunu anlatır.", "kaynak": "enwiki.txt", "alinti": "The painting depicts a scene from Dante's Divine Comedy, which narrates a journey through Hell by Dante and his guide Virgil.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Sahnede yazar ve rehberi, iki lanetli ruhun sonsuz bir kavga içinde birbirine dolanmış halini izler.", "kaynak": "enwiki.txt", "alinti": "In the scene the author and his guide are looking on as two damned souls are entwined in eternal combat.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Ruhlardan biri, simyacı ve heretik olan Capocchio'dur.", "kaynak": "enwiki.txt", "alinti": "One of the souls is an alchemist and heretic named Capocchio.", "ihtiyat": false},
+  {"id": "C04", "bolum": "hikaye", "iddia": "Düzenbaz Gianni Schicchi, Capocchio'yu boynundan ısırmaktadır.", "kaynak": "enwiki.txt", "alinti": "named Capocchio. He is being bitten on the neck by the trickster Gianni Schicchi", "ihtiyat": false},
+  {"id": "C05", "bolum": "hikaye", "iddia": "Gianni Schicchi, başka bir adamın mirasını elde etmek için hile kullanmıştır.", "kaynak": "enwiki.txt", "alinti": "the trickster Gianni Schicchi, who had used fraud to claim another man's inheritance.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Tabloda Dante Alighieri ve Vergilius betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Dante Alighieri (Q1067)\ndepicts (P180): Virgil (Q1398)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Tabloda Capocchio ve Gianni Schicchi de' Cavalcanti betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Capocchio (Q3657220)\ndepicts (P180): Gianni Schicchi de' Cavalcanti (Q3105276)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Tabloda çıplaklık ve kavga betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): nudity (Q10791)\ndepicts (P180): combat (Q650711)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Tabloda ayakta duran bir figür ve defne çelengi betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): standing (Q1986098)\ndepicts (P180): laurel wreath (Q734844)", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Tabloda gökyüzü ve bulut betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sky (Q527)\ndepicts (P180): cloud (Q8074)", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Eser tuval üzerine yağlıboya tekniğiyle yapılmıştır.", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Eser akademik sanat akımına aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): academic art (Q189458)", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Eser mitolojik resim, nü ve figür resmi türlerinde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): mythological painting (Q3374376)\ngenre (P136): nude (Q40446)\ngenre (P136): figure painting (Q5448026)", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Bu tablo, sanatçının Prix de Rome'u kazanma yönündeki üçüncü ve nihayetinde başarısız denemesiydi.", "kaynak": "enwiki.txt", "alinti": "It was Bougereau's third and ultimately unsuccessful attempt to win the coveted Prix de Rome, even though he had submitted a work that he knew would appeal to the judges.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Sanatçı aynı yıl içinde, Araxes kıyısında Zenobia'yı bulan çobanları konu alan başka bir tabloyla teselli niteliğindeki ikincilik ödülünü kazandı.", "kaynak": "enwiki.txt", "alinti": "He did however find partial success in his efforts later in the year when Shepherds Find Zenobia on the Banks of the Araxes won the consolation second prize of the year.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Tablo, Paris'teki Palais-Royal'de düzenlenen 1850 Salonu'nda sergilendi.", "kaynak": "enwiki.txt", "alinti": "It was displayed at the Salon of 1850 held at the Palais-Royal in Paris.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Tablo 2010'dan beri Musée d'Orsay koleksiyonundadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Musée d'Orsay (Q23402) [start time: 2010]", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Eser 2010'dan beri Fransa'ya aittir.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): France (Q142) [start time: 2010]", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "kompozisyon: ışık, renk, alt çizim veya restorasyon bilgisi hiçbir kaynakta yok; yalnız teknik (ve künyede boyut) mevcut",
+  "anlam: simge, yorum veya sipariş amacı bilgisi hiçbir kaynakta yok; yalnız akım ve tür sınıflandırması mevcut"
+ ]
+}
