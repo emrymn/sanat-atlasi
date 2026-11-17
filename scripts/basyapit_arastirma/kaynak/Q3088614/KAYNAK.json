@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q3088614",
+ "indirme": "2026-11-17T08:05:03+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3088614.json",
+   "revid": 2548179858,
+   "sha256": "b4684c759329ed9c309ef49929edea16de4307567bdaf2e5862b8d1db14f8057",
+   "karakter": 1367
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=La_Nymphe_surprise&oldid=1361277393",
+   "baslik": "La Nymphe surprise",
+   "revid": 1361277393,
+   "surum_tarihi": "2026-06-26T21:47:00Z",
+   "sha256": "23415e6002ec14afd72189a177e82e1e63ff06f56cee8c68e96481f11ef23523",
+   "karakter": 2939
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Peri_K%C4%B1z%C4%B1n%C4%B1n_%C5%9Ea%C5%9Fk%C4%B1nl%C4%B1%C4%9F%C4%B1&oldid=36889969",
+   "baslik": "Peri Kızının Şaşkınlığı",
+   "revid": 36889969,
+   "surum_tarihi": "2026-03-10T12:44:03Z",
+   "sha256": "2a196192d5ee7a7406cf5cd3a7ddb8dd65e52c1a61501605dfae2a551b375136",
+   "karakter": 4274
+  }
+ }
+}

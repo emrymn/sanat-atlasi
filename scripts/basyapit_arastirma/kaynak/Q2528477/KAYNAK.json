@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q2528477",
+ "indirme": "2026-11-17T07:43:08+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2528477.json",
+   "revid": 2569911170,
+   "sha256": "3f96503326fe07983c8e3f9c7df26a6baa9379c155556c8d2ca841c5867e49b4",
+   "karakter": 849
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Witches%27_Sabbath_%28The_Great_He-Goat%29&oldid=1381559596",
+   "baslik": "Witches' Sabbath (The Great He-Goat)",
+   "revid": 1381559596,
+   "surum_tarihi": "2026-10-23T09:26:33Z",
+   "sha256": "cf5adeae4137bb62c6d261d68549bec38efbff3f33d706855abafc485eacdf52",
+   "karakter": 13037
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Cad%C4%B1_Ayini&oldid=34664831",
+   "baslik": "Cadı Ayini",
+   "revid": 34664831,
+   "surum_tarihi": "2025-01-18T05:08:04Z",
+   "sha256": "49c32fd3e9d7642d383af199f7a490a92d1e2102c2b93a214cfbc6ef9b8cbea5",
+   "karakter": 513
+  }
+ }
+}

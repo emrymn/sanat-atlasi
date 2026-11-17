@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2632688",
+ "indirme": "2026-11-17T07:39:23+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2632688.json",
+   "revid": 2569911236,
+   "sha256": "97916151e654273afb9b58866bf4bc13e2161f7124f7cdc764f9b55cff474769",
+   "karakter": 965
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Baptism_of_Christ_%28Piero_della_Francesca%29&oldid=1375404165",
+   "baslik": "The Baptism of Christ (Piero della Francesca)",
+   "revid": 1375404165,
+   "surum_tarihi": "2026-09-17T15:47:09Z",
+   "sha256": "50ec58b3bf1ed29433ea47161273a8ae6dda331d119e4bd6cef1ca2f0738d8ce",
+   "karakter": 3382
+  }
+ }
+}

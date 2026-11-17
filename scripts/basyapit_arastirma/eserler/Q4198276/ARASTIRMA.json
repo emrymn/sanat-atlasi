@@ -1,0 +1,42 @@
+{
+ "anahtar": "Q4198276",
+ "baslik_tr": "Isabella ve Fesleğen Saksısı",
+ "kunye": {
+  "sanatci": {"deger": "William Holman Hunt", "kaynak": "wikidata.txt", "alinti": "creator (P170): William Holman Hunt (Q211763)"},
+  "tarih": {"deger": "Ocak 1868 (tamamlanma)", "kaynak": "enwiki.txt", "alinti": "finally completing it in January 1868", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): canvas (Q12321255) made from material (P186): oil paint (Q296955)"},
+  "olcu": {"deger": "187 × 116,5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 187 centimetre width (P2049): 116.5 centimetre"},
+  "yer": {"deger": "Laing Art Gallery", "kaynak": "wikidata.txt", "alinti": "location (P276): Laing Art Gallery (Q1800739)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, John Keats'in Isabella, or the Pot of Basil adlı şiirinden bir sahneyi betimler.", "kaynak": "enwiki.txt", "alinti": "depicting a scene from John Keats's poem Isabella, or the Pot of Basil", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Resim, öldürülen sevgilisi Lorenzo'nun kesik başını gömdüğü fesleğen saksısını okşayan Isabella'yı betimler.", "kaynak": "enwiki.txt", "alinti": "It depicts the heroine Isabella caressing the basil pot in which she had buried the severed head of her murdered lover Lorenzo.", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Uyuyamayan Isabella yarı saydam bir gecelik giymiştir; örtüsü geri katlanmış yataktan yeni kalkmıştır ve yatak arka planda görünür.", "kaynak": "enwiki.txt", "alinti": "The painting portrays Isabella, unable to sleep, dressed in a semi-transparent nightgown, having just left her bed, which is visible with the cover turned over in the background.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Isabella, Lorenzo için özenle kakmalı bir prie-dieu üzerine zengin işlemeli bir örtü sererek oluşturduğu sunağın üzerine uzanır.", "kaynak": "enwiki.txt", "alinti": "She drapes herself over an altar she has created to Lorenzo from an elaborately inlaid prie-dieu over which a richly embroidered cloth has been placed.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Örtünün üzerinde, Lorenzo'nun başının gömülü olduğu kafataslarıyla bezeli mayolika saksı durur.", "kaynak": "enwiki.txt", "alinti": "On the cloth is the majolica pot, decorated with skulls, in which Lorenzo's head is interred.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Isabella'nın gür saçları saksının üzerinden ve gelişen bitkinin çevresine dökülür.", "kaynak": "enwiki.txt", "alinti": "Her abundant hair flows over the pot and around the flourishing plant", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Isabella'nın arkasında, kapı girişinin yanında bir çift patten ve bir cassone'nin kenarı yer alır.", "kaynak": "enwiki.txt", "alinti": "Behind her, next to the doorway, are a pair of pattens, next to the edge of a cassone.", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Eserin betimlediği unsurlar arasında bir çiçek yer alır.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): flower (Q506)", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Duyusallığa, zengin renklere ve özenli dekoratif nesnelere yapılan vurgu, yükselmekte olan Estetik hareketi yansıtır.", "kaynak": "enwiki.txt", "alinti": "The emphasis on sensuality, rich colours and elaborate decorative objects reflects the growing Aesthetic movement", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Figürün pozu, kısmen Fanny'nin kız kardeşi Alice'in modellik ettiği Thomas Woolner'ın Civilization heykelini andırır.", "kaynak": "enwiki.txt", "alinti": "The pose of the figure also resembles Thomas Woolner's sculpture Civilization, which was partly modelled by Fanny's sister Alice.", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Hunt, doğumdan sonra Aralık 1866'da ateşten ölen karısı Fanny'nin yüz hatlarını Isabella için kullanarak tabloyu karısına bir anıta dönüştürmüştür.", "kaynak": "enwiki.txt", "alinti": "However, after giving birth, Fanny died from fever in December 1866. Hunt turned the painting into a memorial to his wife, using her features for Isabella.", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Saçların saksı ve bitki üzerine dökülmesi, Keats'in Isabella'nın fesleğenini gözyaşlarıyla suladığını anlatan dizelerini yansıtır.", "kaynak": "enwiki.txt", "alinti": "Her abundant hair flows over the pot and around the flourishing plant, reflecting Keats's words that Isabella \"hung over her sweet Basil evermore,/And moistened it with tears unto the core.\"", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Eser, Ön-Rafaellocu Kardeşliği (Pre-Raphaelite Brotherhood) akımına aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Pre-Raphaelite Brotherhood (Q184814)", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Hunt, evliliğinden kısa süre sonra, erotik yüklü konular resmetmeye başladığı 1866'da şiire geri dönmüştür.", "kaynak": "enwiki.txt", "alinti": "Shortly after his marriage, Hunt returned to the poem in 1866, when he began to paint several erotically charged subjects.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Duyusal tablosu Il Dolce far niente hızla satılınca Hunt, Isabella'yı betimleyen yeni bir eser fikrini kurmuştur.", "kaynak": "enwiki.txt", "alinti": "His sensuous painting Il Dolce far niente (roughly translated: the sweetness of doing nothing) had sold quickly, and he conceived the idea for a new work depicting Isabella.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Hamile eşi Fanny ile İtalya'ya gitmiş olan Hunt, tablo üzerinde çalışmaya Floransa'da başlamıştır.", "kaynak": "enwiki.txt", "alinti": "Having travelled with his pregnant wife Fanny to Italy, Hunt began work on the painting in Florence.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Hunt, karısının ölümünden sonraki aylarda tablo üzerinde düzenli çalışmış, 1867'de İngiltere'ye dönmüş ve eseri Ocak 1868'de tamamlamıştır.", "kaynak": "enwiki.txt", "alinti": "He worked on it steadily in the months after her death, returning to England in 1867, and finally completing it in January 1868.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Tablo, tacir Ernest Gambart tarafından satın alınmış ve sergilenmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was purchased and exhibited by the dealer Ernest Gambart.", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Hunt'ın yapıtı aynı konuyu benimseyen sonraki sanatçıları etkilemiştir; en önemlileri John White Alexander (1897) ve John William Waterhouse (1907) tablolarıdır.", "kaynak": "enwiki.txt", "alinti": "Hunt's work influenced several later artists, who adopted the same subject. Most notable are the paintings by John White Alexander (1897) and John William Waterhouse (1907).", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Alexander ve Waterhouse, Hunt'ın başlığını yinelemiş ve kompozisyonunun çeşitlemelerini geliştirmiştir.", "kaynak": "enwiki.txt", "alinti": "Alexander and Waterhouse reproduced Hunt's title and developed variations on his composition.", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Hunt ile arası açılmış olan Rossetti tablodan etkilenmemiş ve Isabella figürünü bir temizlikçi kadına benzetmiştir.", "kaynak": "enwiki.txt", "alinti": "Rossetti, who had fallen out with Hunt, was unmoved by the painting, describing the figure of Isabella as looking like a charwoman.", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Tablo, 1952'den itibaren Laing Art Gallery koleksiyonuna dahildir.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Laing Art Gallery (Q1800739) [start time: 1952]", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1867"}, "b": {"kaynak": "enwiki.txt", "alinti": "finally completing it in January 1868"}}
+ ],
+ "bulunamadi": [
+  "anlam: kafatası bezemesi ve nesneler için simge yorumu kaynakta yok",
+  "kompozisyon: ışık düzeni, alt çizim ve restorasyon bulgusu kaynakta yok"
+ ]
+}

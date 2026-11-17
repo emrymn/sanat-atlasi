@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q5818528",
+ "indirme": "2026-11-17T08:04:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q5818528.json",
+   "revid": 2564330424,
+   "sha256": "80f912161cd6b1d79f15579ac836d81d5a80524d077e2cadc091e13542528082",
+   "karakter": 1067
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Oedipus_and_the_Sphinx_%28Ingres%29&oldid=1361315625",
+   "baslik": "Oedipus and the Sphinx (Ingres)",
+   "revid": 1361315625,
+   "surum_tarihi": "2026-06-27T03:42:38Z",
+   "sha256": "9c78ef0cfa1b424caaf779a4155fa0958eb34341aae6761f7a77b15d5baf4b51",
+   "karakter": 3211
+  }
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "anahtar": "Q6119366",
+ "baslik_tr": "Aziz Martin ve Dilenci",
+ "kunye": {
+  "sanatci": {
+   "deger": "El Greco",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): El Greco (Q301)"
+  },
+  "tarih": {
+   "deger": "1597",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1597",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "193,5 × 103 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 193.5 centimetre\nwidth (P2049): 103 centimetre"
+  },
+  "yer": {
+   "deger": "National Gallery of Art, Washington, D.C.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They were later incorporated into the permanent collection of the National Gallery of Art, Washington, D.C."
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Resim, Hristiyan aziz Tourslu Martin'in hayatından bir efsaneyi betimler: aziz, bir dilenciyi giydirmek için pelerininin yarısını kesmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It depicts a legend in the life of Christian saint Martin of Tours, in which the saint cut off half his cloak to clothe a beggar.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Resmin ana konusu, Aziz Martin'in pelerinini paylaşmasıdır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "main subject (P921): Saint Martin sharing his cloak (Q27036662)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Resimde Tourslu Martin betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): Martin of Tours (Q133704)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir dilenci betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): beggar (Q273283)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir Arap atı betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): Arabian horse (Q184138)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Resimde zırh betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): armor (Q11886611)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir pelerin betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): cloak (Q516992)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Resimde üstü çıplak bir erkek betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): male toplessness (Q2724165)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Resimde fırfırlı bir yaka betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): ruff (Q653053)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Resimde dizgin betimlenmiştir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): rein (Q2196000)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun boyutları 193,5 × 103 santimetredir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 193.5 centimetre\nwidth (P2049): 103 centimetre",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Eser, Maniyerizm akımına ait bir resimdir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "movement (P135): Mannerism (Q131808)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Eser, dinî sanat türünde bir yapıttır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "genre (P136): religious art (Q2864737)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Resim, özel bir şapel için sipariş edilmiş bir triptiğin parçasıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Part of a triptych commissioned for a private chapel",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Eser, Aziz Joseph Şapeli'ndeki altar resminin bir parçasıdır.",
+   "kaynak": "wikidata.txt",
+   "alinti": "part of (P361): Altarpiece in the Chapel of St Joseph (Q72855249) [start time: 1599]",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Tablo, İspanya'nın Toledo kentindeki şapelde 1907'ye kadar kalmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "remained in the chapel in the Spanish city of Toledo, until 1907",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Resim 1907'de Amerikalı koleksiyoner Peter Widener'a satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "until 1907, when they were sold to the American collector Peter Widener",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Eser daha sonra Washington'daki National Gallery of Art'ın kalıcı koleksiyonuna katılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They were later incorporated into the permanent collection of the National Gallery of Art, Washington, D.C.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Eser, Widener Collection koleksiyonuna dahildir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "collection (P195): Widener Collection (Q62101859)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Tablonun envanter numarası 1942.9.25'tir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "inventory number (P217): 1942.9.25",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1597"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "painted c. 1597–1599"
+   }
+  }
+ ],
+ "bulunamadi": [
+  "anlam: kaynakta simge yorumu veya model kimliği bilgisi yok",
+  "kompozisyon: ışık, renk, alt çizim ve restorasyon bulguları kaynakta yok",
+  "hikaye: efsanenin öncesi/sonrası ve dayandığı metin kaynakta belirtilmiyor"
+ ]
+}

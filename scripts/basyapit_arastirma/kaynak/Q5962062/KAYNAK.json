@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q5962062",
+ "indirme": "2026-11-17T07:44:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q5962062.json",
+   "revid": 2569672169,
+   "sha256": "525ea117b0effe9f0f7e57df491635fedfac7b482de2a990dcd32dc9d2835304",
+   "karakter": 2205
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Dawn_%28Bouguereau%29&oldid=1361249612",
+   "baslik": "Dawn (Bouguereau)",
+   "revid": 1361249612,
+   "surum_tarihi": "2026-06-26T17:58:02Z",
+   "sha256": "593f8699769e39105ee23d3891dbc75853a70af04a27865ed81c46e45e0bf633",
+   "karakter": 430
+  }
+ }
+}

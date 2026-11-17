@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q822535",
+ "indirme": "2026-11-17T07:55:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q822535.json",
+   "revid": 2563211755,
+   "sha256": "e926bd201d8ca8de8ee4badc0e927f1f2ab4811013f2dc47c92ca6c5669e57fb",
+   "karakter": 814
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Isabella_%28Millais_painting%29&oldid=1382194639",
+   "baslik": "Isabella (Millais painting)",
+   "revid": 1382194639,
+   "surum_tarihi": "2026-10-27T05:50:15Z",
+   "sha256": "8e794da32e4bdf1bbbaad6d418f111be6442262bfdb33577631af0c2916df8fa",
+   "karakter": 5032
+  }
+ }
+}

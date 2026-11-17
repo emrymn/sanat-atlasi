@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q636537",
+ "indirme": "2026-11-17T07:33:13+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q636537.json",
+   "revid": 2568528018,
+   "sha256": "1c563daa88574a3f5243358006f95a3d0f72f20bc4b03648af6142c33253a169",
+   "karakter": 1650
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Death_of_Marat&oldid=1385195474",
+   "baslik": "The Death of Marat",
+   "revid": 1385195474,
+   "surum_tarihi": "2026-11-12T08:34:45Z",
+   "sha256": "a080401a54e9dacd56226c303539c38cbce603aec383866c04f423b64f91c94b",
+   "karakter": 12986
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Marat%27n%C4%B1n_%C3%96l%C3%BCm%C3%BC&oldid=37682274",
+   "baslik": "Marat'nın Ölümü",
+   "revid": 37682274,
+   "surum_tarihi": "2026-08-04T13:22:59Z",
+   "sha256": "3acedfee45f0f86f38b5cfa4957834bd0e30165d1f8dac896f4f3667b3207226",
+   "karakter": 4478
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q27096409",
+ "indirme": "2026-11-17T08:02:04+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q27096409.json",
+   "revid": 2460093170,
+   "sha256": "647f1a57282c0d5dcc92c202f28edd4667b01aaed7210c29a9e2515bcc016ccd",
+   "karakter": 263
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Rape_of_the_Sabine_Women_%28Poussin%29&oldid=1344504983",
+   "baslik": "The Rape of the Sabine Women (Poussin)",
+   "revid": 1344504983,
+   "surum_tarihi": "2026-03-20T21:25:55Z",
+   "sha256": "e14f392353eca58d64d7b8678b979c427961bb887a0985d40bee1b27f5df707e",
+   "karakter": 10369
+  }
+ }
+}

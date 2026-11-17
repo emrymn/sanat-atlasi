@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3797771",
+ "indirme": "2026-11-17T08:00:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3797771.json",
+   "revid": 2498105346,
+   "sha256": "afd6155540a9dfb18695d1b5f316c09dd5a84e400aaccbfe550feaf588c41d15",
+   "karakter": 1268
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Coronation_of_the_Virgin_%28Fra_Angelico%2C_Uffizi%29&oldid=1375403963",
+   "baslik": "Coronation of the Virgin (Fra Angelico, Uffizi)",
+   "revid": 1375403963,
+   "surum_tarihi": "2026-09-17T15:45:56Z",
+   "sha256": "6eefc75937c4889374f622fb46b44cec9f40261f861f005a4be530e31a0d7109",
+   "karakter": 2042
+  }
+ }
+}

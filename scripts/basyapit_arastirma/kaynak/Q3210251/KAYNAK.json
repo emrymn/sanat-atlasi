@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3210251",
+ "indirme": "2026-11-17T08:01:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3210251.json",
+   "revid": 2561971423,
+   "sha256": "1f4eaa7d999757e25d6e6c1600fa1d4af66cc45b32d52f91dd1bf7a97033fc78",
+   "karakter": 1857
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Magdalene_with_Two_Flames&oldid=1385981510",
+   "baslik": "Magdalene with Two Flames",
+   "revid": 1385981510,
+   "surum_tarihi": "2026-11-16T06:36:21Z",
+   "sha256": "97ba92df8810a39f32b9ac7901b1d80454dcbbc03559591e73ea8fca7be23c73",
+   "karakter": 1532
+  }
+ }
+}

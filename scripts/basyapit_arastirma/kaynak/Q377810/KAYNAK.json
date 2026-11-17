@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q377810",
+ "indirme": "2026-11-17T07:49:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q377810.json",
+   "revid": 2545326364,
+   "sha256": "2116f3bd3f92e0d4c59e292286212c453cbe7d070199ca235bcca40659d3f185",
+   "karakter": 1313
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Adoration_of_the_Golden_Calf&oldid=1361420204",
+   "baslik": "The Adoration of the Golden Calf",
+   "revid": 1361420204,
+   "surum_tarihi": "2026-06-27T20:45:46Z",
+   "sha256": "9780784e453a29f08f6fadf1785965e9bc432bb3e9f0fa71a16c2dacb6d3c21f",
+   "karakter": 2504
+  }
+ }
+}

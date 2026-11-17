@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1220013",
+ "indirme": "2026-11-17T07:39:18+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1220013.json",
+   "revid": 2569714634,
+   "sha256": "b8c54f80d666fabc66ccff96e00c5193659fe90e4dbe94636a579a8eb18447fc",
+   "karakter": 1160
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Opening_of_the_Fifth_Seal&oldid=1374736132",
+   "baslik": "Opening of the Fifth Seal",
+   "revid": 1374736132,
+   "surum_tarihi": "2026-09-13T20:58:20Z",
+   "sha256": "313d54f335bff8f7bf08d7ca2afd16f0f1a4f43efeca2e40f4e31cca75f25522",
+   "karakter": 4901
+  }
+ }
+}

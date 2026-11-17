@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1206860",
+ "indirme": "2026-11-17T07:38:41+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1206860.json",
+   "revid": 2569714619,
+   "sha256": "8e7d5a7d8c1d3de98e847197062084109df717ea6b0d30a08936e2c4c1458582",
+   "karakter": 1835
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Bacchus_and_Ariadne&oldid=1385515821",
+   "baslik": "Bacchus and Ariadne",
+   "revid": 1385515821,
+   "surum_tarihi": "2026-11-13T18:10:41Z",
+   "sha256": "8fbf4fb6777520aba2cdbe0e41077f8796814291bb80f774277f0de216116e4c",
+   "karakter": 12661
+  }
+ }
+}

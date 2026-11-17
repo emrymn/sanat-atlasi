@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q6119366",
+ "indirme": "2026-11-17T07:53:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q6119366.json",
+   "revid": 2451275427,
+   "sha256": "f2fca8178d6ffb4367bd21b779bb91ed3b7e261deaa5645a66a6e74d0b025cc4",
+   "karakter": 1167
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Saint_Martin_and_the_Beggar_%28El_Greco%29&oldid=1382803187",
+   "baslik": "Saint Martin and the Beggar (El Greco)",
+   "revid": 1382803187,
+   "surum_tarihi": "2026-10-30T11:10:51Z",
+   "sha256": "b7b32ca58ae9a777e0e94db1d656e12e1d606005ec34ce7043a5dc03c2366122",
+   "karakter": 904
+  }
+ }
+}

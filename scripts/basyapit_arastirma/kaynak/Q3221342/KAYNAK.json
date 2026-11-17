@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3221342",
+ "indirme": "2026-11-17T07:57:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3221342.json",
+   "revid": 2531387016,
+   "sha256": "75924015608bec69603626d4cd3434338670dd8a524fd7dd96bc79f771be32ca",
+   "karakter": 805
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Christ_on_the_Cross_%28Zurbar%C3%A1n%29&oldid=1354362774",
+   "baslik": "Christ on the Cross (Zurbarán)",
+   "revid": 1354362774,
+   "surum_tarihi": "2026-05-15T23:17:03Z",
+   "sha256": "d9d8e3a99b4f90e98427d7d0e6460dac26d97585aa41289c035fa493de739ab5",
+   "karakter": 846
+  }
+ }
+}

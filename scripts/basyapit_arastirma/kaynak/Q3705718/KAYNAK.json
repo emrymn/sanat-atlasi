@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3705718",
+ "indirme": "2026-11-17T07:59:10+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3705718.json",
+   "revid": 2389093351,
+   "sha256": "26a123566a21d2fbce93771a0e91480bbdcba359316afde359c33831d0309c53",
+   "karakter": 766
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Volterra_Deposition&oldid=1385989652",
+   "baslik": "Volterra Deposition",
+   "revid": 1385989652,
+   "surum_tarihi": "2026-11-16T07:50:12Z",
+   "sha256": "e330c6aff979b3890d2e76675923836e6180e9601cee703ca3137f71ea292bab",
+   "karakter": 1713
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3829156",
+ "indirme": "2026-11-17T07:44:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3829156.json",
+   "revid": 2569929047,
+   "sha256": "4c2c4f00b45036d373f687b5432850a279ada227f931f2438bac1327f350c215",
+   "karakter": 603
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Three_Ages_of_Woman_%28Klimt%29&oldid=1371875902",
+   "baslik": "The Three Ages of Woman (Klimt)",
+   "revid": 1371875902,
+   "surum_tarihi": "2026-08-29T01:37:38Z",
+   "sha256": "3c2d8da8c8874cc3e4c822a6851d52d9b20d960384a2f567c040d41c53d898e7",
+   "karakter": 3937
+  }
+ }
+}

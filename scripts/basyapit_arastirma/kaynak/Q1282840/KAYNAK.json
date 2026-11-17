@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1282840",
+ "indirme": "2026-11-17T07:42:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1282840.json",
+   "revid": 2569714671,
+   "sha256": "0aa475ad5dc1fbce2c1f0c68ec700b5e612d10fa6ffd91130c8140a5d73e4e3c",
+   "karakter": 1348
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Napoleon_I_on_His_Imperial_Throne&oldid=1376145840",
+   "baslik": "Napoleon I on His Imperial Throne",
+   "revid": 1376145840,
+   "surum_tarihi": "2026-09-22T09:44:03Z",
+   "sha256": "29b5292a692fd506a4f858fd9fc8e4934da1d0a755df8f763d8f6a14c76ac48c",
+   "karakter": 8236
+  }
+ }
+}

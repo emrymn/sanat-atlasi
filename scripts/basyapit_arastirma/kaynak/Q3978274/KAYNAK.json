@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3978274",
+ "indirme": "2026-11-17T07:47:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3978274.json",
+   "revid": 2570232831,
+   "sha256": "35ab6f16d2f017c8cce638db660b62406ca73070d6f09c58779b3ef61276cd28",
+   "karakter": 914
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Susanna_and_the_Elders_%28Artemisia_Gentileschi%2C_Pommersfelden%29&oldid=1354361778",
+   "baslik": "Susanna and the Elders (Artemisia Gentileschi, Pommersfelden)",
+   "revid": 1354361778,
+   "surum_tarihi": "2026-05-15T23:10:16Z",
+   "sha256": "9da1fe0d1ff1f4c7e1008ad2d9526ebd1818c03be6e4ca6a886058ba09ba7c9f",
+   "karakter": 8408
+  }
+ }
+}

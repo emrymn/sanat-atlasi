@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q379906",
+ "indirme": "2026-11-17T08:03:09+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q379906.json",
+   "revid": 2468947535,
+   "sha256": "acea6858d53aa99fcf1b9d1d4efecd7025823223d1c93e9e0d329579072f25c1",
+   "karakter": 775
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Fortune_Teller_%28La_Tour%29&oldid=1368221433",
+   "baslik": "The Fortune Teller (La Tour)",
+   "revid": 1368221433,
+   "surum_tarihi": "2026-08-07T19:48:10Z",
+   "sha256": "341086860b5d4107ee98587b1114b91d143da8334b783a760a247e036bbd5407",
+   "karakter": 3567
+  }
+ }
+}

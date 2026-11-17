@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2324643",
+ "indirme": "2026-11-17T07:38:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2324643.json",
+   "revid": 2506650872,
+   "sha256": "07ea296b7b15b098020db5843b0cf36e0cc81c45180bd34781bdbb2e76b42888",
+   "karakter": 787
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Judith_I&oldid=1361276304",
+   "baslik": "Judith I",
+   "revid": 1361276304,
+   "surum_tarihi": "2026-06-26T21:40:59Z",
+   "sha256": "e3f3724ab2e36adc3ca941b5b502dbbcb6253f9f045a18a0e469aea4e8ef8726",
+   "karakter": 5666
+  }
+ }
+}

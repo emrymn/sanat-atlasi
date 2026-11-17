@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2665048",
+ "indirme": "2026-11-17T07:40:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2665048.json",
+   "revid": 2569622800,
+   "sha256": "9cf8a1fbe34aa36c7af581c6a249ceafa7bf3b86291a6ea78e19aec95684ae21",
+   "karakter": 1726
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Dante_and_Virgil&oldid=1377694934",
+   "baslik": "Dante and Virgil",
+   "revid": 1377694934,
+   "surum_tarihi": "2026-09-30T16:53:13Z",
+   "sha256": "db39c144478217f4975885d477a41c110cca64dd61905623200fb6e48a8cde2e",
+   "karakter": 1141
+  }
+ }
+}

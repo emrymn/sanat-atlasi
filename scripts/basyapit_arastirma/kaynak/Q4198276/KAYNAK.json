@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q4198276",
+ "indirme": "2026-11-17T08:03:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4198276.json",
+   "revid": 2516187811,
+   "sha256": "cb30a7ebe71d5ee543a9a2bda6df845a1cb6a19fe2a7bb557d9fa055a25ded1e",
+   "karakter": 626
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Isabella_and_the_Pot_of_Basil&oldid=1378240022",
+   "baslik": "Isabella and the Pot of Basil",
+   "revid": 1378240022,
+   "surum_tarihi": "2026-10-03T17:09:49Z",
+   "sha256": "e29099741bdedf68dc8fb260030a2c07afc71a80869429ed4c7dbca7d4e2801f",
+   "karakter": 3300
+  }
+ }
+}

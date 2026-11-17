@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q5916308",
+ "indirme": "2026-11-17T07:55:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q5916308.json",
+   "revid": 2468708824,
+   "sha256": "7042424b41f51f564bb3aa6017a99d7f7467436ca7176a05d17d4bb88748ec32",
+   "karakter": 898
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Immaculate_Conception_%28Tiepolo%29&oldid=1373487007",
+   "baslik": "The Immaculate Conception (Tiepolo)",
+   "revid": 1373487007,
+   "surum_tarihi": "2026-09-06T06:00:56Z",
+   "sha256": "861de74aa7253b1ab37c736793c42b06b70e442d89887386ba6aba1a7bc84e6d",
+   "karakter": 5826
+  }
+ }
+}

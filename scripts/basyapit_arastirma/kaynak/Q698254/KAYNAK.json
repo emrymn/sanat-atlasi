@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q698254",
+ "indirme": "2026-11-17T07:46:03+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q698254.json",
+   "revid": 2569714528,
+   "sha256": "56db43880ee49d843a3a9b443696c553a5c22be5c7a4b070f56e7773d7c85f92",
+   "karakter": 1085
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Return_of_the_Herd&oldid=1385989650",
+   "baslik": "The Return of the Herd",
+   "revid": 1385989650,
+   "surum_tarihi": "2026-11-16T07:50:11Z",
+   "sha256": "71be1cb064f449651c0066cb7ba9834658af8e98c69d663868005adcb0ce97c1",
+   "karakter": 798
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=S%C3%BCr%C3%BCn%C3%BCn_Geri_D%C3%B6n%C3%BC%C5%9F%C3%BC&oldid=34664678",
+   "baslik": "Sürünün Geri Dönüşü",
+   "revid": 34664678,
+   "surum_tarihi": "2025-01-18T04:28:56Z",
+   "sha256": "9e40b2b64a7efc0f047d0427578275f5254d60434360ee0febdeb378f65ad48c",
+   "karakter": 287
+  }
+ }
+}

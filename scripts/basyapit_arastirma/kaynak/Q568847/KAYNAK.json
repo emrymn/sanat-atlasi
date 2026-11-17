@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q568847",
+ "indirme": "2026-11-17T07:36:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q568847.json",
+   "revid": 2568693665,
+   "sha256": "ccd2b9306cd0df32151ee720510b69bf2575621d458f8b8c740af9977cd4c8c2",
+   "karakter": 1624
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Descent_from_the_Cross_%28van_der_Weyden%29&oldid=1364130677",
+   "baslik": "The Descent from the Cross (van der Weyden)",
+   "revid": 1364130677,
+   "surum_tarihi": "2026-07-14T18:09:32Z",
+   "sha256": "eb4db7d58989945d6a2b2f88a81155716ea968d5974fbe72d446726703e36ad9",
+   "karakter": 13757
+  }
+ }
+}

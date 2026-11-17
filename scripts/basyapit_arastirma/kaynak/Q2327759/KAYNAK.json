@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q2327759",
+ "indirme": "2026-11-17T07:48:17+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2327759.json",
+   "revid": 2569635555,
+   "sha256": "e2c59a117c782adef4d522ecf0b5452132af38d9702e53c8cc8aea0181663926",
+   "karakter": 885
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Torment_of_Saint_Anthony&oldid=1364610486",
+   "baslik": "The Torment of Saint Anthony",
+   "revid": 1364610486,
+   "surum_tarihi": "2026-07-17T14:42:57Z",
+   "sha256": "1fd35d577172e0e674c759481f061a357579f28a02f875d41217b234b7e4ffa7",
+   "karakter": 2808
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Aziz_Antonio%27nun_Azab%C4%B1&oldid=36153426",
+   "baslik": "Aziz Antonio'nun Azabı",
+   "revid": 36153426,
+   "surum_tarihi": "2025-10-09T17:34:22Z",
+   "sha256": "fb97c669e59d5022607af9c88f0ed2a8708d2a132aed5d4d846baec6b5d80d71",
+   "karakter": 1650
+  }
+ }
+}

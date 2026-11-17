@@ -1,0 +1,50 @@
+{
+ "anahtar": "Q5962062",
+ "baslik_tr": "Şafak",
+ "kunye": {
+  "sanatci": {"deger": "William-Adolphe Bouguereau", "kaynak": "wikidata.txt", "alinti": "creator (P170): William-Adolphe Bouguereau (Q483992)"},
+  "tarih": {"deger": "1881", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1881", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "enwiki.txt", "alinti": "is an oil-on-canvas painting"},
+  "olcu": {"deger": "214.9 × 107 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 214.9 centimetre width (P2049): 107 centimetre", "ihtiyat": false},
+  "yer": {"deger": "Birmingham Museum of Art", "kaynak": "wikidata.txt", "alinti": "location (P276): Birmingham Museum of Art (Q865736)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tabloda Aurora betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Aurora (Q178831)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser, mitolojik tablo türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): mythological painting (Q3374376)", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Resimde şafak betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): dawn (Q11326182)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Resimde bir kadın betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): woman (Q467)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resimde bele kadar uzanan saçlar betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): waist-length hair (Q14130)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Resimde şeffaf giysi betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): see-through clothing (Q2004245)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resimde bir atkı betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): scarf (Q191022)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Resimde çıplaklık betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): nudity (Q10791)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Resimde dans betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): dance (Q11639)", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Resimde nilüfer betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): water lily (Q3347071)", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Resimde gökyüzü betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sky (Q527)", "ihtiyat": false},
+  {"id": "C12", "bolum": "gorunen", "iddia": "Resimde kırsal bir alan betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): rural area (Q175185)", "ihtiyat": false},
+  {"id": "C13", "bolum": "gorunen", "iddia": "Resimde yapay bir havuz betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): artificial pond (Q3253281)", "ihtiyat": false},
+  {"id": "C14", "bolum": "gorunen", "iddia": "Resimde aynasal yansıma betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): specular reflection (Q1079524)", "ihtiyat": false},
+  {"id": "C15", "bolum": "kompozisyon", "iddia": "Eser, tuval üzerine yağlıboya tekniğiyle yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "is an oil-on-canvas painting", "ihtiyat": false},
+  {"id": "C16", "bolum": "kompozisyon", "iddia": "Eser, akademik sanat akımı içinde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): academic art (Q189458)", "ihtiyat": false},
+  {"id": "C17", "bolum": "anlam", "iddia": "Eser, alegori türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): allegory (Q2839016)", "ihtiyat": false},
+  {"id": "C18", "bolum": "anlam", "iddia": "Eser, nü türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): nude (Q40446)", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Eser, 'Times of Day' adlı tuval serisinin ilk resmidir.", "kaynak": "enwiki.txt", "alinti": "This is the first in a series of canvases representing the four Times of Day: the others were Dusk in 1882; Night in 1883; and Day in 1884.", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Tablo, 1881-02-02 ile 1881-03-28 arasında Goupil & Co'ya aitti.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Goupil & Co (Q942370) [start time: 1881-02-02; end time: 1881-03-28]", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Tablonun Samuel Putnam Avery sahipliği 1881-03-28'de başlar.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Samuel Putnam Avery (Q3819081) [start time: 1881-03-28]", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Charles J. Osborn'un sahipliği 1893-01-27'de sona erdi.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Charles J. Osborn (Q18536504) [end time: 1893-01-27]", "ihtiyat": false},
+  {"id": "C23", "bolum": "onem", "iddia": "Tablo, 1893-01-27 ile 1920-01-29 arasında American Art Association'a aitti.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): American Art Association (Q16961275) [start time: 1893-01-27; end time: 1920-01-29]", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Tablo, 1920-01-29 ile 1921-02-03 arasında Joseph Raphael De Lamar'a aitti.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Joseph Raphael De Lamar (Q6286486) [start time: 1920-01-29; end time: 1921-02-03]", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "American Art Association'ın sahipliği 1921-02-03'te başlar.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): American Art Association (Q16961275) [start time: 1921-02-03]", "ihtiyat": false},
+  {"id": "C26", "bolum": "onem", "iddia": "Eser günümüzde Birmingham Museum of Art'tadır.", "kaynak": "enwiki.txt", "alinti": "It is now in the Birmingham Museum of Art.", "ihtiyat": false},
+  {"id": "C27", "bolum": "onem", "iddia": "Eserin envanter numarası 2005.111'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 2005.111", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "İngilizce başlık", "a": {"kaynak": "wikidata.txt", "alinti": "title (P1476): Times of Day [en]"}, "b": {"kaynak": "enwiki.txt", "alinti": "Dawn (French: L'Aurore), also known as the Girl with a Lily"}},
+  {"konu": "betimlenen saç rengi", "a": {"kaynak": "wikidata.txt", "alinti": "depicts (P180): red hair (Q152357)"}, "b": {"kaynak": "wikidata.txt", "alinti": "depicts (P180): chestnut hair (Q5094009)"}}
+ ],
+ "bulunamadi": [
+  "anlam: kaynakta simge yorumu, modelin kimliği ve sipariş amacı yok; yalnız alegori/nü tür sınıflandırmaları var",
+  "kompozisyon: ışık, renk düzeni, alt çizim ve restorasyon bilgisi kaynakta yok",
+  "hikaye: mitolojik/metinsel anlatının ayrıntısı kaynakta yok; yalnız Aurora adı, şafak ve mitolojik tür var",
+  "onem: sipariş bilgisi kaynakta yok; yalnız sahiplik zinciri ve seri konumu var"
+ ]
+}

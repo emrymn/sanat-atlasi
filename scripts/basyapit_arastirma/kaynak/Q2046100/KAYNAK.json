@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2046100",
+ "indirme": "2026-11-17T07:38:36+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2046100.json",
+   "revid": 2569635524,
+   "sha256": "433f0b456ab092b5895153f7939351e728bad7df90a5c10133aff288a878a59a",
+   "karakter": 919
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Flora_%28Titian%29&oldid=1361271549",
+   "baslik": "Flora (Titian)",
+   "revid": 1361271549,
+   "surum_tarihi": "2026-06-26T21:07:35Z",
+   "sha256": "c132b2160f90ab01d12bb0f9ccd5a369f6ef9abe513ff613ba1bf3f63f06ffe3",
+   "karakter": 1772
+  }
+ }
+}

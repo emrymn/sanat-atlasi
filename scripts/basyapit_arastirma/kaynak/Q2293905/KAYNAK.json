@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2293905",
+ "indirme": "2026-11-17T07:36:20+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2293905.json",
+   "revid": 2568693390,
+   "sha256": "9530f07c81d0d7924d1abca49fa962ad5d1a23fa70136d4b38f3419a01474d42",
+   "karakter": 715
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Medusa_%28Caravaggio%29&oldid=1385981566",
+   "baslik": "Medusa (Caravaggio)",
+   "revid": 1385981566,
+   "surum_tarihi": "2026-11-16T06:36:37Z",
+   "sha256": "94727c028405bff3faad721b1835c36eb93880e0c26a2ea3b3d66bde1aabf871",
+   "karakter": 7451
+  }
+ }
+}

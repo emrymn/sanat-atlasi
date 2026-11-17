@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q351300",
+ "indirme": "2026-11-17T07:36:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q351300.json",
+   "revid": 2503395922,
+   "sha256": "4c338d4c9fdd49866a469c8a53c1430abcf3c1363c410670b79d90226b29bdbf",
+   "karakter": 1028
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adam_and_Eve_%28D%C3%BCrer%29&oldid=1384275497",
+   "baslik": "Adam and Eve (Dürer)",
+   "revid": 1384275497,
+   "surum_tarihi": "2026-11-07T13:12:44Z",
+   "sha256": "89a31b27744eab5e716d6863ee1e5dddbdaf5f316e7925ab312370b439fe8268",
+   "karakter": 18702
+  }
+ }
+}

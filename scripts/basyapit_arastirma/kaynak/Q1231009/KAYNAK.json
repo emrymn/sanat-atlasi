@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1231009",
+ "indirme": "2026-11-17T07:34:14+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1231009.json",
+   "revid": 2560185430,
+   "sha256": "58ebd82d0af66ff846b01f4e4c1afabba730d4163b17bc895589f0671c5ea4be",
+   "karakter": 4589
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Coronation_of_Napoleon&oldid=1361423647",
+   "baslik": "The Coronation of Napoleon",
+   "revid": 1361423647,
+   "surum_tarihi": "2026-06-27T21:05:45Z",
+   "sha256": "e48ae0444d0e3dee8381bed9035434b98ae9688b09044e4dac47e9c094b88fde",
+   "karakter": 6657
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Le_Sacre_de_Napol%C3%A9on&oldid=37239884",
+   "baslik": "Le Sacre de Napoléon",
+   "revid": 37239884,
+   "surum_tarihi": "2026-05-30T14:16:17Z",
+   "sha256": "fd96a2abebc5f6bc780ce3feba4a27a1c1585b6c866e883f6c6d36bca7746ad7",
+   "karakter": 1542
+  }
+ }
+}

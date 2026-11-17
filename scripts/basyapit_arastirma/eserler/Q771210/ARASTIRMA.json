@@ -1,0 +1,34 @@
+{
+ "anahtar": "Q771210",
+ "baslik_tr": "Meryem'in Göğe Alınışı (Parma Katedrali Kubbesi)",
+ "kunye": {
+  "sanatci": {"deger": "Antonio da Correggio", "kaynak": "wikidata.txt", "alinti": "creator (P170): Antonio da Correggio (Q8457)"},
+  "tarih": {"deger": "yaklaşık 1526", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1526 [sourcing circumstances: circa (Q5727902)]", "ihtiyat": true},
+  "teknik": {"deger": "fresk", "kaynak": "wikidata.txt", "alinti": "made from material (P186): fresco (Q25631150)"},
+  "olcu": {"deger": "1093 × 1195 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 1093 centimetre width (P2049): 1195 centimetre"},
+  "yer": {"deger": "Parma Katedrali, Parma, İtalya", "kaynak": "wikidata.txt", "alinti": "location (P276): Parma Cathedral (Q1287889) location (P276): Italy (Q38) location (P276): Parma (Q2683)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eserin ana konusu, Meryem'in Göğe Alınışı'dır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Assumption of Mary (Q162691)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Kırmızı ve mavi giysili Meryem, İsa'nın ayaklarının altında, şarkı söyleyen ya da müzik yapan meleklerin girdabıyla yukarı kaldırılır.", "kaynak": "enwiki.txt", "alinti": "Below the feet of Jesus, the uncorrupt Virgin in red and blue robes is lofted upward by a vortex of singing or otherwise musical angels.", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Vaftizci Yahya kuzusuyla, Aziz Hilary sarı pelerinle, Aziz Thomas (veya Joseph) şehitlik palmiye yaprağını taşıyan bir melekle ve yukarı bakan tek figür olan Aziz Bernard betimlenir.", "kaynak": "enwiki.txt", "alinti": "St. John the Baptist with the lamb, St. Hilary with a yellow mantle, St. Thomas (or Joseph) with an angel carrying the martyrdom palm leaf, and St. Bernard, the sole figure looking upwards.", "ihtiyat": true},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Kubbe kaidesini çevreleyen, pencereler arasındaki şaşkın havariler, Meryem'i henüz içine yerleştirdikleri boş mezarın çevresinde duruyormuş gibi betimlenir.", "kaynak": "enwiki.txt", "alinti": "Ringing the base of the dome, between the windows, stand the perplexed Apostles, as if standing around the empty tomb in which they have just placed her.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kutsanmışlar grubunda Adem, Havva ve Holofernes'in başıyla Yudit görülür.", "kaynak": "enwiki.txt", "alinti": "In the group of the blessed can be seen: Adam and Eve, Judith with the head of Holofernes.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Kubbenin merkezinde, annesini karşılamak üzere aşağı inen, kısaltma (foreshortening) tekniğiyle resmedilmiş sakalsız bir İsa vardır.", "kaynak": "enwiki.txt", "alinti": "At the centre of the dome is a foreshortened beardless Jesus descending to meet his mother.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Kompozisyon, Melozzo da Forlì'nin perspektifinden etkilenmiştir.", "kaynak": "enwiki.txt", "alinti": "The composition was influenced by Melozzo da Forlì's perspective", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Correggio'nun bu eserinde ve Barok mirasçılarının eserlerinde, mimari yüzeyin tamamı devasa oranlarda tek bir resimsel birim olarak ele alınır.", "kaynak": "enwiki.txt", "alinti": "In Correggio's work, and in the work of his Baroque heirs, the entire architectural surface is treated as a single pictorial unit of vast proportions", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Figürler, izleyicinin mekanına taşıyormuş gibi görünen illüzyonist bir kısaltma (foreshortening) tekniğiyle betimlenir.", "kaynak": "enwiki.txt", "alinti": "The illusionistic manner in which the figures seem to protrude into the spectators' space was, at the time, an audacious and astounding use of foreshortening", "ihtiyat": true},
+  {"id": "C10", "bolum": "anlam", "iddia": "Mimari yüzey resimle açılarak kilisenin kubbesi, göğün kubbesiyle eşitlenir.", "kaynak": "enwiki.txt", "alinti": "opened up via painting, so that the dome of the church is equated with the vault of heaven", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Kubbe kaidesinin süslemesi, Parma'nın dört koruyucu azizini temsil eder.", "kaynak": "enwiki.txt", "alinti": "the decoration of the dome base, which represents the four protector saints of Parma", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Correggio, bu resim için sözleşmeyi 3 Kasım 1522'de imzaladı.", "kaynak": "enwiki.txt", "alinti": "Correggio signed the contract for the painting on November 3, 1522.", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Fresk, 1530'da tamamlandı.", "kaynak": "enwiki.txt", "alinti": "It was finished in 1530.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Correggio'nun bu eseri, 17. yüzyıl Barok döneminin dramatik-illüzyonist, di sotto in su tavan resimleri için bir katalizör ve ilham kaynağı olmuştur.", "kaynak": "enwiki.txt", "alinti": "Correggio's Assumption would eventually serve as a catalyst and inspiration for the dramatically-illusionistic, di sotto in su ceiling paintings of the 17th-century Baroque period.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Bu eser, Carlo Cignani'nin Forlì katedralindeki Meryem'in Göğe Alınışı freskine ve Giovanni Lanfranco'nun Roma'daki Sant'Andrea della Valle kilisesinin kubbe freskine ilham vermiştir.", "kaynak": "enwiki.txt", "alinti": "Among many other works, Correggio's Assumption inspired Carlo Cignani for his fresco Assumption of the Virgin, in the cathedral church of Forlì; and Giovanni Lanfranco's fresco of the dome in the church of Sant'Andrea della Valle in Rome.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Bu teknik, daha sonra illüzyonist tonoz süslemesinde uzmanlaşan Barok sanatçılar arasında yaygınlaştı.", "kaynak": "enwiki.txt", "alinti": "the technique later became common among Baroque artists who specialized in illusionistic vault decoration", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1526 [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "Correggio signed the contract for the painting on November 3, 1522. It was finished in 1530."}},
+  {"konu": "üslup/akım sınıflandırması", "a": {"kaynak": "wikidata.txt", "alinti": "movement (P135): Mannerism (Q131808)"}, "b": {"kaynak": "enwiki.txt", "alinti": "a fresco by the Italian Late Renaissance artist Antonio da Correggio"}}
+ ],
+ "bulunamadi": ["hikaye: kaynakta Meryem'in Göğe Alınışı olayının hangi metinden (İncil/apokrif) aktarıldığı belirtilmiyor"]
+}

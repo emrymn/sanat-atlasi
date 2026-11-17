@@ -1,0 +1,288 @@
+{
+ "anahtar": "Q568847",
+ "baslik_tr": "Çarmıhtan İndiriliş",
+ "kunye": {
+  "sanatci": {
+   "deger": "Rogier van der Weyden",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Rogier van der Weyden (Q68631)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1435",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1435 [sourcing circumstances: circa (Q5727902)]",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "panel üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"
+  },
+  "olcu": {
+   "deger": "204,5 × 261,5 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 204.5 centimetre width (P2049): 261.5 centimetre"
+  },
+  "yer": {
+   "deger": "Museo del Prado, Madrid",
+   "kaynak": "enwiki.txt",
+   "alinti": "now in the Museo del Prado, Madrid"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Konu, çarmıha gerilmiş İsa'nın çarmıhtan indirilmesidir; cansız bedenini Arimatealı Yusuf ile Nikodemos tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The crucified Christ is lowered from the cross, his lifeless body held by Joseph of Arimathea and Nicodemus.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Kanonik İnciller'e göre Arimatealı Yusuf İsa'nın bedenini alıp gömülmeye hazırlar; Yuhanna 19:38–42'de yardımcı olarak Nikodemos eklenir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to the canonical gospels, Joseph of Arimathea took Christ's body and prepared it for burial. John (19:38–42) adds one assistant, Nicodemus.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Kanonik anlatıların hiçbiri Meryem'den söz etmez; Orta Çağ'da Çile anlatısı ayrıntılanmış ve İsa'nın annesinin rolüne daha çok ilgi gösterilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "None of these accounts mention Mary. During the Middle Ages, the narrative of the Passion became more elaborate, and more attention was paid to the role of Christ's mother.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "14. yüzyılın anonim metni Meditationes de Vita Christi muhtemelen Saksonyalı Ludolph'a aittir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "One example is the anonymous 14th-century text, Meditationes de Vita Christi, perhaps by Ludolph of Saxony.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C05",
+   "bolum": "hikaye",
+   "iddia": "Barbara Lane, Vita Christi'deki bir pasajın Rogier'in yapıtı dahil birçok İndiriliş resminin ardında olabileceğini öne sürer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Barbara Lane suggests this passage from the Vita Christi might lie behind many paintings of the Deposition, including Rogier's",
+   "ihtiyat": true
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Sanat tarihçisi Lorne Campbell figürleri soldan sağa şöyle tanımlar: Meryem Kleophas, Evangelist Yuhanna, yeşil giysili Meryem Salome, baygın Meryem ve İsa'nın cesedi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Art historian Lorne Campbell has identified the figures in the painting as (from left to right): Mary Cleophas (half-sister to the Virgin Mary); John the Evangelist, Mary Salome (in green, another half-sister of the Virgin Mary), The Virgin Mary (swooning), the corpse of Jesus Christ",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Sanat tarihçisi Lorne Campbell'ın tanımlamasına göre kırmızı giysili figür Nikodemos'tur; merdivendeki genç adam ise Nikodemos'un ya da Arimatealı Yusuf'un hizmetkârıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Nicodemus (in red), a young man on the ladder – either a servant of Nicodemus or of Joseph of Arimathea",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Lorne Campbell'ın tanımlamasına göre Arimatealı Yusuf, resimdeki en görkemli giysi olan altın sırmalı kumaş kaftanlar içindeki figürdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Joseph of Arimathea (in field-of-cloth-of-gold robes, the most sumptuous costume in the painting)",
+   "ihtiyat": true
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Meryem Magdalene, resmin sağında dramatik bir poz alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Mary Magdalene who adopts a dramatic pose on the right of the painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Merdivenin tepesindeki genç adam, İsa'nın bedeninden çıkarılmış çivileri tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the young man at the top of the ladder holding the nails withdrawn from Christ's body",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Resmin yan köşeliklerinde küçük arbalet biçimleri yer alır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The tiny crossbows in the side spandrels of the picture",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Eylem ancak bir omuz genişliği derinliğindeki bir mekânda geçer; buna karşın resimde en az beş derinlik düzeyi bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The action takes place in a space barely a shoulder-width deep, yet there are no fewer than five levels of depth within the painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "İsa'nın bedeninin bükülmüş dış hattı ve kavisli sırtında arbalet biçimi görülür; bu biçimin Büyük Arbaletçiler Loncası'nın himayesini yansıttığı düşünülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The shape of the crossbow can be seen in the bent and contorted outline and curve of Christ's body and arched back, which seems to reflect the patronage of the Greater Guild of Crossbowmen.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Merdiven olanaksız bir perspektiftedir: tepesi çarmıhın arkasında, ayağı ise çarmıhın önünde görünür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the ladder is in an impossible perspective: its top is behind the cross while its foot appears to be in front of the cross",
+   "ihtiyat": true
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Rogier, çarmıh ile merdivenin manzarayla birleştiği noktaları gizlemek için Meryem'in sol bacağını uzatmış, sol ayağı ve mantosuyla çarmıhın tabanını ve merdivenin bir dikmesini örtmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "To conceal the points at which the Cross and the ladder meet the landscape, Rogier has greatly lengthened the Virgin's left leg, so that her left foot and mantle cover the base of the Cross and one upright of the ladder.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Görüntü; bedenin indirilmesi, İndiriliş, Ağıt ve Gömülme dahil İndiriliş sırasındaki ve sonraki tüm aşamaların donmuş bir sentezi olarak yorumlanabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The image can be read as a petrified synthesis of all the stages during and after the Descent from the Cross: the lowering of the corpse, the Deposition, Lamentation and the Entombment.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Arimatealı Yusuf, İsa'nın bedeninin üzerinden Âdem'in kafatasına doğru bakar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Joseph of Arimathea looks across the body towards the skull of Adam.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Bakış, İsa ile annesinin — yeni Âdem ve Havva — ellerini Âdem'in kafatasına bağlar ve böylece Kurtuluş'un özünü görselleştirir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "his gaze links the hands of Christ and his mother, the new Adam and Eve, with the skull of Adam. Thereby visualising the essence of the Redemption.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Meryem'in bayılması oğlunun pozunu yansıtır; bu poz Erken Netherlandish sanatta tümüyle yeniydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The work is unique in the period because of Mary's swoon; her collapse echoes the pose of her son, as far as to the two figures that hold her as she falls. This pose was entirely new for Early Netherlandish art.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Duygu, Thomas à Kempis'in 1418'de yayımlanan The Imitation of Christ adlı popüler eserindeki mistik dindarlığın doğrudan yansımasıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The sentiment, however, is a direct reflection of the mystical devotion expressed by Thomas à Kempis' popular treatise The Imitation of Christ, first published in 1418.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Miri Rubin, 15. yüzyılın başında sanatçıların 'Meryem'in Bayılması'nı betimlemeye başladığını ve van der Weyden'in İndiriliş'inin bu anı gösteren en etkili resim olduğunu yazar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Miri Rubin writes that in the early 15th century artists began to depict the \"Swoon of the Virgin\" or Mary swooning at the foot of the cross or at other moments, and that van der Weyden's Descent was the most influential painting to show this moment.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Bu bayılma, teologlar tarafından spasimo sözcüğüyle tanımlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This swooning was described by theologians with the word spasimo.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Resim, Leuven'in Büyük Arbaletçiler Loncası tarafından sipariş edilmiş ve Duvarların Dışındaki Meryem Ana Şapeli'ne yerleştirilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned by the Greater Guild of Crossbowmen of Leuven and installed in the Chapel of Our Lady Without the Walls.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Van der Weyden, İsa'nın bedenini Leuven okçular loncasının (Schutterij) siparişini yansıtmak için bir arbaletin T biçiminde konumlandırmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Van der Weyden positioned Christ's body in the T-shape of a crossbow to reflect the commission from the Leuven guild of archers (Schutterij) for their chapel Onze-Lieve-Vrouw-van-Ginderbuiten (Notre-Dame-hors-les-Murs).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Resim yaklaşık 1548'de Michael Coxcie'nin bir kopyası ve bir org karşılığında takas edilmiştir; yeni sahibi, Kutsal Roma İmparatoru Charles V'in kız kardeşi Avusturyalı Meryem'dir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was exchanged around 1548 for a copy by Michael Coxcie and an organ. The new owner was Mary of Austria, sister of Holy Roman Emperor, Charles V, for whom she governed the Habsburg Netherlands.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "1558'de yapıtı halası Meryem'den miras alan Philip, resmi İspanya'ya taşıyarak av köşkü El Pardo'ya yerleştirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After inheriting the Descent from his aunt Mary in 1558, Philip transported the painting to Spain, where it was installed in his hunting lodge, El Pardo.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "İç Savaş sırasında resim El Escorial'den Valencia'ya tahliye edilmiş, 1939 yazında trenle İsviçre'ye götürülmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Descent from the Cross was evacuated from El Escorial to Valencia. It was brought to Switzerland by train in the summer of 1939",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "1992'ye gelindiğinde paneldeki çatlaklar resmi bölme tehdidi taşıyor ve boya yüzeyi belirgin biçimde bozuluyordu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "By 1992, the Descent was in a state of decay with cracks in the panel threatening to split the painting, and a marked deterioration of the paint surface.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Prado, Metropolitan Museum of Art'tan George Bisacca'nın gözetiminde resmin büyük bir restorasyonunu gerçekleştirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A major restoration of the painting was carried out by the Prado, under the supervision of George Bisacca from the Metropolitan Museum of Art, New York.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Sanat tarihçilerine göre bu yapıt, İsa'nın çarmıha gerilişini konu alan en etkili Netherlandish resim sayılır ve tamamlandıktan sonraki iki yüzyılda büyük ölçekte kopyalanıp uyarlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Art historians have commented that this work was arguably the most influential Netherlandish painting of Christ's crucifixion, and that it was copied and adapted on a large scale in the two centuries after its completion.",
+   "ihtiyat": true
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "Arimatealı Yusuf ve Nikodemos'un figür kimlikleri (Campbell ile de Vos karşıt tanımlamaları)",
+   "a": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Nicodemus (in red), a young man on the ladder – either a servant of Nicodemus or of Joseph of Arimathea, Joseph of Arimathea (in field-of-cloth-of-gold robes, the most sumptuous costume in the painting)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Dirk de Vos identifies Joseph of Arimathea as the man in red supporting Christ's body, and Nicodemus as the man supporting Christ's legs, the opposite of Campbell's identification."
+   }
+  }
+ ],
+ "bulunamadi": []
+}

@@ -13,6 +13,7 @@ Denetlenenler (kurallar scripts/ayrinti/TALIMAT.md'de):
 """
 import json
 import re
+import unicodedata
 import sys
 from pathlib import Path
 
@@ -53,11 +54,19 @@ def gorsel_adlari():
         basyapitlar = oku(KOK / 'data' / 'basyapitlar.json')['eserler']
     except (OSError, KeyError, ValueError):
         return {}
+    # js/eserler.js duzeltmeleriUygula: data/eser_duzeltmeleri.json'daki gorsel_cikar o kayıttan Commons görselini çıkarır
+    try:
+        gorsel_cikar = oku(KOK / 'data' / 'eser_duzeltmeleri.json').get('gorsel_cikar', {})
+    except (OSError, ValueError):
+        gorsel_cikar = {}
+    normal = lambda a: unicodedata.normalize('NFC', str(a).replace(' ', '_').lower())
     sonuc = {}
     for b in basyapitlar:
         eserler = onbellek.get(b['sanatci'], {}).get('eserler', [])
         e = next((x for x in eserler if (x.get('qid') and x['qid'] == b['anahtar']) or f"{b['sanatci']}|{x.get('baslik')}" == b['anahtar']), None)
-        g = (e or {}).get('gorseller', [{}])[0] if e else None
+        atilan = {normal(a) for a in gorsel_cikar.get(b['sanatci'], {}).get((e or {}).get('qid') or '', [])}
+        gorseller = [x for x in (e or {}).get('gorseller', []) if not (x.get('k') == 'commons' and normal(x.get('d', '')) in atilan)]
+        g = gorseller[0] if gorseller else None
         if not g:
             continue
         anahtar = f"{g.get('k')}:{g.get('d') or g.get('i') or g.get('u') or ''}"

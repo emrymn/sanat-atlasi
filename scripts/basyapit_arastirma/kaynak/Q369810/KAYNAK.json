@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q369810",
+ "indirme": "2026-11-17T07:50:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q369810.json",
+   "revid": 2569898604,
+   "sha256": "dbf69aef07eee945d3fc188cc6d2403224adb733ca4aeba60f113076c05a589e",
+   "karakter": 1724
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_First_Mourning&oldid=1361322080",
+   "baslik": "The First Mourning",
+   "revid": 1361322080,
+   "surum_tarihi": "2026-06-27T04:57:18Z",
+   "sha256": "8630b952fd519cd08e4780be63a55390987ddf3846c3c5a8331c1388d02e4154",
+   "karakter": 657
+  }
+ }
+}

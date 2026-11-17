@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q743643",
+ "indirme": "2026-11-17T07:48:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q743643.json",
+   "revid": 2468947755,
+   "sha256": "7f0aa1a4e1e7452555e1cddbe42c35984250bc9ed83870a21c1e4aed96955ad3",
+   "karakter": 826
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Joseph_the_Carpenter&oldid=1361276192",
+   "baslik": "Joseph the Carpenter",
+   "revid": 1361276192,
+   "surum_tarihi": "2026-06-26T21:40:13Z",
+   "sha256": "fa462d36fc0527aa633895c9bafc037a26de1b2b20056b50dea09f5ba2adda0b",
+   "karakter": 2081
+  }
+ }
+}

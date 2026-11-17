@@ -1,0 +1,291 @@
+{
+ "anahtar": "Q636537",
+ "baslik_tr": "Marat'nın Ölümü",
+ "kunye": {
+  "sanatci": {
+   "deger": "Jacques-Louis David",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Jacques-Louis David (Q83155)"
+  },
+  "tarih": {
+   "deger": "1793 (Ekim)",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1793-10",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "165 × 128 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 165 centimetre width (P2049): 128 centimetre"
+  },
+  "yer": {
+   "deger": "Belçika Kraliyet Güzel Sanatlar Müzeleri",
+   "kaynak": "wikidata.txt",
+   "alinti": "collection (P195): Royal Museums of Fine Arts of Belgium (Q377500)"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, ressamın dostu olan ve öldürülen Fransız devrimci lider Jean-Paul Marat'yı betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "depicting the artist's friend and murdered French revolutionary leader, Jean-Paul Marat",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Marat, 13 Temmuz 1793'te Charlotte Corday tarafından bıçaklanarak öldürülmüştür.",
+   "kaynak": "trwiki.txt",
+   "alinti": "13 Temmuz 1793 günü Marat'ya önemli belgelerden bahsedeceği bahanesiyle evine gelen Charlotte Corday isimli bir kadın tarafından bıçaklanarak öldürülen Marat, Panthéon'na defnedildi.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Marat, cilt hastalığı nedeniyle vaktinin çoğunu küvette geçirir ve sık sık orada çalışırdı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Marat suffered from a skin condition that caused him to spend much of his time in his bathtub; he would often work there.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Corday, Marat'yı ölümcül biçimde bıçakladıktan sonra kaçmaya çalışmamış, yargılanıp idam edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Corday fatally stabbed Marat, but she did not attempt to flee. She was later tried and executed for the murder.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "hikaye",
+   "iddia": "Marat, öldürüldüğü sırada L'Ami du peuple gazetesinin bir provasını düzeltiyordu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "When he was murdered, Marat was correcting a proof of his newspaper L'Ami du peuple.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "hikaye",
+   "iddia": "David, Marat'yı cinayetten bir gün önce ziyaret etmiş ve olaydan etkilenerek hemen tabloyu yapmaya başlamıştır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "David, Marat'yı cinayetten bir gün önce ziyaret etmişti. Bu olaydan oldukça etkilenen sanatçı, hemen tabloyu yapmaya başlar.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Eserde Marat, beyaz çarşaflı bir küvetin içinde, sağ eli aşağı sarkmış halde resmedilmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Eserde Marat beyaz çarşaflı bir küvetin içerisinde, sağ eli aşağı sarkmış halde resmedilmiş.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Küvetin hemen önünde, Marat'nın çalışma masası olan yeşil örtülü küçük bir masa vardır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Küvetin tam önünde yeşil örtülü küçük bir masa var. Bu Marat'nın çalışma masasıdır.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Marat'nın sağ elinde bir tüy kalem vardır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Marat'nın sağ elinde bir tüy kalem var.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Kalemden biraz ötede, cinayetin işlendiği kanlı bıçak resmedilmiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Kalemden biraz kenarda ise cinayetin işlendiği kanlı bıçak resmedilmiş.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Marat'nın sol elinde, üzerinde cinayet anında sıçrayan kan lekeleri bulunan Corday'nin izin kâğıdı durur.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Marat'nın sol elinde ise Corday'nin yazdığı izin kâğıdı duruyor. Kâğıtta Fransızca \"Il suffit que je sois bien malheureuse pour avoir droit a votre bienveillance\" (\"Benim büyük mutsuzluğum sizin hayırseverliğinize ulaşmama vesile olacaktır\") yazılmıştır. Kâğıdın üstünde cinayet işlenen zaman sıçrayan kan lekeleri var.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Çalışma masasının önündeki levhada Marat'nın ve ressamın adı yazar; altındaki “L’an Deux” yazısı cumhuriyetin 2. yılına işaret eder.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Çalışma masasının önündeki levhanın üzerinde Marat'nın adı ve ressamın kendi adı yazıyor. Levhanın altında yazılan “L’an Deux” cumhuriyetin 2. yılı olduğuna işarettir.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "gorunen",
+   "iddia": "Eserde katil Corday'ye yer verilmemiştir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Corday'ye ise eserde yer verilmemiş.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "gorunen",
+   "iddia": "Marat'nın vücudunda bıçak yarasından başka, deri sorunları dahil hiçbir kusur görünmez.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Üstelik onun vücudunda bıçak yarasından başka, derisindeki sorunlar dahil hiçbir kusur gözükmüyor.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo, aşağı sarkan uzun kol benzerliğiyle Michelangelo'nun Pietà'sına benzetilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Death of Marat has often been compared to Michelangelo's Pietà, a major similarity being the elongated arm hanging down in both works.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Marat'nın yüzü ve bedeni yumuşak, parlayan bir ışıkla yıkanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He painted Marat, martyr of the Revolution, in a style reminiscent of a Christian martyr, with the face and body bathed in a soft, glowing light.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Marat'nın tasvir edildiği pozisyon bir Orta Çağ heykelini andırır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Öyle ki, Marat'nın tasvir edildiği pozisyon bir Orta Çağ heykelini andırıyor.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "David, monarşi ve Katolik Kilisesiyle uzun süredir ilişkili kutsal nitelikleri yeni Fransız Cumhuriyeti'ne aktarmayı amaçlamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "David sought to transfer the sacred qualities long associated with the monarchy and the Catholic Church to the new French Republic.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "David, Devrim'in şehidi Marat'yı Hristiyan şehitlerini andıran bir üslupla resmetmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He painted Marat, martyr of the Revolution, in a style reminiscent of a Christian martyr",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Marat'nın pozisyonu Caravaggio'nun İsa'nın Mezara Konuluşu'ndaki İsa'nın pozisyonuyla aynıdır; ressam böylece dostunun da İsa gibi şehit olduğunu anlatmaya çalışır.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Marat'nın pozisyonu, Caravaggio'nun İsa'nın Mezara Konuluşu isimli tablosundaki İsa'nın pozisyonu ile aynıdır. Ressam bununla dostunun da İsa gibi şehit olduğunu anlatmaya çalışıyor.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Ressam, kalem ile bıçağı karşılaştırarak gazetecilerin silahı ile Jirondenlerin silahı arasındaki farkı ortaya koyar.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Kalemle bıçağı karşılaştıran ressam, gazetecilerin silahı ile Jirondenlerin silahı arasındaki farkı ortaya koyuyor.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Tablodaki not, Corday'nin gerçek bir sözü değil, onun muhtemelen söylemiş olabileceği şeye dayanan kurgusal bir ifadedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the painting, the note Marat is holding is not an actual quotation of Corday, but a fictional expression based on what Corday might have said.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Sanat tarihçisi Clark, 2001'de tabloyu ilk modernist yapıt olarak nitelemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 2001, art historian T. J. Clark called David's painting the first modernist work for \"the way it took the stuff of politics as its material, and did not transmute it\".",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Artforum'a göre tablo, bazı araştırmacıların modernizmi tek başına başlattığını ileri sürdüğü kadar yenilikçi bir devrim ikonudur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to Artforum, the painting was \"a revolutionary icon so novel in its approach to painting that some scholars insist it singlehandedly inaugurated modernism.\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "David'in öğrencileri 1793–1794'te tablonun çeşitli kopyalarını yapmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Several copies of the painting were made by David's pupils in 1793–1794, when the image was a popular symbol of martyrdom amid the Reign of Terror.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "David'in 1825'teki ölümünden sonra ailesi tabloyu satmaya çalışmış ancak başaramamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After David's death in 1825, his family tried unsuccessfully to sell the painting.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Tablo, 1893'te Belçika Kraliyet Güzel Sanatlar Müzeleri tarafından edinilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was acquired by the Royal Museums of Fine Arts of Belgium in 1893.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Proudhon ve Baudelaire'in 1845'te Bazar Bonne-Nouvelle'de gördükleri tabloyu övmesi üzerine yeniden ilgi doğmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There was renewed interest in the painting after Pierre-Joseph Proudhon and Charles Baudelaire praised the work after seeing it at the Bazar Bonne-Nouvelle in 1845.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Tablo, 20. yüzyılda Pablo Picasso ve Edvard Munch gibi sanatçılara ilham vermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the 20th century, David's painting inspired artists such as Pablo Picasso and Edvard Munch, poets (Alessandro Mozzambani) and writers (Peter Weiss' play Marat/Sade).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Tabloda görünen, kan ve küvet suyu lekeleri hâlâ seçilen mektup günümüze ulaşmış ve Robert Lindsay'nin mülkiyetinde olmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The letter that appears in the painting, with blood-stains and bath water marks still visible, has survived and was owned by Robert Lindsay, 29th Earl of Crawford.",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "Corday'nin Marat'ya geliş bahanesi",
+   "a": {
+    "kaynak": "trwiki.txt",
+    "alinti": "13 Temmuz 1793 günü Marat'ya önemli belgelerden bahsedeceği bahanesiyle evine gelen Charlotte Corday isimli bir kadın tarafından bıçaklanarak öldürülen Marat, Panthéon'na defnedildi."
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "Corday gained entrance to Marat's dwelling promising either to divulge the names of traitors of the Revolution or to plead for the lives of her Girondin acquaintances (historical records disagree on her ostensible reason for meeting with Marat)."
+   }
+  }
+ ],
+ "bulunamadi": [
+  "onem/sipariş: tabloyu kimin sipariş ettiği hiçbir kaynakta belirtilmiyor",
+  "kompozisyon/alt çizim ve restorasyon: kaynaklarda alt çizim veya restorasyon bulgusu yok"
+ ]
+}

@@ -1,0 +1,774 @@
+[
+ {
+  "anahtar": "Q959537",
+  "sanatci": "andrea-mantegna",
+  "baslik": "Meryem'in Ölümü",
+  "ozgun": "Death of the Virgin",
+  "tarih": "y. 1462–1464",
+  "muze": "Museo del Prado, Madrid",
+  "ozet": "Mantegna, klasik sütunlu bir odada yatağında yatan Meryem'in çevresinde toplanmış havarileri, arkadaki pencereden görülen Mantua gölü ve köprüsüyle birlikte gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Pembe örtülü bir yatakta Meryem gözleri kapalı yatıyor. Çevresinde haleli, sakallı havariler duruyor; kimi elinde mum tutuyor, öndeki genç bir palmiye dalı taşıyor, kırmızı pelerinli biri yatağın üstüne eğilmiş. Arkadaki geniş pencereden bir göl, uzun bir köprü ve kıyıdaki kasaba görülüyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Sahne sütun ve pilasterlerle tanımlanmış klasik bir mekânda geçer. Kareli döşeme, izleyicinin gözünü Meryem'in yattığı yatağa doğru yönlendirir. Havariler yatağın iki yanında simetrik gruplar oluşturur. Üstteki pilasterlerin yarım kalmış görünümü, panelin bir zamanlar daha büyük olduğunu düşündürür."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Mantegna Meryem'in hayatının son anını resmeder. Apokrif geleneğe göre bir melek Meryem'e ölümünün yaklaştığını bildirip cennetten bir palmiye dalı getirir; dünyaya dağılmış havariler mucizevi biçimde onun başında toplanır. Ferrara'daki, İsa'nın Meryem'in ruhunu taşıdığı parçanın bu kompozisyonun üst bölümü olduğu düşünülür."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Panel, Mantua'daki Castello di San Giorgio'nun şapelini süsleyen eserlerin parçasıydı; pencereden görünen köprü ve kasaba da bu kalenin çevresini ayrıntılı biçimde yeniden üretir. Aynı şapel için yapılan üç panel bugün Uffizi'de 'Uffizi Triptiği' olarak bilinir. Eser Erken Rönesans'a aittir ve Prado'dadır."
+   }
+  ],
+  "bak": [
+   "Pencereden görünen gölü kesen uzun köprü.",
+   "Öndeki havarinin elindeki palmiye dalı.",
+   "Bakışı yatağa doğru çeken kareli döşeme."
+  ],
+  "noktalar": [
+   {
+    "ad": "Meryem'in yatağı",
+    "x": 0.23,
+    "y": 0.56,
+    "w": 0.38,
+    "h": 0.14,
+    "metin": "Meryem mavi giysisiyle pembe örtülü yatakta, gözleri kapalı yatıyor. Mantegna burada onun hayatının son anını gösterir."
+   },
+   {
+    "ad": "Mantua gölü ve köprü",
+    "x": 0.26,
+    "y": 0.18,
+    "w": 0.5,
+    "h": 0.17,
+    "metin": "Pencerenin ardında bir göl, suyu kesen uzun bir köprü ve kıyıda bir kasaba görülüyor. Bu manzara, Mantua'daki Castello di San Giorgio'nun köprüsünü ve kasabasını ayrıntılı biçimde yeniden üretir."
+   },
+   {
+    "ad": "Palmiye dalı",
+    "x": 0.1,
+    "y": 0.25,
+    "w": 0.16,
+    "h": 0.32,
+    "metin": "Öndeki genç, haleli havari elinde bir palmiye dalı tutuyor. Apokrif geleneğe göre bu dalı Meryem'e, ölümünü bildiren melek cennetten getirmiştir."
+   },
+   {
+    "ad": "Mum taşıyan havariler",
+    "x": 0.75,
+    "y": 0.35,
+    "w": 0.25,
+    "h": 0.25,
+    "metin": "Sağda haleli havariler ellerinde uzun mumlarla duruyor. Geleneğe göre dünyanın dört bir yanına dağılmış havariler, Meryem'in ölüm döşeninin başında mucizevi biçimde toplanmıştır."
+   },
+   {
+    "ad": "Kareli döşeme",
+    "x": 0.05,
+    "y": 0.8,
+    "w": 0.9,
+    "h": 0.2,
+    "metin": "Pembe ve beyaz karolardan oluşan döşeme derinliğe doğru daralıyor. Bu perspektif, izleyicinin gözünü Meryem'in yattığı yatağa yönlendirir."
+   },
+   {
+    "ad": "Yarım pilasterler",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.27,
+    "h": 0.22,
+    "metin": "Soldaki sütun ve pilasterler resmin üst kenarında aniden kesiliyor. Bu bitmemiş görünüm, panelin bir zamanlar bugünkünden daha büyük olduğunu düşündürür."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3605563",
+  "sanatci": "giorgione",
+  "baslik": "Çobanların Tapınması",
+  "ozgun": "The Adoration of the Shepherds (Allendale Nativity)",
+  "tarih": "y. 1507",
+  "muze": "National Gallery of Art, Washington",
+  "ozet": "Giorgione'ye atfedilen bu Venedik tablosu, sağda karanlık bir mağaranın önünde Çocuk İsa'ya diz çöken iki çobanı, solda ise ağaçlarla taçlanan aydınlık bir manzarayı gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Sağda bir kaya mağarasının önünde mavi pelerinli Meryem ve sarı giysili, beyaz sakallı Yusuf diz çökmüş. Yerde beyaz bir bez üstünde Çocuk İsa yatıyor. Ortada iki çoban, biri yarı eğilmiş, öteki diz çökmüş, çocuğa bakıyor. Solda nehirli, kuleli, ağaçlı aydınlık bir manzara uzanıyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Ana sahne sağda, karanlık mağaranın önündedir; solda geri çekilen aydınlık peyzaj onu dengeler. Ebeveynler, çocuk ve çobanlar sabit bir dikdörtgen oluşturur. Diz çökmüş çobanların tablonun merkezine yerleştirilmesi samimi bir dramatik gerilim yaratır. Sol üstte dalların arasında minik bir melek seçilir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Luka'ya göre melek, kırda sürülerini bekleyen çobanlara Kurtarıcı'nın doğduğunu müjdeler; çobanlar Beytlehem'e gidip yemlikteki bebeği bulur. Doğumun ilk tanıkları yoksul ve sıradan insanlardır. Burada çobanlar diz çökmüş hacılar gibi resmedilmiştir; İncil'de diz çöktükleri anlatılmaz, bu ayrıntı resim geleneğine aittir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Eski sahibine atfen 'Allendale Doğuşu' diye de bilinir. Atfı tartışmalıdır: çoğu uzman Giorgione der, ötekiler erken bir Titian görür. Duveen tabloyu 1938'de Giorgione olarak Samuel H. Kress'e sattı; bu atıf anlaşmazlığı Duveen ile Berenson'un ünlü ortaklığını bitirdi."
+   }
+  ],
+  "bak": [
+   "Sol üstte, ağacın dalları arasındaki minik melek.",
+   "Yerdeki beyaz bez üstünde yatan Çocuk İsa.",
+   "Mağaranın karanlığına karşı Meryem'in parlak mavi pelerini."
+  ],
+  "noktalar": [
+   {
+    "ad": "Diz çöken çobanlar",
+    "x": 0.37,
+    "y": 0.46,
+    "w": 0.26,
+    "h": 0.4,
+    "metin": "İki çoban, biri yarı eğilmiş, öteki diz çökmüş, çocuğa bakıyor. Çobanlar diz çökmüş hacılar gibi betimlenir; tablonun merkezine yerleştirilmeleri samimi bir gerilim yaratır."
+   },
+   {
+    "ad": "Çocuk İsa",
+    "x": 0.61,
+    "y": 0.8,
+    "w": 0.16,
+    "h": 0.11,
+    "metin": "Çocuk İsa yerde, beyaz bir bezin ve Meryem'in pelerininin ucunda çıplak yatıyor. Bütün grubun bakışları ona yönelir."
+   },
+   {
+    "ad": "Meryem ve Yusuf",
+    "x": 0.66,
+    "y": 0.49,
+    "w": 0.33,
+    "h": 0.2,
+    "metin": "Mavi pelerinli Meryem ellerini birleştirmiş, sarı giysili yaşlı Yusuf da başını eğmiş diz çöküyor. Arkalarında karanlık mağara açılıyor."
+   },
+   {
+    "ad": "Aydınlık manzara",
+    "x": 0.08,
+    "y": 0.2,
+    "w": 0.32,
+    "h": 0.3,
+    "metin": "Solda bir nehir, kuleli yapılar ve uzak mavi dağlarla aydınlık bir manzara geri çekiliyor. Bu peyzaj, sağdaki karanlık mağaradaki ana grubu dengeler."
+   },
+   {
+    "ad": "Dallardaki melek",
+    "x": 0.0,
+    "y": 0.04,
+    "w": 0.09,
+    "h": 0.09,
+    "metin": "Sol üst köşede, ağacın dalları arasında küçük, kanatlı bir melek seçiliyor. Luka'ya göre çobanlara doğumu bir melek müjdelemiştir."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q1988152",
+  "sanatci": "paolo-veronese",
+  "baslik": "Venüs ve Adonis",
+  "ozgun": "Venus and Adonis",
+  "tarih": "y. 1580",
+  "muze": "Museo del Prado, Madrid",
+  "ozet": "Veronese, Ovidius'tan aldığı sahnede avcı Adonis'i Venüs'ün kucağında uyurken, Venüs'ü onu yelpazeyle serinletirken ve Cupid'i av köpeğini tutarken gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Bir ağacın altında çıplak, inci kolyeli Venüs oturuyor; bir elinde küçük bir yelpaze tutuyor, öteki eli kucağında uyuyan Adonis'in başında. Turuncu giysili, kırmızı çizmeli Adonis gözleri kapalı uzanmış. Solda küçük Cupid bir av köpeğini tutmaya çalışıyor, önde başka bir köpek yatıyor. Arkada yeşil bir manzara ve mavi gökyüzü var."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Adonis'in çapraz uzanan bedeni kompozisyonu soldan sağa geçer; Venüs onun üstünde dik bir eksen kurar. Turuncu giysi, Venüs'ün desenli mor-sarı örtüsü ve parlak mavi gök canlı bir renk düzeni oluşturur. Tablonun üst kenarına 18. yüzyılda 50 cm eklenmiş, bu ek 1988 restorasyonunda kaldırılmıştır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Venüs, Adonis'in bir avda öleceğini önceden bilir; Ovidius'a göre sevgilisini vahşi hayvanlardan uzak durması için uyarır, ama Adonis bir yaban domuzu tarafından öldürülür. Cupid'in köpeğin av isteğini bastırmaya çalışması bu sonu sezdirir. Cupid kazlı bir çocuğun Helenistik heykelinden alınmıştır; Adonis bir Roma lahdindeki Endymion'dan esinlenmiş olabilir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Veronese bu tabloyu Roma'da bir süre kaldıktan sonra yaptı. Eş parçası, Metamorphoses'ten başka bir trajik çifti gösteren 'Cephalus ve Procris'tir ve bugün Strasbourg'dadır. Tablo en geç 1666'da Madrid Alcázarı'nda İspanya kraliyet koleksiyonundaydı; bugün Prado'dadır."
+   }
+  ],
+  "bak": [
+   "Venüs'ün elindeki küçük, desenli yelpaze.",
+   "Köpeği tasmasından tutan küçük Cupid.",
+   "Önde yerde kıvrılıp yatan beyaz av köpeği."
+  ],
+  "noktalar": [
+   {
+    "ad": "Uyuyan Adonis",
+    "x": 0.39,
+    "y": 0.38,
+    "w": 0.24,
+    "h": 0.22,
+    "metin": "Turuncu giysili avcı Adonis, Venüs'ün kucağında gözleri kapalı uyuyor. Venüs onun bir av sırasında öleceğini önceden bilmektedir."
+   },
+   {
+    "ad": "Venüs ve yelpaze",
+    "x": 0.4,
+    "y": 0.1,
+    "w": 0.19,
+    "h": 0.26,
+    "metin": "İnci kolyeli Venüs başını eğmiş, elindeki küçük yelpazeyle uyuyan sevgilisini serinletiyor. Ovidius'a göre onu vahşi hayvanlardan uzak durması için uyarmıştı."
+   },
+   {
+    "ad": "Cupid ve köpek",
+    "x": 0.0,
+    "y": 0.45,
+    "w": 0.33,
+    "h": 0.5,
+    "metin": "Venüs'ün oğlu Cupid, avlanmaya istekli köpeği tutmaya çalışıyor. Bu Cupid, kazlı bir çocuğu gösteren Helenistik bir heykelden modellenmiştir."
+   },
+   {
+    "ad": "Yatan köpek",
+    "x": 0.41,
+    "y": 0.77,
+    "w": 0.23,
+    "h": 0.22,
+    "metin": "Önde, kırmızı tasmalı beyaz bir av köpeği yere kıvrılmış yatıyor. Adonis'in av köpekleri, onu ölüme götürecek yaban domuzunu ininden çıkaracaktır."
+   },
+   {
+    "ad": "Yeşil manzara",
+    "x": 0.63,
+    "y": 0.2,
+    "w": 0.37,
+    "h": 0.35,
+    "metin": "Sağda canlı yeşil bir manzara ve canlı mavi bir gökyüzü açılıyor. Tablonun üstüne sonradan eklenen 50 cm'lik şerit 1988'de kaldırılarak özgün yatay biçim geri getirildi."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3221342",
+  "sanatci": "francisco-de-zurbaran",
+  "baslik": "İsa'nın Çarmıha Gerilişi",
+  "ozgun": "Christ on the Cross",
+  "tarih": "1627",
+  "muze": "Art Institute of Chicago",
+  "ozet": "Zurbarán, simsiyah bir fonun önünde çarmıhta yalnız, başı eğik İsa'yı; ayrı ayrı çivilenmiş ayakları ve heykel gibi parlayan bedeniyle, başka hiçbir figür olmadan gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Zifiri karanlık bir fonun önünde İsa çarmıhta yalnız. Başı sağ omzuna düşmüş, gözleri kapalı. Bedeni güçlü bir ışıkla aydınlanıyor; belinde geniş, beyaz bir peştamal dalgalanıyor. İki ayağı ayrı ayrı çivilenmiş, ahşap bir desteğe basıyor. Çarmıhın tepesinde birkaç satır yazılı bir levha var."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Resim, çarmıhın çevresinde toplananları göstermek yerine yalnızca İsa'ya odaklanma eğilimini izler. Fon tümüyle siyahtır; ışık yalnızca bedene, peştamale ve levhaya düşer. Böylece figür karanlıktan sıyrılıp neredeyse bir heykel gibi öne çıkar. Renk, ten tonları ile kahverengi ve beyazla sınırlıdır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Resim Trento Konsili sonrasının Karşı Reform eğiliminden beslenir. İsa'nın kaç çiviyle çarmıha gerildiği o dönemde tartışmalıydı; İsveçli Birgitta dört çividen söz etmişti. Zurbarán da ayakları, Velázquez'in 1632 tarihli 'Çarmıha Gerilmiş İsa'sında olduğu gibi ayrı ayrı çivilenmiş gösterir. Levhada 'Nasıralı İsa, Yahudilerin Kralı' yazısı vardır."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Zurbarán 1626'da Sevilla'daki San Pablo el Real manastırının Dominikenleriyle sekiz ayda 21 tablo yapmak üzere sözleşme imzaladı; bu tablo onlardan biridir. Eser çağdaşlarınca çok beğenildi. Sevilla belediye meclisi 1629'da ressama kente kalıcı olarak taşınmayı önerdi. Tablo 1954'ten beri Chicago'dadır."
+   }
+  ],
+  "bak": [
+   "Ahşap desteğe ayrı ayrı çivilenmiş iki ayak.",
+   "Çarmıhın tepesindeki yazılı levha.",
+   "Siyah fondan ışıkla sıyrılan beyaz peştamal."
+  ],
+  "noktalar": [
+   {
+    "ad": "Ayrı çivilenmiş ayaklar",
+    "x": 0.46,
+    "y": 0.74,
+    "w": 0.18,
+    "h": 0.1,
+    "metin": "İki ayak yan yana, her biri ayrı bir çiviyle ahşap desteğe çakılmış. Çivi sayısı o dönemde tartışmalıydı; İsveçli Birgitta dört çividen söz etmişti."
+   },
+   {
+    "ad": "Üç dilli levha",
+    "x": 0.44,
+    "y": 0.04,
+    "w": 0.17,
+    "h": 0.08,
+    "metin": "Çarmıhın tepesine çakılmış levhada birkaç satır yazı var; en altta Latince satır okunur. Yuhanna'ya göre yazı İbranice, Grekçe ve Latince olarak 'Nasıralı İsa, Yahudilerin Kralı' der."
+   },
+   {
+    "ad": "Eğik baş",
+    "x": 0.35,
+    "y": 0.21,
+    "w": 0.22,
+    "h": 0.11,
+    "metin": "İsa'nın başı sağ omzuna düşmüş, gözleri kapalı, yüzü yarı gölgede. Karanlık fon, ışıklı bedeni sahnenin tek odağı yapar."
+   },
+   {
+    "ad": "Beyaz peştamal",
+    "x": 0.37,
+    "y": 0.41,
+    "w": 0.34,
+    "h": 0.27,
+    "metin": "Belindeki geniş beyaz peştamal sağ yanda düğümlenip aşağı sarkıyor. Işıkta parlayan kumaş, siyah fona karşı bedenin en aydınlık bölümüdür."
+   },
+   {
+    "ad": "Çivilenmiş el",
+    "x": 0.06,
+    "y": 0.13,
+    "w": 0.1,
+    "h": 0.06,
+    "metin": "İsa'nın sol yandaki eli yatay kirişin ucuna çivilenmiş. Kollar gergin bir çizgiyle iki yana uzanır."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q2734881",
+  "sanatci": "jan-van-eyck",
+  "baslik": "Meryem'e Müjde",
+  "ozgun": "The Annunciation",
+  "tarih": "y. 1434–1436",
+  "muze": "National Gallery of Art, Washington",
+  "ozet": "Jan van Eyck, yüksek bir kilise içinde gösterişli giysili Cebrail'in Meryem'e müjdeyi getirdiğini, sözlerin yazıyla, Kutsal Ruh'un yedi altın ışınla indiğini gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Sağda kakım kürklü mavi kaftanlı Meryem, önündeki masada açık bir kitap, ellerini kaldırmış. Solda taçlı, rengârenk kanatlı Cebrail kırmızı-altın bir cübbeyle gülümsüyor. Aralarında yazılar havada duruyor; Meryem'in sözleri baş aşağıdır. Sol üstteki pencereden yedi ince ışın ve bir güvercin Meryem'e iniyor. Önde zambaklar ve kırmızı minderli bir tabure var."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Mimari yukarıda yuvarlak Romanesk kemerlerden aşağıda hafifçe sivri Gotik kemerlere geçer; üst katlar karanlık, zemin aydınlıktır. Altın varak yalnızca yedi ışın için kullanılmış, Cebrail'in altını boyayla taklit edilmiştir. Alt çizim, zambak vazosunun sonradan eklendiğini düşündürür. Eser panelden tuvale aktarılmıştır."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Cebrail 'AVE GRA PLENA' der, Meryem 'ECCE ANCILLA DOMINI' diye karşılık verir; bu sözler Tanrı'ya yöneldiği için baş aşağı yazılmıştır. Zambaklar saflığı simgeler. Zemin karolarındaki Davud ile Golyat, İsa'nın şeytana zaferinin habercisi; boş tabure İsa'yı simgeleyen 'boş taht' olarak yorumlanır."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tablonun ikonografisi hâlâ tartışılan, son derece karmaşık bir eserdir; bir triptiğin sol kanadı olduğu düşünülür. Çar Nikola 1850'de Hermitage için aldı; Stalin hükümeti 1930'da Andrew Mellon'a sattı. Mellon Trust 1937'de Washington'daki National Gallery of Art'a bağışladı."
+   }
+  ],
+  "bak": [
+   "Meryem'in ağzından çıkan baş aşağı yazı.",
+   "Sol üst pencereden inen yedi altın ışın ve güvercin.",
+   "Ön plandaki zemin karolarına çizilmiş Eski Ahit sahneleri."
+  ],
+  "noktalar": [
+   {
+    "ad": "Havadaki sözler",
+    "x": 0.28,
+    "y": 0.46,
+    "w": 0.56,
+    "h": 0.06,
+    "metin": "Cebrail'in yanında 'AVE GRA PLENA' (Selam, lütufla dolu olan), Meryem'in yanında 'ECCE ANCILLA DOMINI' (İşte Rabbin hizmetkârı) yazıyor. Meryem'in sözleri Tanrı'ya yöneldiği için baş aşağı yazılmıştır."
+   },
+   {
+    "ad": "Yedi ışın ve güvercin",
+    "x": 0.52,
+    "y": 0.31,
+    "w": 0.18,
+    "h": 0.08,
+    "metin": "Sol üstteki pencereden inen ince altın ışınlar ve bir güvercin Meryem'e doğru iniyor. Yedi ışın Kutsal Ruh'un yedi armağanını, güvercin Kutsal Ruh'u simgeler; tabloda gerçek altın varak yalnızca bu ışınlarda kullanılmıştır."
+   },
+   {
+    "ad": "Meryem",
+    "x": 0.66,
+    "y": 0.42,
+    "w": 0.3,
+    "h": 0.14,
+    "metin": "Kakım kürklü mavi kaftanlı Meryem ellerini 'expansis manibus' denen açık ellerle kaldırmış. Halesi yoktur ve ayakta mı, diz çökmüş mü olduğu belirsizdir."
+   },
+   {
+    "ad": "Cebrail",
+    "x": 0.12,
+    "y": 0.42,
+    "w": 0.28,
+    "h": 0.14,
+    "metin": "Taçlı, gökkuşağı renkli kanatlı Cebrail, kırmızı-altın işlemeli bir cübbeyle gülümsüyor. Üzerindeki bütün altın, varakla değil boyayla taklit edilmiştir."
+   },
+   {
+    "ad": "Davud ile Golyat",
+    "x": 0.25,
+    "y": 0.9,
+    "w": 0.38,
+    "h": 0.08,
+    "metin": "Ön plandaki zemin karolarına Eski Ahit sahneleri çizilmiştir; ortada Davud'un Golyat'ı öldürmesi görülür. Bu sahne, İsa'nın şeytan üzerindeki zaferinin önceden bildirilmesi olarak yorumlanır."
+   },
+   {
+    "ad": "Zambaklar ve tabure",
+    "x": 0.6,
+    "y": 0.7,
+    "w": 0.4,
+    "h": 0.28,
+    "metin": "Vazodaki zambaklar Meryem'in saflığını simgeler; vazo alt çizimde yoktu ve sonradan eklenmiş görünür. Kırmızı minderli boş tabure, İsa'yı simgeleyen bir 'boş taht' olabilir."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3211055",
+  "sanatci": "piero-della-francesca",
+  "baslik": "İsa'nın Doğuşu",
+  "ozgun": "The Nativity",
+  "tarih": "1470–1475",
+  "muze": "National Gallery, Londra",
+  "ozet": "Piero della Francesca, Doğuş'u Toskana manzarasına bakan bir tepeye taşır: yere serili pelerinde yatan bebeğe Meryem dua eder, beş melek lavtalarla ilahi söyler.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Önde bebek İsa, Meryem'in yere serili mavi pelerininde çıplak yatıyor, kollarını annesine uzatıyor. Meryem diz çökmüş, ellerini birleştirmiş. Solda uzun giysili beş melek; ikisi lavta çalıyor, ikisi şarkı söylüyor. Sağda Yusuf bir eşek semerinin üstünde bacak bacak üstüne oturuyor, iki çoban konuşuyor. Arkada harap bir ahırda eşek ve öküz var."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Sahne açık bir yaz gününde geçer: solda kıvrımlı bir nehir, sağda surlu bir kasaba. Harap ahır, kayalık tepede garip biçimde çarpık bir açıyla durur. Melekler klasik heykeller gibi dimdik sıralanır. Tablo, aşırı hevesli eski bir restorasyondan zarar görmüştür; çoban yüzlerinde alt çizim görünür."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Bebeğin yere serili pelerin üstünde yatması, İsveçli Birgitta'nın 14. yüzyıldaki bir görümünü yansıtır. Soldaki çalıdaki kırmızı yüzlü saka kuşu kurtuluşun ya da tutkunun simgesidir. Yusuf'un duruşu Helenistik Spinario heykelini anımsatır. Sağdaki kasabanın, ressamın doğduğu Borgo Sansepolcro olduğu düşünülür."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Piero'nun 1492'deki ölümünden önce yaptığı, günümüze kalan en geç eserlerden biridir; memleketindeki aile sarayı için yapılmıştır. National Gallery 1874'te aldı; Başbakan Disraeli bu alımı Parlamento'da savundu. 2022'deki restorasyon hem övüldü hem sert biçimde eleştirildi."
+   }
+  ],
+  "bak": [
+   "Ahırın çatısındaki siyah-beyaz saksağan.",
+   "Sol altta, çalıdaki kırmızı yüzlü küçük saka kuşu.",
+   "Yusuf'un izleyiciye dönük ayak tabanı."
+  ],
+  "noktalar": [
+   {
+    "ad": "Pelerindeki bebek",
+    "x": 0.33,
+    "y": 0.74,
+    "w": 0.28,
+    "h": 0.13,
+    "metin": "Bebek İsa, Meryem'in yere serilmiş mavi pelerininde çıplak yatıyor, kollarını annesine uzatıyor. Bu düzen, İsveçli Birgitta'nın 14. yüzyıldaki bir görümünü yansıtır."
+   },
+   {
+    "ad": "Dua eden Meryem",
+    "x": 0.58,
+    "y": 0.37,
+    "w": 0.17,
+    "h": 0.22,
+    "metin": "Açık renk saçlı, beyaz yüzlü Meryem diz çökmüş, ince parmaklarını dua edercesine birleştirmiş. Saçında ve kolyesinde inciler, mavi elbisesinde kırmızı manşetler var."
+   },
+   {
+    "ad": "İlahi söyleyen melekler",
+    "x": 0.15,
+    "y": 0.28,
+    "w": 0.43,
+    "h": 0.2,
+    "metin": "Beş melek klasik heykeller gibi yan yana duruyor; ikisi lavta çalıyor, ikisi ağzı açık şarkı söylüyor gibi. Kutsal Aile'ye serenat yaparlar."
+   },
+   {
+    "ad": "Yusuf ve çobanlar",
+    "x": 0.7,
+    "y": 0.22,
+    "w": 0.27,
+    "h": 0.5,
+    "metin": "Sağda Yusuf bir eşek semerinin üstünde bacak bacak üstüne oturmuş, iki çobanla konuşuyor; biri eliyle göğü gösteriyor. Yusuf'un duruşu Helenistik Spinario heykelini anımsatır."
+   },
+   {
+    "ad": "Saksağan",
+    "x": 0.26,
+    "y": 0.08,
+    "w": 0.12,
+    "h": 0.09,
+    "metin": "Harap ahırın çatısında siyah-beyaz bir saksağan tünemiş. Sürekli ötüşü geçici olarak susmuş gibi betimlenmiştir."
+   },
+   {
+    "ad": "Saka kuşu",
+    "x": 0.02,
+    "y": 0.79,
+    "w": 0.08,
+    "h": 0.08,
+    "metin": "Sol altta, bir çalının yanında kırmızı yüzlü küçük bir saka kuşu duruyor. Saka kuşu, kurtuluşun ya da tutkunun simgesidir."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q771210",
+  "sanatci": "correggio",
+  "baslik": "Meryem'in Göğe Alınışı (Parma Katedrali Kubbesi)",
+  "ozgun": "Assumption of the Virgin",
+  "tarih": "1526–1530",
+  "muze": "Parma Katedrali, Parma",
+  "ozet": "Correggio, Parma Katedrali'nin kubbesini göğe açılan dev bir girdaba çevirir: melek bulutları Meryem'i yukarı taşırken merkezde İsa ona doğru iner, kenarda havariler şaşkınlıkla bakar.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Aşağıdan bakılan sekizgen kubbede iç içe halkalar halinde bulutlar ve sayısız çıplak melek yukarı dönüyor. En ortada, altın ışığın içinde aşağı doğru inen bir figür görülüyor. Kubbenin kenarında, pencerelerin arasında şaşkın havariler duruyor. Dört köşedeki üçgen yüzeylerde aziz figürleri bulutlar ve meleklerle çevrili."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Kubbenin bütün yüzeyi tek bir dev resim olarak ele alınır. Figürler aşağıdan bakan izleyici için güçlü bir kısaltmayla (foreshortening) çizilmiştir; sanki izleyicinin mekânına doğru taşarlar. Işık, kenardaki gölgeli bulutlardan merkezdeki altın parıltıya doğru artar. Kompozisyon Melozzo da Forlì'nin perspektifinden etkilenmiştir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Kırmızı ve mavi giysili Meryem, şarkı söyleyen ya da çalgı çalan meleklerin girdabıyla yukarı kaldırılır; merkezde kısaltmayla çizilmiş sakalsız İsa annesini karşılamaya iner. Havariler, Meryem'i henüz koydukları boş mezarın çevresinde duruyormuş gibidir. Mimari resimle açılınca kilisenin kubbesi göğün kubbesiyle eşitlenir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Correggio sözleşmeyi 3 Kasım 1522'de imzaladı, fresk 1530'da bitti. Eser, 17. yüzyıl Barok döneminin aşağıdan yukarı bakılan (di sotto in su) illüzyonist tavan resimlerinin kaynağı oldu. Lanfranco'nun Roma'daki Sant'Andrea della Valle kubbesi ve Cignani'nin Forlì freski ondan esinlenmiştir."
+   }
+  ],
+  "bak": [
+   "Kubbenin tam ortasında, altın ışık içinde aşağı inen figür.",
+   "Kenarda pencerelerin arasında duran şaşkın havariler.",
+   "Dört köşedeki aziz figürleri."
+  ],
+  "noktalar": [
+   {
+    "ad": "Aşağı inen İsa",
+    "x": 0.42,
+    "y": 0.38,
+    "w": 0.16,
+    "h": 0.18,
+    "metin": "Kubbenin merkezinde, altın ışığın içinde sakalsız İsa annesini karşılamak için aşağı iniyor. Figür, aşağıdan bakan izleyiciye göre güçlü bir kısaltmayla çizilmiştir."
+   },
+   {
+    "ad": "Melek girdabı",
+    "x": 0.3,
+    "y": 0.17,
+    "w": 0.4,
+    "h": 0.2,
+    "metin": "Bulutların arasında sayısız melek halkalar halinde yukarı dönüyor; kimi şarkı söylüyor, kimi çalgı çalıyor. Bu girdap Meryem'i göğe taşır."
+   },
+   {
+    "ad": "Şaşkın havariler",
+    "x": 0.32,
+    "y": 0.66,
+    "w": 0.38,
+    "h": 0.14,
+    "metin": "Kubbenin kenarında, pencerelerin arasında havariler yukarı bakıyor ya da kollarını açıyor. Meryem'i henüz koydukları boş mezarın çevresinde duruyormuş gibi betimlenmişlerdir."
+   },
+   {
+    "ad": "Köşedeki aziz",
+    "x": 0.08,
+    "y": 0.64,
+    "w": 0.24,
+    "h": 0.28,
+    "metin": "Kubbeyi taşıyan köşelerden birinde bir aziz, bulutlar ve meleklerle çevrili oturuyor. Kubbe kaidesinin süslemesi Parma'nın dört koruyucu azizini temsil eder."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3705718",
+  "sanatci": "rosso-fiorentino",
+  "baslik": "Çarmıhtan İndiriliş",
+  "ozgun": "Deposition from the Cross",
+  "tarih": "1521",
+  "muze": "Pinacoteca e Museo Civico, Volterra",
+  "ozet": "Rosso Fiorentino, merdivenlerdeki adamların İsa'yı çarmıhtan indirdiği, aşağıda ise kadınların ve havarilerin kedere gömüldüğü sahneyi keskin ışık ve uzun bedenlerle gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Mavi bir gökyüzünün önünde merdivenler çarmıha dayanmış; adamlar yeşilimsi tenli İsa'nın bedenini indirmeye uğraşıyor. Aşağıda solda Meryem solgun ve mahzun, iki kadının kollarına çöküyor. Kırmızılar içindeki Mecdelli Meryem onun bacaklarına sarılıyor. Sağda kederli bir havari yüzünü elleriyle kapatıp öteye dönüyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Sahne iki alana ayrılır: yukarıda merdivenlerde İsa'yı indirenler, aşağıda kedere gömülen kadınlar ve erkekler. Bir eleştirmene göre figürler, çarmıh ve merdivenler arasında mantıklı bir mekân bağı yoktur; uzun bedenler ve küçük başlar klasik oranları bozar. Giysilerdeki keskin kırışıklıklar göz kamaştırıcı bir ışıkla çizilir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Bir eleştirmen sahneyi aşırı ifade, köşeli bedenler ve sert ışıkla aktarılan 'şiddetli acı' olarak tanımlar. Kasvetli, neredeyse çorak manzara bu yalnızlığı güçlendirir. Başka bir eleştirmene göre eser erken Maniyerizmin prototipidir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Tablo 1521'de tamamlandı; imzalı ve tarihlidir. Geniş ölçüde Rosso'nun başyapıtı sayılır ve aynı konuyu işleyen Pontormo'nun yorumuyla sık sık karşılaştırılır. Önce Volterra Katedrali'ndeydi; sonra kasabanın resim galerisine taşındı."
+   }
+  ],
+  "bak": [
+   "Sağ alttaki merdivende yazılı imza ve tarih.",
+   "Meryem'in bacaklarına sarılan kırmızılı Mecdelli Meryem.",
+   "Yüzünü elleriyle kapatıp öteye dönen havari."
+  ],
+  "noktalar": [
+   {
+    "ad": "İsa'nın bedeni",
+    "x": 0.43,
+    "y": 0.12,
+    "w": 0.3,
+    "h": 0.43,
+    "metin": "İsa'nın yeşilimsi solgun bedeni çarmıhtan sarkıyor; arkadaki adam onu koltuk altlarından tutuyor. Uzun bedenler ve küçük başlar klasik oranlardan bilerek uzaklaşır."
+   },
+   {
+    "ad": "Merdivendeki adamlar",
+    "x": 0.03,
+    "y": 0.12,
+    "w": 0.4,
+    "h": 0.22,
+    "metin": "Solda merdivendeki bir adam havada asılı gibi eğilmiş, eliyle işaret ediyor. Bir eleştirmene göre figürler, çarmıh ve merdivenler arasında mantıklı bir mekân bağı yoktur."
+   },
+   {
+    "ad": "Çöken Meryem",
+    "x": 0.17,
+    "y": 0.56,
+    "w": 0.25,
+    "h": 0.17,
+    "metin": "Meryem solgun ve mahzun, kendisini tutan iki kadının kollarına çöküyor. Aşağıdaki kederli grup, yukarıdaki telaşlı indirme sahnesinden ayrı bir alan oluşturur."
+   },
+   {
+    "ad": "Mecdelli Meryem",
+    "x": 0.2,
+    "y": 0.75,
+    "w": 0.4,
+    "h": 0.22,
+    "metin": "Parlak kırmızılar giymiş Mecdelli Meryem diz çökmüş, kendinden geçerek Meryem'in bacaklarına sarılıyor. Giysisindeki keskin kırışıklıklar sert ışıkla çizilmiştir."
+   },
+   {
+    "ad": "Yüzünü çeviren havari",
+    "x": 0.7,
+    "y": 0.57,
+    "w": 0.28,
+    "h": 0.19,
+    "metin": "Sağda kederli bir havari yüzünü elleriyle kapatıp öteye dönüyor. Bedenini saran açık kahverengi pelerin köşeli kıvrımlarla düşer."
+   },
+   {
+    "ad": "İmza ve tarih",
+    "x": 0.84,
+    "y": 0.82,
+    "w": 0.1,
+    "h": 0.08,
+    "metin": "Sağ alttaki merdivenin üstüne ressamın adı ve MDXXI (1521) tarihi yazılmış. Tablo imzalı ve tarihlidir."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3531531",
+  "sanatci": "fra-angelico",
+  "baslik": "Müneccimlerin Tapınması",
+  "ozgun": "The Adoration of the Magi",
+  "tarih": "y. 1440–1460",
+  "muze": "National Gallery of Art, Washington",
+  "ozet": "Fra Angelico ile Filippo Lippi'nin elinden çıkan bu yuvarlak tablo, Meryem'in kucağındaki İsa'ya hediye sunan Müneccimleri, harabelerin arasından gelen kalabalık alayları ve çatıdaki tavus kuşunu gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Sağ altta Meryem kucağındaki bebeği Müneccimlere uzatıyor, yanında Yusuf duruyor. Önde Müneccimler diz çökmüş; arkalarında renkli giysili kalabalık bir maiyet, harap bir kemerden geçerek gelmeye devam ediyor. Ortadaki ahırda atlar ve seyisler, önünde öküz ve eşek var. Çatıda büyük bir tavus kuşu tünemiş. Sağda Beytlehem'in surları yamaç boyunca yükseliyor."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Eser bir tondo, yani yuvarlak bir tablodur; çapı 137 cm kadardır. Uzun bir süre içinde, önemli kompozisyon değişiklikleriyle ve birçok elin katkısıyla yapıldığı kabul edilir. Fra Angelico'nun atölyesinde başlanmış olabilir; Meryem'in yüzünde onun eli saptanır. Ahırın sonradan eklenmiş olduğu düşünülür."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Müneccimler aziz sayıldığından, Kutsal Aile'nin disk biçimli halelerinden farklı olarak altın noktalardan oluşan haleler taşırlar. Çocuğun elindeki narın taneleri kilisenin gözetimindeki ruhları simgeler. Tavus kuşu sonsuzluğun ve Diriliş'in simgesidir. Çöken pagan yapı, eski ahdin yerini yeni Hristiyan ahde bırakmasını anlatır."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Çoğu sanat tarihçisi eserin büyük bölümünü Filippo Lippi'nin boyadığını düşünür. Tablo genellikle 1492'de Muhteşem Lorenzo'nun ölümünden sonra çıkarılan Medici Sarayı envanterindeki büyük tondoyla özdeşleştirilir. 1810'da Botticelli eseri diye satıldı; Kress Vakfı aldı ve 1952'de Washington'a bağışladı."
+   }
+  ],
+  "bak": [
+   "Ahırın çatısında omzunun üstünden bakan tavus kuşu.",
+   "Çocuk İsa'nın elinde tuttuğu nar.",
+   "Müneccimlerin altın noktalardan oluşan haleleri."
+  ],
+  "noktalar": [
+   {
+    "ad": "Meryem ve Çocuk",
+    "x": 0.6,
+    "y": 0.49,
+    "w": 0.16,
+    "h": 0.24,
+    "metin": "Meryem kucağındaki bebeği diz çöken Müneccime doğru tutuyor. Fra Angelico'nun kendi eli Meryem'in yüzünde saptanır; çocuğun elindeki narın taneleri kilisenin koruduğu ruhları simgeler."
+   },
+   {
+    "ad": "Diz çöken Müneccimler",
+    "x": 0.26,
+    "y": 0.62,
+    "w": 0.36,
+    "h": 0.26,
+    "metin": "Müneccimler bebeğin önünde diz çökmüş, hediyelerini sunuyor. Aziz sayıldıkları için Kutsal Aile'ninkinden farklı, altın noktalardan oluşan haleler taşırlar."
+   },
+   {
+    "ad": "Tavus kuşu",
+    "x": 0.45,
+    "y": 0.21,
+    "w": 0.2,
+    "h": 0.14,
+    "metin": "Ahırın çatısında büyük bir tavus kuşu omzunun üstünden bakıyor. Etinin çürümediğine inanıldığı için sonsuzluğun ve İsa'nın Dirilişi'nin simgesiydi."
+   },
+   {
+    "ad": "Çakırdoğan ve sülün",
+    "x": 0.69,
+    "y": 0.24,
+    "w": 0.12,
+    "h": 0.13,
+    "metin": "Tavus kuşunun sağında çatıya doğru dalan kuşlar görülüyor. Bunlar bir sülünü yakalayan bir çakırdoğan olarak tanımlanmıştır."
+   },
+   {
+    "ad": "Harabeden gelen alay",
+    "x": 0.06,
+    "y": 0.19,
+    "w": 0.2,
+    "h": 0.28,
+    "metin": "Müneccimlerin sol arkasında büyük bir maiyet, harap bir yapının kemerinden geçerek gelmeye devam ediyor. Çöken pagan yapı, eski ahdin yerini yeni Hristiyan ahde bırakmasını temsil eder."
+   },
+   {
+    "ad": "Yusuf ve çobanlar",
+    "x": 0.74,
+    "y": 0.48,
+    "w": 0.24,
+    "h": 0.27,
+    "metin": "Haleli Yusuf Meryem'in yanında duruyor; arkasında paçavra giysili bir çoban var. Burada Müneccimlerin Tapınması, Çobanların Tapınması ile birleştirilmiştir."
+   }
+  ]
+ },
+ {
+  "anahtar": "Q3797771",
+  "sanatci": "fra-angelico",
+  "baslik": "Meryem'in Taç Giymesi",
+  "ozgun": "Coronation of the Virgin",
+  "tarih": "y. 1434",
+  "muze": "Uffizi Galerisi, Floransa",
+  "ozet": "Fra Angelico, altın zeminde ışınların çevrelediği bir cennette İsa'nın Meryem'i taçlandırdığını, çevresinde müzisyen meleklerin ve azizlerin kalabalık halkasıyla gösterir.",
+  "bolumler": [
+   {
+    "baslik": "Ne görüyoruz?",
+    "metin": "Ortada mavi bulutların üstünde oturan İsa, eğilmiş Meryem'in başına bir taç koyuyor. Çevrelerinden altın ışınlar yayılıyor. Arka sıralarda uzun borular ve çalgılar taşıyan müzisyen melekler, onların önünde iki yanda haleli azizlerden oluşan büyük bir kalabalık var. Solda erkek azizler, sağda diz çökmüş Mecdelli Meryem'in de bulunduğu kadın azizler toplanmış."
+   },
+   {
+    "baslik": "Kompozisyon, ışık ve renk",
+    "metin": "Sahne Orta Çağ resmine özgü altın bir zeminde geçer; ışınlar yaldızın üstüne kazınarak işlenmiştir. Figürler merkezdeki çiftin çevresinde, aşağıya doğru açılan bir halka kurar. Yapı ve parlak renkler, Angelico'nun hocası Lorenzo Monaco'nun etkisini gösterir. Bugünkü çerçeve, eserin Uffizi'ye geldiği döneme aittir."
+   },
+   {
+    "baslik": "Anlam ve semboller",
+    "metin": "Apokrif geleneğe göre göğe alınan Meryem, oğlu İsa tarafından taçlandırılır ve 'Göklerin Kraliçesi' olur. İsa ve Meryem'i çevreleyen ışınlar ilahi ışığı simgeler. Soldaki ön plandaki Aziz Egidius'un yüzünün, San Marco manastırının eski prioru Antonino Pierozzi'den alındığı düşünülür. Resim, Fra Angelico'ya özgü mistik bir tona sahiptir."
+   },
+   {
+    "baslik": "Neden önemli?",
+    "metin": "Vasari, eserin Floransa'daki Sant'Egidio kilisesinde olduğunu yazar; tablo 1435'ten 1825'e kadar orada kaldı, sonra Uffizi'ye geçti. Altındaki predelladan Meryem'in Evlenmesi ve Cenazesi'ni gösteren iki panel bugün San Marco müzesindedir."
+   }
+  ],
+  "bak": [
+   "İsa'nın Meryem'in başına koyduğu taç.",
+   "Yaldızın üstüne kazınmış altın ışınlar.",
+   "Arka sıralardaki uzun boru çalan melekler."
+  ],
+  "noktalar": [
+   {
+    "ad": "Taç giyme",
+    "x": 0.36,
+    "y": 0.22,
+    "w": 0.3,
+    "h": 0.3,
+    "metin": "Mavi bulutların üstünde oturan İsa, eğilmiş Meryem'in başına taç koyuyor. Böylece Meryem 'Göklerin Kraliçesi' olur; Taç Giyme altın zeminde küçük bir cennette geçer."
+   },
+   {
+    "ad": "Kazınmış ışınlar",
+    "x": 0.25,
+    "y": 0.02,
+    "w": 0.5,
+    "h": 0.2,
+    "metin": "İsa ve Meryem'in çevresinden yayılan ışınlar, yaldızlı zeminin üstüne kazıma tekniğiyle işlenmiştir. Bu ışınlar ilahi ışığı simgeler."
+   },
+   {
+    "ad": "Boru çalan melekler",
+    "x": 0.12,
+    "y": 0.17,
+    "w": 0.2,
+    "h": 0.16,
+    "metin": "Arka sıralarda melekler uzun borularını göğe doğru kaldırmış. Kalabalığın en gerisindeki bu müzisyen melekler, sahneye bir kutlama havası verir."
+   },
+   {
+    "ad": "Kadın azizler",
+    "x": 0.6,
+    "y": 0.56,
+    "w": 0.4,
+    "h": 0.38,
+    "metin": "Sağ önde, haleli kadın azizler toplanmış; aralarında Mecdelli Meryem de var. Parlak kırmızı, yeşil ve mavi giysiler altın zemin üstünde öne çıkar."
+   },
+   {
+    "ad": "Erkek azizler",
+    "x": 0.0,
+    "y": 0.55,
+    "w": 0.32,
+    "h": 0.4,
+    "metin": "Sol önde piskoposlar ve keşişlerden oluşan bir aziz grubu duruyor. Ön plandaki Aziz Egidius, eseri barındıran kilisenin adını taşır; onu Zenobius, Aziz Franciscus ve Aziz Dominicus izler."
+   }
+  ]
+ }
+]

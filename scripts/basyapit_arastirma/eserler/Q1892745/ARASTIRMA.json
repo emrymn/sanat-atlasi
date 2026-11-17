@@ -1,0 +1,326 @@
+{
+ "anahtar": "Q1892745",
+ "baslik_tr": "Dünyanın Kurtarıcısı (Salvator Mundi)",
+ "kunye": {
+  "sanatci": {
+   "deger": "Leonardo da Vinci (atıf — tartışmalı)",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Leonardo da Vinci (Q762) [nature of statement: attribution (Q230768)]",
+   "ihtiyat": true
+  },
+  "tarih": {
+   "deger": "yaklaşık 1499–1510",
+   "kaynak": "enwiki.txt",
+   "alinti": "dated c. 1499–1510",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "ceviz panel üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): walnut panel (Q107103575)"
+  },
+  "olcu": {
+   "deger": "65.7 × 45.4 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 65.7 centimetre width (P2049): 45.4 centimetre"
+  },
+  "yer": {
+   "deger": "Suudi Arabistan'da depoda (bildirildiğine göre)",
+   "kaynak": "enwiki.txt",
+   "alinti": "since late 2020 has been in storage in Saudi Arabia reportedly awaiting a museum and cultural center to be completed in Al-'Ula",
+   "ihtiyat": true
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, İsa'nın Dünyanın Kurtarıcısı (Salvator Mundi) olarak betimlendiği bir eserdir.",
+   "kaynak": "trwiki.txt",
+   "alinti": "Salvator Mundi, İsa'nın Salvator Mundi (Dünyanın Kurtarıcısı) olarak betimlendiği tablodur.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Salvator Mundi bir imge tipi olarak Leonardo'dan önce de mevcuttu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Salvator Mundi as an image type predates Leonardo.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Kompozisyonun kaynakları Bizans sanatındadır; bu imgeler kuzey Avrupa'da gelişerek İtalyan devletlerine ulaşmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The composition has its sources in Byzantine art, the imagery of which further developed in northern Europe before finding its place in the Italian states.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "İsa, anakronik mavi Rönesans kıyafetleri içinde betimlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts Jesus Christ in anachronistic blue Renaissance attire",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "İsa sağ eliyle kutsama işareti yaparken sol elinde saydam, ışığı kırmayan bir kristal küre tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "making a gesture of blessing with his right hand, while holding a transparent, non-refracting crystal orb in his left",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Kemp'e göre küre, katı olduğunu destekleyen bir dizi iç kapanım (hava cepleri) ile parıldar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Kemp further notes that the orb \"sparkles with a series of internal inclusions (or pockets of air)\"—evidence in support of its being solid.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C07",
+   "bolum": "kompozisyon",
+   "iddia": "Kızılötesi fotoğraflar, kutsama yapan elin başparmağının daha dik durduğu bir pentimento ortaya çıkarmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Infrared photographs revealed a pentimento where the blessing hand's thumb is more upright.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun arkasındaki kurtlanmış marouflage panel uzman Monica Griesbach tarafından kaldırılınca tablo yedi parçaya bölünmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A woodworm-infested marouflage panel was on the back of the painting. When specialist Monica Griesbach removed it, the painting broke into seven pieces.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun pigmentleri ve üzerine yapıldığı ceviz panel, diğer Leonardo tablolarıyla tutarlıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The pigments and the walnut panel upon which the work was executed are consistent with other Leonardo paintings.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "kompozisyon",
+   "iddia": "Yüzdeki sfumato etkisi, görünüşe göre kısmen boyanın avuç kenarıyla işlenmesiyle elde edilmiştir ve Leonardo'nun birçok eserinde tipiktir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The sfumato effect of the face—evidently achieved in part by manipulating the paint using the heel of the hand—is typical of many works by Leonardo.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Kutsama yapan el net odakta görünürken, bir ölçüde değiştirilmiş veya zarar görmüş yüz yumuşak odaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Christ's blessing hand appears to be in sharp focus, whereas his face—though altered or damaged to some extent—is in soft focus.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Leonardo'nun draperi için yaptığı iki hazırlık tebeşir ve mürekkep çizimi İngiliz Kraliyet Koleksiyonu'nda bulunmaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Two preparatory chalk and ink drawings of the drapery by Leonardo are held in the British Royal Collection.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Küre, İsa'nın Salvator Mundi rolünü işaret eder ve göklerin göksel küresini temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "signalling his role as Salvator Mundi and representing the celestial sphere of the heavens",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "anlam",
+   "iddia": "Ptolemaios kozmolojisinde yıldızlar, merkezde küresel Dünya'nın yer aldığı evrenin sabit göksel kristal küresine gömülüydü.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In Ptolemaic cosmology, the stars were embedded in a fixed celestial crystalline sphere (composed of aether), with the spherical Earth at the center of the universe.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "anlam",
+   "iddia": "Kemp'e göre Salvator Mundi aslında 'kozmosun kurtarıcısı'dır ve bu çok Leonardesque bir dönüşümdür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "\"So what you've got in the Salvator Mundi\", Kemp states, \"is really 'a savior of the cosmos', and this is a very Leonardesque transformation.\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Isaacson'a göre Leonardo küreyi, ışığı kırmayan içi boş bir cam kabarcık gibi resmetmiştir ve bu bilinçli bir karardı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Instead, Leonardo painted the orb as if it were a hollow glass bubble that does not refract or distort the light passing through it. Isaacson believes that this was \"a conscious decision on Leonardo's part\"",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Tablo muhtemelen, on altıncı yüzyılda bu boyut ve konudaki diğer panolar gibi kişisel ibadet bağlamında kullanılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting would have been used in the context of personal devotion, as were other panels of this size and subject in the sixteenth century.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Joanne Snow-Smith, Leonardo'nun Salvator Mundi'yi Fransa Kralı XII. Louis ve eşi Bretonlu Anne için yaptığını öne sürmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Joanne Snow-Smith argued that Leonardo painted the Salvator Mundi for Louis XII of France and his consort, Anne of Brittany.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo 1958'de 45 pounda, Leonardo'nun öğrencisi Giovanni Antonio Boltraffio'nun eseri olarak satılmış ve 2011'e kadar ona atfedilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Sir Francis Cook, 4th Baronet, Cook's great-grandson, sold it at auction in 1958 for £45 (equivalent to £900 in 2025) as a work by Leonardo's pupil Giovanni Antonio Boltraffio, to whom the painting remained attributed until 2011.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Tablo, 2005'te New Orleans'taki St. Charles Gallery müzayedesinde sanat simsarları Alexander Parish ve Robert Simon tarafından 1.175 dolara satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 2005, the estate of Baton Rouge businessman Basil Clovis Hendry Sr. was auctioned by St. Charles Gallery in New Orleans. Lot 664 was titled \"After Leonardo da Vinci: Christ Salvator Mundi\". Art dealers Alexander Parish and Robert Simon, an Old Master specialist, bought it for $1,175",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Londra Ulusal Galerisi, Salvator Mundi'yi Leonardo'nun otograf eseri olarak doğruladı ve Kasım 2011'den Şubat 2012'ye kadar sergiledi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "London's National Gallery authenticated Salvator Mundi as an autograph work by Leonardo and exhibited it from November 2011 to February 2012.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Parish, Simon ve Adelson, Salvator Mundi'yi Bouvier'ye 80 milyon dolara sattı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Parish, Simon and Adelson sold Salvator Mundi to Bouvier for $80 million.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Rybolovlev, tabloyu önceki sahipleri yerine Bouvier'den satın aldığının farkında olmadan 127.5 milyon dolar ödedi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Rybolovlev paid $127.5 million, unaware that he was purchasing the painting from Bouvier instead of its previous owners.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablo, 15 Kasım 2017'de New York'ta Christie's tarafından Prens Badr bin Abdullah Al Saud'a 450.3 milyon ABD dolarına satıldı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was sold at auction for US$450.3 million on 15 November 2017 by Christie's in New York to Prince Badr bin Abdullah Al Saud",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Bu satış, açık artırmada satılmış en pahalı tablo olarak yeni bir rekor kırdı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "setting a new record for the most expensive painting ever sold at public auction",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Aralık 2017'de Wall Street Journal'a göre Prens Badr, Veliaht Prens Muhammed bin Selman'ın aracısıydı; Christie's ve Suudi yetkililer ise Badr'ın Abu Dhabi Kültür ve Turizm Departmanı adına hareket ettiğini belirtti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In December 2017, The Wall Street Journal reported that Prince Badr was an intermediary for Crown Prince Mohammed bin Salman, but Christie's and Saudi officials re-stated that Prince Badr acted on behalf of Abu Dhabi's Department of Culture and Tourism for display at the Louvre Abu Dhabi in the United Arab Emirates.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Eylül 2018'de tablonun Louvre Abu Dhabi'de planlanan sergilenmesi süresiz olarak ertelendi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In September 2018, the painting's scheduled exhibition at the Louvre Abu Dhabi was indefinitely postponed.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Tablo, Al-'Ula'daki Wadi AlFann kompleksinde inşa edilecek yeni müzeye kadar depoda tutulmaktadır; kompleksin 2024'te tamamlanması bekleniyordu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting is being kept in storage until a new museum is built to house it; the museum and gallery will be in a complex called Wadi AlFann in Al-'Ula, which was expected to be completed in 2024.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Bazı önde gelen uzmanlar atfı tartışmakta ve Leonardo'nun yalnızca belirli öğelere katkıda bulunduğunu öne sürmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "this attribution has been disputed by some leading specialists who propose that he only contributed certain elements",
+   "ihtiyat": true
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Carmen Bambach'a göre özgün resim yüzeyinin çoğu Boltraffio'nun olabilir; Leonardo'nun elinden çıkan bölümler İsa'nın sağ kutsama eli, yenin bir kısmı, sol eli ve tuttuğu kristal küre olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "much of the original painting surface may be by Boltraffio, but with passages done by Leonardo himself, namely Christ's proper right blessing hand, portions of the sleeve, his left hand and the crystal orb he holds.",
+   "ihtiyat": true
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1490"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "dated c. 1499–1510"
+   }
+  },
+  {
+   "konu": "yer/koleksiyon",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "collection (P195): Louvre Abu Dhabi (Q3176133) [start time: 2018]"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "since late 2020 has been in storage in Saudi Arabia reportedly awaiting a museum and cultural center to be completed in Al-'Ula"
+   }
+  },
+  {
+   "konu": "Louvre Abu Dhabi sergisi",
+   "a": {
+    "kaynak": "trwiki.txt",
+    "alinti": "Tablo sergilenmek üzere Birleşik Arap Emirlikleri'nde Kasım 2017'de açılan Louvre Abu Dabi Müzesine gönderildi."
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "In September 2018, the painting's scheduled exhibition at the Louvre Abu Dhabi was indefinitely postponed."
+   }
+  },
+  {
+   "konu": "atıf",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): Leonardo da Vinci (Q762) [nature of statement: attribution (Q230768)]"
+   },
+   "b": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): Leonardeschi (Q1089243)"
+   }
+  }
+ ],
+ "bulunamadi": [
+  "hikaye: konunun dayandığı belirli bir İncil bölümü/ayeti kaynaklarda belirtilmiyor",
+  "anlam: figürün modelinin kimliği hakkında kaynaklarda bilgi yok"
+ ]
+}

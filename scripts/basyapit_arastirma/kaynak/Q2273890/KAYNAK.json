@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2273890",
+ "indirme": "2026-11-17T07:46:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2273890.json",
+   "revid": 2569946563,
+   "sha256": "7660073253ef2f37fbe58e295d0095c0c8ba9cda6acf6a6c88d6be8d0da84f31",
+   "karakter": 852
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Miracle_of_the_Slave_%28Tintoretto%29&oldid=1361282853",
+   "baslik": "Miracle of the Slave (Tintoretto)",
+   "revid": 1361282853,
+   "surum_tarihi": "2026-06-26T22:22:47Z",
+   "sha256": "00d797da399c789688529066749d16ce6dc151b5c8862e3c4f2ef25098bff884",
+   "karakter": 4256
+  }
+ }
+}

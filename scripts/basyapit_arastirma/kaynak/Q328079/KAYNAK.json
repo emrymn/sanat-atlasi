@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q328079",
+ "indirme": "2026-11-17T07:34:07+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q328079.json",
+   "revid": 2568525297,
+   "sha256": "91b3e0b00cdfe9c7e04da7cab40d0b45c05af812f9fb9cf296237893fb965b47",
+   "karakter": 1299
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Sistine_Madonna&oldid=1375601786",
+   "baslik": "Sistine Madonna",
+   "revid": 1375601786,
+   "surum_tarihi": "2026-09-18T20:23:00Z",
+   "sha256": "93ef41f2c7ecbae03a67b4721fd6657b4916f5fca1fb340e888bba9d6a3df8f1",
+   "karakter": 9616
+  }
+ }
+}

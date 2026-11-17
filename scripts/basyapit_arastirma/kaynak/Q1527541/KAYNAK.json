@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1527541",
+ "indirme": "2026-11-17T07:42:09+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1527541.json",
+   "revid": 2561895399,
+   "sha256": "59e5f1d2a2f13df132524d9e1bb1e69a0c2a5d363cbcd533c7ac961085272056",
+   "karakter": 1156
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Nativity_%28Correggio%29&oldid=1363338637",
+   "baslik": "Nativity (Correggio)",
+   "revid": 1363338637,
+   "surum_tarihi": "2026-07-09T15:55:11Z",
+   "sha256": "7f80650c51da263eebb3d7b5a5eded4b28af99672af0a06b88aa4a3c8df156da",
+   "karakter": 1765
+  }
+ }
+}

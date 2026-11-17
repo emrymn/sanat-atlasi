@@ -1,0 +1,33 @@
+{
+ "anahtar": "Q927449",
+ "baslik_tr": "Marta ile Meryem'in Evindeki İsa",
+ "kunye": {
+  "sanatci": {"deger": "Johannes Vermeer", "kaynak": "wikidata.txt", "alinti": "creator (P170): Johannes Vermeer (Q41264)"},
+  "tarih": {"deger": "1655", "kaynak": "enwiki.txt", "alinti": "is an oil painting finished in 1655 by the Dutch Golden Age painter Johannes Vermeer", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "158,50 × 141,50 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 158.50 centimetre width (P2049): 141.50 centimetre"},
+  "yer": {"deger": "Scottish National Gallery, Edinburgh", "kaynak": "enwiki.txt", "alinti": "It is now in the Scottish National Gallery in Edinburgh."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "İsa'nın Beytanyalı Meryem ve Marta adlı iki kardeşin evini ziyareti öyküsü Yeni Ahit'e dayanır.", "kaynak": "enwiki.txt", "alinti": "The story of Christ visiting the household of the two sisters Mary of Bethany and Martha goes back to the New Testament.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eserin ana konusu, İsa'nın Marta ile Meryem'in evinde bulunmasıdır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Jesus at the home of Martha and Mary (Q1567285)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Tabloda İsa tasvir edilmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Jesus Christ (Q302)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Tabloda Marta ve Beytanyalı Meryem tasvir edilmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Martha (Q232453) depicts (P180): Mary of Bethany (Q239058)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Tabloda ekmek, sepet ve başörtüsü tasvir edilmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): bread (Q7802) depicts (P180): basket (Q201097) depicts (P180): headscarf (Q2002752)", "ihtiyat": false},
+  {"id": "C06", "bolum": "kompozisyon", "iddia": "Pigment analizi, tabloda kökboya lake, sarı okr, vermilyon ve kurşun beyazı gibi barok dönem pigmentlerinin kullanıldığını ortaya koyar.", "kaynak": "enwiki.txt", "alinti": "The pigment analysis of this painting reveals the use of the pigments of the baroque period such as madder lake, yellow ochre, vermilion and lead white.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Vermeer, İsa'nın kaftanını alışılmış mavi pigmenti ultramarin yerine smalt, indigo ve kurşun beyazı karışımıyla boyamıştır.", "kaynak": "enwiki.txt", "alinti": "Vermeer did not paint the robe of Christ with his usual blue pigment of choice ultramarine (see for example The Milkmaid) but with a mixture of smalt, indigo and lead white.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Tablo, 63 inç x 56 inç boyutlarıyla Vermeer'in en büyük tablosudur.", "kaynak": "enwiki.txt", "alinti": "It is the largest painting by Vermeer (63in x 56in) and one of the very few with an overt religious subject.", "ihtiyat": false},
+  {"id": "C09", "bolum": "anlam", "iddia": "Eser dinsel sanat türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Tablo, Vermeer'in açıkça dinsel konulu çok az sayıdaki eserinden biridir.", "kaynak": "enwiki.txt", "alinti": "It is the largest painting by Vermeer (63in x 56in) and one of the very few with an overt religious subject.", "ihtiyat": false},
+  {"id": "C11", "bolum": "onem", "iddia": "Eser 1927'den beri Scottish National Gallery koleksiyonundadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Scottish National Gallery (Q942713) [start time: 1927]", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Eserin sahibi olarak William Allan Coats kayıtlıdır.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): William Allan Coats (Q21901283)", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Eserin envanter numarası NG 1670'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): NG 1670", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser, Hollanda Altın Çağı resim akımıyla ilişkilendirilir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Dutch Golden Age painting (Q2352880)", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Eser, son iki adın yer değiştirmesiyle Christ in the House of Mary and Martha olarak da adlandırılmıştır.", "kaynak": "enwiki.txt", "alinti": "The work has also been called Christ in the House of Mary and Martha (reversing the last two names).", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1700 (precision: century) [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "is an oil painting finished in 1655 by the Dutch Golden Age painter Johannes Vermeer"}},
+  {"konu": "olcu", "a": {"kaynak": "wikidata.txt", "alinti": "height (P2048): 158.50 centimetre width (P2049): 141.50 centimetre"}, "b": {"kaynak": "enwiki.txt", "alinti": "It is the largest painting by Vermeer (63in x 56in)"}}
+ ],
+ "bulunamadi": []
+}

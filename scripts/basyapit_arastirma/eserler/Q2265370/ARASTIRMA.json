@@ -1,0 +1,209 @@
+{
+ "anahtar": "Q2265370",
+ "baslik_tr": "San Romano Muharebesi",
+ "kunye": {
+  "sanatci": {
+   "deger": "Paolo Uccello",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Paolo Uccello (Q192488)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1456",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1456 [sourcing circumstances: circa (Q5727902)]",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "ahşap pano üzerine yumurta temperası",
+   "kaynak": "enwiki.txt",
+   "alinti": "The paintings are in egg tempera on wooden panels, each over 3 metres long.",
+   "ihtiyat": false
+  },
+  "olcu": {
+   "deger": "182 × 323 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 182 centimetre width (P2049): 323 centimetre",
+   "ihtiyat": false
+  },
+  "yer": {
+   "deger": "National Gallery (Londra), Galleria degli Uffizi (Floransa), Musée du Louvre (Paris)",
+   "kaynak": "enwiki.txt",
+   "alinti": "They are now divided among three collections, the National Gallery, London, the Galleria degli Uffizi, Florence, and the Musée du Louvre, Paris.",
+   "ihtiyat": false
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Seri, 1432'de Floransa ve Siena güçleri arasında gerçekleşen San Romano Muharebesi'ndeki olayları betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "depicting events that took place at the Battle of San Romano between Florentine and Sienese forces in 1432",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Savaş altı ya da yedi saat sürmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the battle lasted six or seven hours",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Londra panelinde Niccolò da Tolentino, üstün bir kuvvetle karşı karşıya olduğu için müttefiki Attendolo'nun ordusuna yardıma gelmesi için iki haberci göndermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the London painting, Niccolò da Tolentino, with his large gold and red patterned hat, is seen leading the Florentine cavalry. He had a reputation for recklessness, and doesn't even wear a helmet, though he sent two messengers (the departure of the two messengers, depicted centre, top) to tell his allied army of Attendolo to hurry to his aid as he is facing a superior force.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Londra panelinde Niccolò da Tolentino, büyük altın ve kırmızı desenli şapkasıyla Floransa süvarilerine öncülük ederken görülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the London painting, Niccolò da Tolentino, with his large gold and red patterned hat, is seen leading the Florentine cavalry. He had a reputation for recklessness, and doesn't even wear a helmet, though he sent two messengers (the departure of the two messengers, depicted centre, top) to tell his allied army of Attendolo to hurry to his aid as he is facing a superior force.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Seride askerlerin zırhlarında bulunan gümüş varak oksitlenerek mat gri ya da siyaha dönüşmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Many areas of the paintings were covered with gold and silver leaf. While the gold leaf, such as that found on the decorations of the bridles, has remained bright, the silver leaf, found particularly on the armour of the soldiers, has oxidized to a dull grey or black.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Dizgin süslemelerinde bulunan altın varak parlaklığını korumuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Many areas of the paintings were covered with gold and silver leaf. While the gold leaf, such as that found on the decorations of the bridles, has remained bright, the silver leaf, found particularly on the armour of the soldiers, has oxidized to a dull grey or black.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "kompozisyon",
+   "iddia": "Tablolar ahşap paneller üzerine yumurta temperasıyla yapılmıştır ve her biri 3 metreden uzundur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The paintings are in egg tempera on wooden panels, each over 3 metres long.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Üç tablo, bir odanın üç ayrı duvarına yüksekçe asılmak üzere tasarlanmıştır ve perspektif bu yükseklik göz önünde tutularak kurgulanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The three paintings were designed to be hung high on three different walls of a room, and the perspective designed with that height in mind",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "kompozisyon",
+   "iddia": "Tabloların tümü, özellikle Louvre'daki, zaman ve erken restorasyonlardan zarar görmüş ve birçok alan modelajını yitirmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "All of the paintings, especially that in the Louvre, have suffered from time and early restoration, and many areas have lost their modelling.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "anlam",
+   "iddia": "Paneller günün farklı saatlerini temsil ediyor olabilir: Londra şafak, Floransa öğle, Paris alacakaranlık.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They may represent different times of day: dawn (London), mid-day (Florence) and dusk (Paris)",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Uffizi paneli muhtemelen triptikin merkez tablosu olarak tasarlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Uffizi panel was probably designed to be the central painting of the triptych and is the only one signed by the artist.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C12",
+   "bolum": "anlam",
+   "iddia": "Arka plan yanılsaması ve sahneyi andıran perspektif teması, savaşı teatral bir tören olarak betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This illusion of a backdrop and a perspective theme resembling a stage, depicts the war as a theatrical ceremony.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "anlam",
+   "iddia": "Sanat tarihçileri arasında en yaygın kabul gören sıralama Londra, Floransa, Paris şeklindedir; başka sıralamalar da önerilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The sequence most widely agreed among art historians is: London, Florence, Paris, although others have been proposed.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Seri, erken İtalyan Rönesans resminde doğrusal perspektifin gelişimini ortaya koyması bakımından önemlidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They are significant as revealing the development of linear perspective in early Italian Renaissance painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Seri, önemli bir seküler sipariş olması bakımından sıra dışıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "and are unusual as a major secular commission",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "National Gallery'ye göre paneller, 1435 ile 1460 arasında Floransa'da Bartolini Salimbeni ailesinin bir üyesi tarafından sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "According to the National Gallery, the panels were commissioned by a member of the Bartolini Salimbeni family in Florence sometime between 1435 and 1460.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "onem",
+   "iddia": "Tablolar 15. yüzyılda büyük beğeni toplamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The paintings were much admired in the 15th century",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Lorenzo de' Medici tablolardan birini satın almış, kalan ikisini Palazzo Medici'ye zorla götürmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Lorenzo de' Medici so coveted them that he purchased one and had the remaining two forcibly removed to the Palazzo Medici.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Paneller bugün Londra'daki National Gallery, Floransa'daki Galleria degli Uffizi ve Paris'teki Musée du Louvre olmak üzere üç koleksiyon arasında bölünmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "They are now divided among three collections, the National Gallery, London, the Galleria degli Uffizi, Florence, and the Musée du Louvre, Paris.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Paneller, 2005'te BBC'nin The Private Life of a Masterpiece dizisine konu olmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The panels were a subject in the BBC series The Private Life of a Masterpiece (2005).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Louvre panelinde Micheletto Attendolo'nun bindiği koyu renkli at, 1968 yapımı Spirits of the Dead filminin ilk bölümünde bir halıda resmedilmiş olarak görülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The dark horse in the Louvre panel, mounted by Micheletto Attendolo (da Cotignola), can be seen painted in a tapestry, in the first segment (\"Metzengerstein\") of the 1968 omnibus film Spirits of the Dead.",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "surum: wikidata.txt'te location/collection satırı yok; Q2265370 'painting series' olarak tanımlı, önbellekteki Uffizi Gallery tek panel kimliği kaynaklardan doğrulanamıyor; panel-özel iddialar açıkça Londra/Louvre/Uffizi paneli olarak sınırlandı"
+ ]
+}

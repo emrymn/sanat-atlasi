@@ -1,0 +1,310 @@
+{
+ "anahtar": "Q2594673",
+ "baslik_tr": "Şimşon ve Dalila",
+ "kunye": {
+  "sanatci": {
+   "deger": "Peter Paul Rubens",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Peter Paul Rubens (Q5599)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1609–1610",
+   "kaynak": "enwiki.txt",
+   "alinti": "It dates from about 1609 to 1610.",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "panel üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): panel (Q106857709)"
+  },
+  "olcu": {
+   "deger": "185 × 205 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 185 centimetre\nwidth (P2049): 205 centimetre"
+  },
+  "yer": {
+   "deger": "National Gallery",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): National Gallery (Q180788)"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Samson ve Dalila'nın Eski Ahit'teki hikâyesinden bir bölümü (Hakimler 16) tasvir eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts an episode from the Old Testament story of Samson and Delilah (Judges 16).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Filistinlilerin rüşvet verdiği Dalila'ya âşık olan Samson, büyük gücünün sırrını, kesilmemiş saçını ona söyler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Having fallen in love with Delilah, who has been bribed by the Philistines, Samson tells her the secret of his great strength: his uncut hair.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Gücünü yitiren Samson, Filistinliler tarafından tutsak alınır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Without his strength, Samson is captured by the Philistines.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Rubens, Samson'un Dalila'nın kucağında uyuyakaldığı ve bir genç adamın onun saçını kestiği anı tasvir eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Rubens depicts the moment when, Samson having fallen asleep on Delilah's lap, a young man cuts Samson's hair.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Samson ve Dalila karanlık bir odadadır; oda çoğunlukla Dalila'nın solunda duran yaşlı bir kadının tuttuğu mumla aydınlatılır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Samson and Delilah are in a dark room, which is lit mostly by a candle held by an old woman to Delilah's left.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Dalila tamamen giyinik gösterilir, ancak göğüsleri açıkta tasvir edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Delilah is shown fully dressed, but with her breasts exposed.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Samson'un saçını kesen adam ellerini çaprazlamıştır; bu, ihanetin bir işaretidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The man snipping Samson's hair is crossing his hands, which is a sign of betrayal.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Dalila'nın arkasındaki niş, aşk tanrıçası Venüs ile oğlu Cupid'in heykelini içerir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The niche behind Delilah contains a statue of Venus, the goddess of love, and her son, Cupid.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Cupid'in gözleri değil, ağzı bağlıdır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Notably, Cupid's mouth is bound, rather than his eyes.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "kompozisyon",
+   "iddia": "Tablo 1983'te National Gallery'de temizlenmiş ve incelenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was cleaned and investigated in the National Gallery in 1983.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "kompozisyon",
+   "iddia": "Tabloda mavi pigmentler bulunmaz.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is noteworthy for the masterful and elaborate painting of the draperies and for the absence of blue pigments.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Rubens, kurşun beyazı ve kömür siyahının yanı sıra karmin (kermes) lake, kurşun-kalay sarısı, vermilyon ve okralar kullanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Rubens employed carmine (kermes) lake, lead-tin-yellow, vermilion and ochres in addition to lead white and charcoal black.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Tablonun 17. yüzyıldaki bir tasviri Samson'un ayağını kompozisyon çerçevesi içinde bütün olarak gösterirken National Gallery sürümü hem sol hem sağdan kırpılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Notably, this 17th-century depiction of the original Rubens painting shows Samson's foot included wholly within the frame of the composition. Compared to it the National Gallery's version is cropped on both left and right sides.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Kapıda beş asker bulunur; Francken'ın resminde ve erken gravürlerde ise üç asker vardır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Also, there are five soldiers in the doorway compared to three in Francken's picture and in early engravings.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "anlam",
+   "iddia": "Heykel, Samson'un kaderinin sebebi ve Dalila'nın eylemlerinin aracı olarak yorumlanabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This statue can be taken to represent the cause of Samson's fate and the tool of Delilah's actions.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "anlam",
+   "iddia": "Yaşlı kadının bir procuress (simsar) olduğu düşünülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She is believed to be a procuress, and the adjacent profiles of her and Delilah may symbolise the old woman's past, and Delilah's future.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C17",
+   "bolum": "anlam",
+   "iddia": "Yaşlı kadın ile Dalila'nın yan yana profilleri, kadının geçmişini ve Dalila'nın geleceğini simgeliyor olabilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She is believed to be a procuress, and the adjacent profiles of her and Delilah may symbolise the old woman's past, and Delilah's future.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "onem",
+   "iddia": "Tablo uzun süredir Flaman Barok sanatçısı Peter Paul Rubens'a atfedilmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Samson and Delilah is a painting long attributed to the Flemish Baroque artist Peter Paul Rubens (1577–1640) in the National Gallery, London.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "onem",
+   "iddia": "Tablo aslen Antwerp belediye başkanı Nicolaas II Rockox tarafından, aynı şehirdeki Rockox House için sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was originally commissioned by Nicolaas II Rockox, lord mayor of Antwerp, for Rockox House in that city.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "onem",
+   "iddia": "Tablo, 7 foot'luk bir şömine rafının üzerine yerleştirilmek üzere tasarlanmıştır ve bu konumda aşağıdan görülecekti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was specifically intended to be placed above a 7-foot mantelshelf, where the painting would have been seen from below.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "onem",
+   "iddia": "Tablo, Rockox'un 1640'taki ölümünden sonra hayır için halka açık olarak satılmıştır; alıcının kimliği bilinmemektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was publicly sold for charity when Rockox died in 1640, but the purchaser's identity is unknown.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "1700'de Liechtenstein Prensi Hans-Adam I'in satın aldığı 'Samson and Delilah' adlı panel muhtemelen Rubens'ın tablosudur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1700, a panel titled Samson and Delilah was bought by Hans-Adam I, Prince of Liechtenstein. This is likely to have been Rubens's painting.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Tablo 1880'de Paris'te satılmış, daha sonra 1929'da Ludwig Burchard tarafından keşfedilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was then sold in 1880 in Paris, where it was later discovered by Ludwig Burchard in 1929.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Tablo 1980'de Christie's'te açık artırmayla satılmış ve National Gallery tarafından 5 milyon ABD dolarına satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Eventually, it was sold at auction in 1980 at Christie's, purchased by the National Gallery for US$5 million.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Rubens atfına yönelik kuşkulara, Fayum mumya portreleri uzmanı sanatçı ve akademisyen Euphrosyne Doxiadis öncülük etmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There has been some doubt cast over the attribution of the painting to Rubens, led by Euphrosyne Doxiadis, an artist and scholar of the Fayum mummy portraits.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Tablonun, Rubens'ın yaşamı sırasında yapılmış kopyalardan ayrıntılarda ayrıştığı ve dönemin katmanlı glazing tekniğini kullanmadığı öne sürülmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She argues that the National Gallery's painting varies in details from copies of the original made during Rubens's lifetime, that it does not employ the layering technique of glazing common in oil painting at the time and mastered by Rubens, and that its provenance cannot be documented with certainty between 1641 and 1929.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Tablonun provenansının 1641 ile 1929 arasında kesin olarak belgelenemediği öne sürülmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She argues that the National Gallery's painting varies in details from copies of the original made during Rubens's lifetime, that it does not employ the layering technique of glazing common in oil painting at the time and mastered by Rubens, and that its provenance cannot be documented with certainty between 1641 and 1929.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Dendrokronolojik inceleme, tablonun doğru döneme ait olduğunu doğrulamaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A dendrochronological examination of the painting however, confirms that the painting dates to the correct period, and the attribution has been accepted by a majority of the art-historical scholarly community.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Rubens atfı, sanat tarihi akademik topluluğunun çoğunluğu tarafından kabul edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A dendrochronological examination of the painting however, confirms that the painting dates to the correct period, and the attribution has been accepted by a majority of the art-historical scholarly community.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Eylül 2021'de Dr Carina Popovici ve Zürih yakınlarındaki İsviçre şirketi Art Recognition'ın yapay zekâ analizi, tablonun Rubens'ın eseri olmadığına dair %91 olasılık açıklayarak kuşkucuları doğrular görünmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In September 2021 however, an artificial intelligence analysis conducted by Dr Carina Popovici and Art Recognition, a Swiss company based near Zurich, seemed to confirm doubters' beliefs when it was announced there is a 91% probability that the painting was not the work of Rubens.",
+   "ihtiyat": true
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "sanatçı atfı",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): Peter Paul Rubens (Q5599)"
+   },
+   "b": {
+    "kaynak": "wikidata.txt",
+    "alinti": "creator (P170): unknown value"
+   }
+  },
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1609 (precision: decade) [sourcing circumstances: circa (Q5727902)]"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "It dates from about 1609 to 1610."
+   }
+  },
+  {
+   "konu": "provenans: Liechtenstein sahibi",
+   "a": {
+    "kaynak": "enwiki.txt",
+    "alinti": "In 1700, a panel titled Samson and Delilah was bought by Hans-Adam I, Prince of Liechtenstein. This is likely to have been Rubens's painting."
+   },
+   "b": {
+    "kaynak": "wikidata.txt",
+    "alinti": "owned by (P127): Johann II, Prince of Liechtenstein (Q317016) [end time: 1880]"
+   }
+  }
+ ],
+ "bulunamadi": []
+}

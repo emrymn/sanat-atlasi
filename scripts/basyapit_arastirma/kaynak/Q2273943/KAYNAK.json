@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2273943",
+ "indirme": "2026-11-17T08:02:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2273943.json",
+   "revid": 2570246883,
+   "sha256": "4b47d6952cea68e4125a280dd5f5f491fd8e56e17c2408a0f5deebbd3518a1a2",
+   "karakter": 704
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Adoration_of_the_Magi_%28Vel%C3%A1zquez%29&oldid=1379968046",
+   "baslik": "Adoration of the Magi (Velázquez)",
+   "revid": 1379968046,
+   "surum_tarihi": "2026-10-13T00:20:10Z",
+   "sha256": "80fe8fba2419d909920ba799957805d491d6f3d74821d343e425e56f6c4dfad5",
+   "karakter": 5814
+  }
+ }
+}

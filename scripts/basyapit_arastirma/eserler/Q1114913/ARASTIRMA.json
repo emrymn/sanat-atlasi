@@ -1,0 +1,35 @@
+{
+ "anahtar": "Q1114913",
+ "baslik_tr": "Çobanların Tapınması",
+ "kunye": {
+  "sanatci": {"deger": "El Greco", "kaynak": "wikidata.txt", "alinti": "creator (P170): El Greco (Q301)"},
+  "tarih": {"deger": "1612", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1612", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "319 × 180 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 319 centimetre width (P2049): 180 centimetre"},
+  "yer": {"deger": "Museo del Prado", "kaynak": "wikidata.txt", "alinti": "collection (P195): Museo del Prado (Q160112)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun ana konusu çobanların tapınmasıdır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): adoration of the shepherds (Q1029715)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Yalınayak çobanlar, mucizevi doğuşuna saygı sunmak için toplanmıştır.", "kaynak": "enwiki.txt", "alinti": "the barefoot shepherds who have gathered to pay homage to his miraculous birth", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Eserde Çocuk İsa, bir erkek çocuk, Meryem, bir kadın ve bir melek betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Christ Child (Q942467) depicts (P180): boy (Q3010) depicts (P180): Mary (Q345) depicts (P180): woman (Q467) depicts (P180): angel (Q235113)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Sanatçının Yunanca imzasının sol alt köşede göründüğü söylenebilir.", "kaynak": "enwiki.txt", "alinti": "His signature, in Greek, may be seen in the lower left corner.", "ihtiyat": true},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Çocuk İsa, yalınayak çobanların yüzlerinde yansıyan bir ışık yayıyor görünür.", "kaynak": "enwiki.txt", "alinti": "The infant Christ seems to emit a light which plays off the faces of the barefoot shepherds who have gathered to pay homage to his miraculous birth.", "ihtiyat": true},
+  {"id": "C06", "bolum": "kompozisyon", "iddia": "Bedenlerin aşırı biçimde bozulması, El Greco'nun tüm son resimleri gibi bu eserin de belirgin özelliğidir.", "kaynak": "enwiki.txt", "alinti": "Extreme distortion of body characterizes the Adoration of the Shepherds like all the last paintings of El Greco.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Tabloya canlılık katan ritmik bir enerji, figürlerin dans benzeri hareketlerinde ifade bulur.", "kaynak": "enwiki.txt", "alinti": "A rhythmic energy animates the painting, expressed in the dance-like motions of the figures.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Açık ve koyu bölümler arasındaki çarpıcı karşıtlıklar, dram duygusunu güçlendirir.", "kaynak": "enwiki.txt", "alinti": "Striking contrasts between light and dark passages heighten the sense of drama.", "ihtiyat": false},
+  {"id": "C09", "bolum": "anlam", "iddia": "Sanatçı bu eseri, Toledo'daki Santo Domingo el Antiguo manastırında kendi mezarının üzerine asılmak için yapmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting is a work which the artist made to hang over his own tomb in the convent of Santo Domingo el Antiguo in Toledo.", "ihtiyat": false},
+  {"id": "C10", "bolum": "anlam", "iddia": "Sahnenin üzerinde süzülen melek grubu, Beşinci Mührün Açılışı adlı eserin kayıp bölümünü andırıyor olabilir.", "kaynak": "enwiki.txt", "alinti": "The group of angels which hovers over the scene may resemble the missing section of The Opening of the Fifth Seal.", "ihtiyat": true},
+  {"id": "C11", "bolum": "onem", "iddia": "Tablo, El Greco'nun hayatının son yılında yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "which was painted during the last year of El Greco's life", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Museo del Prado, eserin sanatçının son çalışması sayılabileceğini belirtir.", "kaynak": "enwiki.txt", "alinti": "The painting is now in the Museo del Prado which states that it can be considered the artist's last work.", "ihtiyat": true},
+  {"id": "C13", "bolum": "onem", "iddia": "El Greco'nun kalıntıları birkaç yıl sonra başka bir kiliseye taşınmıştır.", "kaynak": "enwiki.txt", "alinti": "El Greco's remains were transferred to another church after a few years, but the painting remained at Santo Domingo until the 20th century.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Tablo 20'nci yüzyıla kadar Santo Domingo'da kalmıştır.", "kaynak": "enwiki.txt", "alinti": "El Greco's remains were transferred to another church after a few years, but the painting remained at Santo Domingo until the 20th century.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Tablo 1954'ten beri Museo del Prado'da bulunmaktadır.", "kaynak": "wikidata.txt", "alinti": "location (P276): Museo del Prado (Q160112) [start time: 1954]", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "hikaye: sahnenin hangi Kitab-ı Mukaddes metnine dayandığı kaynakta belirtilmiyor",
+  "anlam: simge yorumları ve figür modellerinin kimliği hakkında kaynakta bilgi yok",
+  "kompozisyon: alt çizim, restorasyon veya teknik inceleme bulguları kaynakta yok",
+  "onem: tablonun Santo Domingo'dan Prado'ya nasıl geçtiği ve bir hamil siparişi ayrıntısı kaynakta yok"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q368788",
+ "indirme": "2026-11-17T08:05:12+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q368788.json",
+   "revid": 2541664973,
+   "sha256": "886bdb3a299db90234082133641ff69e7f7e0e3ec4b3667dd8847a647214404a",
+   "karakter": 833
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Piet%C3%A0_%28Perugino%29&oldid=1375398578",
+   "baslik": "Pietà (Perugino)",
+   "revid": 1375398578,
+   "surum_tarihi": "2026-09-17T15:16:24Z",
+   "sha256": "bea40ab88040183ecdcccb1f54ee278ee432a00f7338c36ad617b5c3da86fcf7",
+   "karakter": 1757
+  }
+ }
+}

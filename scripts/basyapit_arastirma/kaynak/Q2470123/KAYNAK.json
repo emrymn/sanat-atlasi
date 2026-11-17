@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2470123",
+ "indirme": "2026-11-17T07:31:10+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2470123.json",
+   "revid": 2541096811,
+   "sha256": "cbc6fba7f0cb737c75fbc38b9c5e5fe81e6a2d9cc2a7aa0f0353abee065b1821",
+   "karakter": 1837
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Judith_Beheading_Holofernes_%28Caravaggio%29&oldid=1371602996",
+   "baslik": "Judith Beheading Holofernes (Caravaggio)",
+   "revid": 1371602996,
+   "surum_tarihi": "2026-08-27T09:42:04Z",
+   "sha256": "adf8a601e463700bacd5cd2686d0cc1fd7a5edc324fc05c29af21240e316be95",
+   "karakter": 5593
+  }
+ }
+}

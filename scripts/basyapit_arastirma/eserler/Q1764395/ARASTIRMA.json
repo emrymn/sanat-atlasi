@@ -1,0 +1,45 @@
+{
+ "anahtar": "Q1764395",
+ "baslik_tr": "Vaaz Sonrası Görüntü",
+ "kunye": {
+  "sanatci": {"deger": "Paul Gauguin", "kaynak": "wikidata.txt", "alinti": "creator (P170): Paul Gauguin (Q37693)"},
+  "tarih": {"deger": "1888", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1888", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "72,20 × 91,00 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 72.20 centimetre width (P2049): 91.00 centimetre"},
+  "yer": {"deger": "Scottish National Gallery", "kaynak": "wikidata.txt", "alinti": "location (P276): Scottish National Gallery (Q942713)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, İncil'den bir sahneyi, Yakup'un bir melekle güreşmesini konu alır.", "kaynak": "enwiki.txt", "alinti": "It depicts a scene from the Bible in which Jacob wrestles an angel.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Bu sahne doğrudan değil, kilisedeki bir vaazın ardından resmedilen kadınların gördüğü bir görüntü aracılığıyla dolaylı olarak aktarılır.", "kaynak": "enwiki.txt", "alinti": "It depicts this indirectly, through a vision that the women depicted see after a sermon in church.", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Yakup'un melekle güreşi öyküsü, Eski Ahit'in Yaratılış kitabının 32:22-31 bölümünden gelir.", "kaynak": "enwiki.txt", "alinti": "The tale of Jacob wrestling an angel is from Genesis 32:22-31 in the Old Testament.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Kadınlardan biri ellerini dua ederken kenetlemiştir.", "kaynak": "enwiki.txt", "alinti": "The women, one of whom clasps her hands in prayer", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kadınlar çeşitli beyaz başlıklar (coiffes) giymektedir.", "kaynak": "enwiki.txt", "alinti": "The women, one of whom clasps her hands in prayer, are wearing a variety of white hats (coiffes)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Eserde Brittanya'nın halk kıyafeti tasvir edilir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): folk costume of Brittany (Q2998471)", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Gauguin, tablonun merkezinden çapraz geçen bir ağaç gövdesi yerleştirerek yapıyı kurar.", "kaynak": "enwiki.txt", "alinti": "Gauguin structures the painting by placing a tree trunk diagonally through its center.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Gauguin, görüntüyü bölerek Breton kadınları ile onların bir meleğin Yakup'la güreştiği görüntüsü arasında görsel bir ayrım oluşturur.", "kaynak": "enwiki.txt", "alinti": "Gauguin structures the painting by placing a tree trunk diagonally through its center. By sectioning the image this way, he creates a visual separation between the Breton women and their vision of an angel wrestling with Jacob.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Gövdenin eğrisi, en merkezdeki figürün başının hattını izler.", "kaynak": "enwiki.txt", "alinti": "The curve of the trunk follows the line of the head of the center-most figure.", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Dallar ve yapraklar tablonun sağ üst köşesine doğru uzanarak melek ve Yakup'un etrafında ikinci bir çerçeve oluşturur.", "kaynak": "enwiki.txt", "alinti": "The branches and leaves shoot out directly toward the upper right corner of the painting to form a second frame around the angel and Jacob.", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Tablonun genel perspektifi kasıtlı olarak çarpıtılmıştır ve bu, sol kenar boyunca küçültülmüş boyutlarda kümelenen insanlarla etkili biçimde gerçekleştirilir.", "kaynak": "enwiki.txt", "alinti": "The overall perspective of this painting is purposely skewed but effectively accomplished by his clustering of people in diminished sizes along its left edge.", "ihtiyat": false},
+  {"id": "C12", "bolum": "kompozisyon", "iddia": "Kompozisyonda geniş düz renk alanları uygulanır.", "kaynak": "enwiki.txt", "alinti": "He applies large areas of flat color to the composition", "ihtiyat": false},
+  {"id": "C13", "bolum": "kompozisyon", "iddia": "Kırmızı zemin; toprak, tarla ya da çimenin geleneksel temsilinden ayrılır.", "kaynak": "enwiki.txt", "alinti": "the red ground departs from the conventional representation of earth, field, or grass", "ihtiyat": false},
+  {"id": "C14", "bolum": "kompozisyon", "iddia": "Gauguin izleyen figürleri resmederken biçimlerin çarpıtılması, özelliklerin abartılması ve çoğu ressamın uyguladığı kademeli ton geçişleri yerine güçlü kontur çizgileri kullanımıyla deneyler yapar.", "kaynak": "enwiki.txt", "alinti": "In portraying the watching figures Gauguin experiments with the distortion of shapes, exaggerating features, and use of strong contour lines rather than gradual shifts in tone that most painters practiced.", "ihtiyat": false},
+  {"id": "C15", "bolum": "kompozisyon", "iddia": "Kahverengi gövde, siyah giysiler, beyaz başlıklar ve kırmızı alan minimal renk gölgelendirmesiyle boyanmıştır.", "kaynak": "enwiki.txt", "alinti": "The brown trunk, black garments, white hats, and red field are painted with minimal color shading.", "ihtiyat": false},
+  {"id": "C16", "bolum": "anlam", "iddia": "Bernard, Hokusai'nin The Manga'daki sumo güreşçilerini Gauguin'in güreşen melek ve Yakup figürlerinin kaynağı olarak göstermiştir.", "kaynak": "enwiki.txt", "alinti": "In citing Hokusai’s Sumo wrestlers in The Manga, however, Bernard was being more specific. He designated them as the source of Gauguin’s struggling angel and Jacob", "ihtiyat": false},
+  {"id": "C17", "bolum": "anlam", "iddia": "Kırmızı, bu tabloda yaşanan mücadeleye güç katar.", "kaynak": "enwiki.txt", "alinti": "which in this particular painting lends power to the struggle that is occurring", "ihtiyat": false},
+  {"id": "C18", "bolum": "anlam", "iddia": "İzleyicinin dikkatini bu tabloda ilk yakalayacak renk muhtemelen kırmızıdır.", "kaynak": "enwiki.txt", "alinti": "The color most likely to catch the viewer's attention first in this painting would be red", "ihtiyat": true},
+  {"id": "C19", "bolum": "anlam", "iddia": "Gauguin, Breton temalarını kullanırken aynı zamanda soyutlamaya yönelmektedir.", "kaynak": "enwiki.txt", "alinti": "Gauguin is making use of Breton themes while at the same time leaning towards abstraction.", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Tablo, Fransa'nın Brittanya bölgesindeki Pont-Aven'de yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "It was painted in Pont-Aven, Brittany, France.", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Gauguin, Bernard'ın örneğini izleyip onu daha da geliştirerek Vision After the Sermon'u yapmıştır.", "kaynak": "enwiki.txt", "alinti": "Following Bernard's example but developing it further, Gauguin painted Vision After the Sermon", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Tablo, 1925'ten itibaren National Galleries Scotland koleksiyonunun parçasıdır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): National Galleries Scotland (Q2051997) [start time: 1925]", "ihtiyat": false},
+  {"id": "C23", "bolum": "onem", "iddia": "Eser, Paul Gauguin'in 1889 Les XX sergisine dahildir.", "kaynak": "wikidata.txt", "alinti": "part of (P361): Paul Gauguin's exhibit at Les XX, 1889 (Q7150835)", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Eser, Pont-Aven Okulu akımına aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Pont-Aven School (Q382056)", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Eserin envanter numarası NG 1643'tür.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): NG 1643", "ihtiyat": false},
+  {"id": "C26", "bolum": "onem", "iddia": "Tabloda renk, biçim ve çizgi kullanımı, boyayı ele alıştaki cesur tavır nedeniyle takdir görmektedir.", "kaynak": "enwiki.txt", "alinti": "The use of color, shape, and line in Vision After the Sermon is appreciated for its bold manner of handling paint.", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: kadın modellerin kimliği hiçbir kaynakta yok",
+  "onem: sipariş eden kişi/kurum ve sipariş amacı hiçbir kaynakta yok",
+  "kompozisyon: alt çizim ve restorasyon bulguları hiçbir kaynakta yok"
+ ]
+}

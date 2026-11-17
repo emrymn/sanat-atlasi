@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2734881",
+ "indirme": "2026-11-17T12:06:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2734881.json",
+   "revid": 2569946780,
+   "sha256": "4c8d0e7f570089495342db995d87d2c30276a5bdcc55187005113eb5723ed726",
+   "karakter": 1789
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Annunciation_%28van_Eyck%2C_Washington%29&oldid=1381776578",
+   "baslik": "Annunciation (van Eyck, Washington)",
+   "revid": 1381776578,
+   "surum_tarihi": "2026-10-24T19:09:52Z",
+   "sha256": "4b2ec11cca713c45601e66922d3fb7e64e13c805997dbe0e7c0d58e1965c560b",
+   "karakter": 15975
+  }
+ }
+}

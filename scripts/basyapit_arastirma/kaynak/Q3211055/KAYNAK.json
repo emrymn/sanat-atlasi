@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3211055",
+ "indirme": "2026-11-17T07:59:01+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3211055.json",
+   "revid": 2559652384,
+   "sha256": "70fbadaa893104319ddad4ae709d363326715c5aa8754e88299502949a39c7bf",
+   "karakter": 773
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Nativity_%28Piero_della_Francesca%29&oldid=1384895298",
+   "baslik": "The Nativity (Piero della Francesca)",
+   "revid": 1384895298,
+   "surum_tarihi": "2026-11-10T17:55:31Z",
+   "sha256": "96bb0a56b2b7fc26091e49cf9d3558f657973ecf9bb919a3f3b2524435c46a26",
+   "karakter": 4494
+  }
+ }
+}

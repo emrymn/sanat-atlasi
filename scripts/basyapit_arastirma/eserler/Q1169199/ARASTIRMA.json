@@ -1,0 +1,300 @@
+{
+ "anahtar": "Q1169199",
+ "baslik_tr": "Son Yargı (Beaune Altar Arkalığı)",
+ "kunye": {
+  "sanatci": {
+   "deger": "Rogier van der Weyden",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Rogier van der Weyden (Q68631)"
+  },
+  "tarih": {
+   "deger": "yaklaşık 1443–1451",
+   "kaynak": "enwiki.txt",
+   "alinti": "a large polyptych c. 1443–1451 altarpiece",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "panel üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"
+  },
+  "olcu": {
+   "deger": "220 × 546 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 220 centimetre width (P2049): 546 centimetre",
+   "ihtiyat": false
+  },
+  "yer": {
+   "deger": "Hospices de Beaune",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Hospices de Beaune (Q1284848)"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Arkalığın iç panelleri, iki katman halinde düzenlenmiş Son Yargı sahnelerini içerir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The inner panels contain scenes from the Last Judgement arranged across two registers.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "İki katmanı da kaplayan büyük merkez panelde İsa gökkuşağı üzerinde oturmuş yargılama yapar; altında Başmelek Mikail ruhları tartmak için terazi tutar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The large central panel spans both registers and shows Christ seated on a rainbow in judgement, while below him, the Archangel Michael holds scales to weigh souls.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Ölüler mezarlarından dirilir ve yargıyı aldıktan sonra merkez panelden nihai varış yerlerine doğru ilerlerken tasvir edilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Between these, the dead rise from their graves, and are depicted moving from the central panel to their final destinations after receiving judgement.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "İsa sağ elinde zambak, sol elinde kılıç tutar; iki panele yayılan gökkuşağı üzerinde oturur ve ayakları bir küre üzerinde durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He holds a lily in his right hand and a sword in his left, and sits on a rainbow extending across two panels, his feet resting on a sphere.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Hristiyan sanatında alışılmadık biçimde lanetliler kutsanmışlardan ağır basar; terazinin her kefesinde birer ruh vardır ve sol kefe sağ kefenin altına iner.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Unusually for Christian art, the damned outweigh the blessed; Michael's scales have only one soul in each pan, yet the left pan tips below the right.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Mikail, öluları nihai varış yerlerine çağırmak için trompet çalan dört cherubla çevrilidir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "He is surrounded by four cherubs playing trumpets to call the dead to their final destination.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Meryem, Vaftizci Yahya, on iki havari ve çeşitli ileri gelenler, Mikail'in her iki yanında bir Deësis düzeninde konumlandırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The Virgin Mary, John the Baptist, the twelve Apostles and an assortment of dignitaries are positioned in a Deësis, at either side of Michael.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Havariler yarım daire şeklinde oturur; en solda kırmızı giysili Petrus, en sağda yeşil giysili Paulus bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The apostles are seated in a semicircle; St Peter is dressed in red on the far left, and St Paul, dressed in green, is on the far right.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Çağdaş kıyafetler giyen yedi haleli ileri gelen kimliksizdir; aralarında bir kral, bir papa, bir piskopos, bir keşiş ve üç kadın bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The seven haloed dignitaries, dressed in contemporary clothing, are unidentified but include a king, a pope, a bishop, a monk, and three women.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Cennet, uzun ince ışık huzmeleriyle aydınlatılmış çağdaş Gotik üslupta bir Cennet Şehri girişi olarak temsil edilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Heaven is represented by an entrance to the Heavenly City, which is in a contemporary Gothic style illuminated by long, thin rays of light.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Van der Weyden cehennemi hem yakın hem uzak ateşlerin ve dik kaya yüzeylerinin bulunduğu kasvetli, kalabalık bir yer olarak tasvir eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Van der Weyden depicts Hell as a gloomy, crowded place of both close and distant fires, and steep rock faces.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Dış kanatlar katlandığında, iki üst ve dört alt panele yayılan dış resimler görünür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "When the outer wings (or shutters) are folded, the exterior paintings (across two upper and four lower panels) are visible.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Arkalık, altısı iki yüzü de boyalı olmak üzere dokuz panel üzerinde on beş resimden oluşur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It consists of fifteen paintings on nine panels, of which six are painted on both sides.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Dönemi için alışılmadık biçimde, özgün çerçevelerinin bir kısmını korumaktadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Unusually for the period, it retains some of its original frames.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Bazı figürler iki bitişik panel üzerine boyanırken, İsa ve Mikail ikonografiyi vurgulamak için tek merkez panelin içinde tutulmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "There are instances of figures painted across two adjoining panels, whereas Christ and St Michael are enclosed within the single central panel, giving emphasis to the iconography.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Dış panellerin imgeleri dünyevi alanda kuruludur; bağışçılar ve azizler heykeli taklit etmek için grisaille tekniğiyle boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The imagery of the outer panels is set in the earthly realm with the donors and the saints painted in grisaille to imitate sculpture.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Paneller meşe üzerine yağlıboya boyanmış, bazı bölümler sonradan tuvale aktarılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "painted in oil on oak panels with parts later transferred to canvas",
+   "ihtiyat": false
+  },
+  {
+   "id": "C18",
+   "bolum": "kompozisyon",
+   "iddia": "Eser kapsamlı boya kaybı, renklerin aşınması ve kararması ile kir birikmesinden mustariptir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It has suffered from extensive paint loss, the wearing and darkening of its colours, and an accumulation of dirt.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Poliptik, ölmekte olanlara hem teselli hem uyarı sağlamak, inançlarını hatırlatıp son düşüncelerini ilahi olana yöneltmek için tasarlanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The polyptych was intended to provide both comfort and warning to the dying; acting as a reminder of their faith and directing their last thoughts towards the divine.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Yürüyemeyecek kadar hasta olanlar için Rolin, delikli bir paravanın ardından görülebilen arkalığın görüş alanına 30 yatak yerleştirilmesini şart koşmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "For those too ill to walk, Rolin specified that 30 beds be placed within sight of the altarpiece which was visible through a pierced screen.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Sebastian ve Anthony iyileşmeyi temsil eder; bubonik vebayla ilişkili olmaları ve ölmekte olanlara ilahi katında şefaatçi olacakları güvencesi vermek için esere dahil edilmişlerdir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "St Sebastian and St Anthony represent healing. Both were associated with bubonic plague and their inclusion is intended to reassure the dying that they will act as intercessors with the divine.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Kanatların, geleneksel uygulamaya göre yalnızca belirli pazar günlerinde ya da kilise bayramlarında açıldığı düşünülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "traditionally, the shutters would have been opened only on selected Sundays or church holidays.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Arkalık, 1443'te Burgonya Dükalığı Şansölyesi Nicolas Rolin ve eşi Guigone de Salins tarafından doğu Fransa'daki Hospices de Beaune için sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The altarpiece was commissioned in 1443 for the Hospices de Beaune in eastern France, by Nicolas Rolin, Chancellor of the Duchy of Burgundy, and his wife Guigone de Salins",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Arkalığın siparişine ilişkin belgeler günümüze ulaşmıştır; sanatçı, sipariş veren, tamamlanma tarihi ve yerleştirildiği yer bilinir; bu, bir Felemenk sunak arkalığı için alışılmadıktır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Documents relating to the altarpiece's commission survive, with the artist, patron, date of completion and place of installation all known – unusual for a Netherlandish altarpiece.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Arkalık, şapelin kutsandığı yıl olan 1451'e gelindiğinde hazırdı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The altarpiece was ready by 1451, the year the chapel was consecrated.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Paneller, van der Weyden'in Brüksel atölyesinde, muhtemelen çırakların yardımıyla boyanmış ve tamamlanınca hastaneye taşınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Painted in van der Weyden's Brussels workshop – most likely with the aid of apprentices – the panels were transported to the hospice once completed.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Arkalıktan ilk kez 1501 envanterinde söz edilir; o sırada yüksek sunak üzerinde konumlandırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The altarpiece is first mentioned in a 1501 inventory, at which time it was positioned on the high altar.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Eser, 20. yüzyılda hem güneş ışığından korumak hem de hastanenin yılda aldığı yaklaşık 300.000 ziyaretçiden korumak için taşınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "it was moved in the 20th century both to shield it against sunlight and protect it from the almost 300,000 visitors the hospice receives annually.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "1875 ile 1878 arasında büyük bir restorasyon geçirmiş; eklemelerin çoğu kaldırılırken özgün boya katmanına önemli zarar verilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Four decades later it underwent major restoration – between 1875 and 1878 – when many of these additions were removed, but not without significant damage to the original paintwork",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Sanat tarihçileri, arkalık ile Memling'in Son Yargı'sı arasındaki benzerliklerin Floransalı banker Angelo Tani ile ortak bir bağa işaret ettiğini öne sürmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The similarities between the altarpiece and the c. late-1460s Last Judgement by van der Weyden's apprentice Hans Memling has led art historians to suggest a common tie with Florentine banker Angelo Tani",
+   "ihtiyat": true
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1443"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "a large polyptych c. 1443–1451 altarpiece"
+   }
+  },
+  {
+   "konu": "olcu (genişlik)",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "width (P2049): 546 centimetre"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The altarpiece measures 220 cm × 548 cm (87 in × 216 in)"
+   }
+  }
+ ],
+ "bulunamadi": []
+}

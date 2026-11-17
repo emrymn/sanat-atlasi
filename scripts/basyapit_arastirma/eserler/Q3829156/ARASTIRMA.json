@@ -1,0 +1,45 @@
+{
+ "anahtar": "Q3829156",
+ "baslik_tr": "Kadının Üç Çağı",
+ "kunye": {
+  "sanatci": {"deger": "Gustav Klimt", "kaynak": "wikidata.txt", "alinti": "creator (P170): Gustav Klimt (Q34661)"},
+  "tarih": {"deger": "1905", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1905", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "180 × 180 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 180 centimetre width (P2049): 180 centimetre", "ihtiyat": false},
+  "yer": {"deger": "Galleria Nazionale d'Arte Moderna e Contemporanea, Roma", "kaynak": "wikidata.txt", "alinti": "location (P276): Galleria Nazionale d'Arte Moderna e Contemporanea di Roma (Q1492387)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, farklı yaş aşamalarındaki kadınları betimleyerek yaşam döngüsünü simgeler.", "kaynak": "enwiki.txt", "alinti": "The work features women in varying stages of age, symbolizing the cycle of life.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser alegori türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): allegory (Q2839016)", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Eser nü türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): nude (Q40446)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Üç figür tuvalin merkezinde yer alır ve eserin odak noktasını oluşturur.", "kaynak": "enwiki.txt", "alinti": "The three are central on the canvas and are the focal point of the work.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kadınların içinde bulunduğu iki dikey aura vardır.", "kaynak": "enwiki.txt", "alinti": "There are two vertical auras that the women are in.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "İki genç figür, soğuk renklerin akışkan desenine sahip mavi bir auranın içindedir.", "kaynak": "enwiki.txt", "alinti": "The two younger figures are in a blue aura that has a fluid pattern of cool colors.", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Yaşlı kadın kendine ait bir auradadır; bu aura daha az akışkan, tasarımında daha belirgin ayrımlar olan bir desenle doludur.", "kaynak": "enwiki.txt", "alinti": "The old woman is in an aura by herself, and it is filled with a less fluid pattern with more distinct separations in the design.", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Bu auranın renkleri, diğer auranın soğuk renkleriyle karşıtlık oluşturan sıcak, topraksı tonlardır.", "kaynak": "enwiki.txt", "alinti": "The colors of this aura are warm, earthy tones that contrast with the cool colors of the other aura.", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "En genç figür, annesi olan genç kadına bağlı bir çocuktur.", "kaynak": "enwiki.txt", "alinti": "The youngest figure, a child, is connected to the young woman who is her mother.", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Çocuk ve annesi birbirine temas eden tek iki figürdür.", "kaynak": "enwiki.txt", "alinti": "They are the only two touching.", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Bacaklarından aşağıya ince, mavi bir kumaş sarkmaktadır.", "kaynak": "enwiki.txt", "alinti": "They also have sheer blue fabric draped down their legs.", "ihtiyat": false},
+  {"id": "C12", "bolum": "gorunen", "iddia": "Çocuğun ve annesinin gözleri kapalıdır.", "kaynak": "enwiki.txt", "alinti": "The child and her mother both have their eyes closed.", "ihtiyat": false},
+  {"id": "C13", "bolum": "gorunen", "iddia": "Yaşlılığın etkileri, sarkmış derisi, şişkin göbeği ve belirgin damarlarıyla açıkça görülür.", "kaynak": "enwiki.txt", "alinti": "The effects of old age are obvious through her sagging skin, bloated belly, and prominent veins.", "ihtiyat": false},
+  {"id": "C14", "bolum": "gorunen", "iddia": "Yaşlı kadının her iki ayağı da gösterilir.", "kaynak": "enwiki.txt", "alinti": "She is also unlike the other two in the fact that both of her feet are shown.", "ihtiyat": false},
+  {"id": "C15", "bolum": "kompozisyon", "iddia": "Arka plan derinlikten yoksundur ve oldukça iki boyutlu görünür.", "kaynak": "enwiki.txt", "alinti": "The background has a lack of depth, making it look very two dimensional.", "ihtiyat": false},
+  {"id": "C16", "bolum": "kompozisyon", "iddia": "Renkler nötrdür ve dingin bir etki yaratır.", "kaynak": "enwiki.txt", "alinti": "The colors are neutral and create a restful effect.", "ihtiyat": false},
+  {"id": "C17", "bolum": "kompozisyon", "iddia": "Eserde, Klimt'in eserlerinde yaygın olan impasto tekniğinin izleri görülür.", "kaynak": "enwiki.txt", "alinti": "It shows signs of an impasto painting technique that was common of Klimt's work.", "ihtiyat": false},
+  {"id": "C18", "bolum": "kompozisyon", "iddia": "Klimt'in renkli motifleri sıkça kullanması bu eserde de belirgindir.", "kaynak": "enwiki.txt", "alinti": "Klimt's common use of colorful motifs is also evident in this work.", "ihtiyat": false},
+  {"id": "C19", "bolum": "kompozisyon", "iddia": "Genç kadının bacağı sol auranın arkasına geçer, yaşlı kadının başı ise sağ auranın önüne gelir.", "kaynak": "enwiki.txt", "alinti": "The leg of the young woman goes behind the left aura and the old woman's head comes in front of the right aura.", "ihtiyat": false},
+  {"id": "C20", "bolum": "anlam", "iddia": "Genç kadının başının çevresindeki çiçekler ilkbaharı temsil eder.", "kaynak": "enwiki.txt", "alinti": "The young woman has flowers around her head which represent spring.", "ihtiyat": false},
+  {"id": "C21", "bolum": "anlam", "iddia": "Bu, izleyicinin yaşlılığın çirkinliğini bütünüyle görebilmesi için yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "This was done so the viewer can see the ugliness of her age in its entirety.", "ihtiyat": false},
+  {"id": "C22", "bolum": "anlam", "iddia": "Eser, dönemi ve dekoratif öğeleri nedeniyle Art Nouveau hareketinin parçası olabileceğini düşündürür.", "kaynak": "enwiki.txt", "alinti": "This work also suggests that it is part of the Art Nouveau movement due to the time period and the decorative elements.", "ihtiyat": true},
+  {"id": "C23", "bolum": "onem", "iddia": "Tablo, Gustav Klimt tarafından 1905'te Avusturya'da tamamlanmıştır.", "kaynak": "enwiki.txt", "alinti": "a painting that was completed in Austria in 1905 by Gustav Klimt", "ihtiyat": false},
+  {"id": "C24", "bolum": "onem", "iddia": "Tablo, Mayıs-Ekim 1905'te Berlin'de Deutsche Künstlerbund'un ikinci sergisinde Die drei Lebensalter başlığıyla sergilenmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was exhibited during the second exhibition of the Deutsche Künstlerbund in May-October 1905 in Berlin under the title Die drei Lebensalter (\"The Three Ages\").", "ihtiyat": false},
+  {"id": "C25", "bolum": "onem", "iddia": "Tablo, Klimt'in The Kiss gibi başka eserlerini de içeren Altın Dönemi'ne aittir.", "kaynak": "enwiki.txt", "alinti": "The Three Ages of Woman falls into Klimt's Golden Period which includes other works such as The Kiss.", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: modelin kimliği kaynakta belirtilmemiş",
+  "onem: sipariş/comisyon bilgisi ve amacı kaynakta yok",
+  "onem: sahiplik geçmişi ve yer değiştirme öyküsü kaynakta yok (yalnız güncel yer var)",
+  "onem: eserin başka sanatçılara etkisi veya çağdaş tepkiler kaynakta yok"
+ ]
+}

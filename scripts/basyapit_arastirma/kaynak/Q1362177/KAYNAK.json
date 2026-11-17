@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1362177",
+ "indirme": "2026-11-17T07:35:14+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1362177.json",
+   "revid": 2556891418,
+   "sha256": "f9a35b6ee97fdc67fb8f6f80410d7442386032e2e515923fb24f4e5547ea4dc9",
+   "karakter": 4436
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Melencolia_I&oldid=1384297561",
+   "baslik": "Melencolia I",
+   "revid": 1384297561,
+   "surum_tarihi": "2026-11-07T16:11:05Z",
+   "sha256": "6aed603f63994e55fb0c195073d3e75ee6da1a16b51396aad5449d4606a9d6c9",
+   "karakter": 25675
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Melankoli_I&oldid=30489190",
+   "baslik": "Melankoli I",
+   "revid": 30489190,
+   "surum_tarihi": "2023-10-31T12:12:28Z",
+   "sha256": "2c10b4c55bb24d0518a6b90061534063472049be3da1fd5ba568c45e3c43b81a",
+   "karakter": 1284
+  }
+ }
+}

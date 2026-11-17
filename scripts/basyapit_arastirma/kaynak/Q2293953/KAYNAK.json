@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2293953",
+ "indirme": "2026-11-17T07:37:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2293953.json",
+   "revid": 2568751904,
+   "sha256": "d945d291f2a0b7b7a180f916591f163e145bc2e048acab09c2deba48d14bfb5d",
+   "karakter": 1367
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Venus_and_Mars_%28Botticelli%29&oldid=1381052916",
+   "baslik": "Venus and Mars (Botticelli)",
+   "revid": 1381052916,
+   "surum_tarihi": "2026-10-19T18:34:35Z",
+   "sha256": "9c81e18efe96de7e2135c2a5bd4792890308a321b01e778571a2787e7fd4d5a9",
+   "karakter": 15364
+  }
+ }
+}

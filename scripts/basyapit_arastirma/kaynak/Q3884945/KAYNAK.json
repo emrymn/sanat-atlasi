@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3884945",
+ "indirme": "2026-11-17T07:51:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884945.json",
+   "revid": 2519357491,
+   "sha256": "33d49469e8ac1f9ea3d5d850073348b74b3aa7b74e5393cb3668cbf281de4ccf",
+   "karakter": 1103
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Agony_in_the_Garden_%28Mantegna%2C_London%29&oldid=1375672653",
+   "baslik": "Agony in the Garden (Mantegna, London)",
+   "revid": 1375672653,
+   "surum_tarihi": "2026-09-19T07:25:16Z",
+   "sha256": "b7e37900aa02e3537e1ae2b5b7cb0c85e274355986323f59dfdd77fd4923a4f7",
+   "karakter": 765
+  }
+ }
+}

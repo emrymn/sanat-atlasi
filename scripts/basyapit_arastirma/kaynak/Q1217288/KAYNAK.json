@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1217288",
+ "indirme": "2026-11-17T07:38:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1217288.json",
+   "revid": 2569622616,
+   "sha256": "21dcda2797ffe57518dc2a0fff08cf843ac12960b1fa0161dbcdbcea6abe3598",
+   "karakter": 896
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Triptych_of_the_Temptation_of_St._Anthony&oldid=1378745093",
+   "baslik": "Triptych of the Temptation of St. Anthony",
+   "revid": 1378745093,
+   "surum_tarihi": "2026-10-06T00:27:59Z",
+   "sha256": "07c50cecd1080facd3f0965276efae550d8e000d192beb7c1ee122eb97d77b36",
+   "karakter": 8036
+  }
+ }
+}

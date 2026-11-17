@@ -1,0 +1,41 @@
+{
+ "anahtar": "Q2294441",
+ "baslik_tr": "Danae",
+ "kunye": {
+  "sanatci": {"deger": "Rembrandt", "kaynak": "wikidata.txt", "alinti": "creator (P170): Rembrandt (Q5598)"},
+  "tarih": {"deger": "1636", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1636", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "185 × 202,5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 185 centimetre width (P2049): 202.5 centimetre"},
+  "yer": {"deger": "Hermitage Müzesi", "kaynak": "wikidata.txt", "alinti": "location (P276): Hermitage Museum (Q132783)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Yunan mitolojisinde Perseus'un annesi olan Danaë karakterini gerçek boyutlu olarak betimler.", "kaynak": "enwiki.txt", "alinti": "It is a life-sized depiction of the character Danaë from Greek mythology, the mother of Perseus.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Danaë muhtemelen, kendisini altın sağanağı biçiminde hamile bırakan Zeus'u karşılarken betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "She is presumably depicted as welcoming Zeus, who impregnated her in the form of a shower of gold.", "ihtiyat": true},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Resimde betimlenenler arasında gölgelikli bir yatak yer alır.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): canopy bed (Q3256519)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Resimde bir bilezik ve bir yastık betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): bracelet (Q201664) depicts (P180): pillow (Q99895)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Tablonun ana konusu altın sağanağıdır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): shower of gold (Q37739859)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Tabloda giyinik bir erkek ile çıplak bir kadın betimlenmiştir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): clothed male, naked female (Q5135552)", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Tablo önemli ölçüde kesilerek küçültülmüştür.", "kaynak": "enwiki.txt", "alinti": "The painting has been considerably cut down.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Yeniden işleme, Danaë'nin başı, uzatılmış kolu ve bacakları gibi öğelerin konumlarını değiştirmiştir.", "kaynak": "enwiki.txt", "alinti": "The reworking changed the positions of, among other things, the head, outstretched arm and legs of Danaë.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Tabloda, sonu '6' ile biten bir tarih içeren ve okunması zor bir imza vardır; bu imza gerçek olmayabilir.", "kaynak": "enwiki.txt", "alinti": "It has a hard-to-read signature with a date ending in \"6\", but this may not be genuine.", "ihtiyat": true},
+  {"id": "C10", "bolum": "anlam", "iddia": "Danaë'nin özgün modeli, sanatçının eşi Saskia idi.", "kaynak": "enwiki.txt", "alinti": "Although the artist's wife Saskia was the original model for Danaë, Rembrandt later changed the figure's face to that of his mistress Geertje Dircx.", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Rembrandt daha sonra figürün yüzünü, metresi Geertje Dircx'in yüzüyle değiştirmiştir.", "kaynak": "enwiki.txt", "alinti": "Although the artist's wife Saskia was the original model for Danaë, Rembrandt later changed the figure's face to that of his mistress Geertje Dircx.", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Tablo ilk olarak 1636'da tamamlanmış, Rembrandt tarafından en geç 1643'te önemli ölçüde yeniden işlenmiştir.", "kaynak": "enwiki.txt", "alinti": "It was first completed in 1636, but Rembrandt reworked it significantly by 1643 at the latest.", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Tablo bir zamanlar Pierre Crozat'ın koleksiyonundaydı ve 18. yüzyıldan beri Sankt Peterburg'daki Hermitage Müzesi'ndedir.", "kaynak": "enwiki.txt", "alinti": "Once part of Pierre Crozat's collection, it has been in the Hermitage Museum, in St. Petersburg, Russia, since the 18th century.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "15 Haziran 1985'te tabloya, sonradan akıl hastası olduğuna hükmedilen Sovyet Litvanyalı Bronius Maigys saldırdı; tuvale sülfürik asit döktü ve bıçakla iki kez kesti.", "kaynak": "enwiki.txt", "alinti": "On 15 June 1985, Rembrandt's painting was attacked by Bronius Maigys, a Soviet Lithuanian national later judged insane; he threw sulphuric acid on the canvas and cut it twice with his knife.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Saldırıda kompozisyonun orta bölümünün tamamı lekeler, sıçramalar ve akan boya alanlarından oluşan bir karışıma dönüştü.", "kaynak": "enwiki.txt", "alinti": "The entire central part of the composition was turned into a mixture of spots with a conglomerate of splashes and areas of dripping paint.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "En ağır hasar Danaë'nin yüzü ve saçları, sağ kolu ve bacaklarındaydı.", "kaynak": "enwiki.txt", "alinti": "The worst damage was to the face and hair of Danaë, her right arm, and legs.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Tablonun restorasyon süreci aynı gün başlamıştır.", "kaynak": "enwiki.txt", "alinti": "The process of restoring the painting began the same day.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Kimyagerlere danışıldıktan sonra onarımcılar tablonun yüzeyini suyla yıkamaya başlamış, tabloyu dik konumda tutup üzerine su püskürterek daha fazla bozulmayı önlemiştir.", "kaynak": "enwiki.txt", "alinti": "Following consultations with chemists, art restorers began washing the surface of the painting with water; they kept the painting in the vertical position, and sprayed water at the painting to prevent further degradation of the painting.", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Restorasyon 1985 ile 1997 arasında, Ermitaj'ın Şövale Resimleri Uzman Restorasyon Laboratuvarı çalışanlarınca tamamlanmıştır.", "kaynak": "enwiki.txt", "alinti": "The restoration of the painting was accomplished between 1985 and 1997 by staff of the State Hermitage's Laboratory of Expert Restoration of Easel Paintings: Ye. N. Gerasimov (group leader), A. G. Rakhman, and G. A. Shirokov, with the participation of T. P. Alioshina in matters of scientific methodology.", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Rembrandt'ın en görkemli tablolarından biri olduğu için esere değer vermiş olması mümkündür; ancak tuvalin büyük boyutu satılmasını zorlaştırmış olabilir.", "kaynak": "enwiki.txt", "alinti": "Given that this is one of Rembrandt's most magnificent paintings, it is not out of the question that he cherished it, but it also may have been difficult to sell because of the canvas' large size.", "ihtiyat": true},
+  {"id": "C21", "bolum": "onem", "iddia": "Bronius Maigys 2006'da Rusça 300 sayfalık bir kitap yazarak olayların kendi versiyonunu anlattı.", "kaynak": "enwiki.txt", "alinti": "In 2006, Bronius Maigys wrote a 300-page book in Russian, giving his version of events.", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "El yazmasını okuyan Rus gazetecilere göre yazar, Litvanya'nın özgürlüğü için savaşmış bir şehit imgesi arar, pişmanlık duymaz ve yine aynısını yapardı.", "kaynak": "enwiki.txt", "alinti": "According to Russian journalists who have read the manuscript, the author seeks the image of a martyr who fought for Lithuania's freedom, has no regrets, and would do the same again.", "ihtiyat": true}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: simgelerin (altın sağanağı, takılar vb.) simgesel yorumu kaynakta yok; yalnız model kimliği ve konu aktarılmış",
+  "kompozisyon: ışık, renk paleti ve alt çizim (underdrawing) hakkında kaynakta ayrıntı yok",
+  "onem: siparişi veren kişi ve sipariş amacı kaynakta belirtilmemiş"
+ ]
+}

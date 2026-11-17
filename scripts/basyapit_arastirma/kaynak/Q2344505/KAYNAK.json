@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2344505",
+ "indirme": "2026-11-17T07:36:15+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2344505.json",
+   "revid": 2569158006,
+   "sha256": "ea95533e1ba8a9dd841ecd902ea70ccd1f4f41cc2f846c7daf8b87ab79915778",
+   "karakter": 1644
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Madonna_del_Cardellino&oldid=1375405341",
+   "baslik": "Madonna del Cardellino",
+   "revid": 1375405341,
+   "surum_tarihi": "2026-09-17T15:55:15Z",
+   "sha256": "419928f51898d2ae7ada4f72c57a26ff6bc495fa4855eeaf4f0d0e71fdd68524",
+   "karakter": 4585
+  }
+ }
+}

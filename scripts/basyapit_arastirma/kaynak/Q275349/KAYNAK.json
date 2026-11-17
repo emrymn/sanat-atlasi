@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q275349",
+ "indirme": "2026-11-17T07:36:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q275349.json",
+   "revid": 2568677569,
+   "sha256": "9b0b0a60b9615b8f393d823a25396ed08d6dbe6908974ae265b27b96ae52f4d5",
+   "karakter": 1627
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Rokeby_Venus&oldid=1377005988",
+   "baslik": "Rokeby Venus",
+   "revid": 1377005988,
+   "surum_tarihi": "2026-09-27T11:31:33Z",
+   "sha256": "b6ee35145f7bcfd030b0c1fde2a4914ee1d00a8e06b297c0c69be2f3b18803ca",
+   "karakter": 24796
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Aynadaki_Ven%C3%BCs&oldid=38578772",
+   "baslik": "Aynadaki Venüs",
+   "revid": 38578772,
+   "surum_tarihi": "2026-11-12T21:42:08Z",
+   "sha256": "37aa8f13e5b14a89afef2862dd1c62f9b899d3062c420aec5455904672c33360",
+   "karakter": 11768
+  }
+ }
+}

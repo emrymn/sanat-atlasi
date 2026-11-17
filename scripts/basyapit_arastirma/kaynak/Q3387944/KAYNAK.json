@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3387944",
+ "indirme": "2026-11-17T07:54:04+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3387944.json",
+   "revid": 2501925716,
+   "sha256": "6530d438628bbedf9bc100bd266078e5006d0119ab5cc735312227c5f8d6dd89",
+   "karakter": 1198
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Pierrot_%28Watteau%29&oldid=1376154181",
+   "baslik": "Pierrot (Watteau)",
+   "revid": 1376154181,
+   "surum_tarihi": "2026-09-22T11:36:07Z",
+   "sha256": "80eaf1b1a081e6b926eb04ee55e09c1cb8bdfe4a1a5b33ab9c7b0c7c46880543",
+   "karakter": 4923
+  }
+ }
+}

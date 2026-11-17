@@ -1,0 +1,292 @@
+{
+ "anahtar": "Q2528177",
+ "baslik_tr": "Diana ve Aktaion",
+ "kunye": {
+  "sanatci": {
+   "deger": "Titian",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Titian (Q47551)",
+   "ihtiyat": false
+  },
+  "tarih": {
+   "deger": "1556–1559 (tamamlanma)",
+   "kaynak": "enwiki.txt",
+   "alinti": "finished in 1556–1559",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)",
+   "ihtiyat": false
+  },
+  "olcu": {
+   "deger": "184,5 × 202,2 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 184.5 centimetre width (P2049): 202.2 centimetre",
+   "ihtiyat": false
+  },
+  "yer": {
+   "deger": "National Gallery (Londra) ve National Gallery of Scotland (Edinburgh), ortak mülkiyet",
+   "kaynak": "enwiki.txt",
+   "alinti": "owned jointly by London's National Gallery and the National Gallery of Scotland in Edinburgh",
+   "ihtiyat": false
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Tablo, Romalı şair Ovidius'un Metamorphoses'inin üçüncü kitabındaki ikinci öykünün temel sahnesini betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts the seminal scene from the second story in book three of the Roman poet Ovid’s Metamorphoses.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Şiirde, Kadmos'un torunu Aktaion, başarılı bir avın ardından sıcak hava nedeniyle arkadaşlarını dağıtır ve av tanrıçası Diana'nın kutsal diyarı Gargaphia vadisine farkında olmadan girer.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In the poem, Actaeon, grandson of Cadmus, calls off his friends after a successful hunt due to hot weather and inadvertently wanders off into the valley of Gargaphia, the sacred realm of Diana, the goddess of the hunt.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "hikaye",
+   "iddia": "Bu dere, Diana ve perilerinin uzun ve başarılı bir avın ardından yıkanmayı seçtiği mağaraya çıkan kutsal bir deredir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This stream happens to be a sacred stream that leads to a grotto where Diana and her nymphs have chosen to bathe after a long successful hunt.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "hikaye",
+   "iddia": "Dikkat etmeyen Aktaion ve köpekleri, resmin sol tarafından mağaraya varır ve varlıklarıyla yıkanan perileri ve tanrıçayı ürkütür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Without paying attention, Actaeon and his dogs soon arrive at the grotto from the left side of the painting and startle the bathing nymphs and Goddess with their presence.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "hikaye",
+   "iddia": "Bir erkeğin kendisini çıplak görmesi düşüncesine öfkelenen Diana, Aktaion'a su sıçratarak onu geyiğe dönüştürür; geyik daha sonra kendi tazıları tarafından kovalanır ve nihayetinde öldürülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Furious at the thought of being seen naked by a man, Diana as a result of this incursion will then splash the unfortunate Actaeon with water, causing him to transform into a stag who is then pursued and ultimately killed by his own hounds which are shown eagerly crowding around the hunter's feet at the bottom left.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "onem",
+   "iddia": "Titian, anlatının bu devamını daha sonra 1575 tarihli The Death of Actaeon (National Gallery) tablosunda betimlemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Titian would later portray this continuation of the narrative in his 1575 painting The Death of Actaeon (National Gallery).",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Diana, sağdan ikinci solgun tenli kadındır; üzerinde hilal bulunan bir taç takar ve en sağda duran, hizmetçisi olabileceği düşünülen koyu tenli kadın tarafından örtülür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Diana is the pale woman second from the right. She is wearing a crown with a crescent moon on it and is being covered by the dark skinned woman at the extreme right who may be her servant.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Diana'ya, onun ayakları dibinden Aktaion'a havlayan küçük kahverengi bir köpek eşlik eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "She is wearing a crown with a crescent moon on it and is being covered by a dark-skinned maidservant and is accompanied by a small brown dog who barks at Actaeon from Diana’s feet.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Periler, Diana'nın bir sonraki hamlesinden önceki çatışma anını gözler önüne sermeye yardımcı olan çeşitli tepkiler ve çıplak pozlar sergiler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The nymphs display a variety of reactions and nude poses that help illustrate the exact moment of conflict before Diana’s next move.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Davetsiz gelenin gelişinden şaşkına dönen, kompozisyonun merkezindeki periler, çaresizce Diana'dan yönlendirme beklerken aceleyle kendilerini örtmeye koyulur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Reeling in surprise from the arrival of the intruder, the nymphs at the centre of the composition hurry to cover themselves while looking desperately to Diana for guidance.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Aktaion'un kendi tazıları, resmin sol altında avcının ayakları çevresinde istekle toplanmış halde gösterilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "the unfortunate Actaeon with water, causing him to transform into a stag who is then pursued and ultimately killed by his own hounds which are shown eagerly crowding around the hunter's feet at the bottom left",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "kompozisyon",
+   "iddia": "Titian, bu doğal biçimlerin yerine mağarayı bir Gotik katedralin kalıntılarıyla değiştirmiş ve perilerin içinde yıkandığı çeşmenin ortasına rustik taş bir sütun eklemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Titian instead substituted these natural forms by replacing the grotto with the ruins of a Gothic cathedral and adding a rusticated stone column in the centre of the fountain that the nymphs bathe in.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "kompozisyon",
+   "iddia": "Çeşitli dinamik hareket durumlarındaki karakterler, anlatıyı çerçevelemek için başlık karakterlerinden yararlanan V biçimli bir kompozisyonda düzenlenmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The characters in their various states of dynamic movement are organized in a V-shaped composition that makes use of the titular characters to frame the narrative.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Titian'ı birçok diğer Rönesans sanatçısından ayıran başlıca etken, kompozisyona daha doğallaştırılmış bir görünüm vermek için pigmentlerin sürekli karıştırılıp katmanlanmasını ve serbest fırça işçiliğini kullanan colorito tekniğini benimsemesiydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "A major factor that separated Titian from many other Renaissance artists was his adoption of the colorito technique which utilized the consistent mixing and layering of pigments and freehanded brushwork to create a more naturalized appearance to the composition.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Röntgen taramaları, hizmetçinin başlangıçta beyaz tenli olarak boyandığını ve sonradan şimdiki siyah görünümüne çevrildiğini göstermiştir; bu değişiklik muhtemelen onu çevredeki perilerden daha kolay ayırt edilir kılmak ve Avrupalı tüketiciye daha egzotik göstermek için yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "X-ray scans of the painting have shown that the maid was originally painted as a white person and was later painted over to her current black appearance, which was most likely done in an attempt to make her more easily discernible from the surrounding nymphs as well as to seem more exotic to the European consumer.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Titian'ın başlangıçta sütuna dikey olarak eklediği 'TITANVS F' imzası, zamanla graffiti sanılmış ve 1932'de konservatörler tarafından kaldırılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Titian had originally included the signature \"TITANVS F\" vertically on the column, however, it would eventually be mistaken for graffiti and removed by conservationists in 1932.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Bu üslup kayması ve ağır fırça işçiliğinin benimsenmesi, yaşlanan sanatçının zayıflayan görme yetisinin yan etkileri olarak düşünülmektedir; zira bu eseri boyadığı sırada Titian 60'lı yaşlarının sonlarındaydı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This shift in style alongside his adoption of heavy brushwork are believed to be side effects of the aging artist's failing eyesight; since at the time of painting this work Titian was well into his late 60s.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Sütunlardan birinin tepesinde, Aktaion'un doğrudan görüş alanındaki geyik kafatası ile yanındaki dallara asılı geyik postları, genç soylunun başına geleceklerin simgesel ön habercisi işlevi görür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Perched on top of one of the columns is the skull of a stag which happens to be in direct eyesight of Actaeon and alongside the deer pelts hanging from the branches next to it, acts as a means of symbolic foreshadowing of the future that is to befall the young nobleman.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "İzleyiciye bakan kemerin kilit taşına oyulmuş aslan yüzü, sanatçının sonradan benimsediği yurt olan Venedik kentine ince bir gönderme olarak düşünülmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The keystone of the arch facing the viewer is carved with the visage of a lion which is assumed to have been a subtle nod to the city of Venice which was an adoptive home of the artist.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Venedik'e bir başka ince gönderme, çeşmenin en alt basamağındaki küçük ayna ve Venedik camı sürahi olabilir; bunlar dönemin Müjde imgelerinde Meryem'in bakireliğini temsil eden ve bu örnekte Diana'ya uyarlanan yaygın sembollerdi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Another subtle reference to Venice may be found in the small mirror and Venetian glass carafe located on the bottom step of the fountain which were common symbols used in Annunciation images from the period that represented the virginity of the Virgin Mary which was adapted for Diana in this instance.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Diana ile özdeş hilal simgesi, onun başındaki gümüş broşta ve hizmetçisinin elbisesinin kavisli sırtında betimlenir; açık tenli tanrıça ile koyu tenli hizmetçinin yan yana gelişi ise ayın aydınlık ve karanlık yüzlerinin simgesi olarak yorumlanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The symbol of the crescent moon which is synonymous with Diana is depicted in the silver brooch worn on Diana's head, as well as the curved back of her maidservant's dress; the juxtaposition of the fair skinned goddess and the dark-skinned maidservant is also believed to be symbolic of the light and dark sides of the moon.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C22",
+   "bolum": "anlam",
+   "iddia": "Kompozisyonun sağ altında izleyiciye sırtı dönük oturan Diana'ya yardım eden hizmetçi ve küçük köpek, Rönesans kompozisyonlarında sadakatin simgesel alegorileri olarak yer alan yaygın ikonografik öğelerdi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Shifting focus to the bottom right of the composition we find Diana who is seated facing away from the viewer and is aided by a maidservant and a small dog, both of which were common iconographical inclusions in renaissance compositions as symbolic allegories of fidelity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "anlam",
+   "iddia": "Titian'ın öznelerini çıplak betimlemesinin başlıca motivasyonlarından biri, resim mi heykel mi üstündür diye tartışan Rönesans sanatçıları arasındaki önde gelen paragone tartışması bağlamında resmin üstünlüğünü kanıtlamaktı.",
+   "kaynak": "enwiki.txt",
+   "alinti": "One of Titian's main motivations for depicting his subjects in the nude was to prove the superiority of painting in the context of the paragone, a prominent debate amongst Renaissance artists that argued whether painting or sculpture were the superior form of fine art.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Diana ve Aktaion, Titian'ın Phillip II için poesie dizisinin parçası olarak yaptığı yedi resmin dördüncüsüdür ve dizinin beşinci resmi Diana ve Callisto ile aynı zamanda ve aynı üslup kullanılarak boyanmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Diana and Actaeon is the fourth of seven paintings made by Titian for Phillip II as a part of his poesie series and was painted at the same time and using the same style as the fifth painting in the series Diana and Callisto.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "Eser, Kral Philip V'in onu Fransız elçiye verdiği 1704 yılına kadar İspanya kraliyet koleksiyonunda kalmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The work remained in the Spanish royal collection until 1704, when King Philip V gave it to the French ambassador.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Koleksiyonun en büyük payı, bu tablo da dahil olmak üzere 1798'de kömür patronu Francis Egerton, üçüncü Bridgewater Dükü tarafından satın alınmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The largest share of the collection was thus bought in 1798 by the coal-magnate Francis Egerton, 3rd Duke of Bridgewater, including this painting",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "1945 ile 2009 arasında Diana ve Aktaion ve Diana ve Callisto, topluca 'Bridgewater loan' ya da 'Sutherland Loan' olarak bilinen koleksiyondaki diğer resimlerle birlikte Edinburgh'daki National Gallery of Scotland'da uzun süreli sergideydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Between 1945 and 2009, the Diana and Actaeon and Diana and Callisto (with other paintings from the collection, known collectively as \"the Bridgewater loan\" or \"the Sutherland Loan\") were on long-term display at the National Gallery of Scotland, in Edinburgh.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "2008–2009'da Londra'daki National Gallery ve National Galleries of Scotland, tabloyu Bridgewater Koleksiyonu'ndan 50 milyon sterline edinmek için başarılı bir kampanya yürütmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 2008–2009, the National Gallery, London and National Galleries of Scotland successfully campaigned to acquire the painting from the Bridgewater Collection for £50 million.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Sonuç olarak Diana ve Aktaion, eşi Diana ve Callisto ile birlikte Birleşik Krallık'ta sergilenmeye devam edecek ve iki galeri arasında beş yıllık dönemlerle dönüşümlü olarak yer alacaktır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "As a result, Diana and Actaeon, along with its pair Diana and Callisto, will remain on display in the UK, and will alternate between the two galleries on five-year terms.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "2024'ün sonlarında tablo, Londra'daki National Gallery'nin 29 numaralı odasında sergilenmekteydi.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In late 2024 the painting was on display in Room 29 of the National Gallery in London.",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1557 (precision: decade)"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "finished in 1556–1559"
+   }
+  }
+ ],
+ "bulunamadi": []
+}

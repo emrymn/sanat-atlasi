@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q974674",
+ "indirme": "2026-11-17T07:51:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q974674.json",
+   "revid": 2570246746,
+   "sha256": "530290ef1bcbd8f57b9db14ab5d36b3e7b55d0209ab142fad28f70463455bcf2",
+   "karakter": 1006
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Mystical_Nativity&oldid=1361431424",
+   "baslik": "The Mystical Nativity",
+   "revid": 1361431424,
+   "surum_tarihi": "2026-06-27T21:48:02Z",
+   "sha256": "8cb6773e1cbe722d2e18f41788720c0296ffa4caea25ae2fd8449b5d1f48c5db",
+   "karakter": 11198
+  }
+ }
+}

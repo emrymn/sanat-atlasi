@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q959537",
+ "indirme": "2026-11-17T07:56:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q959537.json",
+   "revid": 2538307859,
+   "sha256": "39806a6d2c9275ccee8fe727119c8ee0e328f7463fbd4adbef4f1f8f74c6d6cd",
+   "karakter": 1092
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Death_of_the_Virgin_%28Mantegna%29&oldid=1375676787",
+   "baslik": "Death of the Virgin (Mantegna)",
+   "revid": 1375676787,
+   "surum_tarihi": "2026-09-19T08:14:02Z",
+   "sha256": "16fabd197ce13b460142293a3728f545167f59c4bca3845c23ce7f933e88744e",
+   "karakter": 1266
+  }
+ }
+}

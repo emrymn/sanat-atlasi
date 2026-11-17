@@ -2423,6 +2423,159 @@ Uygulanan (`js/ekranlar/basyapit.js`, saf mantık `js/basyapitSayfa.js`, stiller
 Silinen: eski başyapıt sayfası (`gozat.js`), ders ekranı (`eserDersiSayfasi`) ve stilleri (`.basyapit-ad…`, `.drsx*`).
 Testler: `tests/unit/basyapit_sayfa.test.mjs`, `tests/e2e/basyapit_sayfa.spec.js`; `eser_dersi.spec.js` yeni akışa göre.
 
+### İş 189 · Başyapıtlara 110 eser: seçim ve araştırma düzeni (uygulama değişmedi)
+
+Emre: "başyapıtlar kısmına daha fazla resim eklemek istiyorum; hikâyesi olan ve yüksek çözünürlüklü kaç resim var söyle, en az 100
+seç, araştırmayı Qwen'e yaptır, halüsinasyonu engelleyen net bir komut ver."
+
+- **Sayım:** "hikâyesi olan" = konusu `data/ikonografi.json`'da hikâyesiyle yazılı (`eser_konulari.json` `k`); "yüksek çözünürlük" =
+  R2'deki en büyük kopyanın uzun kenarı ≥ 3000 px. Depoda piksel boyutu tutulmadığı için 2508 dosyanın boyutu R2'den dosya başlığı
+  okunarak ölçüldü. Sonuç: 2771 hikâyeli eserin 2138'inin en büyük kopyası var, **1546'sı ≥ 3000 px**, 1496'sı başyapıt değil.
+- **Seçim:** 110 eser, `scripts/basyapit_arastirma/secim.json` (ölçüt ve elle çıkarılanlar `TALIMAT.md`'de). `yil`/`muze` önbellekten;
+  künye sayılmaz, araştırma doğrular.
+- **Düzen (koordinasyon/DEVIR.md §8'deki saklı yöntem):** kaynak metni modelden önce iner (`kaynak_indir.py`: Wikidata künyesi +
+  en/tr Wikipedia düz metni, sürüm numarası ve sha256). Qwen internete çıkmadan yalnız bu dosyalardan `ARASTIRMA.json` yazar: her olgu
+  kaynaktan birebir alıntıya bağlı. `dogrula.py` alıntının kaynakta geçtiğini, iddiadaki sayıların alıntıda olduğunu, ihtiyat
+  sözlerinin korunduğunu ve kaynağın değişmediğini denetler (uydurma alıntı, yanlış yıl ve kesinleştirme ile denendi: üçünü de yakaladı).
+  Betiğin göremediği "iddia alıntıyla aynı şeyi mi söylüyor" sorusunu Gemini denetler. Yakın okumayı araştıran model yazmaz; Claude
+  görsele bakarak, geçmiş iddialardan yazar.
+- Klasör `scripts/` altında: yayına gitmez (`yayinla.yml` `scripts`'i dışlar). Örnek: `eserler/Q2470123/ARASTIRMA.json` (elle yazıldı).
+- Kullanıcı aracısı `ATLAS_UA` ortam değişkeninden; varsayılanında e-posta yok.
+
+### İş 189b · Yeni başyapıtlar, parti 1: 10 yakın okuma (sürüm 1.83.1)
+
+- Araştırma bitti: 110 eserin `ARASTIRMA.json`'u (Qwen `qwen4-max · Medium`, 11 parti + 1 ek eser; Qwen kotası %29,7 → %9),
+  hepsi `dogrula.py`'den geçti; Gemini anlam denetiminin ~140 bulgusu tek tek kaynakla karşılaştırıldı, yarısı uygulandı
+  (çoğu bölüm taşıması; ~25 gerçek içerik hatası: çeviri kayması, düşen ihtiyat, başka esere ait 3 iddia). Turner'ın Cleveland
+  nüshasının Wikipedia maddesi olmadığı için yerine van Eyck · Müjde (NGA) alındı.
+- Yakın okumalar `scripts/basyapit_arastirma/okumalar/parti_NN.json`'da yazılır, `birlestir.py` ile `data/basyapitlar.json` ve
+  `data/eser_ayrintilari.json`'a eklenir. Olgular yalnız o eserin doğrulanmış iddialarından; resimde görülenler görselden. Ayrıntı
+  noktaları TALIMAT'taki iki aşamalı yolla (1280'likte ızgara, 4096'lıktan kırpıp doğrulama).
+- Parti 1: Son Yargı, Salvator Mundi, Kayalıklar Meryemi, Marat'nın Ölümü, Azize Anna, Felemenk Atasözleri, Sistina Madonnası,
+  Taç Giyme, Alpler'i Geçerken, Caravaggio · Yudit. 52 nokta; doğrulamada düzeltilen: Marat'nın yarası kutunun dışındaydı;
+  Atasözleri'nde dört aday kutu yanlış deyimi gösterdiği için çıkarıldı ("gün ışığını sepette taşımak" bulunamadı).
+- Uygulama kodu değişmedi; yalnız veri ve yama sürümü (Yenilikler'e girmedi). Birim 388/388; başyapıt, ayrıntı ve galeri
+  uçtan uca 13/13. Toplam 164 başyapıt, 929 nokta.
+
+### İş 189b · parti 2: 9 yakın okuma (sürüm 1.83.2)
+
+Sarı İsa, Melencolia I, Rokeby Venüs'ü, Rogier · Çarmıhtan İndiriliş, Saka Kuşlu Meryem, Medusa, Celile Denizi'ndeki Fırtına,
+Botticelli · Venüs ve Mars, Aziz Pavlus'un Din Değiştirmesi; 50 nokta. **Dürer · Âdem ile Havva (Q351300) atlandı:** uygulamadaki
+görsel 1504 gravürü, araştırma 1507 Prado tablosu; görsel düzeltilmeden yazılmayacak (`scripts/basyapit_arastirma/DEVIR.md`).
+Rembrandt'ta "kusan havari" kutusu doğrulanamadığı için çıkarıldı. Yazım sonrası kaynak denetiminde çıkarılanlar: Trémalo'daki
+heykelin "ahşap" olduğu, del Monte'nin "kardinal" unvanı, "Macaristan Kraliçesi", Âdem'in Golgota'ya gömülmesi, arıların İtalyanca adı.
+Devir için `scripts/basyapit_arastirma/DEVIR.md` (adım adım yöntem, hazır istem) ve `gorsel.py` (indir, kırp, yakın) eklendi.
+Birim 388/388; başyapıt, ayrıntı, galeri uçtan uca 13/13. 173 başyapıt, 979 nokta.
+
+### İş 189b · parti 3: 10 yakın okuma (sürüm 1.83.3)
+
+Belşazzar'ın Ziyafeti, Bosch · Aziz Antonius'un Sınanması (Lizbon), Dante'nin Kayığı, Judith I, Hasat Zamanı, Alba Meryemi,
+Rembrandt · Danae, Kanon van der Paele'li Meryem, Titian · Flora, Bacchus ve Ariadne; 58 nokta. Alba Meryemi'nin müzesi
+`secim.json`'da Hermitage yazıyordu; künyeye göre National Gallery of Art, Washington yazıldı. Delacroix'daki kayıkçı için
+kaynaklar çelişiyor (Phlegyas / Kharon); metin ikisini de anıyor. Van Eyck'ta tahttaki oyma, kırpınca Âdem ile Havva değil
+Kabil–Habil'e benzer çıktı; metin düzeltildi. Kaynak denetiminde çıkarılanlar: Virgil'in "defne çelengi", Kuzey Tacı'nın "sekiz"
+yıldızı, Ampelos'un resimdeki yeri, "devlet satın aldı" (alıcı Forbin). Birim 388/388; uçtan uca 13/13. 183 başyapıt, 1037 nokta.
+
+### İş 189b · Dürer · Âdem ile Havva: Prado panelleri (sürüm 1.83.4)
+
+Emre: "adem ve havva iki resim olarak var tek resim olarak yok resimler bunlar sen devam et". Eserin görseli 1504 gravürüydü,
+araştırma 1507 Prado panelleri hakkında. Emre'nin verdiği iki panel (Âdem solda, Havva sağda, aralarında 36 px koyu boşluk)
+tek görselde birleştirildi: 1498 × 1920, ad `78e0e776ae7bbef8` (Wikidata'daki "…(Prado)_2.jpg" anahtarına bağlandı; 400'lük
+`gorseller/k`'de, 1280'lik ve büyük kopya `scripts/basyapit_arastirma/gorsel_ek/`'te, R2'ye Mac'te `r2_ek_yukle.py` ile yüklenecek).
+Gravür bu kayıttan `gorsel_cikar` ile çıkarıldı (başka eser); tarih 1507 (kurs slaytındaki 1504 gravürün). `scripts/ayrinti/denetle.py`
+artık `gorsel_cikar`'ı da uyguluyor (uygulamadaki gibi). 6 nokta; 184 başyapıt, 1043 nokta. Birim 388/388, uçtan uca 13/13.
+
+### İş 189b · parti 4: 10 yakın okuma (sürüm 1.83.5)
+
+Diana ve Aktaion, Uccello · San Romano Muharebesi (Uffizi paneli), Botticelli · Müneccimlerin Tapınması, Dürer · Dört Havari,
+El Greco · Beşinci Mührün Açılışı, Piero · İsa'nın Vaftiz Edilişi, Rubens · Üç Güzeller, Bouguereau · Dante ve Vergilius,
+Bosch (takipçisi?) · İsa'nın Çarmıhı Taşıması (Gent), Gauguin · Vaaz Sonrası Görüntü; 60 nokta. Uccello'nun araştırması seri
+hakkında; görsel Uffizi paneli olduğundan Londra paneline ait iddialar (Tolentino'nun şapkası) yazılmadı. Rubens ve Bouguereau'nun
+araştırması ince (Wikidata 'betimlenir' satırları): hikâye ve anlam `data/ikonografi.json` konu metninden, resimle uyuşanla.
+Kaynak denetiminde çıkarılanlar: Uccello'da "1438", Rubens'te "1635" ve "gerçek boyutlu", Dürer'de "gerçek boyutta";
+Uffizi panelinin "ortadaki" olduğu ihtiyatlı yazıldı. Birim 388/388; uçtan uca 13/13. 194 başyapıt, 1103 nokta.
+
+### İş 189b · parti 5: 10 yakın okuma (sürüm 1.83.6)
+
+Rogier · Beaune Son Yargı, Rossetti · Beata Beatrix, Ingres · I. Napolyon İmparatorluk Tahtında, Correggio · Kutsal Gece,
+Rubens · Çarmıhtan İndiriliş (Anvers), Goya · Cadı Ayini, Bouguereau · Şafak, Klimt · Kadının Üç Çağı, Tintoretto · Susanna ve
+Yaşlılar, Millais · Ana Babasının Evinde İsa; 60 nokta. Napolyon'un müzesi `secim.json`'da Louvre; künyeye göre Musée de l'Armée
+yazıldı. Correggio'nun tarihi sipariş–yerleştirme aralığı (1522–1530). Bouguereau · Şafak'ın araştırması ince: anlam
+`data/ikonografi.json` "günün saatleri" metninden. Klimt'te "çiçekli saç" kutusu yaşlı kadının eline düşmüştü, düzeltildi.
+Kaynak denetiminde çıkarılanlar: güneş saatinin "zamanın akışı" yorumu, Correggio'da Jerome pozunun kesinliği (ihtiyatlı yapıldı),
+Rubens'te "Elizabeth", Goya'da "manşon", Birmingham için "Alabama". Birim 388/388; uçtan uca 13/13. 204 başyapıt, 1163 nokta.
+
+### İş 189b · parti 6: 10 yakın okuma (sürüm 1.83.7)
+
+Bruegel · Sürünün Geri Dönüşü, Tintoretto · Kölenin Mucizesi, Vermeer · Marta ile Meryem'in Evindeki İsa, Rubens · Şimşon ve
+Dalila, Holbein · Mezardaki Ölü İsa, Giorgione · Yudit, Artemisia Gentileschi · Susanna ve İhtiyarlar, Michelangelo · Defin
+Töreni, Correggio · Ganymedes, Rogier · Okuyan Mecdelli Meryem; 59 nokta. İnce araştırmalı eserlerde (Bruegel, Vermeer,
+Giorgione, Correggio) hikâye `data/ikonografi.json` konu metninden. Atfı tartışmalı eserler (Rubens · Şimşon, Michelangelo ·
+Defin) metinde ihtiyatla yazıldı. Kaynak denetiminde çıkarılanlar: Bruegel'in "hayalî dağlar"ı, Vermeer'in "erken dönem tarih
+resmi" cümlesi ve görülmeyen hale, Holbein ve Giorgione için kaynaksız "en sarsıcı / şiirsel" övgüler. Birim 388/388; uçtan uca
+13/13. 214 başyapıt, 1222 nokta.
+
+### İş 189b · parti 7: 10 yakın okuma (sürüm 1.83.8)
+
+La Tour · Marangoz Yusuf, Michelangelo (atıf) · Aziz Antonius'un Azabı, Poussin · Altın Buzağıya Tapınma, Tintoretto ·
+Samanyolu'nun Kökeni, Ingres · Homeros'un Apoteozu, Bouguereau · İlk Yas, Mantegna · Bahçede Acı Çekme, Botticelli · Mistik
+Doğum, Vermeer · Diana ve Nimfleri, Gauguin · Yeşil İsa; 58 nokta. Ingres'te Raphael, Dante ve Poussin büyütülmüş görselde yer
+saptanarak kutulandı (Molière kutusu 6 nokta sınırı için çıkarıldı). İnce araştırmalı Bouguereau ve Mantegna'da hikâye
+`data/ikonografi.json`'dan. Kaynak denetiminde çıkarılanlar: Poussin'de "onarıldı", Mantegna'da Bellini tablosunun aynı müzede
+olduğu ve kuşun "uğursuz" yorumu, Gauguin'de Sarı İsa'yla "öncü" kıyası. Birim 388/388; uçtan uca 13/13. 224 başyapıt, 1279 nokta.
+
+### İş 189b · parti 8: 10 yakın okuma (sürüm 1.83.9)
+
+Perugino · Meryem'in Evliliği, Bellini · Çölde Aziz Franciscus, El Greco · Aziz Martin ve Dilenci, Velázquez · Çarmıha
+Gerilmiş İsa, Watteau · Pierrot, Tiepolo · Lekesiz Gebelik, Turner · Dido Kartaca'yı İnşa Ederken, Millais · Isabella,
+El Greco · Çobanların Tapınması, Cabanel · Zehirleri Deneyen Kleopatra; 55 nokta. İnce araştırmalı Perugino, El Greco
+(Aziz Martin) ve Çobanların Tapınması'nda hikâye `data/ikonografi.json`'dan (Perugino'da çiçek açan değnek, Altın Efsane).
+Görsel–eser uyumu: hepsi araştırılan versiyon (Cabanel'de 1887 Anvers tablosu, El Greco'da Washington'daki 193,5 × 103 cm
+tuval). Müze künyeden alındı (Cabanel: secim.json'daki "Royal Academy" yerine Anvers). Kaynak denetiminde çıkarılanlar:
+Bellini'de "Venedikli", El Greco'da "çağının bir soylusu gibi", Tiepolo'da "kısa süre sonra", Cabanel'de kraliçenin
+"gölgede" olduğu; Watteau'da eşeğin ipini tutma yerine yalnız görüleni yazıldı. El Greco'nun Aziz Martin'indeki sağ alttaki
+Yunanca yazı imza olarak kaynakta geçmediği için kullanılmadı. Kırpıntıda düzeltilen kutular: Bellini kurukafa ve aziz,
+Watteau Doktor ve kırmızılı adam, Tiepolo hilal ve ayna, Millais ceviz kıracağı. Birim 388/388. 234 başyapıt, 1334 nokta.
+
+### İş 189b · parti 9: 10 yakın okuma (sürüm 1.83.10)
+
+Mantegna · Meryem'in Ölümü, Giorgione · Çobanların Tapınması, Veronese · Venüs ve Adonis, Zurbarán · İsa'nın Çarmıha
+Gerilişi, Jan van Eyck · Meryem'e Müjde, Piero della Francesca · İsa'nın Doğuşu, Correggio · Parma Katedrali kubbesi,
+Rosso Fiorentino · Çarmıhtan İndiriliş, Fra Angelico (ve Filippo Lippi) · Müneccimlerin Tapınması, Fra Angelico · Meryem'in
+Taç Giymesi; 54 nokta. İnce araştırmalı Mantegna, Giorgione, Veronese ve Zurbarán'da hikâye `data/ikonografi.json`'dan.
+Görsel–eser uyumu: hepsi araştırılan eser; Correggio'da görsel köşelerle birlikte bütün kubbe. Correggio'da Meryem'in figürü
+görselde güvenle seçilemediği için noktası yok; merkezdeki figür araştırmaya göre aşağı inen İsa. Coronation'da Egidius ve
+Mecdelli Meryem tek tek kutulanmadı (hangi figür oldukları görselden kesin değil), grup kutularıyla anıldı. Yerleri büyütmeyle
+bulunanlar: Giorgione'nin dallardaki meleği, Rosso'nun merdivendeki imzası (MDXXI). Kaynak denetiminde çıkarılanlar:
+Mantegna'da "kitaptan okuyan" havari, Zurbarán'da belediye önerisinin tabloya bağlanması ve satır sayısı, Rosso'da merdiven
+ve adam sayısı, "bağırarak" ve Maniyerizm üzerine eklenen yorum. Birim 388/388. 244 başyapıt, 1388 nokta.
+
+### İş 189b · parti 10: 10 yakın okuma (sürüm 1.83.11)
+
+Bellini · Zeytin Bahçesi'nde Acı Çekme, Veronese · Darius'un Ailesi İskender'in Huzurunda, La Tour · Tövbekâr Mecdelli
+Meryem (iki alevli, Met), Velázquez · Müneccimlerin Tapınması, Poussin · Sabin Kadınlarının Kaçırılması (Met versiyonu),
+Cimabue · İsa'nın Alaya Alınışı, Veronese · Venüs ve Mars, Holman Hunt · Isabella ve Fesleğen Saksısı, Moreau · Beliriş,
+La Tour · Falcı; 57 nokta. Görsel–eser uyumu: hepsi araştırılan versiyon. Müze ve tarih künyeden (La Tour Mecdelli:
+secim.json'daki 1625 yerine y. 1640). Bellini'deki kâseli melek araştırmada geçmediği için yalnız görüleni yazıldı;
+Petrus büyütmeyle saptandı (pembe giysili, ağzı açık). Velázquez'te Gaspar noktası çıkarıldı (soldaki yaşlı adamın Gaspar
+olduğu görselden kesin değil). Kaynak denetiminde çıkarılanlar: Wrightsman'ın eşinin adı, aynanın "tefekkür nesnesi"
+yorumu, Poussin'de "kızını", Cimabue'de "askerlerce" ve ters perspektif tanımı, Hunt'ta "Newcastle", Falcı'da bakış yorumu
+ve imzanın çevirisi. Birim 388/388. 254 başyapıt, 1444 nokta.
+
+### İş 189b · parti 11: 10 yakın okuma (sürüm 1.83.12) — İş 189b tamamlandı
+
+Poussin · Masumların Katliamı, Ingres · Oidipus ve Sfenks, Manet · Şaşıran Perikızı, Fra Angelico · Cortona Müjdesi,
+Perugino · Pietà, Ambrogio Lorenzetti · Tapınakta Sunuluş, Parmigianino · Aziz Hieronymus'un Görümü, Giulio Romano ·
+Milvius Köprüsü Savaşı, Artemisia Gentileschi · Danae, Orazio Gentileschi · Danae; 53 nokta. İnce araştırmalı Poussin,
+Ingres, Perugino ve Giulio Romano'da hikâye `data/ikonografi.json`'dan. Görsel–eser uyumu: hepsi araştırılan eser; Cortona
+Müjdesi ve Lorenzetti'de görsel çerçeve ve predellayla birlikte, Giulio Romano'da boyalı çerçeveli bütün duvar. Giulio
+Romano'da Konstantin ve Maxentius figürleri adıyla kutulanmadı (görselde hangileri oldukları kaynakta yok). Kaynak
+denetiminde çıkarılanlar: Poussin'de üçgen kompozisyon yorumu, Ingres'te "Paris'e" ve Oidipus'un "kendini gösterdiği",
+Manet'de "uzun süre", Cortona'da predella sayısı ve perspektifin Âdem ile Havva'ya götürdüğü, Perugino'da "ayaklarını
+tutuyor" ve figür sayısı, Parmigianino'da "öncü" ve 1527, Giulio Romano'da "Hristiyanlığın zaferi" ve "duvar halısı".
+Birim 388/388. 264 başyapıt, 1497 nokta. Seçilen 110 yeni başyapıtın hepsi yazıldı (parti 2'nin atlanan Dürer'i 1.83.4'te eklenmişti).
+Main ile birleştirmede sürüm 1.87.1 oldu (main 1.87.0'daydı).
+
 ### İş 189 · Galeri ve Çalış başyapıt sayfasının dilinde; tasarım dili kaydedildi (sürüm 1.84.0)
 
 Emre: "galeri kısmının genel dış görünüşünü de tasarla… ve çalış kısmının"; tuvaldeki dört ekrandan sonra "diğer kısımları

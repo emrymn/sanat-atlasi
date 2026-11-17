@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q1764395",
+ "indirme": "2026-11-17T07:41:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1764395.json",
+   "revid": 2569880421,
+   "sha256": "da6c18b577a262930d0d1a611909794536c340e546f50d510edfb81df4bfdd78",
+   "karakter": 959
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Vision_After_the_Sermon&oldid=1380836567",
+   "baslik": "Vision After the Sermon",
+   "revid": 1380836567,
+   "surum_tarihi": "2026-10-18T06:49:44Z",
+   "sha256": "f84debe0457eeac2abf144691b3ac74f1bb48576218328135c2bee06266ed501",
+   "karakter": 4758
+  }
+ }
+}

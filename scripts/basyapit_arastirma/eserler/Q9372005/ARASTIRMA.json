@@ -1,0 +1,281 @@
+{
+ "anahtar": "Q9372005",
+ "baslik_tr": "Venüs ve Mars",
+ "kunye": {
+  "sanatci": {
+   "deger": "Paolo Veronese",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Paolo Veronese (Q9440)"
+  },
+  "tarih": {
+   "deger": "1570'ler",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1570 (precision: decade)",
+   "ihtiyat": false
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "205,7 × 161 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 205.7 centimetre width (P2049): 161 centimetre"
+  },
+  "yer": {
+   "deger": "Metropolitan Museum of Art",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Metropolitan Museum of Art (Q160236)"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Konu, Ovidius'un Metamorphoses'inde anlatıldığı biçimiyle Roma aşk tanrıçası Venüs ile savaş tanrısı Mars arasındaki romantik aşktır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It deals with the romantic love of the Roman goddess of love Venus and the god of war Mars, as described in  Ovid's Metamorphoses.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "İki âşığın buluşması pastoral ve huzurlu bir manzarada gerçekleşir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The meeting of the two lovers takes place in idyllic, peaceful scenery.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "anlam",
+   "iddia": "Eser, mitolojik resim türünde bir tablodur.",
+   "kaynak": "wikidata.txt",
+   "alinti": "genre (P136): mythological painting (Q3374376)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Resmin solunda çıplak tanrıça durur; sol eliyle, önünde zırh içinde oturan Mars'ı kucaklar.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On the left stands the naked goddess, with her left hand embracing Mars, who sits in front of her in armor.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Venüs'ün sağ eli, süt akan göğsünün üzerinde durur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The right hand of Venus rests on her breast from which milk flows, emphasizing her femininity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Resmin sağ tarafında savaş tanrısının savaş atı bulunur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "On the right side, there is a war horse of the god of war.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "gorunen",
+   "iddia": "Atın silueti antik heykele dayanır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Its silhouette is based on antique sculpture.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "gorunen",
+   "iddia": "Atın belirgin kasları gücünü ifade eder; eğik başı ve sakin gözleri ise görüntüsünü yumuşatır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The underlined musculature of the animal expresses his strength, and his inclined head and calm eyes soften his image.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "gorunen",
+   "iddia": "Sanatçı, bir taş disk üzerine 'PAVLUS VERONENSIS F' diye imza atmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The artist signed on a stone disc: \"PAVLUS VERONENSIS F\".",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "gorunen",
+   "iddia": "Eserde bir kılıç betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): sword (Q12791)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C11",
+   "bolum": "gorunen",
+   "iddia": "Eserde harabeler betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): ruins (Q109607)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "gorunen",
+   "iddia": "Eserde bir satir betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): satyr (Q163709)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "gorunen",
+   "iddia": "Eserde bir âşık düğümü (true lover's knot) betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): true lover's knot (Q7847570)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "kompozisyon",
+   "iddia": "Veronese eserini tekrar tekrar yeniden boyamıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Veronese repeatedly repainted his work.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "kompozisyon",
+   "iddia": "Alan Burroughs'un Art Criticism from a Laboratory kitabında anlattığı röntgen incelemesi, Venüs'ün beden düzeninin farklı olduğunu ve muhtemelen aşağıya doğru çekilen bir draperiyle örtülü olduğunu göstermiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "X-ray study described by Alan Burroughs in his book Art Criticism from a Laboratory showed that the arrangement of Venus's body was different and was probably covered with drapery pulling downwards.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C16",
+   "bolum": "kompozisyon",
+   "iddia": "Masum kerub ilk sürümde yoktu.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The innocent cherub was not in the original version.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C17",
+   "bolum": "kompozisyon",
+   "iddia": "Veronese'nin bu değişiklikleri neden yaptığı belirsizdir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It is not clear why Veronese made these changes.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C18",
+   "bolum": "anlam",
+   "iddia": "Gösterilen iki putto, eserin yorumlanmasının anahtarı sayılır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The two putti shown are the key to the interpretation of the work.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C19",
+   "bolum": "anlam",
+   "iddia": "Atı ehlileştiren ilk putto, Mars'ın aşk arzularının dizginlenmesini, tutkular üzerinde denetimi simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The first, taming the horse, symbolizes the subduction of the love desires of the god of Mars, the control over passions.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C20",
+   "bolum": "anlam",
+   "iddia": "Venüs'ün bacaklarına kurdele bağlayan ikinci putto, âşıkların sonsuz aşkta ve savaşsız bir zamanda uyum içinde birleşmesini simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The second putto, which tied the ribbon around Venus' legs, symbolizes the union of lovers into eternal love and harmony in a time without wars.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C21",
+   "bolum": "anlam",
+   "iddia": "Venüs'ün göğsünden gelen süt, insanlığın gıdası olan barış zenginliğini simgeler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Milk from the breast of Venus symbolizes the wealth of peace, which is the food for humanity.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C22",
+   "bolum": "onem",
+   "iddia": "Tablo, Kutsal Roma İmparatoru II. Rudolf tarafından sipariş edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned by Rudolf II, Holy Roman Emperor and was one of three mythological and love-themed works commissioned by the artist.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C23",
+   "bolum": "onem",
+   "iddia": "Eser, sanatçıya sipariş edilen mitolojik ve aşk temalı üç işten biridir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was commissioned by Rudolf II, Holy Roman Emperor and was one of three mythological and love-themed works commissioned by the artist.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C24",
+   "bolum": "onem",
+   "iddia": "Sipariş edilen diğer iki eser New York'taki Frick Collection'dadır: The Allegory of Virtue and Performance ve Allegory of the Source of Wisdom and Power.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The other two are at the Frick Collection in New York: The Allegory of Virtue and Performance and Allegory of the Source of Wisdom and Power.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C25",
+   "bolum": "onem",
+   "iddia": "1621'de Prag Kalesi'ndeki II. Rudolf koleksiyonundaki eserlerin bir kataloğu yapılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1621, a catalog was made of the works in the collection of Rudolf II in Prague Castle.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C26",
+   "bolum": "onem",
+   "iddia": "Tablo Habsburglu III. Ferdinand'ın mülkiyetindeydi; İsveçlilerin 1648'de Prag'ı istilasından sonra İsveç Kraliçesi Christina'nın koleksiyonuna girdi ve Roma sürgününde onunla birlikte götürüldü.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was in the possession of Ferdinand III of Habsburg, and after the Swedes' invasion of Prague in 1648, it entered the collection of Queen Christina of Sweden and was taken with her in her Roman exile.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C27",
+   "bolum": "onem",
+   "iddia": "Tablo daha sonra Odescalchici ailesine, ardından Paris'teki ünlü Orleans Koleksiyonu'na geçti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It then went to the Odescalchici family, and later to the famous Orleans Collection in Paris.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C28",
+   "bolum": "onem",
+   "iddia": "Tablo 1792'de Brüksel'deki Edouard de Walckiers koleksiyonuna gitti, 1798'de Paris'e döndü ve ardından Londra'ya geçti.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In 1792, it went to the Edouard de Walckiers collection in Brussels but returned to Paris in 1798, and then went to London.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C29",
+   "bolum": "onem",
+   "iddia": "Birkaç İngiliz sahibin ardından tablo 1910'da Metropolitan Museum of Art'a satılmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "After several English owners, in 1910 it was sold to the Metropolitan Museum of Art.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C30",
+   "bolum": "onem",
+   "iddia": "Tablo 1866 ile 1903 arasında Ivor Guest, 1. Baron Wimborne'un mülkiyetindeydi.",
+   "kaynak": "wikidata.txt",
+   "alinti": "owned by (P127): Ivor Guest, 1st Baron Wimborne (Q3804936) [start time: 1866; end time: 1903-05-23]",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "anlam: Venüs'ün modelinin kimliği hakkında kaynakta bilgi yok",
+  "kompozisyon: ışık, renk düzeni ve fırça tekniği ayrıntıları kaynakta yok",
+  "hikaye: konunun Ovidius'un Metamorphoses'inin hangi kitabından alındığı kaynakta belirtilmiyor",
+  "onem: II. Rudolf'un siparişinin amacı kaynakta açıkça belirtilmiyor"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2265370",
+ "indirme": "2026-11-17T07:39:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2265370.json",
+   "revid": 2569319314,
+   "sha256": "b3c60e1c714187038406e7e24526b30694016384f40c53f67180383da9234e9b",
+   "karakter": 444
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Battle_of_San_Romano&oldid=1384857123",
+   "baslik": "The Battle of San Romano",
+   "revid": 1384857123,
+   "surum_tarihi": "2026-11-10T12:03:57Z",
+   "sha256": "ceafdbb5d10c9ceb4e60bc966317b437bff66a6bd8fa24fbc9904e9249bd68ee",
+   "karakter": 4178
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3039856",
+ "indirme": "2026-11-17T07:48:06+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3039856.json",
+   "revid": 2570273765,
+   "sha256": "9c4cba976abc549d20d4d46538d3ca7e2de63ebf19948096b116d8d9d62c9904",
+   "karakter": 1135
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Magdalen_Reading&oldid=1372991331",
+   "baslik": "The Magdalen Reading",
+   "revid": 1372991331,
+   "surum_tarihi": "2026-09-03T11:04:30Z",
+   "sha256": "cba2619d9f87cbee30f8ed07fe7767588b3a92f0e5b64ead02bc67fae1e4d439",
+   "karakter": 19385
+  }
+ }
+}

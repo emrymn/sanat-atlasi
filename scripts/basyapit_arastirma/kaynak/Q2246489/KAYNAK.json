@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q2246489",
+ "indirme": "2026-11-17T07:37:00+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2246489.json",
+   "revid": 2568677550,
+   "sha256": "e6cdc8ea872f9e7b784151b0e24fc32e04e9956895c42304293836726b500e0b",
+   "karakter": 1405
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Storm_on_the_Sea_of_Galilee&oldid=1385918275",
+   "baslik": "The Storm on the Sea of Galilee",
+   "revid": 1385918275,
+   "surum_tarihi": "2026-11-15T23:32:35Z",
+   "sha256": "9e742ba3a093d3f72dea7989126f07d5f3bbf161ba856540a0a286ca45650ec7",
+   "karakter": 9347
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Celile_Denizi%27ndeki_F%C4%B1rt%C4%B1na&oldid=36717095",
+   "baslik": "Celile Denizi'ndeki Fırtına",
+   "revid": 36717095,
+   "surum_tarihi": "2026-01-27T13:07:43Z",
+   "sha256": "a71847292e859e0970dfc6337239a1441dec314602a4fe4cf3997a6d2d060515",
+   "karakter": 7012
+  }
+ }
+}

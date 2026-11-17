@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2528177",
+ "indirme": "2026-11-17T07:39:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2528177.json",
+   "revid": 2569671962,
+   "sha256": "fbd2cfd3ca4869b95eccad8b0d52aae404799cfc5225a92409f577bf8e75f02a",
+   "karakter": 968
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Diana_and_Actaeon_%28Titian%29&oldid=1361250070",
+   "baslik": "Diana and Actaeon (Titian)",
+   "revid": 1361250070,
+   "surum_tarihi": "2026-06-26T18:01:19Z",
+   "sha256": "3bc0403eec065b867f14f7f0a7c0d183701b0a00222755454325cdfd846e9d6b",
+   "karakter": 20067
+  }
+ }
+}

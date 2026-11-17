@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2273517",
+ "indirme": "2026-11-17T07:37:09+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2273517.json",
+   "revid": 2569671805,
+   "sha256": "7d54c94045d6a64f1e615723787e440501be665d44c642789d03d7c04e9f1367",
+   "karakter": 885
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Conversion_on_the_Way_to_Damascus&oldid=1361248414",
+   "baslik": "Conversion on the Way to Damascus",
+   "revid": 1361248414,
+   "surum_tarihi": "2026-06-26T17:48:40Z",
+   "sha256": "111d7eb3c4ac1d7eebbd253dda3bd3f77a542029ac2b489a809b512708f25dfd",
+   "karakter": 16427
+  }
+ }
+}

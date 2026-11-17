@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q927449",
+ "indirme": "2026-11-17T07:46:11+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q927449.json",
+   "revid": 2569622955,
+   "sha256": "c624aef92b58be1309f7b2609f628f39e08553d7c0f408ddfe3334e0f4d41d80",
+   "karakter": 1077
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Christ_in_the_House_of_Martha_and_Mary_%28Vermeer%29&oldid=1382330974",
+   "baslik": "Christ in the House of Martha and Mary (Vermeer)",
+   "revid": 1382330974,
+   "surum_tarihi": "2026-10-28T02:03:17Z",
+   "sha256": "3cd05134af6861a4fa276006e496ae58286929116dd8288d49e49d2103406dc9",
+   "karakter": 1711
+  }
+ }
+}

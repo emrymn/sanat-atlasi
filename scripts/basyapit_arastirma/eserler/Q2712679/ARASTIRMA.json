@@ -1,0 +1,180 @@
+{
+ "anahtar": "Q2712679",
+ "baslik_tr": "Beata Beatrix",
+ "kunye": {
+  "sanatci": {
+   "deger": "Dante Gabriel Rossetti",
+   "kaynak": "wikidata.txt",
+   "alinti": "creator (P170): Dante Gabriel Rossetti (Q186748)"
+  },
+  "tarih": {
+   "deger": "1872",
+   "kaynak": "wikidata.txt",
+   "alinti": "inception (P571): 1872",
+   "ihtiyat": true
+  },
+  "teknik": {
+   "deger": "tuval üzerine yağlıboya",
+   "kaynak": "wikidata.txt",
+   "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"
+  },
+  "olcu": {
+   "deger": "66.0 × 86.4 cm",
+   "kaynak": "wikidata.txt",
+   "alinti": "height (P2048): 66.0 centimetre width (P2049): 86.4 centimetre",
+   "ihtiyat": false
+  },
+  "yer": {
+   "deger": "Tate Britain",
+   "kaynak": "wikidata.txt",
+   "alinti": "location (P276): Tate Britain (Q195436)"
+  }
+ },
+ "iddialar": [
+  {
+   "id": "C01",
+   "bolum": "hikaye",
+   "iddia": "Resim, Dante Alighieri'nin 1294 tarihli La Vita Nuova adlı şiirindeki Beatrice Portinari'yı ölüm anında betimler.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting depicts Beatrice Portinari from Dante Alighieri's 1294 poem La Vita Nuova, at the moment of her death.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C02",
+   "bolum": "hikaye",
+   "iddia": "Yapıtın başlığı İngilizceye 'Blessed Beatrice' (Kutsanmış Beatrice) olarak çevrilir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting's title in English translates as Blessed Beatrice.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C03",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir güvercin betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): pigeon (Q2984138)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C04",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir haşhaş betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): poppy (Q967457)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C05",
+   "bolum": "gorunen",
+   "iddia": "Resimde bir güneş saati betimlenir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "depicts (P180): sundial (Q80793)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C06",
+   "bolum": "gorunen",
+   "iddia": "Siddal'in arkadaşlarından birkaçı, resmin onun çizimlerine pek benzemediğini düşünmüş; yüz hatları daha sert ve boyun orantısız bulunmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Several of Siddal's friends found the painting bore little resemblance to the drawings of her—the facial features were harder and the neck is out of proportion.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C07",
+   "bolum": "kompozisyon",
+   "iddia": "İlk versiyon tuval üzerine yağlıboyadır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The first version is in oil on canvas, completed in 1870.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C08",
+   "bolum": "kompozisyon",
+   "iddia": "Resim, Rossetti'nin Siddal ile birlikte olduğu dönemde yaptığı çok sayıda çizimden oluşturulmuştur.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The painting was created from the numerous drawings that Rossetti had made of Siddal during their time together.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C09",
+   "bolum": "anlam",
+   "iddia": "Rossetti, Beatrice'i ölen eşi ve sık kullandığı modeli Elizabeth Siddal'e göre modellemiştir; Siddal 1862'de ölmüştür.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Rossetti modelled Beatrice after his deceased wife and frequent model, Elizabeth Siddal, who had died in 1862.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C10",
+   "bolum": "anlam",
+   "iddia": "Kırmızı güvercin bir aşk elçisidir ve Rossetti'nin Siddal'e olan aşkını düşündürür; beyaz haşhaş ise onun ölüm aracı olan laudanumu temsil eder.",
+   "kaynak": "enwiki.txt",
+   "alinti": "The symbolism in the painting of a red dove, a messenger of love, suggests Rossetti's love for Siddal, with the white poppy representing laudanum, the means of her death.",
+   "ihtiyat": true
+  },
+  {
+   "id": "C11",
+   "bolum": "anlam",
+   "iddia": "Rossetti, 1873'te William Morris'e yazdığı mektupta yapıtı Beatrice'in ölüm olayının bir temsili olarak değil, bir trans ya da ani ruhsal dönüşümle simgelenen bir konu ideali olarak amaçladığını söylemiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "In an 1873 letter to his friend William Morris, Rossetti said he intended the painting \"not as a representation of the incident of the death of Beatrice, but as an ideal of the subject, symbolized by a trance or sudden spiritual transfiguration.\"",
+   "ihtiyat": false
+  },
+  {
+   "id": "C12",
+   "bolum": "onem",
+   "iddia": "Beata Beatrix, Rossetti'nin en tanınmış eserlerinden biridir ve Siddal'in adının Dante Alighieri'nin Beatrice'iyle sıkça anılmasına yol açmıştır.",
+   "kaynak": "enwiki.txt",
+   "alinti": "Beata Beatrix is one of Rossetti's most recognised works and has caused Siddal's name frequently to be linked with Dante Alighieri's Beatrice.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C13",
+   "bolum": "onem",
+   "iddia": "İlk tablo Tate Britain'da sergilenmektedir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "This first painting is on display in the Tate Britain.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C14",
+   "bolum": "onem",
+   "iddia": "Tablo, 1889'da Francis, Baron Mount-Temple'in anısına eşi Georgiana tarafından hediye edilmiştir.",
+   "kaynak": "enwiki.txt",
+   "alinti": "It was a gift in memory of Francis, Baron Mount-Temple by his wife, Georgiana, in 1889.",
+   "ihtiyat": false
+  },
+  {
+   "id": "C15",
+   "bolum": "onem",
+   "iddia": "Yapıt, Pre-Raphaelite Brotherhood akımıyla ilişkilidir.",
+   "kaynak": "wikidata.txt",
+   "alinti": "movement (P135): Pre-Raphaelite Brotherhood (Q184814)",
+   "ihtiyat": false
+  },
+  {
+   "id": "C16",
+   "bolum": "onem",
+   "iddia": "Yapıtın envanter numaraları N01279 ve NG1279'dur.",
+   "kaynak": "wikidata.txt",
+   "alinti": "inventory number (P217): N01279 inventory number (P217): NG1279",
+   "ihtiyat": false
+  }
+ ],
+ "celiskiler": [
+  {
+   "konu": "tarih",
+   "a": {
+    "kaynak": "wikidata.txt",
+    "alinti": "inception (P571): 1872"
+   },
+   "b": {
+    "kaynak": "enwiki.txt",
+    "alinti": "The first version is in oil on canvas, completed in 1870."
+   }
+  }
+ ],
+ "bulunamadi": [
+  "kompozisyon: ilk versiyona özgü ışık, renk, alt çizim ya da restorasyon bulgusu kaynakta yok; ışık değişikliği yalnız Graham (Chicago) versiyonu için anlatılıyor",
+  "anlam: ilk versiyonun sipariş amacı ya da ilk siparişçisi kaynakta belirtilmemiş; William Graham siparişi başka bir versiyon içindir"
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q3224308",
+ "indirme": "2026-11-17T07:52:10+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3224308.json",
+   "revid": 2550195414,
+   "sha256": "771f2564c0509f6f4b75a23d8570d09ae459797982e95151c99ad5c3f9f03f17",
+   "karakter": 725
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Marriage_of_the_Virgin_%28Perugino%29&oldid=1361281898",
+   "baslik": "Marriage of the Virgin (Perugino)",
+   "revid": 1361281898,
+   "surum_tarihi": "2026-06-26T22:15:24Z",
+   "sha256": "cb88c58712f428c06fed19bd626b03ef513f78abf0e866be184b6268922d3046",
+   "karakter": 1781
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "anahtar": "Q1892745",
+ "indirme": "2026-11-17T07:33:02+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1892745.json",
+   "revid": 2561776084,
+   "sha256": "be75198c9ef5c7e1ced31f0b03dd0d09aa1ac250b8430d1e57312614f9673461",
+   "karakter": 2816
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Salvator_Mundi_%28painting%29&oldid=1383840071",
+   "baslik": "Salvator Mundi (painting)",
+   "revid": 1383840071,
+   "surum_tarihi": "2026-11-05T02:55:46Z",
+   "sha256": "5f3204387d53455e86e3456dea88c1d2581cc7ffbbc8255b8411d22a8b856656",
+   "karakter": 39124
+  },
+  "trwiki.txt": {
+   "url": "https://tr.wikipedia.org/w/index.php?title=Salvator_Mundi_%28Leonardo%29&oldid=36446103",
+   "baslik": "Salvator Mundi (Leonardo)",
+   "revid": 36446103,
+   "surum_tarihi": "2025-11-26T12:04:49Z",
+   "sha256": "a50b7b5e9174f2869e232ed47e48674f0925fd01d4110b1a649375440dacc8d9",
+   "karakter": 5558
+  }
+ }
+}

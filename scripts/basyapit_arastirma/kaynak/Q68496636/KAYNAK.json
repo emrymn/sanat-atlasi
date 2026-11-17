@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q68496636",
+ "indirme": "2026-11-17T08:02:09+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q68496636.json",
+   "revid": 2553876537,
+   "sha256": "a0e0c0669d8b22199e965ceba6ef0e52a887e5732ce231ee8828b3064d7d25de",
+   "karakter": 858
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Mocking_of_Christ_%28Cimabue%29&oldid=1382281751",
+   "baslik": "The Mocking of Christ (Cimabue)",
+   "revid": 1382281751,
+   "surum_tarihi": "2026-10-27T19:37:32Z",
+   "sha256": "95c1196d986b17442d6b4ed158764b14c6e8568771bd95d80adc5e2f12572771",
+   "karakter": 6214
+  }
+ }
+}

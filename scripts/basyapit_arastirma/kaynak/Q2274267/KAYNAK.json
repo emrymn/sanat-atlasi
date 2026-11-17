@@ -1,0 +1,20 @@
+{
+ "anahtar": "Q2274267",
+ "indirme": "2026-11-17T07:49:05+00:00",
+ "dosyalar": {
+  "wikidata.txt": {
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2274267.json",
+   "revid": 2570203886,
+   "sha256": "12c394bfbea9e076a5a0bc7c61e2d1576977e49def3408c33fa4422ac94bb2fb",
+   "karakter": 1759
+  },
+  "enwiki.txt": {
+   "url": "https://en.wikipedia.org/w/index.php?title=The_Origin_of_the_Milky_Way&oldid=1385982853",
+   "baslik": "The Origin of the Milky Way",
+   "revid": 1385982853,
+   "surum_tarihi": "2026-11-16T06:48:05Z",
+   "sha256": "66671fb3cb52682ab09e837eb3f9230b676e9c41617ad27814e3c0a5bb35816c",
+   "karakter": 12679
+  }
+ }
+}
