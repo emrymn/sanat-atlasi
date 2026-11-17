@@ -114,10 +114,10 @@
   {
    "id": "C11",
    "bolum": "anlam",
-   "iddia": "Sanatçı, sahneyi bütünüyle 'à la chandell' (mum ışığında) olarak yorumlamıştır.",
+   "iddia": "Sahne sanatçı tarafından bütünüyle 'à la chandell' (mum ışığında) olarak yorumlanmıştır.",
    "kaynak": "enwiki.txt",
    "alinti": "interpreted a scene that is fully 'à la chandell' (\"of the candle\")",
-   "ihtiyat": false
+   "ihtiyat": true
   },
   {
    "id": "C12",
