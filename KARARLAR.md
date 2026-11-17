@@ -2487,3 +2487,12 @@ uzaklaştıran bir animasyon vardı o kalkmış onu geri getir".
   ekleyecektin" diyerek bugünün dersi kapağını gösterdi): Çalış'ta bugünün dersi kapağındaki resim yavaşça ayrıntıdan
   ayrıntıya yakınlaşıp uzaklaşır (`kapak-yuru`, 16 sn, en çok 1,9 kat; hareket azaltılınca durur). Gör düğmesi tuvaldeki
   düz hapta kaldı. "Bugünün dersi" etiketi kapakta açık renk (paletin rengi resimde okunmuyordu).
+
+### İş 192 · Durum çubuğunun arkasındaki şerit hafifledi (sürüm 1.87.0)
+
+Emre (Bugün'de saatin ve "17 KASIM"ın arkasındaki bandı çizerek): "burdaki haleyi azalt, çok dikkat dağıtıyor, her yerde var".
+Açık temalarda iOS'un beyaz durum çubuğu yazısı okunsun diye `body::before` güvenli alanı dolu bir renkle boyuyordu; renkli
+Gündüz'de bu renk paletin bandıydı (mor-kahve, kırmızı …). Artık nötr koyu, %42 saydam ve aşağı doğru silinen bir gölge
+(`--durum-cubugu: rgba(31, 27, 23, 0.42)`, `linear-gradient`). Saat yine okunur; renkli şerit yok. Gece temasında zaten yoktu.
+- Sonra (Emre: "buğu gibi olan şeyi kastediyorum"): her sayfanın tepesinde tablonun renginde yayılan hale (`.hale`, `.bsy-hale`,
+  İş 188–189'da her sayfaya eklenmişti) üçte birine indi (sol üst %32/%28 → %11/%10, sağ alt %14 → %5). Dönem sembolleri aynı.

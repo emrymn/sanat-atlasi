@@ -306,11 +306,14 @@ export function ikonografiVeri() {
 // grup değişir (#/konular/<tür>; yığında yer değiştirir, geri ile gruplar arasında dolaşılmaz). Karttaki sayı düğmesi
 // konunun bütün resimlerini doğrudan açar (konu sayfasına girmeden).
 function konuKartlari(l) {
-  return `<ul class="kn-izgara" data-test="konu-listesi">${l
-    .map(
-      (k, i) =>
-        `<li${i ? '' : ' class="kn-one"'} style="--i:${i % 4}" data-gozcu><a class="konu-kart kn-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="kn-kapak" data-konu-kapak></span><span class="kn-yazi">${i ? '' : '<small class="kn-ust">En çok işlenen</small>'}<b>${kacis(k.ad)}</b></span></a><button class="kn-resimler" type="button" data-kn-resimler="${kacis(k.id)}" data-test="kn-resimler" aria-label="${kacis(k.ad)}: ${k.eserler.length} resmi aç"><span class="kn-sayi">${ikon('izgara', 13, 1.8)}${k.eserler.length}</span></button></li>`,
-    )
+  return `<ul class="by-duvar" data-test="konu-listesi">${l
+    .map((k, i) => {
+      const adres = `#/konu/${encodeURIComponent(k.id)}`;
+      const kart = i
+        ? `<a class="konu-kart vitrin-kart by-kart" href="${adres}" data-konu-kart="${kacis(k.id)}"><span class="by-cerceve"><span class="by-resim" data-konu-kapak></span></span><span class="by-yazi"><b>${kacis(k.ad)}</b><span>${kacis(TUR_AD[k.tur])}</span></span></a>`
+        : `<div class="by-sahne tek"><a class="konu-kart by-sahne-kart secili" href="${adres}" data-konu-kart="${kacis(k.id)}"><span class="by-sahne-resim" data-konu-kapak></span><span class="by-sahne-golge" aria-hidden="true"></span><span class="by-sahne-yazi"><small>En çok işlenen · ${kacis(TUR_AD[k.tur])}</small><b>${kacis(k.ad)}</b><span>${k.eserler.length} eserde bu konu</span></span></a></div>`;
+      return `<li${i ? '' : ' class="kn-one"'} style="--i:${i % 6}" data-gozcu>${kart}<button class="by-hepsi kn-eserler" type="button" data-kn-resimler="${kacis(k.id)}" data-test="kn-resimler" aria-label="${kacis(k.ad)}: ${k.eserler.length} resmi aç"><span>${k.eserler.length} eser</span>${ikon('ileri', 16, 1.8)}</button></li>`;
+    })
     .join('')}</ul>`;
 }
 
@@ -369,7 +372,7 @@ async function konularCiz(t) {
   ciz(`${gozAtUst('konular')}
     ${konuGrupSeridi(gruplar, g.t)}
     <div class="kn-govde${yon}" data-kn-govde>
-      <h2 class="kn-bas"><span>${kacis(TUR_AD[g.t])}</span><small>${g.l.length} konu · çoktan aza</small></h2>
+      <header class="by-bas"><h2><span class="by-ad">${kacis(TUR_AD[g.t])}</span><small>En çok işlenenden aza</small></h2><span class="by-say">${g.l.length} konu</span></header>
       ${konuKartlari(g.l)}
     </div>`);
   const serit = ekran.querySelector('.kn-sekmeler');
