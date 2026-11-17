@@ -179,9 +179,9 @@ test('Akımlar hapı Galeri\'nin ana ekranına götürür; çark ve bütün akı
   await expect(cark.locator('[data-cark-no]')).toHaveText('01');
   // dizin: her akım bir satır; açıklar bağlantı, kilitliler "Konu N'de açılır"
   const akimSayisi = await page.evaluate(() => window.__atlas.akimlar.length);
-  // 1.81.0: dizin kapalı gelir; "Tümünü gör" açar, "Gizle" kapatır
+  // 1.81.0: dizin kapalı gelir; çarkın altındaki "Bütün akımlar" açar (İş 190), "Gizle" kapatır
   const ac = page.locator('[data-test="akim-dizin-ac"]');
-  await expect(ac).toHaveText('Tümünü gör');
+  await expect(ac).toHaveText('Bütün akımlar');
   await expect(page.locator('#akim-dizin-liste')).toBeHidden();
   await ac.click();
   await expect(ac).toHaveText('Gizle');

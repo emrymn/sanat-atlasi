@@ -99,7 +99,7 @@ test('geri düğmesiyle dönünce liste kalınan yerde açılır; ileri gidişte
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Tümünü gör" ile açılır; dönünce açık kalır
+  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Bütün akımlar" ile açılır; dönünce açık kalır
   await page.evaluate(() => window.scrollTo(0, 800));
   await expect.poll(() => y(page)).toBe(800);
   await gorunenAkimLinki(page);
@@ -114,7 +114,7 @@ test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yen
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Tümünü gör" ile açılır; dönünce açık kalır
+  await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Bütün akımlar" ile açılır; dönünce açık kalır
   await page.evaluate(() => window.scrollTo(0, 800));
   await expect.poll(() => y(page)).toBe(800);
   await page.locator('#sekmeler a[data-sekme="pekistir"]').click();

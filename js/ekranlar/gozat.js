@@ -657,10 +657,12 @@ export function gozAtUst(etkin, donem = simdikiDonem()) {
 // 1.76.3 (Emre): Galeri'nin ana ekranı = yeni üst bölüm (haplar) + Akımlar çarkı + bütün akımların dizini.
 // Başyapıtlar rafı ve Müze planı kalktı: Başyapıtlar, Konular ve Zaman haplarda; Koleksiyon aramanın yanındaki kalpte;
 // Karşılaştır Çalış'ta (Başka turlar).
-const CARK_ADIM = 21; // çarkta iki akım arası açı (derece)
-const CARK_R = 320; // çarkın yarıçapı (px)
+// İş 190 ("Işık", Emre tuvalde B'yi seçti): çark neredeyse düz bir ufuk çizgisi; yarıçap 700, komşu adlar ekranın
+// köşelerinde (700 · sin 12° ≈ 145 px). CSS'teki .cark-disk / .cark-halka / .cark-ad ölçüleri bu iki sayıya bağlı.
+const CARK_ADIM = 12; // çarkta iki akım arası açı (derece)
+const CARK_R = 700; // çarkın yarıçapı (px)
 let carkSon = 0;
-let dizinAcik = false; // Galeri'de "Bütün akımlar" dizini açık mı (Tümünü gör / Gizle) // son bakılan akım: Galeri'ye dönünce çark orada durur
+let dizinAcik = false; // Galeri'de "Bütün akımlar" dizini açık mı (Bütün akımlar / Gizle; İş 190: çarkın altında) // son bakılan akım: Galeri'ye dönünce çark orada durur
 
 // Sanatçıların çalışma yıllarından yüzyıllar: [{ y, acik }] (açık: o yüzyılda açık bir sanatçı var)
 function carkHtml(durumlar, acikSayi) {
@@ -699,7 +701,7 @@ export function gozAt() {
   ciz(`${gozAtUst('akimlar')}
     ${carkHtml(durumlar, acikSayi)}
     <section class="akim-dizin" data-test="akim-dizin" aria-label="Bütün akımlar">
-      <div class="gz-plan-bas"><span class="etiket vurgu">Bütün akımlar</span><button type="button" class="akim-dizin-ac" data-dizin-ac data-test="akim-dizin-ac" aria-expanded="${dizinAcik}" aria-controls="akim-dizin-liste"><span data-dizin-yazi>${dizinAcik ? 'Gizle' : 'Tümünü gör'}</span>${ikon('asagi', 16, 1.8)}</button></div>
+      <div class="gz-plan-bas"><button type="button" class="akim-dizin-ac" data-dizin-ac data-test="akim-dizin-ac" aria-expanded="${dizinAcik}" aria-controls="akim-dizin-liste"><span data-dizin-yazi>${dizinAcik ? 'Gizle' : 'Bütün akımlar'}</span>${ikon('asagi', 16, 1.8)}</button></div>
       <ol id="akim-dizin-liste"${dizinAcik ? '' : ' hidden'}>${durumlar
         .map((a, i) => {
           const yy = akimYuzyillari(
@@ -718,13 +720,13 @@ export function gozAt() {
   onizlemeleriDoldur();
   carkKur();
   gorunceOynat();
-  // 1.81.0 (Emre): ekranda yalnız çark öne çıkar; dizin "Tümünü gör" ile açılır (oturum boyunca hatırlanır)
+  // 1.81.0 (Emre): ekranda yalnız çark öne çıkar; dizin çarkın altındaki "Bütün akımlar" ile açılır (oturum boyunca hatırlanır)
   const ac = ekran.querySelector('[data-dizin-ac]');
   if (ac)
     ac.addEventListener('click', () => {
       dizinAcik = !dizinAcik;
       ac.setAttribute('aria-expanded', String(dizinAcik));
-      ac.querySelector('[data-dizin-yazi]').textContent = dizinAcik ? 'Gizle' : 'Tümünü gör';
+      ac.querySelector('[data-dizin-yazi]').textContent = dizinAcik ? 'Gizle' : 'Bütün akımlar';
       ekran.querySelector('#akim-dizin-liste').hidden = !dizinAcik;
     });
 }
@@ -783,11 +785,11 @@ function carkKur() {
     });
     adlar.forEach((el, i) => {
       const a = (i - p) * CARK_ADIM;
-      const gorunur = Math.abs(a) <= 66;
+      const gorunur = Math.abs(a) <= 24;
       el.style.visibility = gorunur ? 'visible' : 'hidden';
       if (!gorunur) return;
       el.style.transform = `rotate(${a.toFixed(2)}deg) translateY(${-(CARK_R + 40)}px)`;
-      el.style.opacity = (1 - Math.max(0, Math.abs(a) - 30) / 36).toFixed(2);
+      el.style.opacity = (1 - Math.max(0, Math.abs(a) - 10) / 12).toFixed(2);
       el.classList.toggle('secili', Math.abs(i - p) < 0.5);
     });
     halka.style.transform = `rotate(${(-(p * CARK_ADIM)).toFixed(2)}deg)`;

@@ -2442,3 +2442,21 @@ da yap" ve "bunu yapacaksın" (tuvaldekinin aynısı); "bu tasarım tarzını ka
   düğmesi (1.81.0) tek dolu düğme oldu. Günlük tekrar tek satır: deste · "Günlük tekrar", "N kart", süre ve dağılım · ok.
   Dersler tek gruplu liste; bugünün dersi "Bugün" yazar. Başlık kaybolunca üstte cam "Çalış" çubuğu.
 - İşaretleme ve `data-test`'ler korundu; değişiklik çoğunlukla `css/app.css` sonundaki İş 189 bloğunda.
+
+### İş 190 · Akımlar çarkı "Işık": disk kalktı, çark zemine kaynaştı (sürüm 1.85.0)
+
+Emre (ekran görüntüsünde çarkı ve altındaki "Bütün akımlar · Tümünü gör" satırını çizerek): "bu çok aykırı duruyor, bunu
+sayfayla daha bütünsel hale getir". Tasarım tuvalinde üç yön gösterildi (https://claude.ai/artifact/JTuhBqFyPDha19CMZJaGch):
+A · Ufuk çizgisi, B · Işık, C · Cam şerit. Emre B'yi seçti.
+
+- Dolu disk (yüzey rengi, altın kenar, gölge) yok: iki uca doğru silinen ince pirinç yay ve altında bulanık bir ışık halkası
+  (`.cark-disk`, `::after`); çarkın bütünü kenarlarda yumuşakça kaybolur (`.cark-teker` maskesi).
+- Altından tablonun ışığı gibi yükselen hafif pirinç parıltı (`.cark-teker::before`); elmas ibre yerine parlayan küçük nokta.
+- Çentikler ve akım adları soluk; sayaç 28 px; "Çarkı parmağınla çevir" kalktı.
+- "Bütün akımlar · Tümünü gör" satırı kalktı: düğme çarkın içinde, sayacın altında "Bütün akımlar ⌄" (açılınca "Gizle").
+- Gündüz paletinde disk bandın rengini alıyordu; artık zemin görünür, sayı ve çentikler kâğıdın mürekkebiyle.
+- Geometri tuvaldeki gibi: yarıçap 320 → 700 px (`CARK_R`), iki akım arası 21° → 12° (`CARK_ADIM`; komşu adlar
+  köşelerde), çentikler iki derecede bir ince çizgi; ışık çarkın kenarına varmadan söner. Sayı çentiklerin altında.
+- Sekme çubuğu da tuvaldeki gibi (Emre: "bu kısmı da aynı yap"): sade cam, ince açık kenar, yumuşak gölge; seçili sekme
+  düz, hafif açık bir hap (pirinç parıltı ve renkli kenar kalktı); Gündüz paletinde bandın rengi yerine kâğıt camı. Hızlı
+  ayar dili aynı camda. Çalış'taki bekleyen kart rozeti ve hızlı ayar dili tuvalde yoktu; işlevleri olduğu için kaldı.

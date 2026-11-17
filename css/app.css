@@ -21836,3 +21836,160 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 #uygulama .cark-teker {
   margin-top: -30px; /* çarkın üst boşluğu (yalnız dönen adlar) yazının altına girer; çark alttaki çubuğun üstünde kalır */
 }
+
+/* ===== İş 190 · Akımlar çarkı "Işık" (Emre tuvalde B'yi seçti: "çok aykırı duruyor, sayfayla bütünsel olsun") =====
+   Dolu disk yok: iki uca doğru silinen ince pirinç yay, altından tablonun ışığı gibi yükselen hafif parıltı, seçili
+   noktada küçük ışık; çentikler soluk. "Bütün akımlar" ayrı satır değil, sayacın altında. Zemin (hale, semboller)
+   çarkın içinden kesintisiz görünür. */
+#uygulama .cark-teker {
+  -webkit-mask: linear-gradient(90deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+  mask: linear-gradient(90deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+}
+#uygulama .cark-teker::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* ışık yayın hemen altından yükselir ve çarkın kenarına varmadan söner (kenarda kesik bant kalmaz) */
+  background: radial-gradient(ellipse 46% 62% at 50% 46%, rgba(var(--pirinc-rgb), 0.16), rgba(var(--pirinc-rgb), 0.05) 55%, rgba(var(--pirinc-rgb), 0) 100%);
+  pointer-events: none;
+}
+#uygulama .cark-disk,
+:root[data-tema='gunduz'][data-gunduz] #uygulama .cark-disk {
+  background: none;
+  border: 1px solid color-mix(in srgb, var(--pirinc) 85%, var(--ink));
+  box-shadow: none;
+}
+#uygulama .cark-disk::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border: 6px solid rgba(var(--pirinc-rgb), 0.4);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+#uygulama .cark-halka {
+  background: repeating-conic-gradient(from -0.25deg, color-mix(in srgb, var(--ink) 30%, transparent) 0 0.5deg, transparent 0.5deg 7deg);
+}
+#uygulama .cark-ibre,
+:root[data-tema='gunduz'][data-gunduz] #uygulama .cark-ibre {
+  top: 44px;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  transform: none;
+  background: #f4e3b8;
+  box-shadow:
+    0 0 0 5px rgba(var(--pirinc-rgb), 0.22),
+    0 0 16px 4px rgba(var(--pirinc-rgb), 0.4);
+}
+#uygulama .cark-ad {
+  color: color-mix(in srgb, var(--ink) 50%, transparent);
+  font-weight: 500;
+}
+/* Gündüz paletinde disk bandın rengindeydi; artık zemin görünür, yazılar kâğıdın mürekkebiyle */
+:root[data-tema='gunduz'][data-gunduz] #uygulama :is(.cark-sayac, .cark-halka) {
+  --ink: inherit;
+  --ink-2: inherit;
+  color: var(--ink);
+}
+#uygulama .cark-sayac b {
+  font: 500 28px/1 var(--serif);
+}
+#uygulama .cark-sayac span {
+  font-size: 16px;
+}
+#uygulama .cark-sayac small {
+  display: none; /* "Çarkı parmağınla çevir": yerini "Bütün akımlar" aldı */
+}
+/* "Bütün akımlar": çarkın içinde, sayacın hemen altında */
+#uygulama .akim-dizin {
+  position: relative;
+  z-index: 1;
+  margin-top: -48px;
+}
+#uygulama .akim-dizin .gz-plan-bas {
+  justify-content: center;
+  border: 0;
+}
+#uygulama .akim-dizin-ac {
+  color: var(--ink-2);
+  font: 600 14px/1 var(--sans);
+}
+#uygulama .akim-dizin ol {
+  margin-top: 28px;
+}
+/* İş 190 · geometri: yarıçap 700 (CARK_R, js/ekranlar/gozat.js) — tuvaldeki gibi neredeyse düz ufuk çizgisi */
+#uygulama .cark-teker {
+  height: 150px;
+}
+#uygulama .cark-disk {
+  top: 48px;
+  width: 1400px;
+  height: 1400px;
+  margin-left: -700px;
+}
+#uygulama .cark-halka {
+  top: 60px;
+  width: 1376px;
+  height: 1376px;
+  margin-left: -688px;
+  /* çentikler: iki derecede bir, ince ve kısa */
+  background: repeating-conic-gradient(from -0.08deg, color-mix(in srgb, var(--ink) 34%, transparent) 0 0.16deg, transparent 0.16deg 2deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 678px, #000 678px 688px, transparent 688px);
+  mask: radial-gradient(circle, transparent 0 678px, #000 678px 688px, transparent 688px);
+}
+#uygulama .cark-ad {
+  top: 748px; /* diskin merkezi: 48 + 700; JS adı 740 px yukarı taşır */
+  font-size: 12px;
+}
+#uygulama .cark-sayac {
+  top: 78px; /* çentiklerin altında (tuvaldeki gibi) */
+}
+#uygulama .akim-dizin {
+  margin-top: -42px;
+}
+
+/* ===== İş 190 · Sekme çubuğu tuvaldeki gibi (Emre: "bu kısmı da aynı yap") =====
+   Sade cam: ince açık kenar, yumuşak gölge; seçili sekme düz, hafif açık bir hap (pirinç parıltı ve renkli kenar yok).
+   Gündüz paletinde de bandın rengi yerine kâğıt camı. Hızlı ayar dili aynı camda. */
+#sekmeler {
+  --ink: inherit;
+  --ink-2: inherit;
+  --ink-3: inherit;
+  color: var(--ink);
+  background: var(--tab-bg);
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+}
+:root[data-tema='gunduz'] #sekmeler {
+  box-shadow: 0 10px 30px rgba(var(--golge-rgb), 0.14);
+}
+#sekmeler .sekme-isaret {
+  background: color-mix(in srgb, var(--ink) 12%, transparent);
+  box-shadow: none;
+}
+#sekmeler a {
+  color: var(--ink-2);
+  font: 600 11px/1.2 var(--sans);
+  letter-spacing: 0;
+}
+#sekmeler a[aria-current='page'] {
+  color: var(--ink);
+}
+#sekmeler ~ .hizli-dil {
+  color: var(--ink-2);
+}
+#sekmeler ~ .hizli-dil .hizli-dil-ic {
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  background: var(--tab-bg);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  box-shadow: none;
+}
+#sekmeler ~ .hizli-dil:active .hizli-dil-ic {
+  background: var(--ink);
+  color: var(--bg);
+}
