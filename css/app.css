@@ -15038,30 +15038,36 @@ a.bugun-dugme {
 .bugun-dugme:active {
   transform: scale(0.97);
 }
-/* Yürüyüş kapağı · Hayatı düğmesi: dairesel vurgu ve koyu kapsül */
-#uygulama .yur-kapak .bugun-dugmeler .bugun-dugme:nth-of-type(3) {
-  width: min(190px, 100%);
-  min-height: 86px;
-  justify-content: flex-start;
-  gap: 14px;
-  padding: 8px 18px 8px 12px;
-  border-color: var(--border);
+#uygulama .bugun-tek .bugun-dugme[data-test='bugun-hayati'] {
+  flex: 0 0 auto;
+  width: auto;
+  min-height: 48px;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 14px 0 7px;
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: none;
+  font: 600 15px/1.4 var(--sans);
+}
+#uygulama .bugun-tek .bugun-dugme[data-test='bugun-hayati'] .ikon {
+  box-sizing: border-box;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 50%;
   background: var(--bg);
   color: var(--ink);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
-  font: 600 22px/1 var(--sans);
-  text-align: left;
 }
-#uygulama .yur-kapak .bugun-dugmeler .bugun-dugme:nth-of-type(3) .ikon {
-  width: 58px;
-  height: 58px;
-  padding: 17px;
-  border-radius: 50%;
-  background: var(--pirinc);
-  color: var(--bg);
+#uygulama .bugun-tek .bugun-dugme[data-test='bugun-hayati'] span {
+  overflow: visible;
+  text-overflow: clip;
 }
-#uygulama .yur-kapak .bugun-dugmeler .bugun-dugme:nth-of-type(3) span {
-  min-width: 0;
+#uygulama .bugun-tek .bugun-dugme[data-test='bugun-hayati']:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
 }
 main.perde .bugun-eser,
 main.perde .bugun-dugmeler {
@@ -18263,70 +18269,20 @@ a.akim-dizin-satir:active {
 .kn-resimler:disabled .kn-sayi {
   opacity: 0.6;
 }
-/* Konu gövdesi: Başyapıtlar ile aynı, görsel üstü yerine görsel + künye kartları */
-#uygulama .kn-govde .kn-izgara {
-  gap: 20px 12px;
+#uygulama .kn-govde .by-duvar > li {
+  min-width: 0;
 }
-#uygulama .kn-govde .kn-izgara > li,
-#uygulama .kn-govde .kn-izgara > li.kn-one {
-  container-type: inline-size;
-  grid-column: auto;
-  height: auto;
-  overflow: visible;
-  border-radius: 0;
-  background: transparent;
+#uygulama .kn-govde .by-duvar > .kn-one {
+  grid-column: 1 / -1;
 }
-#uygulama .kn-govde .kn-kart {
-  position: relative;
-  inset: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  color: var(--ink);
+#uygulama .kn-govde .by-sahne {
+  margin-top: 0;
 }
-#uygulama .kn-govde .kn-kapak {
-  position: relative;
-  inset: auto;
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  border-radius: 4px;
-  overflow: hidden;
-  background: var(--surface);
+#uygulama .kn-govde .kn-eserler {
+  margin-top: 10px;
 }
-#uygulama .kn-govde .kn-kapak img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#uygulama .kn-govde .kn-kart::after {
-  display: none;
-}
-#uygulama .kn-govde .kn-yazi,
-#uygulama .kn-govde .kn-one .kn-yazi {
-  position: static;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  display: flex;
-  gap: 4px;
-  color: var(--ink);
-  text-shadow: none;
-}
-#uygulama .kn-govde .kn-yazi b,
-#uygulama .kn-govde .kn-one .kn-yazi b {
-  font: 400 17px/1.2 var(--okuma);
-  text-shadow: none;
-}
-#uygulama .kn-govde .kn-yazi .kn-ust {
-  color: var(--pirinc);
-}
-#uygulama .kn-govde .kn-resimler {
-  top: calc(125cqw - 44px);
-  bottom: auto;
+#uygulama .kn-govde .kn-eserler:disabled {
+  opacity: 0.6;
 }
 /* Sade: sürekli süs hareketleri (yavaş yakınlaşma) durur; sahne kendi kendine değişmez (js: .elle) */
 :root[data-hareket='sade'] :is(.by-sahne-resim img, .kn-one .kn-kapak img) {
