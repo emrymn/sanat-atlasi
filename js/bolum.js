@@ -3,6 +3,8 @@
 // Bölüm akışı: (ilk kez) tanıtım → Kolay (8 soru) → Orta (10 soru) → isteğe bağlı Zor (10 soru); geçme sınırı %75.
 // Orta geçilince sonraki bölüm açılır; bir akımın bölümlerinin %60'ının (yukarı yuvarlanır) Orta'sı geçilince
 // sonraki akımın ilk bölümü açılır. Ayrıca bölümün bütün sanatçılarının konusu kursta işlenmiş olmalı.
+// İş 191: bir de dönemin Çalış'taki dersi bitmiş olmalı (dersBitti). Haritada daha önce oynanmış dönemin durakları
+// kilitlenmez (kayıtlı ilerleme kaybolmasın).
 // Saf mantık burada (birim testli); ekranlar js/ekranlar/harita.js ve js/ekranlar/pekistir.js.
 import { islenenKume } from './kilit.js';
 import { tanismaEserleri } from './ogrenme.js';
@@ -86,9 +88,13 @@ export const gectiMi = (kayit, seviye) => (kayit[seviye] ?? 0) >= BOLUM_GECME;
 export const yildizSayisi = (kayit) => BOLUM_SEVIYELER.filter((s) => gectiMi(kayit, s)).length;
 export const akimGecmeSayisi = (n) => Math.ceil(n * AKIM_GECME - 1e-9);
 
-// Her bölümün durumu ve haritadaki "buradasın" bölümü
-export function bolumDurumlari(bolumler, ilerleme, islenen, harita) {
+// Her bölümün durumu ve haritadaki "buradasın" bölümü.
+// dersBitti (İş 191, isteğe bağlı): (akım) => dersi bitti mi (true / false; null: bilinmiyor, kapı uygulanmaz)
+export function bolumDurumlari(bolumler, ilerleme, islenen, harita, dersBitti = null) {
   const k = islenenKume(islenen);
+  // haritada oynanmış dönemler: dersin ön koşulu bunlara geriye dönük uygulanmaz
+  const oynanan = new Set(bolumler.filter((b) => Object.keys(bolumKaydi(ilerleme, b.id)).length).map((b) => b.akim));
+  const dersAcik = (akim) => !dersBitti || oynanan.has(akim) || dersBitti(akim) !== false;
   const sanatci = (id) => (harita && harita.get ? harita.get(id) : null);
   const durumlar = [];
   let oncekiAkim = null; // { akim, gecen, toplam }
@@ -112,6 +118,10 @@ export function bolumDurumlari(bolumler, ilerleme, islenen, harita) {
       const gereken = akimGecmeSayisi(oncekiAkim.toplam);
       oyunAcik = oncekiAkim.gecen >= gereken;
       if (!oyunAcik) neden = { tur: 'akim', akim: oncekiAkim.akim, gecen: oncekiAkim.gecen, gereken };
+    }
+    if (oyunAcik && !dersAcik(b.akim)) {
+      oyunAcik = false;
+      neden = { tur: 'ders', akim: b.akim };
     }
     if (!kursAcik) neden = { tur: 'kurs', konu: eksikKonular[0] ?? null };
     const acik = kursAcik && oyunAcik;
@@ -141,6 +151,7 @@ export function kilitMetni(x, bolumler) {
   const n = x.neden;
   if (!n) return '';
   if (n.tur === 'kurs') return n.konu ? `Konu ${n.konu} işlenince açılır.` : 'Bu bölümün konusu henüz işlenmedi.';
+  if (n.tur === 'ders') return `Çalış’taki ${n.akim} dersini bitirince açılır.`;
   if (n.tur === 'bolum') {
     const b = bolumler.find((y) => y.id === n.bolum);
     return `${b ? bolumAdi(b) : 'Önceki bölüm'}: Orta seviyeyi geçince açılır.`;

@@ -23,6 +23,7 @@ import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
+import { dersKaynagi } from './ekranlar/dersVerisi.js';
 import { sanatcilariBirlestir, akimlariBirlestir } from './birlesme.js';
 
 // T2: eser notları (~100 KB) yalnızca görüntüleyicide gerekir; ilk ekran çizildikten sonra yüklenir.
@@ -98,6 +99,7 @@ async function basla() {
   d.kursKonulari = kursKonulari(konular, sanatcilar, turler, tumSanatcilar);
   d.harita = new Map(sanatcilar.map((s) => [s.id, s]));
   d.akimSira = Object.fromEntries(d.akimlar.map((a) => [a.ad, a.sira]));
+  dersKaynagi(); // İş 191: haritanın ön koşulu (ders bitti mi?) için arka planda
   d.akimRenk = Object.fromEntries(akimlar.map((a) => [a.ad, a.renk]));
   d.ortaYillar = akimOrtaYillari(sanatcilar);
   d.ilerleme = await ilerlemeSozu;

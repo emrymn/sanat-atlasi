@@ -98,6 +98,38 @@ test('kilit: ilk bölüm açık, Orta geçilmeden sonraki kapalı; akımda %60 O
   assert.equal(durumlar.find((x) => x.id === sonrakiIlk.id).acik, true);
 });
 
+test('kilit (İş 191): dönemin dersi bitmeden durakları kapalı; ders bitince açılır; oynanmış dönem kilitlenmez', () => {
+  const ilkAkim = bolumler[0].akim;
+  const ikinci = bolumler.find((b) => b.akim !== ilkAkim);
+  const bitenler = new Set();
+  const dersBitti = (akim) => bitenler.has(akim);
+  const il = { bolumler: {} };
+  let { durumlar, simdiki } = bolumDurumlari(bolumler, il, tumKonular, harita, dersBitti);
+  assert.equal(durumlar[0].acik, false);
+  assert.deepEqual(durumlar[0].neden, { tur: 'ders', akim: ilkAkim });
+  assert.equal(kilitMetni(durumlar[0], bolumler), `Çalış’taki ${ilkAkim} dersini bitirince açılır.`);
+  assert.equal(simdiki, null);
+  bitenler.add(ilkAkim);
+  ({ durumlar, simdiki } = bolumDurumlari(bolumler, il, tumKonular, harita, dersBitti));
+  assert.equal(durumlar[0].acik, true);
+  assert.equal(simdiki, bolumler[0].id);
+  // önceki dönem geçildi ama sonraki dönemin dersi bitmedi: neden ders
+  for (const b of bolumler.filter((x) => x.akim === ilkAkim)) bolumSonucuIsle(il, b.id, 'orta', 10, 10);
+  ({ durumlar } = bolumDurumlari(bolumler, il, tumKonular, harita, dersBitti));
+  const x = durumlar.find((y) => y.id === ikinci.id);
+  assert.equal(x.acik, false);
+  assert.deepEqual(x.neden, { tur: 'ders', akim: ikinci.akim });
+  // haritada daha önce oynanmış dönem dersi bitmese de açık kalır
+  bolumSonucuIsle(il, ikinci.id, 'kolay', 3, 8);
+  ({ durumlar } = bolumDurumlari(bolumler, il, tumKonular, harita, dersBitti));
+  assert.equal(durumlar.find((y) => y.id === ikinci.id).acik, true);
+  // bilinmiyorsa (null) ya da işlev verilmezse kapı yok
+  assert.equal(bolumDurumlari(bolumler, {}, tumKonular, harita, () => null).durumlar[0].acik, true);
+  assert.equal(bolumDurumlari(bolumler, {}, tumKonular, harita).durumlar[0].acik, true);
+  // kurs nedeni dersten önce gelir
+  assert.equal(bolumDurumlari(bolumler, {}, [], harita, () => false).durumlar[0].neden.tur, 'kurs');
+});
+
 test('kilit: kursta konusu işlenmemiş bölüm kapalı ve nedeni konu', () => {
   const { durumlar, simdiki } = bolumDurumlari(bolumler, {}, [], harita);
   assert.equal(durumlar[0].acik, false);

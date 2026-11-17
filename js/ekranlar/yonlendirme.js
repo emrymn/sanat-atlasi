@@ -40,7 +40,8 @@ const rotalar = [
   [/^#\/pekistir\/ders\/([^/]+)\/gor$/, gorAdimi, null],
   [/^#\/pekistir\/ders\/([^/]+)\/ogren$/, ogrenAdimi, null],
   [/^#\/pekistir\/ders\/([^/]+)\/ayirt$/, ayirtAdimi, null],
-  [/^#\/pekistir\/ders\/([^/]+)\/sina$/, (ad) => pekistir('ders', ad), null],
+  // İş 191: Sına adımı kalktı; eski adres dersin sayfasına gider
+  [/^#\/pekistir\/ders\/([^/]+)\/sina$/, dersSayfasi, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],
   [/^#\/pekistir\/konu\/(\d+)$/, (no) => pekistir('konu', no), null],

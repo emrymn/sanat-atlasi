@@ -17,6 +17,7 @@ import { surukleKapatKur } from '../surukleKapat.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 import { akimBilgisiBirlestir } from '../birlesme.js';
+import { dersKaynagi, dersBittiMi, dersAdresi } from './dersVerisi.js';
 
 // İş 90: öğrencinin ekrandaki boyu (pt; scripts/harita/yolcu_hazirla.py YOLCU_PT). İş 95: 80 → 96
 const YOLCU_H = 96;
@@ -51,8 +52,9 @@ export function bolumler() {
   return d.bolumler;
 }
 
+// İş 191: dönemin durakları Çalış'taki dersi bitince açılır (ders kaynağı yüklenmediyse kapı uygulanmaz)
 export function durumlar() {
-  return bolumDurumlari(bolumler(), d.ilerleme, islenen(), d.harita);
+  return bolumDurumlari(bolumler(), d.ilerleme, islenen(), d.harita, dersBittiMi);
 }
 
 const SEVIYE_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor' };
@@ -131,7 +133,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const eskiY = window.scrollY;
   const no = cizimNo();
   motifVerisi(); // saklı motiflerin uzun hikâyeleri arka planda (dokunulduğunda hazır olsun)
-  const [veri, bilgi, yv] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null), yolcuVerisi()]);
+  const [veri, bilgi, yv] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null), yolcuVerisi(), dersKaynagi()]);
   if (bilgi) d.akimBilgi = akimBilgisiBirlestir(bilgi);
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
@@ -688,7 +690,11 @@ function durakPenceresi(id) {
       <div class="harita-seviyeler merdiven">${tanis}${satirlar}</div>
       <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru · her seviye bir yıldız</p>
       ${siradaki ? `<a class="hp-basla" href="#/pekistir/bolum/${x.id}/${siradaki}" data-test="harita-basla">${SEVIYE_AD[siradaki]}’${siradaki === 'orta' ? 'ya' : 'a'} başla${ikon('ileri', 20, 1.9)}</a>` : ''}`
-    : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>`;
+    : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>${
+        x.neden && x.neden.tur === 'ders'
+          ? `<a class="hp-basla" href="${dersAdresi(x.akim)}" data-test="harita-derse-git">Derse git${ikon('ileri', 20, 1.9)}</a>`
+          : ''
+      }`;
   return `<div class="harita-pencere-ic${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
       ${sanatcilar.length ? `<span class="hp-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"></span>` : ''}
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>

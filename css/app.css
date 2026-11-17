@@ -21512,37 +21512,39 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 #uygulama .ders-bugun-alt {
   padding: 14px 16px 16px;
 }
-/* Gör düğmesi: resimli kutu yerine tek dolu düğme (adı ve sayısı içinde) */
+/* Gör düğmesi: yuvarlak, sade kart; İş 191 (Emre: "detaylara yakınlaştırıp uzaklaştıran animasyon … geri getir"):
+   içinde dersin resmi yine ayrıntıdan ayrıntıya yakınlaşır (gor-yuru), yazı soldaki koyu geçişin üstünde */
 #uygulama .gor-dugme {
-  height: 56px;
+  height: 96px;
   margin: 0;
-  padding: 0 8px 0 22px;
+  padding: 0 10px 0 22px;
   border: 0;
-  border-radius: 28px;
-  background: var(--ink);
-  color: var(--bg);
-  box-shadow: none;
+  border-radius: 24px;
+  background: #121110;
+  color: #f4f0e8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
-#uygulama .gor-dugme::before,
-#uygulama .gor-dugme-resim,
+#uygulama .gor-dugme::before {
+  background: linear-gradient(90deg, rgba(18, 17, 16, 0.88) 0%, rgba(18, 17, 16, 0.6) 45%, rgba(18, 17, 16, 0.08) 100%);
+}
 #uygulama .gor-dugme-parilti {
   display: none;
 }
 #uygulama .gor-dugme-yazi {
-  gap: 1px;
+  gap: 3px;
 }
 #uygulama .gor-dugme-yazi b {
-  font: 600 16px/1.25 var(--sans);
+  font: 600 17px/1.25 var(--sans);
 }
 #uygulama .gor-dugme-yazi small {
   font: 400 13px/1.3 var(--sans);
-  color: color-mix(in srgb, var(--bg) 70%, var(--ink));
+  color: rgba(244, 240, 232, 0.78);
 }
 #uygulama .gor-dugme-ok {
-  width: 40px;
-  height: 40px;
-  background: var(--bg);
-  color: var(--ink);
+  width: 44px;
+  height: 44px;
+  background: #f4f0e8;
+  color: #121110;
 }
 #uygulama .gor-dugme-ok::after {
   display: none;
@@ -21992,4 +21994,14 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 #sekmeler ~ .hizli-dil:active .hizli-dil-ic {
   background: var(--ink);
   color: var(--bg);
+}
+
+/* ===== İş 191 · Sına'nın yerinde "Haritaya geç": ders bitmeden kapalı (soluk, kilitli), bitince haritaya götürür ===== */
+.ders-adim-satir.kapali,
+.ders-adim.kapali {
+  opacity: 0.55;
+}
+.ders-adim-satir.kapali .ders-halka,
+.ders-adim.kapali .ders-halka {
+  border-style: dashed;
 }

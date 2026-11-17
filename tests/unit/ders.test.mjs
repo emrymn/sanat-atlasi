@@ -2,15 +2,16 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { DERS_ADIMLARI, SINA_GECME, dersKaydi, adimIsle, adimBittiMi, dersDurumu, bugununDersi, derslerDogrula } from '../../js/ders.js';
+import { DERS_ADIMLARI, dersKaydi, adimIsle, adimBittiMi, dersDurumu, bugununDersi, derslerDogrula } from '../../js/ders.js';
 import { ilerlemeDogrula } from '../../js/depo.js';
 import { sanatcilariBirlestir, ozellikleriBirlestir } from '../../js/birlesme.js';
 
 const oku = (f) => JSON.parse(readFileSync(new URL(`../../data/${f}`, import.meta.url), 'utf8'));
 
-test('kayıt: boş akımda dört adım sıfır; adım yalnız artar, eşikte biter ve günü bir kez yazılır', () => {
+test('kayıt: boş akımda üç adım sıfır (İş 191: Sına yok); adım yalnız artar, eşikte biter ve günü bir kez yazılır', () => {
   const il = {};
   assert.deepEqual(Object.keys(dersKaydi(il, 'Gotik')), DERS_ADIMLARI);
+  assert.deepEqual(DERS_ADIMLARI, ['gor', 'ogren', 'ayirt']);
   assert.equal(dersDurumu(dersKaydi(il, 'Gotik')).siradaki, 'gor');
   let r = adimIsle(il, 'Gotik', 'gor', 0.4, '2026-11-13');
   assert.deepEqual([r.sonra.gor.i, r.bitti, r.yeniBitti], [0.4, false, false]);
@@ -20,15 +21,17 @@ test('kayıt: boş akımda dört adım sıfır; adım yalnız artar, eşikte bit
   assert.deepEqual([r.bitti, r.yeniBitti, r.sonra.gor.t], [true, true, '2026-11-14']);
   r = adimIsle(il, 'Gotik', 'gor', 1, '2026-11-20');
   assert.deepEqual([r.yeniBitti, r.sonra.gor.t], [false, '2026-11-14']);
-  // Sına %75'te biter, ötekiler tamamında
-  adimIsle(il, 'Gotik', 'sina', SINA_GECME, '2026-11-14');
+  // adım tamamında biter
   adimIsle(il, 'Gotik', 'ogren', 0.99, '2026-11-14');
   const k = dersKaydi(il, 'Gotik');
-  assert.equal(adimBittiMi(k, 'sina'), true);
   assert.equal(adimBittiMi(k, 'ogren'), false);
   const dd = dersDurumu(k);
-  assert.deepEqual([dd.siradaki, dd.biten, dd.bitti], ['ogren', 2, false]);
+  assert.deepEqual([dd.siradaki, dd.biten, dd.bitti], ['ogren', 1, false]);
+  adimIsle(il, 'Gotik', 'ogren', 1, '2026-11-14');
+  adimIsle(il, 'Gotik', 'ayirt', 1, '2026-11-14');
+  assert.equal(dersDurumu(dersKaydi(il, 'Gotik')).bitti, true);
   assert.throws(() => adimIsle(il, 'Gotik', 'oyun', 1, '2026-11-14'));
+  assert.throws(() => adimIsle(il, 'Gotik', 'sina', 1, '2026-11-14')); // Sına adımı yok
 });
 
 test('bugünün dersi: Yolculuk’taki akım önce; bittiyse dönem sırasıyla ilk bitmemiş; hepsi bittiyse yok', () => {
@@ -44,7 +47,7 @@ test('bugünün dersi: Yolculuk’taki akım önce; bittiyse dönem sırasıyla 
 
 test('doğrulama: bozuk değerler atılır; birleşen akım hedefe katılır; yedekten geri yüklemede korunur', () => {
   const v = {
-    Gotik: { gor: { i: 0.5 }, ogren: { i: 1, t: '2026-11-20' }, sina: { i: 'x' } },
+    Gotik: { gor: { i: 0.5 }, ogren: { i: 1, t: '2026-11-20' }, sina: { i: 0.8, t: '2026-11-20' } }, // eski Sına kaydı atılır
     'Uluslararası Gotik': { gor: { i: 1, t: '2026-11-10' }, ogren: { i: 1, t: '2026-11-12' } },
     Barok: { gor: { i: 7, t: 'dün' } },
     Bos: { gor: { i: 0 } },
@@ -107,24 +110,24 @@ test('doğrulama: her kanıt adayına karar verilmiş; her karar hâlâ var olan
 });
 
 // ---------- 1.79.0 · adımların içerik seçimi (js/dersIcerik.js) ve üç adımlı dersler ----------
-import { dersBul, gorPlani, ogrenPlani, ayirtPlani, dersAdimlari, eserEslestir, sinaSoruSayisi, adimOrani, kalinanYer, dersHali, GOR_ESER, KANIT_ESER } from '../../js/dersIcerik.js';
+import { dersBul, gorPlani, ogrenPlani, ayirtPlani, dersAdimlari, eserEslestir, adimOrani, kalinanYer, dersHali, GOR_ESER, KANIT_ESER } from '../../js/dersIcerik.js';
 
 const KAYNAK = oku('ders_kaynaklari.json');
 const YURUYUS = oku('yuruyus.json').eserler;
 const GOR_YOK = ['Dada', 'Sürrealizm', 'Savaş sonrası figürasyon'];
 
-test('üç adımlı ders: Gör verisi olmayan derste Gör yok; ders üç adımla biter ve bugünün dersi olmaktan çıkar', () => {
+test('iki adımlı ders: Gör verisi olmayan derste Gör yok; ders iki adımla biter ve bugünün dersi olmaktan çıkar', () => {
   for (const d of KAYNAK.dersler) {
     const adimlar = dersAdimlari(d, YURUYUS);
-    assert.deepEqual(adimlar, GOR_YOK.includes(d.akim) ? ['ogren', 'ayirt', 'sina'] : DERS_ADIMLARI, d.akim);
+    assert.deepEqual(adimlar, GOR_YOK.includes(d.akim) ? ['ogren', 'ayirt'] : DERS_ADIMLARI, d.akim);
   }
   const il = {};
-  const uc = ['ogren', 'ayirt', 'sina'];
+  const uc = ['ogren', 'ayirt'];
   assert.equal(dersDurumu(dersKaydi(il, 'Dada'), uc).siradaki, 'ogren');
-  assert.equal(dersDurumu(dersKaydi(il, 'Dada'), uc).adimlar.length, 3);
+  assert.equal(dersDurumu(dersKaydi(il, 'Dada'), uc).adimlar.length, 2);
   for (const a of uc) adimIsle(il, 'Dada', a, 1, '2026-11-13');
   assert.equal(dersDurumu(dersKaydi(il, 'Dada'), uc).bitti, true);
-  assert.equal(dersDurumu(dersKaydi(il, 'Dada')).bitti, false); // dört adım sayılsaydı hiç bitmezdi
+  assert.equal(dersDurumu(dersKaydi(il, 'Dada')).bitti, false); // üç adım sayılsaydı hiç bitmezdi
   const adimlar = (ad) => (ad === 'Dada' ? uc : DERS_ADIMLARI);
   assert.equal(bugununDersi({ acikAkimlar: ['Dada', 'Sürrealizm'], ilerleme: il, yolculukAkimi: 'Dada', adimlar }), 'Sürrealizm');
   assert.equal(bugununDersi({ acikAkimlar: ['Dada'], ilerleme: il, yolculukAkimi: 'Dada', adimlar }), null);
@@ -234,8 +237,7 @@ test('eser eşleştirme: QID, başyapıt anahtarı ya da başlıkla; görseli ol
   }
 });
 
-test('Sına soru sayısı, adım oranı, kalınan yer ve dersin hâli', () => {
-  assert.deepEqual([0, 1, 2, 5, 9, 13].map(sinaSoruSayisi), [0, 4, 6, 6, 9, 12]);
+test('adım oranı, kalınan yer ve dersin hâli', () => {
   assert.deepEqual([adimOrani(0, 7), adimOrani(3, 6), adimOrani(9, 6), adimOrani(1, 0)], [0, 0.5, 1, 0]);
   // yarım kalan adım sıradaki öğeden; biten adım baştan açılır
   assert.deepEqual([kalinanYer(0, 7), kalinanYer(3 / 7, 7), kalinanYer(0.429, 7), kalinanYer(6 / 7, 7), kalinanYer(1, 7), kalinanYer(0.5, 0)], [0, 3, 3, 6, 0, 0]);

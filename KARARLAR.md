@@ -2460,3 +2460,29 @@ A · Ufuk çizgisi, B · Işık, C · Cam şerit. Emre B'yi seçti.
 - Sekme çubuğu da tuvaldeki gibi (Emre: "bu kısmı da aynı yap"): sade cam, ince açık kenar, yumuşak gölge; seçili sekme
   düz, hafif açık bir hap (pirinç parıltı ve renkli kenar kalktı); Gündüz paletinde bandın rengi yerine kâğıt camı. Hızlı
   ayar dili aynı camda. Çalış'taki bekleyen kart rozeti ve hızlı ayar dili tuvalde yoktu; işlevleri olduğu için kaldı.
+
+### İş 191 · Sına kalktı, ders haritanın ön koşulu (sürüm 1.86.0)
+
+Emre: "çalış kısmında sına olmasın artık sistemi değiştirelim bu ders kısmını geçmeden haritada ilerleyemeyelim yani dersi
+bitirmeyi bir ön koşul olarak değiştirelim sına kısmı yerine de haritaya geçin". Sonra: "detaylara yakınlaştırıp
+uzaklaştıran bir animasyon vardı o kalkmış onu geri getir".
+
+- Ders üç adım: Gör → Öğren → Ayırt et (Gör'ü olmayan derste iki). `DERS_ADIMLARI` artık `['gor','ogren','ayirt']`;
+  `SINA_GECME`, `sinaSoruSayisi` ve soru motorundaki `kip: 'ders'` kalktı. Eski kayıtlardaki `sina` alanı doğrulamada atılır.
+  Eski adres `#/pekistir/ders/<akım>/sina` dersin sayfasına gider. (`data/ders_kaynaklari.json`daki `sina` alanı veri; dokunulmadı.)
+- Sına'nın yerinde "Haritaya geç": ders sayfasında dördüncü satır (ders bitmeden soluk ve kilitli, "Üç adımı bitirince
+  dönemin durakları açılır"), Çalış kartında dördüncü halka "Harita", son adımın kapanışında "Haritaya geç" düğmesi.
+  Ders bitince ders sayfasının ana düğmesi de haritaya götürür.
+- Haritanın ön koşulu (`js/bolum.js` `bolumDurumlari(…, dersBitti)`): bir dönemin durakları, o dönemin dersi bitmeden açılmaz
+  (neden `{ tur: 'ders' }`, metin "Çalış’taki X dersini bitirince açılır.", durak penceresinde "Derse git"). Kurs ve önceki
+  dönemin %60'ı kuralları aynen sürer; kurs nedeni önce gösterilir. Dersi olmayan dönemde kapı yok.
+- Geriye dönük kilit yok: haritada kaydı olan (en az bir seviyesi oynanmış) dönemin durakları, dersi bitmese de açık kalır;
+  Emre'nin ilerlemesi kaybolmaz. Ders kaynağı yüklenemezse (çevrimdışı ilk açılış) kapı uygulanmaz.
+- Ders kaynağı `js/ekranlar/dersVerisi.js`te bir kez yüklenir (açılışta arka planda); harita ekranı ve bölüm turu onu bekler,
+  böylece harita durumu eşzamanlı kalır.
+- "Bugünün dersi": haritanın beklediği ders (durağı yalnız dersi yüzünden kapalı dönem) önce; yoksa "Buradasın" durağının dönemi.
+- Testler: tarayıcı testlerinin çoğunda ders kapısı kapalı (`window.__atlasDersKapisiYok`, tanışma ekranındaki gibi);
+  `tests/e2e/ders.spec.js` açar.
+- Çalış'taki Gör düğmesi: İş 189'da düz hapa dönmüş, içindeki resim ve yakınlaşma animasyonu (`gor-yuru`) gizlenmişti.
+  Geri geldi: 96 px yüksek, yuvarlak (24 px) koyu kart; resim ayrıntıdan ayrıntıya yakınlaşır, yazı soldaki koyu geçişin
+  üstünde, ok açık daire. Parıltı şeridi kapalı kaldı.
