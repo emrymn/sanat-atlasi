@@ -1,0 +1,25 @@
+{
+ "anahtar": "Q60514853",
+ "baslik_tr": "Parlamento Binalarının Yanışı, 16 Ekim 1834",
+ "kunye": {
+  "sanatci": {"deger": "J. M. W. Turner", "kaynak": "wikidata.txt", "alinti": "creator (P170): J. M. W. Turner (Q159758)"},
+  "tarih": {"deger": "1835", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1835", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)"},
+  "olcu": {"deger": "92 × 123,2 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 92.0 centimetre\nwidth (P2049): 123.2 centimetre"},
+  "yer": {"deger": "Cleveland Museum of Art", "kaynak": "wikidata.txt", "alinti": "collection (P195): Cleveland Museum of Art (Q657415)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun betimlediği konu Parlamento'nun yanmasıdır.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Burning of Parliament (Q4859409)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eserin başlığı, Lordlar ve Kamaralar binalarının 16 Ekim 1834'te yanışını adlandırır.", "kaynak": "wikidata.txt", "alinti": "title (P1476): The Burning of the Houses of Lords and Commons, 16 October 1834 [en]", "ihtiyat": false},
+  {"id": "C03", "bolum": "anlam", "iddia": "Eserin türü kent manzarası (cityscape) olarak belirtilmiştir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): cityscape (Q1935974)", "ihtiyat": false},
+  {"id": "C04", "bolum": "onem", "iddia": "Eserin envanter numarası 1942.647'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 1942.647", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "gorunen: kaynakta yok (yalnız wikidata.txt mevcut; figür, nesne ya da sahne betimlemesi yok)",
+  "kompozisyon: kaynakta yok (yalnız wikidata.txt mevcut; düzen, ışık, renk bilgisi yok)",
+  "anlam: simge, yorum ya da sipariş amacı bilgisi kaynakta yok (yalnız wikidata.txt mevcut)",
+  "onem: sipariş, sahiplik geçmişi, etki ve tepki bilgisi kaynakta yok (yalnız wikidata.txt mevcut)",
+  "iddia sayısı: tek kaynak wikidata.txt olduğundan 14 iddiaya ulaşılamadı; aynı olgu bölünmedi, uydurma yapılmadı"
+ ]
+}

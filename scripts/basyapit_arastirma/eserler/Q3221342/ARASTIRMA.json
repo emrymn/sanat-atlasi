@@ -1,0 +1,32 @@
+{
+ "anahtar": "Q3221342",
+ "baslik_tr": "İsa'nın Çarmıha Gerilişi",
+ "kunye": {
+  "sanatci": {"deger": "Francisco de Zurbarán", "kaynak": "wikidata.txt", "alinti": "creator (P170): Francisco de Zurbarán (Q209615)"},
+  "tarih": {"deger": "1627", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1627", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "290.3 × 165.5 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 290.3 centimetre\nwidth (P2049): 165.5 centimetre"},
+  "yer": {"deger": "Art Institute of Chicago", "kaynak": "wikidata.txt", "alinti": "location (P276): Art Institute of Chicago (Q239303)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablonun ana konusu İsa'nın çarmıha gerilişidir.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): crucifixion of Jesus (Q51636)", "ihtiyat": false},
+  {"id": "C02", "bolum": "gorunen", "iddia": "Resimde İsa tasvir edilir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Jesus Christ (Q302)", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "İsa'nın iki ayağı, Diego Velázquez'in 1632 tarihli Christ Crucified tablosundaki gibi ayrı ayrı çivilenmiş gösterilir.", "kaynak": "enwiki.txt", "alinti": "As in Diego Velázquez's 1632 Christ Crucified, the artist shows Christ's two feet nailed separately", "ihtiyat": false},
+  {"id": "C04", "bolum": "kompozisyon", "iddia": "Resim, çarmıh çevresinde toplananlar yerine yalnızca İsa'ya odaklanan betimleme eğilimini izler.", "kaynak": "enwiki.txt", "alinti": "Both works also draw on a Counter Reformation trend after the Council of Trent to depictions focusing solely on Christ rather than those gathered around the cross.", "ihtiyat": false},
+  {"id": "C05", "bolum": "anlam", "iddia": "Resim, Trento Konsili sonrası Karşı Reformasyon eğiliminden beslenir.", "kaynak": "enwiki.txt", "alinti": "Both works also draw on a Counter Reformation trend after the Council of Trent", "ihtiyat": false},
+  {"id": "C06", "bolum": "anlam", "iddia": "İsa'nın çarmıha gerilişinde kullanılan çivi sayısı o dönemde tartışmalıydı.", "kaynak": "enwiki.txt", "alinti": "the number of nails used to crucify Christ was then a matter of controversy", "ihtiyat": false},
+  {"id": "C07", "bolum": "anlam", "iddia": "İsveçli Bridget dört çividen söz etmişti.", "kaynak": "enwiki.txt", "alinti": "with Bridget of Sweden writing of four nails", "ihtiyat": false},
+  {"id": "C08", "bolum": "onem", "iddia": "Zurbarán, 1626'da Sevilla'daki San Pablo de Real Manastırı Dominikenleriyle yeni bir sözleşme imzaladı.", "kaynak": "enwiki.txt", "alinti": "In 1626 Zurbarán signed a new contract with the Dominicans of San Pablo de Real Monastery in Seville to produce 21 paintings in 8 months.", "ihtiyat": false},
+  {"id": "C09", "bolum": "onem", "iddia": "Bu tablo, 8 ayda üretilmesi istenen 21 tablodan biriydi.", "kaynak": "enwiki.txt", "alinti": "to produce 21 paintings in 8 months. One of these was Christ on the Cross", "ihtiyat": false},
+  {"id": "C10", "bolum": "onem", "iddia": "Tablo, sanatçının çağdaşlarınca büyük beğeni topladı.", "kaynak": "enwiki.txt", "alinti": "which was so admired by the artist's contemporaries", "ihtiyat": false},
+  {"id": "C11", "bolum": "onem", "iddia": "Sevilla belediye meclisi 1629'da sanatçının kente kalıcı olarak taşınmasını önerdi.", "kaynak": "enwiki.txt", "alinti": "Seville's city council suggested he moved there permanently in 1629", "ihtiyat": true},
+  {"id": "C12", "bolum": "onem", "iddia": "Tablo, 1952–1954 arasında Hans Fritz Fankhauser'ın mülkiyetindeydi.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Hans Fritz Fankhauser (Q108687368) [start time: 1952; end time: 1954]", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Tablo, 1954'ten beri Art Institute of Chicago koleksiyonundadır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Art Institute of Chicago (Q239303) [start time: 1954]", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Tablonun envanter numarası 1954.15'tir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 1954.15", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": [
+  "hikaye: kaynakta olayın anlatısı, İncil göndermesi ya da öncesi/sonrası yok; yalnızca ana konu (P921) bilgisi var",
+  "gorunen: kaynakta figür/nesne/yazıt ayrıntısı sınırlı; yalnızca İsa'nın tasviri ve ayakların ayrı çivilenmesi aktarılıyor"
+ ]
+}

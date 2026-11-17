@@ -1,0 +1,33 @@
+{
+ "anahtar": "Q959537",
+ "baslik_tr": "Meryem'in Ölümü",
+ "kunye": {
+  "sanatci": {"deger": "Andrea Mantegna", "kaynak": "wikidata.txt", "alinti": "creator (P170): Andrea Mantegna (Q5681)"},
+  "tarih": {"deger": "yaklaşık 1462–1464", "kaynak": "enwiki.txt", "alinti": "dating to c. 1462–1464", "ihtiyat": true},
+  "teknik": {"deger": "panel üzerine tempera", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "54,5 × 42 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 54.5 centimetre width (P2049): 42 centimetre"},
+  "yer": {"deger": "Museo del Prado", "kaynak": "wikidata.txt", "alinti": "location (P276): Museo del Prado (Q160112)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Mantegna bu resimde Meryem'in hayatının son anını betimler.", "kaynak": "enwiki.txt", "alinti": "In this picture Mantegna depicts the last moment of the Virgin Mary's life", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Yapıtın kayıtlı başlığı 'Death of the Virgin (Dormition of the Virgin)' şeklindedir.", "kaynak": "wikidata.txt", "alinti": "title (P1476): Death of the Virgin (Dormition of the Virgin) [en]", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Yapıt, tür olarak dinî sanat kategorisinde kayıtlıdır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Sahne, klasik mimariyle tanımlanmış bir mekân içinde yer alır.", "kaynak": "enwiki.txt", "alinti": "within a space defined by classical architecture", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Kareli döşeme, izleyicinin gözlerini Meryem'in üzerinde yattığı yatağa doğru yönlendirir.", "kaynak": "enwiki.txt", "alinti": "with a squared pavement which leads the observer's eyes towards the bed on which the Virgin lies", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Arka planda, Mantua'daki Castello di San Giorgio'nun köprüsünü ve kasabasını ayrıntılı biçimde yeniden üreten bir göl manzarası yer alır.", "kaynak": "enwiki.txt", "alinti": "In the background is a lake scene which is a detailed reproduction of the bridge and the burgh of the Castello di San Giorgio in Mantua.", "ihtiyat": false},
+  {"id": "C07", "bolum": "kompozisyon", "iddia": "Resmin üst kısmındaki pilasterlerin bitmemiş görünümü, yapıtın bir zamanlar bugünkünden daha büyük olduğunu düşündürür.", "kaynak": "enwiki.txt", "alinti": "The unfinished appearance of the pilasters in the upper part of the picture suggests that it was once larger than it appears today.", "ihtiyat": true},
+  {"id": "C08", "bolum": "anlam", "iddia": "Bugün Ferrara'da bulunan ve İsa ile Meryem'in ruhunu gösteren parçanın, bu yapıtın özgün kompozisyonuna ait olduğu büyük olasılıkla düşünülür.", "kaynak": "enwiki.txt", "alinti": "The fragment showing Christ with the Virgin's soul, now in Ferrara, was most likely part of the original composition.", "ihtiyat": true},
+  {"id": "C09", "bolum": "onem", "iddia": "Yapıt başlangıçta kale şapelinin dekorasyonunun bir parçasıydı.", "kaynak": "enwiki.txt", "alinti": "The work was originally part of the decoration of the castle's chapel", "ihtiyat": false},
+  {"id": "C10", "bolum": "onem", "iddia": "Yapıt, bugün Floransa'daki Uffizi'de bulunan ve topluca 'Uffizi Triptych' olarak anılan üç panelle (Müneccimlerin Tapınması, Göğe Yükseliş, Sünnet) birlikteydi.", "kaynak": "enwiki.txt", "alinti": "together with three panels now in the Uffizi in Florence (The Adoration of the Magi, The Ascension and The Circumcision, collectively known as the Uffizi Triptych)", "ihtiyat": false},
+  {"id": "C11", "bolum": "onem", "iddia": "Kale şapeli dekorasyonunda, bugün Ferrara Pinacoteca Nazionale'de bulunan 'Christ Bearing the Soul of the Virgin' paneli de yer alıyordu.", "kaynak": "enwiki.txt", "alinti": "The work was originally part of the decoration of the castle's chapel, together with three panels now in the Uffizi in Florence (The Adoration of the Magi, The Ascension and The Circumcision, collectively known as the Uffizi Triptych) and one now in the Pinacoteca Nazionale, Ferrara (Christ Bearing the Soul of the Virgin).", "ihtiyat": false},
+  {"id": "C12", "bolum": "onem", "iddia": "Yapıtın envanter numarası P000248'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): P000248", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Yapıtın sahibi olarak Ferdinand VII of Spain kayıtlıdır.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Ferdinand VII of Spain (Q186256)", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Yapıt, Erken Rönesans akımı içinde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Early Renaissance (Q1472236)", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Yapıtın konum kayıtları arasında Mantua ve Madrid Kraliyet Sarayı da bulunur.", "kaynak": "wikidata.txt", "alinti": "location (P276): Mantua (Q6247) location (P276): Royal Palace of Madrid (Q171517)", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1460"}, "b": {"kaynak": "enwiki.txt", "alinti": "dating to c. 1462–1464"}},
+  {"konu": "tarih (Wikidata içi)", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1462 [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1460"}}
+ ],
+ "bulunamadi": ["anlam: kaynakta simge/yorum bilgisi yok; yalnızca özgün kompozisyona ilişkin bir hipotez var (C08), bu yüzden bölüm en az sayının altında kaldı"]
+}

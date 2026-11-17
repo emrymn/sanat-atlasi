@@ -1,0 +1,41 @@
+{
+ "anahtar": "Q3797771",
+ "baslik_tr": "Meryem'in Taç Giymesi",
+ "kunye": {
+  "sanatci": {"deger": "Fra Angelico", "kaynak": "wikidata.txt", "alinti": "creator (P170): Fra Angelico (Q5664)"},
+  "tarih": {"deger": "1434 (on yıllık hassasiyetle)", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1434 (precision: decade)", "ihtiyat": true},
+  "teknik": {"deger": "kavak panel üzerine tempera", "kaynak": "wikidata.txt", "alinti": "made from material (P186): tempera (Q175166) made from material (P186): poplar panel (Q106857865)"},
+  "olcu": {"deger": "112 × 114 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 112 centimetre width (P2049): 114 centimetre"},
+  "yer": {"deger": "Uffizi Galerisi", "kaynak": "wikidata.txt", "alinti": "collection (P195): Uffizi Gallery (Q51252)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Resim, İsa'nın Meryem'i taçlandırmasını betimler.", "kaynak": "enwiki.txt", "alinti": "It portrays Christ crowning the Virgin", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Taç Giyme, altın zeminin üzerinde yer alan küçük bir cennette gerçekleşmektedir.", "kaynak": "enwiki.txt", "alinti": "The painting is on a gold ground (gilded background), a feature of medieval painting, over which is a small paradise where the Coronation is being held.", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Sol tarafta, ön planda, eseri başlangıçta barındıran kilisenin tituları olan Aziz Egidius bulunur.", "kaynak": "enwiki.txt", "alinti": "On the left, in the foreground, is St. Egidius, titular of the church which originally housed the work.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Onu Floransalı Zenobius, Aziz Francis ve Aziz Dominic takip eder.", "kaynak": "enwiki.txt", "alinti": "He is followed by Zenobius of Florence, St. Francis and St. Dominic.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Sağ tarafta, diz çökmüş Mary Magdalene dahil kadın azizler yer alır.", "kaynak": "enwiki.txt", "alinti": "On the right side are female saints, including a kneeling Mary Magdalene.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Arka sıralarda müzisyen melekler vardır.", "kaynak": "enwiki.txt", "alinti": "In the last rows are musician angels.", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Resimde azizler, melekler ve kutsanmış figürlerden oluşan büyük bir kalabalık bulunur.", "kaynak": "enwiki.txt", "alinti": "with a large crowd of saints, angels and blessed figures enhancing this aspect", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Eserin betimlediği nesneler arasında kitap, taç ve boynuz vardır.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): book (Q571) depicts (P180): crown (Q170984) depicts (P180): horn (Q163759)", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Resim, orta çağ resminin bir özelliği olan altın zemin (yaldızlı arka plan) üzerine yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "The painting is on a gold ground (gilded background), a feature of medieval painting", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Işınlar, yaldızlı arka planın üzerinde kazıma tekniğiyle işlenmiştir.", "kaynak": "enwiki.txt", "alinti": "rays (executed through an engraving technique above the gilded background)", "ihtiyat": false},
+  {"id": "C11", "bolum": "kompozisyon", "iddia": "Mevcut çerçeve, altar parçasının Uffizi'ye ulaştığı döneme tarihlenmektedir.", "kaynak": "enwiki.txt", "alinti": "The altarpiece arrived at the Uffizi in 1825. The current frame dates to this period.", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "İsa ve Meryem'i çevreleyen ışınlar ilahi ışığı simgeler.", "kaynak": "enwiki.txt", "alinti": "It portrays Christ crowning the Virgin; both are surrounded by rays (executed through an engraving technique above the gilded background) which symbolize the divine light.", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Aziz Egidius'un yüzü muhtemelen, Fra Angelico'nun mensup olduğu San Marco manastırının eski prioru Antonino Pierozzi'nin yüzünden modellenmiştir.", "kaynak": "enwiki.txt", "alinti": "On the left, in the foreground, is St. Egidius, titular of the church which originally housed the work. His face is perhaps modelled on that of Antonino Pierozzi, the former prior of the  convent of San Marco to which Fra Angelico belonged.", "ihtiyat": true},
+  {"id": "C14", "bolum": "anlam", "iddia": "Resim, Fra Angelico'nun diğer eserlerinde de bulunan mistik bir tona sahiptir.", "kaynak": "enwiki.txt", "alinti": "The painting has a mystic tone found in other Fra Angelico works", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Eser, Biblioteca Nazionale di Firenze'deki bir yazmada Fra Angelico'nun eseri olarak anılır.", "kaynak": "enwiki.txt", "alinti": "The work is mentioned as by Fra Angelico in a manuscript of the Biblioteca Nazionale di Firenze.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Giorgio Vasari, eserin Floransa'daki Sant'Egidio kilisesinde bulunduğunu yazar.", "kaynak": "enwiki.txt", "alinti": "Giorgio Vasari writes that it was located in the church of Sant'Egidio at Florence.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Bir zamanlar eserin parçası olan predellanın iki paneli bilinmektedir; bu paneller Meryem'in Evlenmesi ve Cenazesi'ni betimler ve Floransa'daki San Marco müzesinde sergilenmektedir.", "kaynak": "enwiki.txt", "alinti": "Two panels of the predella which once was part of the work are known; they portray the Marriage and the Funeral of the Virgin, and are currently exhibited in the museum of San Marco, Florence.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Altar parçası 1825'te Uffizi'ye ulaşmıştır.", "kaynak": "enwiki.txt", "alinti": "The altarpiece arrived at the Uffizi in 1825.", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Eserin yapısı ve parlak renklerin kullanımı, Angelico'nun hocası Lorenzo Monaco'nun etkisini gösterir.", "kaynak": "enwiki.txt", "alinti": "The structure of the work and the use of brilliant colors shows the influence of Angelico's master, Lorenzo Monaco", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Eser 1435–1825 arasında Sant'Egidio Kilisesi'nde bulunmaktaydı.", "kaynak": "wikidata.txt", "alinti": "location (P276): Church of Sant'Egidio (Q913169) [start time: 1435; end time: 1825]", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Eserin envanter numarası 00285064'dür.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 00285064", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1434 (precision: decade)"}, "b": {"kaynak": "enwiki.txt", "alinti": "by the Italian early Renaissance painter Fra Angelico, executed around 1432"}}
+ ],
+ "bulunamadi": [
+  "hikaye: taç giyme olayının hangi metinden (İncil bölümü) alındığı kaynakta belirtilmemiş",
+  "anlam: sipariş amacı ve patron bilgisi kaynakta yok"
+ ]
+}

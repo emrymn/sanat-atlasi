@@ -1,0 +1,30 @@
+{
+ "anahtar": "Q3705718",
+ "baslik_tr": "Çarmıhtan İndiriliş",
+ "kunye": {
+  "sanatci": {"deger": "Rosso Fiorentino", "kaynak": "wikidata.txt", "alinti": "creator (P170): Rosso Fiorentino (Q312617)"},
+  "tarih": {"deger": "1521", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1521", "ihtiyat": false},
+  "teknik": {"deger": "panel üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "375 × 196 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 375 centimetre width (P2049): 196 centimetre"},
+  "yer": {"deger": "Pinacoteca e Museo Civico di Volterra", "kaynak": "wikidata.txt", "alinti": "location (P276): Pinacoteca e Museo Civico di Volterra (Q3181094)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, İsa'nın çarmıhtan indirilişini betimleyen bir sunak tablosudur (altarpiece).", "kaynak": "enwiki.txt", "alinti": "The Deposition from the Cross is an altarpiece, completed in 1521, depicting the Deposition of Christ by the Italian Renaissance painter Rosso Fiorentino.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Sahnede merdivenler üzerindeki bir grup figür, çarmıha gerilmiş İsa'yı indirmektedir.", "kaynak": "enwiki.txt", "alinti": "above is a group of figures on ladders, removing the crucified Christ", "ihtiyat": false},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Tablo tarihli ve imzalıdır.", "kaynak": "enwiki.txt", "alinti": "The painting is dated and signed: RUBEUS FLOR. A.S. MDXXI.", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Meryem solgun ve mahzun, iki kadının kollarında çöker.", "kaynak": "enwiki.txt", "alinti": "Mary, pale and downcast, collapses in the arms of two women.", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Parlak kırmızılar içindeki Mary Magdalen, Madonna'nın bacaklarına sarılmak üzere kendinden geçer.", "kaynak": "enwiki.txt", "alinti": "Mary Magdalen in bright red, swoons to hug the Madonna's legs.", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Kederli bir havari yüzünü öteye çevirir.", "kaynak": "enwiki.txt", "alinti": "A grief-stricken apostle turns his face away.", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Kasvetli peyzaj neredeyse çoraktır.", "kaynak": "enwiki.txt", "alinti": "The somber landscape is virtually barren.", "ihtiyat": false},
+  {"id": "C08", "bolum": "kompozisyon", "iddia": "Fiorentino'nun betimlemesi iki alana ayrılır: yukarıda merdivenlerdeki figürler İsa'yı çarmıhtan indirirken, aşağıda kadınlar ve erkekler kedere gömülmüştür.", "kaynak": "enwiki.txt", "alinti": "the Fiorentino depiction has two arenas: above is a group of figures on ladders, removing the crucified Christ, while below, the women and men are subsumed in grief.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Bir başka eleştirmene göre figürler, çarmıh ve merdivenler arasında mantıksal bir uzamsal bağlantı yoktur; figür boyutları keyfi seçilmiş görünür, uzun bedenler ve küçük başlar klasik oranları bozar.", "kaynak": "enwiki.txt", "alinti": "Another states that this is the prototype of early-Mannerism, with \"no logical spatial connection between the figures, the cross and ladders; the size of the figures appears arbitrarily chosen, and their elongated bodies and small heads\" distort classical proportions.", "ihtiyat": true},
+  {"id": "C10", "bolum": "anlam", "iddia": "Bir başka eleştirmene göre eser, erken Maniyerizmin prototipidir.", "kaynak": "enwiki.txt", "alinti": "Another states that this is the prototype of early-Mannerism", "ihtiyat": true},
+  {"id": "C11", "bolum": "anlam", "iddia": "Bir eleştirmene göre sahne; aşırı ifade, köşeli bedenlerin birleşimi ve giysilerde keskin kıvrımlar çizen göz kamaştırıcı ışıkla aktarılan 'şiddetli acı'dır.", "kaynak": "enwiki.txt", "alinti": "One reviewer describes the scene as \"violent suffering ...rendered by extreme expression, the concatenation of angular bodies, and the dazzling light that sharply draws clear folds on the clothing.\"", "ihtiyat": true},
+  {"id": "C12", "bolum": "onem", "iddia": "Eser, geniş biçimde sanatçının başyapıtı olarak kabul edilir.", "kaynak": "enwiki.txt", "alinti": "It is broadly considered to be the artist's masterpiece.", "ihtiyat": true},
+  {"id": "C13", "bolum": "onem", "iddia": "Tablo daha önce Volterra Katedrali'nde (Duomo) bulunuyordu; kasabanın sanat galerisi Pinacoteca Comunale'ye taşınmıştır.", "kaynak": "enwiki.txt", "alinti": "the painting was previously located in the Duomo of Volterra, but has been moved to the town art gallery, Pinacoteca Comunale.", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Bu tablo, aynı konuyu işleyen Maniyerist ressam Pontormo'nun yorumuyla sık sık karşılaştırılmıştır.", "kaynak": "enwiki.txt", "alinti": "This painting has often been compared to the fellow Mannerist painter Pontormo's treatment of the same subject.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Tablo 1521'de tamamlanmıştır.", "kaynak": "enwiki.txt", "alinti": "completed in 1521", "ihtiyat": false}
+ ],
+ "celiskiler": [],
+ "bulunamadi": []
+}
