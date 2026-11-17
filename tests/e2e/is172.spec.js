@@ -93,6 +93,7 @@ test('Galeri: ana ekranda raf ve müze planı yok; haplar bölümlere, kalp Kole
   await expect(page).toHaveURL(/#\/gozat$/);
   // Karşılaştır artık Çalış'ta, "Başka turlar" ızgarasında
   await page.goto('./#/pekistir');
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
   const kars = page.locator('[data-test="ek-turlar"] [data-test="gz-karsilastir"]');
   await expect(kars).toBeVisible();
   expect((await kars.boundingBox()).height).toBeGreaterThanOrEqual(44);

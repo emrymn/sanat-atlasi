@@ -17,6 +17,7 @@ async function kartCevapla(page, n) {
 test('İş 105: Bölüm turu menüden açılır, 4 bölüm şıkkı; cevap bölümü ve yüzyılı söyler, skor kaydedilir', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/pekistir');
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
   await page.locator('[data-test="bolum-turu"]').click();
   await expect(page).toHaveURL(/#\/pekistir\/bolum$/);
   // İş 171: geçiş sürerken ayrılan Çalış sayfasının başlıkları da belgede olabilir; soru adıyla aranır

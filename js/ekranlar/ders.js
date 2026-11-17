@@ -237,10 +237,9 @@ const HAL_AD = { bitti: 'Bitti', suruyor: 'Sürüyor', sirada: 'Sırada' };
 function dersSatiri(b, bugunku = null) {
   const hal = dersHali(b.durum);
   const bugun = b.akim === bugunku && hal !== 'bitti';
-  return `<li><a class="ders-satir ${hal}" href="${dersAdresi(b.akim)}" data-test="ders-satir" data-akim="${kacis(b.akim)}">
-      <span class="ders-satir-resim" data-ders-kapak="${kacis(b.akim)}" aria-hidden="true"></span>
-      <span class="ders-satir-yazi"><b>${kacis(b.akim)}</b>${adimCizgileri(b, bugun ? b.durum.siradaki : null)}</span>
-      <span class="ders-satir-hal${bugun ? ' bugun' : ''}">${bugun ? 'Bugün' : HAL_AD[hal]}</span>
+  return `<li class="calis-belir"><a class="ders-satir ${hal}${bugun ? ' bugunku' : ''}" href="${dersAdresi(b.akim)}" data-test="ders-satir" data-akim="${kacis(b.akim)}">
+      <span class="calis-eser"><span class="ders-satir-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="640" aria-hidden="true"></span><span class="ders-satir-hal${bugun ? ' bugun' : ''}">${bugun ? 'Bugünün dersi' : HAL_AD[hal]}</span><span class="calis-satir-ok" aria-hidden="true">${ikon('ileri', 18, 1.6)}</span></span>
+      <span class="ders-satir-yazi"><b>${kacis(b.akim)}</b><small>${b.acik.length} sanatçı · ${b.adimlar.length} adım</small>${adimCizgileri(b, bugun ? b.durum.siradaki : null)}</span>
     </a></li>`;
 }
 function kilitliSatir(a) {
@@ -289,21 +288,55 @@ export async function dersMenusu() {
   }
   const dersler = aciklar.length
     ? `<section class="ders-liste-bolum" aria-label="Dersler">
-        <div class="ders-bolum-bas"><h2>Dersler</h2><span>Dönem sırasıyla</span></div>
+        <p class="calis-panel-not">${aciklar.length} açık ders · Her döneme bir eserden başla.</p>
         <ul class="ders-liste" data-test="ders-liste">${aciklar.map((x) => dersSatiri(x, bugunku)).join('')}${kilitliler.length ? kilitliSatir(kilitliler[0]) : ''}</ul>
-        ${kilitliler.length > 1 ? `<p class="ders-kalan">Sonra ${kilitliler.length - 1} ders daha var; konular işlendikçe açılır.</p>` : ''}
+        ${kilitliler.length > 1 ? `<p class="ders-kalan">${kilitliler.length - 1} ders daha, konular işlendikçe açılacak.</p>` : ''}
       </section>`
     : `<p class="ders-kalan" data-test="ders-yok">${kaynak ? 'Açık dönemlerin dersi henüz yok.' : 'Dersler yüklenemedi; bağlantı gelince yeniden dene.'}</p>`;
   ciz(`${baslik}
     ${devamKarti()}
     ${b ? bugunKarti(b) : aciklar.length ? `<section class="ders-bugun bitti" data-test="bugunun-dersi" data-akim=""><div class="ders-bugun-alt"><span class="ders-etiket">Bugünün dersi</span><p class="ders-davet">Açık derslerin hepsi tamam. Aşağıdan istediğini yeniden açabilir ya da günlük tekrarı yapabilirsin.</p></div></section>` : ''}
-    ${tekrarKarti(turBilgisi('karisik'), aciklar)}
-    ${dersler}
-    ${soruTurlariHtml(hatalarSatiri())}`);
+    <div class="calis-atolye" data-test="calis-atolye">
+      ${tekrarKarti(turBilgisi('karisik'), aciklar)}
+      <header class="calis-masa-bas"><h2>Çalışma masan</h2><p>Önce keşfet. Sonra kendini dene.</p></header>
+      <div class="calis-sekmeler" role="tablist" aria-label="Çalışma biçimi">
+        <button type="button" role="tab" id="calis-dersler-sekme" aria-controls="calis-dersler-panel" aria-selected="true" data-calis-sekme="dersler">${ikon('kitap', 18, 1.6)}<span>Dersler</span></button>
+        <button type="button" role="tab" id="calis-turlar-sekme" aria-controls="calis-turlar-panel" aria-selected="false" tabindex="-1" data-calis-sekme="turlar">${ikon('karsilastir', 18, 1.6)}<span>Başka turlar</span></button>
+      </div>
+      <div role="tabpanel" id="calis-dersler-panel" aria-labelledby="calis-dersler-sekme">${dersler}</div>
+      <div role="tabpanel" id="calis-turlar-panel" aria-labelledby="calis-turlar-sekme" hidden>${soruTurlariHtml(hatalarSatiri(), true)}</div>
+      <a class="calis-yolculuk" href="#/harita"><span>${ikon('harita', 20, 1.6)}</span><span><b>Bir sonraki durağın seni bekliyor.</b><small>Yolculuğunu haritada gör</small></span>${ikon('ileri', 18, 1.6)}</a>
+    </div>`);
+  calisSekmeleri();
   calisCubugu();
   kapaklariDoldur(kaynak);
   kucukKareleriDoldur();
   devamResmiDoldur();
+}
+
+function calisSekmeleri() {
+  const liste = ekran.querySelector('.calis-sekmeler');
+  const sekmeler = [...liste.querySelectorAll('[role="tab"]')];
+  const sec = (hedef) => {
+    for (const sekme of sekmeler) {
+      const secili = sekme === hedef;
+      sekme.setAttribute('aria-selected', String(secili));
+      sekme.tabIndex = secili ? 0 : -1;
+      ekran.querySelector(`#${sekme.getAttribute('aria-controls')}`).hidden = !secili;
+    }
+  };
+  liste.addEventListener('click', (e) => {
+    const hedef = e.target.closest('[role="tab"]');
+    if (hedef) sec(hedef);
+  });
+  liste.addEventListener('keydown', (e) => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+    e.preventDefault();
+    const i = sekmeler.indexOf(document.activeElement);
+    const hedef = e.key === 'Home' ? 0 : e.key === 'End' ? sekmeler.length - 1 : (i + (e.key === 'ArrowRight' ? 1 : -1) + sekmeler.length) % sekmeler.length;
+    sec(sekmeler[hedef]);
+    sekmeler[hedef].focus();
+  });
 }
 
 // İş 189: başlık ekrandan çıkınca üstte cam çubuk ("Çalış"); başyapıt sayfasındakiyle aynı (.bsy-cubuk)

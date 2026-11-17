@@ -87,6 +87,7 @@ test('Galeri: Başyapıtlar hapı ve Koleksiyon kalbi; Çalış: Başka turlar �
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
   // Çalış
   await page.goto('./#/pekistir');
+  await page.getByRole('tab', { name: 'Başka turlar' }).click();
   const izgara = page.locator('[data-test="ek-turlar"] .tur-izgara');
   await expect(izgara.locator('[data-test="donem-turu"]')).toBeVisible();
   await expect(izgara.locator('[data-test="bolum-turu"]')).toBeVisible();
