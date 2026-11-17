@@ -1,0 +1,39 @@
+{
+ "anahtar": "Q368788",
+ "baslik_tr": "Pietà",
+ "kunye": {
+  "sanatci": {"deger": "Pietro Perugino", "kaynak": "wikidata.txt", "alinti": "creator (P170): Pietro Perugino (Q5827)"},
+  "tarih": {"deger": "yaklaşık 1483–1493", "kaynak": "enwiki.txt", "alinti": "executed around 1483–1493", "ihtiyat": true},
+  "teknik": {"deger": "panel üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): panel (Q106857709)"},
+  "olcu": {"deger": "168 × 176 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 168 centimetre width (P2049): 176 centimetre"},
+  "yer": {"deger": "Uffizi Gallery, Floransa", "kaynak": "enwiki.txt", "alinti": "housed in the  Uffizi Gallery,  Florence"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eser, San Giusto alle mura manastırının kilisesi için, Bahçede Istırap ve Çarmıha Gerilme tablolarıyla birlikte yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "The work was painted for the church of the convent of San Giusto alle mura together with the Agony in the Garden and a Crucifixion.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Rönesans sanat biyografi yazarı Giorgio Vasari, eserleri San Giovanni Battista alla Calza kilisesinin yan sunaklarında görmüştür.", "kaynak": "enwiki.txt", "alinti": "Renaissance art biographer Giorgio Vasari saw them in side altars  of the church of San Giovanni Battista alla Calza", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Eserin ilk yeri, 1529'daki Floransa Kuşatması sırasında yıkılmıştır.", "kaynak": "enwiki.txt", "alinti": "after the original location had been destroyed during the Siege of Florence in 1529", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "İsa'nın bedeni yatay ve oldukça katı biçimdedir.", "kaynak": "enwiki.txt", "alinti": "Jesus's body is horizontal and quite rigid, also held by John the Evangelist on the left and Mary Magdalene on the right", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "İsa'nın bedeni, solda Evangelist Yuhanna ve sağda Magdalalı Meryem tarafından tutulmaktadır.", "kaynak": "enwiki.txt", "alinti": "Jesus's body is horizontal and quite rigid, also held by John the Evangelist on the left and Mary Magdalene on the right", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Solda, ellerini göğsünde birleştirmiş genç bir aziz olan Nicodemus bulunur.", "kaynak": "enwiki.txt", "alinti": "At the sides are further saints, a young one (Nicodemus) on the left, with the hands joined in his chest, and an aged one (Joseph of Arimathea) on the right, looking down.", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Sağda, aşağıya bakan yaşlı bir aziz olan Arimatheli Yusuf yer alır.", "kaynak": "enwiki.txt", "alinti": "At the sides are further saints, a young one (Nicodemus) on the left, with the hands joined in his chest, and an aged one (Joseph of Arimathea) on the right, looking down.", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Magdalalı Meryem için daha az soluk tonların kullanımı, Luca Signorelli'nin o dönemde kullandığına benzer.", "kaynak": "enwiki.txt", "alinti": "The use of less pale tonalities for Mary Magdalene is similar to that used by Luca Signorelli at the time.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Pietà sahnesi, Perugino'nun 1480'ler ve 1490'lardaki sanatının tipik bir teması olan bir sundurma altında betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "The  scene of the Pietà was depicted by Perugino under a portico, a typical theme of his art in the 1480s and 1490s", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Eserde, sanatçının o dönem tablolarında da yaygın olan, hafif ağaçlı sakin bir peyzaj görülür.", "kaynak": "enwiki.txt", "alinti": "The serene landscape with light trees is also common in his paintings of the period.", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "İsa'nın bedeninin yatay ve katı gösterimi, Alman Vesperbilder geleneğinde olduğu gibidir.", "kaynak": "enwiki.txt", "alinti": "Such as in the German Vesperbilder, Jesus's body is horizontal and quite rigid", "ihtiyat": false},
+  {"id": "C12", "bolum": "anlam", "iddia": "Eserin ana konusu Pietà'dır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Pietà (Q223689)", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Eser, dini sanat türündedir.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Eser, 20. yüzyılda Uffizi'ye taşınmıştır.", "kaynak": "enwiki.txt", "alinti": "It was moved to the Uffizi in the 20th century.", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Tablo 1998'de restore edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The painting was restored in 1998.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Eserin tarihlendirilmesi tartışmalıdır ve 1482 ile yüzyıl sonundan önceki biraz daha geç bir dönem arasında değişir.", "kaynak": "enwiki.txt", "alinti": "The dating of the work is disputed: it varies from 1482, the year of Perugino's return from Rome, to a slightly later period, although before the end of the century", "ihtiyat": true},
+  {"id": "C17", "bolum": "onem", "iddia": "Eser, Erken Rönesans hareketine aittir.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Early Renaissance (Q1472236)", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Eserin envanter numarası 8365'tir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): 8365", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1483"}, "b": {"kaynak": "enwiki.txt", "alinti": "executed around 1483–1493"}},
+  {"konu": "tarih (enwiki içi)", "a": {"kaynak": "enwiki.txt", "alinti": "executed around 1483–1493"}, "b": {"kaynak": "enwiki.txt", "alinti": "it varies from 1482, the year of Perugino's return from Rome, to a slightly later period, although before the end of the century"}}
+ ],
+ "bulunamadi": [
+  "hikaye: siparişi veren kişi/patron adı hiçbir kaynakta yok",
+  "anlam: sahnenin simgesel/teolojik yorumu hiçbir kaynakta yok (yalnız tür ve konu sınıflandırması var)"
+ ]
+}

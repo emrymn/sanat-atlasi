@@ -1,0 +1,42 @@
+{
+ "anahtar": "Q3224378",
+ "baslik_tr": "Masumların Katliamı",
+ "kunye": {
+  "sanatci": {"deger": "Nicolas Poussin", "kaynak": "wikidata.txt", "alinti": "creator (P170): Nicolas Poussin (Q41554)"},
+  "tarih": {"deger": "1625–1632", "kaynak": "enwiki.txt", "alinti": "is a 1625-1632 painting by Nicolas Poussin", "ihtiyat": false},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "147 × 171 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 147 centimetre width (P2049): 171 centimetre"},
+  "yer": {"deger": "Musée Condé, Chantilly, Fransa", "kaynak": "enwiki.txt", "alinti": "It is now in the Musée Condé in Chantilly, France."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eserin ana konusu Masumların Katliamı'dır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): Massacre of the Innocents (Q643474)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser muhtemelen 1564'te Osmanlı İmparatorluğu tarafından rehine alınan Giustiniani çocuklarının anısına yapılmıştır.", "kaynak": "enwiki.txt", "alinti": "probably in memory of the Giustiniani children taken hostage by the Ottoman Empire in 1564", "ihtiyat": true},
+  {"id": "C03", "bolum": "gorunen", "iddia": "Eserde bir asker betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): soldier (Q4991371)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Eserde bir kılıç betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): sword (Q12791)", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Eserde yeni yürümeye başlayan bir çocuk betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): toddler (Q1340307)", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Eserde bir kadın betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): woman (Q467)", "ihtiyat": false},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Eserde bir bebek betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): infant (Q998)", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Eserde acı betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): pain (Q81938)", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Eserde cinayet betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): murder (Q132821)", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "Eserde sütun başlığı betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): capital (Q193893)", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Eserde friz betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): frieze (Q183272)", "ihtiyat": false},
+  {"id": "C12", "bolum": "gorunen", "iddia": "Eserde kasıtsız adam öldürme betimlenir.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): involuntary manslaughter (Q118322)", "ihtiyat": false},
+  {"id": "C13", "bolum": "anlam", "iddia": "Eser dini sanat türünde bir yapıttır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C14", "bolum": "anlam", "iddia": "Eser tarih resmi türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): history painting (Q742333)", "ihtiyat": false},
+  {"id": "C15", "bolum": "anlam", "iddia": "Eser Klasisizm akımı içinde yer alır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Classicism (Q170292)", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Eser muhtemelen Romalı koleksiyoner Vincenzo Giustiniani tarafından sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "It was probably commissioned by the Roman collector Vincenzo Giustiniani", "ihtiyat": true},
+  {"id": "C17", "bolum": "onem", "iddia": "Eser 1804'e kadar Palazzo Giustiniani'de kalmış, o yıl Lucien Bonaparte tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "It remained in the Palazzo Giustiniani until 1804, when it was bought by Lucien Bonaparte.", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Eser birkaç el değiştirdikten sonra Londra'da Henri d'Orleans, Aumale Dükü tarafından satın alınmıştır.", "kaynak": "enwiki.txt", "alinti": "It then passed through several other hands before being bought in London by Henri d'Orleans, Duke of Aumale.", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Eserin envanter numarası PE 305'tir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): PE 305", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1620 (precision: decade)"}, "b": {"kaynak": "enwiki.txt", "alinti": "is a 1625-1632 painting by Nicolas Poussin"}},
+  {"konu": "siparişin kesinliği", "a": {"kaynak": "wikidata.txt", "alinti": "commissioned by (P88): Vincenzo Giustiniani (Q1396468)"}, "b": {"kaynak": "enwiki.txt", "alinti": "It was probably commissioned by the Roman collector Vincenzo Giustiniani"}}
+ ],
+ "bulunamadi": [
+  "kompozisyon: kaynakta kompozisyon, ışık, renk veya figür yerleşimi betimlemesi yok",
+  "hikaye: kaynakta katliamın İncil anlatısına dair ayrıntı yok; yalnız konu adı ve siparişin anısı belirtiliyor",
+  "anlam: kaynakta simge yorumu veya ikonografi çözümlemesi yok; yalnız tür ve akım sınıflaması var",
+  "gorunen: kaynakta ayrıntılı görsel betimleme yok; betimlenenler wikidata depicts satırlarından alındı"
+ ]
+}
