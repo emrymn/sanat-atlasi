@@ -5,7 +5,7 @@
 //  - Öğren'de kanıt olarak YALNIZ durum: 'dogrulandi' olan kanit_adaylari çıkar; 'yanlis', 'belirsiz' ve 'bakilmadi'
 //    hiçbir plana girmez. genel_adaylar (yine yalnız doğrulanmışlar) kanıt değil, maddeyi açıklayan metindir.
 //  - Doğrulanmış kanıtı olmayan madde eser göstermeden, yalnız metinle anlatılır (kanitlar boş döner).
-//  - Gör verisi olmayan derste Gör adımı yoktur (ders üç adım); yürüyüş uydurulmaz.
+//  - Gör verisi olmayan derste Gör adımı yoktur (ders iki adım); yürüyüş uydurulmaz.
 import { DERS_ADIMLARI } from './ders.js';
 
 export const GOR_ESER = 3; // Gör: derste yürünen en çok eser (kaynak listesi öncelik sırasında: önce kurs, sonra rehberli)
@@ -31,7 +31,7 @@ export function gorPlani(ders, yuruyus, adet = GOR_ESER) {
   return { eserler, toplam: eserler.reduce((t, e) => t + e.kayit.noktalar.length, 0) };
 }
 
-// Dersin var olan adımları: Gör planı boşsa üç adım
+// Dersin var olan adımları: Gör planı boşsa iki adım (Öğren, Ayırt et)
 export function dersAdimlari(ders, yuruyus) {
   return gorPlani(ders, yuruyus).eserler.length ? DERS_ADIMLARI : DERS_ADIMLARI.filter((a) => a !== 'gor');
 }
@@ -87,13 +87,6 @@ export function eserEslestir(eserler, sid, ref) {
     (baslik && gorselli.find((e) => e.baslik === baslik || e.ad === baslik)) ||
     null
   );
-}
-
-// Sına: soru sayısı sanatçı sayısına göre (tek sanatçılı derste kısa; kalabalık derste herkes en az bir kez)
-export function sinaSoruSayisi(n) {
-  if (n <= 0) return 0;
-  if (n === 1) return 4;
-  return Math.max(6, Math.min(12, n));
 }
 
 // Adımın ilerlemesi: görülen / toplam (0–1)

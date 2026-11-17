@@ -1,23 +1,25 @@
-// Çalış · Ders düzeni (1.79.0 hazırlığı): her akım bir ders, dört adım: Gör → Öğren → Ayırt et → Sına.
+// Çalış · Ders düzeni (1.79.0 hazırlığı): her akım bir ders, üç adım: Gör → Öğren → Ayırt et.
+// İş 191 (Emre: "sına olmasın … dersi bitirmeyi bir ön koşul olarak değiştirelim, sına kısmı yerine de haritaya geçin"):
+// Sına adımı kalktı; dönemin sınavı haritadaki duraklardır. Ders bitince o dönemin harita durakları açılır
+// (js/bolum.js bolumDurumlari, `dersBitti`).
 // Saf mantık (birim testli; ekran yok). Ekranlar bunun üstüne kurulur; adımların içeriği data/ders_kaynaklari.json'dan
 // (scripts/ders/kaynaklar.mjs). Tasarım: https://claude.ai/artifact/VFJEDsgn6e7278NmuBgsYF
 //
-// Kayıt: ilerleme.dersler[akım adı] = { gor: { i, t }, ogren: { i, t }, ayirt: { i, t }, sina: { i, t } }
-//   i: adımın ilerlemesi 0–1 (görülen nokta / madde / ikili oranı ya da Sına'nın en iyi doğru oranı; hiç düşmez)
+// Kayıt: ilerleme.dersler[akım adı] = { gor: { i, t }, ogren: { i, t }, ayirt: { i, t } }
+//   i: adımın ilerlemesi 0–1 (görülen nokta / madde / ikili oranı; hiç düşmez)
 //   t: adımın ilk bittiği gün (YYYY-MM-DD) ya da yok
-// Bir adım i ≥ esiği olunca biter (Sına için SINA_GECME, ötekiler için 1). Adımlar sırayla önerilir ama kilitli
-// değildir: kullanıcı istediği adımı açabilir (ders düzeni öğretmek içindir, sınav kapısı değil).
+// Bir adım i = 1 olunca biter. Adımlar sırayla önerilir ama kilitli değildir: kullanıcı istediği adımı açabilir.
+// Eski kayıtlardaki `sina` alanı doğrulamada atılır.
 import { akimAdi } from './birlesme.js';
 
-export const DERS_ADIMLARI = ['gor', 'ogren', 'ayirt', 'sina'];
-export const ADIM_ADLARI = { gor: 'Gör', ogren: 'Öğren', ayirt: 'Ayırt et', sina: 'Sına' };
-export const SINA_GECME = 0.75; // haritadaki bölüm geçme sınırıyla aynı (js/bolum.js BOLUM_GECME)
+export const DERS_ADIMLARI = ['gor', 'ogren', 'ayirt'];
+export const ADIM_ADLARI = { gor: 'Gör', ogren: 'Öğren', ayirt: 'Ayırt et' };
 
 const TARIH = /^\d{4}-\d{2}-\d{2}$/;
-const esik = (adim) => (adim === 'sina' ? SINA_GECME : 1);
+const esik = () => 1;
 const sinirla = (x) => Math.min(1, Math.max(0, Math.round(x * 1000) / 1000));
 
-// Bir akımın kaydı (yoksa boş adımlar); her zaman dört adım döner
+// Bir akımın kaydı (yoksa boş adımlar); her zaman üç adım döner
 export function dersKaydi(ilerleme, akim) {
   const k = ilerleme && ilerleme.dersler && Object.hasOwn(ilerleme.dersler, akim) ? ilerleme.dersler[akim] : null;
   return Object.fromEntries(DERS_ADIMLARI.map((a) => [a, { i: (k && k[a] && k[a].i) || 0, t: (k && k[a] && k[a].t) || null }]));
@@ -40,7 +42,7 @@ export function adimIsle(ilerleme, akim, adim, oran, bugun) {
 
 // Ekrandaki durum: her adımın ilerlemesi, sıradaki (ilk bitmemiş) adım, biten adım sayısı.
 // adimlar (1.79.0): dersin var olan adımları. Gör verisi olmayan derste (Dada, Sürrealizm, Savaş sonrası figürasyon)
-// ['ogren', 'ayirt', 'sina'] verilir: ders üç adımla gösterilir ve üç adımla biter. Verilmezse dört adım.
+// ['ogren', 'ayirt'] verilir: ders iki adımla gösterilir ve iki adımla biter. Verilmezse üç adım.
 export function dersDurumu(kayit, adimlar = DERS_ADIMLARI) {
   const liste = DERS_ADIMLARI.filter((a) => adimlar.includes(a));
   const durumlar = liste.map((a) => ({ adim: a, ad: ADIM_ADLARI[a], i: kayit[a].i, bitti: adimBittiMi(kayit, a) }));
@@ -51,7 +53,7 @@ export function dersDurumu(kayit, adimlar = DERS_ADIMLARI) {
 
 // "Bugünün dersi": Yolculuk'taki "Buradasın" durağının akımı (dersi bitmemişse); yoksa dönem sırasıyla ilk bitmemiş açık
 // akım; hepsi bittiyse null. acikAkimlar: kronolojik sırayla açık akım adları. adimlar: (akım) => o dersin adımları
-// (verilmezse her ders dört adım).
+// (verilmezse her ders üç adım).
 export function bugununDersi({ acikAkimlar, ilerleme, yolculukAkimi = null, adimlar = null }) {
   const bitmedi = (ad) => !dersDurumu(dersKaydi(ilerleme, ad), adimlar ? adimlar(ad) : DERS_ADIMLARI).bitti;
   if (yolculukAkimi && acikAkimlar.includes(yolculukAkimi) && bitmedi(yolculukAkimi)) return yolculukAkimi;

@@ -21993,3 +21993,53 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
   background: var(--ink);
   color: var(--bg);
 }
+
+/* ===== İş 191 · Sına'nın yerinde "Haritaya geç": ders bitmeden kapalı (soluk, kilitli), bitince haritaya götürür ===== */
+.ders-adim-satir.kapali,
+.ders-adim.kapali {
+  opacity: 0.55;
+}
+.ders-adim-satir.kapali .ders-halka,
+.ders-adim.kapali .ders-halka {
+  border-style: dashed;
+}
+
+/* ===== İş 191 · Bugünün dersi kapağında yakınlaşma (Emre: "animasyonu buraya ekleyecektin"): dersin resmi yavaşça
+   ayrıntıdan ayrıntıya yakınlaşıp uzaklaşır (eski Gör düğmesindeki gor-yuru'nun yumuşak hâli; yazı okunur kalsın diye
+   en çok 1,9 kat). "Bugünün dersi" etiketi resmin üstünde açık renkte (paletin rengi resimde kayboluyordu). ===== */
+#uygulama .ders-bugun-kapak {
+  overflow: hidden;
+}
+#uygulama .ders-bugun-kapak .ders-kapak-resim img {
+  transform-origin: 50% 40%;
+  animation: kapak-yuru 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+@keyframes kapak-yuru {
+  0%,
+  8%,
+  50%,
+  58%,
+  100% {
+    transform: none;
+  }
+  22%,
+  38% {
+    transform: translate(-10%, 6%) scale(1.8);
+  }
+  72%,
+  90% {
+    transform: translate(14%, -4%) scale(1.9);
+  }
+}
+#uygulama .ders-bugun-yazi .ders-etiket {
+  color: rgba(244, 240, 232, 0.85);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+@media (prefers-reduced-motion: reduce) {
+  #uygulama .ders-bugun-kapak .ders-kapak-resim img {
+    animation: none;
+  }
+}
+:root[data-hareket='kapali'] #uygulama .ders-bugun-kapak .ders-kapak-resim img {
+  animation: none;
+}
