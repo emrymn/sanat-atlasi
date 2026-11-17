@@ -1,0 +1,44 @@
+{
+ "anahtar": "Q1527541",
+ "baslik_tr": "İsa'nın Doğuşu",
+ "kunye": {
+  "sanatci": {"deger": "Antonio da Correggio", "kaynak": "wikidata.txt", "alinti": "creator (P170): Antonio da Correggio (Q8457)"},
+  "tarih": {"deger": "yaklaşık 1529–1530", "kaynak": "enwiki.txt", "alinti": "finished around 1529–1530", "ihtiyat": true},
+  "teknik": {"deger": "kavak pano üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955) made from material (P186): poplar panel (Q106857865)"},
+  "olcu": {"deger": "2565 × 1880 mm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 2565 millimetre width (P2049): 1880 millimetre", "ihtiyat": false},
+  "yer": {"deger": "Gemäldegalerie Alte Meister, Dresden", "kaynak": "enwiki.txt", "alinti": "It is now in the Gemäldegalerie Alte Meister, Dresden, Germany."}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Eserin ana konusu çobanların tapınmasıdır.", "kaynak": "wikidata.txt", "alinti": "main subject (P921): adoration of the shepherds (Q1029715)", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Eser, Çocuk İsa'yı betimler.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Christ Child (Q942467)", "ihtiyat": false},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Tablo, Noel'i betimler.", "kaynak": "wikidata.txt", "alinti": "depicts (P180): Christmas (Q19809)", "ihtiyat": false},
+  {"id": "C04", "bolum": "gorunen", "iddia": "Sahne, Meryem'in kollarıyla çevrili Çocuk'un etrafında döner.", "kaynak": "enwiki.txt", "alinti": "The scene pivots around the Child, surrounded by Mary's arms", "ihtiyat": false},
+  {"id": "C05", "bolum": "gorunen", "iddia": "Resmin solunda bir grup çoban yer alır.", "kaynak": "enwiki.txt", "alinti": "with a group of shepherds on the left", "ihtiyat": false},
+  {"id": "C06", "bolum": "gorunen", "iddia": "Çobanlar arasındaki sakallı figür, Madonna of St Joseph'taki (yaklaşık 1523) Jerome ile aynı pozda betimlenmiştir.", "kaynak": "enwiki.txt", "alinti": "with a group of shepherds on the left, of which the bearded figure is portrayed in the same position of Jerome in the Madonna of St Joseph (c. 1523)", "ihtiyat": true},
+  {"id": "C07", "bolum": "gorunen", "iddia": "Sağda, geleneksel presepe hayvanları ve Aziz Joseph bulunur.", "kaynak": "enwiki.txt", "alinti": "On the right are the traditional presepe animals and St. Joseph.", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Sol üst bölümde, Correggio'nun Parma Katedrali kubbesindeki ardite pozları anımsatan birkaç melek yer alır.", "kaynak": "enwiki.txt", "alinti": "The upper left part features several angels reminiscent the ardite positions in Correggio's dome of the Cathedral of Parma, executed in the same years.", "ihtiyat": false},
+  {"id": "C09", "bolum": "kompozisyon", "iddia": "Eserde ışık, chiaroscuro işlenişiyle ele alınmıştır.", "kaynak": "enwiki.txt", "alinti": "produced an outstanding result in the Chiaroscuro treatment of light", "ihtiyat": false},
+  {"id": "C10", "bolum": "kompozisyon", "iddia": "Sanatçı, Titian'ın bir dizi ünlü eserinin açtığı yolu izlemiştir.", "kaynak": "enwiki.txt", "alinti": "following the trail blazed by a number of celebrated works by Titian", "ihtiyat": false},
+  {"id": "C11", "bolum": "anlam", "iddia": "Sahne, bütünüyle 'à la chandell' (mum ışığı) olarak yorumlanmıştır.", "kaynak": "enwiki.txt", "alinti": "interpreted a scene that is fully 'à la chandell' (\"of the candle\")", "ihtiyat": true},
+  {"id": "C12", "bolum": "anlam", "iddia": "Eser, Reggio Emilia'daki San Prospero kilisesinde bulunan aile şapeli için sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "for the family chapel in the church of San Prospero of Reggio Emilia", "ihtiyat": false},
+  {"id": "C13", "bolum": "onem", "iddia": "Eser, Ekim 1522'de Alberto Pratoneri tarafından Correggio'ya sipariş edilmiştir.", "kaynak": "enwiki.txt", "alinti": "The work was commissioned from Correggio in October 1522 by Alberto Pratoneri", "ihtiyat": false},
+  {"id": "C14", "bolum": "onem", "iddia": "Tablo 1530'da şapele yerleştirilmiştir.", "kaynak": "enwiki.txt", "alinti": "it was placed in the chapel in 1530", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Küçük bir kutsala saygısızlık sayılan olayda tablo, 1640'ta Dük Francesco I d'Este tarafından kaçırılıp özel galerisine götürülmüştür.", "kaynak": "enwiki.txt", "alinti": "In a what was considered a minor sacrilege, the painting was absconded in 1640 by Duke Francesco I d'Este and taken to his private gallery", "ihtiyat": true},
+  {"id": "C16", "bolum": "onem", "iddia": "Tablo 1746'da Dresden'e taşınmıştır.", "kaynak": "enwiki.txt", "alinti": "it was moved to Dresden in 1746", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Eser, gelecekteki Lombard ışık etkileri araştırmalarına yol göstermiştir.", "kaynak": "enwiki.txt", "alinti": "This work pointed the way toward the future Lombard investigation of luministic effects", "ihtiyat": false},
+  {"id": "C18", "bolum": "onem", "iddia": "Camillo Procaccini, Luca Cambiasi, Guido Reni ve Domenichino ile daha sonra Barocci ve Maratta, eseri model olarak kullanmıştır.", "kaynak": "enwiki.txt", "alinti": "was used as a model by such painters as Camillo Procaccini, Luca Cambiasi, Guido Reni and Domenichino, and even later on, by Barocci and Maratta", "ihtiyat": false},
+  {"id": "C19", "bolum": "onem", "iddia": "Tablonun 1724 tarihli bir kopyası, Strasbourg'daki Palais Rohan'ın şapelinde asılıdır.", "kaynak": "enwiki.txt", "alinti": "A 1724 copy of the painting hangs in the chapel of Palais Rohan, Strasbourg.", "ihtiyat": false},
+  {"id": "C20", "bolum": "onem", "iddia": "Eser, Staatliche Kunstsammlungen Dresden koleksiyonunda yer alır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Staatliche Kunstsammlungen Dresden (Q653002)", "ihtiyat": false},
+  {"id": "C21", "bolum": "onem", "iddia": "Eserin sahipleri arasında Polonyalı Augustus III bulunur.", "kaynak": "wikidata.txt", "alinti": "owned by (P127): Augustus III of Poland (Q53438)", "ihtiyat": false},
+  {"id": "C22", "bolum": "onem", "iddia": "Tablonun envanter numarası Gal.-Nr. 152'dir.", "kaynak": "wikidata.txt", "alinti": "inventory number (P217): Gal.-Nr. 152", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1529 (precision: century) [sourcing circumstances: circa (Q5727902); start time: 1528; end time: 1530]"}, "b": {"kaynak": "enwiki.txt", "alinti": "finished around 1529–1530"}},
+  {"konu": "sahiplik (Este dükü)", "a": {"kaynak": "wikidata.txt", "alinti": "owned by (P127): Francesco III d'Este, Duke of Modena (Q506514)"}, "b": {"kaynak": "enwiki.txt", "alinti": "the painting was absconded in 1640 by Duke Francesco I d'Este"}}
+ ],
+ "bulunamadi": [
+  "hikaye: kaynakta olayın İncil'deki bölümü ve anlatının öncesi/sonrası yok",
+  "anlam: simge yorumu ve modelin kimliği kaynakta yok",
+  "kompozisyon: alt çizim veya restorasyon bulgusu kaynakta yok"
+ ]
+}

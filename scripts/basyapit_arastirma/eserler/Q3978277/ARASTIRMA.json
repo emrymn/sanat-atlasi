@@ -1,0 +1,37 @@
+{
+ "anahtar": "Q3978277",
+ "baslik_tr": "Susanna ve Yaşlılar",
+ "kunye": {
+  "sanatci": {"deger": "Jacopo Tintoretto", "kaynak": "wikidata.txt", "alinti": "creator (P170): Jacopo Tintoretto (Q9319)"},
+  "tarih": {"deger": "yaklaşık 1555", "kaynak": "wikidata.txt", "alinti": "inception (P571): 1555 (precision: decade) [sourcing circumstances: circa (Q5727902)]", "ihtiyat": true},
+  "teknik": {"deger": "tuval üzerine yağlıboya", "kaynak": "wikidata.txt", "alinti": "made from material (P186): oil paint (Q296955)\nmade from material (P186): canvas (Q12321255)"},
+  "olcu": {"deger": "146 × 193.6 cm", "kaynak": "wikidata.txt", "alinti": "height (P2048): 146 centimetre\nwidth (P2049): 193.6 centimetre", "ihtiyat": false},
+  "yer": {"deger": "Kunsthistorisches Museum", "kaynak": "wikidata.txt", "alinti": "location (P276): Kunsthistorisches Museum (Q95569)"}
+ },
+ "iddialar": [
+  {"id": "C01", "bolum": "hikaye", "iddia": "Tablo, Daniel Kitabı'ndaki Susanna öyküsünün bir sahnesini betimler.", "kaynak": "enwiki.txt", "alinti": "depicts a scene from the biblical episode of Susanna, from the Book of Daniel.", "ihtiyat": false},
+  {"id": "C02", "bolum": "hikaye", "iddia": "Biblical öyküye göre genç ve evli bir Yahudi kadın olan Susanna her gün bahçesindeki havuzda yıkanırdı.", "kaynak": "enwiki.txt", "alinti": "According to the biblical story, a young married Jewish woman named Susanna bathed in a pool in her garden every day.", "ihtiyat": true},
+  {"id": "C03", "bolum": "hikaye", "iddia": "Susanna teklifi reddetti; iki yaşlı onu genç bir adamla zina yapmakla suçlayarak alenen ihbar etti.", "kaynak": "enwiki.txt", "alinti": "Susanna rejected their proposal. The two prominent elders of the community then publicly denounced her, falsely accusing her of committing adultery with a young man.", "ihtiyat": false},
+  {"id": "C04", "bolum": "hikaye", "iddia": "Eski Yahudi hukukuna göre zina ölümle cezalandırılırdı ve herkes iki yargıcın öyküsüne inanınca Susanna ölüme mahkûm edildi.", "kaynak": "enwiki.txt", "alinti": "According to ancient Jewish law, adultery was punishable by death, and Susanna was condemned to death after everyone believed the two judges' story.", "ihtiyat": true},
+  {"id": "C05", "bolum": "hikaye", "iddia": "Daniel, yargıçları Susanna'yı nasıl keşfettikleri, genç adamın nasıl göründüğü ve gizlice nerede buluştukları konusunda çapraz sorguya çekti.", "kaynak": "enwiki.txt", "alinti": "Daniel then cross-examined the judges on how they had discovered Susanna, what the young man looked like, where they secretly met and so on.", "ihtiyat": false},
+  {"id": "C06", "bolum": "hikaye", "iddia": "Susanna'nın zina ettiği ağaç sorulduğunda iki yaşlı çok farklı yanıtlar verip farklı ağaç türleri saydı.", "kaynak": "enwiki.txt", "alinti": "When asked under which tree Susanna had committed adultery, the two elders gave very different answers and named different kinds of trees.", "ihtiyat": false},
+  {"id": "C07", "bolum": "hikaye", "iddia": "Daniel, Susanna'nın masumiyetini kanıtladı; Susanna serbest bırakılırken yaşlılar mahkûm edildi.", "kaynak": "enwiki.txt", "alinti": "Daniel proved Susanna was innocent, and she was freed while the elders were condemned.", "ihtiyat": false},
+  {"id": "C08", "bolum": "gorunen", "iddia": "Susanna bahçede bir havuzun yanında, ağaca yaslanmış oturur; önünde sık bir gül çardağı ve çardağa yaslı bir ayna vardır.", "kaynak": "enwiki.txt", "alinti": "The painting shows a naked Susanna sitting in a garden beside a pool, leaning against a tree, and facing a dense rose trellis, against which leans a mirror.", "ihtiyat": false},
+  {"id": "C09", "bolum": "gorunen", "iddia": "Susanna, aynadaki yansımasına dalmış oturur ve davetsiz misafirlerden habersizdir.", "kaynak": "enwiki.txt", "alinti": "Susanna is sitting absorbed by her reflection in the mirror and unaware of the intruders.", "ihtiyat": false},
+  {"id": "C10", "bolum": "gorunen", "iddia": "İki yaşlı adam, gül çardağının iki ucundan başlarını uzatıp onu izler.", "kaynak": "enwiki.txt", "alinti": "Two elderly men peer around either end of the rose trellis to watch her.", "ihtiyat": false},
+  {"id": "C11", "bolum": "gorunen", "iddia": "Susanna'nın etrafında yerde beyaz ipek bir şal, inciler, mücevherler, bir tarak ve gümüş eşyalar bulunur.", "kaynak": "enwiki.txt", "alinti": "Around her on the ground are several bright objects including a white silk shawl, pearls, jewelry, a comb, and silverware, which together form a kind of still life.", "ihtiyat": false},
+  {"id": "C12", "bolum": "kompozisyon", "iddia": "Yerdeki parlak nesneler birlikte bir tür natürmort oluşturur.", "kaynak": "enwiki.txt", "alinti": "Around her on the ground are several bright objects including a white silk shawl, pearls, jewelry, a comb, and silverware, which together form a kind of still life.", "ihtiyat": false},
+  {"id": "C13", "bolum": "kompozisyon", "iddia": "Eser Maniyerizm akımıyla sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "movement (P135): Mannerism (Q131808)", "ihtiyat": false},
+  {"id": "C14", "bolum": "anlam", "iddia": "Eser dinî sanat türünde sınıflandırılır.", "kaynak": "wikidata.txt", "alinti": "genre (P136): religious art (Q2864737)", "ihtiyat": false},
+  {"id": "C15", "bolum": "onem", "iddia": "Susanna ve Yaşlılar konusu geç Rönesans sanatında popüler bir konuydu.", "kaynak": "enwiki.txt", "alinti": "Susanna and the Elders was a popular subject in late Renaissance art.", "ihtiyat": false},
+  {"id": "C16", "bolum": "onem", "iddia": "Bu tablo, sanatçının atölyesinden aynı konuda üretilen birkaç eserden biridir.", "kaynak": "enwiki.txt", "alinti": "Tintoretto's Susanna and the Elders, from 1555/56, is one of several works on the same subject from the artist's studio.", "ihtiyat": false},
+  {"id": "C17", "bolum": "onem", "iddia": "Eser, 1712'den beri Kunsthistorisches Museum koleksiyonunda yer alır.", "kaynak": "wikidata.txt", "alinti": "collection (P195): Kunsthistorisches Museum (Q95569) [start time: 1712]", "ihtiyat": false}
+ ],
+ "celiskiler": [
+  {"konu": "tarih", "a": {"kaynak": "wikidata.txt", "alinti": "inception (P571): 1555 (precision: decade) [sourcing circumstances: circa (Q5727902)]"}, "b": {"kaynak": "enwiki.txt", "alinti": "Susanna and the Elders (c. 1555–56) depicts a scene from the biblical episode of Susanna, from the Book of Daniel."}}
+ ],
+ "bulunamadi": [
+  "anlam: kaynakta simge yorumu, model kimliği ve sipariş amacı yok; yalnız tür sınıflaması verilebildi",
+  "kompozisyon: ışık, renk paleti, alt çizim ve restorasyonda görülenler hakkında kaynakta bilgi yok"
+ ]
+}
