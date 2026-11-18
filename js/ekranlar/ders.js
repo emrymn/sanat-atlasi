@@ -12,7 +12,8 @@ import { akimDurumlari } from '../kilit.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, yuruyusAdresleri } from '../gorsel.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
-import { gezin } from '../gecis.js';
+import { gezin, hareketAz } from '../gecis.js';
+import { kameraYolu, kameraKareleri, donusum, donusumOku, gorusAlani, durusa } from '../kamera.js';
 import { ikon, roma } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
 import { turAltYazisi } from '../oturum.js';
@@ -506,7 +507,7 @@ export async function gorAdimi(akim) {
   if (konum > 0 && kareler[konum].ni === 0) konum--; // eserin ilk ayrıntısındaysa önce eserin tamamı
   st = { akim, adim: 'gor', b, kareler, konum: Math.max(0, konum), gorulen: Math.round(b.kayit.gor.i * b.gor.toplam), yuklenen: -1, boyut: null };
   ciz(`<section class="ders-gor" data-test="ders-gor">
-      <div class="ders-gor-sahne" data-gor-sahne><img alt="" decoding="async" data-gor-resim></div>
+      <div class="ders-gor-sahne" data-gor-sahne></div>
       <span class="ders-gor-perde" aria-hidden="true"></span>
       ${adimUst(b, 'gor', 'Gör')}
       <div class="ders-gor-panel" data-gor-panel>
@@ -529,64 +530,126 @@ function gorKare() {
   const k = st.kareler[st.konum];
   const es = st.b.gor.eserler[k.ei];
   const kayit = es.kayit;
-  const img = kok.querySelector('[data-gor-resim]');
   const eserAdi = [kisaAd(es.sanatci), yuruyusEserAdi(es.sanatci, kayit), kayit.yil].filter(Boolean).join(' · ');
-  if (st.yuklenen !== k.ei) {
-    // yeni eser: 1280'lik kopya (js/gorsel.js yuruyusAdresleri; Bugün'deki yürüyüşle aynı yol), varsa en büyüğü arkadan
-    st.yuklenen = k.ei;
-    st.boyut = null;
-    const adres = yuruyusAdresleri(kayit.gorsel, kayit.buyuk);
-    kok.classList.remove('hazir');
-    img.alt = eserAdi;
-    img.onload = () => {
-      if (!st || st.adim !== 'gor' || st.yuklenen !== k.ei) return;
-      st.boyut = { w: img.naturalWidth, h: img.naturalHeight };
-      gorKamera(true);
-      kok.classList.add('hazir');
-      if (adres.buyuk && img.dataset.buyuk !== adres.buyuk) {
-        const b = new Image();
-        b.onload = () => {
-          if (!img.isConnected || !st || st.yuklenen !== k.ei) return;
-          img.dataset.buyuk = adres.buyuk;
-          img.src = adres.buyuk;
-        };
-        b.src = adres.buyuk;
-      }
-    };
-    img.onerror = () => kok.classList.add('hazir', 'resimsiz');
-    delete img.dataset.buyuk;
-    img.src = adres.kucuk;
-  }
+  const ilk = st.yuklenen < 0;
+  if (st.yuklenen !== k.ei) gorResmiYukle(kok, k.ei, eserAdi);
   const n = k.ni >= 0 ? kayit.noktalar[k.ni] : null;
   const adet = kayit.noktalar.length;
   kok.dataset.kare = String(st.konum);
   kok.dataset.nokta = String(k.ni);
-  // eserin tamamında ad başlıkta; üst satırda yalnız sanatçı ve yıl
-  const ustSatir = n ? eserAdi : [kisaAd(es.sanatci), kayit.yil].filter(Boolean).join(' · ');
-  kok.querySelector('[data-gor-eser]').textContent = `${ustSatir}${st.b.gor.eserler.length > 1 ? ` · eser ${k.ei + 1} / ${st.b.gor.eserler.length}` : ''}`;
-  kok.querySelector('[data-gor-baslik]').textContent = n ? n.ad : yuruyusEserAdi(es.sanatci, kayit);
-  kok.querySelector('[data-gor-metin]').textContent = n ? n.metin : `Önce resmin bütününe bak. Sonra ${adet} ayrıntıya tek tek yaklaşacağız.`;
-  const noktalar = kok.querySelector('[data-gor-noktalar]');
-  noktalar.setAttribute('aria-label', n ? `Ayrıntı ${k.ni + 1} / ${adet}` : `${adet} ayrıntı`);
-  noktalar.innerHTML = kayit.noktalar.map((_, i) => `<i class="${i < k.ni ? 'gecti' : i === k.ni ? 'simdi' : ''}"></i>`).join('');
-  const son = st.konum === st.kareler.length - 1;
-  const eserSonu = !son && st.kareler[st.konum + 1].ei !== k.ei;
-  kok.querySelector('[data-gor-ileri]').textContent = son ? 'Gör’ü bitir' : !n ? 'Ayrıntılara bak' : eserSonu ? 'Sıradaki eser' : 'Sonraki ayrıntı';
-  kok.querySelector('[data-gor-geri]').hidden = st.konum === 0;
-  // panelin boyu metne göre değişir: kamera yeni boya göre kurulur
-  gorKamera(false);
+  const yaz = () => {
+    // eserin tamamında ad başlıkta; üst satırda yalnız sanatçı ve yıl
+    const ustSatir = n ? eserAdi : [kisaAd(es.sanatci), kayit.yil].filter(Boolean).join(' · ');
+    kok.querySelector('[data-gor-eser]').textContent = `${ustSatir}${st.b.gor.eserler.length > 1 ? ` · eser ${k.ei + 1} / ${st.b.gor.eserler.length}` : ''}`;
+    kok.querySelector('[data-gor-baslik]').textContent = n ? n.ad : yuruyusEserAdi(es.sanatci, kayit);
+    kok.querySelector('[data-gor-metin]').textContent = n ? n.metin : `Önce resmin bütününe bak. Sonra ${adet} ayrıntıya tek tek yaklaşacağız.`;
+    kok.querySelector('[data-gor-metin]').scrollTop = 0;
+    const noktalar = kok.querySelector('[data-gor-noktalar]');
+    noktalar.setAttribute('aria-label', n ? `Ayrıntı ${k.ni + 1} / ${adet}` : `${adet} ayrıntı`);
+    noktalar.innerHTML = kayit.noktalar.map((_, i) => `<i class="${i < k.ni ? 'gecti' : i === k.ni ? 'simdi' : ''}"></i>`).join('');
+    const son = st.konum === st.kareler.length - 1;
+    const eserSonu = !son && st.kareler[st.konum + 1].ei !== k.ei;
+    kok.querySelector('[data-gor-ileri]').textContent = son ? 'Gör’ü bitir' : !n ? 'Ayrıntılara bak' : eserSonu ? 'Sıradaki eser' : 'Sonraki ayrıntı';
+    kok.querySelector('[data-gor-geri]').hidden = st.konum === 0;
+  };
+  gorMetniDegistir(kok, yaz, ilk);
 }
 
-// Kamera: ayrıntı (ya da resmin tamamı) üst çubukla panel arasındaki alana oturur; resim o alanı hep kaplar
-function gorKamera(aninda) {
-  const kok = ekran.querySelector('.ders-gor');
-  if (!kok || !st || !st.boyut) return;
+// Metin geçişi (1.89.1): eski yazı kısa bir solmayla çekilir, kamera yola çıkar, yeni yazı hafifçe yükselerek gelir
+// (önce üst satır, sonra başlık, sonra metin). Panelin boyu yeni metne göre değiştiği için kamera, yazı değiştikten
+// sonra yeni boya göre kurulur. Hareket kapalıyken (ya da ilk karede) her şey anında.
+const GOR_PARCALAR = '[data-gor-eser], [data-gor-baslik], [data-gor-metin]';
+function gorMetniDegistir(kok, yaz, ilk) {
+  const parcalar = [...kok.querySelectorAll(GOR_PARCALAR)];
+  const no = (st.metinNo = (st.metinNo || 0) + 1);
+  parcalar.forEach((p) => p.getAnimations().forEach((a) => a.cancel()));
+  if (ilk || hareketAz() || typeof Element.prototype.animate !== 'function') {
+    yaz();
+    gorKamera(ilk || hareketAz());
+    return;
+  }
+  const cikis = parcalar.map((p) => p.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 150, easing: 'cubic-bezier(0.4, 0, 1, 1)', fill: 'forwards' }));
+  const devam = () => {
+    if (!st || st.adim !== 'gor' || st.metinNo !== no || !kok.isConnected) return;
+    yaz();
+    gorKamera(false);
+    cikis.forEach((a) => a.cancel());
+    parcalar.forEach((p, i) =>
+      p.animate(
+        [
+          { opacity: 0, transform: 'translateY(10px)' },
+          { opacity: 1, transform: 'none' },
+        ],
+        { duration: 520, delay: 120 + i * 70, easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)', fill: 'backwards' },
+      ),
+    );
+  };
+  Promise.all(cikis.map((a) => a.finished)).then(devam, () => {});
+}
+
+// Yeni eser: resim ayrı bir katmanda yüklenir; eski resim yeni resim gelene dek yerinde kalır, sonra ikisi çapraz
+// solar (arada karanlık bir boşluk ya da ani kesme olmaz). Yeni resim yerine hafifçe yaklaşarak oturur.
+function gorResmiYukle(kok, ei, eserAdi) {
+  const kayit = st.b.gor.eserler[ei].kayit;
+  st.yuklenen = ei;
+  st.boyut = null;
+  const sahne = kok.querySelector('[data-gor-sahne]');
+  const eski = sahne.querySelector('[data-gor-resim]');
+  if (eski && !eski.classList.contains('acik')) eski.remove(); // hiç görünmemiş katman beklemez
+  else if (eski) eski.removeAttribute('data-gor-resim');
+  const img = document.createElement('img');
+  img.alt = eserAdi;
+  img.decoding = 'async';
+  img.setAttribute('data-gor-resim', '');
+  sahne.appendChild(img);
+  // 1280'lik kopya (js/gorsel.js yuruyusAdresleri; Bugün'deki yürüyüşle aynı yol), varsa en büyüğü arkadan
+  const adres = yuruyusAdresleri(kayit.gorsel, kayit.buyuk);
+  img.onload = () => {
+    img.onload = null; // büyük kopya gelince yeniden çalışmasın: ölçü ilk kopyanınki kalır, kamera kesilmez
+    if (!st || st.adim !== 'gor' || st.yuklenen !== ei || !img.isConnected) return;
+    st.boyut = { w: img.naturalWidth, h: img.naturalHeight };
+    // resmin CSS boyu sabit: büyük kopya aynı alanı daha keskin doldurur
+    img.style.width = `${st.boyut.w}px`;
+    img.style.height = `${st.boyut.h}px`;
+    const hedef = gorHedef(kok);
+    if (hedef && !hareketAz() && typeof img.animate === 'function') {
+      // yerine oturma: biraz yakından başlar, yavaşça geri çekilir
+      const g = gorusAlani(hedef.p, hedef.W, hedef.orta);
+      const bas = durusa({ ...g, w: g.w / 1.06 }, hedef.W, hedef.orta);
+      img.style.transform = donusum(hedef.p);
+      img.animate([{ transform: donusum(bas) }, { transform: donusum(hedef.p) }], { duration: 1600, easing: 'cubic-bezier(0.15, 0.6, 0.25, 1)' });
+      kok.dataset.olcek = hedef.olcek;
+    } else gorKamera(true);
+    kok.classList.remove('resimsiz');
+    kok.classList.add('hazir');
+    img.classList.add('acik');
+    for (const e of sahne.querySelectorAll('img:not([data-gor-resim])')) {
+      e.classList.add('gidiyor');
+      setTimeout(() => e.remove(), hareketAz() ? 0 : 1100);
+    }
+    if (adres.buyuk) {
+      const b = new Image();
+      b.onload = () => {
+        if (!img.isConnected) return;
+        img.dataset.buyuk = adres.buyuk;
+        img.src = adres.buyuk;
+      };
+      b.src = adres.buyuk;
+    }
+  };
+  img.onerror = () => {
+    if (st && st.yuklenen === ei) kok.classList.add('hazir', 'resimsiz');
+  };
+  img.src = adres.kucuk;
+}
+
+// Kameranın hedefi: ayrıntı (ya da resmin tamamı) üst çubukla panel arasındaki alana oturur; resim o alanı hep kaplar
+function gorHedef(kok) {
+  if (!st || !st.boyut) return null;
   const k = st.kareler[st.konum];
   const kayit = st.b.gor.eserler[k.ei].kayit;
-  const img = kok.querySelector('[data-gor-resim]');
   const sahne = kok.querySelector('[data-gor-sahne]').getBoundingClientRect();
   const W = sahne.width;
-  const H = sahne.height;
   const ust = kok.querySelector('.ders-ust').getBoundingClientRect().bottom - sahne.top + 8;
   const alt = kok.querySelector('[data-gor-panel]').getBoundingClientRect().top - sahne.top - 8;
   const { w: IW, h: IH } = st.boyut;
@@ -610,9 +673,27 @@ function gorKamera(aninda) {
   const sinirla = (v, en, enCok) => (en > enCok ? (en + enCok) / 2 : Math.min(enCok, Math.max(en, v)));
   const tx = sinirla(W / 2 - cx * s, W - IW * s, 0);
   const ty = sinirla((ust + alt) / 2 - cy * s, alt - IH * s, ust);
-  img.style.transition = aninda ? 'none' : '';
-  img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${s.toFixed(5)})`;
-  kok.dataset.olcek = (s / sigdir).toFixed(2);
+  return { p: { tx, ty, s }, W, orta: (ust + alt) / 2, olcek: (s / sigdir).toFixed(2) };
+}
+
+// Kamera hedefe gider: anında ya da o an bulunduğu yerden yumuşak yolla (js/kamera.js)
+function gorKamera(aninda) {
+  const kok = ekran.querySelector('.ders-gor');
+  if (!kok) return;
+  const hedef = gorHedef(kok);
+  if (!hedef) return;
+  const img = kok.querySelector('[data-gor-resim]');
+  kok.dataset.olcek = hedef.olcek;
+  const simdi = donusumOku(getComputedStyle(img).transform);
+  img.getAnimations().forEach((a) => a.cancel());
+  if (aninda || !simdi || hareketAz() || typeof img.animate !== 'function') {
+    img.style.transform = donusum(hedef.p);
+    return;
+  }
+  const yol = kameraYolu(simdi, hedef.p, hedef.W, hedef.orta);
+  img.style.transform = donusum(hedef.p);
+  if (yol.uzunluk < 0.002) return;
+  img.animate(kameraKareleri(yol), { duration: yol.sure, easing: 'linear' });
 }
 
 function gorIleri() {

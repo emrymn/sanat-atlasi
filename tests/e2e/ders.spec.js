@@ -471,3 +471,42 @@ test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör�
   await page.goto('./#/pekistir');
   expect(await kontrast()).toBeGreaterThanOrEqual(4.5);
 });
+
+test('1.89.1 · Gör geçişleri yumuşak: kamera yolda süzülür, yazı solup gelir, eserler çapraz solar', async ({ page, context }) => {
+  await context.addInitScript(() => (window.__atlasGecis = true));
+  await page.goto(`${GOTIK}/gor`);
+  const gor = page.locator('[data-test="ders-gor"]');
+  await expect(gor).toHaveClass(/hazir/);
+  await page.waitForTimeout(1800); // açılıştaki yerine oturma biter
+  const olcek = () => page.evaluate(() => new DOMMatrix(getComputedStyle(document.querySelector('[data-gor-resim]')).transform).a);
+  const bas = await olcek();
+  await page.locator('[data-test="gor-ileri"]').click();
+  // yazı önce çekilir (yeni metin hemen yazılmaz), sonra yerine gelir
+  const baslik = page.locator('[data-gor-baslik]');
+  expect(await baslik.evaluate((e) => e.getAnimations().length)).toBeGreaterThan(0);
+  const gotikEser = yuruyus[gotik.gor[0].sanatci];
+  await expect(baslik).toHaveText(gotikEser.noktalar[0].ad);
+  // kamera bir anda değil, birçok ara durakla yaklaşır
+  const ornekler = [];
+  for (let i = 0; i < 14; i++) {
+    ornekler.push(await olcek());
+    await page.waitForTimeout(70);
+  }
+  const hedef = await page.evaluate(() => {
+    const img = document.querySelector('[data-gor-resim]');
+    return new DOMMatrix(img.style.transform).a;
+  });
+  const ara = ornekler.filter((s) => s > bas * 1.01 && s < hedef * 0.99);
+  expect(ara.length).toBeGreaterThanOrEqual(3);
+  await expect.poll(olcek, { timeout: 3000 }).toBeCloseTo(hedef, 3);
+  // ilk eserin sonuna kadar git: sıradaki esere geçerken iki katman bir süre birlikte (çapraz solma)
+  const ileri = page.locator('[data-test="gor-ileri"]');
+  for (let i = 0; i < gotikEser.noktalar.length; i++) {
+    await ileri.click();
+    await page.waitForTimeout(250);
+  }
+  await expect(gor).toHaveAttribute('data-kare', String(gotikEser.noktalar.length + 1));
+  await expect.poll(() => page.locator('.ders-gor-sahne img').count()).toBe(2);
+  await expect.poll(() => page.locator('.ders-gor-sahne img').count(), { timeout: 4000 }).toBe(1);
+  await expect(page.locator('[data-gor-resim]')).toHaveClass(/acik/);
+});
