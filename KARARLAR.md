@@ -2713,3 +2713,20 @@ doğrudan girilirse önceden görülmemiş grupların sanatçılarıyla tanış�
   eserleri, Akım sayfası. Önceki düzendeki "1 · Tanış / 2 · Sınav" etiketleri, işaret halkaları, merdiven, madalyon ve yüz
   şeridi kalktı (TASARIM_DILI: numarasız, tek dolu düğme). Reddedilen yönler (tek liste, sıradaki iş, sekmeler, tablo ve
   yol, salonlar, kâğıt pencere, yaldız çerçeve, odak, asılı kart) tuvalde duruyor.
+
+## 1.89.1 · Gör adımında yumuşak geçişler
+Emre: "çalıştaki gör kısmında geçişler çok mekanik ve sert". Sertliğin kaynakları: (1) kamera tek bir CSS geçişiydi;
+konum ve ölçek ayrı ayrı değiştiği için resim yamuk bir yoldan kayıyor, her adımda aynı süre (0,9 s) ve aynı eğriyle
+duruyordu; (2) yazı bir anda değişiyordu; (3) yeni esere geçerken resim sönüp boş karanlıktan yenisi geliyordu;
+(4) büyük kopya yüklenince resmin doğal boyu değiştiği için `onload` yeniden çalışıp kamerayı anında yerine atıyordu
+(yolun ortasında sıçrama). Çözüm:
+- `js/kamera.js` (DOM'suz, birim testli): van Wijk ve Nuij'in yumuşak yakınlaşma yolu (d3'teki `interpolateZoom`
+  formülü, ρ = 1,15): uzak iki ayrıntı arasında kamera önce biraz geri çekilir, sonra yaklaşır. Süre yolun uzunluğuna
+  göre 0,75–1,9 s; eğri cubic-bezier(0.45, 0.05, 0.2, 1) (yavaş kalkış, uzun iniş). Yol 40 kareye örneklenip Web
+  Animations ile oynatılır (çizim iş parçacığında akar); yolda yeni bir dokunuş gelirse kamera bulunduğu yerden döner.
+- Yazı: üst satır, başlık ve metin 150 ms'de solar; yeni yazı yazılınca kamera yeni panel boyuna göre yola çıkar, yazı
+  10 px aşağıdan, sırayla (70 ms arayla) gelir.
+- Eserler arası: yeni resim ayrı katmanda yüklenir, eskisi yerinde bekler; sonra çapraz solarlar. Yeni resim 1,06 kat
+  yakından başlayıp yavaşça yerine oturur.
+- Resmin CSS boyu ilk kopyanın ölçüsüne sabitlenir; büyük kopya aynı alanı daha keskin doldurur.
+- Hareket "Kapalı" (ya da sistemde azaltılmış hareket) iken her şey eskisi gibi anında.
