@@ -187,6 +187,8 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
 
   // her şeyi sil, uygulamayı yeniden aç
   await page.evaluate(async () => {
+    // bekleyen IndexedDB yazımı (300 ms toplanır) önce biter; yoksa silmeden sonra sayfa kapanırken eski ilerlemeyi geri yazar
+    await (await import('./js/depo.js')).ilerlemeyiHemenYaz();
     localStorage.clear();
     await new Promise((r) => {
       const q = indexedDB.deleteDatabase('sanat-atlasi');

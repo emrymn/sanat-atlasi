@@ -343,6 +343,8 @@ test('yedekle → geri yükle: ders ilerlemesi korunur', async ({ page, context 
   expect(JSON.parse(yedek).ilerleme.dersler).toEqual(dersler);
   // her şeyi sil, uygulamayı yeniden aç
   await page.evaluate(async () => {
+    // bekleyen IndexedDB yazımı (300 ms toplanır) önce biter; yoksa silmeden sonra sayfa kapanırken eski ilerlemeyi geri yazar
+    await (await import('./js/depo.js')).ilerlemeyiHemenYaz();
     localStorage.clear();
     await new Promise((r) => {
       const q = indexedDB.deleteDatabase('sanat-atlasi');
