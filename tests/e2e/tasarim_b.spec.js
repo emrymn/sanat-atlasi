@@ -67,7 +67,9 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
   const pencere = page.locator('.harita-pencere-ic.hp2');
   await expect(pencere).toBeVisible();
   await expect(pencere.locator('.hp2-kapak img')).toHaveCount(1);
-  await expect(pencere.locator('[data-hp2-zemin] img')).toHaveCount(1);
+  await expect(pencere.locator('[data-test="hp-sinav"]')).toBeHidden();
+  await pencere.getByText('Seviyeler', { exact: true }).click();
+  await expect(pencere.locator('[data-test="hp-sinav"]')).toBeVisible();
   const satirlar = pencere.locator('[data-test="hp-sinav"] [data-test="harita-seviye"]');
   await expect(pencere.locator('[data-test="hp-tanis"] [data-test="harita-tanitim"], [data-test="hp-tanis"] [data-test="harita-tanitim-grup"]').first()).toBeVisible();
   await expect(satirlar).toHaveCount(3);

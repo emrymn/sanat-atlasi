@@ -663,6 +663,7 @@ function durakPenceresi(id) {
   const x = h && h.liste.find((y) => y.id === id);
   if (!x) return '';
   const bolge = bolgeBul(x.sira);
+  const sembol = h.harita.bolgeler.find((b) => b.id === bolge.id)?.duraklar.find((durak) => durak.id === id);
   const sanatcilar = x.sanatcilar.map((s) => d.harita.get(s)).filter(Boolean);
   const siradaki = siradakiSeviye(x);
   const gruplar = tanismaGruplari(x.sanatcilar);
@@ -735,16 +736,23 @@ function durakPenceresi(id) {
         ? `<a class="hp2-basla" href="#/pekistir/bolum/${x.id}/${siradaki}" data-test="harita-basla">${SEVIYE_AD[siradaki]}’${siradaki === 'orta' ? 'ya' : 'a'} başla</a>`
         : '';
   return `<div class="harita-pencere-ic hp2${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
-      <span class="hp2-zemin" data-hp2-zemin aria-hidden="true"></span>
       <span class="hp2-tutamak" aria-hidden="true"></span>
       <button class="harita-pencere-kapat hp2-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 16, 2.2)}</button>
-      ${sanatcilar.length ? `<span class="hp-kapak hp2-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"></span>` : ''}
-      <p class="hp2-ust">${kacis(bolge.ad)} · ${sanatcilar.length} sanatçı</p>
-      <h2 class="hp2-ad">${kacis(bolumAdi(x))}</h2>
-      ${x.acik ? yildizHtml(x.yildiz) : ''}
+      <header class="hp2-giris">
+        <span class="hp-kapak hp2-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"><img src="${resimAdresi(bolge.id, d.haritaVakti || vakit())}" alt=""></span>
+        ${sembol ? `<span class="hp2-muhur" aria-hidden="true"><img src="${nesneAdresi(bolge.id, sembol.sembolNo, h.tur)}" alt=""></span>` : ''}
+        <div class="hp2-levha">
+          <p class="hp2-ust">${kacis(bolge.ad)}</p>
+          <h2 class="hp2-ad">${kacis(bolumAdi(x))}</h2>
+          <p class="hp2-ozet">${sanatcilar.length} sanatçı <span aria-hidden="true">·</span> ${x.acik ? yildizHtml(x.yildiz) : `${ikon('kilit', 13, 1.8)} Kilitli durak`}</p>
+        </div>
+      </header>
       ${basla}
-      <ol class="hp2-liste" data-test="hp-tanis">${tanisSatirlari}</ol>
-      ${x.acik ? `<ol class="hp2-liste" data-test="hp-sinav">${seviyeSatirlari}${ortaSatirlari}${akimSatiri}</ol>` : `<ol class="hp2-liste">${akimSatiri}</ol>`}
+      <div class="hp2-bolmeler">
+        <details ${x.acik ? 'open' : ''}><summary><span class="hp2-isaret" aria-hidden="true">${ikon('firca', 19, 1.5)}</span>Sanatçılarla tanış</summary><ol class="hp2-liste" data-test="hp-tanis">${tanisSatirlari}</ol></details>
+        ${x.acik ? `<details><summary><span class="hp2-isaret" aria-hidden="true">${ikon('kitap', 18, 1.4)}</span>Seviyeler</summary><ol class="hp2-liste" data-test="hp-sinav">${seviyeSatirlari}${ortaSatirlari}</ol></details>` : ''}
+      </div>
+      <ol class="hp2-liste hp2-dip">${akimSatiri}</ol>
     </div>`;
 }
 
@@ -834,10 +842,7 @@ async function kapakDoldur(el) {
   const en = sirali[0];
   if (!en || !el.isConnected) return;
   if (el.classList.contains('hp2-kapak')) {
-    // 1.89 G2: kapak kendi oranında tek eser; pencerenin zemini aynı eserin bulanık kopyası
     el.innerHTML = en.html;
-    const zemin = el.closest('.hp2')?.querySelector('[data-hp2-zemin]');
-    if (zemin) zemin.innerHTML = en.html;
     el.classList.add('dolu');
     return;
   }
