@@ -20195,96 +20195,6 @@ html .parcali input:focus-visible + span {
   }
 }
 
-/* Çalış · Gör düğmesi */
-.gor-dugme {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  height: 136px;
-  margin: 0 -10px -10px;
-  padding: 0 14px 0 18px;
-  border: 1px solid rgba(var(--pirinc-rgb), 0.6);
-  border-radius: 16px;
-  background: #121110;
-  color: #ebe5da;
-  text-decoration: none;
-  overflow: hidden;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
-}
-.gor-dugme:active {
-  transform: scale(0.985);
-}
-.gor-dugme:focus-visible {
-  outline: 2px solid var(--ders-altin-yazi);
-  outline-offset: 3px;
-}
-.gor-dugme-resim {
-  position: absolute;
-  inset: 0;
-}
-.gor-dugme-resim img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: gor-yuru 11s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-}
-.gor-dugme::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(90deg, rgba(18, 17, 16, 0.9) 0%, rgba(18, 17, 16, 0.62) 40%, rgba(18, 17, 16, 0.05) 100%);
-}
-.gor-dugme-parilti {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(246, 227, 164, 0), rgba(246, 227, 164, 0.38), rgba(246, 227, 164, 0));
-  transform: translateX(-120px) skewX(-18deg);
-  animation: gor-parilti 5s ease-in-out infinite;
-}
-.gor-dugme-yazi {
-  position: relative;
-  z-index: 2;
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.gor-dugme-yazi b {
-  font: 500 23px/1.1 var(--serif);
-}
-.gor-dugme-yazi small {
-  font: 500 13px/1.3 var(--sans);
-  color: #dcbd7c;
-}
-.gor-dugme-ok {
-  position: relative;
-  z-index: 2;
-  flex: none;
-  width: 50px;
-  height: 50px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #c9a45c;
-  color: #121110;
-}
-.gor-dugme-ok::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1.5px solid #dcbd7c;
-  border-radius: 50%;
-  opacity: 0;
-  animation: gor-halka 2.2s ease-out infinite;
-}
-.gor-dugme-ok .ikon,
 .ders-tekrar-git .ikon {
   animation: gor-durt 1.6s ease-in-out infinite;
 }
@@ -20411,10 +20321,6 @@ html .parcali input:focus-visible + span {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .gor-dugme-resim img,
-  .gor-dugme-parilti,
-  .gor-dugme-ok::after,
-  .gor-dugme-ok .ikon,
   .ders-tekrar-git .ikon,
   .ders-deste i,
   .akim-sahne.dolu .akim-sahne-resim img {
@@ -21607,82 +21513,63 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 #uygulama .ders-bugun-alt {
   padding: 14px 16px 16px;
 }
-/* Gör düğmesi: resimli kutu yerine tek dolu düğme (adı ve sayısı içinde) */
-#uygulama .gor-dugme {
-  height: 56px;
-  margin: 0;
-  padding: 0 8px 0 22px;
-  border: 0;
-  border-radius: 28px;
+/* adımların dokunma alanı (44 px) zaten boşluk bırakır; devam satırı hemen altında başlar */
+#uygulama .ders-bugun-alt:has(> .ders-devam-satir:first-child) {
+  padding-top: 0;
+}
+/* 1.89.2 · devam: kartın son satırı (Emre tuvalde "B"yi seçti). Kapsül ve içindeki resim kalktı; ince bir çizginin
+   altında adımın adı ve sayısı, sağda küçük krem ok (ekrandaki tek dolu öğe). */
+#uygulama .ders-devam-satir {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  margin: -2px -16px -16px;
+  padding: 14px 18px 16px 22px;
+  border-top: 0.5px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+#uygulama .ders-devam-satir:active {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+#uygulama .ders-devam-satir:focus-visible {
+  outline: 2px solid var(--pirinc);
+  outline-offset: -4px;
+  border-radius: 0 0 28px 28px;
+}
+#uygulama .ders-devam-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+#uygulama .ders-devam-yazi b {
+  font: 600 17px/1.25 var(--sans);
+}
+#uygulama .ders-devam-yazi small {
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+#uygulama .ders-devam-ok {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
   background: var(--ink);
   color: var(--bg);
-  box-shadow: none;
+  transition: transform 160ms ease;
 }
-#uygulama .gor-dugme::before,
-#uygulama .gor-dugme-resim,
-#uygulama .gor-dugme-parilti {
-  display: none;
+#uygulama .ders-devam-satir:active .ders-devam-ok {
+  transform: scale(0.94);
 }
-#uygulama .gor-dugme-yazi {
-  gap: 1px;
-}
-#uygulama .gor-dugme-yazi b {
-  font: 600 16px/1.25 var(--sans);
-}
-#uygulama .gor-dugme-yazi small {
-  font: 400 13px/1.3 var(--sans);
-  color: color-mix(in srgb, var(--bg) 70%, var(--ink));
-}
-#uygulama .gor-dugme-ok {
-  width: 40px;
-  height: 40px;
-  background: var(--bg);
-  color: var(--ink);
-}
-#uygulama .gor-dugme-ok::after {
-  display: none;
-}
-/* Bugünün dersi · Gör: krem kapsül ve dengeli ok rozeti */
-#uygulama .ders-bugun .gor-dugme {
-  min-height: 92px;
-  height: 92px;
-  padding: 10px 10px 10px 28px;
-  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
-  border-radius: 999px;
-  background: var(--ders-altin-ustu);
-  color: var(--ink);
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--ink) 16%, transparent);
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-#uygulama .ders-bugun .gor-dugme-yazi {
-  gap: 3px;
-  padding-block: 3px;
-}
-#uygulama .ders-bugun .gor-dugme-yazi b {
-  font: 600 23px/1.05 var(--sans);
-  letter-spacing: -0.025em;
-}
-#uygulama .ders-bugun .gor-dugme-yazi small {
-  max-width: 13ch;
-  font: 400 15px/1.25 var(--sans);
-  color: color-mix(in srgb, var(--ink) 72%, transparent);
-}
-#uygulama .ders-bugun .gor-dugme-ok {
-  width: 72px;
-  height: 72px;
-  border: 0;
-  background: var(--ink);
-  color: var(--ders-altin-ustu);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ders-altin-ustu) 12%, transparent);
-}
-#uygulama .ders-bugun .gor-dugme-ok .ikon {
-  width: 28px;
-  height: 28px;
-  animation: none;
-}
-#uygulama .ders-bugun .gor-dugme:active {
-  transform: scale(0.98);
-  box-shadow: 0 4px 10px color-mix(in srgb, var(--ink) 14%, transparent);
+/* süren adımın çizgisi ne kadar görüldüyse o kadar dolu */
+#uygulama .ders-bugun .ders-adim.simdi .ders-halka {
+  background: linear-gradient(90deg, var(--pirinc) var(--oran, 100%), color-mix(in srgb, var(--ink) 16%, transparent) 0);
 }
 /* Günlük tekrar: tek satırlık kart */
 #uygulama .ders-tekrar {

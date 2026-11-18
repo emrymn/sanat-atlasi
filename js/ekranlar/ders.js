@@ -137,7 +137,8 @@ function adimHalkalari(b) {
       const hal = x.bitti ? 'bitti' : x.adim === b.durum.siradaki ? 'simdi' : '';
       const ic = x.bitti ? ikon('dogru', 16, 2.2) : say.yazi && hal === 'simdi' ? say.yazi : String(i + 1);
       const okunus = x.bitti ? 'tamam' : say.yazi ? `sürüyor, ${say.yazi}` : 'bekliyor';
-      return `<li><a class="ders-adim ${hal}" href="${dersAdresi(b.akim, x.adim)}" data-test="adim-${x.adim}" aria-label="${x.ad}: ${okunus}"><span class="ders-halka" aria-hidden="true">${ic}</span><span class="ders-adim-ad" aria-hidden="true">${x.ad}</span></a></li>`;
+      const oran = hal === 'simdi' ? ` style="--oran:${Math.max(6, Math.round((say.toplam ? say.gorulen / say.toplam : 0) * 100))}%"` : '';
+      return `<li><a class="ders-adim ${hal}" href="${dersAdresi(b.akim, x.adim)}" data-test="adim-${x.adim}" aria-label="${x.ad}: ${okunus}"><span class="ders-halka" aria-hidden="true"${oran}>${ic}</span><span class="ders-adim-ad" aria-hidden="true">${x.ad}</span></a></li>`;
     })
     .join('')}${harita}</ol>`;
 }
@@ -168,6 +169,13 @@ function davet(b) {
   return `Komşularından ayır: ${b.ayirt.map((x) => kacis(x.komsu)).join(', ')}.`;
 }
 
+// Devam satırının alt yazısı: başlanmış adımda "9 / 17 ayrıntı · 3 eser", başlanmamışta adımın açıklaması
+function devamAltYazisi(b, a, say) {
+  if (!say || !say.yazi) return adimAciklamasi(b, a);
+  const birim = a === 'gor' ? 'ayrıntı' : a === 'ogren' ? 'özellik' : 'ikili';
+  return `${say.gorulen} / ${say.toplam} ${birim}${a === 'gor' ? ` · ${b.gor.eserler.length} eser` : ''}`;
+}
+
 function devamDugmesi(b, test = 'ders-devam', sahne = false) {
   // İş 191: ders bittiyse düğme haritaya götürür (Sına'nın yerine)
   if (!b.durum.siradaki && !sahne)
@@ -176,14 +184,12 @@ function devamDugmesi(b, test = 'ders-devam', sahne = false) {
   const suruyor = b.kayit[a].i > 0 && !b.durum.adimlar.find((x) => x.adim === a).bitti;
   const yazi = !b.durum.siradaki ? 'Dersi yeniden aç' : suruyor ? `${ADIM_ADLARI[a]} adımına devam` : `${ADIM_ADLARI[a]} adımını aç`;
   const say = b.durum.siradaki ? adimSayisi(b, a) : null;
-  // 1.81.0 (Emre): Çalış'taki düğme adımın kendisini anlatır: içinde dersin resmi ayrıntıdan ayrıntıya yakınlaşır
+  // 1.89.2 (Emre tuvalde "B"yi seçti): Çalış'ta devam, bugünün dersi kartının son satırı: adımın adı, altında sayısı
   if (sahne) {
-    const alt = [say && say.yazi, b.durum.siradaki ? adimAciklamasi(b, a) : ''].filter(Boolean).join(' · ');
-    return `<a class="gor-dugme" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}">
-        <span class="gor-dugme-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="960" aria-hidden="true"></span>
-        <span class="gor-dugme-parilti" aria-hidden="true"></span>
-        <span class="gor-dugme-yazi"><b>${yazi}</b>${alt ? `<small>${kacis(alt)}</small>` : ''}</span>
-        <span class="gor-dugme-ok" aria-hidden="true">${ikon('ileri', 22, 1.8)}</span>
+    const alt = b.durum.siradaki ? devamAltYazisi(b, a, say) : '';
+    return `<a class="ders-devam-satir" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}">
+        <span class="ders-devam-yazi"><b>${yazi}</b>${alt ? `<small>${kacis(alt)}</small>` : ''}</span>
+        <span class="ders-devam-ok" aria-hidden="true">${ikon('ileri', 18, 2)}</span>
       </a>`;
   }
   return `<a class="ders-dugme dolu" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}"><span>${yazi}</span>${say && say.yazi ? `<small>${say.yazi}</small>` : ikon('ileri', 18, 1.8)}</a>`;
