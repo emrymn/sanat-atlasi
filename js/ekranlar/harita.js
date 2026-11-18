@@ -663,6 +663,7 @@ function durakPenceresi(id) {
   const x = h && h.liste.find((y) => y.id === id);
   if (!x) return '';
   const bolge = bolgeBul(x.sira);
+  const sembol = h.harita.bolgeler.find((b) => b.id === bolge.id)?.duraklar.find((durak) => durak.id === id);
   const sanatcilar = x.sanatcilar.map((s) => d.harita.get(s)).filter(Boolean);
   const siradaki = siradakiSeviye(x);
   const gruplar = tanismaGruplari(x.sanatcilar);
@@ -739,6 +740,7 @@ function durakPenceresi(id) {
       <button class="harita-pencere-kapat hp2-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 16, 2.2)}</button>
       <header class="hp2-giris">
         <span class="hp-kapak hp2-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"><img src="${resimAdresi(bolge.id, d.haritaVakti || vakit())}" alt=""></span>
+        ${sembol ? `<span class="hp2-muhur" aria-hidden="true"><img src="${nesneAdresi(bolge.id, sembol.sembolNo, h.tur)}" alt=""></span>` : ''}
         <div class="hp2-levha">
           <p class="hp2-ust">${kacis(bolge.ad)}</p>
           <h2 class="hp2-ad">${kacis(bolumAdi(x))}</h2>
@@ -747,8 +749,8 @@ function durakPenceresi(id) {
       </header>
       ${basla}
       <div class="hp2-bolmeler">
-        <details ${x.acik ? 'open' : ''}><summary>Sanatçılarla tanış</summary><ol class="hp2-liste" data-test="hp-tanis">${tanisSatirlari}</ol></details>
-        ${x.acik ? `<details><summary>Seviyeler</summary><ol class="hp2-liste" data-test="hp-sinav">${seviyeSatirlari}${ortaSatirlari}</ol></details>` : ''}
+        <details ${x.acik ? 'open' : ''}><summary><span class="hp2-isaret" aria-hidden="true">${ikon('firca', 19, 1.5)}</span>Sanatçılarla tanış</summary><ol class="hp2-liste" data-test="hp-tanis">${tanisSatirlari}</ol></details>
+        ${x.acik ? `<details><summary><span class="hp2-isaret" aria-hidden="true">${ikon('kitap', 18, 1.4)}</span>Seviyeler</summary><ol class="hp2-liste" data-test="hp-sinav">${seviyeSatirlari}${ortaSatirlari}</ol></details>` : ''}
       </div>
       <ol class="hp2-liste hp2-dip">${akimSatiri}</ol>
     </div>`;
