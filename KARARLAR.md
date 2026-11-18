@@ -2730,3 +2730,12 @@ duruyordu; (2) yazı bir anda değişiyordu; (3) yeni esere geçerken resim sön
   yakından başlayıp yavaşça yerine oturur.
 - Resmin CSS boyu ilk kopyanın ölçüsüne sabitlenir; büyük kopya aynı alanı daha keskin doldurur.
 - Hareket "Kapalı" (ya da sistemde azaltılmış hareket) iken her şey eskisi gibi anında.
+
+## 1.89.2 · Bugünün dersi: devam kartın son satırı
+Emre ekran görüntüsünde kartın içindeki "Gör adımına devam" kapsülünü işaretleyip "bu kısmı tekrar tasarla" dedi. Kapsül
+kartın içinde ikinci bir kart gibi duruyordu; yazısı dört satıra bölünüyor, krem halka 72 px'ti. Tasarım tuvalinde dört yön
+çizildi (https://claude.ai/artifact/Qpm4NqjPNmmRFysQHF1sGY: A tek krem düğme, B kartın son satırı, C düğme tablonun
+üstünde, D sıradaki ayrıntı penceresi); Emre B'yi seçti. Kartın dibinde ince bir çizginin altında tek satır: adımın adı
+("Gör adımına devam" / "Öğren adımını aç"), altında sayısı ("9 / 17 ayrıntı · 3 eser"; başlanmamış adımda açıklaması),
+sağda 46 px krem ok (ekrandaki tek dolu öğe); satırın tamamı dokunulur. 1.81.0'daki "düğmenin içinde resim yakınlaşır"
+fikri (zaten 1.8x'te gizlenmişti) ve CSS'i kalktı. Süren adımın çizgisi artık görülen oranda dolu (en az %6).

@@ -78,6 +78,11 @@ test('Çalış → bugünün dersi → her adım açılır; günlük tekrar ve b
   // sıradaki adım: Gör
   const devam = page.locator('[data-test="ders-devam"]');
   await expect(devam).toHaveAttribute('data-adim', 'gor');
+  // 1.89.2 · B: kartın son satırı; başlık tek satır, alt yazıda adımın açıklaması, resimli kapsül yok
+  await expect(devam).toHaveClass(/ders-devam-satir/);
+  await expect(devam.locator('b')).toHaveText('Gör adımını aç');
+  expect(await devam.locator('b').evaluate((e) => e.getClientRects().length === 1 && e.getBoundingClientRect().height < 30)).toBe(true);
+  await expect(devam.locator('[data-ders-kapak]')).toHaveCount(0);
   await devam.click();
   await expect(page).toHaveURL(/#\/pekistir\/ders\/Gotik\/gor$/);
   await expect(page.locator('[data-test="ders-gor"]')).toBeVisible();
@@ -134,6 +139,10 @@ test('Gör: önce eserin tamamı, sonra ayrıntıdan ayrıntıya; ilerleme yazı
   await expect(page.locator('[data-test="adim-gor"]')).toHaveClass(/simdi/);
   await expect(page.locator('[data-test="adim-gor"] .ders-halka')).toHaveText(`1/${toplam}`);
   await expect(page.locator('[data-test="ders-satir"]').first()).toHaveClass(/suruyor/);
+  // devam satırı: "Gör adımına devam", altında görülen ayrıntı sayısı; Gör çizgisi o kadar dolu
+  await expect(page.locator('[data-test="ders-devam"] b')).toHaveText('Gör adımına devam');
+  await expect(page.locator('[data-test="ders-devam"] small')).toHaveText(`1 / ${toplam} ayrıntı · ${eserler.length} eser`);
+  expect(await page.locator('[data-test="adim-gor"] .ders-halka').evaluate((e) => e.style.getPropertyValue('--oran'))).toBe(`${Math.max(6, Math.round(100 / toplam))}%`);
   await page.locator('[data-test="ders-devam"]').click();
   await expect(gor).toHaveAttribute('data-nokta', '1');
 
@@ -442,9 +451,9 @@ test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör�
   await kayitDegistir(page, 'i.ayarlar.tema = "gunduz"; i.ayarlar.hareket = "kapali";');
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'gunduz');
   await expect(page.locator('html')).toHaveAttribute('data-hareket', 'kapali');
-  // dolu düğmenin yazısı zeminine göre okunur (4,5:1 üstü), Gündüz ve Gece'de
-  const kontrast = () =>
-    page.locator('[data-test="ders-devam"]').evaluate((el) => {
+  // devam satırının yazısı kartın zeminine, krem okun simgesi okun zeminine göre okunur (4,5:1 üstü), Gündüz ve Gece'de
+  const kontrast = (secici = '[data-test="ders-devam"] .ders-devam-yazi b') =>
+    page.locator(secici).evaluate((el) => {
       const c = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
       const rgb = (r) => {
         c.clearRect(0, 0, 1, 1);
@@ -456,11 +465,14 @@ test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör�
         const [x, y, z] = rgb(r).map((v) => ((v /= 255) <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
         return 0.2126 * x + 0.7152 * y + 0.0722 * z;
       };
-      const s = getComputedStyle(el);
-      const [a, b] = [L(s.color), L(s.backgroundColor)].sort((x, y) => y - x);
+      // zemin: saydam olmayan ilk ata
+      let z = el;
+      while (z && /rgba\(0, 0, 0, 0\)|transparent/.test(getComputedStyle(z).backgroundColor)) z = z.parentElement;
+      const [a, b] = [L(getComputedStyle(el).color), L(getComputedStyle(z || document.body).backgroundColor)].sort((x, y) => y - x);
       return (a + 0.05) / (b + 0.05);
     });
   expect(await kontrast()).toBeGreaterThanOrEqual(4.5);
+  expect(await kontrast('[data-test="ders-devam"] .ders-devam-ok')).toBeGreaterThanOrEqual(4.5);
   // Gör her temada koyu sahne; Hareket kapalıyken geçiş süresi yok
   await page.locator('[data-test="ders-devam"]').click();
   const gor = page.locator('[data-test="ders-gor"]');
@@ -472,6 +484,7 @@ test('temalar ve hareket: Gündüz’de okunur; Hareket “Kapalı”yken Gör�
   await kayitDegistir(page, 'i.ayarlar.tema = "gece"; i.ayarlar.hareket = "tam";');
   await page.goto('./#/pekistir');
   expect(await kontrast()).toBeGreaterThanOrEqual(4.5);
+  expect(await kontrast('[data-test="ders-devam"] .ders-devam-ok')).toBeGreaterThanOrEqual(4.5);
 });
 
 test('1.89.1 · Gör geçişleri yumuşak: kamera yolda süzülür, yazı solup gelir, eserler çapraz solar', async ({ page, context }) => {

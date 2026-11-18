@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.89.2', metin: 'Çalış’ta bugünün dersi kartı sadeleşti: kartın içindeki büyük kapsül kalktı. Kartın son satırında adımın adı (“Gör adımına devam”), altında kaç ayrıntıya baktığın ve sağda küçük bir ok var. Süren adımın çizgisi ne kadar ilerlediysen o kadar dolu.' },
   { surum: '1.89.1', metin: 'Çalış’taki Gör adımında geçişler yumuşadı: kamera ayrıntıdan ayrıntıya bir göz gibi süzülür (uzak ayrıntıda önce biraz geri çekilir, sonra yaklaşır), yavaşça yerine oturur. Yazı solup yeniden gelir; sıradaki esere geçerken iki resim birbirine karışır. Büyük kopya gelince resmin sıçraması da düzeldi.' },
   { surum: '1.89.0', metin: 'Haritadaki durak penceresi yeniden tasarlandı: tek yüzey, rengini durağın tablosundan alır; üstte tablo, altında durağın adı, tek düğme ve sade bir liste (tanışma grupları, Kolay, Orta, Zor, Akım sayfası). 6 ve daha çok sanatçılı duraklarda tanışma 3–4 kişilik gruplara bölündü; her grubun tanışmasının ardından yalnız o grubu soran kısa bir tur var (kişi başı 2 soru). Kolay, Orta ve Zor yine bütün durağı sorar; harita aynı.' },
   { surum: '1.88.3', metin: 'Başyapıtlar ve Konular’da yana kayan sıra artık yalnız sağa sola kayıyor; aşağı yukarı kayıp kartların yazısını kesmiyor. Konu sayfasında “Aynı hikâye, N kez” başlığının yanında “Tümünü göster”.' },
