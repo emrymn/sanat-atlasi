@@ -50,7 +50,7 @@ const rotalar = [
   // İş 105: bölüm turu ve konu (ikonografi) turu; haritanın #/pekistir/bolum/<id>/<seviye> adresiyle çakışmaz
   [/^#\/pekistir\/bolum$/, () => soruTuru('bolum'), null],
   [/^#\/pekistir\/ikonografi$/, () => soruTuru('ikonografi'), null],
-  [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim|tanitim-orta)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
+  [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim(?:-orta)?(?:-\d+)?)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'bugun'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'bugun'],
   [/^#\/koleksiyon$/, koleksiyonSayfasi, 'gozat'],

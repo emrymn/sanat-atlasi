@@ -2684,3 +2684,32 @@ Emre: "sağa sola gitmek yerine aşağı yukarı da gidiyor". `overflow-x: auto`
 kayarak (transform 18px) girerken içerik bir an taşınca iPhone sırayı dikeyde de kaydırıyor, yazılar kesiliyordu. Sırada
 `overflow-y: hidden` ve kartlar yalnız solarak girer (transform yok).
 - Konu sayfası: "Aynı hikâye, N kez" başlığının sağında "Tümünü göster" (Emre istedi); "Bütün resimler" ile aynı galeriyi açar.
+
+## 1.89.0 · Kalabalık duraklarda gruplu tanışma
+Emre: "her bölümde çok sanatçı var, tanımayı zorlaştırıyor … haritanın tasarımını bozmak istemiyorum … 6 üstü bölünsün,
+her grubun tanışma kısmı ayrı ayrı olsun". Harita (37 durak, yerleri, sembolleri) ve sorular (Kolay/Orta/Zor bütün durağı
+sorar) değişmedi. `bolum.js tanismaGruplari`: 6 ve üstü sanatçılı durağın sırası (kursun konu sırası, konu içinde doğum)
+3–4 kişilik gruplara bölünür (6 → 3+3, 7 → 4+3, 8 → 4+4, 9 → 3+3+3, 10 → 4+3+3); 2 kişilik grup hiç olmaz. Bugün bölünen
+duraklar: Erken Rönesans, Kuzey Rönesansı 1, Yüksek Rönesans, Maniyerizm 2, İtalyan Barok 2, Geç İtalyan Barok,
+Empresyonizm 2. Adres `#/pekistir/bolum/<id>/tanitim-<n>` (Orta için `tanitim-orta-<n>`); kayıt `tanitimGrup` /
+`tanitimOrtaGrup` (görülen grupların sırası), hepsi görülünce eski `tanitim` / `tanitimOrta` da true olur. Eskiden
+bütünüyle tanışılmış durakta bütün gruplar görülmüş sayılır (ilerleme kaybolmaz). Durak penceresinde "Tanış" yerine grup
+satırları (grubun sanatçılarının kısa adları); "başla" Kolay sıradayken önce görülmemiş ilk gruba götürür. Kolay'a
+doğrudan girilirse önceden görülmemiş grupların sanatçılarıyla tanışılır (eskisi gibi).
+- Sonra (Emre: "tanış kısmından sonra soru olsun ki pekişsin"): grubun tanışmasının ardından yalnız o grubun sanatçılarını
+  soran kısa tur (`GRUP_SORU_KISI` = 2 soru / kişi, eserler o seviyenin tanıtımda gösterilen eserleri). Grup bu tur bitince
+  tamam sayılır (tanışıp çıkan bitirmiş sayılmaz); yıldız vermez. Sonunda grup özeti: doğru sayısı, sıradaki grup ya da
+  Kolay / Orta, haritaya dönüş.
+- Durak penceresinin düzeni (Emre: "tasarımı değiştirmeden önce organizasyonu yapalım"): 1 · Tanış (grup kartları:
+  işaret, "1. grup · tanış · 6 soru / tamam", grubun yüzleri ve kısa adları, Orta açıksa "Orta eserleri"; küçük durakta
+  tek kart) → 2 · Sınav (Kolay / Orta / Zor merdiveni) → tek ana düğme → altta yalnız Akım sayfası. Açık durakta ayrı yüz
+  şeridi kalktı (adlar iki kez yazıyordu; "Orta tanıtımı · 1 · 2 · 3" alt düğmeleri sığmıyordu). Kilitli durakta şerit
+  duruyor. Renk ve görünüş sonraki işte.
+- Görünüş (Emre tasarım tuvalinde birkaç turdan sonra "G2"yi seçti; ilkeler: "bütünsellik, elegant, Apple tarzı"):
+  pencere tek yüzey, zemini durağın kapak eserinin bulanık kopyası (Apple Music gibi rengini eserden alır), her temada
+  koyu. Yukarıdan aşağı: kendi oranında geniş kapak (bölüm sanatçılarının en bilinen eserlerinden en yatayı), "Dönem · N
+  sanatçı", Bodoni ad, yıldızlar, tek dolu düğme, sade liste (ince ayırıcılar): tanışma grupları (başta grubun ilk
+  sanatçısının en bilinen eseri; biten soluk ve onaylı), Kolay / Orta / Zor (kilitli olan "Kolay’ı geçince"), Orta
+  eserleri, Akım sayfası. Önceki düzendeki "1 · Tanış / 2 · Sınav" etiketleri, işaret halkaları, merdiven, madalyon ve yüz
+  şeridi kalktı (TASARIM_DILI: numarasız, tek dolu düğme). Reddedilen yönler (tek liste, sıradaki iş, sekmeler, tablo ve
+  yol, salonlar, kâğıt pencere, yaldız çerçeve, odak, asılı kart) tuvalde duruyor.

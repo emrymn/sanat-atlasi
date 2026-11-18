@@ -22528,3 +22528,227 @@ html.sekmesiz :is(.bsy-hap, .bsy-sozcuk) {
 .konu-yol-ust .tumunu-goster[hidden] {
   display: none;
 }
+/* ===== 1.89 · Durak penceresi "G2" (Emre tuvalde seçti; js/ekranlar/harita.js durakPenceresi) =====
+   Tek yüzey: zemin durağın kapak eserinin bulanık kopyası, üstünde koyu geçiş; her temada koyu (tablonun üstü gibi).
+   Geniş kapak → küçük üst yazı → Bodoni ad → yıldızlar → tek dolu düğme → sade liste (ince ayırıcılar). */
+#uygulama .harita-pencere-ic.hp2 {
+  --hp2-yazi: #f2ece2;
+  --hp2-soluk: rgba(242, 236, 226, 0.62);
+  --hp2-cizgi: rgba(242, 236, 226, 0.16);
+  isolation: isolate;
+  gap: 0;
+  max-height: calc(100svh - env(safe-area-inset-top, 0px) - var(--sekme-alt) - var(--sekme-h) - 84px);
+  padding: 0 20px 18px;
+  border: 0;
+  border-radius: 30px;
+  background: #1a1511;
+  color: var(--hp2-yazi);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow:
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.14),
+    0 -6px 40px rgba(0, 0, 0, 0.55);
+}
+#uygulama .harita-pencere-ic.hp2 > * {
+  margin-inline: 0;
+}
+.hp2-zemin {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.hp2-zemin img {
+  position: absolute;
+  inset: -20%;
+  width: 140%;
+  height: 140%;
+  max-width: none;
+  object-fit: cover;
+  filter: blur(44px) saturate(1.3) brightness(0.6);
+}
+.hp2-zemin::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 16, 12, 0.12) 0%, rgba(20, 16, 12, 0.5) 50%, rgba(20, 16, 12, 0.82) 100%);
+}
+.hp2-tutamak {
+  align-self: center;
+  width: 36px;
+  height: 5px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background: rgba(242, 236, 226, 0.35);
+}
+#uygulama .hp2 .hp2-kapat {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(242, 236, 226, 0.85);
+  box-shadow: none;
+}
+#uygulama .hp2 .hp2-kapat::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: rgba(242, 236, 226, 0.14);
+}
+#uygulama .hp2 .hp2-kapat .ikon {
+  position: relative;
+}
+#uygulama .hp2 .hp2-kapak {
+  display: block;
+  height: 208px;
+  margin: 22px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(242, 236, 226, 0.08);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.5);
+}
+#uygulama .hp2 .hp2-kapak img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+.hp2-ust {
+  margin: 18px 0 0;
+  font: 500 13px/1.3 var(--sans);
+  color: var(--hp2-soluk);
+}
+#uygulama .hp2 .hp2-ad {
+  margin: 4px 0 0;
+  font: 500 28px/1.1 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--hp2-yazi);
+  filter: none;
+  opacity: 1;
+}
+#uygulama .hp2 .harita-yildiz {
+  margin: 8px 0 0;
+}
+.hp2-kilit {
+  margin: 12px 0 0;
+  font: 400 15px/1.45 var(--sans);
+  color: var(--hp2-soluk);
+}
+.hp2-basla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin-top: 18px;
+  border-radius: 14px;
+  background: var(--hp2-yazi);
+  color: #17130f;
+  font: 600 16px/1 var(--sans);
+  text-decoration: none;
+}
+.hp2-basla:active {
+  transform: scale(0.98);
+}
+.hp2-liste {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.hp2-liste + .hp2-liste {
+  margin-top: 0;
+}
+.hp2-satir {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  color: var(--hp2-yazi);
+  text-decoration: none;
+}
+.hp2-kucuk,
+.hp2-ikon {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(242, 236, 226, 0.1);
+}
+.hp2-ikon {
+  display: grid;
+  place-items: center;
+  color: rgba(242, 236, 226, 0.75);
+}
+.hp2-ikon.dolu {
+  color: var(--pirinc);
+}
+.hp2-kucuk img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hp2-kucuk.soluk {
+  opacity: 0.55;
+}
+.hp2-satir-ic {
+  flex: 1;
+  min-width: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 0.5px solid var(--hp2-cizgi);
+}
+.hp2-liste:last-child li:last-child .hp2-satir-ic {
+  border-bottom: 0;
+}
+.hp2-satir-ad {
+  flex: 1;
+  min-width: 0;
+  font: 400 15px/1.3 var(--sans);
+}
+.hp2-satir-ad small {
+  font-size: 13px;
+  color: var(--hp2-soluk);
+}
+.hp2-satir-son {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 400 13px/1 var(--sans);
+  color: var(--hp2-soluk);
+}
+.hp2-satir.soluk .hp2-satir-ad {
+  color: rgba(242, 236, 226, 0.55);
+}
+.hp2-satir.sirada .hp2-satir-ad {
+  font-weight: 600;
+}
+.hp2-satir.kapali {
+  color: rgba(242, 236, 226, 0.5);
+}
+.hp2-satir.gecti .hp2-satir-son {
+  color: var(--pirinc);
+}
+a.hp2-satir:active {
+  opacity: 0.7;
+}
+#uygulama .hp2 .hp2-kapak::before,
+#uygulama .hp2 .hp2-kapak::after {
+  content: none;
+}
