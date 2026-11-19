@@ -2820,3 +2820,16 @@ Emre bu kuralın genel olduğunu söyledi: "dediğim şey geneldi sadece bunlar 
   Tur her 8 eserde bir gönderildi; böylece başka bir oturum kaldığı yerden sürdürebilirdi.
 - **Telefon:** Veri dosyası önbellekten okunduğu için yeni metinlerin telefona gelmesi sürüm artışına bağlı (1.90.2).
 
+## 1.90.3 · Tanıma kırpımları: bütün konular
+
+Emre'nin isteği: kırpımı olmayan konu sayfalarındaki "Resimde nasıl tanınır?" maddelerine kırpım çizilsin, en çok eseri
+olan konulardan başlansın, yazılar betimleme değil bilgi versin (`scripts/ayrinti/BILGI_TURU.md` kuralı).
+
+- **Kapsam:** 261 konuya 866 kutu elle çizildi (`scripts/tanima_kirpim/yeni_konu.json`). Eseri olan 371 konunun hepsinde
+  artık en az bir kırpım var.
+- **Denetim:** Her kutu için madde tek, eser konuda ve önbellekte, ad 2–34 karakter, metin 60–420 karakter ve 2–4 cümle,
+  kutu resmin %4'ünden büyük ve %60'ından küçük. Her parti kontrol sayfasında tek tek bakıldı; maddeyi açıkça göstermeyen
+  kutular kaldırıldı ya da taşındı.
+- **Bilerek boş kalanlar:** Resimde seçilemeyen maddeler kırpımsız (ör. Efkaristiya'daki perde ve kadeh, Septimius'taki kılıç).
+- **Telefon:** Veri dosyası önbellekten okunduğu için kırpımların telefona gelmesi sürüm artışına bağlı (1.90.3).
+
