@@ -1,0 +1,7096 @@
+{
+ "surum": 1,
+ "aciklama": "Tanıma kırpımları (İş 193): konu sayfalarındaki 'Resimde nasıl tanınır?' maddelerine ve sanatçı sayfasındaki 'Nasıl tanırım?' notuna eserden yakın plan. x, y, w, h görselin en/boyuna oranla (sol üst + boy). Üretim: scripts/tanima_kirpim/.",
+ "konular": {
+  "adam-and-eve": [
+   {
+    "madde": 1,
+    "anahtar": "Q3605055",
+    "sanatci": "lucas-cranach-yasl",
+    "gorsel": "3c22712ffcc9edd6",
+    "ad": "Uzatılan elma",
+    "x": 0.55,
+    "y": 0.19,
+    "w": 0.1,
+    "h": 0.08
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q351300",
+    "sanatci": "albrecht-durer",
+    "gorsel": "78e0e776ae7bbef8",
+    "ad": "Yılan ve meyve",
+    "x": 0.86,
+    "y": 0.1,
+    "w": 0.14,
+    "h": 0.2
+   }
+  ],
+  "adoration-of-the-magi": [
+   {
+    "madde": 0,
+    "anahtar": "Q2273943",
+    "sanatci": "diego-velazquez",
+    "gorsel": "5dbee4eaf3be47aa",
+    "ad": "Meryem ve Çocuk",
+    "x": 0.45,
+    "y": 0.23,
+    "w": 0.42,
+    "h": 0.33
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2273943",
+    "sanatci": "diego-velazquez",
+    "gorsel": "5dbee4eaf3be47aa",
+    "ad": "Balthazar",
+    "x": 0.19,
+    "y": 0.21,
+    "w": 0.19,
+    "h": 0.17
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1055117",
+    "sanatci": "gentile-da-fabriano",
+    "gorsel": "5f89fc48ceabb25d",
+    "ad": "Ayağı öpen kral",
+    "x": 0.26,
+    "y": 0.6,
+    "w": 0.14,
+    "h": 0.12
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q488825",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "07c15d53c092a1ff",
+    "ad": "Beytüllahim yıldızı",
+    "x": 0.42,
+    "y": 0.0,
+    "w": 0.1,
+    "h": 0.07
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1055117",
+    "sanatci": "gentile-da-fabriano",
+    "gorsel": "5f89fc48ceabb25d",
+    "ad": "Kralların yolculuğu",
+    "x": 0.37,
+    "y": 0.3,
+    "w": 0.26,
+    "h": 0.13
+   }
+  ],
+  "adoration-of-the-shepherds": [
+   {
+    "madde": 0,
+    "anahtar": "Q3605563",
+    "sanatci": "giorgione",
+    "gorsel": "d2cf71ae0740441e",
+    "ad": "Çocuk İsa",
+    "x": 0.61,
+    "y": 0.8,
+    "w": 0.16,
+    "h": 0.11
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3605563",
+    "sanatci": "giorgione",
+    "gorsel": "d2cf71ae0740441e",
+    "ad": "Diz çöken çobanlar",
+    "x": 0.37,
+    "y": 0.46,
+    "w": 0.26,
+    "h": 0.4
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q1114913",
+    "sanatci": "el-greco",
+    "gorsel": "d66d6e27da92a005",
+    "ad": "Melekler ve şerit",
+    "x": 0.08,
+    "y": 0.01,
+    "w": 0.88,
+    "h": 0.3
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1114913",
+    "sanatci": "el-greco",
+    "gorsel": "d66d6e27da92a005",
+    "ad": "Işık saçan çocuk",
+    "x": 0.2,
+    "y": 0.52,
+    "w": 0.24,
+    "h": 0.1
+   }
+  ],
+  "ages-of-man": [
+   {
+    "madde": 1,
+    "anahtar": "Q27978197",
+    "sanatci": "hans-baldung-grien",
+    "gorsel": "caed3fd667120943",
+    "ad": "Kum saati",
+    "x": 0.22,
+    "y": 0.0,
+    "w": 0.11,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3829156",
+    "sanatci": "gustav-klimt",
+    "gorsel": "5d0c7bdc54663ca7",
+    "ad": "Yaşlı beden",
+    "x": 0.27,
+    "y": 0.1,
+    "w": 0.17,
+    "h": 0.32
+   }
+  ],
+  "agony-in-the-garden": [
+   {
+    "madde": 0,
+    "anahtar": "Q3884945",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "edd06060e3ca6112",
+    "ad": "Dua eden İsa",
+    "x": 0.3,
+    "y": 0.13,
+    "w": 0.18,
+    "h": 0.36
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3884945",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "edd06060e3ca6112",
+    "ad": "Uyuyan havariler",
+    "x": 0.08,
+    "y": 0.69,
+    "w": 0.75,
+    "h": 0.25
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1131110",
+    "sanatci": "giovanni-bellini",
+    "gorsel": "7dffba7c3331c0ca",
+    "ad": "Kâseli melek",
+    "x": 0.71,
+    "y": 0.0,
+    "w": 0.1,
+    "h": 0.13
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3884945",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "edd06060e3ca6112",
+    "ad": "Yahuda ve askerler",
+    "x": 0.7,
+    "y": 0.51,
+    "w": 0.2,
+    "h": 0.14
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3884945",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "edd06060e3ca6112",
+    "ad": "Kent",
+    "x": 0.43,
+    "y": 0.22,
+    "w": 0.43,
+    "h": 0.25
+   }
+  ],
+  "annunciation": [
+   {
+    "madde": 0,
+    "anahtar": "Q2378534",
+    "sanatci": "fra-angelico",
+    "gorsel": "8fda010e67a76e56",
+    "ad": "Eğilen Cebrail",
+    "x": 0.121,
+    "y": 0.285,
+    "w": 0.353,
+    "h": 0.601
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q285392",
+    "sanatci": "robert-campin",
+    "gorsel": "f343957f4b5b322d",
+    "ad": "Okuyan Meryem",
+    "x": 0.5,
+    "y": 0.4,
+    "w": 0.18,
+    "h": 0.48
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q979440",
+    "sanatci": "simone-martini",
+    "gorsel": "af51df81fcaa607b",
+    "ad": "Cebrail ve zeytin dalı",
+    "x": 0.356,
+    "y": 0.506,
+    "w": 0.128,
+    "h": 0.222
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2734881",
+    "sanatci": "jan-van-eyck",
+    "gorsel": "b486cfb555a5a186",
+    "ad": "Yedi ışın ve güvercin",
+    "x": 0.52,
+    "y": 0.31,
+    "w": 0.18,
+    "h": 0.08
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q979440",
+    "sanatci": "simone-martini",
+    "gorsel": "af51df81fcaa607b",
+    "ad": "Altın yazı",
+    "x": 0.428,
+    "y": 0.488,
+    "w": 0.218,
+    "h": 0.088
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q285392",
+    "sanatci": "robert-campin",
+    "gorsel": "f343957f4b5b322d",
+    "ad": "Sönen mum ve zambak",
+    "x": 0.43,
+    "y": 0.33,
+    "w": 0.12,
+    "h": 0.26
+   }
+  ],
+  "apostles": [
+   {
+    "madde": 0,
+    "anahtar": "Q829270",
+    "sanatci": "albrecht-durer",
+    "gorsel": "c272e0b8c31cdce4",
+    "ad": "Yuhanna'nın kitabı",
+    "x": 0.34,
+    "y": 0.23,
+    "w": 0.15,
+    "h": 0.09
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q829270",
+    "sanatci": "albrecht-durer",
+    "gorsel": "c272e0b8c31cdce4",
+    "ad": "Petrus'un anahtarı",
+    "x": 0.44,
+    "y": 0.17,
+    "w": 0.06,
+    "h": 0.12
+   }
+  ],
+  "assumption-of-the-virgin": [
+   {
+    "madde": 1,
+    "anahtar": "Q771210",
+    "sanatci": "correggio",
+    "gorsel": "00c7f5bfd3d0f27a",
+    "ad": "Melek girdabı",
+    "x": 0.3,
+    "y": 0.17,
+    "w": 0.4,
+    "h": 0.2
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q771210",
+    "sanatci": "correggio",
+    "gorsel": "00c7f5bfd3d0f27a",
+    "ad": "Şaşkın havariler",
+    "x": 0.32,
+    "y": 0.66,
+    "w": 0.38,
+    "h": 0.14
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q771210",
+    "sanatci": "correggio",
+    "gorsel": "00c7f5bfd3d0f27a",
+    "ad": "Aşağı inen İsa",
+    "x": 0.42,
+    "y": 0.38,
+    "w": 0.16,
+    "h": 0.18
+   }
+  ],
+  "bacchus-and-ariadne": [
+   {
+    "madde": 0,
+    "anahtar": "Q1206860",
+    "sanatci": "titian",
+    "gorsel": "1e0d4386895b479c",
+    "ad": "Ariadne",
+    "x": 0.0,
+    "y": 0.44,
+    "w": 0.19,
+    "h": 0.46
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1206860",
+    "sanatci": "titian",
+    "gorsel": "1e0d4386895b479c",
+    "ad": "Sıçrayan Bacchus",
+    "x": 0.33,
+    "y": 0.24,
+    "w": 0.28,
+    "h": 0.46
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3998957",
+    "sanatci": "annibale-carracci",
+    "gorsel": "8295423c12b95915",
+    "ad": "Kaplanlar ve keçiler",
+    "x": 0.3,
+    "y": 0.6,
+    "w": 0.3,
+    "h": 0.25
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3998957",
+    "sanatci": "annibale-carracci",
+    "gorsel": "8295423c12b95915",
+    "ad": "Silenos",
+    "x": 0.69,
+    "y": 0.27,
+    "w": 0.16,
+    "h": 0.24
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q1206860",
+    "sanatci": "titian",
+    "gorsel": "1e0d4386895b479c",
+    "ad": "Kuzey Tacı",
+    "x": 0.04,
+    "y": 0.01,
+    "w": 0.17,
+    "h": 0.07
+   }
+  ],
+  "baptism-of-christ": [
+   {
+    "madde": 0,
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "ad": "İsa",
+    "x": 0.38,
+    "y": 0.43,
+    "w": 0.24,
+    "h": 0.33
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "ad": "Yahya'nın kâsesi",
+    "x": 0.45,
+    "y": 0.38,
+    "w": 0.15,
+    "h": 0.07
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "ad": "Güvercin",
+    "x": 0.37,
+    "y": 0.31,
+    "w": 0.27,
+    "h": 0.06
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "ad": "El ele melekler",
+    "x": 0.0,
+    "y": 0.46,
+    "w": 0.34,
+    "h": 0.42
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "ad": "Soyunan adam",
+    "x": 0.77,
+    "y": 0.58,
+    "w": 0.18,
+    "h": 0.25
+   }
+  ],
+  "bathsheba": [
+   {
+    "madde": 0,
+    "anahtar": "Q19863024",
+    "sanatci": "sebastiano-ricci",
+    "gorsel": "6366d2fe9f812bb9",
+    "ad": "Batşeba",
+    "x": 0.42,
+    "y": 0.2,
+    "w": 0.13,
+    "h": 0.18
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q19863024",
+    "sanatci": "sebastiano-ricci",
+    "gorsel": "6366d2fe9f812bb9",
+    "ad": "Hayvan başlı çeşme",
+    "x": 0.03,
+    "y": 0.67,
+    "w": 0.1,
+    "h": 0.28
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q19863024",
+    "sanatci": "sebastiano-ricci",
+    "gorsel": "6366d2fe9f812bb9",
+    "ad": "Mücevher kutusu",
+    "x": 0.64,
+    "y": 0.2,
+    "w": 0.16,
+    "h": 0.28
+   }
+  ],
+  "battle-of-san-romano": [
+   {
+    "madde": 0,
+    "anahtar": "Q2265370",
+    "sanatci": "paolo-uccello",
+    "gorsel": "544f207805b1f466",
+    "ad": "Devrilen at",
+    "x": 0.2,
+    "y": 0.75,
+    "w": 0.24,
+    "h": 0.23
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2265370",
+    "sanatci": "paolo-uccello",
+    "gorsel": "544f207805b1f466",
+    "ad": "Tazılar ve tavşanlar",
+    "x": 0.42,
+    "y": 0.2,
+    "w": 0.26,
+    "h": 0.16
+   }
+  ],
+  "beer-street-and-gin-lane": [
+   {
+    "madde": 1,
+    "anahtar": "william-hogarth|Gin Lane",
+    "sanatci": "william-hogarth",
+    "gorsel": "77f3d102fdc54aed",
+    "ad": "Düşen bebek",
+    "x": 0.3,
+    "y": 0.49,
+    "w": 0.42,
+    "h": 0.32
+   },
+   {
+    "madde": 2,
+    "anahtar": "william-hogarth|Gin Lane",
+    "sanatci": "william-hogarth",
+    "gorsel": "77f3d102fdc54aed",
+    "ad": "Rehinci Gripe",
+    "x": 0.02,
+    "y": 0.22,
+    "w": 0.3,
+    "h": 0.32
+   }
+  ],
+  "belshazzar-s-feast": [
+   {
+    "madde": 0,
+    "anahtar": "Q1167932",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "4c46aa68bf13432a",
+    "ad": "Yazan el",
+    "x": 0.665,
+    "y": 0.14,
+    "w": 0.075,
+    "h": 0.09
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1167932",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "4c46aa68bf13432a",
+    "ad": "Sarık ve taç",
+    "x": 0.34,
+    "y": 0.08,
+    "w": 0.19,
+    "h": 0.23
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1167932",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "4c46aa68bf13432a",
+    "ad": "Devrilen kadeh",
+    "x": 0.69,
+    "y": 0.54,
+    "w": 0.1,
+    "h": 0.18
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1167932",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "4c46aa68bf13432a",
+    "ad": "Şaşkın konuklar",
+    "x": 0.08,
+    "y": 0.36,
+    "w": 0.18,
+    "h": 0.26
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q1167932",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "4c46aa68bf13432a",
+    "ad": "Duvardaki yazı",
+    "x": 0.71,
+    "y": 0.04,
+    "w": 0.17,
+    "h": 0.16
+   }
+  ],
+  "birth-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q3873247",
+    "sanatci": "pietro-lorenzetti",
+    "gorsel": "c61d3d5f20cb4b0c",
+    "ad": "Anna",
+    "x": 0.37,
+    "y": 0.44,
+    "w": 0.26,
+    "h": 0.15
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3873247",
+    "sanatci": "pietro-lorenzetti",
+    "gorsel": "c61d3d5f20cb4b0c",
+    "ad": "Bebeğin yıkanması",
+    "x": 0.33,
+    "y": 0.76,
+    "w": 0.25,
+    "h": 0.18
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3873247",
+    "sanatci": "pietro-lorenzetti",
+    "gorsel": "c61d3d5f20cb4b0c",
+    "ad": "Yoakim'e haber",
+    "x": 0.11,
+    "y": 0.59,
+    "w": 0.16,
+    "h": 0.13
+   }
+  ],
+  "birth-of-venus": [
+   {
+    "madde": 0,
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "ad": "Utangaç Venüs duruşu",
+    "x": 0.44,
+    "y": 0.22,
+    "w": 0.17,
+    "h": 0.35
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "ad": "Deniz kabuğu",
+    "x": 0.34,
+    "y": 0.61,
+    "w": 0.32,
+    "h": 0.29
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1283024",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "809628793ca1b92b",
+    "ad": "Saçları sıkan eller",
+    "x": 0.28,
+    "y": 0.23,
+    "w": 0.31,
+    "h": 0.13
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "ad": "Rüzgârlar",
+    "x": 0.19,
+    "y": 0.02,
+    "w": 0.23,
+    "h": 0.26
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "ad": "Bahar ve pelerin",
+    "x": 0.66,
+    "y": 0.08,
+    "w": 0.23,
+    "h": 0.3
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1283024",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "809628793ca1b92b",
+    "ad": "Yunustaki Eros",
+    "x": 0.54,
+    "y": 0.63,
+    "w": 0.3,
+    "h": 0.32
+   }
+  ],
+  "calling-of-saint-matthew": [
+   {
+    "madde": 0,
+    "anahtar": "Q969377",
+    "sanatci": "caravaggio",
+    "gorsel": "3716dff9fa186467",
+    "ad": "İsa ve Petrus",
+    "x": 0.748,
+    "y": 0.327,
+    "w": 0.2,
+    "h": 0.168
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q969377",
+    "sanatci": "caravaggio",
+    "gorsel": "3716dff9fa186467",
+    "ad": "Kendini gösteren adam",
+    "x": 0.258,
+    "y": 0.377,
+    "w": 0.16,
+    "h": 0.198
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q969377",
+    "sanatci": "caravaggio",
+    "gorsel": "3716dff9fa186467",
+    "ad": "Paraları sayan genç",
+    "x": 0.089,
+    "y": 0.446,
+    "w": 0.2,
+    "h": 0.198
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q969377",
+    "sanatci": "caravaggio",
+    "gorsel": "3716dff9fa186467",
+    "ad": "Pencere ve ışık",
+    "x": 0.508,
+    "y": 0.001,
+    "w": 0.32,
+    "h": 0.336
+   }
+  ],
+  "christ-carrying-the-cross": [
+   {
+    "madde": 0,
+    "anahtar": "Q680128",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1f6379cdfaeff1de",
+    "ad": "İsa",
+    "x": 0.33,
+    "y": 0.42,
+    "w": 0.2,
+    "h": 0.2
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q680128",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1f6379cdfaeff1de",
+    "ad": "Kireneli Simun",
+    "x": 0.14,
+    "y": 0.22,
+    "w": 0.14,
+    "h": 0.15
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q680128",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1f6379cdfaeff1de",
+    "ad": "Peçedeki yüz",
+    "x": 0.0,
+    "y": 0.79,
+    "w": 0.14,
+    "h": 0.19
+   }
+  ],
+  "christ-giving-the-keys-to-saint-peter": [
+   {
+    "madde": 0,
+    "anahtar": "Q2620028",
+    "sanatci": "pietro-perugino",
+    "gorsel": "360cb5f67fabb880",
+    "ad": "Anahtar teslimi",
+    "x": 0.38,
+    "y": 0.52,
+    "w": 0.24,
+    "h": 0.42
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q2620028",
+    "sanatci": "pietro-perugino",
+    "gorsel": "360cb5f67fabb880",
+    "ad": "Merkezî tapınak",
+    "x": 0.32,
+    "y": 0.0,
+    "w": 0.36,
+    "h": 0.46
+   }
+  ],
+  "christ-in-the-house-of-martha-and-mary": [
+   {
+    "madde": 0,
+    "anahtar": "Q927449",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "3ab59fa5094c57d1",
+    "ad": "İsa",
+    "x": 0.7,
+    "y": 0.11,
+    "w": 0.17,
+    "h": 0.17
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q927449",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "3ab59fa5094c57d1",
+    "ad": "Dinleyen Meryem",
+    "x": 0.2,
+    "y": 0.37,
+    "w": 0.2,
+    "h": 0.2
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q927449",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "3ab59fa5094c57d1",
+    "ad": "Marta ve ekmek",
+    "x": 0.37,
+    "y": 0.04,
+    "w": 0.3,
+    "h": 0.36
+   }
+  ],
+  "cleopatra": [
+   {
+    "madde": 4,
+    "anahtar": "Q18167078",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "dcff0d8adc24cc19",
+    "ad": "İnci ve kadeh",
+    "x": 0.38,
+    "y": 0.46,
+    "w": 0.09,
+    "h": 0.16
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q2980775",
+    "sanatci": "alexandre-cabanel",
+    "gorsel": "e12a284ac1ce9394",
+    "ad": "Zehrin kurbanları",
+    "x": 0.0,
+    "y": 0.38,
+    "w": 0.28,
+    "h": 0.44
+   }
+  ],
+  "commedia-dellarte": [
+   {
+    "madde": 0,
+    "anahtar": "Q3387944",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "daa855ad38e226ab",
+    "ad": "Fırfırlı yaka",
+    "x": 0.35,
+    "y": 0.19,
+    "w": 0.2,
+    "h": 0.09
+   }
+  ],
+  "constantine-the-great": [
+   {
+    "madde": 0,
+    "anahtar": "Q1996932",
+    "sanatci": "giulio-romano",
+    "gorsel": "8b55e691bba2162a",
+    "ad": "Nehirdeki askerler",
+    "x": 0.6,
+    "y": 0.6,
+    "w": 0.32,
+    "h": 0.17
+   }
+  ],
+  "conversion-of-saint-paul": [
+   {
+    "madde": 0,
+    "anahtar": "Q2273517",
+    "sanatci": "caravaggio",
+    "gorsel": "0ea5b347b05f24d4",
+    "ad": "Yere düşen Saul",
+    "x": 0.55,
+    "y": 0.8,
+    "w": 0.25,
+    "h": 0.14
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2273517",
+    "sanatci": "caravaggio",
+    "gorsel": "0ea5b347b05f24d4",
+    "ad": "Havadaki toynak",
+    "x": 0.57,
+    "y": 0.48,
+    "w": 0.12,
+    "h": 0.12
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2273517",
+    "sanatci": "caravaggio",
+    "gorsel": "0ea5b347b05f24d4",
+    "ad": "Kılıç",
+    "x": 0.2,
+    "y": 0.83,
+    "w": 0.18,
+    "h": 0.08
+   }
+  ],
+  "coronation-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q3797771",
+    "sanatci": "fra-angelico",
+    "gorsel": "12d5e019628ceebd",
+    "ad": "Taç giyme",
+    "x": 0.36,
+    "y": 0.22,
+    "w": 0.3,
+    "h": 0.3
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3797771",
+    "sanatci": "fra-angelico",
+    "gorsel": "12d5e019628ceebd",
+    "ad": "Kazınmış ışınlar",
+    "x": 0.25,
+    "y": 0.02,
+    "w": 0.5,
+    "h": 0.2
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3797771",
+    "sanatci": "fra-angelico",
+    "gorsel": "12d5e019628ceebd",
+    "ad": "Boru çalan melekler",
+    "x": 0.12,
+    "y": 0.17,
+    "w": 0.2,
+    "h": 0.16
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3797771",
+    "sanatci": "fra-angelico",
+    "gorsel": "12d5e019628ceebd",
+    "ad": "Kadın azizler",
+    "x": 0.6,
+    "y": 0.56,
+    "w": 0.4,
+    "h": 0.38
+   }
+  ],
+  "creation-of-adam": [
+   {
+    "madde": 0,
+    "anahtar": "Q500242",
+    "sanatci": "michelangelo",
+    "gorsel": "3492a085a4197805",
+    "ad": "Âdem",
+    "x": 0.01,
+    "y": 0.3,
+    "w": 0.22,
+    "h": 0.48
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q500242",
+    "sanatci": "michelangelo",
+    "gorsel": "3492a085a4197805",
+    "ad": "Tanrı",
+    "x": 0.52,
+    "y": 0.14,
+    "w": 0.11,
+    "h": 0.18
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q500242",
+    "sanatci": "michelangelo",
+    "gorsel": "3492a085a4197805",
+    "ad": "İki parmak",
+    "x": 0.32,
+    "y": 0.36,
+    "w": 0.12,
+    "h": 0.16
+   }
+  ],
+  "crucifixion": [
+   {
+    "madde": 0,
+    "anahtar": "Q2528741",
+    "sanatci": "diego-velazquez",
+    "gorsel": "214357ccf412aa97",
+    "ad": "Eğik baş ve hale",
+    "x": 0.38,
+    "y": 0.12,
+    "w": 0.22,
+    "h": 0.16
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3221342",
+    "sanatci": "francisco-de-zurbaran",
+    "gorsel": "57fb08eeb9b2dd1b",
+    "ad": "Üç dilli levha",
+    "x": 0.44,
+    "y": 0.04,
+    "w": 0.17,
+    "h": 0.08
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3698260",
+    "sanatci": "cimabue",
+    "gorsel": "3493074a69d0b6d4",
+    "ad": "Meryem",
+    "x": 0.02,
+    "y": 0.25,
+    "w": 0.14,
+    "h": 0.17
+   }
+  ],
+  "cupid-and-psyche": [
+   {
+    "madde": 0,
+    "anahtar": "Q3614563",
+    "sanatci": "anthony-van-dyck",
+    "gorsel": "cc6c15bad8f79087",
+    "ad": "Kanatlı Eros",
+    "x": 0.12,
+    "y": 0.35,
+    "w": 0.28,
+    "h": 0.25
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3614563",
+    "sanatci": "anthony-van-dyck",
+    "gorsel": "cc6c15bad8f79087",
+    "ad": "Altın kutu",
+    "x": 0.52,
+    "y": 0.86,
+    "w": 0.1,
+    "h": 0.1
+   }
+  ],
+  "danae": [
+   {
+    "madde": 1,
+    "anahtar": "Q22329907",
+    "sanatci": "orazio-gentileschi",
+    "gorsel": "e7d1437d3c1ac703",
+    "ad": "Altın sikkeler",
+    "x": 0.43,
+    "y": 0.0,
+    "w": 0.3,
+    "h": 0.26
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3701418",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "52d1d6f09d3fd1ad",
+    "ad": "Hizmetçi",
+    "x": 0.48,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.57
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q22329907",
+    "sanatci": "orazio-gentileschi",
+    "gorsel": "e7d1437d3c1ac703",
+    "ad": "Perdeyi çeken Eros",
+    "x": 0.26,
+    "y": 0.14,
+    "w": 0.22,
+    "h": 0.34
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q2294441",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "e50d5e72c9e4ce06",
+    "ad": "Kalkan el",
+    "x": 0.42,
+    "y": 0.3,
+    "w": 0.1,
+    "h": 0.14
+   }
+  ],
+  "dante-and-the-divine-comedy": [
+   {
+    "madde": 0,
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "ad": "Dante ve kitap",
+    "x": 0.534,
+    "y": 0.265,
+    "w": 0.177,
+    "h": 0.23
+   },
+   {
+    "madde": 2,
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "ad": "Cehennem kapısı",
+    "x": 0,
+    "y": 0.667,
+    "w": 0.225,
+    "h": 0.259
+   },
+   {
+    "madde": 3,
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "ad": "Araf'ın kapısı",
+    "x": 0.33,
+    "y": 0.318,
+    "w": 0.115,
+    "h": 0.144
+   },
+   {
+    "madde": 5,
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "ad": "Floransa ve kubbe",
+    "x": 0.708,
+    "y": 0.223,
+    "w": 0.177,
+    "h": 0.191
+   }
+  ],
+  "dante-and-virgil-in-hell": [
+   {
+    "madde": 0,
+    "anahtar": "Q2354251",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "e997fbcec2932cf8",
+    "ad": "Dante",
+    "x": 0.26,
+    "y": 0.16,
+    "w": 0.22,
+    "h": 0.25
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2354251",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "e997fbcec2932cf8",
+    "ad": "Virgil",
+    "x": 0.47,
+    "y": 0.22,
+    "w": 0.15,
+    "h": 0.32
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2354251",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "e997fbcec2932cf8",
+    "ad": "Kayıkçı",
+    "x": 0.62,
+    "y": 0.3,
+    "w": 0.23,
+    "h": 0.3
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2665048",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "fc48981aa80fd5fa",
+    "ad": "Isırık",
+    "x": 0.52,
+    "y": 0.3,
+    "w": 0.18,
+    "h": 0.25
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2354251",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "e997fbcec2932cf8",
+    "ad": "Yanan Dis kenti",
+    "x": 0.0,
+    "y": 0.2,
+    "w": 0.2,
+    "h": 0.2
+   }
+  ],
+  "death-of-general-wolfe": [
+   {
+    "madde": 0,
+    "anahtar": "Q956541",
+    "sanatci": "benjamin-west",
+    "gorsel": "ed1fc87aaad38067",
+    "ad": "Ölen general",
+    "x": 0.5,
+    "y": 0.48,
+    "w": 0.14,
+    "h": 0.24
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q956541",
+    "sanatci": "benjamin-west",
+    "gorsel": "ed1fc87aaad38067",
+    "ad": "Yerli savaşçı",
+    "x": 0.17,
+    "y": 0.54,
+    "w": 0.16,
+    "h": 0.32
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q956541",
+    "sanatci": "benjamin-west",
+    "gorsel": "ed1fc87aaad38067",
+    "ad": "Bayrak",
+    "x": 0.6,
+    "y": 0.0,
+    "w": 0.17,
+    "h": 0.34
+   }
+  ],
+  "death-of-marat": [
+   {
+    "madde": 0,
+    "anahtar": "Q636537",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "317191fde448de5c",
+    "ad": "Sarılı baş",
+    "x": 0.05,
+    "y": 0.42,
+    "w": 0.2,
+    "h": 0.15
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q636537",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "317191fde448de5c",
+    "ad": "Corday'nin mektubu",
+    "x": 0.66,
+    "y": 0.52,
+    "w": 0.2,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q636537",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "317191fde448de5c",
+    "ad": "İthaf yazısı",
+    "x": 0.6,
+    "y": 0.87,
+    "w": 0.26,
+    "h": 0.13
+   }
+  ],
+  "death-of-socrates": [
+   {
+    "madde": 1,
+    "anahtar": "Q1752990",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "e6872f550b72ef0b",
+    "ad": "Kâse",
+    "x": 0.46,
+    "y": 0.4,
+    "w": 0.13,
+    "h": 0.11
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1752990",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "e6872f550b72ef0b",
+    "ad": "Yukarıyı gösteren el",
+    "x": 0.6,
+    "y": 0.29,
+    "w": 0.13,
+    "h": 0.25
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1752990",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "e6872f550b72ef0b",
+    "ad": "Kriton",
+    "x": 0.62,
+    "y": 0.45,
+    "w": 0.2,
+    "h": 0.17
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1752990",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "e6872f550b72ef0b",
+    "ad": "Zincirler ve tomarlar",
+    "x": 0.2,
+    "y": 0.8,
+    "w": 0.3,
+    "h": 0.12
+   }
+  ],
+  "deposition": [
+   {
+    "madde": 0,
+    "anahtar": "Q3705718",
+    "sanatci": "rosso-fiorentino",
+    "gorsel": "86216e309f4d4b92",
+    "ad": "Merdivendeki adamlar",
+    "x": 0.03,
+    "y": 0.12,
+    "w": 0.4,
+    "h": 0.22
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "ad": "İsa'nın bedeni",
+    "x": 0.38,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.4
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "ad": "Arimatealı Yusuf",
+    "x": 0.63,
+    "y": 0.28,
+    "w": 0.17,
+    "h": 0.3
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "ad": "Bayılan Meryem",
+    "x": 0.2,
+    "y": 0.55,
+    "w": 0.25,
+    "h": 0.4
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "ad": "Mecdelli Meryem",
+    "x": 0.8,
+    "y": 0.33,
+    "w": 0.15,
+    "h": 0.25
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "ad": "Âdem'in kafatası",
+    "x": 0.16,
+    "y": 0.89,
+    "w": 0.08,
+    "h": 0.09
+   }
+  ],
+  "diana": [
+   {
+    "madde": 0,
+    "anahtar": "Q32234",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "0d1100eb6b3e386b",
+    "ad": "Diana",
+    "x": 0.42,
+    "y": 0.18,
+    "w": 0.13,
+    "h": 0.15
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q32234",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "0d1100eb6b3e386b",
+    "ad": "Köpek ve devedikeni",
+    "x": 0.0,
+    "y": 0.64,
+    "w": 0.27,
+    "h": 0.33
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q32234",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "0d1100eb6b3e386b",
+    "ad": "Ayak yıkayan nimf",
+    "x": 0.68,
+    "y": 0.5,
+    "w": 0.24,
+    "h": 0.4
+   }
+  ],
+  "diana-and-actaeon": [
+   {
+    "madde": 0,
+    "anahtar": "Q2528177",
+    "sanatci": "titian",
+    "gorsel": "4e5f195d615aac54",
+    "ad": "Diana",
+    "x": 0.79,
+    "y": 0.39,
+    "w": 0.13,
+    "h": 0.17
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3556817",
+    "sanatci": "francois-boucher",
+    "gorsel": "9149518978abfa24",
+    "ad": "Hilalli Diana",
+    "x": 0.55,
+    "y": 0.26,
+    "w": 0.13,
+    "h": 0.13
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2528177",
+    "sanatci": "titian",
+    "gorsel": "4e5f195d615aac54",
+    "ad": "Aktaion",
+    "x": 0.08,
+    "y": 0.27,
+    "w": 0.24,
+    "h": 0.65
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3556817",
+    "sanatci": "francois-boucher",
+    "gorsel": "9149518978abfa24",
+    "ad": "Av köpekleri",
+    "x": 0.0,
+    "y": 0.5,
+    "w": 0.2,
+    "h": 0.3
+   }
+  ],
+  "diana-and-endymion": [
+   {
+    "madde": 0,
+    "anahtar": "Q20087509",
+    "sanatci": "francesco-solimena",
+    "gorsel": "2b37c6abcb9eef9c",
+    "ad": "Uyuyan Endymion",
+    "x": 0.18,
+    "y": 0.2,
+    "w": 0.16,
+    "h": 0.13
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q20087509",
+    "sanatci": "francesco-solimena",
+    "gorsel": "2b37c6abcb9eef9c",
+    "ad": "Hilalli Diana",
+    "x": 0.54,
+    "y": 0.02,
+    "w": 0.26,
+    "h": 0.2
+   }
+  ],
+  "dormition-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q959537",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "e0b82c26fe1eb095",
+    "ad": "Meryem'in yatağı",
+    "x": 0.23,
+    "y": 0.56,
+    "w": 0.38,
+    "h": 0.14
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q959537",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "e0b82c26fe1eb095",
+    "ad": "Palmiye dalı",
+    "x": 0.1,
+    "y": 0.25,
+    "w": 0.16,
+    "h": 0.32
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q959537",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "e0b82c26fe1eb095",
+    "ad": "Mum taşıyan havariler",
+    "x": 0.75,
+    "y": 0.35,
+    "w": 0.25,
+    "h": 0.25
+   }
+  ],
+  "doubting-thomas": [
+   {
+    "madde": 0,
+    "anahtar": "Q18572249",
+    "sanatci": "francesco-salviati",
+    "gorsel": "c0eda9a627ae200d",
+    "ad": "Yaralı avuç",
+    "x": 0.79,
+    "y": 0.27,
+    "w": 0.11,
+    "h": 0.1
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18572249",
+    "sanatci": "francesco-salviati",
+    "gorsel": "c0eda9a627ae200d",
+    "ad": "Thomas'ın dokunuşu",
+    "x": 0.36,
+    "y": 0.44,
+    "w": 0.26,
+    "h": 0.15
+   }
+  ],
+  "embarkation-for-cythera": [
+   {
+    "madde": 0,
+    "anahtar": "Q531329",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "bf5742ab3ec171f0",
+    "ad": "Geriye son bakış",
+    "x": 0.44,
+    "y": 0.5,
+    "w": 0.14,
+    "h": 0.27
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q531329",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "bf5742ab3ec171f0",
+    "ad": "Venüs hermi",
+    "x": 0.83,
+    "y": 0.31,
+    "w": 0.09,
+    "h": 0.3
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q531329",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "bf5742ab3ec171f0",
+    "ad": "Buğulu uzaklık",
+    "x": 0.3,
+    "y": 0.28,
+    "w": 0.24,
+    "h": 0.2
+   }
+  ],
+  "entombment": [
+   {
+    "madde": 1,
+    "anahtar": "Q4310527",
+    "sanatci": "hans-holbein-genc",
+    "gorsel": "8903cf6276b2039a",
+    "ad": "Böğür yarası",
+    "x": 0.31,
+    "y": 0.22,
+    "w": 0.06,
+    "h": 0.25
+   }
+  ],
+  "entry-into-jerusalem": [
+   {
+    "madde": 0,
+    "anahtar": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+    "sanatci": "duccio-di-buoninsegna",
+    "gorsel": "0b55d8270d39493e",
+    "ad": "İsa ve eşek",
+    "x": 0.23,
+    "y": 0.48,
+    "w": 0.18,
+    "h": 0.12
+   },
+   {
+    "madde": 2,
+    "anahtar": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+    "sanatci": "duccio-di-buoninsegna",
+    "gorsel": "0b55d8270d39493e",
+    "ad": "Yola serilen pelerin",
+    "x": 0.4,
+    "y": 0.6,
+    "w": 0.27,
+    "h": 0.2
+   },
+   {
+    "madde": 3,
+    "anahtar": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+    "sanatci": "duccio-di-buoninsegna",
+    "gorsel": "0b55d8270d39493e",
+    "ad": "Ağaçtaki genç",
+    "x": 0.27,
+    "y": 0.19,
+    "w": 0.18,
+    "h": 0.13
+   }
+  ],
+  "et-in-arcadia-ego": [
+   {
+    "madde": 1,
+    "anahtar": "Q1140358",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "22120cc801296cf0",
+    "ad": "Yazıt ve gölge",
+    "x": 0.4,
+    "y": 0.52,
+    "w": 0.14,
+    "h": 0.12
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1140358",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "22120cc801296cf0",
+    "ad": "Düşünceli çoban",
+    "x": 0.21,
+    "y": 0.27,
+    "w": 0.22,
+    "h": 0.15
+   }
+  ],
+  "flagellation": [
+   {
+    "madde": 0,
+    "anahtar": "Q1212920",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "57c1d20e53d4c7a6",
+    "ad": "Sütuna bağlı İsa",
+    "x": 0.3,
+    "y": 0.29,
+    "w": 0.11,
+    "h": 0.55
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1212920",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "57c1d20e53d4c7a6",
+    "ad": "Tahttaki Pilatus",
+    "x": 0.04,
+    "y": 0.52,
+    "w": 0.14,
+    "h": 0.27
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3697588",
+    "sanatci": "donato-bramante",
+    "gorsel": "4b1c880548f2048a",
+    "ad": "Dikenli taç ve bakış",
+    "x": 0.32,
+    "y": 0.02,
+    "w": 0.27,
+    "h": 0.27
+   }
+  ],
+  "flight-into-egypt": [
+   {
+    "madde": 0,
+    "anahtar": "Q970808",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "5a5324bf0cc933d1",
+    "ad": "Meryem ve Çocuk",
+    "x": 0.38,
+    "y": 0.37,
+    "w": 0.16,
+    "h": 0.22
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q970808",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "5a5324bf0cc933d1",
+    "ad": "Yusuf",
+    "x": 0.56,
+    "y": 0.33,
+    "w": 0.15,
+    "h": 0.27
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q970808",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "5a5324bf0cc933d1",
+    "ad": "Yol gösteren melek",
+    "x": 0.3,
+    "y": 0.12,
+    "w": 0.35,
+    "h": 0.25
+   }
+  ],
+  "fortune-teller": [
+   {
+    "madde": 0,
+    "anahtar": "Q379906",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "c8b1f06aab998cf6",
+    "ad": "Yaşlı falcı",
+    "x": 0.71,
+    "y": 0.14,
+    "w": 0.21,
+    "h": 0.27
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q379906",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "c8b1f06aab998cf6",
+    "ad": "Avuçtaki para",
+    "x": 0.5,
+    "y": 0.48,
+    "w": 0.18,
+    "h": 0.13
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q379906",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "c8b1f06aab998cf6",
+    "ad": "Genç adam",
+    "x": 0.29,
+    "y": 0.07,
+    "w": 0.2,
+    "h": 0.25
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q379906",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "c8b1f06aab998cf6",
+    "ad": "Kesilen madalya",
+    "x": 0.53,
+    "y": 0.66,
+    "w": 0.13,
+    "h": 0.24
+   }
+  ],
+  "galatea": [
+   {
+    "madde": 3,
+    "anahtar": "Q3793426",
+    "sanatci": "odilon-redon",
+    "gorsel": "8906e5e8686fc219",
+    "ad": "Tek göz",
+    "x": 0.27,
+    "y": 0.18,
+    "w": 0.15,
+    "h": 0.12
+   }
+  ],
+  "garden-of-earthly-delights": [
+   {
+    "madde": 1,
+    "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1434ee16ca10ad2c",
+    "ad": "Dev meyveler ve cam küre",
+    "x": 0.25,
+    "y": 0.6,
+    "w": 0.18,
+    "h": 0.27
+   },
+   {
+    "madde": 2,
+    "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1434ee16ca10ad2c",
+    "ad": "Müzik işkencesi",
+    "x": 0.77,
+    "y": 0.52,
+    "w": 0.19,
+    "h": 0.25
+   }
+  ],
+  "golden-calf": [
+   {
+    "madde": 0,
+    "anahtar": "Q377810",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "64aa5dad9d8e1fcf",
+    "ad": "Altın buzağı",
+    "x": 0.26,
+    "y": 0.18,
+    "w": 0.2,
+    "h": 0.17
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q377810",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "64aa5dad9d8e1fcf",
+    "ad": "Dans halkası",
+    "x": 0.02,
+    "y": 0.43,
+    "w": 0.48,
+    "h": 0.5
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q377810",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "64aa5dad9d8e1fcf",
+    "ad": "Musa ve Yeşu",
+    "x": 0.05,
+    "y": 0.22,
+    "w": 0.12,
+    "h": 0.17
+   }
+  ],
+  "guernica": [
+   {
+    "madde": 1,
+    "anahtar": "Q175036",
+    "sanatci": "pablo-picasso",
+    "gorsel": "wikiart:https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg",
+    "ad": "Ağlayan anne",
+    "x": 0.0,
+    "y": 0.32,
+    "w": 0.18,
+    "h": 0.45
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q175036",
+    "sanatci": "pablo-picasso",
+    "gorsel": "wikiart:https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg",
+    "ad": "Ampul ve lamba",
+    "x": 0.28,
+    "y": 0.0,
+    "w": 0.22,
+    "h": 0.28
+   }
+  ],
+  "history-of-alexander-the-great": [
+   {
+    "madde": 0,
+    "anahtar": "Q7733345",
+    "sanatci": "paolo-veronese",
+    "gorsel": "08fdc563cd1672d8",
+    "ad": "Diz çöken Sisygambis",
+    "x": 0.42,
+    "y": 0.5,
+    "w": 0.17,
+    "h": 0.42
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q27097122",
+    "sanatci": "charles-le-brun",
+    "gorsel": "db789aea131d0b6d",
+    "ad": "Arabadaki İskender",
+    "x": 0.56,
+    "y": 0.18,
+    "w": 0.16,
+    "h": 0.27
+   }
+  ],
+  "holy-family": [
+   {
+    "madde": 2,
+    "anahtar": "Q254923",
+    "sanatci": "raphael",
+    "gorsel": "b239169b43cf2097",
+    "ad": "Vaftizci Yahya",
+    "x": 0.05,
+    "y": 0.4,
+    "w": 0.2,
+    "h": 0.36
+   }
+  ],
+  "homer": [
+   {
+    "madde": 0,
+    "anahtar": "Q3202169",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "5ed6fba3de3329c5",
+    "ad": "Homeros",
+    "x": 0.42,
+    "y": 0.27,
+    "w": 0.15,
+    "h": 0.33
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3202169",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "5ed6fba3de3329c5",
+    "ad": "Taçlandıran figür",
+    "x": 0.52,
+    "y": 0.02,
+    "w": 0.18,
+    "h": 0.32
+   }
+  ],
+  "immaculate-conception": [
+   {
+    "madde": 0,
+    "anahtar": "Q5916308",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "2edcdc07605e5567",
+    "ad": "Dua eden Meryem",
+    "x": 0.38,
+    "y": 0.19,
+    "w": 0.28,
+    "h": 0.17
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q5916308",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "2edcdc07605e5567",
+    "ad": "Yılan, hilal ve küre",
+    "x": 0.16,
+    "y": 0.63,
+    "w": 0.38,
+    "h": 0.2
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q5916308",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "2edcdc07605e5567",
+    "ad": "Güvercin ve yıldızlar",
+    "x": 0.3,
+    "y": 0.04,
+    "w": 0.28,
+    "h": 0.17
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q5916308",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "2edcdc07605e5567",
+    "ad": "Zambaklı melek",
+    "x": 0.6,
+    "y": 0.62,
+    "w": 0.3,
+    "h": 0.14
+   }
+  ],
+  "isabella-and-the-pot-of-basil": [
+   {
+    "madde": 0,
+    "anahtar": "Q4198276",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "239cc0451ae2401c",
+    "ad": "Kafataslı saksı",
+    "x": 0.58,
+    "y": 0.25,
+    "w": 0.36,
+    "h": 0.16
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q4198276",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "239cc0451ae2401c",
+    "ad": "Isabella'nın yüzü",
+    "x": 0.52,
+    "y": 0.14,
+    "w": 0.2,
+    "h": 0.14
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q4198276",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "239cc0451ae2401c",
+    "ad": "İşlemeli örtü",
+    "x": 0.56,
+    "y": 0.4,
+    "w": 0.44,
+    "h": 0.26
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q822535",
+    "sanatci": "john-everett-millais",
+    "gorsel": "e8b506df2b3780f6",
+    "ad": "Ceviz kıran kardeş",
+    "x": 0.27,
+    "y": 0.28,
+    "w": 0.16,
+    "h": 0.22
+   }
+  ],
+  "isle-of-the-dead": [
+   {
+    "madde": 0,
+    "anahtar": "Q669994",
+    "sanatci": "arnold-bocklin",
+    "gorsel": "53498322e4721302",
+    "ad": "Selviler",
+    "x": 0.35,
+    "y": 0.05,
+    "w": 0.31,
+    "h": 0.62
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q669994",
+    "sanatci": "arnold-bocklin",
+    "gorsel": "53498322e4721302",
+    "ad": "Beyaz figür ve kayık",
+    "x": 0.3,
+    "y": 0.76,
+    "w": 0.13,
+    "h": 0.15
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q669994",
+    "sanatci": "arnold-bocklin",
+    "gorsel": "53498322e4721302",
+    "ad": "Mezar kapıları",
+    "x": 0.2,
+    "y": 0.38,
+    "w": 0.14,
+    "h": 0.2
+   }
+  ],
+  "jacob": [
+   {
+    "madde": 1,
+    "anahtar": "Q2052008",
+    "sanatci": "jusepe-de-ribera",
+    "gorsel": "19b7f1ad4377ec71",
+    "ad": "Uyuyan yüz",
+    "x": 0.63,
+    "y": 0.44,
+    "w": 0.15,
+    "h": 0.16
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1764395",
+    "sanatci": "paul-gauguin",
+    "gorsel": "9de1c667de873393",
+    "ad": "Yakup ve melek",
+    "x": 0.67,
+    "y": 0.06,
+    "w": 0.25,
+    "h": 0.35
+   }
+  ],
+  "judgement-of-paris": [
+   {
+    "madde": 0,
+    "anahtar": "Q18579333",
+    "sanatci": "marcantonio-raimondi",
+    "gorsel": "9fe74bd524f1be98",
+    "ad": "Paris ve elma",
+    "x": 0.16,
+    "y": 0.37,
+    "w": 0.17,
+    "h": 0.3
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q18579333",
+    "sanatci": "marcantonio-raimondi",
+    "gorsel": "9fe74bd524f1be98",
+    "ad": "Venüs ve Cupid",
+    "x": 0.33,
+    "y": 0.38,
+    "w": 0.14,
+    "h": 0.42
+   }
+  ],
+  "judith-and-holofernes": [
+   {
+    "madde": 0,
+    "anahtar": "Q2247406",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "e51941337d93e76a",
+    "ad": "Kılıç",
+    "x": 0.19,
+    "y": 0.36,
+    "w": 0.16,
+    "h": 0.18
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2537695",
+    "sanatci": "giorgione",
+    "gorsel": "eb8c139d8dece1e7",
+    "ad": "Kesik baş",
+    "x": 0.4,
+    "y": 0.83,
+    "w": 0.4,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2470123",
+    "sanatci": "caravaggio",
+    "gorsel": "5ec62fc289588e12",
+    "ad": "Hizmetçi Abra",
+    "x": 0.83,
+    "y": 0.22,
+    "w": 0.17,
+    "h": 0.23
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2470123",
+    "sanatci": "caravaggio",
+    "gorsel": "5ec62fc289588e12",
+    "ad": "Kırmızı perde",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.65,
+    "h": 0.3
+   }
+  ],
+  "jupiter-and-io": [
+   {
+    "madde": 0,
+    "anahtar": "Q700834",
+    "sanatci": "correggio",
+    "gorsel": "cf1f989968ae2fc8",
+    "ad": "Buluttaki yüz",
+    "x": 0.48,
+    "y": 0.25,
+    "w": 0.2,
+    "h": 0.14
+   }
+  ],
+  "knight-death-and-the-devil": [
+   {
+    "madde": 0,
+    "anahtar": "Q1755464",
+    "sanatci": "albrecht-durer",
+    "gorsel": "e6244a56e179bf44",
+    "ad": "Şövalye",
+    "x": 0.48,
+    "y": 0.15,
+    "w": 0.14,
+    "h": 0.14
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1755464",
+    "sanatci": "albrecht-durer",
+    "gorsel": "e6244a56e179bf44",
+    "ad": "Ölüm ve kum saati",
+    "x": 0.23,
+    "y": 0.22,
+    "w": 0.22,
+    "h": 0.13
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1755464",
+    "sanatci": "albrecht-durer",
+    "gorsel": "e6244a56e179bf44",
+    "ad": "Şeytan",
+    "x": 0.72,
+    "y": 0.25,
+    "w": 0.23,
+    "h": 0.21
+   }
+  ],
+  "labours-of-the-months": [
+   {
+    "madde": 0,
+    "anahtar": "Q776175",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "3b1dfe8e793ba701",
+    "ad": "Tırpancılar",
+    "x": 0.15,
+    "y": 0.64,
+    "w": 0.21,
+    "h": 0.29
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q5856992",
+    "sanatci": "limbourg-kardesler",
+    "gorsel": "85a16ae0801e44e1",
+    "ad": "Takvim",
+    "x": 0.29,
+    "y": 0.17,
+    "w": 0.43,
+    "h": 0.14
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q500985",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "216d1fc681535d27",
+    "ad": "Yorgun avcılar",
+    "x": 0.01,
+    "y": 0.52,
+    "w": 0.4,
+    "h": 0.42
+   }
+  ],
+  "lamentation": [
+   {
+    "madde": 0,
+    "anahtar": "Q546297",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "82ea72bf63f093f4",
+    "ad": "Eldeki yara",
+    "x": 0.69,
+    "y": 0.46,
+    "w": 0.14,
+    "h": 0.16
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2067212",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "e3ad1487857b631e",
+    "ad": "Meryem ve İsa",
+    "x": 0.12,
+    "y": 0.62,
+    "w": 0.28,
+    "h": 0.23
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2067212",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "e3ad1487857b631e",
+    "ad": "Mecdelli Meryem",
+    "x": 0.56,
+    "y": 0.65,
+    "w": 0.25,
+    "h": 0.26
+   }
+  ],
+  "last-judgment": [
+   {
+    "madde": 0,
+    "anahtar": "Q1169199",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "444fbd5d0e264f0e",
+    "ad": "Yargılayan İsa",
+    "x": 0.43,
+    "y": 0.06,
+    "w": 0.15,
+    "h": 0.32
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1169199",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "444fbd5d0e264f0e",
+    "ad": "Meryem",
+    "x": 0.3,
+    "y": 0.43,
+    "w": 0.1,
+    "h": 0.36
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q567861",
+    "sanatci": "michelangelo",
+    "gorsel": "a8763c4bfa653150",
+    "ad": "Boru çalan melekler",
+    "x": 0.4,
+    "y": 0.6,
+    "w": 0.22,
+    "h": 0.18
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1169199",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "444fbd5d0e264f0e",
+    "ad": "Mikail ve terazi",
+    "x": 0.43,
+    "y": 0.5,
+    "w": 0.14,
+    "h": 0.46
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q1169199",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "444fbd5d0e264f0e",
+    "ad": "Cennet kapısı",
+    "x": 0.0,
+    "y": 0.42,
+    "w": 0.09,
+    "h": 0.56
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1169199",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "444fbd5d0e264f0e",
+    "ad": "Cehennem",
+    "x": 0.91,
+    "y": 0.42,
+    "w": 0.09,
+    "h": 0.56
+   }
+  ],
+  "last-supper": [
+   {
+    "madde": 0,
+    "anahtar": "Q128910",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "55c9365e53a8c4c6",
+    "ad": "Ortadaki İsa",
+    "x": 0.42,
+    "y": 0.4,
+    "w": 0.15,
+    "h": 0.28
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q128910",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "55c9365e53a8c4c6",
+    "ad": "Yahuda, Petrus ve Yuhanna",
+    "x": 0.25,
+    "y": 0.42,
+    "w": 0.16,
+    "h": 0.27
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q128910",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "55c9365e53a8c4c6",
+    "ad": "Sağ uçtaki üçlü",
+    "x": 0.76,
+    "y": 0.42,
+    "w": 0.21,
+    "h": 0.29
+   }
+  ],
+  "light-of-the-world": [
+   {
+    "madde": 0,
+    "anahtar": "Q1757920",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "c354aa1c1ba77038",
+    "ad": "Fener",
+    "x": 0.62,
+    "y": 0.58,
+    "w": 0.16,
+    "h": 0.18
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1757920",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "c354aa1c1ba77038",
+    "ad": "Yabani otlar",
+    "x": 0.08,
+    "y": 0.78,
+    "w": 0.3,
+    "h": 0.2
+   }
+  ],
+  "madonna-and-child": [
+   {
+    "madde": 0,
+    "anahtar": "Q328079",
+    "sanatci": "raphael",
+    "gorsel": "b132d89ec64607e3",
+    "ad": "Meryem ve Çocuk İsa",
+    "x": 0.3,
+    "y": 0.09,
+    "w": 0.32,
+    "h": 0.3
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2016193",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "ed8fea381da8903a",
+    "ad": "Kutsayan Çocuk",
+    "x": 0.49,
+    "y": 0.3,
+    "w": 0.23,
+    "h": 0.25
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2344505",
+    "sanatci": "raphael",
+    "gorsel": "52b08d868abbad33",
+    "ad": "Saka kuşu",
+    "x": 0.39,
+    "y": 0.5,
+    "w": 0.12,
+    "h": 0.08
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2344505",
+    "sanatci": "raphael",
+    "gorsel": "52b08d868abbad33",
+    "ad": "Küçük Yahya",
+    "x": 0.14,
+    "y": 0.55,
+    "w": 0.24,
+    "h": 0.33
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q2344505",
+    "sanatci": "raphael",
+    "gorsel": "52b08d868abbad33",
+    "ad": "Uzak kasaba",
+    "x": 0.66,
+    "y": 0.29,
+    "w": 0.3,
+    "h": 0.1
+   }
+  ],
+  "marriage-at-cana": [
+   {
+    "madde": 1,
+    "anahtar": "Q185255",
+    "sanatci": "paolo-veronese",
+    "gorsel": "870f58ce77c32209",
+    "ad": "İsa ve Meryem",
+    "x": 0.41,
+    "y": 0.57,
+    "w": 0.14,
+    "h": 0.13
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q185255",
+    "sanatci": "paolo-veronese",
+    "gorsel": "870f58ce77c32209",
+    "ad": "Gelin ile damat",
+    "x": 0.0,
+    "y": 0.64,
+    "w": 0.11,
+    "h": 0.14
+   }
+  ],
+  "marriage-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q3224308",
+    "sanatci": "pietro-perugino",
+    "gorsel": "4337fa9bc40a60e0",
+    "ad": "Nişan yüzüğü",
+    "x": 0.4,
+    "y": 0.61,
+    "w": 0.16,
+    "h": 0.09
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3224308",
+    "sanatci": "pietro-perugino",
+    "gorsel": "4337fa9bc40a60e0",
+    "ad": "Çiçek açan değnek",
+    "x": 0.31,
+    "y": 0.51,
+    "w": 0.13,
+    "h": 0.14
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3224308",
+    "sanatci": "pietro-perugino",
+    "gorsel": "4337fa9bc40a60e0",
+    "ad": "Sekizgen tapınak",
+    "x": 0.28,
+    "y": 0.03,
+    "w": 0.44,
+    "h": 0.45
+   }
+  ],
+  "mary-magdalene": [
+   {
+    "madde": 0,
+    "anahtar": "Q3039856",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "f0d177a8b86f577b",
+    "ad": "Merhem kavanozu",
+    "x": 0.72,
+    "y": 0.86,
+    "w": 0.08,
+    "h": 0.12
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q19820268",
+    "sanatci": "pierre-puvis-de-chavannes",
+    "gorsel": "3c14bc73ccac8644",
+    "ad": "Saçlar ve el",
+    "x": 0.28,
+    "y": 0.28,
+    "w": 0.24,
+    "h": 0.14
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3210251",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "d4901b8595d0a0c6",
+    "ad": "Kafatası",
+    "x": 0.44,
+    "y": 0.39,
+    "w": 0.2,
+    "h": 0.13
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3039856",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "f0d177a8b86f577b",
+    "ad": "Kitap ve ayraçlar",
+    "x": 0.38,
+    "y": 0.36,
+    "w": 0.2,
+    "h": 0.12
+   }
+  ],
+  "massacre-of-the-innocents": [
+   {
+    "madde": 0,
+    "anahtar": "Q3224378",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "564c66953b5ea9be",
+    "ad": "Kalkan kılıç",
+    "x": 0.15,
+    "y": 0.07,
+    "w": 0.4,
+    "h": 0.14
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3224378",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "564c66953b5ea9be",
+    "ad": "Çığlık atan anne",
+    "x": 0.46,
+    "y": 0.34,
+    "w": 0.17,
+    "h": 0.13
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3224378",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "564c66953b5ea9be",
+    "ad": "Ezilen bebek",
+    "x": 0.14,
+    "y": 0.64,
+    "w": 0.36,
+    "h": 0.25
+   }
+  ],
+  "medusa": [
+   {
+    "madde": 0,
+    "anahtar": "Q2293905",
+    "sanatci": "caravaggio",
+    "gorsel": "69487671481e4937",
+    "ad": "Yılan saçlar",
+    "x": 0.72,
+    "y": 0.58,
+    "w": 0.14,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2293905",
+    "sanatci": "caravaggio",
+    "gorsel": "69487671481e4937",
+    "ad": "Çığlık atan yüz",
+    "x": 0.32,
+    "y": 0.33,
+    "w": 0.34,
+    "h": 0.36
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2293905",
+    "sanatci": "caravaggio",
+    "gorsel": "69487671481e4937",
+    "ad": "Kan",
+    "x": 0.3,
+    "y": 0.62,
+    "w": 0.22,
+    "h": 0.28
+   }
+  ],
+  "melancholia": [
+   {
+    "madde": 0,
+    "anahtar": "Q1362177",
+    "sanatci": "albrecht-durer",
+    "gorsel": "6d65bef27e1d8cd0",
+    "ad": "Düşünceli figür",
+    "x": 0.62,
+    "y": 0.3,
+    "w": 0.18,
+    "h": 0.18
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1362177",
+    "sanatci": "albrecht-durer",
+    "gorsel": "6d65bef27e1d8cd0",
+    "ad": "Kesik taş blok",
+    "x": 0.06,
+    "y": 0.33,
+    "w": 0.34,
+    "h": 0.27
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1362177",
+    "sanatci": "albrecht-durer",
+    "gorsel": "6d65bef27e1d8cd0",
+    "ad": "Pankart ve yarasa",
+    "x": 0.05,
+    "y": 0.15,
+    "w": 0.23,
+    "h": 0.1
+   }
+  ],
+  "mocking-of-christ": [
+   {
+    "madde": 0,
+    "anahtar": "Q68496636",
+    "sanatci": "cimabue",
+    "gorsel": "6eaa0e81bdb695b7",
+    "ad": "İsa'nın yüzü",
+    "x": 0.4,
+    "y": 0.27,
+    "w": 0.17,
+    "h": 0.15
+   }
+  ],
+  "napoleon": [
+   {
+    "madde": 0,
+    "anahtar": "Q59201",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "050f3efaa61508c3",
+    "ad": "Şahlanan at",
+    "x": 0.27,
+    "y": 0.15,
+    "w": 0.25,
+    "h": 0.2
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1282840",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "75d835fe1d3a368d",
+    "ad": "Şarlman'ın asası",
+    "x": 0.03,
+    "y": 0.0,
+    "w": 0.11,
+    "h": 0.17
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q1231009",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "a05260ce12fcb8df",
+    "ad": "Tacı kaldıran Napolyon",
+    "x": 0.53,
+    "y": 0.56,
+    "w": 0.12,
+    "h": 0.3
+   }
+  ],
+  "nativity": [
+   {
+    "madde": 0,
+    "anahtar": "Q1527541",
+    "sanatci": "correggio",
+    "gorsel": "0e0fde13a4d47d0c",
+    "ad": "Işık saçan bebek",
+    "x": 0.5,
+    "y": 0.37,
+    "w": 0.25,
+    "h": 0.21
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3211055",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "e0565dd39580cf21",
+    "ad": "Dua eden Meryem",
+    "x": 0.58,
+    "y": 0.37,
+    "w": 0.17,
+    "h": 0.22
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q974674",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "56ea9ae90d29526e",
+    "ad": "Yusuf",
+    "x": 0.27,
+    "y": 0.6,
+    "w": 0.15,
+    "h": 0.15
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1527541",
+    "sanatci": "correggio",
+    "gorsel": "0e0fde13a4d47d0c",
+    "ad": "Yusuf ve eşek",
+    "x": 0.54,
+    "y": 0.22,
+    "w": 0.26,
+    "h": 0.24
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q974674",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "56ea9ae90d29526e",
+    "ad": "Dans eden melekler",
+    "x": 0.03,
+    "y": 0.06,
+    "w": 0.95,
+    "h": 0.25
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q1527541",
+    "sanatci": "correggio",
+    "gorsel": "0e0fde13a4d47d0c",
+    "ad": "Çobanlar",
+    "x": 0.0,
+    "y": 0.29,
+    "w": 0.33,
+    "h": 0.4
+   }
+  ],
+  "netherlandish-proverbs": [
+   {
+    "madde": 1,
+    "anahtar": "Q533619",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "18ffe78c3a7b2ddd",
+    "ad": "Turtalı çatı",
+    "x": 0.1,
+    "y": 0.03,
+    "w": 0.17,
+    "h": 0.17
+   }
+  ],
+  "oath-of-the-horatii": [
+   {
+    "madde": 0,
+    "anahtar": "Q28797801",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "da3c66750a298310",
+    "ad": "Yemin eden kollar",
+    "x": 0.13,
+    "y": 0.28,
+    "w": 0.32,
+    "h": 0.2
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q28797801",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "da3c66750a298310",
+    "ad": "Üç kılıç",
+    "x": 0.39,
+    "y": 0.27,
+    "w": 0.13,
+    "h": 0.33
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q28797801",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "da3c66750a298310",
+    "ad": "Çocukları kucaklayan kadın",
+    "x": 0.61,
+    "y": 0.55,
+    "w": 0.17,
+    "h": 0.18
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q28797801",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "da3c66750a298310",
+    "ad": "Yas tutan kadınlar",
+    "x": 0.79,
+    "y": 0.54,
+    "w": 0.2,
+    "h": 0.32
+   }
+  ],
+  "oedipus-and-the-sphinx": [
+   {
+    "madde": 1,
+    "anahtar": "Q5818528",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "01a437becf469e96",
+    "ad": "Sfenks",
+    "x": 0.0,
+    "y": 0.1,
+    "w": 0.25,
+    "h": 0.4
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q5818528",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "01a437becf469e96",
+    "ad": "Bilmeceyi açıklayan el",
+    "x": 0.25,
+    "y": 0.2,
+    "w": 0.28,
+    "h": 0.2
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q5818528",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "01a437becf469e96",
+    "ad": "İnsan kalıntıları",
+    "x": 0.05,
+    "y": 0.89,
+    "w": 0.35,
+    "h": 0.11
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q5818528",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "01a437becf469e96",
+    "ad": "Kaçan adam",
+    "x": 0.72,
+    "y": 0.68,
+    "w": 0.22,
+    "h": 0.2
+   }
+  ],
+  "ophelia": [
+   {
+    "madde": 2,
+    "anahtar": "Q1065493",
+    "sanatci": "john-everett-millais",
+    "gorsel": "dd3b9c967e239aa0",
+    "ad": "Menekşe dizisi",
+    "x": 0.28,
+    "y": 0.6,
+    "w": 0.13,
+    "h": 0.1
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1065493",
+    "sanatci": "john-everett-millais",
+    "gorsel": "dd3b9c967e239aa0",
+    "ad": "Eğik söğüt",
+    "x": 0.1,
+    "y": 0.05,
+    "w": 0.3,
+    "h": 0.35
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q1065493",
+    "sanatci": "john-everett-millais",
+    "gorsel": "dd3b9c967e239aa0",
+    "ad": "Yüz",
+    "x": 0.2,
+    "y": 0.55,
+    "w": 0.12,
+    "h": 0.11
+   }
+  ],
+  "origin-of-the-milky-way": [
+   {
+    "madde": 0,
+    "anahtar": "Q2274267",
+    "sanatci": "tintoretto",
+    "gorsel": "aa55ab023afb7f2a",
+    "ad": "Juno",
+    "x": 0.13,
+    "y": 0.28,
+    "w": 0.3,
+    "h": 0.32
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2274267",
+    "sanatci": "tintoretto",
+    "gorsel": "aa55ab023afb7f2a",
+    "ad": "Jüpiter ve Herkül",
+    "x": 0.32,
+    "y": 0.0,
+    "w": 0.6,
+    "h": 0.4
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2274267",
+    "sanatci": "tintoretto",
+    "gorsel": "aa55ab023afb7f2a",
+    "ad": "Tavus kuşları",
+    "x": 0.78,
+    "y": 0.5,
+    "w": 0.22,
+    "h": 0.3
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2274267",
+    "sanatci": "tintoretto",
+    "gorsel": "aa55ab023afb7f2a",
+    "ad": "Kartal",
+    "x": 0.5,
+    "y": 0.4,
+    "w": 0.24,
+    "h": 0.17
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2274267",
+    "sanatci": "tintoretto",
+    "gorsel": "aa55ab023afb7f2a",
+    "ad": "Yıldızlar",
+    "x": 0.22,
+    "y": 0.04,
+    "w": 0.24,
+    "h": 0.17
+   }
+  ],
+  "pieta": [
+   {
+    "madde": 0,
+    "anahtar": "Q368788",
+    "sanatci": "pietro-perugino",
+    "gorsel": "fd3b31e7704b88f7",
+    "ad": "Yatay beden",
+    "x": 0.21,
+    "y": 0.48,
+    "w": 0.74,
+    "h": 0.27
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q368788",
+    "sanatci": "pietro-perugino",
+    "gorsel": "fd3b31e7704b88f7",
+    "ad": "Meryem",
+    "x": 0.4,
+    "y": 0.35,
+    "w": 0.2,
+    "h": 0.18
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q368788",
+    "sanatci": "pietro-perugino",
+    "gorsel": "fd3b31e7704b88f7",
+    "ad": "Yuhanna",
+    "x": 0.1,
+    "y": 0.43,
+    "w": 0.15,
+    "h": 0.17
+   }
+  ],
+  "presentation-in-the-temple": [
+   {
+    "madde": 0,
+    "anahtar": "Q3910903",
+    "sanatci": "ambrogio-lorenzetti",
+    "gorsel": "cf1aabe2bb092cd6",
+    "ad": "Simeon ve çocuk",
+    "x": 0.54,
+    "y": 0.57,
+    "w": 0.17,
+    "h": 0.17
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3910903",
+    "sanatci": "ambrogio-lorenzetti",
+    "gorsel": "cf1aabe2bb092cd6",
+    "ad": "Güvercinli rahip",
+    "x": 0.42,
+    "y": 0.53,
+    "w": 0.14,
+    "h": 0.14
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3910903",
+    "sanatci": "ambrogio-lorenzetti",
+    "gorsel": "cf1aabe2bb092cd6",
+    "ad": "Meryem",
+    "x": 0.33,
+    "y": 0.57,
+    "w": 0.17,
+    "h": 0.2
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3910903",
+    "sanatci": "ambrogio-lorenzetti",
+    "gorsel": "cf1aabe2bb092cd6",
+    "ad": "Peygamber Hanna",
+    "x": 0.72,
+    "y": 0.58,
+    "w": 0.14,
+    "h": 0.34
+   }
+  ],
+  "prodigal-son": [
+   {
+    "madde": 0,
+    "anahtar": "Q512755",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "294a50e3d597e924",
+    "ad": "Çıplak ayak tabanı",
+    "x": 0.08,
+    "y": 0.86,
+    "w": 0.23,
+    "h": 0.11
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q512755",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "294a50e3d597e924",
+    "ad": "Babanın iki eli",
+    "x": 0.18,
+    "y": 0.51,
+    "w": 0.2,
+    "h": 0.12
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q512755",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "294a50e3d597e924",
+    "ad": "Büyük oğul",
+    "x": 0.73,
+    "y": 0.13,
+    "w": 0.17,
+    "h": 0.33
+   }
+  ],
+  "queen-of-sheba": [
+   {
+    "madde": 1,
+    "anahtar": "Q7731855",
+    "sanatci": "claude-lorrain",
+    "gorsel": "0192d3414dff6553",
+    "ad": "Sandık yükleyen hamallar",
+    "x": 0.39,
+    "y": 0.78,
+    "w": 0.25,
+    "h": 0.16
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q7731855",
+    "sanatci": "claude-lorrain",
+    "gorsel": "0192d3414dff6553",
+    "ad": "Güneş ve ışık yolu",
+    "x": 0.38,
+    "y": 0.36,
+    "w": 0.16,
+    "h": 0.26
+   }
+  ],
+  "raft-of-the-medusa": [
+   {
+    "madde": 0,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "Dalga ve yelken",
+    "x": 0.17,
+    "y": 0.03,
+    "w": 0.3,
+    "h": 0.42
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "Suya kayan ceset",
+    "x": 0.6,
+    "y": 0.78,
+    "w": 0.38,
+    "h": 0.2
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "Bez sallayan adam",
+    "x": 0.61,
+    "y": 0.06,
+    "w": 0.2,
+    "h": 0.37
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "Ufuktaki Argus",
+    "x": 0.76,
+    "y": 0.34,
+    "w": 0.11,
+    "h": 0.11
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "Baba ve ölü oğul",
+    "x": 0.21,
+    "y": 0.5,
+    "w": 0.26,
+    "h": 0.3
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "ad": "İşaret eden adam",
+    "x": 0.46,
+    "y": 0.25,
+    "w": 0.2,
+    "h": 0.22
+   }
+  ],
+  "rape-of-ganymede": [
+   {
+    "madde": 0,
+    "anahtar": "Q939962",
+    "sanatci": "correggio",
+    "gorsel": "dbfdd088b9130a30",
+    "ad": "Kartal",
+    "x": 0.55,
+    "y": 0.04,
+    "w": 0.25,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q939962",
+    "sanatci": "correggio",
+    "gorsel": "dbfdd088b9130a30",
+    "ad": "Havlayan köpek",
+    "x": 0.1,
+    "y": 0.68,
+    "w": 0.3,
+    "h": 0.32
+   }
+  ],
+  "rape-of-the-sabine-women": [
+   {
+    "madde": 0,
+    "anahtar": "Q27096409",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "3bd32b02065f486a",
+    "ad": "Kaçırılan kadın",
+    "x": 0.08,
+    "y": 0.37,
+    "w": 0.26,
+    "h": 0.43
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q27096409",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "3bd32b02065f486a",
+    "ad": "İşaret veren Romulus",
+    "x": 0.1,
+    "y": 0.03,
+    "w": 0.19,
+    "h": 0.41
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q27096409",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "3bd32b02065f486a",
+    "ad": "Ağlayan çocuklar",
+    "x": 0.36,
+    "y": 0.78,
+    "w": 0.3,
+    "h": 0.16
+   }
+  ],
+  "saint-francis": [
+   {
+    "madde": 0,
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "ad": "Yüz",
+    "x": 0.43,
+    "y": 0.09,
+    "w": 0.15,
+    "h": 0.12
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "ad": "Yaralı el ve kitap",
+    "x": 0.42,
+    "y": 0.26,
+    "w": 0.2,
+    "h": 0.17
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "ad": "Stigmatayı alış",
+    "x": 0.14,
+    "y": 0.27,
+    "w": 0.21,
+    "h": 0.23
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3947115",
+    "sanatci": "giovanni-bellini",
+    "gorsel": "3474edd7feaa5398",
+    "ad": "Masa ve kurukafa",
+    "x": 0.84,
+    "y": 0.57,
+    "w": 0.16,
+    "h": 0.33
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "ad": "Kuşlara vaaz",
+    "x": 0.09,
+    "y": 0.52,
+    "w": 0.26,
+    "h": 0.21
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "ad": "Mucize sahnesi",
+    "x": 0.67,
+    "y": 0.29,
+    "w": 0.27,
+    "h": 0.21
+   }
+  ],
+  "saint-joseph": [
+   {
+    "madde": 2,
+    "anahtar": "Q743643",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "758a3c80412d1ae9",
+    "ad": "Burgu",
+    "x": 0.4,
+    "y": 0.58,
+    "w": 0.28,
+    "h": 0.12
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q743643",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "758a3c80412d1ae9",
+    "ad": "Çocuk İsa",
+    "x": 0.75,
+    "y": 0.23,
+    "w": 0.18,
+    "h": 0.17
+   }
+  ],
+  "saint-martin-and-the-beggar": [
+   {
+    "madde": 0,
+    "anahtar": "Q6119366",
+    "sanatci": "el-greco",
+    "gorsel": "845624ac37110e01",
+    "ad": "Fırfırlı yakalı aziz",
+    "x": 0.44,
+    "y": 0.03,
+    "w": 0.17,
+    "h": 0.12
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q6119366",
+    "sanatci": "el-greco",
+    "gorsel": "845624ac37110e01",
+    "ad": "Pelerini kesen kılıç",
+    "x": 0.29,
+    "y": 0.29,
+    "w": 0.42,
+    "h": 0.12
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q6119366",
+    "sanatci": "el-greco",
+    "gorsel": "845624ac37110e01",
+    "ad": "Dilenci",
+    "x": 0.03,
+    "y": 0.24,
+    "w": 0.27,
+    "h": 0.23
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q6119366",
+    "sanatci": "el-greco",
+    "gorsel": "845624ac37110e01",
+    "ad": "Yeşil pelerin",
+    "x": 0.0,
+    "y": 0.47,
+    "w": 0.33,
+    "h": 0.2
+   }
+  ],
+  "saint-sebastian": [
+   {
+    "madde": 1,
+    "anahtar": "Q3947947",
+    "sanatci": "mattia-preti",
+    "gorsel": "0680b4f07565b5b3",
+    "ad": "Bağlı eller",
+    "x": 0.64,
+    "y": 0.03,
+    "w": 0.14,
+    "h": 0.11
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3947947",
+    "sanatci": "mattia-preti",
+    "gorsel": "0680b4f07565b5b3",
+    "ad": "Oklar",
+    "x": 0.29,
+    "y": 0.37,
+    "w": 0.18,
+    "h": 0.12
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3947947",
+    "sanatci": "mattia-preti",
+    "gorsel": "0680b4f07565b5b3",
+    "ad": "Yukarı bakan yüz",
+    "x": 0.52,
+    "y": 0.18,
+    "w": 0.18,
+    "h": 0.13
+   }
+  ],
+  "salome": [
+   {
+    "madde": 1,
+    "anahtar": "Q3818663",
+    "sanatci": "gustave-moreau",
+    "gorsel": "402e5627eb99c9e4",
+    "ad": "Cellat ve tepsi",
+    "x": 0.67,
+    "y": 0.5,
+    "w": 0.26,
+    "h": 0.37
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3818663",
+    "sanatci": "gustave-moreau",
+    "gorsel": "402e5627eb99c9e4",
+    "ad": "Herod ve Herodias",
+    "x": 0.01,
+    "y": 0.4,
+    "w": 0.21,
+    "h": 0.3
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3818663",
+    "sanatci": "gustave-moreau",
+    "gorsel": "402e5627eb99c9e4",
+    "ad": "Salome",
+    "x": 0.18,
+    "y": 0.48,
+    "w": 0.38,
+    "h": 0.25
+   }
+  ],
+  "salvator-mundi": [
+   {
+    "madde": 0,
+    "anahtar": "Q1892745",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "823ba3bf8908ba0a",
+    "ad": "Kutsayan el",
+    "x": 0.0,
+    "y": 0.42,
+    "w": 0.22,
+    "h": 0.27
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1892745",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "823ba3bf8908ba0a",
+    "ad": "Kristal küre",
+    "x": 0.68,
+    "y": 0.76,
+    "w": 0.32,
+    "h": 0.23
+   }
+  ],
+  "samson-and-delilah": [
+   {
+    "madde": 0,
+    "anahtar": "Q2594673",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "95afd467682e3b4c",
+    "ad": "Uyuyan Şimşon",
+    "x": 0.27,
+    "y": 0.45,
+    "w": 0.48,
+    "h": 0.3
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2594673",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "95afd467682e3b4c",
+    "ad": "Askerler",
+    "x": 0.76,
+    "y": 0.15,
+    "w": 0.2,
+    "h": 0.5
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2594673",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "95afd467682e3b4c",
+    "ad": "Mumlu yaşlı kadın",
+    "x": 0.07,
+    "y": 0.13,
+    "w": 0.2,
+    "h": 0.17
+   }
+  ],
+  "sleeping-venus": [
+   {
+    "madde": 0,
+    "anahtar": "Q500812",
+    "sanatci": "titian",
+    "gorsel": "dea86e220e54de26",
+    "ad": "Uyuyan yüz",
+    "x": 0.08,
+    "y": 0.25,
+    "w": 0.2,
+    "h": 0.26
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q500812",
+    "sanatci": "titian",
+    "gorsel": "dea86e220e54de26",
+    "ad": "Köy ve evler",
+    "x": 0.62,
+    "y": 0.14,
+    "w": 0.36,
+    "h": 0.24
+   }
+  ],
+  "storm-on-the-sea-of-galilee": [
+   {
+    "madde": 0,
+    "anahtar": "Q2246489",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "ab57b8ec5b7cb195",
+    "ad": "Pruvadaki dalga",
+    "x": 0.1,
+    "y": 0.56,
+    "w": 0.25,
+    "h": 0.24
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2246489",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "ab57b8ec5b7cb195",
+    "ad": "Sakin İsa",
+    "x": 0.58,
+    "y": 0.7,
+    "w": 0.12,
+    "h": 0.1
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2246489",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "ab57b8ec5b7cb195",
+    "ad": "Gökteki aralık",
+    "x": 0.0,
+    "y": 0.1,
+    "w": 0.3,
+    "h": 0.35
+   }
+  ],
+  "supper-at-emmaus": [
+   {
+    "madde": 0,
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "ad": "Sakalsız İsa",
+    "x": 0.37,
+    "y": 0.21,
+    "w": 0.3,
+    "h": 0.42
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "ad": "Açılan kollar",
+    "x": 0.65,
+    "y": 0.3,
+    "w": 0.34,
+    "h": 0.36
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "ad": "Masadaki yemek",
+    "x": 0.27,
+    "y": 0.56,
+    "w": 0.3,
+    "h": 0.23
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "ad": "Hancı ve gölge",
+    "x": 0.19,
+    "y": 0.05,
+    "w": 0.26,
+    "h": 0.38
+   }
+  ],
+  "susanna-and-the-elders": [
+   {
+    "madde": 0,
+    "anahtar": "Q3978277",
+    "sanatci": "tintoretto",
+    "gorsel": "3431e677bfd250c7",
+    "ad": "Susanna",
+    "x": 0.65,
+    "y": 0.13,
+    "w": 0.3,
+    "h": 0.6
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3978274",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "55521adefbe59817",
+    "ad": "İki ihtiyar",
+    "x": 0.2,
+    "y": 0.07,
+    "w": 0.75,
+    "h": 0.33
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3978274",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "55521adefbe59817",
+    "ad": "İten el",
+    "x": 0.68,
+    "y": 0.3,
+    "w": 0.14,
+    "h": 0.12
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3978277",
+    "sanatci": "tintoretto",
+    "gorsel": "3431e677bfd250c7",
+    "ad": "Ayna",
+    "x": 0.25,
+    "y": 0.46,
+    "w": 0.15,
+    "h": 0.36
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3978277",
+    "sanatci": "tintoretto",
+    "gorsel": "3431e677bfd250c7",
+    "ad": "Gül çardağı",
+    "x": 0.18,
+    "y": 0.0,
+    "w": 0.27,
+    "h": 0.42
+   }
+  ],
+  "temptation-of-saint-anthony": [
+   {
+    "madde": 0,
+    "anahtar": "Q2327759",
+    "sanatci": "michelangelo",
+    "gorsel": "0d4eb00a9518e185",
+    "ad": "Aziz Antonius",
+    "x": 0.4,
+    "y": 0.24,
+    "w": 0.15,
+    "h": 0.15
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2327759",
+    "sanatci": "michelangelo",
+    "gorsel": "0d4eb00a9518e185",
+    "ad": "Pullu şeytan",
+    "x": 0.08,
+    "y": 0.18,
+    "w": 0.22,
+    "h": 0.25
+   }
+  ],
+  "the-nightmare": [
+   {
+    "madde": 0,
+    "anahtar": "Q2317837",
+    "sanatci": "henry-fuseli",
+    "gorsel": "67c5090b4b4e30c0",
+    "ad": "Geriye düşen baş",
+    "x": 0.81,
+    "y": 0.56,
+    "w": 0.14,
+    "h": 0.17
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2317837",
+    "sanatci": "henry-fuseli",
+    "gorsel": "67c5090b4b4e30c0",
+    "ad": "Yaratığın bakışı",
+    "x": 0.58,
+    "y": 0.07,
+    "w": 0.13,
+    "h": 0.16
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2317837",
+    "sanatci": "henry-fuseli",
+    "gorsel": "67c5090b4b4e30c0",
+    "ad": "Perdeden çıkan at",
+    "x": 0.18,
+    "y": 0.09,
+    "w": 0.16,
+    "h": 0.24
+   }
+  ],
+  "the-swing": [
+   {
+    "madde": 0,
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "ad": "Salıncaktaki kadın",
+    "x": 0.28,
+    "y": 0.5,
+    "w": 0.4,
+    "h": 0.23
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "ad": "Çalılıktaki âşık",
+    "x": 0.05,
+    "y": 0.73,
+    "w": 0.26,
+    "h": 0.19
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "ad": "Susturan Cupid",
+    "x": 0.0,
+    "y": 0.45,
+    "w": 0.11,
+    "h": 0.19
+   }
+  ],
+  "three-graces": [
+   {
+    "madde": 0,
+    "anahtar": "Q2268524",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "e7129ec85180e571",
+    "ad": "Saydam tül",
+    "x": 0.32,
+    "y": 0.38,
+    "w": 0.12,
+    "h": 0.22
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2268524",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "e7129ec85180e571",
+    "ad": "Sırtı dönük güzel",
+    "x": 0.33,
+    "y": 0.19,
+    "w": 0.2,
+    "h": 0.5
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2268524",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "e7129ec85180e571",
+    "ad": "Çiçek çelengi",
+    "x": 0.38,
+    "y": 0.0,
+    "w": 0.42,
+    "h": 0.17
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2268524",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "e7129ec85180e571",
+    "ad": "Geyikli kır",
+    "x": 0.06,
+    "y": 0.62,
+    "w": 0.17,
+    "h": 0.14
+   }
+  ],
+  "tribute-money": [
+   {
+    "madde": 2,
+    "anahtar": "Q1759631",
+    "sanatci": "masaccio",
+    "gorsel": "a1a25dc07b167736",
+    "ad": "İsa'nın işareti",
+    "x": 0.33,
+    "y": 0.37,
+    "w": 0.22,
+    "h": 0.33
+   }
+  ],
+  "venus-and-adonis": [
+   {
+    "madde": 2,
+    "anahtar": "Q1988152",
+    "sanatci": "paolo-veronese",
+    "gorsel": "a7566007a77748ed",
+    "ad": "Cupid ve köpek",
+    "x": 0.0,
+    "y": 0.45,
+    "w": 0.33,
+    "h": 0.5
+   }
+  ],
+  "venus-and-mars": [
+   {
+    "madde": 0,
+    "anahtar": "Q2293953",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "1a78b275a1d0d1cc",
+    "ad": "Uyanık Venüs",
+    "x": 0.1,
+    "y": 0.02,
+    "w": 0.12,
+    "h": 0.28
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2293953",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "1a78b275a1d0d1cc",
+    "ad": "Zırhtaki satyr",
+    "x": 0.87,
+    "y": 0.55,
+    "w": 0.13,
+    "h": 0.4
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2293953",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "1a78b275a1d0d1cc",
+    "ad": "Uyuyan Mars",
+    "x": 0.8,
+    "y": 0.05,
+    "w": 0.13,
+    "h": 0.25
+   }
+  ],
+  "venus-at-her-toilet": [
+   {
+    "madde": 0,
+    "anahtar": "Q275349",
+    "sanatci": "diego-velazquez",
+    "gorsel": "2a8f74b49fc4224c",
+    "ad": "Aynadaki yüz",
+    "x": 0.32,
+    "y": 0.2,
+    "w": 0.22,
+    "h": 0.36
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q275349",
+    "sanatci": "diego-velazquez",
+    "gorsel": "2a8f74b49fc4224c",
+    "ad": "Yaysız Cupid",
+    "x": 0.02,
+    "y": 0.03,
+    "w": 0.28,
+    "h": 0.55
+   }
+  ],
+  "visitation": [
+   {
+    "madde": 0,
+    "anahtar": "Q2467082",
+    "sanatci": "giulio-romano",
+    "gorsel": "5b2c844643301144",
+    "ad": "Kenetlenen eller",
+    "x": 0.44,
+    "y": 0.47,
+    "w": 0.17,
+    "h": 0.11
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2467082",
+    "sanatci": "giulio-romano",
+    "gorsel": "5b2c844643301144",
+    "ad": "Meryem'in karnındaki el",
+    "x": 0.6,
+    "y": 0.17,
+    "w": 0.22,
+    "h": 0.36
+   }
+  ],
+  "witches": [
+   {
+    "madde": 2,
+    "anahtar": "Q2528477",
+    "sanatci": "francisco-de-goya",
+    "gorsel": "0058c0556cfadccc",
+    "ad": "Keçi Şeytan",
+    "x": 0.18,
+    "y": 0.05,
+    "w": 0.13,
+    "h": 0.9
+   }
+  ]
+ },
+ "sanatcilar": {
+  "agnolo-bronzino": [
+   {
+    "ad": "Mermer gibi soğuk ten",
+    "anahtar": "Q1430990",
+    "sanatci": "agnolo-bronzino",
+    "gorsel": "25b7eea09e688005",
+    "x": 0.27,
+    "y": 0.17,
+    "w": 0.34,
+    "h": 0.2
+   },
+   {
+    "ad": "Buz gibi titiz ayrıntı",
+    "anahtar": "Q1430990",
+    "sanatci": "agnolo-bronzino",
+    "gorsel": "25b7eea09e688005",
+    "x": 0.79,
+    "y": 0.75,
+    "w": 0.21,
+    "h": 0.17
+   }
+  ],
+  "albrecht-durer": [
+   {
+    "ad": "İnce çapraz taramalar",
+    "anahtar": "Q1755464",
+    "sanatci": "albrecht-durer",
+    "gorsel": "e6244a56e179bf44",
+    "x": 0.48,
+    "y": 0.15,
+    "w": 0.14,
+    "h": 0.14
+   },
+   {
+    "ad": "Metal gibi dokular",
+    "anahtar": "Q748518",
+    "sanatci": "albrecht-durer",
+    "gorsel": "d16522bee1ccbadb",
+    "x": 0.22,
+    "y": 0.2,
+    "w": 0.27,
+    "h": 0.28
+   },
+   {
+    "ad": "Ağır, düşünceli figür",
+    "anahtar": "Q1362177",
+    "sanatci": "albrecht-durer",
+    "gorsel": "6d65bef27e1d8cd0",
+    "x": 0.62,
+    "y": 0.3,
+    "w": 0.18,
+    "h": 0.18
+   }
+  ],
+  "alexandre-cabanel": [
+   {
+    "ad": "Porselen gibi pürüzsüz ten",
+    "anahtar": "Q1212861",
+    "sanatci": "alexandre-cabanel",
+    "gorsel": "02e8b0494cae100a",
+    "x": 0.38,
+    "y": 0.5,
+    "w": 0.28,
+    "h": 0.2
+   },
+   {
+    "ad": "Uçuşan küçük melekler",
+    "anahtar": "Q1212861",
+    "sanatci": "alexandre-cabanel",
+    "gorsel": "02e8b0494cae100a",
+    "x": 0.41,
+    "y": 0.08,
+    "w": 0.37,
+    "h": 0.33
+   }
+  ],
+  "andrea-mantegna": [
+   {
+    "ad": "Cüretkâr kısaltma",
+    "anahtar": "Q546297",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "82ea72bf63f093f4",
+    "x": 0.34,
+    "y": 0.74,
+    "w": 0.4,
+    "h": 0.24
+   },
+   {
+    "ad": "Taş gibi sert yüzey",
+    "anahtar": "Q546297",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "82ea72bf63f093f4",
+    "x": 0.74,
+    "y": 0.6,
+    "w": 0.24,
+    "h": 0.18
+   },
+   {
+    "ad": "Roma askerî ayrıntıları",
+    "anahtar": "Q3884945",
+    "sanatci": "andrea-mantegna",
+    "gorsel": "edd06060e3ca6112",
+    "x": 0.7,
+    "y": 0.51,
+    "w": 0.2,
+    "h": 0.14
+   }
+  ],
+  "angelica-kauffman": [
+   {
+    "ad": "Duygulu ama sakin kadın",
+    "anahtar": "Q5703908",
+    "sanatci": "angelica-kauffman",
+    "gorsel": "9b743ec9cad46572",
+    "x": 0.64,
+    "y": 0.21,
+    "w": 0.18,
+    "h": 0.19
+   },
+   {
+    "ad": "Zarif, idealize figür",
+    "anahtar": "angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)",
+    "sanatci": "angelica-kauffman",
+    "gorsel": "cba7efe328d094ed",
+    "x": 0.48,
+    "y": 0.16,
+    "w": 0.12,
+    "h": 0.16
+   }
+  ],
+  "annibale-carracci": [
+   {
+    "ad": "Sağlıklı, idealize figür",
+    "anahtar": "Q3998957",
+    "sanatci": "annibale-carracci",
+    "gorsel": "8295423c12b95915",
+    "x": 0.12,
+    "y": 0.25,
+    "w": 0.16,
+    "h": 0.22
+   },
+   {
+    "ad": "Neşeli mitoloji",
+    "anahtar": "Q3998957",
+    "sanatci": "annibale-carracci",
+    "gorsel": "8295423c12b95915",
+    "x": 0.69,
+    "y": 0.27,
+    "w": 0.16,
+    "h": 0.24
+   }
+  ],
+  "anthony-van-dyck": [
+   {
+    "ad": "Dantel ve ipek",
+    "anahtar": "Q3998985",
+    "sanatci": "anthony-van-dyck",
+    "gorsel": "9793a895eb086899",
+    "x": 0.0,
+    "y": 0.44,
+    "w": 0.27,
+    "h": 0.22
+   },
+   {
+    "ad": "Soylu, soğukkanlı duruş",
+    "anahtar": "Q3998985",
+    "sanatci": "anthony-van-dyck",
+    "gorsel": "9793a895eb086899",
+    "x": 0.69,
+    "y": 0.17,
+    "w": 0.18,
+    "h": 0.3
+   }
+  ],
+  "arnold-bocklin": [
+   {
+    "ad": "Koyu, sivri selviler",
+    "anahtar": "Q669994",
+    "sanatci": "arnold-bocklin",
+    "gorsel": "53498322e4721302",
+    "x": 0.35,
+    "y": 0.05,
+    "w": 0.31,
+    "h": 0.62
+   },
+   {
+    "ad": "Ölüm teması",
+    "anahtar": "Q669994",
+    "sanatci": "arnold-bocklin",
+    "gorsel": "53498322e4721302",
+    "x": 0.3,
+    "y": 0.76,
+    "w": 0.13,
+    "h": 0.15
+   }
+  ],
+  "artemisia-gentileschi": [
+   {
+    "ad": "Kararlı kadın kahraman",
+    "anahtar": "Q3769169",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "daddc49c8e471108",
+    "x": 0.8,
+    "y": 0.15,
+    "w": 0.16,
+    "h": 0.17
+   },
+   {
+    "ad": "Güçlü kollar, şiddet anı",
+    "anahtar": "Q2247406",
+    "sanatci": "artemisia-gentileschi",
+    "gorsel": "e51941337d93e76a",
+    "x": 0.19,
+    "y": 0.36,
+    "w": 0.16,
+    "h": 0.18
+   }
+  ],
+  "benjamin-west": [
+   {
+    "ad": "Işık kahramanda toplanır",
+    "anahtar": "Q956541",
+    "sanatci": "benjamin-west",
+    "gorsel": "ed1fc87aaad38067",
+    "x": 0.5,
+    "y": 0.48,
+    "w": 0.14,
+    "h": 0.24
+   },
+   {
+    "ad": "Dönemin giysileri",
+    "anahtar": "Q956541",
+    "sanatci": "benjamin-west",
+    "gorsel": "ed1fc87aaad38067",
+    "x": 0.81,
+    "y": 0.32,
+    "w": 0.16,
+    "h": 0.3
+   }
+  ],
+  "berthe-morisot": [
+   {
+    "ad": "Uçuşan, açık fırça",
+    "anahtar": "Q5966403",
+    "sanatci": "berthe-morisot",
+    "gorsel": "882da737ad3a7860",
+    "x": 0.6,
+    "y": 0.08,
+    "w": 0.28,
+    "h": 0.3
+   }
+  ],
+  "bonaventura-berlinghieri": [
+   {
+    "ad": "Tam cepheden, sabit bakış",
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "x": 0.43,
+    "y": 0.09,
+    "w": 0.15,
+    "h": 0.12
+   },
+   {
+    "ad": "Yanlarda küçük sahne kutuları",
+    "anahtar": "Q3947103",
+    "sanatci": "bonaventura-berlinghieri",
+    "gorsel": "8f8ae43f7bffc40f",
+    "x": 0.67,
+    "y": 0.29,
+    "w": 0.27,
+    "h": 0.21
+   }
+  ],
+  "camille-corot": [
+   {
+    "ad": "Gümüşi, puslu uzaklık",
+    "anahtar": "Q24283",
+    "sanatci": "camille-corot",
+    "gorsel": "3b3588c983a651fe",
+    "x": 0.05,
+    "y": 0.25,
+    "w": 0.9,
+    "h": 0.11
+   }
+  ],
+  "caravaggio": [
+   {
+    "ad": "Kaba, sıradan figür",
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "x": 0.07,
+    "y": 0.33,
+    "w": 0.32,
+    "h": 0.48
+   },
+   {
+    "ad": "Tek yönlü sert ışık",
+    "anahtar": "Q969377",
+    "sanatci": "caravaggio",
+    "gorsel": "3716dff9fa186467",
+    "x": 0.508,
+    "y": 0.001,
+    "w": 0.32,
+    "h": 0.336
+   },
+   {
+    "ad": "Canlı natürmort",
+    "anahtar": "Q318947",
+    "sanatci": "caravaggio",
+    "gorsel": "9e546be8055846af",
+    "x": 0.55,
+    "y": 0.6,
+    "w": 0.22,
+    "h": 0.22
+   }
+  ],
+  "caspar-david-friedrich": [
+   {
+    "ad": "Sırtı dönük figür",
+    "anahtar": "Q311243",
+    "sanatci": "caspar-david-friedrich",
+    "gorsel": "849127cc0c76ca35",
+    "x": 0.44,
+    "y": 0.32,
+    "w": 0.11,
+    "h": 0.08
+   },
+   {
+    "ad": "Sisli, sessiz manzara",
+    "anahtar": "Q311243",
+    "sanatci": "caspar-david-friedrich",
+    "gorsel": "849127cc0c76ca35",
+    "x": 0.0,
+    "y": 0.68,
+    "w": 0.24,
+    "h": 0.16
+   }
+  ],
+  "charles-le-brun": [
+   {
+    "ad": "Ortada jest yapan kahraman",
+    "anahtar": "Q27097122",
+    "sanatci": "charles-le-brun",
+    "gorsel": "db789aea131d0b6d",
+    "x": 0.56,
+    "y": 0.18,
+    "w": 0.16,
+    "h": 0.27
+   }
+  ],
+  "cimabue": [
+   {
+    "ad": "Yana doğru sarkan beden",
+    "anahtar": "Q3698260",
+    "sanatci": "cimabue",
+    "gorsel": "3493074a69d0b6d4",
+    "x": 0.37,
+    "y": 0.62,
+    "w": 0.21,
+    "h": 0.25
+   },
+   {
+    "ad": "Yüzde hafif gölgelenme",
+    "anahtar": "Q68496636",
+    "sanatci": "cimabue",
+    "gorsel": "6eaa0e81bdb695b7",
+    "x": 0.4,
+    "y": 0.27,
+    "w": 0.17,
+    "h": 0.15
+   }
+  ],
+  "claude-lorrain": [
+   {
+    "ad": "Ufukta alçak güneş",
+    "anahtar": "Q7731855",
+    "sanatci": "claude-lorrain",
+    "gorsel": "0192d3414dff6553",
+    "x": 0.38,
+    "y": 0.36,
+    "w": 0.16,
+    "h": 0.26
+   },
+   {
+    "ad": "Çerçeve gibi klasik bina",
+    "anahtar": "Q7731855",
+    "sanatci": "claude-lorrain",
+    "gorsel": "0192d3414dff6553",
+    "x": 0.13,
+    "y": 0.1,
+    "w": 0.12,
+    "h": 0.17
+   },
+   {
+    "ad": "Küçük figürler",
+    "anahtar": "Q3909309",
+    "sanatci": "claude-lorrain",
+    "gorsel": "3124538ac2720d16",
+    "x": 0.47,
+    "y": 0.77,
+    "w": 0.25,
+    "h": 0.17
+   }
+  ],
+  "claude-monet": [
+   {
+    "ad": "Sudaki yansıma",
+    "anahtar": "Q328523",
+    "sanatci": "claude-monet",
+    "gorsel": "240bcac8b1ffb49e",
+    "x": 0.55,
+    "y": 0.5,
+    "w": 0.11,
+    "h": 0.3
+   },
+   {
+    "ad": "Titreşen ışık",
+    "anahtar": "Q328523",
+    "sanatci": "claude-monet",
+    "gorsel": "240bcac8b1ffb49e",
+    "x": 0.55,
+    "y": 0.25,
+    "w": 0.11,
+    "h": 0.1
+   }
+  ],
+  "correggio": [
+   {
+    "ad": "Aşağıdan bakış, dönen figürler",
+    "anahtar": "Q771210",
+    "sanatci": "correggio",
+    "gorsel": "00c7f5bfd3d0f27a",
+    "x": 0.3,
+    "y": 0.17,
+    "w": 0.4,
+    "h": 0.2
+   },
+   {
+    "ad": "Tatlı yüz, krem ten",
+    "anahtar": "Q939962",
+    "sanatci": "correggio",
+    "gorsel": "dbfdd088b9130a30",
+    "x": 0.48,
+    "y": 0.13,
+    "w": 0.22,
+    "h": 0.12
+   },
+   {
+    "ad": "Buğulu, sıcak ışık",
+    "anahtar": "Q1527541",
+    "sanatci": "correggio",
+    "gorsel": "0e0fde13a4d47d0c",
+    "x": 0.5,
+    "y": 0.37,
+    "w": 0.25,
+    "h": 0.21
+   }
+  ],
+  "daniele-da-volterra": [
+   {
+    "ad": "Kaslı, bükülen beden",
+    "anahtar": "Q140161127",
+    "sanatci": "daniele-da-volterra",
+    "gorsel": "ae956b89ec04c8f7",
+    "x": 0.2,
+    "y": 0.26,
+    "w": 0.24,
+    "h": 0.29
+   },
+   {
+    "ad": "Sıkışık güç gösterisi",
+    "anahtar": "Q140161127",
+    "sanatci": "daniele-da-volterra",
+    "gorsel": "ae956b89ec04c8f7",
+    "x": 0.62,
+    "y": 0.12,
+    "w": 0.36,
+    "h": 0.24
+   }
+  ],
+  "dante-gabriel-rossetti": [
+   {
+    "ad": "Dolgun dudak, dalgın bakış",
+    "anahtar": "Q977777",
+    "sanatci": "dante-gabriel-rossetti",
+    "gorsel": "38b5f445f713b1a2",
+    "x": 0.29,
+    "y": 0.13,
+    "w": 0.27,
+    "h": 0.15
+   },
+   {
+    "ad": "Sembolik nesne",
+    "anahtar": "Q977777",
+    "sanatci": "dante-gabriel-rossetti",
+    "gorsel": "38b5f445f713b1a2",
+    "x": 0.33,
+    "y": 0.29,
+    "w": 0.21,
+    "h": 0.1
+   }
+  ],
+  "diego-velazquez": [
+   {
+    "ad": "Ayna oyunu",
+    "anahtar": "Q208758",
+    "sanatci": "diego-velazquez",
+    "gorsel": "bcb91846d700eabf",
+    "x": 0.37,
+    "y": 0.51,
+    "w": 0.1,
+    "h": 0.11
+   },
+   {
+    "ad": "Gevşek fırçalı ipek",
+    "anahtar": "Q1240092",
+    "sanatci": "diego-velazquez",
+    "gorsel": "a49e1d7acca971b6",
+    "x": 0.2,
+    "y": 0.38,
+    "w": 0.4,
+    "h": 0.22
+   },
+   {
+    "ad": "Yapmacıksız yüz",
+    "anahtar": "Q1240092",
+    "sanatci": "diego-velazquez",
+    "gorsel": "a49e1d7acca971b6",
+    "x": 0.29,
+    "y": 0.12,
+    "w": 0.2,
+    "h": 0.24
+   }
+  ],
+  "dirck-van-baburen": [
+   {
+    "ad": "Kaba, gündelik tipler",
+    "anahtar": "Q63341",
+    "sanatci": "dirck-van-baburen",
+    "gorsel": "a670377d15e5b599",
+    "x": 0.06,
+    "y": 0.2,
+    "w": 0.23,
+    "h": 0.23
+   },
+   {
+    "ad": "Yüzeye sıkışmış iri figür",
+    "anahtar": "Q63341",
+    "sanatci": "dirck-van-baburen",
+    "gorsel": "a670377d15e5b599",
+    "x": 0.24,
+    "y": 0.02,
+    "w": 0.32,
+    "h": 0.27
+   }
+  ],
+  "domenico-di-michelino": [
+   {
+    "ad": "Kırmızı giysili Dante",
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "x": 0.534,
+    "y": 0.265,
+    "w": 0.177,
+    "h": 0.23
+   },
+   {
+    "ad": "Cehennem'in kapısı",
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "x": 0,
+    "y": 0.667,
+    "w": 0.225,
+    "h": 0.259
+   },
+   {
+    "ad": "Kubbesiyle Floransa",
+    "anahtar": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+    "sanatci": "domenico-di-michelino",
+    "gorsel": "558c4855c93bb93f",
+    "x": 0.708,
+    "y": 0.223,
+    "w": 0.177,
+    "h": 0.191
+   }
+  ],
+  "donato-bramante": [
+   {
+    "ad": "Pencereyle kurulan derinlik",
+    "anahtar": "Q3697588",
+    "sanatci": "donato-bramante",
+    "gorsel": "4b1c880548f2048a",
+    "x": 0.0,
+    "y": 0.02,
+    "w": 0.27,
+    "h": 0.35
+   },
+   {
+    "ad": "Antik süslemeli pilaster",
+    "anahtar": "Q3697588",
+    "sanatci": "donato-bramante",
+    "gorsel": "4b1c880548f2048a",
+    "x": 0.6,
+    "y": 0.0,
+    "w": 0.18,
+    "h": 0.2
+   }
+  ],
+  "duccio-di-buoninsegna": [
+   {
+    "ad": "İnce, zarif figürler",
+    "anahtar": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+    "sanatci": "duccio-di-buoninsegna",
+    "gorsel": "0b55d8270d39493e",
+    "x": 0.23,
+    "y": 0.48,
+    "w": 0.18,
+    "h": 0.12
+   },
+   {
+    "ad": "Mimari derinlik denemesi",
+    "anahtar": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+    "sanatci": "duccio-di-buoninsegna",
+    "gorsel": "0b55d8270d39493e",
+    "x": 0.13,
+    "y": 0.01,
+    "w": 0.26,
+    "h": 0.21
+   }
+  ],
+  "edgar-degas": [
+   {
+    "ad": "Hareket hâlinde balerin",
+    "anahtar": "Q3821820",
+    "sanatci": "edgar-degas",
+    "gorsel": "9e8eabe4e6f1d57f",
+    "x": 0.1,
+    "y": 0.23,
+    "w": 0.18,
+    "h": 0.2
+   },
+   {
+    "ad": "Kesilmiş, eğik kompozisyon",
+    "anahtar": "Q1239950",
+    "sanatci": "edgar-degas",
+    "gorsel": "1c21870ed64ad05e",
+    "x": 0.0,
+    "y": 0.48,
+    "w": 0.7,
+    "h": 0.2
+   }
+  ],
+  "edouard-manet": [
+   {
+    "ad": "İzleyiciye dik bakış",
+    "anahtar": "Q152509",
+    "sanatci": "edouard-manet",
+    "gorsel": "63083d990db300e3",
+    "x": 0.31,
+    "y": 0.43,
+    "w": 0.13,
+    "h": 0.15
+   },
+   {
+    "ad": "Güçlü siyah lekeler",
+    "anahtar": "Q152509",
+    "sanatci": "edouard-manet",
+    "gorsel": "63083d990db300e3",
+    "x": 0.57,
+    "y": 0.41,
+    "w": 0.28,
+    "h": 0.2
+   },
+   {
+    "ad": "Modern Paris hayatı",
+    "anahtar": "Q1245354",
+    "sanatci": "edouard-manet",
+    "gorsel": "678e066315d329af",
+    "x": 0.39,
+    "y": 0.02,
+    "w": 0.2,
+    "h": 0.3
+   }
+  ],
+  "edvard-munch": [
+   {
+    "ad": "Çarpılmış yüz",
+    "anahtar": "Q471379",
+    "sanatci": "edvard-munch",
+    "gorsel": "409de8256c60fe8d",
+    "x": 0.39,
+    "y": 0.49,
+    "w": 0.21,
+    "h": 0.2
+   },
+   {
+    "ad": "Kızıl gökyüzü",
+    "anahtar": "Q471379",
+    "sanatci": "edvard-munch",
+    "gorsel": "409de8256c60fe8d",
+    "x": 0.05,
+    "y": 0.02,
+    "w": 0.45,
+    "h": 0.2
+   }
+  ],
+  "el-greco": [
+   {
+    "ad": "Alev gibi uzayan figürler",
+    "anahtar": "Q94802",
+    "sanatci": "el-greco",
+    "gorsel": "e3a7a09cffa62fac",
+    "x": 0.25,
+    "y": 0.02,
+    "w": 0.4,
+    "h": 0.4
+   },
+   {
+    "ad": "Göğe çevrili, vecd içinde",
+    "anahtar": "Q1220013",
+    "sanatci": "el-greco",
+    "gorsel": "fde88540777e9753",
+    "x": 0.06,
+    "y": 0.18,
+    "w": 0.27,
+    "h": 0.32
+   },
+   {
+    "ad": "Asit yeşili renk",
+    "anahtar": "Q6119366",
+    "sanatci": "el-greco",
+    "gorsel": "845624ac37110e01",
+    "x": 0.0,
+    "y": 0.47,
+    "w": 0.33,
+    "h": 0.2
+   }
+  ],
+  "elisabeth-vigee-le-brun": [
+   {
+    "ad": "Parlak, yumuşak ten",
+    "anahtar": "Q3937621",
+    "sanatci": "elisabeth-vigee-le-brun",
+    "gorsel": "31c5fe2dce1fcddf",
+    "x": 0.32,
+    "y": 0.21,
+    "w": 0.22,
+    "h": 0.2
+   }
+  ],
+  "ernst-ludwig-kirchner": [
+   {
+    "ad": "Maske gibi yüzler",
+    "anahtar": "Q3476580",
+    "sanatci": "ernst-ludwig-kirchner",
+    "gorsel": "c2095855fc4f509b",
+    "x": 0.25,
+    "y": 0.17,
+    "w": 0.4,
+    "h": 0.15
+   },
+   {
+    "ad": "Asitli renk karşıtlığı",
+    "anahtar": "Q3476580",
+    "sanatci": "ernst-ludwig-kirchner",
+    "gorsel": "c2095855fc4f509b",
+    "x": 0.14,
+    "y": 0.45,
+    "w": 0.12,
+    "h": 0.24
+   }
+  ],
+  "eugene-delacroix": [
+   {
+    "ad": "Sıcak, canlı renkler",
+    "anahtar": "Q29530",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "d95b0d9ccf1fd331",
+    "x": 0.33,
+    "y": 0.0,
+    "w": 0.35,
+    "h": 0.22
+   },
+   {
+    "ad": "Kaslı, ihtiraslı beden",
+    "anahtar": "Q2354251",
+    "sanatci": "eugene-delacroix",
+    "gorsel": "e997fbcec2932cf8",
+    "x": 0.29,
+    "y": 0.72,
+    "w": 0.08,
+    "h": 0.1
+   }
+  ],
+  "fra-angelico": [
+   {
+    "ad": "Renkli kanatlı melek",
+    "anahtar": "Q2378534",
+    "sanatci": "fra-angelico",
+    "gorsel": "8fda010e67a76e56",
+    "x": 0.121,
+    "y": 0.285,
+    "w": 0.353,
+    "h": 0.601
+   },
+   {
+    "ad": "Işıklı, gölgesi az yüz",
+    "anahtar": "Q2378534",
+    "sanatci": "fra-angelico",
+    "gorsel": "8fda010e67a76e56",
+    "x": 0.541,
+    "y": 0.266,
+    "w": 0.334,
+    "h": 0.601
+   },
+   {
+    "ad": "Sade revaklı mimari",
+    "anahtar": "Q2378534",
+    "sanatci": "fra-angelico",
+    "gorsel": "8fda010e67a76e56",
+    "x": 0.417,
+    "y": 0.266,
+    "w": 0.153,
+    "h": 0.145
+   }
+  ],
+  "francesco-salviati": [
+   {
+    "ad": "Parlak, yanardöner kumaş",
+    "anahtar": "Q18572249",
+    "sanatci": "francesco-salviati",
+    "gorsel": "c0eda9a627ae200d",
+    "x": 0.0,
+    "y": 0.62,
+    "w": 0.24,
+    "h": 0.28
+   },
+   {
+    "ad": "Uzun, zarif figür",
+    "anahtar": "Q18572249",
+    "sanatci": "francesco-salviati",
+    "gorsel": "c0eda9a627ae200d",
+    "x": 0.07,
+    "y": 0.24,
+    "w": 0.19,
+    "h": 0.4
+   }
+  ],
+  "francesco-solimena": [
+   {
+    "ad": "Sert ışık, koyu gölge",
+    "anahtar": "Q20087509",
+    "sanatci": "francesco-solimena",
+    "gorsel": "2b37c6abcb9eef9c",
+    "x": 0.18,
+    "y": 0.2,
+    "w": 0.16,
+    "h": 0.13
+   }
+  ],
+  "francis-bacon": [
+   {
+    "ad": "Çığlık atan ağız",
+    "anahtar": "francis-bacon|Three Studies for Figures at the Base of a Crucifixion",
+    "sanatci": "francis-bacon",
+    "gorsel": "wikiart:https://uploads0.wikiart.org/images/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944.jpg!HalfHD.jpg",
+    "x": 0.69,
+    "y": 0.27,
+    "w": 0.1,
+    "h": 0.19
+   },
+   {
+    "ad": "Bulanık, eriyen suratlar",
+    "anahtar": "francis-bacon|Three Studies for Figures at the Base of a Crucifixion",
+    "sanatci": "francis-bacon",
+    "gorsel": "wikiart:https://uploads0.wikiart.org/images/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944.jpg!HalfHD.jpg",
+    "x": 0.34,
+    "y": 0.36,
+    "w": 0.1,
+    "h": 0.18
+   }
+  ],
+  "francisco-de-goya": [
+   {
+    "ad": "Yüzsüz askerler",
+    "anahtar": "Q1091086",
+    "sanatci": "francisco-de-goya",
+    "gorsel": "cccb232e79e1caa9",
+    "x": 0.62,
+    "y": 0.38,
+    "w": 0.3,
+    "h": 0.24
+   },
+   {
+    "ad": "Sert ışık-gölge",
+    "anahtar": "Q1091086",
+    "sanatci": "francisco-de-goya",
+    "gorsel": "cccb232e79e1caa9",
+    "x": 0.22,
+    "y": 0.4,
+    "w": 0.18,
+    "h": 0.22
+   },
+   {
+    "ad": "Hayalî canavar",
+    "anahtar": "Q2528477",
+    "sanatci": "francisco-de-goya",
+    "gorsel": "0058c0556cfadccc",
+    "x": 0.18,
+    "y": 0.05,
+    "w": 0.13,
+    "h": 0.9
+   }
+  ],
+  "francisco-de-zurbaran": [
+   {
+    "ad": "Koyu fonda tek başına",
+    "anahtar": "Q4693305",
+    "sanatci": "francisco-de-zurbaran",
+    "gorsel": "223aceeefb9b0720",
+    "x": 0.09,
+    "y": 0.34,
+    "w": 0.22,
+    "h": 0.4
+   },
+   {
+    "ad": "Keskin, kalın kıvrımlar",
+    "anahtar": "Q3221342",
+    "sanatci": "francisco-de-zurbaran",
+    "gorsel": "57fb08eeb9b2dd1b",
+    "x": 0.37,
+    "y": 0.41,
+    "w": 0.34,
+    "h": 0.27
+   }
+  ],
+  "francois-boucher": [
+   {
+    "ad": "Porselen gibi dolgun ten",
+    "anahtar": "Q1131176",
+    "sanatci": "francois-boucher",
+    "gorsel": "7e359200da34f087",
+    "x": 0.35,
+    "y": 0.33,
+    "w": 0.22,
+    "h": 0.24
+   },
+   {
+    "ad": "Pastel mavi ve pembe",
+    "anahtar": "Q1131176",
+    "sanatci": "francois-boucher",
+    "gorsel": "7e359200da34f087",
+    "x": 0.12,
+    "y": 0.38,
+    "w": 0.08,
+    "h": 0.24
+   }
+  ],
+  "frans-hals": [
+   {
+    "ad": "Konuşur gibi gülümseme",
+    "anahtar": "Q650635",
+    "sanatci": "frans-hals",
+    "gorsel": "23e858f08d6d306a",
+    "x": 0.35,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.22
+   },
+   {
+    "ad": "Hızlı, zikzaklı fırça",
+    "anahtar": "Q650635",
+    "sanatci": "frans-hals",
+    "gorsel": "23e858f08d6d306a",
+    "x": 0.31,
+    "y": 0.49,
+    "w": 0.37,
+    "h": 0.2
+   }
+  ],
+  "franz-marc": [
+   {
+    "ad": "Gerçek dışı mavi at",
+    "anahtar": "Q1197647",
+    "sanatci": "franz-marc",
+    "gorsel": "698228f05523f7b5",
+    "x": 0.43,
+    "y": 0.29,
+    "w": 0.3,
+    "h": 0.19
+   },
+   {
+    "ad": "Prizma gibi kırılmış renk",
+    "anahtar": "Q1197647",
+    "sanatci": "franz-marc",
+    "gorsel": "698228f05523f7b5",
+    "x": 0.0,
+    "y": 0.3,
+    "w": 0.2,
+    "h": 0.4
+   }
+  ],
+  "gentile-da-fabriano": [
+   {
+    "ad": "Masalsı uzun alay",
+    "anahtar": "Q1055117",
+    "sanatci": "gentile-da-fabriano",
+    "gorsel": "5f89fc48ceabb25d",
+    "x": 0.37,
+    "y": 0.3,
+    "w": 0.26,
+    "h": 0.13
+   },
+   {
+    "ad": "Egzotik hayvanlar",
+    "anahtar": "Q1055117",
+    "sanatci": "gentile-da-fabriano",
+    "gorsel": "5f89fc48ceabb25d",
+    "x": 0.64,
+    "y": 0.71,
+    "w": 0.18,
+    "h": 0.1
+   },
+   {
+    "ad": "Brokar ve kabartmalı altın",
+    "anahtar": "Q1055117",
+    "sanatci": "gentile-da-fabriano",
+    "gorsel": "5f89fc48ceabb25d",
+    "x": 0.48,
+    "y": 0.52,
+    "w": 0.14,
+    "h": 0.27
+   }
+  ],
+  "georges-de-la-tour": [
+   {
+    "ad": "Elle örtülen alev",
+    "anahtar": "Q743643",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "758a3c80412d1ae9",
+    "x": 0.64,
+    "y": 0.38,
+    "w": 0.12,
+    "h": 0.17
+   },
+   {
+    "ad": "Tek mum ışığı",
+    "anahtar": "Q3210251",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "d4901b8595d0a0c6",
+    "x": 0.55,
+    "y": 0.22,
+    "w": 0.31,
+    "h": 0.29
+   },
+   {
+    "ad": "Sade, geometrik hacim",
+    "anahtar": "Q3210251",
+    "sanatci": "georges-de-la-tour",
+    "gorsel": "d4901b8595d0a0c6",
+    "x": 0.24,
+    "y": 0.07,
+    "w": 0.22,
+    "h": 0.19
+   }
+  ],
+  "georges-seurat": [
+   {
+    "ad": "Saf renk noktaları",
+    "anahtar": "Q1044742",
+    "sanatci": "georges-seurat",
+    "gorsel": "529c025ff29483e4",
+    "x": 0.82,
+    "y": 0.82,
+    "w": 0.18,
+    "h": 0.18
+   },
+   {
+    "ad": "Dik, donuk figürler",
+    "anahtar": "Q1044742",
+    "sanatci": "georges-seurat",
+    "gorsel": "529c025ff29483e4",
+    "x": 0.73,
+    "y": 0.12,
+    "w": 0.22,
+    "h": 0.75
+   }
+  ],
+  "gerrit-van-honthorst": [
+   {
+    "ad": "Gülen, seyirciye bakan yüz",
+    "anahtar": "Q1897389",
+    "sanatci": "gerrit-van-honthorst",
+    "gorsel": "ae2ba5127291b445",
+    "x": 0.57,
+    "y": 0.1,
+    "w": 0.24,
+    "h": 0.3
+   }
+  ],
+  "giorgione": [
+   {
+    "ad": "Rüya gibi sessizlik",
+    "anahtar": "Q500812",
+    "sanatci": "giorgione",
+    "gorsel": "dea86e220e54de26",
+    "x": 0.08,
+    "y": 0.25,
+    "w": 0.2,
+    "h": 0.26
+   },
+   {
+    "ad": "Sisli, uzak manzara",
+    "anahtar": "Q500812",
+    "sanatci": "giorgione",
+    "gorsel": "dea86e220e54de26",
+    "x": 0.23,
+    "y": 0.29,
+    "w": 0.2,
+    "h": 0.11
+   },
+   {
+    "ad": "Sıcak altın ışık",
+    "anahtar": "Q3605563",
+    "sanatci": "giorgione",
+    "gorsel": "d2cf71ae0740441e",
+    "x": 0.08,
+    "y": 0.2,
+    "w": 0.32,
+    "h": 0.3
+   }
+  ],
+  "giotto-di-bondone": [
+   {
+    "ad": "Sırtı dönük ağır figürler",
+    "anahtar": "Q2067212",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "e3ad1487857b631e",
+    "x": 0.37,
+    "y": 0.6,
+    "w": 0.24,
+    "h": 0.36
+   },
+   {
+    "ad": "Sade ama güçlü duygu",
+    "anahtar": "Q2067212",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "e3ad1487857b631e",
+    "x": 0.12,
+    "y": 0.62,
+    "w": 0.28,
+    "h": 0.23
+   },
+   {
+    "ad": "Kumaşın altında hissedilen beden",
+    "anahtar": "Q2016193",
+    "sanatci": "giotto-di-bondone",
+    "gorsel": "ed8fea381da8903a",
+    "x": 0.36,
+    "y": 0.19,
+    "w": 0.24,
+    "h": 0.22
+   }
+  ],
+  "giovanni-battista-tiepolo": [
+   {
+    "ad": "Havada süzülen figür",
+    "anahtar": "Q5916308",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "2edcdc07605e5567",
+    "x": 0.6,
+    "y": 0.62,
+    "w": 0.3,
+    "h": 0.14
+   },
+   {
+    "ad": "Venedik kıyafetleri",
+    "anahtar": "Q18167078",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "dcff0d8adc24cc19",
+    "x": 0.27,
+    "y": 0.43,
+    "w": 0.11,
+    "h": 0.14
+   },
+   {
+    "ad": "Tiyatro gibi düzen",
+    "anahtar": "Q18167078",
+    "sanatci": "giovanni-battista-tiepolo",
+    "gorsel": "dcff0d8adc24cc19",
+    "x": 0.33,
+    "y": 0.03,
+    "w": 0.3,
+    "h": 0.22
+   }
+  ],
+  "giovanni-bellini": [
+   {
+    "ad": "Arkada açılan manzara",
+    "anahtar": "Q3947115",
+    "sanatci": "giovanni-bellini",
+    "gorsel": "3474edd7feaa5398",
+    "x": 0.0,
+    "y": 0.12,
+    "w": 0.48,
+    "h": 0.24
+   },
+   {
+    "ad": "Altın tonlu yumuşak ışık",
+    "anahtar": "Q1131110",
+    "sanatci": "giovanni-bellini",
+    "gorsel": "7dffba7c3331c0ca",
+    "x": 0.0,
+    "y": 0.12,
+    "w": 0.32,
+    "h": 0.2
+   }
+  ],
+  "giulio-romano": [
+   {
+    "ad": "Kalabalık, şiddetli hareket",
+    "anahtar": "Q1996932",
+    "sanatci": "giulio-romano",
+    "gorsel": "8b55e691bba2162a",
+    "x": 0.3,
+    "y": 0.4,
+    "w": 0.32,
+    "h": 0.22
+   },
+   {
+    "ad": "Kaslı, abartılı bedenler",
+    "anahtar": "Q1996932",
+    "sanatci": "giulio-romano",
+    "gorsel": "8b55e691bba2162a",
+    "x": 0.07,
+    "y": 0.55,
+    "w": 0.25,
+    "h": 0.22
+   }
+  ],
+  "gustav-klimt": [
+   {
+    "ad": "Altın varak zemin",
+    "anahtar": "Q698487",
+    "sanatci": "gustav-klimt",
+    "gorsel": "68ee7ed8ec1cc473",
+    "x": 0.05,
+    "y": 0.3,
+    "w": 0.18,
+    "h": 0.2
+   },
+   {
+    "ad": "Geometrik süsleme",
+    "anahtar": "Q698487",
+    "sanatci": "gustav-klimt",
+    "gorsel": "68ee7ed8ec1cc473",
+    "x": 0.36,
+    "y": 0.4,
+    "w": 0.26,
+    "h": 0.2
+   },
+   {
+    "ad": "Gerçekçi yüz, dekoratif giysi",
+    "anahtar": "Q698487",
+    "sanatci": "gustav-klimt",
+    "gorsel": "68ee7ed8ec1cc473",
+    "x": 0.43,
+    "y": 0.02,
+    "w": 0.25,
+    "h": 0.2
+   }
+  ],
+  "gustave-caillebotte": [
+   {
+    "ad": "Islak kaldırım",
+    "anahtar": "Q1452762",
+    "sanatci": "gustave-caillebotte",
+    "gorsel": "7ee48fe2f97d0a9c",
+    "x": 0.05,
+    "y": 0.72,
+    "w": 0.3,
+    "h": 0.18
+   },
+   {
+    "ad": "Şemsiyeli zarif figürler",
+    "anahtar": "Q1452762",
+    "sanatci": "gustave-caillebotte",
+    "gorsel": "7ee48fe2f97d0a9c",
+    "x": 0.55,
+    "y": 0.33,
+    "w": 0.27,
+    "h": 0.22
+   },
+   {
+    "ad": "Geriye kaçan perspektif",
+    "anahtar": "Q1452762",
+    "sanatci": "gustave-caillebotte",
+    "gorsel": "7ee48fe2f97d0a9c",
+    "x": 0.12,
+    "y": 0.05,
+    "w": 0.34,
+    "h": 0.33
+   }
+  ],
+  "gustave-courbet": [
+   {
+    "ad": "Sıradan insanlar, ağır",
+    "anahtar": "Q540488",
+    "sanatci": "gustave-courbet",
+    "gorsel": "e4527ac8da257ed7",
+    "x": 0.39,
+    "y": 0.46,
+    "w": 0.11,
+    "h": 0.38
+   },
+   {
+    "ad": "Koyu, topraklı renkler",
+    "anahtar": "Q540488",
+    "sanatci": "gustave-courbet",
+    "gorsel": "e4527ac8da257ed7",
+    "x": 0.7,
+    "y": 0.24,
+    "w": 0.28,
+    "h": 0.25
+   }
+  ],
+  "gustave-moreau": [
+   {
+    "ad": "İnce çizgili süsleme",
+    "anahtar": "Q3818663",
+    "sanatci": "gustave-moreau",
+    "gorsel": "402e5627eb99c9e4",
+    "x": 0.24,
+    "y": 0.05,
+    "w": 0.14,
+    "h": 0.3
+   },
+   {
+    "ad": "Efsanevi, tehlikeli kadın",
+    "anahtar": "Q3818663",
+    "sanatci": "gustave-moreau",
+    "gorsel": "402e5627eb99c9e4",
+    "x": 0.18,
+    "y": 0.48,
+    "w": 0.38,
+    "h": 0.25
+   }
+  ],
+  "hannah-hoch": [
+   {
+    "ad": "Makine parçaları",
+    "anahtar": "hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic",
+    "sanatci": "hannah-hoch",
+    "gorsel": "wikiart:https://uploads5.wikiart.org/images/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919.jpg",
+    "x": 0.02,
+    "y": 0.41,
+    "w": 0.2,
+    "h": 0.14
+   },
+   {
+    "ad": "Kesilmiş kadın bedeni",
+    "anahtar": "hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic",
+    "sanatci": "hannah-hoch",
+    "gorsel": "wikiart:https://uploads5.wikiart.org/images/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919.jpg",
+    "x": 0.4,
+    "y": 0.46,
+    "w": 0.12,
+    "h": 0.21
+   }
+  ],
+  "hans-baldung-grien": [
+   {
+    "ad": "Ölüm figürü",
+    "anahtar": "Q27978197",
+    "sanatci": "hans-baldung-grien",
+    "gorsel": "caed3fd667120943",
+    "x": 0.55,
+    "y": 0.4,
+    "w": 0.14,
+    "h": 0.1
+   },
+   {
+    "ad": "Soluk ten, koyu fon",
+    "anahtar": "Q27978197",
+    "sanatci": "hans-baldung-grien",
+    "gorsel": "caed3fd667120943",
+    "x": 0.03,
+    "y": 0.19,
+    "w": 0.14,
+    "h": 0.17
+   }
+  ],
+  "hans-holbein-genc": [
+   {
+    "ad": "İpek ve mücevherde titizlik",
+    "anahtar": "Q1212937",
+    "sanatci": "hans-holbein-genc",
+    "gorsel": "b9506673eab3e118",
+    "x": 0.1,
+    "y": 0.48,
+    "w": 0.19,
+    "h": 0.11
+   },
+   {
+    "ad": "Düz yeşil fon",
+    "anahtar": "Q1212937",
+    "sanatci": "hans-holbein-genc",
+    "gorsel": "b9506673eab3e118",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.09,
+    "h": 0.16
+   }
+  ],
+  "henri-de-toulouse-lautrec": [
+   {
+    "ad": "Düz renk siluetler",
+    "anahtar": "Q17026577",
+    "sanatci": "henri-de-toulouse-lautrec",
+    "gorsel": "5428d6625e8e7ad7",
+    "x": 0.52,
+    "y": 0.26,
+    "w": 0.45,
+    "h": 0.1
+   },
+   {
+    "ad": "Karikatüre yakın yüz",
+    "anahtar": "Q17026577",
+    "sanatci": "henri-de-toulouse-lautrec",
+    "gorsel": "5428d6625e8e7ad7",
+    "x": 0.67,
+    "y": 0.36,
+    "w": 0.25,
+    "h": 0.22
+   },
+   {
+    "ad": "Afiş harfleri",
+    "anahtar": "Q17026577",
+    "sanatci": "henri-de-toulouse-lautrec",
+    "gorsel": "5428d6625e8e7ad7",
+    "x": 0.03,
+    "y": 0.01,
+    "w": 0.15,
+    "h": 0.24
+   }
+  ],
+  "henry-fuseli": [
+   {
+    "ad": "Solgun, burkulmuş beden",
+    "anahtar": "Q2317837",
+    "sanatci": "henry-fuseli",
+    "gorsel": "67c5090b4b4e30c0",
+    "x": 0.81,
+    "y": 0.56,
+    "w": 0.14,
+    "h": 0.17
+   },
+   {
+    "ad": "Doğaüstü varlık",
+    "anahtar": "Q2317837",
+    "sanatci": "henry-fuseli",
+    "gorsel": "67c5090b4b4e30c0",
+    "x": 0.58,
+    "y": 0.07,
+    "w": 0.13,
+    "h": 0.16
+   }
+  ],
+  "hieronymus-bosch": [
+   {
+    "ad": "Melez yaratıklar",
+    "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1434ee16ca10ad2c",
+    "x": 0.79,
+    "y": 0.2,
+    "w": 0.16,
+    "h": 0.3
+   },
+   {
+    "ad": "Dev meyveler",
+    "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1434ee16ca10ad2c",
+    "x": 0.25,
+    "y": 0.6,
+    "w": 0.18,
+    "h": 0.27
+   },
+   {
+    "ad": "Cehennem ve kaos",
+    "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+    "sanatci": "hieronymus-bosch",
+    "gorsel": "1434ee16ca10ad2c",
+    "x": 0.77,
+    "y": 0.52,
+    "w": 0.19,
+    "h": 0.25
+   }
+  ],
+  "honore-daumier": [
+   {
+    "ad": "Abartılı, karikatür yüz",
+    "anahtar": "Q3228340",
+    "sanatci": "honore-daumier",
+    "gorsel": "585ff6078a75a57a",
+    "x": 0.39,
+    "y": 0.31,
+    "w": 0.13,
+    "h": 0.17
+   }
+  ],
+  "hyacinthe-rigaud": [
+   {
+    "ad": "Hermelin ve kadife",
+    "anahtar": "Q3399440",
+    "sanatci": "hyacinthe-rigaud",
+    "gorsel": "2abb7af9be90572c",
+    "x": 0.3,
+    "y": 0.52,
+    "w": 0.15,
+    "h": 0.12
+   },
+   {
+    "ad": "Soğuk, vakur yüz",
+    "anahtar": "Q3399440",
+    "sanatci": "hyacinthe-rigaud",
+    "gorsel": "2abb7af9be90572c",
+    "x": 0.4,
+    "y": 0.16,
+    "w": 0.17,
+    "h": 0.17
+   }
+  ],
+  "j-m-w-turner": [
+   {
+    "ad": "Işıkta eriyen biçimler",
+    "anahtar": "Q219344",
+    "sanatci": "j-m-w-turner",
+    "gorsel": "5e4a3d91a7445f63",
+    "x": 0.49,
+    "y": 0.4,
+    "w": 0.14,
+    "h": 0.3
+   },
+   {
+    "ad": "Girdap gibi fırtına",
+    "anahtar": "Q219344",
+    "sanatci": "j-m-w-turner",
+    "gorsel": "5e4a3d91a7445f63",
+    "x": 0.0,
+    "y": 0.08,
+    "w": 0.2,
+    "h": 0.36
+   }
+  ],
+  "jacob-van-ruisdael": [
+   {
+    "ad": "Hareketli bulutlar",
+    "anahtar": "Q2881603",
+    "sanatci": "jacob-van-ruisdael",
+    "gorsel": "ae6b8ef0e997f8bf",
+    "x": 0.1,
+    "y": 0.12,
+    "w": 0.42,
+    "h": 0.34
+   },
+   {
+    "ad": "Alçak ufuk",
+    "anahtar": "Q2881603",
+    "sanatci": "jacob-van-ruisdael",
+    "gorsel": "ae6b8ef0e997f8bf",
+    "x": 0.6,
+    "y": 0.28,
+    "w": 0.18,
+    "h": 0.33
+   }
+  ],
+  "jacopo-pontormo": [
+   {
+    "ad": "Tedirgin, içe dönük bakış",
+    "anahtar": "Q3705703",
+    "sanatci": "jacopo-pontormo",
+    "gorsel": "1769a17bdd359be0",
+    "x": 0.52,
+    "y": 0.57,
+    "w": 0.17,
+    "h": 0.11
+   },
+   {
+    "ad": "Asitli pastel renkler",
+    "anahtar": "Q3705703",
+    "sanatci": "jacopo-pontormo",
+    "gorsel": "1769a17bdd359be0",
+    "x": 0.62,
+    "y": 0.2,
+    "w": 0.18,
+    "h": 0.15
+   }
+  ],
+  "jacques-louis-david": [
+   {
+    "ad": "Friz gibi heykelsi figürler",
+    "anahtar": "Q28797801",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "da3c66750a298310",
+    "x": 0.13,
+    "y": 0.28,
+    "w": 0.32,
+    "h": 0.2
+   },
+   {
+    "ad": "Keskin kontur, net ışık",
+    "anahtar": "Q1752990",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "e6872f550b72ef0b",
+    "x": 0.6,
+    "y": 0.29,
+    "w": 0.13,
+    "h": 0.25
+   },
+   {
+    "ad": "Pürüzsüz yüzey",
+    "anahtar": "Q636537",
+    "sanatci": "jacques-louis-david",
+    "gorsel": "317191fde448de5c",
+    "x": 0.05,
+    "y": 0.42,
+    "w": 0.2,
+    "h": 0.15
+   }
+  ],
+  "jan-steen": [
+   {
+    "ad": "Gürültülü, komik sahne",
+    "anahtar": "Q764831",
+    "sanatci": "jan-steen",
+    "gorsel": "b57152776eb43dd1",
+    "x": 0.09,
+    "y": 0.34,
+    "w": 0.25,
+    "h": 0.15
+   },
+   {
+    "ad": "Yaramaz çocuklar",
+    "anahtar": "Q764831",
+    "sanatci": "jan-steen",
+    "gorsel": "b57152776eb43dd1",
+    "x": 0.27,
+    "y": 0.53,
+    "w": 0.2,
+    "h": 0.25
+   }
+  ],
+  "jan-van-eyck": [
+   {
+    "ad": "Aynada titiz ayrıntı",
+    "anahtar": "Q220859",
+    "sanatci": "jan-van-eyck",
+    "gorsel": "84d3c15e96896efe",
+    "x": 0.4,
+    "y": 0.19,
+    "w": 0.2,
+    "h": 0.18
+   },
+   {
+    "ad": "Pencereden süzülen ışık",
+    "anahtar": "Q220859",
+    "sanatci": "jan-van-eyck",
+    "gorsel": "84d3c15e96896efe",
+    "x": 0.03,
+    "y": 0.44,
+    "w": 0.14,
+    "h": 0.14
+   },
+   {
+    "ad": "Camda fotoğrafik ayrıntı",
+    "anahtar": "Q2480921",
+    "sanatci": "jan-van-eyck",
+    "gorsel": "e2a67e53aace7d68",
+    "x": 0.695,
+    "y": 0.42,
+    "w": 0.04,
+    "h": 0.05
+   }
+  ],
+  "jean-antoine-watteau": [
+   {
+    "ad": "Zarif çiftler",
+    "anahtar": "Q531329",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "bf5742ab3ec171f0",
+    "x": 0.58,
+    "y": 0.55,
+    "w": 0.1,
+    "h": 0.24
+   },
+   {
+    "ad": "İpekte parlak kırışıklar",
+    "anahtar": "Q531329",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "bf5742ab3ec171f0",
+    "x": 0.68,
+    "y": 0.58,
+    "w": 0.16,
+    "h": 0.24
+   },
+   {
+    "ad": "Dalgın, hüzünlü yüz",
+    "anahtar": "Q3387944",
+    "sanatci": "jean-antoine-watteau",
+    "gorsel": "daa855ad38e226ab",
+    "x": 0.37,
+    "y": 0.06,
+    "w": 0.17,
+    "h": 0.13
+   }
+  ],
+  "jean-auguste-dominique-ingres": [
+   {
+    "ad": "Uzatılmış, kıvrımlı hat",
+    "anahtar": "Q1978815",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "bf8c45dbcf1d614d",
+    "x": 0.03,
+    "y": 0.32,
+    "w": 0.47,
+    "h": 0.48
+   },
+   {
+    "ad": "Porselen gibi pürüzsüz",
+    "anahtar": "Q1978815",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "gorsel": "bf8c45dbcf1d614d",
+    "x": 0.11,
+    "y": 0.03,
+    "w": 0.18,
+    "h": 0.29
+   }
+  ],
+  "jean-baptiste-greuze": [
+   {
+    "ad": "Mahcup genç kız",
+    "anahtar": "Q4388208",
+    "sanatci": "jean-baptiste-greuze",
+    "gorsel": "dee15be9db42c7b1",
+    "x": 0.3,
+    "y": 0.14,
+    "w": 0.26,
+    "h": 0.2
+   },
+   {
+    "ad": "Ahlak dersi veren ayrıntı",
+    "anahtar": "Q4388208",
+    "sanatci": "jean-baptiste-greuze",
+    "gorsel": "dee15be9db42c7b1",
+    "x": 0.06,
+    "y": 0.61,
+    "w": 0.17,
+    "h": 0.2
+   },
+   {
+    "ad": "Özenli kumaş dokusu",
+    "anahtar": "Q4388208",
+    "sanatci": "jean-baptiste-greuze",
+    "gorsel": "dee15be9db42c7b1",
+    "x": 0.18,
+    "y": 0.43,
+    "w": 0.16,
+    "h": 0.18
+   }
+  ],
+  "jean-baptiste-simeon-chardin": [
+   {
+    "ad": "Sessiz natürmort",
+    "anahtar": "Q3212142",
+    "sanatci": "jean-baptiste-simeon-chardin",
+    "gorsel": "b04d8cb1c61d1ece",
+    "x": 0.1,
+    "y": 0.33,
+    "w": 0.21,
+    "h": 0.4
+   },
+   {
+    "ad": "Mat, kadifemsi yüzey",
+    "anahtar": "Q3212142",
+    "sanatci": "jean-baptiste-simeon-chardin",
+    "gorsel": "b04d8cb1c61d1ece",
+    "x": 0.78,
+    "y": 0.43,
+    "w": 0.15,
+    "h": 0.4
+   }
+  ],
+  "jean-francois-millet": [
+   {
+    "ad": "Tarlada eğilmiş köylü",
+    "anahtar": "Q1368055",
+    "sanatci": "jean-francois-millet",
+    "gorsel": "0e77dc7a212e8824",
+    "x": 0.15,
+    "y": 0.62,
+    "w": 0.1,
+    "h": 0.11
+   },
+   {
+    "ad": "Akşam ışığında altın ton",
+    "anahtar": "Q1368055",
+    "sanatci": "jean-francois-millet",
+    "gorsel": "0e77dc7a212e8824",
+    "x": 0.13,
+    "y": 0.19,
+    "w": 0.3,
+    "h": 0.18
+   }
+  ],
+  "jean-honore-fragonard": [
+   {
+    "ad": "Uçuşan kumaş",
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "x": 0.28,
+    "y": 0.5,
+    "w": 0.4,
+    "h": 0.23
+   },
+   {
+    "ad": "Yemyeşil bahçe",
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "x": 0.05,
+    "y": 0.73,
+    "w": 0.26,
+    "h": 0.19
+   },
+   {
+    "ad": "Neşeli, erotik an",
+    "anahtar": "Q2629559",
+    "sanatci": "jean-honore-fragonard",
+    "gorsel": "2f955dfd2fdc4e3e",
+    "x": 0.17,
+    "y": 0.5,
+    "w": 0.1,
+    "h": 0.08
+   }
+  ],
+  "jean-leon-gerome": [
+   {
+    "ad": "Fotoğrafik keskinlik",
+    "anahtar": "Q3224275",
+    "sanatci": "jean-leon-gerome",
+    "gorsel": "04c0885002064a96",
+    "x": 0.33,
+    "y": 0.42,
+    "w": 0.22,
+    "h": 0.15
+   },
+   {
+    "ad": "Anlatı dolu kalabalık",
+    "anahtar": "Q3224275",
+    "sanatci": "jean-leon-gerome",
+    "gorsel": "04c0885002064a96",
+    "x": 0.67,
+    "y": 0.64,
+    "w": 0.33,
+    "h": 0.21
+   }
+  ],
+  "johannes-vermeer": [
+   {
+    "ad": "Küçük ışık benekleri",
+    "anahtar": "Q167605",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "7ad9f577dbcabf65",
+    "x": 0.07,
+    "y": 0.6,
+    "w": 0.44,
+    "h": 0.24
+   },
+   {
+    "ad": "Pencereden serin ışık",
+    "anahtar": "Q167605",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "7ad9f577dbcabf65",
+    "x": 0.45,
+    "y": 0.12,
+    "w": 0.26,
+    "h": 0.26
+   },
+   {
+    "ad": "Mavi ve sarı dengesi",
+    "anahtar": "Q185372",
+    "sanatci": "johannes-vermeer",
+    "gorsel": "9bd3d7377de10c9f",
+    "x": 0.33,
+    "y": 0.12,
+    "w": 0.47,
+    "h": 0.2
+   }
+  ],
+  "john-constable": [
+   {
+    "ad": "Hareketli bulutlu gök",
+    "anahtar": "Q2366825",
+    "sanatci": "john-constable",
+    "gorsel": "34f36f95092ecbb1",
+    "x": 0.7,
+    "y": 0.1,
+    "w": 0.28,
+    "h": 0.3
+   },
+   {
+    "ad": "Gündelik kır ayrıntısı",
+    "anahtar": "Q2366825",
+    "sanatci": "john-constable",
+    "gorsel": "34f36f95092ecbb1",
+    "x": 0.49,
+    "y": 0.71,
+    "w": 0.27,
+    "h": 0.2
+   }
+  ],
+  "john-everett-millais": [
+   {
+    "ad": "Yaprak yaprak doğa",
+    "anahtar": "Q1065493",
+    "sanatci": "john-everett-millais",
+    "gorsel": "dd3b9c967e239aa0",
+    "x": 0.55,
+    "y": 0.07,
+    "w": 0.2,
+    "h": 0.3
+   },
+   {
+    "ad": "Mücevher gibi kırmızı",
+    "anahtar": "Q1065493",
+    "sanatci": "john-everett-millais",
+    "gorsel": "dd3b9c967e239aa0",
+    "x": 0.36,
+    "y": 0.69,
+    "w": 0.09,
+    "h": 0.09
+   }
+  ],
+  "katsushika-hokusai": [
+   {
+    "ad": "Pençe gibi dev dalga",
+    "anahtar": "Q252485",
+    "sanatci": "katsushika-hokusai",
+    "gorsel": "7de1ea60cd498981",
+    "x": 0.38,
+    "y": 0.12,
+    "w": 0.22,
+    "h": 0.33
+   },
+   {
+    "ad": "Küçük görünen Fuji",
+    "anahtar": "Q252485",
+    "sanatci": "katsushika-hokusai",
+    "gorsel": "7de1ea60cd498981",
+    "x": 0.56,
+    "y": 0.62,
+    "w": 0.13,
+    "h": 0.12
+   }
+  ],
+  "leonardo-da-vinci": [
+   {
+    "ad": "Belirsiz gülümseme",
+    "anahtar": "Q12418",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "ae10d40e1edfe39a",
+    "x": 0.36,
+    "y": 0.26,
+    "w": 0.22,
+    "h": 0.09
+   },
+   {
+    "ad": "Sisli, kayalık manzara",
+    "anahtar": "Q12418",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "ae10d40e1edfe39a",
+    "x": 0.0,
+    "y": 0.31,
+    "w": 0.3,
+    "h": 0.23
+   },
+   {
+    "ad": "Dumanlı sfumato",
+    "anahtar": "Q1892745",
+    "sanatci": "leonardo-da-vinci",
+    "gorsel": "823ba3bf8908ba0a",
+    "x": 0.33,
+    "y": 0.14,
+    "w": 0.34,
+    "h": 0.28
+   }
+  ],
+  "limbourg-kardesler": [
+   {
+    "ad": "Mavi-altın takvim",
+    "anahtar": "Q5856992",
+    "sanatci": "limbourg-kardesler",
+    "gorsel": "85a16ae0801e44e1",
+    "x": 0.29,
+    "y": 0.17,
+    "w": 0.43,
+    "h": 0.14
+   },
+   {
+    "ad": "Uzakta masalsı köy",
+    "anahtar": "Q5856992",
+    "sanatci": "limbourg-kardesler",
+    "gorsel": "85a16ae0801e44e1",
+    "x": 0.37,
+    "y": 0.4,
+    "w": 0.22,
+    "h": 0.12
+   },
+   {
+    "ad": "Köylüler de aynı özenle",
+    "anahtar": "Q5856992",
+    "sanatci": "limbourg-kardesler",
+    "gorsel": "85a16ae0801e44e1",
+    "x": 0.86,
+    "y": 0.66,
+    "w": 0.13,
+    "h": 0.15
+   }
+  ],
+  "luca-giordano": [
+   {
+    "ad": "Bulutlar arasında melekler",
+    "anahtar": "Q3967207",
+    "sanatci": "luca-giordano",
+    "gorsel": "ab3ae8e6bf8bc2ef",
+    "x": 0.35,
+    "y": 0.08,
+    "w": 0.33,
+    "h": 0.2
+   }
+  ],
+  "lucas-cranach-yasl": [
+   {
+    "ad": "Küçük baş, yüksek alın",
+    "anahtar": "Q3605055",
+    "sanatci": "lucas-cranach-yasl",
+    "gorsel": "3c22712ffcc9edd6",
+    "x": 0.69,
+    "y": 0.09,
+    "w": 0.15,
+    "h": 0.12
+   }
+  ],
+  "marcantonio-raimondi": [
+   {
+    "ad": "İnce paralel taramalar",
+    "anahtar": "Q18579333",
+    "sanatci": "marcantonio-raimondi",
+    "gorsel": "9fe74bd524f1be98",
+    "x": 0.6,
+    "y": 0.58,
+    "w": 0.38,
+    "h": 0.28
+   },
+   {
+    "ad": "İdealize çıplak",
+    "anahtar": "Q18579333",
+    "sanatci": "marcantonio-raimondi",
+    "gorsel": "9fe74bd524f1be98",
+    "x": 0.33,
+    "y": 0.38,
+    "w": 0.14,
+    "h": 0.42
+   }
+  ],
+  "mary-cassatt": [
+   {
+    "ad": "Gündelik, mahrem an",
+    "anahtar": "Q3640080",
+    "sanatci": "mary-cassatt",
+    "gorsel": "87d69c99ba912d9c",
+    "x": 0.62,
+    "y": 0.1,
+    "w": 0.22,
+    "h": 0.22
+   }
+  ],
+  "masaccio": [
+   {
+    "ad": "Yere sağlam basan figür",
+    "anahtar": "Q1759631",
+    "sanatci": "masaccio",
+    "gorsel": "a1a25dc07b167736",
+    "x": 0.48,
+    "y": 0.38,
+    "w": 0.13,
+    "h": 0.58
+   },
+   {
+    "ad": "İri, heykelsi figürler",
+    "anahtar": "Q1759631",
+    "sanatci": "masaccio",
+    "gorsel": "a1a25dc07b167736",
+    "x": 0.33,
+    "y": 0.37,
+    "w": 0.22,
+    "h": 0.33
+   },
+   {
+    "ad": "Perspektifli mimari",
+    "anahtar": "Q1759631",
+    "sanatci": "masaccio",
+    "gorsel": "a1a25dc07b167736",
+    "x": 0.62,
+    "y": 0.02,
+    "w": 0.36,
+    "h": 0.45
+   }
+  ],
+  "mattia-preti": [
+   {
+    "ad": "Koyu fon, sert ışık",
+    "anahtar": "Q3947947",
+    "sanatci": "mattia-preti",
+    "gorsel": "0680b4f07565b5b3",
+    "x": 0.52,
+    "y": 0.18,
+    "w": 0.18,
+    "h": 0.13
+   }
+  ],
+  "michelangelo": [
+   {
+    "ad": "Kaslı, heykel gibi beden",
+    "anahtar": "Q500242",
+    "sanatci": "michelangelo",
+    "gorsel": "3492a085a4197805",
+    "x": 0.01,
+    "y": 0.3,
+    "w": 0.22,
+    "h": 0.48
+   },
+   {
+    "ad": "Dönen, dolanan bedenler",
+    "anahtar": "Q567861",
+    "sanatci": "michelangelo",
+    "gorsel": "a8763c4bfa653150",
+    "x": 0.4,
+    "y": 0.6,
+    "w": 0.22,
+    "h": 0.18
+   }
+  ],
+  "nicolas-poussin": [
+   {
+    "ad": "Heykelsi, friz gibi figürler",
+    "anahtar": "Q1140358",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "22120cc801296cf0",
+    "x": 0.33,
+    "y": 0.49,
+    "w": 0.1,
+    "h": 0.12
+   },
+   {
+    "ad": "Klasik mimari",
+    "anahtar": "Q970808",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "5a5324bf0cc933d1",
+    "x": 0.13,
+    "y": 0.08,
+    "w": 0.16,
+    "h": 0.2
+   },
+   {
+    "ad": "Dengeli friz düzeni",
+    "anahtar": "Q377810",
+    "sanatci": "nicolas-poussin",
+    "gorsel": "64aa5dad9d8e1fcf",
+    "x": 0.02,
+    "y": 0.43,
+    "w": 0.48,
+    "h": 0.5
+   }
+  ],
+  "odilon-redon": [
+   {
+    "ad": "Tek dev göz",
+    "anahtar": "Q3793426",
+    "sanatci": "odilon-redon",
+    "gorsel": "8906e5e8686fc219",
+    "x": 0.27,
+    "y": 0.18,
+    "w": 0.15,
+    "h": 0.12
+   },
+   {
+    "ad": "Parlak pastel renk",
+    "anahtar": "Q3793426",
+    "sanatci": "odilon-redon",
+    "gorsel": "8906e5e8686fc219",
+    "x": 0.08,
+    "y": 0.42,
+    "w": 0.3,
+    "h": 0.18
+   }
+  ],
+  "orazio-gentileschi": [
+   {
+    "ad": "İnce, parlak kumaşlar",
+    "anahtar": "Q20176925",
+    "sanatci": "orazio-gentileschi",
+    "gorsel": "d0b69991aa09b052",
+    "x": 0.7,
+    "y": 0.74,
+    "w": 0.3,
+    "h": 0.26
+   },
+   {
+    "ad": "Şeffaf tül",
+    "anahtar": "Q22329907",
+    "sanatci": "orazio-gentileschi",
+    "gorsel": "e7d1437d3c1ac703",
+    "x": 0.54,
+    "y": 0.44,
+    "w": 0.16,
+    "h": 0.2
+   }
+  ],
+  "pablo-picasso": [
+   {
+    "ad": "Birkaç açıdan yüz",
+    "anahtar": "Q175036",
+    "sanatci": "pablo-picasso",
+    "gorsel": "wikiart:https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg",
+    "x": 0.0,
+    "y": 0.32,
+    "w": 0.18,
+    "h": 0.45
+   },
+   {
+    "ad": "Kırık düzlemler, gri ton",
+    "anahtar": "Q175036",
+    "sanatci": "pablo-picasso",
+    "gorsel": "wikiart:https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg",
+    "x": 0.4,
+    "y": 0.45,
+    "w": 0.14,
+    "h": 0.25
+   }
+  ],
+  "paolo-uccello": [
+   {
+    "ad": "Oyuncak gibi tombul at",
+    "anahtar": "Q2265370",
+    "sanatci": "paolo-uccello",
+    "gorsel": "544f207805b1f466",
+    "x": 0.2,
+    "y": 0.75,
+    "w": 0.24,
+    "h": 0.23
+   },
+   {
+    "ad": "Geometrik zırhlar",
+    "anahtar": "Q2265370",
+    "sanatci": "paolo-uccello",
+    "gorsel": "544f207805b1f466",
+    "x": 0.04,
+    "y": 0.38,
+    "w": 0.18,
+    "h": 0.2
+   }
+  ],
+  "paolo-veronese": [
+   {
+    "ad": "Sütunlu mimari, açık gök",
+    "anahtar": "Q185255",
+    "sanatci": "paolo-veronese",
+    "gorsel": "870f58ce77c32209",
+    "x": 0.43,
+    "y": 0.4,
+    "w": 0.15,
+    "h": 0.1
+   },
+   {
+    "ad": "İpek ve saten kumaşlar",
+    "anahtar": "Q185255",
+    "sanatci": "paolo-veronese",
+    "gorsel": "870f58ce77c32209",
+    "x": 0.0,
+    "y": 0.64,
+    "w": 0.11,
+    "h": 0.14
+   },
+   {
+    "ad": "Parlak kumaşlı kalabalık",
+    "anahtar": "Q7733345",
+    "sanatci": "paolo-veronese",
+    "gorsel": "08fdc563cd1672d8",
+    "x": 0.17,
+    "y": 0.55,
+    "w": 0.25,
+    "h": 0.4
+   }
+  ],
+  "parmigianino": [
+   {
+    "ad": "Uzun boyun, ince parmaklar",
+    "anahtar": "Q867403",
+    "sanatci": "parmigianino",
+    "gorsel": "ebd73e500d20ad0b",
+    "x": 0.32,
+    "y": 0.09,
+    "w": 0.29,
+    "h": 0.23
+   },
+   {
+    "ad": "Porselen gibi pürüzsüz ten",
+    "anahtar": "Q867403",
+    "sanatci": "parmigianino",
+    "gorsel": "ebd73e500d20ad0b",
+    "x": 0.48,
+    "y": 0.38,
+    "w": 0.27,
+    "h": 0.26
+   }
+  ],
+  "paul-cezanne": [
+   {
+    "ad": "Eğik masa düzlemi",
+    "anahtar": "Q17277950",
+    "sanatci": "paul-cezanne",
+    "gorsel": "0cc75df9a7033aab",
+    "x": 0.3,
+    "y": 0.62,
+    "w": 0.48,
+    "h": 0.25
+   },
+   {
+    "ad": "Kısa, paralel fırça",
+    "anahtar": "Q17277950",
+    "sanatci": "paul-cezanne",
+    "gorsel": "0cc75df9a7033aab",
+    "x": 0.72,
+    "y": 0.4,
+    "w": 0.24,
+    "h": 0.3
+   }
+  ],
+  "paul-gauguin": [
+   {
+    "ad": "Düz renk, koyu kontur",
+    "anahtar": "Q890678",
+    "sanatci": "paul-gauguin",
+    "gorsel": "a71b0a727cd86d8f",
+    "x": 0.7,
+    "y": 0.44,
+    "w": 0.17,
+    "h": 0.38
+   },
+   {
+    "ad": "Modellemesiz düz renk",
+    "anahtar": "Q500951",
+    "sanatci": "paul-gauguin",
+    "gorsel": "5fb58dbb2db313ea",
+    "x": 0.32,
+    "y": 0.03,
+    "w": 0.16,
+    "h": 0.13
+   }
+  ],
+  "peter-paul-rubens": [
+   {
+    "ad": "Etli, pembe-beyaz ten",
+    "anahtar": "Q2268524",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "e7129ec85180e571",
+    "x": 0.33,
+    "y": 0.19,
+    "w": 0.2,
+    "h": 0.5
+   },
+   {
+    "ad": "Çapraz, kıvrılan hareket",
+    "anahtar": "Q2653851",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "5cee7e13a5278a1a",
+    "x": 0.38,
+    "y": 0.19,
+    "w": 0.12,
+    "h": 0.14
+   },
+   {
+    "ad": "Kaslı erkek beden",
+    "anahtar": "Q2594673",
+    "sanatci": "peter-paul-rubens",
+    "gorsel": "95afd467682e3b4c",
+    "x": 0.27,
+    "y": 0.45,
+    "w": 0.48,
+    "h": 0.3
+   }
+  ],
+  "petrus-christus": [
+   {
+    "ad": "Porselen gibi pürüzsüz yüz",
+    "anahtar": "Q2409245",
+    "sanatci": "petrus-christus",
+    "gorsel": "399bd1158455e314",
+    "x": 0.28,
+    "y": 0.39,
+    "w": 0.25,
+    "h": 0.1
+   }
+  ],
+  "piero-della-francesca": [
+   {
+    "ad": "Heykel gibi sabit figürler",
+    "anahtar": "Q1212920",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "57c1d20e53d4c7a6",
+    "x": 0.57,
+    "y": 0.19,
+    "w": 0.42,
+    "h": 0.18
+   },
+   {
+    "ad": "Pastel renkler, duru ışık",
+    "anahtar": "Q2632688",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "1ff74f2261584b6e",
+    "x": 0.0,
+    "y": 0.46,
+    "w": 0.34,
+    "h": 0.42
+   },
+   {
+    "ad": "Yuvarlak, ifadesiz yüzler",
+    "anahtar": "Q3211055",
+    "sanatci": "piero-della-francesca",
+    "gorsel": "e0565dd39580cf21",
+    "x": 0.15,
+    "y": 0.28,
+    "w": 0.43,
+    "h": 0.2
+   }
+  ],
+  "pierre-auguste-renoir": [
+   {
+    "ad": "Benek benek düşen ışık",
+    "anahtar": "Q683274",
+    "sanatci": "pierre-auguste-renoir",
+    "gorsel": "2026542e5482c401",
+    "x": 0.0,
+    "y": 0.5,
+    "w": 0.22,
+    "h": 0.25
+   },
+   {
+    "ad": "Yuvarlak yüzlü, neşeli kadın",
+    "anahtar": "Q683274",
+    "sanatci": "pierre-auguste-renoir",
+    "gorsel": "2026542e5482c401",
+    "x": 0.38,
+    "y": 0.5,
+    "w": 0.2,
+    "h": 0.2
+   }
+  ],
+  "pierre-puvis-de-chavannes": [
+   {
+    "ad": "Friz gibi hareketsiz figürler",
+    "anahtar": "Q56377683",
+    "sanatci": "pierre-puvis-de-chavannes",
+    "gorsel": "40be8f517f5e0727",
+    "x": 0.08,
+    "y": 0.48,
+    "w": 0.24,
+    "h": 0.4
+   },
+   {
+    "ad": "Boş, sakin manzara",
+    "anahtar": "Q19820268",
+    "sanatci": "pierre-puvis-de-chavannes",
+    "gorsel": "3c14bc73ccac8644",
+    "x": 0.62,
+    "y": 0.36,
+    "w": 0.36,
+    "h": 0.3
+   }
+  ],
+  "pieter-bruegel-yasl": [
+   {
+    "ad": "Kalın giysili, tıknaz figürler",
+    "anahtar": "Q500985",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "216d1fc681535d27",
+    "x": 0.01,
+    "y": 0.52,
+    "w": 0.4,
+    "h": 0.42
+   },
+   {
+    "ad": "Kuş bakışı geniş manzara",
+    "anahtar": "Q776175",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "3b1dfe8e793ba701",
+    "x": 0.05,
+    "y": 0.27,
+    "w": 0.45,
+    "h": 0.27
+   },
+   {
+    "ad": "Yeşilimsi kış göğü",
+    "anahtar": "Q500985",
+    "sanatci": "pieter-bruegel-yasl",
+    "gorsel": "216d1fc681535d27",
+    "x": 0.65,
+    "y": 0.19,
+    "w": 0.12,
+    "h": 0.13
+   }
+  ],
+  "pietro-lorenzetti": [
+   {
+    "ad": "Hacimli, ağır figürler",
+    "anahtar": "Q3873247",
+    "sanatci": "pietro-lorenzetti",
+    "gorsel": "c61d3d5f20cb4b0c",
+    "x": 0.37,
+    "y": 0.44,
+    "w": 0.26,
+    "h": 0.15
+   },
+   {
+    "ad": "Çerçeveyle birleşen mimari",
+    "anahtar": "Q3873247",
+    "sanatci": "pietro-lorenzetti",
+    "gorsel": "c61d3d5f20cb4b0c",
+    "x": 0.6,
+    "y": 0.58,
+    "w": 0.22,
+    "h": 0.14
+   }
+  ],
+  "pietro-perugino": [
+   {
+    "ad": "Ortada merkezî yapı",
+    "anahtar": "Q2620028",
+    "sanatci": "pietro-perugino",
+    "gorsel": "360cb5f67fabb880",
+    "x": 0.32,
+    "y": 0.0,
+    "w": 0.36,
+    "h": 0.46
+   },
+   {
+    "ad": "Simetrik, dingin düzen",
+    "anahtar": "Q2620028",
+    "sanatci": "pietro-perugino",
+    "gorsel": "360cb5f67fabb880",
+    "x": 0.38,
+    "y": 0.52,
+    "w": 0.24,
+    "h": 0.42
+   },
+   {
+    "ad": "Tatlı, oval yüz",
+    "anahtar": "Q3224308",
+    "sanatci": "pietro-perugino",
+    "gorsel": "4337fa9bc40a60e0",
+    "x": 0.56,
+    "y": 0.56,
+    "w": 0.12,
+    "h": 0.12
+   }
+  ],
+  "quentin-metsys": [
+   {
+    "ad": "Madeni para ve terazi",
+    "anahtar": "Q2892964",
+    "sanatci": "quentin-metsys",
+    "gorsel": "66b6e1b09c3c3978",
+    "x": 0.3,
+    "y": 0.55,
+    "w": 0.17,
+    "h": 0.28
+   },
+   {
+    "ad": "Cam ve metal yüzeyler",
+    "anahtar": "Q2892964",
+    "sanatci": "quentin-metsys",
+    "gorsel": "66b6e1b09c3c3978",
+    "x": 0.49,
+    "y": 0.81,
+    "w": 0.14,
+    "h": 0.16
+   }
+  ],
+  "raphael": [
+   {
+    "ad": "Sakin, tatlı yüz",
+    "anahtar": "Q2344505",
+    "sanatci": "raphael",
+    "gorsel": "52b08d868abbad33",
+    "x": 0.43,
+    "y": 0.15,
+    "w": 0.17,
+    "h": 0.15
+   },
+   {
+    "ad": "Kemerli mimari önünde",
+    "anahtar": "Q186953",
+    "sanatci": "raphael",
+    "gorsel": "3e754c9aae3c41f3",
+    "x": 0.37,
+    "y": 0.54,
+    "w": 0.14,
+    "h": 0.26
+   },
+   {
+    "ad": "Huzurlu doğa",
+    "anahtar": "Q2344505",
+    "sanatci": "raphael",
+    "gorsel": "52b08d868abbad33",
+    "x": 0.66,
+    "y": 0.29,
+    "w": 0.3,
+    "h": 0.1
+   }
+  ],
+  "rembrandt-van-rijn": [
+   {
+    "ad": "Koyu fondan ışıklı yüz",
+    "anahtar": "Q512755",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "294a50e3d597e924",
+    "x": 0.22,
+    "y": 0.3,
+    "w": 0.14,
+    "h": 0.13
+   },
+   {
+    "ad": "Tek ışık, altın-kahve ton",
+    "anahtar": "Q219831",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "53073e6ee15bcefe",
+    "x": 0.43,
+    "y": 0.44,
+    "w": 0.2,
+    "h": 0.24
+   },
+   {
+    "ad": "Kalın boyalı eller",
+    "anahtar": "Q512755",
+    "sanatci": "rembrandt-van-rijn",
+    "gorsel": "294a50e3d597e924",
+    "x": 0.18,
+    "y": 0.51,
+    "w": 0.2,
+    "h": 0.12
+   }
+  ],
+  "rene-magritte": [
+   {
+    "ad": "Resim içinde yazı",
+    "anahtar": "Q1061035",
+    "sanatci": "rene-magritte",
+    "gorsel": "wikiart:https://uploads0.wikiart.org/images/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948(2).jpg!HalfHD.jpg",
+    "x": 0.13,
+    "y": 0.81,
+    "w": 0.78,
+    "h": 0.12
+   }
+  ],
+  "robert-campin": [
+   {
+    "ad": "Sembolik gündelik eşya",
+    "anahtar": "Q285392",
+    "sanatci": "robert-campin",
+    "gorsel": "f343957f4b5b322d",
+    "x": 0.43,
+    "y": 0.33,
+    "w": 0.12,
+    "h": 0.26
+   },
+   {
+    "ad": "Köşeli kıvrımlı giysi",
+    "anahtar": "Q285392",
+    "sanatci": "robert-campin",
+    "gorsel": "f343957f4b5b322d",
+    "x": 0.5,
+    "y": 0.4,
+    "w": 0.18,
+    "h": 0.48
+   },
+   {
+    "ad": "Ev içi ayrıntılar",
+    "anahtar": "Q285392",
+    "sanatci": "robert-campin",
+    "gorsel": "f343957f4b5b322d",
+    "x": 0.79,
+    "y": 0.33,
+    "w": 0.14,
+    "h": 0.3
+   }
+  ],
+  "rogier-van-der-weyden": [
+   {
+    "ad": "Gözyaşlı, acılı yüz",
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "x": 0.2,
+    "y": 0.55,
+    "w": 0.25,
+    "h": 0.4
+   },
+   {
+    "ad": "Uzun, ince beden",
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "x": 0.38,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.4
+   },
+   {
+    "ad": "Keskin kıvrımlı kumaş",
+    "anahtar": "Q568847",
+    "sanatci": "rogier-van-der-weyden",
+    "gorsel": "1840e629c815e67f",
+    "x": 0.8,
+    "y": 0.33,
+    "w": 0.15,
+    "h": 0.25
+   }
+  ],
+  "rosso-fiorentino": [
+   {
+    "ad": "Köşeli, yontulmuş figür",
+    "anahtar": "Q1863885",
+    "sanatci": "rosso-fiorentino",
+    "gorsel": "ffe25a680966b12f",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.36,
+    "h": 0.21
+   },
+   {
+    "ad": "Gergin, sinirli jest",
+    "anahtar": "Q1863885",
+    "sanatci": "rosso-fiorentino",
+    "gorsel": "ffe25a680966b12f",
+    "x": 0.86,
+    "y": 0.44,
+    "w": 0.14,
+    "h": 0.16
+   },
+   {
+    "ad": "Keskin renk, sert ışık",
+    "anahtar": "Q3705718",
+    "sanatci": "rosso-fiorentino",
+    "gorsel": "86216e309f4d4b92",
+    "x": 0.03,
+    "y": 0.12,
+    "w": 0.4,
+    "h": 0.22
+   }
+  ],
+  "salvador-dali": [
+   {
+    "ad": "Eriyen saat",
+    "anahtar": "salvador-dali|The Persistence of Memory",
+    "sanatci": "salvador-dali",
+    "gorsel": "wikiart:https://uploads2.wikiart.org/00475/images/salvador-dali/w1siziisijm4njq3mcjdlfsiccisimnvbnzlcnqilcitcxvhbgl0esa5mcatcmvzaxplidiwmdb4mjawmfx1mdazzsjdxq.jpg!HalfHD.jpg",
+    "x": 0.27,
+    "y": 0.18,
+    "w": 0.13,
+    "h": 0.23
+   },
+   {
+    "ad": "Uçsuz kıyı boşluğu",
+    "anahtar": "salvador-dali|The Persistence of Memory",
+    "sanatci": "salvador-dali",
+    "gorsel": "wikiart:https://uploads2.wikiart.org/00475/images/salvador-dali/w1siziisijm4njq3mcjdlfsiccisimnvbnzlcnqilcitcxvhbgl0esa5mcatcmvzaxplidiwmdb4mjawmfx1mdazzsjdxq.jpg!HalfHD.jpg",
+    "x": 0.6,
+    "y": 0.15,
+    "w": 0.4,
+    "h": 0.16
+   }
+  ],
+  "sandro-botticelli": [
+   {
+    "ad": "Rüzgârda dalgalanan saçlar",
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "x": 0.47,
+    "y": 0.05,
+    "w": 0.14,
+    "h": 0.18
+   },
+   {
+    "ad": "Akıcı kontur, uçuşan kumaş",
+    "anahtar": "Q151047",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "f3d7a2ffa8f82966",
+    "x": 0.66,
+    "y": 0.08,
+    "w": 0.23,
+    "h": 0.3
+   },
+   {
+    "ad": "Hafif hüzünlü yüz",
+    "anahtar": "Q2293953",
+    "sanatci": "sandro-botticelli",
+    "gorsel": "1a78b275a1d0d1cc",
+    "x": 0.1,
+    "y": 0.02,
+    "w": 0.12,
+    "h": 0.28
+   }
+  ],
+  "sebastiano-ricci": [
+   {
+    "ad": "Açık, gümüşi renkler",
+    "anahtar": "Q19863024",
+    "sanatci": "sebastiano-ricci",
+    "gorsel": "6366d2fe9f812bb9",
+    "x": 0.42,
+    "y": 0.2,
+    "w": 0.13,
+    "h": 0.18
+   }
+  ],
+  "simone-martini": [
+   {
+    "ad": "Ürkerek geri çekilen Meryem",
+    "anahtar": "Q979440",
+    "sanatci": "simone-martini",
+    "gorsel": "af51df81fcaa607b",
+    "x": 0.61,
+    "y": 0.469,
+    "w": 0.137,
+    "h": 0.231
+   },
+   {
+    "ad": "Altın fona işlenen yazı",
+    "anahtar": "Q979440",
+    "sanatci": "simone-martini",
+    "gorsel": "af51df81fcaa607b",
+    "x": 0.428,
+    "y": 0.488,
+    "w": 0.218,
+    "h": 0.088
+   },
+   {
+    "ad": "Diz çöken saraylı melek",
+    "anahtar": "Q979440",
+    "sanatci": "simone-martini",
+    "gorsel": "af51df81fcaa607b",
+    "x": 0.356,
+    "y": 0.506,
+    "w": 0.128,
+    "h": 0.222
+   }
+  ],
+  "sofonisba-anguissola": [
+   {
+    "ad": "Canlı, sıcak yüz",
+    "anahtar": "Q23008305",
+    "sanatci": "sofonisba-anguissola",
+    "gorsel": "5522bc0dc8009d75",
+    "x": 0.38,
+    "y": 0.19,
+    "w": 0.16,
+    "h": 0.25
+   },
+   {
+    "ad": "İzleyiciyle buluşan bakış",
+    "anahtar": "Q23008305",
+    "sanatci": "sofonisba-anguissola",
+    "gorsel": "5522bc0dc8009d75",
+    "x": 0.16,
+    "y": 0.05,
+    "w": 0.18,
+    "h": 0.27
+   }
+  ],
+  "theodore-gericault": [
+   {
+    "ad": "Diyagonalin tepesi",
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "x": 0.61,
+    "y": 0.06,
+    "w": 0.2,
+    "h": 0.37
+   },
+   {
+    "ad": "Kaslı, ağır beden",
+    "anahtar": "Q212616",
+    "sanatci": "theodore-gericault",
+    "gorsel": "2310e62cc103ef4b",
+    "x": 0.6,
+    "y": 0.78,
+    "w": 0.38,
+    "h": 0.2
+   }
+  ],
+  "thomas-gainsborough": [
+   {
+    "ad": "Tüy gibi hafif fırça",
+    "anahtar": "Q604761",
+    "sanatci": "thomas-gainsborough",
+    "gorsel": "f23c4ebce16c226d",
+    "x": 0.33,
+    "y": 0.22,
+    "w": 0.27,
+    "h": 0.26
+   }
+  ],
+  "tintoretto": [
+   {
+    "ad": "Dumanlı karanlıkta ışık",
+    "anahtar": "Q2472983",
+    "sanatci": "tintoretto",
+    "gorsel": "0927c4bea5c5f723",
+    "x": 0.12,
+    "y": 0.08,
+    "w": 0.2,
+    "h": 0.15
+   },
+   {
+    "ad": "Güçlü diyagonal",
+    "anahtar": "Q2472983",
+    "sanatci": "tintoretto",
+    "gorsel": "0927c4bea5c5f723",
+    "x": 0.25,
+    "y": 0.5,
+    "w": 0.35,
+    "h": 0.15
+   },
+   {
+    "ad": "Havada uçan figür",
+    "anahtar": "Q2273890",
+    "sanatci": "tintoretto",
+    "gorsel": "f42bac7b1e96b4cc",
+    "x": 0.29,
+    "y": 0.0,
+    "w": 0.27,
+    "h": 0.42
+   }
+  ],
+  "titian": [
+   {
+    "ad": "Etten canlı Venüs",
+    "anahtar": "Q727875",
+    "sanatci": "titian",
+    "gorsel": "44fc20a19fad9f16",
+    "x": 0.11,
+    "y": 0.26,
+    "w": 0.17,
+    "h": 0.22
+   }
+  ],
+  "utagawa-hiroshige": [
+   {
+    "ad": "Yağmur altında yol",
+    "anahtar": "Q5826309",
+    "sanatci": "utagawa-hiroshige",
+    "gorsel": "4016e12af98da014",
+    "x": 0.2,
+    "y": 0.12,
+    "w": 0.25,
+    "h": 0.18
+   },
+   {
+    "ad": "Köprü ve yolcular",
+    "anahtar": "Q5826309",
+    "sanatci": "utagawa-hiroshige",
+    "gorsel": "4016e12af98da014",
+    "x": 0.36,
+    "y": 0.53,
+    "w": 0.44,
+    "h": 0.17
+   },
+   {
+    "ad": "Doğada küçük figürler",
+    "anahtar": "Q243248",
+    "sanatci": "utagawa-hiroshige",
+    "gorsel": "01f922faba33d1dc",
+    "x": 0.2,
+    "y": 0.53,
+    "w": 0.18,
+    "h": 0.37
+   }
+  ],
+  "vincent-van-gogh": [
+   {
+    "ad": "Girdap gibi fırça",
+    "anahtar": "Q45585",
+    "sanatci": "vincent-van-gogh",
+    "gorsel": "1cc9306dc276e389",
+    "x": 0.33,
+    "y": 0.18,
+    "w": 0.45,
+    "h": 0.32
+   },
+   {
+    "ad": "Selvi ağacı",
+    "anahtar": "Q45585",
+    "sanatci": "vincent-van-gogh",
+    "gorsel": "1cc9306dc276e389",
+    "x": 0.13,
+    "y": 0.55,
+    "w": 0.28,
+    "h": 0.35
+   },
+   {
+    "ad": "Sarı ile koyu mavi",
+    "anahtar": "Q45585",
+    "sanatci": "vincent-van-gogh",
+    "gorsel": "1cc9306dc276e389",
+    "x": 0.8,
+    "y": 0.05,
+    "w": 0.2,
+    "h": 0.25
+   }
+  ],
+  "wassily-kandinsky": [
+   {
+    "ad": "Müzik gibi renk ve çizgi",
+    "anahtar": "Q2990634",
+    "sanatci": "wassily-kandinsky",
+    "gorsel": "f35e7e24663d3a27",
+    "x": 0.28,
+    "y": 0.32,
+    "w": 0.22,
+    "h": 0.28
+   }
+  ],
+  "william-adolphe-bouguereau": [
+   {
+    "ad": "Pürüzsüz, pembe-beyaz ten",
+    "anahtar": "Q5962062",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "c51910673b6a88e6",
+    "x": 0.2,
+    "y": 0.22,
+    "w": 0.16,
+    "h": 0.17
+   },
+   {
+    "ad": "Kusursuz ideal çıplak",
+    "anahtar": "Q1283024",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "809628793ca1b92b",
+    "x": 0.28,
+    "y": 0.23,
+    "w": 0.31,
+    "h": 0.13
+   },
+   {
+    "ad": "Melekler ve puttolar",
+    "anahtar": "Q1283024",
+    "sanatci": "william-adolphe-bouguereau",
+    "gorsel": "809628793ca1b92b",
+    "x": 0.72,
+    "y": 0.13,
+    "w": 0.22,
+    "h": 0.15
+   }
+  ],
+  "william-blake": [
+   {
+    "ad": "Kaslı, kıvrılmış beden",
+    "anahtar": "Q2324840",
+    "sanatci": "william-blake",
+    "gorsel": "124574332ce78e1d",
+    "x": 0.58,
+    "y": 0.24,
+    "w": 0.14,
+    "h": 0.26
+   },
+   {
+    "ad": "Düz, saydam renkler",
+    "anahtar": "Q2324840",
+    "sanatci": "william-blake",
+    "gorsel": "124574332ce78e1d",
+    "x": 0.1,
+    "y": 0.1,
+    "w": 0.27,
+    "h": 0.18
+   }
+  ],
+  "william-hogarth": [
+   {
+    "ad": "Yazıt ve ahlaki uyarı",
+    "anahtar": "william-hogarth|Gin Lane",
+    "sanatci": "william-hogarth",
+    "gorsel": "77f3d102fdc54aed",
+    "x": 0.09,
+    "y": 0.64,
+    "w": 0.21,
+    "h": 0.28
+   },
+   {
+    "ad": "Kalabalık Londra sahnesi",
+    "anahtar": "william-hogarth|Gin Lane",
+    "sanatci": "william-hogarth",
+    "gorsel": "77f3d102fdc54aed",
+    "x": 0.6,
+    "y": 0.35,
+    "w": 0.38,
+    "h": 0.22
+   }
+  ],
+  "william-holman-hunt": [
+   {
+    "ad": "Yaprak yaprak keskin netlik",
+    "anahtar": "Q1757920",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "c354aa1c1ba77038",
+    "x": 0.08,
+    "y": 0.78,
+    "w": 0.3,
+    "h": 0.2
+   },
+   {
+    "ad": "Göz yoran parlak renk",
+    "anahtar": "Q4198276",
+    "sanatci": "william-holman-hunt",
+    "gorsel": "239cc0451ae2401c",
+    "x": 0.56,
+    "y": 0.4,
+    "w": 0.44,
+    "h": 0.26
+   }
+  ]
+ }
+}

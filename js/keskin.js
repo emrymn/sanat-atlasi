@@ -59,7 +59,10 @@ export function keskinlestir(img) {
   const src = img.currentSrc || img.src;
   const commons = commonsUstu(src, k, img.naturalWidth);
   if (commons) return yukselt(img, commons);
-  const buyuk = (r.width * r.height) / (innerWidth * innerHeight) >= BUYUK_ALAN;
+  // İş 193: tanıma kırpımında resim kutudan taşar (yakınlaştırılmış); ekranda kapladığı yer kutunun kendisidir
+  const kap = img.closest('.tk-kirp, .tk-kirp-kucuk .bsy-kirp');
+  const alan = kap ? kap.getBoundingClientRect() : r;
+  const buyuk = (alan.width * alan.height) / (innerWidth * innerHeight) >= BUYUK_ALAN;
   const ust = ustKopya(src, { buyuk: true });
   if (!ust) return;
   // en büyük kopya: ekranı büyük ölçüde kaplıyorsa her zaman; küçük yerde yalnız telefonda inmişse

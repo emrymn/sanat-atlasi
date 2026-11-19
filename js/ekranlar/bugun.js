@@ -382,7 +382,7 @@ export function eserSeridi(eserler, sinif, veri) {
 export function notBolumleri(s) {
   const not = s.kurs_notu || s.anlatim;
   return `${not ? `<section class="bolum">${etiket('Notlarımdan', { vurgu: true })}<p class="okuma italik">${kacis(not)}</p></section>` : ''}
-    ${taninma(s) ? `<section class="bolum">${etiket('Nasıl tanırım?')}<p class="okuma" data-test="taninma">${kacis(taninma(s))}</p></section>` : ''}`;
+    ${taninma(s) ? `<section class="bolum">${etiket('Nasıl tanırım?')}<p class="okuma" data-test="taninma">${kacis(taninma(s))}</p><div data-tanima-kirp></div></section>` : ''}`;
 }
 
 // İş 97 (Emre, tasarım tuvalinde "A"): sayfanın altı Atölye'nin "Turu başlat" kartının dilinde: solda sanatçının üç

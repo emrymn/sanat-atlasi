@@ -2739,3 +2739,28 @@ kartın içinde ikinci bir kart gibi duruyordu; yazısı dört satıra bölünü
 ("Gör adımına devam" / "Öğren adımını aç"), altında sayısı ("9 / 17 ayrıntı · 3 eser"; başlanmamış adımda açıklaması),
 sağda 46 px krem ok (ekrandaki tek dolu öğe); satırın tamamı dokunulur. 1.81.0'daki "düğmenin içinde resim yakınlaşır"
 fikri (zaten 1.8x'te gizlenmişti) ve CSS'i kalktı. Süren adımın çizgisi artık görülen oranda dolu (en az %6).
+
+## 1.90.0 · İş 193: tanıma kırpımları
+Emre: "başyapıtlar kısmına resim eklemek güzel bir eklemeydi … 1 ve 2'yi kesin yapalım" (1: konu maddelerine kırpım,
+2: sanatçının "Nasıl tanırım?" notuna kırpım). Veri `data/tanima_kirpimlari.json`, üretim `scripts/tanima_kirpim/`
+(ayrıntısı `DEVIR.md`).
+- **Kaynak:** yeni kutu çizmek yerine rehberli incelemenin 1497 doğrulanmış ayrıntısından eşleştirme. Maddeyi gerçekten
+  gösteren ayrıntı varsa o; yoksa madde resimsiz kalır (büyüteç simgesi durur). Bir maddeye en çok bir kırpım. Açıklama
+  metni kopyalanmaz: görüntüleyici eserin inceleme kaydıyla, o ayrıntıda açılır (öbür ayrıntılar da gezilebilir).
+  Doğruluk kuralı korunur: eser konunun eser listesinde ya da sanatçının başyapıtı, kutu o görselde doğrulanmış.
+- **Denetim:** ilk 644 eşleşmenin hepsine kontak sayfasında (kırpım + madde/özellik metni) bakıldı. Konularda 9 kırpım
+  çıktı, 7'si maddeyi daha iyi gösteren başka bir ayrıntıyla değişti; sanatçılarda 8 kırpım çıktı. Çıkanlar maddeyi
+  göstermeyen ya da seçilemeyen kırpımlardı: Uccello'nun "kırık mızraklar"ı kırpımda okunmuyordu; Daumier'nin kareleme
+  izi, Morisot'nun tülün ardındaki bebeği, Flora'nın çiçekleri, Medusa'nın kalkan kenarı, La Tour'un karanlıkta kalan
+  yaşlı Yusuf'u seçilemiyordu.
+- **Görünüş:** konu maddesinde büyüteç simgesinin yerine 76 px kare kırpım (köşe 14 px), maddenin altında 13 px soluk
+  "Sanatçı · Eser". Sanatçı sayfasında notun altında Başyapıt sayfasının yana kayan kırpım şeridi (`bsy-serit`,
+  `bsy-kirp-kucuk`), altında özellik adı ve italik eser adı. Özellik adları notun kendi sözlerinden kısaltıldı
+  ("Küçük ışık benekleri", "Alev gibi uzayan figürler").
+- **Bant genişliği:** kırpımın resmi kutudan taşan yakınlaştırılmış bir resim olduğu için `keskin.js` onu "ekranı
+  kaplayan tablo" sanıp 3–15 MB'lık en büyük kopyayı istiyordu; kırpımda alan artık kutudan ölçülür (en büyük kopya yalnız
+  telefona indirilmişse).
+- Bugün ekranı da `notBolumleri`'ni kullanır; orada şerit doldurulmaz (yer tutucu boşken gizli).
+- Test: `tests/unit/tanima_kirpim.test.mjs` (mantık + veri: konu/madde/eser var, kutu ayrıntıda birebir, görsel adı aynı),
+  `tests/e2e/tanima_kirpim.spec.js`. Uçtan uca takımda `harita.spec.js:85` ve `paket8.spec.js:25` bu işten önce de
+  kırıktı (değişiklik olmadan aynı sonuç).
