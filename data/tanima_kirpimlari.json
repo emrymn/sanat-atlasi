@@ -1588,6 +1588,44 @@
     "gorsel": "6731cd14c2e29c01"
    }
   ],
+  "brazen-serpent": [
+   {
+    "madde": 0,
+    "anahtar": "Q11784782",
+    "sanatci": "anthony-van-dyck",
+    "ad": "Direkteki tunç yılan",
+    "x": 0.2,
+    "y": 0.05,
+    "w": 0.15,
+    "h": 0.4,
+    "metin": "Direğe sarılmış tunç yılan. Yuhanna İncili'nde İsa, 'Musa çölde yılanı nasıl yukarı kaldırdıysa, İnsanoğlu da öyle yukarı kaldırılmalı' der; bu yüzden tunç yılan çarmıhın habercisi sayıldı. Ressamlar direği sık sık T ya da haç biçiminde çizer.",
+    "gorsel": "815cea61bc86fca9"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q11784782",
+    "sanatci": "anthony-van-dyck",
+    "ad": "Asalı Musa",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.35,
+    "h": 0.9,
+    "metin": "Solda, elinde asa tutan, halka direği gösteren Musa. Sayılar kitabına göre çölde Tanrı'ya karşı söylenen İsrailoğullarına zehirli yılanlar gönderildi; Musa Tanrı'nın buyruğuyla tunçtan bir yılan yapıp direğe astı ve ona bakan herkes iyileşti. Van Dyck bu tuvali gençken, Rubens'in atölyesindeyken yaptı; Prado'dadır.",
+    "gorsel": "815cea61bc86fca9"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3957934",
+    "sanatci": "michelangelo",
+    "ad": "Yılanlarla boğuşanlar",
+    "x": 0.25,
+    "y": 0.1,
+    "w": 0.75,
+    "h": 0.5,
+    "metin": "Yılanlara dolanmış, kıvranan çıplak bedenler. Michelangelo bu sahneyi Sistina tavanının köşe pandantiflerinden birine yaptı; dört köşede İsrail'in kurtuluşunu anlatan sahneler (Davut, Judith, Ester, Tunç Yılan) bulunur. Kıvrılan, birbirine dolanan bedenler antik 'Laokoon' heykelinden esinlenir.",
+    "gorsel": "ca0fc6a64c04adb7"
+   }
+  ],
   "burning-of-the-houses-of-parliament": [
    {
     "madde": 0,
@@ -4583,6 +4621,44 @@
     "gorsel": "cf3139870b9ae7e1"
    }
   ],
+  "finding-of-the-saviour-in-the-temple": [
+   {
+    "madde": 1,
+    "anahtar": "Q4314748",
+    "sanatci": "william-holman-hunt",
+    "ad": "Tomarlı din bilginleri",
+    "x": 0.0,
+    "y": 0.25,
+    "w": 0.5,
+    "h": 0.7,
+    "metin": "Solda oturan yaşlı din bilginleri; birinin kucağında Tora tomarı. Hunt sahneyi Herodes'in yeniden yaptırdığı Kudüs tapınağının içinde kurar; bilginlerin giysileri ve tören eşyaları onun Kudüs'teki Yahudi cemaatinde yaptığı gözlemlere dayanır. Tablo Birmingham Müzesi'ndedir ve sergilendiğinde büyük ilgi gördü.",
+    "gorsel": "018195b790472e9a"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q4314748",
+    "sanatci": "william-holman-hunt",
+    "ad": "Oğluna sarılan Meryem",
+    "x": 0.55,
+    "y": 0.3,
+    "w": 0.4,
+    "h": 0.65,
+    "metin": "Sağda on iki yaşındaki İsa'ya sarılan Meryem, arkasında Yusuf. Luka İncili'ne göre anne babası kaybolan İsa'yı üç gün sonra tapınakta buldu. Holman Hunt bu tuvali yıllarca Kudüs'te kalarak hazırladı; yüzler için Yahudi modeller kullandı ve giysileri, mimariyi yerinde inceledi. Pre-Rafaelit 'gerçeğe sadakat' ilkesinin en uç örneklerindendir.",
+    "gorsel": "018195b790472e9a"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q4314748",
+    "sanatci": "william-holman-hunt",
+    "ad": "Altın süslemeli tapınak",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.3,
+    "metin": "Üstte altın süslemeli kemerler, sütunlar ve parlak tavan. Hunt, Doğu mimarisinin ayrıntılarını titizlikle işler; kapı aralığından görünen avlu ve işçiler, tapınağın hâlâ yapım hâlinde olduğunu gösterir. Bu ayrıntı, eski tapınağın yerini alacak yeni bir inanca gönderme olarak yorumlanır.",
+    "gorsel": "018195b790472e9a"
+   }
+  ],
   "flagellation": [
    {
     "madde": 0,
@@ -6118,6 +6194,44 @@
     "h": 0.42
    }
   ],
+  "lady-macbeth": [
+   {
+    "madde": 0,
+    "anahtar": "Q18936876",
+    "sanatci": "henry-fuseli",
+    "ad": "Uykuda yürüyen kadın",
+    "x": 0.1,
+    "y": 0.15,
+    "w": 0.55,
+    "h": 0.75,
+    "metin": "Beyaz gecelikli, gözleri açık ama boş bakan kadın: uykuda yürüyen Lady Macbeth. Shakespeare'in 'Macbeth' oyununun 5. perdesinde, kocasını kral Duncan'ı öldürmeye kışkırtan Lady Macbeth, vicdan azabıyla uykusunda gezinir. Fuseli bu tuvali Londra'da 1784'te sergiledi; tiyatro sahnelerinden aldığı dramatik ışık ve pozlar onu ünlü yaptı.",
+    "gorsel": "5424606f670174a9"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q18936876",
+    "sanatci": "henry-fuseli",
+    "ad": "Gizlenen hekim ve nedime",
+    "x": 0.6,
+    "y": 0.4,
+    "w": 0.4,
+    "h": 0.35,
+    "metin": "Sağda gölgede saklanıp onu izleyen hekim ve nedime. Oyunda bu ikili, kraliçenin uykudaki itiraflarına tanık olur; Lady Macbeth hayalî bir kan lekesini silmeye çalışırken 'Çık, lanet leke!' der. Fuseli, izleyicinin de onlar gibi bu sırra gizlice tanık olmasını sağlar.",
+    "gorsel": "5424606f670174a9"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q28555034",
+    "sanatci": "henry-fuseli",
+    "ad": "Hançerleri kapan kadın",
+    "x": 0.15,
+    "y": 0.15,
+    "w": 0.75,
+    "h": 0.65,
+    "metin": "Solda hançerleri tutan kararlı Lady Macbeth, sağda dehşet içindeki Macbeth. Oyunun 2. perdesinde Macbeth kralı öldürdükten sonra kanlı hançerleri geri götürmekten korkar; Lady Macbeth onları alıp kendisi yerine koyar. Fuseli bu sahneyi ünlü aktörler David Garrick ve Hannah Pritchard'ın oyunundan esinlenerek tasarladı.",
+    "gorsel": "c48cfddf60bd33d6"
+   }
+  ],
   "lamentation": [
    {
     "madde": 0,
@@ -7598,6 +7712,32 @@
     "h": 0.32
    }
   ],
+  "oath-on-the-rutli": [
+   {
+    "madde": 0,
+    "anahtar": "Q115047172",
+    "sanatci": "henry-fuseli",
+    "ad": "Yemin eden üç adam",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.9,
+    "h": 0.45,
+    "metin": "Kollarını göğe kaldırarak yemin eden üç adam. İsviçre efsanesine göre 1291'de Uri, Schwyz ve Unterwalden kantonlarının temsilcileri Luzern Gölü kıyısındaki Rütli çayırında Habsburg yönetimine karşı birlik yemini etti; bu, İsviçre Konfederasyonu'nun kuruluşu sayılır. İsviçreli Fuseli bu tuvali Zürih belediye binası için yaptı.",
+    "gorsel": "5367732b123957ec"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q115047172",
+    "sanatci": "henry-fuseli",
+    "ad": "Kenetlenen eller",
+    "x": 0.25,
+    "y": 0.4,
+    "w": 0.5,
+    "h": 0.15,
+    "metin": "Ortada üç adamın birbirine kenetlenmiş elleri: birlik jesti. Fuseli'nin bu tuvali, David'in birkaç yıl sonraki 'Horatiusların Yemini' ile karşılaştırılır; her ikisi de yükseltilmiş kollarla yapılan yurtsever bir yemin anını gösterir. Fuseli'nin kaslı, gergin figürleri Michelangelo'dan etkilenmiştir.",
+    "gorsel": "5367732b123957ec"
+   }
+  ],
   "odyssey": [
    {
     "madde": 0,
@@ -7680,6 +7820,44 @@
     "y": 0.68,
     "w": 0.22,
     "h": 0.2
+   }
+  ],
+  "oedipus-cursing-his-son-polynices": [
+   {
+    "madde": 0,
+    "anahtar": "henry-fuseli|Oedipus Cursing His Son Polynices",
+    "sanatci": "henry-fuseli",
+    "ad": "Lanet okuyan kör baba",
+    "x": 0.45,
+    "y": 0.15,
+    "w": 0.4,
+    "h": 0.4,
+    "metin": "Uzanmış koluyla lanet okuyan kör, yaşlı adam: Oidipus. Sophokles'in 'Kolonos'ta Oidipus' tragedyasında sürgündeki Oidipus, kendisini kovan oğlu Polyneikes'e lanet okur; iki oğlunun birbirini öldüreceğini söyler. Fuseli bu tuvali 1786'da Kraliyet Akademisi'nde sergiledi.",
+    "gorsel": "8abc83c4bb99f37f"
+   },
+   {
+    "madde": 1,
+    "anahtar": "henry-fuseli|Oedipus Cursing His Son Polynices",
+    "sanatci": "henry-fuseli",
+    "ad": "Yüzünü kapatan oğul",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Solda başını kollarıyla kapatan genç savaşçı: Polyneikes. Polyneikes, kardeşi Eteokles'e karşı Teb'e saldırmak için babasından destek istemeye gelmişti. Babasının laneti gerçekleşti: iki kardeş birbirini öldürdü ve bu olay Sophokles'in 'Antigone' tragedyasının başlangıcıdır.",
+    "gorsel": "8abc83c4bb99f37f"
+   },
+   {
+    "madde": 2,
+    "anahtar": "henry-fuseli|Oedipus Cursing His Son Polynices",
+    "sanatci": "henry-fuseli",
+    "ad": "Kız kardeşler",
+    "x": 0.35,
+    "y": 0.0,
+    "w": 0.6,
+    "h": 0.65,
+    "metin": "Babalarına sarılan ve ağlayan iki genç kadın: Antigone ve İsmene. Antigone, sürgündeki kör babasına yol gösteren sadık kızdır; sonra ağabeyi Polyneikes'in cesedini gömmek için kralın emrini çiğneyecektir. Fuseli'nin abartılı jestleri ve karanlık atmosferi, Yunan tragedyasını Romantik bir dehşete çevirir.",
+    "gorsel": "8abc83c4bb99f37f"
    }
   ],
   "ophelia": [
@@ -7898,6 +8076,56 @@
     "h": 0.45,
     "metin": "Bir genç kız, Orfeus'un kesik başını lirinin üstünde taşıyor. Mite göre Orfeus, Eurydike'yi kaybettikten sonra kadınlardan uzak durdu; öfkelenen Trakyalı Mainadlar onu parçaladı, başı lirle birlikte Hebros ırmağında şarkı söyleyerek aktı. Moreau bu sahneyi kendisi icat etti; mücevher gibi ayrıntılar ve rüya havası onu Sembolizmin öncüsü yapar.",
     "gorsel": "ce229ad5f3a4833b"
+   }
+  ],
+  "paolo-and-francesca": [
+   {
+    "madde": 0,
+    "anahtar": "Q7132266",
+    "sanatci": "dante-gabriel-rossetti",
+    "ad": "Öpüşen çift",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.35,
+    "h": 0.85,
+    "metin": "Solda kitap okurken öpüşen genç çift: Paolo ve Francesca. Dante'nin İlahi Komedya'sının 'Cehennem' bölümünde Francesca da Rimini, kocasının kardeşi Paolo ile birlikte Lancelot ile Guinevere'nin aşk hikâyesini okurken âşık olduklarını anlatır. Rossetti bu suluboya triptiği, Dante'ye duyduğu hayranlıkla yaptı; adını da ondan almıştı.",
+    "gorsel": "f0b03bf2e4e20198"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q17494334",
+    "sanatci": "alexandre-cabanel",
+    "ad": "Yerde yatan sevgililer",
+    "x": 0.05,
+    "y": 0.15,
+    "w": 0.65,
+    "h": 0.8,
+    "metin": "Birbirine sarılmış hâlde yere yığılmış iki ölü sevgili. Tarihî olaya göre 1285 civarında Rimini lordu Gianciotto Malatesta, karısı Francesca'yı kardeşi Paolo ile yakalayıp ikisini birden öldürdü. Cabanel sahneyi teatral bir drama olarak, kırmızı ve altın kumaşlarla kurar; bu tuval Paris'teki Orsay Müzesi'ndedir.",
+    "gorsel": "89b8b8ace88cff6c"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q7132266",
+    "sanatci": "dante-gabriel-rossetti",
+    "ad": "Rüzgârda savrulan çift",
+    "x": 0.65,
+    "y": 0.0,
+    "w": 0.35,
+    "h": 0.85,
+    "metin": "Sağda alevler içinde, birbirine sarılmış hâlde rüzgârla savrulan iki figür. Dante'nin cehenneminin ikinci dairesinde, şehvetin günahkârları sonsuza dek bir fırtınada savrulur. Paolo ve Francesca, Francesca'nın kocası Gianciotto Malatesta tarafından öldürülmüştü. Rossetti'nin altın ve kızıl tonları sahneye rüya gibi bir hava verir.",
+    "gorsel": "f0b03bf2e4e20198"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q7132266",
+    "sanatci": "dante-gabriel-rossetti",
+    "ad": "Dante ve Vergilius",
+    "x": 0.35,
+    "y": 0.0,
+    "w": 0.3,
+    "h": 0.85,
+    "metin": "Ortada defne taçlı Dante ve yanında Vergilius, çifti üzgün gözlerle izliyor. Dante'nin anlatısında, Francesca'nın hikâyesini dinleyen şair acıdan bayılır. Rossetti triptiğin ortasına iki şairi koyarak sağdaki cehennem sahnesi ile soldaki aşk sahnesini birbirine bağlar.",
+    "gorsel": "f0b03bf2e4e20198"
    }
   ],
   "paradise-lost": [
@@ -10796,6 +11024,56 @@
     "gorsel": "bc0f35a47e1e1ad4"
    }
   ],
+  "shadow-of-death": [
+   {
+    "madde": 0,
+    "anahtar": "Q949567",
+    "sanatci": "william-holman-hunt",
+    "ad": "Gerinen genç İsa",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.5,
+    "h": 0.65,
+    "metin": "Marangoz tezgâhının başında, kollarını iki yana açıp gerinen genç İsa. Holman Hunt bu tuvali Kudüs'te, İsa'nın Nasıra'daki marangoz atölyesini hayal ederek yaptı; İncillere göre İsa, babası Yusuf gibi marangozdu. Gerçekçi atölye, İsa'nın sıradan bir işçi olarak yaşadığı gizli yılları gösterir. Tuval Manchester Sanat Galerisi'ndedir.",
+    "gorsel": "b44f2894daadcec3"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q949567",
+    "sanatci": "william-holman-hunt",
+    "ad": "Haç biçimli gölge",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.45,
+    "metin": "Arka duvara düşen, çarmıha gerilmiş bir bedeni andıran gölge; gölgenin kolları alet rafına denk gelir. Hunt, sıradan bir gerinme hareketini çarmıhın önceden bildirimi olarak kurar. Bu tür gündelik nesnelere gizli dini anlam yükleme yöntemi Pre-Rafaelitlerin sevdiği bir yaklaşımdır.",
+    "gorsel": "b44f2894daadcec3"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q949567",
+    "sanatci": "william-holman-hunt",
+    "ad": "İrkilen Meryem",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.45,
+    "h": 0.55,
+    "metin": "Solda diz çökmüş, sırtı izleyiciye dönük Meryem, gölgeyi görüp irkilir. Meryem, müneccimlerin getirdiği armağanların durduğu sandığı açmıştı; oğlunun geleceğini sezen bir anne gibidir. Hunt bu resmi gravür olarak da yayımladı ve çok satıldı; İngiliz evlerinde dindar bir imge olarak asıldı.",
+    "gorsel": "b44f2894daadcec3"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q949567",
+    "sanatci": "william-holman-hunt",
+    "ad": "Marangoz aletleri",
+    "x": 0.55,
+    "y": 0.4,
+    "w": 0.45,
+    "h": 0.58,
+    "metin": "Sağda testere, rende, tezgâh ve yerde yonga, talaşlar. Hunt, Nasıra'daki atölyeyi gerçekçi kılmak için bölgedeki marangozların aletlerini inceledi. Her nesne ayrı ayrı, büyüteçle bakılmış gibi işlenmiştir; bu titizlik Pre-Rafaelitlerin hem övülen hem eleştirilen yanıdır.",
+    "gorsel": "b44f2894daadcec3"
+   }
+  ],
   "shakespeare": [
    {
     "madde": 0,
@@ -11524,6 +11802,44 @@
     "h": 0.35,
     "metin": "Bir meyhanenin önünden geçen kalabalık bir aile. Hogarth'ın Günün Dört Saati dizisi tanrıları değil, Londra sokaklarını gösterir: sabah pazar yeri, öğle kilise çıkışı, akşam kent dışında gezinti, gece sarhoş sokaklar. Ressam bu tabloları sonra gravüre aktarıp sattı; ahlak dersi veren, alaycı sahneler onun imzasıdır.",
     "gorsel": "85dc029cb5dea00b"
+   }
+  ],
+  "titania-and-bottom": [
+   {
+    "madde": 0,
+    "anahtar": "Q19968926",
+    "sanatci": "henry-fuseli",
+    "ad": "Eşek başlı adam",
+    "x": 0.4,
+    "y": 0.15,
+    "w": 0.35,
+    "h": 0.55,
+    "metin": "Eşek başlı adam: dokumacı Bottom. Shakespeare'in 'Bir Yaz Gecesi Rüyası' oyununda yaramaz peri Puck, Bottom'ın başını eşek başına çevirir. Fuseli'nin bu ikinci versiyonunda Titania ve Bottom birbirine sarılmıştır; Fuseli bu konuyu Boydell'in Shakespeare Galerisi için birkaç kez işledi.",
+    "gorsel": "4b958923c53e567e"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18686639",
+    "sanatci": "henry-fuseli",
+    "ad": "Peri kraliçesi",
+    "x": 0.3,
+    "y": 0.1,
+    "w": 0.35,
+    "h": 0.6,
+    "metin": "Ortada beyaz, ışıklı peri kraliçesi Titania. Oyunda kocası Oberon, Titania'ya kıskançlıkla bir aşk iksiri döker; Titania uyandığında gördüğü ilk varlığa, eşek başlı Bottom'a âşık olur. Fuseli'nin bu tuvali Londra'daki Tate'tedir; Titania'nın sevgisi aşkın körlüğünün komik bir örneğidir.",
+    "gorsel": "60e6f65bb56e9349"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18686639",
+    "sanatci": "henry-fuseli",
+    "ad": "Garip periler",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Çevrede dans eden, garip yüzlü periler ve yaratıklar. Fuseli perileri tatlı varlıklar olarak değil, rüya gibi tuhaf, yarı ürkütücü figürler olarak çizer; bunlar arasında hayvan başlı varlıklar ve modaya uygun giyinmiş kadınlar da vardır. Bu karanlık fantezi dünyası onun Romantik hayal gücünün özüdür.",
+    "gorsel": "60e6f65bb56e9349"
    }
   ],
   "tobias-and-the-angel": [
