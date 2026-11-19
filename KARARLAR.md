@@ -2739,3 +2739,97 @@ kartın içinde ikinci bir kart gibi duruyordu; yazısı dört satıra bölünü
 ("Gör adımına devam" / "Öğren adımını aç"), altında sayısı ("9 / 17 ayrıntı · 3 eser"; başlanmamış adımda açıklaması),
 sağda 46 px krem ok (ekrandaki tek dolu öğe); satırın tamamı dokunulur. 1.81.0'daki "düğmenin içinde resim yakınlaşır"
 fikri (zaten 1.8x'te gizlenmişti) ve CSS'i kalktı. Süren adımın çizgisi artık görülen oranda dolu (en az %6).
+
+## 1.90.0 · İş 193: tanıma kırpımları
+Emre: "başyapıtlar kısmına resim eklemek güzel bir eklemeydi … 1 ve 2'yi kesin yapalım" (1: konu maddelerine kırpım,
+2: sanatçının "Nasıl tanırım?" notuna kırpım). Veri `data/tanima_kirpimlari.json`, üretim `scripts/tanima_kirpim/`
+(ayrıntısı `DEVIR.md`).
+- **Kaynak:** yeni kutu çizmek yerine rehberli incelemenin 1497 doğrulanmış ayrıntısından eşleştirme. Maddeyi gerçekten
+  gösteren ayrıntı varsa o; yoksa madde resimsiz kalır (büyüteç simgesi durur). Bir maddeye en çok bir kırpım. Açıklama
+  metni kopyalanmaz: görüntüleyici eserin inceleme kaydıyla, o ayrıntıda açılır (öbür ayrıntılar da gezilebilir).
+  Doğruluk kuralı korunur: eser konunun eser listesinde ya da sanatçının başyapıtı, kutu o görselde doğrulanmış.
+- **Denetim:** ilk 644 eşleşmenin hepsine kontak sayfasında (kırpım + madde/özellik metni) bakıldı. Konularda 9 kırpım
+  çıktı, 7'si maddeyi daha iyi gösteren başka bir ayrıntıyla değişti; sanatçılarda 8 kırpım çıktı. Çıkanlar maddeyi
+  göstermeyen ya da seçilemeyen kırpımlardı: Uccello'nun "kırık mızraklar"ı kırpımda okunmuyordu; Daumier'nin kareleme
+  izi, Morisot'nun tülün ardındaki bebeği, Flora'nın çiçekleri, Medusa'nın kalkan kenarı, La Tour'un karanlıkta kalan
+  yaşlı Yusuf'u seçilemiyordu.
+- **Görünüş:** konu maddesinde büyüteç simgesinin yerine 76 px kare kırpım (köşe 14 px), maddenin altında 13 px soluk
+  "Sanatçı · Eser". Sanatçı sayfasında notun altında Başyapıt sayfasının yana kayan kırpım şeridi (`bsy-serit`,
+  `bsy-kirp-kucuk`), altında özellik adı ve italik eser adı. Özellik adları notun kendi sözlerinden kısaltıldı
+  ("Küçük ışık benekleri", "Alev gibi uzayan figürler").
+- **Bant genişliği:** kırpımın resmi kutudan taşan yakınlaştırılmış bir resim olduğu için `keskin.js` onu "ekranı
+  kaplayan tablo" sanıp 3–15 MB'lık en büyük kopyayı istiyordu; kırpımda alan artık kutudan ölçülür (en büyük kopya yalnız
+  telefona indirilmişse).
+- Bugün ekranı da `notBolumleri`'ni kullanır; orada şerit doldurulmaz (yer tutucu boşken gizli).
+- Test: `tests/unit/tanima_kirpim.test.mjs` (mantık + veri: konu/madde/eser var, kutu ayrıntıda birebir, görsel adı aynı),
+  `tests/e2e/tanima_kirpim.spec.js`. Bulut ortamındaki yeni Playwright'ta (1.63) `harita.spec.js:85` ve
+  `paket8.spec.js:25` düşüyor: o Chromium `DeviceMotionEvent.requestPermission` tanımlıyor, uygulama iPhone'daki gibi izin
+  düğmesini bekliyor, test düğmeye basmadığı için duvar sallanmıyor. Projenin sabit sürümünde (1.56.1, CI) ikisi de geçer;
+  uygulama hatası değil.
+- **Yeni kutular (ikinci tur):** kırpımı olmayan 29 sanatçıdan 24'üne eserine bakılarak 47 kutu çizildi
+  (`yeni_sanatci.json`; Reni, Guercino, Ribera, Canaletto, Pissarro, Sisley, Signac, Miró, Ernst, Arp…). Metinler yalnız
+  resimde gözle görüleni anlatır (ör. "Kanalda gondollar ve kürek çeken küçük figürler"), tarih ve isim eklenmedi;
+  her kutu kontak sayfasında denetlendi; Nolde'nin "maske gibi yüz"ü seçilemediği için çıkarıldı (46 kaldı). Kalan 5: dört heykeltıraşın (Praxiteles,
+  Giovanni Pisano, Cellini, Canova) önbellekte eseri yok; Man Ray'in notu fotoğraflarını anlatıyor, elde yalnız resmi var.
+
+## 1.90.1 · İş 193: elle çizilen kırpımlara bilgi
+
+Emre: "ama sen sadece betimleme yapıyorsun ben onu istemiyorum daha çok bilgi versin". 46 elle çizilen sanatçı
+kırpımının metni yeniden yazıldı. Artık önce kısa bir "bak" cümlesi, ardından bilgi geliyor: konu ve hikâye, teknik,
+kimin için yapıldığı, sanatçıyı benzerlerinden ayıran ipucu.
+
+- **Örnekler:**
+  - Duchamp'ın öğütücüsünde çizgiler tuvale dikilmiş iplik; makineyi Rouen'de bir vitrinde gördü, Büyük Cam'a taşıdı.
+  - Pozzo'nun tonozunda yanılsama, zemindeki işaretli noktadan bakınca tam çalışır.
+  - Ribera'nın sakallı kadınını Alcalá Dükü ısmarladı.
+  - Pissarro son yıllarında göz hastalığı yüzünden otel pencerelerinden çalıştı.
+  - Lorenzetti'nin döşemesi Brunelleschi'den yaklaşık 80 yıl önceki bir perspektif denemesi.
+- **Doğruluk:**
+  - Yalnız iyi bilinen olgular yazıldı ve sanatçının notuyla çelişmeyenler kaldı.
+  - Emin olunmayan şeyler ya yumuşatıldı ya da çıkarıldı. Khnopff'un sfenksi için "Marguerite'e benzetilir" dendi. Ter
+    Brugghen'in giysisi "tiyatro kostümü" değil, "eski moda kostüm" diye geçiyor. Reni metninde Caravaggio'nun
+    çizmediği bir konuya Caravaggio karşılaştırması yapılmadı.
+  - Eser atfı değişmedi.
+- **Hazır ayrıntılardan gelen kırpımlar:** 289 sanatçı ve 338 konu kırpımı rehberli incelemenin metniyle açılır. O
+  metinler zaten çoğunlukla bilgi veriyor (hikâye, teknik, sipariş), bu turda değiştirilmedi.
+- Sürüm 1.90.1. Veri dosyası telefonda önbellekten okunduğu için yeni metinlerin gelmesi sürüm artışına bağlı.
+
+## 1.90.2 · Bilgi turu: bütün ayrıntı açıklamaları
+
+Emre bu kuralın genel olduğunu söyledi: "dediğim şey geneldi sadece bunlar değil". Bu yüzden
+`data/eser_ayrintilari.json`'daki 264 eserin 1497 noktasının hepsine tek tek bakıldı.
+
+- **Değişen:** 326 nokta. Bunlar yalnız betimleme yapan ya da betimleme ağırlıklı metinlerdi. Yeni metinler kısa bir "bak"
+  cümlesiyle başlıyor, ardından bilgi veriyor:
+  - hikâye ya da kaynak metin,
+  - kim için, nerede yapıldığı,
+  - teknik,
+  - sonra kimi etkilediği,
+  - sanatçıyı benzerlerinden ayıran ipucu.
+- **Değişmeyen:** Zaten bilgi veren 1171 nokta. Kutulara, adlara ve eser atıflarına dokunulmadı.
+- **Doğruluk:**
+  - Yalnız iyi bilinen olgular yazıldı.
+  - Tartışmalı olanlar "düşünülür", "anlatılır", "yorumlanır" diye yumuşatıldı. Örnekler: Rubens'in Şimşon ve Dalila'sının
+    atfı, Bramante'nin eğitimi, Salvator Mundi'nin atfı.
+  - Emin olunamayan ayrıntılar yazılmadı. Örnekler: müze satın alma yılları, kesin sayılar.
+- **Düzeltilen iki eski hata:**
+  - Perugino'nun Anahtar Teslimi'nde "Bramante ve Raffaello'nun Tempietto'su" yazıyordu. Tempietto Bramante'nindir;
+    Raffaello'nun bu sahneye bağı Meryem'in Evlenmesi'dir.
+  - Leonardo'nun Son Akşam Yemeği'nde "dörderli dört grup" yazıyordu. Doğrusu üçerli dört gruptur.
+- **Araçlar:** `scripts/ayrinti/bilgi_turu.py` (liste / uygula / durum) ve `BILGI_TURU.md` (kural ve devir notu).
+  Tur her 8 eserde bir gönderildi; böylece başka bir oturum kaldığı yerden sürdürebilirdi.
+- **Telefon:** Veri dosyası önbellekten okunduğu için yeni metinlerin telefona gelmesi sürüm artışına bağlı (1.90.2).
+
+## 1.90.3 · Tanıma kırpımları: bütün konular
+
+Emre'nin isteği: kırpımı olmayan konu sayfalarındaki "Resimde nasıl tanınır?" maddelerine kırpım çizilsin, en çok eseri
+olan konulardan başlansın, yazılar betimleme değil bilgi versin (`scripts/ayrinti/BILGI_TURU.md` kuralı).
+
+- **Kapsam:** 261 konuya 866 kutu elle çizildi (`scripts/tanima_kirpim/yeni_konu.json`). Eseri olan 371 konunun hepsinde
+  artık en az bir kırpım var.
+- **Denetim:** Her kutu için madde tek, eser konuda ve önbellekte, ad 2–34 karakter, metin 60–420 karakter ve 2–4 cümle,
+  kutu resmin %4'ünden büyük ve %60'ından küçük. Her parti kontrol sayfasında tek tek bakıldı; maddeyi açıkça göstermeyen
+  kutular kaldırıldı ya da taşındı.
+- **Bilerek boş kalanlar:** Resimde seçilemeyen maddeler kırpımsız (ör. Efkaristiya'daki perde ve kadeh, Septimius'taki kılıç).
+- **Telefon:** Veri dosyası önbellekten okunduğu için kırpımların telefona gelmesi sürüm artışına bağlı (1.90.3).
+

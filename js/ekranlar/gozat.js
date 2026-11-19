@@ -56,6 +56,7 @@ import { harfUygula, AKIM_HARFLERI } from '../harfler.js';
 import { BOLGELER, bolgeBul } from '../harita.js';
 import { imzaGoster } from '../imza.js';
 import { kunyeGoster } from '../kunye.js';
+import { konuKirpimlari, sanatciKirpimlari } from './tanimaKirpim.js';
 import { hareketAz } from '../gecis.js';
 
 // ---------- Başyapıt yakın okumaları ----------
@@ -103,6 +104,7 @@ export function ayrintiVeri() {
   return ayrintiSozu;
 }
 export const ayrintiBulucu = (e) => eserinAyrintisi(ayrintiListesi, e);
+const AYRINTI = { veri: () => ayrintiVeri(), bulucu: (e) => ayrintiBulucu(e) };
 
 async function basyapitBaglariniDoldur(id) {
   const liste = sanatcininBasyapitlari(await basyapitVeri(), id);
@@ -509,7 +511,7 @@ export async function konuSayfasi(kodlu) {
           .map((p, i) => `<p class="okuma" style="--i:${Math.min(i, 6)}">${kacis(p)}</p>`)
           .join('')}</div>
         <button class="konu-uzat" type="button" data-konu-uzat aria-expanded="false" aria-controls="konu-metin" hidden><span>Devamını oku</span>${ikon('asagi', 18, 1.8)}</button></section>
-      ${k.tanima.length ? `<section class="konu-bolum" data-gozcu>${etiket('Resimde nasıl tanınır?', { vurgu: true })}<ul class="konu-ipuclari">${k.tanima.map((x, i) => `<li style="--i:${i}">${ikon('ara', 18, 1.6)}<span>${kacis(x)}</span></li>`).join('')}</ul></section>` : ''}
+      ${k.tanima.length ? `<section class="konu-bolum" data-gozcu>${etiket('Resimde nasıl tanınır?', { vurgu: true })}<ul class="konu-ipuclari" data-konu-ipuclari>${k.tanima.map((x, i) => `<li style="--i:${i}" data-tanima-madde="${i}">${ikon('ara', 18, 1.6)}<span>${kacis(x)}</span></li>`).join('')}</ul></section>` : ''}
       <section class="konu-bolum konu-yol" data-gozcu><div class="konu-yol-ust">${etiket(`Aynı hikâye, ${k.eserler.length} kez`)}<button class="tumunu-goster" type="button" data-konu-tumu data-test="konu-tumu" hidden>Tümünü göster ${ikon('ileri', 15, 1.7)}</button></div><p class="konu-yol-not">Zaman sırasıyla; kaydır, dokunup büyüt.</p>
         <div class="konu-serit" data-konu-eserler><p class="ikincil kucuk">Eserler yükleniyor…</p></div></section>
       <p class="konu-dipnot">Metni Claude yazdı, ikinci bir istekte denetledi. Konu, eserlerin adından çıkarıldı; arada yanlış eşleşme olabilir.</p>
@@ -526,6 +528,8 @@ export async function konuSayfasi(kodlu) {
     return;
   }
   ayrintiVeri();
+  // İş 193: tanıma maddelerinin yanında eserden kırpım
+  konuKirpimlari(k, ekran.querySelector('[data-konu-ipuclari]'), eserler, AYRINTI).catch(() => {});
   const gorAc = (i) => goruntuleyiciAc({ eserler, baslangic: i, notu: (e) => notuIcin(e.sid)(e), ayrintilar: ayrintiBulucu, ...gorselTercihi() });
   const galeriDugme = ekran.querySelector('[data-konu-galeri-ac]');
   if (galeriDugme) {
@@ -1027,6 +1031,8 @@ export async function sanatciSayfasi(id) {
   kutu.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
   ayrintiVeri();
+  // İş 193: "Nasıl tanırım?" notunun altında eserlerden kırpımlar
+  sanatciKirpimlari(s, ekran.querySelector('[data-tanima-kirp]'), eserler, AYRINTI).catch(() => {});
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
     if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), notu: notuIcin(s.id), ayrintilar: ayrintiBulucu, ...gorselTercihi() });

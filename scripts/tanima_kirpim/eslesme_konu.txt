@@ -1,0 +1,111 @@
+# konuId Mi=Ej.n ... (aday.py konu dökümündeki sırayla; donustur.py anahtara çevirir)
+madonna-and-child M0=E5.1 M1=E0.1 M2=E3.0 M4=E3.3 M5=E3.5
+crucifixion M0=E2.0 M1=E1.1 M2=E0.3
+annunciation M0=E3.0 M1=E4.2 M2=E0.2 M3=E2.1 M4=E0.0 M5=E4.1
+holy-family M2=E0.3
+adoration-of-the-magi M0=E3.0 M1=E3.2 M2=E0.0 M4=E2.0 M5=E0.2
+adam-and-eve M1=E1.2 M2=E0.5
+saint-francis M0=E0.3 M1=E0.2 M2=E0.0 M3=E1.1 M4=E0.1 M5=E0.5
+judith-and-holofernes M0=E2.2 M1=E0.2 M2=E1.3 M3=E1.5
+mary-magdalene M0=E0.4 M1=E2.2 M2=E1.1 M5=E0.1
+lamentation M0=E1.3 M1=E0.0 M2=E0.5
+saint-sebastian M1=E0.1 M2=E0.2 M3=E0.0
+nativity M0=E2.0 M1=E0.1 M2=E1.1 M3=E2.4 M4=E1.2 M5=E2.2
+adoration-of-the-shepherds M0=E0.1 M1=E0.0 M4=E1.2 M5=E1.0
+assumption-of-the-virgin M1=E0.1 M2=E0.2 M4=E0.0
+entombment M1=E1.2
+pieta M0=E0.0 M1=E0.1 M4=E0.2
+deposition M0=E1.1 M1=E0.0 M2=E0.4 M3=E0.1 M4=E0.5 M5=E0.2
+jacob M1=E0.0 M2=E1.0
+last-judgment M0=E0.0 M1=E0.2 M2=E1.3 M3=E0.1 M4=E0.4 M5=E0.5
+prodigal-son M0=E0.3 M1=E0.0 M5=E0.4
+coronation-of-the-virgin M0=E0.0 M2=E0.1 M3=E0.2 M4=E0.3
+birth-of-venus M0=E0.0 M1=E0.4 M2=E2.0 M3=E0.2 M4=E0.5 M5=E2.4
+salome M1=E0.2 M2=E0.3 M3=E0.1
+susanna-and-the-elders M0=E0.0 M1=E1.0 M2=E1.3 M3=E0.1 M4=E0.5
+last-supper M0=E0.0 M2=E0.1 M4=E0.5
+baptism-of-christ M0=E0.2 M1=E0.1 M3=E0.0 M4=E0.3 M5=E0.4
+samson-and-delilah M0=E0.0 M2=E0.5 M3=E0.2
+cleopatra M4=E0.0 M5=E1.1
+flight-into-egypt M0=E0.1 M1=E0.2 M2=E0.0
+cupid-and-psyche M0=E0.0 M3=E0.2
+venus-and-mars M0=E0.5 M1=E0.4 M2=E0.0
+agony-in-the-garden M0=E0.0 M1=E0.2 M2=E1.4 M3=E0.3 M4=E0.4
+flagellation M0=E0.0 M2=E0.3 M5=E1.1
+christ-carrying-the-cross M0=E0.0 M1=E0.5 M4=E0.2
+massacre-of-the-innocents M0=E0.0 M1=E0.1 M2=E0.2
+danae M1=E1.1 M2=E0.1 M3=E1.0 M5=E2.0
+bacchus-and-ariadne M0=E0.1 M1=E0.0 M2=E2.3 M3=E2.4 M4=E0.2
+judgement-of-paris M0=E0.1 M4=E0.2
+venus-and-adonis M2=E0.2
+supper-at-emmaus M0=E0.0 M1=E0.2 M3=E0.5 M4=E0.4
+visitation M0=E0.0 M1=E0.1
+temptation-of-saint-anthony M0=E0.0 M1=E0.1
+diana-and-actaeon M0=E0.1 M1=E1.0 M2=E0.0 M5=E1.3
+mocking-of-christ M0=E0.0
+ophelia M2=E0.1 M3=E0.5 M4=E0.0
+marriage-of-the-virgin M0=E0.0 M1=E0.2 M4=E0.1
+creation-of-adam M0=E0.3 M1=E0.1 M2=E0.0
+bathsheba M0=E0.0 M3=E0.1 M4=E0.3
+oedipus-and-the-sphinx M1=E0.0 M2=E0.1 M3=E0.2 M4=E0.3
+presentation-in-the-temple M0=E0.0 M2=E0.2 M3=E0.1 M4=E0.3
+three-graces M0=E0.4 M2=E0.2 M3=E0.0 M4=E0.5
+dormition-of-the-virgin M0=E0.0 M4=E0.2 M5=E0.3
+rape-of-ganymede M0=E0.0 M2=E0.4
+immaculate-conception M0=E0.1 M1=E0.2 M2=E0.0 M5=E0.3
+diana-and-endymion M0=E0.1 M1=E0.0
+entry-into-jerusalem M0=E0.0 M2=E0.3 M3=E0.1
+rape-of-the-sabine-women M0=E0.1 M1=E0.0 M3=E0.2
+marriage-at-cana M1=E0.0 M5=E0.5
+doubting-thomas M0=E0.1 M1=E0.0
+beer-street-and-gin-lane M1=E0.0 M2=E0.2
+medusa M0=E0.2 M2=E0.0 M3=E0.1
+raft-of-the-medusa M0=E0.5 M1=E0.3 M2=E0.0 M3=E0.1 M4=E0.2 M5=E0.4
+fortune-teller M0=E0.3 M1=E0.0 M2=E0.4 M3=E0.2
+death-of-socrates M1=E0.1 M2=E0.0 M3=E0.4 M5=E0.5
+et-in-arcadia-ego M1=E0.0 M5=E0.4
+sleeping-venus M0=E0.0 M1=E0.2
+tribute-money M2=E0.0
+origin-of-the-milky-way M0=E0.0 M1=E0.1 M2=E0.4 M3=E0.3 M4=E0.2
+saint-joseph M2=E0.3 M3=E0.1
+belshazzar-s-feast M0=E0.1 M1=E0.2 M2=E0.3 M3=E0.4 M4=E0.0
+galatea M3=E0.0
+conversion-of-saint-paul M0=E0.0 M1=E0.5 M4=E0.2
+isabella-and-the-pot-of-basil M0=E1.0 M1=E1.1 M2=E1.3 M4=E0.1
+saint-martin-and-the-beggar M0=E0.1 M1=E0.0 M2=E0.2 M3=E0.3
+dante-and-the-divine-comedy M0=E0.0 M2=E0.1 M3=E0.2 M5=E0.4
+christ-giving-the-keys-to-saint-peter M0=E0.0 M5=E0.1
+dante-and-virgil-in-hell M0=E0.0 M1=E0.1 M2=E0.2 M3=E1.0 M4=E0.3
+christ-in-the-house-of-martha-and-mary M0=E0.0 M1=E0.3 M2=E0.2
+calling-of-saint-matthew M0=E0.3 M1=E0.1 M3=E0.2 M5=E0.4
+oath-of-the-horatii M0=E0.1 M1=E0.0 M2=E0.4 M3=E0.3
+ages-of-man M1=E0.0 M2=E1.1
+apostles M0=E0.0 M1=E0.1
+battle-of-san-romano M0=E0.2 M2=E0.4
+birth-of-the-virgin M0=E0.3 M1=E0.4 M2=E0.1
+commedia-dellarte M0=E0.1
+constantine-the-great M0=E0.1
+death-of-general-wolfe M0=E0.0 M1=E0.1 M2=E0.3
+death-of-marat M0=E0.5 M1=E0.0 M2=E0.4
+diana M0=E0.0 M1=E0.5 M2=E0.1
+embarkation-for-cythera M0=E0.3 M1=E0.0 M2=E0.5
+garden-of-earthly-delights M1=E0.3 M2=E0.5
+golden-calf M0=E0.0 M1=E0.1 M2=E0.4
+guernica M1=E0.0 M2=E0.5
+history-of-alexander-the-great M0=E0.0 M2=E1.0
+homer M0=E0.0 M1=E0.1
+isle-of-the-dead M0=E0.1 M1=E0.0 M2=E0.2
+jupiter-and-io M0=E0.0
+knight-death-and-the-devil M0=E0.2 M1=E0.1 M2=E0.3
+labours-of-the-months M0=E2.2 M1=E0.5 M2=E1.0
+light-of-the-world M0=E0.1 M2=E0.4
+melancholia M0=E0.2 M1=E0.4 M2=E0.1
+napoleon M0=E0.3 M1=E1.1 M2=E2.0
+netherlandish-proverbs M1=E0.1
+queen-of-sheba M1=E0.5 M2=E0.0
+salvator-mundi M0=E0.1 M1=E0.0
+storm-on-the-sea-of-galilee M0=E0.0 M1=E0.2 M2=E0.4
+the-nightmare M0=E0.2 M1=E0.0 M2=E0.1
+the-swing M0=E0.3 M1=E0.2 M2=E0.1
+venus-at-her-toilet M0=E0.0 M1=E0.2
+witches M2=E0.0

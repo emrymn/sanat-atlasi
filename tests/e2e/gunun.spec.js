@@ -73,9 +73,10 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
   await page.goto('./');
   const kart = page.locator('[data-test="gunun-kart"]');
   await expect(kart.locator('[data-gunun-gorsel] > img')).toBeVisible();
-  // eserin adı ve yılı adın altında
-  await expect(kart.locator('[data-bugun-eser]')).toBeVisible();
+  // eserin adı ve yılı adın altında; imzası olan ressamda (1.80.0) ad yerine imza görünür. Günün sanatçısı tarihe
+  // bağlı olduğundan ikisinden biri yeter.
   await expect(kart.locator('[data-bugun-eser]')).not.toBeEmpty();
+  await expect(kart.locator('[data-bugun-eser]:visible, .bugun-alt .imza-kap:visible').first()).toBeVisible();
   // açılışta açıklama yazısı yok; tur düğmesi yalnız yürüyüşün sonunda
   await expect(page.locator('.duvar-etiketi, .sahne-paneller, .kaydir-ipucu')).toHaveCount(0);
   await expect(page.locator('[data-test="yur-tur"]')).not.toBeInViewport();
