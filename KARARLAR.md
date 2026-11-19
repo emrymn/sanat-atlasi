@@ -2794,3 +2794,29 @@ kimin için yapıldığı, sanatçıyı benzerlerinden ayıran ipucu.
   metinler zaten çoğunlukla bilgi veriyor (hikâye, teknik, sipariş), bu turda değiştirilmedi.
 - Sürüm 1.90.1. Veri dosyası telefonda önbellekten okunduğu için yeni metinlerin gelmesi sürüm artışına bağlı.
 
+## 1.90.2 · Bilgi turu: bütün ayrıntı açıklamaları
+
+Emre bu kuralın genel olduğunu söyledi: "dediğim şey geneldi sadece bunlar değil". Bu yüzden
+`data/eser_ayrintilari.json`'daki 264 eserin 1497 noktasının hepsine tek tek bakıldı.
+
+- **Değişen:** 326 nokta. Bunlar yalnız betimleme yapan ya da betimleme ağırlıklı metinlerdi. Yeni metinler kısa bir "bak"
+  cümlesiyle başlıyor, ardından bilgi veriyor:
+  - hikâye ya da kaynak metin,
+  - kim için, nerede yapıldığı,
+  - teknik,
+  - sonra kimi etkilediği,
+  - sanatçıyı benzerlerinden ayıran ipucu.
+- **Değişmeyen:** Zaten bilgi veren 1171 nokta. Kutulara, adlara ve eser atıflarına dokunulmadı.
+- **Doğruluk:**
+  - Yalnız iyi bilinen olgular yazıldı.
+  - Tartışmalı olanlar "düşünülür", "anlatılır", "yorumlanır" diye yumuşatıldı. Örnekler: Rubens'in Şimşon ve Dalila'sının
+    atfı, Bramante'nin eğitimi, Salvator Mundi'nin atfı.
+  - Emin olunamayan ayrıntılar yazılmadı. Örnekler: müze satın alma yılları, kesin sayılar.
+- **Düzeltilen iki eski hata:**
+  - Perugino'nun Anahtar Teslimi'nde "Bramante ve Raffaello'nun Tempietto'su" yazıyordu. Tempietto Bramante'nindir;
+    Raffaello'nun bu sahneye bağı Meryem'in Evlenmesi'dir.
+  - Leonardo'nun Son Akşam Yemeği'nde "dörderli dört grup" yazıyordu. Doğrusu üçerli dört gruptur.
+- **Araçlar:** `scripts/ayrinti/bilgi_turu.py` (liste / uygula / durum) ve `BILGI_TURU.md` (kural ve devir notu).
+  Tur her 8 eserde bir gönderildi; böylece başka bir oturum kaldığı yerden sürdürebilirdi.
+- **Telefon:** Veri dosyası önbellekten okunduğu için yeni metinlerin telefona gelmesi sürüm artışına bağlı (1.90.2).
+

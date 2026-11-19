@@ -75,5 +75,12 @@ Sonra:
 
 ## Durum
 
+**Tur bitti (1.90.2): 264/264 eser, 326 nokta değişti; geri kalanlar zaten bilgi veriyordu.** Yeni eser
+eklenince aynı kural geçerli: `bilgi_turu.py liste` yeni eseri gösterir.
+
+Denetleyici notu: cümle sayacı cümle başında büyük harf (A–Z, Ç Ğ İ Ö Ş Ü) bekler. Rakamla ("1911'de"), É gibi
+harflerle ya da tırnakla başlayan cümle önceki cümleye eklenir ve "1 cümle" hatası çıkar; cümleyi bir sözcükle başlat.
+
+
 `bilgi_turu_durum.json` → `bitti`. Dal: `claude/gallant-hypatia-6fkv8i`, PR emrymn/sanat-atlasi#229 (taslak).
 Emre açıkça istemedikçe birleştirme (merge) yapma.
