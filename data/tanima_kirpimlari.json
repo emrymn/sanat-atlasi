@@ -278,6 +278,44 @@
     "h": 0.26
    }
   ],
+  "apocalypse": [
+   {
+    "madde": 0,
+    "anahtar": "albrecht-durer|The Four Horsemen, from \"The Apocalypse\"",
+    "sanatci": "albrecht-durer",
+    "ad": "Dörtnala dört atlı",
+    "x": 0.05,
+    "y": 0.18,
+    "w": 0.9,
+    "h": 0.6,
+    "metin": "Yay, kılıç ve terazi taşıyan üç atlı; önlerinde, sıska atın üstünde ölüm. Vahiy kitabında Kuzu mühürleri açtıkça çıkan bu atlılar fetih, savaş, kıtlık ve ölümü getirir. Dürer 1498'de Kıyamet dizisini Latince ve Almanca metinle kendisi yayımladı; bir ressamın kendi kitabını basması bir ilkti. Gergin, sık ve kıvrak çizgiler tahta baskıyı resim kadar zengin yapar.",
+    "gorsel": "425f3e6acf7e826b"
+   },
+   {
+    "madde": 1,
+    "anahtar": "albrecht-durer|The Whore of Babylon, from \"The Apocalypse\"",
+    "sanatci": "albrecht-durer",
+    "ad": "Yedi başlı canavardaki kadın",
+    "x": 0.5,
+    "y": 0.4,
+    "w": 0.46,
+    "h": 0.5,
+    "metin": "Yedi başlı canavarın sırtında, elinde altın kadeh tutan süslü kadın: Babil Fahişesi. Vahiy 17'de mor ve kırmızılar giymiş bu kadın, yozlaşmış dünyevi gücün simgesidir; Reform'dan sonra Protestanlar onu papalık Roma'sı diye okudu. Dürer kadını Venedik'te çizdiği şık bir Venedikli kadının giysisiyle gösterir.",
+    "gorsel": "f80142904018f928"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q7735049",
+    "sanatci": "william-blake",
+    "ad": "Taçlarını bırakan yaşlılar",
+    "x": 0.1,
+    "y": 0.3,
+    "w": 0.8,
+    "h": 0.67,
+    "metin": "Altta taçlarını bırakan yaşlılar, ortada ışıklı taht, iki yanda gözlerle kaplı kanatlar. Vahiy 4'te Yuhanna, gökkuşağıyla çevrili tahtın önünde yirmi dört yaşlının taçlarını yere koyduğunu, her yanı gözlerle dolu dört yaratığın 'Kutsal' diye bağırdığını görür. Blake bu suluboyayı hamisi Thomas Butts için yaptığı Kutsal Kitap dizisine çizdi; simetrik, ışık saçan düzen onun kişisel vizyoner dilidir.",
+    "gorsel": "7765082f1ab43fb4"
+   }
+  ],
   "apostles": [
    {
     "madde": 0,
@@ -1253,6 +1291,44 @@
     "h": 0.14
    }
   ],
+  "dance-of-death": [
+   {
+    "madde": 0,
+    "anahtar": "hans-holbein-genc|The Abbot, from \"The Dance of Death\"",
+    "sanatci": "hans-holbein-genc",
+    "ad": "Başrahibi çeken iskelet",
+    "x": 0.0,
+    "y": 0.12,
+    "w": 0.9,
+    "h": 0.65,
+    "metin": "Başrahibin cübbesinden tutup onu sürükleyen iskelet; kendi başına da rahibin piskopos şapkasını geçirmiş, elinde asasını tutuyor. Ölüm Dansı, ölümün papadan köylüye herkesi ayrımsız aldığını anlatan Ortaçağ temasıdır. Holbein bu küçük tahta baskı dizisini Basel'de tasarladı; kalıpları usta oymacı Hans Lützelburger kesti ve dizi kitap olarak Lyon'da basıldı.",
+    "gorsel": "51c1ba6e9c1eef75"
+   },
+   {
+    "madde": 1,
+    "anahtar": "hans-holbein-genc|The Pope, from \"The Dance of Death\"",
+    "sanatci": "hans-holbein-genc",
+    "ad": "Papanın üç katlı tacı",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.55,
+    "metin": "Üç katlı taç giymiş papa, önünde diz çökmüş imparatoru taçlandırıyor; yanında sırıtan bir iskelet, tepede şeytanlar. Kurbanların her biri giysisinden ve makam işaretinden tanınır: papa tacı, imparator asası, keşiş cübbesi. Reform yıllarının Basel'inde yapılan bu sahne, kilisenin dünyevi gücünü alaya alan bir eleştiri olarak da okunur.",
+    "gorsel": "43ba76e93e3b7c5f"
+   },
+   {
+    "madde": 2,
+    "anahtar": "hans-holbein-genc|Skeletons Making Music (or the Cemetery), from \"The Dance of Death\"",
+    "sanatci": "hans-holbein-genc",
+    "ad": "Kemiklik önünde çalgılar",
+    "x": 0.05,
+    "y": 0.05,
+    "w": 0.9,
+    "h": 0.6,
+    "metin": "Arkada kemikliğin (mezarlardan çıkan kemiklerin toplandığı yapı) kemerleri, önünde borazan ve davul çalan iskeletler. Bu sahne dizinin girişidir: ölüler dansa çağırma müziğini çalar. Kum saati, kafatası ve kemik yığınları geç Ortaçağ'dan beri 'memento mori' (ölümü hatırla) simgeleridir. Holbein'in dizisi minicik boyutuna rağmen her sahnede tek bir hikâyeyi açıkça anlatır.",
+    "gorsel": "b5eb99a7c40906d4"
+   }
+  ],
   "dante-and-the-divine-comedy": [
    {
     "madde": 0,
@@ -1717,6 +1793,80 @@
     "y": 0.02,
     "w": 0.26,
     "h": 0.2
+   }
+  ],
+  "discovery-of-the-true-cross": [
+   {
+    "madde": 0,
+    "anahtar": "Q1832360",
+    "sanatci": "paolo-veronese",
+    "ad": "Taçlı imparatoriçe Helena",
+    "x": 0.1,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.6,
+    "metin": "Taçlı, imparatoriçe giysili Helena, başını eline dayamış düşlüyor; yanında haçı taşıyan bir melek çocuk. Helena, Hristiyanlığı serbest bırakan İmparator Konstantin'in annesiydi; efsaneye göre 320'lerde Kudüs'e gidip İsa'nın haçını aradı. Veronese onu kazı başında değil, haçı rüyasında gören biri olarak gösterir; pahalı brokar kumaşlar onun Venedik zenginliğidir.",
+    "gorsel": "5b59dc4728e2c553"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3937803",
+    "sanatci": "piero-della-francesca",
+    "ad": "Topraktan çıkan haçlar",
+    "x": 0.0,
+    "y": 0.45,
+    "w": 0.45,
+    "h": 0.53,
+    "metin": "Kürekleriyle toprağı kazan işçiler ve çıkarılan haçlar. Altın Efsane'ye göre Golgota'da üç haç bulundu: İsa'nın ve yanında asılan iki hırsızın. Piero bu freski Arezzo'daki San Francesco kilisesinde, Hakiki Haç efsanesini baştan sona anlatan büyük dizinin parçası olarak yaptı. Sakin, heykel gibi figürler ve açık, serin renkler Piero'yu ele verir.",
+    "gorsel": "11864caa75aaec8a"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3937803",
+    "sanatci": "piero-della-francesca",
+    "ad": "Haçla dirilen ölü",
+    "x": 0.68,
+    "y": 0.45,
+    "w": 0.2,
+    "h": 0.53,
+    "metin": "Üzerine haç tutulunca sedyesinde doğrulan çıplak genç. Üç haçtan hangisinin İsa'nınki olduğunu anlamak için bir cenaze getirildi; ölü yalnız üçüncü haç değince dirildi. Helena ve maiyeti diz çökerek mucizeyi selamlar. Arkadaki renkli mermer cephe, Piero'nun, çağdaşı Alberti gibi antik Roma mimarisine duyduğu ilgiyi gösterir.",
+    "gorsel": "11864caa75aaec8a"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3995837",
+    "sanatci": "piero-della-francesca",
+    "ad": "Kuyudan çekilen adam",
+    "x": 0.25,
+    "y": 0.5,
+    "w": 0.5,
+    "h": 0.45,
+    "metin": "İple kuyudan çekilen adam, haçın gömüldüğü yeri bilen Yahuda adlı bir Yahudi'dir. Efsaneye göre yeri söylemeyince Helena onu altı gün kuru bir kuyuda tuttu; sonunda yeri gösterdi, Hristiyan oldu ve Kyriakos adıyla Kudüs piskoposu oldu. Piero bu sert sahneyi bile sakin, düzenli bir kompozisyonla anlatır.",
+    "gorsel": "81a0ab82a57bc804"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3937803",
+    "sanatci": "piero-della-francesca",
+    "ad": "Tepedeki kent",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.3,
+    "h": 0.42,
+    "metin": "Sol üstte tepeye yaslanmış renkli evler: Kudüs. Ama Piero burada Kudüs'ü değil, freskin bulunduğu Arezzo'nun kendisini çizmiştir; izleyici kutsal olayı kendi kentinde geçiyormuş gibi görür. Rönesans ressamları kutsal hikâyeleri sık sık tanıdık İtalyan kentlerine yerleştirirdi. Piero'nun sade, geometrik bloklara indirdiği evler onun matematikçi yanını gösterir.",
+    "gorsel": "11864caa75aaec8a"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q20092783",
+    "sanatci": "giovanni-battista-tiepolo",
+    "ad": "Gökte yükselen haç",
+    "x": 0.25,
+    "y": 0.15,
+    "w": 0.52,
+    "h": 0.55,
+    "metin": "Bulutlar arasında, meleklerle birlikte göğe yükselen haç; altta diz çöken tanıklar. Bu yuvarlak tuval Venedik'te bir kilisenin tavanı içindi; aşağıdan bakılınca figürler gerçekten başımızın üstündeymiş gibi görünür (di sotto in sù, 'alttan yukarıya'). Tiepolo'nun açık mavi gökleri, hafif bulutları ve parlak renkleri Venedik Rokoko'sunun imzasıdır.",
+    "gorsel": "6d0017e9aa58ae88"
    }
   ],
   "dormition-of-the-virgin": [
@@ -3413,6 +3563,44 @@
     "h": 0.17
    }
   ],
+  "poems-of-thomas-gray": [
+   {
+    "madde": 0,
+    "anahtar": "Q28796631",
+    "sanatci": "william-blake",
+    "ad": "Ortadaki basılı sayfa",
+    "x": 0.26,
+    "y": 0.18,
+    "w": 0.34,
+    "h": 0.3,
+    "metin": "Ortada basılı şiir sayfası, çevresinde suluboya resim. Heykeltıraş John Flaxman, Gray'in şiirlerinin basılı bir kitabını Blake'e verdi; Blake sayfaları büyük kâğıtlara yerleştirip çevrelerini 116 resimle doldurdu. Dizi Flaxman'ın eşine hediye olarak yapıldı. Metin ile resmi aynı sayfada birleştirmek Blake'in kendi resimli kitaplarındaki yöntemidir.",
+    "gorsel": "b1052eae326f55f4"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q28796628",
+    "sanatci": "william-blake",
+    "ad": "Havada uçuşan figürler",
+    "x": 0.55,
+    "y": 0.04,
+    "w": 0.45,
+    "h": 0.36,
+    "metin": "Sayfanın kenarında havada süzülen, uzun, kıvrımlı figürler. Blake gerçek bir modelden çizmekten çok hayal gücünden ve Michelangelo gibi ustaların gravürlerinden yola çıkardı; bu yüzden bedenler kaslı ama ağırlıksızdır. Soluk suluboya, net dış çizgi ve akan hareket, Blake'i aynı dönemin manzara ağırlıklı İngiliz suluboyacılarından ayırır.",
+    "gorsel": "e6cbce0fc020b23c"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q28796638",
+    "sanatci": "william-blake",
+    "ad": "Lir çalan ozan",
+    "x": 0.55,
+    "y": 0.15,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Lir çalan sakallı ozan ve yanında genç bir çocuk. 'Şiirin İlerleyişi' Gray'in, Pindaros'u örnek alan bir odudur: şiirin Yunanistan'dan Roma'ya, oradan İngiltere'ye geçişini anlatır. Lir, şarkıyla söylenen lirik şiirin antik simgesidir. Blake ozanı bir peygamber gibi gösterir; onun için şair ve sanatçı, hayal gücüyle gerçeği gören kişiydi.",
+    "gorsel": "89d45f6123a1041d"
+   }
+  ],
   "presentation-in-the-temple": [
    {
     "madde": 0,
@@ -3645,6 +3833,68 @@
     "h": 0.16
    }
   ],
+  "rest-on-the-flight-into-egypt": [
+   {
+    "madde": 0,
+    "anahtar": "Q18572302",
+    "sanatci": "orazio-gentileschi",
+    "ad": "Yerde emziren Meryem",
+    "x": 0.58,
+    "y": 0.1,
+    "w": 0.42,
+    "h": 0.8,
+    "metin": "Duvar dibinde, yere oturmuş, çocuğunu emziren Meryem. Yere oturan Meryem tipine 'Alçakgönüllülük Meryemi' denir: tahtta oturan kraliçe değil, yolda yorgun düşmüş bir annedir. Matta İncili'ne göre bir melek Yusuf'u rüyada uyarır ve aile bebekleri öldürtecek Kral Hirodes'ten kaçıp Mısır'a gider. Orazio Gentileschi bu konunun birkaç kopyasını yaptı; parlak, ipeksi kumaşlar onun imzasıdır.",
+    "gorsel": "7ce572da0754b9eb"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q745098",
+    "sanatci": "caravaggio",
+    "ad": "Nota tutan Yusuf",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.36,
+    "h": 0.5,
+    "metin": "Yaşlı Yusuf, keman çalan meleğe nota defterini tutuyor. Defterdeki müziğin, Neşideler Neşidesi'nden bir metne yazılmış, Flaman besteci Noël Bauldeweyn'in bir motetinden alındığı belirlenmiştir. Sağda Meryem ile çocuk uyurken Yusuf'un uyanık ve hizmet eden yaşlı adam olarak gösterilmesi bu konunun geleneğidir. Bu, Caravaggio'nun nadir manzaralı ve erken bir resmidir.",
+    "gorsel": "8055c17feb3e05b9"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q21722833",
+    "sanatci": "annibale-carracci",
+    "ad": "Eşek ve Yusuf",
+    "x": 0.63,
+    "y": 0.5,
+    "w": 0.34,
+    "h": 0.25,
+    "metin": "Sağda Yusuf, yanında yolculuğun eşeği. İncil'de eşekten söz edilmez; hayvan, apokrif metinlerden ve Doğuş sahnelerinden gelen bir gelenektir ve yolda olunduğunu anlatır. Annibale Carracci figürleri küçültüp manzarayı öne çıkarır: dengeli ağaç kümeleri, uzakta tepe üstünde bir kent. Bu 'ideal manzara' anlayışı sonra Domenichino, Poussin ve Claude'a geçti.",
+    "gorsel": "7c894324143e99e8"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q21716886",
+    "sanatci": "claude-lorrain",
+    "ad": "Geniş ideal manzara",
+    "x": 0.45,
+    "y": 0.3,
+    "w": 0.55,
+    "h": 0.65,
+    "metin": "Geniş, ışıklı manzaranın sağ köşesinde küçücük Kutsal Aile. Apokrif Sözde Matta İncili'ne göre yolculukta bir hurma ağacı Meryem'e meyve vermek için eğildi ve köklerinden su fışkırdı; ağaçlar ve dere bu yüzden konunun parçasıdır. Claude'da asıl konu ışık ve Roma kırlarıdır; bu tuval günün saatlerini anlatan dörtlü bir dizinin 'Öğle'sidir.",
+    "gorsel": "5a4657bec9fa8dd2"
+   },
+   {
+    "madde": 4,
+    "anahtar": "guercino|Rest on the Flight into Egypt",
+    "sanatci": "guercino",
+    "ad": "Keman çalan melek",
+    "x": 0.62,
+    "y": 0.3,
+    "w": 0.36,
+    "h": 0.42,
+    "metin": "Sağda Meryem'e ve çocuğa keman çalan kanatlı melek. Yolculukta ailenin meleklerce korunduğu ve avutulduğu inancı apokrif anlatılardan ve sonraki dindar edebiyattan gelir. Guercino figürleri yuvarlak çerçeveye yakın planda sığdırır; sıcak ten tonları ve yumuşak gölgeler onun olgun döneminin, Reni'ye yaklaşan klasik dilidir.",
+    "gorsel": "81ab35d0514ee7d5"
+   }
+  ],
   "resurrection": [
    {
     "madde": 0,
@@ -3719,6 +3969,80 @@
     "gorsel": "bca53154a9ae8fd0"
    }
   ],
+  "saint-catherine": [
+   {
+    "madde": 0,
+    "anahtar": "Q2627034",
+    "sanatci": "caravaggio",
+    "ad": "Kırık çivili çark",
+    "x": 0.0,
+    "y": 0.2,
+    "w": 0.36,
+    "h": 0.55,
+    "metin": "Yanında kırılmış, çivili tahta çark. Altın Efsane'ye göre İmparator Maxentius, Hristiyanlığı savunan Katerina'yı çivili çarklarla parçalatmak istedi; ama gökten gelen bir şimşek çarkı kırdı ve azize sonunda kılıçla öldürüldü. Caravaggio bu resmi Kardinal del Monte için yaptı; modelin Roma'da başka resimlerinde de görülen Fillide Melandroni olduğu düşünülür.",
+    "gorsel": "0b523e6f6097c25a"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q20167186",
+    "sanatci": "pietro-lorenzetti",
+    "ad": "Altın taç",
+    "x": 0.25,
+    "y": 0.05,
+    "w": 0.5,
+    "h": 0.3,
+    "metin": "Başında altın taç: efsaneye göre Katerina İskenderiye'de bir kralın kızıydı. Prenses olduğu için hep zengin giysiler ve taçla gösterilir; bu onu öbür genç şehit azizelerden ayırır. Bilgeliği yüzünden filozofların, öğrencilerin ve üniversitelerin koruyucusudur. Altın zemin, işlemeli kumaş ve sakin, ciddi yüz Pietro Lorenzetti'nin Siena okulundan geldiğini gösterir.",
+    "gorsel": "80e2019e2a0293a2"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q55429769",
+    "sanatci": "artemisia-gentileschi",
+    "ad": "Şehitlik palmiyesi",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.32,
+    "h": 0.62,
+    "metin": "Elindeki palmiye dalı şehitliğin işaretidir; Vahiy kitabında şehitler Tanrı'nın önünde ellerinde palmiye dallarıyla durur. Artemisia Gentileschi bu resimde azizeye kendi yüzünü vermiştir: bir otoportredir. Solda kırık çarkın kenarı görülür. Sert ışık ve gerçekçi yüz, babası Orazio aracılığıyla Caravaggio'dan öğrendiği dildir.",
+    "gorsel": "ff6ef04fd21eab95"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q107437780",
+    "sanatci": "petrus-christus",
+    "ad": "Kılıç ve kitap",
+    "x": 0.15,
+    "y": 0.4,
+    "w": 0.5,
+    "h": 0.2,
+    "metin": "Bir elde kılıç, öbüründe kitap. Kılıç azizenin başının kesildiği infaz aracıdır; kitap ise bilgeliğini anlatır: efsaneye göre imparatorun karşısına çıkardığı elli filozofu tartışmada yenip Hristiyan yaptı. Petrus Christus Bruges'de Jan van Eyck'in izinden giden bir ressamdır; derin bir manzara önünde dimdik duran tek figür Erken Hollanda kanat resmi tipidir.",
+    "gorsel": "98e3788f0a0cbaf2"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q3851960",
+    "sanatci": "correggio",
+    "ad": "Yüzük takılan el",
+    "x": 0.35,
+    "y": 0.25,
+    "w": 0.35,
+    "h": 0.38,
+    "metin": "Çocuk İsa azizenin parmağına yüzük takıyor: Mistik Evlilik. Efsaneye göre vaftiz edilen Katerina bir rüyada İsa ile nişanlandı ve kendini 'İsa'nın gelini' saydı; yüzük, dünyevi evliliği reddedip hayatını Tanrı'ya adamasını simgeler. Correggio'nun yumuşak gölgeleri, sıcak ten renkleri ve yüzlerin birbirine eğildiği samimi düzen onun Parma'daki imzasıdır.",
+    "gorsel": "39da559400b82a1c"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q115192337",
+    "sanatci": "guido-reni",
+    "ad": "Kılıcını kaldıran cellat",
+    "x": 0.25,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.72,
+    "metin": "Diz çökmüş azize, arkada kılıcını kaldıran cellat, gökten taç ve palmiye getiren melek. Çark mucizesinden sonra Katerina'nın başı kesildi; efsaneye göre yarasından kan yerine süt aktı ve melekler bedenini Sina Dağı'na taşıdı. Bugün oradaki manastır onun adını taşır. Reni şiddeti göstermez; azizenin göğe bakan sakin yüzü onun ideal üslubudur.",
+    "gorsel": "8f2291a8debda74a"
+   }
+  ],
   "saint-francis": [
    {
     "madde": 0,
@@ -3785,6 +4109,80 @@
     "y": 0.29,
     "w": 0.27,
     "h": 0.21
+   }
+  ],
+  "saint-george": [
+   {
+    "madde": 0,
+    "anahtar": "raphael|Saint George and the Dragon",
+    "sanatci": "raphael",
+    "ad": "Beyaz attaki şövalye",
+    "x": 0.15,
+    "y": 0.2,
+    "w": 0.7,
+    "h": 0.6,
+    "metin": "Şaha kalkmış beyaz atın üstünde, zırhlı genç şövalye. Georgios, Kapadokya kökenli bir Roma askeriydi ve Diocletianus döneminde şehit edildiği anlatılır; ejderha hikâyesi Ortaçağ'da eklendi. Raffaello bu küçük panoyu Urbino dükü için yaptı ve resmin İngiltere kralına hediye gönderildiği düşünülür: azizin dizinde Jartiyer Nişanı'nın kemeri görülür.",
+    "gorsel": "1f655f7bf9faea34"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3947210",
+    "sanatci": "andrea-mantegna",
+    "ad": "Kırık mızrak, ölü ejderha",
+    "x": 0.06,
+    "y": 0.76,
+    "w": 0.9,
+    "h": 0.22,
+    "metin": "Azizin elinde kırık mızrağın sapı, ucu ise ayaklarının dibindeki ejderhanın ağzında kalmış. Efsanede Georgios mızrağıyla canavarı yaralar, sonra kılıçla öldürür; kırık mızrak dövüşün bittiğini gösterir. Mantegna azizi hareket hâlinde değil, kapı çerçevesinde duran bir heykel gibi çizer: keskin hatlar, metal gibi parlayan zırh ve taş gibi sert renkler onun imzasıdır.",
+    "gorsel": "d602d350257b73ab"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q20173537",
+    "sanatci": "rogier-van-der-weyden",
+    "ad": "Kıvranan ejderha",
+    "x": 0.3,
+    "y": 0.78,
+    "w": 0.7,
+    "h": 0.22,
+    "metin": "Atın ayakları altında kıvranan kanatlı ejderha; yakınında yerde kemikler var. Altın Efsane'ye göre Libya'daki Silene kentinin halkı ejderhayı önce koyunlarla, sonra kurayla seçilen çocuklarla besliyordu; kemikler bu kurbanların kalıntısıdır. Rogier'nin bu çok küçük panosu, Jan van Eyck'ten gelen minyatür inceliğindeki Flaman yağlıboyasının örneğidir.",
+    "gorsel": "ecf13e8868d89307"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q780466",
+    "sanatci": "paolo-uccello",
+    "ad": "Ejderhayı bağlayan prenses",
+    "x": 0.08,
+    "y": 0.38,
+    "w": 0.38,
+    "h": 0.55,
+    "metin": "Prenses, ejderhayı kemeriyle bağlamış, tasmalı bir hayvan gibi tutuyor. Altın Efsane'de kurada ona düşen kral kızı ejderhaya verilecekken Georgios gelir; yaralı canavarı prensesin kemeriyle kente götürürler ve halk vaftiz olur. Uccello'nun düz renkleri, kesik kesik çimen parçaları ve süs gibi kanat halkaları onun perspektif kadar dekoratif desene de düşkünlüğünü gösterir.",
+    "gorsel": "1925dbdc1b57e00e"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q20173537",
+    "sanatci": "rogier-van-der-weyden",
+    "ad": "Uzaktaki surlu kent",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.8,
+    "h": 0.28,
+    "metin": "Arkada tepeye yaslanmış surlu kent ve kale: ejderhanın korkuttuğu Silene. Hikâyenin sonunda kral ve halk Hristiyan olur; kent, kurtarılan toplumun simgesidir. Flaman ressamları İncil ve efsane sahnelerini kendi kuzey kentlerinin kuleleri, çatıları ve limanlarıyla doldururdu; bu 'çağdaş' arka plan onları İtalyanlardan ayıran ipucudur.",
+    "gorsel": "ecf13e8868d89307"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q81755677",
+    "sanatci": "paolo-veronese",
+    "ad": "Diz çöken aziz",
+    "x": 0.35,
+    "y": 0.55,
+    "w": 0.5,
+    "h": 0.4,
+    "metin": "Altta soyulmuş, diz çökmüş aziz; çevresinde cellatlar ve askerler, yukarıda bulutlarda Meryem ve azizler. Georgios, Roma tanrılarına kurban kesmeyi reddettiği için işkence görüp başı kesilerek öldürüldü. Veronese bu sunak resmini Verona'daki San Giorgio in Braida kilisesi için yaptı; kalabalık, parlak renkli ve sahne gibi kurulmuş düzen onun Venedik dilidir.",
+    "gorsel": "bbabce8bb2fae091"
    }
   ],
   "saint-jerome": [
@@ -4196,6 +4594,82 @@
     "h": 0.17
    }
   ],
+  "satyrs-and-fauns": [
+   {
+    "madde": 0,
+    "anahtar": "Q1398457",
+    "sanatci": "arnold-bocklin",
+    "ad": "Keçi bacaklı faun",
+    "x": 0.38,
+    "y": 0.3,
+    "w": 0.6,
+    "h": 0.45,
+    "metin": "Çimende uzanıp karatavuğa ıslık çalan, kıllı keçi bacaklı faun. Yunan satirleri ve Roma faunları kırların ve ormanların yarı insan, yarı keçi ruhlarıdır; tanrı Pan da bu türdendir. İsviçreli Böcklin mitolojik yaratıkları gerçekçi bir doğanın içine koyar; bu tuhaf, şakacı ve hüzünlü havası onu Sembolizmin öncülerinden yapar.",
+    "gorsel": "531bef3ce930cd65"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q17494548",
+    "sanatci": "alexandre-cabanel",
+    "ad": "Periyi kaçıran faun",
+    "x": 0.1,
+    "y": 0.05,
+    "w": 0.65,
+    "h": 0.7,
+    "metin": "Bir periyi kucaklayıp kaçıran faun. Antik mitlerde satirler şaraba ve şehvete düşkündür, perileri kovalar; Rönesans'tan sonra bu sahneler çıplak bedeni meşru bir 'antik' konu içinde göstermenin yolu oldu. Cabanel Paris Salonu'nun en başarılı akademik ressamlarındandı: pürüzsüz ten, kusursuz çizim ve kıvrılan bedenler onun imzasıdır.",
+    "gorsel": "8068676cbcd4ce05"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18573904",
+    "sanatci": "sebastiano-ricci",
+    "ad": "Şarap küpü ve flüt",
+    "x": 0.33,
+    "y": 0.2,
+    "w": 0.42,
+    "h": 0.65,
+    "metin": "Büyük şarap küpü ve kamış flüt çalan küçük satir. Pan flütünün hikâyesi Ovidius'tadır: Pan'dan kaçan peri Syrinx sazlara dönüşür, Pan da o sazlardan bu çalgıyı yapar. Sebastiano Ricci Avrupa'yı dolaşan Venedikli bir ressamdı; parlak, açık renkleri ve hafif havası Tiepolo'ya giden Venedik Rokoko'sunu hazırladı.",
+    "gorsel": "7dd04300d8fa9fe7"
+   }
+  ],
+  "shakespeare": [
+   {
+    "madde": 0,
+    "anahtar": "Q7430749",
+    "sanatci": "william-hogarth",
+    "ad": "Sahne gibi dizilmiş figürler",
+    "x": 0.3,
+    "y": 0.25,
+    "w": 0.7,
+    "h": 0.6,
+    "metin": "Ortada Miranda, yanında büyücü Prospero, sağda canavar Caliban: Fırtına oyunundan bir sahne, sanki tiyatro sahnesinde dizilmiş. Hogarth Shakespeare sahnelerini tuvale aktaran ilk İngiliz ressamlardandır; Londra tiyatrosunu iyi tanıyordu ve resimlerini oyun perdesi gibi kurardı. Bu tür 18. yüzyılın sonunda Boydell'in Shakespeare Galerisi'yle büyük bir İngiliz modasına dönüştü.",
+    "gorsel": "4adfe73d42f74230"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q29857821",
+    "sanatci": "eugene-delacroix",
+    "ad": "Mezarcının kaldırdığı kafatası",
+    "x": 0.03,
+    "y": 0.42,
+    "w": 0.36,
+    "h": 0.25,
+    "metin": "Mezarcının kaldırıp gösterdiği kafatası saray soytarısı Yorick'indir; Hamlet onu tanıyınca 'Vah zavallı Yorick' der (5. perde, 1. sahne). Delacroix Shakespeare'i 1827'de Paris'e gelen bir İngiliz topluluğunun oyunlarında gördü; Romantikler için o kuralları yıkan dahinin örneğiydi. Ressam aynı sahneyi birkaç kez resmetti ve Hamlet için bir taşbaskı dizisi de yaptı.",
+    "gorsel": "e7009c64fc28390a"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q777080",
+    "sanatci": "john-everett-millais",
+    "ad": "Kostümlü genç Ferdinand",
+    "x": 0.4,
+    "y": 0.08,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Kulağına gelen şarkıya kulak veren, Rönesans giysili genç Ferdinand. Fırtına oyununda gemisi batan prensi, görünmez peri Ariel 'Beş kulaç derinde yatıyor baban' şarkısıyla adaya çeker; yeşil, küçük Ariel ve yarasa gibi periler soldadır. Millais arka plandaki otları açık havada, yaprak yaprak resmetti: Pre-Rafaelit Kardeşliği'nin doğaya sadakat ilkesinin ilk örneklerindendir.",
+    "gorsel": "7736b368d078b715"
+   }
+  ],
   "sleeping-venus": [
    {
     "madde": 0,
@@ -4522,6 +4996,80 @@
     "y": 0.45,
     "w": 0.33,
     "h": 0.5
+   }
+  ],
+  "venus-and-cupid": [
+   {
+    "madde": 0,
+    "anahtar": "Q45896010",
+    "sanatci": "lucas-cranach-yasl",
+    "ad": "Çıplak Venüs ve yazıt",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.9,
+    "h": 0.45,
+    "metin": "Koyu fon önünde ayakta duran çıplak Venüs, tepesinde Latince bir yazıt. Yazıt uyarır: 'Kupid'in şehvetini bütün gücünle uzak tut, yoksa kör Venüs gönlünü ele geçirir.' Bu 1509 tarihli resim Kuzey Avrupa'da tam boy çıplak Venüs'ün bilinen ilk örneklerindendir. İnce bel, küçük baş ve süs gibi kolye Cranach'ın kendine özgü çıplak tipidir.",
+    "gorsel": "040dcd3279f19fa8"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q4009576",
+    "sanatci": "jacopo-pontormo",
+    "ad": "Yay ve oklar",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.42,
+    "h": 0.5,
+    "metin": "Sol üstte Kupid'in yayı ve okları, yanında maskeler. Mitolojide Kupid'in altın uçlu oku aşk, kurşun uçlu oku nefret uyandırır. Bu tablonun karton çizimini Michelangelo yaptı, Pontormo ise boyadı; bu yüzden Venüs bir erkek bedeni kadar kaslıdır. Maskeler aşkın aldatıcılığı diye yorumlanır.",
+    "gorsel": "0f258dd3ea6dc1bc"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2805058",
+    "sanatci": "lucas-cranach-yasl",
+    "ad": "Bal peteği ve arılar",
+    "x": 0.0,
+    "y": 0.6,
+    "w": 0.38,
+    "h": 0.32,
+    "metin": "Elinde bal peteği, çevresinde arılar uçuşan ağlamaklı Kupid. Antik şair Theokritos'tan gelen hikâyede Kupid bal çalarken arılar onu sokar; Venüs, onun oklarının daha derin yaralar açtığını hatırlatır. Cranach'ın atölyesi bu konuyu çok kez işledi; resimlerde zevkin acıyla karışık olduğunu söyleyen Latince bir yazıt sık bulunur.",
+    "gorsel": "23105f0ff1527fed"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q12860070",
+    "sanatci": "francois-boucher",
+    "ad": "Kutsal güvercinler",
+    "x": 0.55,
+    "y": 0.72,
+    "w": 0.3,
+    "h": 0.18,
+    "metin": "Su kıyısında bir çift beyaz güvercin. Güvercinler Venüs'ün kutsal kuşlarıdır; çiftler hâlinde yaşamaları yüzünden sadık aşkın simgesi sayıldı ve tanrıçanın arabasını çektikleri anlatıldı. Boucher'nin bu tuvali Madame de Pompadour için yaptığı düşünülür; pembe ten, pastel mavi ve kıvrak çizgiler Rokoko'nun Fransız saray zevkidir.",
+    "gorsel": "3a55edddca5b7ba3"
+   },
+   {
+    "madde": 4,
+    "anahtar": "guercino|Venus and Cupid in a Chariot",
+    "sanatci": "guercino",
+    "ad": "Zafer arabası",
+    "x": 0.1,
+    "y": 0.2,
+    "w": 0.6,
+    "h": 0.6,
+    "metin": "Bulutlar üstünde ilerleyen bir arabada Venüs ve Kupid. Ovidius'ta Venüs'ün arabasını kuğular ya da güvercinler çeker; zafer arabası, aşkın her şeyi yenip ardından sürüklemesi fikrini anlatır. Guercino ünlü bir desen ustasıydı: bu hızlı, kahverengi mürekkep ve lavi çizimler koleksiyonculara çok aranırdı.",
+    "gorsel": "3822819265804f97"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3719885",
+    "sanatci": "correggio",
+    "ad": "Kupid'in yayını tutan Venüs",
+    "x": 0.0,
+    "y": 0.15,
+    "w": 0.45,
+    "h": 0.7,
+    "metin": "Kanatlı Venüs, Kupid'in yayını elinde tutuyor; oğlu yanında tanrıların habercisi Merkür'den okuma dersi alıyor. Bu yüzden resme 'Aşk Okulu' denir: aşkın bilgiyle eğitilmesi fikrini anlatır. Correggio'nun yumuşak gölgeleri, parlak ten ve izleyiciye dönen tatlı bakış onun Parma'daki imzasıdır. Resmin Mantova'daki Gonzaga ailesi için yapıldığı düşünülür.",
+    "gorsel": "43fd0478052eecd3"
    }
   ],
   "venus-and-mars": [
