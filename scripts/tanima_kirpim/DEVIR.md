@@ -5,14 +5,16 @@ eserden yakın plan kırpım. Veri: `data/tanima_kirpimlari.json` (bu klasördek
 
 ## Durum (1.90.0)
 
-- Konular: 110 konuda 338 kırpım (371 konu, 1723 madde). Sanatçılar: 130 sanatçıda 289 kırpım (159 notlu sanatçı).
-- Bütün kutular rehberli incelemenin doğrulanmış ayrıntılarından (`data/eser_ayrintilari.json`) alındı; açıklama metni
-  kopyalanmaz, uygulama aynı kutuyu ayrıntı kaydında bulup görüntüleyiciyi o kayıtla açar. Yeni kutu çizilmedi.
+- Konular: 110 konuda 338 kırpım (371 konu, 1723 madde). Sanatçılar: 154 sanatçıda 335 kırpım (159 notlu sanatçı):
+  289'u hazır ayrıntılardan, 46'sı `yeni_sanatci.json`'da elle çizilen kutular (24 sanatçı).
+- Eşleşen kutular rehberli incelemenin doğrulanmış ayrıntılarından (`data/eser_ayrintilari.json`) alındı; açıklama metni
+  kopyalanmaz, uygulama aynı kutuyu ayrıntı kaydında bulup görüntüleyiciyi o kayıtla açar. Elle çizilen kutuların kendi
+  `metin`i var (yalnız resimde görülen).
 - Her eşleşmeye kontak sayfasında bakıldı (madde metni + kırpım); maddeyi göstermeyen, bulanık ya da boş kırpımlar
   çıkarıldı (konularda 9 çıktı, 7'si başka ayrıntıyla değişti; sanatçılarda 8 çıktı).
-- Kalan iş: kırpımı olmayan konular (261; çoğunun eserlerinde hazır ayrıntı yok) ve sanatçılar (29: Pissarro, Sisley,
-  Canaletto, Reni, Guercino, Ribera…) için
-  yeni kutu seçmek (aşağıda "Yeni kutu").
+- Kalan iş: kırpımı olmayan konular (261; çoğunun eserlerinde hazır ayrıntı yok) için yeni kutu seçmek (aşağıda
+  "Yeni kutu"). Sanatçılardan kalan 5: Praxiteles, Giovanni Pisano, Cellini, Canova (önbellekte eser yok), Man Ray (notu
+  fotoğraflarını anlatıyor). `kontrol.py coklu s::anahtar …` ikişer eseri yan yana ızgaralı gösterir.
 
 ## Dosyalar
 

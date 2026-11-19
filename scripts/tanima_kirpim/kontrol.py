@@ -91,6 +91,32 @@ if __name__ == '__main__':
             for k in l:
                 karolar.append(karo(k, [f"{sid} · {k['ad']}", k.get('metin', '')]))
         print('\n'.join(map(str, sayfala(karolar, 'sanatci'))))
+    elif kip == 'coklu':  # coklu sanatçı|anahtar sanatçı|anahtar … → ikişer ikişer ızgaralı sayfa
+        ciftler = [x.split('::') for x in a]
+        (HED / 's').mkdir(parents=True, exist_ok=True)
+        for i in range(0, len(ciftler), 2):
+            parcalar = []
+            for s, anahtar in ciftler[i:i + 2]:
+                _, ad = ilk_gorsel(s, anahtar)
+                im = Image.open(gorsel_yolu(ad)).convert('RGB')
+                W = 580
+                im = im.resize((W, round(im.height * W / im.width)))
+                d = ImageDraw.Draw(im)
+                for j in range(1, 10):
+                    x, y = round(im.width * j / 10), round(im.height * j / 10)
+                    d.line([(x, 0), (x, im.height)], fill=(255, 0, 0))
+                    d.line([(0, y), (im.width, y)], fill=(255, 0, 0))
+                    d.text((x + 2, 2), f'.{j}', font=FONT, fill=(255, 255, 0))
+                    d.text((2, y + 2), f'.{j}', font=FONT, fill=(255, 255, 0))
+                d.text((4, im.height - 20), s, font=FONT, fill=(0, 255, 255))
+                parcalar.append(im)
+            H = max(x.height for x in parcalar)
+            sayfa = Image.new('RGB', (1170, H), (40, 40, 40))
+            for j, x in enumerate(parcalar):
+                sayfa.paste(x, (j * 590, 0))
+            yol = HED / 's' / f'coklu_{i // 2 + 1:02d}.jpg'
+            sayfa.save(yol, quality=82)
+            print(yol)
     elif kip in ('izgara', 'yakin'):
         s, anahtar, *k = a
         _, ad = ilk_gorsel(s, anahtar)

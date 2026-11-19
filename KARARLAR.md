@@ -2762,5 +2762,12 @@ Emre: "başyapıtlar kısmına resim eklemek güzel bir eklemeydi … 1 ve 2'yi 
   telefona indirilmişse).
 - Bugün ekranı da `notBolumleri`'ni kullanır; orada şerit doldurulmaz (yer tutucu boşken gizli).
 - Test: `tests/unit/tanima_kirpim.test.mjs` (mantık + veri: konu/madde/eser var, kutu ayrıntıda birebir, görsel adı aynı),
-  `tests/e2e/tanima_kirpim.spec.js`. Uçtan uca takımda `harita.spec.js:85` ve `paket8.spec.js:25` bu işten önce de
-  kırıktı (değişiklik olmadan aynı sonuç).
+  `tests/e2e/tanima_kirpim.spec.js`. Bulut ortamındaki yeni Playwright'ta (1.63) `harita.spec.js:85` ve
+  `paket8.spec.js:25` düşüyor: o Chromium `DeviceMotionEvent.requestPermission` tanımlıyor, uygulama iPhone'daki gibi izin
+  düğmesini bekliyor, test düğmeye basmadığı için duvar sallanmıyor. Projenin sabit sürümünde (1.56.1, CI) ikisi de geçer;
+  uygulama hatası değil.
+- **Yeni kutular (ikinci tur):** kırpımı olmayan 29 sanatçıdan 24'üne eserine bakılarak 47 kutu çizildi
+  (`yeni_sanatci.json`; Reni, Guercino, Ribera, Canaletto, Pissarro, Sisley, Signac, Miró, Ernst, Arp…). Metinler yalnız
+  resimde gözle görüleni anlatır (ör. "Kanalda gondollar ve kürek çeken küçük figürler"), tarih ve isim eklenmedi;
+  her kutu kontak sayfasında denetlendi; Nolde'nin "maske gibi yüz"ü seçilemediği için çıkarıldı (46 kaldı). Kalan 5: dört heykeltıraşın (Praxiteles,
+  Giovanni Pisano, Cellini, Canova) önbellekte eseri yok; Man Ray'in notu fotoğraflarını anlatıyor, elde yalnız resmi var.

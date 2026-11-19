@@ -8,7 +8,7 @@ Elle seçilen kutular (yeni_konu.json, yeni_sanatci.json) ve sanatçı eşleşme
 """
 import json
 import re
-from ortak import KOK, VERI, oku, ilk_gorsel
+from ortak import KOK, VERI, oku, ilk_gorsel, eser_bul
 
 BURASI = KOK / 'scripts' / 'tanima_kirpim'
 ay = {e['anahtar']: e for e in oku(KOK / 'data/eser_ayrintilari.json')['eserler']}
@@ -71,6 +71,7 @@ def ekle(hedef, dosya):
                 b, p = kutu(x.pop('e'), x.pop('n'))
                 x = {**x, **b}
                 x.setdefault('ad', p['ad'])
+            assert eser_bul(x['sanatci'], x['anahtar']), (kid, x['anahtar'])
             if 'gorsel' not in x:
                 _, x['gorsel'] = ilk_gorsel(x['sanatci'], x['anahtar'])
             hedef.setdefault(kid, []).append(x)

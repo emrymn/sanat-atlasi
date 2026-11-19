@@ -1,0 +1,510 @@
+{
+ "guido-reni": [
+  {
+   "anahtar": "Q2448678",
+   "sanatci": "guido-reni",
+   "ad": "Göğe dönük iri gözler",
+   "x": 0.57,
+   "y": 0.555,
+   "w": 0.18,
+   "h": 0.11,
+   "metin": "Diz çökmüş genç kadın başını kaldırmış, iri gözleriyle göğe bakıyor. Yüzü pürüzsüz ve soluk; gölgeler hafif."
+  },
+  {
+   "anahtar": "Q2448678",
+   "sanatci": "guido-reni",
+   "ad": "Yumuşak, temiz kıvrımlar",
+   "x": 0.45,
+   "y": 0.84,
+   "w": 0.27,
+   "h": 0.15,
+   "metin": "Kadının sarı eteği geniş, düzgün kıvrımlarla yere yayılıyor. Kumaş sert gölgelerle değil, yumuşak geçişlerle biçimlenmiş."
+  }
+ ],
+ "guercino": [
+  {
+   "anahtar": "Q259012",
+   "sanatci": "guercino",
+   "ad": "Düzensiz gölge lekeleri",
+   "x": 0.02,
+   "y": 0.12,
+   "w": 0.48,
+   "h": 0.48,
+   "metin": "İki çoban karanlık bir ağaç gövdesinin ardından bakıyor; yalnız yüzleri, elleri ve beyaz gömlek parça parça ışık alıyor. Gölge büyük, düzensiz lekeler hâlinde figürlerin üstüne yayılıyor."
+  }
+ ],
+ "bartolomeo-manfredi": [
+  {
+   "anahtar": "Q18572305",
+   "sanatci": "bartolomeo-manfredi",
+   "ad": "Sert yan ışık",
+   "x": 0.27,
+   "y": 0.17,
+   "w": 0.48,
+   "h": 0.2,
+   "metin": "Davut'un ve tef çalan kadının yüzleri soldan gelen tek bir ışıkla aydınlanıyor; yüzlerin öbür yarısı karanlıkta kalıyor. Arka plan neredeyse siyah."
+  },
+  {
+   "anahtar": "Q18572305",
+   "sanatci": "bartolomeo-manfredi",
+   "ad": "Kırmızı ve kahverengi",
+   "x": 0.06,
+   "y": 0.36,
+   "w": 0.3,
+   "h": 0.36,
+   "metin": "Davut'un kırmızı kolluğu ve kahverengi giysisi resmin baskın renkleri. Sıcak tonlar karanlık zeminden öne çıkıyor."
+  }
+ ],
+ "hendrick-ter-brugghen": [
+  {
+   "anahtar": "Q27768160",
+   "sanatci": "hendrick-ter-brugghen",
+   "ad": "Kaba yüzlü müzisyen",
+   "x": 0.06,
+   "y": 0.1,
+   "w": 0.26,
+   "h": 0.24,
+   "metin": "Tüylü şapkalı adam ağzı açık şarkı söylüyor; yüzü bıyıklı, kırmızı yanaklı ve idealleştirilmemiş. Yarım boy gösterilmiş bir müzisyen."
+  },
+  {
+   "anahtar": "Q27768160",
+   "sanatci": "hendrick-ter-brugghen",
+   "ad": "Gümüşi, serin ışık",
+   "x": 0.0,
+   "y": 0.4,
+   "w": 0.36,
+   "h": 0.38,
+   "metin": "Adamın kolundaki kumaş soluk yeşil, pembe ve krem tonlarla boyanmış. Işık karanlık bir odanın değil, gün ışığının serinliğini taşıyor."
+  }
+ ],
+ "valentin-de-boulogne": [
+  {
+   "anahtar": "Q4231873",
+   "sanatci": "valentin-de-boulogne",
+   "ad": "Masanın önünde kabartma",
+   "x": 0.36,
+   "y": 0.5,
+   "w": 0.2,
+   "h": 0.24,
+   "metin": "Masa olarak kullanılan taş bloğun önünde antik bir kabartma seçiliyor. Önünde zırhlı bir genç diz çökmüş."
+  },
+  {
+   "anahtar": "Q4231873",
+   "sanatci": "valentin-de-boulogne",
+   "ad": "Gülmeyen, dalgın yüzler",
+   "x": 0.36,
+   "y": 0.16,
+   "w": 0.38,
+   "h": 0.26,
+   "metin": "Masanın çevresindeki çocuk ve çalgı çalan kadın gülmüyor; ikisi de dalgın, ciddi bakıyor. Yüzler karanlık fondan sıcak bir ışıkla çıkıyor."
+  }
+ ],
+ "jusepe-de-ribera": [
+  {
+   "anahtar": "Q3842290",
+   "sanatci": "jusepe-de-ribera",
+   "ad": "Kırışık, yaşlı yüz",
+   "x": 0.17,
+   "y": 0.08,
+   "w": 0.17,
+   "h": 0.13,
+   "metin": "Arkada duran yaşlı adamın yüzü karanlıktan çıkıyor. Alnındaki ve yanaklarındaki kırışıklar, gözlerinin altındaki torbalar tek tek boyanmış."
+  }
+ ],
+ "salvator-rosa": [
+  {
+   "anahtar": "Q97729099",
+   "sanatci": "salvator-rosa",
+   "ad": "Sarp, karanlık kayalık",
+   "x": 0.64,
+   "y": 0.18,
+   "w": 0.35,
+   "h": 0.6,
+   "metin": "Sağda dik, karanlık bir kaya duvarı yükseliyor. Kahverengi ve kurşuni tonlar hızlı fırça darbeleriyle sürülmüş."
+  },
+  {
+   "anahtar": "Q97729099",
+   "sanatci": "salvator-rosa",
+   "ad": "Kuru ağaç gövdesi",
+   "x": 0.06,
+   "y": 0.1,
+   "w": 0.2,
+   "h": 0.7,
+   "metin": "Solda yaprakları dökülmüş, kuru bir ağaç duruyor. Manzaradaki tehditkâr havayı o kurar."
+  },
+  {
+   "anahtar": "Q97729099",
+   "sanatci": "salvator-rosa",
+   "ad": "Küçük figürler",
+   "x": 0.31,
+   "y": 0.6,
+   "w": 0.13,
+   "h": 0.22,
+   "metin": "Kayalıkların arasında kanatlı küçük bir melek figürü seçiliyor. Asıl kahraman insanlar değil, vahşi manzaranın kendisi."
+  }
+ ],
+ "giovanni-battista-gaulli": [
+  {
+   "anahtar": "Q54647365",
+   "sanatci": "giovanni-battista-gaulli",
+   "ad": "Çerçeveden taşan figürler",
+   "x": 0.18,
+   "y": 0.68,
+   "w": 0.66,
+   "h": 0.25,
+   "metin": "Alttaki figürler ve bulutlar resmin yaldızlı çerçevesinin üstüne taşıyor, tavanın mimarisine dökülüyor. Resim ile oyma süsleme arasındaki sınır kayboluyor."
+  },
+  {
+   "anahtar": "Q54647365",
+   "sanatci": "giovanni-battista-gaulli",
+   "ad": "Ortada altın ışık",
+   "x": 0.33,
+   "y": 0.22,
+   "w": 0.36,
+   "h": 0.24,
+   "metin": "Tavanın ortasında parlak, altın sarısı bir ışık açılıyor; figürler bu ışığın içinde eriyor. Kenarlara doğru renkler koyulaşıyor."
+  }
+ ],
+ "andrea-pozzo": [
+  {
+   "anahtar": "Q112401018",
+   "sanatci": "andrea-pozzo",
+   "ad": "Göğe yükselen sahte mimari",
+   "x": 0.1,
+   "y": 0.02,
+   "w": 0.8,
+   "h": 0.22,
+   "metin": "Düz tavana sütunlar, kemerler ve kornişler boyanmış; hepsi gökyüzüne doğru yükseliyormuş gibi görünüyor. Gerçek mimari ile boyalı mimari birbirinden ayırt edilemiyor."
+  },
+  {
+   "anahtar": "Q112401018",
+   "sanatci": "andrea-pozzo",
+   "ad": "Bulutlarda yükselen figürler",
+   "x": 0.3,
+   "y": 0.47,
+   "w": 0.38,
+   "h": 0.16,
+   "metin": "Tavanın ortasında bulutların arasında figürler yukarı doğru süzülüyor. Boyalı mimari onları bir kuyunun ağzından görür gibi çerçeveliyor."
+  }
+ ],
+ "giuseppe-maria-crespi": [
+  {
+   "anahtar": "Q50939921",
+   "sanatci": "giuseppe-maria-crespi",
+   "ad": "Sade, gündelik bir an",
+   "x": 0.3,
+   "y": 0.25,
+   "w": 0.42,
+   "h": 0.42,
+   "metin": "Beyaz gömlekli bir kadın yatağın kenarında oturmuş, giysisini inceliyor. Işık yumuşak ve dağınık; sahne kahramanlık değil, sıradan bir ev anı."
+  },
+  {
+   "anahtar": "Q50939921",
+   "sanatci": "giuseppe-maria-crespi",
+   "ad": "Tozlu, dokulu yüzeyler",
+   "x": 0.27,
+   "y": 0.0,
+   "w": 0.27,
+   "h": 0.22,
+   "metin": "Yukarıda ipe asılı çamaşırlar ve duvar sıcak kahverengi bir karanlığın içinde. Yüzeyler hızlı, yumuşak fırçayla, tozlu bir dokuyla verilmiş."
+  }
+ ],
+ "giovanni-battista-piazzetta": [
+  {
+   "anahtar": "Q9378247",
+   "sanatci": "giovanni-battista-piazzetta",
+   "ad": "Heykelsi, yandan ışık",
+   "x": 0.38,
+   "y": 0.2,
+   "w": 0.36,
+   "h": 0.42,
+   "metin": "Hasır şapkalı kadının beyaz giysisi yandan gelen sert ışıkta parlıyor. Kıvrımlar kalın, heykel gibi modellenmiş."
+  },
+  {
+   "anahtar": "Q9378247",
+   "sanatci": "giovanni-battista-piazzetta",
+   "ad": "Kahve-kızıl gölgeler",
+   "x": 0.78,
+   "y": 0.37,
+   "w": 0.22,
+   "h": 0.26,
+   "metin": "Sağdaki çocuk ve adam koyu kahverengi gölgelerin içinden çıkıyor. Renkler sınırlı: kahverengi, krem ve toprak tonları."
+  }
+ ],
+ "alessandro-magnasco": [
+  {
+   "anahtar": "Q23948773",
+   "sanatci": "alessandro-magnasco",
+   "ad": "İnce, titrek figürler",
+   "x": 0.33,
+   "y": 0.76,
+   "w": 0.4,
+   "h": 0.22,
+   "metin": "Kıyıdaki küçük figürler uzun, ince ve neredeyse iskelet gibi. Birkaç hızlı fırça darbesi ve beyaz ışık vuruşuyla verilmişler."
+  },
+  {
+   "anahtar": "Q23948773",
+   "sanatci": "alessandro-magnasco",
+   "ad": "Fırtına ve harabe",
+   "x": 0.5,
+   "y": 0.38,
+   "w": 0.3,
+   "h": 0.32,
+   "metin": "Kabaran dalgaların ardında yıkık bir kule duruyor. Deniz alev gibi kıvrılan titrek fırça darbeleriyle boyanmış."
+  }
+ ],
+ "canaletto": [
+  {
+   "anahtar": "Q19660427",
+   "sanatci": "canaletto",
+   "ad": "Keskin, net binalar",
+   "x": 0.08,
+   "y": 0.12,
+   "w": 0.34,
+   "h": 0.46,
+   "metin": "Kubbeli kilise ve yanındaki yapılar keskin çizgilerle, her pencere ve heykeliyle çizilmiş. Gökyüzü açık mavi, bulutlar hafif."
+  },
+  {
+   "anahtar": "Q19660427",
+   "sanatci": "canaletto",
+   "ad": "Gondollar, küçük figürler",
+   "x": 0.48,
+   "y": 0.76,
+   "w": 0.3,
+   "h": 0.16,
+   "metin": "Kanalda gondollar ve kürek çeken küçük, canlı figürler var. Kırmızı ve beyaz giysiler suyun yeşilinde öne çıkıyor."
+  },
+  {
+   "anahtar": "Q19660427",
+   "sanatci": "canaletto",
+   "ad": "Cetvelle çizilmiş perspektif",
+   "x": 0.78,
+   "y": 0.25,
+   "w": 0.21,
+   "h": 0.5,
+   "metin": "Sağdaki sarayların cepheleri ve pencere sıraları kusursuz düz çizgilerle derinliğe kaçıyor."
+  }
+ ],
+ "theodore-rousseau": [
+  {
+   "anahtar": "theodore-rousseau|Les Chênes d'Apremont",
+   "sanatci": "theodore-rousseau",
+   "ad": "Güçlü, yaşlı meşeler",
+   "x": 0.2,
+   "y": 0.1,
+   "w": 0.55,
+   "h": 0.68,
+   "metin": "Ovanın ortasında gövdeleri kalın, tepeleri yoğun yapraklı yaşlı meşeler duruyor. Gölgelerinde hayvanlar otluyor."
+  },
+  {
+   "anahtar": "theodore-rousseau|Les Chênes d'Apremont",
+   "sanatci": "theodore-rousseau",
+   "ad": "Koyu yeşil-kahve yaprak",
+   "x": 0.3,
+   "y": 0.12,
+   "w": 0.25,
+   "h": 0.3,
+   "metin": "Yapraklar koyu yeşil ve kahverengi tonlarla, kalın boyayla yoğun bir kütle hâlinde boyanmış."
+  }
+ ],
+ "camille-pissarro": [
+  {
+   "anahtar": "Q278722",
+   "sanatci": "camille-pissarro",
+   "ad": "Yukarıdan bakılan kent",
+   "x": 0.0,
+   "y": 0.0,
+   "w": 0.7,
+   "h": 0.3,
+   "metin": "Ressam kente yüksekten bakıyor: çatılar, bacalar, rıhtım ve köprü kalabalık bir görünüm oluşturuyor."
+  },
+  {
+   "anahtar": "Q278722",
+   "sanatci": "camille-pissarro",
+   "ad": "Sık, düzenli fırça",
+   "x": 0.02,
+   "y": 0.52,
+   "w": 0.28,
+   "h": 0.25,
+   "metin": "Nehrin yüzeyi kısa, yan yana dizilmiş fırça vuruşlarından oluşuyor. Vuruşlar sık ve düzenli, renkler toprak tonlarına yakın."
+  }
+ ],
+ "alfred-sisley": [
+  {
+   "anahtar": "Q6382435",
+   "sanatci": "alfred-sisley",
+   "ad": "Geniş, açık mavi gök",
+   "x": 0.35,
+   "y": 0.02,
+   "w": 0.6,
+   "h": 0.3,
+   "metin": "Gökyüzü resmin büyük bir kısmını kaplıyor; açık mavide beyaz bulutlar dağınık duruyor."
+  },
+  {
+   "anahtar": "Q6382435",
+   "sanatci": "alfred-sisley",
+   "ad": "Sakin nehir ve köprü",
+   "x": 0.0,
+   "y": 0.1,
+   "w": 0.5,
+   "h": 0.45,
+   "metin": "Solda asma köprü nehrin üstünden karşı kıyıya uzanıyor. Kompozisyon ölçülü ve dengeli, renkler yumuşak."
+  }
+ ],
+ "paul-signac": [
+  {
+   "anahtar": "Q5826311",
+   "sanatci": "paul-signac",
+   "ad": "Yelkenli tekne",
+   "x": 0.33,
+   "y": 0.12,
+   "w": 0.3,
+   "h": 0.52,
+   "metin": "Limanın ortasında bir yelkenli duruyor; direkleri ve gövdesi turuncu ve sarı renk vuruşlarıyla kurulmuş."
+  },
+  {
+   "anahtar": "Q5826311",
+   "sanatci": "paul-signac",
+   "ad": "Mozaik gibi renk vuruşları",
+   "x": 0.55,
+   "y": 0.66,
+   "w": 0.4,
+   "h": 0.3,
+   "metin": "Su, mozaik taşlarını andıran iri, ayrı ayrı renk vuruşlarından oluşuyor. Mavi, yeşil ve pembe yan yana konmuş, karıştırılmamış."
+  }
+ ],
+ "fernand-khnopff": [
+  {
+   "anahtar": "Q30880783",
+   "sanatci": "fernand-khnopff",
+   "ad": "Sabit bakışlı, gizemli yüzler",
+   "x": 0.25,
+   "y": 0.0,
+   "w": 0.17,
+   "h": 0.4,
+   "metin": "Genç adam ile kadın başlı varlık yanak yanağa duruyor; ikisi de kıpırdamadan bakıyor. Yüzler birbirine benziyor, kadınsı ile erkeksi arasında."
+  },
+  {
+   "anahtar": "Q30880783",
+   "sanatci": "fernand-khnopff",
+   "ad": "Pürüzsüz, hareketsiz yüzey",
+   "x": 0.38,
+   "y": 0.3,
+   "w": 0.32,
+   "h": 0.55,
+   "metin": "Leopar gövdesi pürüzsüz, fırça izi görünmeyen bir yüzeyle boyanmış. Sahne donmuş gibi hareketsiz."
+  }
+ ],
+ "emil-nolde": [
+  {
+   "anahtar": "emil-nolde|Dance Around the Golden Calf",
+   "sanatci": "emil-nolde",
+   "ad": "Birbirine akan yoğun renkler",
+   "x": 0.15,
+   "y": 0.05,
+   "w": 0.45,
+   "h": 0.45,
+   "metin": "Dans eden figürlerin bedenleri sarı, kızıl, mor ve mavi lekeler hâlinde birbirine karışıyor. Boya kalın ve ıslak görünüyor."
+  }
+ ],
+ "marcel-duchamp": [
+  {
+   "anahtar": "Q20816341",
+   "sanatci": "marcel-duchamp",
+   "ad": "Makine gibi parçalar",
+   "x": 0.1,
+   "y": 0.38,
+   "w": 0.38,
+   "h": 0.36,
+   "metin": "Öğütücünün silindirleri kahverengi-bej tonlarda, teknik çizim gibi düz ve gölgesiz boyanmış. Silindirin üstünde ince çizgiler ışın gibi yayılıyor."
+  }
+ ],
+ "joan-miro": [
+  {
+   "anahtar": "joan-miro|Woman and Bird in the Moonlight",
+   "sanatci": "joan-miro",
+   "ad": "Hilal ve yıldız",
+   "x": 0.5,
+   "y": 0.03,
+   "w": 0.5,
+   "h": 0.3,
+   "metin": "Kızıl zeminin üstünde mavi bir hilal ve beyaz bir yıldız duruyor. Biçimler düz renkli ve sade."
+  },
+  {
+   "anahtar": "joan-miro|Woman and Bird in the Moonlight",
+   "sanatci": "joan-miro",
+   "ad": "Siyah çizgi, saf renk",
+   "x": 0.6,
+   "y": 0.56,
+   "w": 0.38,
+   "h": 0.4,
+   "metin": "Siyah ince çizgilerle birbirine bağlanan küçük kırmızı, mavi, sarı ve beyaz lekeler. Biçimler amip gibi yuvarlak."
+  }
+ ],
+ "max-ernst": [
+  {
+   "anahtar": "max-ernst|Forest and Dove",
+   "sanatci": "max-ernst",
+   "ad": "Çürümüş orman dokusu",
+   "x": 0.1,
+   "y": 0.3,
+   "w": 0.45,
+   "h": 0.4,
+   "metin": "Ağaçlar fırçayla çizilmemiş; yüzey kazınmış ve taranmış gibi, çürümüş tahtayı andıran bir dokuyla oluşmuş."
+  },
+  {
+   "anahtar": "max-ernst|Forest and Dove",
+   "sanatci": "max-ernst",
+   "ad": "Dokuya gömülmüş kuş",
+   "x": 0.42,
+   "y": 0.7,
+   "w": 0.24,
+   "h": 0.22,
+   "metin": "Ormanın dibinde, ince çizgilerle belirtilmiş küçük bir kuş seçiliyor; çevresindeki dokunun içinde kaybolmuş gibi."
+  }
+ ],
+ "jean-arp": [
+  {
+   "anahtar": "jean-arp|Configuration",
+   "sanatci": "jean-arp",
+   "ad": "Amip gibi akışkan biçim",
+   "x": 0.1,
+   "y": 0.35,
+   "w": 0.7,
+   "h": 0.6,
+   "metin": "Sarı biçim yuvarlak, köşesiz kollarla mavi ve siyah alanlara uzanıyor. Hiçbir yerinde düz çizgi ya da köşe yok."
+  },
+  {
+   "anahtar": "jean-arp|Configuration",
+   "sanatci": "jean-arp",
+   "ad": "Düz renk alanları",
+   "x": 0.26,
+   "y": 0.66,
+   "w": 0.24,
+   "h": 0.2,
+   "metin": "Sarının içindeki halka düz, gölgesiz renklerle boyanmış. Derinlik yanılsaması yok; biçimler yüzeyde yan yana duruyor."
+  }
+ ],
+ "ambrogio-lorenzetti": [
+  {
+   "anahtar": "Q3910903",
+   "sanatci": "ambrogio-lorenzetti",
+   "ad": "Derinlik veren mimari",
+   "x": 0.28,
+   "y": 0.36,
+   "w": 0.44,
+   "h": 0.22,
+   "metin": "Figürlerin arkasında sütunlar ve kemerler derinliğe doğru sıralanıyor; tapınağın içi bir koridor gibi uzanıyor."
+  },
+  {
+   "anahtar": "Q3910903",
+   "sanatci": "ambrogio-lorenzetti",
+   "ad": "Perspektifli döşeme",
+   "x": 0.2,
+   "y": 0.86,
+   "w": 0.66,
+   "h": 0.1,
+   "metin": "Desenli döşeme geriye doğru daralarak mekânın derinliğini gösteriyor."
+  }
+ ]
+}
