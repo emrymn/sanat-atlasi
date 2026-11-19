@@ -3057,6 +3057,32 @@
     "gorsel": "d48f7f22b6558df3"
    }
   ],
+  "diogenes": [
+   {
+    "madde": 0,
+    "anahtar": "Q12103299",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Küpün içindeki filozof",
+    "x": 0.15,
+    "y": 0.15,
+    "w": 0.5,
+    "h": 0.65,
+    "metin": "Büyük bir toprak küpün ağzında oturan yarı çıplak adam. Kinik filozof Diogenes (MÖ 4. yüzyıl) bütün mülkiyeti reddetti ve Atina'da bir küpte yaşadı; 'kinik' adı Yunanca 'köpek' sözcüğünden gelir, çünkü utanmadan köpek gibi yaşadığı söylenirdi. Gérôme'un titiz, fotoğraf gibi ayrıntıları ve antik sahneleri Fransız akademizminin tipik örneğidir.",
+    "gorsel": "c455c2f888fb4200"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q12103299",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Fener ve köpekler",
+    "x": 0.5,
+    "y": 0.3,
+    "w": 0.5,
+    "h": 0.7,
+    "metin": "Diogenes'in yaktığı fener ve yanındaki köpekler. Anekdota göre Diogenes güpegündüz fenerle Atina sokaklarında dolaşıp 'Dürüst bir insan arıyorum' derdi. Köpekler hem kinik felsefenin adını hem de onun doğal, yalın yaşam idealini hatırlatır. Gérôme burada filozofu fenerini yakarken gösterir.",
+    "gorsel": "c455c2f888fb4200"
+   }
+  ],
   "discovery-of-the-true-cross": [
    {
     "madde": 0,
@@ -4009,6 +4035,44 @@
     "h": 0.28
    }
   ],
+  "hagar-and-the-angel": [
+   {
+    "madde": 0,
+    "anahtar": "Q5659648",
+    "sanatci": "giovanni-battista-tiepolo",
+    "ad": "Ağlayan Hacer ve baygın oğul",
+    "x": 0.05,
+    "y": 0.25,
+    "w": 0.85,
+    "h": 0.7,
+    "metin": "Göğe bakan Hacer ve yanında baygın yatan oğlu İsmail. Tekvin 21'e göre İbrahim, Sara'nın isteğiyle cariyesi Hacer ve oğlunu çöle gönderdi; su bitince Hacer çocuğun ölümünü görmemek için onu bir çalının altına bırakıp ağladı. Tiepolo bu tuvali gençken Venedik'te yaptı; dramatik ışık ve parlak renkler onun Rokoko öncesi dönemidir.",
+    "gorsel": "cde16dd624ed107e"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q5659648",
+    "sanatci": "giovanni-battista-tiepolo",
+    "ad": "Gökten inen melek",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.65,
+    "h": 0.4,
+    "metin": "Yukarıdan inip Hacer'e bir yeri gösteren melek. Tekvin'e göre Tanrı'nın meleği Hacer'e seslendi: 'Korkma, kalk, çocuğu kaldır'; Tanrı onun gözlerini açtı ve Hacer bir kuyu gördü. İslam geleneğinde bu hikâye Mekke'deki Zemzem kuyusunun doğuşuyla ilişkilendirilir; İsmail Arapların atası sayılır.",
+    "gorsel": "cde16dd624ed107e"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q9138435",
+    "sanatci": "guercino",
+    "ad": "Kovan İbrahim",
+    "x": 0.15,
+    "y": 0.05,
+    "w": 0.45,
+    "h": 0.8,
+    "metin": "Mavi türbanlı, ak sakallı İbrahim, eliyle Hacer'e gitmesini işaret ediyor; Hacer ağlıyor, oğlu ona sarılıyor. Arkada yüzünü çeviren Sara durur. Guercino bu tuvali geç döneminde yaptı; bugün Milano'daki Brera'dadır. Açık, temiz renkler ve sakin duygu anlatımı, onun Reni'ye yaklaşan klasik dilidir.",
+    "gorsel": "6d4c302eedbe24d1"
+   }
+  ],
   "heraclitus-and-democritus": [
    {
     "madde": 0,
@@ -4431,6 +4495,44 @@
     "y": 0.06,
     "w": 0.25,
     "h": 0.35
+   }
+  ],
+  "job-tempted-by-a-demon": [
+   {
+    "madde": 0,
+    "anahtar": "hans-baldung-grien|Job Tempted by a Demon",
+    "sanatci": "hans-baldung-grien",
+    "ad": "Gübre yığınındaki Eyüp",
+    "x": 0.25,
+    "y": 0.3,
+    "w": 0.45,
+    "h": 0.5,
+    "metin": "Ortada bir yığının üstüne oturmuş, yaralarla kaplı yaşlı adam: Eyüp. Eyüp kitabına göre Tanrı, Şeytan'ın Eyüp'ün sadakatini sınamasına izin verdi; Eyüp mallarını, çocuklarını ve sağlığını yitirdi ama Tanrı'ya küfretmedi. 'Eyüp sabrı' deyimi buradan gelir. Baldung bu tahta baskıyı 'Sabrın Aynası' adlı bir dua kitabı için yaptı.",
+    "gorsel": "7c9b7686f2219a6b"
+   },
+   {
+    "madde": 1,
+    "anahtar": "hans-baldung-grien|Job Tempted by a Demon",
+    "sanatci": "hans-baldung-grien",
+    "ad": "Kamçılı iblis",
+    "x": 0.05,
+    "y": 0.05,
+    "w": 0.45,
+    "h": 0.4,
+    "metin": "Sol üstte Eyüp'ü kamçıyla döven, boynuzlu ve hayvansı iblis. Kutsal Kitap'ta Şeytan Eyüp'ü 'tepeden tırnağa çıbanlarla' vurur; Ortaçağ ve Rönesans ressamları bu görünmez güçlü canlı, korkunç bir yaratık olarak çizdi. Baldung'un kıvrımlı, gürültülü çizgileri ve tuhaf yaratıkları onun fantastik hayal gücünü gösterir.",
+    "gorsel": "7c9b7686f2219a6b"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q14940735",
+    "sanatci": "georges-de-la-tour",
+    "ad": "Eğilen karısı",
+    "x": 0.05,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.55,
+    "metin": "Elinde mum, Eyüp'e eğilen uzun boylu kadın: karısı. Eyüp kitabında karısı ona 'Tanrı'ya küfret de öl!' der; Eyüp onu 'akılsız kadın' diye azarlar. La Tour'un bu tuvali uzun süre başka bir konu sanıldı; kadının sert duruşu ile oturan zayıf adamın kırılganlığı, tek bir mum ışığında karşı karşıya gelir. Bu gece sahneleri La Tour'un imzasıdır.",
+    "gorsel": "9ef16677b4fcb1aa"
    }
   ],
   "joseph": [
@@ -6150,6 +6252,56 @@
     "h": 0.45,
     "metin": "Bir genç kız, Orfeus'un kesik başını lirinin üstünde taşıyor. Mite göre Orfeus, Eurydike'yi kaybettikten sonra kadınlardan uzak durdu; öfkelenen Trakyalı Mainadlar onu parçaladı, başı lirle birlikte Hebros ırmağında şarkı söyleyerek aktı. Moreau bu sahneyi kendisi icat etti; mücevher gibi ayrıntılar ve rüya havası onu Sembolizmin öncüsü yapar.",
     "gorsel": "ce229ad5f3a4833b"
+   }
+  ],
+  "paris-and-helen": [
+   {
+    "madde": 0,
+    "anahtar": "Q2254945",
+    "sanatci": "jacques-louis-david",
+    "ad": "Frig başlıklı Paris",
+    "x": 0.45,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.55,
+    "metin": "Başında Frig başlığı, çıplak oturan genç Paris. Frig başlığı, ucu öne kıvrık yumuşak bir başlıktır ve antik sanatta Truvalılar gibi Anadolu halklarını tanıtırdı; Fransız Devrimi'nde ise özgürlüğün simgesi oldu. David bu tuvali Kral XVI. Louis'nin kardeşi Comte d'Artois için yaptı.",
+    "gorsel": "e99300e101fa4006"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2254945",
+    "sanatci": "jacques-louis-david",
+    "ad": "Lir",
+    "x": 0.55,
+    "y": 0.4,
+    "w": 0.12,
+    "h": 0.2,
+    "metin": "Paris'in elindeki lir. Homeros'ta Paris, savaştan çok aşka ve müziğe düşkün, güzel bir delikanlıdır; kardeşi Hektor onu bu yüzden azarlar. David, Neoklasik üslubunun en zarif örneklerinden biri olan bu resimde lirle Paris'in savaşçı değil, âşık bir prens olduğunu vurgular.",
+    "gorsel": "e99300e101fa4006"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2254945",
+    "sanatci": "jacques-louis-david",
+    "ad": "Yaslanan Helena",
+    "x": 0.35,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.6,
+    "metin": "Paris'in omzuna yaslanan, pembe giysili Helena. Mite göre Spartalı Kral Menelaos'un karısı Helena, Paris'le Truva'ya kaçtı; bu kaçış Truva Savaşı'nın başlangıcı oldu. Arkada antik Yunan kadın figürlü sütunlar (karyatidler) ve sade mimari, David'in antik dünyayı doğru yansıtma çabasını gösterir.",
+    "gorsel": "e99300e101fa4006"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q16038758",
+    "sanatci": "angelica-kauffman",
+    "ad": "Venüs ve Kupid",
+    "x": 0.05,
+    "y": 0.2,
+    "w": 0.65,
+    "h": 0.6,
+    "metin": "Solda Helena'yı ikna eden Venüs ve ok çeken Kupid. Venüs, Paris'in Hükmü'nde altın elmayı ona verdiği için Paris'e dünyanın en güzel kadınını vaat etmişti; Helena'yı Paris'e âşık eden odur. Angelica Kauffman, Kraliyet Akademisi'nin kurucu üyesi iki kadından biriydi; zarif, pastel renkli Neoklasik figürleri onu tanıtır.",
+    "gorsel": "fc5dfd9425dea7e4"
    }
   ],
   "parnassus": [
@@ -8100,6 +8252,44 @@
     "y": 0.18,
     "w": 0.18,
     "h": 0.13
+   }
+  ],
+  "saint-thomas": [
+   {
+    "madde": 0,
+    "anahtar": "Q23948730",
+    "sanatci": "georges-de-la-tour",
+    "ad": "Mızrak",
+    "x": 0.35,
+    "y": 0.35,
+    "w": 0.65,
+    "h": 0.6,
+    "metin": "Elinde sıkıca tuttuğu uzun mızrak. Geleneğe göre Tomas, İsa'nın ölümünden sonra Hindistan'a gidip orada vaaz verdi ve Madras yakınlarında mızrakla öldürüldü; Hindistan'daki 'Tomas Hristiyanları' kökenlerini ona bağlar. La Tour'un yaşlı ve düşünceli havari portreleri, sert gerçekçiliği ve tek yönlü ışığıyla tanınır.",
+    "gorsel": "8977060de05be082"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q29644867",
+    "sanatci": "georges-de-la-tour",
+    "ad": "Kitap",
+    "x": 0.3,
+    "y": 0.5,
+    "w": 0.4,
+    "h": 0.4,
+    "metin": "Elinde tuttuğu kalın kitap: havari olarak İsa'nın sözlerini yayma görevinin işareti. La Tour'un Albi'de bulunan havari dizisinin parçası olduğu düşünülen bu tuval, bir halk arasında kampanya yürütülerek Louvre için satın alındı. Sade arka plan ve sert yan ışık, figürü heykel gibi öne çıkarır.",
+    "gorsel": "ad6b37e52267718e"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q29644867",
+    "sanatci": "georges-de-la-tour",
+    "ad": "Kel, sakallı yüz",
+    "x": 0.3,
+    "y": 0.0,
+    "w": 0.5,
+    "h": 0.4,
+    "metin": "Kel kafalı, kısa sakallı, düşünceli bakışlı olgun yaşta adam. Tomas'ın tek bir yerleşik yüz tipi yoktur; ressamlar onu kimi zaman genç, kimi zaman yaşlı gösterir. Yuhanna İncili'nde dirilen İsa'nın yaralarına dokunmadan inanmayacağını söyler; 'Kuşkucu Tomas' adı buradan gelir.",
+    "gorsel": "ad6b37e52267718e"
    }
   ],
   "salome": [
