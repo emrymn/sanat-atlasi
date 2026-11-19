@@ -1220,6 +1220,44 @@
     "h": 0.32
    }
   ],
+  "boreas-and-orithyia": [
+   {
+    "madde": 0,
+    "anahtar": "Q66023885",
+    "sanatci": "francesco-solimena",
+    "ad": "Kanatlı Boreas",
+    "x": 0.4,
+    "y": 0.0,
+    "w": 0.55,
+    "h": 0.45,
+    "metin": "Büyük kanatlı, kaslı rüzgâr tanrısı Boreas. Boreas Yunan mitolojisinde soğuk kuzey rüzgârıdır; Ovidius'a göre Atina kralı Erekhtheus'un kızı Oreithyia'yı istedi ama reddedilince onu zorla kaçırdı. Solimena Napoli Barok'unun büyük ustasıdır; dönen, yükselen figürler onun Luca Giordano'dan aldığı dili sürdürür.",
+    "gorsel": "6731cd14c2e29c01"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q66023885",
+    "sanatci": "francesco-solimena",
+    "ad": "Kaçırılan Oreithyia",
+    "x": 0.45,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.25,
+    "metin": "Boreas'ın kollarında havaya kaldırılan, beyaz giysisi savrulan genç kadın. Oreithyia, Boreas'la Trakya'ya götürüldü ve ondan kanatlı ikizler Zetes ve Kalais doğdu; ikizler sonra Argonautlarla birlikte altın postu aramaya çıktı. Atinalılar, Boreas'ı Pers donanmasını fırtınayla batırdığı için ayrıca onurlandırırdı.",
+    "gorsel": "6731cd14c2e29c01"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q66023885",
+    "sanatci": "francesco-solimena",
+    "ad": "Dehşete düşen arkadaşlar",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.85,
+    "h": 0.5,
+    "metin": "Aşağıda kaçırılışı dehşetle izleyen, kollarını kaldırıp kaçışan kız arkadaşlar. Solimena sahneyi yerden göğe yükselen güçlü bir çapraz düzenle kurar: aşağıdaki kalabalık ile yukarıdaki uçuşan çift arasındaki gerilim Barok dramın özüdür. Solimena'nın atölyesi bu kompozisyonun birkaç versiyonunu üretti.",
+    "gorsel": "6731cd14c2e29c01"
+   }
+  ],
   "cain-and-abel": [
    {
     "madde": 0,
@@ -4759,6 +4797,68 @@
     "h": 0.42
    }
   ],
+  "judgment-of-solomon": [
+   {
+    "madde": 0,
+    "anahtar": "Q2502068",
+    "sanatci": "nicolas-poussin",
+    "ad": "Tahttaki Süleyman",
+    "x": 0.35,
+    "y": 0.0,
+    "w": 0.3,
+    "h": 0.45,
+    "metin": "Basamaklı tahtta oturan, kolunu uzatmış genç Kral Süleyman. 1. Krallar 3'e göre iki kadın aynı bebeğin annesi olduğunu iddia edince Süleyman bebeğin ikiye bölünmesini emretti; gerçek anne bebeğin yaşaması için ondan vazgeçti ve Süleyman böylece onu tanıdı. Poussin bu tuvali en sevdiği eserlerinden biri sayardı; bugün Louvre'dadır.",
+    "gorsel": "883cd32998f9b420"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2502068",
+    "sanatci": "nicolas-poussin",
+    "ad": "Kılıçlı asker",
+    "x": 0.0,
+    "y": 0.2,
+    "w": 0.3,
+    "h": 0.6,
+    "metin": "Solda, bir eliyle bebeği tutan, öbür eliyle kılıcını kaldırmış asker. Poussin sahneyi tam simetrik bir düzenle kurar: ortada kral, iki yanda iki kadın; her figürün jesti duygusunu açıkça okutur. Bu 'jestlerle anlatım' Fransız Akademisi'nde örnek alınan klasik ilke oldu.",
+    "gorsel": "883cd32998f9b420"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q2502068",
+    "sanatci": "nicolas-poussin",
+    "ad": "Yalvaran gerçek anne",
+    "x": 0.1,
+    "y": 0.4,
+    "w": 0.35,
+    "h": 0.5,
+    "metin": "Diz çökmüş, kollarını uzatıp bebeğin öldürülmemesi için yalvaran gerçek anne. Süleyman, bebeği ötekine vermeye razı olan bu kadının gerçek anne olduğunu anladı; bu hüküm, onun ünlü bilgeliğinin en bilinen örneği oldu. Poussin, kadının yüzündeki acıyla izleyiciyi doğrudan etkilemek ister.",
+    "gorsel": "883cd32998f9b420"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q2502068",
+    "sanatci": "nicolas-poussin",
+    "ad": "Suçlayan sahte anne",
+    "x": 0.55,
+    "y": 0.35,
+    "w": 0.3,
+    "h": 0.55,
+    "metin": "Sağda kucağında ölü bebek, öteki kadını suçlarcasına işaret eden sahte anne. Kutsal Kitap'a göre bu kadının bebeği gece ölmüş, o da uyuyan arkadaşının bebeğini almıştı. Poussin bu kadının yüzünü öfke ve kıskançlıkla çarpıtır; iki annenin karşıtlığı sahnenin ahlaki anlamını taşır.",
+    "gorsel": "883cd32998f9b420"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q19820121",
+    "sanatci": "valentin-de-boulogne",
+    "ad": "Saray salonu",
+    "x": 0.15,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.55,
+    "metin": "Karanlık bir salonda tahtında oturan Süleyman ve çevresindeki figürler. Valentin de Boulogne bu tuvali Roma'da yaptı; sahneyi Caravaggio tarzında yakın plan, yarım boy figürler ve keskin ışıkla kurar. Poussin'in aynı konudaki aydınlık, mimari sahnesiyle karşılaştırınca Fransız ressamların Roma'da iki farklı yol seçtiği görülür.",
+    "gorsel": "d1b0b09dd13a0a2e"
+   }
+  ],
   "judith-and-holofernes": [
    {
     "madde": 0,
@@ -6711,6 +6811,56 @@
     "h": 0.34
    }
   ],
+  "presentation-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q11826430",
+    "sanatci": "tintoretto",
+    "ad": "Merdiveni çıkan küçük Meryem",
+    "x": 0.55,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.35,
+    "metin": "Yüksek merdivenin ortasında tek başına yukarı çıkan küçük kız: Meryem. Apokrif Yakup İncili'ne göre Yoakim ile Anna, kızlarını üç yaşında tapınağa adadılar; küçük Meryem on beş basamağı kimsenin yardımı olmadan çıktı. Tintoretto bu tuvali Venedik'teki Madonna dell'Orto kilisesinin org kapakları için yaptı; dik açıyla yükselen merdiven onun dramatik perspektifidir.",
+    "gorsel": "7ae8569271ecc3b8"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q11826430",
+    "sanatci": "tintoretto",
+    "ad": "Bekleyen başrahip",
+    "x": 0.5,
+    "y": 0.0,
+    "w": 0.3,
+    "h": 0.3,
+    "metin": "Merdivenin tepesinde kollarını açıp Meryem'i bekleyen başrahip. Efsaneye göre Meryem tapınakta büyüdü ve meleklerden yiyecek aldı; on iki yaşına kadar orada kaldı. Bu bayram Doğu kiliselerinde çok önemlidir; Batı'da ise sonradan yaygınlaştı. Tintoretto'nun figürleri hızlı, kalın ışık vuruşlarıyla kurulmuştur.",
+    "gorsel": "7ae8569271ecc3b8"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3910927",
+    "sanatci": "giotto-di-bondone",
+    "ad": "Kızını taşıyan Anna",
+    "x": 0.2,
+    "y": 0.35,
+    "w": 0.3,
+    "h": 0.55,
+    "metin": "Küçük Meryem'i merdivenlere doğru iten kırmızı pelerinli Anna, arkasında Yoakim. Giotto bu sahneyi Padova'daki Scrovegni Şapeli'nde, Meryem'in anne babasının hikâyesini anlatan diziye yerleştirdi. Figürlerin ağır, hacimli bedenleri ve basit, güçlü jestleri, Bizans'ın düz figürlerinden uzaklaşan yeni bir gerçekçiliğin başlangıcıdır.",
+    "gorsel": "b0e00e86fa42cd56"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3910927",
+    "sanatci": "giotto-di-bondone",
+    "ad": "Tapınak yapısı",
+    "x": 0.45,
+    "y": 0.0,
+    "w": 0.5,
+    "h": 0.65,
+    "metin": "Sağda merdivenli, sütunlu, kubbeli tapınak yapısı. Giotto mimariyi bir sahne kutusu gibi kurar: figürlerin içinde durabileceği inandırıcı bir mekân yaratmaya çalışır. Bu yapı gerçek Kudüs tapınağına değil, Giotto'nun çağındaki İtalyan kilise sunak tavanlarına (ciborium) benzer.",
+    "gorsel": "b0e00e86fa42cd56"
+   }
+  ],
   "prodigal-son": [
    {
     "madde": 0,
@@ -7459,6 +7609,68 @@
     "gorsel": "5c39f23ce2a309e6"
    }
   ],
+  "saint-anthony-of-padua": [
+   {
+    "madde": 0,
+    "anahtar": "Q18573368",
+    "sanatci": "luca-giordano",
+    "ad": "Kahverengi Fransisken cüppesi",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.6,
+    "h": 0.55,
+    "metin": "Kaba kahverengi keşiş cüppesi ve beline sarılı ip kuşak. Fransisken keşişleri, Assisili Franciscus'un yoksulluk idealini izleyerek böyle sade giysiler giyerdi; kuşaktaki üç düğüm yoksulluk, iffet ve itaat yeminlerini simgeler. Lizbon doğumlu Antonius, Fransisken tarikatının en ünlü vaizlerinden biri oldu ve Padova'da öldü.",
+    "gorsel": "aadf77a38a1dd2f8"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18573368",
+    "sanatci": "luca-giordano",
+    "ad": "Genç, tonsürlü yüz",
+    "x": 0.25,
+    "y": 0.05,
+    "w": 0.45,
+    "h": 0.35,
+    "metin": "Tepesi tıraşlı (tonsürlü), genç ve sakalsız yüz. Antonius 1231'de 36 yaşında öldü ve bir yıl sonra aziz ilan edildi; bu, Kilise tarihinin en hızlı azizlik ilanlarından biridir. Bu yüzden hep genç gösterilir. Luca Giordano'nun yumuşak ışığı ve sakin ifadesi, Napoli'de Ribera'dan aldığı gerçekçiliği daha hafif bir dille birleştirir.",
+    "gorsel": "aadf77a38a1dd2f8"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q27760202",
+    "sanatci": "giovanni-battista-tiepolo",
+    "ad": "Kucaktaki Çocuk İsa",
+    "x": 0.4,
+    "y": 0.2,
+    "w": 0.5,
+    "h": 0.45,
+    "metin": "Azizin kucağında ona uzanan Çocuk İsa. Efsaneye göre Antonius bir gece odasında dua ederken Çocuk İsa ona göründü; ev sahibi bu sahneyi pencereden gizlice gördü. Tiepolo bu tuvali Madrid'de, İspanya kralı III. Carlos için yaptığı son dönem eserleri arasında yaptı; açık, aydınlık renkler onun geç dönemidir.",
+    "gorsel": "614cccd77d012dd9"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q18573368",
+    "sanatci": "luca-giordano",
+    "ad": "Beyaz zambak",
+    "x": 0.75,
+    "y": 0.2,
+    "w": 0.25,
+    "h": 0.25,
+    "metin": "Sağda karanlıkta beliren beyaz zambak: saflığın ve bekâretin simgesi. Zambak, Antonius'un en tanınmış işaretlerinden biridir ve onu kucağında Çocuk İsa taşıyan öbür azizlerden ayırır. Padova'daki bazilikası bugün de Avrupa'nın en kalabalık hac yerlerinden biridir.",
+    "gorsel": "aadf77a38a1dd2f8"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q64606195",
+    "sanatci": "paolo-veronese",
+    "ad": "Balıklara vaaz",
+    "x": 0.45,
+    "y": 0.05,
+    "w": 0.35,
+    "h": 0.35,
+    "metin": "Kıyıdaki kayada duran, denize doğru konuşan aziz. Efsaneye göre Rimini halkı Antonius'un vaazlarını dinlemeyince, o deniz kıyısına gidip balıklara vaaz verdi; balıklar başlarını sudan çıkarıp onu dinledi. Veronese bu sahneyi Roma'daki Borghese Galerisi'nde bulunan bu tuvalde geniş bir deniz manzarasına yerleştirir.",
+    "gorsel": "3f7aa943616a3de9"
+   }
+  ],
   "saint-apollonia": [
    {
     "madde": 0,
@@ -7875,6 +8087,44 @@
     "h": 0.4,
     "metin": "Altta soyulmuş, diz çökmüş aziz; çevresinde cellatlar ve askerler, yukarıda bulutlarda Meryem ve azizler. Georgios, Roma tanrılarına kurban kesmeyi reddettiği için işkence görüp başı kesilerek öldürüldü. Veronese bu sunak resmini Verona'daki San Giorgio in Braida kilisesi için yaptı; kalabalık, parlak renkli ve sahne gibi kurulmuş düzen onun Venedik dilidir.",
     "gorsel": "bbabce8bb2fae091"
+   }
+  ],
+  "saint-januarius": [
+   {
+    "madde": 0,
+    "anahtar": "Q3947174",
+    "sanatci": "artemisia-gentileschi",
+    "ad": "Mitralı piskopos",
+    "x": 0.15,
+    "y": 0.05,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Uzun beyaz başlıklı (mitra), kırmızı cüppeli piskopos: Januarius. Januarius 4. yüzyıl başında Benevento piskoposuydu; Diocletianus'un zulmü sırasında Pozzuoli'de şehit edildi. Napoli'nin koruyucu azizidir. Artemisia bu tuvali Pozzuoli katedrali için yaptı; arkadaki antik amfitiyatro, olayın geçtiği gerçek yerdir.",
+    "gorsel": "d67804423ba74664"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3947170",
+    "sanatci": "jusepe-de-ribera",
+    "ad": "Fırından çıkan aziz",
+    "x": 0.35,
+    "y": 0.25,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Alevli fırından hiçbir zarar görmeden çıkan aziz; çevresindeki cellatlar dehşetle geri çekilir. Efsaneye göre Januarius önce kızgın bir fırına atıldı ama yanmadı; sonra vahşi hayvanlara verildi, hayvanlar ona dokunmadı; sonunda başı kesildi. Ribera bu dev bakır levhayı Napoli katedralinin hazine şapeli için yaptı.",
+    "gorsel": "5d317bbe1fb6ee6c"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q3947171",
+    "sanatci": "luca-giordano",
+    "ad": "Şefaat eden aziz",
+    "x": 0.25,
+    "y": 0.2,
+    "w": 0.65,
+    "h": 0.45,
+    "metin": "Bulutlar üstünde diz çöküp yukarıdaki Meryem'e ve Tanrı'ya kollarını açan Januarius; aşağıda vebadan ölen cesetler. 1656'da Napoli'deki büyük veba salgını şehrin nüfusunun yarısını öldürdü. Napoliler, Januarius'un kanının yılda birkaç kez sıvılaştığına inanır; bu 'kan mucizesi' bugün de katedralde törenle izlenir.",
+    "gorsel": "14e199e4d2103b82"
    }
   ],
   "saint-jerome": [
@@ -8609,6 +8859,20 @@
     "h": 0.25,
     "metin": "Elinde kapalı bir kitap, yanında büyük bir anahtar. Kitap, Yeni Ahit'teki iki Petrus mektubunu ve elçinin müjdeyi yayma görevini simgeler. Simone Martini Siena okulunun ustasıdır: altın zemin, zarif kıvrılan kumaş kenarları ve süslü, düz yüzeyler onu Floransa'daki Giotto'nun hacimli, ağır figürlerinden ayırır.",
     "gorsel": "f65dc8166b4a3211"
+   }
+  ],
+  "saint-roch": [
+   {
+    "madde": 5,
+    "anahtar": "Q16551556",
+    "sanatci": "annibale-carracci",
+    "ad": "Yoksullar arasında aziz",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Basamakların üstünde, kalabalık yoksullara sadaka dağıtan aziz. Efsaneye göre Roch, anne babası ölünce mirasını yoksullara dağıtıp hacı kılığında Roma'ya yola çıktı. Annibale Carracci bu dev tuvali Reggio Emilia için tasarladı ama sonunu öğrencisi tamamladı; kalabalığın çeşitli, canlı duruşları Bolonya akademisinin gözlem eğitimini gösterir.",
+    "gorsel": "ea87bd15356e163c"
    }
   ],
   "saint-sebastian": [
