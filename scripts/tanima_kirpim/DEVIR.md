@@ -3,13 +3,14 @@
 Konu sayfasındaki "Resimde nasıl tanınır?" maddelerinin ve sanatçı sayfasındaki "Nasıl tanırım?" notunun yanında
 eserden yakın plan kırpım. Veri: `data/tanima_kirpimlari.json` (bu klasördeki dosyalardan **üretilir**, elle düzenlenmez).
 
-## Durum (1.90.0)
+## Durum (1.90.1)
 
 - Konular: 110 konuda 338 kırpım (371 konu, 1723 madde). Sanatçılar: 154 sanatçıda 335 kırpım (159 notlu sanatçı):
   289'u hazır ayrıntılardan, 46'sı `yeni_sanatci.json`'da elle çizilen kutular (24 sanatçı).
 - Eşleşen kutular rehberli incelemenin doğrulanmış ayrıntılarından (`data/eser_ayrintilari.json`) alındı; açıklama metni
   kopyalanmaz, uygulama aynı kutuyu ayrıntı kaydında bulup görüntüleyiciyi o kayıtla açar. Elle çizilen kutuların kendi
-  `metin`i var (yalnız resimde görülen).
+  `metin`i var: önce kısa bir "bak" cümlesi, sonra bilgi (1.90.1, Emre: "sadece betimleme yapıyorsun … daha çok
+  bilgi versin").
 - Her eşleşmeye kontak sayfasında bakıldı (madde metni + kırpım); maddeyi göstermeyen, bulanık ya da boş kırpımlar
   çıkarıldı (konularda 9 çıktı, 7'si başka ayrıntıyla değişti; sanatçılarda 8 çıktı).
 - Kalan iş: kırpımı olmayan konular (261; çoğunun eserlerinde hazır ayrıntı yok) için yeni kutu seçmek (aşağıda
@@ -41,8 +42,10 @@ cd ../.. && node --test tests/unit/tanima_kirpim.test.mjs
 ## Yeni kutu (ayrıntısı olmayan eser)
 
 1. `python3 kontrol.py izgara <sanatçı> <anahtar>` → 0,1 ızgaralı 1280'lik; `yakin … x0 y0 x1 y1` ile yaklaş.
-2. Kutuyu `yeni_*.json`'a yaz: `metin` zorunlu (2 cümle: ne görülüyor + neden o özelliğin örneği; yalnız gözle görüleni
-   yaz, bellekten tarih/isim ekleme). Eser konuda (`ikonografi.json → eserler`) ya da sanatçının listesinde olmalı.
+2. Kutuyu `yeni_*.json`'a yaz: `metin` zorunlu, 3–4 cümle. Bir cümle neye bakıldığını söyler; gerisi bilgi verir:
+   konu/hikâye, teknik, sipariş/bağlam, sanatçıyı benzerlerinden ayıran ipucu. Yalnız betimleme yazma. Bilgi
+   sanatçının `taninma`/`anlatim` notuyla çelişmemeli ve iyi bilinen olgu olmalı; emin olunmayan "denir/düşünülür" ile
+   yazılır ya da hiç yazılmaz. Eser konuda (`ikonografi.json → eserler`) ya da sanatçının listesinde olmalı.
 3. `donustur.py`, `kontrol.py`, test. Kurallar `scripts/ayrinti/TALIMAT.md` §3–5 ile aynı (kutu ayrıntıyı tam içine alır,
    görselin %60'ından büyük olmaz).
 

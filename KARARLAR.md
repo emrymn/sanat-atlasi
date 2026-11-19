@@ -2771,3 +2771,26 @@ Emre: "başyapıtlar kısmına resim eklemek güzel bir eklemeydi … 1 ve 2'yi 
   resimde gözle görüleni anlatır (ör. "Kanalda gondollar ve kürek çeken küçük figürler"), tarih ve isim eklenmedi;
   her kutu kontak sayfasında denetlendi; Nolde'nin "maske gibi yüz"ü seçilemediği için çıkarıldı (46 kaldı). Kalan 5: dört heykeltıraşın (Praxiteles,
   Giovanni Pisano, Cellini, Canova) önbellekte eseri yok; Man Ray'in notu fotoğraflarını anlatıyor, elde yalnız resmi var.
+
+## 1.90.1 · İş 193: elle çizilen kırpımlara bilgi
+
+Emre: "ama sen sadece betimleme yapıyorsun ben onu istemiyorum daha çok bilgi versin". 46 elle çizilen sanatçı
+kırpımının metni yeniden yazıldı. Artık önce kısa bir "bak" cümlesi, ardından bilgi geliyor: konu ve hikâye, teknik,
+kimin için yapıldığı, sanatçıyı benzerlerinden ayıran ipucu.
+
+- **Örnekler:**
+  - Duchamp'ın öğütücüsünde çizgiler tuvale dikilmiş iplik; makineyi Rouen'de bir vitrinde gördü, Büyük Cam'a taşıdı.
+  - Pozzo'nun tonozunda yanılsama, zemindeki işaretli noktadan bakınca tam çalışır.
+  - Ribera'nın sakallı kadınını Alcalá Dükü ısmarladı.
+  - Pissarro son yıllarında göz hastalığı yüzünden otel pencerelerinden çalıştı.
+  - Lorenzetti'nin döşemesi Brunelleschi'den yaklaşık 80 yıl önceki bir perspektif denemesi.
+- **Doğruluk:**
+  - Yalnız iyi bilinen olgular yazıldı ve sanatçının notuyla çelişmeyenler kaldı.
+  - Emin olunmayan şeyler ya yumuşatıldı ya da çıkarıldı. Khnopff'un sfenksi için "Marguerite'e benzetilir" dendi. Ter
+    Brugghen'in giysisi "tiyatro kostümü" değil, "eski moda kostüm" diye geçiyor. Reni metninde Caravaggio'nun
+    çizmediği bir konuya Caravaggio karşılaştırması yapılmadı.
+  - Eser atfı değişmedi.
+- **Hazır ayrıntılardan gelen kırpımlar:** 289 sanatçı ve 338 konu kırpımı rehberli incelemenin metniyle açılır. O
+  metinler zaten çoğunlukla bilgi veriyor (hikâye, teknik, sipariş), bu turda değiştirilmedi.
+- Sürüm 1.90.1. Veri dosyası telefonda önbellekten okunduğu için yeni metinlerin gelmesi sürüm artışına bağlı.
+
