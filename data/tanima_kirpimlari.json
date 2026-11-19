@@ -1220,6 +1220,32 @@
     "h": 0.32
    }
   ],
+  "cain-and-abel": [
+   {
+    "madde": 0,
+    "anahtar": "Q26722830",
+    "sanatci": "bartolomeo-manfredi",
+    "ad": "Saldıran Kabil",
+    "x": 0.15,
+    "y": 0.1,
+    "w": 0.8,
+    "h": 0.7,
+    "metin": "Sopasını kaldırmış Kabil ve yere yıkılmış, korkuyla bakan Habil. Tekvin 4'e göre Âdem ile Havva'nın oğulları Kabil çiftçi, Habil çobandı; Tanrı Habil'in sunusunu kabul edip Kabil'inkini reddedince Kabil kıskançlıkla kardeşini öldürdü. Bu, Kutsal Kitap'taki ilk cinayettir. Manfredi'nin çapraz düzeni ve sert ışığı Caravaggio'nun dilidir.",
+    "gorsel": "6f597667a99bbaf9"
+   },
+   {
+    "madde": 1,
+    "anahtar": "odilon-redon|Cain and Abel",
+    "sanatci": "odilon-redon",
+    "ad": "Kaldırılan sopa",
+    "x": 0.15,
+    "y": 0.0,
+    "w": 0.75,
+    "h": 0.45,
+    "metin": "Yukarıda havaya kaldırılmış kalın sopa. Kutsal Kitap silahı adlandırmaz; ressamlar sopa, taş, çene kemiği ya da tarım aleti gibi farklı seçenekler kullandı. Redon bu gravürde ayrıntıyı atar; karanlık, kıvrımlı çizgilerle sahneyi bir kâbusa çevirir. Redon'un siyah beyaz işleri Sembolizmin rüya dünyasının örneğidir.",
+    "gorsel": "e5b9f53a379bf006"
+   }
+  ],
   "calling-of-saint-matthew": [
    {
     "madde": 0,
@@ -3193,6 +3219,68 @@
     "h": 0.25,
     "metin": "Yerde yatan şişmiş hayvan ölüsü: dağda karşılaştıkları ölü katır. Romanın 1. kitabında Don Kişot ve Sancho, Sierra Morena dağlarında ölmüş bir katır ve sahibine ait bir bavul bulur; bu buluş onları yeni bir maceraya sürükler. Daumier sahneyi ağır kahverengi tonlar ve hızlı, kaba fırça darbeleriyle anlatır.",
     "gorsel": "a36cc0b0475bf0de"
+   }
+  ],
+  "don-quixote-and-sancho-panza": [
+   {
+    "madde": 0,
+    "anahtar": "Q8561671",
+    "sanatci": "honore-daumier",
+    "ad": "Mızraklı sıska şövalye",
+    "x": 0.4,
+    "y": 0.0,
+    "w": 0.35,
+    "h": 0.5,
+    "metin": "Mızrağını göğe dikmiş, uzun ve sıska şövalye. Daumier, Don Kişot'u yüzsüz, neredeyse soyut bir siluet olarak çizer; böylece figür bir kişi olmaktan çok, hayalciliğin bir simgesine dönüşür. Daumier bu konuya hayatının son on beş yılında defalarca döndü; Cervantes'in kahramanını kendi idealist ama başarısız sanatçı kimliğiyle özdeşleştirdiği de düşünülür.",
+    "gorsel": "4071d31a27ca21ec"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q8561671",
+    "sanatci": "honore-daumier",
+    "ad": "Zayıf at Rocinante",
+    "x": 0.2,
+    "y": 0.35,
+    "w": 0.75,
+    "h": 0.55,
+    "metin": "Kemikleri sayılan, kırık hatlı beyaz at: Rocinante. Romanda Don Kişot atının adını dört gün düşünüp bulur; ad İspanyolca 'rocín' (yorgun beygir) sözcüğünden gelir ve 'eskiden beygir olan' anlamına gelen bir şakadır. Daumier atı birkaç kalın, hızlı fırça darbesiyle kurar; bu çizgici, karikatüre yakın teknik onun imzasıdır.",
+    "gorsel": "4071d31a27ca21ec"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q104530565",
+    "sanatci": "honore-daumier",
+    "ad": "Eşekteki Sancho",
+    "x": 0.15,
+    "y": 0.25,
+    "w": 0.65,
+    "h": 0.65,
+    "metin": "Eşeğinin üstünde, şapkalı, tıknaz Sancho Panza. Cervantes'te Sancho, yoksul ama sağduyulu bir köylüdür; efendisinin ona bir ada valiliği vaat etmesiyle macerasına katılır. Daumier'nin bu resminde uzaktaki şövalye küçük bir siluettir; izleyici sahneye Sancho'nun arkasından bakar.",
+    "gorsel": "fd2be0680956abb9"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q18686024",
+    "sanatci": "honore-daumier",
+    "ad": "Uzun ve kısa karşıtlığı",
+    "x": 0.05,
+    "y": 0.25,
+    "w": 0.9,
+    "h": 0.6,
+    "metin": "Solda uzaktaki ince, dik şövalye; sağda iri, ağır Sancho. İkili arasındaki fiziksel karşıtlık, idealizm ile pratik sağduyu arasındaki karşıtlığın görsel karşılığıdır. Daumier bu tuvallerde ayrıntıyı atar; yalnızca birkaç geniş biçim ve kahverengi tonlarla ruh hâlini anlatır. Bu yaklaşım sonraki modern ressamları etkiledi.",
+    "gorsel": "efb801a9d0a4f2e4"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q8561671",
+    "sanatci": "honore-daumier",
+    "ad": "Güneşli kırsal",
+    "x": 0.0,
+    "y": 0.55,
+    "w": 1.0,
+    "h": 0.4,
+    "metin": "Altta sarı ve kırmızı lekelerle çizilmiş çorak, güneşli bir kırsal. Roman La Mancha'nın kurak ovalarında geçer. Daumier manzarayı ayrıntısız, birkaç renk şeridiyle kurar; bu sade arka plan figürlerin siluetini öne çıkarır. Resim Münih'teki Neue Pinakothek'tedir.",
+    "gorsel": "4071d31a27ca21ec"
    }
   ],
   "dormition-of-the-virgin": [
@@ -6658,6 +6746,56 @@
     "h": 0.33
    }
   ],
+  "prometheus": [
+   {
+    "madde": 0,
+    "anahtar": "Q96410427",
+    "sanatci": "salvator-rosa",
+    "ad": "Kayaya zincirli beden",
+    "x": 0.05,
+    "y": 0.1,
+    "w": 0.8,
+    "h": 0.7,
+    "metin": "Sarp bir kayaya zincirlenmiş, çırpınan çıplak beden. Mite göre titan Prometheus, tanrılardan ateşi çalıp insanlara verdi; Zeus onu Kafkas dağlarında bir kayaya zincirletip cezalandırdı. Salvator Rosa'nın bu tuvali Roma'daki Corsini Galerisi'ndedir; dramatik çapraz düzen ve yabani manzara onu Romantizmin öncüsü yapar.",
+    "gorsel": "998b0151d0469f15"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q96410427",
+    "sanatci": "salvator-rosa",
+    "ad": "Ciğer yiyen kartal",
+    "x": 0.35,
+    "y": 0.2,
+    "w": 0.5,
+    "h": 0.4,
+    "metin": "Prometheus'un göğsüne konmuş, ciğerini parçalayan kara kartal. Hesiodos'a göre Zeus'un kartalı her gün gelip Prometheus'un ciğerini yer, ciğer her gece yeniden büyürdü; işkence Herkül kartalı öldürene kadar sürdü. Rosa yaranın kanını ve kasılan bedeni sert bir gerçekçilikle gösterir.",
+    "gorsel": "998b0151d0469f15"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q127420355",
+    "sanatci": "gustave-moreau",
+    "ad": "Meydan okuyan duruş",
+    "x": 0.25,
+    "y": 0.05,
+    "w": 0.55,
+    "h": 0.6,
+    "metin": "Kayaya oturmuş, başını dik tutan, ufka bakan Prometheus; başının üstünde küçük bir alev. Moreau onu acıyla kıvranan bir kurban olarak değil, sabırla direnen bir kahraman olarak gösterir; alevli baş, insanlığa getirdiği ateşi ve aklı simgeler. Bu yorum Prometheus'u 19. yüzyılda bir özgürlük ve isyan simgesi yapan Romantik okumaya yakındır.",
+    "gorsel": "0c04a03896e4e0c8"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q16933788",
+    "sanatci": "dirck-van-baburen",
+    "ad": "Zincirleyen Vulcanus ve Merkür",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.95,
+    "h": 0.5,
+    "metin": "Prometheus'u zincirleyen yaşlı demirci Vulcanus ve arkada kanatlı şapkalı, asalı Merkür. Aiskhylos'un 'Zincire Vurulmuş Prometheus' tragedyasında Hephaistos bu işi gönülsüzce yapar. Baburen bu tuvali Utrecht'e döndükten hemen sonra yaptı; Amsterdam'daki Rijksmuseum'dadır. Kısaltılmış yatık beden ve sert ışık Caravaggio'dan gelir.",
+    "gorsel": "15e7d2a81a7ac6bb"
+   }
+  ],
   "prophets": [
    {
     "madde": 0,
@@ -6694,6 +6832,68 @@
     "h": 0.4,
     "metin": "Sağda Yunus'u yutan büyük balığın başı. Yunus üç gün balığın karnında kaldıktan sonra kurtuldu; Hristiyanlar bunu İsa'nın üç gün mezarda kalıp dirilmesinin habercisi saydı. Bu yüzden Yunus, sunağın tam üstüne yerleştirildi. Kavisli tavana arkaya yaslanmış gibi boyanan bu figürü Vasari, Michelangelo'nun kısaltma ustalığının doruğu diye övdü.",
     "gorsel": "ba7a5591602b495d"
+   }
+  ],
+  "pygmalion-and-galatea": [
+   {
+    "madde": 0,
+    "anahtar": "Q109562503",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Heykeltıraş atölyesi",
+    "x": 0.0,
+    "y": 0.55,
+    "w": 0.8,
+    "h": 0.43,
+    "metin": "Yerde tokmak, ahşap sehpa ve arkada duvardaki maskeler: bir heykeltıraş atölyesi. Gérôme hem ressam hem heykeltıraştı; bu yüzden atölye ayrıntılarını iyi bilirdi. Duvarda asılı kalkan ve maske gibi nesneler onun kendi atölyesinden alınmış olabilir. Fotoğraf gibi pürüzsüz yüzey Fransız akademizminin tipik özelliğidir.",
+    "gorsel": "776eb36601f498cb"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q109562503",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Canlanan heykel",
+    "x": 0.3,
+    "y": 0.15,
+    "w": 0.35,
+    "h": 0.65,
+    "metin": "Kaidenin üstünde, aşağısı hâlâ beyaz mermer, belden yukarısı pembe ten olmuş kadın: Galatea. Ovidius'a göre Kıbrıslı heykeltıraş Pygmalion, kendi yaptığı fildişi kadın heykeline âşık oldu; Venüs onun duasını kabul edip heykeli canlandırdı. Gérôme dönüşümü tek bir anda, renk geçişiyle gösterir.",
+    "gorsel": "776eb36601f498cb"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q109562503",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Heykeli öpen heykeltıraş",
+    "x": 0.4,
+    "y": 0.15,
+    "w": 0.3,
+    "h": 0.45,
+    "metin": "Heykele sarılıp onu öpen Pygmalion. Gérôme bu sahnenin iki farklı açıdan versiyonunu yaptı; biri heykeli önden, öbürü arkadan gösterir. Bu tuval New York'taki Metropolitan Müzesi'ndedir. Hikâye, sanatçının eserine hayat verme hayalinin simgesi olarak 19. yüzyılda çok sevildi.",
+    "gorsel": "776eb36601f498cb"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q111577849",
+    "sanatci": "agnolo-bronzino",
+    "ad": "Tütsü yanan sunak",
+    "x": 0.3,
+    "y": 0.05,
+    "w": 0.35,
+    "h": 0.55,
+    "metin": "Ortada ateşi yanan, boğa başıyla süslü sunak ve önünde diz çöküp dua eden Pygmalion. Ovidius'ta Pygmalion, Venüs'ün bayramında sunakta kurban sunup heykeli gibi bir eş diler. Bu küçük pano uzun süre Pontormo'ya atfedildi, bugün genç Bronzino'ya verilir; heykel ve sunak kabartmaları Floransa Maniyerizminin antik merakını gösterir.",
+    "gorsel": "2aacd99856d05ce7"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q109562503",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Havada Kupid",
+    "x": 0.65,
+    "y": 0.15,
+    "w": 0.25,
+    "h": 0.25,
+    "metin": "Sağ üstte bulutlar arasında ok çeken Kupid. Venüs'ün oğlu Kupid, aşkın ve dolayısıyla mucizenin nedenidir. Gérôme onu da yarı saydam, hayaletimsi bir görüntü olarak çizer; böylece mitolojik figür gerçekçi atölye ortamıyla tezat oluşturur.",
+    "gorsel": "776eb36601f498cb"
    }
   ],
   "queen-of-sheba": [
@@ -7231,6 +7431,70 @@
     "h": 0.6,
     "metin": "Yarı çıplak, kemikleri sayılan, kırışık tenli yaşlı beden. Barok ressamlar havarileri ideal kahramanlar değil, yoksul balıkçılar olarak gösterdi: Andreas da Celile Gölü'nde balıkçılık yapan biriydi. Ribera bu figürleri Napoli sokaklarındaki yaşlı modellerden boyardı; sert ışıkta parlayan buruşuk deri onun imzasıdır.",
     "gorsel": "540cd081aa444f1c"
+   }
+  ],
+  "saint-anthony-abbot": [
+   {
+    "madde": 0,
+    "anahtar": "Q28229525",
+    "sanatci": "mattia-preti",
+    "ad": "Ak sakallı keşiş",
+    "x": 0.25,
+    "y": 0.15,
+    "w": 0.5,
+    "h": 0.5,
+    "metin": "Kapüşonlu kaba cübbe içinde, uzun ak sakallı yaşlı keşiş. Mısırlı Antonios (yaklaşık 251–356) mirasını yoksullara dağıtıp çöle çekildi; Hristiyan manastır yaşamının kurucusu sayılır. Hayatını İskenderiye piskoposu Athanasios yazdı. Mattia Preti'nin karanlık fondan sert ışıkla çıkan yaşlı yüzleri, Caravaggio sonrası Napoli resminin dilidir.",
+    "gorsel": "5c39f23ce2a309e6"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q28229525",
+    "sanatci": "mattia-preti",
+    "ad": "Elinde kitap",
+    "x": 0.15,
+    "y": 0.6,
+    "w": 0.7,
+    "h": 0.3,
+    "metin": "İki eliyle tuttuğu açık kitap. Antonios kendisi okuma yazma bilmediği hâlde Kutsal Kitap'ı ezbere bildiği anlatılır; kitap onun çöldeki dua ve tefekkür hayatını simgeler. Bu yuvarlak tuval Preti'nin Malta'da Kudüs Aziz Yuhanna Şövalyeleri için çalıştığı yıllarla ilişkilendirilir.",
+    "gorsel": "5c39f23ce2a309e6"
+   }
+  ],
+  "saint-apollonia": [
+   {
+    "madde": 0,
+    "anahtar": "Q3948792",
+    "sanatci": "piero-della-francesca",
+    "ad": "Kerpeten",
+    "x": 0.25,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.3,
+    "metin": "Elinde dimdik tuttuğu kerpeten. İskenderiyeli Apollonia, 249'da Hristiyanlara karşı çıkan ayaklanmada dişleri kırılıp sökülerek işkence gördü; sonra kendini ateşe attı. Bu yüzden diş ağrısı çekenlerin ve diş hekimlerinin koruyucusu oldu. Piero'nun bu küçük panosu bir sunak dizisinden gelir; sakin, heykelsi duruş onun imzasıdır.",
+    "gorsel": "036be74f262779ec"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q6034540",
+    "sanatci": "francisco-de-zurbaran",
+    "ad": "Palmiye dalı",
+    "x": 0.25,
+    "y": 0.1,
+    "w": 0.55,
+    "h": 0.45,
+    "metin": "Bir elinde kerpeten, öbüründe göğsüne yasladığı şehitlik palmiyesi. Zurbarán'ın genç azize figürleri, Sevilla'daki manastırlar için dizi hâlinde yapılırdı; her biri kendi çağının şık bir İspanyol hanımı gibi giydirilir. Tuvalin altındaki 'S. POLONIA' yazısı azizenin adıdır; bugün Louvre'dadır.",
+    "gorsel": "64cef6151b15f282"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q27830965",
+    "sanatci": "artemisia-gentileschi",
+    "ad": "Göğe bakan genç kadın",
+    "x": 0.15,
+    "y": 0.0,
+    "w": 0.75,
+    "h": 0.55,
+    "metin": "Göğe bakan, elini kaldırmış genç kadın. Efsanede Apollonia yaşlı bir diyakoz olarak anlatılır, ama Rönesans'tan sonra ressamlar onu öbür bakire şehitler gibi genç ve güzel gösterdi. Artemisia'nın geç döneminde Napoli'de yaptığı bu tuval, onun dindar yarım boy kadın figürlerinin örneğidir.",
+    "gorsel": "a896013b6623e849"
    }
   ],
   "saint-augustine": [
