@@ -554,6 +554,44 @@
     "gorsel": "0f2599c175f47753"
    }
   ],
+  "apollo-and-the-muses": [
+   {
+    "madde": 1,
+    "anahtar": "Q20538816",
+    "sanatci": "claude-lorrain",
+    "ad": "Dokuz Musa",
+    "x": 0.55,
+    "y": 0.38,
+    "w": 0.45,
+    "h": 0.3,
+    "metin": "Sağda tepenin üstünde Apollon ve çevresinde oturan dokuz Musa. Musalar, Zeus ile Hafıza tanrıçası Mnemosyne'nin kızlarıdır; şiirin, müziğin, tarihin ve bilimin ilham perileridir. Claude bu son büyük eserlerinden birini Yunanistan'daki Helikon Dağı'nda geçen bir sahne olarak kurar; asıl konu yine geniş, ışıklı manzaradır.",
+    "gorsel": "fffcd1eab2f1c026"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q20538816",
+    "sanatci": "claude-lorrain",
+    "ad": "Tapınak ve defneler",
+    "x": 0.55,
+    "y": 0.0,
+    "w": 0.45,
+    "h": 0.4,
+    "metin": "Tepede yuvarlak bir antik tapınak ve ağaçlar. Bu yuvarlak tapınak, Roma yakınlarındaki Tivoli'de bulunan Sibil Tapınağı'nın serbest bir kopyasıdır; Claude bu yapıyı birçok resminde kullandı. Antik yapılarla süslü ideal manzaralar, 17. yüzyılda Roma'daki Grand Tour gezginlerinin çok sevdiği bir türdü.",
+    "gorsel": "fffcd1eab2f1c026"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q20538816",
+    "sanatci": "claude-lorrain",
+    "ad": "Pınar ve kuğular",
+    "x": 0.4,
+    "y": 0.7,
+    "w": 0.4,
+    "h": 0.28,
+    "metin": "Altta kuğuların yüzdüğü pınar. Mite göre Helikon'daki Hippokrene pınarı, kanatlı at Pegasos'un toynağını vurmasıyla fışkırmıştı; suyunu içen şairler ilham bulurdu. Kuğu da Apollon'un kutsal kuşudur. Claude'un yumuşak, altın akşam ışığı sahneyi şiirsel bir düşe çevirir.",
+    "gorsel": "fffcd1eab2f1c026"
+   }
+  ],
   "apostles": [
    {
     "madde": 0,
@@ -860,6 +898,44 @@
     "h": 0.16
    }
   ],
+  "battle-of-the-sea-gods": [
+   {
+    "madde": 0,
+    "anahtar": "andrea-mantegna|Battle of the Sea Gods - left portion",
+    "sanatci": "andrea-mantegna",
+    "ad": "Dövüşen deniz yaratıkları",
+    "x": 0.0,
+    "y": 0.2,
+    "w": 0.55,
+    "h": 0.7,
+    "metin": "Balık kuyruklu, kaslı tritonlar ve deniz atlarına binmiş figürler birbirine saldırıyor. Mantegna bu iki parçalı dev gravürü 1470'lerin sonunda yaptı; Rönesans'ın en büyük ve en etkili baskılarındandır. Antik bir lahit kabartmasından esinlenen bu yatay friz düzeni, Mantegna'nın antik Roma sanatına duyduğu tutkunun ürünüdür.",
+    "gorsel": "aaef156da5708cc3"
+   },
+   {
+    "madde": 1,
+    "anahtar": "andrea-mantegna|Battle of the Sea Gods - right portion",
+    "sanatci": "andrea-mantegna",
+    "ad": "Silah olarak kemik ve balık",
+    "x": 0.4,
+    "y": 0.0,
+    "w": 0.6,
+    "h": 0.55,
+    "metin": "Tritonların ellerinde silah olarak kullanılan sopalar, balıklar ve kafatasları. Bu kaba silahlar, kahramanca bir savaş değil, kıskançlık yüzünden çıkan anlamsız bir kavga olduğunu düşündürür. Dürer genç yaşta bu gravürü elle kopyaladı; Mantegna'nın baskıları böylece Kuzey Avrupa'ya İtalyan Rönesansı'nı taşıdı.",
+    "gorsel": "a2e20026970b63ef"
+   },
+   {
+    "madde": 3,
+    "anahtar": "andrea-mantegna|Battle of the Sea Gods - left portion",
+    "sanatci": "andrea-mantegna",
+    "ad": "Neptün heykeli ve INVID levhası",
+    "x": 0.55,
+    "y": 0.05,
+    "w": 0.25,
+    "h": 0.35,
+    "metin": "Kaide üzerinde, sırtı kavgaya dönük duran Neptün heykeli; yanında 'INVID' yazılı levha. Deniz tanrısı bu anlamsız savaşı görmezden gelir. Levhadaki yazı Latince Invidia'nın, yani Haset'in kısaltmasıdır: friz, kıskançlığın tanrıları bile birbirine düşürdüğünü anlatan bir alegori olarak okunur.",
+    "gorsel": "aaef156da5708cc3"
+   }
+  ],
   "beer-street-and-gin-lane": [
    {
     "madde": 1,
@@ -1001,6 +1077,44 @@
     "h": 0.55,
     "metin": "Ortada sakin, direnmeyen İsa; çevresinde onu yakalayan askerler ve havaya kalkan kollar. İncillere göre İsa karşı koymadı ve 'Bunların hepsi, peygamberlerin yazdıkları yerine gelsin diye oldu' dedi; öğrencileri ise kaçtı. Van Dyck bu tuvali gençken, Rubens'in atölyesindeyken yaptı; Rubens resmi kendi koleksiyonunda tuttu.",
     "gorsel": "bfcdb59b0e2f7a0d"
+   }
+  ],
+  "birth-of-saint-john-the-baptist": [
+   {
+    "madde": 0,
+    "anahtar": "Q11789743",
+    "sanatci": "jan-van-eyck",
+    "ad": "Yatakta Elizabet",
+    "x": 0.25,
+    "y": 0.15,
+    "w": 0.5,
+    "h": 0.22,
+    "metin": "Kırmızı perdeli yatakta yatan yaşlı Elizabet ve ona bakan kadınlar. Luka İncili'ne göre Elizabet ve kocası Zekeriya çok yaşlıydı ve çocukları yoktu; Cebrail Zekeriya'ya bir oğulları olacağını müjdeledi. Bu sayfa 'Torino-Milano Saatleri' adlı dua kitabındandır ve Jan van Eyck'e ya da atölyesine verilir; ayrıntılı iç mekân onun dünyasını gösterir.",
+    "gorsel": "2fd3936f01c54d94"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18602467",
+    "sanatci": "artemisia-gentileschi",
+    "ad": "Bebeği yıkayan kadınlar",
+    "x": 0.3,
+    "y": 0.4,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Ortada bebeği leğende yıkayan ve kurulayan kadınlar. Doğum sahneleri, ressamlara kadınların gündelik dünyasını gösterme fırsatı verirdi. Artemisia bu tuvali Napoli'de, İspanya kralı IV. Felipe için Vaftizci Yahya'nın hayatını anlatan bir dizi için yaptı. Kadınların doğal hareketleri ve yumuşak ışık, onun geç döneminin daha sakin dilidir.",
+    "gorsel": "73ddcb97cf25d10b"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18602467",
+    "sanatci": "artemisia-gentileschi",
+    "ad": "Adı yazan Zekeriya",
+    "x": 0.0,
+    "y": 0.2,
+    "w": 0.3,
+    "h": 0.6,
+    "metin": "Solda karanlıkta oturan, yazı yazan yaşlı adam: Zekeriya. Luka'ya göre melek müjdesine inanmadığı için dilsiz kaldı; çocuğun adını sorduklarında bir tablete 'Adı Yahya'dır' yazdı ve dili çözüldü. Bu ayrıntı, doğum sahnesini ad koyma sahnesiyle birleştirir.",
+    "gorsel": "73ddcb97cf25d10b"
    }
   ],
   "birth-of-the-virgin": [
@@ -2482,6 +2596,68 @@
     "y": 0.8,
     "w": 0.3,
     "h": 0.12
+   }
+  ],
+  "death-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q597114",
+    "sanatci": "caravaggio",
+    "ad": "Yatakta yatan Meryem",
+    "x": 0.35,
+    "y": 0.55,
+    "w": 0.6,
+    "h": 0.3,
+    "metin": "Kırmızı giysili, ayakları çıplak, şişkin karınlı ölü Meryem. Caravaggio bu tuvali Roma'daki Santa Maria della Scala kilisesi için yaptı, ama rahipler reddetti: Meryem'i ideal bir figür değil, sıradan bir ölü kadın gibi göstermişti; modelin bir fahişe olduğu söylentisi de çıktı. Resmi Rubens'in tavsiyesiyle Mantova dükü satın aldı; bugün Louvre'dadır.",
+    "gorsel": "262529a04b6b9049"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q597114",
+    "sanatci": "caravaggio",
+    "ad": "Yas tutan havariler",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.75,
+    "h": 0.3,
+    "metin": "Yatağın çevresinde başlarını eğmiş, yüzlerini elleriyle örten havariler. Gelenek, Meryem ölmeden önce havarilerin dünyanın dört bir yanından mucizevi biçimde başucuna toplandığını anlatır. Caravaggio bu sahneyi hiçbir hale, melek ya da mucize göstermeden, sade bir yas olarak kurar.",
+    "gorsel": "262529a04b6b9049"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3210847",
+    "sanatci": "petrus-christus",
+    "ad": "Kutsal su taşıyan rahip",
+    "x": 0.75,
+    "y": 0.4,
+    "w": 0.25,
+    "h": 0.4,
+    "metin": "Sağda beyaz rahip giysisi içinde kutsal su kabı taşıyan figür. Kuzey Avrupa'da Meryem'in ölümü, kendi çağlarının ölüm döşeği ayinleriyle gösterilirdi: dualar, kutsal su, mumlar. Petrus Christus, Bruges'te Jan van Eyck'in izinden giden ressamdır; açık kapıdan görünen manzara ve derin oda onun perspektif ilgisini gösterir.",
+    "gorsel": "03c4a2b0af7bd169"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3210847",
+    "sanatci": "petrus-christus",
+    "ad": "Genç Yuhanna",
+    "x": 0.3,
+    "y": 0.55,
+    "w": 0.25,
+    "h": 0.4,
+    "metin": "Ön planda oturan genç, sakalsız havari: Yuhanna. İsa çarmıhta Meryem'i Yuhanna'ya emanet etmişti; bu yüzden Meryem'in ölüm sahnelerinde Yuhanna hep yatağa en yakın kişidir. Bazen elinde, bir meleğin Meryem'e ölümünü haber verirken getirdiği hurma dalını tutar.",
+    "gorsel": "03c4a2b0af7bd169"
+   },
+   {
+    "madde": 4,
+    "anahtar": "albrecht-durer|The Death of the Virgin, from the The Life of the Virgin",
+    "sanatci": "albrecht-durer",
+    "ad": "Mum ve ayin eşyaları",
+    "x": 0.3,
+    "y": 0.35,
+    "w": 0.4,
+    "h": 0.3,
+    "metin": "Yatağın başında Meryem'in eline tutuşturulan yanan mum ve ayini yöneten havari. Kuzey Avrupa'da ölmekte olan birinin eline mum vermek bir gelenekti: Mum, ruhun Tanrı'ya giden yolunu aydınlatırdı. Dürer bu tahta baskıyı 'Meryem'in Hayatı' dizisi için yaptı; perspektifle kurulmuş derin oda, İtalya'dan öğrendiklerini gösterir.",
+    "gorsel": "b5ef42c4dd048d3e"
    }
   ],
   "denial-of-saint-peter": [
@@ -6641,6 +6817,44 @@
     "h": 0.65,
     "metin": "Tonozlu küçük bir hücrede masasına eğilmiş, yazan Augustinus; yerde buruşturulup atılmış kâğıtlar. Bu küçük pano, Botticelli'nin Savonarola'nın etkisi altındaki geç döneminden kalma olduğu düşünülür. Kâğıt atıkları, düşüncenin zorluğunu anlatan şaşırtıcı derecede gündelik bir ayrıntıdır. Sert, keskin hatlar onun geç döneminin gergin üslubudur.",
     "gorsel": "c85deed84126fbe4"
+   }
+  ],
+  "saint-barbara": [
+   {
+    "madde": 0,
+    "anahtar": "Q3464466",
+    "sanatci": "jan-van-eyck",
+    "ad": "Yapım hâlindeki kule",
+    "x": 0.15,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.5,
+    "metin": "Arkada yükselen dev Gotik kule ve çevresinde çalışan işçiler. Altın Efsane'ye göre Barbara'nın putperest babası onu bir kuleye kapattı; Barbara gizlice Hristiyan oldu ve kuleye Teslis'i anmak için üçüncü bir pencere açtırdı. Van Eyck'in bu küçük çalışması yarım kalmıştır: altlık üzerine yalnız fırçayla çizilmiş ince desen, onun boyamadan önceki hazırlık yöntemini gösterir.",
+    "gorsel": "9d0675fdff05850d"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q18508786",
+    "sanatci": "robert-campin",
+    "ad": "Okuyan genç kadın",
+    "x": 0.0,
+    "y": 0.45,
+    "w": 0.7,
+    "h": 0.5,
+    "metin": "Şöminenin önünde, yeşil elbisesiyle kitap okuyan genç kadın. Bu pano Werl Sunağı'nın sağ kanadıdır; Barbara burada şehit değil, Flaman bir burjuva evinde sakin bir okuyucu olarak gösterilir. Pencereden görünen yapım hâlindeki kule onu tanıtır. Campin'in gündelik eşyalarla dolu gerçekçi iç mekânları Erken Hollanda resminin başlangıcıdır.",
+    "gorsel": "c4d0583687318760"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q19911426",
+    "sanatci": "lucas-cranach-yasl",
+    "ad": "Kılıç kaldıran baba",
+    "x": 0.45,
+    "y": 0.15,
+    "w": 0.55,
+    "h": 0.6,
+    "metin": "Diz çöken Barbara'nın başını kesmek için kılıcını kaldıran babası Dioskoros. Altın Efsane'ye göre babası onu kendi eliyle öldürdü; dönüşte gökten inen bir yıldırım onu çarptı. Bu yüzden Barbara ani ölüme, yıldırıma ve sonra top ateşine karşı koruyucu oldu; topçuların ve madencilerin azizesidir. Cranach'ın parlak, desenli giysileri ve sert yüzleri bu erken döneminin özelliğidir.",
+    "gorsel": "3af38f5453dda144"
    }
   ],
   "saint-catherine": [
