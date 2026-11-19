@@ -2024,6 +2024,44 @@
     "gorsel": "e5b9f53a379bf006"
    }
   ],
+  "calling-of-peter-and-andrew": [
+   {
+    "madde": 0,
+    "anahtar": "Q4015930",
+    "sanatci": "duccio-di-buoninsegna",
+    "ad": "Teknedeki iki balıkçı",
+    "x": 0.35,
+    "y": 0.25,
+    "w": 0.6,
+    "h": 0.6,
+    "metin": "Teknede ağ tutan iki balıkçı kardeş: Petrus (Simun) ve Andreas. Matta İncili'ne göre İsa Celile Gölü kıyısında yürürken ağ atan bu iki kardeşi gördü ve 'Ardımdan gelin, sizi insan tutan balıkçılar yapacağım' dedi; onlar da ağlarını bırakıp onu izlediler. Bu pano Duccio'nun Siena katedrali Maestà sunağından gelir; bugün Washington'daki National Gallery'dedir.",
+    "gorsel": "3f963c6d06301cf3"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q4015930",
+    "sanatci": "duccio-di-buoninsegna",
+    "ad": "Çağıran İsa",
+    "x": 0.0,
+    "y": 0.15,
+    "w": 0.3,
+    "h": 0.65,
+    "metin": "Solda kayalık kıyıda duran, elini kaldırıp kardeşleri çağıran haleli İsa. Duccio'nun altın zemini, figürlerin bulunduğu yeri gerçek bir manzara olmaktan çıkarıp kutsal, zamansız bir mekâna dönüştürür. Ancak teknenin hacmi ve suyun yeşil dokusu, Duccio'nun Bizans kalıplarına yeni bir gerçeklik kattığını gösterir.",
+    "gorsel": "3f963c6d06301cf3"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q4015930",
+    "sanatci": "duccio-di-buoninsegna",
+    "ad": "Ağ ve balıklar",
+    "x": 0.4,
+    "y": 0.7,
+    "w": 0.45,
+    "h": 0.25,
+    "metin": "Teknenin yanında suya sarkan ağ ve içinde balıklar. Balık, ilk Hristiyanların gizli simgesiydi: Yunanca 'ikhthys' (balık) sözcüğünün harfleri 'İsa Mesih, Tanrı'nın Oğlu, Kurtarıcı' ifadesinin baş harfleri olarak okunurdu. 'İnsan tutan balıkçı' imgesi de havarilerin görevini anlatır.",
+    "gorsel": "3f963c6d06301cf3"
+   }
+  ],
   "calling-of-saint-matthew": [
    {
     "madde": 0,
@@ -2068,6 +2106,44 @@
     "y": 0.001,
     "w": 0.32,
     "h": 0.336
+   }
+  ],
+  "cephalus-and-procris": [
+   {
+    "madde": 0,
+    "anahtar": "benjamin-west|The Death of Procris",
+    "sanatci": "benjamin-west",
+    "ad": "Yaralı yatan kadın",
+    "x": 0.05,
+    "y": 0.4,
+    "w": 0.8,
+    "h": 0.5,
+    "metin": "Ormanda göğsünden yaralı, yerde yatan beyaz giysili kadın: Prokris. Ovidius'a göre avcı Kephalos, ormanda dinlenirken serin rüzgâra ('Aura') seslenirdi; karısı Prokris bunun bir kadın adı olduğunu sanıp kıskançlıkla onu gizlice izledi. Kephalos çalılıktaki hışırtıyı bir hayvan sanıp mızrağını fırlattı ve karısını öldürdü.",
+    "gorsel": "58d86a816eebc709"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q9395635",
+    "sanatci": "paolo-veronese",
+    "ad": "Mızrak ve ok",
+    "x": 0.2,
+    "y": 0.55,
+    "w": 0.65,
+    "h": 0.4,
+    "metin": "Yerde yatan uzun mızrak. Ovidius'a göre bu mızrak, Prokris'in kocasına hediye ettiği, hedefini asla şaşırmayan büyülü bir mızraktı; böylece armağan ölüm aracına dönüştü. Veronese bu tuvali bir dizi için yaptı; bugün Strasbourg'dadır. Parlak sarı ipek ve canlı figürler onun Venedik renkçiliğidir.",
+    "gorsel": "d0d587f96bde5f97"
+   },
+   {
+    "madde": 2,
+    "anahtar": "benjamin-west|The Death of Procris",
+    "sanatci": "benjamin-west",
+    "ad": "Av köpeği",
+    "x": 0.7,
+    "y": 0.4,
+    "w": 0.3,
+    "h": 0.4,
+    "metin": "Sağda olayı izleyen av köpeği. Ovidius'a göre Kephalos'un köpeği Lailaps da, hiçbir avın kaçamadığı büyülü bir köpekti ve bir armağandı. West bu tuvalde sahneyi sakin, hüzünlü bir kır manzarasına yerleştirir; bu sükûnet Neoklasik resmin duygu anlayışıdır.",
+    "gorsel": "58d86a816eebc709"
    }
   ],
   "chariot-of-apollo": [
@@ -2526,6 +2602,82 @@
     "y": 0.04,
     "w": 0.3,
     "h": 0.36
+   }
+  ],
+  "christian-martyrs": [
+   {
+    "madde": 0,
+    "anahtar": "Q18748901",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Arenada dua edenler",
+    "x": 0.55,
+    "y": 0.45,
+    "w": 0.4,
+    "h": 0.35,
+    "metin": "Arenanın ortasında diz çöküp dua eden bir grup Hristiyan, çevrede binlerce seyirci. Roma imparatorluğunda Hristiyanlar zaman zaman suçlu olarak arenada vahşi hayvanlara atıldı. Gérôme bu tuvali 20 yılda tamamladı; Baltimore'daki Walters Sanat Müzesi'ndedir. Arka planda direklere bağlanmış yanan figürler de görülür.",
+    "gorsel": "2114a3b7418d882e"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q106704255",
+    "sanatci": "alexandre-cabanel",
+    "ad": "Ölmek üzere olan genç",
+    "x": 0.15,
+    "y": 0.3,
+    "w": 0.6,
+    "h": 0.45,
+    "metin": "Kalabalığın taşıdığı, ölü ya da ölmek üzere olan genç figür. Cabanel bu tuvalde bir şehidin cesedinin taşındığı dramatik bir sahne kurar. 19. yüzyıl akademik ressamları, erken Hristiyan şehitlerin hikâyelerini duygusal ve teatral sahneler olarak sık sık işledi.",
+    "gorsel": "f67831cc69b7ab65"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18748901",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Roma arenası",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.45,
+    "metin": "Arka planda yükselen Roma arenasının tribünleri ve dikilitaşlar. Gérôme antik mekânları arkeolojik ayrıntılarla resmetmeye özen gösterirdi; burada Circus Maximus'a benzer bir arena kurar. Sol tarafta kafesinden çıkan aslan, sahnenin dramatik gerilimini başlatır.",
+    "gorsel": "2114a3b7418d882e"
+   }
+  ],
+  "christopher-columbus": [
+   {
+    "madde": 0,
+    "anahtar": "eugene-delacroix|Christopher Columbus and His Son at La Rábida",
+    "sanatci": "eugene-delacroix",
+    "ad": "Manastırda denizci ve oğul",
+    "x": 0.55,
+    "y": 0.4,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Manastırın içinde, keşişlerle konuşan denizci ve yanında küçük oğlu. Kristof Kolomb, 1491'de oğlu Diego ile İspanya'daki La Rábida manastırına sığındı; manastırın rahipleri onun batıya yolculuk planını destekledi ve Kraliçe İsabel'le görüşmesine aracı oldu. Delacroix bu sahneyi, Kolomb'un hayatından iki tabloluk bir dizi için yaptı.",
+    "gorsel": "292bb0aafb370678"
+   },
+   {
+    "madde": 1,
+    "anahtar": "salvador-dali|The Discovery of America by Christopher Columbus",
+    "sanatci": "salvador-dali",
+    "ad": "Sancak taşıyan kaşif",
+    "x": 0.25,
+    "y": 0.5,
+    "w": 0.45,
+    "h": 0.4,
+    "metin": "Aşağıda sancak taşıyıp karaya ayak basan genç figür: Kolomb. Dalí bu dev tuvalde, Kolomb'u genç, çıplağa yakın bir figür olarak gösterir ve yukarıda sancakta Meryem'in yüzüne karısı Gala'nın yüzünü verir. Resim, Dalí'nin Katolik inanca döndüğü 'nükleer mistisizm' dönemindendir.",
+    "gorsel": "wikiart:https://uploads3.wikiart.org/images/salvador-dali/the-discovery-of-america-by-christopher-columbus-1959.jpg!HalfHD.jpg"
+   },
+   {
+    "madde": 2,
+    "anahtar": "salvador-dali|The Discovery of America by Christopher Columbus",
+    "sanatci": "salvador-dali",
+    "ad": "Sancaklar ve haçlar",
+    "x": 0.55,
+    "y": 0.0,
+    "w": 0.45,
+    "h": 0.55,
+    "metin": "Sağda göğe yükselen mızraklar, haçlar ve dalgalanan sancaklar. Dalí, Velázquez'in 'Breda'nın Teslimi' tablosundaki mızrak ormanına gönderme yapar. Gerçeküstücü ressam, İspanyol tarihini dini ve kişisel simgelerle dolu bir vizyona çevirir.",
+    "gorsel": "wikiart:https://uploads3.wikiart.org/images/salvador-dali/the-discovery-of-america-by-christopher-columbus-1959.jpg!HalfHD.jpg"
    }
   ],
   "circumcision-of-christ": [
@@ -3239,6 +3391,32 @@
     "h": 0.1
    }
   ],
+  "daedalus-and-icarus": [
+   {
+    "madde": 0,
+    "anahtar": "Q21721777",
+    "sanatci": "charles-le-brun",
+    "ad": "Kanat bağlayan baba",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.75,
+    "h": 0.45,
+    "metin": "Oğlunun koluna kanat bağlayan yaşlı Daidalos. Ovidius'a göre usta zanaatkâr Daidalos, Girit kralı Minos'un tutsağıydı; tüy ve mumdan iki çift kanat yapıp oğlu İkaros'la uçarak kaçtı. Oğlunu güneşe fazla yaklaşmaması için uyardı. Le Brun bu tuvali gençken, Poussin'in yanında Roma'da çalışırken yaptı.",
+    "gorsel": "17b9009ad9eff7f1"
+   },
+   {
+    "madde": 1,
+    "anahtar": "giulio-romano|Daedalus and Icarus",
+    "sanatci": "giulio-romano",
+    "ad": "Kanatlı iki figür",
+    "x": 0.1,
+    "y": 0.15,
+    "w": 0.85,
+    "h": 0.6,
+    "metin": "Kanatları açılmış, havada uçan iki figür: Daidalos ve İkaros. Ovidius'a göre İkaros babasının uyarısını dinlemedi; güneşe yaklaştıkça kanatlarındaki mum eridi ve denize düşüp öldü. Bu hikâye, ölçüsüzlüğün ve gençlik kibrinin cezası olarak çok sevildi. Giulio Romano bu çizimi Mantova'daki Palazzo del Te süslemeleri için yapmış olabilir.",
+    "gorsel": "541e8df51a2a4cca"
+   }
+  ],
   "danae": [
    {
     "madde": 1,
@@ -3612,6 +3790,44 @@
     "h": 0.3,
     "metin": "Ölümün öptüğü ya da ısırdığı, gözlerini kapatmış kadın yüzü. Baldung'un bu küçük panosunda ölüm âşık gibi davranır: aşk ile ölüm arasındaki bu karanlık bağ, Alman Rönesansı'nda sık işlendi. Pürüzsüz, mermer gibi beyaz ten ile koyu, kurumuş ceset arasındaki karşıtlık resmin etkisini kurar.",
     "gorsel": "b731f6ccb4c6138d"
+   }
+  ],
+  "death-of-caesar": [
+   {
+    "madde": 0,
+    "anahtar": "Q18749621",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Yerdeki ceset",
+    "x": 0.0,
+    "y": 0.65,
+    "w": 0.5,
+    "h": 0.33,
+    "metin": "Sol önde, beyaz togaya sarılı, yerde yatan ceset: Julius Caesar. MÖ 44'te 'Mart'ın İdus'u' günü Caesar, Pompeius'un tiyatrosundaki senato salonunda, aralarında Brutus ve Cassius'un da bulunduğu senatörlerin hançer darbeleriyle öldürüldü. Gérôme cesedi neredeyse unutulmuş bir şekilde köşeye koyar; bu cesur tercih resmin dramatik etkisini artırır.",
+    "gorsel": "63e39351e4a5e72b"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18749621",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Kılıç kaldıran senatörler",
+    "x": 0.25,
+    "y": 0.15,
+    "w": 0.45,
+    "h": 0.55,
+    "metin": "Ortada kılıçlarını havaya kaldırıp salondan çıkan, coşkulu senatörler. Gérôme cinayetin kendisini değil, hemen sonrasını gösterir: suikastçılar 'Özgürlük!' diye bağırarak dışarı çıkar. Bu tuval Baltimore'daki Walters Sanat Müzesi'ndedir; Gérôme'un tarihî olaylara getirdiği bu 'sonrası' yaklaşımı onu çağdaşlarından ayırır.",
+    "gorsel": "63e39351e4a5e72b"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18749621",
+    "sanatci": "jean-leon-gerome",
+    "ad": "Boş sıralar",
+    "x": 0.6,
+    "y": 0.25,
+    "w": 0.4,
+    "h": 0.5,
+    "metin": "Sağda karanlıkta kalmış, boşalmış senato sıraları ve devrilmiş bir koltuk. Antik kaynaklara göre Caesar, rakibi Pompeius'un heykelinin dibinde öldü. Gérôme'un sahnesi, bir film karesi gibi tek bir anı dondurur; bu sinematik yaklaşım sonraki tarih filmlerini etkiledi.",
+    "gorsel": "63e39351e4a5e72b"
    }
   ],
   "death-of-general-wolfe": [
@@ -4498,6 +4714,82 @@
     "gorsel": "cb026330e3328908"
    }
   ],
+  "ecstasy-of-saint-teresa": [
+   {
+    "madde": 0,
+    "anahtar": "Q18573176",
+    "sanatci": "giovanni-battista-piazzetta",
+    "ad": "Kendinden geçmiş rahibe",
+    "x": 0.15,
+    "y": 0.2,
+    "w": 0.75,
+    "h": 0.6,
+    "metin": "Gözleri kapalı, başı geriye düşmüş, kendinden geçmiş rahibe: Avilalı Teresa. İspanyol Karmelit rahibesi Teresa (1515–1582), otobiyografisinde bir meleğin altın bir mızrakla kalbini defalarca deldiğini ve bunun hem acı hem tanrısal bir tatlılık verdiğini anlatır. Bernini'nin Roma'daki ünlü heykeli bu vecdi tasvir eder; Piazzetta onu yakın planda, mahrem bir an olarak boyar.",
+    "gorsel": "67e071b1e096b827"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q28019368",
+    "sanatci": "sebastiano-ricci",
+    "ad": "Ok taşıyan melek",
+    "x": 0.2,
+    "y": 0.35,
+    "w": 0.6,
+    "h": 0.4,
+    "metin": "Teresa'ya doğru ok uzatan genç melek ve onu destekleyen figürler. Teresa'nın vecdi, Karşı Reform döneminde mistik deneyimin en ünlü örneği oldu; Teresa 1622'de aziz ilan edildi. Sebastiano Ricci bu sunak resmini Vicenza'daki bir kilise için yaptı; açık renkler ve uçuşan melekler Venedik Rokoko'sunun habercisidir.",
+    "gorsel": "604ab0691bee83ba"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q28019368",
+    "sanatci": "sebastiano-ricci",
+    "ad": "Bulutlar ve melekler",
+    "x": 0.05,
+    "y": 0.15,
+    "w": 0.75,
+    "h": 0.35,
+    "metin": "Yukarıda bulutlar arasında uçuşan melekler ve aşağı inen ışık. Bulutlar ve melekler, Teresa'nın deneyiminin gökten gelen bir lütuf olduğunu gösterir. Barok sanatçılar mistik vecdi, izleyiciyi duygusal olarak etkileyecek bir tiyatro sahnesi gibi kurardı.",
+    "gorsel": "604ab0691bee83ba"
+   }
+  ],
+  "edward-iii": [
+   {
+    "madde": 0,
+    "anahtar": "Q28038195",
+    "sanatci": "benjamin-west",
+    "ad": "Irmaktan geçen kral",
+    "x": 0.35,
+    "y": 0.3,
+    "w": 0.45,
+    "h": 0.6,
+    "metin": "Ortada, at üstünde, ordusunu ırmaktan geçiren zırhlı kral. 1346'da İngiltere kralı III. Edward, Fransa'da Somme nehrini Blanchetaque geçidinden geçerek Fransız ordusunun kuşatmasından kurtuldu; birkaç gün sonra Crécy'de büyük bir zafer kazandı. West bu tuvali Windsor Sarayı'nın taht salonu için kral III. George'a yaptığı Edward III dizisinden yaptı.",
+    "gorsel": "1be9d23d8b9e53b2"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q28027912",
+    "sanatci": "benjamin-west",
+    "ad": "Kara zırhlı prens",
+    "x": 0.35,
+    "y": 0.2,
+    "w": 0.35,
+    "h": 0.6,
+    "metin": "Ortada babasına sunulan genç prens: Kara Prens diye anılan Galler Prensi Edward. 16 yaşındaki prens Crécy Savaşı'nda (1346) öne çıktı; efsaneye göre zor durumda kalınca babası ona yardım göndermedi ve 'Bırakın çocuk mahmuzlarını kazansın' dedi. West, İngiliz Ortaçağ tarihini kahramanca bir tarih resmi diline taşır.",
+    "gorsel": "497885f71e82a798"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q28027912",
+    "sanatci": "benjamin-west",
+    "ad": "Dalgalanan sancaklar",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.45,
+    "metin": "Yukarıda dalgalanan Ortaçağ sancakları: İngiliz kraliyet arması ve Aziz Georgios haçı. Crécy'de (1346) İngiliz uzun yaycıları Fransız atlı şövalyelerini büyük kayıplara uğrattı; bu savaş piyadenin şövalyelere karşı üstünlüğünün ve Yüz Yıl Savaşları'nın en ünlü zaferlerinden biri oldu.",
+    "gorsel": "497885f71e82a798"
+   }
+  ],
   "embarkation-for-cythera": [
    {
     "madde": 0,
@@ -4993,6 +5285,44 @@
     "gorsel": "7dfc5ab2e6459a0d"
    }
   ],
+  "feast-in-the-house-of-simon": [
+   {
+    "madde": 0,
+    "anahtar": "Q15074981",
+    "sanatci": "paolo-veronese",
+    "ad": "Uzun sofrada yemek",
+    "x": 0.0,
+    "y": 0.15,
+    "w": 1.0,
+    "h": 0.55,
+    "metin": "Uzun bir sofrada yemek yiyen İsa ve kalabalık konuklar. Luka İncili'ne göre İsa Ferisi Simun'un evinde yemekteyken günahkâr bir kadın gelip ağlayarak ayaklarını gözyaşlarıyla yıkadı, saçıyla kuruladı ve güzel kokulu yağla meshetti. Veronese bu dev tuvali Venedik'te bir manastırın yemekhanesi için yaptı; bugün Milano'daki Brera'dadır.",
+    "gorsel": "8537fdfdf653424b"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q63871952",
+    "sanatci": "paolo-veronese",
+    "ad": "Ayaklara kapanan kadın",
+    "x": 0.6,
+    "y": 0.65,
+    "w": 0.38,
+    "h": 0.33,
+    "metin": "Sağ altta, yerde İsa'nın ayaklarına kapanmış uzun saçlı kadın. Batı geleneği bu kadını Mecdelli Meryem ile birleştirdi; uzun çözük saç ve yağ kavanozu bu yüzden Mecdelli Meryem'in işaretleri oldu. İsa, Simun'a 'Onun çok günahı bağışlandı, çünkü çok sevdi' der. Bu tuval Torino'daki Sabauda Galerisi'ndedir.",
+    "gorsel": "2a6290828bc93555"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q63871952",
+    "sanatci": "paolo-veronese",
+    "ad": "Kaşlarını çatan ev sahibi",
+    "x": 0.4,
+    "y": 0.35,
+    "w": 0.3,
+    "h": 0.35,
+    "metin": "Masadaki konuklar ve olayı onaylamayan bakışlarla izleyen ev sahibi. Luka'da Ferisi Simun, 'Bu adam peygamber olsaydı, kendisine dokunan kadının ne biçim bir kadın olduğunu bilirdi' diye içinden geçirir. Veronese sahneyi Venedik soylularının görkemli bir şöleni gibi, sütunlu bir sarayda kurar.",
+    "gorsel": "2a6290828bc93555"
+   }
+  ],
   "fete-galante": [
    {
     "madde": 0,
@@ -5093,6 +5423,44 @@
     "h": 0.3,
     "metin": "Üstte altın süslemeli kemerler, sütunlar ve parlak tavan. Hunt, Doğu mimarisinin ayrıntılarını titizlikle işler; kapı aralığından görünen avlu ve işçiler, tapınağın hâlâ yapım hâlinde olduğunu gösterir. Bu ayrıntı, eski tapınağın yerini alacak yeni bir inanca gönderme olarak yorumlanır.",
     "gorsel": "018195b790472e9a"
+   }
+  ],
+  "five-senses": [
+   {
+    "madde": 0,
+    "anahtar": "Q18574187",
+    "sanatci": "hendrick-ter-brugghen",
+    "ad": "Ud çalan genç",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.8,
+    "h": 0.7,
+    "metin": "Tüylü bereli, gülümseyerek ud çalan genç: 'İşitme' duyusu. Ter Brugghen bu tuvali beş duyuyu anlatan bir dizinin parçası olarak yaptı; her resimde tek bir yarım boy figür bir duyuyu temsil eder. Bu dizi bugün Ohio'daki Columbus Sanat Müzesi'ndedir.",
+    "gorsel": "c84166aae1e3cf99"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q18574188",
+    "sanatci": "hendrick-ter-brugghen",
+    "ad": "Kadeh kaldıran kız",
+    "x": 0.0,
+    "y": 0.1,
+    "w": 0.8,
+    "h": 0.7,
+    "metin": "Kadehini kaldırıp gülümseyen genç kız: 'Tatma' duyusu. Aynı boyutta ve aynı karanlık fon önündeki bu resimler, birlikte asılmak üzere tasarlanmış bir dizidir. Beş duyu teması, 17. yüzyıl Hollanda'sında hem süsleme hem de dünyevi zevklerin geçiciliğini hatırlatan ahlaki bir ders olarak çok sevildi.",
+    "gorsel": "9477343fdac21b5c"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18574188",
+    "sanatci": "hendrick-ter-brugghen",
+    "ad": "Sürahi ve kadeh",
+    "x": 0.6,
+    "y": 0.5,
+    "w": 0.4,
+    "h": 0.35,
+    "metin": "Kızın elindeki sürahi ve kaldırdığı kadeh. Gündelik bir meyhane sahnesi gibi görünse de tek bir duyuyu, tatmayı öne çıkarır. Ter Brugghen Utrecht Caravaggistlerindendir; parlak, gümüşi ışık ve yarım boy, neşeli figürler onu hocası Caravaggio'nun daha sert karanlığından ayırır.",
+    "gorsel": "9477343fdac21b5c"
    }
   ],
   "flagellation": [
