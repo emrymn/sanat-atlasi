@@ -13,7 +13,7 @@ eserden yakın plan kırpım. Veri: `data/tanima_kirpimlari.json` (bu klasördek
   bilgi versin").
 - Her eşleşmeye kontak sayfasında bakıldı (madde metni + kırpım); maddeyi göstermeyen, bulanık ya da boş kırpımlar
   çıkarıldı (konularda 9 çıktı, 7'si başka ayrıntıyla değişti; sanatçılarda 8 çıktı).
-- **Yeni kutu turu (19 Kasım 2026, sürüyor; 140 konu, 538 kutu bitti):** kırpımsız konulara en çok eseri olandan başlayarak elle kutu çiziliyor
+- **Yeni kutu turu (19 Kasım 2026, sürüyor; 148 konu, 558 kutu bitti):** kırpımsız konulara en çok eseri olandan başlayarak elle kutu çiziliyor
   (`yeni_konu.json`; metin `scripts/ayrinti/BILGI_TURU.md` kuralıyla: bir "bak" cümlesi, gerisi bilgi). Maddeye uyan net bir
   ayrıntı yoksa madde boş bırakılır. Sıradaki konuyu bulmak için: kırpımı olmayan konuları eser sayısına göre sırala.
 - Kalan iş: kırpımı olmayan konular (261; çoğunun eserlerinde hazır ayrıntı yok) için yeni kutu seçmek (aşağıda
