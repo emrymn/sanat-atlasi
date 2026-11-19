@@ -1446,6 +1446,56 @@
     "h": 0.36
    }
   ],
+  "circumcision-of-christ": [
+   {
+    "madde": 0,
+    "anahtar": "Q23021861",
+    "sanatci": "guercino",
+    "ad": "Masadaki bebek İsa",
+    "x": 0.42,
+    "y": 0.52,
+    "w": 0.35,
+    "h": 0.25,
+    "metin": "Beyaz örtülü masanın üstünde yatan çıplak bebek İsa. Luka İncili'ne göre İsa, Yahudi geleneğine uygun olarak doğumunun sekizinci günü sünnet edildi ve ona İsa adı verildi. Hristiyan geleneği bunu İsa'nın kanının ilk kez döküldüğü an, yani çarmıhın ilk habercisi olarak gördü; bayramı 1 Ocak'ta kutlanırdı. Guercino'nun geç dönemindeki açık, temiz renkler Reni'ye yakındır.",
+    "gorsel": "e0d488e19ce3d976"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q23021861",
+    "sanatci": "guercino",
+    "ad": "Kırmızı giysili rahip",
+    "x": 0.6,
+    "y": 0.45,
+    "w": 0.38,
+    "h": 0.45,
+    "metin": "Masaya eğilmiş, kırmızı giysili yaşlı rahip: sünneti yapan kişi. Ressamlar onu çoğu zaman gözlüklü gösterir; gözlük İsa'nın zamanında yoktu, ama yaşlılığı ve bilgeliği göstermek için eklenen bir ayrıntı oldu. Guercino'nun sahnede yarattığı sakin, dengeli düzen onun olgun, Bolonya klasisizmine yaklaşan dönemidir.",
+    "gorsel": "e0d488e19ce3d976"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q23021861",
+    "sanatci": "guercino",
+    "ad": "Meryem ve Yusuf",
+    "x": 0.0,
+    "y": 0.38,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Solda mavi pelerinli Meryem ve sakallı Yusuf, törenin başında duruyor. Meryem'in göğsüne götürdüğü el ve eğik başı, olayın acısını önceden sezen bir annenin duygusunu verir. Arkada açık bir kemerden görünen gökyüzü ve uzak kale, sahneyi bir tapınak içinden çok açık bir mimariye taşır.",
+    "gorsel": "e0d488e19ce3d976"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q18565905",
+    "sanatci": "giulio-romano",
+    "ad": "Burmalı sütunlu tapınak",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.45,
+    "metin": "Arkada yükselen burmalı (sarmal) sütunlar. Rönesans'ta Roma'daki eski Aziz Petrus Bazilikası'nda bulunan bu tür sütunların Kudüs'teki Süleyman Tapınağı'ndan getirildiğine inanılırdı. Raffaello'nun öğrencisi Giulio Romano bu yüzden sahneyi bu sütunlarla Kudüs tapınağına yerleştirir; Raffaello'nun halı kartonlarında da aynı sütunlar vardır.",
+    "gorsel": "ba67850cbe236355"
+   }
+  ],
   "cleansing-of-the-temple": [
    {
     "madde": 0,
@@ -1672,6 +1722,56 @@
     "y": 0.36,
     "w": 0.12,
     "h": 0.16
+   }
+  ],
+  "crossing-of-the-red-sea": [
+   {
+    "madde": 0,
+    "anahtar": "Q7728193",
+    "sanatci": "nicolas-poussin",
+    "ad": "Değnek uzatan Musa",
+    "x": 0.82,
+    "y": 0.3,
+    "w": 0.18,
+    "h": 0.45,
+    "metin": "Sağda ayakta, kolunu denize uzatmış Musa. Çıkış 14'e göre Tanrı Musa'ya değneğini denize uzatmasını söyledi; sular ikiye ayrıldı, İsrailoğulları kuru topraktan geçti, sonra Musa yeniden elini uzatınca sular Firavun'un ordusunu yuttu. Poussin bu tuvali Roma'daki ilk yıllarında yaptı; eşi 'Altın Buzağıya Tapınma' ile bir çift oluşturur.",
+    "gorsel": "bba6b6693e7b3ecc"
+   },
+   {
+    "madde": 1,
+    "anahtar": "titian|The Submersion of Pharaoh's Army in the Red Sea",
+    "sanatci": "titian",
+    "ad": "Yükselen dalgalar",
+    "x": 0.0,
+    "y": 0.3,
+    "w": 1.0,
+    "h": 0.55,
+    "metin": "Tahta baskının geniş yüzeyini kaplayan kabaran dalgalar. Tiziano bu çizimi, on iki ayrı tahta kalıptan basılan ve birleştirildiğinde bir metreyi aşan dev bir baskı için yaptı; kalıpları oymacı Domenico dalle Greche kesti. Bu dev baskılar duvarlara asılıp resim yerine kullanılırdı.",
+    "gorsel": "52746eb3ff073f8c"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q7728193",
+    "sanatci": "nicolas-poussin",
+    "ad": "Boğulan askerler",
+    "x": 0.0,
+    "y": 0.4,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Solda dalgaların arasında çırpınan, zırhlı Mısır askerleri. Çıkış'a göre Firavun'un bütün atları, savaş arabaları ve atlıları denizin ortasında boğuldu. Poussin dramatik bir an seçse de her figürün jesti ayrı bir duyguyu açıkça anlatır; bu 'duyguları jestlerle okutma' ilkesi onun klasisizminin temelidir.",
+    "gorsel": "bba6b6693e7b3ecc"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q1404331",
+    "sanatci": "agnolo-bronzino",
+    "ad": "Kıyıdaki kalabalık",
+    "x": 0.3,
+    "y": 0.35,
+    "w": 0.65,
+    "h": 0.6,
+    "metin": "Önde kıyıya ulaşmış İsrailoğulları: çocuklarını tutan, eşyalarını taşıyan, şükreden kalabalık. Bronzino bu freski Floransa'daki Palazzo Vecchio'da Cosimo de' Medici'nin eşi Eleonora di Toledo'nun özel şapeli için yaptı. Kalabalık, kıvrılan çıplak bedenler ve keskin, parlak renkler Floransa saray Maniyerizminin dilidir.",
+    "gorsel": "9bb824c8b27440d5"
    }
   ],
   "crowning-with-thorns": [
@@ -2116,6 +2216,44 @@
     "y": 0.2,
     "w": 0.2,
     "h": 0.2
+   }
+  ],
+  "david": [
+   {
+    "madde": 0,
+    "anahtar": "Q22084471",
+    "sanatci": "hendrick-ter-brugghen",
+    "ad": "Arp çalan kral",
+    "x": 0.2,
+    "y": 0.1,
+    "w": 0.55,
+    "h": 0.75,
+    "metin": "Taçlı, ak sakallı, arp çalan Kral Davut; çevresinde çalgı çalan ve şarkı söyleyen gençler. Gelenek Davut'u Mezmurlar'ın yazarı sayar; 1. Samuel'e göre gençken Kral Saul'un kara sevdasını arp çalarak dağıtırdı. Utrecht Caravaggistlerinden Ter Brugghen'in açık, gümüşi ışığı ve yarım boy figürleri onu tanıtır.",
+    "gorsel": "104820b0d04017bc"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q111821958",
+    "sanatci": "gentile-da-fabriano",
+    "ad": "Taçlı yaşlı kral",
+    "x": 0.2,
+    "y": 0.0,
+    "w": 0.55,
+    "h": 0.55,
+    "metin": "Başında taç, kraliyet pelerini giymiş sakallı kral. Davut, İsrail'in ikinci kralı ve Kudüs'ü başkent yapan kişidir; İsa'nın onun soyundan geldiği kabul edilir. Bu yüzden Ortaçağ sunaklarında İsa'nın atası olarak sık gösterilir. Gentile da Fabriano Uluslararası Gotik üslubun ustasıdır: altın süsleme, zarif kıvrımlar ve parlak renkler bunu gösterir.",
+    "gorsel": "94604ee6a4e68037"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q104534335",
+    "sanatci": "hendrick-ter-brugghen",
+    "ad": "Açık kitap",
+    "x": 0.7,
+    "y": 0.25,
+    "w": 0.3,
+    "h": 0.45,
+    "metin": "Sağda açık bir kitap ve çevresinde şarkı söyleyen gençler. Mezmurlar, Kutsal Kitap'ın ilahi kitabıdır ve kilise müziğinin temeli oldu. Ter Brugghen bu sahneyi bir org kapağı için yapmış olabilir: kral Davut ve çalgıcılar, müziği Tanrı'ya bir dua olarak yücelten bir imgedir.",
+    "gorsel": "4c87b54ab5340605"
    }
   ],
   "david-and-goliath": [
@@ -5098,6 +5236,44 @@
     "h": 0.48,
     "metin": "Nil kıyısında sepetten çıkarılan bebek Musa, ortada ipekli giysiler içinde Firavun'un kızı. Çıkış'a göre Firavun İbrani erkek bebeklerin öldürülmesini emretmişti; Musa'nın annesi onu sazlar arasına bıraktı. Veronese sahneyi Mısır'da değil, Venedik soylularının giysileri, cüceleri ve hizmetkârlarıyla kurar; bu tarihsizlik ve parlak kumaşlar onun imzasıdır.",
     "gorsel": "6e9fb9d5d4163207"
+   }
+  ],
+  "mystic-marriage-of-saint-catherine": [
+   {
+    "madde": 0,
+    "anahtar": "Q3851966",
+    "sanatci": "correggio",
+    "ad": "Yüzük takılan parmak",
+    "x": 0.35,
+    "y": 0.3,
+    "w": 0.4,
+    "h": 0.4,
+    "metin": "Çocuk İsa'nın Katerina'nın parmağına yüzük takması. Efsaneye göre İskenderiyeli Katerina vaftizden sonra bir rüyada İsa ile nişanlandı ve uyandığında parmağında yüzüğü buldu. Correggio bu tuvali Parma'da yaptı; arkada sağda oklu Sebastianus da sahneye katılır. Yumuşak gölgeler, sıcak renkler ve birbirine eğilen yüzler onun samimi üslubudur.",
+    "gorsel": "4934ee2cf9d9ec08"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3851962",
+    "sanatci": "parmigianino",
+    "ad": "Taçlı saç ve zengin giysi",
+    "x": 0.55,
+    "y": 0.25,
+    "w": 0.4,
+    "h": 0.4,
+    "metin": "İncilerle örülü, özenle toplanmış saçlar ve sarı ipek giysi: Katerina'nın prenses kimliği. Altın Efsane'ye göre o, İskenderiye kralının kızıydı. Parmigianino'nun uzun boyunlu, porselen tenli figürleri ve sert, metalik renkleri onun Maniyerist zarafetidir; bu tuval Londra'daki National Gallery'dedir.",
+    "gorsel": "2d780795cb72ab46"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3851962",
+    "sanatci": "parmigianino",
+    "ad": "Çivili tekerlek",
+    "x": 0.5,
+    "y": 0.7,
+    "w": 0.48,
+    "h": 0.3,
+    "metin": "Sağ altta karanlıkta görünen büyük tekerlek: Katerina'nın işkence aracı. Efsaneye göre Roma imparatoru onu çivili tekerleklerle parçalatmak istedi, ama gökten gelen bir şimşek tekerleği kırdı. Tekerlek bu yüzden onun tanınma işaretidir ve Mistik Evlilik sahnelerinde de genellikle bir köşede bulunur.",
+    "gorsel": "2d780795cb72ab46"
    }
   ],
   "napoleon": [
@@ -8322,6 +8498,56 @@
     "h": 0.62,
     "metin": "Yatağın önünde diz çöküp dua eden Tobias ve Sara; sağda kötü ruhu bağlayan melek. Tobit kitabına göre Sara'nın önceki yedi kocası düğün gecesi Asmodeus adlı cin tarafından öldürülmüştü; Tobias balığın yüreğini ve ciğerini yakarak cini kaçırdı, melek onu yakalayıp bağladı. Jan Steen sahneyi kendi çağının Hollanda iç mekânında, mizahi bir canlılıkla anlatır.",
     "gorsel": "921fcceb53054ae3"
+   }
+  ],
+  "transfiguration": [
+   {
+    "madde": 0,
+    "anahtar": "Q2344437",
+    "sanatci": "raphael",
+    "ad": "Havada süzülen İsa",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.5,
+    "h": 0.35,
+    "metin": "Tepede, beyaz ve ışık saçan giysiler içinde havaya yükselen İsa. Matta İncili'ne göre İsa, üç öğrencisini yüksek bir dağa götürdü; orada 'yüzü güneş gibi parladı, giysileri ışık gibi bembeyaz oldu'. Bu tablo Raffaello'nun son eseridir; 1520'de öldüğünde cenazesinde başucuna konduğu anlatılır. Bugün Vatikan Pinakotekası'ndadır.",
+    "gorsel": "73292464d414e622"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3997716",
+    "sanatci": "giovanni-bellini",
+    "ad": "Musa ve İlyas",
+    "x": 0.2,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.35,
+    "metin": "İsa'nın iki yanında duran iki peygamber: Musa ve İlyas. Musa Yasa'yı, İlyas peygamberleri temsil eder; ikisinin İsa'yla konuşması, Eski Ahit'in İsa'da tamamlandığı anlamına gelir. Bellini'nin bu erken eseri Venedik'teki Correr Müzesi'ndedir; sert hatlar ve keskin kayalar onun kayınbiraderi Mantegna'nın etkisini gösterir.",
+    "gorsel": "3554c7cd80f1a988"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q26707719",
+    "sanatci": "duccio-di-buoninsegna",
+    "ad": "Yere kapanan öğrenciler",
+    "x": 0.0,
+    "y": 0.55,
+    "w": 1.0,
+    "h": 0.42,
+    "metin": "Altta ışıktan gözleri kamaşıp yere kapanan üç öğrenci: Petrus, Yakup ve Yuhanna. İncillere göre bir buluttan 'Bu benim sevgili Oğlum, onu dinleyin' diye bir ses gelince yüzüstü yere kapandılar. Duccio'nun bu panosu Siena katedralindeki Maestà sunağının ön yüzünün alt dizisindendir; altın zemin ve keskin kayalar Bizans geleneğinden gelir.",
+    "gorsel": "416b3ae5efcd64e2"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q2344437",
+    "sanatci": "raphael",
+    "ad": "Cine tutulmuş çocuk",
+    "x": 0.65,
+    "y": 0.5,
+    "w": 0.35,
+    "h": 0.48,
+    "metin": "Sağ altta gözleri dönmüş, kollarını açmış, cine tutulmuş çocuk ve onu tutan babası. İncillerde Başkalaşım'ın hemen ardından dağın eteğindeki öğrenciler bu çocuğu iyileştiremez; İsa inip onu iyileştirir. Raffaello iki sahneyi tek tabloda birleştirdi: üstte ilahi ışık, altta insanın çaresizliği. Bu karşıtlık Barok resmin habercisi oldu.",
+    "gorsel": "73292464d414e622"
    }
   ],
   "tribute-money": [
