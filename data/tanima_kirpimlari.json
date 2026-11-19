@@ -13064,6 +13064,70 @@
     "gorsel": "0836a08425dde6ff"
    }
   ],
+  "septimius-severus-and-caracalla": [
+   {
+    "madde": 0,
+    "anahtar": "Q19006749",
+    "sanatci": "jean-baptiste-greuze",
+    "ad": "Oğlunu suçlayan imparator",
+    "x": 0.42,
+    "y": 0.38,
+    "w": 0.28,
+    "h": 0.4,
+    "metin": "Yatağında doğrulup oğlunu gösteren Septimius Severus. Cassius Dio'ya göre Caracalla babasını Britanya seferinde öldürmeye kalkmış; imparator ertesi gün ona kılıcını uzatıp \"İstiyorsan şimdi yap\" demişti. Greuze bu tabloyu 1769'da Akademi'ye tarih ressamı olarak girmek için yaptı.",
+    "gorsel": "b003a21bd9ba98a9"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q19006749",
+    "sanatci": "jean-baptiste-greuze",
+    "ad": "Başını çeviren Caracalla",
+    "x": 0.12,
+    "y": 0.3,
+    "w": 0.2,
+    "h": 0.58,
+    "metin": "Solda başını çevirip bakışlarını kaçıran genç Caracalla. Akademi tabloyu beğenmedi ve Greuze'ü tarih ressamı değil, yalnızca tür (gündelik sahne) ressamı olarak kabul etti; Greuze bunu hakaret sayıp yıllarca Salon'a küstü. Sınavda: Greuze denince önce aile ve ahlak sahneleri akla gelir, bu tablo onun tek büyük tarih denemesidir.",
+    "gorsel": "b003a21bd9ba98a9"
+   }
+  ],
+  "seven-deadly-sins": [
+   {
+    "madde": 0,
+    "anahtar": "Q2304870",
+    "sanatci": "hieronymus-bosch",
+    "ad": "Tanrı'nın gözü",
+    "x": 0.2,
+    "y": 0.12,
+    "w": 0.6,
+    "h": 0.75,
+    "metin": "Ortadaki büyük daire bir gözdür; gözbebeğinde mezarından kalkan İsa durur ve çevresinde \"Dikkat et, dikkat et, Tanrı görüyor\" yazar. Yedi dilimin her biri bir günahı gündelik bir sahneyle gösterir: oburluk, tembellik, şehvet, kibir, öfke, haset, açgözlülük. Bosch'un bu masa üstü resmi sonradan II. Felipe'nin oldu ve bugün Prado'dadır.",
+    "gorsel": "f93ca41c92e7dfeb"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q2304870",
+    "sanatci": "hieronymus-bosch",
+    "ad": "Köşedeki yuvarlak sahneler",
+    "x": 0.02,
+    "y": 0.02,
+    "w": 0.25,
+    "h": 0.25,
+    "metin": "Dört köşedeki yuvarlaklar \"Dört Son Şey\"dir: ölüm döşeği, Kıyamet, Cennet ve Cehennem. Ortadaki günahlarla birlikte okununca mesaj açıktır: bugün işlenen günahın hesabı ölümden sonra sorulur. Sınavda: daire, göz ve dört köşe yuvarlağı görürsen bu Bosch tablosudur.",
+    "gorsel": "f93ca41c92e7dfeb"
+   },
+   {
+    "madde": 2,
+    "anahtar": "pieter-bruegel-yasl|Avarice (Avaritia), from the series The Seven Deadly Sins",
+    "sanatci": "pieter-bruegel-yasl",
+    "ad": "Açgözlülük ve canavarları",
+    "x": 0.3,
+    "y": 0.3,
+    "w": 0.4,
+    "h": 0.5,
+    "metin": "Ortada para sayan kadın Açgözlülüğün kişileştirmesidir, çevresindeki tuhaf yaratıklar onun sonuçlarını gösterir. Bruegel yedi günah dizisini 1550'lerin sonunda çizdi; Antwerpen'deki yayıncı Hieronymus Cock gravür olarak bastı. Bosch tarzı canavarlar bilinçli seçimdi: Cock, Bruegel'i \"ikinci Bosch\" diye satıyordu.",
+    "gorsel": "7c706b83516d7e1c"
+   }
+  ],
   "seven-sacraments": [
    {
     "madde": 0,
@@ -13100,6 +13164,44 @@
     "h": 0.6,
     "metin": "Karanlık bir günah çıkarma hücresinde rahibe eğilen adam. Crespi yedi sakramenti yedi ayrı, aynı boyda tuvalde gösterdi; dizi Kardinal Pietro Ottoboni için yapıldı ve bugün Dresden'dedir. Bolonyalı Crespi kutsal konuları gündelik hayattan sahneler gibi, koyu tonlu ve sıcak ışıkla boyar; bu yaklaşım İtalyan tür resmine yakındır.",
     "gorsel": "bc0f35a47e1e1ad4"
+   }
+  ],
+  "seven-sorrows-of-the-virgin": [
+   {
+    "madde": 0,
+    "anahtar": "Q1988321",
+    "sanatci": "albrecht-durer",
+    "ad": "Yaslı Meryem",
+    "x": 0.33,
+    "y": 0.1,
+    "w": 0.34,
+    "h": 0.58,
+    "metin": "Ortada ellerini kavuşturmuş yaslı Meryem, kılıç göğsüne saplanmış. Kılıç, Simeon'un bebek İsa'yı tapınakta görünce Meryem'e söylediği sözden gelir: \"Senin de yüreğine bir kılıç saplanacak\" (Luka 2:35). Kılıç sayısı yediye çıkınca her biri bir acıyı temsil eder.",
+    "gorsel": "e934b355db6c55ba"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q1988321",
+    "sanatci": "albrecht-durer",
+    "ad": "Yedi acının sahneleri",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.6,
+    "metin": "Çevredeki yedi panel acıları sırayla anlatır: Simeon'un kehaneti, Mısır'a kaçış, İsa'nın tapınakta kaybolması, çarmıh taşıma, çarmıha geriliş, çarmıhtan indiriliş ve gömülme. Dürer'in genç yaşta yaptığı bu çok panelli sunağın orta panosu bugün Münih'te, yan sahneleri Dresden'dedir.",
+    "gorsel": "e934b355db6c55ba"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q28790071",
+    "sanatci": "quentin-metsys",
+    "ad": "Mavi mantolu Meryem",
+    "x": 0.28,
+    "y": 0.28,
+    "w": 0.38,
+    "h": 0.37,
+    "metin": "Ölü oğlunun başına eğilen mavi mantolu Meryem: çarmıhtan indiriliş yedi acıdan biridir. Mavi, değerli lapis lazuliden yapıldığı için en pahalı boyaydı ve Meryem'e ayrıldı. Metsys, 16. yüzyıl başında Antwerpen'in önde gelen ressamıydı.",
+    "gorsel": "ace3d1f120a1c7b9"
    }
   ],
   "shadow-of-death": [
@@ -13388,6 +13490,32 @@
     "h": 0.75,
     "metin": "Soluk mavi, pembe ve sarı lekelerle boyanmış 'Kuzu' sayfası. Şiirde bir çocuk kuzuya 'Seni kim yarattı?' diye sorar; Deneyim Şarkıları'ndaki 'Kaplan' şiiri aynı soruyu korkutucu bir hayvana sorar. Her kopya elle boyandığı için renkler kitaptan kitaba değişir: aynı sayfanın iki kopyası birbirinin aynı değildir.",
     "gorsel": "1c5209393895bc5b"
+   }
+  ],
+  "sophonisba": [
+   {
+    "madde": 0,
+    "anahtar": "Q17354848",
+    "sanatci": "mattia-preti",
+    "ad": "Kupayı alan kraliçe",
+    "x": 0.4,
+    "y": 0.15,
+    "w": 0.55,
+    "h": 0.45,
+    "metin": "Kupayı soğukkanlılıkla alan kadın Kartacalı Sophonisba. Livius'a göre Romalı komutan Scipio onu esir olarak Roma'daki zafer alayında yürütmek isteyince kocası Numidya kralı Massinissa ona zehir gönderdi; Sophonisba esir düşmektense zehri içti (MÖ 203). Sınavda: kupalı kraliçe Artemisia ile karışır; onun kupasında kocasının külü vardır, Sophonisba'nınkinde zehir.",
+    "gorsel": "e6a8a745c8d83351"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q50326071",
+    "sanatci": "francesco-solimena",
+    "ad": "Zehri sunan haberci",
+    "x": 0.25,
+    "y": 0.35,
+    "w": 0.45,
+    "h": 0.4,
+    "metin": "Diz çöküp kupayı uzatan, Massinissa'nın gönderdiği habercidir. Hikâye onurlu ölümün örneği olarak anlatılır ve Barok ressamlar için kahraman bir kadın konusudur. Solimena, 18. yüzyıl başında Napoli'nin en ünlü ressamıydı; kalabalık, hareketli sahneleri ona özgüdür.",
+    "gorsel": "7ade7cd3ec857a51"
    }
   ],
   "stoning-of-saint-stephen": [
@@ -13798,6 +13926,70 @@
     "h": 0.19
    }
   ],
+  "thebaid": [
+   {
+    "madde": 0,
+    "anahtar": "Q3982381",
+    "sanatci": "fra-angelico",
+    "ad": "Tepelere dağılmış keşişler",
+    "x": 0.05,
+    "y": 0.1,
+    "w": 0.9,
+    "h": 0.6,
+    "metin": "Kayalık tepelere serpiştirilmiş onlarca küçük keşiş. Thebai, Yukarı Mısır'da Teb kenti çevresindeki çöldür; 3. ve 4. yüzyılda Antonius ve Pakhomios gibi ilk Hristiyan keşişler burada yaşadı. Bu Uffizi tablosu Fra Angelico'ya ya da Gherardo Starnina'ya verilir.",
+    "gorsel": "9d36711ff483717c"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3982380",
+    "sanatci": "paolo-uccello",
+    "ad": "Mağaralardaki keşişler",
+    "x": 0.0,
+    "y": 0.55,
+    "w": 0.5,
+    "h": 0.43,
+    "metin": "Mağaralarda dua eden, kitap okuyan keşişler: çöl babalarının günlük hayatı. Konu 15. yüzyıl Floransa'sında sevilirdi, çünkü inzivada yaşayan keşişler, dönemin manastır tarikatlarına örnek gösteriliyordu. Sınavda: Uccello denince perspektif ve geometri akla gelir; bu tabloda bile kayalar ve kemerler hacimli bloklar gibidir.",
+    "gorsel": "2f158505403a8e18"
+   }
+  ],
+  "theodosius-and-saint-ambrose": [
+   {
+    "madde": 0,
+    "anahtar": "Q3819218",
+    "sanatci": "anthony-van-dyck",
+    "ad": "Kapıdaki piskopos",
+    "x": 0.5,
+    "y": 0.15,
+    "w": 0.32,
+    "h": 0.7,
+    "metin": "Kilise kapısında imparatoru durduran, sırmalı cüppeli Ambrosius, Milano piskoposu. İmparator Theodosius 390'da Selanik'te binlerce kişiyi öldürtmüştü; Ambrosius kamu önünde tövbe edene kadar onu kiliseye almadı. Sahne, kilisenin dünyevi güç karşısındaki yetkisinin simgesi oldu.",
+    "gorsel": "fe2162bf8c24ee40"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3819218",
+    "sanatci": "anthony-van-dyck",
+    "ad": "Kırmızı pelerinli imparator",
+    "x": 0.18,
+    "y": 0.28,
+    "w": 0.35,
+    "h": 0.48,
+    "metin": "Kırmızı pelerinli, defne taçlı Theodosius, 4. yüzyıl sonunda Hristiyanlığı Roma'nın resmî dini yapan imparator. Bu Londra tablosu, Van Dyck'in Rubens'in atölyesindeyken ustasının Viyana'daki büyük resminden yaptığı küçültülmüş bir kopyadır. Sınavda: kapıda karşılaşan piskopos ve imparator bu konudur.",
+    "gorsel": "fe2162bf8c24ee40"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3819218",
+    "sanatci": "anthony-van-dyck",
+    "ad": "Din adamları ve askerler",
+    "x": 0.0,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.5,
+    "metin": "Solda imparatorun zırhlı askerleri, sağda piskoposun din adamları: iki güç karşı karşıya dizilmiştir. Karşı Reform döneminde bu sahne, Katolik Kilisesi'nin krallara bile ahlaki yön gösterebileceğini anlatmak için sık seçildi.",
+    "gorsel": "fe2162bf8c24ee40"
+   }
+  ],
   "three-graces": [
    {
     "madde": 0,
@@ -13918,6 +14110,44 @@
     "h": 0.55,
     "metin": "Çevrede dans eden, garip yüzlü periler ve yaratıklar. Fuseli perileri tatlı varlıklar olarak değil, rüya gibi tuhaf, yarı ürkütücü figürler olarak çizer; bunlar arasında hayvan başlı varlıklar ve modaya uygun giyinmiş kadınlar da vardır. Bu karanlık fantezi dünyası onun Romantik hayal gücünün özüdür.",
     "gorsel": "60e6f65bb56e9349"
+   }
+  ],
+  "tityus": [
+   {
+    "madde": 0,
+    "anahtar": "Q17025697",
+    "sanatci": "michelangelo",
+    "ad": "Kayaya serilmiş dev",
+    "x": 0.08,
+    "y": 0.4,
+    "w": 0.62,
+    "h": 0.35,
+    "metin": "Kayaya uzanmış kaslı dev Tityos. Mitte Apollon ile Artemis'in annesi Leto'ya saldırdığı için Hades'te cezalandırılır: kuşlar ciğerini yer, ciğer yeniden büyür. Michelangelo bu çizimi 1532'de genç dostu Tommaso de' Cavalieri'ye armağan etti.",
+    "gorsel": "d7dba1ac1cc1e358"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q17025697",
+    "sanatci": "michelangelo",
+    "ad": "Ciğerini yiyen kartal",
+    "x": 0.08,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.45,
+    "metin": "Devin üstüne kanat açmış kartal ya da akbaba, sonsuz cezanın aracıdır. Ciğeri yenen bir başka figür Prometheus'tur; ikisi sık karışır. Sınavda: kayaya zincirli ve ateş getiren kahramansa Prometheus, Hades'te yatan devse Tityos.",
+    "gorsel": "d7dba1ac1cc1e358"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q18225106",
+    "sanatci": "jusepe-de-ribera",
+    "ad": "Karanlıkta kıvranan beden",
+    "x": 0.1,
+    "y": 0.08,
+    "w": 0.85,
+    "h": 0.7,
+    "metin": "Karanlık zeminde baş aşağı kıvranan beden ve göğsündeki yara: Caravaggio'dan gelen sert ışık-gölge. Ribera Napoli'de yaşayan İspanyol bir ressamdı ve bu tablo onun \"Furyalar\" dizisindendir: Tityos, Tantalos, Sisyphos ve İksion, yani Hades'te sonsuz cezaya çarptırılanlar. Dizi bugün Prado'dadır.",
+    "gorsel": "7c3ee59c2780d87b"
    }
   ],
   "tobias-and-the-angel": [
@@ -14069,6 +14299,20 @@
     "h": 0.3,
     "metin": "Üstte darağaçları, yangınlar, batan gemiler ve çorak, kararmış bir ufuk. Bruegel kıyamet benzeri bu manzarayı 16. yüzyılın savaş, veba ve dini çatışmalarla dolu dünyasından alır. Arka plandaki her ayrıntı ayrı bir ölüm sahnesidir: bu yoğunluk resmin dehşetini artırır.",
     "gorsel": "ef15f4458bf7138e"
+   }
+  ],
+  "triumph-of-the-eucharist": [
+   {
+    "madde": 2,
+    "anahtar": "peter-paul-rubens|The Adoration of the Eucharist",
+    "sanatci": "peter-paul-rubens",
+    "ad": "Sütunlu Barok çerçeve",
+    "x": 0.1,
+    "y": 0.05,
+    "w": 0.8,
+    "h": 0.7,
+    "metin": "Sütunlar ve kemerlerle kurulmuş sahte bir mimari: Rubens'in Efkaristiya halı dizisi için yaptığı yağlı boya taslak. Diziyi Habsburg arşidüşesi Isabella Clara Eugenia, Madrid'deki Descalzas Reales manastırına armağan etmek için 1620'lerde ısmarladı. Halılar bayram günlerinde kilisenin duvarlarına asılır, gerçek bir Barok mimari gibi görünürdü.",
+    "gorsel": "8da42d94d0f032c1"
    }
   ],
   "triumph-of-the-name-of-jesus": [
@@ -14343,6 +14587,20 @@
     "gorsel": "7081b6bb7c306bcf"
    }
   ],
+  "vertumnus-and-pomona": [
+   {
+    "madde": 2,
+    "anahtar": "Q1237596",
+    "sanatci": "jacopo-pontormo",
+    "ad": "Duvardaki kır insanları",
+    "x": 0.0,
+    "y": 0.35,
+    "w": 1.0,
+    "h": 0.58,
+    "metin": "Yuvarlak pencerenin iki yanında, alçak duvara oturmuş köylüler ve tanrılar: Pontormo'nun Medici'lerin Poggio a Caiano villasındaki lünet freski (1519–21). Konu Ovidius'tan gelir: mevsim tanrısı Vertumnus, meyve bahçesi perisi Pomona'yı yaşlı kadın kılığına girerek kandırır. Sınavda: yarım daire biçimli, kırsal ve neşeli bu fresk erken Maniyerizmin örneğidir.",
+    "gorsel": "d47be6f865f23dd0"
+   }
+  ],
   "virgil": [
    {
     "madde": 0,
@@ -14542,6 +14800,58 @@
     "y": 0.05,
     "w": 0.13,
     "h": 0.9
+   }
+  ],
+  "zenobia": [
+   {
+    "madde": 0,
+    "anahtar": "giovanni-battista-tiepolo|Queen Zenobia Addressing Her Soldiers",
+    "sanatci": "giovanni-battista-tiepolo",
+    "ad": "Askerlerine seslenen kraliçe",
+    "x": 0.12,
+    "y": 0.05,
+    "w": 0.32,
+    "h": 0.62,
+    "metin": "Yüksekte durup elini uzatan zırhlı kadın, Palmira kraliçesi Zenobia. 3. yüzyılda Roma'ya başkaldırıp Mısır'a kadar ilerledi; 272'de İmparator Aurelianus onu yendi ve Roma'da altın zincirlerle zafer alayında yürüttü. Tiepolo'nun bu tablosu, adı kraliçeyi andıran Venedikli Zenobio ailesinin sarayı için yapıldı.",
+    "gorsel": "0f8e5e63077d2da0"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q4191448",
+    "sanatci": "william-adolphe-bouguereau",
+    "ad": "Kıyıda bulunan kadın",
+    "x": 0.05,
+    "y": 0.42,
+    "w": 0.6,
+    "h": 0.55,
+    "metin": "Çobanların ırmak kıyısında bulduğu baygın kadın başka bir Zenobia'dır: Tacitus'a göre Armenya kralı Radamistos'un karısı. Kocası düşmandan kaçarken onu Aras ırmağına attı, çobanlar kurtardı. Bouguereau bu tabloyla 1850'de Roma Ödülü'nü kazandı. Sınavda: zırhlı kraliçe Palmiralı, ırmak kıyısındaki kadın Armenyalı Zenobia'dır.",
+    "gorsel": "c553a8a6066cf837"
+   }
+  ],
+  "zeuxis-selecting-models": [
+   {
+    "madde": 0,
+    "anahtar": "Q60617026",
+    "sanatci": "angelica-kauffman",
+    "ad": "Modelleri inceleyen ressam",
+    "x": 0.35,
+    "y": 0.15,
+    "w": 0.45,
+    "h": 0.75,
+    "metin": "Genç kadınları inceleyen ressam, antik Yunan ressamı Zeuksis. Plinius ve Cicero'ya göre Kroton'daki tapınak için Helene'yi çizerken tek bir kadını yeterince güzel bulmadı; beş kızın en güzel yanlarını birleştirdi. Hikâye, doğayı seçerek iyileştirme fikrinin, yani akademik \"ideal güzellik\" kuramının sembolü oldu.",
+    "gorsel": "d724667b3fe58025"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q113005613",
+    "sanatci": "francesco-solimena",
+    "ad": "Ressamın tuvali",
+    "x": 0.45,
+    "y": 0.3,
+    "w": 0.22,
+    "h": 0.45,
+    "metin": "Ortadaki tuval, kusursuz güzelliğin parçalardan kurulacağı yerdir. Solimena sahneyi Barok bir gösteriye çevirir: göklerden inen figürler ve bir araya toplanmış modeller. 17.–18. yüzyıl akademileri bu hikâyeyi öğrencilere \"doğayı kopyalama, seç ve iyileştir\" ilkesini anlatmak için kullanırdı.",
+    "gorsel": "75b155b7c9439cee"
    }
   ]
  },
