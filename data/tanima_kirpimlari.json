@@ -7456,6 +7456,44 @@
     "h": 0.17
    }
   ],
+  "orlando-furioso": [
+   {
+    "madde": 0,
+    "anahtar": "Q3439636",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "ad": "Kayaya zincirli Angelica",
+    "x": 0.55,
+    "y": 0.15,
+    "w": 0.3,
+    "h": 0.75,
+    "metin": "Kayaya zincirlenmiş çıplak kadın: Angelica. Ariosto'nun 'Çılgın Orlando' (1516) adlı şövalye destanında Angelica, Ebuda adasında deniz canavarına kurban edilmek üzere kayaya bağlanır. Ingres bu tuvali Fransız kralı XVIII. Louis için yaptı; Angelica'nın uzun, kıvrık boynu Ingres'in anatomiyi zarafet için bükmesinin ünlü örneğidir.",
+    "gorsel": "1a0ead18be2c7f5e"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3439636",
+    "sanatci": "jean-auguste-dominique-ingres",
+    "ad": "Kanatlı attaki şövalye",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.35,
+    "h": 0.85,
+    "metin": "Kanatlı at (hipogrif) üzerinde, mızrağını canavarın ağzına saplayan zırhlı şövalye Ruggiero. Hipogrif, Ariosto'nun icadıdır: yarı kartal, yarı at bir yaratık. Hikâye Perseus ile Andromeda mitinin bir Rönesans çeşitlemesidir. Ingres bu konuyu birkaç kez yeniden ele aldı; asıl tuval Louvre'dadır.",
+    "gorsel": "1a0ead18be2c7f5e"
+   },
+   {
+    "madde": 2,
+    "anahtar": "nicolas-poussin|The Sorcerer Atlante Abducting Pinabello's Lady (Ariosto, Orlando Furioso, canto II, 38)",
+    "sanatci": "nicolas-poussin",
+    "ad": "Kadın kaçıran büyücü",
+    "x": 0.15,
+    "y": 0.05,
+    "w": 0.75,
+    "h": 0.5,
+    "metin": "Kanatlı atın üzerinde bir kadını kaçıran figür: büyücü Atlante. Ariosto'nun destanının 2. kantosunda Atlante, Pinabello'nun sevgilisini hipogrifiyle kaçırıp kendi çelik şatosuna götürür. Poussin bu hızlı, kahverengi mürekkepli çizimi gençken, Paris'te İtalyan edebiyatından konular çalışırken yaptı.",
+    "gorsel": "2b2a1c3e02bb781a"
+   }
+  ],
   "orpheus": [
    {
     "madde": 0,
@@ -7504,6 +7542,32 @@
     "h": 0.45,
     "metin": "Bir genç kız, Orfeus'un kesik başını lirinin üstünde taşıyor. Mite göre Orfeus, Eurydike'yi kaybettikten sonra kadınlardan uzak durdu; öfkelenen Trakyalı Mainadlar onu parçaladı, başı lirle birlikte Hebros ırmağında şarkı söyleyerek aktı. Moreau bu sahneyi kendisi icat etti; mücevher gibi ayrıntılar ve rüya havası onu Sembolizmin öncüsü yapar.",
     "gorsel": "ce229ad5f3a4833b"
+   }
+  ],
+  "paradise-lost": [
+   {
+    "madde": 0,
+    "anahtar": "Q3950742",
+    "sanatci": "william-blake",
+    "ad": "Lejyonlarına seslenen Şeytan",
+    "x": 0.3,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.45,
+    "metin": "Alevler içinde kollarını kaldırıp lejyonlarına seslenen kaslı figür: Şeytan. John Milton'ın 'Kaybolmuş Cennet' (1667) destanının 1. kitabında, gökten atılan Şeytan cehennem gölünde uyanır ve düşmüş meleklerini yeni bir savaşa çağırır. Romantikler Milton'ın Şeytan'ını trajik bir isyankâr kahraman olarak gördü; Blake de Milton'ın 'farkında olmadan Şeytan'ın tarafını tuttuğunu' söyler.",
+    "gorsel": "6e2ace22d3bbd178"
+   },
+   {
+    "madde": 1,
+    "anahtar": "henry-fuseli|Satan Starts from the Touch of Ithuriel's Spear",
+    "sanatci": "henry-fuseli",
+    "ad": "Mızrakla dürtülen karanlık varlık",
+    "x": 0.3,
+    "y": 0.05,
+    "w": 0.65,
+    "h": 0.65,
+    "metin": "Ayağa fırlayan kanatlı figür ve ona mızrak doğrultan melekler. Milton'da Şeytan, kurbağa kılığında uyuyan Havva'nın kulağına fısıldarken melek Ithuriel'in mızrağı ona dokunur; Şeytan gerçek biçimine dönerek sıçrar. Fuseli Milton'a hayrandı; Londra'da 'Milton Galerisi' adlı bir sergi için 47 tuval yaptı.",
+    "gorsel": "6c7158063b0ce732"
    }
   ],
   "paris-and-helen": [
@@ -7727,6 +7791,44 @@
     "h": 0.55,
     "metin": "Lir çalan sakallı ozan ve yanında genç bir çocuk. 'Şiirin İlerleyişi' Gray'in, Pindaros'u örnek alan bir odudur: şiirin Yunanistan'dan Roma'ya, oradan İngiltere'ye geçişini anlatır. Lir, şarkıyla söylenen lirik şiirin antik simgesidir. Blake ozanı bir peygamber gibi gösterir; onun için şair ve sanatçı, hayal gücüyle gerçeği gören kişiydi.",
     "gorsel": "89d45f6123a1041d"
+   }
+  ],
+  "polycrates": [
+   {
+    "madde": 0,
+    "anahtar": "salvator-rosa|Polycrates' Crucifixion",
+    "sanatci": "salvator-rosa",
+    "ad": "Kalabalıktaki çarmıh",
+    "x": 0.35,
+    "y": 0.45,
+    "w": 0.4,
+    "h": 0.5,
+    "metin": "Kalabalığın ortasında yüksekte asılı bir adam. Herodotos'a göre Samos tiranı Polykrates çok şanslıydı; bir gün yüzüğünü denize attı, ama yüzük bir balığın karnından geri geldi. Sonunda Pers valisi Oroites onu tuzağa düşürüp çarmıha gerdi. Hikâye, aşırı talihin tanrıları kıskandırdığı inancının örneğidir.",
+    "gorsel": "e20208edc9113fcc"
+   },
+   {
+    "madde": 1,
+    "anahtar": "salvator-rosa|Polycrates and the Fisherman",
+    "sanatci": "salvator-rosa",
+    "ad": "Balık sunan balıkçı",
+    "x": 0.35,
+    "y": 0.5,
+    "w": 0.55,
+    "h": 0.45,
+    "metin": "Tirana iri bir balık sunan balıkçı. Herodotos'ta Polykrates, dostu Mısır firavunu Amasis'in öğüdüyle en değerli yüzüğünü denize atmıştı; birkaç gün sonra bir balıkçının getirdiği balığın karnından yüzük çıktı. Amasis bunu kötüye yorumlayıp dostluğu bitirdi. Salvator Rosa, bu iki tuvali birbirinin eşi olarak yaptı.",
+    "gorsel": "06db655c8ef2b72b"
+   },
+   {
+    "madde": 2,
+    "anahtar": "salvator-rosa|Polycrates' Crucifixion",
+    "sanatci": "salvator-rosa",
+    "ad": "Kasvetli gökyüzü",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.9,
+    "h": 0.45,
+    "metin": "Üstte kasvetli bulutlar ve kırık, kuru ağaçlar. Salvator Rosa, antik tarihin ahlaki dersler veren konularını ıssız, vahşi manzaralar içinde göstermeyi severdi. Bu karanlık, dramatik doğa anlayışı onu 18. yüzyıl İngiliz bahçe zevkinin ve Romantik 'pitoresk' kavramının önemli bir kaynağı yaptı.",
+    "gorsel": "e20208edc9113fcc"
    }
   ],
   "presentation-in-the-temple": [
@@ -8287,6 +8389,44 @@
     "gorsel": "85ac7095bf686eea"
    }
   ],
+  "regulus": [
+   {
+    "madde": 0,
+    "anahtar": "Q28038182",
+    "sanatci": "benjamin-west",
+    "ad": "Ayrılan Romalı",
+    "x": 0.15,
+    "y": 0.25,
+    "w": 0.55,
+    "h": 0.6,
+    "metin": "Senato önünde, yalvaran ailesinden ayrılan Romalı komutan Regulus. Roma tarihine göre Kartacalılara esir düşen Marcus Atilius Regulus, barış görüşmesi için Roma'ya gönderildi; ama senatoya barışı reddetmesini öğütledi ve verdiği söze sadık kalarak Kartaca'ya geri dönüp öldürüldü. West bu tuvali İngiltere kralı III. George için yaptı.",
+    "gorsel": "54c04f7298d813ff"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q28538656",
+    "sanatci": "j-m-w-turner",
+    "ad": "Göz kamaştıran güneş",
+    "x": 0.25,
+    "y": 0.15,
+    "w": 0.5,
+    "h": 0.6,
+    "metin": "Ortada her şeyi beyaza boğan göz kamaştırıcı güneş ve limanın ışık sisi. Turner bu tuvalde Regulus'u neredeyse göstermez; antik anlatıya göre Kartacalılar onun göz kapaklarını kesip güneşe baktırmıştı. Böylece izleyici, Regulus'un gördüğü kör edici ışığı kendisi deneyimler. Tuval Londra'daki Tate'tedir.",
+    "gorsel": "62eccec95a249592"
+   },
+   {
+    "madde": 2,
+    "anahtar": "salvator-rosa|Death of Atilius Regulus",
+    "sanatci": "salvator-rosa",
+    "ad": "Fıçıya kapatılan adam",
+    "x": 0.3,
+    "y": 0.35,
+    "w": 0.4,
+    "h": 0.5,
+    "metin": "Bir fıçıya kapatılmaya çalışılan adam. Geç antik anlatıya göre Kartacalılar Regulus'u içi çivili bir fıçıya kapatıp tepeden yuvarlayarak öldürdü. Bu işkence hikâyesi, sözüne sadık kalan vatandaşın erdemini öven Roma geleneğinin parçasıdır. Salvator Rosa bu gravürde de kalabalık, hareketli figürlerle antik bir drama sahnesi kurar.",
+    "gorsel": "0e295a1b154318df"
+   }
+  ],
   "rest-on-the-flight-into-egypt": [
    {
     "madde": 0,
@@ -8483,6 +8623,44 @@
     "h": 0.55,
     "metin": "Kayalığın dibinde yere yığılmış, terk edilen Armida. Kalkanda kendini görüp utanan Rinaldo göreve döner; Armida yalvarır ama onu durduramaz. Hikâye 'aşk mı, görev mi' sorusunu sorar ve Tasso görevi seçer. Bu da Tiepolo'nun dört tuvallik Rinaldo dizisinin parçasıdır.",
     "gorsel": "dbdd73dad16b3062"
+   }
+  ],
+  "romulus-and-remus": [
+   {
+    "madde": 0,
+    "anahtar": "Q3940915",
+    "sanatci": "peter-paul-rubens",
+    "ad": "Emziren dişi kurt",
+    "x": 0.1,
+    "y": 0.45,
+    "w": 0.7,
+    "h": 0.4,
+    "metin": "İki tombul bebeği emziren dişi kurt. Livius'a göre Roma'nın kurucusu ikizler Romulus ile Remus, doğduktan sonra Tiber nehrine bırakıldı; bir dişi kurt onları bulup emzirdi. Bu imge Roma'nın simgesi oldu. Rubens bu tuvali İtalya'dan döndükten hemen sonra yaptı; Roma'da gördüğü antik 'Kapitol Kurdu' heykeli ona ilham verdi.",
+    "gorsel": "272ce77c8baf5fcc"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3940915",
+    "sanatci": "peter-paul-rubens",
+    "ad": "Ağaçkakan ve çoban",
+    "x": 0.5,
+    "y": 0.0,
+    "w": 0.5,
+    "h": 0.45,
+    "metin": "Ağacın dalında bir ağaçkakan ve arkasından bakan çoban. Ağaçkakan, Romulus'un babası sayılan savaş tanrısı Mars'ın kutsal kuşuydu; mite göre o da bebekleri besledi. Çoban Faustulus sonra ikizleri bulup karısı Acca Larentia ile büyüttü. Rubens ayrıntılarla dolu, canlı bir doğa sahnesi kurar.",
+    "gorsel": "272ce77c8baf5fcc"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3940915",
+    "sanatci": "peter-paul-rubens",
+    "ad": "Irmak tanrısı",
+    "x": 0.0,
+    "y": 0.1,
+    "w": 0.35,
+    "h": 0.4,
+    "metin": "Solda yaslanmış yaşlı, sakallı adam: Tiber ırmağının tanrısı. Antik heykellerde ırmaklar böyle yarı uzanmış, sakallı tanrılar olarak gösterilirdi; Roma'da Vatikan'daki ünlü 'Tiber' heykeli de bu tiptedir. Rubens bu figürü doğrudan antik heykelden uyarlar. Tuval Roma'daki Kapitol Müzeleri'ndedir.",
+    "gorsel": "272ce77c8baf5fcc"
    }
   ],
   "saint-agnes": [
@@ -8923,6 +9101,32 @@
     "h": 0.55,
     "metin": "Öne eğilmiş, sıvanmış pembe pelerinle sudan geçen dev. Hristoforos'un ağırlık altında zorlanan bedeni, çocuğun taşıdığı yükün dünyanın günahları olduğunu anlatır. Efsane yalnızca Altın Efsane gibi geç kaynaklara dayandığı için Katolik Kilisesi 1969'da onun bayramını genel takvimden çıkardı, ama aziz olarak saygı görmeye devam eder.",
     "gorsel": "f9ff4556c9b31fc3"
+   }
+  ],
+  "saint-elizabeth-of-hungary": [
+   {
+    "madde": 0,
+    "anahtar": "Q103838733",
+    "sanatci": "ambrogio-lorenzetti",
+    "ad": "Eteğindeki güller",
+    "x": 0.25,
+    "y": 0.75,
+    "w": 0.5,
+    "h": 0.2,
+    "metin": "Eteğinde taşıdığı kırmızı ve beyaz güller. Efsaneye göre Macaristanlı prenses Elisabeth (1207–1231), yoksullara gizlice ekmek taşırken kocası onu durdurdu; eteğini açtığında ekmekler güllere dönüşmüştü. Ambrogio Lorenzetti'nin bu üçgen panosu bir sunak dizisinin tepeliğidir; altın zemin ve sade figür Siena okulunun dilidir.",
+    "gorsel": "927be6f5cae347de"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3155079",
+    "sanatci": "petrus-christus",
+    "ad": "Elindeki taç",
+    "x": 0.3,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.2,
+    "metin": "Rahibe giysili Elisabeth'in elinde tuttuğu taç. Elisabeth kraliyet soyundandı ama dul kalınca dünyevi hayatı bırakıp Fransisken üçüncü tarikatına girdi ve yoksullar için hastane kurdu; elindeki taç vazgeçtiği dünyevi makamı simgeler. Petrus Christus burada onu Portekizli prenses Isabella'nın koruyucu azizesi olarak gösterir.",
+    "gorsel": "a59084c86f60eacd"
    }
   ],
   "saint-francis": [
@@ -10020,6 +10224,44 @@
     "h": 0.17
    }
   ],
+  "sappho": [
+   {
+    "madde": 0,
+    "anahtar": "Q79358025",
+    "sanatci": "angelica-kauffman",
+    "ad": "Yazan kadın şair",
+    "x": 0.0,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.85,
+    "metin": "Elinde yazı tableti, Eros'tan ilham alan kadın şair: Sappho. Sappho, MÖ 7.–6. yüzyılda Midilli (Lesbos) adasında yaşamış antik Yunan'ın en ünlü kadın lirik şairidir; Platon onu 'onuncu Musa' diye övdü. Angelica Kauffman, bu konuda bir kadın sanatçı olarak kendi yaratıcılığına da gönderme yapıyor gibidir.",
+    "gorsel": "53c4bd2b32ceb62c"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q79358025",
+    "sanatci": "angelica-kauffman",
+    "ad": "İlham veren Eros",
+    "x": 0.45,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.9,
+    "metin": "Sappho'nun kulağına fısıldayan kanatlı küçük Eros. Sappho'nun şiirlerinin büyük kısmı aşk üzerinedir ve bugün yalnızca parçalar hâlinde kalmıştır. Eros'un ona ilham vermesi, şiirin kaynağının aşk olduğunu anlatır. Kauffman'ın pastel renkleri ve zarif figürleri Neoklasik dilin yumuşak, duygusal yanını gösterir.",
+    "gorsel": "53c4bd2b32ceb62c"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q94997595",
+    "sanatci": "gustave-moreau",
+    "ad": "Kayalıkta yatan kadın",
+    "x": 0.0,
+    "y": 0.6,
+    "w": 0.6,
+    "h": 0.3,
+    "metin": "Kayalıkların dibinde yatan, kırmızı giysili kadın. Antik bir efsaneye göre Sappho, kayıkçı Phaon'a olan karşılıksız aşkı yüzünden Leukas adasındaki uçurumdan denize atladı. Moreau bu romantik hikâyeyi, batan güneşin kızıl ışığıyla, rüya gibi bir sahne olarak işler. Sembolizmin hüzünlü güzellik anlayışının örneğidir.",
+    "gorsel": "26fe90f5568fbd0e"
+   }
+  ],
   "satyrs-and-fauns": [
    {
     "madde": 0,
@@ -10520,6 +10762,44 @@
     "y": 0.0,
     "w": 0.27,
     "h": 0.42
+   }
+  ],
+  "telemachus": [
+   {
+    "madde": 0,
+    "anahtar": "Q3230385",
+    "sanatci": "jacques-louis-david",
+    "ad": "Sarılan peri ve genç",
+    "x": 0.05,
+    "y": 0.05,
+    "w": 0.75,
+    "h": 0.7,
+    "metin": "Birbirine sarılan genç ve peri: Telemakhos ile Eucharis. Konu Homeros'tan değil, Fénelon'un 'Telemakhos'un Serüvenleri' (1699) adlı romanından gelir; Odysseus'un oğlu Telemakhos, Kalypso'nun adasında peri Eucharis'e âşık olur ama ayrılmak zorunda kalır. David bu tuvali Brüksel'deki sürgün yıllarında yaptı.",
+    "gorsel": "9e3aec6e16a25901"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q19912157",
+    "sanatci": "angelica-kauffman",
+    "ad": "Yaşlı öğretmen Mentor",
+    "x": 0.2,
+    "y": 0.1,
+    "w": 0.25,
+    "h": 0.6,
+    "metin": "Solda kahverengi pelerinli, sakallı yaşlı adam: Mentor. Fénelon'un romanında Telemakhos'a babasını aramaya çıktığında Mentor kılığına girmiş bilgelik tanrıçası Athena eşlik eder. 'Mentor' sözcüğü, bu karakterden dolayı akıl hocası anlamını kazandı. Kauffman bu tuvallerini Kalypso'nun adasında geçen bir dizi olarak yaptı.",
+    "gorsel": "8659602912bbe1fb"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q19912047",
+    "sanatci": "angelica-kauffman",
+    "ad": "Ağlayan genç",
+    "x": 0.55,
+    "y": 0.25,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Perilerin arasında başını eline dayayıp kederle oturan genç: Telemakhos. Fénelon'un romanında Telemakhos, babasının hikâyelerini dinlerken üzüntüye kapılır. Bu roman 18. yüzyılda prenslere ahlak eğitimi için yazılmıştı ve çok okundu; Kauffman gibi Neoklasik ressamlar ondan duygusal sahneler seçti.",
+    "gorsel": "12b576115997c8ac"
    }
   ],
   "temptation-of-saint-anthony": [
