@@ -442,6 +442,44 @@
     "h": 0.26
    }
   ],
+  "antiochus-and-stratonice": [
+   {
+    "madde": 0,
+    "anahtar": "Q3590926",
+    "sanatci": "jacques-louis-david",
+    "ad": "Yatakta yatan prens",
+    "x": 0.05,
+    "y": 0.35,
+    "w": 0.35,
+    "h": 0.35,
+    "metin": "Yatakta bitkin yatan genç prens Antiochos. Plutarkhos'a göre Seleukos İmparatorluğu'nun veliahtı Antiochos, babasının genç karısı Stratonike'ye gizlice âşık olup hastalandı; hekim Erasistratos, Stratonike odaya girince prensin nabzının hızlandığını görüp nedeni buldu. David bu tuvalle 1774'te Roma Ödülü'nü kazandı.",
+    "gorsel": "ae1404388ea45508"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3590926",
+    "sanatci": "jacques-louis-david",
+    "ad": "İşaret eden hekim",
+    "x": 0.35,
+    "y": 0.3,
+    "w": 0.25,
+    "h": 0.4,
+    "metin": "Bir eliyle prensi tutup öbürüyle odaya giren kadını işaret eden hekim Erasistratos. Bu jest hikâyenin düğüm noktasıdır: hastalığın nedeni bedensel değil, duygusal bir aşktır. Hekim sonra krala durumu anlatır ve kral, oğlunun hayatı için karısını ona bırakır. Hikâye 18. yüzyılda babalık fedakârlığı ve aklın zaferi olarak okundu.",
+    "gorsel": "ae1404388ea45508"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3590926",
+    "sanatci": "jacques-louis-david",
+    "ad": "Başını eğen kraliçe",
+    "x": 0.55,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.6,
+    "metin": "Beyaz giysiler içinde başını öne eğmiş genç kraliçe Stratonike. David bu erken resminde hâlâ Rokoko'nun kalabalık, süslü düzenine yakındır; birkaç yıl sonra 'Horatiusların Yemini' ile sade, sert Neoklasik dilini bulacaktır. Kraliçenin utangaç duruşu sahnenin gizli duygusunu taşır.",
+    "gorsel": "ae1404388ea45508"
+   }
+  ],
   "apocalypse": [
    {
     "madde": 0,
@@ -1836,6 +1874,44 @@
     "h": 0.17
    }
   ],
+  "continence-of-scipio": [
+   {
+    "madde": 0,
+    "anahtar": "Q3207778",
+    "sanatci": "nicolas-poussin",
+    "ad": "Kürsüdeki genç general",
+    "x": 0.05,
+    "y": 0.15,
+    "w": 0.35,
+    "h": 0.65,
+    "metin": "Kürsüde oturan, başına defne çelengi takılan genç Romalı komutan Scipio. Livius'a göre Scipio İspanya'da Kartaca'yı yenince, esirler arasında güzel bir kız getirildi; Scipio kızı nişanlısına geri verdi ve fidye olarak getirilen altını düğün hediyesi yaptı. Bu hikâye bir komutanın kendine hâkim olma erdeminin örneği sayıldı. Tuval Moskova'daki Puşkin Müzesi'ndedir.",
+    "gorsel": "1200c574a6ebc032"
+   },
+   {
+    "madde": 1,
+    "anahtar": "Q3207778",
+    "sanatci": "nicolas-poussin",
+    "ad": "Başı önünde genç kadın",
+    "x": 0.33,
+    "y": 0.25,
+    "w": 0.2,
+    "h": 0.6,
+    "metin": "Mavi giysili, başını önüne eğmiş genç kadın: Scipio'ya getirilen esir. Poussin her figüre duygusunu açıkça gösteren bir jest verir: kızın alçakgönüllülüğü, nişanlısının minnettarlığı, komutanın cömertliği. Bu tür 'erdem örnekleri' (exemplum virtutis) 17. ve 18. yüzyılda hükümdarlara ders vermek için çok resmedildi.",
+    "gorsel": "1200c574a6ebc032"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q3207778",
+    "sanatci": "nicolas-poussin",
+    "ad": "Eğilen nişanlı",
+    "x": 0.5,
+    "y": 0.25,
+    "w": 0.25,
+    "h": 0.6,
+    "metin": "Scipio'ya doğru saygıyla eğilen kırmızı giysili genç: kızın nişanlısı Allucius. Livius'a göre Allucius, Scipio'nun bu cömertliğine karşılık olarak kendi kabilesinden süvarilerle Roma ordusuna katıldı. Böylece hikâye, bağışlamanın siyasi bir sadakat kazandırdığını da anlatır.",
+    "gorsel": "1200c574a6ebc032"
+   }
+  ],
   "conversion-of-saint-paul": [
    {
     "madde": 0,
@@ -2097,6 +2173,56 @@
     "y": 0.25,
     "w": 0.14,
     "h": 0.17
+   }
+  ],
+  "crucifixion-of-saint-andrew": [
+   {
+    "madde": 0,
+    "anahtar": "caravaggio|The Crucifixion of Saint Andrew",
+    "sanatci": "caravaggio",
+    "ad": "Haçtaki yaşlı havari",
+    "x": 0.35,
+    "y": 0.0,
+    "w": 0.4,
+    "h": 0.55,
+    "metin": "Haça bağlanmış, beyaz sakallı yaşlı adam: Andreas. Altın Efsane'ye göre Andreas Yunanistan'daki Patras'ta Roma valisi Aegeas tarafından çarmıha gerildi ve iki gün boyunca haçtan halka vaaz verdi. Caravaggio bu tuvali Napoli'deki İspanyol valisi için yaptı; bugün Cleveland Sanat Müzesi'ndedir.",
+    "gorsel": "d02b79004974cdeb"
+   },
+   {
+    "madde": 2,
+    "anahtar": "caravaggio|The Crucifixion of Saint Andrew",
+    "sanatci": "caravaggio",
+    "ad": "İplerle bağlanan kollar",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.45,
+    "h": 0.4,
+    "metin": "Azizin kollarını haça bağlayan ipler ve merdivendeki cellat. Efsaneye göre Andreas'ın acısını uzatmak için çivi yerine iple bağlandı. Halk onu indirmeleri için ayaklanınca cellatlar çözmeye çalıştı, ama elleri tutuldu: Andreas haçta ölmek istedi. Caravaggio bu anı, cellatın ipe uzandığı an olarak seçer.",
+    "gorsel": "d02b79004974cdeb"
+   },
+   {
+    "madde": 3,
+    "anahtar": "caravaggio|The Crucifixion of Saint Andrew",
+    "sanatci": "caravaggio",
+    "ad": "Zırhlı vali",
+    "x": 0.55,
+    "y": 0.55,
+    "w": 0.45,
+    "h": 0.43,
+    "metin": "Sağ altta parlak zırhlı adam: Roma valisi Aegeas. Altın Efsane'ye göre vali, azizi indirmeye karar verdiği anda kendisi de cezalandırıldı ve kısa süre sonra öldü. Caravaggio burada karanlıkta duran izleyicileri aziz ile vali arasında bir yarım halka gibi dizer; sert ışık bedeni öne çıkarır.",
+    "gorsel": "d02b79004974cdeb"
+   },
+   {
+    "madde": 4,
+    "anahtar": "Q29212009",
+    "sanatci": "charles-le-brun",
+    "ad": "Palmiye getiren melek",
+    "x": 0.25,
+    "y": 0.0,
+    "w": 0.45,
+    "h": 0.35,
+    "metin": "Yukarıda gökten şehitlik palmiyesiyle inen melek, aşağıda göğe kollarını açan Andreas. Le Brun bu tuvali Paris'teki Notre-Dame katedrali için her yıl ısmarlanan büyük 'Mayıs' resimlerinden biri olarak yaptı. Dönen, hareketli figürler Fransız Akademisi'nin henüz katı klasisizme yönelmeden önceki Barok dilini gösterir.",
+    "gorsel": "6745fdd4cbf5988b"
    }
   ],
   "crucifixion-of-saint-peter": [
@@ -5728,6 +5854,44 @@
     "gorsel": "1a5ac9213c796440"
    }
   ],
+  "martyrdom-of-the-ten-thousand": [
+   {
+    "madde": 0,
+    "anahtar": "Q664038",
+    "sanatci": "albrecht-durer",
+    "ad": "Dağlık manzarada kalabalık",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.55,
+    "metin": "Dağlık bir manzaraya yayılmış, öldürülen sayısız çıplak figür. Efsaneye göre Ararat dağında Hristiyanlığı kabul eden on bin Roma askeri, imparatorların emriyle türlü işkencelerle öldürüldü. Dürer bu tuvali Saksonya prensi Bilge Frederick için yaptı; bugün Viyana'dadır. Tek bir panoya yüzlerce figür sığdırması onun ayrıntı tutkusunu gösterir.",
+    "gorsel": "818169d745231e1c"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q664038",
+    "sanatci": "albrecht-durer",
+    "ad": "Sarıklı Doğulu kral",
+    "x": 0.55,
+    "y": 0.5,
+    "w": 0.35,
+    "h": 0.45,
+    "metin": "Ortada sarıklı, uzun kaftanlı Doğulu kral: işkenceleri yöneten hükümdar. Efsane olayı Pers kralı Sapor ile Roma imparatorları Hadrianus ve Antoninus'a bağlar; Dürer bu yüzden kötüleri kendi çağının Osmanlı kıyafetleriyle çizer. Resmin ortasında, elinde imzalı bir levha tutan siyah giysili Dürer'in kendisi de tanık olarak durur.",
+    "gorsel": "818169d745231e1c"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q131675981",
+    "sanatci": "jacopo-pontormo",
+    "ad": "Gökte melekler",
+    "x": 0.15,
+    "y": 0.0,
+    "w": 0.7,
+    "h": 0.3,
+    "metin": "Yukarıda bulutlar arasında, şehitlere taç ve palmiye getiren melekler. Pontormo bu konuyu Floransa'daki bir yetimhane için yaptı; on bin şehit, savaşta ölen askerlerin koruyucusu olarak da görülürdü. Aşağıdaki kıvrılan, sıkışık çıplak bedenler Michelangelo'nun etkisini, açık renkler ise Pontormo'nun Maniyerizmini gösterir.",
+    "gorsel": "866e8102d918a61d"
+   }
+  ],
   "mary-magdalene": [
    {
     "madde": 0,
@@ -6944,6 +7108,20 @@
     "h": 0.5,
     "metin": "Prometheus'u zincirleyen yaşlı demirci Vulcanus ve arkada kanatlı şapkalı, asalı Merkür. Aiskhylos'un 'Zincire Vurulmuş Prometheus' tragedyasında Hephaistos bu işi gönülsüzce yapar. Baburen bu tuvali Utrecht'e döndükten hemen sonra yaptı; Amsterdam'daki Rijksmuseum'dadır. Kısaltılmış yatık beden ve sert ışık Caravaggio'dan gelir.",
     "gorsel": "15e7d2a81a7ac6bb"
+   }
+  ],
+  "prophet-jeremiah": [
+   {
+    "madde": 0,
+    "anahtar": "Q3760996",
+    "sanatci": "michelangelo",
+    "ad": "Elini çenesine dayamış",
+    "x": 0.2,
+    "y": 0.05,
+    "w": 0.6,
+    "h": 0.55,
+    "metin": "Başını eline dayamış, düşünceye gömülmüş, ak sakallı yaşlı adam. Yeremya, Kudüs'ün Babil'e düşeceğini önceden bildirip halkını uyaran, sonra yıkımın yasını tutan peygamberdir; 'Ağıtlar' kitabı ona atfedilir. Sistina tavanındaki bu figürün yüzü, Michelangelo'nun kendi portresi olarak da yorumlanır.",
+    "gorsel": "ff6906ee4f4843ec"
    }
   ],
   "prophets": [
@@ -10181,6 +10359,56 @@
     "y": 0.17,
     "w": 0.22,
     "h": 0.36
+   }
+  ],
+  "washing-of-the-feet": [
+   {
+    "madde": 0,
+    "anahtar": "Q106492209",
+    "sanatci": "dirck-van-baburen",
+    "ad": "Ayak yıkayan İsa",
+    "x": 0.4,
+    "y": 0.3,
+    "w": 0.55,
+    "h": 0.6,
+    "metin": "Diz çökmüş, Petrus'un ayaklarını yıkayan İsa. Yuhanna İncili'ne göre Son Akşam Yemeği'nde İsa beline havlu bağlayıp öğrencilerinin ayaklarını yıkadı ve 'Ben, Rab ve Öğretmen, ayaklarınızı yıkadımsa, siz de birbirinizin ayaklarını yıkamalısınız' dedi. Bu alçakgönüllülük örneği, Kutsal Perşembe günü yapılan ayak yıkama töreninin kaynağıdır.",
+    "gorsel": "e6fe969de53add65"
+   },
+   {
+    "madde": 2,
+    "anahtar": "Q106492209",
+    "sanatci": "dirck-van-baburen",
+    "ad": "İtiraz eden Petrus",
+    "x": 0.6,
+    "y": 0.15,
+    "w": 0.35,
+    "h": 0.5,
+    "metin": "Elini kaldırıp itiraz eden yaşlı Petrus. Yuhanna'da Petrus önce 'Sen benim ayaklarımı asla yıkamayacaksın' der; İsa 'Seni yıkamazsam benimle bir payın olmaz' deyince 'O zaman yalnız ayaklarımı değil, ellerimi ve başımı da yıka' diye cevap verir. Baburen Utrecht Caravaggistlerindendir: sert ışık ve yakın plan figürler onun dilidir.",
+    "gorsel": "e6fe969de53add65"
+   },
+   {
+    "madde": 3,
+    "anahtar": "Q3828010",
+    "sanatci": "pietro-lorenzetti",
+    "ad": "Sırasını bekleyen havariler",
+    "x": 0.25,
+    "y": 0.35,
+    "w": 0.7,
+    "h": 0.25,
+    "metin": "Sıra hâlinde oturmuş, haleli havariler: kimi şaşkınlıkla bakar, kimi sandaletini çıkarır. Pietro Lorenzetti bu freski Assisi'deki Aziz Franciscus Bazilikası'nın alt kilisesinde, Çile sahnelerini anlatan dizinin parçası olarak yaptı. Figürlerin arkasındaki Gotik kemerli mimari, olayın geçtiği odayı bir sahne gibi kurar.",
+    "gorsel": "3a8e9cff0b2d9581"
+   },
+   {
+    "madde": 5,
+    "anahtar": "Q75846",
+    "sanatci": "tintoretto",
+    "ad": "Arkada sofra",
+    "x": 0.3,
+    "y": 0.1,
+    "w": 0.5,
+    "h": 0.6,
+    "metin": "Arka planda uzanan sofra ve çevresindeki havariler: Son Akşam Yemeği'nin odası. Tintoretto bu dev tuvali Venedik'teki San Marcuola kilisesi için yaptı; bugün Madrid'deki Prado'dadır. Derin, kare döşemeli zemin ve uzaklaşan mimari, onun sahne gibi perspektif kurma ustalığını gösterir.",
+    "gorsel": "352569074210eb91"
    }
   ],
   "witches": [
