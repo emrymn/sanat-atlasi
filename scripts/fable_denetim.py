@@ -73,6 +73,8 @@ def indir(url, hedef, ua=UA):
     if hedef.exists() and hedef.stat().st_size > 0:
         return True
     for deneme in range(4):
+        if "wikimedia.org" in url:
+            time.sleep(1.5)  # Wikimedia'yı yormamak için
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": ua}), timeout=180) as r:
                 hedef.write_bytes(r.read())

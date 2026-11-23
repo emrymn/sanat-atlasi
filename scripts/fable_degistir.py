@@ -101,8 +101,9 @@ def ayni_eser_dosyalari(qid):
     return list(dict.fromkeys(a.replace(" ", "_") for a in adlar))
 
 
-def bilgiler(adlar, genislik=1568):
-    """Commons dosyalarının boyu, türü, özgün ve küçültülmüş adresi"""
+def bilgiler(adlar, genislik=1280):
+    """genislik: Wikimedia'nın hazır küçük boylarından biri (1280, 1920, 3840); başka boy ya da özgün dosya istenirse
+    Wikimedia kısa sürede "çok istek" (429) der. Commons dosyalarının boyu, türü, özgün ve küçültülmüş adresi"""
     sonuc = {}
     for i in range(0, len(adlar), 40):
         r = wiki(COMMONS, action="query", prop="imageinfo", iiprop="url|size|mime", iiurlwidth=genislik,
@@ -177,7 +178,7 @@ def hazirla(args):
                 a["dosya"] = ""
                 continue
             if nokta:
-                genis = min(a["boyut"][0], 3000)
+                genis = 3840 if a["boyut"][0] > 3840 else 1920
                 ham = ADAY / f"{sid}-A{j}-ham.jpg"
                 bil = bilgiler([a["ad"]], genislik=genis).get(a["ad"], {})
                 if d.indir(bil.get("thumburl") or a["url"], ham, WIKI_UA):
