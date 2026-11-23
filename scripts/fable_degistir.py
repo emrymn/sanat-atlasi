@@ -413,15 +413,13 @@ def uygula(args):
         e = yur[sid]
         eski_gorsel = e.get("gorsel")
         if s[0] == "A":
-            eski_ad = {p["ad"]: p for p in e["noktalar"]}
-            yeni = [p for p in v.get("noktalar", []) if p["ad"] in eski_ad and nokta_gecerli(p)]
-            if len(yeni) == len(e["noktalar"]):
-                for p in yeni:
-                    for x in ("x", "y", "w", "h"):
-                        eski_ad[p["ad"]][x] = round(p[x], 3)
             ham = indirme / f"{sid}.jpg"
             print(f"{sid}: aynı eserin kopyası indiriliyor ({aday['boyut'][0]}×{aday['boyut'][1]})")
-            if not d.indir(aday["url"], ham, WIKI_UA):
+            # ozgun dosya Wikimedia'dan 429 alir; hazir 3840'lik boy yeter (en cok 4096'ya kuculur)
+            adres = aday["url"]
+            if aday["boyut"][0] > 3840:
+                adres = bilgiler([aday["ad"]], genislik=3840).get(aday["ad"], {}).get("thumburl") or adres
+            if not d.indir(adres, ham, WIKI_UA):
                 continue
             buyuk = indirme / f"{sid}-buyuk.jpg"
             W, H = d.boyut(ham)
@@ -434,6 +432,13 @@ def uygula(args):
             r2_yukle(kucuk, anahtar[:-4] + "-1280.jpg")
             e["buyuk"] = anahtar
             e.pop("kirp", None)
+            # kutular yalniz yeni kopya yuklendiyse yeni resme gore duzeltilir
+            eski_ad = {p["ad"]: p for p in e["noktalar"]}
+            yeni = [p for p in v.get("noktalar", []) if p["ad"] in eski_ad and nokta_gecerli(p)]
+            if len(yeni) == len(e["noktalar"]):
+                for p in yeni:
+                    for x in ("x", "y", "w", "h"):
+                        eski_ad[p["ad"]][x] = round(p[x], 3)
         else:
             noktalar = [p for p in v.get("noktalar", []) if nokta_gecerli(p) and p.get("metin")]
             if not 4 <= len(noktalar) <= 7:
