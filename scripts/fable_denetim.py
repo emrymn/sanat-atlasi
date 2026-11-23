@@ -69,16 +69,19 @@ def adresler(sid, e, kaynak):
     return kucuk, buyuk
 
 
-def indir(url, hedef):
+def indir(url, hedef, ua=UA):
     if hedef.exists() and hedef.stat().st_size > 0:
         return True
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=120) as r:
-            hedef.write_bytes(r.read())
-        return True
-    except Exception as hata:
-        print(f"  indirilemedi: {url} ({hata})")
-        return False
+    for deneme in range(4):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": ua}), timeout=180) as r:
+                hedef.write_bytes(r.read())
+            return True
+        except Exception as hata:
+            if deneme == 3 or "429" not in str(hata):
+                print(f"  indirilemedi: {url} ({hata})")
+                return False
+            time.sleep(10 * 2 ** deneme)  # Wikimedia "çok istek": bekleyip yeniden
 
 
 # --- görsel işleme: macOS'ta sips, yoksa (Linux'ta deneme) Pillow ---
