@@ -33,6 +33,24 @@
      "rehberli": true
     },
     {
+     "sanatci": "bonaventura-berlinghieri",
+     "eser": "Saint Francis of Assisi and scenes of his life",
+     "yil": 1235,
+     "qid": "Q3947103",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
+     "sanatci": "giotto-di-bondone",
+     "eser": "Lamentation",
+     "yil": 1305,
+     "qid": "Q2067212",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
      "sanatci": "duccio-di-buoninsegna",
      "eser": "The Nativity with the Prophets Isaiah and Ezekiel",
      "yil": 1308,
@@ -51,28 +69,10 @@
      "rehberli": false
     },
     {
-     "sanatci": "bonaventura-berlinghieri",
-     "eser": "Diptych: Madonna and Child with Saints",
-     "yil": 1255,
-     "qid": "Q141671268",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
      "sanatci": "cimabue",
      "eser": "The Madonna and Child in Majesty Surrounded by Angels",
      "yil": 1300,
      "qid": "Q1608116",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
-     "sanatci": "giotto-di-bondone",
-     "eser": "İsa'nın Çarmıha Gerilişi",
-     "yil": 1317,
-     "qid": "Q3698217",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -898,6 +898,15 @@
    ],
    "gor": [
     {
+     "sanatci": "masaccio",
+     "eser": "Coin in the fish's mouth",
+     "yil": 1420,
+     "qid": "Q1759631",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
      "sanatci": "pietro-perugino",
      "eser": "İsa'nın Anahtarları Petrus'a Vermesi (Perugino)",
      "yil": 1480,
@@ -925,13 +934,13 @@
      "rehberli": false
     },
     {
-     "sanatci": "masaccio",
-     "eser": "The Holy Trinity (fresk)",
-     "yil": null,
-     "qid": null,
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
+     "sanatci": "piero-della-francesca",
+     "eser": "Flagellation of Christ",
+     "yil": 1459,
+     "qid": "Q1212920",
+     "nokta": 6,
+     "kurs": false,
+     "rehberli": true
     },
     {
      "sanatci": "fra-angelico",
@@ -956,15 +965,6 @@
      "eser": "St George slaying the dragon",
      "yil": 1423,
      "qid": "Q16599926",
-     "nokta": 6,
-     "kurs": false,
-     "rehberli": false
-    },
-    {
-     "sanatci": "piero-della-francesca",
-     "eser": "Virgin and Child Enthroned with Four Angels",
-     "yil": 1475,
-     "qid": "Q3842514",
      "nokta": 6,
      "kurs": false,
      "rehberli": false
@@ -1487,6 +1487,24 @@
      "rehberli": true
     },
     {
+     "sanatci": "robert-campin",
+     "eser": "Mérode Altarpiece",
+     "yil": null,
+     "qid": "Q285392",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
+     "sanatci": "quentin-metsys",
+     "eser": "The Moneylender and his Wife",
+     "yil": 1514,
+     "qid": "Q2892964",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
      "sanatci": "lucas-cranach-yasl",
      "eser": "The fountain of youth",
      "yil": 1546,
@@ -1497,19 +1515,10 @@
     },
     {
      "sanatci": "hans-baldung-grien",
-     "eser": "The Seven Ages of Woman",
-     "yil": 1544,
-     "qid": "Q104715170",
+     "eser": "The Ages and Death",
+     "yil": 1541,
+     "qid": "Q4462828",
      "nokta": 6,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
-     "sanatci": "robert-campin",
-     "eser": "Donor Henri de Werl, protected by St. John the Baptist",
-     "yil": 1438,
-     "qid": "Q18508784",
-     "nokta": 5,
      "kurs": true,
      "rehberli": false
     },
@@ -1527,15 +1536,6 @@
      "eser": "Death and the Miser",
      "yil": 1480,
      "qid": "Q2203011",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
-     "sanatci": "quentin-metsys",
-     "eser": "Salome is given the head of John the Baptist",
-     "yil": 1511,
-     "qid": "Q21614511",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -2687,7 +2687,7 @@
      "qid": "Q1206860",
      "nokta": 7,
      "kurs": true,
-     "rehberli": false
+     "rehberli": true
     },
     {
      "sanatci": "tintoretto",
@@ -2714,7 +2714,7 @@
      "qid": "Q15008032",
      "nokta": 6,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     },
     {
      "sanatci": "giorgione",
@@ -2723,7 +2723,7 @@
      "qid": "Q2537695",
      "nokta": 5,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     }
    ],
    "ogren": [
@@ -3225,28 +3225,28 @@
      "rehberli": true
     },
     {
-     "sanatci": "jacopo-pontormo",
-     "eser": "Deposition",
-     "yil": 1525,
-     "qid": "Q3705703",
+     "sanatci": "parmigianino",
+     "eser": "The Vision of Saint Jerome",
+     "yil": 1526,
+     "qid": "Q3275305",
      "nokta": 5,
      "kurs": true,
      "rehberli": true
+    },
+    {
+     "sanatci": "jacopo-pontormo",
+     "eser": "Visitation of Carmignano",
+     "yil": 1528,
+     "qid": "Q1109475",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": false
     },
     {
      "sanatci": "giulio-romano",
      "eser": "Dona Isabel de Requesens Portresi",
      "yil": 1518,
      "qid": "Q3399388",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
-     "sanatci": "parmigianino",
-     "eser": "The Vision of Saint Jerome",
-     "yil": 1526,
-     "qid": "Q3275305",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -3262,9 +3262,9 @@
     },
     {
      "sanatci": "daniele-da-volterra",
-     "eser": "David and Goliath",
-     "yil": 1552,
-     "qid": "Q3019055",
+     "eser": "Michelangelo Buonarroti",
+     "yil": 1545,
+     "qid": "Q19911651",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -3285,7 +3285,7 @@
      "qid": "Q3705718",
      "nokta": 5,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     }
    ],
    "ogren": [
@@ -3828,19 +3828,19 @@
      "rehberli": true
     },
     {
-     "sanatci": "annibale-carracci",
-     "eser": "Assumption of the Virgin",
-     "yil": 1587,
-     "qid": "Q4810381",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
      "sanatci": "caravaggio",
      "eser": "The Conversion of Saint Paul",
      "yil": 1600,
      "qid": "Q2273517",
+     "nokta": 5,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
+     "sanatci": "annibale-carracci",
+     "eser": "Assumption of the Virgin",
+     "yil": 1587,
+     "qid": "Q4810381",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -4498,7 +4498,7 @@
      "qid": "Q208758",
      "nokta": 6,
      "kurs": true,
-     "rehberli": false
+     "rehberli": true
     },
     {
      "sanatci": "francisco-de-zurbaran",
@@ -5243,19 +5243,19 @@
      "rehberli": false
     },
     {
-     "sanatci": "frans-hals",
-     "eser": "Young Man and Woman in an Inn",
-     "yil": 1623,
-     "qid": "Q17355822",
-     "nokta": 5,
+     "sanatci": "jan-steen",
+     "eser": "The Happy Family",
+     "yil": 1668,
+     "qid": "Q17342250",
+     "nokta": 6,
      "kurs": false,
      "rehberli": false
     },
     {
-     "sanatci": "jan-steen",
-     "eser": "Choice between richness and youth",
-     "yil": 1663,
-     "qid": "Q9379088",
+     "sanatci": "frans-hals",
+     "eser": "Young Man and Woman in an Inn",
+     "yil": 1623,
+     "qid": "Q17355822",
      "nokta": 5,
      "kurs": false,
      "rehberli": false
@@ -6305,29 +6305,38 @@
    ],
    "gor": [
     {
-     "sanatci": "mattia-preti",
-     "eser": "Feast of Herod",
-     "yil": 1658,
-     "qid": "Q28796906",
-     "nokta": 5,
-     "kurs": false,
-     "rehberli": false
-    },
-    {
-     "sanatci": "giuseppe-maria-crespi",
-     "eser": "Searching for Fleas",
-     "yil": 1720,
-     "qid": "Q18685524",
-     "nokta": 5,
-     "kurs": false,
-     "rehberli": false
-    },
-    {
      "sanatci": "salvator-rosa",
      "eser": "Allegory of Fortune",
      "yil": 1658,
      "qid": "Q20087469",
      "nokta": 4,
+     "kurs": false,
+     "rehberli": true
+    },
+    {
+     "sanatci": "giuseppe-maria-crespi",
+     "eser": "Amor and Psyche (Crespiego)",
+     "yil": 1709,
+     "qid": "Q9150125",
+     "nokta": 6,
+     "kurs": false,
+     "rehberli": false
+    },
+    {
+     "sanatci": "giovanni-battista-piazzetta",
+     "eser": "Rebecca at the Well",
+     "yil": 1740,
+     "qid": "Q20092326",
+     "nokta": 6,
+     "kurs": false,
+     "rehberli": false
+    },
+    {
+     "sanatci": "mattia-preti",
+     "eser": "Feast of Herod",
+     "yil": 1658,
+     "qid": "Q28796906",
+     "nokta": 5,
      "kurs": false,
      "rehberli": false
     },
@@ -6381,15 +6390,6 @@
      "eser": "Christ attended by Angels",
      "yil": 1705,
      "qid": "Q27755383",
-     "nokta": 4,
-     "kurs": false,
-     "rehberli": false
-    },
-    {
-     "sanatci": "giovanni-battista-piazzetta",
-     "eser": "Accademia - L'indovina 1740-1745 - Giambattista Piazzetta",
-     "yil": 1740,
-     "qid": "Q9378247",
      "nokta": 4,
      "kurs": false,
      "rehberli": false
@@ -7864,19 +7864,19 @@
      "rehberli": true
     },
     {
-     "sanatci": "j-m-w-turner",
-     "eser": "The Fighting Temeraire",
-     "yil": 1839,
-     "qid": "Q257580",
-     "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
      "sanatci": "eugene-delacroix",
      "eser": "The Barque of Dante",
      "yil": 1822,
      "qid": "Q2354251",
+     "nokta": 5,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
+     "sanatci": "j-m-w-turner",
+     "eser": "The Fighting Temeraire",
+     "yil": 1839,
+     "qid": "Q257580",
      "nokta": 5,
      "kurs": true,
      "rehberli": false
@@ -8468,19 +8468,19 @@
    "gor": [
     {
      "sanatci": "william-holman-hunt",
-     "eser": "The Lady of Shalott",
-     "yil": 1890,
-     "qid": "Q98113753",
-     "nokta": 5,
+     "eser": "The Awakening Conscience",
+     "yil": 1853,
+     "qid": "Q7715071",
+     "nokta": 6,
      "kurs": false,
      "rehberli": false
     },
     {
      "sanatci": "dante-gabriel-rossetti",
-     "eser": "Proserpine",
-     "yil": 1874,
-     "qid": "Q977777",
-     "nokta": 5,
+     "eser": "Ecce Ancilla Domini",
+     "yil": 1850,
+     "qid": "Q2425901",
+     "nokta": 6,
      "kurs": false,
      "rehberli": false
     },
@@ -8931,7 +8931,7 @@
      "qid": "Q2665048",
      "nokta": 5,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     },
     {
      "sanatci": "alexandre-cabanel",
@@ -8940,7 +8940,7 @@
      "qid": "Q1212861",
      "nokta": 4,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     }
    ],
    "ogren": [
@@ -9492,19 +9492,19 @@
      "rehberli": true
     },
     {
-     "sanatci": "camille-corot",
-     "eser": "Diana and Actaeon (Diana Surprised in Her Bath)",
-     "yil": 1836,
-     "qid": "Q20184292",
-     "nokta": 4,
+     "sanatci": "theodore-rousseau",
+     "eser": "Les Chênes d'Apremont",
+     "yil": 1850,
+     "qid": "Q15710908",
+     "nokta": 6,
      "kurs": false,
      "rehberli": false
     },
     {
-     "sanatci": "theodore-rousseau",
-     "eser": "Le Printemps",
-     "yil": 1852,
-     "qid": "Q15711219",
+     "sanatci": "camille-corot",
+     "eser": "Diana and Actaeon (Diana Surprised in Her Bath)",
+     "yil": 1836,
+     "qid": "Q20184292",
      "nokta": 4,
      "kurs": false,
      "rehberli": false
@@ -9970,20 +9970,20 @@
      "rehberli": true
     },
     {
+     "sanatci": "claude-monet",
+     "eser": "Impression, Sunrise",
+     "yil": 1872,
+     "qid": "Q328523",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": true
+    },
+    {
      "sanatci": "edgar-degas",
      "eser": "Bale Sınıfı (Degas, Metropolitan Sanat Müzesi)",
      "yil": 1874,
      "qid": "Q18758802",
      "nokta": 5,
-     "kurs": true,
-     "rehberli": false
-    },
-    {
-     "sanatci": "claude-monet",
-     "eser": "Gare Saint-Lazare (Monet series)",
-     "yil": 1877,
-     "qid": "Q49985736",
-     "nokta": 4,
      "kurs": true,
      "rehberli": false
     },
@@ -10445,7 +10445,7 @@
      "qid": "Q252485",
      "nokta": 5,
      "kurs": false,
-     "rehberli": false
+     "rehberli": true
     }
    ],
    "ogren": [
@@ -10801,20 +10801,20 @@
      "rehberli": false
     },
     {
+     "sanatci": "paul-signac",
+     "eser": "Opus 217. Against the Enamel of a Background Rhythmic with Beats and Angles, Tones, and Tints, Portrait of M. Félix Fénéon in 1890",
+     "yil": 1890,
+     "qid": "Q19883434",
+     "nokta": 6,
+     "kurs": false,
+     "rehberli": false
+    },
+    {
      "sanatci": "henri-de-toulouse-lautrec",
      "eser": "At the Moulin Rouge",
      "yil": 1892,
      "qid": "Q3607521",
      "nokta": 5,
-     "kurs": false,
-     "rehberli": false
-    },
-    {
-     "sanatci": "paul-signac",
-     "eser": "Women by the Well",
-     "yil": 1892,
-     "qid": "Q17491488",
-     "nokta": 4,
      "kurs": false,
      "rehberli": false
     }
@@ -11998,15 +11998,6 @@
    ],
    "gor": [
     {
-     "sanatci": "ernst-ludwig-kirchner",
-     "eser": "Berlin Street Scene",
-     "yil": 1913,
-     "qid": "Q3476580",
-     "nokta": 6,
-     "kurs": true,
-     "rehberli": true
-    },
-    {
      "sanatci": "edvard-munch",
      "eser": "Çığlık (tablo)",
      "yil": 1893,
@@ -12014,6 +12005,15 @@
      "nokta": 5,
      "kurs": true,
      "rehberli": true
+    },
+    {
+     "sanatci": "ernst-ludwig-kirchner",
+     "eser": "Street, Berlin",
+     "yil": 1913,
+     "qid": "Q19883652",
+     "nokta": 6,
+     "kurs": true,
+     "rehberli": false
     },
     {
      "sanatci": "wassily-kandinsky",
