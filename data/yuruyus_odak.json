@@ -35,7 +35,57 @@
   "e3a7a09cffa62fac": "el-greco",
   "a1a25dc07b167736": "masaccio",
   "240bcac8b1ffb49e": "claude-monet",
-  "e3ad1487857b631e": "giotto-di-bondone"
+  "e3ad1487857b631e": "giotto-di-bondone",
+  "0046e2e02d29d311": "dante-gabriel-rossetti",
+  "73bcd30d2749de8d": "pietro-lorenzetti",
+  "5eb818a7ff99db9b": "duccio-di-buoninsegna",
+  "4f9c53be410d8bfb": "andrea-mantegna",
+  "360cb5f67fabb880": "pietro-perugino",
+  "3efa5d25daeeeb18": "paolo-uccello",
+  "8504132f54cfa496": "lucas-cranach-yasl",
+  "216d1fc681535d27": "pieter-bruegel-yasl",
+  "eb8c139d8dece1e7": "giorgione",
+  "ff3cda4a0775290c": "tintoretto",
+  "1e0d4386895b479c": "titian",
+  "11eee36df13c3e46": "agnolo-bronzino",
+  "4050570cfca96c5a": "gerrit-van-honthorst",
+  "15e7d2a81a7ac6bb": "dirck-van-baburen",
+  "84ccbd6d864998c8": "bartolomeo-manfredi",
+  "c834f2f7a27fc418": "guercino",
+  "c9537882e46158dd": "jusepe-de-ribera",
+  "ad9b916603c6b8d6": "peter-paul-rubens",
+  "bcb91846d700eabf": "diego-velazquez",
+  "294a50e3d597e924": "rembrandt-van-rijn",
+  "36fba19ef8d66dac": "johannes-vermeer",
+  "8b584e7da3fbc5dd": "jacob-van-ruisdael",
+  "b3807b3653b11d37": "francisco-de-zurbaran",
+  "d36079ae725729fb": "andrea-pozzo",
+  "ae76f3f2a6e6a0cf": "claude-lorrain",
+  "fcedd7646bb7cd30": "giovanni-battista-gaulli",
+  "bf5742ab3ec171f0": "jean-antoine-watteau",
+  "a93e740cef4dea3c": "alessandro-magnasco",
+  "849127cc0c76ca35": "caspar-david-friedrich",
+  "8659602912bbe1fb": "angelica-kauffman",
+  "eb3609f1c9d0d6bb": "canaletto",
+  "a62f7e5895ffe0a5": "john-constable",
+  "2310e62cc103ef4b": "theodore-gericault",
+  "3f7db2264c5ec610": "jean-auguste-dominique-ingres",
+  "a0904037462b2efe": "john-everett-millais",
+  "0e77dc7a212e8824": "jean-francois-millet",
+  "fc48981aa80fd5fa": "william-adolphe-bouguereau",
+  "add2a220428c86b6": "camille-corot",
+  "ec8fa8c8c29d8f14": "edgar-degas",
+  "c588e1df5d9253e6": "camille-pissarro",
+  "6bcf504dffe8e1db": "georges-seurat",
+  "a71b0a727cd86d8f": "paul-gauguin",
+  "f1c9d98c0c261d50": "gustave-moreau",
+  "2b52e29084e42706": "vincent-van-gogh",
+  "dc0619994cf3b2e1": "arnold-bocklin",
+  "90b532e3be2fa2f5": "pierre-puvis-de-chavannes",
+  "409de8256c60fe8d": "edvard-munch",
+  "59f6aaafa6cd99ea": "pablo-picasso",
+  "f35e7e24663d3a27": "wassily-kandinsky",
+  "156e64ca42db8f19": "franz-marc"
  },
  "odak": {
   "af51df81fcaa607b": [
@@ -68,23 +118,23 @@
   ],
   "f8bcd45668591a51": [
    30,
-   48
+   68
   ],
   "618b12f07913aeb4": [
-   62,
-   55
+   48,
+   36
   ],
   "dcff0d8adc24cc19": [
-   60,
-   48
+   37,
+   50
   ],
   "f08b0bdcd00dc972": [
    28,
    50
   ],
   "562f15ca3f17c538": [
-   50,
-   30
+   54,
+   32
   ],
   "b380c040a712bdba": [
    44,
@@ -115,8 +165,116 @@
    40
   ],
   "e3ad1487857b631e": [
-   24,
-   80
+   22,
+   73
+  ],
+  "0046e2e02d29d311": [
+   49,
+   20
+  ],
+  "73bcd30d2749de8d": [
+   50,
+   36
+  ],
+  "5eb818a7ff99db9b": [
+   43,
+   42
+  ],
+  "5f89fc48ceabb25d": [
+   39,
+   60
+  ],
+  "360cb5f67fabb880": [
+   47,
+   60
+  ],
+  "8504132f54cfa496": [
+   52,
+   60
+  ],
+  "216d1fc681535d27": [
+   33,
+   58
+  ],
+  "9fe74bd524f1be98": [
+   33,
+   42
+  ],
+  "1e0d4386895b479c": [
+   40,
+   40
+  ],
+  "84ccbd6d864998c8": [
+   23,
+   36
+  ],
+  "c834f2f7a27fc418": [
+   47,
+   36
+  ],
+  "b3807b3653b11d37": [
+   20,
+   50
+  ],
+  "d36079ae725729fb": [
+   50,
+   44
+  ],
+  "bf5742ab3ec171f0": [
+   56,
+   57
+  ],
+  "849127cc0c76ca35": [
+   50,
+   40
+  ],
+  "8659602912bbe1fb": [
+   65,
+   32
+  ],
+  "0e77dc7a212e8824": [
+   35,
+   50
+  ],
+  "ec8fa8c8c29d8f14": [
+   42,
+   40
+  ],
+  "4016e12af98da014": [
+   49,
+   54
+  ],
+  "7de1ea60cd498981": [
+   41,
+   36
+  ],
+  "c588e1df5d9253e6": [
+   37,
+   55
+  ],
+  "a71b0a727cd86d8f": [
+   56,
+   25
+  ],
+  "2b52e29084e42706": [
+   60,
+   35
+  ],
+  "90b532e3be2fa2f5": [
+   59,
+   45
+  ],
+  "409de8256c60fe8d": [
+   52,
+   51
+  ],
+  "59f6aaafa6cd99ea": [
+   62,
+   50
+  ],
+  "f35e7e24663d3a27": [
+   40,
+   40
   ]
  },
  "yakin": {
@@ -130,7 +288,35 @@
   "3e754c9aae3c41f3": 1.45,
   "e3a7a09cffa62fac": 1.5,
   "870f58ce77c32209": 1.5,
-  "e3ad1487857b631e": 1.5
+  "e3ad1487857b631e": 1.8,
+  "5f89fc48ceabb25d": 1.4,
+  "4f9c53be410d8bfb": 1.3,
+  "360cb5f67fabb880": 1.5,
+  "3efa5d25daeeeb18": 1.5,
+  "8504132f54cfa496": 1.5,
+  "216d1fc681535d27": 1.5,
+  "ff3cda4a0775290c": 1.2,
+  "4050570cfca96c5a": 1.3,
+  "bcb91846d700eabf": 1.45,
+  "294a50e3d597e924": 1.2,
+  "36fba19ef8d66dac": 1.3,
+  "8b584e7da3fbc5dd": 1.3,
+  "b3807b3653b11d37": 1.25,
+  "d36079ae725729fb": 1.3,
+  "ae76f3f2a6e6a0cf": 1.5,
+  "fcedd7646bb7cd30": 1.3,
+  "bf5742ab3ec171f0": 1.5,
+  "a93e740cef4dea3c": 1.7,
+  "849127cc0c76ca35": 1.3,
+  "a62f7e5895ffe0a5": 1.6,
+  "3f7db2264c5ec610": 1.5,
+  "f8bcd45668591a51": 1.3,
+  "add2a220428c86b6": 1.8,
+  "4016e12af98da014": 1.35,
+  "c588e1df5d9253e6": 1.3,
+  "f1c9d98c0c261d50": 1.3,
+  "409de8256c60fe8d": 1.3,
+  "156e64ca42db8f19": 1.3
  },
  "kirp": {
   "a1e25f5e264f3123": [
