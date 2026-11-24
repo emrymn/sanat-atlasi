@@ -4,7 +4,13 @@
 Açılış karesi (js/yuruyus.js yuruyusBaslat, ACILIS_Y): tablo telefonu kaplar (yakin ile çarpılır); odak noktası yatayda
 ortaya, dikeyde ekranın %36'sına gelir; resim ekranı hep kapladığı için kenara yakın odak oraya kadar gidemez. Altta
 sanatçının adı, eserin adı ve düğmeler var. Odak önceliği (js/gorsel.js adlaOdak): Emre'nin elle seçtiği > bu dosya
-(data/yuruyus_odak.json) > otomatik yüz odağı (data/gorsel_odak.json) > [50, 40]. Elle odağı olan eser atlanır.
+(data/yuruyus_odak.json) > otomatik yüz odağı (data/gorsel_odak.json) > [50, 40].
+
+Elle odak (Emre, 2026-11-24: "elle odağı da değiştirebilsin"): elle odağı olan eser de Fable'a gider, şu anki kare elle
+odaktan çizilir. Fable değiştirirse ve sen reddetmezsen `uygula` data/gorsel_odak_elle.json'daki noktayı Fable'ınkiyle
+değiştirir (elle odak her ekranda önde olduğundan başka türlü Bugün'e geçmez; Galeri gibi kırpılan yerler de bu noktayı
+kullanır). Telefonda bu cihazda işaretlenen odaklar (Ayarlar → Elle odaklar) hepsinin önündedir; Fable'ınkiler görünsün
+diye onlar telefonda silinmeli.
 
 Fable'a tablonun bütünü ve şu anki açılış karesi gider; odak (x, y yüzde) ve yakin (1–1,8) döner ya da "şu anki iyi" der.
 İnceleme sayfası eski ve yeni kareyi telefon çerçevesinde yan yana gösterir; beğenmediğini --reddet ile çıkarırsın.
@@ -65,8 +71,9 @@ def kare(IW, IH, kirp, odak, yakin):
     return x, y, gw, gh
 
 
-def simdiki_odak(gorsel, odak_dosyasi, otomatik):
-    for kaynak, o in (("yürüyüş denetimi", odak_dosyasi["odak"].get(gorsel)), ("otomatik yüz odağı", otomatik.get(gorsel))):
+def simdiki_odak(gorsel, odak_dosyasi, otomatik, elle):
+    for kaynak, o in (("elle", elle.get(gorsel)), ("yürüyüş denetimi", odak_dosyasi["odak"].get(gorsel)),
+                      ("otomatik yüz odağı", otomatik.get(gorsel))):
         if isinstance(o, list) and len(o) == 2:
             return o, kaynak
     return [50, 40], "varsayılan"
@@ -95,16 +102,13 @@ def hazirla(args):
             print(f"{sid}: yürüyüşte yok, atlandı")
             continue
         g = e["gorsel"]
-        if g in elle:
-            print(f"[{i}/{len(hedef)}] {sid}: elle seçilmiş odak var, atlandı")
-            continue
         kucuk, _ = d.adresler(sid, e, kaynak)
         ham = KLASOR / f"{sid}.jpg"
         if not d.indir(kucuk, ham):
             continue
         IW, IH = d.boyut(ham)
         kirp = e.get("kirp") or odak_dosyasi["kirp"].get(g) or [0, 0, 1, 1]
-        odak, nereden = simdiki_odak(g, odak_dosyasi, otomatik)
+        odak, nereden = simdiki_odak(g, odak_dosyasi, otomatik, elle)
         yakin = float(odak_dosyasi["yakin"].get(g) or 1)
         x, y, gw, gh = kare(IW, IH, kirp, odak, yakin)
         d.kirp_kucult(ham, KLASOR / f"{sid}-kare.jpg", (int(x), int(y), int(gw), int(gh)), 900)
@@ -289,21 +293,26 @@ def uygula(args):
     sonuc = oku(SONUC, {})
     liste = {k["id"]: k for k in oku(LISTE, [])}
     yur = oku(KOK / "data" / "yuruyus.json")["eserler"]
-    elle = oku(KOK / "data" / "gorsel_odak_elle.json")["odak"]
+    elle_yol = KOK / "data" / "gorsel_odak_elle.json"
+    elle_veri = oku(elle_yol)
+    elle = elle_veri["odak"]
     yol = KOK / "data" / "yuruyus_odak.json"
     veri = oku(yol)
-    degisen = []
+    degisen, elle_degisen = [], []
     for sid, v in sonuc.items():
         k = liste.get(sid)
         if not k or "hata" in v or v.get("reddedildi") or v.get("simdiki_iyi"):
             continue
         g = k["gorsel"]
-        if yur.get(sid, {}).get("gorsel") != g or g in elle:
-            print(f"{sid}: görsel değişmiş ya da elle odak var, atlandı")
+        if yur.get(sid, {}).get("gorsel") != g:
+            print(f"{sid}: görsel değişmiş, atlandı")
             continue
         x, y = min(100, max(0, int(v["odak_x"]))), min(100, max(0, int(v["odak_y"])))
         yakin = round(max(1.0, min(YAKIN_EN_COK, float(v["yakin"]))), 2)
         veri["odak"][g] = [x, y]
+        if g in elle:  # elle odak önde: Bugün'e ancak o nokta değişirse geçer
+            elle[g] = [x, y]
+            elle_degisen.append(sid)
         if yakin > 1.01:
             veri["yakin"][g] = yakin
         else:
@@ -314,9 +323,14 @@ def uygula(args):
         print("Uygulanacak odak yok.")
         return
     yol.write_text(json.dumps(veri, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if elle_degisen:
+        elle_yol.write_text(json.dumps(elle_veri, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print(f"{len(degisen)} eserin açılış odağı yazıldı: {', '.join(degisen)}")
-    print('Sonra: npm run test:unit && git add data/yuruyus_odak.json && git commit -m "Bugün: Fable açılış odakları" '
-          "&& git push")
+    if elle_degisen:
+        print(f"Bunların {len(elle_degisen)} tanesinin elle odağı da değişti (data/gorsel_odak_elle.json): "
+              f"{', '.join(elle_degisen)}")
+    print('Sonra: npm run test:unit && git add data/yuruyus_odak.json data/gorsel_odak_elle.json && '
+          'git commit -m "Bugün: Fable açılış odakları" && git push')
 
 
 def main():
