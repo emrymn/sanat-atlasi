@@ -333,10 +333,12 @@ def uygula(args):
             continue
         x, y = min(100, max(0, int(v["odak_x"]))), min(100, max(0, int(v["odak_y"])))
         yakin = round(max(1.0, min(YAKIN_EN_COK, float(v["yakin"]))), 2)
-        veri["odak"][g] = [x, y]
-        if g in elle:  # elle odak önde: Bugün'e ancak o nokta değişirse geçer
+        if g in elle:  # elle odak önde: Bugün'e ancak o nokta değişirse geçer; yürüyüş odağına yazılmaz (yuruyus.test)
             elle[g] = [x, y]
+            veri["odak"].pop(g, None)
             elle_degisen.append(sid)
+        else:
+            veri["odak"][g] = [x, y]
         if yakin > 1.01:
             veri["yakin"][g] = yakin
         else:
