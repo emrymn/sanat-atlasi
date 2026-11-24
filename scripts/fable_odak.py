@@ -189,12 +189,36 @@ def gonder(args):
     if not args.evet and input("Gönderilsin mi? (e/h) ").strip().lower() not in ("e", "evet", "y"):
         return
     d.anahtar()
-    idler = []
-    for i in range(0, len(liste), 30):
-        govde = {"requests": [{"custom_id": k["id"], "params": istek_govdesi(k)} for k in liste[i:i + 30]]}
-        idler.append(json.loads(d.api("/messages/batches", govde))["id"])
-        print(f"  gönderildi: {idler[-1]}")
-    yaz(KAYIT, {"idler": idler, "gonderildi": time.strftime("%Y-%m-%d %H:%M")})
+    # Emre (2026-11-24, 145 eser): 30'luk paket (~50 MB) yüklenirken bağlantı koptu ("Broken pipe"). Artık 10'luk
+    # paketler; her paket üç kez denenir ve gönderilen her paket hemen kaydedilir: yarıda kalırsa `gonder` yeniden
+    # çalıştırılınca yalnız gönderilmeyenler gider (aynı liste için).
+    k0 = oku(KAYIT, {})
+    ayni = k0.get("liste") == [k["id"] for k in liste] and not k0.get("tamam")
+    idler = list(k0.get("idler", [])) if ayni else []
+    gonderilen = set(k0.get("gonderilen", [])) if ayni else set()
+    kalan = [k for k in liste if k["id"] not in gonderilen]
+    if gonderilen:
+        print(f"  önceden gönderilen {len(gonderilen)} eser atlandı, {len(kalan)} kaldı")
+    PAKET = 10
+    for i in range(0, len(kalan), PAKET):
+        parca = kalan[i:i + PAKET]
+        govde = {"requests": [{"custom_id": k["id"], "params": istek_govdesi(k)} for k in parca]}
+        for deneme in range(3):
+            try:
+                idler.append(json.loads(d.api("/messages/batches", govde))["id"])
+                break
+            except Exception as hata:
+                if deneme == 2:
+                    yaz(KAYIT, {"idler": idler, "liste": [k["id"] for k in liste], "gonderilen": sorted(gonderilen),
+                                "tamam": False, "gonderildi": time.strftime("%Y-%m-%d %H:%M")})
+                    sys.exit(f"Gönderilemedi ({hata}). Bağlantını kontrol edip yeniden çalıştır: python3 scripts/fable_odak.py "
+                             "gonder — gönderilenler yeniden gitmez.")
+                print(f"  bağlantı hatası ({hata}); {10 * (deneme + 1)} sn sonra yeniden deneniyor")
+                time.sleep(10 * (deneme + 1))
+        gonderilen |= {k["id"] for k in parca}
+        yaz(KAYIT, {"idler": idler, "liste": [k["id"] for k in liste], "gonderilen": sorted(gonderilen),
+                    "tamam": len(gonderilen) >= len(liste), "gonderildi": time.strftime("%Y-%m-%d %H:%M")})
+        print(f"  gönderildi: {idler[-1]} ({len(gonderilen)}/{len(liste)})")
     print("Sonra (birkaç dakika–bir saat): python3 scripts/fable_odak.py al")
 
 
