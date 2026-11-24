@@ -16,6 +16,7 @@ Sonra inceleme sayfası: eski / yeni yan yana, ayrıntı kutuları çizili. Beğ
 Çalıştır (depo kökünde; önce fable_denetim.py al bitmiş olmalı):
   export ANTHROPIC_API_KEY=...
   python3 scripts/fable_degistir.py hazirla          # adayları toplar (Commons; birkaç dakika)
+  python3 scripts/fable_degistir.py hazirla --idler bonaventura-berlinghieri --baska   # yalnız bu esere başka eser
   python3 scripts/fable_degistir.py gonder           # tahmini maliyet + onay, Fable'a gönderir
   python3 scripts/fable_degistir.py al               # bitince seçimleri alır, inceleme sayfasını açar
   python3 scripts/fable_degistir.py al --reddet id1,id2   # beğenmediklerini çıkar (sayfa yeniden açılır)
@@ -116,6 +117,12 @@ def bilgiler(adlar, genislik=1280):
 
 
 def hazirla(args):
+    def sorun(sid):
+        if args.baska:
+            return {"sorunlar": ["Emre başka bir eser istiyor"],
+                    "aciklama": "Bu eserin yerine sanatçının başka bir eserini seç (B); aynı eserin kopyası (A) istenmiyor."}
+        return denetim.get(sid) or {"sorunlar": ["Emre değiştirilmesini istedi"], "aciklama": ""}
+
     denetim = oku(d.SONUC, {})
     yur = oku(KOK / "data" / "yuruyus.json")["eserler"]
     kaynak = oku(KOK / "data" / "gorsel_kaynagi.json")
@@ -126,6 +133,16 @@ def hazirla(args):
     onceki = {k["id"]: k for k in istekler}
     kararlar = {"degistir"} | ({"supheli"} if args.supheli else set())
     secilen = [sid for sid, v in denetim.items() if v.get("karar") in kararlar and sid in yur]
+    # Emre (2026-11-24): "berlinghieri de başka resim seçsin" — denetimin kararından bağımsız, adı verilen eserler
+    if args.idler:
+        secilen = [x.strip() for x in args.idler.split(",") if x.strip()]
+        eksik = [x for x in secilen if x not in yur]
+        if eksik:
+            sys.exit(f"yürüyüşte yok: {', '.join(eksik)}")
+        if SECIM.exists():   # önceki turun seçimleri bu turla karışıp yeniden uygulanmasın
+            yedek = SECIM.with_name(f"secimler-{time.strftime('%Y%m%d-%H%M%S')}.json")
+            SECIM.rename(yedek)
+            print(f"Önceki seçimler saklandı: {yedek.relative_to(KOK)}")
     if args.dene:
         secilen = secilen[: args.dene]
     print(f"{len(secilen)} eser için aday aranıyor")
@@ -139,7 +156,7 @@ def hazirla(args):
         oran0 = W0 / H0 if H0 else 0
         # A · aynı eser
         a_aday = []
-        if e.get("qid"):
+        if e.get("qid") and not args.baska:
             adlar = ayni_eser_dosyalari(e["qid"])
             for g in ((katalog.get(sid) or {}).get("eserler") or []):
                 if g.get("qid") == e["qid"]:
@@ -198,7 +215,7 @@ def hazirla(args):
                 b["dosya"] = ""
         b_aday = [b for b in b_aday if b.get("dosya")]
         liste.append({"id": sid, "sanatci": (eski or {}).get("sanatci", sid), "eser": e.get("eser"), "yil": e.get("yil"),
-                      "eski": eski, "sorun": denetim[sid], "noktalar": e.get("noktalar"), "A": a_aday, "B": b_aday})
+                      "eski": eski, "sorun": sorun(sid), "noktalar": e.get("noktalar"), "A": a_aday, "B": b_aday})
         print(f"   {len(a_aday)} aynı eser kopyası, {len(b_aday)} başka eser")
     yaz(ADAYLAR, liste)
     print(f"\nHazır: {ADAYLAR.relative_to(KOK)}. Şimdi: python3 scripts/fable_degistir.py gonder")
@@ -474,6 +491,8 @@ def main():
     h = alt.add_parser("hazirla")
     h.add_argument("--supheli", action="store_true", help="şüpheli bulunanlara da aday ara")
     h.add_argument("--dene", type=int, default=0)
+    h.add_argument("--idler", default="", help="yalnız bu sanatçılar (virgülle); denetimin kararına bakılmaz")
+    h.add_argument("--baska", action="store_true", help="aynı eserin kopyası aranmaz, sanatçının başka eseri seçilir (B)")
     g = alt.add_parser("gonder")
     g.add_argument("--evet", action="store_true")
     a = alt.add_parser("al")
