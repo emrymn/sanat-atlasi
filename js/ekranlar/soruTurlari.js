@@ -58,8 +58,17 @@ export function soruTurlariHtml(hatalar = '', atolye = false) {
     `<a class="hatalar-satir" href="${href}" data-test="${test}"><span class="hatalar-sayi" aria-hidden="true">${sayi}</span><span class="metin"><b>${baslik}</b><span>${alt}</span></span>${ikon('ileri', 20, 1.4)}</a>`;
   // 1.76.3: Karşılaştır Galeri'den buraya taşındı (en çok karıştırılan ikili, yoksa açık ilk iki akım)
   const kars = karsilastirSecimi();
-  return `<section class="bolum pk-ek-turlar${atolye ? ' calis-belir' : ''}" data-test="ek-turlar" aria-labelledby="ek-turlar-baslik">
-      ${atolye ? '<p class="calis-panel-not" id="ek-turlar-baslik">Aynı eserlere, farklı sorularla yeniden bak.</p>' : '<div class="pk-bolum-bas"><h2 class="pk-baslik" id="ek-turlar-baslik">Başka turlar</h2></div>'}
+  // 1.91.0: Çalış'ta (atolye) başlığı Çalış verir; turlar tek gruplu liste (ızgara değil), her satır tam genişlik
+  if (atolye)
+    return `<div class="ck-grup ck-turlar" data-test="ek-turlar">
+      ${hatalar}
+      ${satir('#/pekistir/donem', 'donem-turu', ikon('sekme-harita', 18, 1.6), 'Döneme göre', 'Salon salon çalış').replace('<a ', '<a data-salonlara ')}
+      ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Hangi bölümde?')}
+      ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'İncil, mitoloji, tarih')}
+      ${kars ? satir(kars.href, 'gz-karsilastir', ikon('karsilastir', 18, 1.6), 'Karşılaştır', kars.alt) : ''}
+    </div>`;
+  return `<section class="bolum pk-ek-turlar" data-test="ek-turlar" aria-labelledby="ek-turlar-baslik">
+      <div class="pk-bolum-bas"><h2 class="pk-baslik" id="ek-turlar-baslik">Başka turlar</h2></div>
       <div class="tur-izgara">
       ${hatalar}
       <a class="hatalar-satir" href="#/pekistir/donem" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span>${atolye ? ikon('ileri', 20, 1.4) : ''}</a>

@@ -51,6 +51,7 @@ import {
 import { turBilgisi } from './bugun.js';
 import { durumlar as bolumDurumu, bolumler as tumBolumler } from './harita.js';
 import { devamKarti, devamResmiDoldur, hatalarSatiri } from './pekistir.js';
+import { ritimHtml } from './calisma.js';
 import { soruTurlariHtml } from './soruTurlari.js';
 import { dersKaynagi, dersAdresi } from './dersVerisi.js';
 
@@ -125,20 +126,49 @@ const adimAciklamasi = (b, adim) =>
       ? `Nasıl tanınır? ${b.ogren.length} özellik`
       : `Komşu dönemlerle ${b.ayirt.length} ikili`;
 
-// Adım halkaları (bugünün dersi kartı): biten yeşil ✓, süren altın halka ve "3/7", bekleyen sıra numarası; sonda harita
-// (ders bitince açılır)
-function adimHalkalari(b) {
+// 1.91.0 · Çalış'ta süre tahmini: bir birimin (ayrıntı, özellik, ikili) yaklaşık süresi, saniye. Yalnız arayüz tahmini;
+// "≈" ile yazılır. Günlük tekrarın kartı 20 sn (eski "Yaklaşık N dk" ile aynı).
+const BIRIM_SANIYE = { gor: 25, ogren: 60, ayirt: 75 };
+const KART_SANIYE = 20;
+const dakika = (sn) => Math.max(1, Math.round(sn / 60));
+
+// Adımın süresi: { toplam, kalan } saniye (kalan: görülmemiş birimler)
+function adimSuresi(b, adim) {
+  const s = adimSayisi(b, adim);
+  const bitti = b.durum.adimlar.find((x) => x.adim === adim)?.bitti;
+  return { toplam: s.toplam * BIRIM_SANIYE[adim], kalan: bitti ? 0 : Math.max(0, s.toplam - s.gorulen) * BIRIM_SANIYE[adim] };
+}
+
+// Dersin süreye göre ağırlıklı ilerlemesi (0–1): kapaktaki tablo bu oranda renklenir, listede küçük resim de
+function renkOrani(b) {
+  let toplam = 0;
+  let biten = 0;
+  for (const x of b.durum.adimlar) {
+    const s = adimSuresi(b, x.adim);
+    toplam += s.toplam;
+    biten += x.bitti ? s.toplam : Math.min(1, x.i) * s.toplam;
+  }
+  return toplam ? Math.min(1, biten / toplam) : 0;
+}
+
+// Dersin zaman şeridi (bugünün kartı): her adım süresi kadar uzun; biten yeşil, süren pirinç, sonda harita (ders bitince
+// açılır). Bölüm numarası yok; adımın adı ve sayısı yazılı.
+function adimSeridi(b) {
   const harita = b.durum.bitti
-    ? `<li><a class="ders-adim haritaya" href="#/harita" data-test="adim-harita" aria-label="Haritaya geç"><span class="ders-halka" aria-hidden="true">${ikon('harita', 16, 1.7)}</span><span class="ders-adim-ad" aria-hidden="true">Harita</span></a></li>`
-    : `<li><span class="ders-adim haritaya kapali" data-test="adim-harita" aria-label="Harita: ders bitince açılır"><span class="ders-halka" aria-hidden="true">${ikon('harita', 16, 1.7)}</span><span class="ders-adim-ad" aria-hidden="true">Harita</span></span></li>`;
-  return `<ol class="ders-adimlar" aria-label="Dersin adımları" style="--n:${b.adimlar.length + 1}">${b.durum.adimlar
-    .map((x, i) => {
+    ? `<li class="ck-adim-harita"><a class="ck-adim" href="#/harita" data-test="adim-harita" aria-label="Haritaya geç">${ikon('harita', 18, 1.6)}</a></li>`
+    : `<li class="ck-adim-harita"><span class="ck-adim kapali" data-test="adim-harita" role="img" aria-label="Harita: ders bitince açılır">${ikon('harita', 18, 1.6)}</span></li>`;
+  return `<ol class="ck-adimlar" aria-label="Dersin adımları">${b.durum.adimlar
+    .map((x) => {
       const say = adimSayisi(b, x.adim);
       const hal = x.bitti ? 'bitti' : x.adim === b.durum.siradaki ? 'simdi' : '';
-      const ic = x.bitti ? ikon('dogru', 16, 2.2) : say.yazi && hal === 'simdi' ? say.yazi : String(i + 1);
       const okunus = x.bitti ? 'tamam' : say.yazi ? `sürüyor, ${say.yazi}` : 'bekliyor';
-      const oran = hal === 'simdi' ? ` style="--oran:${Math.max(6, Math.round((say.toplam ? say.gorulen / say.toplam : 0) * 100))}%"` : '';
-      return `<li><a class="ders-adim ${hal}" href="${dersAdresi(b.akim, x.adim)}" data-test="adim-${x.adim}" aria-label="${x.ad}: ${okunus}"><span class="ders-halka" aria-hidden="true"${oran}>${ic}</span><span class="ders-adim-ad" aria-hidden="true">${x.ad}</span></a></li>`;
+      const oran = x.bitti ? 100 : Math.round((say.toplam ? say.gorulen / say.toplam : 0) * 100);
+      const agirlik = Math.max(2, Math.round(adimSuresi(b, x.adim).toplam / 30));
+      const sag = x.bitti ? ikon('dogru', 14, 2.2) : say.yazi || `${say.toplam}`;
+      return `<li style="flex-grow:${agirlik}"><a class="ck-adim ${hal}" href="${dersAdresi(b.akim, x.adim)}" data-test="adim-${x.adim}" aria-label="${x.ad}: ${okunus}">
+          <span class="ck-adim-iz" aria-hidden="true"><i style="--oran:${oran}%"></i></span>
+          <span class="ck-adim-ad" aria-hidden="true"><b>${x.ad}</b><small>${sag}</small></span>
+        </a></li>`;
     })
     .join('')}${harita}</ol>`;
 }
@@ -176,22 +206,14 @@ function devamAltYazisi(b, a, say) {
   return `${say.gorulen} / ${say.toplam} ${birim}${a === 'gor' ? ` · ${b.gor.eserler.length} eser` : ''}`;
 }
 
-function devamDugmesi(b, test = 'ders-devam', sahne = false) {
+function devamDugmesi(b, test = 'ders-devam') {
   // İş 191: ders bittiyse düğme haritaya götürür (Sına'nın yerine)
-  if (!b.durum.siradaki && !sahne)
+  if (!b.durum.siradaki)
     return `<a class="ders-dugme dolu" href="#/harita" data-test="${test}" data-adim="harita"><span>Haritaya geç</span>${ikon('harita', 18, 1.7)}</a>`;
-  const a = b.durum.siradaki || b.adimlar[0];
-  const suruyor = b.kayit[a].i > 0 && !b.durum.adimlar.find((x) => x.adim === a).bitti;
-  const yazi = !b.durum.siradaki ? 'Dersi yeniden aç' : suruyor ? `${ADIM_ADLARI[a]} adımına devam` : `${ADIM_ADLARI[a]} adımını aç`;
-  const say = b.durum.siradaki ? adimSayisi(b, a) : null;
-  // 1.89.2 (Emre tuvalde "B"yi seçti): Çalış'ta devam, bugünün dersi kartının son satırı: adımın adı, altında sayısı
-  if (sahne) {
-    const alt = b.durum.siradaki ? devamAltYazisi(b, a, say) : '';
-    return `<a class="ders-devam-satir" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}">
-        <span class="ders-devam-yazi"><b>${yazi}</b>${alt ? `<small>${kacis(alt)}</small>` : ''}</span>
-        <span class="ders-devam-ok" aria-hidden="true">${ikon('ileri', 18, 2)}</span>
-      </a>`;
-  }
+  const a = b.durum.siradaki;
+  const suruyor = b.kayit[a].i > 0;
+  const yazi = suruyor ? `${ADIM_ADLARI[a]} adımına devam` : `${ADIM_ADLARI[a]} adımını aç`;
+  const say = adimSayisi(b, a);
   return `<a class="ders-dugme dolu" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}"><span>${yazi}</span>${say && say.yazi ? `<small>${say.yazi}</small>` : ikon('ileri', 18, 1.8)}</a>`;
 }
 
@@ -203,56 +225,111 @@ const konuAraligi = (b) => {
 const dersKunyesi = (b) => [`${b.acik.length} sanatçı`, konuAraligi(b)].filter(Boolean).join(' · ');
 
 // ---------- Çalış'ın girişi ----------
-function bugunKarti(b) {
-  return `<section class="ders-bugun" data-test="bugunun-dersi" data-akim="${kacis(b.akim)}" aria-label="Bugünün dersi">
-      <a class="ders-bugun-kapak" href="${dersAdresi(b.akim)}" data-test="bugunun-dersi-ac">
-        <span class="ders-kapak-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="960" aria-hidden="true"></span>
-        <span class="ders-bugun-yazi"><span class="ders-etiket">Bugünün dersi</span><b>${kacis(b.akim)}</b><small>${kacis(dersKunyesi(b))}</small></span>
-      </a>
-      ${adimHalkalari(b)}
-      <div class="ders-bugun-alt">
-        ${b.durum.siradaki === 'gor' ? '' : `<p class="ders-davet">${davet(b)}</p>`}
-        ${devamDugmesi(b, 'ders-devam', true)}
-      </div>
-    </section>`;
+// 1.91.0 · "Bugün" kartı: bugünün dersi ve günlük tekrar tek kartta. Kapaktaki tablo ders ilerledikçe soldan sağa
+// renklenir (ck-perde kalan payı gri tutar); altında süreye göre bölünmüş adım şeridi, bugünün sırası ve tek dolu düğme.
+// Kapaktaki yakınlaşma (İş 191, kapak-yuru) .ders-bugun-kapak / .ders-kapak-resim sınıflarından gelir; sınıflar korunur.
+const sonRenk = new Map(); // bu oturumda gösterilen son renk oranı: geri dönünce perde oradan yeni yerine kayar
+
+function planSatiri({ href, test, hal, baslik, alt, sure = '', ek = '', etiket = '' }) {
+  return `<li><a class="ck-plan-satir ${hal}" href="${href}" data-test="${test}"${etiket ? ` aria-label="${kacis(etiket)}"` : ''}>
+      <span class="ck-plan-im" aria-hidden="true">${hal === 'bitti' ? ikon('dogru', 12, 2.6) : ''}</span>
+      <span class="ck-plan-yazi"><b>${baslik}</b><small>${alt}</small></span>
+      ${ek}${sure ? `<span class="ck-plan-sure">${sure}</span>` : ''}
+    </a></li>`;
 }
 
-function tekrarKarti(tur, dersler = []) {
-  // 1.81.0: solda açık derslerin kapaklarından küçük bir deste; yelpaze gibi açılıp kapanır
+function kapakHtml(b) {
+  const renk = Math.round(renkOrani(b) * 100);
+  const once = sonRenk.has(b.akim) ? Math.min(sonRenk.get(b.akim), renk) : 0;
+  sonRenk.set(b.akim, renk);
+  return `<a class="ders-bugun-kapak ck-kapak" href="${dersAdresi(b.akim)}" data-test="bugunun-dersi-ac" style="--renk:${renk}%;--renk-once:${once}%" aria-label="Bugünün dersi: ${kacis(b.akim)}, yüzde ${renk} tamam">
+      <span class="ders-kapak-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="960" aria-hidden="true"></span>
+      <span class="ck-perde" aria-hidden="true"></span>
+      <span class="ck-renk" aria-hidden="true">${renk ? `%${renk} renkli` : 'İlerledikçe renklenir'}</span>
+      <span class="ck-kapak-yazi" aria-hidden="true"><span class="ck-ust">Bugünün dersi</span><b>${kacis(b.akim)}</b><small>${kacis(dersKunyesi(b))}</small></span>
+    </a>
+    ${adimSeridi(b)}`;
+}
+
+function bugunKarti(b, tur, dersler) {
+  const gun = bugun();
+  const satirlar = [];
+  let sn = 0;
+  let basla = '';
+  if (b) {
+    for (const x of b.durum.adimlar)
+      if (x.bitti && b.kayit[x.adim].t === gun)
+        satirlar.push(planSatiri({ href: dersAdresi(b.akim, x.adim), test: `plan-bitti-${x.adim}`, hal: 'bitti', baslik: `${x.ad} bitti`, alt: 'Bugün' }));
+    const a = b.durum.siradaki;
+    const kalan = adimSuresi(b, a).kalan;
+    sn += kalan;
+    const suruyor = b.kayit[a].i > 0;
+    satirlar.push(
+      planSatiri({
+        href: dersAdresi(b.akim, a),
+        test: 'plan-ders',
+        hal: 'simdi',
+        baslik: suruyor ? `${ADIM_ADLARI[a]} adımına devam` : `${ADIM_ADLARI[a]} adımı`,
+        alt: kacis(devamAltYazisi(b, a, adimSayisi(b, a))),
+        sure: `≈ ${dakika(kalan)} dk`,
+      }),
+    );
+    basla = `<a class="ck-basla" href="${dersAdresi(b.akim, a)}" data-test="ders-devam" data-adim="${a}"><span><b>${suruyor ? 'Devam et' : 'Başla'}</b><small>${ADIM_ADLARI[a]}${tur.toplam ? ', sonra tekrar' : ''}</small></span>${ikon('ileri', 20, 2)}</a>`;
+  }
+  const bugunKart = ((d.ilerleme.gecmis || {})[gun] || {}).kart || 0;
+  const tsn = tur.toplam * KART_SANIYE;
+  sn += tsn;
   const deste = dersler
     .slice(0, 3)
-    .map((x) => `<i data-ders-kapak="${kacis(x.akim)}"></i>`)
+    .map((x) => `<i data-ders-kapak="${kacis(x.akim)}" data-genislik="200"></i>`)
     .join('');
-  const pek = tur.zayif + tur.diger;
-  const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
   const parca = [
     ['tekrar', tur.tekrar],
-    ['pek', pek],
+    ['pek', tur.zayif + tur.diger],
     ['yeni', tur.yeni],
   ].filter(([, n]) => n);
-  return `<a class="ders-tekrar tek-satir" href="#/pekistir/karisik" data-test="karisik-dugme" aria-label="Günlük tekrar: ${tur.toplam} kart, başlat">
-      <span class="ders-tekrar-govde">
-        ${deste ? `<span class="ders-deste" aria-hidden="true">${deste}</span>` : ''}
-        <span class="ders-tekrar-yazi"><span class="ders-tekrar-etiket">Günlük tekrar</span><span class="ders-tekrar-sayi"><b data-test="tur-sayi">${tur.toplam}</b> kart</span><small>${tur.toplam ? `<span>Yaklaşık ${dk} dk</span>` : ''}<span data-test="tur-alt">${kacis(turAltYazisi(tur))}</span></small></span>
-        <span class="ders-tekrar-git" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span>
-      </span>
-      ${parca.length ? `<span class="ders-tekrar-cubuk" aria-hidden="true">${parca.map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`).join('')}</span>` : ''}
-    </a>`;
+  const karisim = parca.length ? `<span class="ck-karisim" aria-hidden="true">${parca.map(([c, n]) => `<i class="k-${c}" style="flex-grow:${n}"></i>`).join('')}</span>` : '';
+  const tekrarAlt = tur.toplam ? turAltYazisi(tur) : bugunKart ? `bugün ${bugunKart} kart bitti` : turAltYazisi(tur);
+  satirlar.push(
+    planSatiri({
+      href: '#/pekistir/karisik',
+      test: 'karisik-dugme',
+      hal: !tur.toplam ? 'bitti' : b ? 'sonra' : 'simdi',
+      baslik: `Günlük tekrar · <span data-test="tur-sayi">${tur.toplam}</span> kart`,
+      alt: `<span data-test="tur-alt">${kacis(tekrarAlt)}</span>${karisim}`,
+      sure: tur.toplam ? `≈ ${dakika(tsn)} dk` : '',
+      ek: deste ? `<span class="ck-deste" aria-hidden="true">${deste}</span>` : '',
+      etiket: `Günlük tekrar: ${tur.toplam} kart, başlat`,
+    }),
+  );
+  if (!b && tur.toplam)
+    basla = `<a class="ck-basla" href="#/pekistir/karisik" data-test="tekrar-basla"><span><b>Tekrara başla</b><small>${tur.toplam} kart</small></span>${ikon('ileri', 20, 2)}</a>`;
+  const bitti = !b && dersler.length ? '<p class="ck-not" data-test="dersler-bitti">Açık derslerin hepsi tamam. Aşağıdan istediğini yeniden açabilirsin.</p>' : '';
+  return `<section class="ck-bugun ck-belir" data-test="bugunun-dersi" data-akim="${b ? kacis(b.akim) : ''}" aria-label="Bugün">
+      ${b ? kapakHtml(b) : ''}
+      <div class="ck-plan">
+        <div class="ck-plan-bas"><span class="ck-ust">Bugünün sırası</span><b data-test="plan-sure">${sn ? `≈ ${dakika(sn)} dk` : 'Bugünlük tamam'}</b></div>
+        ${bitti}
+        <ol class="ck-plan-liste">${satirlar.join('')}</ol>
+        ${basla}
+      </div>
+    </section>`;
 }
 
 const HAL_AD = { bitti: 'Bitti', suruyor: 'Sürüyor', sirada: 'Sırada' };
 function dersSatiri(b, bugunku = null) {
   const hal = dersHali(b.durum);
-  const bugun = b.akim === bugunku && hal !== 'bitti';
-  return `<li class="calis-belir"><a class="ders-satir ${hal}${bugun ? ' bugunku' : ''}" href="${dersAdresi(b.akim)}" data-test="ders-satir" data-akim="${kacis(b.akim)}">
-      <span class="calis-eser"><span class="ders-satir-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="640" aria-hidden="true"></span><span class="ders-satir-hal${bugun ? ' bugun' : ''}">${bugun ? 'Bugünün dersi' : HAL_AD[hal]}</span><span class="calis-satir-ok" aria-hidden="true">${ikon('ileri', 18, 1.6)}</span></span>
-      <span class="ders-satir-yazi"><b>${kacis(b.akim)}</b><small>${b.acik.length} sanatçı · ${b.adimlar.length} adım</small>${adimCizgileri(b, bugun ? b.durum.siradaki : null)}</span>
+  const bugunMu = b.akim === bugunku && hal !== 'bitti';
+  return `<li><a class="ck-satir ${hal}" href="${dersAdresi(b.akim)}" data-test="ders-satir" data-akim="${kacis(b.akim)}">
+      <span class="ck-satir-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="200" aria-hidden="true" style="--renk:${renkOrani(b).toFixed(2)}"></span>
+      <span class="ck-satir-yazi"><b>${kacis(b.akim)}</b><small>${b.acik.length} sanatçı · ${b.adimlar.length} adım</small>${adimCizgileri(b, bugunMu ? b.durum.siradaki : null)}</span>
+      <span class="ck-satir-hal${bugunMu ? ' bugun' : ''}">${bugunMu ? 'Bugün' : HAL_AD[hal]}</span>
     </a></li>`;
 }
 function kilitliSatir(a) {
-  return `<li><div class="ders-satir kilitli" data-test="ders-kilitli">
-      <span class="ders-satir-resim" aria-hidden="true">${ikon('kilit', 20, 1.6)}</span>
-      <span class="ders-satir-yazi"><b>${kacis(a.ad)}</b><small>${a.acilacagiKonu ? `Konu ${bulunmaEki(a.acilacagiKonu)} açılır` : 'Henüz açılmadı'}</small></span>
+  return `<li><div class="ck-satir kilitli" data-test="ders-kilitli">
+      <span class="ck-satir-resim" aria-hidden="true">${ikon('kilit', 18, 1.6)}</span>
+      <span class="ck-satir-yazi"><b>${kacis(a.ad)}</b><small>${a.acilacagiKonu ? `Konu ${bulunmaEki(a.acilacagiKonu)} açılır` : 'Henüz açılmadı'}</small></span>
     </div></li>`;
 }
 
@@ -281,69 +358,42 @@ export async function dersMenusu() {
   const sirali = akimlar.filter((a) => dersBul(kaynak, a.ad));
   const aciklar = sirali.filter((a) => a.acik).map((a) => dersBilgisi(kaynak, a.ad));
   const kilitliler = sirali.filter((a) => !a.acik);
+  const durak = yolculukAkimi();
   const bugunku = bugununDersi({
     acikAkimlar: aciklar.map((b) => b.akim),
     ilerleme: d.ilerleme,
-    yolculukAkimi: yolculukAkimi(),
+    yolculukAkimi: durak,
     adimlar: (ad) => aciklar.find((b) => b.akim === ad).adimlar,
   });
   const b = aciklar.find((x) => x.akim === bugunku);
-  const baslik = `${sayfaZemini(b ? akiminDonemi(b.akim) : simdikiDonem())}<header class="ders-bas"><h1 tabindex="-1">Çalış</h1><span class="ders-konum" data-test="ders-konum">${kacis(konumYazisi())}</span></header>`;
+  const baslik = `${sayfaZemini(b ? akiminDonemi(b.akim) : simdikiDonem())}<header class="ders-bas ck-bas"><h1 tabindex="-1">Çalış</h1><span class="ders-konum" data-test="ders-konum">${kacis(konumYazisi())}</span></header>`;
   if (!acikListe().length) {
     ciz(`${baslik}${devamKarti()}<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Ben</a> sayfasında işlediğin konuları işaretle.</p></div>`);
     return devamResmiDoldur();
   }
   const dersler = aciklar.length
-    ? `<section class="ders-liste-bolum" aria-label="Dersler">
-        <p class="calis-panel-not">${aciklar.length} açık ders · Her döneme bir eserden başla.</p>
-        <ul class="ders-liste" data-test="ders-liste">${aciklar.map((x) => dersSatiri(x, bugunku)).join('')}${kilitliler.length ? kilitliSatir(kilitliler[0]) : ''}</ul>
-        ${kilitliler.length > 1 ? `<p class="ders-kalan">${kilitliler.length - 1} ders daha, konular işlendikçe açılacak.</p>` : ''}
-      </section>`
-    : `<p class="ders-kalan" data-test="ders-yok">${kaynak ? 'Açık dönemlerin dersi henüz yok.' : 'Dersler yüklenemedi; bağlantı gelince yeniden dene.'}</p>`;
+    ? `<ul class="ck-grup" data-test="ders-liste">${aciklar.map((x) => dersSatiri(x, bugunku)).join('')}${kilitliler.length ? kilitliSatir(kilitliler[0]) : ''}</ul>
+        ${kilitliler.length > 1 ? `<p class="ck-not">${kilitliler.length - 1} ders daha, konular işlendikçe açılacak.</p>` : ''}`
+    : `<p class="ck-not" data-test="ders-yok">${kaynak ? 'Açık dönemlerin dersi henüz yok.' : 'Dersler yüklenemedi; bağlantı gelince yeniden dene.'}</p>`;
   ciz(`${baslik}
     ${devamKarti()}
-    ${b ? bugunKarti(b) : aciklar.length ? `<section class="ders-bugun bitti" data-test="bugunun-dersi" data-akim=""><div class="ders-bugun-alt"><span class="ders-etiket">Bugünün dersi</span><p class="ders-davet">Açık derslerin hepsi tamam. Aşağıdan istediğini yeniden açabilir ya da günlük tekrarı yapabilirsin.</p></div></section>` : ''}
-    <div class="calis-atolye" data-test="calis-atolye">
-      ${tekrarKarti(turBilgisi('karisik'), aciklar)}
-      <header class="calis-masa-bas"><h2>Çalışma masan</h2><p>Önce keşfet. Sonra kendini dene.</p></header>
-      <div class="calis-sekmeler" role="tablist" aria-label="Çalışma biçimi">
-        <button type="button" role="tab" id="calis-dersler-sekme" aria-controls="calis-dersler-panel" aria-selected="true" data-calis-sekme="dersler">${ikon('kitap', 18, 1.6)}<span>Dersler</span></button>
-        <button type="button" role="tab" id="calis-turlar-sekme" aria-controls="calis-turlar-panel" aria-selected="false" tabindex="-1" data-calis-sekme="turlar">${ikon('karsilastir', 18, 1.6)}<span>Başka turlar</span></button>
-      </div>
-      <div role="tabpanel" id="calis-dersler-panel" aria-labelledby="calis-dersler-sekme">${dersler}</div>
-      <div role="tabpanel" id="calis-turlar-panel" aria-labelledby="calis-turlar-sekme" hidden>${soruTurlariHtml(hatalarSatiri(), true)}</div>
-      <a class="calis-yolculuk" href="#/harita"><span>${ikon('harita', 20, 1.6)}</span><span><b>Bir sonraki durağın seni bekliyor.</b><small>Yolculuğunu haritada gör</small></span>${ikon('ileri', 18, 1.6)}</a>
+    ${bugunKarti(b, turBilgisi('karisik'), aciklar)}
+    ${ritimHtml()}
+    <div class="ck-atolye" data-test="calis-atolye">
+      <section class="ck-bolum ck-belir" id="calis-dersler-panel" aria-labelledby="ck-dersler-bas">
+        <div class="ck-bolum-bas"><h2 id="ck-dersler-bas">Dersler</h2><p>${aciklar.length} açık · tablo ilerledikçe renklenir</p></div>
+        ${dersler}
+      </section>
+      <section class="ck-bolum ck-belir" id="calis-turlar-panel" data-test="calis-turlar-panel" aria-labelledby="ck-turlar-bas">
+        <div class="ck-bolum-bas"><h2 id="ck-turlar-bas">Başka turlar</h2><p>Aynı eserlere, farklı sorularla bak</p></div>
+        ${soruTurlariHtml(hatalarSatiri(), true)}
+      </section>
+      <a class="ck-yolculuk ck-belir" href="#/harita" data-test="calis-yolculuk"><span class="ck-yolculuk-ikon" aria-hidden="true">${ikon('harita', 20, 1.6)}</span><span><b>${durak ? `Durağın: ${kacis(durak)}` : 'Yolculuğun'}</b><small>Haritada nerede olduğunu gör</small></span>${ikon('ileri', 18, 1.6)}</a>
     </div>`);
-  calisSekmeleri();
   calisCubugu();
   kapaklariDoldur(kaynak);
   kucukKareleriDoldur();
   devamResmiDoldur();
-}
-
-function calisSekmeleri() {
-  const liste = ekran.querySelector('.calis-sekmeler');
-  const sekmeler = [...liste.querySelectorAll('[role="tab"]')];
-  const sec = (hedef) => {
-    for (const sekme of sekmeler) {
-      const secili = sekme === hedef;
-      sekme.setAttribute('aria-selected', String(secili));
-      sekme.tabIndex = secili ? 0 : -1;
-      ekran.querySelector(`#${sekme.getAttribute('aria-controls')}`).hidden = !secili;
-    }
-  };
-  liste.addEventListener('click', (e) => {
-    const hedef = e.target.closest('[role="tab"]');
-    if (hedef) sec(hedef);
-  });
-  liste.addEventListener('keydown', (e) => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
-    e.preventDefault();
-    const i = sekmeler.indexOf(document.activeElement);
-    const hedef = e.key === 'Home' ? 0 : e.key === 'End' ? sekmeler.length - 1 : (i + (e.key === 'ArrowRight' ? 1 : -1) + sekmeler.length) % sekmeler.length;
-    sec(sekmeler[hedef]);
-    sekmeler[hedef].focus();
-  });
 }
 
 // İş 189: başlık ekrandan çıkınca üstte cam çubuk ("Çalış"); başyapıt sayfasındakiyle aynı (.bsy-cubuk)

@@ -18,6 +18,49 @@ function haftaGunu(t) {
   return new Date(y, m - 1, g, 12).getDay();
 }
 
+// 1.91.0 · Çalış'ın "Ritmin" şeridi: tek çizgide geçen 7 gün (çalışılan gün dolu mühür), bugün ve önümüzdeki 13 günün
+// yükü. Yük çubuk değil boncuk dizisi: her boncuk bir sanatçı (çok yükte bir boncuk birden çok sanatçı). Sayım İlerleme'deki
+// gelecek yük grafiğiyle aynı (gelecekYuk; vadesi geçenler bugüne yazılır).
+const BONCUK_EN_COK = 8;
+export function ritimHtml() {
+  const b = bugun();
+  const gecmis = d.ilerleme.gecmis || {};
+  const yuk = gelecekYuk(d.ilerleme.skorlar, acikListe().map((s) => s.id), b, 14);
+  const birim = Math.max(1, Math.ceil(Math.max(...yuk) / BONCUK_EN_COK));
+  const onceki = Array.from({ length: 7 }, (_, i) => gunEkle(b, i - 7));
+  const calisilan = onceki.filter((t) => (gecmis[t] || {}).kart > 0).length;
+  const bugunKart = (gecmis[b] || {}).kart || 0;
+  const n = seri(gecmis, b);
+  const toplam = yuk.reduce((t, x) => t + x, 0);
+  const gecmisSutun = onceki
+    .map((t, i) => {
+      const k = (gecmis[t] || {}).kart || 0;
+      return `<span class="ck-gun gecmis${k ? ' dolu' : ''}" style="--i:${i}" data-tarih="${t}"><i class="ck-muhur"></i></span>`;
+    })
+    .join('');
+  const gelecekSutun = yuk
+    .map((sayi, i) => {
+      const boncuk = Math.ceil(sayi / birim);
+      const ic = Array.from({ length: boncuk }, (_, j) => `<i class="ck-boncuk" style="--j:${j}"></i>`).join('');
+      const sinif = i === 0 ? ` bugun${bugunKart ? ' dolu' : ''}` : i === 1 ? ' yarin' : '';
+      return `<span class="ck-gun gelecek${sinif}" style="--i:${i + 7}" data-gun="${i}" data-sayi="${sayi}">${ic}${i === 0 ? '<i class="ck-muhur"></i>' : ''}</span>`;
+    })
+    .join('');
+  const ozet = yuk[1]
+    ? `Yarın <b>${yuk[1]}</b> sanatçı geri geliyor`
+    : toplam - yuk[0]
+      ? `Yarın boş · iki haftada <b>${toplam - yuk[0]}</b> sanatçı dönüyor`
+      : 'Önümüzdeki iki haftada tekrar yok';
+  const seriYazi = n ? `${n} günlük seri${bugunKart ? '' : ' · bugün çalışırsan sürer'}` : 'Seri bugün başlayabilir';
+  const okunus = `Geçen 7 günün ${calisilan} gününde çalıştın. Bugün ${yuk[0]}, yarın ${yuk[1]}, önümüzdeki 14 günde toplam ${toplam} sanatçının tekrarı var.`;
+  return `<section class="ck-ritim ck-belir" data-test="ritim" aria-labelledby="ck-ritim-bas">
+      <div class="ck-bolum-bas"><h2 id="ck-ritim-bas">Ritmin</h2><p class="ck-seri" data-test="ritim-seri">${seriYazi}</p></div>
+      <div class="ck-serit" role="img" aria-label="${okunus}">${gecmisSutun}${gelecekSutun}</div>
+      <div class="ck-serit-alt" aria-hidden="true"><span class="sol">geçen hafta</span><span class="bugun">bugün</span><span class="sag">2 hafta</span></div>
+      <p class="ck-ritim-ozet" data-test="ritim-ozet">${ozet}${birim > 1 ? `<small> · bir boncuk ${birim} sanatçı</small>` : ''}</p>
+    </section>`;
+}
+
 // İ1 · son 12 haftanın takvimi: sütun hafta, satır gün (pazartesi üstte). Kare rengi o günün baskın akımı
 export function takvimHtml(gir) {
   const b = bugun();
