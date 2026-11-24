@@ -43,8 +43,10 @@ export function baskaSanatci(havuz, haric, rng = Math.random) {
 
 // İş 171 (Tasarım B): günün ressamı, resminin içinde yürüyüşü yazılmış olanlardan (data/yuruyus.json) seçilir.
 // yuruyus: { sanatçı kimliği: kayıt } ya da null (dosya yoksa havuz olduğu gibi kalır); kesişim boşsa da havuz kalır.
+// Kayıtta "bugun": false varsa sanatçı ana sayfaya gelmez (Emre, 2026-11-24: Berlinghieri); yürüyüşü derste kalır.
 export function yuruyusHavuzu(havuz, yuruyus) {
   if (!yuruyus) return havuz;
-  const olan = havuz.filter((id) => yuruyus[id] && Array.isArray(yuruyus[id].noktalar) && yuruyus[id].noktalar.length);
+  const olan = havuz.filter((id) => yuruyus[id] && yuruyus[id].bugun !== false
+    && Array.isArray(yuruyus[id].noktalar) && yuruyus[id].noktalar.length);
   return olan.length ? olan : havuz;
 }

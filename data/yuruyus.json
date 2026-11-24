@@ -3,6 +3,7 @@
  "aciklama": "Tasarım B · Bugün'deki resmin içinde yürüyüş: sanatçı başına bir eser ve 4–7 ayrıntı noktası (x, y, w, h: resmin genişlik/yüksekliğine oranla kutu). gorsel: yerel_gorseller kimliği; buyuk: R2'de ayrı yüklenen kopya (y/<id>.jpg) varsa onun yolu; kirp: [x, y, w, h] resmin dışında kalan (müze renk şeridi gibi) alanı keser. Kutular ızgaralı kopya üzerinde çizilip doğrulandı.",
  "eserler": {
   "bonaventura-berlinghieri": {
+   "bugun": false,
    "eser": "Saint Francis of Assisi and scenes of his life",
    "yil": 1235,
    "qid": "Q3947103",
