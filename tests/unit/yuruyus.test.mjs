@@ -8,6 +8,11 @@ import { noktaAdimi, yuruyusAdimlari } from '../../js/yuruyus.js';
 const veri = JSON.parse(readFileSync(new URL('../../data/yuruyus.json', import.meta.url), 'utf8')).eserler;
 const sanatcilar = JSON.parse(readFileSync(new URL('../../data/sanatcilar.json', import.meta.url), 'utf8'));
 
+test('yuruyusHavuzu: "bugun": false olan ana sayfaya gelmez', () => {
+  const y = { a: { noktalar: [{}] }, b: { bugun: false, noktalar: [{}] } };
+  assert.deepEqual(yuruyusHavuzu(['a', 'b'], y), ['a']);
+});
+
 test('yuruyusHavuzu: yalnız yürüyüşü olanlar; dosya yoksa ya da kesişim boşsa havuz olduğu gibi', () => {
   const y = { a: { noktalar: [{}] }, b: { noktalar: [] }, c: { noktalar: [{}] } };
   assert.deepEqual(yuruyusHavuzu(['a', 'b', 'd'], y), ['a']);
