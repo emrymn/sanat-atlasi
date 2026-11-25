@@ -52,11 +52,9 @@ KOK = Path(__file__).resolve().parent.parent
 MODEL = 'gemini-3.8-flash-tts'
 VARSAYILAN_SES = 'Fola'  # AI Studio'da Emre'nin "nora 2" sesi bu hazır ses
 SICAKLIK = 1
-# AI Studio'nun "## Transcript:" biçimi; yönergeler okunmaz, yalnız transkript okunur
-STIL = ('## Director\'s notes:\n'
-        'Sakin, sıcak bir müze rehberi; yavaş ve tane tane, cümle aralarında kısa duraklarla. '
-        'Heyecanlı ya da reklam gibi değil. Türkçe.\n\n'
-        '## Transcript:\n')
+# AI Studio'nun kodundaki biçim. "## Director's notes" ile verilen yönerge bazen yüksek sesle okunuyordu
+# ("Sakin, sıcak bir müze rehberi…"); yönerge yok, yalnız transkript.
+STIL = '## Transcript:\n'
 SABIT_SOZLER = ['Şimdi tablonun tamamına bir kez daha bak.', 'Bir süre yalnız bak.']
 DENEME_ESERLERI = ['Q220859', 'Q2627056']  # Arnolfini Portresi (ayrıntı), Golyat'ın Başıyla Davut (hikâye)
 DENEME_YURUYUS = 1  # yürüyüşü olan ilk bir eser
@@ -207,8 +205,7 @@ def okut(metin, ses):
 # parçaların süresi harf sayısıyla orantılı değilse (model duraklamayı atladıysa) grup tek tek okutulur.
 GRUP_KARAKTER = 2400
 GRUP_PARCA = 8
-GRUP_STIL = STIL.replace('## Transcript:', 'Her paragraf bittiğinde iki saniye tamamen sessiz kal, sonra '
-                         'sonraki paragrafa geç. Paragraf numarası ya da başka bir şey okuma.\n\n## Transcript:')
+GRUP_STIL = STIL  # duraklama yönergesi de okunabilir; gruplar doğal paragraf aralarından bölünür, olmazsa tek tek
 
 
 def sessizlikler(pcm, hiz, bit):
@@ -393,7 +390,7 @@ def jeton_tahmini(metin):
     return len(metin) // 3 + 60  # Türkçe ~3 harf/jeton + yönerge
 
 
-def toplu(eserler, ses, cikti):
+def toplu(eserler, ses, cikti, tek=False):
     cikti.mkdir(parents=True, exist_ok=True)
     durum_yolu = cikti / '_toplu.json'
     dizin = {}
@@ -406,7 +403,7 @@ def toplu(eserler, ses, cikti):
             for k, liste in eserler.items():
                 eksik = [m for m in dict.fromkeys(liste)
                          if not ((cikti / f'{anahtar(m)}.mp3').exists() and (cikti / f'{anahtar(m)}.json').exists())]
-                for grup in ([[m] for m in eksik] if k == '_tek' else gruplar(eksik)):
+                for grup in ([[m] for m in eksik] if tek or k == '_tek' else gruplar(eksik)):
                     metin = '\n\n'.join(grup)
                     j = jeton_tahmini(metin)
                     if istekler and toplam + j > TOPLU_JETON:
@@ -474,6 +471,31 @@ def toplu(eserler, ses, cikti):
             eserler['_tek'] = list(dict.fromkeys(eserler.get('_tek', []) + tek_tek))
 
 
+def denetle(cikti, sil=False):
+    """Süresi metnine göre aykırı parçalar: yönergeyi okumuş, fazladan konuşmuş ya da metni yarım bırakmış olabilir."""
+    kayit = []
+    for f in cikti.glob('*.json'):
+        if f.name.startswith('_'):
+            continue
+        d = json.loads(f.read_text(encoding='utf-8'))
+        kayit.append((d['sure'], len(d['metin']), f))
+    if not kayit:
+        return []
+    oran = sorted(s_ / max(1, n) for s_, n, _ in kayit)[len(kayit) // 2]
+    kotu = []
+    for s_, n, f in kayit:
+        beklenen = n * oran
+        if s_ - beklenen > 6 or s_ < beklenen * 0.6:
+            kotu.append((round(s_ - beklenen, 1), f))
+    print(f'{len(kayit)} parça · ortanca {oran:.3f} sn/harf · aykırı {len(kotu)}')
+    if sil:
+        for _, f in kotu:
+            f.unlink()
+            f.with_suffix('.mp3').unlink(missing_ok=True)
+        print(f'{len(kotu)} aykırı parça silindi; şimdi --toplu --tek ile yeniden üret.')
+    return kotu
+
+
 def yukle(ses, kaynak):
     try:
         import boto3
@@ -513,6 +535,8 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--denetle', action='store_true',
+                    help='süresi metnine göre aykırı parçaları bul ve sil (sonra --toplu --tek)')
     ap.add_argument('--toplu', action='store_true',
                     help='Batch API ile (günlük sınır yok, yarı fiyat); bitene kadar gönderir ve bekler')
     ap.add_argument('--tek', action='store_true', help='parçaları gruplamadan tek tek okut (istek sayısı artar)')
@@ -539,11 +563,14 @@ def main():
     if g.say:
         return
     cikti = KOK / 'ses' / g.ses
+    if g.denetle:
+        denetle(cikti, sil=True)
+        return
     if g.yukle:
         yukle(g.ses, cikti)
         return
     if g.toplu:
-        _, bitti = toplu(eserler, g.ses, cikti)
+        _, bitti = toplu(eserler, g.ses, cikti, tek=g.tek)
         dizin, harcanan, yeni = {}, 0, 0
         for f in cikti.glob('*.json'):
             if not f.name.startswith('_'):
