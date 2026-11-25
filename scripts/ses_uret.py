@@ -127,8 +127,11 @@ def okut(metin, ses, deneme=5):
         f'https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent',
         data=json.dumps(govde).encode('utf-8'), method='POST',
         headers={'Content-Type': 'application/json', 'User-Agent': 'SanatAtlasi-ses'})
-    k = os.environ.get('GEMINI_API_KEY')
+    # Yapıştırırken araya giren görünmez satır ayırıcıları (U+2028 vb.) ve boşluklar atılır
+    k = re.sub(r'\s', '', os.environ.get('GEMINI_API_KEY', ''))
     if k:
+        if not k.isascii():
+            sys.exit('GEMINI_API_KEY\'de ASCII olmayan bir karakter var; anahtarı AI Studio\'dan yeniden kopyala.')
         istek.add_header('x-goog-api-key', k)
     for i in range(deneme):
         try:
