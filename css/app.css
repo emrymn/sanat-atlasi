@@ -6572,6 +6572,11 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .seviye-haplar + .soru-sahne {
   --soru-resim-h: clamp(200px, calc(100dvh - 372px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 700px);
 }
+/* Soru sorulurken sahne görselin payını hep ayırır: yatay (alçak) eserde şıklar yukarı kaymaz, kart değişince zıplamaz;
+   şıklar her zaman başparmak bölgesinde kalır. Cevapta görsel küçülür, pay da bırakılır. */
+main:not([data-hareket='cevap']) .soru-sahne:has(.soru-resim) {
+  min-height: var(--soru-resim-h);
+}
 @media (prefers-reduced-motion: reduce) {
   .tanis-karti.gir,
   .tanis-karti.gir .kucuk-kare {

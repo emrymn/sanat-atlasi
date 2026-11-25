@@ -100,8 +100,8 @@ test('geri düğmesiyle dönünce liste kalınan yerde açılır; ileri gidişte
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
   await page.locator('[data-test="akim-dizin-ac"]').click(); // 1.81.0: dizin "Bütün akımlar" ile açılır; dönünce açık kalır
-  await page.evaluate(() => window.scrollTo(0, 800));
-  await expect.poll(() => y(page)).toBe(800);
+  // dizin yüklenip sayfa uzayana kadar kaydırma 800'e ulaşmayabilir: her denemede yeniden kaydır
+  await expect.poll(async () => { await page.evaluate(() => window.scrollTo(0, 800)); return y(page); }).toBe(800);
   await gorunenAkimLinki(page);
   await expect(page).toHaveURL(/#\/akim\//);
   await expect.poll(() => y(page)).toBe(0);
@@ -486,6 +486,16 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
   await agiHazirla(context);
   await context.addInitScript(() => (window.__atlasYalnizDevasa = true)); // İş 131: 400'lük ve 1280'likler binlerce dosya
   await context.addInitScript(() => (window.__atlasParca = 3));
+  await context.addInitScript(() => {
+    const kaydet = () => {
+      const m = document.getElementById('devasa-mesaj');
+      if (!m) return;
+      const t = m.textContent.trim();
+      const l = JSON.parse(sessionStorage.getItem('test:devasa-iletiler') || '[]');
+      if (t && l[l.length - 1] !== t) sessionStorage.setItem('test:devasa-iletiler', JSON.stringify([...l, t]));
+    };
+    new MutationObserver(kaydet).observe(document, { subtree: true, childList: true, characterData: true });
+  });
   let adlar = [];
   await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
@@ -503,8 +513,11 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
   await page.reload();
   const bolum = page.locator('[data-test="devasa-indir"]');
   await bolum.locator('[data-devasa-indir]').click();
-  await expect(page.locator('#devasa-mesaj')).toContainText(`Parça 1 / ${Math.ceil(n / 3)}`);
-  await expect(page.locator('#devasa-mesaj')).toContainText('bitti', { timeout: 15000 });
+  // İletiler hızlı geçer ve uygulama parçalar arasında yenilenir: anlık metne bakmak yerine görülen her ileti
+  // (yenilemeler boyunca sessionStorage'da) toplanır
+  const iletiler = () => page.evaluate(() => JSON.parse(sessionStorage.getItem('test:devasa-iletiler') || '[]')).catch(() => []);
+  await expect.poll(async () => (await iletiler()).some((m) => m.includes(`Parça 1 / ${Math.ceil(n / 3)}`)), { timeout: 15000 }).toBe(true);
+  await expect.poll(async () => (await iletiler()).some((m) => /bitti/i.test(m)), { timeout: 15000 }).toBe(true);
   // yenilenir, sıradaki parçalar kendiliğinden
   await expect.poll(() => page.evaluate(devasaSayisi).catch(() => -1), { timeout: 60000 }).toBe(n);
   await expect(bolum).toContainText(`Hepsi telefonda: ${n} görsel`, { timeout: 15000 });
