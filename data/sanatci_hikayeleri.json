@@ -1,0 +1,1434 @@
+{
+ "surum": 1,
+ "aciklama": "Sanatçı hikâyeleri (scripts/hikaye_uret.py): Gemini Google Arama ile araştırır, hikâyeyi yalnız o dosyadan yazar, ikinci bir model denetler. Eserler yalnız bizim verimizden (qid).",
+ "sanatcilar": {
+  "caravaggio": {
+   "baslik": "Karanlığın İçinden Fırlayan Işık: Caravaggio",
+   "alt_baslik": "Roma sokaklarından Malta zindanlarına uzanan öfkeli bir hayatın, Avrupa resminin ışık ve gerçeklik anlayışını nasıl parçaladığının hikâyesi.",
+   "giris": [
+    "1 Aralık 1608 günü, Malta adasındaki Valletta şehrinde yer alan San Giovanni Decollato Oratoryumu soğuk bir sessizliğe bürünmüştü. Malta Şövalyeleri yüksek konsey halinde toplanmış, aralarından birini yargılıyordu. Odanın duvarında üç buçuk metreye beş metreyi aşan dev bir tablo asılıydı: Aziz Yahya'nın Boynunun Vurulması. Şövalyeler tam da o tablonun altında, eserin yaratıcısı Michelangelo Merisi da Caravaggio'yu gıyabında tarikattan attılar ve onu çürümüş, kokuşmuş bir uzuv ilan ettiler. Oysa tabloya yakından bakan herkesin gözü azizin kesilen boynundan taşan koyu kırmızı kana takılır. Ressam, bütün hayatı boyunca imzaladığı tek eserine adını işte o kan birikintisinin içine kırmızı boyayla yazmıştı.",
+    "Bu sahne, Caravaggio'nun bütün ömrünü tek bir kareye sığdırır. Bir yanda kardinal sarayları, papalık çevresinden güçlü hamiler ve büyük çabalarla kazanılmış şövalye unvanı; öte yanda sokak kavgaları, hapishane duvarları ve firarlar vardır. On altıncı yüzyılın sonu ile on yedinci yüzyılın başında yalnızca otuz sekiz yıl yaşayan bu ressam, kutsal hikâyeleri mermer idealizminden indirip çamurlu ayakların ve titreyen ellerin gerçeğine taşıdı. Şimdi gel, Milano'daki bir veba gününden Porto Ercole'deki ateşli son nefesine kadar onun karanlıktan fırlayan ışığında yürüyelim."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Veba, Çıraklık ve Roma'nın Aç Sokakları",
+     "yillar": "1571–1595",
+     "paragraflar": [
+      "Yüzyıllar boyunca onun Caravaggio kasabasında doğduğu sanıldı. Oysa 2007 yılında Milano'daki Santo Stefano in Brolo kilisesinin vaftiz kayıtları gerçeği kesin biçimde ortaya çıkardı. Michelangelo Merisi, 29 Eylül 1571'de Milano'da doğdu ve ertesi gün vaftiz edildi. Babası Fermo Merisi, Caravaggio Markisi Birinci Francesco Sforza'nın yapı ustası ve ev yöneticisiydi. Markinin eşi Costanza Colonna ise küçük Michelangelo'nun ömür boyu koruyucusu olacaktı. Ne var ki 1576'da Milano'yu hıyarcıklı veba vurdu. Aile Caravaggio kasabasına kaçtı ama 1577 yılında hem babası hem de baba tarafından büyükbabası aynı gün vebadan öldü.",
+      "Michelangelo on iki yaşındayken, 6 Nisan 1584'te Milano'da Simone Peterzano ile dört yıllık bir çıraklık sözleşmesi imzaladı. Peterzano, kendisine Tiziano'nun öğrencisi unvanını yakıştıran Bergamalı bir ressamdı. Caravaggio bu atölyede Venedik yağlıboya geleneğinin canlı renklerini ve Lombardiya ustalarının geceye yaslanan sade doğalcılığını öğrendi. Leonardo da Vinci'nin Milano'daki eserlerini de yakından inceledi. Peterzano fresk ustası olsa da Caravaggio gerçek freske hiç ısınmadı, tuval üstünde yağlıboyaya bağlandı. Annesi Lucia Aratori 29 Kasım 1590'da vefat etti. Mayıs 1592'de kardeşleriyle aile mirasını bölüştükten sonra, erken dönem biyografi yazarları Giulio Mancini ve Giovanni Pietro Bellori'nin notlarına göre kanlı bir kavgaya karıştığı için Lombardiya'dan ayrılıp Roma'ya yöneldi.",
+      "1592 yılının ortasında, bazı araştırmacılara göre ise biraz daha geç bir tarihte Roma'ya vardığında çağdaş tanıklar onu çıplak, aşırı muhtaç, evsiz ve azıksız diye tanımlıyordu. Önce Recanatili Monsignor Pandolfo Pucci'nin evinde kaldı; adam ona neredeyse yalnızca yeşillik yedirdiği için alayla Monsignor Salata adını taktı. Kısa süre Lorenzo adlı Sicilyalı bir ressamla çalıştıktan sonra, Papa Sekizinci Clemens'in gözde manyerist ressamı Giuseppe Cesari'nin, yani Cavaliere d'Arpino'nun kalabalık atölyesinde sekiz ay boyunca çiçek ve meyve resimleri yaptı. Ardından bir hastalık ya da at tepmesi sonucu Santa Maria della Consolazione yoksullar hastanesine düştü. İyileşirken model tutacak parası yoktu, önüne bir ayna koyup kendi yüzünü boyamaya başladı.",
+      "İşte Bacchus Otoportresi o hastane günlerinin çıplak kaydıdır. Tabloya dikkatle bak: şarap tanrısı pembe yanaklı, tasasız bir mitoloji figürü değildir. Sararmış, yeşilimsi gri teni, morarmış dudakları, kirli tırnakları ve zayıf gövdesiyle hastalıktan yeni kalkmış bir genç görürsün. Bu ilk Roma yıllarında Caravaggio henüz karanlık gölgelere geçmemişti; açık gri ya da sıcak soluk kahverengi astarlar üstünde, parlak gün ışığıyla çalışıyordu. Tövbekar Mecdelli Meryem tablosunda da göksel melekleri sildi; boş bir odada alçak tabureye oturmuş saçını kurutan sıradan bir kızın yanına mücevherler ve bir merhem kavanozu koydu. Sonunda satıcı Costantino Spata'nın dükkânında sergilenen Hilebazlar tablosu, diplomasi ve sanat tutkunu Kardinal Francesco Maria del Monte'nin gözüne çarptı. Kardinal tabloyu satın aldı ve yirmi üç yaşındaki yoksul ressamı sarayına davet etti."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2293936",
+       "bag": "Yoksullar hastanesinden çıktıktan sonra ayna karşısında yaptığı bu otoportre, klasik mitolojiyi sararmış ten ve kirli tırnaklarla gerçek bir beden incelemesine dönüştürür."
+      },
+      {
+       "qid": "Q2732274",
+       "bag": "Yüzyılların idealize edilmiş azize kalıbını yıkarak boş bir odada oturan sıradan bir genç kızı kutsal bir figüre çevirir ve duvardaki çapraz ışıkla olgun döneminin habercisi olur."
+      },
+      {
+       "qid": "Q663133",
+       "bag": "Kâğıt oyununda kandırılan saf bir genci keskin kumaş dokuları ve psikolojik gerilimle anlatan bu sokak sahnesi, Kardinal Del Monte'nin ilgisini çekerek Caravaggio'nun yoksulluğunu bitirdi."
+      }
+     ]
+    },
+    {
+     "baslik": "Palazzo Madama'da Müzik, Simya ve Karanlığın Doğuşu",
+     "yillar": "1595–1599",
+     "paragraflar": [
+      "1595 civarında Kardinal Francesco Maria del Monte, Caravaggio'yu Palazzo Madama'daki sarayına yerleştirdi. Artık düzenli yemeği, atölyesi ve maaşı vardı. Del Monte yalnızca Toskana Büyük Dükü Birinci Ferdinando de' Medici'nin Roma temsilcisi değil, aynı zamanda müzik tutkunu, amatör bir simyacı ve Galileo Galilei'nin yakın dostuydu. Bu entelektüel çevre Caravaggio'yu kariyerine yön verecek hamilerle tanıştırdı: Cenevizli banker Ottavio Costa, soylu koleksiyoncu Marki Vincenzo Giustiniani ve Milanolu Kardinal Federico Borromeo. Yine de sarayın rafine havası onun sokaktaki hırçınlığını yatıştırmadı. Roma polis kayıtlarında adı ilk kez 11 Temmuz 1597'de, ressam dostu Prospero Orsi ile birlikte gece yarısı yaşanan bir saldırının tanığı olarak geçti.",
+      "Saraydaki ilk iki yılda Caravaggio'nun tuvallerinde hâlâ yumuşak, aydınlık ve şiirsel bir hava egemendi. Kardinalin müzik odası için yaptığı Müzisyenler tablosuna bak: yarı klasik giysiler içindeki dört genç tuvalin ön düzlemine sıkışmış, Caravaggio ise arka planda elinde nefesli çalgı tutan koyu saçlı figür olarak kendini sahneye katmıştır. Palazzo Madama yıllarının (y. 1597–1600) eseri olan Meyve Sepeti tablosu ise resim tarihinde yepyeni bir kapı açtı. Göz hizasına yerleştirilen hasır sepet, aydınlık ve yalın bir fonun önünde rafın kenarından izleyiciye doğru taşar. Kurt yemiş elmalar, çatlamış incirler ve kurumuş yapraklar hayatın geçiciliğini hatırlatır. Giustiniani'nin aktardığına göre Caravaggio, iyi bir çiçek tablosu yapmanın figürlü bir tablo kadar ustalık istediğini açıkça savunuyordu.",
+      "1597'den itibaren atölyesinde çarpıcı bir dönüşüm başladı. Soluk astarların yerini koyu kızıl kahverengi toprak astarlar aldı. Arka planlar dipsiz siyah boşluklara gömüldü, figürler yüksekten gelen tek bir yan ışığın altında öne fırladı. Del Monte'nin Büyük Dük Ferdinando'ya armağan ettiği Medusa bu yeni şiddetin tam merkezindedir. Dışbükey ahşap bir tören kalkanına gerilen tuvalde Caravaggio, kendi yüzünü çığlık atan bir dehşete dönüştürdü. Kıvrılan yılanlar ve fışkıran kan, dışbükey yüzeyi içbükey gibi gösteren bir optik oyunla izleyicinin alanına atılır. Aynı yıllarda kardinalin daracık simya odasının tavanına yaptığı Jüpiter, Neptün ve Plüto ise onun tek tavan resmidir ve fresk değil, kuru sıva üstüne doğrudan yağlıboyayla işlenmiştir.",
+      "Karanlık üslubun en sarsıcı adımı, Ottavio Costa için yaptığı Holofernes'in Boynunun Yudit Tarafından Vurulması tablosudur. Yudit karakterine dönemin ünlü Romalı kortezanı Fillide Melandroni poz vermiştir. Tuvale yakından bak: Rönesans soğukkanlılığından eser kalmamıştır. Yudit kaşlarını çatmış, hem tiksinti hem kararlılıkla kılıcı bastırırken kan beyaz çarşaflara ince kavisler çizerek fışkırır. Yaşlı hizmetçi Abra gözlerini fal taşı gibi açmış bekler; tepede ise sahne perdesini andıran koyu kırmızı bir kumaş sarkar. Caravaggio artık kâğıt eskizlere bağlı kalmıyor, canlı modellerin duruşunu fırçasının tersiyle yaş astara kazıdığı çizgilerle işaretliyordu. Restoratör Roberta Lapucci ve ressam David Hockney bu izleri mercekli bir karanlık oda yansıtmasına bağlasa da, Keith Christiansen ve Larry Keith gibi uzmanlar bu çizgilerin serbest elle atılmış kompozisyon işaretleri olduğunu savunarak bu teze karşı çıkar. 23 Temmuz 1599'da Del Monte ona ilk büyük kilise siparişini, San Luigi dei Francesi'deki Contarelli Şapeli'ni kazandırdı."
+     ],
+     "eserler": [
+      {
+       "qid": "Q655705",
+       "bag": "Kardinal Del Monte'nin müzik odası için yapılan bu aydınlık alegori, Caravaggio'nun saraydaki ilk rafine dönemini ve arka planda yer alan kendi yüzünü gösterir."
+      },
+      {
+       "qid": "Q2293905",
+       "bag": "Dışbükey tören kalkanı üstüne kendi çığlık atan yüzünü yerleştirdiği bu eser, Del Monte'nin Medici diplomasisinde kullandığı en çarpıcı optik gösterilerden biridir."
+      },
+      {
+       "qid": "Q2270291",
+       "bag": "Kardinal Federico Borromeo'nun sahiplendiği bu çalışma, çürümüş ve kurtlanmış ayrıntılarıyla bağımsız İtalyan natürmort geleneğinin temelini atar."
+      },
+      {
+       "qid": "Q2470123",
+       "bag": "Fillide Melandroni'nin modellik ettiği bu kanlı sahne, Rönesans soğukkanlılığını terk ederek dipsiz karanlığa ve sarsıcı anatomik gerçekçiliğe geçişin en çarpıcı örneklerinden biridir."
+      }
+     ]
+    },
+    {
+     "baslik": "Şapellerin Zaferi ve Kılıçla Yazılan Şöhret",
+     "yillar": "1599–1603",
+     "paragraflar": [
+      "1600 yılının Temmuz ayında, Roma'nın Jübile Yılı kalabalıkları San Luigi dei Francesi kilisesine doluştuğunda Avrupa resmi bir gecede sarsıldı. Caravaggio'nun Contarelli Şapeli için yaptığı üç metreye yakın tuvaller bütün şehrin dilindeydi. Aziz Matta'nın Çağrısı tablosuna bak: İncil mucizesi göksel bulutlar arasında değil, loş bir Roma vergi dairesinde geçer. Sağ üstten, şapelin gerçek penceresini taklit ederek giren keskin bir ışık huzmesi, İsa'nın uzanan kolunun üstünden kayıp şaşkın vergi toplayıcısı Levi'ye çarpar. İsa'nın el duruşu, Michelangelo'nun Sistina Şapeli'ndeki Adem'in yaratılışı sahnesine bilinçli bir göndermedir. Yaşlı manyerist ressam Federico Zuccaro ise tabloyu inceleyip bütün bu gürültü ne için, burada Giorgione'nin üslubundan başka bir şey görmüyorum diyerek dudak büktü.",
+      "Karşı duvardaki Aziz Matta'nın Şehit Edilmesi tablosunun röntgen incelemeleri, Caravaggio'nun kaotik biçimde doğaçlama yapmadığını, aksine büyük bir mücadele verdiğini kanıtlar. Boyanın altında daha küçük ölçekli iki eski taslak gizlidir; sonunda yarı çıplak katilin merkezde olduğu şiddetli bir girdaba ulaşmış, arka gölgede ise kendi kederli yüzünü tanık olarak yerleştirmiştir. Aynı yıl 24 Eylül 1600'de Santa Maria del Popolo kilisesindeki Cerasi Şapeli için sözleşme imzaladı. Mimar Carlo Maderno'nun yenilediği bu dar mekânda, Bolognalı klasikçi Annibale Carracci ile yan yana çalıştı. Aziz Petrus'un Çarmıha Gerilişi tablosuna yakından bak: şehitlik göksel bir zafer değil, üç işçinin çamurlu ayaklarla ve ıkınarak korkmuş, yaşlı bir adamı baş aşağı kaldırdığı ağır bir beden işçiliğidir.",
+      "1601 civarında Del Monte'nin sarayından ayrılıp soylu Mattei kardeşlerin sarayına yerleşti. Ciriaco Mattei için 1602'de yüz yirmi beş skudi karşılığında yaptığı İsa'nın Tutuklanması, daracık bir gece sahnesine sıkıştırılmış yedi figürün nefes kesen çarpışmasıdır. Ay ışığı merkezdeki askerin siyah zırhında parlar, Aziz Yuhanna solda çığlık atarak kaçar, en sağda ise elinde loş bir fener tutan otuz bir yaşındaki Caravaggio sahneyi izler. İki yüzyıl boyunca kayıp sanılan bu tablonun serüveni de çarpıcıdır. Altmış yıla yakın süre Dublin'deki bir Cizvit evinin yemek salonunda is kararmış ve yanlışlıkla Gerrit van Honthorst'a atfedilmiş halde asılı durdu; ta ki 1990 Ağustos'unda konservatör Sergio Benedetti onu temizleyip gerçek sahibini ortaya çıkarana kadar.",
+      "Caravaggio aynı yıllarda Marki Vincenzo Giustiniani için de çok konuşulan bir eser yaptı: Muzaffer Aşk. Rivayete göre Giustiniani bu tabloyu yeşil ipek bir perdenin arkasında tutar, galeri gezisinin doruk anında açtırırdı. Tuvalde alaycı biçimde gülen, çıplak ve kanatlı bir sokak çocuğu, müzik aletlerini, zırhı, geometriyi ve şiiri ayakları altında çiğner. Modele atölye yardımcısı Cecco del Caravaggio'nun poz verdiği bilinir. Bu tablo, rakip ressam Giovanni Baglione ile zehirli bir kavgayı ateşledi. Baglione buna karşılık bir alegori yapınca, Caravaggio ile yakın dostları Orazio Gentileschi ve mimar Onorio Longhi, Baglione ile dalga geçen müstehcen şiirler dağıttılar.",
+      "1603 yılının Ağustos ve Eylül aylarında Baglione ağır bir hakaret davası açtı. Caravaggio haftalarca Tor di Nona hapishanesinde yattı ve ancak Fransız elçisinin araya girmesiyle serbest bırakıldı. 13 Eylül 1603 tarihli mahkeme tutanakları, tarihte Caravaggio'nun kendi ağzından kalan neredeyse tek doğrudan sözleri saklar. Yargıç iyi bir ustanın ne demek olduğunu sorduğunda Caravaggio açıkça şöyle dedi: Bir ressam iyi resim yapmasını ve doğal şeyleri iyi taklit etmesini biliyorsa ustadır. Şaşırtıcı biçimde eski patronu Giuseppe Cesari'yi ve rakibi Annibale Carracci'yi iyi ressamlar arasında saydı; Baglione ile Orazio Gentileschi'yi ise benimle konuşmuyorlar diyerek dışarıda bıraktı."
+     ],
+     "eserler": [
+      {
+       "qid": "Q969377",
+       "bag": "1600 Jübile Yılında Contarelli Şapeli'nde açıldığında şapelin gerçek pencere ışığını tuvale taşıyarak Caravaggio'yu bir gecede Avrupa'nın en çok konuşulan ressamı yaptı."
+      },
+      {
+       "qid": "Q685916",
+       "bag": "Cerasi Şapeli'nde Annibale Carracci ile yan yana sergilenen bu dev tuval, azizin çarmıha gerilişini çapraz hatlar ve ter döken işçilerle ağır bir fiziksel emeğe dönüştürür."
+      },
+      {
+       "qid": "Q474024",
+       "bag": "Marki Vincenzo Giustiniani için yaptığı bu alaycı ve kışkırtıcı çıplak figür, Giovanni Baglione ile 1603 hakaret davasına uzanan sert rekabeti doğrudan tetikledi."
+      },
+      {
+       "qid": "Q102852946",
+       "bag": "Ciriaco Mattei için yapılan ve 1990'da Dublin'de yeniden bulunan bu gece frizinde Caravaggio, zırh parıltıları arasında elinde fenerle sahneye tanıklık eden kendi yüzünü resmeder."
+      }
+     ]
+    },
+    {
+     "baslik": "Reddedilen Sunaklar ve Campo Marzio'da Dökülen Kan",
+     "yillar": "1603–1606",
+     "paragraflar": [
+      "Şöhreti büyüdükçe Caravaggio'nun Roma sokaklarındaki öfkesi de giderek kontrolden çıktı. Hollandalı yazar Karel van Mander'in 1604'te aktardığına göre, iki hafta yoğun çalışır, ardından bir iki ay belinde kılıcı ve peşinde uşağıyla top sahalarından kavgalara koşardı. Giovanni Pietro Bellori ise onun yalnızca en kaliteli prens kadifelerini giyip paçavra olana dek çıkarmadığını, yıkanmaya aldırmadığını ve yıllarca bir portre tuvalini sabah akşam masa örtüsü olarak kullandığını yazar. 24 Nisan 1604'te Panteon yakınındaki Osteria del Moro'da hangi enginarın tereyağında hangisinin zeytinyağında piştiğini sorup garson Pietro Antonio da Fusaccia'dan koklayın yanıtını alınca öfkeyle patladı, toprak tabağı adamın yanağına fırlattı ve dostunun kılıcına sarıldı.",
+      "Bütün bu taşkınlıkların ortasında Roma'daki en çok övülen kilise eserini tamamladı: Chiesa Nuova'daki Vittrice Şapeli için yaptığı İsa'nın Mezara Konması. Tabloya bak: altı figür, derin bir karanlıktan aşağı doğru sıkı ve ağır bir çapraz hatla iner ve doğrudan izleyicinin alanına uzanan keskin bir taş köşede toplanır. İsa'nın sarkan cansız kolu Michelangelo'nun Vatikan'daki Pietà heykelini yankılar. Ayin sırasında rahip kutsal ekmeği yukarı kaldırdığında, elleri tam o ağır kolun hizasına geliyordu. Ancak Caravaggio'nun bu doğrudan ve süssüz dili başka sunaklarda sert tepkilerle karşılandı.",
+      "Sant'Agostino Bazilikası için yaptığı Loreto Meryemi tablosunda efsanevi uçan kutsal evi tamamen dışarıda bıraktı. Bunun yerine, sıvası dökülen bir tuğla kapının eşiğinde duran yalınayak bir Romalı kadın ve kucağında iri bir çocuk resmetti. Modele sevgilisi Maddalena Antognetti, yani Lena poz vermişti. Önlerinde diz çöken iki yoksul hacının çamurlu çıplak tabanları doğrudan izleyicinin yüzüne bakar. Baglione, sıradan halkın o kirli ayakları ve sade başlığı görünce büyük bir yaygara kopardığını yazar. 29 Temmuz 1605'te Lena yüzünden noter Mariano Pasqualone'nin başını yaralayınca üç haftalığına Cenova'ya kaçtı. Aynı yıl altı aylık kirayı ödemediği ev sahibesi Prudenzia Bruni'nin camlarını taşladı; tavanı delip mahzen ışığı açtığı hikâyesi ise Bellori'nin yüksek ışık tarifiyle bu kira kavgasının sonradan birbirine karıştırılmasına dayanır.",
+      "Kilise tartışmaları peş peşe sürdü. Aralık 1605'te Aziz Petrus Bazilikası'ndaki papalık seyisleri sunağı için sipariş edilen Azize Anna, Meryem ve Çocuk İsa tablosunu 1605–1606 yıllarında tamamladı. 8 Nisan 1606'da asılan tuval, yalnızca sekiz gün sonra indirildi. Tarihçiler bu hızlı kararın Meryem'in açık yakasından mı, tamamen çıplak çocuk İsa'dan mı, yaşlı ve kırışık Azize Anna'dan mı, yoksa Lena'nın yüzünden mi kaynaklandığında ayrılır; Kardinal Scipione Borghese ise tabloyu hemen kendi villasına aldı. Aynı yıl Karmelit rahipleri Meryem'in Ölümü tablosunu reddetti. Göksel melekler yoktu; Meryem kızıl bir perdenin altında şişmiş karnı ve solgun çıplak ayak bilekleriyle ölü yatıyordu. Tiber Nehri'nden çıkarılan boğulmuş bir fahişeyi model aldığı söylentisi erken dönem düşmanca dedikodularına dayanır ve hiçbir belgeyle doğrulanmaz. Tabloyu, Peter Paul Rubens'in ısrarlı tavsiyesiyle Mantua Dükü Vincenzo Gonzaga satın aldı.",
+      "28 Mayıs 1606 akşamı her şey geri dönülmez biçimde koptu. Campo Marzio'daki top sahasında Caravaggio, Roma'nın nüfuzlu kabadayılarından Ranuccio Tomassoni ile karşılaştı. Bu olay çoğu kez basit bir oyun skoru kavgası diye anlatılır ama Roma polis kayıtları iki tarafta da silahlı dörder adam bulunduğunu ortaya koyar. Büyük olasılıkla Fillide Melandroni, kumar borçları ya da hizip çekişmeleri yüzünden planlanmış bir hesaplaşmaydı. Arbedede Caravaggio başından ağır yaralandı, Tomassoni'nin ise kasık yakınındaki ana atardamarını kesti. Tomassoni kan kaybından öldü. Papa Beşinci Paulus'un mahkemesi Caravaggio hakkında idam fermanı çıkardı; artık onu gören herkes ödül karşılığında başını kesebilirdi."
+     ],
+     "eserler": [
+      {
+       "qid": "Q1213151",
+       "bag": "Chiesa Nuova için yaptığı bu anıtsal sunak tablosu, izleyiciye uzanan taş köşesi ve ağır hüznüyle Caravaggio'nun Roma'da herkesçe övülen başyapıtı oldu."
+      },
+      {
+       "qid": "Q2713203",
+       "bag": "Sevgilisi Lena'yı yalınayak Meryem olarak resmettiği ve hacıların çamurlu tabanlarını öne çıkardığı bu tablo, Roma'da sokak gerçekçiliği tartışmasını alevlendirdi."
+      },
+      {
+       "qid": "Q2715302",
+       "bag": "Aziz Petrus Bazilikası için yapılan en yüksek mertebeli siparişi olan eser yalnızca sekiz gün sonra indirildi ama hemen Kardinal Scipione Borghese'nin koleksiyonuna girdi."
+      },
+      {
+       "qid": "Q597114",
+       "bag": "Karmelit rahiplerinin meleklerden arınmış, çıplak ölüm gerçekliği yüzünden reddettiği bu dev tuval, Peter Paul Rubens'in önerisiyle Mantua Dükü tarafından satın alındı."
+      }
+     ]
+    },
+    {
+     "baslik": "Colonna Tepelerinden Napoli'nin Gecelerine",
+     "yillar": "1606–1607",
+     "paragraflar": [
+      "Yaralı ve başına ödül konmuş olan Caravaggio, ailesinin kadim koruyucuları Colonna soyunun yardımıyla Roma'dan kaçırıldı. Markiz Costanza Colonna ve Don Marzio Colonna, onu Palestrina, Zagarolo ve Paliano'daki tepelik derebeylik arazilerinde gizlediler, bir yandan da izini kaybettirmek için nerede olduğuna dair yanlış söylentiler yaydılar. Sürgün ve ölüm korkusu Caravaggio'nun fırçasını anında değiştirdi. Roma'daki parlak göz yanılsamaları, cilalı ayrıntılar ve gösterişli jestler kayboldu. Onların yerini yaralı bir sadelik, yanık aşıboyaları, kömür karaları, kısılmış kırmızılar ve koyu astar üstüne hızla, incecik sürülmüş boya katmanları aldı.",
+      "Colonna topraklarında saklanırken Ottavio Costa için yaptığı 1606 tarihli Emmaus'ta Yemek tablosunu, beş yıl önce 1601'de yaptığı Londra'daki ilk versiyonla karşılaştır. 1601'deki tabloda sakalsız ve genç İsa ekmeği kutsarken havari kollarını tuvalden dışarı fırlayacak gibi açar, meyve sepeti masanın kenarından düşecekmiş gibi durur. 1606'daki Emmaus'ta Yemek ise onun ruhsal tersidir. Gösterişli jestler ve parlak yiyecekler gitmiştir. Yorgun ve sakallı İsa, yalın ekmek ve kuzu etinin başında gözlerini kederle aşağı indirir. Boğuk toprak tonları ve yaslı gölgeler, artık bir kaçak olan ressamın iç ağırlığını taşır.",
+      "Papalık affının kısa sürede çıkmayacağını anlayınca, 1606 Eylül sonu ile 6 Ekim arasında sınırı geçip İspanya yönetimindeki Napoli Krallığı'na sığındı. Artık Papa'nın yargı yetkisinin dışındaydı. Avrupa'nın en büyük ikinci şehrinde onu büyük bir hayranlık karşıladı. Hayır işleri yapan yedi genç Napolili soylu, Pio Monte della Misericordia kilisesi için ona Yedi Merhamet Eylemi tablosunu sipariş etti ve 9 Ocak 1607'de kariyerinin en yüksek tek ödemesi olan dört yüz duka ödedi. Yaklaşık dört metre boyundaki bu dev tuvale bak: Caravaggio yedi merhamet eyleminin tamamını tek bir karanlık ve karmaşık Napoli sokağına sığdırmıştır. Meşale ışığında çıplak ayaklarından taşınan ceset, hapishane parmaklığından yaşlı babası Kimon'u emziren Pero ve pelerinini çıplak dilenciyle paylaşan Aziz Martin iç içe geçer.",
+      "15 Eylül 1607'de Napoli'de satışta olduğu belgelenen ve çoğu uzman tarafından 1606–1607'ye (bazılarınca 1603–1607 arasına) tarihlenen Gül Bahçesi Meryemi de anıtsal bir piramit gibi yükselir. Arka planda belki de koruyucu Colonna ailesinin armasına gönderme yapan dev bir sütun ve dalgalanan kızıl bir perde görünür. Aziz Dominikus tespih dağıtırken, ön plandaki paçavralar içindeki kirli ayaklı Napolili köylüler lütfa ulaşmak için yukarı doğru uzanır. 15 Eylül 1607'de tablo Napoli'de dört yüz dukaya satışa çıkmış, yıllar sonra Peter Paul Rubens ve Anversli sanatçılar bir araya gelip eseri kendi şehirlerindeki Dominiken kilisesi için satın almıştı. Ancak Napoli'deki zafer, Roma'daki idam kararını silemiyordu. Caravaggio Temmuz 1607'de büyük bir kumar oynadı ve Malta Şövalyeleri'nin kadırgalarıyla Malta'ya yelken açtı."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2097931",
+       "bag": "Cinayetten hemen sonra Colonna arazilerinde saklanırken yapılan bu sade ve kederli tablo, Roma'daki gösterişli üsluptan sürgün dönemi suskunluğuna geçişi belgeler."
+      },
+      {
+       "qid": "Q2626595",
+       "bag": "Napoli'de kariyerinin en yüksek ücretini alarak üç ayda bitirdiği bu dev sunak resmi, kentin gece sokaklarını kutsal merhametle birleştirip bütün Napoli okulunu sarstı."
+      },
+      {
+       "qid": "Q698228",
+       "bag": "Kirli ayaklı Napolili köylülerin yukarı uzandığı bu anıtsal Dominiken sunağı, Caravaggio'nun güneydeki sarsıcı etkisini sonradan Rubens aracılığıyla kuzey Avrupa'ya taşıdı."
+      }
+     ]
+    },
+    {
+     "baslik": "Malta Şövalyesi, Kanla Atılan İmza ve Son Yolculuk",
+     "yillar": "1607–1610",
+     "paragraflar": [
+      "Planı açık ve cesurdu: Malta Şövalyeleri'nin Büyük Üstadı Alof de Wignacourt'un gözüne girip şövalye unvanı kazanırsa, tarikat Papa'dan onun affını isteyebilirdi. Costanza Colonna'nın kadırga komutanı olan oğlu Fabrizio Sforza'nın bu yolculuğa aracılık ettiği düşünülür. Caravaggio Valletta'da Wignacourt'u hemen etkiledi. Cinayet işleyenlerin tarikata girmesi yasak olsa da Wignacourt papalıktan özel izin aldı ve 14 Temmuz 1608'de Caravaggio'yu şövalye ilan etti. İtalyan şövalye Ippolito Malaspina için yaptığı Çalışan Aziz Hieronymus tablosunda artık figür küçülür, neredeyse boş taş hücrenin yankılanan sessizliği büyür. Aynı yıl Malta'da yaptığı Uyuyan Aşk Tanrısı ise pembe yanaklı bir mitoloji çocuğu yerine kırık okların yanında solgun, şişkin ve bitkin uyuyan bir çocuktur.",
+      "O yaz Valletta'daki şövalye oratoryumu için en büyük tuvalini, üç buçuk metreye beş metreyi aşan Aziz Yahya'nın Boynunun Vurulması tablosunu tamamladı. Tuvale bak: soğuk bir hapishane avlusunda devasa karanlık taş duvarlar küçülmüş figürlerin üstüne çöker. Boya artık kuru, ince ve hızlıdır; geniş boşluklarda koyu kızıl kahverengi astar olduğu gibi ortada kalır. Cellat, yere yatırdığı Yahya'nın sırtına bastırıp işini bitirmek için hançerine uzanırken iki mahkûm demir parmaklıklardan izler. Azizin boynundan taşan kırmızı kan gölünün içinde ise Caravaggio'nun bütün kariyerindeki tek imzası durur: Şövalye Michelangelo anlamına gelen kısaltılmış harfler. Hem kazandığı onuru hem de suçluluğunu şehidin kanıyla yazmıştır.",
+      "Ancak bu toplumsal kurtuluş yalnızca beş hafta sürdü. 18 Ağustos 1608'de Valletta'da silahlı bir kavgaya karıştı, bir kapıyı kırdı ve yüksek rütbeli şövalye Fra Giovanni Rodomonte Roero'yu ağır yaraladı. Aziz Angelo Kalesi'ndeki yeraltı hücresine atıldı. 6 Ekim 1608'de, neredeyse kesinlikle içeriden aldığı yardımla bir iple kale duvarlarından inip Sicilya'daki Siraküza'ya kaçtı. 1 Aralık 1608'de şövalyeler tam da onun dev tablosunun altında toplanıp onu tarikattan attılar. Malta suikastçılarından korktuğu için rivayete göre hançeri yanında, giysilerini çıkarmadan uyuyordu. Siraküza'da eski dostu Mario Minniti'nin desteğiyle çalıştı; Messina ve Palermo'yu dolaştıktan sonra Ekim 1609'da Costanza Colonna'nın koruması altında yeniden Napoli'ye döndü.",
+      "Napoli'de Osteria del Cerriglio hanının kapısında dört silahlı adam pusuya yatmıştı. Büyük olasılıkla Fra Roero'nun intikamını alan bu saldırganlar Caravaggio'nun yüzünü tanınmayacak derecede kestiler; Roma'ya öldüğü haberi bile ulaştı. Borghese Galerisi'ndeki Golyat'ın Kafasıyla Davut tablosunun çoğu tarihçiye göre tam bu son Napoli dönemine, 1609 ile 1610 yıllarına ait olduğu ve bir af dilekçesi olarak yapıldığı düşünülür; Keith Christiansen ve David Stone gibi bazı uzmanlar ise eseri 1606 ile 1607 arasına tarihler. Tuvale yakından bak: Davut'un elinde tuttuğu kan damlayan dev kesik baş, morarmış ve çenesi düşmüş haliyle Caravaggio'nun kendi yüzüdür. Genç Davut zaferle değil, derin bir acımayla ona bakar; kılıcında ise alçakgönüllülük kibri öldürür anlamına gelen Latince kısaltma seçilir.",
+      "1610 yazında beklenen haber ulaştı: Kardinal Scipione Borghese ve Costanza Colonna, Papa Beşinci Paulus'un affını neredeyse kesinleştirmişti. Caravaggio Temmuz 1610'da Borghese'ye götüreceği tablolarla kıyı teknesine bindi. Tekne papalık limanı Palo'ya yanaştığında muhafızlar rivayete göre isim karışıklığı yüzünden onu iki gün tutukladı. Rüşvet verip kurtulduğunda tekne tablolarıyla çoktan gitmişti. Temmuz sıcağında kuzeye, İspanyol yönetimindeki Porto Ercole'ye ulaşıp ağır bir ateşle yığıldı ve 18 Temmuz 1610'da otuz sekiz yaşında öldü. Onu şövalyelerin ya da papalık ajanlarının öldürdüğü sıkça anlatılsa da, Napoli'deki papalık elçisi Piskopos Deodato Gentile'nin 29 Temmuz 1610 tarihli raporu açıkça hastalanıp hayatını kaybettiğini yazar. 2010 ve 2018 yıllarında Porto Ercole'deki kemikler üstünde yapılan kurşun zehirlenmesi ve enfeksiyon incelemeleri ise bu kalıntıların kesinlikle ona ait olup olmadığı konusunda tarihçileri ve adli uzmanları hâlâ ikiye böler."
+     ],
+     "eserler": [
+      {
+       "qid": "Q510799",
+       "bag": "Malta'da İtalyan şövalye Ippolito Malaspina için yaptığı bu sade ve yankılı taş oda sahnesi, son yıllarındaki boşluk ve dinginlik arayışını gösterir."
+      },
+      {
+       "qid": "Q2727560",
+       "bag": "Caravaggio'nun en büyük tuvali ve tek imzalı eseri olan bu tablo, şövalyelik unvanının doruğunu ve kanla yazılmış suçluluk duygusunu taşır."
+      },
+      {
+       "qid": "Q2429754",
+       "bag": "1608'de Malta'da Fra Francesco dell'Antella için yaptığı bu solgun ve bitkin çocuk figürü, klasik aşk alegorisini tarikatın bekâret yemini altında ters yüz eder."
+      },
+      {
+       "qid": "Q2627056",
+       "bag": "Golyat'ın kesik başında kendi yaralı yüzünü resmettiği bu sarsıcı tablo, birçok tarihçi tarafından Kardinal Scipione Borghese'ye sunulan görsel bir af yakarışı sayılır."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Caravaggio hiçbir zaman düzenli bir atölye ya da akademi kurmadı; kendi elinden çıkmış doğrulanmış hiçbir kâğıt çizimi de günümüze ulaşmadı. Yine de yarattığı karanlık ışık dalgası birkaç on yıl içinde bütün Avrupa'yı sardı. Hollanda'da Utrechtli ressamlar üzerinden Rembrandt van Rijn ve Johannes Vermeer'e, İspanya'da Diego Velázquez ve Francisco de Zurbarán'a, Fransa'da Georges de La Tour'a, İtalya ve Napoli'de ise Jusepe de Ribera, Artemisia Gentileschi ve heykeltıraş Gian Lorenzo Bernini'ye kadar pek çok sanatçı onun kurduğu o keskin ışıkla hesaplaştı. Fransız klasikçisi Nicolas Poussin onu resmi yok etmek için dünyaya gelmekle suçlasa da, yüzlerce yıl sonra Gustave Courbet, Édouard Manet ve Paul Cézanne bile onun dürüst bakışına döndü.",
+    "Bugün bir müzede ya da loş bir Roma şapelinde Caravaggio'nun karşısında durduğunda acele etme. Önce ışığın hangi yükseklikten vurduğuna bak, sonra karanlığın içinde nelerin bilinçli olarak saklandığını izle. Kırışık bir alında, çamurlu bir ayak tabanında, titreyen bir parmakta ya da fırçanın tersiyle astara kazınmış o görünmez çizgide insan olmanın bütün ağırlığını göreceksin. Caravaggio'nun mirası yalnızca sert gölgeler değil, resmin içine hayatın kendisini bütün çıplaklığıyla sokabilme cesaretidir."
+   ],
+   "baglantilar": [
+    {
+     "sanatci": "Simone Peterzano",
+     "iliski": "Caravaggio'nun 1584 ile 1588 yılları arasında Milano'da çıraklık yaptığı ve kendisini Tiziano'nun öğrencisi diye tanıtan hocasıdır. Tiziano ve Giorgione'den gelen Venedik yağlıboya fırça tekniği ve renkçiliğini ona aktarmıştır."
+    },
+    {
+     "sanatci": "Annibale Carracci",
+     "iliski": "Roma'da Bolognalı klasikçiliğin öncüsü olarak Caravaggio'nun en büyük sanatsal karşıtıydı ve 1600 ile 1601 yıllarında Cerasi Şapeli'nde yan yana çalıştılar. Farklı anlayışlarına rağmen Caravaggio 1603 mahkeme ifadesinde onu iyi bir usta olarak övmüştür.",
+     "id": "annibale-carracci"
+    },
+    {
+     "sanatci": "Giovanni Baglione",
+     "iliski": "Muzaffer Aşk tablosunun ardından patlak veren rekabet yüzünden Caravaggio ile sert bir düşmanlık yaşadı ve 1603 yılında ona karşı hakaret davası açtı. 1642'de yazdığı biyografi ise Caravaggio hakkındaki en erken ama mesafeli kaynaklardan biri oldu."
+    },
+    {
+     "sanatci": "Orazio Gentileschi",
+     "iliski": "Roma'daki yakın dostu ve 1603 hakaret davasındaki sanık arkadaşıydı. Caravaggio'nun atölyesinden rahip cübbesi ve melek kanadı gibi eşyaları ödünç alıp onun karanlık ışığını daha gümüşi ve lirik bir berraklığa dönüştürdü.",
+     "id": "orazio-gentileschi"
+    },
+    {
+     "sanatci": "Artemisia Gentileschi",
+     "iliski": "Orazio Gentileschi'nin kızı olan ressam, Caravaggio'nun Holofernes'in Boynunun Yudit Tarafından Vurulması tablosunu çıkış noktası aldı. Bu dramatik gerçekçiliği daha da sarsıcı ve anatomik olarak çetin trajedilere taşıdı.",
+     "id": "artemisia-gentileschi"
+    },
+    {
+     "sanatci": "Peter Paul Rubens",
+     "iliski": "Caravaggio'nun gücüne büyük hayranlık duydu; reddedilen Meryem'in Ölümü tablosunu Mantua Dükü'nün almasını sağladı ve Gül Bahçesi Meryemi'ni Anvers'e getiren gruba öncülük etti. Ayrıca İsa'nın Mezara Konması tablosunun serbest bir kopyasını yaptı.",
+     "id": "peter-paul-rubens"
+    },
+    {
+     "sanatci": "Nicolas Poussin",
+     "iliski": "Caravaggio'nun idealizmden uzak, çıplak gerçekçiliğinden derin biçimde nefret eden Fransız klasikçi ressamdır. Onun resmi yok etmek için dünyaya geldiğini söyleyerek on yedinci yüzyıldaki en büyük sanat tartışmalarından birini özetlemiştir.",
+     "id": "nicolas-poussin"
+    }
+   ],
+   "kelime": 3127,
+   "kaynaklar": [
+    {
+     "baslik": "italian-traditions.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmwjm5Qs0JY5qzRZbUEqtoI55kZXJwcvbGJQvNdgwx4ClkfCTspFxnLWQG_C4IhgmVOp_trprKTKO8KJXMO4fESMhFZb-AdDbUmT1Q4c2VEEiMakYoj06X5EaLZ2NrsHjWXcLtdMrPBBoFTmrunLgwMUiPgjkqLoh2HHNvVw=="
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBnmzt5GMbUkxlHyetOhJTpZJ6DctS7Dg3VkTPIL0OK7v4h7kpnt4HEg0rFxCKBYk7fEhhCtXziYiscLG54IWl46FFHiC-ERbnt1qymCCbxHD8xvMaL-65c1h6RpgReDLkOmaqWK21W3gutdZbHw=="
+    },
+    {
+     "baslik": "tour.milan.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfGARwg8dIsN54khFD1hbyp4GyalInoce_9Ku9WDfVJe_nR-VxccHK8X-Wy3RzhSetOMBPMvnCmuo6Tmz0Gsi0OYW8nDvcII-LuA1oScfONS2pnSg347Y2yNDSUr_3SGOrmXv5cdqC4S0gOCyU6nyMuJ99xfBHpErTDM6pMy9t843z_vfgezhK"
+    },
+    {
+     "baslik": "caravaggio-foundation.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyoVhGSS8_rqD0fYHG4wS8vnO5Bz8JgZNbxhBefAM9_LHKCpRDqLortmXVNsks8iJlUFtb8YF6QbocEnS2SPzpJYDQPWUQvA_S1M4MX10C3dI1q8uzCBmsuh-m-lVxhAXOfvFEIFHz8nlO"
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETOTKyeresc30Nqo8vJQgjiKugkzsoIWVURhC4fWprRavQ8nyGU4ZsW_7i9aHe4blLKF3QPIRUlR61KPLzrnHJRi_1fqNsGaEEc9GH18SSBpU8lDQuguQHCVn3BshbibnnORnO6HmWgj5PZlnkQh8Nm9k3mbUkeRJcUwgxB4CQCiu-uX_Scj0iov9niYfmQ6EfXO3Y8lvnjdkQtg=="
+    },
+    {
+     "baslik": "substack.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHG-iqHlDfq6wsdQsoBDNlxOexBOJz2LsBC3QYMJ655no6KF9kjA-Bg1qQUZvpJxLEnnQYdVlXVDD8VVxgbs3c6mYHOT37-v5KG9W4iciI3QbkYMJbVqq-VOvN4jc_GE98De_QCeNx9Pf6QiFLNKpf9GtjeSC-cKQKWj2ASEa8dZVYTTDVGA3Q="
+    },
+    {
+     "baslik": "artblr.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxGvWwr46RxUa7NiXz-Xn8AXDQFq3S7naQU796towAmIf6T0F7AfPWusTm6RK0V1BPZKvoD2f6hPFa_JTm9sfj8tNvy_ACx-P-_A6QmFzQU38pzibdMaupGpbA6zkn5X6ZQvCWosG88KhXU-oEM9ucKDcFRtdBfe0bTCEFIQ=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEK4DHGKWVsxmJR9gxgUgX_c80F8lnbEKkQpmvsHFSkRM3Syk237vdG5urqDs4fOZNZPwB7lrGHVqMHVQY22r-CKePATUNcmDzleUZ9sJFDH8909YoLiiEIjM4tUuar"
+    },
+    {
+     "baslik": "britannica.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx_bQuwhdG8poYSDa9Lhct40L5nDVNiISYA8DajGZhjvpw8uoYou6bDdOnyoeJWHZzbze9VkGUSCtONSh1XLW6e9zBcIZscwAeU_zXEQm8u89Zr_vFNzB2aPQXqfEwUmbT_cd2Uw=="
+    },
+    {
+     "baslik": "oaklores.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8qfC-R8L06I7rmcvLhTnsYh86cFa8efHnbJVlgXJyTbfa-pxTiQd50wx2PSGXShrAivBtBaW5gAjnZXTOOTnSdf-ELyYklXxUJgSGHHdWGEq4S9hXgtdK1mOJrwwySmCV"
+    },
+    {
+     "baslik": "mostreimpossibili.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTwSYtd57iGnxZ79zK4LRdWGwbIjstekVdsPM9hqys9NhX5mZlI1HfvhF0F451q6SfCmNrOEc6N7JhUHgrUE0awdUZg_GhSeLLXxyJRZv6qqT64g9i0cwbrYWYKZ3ppYEi4L4="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtSpESsBXfVywVKZxfMA_DdGo_COj8bi9UOKf9y98NNVf-8V4z3ljSkbjyDpLhm0eGd6espx-EdyP0FVW9rDTIgCFRH76RhRHVxPkdClUaqHrTzHfpO_ok1ZQCQA25kAlOJYcQqKHPJ79X"
+    },
+    {
+     "baslik": "ufl.edu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF38Ej04emj62gVUGsHwqIkMmBOi6LYeM5C-owa1-2GR2PDljgBAJ0Z5G8FnIt5ImmWVimmbXteYnsbJE-5MEJt2Cpe1xr4EBgAHWqAAwLX5zy-Ppie6Qa9twezojeEbaygTaF9b5bwqoxtaXVTfF7wpt1_X4yYBfQ="
+    },
+    {
+     "baslik": "britannica.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm6wF4aONbxUWQf02GguU5PbfUokj4XY_gPvln8bJzS6987x58EL2HlmzxQl4k8CTW5vn-VFd7ZXapsReHYkVkNw60TPXEVctoj9F1EZWM0X0_123yNzpXdA1TTcPhuydHjVBbgA=="
+    },
+    {
+     "baslik": "theartstory.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQj53LbPxenjJ_A3phj9AFN0S5d1sS31Drm9vOqIrtna2Zsu2grOsK9hU3PGY0BujHK28tLx8dmkqIoumqNwdK37W9tRiGe7SgACUo-fYRezccQBQ4y7VvLZ2fK-X70ccuhpqv"
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvy43s_RCjdxgtV3ouW4K9uVqQHZQxVFh11MP0X9928k0cDS5ytVSQpT-bMgHFF9Q-1AzpPsO84iRkaKgIC3HSBqx1rzqwLKaXZbVTVq5DP8Bbb_4C0iestojKrbZujqqvga4XoBCXAiEDBQmgfhID7go6"
+    },
+    {
+     "baslik": "shafe.co.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjT-IuRl1EqE4ZStI0SppsCFZJJamQEcx7HpBohXXL9z-JMyc_MFJYm_1bSDh3DnCHqts2fpYtBC-jUDpmtXcsaKnIoznukMaQ_itnx8cYOLuxQ53Zq2dZeNALOmgQGEbVm94tjAckfioat-i7Wuj098zroV_h"
+    },
+    {
+     "baslik": "pivada.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkRjx8RHJpaL5BWBDLe3F_p2wfJwGVhFr0g9TmP8_oxbOAZMtBc5lU4rC7dbAsRLlfcQvjfj93-xtS_S29CAlOYZMiUrETd_b5j4REwLln5dHweyQqPPF2uZE="
+    },
+    {
+     "baslik": "italiani.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERxOWHkMOBWfzb-zjJSuCqHlIvjqCJMzJN5aMKS3XDdcFp47ETjgg4BQE4XF1IgPHTiKvG0r5oWaFxmPSjpvT0ZfzMF5yrB79f2oW5YeJDh2u45j3aKVAF-lb8nqKYRgfUKtv8RAEE3Y0go5gv10QoIO0GY18hcarzLKvPNO9-B0vK4C5aEACV_Zdm2Irl-YNoQIIeXEzoJNEP"
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-JyccIIJAnSr8tl3cktC6cSjJaeA3H5bfIKGleM3QDl4WksAfaOqfR9Im4Flf_IzHz8Drb3LcOu6ejGHfzB5HppHjB4RPbfeoZkNZpLpTReLcfK5mXkVO1eOjmR1S6TfL4kKazMNiQ=="
+    },
+    {
+     "baslik": "britannica.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGdVMCyzQQuJ0ARna60vmCZV-oFxIHKbRTYLhYjsH8cjU8nDBDOK9Y7xLdgpm4hhZrfmAX28mIoKSyhJhwp7ttZfjVkGo8Db3pgHIfrxeZZ5uJ_3yxYs9jinm44cWLMTXzXn4qkoCyVpbAF6pC2F5gi-xXELpRm9kS-5_UH0s4SV1VTxcUZdjlcuVu3tfma9i7rX8PTcgCmTH5cRbsn58="
+    },
+    {
+     "baslik": "hellenicaworld.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlKzU5BFp1SYPXNe6vsa_klvSGN16IB3ZkGpxPKvot_-nEzwO-ZD7NVLv9L96mtY3sh1YTTEtiBAIreE_5J_NSFEYJkBXPYKVz5n7IoTTmi1aqO4O_i_I68JMKO4bwD_8P7q0C0iaYcyD_yRR4Ui6Xdfh8AoZE85y5LeByKlZ_XXI="
+    },
+    {
+     "baslik": "wordpress.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESfHmpJXTxWnBCrcYnMLeb45TvNJsLltmKQmJEGvbjCiejpMKTLBvpv9DJnBQq3YHDDf1GJW4aBenWf2qdVw0x1TVYfAVSigqo-j2j4DGz8eCObU7s19U4H_OVgBz6j3KquRN3COS2lmp94_Lq-MLZ9uvQzDtO2pXTDLkk7YnwDKWRosNdBN-Mq9seSJOoFiIQiLOQ14xChx1puJ3uFYcf"
+    },
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuPzVctGQZlVDgqFdBgHWgHqzLnWZrge8lOGcpCxnRmOUpXQbw451jpsXFtHsEPzDTj8R6sD3tv_QLW1gf5ev-vUkoZ-XV8Jyj5aHIb4XkRMKLhtqBZnc0qNLLP0EvTosmz78AQrmZNI4dy9IugL0Sti3bpawMCiYqgmv1dtdso8A="
+    },
+    {
+     "baslik": "codart.nl",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS-m39fLjlOYBYCYaolNFupDNweYHTvI532bvOmKpAwgpZJ73QLe9OdrQvQ81WwcaO-0QSgKI61dx-b2IZoXGAy9pSPnNaXelxxELRo0fEkSzckUMxqj9m9ATe1YpIAmaZj5EJEnSte_1bgFMIL-F52gHbH4SXBoLG3g97aPFTadoyNTsP3NEcSWQ5ipug"
+    },
+    {
+     "baslik": "newberry.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHH6w56uwvZYVnEC6ENX4BC6wzj7Hie9Yx_3Sjdw6RFwcwaj-3eNDaWcDNuHD_yOqklBzJU5qQ3RhK5xb5nXdRWhZSMxTjGAjjBZfdRBk7S5JXulmxO_ZSS7k6KHvrcD90BTyLCgN2HmaknEk_n0EB4l8k3p7esAUa6SKHeg=="
+    },
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGIkhWdlubkrweNDbdm7QILtdmwfmUzfF3BIqr_r8Sr83YZyfHVUMUpFPNIM7Zes6PRPu_LGlC1YNKo8AhUrh7OJmne4mXGCLFPF6jCUWh20pn-uv5x3XQzJcYHkv66EB1_JTZNsklXAsQuo0EXpx_Q5rdSlIm51adFREiDogKX_l6j2BR4F8AoFOrB0GjrgLh5ZpTATqcJw=="
+    },
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_Zpdjl-jDoMMWc9aamtu-xL1cJPuxSzStZkfAoZ0BGLw0_gDWOHru6ewuKjQ3TylaGzskwpXvh2IsSMJrwG2I94CR1079NHfJT9ok_FnzqT7OwLIvTqQK8dcPve4PVGLE-JHMu-stlTLEZNsAL2A4D1dT9drfS1MFH4M4-M4GhwyTlrS_965xlwPr_VV_zgJsr-Cyv9CtPXco-rJFRQ=="
+    },
+    {
+     "baslik": "washington.edu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEepXTlEF-y5nkKbsjPjkCwji5-bcehN5nnhfpXJeDsupqa7pTwsuWxosYdfFP5mu13mWghMwpU1y8Hu0HxZRKEYrqartwpPJxgR1r2qL0MtgifZAmc04t7mgOZr-0CAwf3kou5z-HcuD-gA8PaXmc4e8y9XgS8bVC6MBVVsMJUCef0SDqSX5YYsDc="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdA-YVyiM7DflcUrq7npai-jIsD_YrlSDKjuHpFLLoZ19x4Mo7czcX6ahaLkxvKTtZH1LSiA5xWgXgr1QlR5dMTWhnbc30H5pKrip62L429zn3d1t8jXtgmN5oGnNEuSpq09Srlj_G9x8t"
+    },
+    {
+     "baslik": "researchgate.net",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExMPR04OtE2yrxBat8MwEPPpopF84XHXtmT-0j4sQfHFKuxsjmdmRFYjmoiPmPFG-Ou3ZhSTqi6Qk0G1DkkuDbpVwa71Stpgc0G16bz0pZ7z2N5SKD2RWWaDafkLYOr9Nff3c73MRwmTPjAGAYs08c3wTbQpCm4wW0dzT1hj4NUGW45fgTLvBDLO7Tnt4_zi4tbHZaEIxIDNWNlRNQwVprdx_l8QmjPr_47DgYm4GAzrjNPUnCP2bPtX3ZZZc="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLY22IJ6wOJ-2W4CnJr8hG3p-J__OIfhb2z5Tb0hDL4ArdciLkCfFdpbaLIAxD2_wP2AKlGt7iALRuFl5jFwAiRubhIDbi6e-BXX0K3tE4IJYGxEg4qy-N_ZE_jiPmLhiFNeG1k9tUGz0iVgMB"
+    },
+    {
+     "baslik": "visit-milan-italy.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdEKgT3xlLZ4LezkhYjIldSzdowqJyNn9MrH4BsPLMvAY-spFyyOxzIpwcCQfGVXevBkq4d55a497F9ln4vMhQMYZQ8d1x6gtu-vgv0jZ8mRAcpWNphYExH5ezmfYGdP2mi42fyHHKCR-vBKJnllJmdzoR5n-69LLXk-XNw5DzmfG1DzaCFIhkXCgoyAhWx9EpxKGLV9NbmoIY7wDQ529uvA=="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-JyccIIJAnSr8tl3cktC6cSjJaeA3H5bfIKGleM3QDl4WksAfaOqfR9Im4Flf_IzHz8Drb3LcOu6ejGHfzB5HppHjB4RPbfeoZkNZpLpTReLcfK5mXkVO1eOjmR1S6TfL4kKazMNiQ=="
+    },
+    {
+     "baslik": "nicholashall.art",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2GKMXg6t88Mb5kxNQhrkz4dXz_w_f1mvUc9_DNyH5Dw19litZqH5_GqNOlKChhxq9top0LEEkWpazU17P-ivAKKpWR4Kc2Sen7beEFsiMuaccLOctrXtHk-cs_AX48XYcALsui95N5FmVUzygGWZtrsKrHFU2GCI="
+    },
+    {
+     "baslik": "caravaggio-eccehomo.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGU_c_rgU-4tyBw3x1AD7hj5-YyZkMPNnN7O_wsg_KLKdHjHX6rJlmFZgjyELRvWeIPFPBYuIhupUUfw7Zs6UqQj10aBQ_nkXOfI3HDiCuSyJVS4w_--Lig6Ck4ghhkQi3a69FEG7V8ZebNzw=="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu8bfjXnmNDyZbzJ1DxDe6gcBdyw2ysfbnr-IZSyM5m-7PzsLxVr54Hgkj3ell3hw91MXDdQSlz1o2u6IfWOpa9r35JZ-9rk0wYC4oEMM_Wt8muhrBWjeIfhvyPyU8592cunNs60s3AnmPKWSqlJQUeIUn1IYB6ifxaaIppQBTgC5bin4Rhb23Gx2QPqORQ711_vMcKYYpM8_ceCQWT6h6vr7FJSeAyRhUeF8towaW7RCUUNxVkIsHVp09aiRrAw965kSvR71wc20HHxvPQxDvNLbC-3CYUnJI"
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSI4LTnRHYGmYYHP7gw6tMDFJI1VcFHc40B4Wj4UmoC6xCoRajBGW21pBeuPWg3t89lXJkS0LEgViJd00uXSfwBmN9MmNRuYfJ-uDXG-yE7T4cIus-AxYyTN1v1EodMtvkymsIIrHDh3_qDbBvEO5fHF5-07asptgDqYLq9gfp9w=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGijUrGHR0GfCbs1TBOA_0Rv8vKVsBchJYtH9xvE2nb78lWFTSB3mXhi4OkKKg8t2tIDDTFBc9m596hcJMktsnVSU7XGZS9LsLY_vQcAomHd86NT-_eaMx7wMwvylGqyU5tlabZ0cf0AImVSxqpkpKZJSXAyRCwnjS0fH-DoocSgOP2zA=="
+    },
+    {
+     "baslik": "wikiart.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF35JMf4vNtJn7yiIy9--t81CSYiVSCRcp429oL7qmoflalVzLF8Gjd6z6E5SYi8KB_ryooN7EGktHns3w7TJRPGklN6hf50RW7YuDIJNLw5ifrcKKo3OW3fpaDOvKIsJczI3VnYa28nUPS_Um-2FtE139xoKLAPxcbjVOCln8="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgB0uIxKOm2RC60OKocj3fSoTAAD9ApXgbKq3FPhHeL3GdEIa5z6WPy99yHPeYOp5AuHmaE5DjpWU8v0_uJEca2PT-2RtXcm6lhmZ01zK31MCfoJDF2Ec9wxGxBBEce5Fui0sJ2RjN61UuYc4uINV-TqjNFiPnJ0la_sV_tTGd4rRs3_NiD_eZpDDcv7Wn5ubbZ84Mt9pirSlsx2LO4wIC319ZoUE2Fe5oIoh4WwaNRHF2KU3S1D_pH_Ku-CEyaYL3_ytQcNC5xBOBLTfVEzu3aBIPTWakEZgqgft5r2GxmykZDeT9"
+    },
+    {
+     "baslik": "artlists.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyNlW6TrV6xZWhLZiLN5CqgqnIfKEbf0anlhMZ20FIxggGx7jeUr8MHkPqItJb2BK4OGLuVwfcgQPguq61lAlV1KGh19oJEDOJ43kPCBQ4FYgCdsIonoIrn7AVwZGOfYldbZhpebwaqtLi8UnSxB0tA1Jing=="
+    },
+    {
+     "baslik": "wga.hu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5R7eTGXNqPUd7x43LP5R9_i5Pq9X164FiQN4ZXSeW771qnjWgeIn31lGXizT3CvbrTwz_ecsnTm4_RdrFTzEM41I0QsJVUXGNJlNI6ArmRaW5fdlt731BRyF9MoFFm3jUp2Z0nrEFfw=="
+    },
+    {
+     "baslik": "thehistoryofart.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxU8_akqHVQ63VWNtuc4EPxZ8hYrUjdg9WJAJNd1frCCFr1TVPu6aOvvFREwuWG9Tg14LCxFkOofrRor1aSo4NqKS-adiLhGcn-0XrJAQ_lOKVcmk9sANlEpl8BiprmYl2f3NyIG6t7Uau5F5Y0Xb_DbUA3qBqR59S7g=="
+    },
+    {
+     "baslik": "forbes.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-K-WRysyRdmiOSO3J6xrUg8SrO_Sb3lD9_RJ2K-CWQ55OVk8XZEESpqDGZlzlhmQV3BVrL6cQxPjrJAOqtEtwOBMrCHaPy6SECBtI08skHMtSP9QsvW6oXdFRer0SG34X1cqSgIm_IWsk67DvrELLJgbmE83OAxqniqYLdVTwuTz7dJlZpEjYFd-xuwsICPCiY-AM7ksrJOEWEPALV7pY91eSh5I="
+    },
+    {
+     "baslik": "ambrosiana.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7X7t5tFoIOCfErb4ZBL8IbrOBvJdAvM-iepvlpqAKObPd9NgiiQJCqdlsoFYW3cyOCjLyAa9AEvRpMhQSOQ4UCKGHqJPTyDnQxcx3LrPoPzr4-szo8abhSEwWm0mCSumzjWMXIlTnj1Ue7njLnsI7zWWkQKhQVM-V"
+    },
+    {
+     "baslik": "google.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfwjoiIcThCH7zo6FIN-GskDzNMd22moxS2Gcan_GHIKXDcEXOc0CLnb-UXuY8_TZ0oMc1C_dVOrkmaZ9yY362IC3tXA6Z-euzWE1zZcZpI-9aVxQK27ermjUbEbQ15Y6uSCia6MYulDa6UFtedf4FZ4DtHhdmWZDQFjb9niSTncP0BzbApMzXlLIXBCMC1jtHXEa2hkKLPPdbVKpO9qlUYQ=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNMjChikfCkICCalpGtXrQI8D2GKlBB-z7sQ9Czb0iLf9haeJQjdOppMHdHa1kw1Mt3gjXlD9AolN4LODAAMQrkvo8TwXM2noNe8TWfJMMMPSD_m4ep7TFbv_dZ2rEB1hhASX9vGUBkwmJ9W5AXtV6"
+    },
+    {
+     "baslik": "caravaggioisalltherage.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7ZcJAQCOL84tCZ1EDu8YqXso9KWpkVgvgwO4B8nsdA-n_peetXCi2lKehYttUmQ6uC2jQmYFO3-u381RHxVAY7ArqBJX5oTJUdiXoMNJCoyzTaMn3B-e5pw=="
+    },
+    {
+     "baslik": "artsmia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSEJsuYKpvonlHj-r5Pt6XNASm2Rv7gBVRN4q2zxOdSR_KFmQRCIUnv2HhjFWM871hXCJLn-sowJphunnsh-2Q0MhzGmvwU_bUp9eHUtMt8i40rNXTH45Z8ccqJPVE7ofzZheTBkXkxJemjrLaNynJrV6onfNRxmIun4OUpw0qgSbQy-Wmp358gPpzBb-5c9C1j3pM7YOlj_2K"
+    },
+    {
+     "baslik": "note.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7XRXwWCMfLqfZqQa-4e0KBeG7E2xBpbhboOzLlxcB4HIeM_Z65bsfGi4uxqqBM-gCXHTWsE3U1JNm-HvrzdNY6IY6Qo4qCYeBO2kNaavoA0TvxYZ86Xq809IbNgUzaQp7vC8tXtR7ww=="
+    },
+    {
+     "baslik": "palazzobarberinirome.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvEQ6V4w-SRHqG-1TzEKqvo94LsnOzcet_sEjbgNtpULxpbg7kV7p7KyU-xVi2cDL-3FtAJK1dhxCazdk8nBGEdyPf3-SyMWJuLIS4st9Vz9sPeCd0C7zaQjsMoVL3hKxuEaBupozZoQcXtGwRvlieb6AX"
+    },
+    {
+     "baslik": "thehistoryofart.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUAzMh9ZCX1Ata0hF4kabrOGzyaG51Yuf3pEvSwifWDA2FOgaQXgmbk5Nxs8v1MRtwjn1m3ckVSwU9mffgumU1qqnksVfR1wmVSqTkqlkTFj4EhL-c3e9rSnB1OaSEt-4WDms-OWXk-6BGiw=="
+    },
+    {
+     "baslik": "arttrip.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGi4HLKaIXCcZs0DaYJe4AykVl67VFk7-6hibptXYM5q4VObjjjylMfF4iGpSpRggcx5R1tj7YJxiN4yNBvzQ9Bj12WPIHBpRoGahEZhVTf5GV93nYMpqBIP5G-ezffL4c79I9PKJVd"
+    },
+    {
+     "baslik": "aboutartonline.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBxy0vHFquiT1fm4xnxltKHQUpl2y4DYZbVhtbnCcMKbooOthWTvhngfUeTNzJ7V9SfTV182LtFov81QKQneU4Dn92Slt432f9aMckhvf8UMCorcTbMHeSBLR1sFUuIQ4P822b4vscV6ZgcDlUJ__F_WgC1Bz_HNd1r4sIdz30pnZzbzB9GANrNq_yi7szeVszpq8hhA=="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrTZXTVx_1CGPQD02LCtiL4Ilci7VoasQz65MRKSV5cINo03jY9q9eL8RocWbmzylOKBm9F_qWvR-Bw3gyBoyd0vBZwtZc9FkmdFHcFUD2UjDTmFRCe8qbxa6Dru3dmgtx3YblTwK8EqNRKS7H3hIarQ=="
+    },
+    {
+     "baslik": "caravaggio-eccehomo.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWP2NwEpOrOKUi3GdhplAu0CC98w9KHrEG_cpWbQW9awew53j4Xv-TbVOj5YQ8YDmjL4kL-PxLTVIEsy_ttfr4wpKdiBl8i7NVEFNzrqtm6RKYSEVfKdcC6uySk7MDlh2lLaZzW5LyIvAqUdY="
+    },
+    {
+     "baslik": "nationalgallery.ie",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbOTKM58Pcj3tmEcmOJwxoWwEh8m8Y2TwGjHucynvvfJfdF-H-M8zsPRdVfUsmtEnubXxev-Wc7nQxHC72g67-KtsmXGfJ4X7PzEzO75WzjR47rj700Cbf1ZGiZufDtKZTN-i4sNTj0cYC2LVGAmxWxs7qTt8sYwW-pbfM_LhkXNzVdraL8wYa-7-Y3geAhEQAN8xEZ9Tob4PIZWY31ubl1cSKxoo81mpyL1uyJ0CJNxY="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETNH8i9OvBtiC1jhg1xFmPR5Y1fWE2lueG_KBHRZiiBU2FKQrnV25ncX2WrqSvg3xjdjr_rDLylox6V3JWq7QDyhPtUAkxsabHkSj7F7ME1GolXhdupBHvw3rAytje"
+    },
+    {
+     "baslik": "google.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGa4wmIgnKeDVRY2h8ZRmPdzDwf7K5gc7Vh6c_YeRv9v5eQMBcqmZryVmGrg-QEtYaQtvOuGSEcsRJJtfn-GYPCsuqWzz-W47iyEdzdWWnxuU_M8iuf7VXBTdiMkYRMcPaVrZ6Xwp1oR1AmnrPMyd_m5MiwBXQ="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0oi2CHLdeBRqOnOB34OwiRHh1KWXkNuYNXpimcDKCB6XpDCzjb1ebh2GJj95TQzBeP9rgcHi6zRM_KcUSopsmV2pnxqvyUPPdxtqezXfagVPLf1ej-xeIOOnYQQ8-Zq1ykj9AZj5gD9lHVOeLhzeve1wdeQ=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGFCB0lrQ63cmJawuTZhN-DCuopnM4JN8-jpz9RiV2739MBWZLs5cVoobYctelq5DBQeir8pznMelB1MvcWvVjmXG5AcrvhfMOpaYpf1nTwcpGMmmdw8w0XqCJSn1PyxOobjkoDkrsr2CLqowxUGRXQCgB8qKvJf5q4m2GkKumFQ-d3HeTDIKq"
+    },
+    {
+     "baslik": "real-tennis.nl",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfP_XO0vqfi9oifCMA6e3BcvOi2hfN0cp4QegQerqO596lsniddBHdtdFw1nbhFLFma0NYWhE2sZLrvLlrpNdN_RkPn6ZL7eWrhiHa7hUhUVOmk1VUQ7giKk1oHB3W_J8S-XCmXuaA3JgGNxT5M0g4di0lGYrNE0JfibzFaOskAro2XQ=="
+    },
+    {
+     "baslik": "musemuse.app",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGF9GiQIvo5FkwGKJb609JmJmkRb6mCOhtnNe5J6CrwoY7FnvoeMjSKce7BBgL7XtPmqAlkPXms8JYfYkUvInejVm1rPwLxwYkAFgQX73F_ANPmyBqoVRE5TookgBnP38TqcRnlnZLC9G4kRIg4GJKL_Gtbfv7SdO1_0GgztCE="
+    },
+    {
+     "baslik": "coolstoriesabout.art",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrj21DqUX0i1DTzOrsGeDBDW-Q06uPPaPclavHJ7KMfKoRU4XgK6YcOx9XpndYSpgcox9U-0yomZ1wL6N9-bJK_knZ7U1FFE_ha7rwdAYfw6WhjBj98kG8ruW_LfakObzKJupgAQ05JrkazGs9b83W9HCVLw=="
+    },
+    {
+     "baslik": "artibusethistoriae.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5HitejtprBx5yjz_xroNvl4CDO4U_PGgWHk8FOqCGXRIx3TJJ8_gRRT2jaOGUZjzuY94uJ6ahZ7muwJ_0U7zuK6ypvcQjQSXCy3Bvb01GUWtsPZbOFWWZ8OBgkjWnVo7Khg24"
+    },
+    {
+     "baslik": "wga.hu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrzlS0uriNtwzBwbEFj4b0ML7PupQDXpCbGYIVqEWpCELzs_6BOaTO8Mx-yXghJ62xwG-4izAw1wJAE71i92Di7j63QrrPTCrK_wte_V1VVjqgfDLWBX_L3RYcTYz_QRVwW8lT3uLESw=="
+    },
+    {
+     "baslik": "academiaaesthetics.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVhuP4eG4ZEUtlQv-kpjzpBE9pFruUydBBxFqleqiDFkrHxC-5heFFl3Zw0z8ugYrl2H16yDHnlCbSGsQGLTm5BdXlu59Lo4haKF0iIKBSuJPDG44GV7wdmDGWZ3gNLqjdcflAB4NaqkQnR-QsdxCm4U0b7TgsXZ_o9xAQ"
+    },
+    {
+     "baslik": "haberarts.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-y7xAd13q_Hl6zpeCm_7xfIKcZBK4rxRdczIsMgADeY8XR20XFJdKE1uyi33-KQEdIVsYJ1c7mpMNqGXjjZlm2atTghak78uzc4gedPqDz433y22dNhQNcF8LlA=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9bvWc2Q_49azAcBwUi8gNYr7-QN48vcWfCzFeeTk9f_dKR_kGBorr35cghNbiPX8sW7wrxd-I7Hy6MbYzRrYG4LaV-o4Ryk8j_sffIFZSYmYocNb9txFqTYpSOqR0L4FQeoJ0bmqcehk62Kh9RMzrQvXYY5kqRzjyFnN8hBL3etEhC6tI"
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-JyccIIJAnSr8tl3cktC6cSjJaeA3H5bfIKGleM3QDl4WksAfaOqfR9Im4Flf_IzHz8Drb3LcOu6ejGHfzB5HppHjB4RPbfeoZkNZpLpTReLcfK5mXkVO1eOjmR1S6TfL4kKazMNiQ=="
+    },
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGIkhWdlubkrweNDbdm7QILtdmwfmUzfF3BIqr_r8Sr83YZyfHVUMUpFPNIM7Zes6PRPu_LGlC1YNKo8AhUrh7OJmne4mXGCLFPF6jCUWh20pn-uv5x3XQzJcYHkv66EB1_JTZNsklXAsQuo0EXpx_Q5rdSlIm51adFREiDogKX_l6j2BR4F8AoFOrB0GjrgLh5ZpTATqcJw=="
+    },
+    {
+     "baslik": "asfa.gr",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG01M1pnMxFl8M9FFSX47BlLl-NSyGO15RJsWOo4Ow4b2voGzhKYnWGHvguCl20ZQ_3qPG_LMgxRmP_UpPNwreojydNOQWQG8iGHQXlB-2jHHUN-7L7k03zHsNffzWKgk5VnirGC0zo_GZxasi9kzQEUlu_pSe3M7mAVsU7gaRMX7YgLUoIU0bzQxf6J84-1k-9pIu7qOZZck5IEJzo8y50Acw__eRL1meB5bqS_uP9Ya8mSv64JcxkIvyLo9S2CebbGB_j52L_gITul9KIBYbQ2wT4YNSQ-jQ6lKP"
+    },
+    {
+     "baslik": "blogspot.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVRlXkEJG-1PiOw4uBbqkibqK2FgXUvsZCkRfVaVL4TDAMYT64BHvnxfyVxoun4x5IcTAibr_N1O4ccB3j5UV4NUW9lg9mZ8F00x3qxP7Ci1I9SqESNIyFTRGbsEBEfWpCVr0jfBZPVsnUFnxy3bumW4r2H6sQDv17lcsGN5AcUHCKVFjQZl6DZA=="
+    },
+    {
+     "baslik": "nationalgallery.ie",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7_Ng7IDl7h3o7Z6NjSl3oSmP5LtLnizxysOtpiNiaO02JbECE-wWabalDcc27brzI-T10j0MFQkAOw-p4HQIgX6MvV_h86tjf5mYQV-ix9WAprpjsiX9yeZv2NwdGhVi91lVhUo6dXmhhmQXsIB_nNPoyGYenWgQOFhcjxsiHWebhhOMtlxhYbVQ-_rKmdfCuqJZvk8v2BkiY_sLdfWrNrYnOUVBv55Loe4qbtQhU5F5J0emh5g=="
+    },
+    {
+     "baslik": "wikiart.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErNY8bzHSMjWBECt69-gJHzap70syaPG-s56Sr23CKMMBOkRJ5d2mvIgCCzIIrk7ObhmM_P2u6bU2q3wOovFS_-3j0HKyAFiGcZJghtwlPJsDGSNujaCt_RMQsZDPFvOWHZG3lWabEA6bhxYdIZyig"
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIpRkwBMTRNZy-gLZTCjhbGqh5neDamVNpaXjgeHQzVZUelJlzIcwSSPrxg5dEP0mB3kkljhDzvMqbD5u7kHYJ5JbFknbBaOdefZXIZtCOzPKmgdRM7c9q8lrxxkV2_VMaUe7vVPdu7LaG5GT4RnWApT9TkTjn0fVv"
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHH2xtHsSZoVV4Jiv5x3HqMfG3f6Udb0G9lQgB8qFcyRCyOsadYKxRuJ7y_DRosTH4WK2q2NlSRP4O_TDU1FoMtsnIyLzI4GJge34F7_VMpyTw5PXN-GQH2x-lMVbA-2qEMDwcyDgo6k3eNCifT6zhHNSy_sDNF3JDNx0rEv0aLEF29fMyGFfl-r70MQhc45VEH"
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgGoTEggtBb3YFy7S4J7-j267wi8wkdIbf_8FtznRqKa0TtP4eSkE90EoA9HWdbrt9gekBtSx62qB6axdARy3NWajnsltRR8tW4dhEQ1Hsj7Rl-gQlNL2C4BNph4_hhBRGnvu6TQGtXhRTVNcZr9R7gD8="
+    },
+    {
+     "baslik": "coolstoriesabout.art",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFX79JtK1pFpN8g6-cmemyyykB7k3PkdPzTALO9JBnBTC0gGo7X5WjD4KoFS_tcVSGHPA7g38MPlbJoKbGBM974S-Us7THVcFmipP5M8Y7cBxR_tG_nCaKRBwKymfYsLDVh6ikVDFphnZnTcFRoihopdlo0-qIZ-8arf83z"
+    },
+    {
+     "baslik": "bibleartpuzzle.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPvZMJU47QkMGDA5G3gN6NqVBiF4t2d9zUAQ2g5TaVm8EVBk3SSh4mC4Ck898VRZJBuNNmcrpLrPOzmxqGpmro_4lY1k_FhKYx0yx3V_Wkr-L_X5MtCBIpMK_4p5RBI2Yu5LVjyNjo0ZGV7jzCQUCahCj-ucQq1BwS5VKB7hSEgl2UjvGITxDqGr0qWXzKP6Qhg57hMQ=="
+    },
+    {
+     "baslik": "wga.hu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSUex9yai82M2JpYAsYopEk5koFBsQWX9uKjNEGDEurA2qWNZtcEOd2jB9ryvJ3DOOW-tD33yESIKryDXARo0XmQDz7K80km0_KJ3LdTuT_UO9Lxom99t0vZBxp2qHU5TnqF8mA04clIbT"
+    },
+    {
+     "baslik": "collezionegalleriaborghese.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjflg5W_ucuA7QQu7LtBtQgULNg0Gu1gbI6FuTLBennOSqb9YXpLY9vWpvFGhGnfVgo_IMwxVhFAkYwiNLXliRN9nj4DpEYDInL_YX5k1tLNN0Q8fdY6SNJJZ0w3691zhHfxaNecJCndlywlW_kjDQMR3aHzwBapj15TSa4lGqvE4="
+    },
+    {
+     "baslik": "througheternity.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrTum0haUWmAJg-ndTzqpyS7EdQIHQicGxD10kJFGDc0W9XECbJybpR2zJZv6IRTeGN84HUymazSgMLFFMFBdY5cA8svOI6vkX742UOLIAAkwIGH5SKTZug3gsBPUbyCtIc97fFYnjhIl4M1zA88KeJS1WS34mtmpR68fdEshTKlQIBYbVd-me_F9if3znf4wg1l-sxOlv9w=="
+    },
+    {
+     "baslik": "canvasjournal.ca",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEPYmG1EDchqRW0AThFWHu_QomMKTqoANwEPI7P4DMjHXqhNb11uJSlWbXfh6HWs-lbdDlbZfAQiX4JMYlSrAXJ-ijBBov2qgKxCv9af_P9i4-ITmcxF2X58bYPbwJQgX4exUPwfNLN_HtLfixixzbhXto-808wL2bVHOrc9urJu6BsrIvBTrSiAifexG2bmqAb23GxZ__SpXLMSHhfFm0-4_I-Ko6asoR3qBdSyy3Kw=="
+    },
+    {
+     "baslik": "tuttartpitturasculturapoesiamusica.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEb1wRmTk_71cLxkrUjDBRgyb0cXj1dNYdce-NnMukBcuk-GJiIkiWdHYwm3wmE6iSD-5-QV-crpFgYCy9w-1Wioi0JwBWqOM6z-q_3F8OHDXgwjSUX6bQbokarbcNhACIPrYrtZU-iCXr5hnd6qIwJwLhF7Xm_zxW6HOa2m3sFE3DM7lm0l1mU_k1mwzY9DwPFnmkB"
+    },
+    {
+     "baslik": "art-test.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSElUK7NweIwOSdYd5frNOhaRHHY73-Svm_GP3u4qCox2j9cFrZrH-nVRS7UdvYFyMp81lvlBbTSoDK3LpA-q4FLhetLxSmT7wjRmyzeB7cxdgmeCyFvbNxGfEjKKdtKWLH4ifJIl3P9IkklqyF9GIVvAFNNnLBLz2cz6Z"
+    },
+    {
+     "baslik": "ilcartastorie.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDK1lzv3hvmazIUEdlh54Ai3ytkSoFpwAqf0cgQPl7ROl_nRes1LTg96aL1UzNkUOSt8W53_JwO157ags-rFkbtGC-qWooE4cmsNxQGHgnx9cu7HecLp5PK_7GbCW1QvRekEk1PGHYrcBtxbsXZvVtdKoh8hh3BKLhO_TUWM7SByEVoJ6yESyTF4sO"
+    },
+    {
+     "baslik": "muzeo.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr7X5L3DajzkILyAXyRpqYvrkH0QuxWDwEKbmwQdmTZ9AgBMLeOSBA5cVCXmEhmyDjzx4bgpnHLgpa9AGA4kxpYc-sjYw9uJHHIgglWmRWTkORey1WY1uzWE5Od-wkWzZYPfS_RJbRz2XaAiTd2h8B1wpVroTjOQotRQ=="
+    },
+    {
+     "baslik": "tickets-milan.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe3BG_i02qV7U2rXp0kIen145HaJVAYcG-cMB8Ae_1KUlsgz0nmHtTUcaEpl8XNJUp9c6KtkuzqDpFX4qm1PIqXUJbEhooXb_naReJWrm9yg1QyLYr6-Gv0ejLBe0B-013AS7JkdmNkLvAniFwUuLbUXJfS2YhTx02IVMAHMm_CfW8qmmYtHg="
+    },
+    {
+     "baslik": "note.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ-pWavUHQERG13gaZPqkSGf_DO2oIwbLHWq2QNQUkkBs3__trbRhrWqaTLnb1jW6IBpU-nXDqyW5De5BlahRKMtKAZy29VK1WMaHGPN-XMhW5FrrIAT221s94JhtHLWOfs5eZLjCSCA=="
+    },
+    {
+     "baslik": "note.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgT1EchdZTiVYmnt302RD9S5vCT58OYbbTV6fay2KUCyhADY5gGcFwn5UI99MRLI198SvwYTnuvwIQeZL5qRFIymi4AY_Mybt0qbZSJL3adPCYJ9Jf1D99zkYAFuneypSF2mCQvLNH1g=="
+    },
+    {
+     "baslik": "pinacotecabrera.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwcjG674b0JaWIRdLrcwoaSPCNNl9SyMvJIors4VPBxUhZZzHr52KYtLOOVqVZHhe3jlySoTUh10VEWHouRMz3_PngLPnQqIWWBVp-4U1zfvs8WXiBBG3cnn15CDtxduqKxrZQ9ezavBUs9Lwac-engCXQmk0PIFXBavXT4qEoypamX_w="
+    },
+    {
+     "baslik": "artsupp.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFODGDNBF9U7HroDNmWE-83p3qy7QNjM5lC4BmWWdSjUhfrucKvuB9yOhDi7VBCDTnxq6mbpOJ1EuMsAq7lQIydnwFwEgTyaEjsvdzzW5CA-y_wXGDmkosDgfdOZ9z_Klqaq-sBbDhjNwkfpueNnRMGwwwf5r0DfgIMrwyB6k3G"
+    },
+    {
+     "baslik": "tandfonline.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtqT2q0CQozzVOkwW7Y2nUPzNamDY9Y3g9pWz1lx5xpECGiauPbQKzYMD1gMcMYNcwmmIzaIx5pd1aks2QQf58JCMKs5y2T99rXTIcOMiRYLdR6W5iR14uz-jUh8sg2cRdZ1o9bh75uGZ172ddfRokni4aCdorpN8="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBccrive5juiwf9PWAbK64s3mLUVGp5CetXuj7fWfBwGhYP2D3IDtvJjCP1zs-ISJI2kPfOR_dPPG0fF5GPJbm17YYhPkBg8DUyw_FKB0tINZwHg3t6poRX2z8czvHpBD-qLkhOSgBkkges4JK6yidG8PdSRJp"
+    },
+    {
+     "baslik": "khm.at",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHV8CnBZbZtBDCrxGwUbM1DYTrQJNY_zt8-Xbj2WSLuB9Ff2sj76HBJHDZtzMmfggDF7nYKynAhNcWHEikKaR8Mpso3znM2M9XRVwrYORK-TTKgwJ3sZBGzM6CmV-hYyKeEan4Mre79sboNk-LhGA=="
+    },
+    {
+     "baslik": "italiantribune.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVQhu3gM268ZyzYYQ1n4gFbSiZIw03qGzTIAUEtw8e2hdQhYv-BDLq97e0YUdNrXSRkrZC-ZyHNW62hvMYnCt9oBAcEn4M_a6vh90EOkyMHIzyJzIhQRveENc325YgotGzHBzFp-UwZqfpAzU_FFD1v19PPhr9FA=="
+    },
+    {
+     "baslik": "brill.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHB97IRjceuTxbfeVYq9edIlglOdXVNV-ROnnNyP5q092MnZDfUX45mxOXmUmCAS13_8BrmFUEpTm0QLniilhIouzCizbE8Zu-OvtIMCuYJShCj9P1F-poaQVrM8W3X0kA6OvEnTSB9EornC2VlHg="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsStwsMV6uOT20ails10U4T_BqU7TDPRKVs5pR5c3oabX_oxolSbyBSSP3R2oRN_Z2ZvURYsCbpLZQHiTySZDIJ4QHf03Qp2NF5Ze5xFRfed9ktuHviJhCFdFqY6I1O00E8rErexknXLbeOGwaGuANVFuh2HjSbsFzjB1PERjW0yjFCV9PYo2h1FieH-WJWkuoXiSTyI5EAvnMah0S4alGDy92qit-1w=="
+    },
+    {
+     "baslik": "blogspot.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7ZHRvQDxk6fw3c4mLZ6ZVSlqDAWWlzkJKfwvOIlfO-RYtG672_kHFPDoDuIP64ZXGt7iK4jMmCNYVBlJ_5I9PbsW3h6yEzzJW-nGvHvXlErISlP0wpiYyaaN9JxqOWB40il05W-hJdyWST_n9nuNMsRw="
+    },
+    {
+     "baslik": "legacyflooringnc.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExXqS7Y8ZjEJvcFrA8DXn3_cmvovIA1Uhif_GEfErnurPYnHGagP1tonVJSTfoFJCK1W-3R4WugKOoxGGIGjCghbKhXehnZJ_EEFLt8dzgXQwgI1_GTNn6KShMEwUIpYQ_TZb08dtTzgq8xhT5C51SUNsws0GPDdoMuUaeZw=="
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgCJ373ZKVxaJwpp1S2okoobOWd9kukWPTtPJh8TXvBgZV3l3KLuolOIzsr1OHi86Ytfm43Aa_bAfZedEMHZG2V_QEfsWmoxEfEnXiWx8_9-tKgzGp1moltaUEk7b_A-T43qkmyJJJNnjnXfU3HWr8tC8BNHuFAPqjDhubpxT4gNPmZDq3Be6VlnszrmoEjzwmmt0p7ors3nXvrA=="
+    },
+    {
+     "baslik": "legacyflooringnc.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExXqS7Y8ZjEJvcFrA8DXn3_cmvovIA1Uhif_GEfErnurPYnHGagP1tonVJSTfoFJCK1W-3R4WugKOoxGGIGjCghbKhXehnZJ_EEFLt8dzgXQwgI1_GTNn6KShMEwUIpYQ_TZb08dtTzgq8xhT5C51SUNsws0GPDdoMuUaeZw=="
+    },
+    {
+     "baslik": "medium.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPgYp7tt0a4YLRLCEEbWem5GgsNHRSmBuhprx8ce1cRcx04tQAjNY2dolTLTHXqr000ykaHIaB6_OQB5IGPb3amTDCTwISEcnv5hVGtQOsnI8CKDj7BICFyybDcn6l67RbnNHVghfydL_JHUpUD3dNhB9tCs1KcnoFEArVCw8EqmPISgAwWDkLVbT7MB4zlwZanh-owrWE3KLjo2q3RqAN_IY="
+    },
+    {
+     "baslik": "wahooart.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4ZMEqMi5puHheY8jut2rTPQnnZMFKIGbzT_YIK7mnp8UGI0eJLoqkNmaxyXPvC_Xa_BP1yTBdCu6QXrYRrwz7nIXCMw9U13jrILPkrF1IBjE8RBWy3Oz4RGBtsMQ4lqAeTXdl00h0KctAi6kUgQQVXSbMeAkZE_itp5R3nQpwGDhQ0uZnT-DDmRQwwoHulJWr6LatHrH6SQtAsmpTkyK1KTx7fXamOnFKhA=="
+    },
+    {
+     "baslik": "coolstoriesabout.art",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdDQuK4o5plkGS-Be106iq2ZJq25onGs1uhU5WVPGJZ7_7kcYy-R46bJIYdj1NaUjoG02RFzD6_zW5d7tw09Z51trwi-_wXddrtpxwDSlPN_d2QNWV2TruOqk_XjCqf2BEJDRdHQ0mGM4hHuFYrE0="
+    },
+    {
+     "baslik": "receptio.eu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRNVDFSMSQQ76DUgIED6MGfjcFmDIY2NlnH0ujGLzvhn5viyfG20kW7loDO6cd60ZexYLsa_66DiJtw-_GtA3nDdGh8nkRs3c2YSunKEd2cKefAWoVbg=="
+    },
+    {
+     "baslik": "blogspot.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7ZHRvQDxk6fw3c4mLZ6ZVSlqDAWWlzkJKfwvOIlfO-RYtG672_kHFPDoDuIP64ZXGt7iK4jMmCNYVBlJ_5I9PbsW3h6yEzzJW-nGvHvXlErISlP0wpiYyaaN9JxqOWB40il05W-hJdyWST_n9nuNMsRw="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPfx2WRolJplxkSvY7KT6V_Ewmfp28is96tG2v63UWLFn89WKk5FJB1yL6hfM129LS2Q8hmRVLJ1wQVSgsNwKZPT6AkF_CDJjZSHh6d7elPq00eNOalHBo_eC330_vB4660qmHprfbY79O_0zlBPEcRDFn9LtGesjLMoBV92l6mw=="
+    },
+    {
+     "baslik": "blogspot.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7ZHRvQDxk6fw3c4mLZ6ZVSlqDAWWlzkJKfwvOIlfO-RYtG672_kHFPDoDuIP64ZXGt7iK4jMmCNYVBlJ_5I9PbsW3h6yEzzJW-nGvHvXlErISlP0wpiYyaaN9JxqOWB40il05W-hJdyWST_n9nuNMsRw="
+    },
+    {
+     "baslik": "borghese.gallery",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKdnVYQUTTxhK99P0O4V3mTmgHRNgGOh9s6LkgrHLsRHwD6dFRAByJsgVSk779kNEa4I1zJCcVcGIx_PkYFmkKo9EiPipzB5cYA6HvTc31-erUGzBCuUVtApac4fUZ-8p3ua7M67xGLrISl24REKsi7QslWPqSitIwCfPXznoxb_mNUPS9QS8="
+    },
+    {
+     "baslik": "arttrip.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeTYbdWZSGbVERNs1ae9UeyKmAQ9IeDK-f69o_uMcrCsGoVH1QOpdPf8G4MbiG_GmVmgW0RJT35cEF6_bM2-YEq4t_EIWxW_ha8leONZYz5mEXqEVmFRFedULN39sEJMcVto0z452IPDbEiaA4GJF8Gc9X5EZY"
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdt_Jz44RrXQV95TGJS8PdX-GjLgywGwhw9pr4jnvujCpDsVA06PUHxC4eefa50mvBeOPPbd8z9CfSm3ET3GZv2vOrrgOhkIjFI1Dkgxj-cznxniMhJlCIhYb8EyYUeXfrAVZf6T0TXF7WANqFhSZt-T8K8X4NaVvY0dE9QMdQDzShSX1NjCb8dJK_J8--rf7T_qwaKJZ6PTNdRuT3kAh2cghNz5G-q3Y3_aYFY0hkpZXkatg8fzLLYO16UcB4cfx8Co-u3vl0_u_TOzFRA1RDxSUIwiGVklqqdiqtsRIwdUco4LmW"
+    },
+    {
+     "baslik": "metmuseum.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMlLad_7HtM31W1JDPMThmHS3R7_VRO-JcQIaWM2v4hVhn26sdhjfUGz_vOjnkBTKJM_SUCLDLWZtIX1nPWn0y_chXFd2LHyk4Iu4dcYyaWKt1U6ZD2UAZaOXB_ZzXNqAl8Tx9W_zzIR_GAcnd4vAIBu1_gK6VdGKB7hu-BMuKXQJozTZErjpmq3Q2nTge7jhzG4INNYs3j_EFKPUHkw=="
+    },
+    {
+     "baslik": "artinsociety.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFM8689ANm-SKCHOj_oqUq1xwWgS52Qwu0KEkX33uNlRYKfTf_cHqKxJONB6VjlORaklWnNvwduyKYH8DKPTGulDXeqt2Wz5v-Tb5TXk3NBsxtIUIt72r64SGJuF01u2ndSKVpm4EWLWG6aCulEmRPtM-y8YfWJ-WlsO2e3"
+    },
+    {
+     "baslik": "smithsonianmag.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhA0WIagCUwG0weFEuFHxJlMkJWKKZ5-r-Qa6I8zk0TZwMe2eME-l5cehzXFBO_dvRJ-NA5MM9C6ypjM06kj_Kjtexu4kAN02u0jxhtplnI3QbvxtuJzauwk-YSDtog8eESNPd6p5nAB_BiOJ6ZxQzu3JUdvsVciOjXvFpFHnF1zoEaXiCfa78t_-SKHZ7WJh42dj4-Kd_On5nXxYbnb73tILM6PE="
+    },
+    {
+     "baslik": "nih.gov",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2AVlAEEWCU_Fdkr7qcmfkpfKFwVmk38t2g4tQdXU-odxIpS8vlBY0G1DgVkULW1E0WWUtv6M5M-heqzn2sSYpKhMaQ5skpESGgZ-zDvwe014KiYuF_II6ywxHaK9-8g=="
+    },
+    {
+     "baslik": "newrepublic.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGg7VY_q13HAXIClTlUcqGxAABFLtTPdumDRGSA73B9wmCmVF7CY4mwttMYctREuuCP39DnlO42YBo0caGBRjQLBsWeBYyKUXpj7UdsepTMOxw3ebRdTCNGYLrhPeIEKc5tS0iB8uBwZGk7lFm8_htowrpY1YrboU="
+    },
+    {
+     "baslik": "asfa.gr",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8LxvoGmQWb3pV7XjWAP59dn1mfr-mDMOSp2sSiba2DzJQLv5ehuBY0SrLcFrQyLEUEL44RqDCZF7jp5D4aYZW1WX4jqOGxMdRnJwdYxgmAyAyuEHFugrzdHQQUt6ovYscH4USGaSUN0MgTLGJXUYlH4LlPzuAEsXbhGzFJwI4si1nML4RmLUT_iy-gj5n41B9QWqbl2kXvsDJHz1uk58WzQk0xm36jA=="
+    },
+    {
+     "baslik": "diatrope.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD6bwEq8ewg-cRYf-AFUWTUI2nbllgRD9dI8qxsUMULQZlpqISgDGcEdMPpyM1OcBbxq6ZIYJGSnlLfnoLK7KWDOgyPQ9j_czBtNYGvQOcRXmmqIgY32a0odZlvT1oQ8HTHs0="
+    },
+    {
+     "baslik": "througheternity.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5iKANPCJhZsrPv6OqTzP4jr-veKMA-ydxKoAB-zq-ehrodY1Bv8iyWDTWCSwlCcToz-Vk21eMiKdF_wEvHS4qjSuqZrE--UjLU0MVSKwe7h3e4UWwUcur3cHyPIFAjGrtR271wGjJ8M5MGv2F4dacYoDDOYYivbBwv8WeZ-SZ"
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvWknPOlbOYlCV0o8DaAGAmqKdaG0rAonsbeFoMWJ7hPgHEhaBBPLqcBLnddQrm3Ieg0D4NXYpFiFw3RhMQHuRSthW0FM_YgON_9BGjYnhCqPn7uUB6pGRM5ytLaSKJ2MzGAFQ8mqWyTixE2PoD61qvE83v6A="
+    },
+    {
+     "baslik": "memofonte.it",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Ey13YmSQNlOhSC5LObPMPuJnhn8YzkDLY1AozFZqcGffvEqxmQoXRlQxQK0Xj3V1Im1l9f5SfG0C290Br14EoBgEe-mUu6BWLvq75bpGT4xlcjTaY0rsLD7q6bJjFk2yhibfICMG7-hPi0Fd-DBCKSQB3CbWaq7Jm9NOlZLumYyatYsq8oYA3J01lSAB"
+    },
+    {
+     "baslik": "newberry.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKLkosDfgWR-J3M7soHLxFQuTwRN79wIizWr27x2zPptLly0InrXBINKS9_qS9twJQecJYxxFtoEKmgtAkn0ULscIlsPj2CV7zVFXywF_2acz29LIk9JCwAM9rX66xA8bxlo4YifsUtVzrojJerPsOB19B6u26a7vercMe8Q=="
+    },
+    {
+     "baslik": "odysseytraveller.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt9MRmmZYu_E1fHw_EyRWP0JFFx_aFsgGy7gq2l_cx7bOWzxFX0wHhZQX4kvYyvm9sbuxtg-omqZ6CzuGoyCMMB4VZBpCcu_LXb37ONNVCwAbxb2KnKksob5KRT9Bvwrud9oDTVxomd-KkYT-PgNGNiUs7"
+    },
+    {
+     "baslik": "rct.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2sqUpKNXi5bsKlQEXilxTJ_XrcDTStsrkLMo9JFrWbakTLLsmZpqGi-VtlbPX-QXEPEMXMUDcvChuCl3HR3dGsTGGEvC6vxs_aO3ic9lFKGFVDLB_40UvlVEdVuxQjOV-em2X1JXyWh87OTQOHRtUuy-iZ7kNy74FRA0="
+    },
+    {
+     "baslik": "uea.ac.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhXT1Z3Z5EW3TrdAX4GkEZlzuXHPwN5E2q2ir38x1UTMXEM4Z8RPcnqclfgmnI27a5lEQ3at_SKNwd5veTGTLpbHzkW2JOvzRuBn_YVjatyl5Xo-7-5upptk42JfNLIq0t9r1o0MIDwqC2VRhgNbxNSw=="
+    },
+    {
+     "baslik": "wantedinrome.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0U9yCStwyT-qkSuPLRapRwWv8rYyiBQqoL_6mOQ92zAGhOMYIS1Ct9kQ5vzlfWbtW3RQ1xUtYbwRaI1X34jU15Kffo5wetr1Ioij_wlTpsHIoCm8iysvxgoiFZpqZhgSyp77pP2Dv7I2kuY99G2haBmXIFODjvTqJY7rsG57H8DfVHwuj13gJ6wQ="
+    },
+    {
+     "baslik": "metmuseum.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHByCSC3rlpD7wqGFkDxjnpUTBzaIiThLouE4BmNIqIXNZFq1GppYdBwXqIv5-MJhn0O7WbWSzzxa8Jk3u57-hDRh8CvAjl2B-Q5CWa6W3O17yajJWvdz-DzuT3dwI3aKVYRezBSWYmzxPcxFseX4PZxxhSvg6q57s_aC13-6hEH5sRr6YaqU4dygQHZTVvaYNfIasHllk2Bb8hSA_Dcw=="
+    },
+    {
+     "baslik": "alaintruong.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqu18haGrJXINWD-CiHJT34osjltIQ6a3Dx7bct2B9KnTUxUbNvBUsT3VgUwtz9yqQifyNeWjd5E2OKAgZjvp9kNewQBHIe-sVtQRG-sKSCMkD89_MLJik85yqptrwNuCwhN3MRQvX1ssFuIfqUrqPjc5n"
+    },
+    {
+     "baslik": "kyoto-u.ac.jp",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHM1GwHQO35fAnRvM3t4-2GSwVt5PGCNDqW339jt5XZyaH0pxVwsUWK5p_WgTsgl3dVexggjw_vA7RVlITCEwVdYclqxW0tPWZp05rPL8KIbi3rxpGI6vGsQdP6qOTWg1snyxb2tfLuQeq1SPWSwyoYWLzKIFDYT0HGw01OvpO_JgpkEGifolllqEr5WBduu7CleKnGeg=="
+    },
+    {
+     "baslik": "metmuseum.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmiRj4GTJIf678ep3C189-Yhdb61JgYqnKx3gV51hAFH-O9GfIR1WVEUZS9N1E0IYedBtWX2IjV0bKkH0mRWkJ8nlitED33JpWRLOAOWmqGDTqP25Kl2hTwbsBtSokPLbIK10DE5IYWPMp5Bb4H6H7BQAoRCI20EYssdOFxvB7TLCDSeh2W4BK6F83nr17VicvQ18ccim4daHCAXvF"
+    },
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt2K5qdXp7yjZARROsbrnPQ302Gs2kXsjqDb58x1pVFAlvN2z6e3usSrIOmjSD4EhGOLVWIK9o3M4SNndA4_wHmkTpjxMpO-7_87LwQcEmnLcg3UYMYj59hyG-lQ6n7Ax875A_OgywT6Q8xTZWwcBQoaOOjlaUHJgep72g9iGZAs3oGjwmytVRWK7eF3PFN7xd_ujkhHN1PytfGyctg3pN23U4I-XgSjf9VipLEo9W2g=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoMspeHylJTbZwSbXembrQ8IdxhDCWz3fZW8nNuyE5pYXaKZsBiou9pvUL5VgVX5OUOKpBkd-L-aKjwuddP1QpOeLfHkb1CCR7ToS02d8m-AoIU7Jij0wkxY4opMeT"
+    },
+    {
+     "baslik": "visual-arts-cork.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjOaJouzE5YmWCBEV51i8JtNyL5RjtNH7dOkTeoNgbp57Zv2Uh5HWRF4wMEMi4w_0twRnSt6vqyC4NGhNM8TRAD49QrgQFW9DxxB6KxtfM5oOVAEsVxv0WGeMCL4R4zrVBfXFvHnRDXra3ijgSb2DCUai009yGY7bVulpsv-LU"
+    },
+    {
+     "baslik": "wikimedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwdY88jb9DE_WkCKSGuEGbYxKdaIg7PbDvNKoe1JhG8KKv5ZVOPqgjc2GROLKVwHXShe6Csg6IP7VBOJIvCxW3EQOaeF2GSGHonrEYK6NYXt073jylFklxiWiA_t55r2MEf2vQAZQx_om4reXut8Ys7DxE3WmBCoUY101W21E="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgz7EETP_s26pDBiYNRdtaLbKRQ136vI3rJmWaw_HZ2yXH3yHN6hKXu9UegBUBJ4GJIIDTDaVyFVjzFQgoCWzodFOpGBp4s9-7o3PjEEqVSmq9by_qTrmy_NIEvIRDnJtX1uY="
+    },
+    {
+     "baslik": "metmuseum.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyVyrmTzfDJTpE0PuGcoNe64rMXMzoYRtEhkIBHM4eCbkDk9aQ2MJ4WFzy4lXn3Gq5pQxUamdnYLdiotXmp_eNbIFeYNcY0WOdyAtlVPx5jey4i5iZ0m0jm_vl-3EGcy5EjbwJ7GKlt_MegFEvi0H-l-3UW0jqvOCa4N3YrV-6dlk9N6R9z_fFmXlKHIRwRZYVmq9cDwnkrKc2XTjbtvS0V52V4VJy7tlLoHZL1pnAzX-UxgFc3WRj5TjHGqu3be3Xw0oDEqXLAmYFGQ=="
+    },
+    {
+     "baslik": "dokumen.pub",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEsUkjWRdb8GdjuzfI9XpMfosVMCpJp_8BDlbJ5bGnZDuN_SRsEBFu_X-g04pynTmUA9MnkC4duivpLrprt2AYHL_qjgerGArGYH8m6IyCaXjV0gw7yODh20iq-TTVmSYuC5AxpO83578CpXlR8Xdbu1gh2Oc="
+    },
+    {
+     "baslik": "thecollector.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDJlYdWAj1u84i3wqHXQEFYMIjCo3RvsYlKQlSViPZOPoLLaFfwl8tG_GslIB1RapOHhkeF39lUT1JH8AgkpyTObrxJQ0r8YdGemZFUQDE5-5UQ510sGrneYKNb2n9k2UkCue829gg2wKQwvjB4qA0rVo="
+    },
+    {
+     "baslik": "scribd.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy-JyccIIJAnSr8tl3cktC6cSjJaeA3H5bfIKGleM3QDl4WksAfaOqfR9Im4Flf_IzHz8Drb3LcOu6ejGHfzB5HppHjB4RPbfeoZkNZpLpTReLcfK5mXkVO1eOjmR1S6TfL4kKazMNiQ=="
+    }
+   ],
+   "model": "gemini-4-neon",
+   "denetci": "gemini-4-neon",
+   "duzeltilen": 8,
+   "olusturma": "2026-11-26"
+  },
+  "artemisia-gentileschi": {
+   "baslik": "Kan, Kumaş ve Karanlık",
+   "alt_baslik": "Kendi kaderini çizen ressam Artemisia Gentileschi'nin fırçasından dökülen fırtınalı bir yaşam.",
+   "giris": [
+    "Emre, 1612 yılının Roma'sında, havasız ve loş bir mahkeme salonundayız. On sekiz yaşındaki bir genç kadının parmaklarına, doğruyu söyleyip söylemediğini anlamak için papalık kanunlarına göre sibille adı verilen metal halkalar ve ipler geçirilmiş. İpler sıkıldıkça kemikleri eziliyor. O ise acı içinde, kendisine tecavüz eden adama, babasının iş arkadaşı Agostino Tassi'ye dönüp, bana verdiğin yüzük bu, bunlar da senin vaatlerin diyerek tarihe geçecek o sözleri haykırıyor. Bu sarsıcı an, sanat tarihinin en güçlü fırçalarından biri olan Artemisia Gentileschi'nin hayatındaki en büyük kırılmadır.",
+    "Yaşadığı bu ağır travma onu yıkmak yerine, içindeki direnci tuvale dökmesine neden oldu. O sadece bir kurban değildi; kendi ayakları üzerinde duran, krallarla pazarlık eden ve erkeklerin tekelindeki sanat dünyasında kendine sarsılmaz bir yer edinen bir ustaydı. Işığı bir silah, renkleri ise bir kalkan gibi kullandı. Şimdi seninle, onun Roma'nın karanlık sokaklarından Floransa saraylarına, oradan da Napoli'nin anıtsal kiliselerine uzanan fırtınalı yolculuğuna çıkacağız. Sanat tarihinin tozlu sayfalarında gezinirken, onun fırça darbelerindeki sarsılmaz gücü derinden hissetmeye hazır ol."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Roma ve Mahkeme Ateşi",
+     "yillar": "1593-1612",
+     "paragraflar": [
+      "Artemisia, 1593 yılında Roma'nın hareketli ve sanatla yoğrulmuş sokaklarında dünyaya geldi. Babası Orazio Gentileschi'nin atölyesi, onun oyun alanı ve ilk okulu oldu. Tuval bezlerinin kokusu, ezilen pigmentlerin tozu ve keten tohumu yağının ağır havası içinde büyüdü. Orazio, kızının olağanüstü yeteneğini erkenden fark etmiş, ona fırça tutmayı, renkleri karıştırmayı öğretmişti. Ancak 1611 yılının mayıs ayında, bu güvenli atölye ortamı paramparça oldu. Artemisia, babasının manzara resimlerinde ortak çalıştığı, eve sık sık girip çıkan Agostino Tassi'nin tecavüzüne uğradı. Bu şiddet dolu an, genç kadının hayatında geri dönülemez bir yara açtı.",
+      "Yaşananların ardından gelen 1612 yılındaki mahkeme süreci, yedi ay süren bir psikolojik ve fiziksel işkenceye dönüştü. Papalık kanunlarına göre bir kadının ifadesinin doğruluğunu kanıtlamak için işkence gerekiyordu. Artemisia'nın resim yapan ellerine, parmaklarını ezen metal halkalar takıldı. Acı içinde kıvranırken bile doğruyu söylemekten vazgeçmedi. Mahkeme sonunda Tassi suçlu bulundu ve Roma'dan beş yıl sürgün cezası aldı. Ne var ki, dönemin yozlaşmış sistemi içinde bu ceza hiçbir zaman uygulanmadı ve Tassi serbestçe dolaşmaya devam etti.",
+      "Adaletin bu eksik tecellisi, Artemisia'nın dünyaya bakışını ve fırçasını kökünden değiştirdi. Babası Orazio'nun Caravaggio'dan ilham alan lirik ve aydınlık tarzı, Artemisia'nın ellerinde çok daha ağır, gerçekçi ve toprağa basan bir üsluba dönüştü. Dönemin erkek ressamları kadın bedenini idealize edilmiş, pasif ve izleyicinin göz zevkine hitap eden kırılgan bir nesne olarak çizerken, Artemisia bu geleneği reddetti. Onun tuvalindeki kadınlar etten, kemikten, terden ve kas gücünden oluşuyordu. Işık ve gölgeyi, basit bir tiyatro sahnesi kurmak için değil, derin bir psikolojik direnişi vurgulamak için ustalıkla kullanmaya başladı.",
+      "Bu değişimi görmek için 1610 tarihli Susanna and the Elders adlı eserine dikkatle bakmanı istiyorum Emre. Artemisia'nın imzasını taşıyan bu ilk çalışmada, erkek sanatçıların kendi zevkleri için sıkça resmettiği o flörtöz veya pasif Susanna figürleri tamamen yok edilmiştir. Karşımızda, yaşlı adamların tacizinden kurtulmak için bedeniyle gerçek bir mücadele veren, tiksintiyle kıvranan bir kadın vardır. Yüzündeki çaresizlik ve elleriyle tehlikeyi itme çabası, idealize edilmemiş ağır bir anatomiyle birleşir. Fırça darbeleri, kadının tenindeki gerilimi izleyiciye doğrudan hissettirir.",
+      "Yine 1610 yılına ait Judith and Her Maidservant tablosunda, ışığın karanlığı nasıl deldiğini ve Caravaggio etkisinin nasıl özümsendiğini görürüz. İki kadın figürü, tehlike anında birbirine kenetlenerek kadın dayanışmasının en güçlü örneklerinden birini sunar. 1612 tarihli Danaë eserinde ise bakır üzerine çizilmiş mitolojik bir sahneyle karşılaşırız. Ancak burada bile kadının fiziksel ağırlığı ön plandadır; gökten yağan altın sikkeler, kadının tenine gerçek bir baskı yapar. Bu detaylar, onun acıyı nasıl sanatsal bir direnişe çevirdiğinin kesin kanıtıdır."
+     ],
+     "eserler": [
+      {
+       "qid": "Q3978274",
+       "bag": "Sanatçının imzasını taşıyan bu ilk eser, kadın bedenini idealize etmeden, tacize karşı gerçek bir direniş ve tiksinti içinde resmettiği dönüm noktasıdır."
+      },
+      {
+       "qid": "Q532486",
+       "bag": "Caravaggio etkisinin ışık kullanımında açıkça görüldüğü bu erken dönem çalışması, hayatı boyunca işleyeceği kadın dayanışması temasının ilk tohumlarını atar."
+      },
+      {
+       "qid": "Q3701418",
+       "bag": "Mitolojik bir sahnede dahi kadının fiziksel ağırlığını hissettirdiği, gökten yağan sikkelerin bedene yaptığı gerçekçi baskıyla dikkat çeken çarpıcı bir eserdir."
+      }
+     ]
+    },
+    {
+     "baslik": "Floransa, Medici Sarayı ve Bağımsızlık",
+     "yillar": "1613-1620",
+     "paragraflar": [
+      "Mahkemenin ardından babası Orazio, kızının sarsılan onurunu sözde onarmak için onu Floransalı ressam Pierantonio Stiattesi ile evlendirdi. Çift, hızla Roma'nın boğucu atmosferinden kaçarak Floransa'ya yerleşti. Bu şehir, Artemisia için bir sürgün değil, adeta bir yeniden doğuş yeri oldu. Kocasının gölgesinde kalmak yerine, Floransa'nın entelektüel ve sanatsal ortamında hızla parladı. 1616 yılında, saygın Accademia delle Arti del Disegno'ya kabul edilen ilk kadın olma unvanını kazandı. Bu, o dönemde bir kadın için hayal bile edilemeyecek bir prestijdi.",
+      "Floransa'da Büyük Dük İkinci Cosimo de Medici'nin himayesine girdi ve sarayın gözde sanatçılarından biri oldu. Sadece ressamlarla değil, dönemin en büyük zihinleriyle de aynı masaya oturuyordu. Ünlü astronom Galileo Galilei ile kurduğu dostluk, onun entelektüel ufkunu genişletti. 2011 yılında keşfedilen mektuplar, onun Floransalı soylu Francesco Maria Maringhi ile tutkulu bir aşk yaşadığını da ortaya çıkardı. Kocasının bu ilişkiye maddi çıkarlar uğruna göz yumduğu gerçeği, Artemisia'nın özel hayatındaki karmaşık dinamikleri ve hayatta kalma mücadelesini gözler önüne serer.",
+      "Bu dönemde sanatı, Floransa'nın desen geleneği ile Venedik'in renk zenginliğini harmanlayarak yepyeni bir boyuta ulaştı. Saray zevkine hitap etmek için paletini bilinçli bir şekilde zenginleştirdi; altın sarıları, derin kırmızılar ve parlak ipek kumaşlar tuvalini kapladı. Işık kullanımı çok daha dramatik bir hale gelirken, seçtiği konular genellikle tiyatral, içgüdüsel bir şiddet barındıran veya güçlü alegorik otoportrelerden oluşuyordu. Kumaşların kıvrımlarındaki ustalık, izleyicinin o dokuyu adeta parmak uçlarında hissetmesini sağlıyordu.",
+      "Bu dönemin ruhunu anlamak için 1613 yapımı Judith Slaying Holofernes tablosunun karşısında durmalıyız. Karanlık bir arka plandan fırlayan bu sahnede, şiddet tüm çıplaklığıyla gözler önündedir. Judith'in kılıcı tutan kollarındaki kas gerilimi, yataktan fışkıran kanın gerçekçiliği izleyiciyi dehşete düşürür. Rivayete göre Artemisia, Holofernes'e Tassi'nin, Judith'e ise kendi yüzünü vermiştir. Tarihçiler burada ayrılır; bazıları bunu bir intikam terapisi olarak görse de, aslında bu konu dönemin sanat piyasasında çok satan, kârlı bir temaydı ve o, pazarın ne istediğini çok iyi biliyordu.",
+      "Kendi imajını nasıl yönettiğini görmek için 1615 yılında yaptığı Allegory of Inclination ve Saint Catherine of Alexandria eserlerine bakmak yeterlidir. İlkinde Michelangelo'nun yeğeni için yaptığı çıplak bir otoportreyle bedenin kısaltım ustalıklarını sergilerken, ikincisinde kırık tekerlek ikonografisini kullanarak aşılan acıları sembolize eder. 1620 tarihli Judith Beheading Holofernes tablosunda ise şiddet sahnesini daha da rafine eder; Judith'in üzerindeki zengin sarı kumaş, saray zevkine ne kadar uyum sağladığını gösterir. Ancak kocasının giderek artan yıkıcı borçları ve yerel skandallar, bu parlak Floransa rüyasını bitirecek ve onu 1620 yılında yeniden Roma'ya kaçmak zorunda bırakacaktır."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2247406",
+       "bag": "Karanlık bir arka plandan fırlayan kan ve şiddet dolu bu sahne, Floransa döneminin tiyatral ve içgüdüsel şiddet arayışının en güçlü yansımasıdır."
+      },
+      {
+       "qid": "Q3612415",
+       "bag": "Kendi imajını yönetme becerisini gösterdiği bu eser, çıplak bir otoportre üzerinden bedenin kısaltım ustalıklarını ve parlak ten renklerini sergiler."
+      },
+      {
+       "qid": "Q29016365",
+       "bag": "Kırık tekerlek ikonografisiyle aşılan acıları sembolize eden tablo, sanatçının Floransa saray zevkine uygun zengin kumaşlar resmetme yeteneğini kanıtlar."
+      },
+      {
+       "qid": "Q3769169",
+       "bag": "Şiddet sahnesinin daha rafine bir hale geldiği bu versiyon, Judith'in üzerindeki zengin sarı kumaşla saray çevresinin lüks taleplerine doğrudan hitap eder."
+      }
+     ]
+    },
+    {
+     "baslik": "Roma, Venedik ve Karanlığın İçindeki Işık",
+     "yillar": "1620-1630",
+     "paragraflar": [
+      "Kocasından tamamen ayrılarak 1620 yılında Roma'ya geri dönen Artemisia, artık babasının atölyesindeki o genç kız değil, bağımsız ve kendi ayakları üzerinde duran olgun bir sanatçıydı. Roma'nın rekabetçi ortamında, özellikle Kuzeyli Caravaggio takipçileriyle aynı çevrelerde bulundu. Ancak şehir değişmişti. Kilise ve sarayların büyük, kazançlı fresk siparişleri kesin kurallarla sadece erkek sanatçılara veriliyordu. Artemisia, kadın olduğu için bu devasa projelerden dışlanıyordu. Hayatta kalmak ve bağımsızlığını korumak için uluslararası hamiler bulmaya yöneldi. 1627 civarında kısa bir süre Venedik'e geçerek sanatını daha da zenginleştirdi.",
+      "Bu dönemde üslubu, olgun bir tenebrizm evresine girdi. Sahnelerinde artık şiddetin zirve yaptığı o kanlı anları değil, eylemin hemen sonrasındaki yoğun psikolojik gerilimi resmediyordu. Tek kaynaklı, genellikle bir mum ışığının aydınlattığı dramatik sahneler ustalık eserlerine dönüştü. Venedik'in etkisiyle paletine daha fazla lapis lazuli mavisi ve duyusal bir sıcaklık eklendi. O, artık sadece hayatta kalmaya çalışan bir kurban değil, saray zarafetine ulaşmış, eserleri için yüksek fiyatlar talep edebilen bir iş kadınıydı.",
+      "Bu değişimin en çarpıcı örneği, 1623 yapımı Judith with the Head of Holofernes eseridir. Emre, bu tabloya baktığında kan göremezsin; onun yerine nefes kesici bir sessizlik ve gerilim vardır. Tek bir mum ışığı, karanlığın içinden Judith'in yüzünü ve hizmetçisinin endişeli ifadesini aydınlatır. Judith'in havaya kalkan eli, dışarıdan gelen bir sesi dinler gibidir. İzleyici, cinayetin hemen sonrasındaki o korku dolu bekleyişin içine hapsolur. Işık ve gölge, adeta tablonun görünmez başrolleridir.",
+      "1625 tarihli Lucretia tablosunda ise trajik bir kadın kahramanın ölümcül karar anına tanık oluruz. Simkaranlık bir arka planın önünde, tüm ışık kadının üzerine düşer; içsel yıkım ve kararlılık yüzünden okunur. Venedik etkisinin en net hissedildiği 1627 yılında çizdiği Venus and Cupid eserinde ise, duyusal ve idealize edilmiş bir çıplaklık, zengin mavi pigmentlerle buluşur. Bu eserler, onun sadece intikam peşinde koşan öfkeli kadınları değil, melankolik, boyun eğen veya duyusal figürleri de ustalıkla resmedebildiğini kanıtlar.",
+      "Roma'daki kısıtlı imkanlar, onun yeteneği için fazla dar gelmeye başlamıştı. Erkeklerin tekelindeki fresk siparişlerine ulaşamamak, onu yeni arayışlara itti. 1630 yılına gelindiğinde, sanat piyasasının giderek hareketlendiği, rekabetin ve fırsatların çok daha büyük olduğu Napoli'ye doğru yelken açmaya karar verdi. Bu taşınma, onun sanatsal kariyerinde yepyeni, devasa boyutlardaki kilise siparişleriyle dolu anıtsal bir dönemin kapılarını aralayacaktı."
+     ],
+     "eserler": [
+      {
+       "qid": "Q3769173",
+       "bag": "Eylemin hemen sonrasındaki psikolojik gerilimi tek bir mum ışığıyla aydınlatan bu tablo, sanatçının olgun tenebrizm evresinin başyapıtıdır."
+      },
+      {
+       "qid": "Q29016865",
+       "bag": "Trajik bir kadın kahramanın ölümcül karar anını simkaranlık bir arka planda resmeden eser, içsel yıkımın dramatik bir portresidir."
+      },
+      {
+       "qid": "Q25218172",
+       "bag": "Venedik etkisinin duyusal zenginliğini yansıtan bu resim, yoğun mavi pigmentleri ve idealize edilmiş çıplaklığıyla sanatçının çok yönlülüğünü gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Napoli, Londra ve Anıtsal Ölçek",
+     "yillar": "1630-1656",
+     "paragraflar": [
+      "1630 yılında Napoli'ye yerleşen Artemisia, burada büyük ve oldukça verimli bir atölye kurdu. Şehrin canlı ama acımasız sanat piyasasında kendine sağlam bir yer edindi. Kadın sanatçılar için neredeyse imkansız olan devasa kilise siparişlerini ve sunak resimlerini almayı başardı. 1638 ile 1640 yılları arasında, İngiltere Kralı Birinci Charles'ın sarayında çalışan hasta babası Orazio'ya yardım etmek için kısa süreliğine Londra'ya gitti. Yıllar süren ayrılığın ardından, babasıyla yeniden aynı atölyede yan yana fırça salladı ve yarım kalan hesaplaşmalarını belki de sanat yoluyla tamamladı. Londra'daki bu dönemin ardından Napoli'ye geri döndü.",
+      "Napoli'deki son yılları, giderek artan maddi zorluklarla geçti. Ancak sanatsal gururundan asla taviz vermedi. 1649 yılında Sicilyalı hamisi Don Antonio Ruffo'ya yazdığı bir mektupta, fiyatlarını ve yeteneğini büyük bir cesaretle savunuyordu. Şöyle diyordu: Bir kadının neler yapabileceğini Ekselanslarına göstereceğim, bu kadının ruhunda Sezar'ın ruhunu bulacaksınız. Bu sözler, onun hayata ve sanata karşı duruşunun en net özetidir. Ölüm tarihi kesin olmamakla birlikte, tarihçiler burada ayrılır; uzun süre 1652 civarı olduğu düşünülse de, yeni araştırmalar onun 1656 yılında Napoli'yi kasıp kavuran yıkıcı veba salgınında hayatını kaybettiğini öne sürmektedir.",
+      "Bu son döneminde sanatı, anıtsal bir ölçeğe ulaştı. Napoli ve Bologna ekollerinin zevklerine uyum sağlayarak paletini değiştirdi. Koyu renkli zeminler üzerinde patlayan parlak renkler kullanmaya başladı. Klasik akımın etkisiyle figürleri daha yumuşak, kompozisyonları ise daha tiyatral ve çok figürlü hale geldi. Atölye asistanlarıyla işbirliği yaptığı bu büyük boyutlu işler, onun sadece bir ressam değil, aynı zamanda büyük bir organizasyonun yöneticisi olduğunu da gösteriyordu.",
+      "Bu dönemin ruhunu anlamak için 1630 tarihli Self-Portrait as the Allegory of Painting eserine bakmalıyız. Artemisia kendini Resim Sanatının Alegorisi olarak çizerken, dinamik ve zorlayıcı bir kısaltım pozu kullanır. Fırçaya uzanan bedeni, tuval başındaki duruşu, resim yapmanın sadece zihinsel değil, aynı zamanda ciddi bir fiziksel emek gerektirdiğini kanıtlar. Kendi dehasını, gücünü ve mesleğine olan tükenmez tutkusunu tuvale cesurca kazımıştır.",
+      "1636 yılında tamamladığı Adoration of the Magi ve The Martyrdom of St Januarius in the Amphitheatre at Pozzuoli tabloları, onun ilk büyük halka açık kilise siparişleridir. Bu devasa, çok figürlü sunak resimlerinde klasik unsurları ustalıkla kullanır. Kalabalık kompozisyonları yönetme becerisi, erkek meslektaşlarından hiçbir eksiği olmadığını, aksine onlarla eşit düzeyde anıtsal eserler üretebildiğini tüm Napoli'ye ve sanat dünyasına ilan eder."
+     ],
+     "eserler": [
+      {
+       "qid": "Q3630745",
+       "bag": "Sanatçının kendini dinamik bir kısaltım pozuyla resmettiği eser, resim yapmanın fiziksel emeğini ve kendi sarsılmaz dehasını cesurca ilan eder."
+      },
+      {
+       "qid": "Q3605519",
+       "bag": "Napoli döneminin anıtsal ölçekteki ilk büyük halka açık kilise siparişlerinden biri olan tablo, çok figürlü kompozisyonları yönetme becerisini kanıtlar."
+      },
+      {
+       "qid": "Q3947174",
+       "bag": "Klasik unsurları ustalıkla kullandığı bu devasa sunak resmi, erkek meslektaşlarıyla eşit düzeyde anıtsal eserler üretebildiğinin en büyük göstergesidir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Artemisia Gentileschi'nin geride bıraktığı iz, sadece travmatik bir geçmişin yansıması değildi. Onu sadece öfkeli, intikam peşinde koşan şiddet dolu kadınlar çizen bir kurban olarak görmek, onun dehasına yapılabilecek en büyük haksızlıktır. O, pazarın değişken taleplerini ustalıkla okuyan, gerektiğinde boyun eğen melankolik figürler, gerektiğinde ise kılıcını savuran kahramanlar çizen çok yönlü ve vizyoner bir ustaydı. Döneminin zorlu şartlarında, erkeklerin kurallarını koyduğu bir oyunda kendi kurallarını yaratarak hayatta kaldı ve zirveye çıktı.",
+    "Bugün onun eserlerine bakarken, Emre, sadece Caravaggio tarzı bir ışık oyunu veya kusursuz çizilmiş ipek kumaşlar görmüyoruz. O tuvallerin ardında, acıyı güce çeviren, krallara ve dükalara kafa tutan, kendi değerini tırnaklarıyla kazıyarak kabul ettiren bir kadının iradesi duruyor. Bir sonraki sefer onun fırçasından çıkmış karanlık bir sahneye veya aydınlık bir yüze baktığında, o kadının ruhundaki Sezar'ı hatırla. Çünkü Artemisia, sanat tarihine sadece renklerle değil, yıkılmaz bir cesaretle adını yazdırdı."
+   ],
+   "baglantilar": [
+    {
+     "sanatci": "Orazio Gentileschi",
+     "iliski": "Babası ve ilk öğretmeni olan Orazio, Artemisia'nın erken dönem eserlerindeki lirik üslubun ve Caravaggio etkisinin temel kaynağıdır.",
+     "id": "orazio-gentileschi"
+    },
+    {
+     "sanatci": "Agostino Tassi",
+     "iliski": "Babasının iş arkadaşı olan Tassi'nin ona yaşattığı tecavüz travması ve ardından gelen mahkeme süreci, sanatçının eserlerindeki psikolojik derinliğin tetikleyicisi oldu."
+    },
+    {
+     "sanatci": "Caravaggio",
+     "iliski": "Artemisia'nın ışık ve gölgeyi dramatik bir şekilde kullanmasını sağlayan, karanlığı bir direniş alanına çevirmesine ilham veren en büyük sanatsal öncüdür.",
+     "id": "caravaggio"
+    },
+    {
+     "sanatci": "Galileo Galilei",
+     "iliski": "Floransa yıllarında kurdukları yakın dostluk sayesinde Artemisia, dönemin en büyük zihinleriyle bir araya gelerek entelektüel ufkunu genişletti."
+    },
+    {
+     "sanatci": "Sofonisba Anguissola",
+     "iliski": "Artemisia'nın kendi zorlu yolunu çizerken örnek aldığı, erkek egemen sanat dünyasında ondan önce uluslararası başarıya ulaşmış az sayıdaki kadın ressamdan biridir.",
+     "id": "sofonisba-anguissola"
+    },
+    {
+     "sanatci": "Jusepe de Ribera",
+     "iliski": "Napoli'nin rekabetçi sanat piyasasında hem kıyasıya rekabet ettiği hem de sanatsal anlamda etkileşimde bulunarak paletini değiştirdiği büyük ustadır.",
+     "id": "jusepe-de-ribera"
+    }
+   ],
+   "kelime": 1776,
+   "kaynaklar": [
+    {
+     "baslik": "nationalgallery.org.uk",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoj3i3uRcX9RCF6dqXwefEt0Z5ty7Ud2e-1jBsgKnjeMtoim5WmMg7fGz1zXFw2MonSpiD84sQeI4xTUYzod7QWp3F_gA5Lvqvlt3JKH2IPoseAg-oG0nNqKDvx1lUy9wnFWHIGB4nqnmmYu8WL5S6vEVFxS1yCSR8961y6YXxEaEVoZR54RwXsKYdOYY="
+    },
+    {
+     "baslik": "smithsonianmag.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHV2UPgC5Pc4utFY9P5wsrjslSUudHmH-Z8_e6OU87RBOt0aHRJVJVw0VgDsNxlfWzL2qewSgYv5Dkp2A53gEcqUeYMlpwNPdHdzyRzVkaqTSVzAtFEezzkC8LKzaNqrBfeb_EqzbiaS8cbLvmiNAlH-5baYPfyCdhnP0It"
+    },
+    {
+     "baslik": "womeninartsnetwork.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmWCIe-KbmWA27SsxWI621uoalBdr0-uuLcrGqgLL3yj8e43hFbKVsfNeuxrcoSnKKfxXEMyq-lazi7LrtOTVU_ebTEGuRpazUQsOUGk2pcwfrZPx04eEcE91vAagGKETK-nPV8ffgvGtb7uWycwB6GPlsbER7ANGvSZ_HQLviFw=="
+    },
+    {
+     "baslik": "commonera.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj2NcN7RAnwJVDgOabo2vvUSV1x3G5aL3ylMEIe-KyALvBEyxuA8Ghx92YoeVyhDQy9TFjAObs_y17hQXx85_PRQuQO3xspUXJLceV-ld-9StmVZ0xmwT3I1jXhcJZ-H2pMvsS_KfSx-tImJoMC0XMl5G7Ge76-KbzdwqqlPMfZzvLvfps_LAPvo46Yg=="
+    },
+    {
+     "baslik": "edgrayart.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdj6ykAZOgcraPG-n-TgrN7uTdlw5HDOYilyr5uQ5jHwVv1ydMhZpQJ3ZAHTMcUj6KdgZnBQdmTLFw750LfEEeaoWWAX4tgDvSe2WHkIjKKNjUBCqGRcAGM-MMsxwhsLtnZZLSyMdqhB5DkTGZitvGYTDhoNZMTLWf8nvA-qHUNgU9G1-a6tBu9abV4aQl4ybHd-jCG8Jyw2PlxsHqk38Pxmk8"
+    },
+    {
+     "baslik": "google.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq-afVJ5-zMKq4xQ6Ork-Nx2zNU0xdC0VWzIRpDoUeCYtb1Duzqxu7i38rv0OeE_-fGQq2pOGv0B4zCHBeX1dm9A7u86XuMtBpC_H13CPupgHTl4M1j8f0aed5Yl3NSZVYIEEDIdm3_s2mxg6KQbEk9VBaYf-6_AGb2N4VSdwBfg_CFnPSDTJfPN-cHpWzItzuQTw48k04HqsX309JoowNffnEYVI="
+    },
+    {
+     "baslik": "theartstory.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHD4z9UoQpv98w_4jHxPAKEbfWP8tl_xOE8wxbqBX5QF96tjshSp2EAUinVk5e5-SZZLXGS2_1eEoc_gHaWN-VrS590J1Xd9qrv6asAGR5U5_epm5qbUYjO5yzao4_hZJ8tVk32JCJWiaZHe_du6g=="
+    },
+    {
+     "baslik": "nationalgeographic.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLOX0nC3npA_rgd5GXdTBvSmkvI80CG0LgCgMluwlX4AzK9E_3-X3QypElYFYZbp06dMhw1XCH-E54WA9fcl69dDxutG2fTDY5uLrEfHe55XjY4pZWVsFUvuhDSx_SmeMGuHSFmtsJMjR93TtKp2ElAk1zxngOqjoCLyYNs0i-LScsWTwFBpHLdKr8G1wTaMldaHkGGAIYoCb_9vTbCndJk9d186tkuTrXb-3p1wD52w=="
+    },
+    {
+     "baslik": "smithsonianmag.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4hithm8fyj9Z-tXjLU5rJH0IK4K5JB7vO9rosqg3nRh9WYFg2tdbCdOUGSQsaIE5Yg2Cb9qWB-_0qTrLgIOnwqmXif7U0Ql1iWWqKeYr8qsErIP6pSJJpHKfUd6bH69f18IqL8bQDfFu4X6EXimyVvrgHQuxkiCMWZ-Q69fC-OZ4lLUu30D2ZQqHb4BTVxurCfbYt9Tn02iWkaVr03sReGiYiC1qNcSeICyOJyd1GSI0k"
+    },
+    {
+     "baslik": "theguardian.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkjgbyk4i7C5_kJHsll80Fo3zag6U-DSdWVSD36N-LgcY7N8IcajB3teOqQ3_MjiXkitOBR9qEIlaox-2ZAQHAkUT6Q0tyl6I7v1kUz4HlWKzIjbE2gyQBCEF9MJg17on5uUfNY_6aA-5bg1JS0B2vc3EzEWV1TXO3_KpaSVMKu9xbzmpKkQVtTZTQoWvlRk6FAT2uoBbmtw=="
+    },
+    {
+     "baslik": "dia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKErjEqbWuT9vPyaEdHPZq0dEtxHVfc7yIkqdX4PI9UszVfZ8j1fm6-2AH3qRsPYKd1MWYEyHKwASTuH1VfArfCNn7x-FQQd3LPlI_2BKNmqkFFF0aLMai9Fz618-RTacYAR3OD98EAvCrs-AtIQygEHlzuEpBrN4jr4EYy6DP2Q=="
+    },
+    {
+     "baslik": "google.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZoxkKTEFNGlTsisy2KzO6Y0AvY1J6ItsADh6tUdWVkbHQZbeCCkNgAVslawiSGNlbWggDfKhukc2Vh9Fl5QwJYD9NwaZA0CCxhs7pK5b9MznUJ5v2FiW-Lr7FiySwHYtbngjE-vQLeRFLpP_txNRlLIuSqGR6OzAwNdf8ZB4Sy-3f6jZlXeNgOt0BA4wicFb-RpkazTVxtDdE3kgPKn_yAQ=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxgCglMEFASaAodp4QS_Mj3qM933lQirhhXl3n2Fqj_A5D3zgHD-_stKWikJdSyLztR0gszl6MEJcr7ltfRarnxYEbOKN9EL0QfmLcwnYsMwJov2RvEfzE-4_5_IsguenhR8HA013BLw=="
+    },
+    {
+     "baslik": "herhalfofhistory.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIEoIZ9fihrcp_7RFLW-HKNM1tiimula2OvZrlwU9i9BGKcjpUKxgCkPg2X9VQO4wq_EgbyAueX9ISHTfs_U48SnY38rxhzMWb4nNJQtlCs7G2L1u8ZtXLdJCxDPaPnKma7ek-SyevWlfJHdbeMNy2I6_np8w6c7sLW4lsIYPXqdn54eqdgOlKqAg="
+    },
+    {
+     "baslik": "joannazenghelis.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE18Wr31ARQ3MHgcV-Kgb7ioz7FR8rvtTstIfSm-VGTfv47_rQuQirCz_EkpwEG-TbgAz8loST4z8jzdOtFjVKV_qryarxtxemr54B2UrbxibKsCtpTntCGyNpoAMF4-tQeXfjzKR2OHigj0IzX4ekRHDK-Rx4HXw=="
+    },
+    {
+     "baslik": "youtube.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOUL1NK02I8yH3qTWsN51xkc-g_Szm4Oo9o78YDbG-gqfk0F356mXEcFfWCDp2vqQ4aHHf2w35U-CBnK2q8mI4LBnLlCP-eBV_VSULyaNPVMDBst-9abLDDpmWTU5P8o4="
+    },
+    {
+     "baslik": "christies.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpn0OMEsLvbBiSPi-Jc6MyBVPTBT4_0GPyOguTFC1wD49s14dcubwZujKSfGhXUxG0V7pRQK3DlRmW2iM26ICyWWoxlj_oR72FuE29pAeXGGjMS74Nxwwu0n71e3MkaYR1"
+    },
+    {
+     "baslik": "thenation.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEj87NBTKiSiBy76ZhdnJbX8ZWAP5G89p2pkaq_nD1FrCb7Uwu0x-f6U7DoZF7BzF8owfxUiVDf0x1E8ivOlIlspRIX0M7jGBUhaOP4d-isb8i2Af6eFVhKI_dl4hLO73t82MyXSCVdRr2i9_mAzGeQ2ML9wQ=="
+    },
+    {
+     "baslik": "artsy.net",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHuSRlQPP0rU6nQDTz_CPPC6f2JTeV5v7GzMvmlqJf5EAmwlBS3Nv2AxELsmF6Ez9SAoNVq8XkC9wLZYc7o-uj4Pe4pnTDmUElfXTvRs-xtWAzV-kOpTK1wk5rOEq0AbY5aEIuuH-MwRe6erwhgZPH5-sJwAE4lmEZPBCJsBcLlbZW8m7JZco="
+    }
+   ],
+   "model": "gemini-3.1-pro-preview-customtools",
+   "denetci": "gemini-3.1-pro-preview-customtools",
+   "duzeltilen": 2,
+   "olusturma": "2026-11-26"
+  },
+  "rembrandt-van-rijn": {
+   "baslik": "Karanlığın İçindeki İnsan",
+   "alt_baslik": "Rembrandt van Rijn'in yükselişi, düşüşü ve boyanın içinde eriyen hayatı.",
+   "giris": [
+    "Yıl 1656. Amsterdam'da gösterişli bir evin kapısından içeri giren Desolate Boedelskamer memurları, ellerindeki defterlere odaları hıncahınç dolduran eşyaları tek tek not etmeye başlıyor. Mermer Roma büstleri, parıldayan Japon zırhları, dünyanın dört bir yanından getirilmiş egzotik silahlar, Albrecht Dürer ve Raphael'e ait nadide baskılar. Burası, bir zamanlar şehrin en çok aranan ve en zengin ressamı olan Rembrandt van Rijn'in evi. Kendi saplantılı harcamaları ve bitmek bilmeyen koleksiyon tutkusu yüzünden iflasın eşiğine gelen sanatçı, hapse girmemek için mal varlığını gönüllü olarak teslim ediyor. O an orada bulunan memurlar, sadece eşyaları değil, bir dönemin kapanışını da kayda geçiriyorlar.",
+    "Artık o devasa evinden, devasa koleksiyonundan ve toplum içindeki sarsılmaz itibarından geriye sadece çıplak bir gerçeklik, boyalar ve fırçalar kalıyor. Rembrandt'ın hikayesi, bu ağır çöküş anından çok önce, hırslı bir gencin karanlık bir odada aynaya bakışıyla başlıyor. Işığı, karanlığı ve boyanın bizzat kendisini bir insana dönüştüren o uzun ve çalkantılı yola, baştan, Leiden yıllarından itibaren bakmamız gerekiyor. Onun sanatı, hayatının trajedileriyle yoğruldukça kabuk değiştiren, pürüzsüz bir güzellikten çıkıp etin ve ruhun derinliklerine inen karanlık ve sarsıcı bir yolculuktur."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Leiden ve Aynadaki Yüz",
+     "yillar": "1620–1631",
+     "paragraflar": [
+      "Leiden Üniversitesi'ndeki eğitimini yarıda bırakan genç Rembrandt, hırslarını küçük bir odada aynaya bakarak şekillendirmeye başlar. Kendi yüzünü saplantılı bir şekilde incelediği Öz portreler serisi, insan fizyonomisini ve duygularını anlama çabasının ilk adımlarıdır. O dönemde küçük ahşap paneller üzerine pürüzsüz, son derece titiz fırça vuruşlarıyla çalışır. Renkler parlaktır, kalabalık sahneler tiyatro sahnesi gibi yapay bir ışıkla aydınlatılır. İfadenin sınırlarını zorlarken kendi yüz kaslarını eğer, büker ve ışığın ten üzerinde nasıl kırıldığını keşfeder. Bu erken dönem denemeleri, onun ileride ustalaşacağı o büyük psikolojik derinliğin temellerini atar.",
+      "1624 yılında yaptığı The Stoning of Saint Stephen tablosu, bu erken dönemin karmaşık yapısını gözler önüne serer. Kalabalık ve renkli kompozisyon, genç ressamın çok figürlü ve zorlu anlatılarla başa çıkma mücadelesini yansıtır. 1626 yılına gelindiğinde, Balaam and the Ass eserinde dokuların ne kadar ince ve bitmiş bir şekilde işlendiğini görürüz. Kumaşların kıvrımları, metalin parıltısı ve figürlerin abartılı ifadeleri, onun detaylara olan takıntısını gösterir. Dramatik ışık ve gölge kullanımındaki asıl ustalığı ise 1630 tarihli Jeremiah Lamenting the Destruction of Jerusalem tablosunda ortaya çıkar. Derin karanlıkların içinden parlayan metal kaplar ve yaşlı adamın yüzündeki ince işçilik, izleyiciyi resmin içine çeker.",
+      "Bu yılların içsel ruh halini en iyi anlatan anlardan biri, Artist in his studio tablosunda karşımıza çıkar. Devasa, boş bir odanın içinde, büyük bir tuvalin karşısında küçücük kalmış bir ressam silueti görürüz. Tuvalin arkasından vuran sert ışık, genç sanatçının önündeki zorlu yolu ve zihnindeki gerilimi hissettirir. Klasik güzellik anlayışına başkaldırısı ise Andromeda Chained to the Rocks eseriyle belirginleşir. Antik çağın idealize edilmiş bir tanrıçası yerine, korkmuş, sıradan ve son derece gerçekçi bir bedeni tuvale taşır. 1630 yılında babasının ölümü, ona Leiden'in artık çok küçük geldiğini fark ettirir. Hırsları onu Amsterdam'a doğru çağırır."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2872723",
+       "bag": "Aynada kendi yüzünü inceleyerek insan doğasını ve ışığın yüzde nasıl kırıldığını öğrenmeye başladığı ilk adımlar."
+      },
+      {
+       "qid": "Q3905873",
+       "bag": "Ressamın devasa boş bir odada büyük bir tuvalin karşısında siluet halinde durduğu psikolojik gerilim sahnesi."
+      },
+      {
+       "qid": "Q1130734",
+       "bag": "Klasik idealizmi reddedip şaşırtıcı derecede gerçekçi ve çıplak bir bedeni resmettiği erken dönem meydan okuması."
+      },
+      {
+       "qid": "Q740212",
+       "bag": "Derin gölgeler içindeki metalik nesneler üzerinde dramatik ışık ve gölge kullanımındaki ilk büyük ustalığı."
+      }
+     ]
+    },
+    {
+     "baslik": "Amsterdam'da Şan, Şöhret ve Çarpışan Bedenler",
+     "yillar": "1631–1642",
+     "paragraflar": [
+      "Amsterdam'a adım attığı anda, şehrin en çok aranan portre ressamına dönüşmesi uzun sürmez. 1634 yılında varlıklı bir ailenin kızı olan Saskia van Uylenburgh ile evlenir. 1639 yılında Sint-Anthonisbreestraat üzerinde devasa, son derece pahalı bir ev satın alır. Hayatı artık Peter Paul Rubens'in görkemli dünyasıyla yarışacak kadar gösterişlidir. Bu güven patlaması sanatına da yansır. Tabloları anıtsal boyutlara ulaşır, figürler gerçek insan boyutundadır. Dinamik çapraz çizgiler, kalın boya katmanları ve patlayıcı bir Barok hareket tuvali ele geçirir. 1632 tarihli Portrait of Jacob de Gheyn III tablosundaki pürüzsüz portre işçiliği ona ilk şöhretini getirse de, o bununla yetinmez.",
+      "Dr. Nicolaes Tulp'un Anatomi Dersi bu büyük değişimin ilk sarsıcı işaretidir. Amsterdam'ın sıkıcı, yan yana dizilmiş statik grup portresi geleneğini yıkar, doktorları anatomi masasının etrafında gerilim dolu bir hikayenin aktörleri haline getirir. Eylemin ve hareketin şiddeti, The Abduction of Europa tablosuyla devam eder ve Celile Denizi'ndeki Fırtına eserinde dalgalarla boğuşan teknenin çapraz ekseniyle zirveye çıkar. Saskia ile tavernada coşkuyla kadeh kaldırdığı The Prodigal Son in the Tavern eseri, bu altın yılların neşesini, zengin dokularını ve çiftin lüks içindeki hayatını kutlar. Eşini gösterişli kumaşlar içinde resmettiği Flora tablosu da bu dönemin bolluk ve bereketini yansıtır.",
+      "Bu yıllar aynı zamanda tiyatral bir dehşetin ve sert ışık oyunlarının yıllarıdır. Judith at the Banquet of Holofernes ve Abraham's Sacrifice tablolarında eylemin tam ortasında dondurulmuş bir anın gerilimini verir. Belşazzar'ın Ziyafeti tablosunda mücevherler ve altın zincirler, kalın impasto boya katmanlarıyla adeta tuvalden dışarı taşar. Danae tablosunda ise gerçek boyutlu, altın rengi bir ışıkla yıkanan çıplak beden, onun sıcak ve canlı ete olan tutkusunu sergiler. 1640 tarihli Self-Portrait at the Age of 34 eserinde kendini Raphael ve Titian'ın aristokratik pozlarıyla resmederek, sanat tarihinin devleriyle aynı seviyede olduğunu ilan eder.",
+      "Ancak bu görkemli yükseliş, 1642 yılında Saskia'nın trajik ölümüyle ağır bir yara alır. Aynı yıl, en büyük komisyonlarından biri olan Gece Devriyesi de tamamlanır. Bu eserde sivil askerleri donuk bir pozda değil, davulların çaldığı, mızrakların havaya kalktığı patlayıcı bir ileri atılış anında resmeder. Işık karanlığı yararak kompozisyona büyük bir dramatik derinlik katar. Bu devasa tablo sipariş verenleri son derece memnun etmiş ve ona büyük bir ödeme kazandırmıştır. Fakat Saskia'nın gidişi, sanatçının hayatında geri dönülmez bir kırılma yaratacak, Amsterdam'ın parlak ışıkları yerini yavaş yavaş derin gölgelere bırakacaktır."
+     ],
+     "eserler": [
+      {
+       "qid": "Q661378",
+       "bag": "Durağan grup portresi geleneğini yıkarak figürleri anatomi masası etrafında sürükleyici bir anlatının içine soktuğu büyük başarısı."
+      },
+      {
+       "qid": "Q219831",
+       "bag": "Askerleri statik bir sıradan çıkarıp ileriye doğru patlayıcı bir hareketle resmettiği ve ışığın karanlığı yardığı başyapıtı."
+      },
+      {
+       "qid": "Q2294441",
+       "bag": "Gerçek boyutlu ve altın rengi bir ışıkla yıkanan çıplak beden üzerinden cana ve kana olan tutkusunu yansıttığı eser."
+      },
+      {
+       "qid": "Q1111394",
+       "bag": "Eşi Saskia ile birlikte zenginlik ve coşku içinde resmettiği, dönemin gösterişli hayatını kutlayan sahne."
+      }
+     ]
+    },
+    {
+     "baslik": "İçedönüş, Skandallar ve Çöküş",
+     "yillar": "1643–1655",
+     "paragraflar": [
+      "Saskia'nın ardından Rembrandt'ın evi karanlık bir döneme girer. Oğlunun dadısı Geertje Dircx ile yaşadığı fırtınalı ilişki büyük bir mahkeme skandalına dönüşür. Geertje onu sözünü tutmamakla suçlayıp dava edince, Rembrandt nüfuzunu kullanarak kadını 1650 yılında Gouda'da bir kadın hapishanesine kapattırır. Daha sonra evinin genç hizmetçisi Hendrickje Stoffels ile yaşamaya başlar. Kilise bu ilişkiyi açıkça kınarken, bir yandan da sanatçının devasa borçları dağ gibi büyümektedir. 1656 yılındaki iflas anlaşmasına giden bu zorlu süreç, sanatındaki o patlayıcı Barok eylemi tamamen silip atar. Dış dünyadaki kaos büyüdükçe, tuvalin içindeki sessizlik de o denli derinleşir.",
+      "Hareketin yerini derin bir içedönüş alır. Paleti sıcak kırmızılara, kahverengilere ve altın sarılarına kayar. Fırça vuruşları artık daha geniş ve serbesttir. 1644 tarihli Zina İşleyen Kadın tablosuna baktığımızda bu değişimi hissederiz. Devasa, gölgeli bir tapınak mimarisinin içinde küçücük kalan figürler, sessiz ve ahlaki bir ağırlık taşır. Susanna and the Elders tablosunda psikolojik gerilim sessizce kaynar. Aynı dönemde baskı sanatında da yeni bir ustalığa ulaşır. Christ Healing the Sick eserinde ince ton geçişleriyle ışığı adeta yeniden icat ederken, The Three Crosses eserinde asitin metali oyduğu radikal ve saldırgan çizgilerle karanlığı şekillendirir.",
+      "1650'li yıllara gelindiğinde boya kullanımı gözle görülür şekilde kalınlaşır. Aristotle with a Bust of Homer tablosunda kalın impasto boya, Aristoteles'in taktığı altın zincirin üzerindeki ışığı yakalar; düşünürün yüzündeki dalgınlık, geçmişin ağırlığını yansıtır. The Supper at Emmaus tablosundaki o içsel ışık, sessiz bir ruhsal aydınlanma yayar. Sevgilisi Hendrickje, Banyosunda Betşeba tablosunda karşımıza çıkar. Elinde Kral Davut'tan gelen mektubu tutan kadının yüzündeki melankoli, boyanın etli dokusuyla birleşerek izleyiciyi sessiz bir hüzne boğar. A Woman Bathing in a Stream tablosunda ise son derece samimi ve anlık bir fırça kullanımı göze çarpar.",
+      "1655 tarihli A Slaughtered Ox ise sanatçının fırçasının geldiği radikal noktayı gösterir. Hollanda sanatında sıradan bir ölüm sembolü olan yüzülmüş bir öküz gövdesi, Rembrandt'ın kalın ve dokunsal boya katmanları altında neredeyse etin kendisine dönüşür. Artık nesnelerin dış görünüşünü değil, varoluşun ağır yükünü resmetmektedir. Aynı yıl ona atfedilen The Polish Rider tablosu, gizemli ve şiirsel bir atmosferle sarmalanmıştır; atın üzerindeki figür, serbest ve düşündürücü fırça darbeleriyle karanlık bir yolculuğa çıkmış gibidir. Tüm bu eserler, yaklaşan büyük yıkımın sessiz habercileri gibidir."
+     ],
+     "eserler": [
+      {
+       "qid": "Q570163",
+       "bag": "Aksiyonun yerini sessiz bir ahlaki sorgulamanın aldığı, küçük figürlerin devasa tapınak mimarisi içinde kaybolduğu içedönüş eseri."
+      },
+      {
+       "qid": "Q32496",
+       "bag": "Hendrickje'nin model olduğu, mektuba bakarken derin bir melankoli ve sessiz bir kabulleniş sergileyen kadının dokunaklı portresi."
+      },
+      {
+       "qid": "Q3646498",
+       "bag": "Sıradan bir et parçasını kalın boya katmanları ve şiddetli fırça darbeleriyle anıtsal bir varoluş sahnesine dönüştürdüğü çalışma."
+      },
+      {
+       "qid": "Q937279",
+       "bag": "İnce ton geçişleriyle ışığı adeta yeniden icat ettiği ve baskı sanatındaki en üst düzey ustalığını sergilediği eser."
+      }
+     ]
+    },
+    {
+     "baslik": "Trajedi ve Aşkınlık",
+     "yillar": "1656–1669",
+     "paragraflar": [
+      "Evini, eşyalarını ve statüsünü kaybeden Rembrandt, Rozengracht semtindeki mütevazı bir kiralık eve taşınır. Hayat onu acımasızca sınamaya devam eder; önce hayat arkadaşı Hendrickje'yi, ardından çok sevdiği oğlu Titus'u toprağa verir. Siparişler almaya devam etse de, taviz vermediği o sert ve pürüzlü son dönem üslubu bazı müşterilerini rahatsız eder. Boyayı artık sadece fırçayla değil, palet bıçağıyla, hatta bazen parmaklarıyla kalın tabakalar halinde sürer. Yüzey kırık dökük, figürler anıtsal ama hareketsizdir. The anatomy lesson of Dr. Joan Deijman tablosunda radikal bir perspektif kullanarak izleyiciyi doğrudan ölümün ve bedenin faniliğiyle yüzleştirir.",
+      "Jacob Blessing the Sons of Joseph tablosunda sıcak kırmızı tonlar ve şefkatli bir aile sevgisi ön plandadır. Moses Smashing the Tablets of the Law eserinde ise geniş ve ağır fırça darbeleriyle trajik bir yalnızlık duygusu yaratır. Ahasuerus and Haman at the Feast of Esther tablosundaki gergin ve durağan psikolojik dram, onun insan ruhunun karanlık köşelerine inme becerisini gösterir. Oğlunu resmettiği Titus as a Monk tablosu, kalın boya dokusu altında derin bir melankoli barındırırken, The Denial of Saint Peter tablosunda mum ışığıyla aydınlanan suçluluk duygusu adeta elle tutulur hale gelir.",
+      "The Conspiracy of Claudius Civilis bu kaba ve acımasız uygulamanın zirvesidir. Amsterdam Belediye Meclisi için yapılan bu devasa tablo, fazla arkaik ve sert bulunduğu için reddedilir. Ancak o, kendi gerçeğinden dönmez. Manifaturacılar Loncası Sendikleri adlı grup portresinde güçlü bir psikolojik bütünlük yakalar. Saint Matthew and the Angel eseri, kaba ve dışavurumcu fırça vuruşlarının ruhsal bir arayışa dönüştüğü bir başka örnektir. 1665 tarihli Self Portrait with Two Circles tablosunda, elinde paleti ve fırçalarıyla soyut bir arka planın önünde durur. Kendini tüm dürüstlüğüyle, boyun eğmeyen bir yaratıcı olarak sunar.",
+      "The Jewish Bride tablosunda, bir adamın elini sevdiği kadının göğsüne koyduğu o kısacık an, heykelsi boya katmanlarıyla sonsuz bir şefkat anıtına dönüşür. Rivayete göre Vincent van Gogh yıllar sonra bu tablonun karşısında günlerce oturabilmek için hayatının on yılını vermeye hazır olduğunu söyleyecektir. Oğlu Titus'un ölümünün ardından yaptığı The Return of the Prodigal Son, Rembrandt'ın dünyaya veda busesi gibidir. Altın sarısı bir ışık karanlığın içinden süzülür; hiçbir hareket yoktur, sadece mutlak bir affediliş hüküm sürer. 1669 yılında yaptığı Self-Portrait at the Age of 63 tablosunda aynaya son kez bakar; bedeni boyanın içinde çözülmektedir."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2234397",
+       "bag": "Boyanın heykelsi bir kabalıkla sürüldüğü, Amsterdam Belediye Meclisi tarafından reddedilen arkaik ve acımasız şaheser."
+      },
+      {
+       "qid": "Q766782",
+       "bag": "Figürlerin boyanın içinde eridiği, sevgi ve şefkatin dokunsal bir altın sarısıyla tuvale kazındığı son dönem tablosu."
+      },
+      {
+       "qid": "Q512755",
+       "bag": "Affetmenin ve mutlak sessizliğin tablosu; Rembrandt'ın kendi kayıplarının ardından ulaştığı ruhsal dinginliğin nihai ifadesi."
+      },
+      {
+       "qid": "Q3630743",
+       "bag": "Ölümünden hemen önce kendi faniliğini, dağılan fırça vuruşları ve sarsılmaz bir dürüstlükle kaydettiği son bakış."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Rembrandt van Rijn, Ekim 1669'da hayata veda edene dek önemli siparişler almaya devam etti. Aristokratların pürüzsüz ve zarif tablolara yöneldiği bir dönemde, o inatla boyanın çamurunu, etin kusurunu ve karanlığın ağırlığını seçmişti. Onun düşüşü, yeteneğinin yok olmasından değil, kendi hatalarından ve dönemin değişen zevklerine boyun eğmemesinden kaynaklanıyordu. O, ışığı sadece bir mekanı aydınlatmak için değil, insanın içindeki saklı ruhu ortaya çıkarmak için kullandı. Figürleri karanlıktan doğar, altın sarısı bir ışıkla yıkanır ve tekrar gölgelerin içine karışır. Bu, sadece bir resim tekniği değil, insanın yeryüzündeki geçici varoluşunun doğrudan tuvale yansımasıdır.",
+    "Bugün bir Rembrandt tablosuna bakarken, sadece geçmişte yaşamış bir adamın ustalığını görmeyiz. Boyanın kalın katmanları arasında zamanın yıpratıcılığını, kayıpların acısını ve her şeye rağmen ayakta kalma çabasını hissederiz. O, kusurlu insan doğasını idealize etmeden olduğu gibi kabul etmiş ve o kusurların içindeki sarsıcı manevi derinliği ortaya çıkarmıştır. Boyayı bir illüzyon aracı olmaktan çıkarıp doğrudan duygunun kendisine dönüştüren bu tavizsiz tutum, onu çağının çok ötesine taşımıştır. Karanlığın içinden bize bakmaya devam eden o yorgun gözler, sanat tarihinin en dürüst ve en sarsıcı sessizliğini barındırır."
+   ],
+   "baglantilar": [
+    {
+     "sanatci": "Hendrick ter Brugghen",
+     "iliski": "Rembrandt İtalya'ya hiç gitmemiş olsa da, Caravaggio'nun dramatik ışık ve gölge kullanımını onun gibi Utrechtli ressamlar aracılığıyla öğrenip kendi sanatına uyarladı.",
+     "id": "hendrick-ter-brugghen"
+    },
+    {
+     "sanatci": "Peter Paul Rubens",
+     "iliski": "Uluslararası şöhretiyle Rembrandt'ın en büyük rekabet kaynağıydı; Rembrandt kariyerinin büyük bölümünde onun Yüksek Barok tarzındaki görkemli ve hareketli kompozisyonlarını aşmaya çalıştı.",
+     "id": "peter-paul-rubens"
+    },
+    {
+     "sanatci": "Titian",
+     "iliski": "Rembrandt, eserlerindeki figür duruşlarını ve kompozisyon yapılarını doğrudan bu büyük İtalyan ustadan ödünç alarak kendi portrelerine aristokratik bir hava kattı.",
+     "id": "titian"
+    },
+    {
+     "sanatci": "Johannes Vermeer",
+     "iliski": "Rembrandt'ın pürüzlü ve kalın impasto fırça vuruşları, bu çağdaşının pürüzsüz, zarif ve aydınlık günlük yaşam sahneleriyle taban tabana zıt bir üslup sergiliyordu.",
+     "id": "johannes-vermeer"
+    },
+    {
+     "sanatci": "Diego Velázquez",
+     "iliski": "Rembrandt'ın son dönemindeki ruhsal derinlik ve serbest fırça kullanımı, dönemdaşı olan bu İspanyol ustayla büyük bir sanatsal akrabalık taşıyordu.",
+     "id": "diego-velazquez"
+    },
+    {
+     "sanatci": "Francisco de Goya",
+     "iliski": "Rembrandt'ın duygusal derinliği ve teknik özgürlüğü, yüzyıllar sonra bu İspanyol ressamın karanlık ve psikolojik eserlerine güçlü bir ilham kaynağı oldu.",
+     "id": "francisco-de-goya"
+    },
+    {
+     "sanatci": "Vincent van Gogh",
+     "iliski": "Rembrandt'ın boyayı kullanış biçimi ve anıtsal şefkati, asırlar sonra bu Hollandalı ustayı derinden sarsmış ve kendi sanat anlayışını derinden etkilemiştir.",
+     "id": "vincent-van-gogh"
+    }
+   ],
+   "kelime": 1686,
+   "kaynaklar": [
+    {
+     "baslik": "rembrandtresearchproject.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF47Ps_ybBMix1dvfnMN1KeJgfbdOudDPx19i2_CpEqkbVp_D5tvX5esxD-J74Xy3ngc6MXDRoeKVxAxuLG8ROZSclStJguxTi4r4Zc8p9pDW5nPSF59-sHy8EYZnArFT1Ba46_JNTkiEW-AfWtlI4Isi4="
+    },
+    {
+     "baslik": "alphareproduction.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGentbG9IUuBAO3AQVVzRy3VQPnvLpAI64jvpMTDWV1odujgQ8mQs-aCgjla5xFwH3B7D64d5-Qk-n2jTP9oTsUrg7TUCfy8Hxp-pyKR0wGgqCvA87evw2OkCr00iZrsOfMvsldp4aPJwxrz-MTXGZjc203IedQRBQlDAaKTOjN3-gVyefZNnvwJI_VucDSnjuYjYpchQNiWF5qDrTbdWguxECe9UDdQDogwoyqWD4_Qcf2-N83"
+    },
+    {
+     "baslik": "deckarts.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5ictVMkWrOXnoOCbKte6Kbt3xKErLdiyIRSweZweFrPQoXk8ObST_mjQtxkD4dtSQurXb0PERnrDxXhJfmG_SglgZ72qOGjy1RyCuKnxuyFWRk_4f7PjefTCToyRK5_cCwpT4o4Q2A4a3rA7UkSK4cHr7RZjMGLbRTjllee4jrni8cnFJKuBhpK0uzQ=="
+    },
+    {
+     "baslik": "wikiquote.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeiGEP6WYtkvd2SuZY39-EyZbKK7jpyKcmfn2_ngGDS1J-wIocBxoIE0UsDpD7lHLRN1v502a5pR5qZ0wApoRN53fJe6K-EoNOM0HmSePsK1g19WXRFE7wckOYLGs="
+    },
+    {
+     "baslik": "fedbar.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCwbUA07N1KD3MW8OY9bbfGz4E1GpqgT09ycem7gn7VrpzCSolADJ6IW6-jHtVDnPMM_tlWVoQ1aYlInOINXrL38ABwxOECildzU0Jh93UyuEuqql1hv-FvDQl94qVePHyFi2A0Krpg_eWrQLfmia-qnmQlIEisA=="
+    },
+    {
+     "baslik": "vggallery.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMOjy_hHVM0AhYacDL5HXArivnonTHziI14gz2iDsmrQPuLTmtcS3Ia9EKt99ABM6sfMpUgl6VbR1Z_heDZLM3qTCetBWztoPmi4MpzmdZd2zY1pv2311wuGytgfU9_MxuMJLN2T6x"
+    },
+    {
+     "baslik": "wordpress.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdnLH7ZMGdULriZ_38jn7Ad9uerm2vTTwQBYL4X6yOBYgfGOsjMv7MCEO2ufnzP8uPgCUyVAAqgzFGhhpHwJO5ELb5iLcLcWLGGGxBCcxXrP-pvct9Ddvd8VIvKon2BdVfCDq2sLz6JaJkyQM5_eZQjMQ8Dy7lLmZtWm--XVJlmxbspYFY0BOFfCxyIobV9XqvrTobAg=="
+    },
+    {
+     "baslik": "nih.gov",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUPB2nrt3_O_nIMEyEpRihkOsi_3GABfBMPU9mtSsFXmBxiA30e9QBR8g3j1h2BTUPovy4zSxaq6tS69lC7f3K3OLlzkOw7Otnu3gZ4WtcmCams51NMpQvxvWi4jqSkaFXddG9Qfqi"
+    },
+    {
+     "baslik": "harvard.edu",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqbATqpf2xFnlFOxdKekNIXzcNUd-sy5J6iRlCuemrrOKgsMLEI9aOErtpDTDJiowM0EmS-8wrT50e80rNCszB72jCpTUShlARGZKmqinchn6W_JjFyCVhTkLySslSbjIAXQOBgBmkPI5Gvqs7DXECnDIhZ0lqzMzTFZM-l-vrjxprNLYk5edIclI="
+    }
+   ],
+   "model": "gemini-3.1-pro-preview-customtools",
+   "denetci": "gemini-3.1-pro-preview-customtools",
+   "duzeltilen": 1,
+   "olusturma": "2026-11-26"
+  },
+  "francisco-de-goya": {
+   "baslik": "Karanlığı Yırtan Fırça",
+   "alt_baslik": "Francisco de Goya, aydınlığın çöküşüne ve savaşın dehşetine tanık olarak modern sanatın kapılarını araladı.",
+   "giris": [
+    "Yıl 1792. Endülüs sıcağında 46 yaşında bir adam yatağında ateşler içinde kıvranıyor. Kafasının içinde korkunç, bitmek bilmeyen çınlamalar var. Haftalar süren bu ağır ve ne olduğu anlaşılamayan hastalıktan uyandığında hayatı bir daha asla eskisi gibi olmayacak. Francisco de Goya y Lucientes tamamen ve kalıcı olarak sağır olmuştur. Dünya onun için sonsuz, aşılmaz bir sessizliğe bürünür. Ancak kulakları dış dünyaya kapandıkça, zihni kendi içindeki karanlık köşelere, daha önce kimsenin görmeye cesaret edemediği gölgelere açılır. Emre, duyma yetisini kaybeden bu adamın, sessizliğini nasıl tarihin en gürültülü fırça darbelerine dönüştürdüğünü konuşacağız. Onun fırçası, aydınlığın içinden geçip karanlığın en dibine inen sarsıcı bir pusuladır.",
+    "Goya sadece kendi içsel karanlığına değil, koca bir çağın çöküşüne de en ön sıradan tanıklık etti. İspanyol aydınlanmasının umut dolu, neşeli günlerinden, savaşın vahşetine ve siyasi baskının kabusuna uzanan yolda o, eski ustalar ile modern çağ arasında duran dev bir köprüydü. Doğayı, Diego Velázquez ve Rembrandt van Rijn gibi devleri ustası olarak kabul eden Goya, taviz vermeyen bir gözlemciydi. Şimdi seninle bu sağır ressamın fırçasından dökülen çığlıkları dinleyeceğiz. Sarayın ışıltılı, bol dedikodulu salonlarından, kendi evinin ıssız duvarlarına öfkeyle kazıdığı canavarlara uzanan bu uzun yolculukta ışığın, rengin ve mekânın nasıl saf acıya dönüştüğünü adım adım izleyeceğiz."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Sarayın Işıltılı Basamakları",
+     "yillar": "1774-1792",
+     "paragraflar": [
+      "Hikayemiz 18. yüzyılın sonlarına doğru Madrid sokaklarında başlıyor. Genç Goya son derece hırslı, kararlı ve ne istediğini çok iyi bilen bir adam. Neoklasik ressam Anton Raphael Mengs ve kayınbiraderi Francisco Bayeu yönetimindeki Kraliyet Halı Fabrikası için devasa taslaklar hazırlıyor. İçinde yanan tek bir arzu var, kraliyetin himayesine girmek ve sarayın resmî ressamı unvanını almak. Bu uğurda Kral Üçüncü Carlos döneminde fırçasından adeta neşe ve ışık damlıyor. Renk paleti uçuk maviler, tatlı pembeler ve parlak sarılarla şenleniyor. Fırça darbeleri pürüzsüz, sakin ve tam da akademinin ondan beklediği gibi kusursuz. Aristokratların eğlencelerini, parklarda dolaşan şık kadınları ve neşeli erkekleri devasa boyutlarda ama hafif bir ruh haliyle resmediyor.",
+      "Şemsiye adlı eserine yakından bakarsan bu erken dönemin kaygısız ruhunu hemen hissedersin. Genç kadının parlak sarı eteği, elindeki yelpazesi ve yüzüne vuran oyunbaz, sıcak ışık, Fransız Rokoko üslubunun o hafif neşesini açıkça taşır. Goya bu dönemde kendini kanıtlamak, yeteneğini üstlerine onaylatmak için her yolu dener. Hatta San Fernando Akademisi üyelerinin gözüne girmek uğruna pürüzsüz hatlara sahip, son derece sakin ve Neoklasik kurallara tamamen uygun bir Çarmıha Gerilmiş İsa bile çizer. Bu eser, onun kuralcı otoriteye boyun eğişinin ve onaylanma ihtiyacının en net göstergesidir. Ancak bu aydınlık, renkli ve kurallı dünyanın içinde bile, gelecekteki o büyük karanlığın küçük, ürkütücü tohumları gizliden gizliye yeşermektedir.",
+      "Kraliyet ailesiyle yakınlaştığı ilk yıllarda yaptığı Don Manuel Osorio de Zuniga portresine çok dikkat et Emre. Parlak kırmızı giysiler içindeki kaskatı duran aristokrat çocuğun etrafı son derece tekinsiz bir havayla sarılıdır. Çocuğun ipe bağladığı masum saksağanı karanlığın içinden gözlerini dikmiş izleyen iri, yırtıcı kediler, tablonun masumiyetini sessizce ve acımasızca bozar. Bu kediler sanki saraydaki entrikaların ve yaklaşan felaketlerin habercisidir. Benzer şekilde Büyülenmiş Adam tablosunda kullandığı titrek, tiyatral ışık, Goya'nın batıl inançlara, korkuya ve karanlığa duyduğu ilginin ilk belirgin işaretlerini verir. Bu ışıltılı saray tırmanışı, 1792 yılının sonlarında o amansız hastalığın onu derin, sağır edici ve kalıcı bir sessizliğe gömmesiyle aniden sona erer."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2537138",
+       "bag": "Goya'nın erken dönemindeki aydınlık Fransız Rokoko etkisini ve kaygısız saray hayatını yansıtan parlak renkli bir eserdir."
+      },
+      {
+       "qid": "Q3035829",
+       "bag": "Aristokrat bir çocuğun masumiyetini, etrafını saran yırtıcı kedilerle bozarak gelecekteki karanlık tarzının ilk sinyallerini verir."
+      },
+      {
+       "qid": "Q3822732",
+       "bag": "Goya'nın kariyerinin başlarında tiyatral ışık kullanarak batıl inançlara ve karanlığa duyduğu ilginin ilk örneklerindendir."
+      }
+     ]
+    },
+    {
+     "baslik": "Sessizliğin İçindeki Gölgeler",
+     "yillar": "1793-1807",
+     "paragraflar": [
+      "Sağır bir adam, fısıltıların ve gizli entrikaların hüküm sürdüğü Madrid sarayında nasıl hayatta kalır? Goya sadece hayatta kalmakla yetinmedi, tam tersine kariyerinin en yüksek zirvesine tırmandı. Dış dünyayla işitsel bağı koptukça, görsel zekası ve gözlem yeteneği inanılmaz derecede keskinleşti. 1799 yılında Kral Dördüncü Carlos tarafından baş saray ressamı ilan edildi. Ancak sanatı artık kesin çizgilerle ikiye bölünmüştü. Resmî portrelerinde parlak, kalın boya katmanlarıyla sarayın arzuladığı ihtişamı yansıtırken, özel hayatında renkler hızla kararıyordu. Yeni öğrendiği akuatint baskı tekniğiyle derin, kadifemsi siyahlar yaratarak toplumun ikiyüzlülüğünü, cadıları, cehaleti ve batıl inançları resmetmeye başladı. Arka planlar zifiri karanlığa dönüşüyor, grotesk figürler tek bir sert ışık kaynağıyla acımasızca aydınlanıyordu.",
+      "Bu ruhsal ikiliği en iyi anlatan eserlerden biri Los Caprichos baskı serisindeki Aklın Uykusu Canavarlar Yaratır adlı meşhur çalışmadır. Masaya kapanmış derin bir uykuya dalan adamın etrafını saran ürkütücü baykuşlar ve yarasalar, karanlığın içinden fırlayan cehaleti ve aklın devreden çıktığı o tehlikeli anı temsil eder. Akuatint tekniğinin yarattığı o koyu siyahlık, korkunun ta kendisidir. Goya hastalığından sonra arkadaşı Martín Zapater'e yazdığı bir mektupta artık cadılardan, hayaletlerden veya devlerden değil, sadece ve sadece insanlardan korktuğunu itiraf eder. Bu derin korku onun fırçasına keskin, tavizsiz bir psikolojik gerçekçilik olarak yansır. İnsan yüzündeki kibri, aptallığı ve açgözlülüğü artık hiçbir süslemeye ihtiyaç duymadan, en çiğ ve rahatsız edici haliyle tuvale aktarmaya başlar.",
+      "Saray için büyük bir özenle yaptığı IV. Carlos ve Ailesi tablosu bu psikolojik gerçekçiliğin kesin zirvesidir. Goya burada ustası Diego Velázquez'in mekansal oyunlarına doğrudan bir saygı duruşunda bulunur ancak kraliyet ailesini neredeyse acımasız bir dürüstlükle resmeder. Fırçası son derece serbest ve ışıltılıdır, elbiselerdeki madalyalar pırıl pırıl parlar ama figürlerin yüzlerindeki o boş, donuk ve sıradan his asla gizlenemez. Aynı dönemde güçlü bakan Manuel Godoy için çizdiği Çıplak Maya ise çok daha büyük bir skandal yaratır. Modelin doğrudan izleyiciye bakan cüretkar bakışları ve akademinin tüm kurallarını yıkan, tüylerin bile göründüğü o gerçekçi çıplaklığı, yıllar sonra Engizisyon mahkemesinin onu müstehcenlik suçlamasıyla sorguya çekmesine neden olacaktır. Goya'nın fırçası artık gerçekten tehlikeli sularda yüzmektedir."
+     ],
+     "eserler": [
+      {
+       "qid": "Q671237",
+       "bag": "Akuatint tekniğiyle yaratılan derin siyahlar, Goya'nın aklın devreden çıkmasıyla ortaya çıkan toplumsal cehaleti ve karanlığı simgeler."
+      },
+      {
+       "qid": "Q920030",
+       "bag": "Velázquez'e saygı duruşu niteliğindeki bu tabloda Goya, kraliyet ailesini hiçbir kusurunu gizlemeden acımasız bir dürüstlükle resmeder."
+      },
+      {
+       "qid": "Q152867",
+       "bag": "Akademik kuralları yıkan cüretkar bakışları ve çıplaklığıyla dönemin en büyük skandallarından birini yaratmış, Goya'yı Engizisyon'la karşı karşıya getirmiştir."
+      }
+     ]
+    },
+    {
+     "baslik": "Kan, Çamur ve Dehşet",
+     "yillar": "1808-1819",
+     "paragraflar": [
+      "1808 yılında Napolyon'un orduları İspanya'yı işgal ettiğinde Goya'nın dünyası bir kez daha, bu defa tüm fiziksel gerçekliğiyle başına yıkıldı. Madrid ile Zaragoza arasında yaşarken Yarımada Savaşı'nın akıl almaz vahşetine, başkentteki büyük kıtlığa ve ardından gelen Yedinci Ferdinand'ın baskıcı kraliyet restorasyonuna bizzat şahit oldu. Hayatta kalmak ve konumunu korumak için Joseph Bonaparte'a bağlılık yemini etse de kalbi ve sanatı işgal altındaki İspanya ile çarpıyordu. Bu dehşet döneminde paletindeki o zarif renkler tamamen silindi, yerini çamur rengi topraklara, sert siyahlara ve kurumuş kan kırmızısına bıraktı. Savaşın yarattığı o devasa yıkım, Goya'nın sanatını şiddetli, geri dönülemez bir şekilde parçalayarak dönüştürdü.",
+      "Fırça darbeleri artık pürüzsüz değil, öfkeli, kesik kesik ve son derece saldırgandı. 3 Mayıs 1808 tablosuna baktığında bu öfkeyi bütün bedeninle hissedersin Emre. Goya, yüzleri görünmeyen, adeta ölüm kusan mekanik bir Fransız idam mangasının karşısına, kollarını çaresiz bir İsa gibi iki yana açmış beyaz gömlekli sıradan bir kurbanı yerleştirir. Tablodaki dramatik ışık sadece ölümü bekleyen adamın ve yerdeki kanlar içindeki cesetlerin üzerindedir, etraf ise zifiri bir karanlıktır. Yerde duran fenerin soluk ışığı, vahşetin ortasında insanın çaresizliğini acımasızca aydınlatır. Bu tablo, kahramanlık destanları çizen çağdaşlarının aksine, savaşın mantıksızlığına ve insanın insana ettiği zulme karşı atılmış sessiz ama sağır edici bir çığlıktır.",
+      "Goya savaşın dehşetini sadece devasa tuvallere değil, asit ve iğne kullanarak küçük metal plakalara da kazıdı. Savaşın Felaketleri serisinde parçalanmış cesetleri, tecavüzleri ve işkenceleri hiçbir şeyi yumuşatmadan, adeta modern bir savaş muhabiri gibi soğukkanlılıkla kayda geçirdi. Bu dönemde yapıldığı düşünülen Dev tablosu ise korkunun boyutunu bambaşka bir ölçeğe taşır. Karanlık bir vadide panik içinde kaçışan minicik kalabalıkların üzerinde yükselen devasa, kaslı figür, savaşın ezici ve insanüstü gücünü simgeler. Gerçi bugün bazı tarihçiler bu tablonun Goya'nın asistanına ait olabileceğini tartışsa da, eserin yarattığı o boğucu ve çaresiz dehşet hissi tam da Goya'nın o yıllardaki karanlık, çalkantılı ruh halini birebir yansıtır."
+     ],
+     "eserler": [
+      {
+       "qid": "Q1091086",
+       "bag": "Savaşın mantıksızlığını ve vahşetini, dramatik bir ışık altında kollarını açmış çaresiz bir kurban üzerinden anlatan sarsıcı bir çığlıktır."
+      },
+      {
+       "qid": "Q1200522",
+       "bag": "Goya'nın savaşın getirdiği yıkımı, işkenceleri ve ölümleri hiçbir şekilde yumuşatmadan bir belgeselci gibi kayda geçirdiği baskı serisidir."
+      },
+      {
+       "qid": "Q2413468",
+       "bag": "Karanlık bir vadide kaçışan insanların üzerinde yükselen figür, savaşın ezici ve insanüstü gücünü devasa bir ölçekte simgeler."
+      }
+     ]
+    },
+    {
+     "baslik": "Duvarlara Kazınan Kabuslar",
+     "yillar": "1819-1823",
+     "paragraflar": [
+      "Savaş bitmiş ama beklenen huzur bir türlü gelmemişti. Baskıcı kralın zorbalığından iyice bunalan ve geçirdiği yeni, neredeyse ölümcül bir hastalıkla sarsılan Goya, Madrid dışında Sağır Adamın Villası adıyla bilinen ıssız bir çiftlik evine kapandı. Yanında sadece hizmetçisi ve yoldaşı Leocadia Weiss vardı. Goya bu yalnız evde, sıvalı duvarlara, kimsenin görmesini asla amaçlamadığı, sanat tarihinin en karanlık ve sarsıcı resimlerini doğrudan boyadı. Kara Resimler adını alan bu eserlerde klasik biçim tamamen parçalanmış, figürler canavarlaşıp ürkütücü bir şekilde bozulmuştu. Palet neredeyse sadece siyah, aşı boyası, çamurlu toprak renkleri ve kurşun beyazından ibaretti. Goya boyayı fırçanın yanı sıra palet bıçakları ve süngerlerle duvara büyük bir öfkeyle sıvadı.",
+      "Sonradan anlatılan efsaneler onun bu resimleri yemek kaşıklarıyla yaptığını söylese de bu sadece durumu dramatikleştiren romantik bir abartıdır. Yemek odasının duvarına çizdiği Satürn Oğlunu Yiyen tablosuna dikkatlice bak Emre. Çılgına dönmüş, gözleri yuvalarından fırlamış vahşi bir tanrı, başı kopmuş bir cesedi karanlığın içinde hırsla çiğnemektedir. Tablodaki şiddetli fırça darbeleri ve karanlığı yaran kan kırmızı vurgular vahşeti dayanılmaz bir noktaya taşır. Bu eser, aklını yitirmiş bir adamın sanrısı değil, dünyanın deliliğini tüm çıplaklığıyla gören, kendi yaşlılığından ve ölümden korkan rasyonel bir zihnin eseridir. Goya, iktidarın ve zamanın kendi çocuklarını nasıl acımasızca yediğini duvarına kanlı bir metafor olarak kazımıştır.",
+      "Bir Köpek tablosunda ise bambaşka, varoluşsal bir korku yatar. Goya koca bir duvarı sadece sarı ve kahverengi tonlarında, uçsuz bucaksız, boş bir alan olarak bırakır. Alt köşede sadece yukarı doğru umutsuzlukla bakan küçük bir köpek kafası vardır. Köpek yoğun bir bataklığa mı gömülmektedir, yoksa yukarıdan bir umut ışığı mı beklemektedir, bunu asla bilemeyiz. Aynı evdeki Cadı Ayini tablosunda çamur rengi, çarpık ve histerik bir kalabalığın karşısına dikilen devasa siyah keçi silueti, Goya'nın cehalet ve batıl inançlara duyduğu tiksintinin son ve en karanlık ifadesidir. Bu boğucu inziva dönemi, Fransız ordularının mutlak monarşiyi geri getirmek için İspanya'ya girmesiyle Goya'yı dehşet içinde sürgüne zorlayana kadar devam edecektir."
+     ],
+     "eserler": [
+      {
+       "qid": "Q1150997",
+       "bag": "Yemek odasının duvarına çizdiği bu eser, şiddetli fırça darbeleriyle dünyanın deliliğini ve iktidarın yok edici doğasını kanlı bir şekilde anlatır."
+      },
+      {
+       "qid": "Q500936",
+       "bag": "Koca bir duvarı kaplayan boşluk ve bataklığa gömülen köpek figürü, Goya'nın inziva dönemindeki varoluşsal korkusunu yansıtır."
+      },
+      {
+       "qid": "Q2528477",
+       "bag": "Çamur rengi bir kalabalığın ortasındaki devasa siyah keçi, ressamın cehalet ve batıl inançlara duyduğu derin tiksintinin bir dışavurumudur."
+      }
+     ]
+    },
+    {
+     "baslik": "Sürgünde Bulunan Işık",
+     "yillar": "1824-1828",
+     "paragraflar": [
+      "Siyasi baskılar dayanılmaz hale gelince, yaşlı, sağır ve bedenen zayıf düşmüş Goya çareyi Fransa'nın Bordeaux şehrine kaçmakta buldu. Etrafı kendi gibi vatanından koparılmış İspanyol sürgünlerle çevriliydi. Gözleri artık zor görüyordu, bedeni tükenmişti ama o pes etmek yerine yepyeni bir mecra olan taş baskı tekniğini, yani litografiyi büyük bir hevesle denemeye başladı. Ve burada, hayatının son demlerinde, sanatı mucizevi bir şekilde yeniden yumuşadı. Yıllardır ruhunu ezen, evinin duvarlarını kaplayan o boğucu siyahlar aniden ortadan kayboldu. Yerini yeniden ışığa, huzura ve yaşama sevincine bıraktı. Sürgündeki bu yaşlı ve yorgun adam, karanlığın en dibinden çıkarak aydınlığı yeniden keşfetti.",
+      "Bu çarpıcı değişimi Bordeaux'lu Sütçü Kız tablosunda bütün berraklığıyla görebilirsin. Goya'nın fırça darbeleri artık öfkeli veya saldırgan değil, son derece hafif, titrek ve neredeyse on yıllar sonra gelecek olan izlenimcilik akımını müjdeler niteliktedir. Mavi, pembe ve yumuşak yeşil tonlarıyla sarmalanan genç figür, geçmiş yılların savaşını ve dehşetini silip atan dingin, ruhani bir atmosfer yaratır. Goya boyayı tuvale sert darbelerle değil, noktalar halinde, tüy gibi narin dokunuşlarla bırakmıştır. Işık, genç kadının yüzünde şefkatle parlar. Goya, onca acının, kanın ve karanlığın ardından hayata veda etmeden önce, direncin ve nostaljinin aydınlık yüzünü bulmuştu. O, karanlığın kalbine inmiş ama ışığı bularak gözlerini yummuş direngen bir ressamdı."
+     ],
+     "eserler": [
+      {
+       "qid": "Q2088930",
+       "bag": "Sürgün yıllarında siyahların yerini yeniden ışığa bıraktığı, izlenimciliği müjdeleyen narin fırça darbeleriyle yapılmış dingin bir veda eseridir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Emre, Goya'ya bakarken sadece yetenekli bir ressamı değil, koca bir çağın kanayan vicdanını izlersin. Doğayı, Velázquez'i ve Rembrandt'ı ustası kabul eden bu inatçı adam, klasik kuralların o katı, süslü ve yapay dünyasını eserleriyle paramparça etti. Sadece güzelliği ve kahramanlığı resmetmenin yetmediğini, sanatın insanın içindeki karanlığı, korkuyu ve şiddeti de aynı dürüstlükle, hiç sakınmadan göstermesi gerektiğini tüm dünyaya kanıtladı. Saray ressamı olarak başladığı ihtişamlı hayatını, kendi evinin duvarlarına kabuslar kazıyan yalnız bir sürgün olarak tamamladı. O, karanlığın ne kadar derinleşebileceğini gösterirken sanatın ifade sınırlarını modern çağa doğru sonsuza dek genişletti.",
+    "Bugün Goya'yı anlarken onu ne aklını yitirmiş bir deli ne de ateşli, krallığa düşman bir devrimci olarak görmeliyiz. O, etrafındaki dünya çıldırırken aklını korumaya çalışan, gördüğü dehşeti fırçasıyla tarihe kazıyan son derece rasyonel ve uyanık bir gözlemciydi. Sarayın imkanlarından faydalanan, emekliliğini korumaya çalışan pragmatik bir adamdı ama tuvalin başında sadece acımasız gerçeğe sadıktı. Işığın peşinden gidip karanlığın kalbine inen Goya, kendi acısından modern sanatın temellerini attı. Onun açtığı bu tekinsiz yoldan ilerleyen nice sanatçı, insanın karanlık doğasıyla yüzleşme cesaretini ilk kez onun kanlı, çamurlu ve dürüst tablolarında buldu."
+   ],
+   "baglantilar": [
+    {
+     "sanatci": "Diego Velázquez",
+     "iliski": "Goya'nın en büyük ustalarından biridir, saray portrelerinde onun mekansal derinlik oyunlarını kendi eserlerine taşımıştır.",
+     "id": "diego-velazquez"
+    },
+    {
+     "sanatci": "Rembrandt van Rijn",
+     "iliski": "Goya'nın gravür tekniğindeki ustalığının ve karanlığın içinden çıkan dramatik ışık kullanımının başlıca ilham kaynağıdır.",
+     "id": "rembrandt-van-rijn"
+    },
+    {
+     "sanatci": "Jacques-Louis David",
+     "iliski": "Goya ile aynı dönemde yaşamış ancak onun kuralcı kahramanlık üslubuna karşılık Goya duygusal ve çiğ bir ifade biçimi geliştirerek Neoklasizmi yıkmıştır.",
+     "id": "jacques-louis-david"
+    },
+    {
+     "sanatci": "Édouard Manet",
+     "iliski": "Goya'nın kurşuna dizilme sahnesini kendi eserinde doğrudan örnek alarak kompozisyon yapısını birebir kopyalamıştır.",
+     "id": "edouard-manet"
+    },
+    {
+     "sanatci": "Pablo Picasso",
+     "iliski": "Savaşın yıkımını anlattığı başyapıtında Goya'nın savaş sahnelerinden derinden etkilenmiş ve onun boğa güreşi temalarını yeniden yorumlamıştır.",
+     "id": "pablo-picasso"
+    },
+    {
+     "sanatci": "Salvador Dalí",
+     "iliski": "Goya'nın toplumsal hiciv barındıran baskılarına o kadar hayran kalmıştır ki bu seriyi kendi sürrealist dünyasına uyarlamıştır.",
+     "id": "salvador-dali"
+    },
+    {
+     "sanatci": "Francis Bacon",
+     "iliski": "Goya'nın duvar resimlerindeki varoluşsal korkuyu saplantı haline getirmiş, stüdyosunda Goya'nın karanlık figürlerinin röprodüksiyonlarını saklayarak kendi izole figürlerini yaratmıştır.",
+     "id": "francis-bacon"
+    },
+    {
+     "sanatci": "J. M. W. Turner",
+     "iliski": "Goya ile hiç tanışmamış olsalar da dışavurumcu ve çalkantılı doğa tasvirleriyle Goya'nın karanlık dönemi arasında güçlü bir ruhsal akrabalık bulunur.",
+     "id": "j-m-w-turner"
+    }
+   ],
+   "kelime": 1801,
+   "kaynaklar": [
+    {
+     "baslik": "everettdwilson.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUeHhB-s1bj1OMUpqFxrgFXtXAvEzy_mg2-RF3koZ5GaDGfsNB3XLHdyO0jrmigPqAxsT_0A4Oum-eQjDVoy4QyoXuSYqD8oXjBvcXhIOdFszCCMTNlLGzUv8lhRzA20OAfgBpWQdW39X6A85g39vXpvqLvWT1XgsGwil14XkmZuX6IwiyYdZKwhb-WvrwIQOprESa8d1NzMtohroHlqmRDtvT8yroJP7HXBeadk70"
+    },
+    {
+     "baslik": "a-r-t.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYkGcMb7SOcF3zWLfmHH89JmqHUK0i_k2x0uXm4POKlvhY1supVJP9iNNwi8TZXZGeHHchn6C87r29QOqtJXILdCeBZK-6_25WBW4XRAcydSxEVxGSFg=="
+    },
+    {
+     "baslik": "britannica.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEiNNqk2ALyMiE4JuNKrsJ9QZSooXVnmJBR6cS0cnfKqkPoZCeUSPcjmYk0ARAnJjl6fzK0IA8qAuvDbC4mmvHioplV0wcpXFdCT3wLJyKMTcBL2zhL8HvOJ11X_gM3bGRNpDDxA=="
+    },
+    {
+     "baslik": "wikipedia.org",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jGOMkiVRp4MtACndBS--p6uGBAVHLX2rJf2-PHYvNZnZID57SRfEzVpgwzhniAmsmluofPZo4igMcTFkLH28cL4NcMyi0A-Lv2_v95Q0I2B7IIeIyqnLReCoUMDQ9Fg4T_eUrRP9EAqTYA=="
+    },
+    {
+     "baslik": "thehistoryblog.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1G6QP5Flz0R0cIqsXbz_D2YqHhKnZSQo9iC1uAYrPOpHPwA7UwWwu2ReVxgJCoLumJWVQeKtO8PnKL0m8R0yj_lFpThYYUoyfQXV0SyjL2RoZva0tVyCKsNKOhgpSGjZTog=="
+    },
+    {
+     "baslik": "fundaciongoyaenaragon.es",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqkpCWBKwWSJ3kfRv2KNHropOvOOcoiVNrHF6GCpVvCPZOQo9wc-pP2H_OTQApmeDRgMenfz91j11TuOH2yE_8sghx2aLrzpveYgQI2h8tdRIVwqTdEPI-1nVAfWCN0Wzm821wtqiSiCBmd6NKv8HhF2j3"
+    },
+    {
+     "baslik": "the-artinspector.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Zyv9s3nAcLiTkdd6H5pyk-qwSziThOqLRKsDrNya680n9puvAYsBCNYkQRZ7FsiG_EgmfevmPmLfhrs65bV9IcJbIY0dg3_hO9SVBbl5rG_M-RMQxX5iNw7ZAzmRMT24DidEBcBIVpJjgtETaSS_N2v0LcZrsqlDKqFHKz1x"
+    },
+    {
+     "baslik": "latimes.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENyR7kQjG9g_HSy847o011EhJSeIpz6X8aj_yHFxryc_qOZbboSRztp0oNbVv8q7DB85el3LEMMc6xOuiwmro-S1x_KH1fqOgqYBHuLx6TkuccVFzXvX7Dyvm4Rf402HHpQqt2wL3O6_gbAsO9HGWKhvhH7fNxeaeXWhb_V811RcA="
+    },
+    {
+     "baslik": "beardedroman.com",
+     "adres": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGA-wGQswTGzCeR7m5sVQx8fYxAd7pJcm8_IQ9-q-Q_nIdH-Bry-wt1XweUkeJnyocr36UAjao1CEEKwaihlFjSS1TRgXr842hAa1g6_qOfMyE39SjPFGe5Do_zkKDhakK4xYdXJU7qrEB70H_pj0rU-tQMSnp3nQ=="
+    }
+   ],
+   "model": "gemini-3.1-pro-preview-customtools",
+   "denetci": "gemini-3.1-pro-preview-customtools",
+   "duzeltilen": 1,
+   "olusturma": "2026-11-26"
+  }
+ }
+}
