@@ -204,6 +204,19 @@ Yalnız bir adım için: `--yalniz aic`, `--yalniz smk,commons`. Yarıda kalırs
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
 
+## Sesli rehberin sesi (Gemini)
+
+Uygulamadaki "Dinleyerek bak" anlatımları iPhone'un sesiyle robotik kaldığı için (Azure'un Türkçe sesleri de yapay bulundu) Gemini 3.8 Flash TTS'in **Fola** sesiyle bir kez kaydedilir ve R2'ye konur: `scripts/ses_uret.py` (ffmpeg gerekir). Rehberli eserlerin bütün parçaları yaklaşık 425 bin karakter (~10 saat ses); Gemini API ücretli, AI Studio → Spend'den aylık sınır koy.
+
+```bash
+export GEMINI_API_KEY=...               # AI Studio → API Keys
+python3 scripts/ses_uret.py --dene      # 3 eser, birkaç parça: ses_deneme/Fola/
+python3 scripts/ses_uret.py             # hepsi: ses/Fola/ ve data/ses_dizini.json
+python3 scripts/ses_uret.py --yukle     # R2'ye (yukarıdaki R2_* değişkenleriyle)
+```
+
+Uygulamanın okuduğu metinle dosya arasındaki sözleşme (anahtar = metnin sha1'i) betiğin başında yazılı.
+
 ## Son değişiklikler (5 Kasım 2026, sürüm 1.68–1.71)
 
 Ayrıntılar KARARLAR.md'de (İş 135–151).
