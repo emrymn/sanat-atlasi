@@ -118,9 +118,13 @@ def parcalar(yalniz=None):
     return eserler
 
 
-def okut(metin, ses, deneme=5):
-    """Gemini TTS: PCM (audio/L16;rate=24000) → (MP3 baytları, süre sn)."""
-    govde = {'contents': [{'role': 'user', 'parts': [{'text': STIL + metin}]}],
+class GunlukKota(Exception):
+    """Modelin günlük istek sınırı doldu (Tier 1'de günde 100 istek); yarın kaldığı yerden sürer."""
+
+
+def okut_pcm(metin, ses, stil=None, deneme=5):
+    """Gemini TTS → (PCM baytları, örnek hızı, bit)."""
+    govde = {'contents': [{'role': 'user', 'parts': [{'text': (stil or STIL) + metin}]}],
              'generationConfig': {'temperature': SICAKLIK, 'responseModalities': ['AUDIO'],
                                   'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': ses}}}}}
     istek = urllib.request.Request(
@@ -139,10 +143,12 @@ def okut(metin, ses, deneme=5):
                 cevap = json.loads(y.read())
             break
         except urllib.error.HTTPError as h:
+            yazi = h.read()[:600].decode('utf-8', 'replace')
+            if h.code == 429 and 'per_day' in yazi.replace('PerDay', 'per_day'):
+                raise GunlukKota(yazi)
             if h.code in (429, 500, 502, 503) and i < deneme - 1:
                 time.sleep(2 ** i * 5)
                 continue
-            yazi = h.read()[:400].decode('utf-8', 'replace')
             if h.code in (401, 403):
                 sys.exit(f'Gemini {h.code}: anahtar yok ya da yanlış (GEMINI_API_KEY ya da ortamın ağ sırrı). {yazi}')
             raise SystemExit(f'Gemini {h.code}: {yazi}')
@@ -162,11 +168,77 @@ def okut(metin, ses, deneme=5):
         raise SystemExit(f'Gemini ses döndürmedi: {json.dumps(cevap, ensure_ascii=False)[:400]}')
     hiz = int(m.group(1)) if (m := re.search(r'rate=(\d+)', tur)) else 24000
     bit = int(m.group(1)) if (m := re.search(r'L(\d+)', tur)) else 16
+    return bytes(pcm), hiz, bit
+
+
+def mp3e(pcm, hiz, bit):
+    """PCM → (MP3 baytları, süre sn)."""
     sure = round(len(pcm) / (hiz * bit // 8), 3)
     mp3 = subprocess.run(['ffmpeg', '-loglevel', 'error', '-f', f's{bit}le', '-ar', str(hiz), '-ac', '1',
                           '-i', 'pipe:0', '-codec:a', 'libmp3lame', '-b:a', '64k', '-f', 'mp3', 'pipe:1'],
-                         input=bytes(pcm), capture_output=True, check=True).stdout
+                         input=pcm, capture_output=True, check=True).stdout
     return mp3, sure
+
+
+def okut(metin, ses):
+    return mp3e(*okut_pcm(metin, ses))
+
+
+# Bir istekte birden çok parça: Tier 1'de model başına günde 100 istek var (2.446 parça 25 gün sürerdi). Parçalar
+# paragraf paragraf tek istekte okutulur, araya uzun duraklama istenir; ses en uzun sessizliklerden bölünür. Bölünen
+# parçaların süresi harf sayısıyla orantılı değilse (model duraklamayı atladıysa) grup tek tek okutulur.
+GRUP_KARAKTER = 2400
+GRUP_PARCA = 8
+GRUP_STIL = STIL.replace('## Transcript:', 'Her paragraf bittiğinde iki saniye tamamen sessiz kal, sonra '
+                         'sonraki paragrafa geç. Paragraf numarası ya da başka bir şey okuma.\n\n## Transcript:')
+
+
+def sessizlikler(pcm, hiz, bit):
+    """ffmpeg silencedetect: [(başlangıç, bitiş), ...] sn."""
+    r = subprocess.run(['ffmpeg', '-hide_banner', '-f', f's{bit}le', '-ar', str(hiz), '-ac', '1', '-i', 'pipe:0',
+                        '-af', 'silencedetect=noise=-38dB:d=0.55', '-f', 'null', '-'],
+                       input=pcm, capture_output=True)
+    hata = r.stderr.decode('utf-8', 'replace')
+    bas = [float(x) for x in re.findall(r'silence_start: ([\d.]+)', hata)]
+    son = [float(x) for x in re.findall(r'silence_end: ([\d.]+)', hata)]
+    return list(zip(bas, son))
+
+
+def grubu_bol(metinler, pcm, hiz, bit):
+    """Grubun sesini parçalara böler; olmazsa None."""
+    n = len(metinler)
+    if n == 1:
+        return [pcm]
+    ornek = hiz * bit // 8
+    toplam = len(pcm) / ornek
+    aday = [(e - b, b, e) for b, e in sessizlikler(pcm, hiz, bit) if b > 0.3 and e < toplam - 0.3]
+    if len(aday) < n - 1:
+        return None
+    secilen = sorted(sorted(aday, reverse=True)[:n - 1], key=lambda x: x[1])
+    kesim = [0.0] + [(b + e) / 2 for _, b, e in secilen] + [toplam]
+    sureler = [kesim[i + 1] - kesim[i] for i in range(n)]
+    oran = toplam / sum(len(m) for m in metinler)
+    for m, s in zip(metinler, sureler):
+        beklenen = len(m) * oran
+        if not (0.6 * beklenen <= s <= 1.6 * beklenen):
+            return None
+    parcalar = []
+    for i in range(n):
+        a, b = int(kesim[i] * hiz) * (bit // 8), int(kesim[i + 1] * hiz) * (bit // 8)
+        parcalar.append(pcm[a:b])
+    return parcalar
+
+
+def gruplar(metinler):
+    grup, uzun = [], 0
+    for m in metinler:
+        if grup and (uzun + len(m) > GRUP_KARAKTER or len(grup) >= GRUP_PARCA):
+            yield grup
+            grup, uzun = [], 0
+        grup.append(m)
+        uzun += len(m)
+    if grup:
+        yield grup
 
 
 def kelime_zamanlari(metin, sure):
@@ -192,28 +264,60 @@ def kelime_zamanlari(metin, sure):
     return sonuc
 
 
-def uret(eserler, ses, cikti, en_cok):
+def uret(eserler, ses, cikti, en_cok, tek=False):
+    """Eksik parçaları okutur. Dönüş: (dizin, karakter, yeni parça, bitti mi)."""
     cikti.mkdir(parents=True, exist_ok=True)
-    harcanan, yeni, dizin = 0, 0, {}
-    for k, liste in eserler.items():
-        for metin in liste:
-            a = anahtar(metin)
-            mp3, js = cikti / f'{a}.mp3', cikti / f'{a}.json'
-            if mp3.exists() and js.exists():
-                dizin[a] = json.loads(js.read_text(encoding='utf-8'))['sure']
-                continue
-            if harcanan + len(metin) > en_cok:
-                print(f'Bütçe doldu ({harcanan} karakter); kalanlar sonraki çalıştırmada.')
-                return dizin, harcanan, yeni, False
-            veri, sure = okut(metin, ses)
-            mp3.write_bytes(veri)
-            js.write_text(json.dumps({'metin': metin, 'model': MODEL, 'ses': ses, 'sure': sure, 'tahmini': True,
-                                      'kelimeler': kelime_zamanlari(metin, sure)}, ensure_ascii=False),
-                          encoding='utf-8')
-            dizin[a] = sure
-            harcanan += len(metin)
-            yeni += 1
-            print(f'  {k} · {a} · {sure:.1f} sn · {metin[:50]}…')
+    harcanan, yeni, istek, dizin = 0, 0, 0, {}
+
+    def yaz(k, metin, pcm, hiz, bit):
+        nonlocal yeni
+        veri, sure = mp3e(pcm, hiz, bit)
+        a = anahtar(metin)
+        (cikti / f'{a}.mp3').write_bytes(veri)
+        (cikti / f'{a}.json').write_text(json.dumps(
+            {'metin': metin, 'model': MODEL, 'ses': ses, 'sure': sure, 'tahmini': True,
+             'kelimeler': kelime_zamanlari(metin, sure)}, ensure_ascii=False), encoding='utf-8')
+        dizin[a] = sure
+        yeni += 1
+        print(f'  {k} · {a} · {sure:.1f} sn · {metin[:50]}…')
+
+    try:
+        for k, liste in eserler.items():
+            eksik = []
+            for metin in liste:
+                js = cikti / f'{anahtar(metin)}.json'
+                if js.exists() and (cikti / f'{anahtar(metin)}.mp3').exists():
+                    dizin[anahtar(metin)] = json.loads(js.read_text(encoding='utf-8'))['sure']
+                elif metin not in eksik:
+                    eksik.append(metin)
+            for grup in ([[m] for m in eksik] if tek else gruplar(eksik)):
+                uzun = sum(len(m) for m in grup)
+                if harcanan + uzun > en_cok:
+                    print(f'Bütçe doldu ({harcanan} karakter); kalanlar sonraki çalıştırmada.')
+                    return dizin, harcanan, yeni, False
+                if len(grup) == 1:
+                    pcm, hiz, bit = okut_pcm(grup[0], ses)
+                    istek += 1
+                    yaz(k, grup[0], pcm, hiz, bit)
+                else:
+                    pcm, hiz, bit = okut_pcm('\n\n'.join(grup), ses, stil=GRUP_STIL)
+                    istek += 1
+                    bolunmus = grubu_bol(grup, pcm, hiz, bit)
+                    if bolunmus is None:
+                        print(f'  {k}: {len(grup)} parçalık grup bölünemedi; tek tek okutuluyor.')
+                        for m in grup:
+                            p, h, b = okut_pcm(m, ses)
+                            istek += 1
+                            yaz(k, m, p, h, b)
+                    else:
+                        for m, p in zip(grup, bolunmus):
+                            yaz(k, m, p, hiz, bit)
+                harcanan += uzun
+    except GunlukKota:
+        print(f'Günlük istek sınırı doldu ({istek} istek bu çalıştırmada). Yarın aynı komutu çalıştır; '
+              'kaldığı yerden sürer.')
+        return dizin, harcanan, yeni, False
+    print(f'{istek} istek.')
     return dizin, harcanan, yeni, True
 
 
@@ -254,6 +358,7 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--tek', action='store_true', help='parçaları gruplamadan tek tek okut (istek sayısı artar)')
     ap.add_argument('--en-cok', type=int, default=450_000, help='bu çalıştırmada en çok kaç karakter okutulsun')
     g = ap.parse_args()
 
@@ -280,7 +385,7 @@ def main():
     if g.yukle:
         yukle(g.ses, cikti)
         return
-    dizin, harcanan, yeni, bitti = uret(eserler, g.ses, cikti, g.en_cok)
+    dizin, harcanan, yeni, bitti = uret(eserler, g.ses, cikti, g.en_cok, tek=g.tek)
     yol = KOK / 'data' / 'ses_dizini.json'
     eski = json.loads(yol.read_text(encoding='utf-8')) if yol.exists() else {}
     if eski.get('ses') == g.ses and eski.get('model') == MODEL:
