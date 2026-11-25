@@ -36,6 +36,7 @@ Kullanım (depo kökünde; ffmpeg gerekir):
 """
 import argparse
 import base64
+import struct
 import hashlib
 import json
 import os
@@ -187,8 +188,51 @@ def okut_pcm(metin, ses, stil=None, deneme=5):
     return sonuc
 
 
+# Gemini bazı seslerin sonuna ~0,2 sn'lik bir cızırtı ekliyor (Emre duydu; 9abdb6756659350b'de 19,72 sn'den sonra
+# sessizliğin ardından yüksek, sıfır geçişi çok sık bir patlama). Kırpılır, ses kısa bir sönümle biter.
+def temizle_pcm(pcm, hiz, bit=16):
+    """Sondaki gürültü patlamasını atar ve kısa bir sönümle bitirir. Dönüş: (pcm, kırpıldı mı).
+    Gürültü: son sessizlikten (≥80 ms) sonra gelen, en çok 0,5 sn süren, sesli karelerinde ortalama sıfır geçişi
+    yüksek (>0,22; konuşmada ~0,05–0,15) kısa ses."""
+    n = len(pcm) // 2
+    s = list(struct.unpack('<%dh' % n, pcm[:n * 2]))
+    c = int(0.01 * hiz)
+    kare = []
+    bas = max(0, n - int(0.9 * hiz))  # yalnız son 0,9 sn incelenir
+    bas -= bas % c
+    for i in range(bas, n - c + 1, c):
+        seg = s[i:i + c]
+        kare.append(((sum(x * x for x in seg) / c) ** 0.5,
+                     sum(1 for a, b in zip(seg, seg[1:]) if (a < 0) != (b < 0)) / c))
+    # sondan en çok 0,6 sn geride, en az 80 ms süren son sessizlik: [k, j)
+    j = k = None
+    i = len(kare)
+    while i > 0 and len(kare) - i <= 60:
+        if kare[i - 1][0] < 250:
+            e = i
+            while i > 0 and kare[i - 1][0] < 250:
+                i -= 1
+            if e - i >= 8:
+                k, j = i, e
+                break
+        else:
+            i -= 1
+    kuyruk = kare[j:] if j is not None else []
+    kirp = None
+    sesli = [z for r, z in kuyruk if r >= 500]
+    if kuyruk and len(kuyruk) <= 50 and sesli and sum(sesli) / len(sesli) > 0.22:
+        kirp = bas + (k + min(j - k, 15)) * c
+        s = s[:kirp]
+    f = min(len(s), int(0.04 * hiz))
+    for i in range(f):
+        s[len(s) - f + i] = int(s[len(s) - f + i] * (1 - (i + 1) / f))
+    return struct.pack('<%dh' % len(s), *s), kirp is not None
+
+
 def mp3e(pcm, hiz, bit):
-    """PCM → (MP3 baytları, süre sn)."""
+    """PCM → (MP3 baytları, süre sn); sondaki cızırtı atılır."""
+    if bit == 16:
+        pcm, _ = temizle_pcm(pcm, hiz, bit)
     sure = round(len(pcm) / (hiz * bit // 8), 3)
     mp3 = subprocess.run(['ffmpeg', '-loglevel', 'error', '-f', f's{bit}le', '-ar', str(hiz), '-ac', '1',
                           '-i', 'pipe:0', '-codec:a', 'libmp3lame', '-b:a', '64k', '-f', 'mp3', 'pipe:1'],
@@ -496,6 +540,31 @@ def denetle(cikti, sil=False):
     return kotu
 
 
+def duzelt(ses, cikti):
+    """Üretilmiş MP3'lerin sonundaki cızırtıyı kırpar (Gemini'ye istek yok); değişenler _duzeltilen.json'a yazılır,
+    --yukle onları kovada olsa da yeniden yükler."""
+    liste_yolu = cikti / '_duzeltilen.json'
+    degisen = set(json.loads(liste_yolu.read_text(encoding='utf-8'))) if liste_yolu.exists() else set()
+    dosyalar = sorted(f for f in cikti.glob('*.mp3'))
+    for i, f in enumerate(dosyalar, 1):
+        pcm = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', str(f), '-f', 's16le', '-ac', '1', '-ar', '24000',
+                              'pipe:1'], capture_output=True, check=True).stdout
+        _, kirpildi = temizle_pcm(pcm, 24000)
+        if kirpildi:
+            veri, sure = mp3e(pcm, 24000, 16)
+            f.write_bytes(veri)
+            js = f.with_suffix('.json')
+            d = json.loads(js.read_text(encoding='utf-8'))
+            d['sure'] = sure
+            d['kelimeler'] = kelime_zamanlari(d['metin'], sure)
+            js.write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8')
+            degisen.update({f.name, js.name})
+        if i % 200 == 0 or i == len(dosyalar):
+            print(f'  {i} / {len(dosyalar)} · cızırtısı kırpılan {len(degisen) // 2}')
+    liste_yolu.write_text(json.dumps(sorted(degisen)), encoding='utf-8')
+    return degisen
+
+
 def yukle(ses, kaynak):
     try:
         import boto3
@@ -514,8 +583,10 @@ def yukle(ses, kaynak):
     var = set()
     for sayfa in s3.get_paginator('list_objects_v2').paginate(Bucket=kova, Prefix=f'ses/{ses}/'):
         var.update(o['Key'] for o in sayfa.get('Contents', []))
+    liste_yolu = kaynak / '_duzeltilen.json'
+    yeniden = set(json.loads(liste_yolu.read_text(encoding='utf-8'))) if liste_yolu.exists() else set()
     isler = [f for f in sorted(kaynak.iterdir())
-             if not f.name.startswith('_') and f'ses/{ses}/{f.name}' not in var]
+             if not f.name.startswith('_') and (f'ses/{ses}/{f.name}' not in var or f.name in yeniden)]
     print(f'R2: {len(var)} dosya zaten kovada, {len(isler)} dosya yüklenecek (16 paralel).')
 
     def gonder(f):
@@ -532,6 +603,8 @@ def yukle(ses, kaynak):
             if n % 200 == 0 or n == len(isler):
                 print(f'  {n} / {len(isler)}')
     print(f'R2: {n} dosya yüklendi (kova {kova}, ses/{ses}/).')
+    if liste_yolu.exists():
+        liste_yolu.unlink()
 
 
 def main():
@@ -541,6 +614,8 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--duzelt', action='store_true',
+                    help='üretilmiş seslerin sonundaki cızırtıyı kırp (istek yok); sonra --yukle')
     ap.add_argument('--denetle', action='store_true',
                     help='süresi metnine göre aykırı parçaları bul ve sil (sonra --toplu --tek)')
     ap.add_argument('--toplu', action='store_true',
@@ -569,6 +644,9 @@ def main():
     if g.say:
         return
     cikti = KOK / 'ses' / g.ses
+    if g.duzelt:
+        duzelt(g.ses, cikti)
+        g.toplu = True  # dizini yeniden yaz (eksik parça yoksa istek gitmez)
     if g.denetle:
         denetle(cikti, sil=True)
         return
