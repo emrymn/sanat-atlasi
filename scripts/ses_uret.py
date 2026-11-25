@@ -31,6 +31,7 @@ Kullanım (depo kökünde; ffmpeg gerekir):
   python3 scripts/ses_uret.py --dene                 # 3 eser, birkaç parça: ses_deneme/<ses>/ (yüklemez)
   python3 scripts/ses_uret.py                        # rehberi olan bütün eserler: ses/<ses>/ ve data/ses_dizini.json
   python3 scripts/ses_uret.py --yukle                # üretileni R2'ye yükler (r2_yukle.py'nin ortam değişkenleri)
+  python3 scripts/ses_uret.py --toplu               # Batch API: günlük sınır yok, yarı fiyat; bitene kadar bekler
   python3 scripts/ses_uret.py --say                  # yalnız parça ve karakter sayısı (istek göndermez)
 """
 import argparse
@@ -122,20 +123,45 @@ class GunlukKota(Exception):
     """Modelin günlük istek sınırı doldu (Tier 1'de günde 100 istek); yarın kaldığı yerden sürer."""
 
 
+def api_anahtari():
+    # Yapıştırırken araya giren görünmez satır ayırıcıları (U+2028 vb.) ve boşluklar atılır
+    k = re.sub(r'\s', '', os.environ.get('GEMINI_API_KEY', ''))
+    if k and not k.isascii():
+        sys.exit('GEMINI_API_KEY\'de ASCII olmayan bir karakter var; anahtarı AI Studio\'dan yeniden kopyala.')
+    return k
+
+
+def istek_govdesi(metin, ses, stil=None):
+    return {'contents': [{'role': 'user', 'parts': [{'text': (stil or STIL) + metin}]}],
+            'generationConfig': {'temperature': SICAKLIK, 'responseModalities': ['AUDIO'],
+                                 'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': ses}}}}}
+
+
+def cevaptan_pcm(cevap):
+    """GenerateContentResponse → (PCM, hız, bit) ya da None."""
+    pcm, tur = bytearray(), ''
+    for aday in cevap.get('candidates', []):
+        for p in aday.get('content', {}).get('parts', []):
+            v = p.get('inlineData') or p.get('inline_data')
+            if v and v.get('data'):
+                pcm += base64.b64decode(v['data'])
+                tur = v.get('mimeType') or v.get('mime_type') or tur
+    if not pcm:
+        return None
+    hiz = int(m.group(1)) if (m := re.search(r'rate=(\d+)', tur)) else 24000
+    bit = int(m.group(1)) if (m := re.search(r'L(\d+)', tur)) else 16
+    return bytes(pcm), hiz, bit
+
+
 def okut_pcm(metin, ses, stil=None, deneme=5):
     """Gemini TTS → (PCM baytları, örnek hızı, bit)."""
-    govde = {'contents': [{'role': 'user', 'parts': [{'text': (stil or STIL) + metin}]}],
-             'generationConfig': {'temperature': SICAKLIK, 'responseModalities': ['AUDIO'],
-                                  'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': ses}}}}}
+    govde = istek_govdesi(metin, ses, stil)
     istek = urllib.request.Request(
         f'https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent',
         data=json.dumps(govde).encode('utf-8'), method='POST',
         headers={'Content-Type': 'application/json', 'User-Agent': 'SanatAtlasi-ses'})
-    # Yapıştırırken araya giren görünmez satır ayırıcıları (U+2028 vb.) ve boşluklar atılır
-    k = re.sub(r'\s', '', os.environ.get('GEMINI_API_KEY', ''))
+    k = api_anahtari()
     if k:
-        if not k.isascii():
-            sys.exit('GEMINI_API_KEY\'de ASCII olmayan bir karakter var; anahtarı AI Studio\'dan yeniden kopyala.')
         istek.add_header('x-goog-api-key', k)
     for i in range(deneme):
         try:
@@ -157,18 +183,10 @@ def okut_pcm(metin, ses, stil=None, deneme=5):
                 time.sleep(2 ** i * 5)
                 continue
             raise SystemExit(f'Gemini\'ye ulaşılamadı: {h}')
-    pcm, tur = bytearray(), ''
-    for aday in cevap.get('candidates', []):
-        for p in aday.get('content', {}).get('parts', []):
-            v = p.get('inlineData') or p.get('inline_data')
-            if v and v.get('data'):
-                pcm += base64.b64decode(v['data'])
-                tur = v.get('mimeType') or v.get('mime_type') or tur
-    if not pcm:
+    sonuc = cevaptan_pcm(cevap)
+    if sonuc is None:
         raise SystemExit(f'Gemini ses döndürmedi: {json.dumps(cevap, ensure_ascii=False)[:400]}')
-    hiz = int(m.group(1)) if (m := re.search(r'rate=(\d+)', tur)) else 24000
-    bit = int(m.group(1)) if (m := re.search(r'L(\d+)', tur)) else 16
-    return bytes(pcm), hiz, bit
+    return sonuc
 
 
 def mp3e(pcm, hiz, bit):
@@ -264,6 +282,17 @@ def kelime_zamanlari(metin, sure):
     return sonuc
 
 
+def parcayi_yaz(cikti, ses, k, metin, pcm, hiz, bit):
+    veri, sure = mp3e(pcm, hiz, bit)
+    a = anahtar(metin)
+    (cikti / f'{a}.mp3').write_bytes(veri)
+    (cikti / f'{a}.json').write_text(json.dumps(
+        {'metin': metin, 'model': MODEL, 'ses': ses, 'sure': sure, 'tahmini': True,
+         'kelimeler': kelime_zamanlari(metin, sure)}, ensure_ascii=False), encoding='utf-8')
+    print(f'  {k} · {a} · {sure:.1f} sn · {metin[:50]}…')
+    return sure
+
+
 def uret(eserler, ses, cikti, en_cok, tek=False):
     """Eksik parçaları okutur. Dönüş: (dizin, karakter, yeni parça, bitti mi)."""
     cikti.mkdir(parents=True, exist_ok=True)
@@ -271,15 +300,8 @@ def uret(eserler, ses, cikti, en_cok, tek=False):
 
     def yaz(k, metin, pcm, hiz, bit):
         nonlocal yeni
-        veri, sure = mp3e(pcm, hiz, bit)
-        a = anahtar(metin)
-        (cikti / f'{a}.mp3').write_bytes(veri)
-        (cikti / f'{a}.json').write_text(json.dumps(
-            {'metin': metin, 'model': MODEL, 'ses': ses, 'sure': sure, 'tahmini': True,
-             'kelimeler': kelime_zamanlari(metin, sure)}, ensure_ascii=False), encoding='utf-8')
-        dizin[a] = sure
+        dizin[anahtar(metin)] = parcayi_yaz(cikti, ses, k, metin, pcm, hiz, bit)
         yeni += 1
-        print(f'  {k} · {a} · {sure:.1f} sn · {metin[:50]}…')
 
     try:
         for k, liste in eserler.items():
@@ -321,6 +343,137 @@ def uret(eserler, ses, cikti, en_cok, tek=False):
     return dizin, harcanan, yeni, True
 
 
+# Toplu iş (Batch API): günlük istek sınırına takılmaz, ücreti yarı yarıya. Tier 1'de 3.8 Flash TTS için kuyrukta en çok
+# 100 bin giriş jetonu durabilir; işler ~85 bin jetonluk dilimlerle sırayla gönderilir. Durum ses/<ses>/_toplu.json'da;
+# betik kesilirse aynı komut bekleyen işi izlemeye devam eder.
+API = 'https://generativelanguage.googleapis.com'
+TOPLU_JETON = 85_000
+
+
+def api(yol, govde=None, yontem=None, basliklar=None, ham=False):
+    veri = None if govde is None else (govde if isinstance(govde, bytes) else json.dumps(govde).encode('utf-8'))
+    istek = urllib.request.Request(yol if yol.startswith('http') else API + yol, data=veri,
+                                   method=yontem or ('POST' if veri is not None else 'GET'),
+                                   headers={'User-Agent': 'SanatAtlasi-ses', **(basliklar or {})})
+    if veri is not None and 'Content-Type' not in (basliklar or {}):
+        istek.add_header('Content-Type', 'application/json')
+    k = api_anahtari()
+    if k:
+        istek.add_header('x-goog-api-key', k)
+    for i in range(5):
+        try:
+            with urllib.request.urlopen(istek, timeout=300) as y:
+                govde = y.read()
+                return (govde, dict(y.headers)) if ham else json.loads(govde or b'{}')
+        except urllib.error.HTTPError as h:
+            yazi = h.read()[:600].decode('utf-8', 'replace')
+            if h.code in (429, 500, 502, 503) and i < 4:
+                time.sleep(2 ** i * 5)
+                continue
+            raise SystemExit(f'Gemini {h.code} ({yol}): {yazi}')
+        except urllib.error.URLError as h:
+            if i < 4:
+                time.sleep(2 ** i * 5)
+                continue
+            raise SystemExit(f'Gemini\'ye ulaşılamadı: {h}')
+
+
+def dosya_yukle(veri, ad):
+    _, bas = api('/upload/v1beta/files', {'file': {'display_name': ad}}, ham=True, basliklar={
+        'X-Goog-Upload-Protocol': 'resumable', 'X-Goog-Upload-Command': 'start',
+        'X-Goog-Upload-Header-Content-Length': str(len(veri)),
+        'X-Goog-Upload-Header-Content-Type': 'application/jsonl'})
+    adres = {k.lower(): v for k, v in bas.items()}['x-goog-upload-url']
+    cevap = api(adres, veri, basliklar={'Content-Type': 'application/jsonl', 'X-Goog-Upload-Offset': '0',
+                                        'X-Goog-Upload-Command': 'upload, finalize'})
+    return cevap['file']['name']
+
+
+def jeton_tahmini(metin):
+    return len(metin) // 3 + 60  # Türkçe ~3 harf/jeton + yönerge
+
+
+def toplu(eserler, ses, cikti):
+    cikti.mkdir(parents=True, exist_ok=True)
+    durum_yolu = cikti / '_toplu.json'
+    dizin = {}
+    while True:
+        durum = json.loads(durum_yolu.read_text(encoding='utf-8')) if durum_yolu.exists() else None
+        if durum is None:
+            # eksik parçalar → gruplar → ~85 bin jetonluk dilim
+            istekler, gruplar_ = [], {}
+            toplam = 0
+            for k, liste in eserler.items():
+                eksik = [m for m in dict.fromkeys(liste)
+                         if not ((cikti / f'{anahtar(m)}.mp3').exists() and (cikti / f'{anahtar(m)}.json').exists())]
+                for grup in ([[m] for m in eksik] if k == '_tek' else gruplar(eksik)):
+                    metin = '\n\n'.join(grup)
+                    j = jeton_tahmini(metin)
+                    if istekler and toplam + j > TOPLU_JETON:
+                        break
+                    gk = anahtar('|'.join(grup))
+                    gruplar_[gk] = {'eser': k, 'parcalar': grup}
+                    istekler.append({'key': gk, 'request': istek_govdesi(
+                        metin, ses, GRUP_STIL if len(grup) > 1 else None)})
+                    toplam += j
+                else:
+                    continue
+                break
+            if not istekler:
+                print('Toplu: eksik parça kalmadı.')
+                return dizin, True
+            jsonl = '\n'.join(json.dumps(x, ensure_ascii=False) for x in istekler).encode('utf-8')
+            dosya = dosya_yukle(jsonl, f'ses-{ses}-{int(time.time())}')
+            is_ = api(f'/v1beta/models/{MODEL}:batchGenerateContent',
+                      {'batch': {'display_name': f'ses-{ses}', 'input_config': {'file_name': dosya}}})
+            durum = {'is': is_['name'], 'gruplar': gruplar_}
+            durum_yolu.write_text(json.dumps(durum, ensure_ascii=False), encoding='utf-8')
+            print(f'Toplu iş gönderildi: {is_["name"]} · {len(istekler)} istek · '
+                  f'{sum(len(g["parcalar"]) for g in gruplar_.values())} parça · ~{toplam} jeton')
+        # izle
+        while True:
+            is_ = api(f'/v1beta/{durum["is"]}')
+            meta = is_.get('metadata', is_)
+            hal = meta.get('state', '')
+            if hal.endswith(('SUCCEEDED', 'FAILED', 'CANCELLED', 'EXPIRED')):
+                break
+            print(f'  {time.strftime("%H:%M")} · {hal or "bekliyor"} … (Ctrl+C ile çıkabilirsin; aynı komut izlemeyi sürdürür)')
+            time.sleep(60)
+        if not hal.endswith('SUCCEEDED'):
+            durum_yolu.unlink()
+            raise SystemExit(f'Toplu iş {hal}: {json.dumps(is_, ensure_ascii=False)[:600]}')
+        cikis = (meta.get('output') or is_.get('response') or {})
+        dosya = cikis.get('responsesFile') or cikis.get('responses_file')
+        if not dosya:
+            raise SystemExit(f'Toplu işin sonuç dosyası yok: {json.dumps(is_, ensure_ascii=False)[:600]}')
+        ham, _ = api(f'/download/v1beta/{dosya}:download?alt=media', ham=True)
+        tek_tek = []
+        for satir in ham.decode('utf-8').splitlines():
+            if not satir.strip():
+                continue
+            x = json.loads(satir)
+            g = durum['gruplar'].get(x.get('key'))
+            if not g:
+                continue
+            sonuc = cevaptan_pcm(x.get('response') or {})
+            if sonuc is None:
+                tek_tek.extend(g['parcalar'])
+                continue
+            pcm, hiz, bit = sonuc
+            bolunmus = grubu_bol(g['parcalar'], pcm, hiz, bit)
+            if bolunmus is None:
+                tek_tek.extend(g['parcalar'])
+                continue
+            for m, p in zip(g['parcalar'], bolunmus):
+                dizin[anahtar(m)] = parcayi_yaz(cikti, ses, g['eser'], m, p, hiz, bit)
+        durum_yolu.unlink()
+        if tek_tek:
+            print(f'  {len(tek_tek)} parça bölünemedi; sonraki toplu işte tek tek okutulacak.')
+            for liste in eserler.values():
+                liste[:] = [m for m in liste if m not in tek_tek]
+            eserler['_tek'] = list(dict.fromkeys(eserler.get('_tek', []) + tek_tek))
+
+
 def yukle(ses, kaynak):
     try:
         import boto3
@@ -341,6 +494,8 @@ def yukle(ses, kaynak):
         var.update(o['Key'] for o in sayfa.get('Contents', []))
     n = 0
     for f in sorted(kaynak.iterdir()):
+        if f.name.startswith('_'):
+            continue
         hedef = f'ses/{ses}/{f.name}'
         if hedef in var:
             continue
@@ -358,6 +513,8 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--toplu', action='store_true',
+                    help='Batch API ile (günlük sınır yok, yarı fiyat); bitene kadar gönderir ve bekler')
     ap.add_argument('--tek', action='store_true', help='parçaları gruplamadan tek tek okut (istek sayısı artar)')
     ap.add_argument('--en-cok', type=int, default=450_000, help='bu çalıştırmada en çok kaç karakter okutulsun')
     g = ap.parse_args()
@@ -385,7 +542,14 @@ def main():
     if g.yukle:
         yukle(g.ses, cikti)
         return
-    dizin, harcanan, yeni, bitti = uret(eserler, g.ses, cikti, g.en_cok, tek=g.tek)
+    if g.toplu:
+        _, bitti = toplu(eserler, g.ses, cikti)
+        dizin, harcanan, yeni = {}, 0, 0
+        for f in cikti.glob('*.json'):
+            if not f.name.startswith('_'):
+                dizin[f.stem] = json.loads(f.read_text(encoding='utf-8'))['sure']
+    else:
+        dizin, harcanan, yeni, bitti = uret(eserler, g.ses, cikti, g.en_cok, tek=g.tek)
     yol = KOK / 'data' / 'ses_dizini.json'
     eski = json.loads(yol.read_text(encoding='utf-8')) if yol.exists() else {}
     if eski.get('ses') == g.ses and eski.get('model') == MODEL:
