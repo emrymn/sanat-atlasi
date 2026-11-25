@@ -514,17 +514,23 @@ def yukle(ses, kaynak):
     var = set()
     for sayfa in s3.get_paginator('list_objects_v2').paginate(Bucket=kova, Prefix=f'ses/{ses}/'):
         var.update(o['Key'] for o in sayfa.get('Contents', []))
-    n = 0
-    for f in sorted(kaynak.iterdir()):
-        if f.name.startswith('_'):
-            continue
-        hedef = f'ses/{ses}/{f.name}'
-        if hedef in var:
-            continue
+    isler = [f for f in sorted(kaynak.iterdir())
+             if not f.name.startswith('_') and f'ses/{ses}/{f.name}' not in var]
+    print(f'R2: {len(var)} dosya zaten kovada, {len(isler)} dosya yüklenecek (16 paralel).')
+
+    def gonder(f):
         tur = 'audio/mpeg' if f.suffix == '.mp3' else 'application/json'
-        s3.upload_file(str(f), kova, hedef, ExtraArgs={'ContentType': tur,
-                                                       'CacheControl': 'public, max-age=31536000, immutable'})
-        n += 1
+        s3.upload_file(str(f), kova, f'ses/{ses}/{f.name}',
+                       ExtraArgs={'ContentType': tur, 'CacheControl': 'public, max-age=31536000, immutable'})
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    n = 0
+    with ThreadPoolExecutor(16) as havuz:
+        for gelecek in as_completed([havuz.submit(gonder, f) for f in isler]):
+            gelecek.result()
+            n += 1
+            if n % 200 == 0 or n == len(isler):
+                print(f'  {n} / {len(isler)}')
     print(f'R2: {n} dosya yüklendi (kova {kova}, ses/{ses}/).')
 
 
