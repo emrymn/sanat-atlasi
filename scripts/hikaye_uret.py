@@ -47,7 +47,7 @@ CIKTI = KOK / 'data' / 'sanatci_hikayeleri.json'
 API = 'https://generativelanguage.googleapis.com/v1beta'
 DENEME = ['caravaggio', 'artemisia-gentileschi', 'rembrandt-van-rijn', 'francisco-de-goya', 'vincent-van-gogh',
           'edvard-munch', 'edouard-manet', 'j-m-w-turner', 'michelangelo', 'gustav-klimt']
-HEDEF_KELIME = (1800, 2600)  # ~12–17 dk ses
+HEDEF_KELIME = (2200, 3000)  # ~15–20 dk ses; ilk denemede model 1400–1800'de kaldı
 
 TOPLAM = {'girdi': 0, 'cikti': 0, 'dusunce': 0, 'arama': 0, 'istek': 0}
 
@@ -107,7 +107,8 @@ def model_sec(istenen):
         ad = m['name'].split('/')[-1]
         if 'generateContent' not in m.get('supportedGenerationMethods', []):
             continue
-        if 'pro' not in ad or re.search(r'tts|image|vision|embed|live|audio|computer|robotics', ad):
+        # "-customtools" gibi özel amaçlı türevler değil, düz Pro
+        if 'pro' not in ad or re.search(r'tts|image|vision|embed|live|audio|computer|robotics|customtools|tools', ad):
             continue
         surum = tuple(int(x) for x in re.findall(r'\d+', ad.split('pro')[0])) or (0,)
         onizleme = 'preview' in ad or 'exp' in ad
@@ -270,7 +271,7 @@ YALNIZ aşağıdaki araştırma dosyasına dayan. Dosyada olmayan hiçbir olgu, 
 Nasıl yazılacak:
 - Sanatçının hayatını 4–7 döneme böl (bölümler). Her bölüm bir kırılma anıyla, çarpıcı bir sahneyle ya da somut bir ayrıntıyla açılsın; kuru biyografi değil, hikâye.
 - Her bölümde hayattaki olayın resme NASIL yansıdığını göster: o dönemin bir iki eserine "bak" dedirt; ışığa, renge, yüze, boşluğa, fırçaya dikkat çek. Eserleri bölümün "eserler" alanına qid ile koy (yalnız aşağıdaki listeden, bölüm başına 1–4), "bag" alanında o eserin bu döneme bağını bir iki cümleyle anlat. Paragraflarda eserin Türkçe adını kullan.
-- Toplam {HEDEF_KELIME[0]}–{HEDEF_KELIME[1]} kelime (giriş + bölümler + kapanış). Paragraflar 60–140 kelime.
+- UZUNLUK ÖNEMLİ: toplam EN AZ {HEDEF_KELIME[0]}, en çok {HEDEF_KELIME[1]} kelime (giriş + bölümler + kapanış); 5–7 bölüm, her bölüm 4–6 paragraf, paragraflar 70–140 kelime. Kısa kalmasın: dosyadaki ayrıntıları, alıntıları, sahneleri kullan.
 - Sesli okunacak: kısa ve orta cümleler, parantez ve dipnot yok, kısaltma yok (yy. yerine yüzyıl), yıllar yazıyla değil rakamla. Yabancı adları ilk geçtiği yerde tam yaz.
 - "giris": 1–2 paragraf, en çarpıcı anla başla. "kapanis": 1–2 paragraf, bıraktığı iz ve bugün nasıl bakmalı.
 - "baglantilar": hocalar, öğrenciler, rakipler, etkilediği ve etkilendiği sanatçılar (3–8); "sanatci" yalnız ad, "iliski" bir iki cümle, ne geçti aralarında.
@@ -279,6 +280,17 @@ Nasıl yazılacak:
 
 ESER LİSTESİ (qid: Türkçe ad / özgün ad (yıl)):
 {liste}
+
+ARAŞTIRMA DOSYASI:
+{dosya}
+"""
+
+
+def genisletme_istemi(hikaye, kelime, dosya):
+    return f"""Aşağıdaki Türkçe hikâye {kelime} kelime; en az {HEDEF_KELIME[0]} kelime olmalı. Yalnız araştırma dosyasındaki olgularla genişlet: bölümlere sahne, ayrıntı, alıntı ve eserlere bakış ekle; gerekirse dosyada yeri olan bir bölüm ekle. Var olan cümleleri, eserleri ve bağlantıları koru; dosyada olmayan bir şey ekleme. Aynı JSON yapısında döndür.
+
+HİKÂYE:
+{json.dumps(hikaye, ensure_ascii=False)}
 
 ARAŞTIRMA DOSYASI:
 {dosya}
@@ -362,7 +374,18 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
     if not yollar[1].exists():
         print('  1/4 araştırma (Google Arama ile)…', flush=True)
         digerleri = [x['ad'] for x in sanatcilar.values() if x['id'] != sid]
-        dosya, kaynaklar, aramalar = gemini(model, arastirma_istemi(s, eserler, digerleri), arama=True, sicaklik=0.4)
+        # Model bazen aramadan, kendi bildiğiyle yazıyor (Caravaggio'da 0 kaynak): kaynaksız dosya kabul edilmez
+        for deneme in range(3):
+            istem = arastirma_istemi(s, eserler, digerleri)
+            if deneme:
+                istem = ('IMPORTANT: You MUST run Google searches before writing (at least 5 queries); a dossier '
+                         'without web sources will be rejected.\n\n' + istem)
+            dosya, kaynaklar, aramalar = gemini(model, istem, arama=True, sicaklik=0.4)
+            if len(kaynaklar) >= 5:
+                break
+            print(f'    yalnız {len(kaynaklar)} kaynak; yeniden aranıyor…', flush=True)
+        else:
+            sys.exit(f'{sid}: üç denemede de yeterli kaynak gelmedi; durdu.')
         yaz(yollar[1], {'model': model, 'dosya': dosya, 'kaynaklar': kaynaklar, 'aramalar': aramalar})
     a = oku(yollar[1])
     print(f"  araştırma: {len(a['dosya'].split()):,} kelime, {len(a['kaynaklar'])} kaynak", flush=True)
@@ -370,7 +393,13 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
     if not yollar[2].exists():
         print('  2/4 hikâye…', flush=True)
         yazi, _, _ = gemini(model, taslak_istemi(s, eserler, a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.8)
-        yaz(yollar[2], json_ayikla(yazi))
+        t = json_ayikla(yazi)
+        kelime = sum(len(p.split()) for p in t['giris'] + [p for b in t['bolumler'] for p in b['paragraflar']] + t['kapanis'])
+        if kelime < HEDEF_KELIME[0] * 0.85:
+            print(f'    {kelime} kelime, kısa; genişletiliyor…', flush=True)
+            yazi, _, _ = gemini(model, genisletme_istemi(t, kelime, a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.7)
+            t = json_ayikla(yazi)
+        yaz(yollar[2], t)
     taslak = oku(yollar[2])
 
     if not yollar[3].exists():
