@@ -204,6 +204,19 @@ Yalnız bir adım için: `--yalniz aic`, `--yalniz smk,commons`. Yarıda kalırs
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
 
+## Sesli rehberin sesi (Azure)
+
+Uygulamadaki "Dinleyerek bak" anlatımları iPhone'un sesiyle robotik kaldığı için Azure'un doğal Türkçe sesiyle (Emel ya da Ahmet) bir kez kaydedilir ve R2'ye konur: `scripts/ses_uret.py`. Azure portalında **Konuşma hizmetleri** kaynağı (`sanat-ses`, İsveç Orta, **Free F0**: ayda 500 bin karakter) açık; rehberli eserlerin bütün parçaları yaklaşık 425 bin karakter.
+
+```bash
+export AZURE_SES_ANAHTARI=...          # Azure → sanat-ses → Anahtarlar ve Uç Nokta → KEY 1
+python3 scripts/ses_uret.py --dene      # 3 eser, iki ses: ses_deneme/ (dinleyip sesi seç)
+python3 scripts/ses_uret.py --ses Emel  # hepsi: ses/Emel/ ve data/ses_dizini.json
+python3 scripts/ses_uret.py --ses Emel --yukle   # R2'ye (yukarıdaki R2_* değişkenleriyle)
+```
+
+Uygulamanın okuduğu metinle dosya arasındaki sözleşme (anahtar = metnin sha1'i) betiğin başında yazılı.
+
 ## Son değişiklikler (5 Kasım 2026, sürüm 1.68–1.71)
 
 Ayrıntılar KARARLAR.md'de (İş 135–151).
