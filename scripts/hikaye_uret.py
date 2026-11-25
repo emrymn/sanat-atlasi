@@ -102,8 +102,12 @@ def modelleri_listele():
 def model_sec(istenen):
     if istenen:
         return istenen
+    modeller = modelleri_listele()
+    # Caravaggio denemesinde Gemini 4 Neon 3.1 Pro'dan çok daha iyiydi (32 arama, 142 kaynak, 3100 kelime)
+    if any(m['name'].endswith('/gemini-4-neon') for m in modeller):
+        return 'gemini-4-neon'
     adaylar = []
-    for m in modelleri_listele():
+    for m in modeller:
         ad = m['name'].split('/')[-1]
         if 'generateContent' not in m.get('supportedGenerationMethods', []):
             continue
@@ -170,6 +174,30 @@ def qwen(metin):
 
 def qwen_var():
     return all(os.environ.get(k, '').strip() for k in ('QWEN_ADRES', 'QWEN_ANAHTAR', 'QWEN_MODEL'))
+
+
+def kaynak_coz(kaynaklar):
+    """Arama kaynakları vertexaisearch yönlendirme adresiyle gelir; bunlar bir süre sonra çalışmaz. Gerçek adrese
+    çözülür, aynı adres bir kez kalır."""
+    class Durdur(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, *a, **k):
+            return None
+    acici = urllib.request.build_opener(Durdur)
+    sonuc, gorulen = [], set()
+    for k in kaynaklar:
+        adres = k['adres']
+        if 'grounding-api-redirect' in adres:
+            try:
+                acici.open(urllib.request.Request(adres, method='HEAD'), timeout=20)
+            except urllib.error.HTTPError as e:
+                adres = e.headers.get('Location') or adres
+            except Exception:
+                pass
+        if adres in gorulen:
+            continue
+        gorulen.add(adres)
+        sonuc.append({'baslik': k['baslik'], 'adres': adres})
+    return sonuc
 
 
 def json_ayikla(yazi):
@@ -388,6 +416,11 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
             sys.exit(f'{sid}: üç denemede de yeterli kaynak gelmedi; durdu.')
         yaz(yollar[1], {'model': model, 'dosya': dosya, 'kaynaklar': kaynaklar, 'aramalar': aramalar})
     a = oku(yollar[1])
+    if not a.get('cozuldu'):
+        print('  kaynak adresleri çözülüyor…', flush=True)
+        a['kaynaklar'] = kaynak_coz(a['kaynaklar'])
+        a['cozuldu'] = True
+        yaz(yollar[1], a)
     print(f"  araştırma: {len(a['dosya'].split()):,} kelime, {len(a['kaynaklar'])} kaynak", flush=True)
 
     if not yollar[2].exists():
