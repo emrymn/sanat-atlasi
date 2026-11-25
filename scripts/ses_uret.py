@@ -395,7 +395,7 @@ def main():
                                'parcalar': dict(sorted(dizin.items()))}, ensure_ascii=False, indent=0) + '\n',
                    encoding='utf-8')
     print(f'{yeni} yeni parça, {harcanan} karakter; dizinde {len(dizin)} parça. '
-          f'{"Bitti." if bitti else "Bütçe doldu; yeniden çalıştır."} Sonra: --yukle')
+          f'{"Bitti. Sonra: --yukle" if bitti else "Yarım kaldı; aynı komutu yeniden çalıştır."}')
 
 
 if __name__ == '__main__':
