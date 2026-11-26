@@ -24,7 +24,7 @@ Dosyanın başına bir KRONOLOJİ TABLOSU koy: doğum, anne ve babanın ölümü
 Çıktı: hikaye-deneme/SANATCI-arastirma.md. Her paragrafın sonunda gerçekten açtığın sayfaların GERÇEK adresleri.
 
 2. ESERLER (doğruluk kuralı)
-Sanatçının bizdeki eserleri: data/eserler_onbellek.json → sanatcilar.SANATCI.eserler (qid, baslik, baslikEn, yil). Hikâyede YALNIZ bu listedeki eserleri kullan, qid ile. Listede olmayan bir eseri sanatçının eseri gibi anma (başka sanatçıların eserleri karşılaştırma için anılabilir).
+Sanatçının bizdeki eserleri: data/eserler_onbellek.json → sanatcilar.SANATCI.eserler (qid, baslik, baslikEn, yil). Eserlerin Türkçe adları data/eser_adlari_tr.json → adlar[qid]; metinde yalnız Türkçe adı kullan, İngilizce eser adı yazma. Hikâyede YALNIZ bu listedeki eserleri kullan, qid ile. Listede olmayan bir eseri sanatçının eseri gibi anma (başka sanatçıların eserleri karşılaştırma için anılabilir).
 
 3. HİKÂYE
 Yalnız araştırma dosyana dayan; dosyada olmayan olgu, tarih, isim, alıntı ekleme. Efsane ve tartışmalı olanı "anlatılır ki", "rivayete göre", "tarihçiler burada ayrılır" diye çerçevele.
@@ -32,6 +32,7 @@ Yalnız araştırma dosyana dayan; dosyada olmayan olgu, tarih, isim, alıntı e
 - Her bölümde olayın resme NASIL yansıdığını göster; okura o dönemin eserlerine "bak" dedirt (ışık, renk, yüz, boşluk, fırça). Bölüm başına 1–4 eser.
 - Toplam 2200–3000 kelime; bölüm başına 4–6 paragraf, paragraflar 70–140 kelime.
 - Sesli de okunacak: kısa ve orta cümleler, parantez/dipnot/kısaltma yok, yıllar rakamla, yabancı adlar ilk geçişte tam.
+- Okura adıyla seslenme.
 - Doğal, sıcak, akıcı Türkçe; çeviri kokmasın. "dahi, eşsiz, büyüleyici" gibi klişeler yok; çarpıcılık olgulardan gelsin.
 
 4. DENETİM

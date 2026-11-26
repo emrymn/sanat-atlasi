@@ -257,8 +257,17 @@ def katalog():
     return sanatcilar, onbellek
 
 
+TR_ADLAR = None
+
+
 def eser_listesi(sid, onbellek):
-    return [{'qid': e['qid'], 'ad': e.get('baslikEn') or e['baslik'], 'tr': e['baslik'], 'yil': e.get('yil'),
+    # Türkçe ad data/eser_adlari_tr.json'dan; önbellekteki "baslik" çoğu eserde İngilizce kalmış (ilk 13 hikâyede
+    # metne "The Stoning of Saint Stephen'a bak" gibi İngilizce adlar girdi, elle düzeltildi)
+    global TR_ADLAR
+    if TR_ADLAR is None:
+        TR_ADLAR = oku(KOK / 'data' / 'eser_adlari_tr.json')['adlar']
+    return [{'qid': e['qid'], 'ad': e.get('baslikEn') or e['baslik'], 'tr': TR_ADLAR.get(e['qid']) or e['baslik'],
+             'yil': e.get('yil'),
              'muze': e.get('muze')} for e in onbellek.get(sid, {}).get('eserler', []) if e.get('qid')]
 
 
@@ -334,13 +343,13 @@ def kelime_say(t):
 
 def taslak_istemi(s, eserler, dosya):
     liste = '\n'.join(f"- {e['qid']}: {e['tr']} / {e['ad']} ({e['yil'] or '?'})" for e in eserler)
-    return f"""Sen usta bir Türkçe anlatıcısın; bir sanat tarihi uygulaması için {s['ad']} ({yillar(s)}) hakkında uzun, sürükleyici bir hikâye yazıyorsun. Okuyan ve dinleyen, sanat tarihi öğrenen bir üniversite öğrencisi (Emre). Hikâye hem okunacak hem de sesli dinlenecek.
+    return f"""Sen usta bir Türkçe anlatıcısın; bir sanat tarihi uygulaması için {s['ad']} ({yillar(s)}) hakkında uzun, sürükleyici bir hikâye yazıyorsun. Okuyan ve dinleyen, sanat tarihi öğrenen bir üniversite öğrencisi. Hikâye hem okunacak hem de sesli dinlenecek. Okura adıyla seslenme.
 
 YALNIZ aşağıdaki araştırma dosyasına dayan. Dosyada olmayan hiçbir olgu, tarih, isim, alıntı ekleme. Efsane ya da tartışmalı olanı gerçekmiş gibi anlatma: "anlatılır ki", "rivayete göre", "tarihçiler burada ayrılır" diye çerçevele. Dosyanın "yanlış bilinenler" kısmındakileri tekrarlama.
 
 Nasıl yazılacak:
 - Sanatçının hayatını 4–7 döneme böl (bölümler). Her bölüm bir kırılma anıyla, çarpıcı bir sahneyle ya da somut bir ayrıntıyla açılsın; kuru biyografi değil, hikâye.
-- Her bölümde hayattaki olayın resme NASIL yansıdığını göster: o dönemin bir iki eserine "bak" dedirt; ışığa, renge, yüze, boşluğa, fırçaya dikkat çek. Eserleri bölümün "eserler" alanına qid ile koy (yalnız aşağıdaki listeden, bölüm başına 1–4), "bag" alanında o eserin bu döneme bağını bir iki cümleyle anlat. Paragraflarda eserin Türkçe adını kullan.
+- Her bölümde hayattaki olayın resme NASIL yansıdığını göster: o dönemin bir iki eserine "bak" dedirt; ışığa, renge, yüze, boşluğa, fırçaya dikkat çek. Eserleri bölümün "eserler" alanına qid ile koy (yalnız aşağıdaki listeden, bölüm başına 1–4), "bag" alanında o eserin bu döneme bağını bir iki cümleyle anlat. Paragraflarda eserin listedeki Türkçe adını kullan; İngilizce eser adı yazma.
 - UZUNLUK ÖNEMLİ: toplam EN AZ {HEDEF_KELIME[0]}, en çok {HEDEF_KELIME[1]} kelime (giriş + bölümler + kapanış); 5–7 bölüm, her bölüm 4–6 paragraf, paragraflar 70–140 kelime. Kısa kalmasın: dosyadaki ayrıntıları, alıntıları, sahneleri kullan.
 - Sesli okunacak: kısa ve orta cümleler, parantez ve dipnot yok, kısaltma yok (yy. yerine yüzyıl), yıllar yazıyla değil rakamla. Yabancı adları ilk geçtiği yerde tam yaz.
 - "giris": 1–2 paragraf, en çarpıcı anla başla. "kapanis": 1–2 paragraf, bıraktığı iz ve bugün nasıl bakmalı.
