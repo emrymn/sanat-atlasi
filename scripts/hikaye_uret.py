@@ -28,6 +28,8 @@ Kullanım (depo kökünde):
   python3 scripts/hikaye_uret.py --dene                # 10 sanatçılık deneme (DENEME listesi)
   python3 scripts/hikaye_uret.py --sanatci caravaggio  # tek sanatçı (birden çok: virgülle)
   python3 scripts/hikaye_uret.py --dene --yeniden 3    # 3. adımdan (denetim) itibaren yeniden
+  caffeinate -i python3 scripts/hikaye_uret.py --toplu --sanatci a,b,c   # Batch API: yarı fiyat; her tur bir toplu
+                       # iş (sanatçıların sıradaki adımları), tur bitince sonraki. Ctrl+C sonrası aynı komut sürdürür.
 Her adımın sonunda harcanan jeton ve arama sayısı yazılır; toplam en sonda (maliyeti AI Studio → Spend'de doğrula).
 """
 import argparse
@@ -152,7 +154,7 @@ def gemini_json(model, metin, sema, sicaklik):
     sys.exit('İki denemede de JSON yarım geldi; durdu (komutu yeniden çalıştırınca kaldığı yerden sürer).')
 
 
-def gemini(model, metin, arama=False, sema=None, sicaklik=0.7):
+def govde_kur(metin, arama=False, sema=None, sicaklik=0.7):
     govde = {'contents': [{'role': 'user', 'parts': [{'text': metin}]}],
              'generationConfig': {'temperature': sicaklik, 'maxOutputTokens': 65536}}
     if arama:
@@ -160,11 +162,24 @@ def gemini(model, metin, arama=False, sema=None, sicaklik=0.7):
     if sema:
         govde['generationConfig']['responseMimeType'] = 'application/json'
         govde['generationConfig']['responseSchema'] = buyuk_tip(sema)
-    d = istek(f'{API}/models/{model}:generateContent', govde, gemini_basliklari())
+    return govde
+
+
+def gemini(model, metin, arama=False, sema=None, sicaklik=0.7):
+    d = istek(f'{API}/models/{model}:generateContent', govde_kur(metin, arama, sema, sicaklik), gemini_basliklari())
+    sonuc = cevap_coz(d)
+    if sonuc is None:
+        aday = (d.get('candidates') or [{}])[0]
+        sys.exit(f"Boş cevap (finishReason: {aday.get('finishReason')}): {json.dumps(d)[:600]}")
+    return sonuc
+
+
+def cevap_coz(d):
+    """generateContent cevabı → (yazı, kaynaklar, aramalar); boşsa None"""
     aday = (d.get('candidates') or [{}])[0]
     yazi = ''.join(p.get('text', '') for p in aday.get('content', {}).get('parts', []) if not p.get('thought'))
     if not yazi.strip():
-        sys.exit(f"Boş cevap (finishReason: {aday.get('finishReason')}): {json.dumps(d)[:600]}")
+        return None
     if aday.get('finishReason') == 'MAX_TOKENS':
         # Düşünce jetonları da sınıra sayılıyor (Goya'da 24 bin düşünce + 8,7 bin çıktı = 32 768'de kesildi)
         print('    cevap jeton sınırında kesildi', flush=True)
@@ -302,6 +317,19 @@ TASLAK_SEMASI = {
     },
     'required': ['baslik', 'alt_baslik', 'giris', 'bolumler', 'kapanis', 'baglantilar'],
 }
+
+
+DENETIM_SEMASI = {
+    'type': 'object', 'properties': {'sorunlar': {'type': 'array', 'items': {
+        'type': 'object', 'properties': {'cumle': {'type': 'string'}, 'sorun': {'type': 'string'},
+                                         'oneri': {'type': 'string'}},
+        'required': ['cumle', 'sorun', 'oneri']}}}, 'required': ['sorunlar']}
+ZORUNLU_ARAMA = ('IMPORTANT: You MUST run Google searches before writing (at least 5 queries); a dossier '
+                 'without web sources will be rejected.\n\n')
+
+
+def kelime_say(t):
+    return sum(len(p.split()) for p in t['giris'] + [p for b in t['bolumler'] for p in b['paragraflar']] + t['kapanis'])
 
 
 def taslak_istemi(s, eserler, dosya):
@@ -454,11 +482,7 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
         if qwen_var():
             yazi = qwen(istem)
         else:
-            yazi, _, _ = gemini(model, istem, sicaklik=0.1, sema={
-                'type': 'object', 'properties': {'sorunlar': {'type': 'array', 'items': {
-                    'type': 'object', 'properties': {'cumle': {'type': 'string'}, 'sorun': {'type': 'string'},
-                                                     'oneri': {'type': 'string'}},
-                    'required': ['cumle', 'sorun', 'oneri']}}}, 'required': ['sorunlar']})
+            yazi, _, _ = gemini(model, istem, sicaklik=0.1, sema=DENETIM_SEMASI)
         yaz(yollar[3], {'denetci': denetci, **json_ayikla(yazi)})
     denetim = oku(yollar[3])
     print(f"  denetim: {len(denetim['sorunlar'])} sorun", flush=True)
@@ -480,6 +504,156 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
             'duzeltilen': len(denetim['sorunlar']), 'olusturma': time.strftime('%Y-%m-%d')}
 
 
+# ---------------------------------------------------------------- toplu (Batch API)
+
+def dosya_yukle(veri, ad):
+    k = gemini_basliklari()
+    r = urllib.request.Request(f'{API.replace("/v1beta", "")}/upload/v1beta/files',
+                               data=json.dumps({'file': {'display_name': ad}}).encode(), method='POST',
+                               headers={'Content-Type': 'application/json', 'X-Goog-Upload-Protocol': 'resumable',
+                                        'X-Goog-Upload-Command': 'start',
+                                        'X-Goog-Upload-Header-Content-Length': str(len(veri)),
+                                        'X-Goog-Upload-Header-Content-Type': 'application/jsonl', **k})
+    with urllib.request.urlopen(r, timeout=120) as y:
+        adres = {a.lower(): b for a, b in y.headers.items()}['x-goog-upload-url']
+    r = urllib.request.Request(adres, data=veri, method='POST',
+                               headers={'Content-Type': 'application/jsonl', 'X-Goog-Upload-Offset': '0',
+                                        'X-Goog-Upload-Command': 'upload, finalize', **k})
+    with urllib.request.urlopen(r, timeout=600) as y:
+        return json.loads(y.read())['file']['name']
+
+
+def indir(dosya):
+    r = urllib.request.Request(f'{API.replace("/v1beta", "")}/download/v1beta/{dosya}:download?alt=media',
+                               headers=gemini_basliklari())
+    with urllib.request.urlopen(r, timeout=600) as y:
+        return y.read().decode('utf-8')
+
+
+def siradaki(sid, s, eserler, sanatcilar):
+    """Sanatçının sıradaki adımı → (adım, istek gövdesi) ya da (None, None); istek gerektirmeyen adımı hemen yapar"""
+    k = CALISMA / sid
+    y = {1: k / 'arastirma.json', 2: k / 'taslak.json', 3: k / 'denetim.json', 4: k / 'son.json', 25: k / 'taslak_kisa.json'}
+    if not y[1].exists():
+        digerleri = [x['ad'] for x in sanatcilar.values() if x['id'] != sid]
+        return 1, govde_kur(ZORUNLU_ARAMA + arastirma_istemi(s, eserler, digerleri), arama=True, sicaklik=0.4)
+    a = oku(y[1])
+    if not y[2].exists():
+        if y[25].exists():
+            t = oku(y[25])
+            return 25, govde_kur(genisletme_istemi(t, kelime_say(t), a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.7)
+        return 2, govde_kur(taslak_istemi(s, eserler, a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.8)
+    taslak = oku(y[2])
+    if not y[3].exists():
+        return 3, govde_kur(denetim_istemi(a['dosya'], a['kaynaklar'], taslak), sema=DENETIM_SEMASI, sicaklik=0.1)
+    if not y[4].exists():
+        d = oku(y[3])
+        if not d['sorunlar']:
+            yaz(y[4], taslak)
+            return None, None
+        return 4, govde_kur(duzeltme_istemi(taslak, d['sorunlar']), sema=TASLAK_SEMASI, sicaklik=0.2)
+    return None, None
+
+
+def cevabi_isle(sid, adim, d, model, hatalar):
+    """Toplu işin bir cevabını adımın dosyasına yazar; olmazsa hata sayar (aynı adım sonraki turda yeniden)"""
+    k = CALISMA / sid
+    sonuc = cevap_coz(d) if d else None
+    try:
+        if sonuc is None:
+            raise ValueError('boş cevap')
+        yazi, kaynaklar, aramalar = sonuc
+        if adim == 1:
+            if len(kaynaklar) < 5:
+                raise ValueError(f'yalnız {len(kaynaklar)} kaynak')
+            yaz(k / 'arastirma.json', {'model': model, 'dosya': yazi, 'kaynaklar': kaynaklar, 'aramalar': aramalar})
+        elif adim in (2, 25):
+            t = json_ayikla(yazi)
+            if adim == 2 and kelime_say(t) < HEDEF_KELIME[0] * 0.85:
+                yaz(k / 'taslak_kisa.json', t)
+                print(f'  {sid}: {kelime_say(t)} kelime, kısa; sonraki turda genişletilecek')
+                return
+            yaz(k / 'taslak.json', t)
+        elif adim == 3:
+            yaz(k / 'denetim.json', {'denetci': model, **json_ayikla(yazi)})
+        elif adim == 4:
+            yaz(k / 'son.json', json_ayikla(yazi))
+        print(f'  {sid}: adım {adim} tamam')
+    except (ValueError, json.JSONDecodeError) as e:
+        hatalar[f'{sid}|{adim}'] = hatalar.get(f'{sid}|{adim}', 0) + 1
+        print(f'  {sid}: adım {adim} olmadı ({e}); {hatalar[f"{sid}|{adim}"]}. deneme')
+
+
+def toplu(kimlikler, model, sanatcilar, onbellek):
+    CALISMA.mkdir(exist_ok=True)
+    durum_yolu = CALISMA / '_toplu.json'
+    hata_yolu = CALISMA / '_hatalar.json'
+    while True:
+        hatalar = oku(hata_yolu) if hata_yolu.exists() else {}
+        durum = oku(durum_yolu) if durum_yolu.exists() else None
+        if durum is None:
+            istekler, anahtarlar = [], {}
+            for sid in kimlikler:
+                s = sanatcilar.get(sid)
+                eserler = eser_listesi(sid, onbellek) if s else []
+                if len(eserler) < 3:
+                    continue
+                adim, govde = siradaki(sid, s, eserler, sanatcilar)
+                if adim is None:
+                    continue
+                if hatalar.get(f'{sid}|{adim}', 0) >= 3:
+                    print(f'  {sid}: adım {adim} üç kez olmadı, atlandı (tek tek kipte dene)')
+                    continue
+                anahtar = f'{sid}|{adim}'
+                anahtarlar[anahtar] = [sid, adim]
+                istekler.append({'key': anahtar, 'request': govde})
+            if not istekler:
+                print('\nToplu: bütün adımlar bitti.')
+                return
+            jsonl = '\n'.join(json.dumps(x, ensure_ascii=False) for x in istekler).encode('utf-8')
+            dosya = dosya_yukle(jsonl, f'hikaye-{int(time.time())}')
+            is_ = istek(f'{API}/models/{model}:batchGenerateContent',
+                        {'batch': {'display_name': 'hikaye', 'input_config': {'file_name': dosya}}}, gemini_basliklari())
+            durum = {'is': is_['name'], 'anahtarlar': anahtarlar, 'baslangic': time.strftime('%H:%M')}
+            yaz(durum_yolu, durum)
+            adlar = ', '.join(f'{v[0]}:{v[1]}' for v in anahtarlar.values())
+            print(f"\n{time.strftime('%H:%M')} toplu iş gönderildi ({len(istekler)} istek): {adlar}", flush=True)
+        while True:
+            is_ = istek(f"{API}/{durum['is']}", basliklar=gemini_basliklari())
+            meta = is_.get('metadata', is_)
+            hal = meta.get('state', '')
+            if hal.endswith(('SUCCEEDED', 'FAILED', 'CANCELLED', 'EXPIRED')):
+                break
+            print(f"  {time.strftime('%H:%M')} · {hal or 'bekliyor'} (Ctrl+C ile çıkabilirsin; aynı komut izlemeyi sürdürür)",
+                  flush=True)
+            time.sleep(120)
+        if not hal.endswith('SUCCEEDED'):
+            durum_yolu.unlink()
+            sys.exit(f'Toplu iş {hal}: {json.dumps(is_, ensure_ascii=False)[:600]}')
+        cikis = meta.get('output') or is_.get('response') or {}
+        dosya = cikis.get('responsesFile') or cikis.get('responses_file')
+        if not dosya:
+            sys.exit(f'Toplu işin sonuç dosyası yok: {json.dumps(is_, ensure_ascii=False)[:600]}')
+        gelen = set()
+        for satir in indir(dosya).splitlines():
+            if not satir.strip():
+                continue
+            x = json.loads(satir)
+            hedef = durum['anahtarlar'].get(x.get('key'))
+            if not hedef:
+                continue
+            gelen.add(x['key'])
+            if x.get('error'):
+                print(f"  {hedef[0]}: adım {hedef[1]} hata: {json.dumps(x['error'])[:200]}")
+            cevabi_isle(hedef[0], hedef[1], x.get('response'), model, hatalar)
+        for a, (sid, adim) in durum['anahtarlar'].items():
+            if a not in gelen:
+                hatalar[a] = hatalar.get(a, 0) + 1
+                print(f'  {sid}: adım {adim} cevapsız kaldı')
+        yaz(hata_yolu, hatalar)
+        durum_yolu.unlink()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--dene', action='store_true', help='10 sanatçılık deneme')
@@ -487,6 +661,7 @@ def main():
     ap.add_argument('--model', default=os.environ.get('HIKAYE_MODEL', ''), help='Gemini modeli (yoksa en yeni Pro)')
     ap.add_argument('--yeniden', type=int, choices=[1, 2, 3, 4], help='bu adımdan itibaren yeniden üret')
     ap.add_argument('--modeller', action='store_true', help='kullanılabilir modelleri listele')
+    ap.add_argument('--toplu', action='store_true', help='Batch API: yarı fiyat, turlar hâlinde (saatler sürebilir)')
     g = ap.parse_args()
 
     if not api_anahtari() and not os.environ.get('HIKAYE_BULUT'):
@@ -508,8 +683,16 @@ def main():
         'aciklama': ('Sanatçı hikâyeleri (scripts/hikaye_uret.py): Gemini Google Arama ile araştırır, hikâyeyi yalnız '
                      'o dosyadan yazar, ikinci bir model denetler. Eserler yalnız bizim verimizden (qid).'),
         'sanatcilar': {}}
+    if g.toplu:
+        if g.yeniden:
+            for sid in kimlikler:
+                for ad in {1: ['arastirma', 'taslak_kisa', 'taslak', 'denetim', 'son'],
+                           2: ['taslak_kisa', 'taslak', 'denetim', 'son'], 3: ['denetim', 'son'], 4: ['son']}[g.yeniden]:
+                    (CALISMA / sid / f'{ad}.json').unlink(missing_ok=True)
+        toplu(kimlikler, model, sanatcilar, onbellek)
+        kimlikler = [k for k in kimlikler if (CALISMA / k / 'son.json').exists()]
     for sid in kimlikler:
-        h = uret(sid, model, sanatcilar, onbellek, g.yeniden)
+        h = uret(sid, model, sanatcilar, onbellek, None if g.toplu else g.yeniden)
         if h:
             cikti['sanatcilar'][sid] = h
             yaz(CIKTI, cikti)
