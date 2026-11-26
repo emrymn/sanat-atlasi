@@ -1,0 +1,20 @@
+# Giotto di Bondone — Denetim Raporu
+
+## 1. Tarih ve Yaş Doğrulaması (Kronoloji Tablosuyla Karşılaştırma)
+- **Doğum (y. 1267 / 1276) ve Ölüm (8 Ocak 1337):** Antonio Pucci'nin 1373 dolaylarında yazdığı *Centiloquio*da Giotto'nun öldüğünde yaklaşık 70 yaşında olduğu belirtilir (`1337 - 70 = 1267`). Giorgio Vasari'nin 1276 önerisi de metinde ayrı bir görüş olarak çerçevelendi. Anne ve babasının kesin ölüm yıllarının arşivlerde bulunmadığı açıkça belirtildi.
+- **Evlilik (1287–1290):** Doğum y. 1267 alındığında 20–23 yaş aralığına denk düşer; metinde kesin yaş iddiası yapılmadı.
+- **Erken eserler ve Assisi (1290–1302):** *Santa Maria Novella Çarmıhı* (y. 1290), *San Giorgio alla Costa'dan Madonna ve Çocuk* (y. 1295, 27 Mayıs 1993 Georgofili bombalaması), Assisi Üst Kilisesi (1290'ların ikinci yarısı, tartışmalı atıf olarak çerçevelendi), Louvre *Stigmata* (y. 1295–1300), *Badia Polipitiği* (y. 1300–1302) — tamamı kronolojiyle uyumlu.
+- **Padova / Arena Şapeli (1303–1305) ve Halley Kuyruklu Yıldızı (1301):** 1301 sonbaharında görülen kuyruklu yıldız ve 1986 ESA *Giotto* aracı kronolojiyle uyumlu; şapelin 1303'te adanması ve 1305'te kutsanması doğrulandı.
+- **Floransa belgeleri ve Roma (1306–1325):** 1312 Fransız dokuma tezgâhı kiralaması, 1312–1318 noter/arazi kayıtları, y. 1318 oğlu Francesco'nun vekâleti, y. 1315 Dante'nin *Araf* dizeleri, y. 1306–1310 *Tahtta Meryem*, y. 1310 *Meryem'in Ölümü*, y. 1320 *Stefaneschi Triptiği* ve *Yedi Panel* — kronolojiyle uyumlu.
+- **Napoli, Milano, Başmimarlık ve Ölüm (1328–1337):** 8 Aralık 1328 kraliyet maaşı, 20 Ocak 1330 *familia* üyeliği, 1331 Castel Nuovo kayıtları, 1333'e dek Napoli; 12 Nisan 1334 başmimarlık ataması, 18 Temmuz 1334 çan kulesi temeli; 1335–1336 Milano (Azzo Visconti); 8 Ocak 1337 ölüm; 1490 Lorenzo de' Medici ve Poliziano; 1965–1974 Santa Reparata kazıları ve 2000 Mallegni–Toker tartışması — tamamı doğrulandı.
+- **Miras tarihleri:** Petrarca'nın vasiyetnamesi (1370), Cennino Cennini'nin el kitabı (y. 1390), Michelangelo'nun Santa Croce etütleri (1490'ların başı) — doğrulandı.
+
+## 2. Olgu, Efsane ve Dayanak Denetimi (Yapılan Düzeltmeler)
+1. **Bölüm 4, Paragraf 1 (*Tüccarların Tapınaktan Kovulması*):** İlk taslakta geçen "devrilen masalar, kaçışan hayvanlar ve korkuyla sinen çocuklar" ayrıntısı web kaynaklı araştırma özetlerinde doğrudan belgelenmediği için çıkarıldı; hem araştırma dosyası hem hikâye metni yalnızca belgelenen sahne içeriğiyle (İsa'nın Kudüs Tapınağı'ndaki sarraf ve tüccarları kovuşu) sınırlandırıldı.
+2. **Bölüm 4, Paragraf 2 (*Son Yargı*):** İlk taslaktaki "gökkuşağına benzer ışık çemberi" ve "ateşten nehir" gibi araştırma dosyasında yer almayan görsel betimlemeler çıkarılarak metin araştırma dosyasına sıkı biçimde bağlandı.
+3. **Bölüm 2, Paragraf 4 (*Badia Polipitiği*):** Genel üslup yorumu yerine araştırma dosyasındaki somut kayıp-bulunuş tarihçesi (Ghiberti ve Vasari kayıtları, 16. yüzyıl tadilatları, 19. yüzyıl manastır kapatmaları ve atölye katkısı) eklendi.
+4. **Bölüm 5, Paragraf 3 (*Meryem'in Ölümü*):** İlk taslaktaki "her baş farklı bir acı açısıyla eğilir" ifadesi yerine araştırma dosyasındaki kesin bilgiler (y. 1310, Berlin Gemäldegalerie, üçgen alınlıklı yatay pano ve İsa'nın Meryem'in yükselen ruhunu taşıması) yerleştirildi.
+5. **Bölüm 6, Paragraf 4 (Üslup ve tarih hassasiyeti):** "olağanüstü" klişesi "alışılmadık" ile değiştirildi; Santa Reparata kazıları "1970'lerdeki" yerine kesin aralık olan "1965 ile 1974 arasındaki" olarak düzeltildi.
+6. **Kapanış, Paragraf 1 (Cennino Cennini zinciri):** Cennini'nin Taddeo Gaddi'nin oğlu Agnolo Gaddi'nin öğrencisi olduğu ve kitabını 1390 dolaylarında yazdığı açıkça eklendi.
+7. **Paragraf uzunluğu ve sesli okuma denetimi:** 70 kelimenin altında kalan 8 paragraf araştırma dosyasındaki belgeli ayrıntılarla genişletildi; parantez, kısaltma, klişe sıfat ve liste dışı eser adı taraması yapıldı.
+8. **Efsane/tartışmalı çerçeveleme:** Çoban çocuk öyküsü, Cimabue çıraklığı, Assisi Üst Kilisesi atfı, "Giotto'nun O'su" ve Santa Reparata kemik iddiası kesin gerçek gibi değil, açıkça efsane ya da tarihçilerin ayrıldığı konu olarak çerçevelendi.
