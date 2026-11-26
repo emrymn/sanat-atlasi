@@ -46,3 +46,19 @@ Sonra şunu çalıştır ve uyarıları gider (betik yoksa bu adımı atla): pyt
 
 6. Dalda (neon/hikaye-SANATCI) commit et, push et, taslak PR aç. Commit: git -c user.name=emrymn -c user.email=emrymn@users.noreply.github.com commit ... Uygulama koduna ve data/ dosyalarına dokunma.
 ```
+
+## Gruplar (Emre'nin seçimi, 2026-11-26: 13 hikâyeye 42 sanatçı daha)
+
+Neon'a grup grup ver (bir seferde 6). Grup istemi:
+
+```text
+scripts/hikaye_antigravity.md'deki istemi (``` bloğu) şu sanatçılar için SIRAYLA, her biri için ayrı ayrı uygula: GRUP. Hepsi aynı çalışma ağacında, tek dalda: neon/hikaye-grup-N (SANATCI geçen dal adı yerine bu). Her sanatçı için hikaye-deneme/<kimlik>.json, -arastirma.md, -denetim.md. Bir sanatçıyı bitirmeden ötekine geçme; her birinden sonra commit et. Hepsi bitince push et ve tek taslak PR aç.
+```
+
+1. giotto-di-bondone, masaccio, sandro-botticelli, jan-van-eyck, albrecht-durer, pieter-bruegel-yasl
+2. raphael, titian, paolo-veronese, tintoretto, el-greco, sofonisba-anguissola
+3. parmigianino, artemisia-gentileschi, guido-reni, georges-de-la-tour, francisco-de-zurbaran, peter-paul-rubens
+4. anthony-van-dyck, frans-hals, nicolas-poussin, william-hogarth, jean-honore-fragonard, jacques-louis-david
+5. elisabeth-vigee-le-brun, henry-fuseli, william-blake, caspar-david-friedrich, j-m-w-turner, theodore-gericault
+6. eugene-delacroix, jean-auguste-dominique-ingres, dante-gabriel-rossetti, edouard-manet, claude-monet, berthe-morisot
+7. mary-cassatt, katsushika-hokusai, paul-cezanne, paul-gauguin, henri-de-toulouse-lautrec, gustave-moreau
