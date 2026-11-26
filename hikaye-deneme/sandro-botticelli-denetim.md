@@ -1,0 +1,17 @@
+# Sandro Botticelli — Denetim Raporu
+
+## 1. Tarih ve Yaş Doğrulaması (Kronoloji Tablosuyla Karşılaştırma)
+- **Doğum (y. 1445) ve 1458 Catasto:** `1458 - 1445 = 13` ("on üç yaşındaki Sandro"). Sağlığı zayıf (*malsano*) ve okumaya düşkün (*sta a leggere*) kaydı doğrulandı.
+- **Erken Kariyer ve Medici Çevresi (1467–1480):** Lippi'nin Spoleto'ya gidişi (1467), *Metanet* (1470), *Judith'in Bethulia'ya Dönüşü* (1470–1472), *Yaşlı Cosimo Madalyonlu Adam Portresi* (1474–1475), *Müneccimlerin Tapınması* (y. 1475; `1475 - 1445 = 30`, yaklaşık otuz yaşındaki otoportre; Yaşlı Cosimo'nun ölümü 1464), Simonetta Vespucci'nin ölümü (1476, 23 yaşında), Pazzi Komplosu (26 Nisan 1478, Giuliano 25 yaşında öldürüldü), Ognissanti *Aziz Augustinus* (1480) — tamamı kronolojiyle doğrulandı.
+- **Roma, Mitolojiler ve Babasının Ölümü (1481–1487):** Sistine Şapeli (1481–1482), babası Mariano'nun ölümü (1482), *Magnificat Madonnası* (y. 1481), *İlkbahar* (y. 1481–1482), *Pallas ve Kentaur* (y. 1482), *Venüs'ün Doğuşu* (1484–1486), *Venüs ve Mars* (y. 1485), *Nar Madonnası* (1487) — tamamı doğrulandı.
+- **Savonarola, Geç Dönem ve Ölüm (1489–1510):** *Cestello Müjdesi* (1489–1490), *Meryem'in Taç Giymesi* (1490–1492), Lorenzo'nun ölümü (1492), Medici'nin sürülüşü (1494), *Aziz Hieronymus'un Son Komünyonu* ve *Apelles'in İftirası* (1494–1495), Gösteriş Şenlik Ateşleri (7 Şubat 1497 ve 1498), Savonarola'nın idamı (23 Mayıs 1498), Simone Filipepi'nin günlüğü (1489–1503), *Mistik Doğum* (1500–1501), Kasım 1502 Gece Yargıçları ihbarı (`1502 - 1445 = 57`, yaklaşık elli yedi yaşında), Ocak 1504 Michelangelo *Davud* komitesi, ölüm (17 Mayıs 1510, `1510 - 1445 = 65`, yaklaşık altmış beş yaşında) — tamamı doğrulandı.
+- **Yeniden Keşif ve Müzayede:** Rossetti'nin tablo alımı (1867), Walter Pater denemesi (1870), *Madalyon Tutan Genç Adam* Sotheby's satışı (28 Ocak 2021) — doğrulandı.
+
+## 2. Olgu, Efsane ve Dayanak Denetimi (Yapılan Düzeltmeler)
+1. **Bölüm 1, Paragraf 3 (*Judith'in Bethulia'ya Dönüşü*):** Araştırma kaynaklarında doğrudan anılmayan "kılıç" ve "sepet" ayrıntıları çıkarıldı; metin kaynaklardaki dinamik hareket ritmi ve lirik melankoli tanımına sıkı biçimde bağlandı.
+2. **Bölüm 2, Paragraf 4 (*Aziz Augustinus*):** Kaynaklarda doğrudan geçmeyen "elini göğsüne bastırıp" ayrıntısı çıkarıldı; yerine "düşüncesinin tam ortasında ilahi bir görüyle sarsılan hümanist bilgin" ifadesi yerleştirildi.
+3. **Bölüm 3, Paragraf 2 (*İsyancıların Cezalandırılması*):** Araştırma özetinde geçmeyen "Roma'nın antik zafer takı önünde" ayrıntısı çıkarıldı.
+4. **Bölüm 3, Paragraf 3 (*Magnificat Madonnası*):** Nar ayrıntısı *Nar Madonnası*'na ait olduğundan *Magnificat*'tan çıkarıldı; hem araştırma dosyası hem hikâye, Uffizi kaynağındaki "Magnificat ilahisini yazan Meryem ve 15. yüzyıl Floransa giysili melekler" bilgisiyle güncellendi.
+5. **Bölüm 4, Paragraf 2 (*Pallas ve Kentaur*):** Kaynaklarda doğrudan doğrulanmayan kostüm ve mızrak ayrıntıları çıkarıldı; Medici çevresi akıl-tutku dengesi vurgusuna odaklanıldı.
+6. **Efsane / Tartışmalı Çerçeveleme:** Simonetta Vespucci'nin *Venüs'ün Doğuşu* modelliği, Botticelli'nin kendi tablolarını yakması, yaşlılıkta sefalet içinde ölümü ve evlilik kâbusu fıkrası açıkça efsane ya da Vasari rivayeti olarak çerçevelendi.
+7. **Uzunluk ve Biçim Denetimi:** 70 kelimenin altında kalan 9 paragraf belgeli ayrıntılarla genişletildi; parantez, kısaltma, klişe sıfat ve liste dışı eser adı taraması yapıldı (koleksiyonda bulunmayan *Nastagio degli Onesti* metne alınmadı).
