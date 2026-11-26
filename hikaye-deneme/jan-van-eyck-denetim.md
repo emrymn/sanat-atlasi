@@ -1,0 +1,18 @@
+# Jan van Eyck — Denetim Raporu
+
+## 1. Tarih ve Yaş Doğrulaması (Kronoloji Tablosuyla Karşılaştırma)
+- **Doğum (y. 1390) ve Ölüm (Haziran–9 Temmuz 1441):** `1441 - 1390 = 51` ("henüz elli bir yaş civarındayken"). Anne ve babasının adları ile ölüm yıllarının arşivlerde yer almadığı açıkça belirtildi.
+- **Erken Kariyer ve Diplomatik Görevler (1422–1429):** Lahey'de Bavyera Dükü III. John dönemi (1422–1424), Burgonya Dükü İyi Philip hizmetine giriş (1425), ağabeyi Hubert van Eyck'in ölümü (18 Eylül 1426), Portekiz elçiliği (Ekim 1428 – Şubat 1429; Dük'ün düğünü 25 Aralık 1429) — tamamı kronolojiyle doğrulandı.
+- **Gent Sunağı ve Portreler (1430–1436):** Brugge'e yerleşme ve evlilik (1430–1432; eşi Margaret 1406 doğumlu), *Kardinal Niccolò Albergati İçin Çalışma* (y. 1431), *Gent Altar Panosu* açılışı (6 Mayıs 1432), *Léal Souvenir* (10 Ekim 1432), *Bir Adamın Portresi* (21 Ekim 1433), çocuk vaftizi ve altı gümüş kupa (1434), *Arnolfini Portresi* (1434), Dük'ün maaş fermanı (1435), *Kanon Joris van der Paele'li Meryem* ve *Jan de Leeuw Portresi* (1436) — tamamı doğrulandı.
+- **Arnolfini Kronoloji Hesabı:** Giovanni di Arrigo Arnolfini ile Jeanne Cenami'nin evliliği 1447 (`1447 - 1434 = 13` yıl sonra, `1447 - 1441 = 6` yıl ölümden sonra); Costanza Trenta'nın ölümü Şubat 1433 — matematiksel olarak doğrulandı.
+- **Son Yıllar, Ölüm ve Sonrası (1437–2020):** *Dresden Triptiği* ve *Azize Barbara* (1437), *Margareta van Eyck'in Portresi* (Haziran 1439; `1439 - 1406 = 33`, çerçevedeki "yaşım otuz üçtü" ifadesiyle birebir uyumlu), *Çeşmenin Başındaki Meryem* (1439), Jan Vos siparişi (Nisan 1441; 1443'te kırk günlük endüljans), defin (9 Temmuz 1441) ve katedral içine ikinci defin (1442 başı), Bartolomeo Facio'nun övgüsü (1456), İmparator II. Joseph sansürü (1781), *Adil Yargıçlar* hırsızlığı (10 Nisan 1934; Arsène Goedertier'in ölümü Kasım 1934), KIK-IRPA restorasyonu (2012–2020) — tamamı doğrulandı.
+
+## 2. Olgu, Efsane ve Dayanak Denetimi (Yapılan Düzeltmeler)
+1. **Bölüm 1, Paragraf 3 (*Baudouin de Lannoy Portresi*):** Araştırma kaynaklarında doğrudan geçmeyen "görev asası" ve "kadife giysi" ayrıntıları çıkarıldı; yerine 1435 dolayları tarihli Flaman devlet adamı ve Altın Post Nişanı zinciri vurgusu konuldu.
+2. **Bölüm 3, Paragraf 1 (*Kardinal Niccolò Albergati İçin Çalışma*):** Kaynakta geçmeyen "gümüşi ton" ifadesi, Dresden gümüş uçlu çizim notlarına uygun olarak "ten tonları, burnun morumsu kızıllığı, gözlerin ve saçların rengi" biçiminde düzeltildi.
+3. **Bölüm 4, Paragraf 1 (Üslup):** "olağanüstü" klişesi "sıra dışı" olarak değiştirildi.
+4. **Bölüm 4, Paragraf 2 (*Arnolfini Portresi*):** Araştırma özetlerinde doğrudan anılmayan "portakallar" ve "ahşap takunyalar" ayrıntıları çıkarılarak metin kaynaklardaki saydam yeşil kumaş sırlamaları, dışbükey ayna, on Çile madalyonu ve tek yanan mum ayrıntılarına bağlandı.
+5. **Bölüm 5, Paragraf 3 (*Stigmata Alan Aziz Franciscus*):** 12,7 × 14,6 cm ölçüsü "on iki santimetrelik" yerine daha doğru olan "yaklaşık on üç santimetre boyundaki" olarak düzeltildi.
+6. **Eser Listesi Doğruluğu:** Koleksiyon listesinde bulunmayan *Şansölye Rolin'in Madonnası* hikâyeye alınmadı; yalnızca `data/eserler_onbellek.json`'daki 21 eser kullanıldı.
+7. **Efsane / Tartışmalı Çerçeveleme:** Vasari'nin yağlıboya icadı efsanesi, *Torino-Milano Saatler Kitabı* "El G" atfı, *Gent Altar Panosu*'nda Hubert–Jan payı, *Arnolfini Portresi* düğün/anı portresi tartışması ve *Azize Barbara*'nın yarım kalıp kalmadığı açıkça tartışmalı ya da efsane olarak çerçevelendi.
+8. **Paragraf Uzunluğu:** 70 kelimenin altında kalan 4 paragraf belgeli ayrıntılarla genişletildi ve toplam kelime sayısı 2.200–3.000 bandına alındı.
