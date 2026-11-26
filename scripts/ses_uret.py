@@ -269,14 +269,28 @@ def temizle_pcm(pcm, hiz, bit=16):
     return struct.pack('<%dh' % len(s), *s), kirp is not None
 
 
+def mp3_pcm(veri):
+    """MP3 → 24 kHz 16 bit tek kanal PCM."""
+    return subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', 'pipe:0', '-f', 's16le', '-ac', '1', '-ar', '24000',
+                           'pipe:1'], input=veri, capture_output=True, check=True).stdout
+
+
 def mp3e(pcm, hiz, bit):
-    """PCM → (MP3 baytları, süre sn); sondaki cızırtı atılır."""
-    if bit == 16:
-        pcm, _ = temizle_pcm(pcm, hiz, bit)
-    sure = round(len(pcm) / (hiz * bit // 8), 3)
-    mp3 = subprocess.run(['ffmpeg', '-loglevel', 'error', '-f', f's{bit}le', '-ar', str(hiz), '-ac', '1',
-                          '-i', 'pipe:0', '-codec:a', 'libmp3lame', '-b:a', '64k', '-f', 'mp3', 'pipe:1'],
-                         input=pcm, capture_output=True, check=True).stdout
+    """PCM → (MP3 baytları, süre sn); sondaki cızırtı atılır.
+    Cızırtı ham PCM'de her zaman yakalanmıyor: grup 1–3 hikâyelerinin MP3'lerinde kalmıştı (Emre duydu; ör.
+    98d01f0a86874170: sondaki ~0,18 sn, RMS ~9–16 bin, sıfır geçişi 0,27–0,46), ama aynı ölçüt MP3'ten çözülen seste
+    onu buluyor. Bu yüzden MP3 yeniden çözülüp denetlenir; kırpılacak bir şey kalmayana dek (en çok 3 kez) tekrarlanır."""
+    for _ in range(3):
+        if bit == 16:
+            pcm, _ = temizle_pcm(pcm, hiz, bit)
+        sure = round(len(pcm) / (hiz * bit // 8), 3)
+        mp3 = subprocess.run(['ffmpeg', '-loglevel', 'error', '-f', f's{bit}le', '-ar', str(hiz), '-ac', '1',
+                              '-i', 'pipe:0', '-codec:a', 'libmp3lame', '-b:a', '64k', '-f', 'mp3', 'pipe:1'],
+                             input=pcm, capture_output=True, check=True).stdout
+        geri = mp3_pcm(mp3)
+        if not temizle_pcm(geri, 24000)[1]:
+            break
+        pcm, hiz, bit = geri, 24000, 16
     return mp3, sure
 
 
@@ -587,8 +601,7 @@ def duzelt(ses, cikti):
     degisen = set(json.loads(liste_yolu.read_text(encoding='utf-8'))) if liste_yolu.exists() else set()
     dosyalar = sorted(f for f in cikti.glob('*.mp3'))
     for i, f in enumerate(dosyalar, 1):
-        pcm = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', str(f), '-f', 's16le', '-ac', '1', '-ar', '24000',
-                              'pipe:1'], capture_output=True, check=True).stdout
+        pcm = mp3_pcm(f.read_bytes())
         _, kirpildi = temizle_pcm(pcm, 24000)
         if kirpildi:
             veri, sure = mp3e(pcm, 24000, 16)
