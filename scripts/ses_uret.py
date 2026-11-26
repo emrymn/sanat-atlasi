@@ -104,9 +104,21 @@ def hikaye_parcalari():
     return sonuc
 
 
-def parcalar(yalniz=None, hikaye=False):
+def gunun_notlari():
+    """Günün resimlerinden rehberi olmayanların notu ('_gunun'). Rehberi olmayan eserde "Dinleyerek bak" yalnız
+    açılışı (künye + not), kapanışı ve sessiz anı okur; not kayıtlıysa açılış yalnız nottur (künye ekranda)."""
+    notlar = oku('eser_notlari.json')['notlar']
+    secim = oku('gunun_resimleri.json')['secim'].values()
+    anahtarlar = set(secim) | {v[2:] for v in secim if v.startswith('q:')}
+    return [duzgun(v) for k, v in notlar.items() if k in anahtarlar and isinstance(v, str) and duzgun(v)]
+
+
+def parcalar(yalniz=None, hikaye=False, gunun=False):
     """Eser anahtarı → okunacak parçalar (sırayla). `yalniz`: yalnız bu eser anahtarları.
     `hikaye`: yalnız sanatçı hikâyeleri ('hikaye:<kimlik>' anahtarlarıyla)."""
+    if gunun:
+        var = {m for v in parcalar().values() for m in v}
+        return {'_gunun': [m for m in dict.fromkeys(gunun_notlari()) if m not in var]}
     if hikaye:
         h = hikaye_parcalari()
         return {k: v for k, v in h.items() if yalniz is None or k in yalniz or k.split(':', 1)[1] in yalniz}
@@ -642,6 +654,8 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--gunun', action='store_true',
+                    help='günün resimlerinden rehberi olmayanların notu (açılış Fola ile okunsun)')
     ap.add_argument('--hikaye', action='store_true',
                     help='yalnız sanatçı hikâyeleri (data/sanatci_hikayeleri.json); --eser ile sanatçı kimliği süzülür')
     ap.add_argument('--duzelt', action='store_true',
@@ -667,10 +681,10 @@ def main():
         print(f'{len(dizin)} parça, {harcanan} karakter okutuldu → ses_deneme/{g.ses}/ (metinler yanındaki .json\'da).')
         return
 
-    eserler = parcalar(yalniz=set(g.eser) if g.eser else None, hikaye=g.hikaye)
+    eserler = parcalar(yalniz=set(g.eser) if g.eser else None, hikaye=g.hikaye, gunun=g.gunun)
     tekil = {m for v in eserler.values() for m in v}
     karakter = sum(len(m) for m in tekil)
-    print(f'{len(eserler) - (0 if g.hikaye else 1)} {"hikâye" if g.hikaye else "eser"}, {len(tekil)} parça, '
+    print(f'{len(eserler) - (0 if g.hikaye or g.gunun else 1)} {"hikâye" if g.hikaye else "eser"}, {len(tekil)} parça, '
           f'{karakter} karakter.')
     if g.say:
         return
