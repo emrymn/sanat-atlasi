@@ -141,9 +141,20 @@ def buyuk_tip(sema):
     return sema
 
 
+def gemini_json(model, metin, sema, sicaklik):
+    """JSON cevap; yarım gelirse (sınırda kesilme) bir kez daha ister"""
+    for deneme in range(2):
+        yazi, _, _ = gemini(model, metin, sema=sema, sicaklik=sicaklik)
+        try:
+            return json_ayikla(yazi)
+        except json.JSONDecodeError as e:
+            print(f'    JSON yarım ({e.msg}); yeniden isteniyor…', flush=True)
+    sys.exit('İki denemede de JSON yarım geldi; durdu (komutu yeniden çalıştırınca kaldığı yerden sürer).')
+
+
 def gemini(model, metin, arama=False, sema=None, sicaklik=0.7):
     govde = {'contents': [{'role': 'user', 'parts': [{'text': metin}]}],
-             'generationConfig': {'temperature': sicaklik, 'maxOutputTokens': 32768}}
+             'generationConfig': {'temperature': sicaklik, 'maxOutputTokens': 65536}}
     if arama:
         govde['tools'] = [{'google_search': {}}]
     if sema:
@@ -154,6 +165,9 @@ def gemini(model, metin, arama=False, sema=None, sicaklik=0.7):
     yazi = ''.join(p.get('text', '') for p in aday.get('content', {}).get('parts', []) if not p.get('thought'))
     if not yazi.strip():
         sys.exit(f"Boş cevap (finishReason: {aday.get('finishReason')}): {json.dumps(d)[:600]}")
+    if aday.get('finishReason') == 'MAX_TOKENS':
+        # Düşünce jetonları da sınıra sayılıyor (Goya'da 24 bin düşünce + 8,7 bin çıktı = 32 768'de kesildi)
+        print('    cevap jeton sınırında kesildi', flush=True)
     meta = aday.get('groundingMetadata', {})
     kaynaklar = [{'baslik': c['web'].get('title', ''), 'adres': c['web'].get('uri', '')}
                  for c in meta.get('groundingChunks', []) if c.get('web')]
@@ -425,13 +439,11 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
 
     if not yollar[2].exists():
         print('  2/4 hikâye…', flush=True)
-        yazi, _, _ = gemini(model, taslak_istemi(s, eserler, a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.8)
-        t = json_ayikla(yazi)
+        t = gemini_json(model, taslak_istemi(s, eserler, a['dosya']), TASLAK_SEMASI, 0.8)
         kelime = sum(len(p.split()) for p in t['giris'] + [p for b in t['bolumler'] for p in b['paragraflar']] + t['kapanis'])
         if kelime < HEDEF_KELIME[0] * 0.85:
             print(f'    {kelime} kelime, kısa; genişletiliyor…', flush=True)
-            yazi, _, _ = gemini(model, genisletme_istemi(t, kelime, a['dosya']), sema=TASLAK_SEMASI, sicaklik=0.7)
-            t = json_ayikla(yazi)
+            t = gemini_json(model, genisletme_istemi(t, kelime, a['dosya']), TASLAK_SEMASI, 0.7)
         yaz(yollar[2], t)
     taslak = oku(yollar[2])
 
@@ -454,8 +466,7 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
     if not yollar[4].exists():
         if denetim['sorunlar']:
             print('  4/4 düzeltme…', flush=True)
-            yazi, _, _ = gemini(model, duzeltme_istemi(taslak, denetim['sorunlar']), sema=TASLAK_SEMASI, sicaklik=0.2)
-            son = json_ayikla(yazi)
+            son = gemini_json(model, duzeltme_istemi(taslak, denetim['sorunlar']), TASLAK_SEMASI, 0.2)
         else:
             son = taslak
         yaz(yollar[4], son)
