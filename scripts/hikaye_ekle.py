@@ -81,6 +81,7 @@ def main():
         sys.exit('Denetimden geçmedi.')
     if g.ekle:
         cikti = hu.oku(hu.CIKTI) if hu.CIKTI.exists() else {'surum': 1, 'sanatcilar': {}}
+        h['kaynaklar'] = hu.kaynak_ayikla(h['kaynaklar'])
         cikti['sanatcilar'][g.sanatci] = {**h, 'model': 'gemini-4-neon (Antigravity)', 'denetci': 'Antigravity + Claude',
                                           'duzeltilen': None, 'olusturma': time.strftime('%Y-%m-%d')}
         hu.yaz(hu.CIKTI, cikti)

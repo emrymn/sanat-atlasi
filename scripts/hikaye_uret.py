@@ -40,6 +40,7 @@ import sys
 import time
 import unicodedata
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -227,6 +228,45 @@ def kaynak_coz(kaynaklar):
         gorulen.add(adres)
         sonuc.append({'baslik': k['baslik'], 'adres': adres})
     return sonuc
+
+
+# Uygulamada gösterilmeyecek kaynaklar: korsan kitap/belge siteleri, forum, stok görsel, video, sorgu sayfaları
+KAYNAK_DISI = ('scribd.com', 'dokumen.pub', 'reddit.com', 'alamy.com', 'youtube.com', 'wahooart.com', 'kiddle.co',
+               'google.com/search', 'vertexaisearch', 'upload.wikimedia.org', 'pinterest.', 'quora.com', 'facebook.com',
+               'instagram.com', 'tiktok.com', 'amazon.', 'ebay.', 'etsy.com', 'coursehero.com', 'studocu.com',
+               'brainly.', 'answers.com', 'note.com')
+# Sıralama: müze ve arşiv, akademik, basın ve sanat yayınları, ötekiler (Vikipedi en sonda)
+KAYNAK_SIRA = [
+    ('museum', 'museo', 'musee', 'gallery', 'galleria', 'collection', 'rijks', 'prado', 'louvre', 'uffizi', 'khm.at',
+     'munch.no', 'nasjonalmuseet', 'vangoghmuseum', 'vangoghletters', 'metmuseum', 'nga.gov', 'archive.org', 'archivio', 'archives.',
+     'kimbellart', 'getty', 'belvedere', 'albertina', 'mauritshuis', 'christies', 'sothebys', 'essentialvermeer'),
+    ('.edu', '.ac.', 'researchgate', 'brill.com', 'tandfonline', 'jstor', 'ncbi.nlm.nih.gov', 'academia.edu',
+     '19thc-artworldwide', 'smarthistory', 'oxfordartonline', 'cambridge.org', 'degruyter', 'muse.jhu', 'persee.fr'),
+    ('britannica', 'theguardian', 'nytimes', 'smithsonianmag', 'theartnewspaper', 'apollo-magazine', 'artnews',
+     'independent.co.uk', 'bbc.', 'theartstory', 'newyorker', 'artsandculture.google'),
+]
+
+
+def kaynak_ayikla(kaynaklar):
+    """Gösterilecek kaynaklar: dışlananlar atılır, aynı adres bir kez, güvenilirliğe göre sıralı"""
+    def alan(a):
+        return urllib.parse.urlparse(a).netloc.lower().removeprefix('www.')
+
+    def sira(k):
+        a = alan(k['adres'])
+        for i, grup in enumerate(KAYNAK_SIRA):
+            if any(g in a for g in grup):
+                return i
+        return 4 if 'wikipedia.org' in a else 3
+    gorulen, sonuc = set(), []
+    for k in kaynaklar:
+        a = k.get('adres', '')
+        dis = any(d in a.lower() for d in KAYNAK_DISI) or alan(a) in ('google.com', 'books.google.com')
+        if not a.startswith('http') or dis or a in gorulen:
+            continue
+        gorulen.add(a)
+        sonuc.append(k)
+    return sorted(sonuc, key=sira)
 
 
 def json_ayikla(yazi):
@@ -509,7 +549,7 @@ def uret(sid, model, sanatcilar, onbellek, yeniden):
         print(f"  listede olmayan {len(atilan)} eser atıldı: {', '.join(e['qid'] for e in atilan)}")
     print(f"  bitti: {son['kelime']:,} kelime, {len(son['bolumler'])} bölüm, "
           f"{sum(len(b['eserler']) for b in son['bolumler'])} eser, {len(son['baglantilar'])} bağlantı", flush=True)
-    return {**son, 'kaynaklar': a['kaynaklar'], 'model': model, 'denetci': denetim['denetci'],
+    return {**son, 'kaynaklar': kaynak_ayikla(a['kaynaklar']), 'model': model, 'denetci': denetim['denetci'],
             'duzeltilen': len(denetim['sorunlar']), 'olusturma': time.strftime('%Y-%m-%d')}
 
 
