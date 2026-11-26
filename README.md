@@ -316,3 +316,7 @@ Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: A
   git add data/gorsel_kaynagi.json data/b_yenilenen.json && git commit -m "1280'likler yenilendi" && git push
   ```
 - ~~**Kopya eser taraması**~~ — yapıldı (İş 118: 1 yeni çift, Ribera'nın iki baskısı).
+
+## Sanatçı hikâyeleri (Gemini, araştırmalı)
+`scripts/hikaye_uret.py`: her sanatçı için Gemini Google Arama ile kaynaklı bir araştırma dosyası çıkarır, hayatın dönemlerini ve resimlere etkisini yalnız o dosyadan, bizim eserlerimizle (qid) örülmüş uzun bir Türkçe hikâye olarak yazar; ikinci bir model (Qwen ya da Gemini) denetler, sorunlu cümleler düzeltilir. Sonuç `data/sanatci_hikayeleri.json`, ara dosyalar `hikaye/` (git dışı). Kullanım betiğin başında.
+Para harcamadan Antigravity'de (Neon) yazdırmak için: `scripts/hikaye_antigravity.md`'deki istem; gelen dosya `scripts/hikaye_ekle.py` ile denetlenip eklenir.

@@ -33,6 +33,8 @@ Kullanım (depo kökünde; ffmpeg gerekir):
   python3 scripts/ses_uret.py --yukle                # üretileni R2'ye yükler (r2_yukle.py'nin ortam değişkenleri)
   python3 scripts/ses_uret.py --toplu               # Batch API: günlük sınır yok, yarı fiyat; bitene kadar bekler
   python3 scripts/ses_uret.py --say                  # yalnız parça ve karakter sayısı (istek göndermez)
+  python3 scripts/ses_uret.py --hikaye --toplu       # sanatçı hikâyeleri (data/sanatci_hikayeleri.json), anahtar
+                                                     # 'hikaye:<kimlik>'; parça sözleşmesi aynı (hikaye_parcalari)
 """
 import argparse
 import base64
@@ -80,8 +82,34 @@ def oku(ad):
     return json.loads((KOK / 'data' / ad).read_text(encoding='utf-8'))
 
 
-def parcalar(yalniz=None):
-    """Eser anahtarı → okunacak parçalar (sırayla). `yalniz`: yalnız bu eser anahtarları."""
+def hikaye_parcalari():
+    """Sanatçı hikâyeleri (data/sanatci_hikayeleri.json) → 'hikaye:<kimlik>': okunacak parçalar, sırayla.
+    Uygulama aynı sırayı kurar: başlık, alt başlık, giriş paragrafları, her bölüm için bölüm başlığı (yılsız) ve
+    paragrafları, kapanış paragrafları. Eserlerin "bag" notları ve bağlantılar okunmaz (ekranda)."""
+    yol = KOK / 'data' / 'sanatci_hikayeleri.json'
+    if not yol.exists():
+        return {}
+    sonuc = {}
+    for sid, h in json.loads(yol.read_text(encoding='utf-8'))['sanatcilar'].items():
+        metinler = [h['baslik'], h['alt_baslik'], *h['giris']]
+        for b in h['bolumler']:
+            metinler += [b['baslik'], *b['paragraflar']]
+        metinler += h['kapanis']
+        liste = []
+        for m in metinler:
+            m = duzgun(m)
+            if m and m not in liste:
+                liste.append(m)
+        sonuc[f'hikaye:{sid}'] = liste
+    return sonuc
+
+
+def parcalar(yalniz=None, hikaye=False):
+    """Eser anahtarı → okunacak parçalar (sırayla). `yalniz`: yalnız bu eser anahtarları.
+    `hikaye`: yalnız sanatçı hikâyeleri ('hikaye:<kimlik>' anahtarlarıyla)."""
+    if hikaye:
+        h = hikaye_parcalari()
+        return {k: v for k, v in h.items() if yalniz is None or k in yalniz or k.split(':', 1)[1] in yalniz}
     notlar = oku('eser_notlari.json')['notlar']
     eserler = {}
 
@@ -614,6 +642,8 @@ def main():
     ap.add_argument('--say', action='store_true', help='yalnız parça ve karakter sayısı')
     ap.add_argument('--yukle', action='store_true', help='ses/<ses>/ altındakileri R2\'ye yükle')
     ap.add_argument('--eser', action='append', help='yalnız bu eser anahtarı (QID); birden çok verilebilir')
+    ap.add_argument('--hikaye', action='store_true',
+                    help='yalnız sanatçı hikâyeleri (data/sanatci_hikayeleri.json); --eser ile sanatçı kimliği süzülür')
     ap.add_argument('--duzelt', action='store_true',
                     help='üretilmiş seslerin sonundaki cızırtıyı kırp (istek yok); sonra --yukle')
     ap.add_argument('--denetle', action='store_true',
@@ -637,10 +667,11 @@ def main():
         print(f'{len(dizin)} parça, {harcanan} karakter okutuldu → ses_deneme/{g.ses}/ (metinler yanındaki .json\'da).')
         return
 
-    eserler = parcalar(yalniz=set(g.eser) if g.eser else None)
+    eserler = parcalar(yalniz=set(g.eser) if g.eser else None, hikaye=g.hikaye)
     tekil = {m for v in eserler.values() for m in v}
     karakter = sum(len(m) for m in tekil)
-    print(f'{len(eserler) - 1} eser, {len(tekil)} parça, {karakter} karakter.')
+    print(f'{len(eserler) - (0 if g.hikaye else 1)} {"hikâye" if g.hikaye else "eser"}, {len(tekil)} parça, '
+          f'{karakter} karakter.')
     if g.say:
         return
     cikti = KOK / 'ses' / g.ses
