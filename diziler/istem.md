@@ -9,7 +9,11 @@ Görev: "Diziler" için bir bölüm yaz: BOLUM. Dizinin adı ve öbür bölümle
 Bu, tek bir sanatçının hayatı değil; iki (bazen üç-dört) sanatçıyı bir olay, çatışma ya da tema üzerinden bağlayan
 8–10 dakikalık bir hikâye. Okunur ve sesli dinlenir.
 
-1. ARAŞTIRMA (web araması zorunlu, en az 15 arama)
+0. ÖNCE OKU: diziler/arastirma/<dizi-id>.md varsa o bölümün yönergesini (sorular, doğrulanacak iddialar, ayıklanacak
+efsaneler, öncelikli kaynaklar) baştan sona oku. Oradaki her maddeyi araştır; yönergedeki bilgiler kaynak değildir,
+doğrula. Yönergeyle kaynak çelişirse kaynağa uy ve denetim dosyasına yaz.
+
+1. ARAŞTIRMA (web araması zorunlu, en az 20 arama)
 Müze siteleri, akademik kaynaklar, Smarthistory, Britannica, çağdaş belgeler (mektuplar, sözleşmeler, mahkeme tutanakları),
 erken biyografiler (Vasari vb. ise "anlatılır" diye). Wikipedia yalnız başlangıç, kaynak değil.
 Dosyanın başına KRONOLOJİ TABLOSU: olaya giren her tarih, yaş, yer; her satırda kaynak adresi.
