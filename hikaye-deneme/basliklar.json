@@ -1,0 +1,659 @@
+{
+  "caravaggio": {
+    "baslik": "Caravaggio: Roma'dan Malta'ya kaçak bir ressam",
+    "bolumler": [
+      "Milano'da çocukluk, çıraklık ve Roma",
+      "Kardinal Del Monte ve Palazzo Madama",
+      "Contarelli Şapeli ve Baglione davası",
+      "Reddedilen sunaklar ve Tomassoni cinayeti",
+      "Colonna toprakları ve Napoli'ye kaçış",
+      "Malta'da şövalyelik, hapis ve son yolculuk"
+    ]
+  },
+  "rembrandt-van-rijn": {
+    "baslik": "Rembrandt: Leiden'dan Amsterdam'a yükseliş ve iflas",
+    "bolumler": [
+      "Leiden'da yetişme yılları ve ilk atölye",
+      "Doktor Tulp, Saskia ve yeni konak",
+      "Breestraat konağı ve Saskia'nın ölümü",
+      "Hendrickje Stoffels, iflas ve kalın boya",
+      "Rozengracht evi ve lonca portresi",
+      "Titus'un ölümü ve son otoportreler",
+      "Kapanış"
+    ]
+  },
+  "francisco-de-goya": {
+    "baslik": "Goya: Saray ressamından sağır bir tanığa",
+    "bolumler": [
+      "Zaragoza'dan Madrid halı atölyesine",
+      "Pilar Bazilikası ve soylu portreleri",
+      "Sağırlık, Los Caprichos ve kraliyet portresi",
+      "Yarımada Savaşı ve Engizisyon yılları",
+      "Quinta del Sordo ve Kara Resimler",
+      "Bordeaux'da sürgün ve son tablolar"
+    ]
+  },
+  "vincent-van-gogh": {
+    "baslik": "Van Gogh: On yılda Hollanda, Paris ve Arles",
+    "bolumler": [
+      "Borinage, Lahey ve Nuenen yılları",
+      "Anvers, Paris ve Japon baskıları",
+      "Arles'da Sarı Ev ve gece resimleri",
+      "Gauguin ile dokuz hafta ve kavga",
+      "Saint-Rémy hastanesi ve Yıldızlı Gece",
+      "Auvers-sur-Oise, Doktor Gachet ve son tablo"
+    ]
+  },
+  "edvard-munch": {
+    "baslik": "Munch: Kristiania, Berlin ve Ekely'de bir ömür",
+    "bolumler": [
+      "Kristiania'da çocukluk ve Hasta Çocuk",
+      "Saint-Cloud notları ve Berlin sergi skandalı",
+      "Berlin çevresi, Yaşam Frizi ve Çığlık",
+      "Tabanca olayı, taşbaskılar ve Kopenhag kliniği",
+      "Norveç kıyılarına dönüş ve açık hava",
+      "Ekely atölyesi, göz kanaması ve vasiyet"
+    ]
+  },
+  "michelangelo": {
+    "baslik": "Michelangelo: Heykeltıraşın Floransa ve Vatikan freskleri",
+    "bolumler": [
+      "Floransa'da çıraklık ve anatomi çalışmaları",
+      "Doni Tondo ve Cascina Savaşı",
+      "Sistine Şapeli tavanı",
+      "Floransa kuşatması ve Cavalieri çizimleri",
+      "Son Yargı freski ve çıplaklık tartışması",
+      "Paolina Şapeli freskleri ve son çizimler"
+    ]
+  },
+  "gustav-klimt": {
+    "baslik": "Klimt: Viyana Secession'u, altın varak ve portreler",
+    "bolumler": [
+      "Viyana'da eğitim ve Secession'un kuruluşu",
+      "Üniversite skandalı ve Ravenna yolculuğu",
+      "Altın varaklı portreler ve Öpücük",
+      "Hietzing atölyesi ve renkli portreler",
+      "Savaş yılları, Attersee ve yarım tuvaller"
+    ]
+  },
+  "leonardo-da-vinci": {
+    "baslik": "Leonardo: Floransa, Milano ve Fransa'da yarım eserler",
+    "bolumler": [
+      "Verrocchio atölyesi ve ilk desenler",
+      "Benois Madonnası ve Sforza'ya mektup",
+      "Milano sarayı ve Son Akşam Yemeği",
+      "Anghiari Savaşı, Borgia ve Mona Lisa",
+      "Kadavra incelemeleri ve anatomi defterleri",
+      "Roma yılları ve Clos Lucé şatosu"
+    ]
+  },
+  "hieronymus-bosch": {
+    "baslik": "Bosch: 's-Hertogenbosch'ta bir kasaba ressamının panoları",
+    "bolumler": [
+      "'s-Hertogenbosch yangını ve aile atölyesi",
+      "Evlilik ve Meryem Ana Kardeşliği",
+      "Zevk Bahçesi ve büyük üçkanatlılar",
+      "Atölye üretimi ve Aziz Antonius",
+      "Yakın plan panolar ve son çizimler",
+      "Ölümünden sonra taklitçiler ve atıf tartışmaları"
+    ]
+  },
+  "diego-velazquez": {
+    "baslik": "Velázquez: Sevilla mutfaklarından Madrid sarayına",
+    "bolumler": [
+      "Sevilla'da çıraklık ve Sevilla Sucu",
+      "Madrid sarayı ve Rubens'in ziyareti",
+      "İlk İtalya yolculuğu ve Villa Medici",
+      "Madrid'de portreler ve Krallıklar Salonu",
+      "Saray kayıpları, Dinlenen Mars ve Venüs",
+      "İkinci İtalya gezisi ve Papa portresi",
+      "Las Meninas, şövalyelik ve son görev"
+    ]
+  },
+  "edgar-degas": {
+    "baslik": "Degas: Paris operası, balerinler ve azalan görme",
+    "bolumler": [
+      "İtalya yılları ve Bellelli Ailesi",
+      "Café Guerbois, Opera ve Paris Kuşatması",
+      "New Orleans ve aile bankasının iflası",
+      "Empresyonist sergiler ve Paris kafeleri",
+      "Yıkanan kadın pastelleri ve borçların bitişi",
+      "Dreyfus olayı ve ilerleyen görme kaybı"
+    ]
+  },
+  "gustave-courbet": {
+    "baslik": "Courbet: Realizm Pavyonu'ndan İsviçre sürgününe",
+    "bolumler": [
+      "Ornans'tan Paris'e ve erken otoportreler",
+      "Taş Kırıcılar ve Ornans'ta Cenaze",
+      "Bruyas'nın desteği ve Realizm Pavyonu",
+      "Bağımsız atölye ve av sahneleri",
+      "Trouville sahili ve Khalil-Bey siparişleri",
+      "Paris Komünü, hapis ve İsviçre sürgünü"
+    ]
+  },
+  "johannes-vermeer": {
+    "baslik": "Vermeer: Delft'te bir ressamın hayatı",
+    "bolumler": [
+      "Delft'te çocukluk ve ilk tablolar",
+      "Van Ruijven'in desteği ve ev sahneleri",
+      "Lonca yöneticiliği ve olgunluk dönemi",
+      "Yeni optik üslup ve küçük panolar",
+      "Savaş krizi, borçlar ve ani ölüm"
+    ]
+  },
+  "giotto-di-bondone": {
+    "baslik": "Giotto: Padova şapelinden Floransa Katedrali başmimarlığına",
+    "bolumler": [
+      "Çoban söylencesi ve Santa Maria Novella",
+      "Assisi tartışması ve Badia Polipitiği",
+      "Padova'da Scrovegni Şapeli freskleri",
+      "Son Yargı ve Erdemler kuşağı",
+      "Floransa'da ticaret ve Stefaneschi Triptiği",
+      "Napoli sarayı ve Floransa Katedrali"
+    ]
+  },
+  "masaccio": {
+    "baslik": "Masaccio: Floransa'da altı yıllık fresk çalışması",
+    "bolumler": [
+      "Floransa'ya geliş ve ilk panolar",
+      "Masolino işbirliği ve Doğum Tepsisi",
+      "Brancacci Şapeli ve Vergi Parası",
+      "Pisa Çokkanatlısı ve Casini Madonnası",
+      "Santa Maria Novella'da Teslis freski",
+      "Vergi borçları ve Roma'da ölüm"
+    ]
+  },
+  "sandro-botticelli": {
+    "baslik": "Botticelli: Medici bahçelerinden Savonarola dönemine",
+    "bolumler": [
+      "Lippi atölyesi ve ilk siparişler",
+      "Medici çevresi ve Pazzi Komplosu",
+      "Sistine Şapeli duvarları ve tondolar",
+      "Mitolojik tablolar ve Venüs'ün Doğuşu",
+      "Savonarola dönemi ve Apelles'in İftirası",
+      "Mistik Doğum ve Davud komitesi"
+    ]
+  },
+  "jan-van-eyck": {
+    "baslik": "Van Eyck: Burgonya sarayının yağlıboya ustası",
+    "bolumler": [
+      "Burgonya sarayı ve yağlıboya tekniği",
+      "Gent Altar Panosu'nun tamamlanması",
+      "Yakın plan portreler ve imzalar",
+      "Brugge evi ve Arnolfini Portresi",
+      "Dini panolar ve optik ayrıntılar",
+      "Margareta portresi ve Brugge'de veda"
+    ]
+  },
+  "albrecht-durer": {
+    "baslik": "Dürer: Nürnberg'de gravür, suluboya ve kuram kitapları",
+    "bolumler": [
+      "Nürnberg'de çıraklık ve ilk yolculuklar",
+      "İlk İtalya gezisi, Kıyamet ve otoportreler",
+      "Doğa suluboyaları ve oran araştırmaları",
+      "Venedik yolculuğu ve telif davası",
+      "Usta gravürler ve Gergedan baskısı",
+      "Hollanda yolculuğu, kuram kitapları ve vasiyet"
+    ]
+  },
+  "pieter-bruegel-yasl": {
+    "baslik": "Bruegel: Anvers baskıları ve Brüksel köy resimleri",
+    "bolumler": [
+      "İtalya yolculuğu ve Dört Rüzgâr basımevi",
+      "Atasözleri, Çocuk Oyunları ve meydan sahneleri",
+      "Brüksel'de evlilik ve Babil Kulesi",
+      "Aylar dizisi ve Karda Avcılar",
+      "Habsburg baskısı ve kış köyleri",
+      "Körün Kıssası ve son eserler"
+    ]
+  },
+  "raphael": {
+    "baslik": "Raphael: Urbino'dan Vatikan odalarına otuz yedi yıl",
+    "bolumler": [
+      "Urbino, Perugino ve Meryem'in Evliliği",
+      "Floransa yılları ve Çarmıhtan İndiriliş",
+      "Vatikan kütüphanesi ve Atina Okulu",
+      "Eliodoro Odası ve Villa Farnesina",
+      "Aziz Petrus başmimarlığı ve geç portreler",
+      "Başkalaşım tablosu ve Panteon'daki mezar"
+    ]
+  },
+  "titian": {
+    "baslik": "Titian: Venedik ve Habsburg saraylarında yetmiş yıl",
+    "bolumler": [
+      "Venedik'e geliş ve Giorgione işbirliği",
+      "Frari Bazilikası sunakları ve Ferrara şölenleri",
+      "Aretino dostluğu ve Urbino Venüsü",
+      "Roma yolculuğu ve Augsburg'da V. Karl",
+      "II. Felipe için mitolojik tuvaller",
+      "Geç dönem tekniği ve Marsyas"
+    ]
+  },
+  "paolo-veronese": {
+    "baslik": "Veronese: Venedik şölenleri ve Engizisyon duruşması",
+    "bolumler": [
+      "Verona'dan Venedik'e ilk büyük siparişler",
+      "Villa Barbaro ve Kana'daki Düğün",
+      "Aile atölyesi, alegoriler ve İnebahtı",
+      "Venedik Engizisyonu ve Levi'nin Şöleni",
+      "Dükler Sarayı yangını ve Venedik'in Zaferi",
+      "San Sebastiano ve son tablolar"
+    ]
+  },
+  "tintoretto": {
+    "baslik": "Tintoretto: Venedik kardeşlik salonlarının hızlı ressamı",
+    "bolumler": [
+      "Venedik'te yetişme ve Kölenin Mucizesi",
+      "Madonna dell'Orto ve Susanna tablosu",
+      "Aziz Markos dizisi ve Venedik portreleri",
+      "San Rocco yarışması ve Çarmıha Geriliş",
+      "Cannaregio atölyesi ve San Rocco salonları",
+      "Cennet tuvali ve son eserler"
+    ]
+  },
+  "el-greco": {
+    "baslik": "El Greco: Girit ikonalarından Toledo kiliselerine",
+    "bolumler": [
+      "Girit ikonaları, Venedik ve Roma",
+      "Toledo'ya yerleşme ve katedral davası",
+      "Orgaz Kontu'nun Gömülmesi ve göz söylentisi",
+      "Toledo Manzarası ve Kardinal Guevara",
+      "Villena Sarayı ve Pacheco'nun ziyareti",
+      "Laokoon ve son Toledo tabloları"
+    ]
+  },
+  "sofonisba-anguissola": {
+    "baslik": "Sofonisba Anguissola: Cremona ve Madrid sarayında portreler",
+    "bolumler": [
+      "Cremona'da eğitim ve Michelangelo'nun mektubu",
+      "Satranç tablosu ve Cremona otoportreleri",
+      "İlk soylu siparişleri ve yarım portre",
+      "Madrid sarayı ve Kraliçe'nin nedimeliği",
+      "İmzasız kral portresi ve iki evlilik",
+      "Cenova, Palermo ve Van Dyck ziyareti"
+    ]
+  },
+  "parmigianino": {
+    "baslik": "Parmigianino: Parma, Roma ve Bologna'da kısa ömür",
+    "bolumler": [
+      "Parma'da yetişme ve Bardi Sunağı",
+      "Roma yolculuğu ve Dışbükey Aynada Otoportre",
+      "Aziz Hieronymus ve Roma Yağması",
+      "Bologna yılları ve asit baskıları",
+      "Steccata sözleşmesi ve Uzun Boyunlu Madonna",
+      "Parma'da hapis ve Casalmaggiore sürgünü"
+    ]
+  },
+  "artemisia-gentileschi": {
+    "baslik": "Artemisia: Roma davası, Floransa Akademisi ve Londra",
+    "bolumler": [
+      "Orazio atölyesi ve Susanna tablosu",
+      "Tassi davası ve ilk Judith",
+      "Floransa Akademisi ve Medici himayesi",
+      "Roma'da bağımsız atölye ve Venedik",
+      "Napoli atölyesi ve büyük siparişler",
+      "Londra sarayı ve Napoli'ye dönüş"
+    ]
+  },
+  "guido-reni": {
+    "baslik": "Guido Reni: Bologna, Roma ve kumar borçları",
+    "bolumler": [
+      "Bologna'da Calvaert ve Carracci eğitimi",
+      "Roma yılları ve Aurora tavanı",
+      "Bologna'ya dönüş ve Napoli'den ayrılış",
+      "Bologna vebası ve Veba Sunağı",
+      "Kumar borçları ve geç dönem tuvaller"
+    ]
+  },
+  "georges-de-la-tour": {
+    "baslik": "La Tour: Lorraine'de mum ışıklı gece resimleri",
+    "bolumler": [
+      "Lorraine'de yetişme ve gündüz tabloları",
+      "Hileci, Falcı ve sahtecilik tartışması",
+      "Lunéville yangını ve Paris yolculuğu",
+      "Mum ışıklı gece resimleri",
+      "Lunéville arşivleri ve salgın ölümü",
+      "Hermann Voss ve yeniden keşif"
+    ]
+  },
+  "francisco-de-zurbaran": {
+    "baslik": "Zurbarán: Sevilla manastırları ve İspanya sarayı",
+    "bolumler": [
+      "Extremadura'dan ilk Sevilla manastır siparişlerine",
+      "Sevilla daveti, lonca tartışması ve natürmort",
+      "Kadın azizeler ve büyük manastır dizileri",
+      "Madrid sarayı ve Tanrı'nın Kuzusu",
+      "Amerika'ya ihracat ve Sevilla vebası",
+      "Madrid'e taşınma ve Louvre galerisi"
+    ]
+  },
+  "peter-paul-rubens": {
+    "baslik": "Rubens: Anvers atölyesi ve Avrupa diplomasisi",
+    "bolumler": [
+      "Siegen'de doğum ve İtalya yılları",
+      "Isabella Brant, katedral sunakları ve Rubenshuis",
+      "Rubenshuis atölyesi ve av tabloları",
+      "Medici galerisi ve aile kayıpları",
+      "Madrid diplomasisi, Londra ve şövalyelik",
+      "Helena Fourment ve Het Steen yılları"
+    ]
+  },
+  "anthony-van-dyck": {
+    "baslik": "Van Dyck: Anvers ve Londra'nın saray portrecisi",
+    "bolumler": [
+      "Anvers'te çıraklık ve Rubens atölyesi",
+      "İlk Londra gezisi ve Roma yılları",
+      "Palermo vebası ve Cenova saray portreleri",
+      "Anvers'e dönüş ve İkonografi baskıları",
+      "Blackfriars atölyesi ve I. Charles portreleri",
+      "Mali sıkıntılar, Paris gezisi ve ölüm"
+    ]
+  },
+  "frans-hals": {
+    "baslik": "Frans Hals: Haarlem'de milis ziyafetleri ve portreler",
+    "bolumler": [
+      "Anvers'ten Haarlem'e ve ilk milis ziyafeti",
+      "Gülen Şövalye ve Haarlem portreleri",
+      "Karakter başları ve Malle Babbe",
+      "Amsterdam siparişi kavgası ve koyu palet",
+      "Fırıncı borcu, haciz ve yalın portreler",
+      "Belediye maaşı ve Yardımevi yöneticileri"
+    ]
+  },
+  "nicolas-poussin": {
+    "baslik": "Poussin: Roma'da yaşayan Fransız tarih ressamı",
+    "bolumler": [
+      "Normandiya'dan Roma'ya ve Germanicus'un Ölümü",
+      "Hastalık, evlilik ve Venedik renkleri",
+      "Balmumu kutu ve felsefi tablolar",
+      "Paris sarayı görevi ve Roma'ya dönüş",
+      "Modlar kuramı ve Louvre Otoportresi",
+      "El titremesi ve Dört Mevsim dizisi"
+    ]
+  },
+  "william-hogarth": {
+    "baslik": "Hogarth: Londra sokaklarının hiciv ressamı ve gravürcüsü",
+    "bolumler": [
+      "Gümüş oymacılığı ve gizli evlilik",
+      "Ahlak dizileri ve gravür telif yasası",
+      "Kimsesiz Çocuklar Hastanesi ve portreler",
+      "Modaya Uygun Evlilik ve otoportre",
+      "Calais Kapısı, Cin Sokağı ve kitabı",
+      "Kraliyet baş ressamlığı ve Sigismunda"
+    ]
+  },
+  "jean-honore-fragonard": {
+    "baslik": "Fragonard: Salıncak, Louveciennes ve devrim yılları",
+    "bolumler": [
+      "Grasse'tan Roma Ödülü'ne ve İtalya'ya",
+      "Salon başarısı ve Salıncak tablosu",
+      "Fantezi Figürler ve Okuyan Genç Kız",
+      "Reddedilen Louveciennes panelleri ve ikinci İtalya",
+      "Louvre atölyesi, Sürgü ve Rosalie'nin ölümü",
+      "Fransız Devrimi ve Louvre görevi"
+    ]
+  },
+  "jacques-louis-david": {
+    "baslik": "Jacques-Louis David: Fransız Devrimi ve Napolyon'un ressamı",
+    "bolumler": [
+      "Roma eğitimi ve Belisarius çıkışı",
+      "Horas Kardeşler ve Sokrates'in Ölümü",
+      "Jakoben yılları ve Marat'nın Ölümü",
+      "Hapis, Sabin Kadınları ve Madam Récamier",
+      "Napolyon'un baş ressamlığı ve imparatorluk tabloları",
+      "Brüksel sürgünü ve son mitoloji tabloları"
+    ]
+  },
+  "caspar-david-friedrich": {
+    "baslik": "Friedrich: Baltık kıyıları ve Dresden atölyesi",
+    "bolumler": [
+      "Greifswald, Kopenhag ve sepya çizimler",
+      "Tetschen Sunağı ve Deniz Kenarında Keşiş",
+      "Sis Denizi, evlilik ve Rügen kayalıkları",
+      "Dahl ile dostluk ve Pencerede Kadın",
+      "Elbe buz etütleri ve Watzmann",
+      "Hayatın Evreleri, felç ve geç tanınma"
+    ]
+  },
+  "eugene-delacroix": {
+    "baslik": "Delacroix: Paris barikatları, Fas ve saray duvarları",
+    "bolumler": [
+      "Paris'te eğitim ve Dante'nin Kayığı",
+      "Sakız Adası ve Missolonghi tabloları",
+      "Temmuz Devrimi ve Özgürlük tablosu",
+      "Fas yolculuğu ve Cezayirli Kadınlar",
+      "Saray kütüphaneleri ve Yahudi Düğünü",
+      "Saint-Sulpice şapeli ve Ovidius tablosu"
+    ]
+  },
+  "edouard-manet": {
+    "baslik": "Manet: Paris Salon kavgaları ve modern şehir",
+    "bolumler": [
+      "Rio yolculuğu ve İspanyol Şarkıcı",
+      "Victorine Meurent ve Reddedilenler Salonu",
+      "Fifre Çalan Çocuk ve Émile Zola",
+      "Paris Kuşatması, Demiryolu ve Opera Balosu",
+      "Argenteuil yazı ve Kayık Gezintisi",
+      "Hastalık ve Folies-Bergère'de Bir Bar"
+    ]
+  },
+  "elisabeth-vigee-le-brun": {
+    "baslik": "Vigée Le Brun: Versailles sarayından Avrupa sürgününe",
+    "bolumler": [
+      "Paris'te yetişme ve ilk portreler",
+      "Akademi üyeliği ve Kraliçe portresi skandalı",
+      "Kızı Julie, Marie Antoinette ve eleştiriler",
+      "Paris'ten kaçış, İtalya ve Viyana",
+      "Sankt-Peterburg yılları ve Julie ile kopuş",
+      "Paris'e dönüş, Coppet ve Louveciennes"
+    ]
+  },
+  "henry-fuseli": {
+    "baslik": "Fuseli: Zürihli eski rahibin Londra kariyeri",
+    "bolumler": [
+      "Zürih'te rahiplik ve Londra'ya sürgün",
+      "Roma yılları ve Zürih'te Anna Landolt",
+      "Londra'ya dönüş ve Kâbus tablosu",
+      "Evlilik, Wollstonecraft ve Shakespeare Galerisi",
+      "Milton Galerisi ve Kayıp Cennet",
+      "Akademi hocalığı ve son tablolar"
+    ]
+  },
+  "william-blake": {
+    "baslik": "William Blake: Londra'da bakır levhalar ve gravürler",
+    "bolumler": [
+      "Soho'da yetişme ve Catherine ile evlilik",
+      "Kabartma baskı tekniği ve Lambeth yılları",
+      "Felpham köyü ve Chichester davası",
+      "Thomas Butts suluboyaları ve kişisel sergi",
+      "John Varley, Pirenin Hayaleti ve Eskiler",
+      "Eyüp Kitabı, Dante çizimleri ve mirası"
+    ]
+  },
+  "j-m-w-turner": {
+    "baslik": "Turner: Suluboyadan denizlere ve buharlı gemilere",
+    "bolumler": [
+      "Covent Garden'dan Kraliyet Akademisi'ne",
+      "Alpler, özel galeri ve Claude rekabeti",
+      "İtalya yolculukları, Trafalgar ve babanın ölümü",
+      "Parlamento yangını, Temeraire ve Köle Gemisi",
+      "Buharlı gemi, Goethe ve demiryolu",
+      "Norham Kalesi, Chelsea ve Turner Mirası"
+    ]
+  },
+  "theodore-gericault": {
+    "baslik": "Géricault: Medusa'nın Salı, Londra ve akıl hastaları",
+    "bolumler": [
+      "Paris atölyeleri ve Hücum Eden Subay",
+      "Yaralı Süvari, İtalya ve at yarışları",
+      "Méduse faciası ve morg etütleri",
+      "Medusa'nın Salı ve Paris Salonu",
+      "Londra sergisi ve Epsom Derbisi",
+      "Salpêtrière portreleri ve erken ölüm"
+    ]
+  },
+  "jean-auguste-dominique-ingres": {
+    "baslik": "Ingres: Villa Medici ve Fransız Akademisi yılları",
+    "bolumler": [
+      "Montauban, David atölyesi ve ilk Salon",
+      "Villa Medici, evlilik ve Büyük Odalık",
+      "Roma'da geçim sıkıntısı ve Floransa",
+      "Paris'te Akademi, Delacroix ve Bay Bertin",
+      "Villa Medici müdürlüğü ve sosyete portreleri",
+      "Pınar, Türk Hamamı ve Senatörlük"
+    ]
+  },
+  "dante-gabriel-rossetti": {
+    "baslik": "Rossetti: Ön-Raffaellocu Kardeşlik ve Londra yılları",
+    "bolumler": [
+      "Ön-Raffaellocu Kardeşlik ve ilk sergi",
+      "Elizabeth Siddal, Ruskin ve Oxford duvarları",
+      "Fanny Cornforth ve Elizabeth'in ölümü",
+      "Beata Beatrix ve Highgate mezarının açılması",
+      "Jane Morris, Kelmscott ve Buchanan saldırısı",
+      "Proserpina, Suriyeli Astarte ve hastalık"
+    ]
+  },
+  "claude-monet": {
+    "baslik": "Monet: Le Havre kıyılarından Giverny nilüferlerine",
+    "bolumler": [
+      "Le Havre, Cezayir ve ilk tablolar",
+      "La Grenouillère ve ilk İzlenimci sergi",
+      "Argenteuil yılları ve Camille'in ölümü",
+      "Giverny'ye yerleşme ve resim dizileri",
+      "Nilüfer havuzu, Londra ve Venedik",
+      "Katarakt ameliyatı ve Orangerie salonları"
+    ]
+  },
+  "berthe-morisot": {
+    "baslik": "Berthe Morisot: İzlenimci sergilerin kurucu kadın ressamı",
+    "bolumler": [
+      "Louvre eğitimi, Corot ve Manet",
+      "Paris Kuşatması, Beşik ve ilk sergi",
+      "Eugène Manet ile evlilik ve sergiler",
+      "Julie'nin doğumu ve Rue de Villejust",
+      "Eugène'in ölümü, devlet alımı ve veda"
+    ]
+  },
+  "mary-cassatt": {
+    "baslik": "Mary Cassatt: Paris'te Amerikalı bir İzlenimci ressam",
+    "bolumler": [
+      "Pennsylvania'dan Avrupa'ya resim eğitimi",
+      "Degas'nın daveti ve opera locası tabloları",
+      "Gravür denemeleri ve Lydia'nın ölümü",
+      "Renkli gravürler ve Şikago duvar resmi",
+      "Banyo, Tekne Gezisi ve Beaufresne",
+      "Katarakt ve kadınların oy hakkı mücadelesi"
+    ]
+  },
+  "katsushika-hokusai": {
+    "baslik": "Hokusai: Edo baskıları ve Fuji Dağı dizisi",
+    "bolumler": [
+      "Edo'da çıraklık ve bağımsız baskılar",
+      "Prusya mavisi ve Kanagawa Büyük Dalgası",
+      "Kırmızı Fuji ve kırk altı manzara",
+      "Edo sokakları ve hayalet baskıları",
+      "Borçlar, şelale dizisi ve atölye yangını",
+      "Obuse yılları ve Karda Kaplan"
+    ]
+  },
+  "paul-cezanne": {
+    "baslik": "Cézanne: Aix-en-Provence ve Sainte-Victoire Dağı resimleri",
+    "bolumler": [
+      "Aix'te gençlik ve koyu erken tuvaller",
+      "Pontoise'da Pissarro ve Empresyonist sergiler",
+      "Zola'yla kopuş ve Sainte-Victoire Dağı",
+      "Kâğıt Oynayanlar ve Elma Sepeti",
+      "Vollard sergisi ve Bibémus taş ocağı",
+      "Les Lauves atölyesi ve Büyük Yıkananlar"
+    ]
+  },
+  "paul-gauguin": {
+    "baslik": "Gauguin: Paris borsasından Bretanya ve Tahiti'ye",
+    "bolumler": [
+      "Lima çocukluğu, borsa ve Kopenhag",
+      "Pont-Aven, Martinik ve Arles haftaları",
+      "Volpini sergisi ve Sarı İsa",
+      "İlk Tahiti yolculuğu ve Mataiea köyü",
+      "Paris'te başarısız sergi ve kırık bilek",
+      "Aline'in ölümü ve Hiva Oa yılları"
+    ]
+  },
+  "henri-de-toulouse-lautrec": {
+    "baslik": "Toulouse-Lautrec: Montmartre kabareleri ve afiş sanatı",
+    "bolumler": [
+      "Albi'de çocukluk ve Paris'te ilk eğitim",
+      "Cormon atölyesi, Valadon ve Cirque Fernando",
+      "Moulin Rouge ve ilk taşbaskı afişler",
+      "Moulin Rouge dostları ve Jane Avril",
+      "Rue des Moulins ve Palyaço Cha-U-Kao",
+      "Sanatoryum çizimleri ve Malromé'de son"
+    ]
+  },
+  "gustave-moreau": {
+    "baslik": "Gustave Moreau: Paris atölyesinde mitoloji ve hocalık",
+    "bolumler": [
+      "Paris'te yetişme, Chassériau ve İtalya",
+      "Oidipus ile Sfenks ve Salon'dan çekilme",
+      "Salome, Beliriş ve Huysmans etkisi",
+      "Galateia, Akademi üyeliği ve Aziz Georgios",
+      "Alexandrine'in ölümü ve Orfeus tabloları",
+      "Güzel Sanatlar hocalığı ve müze evi"
+    ]
+  },
+  "andrea-mantegna": {
+    "baslik": "Mantegna: Padua ve Mantua'da Gonzaga sarayı",
+    "bolumler": [
+      "Padua'da Squarcione atölyesi ve dava",
+      "Eremitani Şapeli ve Aziz Luka sunağı",
+      "Bellini ailesiyle evlilik ve San Zeno",
+      "Mantua sarayı ve Camera Picta",
+      "Ölü İsa tablosu ve Roma yolculuğu",
+      "Zafer Madonnası ve Isabella d'Este",
+      "Tek renkli tablolar ve yarım Comus"
+    ]
+  },
+  "pierre-auguste-renoir": {
+    "baslik": "Renoir: Porselen çıraklığı, İzlenimcilik ve Cagnes",
+    "bolumler": [
+      "Porselen çıraklığı ve Fontainebleau dostları",
+      "La Grenouillère, savaş ve Komün yılları",
+      "Montmartre ve Moulin de la Galette",
+      "Charpentier portresi ve Kayıkçıların Öğle Yemeği",
+      "İtalya yolculuğu ve kuru dönem",
+      "Romatizma, Cagnes-sur-Mer ve heykeller"
+    ]
+  },
+  "correggio": {
+    "baslik": "Correggio: Parma kubbeleri ve mitoloji tabloları",
+    "bolumler": [
+      "Correggio kasabası ve ilk sunaklar",
+      "Parma'ya geçiş ve San Giovanni kubbesi",
+      "Sepetli Madonna ve Bahçede Acı Çekme",
+      "Parma Katedrali kubbesi, Gece ve Gündüz",
+      "Jüpiter'in Aşkları ve erken ölüm"
+    ]
+  },
+  "giovanni-bellini": {
+    "baslik": "Giovanni Bellini: Venedik'te altmış yıllık resim",
+    "bolumler": [
+      "Aile atölyesi ve Mantegna etkisi",
+      "Yağlıboyaya geçiş ve Çölde Aziz Franciscus",
+      "Devlet ressamlığı ve Kutsal Alegori",
+      "Doçe Loredan ve San Zaccaria Sunağı",
+      "Ağabeyinin ölümü ve Titian'ın dilekçesi",
+      "Tanrıların Şöleni ve son tablolar"
+    ]
+  },
+  "gustave-caillebotte": {
+    "baslik": "Caillebotte: Paris bulvarları, yelkenliler ve İzlenimci mirası",
+    "bolumler": [
+      "Parke İşçileri ve ilk sergi",
+      "Haussmann bulvarları ve Yağmurlu Hava",
+      "Yerres malikânesi, kürek ve bahçe",
+      "Grup anlaşmazlığı ve Banyosundaki Adam",
+      "Petit Gennevilliers, yelkenliler ve vasiyet"
+    ]
+  }
+}
