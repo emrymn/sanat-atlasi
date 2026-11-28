@@ -1,0 +1,420 @@
+{
+ "surum": 1,
+ "diziler": [
+  {
+   "id": "dueller",
+   "ad": "Düellolar",
+   "aciklama": "Aynı duvara, aynı kapıya ya da aynı mahkemeye düşen iki sanatçı. Kazanan ve kaybeden yok; iki tarafın da hikâyesi.",
+   "bolumler": [
+    "dueller-leonardo-michelangelo",
+    "dueller-ghiberti-brunelleschi",
+    "dueller-caravaggio-baglione"
+   ]
+  }
+ ],
+ "bolumler": {
+  "dueller-leonardo-michelangelo": {
+   "dizi": "dueller",
+   "baslik": "Palazzo Vecchio'nun İki Duvarı",
+   "alt_baslik": "Leonardo da Vinci ile Michelangelo Buonarroti, 1503–1506",
+   "sanatcilar": [
+    "leonardo-da-vinci",
+    "michelangelo"
+   ],
+   "giris": [
+    "25 Ocak 1504 günü Floransa'da sanatçılar, marangozlar ve kentin ileri gelenleri tek bir soru için toplandı: Michelangelo Buonarroti'nin henüz bitirdiği dev mermer Davut heykeli nereye konacaktı? Kurul masasında elli bir yaşındaki Leonardo da Vinci de oturuyordu. Leonardo söz aldığında heykelin kentin kalbi olan saray girişine değil, Piazza della Signoria'daki gölgeli Loggia dei Lanzi kemerlerinin altına yerleştirilmesini önerdi. Yirmi sekiz yaşındaki Michelangelo ise heykelini doğrudan Palazzo Vecchio'nun kapısına, herkesin gözünün önüne istiyordu. O gün kurul Michelangelo'nun istediği yeri seçti; ama asıl karşılaşma meydanda değil, hemen arkalarındaki büyük meclis salonunun iki duvarında yaşanacaktı.",
+    "Floransa Cumhuriyeti, Girolamo Savonarola'nın idamından sonra yeni bir sayfa açmış ve 1502'de Piero Soderini'yi ömür boyu Gonfaloniere seçmişti. Soderini, beş yüz yurttaşın toplandığı Salone dei Cinquecento salonunu kentin geçmişteki askeri zaferleriyle donatmak istiyordu. Cumhuriyetin bağımsızlığını herkese hatırlatacak bu duvarlar için, aralarında tam yirmi üç yaş bulunan kentin en ünlü iki sanatçısını aynı çatı altında karşı karşıya getirdi. Biri Milano'daki Son Akşam Yemeği ile adını duyurmuş kıdemli ressam Leonardo da Vinci, öteki mermerden dev bir Davut çıkaran hırslı heykel ustası Michelangelo Buonarroti idi. Kimse ikisinin de o duvarları hiç bitiremeyeceğini bilmiyordu."
+   ],
+   "bolumler": [
+    {
+     "baslik": "İki Kuşak, İki Bakış",
+     "yillar": "1503–1504",
+     "paragraflar": [
+      "Ekim 1503'te cumhuriyet ilk sözleşmeyi Leonardo da Vinci ile yaptı; Mayıs 1504'te yenilenen belgelerde devlet kançılaryasından Niccolò Machiavelli'nin de imzası bulunuyordu. Leonardo'ya verilen konu, Floransa ve Papalık ordularının 29 Haziran 1440'ta Milano Dükü Filippo Maria Visconti'nin kuvvetlerini yendiği Anghiari Savaşı idi. Leonardo elli bir yaşındaydı; doğayı bilimle anlamaya çalışan sabırlı bir gözlemciydi ve aynı yıllarda Floransa'da Mona Lisa üzerinde çalışıyordu. Onun için resim, ışığı, havayı ve insan ruhunun ince kıpırtılarını yakalayan zihinsel bir sanattı. Heykeli ise gürültülü, tozlu ve bedensel bir zanaat saydığı bilinir.",
+      "1504 yılında Soderini ikinci büyük duvarı yirmi dokuz yaşındaki Michelangelo'ya verdi. Onun konusu, 28 Temmuz 1364'te Floransa'nın Pisa ordusunu yendiği Cascina Savaşı olacaktı. Bu seçim rastgele değildi; Floransa o yıl hâlâ Pisa ile süren bir savaşın içindeydi ve eski zaferleri hatırlatmak güçlü bir siyasi mesaj taşıyordu. Michelangelo mermerle düşünür, insan bedeninin kas gerilimini her şeyin önüne koyardı. İki usta arasındaki soğukluk kısa sürede kentin diline düştü. Kırk yıl kadar sonra kaleme alınan Anonimo Magliabechiano elyazmasında anlatılır ki, Santa Trinita yakınında bir grup yurttaş Dante üzerine konuşurken yoldan geçen Leonardo'ya bir dizeyi sormuş, Leonardo da o sırada yaklaşan Michelangelo'yu göstererek onun açıklayacağını söylemiş. Bunu alay sayan Michelangelo ise öfkeyle Leonardo'nun Milano'da bronza dökemediği dev at heykelini yüzüne vurmuş. Bu sokak kavgası çağdaş bir belgede geçmez ama o yılların gergin havasını iyi yansıtır."
+     ],
+     "eserler": [
+      {
+       "sanatci": "michelangelo",
+       "commons": "Michelangelo%27s_David_2015.jpg",
+       "bag": "Ocak 1504'te yerini seçen komitede Leonardo'nun da oy kullandığı bu dev mermer heykel, Michelangelo'nun Floransa'daki yükselişini simgeler."
+      },
+      {
+       "sanatci": "leonardo-da-vinci",
+       "qid": "Q12418",
+       "bag": "Leonardo, Anghiari Savaşı hazırlıklarını yürüttüğü 1503 sonrası Floransa yıllarında bir yandan da bu portrenin ince ışık geçişleri üzerinde çalışıyordu."
+      }
+     ]
+    },
+    {
+     "baslik": "Sancak Kavgası ve Sudan Fırlayan Askerler",
+     "yillar": "1504–1505",
+     "paragraflar": [
+      "İki sanatçı kendilerine ayrılan ayrı atölyelerde tam ölçekli hazırlık kartonlarını çizmeye başladı. Leonardo, Santa Maria Novella'daki Papa Salonu'na Şubat 1504'te kurdurduğu iskelede savaşın tamamını değil, tam ortasındaki sancak mücadelesini seçti. Anghiari Savaşı'nın merkezinde dört atlı asker ve şaha kalkmış atları tek bir öfke düğümü hâlinde birbirine kenetlenir. Peter Paul Rubens'in yıllar sonra bir kopya üzerinden yeniden işlediği çizime bakıldığında, atların dişlerini gösterişi ile askerlerin yüzündeki hiddetin neredeyse aynı biçime büründüğü görülür. Leonardo burada zaferi yüceltmekten çok, defterlerinde hayvani bir delilik diye andığı savaşın dehşetini anatomi ve hareket bilgisiyle gözler önüne serer; yıllardır biriktirdiği at etütleri ve anatomi bilgisi bu tek gerilim düğümünde birleşir.",
+      "Michelangelo ise bambaşka bir anı seçti. Çarpışmanın ortasını değil, hemen öncesini: Temmuz sıcağında Arno Nehri'nde yıkanırken Pisa ordusunun yaklaştığı borusuyla sudan fırlayan çıplak Floransalı askerleri. Zırhlar, atlar ve toz bulutu yerine dönen sırtlar, gerilen omuzlar, birbirine uzanan kollar ve aceleyle giyinmeye çalışan bedenler vardı. Bayraklı Erkek Sırtı etüdüne baktığında Michelangelo'nun bir heykeltıraş gibi düşündüğünü hemen fark edersin: ışık her kas grubunu mermerden yontulmuş gibi tek tek ayırır. Antik Roma lahitlerinden süzülen bu sert hareket dili, Leonardo'nun dumanlı atmosferine taban tabana zıttı. Biri havayı, dumanı ve kargaşayı; öteki keskin çizgiyi ve insan bedeninin saf gücünü aynı salonun duvarına taşımaya hazırlanıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "leonardo-da-vinci",
+       "qid": "Q2045726",
+       "bag": "Leonardo'nun kayıp Anghiari Savaşı kompozisyonunun merkezindeki sancak kavgası, en çok Peter Paul Rubens'in bu güçlü yorumuyla tanınır."
+      },
+      {
+       "sanatci": "michelangelo",
+       "qid": "Q21151813",
+       "bag": "Cascina Savaşı kartonu için yapılan bu etüt, Michelangelo'nun savaş sahnesini çıplak beden ve kas gerilimi üzerine nasıl kurduğunu gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Akan Boya ve Roma'dan Gelen Çağrı",
+     "yillar": "1505–1506",
+     "paragraflar": [
+      "1505 yılına gelindiğinde iki proje de kendi engeline çarptı. Leonardo, geleneksel yaş sıva freskinde boyanın çabuk kurumasından hoşlanmıyordu; yavaş düşünmek, katmanlar arasında ince geçişler yapmak istiyordu. 30 Nisan 1505 tarihli alım kayıtları duvara hazırlık için büyük miktarda Yunan zifti aldığını, 6 Haziran 1505 tarihli defter notu ise çalışmaya başladığını gösterir. Ancak deneysel karışım duvarda tutmadı. Erken dönem yazarları nedeni farklı anlatır: Paolo Giovio sıva üzerinde ceviz yağının başarısız olduğunu yazar; Giorgio Vasari sıva hazırlığındaki hataya işaret eder; Anonimo Magliabechiano ise Leonardo'nun Yaşlı Plinius'tan okuduğu antik balmumu yöntemini denediğini ve yüzeyi kurutmak için yaktığı büyük kömür ateşinin üstteki boyaları eritip akıttığını aktarır.",
+      "Aynı yıl Michelangelo da beklemediği bir çağrı aldı. Papa II. Julius onu kendi anıt mezarını yapmak üzere Roma'ya çağırdı. Kartonu büyük ölçüde bitmişti ama Michelangelo Palazzo Vecchio'nun duvarına tek bir fırça bile vurmadan yola çıktı. 1506 baharında Papa ile anlaşmazlığa düşüp kısa süreliğine Floransa'ya döndüğünde bile duvara başlamadı. Bu dönemde Floransa'da bitirdiği Doni Tondosu'na baktığında, onun o yıllardaki renk ve hacim anlayışını doğrudan görebilirsin; Meryem, Bebek İsa ve Azize Anna'da ise Leonardo'nun aynı yıllardaki yumuşak gölge geçişleri göze çarpar. Leonardo da 30 Mayıs 1506'da cumhuriyetten izin alıp Milano'ya döndü ve bir daha salonun duvarına geri gelmedi. Floransa'nın büyük düellosu, iki yarım işle sessizce kapandı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "michelangelo",
+       "qid": "Q1473546",
+       "bag": "Michelangelo'nun 1505–1506 yıllarında tamamladığı bu tek pano resmi, Cascina kartonundaki dönen beden anlayışını parlak renklerle yansıtır."
+      },
+      {
+       "sanatci": "leonardo-da-vinci",
+       "qid": "Q563727",
+       "bag": "Leonardo'nun aynı Floransa yıllarında geliştirdiği bu kompozisyon, keskin hatlar yerine yumuşak geçişler ve iç içe figürler arayan üslubunu gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Dünyanın Okulu ve Duvarın Arkasındaki Soru",
+     "yillar": "1506–2020",
+     "paragraflar": [
+      "İki duvar resmi hiçbir zaman tamamlanmadı ama hazırlık kartonları Floransa'da sergilendiğinde kentin sanat hayatını altüst etti. 1504 civarında kente gelen yirmi bir yaşındaki Raphael bu iki ustanın çizimlerini inceleyerek kendi figür dilini dönüştürdü. Heykeltıraş Benvenuto Cellini yıllar sonra o iki kartonu dünyanın okulu diye andı. Michelangelo'nun kartonu sonradan parçalara ayrılıp kayboldu; Vasari bunu kıskanç heykeltıraş Baccio Bandinelli'nin işi diye anlatır; tarihçiler bu suçlamaya temkinle yaklaşır. Bugün o sahneyi öğrencisi Bastiano da Sangallo'nun 1542 civarında yaptığı Cascina Savaşı kopyasından, Leonardo'nun merkez sahnesini ise Doria Tablosu gibi on altıncı yüzyıl yağlıboya kopyalarından ve Rubens'in Louvre'daki çiziminden tanıyoruz.",
+      "1560'ların başında Giorgio Vasari salonu Dük Cosimo I de' Medici adına yeniden düzenledi ve duvarları kendi dev savaş freskleriyle kapladı. Yüzyıllar sonra sanat tanı uzmanı Maurizio Seracini, Vasari'nin Marciano Savaşı freskindeki bir sancakta yazılı olan ara ve bulacaksın sözlerini bir ipucu sayarak Leonardo'nun resminin arka duvarda saklı olduğunu ileri sürdü. 2011 ve 2012'de mevcut çatlaklardan gönderilen kameralar bir boşluk ve siyah boya izleri bulsa da çalışma koruma tartışmalarıyla durduruldu. Ekim 2020'de ise Cecilia Frosinini ve Francesca Fiorani'nin aralarında olduğu uzmanlar, harcama defterlerinde duvar boyası kaydı bulunmadığını belirterek Leonardo'nun duvara hiç resim yapmadığını savundu. Seracini bu sonuca itiraz etti; duvarın arkasında ne olduğu bugün hâlâ açık bir soru olarak duruyor."
+     ],
+     "eserler": [
+      {
+       "sanatci": "michelangelo",
+       "qid": "Q2236899",
+       "bag": "Bastiano da Sangallo'nun 1542 civarında yaptığı bu kopya, kaybolan Cascina Savaşı kartonundaki yıkanan askerleri günümüze taşıyan en güvenilir kayıttır."
+      },
+      {
+       "sanatci": "leonardo-da-vinci",
+       "qid": "Q2397593",
+       "bag": "On altıncı yüzyıldan kalan Doria Tablosu, Leonardo'nun kayıp Anghiari Savaşı'ndaki sancak mücadelesini renkli bir pano üzerinden görmemizi sağlar."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Palazzo Vecchio'daki büyük karşılaşmada ne Leonardo kazandı ne de Michelangelo. İkisinin de elinde kalan, zamana yenilen iki yarım tasarı, birkaç güçlü çizim ve birbirine hiç benzemeyen iki sanat anlayışıydı. Leonardo kısa süre sonra Milano'ya, Michelangelo ise Sistine Şapeli'nin tavanını boyayacağı Roma'ya yöneldi. İki usta bir daha aynı salonun duvarında yan yana gelmedi; ama Floransa'da bıraktıkları bitmemiş kartonlar bile genç bir kuşağı yetiştirmeye yetti. Bazen sanat tarihini değiştiren şey, kusursuzca bitmiş bir duvar değil, iki ustanın aynı salonda birbirini zorladığı o kısacık iki yıldır."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Musée du Louvre — La lutte pour l'étendard de la Bataille d'Anghiari (Rubens)",
+     "adres": "https://collections.louvre.fr/en/ark:/53355/cl020110446"
+    },
+    {
+     "baslik": "Gallerie degli Uffizi — Holy Family, known as the Doni Tondo",
+     "adres": "https://www.uffizi.it/en/artworks/holy-family-known-as-the-doni-tondo"
+    },
+    {
+     "baslik": "National Gallery London — A brief introduction to Raphael's life and times",
+     "adres": "https://www.nationalgallery.org.uk/exhibitions/past/the-credit-suisse-exhibition-raphael/a-brief-introduction-to-raphael-s-life-and-times"
+    },
+    {
+     "baslik": "Stanford University — Leonardo da Vinci: Paint in the Renaissance",
+     "adres": "https://leonardodavinci.stanford.edu/submissions/foodog82/paint/paintcomp.html"
+    },
+    {
+     "baslik": "Cambridge University Press — The Commission and History of the David",
+     "adres": "https://www.cambridge.org/core/books/michelangelos-david/commission-and-history-of-the-david/01A63957B9756CA5D1A17459B2EB0CB3"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Battle of Anghiari",
+     "adres": "https://www.britannica.com/topic/Battle-of-Anghiari"
+    },
+    {
+     "baslik": "Smithsonian Magazine — Does Leonardo da Vinci's Missing Masterpiece Actually Exist?",
+     "adres": "https://www.smithsonianmag.com/smart-news/leonardo-da-vinci-doesnt-really-have-lost-painting-180976058/"
+    },
+    {
+     "baslik": "National Geographic — Lost Leonardo da Vinci Mural Behind False Wall?",
+     "adres": "https://www.nationalgeographic.com/history/article/120312-leonardo-da-vinci-mural-lost-painting-florence-science-world"
+    },
+    {
+     "baslik": "Tokyo Fuji Art Museum — Leonardo da Vinci and The Battle of Anghiari: The Mystery of Tavola Doria",
+     "adres": "https://www.fujibi.or.jp/en/exhibitions/1201505261/"
+    },
+    {
+     "baslik": "Anonimo Magliabechiano — The Life of Leonardo da Vinci (1545)",
+     "adres": "https://nicofranz.art/en/leonardo-da-vinci/anonimo-magliabechiano-the-life-of-leonardo-da-vinci-1545"
+    }
+   ],
+   "kelime": 1090,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "dueller-ghiberti-brunelleschi": {
+   "dizi": "dueller",
+   "baslik": "Vaftizhane Kapısı ve Kubbedeki Ortaklık",
+   "alt_baslik": "Lorenzo Ghiberti ile Filippo Brunelleschi, 1401–1436",
+   "sanatcilar": [
+    "lorenzo-ghiberti",
+    "filippo-brunelleschi"
+   ],
+   "giris": [
+    "1401 yılının Floransa'sında, kentin en güçlü tüccar loncası Arte di Calimala, San Giovanni Vaftizhanesi'nin ikinci bronz kapısını yaptırmak için yedi Toskanalı sanatçıyı yarışmaya çağırdı. Adayların eline aynı miktarda bronz ve aynı dört yapraklı yonca biçiminde birer çerçeve verildi; bir yıl içinde Eski Ahit'ten İshak'ın Kurban Edilmesi sahnesini dökmeleri istendi. Yedi yarışmacı arasında Jacopo della Quercia, Francesco di Valdambrino, Simone da Colle, Niccolò di Luca Spinelli ve Niccolò di Pietro Lamberti de vardı. Ama Floransa'nın belleğine kazınacak olan karşılaşma, yirmili yaşlarının başındaki iki genç kuyumcu arasında yaşandı: yirmi dört yaşındaki Filippo Brunelleschi ile yirmi üç yaşlarındaki Lorenzo Ghiberti.",
+    "O yıl Floransa, Milano Dükü Gian Galeazzo Visconti'nin kuşatma tehdidi altındaydı; tüccar loncası bu büyük bronz kapıyla hem kentin dayanışmasını hem de kendi itibarını göstermek istiyordu. Kimse o gün seçilecek tek bir bronz levhanın iki genç adamı otuz beş yıl boyunca aynı meydanın iki yakasında karşı karşıya getireceğini tahmin edemezdi. Biri kapıyı alıp kentin en zengin bronz atölyesini kuracak, öteki yenilginin ardından mimarlığa dönüp bir yüzyıldır kapatılamayan katedral kubbesini ayağa kaldıracaktı. Üstelik kader ikisini yirmi yıl sonra bu kez aynı kubbenin iskelesinde zorunlu ortak yapacaktı."
+   ],
+   "bolumler": [
+    {
+     "baslik": "İki Bronz Levha, İki Ayrı Öykü",
+     "yillar": "1401–1402",
+     "paragraflar": [
+      "Bugün Floransa'daki Museo Nazionale del Bargello'da yan yana duran o iki yaldızlı bronz levhaya baktığında, iki farklı mizaç hemen kendini ele verir. Brunelleschi öyküyü nefeslerin tutulduğu en sert saniyede dondurmuştur: İbrahim bıçağı oğlunun boğazına dayamış, melek gökten fırlayıp İbrahim'in bileğini eliyle yakalamıştır; İshak korkuyla bükülür, aşağıdaki hizmetkârlar bile köşeli bir hareket içindedir. Ghiberti ise sahneyi çapraz bir kayalıkla sakin biçimde ikiye böler. Onun İbrahim'i henüz kolunu kaldırmışken melek uzaktan seslenir; İshak'ın çıplak gövdesi antik yontuları andıran dengeli bir duruş içindedir.",
+      "Jürinin gözünde üslup kadar döküm ustalığı da ağırlık taşıyordu. Ghiberti levhasını neredeyse tek parça hâlinde dökmüş, daha az bronz harcamış ve daha hafif bir yüzey elde etmişti. Brunelleschi'nin levhası ise ayrı parçalar hâlinde dökülüp tabana tutturulmuştu. Yirmi sekiz panolu dev bir kapının faturasını ödeyecek tüccar loncası için bronz tasarrufu ve pürüzsüz döküm önemliydi. Sonunda 1402'de kapı siparişi Ghiberti'ye verildi. Ama kararın nasıl alındığına dair iki erken kaynak birbirini yalanlar. Ghiberti 1447–1448 civarında yazdığı I Commentarii kitabında otuz dört yargıcın ve rakiplerinin zafer dalını kendisine oybirliğiyle verdiğini yazar. Buna karşılık 1480'lerde Antonio di Tuccio Manetti'nin kaleme aldığı Brunelleschi biyografisi, Ghiberti'nin yargıçlara önceden danışarak avantaj sağladığını, jürinin aslında iki levhayı eşit bulup ortaklık önerdiğini, ancak Brunelleschi'nin tek başına sorumlu olmayacaksa çekildiğini savunur. Arşivde oylama tutanağı kalmadığı için iki anlatı da taraflı birer tanıklık olarak okunur."
+     ],
+     "eserler": [
+      {
+       "sanatci": "lorenzo-ghiberti",
+       "commons": "Ghiberti_and_Brunelleschi,_Sacrifice_of_Isaac,_competition_reliefs,_1401-2,_Bargello,_Florence.jpg",
+       "bag": "1401 yarışmasından günümüze kalan bu iki yaldızlı bronz levha bugün Bargello'da yan yana durur; biri akıcı dengeyi, öteki ani gerilimi seçer."
+      },
+      {
+       "sanatci": "lorenzo-ghiberti",
+       "commons": "Brunelleschi%27s_Competition_Panel.jpg",
+       "bag": "Brunelleschi'nin deneme panosunda meleğin İbrahim'in kolunu fiziksel olarak yakaladığı an, onun heykeltıraşlık döneminin en dramatik çözümüdür."
+      }
+     ]
+    },
+    {
+     "baslik": "Ayrılan Yollar: Büyük Atölye ve Antik Harabeler",
+     "yillar": "1403–1418",
+     "paragraflar": [
+      "1402 kararı iki sanatçının hayatını iki ayrı yöne çevirdi. Ghiberti 1403'ten 1424'e dek yirmi bir yıl boyunca Vaftizhane'nin yirmi sekiz panolu Kuzey Kapıları'nı döktü. Bu büyük sipariş onu Floransa'nın en saygın ve en varlıklı ustalarından biri yaptı; genç Donatello ve çocuk yaştaki Paolo Uccello onun atölyesinde yetişti. Ghiberti bir yandan Orsanmichele cephesi için dev bronz heykeller döküyor, bir yandan da 1404'ten itibaren katedralin vitray ve yapı kurullarında yer alıyordu. Loncalarla ve kent seçkinleriyle uyumlu çalışmayı bilen, sabırlı ve diplomasiye yatkın bir ustaydı.",
+      "Brunelleschi ise kapıyı kaybettikten sonra ağırlığını heykelden mimarlığa kaydırdı. Erken biyografilerde onun genç dostu Donatello ile Roma'ya gidip antik tapınakları ve kemerleri ölçtüğü aktarılır; ancak bu yolculuğun kesin tarihini ve kaç kez yapıldığını doğrulayan çağdaş bir belge yoktur. Yine de Brunelleschi'nin antik Roma yapı tekniğini derinden kavradığı kesindir. 1410–1415 yılları arasında Floransa'da tek kaçış noktalı doğrusal perspektifin kurallarını iki küçük pano deneyiyle yeniden kanıtladı; Manetti'nin aktardığına göre Vaftizhane panosunda gerçek bulutları yansıtsın diye gökyüzü yerine cilalı gümüş kullanmıştı. 1419'da Kimsesizler Hastanesi'nin düzenli kemerli cephesini tasarladığında, kapıyı kaybeden kuyumcu artık yeni bir mimarlık dili kuruyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "filippo-brunelleschi",
+       "commons": "Ghiberti_and_Brunelleschi,_Sacrifice_of_Isaac,_competition_reliefs,_1401-2,_Bargello,_Florence.jpg",
+       "bag": "Bu yarışma panosundaki yenilgi, Brunelleschi'nin bronz dökümden uzaklaşıp perspektif ve mimarlık alanına yönelmesinde dönüm noktası oldu."
+      }
+     ]
+    },
+    {
+     "baslik": "Kubbede Zorunlu Ortaklık",
+     "yillar": "1418–1435",
+     "paragraflar": [
+      "1418'de iki eski rakip bu kez kentin en büyük sorununda yeniden karşılaştı. 1296'da yapımına başlanan Santa Maria del Fiore Katedrali'nin kırk beş buçuk metre iç çapındaki sekizgen açıklığı hâlâ göğe açıktı; o boyutta bir ahşap iskele kurmak olanaksız görünüyordu. Katedral yöneticileri yarışma açtığında kırk bir yaşındaki Brunelleschi, balıksırtı tuğla örgü ve iç içe iki kabukla iskelesiz yükselecek bir kubbe önerdi. Bir yüzyıl sonra Giorgio Vasari'nin anlattığı efsaneye göre Brunelleschi rakiplerine mermer üstünde yumurta dikme meydan okuması yapmış, yumurtanın ucunu hafifçe kırarak dikip ihaleyi kazanmıştır; ama arşivler kararın tek bir gösteriyle değil uzun tartışmalarla verildiğini gösterir.",
+      "Brunelleschi teknik sırlarını kimseye açmadığı için yöneticiler ona tek başına güvenemedi. 16 Nisan 1420'de hem Brunelleschi'yi hem de eski rakibi Ghiberti'yi başduvarcı Battista d'Antonio ile birlikte kubbenin ortak denetçisi atadılar; ikisine de yılda otuz altı florin maaş bağlandı. İnşaat 7 Ağustos 1420'de başladı ama ortaklık başından beri gergindi. Manetti ve Vasari'nin Brunelleschi yanlısı anlatılarına göre 1423 civarında kubbenin en kritik aşamasında Brunelleschi hasta numarası yapıp yatağa düştü; şantiyede yalnız kalan Ghiberti işi ilerletemeyince yöneticiler gerçek kurucunun kim olduğunu gördü. Hasta numarası sahnesi arşivlerde kesinleşmese de resmi kayıtlar Brunelleschi'nin maaşının yılda yüz florine çıkarıldığını, Ghiberti'nin ise otuz altı florinde kaldığını doğrular. Yine de Ghiberti 1436'ya dek gözetmen unvanını korudu ve bir yandan da 1425'te aldığı yeni Vaftizhane kapısında, eski rakibinin doğrusal perspektif kurallarını bronz kabartmalara uyguladı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "lorenzo-ghiberti",
+       "commons": "Lorenzo_Ghiberti_-_Esa%C3%BA_e_Jac%C3%B3_-_Porta_do_Para%C3%ADso.jpg",
+       "bag": "Ghiberti'nin Yakup ile Esav panosundaki kemerli mekân derinliğine baktığında, Brunelleschi'nin doğrusal perspektif buluşunun bronza nasıl taşındığını görürsün."
+      }
+     ]
+    },
+    {
+     "baslik": "Fener Yarışması ve Meydanın İki Yüzü",
+     "yillar": "1436–1455",
+     "paragraflar": [
+      "On altı yıl boyunca milyonlarca tuğlanın ve dev taş blokların Brunelleschi'nin tasarladığı vinçlerle yukarı çekildiği kubbe sonunda kapandı. Brunelleschi, işçiler inip çıkarken vakit ve can kaybetmesin diye yiyecek ve içeceği bile yükseğe çıkartmıştı. 25 Mart 1436'da Papa IV. Eugene katedrali törenle kutsadı; 30 Ağustos 1436'da kubbenin yapısal inşaatı çan sesleri ve şenliklerle tamamlandı. Ama iki rakibin son karşılaşması henüz bitmemişti. Aynı yıl kubbenin tepesine oturtulacak yirmi bir metrelik mermer fener için yeni bir yarışma açıldı. Ghiberti yine bir model sundu; fakat yöneticiler bir kez daha Brunelleschi'nin tasarımını seçti.",
+      "Brunelleschi fenerin bittiğini göremeden 15 Nisan 1446'da öldü ve katedralin içine gömüldü. Ghiberti ise oğlu Vittorio ile birlikte 1452'de on kare panolu üçüncü Vaftizhane kapısını tamamladı. Eski Ahit öykülerini çok katmanlı kabartma ve derin mimari perspektifle birleştiren bu yaldızlı bronz kapılar, doğrudan katedralin ana girişine bakan doğu cephesine yerleştirildi. Giorgio Vasari'nin aktardığına göre Michelangelo'nun sonradan Cennet Kapıları olmaya layık bulduğu bu esere Ghiberti kendi otoportresini ve gururlu imzasını kazıdı; 1 Aralık 1455'te de Floransa'da öldü. Bugün iki ustanın 1401'de döktüğü levhalar Bargello'da yan yana dururken, katedral meydanında Brunelleschi'nin kubbesi ile Ghiberti'nin kapıları hâlâ birbirine bakar."
+     ],
+     "eserler": [
+      {
+       "sanatci": "lorenzo-ghiberti",
+       "commons": "Lorenzo_Ghiberti-The_Gates_of_Paradise_-_Original-Museo_dell%27Opera_del_Duomo_(Florence).jpg",
+       "bag": "Ghiberti'nin 1425–1452 arasında tamamladığı ve bugün Museo dell'Opera del Duomo'da korunan Cennet Kapıları, iki ustanın rekabetinin kente bıraktığı en parlak miraslardan biridir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "1401'de iki genç kuyumcu tek bir bronz kapı için karşı karşıya gelmişti. Ghiberti o kapıyı kazandı ve Floransa'ya yaldızlı bronzdan iki dev şaheser armağan etti. Brunelleschi o gün kaybetti ama yenilgisi onu doğrusal perspektifi kuran ve dünyanın en büyük yığma kubbesini iskelesiz kuran mimara dönüştürdü. Yirmi yıl sonra aynı kubbede zorunlu ortak olduklarında birbirlerine hiç ısınmadılar; ama Ghiberti'nin kapıları Brunelleschi'nin perspektifiyle derinleşti, Floransa meydanı ise ikisinin birbirini bileyen rekabetiyle bugünkü yüzüne kavuştu."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Smarthistory — Filippo Brunelleschi and Lorenzo Ghiberti, Sacrifice of Isaac",
+     "adres": "https://smarthistory.org/filippo-brunelleschi-and-lorenzo-ghiberti-sacrifice-of-isaac/"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Lorenzo Ghiberti",
+     "adres": "https://www.britannica.com/biography/Lorenzo-Ghiberti"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Filippo Brunelleschi",
+     "adres": "https://www.britannica.com/biography/Filippo-Brunelleschi"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — August 7, 1420: Florence Cathedral Dome",
+     "adres": "https://www.britannica.com/today-in-history/August-7-1420-Florence-Cathedral-Dome"
+    },
+    {
+     "baslik": "Opera di Santa Maria del Fiore — Lorenzo Ghiberti and the Opera del Duomo of Florence",
+     "adres": "https://duomo.firenze.it/en/opera-magazine/post/12032/lorenzo-ghiberti-and-the-opera-del-duomo-of-florence-beauty-technique-and-thought"
+    },
+    {
+     "baslik": "Opera di Santa Maria del Fiore — On 30 August 1436 the work on Brunelleschi's Dome was completed",
+     "adres": "https://duomo.firenze.it/en/opera-magazine/post/4649/on-30-august-1436-the-work-on-brunelleschi-s-dome-was-completed"
+    },
+    {
+     "baslik": "Opera di Santa Maria del Fiore — Brunelleschi Dome",
+     "adres": "https://duomo.firenze.it/en/discover/dome"
+    },
+    {
+     "baslik": "Museo dell'Opera del Duomo — Lorenzo Ghiberti, Porta del Paradiso",
+     "adres": "https://duomo.firenze.it/en/discover/opera-duomo-museum/the-halls/sala-del-paradiso/8622/lorenzo-ghiberti-porta-del-paradiso"
+    },
+    {
+     "baslik": "Musei del Bargello — Museo Nazionale del Bargello: Salone di Donatello",
+     "adres": "https://bargellomusei.it/en/museo-nazionale-del-bargello-riapre-al-pubblico-il-salone-di-donatello/"
+    },
+    {
+     "baslik": "Web Gallery of Art — Lorenzo Ghiberti, Sacrifice of Isaac",
+     "adres": "https://www.wga.hu/html_m/g/ghiberti/various/1sacrifi.html"
+    }
+   ],
+   "kelime": 1046,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "dueller-caravaggio-baglione": {
+   "dizi": "dueller",
+   "baslik": "1603 Hakaret Davası",
+   "alt_baslik": "Caravaggio ile Giovanni Baglione, Roma 1603",
+   "sanatcilar": [
+    "caravaggio"
+   ],
+   "giris": [
+    "13 Eylül 1603 günü Roma'daki Tor di Nona hapishanesinden çıkarılan otuz bir yaşındaki Michelangelo Merisi da Caravaggio, bir mahkeme kâtibinin karşısına oturdu. İki gün önce hakaret suçlamasıyla tutuklanmıştı; davacı, kentin saygın ressamlarından otuz yedi yaşlarındaki Giovanni Baglione idi. Roma'da ağır hakaret suçu kürek mahkûmiyetiyle bile cezalandırılabiliyordu. Oysa o gün yargıcın sorduğu tek bir soru, basit bir sokak kavgasını sanat tarihinin en kıymetli belgelerinden birine çevirdi. Yargıç, iyi ressam derken kimi kastettiğini sorduğunda Caravaggio kısaca yanıt verdi: iyi boyamayı ve doğal şeyleri iyi taklit etmeyi bilen kişi.",
+    "Caravaggio'nun arkasında ne günlükler ne de sanat üzerine yazılmış bir kitap kaldı. Bugün onun resim anlayışına dair elimizdeki tek uzun ve belgeli ifade, bir rakibinin açtığı hakaret davasının tutanağında saklıdır. İki ressam da o gün çok şey riske atıyordu: Baglione kardinaller ve papalık çevresinde yıllarca kurduğu saygınlığı, Caravaggio ise hem özgürlüğünü hem de Roma'da yeni kazandığı büyük şöhreti. Bu dava, on yedinci yüzyıl başında Roma sanat piyasasındaki amansız rekabeti, aynı ailenin iki kardeşi arasındaki tablo yarışını ve düşmanının yıllar sonra yazdığı ilk biyografiyi de anlamamızı sağlar."
+   ],
+   "bolumler": [
+    {
+     "baslik": "İki Kardeş, İki Aşk Tablosu",
+     "yillar": "1600–1602",
+     "paragraflar": [
+      "1600 yılında Caravaggio, Roma'daki San Luigi dei Francesi Kilisesi'nde Aziz Matta'nın Çağrılışı ve Aziz Matta'nın Şehit Edilişi tablolarını sergilediğinde kentte yer yerinden oynadı. Lombardiya'dan gelen bu genç ressamın karanlıktan fırlayan sert ışığı, sıradan yüzleri ve doğrudan canlı modelden çalışma yöntemi genç ressamları peşinden sürükledi; kısa sürede Kardinal Francesco Maria del Monte ve Ciriaco Mattei gibi güçlü hamiler edindi. Geç Maniyerist geleneğe bağlı, papalık siparişleriyle tanınan yerli Romalı ressam Giovanni Baglione de bu yeni üslubu ilk benimseyenlerden biri oldu. Başta Caravaggio'nun ışık-gölge dilinden yararlanan Baglione, çok geçmeden kendi itibarını gölgede bırakan bu asi yabancıya karşı keskin bir kıskançlık duymaya başladı.",
+      "Kıvılcım, Roma'nın en güçlü koleksiyoncu ailelerinden Giustiniani kardeşlerin sarayında çaktı. Caravaggio 1601–1602'de Marchese Vincenzo Giustiniani için Muzaffer Aşk tablosunu yaptı. Bu cesur tuvale baktığında, siyah kanatlı ve alaycı biçimde gülümseyen çıplak bir çocuğun keman, zırh, defne tacı ve bilim aletlerini ayakları altında çiğnediğini görürsün; Giustiniani tabloyu yeşil bir perdenin arkasında en gözde eseri olarak sakladı. Vincenzo'nun kardeşi Kardinal Benedetto Giustiniani ise 1602'de Baglione'ye buna yanıt veren İlahi Aşk tablosunu ısmarladı ve ödül olarak ona bir altın zincir verdi. Baglione'nin bugün Palazzo Barberini'de korunan tablosunda İlahi Aşk, dünyevi Aşk ile Şeytan'ın arasına girer; soldaki Şeytan figürünün yüzü Caravaggio'yu andırır ve sanat tarihçileri bunu ahlaksızlık ima eden görsel bir saldırı olarak yorumlar."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q969377",
+       "bag": "1600'de sergilenip Roma'da büyük yankı uyandıran bu tablo, Baglione dahil pek çok ressamın Caravaggio'nun ışık-gölge diline yönelmesini sağladı."
+      },
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q474024",
+       "bag": "Vincenzo Giustiniani için yapılan Muzaffer Aşk, Baglione'nin İlahi Aşk tablosuyla karşılık vermesine ve iki ressam arasındaki savaşın büyümesine yol açtı."
+      }
+     ]
+    },
+    {
+     "baslik": "Sokaktaki Şiirler ve 28 Ağustos Davası",
+     "yillar": "1603",
+     "paragraflar": [
+      "Tablolarla başlayan sürtüşme 1603 yazında Roma sokaklarına taştı. Kentte Giovanni Baglione'yi soyadı üzerinden ağır küfürlerle alaya alan ve Kardinal Benedetto Giustiniani'den aldığı altın zinciri küçümseyen iki müstehcen hiciv şiiri elden ele dolaşmaya başladı. Saygınlığını ve papalık çevresindeki yerini tehlikede gören Baglione, 28 Ağustos 1603'te mahkemeye başvurarak hakaret davası açtı. Davada Caravaggio'nun yanı sıra yakın çevresinden ressam Orazio Gentileschi, mimar Onorio Longhi ve tanıklık için dosyaya eklenen Filippo Trisegni de yer aldı. Orazio Gentileschi'nin ileride Barok resmin en güçlü ustalarından biri olacak kızı Artemisia Gentileschi o yıl henüz on yaşındaydı.",
+      "Dava dosyasındaki tanık ifadeleri birbiriyle çelişiyordu. 28 Ağustos'ta konuşan ressam Tommaso Salini, Filippo Trisegni'nin ilk şiiri Caravaggio ile Onorio Longhi'nin yazdığını söylediğini aktardı. Ancak 13 Eylül'de yargıç karşısına çıkan Trisegni böyle bir şey söylediğini reddetti. Caravaggio da ne İtalyanca ne de Latince şiir yazmakla uğraştığını belirterek suçlamayı kesin bir dille geri çevirdi. Roma Devlet Arşivi'ndeki dosyada ele geçirilen iki şiir bugün hâlâ saklanmaktadır; ama bu dizeleri tam olarak kimin kaleme aldığı kesinleşmemiştir. Bir yıl önce İsa'nın Yakalanması ve Aziz Matta'nın İlhamı gibi güçlü tablolarla kariyerinin doruğuna tırmanan Caravaggio, bu kez fırçayla değil sözcüklerle köşeye sıkışmıştı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q2337873",
+       "bag": "1602 tarihli bu tablodaki kanatlı melek, Orazio Gentileschi'nin 1603 davasında Caravaggio'ya ödünç verdiğini söylediği bir çift kanadı akla getirir."
+      },
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q102852946",
+       "bag": "Dava öncesinde Roma'da tamamlanan İsa'nın Yakalanması, Caravaggio'nun karanlık içinden fırlayan şiddetli gerçekçiliğini ve piyasadaki yükselişini gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Tutanağa Geçen Tek Sanat Tanımı",
+     "yillar": "1603",
+     "paragraflar": [
+      "11 Eylül 1603'te tutuklanıp Tor di Nona hapishanesine konan Caravaggio, iki gün sonra yargıcın sorularını yanıtlarken öfkesini hiç gizlemedi. Bir mahkeme kâtibinin kaleminden çıkan bu satırlar sakin bir sanat kuramı dersi değil, savunma hâlindeki bir ressamın keskin yanıtlarıdır. İyi ressamın iyi boyamayı ve doğal şeyleri iyi taklit etmeyi bilen kişi olduğunu söyledikten sonra, Roma'da bu tanıma uyan ustaları tek tek sıraladı: Cavalier d'Arpino, Federico Zuccari, Cristoforo Roncalli, Annibale Carracci ve sonradan aklına gelen Antonio Tempesta. Bu liste, Caravaggio'nun dönemin bütün yerleşik ustalarını reddettiği yönündeki yaygın yargıyı boşa çıkarır; o, farklı üsluplara saygı duyduğunu gösterirken Baglione'yi bu çemberin tamamen dışında bırakıyordu.",
+      "Sıra Baglione'nin Il Gesù Kilisesi'ndeki Diriliş tablosuna geldiğinde Caravaggio daha da keskinleşti: tabloyu kilise ziyaretlerinde gördüğünü ama hiç beğenmediğini, beceriksiz bulduğunu söyledi. Bilgili ressamların iyiyi kötüyü kendisi gibi ayırt edeceğini, cahil olanların ise kendi benzerlerini tutacağını ekledi. Ertesi gün, 14 Eylül 1603'te sorgulanan Orazio Gentileschi ise iki ressam arasındaki kıskançlığı doğruladı ve Caravaggio'ya resimlerinde kullanması için bir Kapuçin keşişi cübbesi ile bir çift kanat ödünç verdiğini anlattı. Emmaus'ta Akşam Yemeği tablosundaki masa üstü meyvelerine, yüzlerdeki şaşkınlığa ve ışığın dokusuna baktığında, Caravaggio'nun mahkemede andığı doğal şeyleri iyi taklit etme ölçütünün fırçada neye dönüştüğünü hemen anlarsın."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q318947",
+       "bag": "1601 tarihli Emmaus'ta Akşam Yemeği, Caravaggio'nun 1603 sorgusunda övdüğü doğal şeyleri iyi taklit etme becerisinin en berrak örneklerinden biridir."
+      }
+     ]
+    },
+    {
+     "baslik": "Tor di Nona'dan Çıkış ve Düşmanın Kalemi",
+     "yillar": "1603–1642",
+     "paragraflar": [
+      "Caravaggio yaklaşık iki hafta Tor di Nona hapishanesinde kaldı. Onu kurtaran, hamisi Kardinal Francesco Maria del Monte'nin diplomatik ağı oldu. Fransız elçisi Philippe de Béthune ile Malta Şövalyesi Fra' Ainolfo Bardi araya girdi; Bardi, Caravaggio'nun Baglione'ye bir daha hakaret etmeyeceğine dair Roma valisi Ferrante Taverna'ya söz verdi. 25 Eylül 1603'te Caravaggio ve öteki sanıklar serbest bırakıldı, suçlamalar düşürüldü. Ama iki ressamın arasındaki düşmanlık hiç dinmedi. 1604 ve 1605'te sokak kavgaları yüzünden yeniden karakollara düşen Caravaggio 1605'te Loreto Meryemi tablosunu bitirdiğinde, Roma halkının gösterdiği coşkuyu Baglione alaycı biçimde kazların gıdaklamasına benzetti.",
+      "Çok geçmeden Caravaggio'nun Roma'daki günleri kanla kapandı. Meryem'in Ölümü gibi sarsıcı kilise tablolarını tamamladıktan kısa süre sonra, 28 Mayıs 1606'da bir düelloda Ranuccio Tomassoni'yi öldürdü, kaçak olarak dört yıl dolaştı ve Temmuz 1610'da otuz sekiz yaşında öldü. Giovanni Baglione ise uzun yaşadı, papaların gözdesi olarak çalışmayı sürdürdü ve 1642'de Roma sanatçılarının yaşamlarını anlatan Le Vite kitabını yayımladı. Caravaggio'nun ilk büyük biyografilerinden biri, böylece 1603'te onu hapse attıran düşmanının kaleminden çıktı. Modern tarihçiler bu metni hem yer yer iğneleyici bir hesaplaşma hem de şaşırtıcı biçimde olgulara sadık, vazgeçilmez bir ilk kaynak olarak birlikte değerlendirir."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q2713203",
+       "bag": "1605 tarihli Loreto Meryemi halktan büyük ilgi görünce, Baglione bu coşkuyu alaycı biçimde kazların gıdaklamasına benzetmişti."
+      },
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q597114",
+       "bag": "Caravaggio'nun Roma'daki son büyük kilise siparişlerinden olan bu tablo, 1603 davasının ardından artan gerilim ve kaçış öncesi dönemin güçlü bir izidir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "1603 hakaret davasında mahkeme kimseyi kürek cezasına göndermedi ama sanat tarihine iki kalıcı belge bıraktı. Biri Caravaggio'nun 13 Eylül 1603'te kâtibe yazdırdığı o kısa, sert ve berrak sanat tanımıydı. Öteki ise Giovanni Baglione'nin kırk yıla yakın bir süre sonra kaleme aldığı ve tüm kırgınlığına rağmen eski rakibinin resimdeki gücünü gizleyemediği biyografiydi. Biri fırçasıyla, öteki kalemiyle son sözü söylemek istedi. Bazen bir sanatçının sesi en çok dostlarının övgüsünde değil, bir düşmanla girdiği mahkeme tutanağında yankılanır."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "The National Gallery, London — Beyond Caravaggio: Caravaggio's immediate circle",
+     "adres": "https://www.nationalgallery.org.uk/documents/beyond-caravaggio-exhibition-in-focus?viewPage=2"
+    },
+    {
+     "baslik": "Staatliche Museen zu Berlin, Gemäldegalerie — Amor als Sieger (Amor Vincit Omnia)",
+     "adres": "https://search.smb.museum/object/obj-862322"
+    },
+    {
+     "baslik": "Museum & Gallery — Giovanni Baglione: Object of the Month",
+     "adres": "https://museumandgallery.org/object-of-the-month-january-2024/"
+    },
+    {
+     "baslik": "Smarthistory — Caravaggio, Calling of Saint Matthew",
+     "adres": "https://smarthistory.org/caravaggio-calling-of-st-matthew/"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Caravaggio: Continued successes and the murder of Tomassoni",
+     "adres": "https://www.britannica.com/biography/Caravaggio/Continued-successes-and-the-murder-of-Tomassoni"
+    },
+    {
+     "baslik": "Web Gallery of Art — Giovanni Baglione, Sacred and Profane Love",
+     "adres": "https://www.wga.hu/html_m/b/baglione/sacred2.html"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — Caravaggio Quotes: What the Documents Actually Record (Archivio di Stato di Roma, 1603)",
+     "adres": "https://www.thehistoryofart.org/caravaggio/quotes/"
+    },
+    {
+     "baslik": "Nicholas Hall — Elizabeth Cropper: Fathers and Daughters (Orazio and Artemisia Gentileschi)",
+     "adres": "https://www.nicholashall.art/journal/fathers-and-daughters-part-3/"
+    }
+   ],
+   "kelime": 1016,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  }
+ }
+}
