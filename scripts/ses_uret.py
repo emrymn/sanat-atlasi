@@ -665,6 +665,26 @@ def yukle(ses, kaynak):
         liste_yolu.unlink()
 
 
+def klasor_sorunu(cikti, ses):
+    """Dizinde kayıtlı parçaların yarısından azı bu klasörde varsa yanlış checkout'tayız (ör. ses/ klasörü boş
+    bir worktree ya da klon): devam edilirse eski parçalar baştan okutulur ve kredi boşa gider."""
+    yol = KOK / 'data' / 'ses_dizini.json'
+    if not yol.exists():
+        return None
+    d = json.loads(yol.read_text(encoding='utf-8'))
+    if d.get('ses') != ses:
+        return None
+    kayitli = d.get('parcalar', {})
+    if len(kayitli) < 100:
+        return None
+    var = sum(1 for k in kayitli if (cikti / f'{k}.mp3').exists())
+    if var >= 0.5 * len(kayitli):
+        return None
+    return (f'DUR: ses_dizini.json {len(kayitli)} parça diyor ama {cikti} içinde yalnız {var} tanesi var.\n'
+            f'Büyük ihtimalle yanlış klasördesin ({KOK}); devam etseydin eski parçalar baştan okutulurdu.\n'
+            'Seslendirmeyi mp3\'lerin olduğu ana klasörde çalıştır. Klasör bilerek boşsa --zorla ekle.')
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--ses', default=VARSAYILAN_SES, help=f'Gemini hazır sesi (varsayılan {VARSAYILAN_SES})')
@@ -684,6 +704,7 @@ def main():
                     help='Batch API ile (günlük sınır yok, yarı fiyat); bitene kadar gönderir ve bekler')
     ap.add_argument('--tek', action='store_true', help='parçaları gruplamadan tek tek okut (istek sayısı artar)')
     ap.add_argument('--en-cok', type=int, default=450_000, help='bu çalıştırmada en çok kaç karakter okutulsun')
+    ap.add_argument('--zorla', action='store_true', help='klasör denetimini atla (ses/ klasörü bilerek boşsa)')
     g = ap.parse_args()
 
     if g.dene:
@@ -707,6 +728,10 @@ def main():
     if g.say:
         return
     cikti = KOK / 'ses' / g.ses
+    if not (g.yukle or g.denetle or g.zorla):
+        sorun = klasor_sorunu(cikti, g.ses)
+        if sorun:
+            raise SystemExit(sorun)
     if g.duzelt:
         duzelt(g.ses, cikti)
         g.toplu = True  # dizini yeniden yaz (eksik parça yoksa istek gitmez)
