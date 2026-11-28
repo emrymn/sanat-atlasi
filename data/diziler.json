@@ -10,6 +10,26 @@
     "dueller-ghiberti-brunelleschi",
     "dueller-caravaggio-baglione"
    ]
+  },
+  {
+   "id": "dostluklar",
+   "ad": "Dostluklar ve Kopuşlar",
+   "aciklama": "Birlikte çalışan, birbirini kollayan ve sonunda kırılan dostlar. Kopuş hiçbir zaman tek bir kavgadan doğmaz.",
+   "bolumler": [
+    "dostluklar-van-gogh-gauguin",
+    "dostluklar-manet-degas",
+    "dostluklar-cezanne-zola"
+   ]
+  },
+  {
+   "id": "ayni-konu",
+   "ad": "Aynı Konu, İki Usta",
+   "aciklama": "Aynı sahneyi boyamış iki usta, iki tablo yan yana. Hangisi daha iyi değil, neyi neden farklı seçtikleri.",
+   "bolumler": [
+    "ayni-konu-yudit",
+    "ayni-konu-meryemin-evliligi",
+    "ayni-konu-venus-olympia"
+   ]
   }
  ],
  "bolumler": {
@@ -412,6 +432,831 @@
     }
    ],
    "kelime": 1016,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "dostluklar-van-gogh-gauguin": {
+   "dizi": "dostluklar",
+   "baslik": "Arles'daki Dokuz Hafta",
+   "alt_baslik": "Vincent van Gogh ile Paul Gauguin, Ekim–Aralık 1888",
+   "sanatcilar": [
+    "vincent-van-gogh",
+    "paul-gauguin"
+   ],
+   "giris": [
+    "23 Ekim 1888 sabahı saat beşte Arles tren istasyonuna kırk yaşında, yorgun bir adam indi. Paul Gauguin, gün ağarana kadar yakındaki Café de la Gare'a oturdu. Kafenin sahibi Joseph Ginoux, yeni gelen yabancıyı daha önce duvarda gördüğü bir otoportreden hemen tanıdı. Hava aydınlanınca Gauguin köşeyi dönüp Place Lamartine 2 numaradaki sarı sıvalı evin kapısını çaldı. Kapıyı otuz beş yaşındaki Vincent van Gogh açtı. Aylardır beklediği an gelmişti; güneyin güneşinde birlikte çalışacakları, masrafları ve fikirleri paylaşacakları bir sanatçı topluluğunun ilk günü başlıyordu. O sabah ikisi de bu ortaklığın yalnızca dokuz hafta süreceğini ve Noel arifesinde kanlı bir kopuşla biteceğini bilmiyordu.",
+    "Bu iki ressamı Arles'a getiren şey aynı hayal değildi. Van Gogh, Paris'te tanıştığı ve derin bir saygı duyduğu Gauguin'le yan yana çalışarak modern resme yeni bir yol açmak istiyordu. Gauguin ise borçlardan bunalmış, tablolarını satmakta zorlanan deneyimli bir sanatçıydı ve güneye inerken öncelikle Paris'teki satış desteğine güveniyordu. İlk haftalarda aynı sokaklarda, aynı antik mezarlıkta ve aynı kahvede şövale kurdular. Fakat kış yağmurları bastırıp ikisi küçük evin dört duvarı arasına sıkıştığında, fırça vuruşlarındaki ayrılık yavaş yavaş bir karakter ve yöntem çatışmasına dönüştü."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Sarı Ev ve Parasal Anlaşma",
+     "yillar": "1888",
+     "paragraflar": [
+      "Van Gogh, Mayıs 1888'de Arles'taki Sarı Ev'in dört odasını kiralamıştı. Aklında tek bir düş vardı: Paris'in gürültüsünden ve yalnızlıktan uzak, ressamların omuz omuza çalışacağı bir Güney Atölyesi kurmak. Mayıs sonunda kardeşi Theo van Gogh'a yazdığı mektupta ressamların yalnız yaşamasının saçma olduğunu, yalıtılmışlık içinde herkesin kaybettiğini söylüyordu. Bu atölyenin başına koymak istediği kişi Paul Gauguin idi. Sarı Ev'in duvarlarını onun gelişi için hazırladı; Ağustos sonundan itibaren Gauguin'in kalacağı odayı aydınlatmak için Ayçiçekleri tuvallerini boyadı. Sarı Ev tablosuna baktığında, o küçük köşe binasının sıcak gökyüzü altında nasıl bir sığınak gibi parladığını hemen görürsün.",
+      "Gauguin ise bu yolculuğa aynı coşkuyla çıkmadı. Bretanya'daki Pont-Aven kasabasında borç içindeydi, tablolarını satamıyordu ve sağlığı bozuktu. Onu güneye inmeye ikna eden şey Van Gogh'un hayalinden çok, sanat simsarı Theo van Gogh'un yaptığı parasal anlaşmaydı. Van Gogh'un 18 Eylül 1888 tarihli mektubundan biliyoruz ki Theo, Gauguin'e ayda bir tablo karşılığında yüz elli frank önermiş, ayrıca yol parasını ve satış desteğini üstlenmişti. Van Gogh bile dostunun hesaplı davrandığını ve borçlarından sıyrılmak için zaman kazanmaya çalıştığını seziyordu. İki adam aynı eve adım atarken bambaşka beklentiler taşıyordu: biri ömürlük bir kardeşlik, öteki geçici bir nefes alma durağı arıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q2200610",
+       "bag": "Van Gogh'un Mayıs 1888'de kiralayıp Güney Atölyesi hayalini kurduğu bina, bu tabloda parlak bir güney göğü altında tüm umuduyla görünür."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q157541",
+       "bag": "Van Gogh, Gauguin'in kalacağı misafir odasını süslemek için bu ayçiçeği serisini boyadı; Gauguin eve girer girmez bu tuvallerden çok etkilendi."
+      }
+     ]
+    },
+    {
+     "baslik": "Aynı Sokaklar, İki Ayrı Göz",
+     "yillar": "Ekim–Kasım 1888",
+     "paragraflar": [
+      "İlk haftalar umut vericiydi. İki sanatçı şövalelerini alıp Arles'ın eski Roma mezarlığı Alyscamps'ta yan yana durdu. Gauguin gelir gelmez yirmi metrelik kaba ve ucuz bir jüt kumaş rulosu almıştı; ikisi de bu sert dokunun üzerinde peş peşe tablolar çıkardı. Aynı mekânlara baksalar da fırçaları bambaşka çalışıyordu. Kasım başında Gauguin, Van Gogh'un daha önce boyadığı Gece Kahvesi salonunu kendi gözüyle yeniden ele aldı. İki tabloyu yan yana koyup bak: Van Gogh'un Gece Kahvesi'nde boş bilardo masası, sert kırmızı duvarlar ve yeşil tavan boğucu bir gerilim yaratır. Gauguin'in Arles'te Gece Kahvesi tablosunda ise ön planda kafenin sahibesi Madame Ginoux sakin, mesafeli ve hafif alaycı bir bakışla oturur; arka plandaki içki içenler düz renk alanlarına dönüşür.",
+      "Bu fark yalnızca bir üslup ayrılığı değil, derin bir yöntem çatışmasıydı. Van Gogh gözünün önündeki doğaya bağlıydı; kalın boya katmanlarıyla, hızla ve doğrudan gördüğünü boyuyordu. Gauguin ise sanatın bir soyutlama olduğunu savunuyor, doğanın karşısında düş kurup bellekten ve hayalden, ince ve mat katmanlarla çalışmayı öğütlüyordu. Van Gogh 19 Kasım 1888 tarihli mektubunda Gauguin'in etkisiyle bellekten kompozisyon kurmayı denediğini yazdı ve Etten Bahçesi'nin Anısı tablosunu yaptı. Ama birkaç gün sonra, 1 Aralık civarındaki mektubunda bu denemeyi bozduğunu kabul edip postacı Roulin ailesinin portreleriyle yeniden doğadan çalışmaya döndüğünü anlattı. Gauguin de aynı günlerde arkadaşı Émile Bernard'a Arles'ta her şeyi küçük ve sıradan bulduğunu, Vincent ile özellikle resim konusunda neredeyse hiç anlaşamadıklarını yazıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q674846",
+       "bag": "Van Gogh'un kırmızı ve yeşilin sert çatışmasıyla kurduğu bu gece mekânı, Gauguin'in Arles'a gelir gelmez kendi yöntemiyle yeniden yorumlayacağı sahne oldu."
+      },
+      {
+       "sanatci": "paul-gauguin",
+       "qid": "Q780986",
+       "bag": "Gauguin aynı kafeyi ön plana Madame Ginoux'yu yerleştirerek daha sakin, düz renkli ve mesafeli bir kurguyla yeniden boyadı."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q4126322",
+       "bag": "Van Gogh bu tabloda Gauguin'in bellekten ve hayalden boyama öğüdünü kısa bir süreliğine denedi, ancak kısa süre sonra kendi gözlem yoluna geri döndü."
+      }
+     ]
+    },
+    {
+     "baslik": "Boş Sandalyeler ve Aşırı Elektrikli Tartışmalar",
+     "yillar": "Kasım–Aralık 1888",
+     "paragraflar": [
+      "Kış yağmurları bastırınca iki adam küçük Sarı Ev'e kapandı. Birbirlerine duydukları saygı ile giderek büyüyen gerginlik, o haftalarda yaptıkları tablolara doğrudan sızdı. Van Gogh Kasım sonundan itibaren eşleştirilmiş iki sandalye tablosu boyadı: biri kendi hasır sandalyesi, öteki Gauguin'in oymalı koltuğu. Van Gogh'un Sandalyesi tablosuna baktığında gündüz ışığında duran sade, kaba ahşap bir sandalye, üzerinde pipo ile tütün kesesi ve arkadaki sandıkta filizlenen soğanlar görürsün. Bugün Amsterdam'da bulunan eş tablo Gauguin'in Koltuğu ise gece ışığında, kırmızı ve yeşil tonlarda, üzerinde iki roman ve yanan bir mumla hayal dünyasını simgeler. Van Gogh iki boş koltukla hem dostluklarını hem de kapatılamayan karakter farklarını tek bakışta özetlemişti.",
+      "Aralık başında Gauguin de Van Gogh'un şövale başındaki portresini yapmaya başladı. Ayçiçeklerinin Ressamı tablosuna dikkatle bak: Van Gogh dar bir açıyla yukarıdan, gözleri kısık ve tuvale saplantılı biçimde eğilmiş görünür; üstelik Aralık ayında gerçek ayçiçeği olmadığı hâlde Gauguin onları bellekten ekleyerek kendi yöntemini sessizce savunur. Yıllar sonra Gauguin, 1903 tarihli elyazmasında Van Gogh'un bu portreye bakıp bu benim ama delirmiş hâlim dediğini anlatır; ancak bu söz Van Gogh'un mektuplarında geçmez ve doğrulanamamıştır. Van Gogh'un kendi kaleminden çıkan gerçek cümle Eylül 1889 tarihli mektubundadır: o gerçekten bendim, son derece yorgun ve o zamanki gibi elektrikle yüklü. Aralık ortasında Montpellier'deki Fabre Müzesi'ne yaptıkları gezi gerilimi zirveye taşıdı. Van Gogh 17 veya 18 Aralık tarihli mektubunda Delacroix ve Rembrandt üzerine tartışmalarının aşırı elektrikli olduğunu, sohbetten boşalmış bir elektrik pili gibi yorgun çıktıklarını yazdı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q1118295",
+       "bag": "Gündüz ışığındaki bu sade hasır sandalye, Gauguin'in gece ışığındaki koltuğuyla birlikte iki dostun karşıt sanat anlayışlarını temsil eder."
+      },
+      {
+       "sanatci": "paul-gauguin",
+       "qid": "Q2093283",
+       "bag": "Gauguin'in Aralık 1888'de boyadığı bu portre, Van Gogh'a duyduğu hayranlıkla onun yöntemine yönelttiği sessiz eleştiriyi aynı tuvalde taşır."
+      }
+     ]
+    },
+    {
+     "baslik": "23 Aralık Gecesi ve Sessiz Ayrılık",
+     "yillar": "1888–1903",
+     "paragraflar": [
+      "23 Aralık 1888 akşamı dokuz haftalık birikim bir anda patladı. Gauguin'in Paris'e dönmekten söz etmesi Van Gogh'u derin bir terk edilme korkusuna sürükledi. O gece evde üçüncü bir tanık yoktu ve Van Gogh sonradan yaşananları hatırlamadı. Belgelerin doğruladığı gerçek şudur: Van Gogh o gece sol kulağını kesti, kâğıda sardı ve yakındaki bir genelevde çalışan genç bir kadına götürdü. Ertesi sabah polis onu Sarı Ev'de bilincini yitirmiş hâlde bulup Arles hastanesine kaldırdı; yarayı genç doktor Félix Rey tedavi etti. Uzun yıllar kulağın yalnızca memesinin kesildiği ve Rachel adlı bir kadına verildiği söylendi. Ancak 2016'da araştırmacı Bernadette Murphy'nin ortaya çıkardığı belgeler bu tabloyu değiştirdi: Doktor Rey'in 1930'da çizdiği ve bugün Berkeley'de saklanan not kulağın neredeyse tamamının kesildiğini gösteriyor; kulağın verildiği kişi ise orada temizlikçi olarak çalışan genç Gabrielle Berlatier idi.",
+      "O gece Gauguin'in rolü ise hâlâ tartışmalıdır. Gauguin on beş yıl sonra yazdığı anılarında, yürüyüşe çıktığında Van Gogh'un elinde açık bir usturayla arkasından koştuğunu, kendi bakışı karşısında durup eve döndüğünü ve kulağını kestiğini ileri sürdü; fakat bu anlatı hiçbir tanıkla doğrulanmadı. 2009 yılında Alman sanat tarihçileri Hans Kaufmann ve Rita Wildegans, usta bir eskrimci olan Gauguin'in kavga sırasında kulağı kılıcıyla kestiğini ve ikilinin susma anlaşması yaptığını savundu; Van Gogh Müzesi uzmanları ise bu tezi reddederek öz zarar görüşünde kaldı. Gauguin hemen Theo'ya telgraf çekti. Theo 24 Aralık'ta yola çıkıp Noel günü Arles'a ulaştı; Gauguin hastaneye uğramadan eşyalarını topladı ve Theo ile birlikte Paris'e döndü. İki adam bir daha hiç yüz yüze gelmedi ama mektuplaşmaları sürdü; Van Gogh 4 Ocak 1889'da Gauguin'e içten bir dostluk mektubu yazdı, Gauguin de onun ayçiçeklerini öven bir yanıt gönderdi."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paul-gauguin",
+       "qid": "Q3780813",
+       "bag": "Gauguin'in Arles'a gelmeden önce Van Gogh'a armağan ettiği bu otoportre, dokuz haftalık yolculuğun başındaki karşılıklı saygıyı hatırlatır."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q724377",
+       "bag": "Van Gogh'un huzur ve uyku duygusu uyandırmak için boyadığı bu oda, Sarı Ev'deki büyük umudun ve arkasından gelen kopuşun tanığı oldu."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Arles'daki dokuz hafta bir başarısızlık gibi bitti; Güney Atölyesi dağıldı, Van Gogh hastaneye ve ardından Saint-Rémy'deki akıl hastanesine gitti, Gauguin ise kısa süre sonra Tahiti'ye uzanan bambaşka bir yola çıktı. Ama iki sanatçı birbirinden hiçbir zaman tam olarak kopmadı. Van Gogh'un ölümünden on bir yıl sonra, 1901'de Gauguin Tahiti'de bir koltuğun üzerinde duran ayçiçekleri boyadı. İki ayrı dünyanın iki inatçı ressamı, dokuz haftalık o fırtınalı sonbaharda birbirini kırdı; ama birbirinin resmine bıraktıkları iz, bir ömür boyu silinmedi."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Van Gogh Museum — Catalogue Contemporaries of Van Gogh 1: Vincent van Gogh Painting Sunflowers",
+     "adres": "https://catalogues.vangoghmuseum.com/contemporaries-of-van-gogh-1/cat60"
+    },
+    {
+     "baslik": "Van Gogh Museum — Vincent van Gogh in the South of France (1888–1889)",
+     "adres": "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/south-of-france"
+    },
+    {
+     "baslik": "Van Gogh Museum — Vincent's Illness and the Healing Power of Art",
+     "adres": "https://www.vangoghmuseum.nl/en/art-and-stories/stories/vincents-illness-and-the-healing-power-of-art"
+    },
+    {
+     "baslik": "Van Gogh Letters — Letter 682 (To Theo van Gogh, 18 September 1888)",
+     "adres": "https://vangoghletters.org/detail/urn:mace:huc.knaw.nl:vangogh:let682"
+    },
+    {
+     "baslik": "The National Gallery, London — Vincent van Gogh, Van Gogh's Chair (NG3862)",
+     "adres": "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-van-gogh-s-chair"
+    },
+    {
+     "baslik": "Christie's — La maison de Vincent à Arles (La maison jaune) catalogue note",
+     "adres": "https://www.christies.com/en/lot/lot-5737639"
+    },
+    {
+     "baslik": "The Art Institute of Chicago — Van Gogh and Gauguin: The Studio of the South",
+     "adres": "https://archive.artic.edu/vangogh/studiosud.html"
+    },
+    {
+     "baslik": "UC Berkeley Library — The tale of the Van Gogh note (Dr. Félix Rey)",
+     "adres": "https://www.lib.berkeley.edu/about/news/tale-van-gogh-note"
+    },
+    {
+     "baslik": "The Guardian — Woman who received Van Gogh's ear named 130 years after artist cut it off (2016)",
+     "adres": "https://www.theguardian.com/artanddesign/2016/jul/20/woman-who-received-van-goghs-ear-named-130-years-after-artist-cut-it-off"
+    },
+    {
+     "baslik": "The Guardian — Art historians claim Van Gogh's ear 'cut off by Gauguin' (2009)",
+     "adres": "https://www.theguardian.com/artanddesign/2009/may/04/vincent-van-gogh-ear"
+    }
+   ],
+   "kelime": 1161,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "dostluklar-manet-degas": {
+   "dizi": "dostluklar",
+   "baslik": "Kesilen Portre",
+   "alt_baslik": "Édouard Manet ile Edgar Degas, 1868–1869",
+   "sanatcilar": [
+    "edouard-manet",
+    "edgar-degas"
+   ],
+   "giris": [
+    "1868 ya da 1869 yılında bir gün Edgar Degas, yakın dostu Édouard Manet'nin Paris'teki evine girdi ve kısa süre önce armağan ettiği bir tabloya baktı. Gördüğü şey onu dondurdu: Manet, bıçağı eline almış, tuvalin sağ kenarını baştan aşağı kesmişti. Kesilip atılan parça, piyanonun gövdesi ile Manet'nin piyanist eşi Suzanne Manet'nin yüzüydü. Degas tek söz etmeden kesilmiş tabloyu koltuğunun altına aldı ve evden çıktı. Eve döner dönmez, Manet'nin kendisine armağan ettiği bir natürmortu paketleyip geri gönderdi. O gün Paris sanat dünyasının en yakın ama en dikenli dostluğu, bir bıçak iziyle ortadan ikiye bölünmüştü.",
+    "İki adam arasındaki bu sert kırılma, aslında yıllardır biriken bir yakınlık ve rekabetin patlamasıydı. İkisi de Paris'in varlıklı burjuva ailelerinden geliyordu, ikisinin babası da oğullarının hukuk okumasını istemişti ve ikisi de modern Paris hayatını eski ustaların ağırlığıyla birleştirmeye çalışıyordu. Ama mizaçları birbirine hiç benzemiyordu: Manet sıcakkanlı, salonları seven ve resmi kabul bekleyen bir adamdı; Degas ise iğneleyici, kuşkucu ve yalnızlığı seçen bir gözlemciydi. Kesilen o tek şerit tuval, ikisinin hem birbirine ne kadar yakın durduğunu hem de birbirinin resmine ne kadar sert dokunduğunu bugün bile gözler önüne serer."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Louvre'da Başlayan Rekabet",
+     "yillar": "1861–1866",
+     "paragraflar": [
+      "İki sanatçının yolları 1860'ların başında kesişti. Anlatılır ki 1861 ya da 1862 yılında yirmi yedi yaşındaki Edgar Degas, Louvre Müzesi'nde o dönem Diego Velázquez'e atfedilen Infanta Margarita tablosunu doğrudan bakır bir levhaya gravür olarak kazıyordu. Yanına kendisinden iki yaş büyük, sarışın ve şık giyimli bir adam yaklaştı, ön çizim yapmadan doğrudan bakıra girmenin cesaretine şaşırdığını söyleyip kendini tanıttı: Édouard Manet. Bu ilk karşılaşma çağdaş bir belgede geçmese de iki sanatçının aynı Velázquez portresini gravür olarak çalıştığı biliniyor. İlk günden itibaren aralarında hem ortak bir İspanyol resmi beğenisi hem de sessiz bir güç ölçümü başladı.",
+      "İkisi de aynı yılların Paris'inde eski ustaların dilini çağdaş kent konularına taşıyordu. Manet 1864 Salon'unda boğa güreşi tablosu orantı ve perspektif yüzünden sert eleştirilere uğrayınca tuvalini kendi elleriyle ikiye kesmiş, alt parçayı Ölü Matador adıyla saklamıştı; kendi tuvaline bile acımayan bu sabırsız huy, yıllar sonra Degas'nın tablosunda yeniden ortaya çıkacaktı. Degas ise aynı yıllarda Bellelli Ailesi gibi büyük aile portrelerinde insan ilişkilerindeki soğukluğu ve gerilimi incelikle işliyor, atölyesinde defalarca yeniden çalıştığı keskin gözlemler biriktiriyordu. İkisi de kendilerine İzlenimci denmesinden hoşlanmadı; ancak yolları burada ayrıldı. Manet hayatı boyunca resmi Salon'dan övgü ve madalya beklerken, Degas 1874'ten sonra bağımsız İzlenimci sergilerinin en inatçı örgütleyicisi oldu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q3203711",
+       "bag": "Manet'nin 1864 Salon eleştirilerine kızıp büyük bir tuvalden kendi elleriyle kestiği bu parça, Degas'nın eserleri üzerinde de güçlü bir etki bıraktı."
+      },
+      {
+       "sanatci": "edgar-degas",
+       "qid": "Q2622172",
+       "bag": "Degas'nın aynı yıllarda tamamladığı bu büyük aile portresi, insan ilişkilerindeki sessiz gerilimi yakalayan keskin gözlem gücünü gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Kanepe, Piyano ve Bıçak İzi",
+     "yillar": "1868–1869",
+     "paragraflar": [
+      "1868 ile 1869 yılları arasında Degas, Manet çiftinin evindeki bir müzik akşamını anımsayarak ikili bir portre boyadı ve dostlarına armağan etti. Bugün Japonya'daki Kitakyushu Belediye Sanat Müzesi'nde bulunan Bay ve Bayan Édouard Manet tablosuna yakından bak: solda Manet, açık renkli bir kanepeye boylu boyunca uzanmış, elini şakağına dayayıp müzik dinlerken neredeyse rahat bir ev hâli içindedir. Gözünü sağa kaydırdığında ise bir anda sert, düz kahverengi bir boşlukla çarpışırsın. Suzanne Manet'nin elbisesi ve omzunun küçük bir parçası görünür ama yüzü ve piyanonun gövdesi kesilip gitmiştir. O kahverengi şerit bir duvar değil, kesik kenara sonradan eklenmiş boş bir tuval parçasıdır; onu kimin eklediği kaynaklarda farklı anlatılır.",
+      "Manet'nin dostunun armağanını neden bıçakladığı bugün hâlâ kesin olarak bilinmiyor. Yaygın rivayete göre Manet, Degas'nın karısını çirkin ve sert gösterdiğine öfkelenmişti; ama dönemin mektupları bunu doğrudan kanıtlamıyor. Aynı yıllarda, 1867 ile 1868 arasında Manet'nin kendi boyadığı Piyanoda Bayan Manet tablosuna bakınca ikisinin farkı hemen anlaşılır: Manet karısını yumuşak bir yan profille, sıcak ve sakin bir ışık içinde, neredeyse sevgiyle resmetmiştir. Degas ise yüzleri güzelleştirmekle değil, anlık bir duruşu acımasız bir dürüstlükle yakalamakla ilgileniyordu. Degas kesilen tabloyu atölyesine götürdü, yeniden boyamayı düşündüyse de hiçbir zaman fırça vurmadı; atölyesinde çekilen fotoğraflarda bile kesik izi olduğu gibi durur."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edgar-degas",
+       "qid": "Q4025363",
+       "bag": "Degas'nın dostlarına armağan ettiği bu ikili portrede Manet'nin kestiği sağ kenar ve sonradan eklenen boş tuval şeridi bugün de açıkça görülür."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q3505997",
+       "bag": "Manet'nin aynı yıllarda boyadığı bu piyano sahnesi, Suzanne Manet'yi Degas'nın sert bakışının aksine yumuşak ve dingin bir yan profille gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Kafe Masalarında Uyumsuz Akorlar",
+     "yillar": "1869–1882",
+     "paragraflar": [
+      "Portre kavgası sertti ama dostluğu bitirmedi. Ortak arkadaşları Berthe Morisot'nun ailesine ait bir mektup, iki sanatçının çok geçmeden arayı düzelttiğini ve yeniden görüşmeye başladığını gösterir. Paris'te önce Café Guerbois, ardından Place Pigalle'deki La Nouvelle-Athènes masalarında yeniden bir araya geldiler; at yarışları, deniz kıyıları, kafe köşeleri ve modern kent yaşamı üzerine saatlerce tartıştılar. Çevrelerindeki herkes bu ikilinin birbirini hem kollayıp hem iğnelediğini biliyordu. Şair Paul Valéry, yıllar sonra Degas üzerine yazdığı kitapta iki ustanın yakınlığını uyumsuz akorlara yaklaşan şaşırtıcı bir birliktelik diye anlattı. Biri resmin enerjisini çabuk, cesur ve parlak fırça vuruşlarında arıyor, öteki çizgiyi ve beklenmedik bakış açılarını laboratuvar titizliğiyle kuruyordu.",
+      "Aralarındaki bu sessiz yarışı görmek için 1875 ile 1878 arasında aynı kafede, aynı oyuncu Ellen Andrée'yi boyadıkları iki tabloya yan yana bakmak yeter. Degas'nın Absent İçenler tablosunda kadın omuzları çökmüş, boşluğa bakan, solgun ve derin bir yalnızlık içindedir; yanındaki adamla aralarındaki mesafe elle tutulur gibidir ve masa mermerleri keskin bir açıyla izleyiciyi sahnenin dışına iter. Bir iki yıl sonra Manet'nin boyadığı Erik tablosunda ise aynı kadın yakın planda, pembe yanakları, parmakları arasında sigarası, önündeki erik kadehi ve hafif dalgın bakışıyla çok daha sıcak ve yumuşak görünür. İkisi de aynı Paris'e bakıyor, ama aynı masadan bambaşka insan hâlleri çıkarıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edgar-degas",
+       "qid": "Q1239950",
+       "bag": "Degas, La Nouvelle-Athènes kafesinde oyuncu Ellen Andrée'yi soğuk tonlar ve çökmüş bir duruşla derin bir yalnızlık içinde betimledi."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q731639",
+       "bag": "Manet aynı kafede aynı modeli çok daha sıcak renkler, yumuşak ışık ve dalgın bir gülümsemeyle resmederek Degas'ya sessiz bir yanıt verdi."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q2899286",
+       "bag": "İki sanatçının ortak çevresindeki en yakın dostlardan Berthe Morisot, Manet ile Degas'nın barışıp yeniden bir araya geldiği yılların tanığıydı."
+      }
+     ]
+    },
+    {
+     "baslik": "Sandığımızdan Büyükmüş",
+     "yillar": "1883–1918",
+     "paragraflar": [
+      "30 Nisan 1883 günü Édouard Manet, sol bacağındaki kangren nedeniyle geçirdiği ağır bir ameliyatın ardından elli bir yaşında öldü. O gün Passy Mezarlığı'ndaki cenazede kırk sekiz yaşındaki Edgar Degas'nın sessizce durup bir pişmanlık cümlesi fısıldadığı aktarılır: sandığımızdan daha büyükmüş. Manet hayattayken onu sık sık alaya alan, başarısını ve toplumsal rahatlığını kıskanan o keskin dilli dost, ölümünden sonra Manet'nin mirasının en inatçı savunucusuna dönüştü. 1885'teki anma yemeğine katıldı, 1890'da Claude Monet'nin Olympia tablosunu Louvre Müzesi'ne kazandırmak için başlattığı bağış kampanyasına destek verdi ve kendi evinde satın alma, takas ve armağanlarla neredeyse seksen Manet eseri topladı.",
+      "Degas'nın bu geç gelen bağlılığının en unutulmaz izi ise bugün Londra Ulusal Galerisi'nde asılı duran İmparator I. Maximilian'ın İnfazı tablosudur. Manet'nin 1867 ile 1868 arasında yaptığı dört versiyondan ikincisi olan bu dev tuval, atölyedeki kötü saklama koşulları yüzünden yıpranmıştı. Manet ölünce Suzanne Manet ve oğlu Léon Leenhoff, daha kolay satabilmek için tuvali kesip parçalara böldü. Bir zamanlar kendi portresi Manet tarafından kesilen Degas, bu kez yıllar boyunca Ambroise Vollard gibi sanat satıcılarını dolaşıp dostunun parçalanmış başyapıtını tek tek satın aldı ve 1902'ye kadar eline geçen tüm parçaları tek bir tuval üzerinde yeniden birleştirdi. Degas 1917'de öldüğünde, Mart 1918'deki koleksiyon satışında bu birleştirilmiş tablo Londra Ulusal Galerisi'ne geçti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q1212269",
+       "bag": "Manet'nin ölümünden sonra ailesi tarafından kesilip satılan bu büyük kompozisyonun kalan parçalarını Degas yıllarca toplayıp yeniden birleştirdi."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q737062",
+       "bag": "Degas, Manet'nin ölümünden sonra bu ünlü tablonun Louvre Müzesi'ne alınması için 1890'da yürütülen bağış kampanyasına gönülden destek verdi."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Manet ile Degas'nın dostluğu hiçbir zaman pürüzsüz olmadı; birbirlerinin eksiklerini en acımasız biçimde gördüler, kıskandılar ve bir gün bir bıçak darbesiyle birbirlerini yaraladılar. Ama sanat tarihinde az rastlanan bir simetriyle hikâye tersine döndü: Manet'nin kestiği bir Degas tablosuyla sarsılan bağ, yıllar sonra Degas'nın kesilmiş bir Manet başyapıtını parça parça toplayıp birleştirmesiyle onarıldı. Bir dostluğun ağırlığı bazen birlikte geçirilen neşeli akşamlarda değil, birinin gidişinden sonra ötekinin geride kalan parçaları nasıl topladığında belli olur."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "The National Gallery, London — Édouard Manet, The Execution of Maximilian (NG3294)",
+     "adres": "https://www.nationalgallery.org.uk/paintings/edouard-manet-the-execution-of-maximilian"
+    },
+    {
+     "baslik": "The National Gallery, London — In the Line of Fire: Manet's The Execution of Maximilian",
+     "adres": "https://www.nationalgallery.org.uk/paintings/learn-about-art/paintings-in-depth/in-the-line-of-fire-manet-s-the-execution-of-maximilian"
+    },
+    {
+     "baslik": "The Metropolitan Museum of Art — Manet/Degas Exhibition",
+     "adres": "https://www.metmuseum.org/es/exhibitions/manet-degas"
+    },
+    {
+     "baslik": "The Metropolitan Museum of Art — The Private Collection of Edgar Degas (1997)",
+     "adres": "https://www.metmuseum.org/met-publications/the-private-collection-of-edgar-degas"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — Mr. and Mrs. Édouard Manet by Edgar Degas (Kitakyushu Municipal Museum of Art)",
+     "adres": "https://www.thehistoryofart.org/edgar-degas/m-and-mme-edouard-manet/"
+    },
+    {
+     "baslik": "Art & Object — At the Metropolitan Museum of Art, Manet and Degas Go Head to Head (2023)",
+     "adres": "https://www.artandobject.com/articles/metropolitan-museum-art-manet-and-degas-go-head-head"
+    },
+    {
+     "baslik": "The Irish Times — Manet/Degas: a compelling portrait of friends, rivals, jealousy and slashed paintings (2023)",
+     "adres": "https://www.irishtimes.com/culture/art/2023/04/22/manetdegas-a-compelling-portrait-of-friends-rivals-jealousy-and-slashed-paintings/"
+    },
+    {
+     "baslik": "World History Encyclopedia — Édouard Manet",
+     "adres": "https://www.worldhistory.org/Edouard_Manet/"
+    },
+    {
+     "baslik": "Impressionism.nl — Edgar Degas Biography & Collection",
+     "adres": "https://www.impressionism.nl/degas-edgar/"
+    }
+   ],
+   "kelime": 1048,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "dostluklar-cezanne-zola": {
+   "dizi": "dostluklar",
+   "baslik": "Bir Romanla Biten Dostluk",
+   "alt_baslik": "Paul Cézanne ile Émile Zola, 1852–1886",
+   "sanatcilar": [
+    "paul-cezanne"
+   ],
+   "giris": [
+    "4 Nisan 1886 günü Provence'ın küçük Gardanne kasabasında kırk yedi yaşındaki Paul Cézanne masasına oturdu ve Paris'teki en eski dostuna birkaç satırlık bir mektup yazdı. Émile Zola ona yeni romanı Eser'i göndermişti; kitap, büyük başyapıtını bir türlü bitiremeyip tuvalinin önünde canına kıyan başarısız ressam Claude Lantier'nin hikâyesini anlatıyordu. Cézanne mektubunda Zola'yı yalnızca Rougon-Macquart'ların yazarı diye andı, eski yılları düşünerek elini sıkmak istediğini yazdı ve geçmiş zamanların izlenimiyle tamamen senin diyerek imzasını attı. Onlarca yıl boyunca sanat tarihçileri bu kısa mektubu otuz yıllık bir kardeşliğin soğuk veda mektubu saydı. Oysa ne o dostluk bu kadar basitti ne de o mektup gerçekten sonuncusuydu.",
+    "Paul Cézanne ile Émile Zola, 1852'de Aix-en-Provence'ta iki okul çocuğu olarak yan yana gelmiş, gençlik hayallerini, parasızlıklarını ve Paris'i fethetme tutkusunu birlikte büyütmüştü. Zola kısa sürede Fransa'nın en ünlü romancısı oldu; Cézanne ise sergilerden reddedilen, anlaşılamayan ve giderek kendi içine kapanan bir ressam olarak kaldı. 1886'da yollarının suskunluğa gömülmesi tek bir romanın açtığı ani bir yara mıydı, yoksa yıllar içinde bambaşka dünyalara savrulan iki insanın kaçınılmaz uzaklaşması mı?"
+   ],
+   "bolumler": [
+    {
+     "baslik": "Aix'in Tepeleri ve Elma Sepeti",
+     "yillar": "1852–1862",
+     "paragraflar": [
+      "Hikâye 1852 yılında Aix-en-Provence'taki Collège Bourbon'un avlusunda başladı. On üç yaşındaki Paul Cézanne, kendisinden bir yaş küçük olan Émile Zola ve bilim meraklısı arkadaşları Jean-Baptistin Baille okulda Ayrılmazlar diye anılıyordu. Yıllar sonra şair Joachim Gasquet'nin aktardığına göre, İtalyan göçmen bir mühendisin oğlu olduğu için alay edilen Zola'yı iri yapılı Cézanne zorbalardan korumuş, Zola da ertesi gün ona teşekkür olarak bir sepet elma getirmişti. Bu anekdot çağdaş bir belgede geçmese de Cézanne'ın ömrü boyunca döne döne boyadığı Elma Sepeti gibi natürmortlara bakan herkes o çocukluk hikâyesini hatırlar. Üç arkadaş yaz günleri Arc Nehri'nde yüzer, Sainte-Victoire Dağı'na tırmanır ve yüksek sesle Victor Hugo ile Alfred de Musset şiirleri okurdu.",
+      "1858'de Zola Paris'e taşınınca aralarında ateşli bir mektuplaşma başladı. Zola, 25 Mart 1860 tarihli mektubunda kendisinin yazdığı büyük bir kitabı Cézanne'ın gravürleriyle süslediği ve ikisinin adının ilk sayfada altın harflerle yan yana parladığı bir düş gördüğünü yazıyordu. Cézanne'ın banker babası Louis-Auguste ise oğlunun hukuk okumasında diretiyordu. Cézanne ancak 1861 Nisan'ında babasını ikna edip Paris'e gelebildi; fakat Académie Suisse'de bunalıma girip beş ay sonra Aix'e döndü. Ertesi yıl, 1862'de ressam olma kararıyla yeniden Paris'e yerleşti. O karanlık ve hırçın ilk Paris yıllarının enerjisini Siyahi Scipio tablosunun kalın boya katmanlarında ve sert ışık gölge çatışmasında doğrudan görebilirsin."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q31702677",
+       "bag": "Cézanne'ın 1860'lardaki ilk Paris yıllarında boyadığı bu güçlü figür, Zola ile birlikte büyük sanat hayalleri kurduğu dönemin yoğun ve karanlık üslubunu yansıtır."
+      },
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3956440",
+       "bag": "Cézanne'ın yıllar sonra kusursuz bir mimari dengeyle kurduğu bu elmalar, biyografi yazarlarının sık sık çocukluk dostu Zola'nın armağan ettiği elma sepetiyle andığı motiftir."
+      }
+     ]
+    },
+    {
+     "baslik": "Gizli Aile ve Eleştirmenin Mesafesi",
+     "yillar": "1866–1880",
+     "paragraflar": [
+      "1866'da Zola, Édouard Manet'yi ve genç yenilikçi ressamları savunan ilk sanat yazılarını çocukluk dostu Cézanne'a ithaf etti. Cézanne da 1869 ile 1870 arasında dostunun evindeki edebi akşamları betimleyen Paul Alexis Zola'ya Okurken tablosunu yaptı. Ama hayat ikisini farklı sınamalardan geçiriyordu. Cézanne 1869'da model Hortense Fiquet ile birlikte yaşamaya başladı ve Ocak 1872'de oğulları Paul doğdu. Banker babasının aylığını kesmesinden korkan Cézanne, ailesini yıllarca gizledi. Mart 1878'de baba durumu öğrenip aylığı kesince Cézanne çaresizce Zola'ya başvurdu; Zola hiç tereddüt etmeden dostunun gizli ailesini ayakta tutmak için uzun süre düzenli para yardımı yaptı.",
+      "Buna karşılık sanat alanında aralarına sessiz bir duvar örülüyordu. Zola eleştirmen olarak Manet'yi ve İzlenimcileri coşkuyla överken, Cézanne'ın resimlerinden aynı güvenle söz etmedi. Cézanne 1874'teki ilk İzlenimci sergisine Asılan Adamın Evi gibi titizce kurulmuş bir manzarayla katıldı; bu tabloya yakından baktığında, İzlenimcilerin uçucu ışığı yerine taşın, çatının ve toprağın ağır geometrisini aradığını hemen fark edersin. Fakat sergi ziyaretçileri ve eleştirmenler onunla alay etti. Zola bir romancı olarak toplumun panoramasını ve hızlı bir ilerlemeyi arıyordu; Cézanne ise giderek Provence'a çekilip tek bir tepenin ya da bir meyve tabağının yapısını çözmeye adanıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3821663",
+       "bag": "1874'teki ilk İzlenimci sergisinde sergilenen bu manzara, Cézanne'ın İzlenimci ışıktan çıkıp kendi sağlam yapı arayışına yöneldiği dönüm noktasıdır."
+      },
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3937610",
+       "bag": "Cézanne'ın yıllarca babasından gizlediği ve zor günlerinde Zola'nın maddi desteğiyle geçindirdiği eşi Hortense Fiquet, onun en çok boyadığı modellerden biri oldu."
+      }
+     ]
+    },
+    {
+     "baslik": "1886 Yılı ve Bulunan Yeni Mektup",
+     "yillar": "1886–1887",
+     "paragraflar": [
+      "1886 yılı Cézanne'ın hayatında her şeyi değiştirdi. 31 Mart'ta Zola'nın Eser romanı yayımlandı; romanın ilk bölümleri Aix'teki çocukluk yürüyüşlerini andırıyor, sonunda ise ressam Claude Lantier yarım kalan büyük tablosunun karşısında intihar ediyordu. Cézanne dört gün sonra Gardanne'dan o ünlü kısa teşekkür mektubunu yazdı. O aylarda Gardanne'da boyadığı Gardanne Yakınında Sainte-Victoire Önünde Ev tablosuna baktığında, romandaki başarısız ressamın aksine Cézanne'ın geometrik düzeni tam bir olgunluğa ulaştırdığını görürsün. Üstelik aynı ay, 28 Nisan 1886'da Hortense ile evlendi; Ekim ayında da babasının ölümüyle Kestane Ağacı ve Jas de Bouffan Çiftliği tablosunda betimlediği aile mülküne ve tam maddi bağımsızlığa kavuştu.",
+      "Uzun yıllar boyunca John Rewald'ın mektup derlemesine dayanarak 4 Nisan 1886 mektubunun son mektup olduğu ve dostluğun Eser romanı yüzünden bir gecede koptuğu anlatıldı. Ancak Kasım 2013'te Paris'te bir müzayedede ortaya çıkan yeni bir belge bu yerleşik hikâyeyi tartıştırdı. 28 Kasım 1887 tarihli bu mektupta Cézanne, Zola'ya yeni romanı Toprak için teşekkür ediyor ve döndüğünde elini sıkmak için seni görmeye geleceğim diye yazıyordu. Henri Mitterand ve Alain Pagès gibi uzmanlar, bu mektubun ani bir kopuş tezini çürüttüğünü, dostluğun tek bir romanla değil yıllar içinde ayrılan hayat ve sanat anlayışlarıyla yavaş yavaş söndüğünü savunuyor. Buna karşılık Émile Bernard'ın aktardığı kırgın sözler ve Zola'nın Mayıs 1896'da Le Figaro gazetesinde Cézanne'dan dostum ve kardeşim diye söz ederken yarım kalmış büyük bir ressam ifadesini kullanması, aradaki yaranın tümüyle kapanmadığını gösteriyor."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q5914606",
+       "bag": "Cézanne'ın 4 Nisan 1886 tarihli mektubu yazdığı Gardanne kasabasında ürettiği bu manzara, onun olgun dönemdeki sağlam renk mimarisini gösterir."
+      },
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3662055",
+       "bag": "1886 yılında babasının ölümüyle Cézanne'a kalan aile mülkü Jas de Bouffan, ressamın maddi bağımsızlığa kavuşup kendi yoluna kapandığı yer oldu."
+      }
+     ]
+    },
+    {
+     "baslik": "Sainte-Victoire ve Son Gözyaşları",
+     "yillar": "1895–1906",
+     "paragraflar": [
+      "1890'larda Zola Paris'te büyük toplumsal kavgaların ve Dreyfus Davası'nın merkezindeyken, Cézanne Aix'in sessizliğinde resim tarihini baştan yazıyordu. 1895'te sanat tüccarı Ambroise Vollard onun ilk kişisel sergisini açtı; genç ressamlar Cézanne'ı keşfetmeye başlarken eski dostu Zola 1892 ve 1896'da Aix'e yaptığı ziyaretlerde onunla hiç görüşmedi. Ambroise Vollard'ın Portresi tablosuna baktığında, yüzü aşkın oturumda sabırla inşa edilen o sarsılmaz biçim dünyasının Zola'nın edebiyat anlayışından ne kadar uzaklaştığını hissedersin. İkisi de kendi alanında devrim yapıyordu ama artık birbirlerinin dilini duyamıyorlardı.",
+      "29 Eylül 1902'de Émile Zola Paris'te aniden öldü. Vollard'ın aktarımına göre Cézanne acı haberi duyunca atölyesine kapandı ve bütün gün ağladı. Çocukluk yürüyüşlerinin arka planı olan Sainte-Victoire Dağı, o yıl boyadığı tuvallerinde hâlâ ışığın ve rengin en saf hâliyle yükseliyordu. Dört yıl sonra, 27 Mayıs 1906 sabahı Aix'teki Méjanes Kütüphanesi'nde Zola'nın büstü açılırken altmış yedi yaşındaki Cézanne da salondaydı. Eski arkadaşları Numa Coste gençlik yıllarını ve Zola'nın Paris'ten yolladığı mektupları anarken Cézanne gözyaşlarını tutamayıp hıçkırdı. Beş ay sonra, 22 Ekim 1906'da Cézanne da hayata veda etti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3399375",
+       "bag": "Cézanne'ın ilk kişisel sergisini açan ve 1902'de Zola'nın ölüm haberine ressamın verdiği tepkiyi aktaran sanat tüccarı Ambroise Vollard'ın portresi."
+      },
+      {
+       "sanatci": "paul-cezanne",
+       "qid": "Q3494409",
+       "bag": "Zola'nın öldüğü 1902 yılında boyanan bu dağ manzarası, iki çocuğun 1850'lerde eteklerinde şiir okuduğu Provence ufuklarına son bir bakış gibidir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Paul Cézanne ile Émile Zola'nın dostluğu tek bir romanla bir gecede kopmadı; yıllar içinde iki büyük tutku farklı yönlere aktığı için sessizce uzaklaştılar. Zola çağının aynasını kuran bir romancı olarak alkışlandı, Cézanne ise modern resmin temelini atan sabırlı bir dağ işçisi oldu. Birbirlerini son yıllarında anlamakta zorlansalar da Cézanne'ın 1902'de dostunun ölüm haberiyle ağlaması ve 1906'da o büstün karşısında döktüğü gözyaşları, Aix'in güneşli tepelerinde kurulan kardeşliğin hiçbir zaman tamamen ölmediğini gösterir."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Musée Granet, Aix-en-Provence — La salle Cézanne (Dossier pédagogique)",
+     "adres": "https://www.museegranet-aixenprovence.fr/fileadmin/user_upload/07_La_salle_Cezanne.pdf"
+    },
+    {
+     "baslik": "John Rewald — Cézanne and His Father (Studies in the History of Art)",
+     "adres": "https://allenfisher.edublogs.org/files/2019/03/Rewald-Cezanne-and-His-Father-1971-72-10a0s2t-20179wi.pdf"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Paul Cézanne",
+     "adres": "https://www.britannica.com/biography/Paul-Cezanne"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — The Masterpiece (L'Œuvre)",
+     "adres": "https://www.britannica.com/topic/The-Masterpiece"
+    },
+    {
+     "baslik": "Société Paul Cézanne — Cézanne et Zola, la fin d'une amitié? (François Chédeville, Alain Pagès, Henri Mitterand, Denis Coutagne)",
+     "adres": "https://www.societe-cezanne.fr/2016/07/09/cezanne-et-zola-la-fin-dune-amitie/"
+    },
+    {
+     "baslik": "French Studies Bulletin (Liverpool University Press) — The End of the Affair: Zola and Cézanne (2014)",
+     "adres": "https://www.liverpooluniversitypress.co.uk/doi/10.1093/frebul/ktu026"
+    },
+    {
+     "baslik": "Société Paul Cézanne — Chronologie 1859",
+     "adres": "https://www.societe-cezanne.fr/2016/06/30/1859/"
+    },
+    {
+     "baslik": "Kunstlicht — Rachel Esner, The Gift: Zola and Cézanne",
+     "adres": "https://tijdschriftkunstlicht.nl/wp-content/uploads/Ut-pictura-poesis-The-Gift-Essner.pdf"
+    }
+   ],
+   "kelime": 1008,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "ayni-konu-yudit": {
+   "dizi": "ayni-konu",
+   "baslik": "Yudit Holofernes'in Başını Keserken",
+   "alt_baslik": "Caravaggio ile Artemisia Gentileschi, 1599–1620",
+   "sanatcilar": [
+    "caravaggio",
+    "artemisia-gentileschi"
+   ],
+   "giris": [
+    "1599 yılında Roma'da yirmi yedi yaşındaki Caravaggio, banker Ottavio Costa için o güne dek kimsenin cesaret edemediği bir anı tuvale taşıdı: Eski Ahit'in kahramanı Yudit'i zaferden sonra elinde kesik başla poz verirken değil, Asur komutanı Holofernes'in boynunu tam keserken boyadı. On üç yıl kadar sonra, aynı kentin sanat havasında büyümüş on dokuz yaşındaki genç bir kadın ressam, Artemisia Gentileschi, aynı konuyu yeniden ele aldı. İki tabloyu yan yana koyduğunda aynı karanlık zemin, aynı keskin ışık ve aynı kanlı yatak karşına çıkar; ama üç adım yaklaşıp figürlerin ellerine, duruşuna ve bakışlarına baktığında iki bambaşka dünya görürsün.",
+    "Aynı sahneyi 1599'da bir erkek ressam, 1612 ile 1620 arasında bir kadın ressam boyadığında ne değişti? Bu fark yalnızca bir sanatçının hayat hikâyesinden mi doğdu, yoksa iki farklı gözün güç, beden, ışık ve gerçekçilik üzerine kurduğu iki ayrı resim dilinden mi? İki tabloyu yan yana okuyarak bu sorunun peşine düşelim."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Caravaggio'nun Tiyatro Sahnesi",
+     "yillar": "1598–1599",
+     "paragraflar": [
+      "Yudit Kitabı'na göre dindar dul Yudit, kenti Betulya'yı kuşatan Asur komutanı Holofernes'in çadırına hizmetçisi Abra ile girer, komutan şölende sarhoş olup uyuyunca kendi kılıcıyla başını keserek halkını kurtarır. Caravaggio'nun bugün Roma'daki Palazzo Barberini'de sergilenen Yudit Holofernes'in Başını Keserken tablosuna yakından bak. Caravaggio sahneyi yatay ve geniş bir tiyatro sahnesi gibi kurar; izleyici yatağın karşısında güvenli bir mesafede durur. Soldan gelen sert bir ışık, karanlık arka plandan tepede sarkan koyu kırmızı perdeyi ve Yudit'in bembeyaz gömleğini bıçak gibi kesip çıkarır. Birçok sanat tarihçisi Yudit'in modelinin Romalı fahişe Fillide Melandroni olduğunu öne sürer; ancak bu kesinleşmiş bir belge değil, güçlü bir tahmindir.",
+      "Şimdi figürlerin duruşuna, rengine ve bakış yönüne dikkat et. Caravaggio'nun Yudit'i gövdesini geriye çekmiş, kollarını olabildiğince ileri uzatarak kandan uzak durmaya çalışır; tertemiz beyaz gömleğine tek bir damla bile sıçramamıştır. Kaşları çatık, yüzünde derin bir tiksinti ve çekingenlik okunur; sanki ağır bir görevi midesi bulanarak yerine getirmektedir. Hemen yanında duran hizmetçi Abra ise yaşlı, yüzü kırışık ve gözleri fal taşı gibi açılmış hâlde elinde bir bez torbayla kenarda bekler; kavgaya hiç karışmaz, yalnızca seyreder. Holofernes ise henüz ölmemiştir, başını yana çevirip ağzını açmış, şaşkınlık ve dehşet içinde çırpınır. Caravaggio için asıl gerilim, narin bir genç kadının bu dehşet verici eylemi gerçekleştirirken yaşadığı psikolojik şoktur."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q2470123",
+       "bag": "Caravaggio'nun 1598–1599 tarihli bu tablosunda Yudit geriye yaslanarak kandan uzak durur, yaşlı hizmetçisi ise kenarda torbayla bekler."
+      }
+     ]
+    },
+    {
+     "baslik": "Kolları Sıvanmış İki Kadın",
+     "yillar": "1612–1613",
+     "paragraflar": [
+      "Artemisia Gentileschi bu ışığı uzaktan tanımıyordu; babası ressam Orazio Gentileschi, Roma'da Caravaggio'nun yakın çevresindeydi ve ikisi 1603'teki Giovanni Baglione hakaret davasında birlikte yargılanmıştı. Artemisia 1612 ile 1613 yıllarında, henüz on dokuz yirmi yaşındayken ilk büyük versiyonunu, bugün Napoli'deki Capodimonte Müzesi'nde bulunan Holofernes'i Öldüren Judith tablosunu boyadı. Şimdi bu tabloyu Caravaggio'nunkinin hemen yanına koy ve üç somut farka bak. Birincisi izleyicinin konumudur: Caravaggio'nun yatay ve mesafeli tiyatro sahnesi gitmiş, yerine dikey ve boğucu ölçüde yakın bir kadraj gelmiştir; kanlı beyaz çarşaflar doğrudan ön plana taşar ve izleyici kendini yatağın tam ucunda bulur.",
+      "İkinci büyük fark figürlerin duruşu ve fiziksel gücüdür. Artemisia'nın Yudit'i geriye kaçmaz; tam tersine kollarını dirseklerine kadar sıvamış, bilekleri kas gerilimiyle kırışmış, bir eliyle Holofernes'in saçını yatağa bastırırken öteki eliyle ağır kılıcı boynuna bütün gücüyle sürmektedir. Üçüncü fark ise hizmetçi Abra'dır: Caravaggio'nun kenarda izleyen yaşlı kadını gitmiş, yerine Yudit ile aynı yaşlarda güçlü bir genç kadın gelmiştir. Abra bütün beden ağırlığıyla Holofernes'in göğsüne ve kollarına abanır; biri tutar, öteki keser. Holofernes'in koca yumruğu Abra'nın yakasına uzanır ama direnci boşa çıkar. Artemisia'ya göre iri yapılı bir komutanı yenmek yalnızca simgesel bir erdemle değil, iki kadının gerçek fiziksel işbirliğiyle mümkündür."
+     ],
+     "eserler": [
+      {
+       "sanatci": "artemisia-gentileschi",
+       "qid": "Q2247406",
+       "bag": "Napoli'deki bu ilk versiyonda Artemisia, izleyiciyi yatağın ucuna çekerek Yudit ile genç hizmetçisi Abra'yı tam bir fiziksel işbirliği içinde gösterir."
+      },
+      {
+       "sanatci": "artemisia-gentileschi",
+       "qid": "Q532486",
+       "bag": "Artemisia'nın Floransa yıllarında boyadığı bu sahnede ise eylemin hemen sonrasındaki tetikte bekleyiş ve iki kadının sessiz dayanışması öne çıkar."
+      }
+     ]
+    },
+    {
+     "baslik": "Uffizi Versiyonu: Altın Elbise ve Fışkıran Kan",
+     "yillar": "1616–1621",
+     "paragraflar": [
+      "Artemisia Roma'dan ayrılıp Floransa'ya yerleştiğinde artık yalnız babasının kızı değil, 1616'da Floransa Çizim Akademisi'ne kabul edilen ilk kadın ressamdı. Büyük Dük Cosimo II de' Medici için aynı konuyu bir kez daha, çok daha büyük ve zengin bir renk paletiyle boyadı. Bugün Floransa'daki Uffizi Galerisi'nde bulunan ve müzenin 1620 civarına tarihlediği Holofernes'in Kafasını Kesen Judith tablosuna dikkatle bak. Capodimonte versiyonundaki mavi elbisenin yerini burada parıldayan ağır altın sarısı bir ipek elbise almıştır; ışık soldan sertçe vurarak koyu kırmızı yatak örtüsü, bembeyaz çarşaf ve altın kumaş arasında keskin bir karşıtlık kurar ve tüm dikkati kılıcın kestiği noktaya toplar.",
+      "Şimdi Yudit'in bileğine ve yatağa fışkıran kana daha yakından bak. Yudit'in altın bileziğinde av tanrıçası ve kadınların koruyucusu Artemis'in küçük kabartmaları seçilir; bu, ressamın kendi adına ve kimliğine bıraktığı ince bir imzadır. Holofernes'in boynundan fışkıran kan artık Caravaggio'daki gibi düzenli ince çizgiler değildir; yay çizerek beyaz çarşafa ve Yudit'in altın elbisesine sıçrar. Kimi sanat tarihçileri bu kavisli kan yaylarını Artemisia'nın Floransa'da mektuplaştığı dostu Galileo Galilei'nin parabol hareketi üzerine çalışmalarıyla ilişkilendirir. Üstelik Cosimo II de' Medici 1621'de ölünce geciken ressam ücretini almasına da bizzat Galileo aracılık etmiştir. Tablonun acımasız gerçekçiliği o kadar sarsıcıydı ki Floransa sarayında başlangıçta galeriye asılmadı ve on sekizinci yüzyılın sonlarında bir süre göz önünden kaldırıldı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "artemisia-gentileschi",
+       "qid": "Q3769169",
+       "bag": "Uffizi'deki bu büyük versiyonda altın sarısı elbise, bilezikteki Artemis kabartmaları ve çarşaflara sıçrayan kan, sahnenin gerçekçiliğini doruğa taşır."
+      }
+     ]
+    },
+    {
+     "baslik": "İntikam Resmi mi, Usta Bir Ressamın Dili mi?",
+     "yillar": "1611–1649",
+     "paragraflar": [
+      "Artemisia'nın bu iki başyapıtını konuşurken neredeyse her zaman 1611 ve 1612 yılları gündeme gelir. Mayıs 1611'de on yedi yaşındaki Artemisia, babasının iş ortağı ressam Agostino Tassi'nin tecavüzüne uğradı. 1612'de Roma'da açılan davada on sekiz yaşındaki genç kadın, doğru söyleyip söylemediğini sınamak için parmaklarına ip sarılıp sıkılan işkence altında tanıklık etti; tutanaklara göre Tassi'ye dönüp bana verdiğin yüzük bu ve verdiğin sözler bunlar diye haykırdı. Mary Garrard gibi feminist sanat tarihçileri, bu travmanın ardından boyanan Yudit tablolarında güçlü bir kişisel direniş ve adalet duygusu gördü; popüler kültür ise tabloyu sık sık tek cümleyle bir intikam resmi diye özetledi.",
+      "Ancak Elizabeth Cropper ve son yıllardaki müze araştırmacıları bu tek boyutlu biyografik okumaya temkinle yaklaşır. Birincisi, Artemisia henüz on yedi yaşındayken, Tassi olayından önce tamamladığı Susanna ve İhtiyarlar tablosunda da erkek baskısına direnen güçlü bir kadın bedeni çizmişti. İkincisi, Yudit konusu Floransa'da zaten yüzyıllardır erdemin ve özgürlüğün simgesiydi ve Medici sarayı bu dramatik konuyu özellikle istiyordu. Artemisia'yı yalnızca acı çekmiş bir mağdur diye anlatmak, onun kendi atölyesini yöneten, 1649'da hamisi Antonio Ruffo'ya bir kadının neler yapabileceğini göstereceğim diye yazan profesyonel ressam kimliğini daraltır. Resim Alegorisi Olarak Otoportre tablosunda kendini doğrudan Resim sanatının kendisi olarak boyaması da bunun en açık kanıtıdır."
+     ],
+     "eserler": [
+      {
+       "sanatci": "artemisia-gentileschi",
+       "qid": "Q3978274",
+       "bag": "Artemisia'nın 1611 olayından önce, henüz on yedi yaşındayken tamamladığı bu tablo, kadın bedenini edilgen bir nesne olarak değil direnen bir özne olarak kurduğunu gösterir."
+      },
+      {
+       "sanatci": "artemisia-gentileschi",
+       "qid": "Q3630745",
+       "bag": "Artemisia'nın olgunluk döneminde kendini doğrudan Resim sanatının alegorisi olarak betimlediği bu otoportre, onun güçlü profesyonel özgüvenini yansıtır."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Caravaggio ile Artemisia Gentileschi'nin Yudit tablolarını yan yana koyduğumuzda biri ötekinden daha iyi değildir; ikisi de Barok resmin en keskin zirveleridir. Caravaggio, Roma'nın yeni gerçekçiliği içinde narin bir kadının şiddet karşısındaki irkilmesini ve dehşet anını tiyatro ışığıyla sahneledi. Artemisia ise aynı ışığı alıp mesafeyi sıfırladı; bir kadının bir erkeği alt etmek için nasıl güç harcayacağını, hangi kasın gerileceğini ve iki kadının nasıl omuz omuza çalışacağını bizzat beden gerçeğiyle gösterdi. Aynı hikâye, iki farklı gözde iki ayrı hakikate dönüştü."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "The National Gallery, London — Artemisia in her own words",
+     "adres": "https://www.nationalgallery.org.uk/exhibitions/past/artemisia/artemisia-in-her-own-words"
+    },
+    {
+     "baslik": "Museum & Gallery — Giovanni Baglione and the 1603 Libel Trial",
+     "adres": "https://museumandgallery.org/object-of-the-month-january-2024/"
+    },
+    {
+     "baslik": "Smarthistory — Artemisia Gentileschi, Judith Slaying Holofernes",
+     "adres": "https://smarthistory.org/gentileschi-judith-slaying-holofernes/"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Caravaggio: Successful artist and criminal",
+     "adres": "https://www.britannica.com/biography/Caravaggio/Successful-artist-and-criminal"
+    },
+    {
+     "baslik": "Khan Academy (Smarthistory) — Artemisia Gentileschi, Judith Slaying Holofernes",
+     "adres": "https://www.khanacademy.org/humanities/renaissance-reformation/baroque-art1/baroque-italy/a/gentileschi-judith-slaying-holofernes"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — Judith Slaying Holofernes, Florence (Uffizi Galleries)",
+     "adres": "https://www.thehistoryofart.org/artemisia-gentileschi/judith-slaying-holofernes-florence/"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — Judith Slaying Holofernes, Naples (Museo di Capodimonte)",
+     "adres": "https://www.thehistoryofart.org/artemisia-gentileschi/judith-slaying-holofernes-naples/"
+    },
+    {
+     "baslik": "Finestre sull'Arte — At Palazzo Barberini, Judith from Caravaggio to Artemisia",
+     "adres": "https://www.finestresullarte.info/en/exhibitions/at-palazzo-barberini-judith-in-painting-between-the-sixteenth-and-seventeenth-centuries-from-caravaggio-to-artemisia"
+    },
+    {
+     "baslik": "Nicholas Hall — Artemisia Gentileschi Biography",
+     "adres": "https://www.nicholashall.art/artist/artemisia-gentileschi/"
+    }
+   ],
+   "kelime": 1017,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "ayni-konu-meryemin-evliligi": {
+   "dizi": "ayni-konu",
+   "baslik": "Meryem'in Evliliği",
+   "alt_baslik": "Pietro Perugino ile Raphael, 1501–1504",
+   "sanatcilar": [
+    "pietro-perugino",
+    "raphael"
+   ],
+   "giris": [
+    "1504 yılında İtalya'nın Umbria bölgesindeki küçük Città di Castello kentinde yirmi bir yaşındaki bir ressam, San Francesco Kilisesi için bitirdiği büyük sunak panosunun ortasındaki tapınağın alnına harfleri taşa oyar gibi kendi adını ve yılı yazdı: RAPHAEL URBINAS MDIIII. Bu özgüvenli imzanın hemen altında, elli kilometre kadar ötedeki Perugia Katedrali'nde yaşlı ustası Pietro Perugino'nun aynı yıllarda tamamladığı tablonun neredeyse birebir şeması duruyordu: önde Meryem ile Yusuf'un nikâhı, ortada kareli bir meydan, arkada açık kapılı görkemli bir tapınak. Ama iki tabloyu yan yana koyduğunda genç ressamın ustasını kopyalamadığını, aksine Erken Rönesans'ın kapısını kapatıp Yüksek Rönesans'ı açtığını hemen fark edersin.",
+    "Bir çırak ya da genç yardımcı, ustasının tablosunu neredeyse aynı ögelerle yeniden kurarken nereyi değiştirdi? Ve o sessiz geometrik değişiklikler neden sanat tarihinde yeni bir çağın başlangıcı sayılır? Gel, bugün biri Fransa'nın Caen kentinde, öteki Milano'daki Brera Galerisi'nde duran bu iki panoyu yan yana okuyalım."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Kutsal Yüzük ve Sistine'den Gelen Şema",
+     "yillar": "1481–1504",
+     "paragraflar": [
+      "Hikâye İncillerden değil, on üçüncü yüzyılda Jacobus de Voragine'nin derlediği Altın Efsane kitabından gelir. Efsaneye göre Meryem'e talip olan erkeklerin her biri tapınağa bir değnek getirir; kimin değneği mucizevi biçimde çiçek açarsa Meryem'in eşi o olacaktır. Yalnızca Yusuf'un asası çiçeklenir; eli boş kalan taliplerden biri de öfkeyle kuru değneğini dizinde kırar. Perugia Katedrali, Meryem'in evlilik yüzüğü olduğuna inanılan kutsal bir emanete ev sahipliği yapıyordu; bu yüzük yüzünden komşu kentlerle yıllarca süren çekişmenin ardından Papa VIII. Innocentius yüzüğün Perugia'da kalmasına hükmetmişti. Aziz Yusuf Kardeşliği de 1499 ile 1504 arasında Kutsal Yüzük Şapeli için kentin en ünlü ustası ellili yaşlarındaki Pietro Perugino'ya büyük bir Meryem'in Evliliği panosu ısmarladı.",
+      "Perugino bu kompozisyonu sıfırdan kurmadı; yirmi yıl önce Roma'da, Sistine Şapeli'nde yaptığı İsa'nın Anahtarları Petrus'a Vermesi freskinin berrak mekân düzenini dikey bir sunak panosuna uyarladı. İki esere birlikte baktığında aynı mimari aklı hemen tanırsın: önde törensel figürler, arkaya doğru daralan kareli taş döşeme ve tam merkezde kaçış noktasını gösteren sekizgen tapınak. Perugino'nun Perugia'daki bu büyük panosu 1798'de Napolyon Bonaparte'ın Fransız orduları tarafından alındı ve 1804'te Fransız devleti tarafından Caen Güzel Sanatlar Müzesi'ne gönderildi. O sırada Perugia'nın elli kilometre kadar ötesinde, genç Raphael aynı konuyu Albizzini ailesinin şapeli için kendi elleriyle yeniden kuruyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "pietro-perugino",
+       "qid": "Q2620028",
+       "bag": "Perugino'nun 1481–1482 yıllarında Sistine Şapeli'ne yaptığı bu fresk, kareli meydanı ve sekizgen tapınağıyla her iki Meryem'in Evliliği tablosunun temel şemasını verdi."
+      },
+      {
+       "sanatci": "pietro-perugino",
+       "qid": "Q3224308",
+       "bag": "Perugia Katedrali'ndeki Kutsal Yüzük Şapeli için yapılan bu pano, bugün Caen Güzel Sanatlar Müzesi'nde korunuyor ve Raphael'in doğrudan diyaloga girdiği ana modeldir."
+      }
+     ]
+    },
+    {
+     "baslik": "Çırak mı, Yardımcı mı?",
+     "yillar": "1498–1504",
+     "paragraflar": [
+      "Giorgio Vasari, genç Raphael'i doğrudan Perugino'nun çırağı diye anlatır. Ancak modern sanat tarihçileri Raphael'in 1490'ların sonunda Perugino'nun Perugia'daki kalabalık atölyesine sıradan bir çırak olarak mı, yoksa ressam babası Giovanni Santi'nin yanında yetişmiş yetenekli bir yardımcı olarak mı katıldığını hâlâ tartışır. Kesin olan şudur: Raphael henüz on yedi yaşındayken Città di Castello sözleşmelerinde usta unvanıyla anılıyordu. 1502 tarihli Mond Çarmıha Geriliş tablosuna baktığında, dingin yüzler, duru gökyüzü, iki yanda süzülen melekler ve simetrik duruşlarla Perugino'nun üslubuna ne kadar yakın olduğunu hemen görürsün.",
+      "Fakat iki yıl sonra, 1504'te Albizzini ailesi için Meryem'in Evliliği panosunu boyadığında bambaşka bir özgüven ortaya çıktı. Raphael ustasının kompozisyonunu reddetmedi; aksine onu ciddiye aldı, temel ögeleri korudu ama bütün parçaların birbiriyle kurduğu ilişkiyi baştan düşündü. Vasari yıllar sonra bu panoya bakarak Raphael'in inceliğinin nasıl büyüdüğünü ve ustası Perugino'nun tarzını nasıl aştığını yazacaktı. Perugino'nun atölyesinden ayrılıp Floransa'ya gitmeden hemen önce tamamladığı bu pano, hem ustasına bir saygı duruşu hem de kendi bağımsızlık bildirisiydi. Üstelik bu pano da 1798'de kiliseden çıkarıldı ve 1805'te Milano'daki Pinacoteca di Brera'nın en değerli eserlerinden biri oldu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "raphael",
+       "qid": "Q598913",
+       "bag": "Raphael'in 1502 tarihli bu erken dönem sunak panosu, simetrik düzeni ve duru manzarasıyla Perugino'nun atölye diline ne kadar yakın başladığını gösterir."
+      },
+      {
+       "sanatci": "raphael",
+       "qid": "Q2030685",
+       "bag": "1504 yılında Città di Castello için tamamlanan ve bugün Milano'daki Brera Galerisi'nde bulunan bu pano, yirmi bir yaşındaki Raphael'in ustasının şemasını nasıl dönüştürdüğünü gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "İki Tabloyu Yan Yana Okumak",
+     "yillar": "1504",
+     "paragraflar": [
+      "2016 yılında Milano'daki Brera Galerisi, Caen Müzesi'nden ödünç aldığı Perugino panosuyla Raphael'in panosunu iki yüz yılı aşkın süre sonra ilk kez yan yana astı. Şimdi gözünü iki tablo arasında gezdir ve dört somut farka bak. İlk fark ayna düzeni ve figürlerin dizilişidir: Perugino'da Yusuf solda, Meryem sağdadır ve tüm kalabalık ön planda bir tiyatro perdesi gibi tek bir düz sıra hâlinde dizilir. Raphael ise sahneyi ayna gibi tersine çevirir; Meryem solda, Yusuf sağdadır. Daha önemlisi, aynı sayıdaki figürü düz bir şerit yerine arkadaki tapınağın dışbükey kavisini karşılayan yumuşak bir yarım daire hâlinde derinliğe yayar; böylece kalabalık nefes alır ve izleyicinin gözü doğrudan meydanın içine akar.",
+      "İkinci fark mimaridedir: Perugino'nun arkadaki tapınağı ağır, geniş ve sekizgendir; üst kenarı panonun kemerinden kesildiği için yapı meydanı bir duvar gibi kapatır. Raphael ise kenar sayısını ikiye katlayıp on altı kenarlı, ince İyon sütunlu revakla çevrili, kubbeli ve fenerli neredeyse dairesel bir tapınak kurar; yüksek basamaklarla yükseltir ve tepedeki feneri çerçevenin kemerine tam oturtur. Üçüncü fark ışık ve derinliktir: her iki tabloda da tapınağın açık kapısı tek kaçış noktasıdır ve içinden ufuktaki gökyüzü görünür, ama Raphael'de kapıdan süzülen ışık meydandaki küçük gezinen figürlerle ön plandaki töreni tek bir hava içinde birleştirir. Dördüncü fark ise bedenlerin ritmidir: Perugino'da başrahip dimdik durup katı bir eksen oluştururken, Raphael'de rahip başını hafifçe eğerek yüzüğü takan ellere doğal bir akış verir; sağ kenarda kuru değneğini dizinde kıran talip ise tüm öfkeyi tek bir çevik harekette toplar."
+     ],
+     "eserler": [
+      {
+       "sanatci": "pietro-perugino",
+       "qid": "Q3212610",
+       "bag": "Perugino'nun 1499 tarihli bu panosu da onun Erken Rönesans'a özgü duru, simetrik ve katmanlara ayrılmış sahne anlayışını örnekler."
+      },
+      {
+       "sanatci": "raphael",
+       "qid": "Q555821",
+       "bag": "Meryem'in Evliliği'nden hemen sonra yapılan bu gençlik otoportresi, Floransa'ya adım atarken kendi üslubunu kuran Raphael'in sakin özgüvenini yansıtır."
+      }
+     ]
+    },
+    {
+     "baslik": "Yüksek Rönesans'ın Eşiği ve 1958 Saldırısı",
+     "yillar": "1504–1958",
+     "paragraflar": [
+      "Sanat tarihçileri bu iki tabloyu karşılaştırırken Perugino'yu küçümsemez; çünkü o berrak meydanı, geometrik kaçış noktasını ve dingin Umbria ışığını kuran kişi Perugino'ydu. Ancak Perugino'nun Erken Rönesans dilinde ön plandaki insanlar, orta plandaki kareli meydan ve arkadaki tapınak birbirinden ayrı katmanlar gibi yan yana durur. Brera'da yapılan kızılötesi incelemeler, Raphael'in Piero della Francesca'nın perspektif ilkelerini izleyerek tapınağın kapısında birleşen sık bir matematik ağı kurduğunu gösterdi; hatta tapınağın keskinliği yüzünden bazı uzmanlar ressamın ahşap bir maketten yararlanmış olabileceğini öne sürdü. Raphael'de her figür, her merdiven basamağı ve her kemer aynı orantı düzeninin parçasıdır; Yüksek Rönesans dediğimiz bütünsel, canlı ve anıtsal uyum tam bu panoda filizlenir.",
+      "Brera'daki bu narin ahşap pano, yüzyıllar sonra beklenmedik bir tehlike de atlattı. 1958'de bir ziyaretçi Milano'daki galeride elindeki çekiçle Raphael'in Meryem'in Evliliği tablosuna saldırdı. Müze görevlileri saldırganı hızla etkisiz hâle getirdi; panonun yüzeyinde oluşan hafif hasar uzman restoratörlerce onarıldı ve tablo yeniden salondaki yerini aldı. Bugün cam koruma ardında duran o dingin meydan, hem bir ustanın birikimini hem de genç bir sanatçının o birikimi nasıl yeni bir çağa taşıdığını sessizce anlatmayı sürdürüyor."
+     ],
+     "eserler": [
+      {
+       "sanatci": "raphael",
+       "qid": "Q2030685",
+       "bag": "Kızılötesi incelemelerle perspektif ağı doğrulanan ve 1958 saldırısının ardından onarılan Brera panosu, Yüksek Rönesans'ın en berrak eşik eseridir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Perugino ile Raphael'in Meryem'in Evliliği tablolarını yan yana koyduğumuzda kazanan ve kaybeden yoktur; bir çağın ötekine sessizce el verişi vardır. Perugino, Sistine Şapeli'nden süzülen açık mekân ve duru ışık geleneğini en olgun hâline getirmişti. Yirmi bir yaşındaki Raphael ise o mirası yıkıp atmadan, tapınağı on altı kenara çıkarıp figürleri yarım daireye açarak resmi bir sahne olmaktan çıkarıp yaşayan bir bütüne dönüştürdü. Bazen sanat tarihindeki en büyük devrim, bambaşka bir konu icat etmek değil, aynı meydanda durup ışığa ve orantıya yeni bir gözle bakmaktır."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Encyclopaedia Britannica — The Marriage of the Virgin (Raphael)",
+     "adres": "https://www.britannica.com/topic/The-Marriage-of-the-Virgin"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Raphael (Biography)",
+     "adres": "https://www.britannica.com/biography/Raphael-Italian-painter-and-architect"
+    },
+    {
+     "baslik": "Pinacoteca di Brera — Raffaello Sanzio, The Marriage of the Virgin (1504)",
+     "adres": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/the-marriage-of-the-virgin/"
+    },
+    {
+     "baslik": "Pinacoteca di Brera — Perugino and Raphael, the Marriage of the Virgin: A dialogue between the master and the pupil (2016)",
+     "adres": "https://pinacotecabrera.org/en/news/mostra/perugino-and-raphael-the-marriage-of-the-virgin-a-dialogue-between-the-master-and-the-pupil/"
+    },
+    {
+     "baslik": "Musée des Beaux-Arts de Caen — Le Pérugin, Le Mariage de la Vierge (1504)",
+     "adres": "https://mba.caen.fr/en/oeuvre/le-mariage-de-la-vierge"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — The Marriage of the Virgin by Raphael",
+     "adres": "https://www.thehistoryofart.org/raphael/marriage-of-the-virgin/"
+    },
+    {
+     "baslik": "Web Gallery of Art — Raphael, Marriage of the Virgin",
+     "adres": "https://www.wga.hu/html/r/raphael/1early/10spozal.html"
+    },
+    {
+     "baslik": "Harrisonburg Daily News Record (16 June 1958) — Damaged Old Master at Brera Gallery in Milan",
+     "adres": "https://newspaperarchive.com/harrisonburg-daily-news-record-jun-16-1958-p-2/"
+    }
+   ],
+   "kelime": 1006,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "ayni-konu-venus-olympia": {
+   "dizi": "ayni-konu",
+   "baslik": "Urbino Venüsü ve Olympia",
+   "alt_baslik": "Tiziano ile Édouard Manet, 1538 / 1863",
+   "sanatcilar": [
+    "titian",
+    "edouard-manet"
+   ],
+   "giris": [
+    "Mayıs 1865'te Paris Salonu'nun kalabalık salonlarından birinde görevliler alışılmadık bir önlem aldı: bir tablonun önüne iki nöbetçi diktiler. Ziyaretçiler kahkahalarla, hakaretlerle ve sallanan bastonlarla tuvale yaklaşıyor, eleştirmenler onu çirkin ve ahlaksız diye yerden yere vuruyordu. Sonunda yönetim, saldırı korkusuyla tabloyu kimsenin erişemeyeceği biçimde bir kapının üstüne, tavana yakın bir yere astı. Oysa otuz üç yaşındaki Édouard Manet'nin Olympia tablosundaki yatan kadın pozu hiç de yabancı değildi; Paris seyircisinin üç yüz yıldır hayranlıkla alkışladığı bir Rönesans başyapıtından, Tiziano'nun 1538 tarihli Urbino Venüsü tablosundan neredeyse birebir alınmıştı.",
+    "Peki nasıl oldu da aynı yatak, aynı poz ve aynı çıplak kadın figürü, 1538'de soylu bir Venedik başyapıtı olarak övülürken üç yüz yirmi beş yıl sonra Paris'i ayağa kaldırdı? İki tabloyu yan yana koyup köpekten kediye, ışıktan bakışa kadar her ayrıntıyı birlikte okuyalım."
+   ],
+   "bolumler": [
+    {
+     "baslik": "1538: Altın Işık ve Çıplak Kadın",
+     "yillar": "1538",
+     "paragraflar": [
+      "Önce 1538 yılının Venedik'ine, ellili yaşlarına yaklaşan Tiziano Vecellio'nun atölyesine dönelim. Bugün Floransa'daki Uffizi Galerisi'nde asılı duran Urbino Venüsü, adını sonradan aldı. Mart 1538 tarihli bir mektupta tabloyu doğrudan Tiziano'dan satın almak isteyen genç soylu Guidobaldo della Rovere, eseri bir tanrıça adıyla değil, yalın biçimde çıplak kadın diye anıyordu; tablo daha sonra Vittoria della Rovere'nin çeyiziyle Floransa'ya, Medici koleksiyonuna geçti. Uffizi uzmanlarının okumasına göre Tiziano bu tuvalde, on altıncı yüzyıl Venedik'inin zengin bir evinde evlilik töreni için giyinmeyi bekleyen genç bir gelini klasik Venüs geleneğiyle buluşturur. Sıcak, altın tonlu bir ışık yumuşak gölge geçişleriyle bedeni pürüzsüz ve yuvarlak kılar.",
+      "Tablonun ayrıntılarına yakından bak. Venüs'ün sağ elinde aşkı simgeleyen küçük bir gül demeti, pencere pervazında bağlılık bitkisi mersin saksısı vardır. Ayak ucunda kıvrılıp uyuyan küçük köpek, Rönesans evlilik resimlerinde sadakatin en bilinen işaretidir. Gözünü arka plana kaydırdığında mekânın sıcak ve derin bir Venedik odasına açıldığını görürsün: iki hizmetçi, evlilik çeyizinin saklandığı süslü sandığın başında eğilmiş, altın ve mavi renkli gelinliği çıkarmaktadır. Venüs'ün bakışı izleyiciye dönüktür ama yumuşak, sakin ve davetkârdır; sol eli bedenini hafif ve gevşek bir zarafetle örter. Tiziano, erotizmi evlilik töreni, sıcak ışık ve mitolojik bir perde ardında kusursuz bir dinginliğe sarmıştır."
+     ],
+     "eserler": [
+      {
+       "sanatci": "titian",
+       "qid": "Q727875",
+       "bag": "Tiziano'nun 1538'de boyadığı bu başyapıt, sıcak altın ışığı, uyuyan sadakat köpeği ve arka plandaki çeyiz sandığıyla Manet'nin üç yüzyıl sonra tersine çevireceği şemayı kurdu."
+      },
+      {
+       "sanatci": "titian",
+       "qid": "Q500812",
+       "bag": "Tiziano'nun gençlik yıllarında çalıştığı bu açık hava uyuyan Venüs geleneği, Urbino Venüsü'nde uyanık ve iç mekânda bir kadına dönüşmüştü."
+      }
+     ]
+    },
+    {
+     "baslik": "Floransa Kopyası ve 1863 Paris'i",
+     "yillar": "1856–1863",
+     "paragraflar": [
+      "Édouard Manet, eski ustaları yıkmak isteyen cahil bir asi değildi; tam tersine müzelerin en dikkatli öğrencisiydi. 1853 ile 1856 arasındaki İtalya yolculuğunda, henüz yirmi dört yaşındayken Floransa'daki Uffizi Galerisi'ne gitti ve Urbino Venüsü'nün küçük bir yağlıboya kopyasını yaptı; bugün özel koleksiyonda bulunan o kopyada Tiziano'nun ışığını, sıcak kırmızılarını ve figür dengesini kendi eliyle çözdü. Yedi yıl sonra, 1863'te Paris'te Çimenler Üzerinde Öğle Yemeği tablosu Reddedilenler Salonu'nda büyük bir fırtına koparırken, otuz bir yaşındaki Manet atölyesinde Tiziano'nun pozunu bu kez kendi çağının Paris'ine uyarladı.",
+      "Olympia tablosu için yatağa uzanan model, Çimenler Üzerinde Öğle Yemeği'nde de poz veren on dokuz yaşındaki Victorine Meurent idi. Arkada büyük bir çiçek buketi uzatan siyah hizmetçi içinse Manet'nin atölye defterinde Paris'te Vintimille Sokağı on bir numarada yaşadığı kayıtlı olan Laure modellik yaptı. Manet aynı yıl içinde Laure'u üç ayrı tabloda boyamıştı. Uzun yıllar sanat tarihi kitaplarında adsız bırakılan Laure, sanat tarihçisi Denise Murrell'in 2018 ve 2019'da New York ile Paris'teki Orsay Müzesi'nde açtığı sergilerle yeniden kendi adıyla anılmaya başladı; o, 1848'de köleliğin kaldırılmasından sonra Paris'te yaşayan özgür siyah topluluğun gerçek bir üyesiydi."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q152509",
+       "bag": "1863'te Reddedilenler Salonu'nda ilk büyük fırtınayı koparan bu tablo, Manet'nin klasik Rönesans kompozisyonlarını çağdaş Paris'e taşıma cesaretinin ilk adımıydı."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q737062",
+       "bag": "Manet'nin 1863'te Victorine Meurent ve Laure ile boyadığı bu tuval, Tiziano'nun pozunu neredeyse birebir alıp bütün anlam kodlarını tersine çevirdi."
+      }
+     ]
+    },
+    {
+     "baslik": "Köpekten Kediye: İki Tabloyu Yan Yana Okumak",
+     "yillar": "1863–1865",
+     "paragraflar": [
+      "Şimdi Urbino Venüsü ile Olympia'yı yan yana koy ve dört keskin dönüşüme dikkatle bak. Birincisi yatak ucundaki hayvandır: Tiziano'nun uyuyan küçük sadakat köpeği gitmiş, yerine sırtını kamburlaştırmış, kuyruğu dik ve gözleri fal taşı gibi açık bir kara kedi gelmiştir. İkincisi bakış yönü ve elin duruşudur: Tiziano'nun kadını yumuşak bir çekicilikle izleyiciyi karşılar, sol eli gevşektir. Olympia ise başını dik tutar, soğuk, mesafeli ve meydan okuyan bir bakışla doğrudan senin gözünün içine bakar; sanki kapıdan yeni giren müşteriyi ölçmektedir. Sol eli de utangaçça örtünmez; parmakları gergin ve kararlı biçimde bacağına bastırılmıştır.",
+      "Üçüncü fark ışık ve mekân derinliğidir. Tiziano'nun sıcak altın ışığı ve derin Venedik odası yerine Manet, fotoğraf flaşını andıran düz ve sert bir ön ışık kullanır; yumuşak ara gölgeler silinir, ten soluk ve keskin kenarlı görünür, arka plan ise koyu yeşil perdelerle kapanarak izleyiciyi doğrudan yatağın dibine iter. Dördüncü fark ise ayrıntılardadır: arka odadaki çeyiz sandığının yerini Laure'un uzattığı kâğıda sarılı bir müşteri buketi almıştır. Üstelik Olympia çıplak bir mitoloji tanrıçası değildir; saçında pembe bir orkide, boynunda o dönem Paris'te sokak kadınlarıyla anılan siyah kadife bir kurdele, bileğinde altın bilezik ve bir ayağında yarım düşmüş yüksek topuklu bir terlik vardır. Manet, Salon seyircisinin arkasına saklandığı mitoloji maskesini tek hamlede yüzünden çekip almıştı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "titian",
+       "qid": "Q727875",
+       "bag": "Tiziano'da derin mekân, sıcak gölgeler ve uyuyan köpek, çıplaklığı soylu bir evlilik dinginliği içine yerleştirir."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q737062",
+       "bag": "Manet'de düz ön ışık, kara kedi, siyah boyun kurdelesi ve doğrudan bakış, mitolojik perdeyi yırtarak çağdaş Paris gerçeğini ortaya koyar."
+      }
+     ]
+    },
+    {
+     "baslik": "Skandaldan Louvre'a ve Ressam Victorine'e",
+     "yillar": "1865–1907",
+     "paragraflar": [
+      "1865 Salonu kataloğunda Olympia'nın hemen altında, Manet'nin dostu şair ve eleştirmen Zacharie Astruc'un beş dizelik şiiri basılıydı; tablonun adını da büyük olasılıkla Astruc'un bu şiiri vermişti. Ama o dizeler Paris'in öfkesini dindirmeye yetmedi. İki yıl önce aynı Salon'da Alexandre Cabanel'in pürüzsüz, gözleri yarı kapalı Venüs'ünü bizzat İmparator III. Napolyon satın almıştı; çünkü mitoloji adı çıplaklığı zararsız kılıyordu. Manet'nin gerçek, süslü ve gözünü kaçırmayan Parisli kadını ise burjuva ikiyüzlülüğüne tutulmuş bir ayna gibiydi. Eleştirmenler onu ceset tenli ve kaba diye taşlarken, genç yazar Émile Zola Manet'yi savunan ender seslerden biri oldu; ressamın yalan söylemek yerine çağının gerçeğini çizdiğini yazdı.",
+      "Hikâyenin iki güçlü devamı daha vardır. Birincisi model Victorine Meurent'in kendi yolculuğudur: yalnızca Manet'nin tuvallerindeki yüz olarak kalmadı, resim eğitimi aldı ve kendi Otoportre'si 1876 Paris Salonu'na kabul edildi; üstelik jürinin Manet'nin resimlerini reddettiği aynı yılda. İkincisi ise Olympia'nın kaderidir: Manet tabloyu ömrü boyunca hiç satmadı. Ölümünden sonra, 1890'da Claude Monet bir kamu bağış kampanyası başlattı; sanatçılar ve dostlar yaklaşık yirmi bin frank toplayarak tabloyu Suzanne Manet'den satın aldı ve Fransız devletine bağışladı. Önce Lüksemburg Müzesi'ne asılan Olympia, 1907'de Başbakan Georges Clemenceau'nun emriyle Louvre'a, 1986'da ise bugünkü evi olan Orsay Müzesi'ne yerleşti; 2013'te yüz ellinci yılında Venedik'e giderek Tiziano'nun Urbino Venüsü ile yan yana asıldı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q1245354",
+       "bag": "Manet, ölümünden bir yıl önce boyadığı bu son büyük başyapıtında da Olympia'nın boynundaki siyah kadife kurdeleyi ve doğrudan bakışı bir kez daha geri çağırdı."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Tiziano ile Manet'nin bu iki başyapıtını yan yana koyduğumuzda biri ötekinin üstüne çıkmaz; iki farklı yüzyılın iki ayrı hakikati birbiriyle konuşur. Tiziano, Rönesans Venedik'inin altın ışığı altında bedeni güzellik, arzu ve evlilik dinginliği içinde yüceltti. Manet ise üç yüz yirmi beş yıl sonra aynı pozu koruyarak modern kentin dürüst ve rahatsız edici aynasını tuttu; çıplaklığın ardındaki mitoloji perdesini indirdi, arka planı koyu perdeyle kapattı, yatan kadına kendi bakışını geri verdi ve düz ışığıyla modern resmin dilini açtı. 1865'te bastonlardan korunmak için kapı üstüne kaldırılan o tuval, bugün tam da bu yalın ve cesur dürüstlüğü sayesinde modern sanatın en güçlü başlangıç noktalarından biri sayılıyor."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Gallerie degli Uffizi — Titian, Venus of Urbino (1538)",
+     "adres": "https://www.uffizi.it/en/artworks/venus-urbino-titian"
+    },
+    {
+     "baslik": "Museum of Fine Arts, Boston — Victorine Meurent, Self-Portrait (about 1876)",
+     "adres": "https://collections.mfa.org/objects/696863/selfportrait"
+    },
+    {
+     "baslik": "Columbia University News — Posing Modernity: Wallach Gallery Rethinks the Black Model's Role in Modernism (Denise Murrell, 2018)",
+     "adres": "https://news.columbia.edu/news/posing-modernity-wallach-gallery-rethinks-black-models-role-modernism"
+    },
+    {
+     "baslik": "Nineteenth-Century Art Worldwide — Phylis A. Floyd, The Puzzle of Olympia (2004)",
+     "adres": "https://www.19thc-artworldwide.org/spring04/the-puzzle-of-olympia"
+    },
+    {
+     "baslik": "Smarthistory — Titian, Venus of Urbino",
+     "adres": "https://smarthistory.org/titian-venus-of-urbino/"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Venus of Urbino (painting by Titian)",
+     "adres": "https://www.britannica.com/topic/Venus-of-Urbino"
+    },
+    {
+     "baslik": "All Art Directory — Olympia (1863) by Édouard Manet, Explained",
+     "adres": "https://allartdirectory.com/artworks/olympia-manet/"
+    },
+    {
+     "baslik": "Modern European Art — Impressionism: Manet's Olympia and Titian's Venus of Urbino",
+     "adres": "https://www.modernartappreciation.com/impressionism-1870-1890"
+    },
+    {
+     "baslik": "Art Herstory — French Woman Artist Victorine Meurent, More than a Model",
+     "adres": "https://artherstory.net/victorine-meurent-more-than-a-model/"
+    }
+   ],
+   "kelime": 1005,
    "model": "gemini-4-neon (Gemini uygulaması, Görev)",
    "denetci": "Gemini + Claude",
    "olusturma": "2026-11-28"
