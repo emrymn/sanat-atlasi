@@ -30,6 +30,26 @@
     "ayni-konu-meryemin-evliligi",
     "ayni-konu-venus-olympia"
    ]
+  },
+  {
+   "id": "skandallar",
+   "ad": "Skandal Tablolar",
+   "aciklama": "Yapıldığı gün ortalığı karıştıran tablolar. O günün gözüyle neden dayanılmaz bulundukları, bugün neden başyapıt sayıldıkları.",
+   "bolumler": [
+    "skandallar-cimende-kahvalti",
+    "skandallar-veronese-engizisyon",
+    "skandallar-meryemin-olumu"
+   ]
+  },
+  {
+   "id": "hastalik",
+   "ad": "Hastalık ve Delilik",
+   "aciklama": "Hastalığın sanatçının hayatına ve resmine girdiği yıllar. Dehayı doğuran bir delilik masalı değil, hastalığa rağmen süren emek.",
+   "bolumler": [
+    "hastalik-goya",
+    "hastalik-van-gogh",
+    "hastalik-monet"
+   ]
   }
  ],
  "bolumler": {
@@ -1257,6 +1277,750 @@
     }
    ],
    "kelime": 1005,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "skandallar-cimende-kahvalti": {
+   "dizi": "skandallar",
+   "baslik": "Çimende Kahvaltı ve Reddedilenler Salonu",
+   "alt_baslik": "Bir imparatorun 1863'te açtığı sergi, Paris'in en çok güldüğü ve en çok konuştuğu tabloyu nasıl yarattı",
+   "sanatcilar": [
+    "edouard-manet",
+    "alexandre-cabanel",
+    "giorgione",
+    "claude-monet"
+   ],
+   "giris": [
+    "15 Mayıs 1863 günü Paris'te Champs-Élysées üzerindeki Palais de l'Industrie salonlarında alışılmadık bir kalabalık toplanmıştı. Ziyaretçiler bu kez yalnızca resmi Paris Salonu'nun ödüllü tablolarını değil, jürinin kapıdan çevirdiği eserleri görmek için geliyordu. Bir tablonun önünde yürüyenler önce duraklıyor, sonra fısıltılar kahkahaya ve öfkeli mırıltılara dönüşüyordu.",
+    "Duvarda, otuz bir yaşındaki Édouard Manet'nin Banyo adıyla sergilediği iki metre yüksekliğinde, iki buçuk metreyi aşan dev bir tuval asılıydı. Bugün Çimenler Üzerinde Öğle Yemeği adıyla bildiğimiz bu tablo, birkaç hafta içinde Paris basınının en sert alaylarına hedef oldu. Oysa bu skandalın kapısını bizzat Fransa İmparatoru Üçüncü Napolyon aralamıştı."
+   ],
+   "bolumler": [
+    {
+     "baslik": "İmparatorun Açtığı Kapı",
+     "yillar": "1861–1863",
+     "paragraflar": [
+      "1860'ların Paris'inde bir ressamın adını duyurmasının tek gerçek yolu, devletin düzenlediği Paris Salonu'na kabul edilmekti. Akademi üyelerinden oluşan jüri hangi tablonun asılacağına karar verir, binlerce izleyici her gün bu salonlardan geçerdi. Édouard Manet, 1861'de henüz yirmi dokuz yaşındayken İspanyol Şarkıcı ile mansiyon ödülü kazanmış, geleceği parlak bir ressam olarak dikkat çekmişti. Bir yıl sonra babasının ölümüyle eline geçen miras ona ekonomik özgürlük de kazandırmıştı.",
+      "Ancak 1863 baharında Salon jürisi alışılmadık ölçüde sert davrandı. Başvuran yaklaşık beş bin eserden iki bin yedi yüz seksen üçü reddedildi; Manet'nin gönderdiği üç tablo da kapıdan çevrilenler arasındaydı. Bu denli geniş çaplı eleme Paris sanat çevrelerinde büyük öfke yarattı. Sanatçıların protestoları büyüyünce İmparator Üçüncü Napolyon bizzat araya girdi ve halkın jürinin kararını kendi gözüyle yargılayabilmesi için reddedilen eserlerin aynı binanın başka bir bölümünde sergilenmesini emretti. Birçok ressam alay edilmekten çekinip eserini geri çekti, ama Manet geri adım atmadı.",
+      "15 Mayıs 1863'te açılan bu sergiye Reddedilenler Salonu adı verildi. Katalogda yedi yüz seksen bir eser listelendi, katalog dışındakilerle sayı daha da kabardı. Bu sırada birkaç salon ötede, resmi Salon'un yıldızı Alexandre Cabanel'in Venüs'ün Doğuşu tablosuydu. İmparatorun kendi koleksiyonu için satın aldığı bu tablo, dönemin ideal çıplaklık anlayışının ölçütünü gösteriyordu. İki salon arasındaki mesafe birkaç adımdı ama iki resim anlayışı arasındaki uçurum çok büyüktü."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q2024709",
+       "bag": "Manet'nin 1861'de Salon'dan mansiyon aldığı İspanyol Şarkıcı, iki yıl sonraki kopuştan önce onun Akademi gözünde ne kadar umut vadeden bir ressam olduğunu gösterir."
+      },
+      {
+       "sanatci": "alexandre-cabanel",
+       "qid": "Q1212861",
+       "bag": "1863 resmi Salonu'nda Üçüncü Napolyon'un satın aldığı Venüs'ün Doğuşu, mitolojik kılıfı ve pürüzsüz fırçasıyla o günün kabul gören çıplaklık ölçütünü ortaya koyar."
+      }
+     ]
+    },
+    {
+     "baslik": "O Günün Gözüyle Neden Dayanılmazdı",
+     "yillar": "1863",
+     "paragraflar": [
+      "Bugün Çimenler Üzerinde Öğle Yemeği'ne baktığımızda bizi şaşırtan şey, 1863 izleyicisini çileden çıkaran nedenlerin yalnızca bir parçasıdır. O yıl Paris'te çıplak kadın resmi yasak değildi; tersine resmi Salon o kadar çok Venüs ile doluydu ki Venüsler Salonu diye anılıyordu. Ancak Akademi kuralı açıktı: çıplak beden ya mitolojiden ya kutsal tarihten gelmeli, gerçek dünyadan uzaklaştırılmalıydı. Manet'nin tablosunda ise çıplak kadın, günümüz ceketlerini giymiş iki Parisli erkeğin yanında oturuyor ve başını çevirip doğrudan izleyiciye bakıyordu.",
+      "Tepki gösterenler yalnızca tutucu ahlakçılar değildi. Akademik resim eğitiminde büyük boyutlu tuvaller tarih, din ve mitoloji gibi yüce konulara ayrılırdı; gündelik bir kır gezintisi bu ölçekte boyanamazdı. Üstelik Manet, yumuşak ışık gölge geçişlerini ve pürüzsüz bitirişi bir kenara bırakmıştı. Ön plandaki çıplak kadının bedeni keskin bir ışıkla neredeyse düz görünürken, arka planda suda eğilen kadın perspektif kurallarına uymayacak kadar büyük duruyor, ağaçlar ise yarım bırakılmış bir taslağı andırıyordu.",
+      "Eleştirmenlerin sözleri bu şaşkınlığı açıkça yansıtır. Louis Étienne, bu pek de edepli olmayan bilmecenin ne anlama gelebileceğini boşuna aradığını yazdı ve sahneyi iki züppenin arasına yayılmış sıradan bir kadın olarak niteledi. Théophile Thoré, zeki bir sanatçının böylesine saçma bir düzenlemeyi nasıl seçtiğini anlayamadığını belirtti, sağdaki adamın açık havada bile o korkunç şapkasını çıkarmamasına takıldı. Gerçekçiliğin savunucularından Jules-Antoine Castagnary bile hiçbir ayrıntının son biçimine ulaşmadığını söyleyip kemiksiz figürlerden yakındı. Yine de aynı yazıda Manet'nin renklerindeki canlılığı ve fırça özgürlüğünü teslim etti. Manet, Banyo'yu iki yanına Matador Kıyafetli Victorine Meurent ile Majo Kıyafetli Genç Adam'ı asarak üçlü bir gösteri gibi sunmuştu; eleştirmen Édouard Lockroy ise onun bir gün tüm engelleri aşacağını yazan az sayıdaki sesten biri oldu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q152509",
+       "bag": "Tabloda ön plandaki çıplak kadının doğrudan bakışına, yanındaki çağdaş giysili erkeklere ve arka plandaki yıkanan kadının orantısız büyüklüğüne dikkatle bakın."
+      },
+      {
+       "sanatci": "edouard-manet",
+       "qid": "Q72650",
+       "bag": "1863 Reddedilenler Salonu'nda Çimenler Üzerinde Öğle Yemeği'nin hemen yanında sergilenen bu tabloda da aynı gözde model Victorine Meurent poz vermiştir."
+      }
+     ]
+    },
+    {
+     "baslik": "Eski Ustaların İçinden Çıkan Kurgu",
+     "yillar": "1510–1863",
+     "paragraflar": [
+      "1863 kalabalığının kaçırdığı en çarpıcı gerçek, Manet'nin bu skandal sahneyi bütünüyle sanat tarihinin en saygın ustalarından ödünç almış olmasıydı. Ön plandaki üç figürün duruşu, Marcantonio Raimondi'nin Raphael'in kayıp Paris'in Yargısı deseninden yaptığı ünlü gravürün sağ alt köşesinden alınmıştı. Orada iki nehir tanrısı ile bir su perisi oturur; Manet aynı beden duruşlarını Parisli erkeklere ve modern bir modele giydirmişti. 1863'te bu gravür bağlantısını neredeyse kimse fark etmedi; eleştirmen Ernest Chesneau bunu ancak 1864'te yayımlanan kitabında yazabildi.",
+      "İkinci büyük kaynak ise Louvre Müzesi'nde asılı duran, o dönem Giorgione'ye, bugün çoğunlukla Tiziano'ya atfedilen Kır Konseri tablosuydu. Orada da giyinik iki erkekle çıplak iki kadın yemyeşil bir kırda bir aradaydı; Giorgione'nin Fırtına tablosundaki izleyiciye dönük yarı çıplak kadın da bu geleneğin bir başka halkasıydı. Manet, Kır Konseri'nin oranlarını koruyup yüzey alanını neredeyse üç buçuk katına çıkararak eski ustalara açıkça meydan okudu. Çocukluk arkadaşı Antonin Proust, yıllar sonra yayımladığı anılarında Manet'nin Sen Nehri kıyısında yıkanan kadınları görüp Giorgione'nin kararmış tablosunu şeffaf bir ışıkla yeniden yapmak istediğini anlatır. Ancak bu anı otuz yıldan fazla sonra kaleme alınmıştır ve Edgar Degas gibi çağdaşları tablonun açık havada değil, baştan sona atölyede kurgulandığını vurgular.",
+      "Tablodaki küçük ayrıntılar da bu bilinçli kurguyu ele verir. Sol alt köşede devrilmiş piknik sepetinden dökülen meyveler arasında hem haziran ayında olgunlaşan kirazlar hem eylül ayında olgunlaşan incirler yan yanadır; yani sahne tek bir mevsimin gerçek kaydı değil, ressamın atölyesinde kurduğu bir düzenlemedir. Modellerin kimliği de aynı atölye dünyasına işaret eder. Öndeki çıplak kadın, aynı yıl Olympia için de poz verecek olan Victorine Meurent'dir. Ortadaki sakallı erkek, Manet'nin evleneceği Suzanne Leenhoff'un kardeşi Hollandalı heykeltıraş Ferdinand Leenhoff'tur. Sağda uzanıp eliyle işaret eden erkek içinse Manet'nin kardeşleri Eugène ve Gustave Manet'nin adı geçer; hangisinin poz verdiği ya da ikisinin birleşimi mi olduğu bugün bile kesin değildir."
+     ],
+     "eserler": [
+      {
+       "sanatci": "giorgione",
+       "qid": "Q930137",
+       "bag": "Giorgione'nin Fırtına tablosundaki kır ortamı ve çıplak kadının izleyiciye dönen bakışı, Manet'nin Venedik Rönesansı'ndan devralıp çağdaşlaştırdığı görsel mirası hatırlatır."
+      }
+     ]
+    },
+    {
+     "baslik": "Kahkahaların Ardından Açılan Yol",
+     "yillar": "1863–1934",
+     "paragraflar": [
+      "Reddedilenler Salonu yalnızca Manet'nin sahnesi değildi. Aynı salonlarda James McNeill Whistler'ın Beyazlı Kız tablosu da yoğun alay konusu oldu; Camille Pissarro, Armand Guillaumin, Henri Fantin-Latour ve katalog dışında kalan genç Paul Cézanne da eserlerini burada gösterdi. İmparator emriyle açılan bu sergi doğrudan bağımsız bir hareket başlatmadı; katılan yüzlerce sanatçıdan yalnızca küçük bir grup 1874'te ilk İzlenimci sergisinde bir araya geldi. Üstelik Manet, İzlenimci sergilerine hiç katılmadı.",
+      "Yine de 1863'te resmi jürinin mutlak söz hakkı ilk kez sarsılmış oldu. Genç kuşak ressamlar Manet'nin cesaretini hemen fark etti. Henüz iki yıl sonra, 1865 ile 1866 arasında Claude Monet, Manet'nin tablosuna açık bir yanıt olarak kendi anıtsal Kırda Öğle Yemeği tablosuna başladı; bu kez herkes giyinikti ve sahne gerçek açık hava ışığının altındaydı. Manet ise 1867'de kendi açtığı sergide tabloya bugünkü Çimenler Üzerinde Öğle Yemeği adını verdi. Aynı yıl yazar Émile Zola, Manet'yi savunarak bu alay edilen tablonun bir gün Louvre'da asılacağını yazdı. Tablo 1878'de koleksiyoner Jean-Baptiste Faure tarafından alındı, 1906'da devlete bağışlandı ve 1934'te gerçekten Louvre koleksiyonuna girdi."
+     ],
+     "eserler": [
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q1167912",
+       "bag": "Monet'nin 1865 ile 1866 arasında yaptığı Kırda Öğle Yemeği, Manet'nin skandal yaratan tablosuna açık hava ışığı ve giyinik çağdaş figürlerle verilmiş doğrudan bir yanıttır."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Bugün Paris'te Musée d'Orsay salonlarında Çimenler Üzerinde Öğle Yemeği'nin karşısında durduğunuzda, 1863 kalabalığının neden öfkeyle güldüğünü ilk bakışta kestirmek kolay değildir. Gözümüz modern resmin sert geçişlerine, görünür fırça izlerine ve gündelik konularına çoktan alışmıştır. Ama o Mayıs gününde Manet yalnızca Akademi kurallarını yıkmakla kalmadı; resmin illüzyon perdesini aralayıp izleyiciyi kendi bakışıyla yüz yüze bıraktı. Yıllar sonra Pablo Picasso'nun bu tek tablodan yüzlerce çeşitleme üretmesi de bu yüzden tesadüf değildir. Bir imparatorun şikâyetleri dindirmek için açtırdığı yan salon, böylece modern sanatın en gürültülü başlangıç sahnesine dönüştü."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "The Metropolitan Museum of Art — Édouard Manet (1832–1883)",
+     "adres": "https://www.metmuseum.org/essays/edouard-manet-1832-1883"
+    },
+    {
+     "baslik": "The Metropolitan Museum of Art — Alexandre Cabanel, The Birth of Venus",
+     "adres": "https://www.metmuseum.org/art/collection/search/435831"
+    },
+    {
+     "baslik": "The Metropolitan Museum of Art — Édouard Manet, Mademoiselle V... in the Costume of an Espada",
+     "adres": "https://www.metmuseum.org/fr/art/collection/search/436945"
+    },
+    {
+     "baslik": "Rolf Læssøe (Artibus et Historiae / Winthrop) — Édouard Manet's Le Déjeuner sur l'herbe as a Veiled Allegory of Painting",
+     "adres": "https://faculty.winthrop.edu/stockk/Modernism/Manet%20Dejeuner.pdf"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Salon des Refusés",
+     "adres": "https://www.britannica.com/art/Salon-des-Refuses"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Le Déjeuner sur l'herbe",
+     "adres": "https://www.britannica.com/topic/Le-Dejeuner-sur-l-Herbe"
+    },
+    {
+     "baslik": "Bibliothèque nationale de France (Passerelles) — Le Déjeuner sur l'herbe de Manet",
+     "adres": "https://passerelles.essentiels.bnf.fr/fr/chronologie/article/b5312a77-74ab-491a-a3e4-ae3b9653ed3b-dejeuner-sur-herbe-manet"
+    },
+    {
+     "baslik": "Paul Hayes Tucker (Newberry Library) — Making Sense of Edouard Manet's Le Déjeuner sur l'herbe",
+     "adres": "https://www.newberry.org/uploads/files/WS20Modern%20-%20Making%20Sense%20of%20Edouard%20Manet's%20Le%20Dejeuner%20sur%20l'herbe.pdf"
+    },
+    {
+     "baslik": "Web Gallery of Art — Édouard Manet, Luncheon on the Grass",
+     "adres": "https://www.wga.hu/html/m/manet/1/5dejeun1.html"
+    }
+   ],
+   "kelime": 1097,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "skandallar-veronese-engizisyon": {
+   "dizi": "skandallar",
+   "baslik": "Veronese ve Engizisyon",
+   "alt_baslik": "Bir Son Akşam Yemeği tablosuna soytarılar ve Alman askerleri koyan ressam, 1573 mahkemesinden nasıl çıktı",
+   "sanatcilar": [
+    "paolo-veronese",
+    "leonardo-da-vinci"
+   ],
+   "giris": [
+    "18 Temmuz 1573 Cumartesi günü Venedik'te Kutsal Engizisyon mahkemesinin önüne alışılmadık bir konuk çağrıldı. Yazarlar, yayıncılar ve din adamları bu kapıdan sıkça geçerdi ama bir ressamın fırçası yüzünden mahkemede sorguya çekilmesi neredeyse görülmemiş bir olaydı. Karşılarında kırk beş yaşındaki Paolo Caliari, herkesin bildiği adıyla Paolo Veronese duruyordu. Mahkeme mesleğini sorduğunda kısa ve sade bir yanıt verdi: Resim yaparım ve figürler çizerim.",
+    "Sorgunun konusu, Veronese'nin üç ay önce tamamladığı beş buçuk metre yüksekliğinde, on üç metre genişliğindeki dev bir Son Akşam Yemeği tablosuydu. Mahkeme heyetinin elinde uzun bir liste vardı: burnundan kan gelen bir uşak, elinde papağan tutan bir soytarı, çatalla dişini karıştıran bir konuk, masanın altında bir köpek ve merdiven dibinde yiyip içen silahlı Alman askerleri. Yalnızca yirmi dakika kadar sürdüğü tahmin edilen bu sorgu, sanat tarihinde bir ressamın hayal gücü ile kilise otoritesinin yüz yüze geldiği en ünlü belgeye dönüştü."
+   ],
+   "bolumler": [
+    {
+     "baslik": "Yanan Bir Tablonun Yerine Dev Bir Sahne",
+     "yillar": "1562–1573",
+     "paragraflar": [
+      "Her şey bir yangınla başlamıştı. Venedik'in en görkemli Dominiken manastırlarından Santi Giovanni e Paolo'nun yemekhanesinde, Tiziano'nun 1557'de bitirdiği ağırbaşlı bir Son Akşam Yemeği asılıydı. Tiziano o tabloda, Leonardo da Vinci'nin Milano'daki manastır duvarına yaptığı ünlü Son Akşam Yemeği'nin sakin ve odaklanmış düzenini izlemişti. 13 Şubat 1571 gecesi çıkan yangında yemekhane de Tiziano'nun tablosu da kül oldu.",
+      "Tiziano artık seksenli yaşlarını aşmıştı; yeni ve daha büyük tuval için Venedik'in en parlak ziyafet ressamına, Paolo Veronese'ye başvuruldu. On yedinci yüzyıl kaynakları ve manastır kayıtları, masrafı Fra Andrea de Buoni adlı rahibin üstlendiğini aktarır. Veronese daha önce San Giorgio Maggiore manastırı için Kana'daki Düğün'ü, başka manastır yemekhaneleri için de Ferisi Simon'un Evindeki Ziyafet tablolarını boyamıştı. Mermer kemerler, ipek giysiler ve kalabalık konuklar onun imzasıydı.",
+      "20 Nisan 1573'te bitirdiği yeni tuvalin üzerine bitiş tarihini gururla yazdı. Bu devasa sahnede İsa ve on iki havarinin etrafına altmış bir figür daha, iki kuş, iki köpek ve bir kedi yerleştirmişti. Tablo yemekhaneye asıldıktan kısa süre sonra manastır başrahibi Veronese'ye gelip Engizisyon'un köpeğin yerine Mecdelli Meryem'i koymasını istediğini bildirdi. Veronese bunun kompozisyona uymayacağını söyleyerek reddedince, mahkeme celbi kapısına dayandı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "leonardo-da-vinci",
+       "qid": "Q128910",
+       "bag": "Leonardo'nun Milano'daki Son Akşam Yemeği, yalnızca İsa ile havarilere odaklanan sade düzeniyle manastır yemekhaneleri için beklenen ölçütü belirlemişti."
+      },
+      {
+       "sanatci": "paolo-veronese",
+       "qid": "Q185255",
+       "bag": "Veronese'nin on yıl önce yaptığı Kana'daki Düğün, kalabalık figürleri ve görkemli mimarisiyle 1573'teki dev ziyafetin doğrudan öncülüdür."
+      }
+     ]
+    },
+    {
+     "baslik": "Roma'nın Kaygısı ve Trento'nun Kuralları",
+     "yillar": "1563–1573",
+     "paragraflar": [
+      "Veronese daha önce de kalabalık ve gösterişli manastır ziyafetleri boyamıştı ama hiçbiri sorgulanmamıştı. 1573'te Engizisyon'un bu tabloya neden bu kadar sert baktığını anlamak için o yılların Avrupa'sına bakmak gerekir. Katolik Kilisesi, Protestan Reformasyonu'na karşı uzun yıllar süren Trento Konsili'ni henüz 1563'te tamamlamıştı. Konsilin dinsel imgeler üzerine aldığı kararlar açıktı: kutsal resimlerde dünyevi aşırılıklara, dikkati dağıtan süslemelere ve kutsal metinde yeri olmayan tuhaflıklara artık izin verilmeyecekti.",
+      "Üstelik Son Akşam Yemeği, Kana'daki bir düğün ya da Ferisi Simon'un sofrası değildi. Katolik inancının kalbindeki ekmek ve şarap ayininin kurulduğu andı ve Protestanlarla en keskin inanç tartışmaları tam bu sofranın anlamı etrafında dönüyordu. Tam o aylarda Venedik ile Roma arasındaki siyasi gerilim de doruktaydı. Venedik, 1573 Mart'ında Kutsal İttifak'tan ayrılıp Osmanlı İmparatorluğu ile gizli bir barış anlaşması imzalayınca Papa On Üçüncü Gregorius öfkelenmiş, Rab'bin Sofrasında anlamına gelen In Coena Domini fermanı üzerinden kriz büyümüştü.",
+      "Buna bir de tablonun asıldığı Santi Giovanni e Paolo manastırının iç sarsıntısı eklenmişti. Manastır kayıtları, o yıllarda çok sayıda keşişin Katolik inancından ayrıldığını gösteriyordu. Dolayısıyla sorguyu yürüten Dominiken rahip Aurelio Schellini'nin gözünde, İsa'nın sofrasının hemen yanında içki içen Alman askerleri görmek masum bir süsleme değildi. Kuzeyden gelen Protestan alaylarına karşı tetikte olan bir mahkeme için bu sahne, kutsal ayini hafife alma tehlikesi taşıyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paolo-veronese",
+       "qid": "Q15074981",
+       "bag": "Veronese'nin birkaç yıl önce yaptığı Ferisi Simon'un Evindeki Ziyafet de kalabalık ve gösterişliydi ama Son Akşam Yemeği kadar hassas bir konu olmadığı için sorgulanmadı."
+      }
+     ]
+    },
+    {
+     "baslik": "Şairler, Deliler ve Ressamların Özgürlüğü",
+     "yillar": "1573",
+     "paragraflar": [
+      "18 Temmuz 1573 tarihli tutanak, Venedik Devlet Arşivi'nde neredeyse üç yüz yıl saklı kaldıktan sonra 1867'de Fransız araştırmacı Armand Baschet tarafından bulundu. Satırları okuduğunuzda iki farklı dünyanın çarpışmasını duyarsınız. Sorgulayıcı ilk önce masada kimlerin bulunduğunu ve İsa ile havariler dışındaki kalabalığın ne iş yaptığını sorar. Burnundan kan gelen uşağı sorunca Veronese, bir kaza sonucu burnu kanamış bir hizmetkâr olduğunu söyler. Elinde papağan tutan soytarı için alışıldığı üzere süsleme der. Çatalla dişini karıştıran figürü ve kuzuyu kesip masanın öbür ucuna uzatan Aziz Petrus'u da gündelik bir sofra hareketi olarak açıklar. Bunca büyük bir tuvalde boş kalan yerleri kendi zevkine göre doldurduğunu ekler.",
+      "Sıra merdiven dibinde yiyip içen Alman kılıklı teberli askerlere gelince Veronese yirmi kelime izin ister ve sanat tarihinin en ünlü savunmalarından birini yapar: Biz ressamlar, şairlerin ve delilerin kendine tanıdığı özgürlüğü tanırız. Büyük ve zengin bir ev sahibinin böyle muhafızları olması bana uygun göründü. Sorgulayıcı bunu kabul etmez. Almanya'da ve sapkınlığın bulaştığı yerlerde cahil halka yanlış öğreti yaymak için tabloları alaycı imgelerle doldurduklarını bilmiyor musunuz diye sorar.",
+      "Bunun üzerine Veronese beklenmedik bir kart açar. Kendisinden büyük ustaları izlediğini söyler ve Roma'da Papa'nın kendi şapelinde Michelangelo'nun İsa'yı, Meryem'i ve tüm azizleri çıplak ve pek az saygıyla boyadığını hatırlatır. Sorgulayıcı hazırlıklıdır: Son Yargı'da giysi beklenmez, ama orada soytarılar, köpekler ya da silahlar da yoktur. Köşeye sıkışan Veronese sonunda geri adım atar, tabloyu savunmak istemediğini ama iyi niyetle yaptığını, bu figürlerin İsa'nın oturduğu yerin dışında kaldığını düşündüğünü söyler. Mahkeme kararını Latince yazar: ressam, tabloyu kendi masrafıyla üç ay içinde düzeltmekle yükümlüdür."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paolo-veronese",
+       "qid": "Q951105",
+       "bag": "Levi'nin Evinde Ziyafet'e yakından bakın: sağ merdivende içki içen Alman askerlerini, sol önde papağanlı soytarıyı ve masanın altındaki köpeği hâlâ yerli yerinde göreceksiniz."
+      }
+     ]
+    },
+    {
+     "baslik": "Tek Bir Yazıtla Değişen Ziyafet",
+     "yillar": "1573–1815",
+     "paragraflar": [
+      "Mahkemenin verdiği üç ay geçti ama Veronese ne Alman askerlerini ne papağanlı soytarıyı ne de köpeği sildi. Tutanakta karar cümlesinin içindeki Rab'bin Son Akşam Yemeği'ne yakışır biçimde ifadesinin üstü çizilmişti; bu küçük boşluk ressama aradığı çıkış yolunu gösterdi. Yirminci yüzyılda Gallerie dell'Accademia'da yapılan ayrıntılı restorasyon ve röntgen incelemeleri, 20 Nisan 1573'ten sonra tablodaki figürlerde hiçbir değişiklik yapılmadığını doğruladı. Veronese bunun yerine merdiven korkuluklarının iki yanına Latince kısa bir yazıt ekledi: Levi büyük bir ziyafet verdi, Luka İncili beşinci bölüm.",
+      "Bu tek ad değişikliği ustaca bir çözümdü. Luka İncili'nin beşinci bölümünde vergi görevlisi Levi, İsa için evinde büyük bir ziyafet verir; sofrada vergi görevlileri ve günahkârlar da oturur. Ferisiler buna itiraz edince İsa, ben doğru kişileri değil, günahkârları tövbeye çağırmaya geldim diye yanıt verir. Bir Son Akşam Yemeği'nde asla hoş görülemeyecek sarhoş askerler, cüceler ve gürültülü hizmetkârlar, Levi'nin evindeki günahkârlar sofrasında birdenbire İncil metnine uygun düşmüştü.",
+      "Veronese'nin bu çözümden ceza almadan sıyrılmasında Venedik'in kendi dengeleri de etkiliydi. Venedik Engizisyonu'nun altı üyesinden dördü Venedikliydi ve aralarında Onlar Konseyi üyesi Giacomo Foscarini'nin de bulunduğu üçü laik devlet görevlisiydi. Cumhuriyet bu gizli sorguyla Roma'ya inanç konusunda gevşemediğini göstermiş, ama kentin en gözde ressamını cezalandırmaya da niyet etmemişti. Mahkeme yeni adı sessizce kabul etti; tablo yüzyıllarca manastırda kaldı, 1797'de Fransız ordusunca Paris'e götürüldü ve 1815'te Venedik'e dönüp Gallerie dell'Accademia'ya yerleşti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "paolo-veronese",
+       "qid": "Q951105",
+       "bag": "Tablonun iki yanındaki taş korkuluklara eklenen Latince Luka beşinci bölüm yazıtı, tek bir figürü silmeden tüm sahnenin anlamını değiştirdi."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Veronese 1588'de ölene kadar Venedik'in en saygın ressamı olarak çalışmayı sürdürdü, ama dersi de aldı: bir daha böylesine dev ve gürültülü bir Son Akşam Yemeği boyamadı, yıllar sonra yaptığı tek Son Akşam Yemeği ise çok daha küçük ve ağırbaşlıydı. Bugün Venedik'teki Gallerie dell'Accademia'da Levi'nin Evinde Ziyafet'in karşısında durduğunuzda, parlak ipeklerin ve mermer kemerlerin ardında 1573 yazının o sessiz pazarlığını görürsünüz. Engizisyon inanç sınırlarını korumaya çalışmıştı, Veronese ise resmin kendi dünyasını. Sonunda ne fırça boyun eğdi ne mahkeme yenildi; yalnızca tablonun adı değişti."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Paul H. D. Kaplan (University of Washington Press / Warwick) — Veronese and the Inquisition: The Geopolitical Context",
+     "adres": "https://warwick.ac.uk/fac/arts/ren/jhu/summerschool2019/reading/day_2-paul_kaplan_veronese_and_the_inquisition._the_geopolitcal_context.pdf"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Feast in the House of Levi / Paolo Veronese",
+     "adres": "https://www.britannica.com/topic/Feast-in-the-House-of-Levi"
+    },
+    {
+     "baslik": "Khan Academy / Smarthistory — Transcript of the trial of Veronese",
+     "adres": "https://www.khanacademy.org/humanities/renaissance-reformation/high-ren-florence-rome/late-renaissance-venice/a/transcript-of-the-trial-of-veronese"
+    },
+    {
+     "baslik": "UEN Digital Press — Transcript of the trial of Veronese (Smarthistory)",
+     "adres": "https://uen.pressbooks.pub/arth2720/chapter/transcript-of-the-trial-of-veronese/"
+    },
+    {
+     "baslik": "Brian T. d'Argaville (RACAR) — Paolo Veronese and the Ultima Cena of 1573",
+     "adres": "https://www.racar-racar.com/uploads/5/7/7/4/57749791/_racar_16_1_05_dargaville.pdf"
+    },
+    {
+     "baslik": "Web Gallery of Art — Paolo Veronese, Feast in the House of Levi",
+     "adres": "https://www.wga.hu/html_m/v/veronese/06/8levi.html"
+    }
+   ],
+   "kelime": 1071,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "skandallar-meryemin-olumu": {
+   "dizi": "skandallar",
+   "baslik": "Caravaggio'nun Meryem'in Ölümü",
+   "alt_baslik": "Bir kilisenin sunağa yakıştırmadığı tablo, Rubens'in gözüyle nasıl Roma'nın en çok aranan başyapıtına dönüştü",
+   "sanatcilar": [
+    "caravaggio",
+    "peter-paul-rubens"
+   ],
+   "giris": [
+    "1607 yılının Nisan ayının ilk haftasında Roma'da bir evin kapısında alışılmadık bir kalabalık birikti. Genç ressamlar, koleksiyonerler ve meraklılar içeri girmek için sıraya girmişti. Mantua Dükü'nün elçisi Giovanni Magni, kuzeye gönderilmek üzere sandıklanacak dev bir tabloyu Roma ressamlarının yoğun ısrarı üzerine yalnızca yedi günlüğüne görmeye açmıştı. Kopya çekmek kesinlikle yasaktı; gelenler yalnızca bakıp bu anı belleğine kazıyabilirdi.",
+    "Duvarda asılı duran üç buçuk metreyi aşan bu tuval, birkaç ay önce Trastevere'deki bir kilisenin sunağından geri çevrilen Meryem'in Ölümü idi. Tablonun ressamı Michelangelo Merisi da Caravaggio ise o sırada Roma'da bile değildi; 1606 Mayıs'ında Ranuccio Tomassoni'yi öldürdükten sonra hakkında ölüm cezası çıkarılmış, güneye kaçmıştı. Kilisenin kapıdan çevirdiği bir sunak resmi, nasıl bu kadar kısa sürede prenslerin ve ressamların peşine düştüğü bir başyapıta dönüşmüştü?"
+   ],
+   "bolumler": [
+    {
+     "baslik": "Karanlık Bir Odada Gerçek Bir Ölüm",
+     "yillar": "1601–1606",
+     "paragraflar": [
+      "Hikâye 14 Haziran 1601 tarihli bir sözleşmeyle başlamıştı. Papalık hukukçusu Laerzio Cherubini, Roma'nın Trastevere semtindeki Yalınayak Karmelitlerin kilisesi Santa Maria della Scala'da kendi şapeli için bir Meryem'in Ölümü tablosu ısmarladı. Caravaggio sözleşmeyi imzaladığında yirmi dokuz yaşındaydı ve Roma'nın en çok konuşulan ressamıydı. Tabloyu ancak 1605 sonu ile 1606 başı arasında, otuz dört yaşındayken bitirdi.",
+      "Tuval kiliseye ulaştığında rahipler gördükleri karşısında donakaldı. O güne dek Katolik sanatında Meryem'in ölümü, huzurlu bir uykuya dalış ve göğe yükseliş müjdesiyle anlatılırdı; bulutlar açılır, melekler iner, Meryem yaşsız ve kusursuz bir kraliçe gibi görünürdü. Caravaggio bunların hepsini silip atmıştı. Meryem'in Ölümü'ne yakından baktığınızda, yoksul ve karanlık bir odada, ağır kırmızı bir perdenin altında tahta bir sedire uzanmış sıradan bir ölü kadın görürsünüz. Yüzü solgundur, karnı şişkindir, bir kolu cansızca yana sarkmıştır ve çıplak ayakları sedirin ucundan dışarı taşar.",
+      "Gökyüzü kapalıdır, tek bir melek yoktur. Yukarıdan tek bir pencereden sızar gibi düşen sert ışık, yalnızca ölü bedeni ve çevresindeki kederi aydınlatır. Ön planda Mecdelli Meryem bir sandalyeye çökmüş, yüzünü ellerine gömüp sessizce ağlamaktadır. Çevredeki havariler yaşlı, yorgun ve şaşkındır; kiminin alnı kırışık, kiminin başı keldir. Yirminci yüzyıl sanat tarihçisi Roberto Longhi bu sahneyi yoksul bir gece barınağındaki ölüme benzetir. Caravaggio kutsal bir mucizeyi değil, sevilen bir insanın ardından kalan o ağır ve çıplak yası boyamıştı. Santa Maria della Scala'nın Karmelit rahipleri için bu sahne, bir sunakta dua eden cemaatin karşısına konabilecek bir imge değildi; tabloyu kabul etmediler."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q597114",
+       "bag": "Meryem'in Ölümü'nde üstteki ağır kırmızı perdeye, Meryem'in çıplak ayaklarına ve ön planda yüzünü ellerine gömmüş ağlayan Mecdelli Meryem'e dikkatle bakın."
+      }
+     ]
+    },
+    {
+     "baslik": "Kilisenin Kaygısı ve Tiber Söylentisi",
+     "yillar": "1606–1672",
+     "paragraflar": [
+      "Bugün bu ret kararını yalnızca dar görüşlülük gibi okumak kolaydır; ama 1606 Roma'sında kilise görevlilerinin kendi kuralları ve teolojik sorumlulukları vardı. Karşı Reformasyon döneminde sunak resimleri, halka inancı berrak ve saygın bir biçimde öğretmek zorundaydı. İlahiyatçılar, Meryem'in bedeninin sıradan ölümün çürümesine uğramadığına ve ruhuyla birlikte göğe alındığına inanırdı. Dolayısıyla rahiplerin gözünde şişkin bir beden, sarkmış bir kol ve açıkta kalan çıplak bacaklar, yalnızca estetik bir kusur değil, inanca aykırı bir saygısızlıktı.",
+      "Üstelik tablonun etrafında hemen ağır dedikodular dolaşmaya başladı. Caravaggio'yu şahsen tanıyan, hasta olduğunda onu tedavi eden ve 1607'deki satışta rol oynayan hekim Giulio Mancini, on yıl kadar sonra yazdığı notlarda rahiplerin tabloyu, Caravaggio'nun Meryem için Roma'nın kötü şöhretli Ortaccio mahallesinden bir fahişeyi model alması yüzünden kaldırttığını ileri sürdü. Daha sonra yazan Giovanni Baglione ve Giovanni Pietro Bellori de Meryem'in şişkin ölü bedeninin fazla kaba ve sıradan bulunduğunu aktardı.",
+      "Zamanla bu erken anlatılar daha da dallanıp budaklandı ve Caravaggio'nun Tiber Nehri'nde boğulmuş bir kadının cesedini model aldığı söylentisi yayıldı. Oysa bu hikâyeyi doğrulayan hiçbir dönem belgesi yoktur; erken yazarların ahlaki öfkesinin sonradan efsaneye dönüşmüş hâlidir. Karmelitler ise tartışmayı kapatmak için işi Caravaggio'nun Venedikli takipçisi Carlo Saraceni'ye verdi. Saraceni'nin ilk denemesini de yeterince göksel bulmayıp geri çevirdiler; ancak bulutları ve müzik çalan melekleri sahneye geri getiren ikinci tablo kilisenin sunağına kabul edildi ve bugün hâlâ orada asılıdır."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q2713203",
+       "bag": "Sant'Agostino kilisesi için yapılan Loreto Meryemi de ön plandaki hacıların kirli çıplak ayakları yüzünden eleştirildi ama halkın büyük sevgisiyle sunakta kaldı."
+      }
+     ]
+    },
+    {
+     "baslik": "Geri Çevrilen Başka Sunaklar",
+     "yillar": "1602–1606",
+     "paragraflar": [
+      "Meryem'in Ölümü, Caravaggio'nun Roma'da sunaktan indirilen ilk tablosu değildi. Daha 1602'de, San Luigi dei Francesi kilisesindeki Contarelli Şapeli için yaptığı Aziz Matta ve Melek tablosunun ilk versiyonu da rahipler tarafından reddedilmişti. Caravaggio orada İncil yazarını okuma yazma bilmeyen yaşlı bir köylü gibi göstermiş, bacak bacak üstüne attırıp iri çıplak ayağını doğrudan cemaatin yüzüne doğru uzatmıştı. Rahipler bunu bir azize yakıştırmadı ama zengin koleksiyoner Marki Vincenzo Giustiniani reddedilen tabloyu anında kendi sarayına aldı; Caravaggio da kilise için daha ağırbaşlı ikinci bir versiyon boyadı.",
+      "Benzer bir kader, tam Meryem'in Ölümü'yle aynı aylarda, Nisan 1606'da Aziz Petrus Bazilikası'ndaki papalık seyislerinin şapeli için yaptığı Azize Anna, Meryem ve Çocuk İsa tablosunun da başına geldi. Tablo sunağa konduktan yalnızca birkaç gün sonra indirildi; gerekçesi bugün bile tarihçiler arasında tartışılır ama Meryem'in açık yakası, yaşlı ve kırışık Azize Anna ve çıplak Çocuk İsa'nın fazlasıyla dünyevi bulunması sıkça anılır. O tabloyu da birkaç ay sonra Kardinal Scipione Borghese yüz scudiye satın aldı. Roma'da garip bir düzen kurulmuştu: kiliselerin reddettiği her Caravaggio, özel koleksiyoncuların kapıştığı bir hazineye dönüşüyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q25412019",
+       "bag": "Contarelli Şapeli'nden reddedilen bu ilk Aziz Matta ve Melek versiyonu, Caravaggio'nun kutsallığı sıradan insan bedeniyle buluşturmasının ne kadar erken tepki çektiğini gösterir."
+      },
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q2715302",
+       "bag": "Nisan 1606'da Aziz Petrus Bazilikası'ndan günler içinde indirilen Azize Anna, Meryem ve Çocuk İsa, hemen Kardinal Scipione Borghese'nin koleksiyonuna katıldı."
+      }
+     ]
+    },
+    {
+     "baslik": "Rubens'in Gözü ve Louvre'a Uzanan Yol",
+     "yillar": "1607–1671",
+     "paragraflar": [
+      "Meryem'in Ölümü için sahneye çıkan isim, o sırada Roma'da çalışan genç Flaman ressam Peter Paul Rubens oldu. Rubens, Caravaggio'nun ışık ve gölge gücünü yakından inceliyor, Chiesa Nuova kilisesindeki İsa'nın Mezara Konması'ndan desenler çiziyordu. Santa Maria della Scala'nın geri çevirdiği dev tabloyu görünce bunun Caravaggio'nun en güçlü yapıtlarından biri olduğunu hemen anladı ve hamisi Mantua Dükü Vincenzo Gonzaga'ya hiç beklemeden satın almasını önerdi. Satışa Dük'ün Roma elçisi Giovanni Magni ile hekim Giulio Mancini de aracılık etti; 1607 başında tablo iki yüz seksen scudiye Dük'ün koleksiyonuna girdi.",
+      "İşte 1607 Nisan'ındaki o unutulmaz bir haftalık sergi bu satışın hemen ardından gerçekleşti. Tablo Roma'dan ayrılmadan önce kentin ressamlar loncası ve genç sanatçıları onu son kez görebilmek için elçiye başvurdu; Giovanni Magni tabloyu yedi gün boyunca sergiledi ama kopya çekilmesine izin vermedi. Kilise rahiplerinin ibadete uygun bulmadığı sahne, meslektaşlarının gözünde yeni bir resim çağının manifestosuydu.",
+      "Tablonun yolculuğu Mantua'da da bitmedi. 1627'de Gonzaga koleksiyonunun büyük bölümüyle birlikte İngiltere Kralı Birinci Charles'ın Londra'daki sarayına satıldı. Kralın 1649'da idam edilmesinden sonra yapılan büyük satışta Parisli bankacı ve koleksiyoner Everhard Jabach tarafından alındı; Jabach da onu 1671'de Fransa Kralı On Dördüncü Louis'ye sattı. Fransız Devrimi'nin ardından kraliyet koleksiyonundan ulusal müzeye, yani Paris'teki Louvre Müzesi'ne geçti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "caravaggio",
+       "qid": "Q1213151",
+       "bag": "Rubens'in Roma'da yakından inceleyip kopyaladığı İsa'nın Mezara Konması, Meryem'in Ölümü ile aynı ağırbaşlı yas ve çarpıcı ışık dilini paylaşır."
+      },
+      {
+       "sanatci": "peter-paul-rubens",
+       "qid": "Q2667782",
+       "bag": "Meryem'in Ölümü'nü Mantua Dükü'ne aldıran Rubens, yıllar sonra Anvers'te yaptığı Çarmıhtan İndiriliş'te Caravaggio'dan öğrendiği dramatik ışık ve beden ağırlığını taşıdı."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Caravaggio, 1607 Nisan'ında Roma'da kendi tablosunun önünde kuyruk olan ressamları hiç göremedi; o günlerde Napoli'de kaçak yaşıyor, üç yıl sonra da Porto Ercole kıyısında otuz sekiz yaşında ölecekti. Bugün Louvre Müzesi'nin büyük galerisinde Meryem'in Ölümü'nün önünde durduğunuzda, ne rahiplerin korktuğu bir saygısızlık ne de bir skandal görürsünüz. Gördüğünüz şey, yalnızca ölümün gerçek ağırlığı ve yaşayanların dinmeyen kederidir. Bir kilisenin kapıdan çevirdiği bu tablo, tam da o insani dürüstlüğü sayesinde dört yüzyıldır ayakta duruyor."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Musée du Louvre — Caravaggio, La Mort de la Vierge (INV 54)",
+     "adres": "https://collections.louvre.fr/en/ark:/53355/cl010062304"
+    },
+    {
+     "baslik": "The Metropolitan Museum of Art — Caravaggio (Michelangelo Merisi) (1571–1610) and His Followers",
+     "adres": "https://www.metmuseum.org/essays/caravaggio-michelangelo-merisi-1571-1610-and-his-followers"
+    },
+    {
+     "baslik": "Galleria Borghese — Caravaggio, Madonna and Child with Saint Anne (Madonna dei Palafrenieri)",
+     "adres": "https://www.collezionegalleriaborghese.it/en/opere/madonna-and-child-with-saint-anne-madonna-dei-palafrenieri"
+    },
+    {
+     "baslik": "The Open University (Howard Hibbard) — Giulio Mancini, Considerazioni sulla pittura (c. 1617–1621)",
+     "adres": "https://www.open.edu/openlearn/mod/resource/view.php?id=26739"
+    },
+    {
+     "baslik": "The Open University (Howard Hibbard) — Giovanni Pietro Bellori, Le vite (1672)",
+     "adres": "https://www.open.edu/openlearn/mod/resource/view.php?id=26740"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Caravaggio: Continued successes and the murder of Tomassoni",
+     "adres": "https://www.britannica.com/biography/Caravaggio/Continued-successes-and-the-murder-of-Tomassoni"
+    },
+    {
+     "baslik": "TheHistoryOfArt.org — The Death of the Virgin by Caravaggio",
+     "adres": "https://www.thehistoryofart.org/caravaggio/death-of-the-virgin/"
+    }
+   ],
+   "kelime": 1007,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "hastalik-goya": {
+   "dizi": "hastalik",
+   "baslik": "Goya'nın Sağırlığı ve Kara Resimler",
+   "alt_baslik": "1792 kışında ölümden dönüp sağır kalan saray ressamı, evinin duvarlarına kimseye göstermediği sahneleri neden boyadı",
+   "sanatcilar": [
+    "francisco-de-goya"
+   ],
+   "giris": [
+    "1793 yılının Mart ayında İspanya'nın liman kenti Cádiz'den Madrid'e bir mektup ulaştı. Mektubu yazan tüccar Sebastián Martínez, aylardır evinde baktığı kırk altı yaşındaki saray ressamı Francisco de Goya'nın durumunu ortak dostları Martín Zapater'e bildiriyordu: Goya biraz daha iyi, görmesi düzeldi, dengesini yitirmesine yol açan kafa karışıklığı azaldı, ama sağırlığı ve başındaki uğultu hiç değişmedi.",
+    "Goya o kış neredeyse ölümden dönmüştü. İyileştiğinde yürümeyi ve görmeyi geri kazandı ama dünyanın tüm sesleri bir daha geri gelmemek üzere kapandı. Aradan yirmi yedi yıl geçtiğinde, bu kez Madrid dışındaki kır evinin duvarlarına kimsenin görmesi için yapmadığı on dört karanlık sahne boyayacaktı. Bir hastalık, bir ressamın elini ve gözünü nasıl dönüştürür?"
+   ],
+   "bolumler": [
+    {
+     "baslik": "Cádiz Kışı ve Bilinmeyen Hastalık",
+     "yillar": "1792–1793",
+     "paragraflar": [
+      "1792 yılına gelindiğinde 1746 doğumlu Francisco de Goya, Madrid'de Kraliyet Halı Fabrikası için neşeli kır sahneleri çizen, soyluların portrelerini yapan parlak bir saray ressamıydı. O yılın sonbaharında saraydan izin almadan Endülüs'e gitti ve Sevilla'da ağır bir hastalığa yakalandı. 17 Ocak 1793 tarihli kendi mektubunda iki aydır şiddetli karın ağrılarıyla yatakta olduğunu yazdı. Ardından daha iyi bakılacağı umuduyla Cádiz'de dostu Sebastián Martínez'in evine sığındı. Martínez'in Mart 1793'te yazdığı iki mektup, Goya'nın şiddetli baş ağrısı, baş dönmesi, görme bulanıklığı, geçici felç ve dinmeyen kulak uğultusu çektiğini belgeler.",
+      "Goya'yı o kış neyin yıktığı bugün hâlâ kesin olarak bilinmez. Tıp tarihçileri ve nörologlar geriye dönük çeşitli olasılıklar öne sürer. 1962'de İngiliz uzman Terence Cawthorne, göz ve iç kulağı tutan nadir otoimmün Vogt-Koyanagi-Harada sendromunu önerdi; ama 2008'de nörolog Philip Smith ve ekibi, Goya'da bu hastalığa özgü cilt ve saç bulguları kaydedilmediği için bu tezi zayıf buldu. 1972'de William Niederland boyalardaki kurşun beyazından kaynaklanan kurşun zehirlenmesini tartıştı; ancak Goya'nın boyalarını yirmi yedi yıl boyunca öğüten yardımcısı hiç zehirlenmemişti. 2008'den bu yana Smith, İspanyol nörolog Cristina Guijarro-Castro ve 2017'de Maryland Üniversitesi'nden kulak burun boğaz uzmanı Ronna Hertzano, beyin, retina ve iç kulağı etkileyen nadir Susac sendromunu en uyumlu adaylardan biri olarak değerlendirir; sıtma ve yüksek doz kinin tedavisi ya da frengi de tartışılan öteki olasılıklar arasındadır. Uzmanların birleştiği tek nokta şudur: elde kesin tıbbi kayıt olmadan tek bir tanı konulamaz."
+     ],
+     "eserler": [
+      {
+       "sanatci": "francisco-de-goya",
+       "qid": "Q3822732",
+       "bag": "Büyülenmiş Adam, Goya'nın hastalık sonrası 1790'larda aydınlık saray sahnelerinden batıl inanç ve korku dünyasına doğru nasıl kaydığını gösterir."
+      }
+     ]
+    },
+    {
+     "baslik": "Sessizlikte Açılan Yeni Bir Alan",
+     "yillar": "1794–1799",
+     "paragraflar": [
+      "Goya'nın sağırlığı onun sanatını bir mucize gibi birdenbire yaratmadı; hastalık dehayı doğurdu demek hem yanlış hem de emeğine haksızlıktır. Goya hastalıktan önce de usta bir ressamdı. Ancak ölümden dönmek ve saray dedikodularının ortasında sağır kalmak, yaşam koşullarını kökten değiştirdi. Mart 1794'te Kraliyet Halı Fabrikası müdürü, Goya'nın artık resim yapamayacak hâlde olduğuna dair söylenti duyduğunu yazıyordu. Goya ise iyileşir iyileşmez yeteneğinin eksilmediğini kanıtlamak için teneke levhalar üzerine küçük kabinet resimleri boyadı; aralarında yangın, gemi kazası ve Zaragoza'da gençliğinde gördüğü tımarhane avlusu vardı.",
+      "4 Ocak 1794'te San Fernando Kraliyet Akademisi başkan yardımcısı Bernardo de Iriarte'ye gönderdiği mektupta bu dönüm noktasını kendi sözleriyle anlattı: Acılarımı düşünmekle eziyet çeken hayal gücümü meşgul etmek için bir dizi kabinet resmi yaptım; bunlarda, normalde kaprise ve icada yer bırakmayan sipariş işlerde fırsat bulunamayan gözlemler yapmayı başardım. Goya dudak okumayı ve işaret dilini öğrendi, insanlarla kâğıda yazarak anlaştı. Seslerin çekildiği dünyada yüz ifadelerine, ağız hareketlerine ve beden diline eskisinden çok daha keskin bakmaya başladı.",
+      "1799'da elli üç yaşındayken Baş Saray Ressamı atandı ve aynı yıl seksen gravürlük Kaprisler dizisini yayımladı. Toplumsal ikiyüzlülüğü, cehaleti ve batıl inançları hicveden bu baskıları Engizisyon korkusuyla kısa süre sonra satıştan çekmek zorunda kaldı. Dizinin en ünlü levhası olan Aklın Uykusu Canavarlar Doğurur'da masasının üstüne yığılıp uyumuş bir sanatçının etrafını baykuşlar ve yarasalar sarar. Goya kendi el yazısıyla düştüğü notta, düş gücünün akıldan kopunca imkânsız canavarlar ürettiğini, akılla birleştiğinde ise sanatların anası olduğunu yazar."
+     ],
+     "eserler": [
+      {
+       "sanatci": "francisco-de-goya",
+       "qid": "Q1163663",
+       "bag": "1799'da yayımlanan seksen gravürlük Kaprisler dizisi, Goya'nın sipariş kısıtlarından kurtulup toplumun karanlık yanlarını keskin bir gözlemle ele aldığı ilk büyük atılımdır."
+      }
+     ]
+    },
+    {
+     "baslik": "Sağır Adamın Evi ve Doktor Arrieta",
+     "yillar": "1819–1820",
+     "paragraflar": [
+      "Goya sonraki yıllarda Napolyon ordularının İspanya'yı işgaline, kanlı çatışmalara ve Kral Yedinci Fernando'nun baskıcı dönüşüne tanık oldu. 27 Şubat 1819'da, yetmiş iki yaşındayken Madrid dışında Manzanares Nehri kıyısında iki katlı bir kır evi satın aldı. Evin halk arasındaki adı Quinta del Sordo, yani Sağır Adamın Evi idi. İlginç bir rastlantıyla bu ad Goya'dan değil, kendisi de sağır olan bir önceki sahibinden geliyordu.",
+      "Goya bu eve taşındığı yılın sonunda, yetmiş üç yaşındayken ikinci kez ölümün eşiğine geldi. Bu kez onu ayağa kaldıran kişi, salgın hastalıklar uzmanı dostu Doktor Eugenio García Arrieta oldu. Goya 1820'de iyileşir iyileşmez hekimine minnet borcunu ödemek için Doktor Arrieta ile Otoportre tablosunu boyadı. Tabloya baktığınızda Goya'yı solgun, bitkin, çarşafa tutunmuş hâlde görürsünüz; Doktor Arrieta ise arkasından onu şefkatle destekler ve dudaklarına ilaç dolu bardağı uzatır. Arka plandaki karanlık gölgeler ölümün ya da korkunun eşiğindeki yüzler gibidir. Goya tablonun altına kendi eliyle şu yazıtı düştü: Goya, 1819 yılının sonunda yetmiş üç yaşındayken geçirdiği ağır ve tehlikeli hastalıktan ustalığı ve özeniyle hayatını kurtaran dostu Arrieta'ya şükranlarını sunar."
+     ],
+     "eserler": [
+      {
+       "sanatci": "francisco-de-goya",
+       "qid": "Q2736720",
+       "bag": "Doktor Arrieta ile Otoportre'de Goya'nın bitkin bedeni, doktorun koruyucu kucaklayışı ve arka plandaki gölge yüzler, ölümün eşiğinden dönüşün en dolaysız belgesidir."
+      }
+     ]
+    },
+    {
+     "baslik": "Duvarlardaki Kara Resimler",
+     "yillar": "1820–1881",
+     "paragraflar": [
+      "İkinci hastalıktan kurtulduktan sonra Goya, 1820 ile 1823 yılları arasında Sağır Adamın Evi'nin alt ve üst katındaki iki geniş odanın duvarlarını doğrudan boyamaya başladı. Röntgen incelemeleri, duvarlarda önce daha aydınlık manzaralar bulunduğunu, Goya'nın sonradan bunların üstünü koyu siyah, toprak sarısı, kirli beyaz ve az sayıda kırmızı fırça darbesiyle kapladığını gösterir. Bu on dört duvar resmi hiçbir siparişin ürünü değildi; Goya onları ne sergiledi ne de adlandırdı.",
+      "Alt kattaki yemek odasının duvarlarında mitolojideki zaman tanrısı Satürn'ün korku dolu gözlerle kendi oğlunu yiyişi ve keçi biçimindeki şeytanın etrafına toplanmış yüzleri çarpık kalabalık, yani Cadı Ayini yer alıyordu. Üst katta ise dizlerine kadar toprağa batmış hâlde birbirini sopayla döven iki adam ve kocaman boş bir sarı-kahverengi yüzeyin alt kenarından başını uzatan Bir Köpek vardı. Bir Köpek'e baktığınızda neredeyse hiçbir ayrıntı görmezsiniz; yalnızca yukarıya, boşluğa bakan küçük bir baş ve uçsuz bucaksız bir belirsizlik. Goya, yaşadığı savaşların, siyasi baskının ve kendi ölümlülüğünün ağırlığını yalnızca kendine ait dört duvarın içine boşaltmıştı.",
+      "1824'te yetmiş sekiz yaşındayken İspanya'daki baskıdan uzaklaşıp Fransa'nın Bordeaux kentine göç etti ve 16 Nisan 1828'de seksen iki yaşında orada öldü. Evin duvarlarındaki resimler yarım yüzyıl daha orada kaldı. 1874'te evin yeni sahibi Fransız bankacı Baron Émile d'Erlanger, Prado Müzesi restoratörü Salvador Martínez Cubells aracılığıyla on dört sahneyi duvarlardan söküp tuvale aktarttı. 1878 Paris Dünya Fuarı'nda sergilendikten sonra 1881'de İspanya devletine bağışlandılar ve Madrid'deki Prado Müzesi'ne yerleştiler. 2003'te sanat tarihçisi Juan José Junquera, dönem tapu kayıtlarına dayanarak üst katın sonradan yapıldığını ve resimlerin Goya'nın oğlu Javier'e ait olabileceğini öne sürdüyse de Goya uzmanı Nigel Glendinning ve Prado Müzesi bu tezi reddederek eserlerin Goya'ya ait olduğunu teyit etti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "francisco-de-goya",
+       "qid": "Q2528477",
+       "bag": "Yemek odası duvarına boyanan Cadı Ayini'nde çarpık yüzler ve karanlık kitleler, Goya'nın sessiz dünyasında insan korkusunu nasıl yoğunlaştırdığını gösterir."
+      },
+      {
+       "sanatci": "francisco-de-goya",
+       "qid": "Q500936",
+       "bag": "Bir Köpek, neredeyse bütünüyle boş bir yüzeyde yalnızca başı görünen küçük bir hayvanla, yirminci yüzyıl resmini bir asır önceden haber veren en yalın Kara Resimdir."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Goya'nın hikâyesi, bir hastalığın bir sanatçıyı nasıl yok ettiği ya da nasıl dehaya dönüştürdüğü üzerine kolay bir masal değildir. 1792'de işitmesini yitirdikten sonra otuz beş yıl daha yaşadı; saray portreleri yaptı, savaşın yıkımını gravürlere kazıdı, Bordeaux'da seksenli yaşlarında bile taşbaskı denedi. Sağırlık dış dünyayla arasına kalın bir cam koydu ama elindeki fırçayı hiç durdurmadı. Bugün Madrid'de Prado Müzesi'nin Kara Resimler salonunda yürürken gördüğümüz şey, yalnızca bir hastanın kâbusları değil; sessizliğin içinde gerçeğe gözünü kırpmadan bakan yaşlı bir ustanın inatçı emeğidir."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Museo Nacional del Prado — Pinturas negras (Goya)",
+     "adres": "https://www.museodelprado.es/aprende/enciclopedia/voz/pinturas-negras-goya/3ac8fe0b-3dd9-4dcd-b1e1-a21877cc8163"
+    },
+    {
+     "baslik": "Minneapolis Institute of Art — Francisco de Goya, Self-Portrait with Dr. Arrieta (1820)",
+     "adres": "https://collections.artsmia.org/art/1226/self-portrait-with-dr-arrieta-francisco-jose-de-goya-y-lucientes"
+    },
+    {
+     "baslik": "P. E. M. Smith et al. (Practical Neurology / PubMed, 2008) — Goya's deafness",
+     "adres": "https://pubmed.ncbi.nlm.nih.gov/19015297/"
+    },
+    {
+     "baslik": "S. M. Chan, G. E. Friedlaender, L. K. Friedlaender (NIH PMC, 2020) — Art in Science: Goya to Dr. Arrieta",
+     "adres": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7491894/"
+    },
+    {
+     "baslik": "Encyclopaedia Britannica — Francisco Goya",
+     "adres": "https://www.britannica.com/biography/Francisco-Goya"
+    },
+    {
+     "baslik": "Fundación Goya en Aragón — Quinta del Sordo",
+     "adres": "https://fundaciongoyaenaragon.es/loc/quinta-del-sordo/618"
+    },
+    {
+     "baslik": "C. Guijarro-Castro (Sociedad Española de Neurología, Neurosciences and History, 2013) — Could neurological illness have influenced Goya's pictorial style?",
+     "adres": "https://nah.sen.es/vmfiles/abstract/NAHV1N1201312_20EN.pdf"
+    }
+   ],
+   "kelime": 1070,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "hastalik-van-gogh": {
+   "dizi": "hastalik",
+   "baslik": "Saint-Rémy'deki Yıl",
+   "alt_baslik": "Kendi isteğiyle girdiği hastanede, nöbetler arasında boyanan yüz elli tablo",
+   "sanatcilar": [
+    "vincent-van-gogh"
+   ],
+   "giris": [
+    "Sekiz Mayıs 1889 sabahı otuz altı yaşındaki Vincent van Gogh, Güney Fransa'daki Saint-Rémy-de-Provence kasabasının dışında yer alan Saint-Paul-de-Mausole akıl hastanesinin kapısından kendi isteğiyle içeri girdi. Arles'da Paul Gauguin ile yaşanan gerilimin ardından kulağını kestiği geceden ve peş peşe gelen üç hastaneye yatıştan sonra artık tek başına bir atölye yürütemeyeceğini açıkça kabul etmişti. Bu duvarların arkasında tam bir yıl geçirdi. Dört ağır nöbetle sarsıldığı, haftalarca fırça tutamadığı o yılın sonunda geriye yaklaşık yüz elli yağlı boya tablo bıraktı. Peki ağır bir zihinsel sarsıntı geçiren bir ressam, bir akıl hastanesinin içinde sanat tarihinin en tanınmış resimlerini nasıl boyayabildi?"
+   ],
+   "bolumler": [
+    {
+     "baslik": "Kendi İsteğiyle Kapıdan İçeri",
+     "yillar": "Mayıs 1889",
+     "paragraflar": [
+      "Saint-Paul-de-Mausole, eski bir manastırdan dönüştürülmüş, yüksek duvarlarla çevrili sakin bir kurumdu. Kardeşi Theo van Gogh, üçüncü sınıf pansiyon ücreti olan aylık yüz frankı ve tuval ile boya masraflarını Paris'ten düzenli olarak karşıladı. Hastanede otuzdan fazla oda boş olduğu için yönetici Doktor Théophile Peyron, Vincent'a uyuduğu odanın yanında ikinci bir odayı da atölye olarak kullanma izni verdi. Vincent 9 Mayıs 1889'da Theo ve yeni evlendiği eşi Johanna van Gogh-Bonger'e yazdığı 772 numaralı mektupta, buraya gelmekle doğru bir karar verdiğini anlattı. Diğer hastaların günlük yaşamını yakından gördükçe deliliğe dair duyduğu o belirsiz korkunun azaldığını, bunu başka herhangi bir hastalık gibi görmeye başladığını yazdı.",
+      "İlk haftasında dışarı çıkma izni yoktu, bu yüzden şövalesini hemen hastanenin duvarlı bahçesine kurdu. İlk iş olarak mor çiçekli Süsenler ve Leylak Çalısı üzerine çalıştı. Yaklaşık 23 Mayıs tarihli 776 numaralı mektupta, haftada iki kez ikişer saatlik banyo tedavisi gördüğünü, midesinin bir yıl öncesine göre çok daha iyi olduğunu bildirdi. Ona en ağır gelen şey hastane duvarları değil, yıllardır orada kalan öteki hastaların bütün gün hiçbir şey yapmadan vakit geçirmesiydi. Kendi sözleriyle çalışma disiplini, onu bu derin uyuşukluktan koruyacak tek dayanağıydı. Kendi gözünde bir etüt saydığı Süsenler tablosunu Theo Eylül 1889'da Paris'teki Bağımsızlar Salonu'na gönderdiğinde, resmin uzaktan bile göze çarptığını, hava ve yaşam dolu olduğunu yazacaktı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q2282256",
+       "bag": "Hastanedeki ilk haftasında, bahçedeki çiçek tarhının başında durarak boyadığı ve çalışma düzenini yeniden kurduğu ilk büyük tablo."
+      }
+     ]
+    },
+    {
+     "baslik": "Demir Parmaklıklı Pencereden Gökyüzüne",
+     "yillar": "Haziran 1889",
+     "paragraflar": [
+      "Vincent'ın kaldığı küçük odanın demir parmaklıklı penceresi doğuya, taş duvarla çevrili bir buğday tarlasına ve ardındaki Alpilles tepelerine bakıyordu. Haziran 1889 ortasında boyadığı Yıldızlı Gece, çoğu zaman bir nöbet anında çizilmiş taşkın bir sanrı gibi anlatılır; oysa belgeler tam tersini gösterir. Tablo, ressamın zihninin berrak olduğu bir dönemde, gece yaptığı tek bir gözlemin ardından gündüz ışığında birkaç ayrı oturumda kurgulandı. Şafaktan önce penceresinden gördüğü parlak sabah yıldızı Venüs ve uzaktaki tepeler gerçek gözlemdi. Ancak ön plandaki köy o pencereden hiç görünmüyordu; göğe uzanan sivri kilise kulesi Güney Fransa'ya değil çocukluğunun Hollanda köylerine aitti, sol öndeki selvi ağacı ise gerçekte olduğundan çok daha yakına çekilmişti.",
+      "Bu tablo, hastalığın kendiliğinden ürettiği bir görüntü değil, gözlem ile belleği birleştiren bilinçli bir kurguydu. Aynı haftalarda hastanenin yakınındaki tarlalara çıkma izni de almaya başladı. Kalın boya katmanları ve kıvrılarak dönen kısa fırça vuruşlarıyla Provence'ın rüzgârlı sıcağını, zeytin ağaçlarını ve sararmış ekinleri tuvale taşıdı. Selvili Buğday Tarlası gibi manzaralarda gökyüzünün dalgalı bulutlarıyla toprağın hareketi aynı ritimde birleşiyordu. Her fırça darbesi hesaplı, yoğun ve sabırlı bir çalışmanın ürünüydü; Vincent gün doğmadan kalkıyor, güneş tepedeyken gölgede dinleniyor, akşam ışığında yeniden tuvalinin başına geçiyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q45585",
+       "bag": "Haziran 1889'da penceresinden gördüğü şafak gökyüzünü bellek ve hayal unsurlarıyla birleştirerek gündüz oturumlarında kurguladığı tablo."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q2271805",
+       "bag": "Yaz sıcağında hastane dışındaki tarlalara çıkabildiği haftalarda kıvrımlı fırça ritmiyle boyadığı Provence manzaralarından biri."
+      }
+     ]
+    },
+    {
+     "baslik": "Nöbetler, Sessiz Haftalar ve Tanı Tartışmaları",
+     "yillar": "Temmuz 1889 – Nisan 1890",
+     "paragraflar": [
+      "Düzenli çalışma temposu Temmuz 1889 ortasında aniden kesildi. Altı hafta süren bu ilk ağır nöbette zihni bulandı, dini sanrılar gördü ve yerden toprak ile boya yemeye kalkıştı. 797 ve 801 numaralı mektuplarında bu günleri sisli bir bellekten aktardı; nöbet geçtikten sonra derin bir utanç ve çaresizlik duyuyordu. Doktor Peyron bir süre boyalarına erişimini kısıtladı. Eylül başında yeniden atölyesine döndüğünde, 5 ve 6 Eylül tarihli 800 numaralı mektubunda Theo'ya şu kararlı cümleyi yazdı: İşime hâkim olmak için bütün gücümle savaşıyorum, bunu başarırsam hastalığa karşı en iyi paratoner olacak. O günlerde yaptığı Otoportre'de arka planın dalgalı mavisiyle soğukkanlı ve dikkatli bakışını yan yana getirdi.",
+      "Aralık 1889 sonunda bir haftalık ikinci bir kriz yaşandı; gardiyan Poulet onun boya yuttuğunu gördü ve Doktor Peyron bunu kendini zehirleme girişimi olarak kaydetti. 21 Ocak 1890'da Arles'a yaptığı kısa bir geziden iki gün sonra üçüncü nöbet geldi; Peyron, hastasının hiçbir iş yapamadığını ve sorulara tutarsız yanıtlar verdiğini yazdı. Şubat ile Nisan 1890 arasındaki dördüncü nöbet ise en uzun ve en yıpratıcı olanıydı; Vincent haftalarca okuyup yazamayacak kadar sersemledi. Dışarı çıkamadığı ya da yeni bir manzara kuramadığı dönemlerde odaya kapanıp Jean-François Millet, Rembrandt ve Eugène Delacroix baskılarından renkli çeviriler yaptı; Mahkûmların Avlu Yürüyüşü gibi siyah beyaz baskıları kendi rengiyle yeniden yorumlayarak elini ve gözünü canlı tuttu.",
+      "Vincent van Gogh'un gerçekte hangi hastalıktan muzdarip olduğu bugün bile kesin olarak yanıtlanabilmiş değildir. Dönemin hekimlerinden Arles'daki Doktor Félix Rey ilk krizi alkol, tütün ve yetersiz beslenmeyle ilişkili geçici bir aşırı uyarılma diye niteledi, başhekim Jules Urpar genelleşmiş hezeyanla seyreden akut mani kaydı düştü; Saint-Rémy'deki Doktor Peyron ise uzun aralıklarla gelen epilepsi nöbetleri tanısını koydu. Ölümünden sonra otuzdan fazla tanı öne sürüldü. 1922'de Karl Jaspers şizofreniyi tartıştı; 1930'lardan sonra bipolar bozukluk, 1990'da Kaufman Arenberg ve arkadaşları tarafından Ménière hastalığı, 1991'de Linda Loftus ve Wilfred Arnold tarafından absentin tetiklediği akut aralıklı porfiri ileri sürüldü. Van Gogh Müzesi'nin Eylül 2016'daki uzmanlar sempozyumu ile Groningen Üniversitesi'nden psikiyatrist Willem Nolen ve ekibinin 2020 tarihli araştırması, şizofreni, Ménière ve porfiri iddialarını düşük olasılıklı buldu; buna karşılık bipolar duygudurum bozukluğu, sınırda kişilik özellikleri, alkol yoksunluğu deliryumu, ağır depresyon ve fokal temporal lob epilepsisi gibi etkenlerin bir arada rol oynamış olabileceğini tartıştı."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q3630735",
+       "bag": "Temmuz 1889 krizinden hemen sonra toparlanıp çalışmaya döndüğü Eylül ayında, dalgalı mavi zemin önünde kendisini dikkatli bir bakışla resmettiği otoportre."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q1132723",
+       "bag": "Dışarı çıkamadığı kış haftalarında Gustave Doré'nin bir gravüründen yola çıkarak kendi renk diliyle yeniden yorumladığı kapalı mekân tablosu."
+      }
+     ]
+    },
+    {
+     "baslik": "İlk Alkışlar ve Kuzeye Dönüş",
+     "yillar": "Ocak – Mayıs 1890",
+     "paragraflar": [
+      "Saint-Rémy'deki en zor kış aylarında, dış dünyadan ilk gerçek takdir haberleri gelmeye başladı. Ocak 1890'da genç eleştirmen Gabriel-Albert Aurier, Mercure de France dergisinde Van Gogh'un sanatını öven ilk kapsamlı makaleyi yayımladı. Aynı haftalarda Brüksel'deki Les Vingt sergisine gönderilen altı tablosundan biri olan Kırmızı Bağ, ressam Anna Boch tarafından dört yüz franka satın alındı; bu satış, Vincent'ın yaşarken sattığı tek tablo diye anılır; ama arşivler birkaç küçük satış daha olduğunu gösterir. Mart 1890'da Paris'teki Bağımsızlar Salonu'nda sergilenen on tablosu büyük ilgi gördü; Theo 19 Mart tarihli mektubunda Paul Gauguin'in bu resimleri serginin anahtarı diye nitelediğini gururla aktardı.",
+      "Aynı Ocak ayında Theo ile Jo'nun bir oğlu oldu ve bebeğe Vincent Willem adını verdiler. Haberi alan Vincent, yeğeninin yatak odasına asılması için mavi gökyüzüne açılan beyaz çiçekli Çiçek Açmış Badem Ağacı tablosunu boyadı. 19 Şubat 1890'da annesine yazdığı mektupta bu resmi büyük bir özenle ve sabırla çalıştığını anlattı. Ancak Şubat sonundaki iki aylık ağır nöbet, Saint-Rémy'de tam olarak iyileşemeyeceği duygusunu pekiştirdi. Mayıs 1890'da son kez Selvi ve Yıldızlı Yol gibi yoğun Provence manzaralarını tamamladı ve 16 Mayıs'ta hastaneden ayrılıp kuzeye, Paris yakınlarındaki Auvers-sur-Oise köyüne doğru yola çıktı. Orada yalnızca iki buçuk ay yaşayacak, 29 Temmuz 1890'da otuz yedi yaşında hayata veda edecekti."
+     ],
+     "eserler": [
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q1432536",
+       "bag": "Kardeşi Theo'nun yeni doğan ve kendi adını taşıyan oğluna armağan olarak, Japon baskılarından esinlenen sade bir berraklıkla boyadığı tablo."
+      },
+      {
+       "sanatci": "vincent-van-gogh",
+       "qid": "Q5930190",
+       "bag": "Saint-Rémy'den ayrılmadan hemen önce, Mayıs 1890'da Provence gecesini, selviyi ve yıldızları son kez bir araya getirdiği tablo."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Saint-Rémy'deki yıl, deliliğin kendiliğinden sanat ürettiği bir masal değildir. Vincent van Gogh nöbetler sırasında çalışamadı; yüz elli tablosunu ancak zihninin berraklaştığı haftalarda, kendi sözleriyle çalışmayı hastalığa karşı bir paratoner yaparak boyadı. Geriye bıraktığı tablolar bir çöküşün değil, o çöküşün ortasında ayakta kalmaya çalışan sarsılmaz bir emeğin tanığıdır."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Van Gogh Museum — Vincent van Gogh's Hospitalization (1889–1890)",
+     "adres": "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/hospitalization"
+    },
+    {
+     "baslik": "Van Gogh Museum — Expert Meeting & Symposium: On the Verge of Insanity (2016)",
+     "adres": "https://www.vangoghmuseum.nl/en/about/knowledge-and-research/symposia/expert-meeting-symposium-on-the-verge-of-insanity"
+    },
+    {
+     "baslik": "Vincent van Gogh: The Letters — Mektup 772 (9 Mayıs 1889)",
+     "adres": "https://vangoghletters.org/detail/urn:mace:huc.knaw.nl:vangogh:let772"
+    },
+    {
+     "baslik": "Vincent van Gogh: The Letters — Mektup 800 (5–6 Eylül 1889)",
+     "adres": "https://vangoghletters.org/detail/urn:mace:huc.knaw.nl:vangogh:let800"
+    },
+    {
+     "baslik": "Vincent van Gogh: The Letters — Mektup 836 (4 Ocak 1890)",
+     "adres": "https://vangoghletters.org/detail/urn:mace:huc.knaw.nl:vangogh:let836"
+    },
+    {
+     "baslik": "J. Paul Getty Museum — Irises (1889)",
+     "adres": "https://www.getty.edu/art/collection/object/103JNH"
+    },
+    {
+     "baslik": "Willem A. Nolen vd. — New vision on the mental problems of Vincent van Gogh (International Journal of Bipolar Disorders, 2020)",
+     "adres": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7604278/"
+    },
+    {
+     "baslik": "Museum of Modern Art (MoMA) — The Starry Night (June 1889)",
+     "adres": "https://www.moma.org/collection/works/79802"
+    }
+   ],
+   "kelime": 1087,
+   "model": "gemini-4-neon (Gemini uygulaması, Görev)",
+   "denetci": "Gemini + Claude",
+   "olusturma": "2026-11-28"
+  },
+  "hastalik-monet": {
+   "dizi": "hastalik",
+   "baslik": "Monet'nin Kataraktı",
+   "alt_baslik": "Işığın ressamı gözlerinin ışığını yitirirken nilüferlerini nasıl boyamayı sürdürdü",
+   "sanatcilar": [
+    "claude-monet"
+   ],
+   "giris": [
+    "Paul Cézanne bir keresinde Claude Monet için yalnızca bir göz, ama ne göz demişti. Bütün ömrünü gün ışığının sudaki, sisteki ve yapraklardaki en ince değişimlerini yakalamaya adayan bu ressam, yetmişli yaşlarına girerken korktuğu en ağır sınamayla karşılaştı. Her iki gözünün merceği yavaş yavaş bulanıyor, dünyayı sarımsı kahverengi bir sisin arkasına çekiyordu. Yine de on yılı aşkın bir süre fırçasını bırakmadı, üstelik hayatının en büyük projesini, Paris'teki Orangerie salonlarını kaplayacak dev nilüfer panolarını tam bu yıllarda üstlendi. Işığın ressamı gözlerinin ışığını yitirirken nilüferlerini nasıl boyamayı sürdürdü ve ameliyattan sonra renkleri neden bambaşka bir biçimde yeniden görmeye başladı?"
+   ],
+   "bolumler": [
+    {
+     "baslik": "Gözün Üstüne İnen Sis",
+     "yillar": "1908 – 1918",
+     "paragraflar": [
+      "14 Kasım 1840 doğumlu Claude Monet, görmesindeki ilk bulanıklığı 1908 sonbaharında Venedik'te çalışırken fark etti. Alacakaranlıkta San Giorgio Maggiore gibi Venedik görünümlerinde suyun üstündeki ince ışık titreşimlerini hâlâ ustalıkla yakalıyordu, ancak birkaç yıl içinde sis koyulaştı. Temmuz 1912'de, yetmiş bir yaşındayken her iki gözünde de katarakt olduğu kesinleşti; sağ gözündeki bulanıklık daha ileri düzeydeydi. 1913'te Londra'ya gidip ünlü Alman göz hekimi Doktor Richard Liebreich'a muayene oldu. Liebreich yeni gözlük yazdı ve sağ göz için ameliyat önerdi, fakat Monet bunu kesin bir dille reddetti.",
+      "Korkusu nedensiz değildi. Katarakt ameliyatı yirminci yüzyılın başında bugünkü gibi güvenli bir işlem değildi; yapay göz içi merceği henüz bilinmiyordu. Monet, ameliyatları kötü sonuçlanan ve görmesini yitiren meslektaşları Honoré Daumier ile Mary Cassatt'ın başına gelenleri yakından biliyordu. Kendi sözleriyle zayıf görüşünden elinden geldiğince yararlanmayı, gerekirse resim yapmaktan vazgeçmeyi ama sevdiği şeyleri az da olsa görebilmeyi tercih etti. 1914'ten itibaren yazışmalarında renklerin artık eski yoğunluğunu taşımadığını, kırmızıların çamurlaşmaya başladığını ve resimlerinin giderek karardığını anlattı. Oysa Giverny'deki bahçesi, Sanatçının Giverny'deki Bahçesi tablosunda bir zamanlar parlak morlar ve taze yeşillerle ışıldayan o çiçek tarhları, artık gözünde puslu ve sararmış görünüyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q3947218",
+       "bag": "Görmesindeki ilk bulanıklıkları fark ettiği 1908 yılında Venedik'te boyadığı, ışık ve su yansımalarının hâlâ berrak olduğu akşam manzarası."
+      },
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q3794124",
+       "bag": "Katarakt ilerlemeden önce Giverny'deki çiçek bahçesinin canlı morlarını ve yeşillerini doğrudan gözlemle tuvale aktardığı dönemden bir örnek."
+      }
+     ]
+    },
+    {
+     "baslik": "Etiketli Boya Tüpleri ve Yırtılan Tuvaller",
+     "yillar": "1918 – 1922",
+     "paragraflar": [
+      "Kataraktın merceği sarartıp koyulaştırması, özellikle mavi, mor ve yeşil gibi kısa dalga boylu renklerin göze ulaşmasını engeller. Monet 1899'da Nilüferler tablosunda serin yeşillerle ve ince mavi gölgelerle işlediği göletini, 1918 ile 1922 yılları arasında bambaşka bir tonda boyamaya başladı. Giverny'deki Japon köprüsü ve gül yolu dizileri koyu kırmızıya, yanık turuncuya ve ağır kahverengiye kaydı; fırça vuruşları genişledi, biçimler neredeyse soyut bir leke dokusuna dönüştü. Parlak öğle güneşi gözünü kamaştırdığı için dışarıda geniş hasır şapkalar takıyor, yalnızca sabah ve akşam ışığında çalışabiliyordu. Renkleri birbirinden ayıramadığı için boya tüplerinin üzerine büyük harflerle etiketler yapıştırdı ve paletinde her rengi değişmez bir sıraya dizerek el alışkanlığıyla boyamayı sürdürdü.",
+      "Bu dönemde ortaya çıkan koyu ve ateşli tuvaller yıllar sonra soyut sanatın öncüleri arasında anılacaktı, ancak Monet'nin kendisi bu durumdan hiç memnun değildi. 8 Mayıs 1922'de dostu yazar Marc Elder'e yazdığı mektupta, tablolarını bozduğunu ve artık iyi bir iş çıkaramadığını kabullenmek zorunda kaldığını, bu yüzden birkaç panosunu kendi eliyle yok ettiğini bildirdi. Tam o yılın 12 Nisan'ında, Birinci Dünya Savaşı ateşkesinin ertesi günü olan 12 Kasım 1918'de Fransa Başbakanı Georges Clemenceau'ya söz verdiği büyük nilüfer panolarının resmi bağış belgesini imzalamıştı. Hem eski bir hekim hem de Monet'nin en yakın dostu olan Clemenceau, panoların yarım kalmaması için onu ameliyata ikna etmeye uğraşıyordu. Eylül 1922'de Paris'te göz cerrahı Doktor Charles Coutela'ya muayene olduğunda tablo netleşti: sağ göz yalnızca ışığı seçebiliyor, sol göz ise normalin ancak onda birini görüyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q1189907",
+       "bag": "1899'da serin yeşiller ve ince su yansımalarıyla boyadığı gölet; 1918 sonrasında kataraktın etkisiyle kırmızı ve kahverengiye kayan geç dönem tuvallerle keskin bir karşıtlık kurar."
+      }
+     ]
+    },
+    {
+     "baslik": "Üç Ameliyat ve Maviye Dönen Dünya",
+     "yillar": "1923 – 1925",
+     "paragraflar": [
+      "Doktor Charles Coutela, seksen iki yaşındaki Monet'ye önce göz bebeğini büyüten damlalar verdi. Monet birkaç günlüğüne sisin dağıldığını hissedip sevinçli bir mektup yazdı, ancak damlaların etkisi kısa sürdü ve ameliyat kaçınılmaz oldu. 1923 yılında sağ göz üç ayrı işlem geçirdi. Ocak ayında irisin küçük bir bölümü alındı, Şubat başında bulanık mercek çıkarıldı ve Temmuz 1923'te kalınlaşan arka kapsülü açmak için Coutela Giverny'deki eve gelerek üçüncü bir müdahale yaptı. Ameliyat sonrası başının iki yanında kum torbalarıyla günlerce sırtüstü ve karanlıkta yatmak Monet'yi çileden çıkardı; sargılarını çekiştirdi, doktoruyla tartıştı ve Haziran 1923'te Coutela'ya bu ameliyatı yaptırdığı için derin pişmanlık duyduğunu yazdı. Sol gözüne ise asla dokundurtmadı.",
+      "İyileşme dönemi yeni bir optik sarsıntı getirdi. Doğal mercek alındığı için sağ gözün önündeki sarı kahverengi perde bir anda kalkmıştı; Monet şimdi bu gözle her şeyi keskin ve soğuk bir mavi mor parıltı içinde görüyordu. Göz hekimlerinin siyanopsi adını verdiği bu durumun yanında, ameliyat edilmeyen sol göz dünyayı hâlâ sarı ve kahverengi göstermeyi sürdürüyordu. İki gözü ona aynı bahçenin iki ayrı rengini sunuyordu. Üstelik kalın katarakt gözlükleri düz çizgileri eğri gösteriyor, ressamı düşme korkusuna sürüklüyordu. 1924'te devreye giren göz hekimi Doktor Jacques Mawas, Alman optik firması Zeiss'ın katarakt hastaları için geliştirdiği renkli Katral merceklerini sağ göze uyarladı ve sol gözü siyah bir camla tamamen kapattı. 1925'e gelindiğinde Monet'nin sağ gözündeki görme keskinliği yeniden yüksek bir düzeye çıktı; Büyük Kanal gibi eski eserlerindeki incelikli mavileri ve yeşilleri yeniden ayırt edebiliyordu."
+     ],
+     "eserler": [
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q19564337",
+       "bag": "1908'de Venedik'in soğuk mavilerini ve su parıltılarını yakaladığı tablo; 1925'te Zeiss mercekleriyle yeniden kavuştuğu mavi yeşil duyarlılığını hatırlatır."
+      }
+     ]
+    },
+    {
+     "baslik": "Orangerie'deki Son Veda ve Göz Hekimlerinin Tartışması",
+     "yillar": "1925 – 1927",
+     "paragraflar": [
+      "Görmesi berraklaşıp gerçek renkleri yeniden seçmeye başladığında, Monet ameliyat öncesi yıllarda boyadığı koyu kırmızı tuvallerin bir bölümünü öfkeyle yok etti, yakınlarının kurtarabildiği bazılarını ise yeniden elden geçirdi. Son iki yılında bütün enerjisini Paris'teki Musée de l'Orangerie'nin kendi tasarladığı iki oval salonuna yerleştirilecek Büyük Nilüferler dizisine verdi. Bu son panolarda kaba kırmızı tonlar geri çekilmiş, yerini yeniden duru mavilere, yumuşak yeşillere ve ışıkla titreşen su yüzeylerine bırakmıştı. Ancak 1926 baharında sağlığı bozuldu; Eylül ayında akciğer kanseri saptandı. Claude Monet 5 Aralık 1926'da Giverny'de seksen altı yaşında hayata gözlerini yumdu. Cenazesinde Georges Clemenceau, tabutun üstüne serilen siyah örtüyü çekip alarak Monet için siyah olmaz dedi. Dev nilüfer panoları, ölümünden beş ay sonra 17 Mayıs 1927'de Paris'te ziyarete açıldı.",
+      "Monet'nin geç dönem tuvallerinde kataraktın payı bugün de göz hekimleri ile sanat tarihçileri arasında tartışılır. Stanford Üniversitesi'nden göz hekimi Michael Marmor, 2006 yılında yayımladığı bilgisayar simülasyonlarıyla Monet'nin ilerlemiş kataraktla Giverny göletini ne kadar bulanık ve sarı kahverengi gördüğünü modelledi. Marmor ve 2015'te tıbbi kayıtları inceleyen göz hekimi Anna Gruener, ameliyat sonrasında Monet'nin eski mavi yeşil paletine dönmesinin ve katarakt dönemi tablolarını reddetmesinin, o yıllardaki koyu soyutlaşmanın bilinçli bir üslup tercihi olmadığını gösterdiğini öne sürer. Kimi araştırmacılar ise doğal merceğin çıkarılmasıyla Monet'nin yakın morötesi ışığı soluk mavi mor bir parıltı olarak seçebilmiş olabileceğini tartışır. Öte yandan birçok sanat tarihçisi, İzlenim, Gün Doğumu tablosundan beri biçimi ışığın içinde eriten Monet'nin geç dönem arayışının yalnızca göz hastalığına indirgenemeyeceğini vurgular."
+     ],
+     "eserler": [
+      {
+       "sanatci": "claude-monet",
+       "qid": "Q328523",
+       "bag": "1872'de İzlenimciliğe adını veren bu erken başyapıt, Monet'nin elli yılı aşkın süre boyunca ışığın ve rengin peşinde süren uzun yolculuğunun başlangıç noktasıdır."
+      }
+     ]
+    }
+   ],
+   "kapanis": [
+    "Claude Monet'nin katarakt yılları, hastalığın sanatçıya yeni bir üslup armağan ettiği romantik bir öykü değildir. Monet bulanık ve çamurlu gördüğü dünyayla yıllarca boğuştu, boya tüplerini etiketleyerek çalışmayı sürdürdü, sonunda riskli bir ameliyatı göze alıp renklerini geri kazandı. Orangerie duvarlarını saran nilüferler, karanlığa teslim olmayı reddeden seksen beş yaşındaki bir ressamın inatçı emeğinin ürünüdür."
+   ],
+   "kaynaklar": [
+    {
+     "baslik": "Anna Gruener — The effect of cataracts and cataract surgery on Claude Monet (British Journal of General Practice, 2015)",
+     "adres": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/"
+    },
+    {
+     "baslik": "Michael F. Marmor — Ophthalmology and art: simulation of Monet's cataracts and Degas' retinal disease (Archives of Ophthalmology, 2006)",
+     "adres": "https://pubmed.ncbi.nlm.nih.gov/17159037/"
+    },
+    {
+     "baslik": "Stanford Medicine News — Eye disease gave great painters a different vision of their work (2007)",
+     "adres": "https://med.stanford.edu/news/all-news/2007/04/eye-disease-gave-great-painters-a-different-vision-of-their-work-stanford-researcher-says.html"
+    },
+    {
+     "baslik": "James G. Ravin — The Visual Difficulties of Selected Artists (Transactions of the American Ophthalmological Society, 2008)",
+     "adres": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2646426/"
+    },
+    {
+     "baslik": "Maison et jardins de Claude Monet (Giverny) — Timeline",
+     "adres": "https://claudemonetgiverny.fr/en/decouvrir/timeline/"
+    },
+    {
+     "baslik": "Maison de Georges Clemenceau — Georges Clemenceau and Claude Monet",
+     "adres": "https://www.maison-de-clemenceau.fr/en/discover/the-many-facets-of-georges-clemenceau/georges-clemenceau-and-claude-monet"
+    },
+    {
+     "baslik": "ZEISS Corporate Insights — ZEISS glasses for the artist Claude Monet (2020)",
+     "adres": "https://www.zeiss.com/corporate/en/c/stories/insights/zeiss-glasses-for-claude-monet.html"
+    },
+    {
+     "baslik": "Science History Institute — Could Claude Monet See Like a Bee? (2022)",
+     "adres": "https://www.sciencehistory.org/stories/magazine/could-claude-monet-see-like-a-bee/"
+    }
+   ],
+   "kelime": 1024,
    "model": "gemini-4-neon (Gemini uygulaması, Görev)",
    "denetci": "Gemini + Claude",
    "olusturma": "2026-11-28"
