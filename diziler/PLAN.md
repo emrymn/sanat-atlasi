@@ -12,7 +12,7 @@ Emre'nin seçimi (2026-11-27). Sanatçı hikâyeleri tek bir hayatı anlatır; d
 | 3 | Aynı Konu, İki Usta (`ayni-konu`) | Caravaggio ile Artemisia: Yudit · Perugino ile Raphael: Meryem'in Evliliği · Tiziano ile Manet: Urbino Venüsü ve Olympia |
 | 4 | Skandal Tablolar (`skandallar`) | Çimende Kahvaltı ve Reddedilenler Salonu (1863) · Veronese ve Engizisyon (1573) · Caravaggio'nun Meryem'in Ölümü (1606) |
 | 5 | Hastalık ve Delilik (`hastalik`) | Goya'nın sağırlığı ve Kara Resimler · Van Gogh'un Saint-Rémy yılı · Monet'nin kataraktı |
-| 6 | Para (`para`) | Duccio'nun borçları ve Maestà · Rubens: ressam, girişimci, diplomat · Vermeer'in fırıncıya borcu |
+| 6 | Para (`para`) | Rubens: ressam, girişimci, diplomat · Vermeer'in fırıncıya borcu · Dürer, baskılar ve ilk telif kavgası |
 | 7 | İnanç Krizi (`inanc`) | Botticelli ve Savonarola · Cranach: Luther'in dostu, kardinalin ressamı · Michelangelo'nun son yılları |
 | 8 | Ölümler (`olumler`) | Raphael (1520) · Caravaggio (1610) · Van Gogh (1890) |
 | 9 | Kıskançlık (`kiskanclik`) | Michelangelo ile Raphael · Manet ile Monet: karıştırılan iki ad (1865) · Vasari'nin kalemi |
