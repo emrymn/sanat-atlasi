@@ -83,14 +83,19 @@ def oku(ad):
 
 
 def hikaye_parcalari():
-    """Sanatçı hikâyeleri (data/sanatci_hikayeleri.json) → 'hikaye:<kimlik>': okunacak parçalar, sırayla.
+    """Sanatçı hikâyeleri ('hikaye:<kimlik>') ve dizi bölümleri ('dizi:<bölüm>') → okunacak parçalar, sırayla.
     Uygulama aynı sırayı kurar: başlık, alt başlık, giriş paragrafları, her bölüm için bölüm başlığı (yılsız) ve
     paragrafları, kapanış paragrafları. Eserlerin "bag" notları ve bağlantılar okunmaz (ekranda)."""
     yol = KOK / 'data' / 'sanatci_hikayeleri.json'
-    if not yol.exists():
-        return {}
+    yazilar = {}
+    if yol.exists():
+        yazilar.update({f'hikaye:{k}': v for k, v in json.loads(yol.read_text(encoding='utf-8'))['sanatcilar'].items()})
+    # Dizi bölümleri (data/diziler.json, diziler/PLAN.md): biçim sanatçı hikâyesiyle aynı, uygulama da aynı sırayı kurar
+    dyol = KOK / 'data' / 'diziler.json'
+    if dyol.exists():
+        yazilar.update({f'dizi:{k}': v for k, v in json.loads(dyol.read_text(encoding='utf-8'))['bolumler'].items()})
     sonuc = {}
-    for sid, h in json.loads(yol.read_text(encoding='utf-8'))['sanatcilar'].items():
+    for anahtar_, h in yazilar.items():
         metinler = [h['baslik'], h['alt_baslik'], *h['giris']]
         for b in h['bolumler']:
             metinler += [b['baslik'], *b['paragraflar']]
@@ -100,7 +105,7 @@ def hikaye_parcalari():
             m = duzgun(m)
             if m and m not in liste:
                 liste.append(m)
-        sonuc[f'hikaye:{sid}'] = liste
+        sonuc[anahtar_] = liste
     return sonuc
 
 
