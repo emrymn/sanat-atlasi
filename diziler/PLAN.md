@@ -10,8 +10,8 @@ Emre'nin seçimi (2026-11-27). Sanatçı hikâyeleri tek bir hayatı anlatır; d
 | 1 | Düellolar (`dueller`) | Leonardo ile Michelangelo: Palazzo Vecchio'nun iki duvarı (1504) · Ghiberti ile Brunelleschi: vaftizhane kapısı (1401) · Caravaggio ile Baglione: 1603 hakaret davası |
 | 2 | Dostluklar ve Kopuşlar (`dostluklar`) | Van Gogh ile Gauguin: Arles'daki dokuz hafta (1888) · Manet ile Degas: kesilen portre · Cézanne ile Zola: bir romanla biten dostluk (1886) |
 | 3 | Aynı Konu, İki Usta (`ayni-konu`) | Caravaggio ile Artemisia: Yudit · Perugino ile Raphael: Meryem'in Evliliği · Tiziano ile Manet: Urbino Venüsü ve Olympia |
-| 4 | Skandal Tablolar (`skandallar`) | Çimende Kahvaltı ve Reddedilenler Salonu (1863) · Olympia (1865) · Veronese ve Engizisyon (1573) |
-| 5 | Hastalık ve Delilik (`hastalik`) | Goya'nın sağırlığı ve Kara Resimler · Van Gogh'un nöbetleri · Monet'nin kataraktı |
+| 4 | Skandal Tablolar (`skandallar`) | Çimende Kahvaltı ve Reddedilenler Salonu (1863) · Veronese ve Engizisyon (1573) · Caravaggio'nun Meryem'in Ölümü (1606) |
+| 5 | Hastalık ve Delilik (`hastalik`) | Goya'nın sağırlığı ve Kara Resimler · Van Gogh'un Saint-Rémy yılı · Monet'nin kataraktı |
 | 6 | Para (`para`) | Duccio'nun borçları ve Maestà · Rubens: ressam, girişimci, diplomat · Vermeer'in fırıncıya borcu |
 | 7 | İnanç Krizi (`inanc`) | Botticelli ve Savonarola · Cranach: Luther'in dostu, kardinalin ressamı · Michelangelo'nun son yılları |
 | 8 | Ölümler (`olumler`) | Raphael (1520) · Caravaggio (1610) · Van Gogh (1890) |
